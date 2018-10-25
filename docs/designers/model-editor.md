@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855532"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser **l’Éditeur de modèle** pour créer des modèles 3D de 
 **L’Éditeur de modèle** prend en charge plusieurs formats de modèles 3D utilisés dans le développement d’applications DirectX :
 
 |Nom de format|Extension de fichier|Opérations prises en charge (Afficher, Modifier, Créer)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Fichier d'échange AutoDesk FBX|*.fbx*|Afficher, Modifier, Créer|
 |Fichier Collada DAE|*.dae*|Afficher, Modifier (Les modifications apportées aux fichiers Collada DAE sont enregistrées au format FBX.)|
 |Fichier OBJ|*.obj*|Afficher, Modifier (Les modifications apportées aux fichiers OBJ sont enregistrées au format FBX.)|
@@ -254,7 +254,7 @@ Chacun de ces matériaux applique une texture unique à la surface d'un objet. V
 Pour modifier la façon dont un objet particulier réagit aux différentes sources de lumière dans la scène, vous pouvez modifier les propriétés d'éclairage du matériau indépendamment des autres objets qui utilisent ce matériau. Le tableau ci-dessous décrit les propriétés d'éclairage courantes :
 
 |Propriété d'éclairage|Description|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Ambiant**|Décrit comment la surface est affectée par l'éclairage ambiant.|
 |**Diffuse**|Décrit comment la surface est affectée par les lumières directionnelles et ponctuelles.|
 |**Émissif**|Décrit comment la surface émet de la lumière, indépendamment des autres éclairages.|
@@ -294,7 +294,7 @@ Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l�
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
 |Commande|Raccourcis clavier|
-|-------------|------------------------|
+|-------------| - |
 |Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
@@ -339,5 +339,5 @@ Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l�
 |Titre|Description|
 |-----------|-----------------|
 |[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils Visual Studio que vous pouvez utiliser pour travailler sur des composants graphiques, comme des textures et des images, des modèles 3D et des effets de nuanceur.|
-|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
+|[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
 |[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|

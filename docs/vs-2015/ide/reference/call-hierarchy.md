@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851110"
 ---
 # <a name="call-hierarchy"></a>Hiérarchie d'appels
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ La hiérarchie d’appels vous permet de parcourir votre code en affichant tous 
  ![Hiérarchie d’appels avec un nœud ouvert](../../ide/reference/media/onenode.png "OneNode")  
 Fenêtre Hiérarchie d'appels  
   
--   Si vous développez le nœud **Appels à**, tous les membres qui appellent le membre sélectionné sont affichés.  
+- Si vous développez le nœud **Appels à**, tous les membres qui appellent le membre sélectionné sont affichés.  
   
--   Si vous développez le nœud **Appels de**, tous les membres qui sont appelés par le membre sélectionné sont affichés.  
+- Si vous développez le nœud **Appels de**, tous les membres qui sont appelés par le membre sélectionné sont affichés.  
   
- Vous pouvez ensuite développer chacun des membres de ces sous-nœuds dans les nœuds **Appels à** et **Appels de**. Cela vous permet de naviguer dans la pile des appelants, comme indiqué dans l’illustration suivante.  
+  Vous pouvez ensuite développer chacun des membres de ces sous-nœuds dans les nœuds **Appels à** et **Appels de**. Cela vous permet de naviguer dans la pile des appelants, comme indiqué dans l’illustration suivante.  
   
- ![Hiérarchie d’appels avec plusieurs nœuds ouverts](../../ide/media/multiplenodes.png "MultipleNodes")  
-Fenêtre Hiérarchie d'appels  
+  ![Hiérarchie d’appels avec plusieurs nœuds ouverts](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Fenêtre Hiérarchie d'appels  
   
- Pour les membres définis en tant que membres virtuels ou abstraits, un nœud **Remplace nom de méthode** apparaît. Pour les membres d’interface, un nœud **Implémente nom de méthode** apparaît. Ces nœuds pouvant être développés apparaissent au même niveau que les nœuds **Appels à** et **Appels de**.  
+  Pour les membres définis en tant que membres virtuels ou abstraits, un nœud **Remplace nom de méthode** apparaît. Pour les membres d’interface, un nœud **Implémente nom de méthode** apparaît. Ces nœuds pouvant être développés apparaissent au même niveau que les nœuds **Appels à** et **Appels de**.  
   
- La zone **Étendue de recherche** de la barre d’outils contient des choix pour **Ma solution**, **Projet actif** et **Document actif**.  
+  La zone **Étendue de recherche** de la barre d’outils contient des choix pour **Ma solution**, **Projet actif** et **Document actif**.  
   
- Quand vous sélectionnez un membre enfant dans le volet d’arborescence **Hiérarchie d’appels** :  
+  Quand vous sélectionnez un membre enfant dans le volet d’arborescence **Hiérarchie d’appels** :  
   
--   Le volet d’informations **Hiérarchie d’appels** affiche toutes les lignes de code dans lesquelles ce membre enfant est appelé à partir du membre parent.  
+- Le volet d’informations **Hiérarchie d’appels** affiche toutes les lignes de code dans lesquelles ce membre enfant est appelé à partir du membre parent.  
   
--   La **fenêtre Définition de code**, si elle est ouverte, affiche le code du membre sélectionné. Cette fenêtre est disponible en C# et C++. Pour plus d’informations sur cette fenêtre, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).  
+- La **fenêtre Définition de code**, si elle est ouverte, affiche le code du membre sélectionné. Cette fenêtre est disponible en C# et C++. Pour plus d’informations sur cette fenêtre, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  La hiérarchie d’appels ne recherche pas les références au groupe de méthodes, ce qui inclut les emplacements auxquels une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.  

@@ -10,37 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949810"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L’outil Visual Studio Image Library Viewer peut charger et rechercher des manifestes d’images, permettant à l’utilisateur pour les manipuler dans la même façon Visual Studio. L’utilisateur peut modifier en arrière-plan, tailles, PPP, contraste élevé et autres paramètres. L’outil affiche des informations de chargement pour chaque manifeste de l’image également et affiche des informations de source de chaque image dans le manifeste de l’image. Cet outil est utile pour :  
   
-1.  Diagnostic des erreurs  
+1. Diagnostic des erreurs  
   
-2.  S’assurer que les attributs sont correctement définies dans les manifestes de l’image personnalisée  
+2. S’assurer que les attributs sont correctement définies dans les manifestes de l’image personnalisée  
   
-3.  Recherche d’images dans le catalogue d’images Visual Studio afin qu’une extension Visual Studio peut utiliser des images qui tiennent le style de Visual Studio  
+3. Recherche d’images dans le catalogue d’images Visual Studio afin qu’une extension Visual Studio peut utiliser des images qui tiennent le style de Visual Studio  
   
- ![Image de bannière de visionneuse de bibliothèque](../../extensibility/internals/media/image-library-viewer-hero.png "héros de visionneuse de bibliothèque d’images")  
+   ![Image de bannière de visionneuse de bibliothèque](../../extensibility/internals/media/image-library-viewer-hero.png "héros de visionneuse de bibliothèque d’images")  
   
- **Moniker de l’image**  
+   **Moniker de l’image**  
   
- Un moniker d’image (ou moniker en abrégé) est une paire GUID : ID qui identifie de façon unique un composant de l’image ou le composant de liste l’image dans la bibliothèque d’images.  
+   Un moniker d’image (ou moniker en abrégé) est une paire GUID : ID qui identifie de façon unique un composant de l’image ou le composant de liste l’image dans la bibliothèque d’images.  
   
- **Fichiers de manifeste d’image**  
+   **Fichiers de manifeste d’image**  
   
- Fichiers de manifeste (.imagemanifest) d’image sont des fichiers XML qui définissent un ensemble de ressources d’image, les monikers qui représentent ces actifs et l’image réelle ou des images qui représentent chaque élément multimédia. Manifestes d’images peuvent définir des images autonomes ou les listes d’images pour la prise en charge héritée de l’interface utilisateur. En outre, il existe des attributs qui peuvent être définies sur l’élément multimédia ou sur des images individuelles derrière chaque élément multimédia pour modifier quand et comment ces actifs sont affichés.  
+   Fichiers de manifeste (.imagemanifest) d’image sont des fichiers XML qui définissent un ensemble de ressources d’image, les monikers qui représentent ces actifs et l’image réelle ou des images qui représentent chaque élément multimédia. Manifestes d’images peuvent définir des images autonomes ou les listes d’images pour la prise en charge héritée de l’interface utilisateur. En outre, il existe des attributs qui peuvent être définies sur l’élément multimédia ou sur des images individuelles derrière chaque élément multimédia pour modifier quand et comment ces actifs sont affichés.  
   
- **Schéma de manifeste d’image**  
+   **Schéma de manifeste d’image**  
   
- Un manifeste de finalisation d’image se présente comme suit :  
+   Un manifeste de finalisation d’image se présente comme suit :  
   
 ```xml  
 <ImageManifest>  

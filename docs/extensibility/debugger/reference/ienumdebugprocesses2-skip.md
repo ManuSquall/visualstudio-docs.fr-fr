@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Skip | Documents Microsoft
+title: IEnumDebugProcesses2::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea66ea5574f44b241fe6406942955e7997844eb3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9e5f669bfe80f591338427371fe1ec8a98368c45
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926915"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 Ignore le nombre spécifié d’éléments.  

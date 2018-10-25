@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::GetExtendedPropertyInfo | Documents Microsoft
+title: IDebugExtendedProperty::GetExtendedPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7109346dd8189395cfdd366ff622dfac00744382
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f314a9c777eef1716a382c74b9ea250846542da7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935470"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-Récupère les informations étendues pour une propriété étendue, qui est le plus d’informations que le plus simple `IDebugProperty`.  
+Extrait des informations étendues pour une propriété étendue, qui est le plus d’informations que le plus simple `IDebugProperty`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,16 +40,16 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFieldSpec`  
- [in] Spécifie les constantes EX_DBGPROP_INFO_FLAGS qui déterminent les champs à être rempli le `ExtendedDebugPropertyInfo` structure.  
+ [in] Spécifie les constantes EX_DBGPROP_INFO_FLAGS qui déterminent les champs à compléter le `ExtendedDebugPropertyInfo` structure.  
   
  `nRadix`  
- [in] Base à utiliser pour l’interprétation des informations numériques.  
+ [in] Base pour être utilisées pour interpréter toutes les informations numériques.  
   
  `pExtendedPropertyInfo`  
  [out] Retourne le `ExtendedDebugPropertyInfo` structure qui décrit la propriété.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un élément valide `HRESULT`, généralement `S_OK`.  
+ Retourne une liste valide `HRESULT`, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugExtendedProperty (Interface)](../../winscript/reference/idebugextendedproperty-interface.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884002"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.  
@@ -75,15 +75,15 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 ## <a name="files"></a>Fichiers  
  Sous l’onglet **Fichiers**, vous pouvez spécifier le répertoire dans lequel les fichiers de trace sont stockés chaque fois qu’une trace est collectée.  Le visualiseur concurrentiel génère quatre fichiers pour chaque trace qu’il collecte :  
   
--   Un fichier ETL (Event Trace Log) en mode noyau (*.* kernel.etl*)  
+- Un fichier ETL (Event Trace Log) en mode noyau (<em>.</em>kernel.etl*)  
   
--   Un fichier ETL (Event Trace Log) en mode utilisateur (*.* user.etl*)  
+- Un fichier ETL (Event Trace Log) en mode utilisateur (<em>.</em>user.etl*)  
   
--   Un fichier de données du visualiseur concurrentiel (*.* CVData*)  
+- Un fichier de données du visualiseur concurrentiel (<em>.</em>CVData*)  
   
--   Un fichier de trace du visualiseur concurrentiel (*.* CVTrace*)  
+- Un fichier de trace du visualiseur concurrentiel (<em>.</em>CVTrace*)  
   
- Les deux fichiers ETL stockent les données de trace brutes, et les deux fichiers du visualiseur concurrentiel stockent les données gérées.  Les fichiers ETL bruts ne sont généralement pas utilisés après le traitement d’une trace.  Pour réduire la quantité de données de trace stockées sur votre disque, cochez la case **Supprimer les fichiers ETL (Event Trace Log) après l’analyse**.  
+  Les deux fichiers ETL stockent les données de trace brutes, et les deux fichiers du visualiseur concurrentiel stockent les données gérées.  Les fichiers ETL bruts ne sont généralement pas utilisés après le traitement d’une trace.  Pour réduire la quantité de données de trace stockées sur votre disque, cochez la case **Supprimer les fichiers ETL (Event Trace Log) après l’analyse**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Uniquement mon code](../profiling/just-my-code-threads-view.md)   

@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890177"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : création d'une application de données multicouche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
   
  Dans cette procédure pas à pas, vous suivrez les étapes suivantes :  
   
--   créer une solution multicouche contenant plusieurs projets ;  
+- créer une solution multicouche contenant plusieurs projets ;  
   
--   ajouter deux projets de bibliothèque de classes à la solution multicouche ;  
+- ajouter deux projets de bibliothèque de classes à la solution multicouche ;  
   
--   Créer un dataset typé à l’aide de la **Assistant de Configuration de Source de données**.  
+- Créer un dataset typé à l’aide de la **Assistant de Configuration de Source de données**.  
   
--   Séparer le texte généré [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et le code de jeu de données dans des projets distincts.  
+- Séparer le texte généré [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et le code de jeu de données dans des projets distincts.  
   
--   créer un service WCF (Windows Communication Foundation) pour appeler la couche d'accès aux données ;  
+- créer un service WCF (Windows Communication Foundation) pour appeler la couche d'accès aux données ;  
   
--   créer des fonctions dans le service pour récupérer les données de la couche d'accès aux données ;  
+- créer des fonctions dans le service pour récupérer les données de la couche d'accès aux données ;  
   
--   créer une application Windows Forms faisant office de couche Présentation ;  
+- créer une application Windows Forms faisant office de couche Présentation ;  
   
--   créer des contrôles Windows Forms liés à la source de données ;  
+- créer des contrôles Windows Forms liés à la source de données ;  
   
--   écrire du code pour remplir les tables de données.  
+- écrire du code pour remplir les tables de données.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") pour obtenir une version vidéo de cette rubrique, consultez [Video How to : création d’une Application de données multicouches](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") pour obtenir une version vidéo de cette rubrique, consultez [Video How to : création d’une Application de données multicouches](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
@@ -144,17 +144,17 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Pour séparer les TableAdapters du dataset  
   
-1.  Double-cliquez sur **NorthwindDataSet.xsd** dans **l’Explorateur de solutions** pour ouvrir le jeu de données dans le **Concepteur de Dataset**.  
+1. Double-cliquez sur **NorthwindDataSet.xsd** dans **l’Explorateur de solutions** pour ouvrir le jeu de données dans le **Concepteur de Dataset**.  
   
-2.  Cliquez sur une zone vide du concepteur.  
+2. Cliquez sur une zone vide du concepteur.  
   
-3.  Recherchez le **DataSet Project** nœud dans le **propriétés** fenêtre.  
+3. Recherchez le **DataSet Project** nœud dans le **propriétés** fenêtre.  
   
-4.  Dans le **DataSet Project** , cliquez sur **DataEntityTier**.  
+4. Dans le **DataSet Project** , cliquez sur **DataEntityTier**.  
   
-5.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
+5. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
- Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l'intégralité du dataset (DataAccessTier) ne contient désormais que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (DataEntityTier) contient le dataset typé : NorthwindDataSet.Dataset.Designer.vb (ou NorthwindDataSet.Dataset.Designer.cs).  
+   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l'intégralité du dataset (DataAccessTier) ne contient désormais que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (DataEntityTier) contient le dataset typé : NorthwindDataSet.Dataset.Designer.vb (ou NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Quand vous séparez les datasets et les TableAdapters (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne seront pas être déplacées automatiquement. Les classes DataSet partielles existantes doivent être manuellement déplacées dans le projet DataSet.  

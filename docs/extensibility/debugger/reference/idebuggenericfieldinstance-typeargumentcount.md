@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount | Documents Microsoft
+title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2fb72a486c58c0213361eb983371493f7ebafc5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 066084853c63f7f824b27b365e9abf0f2d695970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822232"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
-Retourne le nombre de types des arguments de paramètre pour cette instance.  
+Retourne le nombre de type des arguments de paramètre pour cette instance.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int TypeArgumentCount(
   
 #### <a name="parameters"></a>Paramètres  
  `pcArgs`  
- [dans, out] Nombre d’arguments de paramètre de type pour cette instance.  
+ [in, out] Nombre d’arguments de paramètre de type pour cette instance.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Par exemple, si liste\<int >, cette méthode retourne 1 et, s’il liste\<int, float2 > cette méthode retourne la valeur 2. Cette méthode retourne 0 si il n’existe aucun argument de type.  
+ Par exemple, si liste\<int >, cette méthode retourne 1 et, s’il liste\<int, float2 > cette méthode retourne la valeur 2. Cette méthode retourne 0 si n’inclut aucun argument de type.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

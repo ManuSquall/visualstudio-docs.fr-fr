@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917517"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 
@@ -58,15 +58,15 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
 
 Créer un projet WPF pour afficher les enregistrements produit.
 
-1.  Démarrez Visual Studio.
+1. Démarrez Visual Studio.
 
-2.  Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+2. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-3.  Développez **Visual Basic** ou **Visual C#**, puis sélectionnez **Windows**.
+3. Développez **Visual Basic** ou **Visual C#**, puis sélectionnez **Windows**.
 
-4.  Sélectionnez le **Application WPF** modèle de projet.
+4. Sélectionnez le **Application WPF** modèle de projet.
 
-5.  Dans le **nom** , entrez **AdventureWorksProductsEditor** , puis sélectionnez **OK**.
+5. Dans le **nom** , entrez **AdventureWorksProductsEditor** , puis sélectionnez **OK**.
 
    Visual Studio crée le projet AdventureWorksProductsEditor.
 
@@ -126,23 +126,23 @@ Pour remplir le dataset avec des données, utilisez la méthode `Fill` du `Produ
 
 Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Concepteur WPF. Plus loin dans cette procédure pas à pas, vous allez ajouter du code permettant aux utilisateurs de parcourir les produits et d'enregistrer les modifications apportées à ces derniers à l'aide de ces boutons.
 
-1.  Dans **l’Explorateur de solutions**, double-cliquez sur *MainWindow.xaml*.
+1. Dans **l’Explorateur de solutions**, double-cliquez sur *MainWindow.xaml*.
 
-     La fenêtre s’ouvre dans le **Concepteur WPF**.
+    La fenêtre s’ouvre dans le **Concepteur WPF**.
 
-2.  Dans la vue [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] du concepteur, ajoutez le code suivant entre les balises `<Grid>` :
+2. Dans la vue [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] du concepteur, ajoutez le code suivant entre les étiquettes `<Grid>` :
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Générez le projet.
+3. Générez le projet.
 
 ## <a name="create-data-bound-controls"></a>Créer des contrôles liés aux données
 
@@ -190,14 +190,14 @@ Ajoutez le code qui permet aux utilisateurs de parcourir les enregistrements pro
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
 
-3.  Ajoutez le code suivant au gestionnaire d'événements `backButton_Click` :
+3.  Ajoutez le code suivant au gestionnaire d'événements `backButton_Click` :
 
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
 
 4.  Revenez dans le concepteur et le double-clic le **>** bouton.
 
-5.  Ajoutez le code suivant au gestionnaire d'événements `nextButton_Click` :
+5.  Ajoutez le code suivant au gestionnaire d'événements `nextButton_Click` :
 
      [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
      [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
@@ -210,7 +210,7 @@ Ajoutez le code qui permet aux utilisateurs d’enregistrer les modifications ap
 
      Visual Studio ouvre le fichier code-behind et crée un nouveau `saveButton_Click` Gestionnaire d’événements pour le <xref:System.Windows.Controls.Primitives.ButtonBase.Click> événement.
 
-2.  Ajoutez le code suivant au gestionnaire d'événements `saveButton_Click` :
+2.  Ajoutez le code suivant au gestionnaire d'événements `saveButton_Click` :
 
      [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]
      [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]

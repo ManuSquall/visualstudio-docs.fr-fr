@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933428"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substitution et extension des classes générées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Votre définition DSL est une plateforme sur laquelle vous pouvez créer un ense
   
  Par exemple, dans l’exemple Library.dsl, le `CirculationBook` de classe de domaine a la `Generates``Double Derived` propriété définie sur `true`. Le code généré pour cette classe de domaine contient deux classes :  
   
--   `CirculationBookBase`, qui est abstraite et qui contient toutes les méthodes et propriétés.  
+- `CirculationBookBase`, qui est abstraite et qui contient toutes les méthodes et propriétés.  
   
--   `CirculationBook`, qui est dérivée de `CirculationBookBase`. Il est vide, à l’exception de ses constructeurs.  
+- `CirculationBook`, qui est dérivée de `CirculationBookBase`. Il est vide, à l’exception de ses constructeurs.  
   
- Pour remplacer n’importe quelle méthode, vous créez une définition partielle de la classe dérivée comme `CirculationBook`. Vous pouvez remplacer les méthodes générées et les méthodes héritées de l’infrastructure de modélisation.  
+  Pour remplacer n’importe quelle méthode, vous créez une définition partielle de la classe dérivée comme `CirculationBook`. Vous pouvez remplacer les méthodes générées et les méthodes héritées de l’infrastructure de modélisation.  
   
- Vous pouvez utiliser cette méthode avec tous les types d’élément, y compris les connecteurs, des relations, des formes, des diagrammes et des éléments de modèle. Vous pouvez également substituer les méthodes d’autres classes générées. Certaines classes générées, telles que le ToolboxHelper sont toujours double dérivée.  
+  Vous pouvez utiliser cette méthode avec tous les types d’élément, y compris les connecteurs, des relations, des formes, des diagrammes et des éléments de modèle. Vous pouvez également substituer les méthodes d’autres classes générées. Certaines classes générées, telles que le ToolboxHelper sont toujours double dérivée.  
   
 ### <a name="custom-constructors"></a>Constructeurs personnalisés  
  Vous ne pouvez pas remplacer un constructeur. Même dans les classes dérivées de double, le constructeur doit être dans la classe dérivée.  

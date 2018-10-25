@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenDBG | Documents Microsoft
+title: IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c9395805b3fe12640164261d3ec916bd8067c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2a51692b7ff554e656690898993d9dfb4a0eda57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883248"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 Appelé lorsqu’un fichier .dbg de candidat a été ouvert.  
@@ -38,7 +38,7 @@ HRESULT NotifyOpenDBG (
  [in] Le chemin d’accès complet du fichier .dbg.  
   
  `resultCode`  
- [in] Code qui indique la réussite (`S_OK`) ou l’échec de la charge, tel qu’appliqué à ce fichier.  
+ [in] Code qui indique la réussite (`S_OK`) ou l’échec de la charge appliquée à ce fichier.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le code de retour est généralement ignoré.  

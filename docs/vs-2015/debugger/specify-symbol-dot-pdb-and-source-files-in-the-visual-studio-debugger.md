@@ -32,12 +32,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21cc710be92b00e8faba56582a733a6372f01130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878750"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,40 +66,40 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 ###  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Spécifier des emplacements de symboles et le comportement de chargement  
  Lorsque vous déboguez un projet dans l'IDE de Visual Studio, le débogueur charge automatiquement les fichiers de symboles situés dans le répertoire du projet. Vous pouvez spécifier d’autres chemins de recherche et serveurs de symboles pour les composants Microsoft, Windows, ou composants tiers dans **Outils / Options / Débogage / Symboles**. Vous pouvez également spécifier des modules spécifiques pour lesquels vous souhaitez que le débogueur charge automatiquement des symboles. Et vous pouvez ensuite modifier ces paramètres manuellement lorsque vous déboguez activement.  
   
-1.  Dans Visual Studio, ouvrez la page **Outils / Options / Débogage / Symboles** .  
+1. Dans Visual Studio, ouvrez la page **Outils / Options / Débogage / Symboles** .  
   
-     ![Outils &#45; Options &#45; débogage &#45; page symboles](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")  
+    ![Outils &#45; Options &#45; débogage &#45; page symboles](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")  
   
-2.  Choisissez le dossier ![outils&#47; Options&#47; débogage&#47;icône de dossier de symboles](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icône. Le texte modifiable s'affiche dans la zone **Emplacements du fichier de symboles (.pdb)** .  
+2. Choisissez le dossier ![outils&#47; Options&#47; débogage&#47;icône de dossier de symboles](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icône. Le texte modifiable s'affiche dans la zone **Emplacements du fichier de symboles (.pdb)** .  
   
-3.  Tapez l'URL ou le chemin d'accès du serveur de symboles ou de l'emplacement de symboles. La saisie semi-automatique des instructions vous aide à rechercher le format correct.  
+3. Tapez l'URL ou le chemin d'accès du serveur de symboles ou de l'emplacement de symboles. La saisie semi-automatique des instructions vous aide à rechercher le format correct.  
   
-4.  Pour améliorer les performances de chargement de symboles, tapez le chemin d'accès d'un répertoire local dans lequel les symboles peuvent être copiés par les serveurs de symboles dans la zone **Mettre en cache les symboles dans ce répertoire** d'un répertoire local dans lequel les symboles peuvent être copiés.  
+4. Pour améliorer les performances de chargement de symboles, tapez le chemin d'accès d'un répertoire local dans lequel les symboles peuvent être copiés par les serveurs de symboles dans la zone **Mettre en cache les symboles dans ce répertoire** d'un répertoire local dans lequel les symboles peuvent être copiés.  
   
-    > [!NOTE]
-    >  Ne placez pas votre cache de symboles dans un dossier protégé (tel que le dossier C:\Windows ou un de ses sous-dossiers). Utilisez plutôt un dossier en lecture-écriture.  
+   > [!NOTE]
+   >  Ne placez pas votre cache de symboles dans un dossier protégé (tel que le dossier C:\Windows ou un de ses sous-dossiers). Utilisez plutôt un dossier en lecture-écriture.  
   
- **Spécifier le comportement de chargement des symboles**  
+   **Spécifier le comportement de chargement des symboles**  
   
- Vous pouvez spécifier les fichiers qui doivent être chargés automatiquement à partir des emplacements de zone **Emplacements du fichier de symboles (.pdb)** lorsque vous commencez le débogage. Les fichiers de symboles contenus dans le répertoire du projet sont toujours chargés.  
+   Vous pouvez spécifier les fichiers qui doivent être chargés automatiquement à partir des emplacements de zone **Emplacements du fichier de symboles (.pdb)** lorsque vous commencez le débogage. Les fichiers de symboles contenus dans le répertoire du projet sont toujours chargés.  
   
-1.  Sélectionnez **Tous les modules, sauf exclus** pour charger tous les symboles pour tous les modules à l'exception de ceux que vous spécifiez lorsque vous choisissez le lien **Spécifier les modules exclus** .  
+5. Sélectionnez **Tous les modules, sauf exclus** pour charger tous les symboles pour tous les modules à l'exception de ceux que vous spécifiez lorsque vous choisissez le lien **Spécifier les modules exclus** .  
   
-2.  Choisissez l'option **Modules spécifiés uniquement** puis choisissez **Spécifier les modules** pour répertorier les modules des fichiers de symboles que vous voulez charger automatiquement. Les fichiers de symboles d'autres modules sont ignorés.  
+6. Choisissez l'option **Modules spécifiés uniquement** puis choisissez **Spécifier les modules** pour répertorier les modules des fichiers de symboles que vous voulez charger automatiquement. Les fichiers de symboles d'autres modules sont ignorés.  
   
- **Spécifiez les options de symbole supplémentaires**  
+   **Spécifiez les options de symbole supplémentaires**  
   
- Vous pouvez également définir les options suivantes dans la page **Outils / Options / Débogage / Symboles** :  
+   Vous pouvez également définir les options suivantes dans la page **Outils / Options / Débogage / Symboles** :  
   
- **Avertir si aucun symbole au lancement (natif uniquement)**  
+   **Avertir si aucun symbole au lancement (natif uniquement)**  
   
- Lorsqu'elle est sélectionnée, cette option affiche une boîte de dialogue d'avertissement quand vous essayez de déboguer un programme pour lequel le débogueur ne possède aucune information symbolique.  
+   Lorsqu'elle est sélectionnée, cette option affiche une boîte de dialogue d'avertissement quand vous essayez de déboguer un programme pour lequel le débogueur ne possède aucune information symbolique.  
   
- **Charger les exportations de DLL**  
+   **Charger les exportations de DLL**  
   
- Lorsqu'elle est sélectionnée, cette option charge les tables d'exportation de DLL. Les informations symboliques de tables d'exportation de DLL peuvent être utiles si vous utilisez des messages Windows, des procédures Windows (WindowProcs), des objets COM, le marshaling ou toute DLL pour laquelle vous n'avez pas de symbole. La lecture des informations d'exportation des DLL implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.  
+   Lorsqu'elle est sélectionnée, cette option charge les tables d'exportation de DLL. Les informations symboliques de tables d'exportation de DLL peuvent être utiles si vous utilisez des messages Windows, des procédures Windows (WindowProcs), des objets COM, le marshaling ou toute DLL pour laquelle vous n'avez pas de symbole. La lecture des informations d'exportation des DLL implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.  
   
- Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+   Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
 ###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Utiliser des serveurs de symboles pour rechercher des fichiers de symboles qui ne sont pas sur votre ordinateur local  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peut télécharger les fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le protocole symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) et les [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent implémenter des serveurs de symboles. Vous spécifiez les serveurs de symboles à utiliser dans la boîte de dialogue **Options** de Visual Studio.  
@@ -130,33 +130,33 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
   
  Il existe plusieurs moyens pour que le débogueur se divise en code n'ayant pas de symboles disponibles :  
   
-1.  Codage en mode pas à pas détaillé.  
+1. Codage en mode pas à pas détaillé.  
   
-2.  Arrêt dans le code depuis un point d'arrêt ou une exception.  
+2. Arrêt dans le code depuis un point d'arrêt ou une exception.  
   
-3.  Passage à un autre thread.  
+3. Passage à un autre thread.  
   
-4.  Modification du frame de pile en double-cliquant sur un frame dans la fenêtre Pile des appels.  
+4. Modification du frame de pile en double-cliquant sur un frame dans la fenêtre Pile des appels.  
   
- Lorsqu'un de ces événements se produit, le débogueur affiche la page **Aucun symbole n'a été chargé** pour vous aider à identifier et à charger les symboles nécessaires.  
+   Lorsqu'un de ces événements se produit, le débogueur affiche la page **Aucun symbole n'a été chargé** pour vous aider à identifier et à charger les symboles nécessaires.  
   
- ![Aucune page symboles chargés](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+   ![Aucune page symboles chargés](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
--   Pour modifier les chemins de recherche, choisissez un chemin d'accès non sélectionné ou choisissez **Nouveau** et entrez un nouveau chemin d'accès. Sélectionnez **Charger** pour rechercher à nouveau les chemins d'accès et charger le fichier de symboles s'il est trouvé.  
+- Pour modifier les chemins de recherche, choisissez un chemin d'accès non sélectionné ou choisissez **Nouveau** et entrez un nouveau chemin d'accès. Sélectionnez **Charger** pour rechercher à nouveau les chemins d'accès et charger le fichier de symboles s'il est trouvé.  
   
--   Choisissez **Parcourir et rechercher**_nom_exécutable_**...** pour remplacer toutes les options de symbole et réessayer les chemins de recherche. Le fichier de symboles est chargé s'il est trouvé, ou un Explorateur de fichiers s'affiche pour sélectionner manuellement le fichier de symboles.  
+- Choisissez **Parcourir et rechercher**_nom_exécutable_**...** pour remplacer toutes les options de symbole et réessayer les chemins de recherche. Le fichier de symboles est chargé s'il est trouvé, ou un Explorateur de fichiers s'affiche pour sélectionner manuellement le fichier de symboles.  
   
--   Sélectionnez **Modifier les paramètres des symboles ...** pour afficher la page **Débogage** / **Symboles** de la boîte de dialogue Options de VS.  
+- Sélectionnez **Modifier les paramètres des symboles ...** pour afficher la page **Débogage** / **Symboles** de la boîte de dialogue Options de VS.  
   
--   Choisissez **afficher le code machine** pour afficher le code machine dans une nouvelle fenêtre.  
+- Choisissez **afficher le code machine** pour afficher le code machine dans une nouvelle fenêtre.  
   
--   Pour toujours afficher le code machine lorsque la source ou les fichiers de symboles sont introuvables, choisissez le lien **Boîte de dialogue Options** , puis sélectionnez **Activer le débogage au niveau de l'adresse** et **Afficher le code machine si la source n'est pas disponible**.  
+- Pour toujours afficher le code machine lorsque la source ou les fichiers de symboles sont introuvables, choisissez le lien **Boîte de dialogue Options** , puis sélectionnez **Activer le débogage au niveau de l'adresse** et **Afficher le code machine si la source n'est pas disponible**.  
   
-     ![Options &#47; débogage &#47; général code machine options](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")  
+   ![Options &#47; débogage &#47; général code machine options](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")  
   
- **Changer les options de symbole depuis le menu contextuel**  
+  **Changer les options de symbole depuis le menu contextuel**  
   
- Lorsque vous êtes en mode arrêt, vous pouvez rechercher et charger les symboles des éléments affichés dans les fenêtres Pile des appels, Modules, Variables locales, Automatique et Espion. Sélectionnez un élément dans la fenêtre, ouvrez le menu contextuel, puis sélectionnez l'une des options suivantes :  
+  Lorsque vous êtes en mode arrêt, vous pouvez rechercher et charger les symboles des éléments affichés dans les fenêtres Pile des appels, Modules, Variables locales, Automatique et Espion. Sélectionnez un élément dans la fenêtre, ouvrez le menu contextuel, puis sélectionnez l'une des options suivantes :  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -176,25 +176,25 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
   
  Si vous générez votre application C/C++ à l’aide d’un makefile et que vous spécifiez **/ZI** ou **/Zi** sans **/Fd**, vous obtenez finalement deux fichiers .pdb :  
   
--   VC*x*.pdb, où *x* représente la version de Visual C++, par exemple VC11.pdb. Ce fichier stocke toutes les informations de débogage concernant les fichiers OBJ individuels et réside dans le même répertoire que le makefile du projet.  
+- VC*x*.pdb, où *x* représente la version de Visual C++, par exemple VC11.pdb. Ce fichier stocke toutes les informations de débogage concernant les fichiers OBJ individuels et réside dans le même répertoire que le makefile du projet.  
   
--   project.pdb   Ce fichier stocke toutes les informations de débogage concernant le fichier .exe. Pour C/C++, il réside dans le sous-répertoire \debug.  
+- project.pdb   Ce fichier stocke toutes les informations de débogage concernant le fichier .exe. Pour C/C++, il réside dans le sous-répertoire \debug.  
   
- Chaque fois qu'il crée un fichier OBJ, le compilateur C/C++ fusionne les informations de débogage dans VC*x*.pdb. Celles-ci se composent d'informations de type, mais pas d'informations de symbole telles que les définitions de fonctions. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que \<windows.h >, les typedefs de ces en-têtes sont stockés une seule fois, au lieu d’être pour chaque fichier OBJ.  
+  Chaque fois qu'il crée un fichier OBJ, le compilateur C/C++ fusionne les informations de débogage dans VC*x*.pdb. Celles-ci se composent d'informations de type, mais pas d'informations de symbole telles que les définitions de fonctions. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que \<windows.h >, les typedefs de ces en-têtes sont stockés une seule fois, au lieu d’être pour chaque fichier OBJ.  
   
- L'Éditeur de liens crée projet.pdb, qui contient les informations de débogage concernant le fichier EXE du projet. Le fichier projet.pdb contient toutes les informations de débogage, y compris les prototypes de fonction et pas seulement les informations de type présentes dans VC*x*.pdb. Les deux fichiers .pdb autorisent les mises à jour incrémentielles. L'Éditeur de liens incorpore également le chemin d'accès au fichier .pdb dans le fichier .exe ou .dll qu'il crée.  
+  L'Éditeur de liens crée projet.pdb, qui contient les informations de débogage concernant le fichier EXE du projet. Le fichier projet.pdb contient toutes les informations de débogage, y compris les prototypes de fonction et pas seulement les informations de type présentes dans VC*x*.pdb. Les deux fichiers .pdb autorisent les mises à jour incrémentielles. L'Éditeur de liens incorpore également le chemin d'accès au fichier .pdb dans le fichier .exe ou .dll qu'il crée.  
   
- Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou que le chemin d'accès n'est pas valide (par exemple, lorsque le projet a été déplacé sur un autre ordinateur), le débogueur recherche le chemin d'accès contenant le fichier EXE, les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** (dossier**Débogage** , nœud **Symboles** ). Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.  
+  Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou que le chemin d'accès n'est pas valide (par exemple, lorsque le projet a été déplacé sur un autre ordinateur), le débogueur recherche le chemin d'accès contenant le fichier EXE, les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** (dossier**Débogage** , nœud **Symboles** ). Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.  
   
- **Options du .NET Framework**  
+  **Options du .NET Framework**  
   
- Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **/debug**. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) ou [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).  
+  Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **/debug**. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) ou [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).  
   
- Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou si le chemin d'accès n'est pas valide, le débogueur recherche le chemin d'accès qui contient l'EXE, puis les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** . Ce chemin d'accès est en général le dossier **Débogage** du nœud **Symboles** . Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.  
+  Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou si le chemin d'accès n'est pas valide, le débogueur recherche le chemin d'accès qui contient l'EXE, puis les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** . Ce chemin d'accès est en général le dossier **Débogage** du nœud **Symboles** . Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.  
   
- **Applications Web**  
+  **Applications Web**  
   
- Le fichier de configuration de votre application (Web.config) doit avoir pour valeur mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. VS définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets web.  
+  Le fichier de configuration de votre application (Web.config) doit avoir pour valeur mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. VS définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets web.  
   
 ##  <a name="BKMK_Find_source_files"></a> Rechercher les fichiers sources  
   
@@ -215,15 +215,15 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Ajouter des chemins de recherche de fichier source à une solution  
  Vous pouvez spécifier le réseau ou les répertoires locaux sur lesquels rechercher les fichiers sources.  
   
-1.  Sélectionnez la solution dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
+1. Sélectionnez la solution dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
   
-2.  Sous le nœud **Propriétés communes** , choisissez **Fichiers sources pour le débogage**.  
+2. Sous le nœud **Propriétés communes** , choisissez **Fichiers sources pour le débogage**.  
   
-3.  Cliquez sur le dossier ![outils&#47; Options&#47; débogage&#47;icône de dossier de symboles](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icône. Le texte modifiable apparaît dans la liste **Répertoires contenant du code source** .  
+3. Cliquez sur le dossier ![outils&#47; Options&#47; débogage&#47;icône de dossier de symboles](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icône. Le texte modifiable apparaît dans la liste **Répertoires contenant du code source** .  
   
-4.  Ajoutez le chemin que vous souhaitez rechercher.  
+4. Ajoutez le chemin que vous souhaitez rechercher.  
   
- Notez que seul le répertoire spécifié est recherché. Vous devez ajouter des entrées pour tous les sous-répertoires à explorer.  
+   Notez que seul le répertoire spécifié est recherché. Vous devez ajouter des entrées pour tous les sous-répertoires à explorer.  
   
 ###  <a name="BKMK_Use_source_servers"></a> Utiliser des serveurs sources  
  Lorsqu'il n'y a pas de code source sur l'ordinateur local ou si le fichier .pdb ne correspond pas au code source, le serveur source peut vous aider à déboguer une application. Il prend les demandes de fichiers et retourne les fichiers réels. Le serveur source s'exécute au moyen d'un fichier DLL nommé srcsrv.dll. Le serveur source lit le fichier .pdb de l'application, qui contient des pointeurs vers le référentiel de code source ainsi que des commandes utilisées pour extraire le code source du référentiel. Vous pouvez limiter les commandes dont vous autorisez l'exécution et appartenant au fichier .pdb de l'application en les répertoriant dans un fichier srcsrv.ini qui doit se trouver dans le même répertoire que srcsrv.dll et devenv.exe.  

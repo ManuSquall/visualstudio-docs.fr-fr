@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Documents Microsoft
+title: IDebugEngine3::SetAllExceptions | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e492eb2e3208e379581548ac3dcc393fa82414ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af66ca2fda6a3e190e6b98cf09962890beb3b5a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875812"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Cette méthode définit l’état de toutes les exceptions en attente.  

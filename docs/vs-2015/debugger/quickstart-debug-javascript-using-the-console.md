@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818326"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : déboguer du code JavaScript à l’aide de la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  La fenêtre de la console JavaScript permet les actions suivantes :  
   
--   Envoyer des objets, valeurs et messages depuis votre application vers la fenêtre de la console.  
+- Envoyer des objets, valeurs et messages depuis votre application vers la fenêtre de la console.  
   
--   Afficher et modifier les valeurs des variables locales ou globales de l’application en cours d’exécution.  
+- Afficher et modifier les valeurs des variables locales ou globales de l’application en cours d’exécution.  
   
--   Afficher les visualiseurs d’objets.  
+- Afficher les visualiseurs d’objets.  
   
--   Exécuter le code JavaScript qui s’exécute au sein du contexte de script actif.  
+- Exécuter le code JavaScript qui s’exécute au sein du contexte de script actif.  
   
--   Afficher les erreurs et les exceptions JavaScript, en plus des exceptions du modèle DOM et Windows Runtime.  
+- Afficher les erreurs et les exceptions JavaScript, en plus des exceptions du modèle DOM et Windows Runtime.  
   
--   Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md) pour obtenir la liste complète des commandes.  
+- Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md) pour obtenir la liste complète des commandes.  
   
- Dans cette rubrique :  
+  Dans cette rubrique :  
   
--   [Débogage à l’aide de la fenêtre de la console JavaScript](#InteractiveConsole)  
+- [Débogage à l’aide de la fenêtre de la console JavaScript](#InteractiveConsole)  
   
--   [Débogage interactif et mode arrêt](#InteractiveDebuggingBreakMode)  
+- [Débogage interactif et mode arrêt](#InteractiveDebuggingBreakMode)  
   
--   [Mode à ligne simple et mode multiligne dans la fenêtre de la console JavaScript](#SinglelineMultilineMode)  
+- [Mode à ligne simple et mode multiligne dans la fenêtre de la console JavaScript](#SinglelineMultilineMode)  
   
--   [Basculement du contexte d’exécution du script](#Switching)  
+- [Basculement du contexte d’exécution du script](#Switching)  
   
 > [!TIP]
 >  Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  

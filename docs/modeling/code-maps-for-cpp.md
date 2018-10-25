@@ -9,20 +9,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d274241700dfdac393544f554f7025ea4d0bcb46
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6e2925eb3bfaf64a48b36c3c7205dce36538123c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823579"
 ---
 # <a name="code-maps-for-c-projects"></a>Cartes de code pour les projets C++
 
 Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures.
 
-Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, vous ne pourrez pas être en mesure de créer des cartes de code pour l’en-tête (*.h* ou `#include`) jusqu'à ce que la base de données IntelliSense avoir mis à jour les fichiers. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio.
+Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, vous ne pouvez pas être en mesure de créer des cartes de code pour l’en-tête (*.h* ou `#include`) jusqu'à la fin de la base de données IntelliSense la mise à jour des fichiers. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio.
 
-- Pour afficher les dépendances entre tous les fichiers sources et les fichiers d’en-tête dans votre solution, sélectionnez **Architecture** > **générer graphique des fichiers Include**.
+- Pour afficher les dépendances entre tous les fichiers sources et les fichiers d’en-tête dans votre solution, sélectionnez **Architecture** > **générer le graphique des fichiers Include**.
 
    ![Graphique de dépendance pour le code natif](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -41,7 +41,7 @@ Ces éléments ne sont pas pris en charge pour le code C et C++ :
 Ces problèmes peuvent se produire lorsque vous créez des cartes de code pour le code C et C++ :
 
 |**Problème**|**Causes possibles**|**Résolution**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Échec de la génération de la carte de code.|Aucun projet de la solution n’a été généré correctement.|Corrigez les erreurs de build qui se sont produites, puis régénérez la carte.|
 |Visual Studio cesse de répondre lorsque vous essayez de générer une carte de code à partir de la **Architecture** menu.|Le fichier de base de données du programme (.pdb) peut être endommagé.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Régénérez la solution puis recommencez.|
 |Certains paramètres de la base de données de navigation IntelliSense sont désactivés.|Certains paramètres IntelliSense peuvent être désactivés dans Visual Studio **Options** boîte de dialogue.|Activez les paramètres.<br /><br /> Consultez [Options, éditeur de texte, C/C++, avancé](../ide/reference/options-text-editor-c-cpp-advanced.md).|
@@ -53,4 +53,4 @@ Ces problèmes peuvent se produire lorsque vous créez des cartes de code pour l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Mapper les dépendances avec des cartes de code](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapper les dépendances des cartes de code](../modeling/map-dependencies-across-your-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Constantes (Debug Interface Access SDK) | Documents Microsoft
+title: Constantes (SDK Debug Interface Access) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872042"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Kit de développement logiciel Debug Interface Access)
-Ces constantes de chaîne peuvent être utilisées pour identifier les différentes sections d’un fichier de base de données (PDB) de débogage programme via le SDK DIA.  
+Ces constantes de chaîne peuvent être utilisés pour identifier les différentes sections d’un fichier de base de données (PDB) de débogage de programme via le SDK DIA.  
   
 ## <a name="constants"></a>Constantes  
- Les éléments suivants sont déclarés en tant que les macros C/C++.  
+ Les éléments suivants sont déclarés en tant que macros C/C++.  
   
 |Macro|Value|  
 |-----------|-----------|  
@@ -54,11 +54,11 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : dia2.h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

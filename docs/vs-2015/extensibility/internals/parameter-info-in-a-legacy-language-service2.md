@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887564"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informations sur les paramètres dans un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Prise en charge de l’info-bulle d’informations de paramètre dans l’analyseur  
  Le <xref:Microsoft.VisualStudio.Package.Source> classe émet des hypothèses sur le contenu de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> et <xref:Microsoft.VisualStudio.Package.AuthoringSink> classes lorsqu’elles sont l’info-bulle d’informations sur les paramètres s’affiche et est mis à jour.  
   
--   L’analyseur est donné <xref:Microsoft.VisualStudio.Package.ParseReason> quand le caractère de début de liste de paramètre est tapé.  
+- L’analyseur est donné <xref:Microsoft.VisualStudio.Package.ParseReason> quand le caractère de début de liste de paramètre est tapé.  
   
--   L’emplacement indiqué le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet est immédiatement après le caractère de début de la liste de paramètres. L’analyseur doit collecter les signatures de toutes les déclarations de méthode disponibles à positionner et de les stocker dans une liste dans votre version de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet. Cette liste inclut le nom de la méthode, type (méthode) (ou type de retour) et une liste de paramètres possibles. Cette liste est recherchée ultérieurement pour la signature de méthode ou des signatures à afficher dans l’info-bulle d’informations sur les paramètres.  
+- L’emplacement indiqué le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet est immédiatement après le caractère de début de la liste de paramètres. L’analyseur doit collecter les signatures de toutes les déclarations de méthode disponibles à positionner et de les stocker dans une liste dans votre version de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet. Cette liste inclut le nom de la méthode, type (méthode) (ou type de retour) et une liste de paramètres possibles. Cette liste est recherchée ultérieurement pour la signature de méthode ou des signatures à afficher dans l’info-bulle d’informations sur les paramètres.  
   
- L’analyseur doit analyser ensuite la ligne spécifiée par le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet à collecter le nom de la méthode en cours de saisie, ainsi que la distance le long de l’utilisateur est en tapant les paramètres. Cela s’effectue en passant le nom de la méthode à la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.AuthoringSink> objet, puis en appelant le <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> méthode lorsque le caractère de début de la liste de paramètres est analysé, l’appel le <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> (méthode) lors de la liste de paramètres caractère suivant est analysé et enfin appelant le <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> méthode lorsque le caractère de fin de liste de paramètre est analysé. Les résultats de ces appels de méthode sont utilisés par la <xref:Microsoft.VisualStudio.Package.Source> classe pour mettre à jour de l’info-bulle d’informations sur les paramètres en conséquence.  
+  L’analyseur doit analyser ensuite la ligne spécifiée par le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet à collecter le nom de la méthode en cours de saisie, ainsi que la distance le long de l’utilisateur est en tapant les paramètres. Cela s’effectue en passant le nom de la méthode à la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.AuthoringSink> objet, puis en appelant le <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> méthode lorsque le caractère de début de la liste de paramètres est analysé, l’appel le <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> (méthode) lors de la liste de paramètres caractère suivant est analysé et enfin appelant le <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> méthode lorsque le caractère de fin de liste de paramètre est analysé. Les résultats de ces appels de méthode sont utilisés par la <xref:Microsoft.VisualStudio.Package.Source> classe pour mettre à jour de l’info-bulle d’informations sur les paramètres en conséquence.  
   
 ### <a name="example"></a>Exemple  
  Voici une ligne de texte que l’utilisateur peut entrer. Les nombres sous la ligne indiquent quelle étape est assurée par l’analyseur à cette position dans la ligne (en supposant que l’analyse se déplace de gauche à droite). L’hypothèse est que toutes les modifications avant la ligne a déjà été analysée pour les signatures de méthode, y compris la signature de méthode « testfunc ».  

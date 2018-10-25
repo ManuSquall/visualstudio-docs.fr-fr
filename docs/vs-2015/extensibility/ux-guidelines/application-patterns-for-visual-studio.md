@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848694"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192536"
 #### <a name="tool-window-states"></a>États de la fenêtre outil  
  Fenêtres Outil Visual Studio ont des états différents, certains d'entre eux sont activés par utilisateur (par exemple, la fonctionnalité de masquage automatique). Autres États, visibles automatiquement, autoriser les fenêtres Outil apparaisse dans le contexte approprié et masquer lorsque ne pas nécessaires. Il existe cinq États de la fenêtre outil au total.  
   
--   **Ancré/épinglé** fenêtres Outil peuvent être attachés à l’un des quatre côtés de la zone de document. L’icône de punaise apparaît dans la barre de titre de fenêtre outil. La fenêtre outil peut être ancrée horizontalement ou verticalement le long du bord de l’interpréteur de commandes et d’autres fenêtres Outil et peut également être liée par onglets.  
+- **Ancré/épinglé** fenêtres Outil peuvent être attachés à l’un des quatre côtés de la zone de document. L’icône de punaise apparaît dans la barre de titre de fenêtre outil. La fenêtre outil peut être ancrée horizontalement ou verticalement le long du bord de l’interpréteur de commandes et d’autres fenêtres Outil et peut également être liée par onglets.  
   
--   **Masqués automatiquement** fenêtres Outil sont libérés. La fenêtre peut glisser hors de vue, en laissant un onglet (avec le nom de la fenêtre outil et son icône) sur le bord de la zone de document. La fenêtre outil sont extraites quand un utilisateur pointe sur l’onglet.  
+- **Masqués automatiquement** fenêtres Outil sont libérés. La fenêtre peut glisser hors de vue, en laissant un onglet (avec le nom de la fenêtre outil et son icône) sur le bord de la zone de document. La fenêtre outil sont extraites quand un utilisateur pointe sur l’onglet.  
   
--   **Visibles automatiquement** fenêtres Outil apparaissent automatiquement lorsqu’une autre partie de l’interface utilisateur, comme un éditeur, est lancée ou obtention du focus.  
+- **Visibles automatiquement** fenêtres Outil apparaissent automatiquement lorsqu’une autre partie de l’interface utilisateur, comme un éditeur, est lancée ou obtention du focus.  
   
--   **Flottante** fenêtres Outil placez le curseur en dehors de l’IDE. Cela est utile pour les configurations de plusieurs écrans.  
+- **Flottante** fenêtres Outil placez le curseur en dehors de l’IDE. Cela est utile pour les configurations de plusieurs écrans.  
   
--   **Document à onglets** fenêtres Outil peuvent être ancrées dans le document correctement. Cela est utile pour les grandes fenêtres, telles que l’Explorateur d’objets, nécessitant davantage de place que ne le permet d’ancrage sur les bords du cadre.  
+- **Document à onglets** fenêtres Outil peuvent être ancrées dans le document correctement. Cela est utile pour les grandes fenêtres, telles que l’Explorateur d’objets, nécessitant davantage de place que ne le permet d’ancrage sur les bords du cadre.  
   
- ![Outil d’états de la fenêtre dans Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702-01_ToolWindowStates")  
+  ![Outil d’états de la fenêtre dans Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702-01_ToolWindowStates")  
   
- **États de la fenêtre outil dans Visual Studio**  
+  **États de la fenêtre outil dans Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>Instance unique et multi-instance  
  Fenêtres Outil sont à instance unique ou multi-instance. Certaines fenêtres Outil à instance unique peuvent être associées à la fenêtre de document actif, tandis que les fenêtres d’outil multi-instance ne peut-être pas. Les fenêtres Outil multi-instances répondent à la commande de fenêtre/New Window en créant une nouvelle instance de la fenêtre. L’image suivante illustre une fenêtre outil l’activation de la commande nouvelle fenêtre lorsqu’une instance de la fenêtre est active :  
@@ -164,19 +164,19 @@ ms.locfileid: "49192536"
 ### <a name="user-expectations-for-specific-document-types"></a>Attentes de l’utilisateur pour les types de document spécifique  
  Il existe plusieurs types de base différents éditeurs de document et chacun possède un ensemble d’interactions sont cohérents avec d’autres utilisateurs du même type.  
   
--   **Éditeur de texte :** éditeur de code, les fichiers journaux  
+- **Éditeur de texte :** éditeur de code, les fichiers journaux  
   
--   **Aire de conception :** formulaires Windows concepteur, de WPF forms  
+- **Aire de conception :** formulaires Windows concepteur, de WPF forms  
   
--   **Éditeur de boîte de dialogue-style :** Concepteur de manifeste, propriétés du projet  
+- **Éditeur de boîte de dialogue-style :** Concepteur de manifeste, propriétés du projet  
   
--   **Générateur de modèles :** Concepteur de workflow, codemap, diagramme d’architecture, progression  
+- **Générateur de modèles :** Concepteur de workflow, codemap, diagramme d’architecture, progression  
   
- Il existe également plusieurs types non éditeur qui utilisent le document correctement. Pendant qu’ils ne modifiez pas les documents eux-mêmes, elles doivent suivre des interactions standard pour les fenêtres de document.  
+  Il existe également plusieurs types non éditeur qui utilisent le document correctement. Pendant qu’ils ne modifiez pas les documents eux-mêmes, elles doivent suivre des interactions standard pour les fenêtres de document.  
   
--   **Rapports :** IntelliTrace de rapports, rapports de Hyper-V, le rapport de profileur  
+- **Rapports :** IntelliTrace de rapports, rapports de Hyper-V, le rapport de profileur  
   
--   **Tableau de bord :** Hub de diagnostic  
+- **Tableau de bord :** Hub de diagnostic  
   
 #### <a name="text-based-editors"></a>Éditeurs de texte  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192536"
   
  Si vous avez déterminé que vous avez besoin d’une boîte de dialogue, vous avez trois possibilités, par ordre de préférence :  
   
-1.  Intégrer des fonctionnalités dans une des boîtes de dialogue partagés dans Visual Studio.  
+1. Intégrer des fonctionnalités dans une des boîtes de dialogue partagés dans Visual Studio.  
   
-2.  Créer votre propre boîte de dialogue à l’aide d’un modèle trouvé dans une boîte de dialogue similaire existant.  
+2. Créer votre propre boîte de dialogue à l’aide d’un modèle trouvé dans une boîte de dialogue similaire existant.  
   
-3.  Créer une nouvelle boîte de dialogue, l’interaction suivante et instructions de disposition.  
+3. Créer une nouvelle boîte de dialogue, l’interaction suivante et instructions de disposition.  
   
- Cette rubrique décrit comment choisir le modèle de boîte de dialogue correct au sein de flux de travail de Visual Studio et les conventions courantes pour la conception de la boîte de dialogue.  
+   Cette rubrique décrit comment choisir le modèle de boîte de dialogue correct au sein de flux de travail de Visual Studio et les conventions courantes pour la conception de la boîte de dialogue.  
   
 ### <a name="themes"></a>Thèmes  
  Boîtes de dialogue dans Visual Studio suivent l’une des deux styles de base :  
@@ -268,15 +268,15 @@ ms.locfileid: "49192536"
 #### <a name="themed"></a>À thème  
  Boîtes de dialogue spécialité « signature » peuvent être à thème. Boîtes de dialogue à thème ont une apparence distincte, ce qui a également des modèles d’interaction spéciale associées au style. Thème de votre boîte de dialogue uniquement si elle répond à ces exigences :  
   
--   La boîte de dialogue est une expérience commune qui sera vu et utilisée souvent ou par de nombreux utilisateurs (par exemple, le **nouveau projet** boîte de dialogue.  
+- La boîte de dialogue est une expérience commune qui sera vu et utilisée souvent ou par de nombreux utilisateurs (par exemple, le **nouveau projet** boîte de dialogue.  
   
--   La boîte de dialogue contient les éléments de marque de produit visible (par exemple, le **comptable** boîte de dialogue).  
+- La boîte de dialogue contient les éléments de marque de produit visible (par exemple, le **comptable** boîte de dialogue).  
   
--   La boîte de dialogue s’affiche en tant que partie intégrante d’un plus grand flux qui inclut d’autres boîtes de dialogue à thème (par exemple, le **ajouter un Service connecté** boîte de dialogue).  
+- La boîte de dialogue s’affiche en tant que partie intégrante d’un plus grand flux qui inclut d’autres boîtes de dialogue à thème (par exemple, le **ajouter un Service connecté** boîte de dialogue).  
   
--   La boîte de dialogue est une partie importante d’une expérience qui joue un rôle stratégique dans la promotion ou ce qui différencie une version du produit.  
+- La boîte de dialogue est une partie importante d’une expérience qui joue un rôle stratégique dans la promotion ou ce qui différencie une version du produit.  
   
- Lorsque vous créez une boîte de dialogue à thème, utiliser les couleurs d’environnement appropriées et suivez la disposition correcte et les modèles d’interaction. (Consultez [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Lorsque vous créez une boîte de dialogue à thème, utiliser les couleurs d’environnement appropriées et suivez la disposition correcte et les modèles d’interaction. (Consultez [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Conception de la boîte de dialogue  
  Boîtes de dialogue bien conçues tenir compte les éléments suivants :  
@@ -360,17 +360,17 @@ ms.locfileid: "49192536"
   
 #### <a name="title-bars"></a>Barres de titre  
   
--   Le texte dans la barre de titre doit refléter le nom de la commande qui l’a lancé.  
+- Le texte dans la barre de titre doit refléter le nom de la commande qui l’a lancé.  
   
--   Aucune icône ne doit être utilisé dans les barres de titre de boîte de dialogue. Dans les cas où le système nécessite un, utilisez le logo de Visual Studio.  
+- Aucune icône ne doit être utilisé dans les barres de titre de boîte de dialogue. Dans les cas où le système nécessite un, utilisez le logo de Visual Studio.  
   
--   Boîtes de dialogue ne doivent pas avoir réduite ou augmentée de boutons.  
+- Boîtes de dialogue ne doivent pas avoir réduite ou augmentée de boutons.  
   
--   Boutons d’aide dans la barre de titre ont été déconseillées. N’ajoutez pas les nouvelles boîtes de dialogue. Lorsqu’ils n’existent pas, ils doivent lancer une rubrique d’aide sur le plan conceptuel correspondant à la tâche.  
+- Boutons d’aide dans la barre de titre ont été déconseillées. N’ajoutez pas les nouvelles boîtes de dialogue. Lorsqu’ils n’existent pas, ils doivent lancer une rubrique d’aide sur le plan conceptuel correspondant à la tâche.  
   
- ![Spécifications pour Visual Studio de la barre de titre](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704-03_TitleBarSpecs")  
+  ![Spécifications pour Visual Studio de la barre de titre](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704-03_TitleBarSpecs")  
   
- **Spécifications des indications pour les barres de titre des boîtes de dialogue Visual Studio.**  
+  **Spécifications des indications pour les barres de titre des boîtes de dialogue Visual Studio.**  
   
 #### <a name="control-buttons"></a>Boutons de contrôle  
  En règle générale, **OK**/**Annuler**/**aide** boutons doivent être organisés horizontalement dans le coin inférieur droit de la boîte de dialogue. L’autre pile verticale est autorisée si une boîte de dialogue comporte plusieurs autres boutons en bas de la boîte de dialogue qui présente visual toute confusion avec les boutons de contrôle.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192536"
   
  La boîte de dialogue doit inclure un bouton de contrôle par défaut. Pour déterminer la meilleure commande à utiliser en tant que la valeur par défaut, choisissez parmi les options suivantes (répertoriées par ordre de priorité) :  
   
--   Choisissez la commande plus sûre et plus sûre en tant que la valeur par défaut. Cela signifie en choisissant la commande susceptible d’empêcher la perte de données et accès au système involontaire.  
+- Choisissez la commande plus sûre et plus sûre en tant que la valeur par défaut. Cela signifie en choisissant la commande susceptible d’empêcher la perte de données et accès au système involontaire.  
   
--   Si la sécurité et perte de données ne sont pas des facteurs, puis choisissez la commande par défaut basée sur plus de commodité. Y compris la commande la plus probable en tant que la valeur par défaut améliore les flux de travail de l’utilisateur lorsque la boîte de dialogue prend en charge des tâches fréquentes ou répétitives.  
+- Si la sécurité et perte de données ne sont pas des facteurs, puis choisissez la commande par défaut basée sur plus de commodité. Y compris la commande la plus probable en tant que la valeur par défaut améliore les flux de travail de l’utilisateur lorsque la boîte de dialogue prend en charge des tâches fréquentes ou répétitives.  
   
- Évitez de choisir une action destructrice définitivement pour la commande par défaut. Si une commande de ce type est présente, choisissez une commande plus sûre en tant que la valeur par défaut.  
+  Évitez de choisir une action destructrice définitivement pour la commande par défaut. Si une commande de ce type est présente, choisissez une commande plus sûre en tant que la valeur par défaut.  
   
 #### <a name="access-keys"></a>Clés d’accès  
  N’utilisez pas les clés d’accès de **OK**/**Annuler**/**aide** boutons. Ces boutons sont mappés aux touches de raccourci par défaut :  
@@ -437,54 +437,54 @@ ms.locfileid: "49192536"
   
  Projets doivent toujours :  
   
--   Prise en charge la possibilité d’ajouter des dossiers pour organiser le contenu du projet du projet  
+- Prise en charge la possibilité d’ajouter des dossiers pour organiser le contenu du projet du projet  
   
--   Mettre à jour un modèle cohérent pour la persistance d’un projet  
+- Mettre à jour un modèle cohérent pour la persistance d’un projet  
   
- Projets doivent également conserver des modèles d’interaction cohérente pour :  
+  Projets doivent également conserver des modèles d’interaction cohérente pour :  
   
--   Suppression d’éléments de projet  
+- Suppression d’éléments de projet  
   
--   Enregistrer des documents  
+- Enregistrer des documents  
   
--   Modification des propriétés de projet  
+- Modification des propriétés de projet  
   
--   Modifier le projet dans une autre vue  
+- Modifier le projet dans une autre vue  
   
--   Opérations de glisser-déplacer  
+- Opérations de glisser-déplacer  
   
 ### <a name="drag-and-drop-interaction-model"></a>Modèle d’interaction de glisser-déplacer  
  Projets classifier généralement eux-mêmes en tant que base de référence (en mesure de conserver uniquement les références aux éléments de projet dans le stockage), (en mesure de conserver les éléments de projet uniquement physiquement stockées au sein de la hiérarchie d’un projet), basée sur directory ou mixte (capable de conserver des références ou éléments physiques). L’IDE prend en charge les trois types de projets simultanément dans le **l’Explorateur de solutions**.  
   
  À partir d’un point de vue de glisser-déplacer, les caractéristiques suivantes doivent s’appliquer à chaque type de projet au sein de la **l’Explorateur de solutions**:  
   
--   **En fonction de référence de projet :** le point essentiel est que le projet fait glisser autour d’une référence à un élément dans le stockage. Lorsqu’un projet basé sur la référence agit comme une source pour une opération de déplacement, il doit supprimer uniquement la référence à l’élément à partir du projet. L’élément ne doit pas réellement supprimé du disque dur. Lorsqu’un projet basé sur la référence agit comme une cible pour une opération de déplacement (ou copie), il doit ajouter une référence à l’élément source d’origine sans avoir à effectuer une copie privée de l’élément.  
+- **En fonction de référence de projet :** le point essentiel est que le projet fait glisser autour d’une référence à un élément dans le stockage. Lorsqu’un projet basé sur la référence agit comme une source pour une opération de déplacement, il doit supprimer uniquement la référence à l’élément à partir du projet. L’élément ne doit pas réellement supprimé du disque dur. Lorsqu’un projet basé sur la référence agit comme une cible pour une opération de déplacement (ou copie), il doit ajouter une référence à l’élément source d’origine sans avoir à effectuer une copie privée de l’élément.  
   
--   **Projet basé sur le répertoire :** du point de vue du glisser-déplacer, le projet fait glisser autour de l’élément physique plutôt qu’une référence. Lorsqu’un projet basé sur le répertoire agit comme une source pour une opération de déplacement, il doit se terminer si vous supprimez l’élément physique du disque dur, ainsi que de supprimer du projet. Lorsqu’un projet basé sur le répertoire agit comme une cible pour une opération de déplacement (ou copie), il doit être une copie de l’élément source dans son emplacement cible.  
+- **Projet basé sur le répertoire :** du point de vue du glisser-déplacer, le projet fait glisser autour de l’élément physique plutôt qu’une référence. Lorsqu’un projet basé sur le répertoire agit comme une source pour une opération de déplacement, il doit se terminer si vous supprimez l’élément physique du disque dur, ainsi que de supprimer du projet. Lorsqu’un projet basé sur le répertoire agit comme une cible pour une opération de déplacement (ou copie), il doit être une copie de l’élément source dans son emplacement cible.  
   
--   **Projet cible mixte :** du point de vue du glisser-déplacer, le comportement de ce type de projet est basé sur la nature de l’élément déplacé (il s’agit d’une référence à un élément dans le stockage) ou l’élément lui-même. Le comportement correct des références et les éléments physiques sont décrits ci-dessus.  
+- **Projet cible mixte :** du point de vue du glisser-déplacer, le comportement de ce type de projet est basé sur la nature de l’élément déplacé (il s’agit d’une référence à un élément dans le stockage) ou l’élément lui-même. Le comportement correct des références et les éléments physiques sont décrits ci-dessus.  
   
- S’il n'agissait qu’un seul type de projet dans le **l’Explorateur de solutions**, les opérations de glisser-déplacer est simples. Étant donné que chaque système de projet a la possibilité de définir son propre comportement de glisser-déplacer, vous devraient suivre certaines règles (en fonction du comportement de glisser-déplacer de l’Explorateur Windows) pour garantir une expérience utilisateur prévisible :  
+  S’il n'agissait qu’un seul type de projet dans le **l’Explorateur de solutions**, les opérations de glisser-déplacer est simples. Étant donné que chaque système de projet a la possibilité de définir son propre comportement de glisser-déplacer, vous devraient suivre certaines règles (en fonction du comportement de glisser-déplacer de l’Explorateur Windows) pour garantir une expérience utilisateur prévisible :  
   
--   Opération glisser un non modifié le **l’Explorateur de solutions** (lorsque ni Ctrl ni les touches MAJ sont maintenu enfoncé) doit aboutir à une opération de déplacement.  
+- Opération glisser un non modifié le **l’Explorateur de solutions** (lorsque ni Ctrl ni les touches MAJ sont maintenu enfoncé) doit aboutir à une opération de déplacement.  
   
--   L’opération de glissement de décalage doit également aboutir à une opération de déplacement.  
+- L’opération de glissement de décalage doit également aboutir à une opération de déplacement.  
   
--   L’opération de glissement-CTRL doit aboutir à une opération de copie.  
+- L’opération de glissement-CTRL doit aboutir à une opération de copie.  
   
--   Systèmes de projet en fonction de référence et mixte prennent en charge la notion d’ajout d’un lien (ou référence) à l’élément source. Lorsque ces projets sont la cible d’une opération de glisser-déplacer (lorsque **Ctrl + Maj** est maintenu enfoncé), il doit entraîner une référence à l’élément ajouté au projet  
+- Systèmes de projet en fonction de référence et mixte prennent en charge la notion d’ajout d’un lien (ou référence) à l’élément source. Lorsque ces projets sont la cible d’une opération de glisser-déplacer (lorsque **Ctrl + Maj** est maintenu enfoncé), il doit entraîner une référence à l’élément ajouté au projet  
   
- Toutes les opérations de glisser-déplacer sont cohérent entre les combinaisons de projets basée sur une référence basée sur le répertoire et mixtes. En particulier, il est problématique de prétendre à autoriser une opération de déplacement entre une source basée sur le répertoire de projet et cible en fonction de référence, car le projet source directory aura supprimer l’élément source à l’achèvement du déplacement. Le projet référence cible puis finiriez avec une référence à un élément supprimé.  
+  Toutes les opérations de glisser-déplacer sont cohérent entre les combinaisons de projets basée sur une référence basée sur le répertoire et mixtes. En particulier, il est problématique de prétendre à autoriser une opération de déplacement entre une source basée sur le répertoire de projet et cible en fonction de référence, car le projet source directory aura supprimer l’élément source à l’achèvement du déplacement. Le projet référence cible puis finiriez avec une référence à un élément supprimé.  
   
- Il est également trompeur de se faire passer pour autoriser une opération de copie entre ces types de projets, car le projet de base de référence cible n’effectuez pas une copie indépendante de l’élément source. De même, Ctrl + Maj en faisant glisser vers un projet basé sur le répertoire de la cible ne doit pas être autorisé, car un projet basé sur le répertoire ne peut pas conserver les références. Dans les cas où l’opération de glisser-déplacer n’est pas pris en charge, l’IDE doit interdire la suppression et afficher l’utilisateur le curseur de non-déplacement (indiqué dans le tableau de pointeur ci-dessous).  
+  Il est également trompeur de se faire passer pour autoriser une opération de copie entre ces types de projets, car le projet de base de référence cible n’effectuez pas une copie indépendante de l’élément source. De même, Ctrl + Maj en faisant glisser vers un projet basé sur le répertoire de la cible ne doit pas être autorisé, car un projet basé sur le répertoire ne peut pas conserver les références. Dans les cas où l’opération de glisser-déplacer n’est pas pris en charge, l’IDE doit interdire la suppression et afficher l’utilisateur le curseur de non-déplacement (indiqué dans le tableau de pointeur ci-dessous).  
   
- Pour implémenter correctement un comportement de glisser-déplacer, le projet source de l’opération glisser doit communiquer sa nature (par exemple, est-il en fonction de référence ou de répertoire ?) pour le projet cible. Cette information est indiquée par le format de Presse-papiers qui est proposé par la source. Comme la source de glissement (ou opération de copie du Presse-papiers) un projet doit offrir **CF_VSREFPROJECTITEM**S ou **CF_VSSTGPROJECTITEMS** respectivement, selon si le projet est basé sur une référence ou basée sur le répertoire. Les deux de ces formats ont le même contenu de données, ce qui est similaire à la Windows **CF_HDROP** mettre en forme, à ceci près que les listes de chaînes, au lieu d’être des noms de fichiers, sont un double -**NULL** s’est arrêté de liste de  **Projref** chaînes (tel que retourné par **IVsSolution::GetProjrefOfItem** ou **:: GetProjrefOfProject** selon le cas).  
+  Pour implémenter correctement un comportement de glisser-déplacer, le projet source de l’opération glisser doit communiquer sa nature (par exemple, est-il en fonction de référence ou de répertoire ?) pour le projet cible. Cette information est indiquée par le format de Presse-papiers qui est proposé par la source. Comme la source de glissement (ou opération de copie du Presse-papiers) un projet doit offrir **CF_VSREFPROJECTITEM**S ou **CF_VSSTGPROJECTITEMS** respectivement, selon si le projet est basé sur une référence ou basée sur le répertoire. Les deux de ces formats ont le même contenu de données, ce qui est similaire à la Windows **CF_HDROP** mettre en forme, à ceci près que les listes de chaînes, au lieu d’être des noms de fichiers, sont un double -**NULL** s’est arrêté de liste de  **Projref** chaînes (tel que retourné par **IVsSolution::GetProjrefOfItem** ou **:: GetProjrefOfProject** selon le cas).  
   
- La cible d’une liste (ou une opération de collage du Presse-papiers), un projet doit accepter tous les deux **CF_VSREFPROJECTITEMS** et **CF_VSSTGPROJECTITEMS**, bien que varie en fonction de la gestion exacte de l’opération de glisser-déplacer selon la nature du projet cible et le projet source. Le projet source déclare sa nature par si elle offre **CF_VSREFPROJECTITEMS** ou **CF_VSSTGPROJECTITEMS**. La cible de la liste déroulante comprend ses propres nature et a donc suffisamment d’informations pour prendre des décisions en tant que pour qu’elles soient un déplacement, la copie, ou lien doit être effectué. L’utilisateur modifie également quelle opération de glisser-déplacer doit être effectuée en appuyant sur Ctrl, MAJ, ou à la fois Ctrl et MAJ enfoncées. Il est important pour la cible de dépôt pour correctement indiquer quelle opération sera effectuée à l’avance dans son **DragEnter** et **DragOver** méthodes. Le **l’Explorateur de solutions** détermine automatiquement si le projet source et le projet cible sont le même projet.  
+  La cible d’une liste (ou une opération de collage du Presse-papiers), un projet doit accepter tous les deux **CF_VSREFPROJECTITEMS** et **CF_VSSTGPROJECTITEMS**, bien que varie en fonction de la gestion exacte de l’opération de glisser-déplacer selon la nature du projet cible et le projet source. Le projet source déclare sa nature par si elle offre **CF_VSREFPROJECTITEMS** ou **CF_VSSTGPROJECTITEMS**. La cible de la liste déroulante comprend ses propres nature et a donc suffisamment d’informations pour prendre des décisions en tant que pour qu’elles soient un déplacement, la copie, ou lien doit être effectué. L’utilisateur modifie également quelle opération de glisser-déplacer doit être effectuée en appuyant sur Ctrl, MAJ, ou à la fois Ctrl et MAJ enfoncées. Il est important pour la cible de dépôt pour correctement indiquer quelle opération sera effectuée à l’avance dans son **DragEnter** et **DragOver** méthodes. Le **l’Explorateur de solutions** détermine automatiquement si le projet source et le projet cible sont le même projet.  
   
- En faisant glisser des éléments de projet entre les instances de Visual Studio (par exemple, à partir d’une instance de devenv.exe à un autre) n’est pas non plus pris en charge. Le **l’Explorateur de solutions** également directement désactive cela.  
+  En faisant glisser des éléments de projet entre les instances de Visual Studio (par exemple, à partir d’une instance de devenv.exe à un autre) n’est pas non plus pris en charge. Le **l’Explorateur de solutions** également directement désactive cela.  
   
- L’utilisateur doit toujours être en mesure de déterminer l’effet d’une opération de glisser-déplacer en sélectionnant un élément, faites-la glisser vers l’emplacement cible et en observant parmi les pointeurs de souris suivant s’affiche avant la suppression de l’élément :  
+  L’utilisateur doit toujours être en mesure de déterminer l’effet d’une opération de glisser-déplacer en sélectionnant un élément, faites-la glisser vers l’emplacement cible et en observant parmi les pointeurs de souris suivant s’affiche avant la suppression de l’élément :  
   
 |Pointeur de la souris|Commande|Description|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192536"
   
  Ces détails doivent être prises en considération lors de l’implémentation en faisant glisser le **l’Explorateur de solutions**:  
   
--   Conception pour plusieurs scénarios de sélection.  
+- Conception pour plusieurs scénarios de sélection.  
   
--   Noms de fichier (chemin d’accès complet) doivent être uniques dans le projet cible ou la liste ne doit pas être autorisée.  
+- Noms de fichier (chemin d’accès complet) doivent être uniques dans le projet cible ou la liste ne doit pas être autorisée.  
   
--   Les noms de dossier doivent être uniques (non-respect de la casse) au niveau qu’ils sont en cours de suppression.  
+- Les noms de dossier doivent être uniques (non-respect de la casse) au niveau qu’ils sont en cours de suppression.  
   
--   Il existe des différences de comportement entre les fichiers qui sont ouverts ou fermés au moment de glisser (non mentionnée dans les scénarios ci-dessus).  
+- Il existe des différences de comportement entre les fichiers qui sont ouverts ou fermés au moment de glisser (non mentionnée dans les scénarios ci-dessus).  
   
--   Fichiers de niveau supérieur se comportent différemment des fichiers des dossiers.  
+- Fichiers de niveau supérieur se comportent différemment des fichiers des dossiers.  
   
- Un autre problème à connaître est comment gérer les opérations de déplacement des éléments qui ont des éditeurs ou les concepteurs ouverts. Le comportement attendu est comme suit (cela s’applique à tous les types de projet) :  
+  Un autre problème à connaître est comment gérer les opérations de déplacement des éléments qui ont des éditeurs ou les concepteurs ouverts. Le comportement attendu est comme suit (cela s’applique à tous les types de projet) :  
   
-1.  Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la fenêtre d’éditeur/concepteur doit être fermée en mode silencieux.  
+1. Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la fenêtre d’éditeur/concepteur doit être fermée en mode silencieux.  
   
-2.  Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la source de l’opération glisser doit attendre pour la suppression se produire et demandez à l’utilisateur pour enregistrer les modifications non validées dans les documents ouverts avant de fermer la fenêtre avec une invite semblable à ce qui suit :  
+2. Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la source de l’opération glisser doit attendre pour la suppression se produire et demandez à l’utilisateur pour enregistrer les modifications non validées dans les documents ouverts avant de fermer la fenêtre avec une invite semblable à ce qui suit :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- Ainsi, l’utilisateur l’opportunité d’enregistrer le travail en cours avant la cible met ses copies. Une nouvelle méthode **IVsHierarchyDropDataSource2::OnBeforeDropNotify** a été ajoutée pour permettre cette gestion.  
+   Ainsi, l’utilisateur l’opportunité d’enregistrer le travail en cours avant la cible met ses copies. Une nouvelle méthode **IVsHierarchyDropDataSource2::OnBeforeDropNotify** a été ajoutée pour permettre cette gestion.  
   
- La cible de copie de l’état de l’élément car il s’agit dans le stockage (sans les modifications non enregistrées dans l’éditeur si l’utilisateur a choisi **non**). Une fois la cible a terminé sa copie (dans **IVsHierarchyDropDataSource::Drop**), la source est la possibilité pour terminer la partie de la suppression de l’opération de déplacement (dans **IVsHierarchyDropDataSource::O nDropNotify**).  
+   La cible de copie de l’état de l’élément car il s’agit dans le stockage (sans les modifications non enregistrées dans l’éditeur si l’utilisateur a choisi **non**). Une fois la cible a terminé sa copie (dans **IVsHierarchyDropDataSource::Drop**), la source est la possibilité pour terminer la partie de la suppression de l’opération de déplacement (dans **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Les éditeurs sans enregistrer les modifications doivent être laissées ouverts. Pour ces documents avec les modifications non enregistrées, cela signifie que la partie de la copie de l’opération de déplacement sera effectuée, mais la partie de la suppression va être abandonnée. Dans un scénario de sélection de plusieurs quand l’utilisateur choisit **non**, ces documents avec des modifications non enregistrées ne doivent pas être fermés ou supprimés, mais celles sans modifications non enregistrées doivent être fermés et supprimés.
+   Les éditeurs sans enregistrer les modifications doivent être laissées ouverts. Pour ces documents avec les modifications non enregistrées, cela signifie que la partie de la copie de l’opération de déplacement sera effectuée, mais la partie de la suppression va être abandonnée. Dans un scénario de sélection de plusieurs quand l’utilisateur choisit **non**, ces documents avec des modifications non enregistrées ne doivent pas être fermés ou supprimés, mais celles sans modifications non enregistrées doivent être fermés et supprimés.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860034"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ Dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling 
   
 #### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL  
   
-1.  Dans une autre définition DSL, dans **Explorateur DSL**, avec le bouton droit de la classe racine de la solution DSL, puis cliquez sur **ajouter une nouvelle importation DslLibrary**.  
+1. Dans une autre définition DSL, dans **Explorateur DSL**, avec le bouton droit de la classe racine de la solution DSL, puis cliquez sur **ajouter une nouvelle importation DslLibrary**.  
   
-2.  Dans la fenêtre Propriétés, définissez la **chemin d’accès du fichier** de la bibliothèque. Vous pouvez utiliser soit un un chemin relatif ou absolu.  
+2. Dans la fenêtre Propriétés, définissez la **chemin d’accès du fichier** de la bibliothèque. Vous pouvez utiliser soit un un chemin relatif ou absolu.  
   
-     La bibliothèque importée s’affiche dans l’Explorateur DSL, en mode lecture seule.  
+    La bibliothèque importée s’affiche dans l’Explorateur DSL, en mode lecture seule.  
   
-3.  Vous pouvez utiliser les classes importées comme classes de base. Créer une classe de domaine dans la solution DSL importation, et dans les propriétés de fenêtre, définissez **une classe de Base** à une classe importée.  
+3. Vous pouvez utiliser les classes importées comme classes de base. Créer une classe de domaine dans la solution DSL importation, et dans les propriétés de fenêtre, définissez **une classe de Base** à une classe importée.  
   
-4.  Cliquez sur Transformer tous les modèles.  
+4. Cliquez sur Transformer tous les modèles.  
   
-5.  Pour le projet DSL, ajoutez une référence à l’assembly (DLL) qui a été généré par le projet de bibliothèque DSL.  
+5. Pour le projet DSL, ajoutez une référence à l’assembly (DLL) qui a été généré par le projet de bibliothèque DSL.  
   
-6.  Générez la solution.  
+6. Générez la solution.  
   
- Une bibliothèque DSL peut importer d’autres bibliothèques. Lorsque vous importez une bibliothèque, ses importations apparaissent également automatiquement dans l’Explorateur DSL.  
+   Une bibliothèque DSL peut importer d’autres bibliothèques. Lorsque vous importez une bibliothèque, ses importations apparaissent également automatiquement dans l’Explorateur DSL.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)

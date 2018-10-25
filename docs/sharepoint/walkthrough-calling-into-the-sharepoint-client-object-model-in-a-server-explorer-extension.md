@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934676"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs
   Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le **connexions SharePoint** nœud **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ Connaissance des concepts suivants est utile, mais pas obligatoire, pour suivre 
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer deux projets :  
   
--   Un projet VSIX pour créer le package VSIX pour déployer le **Explorateur de serveurs** extension.  
+- Un projet VSIX pour créer le package VSIX pour déployer le **Explorateur de serveurs** extension.  
   
--   Un projet de bibliothèque de classes qui implémente le **Explorateur de serveurs** extension.  
+- Un projet de bibliothèque de classes qui implémente le **Explorateur de serveurs** extension.  
   
- Démarrer la procédure pas à pas en créant les projets.  
+  Démarrer la procédure pas à pas en créant les projets.  
   
 #### <a name="to-create-the-vsix-project"></a>Pour créer le projet VSIX  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : rechercher un processus dans la vue processus | Documents Microsoft'
+title: 'Comment : rechercher un processus dans la vue processus | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,33 +13,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d23199031ce46e57e44a01720493fad4e77c7430
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822915"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Comment : rechercher un processus dans la vue Processus
-Vous pouvez rechercher un processus spécifique dans la vue processus à l’aide de sa chaîne de module ou d’ID de processus en tant que critères de recherche. Vous pouvez également spécifier la direction initiale de la recherche. Les champs dans la boîte de dialogue affiche les attributs du processus sélectionné dans l’arborescence du processus.  
+Vous pouvez rechercher un processus spécifique dans la vue processus à l’aide de sa chaîne d’ID ou un module de processus en tant que critères de recherche. Vous pouvez également spécifier le sens initial de la recherche. Les champs dans la boîte de dialogue affiche les attributs du processus sélectionné dans l’arborescence de processus.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Pour rechercher un processus dans la vue processus  
   
-1.  Fenêtres ainsi que Spy ++ et qu’une [vue processus](../debugger/processes-view.md) fenêtre sont visibles.  
+1. Réorganisez vos fenêtres donc que Spy ++ et qu’une [vue processus](../debugger/processes-view.md) fenêtre sont visibles.  
   
-2.  À partir de la **recherche** menu, choisissez **rechercher le processus.**  
+2. À partir de la **recherche** menu, choisissez **rechercher le processus**  
   
-     Le [boîte de dialogue de recherche de processus](../debugger/process-search-dialog-box.md) s’ouvre.  
+    Le [boîte de dialogue de recherche de processus](../debugger/process-search-dialog-box.md) s’ouvre.  
   
-3.  Tapez l’ID de processus ou une chaîne de module comme critère de recherche.  
+3. Tapez l’ID de processus ou une chaîne de module comme critère de recherche.  
   
-4.  Désactivez tous les champs pour lesquels vous ne souhaitez pas spécifier de valeurs.  
+4. Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
   
-    > [!TIP]
-    >  Pour rechercher tous les processus détenus par un module, désactivez le **processus** zone, puis tapez le nom du module dans la **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les processus.  
+   > [!TIP]
+   >  Pour rechercher tous les processus détenus par un module, désactivez le **processus** puis tapez le nom du module dans le **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les processus.  
   
-5.  Choisissez **des** ou **vers le bas** pour la direction initiale de la recherche.  
+5. Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
- Si un processus de correspondance est trouvé, il est mis en surbrillance dans le **vue processus** fenêtre.
+   Si un processus de correspondance est trouvé, elle est mise en surbrillance dans le **vue processus** fenêtre.

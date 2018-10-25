@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826894"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Comment : ajouter des parties XML personnalisées à des documents à l’aide de compléments VSTO
   Vous pouvez stocker des données XML dans les types suivants de documents en créant une partie XML personnalisée dans un complément VSTO :  
   
--   un classeur Microsoft Office Excel,  
+- un classeur Microsoft Office Excel,  
   
--   un document Microsoft Office Word,  
+- un document Microsoft Office Word,  
   
--   une présentation Microsoft Office PowerPoint.  
+- une présentation Microsoft Office PowerPoint.  
   
- Pour plus d’informations, consultez [vue d’ensemble des parties XML personnalisées](../vsto/custom-xml-parts-overview.md).  
+  Pour plus d’informations, consultez [vue d’ensemble des parties XML personnalisées](../vsto/custom-xml-parts-overview.md).  
   
- **S'applique à :** les informations de cette rubrique s'appliquent aux projets de niveau application pour Excel, PowerPoint et Word. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **S'applique à :** les informations de cette rubrique s'appliquent aux projets de niveau application pour Excel, PowerPoint et Word. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Pour ajouter une partie XML personnalisée à un classeur Excel  
   
@@ -70,7 +70,7 @@ ms.locfileid: "42636237"
   
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Pour ajouter une partie XML personnalisée à une présentation PowerPoint  
   
-1.  Ajouter un nouveau <xref:Microsoft.Office.Core.CustomXMLPart> objet de la [Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) collection dans la présentation. <xref:Microsoft.Office.Core.CustomXMLPart> contient la chaîne XML que vous souhaitez stocker dans la présentation.  
+1.  Ajouter un nouveau <xref:Microsoft.Office.Core.CustomXMLPart> de l’objet à la [Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) collection dans la présentation. <xref:Microsoft.Office.Core.CustomXMLPart> contient la chaîne XML que vous souhaitez stocker dans la présentation.  
   
      L'exemple de code suivant ajoute une partie XML personnalisée à une présentation spécifiée.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "42636237"
   
 2.  Ajouter la `AddCustomXmlPartToPresentation` méthode la `ThisAddIn` classe dans un projet de complément VSTO pour PowerPoint.  
   
-3.  Appelez cette méthode à partir d'un autre code dans votre projet. Par exemple, pour créer la partie XML personnalisée lorsque l’utilisateur ouvre une présentation, appelez la méthode de gestionnaire d’événements pour le [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) événement.  
+3.  Appelez cette méthode à partir d'un autre code dans votre projet. Par exemple, pour créer la partie XML personnalisée quand l’utilisateur ouvre une présentation, appelez la méthode à partir d’un gestionnaire d’événements pour le [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) événement.  
   
 ## <a name="robust-programming"></a>Programmation fiable  
  Par souci de simplicité, cet exemple utilise une chaîne XML définie comme variable locale dans la méthode. En règle générale, vous devez obtenir le code XML auprès d'une source externe, telle qu'un fichier ou une base de données.  

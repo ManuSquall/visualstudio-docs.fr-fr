@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860355"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Vous pouvez créer des contrôles liés aux données en faisant glisser des él�
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Pour définir les contrôles doivent être créés pour les tables de données ou d’objets  
   
-1.  Assurez-vous que le Concepteur WPF ou le Concepteur Windows Forms est ouvert.  
+1. Assurez-vous que le Concepteur WPF ou le Concepteur Windows Forms est ouvert.  
   
-2.  Dans le **des Sources de données** fenêtre, sélectionnez l’élément qui représente la table de données ou de l’objet à définir.  
+2. Dans le **des Sources de données** fenêtre, sélectionnez l’élément qui représente la table de données ou de l’objet à définir.  
   
-3.  Cliquez sur le menu déroulant pour l’élément, puis cliquez sur un des éléments suivants dans le menu :  
+3. Cliquez sur le menu déroulant pour l’élément, puis cliquez sur un des éléments suivants dans le menu :  
   
-    -   Pour afficher chaque champ de données dans un contrôle séparé, cliquez sur **détails**. Lorsque vous faites glisser l’élément de données vers le concepteur, cette action crée un contrôle lié aux données différent pour chaque colonne ou propriété de l’objet, ainsi que des étiquettes pour chaque contrôle ou une table de données parente.  
+   - Pour afficher chaque champ de données dans un contrôle séparé, cliquez sur **détails**. Lorsque vous faites glisser l’élément de données vers le concepteur, cette action crée un contrôle lié aux données différent pour chaque colonne ou propriété de l’objet, ainsi que des étiquettes pour chaque contrôle ou une table de données parente.  
   
-    -   Pour afficher toutes les données dans un seul contrôle, sélectionnez un autre contrôle dans la liste, tel que **DataGrid** ou **liste** dans une application WPF, ou **DataGridView** dans un formulaire Windows application.  
+   - Pour afficher toutes les données dans un seul contrôle, sélectionnez un autre contrôle dans la liste, tel que **DataGrid** ou **liste** dans une application WPF, ou **DataGridView** dans un formulaire Windows application.  
   
      La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version du .NET Framework que votre projet cible, et si vous avez ajouté des contrôles personnalisés cette prise en charge de liaison de données à la **boîte à outils**. Si le contrôle que vous souhaitez créer est dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

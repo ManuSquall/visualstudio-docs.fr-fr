@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Documents Microsoft
+title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4b7c0333ff5328f4bdfd2411356074dc39d567c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03565e5fb6012a236eb5191aa8c126d923d04739
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823227"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permet à l’évaluateur d’expression (EE) spécifier l’interface de rappel qui utilise le moteur du débogueur (DE) pour lire les paramètres de mesure.  
+Permet l’évaluateur d’expression (EE) spécifier l’interface de rappel que le moteur du débogueur (dé) utilisera pour lire les paramètres de mesure.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,10 +46,10 @@ int SetCallback (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode fournit une interface pour le Gestionnaire de session de débogage un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile pour déboguer à distance pour lire les métriques sur le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.  
+ Cette méthode fournit une interface avec le Gestionnaire de débogage de session un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile dans le débogage distant pour lire les métriques sur le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.  
   
 ## <a name="example"></a>Exemple  
- Les exemples suivants montrent comment implémenter cette méthode pour un **CEE** objet qui expose la [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
+ Les exemples suivants montrent comment implémenter cette méthode pour un **CEE** objet qui expose le [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
   
 ```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  

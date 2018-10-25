@@ -13,27 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf892b6d80358885f0da8e20a97bd9453c50f27
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dcd2c47de8e1ad8b650da0819b5e8b0a46213e29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875974"
 ---
 # <a name="document-windows"></a>Fenêtres de document
 Dans Visual Studio, un *fenêtre de document* est une fenêtre enfant encadré qui est associée à une fenêtre d’interface multidocument (MDI). Fenêtres de document sont généralement utilisés pour l’affichage et la modification de code source ou de texte, mais elles peuvent héberger également d’autres types fonctionnels. Fenêtres de document :  
   
--   Peuvent être organisés dans des groupes distincts onglet horizontal ou vertical dans le parent MDI afin que plusieurs fichiers peuvent être affichées en même temps.  
+- Peuvent être organisés dans des groupes distincts onglet horizontal ou vertical dans le parent MDI afin que plusieurs fichiers peuvent être affichées en même temps.  
   
--   Peuvent être ancrées dans n’importe quel ordre dans le parent MDI.  
+- Peuvent être ancrées dans n’importe quel ordre dans le parent MDI.  
   
--   Peut flotter librement.  
+- Peut flotter librement.  
   
--   Sont liées dans l’ordre de tabulation à d’autres fenêtres MDI.  
+- Sont liées dans l’ordre de tabulation à d’autres fenêtres MDI.  
   
- Les commandes pour le regroupement, ancrer et rendre flottantes sont accessibles dans le menu contextuel d’un onglet de fenêtre de document.  
+  Les commandes pour le regroupement, ancrer et rendre flottantes sont accessibles dans le menu contextuel d’un onglet de fenêtre de document.  
   
- Pour plus d’informations sur le comportement de la fenêtre dans Visual Studio, consultez [personnaliser les dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md).  
+  Pour plus d’informations sur le comportement de la fenêtre dans Visual Studio, consultez [personnaliser les dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md).  
   
 ## <a name="document-window-implementation"></a>Implémentation de fenêtres de document  
  Les fenêtres de document sont créées en implémentant un éditeur. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface crée des fenêtres de document dans le cadre de l’instanciation d’un éditeur. Pour plus d’informations, consultez [hérité interfaces dans l’éditeur](../../extensibility/legacy-interfaces-in-the-editor.md).  

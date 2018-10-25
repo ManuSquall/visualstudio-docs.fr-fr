@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByAddr | Documents Microsoft
+title: IDiaSession::findLinesByAddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28045b9a845ac873e7d9325b52d336ff8dc519
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 29718d355e1b6afb1f85fbb27b5d7b5dc7cfd610
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819873"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
-Récupère les lignes qui contiennent une adresse spécifiée dans un module spécifié.  
+Récupère les lignes dans un compiland spécifiée qui contiennent une adresse spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ HRESULT findLinesByAddr (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple illustre une fonction qui obtient tous les numéros de ligne contenues dans une fonction à l’aide d’adresse et la longueur de la fonction.  
+ Cet exemple montre une fonction qui obtient tous les numéros de ligne contenues dans une fonction à l’aide d’adresse et la longueur de la fonction.  
   
 ```C++  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  

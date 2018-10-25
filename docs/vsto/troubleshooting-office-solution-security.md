@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862929"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Résoudre les problèmes de sécurité des solutions Office
   Cette rubrique contient des conseils pour résoudre les problèmes courants que vous pouvez rencontrer lorsque vous travaillez avec la sécurisation des solutions Office.  
@@ -32,17 +32,17 @@ ms.locfileid: "35673212"
   
  L’URL du manifeste de déploiement peut être classé dans une des cinq zones :  
   
--   Mon ordinateur  
+- Mon ordinateur  
   
--   Internet  
+- Internet  
   
--   Intranet local  
+- Intranet local  
   
--   Sites de confiance  
+- Sites de confiance  
   
--   Sites sensibles  
+- Sites sensibles  
   
- Si l’emplacement du manifeste de déploiement a été assigné à la zone sites sensibles, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] n’installe pas la solution. Si l’emplacement est connu et approuvé, l’utilisateur peut supprimer l’emplacement de la zone sites sensibles et installer la solution. Pour plus d’informations sur la façon de gérer des zones, consultez [configuration d’éditeurs approuvés ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
+  Si l’emplacement du manifeste de déploiement a été assigné à la zone sites sensibles, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] n’installe pas la solution. Si l’emplacement est connu et approuvé, l’utilisateur peut supprimer l’emplacement de la zone sites sensibles et installer la solution. Pour plus d’informations sur la façon de gérer des zones, consultez [configuration d’éditeurs approuvés ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Solutions ne peut pas être installées à partir de partages de fichiers réseau ou des emplacements web lorsque la Configuration de sécurité renforcée d’Internet Explorer ou Internet Explorer 7 est installé  
  Internet Explorer Enhanced Security Configuration (IEESC) dans Windows Server 2003 et versions ultérieures et Internet Explorer 7 et versions ultérieure, restreint considérablement la capacité des utilisateurs à naviguer sur Internet. Lorsque les utilisateurs tentent d’installer des solutions Office à partir d’un emplacement web ou de partage de fichiers réseau, ils peuvent obtenir le message d’erreur suivant : « la fonctionnalité personnalisé dans cette application ne fonctionnera pas, car le certificat utilisé pour signer le manifeste de déploiement pour *SolutionName* n’est pas approuvé. Contactez votre administrateur pour obtenir une assistance supplémentaire. »  

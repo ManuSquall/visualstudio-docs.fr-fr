@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927201"
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs 
 ## <a name="uses-of-the-vsix-project-template"></a>Utilisations du modèle de projet VSIX  
  Le modèle de projet VSIX a deux utilisations principales :  
   
--   Pour déployer des modèles de projet, de modèles d’élément et d’autres extensions qui n’ont pas déjà la prise en charge de l’extension VSIX.  
+- Pour déployer des modèles de projet, de modèles d’élément et d’autres extensions qui n’ont pas déjà la prise en charge de l’extension VSIX.  
   
--   Pour inclure les sorties de plusieurs extensions dans le package de déploiement.  
+- Pour inclure les sorties de plusieurs extensions dans le package de déploiement.  
   
- Il est inutile d’utiliser le modèle de projet VSIX pour déployer des VSPackages ou autres types d’extensions n’ayant encore VSIX prennent en charge.  
+  Il est inutile d’utiliser le modèle de projet VSIX pour déployer des VSPackages ou autres types d’extensions n’ayant encore VSIX prennent en charge.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empaquetage d’une Extension dans un projet VSIX vide  
  Vous pouvez empaqueter une extension existante ou une extension qui ne dispose pas déjà VSIX prennent en charge, en l’encapsulant dans un projet VSIX vide. L’extension à encapsuler doit être d’un type qui est pris en charge par le [schéma VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  

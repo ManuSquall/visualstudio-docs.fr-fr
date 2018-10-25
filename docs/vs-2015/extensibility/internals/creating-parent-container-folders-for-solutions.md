@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832060"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Création de dossiers de conteneur parent pour les solutions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Dans l’API de plug-in de contrôle Source version 1.2, un utilisateur peut sp�
   
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE crée presque toujours un dossier SUR lors de l’ajout d’une solution au contrôle de code source. Plus précisément, il le fait dans les cas suivants :  
   
--   Le projet est un projet Web de partage de fichiers.  
+- Le projet est un projet Web de partage de fichiers.  
   
--   Il existe des lecteurs différents pour le projet et le fichier solution.  
+- Il existe des lecteurs différents pour le projet et le fichier solution.  
   
--   Il existe des partages différents pour le projet et le fichier solution.  
+- Il existe des partages différents pour le projet et le fichier solution.  
   
--   Projets ont été ajoutés séparément (dans une solution sous contrôle de code source).  
+- Projets ont été ajoutés séparément (dans une solution sous contrôle de code source).  
   
- Dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] il est recommandé que le nom du dossier SUR être le même que le nom de la solution sans l’extension. Le tableau suivant récapitule le comportement dans les deux versions.  
+  Dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] il est recommandé que le nom du dossier SUR être le même que le nom de la solution sans l’extension. Le tableau suivant récapitule le comportement dans les deux versions.  
   
 |Fonctionnalité|tSource contrôle plug-in API Version 1.1|API de plug-in Version 1.2 de contrôle de code source|  
 |-------------|----------------------------------------------|---------------------------------------------|  

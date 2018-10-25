@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetProcess | Documents Microsoft
+title: IDebugCodeContext3::GetProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0557c8024d1b5b2cafefbd5254816ffd4ddfd67a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f94214904e0efe25cc6c5b4070ae3367e91b8af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891425"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Récupère une référence à l’interface du processus de débogage.  
@@ -45,7 +45,7 @@ public int GetProcess(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugCodeContext** objet qui expose la [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugCodeContext** objet qui expose le [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)  

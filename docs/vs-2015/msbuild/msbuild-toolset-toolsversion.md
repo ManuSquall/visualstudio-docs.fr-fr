@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851827"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 ## <a name="toolset-implementation"></a>Implémentation d'un ensemble d'outils  
  Implémentez un ensemble d'outils en sélectionnant les chemins d'accès aux différents outils, cibles et tâches qui constituent l'ensemble d'outils. Les outils de l'ensemble d'outils défini par MSBuild proviennent des sources suivantes :  
   
--   Le dossier .NET Framework  
+- Le dossier .NET Framework  
   
--   Des outils managés supplémentaires  
+- Des outils managés supplémentaires  
   
- Les outils managés comprennent ResGen.exe et TlbImp.exe.  
+  Les outils managés comprennent ResGen.exe et TlbImp.exe.  
   
- MSBuild offre deux façons d'accéder à l'ensemble d'outils :  
+  MSBuild offre deux façons d'accéder à l'ensemble d'outils :  
   
--   À l'aide des propriétés de l'ensemble d'outils  
+- À l'aide des propriétés de l'ensemble d'outils  
   
--   À l'aide des méthodes de <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
+- À l'aide des méthodes de <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
- Les propriétés de l'ensemble d'outils spécifient les chemins d'accès aux outils. MSBuild utilise la valeur de l'attribut `ToolsVersion` dans le fichier projet pour trouver la clé de Registre correspondante, puis utilise les informations de cette clé pour définir les propriétés de l'ensemble d'outils. Par exemple, si `ToolsVersion` a la valeur `12.0`, MSBuild définit les propriétés de l’ensemble d’outils en fonction de cette clé de Registre : HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Les propriétés de l'ensemble d'outils spécifient les chemins d'accès aux outils. MSBuild utilise la valeur de l'attribut `ToolsVersion` dans le fichier projet pour trouver la clé de Registre correspondante, puis utilise les informations de cette clé pour définir les propriétés de l'ensemble d'outils. Par exemple, si `ToolsVersion` a la valeur `12.0`, MSBuild définit les propriétés de l’ensemble d’outils en fonction de cette clé de Registre : HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Voici des propriétés de l'ensemble d'outils :  
+  Voici des propriétés de l'ensemble d'outils :  
   
--   `MSBuildToolsPath` spécifie le chemin d'accès des fichiers binaires de MSBuild.  
+- `MSBuildToolsPath` spécifie le chemin d'accès des fichiers binaires de MSBuild.  
   
--   `SDK40ToolsPath` spécifie le chemin d'accès des outils managés supplémentaires pour MSBuild 4.x (qui peut être 4.0 ou 4.5).  
+- `SDK40ToolsPath` spécifie le chemin d'accès des outils managés supplémentaires pour MSBuild 4.x (qui peut être 4.0 ou 4.5).  
   
--   `SDK35ToolsPath` spécifie le chemin d'accès des outils managés supplémentaires pour MSBuild 3.5.  
+- `SDK35ToolsPath` spécifie le chemin d'accès des outils managés supplémentaires pour MSBuild 3.5.  
   
- Vous pouvez aussi déterminer l'ensemble d'outils par programmation en appelant les méthodes de la classe <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La classe comprend ces méthodes :  
+  Vous pouvez aussi déterminer l'ensemble d'outils par programmation en appelant les méthodes de la classe <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La classe comprend ces méthodes :  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> retourne le chemin d'accès du dossier .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> retourne le chemin d'accès du dossier .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> retourne le chemin d'accès d'un fichier du dossier .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> retourne le chemin d'accès d'un fichier du dossier .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> retourne le chemin d'accès du dossier des outils managés.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> retourne le chemin d'accès du dossier des outils managés.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retourne le chemin d'accès à un fichier qui se trouve généralement dans le dossier des outils managés.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retourne le chemin d'accès à un fichier qui se trouve généralement dans le dossier des outils managés.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retourne le chemin d'accès des outils de génération.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retourne le chemin d'accès des outils de génération.  
   
 ### <a name="sub-toolsets"></a>Sous-ensembles d'outils  
  Comme décrit plus haut dans cette rubrique, MSBuild utilise une clé de Registre pour spécifier le chemin d'accès des outils de base. Si la clé a une sous-clé, MSBuild l'utilise pour spécifier le chemin d'accès d'un sous-ensemble d'outils qui contient des outils supplémentaires. Dans ce cas, l'ensemble d'outils est défini en combinant les définitions des propriétés qui sont définies dans les deux clés.  
@@ -107,19 +107,19 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
   
  Les sous-ensembles d'outils deviennent actifs en présence de la propriété de build `VisualStudioVersion`. Cette propriété peut prendre une de ces valeurs :  
   
--   "10.0" spécifie le sous-ensemble d'outils de .NET Framework 4  
+- "10.0" spécifie le sous-ensemble d'outils de .NET Framework 4  
   
--   "11.0" spécifie le sous-ensemble d'outils de .NET Framework 4.5  
+- "11.0" spécifie le sous-ensemble d'outils de .NET Framework 4.5  
   
--   "12.0" spécifie le sous-ensemble d'outils de .NET Framework 4.5.1  
+- "12.0" spécifie le sous-ensemble d'outils de .NET Framework 4.5.1  
   
- Les sous-ensembles d'outils 10.0 et 11.0 doivent être utilisés avec la valeur 4.0 pour ToolsVersion. Dans les versions ultérieures, la version du sous-ensemble d'outils et la valeur de ToolsVersion doivent correspondre.  
+  Les sous-ensembles d'outils 10.0 et 11.0 doivent être utilisés avec la valeur 4.0 pour ToolsVersion. Dans les versions ultérieures, la version du sous-ensemble d'outils et la valeur de ToolsVersion doivent correspondre.  
   
- Lors d'une génération, MSBuild détermine et définit automatiquement une valeur par défaut pour la propriété `VisualStudioVersion` si elle n'est pas déjà définie.  
+  Lors d'une génération, MSBuild détermine et définit automatiquement une valeur par défaut pour la propriété `VisualStudioVersion` si elle n'est pas déjà définie.  
   
- MSBuild fournit des surcharges pour les méthodes `ToolLocationHelper`, qui ajoutent une valeur énumérée de `VisualStudioVersion` comme paramètre.  
+  MSBuild fournit des surcharges pour les méthodes `ToolLocationHelper`, qui ajoutent une valeur énumérée de `VisualStudioVersion` comme paramètre.  
   
- Les sous-ensembles d'outils ont été introduits dans .NET Framework 4.5.  
+  Les sous-ensembles d'outils ont été introduits dans .NET Framework 4.5.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md)   

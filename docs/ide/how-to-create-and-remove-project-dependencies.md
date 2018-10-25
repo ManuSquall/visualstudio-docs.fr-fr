@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0948dab860431d9693e67489d958f00743fa17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856013"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Guide pratique pour créer et supprimer les dépendances d’un projet
 
@@ -32,20 +32,20 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 
 ## <a name="to-assign-dependencies-to-projects"></a>Pour assigner des dépendances à des projets
 
-1.  Dans l’**Explorateur de solutions**, sélectionnez un projet.
+1. Dans l’**Explorateur de solutions**, sélectionnez un projet.
 
-2.  Dans le menu **Projet**, choisissez **Dépendances du projet**.
+2. Dans le menu **Projet**, choisissez **Dépendances du projet**.
 
-     La boîte de dialogue **Dépendances du projet** s’ouvre.
+    La boîte de dialogue **Dépendances du projet** s’ouvre.
 
-    > [!NOTE]
-    > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.
+   > [!NOTE]
+   > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.
 
-3.  Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.
+3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.
 
-4.  Dans le champ **Dépend de**, cochez la case de tout autre projet à générer avant ce projet.
+4. Dans le champ **Dépend de**, cochez la case de tout autre projet à générer avant ce projet.
 
- Votre solution doit comporter plusieurs projets pour que vous puissiez créer des dépendances du projet.
+   Votre solution doit comporter plusieurs projets pour que vous puissiez créer des dépendances du projet.
 
 ## <a name="to-remove-dependencies-from-projects"></a>Pour supprimer des dépendances de projets
 

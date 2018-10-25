@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923015"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles aux données dans Visual Studio
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles. Vous pouvez créer ces contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre sur une aire de conception ou les contrôles sur une aire dans Visual Studio.
@@ -30,14 +30,15 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 ## <a name="data-sources"></a>Sources de données
  Dans le contexte de liaison de données, une source de données représente les données en mémoire qui peut être lié à votre interface utilisateur. En pratique, une source de données peut être une classe d’Entity Framework, un jeu de données, un point de terminaison de service qui est encapsulé dans un objet de proxy .NET, une classe LINQ to SQL, ou n’importe quel objet .NET ou collection. Certaines sources de données permettent de créer des contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre, contrairement à d’autres sources de données. Le tableau suivant affiche les sources de données qui sont prises en charge.
 
-|Source de données|Prise en charge du glisser-déplacer dans **le Concepteur de formulaires Windows**|Prise en charge du glisser-déplacer dans **le Concepteur WPF**|Prise en charge du glisser-déplacer dans **le Concepteur Silverlight**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Groupe de données|Oui|Oui|Non|
-|Entity Data Model|Oui<sup>1</sup>|Oui|Oui|
-|Classes LINQ to SQL|Non<sup>2</sup>|Non<sup>2</sup>|Non<sup>2</sup>|
-|Services (y compris [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services et les services web)|Oui|Oui|Oui|
-|Object|Oui|Oui|Oui|
-|SharePoint|Oui|Oui|Oui|
+
+| Source de données | Prise en charge du glisser-déplacer dans **le Concepteur de formulaires Windows** | Prise en charge du glisser-déplacer dans **le Concepteur WPF** | Prise en charge du glisser-déplacer dans **le Concepteur Silverlight** |
+| - | - | - | - |
+| Groupe de données | Oui | Oui | Non |
+| Entity Data Model | Oui<sup>1</sup> | Oui | Oui |
+| Classes LINQ to SQL | Non<sup>2</sup> | Non<sup>2</sup> | Non<sup>2</sup> |
+| Services (y compris [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services et les services web) | Oui | Oui | Oui |
+| Object | Oui | Oui | Oui |
+| SharePoint | Oui | Oui | Oui |
 
  1. Générer le modèle à l’aide de la **Entity Data Model** Assistant, puis faire glisser ces objets vers le concepteur.
 
@@ -54,7 +55,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
  Le tableau suivant répertorie certaines des tâches plus courantes que vous effectuer pour lier des contrôles aux données.
 
 |Tâche|Complément d'information|
-|----------|----------------------|
+|----------| - |
 |Ouvrez le **des Sources de données** fenêtre.|Ouvrez une aire de conception dans l’éditeur et choisissez **vue** > **des Sources de données**.|
 |Ajouter une source de données à votre projet.|[Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)|
 |Définir le contrôle qui est créé lorsque vous faites glisser un élément à partir de la **des Sources de données** fenêtre vers le concepteur.|[Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

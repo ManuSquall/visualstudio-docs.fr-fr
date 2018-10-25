@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818261"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 
@@ -42,15 +42,15 @@ ms.locfileid: "31949917"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Pour ajouter des contrôles de la boîte à outils dans un concepteur à l’aide du clavier
 
-1.  Dans la barre de menus, choisissez **Affichage**, **Boîte à outils**.
+1. Dans la barre de menus, choisissez **Affichage**, **Boîte à outils**.
 
-2.  Utilisez les touches Ctrl+Haut ou Ctrl+Bas pour vous déplacer parmi les sections de l’onglet de boîte à outils actuel.
+2. Utilisez les touches Ctrl+Haut ou Ctrl+Bas pour vous déplacer parmi les sections de l’onglet de boîte à outils actuel.
 
-3.  Utilisez les touches Haut ou **Bas** pour vous déplacer entre les contrôles.
+3. Utilisez les touches Haut ou **Bas** pour vous déplacer entre les contrôles.
 
-4.  Une fois que le contrôle est sélectionné, appuyez sur Entrée.
+4. Une fois que le contrôle est sélectionné, appuyez sur Entrée.
 
- Le contrôle est ajouté au formulaire ou au concepteur.
+   Le contrôle est ajouté au formulaire ou au concepteur.
 
 ## <a name="dialog-box-options"></a>Options de boîte de dialogue
 

@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937887"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 ## <a name="document-outline-window"></a>Fenêtre Structure du document  
  La fenêtre Structure du document dans le concepteur XAML vous permet d'effectuer les tâches suivantes :  
   
--   Afficher la structure hiérarchique de tous les éléments de la planche graphique.  
+- Afficher la structure hiérarchique de tous les éléments de la planche graphique.  
   
--   Sélectionner des éléments pour pouvoir les modifier (les déplacer dans la hiérarchie, les modifier sur la planche graphique, définir leurs propriétés dans la fenêtre Propriétés, etc.). Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)  
+- Sélectionner des éléments pour pouvoir les modifier (les déplacer dans la hiérarchie, les modifier sur la planche graphique, définir leurs propriétés dans la fenêtre Propriétés, etc.). Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)  
   
--   Créer et modifier les modèles des éléments qui sont des contrôles.  
+- Créer et modifier les modèles des éléments qui sont des contrôles.  
   
--   Utiliser le menu contextuel des éléments sélectionnés. Le même menu est également disponible pour les éléments sélectionnés dans la planche graphique.  
+- Utiliser le menu contextuel des éléments sélectionnés. Le même menu est également disponible pour les éléments sélectionnés dans la planche graphique.  
   
- Pour afficher la fenêtre Structure du document, dans la barre de menus, choisissez **Affichage**, **Autres fenêtres**, **Structure du document**.  
+  Pour afficher la fenêtre Structure du document, dans la barre de menus, choisissez **Affichage**, **Autres fenêtres**, **Structure du document**.  
   
- ![Fenêtre Structure du document](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Fenêtre Structure du document](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Les options disponibles dans la fenêtre Structure du document sont les suivantes :  
+  Les options disponibles dans la fenêtre Structure du document sont les suivantes :  
   
- **Structure du document**  
- La vue principale de la fenêtre Structure du document affiche la hiérarchie d'un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, et pour verrouiller et masquer des éléments séparément ou en groupes.  
+  **Structure du document**  
+  La vue principale de la fenêtre Structure du document affiche la hiérarchie d'un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, et pour verrouiller et masquer des éléments séparément ou en groupes.  
   
- **Afficher/Masquer**  
- Affiche ou masque les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Utilisez les boutons **Afficher/Masquer** , qui affichent le symbole d'un œil en cas d'affichage, ou appuyez sur Ctrl+H pour masquer les éléments, et sur Maj+Ctrl+H pour les afficher.  
+  **Afficher/Masquer**  
+  Affiche ou masque les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Utilisez les boutons **Afficher/Masquer** , qui affichent le symbole d'un œil en cas d'affichage, ou appuyez sur Ctrl+H pour masquer les éléments, et sur Maj+Ctrl+H pour les afficher.  
   
- **Verrouiller/Déverrouiller**  
- Verrouille ou déverrouille les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Les éléments verrouillés ne peuvent pas être modifiés. Utilisez les boutons **Verrouiller/Déverrouiller** , qui affichent un symbole de cadenas en cas de verrouillage, ou appuyez sur Ctrl+L pour verrouiller des éléments, et sur Maj+Ctrl+L pour les déverrouiller.  
+  **Verrouiller/Déverrouiller**  
+  Verrouille ou déverrouille les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Les éléments verrouillés ne peuvent pas être modifiés. Utilisez les boutons **Verrouiller/Déverrouiller** , qui affichent un symbole de cadenas en cas de verrouillage, ou appuyez sur Ctrl+L pour verrouiller des éléments, et sur Maj+Ctrl+L pour les déverrouiller.  
   
- **Rétablir l'étendue à pageRoot**  
- L'option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, retourne la structure du document à la portée précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.  
+  **Rétablir l'étendue à pageRoot**  
+  L'option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, retourne la structure du document à la portée précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.  
   
 ## <a name="properties-window"></a>Fenêtre Propriétés  
  La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi elle ressemble :  

@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908919"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>Pour créer une solution de langage spécifique à un domaine  
   
-1.  Démarrez l’Assistant DSL.  
+1. Démarrez l’Assistant DSL.  
   
-    1.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+   1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-    2.  La boîte de dialogue **Nouveau projet** s’affiche.  
+   2. La boîte de dialogue **Nouveau projet** s’affiche.  
   
-    3.  Sous **types de projets**, développez le **autres Types de projets** nœud, puis cliquez sur **extensibilité**.  
+   3. Sous **types de projets**, développez le **autres Types de projets** nœud, puis cliquez sur **extensibilité**.  
   
-    4.  Cliquez sur **Domain-Specific Language concepteur**.  
+   4. Cliquez sur **Domain-Specific Language concepteur**.  
   
-    5.  Dans le **nom** , tapez un nom pour la solution. Cliquez sur **OK**.  
+   5. Dans le **nom** , tapez un nom pour la solution. Cliquez sur **OK**.  
   
-         Le **Assistant Concepteur de langage spécifique à un domaine** s’affiche.  
+       Le **Assistant Concepteur de langage spécifique à un domaine** s’affiche.  
   
-        > [!NOTE]
-        >  De préférence, le nom que vous tapez doit être un identificateur c# valide, car elle peut être utilisée pour générer le code.  
+      > [!NOTE]
+      >  De préférence, le nom que vous tapez doit être un identificateur c# valide, car elle peut être utilisée pour générer le code.  
   
-     ![Boîte de dialogue DSL créer](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![Boîte de dialogue DSL créer](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Choisissez un modèle DSL.  
+2. Choisissez un modèle DSL.  
   
-     Sur le **sélectionner les Options de langage spécifique à un domaine** page, sélectionnez un des modèles de solution tel que **langage Minimal**. Choisissez un modèle qui est similaire à la solution DSL que vous souhaitez créer.  
+    Sur le **sélectionner les Options de langage spécifique à un domaine** page, sélectionnez un des modèles de solution tel que **langage Minimal**. Choisissez un modèle qui est similaire à la solution DSL que vous souhaitez créer.  
   
-     Pour plus d’informations sur les modèles de solution, consultez [choix d’un modèle de Solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Pour plus d’informations sur les modèles de solution, consultez [choix d’un modèle de Solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Entrez une extension de nom de fichier le **Extension de fichier** page. Il doit être unique dans votre ordinateur, et dans tous les ordinateurs sur lesquels vous souhaitez installer la solution DSL. Vous devez voir le message **aucune application ou les éditeurs de Visual Studio n’utilisent cette extension**.  
+3. Entrez une extension de nom de fichier le **Extension de fichier** page. Il doit être unique dans votre ordinateur, et dans tous les ordinateurs sur lesquels vous souhaitez installer la solution DSL. Vous devez voir le message **aucune application ou les éditeurs de Visual Studio n’utilisent cette extension**.  
   
-    -   Si vous avez utilisé l’extension de nom de fichier dans la précédente DSL expérimentale qui n’ont pas été entièrement installé, vous pouvez les désactiver arrière à l’aide de la **réinitialiser l’Instance expérimentale** outil, qui se trouve dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu du Kit de développement logiciel.  
+   -   Si vous avez utilisé l’extension de nom de fichier dans la précédente DSL expérimentale qui n’ont pas été entièrement installé, vous pouvez les désactiver arrière à l’aide de la **réinitialiser l’Instance expérimentale** outil, qui se trouve dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu du Kit de développement logiciel.  
   
-    -   Si un autre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de le désinstaller. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+   -   Si un autre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de le désinstaller. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
-4.  Examiner et ajuster si nécessaire, les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Pages de l’Assistant concepteur DSL](#settings).  
+4. Examiner et ajuster si nécessaire, les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Pages de l’Assistant concepteur DSL](#settings).  
   
-     L’Assistant crée une solution qui comporte deux projets, qui sont nommés **Dsl** et **DslPackage**.  
+    L’Assistant crée une solution qui comporte deux projets, qui sont nommés **Dsl** et **DslPackage**.  
   
-    > [!NOTE]
-    >  Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.  
+   > [!NOTE]
+   >  Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.  
   
 ##  <a name="settings"></a> Les Pages d’Assistant concepteur DSL  
  Vous pouvez laisser certains des champs inchangés à partir de leurs valeurs par défaut. Toutefois, assurez-vous que vous définissez le champ d’Extension de fichier.  

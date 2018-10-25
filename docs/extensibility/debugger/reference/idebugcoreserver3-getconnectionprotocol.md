@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetConnectionProtocol | Documents Microsoft
+title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 127d4c5695c870c570080c79c5f447b6173b1fb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c9f0e06a99c14c65ff04d1ea273776aca725a0af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839867"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
-Retourne une valeur qui indique le protocole qui est utilisé pour la communication entre le serveur et le package de débogage.  
+Retourne une valeur qui indique le protocole utilisé pour la communication entre le serveur et le package de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ int GetConnectionProtocol(
   
 #### <a name="parameters"></a>Paramètres  
  `pProtocol`  
- [out] Retourne l’une des valeurs de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) énumération.  
+ [out] Retourne une des valeurs à partir de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) énumération.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  

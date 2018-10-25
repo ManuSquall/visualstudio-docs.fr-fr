@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865919"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -93,15 +93,15 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
 2. Effectuez l’une des opérations suivantes :
 
-    -   Cliquez sur **Échantillonnage**, puis sélectionnez **Compteur de performances** dans la liste des événements **Échantillon**. Les compteurs UC sont répertoriés sous **Compteurs de performances disponibles**.
+   - Cliquez sur **Échantillonnage**, puis sélectionnez **Compteur de performances** dans la liste des événements **Échantillon**. Les compteurs UC sont répertoriés sous **Compteurs de performances disponibles**.
 
-         **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
+      **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
 
      - ou -
 
-    -   Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
+   - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
 
-         **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.
+      **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Pour afficher la liste des compteurs Windows pris en charge sur la plateforme actuelle
 

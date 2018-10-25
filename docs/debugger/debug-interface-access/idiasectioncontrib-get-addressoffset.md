@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_addressOffset | Documents Microsoft
+title: IDiaSectionContrib::get_addressOffset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d799d4bf09ac54c298167de8a76f1b8b3e948718
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80ec5548e0fa0d0a5723235da9d9a5b9b5a1d773
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870079"
 ---
 # <a name="idiasectioncontribgetaddressoffset"></a>IDiaSectionContrib::get_addressOffset
-Récupère la partie décalage d’adresse de la contribution.  
+Récupère la partie de l’adresse de la contribution décalage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_addressOffset (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne la partie décalage de l’adresse de la contribution.  
+ [out] Retourne la partie de l’adresse de la contribution décalage.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  

@@ -27,12 +27,12 @@ caps.latest.revision: 142
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 882b8bd2e44bb630f70efe93a1338b8dd21dc501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912979"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Vous trouverez la dernière version de cette rubrique dans [IntelliTrace](https:
   
 Vous pouvez consacrer moins de temps au débogage de votre application quand vous utilisez IntelliTrace pour enregistrer et effectuer le suivi de l'historique d'exécution de votre code. Vous pouvez trouver des bogues facilement car IntelliTrace vous permet d'effectuer les tâches suivantes :  
   
--   enregistrer des événements spécifiques ;  
+- enregistrer des événements spécifiques ;  
   
-     Examinez le code associé, les données qui apparaissent dans les **variables locales** fenêtre pendant les événements de débogueur et des informations d’appel de fonction  
+   Examinez le code associé, les données qui apparaissent dans les **variables locales** fenêtre pendant les événements de débogueur et des informations d’appel de fonction  
   
--   déboguer les erreurs qu'il est difficile de reproduire ou qui interviennent lors du déploiement.  
+- déboguer les erreurs qu'il est difficile de reproduire ou qui interviennent lors du déploiement.  
   
- Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pas dans les éditions Professional ou Community).  
+  Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pas dans les éditions Professional ou Community).  
   
 ## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?  
   
@@ -78,92 +78,92 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
  Vous pouvez enregistrer les données IntelliTrace à partir des sources suivantes :  
   
--   Session IntelliTrace dans Visual Studio 2015 Enterprise ou des versions antérieures de Visual Studio Ultimate.  
+- Session IntelliTrace dans Visual Studio 2015 Enterprise ou des versions antérieures de Visual Studio Ultimate.  
   
--   Une session de test dans Microsoft Test Manager.  
+- Une session de test dans Microsoft Test Manager.  
   
--   Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [surveillance avec Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+- Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [surveillance avec Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
   
- Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTrace :  
+  Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTrace :  
   
--   Votre application a endommagé un fichier de données, mais vous ignorez à quel emplacement cet événement s'est produit.  
+- Votre application a endommagé un fichier de données, mais vous ignorez à quel emplacement cet événement s'est produit.  
   
-     Sans IntelliTrace, vous devez parcourir le code pour rechercher tous les accès possibles au fichier, placer des points d'arrêt sur ces accès, puis réexécuter votre application pour identifier l'emplacement où le problème s'est produit. Grâce à IntelliTrace, vous pouvez consulter tous les événements d'accès au fichier et des détails spécifiques relatifs à votre application quand chaque événement s'est produit.  
+   Sans IntelliTrace, vous devez parcourir le code pour rechercher tous les accès possibles au fichier, placer des points d'arrêt sur ces accès, puis réexécuter votre application pour identifier l'emplacement où le problème s'est produit. Grâce à IntelliTrace, vous pouvez consulter tous les événements d'accès au fichier et des détails spécifiques relatifs à votre application quand chaque événement s'est produit.  
   
--   Une exception se produit.  
+- Une exception se produit.  
   
-     Sans IntelliTrace, vous recevez un message concernant une exception, mais vous avez peu d'informations relatives aux événements qui ont abouti à l'exception. Vous pouvez examiner la pile des appels pour consulter la chaîne des appels qui ont conduit à l'exception, mais ne pouvez pas consulter la séquence des événements qui s'est produite pendant ces appels. Grâce à IntelliTrace, vous pouvez examiner les événements antérieurs à l'exception.  
+   Sans IntelliTrace, vous recevez un message concernant une exception, mais vous avez peu d'informations relatives aux événements qui ont abouti à l'exception. Vous pouvez examiner la pile des appels pour consulter la chaîne des appels qui ont conduit à l'exception, mais ne pouvez pas consulter la séquence des événements qui s'est produite pendant ces appels. Grâce à IntelliTrace, vous pouvez examiner les événements antérieurs à l'exception.  
   
--   Votre application se bloque sur un ordinateur de test, mais s'exécute correctement sur un ordinateur de développement.  
+- Votre application se bloque sur un ordinateur de test, mais s'exécute correctement sur un ordinateur de développement.  
   
-     Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Consultez [collecter des données de diagnostic plus dans les tests manuels](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) et [à l’aide des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md).  
+   Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Consultez [collecter des données de diagnostic plus dans les tests manuels](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) et [à l’aide des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md).  
   
--   Un bogue ou un incident se produit dans une application déployée.  
+- Un bogue ou un incident se produit dans une application déployée.  
   
-     Pour les applications basées sur Microsoft Azure, vous pouvez configurer la collecte de données IntelliTrace avant de publier l'application. Pendant que votre application s'exécute, IntelliTrace enregistre les données dans un fichier .iTrace. Consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).  
+   Pour les applications basées sur Microsoft Azure, vous pouvez configurer la collecte de données IntelliTrace avant de publier l'application. Pendant que votre application s'exécute, IntelliTrace enregistre les données dans un fichier .iTrace. Consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).  
   
-     Pour les applications web ASP.NET hébergées sur IIS 7.0, 7.5 et 8.0, et les applications SharePoint 2010 ou SharePoint 2013, utilisez Microsoft Monitoring Agent, seul ou avec System Center 2012, pour enregistrer les données IntelliTrace dans un fichier .iTrace.  
+   Pour les applications web ASP.NET hébergées sur IIS 7.0, 7.5 et 8.0, et les applications SharePoint 2010 ou SharePoint 2013, utilisez Microsoft Monitoring Agent, seul ou avec System Center 2012, pour enregistrer les données IntelliTrace dans un fichier .iTrace.  
   
-     Cela est utile lorsque vous souhaitez diagnostiquer les problèmes liés aux applications du déploiement. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+   Cela est utile lorsque vous souhaitez diagnostiquer les problèmes liés aux applications du déploiement. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ##  <a name="WhatData"></a> Quelles sont les données IntelliTrace collecte ?  
  **Collecte des informations sur les événements**  
   
  Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace : événements de débogueur, exceptions, événements .NET Framework et autres événements système qui peuvent vous aider lors d’un débogage. Déterminez le type d’événements IntelliTrace à collecter, à l’exception des événements et des exceptions du débogueur, qui sont collectés systématiquement. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
--   **Événements de débogueur**  
+- **Événements de débogueur**  
   
-     IntelliTrace enregistre systématiquement les événements intervenus dans le débogueur Visual Studio. Par exemple, le démarrage de votre application est un événement du débogueur. Les autres événements du débogueur sont les événements d'arrêt, qui interrompent l'exécution de votre application. Par exemple, votre programme atteint un point d’arrêt, atteint un point de trace ou s’il exécute une **étape** commande.  
+   IntelliTrace enregistre systématiquement les événements intervenus dans le débogueur Visual Studio. Par exemple, le démarrage de votre application est un événement du débogueur. Les autres événements du débogueur sont les événements d'arrêt, qui interrompent l'exécution de votre application. Par exemple, votre programme atteint un point d’arrêt, atteint un point de trace ou s’il exécute une **étape** commande.  
   
-     Pour améliorer les performances, IntelliTrace n'enregistre pas toutes les valeurs possibles pour un événement du débogueur. En revanche, il enregistre les valeurs suivantes :  
+   Pour améliorer les performances, IntelliTrace n'enregistre pas toutes les valeurs possibles pour un événement du débogueur. En revanche, il enregistre les valeurs suivantes :  
   
-    -   Les valeurs dans le **variables locales** fenêtre. Conserver la **variables locales** fenêtre ouverte pour afficher ces valeurs.  
+  -   Les valeurs dans le **variables locales** fenêtre. Conserver la **variables locales** fenêtre ouverte pour afficher ces valeurs.  
   
-    -   Les valeurs dans le **automatique** fenêtre uniquement lorsque la **automatique** fenêtre est ouverte  
+  -   Les valeurs dans le **automatique** fenêtre uniquement lorsque la **automatique** fenêtre est ouverte  
   
-    -   Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.  
+  -   Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.  
   
--   **Exceptions**  
+- **Exceptions**  
   
-     IntelliTrace enregistre le type et le message d'exception pour ces types d'exceptions :  
+   IntelliTrace enregistre le type et le message d'exception pour ces types d'exceptions :  
   
-    -   Exceptions traitées où l'exception est levée et interceptée  
+  -   Exceptions traitées où l'exception est levée et interceptée  
   
-    -   Exceptions non traitées  
+  -   Exceptions non traitées  
   
--   **Événements .NET framework**  
+- **Événements .NET framework**  
   
-     Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Par exemple :  
+   Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Par exemple :  
   
-    -   Pour un événement d'accès au fichier, IntelliTrace collecte le nom de fichier.  
+  -   Pour un événement d'accès au fichier, IntelliTrace collecte le nom de fichier.  
   
-    -   Pour un événement de case à cocher, IntelliTrace collecte l'état et le texte de la case à cocher.  
+  -   Pour un événement de case à cocher, IntelliTrace collecte l'état et le texte de la case à cocher.  
   
--   **Événements d’application SharePoint 2010 et SharePoint 2013**  
+- **Événements d’application SharePoint 2010 et SharePoint 2013**  
   
-     Vous pouvez enregistrer des événements de profil utilisateur et un sous-ensemble d'événements ULS (Unified Logging System) pour les applications SharePoint 2010 et 2013 qui s'exécutent en dehors de Visual Studio. Vous pouvez enregistrer ces événements dans un fichier .iTrace. Nécessite Visual Studio Enterprise 2015, une version antérieure de Visual Studio Ultimate ou [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) en cours d’exécution **Trace** mode.  
+   Vous pouvez enregistrer des événements de profil utilisateur et un sous-ensemble d'événements ULS (Unified Logging System) pour les applications SharePoint 2010 et 2013 qui s'exécutent en dehors de Visual Studio. Vous pouvez enregistrer ces événements dans un fichier .iTrace. Nécessite Visual Studio Enterprise 2015, une version antérieure de Visual Studio Ultimate ou [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) en cours d’exécution **Trace** mode.  
   
-     Lorsque vous ouvrez le fichier .iTrace, vous pouvez entrer un ID de corrélation SharePoint pour rechercher sa requête web correspondante, afficher les événements inscrits, puis démarrer le débogage à partir d'un événement spécifique. Si le fichier contient des exceptions non gérées, vous pouvez choisir un ID de corrélation pour commencer à déboguer une exception.  
+   Lorsque vous ouvrez le fichier .iTrace, vous pouvez entrer un ID de corrélation SharePoint pour rechercher sa requête web correspondante, afficher les événements inscrits, puis démarrer le débogage à partir d'un événement spécifique. Si le fichier contient des exceptions non gérées, vous pouvez choisir un ID de corrélation pour commencer à déboguer une exception.  
   
-     Consultez :  
+   Consultez :  
   
-    -   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  -   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
+  -   [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
-    -   [Procédure pas à pas : débogage d’une application SharePoint avec IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [Procédure pas à pas : débogage d’une application SharePoint avec IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
- **Collecte des informations sur les appels de fonction**  
+  **Collecte des informations sur les appels de fonction**  
   
- Configurez IntelliTrace pour collecter les informations sur les appels de fonctions. Ces informations vous permettent de consulter un historique de la pile des appels et d'exécuter en mode pas à pas des appels dans le code vers l'avant et vers l'arrière. Pour chaque appel de fonction, IntelliTrace enregistre les données suivantes :  
+  Configurez IntelliTrace pour collecter les informations sur les appels de fonctions. Ces informations vous permettent de consulter un historique de la pile des appels et d'exécuter en mode pas à pas des appels dans le code vers l'avant et vers l'arrière. Pour chaque appel de fonction, IntelliTrace enregistre les données suivantes :  
   
--   Nom de la fonction  
+- Nom de la fonction  
   
--   Valeurs des types de données primitifs passées comme paramètres aux points d'entrée de fonction et retournées aux points de sortie de fonction  
+- Valeurs des types de données primitifs passées comme paramètres aux points d'entrée de fonction et retournées aux points de sortie de fonction  
   
--   Valeurs des propriétés automatiques lorsqu'elles sont lues ou modifiées  
+- Valeurs des propriétés automatiques lorsqu'elles sont lues ou modifiées  
   
--   Pointeurs désignant des objets enfants de premier niveau, mais non leurs valeurs sauf si elles sont nulles ou pas  
+- Pointeurs désignant des objets enfants de premier niveau, mais non leurs valeurs sauf si elles sont nulles ou pas  
   
 > [!NOTE]
 >  IntelliTrace collecte uniquement les 256 premiers objets des tableaux et les 256 premiers caractères des chaînes.  

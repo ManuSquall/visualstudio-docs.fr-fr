@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::readMemory | Documents Microsoft
+title: IDiaStackWalkHelper::readMemory | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a8e435dddaf0d6fb3908a1ccb6233f08ccd28b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825853"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Lit un bloc de données à partir de l’image de l’exécutable dans la mémoire.  
+Lit un bloc de données à partir de l’image de l’exécutable en mémoire.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,23 +38,23 @@ HRESULT readMemory(
   
 #### <a name="parameters"></a>Paramètres  
  `type`  
- [in] Une valeur à partir de la [memorytypeenum, énumération](../../debugger/debug-interface-access/memorytypeenum.md) énumération spécifiant le type de mémoire à lire.  
+ [in] Une valeur comprise entre le [MemoryTypeEnum (énumération)](../../debugger/debug-interface-access/memorytypeenum.md) énumération spécifiant le type de mémoire à lire.  
   
- va  
+ Évaluation des vulnérabilités  
  [in] Adresse virtuelle dans l’image à partir duquel commencer la lecture.  
   
  `cbData`  
  [in] La taille du tampon de données en octets.  
   
  `pcbData`  
- [out] Retourne le nombre d’octets réellement lus. Si `pbData` est `NULL`, il s’agit du nombre total d’octets de données disponibles.  
+ [out] Retourne le nombre d’octets réellement lus. Si `pbData` est `NULL`, puis il s’agit du nombre total d’octets de données disponibles.  
   
  `pbData`  
- [dans, out] Une mémoire tampon est remplie avec la mémoire à lire.  
+ [in, out] Une mémoire tampon est remplie avec la mémoire à lire.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [MemoryTypeEnum (énumération)](../../debugger/debug-interface-access/memorytypeenum.md)
+ [MemoryTypeEnum, énumération](../../debugger/debug-interface-access/memorytypeenum.md)

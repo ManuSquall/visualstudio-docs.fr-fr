@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL | Documents Microsoft
+title: METADATA_ADDRESS_RETVAL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7358669f3057bf26ab88f3a1ef3fc301904c6b0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd6501fd04b7f80879e439daba68f1a4c9a9cf86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903736"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Cette structure représente une valeur de retour à partir d’une méthode ou une fonction.  
@@ -50,7 +50,7 @@ public struct METADATA_ADDRESS_RETVAL {
  ID de la méthode pour cette valeur de retour.  
   
  dwCorType  
- Le type de base de la valeur de retour. Il s’agit d’une valeur à partir de la `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] fichier corhdr.h du SDK.  
+ Le type de base de la valeur de retour. Il s’agit d’une valeur comprise entre le `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] fichier corhdr.h de kit de développement logiciel.  
   
  dwSigSize  
  La taille de la signature de la valeur de retour (tel que stocké dans `rgSig`).  
@@ -59,9 +59,9 @@ public struct METADATA_ADDRESS_RETVAL {
  Un tableau d’octets qui forment la signature de la valeur de retour.  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est la partie de l’union dans la [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lors de la structure la `dwKind` champ le `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_RETVAL` (une valeur à partir de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
+ Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_RETVAL` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

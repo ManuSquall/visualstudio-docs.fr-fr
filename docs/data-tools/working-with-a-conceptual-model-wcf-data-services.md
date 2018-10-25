@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862969"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Travailler avec un modèle conceptuel (WCF Data Services)
 
@@ -27,10 +27,11 @@ Lorsque vous utilisez un modèle conceptuel pour décrire les données dans une 
 
  Vous pouvez utiliser des modèles conceptuels avec les applications WCF Data Services. Les rubriques suivantes montrent comment interroger des données via un modèle conceptuel.
 
-|Rubrique|Description|
-|-----------|-----------------|
-|[Comment : exécuter des requêtes de Service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Montre comment interroger un service de données à partir d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] application.|
-|[Comment : projeter des résultats de requête](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Montre comment réduire la quantité de données retournées par une requête de service de données.|
+
+| Rubrique | Description |
+| - | - |
+| [Comment : exécuter des requêtes de Service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] application. |
+| [Comment : projeter des résultats de requête](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par une requête de service de données. |
 
  Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données est valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation pour les opérations que vous effectuez sur un service de l’entité ou de données.
 

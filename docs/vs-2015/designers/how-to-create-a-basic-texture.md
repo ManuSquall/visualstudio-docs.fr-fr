@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855831"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
   
 #### <a name="to-create-a-bullseye-target-texture"></a>Pour créer une texture de cible  
   
-1.  Créez une texture à utiliser. Pour plus d’informations sur l’ajout d’une texture à votre projet, consultez la section Mise en route de l’article [Éditeur d’images](../designers/image-editor.md).  
+1. Créez une texture à utiliser. Pour plus d’informations sur l’ajout d’une texture à votre projet, consultez la section Mise en route de l’article [Éditeur d’images](../designers/image-editor.md).  
   
-2.  Définissez la taille de l’image sur 512x512 pixels. Dans la fenêtre **Propriétés**, définissez les valeurs des propriétés **Largeur** et **Hauteur** sur `512`.  
+2. Définissez la taille de l’image sur 512x512 pixels. Dans la fenêtre **Propriétés**, définissez les valeurs des propriétés **Largeur** et **Hauteur** sur `512`.  
   
-3.  Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**. À présent, la fenêtre **Propriétés** affiche les propriétés de l’outil **Remplissage** ainsi que les propriétés des images.  
+3. Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**. À présent, la fenêtre **Propriétés** affiche les propriétés de l’outil **Remplissage** ainsi que les propriétés des images.  
   
-4.  Définissez la couleur de premier plan sur noir entièrement transparent. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Premier plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** situées en regard du sélecteur de couleurs sur `0`.  
+4. Définissez la couleur de premier plan sur noir entièrement transparent. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Premier plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** situées en regard du sélecteur de couleurs sur `0`.  
   
-5.  Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**, puis appuyez sur la touche Maj de façon prolongée et choisissez un point de l’image. L’utilisation de la touche Maj provoque le remplacement de la couleur de l’image par la valeur alpha de la couleur de remplissage. Par ailleurs, la valeur alpha permet de fusionner la couleur de remplissage avec la couleur de l’image.  
+5. Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**, puis appuyez sur la touche Maj de façon prolongée et choisissez un point de l’image. L’utilisation de la touche Maj provoque le remplacement de la couleur de l’image par la valeur alpha de la couleur de remplissage. Par ailleurs, la valeur alpha permet de fusionner la couleur de remplissage avec la couleur de l’image.  
   
-    > [!IMPORTANT]
-    >  Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.  
+   > [!IMPORTANT]
+   >  Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.  
   
-6.  Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Ellipse**.  
+6. Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Ellipse**.  
   
-7.  Définissez la couleur de premier plan sur noir entièrement opaque. Définissez les valeurs des propriétés **R**, **V** et **B** sur `0`, et la valeur de la propriété **A** sur `255`.  
+7. Définissez la couleur de premier plan sur noir entièrement opaque. Définissez les valeurs des propriétés **R**, **V** et **B** sur `0`, et la valeur de la propriété **A** sur `255`.  
   
-8.  Définissez la couleur d’arrière-plan sur blanc entièrement opaque. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Arrière-plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** sur `255`.  
+8. Définissez la couleur d’arrière-plan sur blanc entièrement opaque. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Arrière-plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** sur `255`.  
   
 9. Définissez la largeur du contour de l’ellipse. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Apparence**, définissez la valeur de la propriété **Largeur** sur `8`.  
   
@@ -89,11 +89,11 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
   
 17. Tracez un autre cercle des coordonnées de pixel `(192, 192)` aux coordonnées de pixel `(320, 320)`.  
   
- La texture de cible est complète. Voici l’image finale, affichée avec la transparence.  
+    La texture de cible est complète. Voici l’image finale, affichée avec la transparence.  
   
- ![Texture de cible complète](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
+    ![Texture de cible complète](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
- Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+    Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Image Editor](../designers/image-editor.md)

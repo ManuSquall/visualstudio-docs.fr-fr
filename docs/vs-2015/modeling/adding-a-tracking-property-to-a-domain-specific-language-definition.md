@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894376"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
  Cette procédure pas à pas, vous allez créer un langage spécifique à un domaine (DSL) qui a une propriété qui a comme valeur par défaut basée sur la propriété Namespace de valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur les propriétés de suivi, consultez [définissant les propriétés de suivi](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas servir à ajouter une propriété de suivi à un langage. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.  
+- La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas servir à ajouter une propriété de suivi à un langage. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.  
   
- Une propriété de suivi a deux états : suivi et de mise à jour par l’utilisateur. Propriétés de suivi présentent les caractéristiques suivantes :  
+  Une propriété de suivi a deux états : suivi et de mise à jour par l’utilisateur. Propriétés de suivi présentent les caractéristiques suivantes :  
   
--   En cas de l’état de suivi, la valeur de la propriété de suivi est calculée, et la valeur est mise à jour que les autres propriétés dans la modification de modèle.  
+- En cas de l’état de suivi, la valeur de la propriété de suivi est calculée, et la valeur est mise à jour que les autres propriétés dans la modification de modèle.  
   
--   Dans la mise à jour par l’état utilisateur, la valeur de la propriété de suivi conserve la valeur à laquelle l’utilisateur précédente définition de la propriété.  
+- Dans la mise à jour par l’état utilisateur, la valeur de la propriété de suivi conserve la valeur à laquelle l’utilisateur précédente définition de la propriété.  
   
--   Dans le **propriétés** fenêtre, le **réinitialiser** commande pour la propriété de suivi est activée uniquement lorsque la propriété est dans la mise à jour par l’état utilisateur. Le **réinitialiser** commande définit la propriété de suivi à l’état de suivi.  
+- Dans le **propriétés** fenêtre, le **réinitialiser** commande pour la propriété de suivi est activée uniquement lorsque la propriété est dans la mise à jour par l’état utilisateur. Le **réinitialiser** commande définit la propriété de suivi à l’état de suivi.  
   
--   Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans le suivi de l’état, sa valeur est affichée dans une police normale.  
+- Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans le suivi de l’état, sa valeur est affichée dans une police normale.  
   
--   Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans la mise à jour par état de l’utilisateur, sa valeur est affichée dans une police en gras.  
+- Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans la mise à jour par état de l’utilisateur, sa valeur est affichée dans une police en gras.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Avant de commencer cette procédure pas à pas, vous devez d’abord installer ces composants :  

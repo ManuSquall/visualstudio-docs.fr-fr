@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950847"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Comment : créer des modèles à plusieurs projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
   
  Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier .zip :  
   
--   Un fichier .vstemplate racine pour tout le modèle à plusieurs projets. Ce fichier .vstemplate racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et indique l’emplacement des fichiers .vstemplate pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier .zip.  
+- Un fichier .vstemplate racine pour tout le modèle à plusieurs projets. Ce fichier .vstemplate racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et indique l’emplacement des fichiers .vstemplate pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier .zip.  
   
--   Un ou plusieurs dossiers contenant les fichiers nécessaires pour un modèle de projet complet. Ils incluent tous les fichiers de code du projet ainsi qu’un fichier .vstemplate pour le projet.  
+- Un ou plusieurs dossiers contenant les fichiers nécessaires pour un modèle de projet complet. Ils incluent tous les fichiers de code du projet ainsi qu’un fichier .vstemplate pour le projet.  
   
- Par exemple, le fichier .zip d’un modèle à plusieurs projets contenant deux projets peut contenir les fichiers et répertoires suivants :  
+  Par exemple, le fichier .zip d’un modèle à plusieurs projets contenant deux projets peut contenir les fichiers et répertoires suivants :  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- Le fichier .vstemplate racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :  
+  Le fichier .vstemplate racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :  
   
--   L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Exemple :  
+- L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Exemple :  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Exemple :  
+- L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Exemple :  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- Les modèles à plusieurs projets ont également un comportement différent des modèles standard. Les modèles à plusieurs projets ont les caractéristiques particulières suivantes :  
+  Les modèles à plusieurs projets ont également un comportement différent des modèles standard. Les modèles à plusieurs projets ont les caractéristiques particulières suivantes :  
   
--   Vous ne pouvez pas assigner les noms de manière individuelle aux projets d’un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**. Pour spécifier le nom de chaque projet, vous devez définir l’attribut `ProjectName` sur l’élément `ProjectTemplateLink`. Pour plus d’informations, consultez le premier exemple dans la section suivante.  
+- Vous ne pouvez pas assigner les noms de manière individuelle aux projets d’un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**. Pour spécifier le nom de chaque projet, vous devez définir l’attribut `ProjectName` sur l’élément `ProjectTemplateLink`. Pour plus d’informations, consultez le premier exemple dans la section suivante.  
   
--   Les modèles à plusieurs projets peuvent contenir des projets écrits dans des langages différents, mais l’ensemble du modèle doit être placé dans une seule catégorie à l’aide de l’élément `ProjectType`.  
+- Les modèles à plusieurs projets peuvent contenir des projets écrits dans des langages différents, mais l’ensemble du modèle doit être placé dans une seule catégorie à l’aide de l’élément `ProjectType`.  
   
 ### <a name="to-create-a-multi-project-template"></a>Pour créer un modèle à plusieurs projets  
   

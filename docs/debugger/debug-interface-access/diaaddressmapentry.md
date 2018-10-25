@@ -1,5 +1,5 @@
 ---
-title: DiaAddressMapEntry | Documents Microsoft
+title: DiaAddressMapEntry | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a29de8f18a9d3123d73210d0e362c2ae2d32641
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819054"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
-Décrit une entrée dans une table d’adresses.  
+Décrit une entrée dans un mappage d’adresses.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,19 +41,19 @@ struct DiaAddressMapEntry {
  L’adresse virtuelle relative `rva` est mappé dans l’image B.  
   
 ## <a name="remarks"></a>Notes  
- Un mappage d’adresse fournit une traduction à partir de la disposition d’une image (A) à un autre (B). Un tableau de `DiaAddressMapEntry` structures triés par `rva` définit un mappage d’adresse.  
+ Un mappage d’adresses fournit une traduction à partir de la disposition d’une image (A) à un autre (B). Un tableau de `DiaAddressMapEntry` structures triés par `rva` définit un mappage d’adresses.  
   
  Pour convertir une adresse, `addrA`, dans l’image A une adresse, `addrB`, dans l’image B, procédez comme suit :  
   
-1.  Rechercher le mappage de l’écriture, `e`, avec le plus grand `rva` inférieure ou égale à `addrA`.  
+1. Rechercher le mappage de l’écriture, `e`, avec le plus grand `rva` inférieure ou égale à `addrA`.  
   
-2.  Set `delta = addrA - e.rva`.  
+2. Définir `delta = addrA - e.rva`.  
   
-3.  Set `addrB = e.rvaTo + delta`.  
+3. Définir `addrB = e.rvaTo + delta`.  
   
- Un tableau de `DiaAddressMapEntry` structures est passé à la [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (méthode).  
+   Un tableau de `DiaAddressMapEntry` structures est passé à la [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : dia2.h  
   
 ## <a name="see-also"></a>Voir aussi  

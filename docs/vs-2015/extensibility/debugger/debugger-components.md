@@ -17,33 +17,33 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5603450bdc761626a55f34813dc46cb8141da7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811865"
 ---
 # <a name="debugger-components"></a>Composants du débogueur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur est implémenté comme un VSPackage et gère la session de débogage entière. La session de débogage comprend les éléments suivants :  
   
--   **Package de débogage :** le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur fournit la même interface utilisateur, quel que soit ce qui est en cours de débogage.  
+- **Package de débogage :** le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur fournit la même interface utilisateur, quel que soit ce qui est en cours de débogage.  
   
--   **Gestionnaire de session de débogage (SDM) :** fournit une interface de programmation cohérente pour la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur pour la gestion d’un grand nombre de moteurs de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Gestionnaire de session de débogage (SDM) :** fournit une interface de programmation cohérente pour la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur pour la gestion d’un grand nombre de moteurs de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   **Gestionnaire de débogage de processus (PDM) :** gère, toutes les instances en cours d’exécution de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], une liste de tous les programmes qui peuvent être ou sont en cours de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Gestionnaire de débogage de processus (PDM) :** gère, toutes les instances en cours d’exécution de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], une liste de tous les programmes qui peuvent être ou sont en cours de débogage. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   **(Dé) de moteur de débogage :** est responsable de la surveillance d’un programme en cours de débogage, communiquer l’état du programme en cours d’exécution pour le SDM et le responsables prestations Professional direct et l’interaction avec l’évaluateur d’expression et le fournisseur de symboles pour fournir une analyse en temps réel de la état de la mémoire et les variables d’un programme. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge de leur propres moment de l’exécution.  
+- **(Dé) de moteur de débogage :** est responsable de la surveillance d’un programme en cours de débogage, communiquer l’état du programme en cours d’exécution pour le SDM et le responsables prestations Professional direct et l’interaction avec l’évaluateur d’expression et le fournisseur de symboles pour fournir une analyse en temps réel de la état de la mémoire et les variables d’un programme. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge de leur propres moment de l’exécution.  
   
--   **Évaluateur d’expression (EE) :** prend en charge pour l’évaluation dynamique de variables et expressions fournies par l’utilisateur lorsqu’un programme a été arrêté à un moment donné. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge leur propre langue.  
+- **Évaluateur d’expression (EE) :** prend en charge pour l’évaluation dynamique de variables et expressions fournies par l’utilisateur lorsqu’un programme a été arrêté à un moment donné. Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour les langues prises en charge) et des fournisseurs tiers qui souhaitent prendre en charge leur propre langue.  
   
--   **Fournisseur de symboles (SP) :** également appelé un gestionnaire de symboles, mappe les symboles de débogage d’un programme à une instance en cours d’exécution du programme afin que les informations explicites peuvent être fournies (par exemple, le niveau de code source de débogage et l’expression d’évaluation). Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour le Common Language Runtime (CLR) symboles et la base de données du programme [PDB] symbol format de fichier) et par des fournisseurs tiers qui ont leur propre méthode propriétaire de stocker les informations de débogage.  
+- **Fournisseur de symboles (SP) :** également appelé un gestionnaire de symboles, mappe les symboles de débogage d’un programme à une instance en cours d’exécution du programme afin que les informations explicites peuvent être fournies (par exemple, le niveau de code source de débogage et l’expression d’évaluation). Il est implémenté par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (pour le Common Language Runtime (CLR) symboles et la base de données du programme [PDB] symbol format de fichier) et par des fournisseurs tiers qui ont leur propre méthode propriétaire de stocker les informations de débogage.  
   
- Le diagramme suivant illustre les relations entre ces éléments du débogueur Visual Studio.  
+  Le diagramme suivant illustre les relations entre ces éléments du débogueur Visual Studio.  
   
- ![Vue d’ensemble des composants de débogage](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+  ![Vue d’ensemble des composants de débogage](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Déboguer le package](../../extensibility/debugger/debug-package.md)  

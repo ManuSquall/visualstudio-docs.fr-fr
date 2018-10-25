@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830975"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d'élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 ### <a name="installed-templates"></a>Modèles installés  
  Par défaut, les modèles installés avec le produit se trouvent dans :  
   
--   \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\\*Langage*\\*Paramètres_régionaux*\  
+- \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\\*Langage*\\*Paramètres_régionaux*\  
   
--   \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\\*Langage*\\*Paramètres_régionaux\\*  
+- \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\\*Langage*\\*Paramètres_régionaux\\*  
   
- Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour l'anglais :  
+  Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour l'anglais :  
   
- \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>Modèles personnalisés  
  Par défaut, les modèles personnalisés se trouvent dans :  
   
--   \Mes documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Langage*\  
+- \Mes documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Langage*\  
   
--   \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\*Langage*\  
+- \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\*Langage*\  
   
- Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[csprcs](../includes/csprcs-md.md)] personnalisés :   
+  Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[csprcs](../includes/csprcs-md.md)] personnalisés :   
   
- C:\Documents and Settings\nom_utilisateur\Mes Documents\\< version de Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\nom_utilisateur\Mes Documents\\< version de Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
   
- Les modèles personnalisés n'incluent pas de sous-répertoire pour les modèles localisés. Vous pouvez changer le répertoire par défaut des modèles personnalisés dans la boîte de dialogue **Options**, sous **Environnement\Projets et solutions**.  
+  Les modèles personnalisés n'incluent pas de sous-répertoire pour les modèles localisés. Vous pouvez changer le répertoire par défaut des modèles personnalisés dans la boîte de dialogue **Options**, sous **Environnement\Projets et solutions**.  
   
 ## <a name="organizing-templates"></a>Organisation de modèles  
  Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent les structures de répertoires qui existent pour les modèles installés et personnalisés. Vous pouvez modifier ces structures de répertoires pour organiser vos modèles selon votre propre logique.  
@@ -73,25 +73,25 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>Pour créer des catégories de modèles de projet installés  
   
-1.  Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Office pour les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pourriez créer le répertoire suivant :   
+1. Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Office pour les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pourriez créer le répertoire suivant :   
   
-     \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
+2. Placez tous les modèles de cette catégorie dans le nouveau dossier.  
   
-3.  Fermez toutes les instances de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Fermez toutes les instances de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Dans le menu **Démarrer**, cliquez sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
+4. Dans le menu **Démarrer**, cliquez sur **Exécuter**, tapez **cmd**, puis cliquez sur **OK**.  
   
-5.  À l’invite de commandes, localisez le répertoire qui contient devenv.exe et tapez **devenv /installvstemplates**.  
+5. À l’invite de commandes, localisez le répertoire qui contient devenv.exe et tapez **devenv /installvstemplates**.  
   
-6.  Exécutez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Exécutez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
+7. Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
   
-8.  Vérifiez que la catégorie Office apparaît dans la boîte de dialogue **Nouveau projet**, dans le volet **Types de projets**, sous [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+8. Vérifiez que la catégorie Office apparaît dans la boîte de dialogue **Nouveau projet**, dans le volet **Types de projets**, sous [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- Vous pouvez également regrouper dans un dossier personnalisé un sous-ensemble de modèles d’élément de projet.  
+   Vous pouvez également regrouper dans un dossier personnalisé un sous-ensemble de modèles d’élément de projet.  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Pour créer des catégories de modèles d'élément installés  
   
@@ -120,17 +120,17 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>Pour créer des catégories de modèles de projet personnalisés  
   
-1.  Créez un dossier dans le dossier du langage du répertoire des modèles de projet personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :   
+1. Créez un dossier dans le dossier du langage du répertoire des modèles de projet personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :   
   
-     \My documents\\< version de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My documents\\< version de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  Placez tous les modèles de cette catégorie dans le nouveau dossier.  
+2. Placez tous les modèles de cette catégorie dans le nouveau dossier.  
   
-3.  Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
+3. Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
   
-4.  Vérifiez que la catégorie HelloWorld apparaît dans la boîte de dialogue **Nouveau projet** dans le volet **Types de projets**, sous [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
+4. Vérifiez que la catégorie HelloWorld apparaît dans la boîte de dialogue **Nouveau projet** dans le volet **Types de projets**, sous [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
- Vous pouvez également regrouper dans un dossier personnalisé un sous-ensemble de modèles d’élément personnalisés.  
+   Vous pouvez également regrouper dans un dossier personnalisé un sous-ensemble de modèles d’élément personnalisés.  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Pour créer des catégories de modèles d'élément personnalisés  
   

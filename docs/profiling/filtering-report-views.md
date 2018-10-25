@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919167"
 ---
 # <a name="filter-report-views"></a>Filtrer les vues des rapports
 Vous pouvez appliquer des filtres aux fichiers de données de profilage pour limiter les données qui sont affichées dans les vues des rapports de performances et exportées dans les fichiers de rapport. Vous pouvez limiter un rapport aux données entre des valeurs d’horodatage, et limiter les données à des processus et des threads spécifiques. Vous pouvez enregistrer les filtres dans un fichier, puis créer un filtre sur un autre fichier de données de profilage en important le filtre enregistré.  
@@ -46,19 +46,19 @@ Vous pouvez appliquer des filtres aux fichiers de données de profilage pour lim
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Pour créer un filtre de rapport de profileur à partir de la vue du rapport Marques  
   
-1.  Sélectionnez **Marques** dans la liste **Vue actuelle** sur la barre d’outils de la vue Rapport de performances.  
+1. Sélectionnez **Marques** dans la liste **Vue actuelle** sur la barre d’outils de la vue Rapport de performances.  
   
-     Le rapport de profileur Marques s’affiche.  
+    Le rapport de profileur Marques s’affiche.  
   
-2.  Sélectionnez l’événement ETW ou l’événement d’échantillonnage que vous voulez utiliser comme point de départ du rapport.  
+2. Sélectionnez l’événement ETW ou l’événement d’échantillonnage que vous voulez utiliser comme point de départ du rapport.  
   
-3.  Appuyez sur la touche Ctrl tout en la maintenant enfoncée et cliquez sur l’événement que vous voulez utiliser comme point de fin du rapport.  
+3. Appuyez sur la touche Ctrl tout en la maintenant enfoncée et cliquez sur l’événement que vous voulez utiliser comme point de fin du rapport.  
   
-4.  Cliquez avec le bouton droit, puis cliquez sur une des options suivantes :  
+4. Cliquez avec le bouton droit, puis cliquez sur une des options suivantes :  
   
-    -   **Ajouter un filtre aux marques** crée des clauses de filtre qui utilisent la colonne Marque comme champ de filtre.  
+   - **Ajouter un filtre aux marques** crée des clauses de filtre qui utilisent la colonne Marque comme champ de filtre.  
   
-    -   **Ajouter un filtre aux horodatages** crée des clauses de filtre qui utilisent la colonne Horodatage en millisecondes comme champ de filtre.  
+   - **Ajouter un filtre aux horodatages** crée des clauses de filtre qui utilisent la colonne Horodatage en millisecondes comme champ de filtre.  
   
      Les deux options filtrent le fichier de données actif aux mêmes points de début et de fin. L’une ou l’autre des options peut être préférable si vous exportez le filtre pour l’utiliser dans d’autres rapports.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827478"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Définir et installer une extension de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 ## <a name="creating-a-modeling-extension-solution"></a>Création d’une solution d’extension de modélisation  
  Pour définir une extension de modélisation, vous devez créer une solution contenant ces projets :  
   
--   Un projet d'Extension d'intégration [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Cela génère un fichier qui agit comme un programme d’installation pour les composants de votre extension.  
+- Un projet d'Extension d'intégration [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Cela génère un fichier qui agit comme un programme d’installation pour les composants de votre extension.  
   
--   Un projet de bibliothèque de classes, nécessaire pour les composants qui incluent du code de programme.  
+- Un projet de bibliothèque de classes, nécessaire pour les composants qui incluent du code de programme.  
   
- Si vous souhaitez créer une extension qui comporte plusieurs composants, vous pouvez les développer dans une solution unique. Un seul projet VSIX suffit.  
+  Si vous souhaitez créer une extension qui comporte plusieurs composants, vous pouvez les développer dans une solution unique. Un seul projet VSIX suffit.  
   
- Vous pouvez ajouter des composants qui ne nécessitent pas de code, comme les éléments de boîte à outils personnalisés et les profils UML personnalisés, directement au projet VSIX sans utiliser de projets de bibliothèque de classes distincts. Il est plus facile de définir les composants qui nécessitent du code de programme dans un projet de bibliothèque de classes distinct. Il s’agit de composants tels que les gestionnaires de mouvements, les commandes de menu et le code de validation.  
+  Vous pouvez ajouter des composants qui ne nécessitent pas de code, comme les éléments de boîte à outils personnalisés et les profils UML personnalisés, directement au projet VSIX sans utiliser de projets de bibliothèque de classes distincts. Il est plus facile de définir les composants qui nécessitent du code de programme dans un projet de bibliothèque de classes distinct. Il s’agit de composants tels que les gestionnaires de mouvements, les commandes de menu et le code de validation.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Pour créer un projet de bibliothèque de classes pour des commandes de menu, des gestionnaires de mouvements ou la validation  
   
@@ -133,15 +133,15 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
   
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension  
   
-1.  Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
   
-2.  Développez **Extensions installées**.  
+2. Développez **Extensions installées**.  
   
-3.  Sélectionnez l’extension, puis cliquez sur **Désinstaller**.  
+3. Sélectionnez l’extension, puis cliquez sur **Désinstaller**.  
   
- Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à partir de l’emplacement suivant où *% LocalAppData%* est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local :  
+   Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à partir de l’emplacement suivant où *% LocalAppData%* est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local :  
   
- *%LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md)   

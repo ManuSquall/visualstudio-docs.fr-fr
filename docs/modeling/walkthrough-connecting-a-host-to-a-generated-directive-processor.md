@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896235"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connecter un hôte à un processeur de directive généré
 
@@ -33,21 +33,22 @@ Dans cette procédure pas à pas, vous développez votre hôte personnalisé afi
 
 Cette procédure pas à pas comprend les tâches suivantes :
 
--   À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pour générer un processeur de directive qui est basé sur un modèle de domaine.
+- À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pour générer un processeur de directive qui est basé sur un modèle de domaine.
 
--   Connexion d’un hôte de modèle de texte personnalisé pour le processeur de directive généré.
+- Connexion d’un hôte de modèle de texte personnalisé pour le processeur de directive généré.
 
--   Test de l’hôte personnalisé avec le processeur de directive généré.
+- Test de l’hôte personnalisé avec le processeur de directive généré.
 
 ## <a name="prerequisites"></a>Prérequis
 
 Pour définir un DSL, vous devez avoir installé les composants suivants :
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ En outre, vous devez disposer de la transformation de modèle de texte personnal
 
 Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur de langage spécifique à un domaine pour créer un langage spécifique à un domaine pour la solution DSLMinimalTest.
 
-1.  Créer une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
+1. Créer une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
 
-    -   Nom : DSLMinimalTest
+   -   Nom : DSLMinimalTest
 
-    -   Modèle de solution : langage Minimal
+   -   Modèle de solution : langage Minimal
 
-    -   Extension de fichier : min
+   -   Extension de fichier : min
 
-    -   Nom de la société : Fabrikam
+   -   Nom de la société : Fabrikam
 
    Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  Dans le menu **Générer** , cliquez sur **Générer la solution**.
+2. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
-    > [!IMPORTANT]
-    > Cette étape génère le processeur de directive et ajoute la clé pour celui-ci dans le Registre.
+   > [!IMPORTANT]
+   > Cette étape génère le processeur de directive et ajoute la clé pour celui-ci dans le Registre.
 
-3.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.
+3. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.
 
-     Une deuxième instance de Visual Studio s’ouvre.
+    Une deuxième instance de Visual Studio s’ouvre.
 
-4.  Dans la build expérimentale, dans **l’Explorateur de solutions**, double-cliquez sur le fichier **sample.min**.
+4. Dans la build expérimentale, dans **l’Explorateur de solutions**, double-cliquez sur le fichier **sample.min**.
 
-     Le fichier s’ouvre dans le concepteur. Notez que le modèle a deux éléments, ExampleElement1 et ExampleElement2 et un lien entre eux.
+    Le fichier s’ouvre dans le concepteur. Notez que le modèle a deux éléments, ExampleElement1 et ExampleElement2 et un lien entre eux.
 
-5.  Fermez la deuxième instance de Visual Studio.
+5. Fermez la deuxième instance de Visual Studio.
 
-6.  Enregistrer la solution, puis fermez le Concepteur de langage spécifique à un domaine.
+6. Enregistrer la solution, puis fermez le Concepteur de langage spécifique à un domaine.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Se connecter à un hôte de modèle de texte personnalisé à un processeur de Directive
 

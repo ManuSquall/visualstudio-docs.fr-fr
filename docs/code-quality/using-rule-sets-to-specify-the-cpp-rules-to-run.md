@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893596"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisez des ensembles de règles pour spécifier les règles C++ à exécuter
 
@@ -34,11 +34,11 @@ Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à
 
 3. Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :
 
-    - Choisissez l’ensemble de règles que vous souhaitez personnaliser.
+   - Choisissez l’ensemble de règles que vous souhaitez personnaliser.
 
      \- ou -
 
-    - Choisissez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
+   - Choisissez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
 
 4. Choisissez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.
 

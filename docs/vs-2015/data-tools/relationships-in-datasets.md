@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935404"
 ---
 # <a name="relationships-in-datasets"></a>Relations dans les jeux de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
  Le <xref:System.Data.DataRelation> objet effectue deux fonctions :  
   
--   Elle peut rendre disponible les enregistrements liés à un enregistrement que vous travaillez. Il fournit des enregistrements enfants si vous êtes dans un enregistrement parent (<xref:System.Data.DataRow.GetChildRows%2A>) et un enregistrement parent si vous travaillez avec un enregistrement enfant (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Elle peut rendre disponible les enregistrements liés à un enregistrement que vous travaillez. Il fournit des enregistrements enfants si vous êtes dans un enregistrement parent (<xref:System.Data.DataRow.GetChildRows%2A>) et un enregistrement parent si vous travaillez avec un enregistrement enfant (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   Il peut appliquer des contraintes d’intégrité référentielle, telles que la suppression des enregistrements enfants connexes lorsque vous supprimez un enregistrement parent.  
+- Il peut appliquer des contraintes d’intégrité référentielle, telles que la suppression des enregistrements enfants connexes lorsque vous supprimez un enregistrement parent.  
   
- Il est important de comprendre la différence entre une vraie jointure et la fonction d’un <xref:System.Data.DataRelation> objet. Dans une jointure true, les enregistrements des tables parentes et enfants et sont placés dans un seul jeu d’enregistrements. Lorsque vous utilisez un <xref:System.Data.DataRelation> de l’objet, aucun nouveau jeu d’enregistrements n’est créé. Au lieu de cela, le DataRelation effectue le suivi de la relation entre les tables et synchronise les enregistrements parents et enfants.  
+  Il est important de comprendre la différence entre une vraie jointure et la fonction d’un <xref:System.Data.DataRelation> objet. Dans une jointure true, les enregistrements des tables parentes et enfants et sont placés dans un seul jeu d’enregistrements. Lorsque vous utilisez un <xref:System.Data.DataRelation> de l’objet, aucun nouveau jeu d’enregistrements n’est créé. Au lieu de cela, le DataRelation effectue le suivi de la relation entre les tables et synchronise les enregistrements parents et enfants.  
   
 ## <a name="datarelation-objects-and-constraints"></a>Contraintes des objets DataRelation  
  Un <xref:System.Data.DataRelation> objet est également utilisé pour créer et appliquer les contraintes suivantes :  
   
--   Une contrainte unique, ce qui garantit qu’une colonne dans la table ne contient aucun doublon.  
+- Une contrainte unique, ce qui garantit qu’une colonne dans la table ne contient aucun doublon.  
   
--   Une contrainte de clé étrangère, qui peut être utilisée pour maintenir l’intégrité référentielle entre une table parent et enfant dans un jeu de données.  
+- Une contrainte de clé étrangère, qui peut être utilisée pour maintenir l’intégrité référentielle entre une table parent et enfant dans un jeu de données.  
   
- Les contraintes que vous spécifiez dans un <xref:System.Data.DataRelation> objet sont implémentées en créant les objets appropriés automatiquement ou en définissant des propriétés. Si vous créez une contrainte foreign key à l’aide de la <xref:System.Data.DataRelation> objet, les instances de la <xref:System.Data.ForeignKeyConstraint> classe sont ajoutés à la <xref:System.Data.DataRelation> l’objet <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propriété.  
+  Les contraintes que vous spécifiez dans un <xref:System.Data.DataRelation> objet sont implémentées en créant les objets appropriés automatiquement ou en définissant des propriétés. Si vous créez une contrainte foreign key à l’aide de la <xref:System.Data.DataRelation> objet, les instances de la <xref:System.Data.ForeignKeyConstraint> classe sont ajoutés à la <xref:System.Data.DataRelation> l’objet <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propriété.  
   
- Une contrainte unique est implémentée en définissant simplement le <xref:System.Data.DataColumn.Unique%2A> propriété d’une colonne de données à `true` ou en ajoutant une instance de la <xref:System.Data.UniqueConstraint> classe à la <xref:System.Data.DataRelation> l’objet <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propriété. Pour plus d’informations sur l’interruption de contraintes dans un jeu de données, consultez [désactiver les contraintes pendant le remplissage d’un jeu de données](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Une contrainte unique est implémentée en définissant simplement le <xref:System.Data.DataColumn.Unique%2A> propriété d’une colonne de données à `true` ou en ajoutant une instance de la <xref:System.Data.UniqueConstraint> classe à la <xref:System.Data.DataRelation> l’objet <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propriété. Pour plus d’informations sur l’interruption de contraintes dans un jeu de données, consultez [désactiver les contraintes pendant le remplissage d’un jeu de données](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Règles d’intégrité référentielle  
  Dans le cadre de la contrainte de clé étrangère, vous pouvez spécifier des règles d’intégrité référentielle qui sont appliquées dans trois cas :  
   
--   Lorsqu’un enregistrement parent est mis à jour  
+- Lorsqu’un enregistrement parent est mis à jour  
   
--   Lorsqu’un enregistrement parent est supprimé  
+- Lorsqu’un enregistrement parent est supprimé  
   
--   Quand une modification est acceptée ou rejetée  
+- Quand une modification est acceptée ou rejetée  
   
- Les règles que vous pouvez apporter sont spécifiés dans le <xref:System.Data.Rule> énumération et sont répertoriées dans le tableau suivant.  
+  Les règles que vous pouvez apporter sont spécifiés dans le <xref:System.Data.Rule> énumération et sont répertoriées dans le tableau suivant.  
   
 |Règle de la contrainte de clé étrangère|Action|  
 |----------------------------------|------------|  

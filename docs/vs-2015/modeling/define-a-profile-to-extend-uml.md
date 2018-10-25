@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851593"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
   
  Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Exemple :  
   
--   Si vous définissez fréquemment des sites web, vous pouvez définir votre propre profil qui fournit un stéréotype « Pageweb » qui peut être appliqué aux classes dans les diagrammes de classes. Vous pouvez ensuite utiliser des diagrammes de classes pour planifier un site web. Chaque classe « Pageweb » aurait des propriétés supplémentaires pour le contenu de la page, le style et ainsi de suite.  
+- Si vous définissez fréquemment des sites web, vous pouvez définir votre propre profil qui fournit un stéréotype « Pageweb » qui peut être appliqué aux classes dans les diagrammes de classes. Vous pouvez ensuite utiliser des diagrammes de classes pour planifier un site web. Chaque classe « Pageweb » aurait des propriétés supplémentaires pour le contenu de la page, le style et ainsi de suite.  
   
--   Si vous développez des logiciels d'opérations bancaires, vous pouvez définir un profil qui fournit un stéréotype « Compte ». Vous pouvez ensuite utiliser des diagrammes de classes pour définir différents types de comptes et afficher les relations entre eux.  
+- Si vous développez des logiciels d'opérations bancaires, vous pouvez définir un profil qui fournit un stéréotype « Compte ». Vous pouvez ensuite utiliser des diagrammes de classes pour définir différents types de comptes et afficher les relations entre eux.  
   
- Vous pouvez distribuer vos propres profils à votre équipe. Chaque membre de l'équipe peut installer votre profil. Cela leur permet de modifier et de créer des modèles qui utilisent ses stéréotypes.  
+  Vous pouvez distribuer vos propres profils à votre équipe. Chaque membre de l'équipe peut installer votre profil. Cela leur permet de modifier et de créer des modèles qui utilisent ses stéréotypes.  
   
 > [!NOTE]
 >  Si vous appliquez les stéréotypes d'un profil dans un modèle que vous modifiez et que vous partagez ensuite le modèle avec d'autres personnes, elles doivent installer le même profil sur leurs propres ordinateurs. Dans le cas contraire, elles ne pourront pas voir les stéréotypes que vous avez utilisés.  
@@ -83,56 +83,56 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Pour définir un profil dans une nouvelle Extension Visual Studio  
   
-1.  Créez un projet d'Extension Visual Studio.  
+1. Créez un projet d'Extension Visual Studio.  
   
-    > [!NOTE]
-    >  Pour appliquer cette procédure, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+   > [!NOTE]
+   >  Pour appliquer cette procédure, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
-    1.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+   1.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-    2.  Dans le **nouveau projet** boîte de dialogue **modèles installés**, développez **Visual C#**, cliquez sur **extensibilité**, puis cliquez sur  **Projet VSIX**. Définissez le nom du projet et cliquez sur **OK**.  
+   2.  Dans le **nouveau projet** boîte de dialogue **modèles installés**, développez **Visual C#**, cliquez sur **extensibilité**, puis cliquez sur  **Projet VSIX**. Définissez le nom du projet et cliquez sur **OK**.  
   
-2.  Ajoutez votre profil au projet.  
+2. Ajoutez votre profil au projet.  
   
-    -   Dans l’Explorateur de solutions, cliquez sur le projet, pointez sur **ajouter**, puis cliquez sur **élément existant**. Dans la boîte de dialogue, recherchez votre fichier de profil.  
+   -   Dans l’Explorateur de solutions, cliquez sur le projet, pointez sur **ajouter**, puis cliquez sur **élément existant**. Dans la boîte de dialogue, recherchez votre fichier de profil.  
   
-3.  Définissez le fichier de profil **copier dans la sortie** propriété.  
+3. Définissez le fichier de profil **copier dans la sortie** propriété.  
   
-    1.  Dans l’Explorateur de solutions, cliquez sur le fichier de profil, puis cliquez sur **propriétés**.  
+   1.  Dans l’Explorateur de solutions, cliquez sur le fichier de profil, puis cliquez sur **propriétés**.  
   
-    2.  Dans la fenêtre Propriétés, définissez la **Copy to Output Directory** propriété **toujours copier**.  
+   2.  Dans la fenêtre Propriétés, définissez la **Copy to Output Directory** propriété **toujours copier**.  
   
-4.  Dans l'Explorateur de solutions, ouvrez `source.extension.vsixmanifest`.  
+4. Dans l'Explorateur de solutions, ouvrez `source.extension.vsixmanifest`.  
   
-     Le fichier s'ouvre dans l'éditeur de manifeste d'extension.  
+    Le fichier s'ouvre dans l'éditeur de manifeste d'extension.  
   
-5.  Sur le **actifs** , ajoutez une ligne décrivant le profil :  
+5. Sur le **actifs** , ajoutez une ligne décrivant le profil :  
   
-    -   Cliquez sur **Nouveau**. Définissez les champs dans le **ajouter un nouveau composant** boîte de dialogue comme suit.  
+   -   Cliquez sur **Nouveau**. Définissez les champs dans le **ajouter un nouveau composant** boîte de dialogue comme suit.  
   
-    -   Définissez **Type** à `Microsoft.VisualStudio.UmlProfile`  
+   -   Définissez **Type** à `Microsoft.VisualStudio.UmlProfile`  
   
-         Cette option ne figure pas dans la liste déroulante. Vous devez entrer ce nom au clavier.  
+        Cette option ne figure pas dans la liste déroulante. Vous devez entrer ce nom au clavier.  
   
-    -   Cliquez sur **fichier sur le système de fichiers** et sélectionnez le nom de votre fichier de profil, par exemple `MyProfile.profile`  
+   -   Cliquez sur **fichier sur le système de fichiers** et sélectionnez le nom de votre fichier de profil, par exemple `MyProfile.profile`  
   
-6.  Générez le projet.  
+6. Générez le projet.  
   
-7.  **Pour déboguer le profil**, appuyez sur F5.  
+7. **Pour déboguer le profil**, appuyez sur F5.  
   
-     Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez un projet de modélisation. Dans l'Explorateur UML, sélectionnez l'élément racine du modèle et, dans la fenêtre Propriétés, sélectionnez votre profil. Ensuite, sélectionnez les éléments à l'intérieur du modèle et définissez les stéréotypes que vous avez définis pour eux.  
+    Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez un projet de modélisation. Dans l'Explorateur UML, sélectionnez l'élément racine du modèle et, dans la fenêtre Propriétés, sélectionnez votre profil. Ensuite, sélectionnez les éléments à l'intérieur du modèle et définissez les stéréotypes que vous avez définis pour eux.  
   
-8.  **Pour extraire l’extension VSIX pour le déploiement**  
+8. **Pour extraire l’extension VSIX pour le déploiement**  
   
-    1.  Dans l’Explorateur Windows, ouvrez le dossier **.\bin\Debug** ou **.\bin\Release** pour trouver la **.vsix** fichier. Il s'agit d'un fichier d'Extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Vous pouvez l'installer sur votre ordinateur et l'envoyer à d'autres utilisateurs de Visual Studio.  
+   1.  Dans l’Explorateur Windows, ouvrez le dossier **.\bin\Debug** ou **.\bin\Release** pour trouver la **.vsix** fichier. Il s'agit d'un fichier d'Extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Vous pouvez l'installer sur votre ordinateur et l'envoyer à d'autres utilisateurs de Visual Studio.  
   
-    2.  Pour installer l'extension  
+   2.  Pour installer l'extension  
   
-        1.  Double-cliquez sur le fichier `.vsix`. Le Programme d'installation des extensions Visual Studio démarre.  
+       1.  Double-cliquez sur le fichier `.vsix`. Le Programme d'installation des extensions Visual Studio démarre.  
   
-        2.  Redémarrez toutes les instances de Visual Studio qui sont en cours d'exécution.  
+       2.  Redémarrez toutes les instances de Visual Studio qui sont en cours d'exécution.  
   
- Vous pouvez appliquer la procédure suivante pour les petites extensions si vous n'avez pas installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+   Vous pouvez appliquer la procédure suivante pour les petites extensions si vous n'avez pas installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Pour définir une extension de profil sans utiliser Visual Studio SDK  
   
@@ -348,24 +348,24 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
  L’erreur suivante s’affiche lorsque j’ouvre un modèle UML : **VS1707 : Impossible de charger les profils suivants, car une erreur de sérialisation s’est produite : MyProfile.profile**  
  1.  Vérifiez que la syntaxe XML de base du fichier .profile est correcte.  
   
-2.  Vérifiez que le nom de chaque Moniker respecte le format /nom_profil/nom_nœud. nom_profil correspond à la valeur de l'attribut name dans le nœud racine du profil. nom_nœud correspond à la valeur de l'attribut name d'une métaclasse, d'un externalType ou d'un enumerationType.  
+2. Vérifiez que le nom de chaque Moniker respecte le format /nom_profil/nom_nœud. nom_profil correspond à la valeur de l'attribut name dans le nœud racine du profil. nom_nœud correspond à la valeur de l'attribut name d'une métaclasse, d'un externalType ou d'un enumerationType.  
   
-3.  Vérifiez que la syntaxe est décrite ici et comme illustré dans _lecteur_**: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. Vérifiez que la syntaxe est décrite ici et comme illustré dans _lecteur_**: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  Désinstallez l'extension défectueuse. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
+4. Désinstallez l'extension défectueuse. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
   
-    -   Si l'extension n'apparaît pas, consultez le paragraphe suivant.  
+   -   Si l'extension n'apparaît pas, consultez le paragraphe suivant.  
   
-5.  Régénérez le fichier VSIX et ouvrez-le dans l'Explorateur Windows pour le réinstaller. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Régénérez le fichier VSIX et ouvrez-le dans l'Explorateur Windows pour le réinstaller. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- L’extension n’apparaît pas dans le Gestionnaire d’extensions, mais lorsque vous essayez de réinstaller, le message suivant apparaît : **l’extension est déjà installée dans tous les produits applicables.**  
- 1.  Supprimer le fichier d’extension à partir d’un sous-dossier de *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
+   L’extension n’apparaît pas dans le Gestionnaire d’extensions, mais lorsque vous essayez de réinstaller, le message suivant apparaît : **l’extension est déjà installée dans tous les produits applicables.**  
+   1.  Supprimer le fichier d’extension à partir d’un sous-dossier de *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
   
-    -   Pour voir *LocalAppData*, vous devez définir afficher les fichiers et dossiers cachés dans l’onglet Affichage des Options de dossier de l’Explorateur Windows.  
+   -   Pour voir *LocalAppData*, vous devez définir afficher les fichiers et dossiers cachés dans l’onglet Affichage des Options de dossier de l’Explorateur Windows.  
   
-    -   *LocalAppData* est en général dans C:\Users\\*nom d’utilisateur*\AppData\Local\  
+   -   *LocalAppData* est en général dans C:\Users\\*nom d’utilisateur*\AppData\Local\  
   
-2.  Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
  [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md)   

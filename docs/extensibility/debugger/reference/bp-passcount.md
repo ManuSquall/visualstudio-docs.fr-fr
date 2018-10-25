@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT | Documents Microsoft
+title: BP_PASSCOUNT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7437a61688958a1346b9c638ad07e3e55dc51f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 105c6668c50d690bcc0016f888ce1f241130d1eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883114"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
-Décrit le nombre et les conditions sur laquelle est déclenché un point d’arrêt conditionnel.  
+Décrit le nombre et les conditions sur lequel un point d’arrêt conditionnel est déclenché.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,17 +43,17 @@ public struct BP_PASSCOUNT {
   
 ## <a name="members"></a>Membres  
  `dwPassCount`  
- Le nombre de fois à passer sur le point d’arrêt avant de déclencher il.  
+ Le nombre de fois à passer sur le point d’arrêt avant de déclencher l’il.  
   
  `stylePassCount`  
- Une valeur à partir de la [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) énumération qui spécifie le style du point d’arrêt passer le nombre.  
+ Une valeur comprise entre le [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) énumération qui spécifie le style du point d’arrêt passer le nombre.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure.  
   
  Cette structure est également passée en tant que paramètre à la[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) et[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) méthodes.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

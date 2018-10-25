@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886277"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Exécuter des applications du Windows Store sur un ordinateur distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
   
  [Configuration du projet Visual Studio pour le débogage distant](#BKMK_ConnectVS)  
   
--   [Choix de l'appareil distant pour les projets C# et Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Choix de l'appareil distant pour les projets C# et Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Choix de l'appareil distant pour les projets JavaScript et C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Choix de l'appareil distant pour les projets JavaScript et C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Exécution d'une session de débogage distant](#BKMK_RunRemoteDebug)  
+  [Exécution d'une session de débogage distant](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Conditions préalables  
  Pour déboguer sur un appareil distant :  
@@ -123,20 +123,20 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Configuration du débogueur à distance  
  Deux outils vous permettent de modifier la configuration du débogueur distant.  
   
-1.  Dans le menu **Outils** de **Visual Studio Remote Debugging Monitor**:  
+1. Dans le menu **Outils** de **Visual Studio Remote Debugging Monitor**:  
   
-    1.  Choisissez **Options** pour modifier le numéro de port, le mode d'authentification ou l'intervalle de délai d'attente du débogueur distant.  
+   1.  Choisissez **Options** pour modifier le numéro de port, le mode d'authentification ou l'intervalle de délai d'attente du débogueur distant.  
   
-    2.  Choisissez **Autorisations** pour ajouter ou supprimer des utilisateurs disposant d'une autorisation de débogage distant.  
+   2.  Choisissez **Autorisations** pour ajouter ou supprimer des utilisateurs disposant d'une autorisation de débogage distant.  
   
-        > [!NOTE]
-        >  Les autorisations doivent être accordées à chaque compte d'utilisateur qui effectue un débogage distant.  
+       > [!NOTE]
+       >  Les autorisations doivent être accordées à chaque compte d'utilisateur qui effectue un débogage distant.  
   
- Utilisez l' **Assistant Configuration Remote Debugger** pour définir des options avancées pour le débogueur distant. Pour ouvrir l'assistant, choisissez **Assistant Configuration Remote Debugger** dans l'écran de démarrage.  
+   Utilisez l' **Assistant Configuration Remote Debugger** pour définir des options avancées pour le débogueur distant. Pour ouvrir l'assistant, choisissez **Assistant Configuration Remote Debugger** dans l'écran de démarrage.  
   
-1.  Dans la page **Configurer le service Visual Studio Remote Debugger** , vous pouvez choisir d'exécuter le débogueur distant en tant que service. Dans la plupart des cas, l'exécution en tant que service n'est pas obligatoire.  
+2. Dans la page **Configurer le service Visual Studio Remote Debugger** , vous pouvez choisir d'exécuter le débogueur distant en tant que service. Dans la plupart des cas, l'exécution en tant que service n'est pas obligatoire.  
   
-2.  Dans la page **Configurer le Pare-feu Windows pour le débogage** , ajoutez ou supprimez les types de réseaux auxquels vous souhaitez que le débogueur distant se connecte. Seuls les réseaux auxquels le périphérique est connecté actuellement sont activés. Vous devez sélectionner au moins un réseau.  
+3. Dans la page **Configurer le Pare-feu Windows pour le débogage** , ajoutez ou supprimez les types de réseaux auxquels vous souhaitez que le débogueur distant se connecte. Seuls les réseaux auxquels le périphérique est connecté actuellement sont activés. Vous devez sélectionner au moins un réseau.  
   
 ##  <a name="BKMK_ConnectVS"></a> Configuration du projet Visual Studio pour le débogage distant  
  Vous spécifiez le périphérique distant auquel se connecter dans les propriétés du projet. La procédure varie en fonction du langage de programmation. Entrez le nom de réseau de l'appareil distant ou sélectionnez-le dans la boîte de dialogue Sélectionner une connexion du débogueur distant.  

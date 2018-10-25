@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825619"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Comment : rechercher le nom du processus ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour créer un attachement à une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en cours d'exécution, vous devez connaître le nom du processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
--   Si vous exécutez IIS 6.0 ou IIS 7.0, le nom est w3wp.exe.  
+- Si vous exécutez IIS 6.0 ou IIS 7.0, le nom est w3wp.exe.  
   
--   Si vous exécutez une version antérieure d'IIS, le nom est aspnet_wp.exe.  
+- Si vous exécutez une version antérieure d'IIS, le nom est aspnet_wp.exe.  
   
- Pour les applications développées à l’aide de [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ou versions ultérieures, le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] code peut résider sur le système de fichiers et s’exécuter sous le serveur de test WebDev.WebServer.exe. Dans ce cas, vous devez créer un attachement à WebDev.WebServer.exe au lieu du processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ce scénario s'applique uniquement au débogage local.  
+  Pour les applications développées à l’aide de [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ou versions ultérieures, le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] code peut résider sur le système de fichiers et s’exécuter sous le serveur de test WebDev.WebServer.exe. Dans ce cas, vous devez créer un attachement à WebDev.WebServer.exe au lieu du processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ce scénario s'applique uniquement au débogage local.  
   
- Les applications antérieures d'ASP s'exécutent à l'intérieur du processus IIS inetinfo.exe lorsqu'elles s'exécutent in-process.  
+  Les applications antérieures d'ASP s'exécutent à l'intérieur du processus IIS inetinfo.exe lorsqu'elles s'exécutent in-process.  
   
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

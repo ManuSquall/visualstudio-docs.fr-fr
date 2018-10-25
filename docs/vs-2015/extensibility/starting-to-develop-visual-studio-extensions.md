@@ -16,12 +16,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a38410c1b64a455f12d91cd8460f5f04d369275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847303"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Commencer à développer des Extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Si vous n’avez jamais rédigé une extension de Visual Studio avant, vous avez
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Quels types d’éléments puis-je faire avec les extensions Visual Studio ?  
  Le ciel 's la limite le moment venu à imaginer différentes extensions de Visual Studio. Bien entendu, la plupart des extensions avoir quelque chose à faire avec l’écriture de code, mais qui n’a pas été le cas. Voici quelques exemples de types d’extensions, que vous pouvez créer :  
   
--   Prise en charge des langues qui ne sont pas inclus dans Visual Studio, avec la coloration syntaxique, IntelliSense et prise en charge du compilateur et de débogage  
+- Prise en charge des langues qui ne sont pas inclus dans Visual Studio, avec la coloration syntaxique, IntelliSense et prise en charge du compilateur et de débogage  
   
--   Outils de productivité qui étendent le cœur IDE expérience avec des modèles supplémentaires, les boîtes de dialogue refactorisation, nouveau code ou les fenêtres Outil  
+- Outils de productivité qui étendent le cœur IDE expérience avec des modèles supplémentaires, les boîtes de dialogue refactorisation, nouveau code ou les fenêtres Outil  
   
--   Concepteurs de spécifique à un domaine pour les scénarios tels que la prise en charge la conception ou cloud des données  
+- Concepteurs de spécifique à un domaine pour les scénarios tels que la prise en charge la conception ou cloud des données  
   
- Pour obtenir des exemples d’extensions, consultez le [galerie Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Vous pouvez également examiner une [Open Source des Extensions Visual Studio](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
+  Pour obtenir des exemples d’extensions, consultez le [galerie Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Vous pouvez également examiner une [Open Source des Extensions Visual Studio](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Les fonctionnalités de Visual Studio puis-je étendre ?  
  En théorie, vous pouvez étendre n’importe quelle partie de Visual Studio : menus, barres d’outils, commandes, windows, solutions, projets, éditeurs et ainsi de suite.  

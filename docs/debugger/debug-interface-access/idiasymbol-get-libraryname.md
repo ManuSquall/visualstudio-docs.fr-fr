@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_libraryName | Documents Microsoft
+title: IDiaSymbol::get_libraryName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 631104cb6328b715f18b7afd564a627f275a503d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d290849d4bf0dd07f53f60060623d457e4146de4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951156"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
 Récupère le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.  

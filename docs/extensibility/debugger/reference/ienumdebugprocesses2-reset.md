@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Reset | Documents Microsoft
+title: IEnumDebugProcesses2::Reset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8b15c2de8d5c6ae1fc985633c72a1b12cacb0bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edebac6255b65eeb8242cab8330a7955cd7cac2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926005"
 ---
 # <a name="ienumdebugprocesses2reset"></a>IEnumDebugProcesses2::Reset
 Réinitialise l’énumération au premier élément.  

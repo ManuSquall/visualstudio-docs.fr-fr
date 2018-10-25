@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919329"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
@@ -59,19 +59,19 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Pour lier des tests à un cas d'usage
 
-1.  Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
+1. Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.
+2. Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.
 
-     Dans un diagramme de cas d’utilisation, avec le bouton droit à un cas d’usage, puis sélectionnez **lien vers l’élément de travail**.
+    Dans un diagramme de cas d’utilisation, avec le bouton droit à un cas d’usage, puis sélectionnez **lien vers l’élément de travail**.
 
-3.  Ajoutez à la suite de tests des cas de test qui vérifient les cas d'usage.
+3. Ajoutez à la suite de tests des cas de test qui vérifient les cas d'usage.
 
- En général, chaque élément de travail Récit utilisateur ou Spécification est lié à plusieurs cas d'usage dans votre modèle et chaque cas d'usage est lié à plusieurs spécifications ou récits utilisateur. Cela est dû au fait que chaque récit utilisateur ou spécification couvre un ensemble de tâches qui développent plusieurs cas d'usage. Par exemple, lors d'une itération précoce de votre projet, vous pourriez développer le récit utilisateur de base selon lequel un client peut sélectionner des articles dans un catalogue et se les faire livrer. Lors d'une itération ultérieure, le récit pourrait préciser que l'utilisateur paie à la fin de la commande et que le fournisseur reçoit la somme payée après avoir envoyé la marchandise.  Chaque récit ajoute une clause à la post-condition du cas d'usage Commander des biens.
+   En général, chaque élément de travail Récit utilisateur ou Spécification est lié à plusieurs cas d'usage dans votre modèle et chaque cas d'usage est lié à plusieurs spécifications ou récits utilisateur. Cela est dû au fait que chaque récit utilisateur ou spécification couvre un ensemble de tâches qui développent plusieurs cas d'usage. Par exemple, lors d'une itération précoce de votre projet, vous pourriez développer le récit utilisateur de base selon lequel un client peut sélectionner des articles dans un catalogue et se les faire livrer. Lors d'une itération ultérieure, le récit pourrait préciser que l'utilisateur paie à la fin de la commande et que le fournisseur reçoit la somme payée après avoir envoyé la marchandise.  Chaque récit ajoute une clause à la post-condition du cas d'usage Commander des biens.
 
- Vous pouvez créer des liens séparés entre les spécifications et les clauses de la post-condition en écrivant ces clauses dans des commentaires distincts dans le diagramme de cas d'usage. Vous pouvez lier chaque commentaire à un élément de travail Spécification et le lier au cas d'usage dans le diagramme.
+   Vous pouvez créer des liens séparés entre les spécifications et les clauses de la post-condition en écrivant ces clauses dans des commentaires distincts dans le diagramme de cas d'usage. Vous pouvez lier chaque commentaire à un élément de travail Spécification et le lier au cas d'usage dans le diagramme.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Tests de base sur les types de spécifications
  Les types (c'est-à-dire les classes, les interfaces et les énumérations) d'un modèle d'impératifs décrivent les concepts et les relations d'après la façon dont les utilisateurs pensent et communiquent leur activité professionnelle. Cela exclut les types axés exclusivement sur la conception interne du système.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Pour lier des tests à un élément de modèle ou à une relation
 
-1.  Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
+1. Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.
+2. Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.
 
-     Dans un diagramme de modélisation, avec le bouton droit à un élément, commentaire ou une relation, puis cliquez sur **lien vers l’élément de travail**.
+    Dans un diagramme de modélisation, avec le bouton droit à un élément, commentaire ou une relation, puis cliquez sur **lien vers l’élément de travail**.
 
-3.  Ajoutez à la suite de tests des cas de test qui vérifient l'impératif exprimé dans l'élément de modèle.
+3. Ajoutez à la suite de tests des cas de test qui vérifient l'impératif exprimé dans l'élément de modèle.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7ba1ad9158431a157bdba588b88f366eac45889a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812073"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
@@ -64,9 +64,9 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
    Vous pouvez parcourir les dossiers et fichiers dans le dépôt cloné, et afficher et rechercher le code dans l’éditeur de code Visual Studio, avec la colorisation de la syntaxe et d’autres fonctionnalités.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png)|    [Regarder une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) montrant comment cloner et ouvrir du code à partir d’un dépôt GitHub dans Visual Studio. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png)| [Regarder une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) montrant comment cloner et ouvrir du code à partir d’un dépôt GitHub dans Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Exécuter et déboguer son code
 

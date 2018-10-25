@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811360"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il existe deux types de magasins de paramètres :  
   
--   Paramètres de configuration, qui sont des paramètres de Visual Studio et VSPackage en lecture seule. Visual Studio fusionne les paramètres à partir de tous les fichiers .pkgdef connus dans ce magasin.  
+- Paramètres de configuration, qui sont des paramètres de Visual Studio et VSPackage en lecture seule. Visual Studio fusionne les paramètres à partir de tous les fichiers .pkgdef connus dans ce magasin.  
   
--   Paramètres utilisateur, qui sont des paramètres accessible en écriture, telles que celles qui sont affichées dans les pages dans le **Options** boîte de dialogue pages de propriétés et certaines autres boîtes de dialogue. Extensions Visual Studio peuvent utiliser pour le stockage local de petites quantités de données.  
+- Paramètres utilisateur, qui sont des paramètres accessible en écriture, telles que celles qui sont affichées dans les pages dans le **Options** boîte de dialogue pages de propriétés et certaines autres boîtes de dialogue. Extensions Visual Studio peuvent utiliser pour le stockage local de petites quantités de données.  
   
- Cette procédure pas à pas montre comment lire des données à partir du magasin de paramètre de configuration. Consultez [écriture dans le Store de paramètres utilisateur](../extensibility/writing-to-the-user-settings-store.md) pour une explication de l’écriture dans la banque de paramètres utilisateur.  
+  Cette procédure pas à pas montre comment lire des données à partir du magasin de paramètre de configuration. Consultez [écriture dans le Store de paramètres utilisateur](../extensibility/writing-to-the-user-settings-store.md) pour une explication de l’écriture dans la banque de paramètres utilisateur.  
   
 ## <a name="creating-the-example-project"></a>Création de l’exemple de projet  
  Cette section montre comment créer un projet d’extension simple avec une commande de menu pour la démonstration.  
@@ -43,44 +43,44 @@ Il existe deux types de magasins de paramètres :
 ## <a name="using-the-configuration-settings-store"></a>À l’aide du Store de paramètres de Configuration  
  Cette section montre comment détecter et d’afficher les paramètres de configuration.  
   
-1.  Dans le fichier SettingsStorageCommand.cs, ajoutez le code suivant à l’aide d’instructions :  
+1. Dans le fichier SettingsStorageCommand.cs, ajoutez le code suivant à l’aide d’instructions :  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  Dans `MenuItemCallback`, supprimez le corps de la méthode et ajouter ces lignes Obtient la banque de paramètres de configuration :  
+2. Dans `MenuItemCallback`, supprimez le corps de la méthode et ajouter ces lignes Obtient la banque de paramètres de configuration :  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     Le <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> est une classe d’assistance managée via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
+    Le <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> est une classe d’assistance managée via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
   
-3.  Maintenant, cherchez si les outils de Windows Phone sont installées. Le code doit ressembler à ceci :  
+3. Maintenant, cherchez si les outils de Windows Phone sont installées. Le code doit ressembler à ceci :  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Tester le code. Générez le projet et commencez le débogage.  
+4. Tester le code. Générez le projet et commencez le débogage.  
   
-5.  Dans l’instance expérimentale, sur le **outils** menu, cliquez sur **SettingsStoreCommand appeler**.  
+5. Dans l’instance expérimentale, sur le **outils** menu, cliquez sur **SettingsStoreCommand appeler**.  
   
-     Vous devez voir un message indiquant **outils de développement de Microsoft Windows Phone :** suivie **True** ou **False**.  
+    Vous devez voir un message indiquant **outils de développement de Microsoft Windows Phone :** suivie **True** ou **False**.  
   
- Visual Studio conserve la banque de paramètres dans le Registre système.  
+   Visual Studio conserve la banque de paramètres dans le Registre système.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Pour utiliser un éditeur du Registre pour vérifier les paramètres de configuration  
   

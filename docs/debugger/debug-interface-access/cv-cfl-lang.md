@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG | Documents Microsoft
+title: CV_CFL_LANG | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909906"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Spécifie le langage de code source de l’application ou d’un module lié.  
@@ -74,10 +74,10 @@ typedef enum CV_CFL_LANG {
  Application est un module généré par l’éditeur de liens.  
   
  CV_CFL_CVTRES  
- Application est un module de ressource converti avec l’outil CVTRES.  
+ Application est un module de ressources converti avec l’outil CVTRES.  
   
  CV_CFL_CVTPGD  
- Application est un module de PGO optimisé généré avec l’outil CVTPGD.  
+ Application est un module de PGO optimisé généré avec CVTPGD outil.  
   
  CV_CFL_CSHARP  
  Langue de l’application est c#.  
@@ -95,15 +95,15 @@ typedef enum CV_CFL_LANG {
  Langue de l’application est Jscript.  
   
  CV_CFL_MSIL  
- Langue de l’application est un inconnu langage MSIL (Microsoft Intermediate), éventuellement un résultat de l’utilisation de la [/LTCG (génération de Code d’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation) basculer.  
+ Langue de l’application est un inconnu langage MSIL (Microsoft Intermediate), éventuellement un résultat de l’utilisation de la [/LTCG (Link-time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) basculer.  
   
  CV_CFL_HLSL  
- Langue de l’application est un langage HLSL.  
+ Langue de l’application est High Level Shader Language.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs de cette énumération sont retournées par un appel à la [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933558"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Procédure pas à pas : Déboguer une application multithread dans Visual Studio à l’aide de la fenêtre Threads
 Visual Studio fournit un **Threads** fenêtre et autres l’interface utilisateur éléments pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser le **Threads** fenêtre et la **emplacement de débogage** barre d’outils. Pour plus d’informations sur les autres outils, consultez [commencer le débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md). Ce didacticiel vous prendra que quelques minutes, mais comment la compléter vous familiarisera avec les fonctionnalités de débogage d’applications multithread.   
@@ -72,29 +72,29 @@ Pour commencer ce didacticiel, vous avez besoin d’un projet d’application mu
   
 #### <a name="to-start-debugging"></a>Pour démarrer le débogage  
   
-1.  Cliquez dans la marge gauche de la `Console.WriteLine` instruction pour insérer un nouveau point d’arrêt.  
+1. Cliquez dans la marge gauche de la `Console.WriteLine` instruction pour insérer un nouveau point d’arrêt.  
   
-     Dans la marge à gauche de l’éditeur de code source, un cercle rouge apparaît. Cette bille indique qu'un point d'arrêt est désormais défini à cet emplacement.  
+    Dans la marge à gauche de l’éditeur de code source, un cercle rouge apparaît. Cette bille indique qu'un point d'arrêt est désormais défini à cet emplacement.  
   
-2.  Sur le **déboguer** menu, cliquez sur **démarrer le débogage** (**F5**).  
+2. Sur le **déboguer** menu, cliquez sur **démarrer le débogage** (**F5**).  
   
-     Le débogage démarre, votre application console se lance puis s'interrompt au point d'arrêt.  
+    Le débogage démarre, votre application console se lance puis s'interrompt au point d'arrêt.  
   
-3.  Si, à ce stade, la fenêtre d'application console a le focus, cliquez dans la fenêtre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour retourner le focus à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Si, à ce stade, la fenêtre d'application console a le focus, cliquez dans la fenêtre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour retourner le focus à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Dans l’éditeur de code source, recherchez la ligne qui contient le code suivant :  
+4. Dans l’éditeur de code source, recherchez la ligne qui contient le code suivant :  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>Pour découvrir le marqueur de thread  
 

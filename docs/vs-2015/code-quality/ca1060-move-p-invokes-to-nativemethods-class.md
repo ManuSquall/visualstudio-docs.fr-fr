@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913863"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060 : Déplacer les P/Invoke vers une classe NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228869"
 ## <a name="rule-description"></a>Description de la règle
  Méthodes d’appel de plateforme, telles que celles qui sont marquées à l’aide de la <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attribut, ou les méthodes qui sont définies à l’aide de la `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], accéder au code non managé. Ces méthodes doivent être dans une des classes suivantes :
 
--   **NativeMethods** -cette classe ne supprime pas de parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> ne doit pas être appliqué à cette classe.) Cette classe est pour les méthodes qui peuvent être utilisées partout, car un parcours de pile sera effectué.
+- **NativeMethods** -cette classe ne supprime pas de parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> ne doit pas être appliqué à cette classe.) Cette classe est pour les méthodes qui peuvent être utilisées partout, car un parcours de pile sera effectué.
 
--   **SafeNativeMethods** -cette classe supprime des parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> est appliqué à cette classe.) Cette classe est pour les méthodes qui sont sécurisés pour tous les appelants. Les appelants de ces méthodes n'êtes pas obligés d’effectuer une révision de sécurité complète pour vous assurer que l’utilisation est sécurisée, car les méthodes sont sans conséquence pour tout appelant.
+- **SafeNativeMethods** -cette classe supprime des parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> est appliqué à cette classe.) Cette classe est pour les méthodes qui sont sécurisés pour tous les appelants. Les appelants de ces méthodes n'êtes pas obligés d’effectuer une révision de sécurité complète pour vous assurer que l’utilisation est sécurisée, car les méthodes sont sans conséquence pour tout appelant.
 
--   **UnsafeNativeMethods** -cette classe supprime des parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> est appliqué à cette classe.) Cette classe est pour les méthodes qui sont potentiellement dangereuses. Un appelant de ces méthodes doit effectuer une révision de sécurité complète pour vous assurer que l’utilisation est sécurisée, car aucun parcours de pile ne sera effectuée.
+- **UnsafeNativeMethods** -cette classe supprime des parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> est appliqué à cette classe.) Cette classe est pour les méthodes qui sont potentiellement dangereuses. Un appelant de ces méthodes doit effectuer une révision de sécurité complète pour vous assurer que l’utilisation est sécurisée, car aucun parcours de pile ne sera effectuée.
 
- Ces classes sont déclarées en tant que `internal` (`Friend`, en Visual Basic) et de déclarer un constructeur privé pour empêcher la création de nouvelles instances. Les méthodes dans ces classes doivent être `static` et `internal` (`Shared` et `Friend` en Visual Basic).
+  Ces classes sont déclarées en tant que `internal` (`Friend`, en Visual Basic) et de déclarer un constructeur privé pour empêcher la création de nouvelles instances. Les méthodes dans ces classes doivent être `static` et `internal` (`Shared` et `Friend` en Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, déplacer la méthode appropriés **NativeMethods** classe. Pour la plupart des applications, déplacement de P/Invoke vers une nouvelle classe nommée **NativeMethods** est suffisant.

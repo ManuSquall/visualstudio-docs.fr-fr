@@ -8,12 +8,12 @@ title: Documentation sur l’extensibilité de Visual Studio | Microsoft Docs
 description: En savoir plus sur l’extensibilité Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3e5973cf0e5bd5ac87a14a167af24797c1b3d7dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842948"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentation de l’extensibilité Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio vous fournit de nombreuses options d’extensibilité. Vous pouvez
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Kit de développement logiciel Visual Studio</h3>
+                        <h3>SDK Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ Visual Studio vous fournit de nombreuses options d’extensibilité. Vous pouvez
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Extensibilité de .NET Compiler Platform (« Roslyn »)</h3>
+                        <h3>Extensibilité de .NET Compiler Platform (&quot;Roslyn&quot;)</h3>
                     </div>
                 </div>
             </div>

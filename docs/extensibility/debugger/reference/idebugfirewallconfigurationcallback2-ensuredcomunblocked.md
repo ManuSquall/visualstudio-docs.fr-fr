@@ -1,5 +1,5 @@
 ---
-title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Documents Microsoft
+title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6b7ef2faef836e87b47247a5bf18ddec7b9dd11
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99de75e31ea5caeb02e2095b17b7b48a9a4b3f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821030"
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 Demande que le pare-feu bloque le débogage distant.  

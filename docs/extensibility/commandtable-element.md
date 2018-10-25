@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3869a9d3350daac8b08398ed5afaab0729a05c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 8c2adca249ba245825f9b664b46e1b4674d0ea50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879907"
 ---
 # <a name="commandtable-element"></a>Élément CommandTable
 CommandTable est l’élément racine de la *.vsct* fichier. Il s’agit du fichier qui définit la disposition réelle et le type des commandes qu’un VSPackage fournit à l’IDE. Commandes peuvent inclure des éléments de menu, des menus, des barres d’outils et des zones de liste déroulante. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -47,10 +47,10 @@ CommandTable est l’élément racine de la *.vsct* fichier. Il s’agit du fich
   
 ### <a name="attributes"></a>Attributs  
   
-|Attribut|Description|  
-|---------------|-----------------|  
-|xmlns|Obligatoire. Espaces de noms XML :<br /><br /> xmlns = » http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable»<br /><br /> prend = « http://www.w3.org/2001/XMLSchema»|  
-|language|Facultatif. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> Language = « en-us »|  
+| Attribut | Description |
+|-----------| - |
+| xmlns | Obligatoire. Espaces de noms XML :<br /><br /> xmlns = »<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>»<br /><br /> prend = «<http://www.w3.org/2001/XMLSchema>» |
+| language | Facultatif. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> Language = « en-us » |
   
 ### <a name="child-elements"></a>Éléments enfants  
   

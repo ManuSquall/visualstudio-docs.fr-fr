@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840101"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
 ## <a name="custom-dictionary-elements"></a>Éléments du dictionnaire personnalisé  
  Vous pouvez modifier le comportement du dictionnaire d’analyse du Code en ajoutant des termes du contrat en tant que le texte interne des éléments suivants dans le dictionnaire personnalisé :  
   
--   [Dictionnaire/mots/reconnu/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [Dictionnaire/mots/reconnu/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [Dictionnaire/mots/non reconnue/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [Dictionnaire/mots/non reconnue/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
--   [Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
--   [Dictionnaire/mots/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Dictionnaire/mots/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [Dictionnaire/mots/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [Dictionnaire/mots/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [Dictionnaire/acronymes/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Dictionnaire/acronymes/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionnaire/mots/reconnu/Word  
  Pour inclure un terme dans la liste de termes que l’analyse du code identifie comme correctement orthographié, ajoutez ce terme comme texte interne d’un élément de dictionnaire/mots/Recognized/Word. Termes du contrat dans les éléments du dictionnaire/mots/Recognized/Word ne respectent pas la casse.  
@@ -154,11 +154,11 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
  Pour inclure un autre terme suggéré dans l’avertissement, spécifiez l’autre dans l’attribut PreferredAlternate de l’élément de terme. Vous pouvez laisser la valeur d’attribut vide si vous ne souhaitez pas suggérer un autre terme.  
   
--   Le terme déconseillé dictionnaire/mots/élément Deprecated/Term ne respecte pas la casse.  
+- Le terme déconseillé dictionnaire/mots/élément Deprecated/Term ne respecte pas la casse.  
   
--   La valeur d’attribut PreferredAlternate respecte la casse. Utiliser la casse Pascal pour les autres termes composés.  
+- La valeur d’attribut PreferredAlternate respecte la casse. Utiliser la casse Pascal pour les autres termes composés.  
   
- **Exemple**  
+  **Exemple**  
   
 ```  
 <Dictionary>  
@@ -189,11 +189,11 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionnaire/mots/Compound/Term [@CompoundAlternate]  
  Le dictionnaire intégré identifie certains termes comme termes uniques, discrets, au lieu d’un terme composé. Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme mot composé et spécifier la casse correcte du terme, ajoutez ce terme comme texte interne d’un élément de dictionnaire/mots/Compound/Term. Dans l’attribut CompoundAlternate de l’élément de terme, spécifiez les mots individuels qui composent le terme composé en tirant parti de la première lettre des mots individuels (casse Pascal). Notez que le terme spécifié dans le texte interne est automatiquement ajouté à la liste de mots/dictionnaire/DiscreteExceptions.  
   
--   Le terme déconseillé dictionnaire/mots/élément Deprecated/Term ne respecte pas la casse.  
+- Le terme déconseillé dictionnaire/mots/élément Deprecated/Term ne respecte pas la casse.  
   
--   La valeur d’attribut PreferredAlternate respecte la casse. Utiliser la casse Pascal pour les autres termes composés.  
+- La valeur d’attribut PreferredAlternate respecte la casse. Utiliser la casse Pascal pour les autres termes composés.  
   
- **Exemple**  
+  **Exemple**  
   
 ```  
 <Dictionary>  

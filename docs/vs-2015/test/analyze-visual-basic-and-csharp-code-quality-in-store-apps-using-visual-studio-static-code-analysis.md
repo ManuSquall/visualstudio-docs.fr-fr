@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828700"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code Visual Basic et C# dans les applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ##  <a name="BKMK_Run"></a> Exécution de l’analyse du code  
  Pour exécuter l'analyse du code sur votre solution Visual Studio :  
   
--   Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.  
+- Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.  
   
- Pour exécuter automatiquement l'analyse du code chaque fois que vous générez un projet :  
+  Pour exécuter automatiquement l'analyse du code chaque fois que vous générez un projet :  
   
-1.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, puis choisissez **Propriétés**.  
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, puis choisissez **Propriétés**.  
   
-2.  Dans la page des propriétés du projet, choisissez **Analyse du code**, puis **Activer l’analyse du code sur la build (définit la constante CODEANALYSIS)**.  
+2. Dans la page des propriétés du projet, choisissez **Analyse du code**, puis **Activer l’analyse du code sur la build (définit la constante CODEANALYSIS)**.  
   
- La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.  
+   La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.  
   
- ![Fenêtre Analyse du code](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Fenêtre Analyse du code](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code  
  Pour analyser un avertissement spécifique, cliquez sur son titre dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème.  
@@ -80,15 +80,15 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  Pour supprimer un avertissement :  
   
-1.  Si les informations détaillées ne s’affichent pas, cliquez sur le titre de l’avertissement pour le développer.  
+1. Si les informations détaillées ne s’affichent pas, cliquez sur le titre de l’avertissement pour le développer.  
   
-2.  Choisissez le lien **Actions** au bas de l’avertissement.  
+2. Choisissez le lien **Actions** au bas de l’avertissement.  
   
-3.  Pointez sur **Supprimer le message**, puis choisissez **Dans la source** ou **Dans le fichier de suppression**.  
+3. Pointez sur **Supprimer le message**, puis choisissez **Dans la source** ou **Dans le fichier de suppression**.  
   
-    -   **Dans la source** insère un attribut `SuppressMessage` dans le fichier source au-dessus de la méthode qui a généré l’avertissement. Cela rend la suppression plus détectable.  
+   - **Dans la source** insère un attribut `SuppressMessage` dans le fichier source au-dessus de la méthode qui a généré l’avertissement. Cela rend la suppression plus détectable.  
   
-    -   **Dans le fichier de suppression** ajoute un attribut `SuppressMessage` au fichier **GlobalSuppressions.cs** du projet. Cela peut simplifier la gestion des suppressions. Notez que l’attribut `SuppressMessage` ajouté au fichier **GlobalSuppression.cs** cible également la méthode qui a généré l’avertissement. Il n'effectue pas une suppression globale de l'avertissement.  
+   - **Dans le fichier de suppression** ajoute un attribut `SuppressMessage` au fichier **GlobalSuppressions.cs** du projet. Cela peut simplifier la gestion des suppressions. Notez que l’attribut `SuppressMessage` ajouté au fichier **GlobalSuppression.cs** cible également la méthode qui a généré l’avertissement. Il n'effectue pas une suppression globale de l'avertissement.  
   
      Votre décision de supprimer l'avertissement dans le fichier source ou dans le fichier de suppression dépend de votre style de codage et de vos besoins.  
   

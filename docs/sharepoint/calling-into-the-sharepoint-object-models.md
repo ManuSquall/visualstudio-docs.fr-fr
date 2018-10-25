@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853427"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Appeler des modèles d’objet SharePoint
   Lorsque vous créez des extensions pour les outils SharePoint dans Visual Studio, vous devrez peut-être appeler APIs SharePoint pour effectuer certaines tâches. Par exemple, si vous créez une étape de déploiement personnalisée pour les projets SharePoint, vous devez appeler APIs SharePoint pour effectuer certaines tâches pour déployer des solutions.  
@@ -37,11 +37,11 @@ ms.locfileid: "36326743"
   
  Toutefois, le modèle objet client présente deux inconvénients dans le contexte d’extensions d’outils SharePoint :  
   
--   Le modèle objet client fournit uniquement un sous-ensemble du modèle d’objet serveur. Si vous devez utiliser les fonctionnalités de SharePoint ne sont pas exposée dans le modèle objet client, vous devez utiliser le modèle objet serveur.  
+- Le modèle objet client fournit uniquement un sous-ensemble du modèle d’objet serveur. Si vous devez utiliser les fonctionnalités de SharePoint ne sont pas exposée dans le modèle objet client, vous devez utiliser le modèle objet serveur.  
   
--   Bien qu’à l’aide du modèle objet client dans les extensions d’outils SharePoint doit fonctionner dans la plupart des cas, vous pouvez rencontrer certains scénarios où les appels au modèle objet client ne fonctionnent pas comme prévu. Le modèle objet client est conçu pour être utilisé dans les applications clientes pour appeler dans des sites SharePoint sur un serveur distant ou une batterie de serveurs. Les outils SharePoint dans Visual Studio fonctionnent uniquement avec une installation SharePoint locale sur l’ordinateur de développement. Par conséquent, lorsque vous utilisez le modèle objet client dans une extension des outils SharePoint, vous appelez dans un site SharePoint sur l’ordinateur local, ce qui n’est pas la façon dont le modèle objet client a été conçu pour être utilisé.  
+- Bien qu’à l’aide du modèle objet client dans les extensions d’outils SharePoint doit fonctionner dans la plupart des cas, vous pouvez rencontrer certains scénarios où les appels au modèle objet client ne fonctionnent pas comme prévu. Le modèle objet client est conçu pour être utilisé dans les applications clientes pour appeler dans des sites SharePoint sur un serveur distant ou une batterie de serveurs. Les outils SharePoint dans Visual Studio fonctionnent uniquement avec une installation SharePoint locale sur l’ordinateur de développement. Par conséquent, lorsque vous utilisez le modèle objet client dans une extension des outils SharePoint, vous appelez dans un site SharePoint sur l’ordinateur local, ce qui n’est pas la façon dont le modèle objet client a été conçu pour être utilisé.  
   
- Pour une procédure pas à pas qui montre comment utiliser le modèle objet client dans une extension des outils SharePoint dans Visual Studio, consultez [procédure pas à pas : appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+  Pour une procédure pas à pas qui montre comment utiliser le modèle objet client dans une extension des outils SharePoint dans Visual Studio, consultez [procédure pas à pas : appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Utiliser le modèle objet serveur dans les projets d’extension
  Le modèle objet serveur est un sur-ensemble du modèle d’objet client. Lorsque vous utilisez le modèle objet serveur, vous pouvez utiliser toutes les fonctionnalités qui [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exposent par programmation.  

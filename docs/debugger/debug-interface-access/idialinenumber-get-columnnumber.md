@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_columnNumber | Documents Microsoft
+title: IDiaLineNumber::get_columnNumber | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80b0aac64ec76504ef77b7b46ab6736a4cf6111
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e7c34c61b298f46fd10e15e31eb6fd38c65bb914
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839100"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
-Récupère le numéro de colonne où commence l’instruction ou expression.  
+Récupère le numéro de colonne où l’expression ou l’instruction commence.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_columnNumber (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le numéro de colonne où commence l’instruction ou expression. Si la valeur est zéro, les informations de colonne ne sont pas présentes.  
+ [out] Retourne le numéro de colonne où l’expression ou l’instruction commence. Si la valeur est zéro, les informations de colonne ne sont pas présentes.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- La valeur de la colonne retournée par cette méthode est un offset d’octet dans la ligne vers le premier caractère de l’instruction de la ligne.  
+ La valeur de la colonne retournée par cette méthode est un offset d’octet dans la ligne vers le premier caractère de l’instruction sur la ligne.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

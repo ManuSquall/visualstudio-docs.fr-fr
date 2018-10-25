@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833185"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procédure pas à pas : Créer un modèle à l’aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.  
@@ -35,17 +35,17 @@ ms.locfileid: "35672861"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création de tableaux contenant des contrôles de contenu dans un modèle Word au moment du design  
+- Création de tableaux contenant des contrôles de contenu dans un modèle Word au moment du design  
   
--   Remplissage par programmation d'un contrôle de contenu de type zone de liste modifiable et d'un contrôle de contenu de type liste déroulante  
+- Remplissage par programmation d'un contrôle de contenu de type zone de liste modifiable et d'un contrôle de contenu de type liste déroulante  
   
--   Protection d'un tableau spécifié contre toute modification  
+- Protection d'un tableau spécifié contre toute modification  
   
--   Ajout de tableaux à la collection de blocs de construction d'un modèle  
+- Ajout de tableaux à la collection de blocs de construction d'un modèle  
   
--   Création d'un contrôle de contenu affichant les blocs de construction disponibles dans le modèle  
+- Création d'un contrôle de contenu affichant les blocs de construction disponibles dans le modèle  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -68,31 +68,31 @@ ms.locfileid: "35672861"
   
 ### <a name="to-create-the-employee-table"></a>Pour créer le tableau Employé  
   
-1.  Dans le modèle Word hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, dans le ruban, cliquez sur le **insérer** onglet.  
+1. Dans le modèle Word hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, dans le ruban, cliquez sur le **insérer** onglet.  
   
-2.  Dans le **Tables** de groupe, cliquez sur **Table**et insérez un tableau comportant deux colonnes et quatre lignes.  
+2. Dans le **Tables** de groupe, cliquez sur **Table**et insérez un tableau comportant deux colonnes et quatre lignes.  
   
-3.  Complétez la première colonne pour obtenir une colonne similaire à ceci :  
+3. Complétez la première colonne pour obtenir une colonne similaire à ceci :  
   
-    ||  
-    |-|  
-    |**Nom de l’employé**|  
-    |**Date d’embauche**|  
-    |**Titre**|  
-    |**Image**|  
+   ||  
+   |-|  
+   |**Nom de l’employé**|  
+   |**Date d’embauche**|  
+   |**Titre**|  
+   |**Image**|  
   
-4.  Cliquez dans la première cellule de la deuxième colonne (à côté **nom de l’employé**).  
+4. Cliquez dans la première cellule de la deuxième colonne (à côté **nom de l’employé**).  
   
-5.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
+5. Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
-    > [!NOTE]  
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
+6. Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
   
-7.  Cliquez sur la deuxième cellule de la deuxième colonne (à côté **Date d’embauche**).  
+7. Cliquez sur la deuxième cellule de la deuxième colonne (à côté **Date d’embauche**).  
   
-8.  Dans le **contrôles** de groupe, cliquez sur le **sélecteur de dates** bouton ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.  
+8. Dans le **contrôles** de groupe, cliquez sur le **sélecteur de dates** bouton ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.  
   
 9. Cliquez sur la troisième cellule de la deuxième colonne (à côté **titre**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35672861"
   
 ### <a name="to-create-the-customer-feedback-table"></a>Pour créer le tableau Commentaires des clients  
   
-1.  Dans le modèle Word, cliquez sur la ligne après le tableau employé que vous avez ajouté précédemment, appuyez sur **entrée** pour ajouter un nouveau paragraphe.  
+1. Dans le modèle Word, cliquez sur la ligne après le tableau employé que vous avez ajouté précédemment, appuyez sur **entrée** pour ajouter un nouveau paragraphe.  
   
-2.  Dans le ruban, cliquez sur le **insérer** onglet.  
+2. Dans le ruban, cliquez sur le **insérer** onglet.  
   
-3.  Dans le **Tables** de groupe, cliquez sur **Table**et insérez un tableau comportant deux colonnes et trois lignes.  
+3. Dans le **Tables** de groupe, cliquez sur **Table**et insérez un tableau comportant deux colonnes et trois lignes.  
   
-4.  Complétez la première colonne pour obtenir une colonne similaire à ceci :  
+4. Complétez la première colonne pour obtenir une colonne similaire à ceci :  
   
-    ||  
-    |-|  
-    |**Nom du client**|  
-    |**Indice de satisfaction**|  
-    |**Commentaires**|  
+   ||  
+   |-|  
+   |**Nom du client**|  
+   |**Indice de satisfaction**|  
+   |**Commentaires**|  
   
-5.  Cliquez dans la première cellule de la deuxième colonne (à côté **Customer Name**).  
+5. Cliquez dans la première cellule de la deuxième colonne (à côté **Customer Name**).  
   
-6.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
+6. Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
-7.  Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
+7. Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
   
-8.  Cliquez dans la deuxième cellule de la deuxième colonne (à côté **taux de Satisfaction**).  
+8. Cliquez dans la deuxième cellule de la deuxième colonne (à côté **taux de Satisfaction**).  
   
 9. Dans le **contrôles** de groupe, cliquez sur le **liste déroulante** bouton ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> dans la deuxième cellule.  
   
@@ -142,7 +142,7 @@ ms.locfileid: "35672861"
   
 1.  Dans **l’Explorateur de solutions**, avec le bouton droit **ThisDocument.cs** ou **ThisDocument.vb**, puis cliquez sur **afficher le Code**.  
   
-2.  Ajoutez le code suivant à la classe `ThisDocument`. Ce code déclare plusieurs objets que vous utiliserez ultérieurement dans cette procédure pas à pas.  
+2.  Ajoutez le code suivant à la classe `ThisDocument` . Ce code déclare plusieurs objets que vous utiliserez ultérieurement dans cette procédure pas à pas.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  

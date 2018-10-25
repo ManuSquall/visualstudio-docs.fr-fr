@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877112"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
 
@@ -62,7 +62,7 @@ Suivez les étapes ci-dessous pour installer la bibliothèque Flask dans l’« 
 
     ![Explorateur de solutions montrant l’environnement Python](media/quickstart-python-02-default-environment.png)
 
-1. Cliquez avec le bouton droit sur l’environnement et sélectionnez **Installer le package Python**. Cette commande ouvre la fenêtre **Environnements Python** sous l’onglet **Packages**.
+1. Cliquez avec le bouton droit sur l’environnement et sélectionnez **Installer le package Python**. Cette commande ouvre la fenêtre **Environnements Python** sous l’onglet Packages.
 
 1. Entrez « flask » dans le champ de recherche et sélectionnez **installation pip de flask à partir de PyPI**. Acceptez les invites de privilèges d’administrateur et observez la progression dans la fenêtre **Sortie** de Visual Studio. (Une invite d’élévation se produit lorsque le dossier des packages de l’environnement global se situe dans une zone protégée comme *C:\Program Files*.)
 
@@ -124,19 +124,19 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
 
     ![Définition du fichier de démarrage d’un projet dans l’Explorateur de solutions](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Ensuite, sélectionnez l’onglet **Déboguer** et affectez la valeur `4449` à la propriété **Numéro de port**. Cette étape permet de s’assurer que Visual Studio lance un navigateur avec `localhost:4449`, par cohérence avec les arguments `app.run` du code.
+2. Cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Ensuite, sélectionnez l’onglet **Déboguer** et affectez la valeur `4449` à la propriété **Numéro de port**. Cette étape permet de s’assurer que Visual Studio lance un navigateur avec `localhost:4449`, par cohérence avec les arguments `app.run` du code.
 
-1. Sélectionnez **Déboguer > Démarrer sans débogage** (**Ctrl**+**F5**) pour enregistrer les modifications apportées aux fichiers et exécuter l’application.
+3. Sélectionnez **Déboguer > Démarrer sans débogage** (**Ctrl**+**F5**) pour enregistrer les modifications apportées aux fichiers et exécuter l’application.
 
-1. Une fenêtre de commande s’affiche avec le message « Exécution sous https://localhost:4449/ », puis une fenêtre de navigateur s’ouvre sur `localhost:4449`, où figure le message « Hello, Python ! ». La requête GET apparaît également dans la fenêtre de commande avec l’état 200.
+4. Une fenêtre de commande s’affiche avec le message « Exécution sous <https://localhost:4449/> », puis une fenêtre de navigateur s’ouvre sur `localhost:4449`, où figure le message « Hello, Python ! ». La requête GET apparaît également dans la fenêtre de commande avec l’état 200.
 
     Si le navigateur ne s’ouvre pas automatiquement, lancez celui de votre choix et accédez à `localhost:4449`.
 
     Si vous voyez uniquement l’interpréteur de commandes interactif Python dans la fenêtre de commande, ou si cette fenêtre clignote brièvement à l’écran, vérifiez que vous avez défini *app.py* comme fichier de démarrage à l’étape 1 ci-dessus.
 
-1. Accédez à `localhost:4449/hello` afin de vérifier que l’élément décoratif de la ressource `/hello` fonctionne également. Là encore, la requête GET apparaît dans la fenêtre de commande avec l’état 200. N’hésitez pas à essayer d’autres URL pour vérifier qu’elles affichent des codes d’état 404 dans la fenêtre de commande.
+5. Accédez à `localhost:4449/hello` afin de vérifier que l’élément décoratif de la ressource `/hello` fonctionne également. Là encore, la requête GET apparaît dans la fenêtre de commande avec l’état 200. N’hésitez pas à essayer d’autres URL pour vérifier qu’elles affichent des codes d’état 404 dans la fenêtre de commande.
 
-1. Fermez la fenêtre de commande pour arrêter l’application, puis fermez la fenêtre du navigateur.
+6. Fermez la fenêtre de commande pour arrêter l’application, puis fermez la fenêtre du navigateur.
 
 **Question : Quelle est la différence entre les commandes Démarrer sans débogage et Démarrer le débogage ?**
 

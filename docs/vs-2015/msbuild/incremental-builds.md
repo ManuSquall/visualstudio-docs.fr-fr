@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812320"
 ---
 # <a name="incremental-builds"></a>Builds incrémentielles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ Les builds incrémentielles sont des builds optimisées qui permettent de ne pas
   
  Celle-ci s’utilise dans trois cas :  
   
--   La cible a un attribut `Condition` dont la valeur est `false`. Dans ce cas, la cible n’est pas exécutée et n’a aucun effet sur la build.  
+- La cible a un attribut `Condition` dont la valeur est `false`. Dans ce cas, la cible n’est pas exécutée et n’a aucun effet sur la build.  
   
--   La cible comprend des sorties obsolètes, et est donc exécutée pour les mettre à jour.  
+- La cible comprend des sorties obsolètes, et est donc exécutée pour les mettre à jour.  
   
--   La cible ne comprend aucune sortie obsolète, et est donc ignorée. MSBuild évalue la cible et apporte des modifications aux éléments et aux propriétés comme si la cible avait été exécutée.  
+- La cible ne comprend aucune sortie obsolète, et est donc ignorée. MSBuild évalue la cible et apporte des modifications aux éléments et aux propriétés comme si la cible avait été exécutée.  
   
- Pour que la compilation incrémentielle soit prise en charge, les tâches doivent vérifier que la valeur de l’attribut `TaskParameter` d’un élément `Output` est égale à un paramètre d’entrée de tâche. Voici quelques exemples :  
+  Pour que la compilation incrémentielle soit prise en charge, les tâches doivent vérifier que la valeur de l’attribut `TaskParameter` d’un élément `Output` est égale à un paramètre d’entrée de tâche. Voici quelques exemples :  
   
 ```  
 <CreateProperty Value="123">  

@@ -17,12 +17,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8179262ceabe1765ee6c9eab96553bcbcbbee419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bab850a6943268581035336a923232377e6489f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843676"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L’accès à la police stockée ni les paramètres de couleur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,17 +53,17 @@ Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développem
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Pour utiliser la persistance de l’état de polices et couleurs  
  Couleurs et polices persistantes implique :  
   
--   Synchroniser les paramètres de l’IDE avec paramètres stockés dans le Registre.  
+- Synchroniser les paramètres de l’IDE avec paramètres stockés dans le Registre.  
   
--   Propagation des informations de modification du Registre.  
+- Propagation des informations de modification du Registre.  
   
--   Définition et récupération des paramètres stockés dans le Registre.  
+- Définition et récupération des paramètres stockés dans le Registre.  
   
- La synchronisation du paramètre de stockage avec les paramètres de l’IDE est en grande partie transparent. L’IDE sous-jacent écrit automatiquement les paramètres mis à jour pour **éléments affichés** pour les entrées de Registre des catégories.  
+  La synchronisation du paramètre de stockage avec les paramètres de l’IDE est en grande partie transparent. L’IDE sous-jacent écrit automatiquement les paramètres mis à jour pour **éléments affichés** pour les entrées de Registre des catégories.  
   
- Si plusieurs VSPackages partagent une catégorie particulière, un VSPackage doit exiger que les événements sont générés lorsque les méthodes de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface sont utilisés pour modifier les paramètres du Registre stockée.  
+  Si plusieurs VSPackages partagent une catégorie particulière, un VSPackage doit exiger que les événements sont générés lorsque les méthodes de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface sont utilisés pour modifier les paramètres du Registre stockée.  
   
- Par défaut, la génération d’événements n’est pas activée. Pour activer la génération d’événements, une catégorie doit être ouvert à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Cela force l’IDE appeler approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> méthode qui implémente un VSPackage.  
+  Par défaut, la génération d’événements n’est pas activée. Pour activer la génération d’événements, une catégorie doit être ouvert à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Cela force l’IDE appeler approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> méthode qui implémente un VSPackage.  
   
 > [!NOTE]
 >  Les modifications via le **police et couleur** page de propriétés génèrent des événements indépendants de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface pour déterminer si une mise à jour des paramètres de police et couleur de mise en cache est nécessaire avant d’appeler les méthodes de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  

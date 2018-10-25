@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900161"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
  **Annotations et Descriptions**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     Paramètre ne peut pas être null, et dans l’état postérieur à l’emplacement pointé ne peut pas être null et doit être valide.  
+   Paramètre ne peut pas être null, et dans l’état postérieur à l’emplacement pointé ne peut pas être null et doit être valide.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     Paramètre peut être null, mais l’état postérieur à l’emplacement pointé ne peut pas être null et doit être valide.  
+   Paramètre peut être null, mais l’état postérieur à l’emplacement pointé ne peut pas être null et doit être valide.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     Paramètre ne peut pas être null, et dans l’état postérieur à l’emplacement pointé peut être null.  
+   Paramètre ne peut pas être null, et dans l’état postérieur à l’emplacement pointé peut être null.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     Paramètre peut être null, et dans l’état postérieur à l’emplacement pointé peut être null.  
+   Paramètre peut être null, et dans l’état postérieur à l’emplacement pointé peut être null.  
   
- Dans le tableau suivant, les sous-chaînes supplémentaires sont insérées dans le nom de l’annotation à qualifier davantage la signification de l’annotation.  Les sous-chaînes différents sont `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, et `_to_`.  
+  Dans le tableau suivant, les sous-chaînes supplémentaires sont insérées dans le nom de l’annotation à qualifier davantage la signification de l’annotation.  Les sous-chaînes différents sont `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, et `_to_`.  
   
 > [!IMPORTANT]
 >  Si l’interface qui vous annotez est COM, utilisez le formulaire de COM de ces annotations. N’utilisez pas les annotations de COM avec toute autre interface de type.  
   
  **Annotations et Descriptions**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     Le pointeur retourné a le `_Null_terminated_` annotation.  
+   Le pointeur retourné a le `_Null_terminated_` annotation.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     Le pointeur retourné a une sémantique COM et par conséquent comporte un `_On_failure_` à condition que le pointeur retourné a la valeur null.  
+   Le pointeur retourné a une sémantique COM et par conséquent comporte un `_On_failure_` à condition que le pointeur retourné a la valeur null.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     Le pointeur retourné pointe vers un mémoire tampon valide de taille `s` éléments ou octets.  
+   Le pointeur retourné pointe vers un mémoire tampon valide de taille `s` éléments ou octets.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     Le pointeur retourné pointe vers une mémoire tampon de taille `s` éléments ou octets, dont la première `c` sont valides.  
+   Le pointeur retourné pointe vers une mémoire tampon de taille `s` éléments ou octets, dont la première `c` sont valides.  
   
- Certaines conventions interface supposent que les paramètres de sortie sont compensés en cas d’échec.  À l’exception du code explicitement COM, les formulaires dans le tableau suivant sont préférables.  Pour le code COM, utilisez les formats COM correspondants qui sont répertoriés dans la section précédente.  
+  Certaines conventions interface supposent que les paramètres de sortie sont compensés en cas d’échec.  À l’exception du code explicitement COM, les formulaires dans le tableau suivant sont préférables.  Pour le code COM, utilisez les formats COM correspondants qui sont répertoriés dans la section précédente.  
   
- **Annotations et Descriptions**  
+  **Annotations et Descriptions**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Modifie les autres annotations. Le résultat a la valeur null si la fonction échoue.  
+   Modifie les autres annotations. Le résultat a la valeur null si la fonction échoue.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Modifie les autres annotations. Le résultat est défini à zéro si la fonction échoue.  
+   Modifie les autres annotations. Le résultat est défini à zéro si la fonction échoue.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre obligatoire.  
+   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre obligatoire.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est d’un paramètre facultatif.  
+   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est d’un paramètre facultatif.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre de référence.  
+   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre de référence.  
   
 ## <a name="output-reference-parameters"></a>Paramètres de référence de sortie  
  Une utilisation courante de paramètre de référence est pour les paramètres output.  Pour les paramètres de référence de sortie simple, par exemple, `int&`—`_Out_` fournit la sémantique correcte.  Toutefois, lorsque la valeur de sortie est un pointeur, par exemple `int *&`, telles que les annotations de pointeur équivalent `_Outptr_ int **` ne fournissent pas la sémantique appropriée.  Pour exprimer avec concision la sémantique de référence des paramètres de sortie pour les types pointeur, utilisez ces annotations composites :  

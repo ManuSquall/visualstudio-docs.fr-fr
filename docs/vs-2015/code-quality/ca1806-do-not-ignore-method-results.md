@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830585"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : Ne pas ignorer les résultats de méthode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250105"
 ## <a name="cause"></a>Cause  
  Il existe plusieurs raisons possibles à cet avertissement :  
   
--   Un nouvel objet est créé mais jamais utilisé.  
+- Un nouvel objet est créé mais jamais utilisé.  
   
--   Une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n’est jamais utilisée.  
+- Une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n’est jamais utilisée.  
   
--   Une méthode COM ou P/Invoke qui retourne un HRESULT ou code d’erreur qui n’est jamais utilisée. Description de la règle  
+- Une méthode COM ou P/Invoke qui retourne un HRESULT ou code d’erreur qui n’est jamais utilisée. Description de la règle  
   
- Création d’un objet inutile et le garbage collection associé de l’objet inutilisé dégrader les performances.  
+  Création d’un objet inutile et le garbage collection associé de l’objet inutilisé dégrader les performances.  
   
- Les chaînes sont immuables et les méthodes telles que String.ToUpper retourne une nouvelle instance d’une chaîne au lieu de modifier l’instance de la chaîne dans la méthode d’appel.  
+  Les chaînes sont immuables et les méthodes telles que String.ToUpper retourne une nouvelle instance d’une chaîne au lieu de modifier l’instance de la chaîne dans la méthode d’appel.  
   
- Ignorer les HRESULT ou code d’erreur peut entraîner un comportement inattendu dans les conditions d’erreur ou à des conditions de ressources insuffisantes.  
+  Ignorer les HRESULT ou code d’erreur peut entraîner un comportement inattendu dans les conditions d’erreur ou à des conditions de ressources insuffisantes.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Si la méthode A crée une nouvelle instance de l’objet B qui n’est jamais utilisée, passez l’instance comme argument à une autre méthode ou assignez l’instance à une variable. Si la création de l’objet n’est pas nécessaire, supprimez-la.- ou -  

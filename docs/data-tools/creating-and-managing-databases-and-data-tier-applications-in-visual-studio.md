@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7f3d3f8dc34cf354fd6cb6b6689701dab791132d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942528"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projets de base de données et applications de couche données dans Visual Studio
 
@@ -30,11 +30,11 @@ Pour obtenir la liste des fonctionnalités de base de données qui sont pris en 
 
 ## <a name="common-high-level-tasks"></a>Tâches courantes de haut niveau
 
-|Tâches de haut niveau|Contenu de support|
-|----------------------|------------------------|
-|**Démarrer le développement d’une application de couche données :** une DAC est un nouveau concept introduit avec [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] qui contient la définition d’un [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] les objets qui sont utilisés par un client-serveur ou de la couche 3 d’instance de base de données et la prise en charge application. Une DAC inclut des objets de base de données, tels que des tables et des vues, ainsi que les entités d’instance telles que les connexions. Vous pouvez utiliser Visual Studio pour créer un projet DAC, générer un fichier de package DAC et envoyer ce fichier de package à un administrateur de base de données pour le déploiement sur une instance de la [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] moteur de base de données.|-   [Créer et gérer des Applications de couche données](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Son développement itératif :** si vous êtes un développeur ou testeur, extraire des éléments du projet et de mettre à jour dans un environnement de développement isolé. À l’aide de ce type d’environnement, vous pouvez tester vos modifications sans affecter les autres membres de l’équipe. Une fois que les modifications sont terminées, vous vérifiez les fichiers au contrôle de version, où autres membres de l’équipe peuvent obtenir vos modifications et créer et les déployer sur un serveur de test.|-   [Requête et les éditeurs de texte (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Débogueur Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324)|
-|**Prototypage, vérification des résultats des tests et modification des scripts de base de données et objets :** vous pouvez utiliser le [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] éditeur pour effectuer l’une de ces tâches courantes.|-   [Requête et les éditeurs de texte (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
+| Tâches de haut niveau | Contenu de support |
+| - | - |
+| **Démarrer le développement d’une application de couche données :** une DAC est un nouveau concept introduit avec [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] qui contient la définition d’un [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] les objets qui sont utilisés par un client-serveur ou de la couche 3 d’instance de base de données et la prise en charge application. Une DAC inclut des objets de base de données, tels que des tables et des vues, ainsi que les entités d’instance telles que les connexions. Vous pouvez utiliser Visual Studio pour créer un projet DAC, générer un fichier de package DAC et envoyer ce fichier de package à un administrateur de base de données pour le déploiement sur une instance de la [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] moteur de base de données. | -   [Créer et gérer des Applications de couche données](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328) |
+| **Son développement itératif :** si vous êtes un développeur ou testeur, extraire des éléments du projet et de mettre à jour dans un environnement de développement isolé. À l’aide de ce type d’environnement, vous pouvez tester vos modifications sans affecter les autres membres de l’équipe. Une fois que les modifications sont terminées, vous vérifiez les fichiers au contrôle de version, où autres membres de l’équipe peuvent obtenir vos modifications et créer et les déployer sur un serveur de test. | -   [Requête et les éditeurs de texte (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Débogueur Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) |
+| **Prototypage, vérification des résultats des tests et modification des scripts de base de données et objets :** vous pouvez utiliser le [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] éditeur pour effectuer l’une de ces tâches courantes. | -   [Requête et les éditeurs de texte (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) |
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842376"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
@@ -40,7 +40,7 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 
 - Installez [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et du profileur autonome sont tous deux disponibles sur le support d’installation de Visual Studio. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et avant d’installer les outils de profilage.
 
- Pour installer [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] et les outils de profilage autonomes sur un calcul nœud HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :
+  Pour installer [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] et les outils de profilage autonomes sur un calcul nœud HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :
 
 1. Ouvrez la fenêtre d’invite de commandes installée avec HPC Pack.
 
@@ -52,11 +52,11 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|Nom du nœud principal du cluster.|
-|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe.|
-|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : Standalone Profiler\x64\vs_profiler.exe.|
+| | |
+|------------------| - |
+| *%HeadNode%* | Nom du nœud principal du cluster. |
+| *%FxPath%* | Chemin du programme d’installation de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
+| *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : Standalone Profiler\x64\vs_profiler.exe. |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profiler sur un nœud de calcul HPC
 
@@ -68,9 +68,9 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
 3. Dans la deuxième page de l’Assistant, sélectionnez l’application que vous voulez profiler.
 
-    - Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.
+   - Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.
 
-    - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.
+   - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.
 
 4. Cliquez sur **Suivant**.
 
@@ -126,7 +126,7 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 
 ### <a name="hpc-launch-properties"></a>Propriétés de lancement HPC
 
-|Propriété|Description|
+|Property|Description|
 |--------------|-----------------|
 |**Nœud principal**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|
 |**Nombre de processus**|Spécifie le nombre d’instances de l’application à exécuter dans l’application profilée.|
@@ -137,16 +137,17 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 
 ### <a name="advanced-properties"></a>Propriétés avancées
 
-|Propriété|Description|
-|--------------|-----------------|
-|**Nom du projet**|Nom du projet ou de la solution [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actuels.|
-|**Nettoyer après l’arrêt du profileur**|Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés.|
-|**Fichiers supplémentaires à déployer**|Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue.|
-|**Commande Mpiexec**|Spécifie l’application qui démarre l’application MPI. La valeur par défaut est **mpiexec.exe**.|
-|**Arguments Mpiexec**|Spécifie les arguments à passer à la commande mpiexec.exe.|
-|**Nœuds demandés sur le cluster**|Spécifie le nombre de nœuds sur le cluster sur lequel l’application doit être exécutée.|
-|**Déployer les fichiers CRT**|Si la valeur est true, déploie le Runtime C/C++ sur le cluster.|
-|**Script de préprofilage**|Spécifie le chemin et le nom de fichier d’un script à exécuter sur l’ordinateur de développement local avant le démarrage de la session de profilage.|
-|**Arguments de script de préprofilage**|Spécifie les arguments à passer au script de préprofilage.|
-|**Script de post-profilage**|Spécifie le chemin et le nom de fichier d’un script à exécuter sur l’ordinateur de développement local à la fin de la session de profilage.|
-|**Arguments de script de post-profilage**|Spécifie les arguments à passer au script de post-profilage.|
+| Property | Description |
+|---------------------------------------| - |
+| **Nom du projet** | Nom du projet ou de la solution [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actuels. |
+| **Nettoyer après l’arrêt du profileur** | Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés. |
+| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
+| **Commande Mpiexec** | Spécifie l’application qui démarre l’application MPI. La valeur par défaut est **mpiexec.exe**. |
+| **Arguments Mpiexec** | Spécifie les arguments à passer à la commande mpiexec.exe. |
+| **Nœuds demandés sur le cluster** | Spécifie le nombre de nœuds sur le cluster sur lequel l’application doit être exécutée. |
+| **Déployer les fichiers CRT** | Si la valeur est true, déploie le Runtime C/C++ sur le cluster. |
+| **Script de préprofilage** | Spécifie le chemin et le nom de fichier d’un script à exécuter sur l’ordinateur de développement local avant le démarrage de la session de profilage. |
+| **Arguments de script de préprofilage** | Spécifie les arguments à passer au script de préprofilage. |
+| **Script de post-profilage** | Spécifie le chemin et le nom de fichier d’un script à exécuter sur l’ordinateur de développement local à la fin de la session de profilage. |
+| **Arguments de script de post-profilage** | Spécifie les arguments à passer au script de post-profilage. |
+

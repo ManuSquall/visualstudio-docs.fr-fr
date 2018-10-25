@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_oemSymbolId | Documents Microsoft
+title: IDiaSymbol::get_oemSymbolId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc15bd3a20d37fa8624593820215df1583498a03
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b15cbfc289a88059960603159db3a7d57fd011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917165"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Récupère la valeur d’ID du symbole fabricant (OEM).  
@@ -34,7 +34,7 @@ HRESULT get_oemSymbolId (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne qu'un OEM affecté en interne au symbole ID.  
+ [out] ID de symboles retourne d’un OEM affecté en interne  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,10 +43,10 @@ HRESULT get_oemSymbolId (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles de manière unique.  
+ L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.  
   
- Cette propriété s’applique uniquement aux symboles avec un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) le type de `SymTagCustomType`.  
+ Cette propriété s’applique uniquement aux symboles avec un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) type de `SymTagCustomType`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

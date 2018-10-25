@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByAddr | Documents Microsoft
+title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 139bc3c9291650b5e3e991324dbf8c560078c2de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dbbf31de5c3a20ecf21a8e293657d4ed3a7eff1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925797"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-Récupère une énumération qui permet à un client parcourir les informations de numéro de ligne de toutes les fonctions qui sont incorporées, directement ou indirectement, par le symbole parent spécifié et est contenue dans la plage d’adresses spécifiée.  
+Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, par le symbole parent spécifié et est contenue dans la plage d’adresses spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,7 +33,7 @@ HRESULT findInlineeLinesByAddr (
   
 #### <a name="parameters"></a>Paramètres  
  `parent`  
- [in] Un `IDiaSymbol` objet qui représente le parent.  
+ [in] Un `IDiaSymbol` objet représentant le parent.  
   
  `isect`  
  [in] Spécifie le composant de la section de l’adresse.  

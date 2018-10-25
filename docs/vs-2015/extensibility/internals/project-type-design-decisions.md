@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939551"
 ---
 # <a name="project-type-design-decisions"></a>Décisions de conception de type de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Avant de créer un nouveau type de projet, vous devez prendre des décisions de 
   
  Vous avez plusieurs options en matière de persistance pour les éléments dans votre projet. Vous pouvez effectuer l’une des options suivantes :  
   
--   Enregistrez chaque fichier individuellement lorsqu’il a été modifié.  
+- Enregistrez chaque fichier individuellement lorsqu’il a été modifié.  
   
--   Capturer le nombre de transactions dans un seul **enregistrer** opération.  
+- Capturer le nombre de transactions dans un seul **enregistrer** opération.  
   
--   Enregistrer les fichiers localement, puis publier sur un serveur ou utiliser une autre approche pour l’enregistrement des éléments de projet lorsque l’élément représente une connexion de données à un objet distant.  
+- Enregistrer les fichiers localement, puis publier sur un serveur ou utiliser une autre approche pour l’enregistrement des éléments de projet lorsque l’élément représente une connexion de données à un objet distant.  
   
- Pour plus d’informations sur la persistance, consultez [persistance d’un projet](../../extensibility/internals/project-persistence.md) et [d’ouverture et de l’enregistrement des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Pour plus d’informations sur la persistance, consultez [persistance d’un projet](../../extensibility/internals/project-persistence.md) et [d’ouverture et de l’enregistrement des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Modèle de projet d’engagement  
  Objets de données persistantes ouvrira en mode direct ou en mode transactionnel ?  

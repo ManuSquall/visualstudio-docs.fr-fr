@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870053"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -39,7 +39,7 @@ Plusieurs graphiques prédéfinis sont disponibles. Vous pouvez utiliser les gra
 Le tableau suivant répertorie les graphiques prédéfinis à votre disposition pour analyser des résultats de tests de charge.
 
 |Nom du graphique|Description|
-|----------------|-----------------|
+|-|-|
 |Indicateurs clés|Compteurs qui décrivent les aspects de base des performances des tests, tels que la charge utilisateur, le débit et le temps de réponse.|
 |Temps de réponse du test|Données concernant la durée d'exécution des tests.|
 |Temps de réponse de la page|Temps de réponse moyen des pages web consultées pendant le test de charge.|
@@ -63,7 +63,7 @@ Le tableau suivant répertorie les graphiques prédéfinis à votre disposition 
  La légende contient les colonnes suivantes :
 
 |Compteur|Nom du compteur|
-|-------------|-----------------------------|
+|-|-|
 |Instance|Nom de l'instance de compteur.|
 |Category|Nom de la catégorie de compteur.|
 |Ordinateur|Le nom de l'ordinateur sur lequel les données du compteur sont collectées.|
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les graphiques prédéfinis à votre disposition 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-|
 |**Personnaliser les graphiques à l’aide de la légende :** la légende de la vue Graphiques affiche les informations de chaque compteur de performances associé à un graphique. Vous pouvez utiliser la légende pour supprimer les compteurs de performance, mettre en surbrillance les compteurs de performance dans le graphique et personnaliser les options de traçage.|-   [Utilisation de la légende de la vue Graphiques pour analyser des tests de charge](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Afficher des compteurs sur des graphiques :** vous pouvez ajouter différents genres de données au graphique de résultats des tests de charge en y plaçant des compteurs.|-   [Guide pratique pour ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Faire un zoom sur des graphiques :** à la fin d’un test de charge, vous pouvez utiliser les barres de zoom pour effectuer un zoom avant et accéder à une zone spécifique du graphique. En zoomant en avant, vous pouvez examiner en détail les données générées durant une série de tests de charge.|-   [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

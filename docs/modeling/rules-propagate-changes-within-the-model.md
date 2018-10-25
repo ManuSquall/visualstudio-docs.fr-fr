@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865964"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>Pour définir une règle
 
-1.  Définir la règle comme une classe préfixé avec le `RuleOn` attribut. L’attribut associe la règle à une de vos classes de domaine, relations ou éléments de diagramme. La règle sera appliquée à chaque instance de cette classe, ce qui peut être abstraite.
+1. Définir la règle comme une classe préfixé avec le `RuleOn` attribut. L’attribut associe la règle à une de vos classes de domaine, relations ou éléments de diagramme. La règle sera appliquée à chaque instance de cette classe, ce qui peut être abstraite.
 
-2.  Enregistrer la règle en l’ajoutant à l’ensemble retourné par `GetCustomDomainModelTypes()` dans votre classe de modèle de domaine.
+2. Enregistrer la règle en l’ajoutant à l’ensemble retourné par `GetCustomDomainModelTypes()` dans votre classe de modèle de domaine.
 
-3.  Dérivez la classe de règle d’une des classes abstraites de règle et écrire le code de la méthode d’exécution.
+3. Dérivez la classe de règle d’une des classes abstraites de règle et écrire le code de la méthode d’exécution.
 
- Les sections suivantes décrivent ces étapes plus en détail.
+   Les sections suivantes décrivent ces étapes plus en détail.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Pour définir une règle sur une classe de domaine
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>Pour écrire le code de la règle
 
--   Dérivez la classe de règle d’une des classes de base suivantes :
+- Dérivez la classe de règle d’une des classes de base suivantes :
 
-    |Classe de base|Déclencheur|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|Un élément, un lien ou une forme est ajoutée.<br /><br /> Cela permet de détecter de nouvelles relations, en plus de nouveaux éléments.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|Une valeur de propriété de domaine est modifiée. L’argument de méthode fournit les valeurs anciennes et nouvelles.<br /><br /> Pour les formes, cette règle est déclenchée lorsque l’intégrée `AbsoluteBounds` des modifications de propriété, si la forme est déplacée.<br /><br /> Dans de nombreux cas, il est plus pratique substituer `OnValueChanged` ou `OnValueChanging` dans le Gestionnaire de propriétés. Ces méthodes sont appelées immédiatement avant et après la modification. En revanche, la règle s’exécute généralement à la fin de la transaction. Pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md). **Remarque :** cette règle n’est pas déclenchée lorsqu’un lien est créé ou supprimé. En revanche, écrire un `AddRule` et un `DeleteRule` pour la relation de domaine.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Déclenché lorsqu’un élément ou un lien est sur le point d’être supprimé. La propriété ModelElement.IsDeleting vaut jusqu'à la fin de la transaction.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Effectuée lorsqu’un élément ou un lien a été supprimé. La règle est exécutée une fois que toutes les autres règles ont été exécutées, y compris DeletingRules. ModelElement.IsDeleting a la valeur false et ModelElement.IsDeleted a la valeur true. Pour permettre une annulation ultérieure, l’élément n'est pas réellement supprimé de la mémoire, mais il est supprimé de Store.ElementDirectory.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|Un élément est déplacé à partir de la partition d’un magasin vers un autre.<br /><br /> (Notez que cela n’est pas liée à la position d’une forme de graphique).|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|Cette règle s’applique uniquement aux relations de domaine. Elle est déclenchée si vous affectez explicitement un élément de modèle à chaque extrémité d’un lien.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Déclenché lorsque l’ordre des liens vers ou à partir d’un élément est modifié à l’aide des méthodes MoveBefore ou MoveToIndex sur un lien.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Exécuté lorsqu’une transaction est créée.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|Exécutée lorsque la transaction est sur le point d’être validée.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Exécutée lorsque la transaction est sur le point d’être restaurée.|
 
--   Chaque classe a une méthode que vous substituez. Type `override` dans votre classe pour la détection. Le paramètre de cette méthode identifie l’élément qui est en cours de modification.
+  | Classe de base | Déclencheur |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Un élément, un lien ou une forme est ajoutée.<br /><br /> Cela permet de détecter de nouvelles relations, en plus de nouveaux éléments. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Une valeur de propriété de domaine est modifiée. L’argument de méthode fournit les valeurs anciennes et nouvelles.<br /><br /> Pour les formes, cette règle est déclenchée lorsque l’intégrée `AbsoluteBounds` des modifications de propriété, si la forme est déplacée.<br /><br /> Dans de nombreux cas, il est plus pratique substituer `OnValueChanged` ou `OnValueChanging` dans le Gestionnaire de propriétés. Ces méthodes sont appelées immédiatement avant et après la modification. En revanche, la règle s’exécute généralement à la fin de la transaction. Pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md). **Remarque :** cette règle n’est pas déclenchée lorsqu’un lien est créé ou supprimé. En revanche, écrire un `AddRule` et un `DeleteRule` pour la relation de domaine. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Déclenché lorsqu’un élément ou un lien est sur le point d’être supprimé. La propriété ModelElement.IsDeleting vaut jusqu'à la fin de la transaction. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Effectuée lorsqu’un élément ou un lien a été supprimé. La règle est exécutée une fois que toutes les autres règles ont été exécutées, y compris DeletingRules. ModelElement.IsDeleting a la valeur false et ModelElement.IsDeleted a la valeur true. Pour permettre une annulation ultérieure, l’élément n'est pas réellement supprimé de la mémoire, mais il est supprimé de Store.ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un élément est déplacé à partir de la partition d’un magasin vers un autre.<br /><br /> (Notez que cela n’est pas liée à la position d’une forme de graphique). |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Cette règle s’applique uniquement aux relations de domaine. Elle est déclenchée si vous affectez explicitement un élément de modèle à chaque extrémité d’un lien. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Déclenché lorsque l’ordre des liens vers ou à partir d’un élément est modifié à l’aide des méthodes MoveBefore ou MoveToIndex sur un lien. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Exécuté lorsqu’une transaction est créée. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Exécutée lorsque la transaction est sur le point d’être validée. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Exécutée lorsque la transaction est sur le point d’être restaurée. |
 
- Notez les points suivants concernant les règles :
+
+- Chaque classe a une méthode que vous substituez. Type `override` dans votre classe pour la détection. Le paramètre de cette méthode identifie l’élément qui est en cours de modification.
+
+  Notez les points suivants concernant les règles :
 
 1.  L’ensemble de modifications dans une transaction peut déclencher plusieurs règles. En règle générale, les règles sont exécutées lorsque la transaction externe est validée. Ils sont exécutés dans un ordre non spécifié.
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Voir aussi

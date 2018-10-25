@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919739"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -34,17 +34,17 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 1. Lancez **Visual Studio pour Mac**.
 
-1. Sélectionnez **Fichier > Nouvelle solution**.
+2. Sélectionnez **Fichier > Nouvelle solution**.
 
-1. Dans la catégorie **Cloud > Général**, sélectionnez le modèle **Azure Functions**. Vous allez utiliser C# pour créer une bibliothèque de classes .NET qui héberge Azure Functions. Cliquez sur **Suivant**.
+3. Dans la catégorie **Cloud > Général**, sélectionnez le modèle **Azure Functions**. Vous allez utiliser C# pour créer une bibliothèque de classes .NET qui héberge Azure Functions. Cliquez sur **Suivant**.
 
     ![Sélection du modèle Azure Functions](media/azure-functions-lab-image1.png)
 
-1. Tapez **AzureFunctionsLab** dans le champ **Nom du projet**, puis cliquez sur **Créer**.
+4. Tapez **AzureFunctionsLab** dans le champ **Nom du projet**, puis cliquez sur **Créer**.
 
     ![Nommage et création d’un projet de fonction Azure](media/azure-functions-lab-image2.png)
 
-1. Développez les nœuds dans le **Panneau Solutions**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json. 
+5. Développez les nœuds dans le **Panneau Solutions**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json. 
 
      Il y a également trois fichiers :  
         - **host.json** pour décrire les options de configuration globale de l’hôte  

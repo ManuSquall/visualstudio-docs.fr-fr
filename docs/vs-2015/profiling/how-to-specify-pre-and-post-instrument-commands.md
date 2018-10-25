@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848382"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
   
  **Requirements**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Le répertoire de travail dans lequel les commandes sont exécutées dépend du système d’exploitation où vous exécutez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] et de la plateforme cible de l’application profilée.  
+  Le répertoire de travail dans lequel les commandes sont exécutées dépend du système d’exploitation où vous exécutez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] et de la plateforme cible de l’application profilée.  
   
- **Ordinateurs 32 bits**  
+  **Ordinateurs 32 bits**  
   
- Sur les ordinateurs 32 bits, le répertoire des outils de profilage par défaut est Lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
+  Sur les ordinateurs 32 bits, le répertoire des outils de profilage par défaut est Lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **Ordinateurs 64 bits**  
+  **Ordinateurs 64 bits**  
   
- Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme cible de l’application profilée :  
+  Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme cible de l’application profilée :  
   
--   Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :  
+- Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :  
   
-     *Lecteur*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Lecteur*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :  
+- Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :  
   
-     *Lecteur*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Lecteur*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Pour spécifier des commandes de pré-instrumentation  
   

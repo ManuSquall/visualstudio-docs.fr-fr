@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_registerValue | Documents Microsoft
+title: IDiaStackFrame::get_registerValue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c08258c98b46536f17f7819ce01c296d2d1900
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845951"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Récupère la valeur d’un registre spécifié comme indiqué dans le frame de pile.  
+Récupère la valeur d’un registre spécifié, tel que stocké dans le frame de pile.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +35,7 @@ HRESULT get_registerValue(
   
 #### <a name="parameters"></a>Paramètres  
  `registerIndex`  
- [in] Parmi les [cv_hreg_e, énumération](../../debugger/debug-interface-access/cv-hreg-e.md) valeurs d’énumération.  
+ [in] Parmi les [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md) valeurs d’énumération.  
   
  `pRetVal`  
  [out] Valeur stockée dans le Registre.  
@@ -45,4 +45,4 @@ HRESULT get_registerValue(
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e, énumération](../../debugger/debug-interface-access/cv-hreg-e.md)

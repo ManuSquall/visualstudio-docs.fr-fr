@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849032"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800930"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d'un projet de classeur Excel.  
+- Création d'un projet de classeur Excel.  
   
--   Ajout de texte à une feuille de calcul hébergée dans le concepteur Visual Studio.  
+- Ajout de texte à une feuille de calcul hébergée dans le concepteur Visual Studio.  
   
--   Écriture de code qui utilise le modèle objet d'Excel pour ajouter du texte à la feuille de calcul personnalisée quand elle est ouverte.  
+- Écriture de code qui utilise le modèle objet d'Excel pour ajouter du texte à la feuille de calcul personnalisée quand elle est ouverte.  
   
--   Génération et exécution du projet pour le tester  
+- Génération et exécution du projet pour le tester  
   
--   Nettoyage du projet achevé pour supprimer les fichiers de build et les paramètres de sécurité inutiles de votre ordinateur de développement.  
+- Nettoyage du projet achevé pour supprimer les fichiers de build et les paramètres de sécurité inutiles de votre ordinateur de développement.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -54,35 +54,35 @@ ms.locfileid: "38800930"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Pour créer un projet de classeur Excel dans Visual Studio  
   
-1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+2. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-3.  Dans le volet Modèles, développez **Visual C#** ou **Visual Basic**, puis développez **Office/SharePoint**.  
+3. Dans le volet Modèles, développez **Visual C#** ou **Visual Basic**, puis développez **Office/SharePoint**.  
   
-4.  Sous le nœud développé **Office/SharePoint** , sélectionnez le nœud **Compléments Office** .  
+4. Sous le nœud développé **Office/SharePoint** , sélectionnez le nœud **Compléments Office** .  
   
-5.  Dans la liste des modèles de projet, choisissez un projet de complément Excel VSTO.  
+5. Dans la liste des modèles de projet, choisissez un projet de complément Excel VSTO.  
   
-6.  Dans le **nom** , tapez **FirstWorkbookCustomization**.  
+6. Dans le **nom** , tapez **FirstWorkbookCustomization**.  
   
-7.  Cliquez sur **OK**.  
+7. Cliquez sur **OK**.  
   
-     L' **Assistant Projet Visual Studio Tools pour Office** s'ouvre.  
+    L' **Assistant Projet Visual Studio Tools pour Office** s'ouvre.  
   
-8.  Sélectionnez **créer un nouveau document**, puis cliquez sur **OK**.  
+8. Sélectionnez **créer un nouveau document**, puis cliquez sur **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le **FirstWorkbookCustomization** de projet et ajoute les fichiers suivants au projet.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le **FirstWorkbookCustomization** de projet et ajoute les fichiers suivants au projet.  
   
-    -   *FirstWorkbookCustomization*.xlsx - représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.  
+   - *FirstWorkbookCustomization*.xlsx - représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.  
   
-    -   Sheet1 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).  
+   - Sheet1 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la deuxième feuille de calcul dans le classeur.  
+   - Sheet2 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la deuxième feuille de calcul dans le classeur.  
   
-    -   Sheet3 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la troisième feuille de calcul dans le classeur.  
+   - Sheet3 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la troisième feuille de calcul dans le classeur.  
   
-    -   ThisWorkbook (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-contient l’aire de conception et le code pour les personnalisations au niveau du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-contient l’aire de conception et le code pour les personnalisations au niveau du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).  
   
      Le fichier de code Feuil1 est ouvert automatiquement dans le concepteur.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "38800930"
   
 -   Une définition partielle de la classe `Sheet1`, qui représente le modèle de programmation de la feuille de calcul et permet d'accéder au modèle objet d'Excel. Pour plus d’informations, [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md) et [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md). Le reste de la classe `Sheet1` est défini dans un fichier de code masqué que vous ne devez pas modifier.  
   
--   Les gestionnaires d'événements `Sheet1_Startup` et `Sheet1_Shutdown`. Ces gestionnaires d'événements sont appelés quand Excel charge et décharge votre personnalisation. Utilisez ces gestionnaires d'événements pour initialiser votre personnalisation quand elle est chargée, ainsi que pour nettoyer les ressources utilisées par votre personnalisation quand elle est déchargée. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).  
+-   Les gestionnaires d'événements `Sheet1_Startup` et `Sheet1_Shutdown` . Ces gestionnaires d'événements sont appelés quand Excel charge et décharge votre personnalisation. Utilisez ces gestionnaires d'événements pour initialiser votre personnalisation quand elle est chargée, ainsi que pour nettoyer les ressources utilisées par votre personnalisation quand elle est déchargée. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Pour ajouter une deuxième ligne de texte à la feuille de calcul en utilisant du code  
   

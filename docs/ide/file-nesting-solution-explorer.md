@@ -11,11 +11,11 @@ author: angelosp
 ms.author: angelpe
 manager: douge
 ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928696"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
 

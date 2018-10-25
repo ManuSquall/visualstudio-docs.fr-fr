@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857131"
 ---
 # <a name="making-commands-available"></a>Rendre les commandes disponibles
 Lorsque plusieurs packages VS sont ajoutés à Visual Studio, l’interface utilisateur (IU) peut devenir trop avec les commandes. Vous pouvez programmer votre package afin de réduire ce problème, comme suit :
@@ -54,12 +54,13 @@ Notez que le chargement différé peut également améliorer les performances de
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] surveille les modifications résultant d’actions telles que le chargement d’un projet ou du passage d’édition pour la création de l’utilisateur. Comme les modifications se produisent, modifier l’apparence de l’IDE est automatiquement. Le tableau suivant présente quatre contextes principaux de IDE changer cela [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] moniteurs.
 
-|Type de contexte|Description|
-|---------------------|-----------------|
-|Type de projet actif|Pour la plupart des types de projets, cela `GUID` valeur est le même que le GUID du VSPackage qui implémente le projet. Toutefois, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projets utilisent le Type de projet `GUID` comme valeur.|
-|Fenêtre active|En règle générale, il s’agit de la dernière fenêtre de document actif qui établit le contexte actuel de l’interface utilisateur pour les combinaisons de touches. Toutefois, il peut également être une fenêtre outil qui a une table de la combinaison de touches qui ressemble au navigateur Web interne. Pour les fenêtres de document à plusieurs onglets tels que l’éditeur HTML, chaque onglet possède un contexte de commande différentes `GUID`.|
-|Service de langage Active|Le service de langage qui est associé au fichier qui est actuellement affiché dans un éditeur de texte.|
-|Fenêtre outil Active|Une fenêtre outil qui est ouvert et a le focus.|
+
+| Type de contexte | Description |
+|-------------------------| - |
+| Type de projet actif | Pour la plupart des types de projets, cela `GUID` valeur est le même que le GUID du VSPackage qui implémente le projet. Toutefois, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projets utilisent le Type de projet `GUID` comme valeur. |
+| Fenêtre active | En règle générale, il s’agit de la dernière fenêtre de document actif qui établit le contexte actuel de l’interface utilisateur pour les combinaisons de touches. Toutefois, il peut également être une fenêtre outil qui a une table de la combinaison de touches qui ressemble au navigateur Web interne. Pour les fenêtres de document à plusieurs onglets tels que l’éditeur HTML, chaque onglet possède un contexte de commande différentes `GUID`. |
+| Service de langage Active | Le service de langage qui est associé au fichier qui est actuellement affiché dans un éditeur de texte. |
+| Fenêtre outil Active | Une fenêtre outil qui est ouvert et a le focus. |
 
  Une cinquième zone majeure de contexte est l’état de l’interface utilisateur de l’IDE. Contextes d’interface utilisateur sont identifiées par le contexte de commande active `GUID`s, comme suit :
 

@@ -1,5 +1,5 @@
 ---
-title: L’URI à décoder n’est ne pas un encodage valide | Documents Microsoft
+title: L’URI à désencoder n’est ne pas un encodage valide | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,27 +21,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841817"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>L'URI à décoder contient un caractère incorrect
-Vous avez tenté de décoder un incorrectement formé URI (Uniform Resource Identifier). URI ont une syntaxe spéciale ; la plupart des caractères non alphanumériques doivent être encodés avant de pouvoir être utilisés dans un URI. Vous pouvez utiliser la `encodeURI` et `encodeURIComponent` méthodes pour créer un URI à partir d’un vecteur normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] chaîne.  
+Vous avez tenté de décoder un incorrectement formé URI (Uniform Resource Identifier). URI ont une syntaxe spéciale ; la plupart des caractères non alphanumériques doivent être encodés avant de pouvoir être utilisés dans un URI. Vous pouvez utiliser la `encodeURI` et `encodeURIComponent` méthodes pour créer un URI à partir d’un élément normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] chaîne.  
   
- Un URI complet se compose d’une séquence de composants et des séparateurs. La forme générale est la suivante :  
+ Un URI complet se compose d’une séquence de composants et de séparateurs. Le format général est :  
   
 ```JavaScript  
 <Scheme>:<first>/<second>;<third>?<fourth>  
 ```  
   
- Les crochets pointus représentent les composants et les « : », « / », « ; » et « ? » sont des caractères réservés utilisés comme séparateurs.  
+ Les noms figurant entre crochets représentent des composants et le « : », « / », « ; » et « ? » sont des caractères réservés utilisés comme séparateurs.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Vérifiez que vous tentez de décoder des URI valides uniquement. Vous ne peut pas décoder normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] des chaînes, car ils peuvent contenir des caractères non valides.  
+-   Assurez-vous que vous tentez de décoder des URI valides uniquement. Vous ne pouvez décoder normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] des chaînes, car ils peuvent contenir des caractères non valides.  
   
 ## <a name="see-also"></a>Voir aussi  
- [decodeURI, fonction](../../javascript/reference/decodeuri-function-javascript.md)   
+ [Fonction decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
  [Fonction decodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)

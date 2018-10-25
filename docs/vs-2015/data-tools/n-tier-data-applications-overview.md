@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852919"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-* de couche données qui sont des données applications sont divisées en plus
 ## <a name="presentation-tier"></a>Couche de présentation  
  Le *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Il contient souvent une logique d’application supplémentaires également. Composants de la couche présentation standard sont les suivantes :  
   
--   Données de liaison des composants, tels que le <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.  
+- Données de liaison des composants, tels que le <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) des classes d’entité pour une utilisation dans la couche de présentation.  
+- Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) des classes d’entité pour une utilisation dans la couche de présentation.  
   
- La couche de présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). La couche de présentation n’accède pas directement à la couche données. La couche de présentation communique avec la couche de données par le biais du composant d’accès aux données dans la couche intermédiaire.  
+  La couche de présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). La couche de présentation n’accède pas directement à la couche données. La couche de présentation communique avec la couche de données par le biais du composant d’accès aux données dans la couche intermédiaire.  
   
 ## <a name="middle-tier"></a>Couche intermédiaire  
  Le *intermédiaire* est la couche de la couche de présentation et de données utilisent pour communiquer avec eux. Composants de niveau intermédiaire standard sont les suivants :  
   
--   Logique métier, telles que la validation de données et des règles métier.  
+- Logique métier, telles que la validation de données et des règles métier.  
   
--   Composants d’accès aux données et logique, telle que la suivante :  
+- Composants d’accès aux données et logique, telle que la suivante :  
   
-    -   [Les TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et [DataAdapters et DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  -   [Les TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et [DataAdapters et DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-    -   Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes d’entité.  
+  -   Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes d’entité.  
   
-    -   Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.  
+  -   Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.  
   
- L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multiniveau.  
+  L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multiniveau.  
   
- ![Intermédiaire des composants de la couche](../data-tools/media/ntiermid.png "NtierMid")  
-Niveau intermédiaire  
+  ![Intermédiaire des composants de la couche](../data-tools/media/ntiermid.png "NtierMid")  
+  Niveau intermédiaire  
   
- En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.  
+  En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.  
   
 ## <a name="data-tier"></a>Couche Données  
  Le *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

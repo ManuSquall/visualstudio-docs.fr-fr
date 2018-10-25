@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Documents Microsoft
+title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ae1c724542d628e7f3c047efd8ed2da1f6f1f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd8da39b89311939017698b4095321df450112e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821368"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Récupère les informations sur la visionneuse pour ce type de propriété afin d’instancier ce visualiseur.  
+Récupère des informations sur la visionneuse pour ce type de propriété afin d’instancier cette visionneuse.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,22 +57,22 @@ int GetManagedViewerCreationData(
  [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets de l’assembly de cet objet (Ceci est une valeur null si aucun octet n’est disponible).  
   
  `assemPdb`  
- [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker les informations de cet objet (Ceci est une valeur null si aucun magasin de symboles n’est disponible).  
+ [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker des informations pour cet objet (une valeur null si aucun magasin de symboles n’est disponible).  
   
  `className`  
- [out] Retourne le nom de la classe qui contient cet objet.  
+ [out] Retourne le nom de classe qui contient cet objet.  
   
  `alr`  
  [out] Retourne une valeur de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) énumération indiquant l’emplacement de l’assembly.  
   
  `replacementOk`  
- [out] Retourne zéro (`TRUE`) si la valeur de cet objet peut être modifiée ; zéro (`FALSE`) si l’objet est en lecture seule.  
+ [out] Retourne la valeur différente de zéro (`TRUE`) si la valeur de cet objet peut être modifiée ; zéro (`FALSE`) si l’objet est en lecture seule.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse managée.  
+ Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse gérée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

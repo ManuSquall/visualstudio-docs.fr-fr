@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911250"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Comment : accéder aux polices intégrées et des couleurs ccheme
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
 
  Pour utiliser les polices intégrées et le jeu de couleurs, un VSPackage doit :
 
--   Définir une catégorie à utiliser avec le service de polices et couleurs par défaut.
+- Définir une catégorie à utiliser avec le service de polices et couleurs par défaut.
 
--   S’inscrire à la catégorie avec le serveur de polices et couleurs par défaut.
+- S’inscrire à la catégorie avec le serveur de polices et couleurs par défaut.
 
--   Informez l’IDE qu’une fenêtre spécifique utilise les catégories et les éléments d’affichage intégrées à l’aide de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfaces.
+- Informez l’IDE qu’une fenêtre spécifique utilise les catégories et les éléments d’affichage intégrées à l’aide de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfaces.
 
- L’IDE utilise la catégorie résultant en tant que handle vers la fenêtre. Nom de la catégorie s’affiche dans le **afficher les paramètres de :** zone de liste déroulante dans le **polices et couleurs** page de propriétés.
+  L’IDE utilise la catégorie résultant en tant que handle vers la fenêtre. Nom de la catégorie s’affiche dans le **afficher les paramètres de :** zone de liste déroulante dans le **polices et couleurs** page de propriétés.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Pour définir une catégorie à l’aide de couleurs et polices intégrées
 
@@ -67,15 +67,15 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Pour lancer l’utilisation de polices fournis par le système et les couleurs
 
-1.  Créez une instance de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface dans le cadre de l’implémentation et de l’initialisation de la fenêtre.
+1. Créez une instance de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface dans le cadre de l’implémentation et de l’initialisation de la fenêtre.
 
-2.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode pour obtenir une instance de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interface correspondant à l’actuel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance.
+2. Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode pour obtenir une instance de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interface correspondant à l’actuel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance.
 
-3.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> à deux reprises.
+3. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> à deux reprises.
 
-    -   Appeler une seule fois avec `VSEDITPROPID_ViewGeneral_ColorCategory`en tant qu’argument.
+   - Appeler une seule fois avec `VSEDITPROPID_ViewGeneral_ColorCategory`en tant qu’argument.
 
-    -   Appeler une seule fois avec `VSEDITPROPID_ViewGeneral_FontCategory` en tant qu’argument.
+   - Appeler une seule fois avec `VSEDITPROPID_ViewGeneral_FontCategory` en tant qu’argument.
 
      Cela définit et expose les services de polices et couleurs par défaut en tant que propriété de la fenêtre.
 

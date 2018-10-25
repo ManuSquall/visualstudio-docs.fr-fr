@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941233"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Guide pratique pour signaler un problème avec Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Si vous rencontrez un problème avec Visual Studio 2015, nous souhaitons connaî
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Donnez un titre descriptif au problème qui nous aidera à l’adresser à l’équipe Visual Studio appropriée.  
+1. Donnez un titre descriptif au problème qui nous aidera à l’adresser à l’équipe Visual Studio appropriée.  
   
-2.  Indiquez des détails supplémentaires et, si possible, la procédure permettant de reproduire le problème.  
+2. Indiquez des détails supplémentaires et, si possible, la procédure permettant de reproduire le problème.  
   
-3.  Choisissez un secteur qui pose problème dans la liste déroulante. Indiquez l’hypothèse qui vous semble la meilleure si vous n’avez aucune certitude.  
+3. Choisissez un secteur qui pose problème dans la liste déroulante. Indiquez l’hypothèse qui vous semble la meilleure si vous n’avez aucune certitude.  
   
- ![Signaler un problème, boîte de dialogue](../ide/media/report-a-problem-dialog.png "Signaler un problème, boîte de dialogue")  
+   ![Signaler un problème, boîte de dialogue](../ide/media/report-a-problem-dialog.png "Signaler un problème, boîte de dialogue")  
   
 ## <a name="provide-a-screenshot-optional"></a>Fournir une capture d’écran (facultatif)  
  Choisissez **Inclure une capture d’écran** pour envoyer l’écran actuellement affiché à Microsoft. L’outil vous permet de rogner l’image pour afficher uniquement la partie de l’écran qui illustre le problème. Vous pouvez joindre d’autres captures d’écran ou fichiers en cliquant sur le bouton **Joindre des fichiers supplémentaires**.  

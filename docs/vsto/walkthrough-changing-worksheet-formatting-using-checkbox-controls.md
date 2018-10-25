@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843533"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : Modifier la mise en forme de feuille de calcul à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases à cocher sur une feuille de calcul Microsoft Office Excel pour modifier la mise en forme. Vous allez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -101,24 +101,24 @@ ms.locfileid: "38778368"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Pour ajouter du texte à un contrôle NamedRange  
   
-1.  À partir de la **contrôles Excel** onglet de la boîte à outils, faites glisser un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle de cellule **B9**.  
+1. À partir de la **contrôles Excel** onglet de la boîte à outils, faites glisser un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle de cellule **B9**.  
   
-2.  Vérifiez que **$B$ 9** apparaît dans la zone de texte modifiable et que la cellule **B9** est sélectionné. Si elle n’est pas le cas, cliquez sur cellule **B9** pour le sélectionner.  
+2. Vérifiez que **$B$ 9** apparaît dans la zone de texte modifiable et que la cellule **B9** est sélectionné. Si elle n’est pas le cas, cliquez sur cellule **B9** pour le sélectionner.  
   
-3.  Cliquez sur **OK**.  
+3. Cliquez sur **OK**.  
   
-4.  Cellule **B9** devient une plage nommée `NamedRange1`.  
+4. Cellule **B9** devient une plage nommée `NamedRange1`.  
   
-     Il n’existe aucune indication visible sur la feuille de calcul, mais `NamedRange1` s’affiche dans le **zoneNom** (juste au-dessus de la feuille de calcul sur le côté gauche) quand la cellule **B9** est sélectionné.  
+    Il n’existe aucune indication visible sur la feuille de calcul, mais `NamedRange1` s’affiche dans le **zoneNom** (juste au-dessus de la feuille de calcul sur le côté gauche) quand la cellule **B9** est sélectionné.  
   
-5.  Veillez à ce que **NamedRange1** est visible dans la zone de liste objet nom de le **propriétés** fenêtre et modifiez les propriétés suivantes :  
+5. Veillez à ce que **NamedRange1** est visible dans la zone de liste objet nom de le **propriétés** fenêtre et modifiez les propriétés suivantes :  
   
-    |Propriété|Value|  
-    |--------------|-----------|  
-    |**Name**|**textFont**|  
-    |**Value2**|**Cliquez sur une case à cocher pour modifier la mise en forme du texte.**|  
+   |Propriété|Value|  
+   |--------------|-----------|  
+   |**Name**|**textFont**|  
+   |**Value2**|**Cliquez sur une case à cocher pour modifier la mise en forme du texte.**|  
   
- Ensuite, écrivez le code pour mettre en forme le texte lorsqu’une option est sélectionnée.  
+   Ensuite, écrivez le code pour mettre en forme le texte lorsqu’une option est sélectionnée.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Mettre en forme le texte lorsqu’une option est sélectionnée.  
  Dans cette section, vous allez écrire le code afin que lorsque l’utilisateur sélectionne une option de mise en forme, le format du texte dans la feuille de calcul est modifié.  

@@ -20,47 +20,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f9ceb4d89c2c33e903811b891438d130f5552b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7b533a82f02d0c993ea4ecc58aca700c540e6a39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852906"
 ---
 # <a name="how-to-attach-to-script"></a>Comment : attacher à un script
 Cette rubrique explique comment attacher manuellement le débogueur Visual Studio à un fichier de script pour le débogage.  
   
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution  
   
-1.  Dans le menu **Débogage** , sélectionnez **Attacher au processus**. (Si aucun projet n’est ouvert, choisissez **attacher au processus** sur le **outils** menu.)  
+1. Dans le menu **Débogage** , sélectionnez **Attacher au processus**. (Si aucun projet n’est ouvert, choisissez **attacher au processus** sur le **outils** menu.)  
   
-2.  Dans le **attacher au processus** boîte de dialogue, examinez le **processus disponibles** liste et trouver le processus de script vous voulez attacher. Vous pouvez identifier les processus de script en examinant le **Type** colonne.  
+2. Dans le **attacher au processus** boîte de dialogue, examinez le **processus disponibles** liste et trouver le processus de script vous voulez attacher. Vous pouvez identifier les processus de script en examinant le **Type** colonne.  
   
-    1.  Si le processus que vous souhaitez déboguer est en cours d'exécution sur un autre ordinateur, sélectionnez d'abord l'ordinateur distant.
+   1.  Si le processus que vous souhaitez déboguer est en cours d'exécution sur un autre ordinateur, sélectionnez d'abord l'ordinateur distant.
   
-    2.  Si le processus s’exécute sous un compte d’utilisateur différent, cochez la case **Afficher les processus de tous les utilisateurs** .  
+   2.  Si le processus s’exécute sous un compte d’utilisateur différent, cochez la case **Afficher les processus de tous les utilisateurs** .  
   
-    3.  Si vous êtes connecté via **connexion Bureau à distance**, sélectionnez le **afficher les processus de toutes les sessions** case à cocher.  
+   3.  Si vous êtes connecté via **connexion Bureau à distance**, sélectionnez le **afficher les processus de toutes les sessions** case à cocher.  
   
-3.  Cliquez sur le processus que vous voulez attacher.  
+3. Cliquez sur le processus que vous voulez attacher.  
   
-4.  Dans le **attacher à** zone, vous devez voir **code de Script** ou **automatique : code de Script**. Si un élément différent est affiché, suivez ces étapes :  
+4. Dans le **attacher à** zone, vous devez voir **code de Script** ou **automatique : code de Script**. Si un élément différent est affiché, suivez ces étapes :  
   
-    1.  Cliquez sur **Sélectionner**.  
+   1.  Cliquez sur **Sélectionner**.  
   
-    2.  Dans le **sélectionner le Type de Code** boîte de dialogue, cliquez sur **déboguer ces types de codes** et sélectionnez **Script**.  
+   2.  Dans le **sélectionner le Type de Code** boîte de dialogue, cliquez sur **déboguer ces types de codes** et sélectionnez **Script**.  
   
-    3.  Cliquez sur **OK**.  
+   3.  Cliquez sur **OK**.  
   
-5.  Cliquez sur **Attacher**.  
+5. Cliquez sur **Attacher**.  
   
-     Vous pouvez visualiser un avertissement vous indiquant que le débogage de script est désactivé dans Internet Explorer. Si cela se produit, consultez [Avertissement : le débogage de Script est désactivé](../debugger/warning-script-debugging-disabled.md).  
+    Vous pouvez visualiser un avertissement vous indiquant que le débogage de script est désactivé dans Internet Explorer. Si cela se produit, consultez [Avertissement : le débogage de Script est désactivé](../debugger/warning-script-debugging-disabled.md).  
   
- La liste **Processus disponibles** s’affiche automatiquement quand vous ouvrez la boîte de dialogue **Processus** . Les processus peuvent démarrer et s’interrompre en arrière-plan pendant que la boîte de dialogue est ouverte. Le contenu n'est donc pas toujours à jour. Vous pouvez actualiser la liste à tout moment pour afficher la liste actuelle des processus en appuyant sur la **Actualiser** bouton.  
+   La liste **Processus disponibles** s’affiche automatiquement quand vous ouvrez la boîte de dialogue **Processus** . Les processus peuvent démarrer et s’interrompre en arrière-plan pendant que la boîte de dialogue est ouverte. Le contenu n'est donc pas toujours à jour. Vous pouvez actualiser la liste à tout moment pour afficher la liste actuelle des processus en appuyant sur la **Actualiser** bouton.  
   
- Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d'outils Emplacement de débogage. Pour plus d’informations, consultez [Comment : définir le processus actuel](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
+   Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d'outils Emplacement de débogage. Pour plus d’informations, consultez [Comment : définir le processus actuel](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
   
- Tous les **déboguer** commandes de menu d’exécution affectent le programme actif. Vous pouvez interrompre tout programme débogué à partir de la boîte de dialogue processus. Consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).  
+   Tous les **déboguer** commandes de menu d’exécution affectent le programme actif. Vous pouvez interrompre tout programme débogué à partir de la boîte de dialogue processus. Consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
 >  Si vous essayez d'établir un attachement à un processus appartenant à un compte d'utilisateur non fiable, une boîte de dialogue d'avertissement de sécurité s'affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  

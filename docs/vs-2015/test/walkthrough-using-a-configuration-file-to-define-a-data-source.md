@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843039"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d'un fichier de configuration pour définir une source de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Pour ajouter la section de configuration personnalisée au fichier app.config  
   
-1.  L'élément racine d'app.config doit être l'élément `configuration`. Créez un élément `configSections` dans l'élément `configuration`. `configSections` doit être le premier élément du fichier app.config.  
+1. L'élément racine d'app.config doit être l'élément `configuration`. Créez un élément `configSections` dans l'élément `configuration`. `configSections` doit être le premier élément du fichier app.config.  
   
-2.  Dans l'élément `configSections`, créez un élément `section`.  
+2. Dans l'élément `configSections`, créez un élément `section`.  
   
-3.  Dans l'élément `section`, ajoutez un attribut nommé `name` et assignez-lui une valeur égale à `microsoft.visualstudio.testtools`. Ajoutez un autre attribut nommé `type` et assignez-lui une valeur égale à `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
+3. Dans l'élément `section`, ajoutez un attribut nommé `name` et assignez-lui une valeur égale à `microsoft.visualstudio.testtools`. Ajoutez un autre attribut nommé `type` et assignez-lui une valeur égale à `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
- L'élément `section` doit être similaire à ce qui suit :   
+   L'élément `section` doit être similaire à ce qui suit :   
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 ## <a name="define-data-sources"></a>Définir des sources de données  
  La section de sources de données contient quatre attributs utilisés par le moteur de test pour récupérer des données à partir d'une source de données.  
   
--   `name` définit l'identité utilisée par <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> pour spécifier la source de données à utiliser.  
+- `name` définit l'identité utilisée par <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> pour spécifier la source de données à utiliser.  
   
--   `connectionString` identifie la chaîne de connexion créée dans la section précédente, Définir des chaînes de connexion.  
+- `connectionString` identifie la chaîne de connexion créée dans la section précédente, Définir des chaînes de connexion.  
   
--   `dataTableName` définit la table ou la feuille qui contient les données à utiliser dans le test.  
+- `dataTableName` définit la table ou la feuille qui contient les données à utiliser dans le test.  
   
--   `dataAccessMethod` définit la technique d'accès aux valeurs de données dans la source de données.  
+- `dataAccessMethod` définit la technique d'accès aux valeurs de données dans la source de données.  
   
- Dans cette section, vous définirez deux sources de données à utiliser dans un test unitaire.  
+  Dans cette section, vous définirez deux sources de données à utiliser dans un test unitaire.  
   
 #### <a name="to-define-data-sources"></a>Pour définir des sources de données  
   

@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfc5c937033087e3bea7b5326e90be64410fcfb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812710"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Liaison de raccourcis clavier à des éléments de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,55 +38,55 @@ Pour lier un raccourci clavier à une commande de menu personnalisé, ajoutez si
   
 #### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Pour vérifier la disponibilité d’un raccourci clavier  
   
-1.  Dans le **Outils / Options / environnement** fenêtre, sélectionnez **clavier**.  
+1. Dans le **Outils / Options / environnement** fenêtre, sélectionnez **clavier**.  
   
-2.  Assurez-vous que l’option **utiliser un nouveau raccourci dans** a la valeur **Global**.  
+2. Assurez-vous que l’option **utiliser un nouveau raccourci dans** a la valeur **Global**.  
   
-3.  Dans le **appuyez sur les touches de raccourci** , tapez le raccourci clavier que vous souhaitez utiliser.  
+3. Dans le **appuyez sur les touches de raccourci** , tapez le raccourci clavier que vous souhaitez utiliser.  
   
-     Si le raccourci est déjà utilisé dans Visual Studio, le **raccourci actuellement utilisé par** zone affiche la commande de raccourci appelle actuellement.  
+    Si le raccourci est déjà utilisé dans Visual Studio, le **raccourci actuellement utilisé par** zone affiche la commande de raccourci appelle actuellement.  
   
-4.  Essayez différentes combinaisons de touches jusqu'à ce que vous trouvez un qui n’est pas mappé.  
+4. Essayez différentes combinaisons de touches jusqu'à ce que vous trouvez un qui n’est pas mappé.  
   
-    > [!NOTE]
-    >  Raccourcis clavier que vous utilisent ALT peuvent ouvrir un menu et n’exécute pas directement une commande. Par conséquent, le **raccourci actuellement utilisé par** zone peut être vide lorsque vous tapez un raccourci qui inclut ALT. Vous pouvez vérifier que le raccourci ne s’ouvre pas un menu en fermant le **Options** boîte de dialogue et en appuyant sur les clés.  
+   > [!NOTE]
+   >  Raccourcis clavier que vous utilisent ALT peuvent ouvrir un menu et n’exécute pas directement une commande. Par conséquent, le **raccourci actuellement utilisé par** zone peut être vide lorsque vous tapez un raccourci qui inclut ALT. Vous pouvez vérifier que le raccourci ne s’ouvre pas un menu en fermant le **Options** boîte de dialogue et en appuyant sur les clés.  
   
- La procédure suivante suppose que vous disposez d’un VSPackage existant avec une commande de menu. Si vous avez besoin d’aide pour y parvenir, jetez un coup de œil à [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+   La procédure suivante suppose que vous disposez d’un VSPackage existant avec une commande de menu. Si vous avez besoin d’aide pour y parvenir, jetez un coup de œil à [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 #### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Pour affecter un raccourci clavier à une commande  
   
-1.  Ouvrez le fichier .vsct pour votre package.  
+1. Ouvrez le fichier .vsct pour votre package.  
   
-2.  Créer un vide `<KeyBindings>` section après le `<Commands>` si elle n’est pas déjà présent.  
+2. Créer un vide `<KeyBindings>` section après le `<Commands>` si elle n’est pas déjà présent.  
   
-    > [!WARNING]
-    >  Pour plus d’informations sur les combinaisons de touches, consultez [Keybinding](../extensibility/keybinding-element.md).  
+   > [!WARNING]
+   >  Pour plus d’informations sur les combinaisons de touches, consultez [Keybinding](../extensibility/keybinding-element.md).  
   
-     Dans le `<KeyBindings>` section, créez un `<KeyBinding>` entrée.  
+    Dans le `<KeyBindings>` section, créez un `<KeyBinding>` entrée.  
   
-     Définir le `guid` et `id` attributs à ceux de la commande que vous souhaitez appeler.  
+    Définir le `guid` et `id` attributs à ceux de la commande que vous souhaitez appeler.  
   
-     Définir le `mod1` attribut **contrôle**, **Alt**, ou **MAJ**.  
+    Définir le `mod1` attribut **contrôle**, **Alt**, ou **MAJ**.  
   
-     La section de combinaisons de touches doit ressembler à ceci :  
+    La section de combinaisons de touches doit ressembler à ceci :  
   
-    ```xml  
-    <KeyBindings>  
-        <KeyBinding guid="<name of command set>" id="<name of command id>"  
-            editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
-    </KeyBindings>  
+   ```xml  
+   <KeyBindings>  
+       <KeyBinding guid="<name of command set>" id="<name of command id>"  
+           editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
+   </KeyBindings>  
   
-    ```  
+   ```  
   
- Si votre raccourci clavier nécessite plus de deux clés, définissez le `mod2` et `key2` attributs.  
+   Si votre raccourci clavier nécessite plus de deux clés, définissez le `mod2` et `key2` attributs.  
   
- Dans la plupart des situations, **MAJ** ne doit pas être utilisé sans un modificateur deuxième car en appuyant sur déjà entraîne la plupart des touches d’alphanumériques à taper une lettre majuscule ou un symbole.  
+   Dans la plupart des situations, **MAJ** ne doit pas être utilisé sans un modificateur deuxième car en appuyant sur déjà entraîne la plupart des touches d’alphanumériques à taper une lettre majuscule ou un symbole.  
   
- Codes de touche virtuelle vous permettent d’accéder à des touches spéciales qui n’ont pas un caractère qui s’y rapportent, par exemple, les touches de fonction et le **retour arrière** clé. Pour plus d’informations, consultez [Codes de touche virtuelle](http://go.microsoft.com/fwlink/?LinkID=105932).  
+   Codes de touche virtuelle vous permettent d’accéder à des touches spéciales qui n’ont pas un caractère qui s’y rapportent, par exemple, les touches de fonction et le **retour arrière** clé. Pour plus d’informations, consultez [Codes de touche virtuelle](http://go.microsoft.com/fwlink/?LinkID=105932).  
   
- Pour rendre la commande disponible dans Visual Studio éditeur, définissez le `editor` attribut `guidVSStd97`.  
+   Pour rendre la commande disponible dans Visual Studio éditeur, définissez le `editor` attribut `guidVSStd97`.  
   
- Pour rendre la commande disponible uniquement dans un éditeur personnalisé, définissez la `editor` nom à l’attribut de l’éditeur personnalisé qui a été généré par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de Package lorsque vous avez créé le package Visual Studio qui inclut l’éditeur personnalisé. La valeur du nom, cherchez dans le `<Symbols>` section pour un `<GuidSymbol>` nœud dont `name` attribut se termine par «`editorfactory`. » Il s’agit du nom de l’éditeur personnalisé.  
+   Pour rendre la commande disponible uniquement dans un éditeur personnalisé, définissez la `editor` nom à l’attribut de l’éditeur personnalisé qui a été généré par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de Package lorsque vous avez créé le package Visual Studio qui inclut l’éditeur personnalisé. La valeur du nom, cherchez dans le `<Symbols>` section pour un `<GuidSymbol>` nœud dont `name` attribut se termine par «`editorfactory`. » Il s’agit du nom de l’éditeur personnalisé.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple lie le raccourci clavier CTRL + ALT + C à une commande nommée `cmdidMyCommand` dans un package nommé `MyPackage`.  

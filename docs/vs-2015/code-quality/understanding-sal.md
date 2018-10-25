@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be3d54921f7bc3a74c858340f28b68b03497939a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874278"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ void * memcpy(
   
  La documentation contient deux éléments d’information qui suggèrent que votre code doit conserver certaines propriétés pour assurer l’exactitude du programme :  
   
--   `memcpy` copie le `count` d’octets à partir de la mémoire tampon source à la mémoire tampon de destination.  
+- `memcpy` copie le `count` d’octets à partir de la mémoire tampon source à la mémoire tampon de destination.  
   
--   La mémoire tampon de destination doit être au moins aussi grande que la mémoire tampon source.  
+- La mémoire tampon de destination doit être au moins aussi grande que la mémoire tampon source.  
   
- Toutefois, le compilateur ne peut pas lire la documentation ou les commentaires informelles. Il ne sait pas qu’il existe une relation entre deux mémoires tampons et `count`, et il également ne peut pas efficacement deviner à propos d’une relation. SAL peut fournir plus d’explications sur les propriétés et l’implémentation de la fonction, comme illustré ici :  
+  Toutefois, le compilateur ne peut pas lire la documentation ou les commentaires informelles. Il ne sait pas qu’il existe une relation entre deux mémoires tampons et `count`, et il également ne peut pas efficacement deviner à propos d’une relation. SAL peut fournir plus d’explications sur les propriétés et l’implémentation de la fonction, comme illustré ici :  
   
 ```cpp  
   
@@ -117,16 +117,16 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Pour utiliser les outils d’analyse de code de Visual Studio et SAL  
   
-1.  Dans Visual Studio, ouvrez un projet C++ qui contient les annotations SAL.  
+1. Dans Visual Studio, ouvrez un projet C++ qui contient les annotations SAL.  
   
-2.  Dans la barre de menus, choisissez **Build**, **exécuter l’analyse du Code sur la Solution**.  
+2. Dans la barre de menus, choisissez **Build**, **exécuter l’analyse du Code sur la Solution**.  
   
-     Envisagez le _In\_ exemple dans cette section. Si vous exécutez l’analyse du code sur celui-ci, cet avertissement s’affiche :  
+    Prendre en compte la \_dans\_ exemple dans cette section. Si vous exécutez l’analyse du code sur celui-ci, cet avertissement s’affiche :  
   
-    > **C6387 Valeur de paramètre non valide**   
-    > « Que » peut être '0' : Ceci n’est pas conforme à la spécification de la fonction 'InCallee'.  
+   > **C6387 Valeur de paramètre non valide**   
+   > « Que » peut être '0' : Ceci n’est pas conforme à la spécification de la fonction 'InCallee'.  
   
-### <a name="example-the-in-annotation"></a>Exemple : Le _In\_ Annotation  
+### <a name="example-the-in-annotation"></a>Exemple : Le \_dans\_ Annotation  
  Le `_In_` annotation indique que :  
   
 -   Le paramètre doit être valide et ne sera pas modifié.  
@@ -164,7 +164,7 @@ void BadInCaller()
   
  Si vous utilisez Visual Studio Code Analysis sur cet exemple, il valide le fait que les appelants passer un pointeur non Null à une mémoire tampon initialisé pour `pInt`. Dans ce cas, `pInt` pointeur ne peut pas être NULL.  
   
-### <a name="example-the-inopt-annotation"></a>Exemple : Le _In_opt\_ Annotation  
+### <a name="example-the-inopt-annotation"></a>Exemple : Le \_In_opt\_ Annotation  
  `_In_opt_` est identique à `_In_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
@@ -192,7 +192,7 @@ void InOptCaller()
   
  Analyse du Code Visual Studio valide le fait que la fonction vérifie les valeurs NULL avant d’accéder à la mémoire tampon.  
   
-### <a name="example-the-out-annotation"></a>Exemple : Le _Out\_ Annotation  
+### <a name="example-the-out-annotation"></a>Exemple : Le \_Out\_ Annotation  
  `_Out_` prend en charge un scénario courant dans lequel un pointeur non NULL qui pointe vers une mémoire tampon d’élément est transmis et la fonction initialise l’élément. L’appelant ne possède pas d’initialiser la mémoire tampon avant l’appel ; la fonction appelée promet d’initialiser avant de retourner.  
   
 ```cpp  
@@ -219,7 +219,7 @@ void OutCaller()
   
  L’outil analyse de Code Visual Studio valide le fait que l’appelant passe un pointeur non NULL dans une mémoire tampon pour `pInt` et que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-outopt-annotation"></a>Exemple : Le _Out_opt\_ Annotation  
+### <a name="example-the-outopt-annotation"></a>Exemple : Le \_Out_opt\_ Annotation  
  `_Out_opt_` est identique à `_Out_`, sauf que le paramètre ne peut pas être NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
@@ -247,7 +247,7 @@ void OutOptCaller()
   
  Analyse du Code Visual Studio valide le fait que cette fonction vérifie les valeurs NULL avant `pInt` est déréférencé et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-inout-annotation"></a>Exemple : Le _Inout\_ Annotation  
+### <a name="example-the-inout-annotation"></a>Exemple : Le \_Inout\_ Annotation  
  `_Inout_` est utilisé pour annoter un paramètre de pointeur qui peut être modifié par la fonction. Le pointeur doit pointer vers les données initialisées valides avant l’appel, et même si elle est modifiée, elle doit toujours avoir une valeur valide en retour. L’annotation Spécifie que la fonction peut librement lire et écrire dans la mémoire tampon d’un élément. L’appelant doit fournir la mémoire tampon et l’initialiser.  
   
 > [!NOTE]
@@ -279,7 +279,7 @@ void BadInOutCaller()
   
  Analyse du Code Visual Studio valide le fait que les appelants passer un pointeur non NULL à une mémoire tampon initialisé pour `pInt`et que, avant le retour, `pInt` est toujours non NULL et la mémoire tampon est initialisée.  
   
-### <a name="example-the-inoutopt-annotation"></a>Exemple : Le _Inout_opt\_ Annotation  
+### <a name="example-the-inoutopt-annotation"></a>Exemple : Le \_Inout_opt\_ Annotation  
  `_Inout_opt_` est identique à `_Inout_`, sauf que le paramètre d’entrée est autorisé à avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.  
   
 ```cpp  
@@ -309,7 +309,7 @@ void InOutOptCaller()
   
  Analyse du Code Visual Studio valide le fait que cette fonction vérifie les valeurs NULL avant d’accéder à la mémoire tampon et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-outptr-annotation"></a>Exemple : Le _Outptr\_ Annotation  
+### <a name="example-the-outptr-annotation"></a>Exemple : Le \_Outptr\_ Annotation  
  `_Outptr_` est utilisé pour annoter un paramètre destiné à retourner un pointeur.  Le paramètre lui-même ne doit pas être NULL et la fonction appelée retourne un pointeur non NULL qu’il contient et ce pointeur pointe vers les données initialisées.  
   
 ```cpp  
@@ -340,7 +340,7 @@ void OutPtrCaller()
   
  Analyse du Code Visual Studio valide le fait que l’appelant passe un pointeur non NULL `*pInt`, et que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-outptropt-annotation"></a>Exemple : Le _Outptr_opt\_ Annotation  
+### <a name="example-the-outptropt-annotation"></a>Exemple : Le \_Outptr_opt\_ Annotation  
  `_Outptr_opt_` est identique à `_Outptr_`, sauf que le paramètre est facultatif, l’appelant peut passer un pointeur NULL pour le paramètre.  
   
 ```cpp  
@@ -373,7 +373,7 @@ void OutPtrOptCaller()
   
  Analyse du Code Visual Studio valide le fait que cette fonction vérifie les valeurs NULL avant `*pInt` est déréférencé, et que la mémoire tampon est initialisée par la fonction avant de retourner.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Exemple : Le _Success\_ Annotation en combinaison avec _Out\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Exemple : Le \_réussite\_ Annotation en association avec \_Out\_  
  Annotations peuvent être appliquées à la plupart des objets.  En particulier, vous pouvez annoter une fonction entière.  L’une des caractéristiques d’une fonction plus évidents est qu’elle peut réussir ou échouer. Mais comme l’association entre une mémoire tampon et sa taille, C/C++ ne peut pas exprimer fonction réussite ou l’échec. À l’aide de la `_Success_` annotation, que vous pouvez déterminer la réussite d’une fonction ressemble.  Le paramètre à la `_Success_` annotation est simplement une expression que lorsqu’il est true indique que la fonction a réussi. L’expression peut être tout ce que l’analyseur d’annotation peut gérer. Les effets des annotations après le retour de la fonction sont appliquent uniquement lorsque la fonction réussit. Cet exemple montre comment `_Success_` interagit avec `_Out_` adoptent l’attitude. Vous pouvez utiliser le mot clé `return` pour représenter la valeur de retour.  
   
 ```cpp  
@@ -403,15 +403,15 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ### <a name="when-do-i-annotate"></a>Lorsque annoter  
  Voici quelques indications :  
   
--   Annoter tous les paramètres de pointeur.  
+- Annoter tous les paramètres de pointeur.  
   
--   Annoter des annotations de la plage de valeurs afin que l’analyse du Code peut garantir la sécurité des mémoires tampons et pointeur.  
+- Annoter des annotations de la plage de valeurs afin que l’analyse du Code peut garantir la sécurité des mémoires tampons et pointeur.  
   
--   Annoter des règles de verrouillage et des effets secondaires du verrouillage. Pour plus d’informations, consultez [comportement de verrouillage annotant](../code-quality/annotating-locking-behavior.md).  
+- Annoter des règles de verrouillage et des effets secondaires du verrouillage. Pour plus d’informations, consultez [comportement de verrouillage annotant](../code-quality/annotating-locking-behavior.md).  
   
--   Annoter les propriétés du pilote et autres propriétés spécifiques à un domaine.  
+- Annoter les propriétés du pilote et autres propriétés spécifiques à un domaine.  
   
- Ou vous pouvez annoter tous les paramètres pour clarifier votre intention tout au long de rendre et pour faciliter le travail vérifier que les annotations ont été effectuées.  
+  Ou vous pouvez annoter tous les paramètres pour clarifier votre intention tout au long de rendre et pour faciliter le travail vérifier que les annotations ont été effectuées.  
   
 ## <a name="related-resources"></a>Ressources connexes  
  [Blog de l’équipe analyse du code](http://go.microsoft.com/fwlink/p/?LinkId=251197)  

@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_source | Documents Microsoft
+title: IDiaInjectedSource::get_source | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331086fff33f247ab030e3736e1e598c3af477d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2966405dfe3bb7e6134f5ef35e55b30ef6c66c6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909902"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
 Récupère les octets de code source.  
@@ -39,10 +39,10 @@ HRESULT get_source (
  [in] Le nombre d’octets qui représente la taille du tampon de données.  
   
  `pcbData`  
- [out] Retourne le nombre d’octets qui représente les octets retourné. Si `data` est `NULL`, puis `pcbData` le nombre total d’octets de données n’est disponible.  
+ [out] Retourne le nombre d’octets qui représente les octets retourné. Si `data` est `NULL`, puis `pcbData` est le nombre total d’octets de données disponibles.  
   
  `data[]`  
- [out] Une mémoire tampon qui doit être remplie avec les octets de la source.  
+ [out] Une mémoire tampon à remplir avec les octets source.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  

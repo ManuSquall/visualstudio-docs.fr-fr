@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832886"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Restituer variante de Format cible de 16 bpp
 Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de rendu et toutes les mémoires tampons d'arrière-plan.  
@@ -43,9 +43,9 @@ Les applications qui font partie d’une chaîne de permutation ont un format de
 2. Copiez la cible de rendu dans la chaîne de permutation quadravision en dessinant un quadruple plein écran avec la cible de rendu en tant que votre texture source.
 3. Appeler Present dans votre chaîne de permutation.
 
- Si cette stratégie permet d’économiser davantage de bande passante que consommée en copiant la cible de rendu dans la chaîne de permutation mémoire tampon d’arrière-plan, les performances de rendu est améliorée.
+   Si cette stratégie permet d’économiser davantage de bande passante que consommée en copiant la cible de rendu dans la chaîne de permutation mémoire tampon d’arrière-plan, les performances de rendu est améliorée.
 
- Les architectures GPU qui utilisent des techniques de rendu en mosaïque peuvent voir les avantages de performance significatifs à l’aide d’un format de mémoire tampon de trame de 16 bpp. Cette amélioration est, car une plus grande partie de la mémoire tampon de trame peut tenir dans le cache des tampons frame local de chaque mosaïque. Les architectures de rendu en mosaïque sont parfois rencontrées dans les GPU des combinés mobiles et des tablettes ; elles sont peu courantes en dehors de cette niche.  
+   Les architectures GPU qui utilisent des techniques de rendu en mosaïque peuvent voir les avantages de performance significatifs à l’aide d’un format de mémoire tampon de trame de 16 bpp. Cette amélioration est, car une plus grande partie de la mémoire tampon de trame peut tenir dans le cache des tampons frame local de chaque mosaïque. Les architectures de rendu en mosaïque sont parfois rencontrées dans les GPU des combinés mobiles et des tablettes ; elles sont peu courantes en dehors de cette niche.  
   
 ## <a name="remarks"></a>Notes  
  Le format cible de rendu est réinitialisé en DXGI_FORMAT_B5G6R5_UNORM à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une cible de rendu. Plus précisément, le format est substitué quand l'objet D3D11_TEXTURE2D_DESC passé dans pDesc décrit une cible de rendu ; à savoir :  

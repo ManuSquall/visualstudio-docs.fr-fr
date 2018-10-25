@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onReplaceText | Documents Microsoft
+title: IDebugDocumentTextEvents2::onReplaceText | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d66eaeb8acb62555bc9a980c2280f763d30552fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 526830c1070622ff1a15459791da1709e204c814
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813438"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
-Notifie le package de débogage que le texte a été remplacé dans le document.  
+Informe le package de débogage que le texte a été remplacé dans le document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ int onReplaceText(
   
 #### <a name="parameters"></a>Paramètres  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indique où le texte a été remplacé.  
+ [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indique où le texte a été remplacé.  
   
  `dwNumToReplace`  
  [in] Spécifie le nombre de caractères de texte qui ont été remplacés.  

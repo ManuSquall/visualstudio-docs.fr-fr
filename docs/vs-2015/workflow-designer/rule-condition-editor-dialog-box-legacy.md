@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838541"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Éditeur de conditions de règle, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **éditeur de conditions de règle** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Créer et de modifier les conditions de règle déclarative à l’aide de la **éditeur de conditions de règle** boîte de dialogue. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- Vous accédez à la **éditeur de conditions de règle** boîte de dialogue à l’aide de la [sélectionner une boîte de dialogue Condition (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+  Vous accédez à la **éditeur de conditions de règle** boîte de dialogue à l’aide de la [sélectionner une boîte de dialogue Condition (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
- Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **éditeur de conditions de règle** boîte de dialogue.  
+  Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **éditeur de conditions de règle** boîte de dialogue.  
   
 |Élément d'interface utilisateur|Description|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ Cette rubrique décrit comment utiliser le **éditeur de conditions de règle** 
   
  L'éditeur de conditions de règle prend en charge les opérateurs suivants :  
   
--   Opérateurs relationnels: ==, =, !=  
+- Opérateurs relationnels: ==, =, !=  
   
--   Opérateurs de comparaison : <, \<=, >, > =  
+- Opérateurs de comparaison : <, \<=, >, > =  
   
--   Opérateurs arithmétiques: +, - , *, /, MOD  
+- Opérateurs arithmétiques: +, - , *, /, MOD  
   
--   Opérateurs logiques : et, & &, OR, &#124; &#124;, NOT, !  
+- Opérateurs logiques : et, & &, OR, &#124; &#124;, NOT, !  
   
--   Opérateurs au niveau du bit : &,&#124;  
+- Opérateurs au niveau du bit : &,&#124;  
   
- La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
+  La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
   
- L'éditeur de conditions de règle prend en charge les opérateurs numériques suivants :  
+  L'éditeur de conditions de règle prend en charge les opérateurs numériques suivants :  
   
- this.i == 1D (la résolution est 1.0)  
+  this.i == 1D (la résolution est 1.0)  
   
- this.i == 1E1 (la résolution est 10.0)  
+  this.i == 1E1 (la résolution est 10.0)  
   
- this.i == 1L (la résolution est un entier long)  
+  this.i == 1L (la résolution est un entier long)  
   
- this.i == 1M (la résolution est un nombre décimal)  
+  this.i == 1M (la résolution est un nombre décimal)  
   
- this.i == 1F (la résolution est un nombre unique)  
+  this.i == 1F (la résolution est un nombre unique)  
   
- this.i == 1U (la résolution est un unsigned int)  
+  this.i == 1U (la résolution est un unsigned int)  
   
- Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009).  
+  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896326"
 ---
 # <a name="xml-editor"></a>Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236871"
   
 L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio et inclut la prise en charge des langages XML. L'éditeur XML intègre les fonctions suivantes :  
   
--   Vérification de la syntaxe XML 1.0  
+- Vérification de la syntaxe XML 1.0  
   
--   Validation de schéma en cours de frappe  
+- Validation de schéma en cours de frappe  
   
--   Prise en charge des extraits XML, notamment des extraits générés par schéma  
+- Prise en charge des extraits XML, notamment des extraits générés par schéma  
   
--   Prise en charge des DTD (définition de type de document)  
+- Prise en charge des DTD (définition de type de document)  
   
--   Prise en charge des schémas de langage XSD (XML Schema definition)  
+- Prise en charge des schémas de langage XSD (XML Schema definition)  
   
--   Création d'un schéma XML à partir d'un document d'instance XML  
+- Création d'un schéma XML à partir d'un document d'instance XML  
   
--   Conversion d'une DTD ou d'un schéma XDR (XML-Data Reduced) en un schéma XML  
+- Conversion d'une DTD ou d'un schéma XDR (XML-Data Reduced) en un schéma XML  
   
--   Vérification de la syntaxe XSLT 1.0  
+- Vérification de la syntaxe XSLT 1.0  
   
--   Mise en plan des documents permettant de développer et réduire les éléments  
+- Mise en plan des documents permettant de développer et réduire les éléments  
   
--   Intégration avec le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Cela fournit une vue hiérarchique des schémas XML.  
+- Intégration avec le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Cela fournit une vue hiérarchique des schémas XML.  
   
- L'éditeur XML est invoqué pour les extensions de fichier les plus connues, telles que .xml, .xsd, .xsl et .config. Il est également appelé à l’ouverture d’un fichier dont l’extension est inconnue mais qui contient du XML. Vous pouvez également ouvrir n’importe quel fichier avec l’éditeur XML à l’aide de la **ouvrir avec** option et en sélectionnant l’éditeur XML dans la liste.  
+  L'éditeur XML est invoqué pour les extensions de fichier les plus connues, telles que .xml, .xsd, .xsl et .config. Il est également appelé à l’ouverture d’un fichier dont l’extension est inconnue mais qui contient du XML. Vous pouvez également ouvrir n’importe quel fichier avec l’éditeur XML à l’aide de la **ouvrir avec** option et en sélectionnant l’éditeur XML dans la liste.  
   
 ## <a name="express-editions"></a>Versions Express Edition  
  Les fonctions suivantes de l'éditeur XML ne sont pas disponibles dans les versions Visual Studio Express Edition :  

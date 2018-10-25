@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890671"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Étendre les outils SharePoint dans Visual Studio
   Les outils SharePoint dans Visual Studio répondent aux exigences de nombreux scénarios de développement d’application. Toutefois, vous pouvez découvrir les cas où ils ne fournissent pas de fonctionnalité nécessitant vous ou autres développeurs. Dans ce cas, vous pouvez étendre les outils SharePoint pour créer les fonctionnalités dont vous avez besoin.
@@ -38,11 +38,11 @@ ms.locfileid: "42625922"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs
  Dans Visual Studio, vous pouvez utiliser la **connexions SharePoint** nœud dans le **Explorateur de serveurs** fenêtre pour afficher un grand nombre des composants d’un ou plusieurs sites SharePoint locaux dans une arborescence hiérarchique. Vous pouvez également étendre le **connexions SharePoint** nœud comme suit :
 
--   En ajoutant vos propres nœuds. Cela est utile si vous souhaitez afficher les composants de sites SharePoint qui ne sont pas affichés par défaut.
+- En ajoutant vos propres nœuds. Cela est utile si vous souhaitez afficher les composants de sites SharePoint qui ne sont pas affichés par défaut.
 
--   En étendant des nœuds existants. Par exemple, vous pouvez ajouter un nouveau nœud enfant à un nœud existant, ou vous pouvez ajouter un élément de menu contextuel à un nœud et effectuer des tâches lorsqu’un développeur clique sur l’élément de menu.
+- En étendant des nœuds existants. Par exemple, vous pouvez ajouter un nouveau nœud enfant à un nœud existant, ou vous pouvez ajouter un élément de menu contextuel à un nœud et effectuer des tâches lorsqu’un développeur clique sur l’élément de menu.
 
- Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Exigences du développement d’ordinateur
  Pour créer des extensions pour les outils SharePoint, votre ordinateur de développement doit respecter les mêmes exigences pour la création de solutions SharePoint dans Visual Studio.

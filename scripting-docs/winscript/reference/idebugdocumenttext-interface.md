@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText (Interface) | Documents Microsoft
+title: Interface IDebugDocumentText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9522d1075cd796fb69f6abbc42adc2706a817fed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 763678b08c22fe34ec6ffebbe670fb8b50af6576
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843455"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText, interface
-Fournit l’accès à une version texte du document de débogage. Cette interface utilise les conventions suivantes :  
+Fournit l’accès à une version « texte uniquement » du document de débogage. Cette interface utilise les conventions suivantes :  
   
--   Les positions de caractère et les numéros de ligne sont de base zéro.  
+- Les positions de caractère et les numéros de ligne sont basés sur zéro.  
   
--   Positions de caractère représentent des offsets de caractères ; elles ne représentent des octets ou les décalages de word. Pour Win32, une position de caractère est un offset de Unicode.  
+- Positions de caractère représentent des offsets de caractères ; ils ne représentent les octets et les décalages de mots. Pour Win32, une position de caractère est un décalage Unicode.  
   
- Outre les méthodes héritées de `IDebugDocument`, le `IDebugDocumentText` interface expose les méthodes suivantes.  
+  Outre les méthodes héritées de `IDebugDocument`, le `IDebugDocumentText` interface expose les méthodes suivantes.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
@@ -37,7 +37,7 @@ Fournit l’accès à une version texte du document de débogage. Cette interfac
 |[IDebugDocumentText::GetDocumentAttributes](../../winscript/reference/idebugdocumenttext-getdocumentattributes.md)|Retourne les attributs du document.|  
 |[IDebugDocumentText::GetSize](../../winscript/reference/idebugdocumenttext-getsize.md)|Retourne le nombre de lignes et le nombre de caractères dans le document.|  
 |[IDebugDocumentText::GetPositionOfLine](../../winscript/reference/idebugdocumenttext-getpositionofline.md)|Retourne la position de caractère correspondant au premier caractère d’une ligne.|  
-|[IDebugDocumentText::GetLineOfPosition](../../winscript/reference/idebugdocumenttext-getlineofposition.md)|Retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère spécifiée.|  
-|[IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)|Récupère les caractères et/ou les attributs de caractères associés à une plage de la position de caractère.|  
+|[IDebugDocumentText::GetLineOfPosition](../../winscript/reference/idebugdocumenttext-getlineofposition.md)|Retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère donnée.|  
+|[IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)|Récupère les caractères et/ou les attributs de caractère associés à une plage de la position de caractère.|  
 |[IDebugDocumentText::GetPositionOfContext](../../winscript/reference/idebugdocumenttext-getpositionofcontext.md)|Retourne la plage de la position de caractère correspondant à un contexte de document.|  
 |[IDebugDocumentText::GetContextOfPosition](../../winscript/reference/idebugdocumenttext-getcontextofposition.md)|Crée un objet de contexte de document correspondant à la plage de position de caractère fourni.|

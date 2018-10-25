@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828422"
 ---
 # <a name="vspackage-registration"></a>Inscription de VSPackage
 Les VSPackages doivent informer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qu’ils sont installés et qu’il doivent être chargé. Ce processus s’effectue en écrivant des informations dans le Registre. C’est une tâche classique d’un programme d’installation.  
@@ -48,15 +48,15 @@ Les VSPackages doivent informer [!INCLUDE[vsprvs](../../code-quality/includes/vs
   
  Lors de la bonne en théorie, l’inscription automatique a plusieurs défauts qui ne sont pas adaptés pour l’installation de package Visual Studio :  
   
--   Prise en charge correctement de l’installation, désinstallation, restauration de l’installation et la désinstallation rollback vous oblige à créer quatre actions personnalisées pour chaque VSPackage managé qui s’inscrit automatiquement en appelant RegPkg.  
+- Prise en charge correctement de l’installation, désinstallation, restauration de l’installation et la désinstallation rollback vous oblige à créer quatre actions personnalisées pour chaque VSPackage managé qui s’inscrit automatiquement en appelant RegPkg.  
   
--   Votre approche de prise en charge côte à côte peut nécessiter que vous créez quatre actions personnalisées qui appellent RegSvr32 ou RegPkg pour chaque version prise en charge de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+- Votre approche de prise en charge côte à côte peut nécessiter que vous créez quatre actions personnalisées qui appellent RegSvr32 ou RegPkg pour chaque version prise en charge de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   Une installation avec modules inscrits automatiquement ne peut pas être restaurée en toute sécurité car il n’existe aucun moyen de déterminer si les clés inscrits automatiquement sont utilisées par une autre fonctionnalité ou une application.  
+- Une installation avec modules inscrits automatiquement ne peut pas être restaurée en toute sécurité car il n’existe aucun moyen de déterminer si les clés inscrits automatiquement sont utilisées par une autre fonctionnalité ou une application.  
   
--   DLL auto-enregistrer lient parfois à des DLL auxiliaires qui ne sont pas présents ou sont une mauvaise version. En revanche, le programme d’installation de Windows peuvent inscrire des DLL à l’aide de tables Registre sans dépendance sur l’état actuel du système.  
+- DLL auto-enregistrer lient parfois à des DLL auxiliaires qui ne sont pas présents ou sont une mauvaise version. En revanche, le programme d’installation de Windows peuvent inscrire des DLL à l’aide de tables Registre sans dépendance sur l’état actuel du système.  
   
--   Code d’auto-inscription peut être refusé l’accès aux ressources réseau, telles que des bibliothèques de types, si un composant est à la fois spécifié en tant que l’exécution à partir de la source et est répertorié dans la table SelReg. Cela peut entraîner l’installation du composant échoue pendant une installation administrative.  
+- Code d’auto-inscription peut être refusé l’accès aux ressources réseau, telles que des bibliothèques de types, si un composant est à la fois spécifié en tant que l’exécution à partir de la source et est répertorié dans la table SelReg. Cela peut entraîner l’installation du composant échoue pendant une installation administrative.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Programme d’installation de Windows](/windows/desktop/Msi/windows-installer-portal)   

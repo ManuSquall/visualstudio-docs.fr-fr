@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: bc362c950b919a4f9f663b5bd3ce1a2f0cbfb00a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906849"
 ---
 # <a name="code-snippets"></a>Extraits de code 
 
@@ -28,11 +28,11 @@ Il existe différentes façons d’ajouter des extraits de code, dont certaines 
 
 * **Boîte à outils** : utilisez le panneau Boîte à outils pour afficher une liste de tous les extraits de code. Faites glisser n’importe quel modèle depuis la boîte à outils à la position correcte dans le code source :
 
- ![Extraits de code dans la boîte à outils](media/source-editor-image14.png)
+  ![Extraits de code dans la boîte à outils](media/source-editor-image14.png)
 
 * **Commande Insérer des modèles** : il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences... > Combinaison de touches** et recherchez `template`. Ceci permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur **Appliquer** :
 
- ![Commande Insérer un modèle](media/source-editor-image15.png)
+  ![Commande Insérer un modèle](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Création d’un modèle
 

@@ -16,12 +16,12 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eacde73ded992eb72396cdb5f84dc01b145cf874
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949264"
 ---
 # <a name="command-design"></a>Création de commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,15 +48,15 @@ Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où il 
 ### <a name="command-organization"></a>Organisation de commande  
  L’environnement positionne les commandes par groupe, de priorité et de menu.  
   
--   Les groupes sont des collections logiques de commandes associées, par exemple, le **couper**, **copie**, et **coller** groupe de commandes. Les groupes sont les commandes qui s’affichent dans les menus.  
+- Les groupes sont des collections logiques de commandes associées, par exemple, le **couper**, **copie**, et **coller** groupe de commandes. Les groupes sont les commandes qui s’affichent dans les menus.  
   
--   Priorité détermine l’ordre dans lequel les commandes individuelles dans un groupe apparaissent dans le menu.  
+- Priorité détermine l’ordre dans lequel les commandes individuelles dans un groupe apparaissent dans le menu.  
   
--   Menus agissent comme des conteneurs pour les groupes.  
+- Menus agissent comme des conteneurs pour les groupes.  
   
- L’environnement prédéfinit certaines commandes, les groupes et les menus. Pour plus d’informations, consultez [commande par défaut, le groupe et positionnement de la barre d’outils](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  L’environnement prédéfinit certaines commandes, les groupes et les menus. Pour plus d’informations, consultez [commande par défaut, le groupe et positionnement de la barre d’outils](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Une commande peut être attribuée à un groupe principal. Le groupe principal détermine la position de la commande dans la structure du menu principal et dans le **personnaliser** boîte de dialogue. Une commande peut apparaître dans plusieurs groupes ; par exemple, une commande peut être sur une barre d’outils dans le menu principal et dans un menu contextuel. Pour plus d’informations, consultez [comment VSPackages ajouter des éléments d’Interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Une commande peut être attribuée à un groupe principal. Le groupe principal détermine la position de la commande dans la structure du menu principal et dans le **personnaliser** boîte de dialogue. Une commande peut apparaître dans plusieurs groupes ; par exemple, une commande peut être sur une barre d’outils dans le menu principal et dans un menu contextuel. Pour plus d’informations, consultez [comment VSPackages ajouter des éléments d’Interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>routage des commandes  
  Le processus d’appel et le routage des commandes pour les VSPackages diffère du processus d’appel de méthodes sur des instances d’objet.  

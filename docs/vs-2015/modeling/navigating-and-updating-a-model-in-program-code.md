@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863163"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigation et mise à jour d'un modèle dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,46 +223,46 @@ using (Transaction t =
   
  Cet exemple illustre ces points essentiels sur la création d’un élément :  
   
--   Créer le nouvel élément dans une partition spécifique dans le Store. Pour les éléments de modèle et de relations, mais pas les formes, il s’agit généralement de la partition par défaut.  
+- Créer le nouvel élément dans une partition spécifique dans le Store. Pour les éléments de modèle et de relations, mais pas les formes, il s’agit généralement de la partition par défaut.  
   
--   Rendre la cible d’une relation d’incorporation. Dans la DslDefinition de cet exemple, chaque personne doit être la cible de relation FamilyTreeHasPeople d’incorporation. Pour ce faire, nous pouvons définir la propriété de rôle FamilyTreeModel de l’objet personne ou ajouter la personne à la propriété de rôle de personnes de l’objet FamilyTreeModel.  
+- Rendre la cible d’une relation d’incorporation. Dans la DslDefinition de cet exemple, chaque personne doit être la cible de relation FamilyTreeHasPeople d’incorporation. Pour ce faire, nous pouvons définir la propriété de rôle FamilyTreeModel de l’objet personne ou ajouter la personne à la propriété de rôle de personnes de l’objet FamilyTreeModel.  
   
--   Définir les propriétés d’un nouvel élément, en particulier la propriété pour laquelle `IsName` a la valeur true dans la DslDefinition. Cet indicateur marque la propriété qui sert à identifier l’élément de façon unique au sein de son propriétaire. Dans ce cas, la propriété Name a cet indicateur.  
+- Définir les propriétés d’un nouvel élément, en particulier la propriété pour laquelle `IsName` a la valeur true dans la DslDefinition. Cet indicateur marque la propriété qui sert à identifier l’élément de façon unique au sein de son propriétaire. Dans ce cas, la propriété Name a cet indicateur.  
   
--   La définition DSL de cette solution DSL doit avoir été chargée dans le Store. Si vous écrivez une extension comme une commande de menu, ce sera généralement déjà true. Dans d’autres cas, vous pouvez explicitement charger le modèle dans le Store, ou utiliser <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> pour le charger. Pour plus d’informations, consultez [Comment : ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- La définition DSL de cette solution DSL doit avoir été chargée dans le Store. Si vous écrivez une extension comme une commande de menu, ce sera généralement déjà true. Dans d’autres cas, vous pouvez explicitement charger le modèle dans le Store, ou utiliser <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> pour le charger. Pour plus d’informations, consultez [Comment : ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
- Lorsque vous créez un élément de cette façon, une forme est automatiquement créée (si la solution DSL possède un diagramme). Il apparaît dans un emplacement automatiquement affecté, avec d’autres fonctionnalités, la couleur et la forme par défaut. Si vous souhaitez contrôler où et comment la forme associée s’affiche, consultez [création d’un élément et sa forme](#merge).  
+  Lorsque vous créez un élément de cette façon, une forme est automatiquement créée (si la solution DSL possède un diagramme). Il apparaît dans un emplacement automatiquement affecté, avec d’autres fonctionnalités, la couleur et la forme par défaut. Si vous souhaitez contrôler où et comment la forme associée s’affiche, consultez [création d’un élément et sa forme](#merge).  
   
 ##  <a name="links"></a> Création de liens de relation  
  Il existe deux relations définies dans l’exemple de définition DSL. Chaque relation définit un *propriété de rôle* sur la classe à chaque extrémité de la relation.  
   
  Il existe trois façons dans lequel vous pouvez créer une instance d’une relation. Chacune de ces trois méthodes a le même effet :  
   
--   Définissez la propriété de l’acteur de rôle source. Exemple :  
+- Définissez la propriété de l’acteur de rôle source. Exemple :  
   
-    -   `familyTree.People.Add(edward);`  
+  -   `familyTree.People.Add(edward);`  
   
-    -   `edward.Parents.Add(henry);`  
+  -   `edward.Parents.Add(henry);`  
   
--   Définissez la propriété de l’acteur de rôle cible. Exemple :  
+- Définissez la propriété de l’acteur de rôle cible. Exemple :  
   
-    -   `edward.familyTreeModel = familyTree;`  
+  -   `edward.familyTreeModel = familyTree;`  
   
-         La multiplicité de ce rôle est `1..1`, donc nous attribuons la valeur.  
+       La multiplicité de ce rôle est `1..1`, donc nous attribuons la valeur.  
   
-    -   `henry.Children.Add(edward);`  
+  -   `henry.Children.Add(edward);`  
   
-         La multiplicité de ce rôle est `0..*`, de sorte que nous ajoutons à la collection.  
+       La multiplicité de ce rôle est `0..*`, de sorte que nous ajoutons à la collection.  
   
--   Construire explicitement une instance de la relation. Exemple :  
+- Construire explicitement une instance de la relation. Exemple :  
   
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
- La dernière méthode est utile si vous souhaitez définir des propriétés sur la relation proprement dite.  
+  La dernière méthode est utile si vous souhaitez définir des propriétés sur la relation proprement dite.  
   
- Lorsque vous créez un élément de cette façon, un connecteur sur le diagramme est automatiquement créé, mais il a une forme par défaut, la couleur et autres fonctionnalités. Pour contrôler la façon dont le connecteur associé est créé, consultez [création d’un élément et sa forme](#merge).  
+  Lorsque vous créez un élément de cette façon, un connecteur sur le diagramme est automatiquement créé, mais il a une forme par défaut, la couleur et autres fonctionnalités. Pour contrôler la façon dont le connecteur associé est créé, consultez [création d’un élément et sa forme](#merge).  
   
 ##  <a name="deleteelements"></a> La suppression d’éléments  
  Supprimer un élément en appelant `Delete()`:  
@@ -271,21 +271,21 @@ using (Transaction t =
   
  Cette opération supprimera également :  
   
--   Liens de relation vers et à partir de l’élément. Par exemple, `edward.Parents` ne contient plus de `henry`.  
+- Liens de relation vers et à partir de l’élément. Par exemple, `edward.Parents` ne contient plus de `henry`.  
   
--   Éléments à des rôles pour lesquels le `PropagatesDelete` indicateur a la valeur true. Par exemple, la forme qui affiche l’élément sera supprimée.  
+- Éléments à des rôles pour lesquels le `PropagatesDelete` indicateur a la valeur true. Par exemple, la forme qui affiche l’élément sera supprimée.  
   
- Par défaut, chaque relation d’incorporation a `PropagatesDelete` true au niveau du rôle cible. Suppression `henry` ne supprime pas le `familyTree`, mais `familyTree.Delete()` supprime tous les `Persons`. Pour plus d’informations, consultez [personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md).  
+  Par défaut, chaque relation d’incorporation a `PropagatesDelete` true au niveau du rôle cible. Suppression `henry` ne supprime pas le `familyTree`, mais `familyTree.Delete()` supprime tous les `Persons`. Pour plus d’informations, consultez [personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md).  
   
- Par défaut, `PropagatesDelete` n’est pas vrai pour les rôles de relations de référence.  
+  Par défaut, `PropagatesDelete` n’est pas vrai pour les rôles de relations de référence.  
   
- Vous pouvez provoquer les règles de suppression omettre les propagations spécifiques lorsque vous supprimez un objet. Cela est utile si vous remplacez un seul élément d’une autre. Vous fournissez le GUID d’un ou plusieurs rôles pour lesquels la suppression ne doit pas être propagée. Le GUID peut être obtenu à partir de la classe de relation :  
+  Vous pouvez provoquer les règles de suppression omettre les propagations spécifiques lorsque vous supprimez un objet. Cela est utile si vous remplacez un seul élément d’une autre. Vous fournissez le GUID d’un ou plusieurs rôles pour lesquels la suppression ne doit pas être propagée. Le GUID peut être obtenu à partir de la classe de relation :  
   
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
   
- (Cet exemple particulier n’a aucun effet, étant donné que `PropagatesDelete` est `false` pour les rôles de la `ParentsHaveChildren` relation.)  
+  (Cet exemple particulier n’a aucun effet, étant donné que `PropagatesDelete` est `false` pour les rôles de la `ParentsHaveChildren` relation.)  
   
- Dans certains cas, la suppression est interdite par l’existence d’un verrou, sur l’élément ou sur un élément qui serait supprimé par propagation. Vous pouvez utiliser `element.CanDelete()` pour vérifier si l’élément peut être supprimé.  
+  Dans certains cas, la suppression est interdite par l’existence d’un verrou, sur l’élément ou sur un élément qui serait supprimé par propagation. Vous pouvez utiliser `element.CanDelete()` pour vérifier si l’élément peut être supprimé.  
   
 ##  <a name="deletelinks"></a> Suppression des liens de relation  
  Vous pouvez supprimer un lien de relation en supprimant un élément à partir d’une propriété de rôle :  
@@ -467,11 +467,11 @@ FamilyTreeDiagram diagram =
   
  Cette méthode :  
   
--   Définit le nom, si vous avez affecté une propriété en tant que le nom d’élément.  
+- Définit le nom, si vous avez affecté une propriété en tant que le nom d’élément.  
   
--   Observe les Directives de fusion d’éléments que vous avez spécifié dans la définition DSL.  
+- Observe les Directives de fusion d’éléments que vous avez spécifié dans la définition DSL.  
   
- Cet exemple crée une forme à la position de la souris, lorsque l’utilisateur double-clique sur le diagramme. Dans la définition DSL pour cet exemple, le `FillColor` propriété du `ExampleShape` a été exposé.  
+  Cet exemple crée une forme à la position de la souris, lorsque l’utilisateur double-clique sur le diagramme. Dans la définition DSL pour cet exemple, le `FillColor` propriété du `ExampleShape` a été exposé.  
   
 ```  
   

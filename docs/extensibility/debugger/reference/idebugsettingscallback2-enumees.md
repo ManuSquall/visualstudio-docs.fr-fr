@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs | Documents Microsoft
+title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: add7f9b34119fb11938064598b213e26000ecb1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe4d3d2f2a3d76bbaec8c92c8053bac07e352389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812086"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Énumère les évaluateurs d’expression disponible étant donnés les identificateurs de langue et le fournisseur.  
+Énumère les évaluateurs d’expression disponible étant données les identificateurs de langue et le fournisseur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,13 +48,13 @@ public int EnumEEs(
  [in] Nombre d’éléments dans le `pceltEEs` mémoire tampon.  
   
  `rgguidLang`  
- [dans, out] Identificateur unique pour le langage de programmation.  
+ [in, out] Identificateur unique pour le langage de programmation.  
   
  `rgguidVendor`  
- [dans, out] Identificateur unique pour le fournisseur.  
+ [in, out] Identificateur unique pour le fournisseur.  
   
  `pceltEEs`  
- [dans, out] Tableau des évaluateurs d’expression.  
+ [in, out] Tableau des évaluateurs d’expression.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

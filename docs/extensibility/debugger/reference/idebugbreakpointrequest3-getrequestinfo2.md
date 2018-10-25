@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 | Documents Microsoft
+title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76a8db9c0b8bd64d41524b7fc3a419d8f6ec4d27
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0349ecb12d60018b09271efe5b988cc44585dc4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939668"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Cette méthode obtient les informations de demande de point d’arrêt qui décrit cette demande de point d’arrêt.  
@@ -43,7 +43,7 @@ int GetRequestInfo2(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] Une combinaison d’indicateurs à partir de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui détermine quels champs de `pBPRequestInfo` doivent être renseignés.  
+ [in] Une combinaison d’indicateurs de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui déterminent quels champs de `pBPRequestInfo` doivent être renseignés.  
   
  `bBPRequestInfo`  
  [out] Le [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure doit être renseigné.  

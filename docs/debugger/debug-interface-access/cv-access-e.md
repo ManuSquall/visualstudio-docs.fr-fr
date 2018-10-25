@@ -1,5 +1,5 @@
 ---
-title: CV_access_e | Documents Microsoft
+title: CV_access_e | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b10f8a98284fdec9e94043a4b827fab226d3aa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6de95d74b8d7edc3bde08437c3d018270758112
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878984"
 ---
 # <a name="cvaccesse"></a>CV_access_e
-Spécifie l’étendue de visibilité (niveau d’accès) des variables et fonctions membres.  
+Spécifie l’étendue de visibilité (niveau d’accès) des fonctions membres et des variables.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,15 +39,15 @@ typedef enum CV_access_e {
  Membre possède un accès privé.  
   
  CV_protected  
- Membre avec accès protégé.  
+ Membre possède un accès protégé.  
   
  CV_public  
  Membre possède un accès public.  
   
 ## <a name="remarks"></a>Notes  
- Le `friend` spécificateur d’accès n’est pas inclus ici, car il est généralement utilisée par les fonctions non membres qui ont accès aux éléments privés et protégés de la classe. Utilisez le [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) méthode pour rechercher des symboles avec `SymTagFriend` accès.  
+ Le `friend` spécificateur d’accès n’est pas inclus ici, car il est généralement utilisé par des fonctions non-membres qui ont accès à des éléments à la fois privés et protégés de la classe. Utilisez le [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) méthode pour rechercher des symboles avec `SymTagFriend` accès.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,5 +1,5 @@
 ---
-title: Interception des commandes du Service de langage hérité | Documents Microsoft
+title: Interception des commandes de Service de langage hérité | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f025e9dab6f93d87660a59421cbd778c92165a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 669d03043ad36ad1e96084cb4cc8833ab20f0998
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832855"
 ---
-# <a name="intercepting-legacy-language-service-commands"></a>Interception des commandes du Service de langage hérité
-Avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez avoir les commandes d’intercept de service de langage qui serait autrement en charge l’affichage de texte. Cela est utile pour le comportement spécifique au langage qui ne gère pas de l’affichage de texte. Vous pouvez intercepter ces commandes en ajoutant un ou plusieurs filtres de commande pour l’affichage de texte à partir de votre service de langage.  
+# <a name="intercepting-legacy-language-service-commands"></a>Interception des commandes du service de langage hérité
+Avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez avoir les commandes d’ordonnée à l’origine de service de langage qui prendrait autrement en charge l’affichage de texte. Cela est utile pour le comportement spécifique au langage qui ne gère pas de l’affichage de texte. Vous pouvez intercepter ces commandes en ajoutant un ou plusieurs filtres de commande pour l’affichage de texte à partir de votre service de langage.  
   
-## <a name="getting-and-routing-the-command"></a>Mise en route et le routage de la commande  
- Un filtre de commande est un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objet qui surveille certaines séquences de caractères ou les commandes de touches. Vous pouvez associer plusieurs filtres de commande à une vue de texte unique. Chaque vue de texte conserve une chaîne de commande de filtres. Après avoir créé un nouveau filtre de commande, vous ajoutez le filtre à la chaîne pour l’affichage de texte appropriée.  
+## <a name="getting-and-routing-the-command"></a>L’obtention et le routage de la commande  
+ Un filtre de commande est un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objet qui surveille certaines séquences de caractères ou les commandes de touches. Vous pouvez associer plusieurs filtres de commande à un affichage de texte unique. Chaque vue de texte conserve une chaîne de filtres de commande. Après avoir créé un nouveau filtre de commande, vous ajoutez le filtre à la chaîne pour l’affichage de texte appropriée.  
   
- Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> méthode sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour ajouter le filtre de commande à la chaîne. Lorsque vous appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retourne un autre filtre de commande à laquelle vous pouvez passer les commandes qui ne gère pas de filtre de votre commande.  
+ Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> méthode sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> à ajouter votre filtre de commande à la chaîne. Lorsque vous appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retourne un autre filtre de commande à laquelle vous pouvez passer les commandes que votre filtre de commande ne gère pas.  
   
  Vous disposez des options suivantes pour la gestion des commandes :  
   
--   Gérer la commande, puis passer la commande une session sur le filtre de la commande suivante dans la chaîne.  
+- Gérer la commande, puis passer la commande au filtre de commande suivant dans la chaîne.  
   
--   Gérer la commande et ne passez pas de la commande une session sur le filtre de commande suivant.  
+- Gérer la commande et ne transmettez pas de la commande au filtre de commande suivant.  
   
--   Ne gèrent pas la commande, mais passer la commande une session sur le filtre de commande suivant.  
+- Ne gèrent pas la commande, mais passer la commande au filtre de commande suivant.  
   
--   Ignorer la commande. Ne les gèrent pas dans le filtre actuel et ne le passez pas une session sur le filtre suivant.  
+- Ignorer la commande. Ne les gèrent pas dans le filtre actuel et ne les transmettez pas au filtre suivant.  
   
- Pour plus d’informations sur les commandes qui doit gérer votre service de langage, consultez [commandes Important pour les filtres de Service de langage](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Pour plus d’informations sur les commandes qui doit gérer votre service de langage, consultez [commandes importantes pour les filtres du Service de langage](../../extensibility/internals/important-commands-for-language-service-filters.md).

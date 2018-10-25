@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850234"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 
@@ -67,24 +67,24 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
    
    Par défaut, si vous avez créé une DLL ou un *.exe* fichier sur votre ordinateur, l’éditeur de liens place le chemin d’accès complet et le nom de fichier associé *.pdb* fichier dans la DLL ou *.exe* fichier. Le débogueur vérifie si le fichier de symboles existe à cet emplacement.  
    
-1. Le même dossier que la DLL ou *.exe* fichier.
+2. Le même dossier que la DLL ou *.exe* fichier.
    
-1. Tous les emplacements spécifiés dans les options du débogueur pour les fichiers de symboles. Pour ajouter et activer des emplacements de symboles, consultez [configurer des emplacements de symboles et options de chargement](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Tous les emplacements spécifiés dans les options du débogueur pour les fichiers de symboles. Pour ajouter et activer des emplacements de symboles, consultez [configurer des emplacements de symboles et options de chargement](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - N’importe quel dossier de cache de symboles local.  
+   - N’importe quel dossier de cache de symboles local.  
   
-    - Réseau spécifié, internet, ou les serveurs de symboles local et emplacements, tels que les serveurs de symboles Microsoft si sélectionné. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger des fichiers de symboles de débogage à partir de serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) et [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent utiliser des serveurs de symboles. 
+   - Réseau spécifié, internet, ou les serveurs de symboles local et emplacements, tels que les serveurs de symboles Microsoft si sélectionné. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger des fichiers de symboles de débogage à partir de serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) et [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent utiliser des serveurs de symboles. 
       
-      Vous pouvez utiliser des serveurs de symboles sont les suivantes :  
+     Vous pouvez utiliser des serveurs de symboles sont les suivantes :  
       
-      **Serveurs de symboles publics Microsoft**: pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft. 
+     **Serveurs de symboles publics Microsoft**: pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft. 
       
-      **Sur un réseau interne ou sur votre ordinateur local de serveurs de symboles**: votre équipe ou votre entreprise peut créer des serveurs de symboles de vos propres produits et en tant que cache de symboles provenant de sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. 
+     **Sur un réseau interne ou sur votre ordinateur local de serveurs de symboles**: votre équipe ou votre entreprise peut créer des serveurs de symboles de vos propres produits et en tant que cache de symboles provenant de sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. 
       
-      **Serveurs de symboles tiers**: les fournisseurs tiers de bibliothèques et des applications de Windows permettent d’accéder au serveur de symboles sur internet. 
+     **Serveurs de symboles tiers**: les fournisseurs tiers de bibliothèques et des applications de Windows permettent d’accéder au serveur de symboles sur internet. 
     
-    > [!WARNING]
-    > Si vous utilisez un serveur de symboles autres que les serveurs de symboles publics Microsoft, assurez-vous que le serveur de symboles et son chemin d’accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous pouvez être exposées aux menaces de sécurité.  
+     > [!WARNING]
+     > Si vous utilisez un serveur de symboles autres que les serveurs de symboles publics Microsoft, assurez-vous que le serveur de symboles et son chemin d’accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous pouvez être exposées aux menaces de sécurité.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Configurer des emplacements de symboles et les options de chargement
@@ -101,7 +101,7 @@ Sur le **outils** > **Options** > **débogage** > **symboles** page, vous pouvez
    
    ![Outils &#45; Options &#45; débogage &#45; page symboles](media/dbg-options-symbols.png "outils &#45; Options &#45; débogage &#45; page symboles")  
    
-1. Sous **emplacements du fichier (.pdb) de symboles**,
+2. Sous **emplacements du fichier (.pdb) de symboles**,
    - Pour utiliser le **serveurs de symboles Microsoft**, activez la case à cocher.  
    
    - Pour ajouter un nouvel emplacement du serveur de symbole,
@@ -119,21 +119,21 @@ Sur le **outils** > **Options** > **débogage** > **symboles** page, vous pouvez
    - Pour modifier une URL ou un chemin d’accès, double-cliquez sur l’entrée, ou sélectionnez-le et appuyez sur **F2**.  
    - Pour supprimer une entrée, sélectionnez-la, puis sélectionnez le **-** icône.
   
-1.  (Facultatif) Pour améliorer les performances de chargement de symboles, sous **mettre en Cache les symboles dans ce répertoire**, un chemin d’accès du dossier local qui peuvent copier des serveurs de symboles pour les symboles de type.  
+3. (Facultatif) Pour améliorer les performances de chargement de symboles, sous **mettre en Cache les symboles dans ce répertoire**, un chemin d’accès du dossier local qui peuvent copier des serveurs de symboles pour les symboles de type.  
   
-    > [!NOTE]
-    > Ne placez pas le cache de symboles local dans un dossier protégé, tel que C:\Windows ou un sous-dossier. Utilisez plutôt un dossier en lecture-écriture.  
+   > [!NOTE]
+   > Ne placez pas le cache de symboles local dans un dossier protégé, tel que C:\Windows ou un sous-dossier. Utilisez plutôt un dossier en lecture-écriture.  
   
-    > [!NOTE]
-    > Pour les projets C++, si vous avez le `_NT_SYMBOL_PATH` set variable d’environnement, il remplace la valeur définie sous **mettre en Cache les symboles dans ce répertoire**.
+   > [!NOTE]
+   > Pour les projets C++, si vous avez le `_NT_SYMBOL_PATH` set variable d’environnement, il remplace la valeur définie sous **mettre en Cache les symboles dans ce répertoire**.
   
-1. Spécifiez les modules que vous souhaitez que le débogueur à charger à partir de la **emplacements du fichier (.pdb) de symboles** lorsqu’il démarre.  
+4. Spécifiez les modules que vous souhaitez que le débogueur à charger à partir de la **emplacements du fichier (.pdb) de symboles** lorsqu’il démarre.  
   
-  -  Sélectionnez **charger tous les modules, sauf exclus** (la valeur par défaut) pour charger tous les symboles pour tous les modules dans l’emplacement du fichier de symboles, à l’exception des modules que vous excluez spécifiquement. Pour exclure certains modules, sélectionnez **spécifier les modules exclus**, sélectionnez le **+** icône, tapez les noms des modules à exclure, puis sélectionnez **OK**.  
+   -  Sélectionnez **charger tous les modules, sauf exclus** (la valeur par défaut) pour charger tous les symboles pour tous les modules dans l’emplacement du fichier de symboles, à l’exception des modules que vous excluez spécifiquement. Pour exclure certains modules, sélectionnez **spécifier les modules exclus**, sélectionnez le **+** icône, tapez les noms des modules à exclure, puis sélectionnez **OK**.  
   
-  -  Pour charger uniquement les modules que vous spécifiez à partir des emplacements de fichier de symboles, sélectionnez **charge les modules spécifiés uniquement**. Sélectionnez **spécifier les modules inclus**, sélectionnez le **+** icône, tapez les noms des modules à inclure, puis sélectionnez **OK**. Les fichiers de symboles pour les autres modules ne sont pas chargés.  
+   -  Pour charger uniquement les modules que vous spécifiez à partir des emplacements de fichier de symboles, sélectionnez **charge les modules spécifiés uniquement**. Sélectionnez **spécifier les modules inclus**, sélectionnez le **+** icône, tapez les noms des modules à inclure, puis sélectionnez **OK**. Les fichiers de symboles pour les autres modules ne sont pas chargés.  
   
-1.  Sélectionnez **OK**.
+5. Sélectionnez **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Autres options de symbole de débogage
   

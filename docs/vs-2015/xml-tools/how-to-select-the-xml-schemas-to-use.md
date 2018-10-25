@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863722"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Pour sélectionner un schéma XML dans le cache de schéma  
   
-1.  Ouvrez un fichier dans l'éditeur XML.  
+1. Ouvrez un fichier dans l'éditeur XML.  
   
-2.  Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
+2. Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
   
-     Le **schémas XML** boîte de dialogue s’affiche. La boîte de dialogue répertorie tous les schémas portant une extension .xsd dans le cache de schéma (y compris les schémas référencés dans le fichier catalog.xml), et également n’importe quel schéma qui se trouve dans la solution actuelle, ouvrir dans Visual Studio, référencée dans un `xsd:schemaLocation` d’attribut ou référencés dans le **schémas** propriété.  
+    Le **schémas XML** boîte de dialogue s’affiche. La boîte de dialogue répertorie tous les schémas portant une extension .xsd dans le cache de schéma (y compris les schémas référencés dans le fichier catalog.xml), et également n’importe quel schéma qui se trouve dans la solution actuelle, ouvrir dans Visual Studio, référencée dans un `xsd:schemaLocation` d’attribut ou référencés dans le **schémas** propriété.  
   
-3.  Sélectionnez les schémas à utiliser pour la validation en effectuant l’une des opérations suivantes :  
+3. Sélectionnez les schémas à utiliser pour la validation en effectuant l’une des opérations suivantes :  
   
-    -   Sélectionnez un schéma dans le **schémas XML** boîte de dialogue, cliquez sur le **utilisation** colonne, puis sélectionnez **utiliser ce schéma**.  
+   - Sélectionnez un schéma dans le **schémas XML** boîte de dialogue, cliquez sur le **utilisation** colonne, puis sélectionnez **utiliser ce schéma**.  
   
      - ou -  
   
-    -   Sélectionnez plusieurs schémas dans le **schémas XML** boîte de dialogue, avec le bouton droit et sélectionnez **utiliser ce schéma**.  
+   - Sélectionnez plusieurs schémas dans le **schémas XML** boîte de dialogue, avec le bouton droit et sélectionnez **utiliser ce schéma**.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
-     La liste des schémas sélectionnés est recopiée dans la **schémas** propriété de document.  
+    La liste des schémas sélectionnés est recopiée dans la **schémas** propriété de document.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Pour ajouter un schéma XML au cache de schéma  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27e37a9da06145df2e940705650b1ab085250c53
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 624a8e4a47e7043c2e3726f23b9d2a94defdea32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846653"
 ---
 # <a name="bitmap-element"></a>Élément de bitmap
 Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou d’un fichier.  

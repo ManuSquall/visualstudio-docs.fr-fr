@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844157"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammes de couche : instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Pour procéder à la rétroconception des dépendances existantes entre couches  
   
--   Sélectionnez une ou plusieurs couches, cliquez sur une couche sélectionnée, puis cliquez sur **générer des dépendances**.  
+- Sélectionnez une ou plusieurs couches, cliquez sur une couche sélectionnée, puis cliquez sur **générer des dépendances**.  
   
- En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.  
+  En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.  
   
 ##  <a name="EditArchitecture"></a> Modifier les couches et les dépendances pour afficher la conception prévue  
  Pour décrire les modifications que vous envisagez d'apporter à votre système ou l'architecture prévue, utilisez la procédure suivante pour modifier le diagramme de couche : vous pouvez aussi envisager d'apporter des modifications de refactorisation pour améliorer la structure du code avant de l'étendre. Consultez [amélioration de la structure du code](#Improving).  
@@ -151,11 +151,11 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
 ##  <a name="UpdateCode"></a> Mettre à jour le code pour se conformer à la nouvelle architecture  
  En général, les erreurs apparaissent la première fois que vous validez le code par rapport à un diagramme de couche mis à jour. Ces erreurs peuvent avoir plusieurs causes :  
   
--   Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.  
+- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.  
   
--   Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.  
+- Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.  
   
- Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Il s'agit généralement d'un processus itératif. Pour plus d’informations sur ces erreurs, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  
+  Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Il s'agit généralement d'un processus itératif. Pour plus d’informations sur ces erreurs, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Lorsque vous développez ou refactorisez le code, il se peut que vous ayez de nouveaux artefacts à lier au diagramme de couche. Toutefois, cela peut ne pas être nécessaire : par exemple, lorsque des couches représentent des espaces de noms existants et que le nouveau code ajoute seulement plus de documentation à ces espaces de noms.  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887369"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 
@@ -32,7 +32,7 @@ Toutes les fonctionnalités de base du Concepteur de flux de travail sont access
 Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux commandes du Concepteur de Workflow.
 
 |Raccourci|Objectif|
-|--------------|-------------|
+|-|-------------|
 |CTRL+E, A|Affiche ou masque le concepteur d'arguments.|
 |CTRL+E, C|Réduit l'activité sélectionnée sur place.|
 |CTRL+E, E|Développe l'activité sélectionnée sur place.|

@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940227"
 ---
 # <a name="content-controls"></a>Contrôles de contenu
   Les contrôles de contenu vous permettent de concevoir des documents et des modèles qui ont les fonctionnalités suivantes :  
   
--   Une interface utilisateur dont les entrées sont contrôlées comme dans le cas d'un formulaire.  
+- Une interface utilisateur dont les entrées sont contrôlées comme dans le cas d'un formulaire.  
   
--   Des restrictions qui empêchent les utilisateurs de modifier les sections protégées du document ou du modèle. Pour plus d’informations, consultez [protéger des parties de documents à l’aide de contrôles de contenu](#Protection).  
+- Des restrictions qui empêchent les utilisateurs de modifier les sections protégées du document ou du modèle. Pour plus d’informations, consultez [protéger des parties de documents à l’aide de contrôles de contenu](#Protection).  
   
--   La liaison à une source de données. Pour plus d’informations, consultez [lier des données aux contrôles de contenu](#DataBinding).  
+- La liaison à une source de données. Pour plus d’informations, consultez [lier des données aux contrôles de contenu](#DataBinding).  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [à l’aide de Visual Studio Tools pour Office system (3.0) de contrôles de contenu de lier des données pour Word 2007](http://go.microsoft.com/fwlink/?LinkId=136785).  
+  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [à l’aide de Visual Studio Tools pour Office system (3.0) de contrôles de contenu de lier des données pour Word 2007](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Vue d’ensemble des contrôles de contenu  
  Les contrôles de contenu fournissent une interface utilisateur optimisée à la fois pour l'entrée d'utilisateur et pour l'impression. Lorsque vous ajoutez un contrôle de contenu à un document, le contrôle est identifié par une bordure, un titre et un texte temporaire qui peut fournir des instructions à l'utilisateur. La bordure et le titre du contrôle n'apparaissent pas dans les versions imprimées du document.  
@@ -68,11 +68,11 @@ ms.locfileid: "35673293"
   
  Les contrôles de contenu vous aident également à effectuer les opérations suivantes :  
   
--   Empêcher les utilisateurs de modifier ou de supprimer des parties d'un document. Cela peut s'avérer utile si votre document ou modèle contient des informations que les utilisateurs doivent pouvoir lire mais pas modifier, ou si vous souhaitez que les utilisateurs puissent modifier des contrôles de contenu mais pas les supprimer.  
+- Empêcher les utilisateurs de modifier ou de supprimer des parties d'un document. Cela peut s'avérer utile si votre document ou modèle contient des informations que les utilisateurs doivent pouvoir lire mais pas modifier, ou si vous souhaitez que les utilisateurs puissent modifier des contrôles de contenu mais pas les supprimer.  
   
--   Lier des parties d'un document ou d'un modèle à des données. Vous pouvez lier des contrôles de contenu à des champs de base de données, à des objets managés dans le [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], à des éléments XML stockés dans le document et à d'autres sources de données.  
+- Lier des parties d'un document ou d'un modèle à des données. Vous pouvez lier des contrôles de contenu à des champs de base de données, à des objets managés dans le [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], à des éléments XML stockés dans le document et à d'autres sources de données.  
   
- Dans les projets au niveau du document, vous pouvez ajouter des contrôles de contenu à votre document au moment du design ou au moment de l'exécution. Dans les projets VSTO, vous pouvez ajouter des contrôles de contenu à tout document ouvert au moment de l’exécution. Pour plus d’informations, consultez [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  Dans les projets au niveau du document, vous pouvez ajouter des contrôles de contenu à votre document au moment du design ou au moment de l'exécution. Dans les projets VSTO, vous pouvez ajouter des contrôles de contenu à tout document ouvert au moment de l’exécution. Pour plus d’informations, consultez [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Vous pouvez utiliser des contrôles de contenu uniquement dans les documents enregistrés au format Open XML. Vous ne pouvez pas utiliser les contrôles de contenu dans les documents qui sont enregistrés dans le document Word 97-2003 (*.doc*) format.  
@@ -133,11 +133,11 @@ ms.locfileid: "35673293"
   
  Si la zone que vous souhaitez protéger se trouve à l'intérieur d'un contrôle de contenu, vous pouvez utiliser les propriétés du contrôle de contenu pour empêcher des utilisateurs de modifier ou de supprimer le contrôle :  
   
--   Le **LockContents** propriété empêche les utilisateurs de modifier le contenu.  
+- Le **LockContents** propriété empêche les utilisateurs de modifier le contenu.  
   
--   Le **LockContentControl** propriété empêche les utilisateurs de supprimer le contrôle.  
+- Le **LockContentControl** propriété empêche les utilisateurs de supprimer le contrôle.  
   
- Si la zone que vous souhaitez protéger ne se trouve pas à l'intérieur d'un contrôle de contenu, ou si vous souhaitez protéger une zone qui contient des contrôles de contenu et d'autres types de contenu, vous pouvez placer la zone entière dans un <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Contrairement à d'autres contrôles de contenu, un <xref:Microsoft.Office.Tools.Word.GroupContentControl> ne fournit aucune interface utilisateur visible par l'utilisateur. Son seul but est de définir une zone que les utilisateurs ne peuvent pas modifier.  
+  Si la zone que vous souhaitez protéger ne se trouve pas à l'intérieur d'un contrôle de contenu, ou si vous souhaitez protéger une zone qui contient des contrôles de contenu et d'autres types de contenu, vous pouvez placer la zone entière dans un <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Contrairement à d'autres contrôles de contenu, un <xref:Microsoft.Office.Tools.Word.GroupContentControl> ne fournit aucune interface utilisateur visible par l'utilisateur. Son seul but est de définir une zone que les utilisateurs ne peuvent pas modifier.  
   
 > [!NOTE]  
 >  Si vous créez un <xref:Microsoft.Office.Tools.Word.GroupContentControl> qui contient des contrôles de contenu incorporés, ces contrôles ne sont pas protégés automatiquement. Vous devez utiliser le **LockContents** propriété de chaque contrôle incorporé pour empêcher les utilisateurs de modifier leur contenu.  
@@ -149,11 +149,11 @@ ms.locfileid: "35673293"
   
  Les contrôles de contenu fournissent les options de liaison des données suivantes :  
   
--   Vous pouvez lier des contrôles de contenu à des champs de base de données ou à des objets managés en utilisant le même modèle de liaison de données que Windows Forms.  
+- Vous pouvez lier des contrôles de contenu à des champs de base de données ou à des objets managés en utilisant le même modèle de liaison de données que Windows Forms.  
   
--   Vous pouvez lier des contrôles de contenu aux éléments de fragments XML (également nommé *des parties XML personnalisées*) qui sont incorporés dans le document.  
+- Vous pouvez lier des contrôles de contenu aux éléments de fragments XML (également nommé *des parties XML personnalisées*) qui sont incorporés dans le document.  
   
- Pour une vue d’ensemble de la liaison de contrôles hôtes aux données dans les solutions Office, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  Pour une vue d’ensemble de la liaison de contrôles hôtes aux données dans les solutions Office, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Utiliser le modèle de liaison de données Windows Forms  
  La plupart des contrôles de contenu prennent en charge le modèle de liaison de données simple que Windows Forms utilise. La liaison de données simple signifie qu’un contrôle est lié à un élément de données unique, tel qu’une valeur dans une colonne d’une table de données. Pour plus d’informations, consultez [liaison de données et Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  

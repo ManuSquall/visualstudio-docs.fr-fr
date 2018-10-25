@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_reference | Documents Microsoft
+title: IDiaSymbol::get_reference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ceef47db6474df6b7d4544cb151b0e82c40cb68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: de32c77f34478389fcac5d121a20fa2de897d1a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923769"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
-Récupère un indicateur qui spécifie si un type pointeur est une référence.  
+Récupère un indicateur qui spécifie si un type de pointeur est une référence.  
   
 ## <a name="syntax"></a>Syntaxe  
   

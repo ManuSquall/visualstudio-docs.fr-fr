@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929775"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.  
@@ -34,17 +34,17 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Pour installer Outils Graphics pour Windows 10  
   
-1.  Dans Rechercher, tapez **applications et fonctionnalités** , puis ouvrez le **applications et fonctionnalités** paramètres.
+1. Dans Rechercher, tapez **applications et fonctionnalités** , puis ouvrez le **applications et fonctionnalités** paramètres.
   
-3.  Sur le côté droit de la **applications et fonctionnalités** boîte de dialogue, choisissez **gestion des fonctionnalités facultatives** (sous **applications et fonctionnalités**).
+2. Sur le côté droit de la **applications et fonctionnalités** boîte de dialogue, choisissez **gestion des fonctionnalités facultatives** (sous **applications et fonctionnalités**).
 
-    Le **gestion des fonctionnalités facultatives** boîte de dialogue apparaît.
+   Le **gestion des fonctionnalités facultatives** boîte de dialogue apparaît.
   
-4.  Dans le **gestion des fonctionnalités facultatives** boîte de dialogue, choisissez **ajouter une fonctionnalité**. Une liste de fonctionnalités facultatives que vous pouvez installer s’affiche.  
+3. Dans le **gestion des fonctionnalités facultatives** boîte de dialogue, choisissez **ajouter une fonctionnalité**. Une liste de fonctionnalités facultatives que vous pouvez installer s’affiche.  
   
-5.  Sélectionnez **outils Graphics** à partir de la liste des fonctionnalités, puis choisissez **installer**.  
+4. Sélectionnez **outils Graphics** à partir de la liste des fonctionnalités, puis choisissez **installer**.  
   
- La fonctionnalité Outils Graphics est également installée automatiquement quand vous installez le Kit de développement logiciel (SDK) Windows 10.  
+   La fonctionnalité Outils Graphics est également installée automatiquement quand vous installez le Kit de développement logiciel (SDK) Windows 10.  
   
 > [!TIP]
 >  La fonctionnalité facultative outils Graphics de Windows 10 fournit des fonctionnalités légères de capture et de lecture, telles que le programme de ligne de commande de capture **dxcap.exe**, qui peut être utilisé dans la prise en charge, le test et les scénarios de diagnostic sur machines où les outils de développement ne sont pas installés. Pour plus d’informations, consultez le [l’outil de ligne de commande de Capture](command-line-capture-tool.md) rubrique.  
@@ -58,7 +58,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 - Le **DirectX 11 application (Windows universel)** ou **DirectX 12 application (Windows universel)** modèles de projet pour Windows 10.
 - [Exemple de Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.  
   
- Assurez-vous que vous pouvez générer l'application avant de continuer.  
+  Assurez-vous que vous pouvez générer l'application avant de continuer.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Démarrer une session Graphics Diagnostics  
  Maintenant, vous êtes prêt à démarrer votre première session Graphics Diagnostics. Dans Visual Studio, dans le menu principal, choisissez **déboguer, graphiques, démarrer le débogage graphique**, ou appuyez simplement sur **Alt + F5**. Cela entraîne le démarrage de votre application dans Graphics Diagnostics et l’affichage des fenêtres de session de diagnostic dans Visual Studio.  
@@ -75,11 +75,11 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
   
 #### <a name="to-capture-a-sequence-of-frames"></a>Pour capturer une séquence de frames  
   
--   Dans Visual Studio, dans la fenêtre de la session de diagnostic, définissez **Frames à capturer** au nombre de frames à capturer dans la séquence, puis capturez la séquence en utilisant l’une des méthodes ci-dessus pour capturer des frames uniques.  
+- Dans Visual Studio, dans la fenêtre de la session de diagnostic, définissez **Frames à capturer** au nombre de frames à capturer dans la séquence, puis capturez la séquence en utilisant l’une des méthodes ci-dessus pour capturer des frames uniques.  
   
-     Pour capturer des frames uniques à nouveau, définissez **Frames à capturer** à *1*.  
+   Pour capturer des frames uniques à nouveau, définissez **Frames à capturer** à *1*.  
   
- Lorsque vous avez terminé simplement capturer les frames quitter l’application ou choisissez la **arrêter** bouton à partir de la barre d’outils Graphics ou la fenêtre de session de diagnostic.  
+  Lorsque vous avez terminé simplement capturer les frames quitter l’application ou choisissez la **arrêter** bouton à partir de la barre d’outils Graphics ou la fenêtre de session de diagnostic.  
   
 ### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4 - examiner les frames capturés dans Graphics Analyzer  
  À présent, vous êtes prêt à examiner les frames que vous venez de capturer. Pour démarrer l'analyse d'un frame, choisissez le numéro du frame que vous souhaitez examiner à partir de la fenêtre de session de diagnostic. Cette opération ouvre le frame dans la **Graphics Analyzer**, où vous pouvez utiliser les outils Graphics Diagnostics pour examiner la façon dont votre application utilise Direct3D pour traquer les problèmes de rendu, ou utiliser le **analyse des frames** outil pour comprendre ses performances.  

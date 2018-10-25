@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842259"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l’aide du Concepteur de classes
 
@@ -71,21 +71,21 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
 ##  <a name="CustAttributeType"></a> Appliquer un attribut personnalisé à un type
 
-1.  Cliquez sur la forme du type sur un diagramme de classes.
+1. Cliquez sur la forme du type sur un diagramme de classes.
 
-2.  Dans **Propriétés**, cliquez sur le bouton de sélection (...) situé à côté de la propriété **Attributs personnalisés**.
+2. Dans **Propriétés**, cliquez sur le bouton de sélection (...) situé à côté de la propriété **Attributs personnalisés**.
 
-3.  Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.
+3. Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.
 
    Les attributs personnalisés sont appliqués au type.
 
 ##  <a name="CustAttributeMember"></a> Appliquer un attribut personnalisé à un membre de type
 
-1.  Cliquez sur le nom du membre dans la forme de son type sur un diagramme de classes ou sur sa ligne dans la fenêtre Détails de classe.
+1. Cliquez sur le nom du membre dans la forme de son type sur un diagramme de classes ou sur sa ligne dans la fenêtre Détails de classe.
 
-2.  Dans **Propriétés**, recherchez la propriété **Attributs personnalisés** du membre.
+2. Dans **Propriétés**, recherchez la propriété **Attributs personnalisés** du membre.
 
-3.  Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.
+3. Ajoutez un ou plusieurs attributs personnalisés, un par ligne. Ne les placez pas entre crochets.
 
    Les attributs personnalisés sont appliqués au type.
 

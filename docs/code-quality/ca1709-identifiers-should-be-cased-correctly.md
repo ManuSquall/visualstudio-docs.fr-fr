@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf5b5bba2339b7b7fad84420e1ee148d6fee3b7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891347"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|

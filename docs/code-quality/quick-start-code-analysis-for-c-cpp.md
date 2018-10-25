@@ -12,20 +12,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74d613a5f6fe6470e16c86baa4189b46c6f2727f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818761"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : Analyse du Code pour C/C++
+# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
 
 Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code.
 
 ## <a name="configure-rule-sets-for-a-project"></a>Configurer des ensembles de règles pour un projet
 
-1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le nom du projet, puis sélectionnez **propriétés**.
+1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le nom du projet, puis choisissez **propriétés**.
 
 2. Les étapes suivantes sont facultatives :
 
@@ -42,7 +42,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
 
     - Choisissez l'ensemble de règles que vous souhaitez utiliser.
 
-    - Choisissez  **\<Parcourir... >** pour spécifier une règle personnalisée existante du jeu qui n’est pas dans la liste.
+    - Choisissez  **\<Parcourir... >** pour spécifier une règle personnalisée existante définie qui n’est pas dans la liste.
 
     - Définir un [ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -63,21 +63,21 @@ Pour exécuter l'analyse du code sur une solution :
 
 - Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.
 
- Pour exécuter l'analyse du code sur un projet :
+Pour exécuter l'analyse du code sur un projet :
 
-- Dans l'Explorateur de solutions, choisissez le nom du projet.
+1. Dans l'Explorateur de solutions, choisissez le nom du projet.
 
-- Sur le **générer** menu, choisissez **exécuter l’analyse du Code sur** *nom du projet*.
+2. Sur le **Build** menu, choisissez **exécuter l’analyse du Code sur** *nom_projet*.
 
- Le projet ou la solution est compilé et l'analyse du code est exécutée. Résultats s’affichent dans la liste d’erreurs.
+   Le projet ou la solution est compilé et l'analyse du code est exécutée. Résultats s’affichent dans la liste d’erreurs.
 
 ## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analyser et résoudre les avertissements d'analyse du code
 
 Pour analyser un avertissement spécifique, choisissez le titre de l’avertissement dans la liste d’erreurs. L’avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d’informations sur l’avertissement, y compris les solutions possibles à ce problème, choisissez l’ID d’avertissement pour afficher sa rubrique d’aide en ligne correspondante.
 
-Lorsque vous sélectionnez un avertissement, la ligne de code qui a provoqué l’avertissement est mise en surbrillance dans l’éditeur de code Visual Studio.
+Lorsque vous sélectionnez un avertissement, la ligne de code qui a provoqué l’avertissement est mis en surbrillance dans l’éditeur de code Visual Studio.
 
-Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Ensuite, réexécutez l’analyse du code pour vous assurer que l’avertissement n’apparaît plus dans la liste d’erreurs, et que votre correctif n’a pas généré de n’importe quel nouveaux avertissements.
+Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Réexécutez ensuite l’analyse du code pour vous assurer que l’avertissement n’apparaît plus dans la liste d’erreurs, et que votre correctif n’a pas généré de tout nouveaux avertissements.
 
 ## <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -91,9 +91,9 @@ Pour supprimer un avertissement :
 
 3. Choisissez **supprimer le Message** , puis **dans la Source**.
 
- La suppression d’un message insère `#pragma warning (disable:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.
+   Suppression d’un message insère `#pragma warning (disable:[warning ID])` qui supprime l’avertissement pour la ligne de code.
 
-## <a name="create-work-items-for-code-analysis-warnings"></a>Créer des éléments de travail pour le code les avertissements d’analyse
+## <a name="create-work-items-for-code-analysis-warnings"></a>Créer des éléments de travail pour le code des avertissements d’analyse
 
 Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour enregistrer les bogues à partir de Visual Studio. Pour utiliser cette fonctionnalité, vous devez vous connecter à une instance de Team Foundation Server.
 
@@ -105,15 +105,15 @@ Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour 
 
 3. Visual Studio crée un élément de travail unique pour les avertissements sélectionnés et affiche l’élément de travail dans une fenêtre de document de l’IDE.
 
-4. Ajoutez des informations supplémentaires, puis choisissez **enregistrer l’élément de travail**.
+4. Ajouter des informations supplémentaires, puis choisissez **enregistrer l’élément de travail**.
 
 ## <a name="search-and-filter-code-analysis-results"></a>Rechercher et filtrer les résultats de l’analyse de code
 
 Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
-- **Pour filtrer des avertissements par titre ou l’id d’avertissement**: entrez le mot clé dans la zone de recherche.
+- **Pour filtrer des avertissements par titre ou id d’avertissement**: entrez le mot clé dans la zone de recherche.
 
-- **Pour filtrer des avertissements par niveau de gravité**: par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter le niveau de gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Sur le **gravité** colonne de la **liste d’erreurs**, choisissez la flèche déroulante, puis sur l’icône de filtre. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **sélectionner tout** pour afficher tous les messages.
+- **Pour filtrer des avertissements par niveau de gravité**: par défaut, messages d’analyse du code sont affectés d’une gravité **avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant que **erreur** dans une règle personnalisée définie. Sur le **gravité** colonne de la **liste d’erreurs**, choisissez la flèche déroulante, puis sur l’icône de filtre. Choisissez **avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité correspondante. Choisissez **sélectionner tout** pour afficher tous les messages.
 
 ## <a name="see-also"></a>Voir aussi
 

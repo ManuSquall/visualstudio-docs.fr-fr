@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare | Documents Microsoft
+title: IDebugReference2::Compare | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ede48e5236887e3d8fdb22425d92c8514636f94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b00eb4e64e9dcccf4519f5e799f238ad01773b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860485"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Compare une référence à un autre. Réservé à un usage ultérieur.  
@@ -43,7 +43,7 @@ int Compare (
   
 #### <a name="parameters"></a>Paramètres  
  `dwCompare`  
- [in] Une valeur à partir de la [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) énumération qui spécifie l’opération de comparaison, par exemple, supérieure ou égale à, inférieur à.  
+ [in] Une valeur comprise entre le [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) énumération qui spécifie l’opération de comparaison, par exemple, égale à, inférieur à ou supérieure à.  
   
  `pReference`  
  [in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet représentant la référence à comparer.  

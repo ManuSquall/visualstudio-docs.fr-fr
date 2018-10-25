@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 506495f8be0b552f35bed0610e9fb43a77efb151
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883027"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.  
@@ -45,24 +45,24 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Pour télécharger des assemblys satellites à la demande  
   
-1.  Ajoutez le code suivant à votre application pour activer le téléchargement à la demande des assemblys satellites.  
+1. Ajoutez le code suivant à votre application pour activer le téléchargement à la demande des assemblys satellites.  
   
-     [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-     [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
+    [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
   
-2.  Générer des assemblys satellites pour votre application à l’aide de [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator) ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Générer des assemblys satellites pour votre application à l’aide de [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator) ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Générer un manifeste d’application ou ouvrez votre manifeste d’application existant, à l’aide de *MageUI.exe*. Pour plus d’informations sur cet outil, consultez [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
+3. Générer un manifeste d’application ou ouvrez votre manifeste d’application existant, à l’aide de *MageUI.exe*. Pour plus d’informations sur cet outil, consultez [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-4.  Cliquez sur l’onglet **Files** .  
+4. Cliquez sur l’onglet **Files** .  
   
-5.  Cliquez sur le **points de suspension** bouton (**...** ) et sélectionnez le répertoire contenant tous les assemblys et les fichiers, y compris les assemblys satellites que vous avez généré à l’aide de votre application *Resgen.exe*. (Un assembly satellite aura un nom sous la forme  *\<isoCode > \ApplicationName.resources.dll*, où \<isoCode > est un identificateur de langue au format RFC 1766.)  
+5. Cliquez sur le **points de suspension** bouton (**...** ) et sélectionnez le répertoire contenant tous les assemblys et les fichiers, y compris les assemblys satellites que vous avez généré à l’aide de votre application *Resgen.exe*. (Un assembly satellite aura un nom sous la forme  *\<isoCode > \ApplicationName.resources.dll*, où \<isoCode > est un identificateur de langue au format RFC 1766.)  
   
-6.  Cliquez sur **Populate** pour ajouter les fichiers à votre déploiement.  
+6. Cliquez sur **Populate** pour ajouter les fichiers à votre déploiement.  
   
-7.  Cochez la case **Optional** pour chaque assembly satellite.  
+7. Cochez la case **Optional** pour chaque assembly satellite.  
   
-8.  Définissez le champ de groupe pour chaque assembly satellite avec la valeur de son identificateur de langue ISO. Par exemple, pour un assembly satellite japonais, spécifiez le nom de groupe de téléchargement `ja-JP`. Cela permet au code ajouté à l’étape 1 de télécharger l’assembly satellite approprié, en fonction du paramètre de la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> de l’utilisateur.  
+8. Définissez le champ de groupe pour chaque assembly satellite avec la valeur de son identificateur de langue ISO. Par exemple, pour un assembly satellite japonais, spécifiez le nom de groupe de téléchargement `ja-JP`. Cela permet au code ajouté à l’étape 1 de télécharger l’assembly satellite approprié, en fonction du paramètre de la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> de l’utilisateur.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Dans un environnement de production, vous aurez probablement besoin de supprimer la ligne dans l’exemple de code qui définit <xref:System.Threading.Thread.CurrentUICulture%2A> avec une valeur spécifique, car les ordinateurs clients ont la valeur correcte définie par défaut. Quand votre application s’exécute sur un ordinateur client japonais, par exemple, <xref:System.Threading.Thread.CurrentUICulture%2A> aura la valeur `ja-JP` par défaut. La définition par programmation de cette valeur est un bon moyen de tester vos assemblys satellites avant de déployer votre application.  

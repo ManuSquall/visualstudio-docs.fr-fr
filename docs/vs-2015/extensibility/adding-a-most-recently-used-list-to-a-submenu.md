@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818099"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Ajout d’une liste de fichiers récents à un sous-menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
   
 ## <a name="creating-an-extension"></a>Création d’une Extension  
   
--   Suivez les procédures de [Ajout d’un sous-menu à un Menu](../extensibility/adding-a-submenu-to-a-menu.md) pour créer le sous-menu est modifié dans les procédures suivantes.  
+- Suivez les procédures de [Ajout d’un sous-menu à un Menu](../extensibility/adding-a-submenu-to-a-menu.md) pour créer le sous-menu est modifié dans les procédures suivantes.  
   
- Les procédures décrites dans cette procédure pas à pas supposent que le nom du VSPackage est `TopLevelMenu`, qui est le nom qui est utilisé dans [Ajout d’un Menu à la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Les procédures décrites dans cette procédure pas à pas supposent que le nom du VSPackage est `TopLevelMenu`, qui est le nom qui est utilisé dans [Ajout d’un Menu à la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>Création d’une commande de la liste élément dynamique  
   

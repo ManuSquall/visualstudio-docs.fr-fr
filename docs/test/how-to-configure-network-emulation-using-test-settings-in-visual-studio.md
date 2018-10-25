@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829285"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
 
@@ -38,21 +38,21 @@ Un compte qui est doté de privilèges d'administrateur doit être utilisé pour
 
  Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests. Cela inclut des tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
 
--   Délai aller-retour sur le réseau (latence)
+- Délai aller-retour sur le réseau (latence)
 
--   Bande passante disponible
+- Bande passante disponible
 
--   Comportement de mise en file d'attente
+- Comportement de mise en file d'attente
 
--   Perte de paquets
+- Perte de paquets
 
--   Réorganisation des paquets
+- Réorganisation des paquets
 
--   Propagations des erreurs
+- Propagations des erreurs
 
- L'émulation de réseau véritable fournit également la flexibilité nécessaire au filtrage des paquets réseau selon les adresses IP ou en fonction des protocoles tels que TCP, UDP et ICMP.
+  L'émulation de réseau véritable fournit également la flexibilité nécessaire au filtrage des paquets réseau selon les adresses IP ou en fonction des protocoles tels que TCP, UDP et ICMP.
 
- L'émulation de réseau véritable peut être utilisée par les testeurs et les développeurs réseau pour émuler un environnement de test souhaité, évaluer les performances, prévoir l'impact des modifications ou prendre des décisions en matière d'optimisation de technologie. En comparaison des bancs d'essais matériels, l'émulation de réseau véritable est une solution bien plus économique et plus flexible.
+  L'émulation de réseau véritable peut être utilisée par les testeurs et les développeurs réseau pour émuler un environnement de test souhaité, évaluer les performances, prévoir l'impact des modifications ou prendre des décisions en matière d'optimisation de technologie. En comparaison des bancs d'essais matériels, l'émulation de réseau véritable est une solution bien plus économique et plus flexible.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Configurer l’émulation réseau pour vos paramètres de test
  Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les paramètres de test depuis Visual Studio, puis sélectionner la page **Données et diagnostics**.

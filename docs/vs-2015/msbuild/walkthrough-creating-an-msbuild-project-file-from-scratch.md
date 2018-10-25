@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913889"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : création d'un fichier projet MSBuild en partant de zéro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
  Cette procédure pas à pas montre comment créer progressivement un fichier projet de base, en utilisant seulement un éditeur de texte. Cette procédure pas à pas comprend les étapes suivantes :  
   
--   Créer un fichier source d'application minimal.  
+- Créer un fichier source d'application minimal.  
   
--   Créer un fichier projet MSBuild minimal.  
+- Créer un fichier projet MSBuild minimal.  
   
--   Étendre la variable d'environnement PATH pour y inclure MSBuild.  
+- Étendre la variable d'environnement PATH pour y inclure MSBuild.  
   
--   Générer l'application en utilisant le fichier projet.  
+- Générer l'application en utilisant le fichier projet.  
   
--   Ajouter des propriétés pour contrôler la build.  
+- Ajouter des propriétés pour contrôler la build.  
   
--   Contrôler la build en changeant les valeurs de propriétés.  
+- Contrôler la build en changeant les valeurs de propriétés.  
   
--   Ajouter des cibles à la build.  
+- Ajouter des cibles à la build.  
   
--   Contrôler la build en spécifiant des cibles.  
+- Contrôler la build en spécifiant des cibles.  
   
--   Générer de façon incrémentielle.  
+- Générer de façon incrémentielle.  
   
- Cette procédure pas à pas montre comment créer le projet sur l'invite de commandes et examiner les résultats. Pour plus d’informations sur MSBuild et son exécution à l’invite de commandes, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Cette procédure pas à pas montre comment créer le projet sur l'invite de commandes et examiner les résultats. Pour plus d’informations sur MSBuild et son exécution à l’invite de commandes, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
- Pour effectuer la procédure pas à pas, vous devez disposer de .NET Framework (version 2.0, 3.5, 4.0 ou 4.5), car il comprend MSBuild et le compilateur Visual C#, qui sont requis cette procédure.  
+  Pour effectuer la procédure pas à pas, vous devez disposer de .NET Framework (version 2.0, 3.5, 4.0 ou 4.5), car il comprend MSBuild et le compilateur Visual C#, qui sont requis cette procédure.  
   
 ## <a name="creating-a-minimal-application"></a>Création d'une application minimale  
  Cette section montre comment créer un fichier source d'application Visual C# minimal en utilisant un éditeur de texte.  
@@ -109,39 +109,39 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Pour créer un fichier projet MSBuild minimal  
   
-1.  Dans l'éditeur de texte, remplacez le texte existant en utilisant ces deux lignes :  
+1. Dans l'éditeur de texte, remplacez le texte existant en utilisant ces deux lignes :  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  Insérez ce nœud `ItemGroup` comme élément enfant du nœud `Project` :  
+2. Insérez ce nœud `ItemGroup` comme élément enfant du nœud `Project` :  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     Notez que ce nœud `ItemGroup` contient déjà un élément item.  
+    Notez que ce nœud `ItemGroup` contient déjà un élément item.  
   
-3.  Ajoutez un nœud `Target` comme élément enfant du nœud `Project`. Nommez le nœud `Build`.  
+3. Ajoutez un nœud `Target` comme élément enfant du nœud `Project`. Nommez le nœud `Build`.  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  Insérez cet élément de tâche comme élément enfant du nœud `Target` :  
+4. Insérez cet élément de tâche comme élément enfant du nœud `Target` :  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  Enregistrez ce fichier projet et nommez-le Helloworld.csproj.  
+5. Enregistrez ce fichier projet et nommez-le Helloworld.csproj.  
   
- Votre fichier projet minimal doit ressembler au code suivant :  
+   Votre fichier projet minimal doit ressembler au code suivant :  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
 #### <a name="to-add-build-properties"></a>Pour ajouter des propriétés de build  
   
-1.  Supprimez l’application en entrant **del helloworld.exe** à l’invite de commandes.  
+1. Supprimez l’application en entrant **del helloworld.exe** à l’invite de commandes.  
   
-2.  Dans le fichier projet, insérez cet élément `PropertyGroup` juste après l'élément `Project` du début :  
+2. Dans le fichier projet, insérez cet élément `PropertyGroup` juste après l'élément `Project` du début :  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  Ajoutez cette tâche à la cible Build, juste avant la tâche `Csc` :  
+3. Ajoutez cette tâche à la cible Build, juste avant la tâche `Csc` :  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     La tâche `MakeDir` crée un dossier dont le nom est donné par la propriété `OutputPath`, à condition qu'aucun dossier de ce nom n'existe déjà.  
+    La tâche `MakeDir` crée un dossier dont le nom est donné par la propriété `OutputPath`, à condition qu'aucun dossier de ce nom n'existe déjà.  
   
-4.  Ajoutez cet attribut `OutputAssembly` à la tâche `Csc` :  
+4. Ajoutez cet attribut `OutputAssembly` à la tâche `Csc` :  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     Ceci demande au compilateur Visual C# de produire un assembly dont le nom est donné par la propriété `AssemblyName` et de le placer dans le dossier dont le nom est donné par la propriété `OutputPath`.  
+    Ceci demande au compilateur Visual C# de produire un assembly dont le nom est donné par la propriété `AssemblyName` et de le placer dans le dossier dont le nom est donné par la propriété `OutputPath`.  
   
-5.  Enregistrez les modifications apportées.  
+5. Enregistrez les modifications apportées.  
   
- Votre fichier projet doit maintenant ressembler au code suivant :  
+   Votre fichier projet doit maintenant ressembler au code suivant :  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
 ## <a name="adding-build-targets"></a>Ajout de cibles de génération  
  Ensuite, ajoutez deux cibles de plus au fichier projet, comme suit :  
   
--   Une cible Clean qui supprime les anciens fichiers.  
+- Une cible Clean qui supprime les anciens fichiers.  
   
--   Une cible Rebuild qui utilise l'attribut `DependsOnTargets` pour forcer la tâche Clean à s'exécuter avant la tâche Build.  
+- Une cible Rebuild qui utilise l'attribut `DependsOnTargets` pour forcer la tâche Clean à s'exécuter avant la tâche Build.  
   
- Maintenant que vous avez plusieurs cibles, vous pouvez définir la cible Build comme cible par défaut.  
+  Maintenant que vous avez plusieurs cibles, vous pouvez définir la cible Build comme cible par défaut.  
   
 #### <a name="to-add-build-targets"></a>Pour ajouter des cibles de génération  
   
-1.  Dans le fichier projet, ajoutez ces deux cibles juste après la cible Build :  
+1. Dans le fichier projet, ajoutez ces deux cibles juste après la cible Build :  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     La cible Clean appelle la tâche Delete pour supprimer l'application. La cible Rebuild ne s'exécute pas tant que la cible Clean et la cible Build n'ont pas été exécutées. Même si la cible Rebuild n'a pas de tâches, elle provoque l'exécution de la cible Clean avant l'exécution de la cible Build.  
+    La cible Clean appelle la tâche Delete pour supprimer l'application. La cible Rebuild ne s'exécute pas tant que la cible Clean et la cible Build n'ont pas été exécutées. Même si la cible Rebuild n'a pas de tâches, elle provoque l'exécution de la cible Clean avant l'exécution de la cible Build.  
   
-2.  Ajoutez cet attribut `DefaultTargets` à l'élément `Project` du début :  
+2. Ajoutez cet attribut `DefaultTargets` à l'élément `Project` du début :  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     Ceci définit la cible Build comme cible par défaut.  
+    Ceci définit la cible Build comme cible par défaut.  
   
- Votre fichier projet doit maintenant ressembler au code suivant :  
+   Votre fichier projet doit maintenant ressembler au code suivant :  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

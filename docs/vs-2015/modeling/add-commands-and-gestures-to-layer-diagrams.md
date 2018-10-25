@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889787"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Pour définir une extension à l’aide d’un modèle de projet  
   
-1.  Créez un projet dans une nouvelle solution en sélectionnant la commande **Nouveau projet** dans le menu **Fichier** .  
+1. Créez un projet dans une nouvelle solution en sélectionnant la commande **Nouveau projet** dans le menu **Fichier** .  
   
-2.  Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, sélectionnez **Concepteur de couche - Extension de commande** ou **Concepteur de couche - Extension de mouvement**.  
+2. Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, sélectionnez **Concepteur de couche - Extension de commande** ou **Concepteur de couche - Extension de mouvement**.  
   
-     Le modèle crée un projet qui contient un petit exemple fonctionnel.  
+    Le modèle crée un projet qui contient un petit exemple fonctionnel.  
   
-3.  Pour tester l’extension, appuyez sur **Ctrl+F5** ou **F5**.  
+3. Pour tester l’extension, appuyez sur **Ctrl+F5** ou **F5**.  
   
-     Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre. Dans cette instance, créez un diagramme de couche. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.  
+    Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre. Dans cette instance, créez un diagramme de couche. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.  
   
-4.  Fermez l’instance expérimentale et modifiez l’exemple de code. Pour plus d’informations, consultez [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Fermez l’instance expérimentale et modifiez l’exemple de code. Pour plus d’informations, consultez [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :  
+5. Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :  
   
-     [Définition d’une commande de menu](#command)  
+    [Définition d’une commande de menu](#command)  
   
-     [Définition d’un gestionnaire de mouvements](#gesture)  
+    [Définition d’un gestionnaire de mouvements](#gesture)  
   
-6.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
+6. Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans *bin\\*. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ajout d’une commande ou d’un mouvement à une extension VSIX distincte  
  Si vous souhaitez créer une extension VSIX qui contient des commandes, des validateurs de couche et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets distincts pour les gestionnaires. Pour plus d’informations sur les autres types d’extensions de modélisation, consultez [modèles et diagrammes UML étendre](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 ##  <a name="command"></a> Définition d’une commande de menu  
  Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de commande ou de mouvement existant. Chaque commande est définie par une classe dont les caractéristiques sont les suivantes :  
   
--   La classe est déclarée comme suit :  
+- La classe est déclarée comme suit :  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   L’espace de noms et le nom de la classe sont sans importance.  
+- L’espace de noms et le nom de la classe sont sans importance.  
   
--   Les méthodes qui implémentent `ICommandExtension` sont les suivantes :  
+- Les méthodes qui implémentent `ICommandExtension` sont les suivantes :  
   
-    -   `string Text {get;}` : l’étiquette qui apparaît dans le menu.  
+  -   `string Text {get;}` : l’étiquette qui apparaît dans le menu.  
   
-    -   `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.  
+  -   `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.  
   
-    -   `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.  
+  -   `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.  
   
--   Pour déterminer la sélection actuelle, vous pouvez importer `IDiagramContext`:  
+- Pour déterminer la sélection actuelle, vous pouvez importer `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Pour plus d’informations, consultez [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Pour plus d’informations, consultez [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Pour ajouter une nouvelle commande, créez un fichier de code qui contient l’exemple suivant. Ensuite, testez-le et modifiez-le.  
+  Pour ajouter une nouvelle commande, créez un fichier de code qui contient l’exemple suivant. Ensuite, testez-le et modifiez-le.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Notez les points suivants concernant les gestionnaires de mouvements :  
   
--   Les membres de `IGestureExtension` sont les suivants :  
+- Les membres de `IGestureExtension` sont les suivants :  
   
-     **OnDoubleClick** : appelée quand l’utilisateur double-clique n’importe où sur le diagramme.  
+   **OnDoubleClick** : appelée quand l’utilisateur double-clique n’importe où sur le diagramme.  
   
-     **CanDragDrop** : appelée à plusieurs reprises quand l’utilisateur déplace la souris tout en faisant glisser un élément sur le diagramme. Doit fonctionner rapidement.  
+   **CanDragDrop** : appelée à plusieurs reprises quand l’utilisateur déplace la souris tout en faisant glisser un élément sur le diagramme. Doit fonctionner rapidement.  
   
-     **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.  
+   **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.  
   
--   Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :  
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut faire glisser des éléments de l’Explorateur de solutions vers un diagramme de couche. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.  
+- Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut faire glisser des éléments de l’Explorateur de solutions vers un diagramme de couche. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.  
   
- Pour plus d’informations sur la façon de décoder d’autres éléments lorsqu’ils sont déplacés vers le diagramme, consultez [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Pour plus d’informations sur la façon de décoder d’autres éléments lorsqu’ils sont déplacés vers le diagramme, consultez [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Parcourir et mettre à jour des modèles de couche dans le code de programme](../modeling/navigate-and-update-layer-models-in-program-code.md)   

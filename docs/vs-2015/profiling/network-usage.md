@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812164"
 ---
 # <a name="network-usage"></a>Utilisation du réseau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 ## <a name="collecting-network-tool-data"></a>Collecte des données de l'outil Réseau  
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.  
   
-1.  Ouvrez le projet dans Visual Studio.  
+1. Ouvrez le projet dans Visual Studio.  
   
-2.  Cliquez sur **Déboguer/Profileur de performances...** Choisissez Réseau, puis **Démarrer**.  
+2. Cliquez sur **Déboguer/Profileur de performances...** Choisissez Réseau, puis **Démarrer**.  
   
-3.  L'outil Réseau commence à collecter le trafic HTTP de votre application.  
+3. L'outil Réseau commence à collecter le trafic HTTP de votre application.  
   
-     Quand vous exécutez votre application, la vue récapitulative dans le volet gauche affiche automatiquement une liste des opérations HTTP capturées. Sélectionnez un élément dans la vue récapitulative pour afficher plus d'informations dans le panneau des détails du volet droit.  
+    Quand vous exécutez votre application, la vue récapitulative dans le volet gauche affiche automatiquement une liste des opérations HTTP capturées. Sélectionnez un élément dans la vue récapitulative pour afficher plus d'informations dans le panneau des détails du volet droit.  
   
-4.  Choisissez **Arrêter** pour fermer l’application.  
+4. Choisissez **Arrêter** pour fermer l’application.  
   
- La fenêtre de rapport doit se présenter comme ceci :  
+   La fenêtre de rapport doit se présenter comme ceci :  
   
- ![La fenêtre Réseau](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![La fenêtre Réseau](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analyse des données  
  Vous pouvez analyser le trafic HTTP capturé pendant l'exécution de votre application, ou même après la fermeture de l'application, en sélectionnant l'une des opérations réseau affichées sur la vue récapitulative.  

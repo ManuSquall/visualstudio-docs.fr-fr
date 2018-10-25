@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetValueDisplayStringCount | Documents Microsoft
+title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f67c1f0566f9e5749f4ff9233f1d2a803754550
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ef642e48ee4389e48c1141c18a70f9ad5d0b793
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949667"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Récupère le nombre de chaînes à afficher pour la propriété spécifiée ou un champ de valeur.  
+Récupère le nombre de chaînes de valeur à afficher pour la propriété spécifiée ou du champ.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ int GetValueDisplayStringCount (
  [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface qui représente une propriété ou un champ.  
   
  `pcelt`  
- [out] Retourne le nombre de chaînes de la valeur à afficher.  
+ [out] Retourne le nombre de chaînes de valeur à afficher.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

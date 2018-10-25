@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870183"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  Dans cet exemple :  
   
--   `Edit.ReplaceInFiles` est la commande  
+- `Edit.ReplaceInFiles` est la commande  
   
--   `/case` et `/pattern:regex` sont des commutateurs (précédés de la barre oblique [/])  
+- `/case` et `/pattern:regex` sont des commutateurs (précédés de la barre oblique [/])  
   
--   `regex` est la valeur du commutateur `/pattern` ; le commutateur `/case` n’a pas de valeur  
+- `regex` est la valeur du commutateur `/pattern` ; le commutateur `/case` n’a pas de valeur  
   
--   `var[1-3]+` et `oldpar` sont des paramètres  
+- `var[1-3]+` et `oldpar` sont des paramètres  
   
-    > [!NOTE]
-    >  Les commandes, paramètres, commutateurs ou valeurs qui comportent des espaces doivent être entourés de guillemets doubles.  
+  > [!NOTE]
+  >  Les commandes, paramètres, commutateurs ou valeurs qui comportent des espaces doivent être entourés de guillemets doubles.  
   
- Les commutateurs et les paramètres peuvent être placés à n’importe quel endroit de la ligne de commande, à l’exception de la commande [Shell](../../ide/reference/shell-command.md), dont les commutateurs et les paramètres doivent respecter un ordre précis.  
+  Les commutateurs et les paramètres peuvent être placés à n’importe quel endroit de la ligne de commande, à l’exception de la commande [Shell](../../ide/reference/shell-command.md), dont les commutateurs et les paramètres doivent respecter un ordre précis.  
   
- Pratiquement tous les commutateurs pris en charge par une commande peuvent avoir deux formes : une abrégée (un seul caractère) et une longue. Plusieurs commutateurs de forme abrégée peuvent être regroupés. Par exemple, `/p /g /m` peut aussi être spécifié sous la forme `/pgm`.  
+  Pratiquement tous les commutateurs pris en charge par une commande peuvent avoir deux formes : une abrégée (un seul caractère) et une longue. Plusieurs commutateurs de forme abrégée peuvent être regroupés. Par exemple, `/p /g /m` peut aussi être spécifié sous la forme `/pgm`.  
   
- Quand une valeur est attribuée à un groupe de commutateurs de forme abrégée, cette valeur s’applique à chacun des commutateurs. Par exemple, `/pgm:123` équivaut à `/p:123 /g:123 /m:123`. Si l’un des commutateurs du groupe n’accepte pas la valeur spécifiée, une erreur se produit.  
+  Quand une valeur est attribuée à un groupe de commutateurs de forme abrégée, cette valeur s’applique à chacun des commutateurs. Par exemple, `/pgm:123` équivaut à `/p:123 /g:123 /m:123`. Si l’un des commutateurs du groupe n’accepte pas la valeur spécifiée, une erreur se produit.  
   
 ## <a name="escape-characters"></a>Caractères d’échappement  
  La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :  

@@ -1,5 +1,5 @@
 ---
-title: IDebugWindowsComputerPort2::GetComputerInfo | Documents Microsoft
+title: IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9dff1b64cafa6a212600cd467b86f8ddca83337
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e222eda1553e5fc608f1d34ab34d27da97cd650
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912946"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
-Récupère des informations sur l’ordinateur sur lequel le débogueur en cours d’exécution.  
+Récupère des informations sur l’ordinateur sur lequel le débogueur dans en cours d’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   

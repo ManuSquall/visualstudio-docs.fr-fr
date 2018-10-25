@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Documents Microsoft
+title: IDebugProgramPublisher2::PublishProgram | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ac5bad37ad5df85022ba6572da44d32de39736
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0ac385eaff1344d21b47e902e7c76d7f4c39343
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869755"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Cette méthode rend un programme disponible pour les moteurs de débogage (DEs) et le Gestionnaire de session de débogage.  
+Cette méthode effectue un programme est disponible pour les moteurs de débogage (DEs) et le Gestionnaire de session de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,19 +45,19 @@ int PublishProgram(
   
 #### <a name="parameters"></a>Paramètres  
  `Engines`  
- [in] Un tableau de GUID pour DEs qui peuvent lancer ou attacher à ce programme.  
+ [in] Un tableau de GUID pour DEs qui peut lancer ou à associer à ce programme.  
   
  `szFriendlyName`  
- [in] Nom convivial du programme (il apparaît dans les menus ou les boîtes de dialogue présentées à l’utilisateur).  
+ [in] Nom convivial pour le programme (apparaît dans les menus ou les boîtes de dialogue présentées à l’utilisateur).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` interface du programme (cette valeur est utilisée en tant que cookie pour identifier le programme ; cette même valeur est utilisée pour « annuler la publication » le programme)  
+ [in] `IUnknown` interface pour le programme (cette valeur est utilisée en tant que cookie pour identifier le programme ; cette même valeur est utilisée pour « annuler la publication « le programme)  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Pour qu’un programme n’est plus disponible pour le débogage, appelez [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
+ Pour un programme n’est plus disponible pour le débogage, appelez [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

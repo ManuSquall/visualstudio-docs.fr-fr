@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814557"
 ---
 # <a name="debugging-dll-projects"></a>Débogage de projets DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les modèles suivants créent des DLL :  
   
--   (C++, C# et Visual Basic) : bibliothèque de classes  
+- (C++, C# et Visual Basic) : bibliothèque de classes  
   
--   (C++, C# et Visual Basic) : bibliothèque de contrôles Windows Forms  
+- (C++, C# et Visual Basic) : bibliothèque de contrôles Windows Forms  
   
-     Le débogage d'une bibliothèque de contrôles Windows est semblable à celui d'un projet Bibliothèque de classes. Dans la plupart des cas, vous appelez le contrôle Windows à partir d'un autre projet. Lorsque vous déboguez le projet appelant, vous pouvez exécuter pas à pas le code de votre contrôle Windows, définir des points d'arrêt et effectuer d'autres opérations de débogage. Pour plus d'informations, consultez [Contrôles Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Le débogage d'une bibliothèque de contrôles Windows est semblable à celui d'un projet Bibliothèque de classes. Dans la plupart des cas, vous appelez le contrôle Windows à partir d'un autre projet. Lorsque vous déboguez le projet appelant, vous pouvez exécuter pas à pas le code de votre contrôle Windows, définir des points d'arrêt et effectuer d'autres opérations de débogage. Pour plus d'informations, consultez [Contrôles Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# et Visual Basic) : bibliothèque de contrôles Web  
+- (C# et Visual Basic) : bibliothèque de contrôles Web  
   
-     Pour plus d'informations, consultez [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
+   Pour plus d'informations, consultez [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md).  
   
--   (C++) : contrôle Active X MFC et contrôle ActiveX Smart Device MFC  
+- (C++) : contrôle Active X MFC et contrôle ActiveX Smart Device MFC  
   
-     Les contrôles ActiveX sont des contrôles téléchargeables depuis Internet sur un ordinateur client et qui peuvent être affichés et activés sur des pages Web.  
+   Les contrôles ActiveX sont des contrôles téléchargeables depuis Internet sur un ordinateur client et qui peuvent être affichés et activés sur des pages Web.  
   
-     Leur débogage est semblable à celui d'autres types de contrôles dans la mesure où ils ne peuvent pas être exécutés comme des applications autonomes, mais qu'ils doivent être incorporés dans une page Web HTML. Pour plus d'informations, consultez [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
+   Leur débogage est semblable à celui d'autres types de contrôles dans la mesure où ils ne peuvent pas être exécutés comme des applications autonomes, mais qu'ils doivent être incorporés dans une page Web HTML. Pour plus d'informations, consultez [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++) : DLL Smart Device MFC  
+- (C++) : DLL Smart Device MFC  
   
-     Pour plus d'informations, consultez [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
+   Pour plus d'informations, consultez [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md).  
   
- Cette section contient également des informations sur les rubriques suivantes :  
+  Cette section contient également des informations sur les rubriques suivantes :  
   
--   [Guide pratique pour déboguer à partir d’un projet DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Guide pratique pour déboguer à partir d’un projet DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Guide pratique pour déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Guide pratique pour déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md)  
   
- Cette rubrique contient les sections suivantes qui réunissent des informations relatives à la préparation du débogage des bibliothèques de classes :  
+  Cette rubrique contient les sections suivantes qui réunissent des informations relatives à la préparation du débogage des bibliothèques de classes :  
   
--   [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Procédures pour déboguer la DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Procédures pour déboguer la DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Contrôles sur une Page Web](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Contrôles sur une Page Web](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Génération d’une Version de débogage  
  Quelle que soit la façon dont vous démarrez le débogage, vérifiez que vous générez d'abord la version Debug de la DLL et que celle-ci se trouve à l'emplacement attendu par l'application. Cette étape semble évidente mais si vous l'omettez, l'application peut rechercher et charger une autre version de la DLL. Le programme continuera alors de s'exécuter, et vous vous demanderez pourquoi votre point d'arrêt n'a pas été atteint. Durant le processus de débogage, vous pouvez vérifier quelles DLL ont été chargées par votre programme en ouvrant la fenêtre **Modules** du débogueur. La fenêtre **Modules** répertorie chaque DLL ou EXE chargé au cours du processus de débogage. Pour plus d'informations, consultez [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ Les modèles suivants créent des DLL :
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Débogage de l'application appelante  
  Pour déboguer une DLL, commencez par déboguer l'application appelante, en général il s'agit d'un EXE ou d'une application Web. Pour cela, différentes possibilités s'offrent à vous.  
   
--   Si vous disposez d'un projet pour l'application appelante, vous pouvez ouvrir ce projet et démarrer l'exécution à partir du menu **Debug** . Pour plus d'informations, consultez [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Si vous disposez d'un projet pour l'application appelante, vous pouvez ouvrir ce projet et démarrer l'exécution à partir du menu **Debug** . Pour plus d'informations, consultez [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Si l'application appelante est un programme existant déjà déployé sur un ordinateur de test ou de production et qu'elle est en cours d'exécution, vous pouvez y attacher le débogueur. Utilisez cette méthode si la DLL est un contrôle hébergé par Internet Explorer ou un contrôle sur une page Web. Pour plus d'informations, consultez [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Si l'application appelante est un programme existant déjà déployé sur un ordinateur de test ou de production et qu'elle est en cours d'exécution, vous pouvez y attacher le débogueur. Utilisez cette méthode si la DLL est un contrôle hébergé par Internet Explorer ou un contrôle sur une page Web. Pour plus d'informations, consultez [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   Vous pouvez la déboguer à partir du projet de DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
+- Vous pouvez la déboguer à partir du projet de DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Vous pouvez la déboguer à partir de la fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. Dans ce cas, la fenêtre **Exécution** joue le rôle de l'application.  
+- Vous pouvez la déboguer à partir de la fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. Dans ce cas, la fenêtre **Exécution** joue le rôle de l'application.  
   
- Avant de commencer le débogage de l'application appelante, vous devez généralement définir un point d'arrêt dans la bibliothèque de classes. Pour plus d'informations, consultez [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque le point d'arrêt est atteint, vous pouvez exécuter le code pas à pas, en observant chaque action ligne par ligne, jusqu'à ce que vous ayez isolé le problème. Pour plus d'informations, consultez [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Avant de commencer le débogage de l'application appelante, vous devez généralement définir un point d'arrêt dans la bibliothèque de classes. Pour plus d'informations, consultez [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque le point d'arrêt est atteint, vous pouvez exécuter le code pas à pas, en observant chaque action ligne par ligne, jusqu'à ce que vous ayez isolé le problème. Pour plus d'informations, consultez [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Contrôles sur une Page Web  
  Pour déboguer un contrôle de page Web, créez une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui l'incorpore si elle n'existe pas déjà. Puis, placez des points d'arrêt dans le code de la page Web ainsi que dans le code du contrôle. Vous appelez alors la page Web à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

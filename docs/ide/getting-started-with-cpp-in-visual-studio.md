@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747350"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459671"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -151,7 +151,7 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 Quand cette génération est terminée, vous avez une nouvelle application prête à être copiée et exécutée dans une fenêtre d’invite de commandes. Cette application est très simple, mais il ne tient qu’à vous de créer des applications plus complexes.
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer d’autres exemples, consultez [Exemples Visual Studio](../ide/visual-studio-samples.md).
+Félicitations ! Vous avez terminé ce guide de démarrage rapide.
 
 ## <a name="see-also"></a>Voir aussi
 

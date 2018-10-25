@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907142"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
   
  Après avoir appliqué la mise à jour, les fonctionnalités d'outil de test codé de l'interface utilisateur [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 suivantes sont améliorées pour Windows 8 :  
   
--   Vous pouvez exécuter un test codé de l'interface utilisateur pour des contrôles Windows Presentation Foundation (WPF) basés sur le basé sur le Microsoft .NET Framework 4.5 sur un ordinateur qui exécute Windows 8.  
+- Vous pouvez exécuter un test codé de l'interface utilisateur pour des contrôles Windows Presentation Foundation (WPF) basés sur le basé sur le Microsoft .NET Framework 4.5 sur un ordinateur qui exécute Windows 8.  
   
--   Vous pouvez exécuter un test codé de l'interface utilisateur pour Internet Explorer 10 64 bits (x64) sur un ordinateur qui exécute Windows 8.  
+- Vous pouvez exécuter un test codé de l'interface utilisateur pour Internet Explorer 10 64 bits (x64) sur un ordinateur qui exécute Windows 8.  
   
- La mise à jour contient également des correctifs pour les problèmes suivants :  
+  La mise à jour contient également des correctifs pour les problèmes suivants :  
   
--   **Couverture du code :** impossibilité d'ouvrir un fichier de couverture du code (.coverage) créé par Visual Studio 2012 dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
+- **Couverture du code :** impossibilité d'ouvrir un fichier de couverture du code (.coverage) créé par Visual Studio 2012 dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
   
--   **Artefacts de test en échec :** votre équipe dispose d'un artefact de test assigné à un utilisateur non valide dans Team Foundation Server (TFS) 2010. Par exemple, un utilisateur a quitté l'entreprise, mais un cas de test lui est toujours assigné. Vous mettez à niveau TFS 2010 vers TFS 2012. Vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 pour vous connecter au serveur TFS mis à niveau. Vous n'êtes pas en mesure d'assigner l'artefact de test à l'un des utilisateurs TFS à l'aide de [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Artefacts de test en échec :** votre équipe dispose d'un artefact de test assigné à un utilisateur non valide dans Team Foundation Server (TFS) 2010. Par exemple, un utilisateur a quitté l'entreprise, mais un cas de test lui est toujours assigné. Vous mettez à niveau TFS 2010 vers TFS 2012. Vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 pour vous connecter au serveur TFS mis à niveau. Vous n'êtes pas en mesure d'assigner l'artefact de test à l'un des utilisateurs TFS à l'aide de [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Test de charge :** quand vous exécutez un test de charge avec un type de réseau autre que le profil de réseau local (LAN) sur un ordinateur qui exécute Windows 8, le pilote de l'émulateur réseau entraîne une défaillance du système d'exploitation. Pour plus d’informations, consultez [l’article 2736182 de la Base de connaissances](http://support.microsoft.com/kb/2736182).  
+- **Test de charge :** quand vous exécutez un test de charge avec un type de réseau autre que le profil de réseau local (LAN) sur un ordinateur qui exécute Windows 8, le pilote de l'émulateur réseau entraîne une défaillance du système d'exploitation. Pour plus d’informations, consultez [l’article 2736182 de la Base de connaissances](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Portage, migration et mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

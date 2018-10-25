@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode | Documents Microsoft
+title: IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04624f7a2b42fa50360841b91db4cb70b5e15ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1182158852e978cb78096eec6e60783317f1cc0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930457"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-Rend un nœud de programme disponibles pour utilisation par les moteurs de débogage (DEs) et la session de débogage responsable de la.  
+Rend un nœud de programme disponibles pour une utilisation par les moteurs de débogage (DEs) et la session de débogage manager (SDM).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,15 +41,15 @@ int PublishProgramNode(
   
 #### <a name="parameters"></a>Paramètres  
  `pProgramNode`  
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet qui représente le nœud de programme pour le rendre disponible.  
+ [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet qui représente le nœud de programme pour rendre disponibles.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet aux programmes d’être interrogé pour plus d’informations avant de sélectionner et de leur lancement pour le débogage.  
+ Cette méthode permet aux programmes d’être interrogé pour plus d’informations avant de sélectionner et de les lancer pour le débogage.  
   
- Pour supprimer un nœud du programme de disponibilité, appelez le [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) (méthode).  
+ Pour supprimer un nœud de programme à partir de la disponibilité, appelez le [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

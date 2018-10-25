@@ -9,12 +9,12 @@ description: La connexion peut échouer si des alias ou des noms conviviaux sont
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854466"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 
@@ -116,10 +116,10 @@ Une fois qu’un abonnement est attribué à l’abonné, il reçoit un e-mail l
 1. Accédez à https://my.visualstudio.com, puis cliquez sur **Créer un compte Microsoft**.
 
 2. Renseignez les champs :
-    - Entrez l’adresse e-mail ayant reçu le message de bienvenue dans la zone Someone@example.com.
-    - Créez votre mot de passe.
-    - Choisissez vos paramètres de type promotionnel.
-    - Cliquez sur **Suivant**.
+   - Entrez l’adresse e-mail ayant reçu le message de bienvenue dans la zone Someone@example.com.
+   - Créez votre mot de passe.
+   - Choisissez vos paramètres de type promotionnel.
+   - Cliquez sur **Suivant**.
 
 3. Réalisez les étapes de validation, puis cliquez sur **Suivant**.
 
@@ -141,10 +141,10 @@ Un abonnement Visual Studio vous a été attribué. Selon votre e-mail de bienve
 2. Cliquez sur Créer un compte Microsoft à droite.
 
 3. Remplissez le formulaire :
-    - Utilisez votre adresse e-mail d’entreprise dans la zone someone@example.com.
-    - Entrez un mot de passe.
-    - Sélectionnez vos préférences de type promotionnel.
-    - Cliquez sur Suivant
+   - Utilisez votre adresse e-mail d’entreprise dans la zone someone@example.com.
+   - Entrez un mot de passe.
+   - Sélectionnez vos préférences de type promotionnel.
+   - Cliquez sur Suivant
 
 4. Réalisez les étapes de validation du compte.
 

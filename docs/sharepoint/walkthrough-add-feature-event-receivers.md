@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948764"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité
   Récepteurs d’événements sont des méthodes qui s’exécutent lorsque les événements de fonctionnalité suivants se produisent dans SharePoint :
 
--   Une fonctionnalité est installée.
+- Une fonctionnalité est installée.
 
--   La fonctionnalité est activée.
+- La fonctionnalité est activée.
 
--   Une fonctionnalité est désactivée.
+- Une fonctionnalité est désactivée.
 
--   Une fonction est supprimée.
+- Une fonction est supprimée.
 
- Cette procédure pas à pas montre comment ajouter un récepteur d’événements à une fonctionnalité dans un projet SharePoint. Il illustre les tâches suivantes :
+  Cette procédure pas à pas montre comment ajouter un récepteur d’événements à une fonctionnalité dans un projet SharePoint. Il illustre les tâches suivantes :
 
--   Création d’un projet vide avec un récepteur d’événements de fonctionnalité.
+- Création d’un projet vide avec un récepteur d’événements de fonctionnalité.
 
--   Gérer le **FeatureDeactivating** (méthode).
+- Gérer le **FeatureDeactivating** (méthode).
 
--   À l’aide du modèle objet de projet SharePoint pour ajouter une annonce à la liste d’annonces.
+- À l’aide du modèle objet de projet SharePoint pour ajouter une annonce à la liste d’annonces.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :

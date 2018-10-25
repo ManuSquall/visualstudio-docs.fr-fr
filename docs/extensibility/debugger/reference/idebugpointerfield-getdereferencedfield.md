@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Documents Microsoft
+title: IDebugPointerField::GetDereferencedField | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77af1428dbdd0ea9f84000bda34ea8608b17cc24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 685499cae556a50a5e98e8fe32e8104098cc79e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933246"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 Cette méthode retourne le type d’objet vers lequel pointe cet objet de pointeur.  

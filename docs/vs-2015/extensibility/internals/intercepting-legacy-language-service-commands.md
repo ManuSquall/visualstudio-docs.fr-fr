@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829883"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interception des commandes du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], vous pouvez avoir les comm
   
  Vous disposez des options suivantes pour la gestion des commandes :  
   
--   Gérer la commande, puis passer la commande au filtre de commande suivant dans la chaîne.  
+- Gérer la commande, puis passer la commande au filtre de commande suivant dans la chaîne.  
   
--   Gérer la commande et ne transmettez pas de la commande au filtre de commande suivant.  
+- Gérer la commande et ne transmettez pas de la commande au filtre de commande suivant.  
   
--   Ne gèrent pas la commande, mais passer la commande au filtre de commande suivant.  
+- Ne gèrent pas la commande, mais passer la commande au filtre de commande suivant.  
   
--   Ignorer la commande. Ne les gèrent pas dans le filtre actuel et ne les transmettez pas au filtre suivant.  
+- Ignorer la commande. Ne les gèrent pas dans le filtre actuel et ne les transmettez pas au filtre suivant.  
   
- Pour plus d’informations sur les commandes qui doit gérer votre service de langage, consultez [commandes importantes pour les filtres du Service de langage](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Pour plus d’informations sur les commandes qui doit gérer votre service de langage, consultez [commandes importantes pour les filtres du Service de langage](../../extensibility/internals/important-commands-for-language-service-filters.md).
 

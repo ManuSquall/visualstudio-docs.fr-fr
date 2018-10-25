@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Documents Microsoft
+title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b35475bb56b417729fa70d0e980411ae0f0e3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b53b8f2cd7819650abbb4fc88a7ec3f4b6dfe21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903190"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Récupère l’index de base (limites inférieures) pour chaque index étant donné le nombre de dimensions dans le tableau.  
@@ -51,7 +51,7 @@ int GetBaseIndices (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Par exemple, cette fonction renvoie '5' pour le tableau créé par le code c# suivant :  
+ Par exemple, cette fonction retourne « 5 » pour le tableau créé par ce qui suit C# code :  
   
 ```  
 int[] lengths = { 12 };  

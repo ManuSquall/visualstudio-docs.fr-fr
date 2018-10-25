@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880505"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installation d’une Application de Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour installer une application de Shell, vous devez effectuer les étapes suivantes.  
   
--   Préparer votre solution.  
+- Préparer votre solution.  
   
--   Créer un package Windows Installer (MSI) pour votre application.  
+- Créer un package Windows Installer (MSI) pour votre application.  
   
--   Créer un programme d’amorçage du programme d’installation.  
+- Créer un programme d’amorçage du programme d’installation.  
   
- Tout le code d’exemple dans ce document est fourni à partir de la [exemple de déploiement d’interpréteur de commandes](http://go.microsoft.com/fwlink/?LinkId=262245), que vous pouvez télécharger à partir de la galerie de Code sur le site Web MSDN. L’exemple montre les résultats de l’exécution de chacune de ces étapes.  
+  Tout le code d’exemple dans ce document est fourni à partir de la [exemple de déploiement d’interpréteur de commandes](http://go.microsoft.com/fwlink/?LinkId=262245), que vous pouvez télécharger à partir de la galerie de Code sur le site Web MSDN. L’exemple montre les résultats de l’exécution de chacune de ces étapes.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer les procédures décrites dans cette rubrique, les outils suivants doivent être installés sur votre ordinateur.  
   
--   Le SDK Visual Studio  
+- Le SDK Visual Studio  
   
--   Le [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) version 3.6  
+- Le [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) version 3.6  
   
- L’exemple nécessite également le Microsoft Visualization et Modeling SDK, qui nécessitent pas tous les interpréteurs de commandes.  
+  L’exemple nécessite également le Microsoft Visualization et Modeling SDK, qui nécessitent pas tous les interpréteurs de commandes.  
   
 ## <a name="preparing-your-solution"></a>Préparation de votre Solution  
  Par défaut, les modèles de l’interpréteur de commandes de la build vers les packages VSIX, mais ce comportement est destiné principalement à des fins de débogage. Lorsque vous déployez une application de Shell, vous devez utiliser les packages MSI pour autoriser pour accéder au Registre et les redémarrages pendant l’installation. Pour préparer votre application pour le déploiement MSI, procédez comme suit.  

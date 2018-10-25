@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872406"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint
 
@@ -94,38 +94,38 @@ Vous pouvez spécifier les contrôles que vous souhaitez voir apparaître dans l
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Ajoutez le code suivant à la classe `WebPart1`. Ce code déclare les champs suivants :
+3. Ajoutez le code suivant à la classe `WebPart1` . Ce code déclare les champs suivants :
 
-    - Une grille de données pour afficher les employés dans le composant WebPart.
+   - Une grille de données pour afficher les employés dans le composant WebPart.
 
-    - Texte qui apparaît sur le contrôle qui est utilisé pour filtrer la grille de données.
+   - Texte qui apparaît sur le contrôle qui est utilisé pour filtrer la grille de données.
 
-    - Une étiquette qui affiche une erreur si la grille de données est impossible d’afficher les données.
+   - Une étiquette qui affiche une erreur si la grille de données est impossible d’afficher les données.
 
-    - Chaîne qui contient le chemin d’accès du fichier de données employé.
+   - Chaîne qui contient le chemin d’accès du fichier de données employé.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Ajoutez le code suivant à la classe `WebPart1`. Ce code ajoute une propriété personnalisée nommée `DataFilePath` au composant WebPart. Une propriété personnalisée est une propriété qui peut être définie dans SharePoint par l’utilisateur. Cette propriété obtient et définit l’emplacement d’un fichier de données XML qui est utilisé pour remplir la grille de données.
+4. Ajoutez le code suivant à la classe `WebPart1` . Ce code ajoute une propriété personnalisée nommée `DataFilePath` au composant WebPart. Une propriété personnalisée est une propriété qui peut être définie dans SharePoint par l’utilisateur. Cette propriété obtient et définit l’emplacement d’un fichier de données XML qui est utilisé pour remplir la grille de données.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
 5. Remplacez la méthode `CreateChildControls` par le code suivant. Ce code exécute les tâches suivantes :
 
-    - Ajoute la grille de données et l’étiquette que vous avez déclaré à l’étape précédente.
+   - Ajoute la grille de données et l’étiquette que vous avez déclaré à l’étape précédente.
 
-    - Lie la grille de données dans un fichier XML qui contient les données des employés.
+   - Lie la grille de données dans un fichier XML qui contient les données des employés.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Ajoutez la méthode suivante à la classe `WebPart1`. Ce code exécute les tâches suivantes :
+6. Ajoutez la méthode suivante à la classe `WebPart1` . Ce code exécute les tâches suivantes :
 
-    - Crée un verbe qui s’affiche dans le menu d’actions verbales WebPart du composant WebPart restitué.
+   - Crée un verbe qui s’affiche dans le menu d’actions verbales WebPart du composant WebPart restitué.
 
-    - Il gère l'événement qui est déclenché lorsque l'utilisateur sélectionne le verbe dans le menu d'actions verbales. Ce code filtre la liste des employés qui s’affiche dans la grille de données.
+   - Il gère l'événement qui est déclenché lorsque l'utilisateur sélectionne le verbe dans le menu d'actions verbales. Ce code filtre la liste des employés qui s’affiche dans la grille de données.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877294"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287480"
 ## <a name="cause"></a>Cause
  `IDisposable` n’est pas implémentée correctement. Parmi les raisons de ce problème sont répertoriées ici :
 
--   IDisposable est réimplémenté dans la classe.
+- IDisposable est réimplémenté dans la classe.
 
--   Finalize est substitué à nouveau.
+- Finalize est substitué à nouveau.
 
--   Dispose est substitué.
+- Dispose est substitué.
 
--   Dispose() n’est pas public, sealed ou nommée Dispose.
+- Dispose() n’est pas public, sealed ou nommée Dispose.
 
--   Dispose (bool) n’est pas protégé, virtuel ou non scellé.
+- Dispose (bool) n’est pas protégé, virtuel ou non scellé.
 
--   Dans les types non scellés, Dispose() doit appeler Dispose (true).
+- Dans les types non scellés, Dispose() doit appeler Dispose (true).
 
--   Pour les types unsealed, l’implémentation Finalize n’appelle pas un ou les deux dispose (bool) ou le finaliseur de la classe de cas.
+- Pour les types unsealed, l’implémentation Finalize n’appelle pas un ou les deux dispose (bool) ou le finaliseur de la classe de cas.
 
- Violation de l’un de ces modèles déclenche cet avertissement.
+  Violation de l’un de ces modèles déclenche cet avertissement.
 
- Chaque type IDisposable racine non scellé doit fournir sa propre méthode Dispose (bool) void virtuelle protégée. Dispose() doit appeler Dipose (true) et Finalize doit appeler la méthode Dispose (false). Si vous créez un type de IDisposable racine non scellé, vous devez définir dispose (bool) et l’appeler. Pour plus d’informations, consultez [de nettoyage des ressources non managées](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) dans le [instructions de conception Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) section de la documentation .NET Framework.
+  Chaque type IDisposable racine non scellé doit fournir sa propre méthode Dispose (bool) void virtuelle protégée. Dispose() doit appeler Dipose (true) et Finalize doit appeler la méthode Dispose (false). Si vous créez un type de IDisposable racine non scellé, vous devez définir dispose (bool) et l’appeler. Pour plus d’informations, consultez [de nettoyage des ressources non managées](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) dans le [instructions de conception Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) section de la documentation .NET Framework.
 
 ## <a name="rule-description"></a>Description de la règle
  Tous les types IDisposable doivent implémenter le modèle Dispose correctement.

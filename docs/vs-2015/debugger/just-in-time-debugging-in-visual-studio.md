@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940578"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Débogage just-in-time dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Pour activer ou désactiver le débogage juste-à-temps  
   
-1.  Ouvrez Visual Studio. Dans le menu **Outils** , cliquez sur **Options**.  
+1. Ouvrez Visual Studio. Dans le menu **Outils**, cliquez sur **Options**.  
   
-2.  Dans le **Options** boîte de dialogue, sélectionnez le **débogage** dossier.  
+2. Dans le **Options** boîte de dialogue, sélectionnez le **débogage** dossier.  
   
-3.  Dans le **débogage** dossier, sélectionnez le **juste-à-temps** page.  
+3. Dans le **débogage** dossier, sélectionnez le **juste-à-temps** page.  
   
-4.  Dans le **activer le débogage de ces types de code** zone, sélectionnez ou désactivez les types de programmes adéquats : **managé**, **natif**, ou **Script**.  
+4. Dans le **activer le débogage de ces types de code** zone, sélectionnez ou désactivez les types de programmes adéquats : **managé**, **natif**, ou **Script**.  
   
-     Pour désactiver le débogage juste-à-temps, vous devez travailler avec des privilèges de niveau administrateur. L'activation du débogage juste-à-temps définit une clé de Registre, que vous ne pouvez modifier que si vous disposez des privilèges d'administrateur.  
+    Pour désactiver le débogage juste-à-temps, vous devez travailler avec des privilèges de niveau administrateur. L'activation du débogage juste-à-temps définit une clé de Registre, que vous ne pouvez modifier que si vous disposez des privilèges d'administrateur.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
- Le débogage juste-à-temps peut toujours être activé même si Visual Studio n'est plus installé sur votre ordinateur. Lorsque Visual Studio n’est pas installé, vous ne pouvez pas désactiver le débogage à partir de Visual Studio juste-à-temps **Options** boîte de dialogue. Dans ce cas, vous pouvez désactiver le débogage juste-à-temps en modifiant le Registre Windows.  
+   Le débogage juste-à-temps peut toujours être activé même si Visual Studio n'est plus installé sur votre ordinateur. Lorsque Visual Studio n’est pas installé, vous ne pouvez pas désactiver le débogage à partir de Visual Studio juste-à-temps **Options** boîte de dialogue. Dans ce cas, vous pouvez désactiver le débogage juste-à-temps en modifiant le Registre Windows.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Pour désactiver le débogage juste-à-temps en modifiant le Registre  
   

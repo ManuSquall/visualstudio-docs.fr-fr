@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923379"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : ajouter un gestionnaire d'événements Click à chaque contrôle Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le jeu de combinaisons fonctionne comme suit :  
   
-1.  Lorsqu'un joueur choisit l'une des cases avec une icône masquée, le programme révèle l'icône en lui conférant une couleur noire.  
+1. Lorsqu'un joueur choisit l'une des cases avec une icône masquée, le programme révèle l'icône en lui conférant une couleur noire.  
   
-2.  Le joueur choisit ensuite une autre icône masquée.  
+2. Le joueur choisit ensuite une autre icône masquée.  
   
-3.  Si les deux icônes sélectionnées sont identiques, elles restent visibles. Dans le cas contraire, elles sont à nouveau masquées.  
+3. Si les deux icônes sélectionnées sont identiques, elles restent visibles. Dans le cas contraire, elles sont à nouveau masquées.  
   
- Pour que votre programme suive ces principes, vous devez ajouter un gestionnaire d'événements Click qui modifiera la couleur du contrôle Label choisi.  
+   Pour que votre programme suive ces principes, vous devez ajouter un gestionnaire d'événements Click qui modifiera la couleur du contrôle Label choisi.  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Pour ajouter un gestionnaire d'événements Click à chaque contrôle Label  
   

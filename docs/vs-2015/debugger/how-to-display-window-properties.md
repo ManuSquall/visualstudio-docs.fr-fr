@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 680346b640c5c6a8ad66129e30a1034b360bc084
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a83374015fcdada482099982f0294660412a0cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823708"
 ---
 # <a name="how-to-display-window-properties"></a>Comment : afficher les propriétés d'une fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Pour en savoir plus sur une fenêtre listée dans [Windows vue](../debugger/wind
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Pour ouvrir la boîte de dialogue Propriétés de la fenêtre  
   
-1.  Sélectionnez l’élément, puis choisissez **propriétés** à partir de la **vue** menu.  
+1. Sélectionnez l’élément, puis choisissez **propriétés** à partir de la **vue** menu.  
   
- Boîtes de dialogue de propriétés ne sont pas modales. Lorsque vous cliquez sur à partir d’un élément à un autre dans une fenêtre d’affichage, la boîte de dialogue est automatiquement actualisée avec plus d’informations sur chaque élément sélectionné.
+   Boîtes de dialogue de propriétés ne sont pas modales. Lorsque vous cliquez sur à partir d’un élément à un autre dans une fenêtre d’affichage, la boîte de dialogue est automatiquement actualisée avec plus d’informations sur chaque élément sélectionné.
 
 
 

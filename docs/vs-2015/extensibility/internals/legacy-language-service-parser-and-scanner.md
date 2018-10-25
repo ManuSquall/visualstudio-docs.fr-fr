@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07eeee3fa69407c17c20f55b7b8c0974bd4751b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829506"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Types d’analyseurs  
  Un analyseur de service de langage n’est pas identique à un analyseur utilisé dans le cadre d’un compilateur. Toutefois, ce type d’analyseur doit utiliser un analyseur et un analyseur, dans la même façon que d’un analyseur du compilateur.  
   
--   Un scanneur est utilisé pour identifier les types de jetons. Ces informations sont utilisées pour la coloration syntaxique et identifier rapidement les types de jetons qui peuvent déclencher d’autres opérations, par exemple, la correspondance des accolades. Ce scanneur est représenté par le <xref:Microsoft.VisualStudio.Package.IScanner> interface.  
+- Un scanneur est utilisé pour identifier les types de jetons. Ces informations sont utilisées pour la coloration syntaxique et identifier rapidement les types de jetons qui peuvent déclencher d’autres opérations, par exemple, la correspondance des accolades. Ce scanneur est représenté par le <xref:Microsoft.VisualStudio.Package.IScanner> interface.  
   
--   Un analyseur est utilisé pour décrire les fonctions et l’étendue des jetons. Ces informations sont utilisées dans les opérations IntelliSense pour identifier les éléments de langage, tels que les méthodes, les variables, les paramètres et les déclarations et pour fournir des listes de membres et les signatures de méthode en fonction du contexte. Cet analyseur est également utilisé pour localiser des paires d’éléments de langage correspondant, tels que des accolades et des parenthèses. Cet analyseur est accessible via la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
+- Un analyseur est utilisé pour décrire les fonctions et l’étendue des jetons. Ces informations sont utilisées dans les opérations IntelliSense pour identifier les éléments de langage, tels que les méthodes, les variables, les paramètres et les déclarations et pour fournir des listes de membres et les signatures de méthode en fonction du contexte. Cet analyseur est également utilisé pour localiser des paires d’éléments de langage correspondant, tels que des accolades et des parenthèses. Cet analyseur est accessible via la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
   
- Comment implémenter un scanneur et l’analyseur pour votre service de langage vous revient. Plusieurs ressources sont disponibles qui décrivent le fonctionnement des analyseurs et comment écrire votre propre analyseur. En outre, plusieurs produits gratuits et commerciaux sont disponibles qui facilite la création d’un analyseur.  
+  Comment implémenter un scanneur et l’analyseur pour votre service de langage vous revient. Plusieurs ressources sont disponibles qui décrivent le fonctionnement des analyseurs et comment écrire votre propre analyseur. En outre, plusieurs produits gratuits et commerciaux sont disponibles qui facilite la création d’un analyseur.  
   
 ### <a name="the-parsesource-parser"></a>L’analyseur ParseSource  
  Contrairement à un analyseur qui est utilisé dans le cadre d’un compilateur (où les jetons sont converties en une forme de code exécutable), un analyseur de service de langage peut être appelé pour de nombreuses raisons et dans de nombreux contextes différents. Comment implémenter cette approche dans les <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe vous revient. Il est important de garder à l’esprit que le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode peut être appelée sur un thread d’arrière-plan.  

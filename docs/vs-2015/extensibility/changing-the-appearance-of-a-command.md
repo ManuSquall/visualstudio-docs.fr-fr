@@ -17,12 +17,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53b4470a3df4a1501145b476991a475bddae6813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834251"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Modification de l’apparence d’une commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Vous pouvez fournir des commentaires à votre utilisateur en modifiant l’appar
   
  Pour modifier l’apparence d’une commande, effectuez l’une des actions suivantes :  
   
--   Spécifier les indicateurs appropriés dans la définition de commande dans le fichier de table de commande.  
+- Spécifier les indicateurs appropriés dans la définition de commande dans le fichier de table de commande.  
   
--   Utilisez le <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
+- Utilisez le <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
   
--   Implémentez le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> d’interface et de modifier les objets de commande brutes.  
+- Implémentez le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> d’interface et de modifier les objets de commande brutes.  
   
- Les étapes suivantes montrent comment rechercher et mettre à jour l’apparence d’une commande à l’aide de Managed Package Framework (MPF).  
+  Les étapes suivantes montrent comment rechercher et mettre à jour l’apparence d’une commande à l’aide de Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Pour modifier l’apparence d’une commande de menu  
   

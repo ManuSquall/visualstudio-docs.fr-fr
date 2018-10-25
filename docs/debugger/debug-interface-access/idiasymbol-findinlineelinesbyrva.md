@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByRVA | Documents Microsoft
+title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0577040b0ca3551c76e10a503fcb876dac2d7339
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 676e0ffeec21d453244df4938eea2cb0004ecf9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896482"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Récupère une énumération qui permet à un client parcourir les informations de numéro de ligne de toutes les fonctions qui sont incorporées, directement ou indirectement, de ce symbole dans l’adresse virtuelle relative (RVA) spécifié.  
+Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, dans ce symbole dans l’adresse virtuelle relative (RVA) spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,7 +32,7 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD           
   
 #### <a name="parameters"></a>Paramètres  
  `rva`  
- [in] Spécifie l’adresse en tant qu’une adresse RVA.  
+ [in] Spécifie l’adresse comme une RVA.  
   
  `length`  
  [in] Spécifie la plage d’adresses, en octets, pour couvrir cette requête.  

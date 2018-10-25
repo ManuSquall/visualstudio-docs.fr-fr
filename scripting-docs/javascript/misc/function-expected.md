@@ -1,5 +1,5 @@
 ---
-title: Fonction attendue | Documents Microsoft
+title: Fonction attendue | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928930"
 ---
 # <a name="function-expected"></a>Fonction attendue
-Soit vous avez tenté d’appeler une de le **prototype de fonction** méthodes sur un objet qui n’est pas un `Function` objet, ou utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur car **exemple** n’est pas une fonction.  
+Soit vous avez tenté d’appeler une de la **prototype de fonction** méthodes sur un objet qui n’était pas un `Function` objet, ou utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur, car **exemple** n’est pas une fonction.  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -39,7 +39,7 @@ var x = example();           // Try and call example as if it were a function.
   
 -   Appelez uniquement **prototype de fonction** méthodes sur `Function` objets.  
   
--   Assurez-vous que vous utilisez l’opérateur d’appel de fonction `()` pour appeler des fonctions uniquement.  
+-   Vérifiez que vous utilisez l’opérateur d’appel de fonction `()` pour appeler les fonctions uniquement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet de fonction](../../javascript/reference/function-object-javascript.md)   

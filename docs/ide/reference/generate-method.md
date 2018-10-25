@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c06aa8820635c876c05c6ac73c7de4c3c6581aa2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: feabd8276f65bfe0576a052d0ab8172264a41e35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872939"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Générer une méthode dans Visual Studio
 
@@ -36,24 +36,24 @@ Cette génération de code s’applique à :
 
    - C# :
 
-    ![Code C# mis en surbrillance](media/method-highlight-cs.png)
+       ![Code C# mis en surbrillance](media/method-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code VB mis en surbrillance](media/method-highlight-vb.png)
+       ![Code VB mis en surbrillance](media/method-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
-    ![Générer un aperçu de méthode](media/method-preview-cs.png)
+      ![Générer un aperçu de méthode](media/method-preview-cs.png)
 
-1. Sélectionnez **Générer une méthode** dans le menu déroulant.
+3. Sélectionnez **Générer une méthode** dans le menu déroulant.
 
    > [!TIP]
    > Utilisez le lien **Aperçu des modifications** en bas de la fenêtre d’aperçu [pour voir tous les changements](../../ide/preview-changes.md) qui seront apportés avant d’effectuer votre sélection.
@@ -62,11 +62,11 @@ Cette génération de code s’applique à :
 
    - C# :
 
-      ![Résultat de l’action Générer une méthode (C#)](media/method-result-cs.png)
+       ![Résultat de l’action Générer une méthode (C#)](media/method-result-cs.png)
 
    - Visual Basic :
 
-      ![Résultat de l’action Générer une méthode (VB)](media/method-result-vb.png)
+       ![Résultat de l’action Générer une méthode (VB)](media/method-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,31 +13,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48b9bc6f2797a6cf6c87da4e4bc2e2d83f84622a
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 97f0adad956786f3096174460aabd007e0cb8592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897860"
 ---
 # <a name="project-properties-reference"></a>Référence de propriétés de projet
 Découvrez-en plus sur la façon de configurer et personnaliser les propriétés de projet.
 
 ## <a name="project-properties-pages"></a>Pages de propriétés de projet
 
-|Titre|Description|
-|-----------|-----------------|
-|[Page Application, Concepteur de projets (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Utilisez cette page pour spécifier les paramètres d’application et les propriétés d’un projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|
-|[Page Application, Concepteur de projets (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Utilisez cette page pour spécifier les paramètres d’application et les propriétés d’un projet [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|
-|[Événements de build, page du Concepteur de projets (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|Utilisez ce volet pour spécifier des instructions de configuration de build.|
-|[Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)|Utilisez ce volet pour spécifier les propriétés de configuration de build d’un projet [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|
-|[Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|Utilisez cette page pour spécifier les propriétés de compilation des projets [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|
-|[Page Déboguer, Concepteur de projet](../../ide/reference/debug-page-project-designer.md)|Utilisez cette page pour spécifier les propriétés de débogage d’un projet.|
-|[Analyse du code, Concepteur de projets](../../ide/reference/code-analysis-project-designer.md)|Utilisez cette page pour configurer l’outil d’analyse du code.|
-|[Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)|Utilisez cette page pour configurer les propriétés de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
-|[Page Références, Concepteur de projets (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|Utilisez cette page pour gérer les références utilisées par un projet.|
-|[Page Sécurité, Concepteur de projet](../../ide/reference/security-page-project-designer.md)|Utilisez cette page pour configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées à l’aide d’un déploiement [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
-|[Page Signature, Concepteur de projet](../../ide/reference/signing-page-project-designer.md)|Utilisez cette page pour signer les manifestes d’application et de déploiement, ainsi que pour signer l’assembly.|
+| Titre | Description |
+| - | - |
+| [Page Application, Concepteur de projets (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Utilisez cette page pour spécifier les paramètres d’application et les propriétés d’un projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
+| [Page Application, Concepteur de projets (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Utilisez cette page pour spécifier les paramètres d’application et les propriétés d’un projet [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
+| [Événements de build, page du Concepteur de projets (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) | Utilisez ce volet pour spécifier des instructions de configuration de build. |
+| [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md) | Utilisez ce volet pour spécifier les propriétés de configuration de build d’un projet [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
+| [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) | Utilisez cette page pour spécifier les propriétés de compilation des projets [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
+| [Page Déboguer, Concepteur de projet](../../ide/reference/debug-page-project-designer.md) | Utilisez cette page pour spécifier les propriétés de débogage d’un projet. |
+| [Analyse du code, Concepteur de projets](../../ide/reference/code-analysis-project-designer.md) | Utilisez cette page pour configurer l’outil d’analyse du code. |
+| [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md) | Utilisez cette page pour configurer les propriétés de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
+| [Page Références, Concepteur de projets (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md) | Utilisez cette page pour gérer les références utilisées par un projet. |
+| [Page Sécurité, Concepteur de projet](../../ide/reference/security-page-project-designer.md) | Utilisez cette page pour configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées à l’aide d’un déploiement [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
+| [Page Signature, Concepteur de projet](../../ide/reference/signing-page-project-designer.md) | Utilisez cette page pour signer les manifestes d’application et de déploiement, ainsi que pour signer l’assembly. |
 
 ## <a name="see-also"></a>Voir aussi
 

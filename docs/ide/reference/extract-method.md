@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4b5a818a75399fc4ce29fb7f2bec6332dac0585
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930594"
 ---
 # <a name="extract-a-method-refactoring"></a>Extraire une méthode (refactorisation)
 
@@ -41,21 +41,21 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Code mis en surbrillance (C#)](media/extractmethod-highlight-cs.png)
+       ![Code mis en surbrillance (C#)](media/extractmethod-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code mis en surbrillance (Visual Basic)](media/extractmethod-highlight-vb.png)
+       ![Code mis en surbrillance (Visual Basic)](media/extractmethod-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl+R**, puis **Ctrl+M**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire la méthode** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **Ctrl+R**, puis **Ctrl+M**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire la méthode** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
-     - Sélectionnez **Modifier > Refactoriser > Extraire la méthode**.
-     - Cliquez avec le bouton droit sur le code, puis sélectionnez **Refactoriser > Extraire > Extraire la méthode**.
-     - Cliquez avec le bouton droit sur le code et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire la méthode** dans la fenêtre contextuelle d’aperçu.
+      - Sélectionnez **Modifier > Refactoriser > Extraire la méthode**.
+      - Cliquez avec le bouton droit sur le code, puis sélectionnez **Refactoriser > Extraire > Extraire la méthode**.
+      - Cliquez avec le bouton droit sur le code et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire la méthode** dans la fenêtre contextuelle d’aperçu.
 
    La méthode sera immédiatement créée. À partir d’ici, il vous suffit de taper le nouveau nom de la méthode pour la renommer.
 
@@ -64,13 +64,13 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Renommer la méthode (C#)](media/extractmethod-rename-cs.png)
+      ![Renommer la méthode (C#)](media/extractmethod-rename-cs.png)
 
    - Visual Basic :
 
-    ![Renommer la méthode (Visual Basic)](media/extractmethod-rename-vb.png)
+      ![Renommer la méthode (Visual Basic)](media/extractmethod-rename-vb.png)
 
-1. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
+3. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
 ## <a name="see-also"></a>Voir aussi
 

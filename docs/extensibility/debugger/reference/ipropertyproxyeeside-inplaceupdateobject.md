@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InPlaceUpdateObject | Documents Microsoft
+title: IPropertyProxyEESide::InPlaceUpdateObject | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf62b75fb421cdfb6ad323fbdd12958f93991254
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed69657823ac5e3ae821304aa6ffdbee55f39a70
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847615"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Met à jour des données de l’objet avec l’objet de données spécifié et retourne un nouvel objet de données représentant les nouvelles données de l’objet.  
@@ -46,17 +46,17 @@ int InPlaceUpdateObject(
  [in] Un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les nouvelles données.  
   
  `dataOut`  
- [out] Retourne un nouveau `IEEDataStorage` objet contenant les données remplacées.  
+ [out] Retourne un nouvel `IEEDataStorage` objet contenant les données remplacées.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode met à jour les données de l’objet. Les données dans la liste retournée [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet ne doive pas être le même que les données d’entrant `IEEDataStorage` objet, mais que l’objet retourné doit refléter la valeur actuelle de la propriété.  
+ Cette méthode met à jour les données de l’objet. Les données dans la liste retournée [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet n’a pas besoin être le même que les données d’entrant `IEEDataStorage` objet, mais l’objet retourné doit refléter la valeur actuelle de la propriété.  
   
- L’objet de données entrant n’est pas généralement implémentée par le Java EE. Toutefois, l’objet retourné par cette méthode est toujours implémenté par EE, ce qui vous permet du mettre en œuvre EE la `IEEDataStorage` interface sur toute classe est souhaitée.  
+ L’objet de données entrantes n’est pas généralement implémentée par le EE. Toutefois, l’objet retourné par cette méthode est toujours implémentée par EE, ce qui vous permet de l’implémenter EE la `IEEDataStorage` interface sur toute classe est souhaitée.  
   
- Le [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) méthode crée un objet de données basé sur l’objet de données entrantes, mais n’affecte pas les données d’origine de la propriété.  
+ Le [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) méthode crée un objet de données basé sur l’objet de données entrantes mais n’affecte pas les données d’origine de la propriété.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

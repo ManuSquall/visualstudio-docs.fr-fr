@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077576"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879250"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Journalisation dans un environnement multiprocesseur
 La capacité de MSBuild à utiliser plusieurs processeurs peut fortement diminuer le temps de génération d’un projet. Elle rend cependant plus complexe la journalisation. Dans un environnement à un seul processeur, le journal (logger) peut gérer les événements entrants, les messages, les avertissements et les erreurs de façon prévisible et séquentielle. Cependant, dans un environnement multiprocesseur, des événements provenant de différentes sources peuvent arriver simultanément ou dans le désordre. MSBuild fournit un nouveau journal prenant en charge plusieurs processeurs et permet la création « de journaux de transfert » personnalisés.  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  Pour plus d’informations, consultez [Créer des journaux de transfert](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Attachement d’un journal distribué  
- Pour attacher un journal distribué sur une génération en ligne de commande, utilisez le commutateur `/distributedlogger` (ou sa version abrégée `/dl`). Le format de nom des types et des classes de journal est le même que celui du commutateur `/logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : un journal de transfert et un journal central. Voici un exemple d’attachement d’un journal distribué :  
+ Pour attacher un journal distribué sur une génération en ligne de commande, utilisez le commutateur `-distributedlogger` (ou sa version abrégée `-dl`). Le format de nom des types et des classes de journal est le même que celui du commutateur `-logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : un journal de transfert et un journal central. Voici un exemple d’attachement d’un journal distribué :  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- Un astérisque (*) sépare les deux noms de journaux dans le commutateur `/dl`.  
+ Un astérisque (*) sépare les deux noms de journaux dans le commutateur `-dl`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)   

@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862760"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions du service de langage et de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
   
  Voici quelques-uns des types de base des extensions de l’éditeur :  
   
--   Marges et les barres de défilement  
+- Marges et les barres de défilement  
   
--   Balises  
+- Balises  
   
--   Ornements  
+- Ornements  
   
--   Options  
+- Options  
   
--   IntelliSense  
+- IntelliSense  
   
- Pour plus d’informations sur les points d’extension de l’éditeur, consultez [Service de langage et les Points d’Extension Éditeur](../extensibility/language-service-and-editor-extension-points.md).  
+  Pour plus d’informations sur les points d’extension de l’éditeur, consultez [Service de langage et les Points d’Extension Éditeur](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Déploiement d’Extensions de l’éditeur  
  Dans Visual Studio, vous déployez des extensions de l’éditeur en lui ajoutant un fichier de métadonnées nommé source.extension.vsixmanifest à la solution, générer la solution et ensuite une copie des fichiers binaires et le manifeste dans un dossier qui est connu pour Visual Studio. Le fichier manifest définit les faits de base sur l’extension (par exemple, nom, auteur, version et type de contenu). Pour plus d’informations sur le fichier de manifeste VSIX et comment déployer des extensions, consultez [de livraison des Extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

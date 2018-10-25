@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::getSymbolsByAddr | Documents Microsoft
+title: IDiaSession::getSymbolsByAddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a371e6a597c5c708ad296a2feb6e2dc13e47283
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c266839334184dc40af6424147dcb8b59420ee5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913993"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 Récupère un énumérateur qui recherche les symboles dans l’ordre de leurs adresses.  
@@ -34,7 +34,7 @@ HRESULT getSymbolsByAddr(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnumbyAddr`  
- [out] Retourne un [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) objet. Cette interface permet de rechercher des symboles dans le magasin de symboles à l’emplacement de mémoire.  
+ [out] Retourne un [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) objet. Cette interface permet de rechercher des symboles dans le magasin de symboles par emplacement de mémoire.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

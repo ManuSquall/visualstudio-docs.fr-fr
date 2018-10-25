@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887589"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284685"
 ## <a name="rule-description"></a>Description de la règle
  Les méthodes qui ne sont pas prévus de lever des exceptions peuvent être classés comme suit :
 
--   Méthodes Get de propriété
+- Méthodes Get de propriété
 
--   Méthodes d’accesseur d’événement
+- Méthodes d’accesseur d’événement
 
--   Méthodes Equals
+- Méthodes Equals
 
--   Méthodes GetHashCode
+- Méthodes GetHashCode
 
--   Méthodes ToString
+- Méthodes ToString
 
--   Constructeurs statiques
+- Constructeurs statiques
 
--   Finaliseurs
+- Finaliseurs
 
--   Supprimer des méthodes
+- Supprimer des méthodes
 
--   Opérateurs d'égalité
+- Opérateurs d'égalité
 
--   Opérateurs de Cast implicite
+- Opérateurs de Cast implicite
 
- Les sections suivantes décrivent ces types de méthode.
+  Les sections suivantes décrivent ces types de méthode.
 
 ### <a name="property-get-methods"></a>Méthodes Get de propriété
  Les propriétés sont essentiellement des champs intelligents. Par conséquent, elles doivent se comporter comme un champ autant que possible. Les champs ne lèvent pas d’exceptions et les propriétés doivent. Si vous avez une propriété qui lève une exception, envisagez d’en faire une méthode.
@@ -91,22 +92,22 @@ ms.locfileid: "49284685"
 ### <a name="equals-methods"></a>Méthodes Equals
  Ce qui suit **est égal à** méthodes lever d’exceptions :
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- Un **est égal à** méthode doit retourner `true` ou `false` au lieu de lever une exception. Par exemple, si égal est passé de deux types incompatibles elle doit simplement retourner `false` au lieu de lever un <xref:System.ArgumentException>.
+  Un **est égal à** méthode doit retourner `true` ou `false` au lieu de lever une exception. Par exemple, si égal est passé de deux types incompatibles elle doit simplement retourner `false` au lieu de lever un <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Méthodes GetHashCode
  Ce qui suit **GetHashCode** méthodes généralement lever d’exceptions :
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** doit toujours retourner une valeur. Sinon, vous pouvez perdre des éléments de la table de hachage.
+  **GetHashCode** doit toujours retourner une valeur. Sinon, vous pouvez perdre des éléments de la table de hachage.
 
- Les versions de **GetHashCode** qui prennent un argument peut lever une <xref:System.ArgumentException>. Toutefois, **Object.GetHashCode** ne doit jamais lever une exception.
+  Les versions de **GetHashCode** qui prennent un argument peut lever une <xref:System.ArgumentException>. Toutefois, **Object.GetHashCode** ne doit jamais lever une exception.
 
 ### <a name="tostring-methods"></a>Méthodes ToString
  Le débogueur utilise <xref:System.Object.ToString%2A?displayProperty=fullName> pour afficher des informations sur les objets au format de chaîne. Par conséquent, **ToString** ne devez pas modifier l’état d’un objet et lever d’exceptions.

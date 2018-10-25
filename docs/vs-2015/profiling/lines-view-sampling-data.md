@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a972d529b93445c1c66e9418b7d8f3e068b005c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932986"
 ---
 # <a name="lines-view---sampling-data"></a>Lignes, vue - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ La vue Lignes des données d'échantillonnage répertorie les données de perfor
   
  Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions. Une instruction est identifiée par les éléments suivants :  
   
--   Le fichier source contenant l’instruction de fonction.  
+- Le fichier source contenant l’instruction de fonction.  
   
--   La fonction contenant l’instruction.  
+- La fonction contenant l’instruction.  
   
--   La ligne source au niveau de laquelle l’instruction commence.  
+- La ligne source au niveau de laquelle l’instruction commence.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction commence.  
+- Le caractère de la ligne source au niveau duquel l’instruction commence.  
   
--   La ligne source au niveau de laquelle l’instruction se termine.  
+- La ligne source au niveau de laquelle l’instruction se termine.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction se termine.  
+- Le caractère de la ligne source au niveau duquel l’instruction se termine.  
   
- La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
+  La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
   
- Par définition, une instruction n’appelle pas d’autres fonctions. Par conséquent, seules les valeurs exclusives apparaissent.  
+  Par définition, une instruction n’appelle pas d’autres fonctions. Par conséquent, seules les valeurs exclusives apparaissent.  
   
 |Colonne|Description|  
 |------------|-----------------|  

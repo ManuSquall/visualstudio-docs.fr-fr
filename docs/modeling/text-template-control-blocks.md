@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812022"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :
@@ -64,7 +64,7 @@ Found another one!
 ```
 
 > [!WARNING]
->  Utilisez toujours {...} pour délimiter les instructions imbriquées qui contiennent le texte brut incorporé. L'exemple suivant peut ne pas fonctionner correctement :
+>  Utilisez toujours {...} pour délimiter les instructions imbriquées qui contiennent du texte brut incorporé. L'exemple suivant peut ne pas fonctionner correctement :
 >
 >  `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>Bloc de contrôle d'expression
@@ -120,7 +119,7 @@ Some text.
 > [!NOTE]
 >  Un bloc de contrôle de fonctionnalité de classe ne doit pas être suivi de blocs de contrôle standard dans le même fichier modèle. Toutefois, cette restriction ne s'applique pas au résultat de l'utilisation de directives `<#@include#>`. Chaque fichier inclus peut avoir des blocs standard suivis de blocs de fonctionnalité de classe.
 
- Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Par exemple :
+ Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Exemple :
 
 ```
 <#+
@@ -144,11 +143,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Comment utiliser les blocs de contrôle
- Tout le code contenu dans chacun des blocs de contrôle d'expression et standard d'un modèle unique (y compris celui figurant dans les modèles inclus) est combiné pour former la méthode `TransformText()` du code généré. (Pour plus d’informations sur l’inclusion d’autres modèles de texte avec le `include` directive, voir [Directives de modèle de texte T4](../modeling/t4-text-template-directives.md).)
+ Tout le code contenu dans chacun des blocs de contrôle d'expression et standard d'un modèle unique (y compris celui figurant dans les modèles inclus) est combiné pour former la méthode `TransformText()` du code généré. (Pour plus d’informations sur l’inclusion d’autres modèles de texte avec le `include` directive, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).)
 
  Vous devez tenir compte des considérations suivantes quand vous utilisez des blocs de contrôle :
 
--   **Langage.** Vous pouvez utiliser du code C# ou Visual Basic dans un modèle de texte. Le langage par défaut est C#, mais vous pouvez spécifier Visual Basic avec le paramètre `language` de la directive `template`. (Pour plus d’informations sur la `template` directive, voir [Directives de modèle de texte T4](../modeling/t4-text-template-directives.md).)
+-   **Langage.** Vous pouvez utiliser du code C# ou Visual Basic dans un modèle de texte. Le langage par défaut est C#, mais vous pouvez spécifier Visual Basic avec le paramètre `language` de la directive `template`. (Pour plus d’informations sur la `template` directive, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).)
 
      Le langage que vous utilisez dans les blocs de contrôle n'a aucun rapport avec le langage ou le format du texte que vous générez dans un modèle de texte. Vous pouvez générer du code C# en utilisant du code Visual Basic ou vice versa.
 

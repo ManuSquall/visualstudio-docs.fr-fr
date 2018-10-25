@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums | Documents Microsoft
+title: IDebugClassField::EnumNestedEnums | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea28f2a455d3528f083ba2acb2e9e4ad8989319
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfdfc8245634f0d674b1ced435a90504c8893d50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815661"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
-Crée un énumérateur pour les énumérateurs imbriqués de cette classe.  
+Crée un énumérateur pour les énumérateurs imbriquées de cette classe.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,10 +41,10 @@ int EnumNestedEnums(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des énumérations imbriquées. Retourne une valeur null s’il n’y aucun énumérations imbriquées.  
+ [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des énumérations imbriquées. Retourne une valeur null si aucun énumérations imbriquées.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’y a aucune énumérateurs imbriqués. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il en existe aucun énumérateurs imbriqués. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
  Chaque élément de l’énumération est un [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) objet décrivant une énumération imbriquée.  

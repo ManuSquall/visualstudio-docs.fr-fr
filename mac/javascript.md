@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223977"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881070"
 ---
 # <a name="javascript-support"></a>Prise en charge de JavaScript
 
@@ -34,7 +34,7 @@ Dans la boîte de dialogue Nouveau fichier, sélectionnez **Web > Fichier JS vid
 
 ## <a name="intellisense"></a>IntelliSense
 
-Visual Studio pour Mac utilise [JavaScript Language Service](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) pour fournir Intellisense. Vous disposez ainsi de la saisie semi-automatique du code, d’informations sur les paramètres et de listes de membres quand vous écrivez du code.
+Visual Studio pour Mac utilise [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) pour fournir Intellisense. Vous disposez ainsi de la saisie semi-automatique du code, d’informations sur les paramètres et de listes de membres quand vous écrivez du code.
 
 JavaScript Intellisense dans Visual Studio pour Mac peut reposer sur l’inférence de type, JSDoc ou la déclaration TypeScript.
 

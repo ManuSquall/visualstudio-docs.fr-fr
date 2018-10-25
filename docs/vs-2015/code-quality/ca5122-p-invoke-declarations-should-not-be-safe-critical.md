@@ -14,15 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6a3b9dc87abf80b951aace8a5e4bea09d9da3944
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad12cf02ebe237d690e0f10696840267d90d9070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904452"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 : les déclarations P/Invoke ne doivent pas être sécurisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
@@ -43,7 +44,6 @@ public class C
     [DllImport("kernel32.dll")]
     public static extern bool Beep(int frequency, int duration); // CA5122 – safe critical p/invoke
    }
-
 ```
 
  Dans cet exemple, `C.Beep(...)` a été marqué comme méthode critique sécurisée.
@@ -69,7 +69,6 @@ class C
       return BeepPInvoke(frequency, duration);
    }
 }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements

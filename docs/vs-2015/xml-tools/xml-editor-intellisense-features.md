@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830741"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
 ## <a name="intellisense-in-an-xslt-document"></a>IntelliSense dans un document XSLT  
  Après avoir ajouté un modèle nommé ou un attribut à votre document XSLT, vous pouvez utiliser IntelliSense pour insérer les éléments suivants :  
   
--   Noms d'ensemble d'attributs.  
+- Noms d'ensemble d'attributs.  
   
--   Modes de modèle.  
+- Modes de modèle.  
   
--   Noms de modèle.  
+- Noms de modèle.  
   
--   Noms de paramètre pour un mode donné.  
+- Noms de paramètre pour un mode donné.  
   
--   Noms de paramètre pour un modèle nommé donné.  
+- Noms de paramètre pour un modèle nommé donné.  
   
- Pour plus d’informations, consultez [procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) rubrique.  
+  Pour plus d’informations, consultez [procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) rubrique.  
   
 ## <a name="auto-completion"></a>Remplissage automatique  
  L'éditeur XML facilite également l'édition du XML en complétant automatiquement la syntaxe XML requise. Par exemple, si vous entrez la balise de début suivante :  
@@ -72,19 +72,19 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
   
  De même, l'éditeur XML insère automatiquement la syntaxe XML suivante :  
   
--   Fin d'une instruction de traitement : `?>`  
+- Fin d'une instruction de traitement : `?>`  
   
--   Fin d'un bloc CDATA : `]]>`  
+- Fin d'un bloc CDATA : `]]>`  
   
--   Fin d'un commentaire : `-->`  
+- Fin d'un commentaire : `-->`  
   
--   Fin d'une déclaration DTD : `>`  
+- Fin d'une déclaration DTD : `>`  
   
- L'éditeur XML offre également la possibilité d'insérer une déclaration d'espace de noms si vous sélectionnez un attribut ou un élément qualifié d'un espace de noms à partir d'une liste IntelliSense alors que l'espace de noms de cet élément ou attribut ne figure pas encore dans la portée.  
+  L'éditeur XML offre également la possibilité d'insérer une déclaration d'espace de noms si vous sélectionnez un attribut ou un élément qualifié d'un espace de noms à partir d'une liste IntelliSense alors que l'espace de noms de cet élément ou attribut ne figure pas encore dans la portée.  
   
- Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSense, sachant que le préfixe est lié à l'espace de noms `http://books` qui n'a pas encore été déclaré dans le document, l'éditeur XML insère automatiquement la déclaration d'espace de noms requise. Il en résulte le texte XML suivant :  
+  Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSense, sachant que le préfixe est lié à l'espace de noms `http://books` qui n'a pas encore été déclaré dans le document, l'éditeur XML insère automatiquement la déclaration d'espace de noms requise. Il en résulte le texte XML suivant :  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Accolades correspondantes  
  L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (CTRL+]) pour passer d'une accolade à son correspondant.  

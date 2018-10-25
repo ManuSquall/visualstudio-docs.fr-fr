@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949306"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Pour résoudre les problèmes d’un VSPackage manquant ou une de ses dépendances  
   
-1.  Pour le code managé, assurez-vous que les chemins d’accès de référence sont corrects.  
+1. Pour le code managé, assurez-vous que les chemins d’accès de référence sont corrects.  
   
-    1.  Dans le menu **Projet**, cliquez sur **Propriétés**.  
+   1.  Dans le menu **Projet**, cliquez sur **Propriétés**.  
   
-    2.  Sélectionnez le **références** onglet dans le **Pages de propriétés** boîte de dialogue et assurez-vous que tous les chemins d’accès sont corrects. Vous pouvez également utiliser le **Explorateur d’objets** pour rechercher les objets référencés.  
+   2.  Sélectionnez le **références** onglet dans le **Pages de propriétés** boîte de dialogue et assurez-vous que tous les chemins d’accès sont corrects. Vous pouvez également utiliser le **Explorateur d’objets** pour rechercher les objets référencés.  
   
-         Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
+        Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
   
-2.  Du code non managé, rechercher le CLSID du VSPackage dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nœud de Registre CLSID :  
+2. Du code non managé, rechercher le CLSID du VSPackage dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nœud de Registre CLSID :  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<version >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version >* \CLSID  
   
- Vérifiez que l’entrée InprocServer32 a le chemin correct de la dll de VSPackage.  
+   Vérifiez que l’entrée InprocServer32 a le chemin correct de la dll de VSPackage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPackages](../extensibility/internals/vspackages.md)

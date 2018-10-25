@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880557"
 ---
 # <a name="detecting-system-requirements"></a>Détection de la configuration système requise
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Un VSPackage ne peut pas fonctionner, sauf si Visual Studio est installé. Lorsq
 ## <a name="detecting-visual-studio-editions"></a>Détection des éditions de Visual Studio  
  Pour déterminer si une édition de Visual Studio est installée, vérifiez que la valeur de la clé de Registre d’installation est (REG_DWORD) 1 dans le dossier approprié, comme indiqué dans le tableau suivant. Notez qu’il existe une hiérarchie des éditions de Visual Studio :  
   
-1.  Entreprise  
+1. Entreprise  
   
-2.  Professionnel  
+2. Professionnel  
   
-3.  Communauté  
+3. Communauté  
   
- Lorsqu’une édition « supérieure » est installée, les clés de Registre pour cette édition, ainsi que pour les éditions de « inférieures » sont ajoutés. Autrement dit, si l’édition Enterprise est installée, la clé d’installation est définie sur 1 pour l’entreprise, ainsi que pour les éditions Professional et Community. Par conséquent, vous devez ne vérifier que pour l’édition « le plus élevée », que vous avez besoin.  
+   Lorsqu’une édition « supérieure » est installée, les clés de Registre pour cette édition, ainsi que pour les éditions de « inférieures » sont ajoutés. Autrement dit, si l’édition Enterprise est installée, la clé d’installation est définie sur 1 pour l’entreprise, ainsi que pour les éditions Professional et Community. Par conséquent, vous devez ne vérifier que pour l’édition « le plus élevée », que vous avez besoin.  
   
 > [!NOTE]
 >  Dans la version 64 bits de l’Éditeur du Registre, les clés de 32 bits sont affichées sous HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Les clés de Visual Studio sont sous HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  

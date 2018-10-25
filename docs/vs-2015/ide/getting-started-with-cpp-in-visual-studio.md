@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816594"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
 #### <a name="to-create-a-console-app"></a>Pour créer une application console  
   
-1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-     ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-2.  Dans la catégorie **Visual C++**, choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.  
+2. Dans la catégorie **Visual C++**, choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.  
   
-     ![Modèle d’application console Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
+    ![Modèle d’application console Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
   
-3.  Lorsque l’Assistant Application Win32 s’affiche, sélectionnez le bouton **Terminer** .  
+3. Lorsque l’Assistant Application Win32 s’affiche, sélectionnez le bouton **Terminer** .  
   
-     ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
+    ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
   
- La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l’ **Explorateur de solutions**:  
+   La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l’ **Explorateur de solutions**:  
   
- Figure 4 : Éléments du projet  
+   Figure 4 : Éléments du projet  
   
- ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
+   ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> Ajouter du code à l’application  
  Ensuite, vous ajouterez le code pour afficher le mot « Hello » dans la fenêtre de console.  
@@ -117,40 +117,40 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
 #### <a name="to-add-a-breakpoint"></a>Pour ajouter un point d’arrêt  
   
-1.  Ajoutez un point d’arrêt à partir de la barre de menus dans la ligne `return 0;`. Vous pouvez également cliquer dans la marge de gauche pour définir un point d’arrêt.  
+1. Ajoutez un point d’arrêt à partir de la barre de menus dans la ligne `return 0;`. Vous pouvez également cliquer dans la marge de gauche pour définir un point d’arrêt.  
   
-     ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
+    ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
-     Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.  
+    Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.  
   
-2.  Appuyez sur la touche F5 pour démarrer le débogage.  
+2. Appuyez sur la touche F5 pour démarrer le débogage.  
   
-     Le débogueur démarre et une fenêtre de console apparaît avec le mot **Hello**.  
+    Le débogueur démarre et une fenêtre de console apparaît avec le mot **Hello**.  
   
-     ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
+    ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
   
-3.  Appuyez sur Maj+F5 pour arrêter le débogage.  
+3. Appuyez sur Maj+F5 pour arrêter le débogage.  
   
- Pour plus d’informations, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).  
+   Pour plus d’informations, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a> Générer une version Release de l’application  
  Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l'application.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version Release  
   
-1.  Dans la barre de menus, supprimez les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.  
+1. Dans la barre de menus, supprimez les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.  
   
-     ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  Changez la configuration de build pour GreetingsConsoleApp de **Debug** en **Release**.  
+2. Changez la configuration de build pour GreetingsConsoleApp de **Debug** en **Release**.  
   
-     ![Générer une version Release de l’application](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+    ![Générer une version Release de l’application](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
-3.  Générez la solution.  
+3. Générez la solution.  
   
-     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- Félicitations ! Vous avez terminé cette procédure. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).  
+   Félicitations ! Vous avez terminé cette procédure. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : création d’une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

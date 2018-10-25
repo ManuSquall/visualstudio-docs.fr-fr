@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880752"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Comment : créer manuellement des modèles Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ La création d’un modèle web est différente de la création d’autres types
   
 ### <a name="to-manually-create-a-web-template"></a>Pour créer manuellement un modèle web  
   
-1.  Créez un projet web.  
+1. Créez un projet web.  
   
-2.  Modifiez ou supprimez les fichiers du projet, ou ajoutez de nouveaux fichiers au projet.  
+2. Modifiez ou supprimez les fichiers du projet, ou ajoutez de nouveaux fichiers au projet.  
   
-3.  Créez un fichier XML et enregistrez-le à l’aide de l’extension de nom de fichier .vstemplate dans le même répertoire que votre projet. Ne l’ajoutez pas au projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Créez un fichier XML et enregistrez-le à l’aide de l’extension de nom de fichier .vstemplate dans le même répertoire que votre projet. Ne l’ajoutez pas au projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Créez le fichier XML .vstemplate pour fournir les métadonnées du modèle de projet. Pour plus d’informations, consultez l’exemple de la section suivante.  
+4. Créez le fichier XML .vstemplate pour fournir les métadonnées du modèle de projet. Pour plus d’informations, consultez l’exemple de la section suivante.  
   
-5.  Localisez l’élément `ProjectType` dans le fichier .vstemplate, puis affectez au texte la valeur `Web`.  
+5. Localisez l’élément `ProjectType` dans le fichier .vstemplate, puis affectez au texte la valeur `Web`.  
   
-6.  Après l’élément `ProjectType`, ajoutez un élément `ProjectSubType` et affectez au texte la valeur du langage de programmation du modèle. Voici les valeurs pouvant être affectées comme langage de programmation :  
+6. Après l’élément `ProjectType`, ajoutez un élément `ProjectSubType` et affectez au texte la valeur du langage de programmation du modèle. Voici les valeurs pouvant être affectées comme langage de programmation :  
   
-    -   CSharp  
+   - CSharp  
   
-    -   VisualBasic  
+   - VisualBasic  
   
      Exemple :  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  Sélectionnez les fichiers présents dans votre modèle (cela inclut le fichier .vstemplate), cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers sont compressés dans un fichier .zip.  
+7. Sélectionnez les fichiers présents dans votre modèle (cela inclut le fichier .vstemplate), cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers sont compressés dans un fichier .zip.  
   
-8.  Placez le fichier de modèle .zip dans le répertoire du modèle de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par défaut, ce répertoire est \Mes documents\Visual Studio *Version*\My Exported Templates\\.  
+8. Placez le fichier de modèle .zip dans le répertoire du modèle de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par défaut, ce répertoire est \Mes documents\Visual Studio *Version*\My Exported Templates\\.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant affiche un fichier .vstemplate de base pour un modèle de projet web.  

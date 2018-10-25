@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883068"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans Visual Studio fournissent un moyen utile de génération de texte quelconque. Vous pouvez utiliser des modèles de texte pour générer du texte en cours d’exécution dans le cadre de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique récapitule les plus fréquemment posées « Comment faire... ? » questions.
@@ -49,21 +49,21 @@ Modèles de texte dans Visual Studio fournissent un moyen utile de génération 
 ### <a name="invoke-methods-from-a-template"></a>Appeler des méthodes à partir d’un modèle
  Si les méthodes existent déjà, par exemple, dans la norme [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classes :
 
--   Utiliser le \<#@assembly#> la directive pour charger l’assembly, utilisez \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).
+- Utiliser le \<#@assembly#> la directive pour charger l’assembly, utilisez \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).
 
-     Si fréquemment, vous utilisez le même ensemble de l’assembly et importez des directives, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
+   Si fréquemment, vous utilisez le même ensemble de l’assembly et importez des directives, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
- Si vous écrivez vous-même les méthodes :
+  Si vous écrivez vous-même les méthodes :
 
--   Si vous écrivez un modèle de texte de runtime, écrivez une définition de classe partielle qui a le même nom que votre modèle de texte de runtime. Ajoutez les méthodes supplémentaires dans cette classe.
+- Si vous écrivez un modèle de texte de runtime, écrivez une définition de classe partielle qui a le même nom que votre modèle de texte de runtime. Ajoutez les méthodes supplémentaires dans cette classe.
 
--   Écrire un bloc de contrôle de fonctionnalité de classe `<#+ ... #>` dans lequel vous pouvez déclarer méthodes, propriétés et classes privées. Lorsque le modèle de texte est compilé, il est transformé en une classe. Les blocs de contrôle standard `<#...#>` texte sont transformées en une seule méthode, et les blocs de fonctionnalité de classe sont insérés en tant que membres distincts. Pour plus d’informations, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).
+- Écrire un bloc de contrôle de fonctionnalité de classe `<#+ ... #>` dans lequel vous pouvez déclarer méthodes, propriétés et classes privées. Lorsque le modèle de texte est compilé, il est transformé en une classe. Les blocs de contrôle standard `<#...#>` texte sont transformées en une seule méthode, et les blocs de fonctionnalité de classe sont insérés en tant que membres distincts. Pour plus d’informations, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).
 
-     Méthodes définies comme des fonctionnalités de la classe peuvent également inclure des blocs de texte incorporé.
+   Méthodes définies comme des fonctionnalités de la classe peuvent également inclure des blocs de texte incorporé.
 
-     Envisagez de placer les fonctionnalités de la classe dans un fichier distinct que vous pouvez `<#@include#>` dans un ou plusieurs fichiers de modèle.
+   Envisagez de placer les fonctionnalités de la classe dans un fichier distinct que vous pouvez `<#@include#>` dans un ou plusieurs fichiers de modèle.
 
--   Écrire les méthodes dans un assembly séparé (bibliothèque de classes) et les appeler à partir de votre modèle. Utilisez le `<#@assembly#>` directive pour charger l’assembly, et `<#@import#>` pour définir le contexte de l’espace de noms. Notez que pour régénérer l’assembly pendant que vous le déboguez, vous devrez peut-être arrêter et redémarrer Visual Studio. Pour plus d’informations, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).
+- Écrire les méthodes dans un assembly séparé (bibliothèque de classes) et les appeler à partir de votre modèle. Utilisez le `<#@assembly#>` directive pour charger l’assembly, et `<#@import#>` pour définir le contexte de l’espace de noms. Notez que pour régénérer l’assembly pendant que vous le déboguez, vous devrez peut-être arrêter et redémarrer Visual Studio. Pour plus d’informations, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Générer de nombreux fichiers à partir d’un schéma de modèle
  Si vous générez souvent des fichiers à partir de modèles qui ont le même schéma XML ou de base de données :
@@ -91,7 +91,6 @@ Modèles de texte dans Visual Studio fournissent un moyen utile de génération 
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Exécuter des modèles de texte dans le processus de génération

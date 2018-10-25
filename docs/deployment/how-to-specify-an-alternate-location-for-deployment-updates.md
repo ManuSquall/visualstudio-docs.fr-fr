@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902462"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Comment : spécifier un autre emplacement pour le déploiement des mises à jour
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application initialement à partir d’un CD ou un partage de fichiers, mais l’application doit rechercher les mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application peut mettre à jour lui-même à partir du Web après son installation initiale.  
@@ -46,16 +46,16 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Spécifiez un autre emplacement pour les mises à jour à l’aide de Mage.exe  
   
-1.  Ouvrez une invite de commandes du .NET Framework.  
+1. Ouvrez une invite de commandes du .NET Framework.  
   
-2.  Définissez l’emplacement de mise à jour à l’aide de la commande suivante. Dans cet exemple, *HelloWorld.exe.application* est le chemin d’accès à votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application, qui a toujours l’extension .application, et *http://adatum.com/Update/Path* est l’URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rechercheront des mises à jour de l’application.  
+2. Définissez l’emplacement de mise à jour à l’aide de la commande suivante. Dans cet exemple, *HelloWorld.exe.application* est le chemin d’accès à votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application, qui a toujours l’extension .application, et *<http://adatum.com/Update/Path>* est l’URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rechercheront des mises à jour de l’application.  
   
-     **Mage-mettre à jour HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
+    **Mage-mettre à jour HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Enregistrez le fichier.  
+3. Enregistrez le fichier.  
   
-    > [!NOTE]
-    >  Vous devez maintenant signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+   > [!NOTE]
+   >  Vous devez maintenant signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Sécurité .NET Framework  
  Si vous installez votre application à partir d’un support hors connexion tel qu’un CD, et l’ordinateur est en ligne, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vérifie d’abord l’URL spécifiée par la `<deploymentProvider>` balise dans le manifeste de déploiement pour déterminer si l’emplacement de mise à jour contient une version plus récente de la application. Le cas échéant, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installe l’application directement à partir de là, au lieu d’à partir du répertoire d’installation initiale, et le common language runtime (CLR) détermine le niveau de confiance de votre application à l’aide de niveau `<deploymentProvider>`. Si l’ordinateur est hors connexion, ou `<deploymentProvider>` est inaccessible, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installe à partir du CD et le CLR accorde la confiance que basée sur le point d’installation ; pour une installation CD, cela signifie que votre application reçoit une confiance totale. Toutes les mises à jour ultérieures hériteront de ce niveau de confiance.  

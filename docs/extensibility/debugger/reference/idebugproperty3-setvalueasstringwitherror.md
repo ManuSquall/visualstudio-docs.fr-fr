@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Documents Microsoft
+title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9379d474f135c5d6bbe82fd3391e7e4d8241f1b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f747185dd696f6d70cc4c514f54eaddef5bfa7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864437"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.  
@@ -56,7 +56,7 @@ int SetValueAsStringWithError(
  [in] La longueur du délai d’attente pour la valeur à définir (`INFINITE` attente infinie).  
   
  `errorString`  
- [out] S’il existe une erreur de définition de la valeur, il conserve la raison de l’échec.  
+ [out] Si l’erreur lors de la définition de la valeur, cela est la raison de l’échec.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
@@ -65,7 +65,7 @@ int SetValueAsStringWithError(
  La valeur entrante peut être une expression à évaluer.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CProperty** objet qui expose la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CProperty** objet qui expose le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   

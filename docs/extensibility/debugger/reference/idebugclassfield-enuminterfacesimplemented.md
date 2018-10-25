@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumInterfacesImplemented | Documents Microsoft
+title: IDebugClassField::EnumInterfacesImplemented | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a8a313be7c24b4e3778a4e4890eaf2c5eb67b4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9119668cf4eb8ddb6196aec774acf171db04e868
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872679"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Crée un énumérateur pour les interfaces implémentées par cette classe.  
@@ -41,13 +41,13 @@ int EnumInterfacesImplemented(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des interfaces implémentées. Retourne une valeur null s’il n’y a aucune interface.  
+ [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des interfaces implémentées. Retourne une valeur null si aucune interface.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’y a aucune des interfaces implémentées sur cette classe. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il n’existe aucune interface implémenté sur cette classe. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Chaque élément de l’énumération est un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet décrivant une interface. Notez que non managée [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code n’utilise pas les interfaces en tant qu’entité discrète pour cette méthode retourne toujours une valeur null pour non managée [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code.  
+ Chaque élément de l’énumération est un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet décrivant une interface. Notez que non gérés [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code n’utilise pas les interfaces en tant qu’entité discrète donc cette méthode retourne toujours une valeur null pour unmanaged [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

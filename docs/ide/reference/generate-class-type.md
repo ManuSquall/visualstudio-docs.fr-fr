@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929606"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Générer une classe ou un type dans Visual Studio
 
@@ -41,24 +41,24 @@ Cette génération de code s’applique à :
 
    - C# :
 
-    ![Code C# mis en surbrillance](media/class-highlight-cs.png)
+       ![Code C# mis en surbrillance](media/class-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code VB mis en surbrillance](media/class-highlight-vb.png)
+       ![Code VB mis en surbrillance](media/class-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
-    ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
+      ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
 
-1. Sélectionnez l’une des options dans le menu déroulant :
+3. Sélectionnez l’une des options dans le menu déroulant :
 
    - Générer la classe '*TypeName*' dans un nouveau fichier&mdash;Crée une classe nommée *TypeName* dans un fichier nommé *TypeName*.cs/.vb.
    - Générer la classe '*TypeName*'&mdash;Crée une classe nommée *TypeName* dans le fichier actif.
@@ -68,7 +68,7 @@ Cette génération de code s’applique à :
    > [!TIP]
    > Utilisez le lien **Aperçu des modifications** en bas de la fenêtre d’aperçu [pour voir tous les changements](../../ide/preview-changes.md) qui seront apportés avant d’effectuer votre sélection.
 
-1. Si vous avez sélectionné l’élément **Générer un nouveau type**, la boîte de dialogue **Générer le type** s’ouvre. Configurez l’accessibilité, le genre et l’emplacement du nouveau type.
+4. Si vous avez sélectionné l’élément **Générer un nouveau type**, la boîte de dialogue **Générer le type** s’ouvre. Configurez l’accessibilité, le genre et l’emplacement du nouveau type.
 
    ![Générer le type](media/class-newtype-cs.png)
 

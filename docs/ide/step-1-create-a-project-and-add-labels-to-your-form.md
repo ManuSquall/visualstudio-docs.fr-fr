@@ -11,18 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34a49a3a66cebb81553f3e2786f281758c4dee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925114"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire
+
 Les premières étapes du développement de ce questionnaire consistent à créer le projet, puis à ajouter des étiquettes, un bouton et d'autres contrôles à un formulaire. Vous devez également définir des propriétés pour chaque contrôle que vous ajoutez. Le projet contiendra le formulaire, les contrôles et, ultérieurement dans le didacticiel, du code. Le bouton démarre le questionnaire, les étiquettes affichent les problèmes à résoudre et les autres contrôles montrent les réponses aux problèmes et le temps restant pour terminer le questionnaire.
 
 > [!NOTE]
->  Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire
 
@@ -68,8 +69,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
      Vous pouvez modifier plusieurs propriétés de police, comme l'illustre l'image suivante.
 
-     ![](../ide/media/express_setfontsize.png)
-Fenêtre **Propriétés** affichant la taille de police
+     ![Fenêtre Propriétés affichant la taille de police](../ide/media/express_setfontsize.png)
 
 8.  Ajoutez un autre contrôle d’étiquette à partir de la **boîte à outils** et affectez-lui une taille de police de **15,75**.
 
@@ -117,7 +117,7 @@ Fenêtre **Propriétés** affichant la taille de police
 
      Vous avez créé la première ligne, comme l'illustre l'image suivante.
 
-     ![Première ligne du questionnaire mathématique](../ide/media/express_firstrow.png) Première ligne du questionnaire mathématique
+     ![Première ligne du questionnaire mathématique](../ide/media/express_firstrow.png)
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Pour ajouter des contrôles pour les problèmes de soustraction, multiplication et division
 
@@ -144,7 +144,7 @@ Fenêtre **Propriétés** affichant la taille de police
 9. Pour la quatrième ligne, nommez le premier contrôle Label **dividedLeftLabel**, remplacez la valeur de la propriété **Text** du deuxième contrôle Label par **÷** (symbole de division), nommez le troisième contrôle Label **dividedRightLabel** et nommez le contrôle NumericUpDown **quotient**.
 
     > [!NOTE]
-    >  Vous pouvez copier les signes de multiplication (×) et de division (÷) indiqués dans ce didacticiel pour les coller dans le formulaire.
+    > Vous pouvez copier les signes de multiplication (×) et de division (÷) indiqués dans ce didacticiel pour les coller dans le formulaire.
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Pour ajouter un bouton de démarrage et définir l'ordre des index de tabulation
 
@@ -161,13 +161,13 @@ Fenêtre **Propriétés** affichant la taille de police
 6.  Affectez à la propriété **TabIndex** du contrôle **startButton** la valeur **1**.
 
     > [!NOTE]
-    >  La propriété **TabIndex** définit l’ordre des contrôles lorsque la personne répondant au questionnaire appuie sur la touche **Tab**. Pour voir son fonctionnement, ouvrez une boîte de dialogue quelconque (par exemple, dans la barre de menus, choisissez **Fichier** > **Ouvrir**), puis appuyez plusieurs fois sur la touche **Tab**. Notez que le curseur passe d'un contrôle à l'autre chaque fois que vous appuyez sur la touche **Tab**. Un programmeur a choisi l'ordre en créant le formulaire.
+    > La propriété **TabIndex** définit l’ordre des contrôles lorsque la personne répondant au questionnaire appuie sur la touche **Tab**. Pour voir son fonctionnement, ouvrez une boîte de dialogue quelconque (par exemple, dans la barre de menus, choisissez **Fichier** > **Ouvrir**), puis appuyez plusieurs fois sur la touche **Tab**. Notez que le curseur passe d'un contrôle à l'autre chaque fois que vous appuyez sur la touche **Tab**. Un programmeur a choisi l'ordre en créant le formulaire.
 
 7.  Affectez à la propriété **TabIndex** du contrôle NumericUpDown de somme la valeur **2**, à celle du contrôle de différence la valeur **3**, à celle du contrôle de produit la valeur **4** et à celle du contrôle quotient la valeur **5**.
 
      Le formulaire doit ressembler à l'illustration ci-dessous.
 
-     ![Formulaire de questionnaire mathématique initial](../ide/media/express_formlaidout.png) Formulaire de questionnaire mathématique initial
+     ![Formulaire de questionnaire mathématique initial](../ide/media/express_formlaidout.png)
 
 8.  Pour vérifier si la propriété **TabIndex** fonctionne comme prévu, enregistrez et exécutez le programme en appuyant sur la touche **F5** ou en choisissant **Déboguer** > **Démarrer le débogage** dans la barre de menus, puis appuyez plusieurs fois sur la touche **Tab**.
 

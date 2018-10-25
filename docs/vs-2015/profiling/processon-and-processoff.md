@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849397"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent d
   
  Les sous-commandes **ProcessOff** et **ProcessOn** affectent également le nombre de démarrage/arrêt de processus qui est manipulé par les fonctions d’API du profileur.  
   
--   **ProcessOff** définit immédiatement le nombre de démarrage/arrêt de processus sur 0 et suspend ainsi le profilage.  
+- **ProcessOff** définit immédiatement le nombre de démarrage/arrêt de processus sur 0 et suspend ainsi le profilage.  
   
--   **ProcessOn** définit immédiatement le nombre de démarrage/arrêt de processus sur 1 et reprend ainsi le profilage.  
+- **ProcessOn** définit immédiatement le nombre de démarrage/arrêt de processus sur 1 et reprend ainsi le profilage.  
   
- Pour plus d’informations, consultez [API des outils de profilage](../profiling/profiling-tools-apis.md).  
+  Pour plus d’informations, consultez [API des outils de profilage](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   

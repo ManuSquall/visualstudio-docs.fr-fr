@@ -1,5 +1,5 @@
 ---
-title: Élément de UsedCommands | Documents Microsoft
+title: Élément UsedCommands | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2dd8bbcfaaa84905f60e2f4ae984f3269c7095
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e707a8336fb5e324c667ae16eceac2c2e9f55654
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934767"
 ---
-# <a name="usedcommands-element"></a>Élément de UsedCommands
+# <a name="usedcommands-element"></a>Élément UsedCommands
 L’élément UsedCommands regroupe les éléments UsedCommand et autres regroupements UsedCommands.  
   
- L’élément UsedCommands est facultative. Si vous n’appelez pas les commandes définies à l’extérieur de votre package, il est inutile d’inclure cette section dans votre fichier .vsct.  
+ L’élément UsedCommands est facultatif. Si vous n’appelez pas les commandes définies en dehors de votre package, il est inutile d’inclure cette section dans votre fichier .vsct.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -55,7 +55,7 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante) par un VSPackage à l’environnement de développement intégré (IDE).|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante) qui fournit un VSPackage à l’environnement de développement intégré (IDE).|  
   
 ## <a name="example"></a>Exemple  
   
@@ -68,5 +68,5 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément de UsedCommand](../extensibility/usedcommand-element.md)   
+ [Élément UsedCommand](../extensibility/usedcommand-element.md)   
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenPDB | Documents Microsoft
+title: IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02069369e92862fffd90fcf4fe49c2d7e064f64e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1367d444a498c1c066cbdfb38ee4f2cec12c9a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915319"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 Appelé lorsqu’un fichier .pdb de candidat est ouvert.  
@@ -38,7 +38,7 @@ HRESULT NotifyOpenPDB (
  [in] Le chemin d’accès complet du fichier .pdb.  
   
  `resultCode`  
- [in] Code qui indique la réussite (`S_OK`) ou l’échec de la charge, tel qu’appliqué à ce fichier.  
+ [in] Code qui indique la réussite (`S_OK`) ou l’échec de la charge appliquée à ce fichier.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le code de retour est généralement ignoré.  

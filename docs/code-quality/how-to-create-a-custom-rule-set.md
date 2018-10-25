@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884184"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -34,11 +34,11 @@ Pour créer une règle personnalisée, vous pouvez ouvrir un intégrés ensemble
 
 3. Dans le **exécuter cet ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :
 
-    - Sélectionnez l’ensemble de règles que vous souhaitez personnaliser.
+   - Sélectionnez l’ensemble de règles que vous souhaitez personnaliser.
 
      \- ou -
 
-    - Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
+   - Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
 
 4. Sélectionnez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.
 

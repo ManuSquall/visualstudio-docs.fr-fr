@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905933"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus et commandes de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196506"
   
  **Instructions générales de barre d’outils :**  
   
--   Chaque barre d’outils a 24 pixels dans les contrôles communs (barre de redimensionnement, un dépassement de capacité).  
+- Chaque barre d’outils a 24 pixels dans les contrôles communs (barre de redimensionnement, un dépassement de capacité).  
   
--   Chaque bouton de barre d’outils est de 22 pixels de larges, y compris le remplissage. Rendre l’icône d’un bouton partagé ajoute un autre 11 pixels de largeur.  
+- Chaque bouton de barre d’outils est de 22 pixels de larges, y compris le remplissage. Rendre l’icône d’un bouton partagé ajoute un autre 11 pixels de largeur.  
   
--   Duplication des commandes entre les barres d’outils est autorisée.  
+- Duplication des commandes entre les barres d’outils est autorisée.  
   
- **Barres d’outils spécifiques au document** s’affichent quand un certain type de fichier est actif et disparaissent quand un autre type de fichier devient actif.  
+  **Barres d’outils spécifiques au document** s’affichent quand un certain type de fichier est actif et disparaissent quand un autre type de fichier devient actif.  
   
--   Barres d’outils spécifiques au document ne peuvent pas avoir plus de 12 boutons.  
+- Barres d’outils spécifiques au document ne peuvent pas avoir plus de 12 boutons.  
   
--   La largeur totale de la barre d’outils ne doit pas dépasse 300 pixels.  
+- La largeur totale de la barre d’outils ne doit pas dépasse 300 pixels.  
   
--   Chaque type de fichier peut avoir une barre d’outils incorporée ou une barre d’outils globale spécifique au document, mais pas les deux.  
+- Chaque type de fichier peut avoir une barre d’outils incorporée ou une barre d’outils globale spécifique au document, mais pas les deux.  
   
- **Barres d’outils contextuelle** apparaissent quand un certain contexte est définie et ont tendance à rester actives pendant des périodes prolongées.  
+  **Barres d’outils contextuelle** apparaissent quand un certain contexte est définie et ont tendance à rester actives pendant des périodes prolongées.  
   
--   La limite de bouton pour toutes les barres d’outils contextuelle est 18.  
+- La limite de bouton pour toutes les barres d’outils contextuelle est 18.  
   
--   Si la plupart des utilisateurs ne sont pas systématiquement employez des commandes de la barre d’outils lorsque le contexte est actif, puis ne pas associer cette barre d’outils avec un contexte.  
+- Si la plupart des utilisateurs ne sont pas systématiquement employez des commandes de la barre d’outils lorsque le contexte est actif, puis ne pas associer cette barre d’outils avec un contexte.  
   
--   Assurez-vous que la barre d’outils disparaît lors de la sortie de contexte. Aucune de ces barres d’outils doit apparaître au démarrage.  
+- Assurez-vous que la barre d’outils disparaît lors de la sortie de contexte. Aucune de ces barres d’outils doit apparaître au démarrage.  
   
- **Barres d’outils sans contexte** n’apparaissent jamais automatiquement. Ceux-ci montrent uniquement lorsque l’utilisateur les active. Conserver la largeur maximale ci-dessous 200 pixels.  
+  **Barres d’outils sans contexte** n’apparaissent jamais automatiquement. Ceux-ci montrent uniquement lorsque l’utilisateur les active. Conserver la largeur maximale ci-dessous 200 pixels.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Organisation générale et des groupes définis par l’interpréteur de commandes  
  Utiliser des commandes partagées existantes, les groupes de commandes et les menus. Si une nouvelle commande doit être définie, essayez de le placer dans un groupe existant de la commande partagé. Si un nouveau groupe doit être définie, essayez de le placer dans un menu partagé existant proche d’un groupe de commandes connexes avant de créer un nouveau menu de niveau supérieur. Cela réduit la complexité de la commande tout en garantissant le placement de commande cohérente dans l’IDE.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196506"
   
  Lorsque vous définissez des raccourcis, suivez ces règles :  
   
--   **Utiliser le contrôle (Ctrl) et les séquences de touches de fonction (Fn).**  
+- **Utiliser le contrôle (Ctrl) et les séquences de touches de fonction (Fn).**  
   
--   **Conserver les raccourcis fréquemment utilisées.** Conserver les raccourcis populaires.  
+- **Conserver les raccourcis fréquemment utilisées.** Conserver les raccourcis populaires.  
   
--   **Faciliter les raccourcis de l’éditeur au type.** Lier les raccourcis facile vers un type aux commandes que les développeurs doivent la plupart lors de l’écriture de code. Par exemple, **Edit.InvokeSmartTag** doit avoir une touche de raccourci rapide comme Ctrl + / et pas Alt + Maj + F10.  
+- **Faciliter les raccourcis de l’éditeur au type.** Lier les raccourcis facile vers un type aux commandes que les développeurs doivent la plupart lors de l’écriture de code. Par exemple, **Edit.InvokeSmartTag** doit avoir une touche de raccourci rapide comme Ctrl + / et pas Alt + Maj + F10.  
   
--   **S’efforcent de raccourcis de manière cohérente à thème.**  
+- **S’efforcent de raccourcis de manière cohérente à thème.**  
   
--   **Suivez les instructions de Windows pour déterminer quel modificateur touches à employer.** Utilisez les combinaisons de touches Ctrl pour les commandes qui ont des effets à grande échelle, telles que les commandes qui s’appliquent à un document entier. Utiliser des combinaisons de touche MAJ enfoncée pour les commandes qui étendent ou complément les actions de la touche de raccourci standard. N’utilisez pas les combinaisons de touches Ctrl + Alt enfoncées.  
+- **Suivez les instructions de Windows pour déterminer quel modificateur touches à employer.** Utilisez les combinaisons de touches Ctrl pour les commandes qui ont des effets à grande échelle, telles que les commandes qui s’appliquent à un document entier. Utiliser des combinaisons de touche MAJ enfoncée pour les commandes qui étendent ou complément les actions de la touche de raccourci standard. N’utilisez pas les combinaisons de touches Ctrl + Alt enfoncées.  
   
--   **Supprimer les raccourcis superflues.** Si vous avez une fonctionnalité héritée, envisagez de supprimer les raccourcis qui sont utilisées avec extrême mensuelle (moins de 10 fois à partir des données CEIP) ou mensuelle modéré (moins de 100 fois à partir des données CEIP), si une clé d’accès fournit un accès rapide à la même commande. Par exemple : Alt, H, C ouvrira/sommaire de l’aide.  
+- **Supprimer les raccourcis superflues.** Si vous avez une fonctionnalité héritée, envisagez de supprimer les raccourcis qui sont utilisées avec extrême mensuelle (moins de 10 fois à partir des données CEIP) ou mensuelle modéré (moins de 100 fois à partir des données CEIP), si une clé d’accès fournit un accès rapide à la même commande. Par exemple : Alt, H, C ouvrira/sommaire de l’aide.  
   
- Il n’est pas un moyen simple de vérifier la disponibilité de raccourci. Si vous souhaitez ajouter un raccourci, procédez comme suit :  
+  Il n’est pas un moyen simple de vérifier la disponibilité de raccourci. Si vous souhaitez ajouter un raccourci, procédez comme suit :  
   
 1.  Vérifiez la liste des [raccourcis de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) pour déterminer s’il existe des commandes similaires aux vôtres avec groupe.  
   

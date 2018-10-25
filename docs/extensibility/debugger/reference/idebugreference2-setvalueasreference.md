@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Documents Microsoft
+title: IDebugReference2::SetValueAsReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce62358df758b7f4cf3ef0883cf0ac457aaf1f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96245b7089ddef7d465d01203ca8b540c618b05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820250"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Définit la valeur d’une référence à partir d’une autre référence. Réservé à un usage ultérieur.  
@@ -53,10 +53,10 @@ int SetValueAsReference (
  [in] Le nombre de références dans le tableau.  
   
  `pValue`  
- [in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet à partir duquel la valeur de propriété.  
+ [in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet à partir duquel définir la valeur de propriété.  
   
  `dwTimeout`  
- [in] Temps maximal, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
+ [in] Durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Retourne toujours `E_NOTIMPL`.  

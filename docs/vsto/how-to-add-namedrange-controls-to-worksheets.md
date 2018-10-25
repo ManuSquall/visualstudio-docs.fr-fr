@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867115"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Comment : ajouter des contrôles NamedRange aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans les projets au niveau du document.  
@@ -33,13 +33,13 @@ ms.locfileid: "35672740"
   
  Cette rubrique décrit les tâches suivantes :  
   
--   [Ajouter des contrôles NamedRange au moment du design](#designtime)  
+- [Ajouter des contrôles NamedRange au moment du design](#designtime)  
   
--   [Ajouter des contrôles NamedRange au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
+- [Ajouter des contrôles NamedRange au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
   
--   [Ajouter des contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
+- [Ajouter des contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
   
- Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles, consultez [contrôle NamedRange](../vsto/namedrange-control.md).  
+  Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles, consultez [contrôle NamedRange](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Ajouter des contrôles NamedRange au moment du design  
  Il existe plusieurs façons d’ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul dans un projet au niveau du document au moment de la conception : dans Excel, à partir de la **Boîte à outils**Visual Studio, et à partir de la fenêtre **Sources de données** .  

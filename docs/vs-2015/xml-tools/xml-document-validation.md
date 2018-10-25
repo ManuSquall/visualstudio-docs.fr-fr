@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914266"
 ---
 # <a name="xml-document-validation"></a>Validation de documents XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ L’éditeur XML vérifie la syntaxe XML 1.0 et effectue une validation des don
   
  Les schémas utilisés pour la validation sont recherchés en fonction de la comparaison du `targetNamespace` d'un schéma compilé à la déclaration xmlns de l'élément. Les schémas compilés sont chargés à partir d'un des emplacements suivants, répertoriés par ordre de priorité :  
   
--   À partir du nom de fichier spécifié dans le **schémas** champ de la fenêtre de propriétés de document.  
+- À partir du nom de fichier spécifié dans le **schémas** champ de la fenêtre de propriétés de document.  
   
--   Une DTD ou un schéma inline  
+- Une DTD ou un schéma inline  
   
--   Une DTD externe ou un attribut `xsd:schemaLocation` et `xsd:noNamespaceSchemaLocation`  
+- Une DTD externe ou un attribut `xsd:schemaLocation` et `xsd:noNamespaceSchemaLocation`  
   
--   Un URI d'espace de noms de schéma XDR « x-schema »  
+- Un URI d'espace de noms de schéma XDR « x-schema »  
   
- Des schémas peuvent également être recherchés dans les emplacements supplémentaires suivants lorsque le schéma contient un espace de noms cible non vide :  
+  Des schémas peuvent également être recherchés dans les emplacements supplémentaires suivants lorsque le schéma contient un espace de noms cible non vide :  
   
--   Une autre fenêtre d'éditeur qui contient le schéma  
+- Une autre fenêtre d'éditeur qui contient le schéma  
   
--   Un schéma contenu dans la solution actuelle  
+- Un schéma contenu dans la solution actuelle  
   
--   Un schéma du répertoire de cache de schéma  
+- Un schéma du répertoire de cache de schéma  
   
 ## <a name="xslt-files"></a>Fichiers XSLT  
  Lorsque vous modifiez un fichier XSLT, le fichier xslt.xsd situé du cache de schéma est utilisé pour la validation. Les erreurs de validation sont indiquées par des soulignements ondulés bleus. Les erreurs provenant du compilateur XSLT sont signalées par des soulignements ondulés rouges.  

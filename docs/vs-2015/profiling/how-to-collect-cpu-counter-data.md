@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940942"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Guide pratique pour collecter les données des compteurs UC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ Un compteur d’événements UC sert à collecter des données de performances 
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Il existe deux types d’événements de compteur UC :  
+  Il existe deux types d’événements de compteur UC :  
   
--   Événements portables : événements UC pouvant être collectés, quel que soit le processeur.  
+- Événements portables : événements UC pouvant être collectés, quel que soit le processeur.  
   
--   Événements de plateforme : événements UC associés à un processeur particulier.  
+- Événements de plateforme : événements UC associés à un processeur particulier.  
   
- Les événements portables sont des événements généraux, tels que des instructions retirées, des cycles hors interruption, des événements de mémoire tampon UC, des événements de branche et des événements du cache L2. Les compteurs d’événements de plateforme disponibles dépendent du fabricant du processeur.  
+  Les événements portables sont des événements généraux, tels que des instructions retirées, des cycles hors interruption, des événements de mémoire tampon UC, des événements de branche et des événements du cache L2. Les compteurs d’événements de plateforme disponibles dépendent du fabricant du processeur.  
   
- Les catégories d’événements peuvent être partagées entre les compteurs d’événements portables et de plateforme. Par exemple, les catégories de données suivantes sont souvent communes aux deux types :  
+  Les catégories d’événements peuvent être partagées entre les compteurs d’événements portables et de plateforme. Par exemple, les catégories de données suivantes sont souvent communes aux deux types :  
   
--   Événements mémoire  
+- Événements mémoire  
   
--   Événements frontaux  
+- Événements frontaux  
   
--   Événements de branche  
+- Événements de branche  
   
- Vous disposez de deux options pour collecter des données de compteur de performances dans le profileur :  
+  Vous disposez de deux options pour collecter des données de compteur de performances dans le profileur :  
   
--   Collecter des données à partir d’un ou plusieurs compteurs lors d’un profilage par instrumentation  
+- Collecter des données à partir d’un ou plusieurs compteurs lors d’un profilage par instrumentation  
   
--   Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
+- Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Pour collecter des données de compteur de performances UC lors d’un profilage par instrumentation  
   

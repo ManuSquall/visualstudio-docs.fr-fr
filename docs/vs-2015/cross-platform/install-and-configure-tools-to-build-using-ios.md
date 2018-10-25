@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ad445190624ba70305d0e96ac55fc964702763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911276"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,39 +90,39 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 ###  <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant  
   
--   Dans l’application Terminal de votre Mac, entrez :  
+- Dans l’application Terminal de votre Mac, entrez :  
   
-     `sudo npm install -g --unsafe-perm vcremote`  
+   `sudo npm install -g --unsafe-perm vcremote`  
   
-     Le commutateur d’installation globale (**-g**) est recommandé, mais pas obligatoire.  
+   Le commutateur d’installation globale (**-g**) est recommandé, mais pas obligatoire.  
   
-     Pendant l’installation, vcremote est installé et le mode développeur est activé sur votre Mac. [Homebrew](http://brew.sh/) et deux packages npm, vcremote-lib et vcremote-utils, sont aussi installés.  
+   Pendant l’installation, vcremote est installé et le mode développeur est activé sur votre Mac. [Homebrew](http://brew.sh/) et deux packages npm, vcremote-lib et vcremote-utils, sont aussi installés.  
   
-    > [!NOTE]
-    >  Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous avez besoin d’installer vcremote sans sudo, vous pouvez installer Homebrew manuellement à un emplacement usr/local et ajouter son dossier bin à votre chemin. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity –enable`  
+  > [!NOTE]
+  >  Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous avez besoin d’installer vcremote sans sudo, vous pouvez installer Homebrew manuellement à un emplacement usr/local et ajouter son dossier bin à votre chemin. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity –enable`  
   
- Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.  
+  Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.  
   
 ##  <a name="Start"></a> Démarrer l’agent distant  
  L’agent distant doit s’exécuter pour permettre à Visual Studio de générer et exécuter votre code iOS. Pour pouvoir communiquer, Visual Studio doit être couplé à l’agent distant. Par défaut, l’agent distant s’exécute en mode de connexion sécurisée, ce qui nécessite qu’un code confidentiel soit couplé à Visual Studio.  
   
 ###  <a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant  
   
--   Dans l’application Terminal de votre Mac, entrez :  
+- Dans l’application Terminal de votre Mac, entrez :  
   
-     `vcremote`  
+   `vcremote`  
   
-     L’agent distant démarre avec un répertoire de build par défaut ~/vcremote. Des options de configuration supplémentaires sont décrites dans la section [Configure the remote agent on the Mac](#ConfigureMac).  
+   L’agent distant démarre avec un répertoire de build par défaut ~/vcremote. Des options de configuration supplémentaires sont décrites dans la section [Configure the remote agent on the Mac](#ConfigureMac).  
   
- La première fois que vous démarrez l’agent et à chaque fois que vous créez un certificat client, les informations nécessaires à la configuration de l’agent dans Visual Studio vous sont fournies, notamment le nom d’hôte, le port et le code confidentiel.  
+  La première fois que vous démarrez l’agent et à chaque fois que vous créez un certificat client, les informations nécessaires à la configuration de l’agent dans Visual Studio vous sont fournies, notamment le nom d’hôte, le port et le code confidentiel.  
   
- ![Utiliser vcremote pour générer un code PIN sécurisé](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![Utiliser vcremote pour générer un code PIN sécurisé](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
- Si vous envisagez de configurer l’agent distant dans Visual Studio en utilisant le nom d’hôte, envoyez une requête ping au Mac à partir de Windows en utilisant le nom d’hôte pour vérifier qu’il est accessible. Dans le cas contraire, vous serez peut-être amené à utiliser l’adresse IP à la place.  
+  Si vous envisagez de configurer l’agent distant dans Visual Studio en utilisant le nom d’hôte, envoyez une requête ping au Mac à partir de Windows en utilisant le nom d’hôte pour vérifier qu’il est accessible. Dans le cas contraire, vous serez peut-être amené à utiliser l’adresse IP à la place.  
   
- Le code confidentiel généré est à usage unique et n’est valable que pour une durée limitée. Si vous ne couplez pas Visual Studio à l’agent distant avant l’expiration du délai, vous devrez générer un nouveau code confidentiel. Pour plus d'informations, consultez [Generate a new security PIN](#GeneratePIN).  
+  Le code confidentiel généré est à usage unique et n’est valable que pour une durée limitée. Si vous ne couplez pas Visual Studio à l’agent distant avant l’expiration du délai, vous devrez générer un nouveau code confidentiel. Pour plus d'informations, consultez [Generate a new security PIN](#GeneratePIN).  
   
- Vous pouvez utiliser l’agent distant en mode non sécurisé. En mode non sécurisé, l’agent distant peut être couplé à Visual Studio sans code confidentiel.  
+  Vous pouvez utiliser l’agent distant en mode non sécurisé. En mode non sécurisé, l’agent distant peut être couplé à Visual Studio sans code confidentiel.  
   
 #### <a name="to-disable-secured-connection-mode"></a>Pour désactiver le mode de connexion sécurisée  
   
@@ -132,11 +132,11 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 #### <a name="to-enable-secured-connection-mode"></a>Pour activer le mode de connexion sécurisée  
   
--   Pour activer le mode de connexion sécurisée, entrez cette commande :  
+- Pour activer le mode de connexion sécurisée, entrez cette commande :  
   
-     `vcremote --secure true`  
+   `vcremote --secure true`  
   
- Une fois l’agent distant démarré, vous pouvez l’utiliser dans Visual Studio jusqu’à ce que vous l’arrêtiez.  
+  Une fois l’agent distant démarré, vous pouvez l’utiliser dans Visual Studio jusqu’à ce que vous l’arrêtiez.  
   
 #### <a name="to-stop-the-remote-agent"></a>Pour arrêter l’agent distant  
   
@@ -147,36 +147,36 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Pour configurer l’agent distant dans Visual Studio  
   
-1.  Si l’agent n’est pas déjà en cours d’exécution sur votre Mac, suivez les étapes décrites dans [Démarrer l’agent distant](#Start). Votre Mac doit exécuter vcremote pour permettre à Visual Studio de se coupler, de se connecter et de générer votre projet.  
+1. Si l’agent n’est pas déjà en cours d’exécution sur votre Mac, suivez les étapes décrites dans [Démarrer l’agent distant](#Start). Votre Mac doit exécuter vcremote pour permettre à Visual Studio de se coupler, de se connecter et de générer votre projet.  
   
-2.  Sur votre Mac, obtenez le nom d’hôte ou l’adresse IP de votre Mac.  
+2. Sur votre Mac, obtenez le nom d’hôte ou l’adresse IP de votre Mac.  
   
-     Vous pouvez obtenir l’adresse IP en utilisant la commande **ifconfig** dans une fenêtre Terminal. Utilisez l’adresse inet répertoriée sous l’interface réseau active.  
+    Vous pouvez obtenir l’adresse IP en utilisant la commande **ifconfig** dans une fenêtre Terminal. Utilisez l’adresse inet répertoriée sous l’interface réseau active.  
   
-3.  Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.  
+3. Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.  
   
-4.  Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++**, **iOS**.  
+4. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++**, **iOS**.  
   
-5.  Dans les champs **Nom d’hôte** et **Port** , entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.  
+5. Dans les champs **Nom d’hôte** et **Port** , entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.  
   
-    > [!NOTE]
-    >  Si vous ne pouvez pas envoyer une requête ping au Mac en utilisant le nom d’hôte, vous devrez peut-être utiliser l’adresse IP.  
+   > [!NOTE]
+   >  Si vous ne pouvez pas envoyer une requête ping au Mac en utilisant le nom d’hôte, vous devrez peut-être utiliser l’adresse IP.  
   
-6.  Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser** , puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel** . Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.  
+6. Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser** , puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel** . Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.  
   
-7.  Choisissez **Coupler** pour activer le jumelage.  
+7. Choisissez **Coupler** pour activer le jumelage.  
   
-     ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
-     Le couplage persiste tant que vous ne changez pas de nom d’hôte ou de port. Si vous changez de nom d’hôte ou de port dans la boîte de dialogue **Options** , pour annuler la modification, choisissez le bouton **Rétablir** pour revenir au couplage précédent.  
+    Le couplage persiste tant que vous ne changez pas de nom d’hôte ou de port. Si vous changez de nom d’hôte ou de port dans la boîte de dialogue **Options** , pour annuler la modification, choisissez le bouton **Rétablir** pour revenir au couplage précédent.  
   
-     Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte** .  
+    Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte** .  
   
-8.  Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (~) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.  
+8. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (~) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.  
   
 9. Choisissez **OK** pour enregistrer les paramètres de connexion de couplage à distance.  
   
- Visual Studio utilise les mêmes informations pour se connecter à l’agent distant sur votre Mac chaque fois que vous l’utilisez. Vous n’avez pas besoin de coupler à nouveau Visual Studio à l’agent distant, sauf si vous générez un nouveau certificat de sécurité sur votre Mac ou que son nom d’hôte ou son adresse IP est modifié.  
+   Visual Studio utilise les mêmes informations pour se connecter à l’agent distant sur votre Mac chaque fois que vous l’utilisez. Vous n’avez pas besoin de coupler à nouveau Visual Studio à l’agent distant, sauf si vous générez un nouveau certificat de sécurité sur votre Mac ou que son nom d’hôte ou son adresse IP est modifié.  
   
 ##  <a name="GeneratePIN"></a> Generate a new security PIN  
  Quand vous démarrez l’agent distant pour la première fois, le code confidentiel généré est valide pendant une période limitée (par défaut, 10 minutes). Si vous ne couplez pas Visual Studio à l’agent distant avant l’expiration de ce délai, vous devez générer un nouveau code confidentiel.  

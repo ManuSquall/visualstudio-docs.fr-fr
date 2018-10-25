@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838684"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l�
 
  Pour masquer la barre de navigation, modifiez l’option **Barre de navigation** dans les paramètres Tous les langages de l’éditeur de texte (**Outils/Options/Éditeur de texte/Tous les langages**) ou modifiez les paramètres pour des langages spécifiques. Vous pouvez naviguer dans les zones de liste déroulante comme suit :  
 
--   Pour déplacer le focus de la fenêtre de code vers la barre de navigation, appuyez sur la combinaison de touches de raccourci Ctrl+F2.  
+- Pour déplacer le focus de la fenêtre de code vers la barre de navigation, appuyez sur la combinaison de touches de raccourci Ctrl+F2.  
 
--   Pour ramener le focus de la barre de navigation dans la fenêtre de code, appuyez sur la touche Échap.  
+- Pour ramener le focus de la barre de navigation dans la fenêtre de code, appuyez sur la touche Échap.  
 
--   Pour déplacer le focus d’un élément à un autre dans la barre de navigation, appuyez sur la touche Tab.  
+- Pour déplacer le focus d’un élément à un autre dans la barre de navigation, appuyez sur la touche Tab.  
 
--   Pour sélectionner l’élément de la barre de navigation qui a le focus et retourner dans l’environnement IDE, appuyez sur la touche Entrée.  
+- Pour sélectionner l’élément de la barre de navigation qui a le focus et retourner dans l’environnement IDE, appuyez sur la touche Entrée.  
 
--   Pour accéder à une classe ou à un type, cliquez sur son nom dans la liste déroulante gauche.  
+- Pour accéder à une classe ou à un type, cliquez sur son nom dans la liste déroulante gauche.  
 
--   Pour accéder directement à une procédure dans une classe, cliquez sur une procédure dans la liste déroulante droite.  
+- Pour accéder directement à une procédure dans une classe, cliquez sur une procédure dans la liste déroulante droite.  
 
- Dans une classe partielle, les membres définis en dehors du fichier de code actuel peuvent être grisés.  
+  Dans une classe partielle, les membres définis en dehors du fichier de code actuel peuvent être grisés.  
 
 ## <a name="find-code-using-navigate-to"></a>Rechercher du code à l’aide de Naviguer vers
 « Naviguer vers » commande Visual Studio effectue une recherche ciblée dans votre code pour vous aider à trouver rapidement des éléments spécifiés dans les fichiers de code, les chemins de fichiers et les symboles de code. Contrairement à d’autres types de recherche de texte, tels que Rechercher ou Rechercher dans les fichiers, Naviguer vers limite ses recherches aux zones où réside réellement le code, telles que les fichiers, les formulaires et les modules de code. Par exemple, si vous recherchez une chaîne dans une application web ASP.NET à l’aide de Rechercher ou Rechercher dans les fichiers dans la solution entière, vous pouvez obtenir plusieurs résultats, notamment les instances de la chaîne dans les notes du code. À l’aide de naviguer vers, toutefois, vous pouvez uniquement obtenir une seule fonction, en ignorant toutes les instances de la chaîne dans les notes du code.

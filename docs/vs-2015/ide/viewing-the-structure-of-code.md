@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901643"
 ---
 # <a name="viewing-the-structure-of-code"></a>Affichage de la structure du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Fenêtre Hiérarchie d'appels
   
  Vous pouvez filtrer ce que vous souhaitez afficher dans l’**Explorateur d’objets**. À l’aide de la liste déroulante située en haut de la fenêtre, vous pouvez choisir parmi les options suivantes :  
   
--   Tout .NET Framework  
+- Tout .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   La solution active  
+- La solution active  
   
--   Un jeu personnalisé de composants  
+- Un jeu personnalisé de composants  
   
- Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers .ocx. Il n'est pas possible d'ajouter des composants personnalisés C++. Les paramètres personnalisés sont enregistrés dans le répertoire d'application utilisateur Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+  Les composants personnalisés peuvent inclure des fichiers exécutables de code managé, des assemblys de bibliothèque, des bibliothèques de types et des fichiers .ocx. Il n'est pas possible d'ajouter des composants personnalisés C++. Les paramètres personnalisés sont enregistrés dans le répertoire d'application utilisateur Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
   
- Le volet gauche de l’**Explorateur d’objets** montre les conteneurs physiques, tels que les composants COM et .NET Framework. Vous pouvez développer les nœuds de conteneur pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.  
+  Le volet gauche de l’**Explorateur d’objets** montre les conteneurs physiques, tels que les composants COM et .NET Framework. Vous pouvez développer les nœuds de conteneur pour afficher les espaces de noms qu’ils contiennent, puis développer les espaces de noms pour afficher les types qu’ils contiennent. Quand vous sélectionnez un type, ses membres (tels que les propriétés et les méthodes) sont répertoriés dans le volet droit. Le volet inférieur droit affiche des informations détaillées sur l'élément sélectionné.  
   
- Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, choisissez le bouton **Effacer la recherche** (X) situé à côté de la zone **Rechercher**.  
+  Vous pouvez rechercher un élément spécifique à l’aide de la zone **Rechercher** en haut de la fenêtre. Les recherches ne respectent pas la casse. Les résultats de recherche sont affichés dans le volet gauche. Pour effacer une recherche, choisissez le bouton **Effacer la recherche** (X) situé à côté de la zone **Rechercher**.  
   
- L’**Explorateur d’objets** assure le suivi des sélections effectuées et vous pouvez naviguer entre vos sélections à l’aide des boutons **Suivant** et **Précédent** de la barre d’outils.  
+  L’**Explorateur d’objets** assure le suivi des sélections effectuées et vous pouvez naviguer entre vos sélections à l’aide des boutons **Suivant** et **Précédent** de la barre d’outils.  
   
- Vous pouvez utiliser l’**Explorateur d’objets** pour ajouter une référence d’assembly à une solution ouverte en sélectionnant un élément (assembly, espace de noms, type ou membre) et en choisissant le bouton **Ajouter une référence** dans la barre d’outils.  
+  Vous pouvez utiliser l’**Explorateur d’objets** pour ajouter une référence d’assembly à une solution ouverte en sélectionnant un élément (assembly, espace de noms, type ou membre) et en choisissant le bouton **Ajouter une référence** dans la barre d’outils.  
   
 ### <a name="object-browser-settings"></a>Paramètres de l'Explorateur d'objets  
  Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre d’outils pour spécifier l’un des affichages suivants.  

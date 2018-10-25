@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96dc292712a04b7a1049400b908bf5f678b63df3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857450"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Génération du code de votre application à partir d'un modèle  
  Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans le même [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution dans laquelle vous conservez le modèle. Pour plus d'informations, voir :  
   
--   [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md)  
+- [Générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md)  
   
--   [Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- Cette méthode est facile à appliquer de façon incrémentielle. Commencez avec une application qui fonctionne uniquement pour un cas spécifique, puis choisissez-en certaines parties que vous souhaitez modifier par rapport au modèle. Renommez les fichiers sources de ces parties pour qu'elles deviennent des fichiers de modèle de texte (.tt). À ce stade, les fichiers .cs sources seront générés automatiquement à partir des fichiers de modèle. L'application fonctionnera donc comme auparavant.  
+  Cette méthode est facile à appliquer de façon incrémentielle. Commencez avec une application qui fonctionne uniquement pour un cas spécifique, puis choisissez-en certaines parties que vous souhaitez modifier par rapport au modèle. Renommez les fichiers sources de ces parties pour qu'elles deviennent des fichiers de modèle de texte (.tt). À ce stade, les fichiers .cs sources seront générés automatiquement à partir des fichiers de modèle. L'application fonctionnera donc comme auparavant.  
   
- Vous pouvez ensuite prendre une partie du code et la remplacer par une expression de modèle de texte, qui lit le modèle et génère cette partie du fichier source. Au moins une valeur du modèle doit générer la source d'origine pour que vous puissiez à nouveau exécuter l'application et qu'elle fonctionne comme avant. Après avoir testé différentes valeurs de modèle, vous pouvez insérer des expressions de modèle dans une autre partie du code.  
+  Vous pouvez ensuite prendre une partie du code et la remplacer par une expression de modèle de texte, qui lit le modèle et génère cette partie du fichier source. Au moins une valeur du modèle doit générer la source d'origine pour que vous puissiez à nouveau exécuter l'application et qu'elle fonctionne comme avant. Après avoir testé différentes valeurs de modèle, vous pouvez insérer des expressions de modèle dans une autre partie du code.  
   
- Grâce à cette méthode incrémentielle, la génération de code est habituellement une approche peu risquée. Les performances des applications qui en résultent sont généralement presque aussi élevées que celles des versions écrites manuellement.  
+  Grâce à cette méthode incrémentielle, la génération de code est habituellement une approche peu risquée. Les performances des applications qui en résultent sont généralement presque aussi élevées que celles des versions écrites manuellement.  
   
- Toutefois, si vous commencez avec une application existante, vous constaterez peut-être que de nombreuses opérations de refactorisation sont nécessaires pour séparer les différents comportements régis par le modèle, pour qu'ils puissent varier indépendamment. Nous vous recommandons d'évaluer cet aspect de l'application lors de l'estimation du coût de votre projet.  
+  Toutefois, si vous commencez avec une application existante, vous constaterez peut-être que de nombreuses opérations de refactorisation sont nécessaires pour séparer les différents comportements régis par le modèle, pour qu'ils puissent varier indépendamment. Nous vous recommandons d'évaluer cet aspect de l'application lors de l'estimation du coût de votre projet.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Configuration de votre application à partir d'un modèle  
  Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour qu'elle lise le modèle UML ou DSL et que son comportement change en conséquence. Pour plus d'informations, voir :  
   
--   [Lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md)  
+- [Lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- Vous pouvez aussi appliquer cette méthode de façon incrémentielle, mais davantage de travail est nécessaire au début. Vous devez écrire le code qui lit le modèle et configurer une infrastructure qui permet à ses valeurs d'être accessibles aux parties variables. Le fait de rendre les parties variables génériques est plus coûteux que la génération de code.  
+  Vous pouvez aussi appliquer cette méthode de façon incrémentielle, mais davantage de travail est nécessaire au début. Vous devez écrire le code qui lit le modèle et configurer une infrastructure qui permet à ses valeurs d'être accessibles aux parties variables. Le fait de rendre les parties variables génériques est plus coûteux que la génération de code.  
   
- Les performances d'une application générique sont généralement moins bonnes que celles de ses homologues spécifiques. Si les performances sont essentielles, votre plan de projet doit inclure une évaluation de ce risque.  
+  Les performances d'une application générique sont généralement moins bonnes que celles de ses homologues spécifiques. Si les performances sont essentielles, votre plan de projet doit inclure une évaluation de ce risque.  
   
 ## <a name="developing-a-derived-application"></a>Développement d'une application dérivée  
  Voici quelques consignes générales qui pourront vous être utiles.  

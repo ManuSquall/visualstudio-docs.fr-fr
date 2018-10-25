@@ -129,7 +129,7 @@ items:
     - name: Déboguer à l’aide du débogueur juste-à-temps
       href: debug-using-the-just-in-time-debugger.md
       items:
-      - name: Répondre au débogueur juste-à-temps
+      - name: Désactiver le débogueur juste-à-temps
         href: just-in-time-debugging-in-visual-studio.md
   - name: Configurer le débogage
     items:
@@ -377,7 +377,7 @@ items:
         href: debug-installed-app-package.md
       - name: Déboguer XAML dans Blend
         href: debug-xaml-in-blend.md
-      - name: Déboguer du code HTML et CSS
+      - name: déboguer du code HTML et CSS ;
         href: quickstart-debug-html-and-css.md
         items:
         - name: Actualiser une application (JavaScript)
@@ -391,7 +391,7 @@ items:
       - name: Déboguer du code JavaScript à l’aide de la console
         href: quickstart-debug-javascript-using-the-console.md
         items:
-        - name: Commandes de la console JavaScript
+        - name: JavaScript Console commands
           href: javascript-console-commands.md
       - name: Guide pratique pour déclencher, suspendre, reprendre et mettre en arrière-plan des événements
         href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -752,19 +752,19 @@ items:
       - name: Commandes de menu
         href: menu-commands.md
         items:
-        - name: Commandes du menu Spy
+        - name: commandes du menu Spy
           href: spy-menu-commands.md
-        - name: Commandes du menu Arborescence
+        - name: commandes du menu Arborescence
           href: tree-menu-commands.md
-        - name: Commandes du menu Rechercher
+        - name: commandes du menu Rechercher
           href: search-menu-commands.md
-        - name: Commandes du menu Affichage
+        - name: commandes du menu Affichage
           href: view-menu-commands.md
-        - name: Commandes du menu Messages
+        - name: commandes du menu Messages
           href: messages-menu-commands.md
-        - name: Commandes du menu Fenêtre
+        - name: commandes du menu Fenêtre
           href: window-menu-commands.md
-        - name: Commandes du menu Aide
+        - name: commandes du menu Aide
           href: help-menu-commands.md
       - name: Boîte de dialogue Police (aide de Microsoft Spy++)
         href: font-dialog-box-microsoft-spy-increment-help.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 54fa8b8653abd4e69a115dc50d287f3e182fc53a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 96117c4b066013a5581d25abc10f0f08d78de274
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880740"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382829"

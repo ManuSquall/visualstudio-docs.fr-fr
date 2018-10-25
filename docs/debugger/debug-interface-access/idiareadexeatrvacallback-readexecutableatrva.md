@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtRVACallback::ReadExecutableAtRVA | Documents Microsoft
+title: IDiaReadExeAtRVACallback::ReadExecutableAtRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f71db30a3e4cba957e6aba0981587276af714e3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 69afacf68c77dcb2bca7c951dbd2a1ee9a344cfb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917276"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
-Lit le nombre spécifié d’octets commençant au niveau de le spécifié adresse virtuelle relative (RVA) du fichier exécutable.  
+Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle relative (RVA) à partir du fichier exécutable.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,7 +37,7 @@ HRESULT ReadExecutableAtRVA (
   
 #### <a name="parameters"></a>Paramètres  
  `relativeVirtualAddress`  
- [in] L’adresse RVA dans le fichier exécutable pour commencer la lecture.  
+ [in] L’adresse RVA dans le fichier exécutable à commencer la lecture.  
   
  `cbData`  
  [in] Nombre d’octets à lire.  
@@ -46,7 +46,7 @@ HRESULT ReadExecutableAtRVA (
  [out] Retourne le nombre d’octets lus.  
   
  `data[]`  
- [dans, out] Tableau qui est rempli avec les octets lus à partir du fichier.  
+ [in, out] Un tableau est rempli avec les octets lus à partir du fichier.  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode est appelée par le code de prise en charge DIA pour charger des octets de données à partir d’un fichier exécutable à l’aide d’une adresse virtuelle relative. Cette méthode est appelée à l’appui de la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  

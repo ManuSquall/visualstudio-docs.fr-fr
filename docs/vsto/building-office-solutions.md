@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847576"
 ---
 # <a name="build-office-solutions"></a>Générer des solutions Office
   En général, la génération et le débogage de projets Office sont identiques à la génération et au débogage d’autres types de projets dans Visual Studio, tels que les Windows Forms. Les rubriques de cette section expliquent les différences qui existent. Pour obtenir des informations générales sur la façon de créer des applications, consultez [compiler et générer dans Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35673245"
 ### <a name="application-level-projects"></a>Projets de niveau application  
  Lorsque vous générez un projet de complément VSTO, les éléments suivants sont inclus dans la sortie du projet :  
   
--   L’assembly de projet et tous les assemblys référencés dont la propriété **Copie locale** a la valeur **true**.  
+- L’assembly de projet et tous les assemblys référencés dont la propriété **Copie locale** a la valeur **true**.  
   
--   Le manifeste d’application, qui porte l’extension de nom de fichier *.manifest*. Pour plus d’informations, consultez [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
+- Le manifeste d’application, qui porte l’extension de nom de fichier *.manifest*. Pour plus d’informations, consultez [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
--   Le manifeste de déploiement, qui porte l’extension de nom de fichier *.vsto*. Pour plus d’informations, consultez [manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md).  
+- Le manifeste de déploiement, qui porte l’extension de nom de fichier *.vsto*. Pour plus d’informations, consultez [manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Une base de données de programme (*PDB*) fichier pour l’assembly du projet.  
+- Une base de données de programme (*PDB*) fichier pour l’assembly du projet.  
   
- Le processus de génération pour les projets de complément VSTO crée également un jeu d’entrées du Registre sur l’ordinateur de développement, qui sont requises pour charger le complément VSTO. Pour plus d’informations, consultez [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+  Le processus de génération pour les projets de complément VSTO crée également un jeu d’entrées du Registre sur l’ordinateur de développement, qui sont requises pour charger le complément VSTO. Pour plus d’informations, consultez [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Si vous générez un projet de complément VSTO Outlook qui contient des zones de formulaire, le processus de génération ajoute les informations supplémentaires suivantes dans le Registre :  
+  Si vous générez un projet de complément VSTO Outlook qui contient des zones de formulaire, le processus de génération ajoute les informations supplémentaires suivantes dans le Registre :  
   
--   une clé pour chaque classe de message associée à une ou plusieurs zones de formulaire,  
+- une clé pour chaque classe de message associée à une ou plusieurs zones de formulaire,  
   
--   une entrée pour chaque zone de formulaire et une valeur associée représentant le nom du complément VSTO Outlook.  
+- une entrée pour chaque zone de formulaire et une valeur associée représentant le nom du complément VSTO Outlook.  
   
- Outlook a besoin de ces informations pour charger les zones de formulaire.  
+  Outlook a besoin de ces informations pour charger les zones de formulaire.  
   
 ## <a name="referenced-assemblies"></a>Assemblys référencés  
  Vous pouvez référencer des assemblys (y compris des projets de bibliothèque de classes) à partir de votre projet de génération de solutions Office. Chaque assembly référencé possède une propriété appelée **Copie locale**. **Copie locale** indique si l’assembly est copié dans le répertoire de sortie. Elle a la valeur **true**par défaut. Chaque assembly référencé dont la propriété **Copie locale** a la valeur **true** est copié dans le répertoire de sortie.  

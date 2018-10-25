@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884860"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : Créer votre premier complément VSTO pour Project
   Cette procédure pas à pas vous montre comment créer un complément, VSTO pour Microsoft Office Project. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "35671132"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d’un projet de complément VSTO Project  
+- Création d’un projet de complément VSTO Project  
   
--   Écriture de code qui utilise le modèle objet de Project pour ajouter une tâche à un nouveau projet  
+- Écriture de code qui utilise le modèle objet de Project pour ajouter une tâche à un nouveau projet  
   
--   Génération et exécution du projet pour le tester  
+- Génération et exécution du projet pour le tester  
   
--   Nettoyage du projet terminé, pour que le complément VSTO ne s’exécute plus automatiquement sur votre ordinateur de développement  
+- Nettoyage du projet terminé, pour que le complément VSTO ne s’exécute plus automatiquement sur votre ordinateur de développement  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -78,18 +78,18 @@ ms.locfileid: "35671132"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Pour ajouter une tâche à un nouveau projet  
   
-1.  Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn` . Ce code définit un gestionnaire d’événements pour le `NewProject` événements de la `Microsoft.Office.Interop.MSProject.Application` classe.  
+1. Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn`. Ce code définit un gestionnaire d’événements pour l’événement `NewProject` de la classe `Microsoft.Office.Interop.MSProject.Application`.  
   
-     Quand l’utilisateur crée un projet, ce gestionnaire d’événements ajoute une tâche au projet.  
+    Quand l’utilisateur crée un projet, ce gestionnaire d’événements ajoute une tâche au projet.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Pour modifier le projet, cet exemple de code utilise les objets suivants :  
+   Pour modifier le projet, cet exemple de code utilise les objets suivants :  
   
--   Le champ `Application` de la classe `ThisAddIn` . Le `Application` champ retourne un `Microsoft.Office.Interop.MSProject.Application` objet qui représente l’instance actuelle du projet.  
+-   Le champ `Application` de la classe `ThisAddIn` . Le champ `Application` retourne un objet `Microsoft.Office.Interop.MSProject.Application` qui représente l’instance active de Project.  
   
--   Le `pj` paramètre du Gestionnaire d’événements pour l’événement NewProject. Le `pj` paramètre est un `Microsoft.Office.Interop.MSProject.Project` objet qui représente le projet. Pour plus d’informations, consultez [projet solutions](../vsto/project-solutions.md).  
+-   Le `pj` paramètre du Gestionnaire d’événements pour l’événement NewProject. Le paramètre `pj` est un objet `Microsoft.Office.Interop.MSProject.Project` qui représente le projet. Pour plus d’informations, consultez [projet solutions](../vsto/project-solutions.md).  
   
 1.  En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code connecte le `Application_Newproject` Gestionnaire d’événements avec l’événement NewProject.  
   

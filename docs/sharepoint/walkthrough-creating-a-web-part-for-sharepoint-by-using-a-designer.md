@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635230"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831809"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint à l’aide d’un concepteur
 
@@ -98,9 +98,9 @@ Ajoutez le code qui permet à l’utilisateur Ajouter des calendriers à l’aff
 
 1. Effectuez l'un des ensembles d'étapes suivants :
 
-    - Dans le concepteur, double-cliquez sur le **mise à jour** bouton.
+   - Dans le concepteur, double-cliquez sur le **mise à jour** bouton.
 
-    - Dans le **propriétés** fenêtre pour le **mise à jour** bouton, choisissez la **événements** bouton. Dans la **cliquez sur** propriété, entrez **Button1_Click**, puis choisissez la touche ENTRÉE.
+   - Dans le **propriétés** fenêtre pour le **mise à jour** bouton, choisissez la **événements** bouton. Dans le **cliquez sur** propriété, entrez **Button1_Click**, puis choisissez la touche ENTRÉE.
 
      Le fichier de code du contrôle utilisateur s’ouvre dans l’éditeur de Code et le `Button1_Click` Gestionnaire d’événements s’affiche. Une version ultérieure, vous ajouterez du code à ce gestionnaire d’événements.
 
@@ -116,11 +116,11 @@ Ajoutez le code qui permet à l’utilisateur Ajouter des calendriers à l’aff
 
 4. Remplacez le `Page_Load` méthode de la `VisualWebPart1` classe par le code suivant. Ce code exécute les tâches suivantes :
 
-    - Ajoute un affichage de calendrier mensuel au contrôle utilisateur.
+   - Ajoute un affichage de calendrier mensuel au contrôle utilisateur.
 
-    - Ajoute une case à cocher pour chaque liste de calendriers sur le site.
+   - Ajoute une case à cocher pour chaque liste de calendriers sur le site.
 
-    - Spécifie un modèle pour chaque type d’élément qui apparaît dans l’affichage de calendrier.
+   - Spécifie un modèle pour chaque type d’élément qui apparaît dans l’affichage de calendrier.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

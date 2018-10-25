@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823695"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’
   
 ### <a name="to-define-a-store-event"></a>Pour définir un événement de magasin  
   
-1.  Choisissez le type d’événement que vous souhaitez surveiller. Pour obtenir une liste complète, consultez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Chaque propriété correspond à un type d’événement. Les plus fréquemment utilisés sont des types des événements :  
+1. Choisissez le type d’événement que vous souhaitez surveiller. Pour obtenir une liste complète, consultez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Chaque propriété correspond à un type d’événement. Les plus fréquemment utilisés sont des types des événements :  
   
-    -   `ElementAdded` – déclenché lorsqu’un élément de modèle, lien de relation, forme ou un connecteur est créé.  
+   -   `ElementAdded` – déclenché lorsqu’un élément de modèle, lien de relation, forme ou un connecteur est créé.  
   
-    -   ElementPropertyChanged – déclenché lorsque la valeur d’un `Normal` de propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs anciennes et nouvelles ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.  
+   -   ElementPropertyChanged – déclenché lorsque la valeur d’un `Normal` de propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs anciennes et nouvelles ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.  
   
-         Il ne peut pas être appliqué aux propriétés du rôle qui correspondent aux liens de relation. Au lieu de cela, utilisez `ElementAdded` pour surveiller la relation de domaine.  
+        Il ne peut pas être appliqué aux propriétés du rôle qui correspondent aux liens de relation. Au lieu de cela, utilisez `ElementAdded` pour surveiller la relation de domaine.  
   
-    -   `ElementDeleted` – déclenché après un élément de modèle, relation, forme ou le lien a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura pas de relations à d’autres éléments.  
+   -   `ElementDeleted` – déclenché après un élément de modèle, relation, forme ou le lien a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura pas de relations à d’autres éléments.  
   
-2.  Ajoutez une définition de classe partielle pour _Votre_solution_dsl_**DocData** dans un fichier de code séparé dans le **DslPackage** projet.  
+2. Ajoutez une définition de classe partielle pour _Votre_solution_dsl_**DocData** dans un fichier de code séparé dans le **DslPackage** projet.  
   
-3.  Écrivez le code de l’événement comme une méthode, comme dans l’exemple suivant. Il peut être `static`, sauf si vous souhaitez accéder à `DocData`.  
+3. Écrivez le code de l’événement comme une méthode, comme dans l’exemple suivant. Il peut être `static`, sauf si vous souhaitez accéder à `DocData`.  
   
-4.  Substituer `OnDocumentLoaded()` pour inscrire le gestionnaire. Si vous avez plusieurs gestionnaires, vous pouvez les inscrire dans le même emplacement.  
+4. Substituer `OnDocumentLoaded()` pour inscrire le gestionnaire. Si vous avez plusieurs gestionnaires, vous pouvez les inscrire dans le même emplacement.  
   
- L’emplacement du code d’inscription n’est pas critique. `DocView.LoadView()` est un autre emplacement.  
+   L’emplacement du code d’inscription n’est pas critique. `DocView.LoadView()` est un autre emplacement.  
   
 ```  
 using System;  

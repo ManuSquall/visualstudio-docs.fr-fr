@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893375"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : amélioration de la réactivité de l'interface utilisateur (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
 ### <a name="analyzing-performance-data"></a>Analyse des données de performance  
   
-1.  Dans la barre d’outils **Déboguer**, dans la liste **Démarrer le débogage**, sélectionnez un des Windows Phone Emulator ou **Simulateur**.  
+1. Dans la barre d’outils **Déboguer**, dans la liste **Démarrer le débogage**, sélectionnez un des Windows Phone Emulator ou **Simulateur**.  
   
-2.  Dans le menu **Déboguer** , choisissez **Performances et diagnostics**.  
+2. Dans le menu **Déboguer** , choisissez **Performances et diagnostics**.  
   
-3.  Dans **Outils disponibles**, sélectionnez **Réactivité de l’interface utilisateur HTML**, puis **Démarrer**.  
+3. Dans **Outils disponibles**, sélectionnez **Réactivité de l’interface utilisateur HTML**, puis **Démarrer**.  
   
-     Dans ce didacticiel, vous allez attacher le profileur au projet de démarrage. Pour plus d’informations sur les autres options, par exemple celle qui permet d’attacher le profileur à une application installée, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).  
+    Dans ce didacticiel, vous allez attacher le profileur au projet de démarrage. Pour plus d’informations sur les autres options, par exemple celle qui permet d’attacher le profileur à une application installée, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).  
   
-     Lorsque vous démarrez le profileur, un message de contrôle de compte d'utilisateur peut demander votre autorisation pour exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
+    Lorsque vous démarrez le profileur, un message de contrôle de compte d'utilisateur peut demander votre autorisation pour exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
   
-4.  Dans l’application en cours d’exécution, sélectionnez **En attente de valeurs** et patientez environ dix secondes. Vérifiez que le texte et la couleur du bouton se mettent à jour toutes les secondes.  
+4. Dans l’application en cours d’exécution, sélectionnez **En attente de valeurs** et patientez environ dix secondes. Vérifiez que le texte et la couleur du bouton se mettent à jour toutes les secondes.  
   
-5.  À partir de l'application en cours d'exécution, basculez vers Visual Studio (Alt+Tab).  
+5. À partir de l'application en cours d'exécution, basculez vers Visual Studio (Alt+Tab).  
   
-6.  Choisissez **Arrêter la collection**.  
+6. Choisissez **Arrêter la collection**.  
   
-     Le profileur affiche des informations dans un nouvel onglet de Visual Studio. Lorsque vous examinez l'utilisation de l'UC et les données de débit visuel (i/s), vous pouvez facilement identifier quelques tendances :  
+    Le profileur affiche des informations dans un nouvel onglet de Visual Studio. Lorsque vous examinez l'utilisation de l'UC et les données de débit visuel (i/s), vous pouvez facilement identifier quelques tendances :  
   
-    -   L’utilisation de l’UC augmente considérablement après environ trois secondes (quand vous avez appuyé sur le bouton **En attente de valeurs**) et affiche alors un modèle précis des événements (une combinaison cohérente d’événements de script, de style et de rendu).  
+   - L’utilisation de l’UC augmente considérablement après environ trois secondes (quand vous avez appuyé sur le bouton **En attente de valeurs**) et affiche alors un modèle précis des événements (une combinaison cohérente d’événements de script, de style et de rendu).  
   
-    -   Le débit visuel n’est pas impacté et le FPS reste à 60 tout du long du processus (ainsi, il n’y a aucune image déposée).  
+   - Le débit visuel n’est pas impacté et le FPS reste à 60 tout du long du processus (ainsi, il n’y a aucune image déposée).  
   
      Regardons une section standard du graphique d'utilisation de l'UC pour découvrir ce que fait l'application dans cette période de forte activité.  
   
-7.  Sélectionnez une seconde partie un-à-deux au milieu du graphique d'utilisation de l'UC (cliquez et faites glisser ou utilisez les touches de tabulation et les touches fléchées). L'illustration suivante montre le graphique d'utilisation de l'UC lorsqu'une sélection a été effectuée. La zone non grisée correspond à la sélection.  
+7. Sélectionnez une seconde partie un-à-deux au milieu du graphique d'utilisation de l'UC (cliquez et faites glisser ou utilisez les touches de tabulation et les touches fléchées). L'illustration suivante montre le graphique d'utilisation de l'UC lorsqu'une sélection a été effectuée. La zone non grisée correspond à la sélection.  
   
-     ![Graphique d’utilisation du processeur](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Graphique d’utilisation du processeur](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Choisissez **Zoom avant**.  
+8. Choisissez **Zoom avant**.  
   
-     Le graphique change pour afficher la période sélectionnée plus en détail. L'illustration suivante montre le graphique d'utilisation de l'UC après avoir effectué un zoom avant. (Les données spécifiques peuvent varier, mais le modèle général reste le même.)  
+    Le graphique change pour afficher la période sélectionnée plus en détail. L'illustration suivante montre le graphique d'utilisation de l'UC après avoir effectué un zoom avant. (Les données spécifiques peuvent varier, mais le modèle général reste le même.)  
   
-     ![Vue avec zoom avant](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Vue avec zoom avant](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Les détails de la chronologie dans le volet inférieur présentent un exemple de détails pour la période sélectionnée.  
+    Les détails de la chronologie dans le volet inférieur présentent un exemple de détails pour la période sélectionnée.  
   
-     ![Détails de la chronologie](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Détails de la chronologie](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Les événements dans les détails de la chronologie confirment les tendances visibles montrées par le graphique d'utilisation de l'UC : de nombreux événements se produisent sur de courtes périodes. La vue Détails de la chronologie indique les événements `Timer`, `Layout` et `Paint`.  
+    Les événements dans les détails de la chronologie confirment les tendances visibles montrées par le graphique d'utilisation de l'UC : de nombreux événements se produisent sur de courtes périodes. La vue Détails de la chronologie indique les événements `Timer`, `Layout` et `Paint`.  
   
 9. Utilisez le menu contextuel (ou cliquez avec le bouton droit) pour sélectionner l’un des événements `Timer` dans le volet inférieur, puis sélectionnez **Filtrer jusqu’à l’événement**. L'illustration suivante présente un exemple de détails standard pour un des événements `Timer` dans l'application de tests.  
   

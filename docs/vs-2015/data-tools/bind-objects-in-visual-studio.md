@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918634"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Lier des objets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
 ### <a name="loaddata-into-objects"></a>LoadData dans des objets  
  Pour cet exemple, vous chargez des données dans vos objets à l’aide de TableAdapters. Par défaut, les TableAdapters sont créés avec deux types de méthodes qui extraire des données à partir d’une base de données et remplissent les tables de données.  
   
--   Le `TableAdapter.Fill` méthode remplit une table de données existante avec les données retournées.  
+- Le `TableAdapter.Fill` méthode remplit une table de données existante avec les données retournées.  
   
--   Le `TableAdapter.GetData` méthode retourne une nouvelle table de données remplie avec des données.  
+- Le `TableAdapter.GetData` méthode retourne une nouvelle table de données remplie avec des données.  
   
- Le moyen le plus simple pour charger vos objets personnalisés avec des données consiste à appeler le `TableAdapter.GetData` (méthode), boucler dans la collection de lignes dans la table de données retournée et remplir chaque objet avec les valeurs dans chaque ligne. Vous pouvez créer un `GetData` méthode qui retourne une table de données remplie pour toute requête ajoutée à un TableAdapter.  
+  Le moyen le plus simple pour charger vos objets personnalisés avec des données consiste à appeler le `TableAdapter.GetData` (méthode), boucler dans la collection de lignes dans la table de données retournée et remplir chaque objet avec les valeurs dans chaque ligne. Vous pouvez créer un `GetData` méthode qui retourne une table de données remplie pour toute requête ajoutée à un TableAdapter.  
   
 > [!NOTE]
 >  Visual Studio nomme les requêtes TableAdapter `Fill` et `GetData` par défaut, mais ces noms peuvent être modifiés à n’importe quel nom de méthode valide.  

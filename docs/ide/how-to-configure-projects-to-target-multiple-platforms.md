@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930217"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Guide pratique pour configurer des projets et cibler plusieurs plateformes
 
@@ -56,11 +56,11 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Pour générer plusieurs configurations de solution à la fois
 
-1.  Utilisez le **Gestionnaire de configurations** pour ajouter au moins deux plateformes pour la solution.
+1. Utilisez le **Gestionnaire de configurations** pour ajouter au moins deux plateformes pour la solution.
 
-2.  Utilisez la fenêtre **Générer en tâche de fond** pour générer plusieurs configurations de solution à la fois.
+2. Utilisez la fenêtre **Générer en tâche de fond** pour générer plusieurs configurations de solution à la fois.
 
- Il est possible d’avoir une plateforme au niveau de la solution définie, par exemple, sur [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], et de n’avoir, dans cette solution, aucun projet ciblant cette même plateforme. Il est également possible d’avoir plusieurs projets dans votre solution, chacun ciblant une plateforme différente. Si vous êtes dans l’une ou l’autre de ces situations, il est recommandé de créer une nouvelle configuration portant un nom descriptif afin d’éviter toute confusion.
+   Il est possible d’avoir une plateforme au niveau de la solution définie, par exemple, sur [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], et de n’avoir, dans cette solution, aucun projet ciblant cette même plateforme. Il est également possible d’avoir plusieurs projets dans votre solution, chacun ciblant une plateforme différente. Si vous êtes dans l’une ou l’autre de ces situations, il est recommandé de créer une nouvelle configuration portant un nom descriptif afin d’éviter toute confusion.
 
 ## <a name="see-also"></a>Voir aussi
 

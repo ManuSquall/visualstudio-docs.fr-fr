@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c609e927244f0d0c297bdebedab451a6af59bd5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: debad8bbfbb72f43002c92dc3c962f378b13315e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853322"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Comment : rechercher un message dans la vue Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,32 +32,32 @@ Vous pouvez rechercher un message spécifique dans la vue Messages à l’aide d
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Pour rechercher un message dans la vue Messages  
   
-1.  Réorganisez vos fenêtres donc que Spy ++ et qu’une [vue Messages](../debugger/messages-view.md) fenêtre sont visibles.  
+1. Réorganisez vos fenêtres donc que Spy ++ et qu’une [vue Messages](../debugger/messages-view.md) fenêtre sont visibles.  
   
-2.  À partir de la **recherche** menu, choisissez **rechercher le Message**.  
+2. À partir de la **recherche** menu, choisissez **rechercher le Message**.  
   
-     Le [boîte de dialogue de recherche de Message](../debugger/message-search-dialog-box.md) s’ouvre.  
+    Le [boîte de dialogue de recherche de Message](../debugger/message-search-dialog-box.md) s’ouvre.  
   
-3.  Faites glisser le **outil recherche** sur la fenêtre souhaitée. Lorsque vous faites glisser l’outil, le **recherche d’un Message** boîte de dialogue affiche des détails sur la fenêtre sélectionnée.  
+3. Faites glisser le **outil recherche** sur la fenêtre souhaitée. Lorsque vous faites glisser l’outil, le **recherche d’un Message** boîte de dialogue affiche des détails sur la fenêtre sélectionnée.  
   
-     – ou –  
+    – ou –  
   
-     Si vous avez le handle de la fenêtre dont vous souhaitez examiner les messages, tapez-le dans la **gérer** zone de texte.  
+    Si vous avez le handle de la fenêtre dont vous souhaitez examiner les messages, tapez-le dans la **gérer** zone de texte.  
   
-     – ou –  
+    – ou –  
   
-     Si vous connaissez le type de message et/ou le code de message, les sélectionner à partir de la **Type** et **Message** menus déroulants, puis désactivez la **gérer** zone de texte.  
+    Si vous connaissez le type de message et/ou le code de message, les sélectionner à partir de la **Type** et **Message** menus déroulants, puis désactivez la **gérer** zone de texte.  
   
-4.  Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
+4. Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
   
-    > [!TIP]
-    >  Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.  
+   > [!TIP]
+   >  Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.  
   
-5.  Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
+5. Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
- Si un message correspondant est trouvé, il est mis en surbrillance dans la fenêtre d’affichage de Messages. Consultez [la vue Messages](../debugger/messages-view.md).
+   Si un message correspondant est trouvé, il est mis en surbrillance dans la fenêtre d’affichage de Messages. Consultez [la vue Messages](../debugger/messages-view.md).
 
 
 

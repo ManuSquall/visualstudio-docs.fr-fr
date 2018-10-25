@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843639"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Pour créer un style, sélectionnez l’objet puis, dans le menu **Objet**, choisissez **Modifier le style**, puis **Modifier une copie** ou **Créer vide**.  
   
--   Choisissez **Modifier une copie** pour commencer avec le style ou le modèle par défaut du contrôle.  
+- Choisissez **Modifier une copie** pour commencer avec le style ou le modèle par défaut du contrôle.  
   
--   Choisissez **Créer vide** pour commencer à zéro.  
+- Choisissez **Créer vide** pour commencer à zéro.  
   
- Le **modifier actuel** option apparaît uniquement si vous modifiez un style ou le modèle que vous avez déjà créé. Elle ne s'affiche pas pour un contrôle qui utilise toujours un modèle système par défaut.  
+  Le **modifier actuel** option apparaît uniquement si vous modifiez un style ou le modèle que vous avez déjà créé. Elle ne s'affiche pas pour un contrôle qui utilise toujours un modèle système par défaut.  
   
- Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit nommer le style ou le modèle pour pouvoir l’utiliser ultérieurement, soit appliquer le style ou le modèle à tous les contrôles de ce type.  
+  Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit nommer le style ou le modèle pour pouvoir l’utiliser ultérieurement, soit appliquer le style ou le modèle à tous les contrôles de ce type.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91C8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91C8-3b1871829eea")  
   
 > [!NOTE]
 >  Vous ne pouvez pas créer de styles ou de modèles pour chaque type de contrôle. Si un contrôle ne les prend pas en charge, le bouton de la barre de navigation ne s'affiche pas au-dessus de la planche graphique.  

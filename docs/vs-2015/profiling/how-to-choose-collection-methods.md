@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940955"
 ---
 # <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir une méthode de collecte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Vous pouvez utiliser la propriété **Method** de session de performance pour spécifier la méthode de collecte la plus appropriée pour votre application. Vous pouvez définir la méthode de collecte à partir de l’Assistant Performance, de l’Explorateur de performances ou des pages de propriétés d’une session de performance. Pour plus d’informations sur l’utilisation des outils en ligne de commande, consultez [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md).  
+  Vous pouvez utiliser la propriété **Method** de session de performance pour spécifier la méthode de collecte la plus appropriée pour votre application. Vous pouvez définir la méthode de collecte à partir de l’Assistant Performance, de l’Explorateur de performances ou des pages de propriétés d’une session de performance. Pour plus d’informations sur l’utilisation des outils en ligne de commande, consultez [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
 ## <a name="performance-wizard"></a>Assistant Performance  
   

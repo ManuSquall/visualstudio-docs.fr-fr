@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854901"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -36,23 +36,23 @@ Cette génération de code s’applique à :
 
    - C# :
 
-    ![Code C# mis en surbrillance](media/local-highlight-cs.png)
+       ![Code C# mis en surbrillance](media/local-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code VB mis en surbrillance](media/local-highlight-vb.png)
+       ![Code VB mis en surbrillance](media/local-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
    ![Introduire un aperçu local](media/local-preview-cs.png)
 
-1. Sélectionnez **Introduire un élément local pour (toutes les occurrences de '*expression*'** à partir du menu déroulant.
+3. Sélectionnez **Introduire un élément local pour (toutes les occurrences de '*expression*'** à partir du menu déroulant.
 
    > [!TIP]
    > Utilisez le lien **Aperçu des modifications** en bas de la fenêtre d’aperçu [pour voir tous les changements](../../ide/preview-changes.md) qui seront apportés avant d’effectuer votre sélection.
@@ -61,11 +61,11 @@ Cette génération de code s’applique à :
 
    - C# :
 
-      ![Résultat de l’implémentation de l’interface (C#)](media/local-result-cs.png)
+       ![Résultat de l’implémentation de l’interface (C#)](media/local-result-cs.png)
 
    - Visual Basic :
 
-      ![Résultat de l’implémentation de l’interface (VB)](media/local-result-vb.png)
+       ![Résultat de l’implémentation de l’interface (VB)](media/local-result-vb.png)
 
    > [!NOTE]
    > Vous pouvez utiliser l’option de menu **...toutes les occurrences de...** pour remplacer chaque instance de l’expression sélectionnée, et pas seulement celle que vous avez spécifiquement mise en surbrillance.

@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911445"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossaire du débogueur Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ Les éléments suivants sont des termes utilisés dans le [!INCLUDE[vsprvs](../.
  point d’arrêt en attente  
  Fournit une abstraction pour les points d’arrêt avant, pendant et après le code est chargé et une méthode pour virtualiser des points d’arrêt. Un en attente de point d’arrêt :  
   
--   Contient toutes les informations nécessaires pour lier un point d’arrêt au code dans un ou plusieurs programmes.  
+- Contient toutes les informations nécessaires pour lier un point d’arrêt au code dans un ou plusieurs programmes.  
   
--   Peut lier à plusieurs emplacements de code dans un ou plusieurs programmes.  
+- Peut lier à plusieurs emplacements de code dans un ou plusieurs programmes.  
   
--   Jamais de se lier au code.  
+- Jamais de se lier au code.  
   
- Charge de chaque code de temps, tous les points d’arrêt en attente dans un programme sont vérifiées pour voir si elles peuvent lier. Un point d’arrêt en attente est dit qu’il contient tous les points d’arrêt liés auquel elle est liée.  
+  Charge de chaque code de temps, tous les points d’arrêt en attente dans un programme sont vérifiées pour voir si elles peuvent lier. Un point d’arrêt en attente est dit qu’il contient tous les points d’arrêt liés auquel elle est liée.  
   
- process  
- Un processus Win32 physique. Un processus peut contenir plusieurs programmes. Voir aussi *programme*.  
+  process  
+  Un processus Win32 physique. Un processus peut contenir plusieurs programmes. Voir aussi *programme*.  
   
- programme  
- Un espace de noms en cours d’exécution à l’intérieur d’une architecture d’exécution particulière. Voir aussi *processus*.  
+  programme  
+  Un espace de noms en cours d’exécution à l’intérieur d’une architecture d’exécution particulière. Voir aussi *processus*.  
   
- Gestionnaire de session de débogage (SDM)  
- Gère n’importe quel nombre de moteurs de débogage n’importe quel nombre de programmes dans plusieurs processus sur n’importe quel nombre d’ordinateurs de débogage. Au niveau de base, le SDM est un multiplexeur de moteurs de débogage. En outre, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  
+  Gestionnaire de session de débogage (SDM)  
+  Gère n’importe quel nombre de moteurs de débogage n’importe quel nombre de programmes dans plusieurs processus sur n’importe quel nombre d’ordinateurs de débogage. Au niveau de base, le SDM est un multiplexeur de moteurs de débogage. En outre, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  
   
- frame de pile  
- Représente l’état de calcul sur un frame particulier et niveau particulier d’appels de fonction imbriqués.  
+  frame de pile  
+  Représente l’état de calcul sur un frame particulier et niveau particulier d’appels de fonction imbriqués.  
   
- thread  
- La notion généralisée de l’exécution d’instructions basées sur la pile en cours d’exécution au moins un programme.  
+  thread  
+  La notion généralisée de l’exécution d’instructions basées sur la pile en cours d’exécution au moins un programme.  
   
- point d’arrêt d’avertissement  
- Une abstraction pour décrire un avertissement dans un point d’arrêt en attente. Un point d’arrêt de l’avertissement décrit une raison pour laquelle le point d’arrêt en attente n’a pas encore lié à un emplacement du code de raison. Cela peut être que le code n'a pas encore chargé pour l’emplacement indiqué par le point d’arrêt en attente, ou pour une raison quelconque.  
+  point d’arrêt d’avertissement  
+  Une abstraction pour décrire un avertissement dans un point d’arrêt en attente. Un point d’arrêt de l’avertissement décrit une raison pour laquelle le point d’arrêt en attente n’a pas encore lié à un emplacement du code de raison. Cela peut être que le code n'a pas encore chargé pour l’emplacement indiqué par le point d’arrêt en attente, ou pour une raison quelconque.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extensibilité du débogueur de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

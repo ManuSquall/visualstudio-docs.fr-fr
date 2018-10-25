@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893232"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
   
  **Spécifications**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Systèmes d'exploitation :  
+- Systèmes d'exploitation :  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Versions de navigateur web :  
+- Versions de navigateur web :  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   Pour connaître les versions prises en charge de Mozilla Firefox et de Google Chrome, cliquez [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+  -   Pour connaître les versions prises en charge de Mozilla Firefox et de Google Chrome, cliquez [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
--   Installez les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+- Installez les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- **Quelles sont les opérations prises en charge par tous les navigateurs web ?**  
+  **Quelles sont les opérations prises en charge par tous les navigateurs web ?**  
   
--   [Ajouter du code personnalisé pour contrôler les fonctionnalités](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) comme les propriétés, la recherche et les objets waiter de lecture.  
+- [Ajouter du code personnalisé pour contrôler les fonctionnalités](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) comme les propriétés, la recherche et les objets waiter de lecture.  
   
--   Boîtes de dialogue et menus contextuels  
+- Boîtes de dialogue et menus contextuels  
   
--   [Exécuter le code JavaScript de base sans type de retour](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [Exécuter le code JavaScript de base sans type de retour](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   Résilience de recherche (avec concordance active) et [améliorations des performances](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- Résilience de recherche (avec concordance active) et [améliorations des performances](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Pourquoi dois-je utiliser les tests codés de l'interface utilisateur sur différents types de navigateur web ?  
  Lorsque vous testez votre application web à l'aide de divers types de navigateurs web, l'expérience d'interface utilisateur des utilisateurs susceptibles d'utiliser des navigateurs différents est mieux émulée. Par exemple, votre application peut inclure un contrôle ou un code dans Internet Explorer qui n'est pas compatible avec d'autres navigateurs web. En exécutant les tests codés de l'interface utilisateur sur d'autres navigateurs, vous pouvez détecter et corriger les problèmes avant qu'ils aient une incidence sur vos clients.  
@@ -74,16 +74,16 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
   
 #### <a name="installing-selenium-components"></a>Installation des composants Selenium  
   
-1.  Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
   
-2.  Dans la boîte de dialogue Extensions et mises à jour, recherchez `Selenium components for Cross Browser Testing`.  
+2. Dans la boîte de dialogue Extensions et mises à jour, recherchez `Selenium components for Cross Browser Testing`.  
   
-3.  Mettez en surbrillance l’extension et choisissez **Télécharger**.  
+3. Mettez en surbrillance l’extension et choisissez **Télécharger**.  
   
-    > [!TIP]
-    >  Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > [!TIP]
+   >  Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+   Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
 ### <a name="enable-debugging"></a>Activer le débogage  
  Pour activer le débogage de votre application web, vous devez utiliser les options de configuration suivantes :  
@@ -106,29 +106,29 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  *Que dois-je savoir de plus ?*  
  **Notes**  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
+- ![Prérequis](../test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
+- ![Prérequis](../test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
   
-     Si un navigateur web est déjà ouvert et que vous souhaitez exécuter des étapes sur ce navigateur, la lecture échoue, sauf si vous utilisez Internet Explorer. Il est donc recommandé d'inclure le démarrage de votre navigateur web à vos tests codés de l'interface utilisateur.  
+   Si un navigateur web est déjà ouvert et que vous souhaitez exécuter des étapes sur ce navigateur, la lecture échoue, sauf si vous utilisez Internet Explorer. Il est donc recommandé d'inclure le démarrage de votre navigateur web à vos tests codés de l'interface utilisateur.  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
+- ![Prérequis](../test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
   
- **Conseils**  
+  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :  
+- ![Conseil](../test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     Définissez les valeurs suivantes :  
+   Définissez les valeurs suivantes :  
   
-    -   `EqtTraceLevel` dans la section `system.diagnostics`.  
+  - `EqtTraceLevel` dans la section `system.diagnostics`.  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         En affectant la valeur 3 ou une valeur supérieure, des captures sont prises pour chaque action. Lorsque la valeur est 1 ou 2, des captures sont prises uniquement pour les actions d'erreur.  
+     En affectant la valeur 3 ou une valeur supérieure, des captures sont prises pour chaque action. Lorsque la valeur est 1 ou 2, des captures sont prises uniquement pour les actions d'erreur.  
   
-     Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+    Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
 ## <a name="external-resources"></a>Ressources externes  
   

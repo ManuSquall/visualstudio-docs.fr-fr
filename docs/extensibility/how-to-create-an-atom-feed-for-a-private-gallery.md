@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942099"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Comment : créer un flux Atom pour une galerie privée
 Vous pouvez créer un flux vers un emplacement intranet qui contient des extensions et ajouter le flux à Atom (RSS) **Extensions et mises à jour** dans une galerie privée. Pour plus d’informations, consultez [galeries privées](../extensibility/private-galleries.md).  
@@ -27,17 +27,17 @@ Vous pouvez créer un flux vers un emplacement intranet qui contient des extensi
 ## <a name="create-an-atom-feed"></a>Créer un flux Atom  
  Pour créer un flux dans une galerie privée Atom, vous commencez par rassembler vos extensions (*.vsix* fichiers) dans un dossier. Vous pouvez les organiser dans des sous-dossiers si vous le souhaitez. Vous devez également les ressources suivantes :  
   
--   Un *atom.xml* fichier qui rend les extensions disponibles dans une galerie privée. Pour plus d’informations sur la connexion le *atom.xml* fichier **Extensions et mises à jour**, consultez [galeries privées](../extensibility/private-galleries.md).  
+- Un *atom.xml* fichier qui rend les extensions disponibles dans une galerie privée. Pour plus d’informations sur la connexion le *atom.xml* fichier **Extensions et mises à jour**, consultez [galeries privées](../extensibility/private-galleries.md).  
   
--   Un dossier qui contient tous les fichiers image qui ont été extraits à partir des extensions (par exemple, les captures d’écran). Le *atom.xml* fichier contient des liens relatifs à ces images afin qu’ils soient disponibles dans **Extensions et mises à jour**.  
+- Un dossier qui contient tous les fichiers image qui ont été extraits à partir des extensions (par exemple, les captures d’écran). Le *atom.xml* fichier contient des liens relatifs à ces images afin qu’ils soient disponibles dans **Extensions et mises à jour**.  
   
- Par exemple, supposons que vous avez collecté les deux extensions suivantes dans un dossier :  
+  Par exemple, supposons que vous avez collecté les deux extensions suivantes dans un dossier :  
   
--   *Template_Wizard_239.vsix*, qui est un modèle de projet VSIX vide.  
+- *Template_Wizard_239.vsix*, qui est un modèle de projet VSIX vide.  
   
--   *SelectionHighlight.vsix*, qui est un outil pour mettre en surbrillance toutes les instances d’un mot sélectionné.  
+- *SelectionHighlight.vsix*, qui est un outil pour mettre en surbrillance toutes les instances d’un mot sélectionné.  
   
- Le contenu de la *atom.xml* fichier ressemblerait à l’exemple suivant :  
+  Le contenu de la *atom.xml* fichier ressemblerait à l’exemple suivant :  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   

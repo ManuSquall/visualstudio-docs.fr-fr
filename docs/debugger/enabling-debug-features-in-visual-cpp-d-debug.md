@@ -1,5 +1,5 @@
 ---
-title: L’activation de fonctionnalités de débogage dans Visual C++ (-D_DEBUG) | Documents Microsoft
+title: L’activation de fonctionnalités de débogage dans Visual C++ (-D_DEBUG) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,23 +26,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5298879d93bf4e86df7610d5891e73bdbb67c4a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772467caf74a381fc2ef5cc74e8e31bf2ff0503c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949615"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Activation des fonctionnalités de débogage dans Visual C++ (/D_DEBUG)
 Dans [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], fonctionnalités de débogage telles que les assertions sont activées lorsque vous compilez votre programme avec le symbole **_DEBUG** défini. Vous pouvez définir **_DEBUG** de deux manières :  
   
--   Spécifiez **#define _DEBUG** dans votre code source, ou  
+- Spécifiez **#define _DEBUG** dans votre code source, ou  
   
--   Spécifiez le **/D_DEBUG** option du compilateur. (Si vous créez votre projet dans Visual Studio à l’aide des Assistants, **/D_DEBUG** est définie automatiquement dans la configuration Debug.)  
+- Spécifiez le **/D_DEBUG** option du compilateur. (Si vous créez votre projet dans Visual Studio à l’aide des Assistants, **/D_DEBUG** est définie automatiquement dans la configuration Debug.)  
   
- Lorsque **_DEBUG** est défini, le compilateur compile les sections de code entourées par **#ifdef _DEBUG** et `#endif`.  
+  Lorsque **_DEBUG** est défini, le compilateur compile les sections de code entourées par **#ifdef _DEBUG** et `#endif`.  
   
- La configuration Debug d'un programme MFC doit être liée à une version Debug de la bibliothèque MFC. Les fichiers d’en-tête MFC déterminent la version appropriée de la bibliothèque MFC à lier avec basé sur les symboles que vous avez définis, tels que **_DEBUG** et **_UNICODE**. Pour plus d’informations, consultez [Versions de bibliothèque MFC](/cpp/mfc/mfc-library-versions).  
+  La configuration Debug d'un programme MFC doit être liée à une version Debug de la bibliothèque MFC. Les fichiers d’en-tête MFC déterminent la version correcte de la bibliothèque MFC relier à l’aide basée sur les symboles que vous avez défini, tel que **_DEBUG** et **_UNICODE**. Pour plus d’informations, consultez [Versions de la bibliothèque MFC](/cpp/mfc/mfc-library-versions).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code natif](../debugger/debugging-native-code.md)   

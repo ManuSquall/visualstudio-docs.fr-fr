@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract | Documents Microsoft
+title: IDebugMemoryContext2::Subtract | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6cc7265def2d1a4b184f27865461706e62b98f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3303d86abed596f35f714c4389770c613fa09b6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896651"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Soustrait la valeur spécifiée à partir du contexte actuel et retourne un nouveau contexte.  
@@ -47,15 +47,15 @@ int Subtract(
  [in] Le nombre d’octets de mémoire à décrémenter.  
   
  `ppMemCxt`  
- [out] Retourne un nouveau [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet.  
+ [out] Retourne un nouvel [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un contexte de la mémoire est une adresse, afin de la soustraction d’une valeur à partir d’une adresse génère une nouvelle adresse qui requiert une nouvelle interface de contexte.  
+ Un contexte de mémoire étant une adresse, en soustrayant une valeur à partir d’une adresse génère une nouvelle adresse qui requiert une nouvelle interface de contexte.  
   
- Cette méthode doit produire toujours d’un nouveau contexte, même si l’adresse obtenue est en dehors de l’espace de mémoire associé à ce contexte. La seule exception est si aucune mémoire ne pouvant être allouée pour le nouveau contexte ou si `ppMemCxt` est une valeur null (qui est une erreur).  
+ Cette méthode doit produire toujours un nouveau contexte, même si l’adresse obtenue est en dehors de l’espace de mémoire associé à ce contexte. La seule exception est si aucune mémoire ne pouvant être allouée pour le nouveau contexte ou si `ppMemCxt` est une valeur null (qui est une erreur).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

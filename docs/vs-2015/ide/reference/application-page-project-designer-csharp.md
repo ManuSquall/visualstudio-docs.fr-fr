@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867232"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ Utilisez la page **Application** du **Concepteur de projet** pour spécifier les
  **Manifest**  
  Sélectionne une option de génération de manifeste quand l’application s’exécute sur Windows Vista sous contrôle de compte d’utilisateur (UAC). Cette option peut avoir les valeurs suivantes :  
   
--   **Incorporer les paramètres par défaut dans le fichier manifeste**. Prend en charge le fonctionnement standard de Visual Studio sur Windows Vista, qui incorpore les informations de sécurité dans le fichier exécutable de l’application, en indiquant que `requestedExecutionLevel` doit être `AsInvoker`. Il s'agit de l'option par défaut.  
+- **Incorporer les paramètres par défaut dans le fichier manifeste**. Prend en charge le fonctionnement standard de Visual Studio sur Windows Vista, qui incorpore les informations de sécurité dans le fichier exécutable de l’application, en indiquant que `requestedExecutionLevel` doit être `AsInvoker`. Il s'agit de l'option par défaut.  
   
--   **Créer une application sans fichier manifeste**. Cette méthode est appelée *virtualisation*. Utilisez cette option pour la compatibilité avec les applications antérieures.  
+- **Créer une application sans fichier manifeste**. Cette méthode est appelée *virtualisation*. Utilisez cette option pour la compatibilité avec les applications antérieures.  
   
--   **Propriétés\app.manifest**. Cette option est obligatoire pour les applications déployées par ClickOnce ou COM sans inscription. Si vous publiez une application à l’aide du déploiement ClickOnce, l’option **Manifeste** est automatiquement définie sur cette option.  
+- **Propriétés\app.manifest**. Cette option est obligatoire pour les applications déployées par ClickOnce ou COM sans inscription. Si vous publiez une application à l’aide du déploiement ClickOnce, l’option **Manifeste** est automatiquement définie sur cette option.  
   
- **Fichier de ressources**  
- Sélectionnez cette case d’option, sauf si vous fournissez un fichier de ressources pour le projet. Cette option désactive les options **Icône** et **Manifeste**.  
+  **Fichier de ressources**  
+  Sélectionnez cette case d’option, sauf si vous fournissez un fichier de ressources pour le projet. Cette option désactive les options **Icône** et **Manifeste**.  
   
- Entrez un nom de chemin ou utilisez le bouton Parcourir (**...** ) pour ajouter un fichier de ressources Win32 au projet.  
+  Entrez un nom de chemin ou utilisez le bouton Parcourir (**...** ) pour ajouter un fichier de ressources Win32 au projet.  
   
 ## <a name="see-also"></a>Voir aussi  
 [Gestion des propriétés de l’application](../../ide/application-properties.md)  

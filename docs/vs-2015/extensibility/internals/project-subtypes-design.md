@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839425"
 ---
 # <a name="project-subtypes-design"></a>Conception de sous-types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Sous-types de projet permettent aux VSPackages d’étendre les projets basés s
 ## <a name="project-subtype-design"></a>Conception de sous-type de projet  
  L’initialisation d’un sous-type de projet est obtenue en agrégeant les principaux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objets. Cette agrégation permet un sous-type de projet substituer ou améliorer la plupart des fonctionnalités du projet de base. Les sous-types de projet obtenir la première occasion pour gérer à l’aide des propriétés <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, à l’aide des commandes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>et la gestion de l’élément projet à l’aide <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Les sous-types de projet peuvent également étendre :  
   
--   Objets de configuration de projet.  
+- Objets de configuration de projet.  
   
--   Objets dépend de la configuration.  
+- Objets dépend de la configuration.  
   
--   Objets de parcourir des indépendantes de la configuration.  
+- Objets de parcourir des indépendantes de la configuration.  
   
--   Objets automation de projet.  
+- Objets automation de projet.  
   
--   Collections de propriétés d’automation de projet.  
+- Collections de propriétés d’automation de projet.  
   
- Pour plus d’informations sur l’extensibilité aux sous-types de projet, consultez [propriétés et méthodes étendues par les sous-types de projet](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Pour plus d’informations sur l’extensibilité aux sous-types de projet, consultez [propriétés et méthodes étendues par les sous-types de projet](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Fichiers de stratégie  
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environnement fournit un exemple d’extension du système de projet de base avec un sous-type de projet dans son implémentation de fichiers de stratégie. Un fichier de stratégie permet la mise en forme de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environnement grâce à la gestion des fonctionnalités, notamment l’Explorateur de solutions, **ajouter un projet** boîte de dialogue, **ajouter un nouvel élément** boîte de dialogue et le  **Propriétés** boîte de dialogue. Le sous-type de stratégie remplace et améliore ces fonctionnalités via <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implémentations.  

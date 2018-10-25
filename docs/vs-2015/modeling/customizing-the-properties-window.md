@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845743"
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
   
  **Description**. La Description d’une propriété de domaine s’affiche dans deux emplacements :  
   
--   Dans la partie inférieure de la fenêtre Propriétés lorsque l’utilisateur sélectionne la propriété. Vous pouvez l’utiliser pour expliquer à l’utilisateur ce que représente la propriété.  
+- Dans la partie inférieure de la fenêtre Propriétés lorsque l’utilisateur sélectionne la propriété. Vous pouvez l’utiliser pour expliquer à l’utilisateur ce que représente la propriété.  
   
--   Dans le code du programme généré. Si vous utilisez les fonctionnalités de la documentation pour extraire la documentation de l’API, il apparaît comme la description de cette propriété dans l’API.  
+- Dans le code du programme généré. Si vous utilisez les fonctionnalités de la documentation pour extraire la documentation de l’API, il apparaît comme la description de cette propriété dans l’API.  
   
- **Category**. Une catégorie est un en-tête dans la fenêtre Propriétés.  
+  **Category**. Une catégorie est un en-tête dans la fenêtre Propriétés.  
   
 ## <a name="exposing-style-features"></a>Exposition des fonctionnalités de Style  
  Certaines des fonctionnalités dynamiques d’éléments de graphiques peuvent être représentés ou *exposées* en tant que propriétés de domaine. Une fonctionnalité qui a été exposée de cette manière peut être mis à jour par l’utilisateur et peut facilement être mis à jour par du code de programme.  
@@ -101,38 +101,38 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
   
  Toutefois, vous pouvez spécifier les éditeurs et les types suivants :  
   
-1.  Un autre éditeur qui est utilisé avec un type standard. Par exemple, vous pouvez spécifier un éditeur du chemin d’accès de fichier pour une propriété de chaîne.  
+1. Un autre éditeur qui est utilisé avec un type standard. Par exemple, vous pouvez spécifier un éditeur du chemin d’accès de fichier pour une propriété de chaîne.  
   
-2.  Un type externe pour la propriété de domaine et un éditeur pour celui-ci.  
+2. Un type externe pour la propriété de domaine et un éditeur pour celui-ci.  
   
-3.  Un éditeur de .NET tels que l’éditeur de chemin d’accès de fichier, ou vous pouvez créer votre propre propriété personnalisée éditeur.  
+3. Un éditeur de .NET tels que l’éditeur de chemin d’accès de fichier, ou vous pouvez créer votre propre propriété personnalisée éditeur.  
   
-     Une conversion entre un type externe et un type tel que chaîne, qui fournit un éditeur par défaut.  
+    Une conversion entre un type externe et un type tel que chaîne, qui fournit un éditeur par défaut.  
   
- Dans une solution DSL, un *type externe* est n’importe quel type qui n’est pas un des types simples (par exemple, Boolean ou Int32) ou chaîne.  
+   Dans une solution DSL, un *type externe* est n’importe quel type qui n’est pas un des types simples (par exemple, Boolean ou Int32) ou chaîne.  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Pour définir une propriété de domaine qui a un type externe  
   
-1.  Dans **l’Explorateur de solutions**, ajoutez une référence à l’assembly (DLL) qui contient le type externe, dans le **Dsl** projet.  
+1. Dans **l’Explorateur de solutions**, ajoutez une référence à l’assembly (DLL) qui contient le type externe, dans le **Dsl** projet.  
   
-     L’assembly peut être un assembly .NET ou un assembly fourni par vous.  
+    L’assembly peut être un assembly .NET ou un assembly fourni par vous.  
   
-2.  Ajoutez le type à la **des Types de domaine** répertorier, sauf si vous avez déjà fait.  
+2. Ajoutez le type à la **des Types de domaine** répertorier, sauf si vous avez déjà fait.  
   
-    1.  Ouvrez DslDefinition.dsl, puis, dans **Explorateur DSL**, cliquez sur le nœud racine, puis cliquez sur **ajouter un nouveau Type externe**.  
+   1.  Ouvrez DslDefinition.dsl, puis, dans **Explorateur DSL**, cliquez sur le nœud racine, puis cliquez sur **ajouter un nouveau Type externe**.  
   
-         Une nouvelle entrée apparaît sous le **des Types de domaine** nœud.  
+        Une nouvelle entrée apparaît sous le **des Types de domaine** nœud.  
   
-        > [!WARNING]
-        >  L’élément de menu n’est pas sur le nœud racine DSL, le **des Types de domaine** nœud.  
+       > [!WARNING]
+       >  L’élément de menu n’est pas sur le nœud racine DSL, le **des Types de domaine** nœud.  
   
-    2.  Dans la fenêtre Propriétés, définissez le nom et l’espace de noms du nouveau type.  
+   2.  Dans la fenêtre Propriétés, définissez le nom et l’espace de noms du nouveau type.  
   
-3.  Ajouter une propriété de domaine à une classe de domaine de la manière habituelle.  
+3. Ajouter une propriété de domaine à une classe de domaine de la manière habituelle.  
   
-     Dans la fenêtre Propriétés, sélectionnez le type externe dans la liste déroulante de la **Type** champ.  
+    Dans la fenêtre Propriétés, sélectionnez le type externe dans la liste déroulante de la **Type** champ.  
   
- À ce stade, les utilisateurs peuvent afficher les valeurs de la propriété, mais ils ne peuvent pas le modifier. Les valeurs affichées sont obtenues à partir de la `ToString()` (fonction). Vous pouvez écrire du code de programme qui définit la valeur de la propriété, par exemple dans une commande ou une règle.  
+   À ce stade, les utilisateurs peuvent afficher les valeurs de la propriété, mais ils ne peuvent pas le modifier. Les valeurs affichées sont obtenues à partir de la `ToString()` (fonction). Vous pouvez écrire du code de programme qui définit la valeur de la propriété, par exemple dans une commande ou une règle.  
   
 ### <a name="setting-a-property-editor"></a>Définition d’un éditeur de propriétés  
  Ajoutez un attribut CLR à la propriété de domaine, sous la forme suivante :  
@@ -178,11 +178,11 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
   
  Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.Drawing.Design.UITypeEditor>. Votre classe doit remplacer :  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, pour interagir avec l’utilisateur et mettre à jour la valeur de propriété.  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, pour interagir avec l’utilisateur et mettre à jour la valeur de propriété.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier que votre éditeur ouvrir une boîte de dialogue ou fournir un menu déroulant.  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier que votre éditeur ouvrir une boîte de dialogue ou fournir un menu déroulant.  
   
- Vous pouvez également fournir une représentation graphique de la valeur de propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported`, et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.  
+  Vous pouvez également fournir une représentation graphique de la valeur de propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported`, et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Ajoutez le code dans un fichier de code séparé dans le **Dsl** projet.  

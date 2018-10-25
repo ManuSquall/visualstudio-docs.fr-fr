@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c0b266f9267925efb2e9e1348f7cd656a6b8be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846626"
 ---
 # <a name="threads-view-parallel-performance"></a>Vue Threads (Performances parallèles)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
   
  Pendant l’analyse du profil, le visualiseur concurrentiel examine tous les événements de changement de contexte du système d’exploitation pour chaque thread de l’application. Les changements de contexte peuvent se produire pour de nombreuses raisons, comme celles-ci :  
   
--   Un thread est bloqué sur une primitive de synchronisation.  
+- Un thread est bloqué sur une primitive de synchronisation.  
   
--   Le quantum d’un thread expire.  
+- Le quantum d’un thread expire.  
   
--   Un thread effectue une demande d’E/S bloquante.  
+- Un thread effectue une demande d’E/S bloquante.  
   
- La vue Threads affecte une catégorie à chaque changement de contexte quand un thread a cessé de s’exécuter. Les catégories sont indiquées dans la légende qui figure dans la partie inférieure gauche de la vue. Le visualiseur concurrentiel catégorise les événements de changement de contexte en recherchant dans la pile des appels du thread les API notoirement bloquantes. S’il n’existe pas de correspondance dans la pile des appels, la raison de l’attente fournie par [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] est utilisée. Cependant, la catégorie de [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] peut être basée sur un détail de l’implémentation et ne pas refléter l’intention de l’utilisateur. Par exemple, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] indique la raison de l’attente du blocage sur un verrou de lecteur-enregistreur natif comme étant une E/S alors qu’il s’agit d’une synchronisation. Dans la plupart des cas, vous pouvez identifier la cause principale d’un événement de blocage en examinant les piles des appels qui correspondent aux événements de changement de contexte.  
+  La vue Threads affecte une catégorie à chaque changement de contexte quand un thread a cessé de s’exécuter. Les catégories sont indiquées dans la légende qui figure dans la partie inférieure gauche de la vue. Le visualiseur concurrentiel catégorise les événements de changement de contexte en recherchant dans la pile des appels du thread les API notoirement bloquantes. S’il n’existe pas de correspondance dans la pile des appels, la raison de l’attente fournie par [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] est utilisée. Cependant, la catégorie de [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] peut être basée sur un détail de l’implémentation et ne pas refléter l’intention de l’utilisateur. Par exemple, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] indique la raison de l’attente du blocage sur un verrou de lecteur-enregistreur natif comme étant une E/S alors qu’il s’agit d’une synchronisation. Dans la plupart des cas, vous pouvez identifier la cause principale d’un événement de blocage en examinant les piles des appels qui correspondent aux événements de changement de contexte.  
   
- La vue Threads affiche également les dépendances entre les threads. Par exemple, si vous identifiez un thread qui est bloqué sur un objet de synchronisation, vous pouvez rechercher le thread qui l’a débloqué et vous pouvez examiner l’activité sur la pile des appels pour ce thread au moment où il a débloqué l’autre.  
+  La vue Threads affiche également les dépendances entre les threads. Par exemple, si vous identifiez un thread qui est bloqué sur un objet de synchronisation, vous pouvez rechercher le thread qui l’a débloqué et vous pouvez examiner l’activité sur la pile des appels pour ce thread au moment où il a débloqué l’autre.  
   
- Quand des threads sont en cours d’exécution, le visualiseur concurrentiel collecte des échantillons. Dans la vue Threads, vous pouvez déterminer quel code est exécuté par un ou plusieurs threads pendant un segment d’exécution. Vous pouvez également examiner des rapports de blocage et des rapports qui profilent l’exécution de l’arborescence de la pile des appels.  
+  Quand des threads sont en cours d’exécution, le visualiseur concurrentiel collecte des échantillons. Dans la vue Threads, vous pouvez déterminer quel code est exécuté par un ou plusieurs threads pendant un segment d’exécution. Vous pouvez également examiner des rapports de blocage et des rapports qui profilent l’exécution de l’arborescence de la pile des appels.  
   
 ## <a name="usage"></a>Utilisation  
  Voici quelques façons d’utiliser la vue Threads :  
@@ -64,26 +64,26 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
 ## <a name="examining-specific-time-intervals-and-threads"></a>Examen d’intervalles de temps et de threads spécifiques  
  La vue Threads montre une chronologie. Vous pouvez effectuer un zoom et un panoramique dans la chronologie pour examiner des intervalles spécifiques et des threads de votre application. Le temps figure sur l’axe des X et plusieurs canaux sont présents sur l’axe Y :  
   
--   Deux canaux d’E/S pour chaque lecteur de disque sur le système, un canal pour les lectures et un pour les écritures.  
+- Deux canaux d’E/S pour chaque lecteur de disque sur le système, un canal pour les lectures et un pour les écritures.  
   
--   Un canal pour chaque thread du processus.  
+- Un canal pour chaque thread du processus.  
   
--   Des canaux de marqueurs, s’il existe des événements de marqueur dans la trace. Les canaux de marqueurs apparaissent initialement sous les canaux de threads qui ont généré ces événements.  
+- Des canaux de marqueurs, s’il existe des événements de marqueur dans la trace. Les canaux de marqueurs apparaissent initialement sous les canaux de threads qui ont généré ces événements.  
   
--   Canaux GPU  
+- Canaux GPU  
   
- Voici une illustration de la vue Threads :  
+  Voici une illustration de la vue Threads :  
   
- ![Vue threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-vue Threads  
+  ![Vue threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  vue Threads  
   
- Initialement, les threads sont triés dans l’ordre où ils sont créés : le thread d’application principal figure donc en premier. Vous pouvez utiliser l’option de tri dans le coin supérieur gauche de la vue pour trier les threads selon un autre critère (par exemple sur la base de la plus grande quantité de travail d’exécution effectuée).  
+  Initialement, les threads sont triés dans l’ordre où ils sont créés : le thread d’application principal figure donc en premier. Vous pouvez utiliser l’option de tri dans le coin supérieur gauche de la vue pour trier les threads selon un autre critère (par exemple sur la base de la plus grande quantité de travail d’exécution effectuée).  
   
- Vous pouvez masquer les threads qui n’effectuent pas de travail en sélectionnant leur nom dans la colonne de gauche, puis en choisissant **Masquer les threads sélectionnés** dans la barre d’outils. Nous vous recommandons de masquer les threads qui sont complètement bloqués, car leurs statistiques ne sont pas pertinentes et peuvent encombrer les rapports.  
+  Vous pouvez masquer les threads qui n’effectuent pas de travail en sélectionnant leur nom dans la colonne de gauche, puis en choisissant **Masquer les threads sélectionnés** dans la barre d’outils. Nous vous recommandons de masquer les threads qui sont complètement bloqués, car leurs statistiques ne sont pas pertinentes et peuvent encombrer les rapports.  
   
- Pour identifier des threads supplémentaires à masquer, dans la légende active, sélectionnez le rapport **Résumé par thread** sous l’onglet **Rapport des profils**. Ceci affiche le graphique de répartition de l’exécution, qui montre l’état des threads pour l’intervalle de temps sélectionné. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite.  
+  Pour identifier des threads supplémentaires à masquer, dans la légende active, sélectionnez le rapport **Résumé par thread** sous l’onglet **Rapport des profils**. Ceci affiche le graphique de répartition de l’exécution, qui montre l’état des threads pour l’intervalle de temps sélectionné. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite.  
   
- Quand vous avez sélectionné un intervalle de temps et certains threads qui y apparaissent, vous pouvez démarrer l’analyse des performances.  
+  Quand vous avez sélectionné un intervalle de temps et certains threads qui y apparaissent, vous pouvez démarrer l’analyse des performances.  
   
 ## <a name="analysis-tools"></a>Outils d’analyse  
  Cette section décrit les rapports et d’autres outils d’analyse.  

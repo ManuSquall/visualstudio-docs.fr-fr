@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811579"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant publication (développement Office dans Visual Studio)
   Utilisez le **Assistant Publication** pour copier les fichiers de solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation.  
@@ -41,13 +41,13 @@ ms.locfileid: "35671197"
   
  Tapez l’emplacement en tant qu’un chemin d’accès de disque, un partage de fichiers, un site FTP ou une URL du site web, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement. Le chemin d’accès peut être dans ces formats :  
   
--   Un chemin d’accès relatif ou absolu dans la norme Windows mettre en forme, telles que *C:\Deploy\MyApplication* ou *\MyApplication*.  
+- Un chemin d’accès relatif ou absolu dans la norme Windows mettre en forme, telles que *C:\Deploy\MyApplication* ou *\MyApplication*.  
   
--   Un chemin d’accès UNC Universal Naming Convention (), tel que  *\\\ServerName\MyApplication\\*.  
+- Un chemin d’accès UNC Universal Naming Convention (), tel que  *\\\ServerName\MyApplication\\*.  
   
--   Une URL d’un site web de site, tel que http://www.microsoft.com/MyApplication.  
+- Une URL d’un site web de site, tel que http://www.microsoft.com/MyApplication.  
   
- Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire publish\ si vous le faites pas IIS installé.  
+  Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire publish\ si vous le faites pas IIS installé.  
   
 > [!NOTE]  
 >  Il existe des considérations plus si l’ordinateur cible exécute Windows Vista. Vous devez être administrateur sur l’ordinateur Windows Vista d’utiliser l’option de publication local. En outre, l’emplacement par défaut est toujours le *publier\\*  répertoire, que vous ayez installé IIS.  

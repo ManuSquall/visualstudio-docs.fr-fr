@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816676"
 ---
 # <a name="layout-for-visual-studio"></a>Mise en page pour Visual Studio
 La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont l’unthemed boîtes de dialogue de cette norme suivi [principes de mise en page de boîte de dialogue Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Lorsque Visual Studio s’à actualiser son interface utilisateur, certaines des boîtes de dialogue plus apparents ont une nouvelle conception qui établit les expériences comme définition de produit. Ces [mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ont une apparence à thème.  
@@ -56,19 +56,19 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
 #### <a name="command-buttons"></a>Boutons de commande  
   
--   Boutons de commande fonctionnent sur le frame de boîte de dialogue, pas sur le contenu. Ils doivent être placés dans la partie inférieure droite et doivent avoir suffisamment d’espace variable ci-dessus pour définir les boutons distinctes.  
+- Boutons de commande fonctionnent sur le frame de boîte de dialogue, pas sur le contenu. Ils doivent être placés dans la partie inférieure droite et doivent avoir suffisamment d’espace variable ci-dessus pour définir les boutons distinctes.  
   
--   S’il existe des boutons horizontaux qui opèrent au sein de la boîte de dialogue, la configuration de bouton de commande alternatif est une pile verticale en haut à droite. Consultez [des boutons de commande intérieurs](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) ci-dessous.  
+- S’il existe des boutons horizontaux qui opèrent au sein de la boîte de dialogue, la configuration de bouton de commande alternatif est une pile verticale en haut à droite. Consultez [des boutons de commande intérieurs](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) ci-dessous.  
   
--   L’espace à gauche des boutons de commande (gauche/centre en bas de la boîte de dialogue) est considéré comme partie de la « bande » des contrôles d’opération de boîte de dialogue. La seule chose qui doit empiéter sur cet espace est un lien d’aide correspondant à la tâche globale ou de la boîte de dialogue.  
+- L’espace à gauche des boutons de commande (gauche/centre en bas de la boîte de dialogue) est considéré comme partie de la « bande » des contrôles d’opération de boîte de dialogue. La seule chose qui doit empiéter sur cet espace est un lien d’aide correspondant à la tâche globale ou de la boîte de dialogue.  
   
--   Boutons de commande doit être x 23 75 pixels.  
+- Boutons de commande doit être x 23 75 pixels.  
   
--   Boutons de commande doit être 6 pixels uns des autres.  
+- Boutons de commande doit être 6 pixels uns des autres.  
   
- ![Alignement des boutons de base](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801-c_ButtonAlign")  
+  ![Alignement des boutons de base](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801-c_ButtonAlign")  
   
- **Figure 08.01-c : Alignement des boutons de base**  
+  **Figure 08.01-c : Alignement des boutons de base**  
   
 #### <a name="labels"></a>Étiquettes  
   
@@ -106,19 +106,19 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
 ####  <a name="BKMK_InteriorCommandButtons"></a> Boutons de commande intérieurs  
  Dans les boîtes de dialogue plus complexes, un contrôle interne peut avoir ses propres boutons associés, qui peuvent affecter l’emplacement où se trouvent les boutons de validation de la boîte de dialogue.  
   
--   Utilisez un alignement vertical (colonne) de l’intérieur boutons lorsque **OK**/**Annuler** est orienté horizontalement dans le coin inférieur droit.  
+- Utilisez un alignement vertical (colonne) de l’intérieur boutons lorsque **OK**/**Annuler** est orienté horizontalement dans le coin inférieur droit.  
   
--   Utilisez un alignement horizontal (ligne) de l’intérieur boutons lorsque **OK**/**Annuler** est orienté verticalement dans le coin supérieur droit. Cette situation est moins courante.  
+- Utilisez un alignement horizontal (ligne) de l’intérieur boutons lorsque **OK**/**Annuler** est orienté verticalement dans le coin supérieur droit. Cette situation est moins courante.  
   
--   Taille du bouton intérieurs doit cibler la taille des boutons standard de 75 x 23 pixels, correspondant à la taille de **OK**/**Annuler** boutons lorsque cela est possible. Si une étiquette de bouton rend le bouton de dépassement de la taille de bouton standard, les autres boutons dans cet ensemble doivent s’aligner avec cette taille plus large.  
+- Taille du bouton intérieurs doit cibler la taille des boutons standard de 75 x 23 pixels, correspondant à la taille de **OK**/**Annuler** boutons lorsque cela est possible. Si une étiquette de bouton rend le bouton de dépassement de la taille de bouton standard, les autres boutons dans cet ensemble doivent s’aligner avec cette taille plus large.  
   
- ![Boutons horizontaux OK et annuler](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")  
+  ![Boutons horizontaux OK et annuler](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")  
   
- **Figure 08.01-f: Boutons d’intérieur Vertical avec OK/Annuler horizontaux**  
+  **Figure 08.01-f: Boutons d’intérieur Vertical avec OK/Annuler horizontaux**  
   
- ![Boutons verticale OK et annuler](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-g_VertOKCan")  
+  ![Boutons verticale OK et annuler](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-g_VertOKCan")  
   
- **Figure 08.01-g: Horizontal intérieurs boutons OK/Annuler verticaux**  
+  **Figure 08.01-g: Horizontal intérieurs boutons OK/Annuler verticaux**  
   
 #### <a name="browse-button"></a>[Parcourir...] bouton  
  **[Parcourir...]**  boutons qui suivent une zone de texte énoncez à « Parcourir... » dans sa totalité, y compris les points de suspension. Si l’espace est étroit ou il existe plusieurs **[Parcourir...]**  boutons à l’écran, le bouton peut être réduit à simplement les points de suspension.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentProvider (Interface) | Documents Microsoft
+title: Interface IDebugDocumentProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262794718e238068cfd9a8e3fae5161b9fe8cc54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d775deb153205d0e9a452775272285c67e74a210
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949862"
 ---
 # <a name="idebugdocumentprovider-interface"></a>IDebugDocumentProvider, interface
-Fournit les moyens d’instanciation d’un document à la demande.  
+Permet d’instancier un document à la demande.  
   
 ## <a name="remarks"></a>Notes  
- Cela signifie indirecte d’instanciation d’un document :  
+ Cela signifie indirect de l’instanciation d’un document :  
   
--   Permet le document à charger lorsque cela est nécessaire.  
+- Permet le document à charger lorsque cela est nécessaire.  
   
--   Permet à l’objet de document doit être contenu dans le débogueur IDE.  
+- Permet à l’objet de document doit être contenu dans l’IDE de débogueur.  
   
--   Permet de plusieurs façons d’accéder au même objet de document.  
+- Permet de plusieurs façons d’accéder au même objet de document.  
   
- Cela sépare le document à partir de son fournisseur et permet au fournisseur transporter les informations de contexte supplémentaires moment de l’exécution.  
+  Cela sépare le document à partir de son fournisseur et permet au fournisseur transporter les informations de contexte supplémentaires moment de l’exécution.  
   
- Outre les méthodes héritées de `IDebugDocumentInfo`, le `IDebugDocumentProvider` interface expose les méthodes suivantes.  
+  Outre les méthodes héritées de `IDebugDocumentInfo`, le `IDebugDocumentProvider` interface expose les méthodes suivantes.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Provoque le document à instancier si elle n’existe pas déjà.|
+|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Provoque le document soit instanciée si elle n’existe pas déjà.|

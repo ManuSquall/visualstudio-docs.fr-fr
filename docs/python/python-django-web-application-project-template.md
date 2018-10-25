@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499541"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100963"
 ---
 # <a name="django-web-project-template"></a>Modèle de projet web Django
 
@@ -56,7 +56,7 @@ La console de gestion Django est accessible par le biais de plusieurs commandes 
 
     ![Console](media/template-django-console-sync-db.png)
 
-- **Collect Static (Collecter les fichiers statiques)** : exécute `manage.py collectstatic --noinput` pour copier tous les fichiers statiques dans le chemin d’accès spécifié par `STATIC_ROOT` dans votre fichier *settings.py*. Lors de la [publication sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), les fichiers statiques sont automatiquement collectés dans le cadre de l’opération de publication.
+- **Collect Static (Collecter les fichiers statiques)** : exécute `manage.py collectstatic --noinput` pour copier tous les fichiers statiques dans le chemin d’accès spécifié par `STATIC_ROOT` dans votre fichier *settings.py*.
 
     ![Console](media/template-django-console-collect-static.png)
 

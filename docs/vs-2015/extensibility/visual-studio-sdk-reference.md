@@ -16,12 +16,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87d724f7df641169fde7445f6433687f67ccb8e7
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232061"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459801"
 ---
 # <a name="visual-studio-sdk-reference"></a>Informations de référence sur le SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ Cette section contient des informations sur les espaces de noms Visual Studio, l
  <xref:Microsoft.VisualStudio.Threading>  
  Utilisé pour le thread de Visual Studio.  
   
- <xref:Microsoft.VisualStudio.Connected Services?qualifyHint=False&autoUpgrade=True> Utilisé pour les services connectés de Visual Studio.  
+ <xref:Microsoft.VisualStudio.ConnectedServices?qualifyHint=False&autoUpgrade=True> Utilisé pour les services connectés de Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) énumération  
  Spécifie les indicateurs d’hôte IntelliSense.  

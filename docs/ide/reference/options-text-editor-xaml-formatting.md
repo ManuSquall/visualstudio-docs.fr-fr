@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933571"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Options, Éditeur de texte, XAML, Mise en forme
 Utilisez la page de propriétés **Mise en forme** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Mise en forme**, développez le nœud **Éditeur de texte**, **XAML**, **Mise en forme**.
@@ -96,11 +96,12 @@ Vous pouvez spécifier quels événements entraînent la mise en forme automatiq
 ## <a name="element-spacing"></a>Espacement d'éléments
  Ce paramètre permet de contrôler la manière dont les éléments sont organisés dans votre document XAML.
 
-|||
-|-|-|
-|**Conserver les nouvelles lignes du contenu**|Les lignes vides du contenu de l’élément ne sont pas supprimées.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Réduire plusieurs lignes vides du contenu en une seule ligne**|Les lignes vides du contenu de l’élément sont réduites en une seule ligne.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Supprimer les lignes vides du contenu**|Toutes les lignes vides du contenu de l’élément sont supprimées.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **Conserver les nouvelles lignes du contenu** | Les lignes vides du contenu de l’élément ne sont pas supprimées.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **Réduire plusieurs lignes vides du contenu en une seule ligne** | Les lignes vides du contenu de l’élément sont réduites en une seule ligne.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **Supprimer les lignes vides du contenu** | Toutes les lignes vides du contenu de l’élément sont supprimées.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>Section Divers, Insertion automatique
  Ce paramètre permet de contrôler à quel moment les balises et les guillemets sont générés automatiquement.

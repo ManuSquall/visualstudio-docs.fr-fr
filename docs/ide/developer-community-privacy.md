@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836825"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -33,13 +33,13 @@ Si vous êtes soucieux de la confidentialité des données, ne placez pas d’in
 
 1. Dans le rapport que vous avez créé, choisissez **Ajouter un commentaire** pour créer une description privée du problème.
 
-1. Dans l’éditeur de réponse, utilisez la commande sous les boutons **Envoyer** et **Annuler** pour spécifier l’audience de votre réponse. Choisissez **Viewable by moderators and the original poster** (Consultable par les modérateurs et l’auteur à l’origine de la publication) pour limiter la visibilité aux employés de Microsoft et à vous-même.
+2. Dans l’éditeur de réponse, utilisez la commande sous les boutons **Envoyer** et **Annuler** pour spécifier l’audience de votre réponse. Choisissez **Viewable by moderators and the original poster** (Consultable par les modérateurs et l’auteur à l’origine de la publication) pour limiter la visibilité aux employés de Microsoft et à vous-même.
 
    ![Contrôle de confidentialité dans la Communauté des développeurs](media/developer-community-privacy-control.png)
 
    Seules les personnes que vous spécifiez peuvent voir le commentaire et les images, liens ou extraits de code que vous incluez. Toutes les réponses sous le commentaire ont la même visibilité que le commentaire d’origine. Cela est vrai même si le contrôle de confidentialité sur les réponses n’affiche pas correctement l’état de visibilité restreinte.
 
-1. Ajoutez la description et les autres informations, images et pièces jointes de fichier nécessaires à la reproduction. Choisissez le bouton **Envoyer** pour envoyer ces informations en privé.
+3. Ajoutez la description et les autres informations, images et pièces jointes de fichier nécessaires à la reproduction. Choisissez le bouton **Envoyer** pour envoyer ces informations en privé.
 
    > [!NOTE]
    > Les fichiers joints sont limités à 10 et ils ne doivent pas dépasser 2 Go. Si vous devez charger un fichier plus volumineux, vous pouvez envoyer un nouveau rapport de problème ou demander une URL de chargement à un employé de Microsoft dans un commentaire privé.
@@ -82,8 +82,8 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
    - Le fichier dump.
 
-   > [!NOTE]
-   > Vous pouvez supprimer les données d’enregistrement que vous ne souhaitez pas envoyer avant d’envoyer le rapport.
+    > [!NOTE]
+    > Vous pouvez supprimer les données d’enregistrement que vous ne souhaitez pas envoyer avant d’envoyer le rapport.
 
 ## <a name="see-also"></a>Voir aussi
 

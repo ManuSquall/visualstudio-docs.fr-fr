@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866387"
 ---
 # <a name="trycatch-activity-designer"></a>Concepteur d'activités TryCatch
 
@@ -42,7 +42,7 @@ Le **TryCatch** concepteur ne prend pas en charge la modification **Catch**. Si 
 Le tableau suivant présente le <xref:System.Activities.Statements.TryCatch>propriétés et décrit comment elles sont utilisées dans le concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.TryCatch>. TryCatch est la valeur par défaut.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|Première activité exécutée lorsque <xref:System.Activities.Statements.TryCatch> s'exécute.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|La collection de **Catch** éléments à vérifier lorsque le <xref:System.Activities.Statements.TryCatch.Try%2A> activité lève une exception.<br /><br /> Vous devez au moins ajouter une activité dans <xref:System.Activities.Statements.TryCatch.Catches%2A> ou une activité dans le bloc <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
@@ -51,5 +51,5 @@ Le tableau suivant présente le <xref:System.Activities.Statements.TryCatch>prop
 ## <a name="see-also"></a>Voir aussi
 
 - [Collection](../workflow-designer/collection-activity-designers.md)
-- [rethrow](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)

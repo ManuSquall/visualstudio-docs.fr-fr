@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916749"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procédure pas à pas : Lier des contrôles de contenu à des parties XML personnalisées
   Cette procédure pas à pas montre comment lier les contrôles de contenu d'une personnalisation au niveau du document pour Word aux données XML stockées dans le document.  
@@ -36,19 +36,19 @@ ms.locfileid: "35673301"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Ajout de contrôles de contenu au document Word d'un projet de niveau document au moment du design.  
+- Ajout de contrôles de contenu au document Word d'un projet de niveau document au moment du design.  
   
--   Création d'un fichier de données XML et d'un schéma XML qui définit les éléments à lier aux contrôles de contenu.  
+- Création d'un fichier de données XML et d'un schéma XML qui définit les éléments à lier aux contrôles de contenu.  
   
--   Liaison du schéma XML au document au moment du design.  
+- Liaison du schéma XML au document au moment du design.  
   
--   Ajout du contenu du fichier XML à une partie XML personnalisée dans le document lors de l’exécution.  
+- Ajout du contenu du fichier XML à une partie XML personnalisée dans le document lors de l’exécution.  
   
--   Liaison des contrôles de contenu aux éléments de la partie XML personnalisée.  
+- Liaison des contrôles de contenu aux éléments de la partie XML personnalisée.  
   
--   Liaison d'un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> à un ensemble de valeurs définies dans le schéma XML.  
+- Liaison d’un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> à un ensemble de valeurs définies dans le schéma XML.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -71,36 +71,36 @@ ms.locfileid: "35673301"
   
 ### <a name="to-add-content-controls-to-the-document"></a>Pour ajouter des contrôles de contenu au document  
   
-1.  Dans le document Word qui est hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, dans le ruban, choisissez le **insérer** onglet.  
+1. Dans le document Word qui est hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, dans le ruban, choisissez le **insérer** onglet.  
   
-2.  Dans le **Tables** de groupe, choisissez **Table**et insérez un tableau comportant 2 colonnes et 3 lignes.  
+2. Dans le **Tables** de groupe, choisissez **Table**et insérez un tableau comportant 2 colonnes et 3 lignes.  
   
-3.  Complétez la première colonne pour obtenir une colonne similaire à ceci :  
+3. Complétez la première colonne pour obtenir une colonne similaire à ceci :  
   
-    ||  
-    |-|  
-    |**Nom de l’employé**|  
-    |**Date d’embauche**|  
-    |**Titre**|  
+   ||  
+   |-|  
+   |**Nom de l’employé**|  
+   |**Date d’embauche**|  
+   |**Titre**|  
   
-4.  Dans la deuxième colonne de la table, choisissez la première ligne (regard **nom de l’employé**).  
+4. Dans la deuxième colonne de la table, choisissez la première ligne (regard **nom de l’employé**).  
   
-5.  Dans le ruban, choisissez le **développeur** onglet.  
+5. Dans le ruban, choisissez le **développeur** onglet.  
   
-    > [!NOTE]  
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Dans le **contrôles** de groupe, choisissez le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
+6. Dans le **contrôles** de groupe, choisissez le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
   
-7.  Dans la deuxième colonne de la table, choisissez la deuxième ligne (regard **Date d’embauche**).  
+7. Dans la deuxième colonne de la table, choisissez la deuxième ligne (regard **Date d’embauche**).  
   
-8.  Dans le **contrôles** de groupe, choisissez le **sélecteur de dates** bouton ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.  
+8. Dans le **contrôles** de groupe, choisissez le **sélecteur de dates** bouton ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.  
   
 9. Dans la deuxième colonne de la table, sélectionnez la troisième ligne (regard **titre**).  
   
 10. Dans le **contrôles** de groupe, choisissez le **liste déroulante** bouton ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") à ajouter un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> jusqu'à la dernière cellule.  
   
- Il s'agit de la totalité de l'interface utilisateur pour ce projet. Si vous exécutez le projet maintenant, vous pouvez entrer un texte dans la première ligne et sélectionner une date dans la deuxième ligne. L'étape suivante consiste à lier les données que vous souhaitez afficher au document d'un fichier XML.  
+    Il s'agit de la totalité de l'interface utilisateur pour ce projet. Si vous exécutez le projet maintenant, vous pouvez entrer un texte dans la première ligne et sélectionner une date dans la deuxième ligne. L'étape suivante consiste à lier les données que vous souhaitez afficher au document d'un fichier XML.  
   
 ## <a name="create-the-xml-data-file"></a>Créer le fichier de données XML  
  En règle générale, vous obtiendrez les données XML à stocker dans une partie XML personnalisée à partir d'une source externe, telle qu'un fichier ou une base de données. Dans cette procédure pas à pas, vous créez un fichier XML qui contient les données d'employé, accompagnées des éléments que vous souhaitez lier aux contrôles de contenu du document. Pour rendre les données disponibles lors de l'exécution, incorporez le fichier XML en tant que ressource dans l'assembly de personnalisation.  
@@ -189,7 +189,7 @@ ms.locfileid: "35673301"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Attacher le schéma XML au document  
  Vous devez joindre le schéma XML au document afin de lier le <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> aux valeurs valides de l'élément `title`.  
   
-### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Pour attacher le schéma XML au document ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Pour attacher le schéma XML au document ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Activer **EmployeeControls.docx** dans le concepteur.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898614"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,23 +54,23 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
   
  L’élément `UsingTask` dans l’exemple a trois attributs qui décrivent la tâche et la fabrique de tâches inline qui la compile.  
   
--   L’attribut `TaskName` nomme la tâche, dans le cas présent `DoNothing`.  
+- L’attribut `TaskName` nomme la tâche, dans le cas présent `DoNothing`.  
   
--   L’attribut `TaskFactory` nomme la classe qui implémente la fabrique de tâches inline.  
+- L’attribut `TaskFactory` nomme la classe qui implémente la fabrique de tâches inline.  
   
--   L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Vous pouvez également utiliser l’attribut `AssemblyName` pour spécifier le nom qualifié complet de la classe de fabrique de tâches inline, qui se trouve généralement dans le global assembly cache (GAC).  
+- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Vous pouvez également utiliser l’attribut `AssemblyName` pour spécifier le nom qualifié complet de la classe de fabrique de tâches inline, qui se trouve généralement dans le global assembly cache (GAC).  
   
- Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.  
+  Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.  
   
--   L’élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez « Paramètres d’entrée et de sortie » plus loin dans cette rubrique.  
+- L’élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez « Paramètres d’entrée et de sortie » plus loin dans cette rubrique.  
   
--   L’élément `Task` décrit et contient le code source de la tâche.  
+- L’élément `Task` décrit et contient le code source de la tâche.  
   
--   L’élément `Reference` spécifie des références aux assemblys .NET que vous utilisez dans votre code. Cela équivaut à ajouter une référence à un projet dans Visual Studio. L’attribut `Include` spécifie le chemin de l’assembly référencé.  
+- L’élément `Reference` spécifie des références aux assemblys .NET que vous utilisez dans votre code. Cela équivaut à ajouter une référence à un projet dans Visual Studio. L’attribut `Include` spécifie le chemin de l’assembly référencé.  
   
--   L’élément `Using` répertorie les espaces de noms auxquels vous souhaitez accéder. Cela ressemble à l’instruction `Using` en Visual C#. L’attribut `Namespace` spécifie l’espace de noms à inclure.  
+- L’élément `Using` répertorie les espaces de noms auxquels vous souhaitez accéder. Cela ressemble à l’instruction `Using` en Visual C#. L’attribut `Namespace` spécifie l’espace de noms à inclure.  
   
- Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches inline peuvent être écrites dans n’importe quel langage .NET CodeDom pris en charge, par exemple Visual Basic ou Visual C#.  
+  Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches inline peuvent être écrites dans n’importe quel langage .NET CodeDom pris en charge, par exemple Visual Basic ou Visual C#.  
   
 > [!NOTE]
 >  Les éléments contenus dans l’élément `Task` sont propres à la fabrique de tâches, dans le cas présent la fabrique de tâches de code.  
@@ -82,15 +82,15 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
   
  L’attribut `Type` spécifie le type de code qui se trouve dans l’élément `Code`.  
   
--   Si la valeur de `Type` est `Class`, l’élément `Code` contient du code pour une classe qui dérive de l’interface <xref:Microsoft.Build.Framework.ITask>.  
+- Si la valeur de `Type` est `Class`, l’élément `Code` contient du code pour une classe qui dérive de l’interface <xref:Microsoft.Build.Framework.ITask>.  
   
--   Si la valeur de `Type` est `Method`, le code définit une substitution de la méthode `Execute` de l’interface <xref:Microsoft.Build.Framework.ITask>.  
+- Si la valeur de `Type` est `Method`, le code définit une substitution de la méthode `Execute` de l’interface <xref:Microsoft.Build.Framework.ITask>.  
   
--   Si la valeur de `Type` est `Fragment`, le code définit le contenu de la méthode `Execute`, mais pas la signature ou l’instruction `return`.  
+- Si la valeur de `Type` est `Fragment`, le code définit le contenu de la méthode `Execute`, mais pas la signature ou l’instruction `return`.  
   
- Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Comme le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de l’échappement des caractères réservés, tels que « \< » ou « > ».  
+  Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Comme le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de l’échappement des caractères réservés, tels que « \< » ou « > ».  
   
- Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` pour spécifier l’emplacement d’un fichier qui contient le code de votre tâche. Le code dans le fichier source doit être du type spécifié par l’attribut `Type`. Si l’attribut `Source` est présent, la valeur par défaut de `Type` est `Class`. Si `Source` est absent, la valeur par défaut est `Fragment`.  
+  Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` pour spécifier l’emplacement d’un fichier qui contient le code de votre tâche. Le code dans le fichier source doit être du type spécifié par l’attribut `Type`. Si l’attribut `Source` est présent, la valeur par défaut de `Type` est `Class`. Si `Source` est absent, la valeur par défaut est `Fragment`.  
   
 > [!NOTE]
 >  Quand vous définissez la classe de la tâche dans le fichier source, le nom de classe doit correspondre à l’attribut `TaskName` de l’élément [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondant.  
@@ -143,13 +143,13 @@ Log.LogError("Hello, world!");
   
  Les paramètres peuvent avoir un ou plusieurs de ces attributs :  
   
--   `Required` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, le paramètre est obligatoire et vous devez lui affecter une valeur avant d’appeler la tâche.  
+- `Required` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, le paramètre est obligatoire et vous devez lui affecter une valeur avant d’appeler la tâche.  
   
--   `ParameterType` est un attribut facultatif qui est `System.String` par défaut. Vous pouvez lui affecter n’importe quel type qualifié complet qui est un élément ou une valeur pouvant être converti vers et à partir d’une chaîne à l’aide de System.Convert.ChangeType. (En d’autres termes, tout type qui peut être passé à et depuis une tâche externe.)  
+- `ParameterType` est un attribut facultatif qui est `System.String` par défaut. Vous pouvez lui affecter n’importe quel type qualifié complet qui est un élément ou une valeur pouvant être converti vers et à partir d’une chaîne à l’aide de System.Convert.ChangeType. (En d’autres termes, tout type qui peut être passé à et depuis une tâche externe.)  
   
--   `Output` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, vous devez affecter une valeur au paramètre avant le retour de la méthode Execute.  
+- `Output` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, vous devez affecter une valeur au paramètre avant le retour de la méthode Execute.  
   
- Par exemple :  
+  Par exemple :  
   
 ```  
 <ParameterGroup>  
@@ -161,13 +161,13 @@ Log.LogError("Hello, world!");
   
  définit ces trois paramètres :  
   
--   `Expression` est un paramètre d’entrée obligatoire de type System.String.  
+- `Expression` est un paramètre d’entrée obligatoire de type System.String.  
   
--   `Files` est un paramètre d’entrée de liste d’éléments obligatoire.  
+- `Files` est un paramètre d’entrée de liste d’éléments obligatoire.  
   
--   `Tally` est un paramètre de sortie de type System.Int32.  
+- `Tally` est un paramètre de sortie de type System.Int32.  
   
- Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.  
+  Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.  
   
 ## <a name="example"></a>Exemple  
  La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.  

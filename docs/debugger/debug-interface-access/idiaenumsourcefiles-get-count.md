@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::get_Count | Documents Microsoft
+title: IDiaEnumSourceFiles::get_Count | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 533e4fa6593fa5dd5ad381ecc69a9026ef186b50
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 89ed0e7f8f6d1ce2f19e6060a2646339642a6716
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850852"
 ---
 # <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
 Récupère le nombre de fichiers sources.  

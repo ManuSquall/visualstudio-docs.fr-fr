@@ -1,7 +1,7 @@
 ---
-title: 'Comment : répondre au débogueur juste-à-temps | Microsoft Docs'
+title: Désactiver le débogueur juste-à-temps | Microsoft Docs
 ms.custom: ''
-ms.date: 05/23/17
+ms.date: 05/23/18
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,41 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179773"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382777"
 ---
-# <a name="how-to-respond-to-the-just-in-time-debugger"></a>Comment : répondre au débogueur juste-à-temps
+# <a name="disable-the-just-in-time-debugger"></a>Désactiver le débogueur juste-à-temps 
 
-Les actions que vous devez prendre lorsque vous voyez juste-à-temps boîte de dialogue de débogueur dépendent de ce que vous essayez de faire :
+La boîte de dialogue peut ouvrir lorsqu’une erreur se produit dans une application en cours d’exécution et empêche la poursuite de l’application. 
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Si vous souhaitez corriger ou de déboguer l’erreur (utilisateurs de Visual Studio)
+Le débogueur juste à temps vous donne la possibilité pour lancer Visual Studio pour déboguer l’erreur. Vous devez avoir [Visual Studio](http://visualstudio.microsoft.com) ou un autre débogueur sélectionné pour afficher des informations détaillées sur l’erreur ou essayez de déboguer. 
 
-- Vous devez avoir [Visual Studio installé](http://visualstudio.microsoft.com) pour afficher les informations détaillées sur l’erreur et essayez de déboguer. Pour plus d’informations, consultez [déboguer à l’aide du débogueur juste à temps](../debugger/debug-using-the-just-in-time-debugger.md). Si vous ne pouvez pas résoudre l’erreur et corriger l’application, contactez le propriétaire de l’application pour résoudre l’erreur.
+Si vous êtes un utilisateur de Visual Studio et que vous souhaitez essayer de déboguer l’erreur, consultez [déboguer à l’aide du débogueur juste à temps](../debugger/debug-using-the-just-in-time-debugger.md). Si vous ne pouvez pas corriger l’erreur ou pour conserver le débogueur juste à temps à partir de l’ouverture, vous pouvez [juste-à-temps de désactiver le débogage à partir de Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling). 
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Si vous souhaitez empêcher l’affichage de la boîte de dialogue
+Si vous aviez installé Visual Studio, mais n’est plus faire, vous devrez peut-être [juste-à-temps de désactiver le débogage à partir du Registre Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry). 
 
-Vous pouvez prendre des mesures pour empêcher le juste-à-temps débogueur de boîte de dialogue d’apparaître. Si l’application gère l’erreur, vous pouvez exécuter l’application normalement.
+Si vous n’avez pas installé Visual Studio, vous pouvez empêcher le débogage en désactivant le débogage de script ou le débogage côté serveur juste-à-temps. 
 
-1. (Applications web) Si vous essayez d’exécuter une application web, vous pouvez désactiver le débogage de script.
+- Si vous tentez d’exécuter une application web, désactiver le débogage de script :
+  
+  Dans Windows **le panneau de configuration** > **réseau et Internet** > **Options Internet**, sélectionnez **désactiver (débogage de script Internet Explorer)** et **désactiver (autre) de débogage de script**. Les étapes exactes et les paramètres varient selon votre version de Windows et de votre navigateur.
+  
+  ![Options d’Internet JIT](../debugger/media/jitinternetoptions.png "options JIT internet")
+  
+- Si vous hébergez une application web ASP.NET dans IIS, désactiver le débogage côté serveur :
 
-    Pour Internet Explorer ou Edge, désactiver le débogage de script dans la boîte de dialogue Options Internet. Vous pouvez accéder à ces paramètres à partir de la **le panneau de configuration** > **réseau et Internet** > **Options Internet** (la procédure exacte varie selon votre version de Windows et de votre navigateur).
+  1. Dans le Gestionnaire des services Internet **affichage des fonctionnalités**, sous le **ASP.NET** section, double-cliquez sur **Compilation .NET**, ou sélectionnez-le, puis sélectionnez **ouvrir la fonctionnalité**dans les **Actions** volet. 
+  1. Sous **comportement** > **déboguer**, sélectionnez **False**. Les étapes sont différentes dans les versions antérieures d’IIS.
 
-    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+Une fois que vous désactivez le débogage juste-à-temps, l’application peut être en mesure de gérer l’erreur et s’exécuter normalement. 
 
-    Puis rouvrez la page web où vous avez trouvé l’erreur. Si la modification de ce paramètre ne résout pas le problème, contactez le propriétaire de l’application web pour résoudre le problème.
+Si l’application a toujours une erreur non gérée, vous pouvez voir un message d’erreur ou l’application peut se bloquer ou de blocage. L’application ne s’exécute normalement jusqu'à ce que l’erreur est corrigée. Vous pouvez tenter de contacter le propriétaire de l’application et demandez-lui de résoudre le problème.
 
-3. (Utilisateurs de visual Studio) Si vous avez installé Visual Studio (ou si vous aviez il déjà installé et supprimé), [juste-à-temps de désactiver le débogage](../debugger/debug-using-the-just-in-time-debugger.md) et essayez à nouveau exécuter l’application.
-
-    > [!IMPORTANT]
-    > Si vous désactivez juste-à-temps de débogage et de l’application rencontre une exception non gérée (erreur), vous soit verrez une boîte de dialogue d’erreur standard à la place, ou l’application se bloque ou se bloquer. L’application ne sera pas exécutée normalement jusqu'à ce que l’erreur est corrigée (par vous ou le propriétaire de l’application).
-
-2. (ASP.NET et IIS) Si vous hébergez une application Web ASP.NET dans IIS, désactivez le débogage côté serveur.
-
-    Dans le Gestionnaire des services Internet, cliquez sur le nœud de serveur et choisissez **basculer vers l’affichage des fonctionnalités**. Dans la section ASP.NET, choisissez **Compilation .NET** et vérifiez que vous choisissez **False** en tant que le comportement de débogage (les étapes sont différentes dans les versions antérieures d’IIS).
-
-## <a name="see-also"></a>Voir aussi
- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)

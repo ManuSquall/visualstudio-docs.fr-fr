@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProcess | Documents Microsoft
+title: IDebugProgram2::GetProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a0e51725cf809e5c224fd438e507bcfde6ca2c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3528b4c323f1fee68a5ed17368646608e63e6fbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947860"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 Obtenir le processus de ce programme est en cours d’exécution dans.  
@@ -47,9 +47,9 @@ int GetProcess(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Sauf si un moteur de débogage (DE) implémente la [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interface, la mise en œuvre de la DE cette méthode doit toujours renvoyer `E_NOTIMPL` car un DE ne peut pas déterminer quel processus, il s’exécute dans et, par conséquent ne peut pas répondent à une implémentation de cette méthode.  
+ Sauf si un moteur de débogage (dé) implémente la [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interface, l’implémentation de l’Allemagne de cette méthode doit retourner toujours `E_NOTIMPL` , car un DE ne peut pas déterminer quel processus, il s’exécute dans et par conséquent ne peut pas répondre à une implémentation de cette méthode.  
   
- Implémentation de la `IDebugEngineLaunch2` interface signifie que le DE doit savoir comment créer un processus ; par conséquent, de la DE mise en oeuvre de la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface est en mesure de savoir quel processus, il est en cours d’exécution dans.  
+ Implémentation de la `IDebugEngineLaunch2` interface signifie que le DE doive savoir comment créer un processus ; par conséquent, de la DE mise en œuvre de la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface est en mesure de savoir à quel processus, il est en cours d’exécution dans.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

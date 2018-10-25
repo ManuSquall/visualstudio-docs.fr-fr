@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837556"
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ La suppression d'un élément provoque généralement aussi la suppression des �
   
 #### <a name="to-set-delete-propagation"></a>Pour définir la propagation de suppression  
   
-1.  Sur le diagramme de définition DSL, sélectionnez le *rôle* à laquelle vous souhaitez que la propagation à supprimer. Le rôle est représenté par la ligne qui se trouve à gauche ou à droite d'une zone de relation de domaine.  
+1. Sur le diagramme de définition DSL, sélectionnez le *rôle* à laquelle vous souhaitez que la propagation à supprimer. Le rôle est représenté par la ligne qui se trouve à gauche ou à droite d'une zone de relation de domaine.  
   
-     Par exemple, si vous voulez spécifier qu'à chaque fois qu'un album est supprimé les artistes associés doivent également être supprimés, vous devez sélectionner le rôle connecté à la classe de domaine Artiste.  
+    Par exemple, si vous voulez spécifier qu'à chaque fois qu'un album est supprimé les artistes associés doivent également être supprimés, vous devez sélectionner le rôle connecté à la classe de domaine Artiste.  
   
-2.  Dans la fenêtre Propriétés, définissez la **Propagates Delete** propriété.  
+2. Dans la fenêtre Propriétés, définissez la **Propagates Delete** propriété.  
   
-3.  Appuyez sur F5 et vérifiez que :  
+3. Appuyez sur F5 et vérifiez que :  
   
-    -   Quand une instance de cette relation est supprimée, l'élément au rôle sélectionné sera également supprimé.  
+   -   Quand une instance de cette relation est supprimée, l'élément au rôle sélectionné sera également supprimé.  
   
-    -   Quand un élément au rôle opposé est supprimé, les instances de cette relation seront supprimées et les éléments associés à ce rôle seront supprimés.  
+   -   Quand un élément au rôle opposé est supprimé, les instances de cette relation seront supprimées et les éléments associés à ce rôle seront supprimés.  
   
- Vous pouvez également voir le **Propagates Delete** option dans le **détails DSL** fenêtre. Sélectionnez une classe de domaine et, dans la fenêtre Détails DSL, ouvrez le **supprimer un comportement** page en cliquant sur le bouton situé sur le côté de la fenêtre. Le **propager** option est affichée pour le rôle opposé de chaque relation. Le **supprimer le Style** colonne indique si le **propager** option se trouve à sa valeur par défaut, mais il n’a aucun effet distinct.  
+   Vous pouvez également voir le **Propagates Delete** option dans le **détails DSL** fenêtre. Sélectionnez une classe de domaine et, dans la fenêtre Détails DSL, ouvrez le **supprimer un comportement** page en cliquant sur le bouton situé sur le côté de la fenêtre. Le **propager** option est affichée pour le rôle opposé de chaque relation. Le **supprimer le Style** colonne indique si le **propager** option se trouve à sa valeur par défaut, mais il n’a aucun effet distinct.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Propagation de la suppression à l'aide de code de programme  
  Les options dans le fichier de définition DSL vous permettent uniquement de choisir si la suppression se propage à un voisin immédiat. Pour implémenter un modèle plus complexe de propagation de la suppression, vous pouvez écrire du code de programme.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> Utilisation de OnDeleting et OnDeleted  
  Vous pouvez substituer `OnDeleting()` ou `OnDeleted()` dans une classe de domaine ou dans une relation de domaine.  
   
-1.  La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> est appelée quand un élément est sur le point d'être supprimé, mais avant que ses relations aient été déconnectées. Il est encore accessible à partir d'autres éléments et se trouve toujours dans `store.ElementDirectory`.  
+1. La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> est appelée quand un élément est sur le point d'être supprimé, mais avant que ses relations aient été déconnectées. Il est encore accessible à partir d'autres éléments et se trouve toujours dans `store.ElementDirectory`.  
   
-     Si plusieurs éléments sont supprimés en même temps, OnDeleting est appelée pour tous ces éléments avant d'effectuer les suppressions.  
+    Si plusieurs éléments sont supprimés en même temps, OnDeleting est appelée pour tous ces éléments avant d'effectuer les suppressions.  
   
-     `IsDeleting` a la valeur True.  
+    `IsDeleting` a la valeur True.  
   
-2.  La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> est appelée quand l'élément a été supprimé. Il reste dans le tas CLR pour qu'une opération d'annulation puisse être effectuée si nécessaire, mais il n'est plus lié aux autres éléments et est supprimé de `store.ElementDirectory`. Pour les relations, les rôles font toujours référencent les anciens acteurs de rôle.`IsDeleted` a la valeur true.  
+2. La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> est appelée quand l'élément a été supprimé. Il reste dans le tas CLR pour qu'une opération d'annulation puisse être effectuée si nécessaire, mais il n'est plus lié aux autres éléments et est supprimé de `store.ElementDirectory`. Pour les relations, les rôles font toujours référencent les anciens acteurs de rôle.`IsDeleted` a la valeur true.  
   
-3.  Les méthode OnDeleting et OnDeleted sont appelées quand l'utilisateur appelle l'opération Annuler après avoir créé un élément et quand une suppression précédente est répétée dans Rétablir. Utilisez `this.Store.InUndoRedoOrRollback` pour éviter de mettre à jour les éléments du magasin dans ces cas-là. Pour plus d’informations, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. Les méthode OnDeleting et OnDeleted sont appelées quand l'utilisateur appelle l'opération Annuler après avoir créé un élément et quand une suppression précédente est répétée dans Rétablir. Utilisez `this.Store.InUndoRedoOrRollback` pour éviter de mettre à jour les éléments du magasin dans ces cas-là. Pour plus d’informations, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
- Par exemple, le code suivant supprime un album quand son dernier morceau enfant est supprimé :  
+   Par exemple, le code suivant supprime un album quand son dernier morceau enfant est supprimé :  
   
 ```  
   

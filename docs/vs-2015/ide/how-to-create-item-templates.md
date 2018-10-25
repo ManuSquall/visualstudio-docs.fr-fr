@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 689a9fee79b570fc73cebff0b7c8e99439975c1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863627"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,87 +62,87 @@ Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Pour permettre l'utilisation du modèle d'élément dans un projet Windows Store  
   
-1.  Appliquez les étapes de la procédure ci-dessus pour exporter un modèle d'élément.  
+1. Appliquez les étapes de la procédure ci-dessus pour exporter un modèle d'élément.  
   
-2.  Extrayez le fichier .vstemplate du fichier .zip qui a été copié dans le dossier \Users\\*nom_utilisateur*\Documents\Visual Studio *version*\Templates\ItemTemplates\ (ou **My Exported Templates**).  
+2. Extrayez le fichier .vstemplate du fichier .zip qui a été copié dans le dossier \Users\\*nom_utilisateur*\Documents\Visual Studio *version*\Templates\ItemTemplates\ (ou **My Exported Templates**).  
   
-3.  Ouvrez le fichier .vstemplate dans Visual Studio.  
+3. Ouvrez le fichier .vstemplate dans Visual Studio.  
   
-4.  Pour un projet C# Windows Store pour Windows 8.1, dans le fichier .vstemplate, ajoutez le code XML suivant entre les balises d'ouverture et de fermeture `<TemplateData>` : `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4. Pour un projet C# Windows Store pour Windows 8.1, dans le fichier .vstemplate, ajoutez le code XML suivant entre les balises d'ouverture et de fermeture `<TemplateData>` : `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
   
-     Un projet C++ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Un projet C++ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-     L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les éléments [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> <ProjectTpe> et \< pour spécifier d’autres types de projets et langages.  
+    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les éléments [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> <ProjectTpe> et \< pour spécifier d’autres types de projets et langages.  
   
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
+     <TemplateData>  
+       <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
+       <Name>MyItemStoreTemplate</Name>  
+       <Description>This is an example itemtemplate</Description>  
+       <ProjectType>CSharp</ProjectType>  
+       <SortOrder>10</SortOrder>  
+       <Icon>__TemplateIcon.ico</Icon>  
+       <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
+     </TemplateData>  
+     <TemplateContent>  
+       <References />  
+       <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
+       <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     Pour connaître d’autres valeurs TemplateGroupID possibles, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md). Pour obtenir la référence complète de .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+    Pour connaître d’autres valeurs TemplateGroupID possibles, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md). Pour obtenir la référence complète de .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
-5.  Dans Visual Studio, enregistrez le fichier .vstemplate, puis fermez-le.  
+5. Dans Visual Studio, enregistrez le fichier .vstemplate, puis fermez-le.  
   
-6.  Copiez et collez le fichier .vstemplate dans le fichier .zip situé dans le dossier ..\Users\\*nom_utilisateur*\Documents\Visual Studio *version*\Templates\ItemTemplates\.  
+6. Copiez et collez le fichier .vstemplate dans le fichier .zip situé dans le dossier ..\Users\\*nom_utilisateur*\Documents\Visual Studio *version*\Templates\ItemTemplates\.  
   
-     Si la boîte de dialogue **Copier le fichier** apparaît, sélectionnez l’option **Copier et remplacer**.  
+    Si la boîte de dialogue **Copier le fichier** apparaît, sélectionnez l’option **Copier et remplacer**.  
   
- Vous pouvez maintenant ajouter un élément basé sur ce modèle à un projet [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] à l’aide de la boîte de dialogue **Ajouter un nouvel élément**.  
+   Vous pouvez maintenant ajouter un élément basé sur ce modèle à un projet [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] à l’aide de la boîte de dialogue **Ajouter un nouvel élément**.  
   
- Pour plus d’informations sur les noms de paramètres, consultez [Paramètres de modèle](../ide/template-parameters.md).  
+   Pour plus d’informations sur les noms de paramètres, consultez [Paramètres de modèle](../ide/template-parameters.md).  
   
 ### <a name="to-enable-templates-for-specific-project-sub-types"></a>Pour activer les modèles pour des sous-types de projet spécifiques  
   
-1.  L'environnement de développement permet de mettre à disposition des éléments de projet à partir de la boîte de dialogue Ajouter un élément pour certains projets. Utilisez cette procédure pour que des éléments personnalisés soient disponibles pour des projets Windows, Web, Office ou de base de données.  
+1. L'environnement de développement permet de mettre à disposition des éléments de projet à partir de la boîte de dialogue Ajouter un élément pour certains projets. Utilisez cette procédure pour que des éléments personnalisés soient disponibles pour des projets Windows, Web, Office ou de base de données.  
   
-     Localisez l'élément ProjectType dans le fichier .vstemplate du modèle d'élément.  
+    Localisez l'élément ProjectType dans le fichier .vstemplate du modèle d'élément.  
   
-     Ajoutez un élément [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) immédiatement après l’élément ProjectType.  
+    Ajoutez un élément [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) immédiatement après l’élément ProjectType.  
   
-2.  Affectez au texte de l'élément l'une des valeurs suivantes :  
+2. Affectez au texte de l'élément l'une des valeurs suivantes :  
   
-    1.  Windows  
+   1. Windows  
   
-    2.  Office  
+   2. Office  
   
-    3.  Base de données  
+   3. Base de données  
   
-    4.  Web  
+   4. Web  
   
-     Par exemple : `<ProjectSubType>Database</ProjectSubType>`.  
+      Par exemple : `<ProjectSubType>Database</ProjectSubType>`.  
   
-     L'exemple suivant affiche un modèle d'élément disponible pour les projets Office.  
+      L'exemple suivant affiche un modèle d'élément disponible pour les projets Office.  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
+       <TemplateData>  
+           <Name>Class</Name>  
+           <Description>An empty class file</Description>  
+           <Icon>Class.ico</Icon>  
+           <ProjectType>CSharp</ProjectType>  
+           <ProjectSubType>Office</ProjectSubType>  
+           <DefaultName>Class.cs</DefaultName>  
+       </TemplateData>  
+       <TemplateContent>  
+           <ProjectItem>Class1.cs</ProjectItem>  
+       </TemplateContent>  
+   </VSTemplate>  
   
-    ```  
+   ```  
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Pour créer manuellement un modèle d'élément sans utiliser l'Assistant Exportation de modèle  
   

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByVA | Documents Microsoft
+title: IDiaSymbol::findInlineeLinesByVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd0167eaea86b13c8d197d39c6042f5ad183fcd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f004b189a22c510599ae9a5f1c719a151ed7d39f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914903"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Récupère une énumération qui permet à un client parcourir les informations de numéro de ligne de toutes les fonctions qui sont incorporées, directement ou indirectement, de ce symbole dans l’adresse virtuelle spécifiée (VA).  
+Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, dans ce symbole dans l’adresse virtuelle spécifiée (VA).  
   
 ## <a name="syntax"></a>Syntaxe  
   

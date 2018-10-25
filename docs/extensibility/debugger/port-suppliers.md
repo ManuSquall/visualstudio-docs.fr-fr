@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948224"
 ---
 # <a name="port-suppliers"></a>Fournisseurs de port
 Dans l’architecture du débogueur, une *fournisseur de port*:  
   
--   Est contenue par un serveur et fournit des ports sur demande à ce serveur.  
+- Est contenue par un serveur et fournit des ports sur demande à ce serveur.  
   
--   Peut ajouter et supprimer des ports à partir du serveur contenant.  
+- Peut ajouter et supprimer des ports à partir du serveur contenant.  
   
--   Pouvez énumérer tous les ports dont il a fourni au serveur.  
+- Pouvez énumérer tous les ports dont il a fourni au serveur.  
   
--   Est représenté par un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, ce qui est inscrit avec Visual Studio via le Registre. Cette interface peut être obtenue en appelant [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- Est représenté par un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, ce qui est inscrit avec Visual Studio via le Registre. Cette interface peut être obtenue en appelant [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit un fournisseur de port par défaut et un port par défaut. Si un port personnalisé doit être implémentée, un fournisseur de port personnalisé doit également être implémentées pour fournir ces ports personnalisés.  
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit un fournisseur de port par défaut et un port par défaut. Si un port personnalisé doit être implémentée, un fournisseur de port personnalisé doit également être implémentées pour fournir ces ports personnalisés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md)   

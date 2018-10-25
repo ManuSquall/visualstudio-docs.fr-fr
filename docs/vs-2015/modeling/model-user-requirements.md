@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863956"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   
  Un modèle d’impératifs vous aide à :  
   
--   Vous concentrer sur le comportement externe du système, indépendamment de sa conception interne  
+- Vous concentrer sur le comportement externe du système, indépendamment de sa conception interne  
   
--   Décrire les besoins des utilisateurs et des parties prenantes avec beaucoup moins d’ambiguïté qu’en langage naturel  
+- Décrire les besoins des utilisateurs et des parties prenantes avec beaucoup moins d’ambiguïté qu’en langage naturel  
   
--   Définir un glossaire cohérent de termes qui peuvent être utilisés par les utilisateurs, les développeurs et les testeurs  
+- Définir un glossaire cohérent de termes qui peuvent être utilisés par les utilisateurs, les développeurs et les testeurs  
   
--   Réduire les oublis et les incohérences des impératifs  
+- Réduire les oublis et les incohérences des impératifs  
   
--   Réduire la somme de travail nécessaire pour répondre aux changements d’impératifs  
+- Réduire la somme de travail nécessaire pour répondre aux changements d’impératifs  
   
--   Planifier l’ordre dans lequel les fonctionnalités seront développées  
+- Planifier l’ordre dans lequel les fonctionnalités seront développées  
   
--   Utiliser les modèles comme base pour les tests système et clarifier la relation entre les tests et les impératifs Quand les impératifs changent, cette relation vous aide à mettre à jour les tests correctement. Cela permet de s’assurer que le système répond aux nouveaux impératifs.  
+- Utiliser les modèles comme base pour les tests système et clarifier la relation entre les tests et les impératifs Quand les impératifs changent, cette relation vous aide à mettre à jour les tests correctement. Cela permet de s’assurer que le système répond aux nouveaux impératifs.  
   
- Un modèle d’impératifs est le plus utile si vous l’utilisez pour focaliser les discussions avec les utilisateurs ou leurs représentants et si vous le revisitez au début de chaque itération. Il est inutile de le remplir de manière détaillée avant d’écrire le code. Une application partiellement fonctionnelle, même si elle est grandement simplifiée, constitue en général la base la plus stimulante pour toute discussion des impératifs avec les utilisateurs. Le modèle permet de résumer les résultats de ces discussions de façon efficace. Pour plus d’informations, consultez [utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md).  
+  Un modèle d’impératifs est le plus utile si vous l’utilisez pour focaliser les discussions avec les utilisateurs ou leurs représentants et si vous le revisitez au début de chaque itération. Il est inutile de le remplir de manière détaillée avant d’écrire le code. Une application partiellement fonctionnelle, même si elle est grandement simplifiée, constitue en général la base la plus stimulante pour toute discussion des impératifs avec les utilisateurs. Le modèle permet de résumer les résultats de ces discussions de façon efficace. Pour plus d’informations, consultez [utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
 >  Tout au long de ces rubriques, le terme « système » faire référence au système ou à l’application que vous développez. Il peut s’agir d’une grande collection de nombreux composants matériels et logiciels, d’une application unique ou d’un composant logiciel à l’intérieur d’un système plus grand. Dans tous les cas, le modèle d’impératifs décrit le comportement qui est visible de l’extérieur de votre système, par le biais d’une interface utilisateur ou d’une API.  
@@ -84,11 +84,11 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   
  Le fait de dessiner un diagramme de cas d’usage aide votre équipe à :  
   
--   Se concentrer sur ce que les utilisateurs prévoient de faire avec le système, sans être distraits par les détails de l’implémentation  
+- Se concentrer sur ce que les utilisateurs prévoient de faire avec le système, sans être distraits par les détails de l’implémentation  
   
--   Discuter de la portée de votre système ou de versions particulières du système  
+- Discuter de la portée de votre système ou de versions particulières du système  
   
- Les rubriques suivantes fournissent des informations supplémentaires :  
+  Les rubriques suivantes fournissent des informations supplémentaires :  
   
 |Pour en savoir plus sur|Lire|  
 |--------------------|----------|  
@@ -99,41 +99,41 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 ##  <a name="RequirementsClasses"></a> Définition des termes utilisés pour décrire les impératifs  
  Vous pouvez utiliser des diagrammes de classes UML pour vous aider à développer une terminologie cohérente des concepts métier utilisés aux fins suivantes :  
   
--   Par les utilisateurs eux-mêmes pour discuter de l’entreprise au sein de laquelle le système s’exécute.  
+- Par les utilisateurs eux-mêmes pour discuter de l’entreprise au sein de laquelle le système s’exécute.  
   
--   Pour décrire les besoins des utilisateurs, par exemple dans les descriptions des cas d’usage, des règles d’entreprise et des récits utilisateur.  
+- Pour décrire les besoins des utilisateurs, par exemple dans les descriptions des cas d’usage, des règles d’entreprise et des récits utilisateur.  
   
--   Les types d’informations échangées au niveau de l’API du système ou par le biais de l’interface utilisateur.  
+- Les types d’informations échangées au niveau de l’API du système ou par le biais de l’interface utilisateur.  
   
--   Descriptions des tests système ou d’acceptation.  
+- Descriptions des tests système ou d’acceptation.  
   
- Quand il est utilisé à cet effet, le contenu d’un diagramme de classes UML est appelé « diagramme de classes conceptuelles ». (Les termes *modèle de domaine* et *modèle de classe d’analyse*sont également utilisés.)  
+  Quand il est utilisé à cet effet, le contenu d’un diagramme de classes UML est appelé « diagramme de classes conceptuelles ». (Les termes *modèle de domaine* et *modèle de classe d’analyse*sont également utilisés.)  
   
- Un diagramme de classes conceptuelles montre uniquement les classes nécessaires dans les descriptions des impératifs, sans montrer les détails de la conception interne du système. Le diagramme n’affiche aucun détail sur la conception interne du système. En règle générale, les classes conceptuelles ne montrent pas les opérations ou les interfaces.  
+  Un diagramme de classes conceptuelles montre uniquement les classes nécessaires dans les descriptions des impératifs, sans montrer les détails de la conception interne du système. Le diagramme n’affiche aucun détail sur la conception interne du système. En règle générale, les classes conceptuelles ne montrent pas les opérations ou les interfaces.  
   
- Par exemple, vous pourriez dessiner ces classes conceptuelles pour le système Dîner maintenant :  
+  Par exemple, vous pourriez dessiner ces classes conceptuelles pour le système Dîner maintenant :  
   
- ![Menu classes, commande, élément de Menu, commander un élément. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
+  ![Menu classes, commande, élément de Menu, commander un élément. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
   
- Un diagramme de classes conceptuelles fournit la terminologie employée dans le modèle d’impératifs. Par exemple, dans la description détaillée du cas d’usage Commander un repas, vous pourriez écrire :  
+  Un diagramme de classes conceptuelles fournit la terminologie employée dans le modèle d’impératifs. Par exemple, dans la description détaillée du cas d’usage Commander un repas, vous pourriez écrire :  
   
- Le client choisit un *Menu* à partir duquel créer une *Commande*, puis il crée des *Éléments de commande* dans la *Commande* en sélectionnant des *Éléments de menu* dans le *Menu*.  
+  Le client choisit un *Menu* à partir duquel créer une *Commande*, puis il crée des *Éléments de commande* dans la *Commande* en sélectionnant des *Éléments de menu* dans le *Menu*.  
   
- Notez que les termes utilisés dans cette description correspondent à des noms de classes dans le modèle. Le diagramme supprime les ambiguïtés des relations entre ces classes. Par exemple, il montre clairement que chaque Commande est associée à un seul Menu.  
+  Notez que les termes utilisés dans cette description correspondent à des noms de classes dans le modèle. Le diagramme supprime les ambiguïtés des relations entre ces classes. Par exemple, il montre clairement que chaque Commande est associée à un seul Menu.  
   
- Les malentendus quant aux besoins des utilisateurs sont souvent dus à des malentendus quant aux significations détaillées des termes. Par exemple, la plupart des restaurants comprennent les termes Menu et Commande de manière identique, mais la différence entre un élément d’une Commande et un élément d’un Menu est moins évidente. Lors de l’examen des impératifs avec les parties prenantes, il est important d’exposer ces différences. Le diagramme de classes est un outil utile pour vous aider à clarifier les termes et leurs relations.  
+  Les malentendus quant aux besoins des utilisateurs sont souvent dus à des malentendus quant aux significations détaillées des termes. Par exemple, la plupart des restaurants comprennent les termes Menu et Commande de manière identique, mais la différence entre un élément d’une Commande et un élément d’un Menu est moins évidente. Lors de l’examen des impératifs avec les parties prenantes, il est important d’exposer ces différences. Le diagramme de classes est un outil utile pour vous aider à clarifier les termes et leurs relations.  
   
- Le modèle de classes conceptuelles peut former le vocabulaire de base à partir duquel la logique métier de votre système peut être décrite. En revanche, les classes dans le logiciel sont généralement beaucoup plus complexes que le modèle conceptuel, car votre implémentation doit tenir compte de différents facteurs tels que les performances, la distribution ou la flexibilité. On trouve fréquemment plusieurs implémentations différentes d’une classe conceptuelle dans un système.  
+  Le modèle de classes conceptuelles peut former le vocabulaire de base à partir duquel la logique métier de votre système peut être décrite. En revanche, les classes dans le logiciel sont généralement beaucoup plus complexes que le modèle conceptuel, car votre implémentation doit tenir compte de différents facteurs tels que les performances, la distribution ou la flexibilité. On trouve fréquemment plusieurs implémentations différentes d’une classe conceptuelle dans un système.  
   
- Par exemple, les Commandes peuvent être représentées en XML, SQL, HTML et C# dans différentes parties du système et au niveau de différentes interfaces entre les parties. L’association entre une Commande et un Menu peut être représentée de nombreuses manières, par exemple par des références au sein du code C#, des relations dans une base de données ou des ID à références croisées en XML. En dépit de ces variations, le modèle conceptuel fournit des informations importantes qui sont vraies dans chaque partie du logiciel. Le diagramme de classes dans notre exemple indique que dans chaque implémentation il n’y aura qu’un seul Menu associé à chaque Commande.  
+  Par exemple, les Commandes peuvent être représentées en XML, SQL, HTML et C# dans différentes parties du système et au niveau de différentes interfaces entre les parties. L’association entre une Commande et un Menu peut être représentée de nombreuses manières, par exemple par des références au sein du code C#, des relations dans une base de données ou des ID à références croisées en XML. En dépit de ces variations, le modèle conceptuel fournit des informations importantes qui sont vraies dans chaque partie du logiciel. Le diagramme de classes dans notre exemple indique que dans chaque implémentation il n’y aura qu’un seul Menu associé à chaque Commande.  
   
- Le fait de dessiner un diagramme de classes d’impératifs aide votre équipe à :  
+  Le fait de dessiner un diagramme de classes d’impératifs aide votre équipe à :  
   
--   Définir et normaliser les termes de base employés dans les discussions des besoins des utilisateurs  
+- Définir et normaliser les termes de base employés dans les discussions des besoins des utilisateurs  
   
--   Clarifier les relations entre ces termes  
+- Clarifier les relations entre ces termes  
   
- Les rubriques suivantes fournissent des informations supplémentaires :  
+  Les rubriques suivantes fournissent des informations supplémentaires :  
   
 |Pour en savoir plus sur|Lire|  
 |--------------------|----------|  
@@ -146,7 +146,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.  
   
- De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique ** des règles d’entreprise* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :  
+ De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *des règles métier statiques* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :  
   
  ![Règle dans le commentaire associé à la classe Order. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -167,21 +167,21 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 ##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des types suivants :  
   
--   Performances  
+- Performances  
   
--   Sécurité  
+- Sécurité  
   
--   Facilité d'utilisation  
+- Facilité d'utilisation  
   
--   Fiabilité  
+- Fiabilité  
   
--   Robustesse  
+- Robustesse  
   
- Vous pouvez inclure certains de ces impératifs dans les descriptions de cas d’usage particuliers. D’autres impératifs ne sont spécifiques à aucun cas d’usage et il est plus efficace de les rédiger dans un document distinct. Dans la mesure du possible, essayez d’adhérer à la terminologie définie par le modèle d’impératifs. Dans l’exemple suivant, notez que les principaux termes utilisés dans l’impératif sont les titres des acteurs, des cas d’usage et des classes des illustrations précédentes :  
+  Vous pouvez inclure certains de ces impératifs dans les descriptions de cas d’usage particuliers. D’autres impératifs ne sont spécifiques à aucun cas d’usage et il est plus efficace de les rédiger dans un document distinct. Dans la mesure du possible, essayez d’adhérer à la terminologie définie par le modèle d’impératifs. Dans l’exemple suivant, notez que les principaux termes utilisés dans l’impératif sont les titres des acteurs, des cas d’usage et des classes des illustrations précédentes :  
   
- Si un Restaurant supprime un Élément de menu pendant qu’un Client Commande un Repas, tout Élément de commande qui fait référence à cet Élément de menu est affiché en rouge.  
+  Si un Restaurant supprime un Élément de menu pendant qu’un Client Commande un Repas, tout Élément de commande qui fait référence à cet Élément de menu est affiché en rouge.  
   
- Les rubriques suivantes fournissent des informations supplémentaires :  
+  Les rubriques suivantes fournissent des informations supplémentaires :  
   
 |Pour en savoir plus sur|Lire|  
 |--------------------|----------|  
@@ -232,15 +232,15 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   
  Vous constaterez que de nombreuses questions relatives au domaine professionnel apparaîtront naturellement lors de la création d’un modèle. En posant ces questions à vos utilisateurs, vous réduirez la nécessité d’apporter des modifications à un stade ultérieur du projet. Voici quelques questions spécifiques que vous pouvez vous poser dans un premier temps, puis poser aux parties prenantes si la réponse n’est pas claire :  
   
--   Pour chaque classe du modèle d’impératifs, demandez « Quel cas d’usage crée des instances de cette classe ? ». Par exemple, dans un service en ligne de commande de repas, vous pouvez demander « Quel cas d’usage crée des instances de la classe Menu de restaurant ? ». Cela conduirait à une discussion sur les conditions dans lesquelles un nouveau restaurant s’inscrirait au service et proposerait son menu. Vous pouvez poser des questions similaires concernant ce qui crée ou modifie des attributs et des associations.  
+- Pour chaque classe du modèle d’impératifs, demandez « Quel cas d’usage crée des instances de cette classe ? ». Par exemple, dans un service en ligne de commande de repas, vous pouvez demander « Quel cas d’usage crée des instances de la classe Menu de restaurant ? ». Cela conduirait à une discussion sur les conditions dans lesquelles un nouveau restaurant s’inscrirait au service et proposerait son menu. Vous pouvez poser des questions similaires concernant ce qui crée ou modifie des attributs et des associations.  
   
--   Pour chaque cas d’usage dans le modèle d’impératifs, essayez de décrire le résultat (ou post-condition) de chaque cas d’usage en utilisant des mots fournis par les diagrammes de classes. Il est souvent utile de montrer l’effet d’un cas d’usage en dessinant des instances des classes avant et après une occurrence du cas d’usage. Par exemple, si la post-condition de cas d’usage indique « un élément de menu est ajouté à la commande du client », dessinez des instances des classes Commande et Élément de menu. Montrez les effets du cas d’usage, tel qu’un nouveau lien ou un nouvel objet, avec une couleur différente ou un nouveau dessin. Cela conduit fréquemment à des discussions concernant les informations qui sont nécessaires dans le modèle. Bien que les classes d’impératifs ne soient pas directement concernées par l’implémentation, elles décrivent les informations que votre système devra stocker et transmettre.  
+- Pour chaque cas d’usage dans le modèle d’impératifs, essayez de décrire le résultat (ou post-condition) de chaque cas d’usage en utilisant des mots fournis par les diagrammes de classes. Il est souvent utile de montrer l’effet d’un cas d’usage en dessinant des instances des classes avant et après une occurrence du cas d’usage. Par exemple, si la post-condition de cas d’usage indique « un élément de menu est ajouté à la commande du client », dessinez des instances des classes Commande et Élément de menu. Montrez les effets du cas d’usage, tel qu’un nouveau lien ou un nouvel objet, avec une couleur différente ou un nouveau dessin. Cela conduit fréquemment à des discussions concernant les informations qui sont nécessaires dans le modèle. Bien que les classes d’impératifs ne soient pas directement concernées par l’implémentation, elles décrivent les informations que votre système devra stocker et transmettre.  
   
--   Renseignez-vous sur les contraintes sur les attributs et les associations, en particulier celles impliquant plusieurs attributs ou associations.  
+- Renseignez-vous sur les contraintes sur les attributs et les associations, en particulier celles impliquant plusieurs attributs ou associations.  
   
--   Demandez quelles sont les séquences valides et non valides de cas d’usage, et dessinez des diagrammes de séquence ou d’activités pour les illustrer.  
+- Demandez quelles sont les séquences valides et non valides de cas d’usage, et dessinez des diagrammes de séquence ou d’activités pour les illustrer.  
   
- En examinant les relations entre les vues fournies par différents diagrammes, vous pouvez rapidement comprendre les principaux concepts avec lesquels vos utilisateurs travaillent et les aider à comprendre ce qu’ils ont besoin de la part du système. Vous identifierez aussi plus précisément les impératifs concernant lesquels les parties prenantes ont des doutes. Vous pouvez prévoir de développer ces fonctionnalités, au moins sous une forme simplifiée, à un stade précoce du projet, pour permettre aux utilisateurs d’expérimenter avec elles.  
+  En examinant les relations entre les vues fournies par différents diagrammes, vous pouvez rapidement comprendre les principaux concepts avec lesquels vos utilisateurs travaillent et les aider à comprendre ce qu’ils ont besoin de la part du système. Vous identifierez aussi plus précisément les impératifs concernant lesquels les parties prenantes ont des doutes. Vous pouvez prévoir de développer ces fonctionnalités, au moins sous une forme simplifiée, à un stade précoce du projet, pour permettre aux utilisateurs d’expérimenter avec elles.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   

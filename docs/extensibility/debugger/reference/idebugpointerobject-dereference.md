@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Documents Microsoft
+title: IDebugPointerObject::Dereference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc287887baf2530786b03b591d6c03592055e55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b173394aba18c47a18a7a683db0f35d474bb4eeb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833841"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 Obtient l’objet désigné.  
@@ -43,10 +43,10 @@ int Dereference(
   
 #### <a name="parameters"></a>Paramètres  
  `dwIndex`  
- [in] Offset d’octet simple à partir du début de l’objet indiqué.  
+ [in] Un décalage d’octet simple à partir du début de l’objet désigné.  
   
  `ppObject`  
- [out] Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) de l’objet qui représente l’objet vers lequel pointe, ainsi que le décalage, le cas échéant.  
+ [out] Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) de l’objet qui représente l’objet vers lequel pointe, ainsi que décalage, le cas échéant.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur. Retourne E_FAIL si cet objet ne pointe pas vers un autre objet.  

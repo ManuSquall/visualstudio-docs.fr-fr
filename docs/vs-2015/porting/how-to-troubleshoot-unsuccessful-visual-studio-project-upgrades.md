@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911601"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Comment : dépanner les échecs de mise à niveau de projets Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ Parfois, Visual Studio ne peut pas convertir complètement un projet à partir d
   
 #### <a name="to-resolve-incorrect-references"></a>Pour résoudre des références incorrectes  
   
-1.  Ouvrez votre fichier projet dans un éditeur de texte.  
+1. Ouvrez votre fichier projet dans un éditeur de texte.  
   
-2.  Ouvrez les propriétés du projet.  
+2. Ouvrez les propriétés du projet.  
   
-3.  Sélectionnez le bon **Framework cible** valeur. Vous pouvez également modifier la valeur de la `<TargetFrameworkVersion>` élément directement dans le fichier projet.  
+3. Sélectionnez le bon **Framework cible** valeur. Vous pouvez également modifier la valeur de la `<TargetFrameworkVersion>` élément directement dans le fichier projet.  
   
- Si vous souhaitez que votre projet doit être exécuté dans la mise à niveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version, vous devez mettre à jour les références du projet et également mettre à jour les `Imports` ou `Using` instructions qui appellent les références. Si votre projet se charge dans l’IDE, vous pouvez mettre à jour les références à l’aide de **l’Explorateur de solutions** ou **Gestionnaire de références** boîte de dialogue.  
+   Si vous souhaitez que votre projet doit être exécuté dans la mise à niveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version, vous devez mettre à jour les références du projet et également mettre à jour les `Imports` ou `Using` instructions qui appellent les références. Si votre projet se charge dans l’IDE, vous pouvez mettre à jour les références à l’aide de **l’Explorateur de solutions** ou **Gestionnaire de références** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
  [/ Mise à niveau de (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896137"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : Identification des problèmes de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 ## <a name="prerequisites"></a>Prérequis  
   
--   Compréhension intermédiaire de C#.  
+- Compréhension intermédiaire de C#.  
   
--   Une copie de l’[exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
+- Une copie de l’[exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage.  
+  Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Profilage à l’aide de la méthode d’échantillonnage  
  L’échantillonnage est une méthode de profilage par laquelle le processus en question est périodiquement interrogé pour déterminer la fonction active. Les données résultantes fournissent le nombre de fois que la fonction était sur la pile des appels quand le processus en question a été échantillonné.  
@@ -139,29 +139,29 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>Pour analyser les résultats d’un profilage instrumenté  
   
-1.  Le graphique de chronologie de la vue **Résumé** du rapport affiche l’utilisation du processeur du programme pendant la durée du profilage. L’opération d’exportation de données doit être le plateau ou sommet élevé sur le côté droit du graphique. Nous pouvons filtrer la session de performance pour afficher et analyser uniquement les données qui ont été collectées pendant l’opération d’exportation. Cliquez sur le graphique à gauche du point auquel commence l’opération d’exportation de données. Cliquez à présent sur le côté droit de l’opération. Ensuite, cliquez sur **Filtrer par sélection** dans la liste des liens à droite de la chronologie.  
+1. Le graphique de chronologie de la vue **Résumé** du rapport affiche l’utilisation du processeur du programme pendant la durée du profilage. L’opération d’exportation de données doit être le plateau ou sommet élevé sur le côté droit du graphique. Nous pouvons filtrer la session de performance pour afficher et analyser uniquement les données qui ont été collectées pendant l’opération d’exportation. Cliquez sur le graphique à gauche du point auquel commence l’opération d’exportation de données. Cliquez à présent sur le côté droit de l’opération. Ensuite, cliquez sur **Filtrer par sélection** dans la liste des liens à droite de la chronologie.  
   
-     L’arborescence **Chemin réactif** montre que la méthode <xref:System.String.Concat%2A> qui est appelée par la méthode PeopleTrax.Form1.ExportData consomme un pourcentage important du temps. Étant donné que **System.String.Concat** est également en haut de la liste **Fonctions exigeant le plus de travail individuel**, réduire le temps passé dans la fonction est un point d’optimisation possible.  
+    L’arborescence **Chemin réactif** montre que la méthode <xref:System.String.Concat%2A> qui est appelée par la méthode PeopleTrax.Form1.ExportData consomme un pourcentage important du temps. Étant donné que **System.String.Concat** est également en haut de la liste **Fonctions exigeant le plus de travail individuel**, réduire le temps passé dans la fonction est un point d’optimisation possible.  
   
-2.  Double-cliquez sur **System.String.Concat** dans une des tables de résumé pour afficher plus d’informations dans la vue Informations relatives à la fonction.  
+2. Double-cliquez sur **System.String.Concat** dans une des tables de résumé pour afficher plus d’informations dans la vue Informations relatives à la fonction.  
   
-3.  Vous pouvez voir que PeopleTrax.Form1.ExportData est la seule méthode qui appelle Concat. Cliquez sur **PeopleTrax.Form1.ExportData** dans la liste **Fonctions appelantes** pour sélectionner la méthode comme cible de la vue Informations relatives à la fonction.  
+3. Vous pouvez voir que PeopleTrax.Form1.ExportData est la seule méthode qui appelle Concat. Cliquez sur **PeopleTrax.Form1.ExportData** dans la liste **Fonctions appelantes** pour sélectionner la méthode comme cible de la vue Informations relatives à la fonction.  
   
-4.  Examinez la méthode dans la fenêtre Affichage du code de fonction. Notez qu’il n’y a pas d’appels littéraux à **System.String.Concat**. Par contre, il existe plusieurs utilisations de l’opérande +=, que le compilateur remplace par des appels à **System.String.Concat**. Toute modification apportée à une chaîne dans le .NET Framework entraîne l’allocation d’une nouvelle chaîne. Le .NET Framework inclut une classe <xref:System.Text.StringBuilder> qui est optimisée pour la concaténation de chaînes.  
+4. Examinez la méthode dans la fenêtre Affichage du code de fonction. Notez qu’il n’y a pas d’appels littéraux à **System.String.Concat**. Par contre, il existe plusieurs utilisations de l’opérande +=, que le compilateur remplace par des appels à **System.String.Concat**. Toute modification apportée à une chaîne dans le .NET Framework entraîne l’allocation d’une nouvelle chaîne. Le .NET Framework inclut une classe <xref:System.Text.StringBuilder> qui est optimisée pour la concaténation de chaînes.  
   
-5.  Pour remplacer cette zone problématique par du code optimisé, ajoutez OPTIMIZED_EXPORTDATA comme symbole de compilation conditionnelle au projet PeopleTrax.  
+5. Pour remplacer cette zone problématique par du code optimisé, ajoutez OPTIMIZED_EXPORTDATA comme symbole de compilation conditionnelle au projet PeopleTrax.  
   
-6.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet PeopleTrax, puis cliquez sur **Propriétés**.  
+6. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet PeopleTrax, puis cliquez sur **Propriétés**.  
   
-     Le formulaire des propriétés du projet PeopleTrax s’affiche.  
+    Le formulaire des propriétés du projet PeopleTrax s’affiche.  
   
-7.  Cliquez sur l’onglet **Générer**.  
+7. Cliquez sur l’onglet **Générer**.  
   
-8.  Dans la zone de texte **Symboles de compilation conditionnelle**, tapez **OPTIMIZED_EXPORTDATA**.  
+8. Dans la zone de texte **Symboles de compilation conditionnelle**, tapez **OPTIMIZED_EXPORTDATA**.  
   
 9. Fermez le formulaire des propriétés du projet et choisissez **Enregistrer tout** quand vous y êtes invité.  
   
- Quand vous réexécuterez l’application, vous constaterez une nette amélioration des performances. Nous vous recommandons de réexécuter la session de profilage, même si les performances laissent apparaître des améliorations du point de vue de l’utilisateur. Il est important d’examiner les données après avoir résolu un problème, car le premier problème peut en masquer un autre.  
+   Quand vous réexécuterez l’application, vous constaterez une nette amélioration des performances. Nous vous recommandons de réexécuter la session de profilage, même si les performances laissent apparaître des améliorations du point de vue de l’utilisateur. Il est important d’examiner les données après avoir résolu un problème, car le premier problème peut en masquer un autre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   

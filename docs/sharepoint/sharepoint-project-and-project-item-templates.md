@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896443"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projets et modèles d’élément de projet SharePoint
   Les sections suivantes décrivent le projet SharePoint et l’élément de projet modèles et comment elles sont utilisées. 
@@ -41,7 +41,7 @@ ms.locfileid: "37118967"
  Pour plus d’informations sur les notions fondamentales de SharePoint, consultez [blocs de construction de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=179404). Utilisateurs avancés peuvent créer un projet personnalisé et des modèles d’élément de projet. Pour plus d’informations, consultez [étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
   
 ## <a name="project-templates"></a>Modèles de projet
- Voici une liste de modèles de projet SharePoint. Pour afficher les modèles de projet SharePoint dans Visual Studio, dans le **nouveau projet** boîte de dialogue, développez le **SharePoint** nœud sous **Visual C#** ou  **Visual Basic**, puis choisissez **2010**.  
+ Voici une liste de modèles de projet SharePoint. Pour afficher les modèles de projet SharePoint dans Visual Studio, dans le **nouveau projet** boîte de dialogue, développez le **SharePoint** nœud sous **Visual C#**  ou  **Visual Basic**, puis choisissez **2010**.  
   
 ### <a name="sharepoint-2010-project"></a>Projet SharePoint 2010
  Le contenu d’un *projet SharePoint 2010* sont inclus dans chaque modèle de projet SharePoint. Un projet SharePoint 2010 contient :  
@@ -95,17 +95,17 @@ ms.locfileid: "37118967"
 ### <a name="event-receiver"></a>Récepteur d’événements
  *Récepteurs d’événements* gérer les événements pour les éléments dans le site SharePoint, tels que lorsqu’un élément est ajouté à une liste, lors de la suppression d’un élément web, ou quand un flux de travail est démarré. Le modèle d’élément événement récepteur projet vous permet de traiter  
   
--   Liste des événements  
+- Liste des événements  
   
--   Événements de l’élément de liste  
+- Événements de l’élément de liste  
   
--   Liste des événements de messagerie  
+- Liste des événements de messagerie  
   
--   événements Web  
+- événements Web  
   
--   Liste des événements de flux de travail  
+- Liste des événements de flux de travail  
   
- L’élément de projet de récepteur d’événements crée un **récepteur d’événements** dossier avec un fichier de classe unique qui contient les gestionnaires d’événements pour tous les événements que vous avez spécifié lorsque vous avez créé le projet dans le **personnalisation de SharePoint Assistant**. La classe de récepteur d’événements peut gérer des événements qui se produisent sur le site SharePoint lorsque des éléments tels que des fichiers, des champs, éléments, listes, les pièces jointes, composants WebPart et des flux de travail sont ajoutés, mis à jour, supprimées ou supprimés. Pour plus d’informations, consultez [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md) et [bloc de construction : gestion des événements](http://go.microsoft.com/fwlink/?LinkId=179416).  
+  L’élément de projet de récepteur d’événements crée un **récepteur d’événements** dossier avec un fichier de classe unique qui contient les gestionnaires d’événements pour tous les événements que vous avez spécifié lorsque vous avez créé le projet dans le **personnalisation de SharePoint Assistant**. La classe de récepteur d’événements peut gérer des événements qui se produisent sur le site SharePoint lorsque des éléments tels que des fichiers, des champs, éléments, listes, les pièces jointes, composants WebPart et des flux de travail sont ajoutés, mis à jour, supprimées ou supprimés. Pour plus d’informations, consultez [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md) et [bloc de construction : gestion des événements](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
 ### <a name="list"></a>Liste  
  Une liste est une instance d’une base SharePoint liste Définition réutilisable, par exemple un calendrier ou une liste de tâches. Après avoir ajouté une liste à votre solution, le Concepteur de liste vous permet d’ajouter des colonnes de site à la liste et créer des colonnes de liste personnalisée. Cela inclut des colonnes de site à partir de types de contenu. Vous pouvez spécifier le *vue* pour obtenir la liste, qui détermine les colonnes qui apparaîtront dans la liste. Pour plus d’informations, consultez [procédure pas à pas : créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) et [bloc de construction : listes et bibliothèques de documents](http://go.microsoft.com/fwlink/?LinkId=179421).  
@@ -125,13 +125,13 @@ ms.locfileid: "37118967"
 ### <a name="site-definition-farm-solution-only"></a>Définition de site (solution de batterie uniquement)
  *Définition de site* éléments de projet contient un dossier de définition de site qui inclut les fichiers suivants :  
   
--   Une page .aspx par défaut, utilisée en tant que la page web par défaut pour le site.  
+- Une page .aspx par défaut, utilisée en tant que la page web par défaut pour le site.  
   
--   Un *onet.xml* fichier qui définit les composants du site.  
+- Un *onet.xml* fichier qui définit les composants du site.  
   
--   Un fichier xml webtemp qui spécifie les configurations de définition de site qui s’affichent dans le **sélection du modèle** section de la **nouveau SharePoint Site** page.  
+- Un fichier xml webtemp qui spécifie les configurations de définition de site qui s’affichent dans le **sélection du modèle** section de la **nouveau SharePoint Site** page.  
   
- Une fois que vous ajoutez une définition de site, vous ajoutez code et fichiers pour introduire une fonctionnalité. Cet élément de projet peut être utilisé uniquement dans les solutions de batterie de serveurs. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [créer des définitions de site pour SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) et [définitions de Site et les Configurations](http://go.microsoft.com/fwlink/?LinkId=260554).  
+  Une fois que vous ajoutez une définition de site, vous ajoutez code et fichiers pour introduire une fonctionnalité. Cet élément de projet peut être utilisé uniquement dans les solutions de batterie de serveurs. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [créer des définitions de site pour SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) et [définitions de Site et les Configurations](http://go.microsoft.com/fwlink/?LinkId=260554).  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>Flux de travail de machine à états (solution de batterie uniquement)
  Un *workflow d’ordinateur d’état* est un ensemble d’états de logique métier, de transitions et d’actions. Les étapes décrites dans un workflow d’ordinateur d’état ne sont pas effectuées dans la séquence ; au lieu de cela, elles sont déclenchées par des actions et des États. Comme un workflow séquentiel, les workflows machine à états sont associés à des éléments SharePoint tels que des listes et des documents. Une fois encore, vous pouvez créer des flux de travail au niveau du site (global) ou au niveau de la liste de flux de travail (local). Vous pouvez également choisir un flux de travail démarre automatiquement ou manuellement. Cet élément de projet peut être utilisé uniquement dans les solutions de batterie de serveurs. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [solutions de flux de travail SharePoint créer](../sharepoint/creating-sharepoint-workflow-solutions.md), [des flux de travail dans SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), et [What ' s New : améliorations des flux de travail](http://go.microsoft.com/fwlink/?LinkId=179418).  

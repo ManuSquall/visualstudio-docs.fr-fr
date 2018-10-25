@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER | Documents Microsoft
+title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8bdc7a4ea9ac59ee0956226618402b397844b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e86cae45298b3f137e2ebca65fa8c531c6d86457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908442"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-Une structure qui identifie une visionneuse personnalisée ou le type de visualiseur.  
+Une structure qui identifie une visionneuse personnalisée ou type de visualiseur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,13 +51,13 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>Membres  
  dwID  
- Un ID pour différencier plusieurs visionneuses ou implémentées par un visualiseurs `GUID`.  
+ Un ID pour différencier plusieurs visionneuses ou implémentés par un visualiseurs `GUID`.  
   
  bstrMenuName  
- Le texte qui apparaît dans le menu déroulant.  
+ Le texte qui apparaîtra dans le menu déroulant.  
   
  bstrDescription  
- Description de la visionneuse personnalisée ou d’un visualiseur de type (doit être une valeur null si non utilisé).  
+ Une description de la visionneuse personnalisée ou d’un visualiseur de type (doit être une valeur null si omise).  
   
  guidLang  
  Langue de l’évaluateur d’expression en fournissant.  
@@ -71,7 +71,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 ## <a name="remarks"></a>Notes  
  Une liste de cette structure est retournée par un appel à la [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) (méthode) (et, par extension, le [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

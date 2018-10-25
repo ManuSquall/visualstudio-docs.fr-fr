@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event | Documents Microsoft
+title: IDebugEventCallback2::Event | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea52b8be040df50da1585165599c4fdea635557
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc61f6a8b2a8a069d0fb921e4dbfe631088b2925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913317"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
-Envoie une notification des événements de débogage.  
+Envoie une notification d’événements de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,33 +53,33 @@ int Event(
   
 #### <a name="parameters"></a>Paramètres  
  `pEngine`  
- [in] Un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objet qui représente le moteur de débogage (DE) qui envoie cet événement. Un D’est requis pour remplir ce paramètre.  
+ [in] Un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objet qui représente le moteur de débogage (dé) qui envoie cet événement. Un dé est requis pour remplir ce paramètre.  
   
  `pProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet qui représente le processus dans lequel l’événement se produit. Ce paramètre est rempli par le Gestionnaire de session de débogage (SDM). Un DE transmet toujours une valeur null pour ce paramètre.  
+ [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet qui représente le processus dans lequel l’événement se produit. Ce paramètre est renseigné par le Gestionnaire de session de débogage (SDM). Un dé transmet toujours une valeur null pour ce paramètre.  
   
  `pProgram`  
  [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme dans lequel cet événement se produit. Pour la plupart des événements, ce paramètre n’est pas une valeur null.  
   
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread dans laquelle cet événement se produit. Pour les événements d’arrêt, ce paramètre ne peut pas être une valeur null le frame de pile est obtenu à partir de ce paramètre.  
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread dans lequel cet événement se produit. Pour les événements d’arrêt, ce paramètre ne peut pas être une valeur null le frame de pile est obtenu à partir de ce paramètre.  
   
  `pEvent`  
  [in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objet qui représente l’événement de débogage.  
   
  `riidEvent`  
- [in] GUID qui identifie l’interface d’événement pour obtenir de le `pEvent` paramètre.  
+ [in] GUID qui identifie quelle interface d’événement pour obtenir de le `pEvent` paramètre.  
   
  `dwAttrib`  
- [in] Une combinaison d’indicateurs à partir de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) énumération.  
+ [in] Une combinaison d’indicateurs de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) énumération.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Lors de l’appel de cette méthode, le `dwAttrib` paramètre doit correspondre à la valeur retournée par la [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) la méthode appelée sur l’objet d’événement passé dans le `pEvent` paramètre.  
+ Lors de l’appel de cette méthode, le `dwAttrib` paramètre doit correspondre à la valeur retournée par la [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) transmis à la méthode comme appelée sur l’objet d’événement dans le `pEvent` paramètre.  
   
- Tous les événements de débogage sont validées de façon asynchrone, qu’un événement lui-même soit asynchrone ou non. Lorsqu’un D’appelle cette méthode, la valeur de retour n’indique pas si l’événement a été traité, uniquement si l’événement a été reçu. En fait, dans la plupart des cas, l’événement n'a pas été traité lorsque cette méthode est retournée.  
+ Tous les événements de débogage sont validées de façon asynchrone, qu’un événement lui-même soit asynchrone ou non. Lorsqu’un D’appelle cette méthode, la valeur de retour n’indique pas si l’événement a été traitée, uniquement si l’événement a été reçu. En fait, dans la plupart des cas, l’événement n'a pas été traité lorsque cette méthode est retournée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841882"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules dans une feuille de calcul Microsoft Office Excel aux champs dans la base de données Northwind SQL Server.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781668"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Ajout d’une source de données à votre projet de classeur.  
+- Ajout d’une source de données à votre projet de classeur.  
   
--   Ajout de contrôles liés aux données à une feuille de calcul.  
+- Ajout de contrôles liés aux données à une feuille de calcul.  
   
--   Enregistrer les modifications apportées aux données dans la base de données.  
+- Enregistrer les modifications apportées aux données dans la base de données.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -67,25 +67,25 @@ ms.locfileid: "38781668"
   
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
-1.  Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.  
+1. Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.  
   
-2.  Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.  
+2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.  
   
-3.  Sélectionnez **base de données** puis cliquez sur **suivant**.  
+3. Sélectionnez **base de données** puis cliquez sur **suivant**.  
   
-4.  Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server, ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
+4. Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server, ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
   
-5.  Une fois une connexion a été sélectionnée ou créée, cliquez sur **suivant**.  
+5. Une fois une connexion a été sélectionnée ou créée, cliquez sur **suivant**.  
   
-6.  Désactivez l’option pour enregistrer la connexion si elle est sélectionnée, puis cliquez sur **suivant**.  
+6. Désactivez l’option pour enregistrer la connexion si elle est sélectionnée, puis cliquez sur **suivant**.  
   
-7.  Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
+7. Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
   
-8.  Sélectionnez la case à cocher à côté du **employés** table.  
+8. Sélectionnez la case à cocher à côté du **employés** table.  
   
 9. Cliquez sur **Terminer**.  
   
- L’Assistant ajoute les **employés** de la table vers le **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
+   L’Assistant ajoute les **employés** de la table vers le **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Ajouter des contrôles à la feuille de calcul  
  Une feuille de calcul affichera la **employés** table lorsque le classeur est ouvert. Les utilisateurs seront en mesure d’apporter des modifications aux données et puis enregistrer ces modifications dans la base de données en cliquant sur un bouton.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781668"
   
 ### <a name="to-add-a-button"></a>Pour ajouter un bouton  
   
-1.  À partir de la **contrôles communs** onglet de la **boîte à outils**, ajouter un <xref:System.Windows.Forms.Button> contrôle de cellule **A4** de la feuille de calcul.  
+1. À partir de la **contrôles communs** onglet de la **boîte à outils**, ajouter un <xref:System.Windows.Forms.Button> contrôle de cellule **A4** de la feuille de calcul.  
   
- L’étape suivante consiste à ajouter du texte au bouton lorsque la feuille de calcul s’ouvre.  
+   L’étape suivante consiste à ajouter du texte au bouton lorsque la feuille de calcul s’ouvre.  
   
 ## <a name="initialize-the-control"></a>Initialiser le contrôle  
  Ajouter du texte au bouton dans le <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> Gestionnaire d’événements.  
   
 ### <a name="to-initialize-the-control"></a>Pour initialiser le contrôle  
   
-1.  Dans **l’Explorateur de solutions**, avec le bouton droit **Sheet1.vb** ou **Sheet1.cs**, puis cliquez sur **afficher le Code** dans le menu contextuel.  
+1. Dans **l’Explorateur de solutions**, avec le bouton droit **Sheet1.vb** ou **Sheet1.cs**, puis cliquez sur **afficher le Code** dans le menu contextuel.  
   
-2.  Ajoutez le code suivant à la `Sheet1_Startup` méthode pour définir le texte de b`utton`.  
+2. Ajoutez le code suivant à la `Sheet1_Startup` méthode pour définir le texte de b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Pour c# uniquement, ajoutez un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événement à la `Sheet1_Startup` (méthode).  
+3. Pour c# uniquement, ajoutez un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événement à la `Sheet1_Startup` (méthode).  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Maintenant ajouter du code pour gérer le <xref:System.Windows.Forms.Control.Click> événements du bouton.  
+   Maintenant ajouter du code pour gérer le <xref:System.Windows.Forms.Control.Click> événements du bouton.  
   
 ## <a name="save-changes-to-the-database"></a>Enregistrer les modifications dans la base de données  
  Des modifications ont été apportées pour les données existent uniquement dans le jeu de données local jusqu'à ce qu’ils sont volontairement enregistrés dans la base de données.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781668"
   
 ### <a name="to-add-new-rows"></a>Pour ajouter de nouvelles lignes  
   
-1.  Sélectionnez une cellule à l’intérieur de l’objet de liste.  
+1. Sélectionnez une cellule à l’intérieur de l’objet de liste.  
   
-     Une nouvelle ligne apparaît en bas de la liste, avec un astérisque (**\***) dans la première cellule de la nouvelle ligne.  
+    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque (**\\***) dans la première cellule de la nouvelle ligne.  
   
-2.  Ajoutez les informations suivantes dans la ligne vide.  
+2. Ajoutez les informations suivantes dans la ligne vide.  
   
-    |EmployeeID|LastName|FirstName|Titre|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Ito|Shu|Responsable des ventes|  
+   |EmployeeID|LastName|FirstName|Titre|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Ito|Shu|Responsable des ventes|  
   
 ### <a name="to-delete-rows"></a>Pour supprimer des lignes  
   

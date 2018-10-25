@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847979"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets et cibler des plateformes
 
-Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge des plateformes 64 bits dans Visual Studio, consultez [Applications 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge des plateformes 64 bits dans Visual Studio, consultez [Applications 64 bits](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Cibler des plateformes avec le Gestionnaire de configurations
 
@@ -59,15 +59,15 @@ Le **Concepteur de projet** permet également de cibler différentes plateformes
 
 L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d'informations, consultez les liens suivants : 
 
--   Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], consultez [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], consultez [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
--   Pour les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], consultez [Build, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Pour les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], consultez [Build, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
--   Pour les projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], consultez [/clr (compilation pour le Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- Pour les projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], consultez [/clr (compilation pour le Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation des plateformes de génération](../ide/understanding-build-platforms.md)
 - [/platform (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [Applications 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+- [Applications 64 bits](/dotnet/framework/64-bit-apps)
 - [Prise en charge de l’IDE Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)

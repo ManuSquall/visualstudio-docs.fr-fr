@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842637"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Parcourir une session de débogage dans Visual Studio (XAML et C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
   
  Lorsque vous effectuez une exécution pas-à-pas d'une ligne de code, le débogueur effectue l'une des opérations suivantes :  
   
--   Si l'instruction suivante n'est pas un appel à une fonction dans votre solution, le débogueur exécute l'instruction, passe à l'instruction, puis suspend l'exécution.  
+- Si l'instruction suivante n'est pas un appel à une fonction dans votre solution, le débogueur exécute l'instruction, passe à l'instruction, puis suspend l'exécution.  
   
--   Si l'instruction est un appel à une fonction dans votre solution, le débogueur passe au point d'entrée de la fonction appelée, puis suspend l'exécution.  
+- Si l'instruction est un appel à une fonction dans votre solution, le débogueur passe au point d'entrée de la fonction appelée, puis suspend l'exécution.  
   
- Continuez l'exécution pas-à-pas des instructions pour Example1 jusqu'au point de sortie. Le débogueur met en surbrillance l'accolade fermante de la méthode.  
+  Continuez l'exécution pas-à-pas des instructions pour Example1 jusqu'au point de sortie. Le débogueur met en surbrillance l'accolade fermante de la méthode.  
   
- **Examiner les valeurs de la variable dans la bulle d'informations.** Lorsque vous placez le pointeur de la souris au-dessus d'un nom de variable, le nom, la valeur et le type de la variable s'affichent dans une bulle d'informations.  
+  **Examiner les valeurs de la variable dans la bulle d'informations.** Lorsque vous placez le pointeur de la souris au-dessus d'un nom de variable, le nom, la valeur et le type de la variable s'affichent dans une bulle d'informations.  
   
- ![Bulle du débogueur](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Bulle du débogueur](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Placez le pointeur de la souris au-dessus de la variable `a`. Notez le nom, la valeur et le type de données. Placez le pointeur de la souris au-dessus de la variable `methodTrack`. Notez à nouveau le nom, la valeur et le type de données.  
+  Placez le pointeur de la souris au-dessus de la variable `a`. Notez le nom, la valeur et le type de données. Placez le pointeur de la souris au-dessus de la variable `methodTrack`. Notez à nouveau le nom, la valeur et le type de données.  
   
- **Examiner les valeurs des variables dans la fenêtre Variables locales.** Dans la boîte de dialogue **Déboguer** , pointez sur **Fenêtres**, puis choisissez **Variables locales**. (clavier : Alt+4).  
+  **Examiner les valeurs des variables dans la fenêtre Variables locales.** Dans la boîte de dialogue **Déboguer** , pointez sur **Fenêtres**, puis choisissez **Variables locales**. (clavier : Alt+4).  
   
- ![Fenêtre variables locales](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Fenêtre variables locales](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- Les fenêtres Variables locales forment une arborescence des paramètres et des variables de la fonction. Les propriétés d'une variable objet sont les nœuds enfants de l'objet lui-même. La variable `this` est un paramètre masqué dans chaque méthode d'objet qui représente l'objet lui-même. Dans ce cas, elle représente la classe MainPage. Comme `methodTrack` est membre de la classe MainPage, sa valeur et son type de données apparaissent dans une ligne sous `this`. Développez le nœud `this` pour afficher les informations de `methodTrack` .  
+  Les fenêtres Variables locales forment une arborescence des paramètres et des variables de la fonction. Les propriétés d'une variable objet sont les nœuds enfants de l'objet lui-même. La variable `this` est un paramètre masqué dans chaque méthode d'objet qui représente l'objet lui-même. Dans ce cas, elle représente la classe MainPage. Comme `methodTrack` est membre de la classe MainPage, sa valeur et son type de données apparaissent dans une ligne sous `this`. Développez le nœud `this` pour afficher les informations de `methodTrack` .  
   
- **Ajouter un espion à la variable methodTrack.** La variable `methodWatch` est utilisée dans ce guide de démarrage rapide pour montrer les méthodes appelées dans les exemples. Pour simplifier l'affichage de la valeur de la variable, ajoutez-la dans une fenêtre Espion. Cliquez avec le bouton droit sur le nom de la variable dans la fenêtre Variables locales, puis choisissez **Ajouter un espion**.  
+  **Ajouter un espion à la variable methodTrack.** La variable `methodWatch` est utilisée dans ce guide de démarrage rapide pour montrer les méthodes appelées dans les exemples. Pour simplifier l'affichage de la valeur de la variable, ajoutez-la dans une fenêtre Espion. Cliquez avec le bouton droit sur le nom de la variable dans la fenêtre Variables locales, puis choisissez **Ajouter un espion**.  
   
- ![Fenêtre Espion](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![Fenêtre Espion](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- Examinez plusieurs variables dans une fenêtre Espion. Les valeurs des variables espionnées, comme les valeurs affichées dans les fenêtres Variables locales et les bulles d'informations, sont mises à jour chaque fois que l'exécution est suspendue. Vous pouvez également ajouter des variables dans la fenêtre Espion de l'éditeur de code. Sélectionnez la variable à espionner, cliquez avec le bouton droit, puis choisissez **Ajouter un espion**.  
+  Examinez plusieurs variables dans une fenêtre Espion. Les valeurs des variables espionnées, comme les valeurs affichées dans les fenêtres Variables locales et les bulles d'informations, sont mises à jour chaque fois que l'exécution est suspendue. Vous pouvez également ajouter des variables dans la fenêtre Espion de l'éditeur de code. Sélectionnez la variable à espionner, cliquez avec le bouton droit, puis choisissez **Ajouter un espion**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Pas à pas détaillé, principal et sortant des méthodes  
  Contrairement à l'exécution pas-à-pas d'une méthode appelée par une méthode parente, le survol d'une méthode exécute la méthode enfant, puis suspend l'exécution de la méthode d'appel lorsque l'exécution de la méthode parent reprend. Vous pouvez exécuter un survol d'une méthode lorsque vous êtes familiarisé avec le mode de fonctionnement de la méthode et que vous êtes sûr que l'exécution n'affectera pas le problème que vous analysez.  

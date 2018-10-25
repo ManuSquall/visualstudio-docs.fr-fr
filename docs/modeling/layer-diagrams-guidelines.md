@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863332"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : recommandations
 
@@ -32,7 +32,7 @@ Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionna
 
 ## <a name="what-is-a-dependency-diagram"></a>Qu’est un diagramme de dépendances ?
 
-Comme un diagramme d’architecture traditionnel, un diagramme de dépendances identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud dans le diagramme, appelé un *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d'une build normale dans [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], vous pouvez vous assurer que le code du programme continue à respecter l'architecture du système au travers des modifications futures. Consultez [des diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md).
+Comme un diagramme d’architecture traditionnel, un diagramme de dépendances identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud dans le diagramme, appelé un *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d’une build normale dans [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], vous pouvez vous assurer que le code du programme continue à respecter l’architecture du système au travers des modifications futures. Consultez [des diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Comment concevoir ou mettre à jour de votre application avec des diagrammes de dépendance
 
@@ -105,7 +105,7 @@ En général, des dépendances qui ne devraient pas exister s'affichent. Vous po
 Pour décrire les modifications que vous envisagez d’apporter à votre système ou de l’architecture prévue, procédez comme suit pour modifier le diagramme de dépendances. vous pouvez aussi envisager d'apporter des modifications de refactorisation pour améliorer la structure du code avant de l'étendre. Consultez [amélioration de la structure du code](#Improving).
 
 |**To**|**Effectuez ces étapes**|
-|------------|-----------------------------|
+|-|-|
 |Supprimer une dépendance qui ne doit pas exister|Cliquez sur la dépendance, puis appuyez sur **supprimer**.|
 |Changer ou restreindre la direction d'une dépendance|Définissez ses **Direction** propriété.|
 |Créer de nouvelles dépendances|Utilisez le **dépendance** et **dépendance bidirectionnelle** outils.<br /><br /> Pour dessiner plusieurs dépendances, double-cliquez sur l'outil. Lorsque vous avez terminé, cliquez sur le **pointeur** outil ou appuyez sur la **ÉCHAP** clé.|

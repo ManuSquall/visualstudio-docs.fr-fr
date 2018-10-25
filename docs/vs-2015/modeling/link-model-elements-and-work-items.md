@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891750"
 ---
 # <a name="link-model-elements-and-work-items"></a>Lier des éléments de modèle et des éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
   
  Par exemple, vous pouvez lier :  
   
--   un élément de travail Récit utilisateur et un diagramme d'activités pour montrer comment réaliser le récit sous la forme d'une séquence d'opérations ;  
+- un élément de travail Récit utilisateur et un diagramme d'activités pour montrer comment réaliser le récit sous la forme d'une séquence d'opérations ;  
   
--   un cas d'usage dans un diagramme de cas d'usage et des éléments de travail Cas de test pour garantir l'implémentation du cas d'usage ;  
+- un cas d'usage dans un diagramme de cas d'usage et des éléments de travail Cas de test pour garantir l'implémentation du cas d'usage ;  
   
--   un attribut dans une classe dans un diagramme de classes UML et un élément de travail Bogue pour montrer une erreur dans l'implémentation de l'attribut ;  
+- un attribut dans une classe dans un diagramme de classes UML et un élément de travail Bogue pour montrer une erreur dans l'implémentation de l'attribut ;  
   
--   un composant dans un diagramme de composant et un élément de travail Tâche pour suivre le développement du composant. Ce type de tâche est généralement décomposée en tâches moins importantes  
+- un composant dans un diagramme de composant et un élément de travail Tâche pour suivre le développement du composant. Ce type de tâche est généralement décomposée en tâches moins importantes  
   
- Vous pouvez lier des éléments de travail à tous les éléments que vous pouvez sélectionner dans les diagrammes de modélisation ou dans l'Explorateur de modèles UML, par exemple :  
+  Vous pouvez lier des éléments de travail à tous les éléments que vous pouvez sélectionner dans les diagrammes de modélisation ou dans l'Explorateur de modèles UML, par exemple :  
   
--   tous les éléments des modèles UML, tels que les classes, les lignes de vie, les cas d'usage, les sous-systèmes, les activités, les nœuds d'objet, les composants et les interfaces UML ;  
+- tous les éléments des modèles UML, tels que les classes, les lignes de vie, les cas d'usage, les sous-systèmes, les activités, les nœuds d'objet, les composants et les interfaces UML ;  
   
--   toutes les relations des modèles UML, telles que les associations, les généralisations, les dépendances, les flux et les messages ;  
+- toutes les relations des modèles UML, telles que les associations, les généralisations, les dépendances, les flux et les messages ;  
   
--   les parties d'éléments, telles que les attributs et opérations de classes, les occurrences d'exécution de lignes de vie, les broches d'entrée et de sortie d'activités, et les parties et les ports de composants ;  
+- les parties d'éléments, telles que les attributs et opérations de classes, les occurrences d'exécution de lignes de vie, les broches d'entrée et de sortie d'activités, et les parties et les ports de composants ;  
   
--   les couches et les dépendances de couches ;  
+- les couches et les dépendances de couches ;  
   
--   les commentaires et les liens de commentaires ;  
+- les commentaires et les liens de commentaires ;  
   
--   les diagrammes. Pour sélectionner un diagramme, choisissez une partie vide du diagramme.  
+- les diagrammes. Pour sélectionner un diagramme, choisissez une partie vide du diagramme.  
   
 > [!WARNING]
 >  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 21b3ab30ff6672149fe05359f33ad932706a8a91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867310"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101 : Spécifiez le marshaling pour les arguments de chaîne P/Invoke
+
 |||
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|

@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884964"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Didacticiel 1 : créer une visionneuse d'images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous apprenez à faire glisser des contrôles (par exemple, des boutons et des zones d'image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :  
   
--   Créer un nouveau projet.  
+- Créer un nouveau projet.  
   
--   Tester (déboguer) une application.  
+- Tester (déboguer) une application.  
   
--   Ajouter des contrôles de base, comme des cases à cocher et des boutons, à un formulaire.  
+- Ajouter des contrôles de base, comme des cases à cocher et des boutons, à un formulaire.  
   
--   Positionner des contrôles sur un formulaire à l'aide de dispositions.  
+- Positionner des contrôles sur un formulaire à l'aide de dispositions.  
   
--   Ajouter des boîtes de dialogue **Ouvrir un fichier** et **Couleur** à un formulaire.  
+- Ajouter des boîtes de dialogue **Ouvrir un fichier** et **Couleur** à un formulaire.  
   
--   Écrire du code à l'aide d'IntelliSense et d'extraits de code.  
+- Écrire du code à l'aide d'IntelliSense et d'extraits de code.  
   
--   Écrire des méthodes de gestionnaire d'événements.  
+- Écrire des méthodes de gestionnaire d'événements.  
   
- Lorsque vous aurez terminé, votre programme ressemblera à l'image suivante.  
+  Lorsque vous aurez terminé, votre programme ressemblera à l'image suivante.  
   
- ![Image créée dans ce didacticiel](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Image créée dans ce didacticiel  
+  ![Image créée dans ce didacticiel](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Image créée dans ce didacticiel  
   
- Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du didacticiel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du didacticiel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Comment créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Comment créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Comment créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Comment créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio. Visual C# et Visual Basic sont tous deux traités dans ce didacticiel. Ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  

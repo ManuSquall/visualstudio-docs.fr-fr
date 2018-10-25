@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862500"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels
 
@@ -56,32 +56,32 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
  Un modèle de charge dans l’étape peut être utilisé pour augmenter la charge sur le ou les serveurs au cours de l’exécution du test de charge. Il permet d’apprécier l’évolution des performances au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l’aide d’un modèle de charge par étape dont les propriétés sont les suivantes :
 
--   **Nombre initial d'utilisateurs** : 100
+- **Nombre initial d'utilisateurs** : 100
 
--   **Nombre maximal d'utilisateurs** : 2 000
+- **Nombre maximal d'utilisateurs** : 2 000
 
--   **Durée de l'étape (secondes)**  : 1 800
+- **Durée de l'étape (secondes)**  : 1 800
 
--   **Durée de démarrage de l'étape (secondes)**  : 20
+- **Durée de démarrage de l'étape (secondes)**  : 20
 
--   **Nombre d’utilisateurs par étape** : 100
+- **Nombre d’utilisateurs par étape** : 100
 
- Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs. La propriété **Durée de démarrage de l’étape** vaut mention spéciale, parce que c’est l’une des seules propriétés qui n’est pas disponible pour la sélection dans l’**Assistant Nouveau test de charge**. Cette propriété autorise le passage progressif à l'étape suivante (par exemple de 100 à 200 utilisateurs), et non immédiat. Dans l'exemple, la charge utilisateur passerait de 100 à 200 utilisateurs sur une période de 20 secondes (soit une augmentation de cinq utilisateurs par seconde). Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs. La propriété **Durée de démarrage de l’étape** vaut mention spéciale, parce que c’est l’une des seules propriétés qui n’est pas disponible pour la sélection dans l’**Assistant Nouveau test de charge**. Cette propriété autorise le passage progressif à l'étape suivante (par exemple de 100 à 200 utilisateurs), et non immédiat. Dans l'exemple, la charge utilisateur passerait de 100 à 200 utilisateurs sur une période de 20 secondes (soit une augmentation de cinq utilisateurs par seconde). Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>En fonction des objectifs
 
  Un modèle de charge basé sur des objectifs est semblable au modèle par étape, mais il ajuste la charge utilisateur en fonction des seuils de compteurs de performance par rapport aux ajustements de charge utilisateur périodiques. Les charges basées sur des objectifs sont utiles dans différents cas :
 
--   Optimiser la sortie des agents : mesurez la mesure de limite clé sur l'agent pour optimiser la sortie des agents. En général, il s'agit de l'UC ; toutefois, il peut également s'agir de la mémoire.
+- Optimiser la sortie des agents : mesurez la mesure de limite clé sur l'agent pour optimiser la sortie des agents. En général, il s'agit de l'UC ; toutefois, il peut également s'agir de la mémoire.
 
--   Atteindre un certain niveau de ressources cible (en général UC) sur le serveur cible, puis mesurer le débit à ce niveau. Vous pouvez ainsi effectuer des comparaisons série à série du débit en fonction d'un niveau constant d'utilisation de ressources sur le serveur.
+- Atteindre un certain niveau de ressources cible (en général UC) sur le serveur cible, puis mesurer le débit à ce niveau. Vous pouvez ainsi effectuer des comparaisons série à série du débit en fonction d'un niveau constant d'utilisation de ressources sur le serveur.
 
--   Atteindre un niveau de débit cible sur le serveur.
+- Atteindre un niveau de débit cible sur le serveur.
 
- Le tableau suivant présente un exemple de modèle basé sur les objectifs avec les paramètres de propriété suivants :
+  Le tableau suivant présente un exemple de modèle basé sur les objectifs avec les paramètres de propriété suivants :
 
 |Groupe de propriétés|Property|Value|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Compteur de performance|Category|Processeur|
 |Compteur de performance|Ordinateur|ContosoServer1|
 |Compteur de performance|Counter|% temps processeur|
@@ -109,7 +109,7 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Spécifier le modèle de charge initiale pour votre test de charge :** Quand vous créez un test de charge à l’aide de l’**Assistant Nouveau test de charge**, vous sélectionnez un modèle de charge.|-   [Modifier le modèle de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Modification du modèle de charge de votre test de charge :** après avoir créé votre test de charge, vous pouvez modifier le modèle de charge dans l’**Éditeur de test de charge**.|-   [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Spécification si les utilisateurs virtuels dans votre scénario de test de charge doivent inclure les données en cache du site web :** Vous pouvez changer la propriété **Pourcentage de nouveaux utilisateurs** pour définir le mode de simulation par le test de charge de la mise en cache web qui serait exécutée par un navigateur web pour les utilisateurs virtuels.|-   [Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

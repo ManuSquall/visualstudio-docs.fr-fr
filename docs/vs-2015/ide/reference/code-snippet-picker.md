@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845294"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ L’éditeur de code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un 
   
  La procédure d’affichage du **sélecteur d’extraits de code** varie en fonction du langage que vous utilisez.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel et sélectionnez **Insérer un extrait**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel et sélectionnez **Insérer un extrait**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] : le **sélecteur d’extraits de code** n’est pas disponible.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] : le **sélecteur d’extraits de code** n’est pas disponible.  
   
--   Visual F# : le **sélecteur d’extraits de code** n’est pas disponible.  
+- Visual F# : le **sélecteur d’extraits de code** n’est pas disponible.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
   
--   XML : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
+- XML : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
   
--   HTML : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
+- HTML : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.  
   
--   SQL : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait**.  
+- SQL : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait**.  
   
- Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la **Liste des dossiers** dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la **Liste des dossiers** dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  Nom d'élément  

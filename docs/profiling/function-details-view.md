@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ce7bfbe9d68a7edcc0711c1f7e954612e67d0c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951221"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 La fenêtre **Vue Informations relatives à la fonction** affiche les informations suivantes :  
   
--   Le graphique à barres **Distribution des coûts** représente les relations entre une fonction que vous sélectionnez et les fonctions d’appel qui ont exécuté la fonction sélectionnée, et entre la fonction sélectionnée et les fonctions appelées par cette fonction.  
+- Le graphique à barres **Distribution des coûts** représente les relations entre une fonction que vous sélectionnez et les fonctions d’appel qui ont exécuté la fonction sélectionnée, et entre la fonction sélectionnée et les fonctions appelées par cette fonction.  
   
--   Le tableau **Détails des performances de la fonction**, qui affiche des données de profilage résumées pour la fonction que vous spécifiez.  
+- Le tableau **Détails des performances de la fonction**, qui affiche des données de profilage résumées pour la fonction que vous spécifiez.  
   
--   La fenêtre **Affichage du code de fonction**, qui affiche le code de fonction quand le code est disponible.  
+- La fenêtre **Affichage du code de fonction**, qui affiche le code de fonction quand le code est disponible.  
   
- La fenêtre **Affichage du code de fonction** est un volet distinct. Par défaut, les deux volets sont fractionnés horizontalement, et la fenêtre **Affichage du code de fonction** est positionnée en bas du cadre.  
+  La fenêtre **Affichage du code de fonction** est un volet distinct. Par défaut, les deux volets sont fractionnés horizontalement, et la fenêtre **Affichage du code de fonction** est positionnée en bas du cadre.  
   
--   Pour fractionner les deux volets verticalement, cliquez sur **Diviser l’écran verticalement** dans la barre d’outils.  
+- Pour fractionner les deux volets verticalement, cliquez sur **Diviser l’écran verticalement** dans la barre d’outils.  
   
--   Pour modifier la taille relative des volets, cliquez sur la bordure ombrée entre les cadres et faites-la glisser vers un autre emplacement.  
+- Pour modifier la taille relative des volets, cliquez sur la bordure ombrée entre les cadres et faites-la glisser vers un autre emplacement.  
   
 ## <a name="cost-distribution-bar-chart"></a>Graphique à barres Distribution des coûts  
   
@@ -49,25 +49,25 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
   
  Vous pouvez cliquer sur le nom d’une fonction appelante pour la sélectionner dans la vue.  
   
--   S’il y a trop de fonctions appelantes à répertorier, les fonctions avec les plus petites contributions sont regroupées dans un bloc **Autres**. Cliquez sur **Autres** pour afficher toutes les fonctions appelantes et appelées de la fonction sélectionnée dans la fenêtre **Vue Appelant/Appelé**. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
+- S’il y a trop de fonctions appelantes à répertorier, les fonctions avec les plus petites contributions sont regroupées dans un bloc **Autres**. Cliquez sur **Autres** pour afficher toutes les fonctions appelantes et appelées de la fonction sélectionnée dans la fenêtre **Vue Appelant/Appelé**. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
   
--   S’il n’y a aucune fonction appelante ou si la fonction est la fonction d’entrée d’un thread ou d’un processus, un bloc **Haut de la pile** apparaît.  
+- S’il n’y a aucune fonction appelante ou si la fonction est la fonction d’entrée d’un thread ou d’un processus, un bloc **Haut de la pile** apparaît.  
   
- **Fonction sélectionnée**  
+  **Fonction sélectionnée**  
   
- La barre de fonction sélectionnée affiche les contributions des fonctions appelées et du code dans la fonction sélectionnée pour la métrique de performances totale de la fonction sélectionnée. La taille du bloc qui contient une fonction appelée ou le corps de fonction est proportionnelle à sa contribution à la valeur totale de la métrique de performances pour la fonction sélectionnée.  
+  La barre de fonction sélectionnée affiche les contributions des fonctions appelées et du code dans la fonction sélectionnée pour la métrique de performances totale de la fonction sélectionnée. La taille du bloc qui contient une fonction appelée ou le corps de fonction est proportionnelle à sa contribution à la valeur totale de la métrique de performances pour la fonction sélectionnée.  
   
- Vous pouvez cliquer sur le nom d’une fonction appelée pour la sélectionner dans la vue.  
+  Vous pouvez cliquer sur le nom d’une fonction appelée pour la sélectionner dans la vue.  
   
--   La valeur **Total** est la métrique de performances pour la fonction sélectionnée.  
+- La valeur **Total** est la métrique de performances pour la fonction sélectionnée.  
   
--   Le bloc **Corps de la fonction** représente la part de la valeur totale de la métrique de performances qui s’est produite dans l’exécution directe de code dans le corps de la fonction.  
+- Le bloc **Corps de la fonction** représente la part de la valeur totale de la métrique de performances qui s’est produite dans l’exécution directe de code dans le corps de la fonction.  
   
--   Les fonctions appelées par la fonction sélectionnée sont répertoriées dans des blocs. La taille du bloc de fonctions sélectionné représente la part de la métrique de performances totale pour la fonction sélectionnée qui s’est produite dans la fonction appelée.  
+- Les fonctions appelées par la fonction sélectionnée sont répertoriées dans des blocs. La taille du bloc de fonctions sélectionné représente la part de la métrique de performances totale pour la fonction sélectionnée qui s’est produite dans la fonction appelée.  
   
--   S’il y a trop de fonctions appelantes à répertorier, les fonctions avec les plus petites contributions sont regroupées dans un bloc **Autres**. Cliquez sur **Autres** pour afficher toutes les fonctions appelantes et appelées de la fonction sélectionnée dans la fenêtre **Vue Appelant/Appelé**. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
+- S’il y a trop de fonctions appelantes à répertorier, les fonctions avec les plus petites contributions sont regroupées dans un bloc **Autres**. Cliquez sur **Autres** pour afficher toutes les fonctions appelantes et appelées de la fonction sélectionnée dans la fenêtre **Vue Appelant/Appelé**. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
   
--   S’il n’y a aucune fonction appelée, un bloc **Bas de la pile** apparaît.  
+- S’il n’y a aucune fonction appelée, un bloc **Bas de la pile** apparaît.  
   
 ## <a name="function-performance-details"></a>Détails des performances de la fonction  
  Le tableau Détails des performances de la fonction fournit des données de résumé pour les métriques de performances de la fonction sélectionnée. La valeur et le pourcentage sont tous deux affichés. Vous spécifiez les données de profilage qui apparaissent dans le graphique et le tableau de détails dans la liste **Métrique de performances**.  

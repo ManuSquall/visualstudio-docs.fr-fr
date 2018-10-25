@@ -16,12 +16,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1b8b18c93e96e9b7fddeafc06df970e541f84d80
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bc13aa389d6597831682cad62bcaad53672fa7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893466"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test d'une grande application avec plusieurs mappages d'IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +30,19 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
   
  **Spécifications**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Quand vous créez un test codé de l’interface utilisateur, le framework de test de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).  
+  Quand vous créez un test codé de l’interface utilisateur, le framework de test de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).  
   
- Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.  
+  Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.  
   
- L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages suivants :  
+  L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages suivants :  
   
--   Chaque mappage peut être associé à un sous-ensemble logique de l'application. Cela facilite la gestion des modifications.  
+- Chaque mappage peut être associé à un sous-ensemble logique de l'application. Cela facilite la gestion des modifications.  
   
--   Chaque testeur peut travailler sur une section de l'application et archiver son code sans interférer avec le travail des autres testeurs sur d'autre sections de l'application.  
+- Chaque testeur peut travailler sur une section de l'application et archiver son code sans interférer avec le travail des autres testeurs sur d'autre sections de l'application.  
   
--   Les ajouts à l'interface utilisateur de l'application peuvent être mis à l'échelle de manière incrémentielle avec un impact minimal sur les tests exécutés sur d'autres parties de l'interface utilisateur.  
+- Les ajouts à l'interface utilisateur de l'application peuvent être mis à l'échelle de manière incrémentielle avec un impact minimal sur les tests exécutés sur d'autres parties de l'interface utilisateur.  
   
 ## <a name="do-you-need-multiple-ui-maps"></a>Avez-vous besoin de plusieurs mappages d'IU ?  
  Créez plusieurs mappages d'IU dans chacun des types de situations suivants :  
@@ -55,34 +55,34 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
   
 #### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Pour ajouter un mappage d'IU à votre projet de test codé de l'interface utilisateur  
   
-1.  Dans l’**Explorateur de solutions**, pour créer un dossier dans votre projet de test codé de l’interface utilisateur où stocker tous les mappages d’IU, cliquez avec le bouton droit sur le fichier de projet de test codé de l’interface utilisateur, pointez sur **Ajouter**, puis choisissez **Nouveau dossier**. Par exemple, vous pourriez le nommer `UIMaps`.  
+1. Dans l’**Explorateur de solutions**, pour créer un dossier dans votre projet de test codé de l’interface utilisateur où stocker tous les mappages d’IU, cliquez avec le bouton droit sur le fichier de projet de test codé de l’interface utilisateur, pointez sur **Ajouter**, puis choisissez **Nouveau dossier**. Par exemple, vous pourriez le nommer `UIMaps`.  
   
-     Le nouveau dossier apparaît sous le projet de test codé de l’interface utilisateur.  
+    Le nouveau dossier apparaît sous le projet de test codé de l’interface utilisateur.  
   
-2.  Cliquez avec le bouton droit sur le dossier `UIMaps`, pointez sur **Ajouter**, puis choisissez **Nouvel élément**.  
+2. Cliquez avec le bouton droit sur le dossier `UIMaps`, pointez sur **Ajouter**, puis choisissez **Nouvel élément**.  
   
-     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.  
+    La boîte de dialogue **Ajouter un nouvel élément** s’affiche.  
   
-    > [!NOTE]
-    >  Vous devez être dans un projet de test codé de l'interface utilisateur pour ajouter un nouveau mappage de test codé de l'interface utilisateur.  
+   > [!NOTE]
+   >  Vous devez être dans un projet de test codé de l'interface utilisateur pour ajouter un nouveau mappage de test codé de l'interface utilisateur.  
   
-3.  Sélectionnez **Mappage de test codé de l’interface utilisateur** dans la liste.  
+3. Sélectionnez **Mappage de test codé de l’interface utilisateur** dans la liste.  
   
-     Dans la zone **Nom**, entrez le nom du nouveau mappage d’IU. Utilisez le nom du composant ou de la page que représentera le mappage, par exemple `HomePageMap`.  
+    Dans la zone **Nom**, entrez le nom du nouveau mappage d’IU. Utilisez le nom du composant ou de la page que représentera le mappage, par exemple `HomePageMap`.  
   
-4.  Sélectionnez **Ajouter**.  
+4. Sélectionnez **Ajouter**.  
   
-     La fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est réduite et la boîte de dialogue **Générateur de test codé de l’interface utilisateur** s’affiche.  
+    La fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est réduite et la boîte de dialogue **Générateur de test codé de l’interface utilisateur** s’affiche.  
   
-5.  Enregistrez les actions de la première méthode et choisissez **Générer le code**.  
+5. Enregistrez les actions de la première méthode et choisissez **Générer le code**.  
   
-6.  Après avoir enregistré toutes les actions et assertions pour le premier composant ou la première page et les avoir regroupées dans des méthodes, fermez la boîte de dialogue **Générateur de test codé de l’interface utilisateur**.  
+6. Après avoir enregistré toutes les actions et assertions pour le premier composant ou la première page et les avoir regroupées dans des méthodes, fermez la boîte de dialogue **Générateur de test codé de l’interface utilisateur**.  
   
-7.  Continuez à créer des mappages d'IU. Enregistrez les actions et assertions, regroupez-les dans des méthodes pour chaque composant, puis générez le code.  
+7. Continuez à créer des mappages d'IU. Enregistrez les actions et assertions, regroupez-les dans des méthodes pour chaque composant, puis générez le code.  
   
- Dans de nombreux cas, la fenêtre de niveau supérieur de votre application reste constante pour tous les Assistants, formulaires et pages. Bien que chaque mappage d'IU ait une classe pour la fenêtre de niveau supérieur, tous les mappages font probablement référence à la même fenêtre de niveau supérieur dans laquelle tous les composants de l'application s'exécutent. Les tests codés de l'interface utilisateur recherchent les contrôles de manière hiérarchique, de haut en bas, en commençant par la fenêtre de niveau supérieur. Ainsi, dans une application complexe, la fenêtre de niveau supérieur réelle pourrait être dupliquée dans chaque mappage d'IU. Si la fenêtre de niveau supérieur réelle est dupliquée, plusieurs modifications ont lieu si cette fenêtre change. Cela pourrait provoquer des problèmes de performances quand vous basculez d'un mappage d'IU à un autre.  
+   Dans de nombreux cas, la fenêtre de niveau supérieur de votre application reste constante pour tous les Assistants, formulaires et pages. Bien que chaque mappage d'IU ait une classe pour la fenêtre de niveau supérieur, tous les mappages font probablement référence à la même fenêtre de niveau supérieur dans laquelle tous les composants de l'application s'exécutent. Les tests codés de l'interface utilisateur recherchent les contrôles de manière hiérarchique, de haut en bas, en commençant par la fenêtre de niveau supérieur. Ainsi, dans une application complexe, la fenêtre de niveau supérieur réelle pourrait être dupliquée dans chaque mappage d'IU. Si la fenêtre de niveau supérieur réelle est dupliquée, plusieurs modifications ont lieu si cette fenêtre change. Cela pourrait provoquer des problèmes de performances quand vous basculez d'un mappage d'IU à un autre.  
   
- Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d'IU est identique à la fenêtre de niveau supérieur principale.  
+   Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d'IU est identique à la fenêtre de niveau supérieur principale.  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.  

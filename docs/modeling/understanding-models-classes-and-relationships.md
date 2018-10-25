@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861278"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code du programme dans la solution DSL est généré à partir de ce fichier.
@@ -135,7 +135,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Configurer la multiplicité d’un rôle en tapant sur le diagramme ou en modifiant le `Multiplicity` propriété dans le **propriétés** fenêtre. Le tableau suivant décrit les paramètres de cette propriété.
 
 |Type de multiplicité|Description|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (zéro à plusieurs)|Chaque instance de la classe de domaine peut avoir plusieurs instances de la relation ou aucune instance de la relation.|
 |Valeur 0.. 1 (zéro à un)|Chaque instance de la classe de domaine peut avoir pas plus d’une instance de la relation ou aucune instance de la relation.|
 |1..1 (un)|Chaque instance de la classe de domaine peut avoir une instance de la relation. Impossible de créer plusieurs instances de cette relation à partir de n’importe quelle instance de la classe de rôle. Si la validation est activée, une erreur de validation s’affiche lorsque n’importe quelle instance de la classe de rôle n’a aucune instance de la relation.|

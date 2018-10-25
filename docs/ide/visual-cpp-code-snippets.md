@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425593"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948926"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 
@@ -170,7 +170,6 @@ Si vous essayez d'insérer l'extrait de code destructeur en dehors d'une classe,
 ```cpp
 ~TypeNamePlaceholder()
 {
-
 ```
 
 ## <a name="see-also"></a>Voir aussi

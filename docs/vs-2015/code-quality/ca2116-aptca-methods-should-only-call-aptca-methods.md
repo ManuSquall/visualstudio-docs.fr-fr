@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819548"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217891"
 
  Lorsque l’attribut APTCA est présent sur un assembly entièrement fiable, et l’assembly exécute le code dans un autre assembly qui n’autorise pas les appelants partiellement approuvés, une faille de sécurité est possible. Si deux méthodes `M1` et `M2` remplir les conditions suivantes, des appelants malveillants peuvent utiliser la méthode `M1` pour ignorer la demande de liaison de confiance totale implicite qui protège `M2`:
 
--   `M1` une méthode publique est déclarée dans un assembly entièrement fiable qui possède l’attribut APTCA.
+- `M1` une méthode publique est déclarée dans un assembly entièrement fiable qui possède l’attribut APTCA.
 
--   `M1` appelle une méthode `M2` en dehors de `M1`d’assembly.
+- `M1` appelle une méthode `M2` en dehors de `M1`d’assembly.
 
--   `M2`d’assembly n’a pas l’attribut APTCA et, par conséquent, ne doit pas être exécuté par ou pour le compte des appelants partiellement approuvés.
+- `M2`d’assembly n’a pas l’attribut APTCA et, par conséquent, ne doit pas être exécuté par ou pour le compte des appelants partiellement approuvés.
 
- Un appelant de confiance partiel `X` peut appeler méthode `M1`, ce qui provoque `M1` pour appeler `M2`. Étant donné que `M2` n’a pas l’attribut APTCA, son appelant immédiat (`M1`) doit satisfaire une demande de liaison pour la confiance totale ; `M1` dispose d’une confiance totale et par conséquent satisfait cette vérification. Le risque de sécurité est car `X` ne contribue pas à satisfaire la demande de liaison qui protège `M2` provenant d’appelants non approuvés. Par conséquent, les méthodes avec l’attribut APTCA ne doivent pas appeler les méthodes qui n’ont pas l’attribut.
+  Un appelant de confiance partiel `X` peut appeler méthode `M1`, ce qui provoque `M1` pour appeler `M2`. Étant donné que `M2` n’a pas l’attribut APTCA, son appelant immédiat (`M1`) doit satisfaire une demande de liaison pour la confiance totale ; `M1` dispose d’une confiance totale et par conséquent satisfait cette vérification. Le risque de sécurité est car `X` ne contribue pas à satisfaire la demande de liaison qui protège `M2` provenant d’appelants non approuvés. Par conséquent, les méthodes avec l’attribut APTCA ne doivent pas appeler les méthodes qui n’ont pas l’attribut.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Si l’attribut APCTA est requis, utilisez une demande pour protéger la méthode qui appelle l’assembly de confiance totale. Les autorisations exactes à la demande vous dépend de la fonctionnalité exposée par votre méthode. S’il est possible, protégez la méthode avec une demande de confiance totale pour s’assurer que la fonctionnalité sous-jacente n’est pas exposée aux appelants partiellement approuvés. Si ce n’est pas possible, sélectionnez un jeu d’autorisations qui protègent efficacement les fonctionnalités exposées. Pour plus d’informations sur les demandes, consultez [demandes](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).

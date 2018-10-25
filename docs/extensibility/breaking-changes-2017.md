@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826490"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -59,13 +59,14 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 > [INSTALLDIR] ci-dessous fait référence au répertoire racine d’installation de Visual Studio. *VSIXInstaller.exe* sera remplir automatiquement, mais pour écrire le code de déploiement personnalisé, veuillez lire [recherche de Visual Studio](locating-visual-studio.md).
 
 * Assemblys qui ont été installés uniquement dans le GAC :
-  * Ces assemblys sont maintenant installés sous * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Ces dossiers font partie de chemins de détection du processus Visual Studio.
+  * Ces assemblys sont maintenant installés sous <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Ces dossiers font partie de chemins de détection du processus Visual Studio.
+
 * Assemblys qui ont été installés dans un chemin d’accès non détection et dans le GAC :
   * La copie dans le GAC a peut-être été retirée le programme d’installation.
   * Un *.pkgdef* fichier a été ajouté pour spécifier une entrée de base de code pour l’assembly.
 
     Exemple :
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
   * Votre code sera en mesure de trouver les assemblys principaux de Visual Studio.
   * Envisagez d’utiliser un *.pkgdef* fichier pour spécifier un chemin d’accès à vos assemblys, si nécessaire.
 * Si votre extension s’exécute en dehors du processus de Visual Studio :
-  * Prendre en compte la recherche d’assemblys principaux de Visual Studio sous * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*à l’aide du résolveur de fichier ou l’assembly de configuration.
+  * Prendre en compte la recherche d’assemblys principaux de Visual Studio sous <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*à l’aide du résolveur de fichier ou l’assembly de configuration.
 
 ## <a name="change-reduce-registry-impact"></a>Modification : Réduire l’impact sur le Registre
 

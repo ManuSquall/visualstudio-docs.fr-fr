@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879114"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
   
  **Prérequis**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Pour créer une **session de performance**, exécutez l’**Assistant Performance** ou créez une session manuellement. Une fois la **session de performance** créée, **session de performance** s’affiche dans l’**Explorateur de performances**.  
+  Pour créer une **session de performance**, exécutez l’**Assistant Performance** ou créez une session manuellement. Une fois la **session de performance** créée, **session de performance** s’affiche dans l’**Explorateur de performances**.  
   
- Pour afficher les propriétés d’une **session de performance**, sélectionnez son nom dans l’**Explorateur de performances**, cliquez dessus avec le bouton droit, puis sélectionnez **Propriétés**.  
+  Pour afficher les propriétés d’une **session de performance**, sélectionnez son nom dans l’**Explorateur de performances**, cliquez dessus avec le bouton droit, puis sélectionnez **Propriétés**.  
   
- La session de performance présente les pages de propriétés suivantes :  
+  La session de performance présente les pages de propriétés suivantes :  
   
 ## <a name="general"></a>Général  
  Ces paramètres vous permettent de sélectionner la méthode de profilage, d’ajouter la collection d’objets .NET et les données de durée de vie, ainsi que de spécifier l’emplacement des rapports par défaut et les conventions d’affectation de noms.  
@@ -59,17 +59,17 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
 ## <a name="sampling"></a>Échantillonnage  
  Ces paramètres vous permettent de sélectionner l’événement d’échantillon et l’intervalle d’échantillonnage en cas d’utilisation de l’échantillonnage comme méthode de profilage. Un événement d’échantillon est utilisé pour collecter les données de profilage à l’intervalle spécifié. Par exemple, pour l’événement d’échantillon Cycles d’horloge, si l’intervalle d’échantillonnage a la valeur 10 000 000, les données de profilage sont collectées chaque fois que 10 millions de cycles d’horloge sont effectués. Les quatre types d’événements d’échantillons suivants sont disponibles :  
   
--   Cycles d’horloge : pour les problèmes liés à l’unité centrale  
+- Cycles d’horloge : pour les problèmes liés à l’unité centrale  
   
--   Erreurs de page : pour les problèmes liés à la mémoire  
+- Erreurs de page : pour les problèmes liés à la mémoire  
   
--   Appels système : pour les problèmes liés à l’E/S  
+- Appels système : pour les problèmes liés à l’E/S  
   
--   Compteurs de performance : pour les problèmes de performances de bas niveau  
+- Compteurs de performance : pour les problèmes de performances de bas niveau  
   
--   Il est possible de spécifier des événements d’échantillon supplémentaires sur la base des compteurs de performance disponibles.  
+- Il est possible de spécifier des événements d’échantillon supplémentaires sur la base des compteurs de performance disponibles.  
   
- Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
+  Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
   
 ## <a name="binary"></a>Binaire  
  Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous profilez My.DLL et que vous choisissez de ne pas déplacer le fichier binaire instrumenté, une copie de sauvegarde de My.DLL nommée My.Orig.DLL est créée. Ensuite, My.DLL est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.  

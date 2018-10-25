@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938472"
 ---
 # <a name="historical-debugging"></a>Débogage d'historique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Nous partons du principe que la valeur attendue de `resultInt` après avoir appelé `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous partons également du principe que vous ne voyez pas le bogue dans `AddInt()`). Mais le résultat est bien 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d'historique pour simplifier et accélérer l'identification du bogue. Voici comment :  
   
-1.  Dans Outils / Options / IntelliTrace / Général, assurez-vous qu'IntelliTrace est activé et sélectionnez l'option Événements IntelliTrace et informations d'appel. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).  
+1. Dans Outils / Options / IntelliTrace / Général, assurez-vous qu'IntelliTrace est activé et sélectionnez l'option Événements IntelliTrace et informations d'appel. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).  
   
-2.  Définissez un point d'arrêt sur la ligne `Console.WriteLine(resultInt);`.  
+2. Définissez un point d'arrêt sur la ligne `Console.WriteLine(resultInt);`.  
   
-3.  Démarrez le débogage. Le code s'exécute jusqu'au point d'arrêt. Dans le **variables locales** fenêtre, vous pouvez voir que la valeur de `resultInt` est 44.  
+3. Démarrez le débogage. Le code s'exécute jusqu'au point d'arrêt. Dans le **variables locales** fenêtre, vous pouvez voir que la valeur de `resultInt` est 44.  
   
-4.  Ouvrez le **outils de Diagnostic** fenêtre (**déboguer / afficher les outils de Diagnostic**). La fenêtre de code doit ressembler à ce qui suit :  
+4. Ouvrez le **outils de Diagnostic** fenêtre (**déboguer / afficher les outils de Diagnostic**). La fenêtre de code doit ressembler à ce qui suit :  
   
-     ![Fenêtre de code sur le point d’arrêt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Fenêtre de code sur le point d’arrêt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Vous devez voir une double flèche en regard de la marge de gauche, juste au-dessus du point d'arrêt. Cette zone est appelée « marge de navigation » et est utilisée pour le débogage d'historique. Cliquez sur la flèche.  
+5. Vous devez voir une double flèche en regard de la marge de gauche, juste au-dessus du point d'arrêt. Cette zone est appelée « marge de navigation » et est utilisée pour le débogage d'historique. Cliquez sur la flèche.  
   
-     Dans la fenêtre de code, vous devez voir que la ligne de code précédente (`int resultInt = AddIterative(testInt);`) est de couleur rose. Au-dessus de la fenêtre, vous devez voir un message indiquant que vous êtes en mode de débogage d'historique.  
+    Dans la fenêtre de code, vous devez voir que la ligne de code précédente (`int resultInt = AddIterative(testInt);`) est de couleur rose. Au-dessus de la fenêtre, vous devez voir un message indiquant que vous êtes en mode de débogage d'historique.  
   
-     La fenêtre de code doit maintenant ressembler à ceci :  
+    La fenêtre de code doit maintenant ressembler à ceci :  
   
-     ![fenêtre de code en mode débogage d’historique](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![fenêtre de code en mode débogage d’historique](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Maintenant que vous pouvez entrer dans le `AddAll()` (méthode) (**F11**, ou le **pas à pas détaillé** bouton dans la marge de navigation. Avancez (**F10**, ou **accédez à l’appel suivant** dans la marge de navigation. Le trait rose est désormais sur la ligne `j = AddInt(j);`. **F10** dans ce cas ne pas d’accéder à la ligne de code suivante. En fait, vous accédez à l'appel de fonction suivant. Le débogage d'historique permet de naviguer d'un appel à l'autre. Il ignore les lignes de code qui n'incluent pas d'appel de fonction.  
+6. Maintenant que vous pouvez entrer dans le `AddAll()` (méthode) (**F11**, ou le **pas à pas détaillé** bouton dans la marge de navigation. Avancez (**F10**, ou **accédez à l’appel suivant** dans la marge de navigation. Le trait rose est désormais sur la ligne `j = AddInt(j);`. **F10** dans ce cas ne pas d’accéder à la ligne de code suivante. En fait, vous accédez à l'appel de fonction suivant. Le débogage d'historique permet de naviguer d'un appel à l'autre. Il ignore les lignes de code qui n'incluent pas d'appel de fonction.  
   
-7.  Maintenant, effectuez un pas à pas détaillé de la méthode `AddInt()`. Vous devez voir immédiatement le bogue dans ce code.  
+7. Maintenant, effectuez un pas à pas détaillé de la méthode `AddInt()`. Vous devez voir immédiatement le bogue dans ce code.  
   
- Cette procédure ne présente que succinctement ce que vous pouvez faire avec le débogage d'historique. Pour en savoir plus sur les différents paramètres et les effets des différents boutons dans la marge de navigation, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
+   Cette procédure ne présente que succinctement ce que vous pouvez faire avec le débogage d'historique. Pour en savoir plus sur les différents paramètres et les effets des différents boutons dans la marge de navigation, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
 
 

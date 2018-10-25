@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtual | Documents Microsoft
+title: IDiaSymbol::get_virtual | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9952d50c9d990f2c84a5a46dd4786477aebebc60
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bfd5542895111dc9e394a20ad02f27f56e894308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871704"
 ---
 # <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
 Récupère un indicateur qui spécifie si la fonction est virtuelle.  
@@ -34,7 +34,7 @@ HRESULT get_virtual (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si la fonction virtuelle ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si la fonction est virtuel ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904038"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
 ###  <a name="coupleProjects"></a> Associer le projet de test au projet DLL  
   
-1.  Ajoutez le projet DLL aux références de projet du projet de test :  
+1. Ajoutez le projet DLL aux références de projet du projet de test :  
   
-    1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes**, **Structure et références**.  
+   1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes**, **Structure et références**.  
   
-         ![Propriétés du projet C&#43;&#43; &#45; Framework et références](../test/media/utecpp08.png "UteCpp08")  
+        ![Propriétés du projet C&#43;&#43; &#45; Framework et références](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Choisissez **Ajouter une nouvelle référence**.  
+   2.  Choisissez **Ajouter une nouvelle référence**.  
   
-         Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.  
+        Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.  
   
-         ![Propriétés du projet C&#43;&#43; &#45; Ajouter une nouvelle référence](../test/media/utecpp09.png "UteCpp09")  
+        ![Propriétés du projet C&#43;&#43; &#45; Ajouter une nouvelle référence](../test/media/utecpp09.png "UteCpp09")  
   
-2.  Dans le fichier .cpp de test unitaire principal, incluez le fichier .h du code de la DLL :  
+2. Dans le fichier .cpp de test unitaire principal, incluez le fichier .h du code de la DLL :  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Ajoutez un test de base qui utilise la fonction exportée :  
+3. Ajoutez un test de base qui utilise la fonction exportée :  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Générez la solution.  
+4. Générez la solution.  
   
-     Le nouveau test s'affiche dans l'Explorateur de tests.  
+    Le nouveau test s'affiche dans l'Explorateur de tests.  
   
-5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+5. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
-     ![Explorateur de tests unitaires &#45; Réussite du test de base](../test/media/utecpp10.png "UteCpp10")  
+    ![Explorateur de tests unitaires &#45; Réussite du test de base](../test/media/utecpp10.png "UteCpp10")  
   
- Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
+   Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
   
 ###  <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir  
   

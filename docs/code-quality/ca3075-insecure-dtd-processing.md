@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b83fbf98143511bac19bef1fb2b528c71517a55f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823007"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -26,10 +27,12 @@ ms.locfileid: "45546783"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Si vous utilisez des instances de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.
+
+Si vous utilisez des instances de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.
 
 ## <a name="rule-description"></a>Description de la règle
- Un *définition de Type de Document (DTD)* est une des deux façons pour un analyseur XML de déterminer la validité d’un document, tel que défini par le [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs de menaces de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) éventuelles, qui peuvent entraîner des attaques [par déni de service](/dotnet/framework/wcf/feature-details/denial-of-service) . Cette règle se déclenche quand :
+
+Une *définition de type de document (DTD)* est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs de menaces de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) éventuelles, qui peuvent entraîner des attaques [par déni de service](/dotnet/framework/wcf/feature-details/denial-of-service) . Cette règle se déclenche quand :
 
 - DtdProcessing est activé sur l’instance de <xref:System.Xml.XmlReader> , ce qui résout les entités XML externes à l’aide de <xref:System.Xml.XmlUrlResolver>.
 
@@ -43,7 +46,7 @@ ms.locfileid: "45546783"
 
 - <xref:System.Xml.XmlReader> est créé avec les paramètres par défaut non sécurisées ou des valeurs.
 
- Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.
+Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -55,23 +58,24 @@ ms.locfileid: "45546783"
 
 - Vérifiez que la propriété <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> est affectée depuis une source fiable.
 
- .NET 3.5 et versions antérieures
+**.NET 3.5 et versions antérieures**
 
 - Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant à la propriété <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> la valeur **true** .
 
 - La classe XmlTextReader a une demande d’héritage de confiance totale.
 
- .NET 4 et versions ultérieures
+**.NET 4 et versions ultérieures**
 
 - Évitez d’activer DtdProcessing si vous utilisez des sources non fiables en définissant le <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> propriété **Prohibit** ou **ignorer**.
 
 - Vérifiez que la méthode Load() accepte une instance de XmlReader dans tous les cas InnerXml.
 
 > [!NOTE]
->  Cette règle peut signaler des faux positifs sur certaines instances de XmlSecureResolver valides. Nous travaillons sur la résolution de ce problème pour le milieu de l’année 2016.
+> Cette règle peut signaler des faux positifs sur certaines instances de XmlSecureResolver valides.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Sauf si vous êtes sûr que l’entrée provient d’une source fiable, ne supprimez aucune règle de cet avertissement.
+
+Sauf si vous êtes sûr que l’entrée provient d’une source fiable, ne supprimez aucune règle de cet avertissement.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

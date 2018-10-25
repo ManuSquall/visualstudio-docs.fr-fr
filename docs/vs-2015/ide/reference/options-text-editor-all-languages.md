@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884171"
 ---
 # <a name="options-text-editor-all-languages"></a>Options, Éditeur de texte, Tous les langages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ Cette boîte de dialogue vous permet de modifier le comportement par défaut de 
  Appliquer les commandes Couper ou Copier aux lignes vides en l'absence de sélection  
  Cette option définit le comportement de l’éditeur lorsque vous placez le point d’insertion sur une ligne vide, ne sélectionnez rien, puis effectuez une action Copier ou Couper.  
   
--   Lorsque cette option est sélectionnée, la ligne vide est copiée ou coupée. Si vous effectuez ensuite une action Coller, une nouvelle ligne vide est insérée.  
+- Lorsque cette option est sélectionnée, la ligne vide est copiée ou coupée. Si vous effectuez ensuite une action Coller, une nouvelle ligne vide est insérée.  
   
--   Lorsque cette option est désactivée, la commande Couper supprime les lignes vides. Toutefois, les données figurant dans le Presse-papiers sont conservées. Par conséquent, si vous utilisez ensuite la commande Coller, le contenu le plus récemment copié dans le Presse-papiers est collé. Si vous n'avez rien copié auparavant, rien n'est collé.  
+- Lorsque cette option est désactivée, la commande Couper supprime les lignes vides. Toutefois, les données figurant dans le Presse-papiers sont conservées. Par conséquent, si vous utilisez ensuite la commande Coller, le contenu le plus récemment copié dans le Presse-papiers est collé. Si vous n'avez rien copié auparavant, rien n'est collé.  
   
- Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une ligne n’est pas vide. Si rien n'est sélectionné, toute la ligne est copiée ou coupée. Si vous effectuez ensuite une action Coller, le texte de la ligne toute entière et son caractère de ligne de fin sont collés.  
+  Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une ligne n’est pas vide. Si rien n'est sélectionné, toute la ligne est copiée ou coupée. Si vous effectuez ensuite une action Coller, le texte de la ligne toute entière et son caractère de ligne de fin sont collés.  
   
 > [!TIP]
 >  Pour afficher les indicateurs d’espaces, de tabulations et de fins de ligne et distinguer ainsi les lignes en retrait de celles qui sont complètement vides, sélectionnez **Avancé** dans le menu **Edition**, puis choisissez **Afficher les espaces blancs**.  

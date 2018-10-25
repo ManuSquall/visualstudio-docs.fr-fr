@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Documents Microsoft
+title: IDebugExpressionContext2::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84ac767c8e2cd53045dec9921f6d90300f1a87e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5664710d69b8c6d7af315de600fd1fcd27a2b36d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873524"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 Récupère le nom du contexte d’évaluation.  
@@ -47,7 +47,7 @@ int GetName(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le nom est la description de ce contexte d’évaluation. Il est généralement un élément qui peut être analysé par un évaluateur d’expression qui fait référence à ce contexte d’évaluation exacte. Par exemple, en C++ le nom est comme suit :  
+ Le nom est la description de ce contexte d’évaluation. Il s’agit généralement de quelque chose qui peut être analysé par un évaluateur d’expression qui fait référence à ce contexte d’évaluation exacte. Par exemple, dans C++ le nom est comme suit :  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  

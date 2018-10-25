@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906921"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Structure VSPackage (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Le Kit de développement du Package du contrôle de Source fournit des directive
   
  La sémantique de VSPackage est les suivantes :  
   
--   Interface à implémenter car elle est un VSPackage (le `IVsPackage` interface)  
+- Interface à implémenter car elle est un VSPackage (le `IVsPackage` interface)  
   
--   Implémentation de la commande de l’interface utilisateur (fichier .vsct et l’implémentation de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface)  
+- Implémentation de la commande de l’interface utilisateur (fichier .vsct et l’implémentation de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface)  
   
--   L’inscription du VSPackage avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- L’inscription du VSPackage avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- Le VSPackage de contrôle de code source doit communiquer avec ces autres [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entités :  
+  Le VSPackage de contrôle de code source doit communiquer avec ces autres [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entités :  
   
--   Projets  
+- Projets  
   
--   Éditeurs  
+- Éditeurs  
   
--   Solutions  
+- Solutions  
   
--   Windows  
+- Windows  
   
--   La table de document en cours d’exécution  
+- La table de document en cours d’exécution  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Services de l’environnement Visual Studio qui peuvent être consommés  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

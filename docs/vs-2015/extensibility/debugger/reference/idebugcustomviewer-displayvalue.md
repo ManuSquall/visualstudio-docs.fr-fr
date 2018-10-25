@@ -17,12 +17,12 @@ ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c653e1c199e1007f62fd423f646042e629a2318
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a96184b993a9ff2350e6424149ee3f585fbd2330
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865022"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ int DisplayValue(
  [in] ID de visionneuses personnalisées qui prennent en charge plusieurs types.  
   
  `pHostServices`  
- [in] Réservé. Toujours défini sur null.  
+ [in] Réservée. Toujours défini sur null.  
   
  `pDebugProperty`  
  [in] Interface qui peut être utilisé pour récupérer la valeur à afficher.  

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930204"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Créer un modèle de connectivité de données métiers
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint peut contenir qu’un seul modèle. Pour plus d’informations, consultez [intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -57,13 +57,13 @@ ms.locfileid: "36326032"
 ## <a name="add-an-existing-model"></a>Ajouter un modèle existant
  Vous pouvez importer un modèle qui a été créé à l’aide d’autres outils tels que SharePoint Designer. Vous pouvez choisir d’importer un modèle existant à votre projet dans les situations suivantes :  
   
--   Pour personnaliser un modèle qui est déjà déployé dans une batterie de serveurs SharePoint.  
+- Pour personnaliser un modèle qui est déjà déployé dans une batterie de serveurs SharePoint.  
   
--   Pour empaqueter et déployer un modèle existant sur plusieurs batteries de serveurs SharePoint.  
+- Pour empaqueter et déployer un modèle existant sur plusieurs batteries de serveurs SharePoint.  
   
- Dans les deux cas, les systèmes métier définies dans le modèle que vous importez ne sont pas affectées et continuent de fonctionner comme prévu. Pour ajouter un modèle existant à un projet SharePoint, utilisez Visual Studio **ajouter un élément existant** boîte de dialogue. Pour plus d’informations, consultez [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  Dans les deux cas, les systèmes métier définies dans le modèle que vous importez ne sont pas affectées et continuent de fonctionner comme prévu. Pour ajouter un modèle existant à un projet SharePoint, utilisez Visual Studio **ajouter un élément existant** boîte de dialogue. Pour plus d’informations, consultez [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
- Vous pouvez ajouter un système métier de l’assembly de type .NET Framework au modèle importé en sélectionnant une option dans le **LobSystem d’assembly .NET ajouter**. Cela vous permet à écrire du code personnalisé et utiliser un concepteur pour définir les métadonnées du modèle importé.  
+  Vous pouvez ajouter un système métier de l’assembly de type .NET Framework au modèle importé en sélectionnant une option dans le **LobSystem d’assembly .NET ajouter**. Cela vous permet à écrire du code personnalisé et utiliser un concepteur pour définir les métadonnées du modèle importé.  
   
 ## <a name="related-topics"></a>Rubriques connexes
   

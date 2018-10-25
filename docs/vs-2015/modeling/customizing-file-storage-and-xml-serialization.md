@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867442"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
 ## <a name="understanding-monikers"></a>Monikers de présentation  
  Monikers sont utilisés pour représenter des références croisées entre les différentes parties des fichiers de modèle et de diagramme. Ils sont également utilisés dans le `.diagram` fichier pour faire référence aux nœuds dans le fichier de modèle. Il existe deux formes de moniker :  
   
--   *Les monikers ID* citer le GUID de l’élément cible. Exemple :  
+- *Les monikers ID* citer le GUID de l’élément cible. Exemple :  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Qualifié monikers clés* identifier l’élément cible par la valeur d’une propriété de domaine désignée appelée la clé de moniker. Le moniker de l’élément cible est préfixé par le moniker de son élément parent dans l’arborescence de relations d’incorporation.  
+- *Qualifié monikers clés* identifier l’élément cible par la valeur d’une propriété de domaine désignée appelée la clé de moniker. Le moniker de l’élément cible est préfixé par le moniker de son élément parent dans l’arborescence de relations d’incorporation.  
   
-     Les exemples suivants sont effectuées à partir d’une solution DSL dans lequel il est une classe de domaine nommée Album, ce qui a une relation d’incorporation à un domaine nommé chanson de classe :  
+   Les exemples suivants sont effectuées à partir d’une solution DSL dans lequel il est une classe de domaine nommée Album, ce qui a une relation d’incorporation à un domaine nommé chanson de classe :  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Les monikers de clé qualifiés seront utilisés si la classe cible possède une propriété de domaine pour lequel l’option **est la clé de Moniker** a la valeur `true` dans **comportement de sérialisation Xml**. Dans l’exemple, cette option est définie pour les propriétés de domaine nommées « Title » dans les classes de domaine « Album » et « Morceau ».  
+   Les monikers de clé qualifiés seront utilisés si la classe cible possède une propriété de domaine pour lequel l’option **est la clé de Moniker** a la valeur `true` dans **comportement de sérialisation Xml**. Dans l’exemple, cette option est définie pour les propriétés de domaine nommées « Title » dans les classes de domaine « Album » et « Morceau ».  
   
- Monikers clés qualifiés sont plus faciles à lire que les monikers ID. Si vous envisagez le code XML de vos fichiers de modèle pour être lu par des personnes, envisagez d’utiliser des monikers clés qualifiés. Toutefois, il est possible pour l’utilisateur de définir plusieurs éléments pour que la même clé de moniker. Clés dupliquées peut entraîner la recharge du fichier ne pas correctement. Par conséquent, si vous définissez une classe de domaine qui est référencée à l’aide de monikers clés qualifiés, vous devez envisager des façons d’empêcher l’utilisateur d’enregistrer un fichier qui a des monikers en double.  
+  Monikers clés qualifiés sont plus faciles à lire que les monikers ID. Si vous envisagez le code XML de vos fichiers de modèle pour être lu par des personnes, envisagez d’utiliser des monikers clés qualifiés. Toutefois, il est possible pour l’utilisateur de définir plusieurs éléments pour que la même clé de moniker. Clés dupliquées peut entraîner la recharge du fichier ne pas correctement. Par conséquent, si vous définissez une classe de domaine qui est référencée à l’aide de monikers clés qualifiés, vous devez envisager des façons d’empêcher l’utilisateur d’enregistrer un fichier qui a des monikers en double.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Pour définir une classe de domaine devant être référencé par les monikers ID  
   

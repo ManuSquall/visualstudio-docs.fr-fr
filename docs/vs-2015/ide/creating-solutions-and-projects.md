@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893700"
 ---
 # <a name="creating-solutions-and-projects"></a>Création de projets et de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour g
   
 #### <a name="to-create-an-empty-solution"></a>Pour créer une solution vide  
   
-1.  Dans le menu **Fichier** , cliquez sur **Nouveau** , puis cliquez sur **Nouveau projet**.  
+1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis cliquez sur **Nouveau projet**.  
   
-2.  Dans le volet gauche, sélectionnez **Installé**, **Autres types de projets**, puis **Solutions Visual Studio** dans la liste développée.  
+2. Dans le volet gauche, sélectionnez **Installé**, **Autres types de projets**, puis **Solutions Visual Studio** dans la liste développée.  
   
-3.  Dans le volet central, sélectionnez **Nouvelle Solution**.  
+3. Dans le volet central, sélectionnez **Nouvelle Solution**.  
   
-4.  Définissez les valeurs **Nom** et **Emplacement** de votre solution, puis cliquez sur **OK**.  
+4. Définissez les valeurs **Nom** et **Emplacement** de votre solution, puis cliquez sur **OK**.  
   
- Après avoir créé une solution vide, vous pouvez lui ajouter des projets ou éléments nouveaux ou existants en cliquant sur **Ajouter un nouvel élément** ou **Ajouter un élément existant** dans le menu **Projet** .  
+   Après avoir créé une solution vide, vous pouvez lui ajouter des projets ou éléments nouveaux ou existants en cliquant sur **Ajouter un nouvel élément** ou **Ajouter un élément existant** dans le menu **Projet** .  
   
 ### <a name="deleting-solutions"></a>Suppression de solutions  
  Vous pouvez supprimer définitivement une solution, mais pas à l'aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Avant de supprimer une solution, déplacez les projets que vous pourriez vouloir réutiliser vers une autre solution. Utilisez ensuite l'Explorateur de fichiers pour supprimer le répertoire qui contient les fichiers solution .sln et .suo.  

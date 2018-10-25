@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917548"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
 #### <a name="to-add-a-reference"></a>Pour ajouter une référence  
   
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud Références et sélectionnez **Ajouter une référence**.  
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud Références et sélectionnez **Ajouter une référence**.  
   
-2.  Spécifiez les références à ajouter, puis choisissez le bouton **OK**.  
+2. Spécifiez les références à ajouter, puis choisissez le bouton **OK**.  
   
- Le **Gestionnaire de références** s’ouvre et affiche la liste des références disponibles par groupe. Le type de projet détermine quel groupe parmi les suivants s'affiche :  
+   Le **Gestionnaire de références** s’ouvre et affiche la liste des références disponibles par groupe. Le type de projet détermine quel groupe parmi les suivants s'affiche :  
   
 -   Assemblys, avec les sous-groupes Framework et Extensions.  
   
@@ -69,29 +69,29 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
  L'onglet Assemblys comprend deux sous-onglets :  
   
-1.  Framework : répertorie tous les assemblys qui constituent le Framework ciblé.  
+1. Framework : répertorie tous les assemblys qui constituent le Framework ciblé.  
   
-    -   Les assemblys publiés se trouvent dans le Framework complet et sont énumérés dans la liste de Framework lorsque votre projet cible un profil de Framework ciblé. Les assemblys sont publiés en gris pour les différencier de ceux qui existent dans le profil de Framework ciblé du projet. Par exemple, si un projet cible le client .NET Framework 4, la liste Framework indique les assemblys publiés à partir de .NET Framework 4. Quand un utilisateur ajoute un assembly publié, cet utilisateur est averti qu’une fois la boîte de dialogue **Gestionnaire de références** fermée le projet sera reciblé vers .NET Framework 4 et l’assembly publié sera ajouté.  
+   -   Les assemblys publiés se trouvent dans le Framework complet et sont énumérés dans la liste de Framework lorsque votre projet cible un profil de Framework ciblé. Les assemblys sont publiés en gris pour les différencier de ceux qui existent dans le profil de Framework ciblé du projet. Par exemple, si un projet cible le client .NET Framework 4, la liste Framework indique les assemblys publiés à partir de .NET Framework 4. Quand un utilisateur ajoute un assembly publié, cet utilisateur est averti qu’une fois la boîte de dialogue **Gestionnaire de références** fermée le projet sera reciblé vers .NET Framework 4 et l’assembly publié sera ajouté.  
   
-    -   Les projets pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les assemblys du [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ciblé par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au Framework complet. Par conséquent, l'onglet Framework n'énumère pas les assemblys à partir du Framework et affiche à la place le message suivant : « Tous les assemblys .NET Framework sont déjà référencés. Utilisez l'Explorateur d'objets pour explorer les références dans le Framework. » Pour les projets d'application de bureau, l'onglet Framework énumère les assemblys du .NET Framework ciblé. Par ailleurs, l'utilisateur doit ajouter les références nécessaires à l'application.  
+   -   Les projets pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les assemblys du [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ciblé par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au Framework complet. Par conséquent, l'onglet Framework n'énumère pas les assemblys à partir du Framework et affiche à la place le message suivant : « Tous les assemblys .NET Framework sont déjà référencés. Utilisez l'Explorateur d'objets pour explorer les références dans le Framework. » Pour les projets d'application de bureau, l'onglet Framework énumère les assemblys du .NET Framework ciblé. Par ailleurs, l'utilisateur doit ajouter les références nécessaires à l'application.  
   
-2.  Les extensions répertorient tous les assemblys que les fournisseurs externes de composants et les contrôles ont développés pour étendre le Framework ciblé. Selon l'objectif de l'application utilisateur, ces assemblys peuvent être nécessaires.  
+2. Les extensions répertorient tous les assemblys que les fournisseurs externes de composants et les contrôles ont développés pour étendre le Framework ciblé. Selon l'objectif de l'application utilisateur, ces assemblys peuvent être nécessaires.  
   
-    -   Les extensions sont remplies en énumérant les assemblys stockés dans les emplacements suivants :  
+   -   Les extensions sont remplies en énumérant les assemblys stockés dans les emplacements suivants :  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         Par exemple, si un projet cible le .NET Framework 4 sur un ordinateur 32 bits, les extensions énumèrent les assemblys qui sont stockés dans \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ et \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\.  
+        Par exemple, si un projet cible le .NET Framework 4 sur un ordinateur 32 bits, les extensions énumèrent les assemblys qui sont stockés dans \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ et \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\.  
   
- Certains composants dans la liste peuvent ne pas être indiqués, selon la version [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de votre projet. Cela peut se produire dans les conditions suivantes :  
+   Certains composants dans la liste peuvent ne pas être indiqués, selon la version [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de votre projet. Cela peut se produire dans les conditions suivantes :  
   
 -   Un composant qui utilise une version récente du .NET Framework est incompatible avec un projet qui cible une version antérieure du .NET Framework.  
   
@@ -108,35 +108,35 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Pour afficher un assembly dans la boîte de dialogue Ajouter une référence  
   
--   Déplacez ou copiez l'assembly vers l'un des emplacements suivants :  
+- Déplacez ou copiez l'assembly vers l'un des emplacements suivants :  
   
-    -   Le répertoire de projet actuel (vous pouvez rechercher ces assemblys via l’onglet **Parcourir** ).  
+  - Le répertoire de projet actuel (vous pouvez rechercher ces assemblys via l’onglet **Parcourir** ).  
   
-    -   Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys à l’aide de l’onglet **Projets**)  
+  - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys à l’aide de l’onglet **Projets**)  
   
-     \- ou -  
+    \- ou -  
   
--   Définissez une clé de Registre qui spécifie l'emplacement des assemblys à afficher :  
+- Définissez une clé de Registre qui spécifie l'emplacement des assemblys à afficher :  
   
-     Sur un système d'exploitation 32 bits, ajoutez l'une des clés de Registre suivantes :  
+   Sur un système d'exploitation 32 bits, ajoutez l'une des clés de Registre suivantes :  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     Sur un système d'exploitation 64 bits, ajoutez l'une des clés de Registre suivantes dans une ruche du Registre 32 bits  :  
+    Sur un système d'exploitation 64 bits, ajoutez l'une des clés de Registre suivantes dans une ruche du Registre 32 bits  :  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     *VersionMinimum* représente la version la plus ancienne de .NET Framework qui peut être utilisée. Si *VersionMinimum* a la valeur v3.0, les dossiers spécifiés dans AssemblyFoldersEx s’appliquent aux projets qui ciblent .NET Framework 3.0 et les versions ultérieures.  
+    *VersionMinimum* représente la version la plus ancienne de .NET Framework qui peut être utilisée. Si *VersionMinimum* a la valeur v3.0, les dossiers spécifiés dans AssemblyFoldersEx s’appliquent aux projets qui ciblent .NET Framework 3.0 et les versions ultérieures.  
   
-     *AssemblyLocation* désigne le répertoire des assemblys que vous souhaitez afficher dans la boîte de dialogue **Ajouter une référence** (par exemple, C:\MyAssemblies\\).  
+    *AssemblyLocation* désigne le répertoire des assemblys que vous souhaitez afficher dans la boîte de dialogue **Ajouter une référence** (par exemple, C:\MyAssemblies\\).  
   
-     Créer la clé de Registre sous le nœud HKEY_LOCAL_MACHINE permet à tous les utilisateurs de voir les assemblys à l’emplacement spécifié dans la boîte de dialogue **Ajouter une référence**. Créer la clé de Registre sous le nœud HKEY_CURRENT_USER affecte uniquement le paramètre pour l'utilisateur actuel.  
+    Créer la clé de Registre sous le nœud HKEY_LOCAL_MACHINE permet à tous les utilisateurs de voir les assemblys à l’emplacement spécifié dans la boîte de dialogue **Ajouter une référence**. Créer la clé de Registre sous le nœud HKEY_CURRENT_USER affecte uniquement le paramètre pour l'utilisateur actuel.  
   
-     Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.NET**. Si ce n’est pas le cas, vérifiez que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.  
+    Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.NET**. Si ce n’est pas le cas, vérifiez que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.  
   
 ## <a name="com-tab"></a>Onglet COM  
  L'onglet COM répertorie tous les composants COM pouvant être référencés. Si vous souhaitez ajouter une référence à une DLL COM inscrite qui contient un manifeste interne, annulez d'abord l'inscription de la DLL. Sinon, Visual Studio ajoute la référence d'assembly comme contrôle ActiveX, et non comme DLL native.  
@@ -159,11 +159,11 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
  Vous pouvez générer un fichier WinMD dans Visual Studio de deux façons :  
   
--   **Projets managés d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : les projets d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] peuvent générer les binaires de WinMD en définissant Propriétés de projet &#124; Type de sortie = fichier WinMD. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend des espaces de noms A.B et A.B.C, les étiquettes possibles pour le WinMD généré sont A.winmd et A.B.winmd. Si un utilisateur affiche une valeur Propriétés de projet &#124; Nom d’assembly ou Propriétés de projet &#124; Espace de noms qui est disjointe de l’ensemble d’espaces de noms du projet ou s’il n’y a aucun espace de noms de sur-ensemble dans un projet, un avertissement de construction est généré : « A.winmd » n’est pas un nom de fichier de .winmd valide de cet assembly. Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n'existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l'exécution. Dans cet assembly, le plus petit espace de noms courant est « CSWSClassLibrary1 ». Un projet Visual Basic ou Visual C# de bureau peut uniquement utiliser des WinMDs générés à l'aide des kits SDK [!INCLUDE[win8](../includes/win8-md.md)], appelés WinMDs internes, et ne peut pas générer de WinMD.  
+- **Projets managés d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : les projets d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] peuvent générer les binaires de WinMD en définissant Propriétés de projet &#124; Type de sortie = fichier WinMD. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend des espaces de noms A.B et A.B.C, les étiquettes possibles pour le WinMD généré sont A.winmd et A.B.winmd. Si un utilisateur affiche une valeur Propriétés de projet &#124; Nom d’assembly ou Propriétés de projet &#124; Espace de noms qui est disjointe de l’ensemble d’espaces de noms du projet ou s’il n’y a aucun espace de noms de sur-ensemble dans un projet, un avertissement de construction est généré : « A.winmd » n’est pas un nom de fichier de .winmd valide de cet assembly. Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n'existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l'exécution. Dans cet assembly, le plus petit espace de noms courant est « CSWSClassLibrary1 ». Un projet Visual Basic ou Visual C# de bureau peut uniquement utiliser des WinMDs générés à l'aide des kits SDK [!INCLUDE[win8](../includes/win8-md.md)], appelés WinMDs internes, et ne peut pas générer de WinMD.  
   
--   **Projets d’application au format natif [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.  
+- **Projets d’application au format natif [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.  
   
- L'onglet Windows comprend deux sous-groupes.  
+  L'onglet Windows comprend deux sous-groupes.  
   
 ### <a name="core-subgroup"></a>Sous-groupe Principal  
  Le sous-groupe Principal répertorie tous les WinMDs (pour les éléments Windows Runtime) dans le kit SDK de la version Windows ciblée.  

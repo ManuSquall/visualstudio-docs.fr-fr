@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842233"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texte de l’interface utilisateur et l’aide de Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> La terminologie et les textes d’interface utilisateur  
@@ -315,15 +315,15 @@ ms.locfileid: "39511781"
   
  Cette solution sur les hypothèses quatre qui pourrait provoquer des bogues :  
   
--   Bouton d’aide de la boîte de dialogue est **IDHELP** (9).  
+- Bouton d’aide de la boîte de dialogue est **IDHELP** (9).  
   
--   La boîte de dialogue semble correcte lorsque le bouton aide est masqué.  
+- La boîte de dialogue semble correcte lorsque le bouton aide est masqué.  
   
--   La boîte de dialogue ne remplace pas sa fonction winproc.  
+- La boîte de dialogue ne remplace pas sa fonction winproc.  
   
--   La boîte de dialogue n’est pas incorporé à l’intérieur d’une autre boîte de dialogue.  
+- La boîte de dialogue n’est pas incorporé à l’intérieur d’une autre boîte de dialogue.  
   
- Si votre boîte de dialogue se trouve dans msenv et n’utilise pas **VBDialogBoxParam**, parti **VBDialogBoxParam** avant d’implémenter votre propre gestionnaire.  
+  Si votre boîte de dialogue se trouve dans msenv et n’utilise pas **VBDialogBoxParam**, parti **VBDialogBoxParam** avant d’implémenter votre propre gestionnaire.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Boîtes de dialogue créées via d’autres packages  
  Vous pouvez implémenter votre propre solution pour les boîtes de dialogue qui résident en dehors de msenv. Pour une classe de boîte de dialogue partagé dans votre VSPackage, envisagez de déplacer le bouton à la barre de titre ou l’implémentation d’un gestionnaire sur chaque boîte de dialogue. Le code suivant est un squelette d’une implémentation pour vous aider à bien démarrer :  

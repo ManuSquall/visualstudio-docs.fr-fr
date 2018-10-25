@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921481"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Utiliser le volet Compteurs dans la vue Graphiques et la vue Tables
 
@@ -54,7 +54,7 @@ Le volet des compteurs fournit les fonctionnalités suivantes :
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Ajouter d’autres compteurs de performances à un graphique dans la vue Graphiques :** dans le volet **Compteurs**, vous pouvez ajouter différents types de données à un graphique de test de charge en y rajoutant des compteurs de performances.|-   [Guide pratique : Ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Analyser les violations des seuils spécifiés dans le test de charge :** le volet **Compteurs** affiche des icônes représentant les violations de seuil, que vous pouvez ensuite ajouter aux tables et aux graphiques pour une analyse plus approfondie.|-   [Guide pratique : Analyser les violations de seuils dans le volet Compteurs](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Analyser les erreurs détectées pendant l’exécution du test de charge :** le volet **Compteurs** comporte un nœud d’erreurs contenant des catégories et des sous-catégories d’erreurs, comme les erreurs HTTP, que vous pouvez utiliser afin d’ajouter des erreurs aux graphiques pour une analyse plus détaillée.|-   [Guide pratique : Analyser les erreurs dans le volet Compteurs](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Choisissez une valeur pour la propriété **Taux d’échantillonnage** dans les
 Voici quelques instructions sur les taux d'échantillonnage :
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 heure|5 secondes|
 |1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|

@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872068"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Ajout des données d’interaction de couche à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Exemple de profilage d’une application de bureau Windows  
   
-1.  Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.  
+1. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.  
   
-2.  Initialisez les variables d’environnement TiP et celles du profilage .NET. Tapez les commandes suivantes :  
+2. Initialisez les variables d’environnement TiP et celles du profilage .NET. Tapez les commandes suivantes :  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  Démarrez le profileur. Tapez la commande suivante :  
+3. Démarrez le profileur. Tapez la commande suivante :  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :  
+4. Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  Testez l’application pour collecter des données de profilage, puis fermez-la normalement.  
+5. Testez l’application pour collecter des données de profilage, puis fermez-la normalement.  
   
-6.  Supprimez les variables d’environnement TiP. Tapez la commande suivante :  
+6. Supprimez les variables d’environnement TiP. Tapez la commande suivante :  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- Pour plus d’informations, consultez [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Pour plus d’informations, consultez [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Profilage de services  
  Pour profiler des services, y compris les applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], utilisez l’option **VSPerfClrEnv /GlobalInteractionOn** pour définir les variables d’environnement, et **VSPerfClrEnv /GlobalInteractionOff** pour les supprimer.  
@@ -95,33 +95,33 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 ##### <a name="profiling-a-windows-service-example"></a>Exemple de profilage d’un service Windows  
   
-1.  Si nécessaire, installez le service.  
+1. Si nécessaire, installez le service.  
   
-2.  Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.  
+2. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.  
   
-3.  Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :  
+3. Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  Initialisez les variables d’environnement TiP. Tapez la commande suivante :  
+4. Initialisez les variables d’environnement TiP. Tapez la commande suivante :  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  Redémarrez l’ordinateur pour inscrire les variables d’environnement.  
+5. Redémarrez l’ordinateur pour inscrire les variables d’environnement.  
   
-6.  Ouvrez une fenêtre d’invite de commande en tant qu’administrateur.  
+6. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur.  
   
-7.  Démarrez le profileur. Tapez la commande suivante :  
+7. Démarrez le profileur. Tapez la commande suivante :  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  Si nécessaire, démarrez le service.  
+8. Si nécessaire, démarrez le service.  
   
 9. Attachez le profileur au service. Tapez la commande suivante :  
   
@@ -143,11 +143,11 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 13. Redémarrez l’ordinateur pour enregistrer la suppression des variables d’environnement.  
   
- Pour plus d'informations, consultez l'une des rubriques suivantes :  
+    Pour plus d'informations, consultez l'une des rubriques suivantes :  
   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)  
+    [Profilage de services](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Ajout de données d’interaction de couche avec VSPerfASPNETCmd  
  L’outil en ligne de commande VSPerfASPNETCmd vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Par rapport à l’outil en ligne de commande **VSPerfCmd**, cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. Ces fonctionnalités de VSPerfASPNETCmd facilitent grandement la collecte de données d’interaction de couche.  

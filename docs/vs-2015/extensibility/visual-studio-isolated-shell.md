@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849045"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolé Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Le shell isolé Visual Studio vous permet de créer des applications autonomes q
 ## <a name="working-with-the-isolated-shell"></a>Utilisation de l’interpréteur de commandes isolé  
  Une application de shell isolé Visual Studio a un accès complet aux services de Visual Studio et prend en charge la personnalisation spécial et personnalisation. Il existe plusieurs façons de personnaliser une application de shell isolé :  
   
--   Vous pouvez utiliser les composants des VSPackages et Managed Extensibility Framework (MEF) pour étendre une application de shell isolé, tout comme vous utiliseriez dans n’importe quelle autre extension Visual Studio. Pour plus d’informations, consultez [extension du Shell isolé](../extensibility/extending-the-isolated-shell.md).  
+- Vous pouvez utiliser les composants des VSPackages et Managed Extensibility Framework (MEF) pour étendre une application de shell isolé, tout comme vous utiliseriez dans n’importe quelle autre extension Visual Studio. Pour plus d’informations, consultez [extension du Shell isolé](../extensibility/extending-the-isolated-shell.md).  
   
--   Pour activer ou désactiver les fonctionnalités de Visual Studio et les groupes de commandes de menu, mettez à jour le fichier .vsct dans le projet d’interface utilisateur utilisateur de l’application.  
+- Pour activer ou désactiver les fonctionnalités de Visual Studio et les groupes de commandes de menu, mettez à jour le fichier .vsct dans le projet d’interface utilisateur utilisateur de l’application.  
   
--   Pour supprimer **Options** pages ou autres composants d’interpréteur de commandes de Visual Studio à partir de l’application, mettre à jour le fichier .pkgundef de l’application.  
+- Pour supprimer **Options** pages ou autres composants d’interpréteur de commandes de Visual Studio à partir de l’application, mettre à jour le fichier .pkgundef de l’application.  
   
--   Pour modifier d’autres aspects de l’apparence ou le comportement de l’interpréteur de commandes, mettre à jour le fichier .pkgdef de l’application.  
+- Pour modifier d’autres aspects de l’apparence ou le comportement de l’interpréteur de commandes, mettre à jour le fichier .pkgdef de l’application.  
   
--   Certains aspects de l’interpréteur de commandes peuvent également être spécifiés lorsque l’application est démarrée. Pour ce faire, mettez à jour les paramètres dans l’appel au point d’entrée de démarrage de la appenvstub.dll.  
+- Certains aspects de l’interpréteur de commandes peuvent également être spécifiés lorsque l’application est démarrée. Pour ce faire, mettez à jour les paramètres dans l’appel au point d’entrée de démarrage de la appenvstub.dll.  
   
- Pour plus d’informations sur les différents éléments que vous pouvez personnaliser, consultez [éléments du Shell isolé](../extensibility/elements-of-the-isolated-shell.md).  
+  Pour plus d’informations sur les différents éléments que vous pouvez personnaliser, consultez [éléments du Shell isolé](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Fonctionnalités standard de l’interpréteur de commandes isolé  
  Les fonctionnalités suivantes sont standard pour toutes les éditions de Visual Studio.  

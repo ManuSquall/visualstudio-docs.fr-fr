@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820772"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Nouveautés en matière de conception dans Visual Studio
 
@@ -70,7 +70,7 @@ Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.mic
 Visual Studio 2017 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 
 |**Fonctionnalité**|**Édition entreprise**|**Édition professionnelle**|**Édition Community**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Cartes de code**|Oui|Prend en charge la lecture de cartes de code, code de filtrage mappe uniquement, ajout de nouveaux nœuds génériques et la création d’un graphique orienté à partir d’une sélection.|-|
 |**Diagrammes de dépendance**|Oui|Seulement prend en charge la lecture des diagrammes de dépendance.|Seulement prend en charge la lecture des diagrammes de dépendance.|
 |**Graphiques orientés** (diagrammes DGML)|Oui|Oui|Oui|

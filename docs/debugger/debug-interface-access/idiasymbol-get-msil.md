@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_msil | Documents Microsoft
+title: IDiaSymbol::get_msil | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a344937e4e388e34d4e2dbff3b56948575fe7cd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0cc7e183591b355518814b4b397b0d66d9913b32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866751"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
-Récupère un indicateur qui spécifie si le symbole fait référence au code de langage MSIL (Microsoft Intermediate).  
+Récupère un indicateur qui spécifie si le symbole fait référence au code de langage MSIL (Microsoft Intermediate Language).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_msil (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si le symbole fait référence à du code MSIL ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si le symbole fait référence au code MSIL ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

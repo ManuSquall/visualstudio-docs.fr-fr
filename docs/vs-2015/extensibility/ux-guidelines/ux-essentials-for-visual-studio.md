@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848655"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303309"
 ### <a name="hyperlink-anti-patterns"></a>Anti-modèles de lien hypertexte  
  L’exemple suivant contient deux anti-modèles.  
   
-1.  Premier plan sous tension rouge pointage signifie que la couleur appropriée partagée à partir du service de la police n’est pas utilisée.  
+1. Premier plan sous tension rouge pointage signifie que la couleur appropriée partagée à partir du service de la police n’est pas utilisée.  
   
-2.  « En savoir plus » n’est pas le texte approprié pour un lien vers une rubrique conceptuelle. L’utilisateur vise ne pas à en savoir plus, qu'il est de comprendre les conséquences de leur choix.  
+2. « En savoir plus » n’est pas le texte approprié pour un lien vers une rubrique conceptuelle. L’utilisateur vise ne pas à en savoir plus, qu'il est de comprendre les conséquences de leur choix.  
   
- ![Lien hypertexte anti&#45;modèles](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")  
+   ![Lien hypertexte anti&#45;modèles](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")  
   
- **En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio.**  
+   **En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio.**  
   
- **Une meilleure solution :** poser la question serait de demander l’utilisateur en cliquant sur le lien.  
+   **Une meilleure solution :** poser la question serait de demander l’utilisateur en cliquant sur le lien.  
   
 -   Fonctionnement des services Windows Azure  
   

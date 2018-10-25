@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892790"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires et cibler une version antérieure du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
   
  Vous pouvez créer des projets de test unitaire qui ciblent des versions spécifiques du .NET Framework. La version ciblée doit correspondre à la version 3.5 (ou une version ultérieure) et ne peut pas être une version client. Visual Studio assure la prise en charge de base suivante pour les tests unitaires qui ciblent des versions spécifiques :  
   
--   Vous pouvez créer des projets de test unitaire et les cibler vers une version spécifique du .NET Framework.  
+- Vous pouvez créer des projets de test unitaire et les cibler vers une version spécifique du .NET Framework.  
   
--   Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework à partir de Visual Studio sur votre machine locale.  
+- Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework à partir de Visual Studio sur votre machine locale.  
   
--   Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework en utilisant MSTest.exe à partir de l’invite de commandes.  
+- Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework en utilisant MSTest.exe à partir de l’invite de commandes.  
   
--   Vous pouvez exécuter des tests unitaires sur un agent de build dans le cadre d’une build.  
+- Vous pouvez exécuter des tests unitaires sur un agent de build dans le cadre d’une build.  
   
- **Test des applications SharePoint**  
+  **Test des applications SharePoint**  
   
- Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] le développement des applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Génération et débogage de solutions SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) et [Vérification et débogage du code SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] le développement des applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Génération et débogage de solutions SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) et [Vérification et débogage du code SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
- **Limitations**  
+  **Limitations**  
   
- Les limitations suivantes s’appliquent quand vous reciblez vos projets de test pour utiliser des versions antérieures du .NET Framework :  
+  Les limitations suivantes s’appliquent quand vous reciblez vos projets de test pour utiliser des versions antérieures du .NET Framework :  
   
--   Dans .NET Framework 3.5, le multiciblage est pris en charge pour les projets de test qui contiennent uniquement des tests unitaires. .NET Framework 3.5 ne prend pas en charge d’autres types de test, par exemple le test codé de l’interface utilisateur ou le test de charge. Le reciblage est bloqué pour les types de test qui ne sont pas des tests unitaires.  
+- Dans .NET Framework 3.5, le multiciblage est pris en charge pour les projets de test qui contiennent uniquement des tests unitaires. .NET Framework 3.5 ne prend pas en charge d’autres types de test, par exemple le test codé de l’interface utilisateur ou le test de charge. Le reciblage est bloqué pour les types de test qui ne sont pas des tests unitaires.  
   
--   L’exécution de tests qui ciblent une version antérieure du .NET Framework est prise en charge uniquement par l’adaptateur hôte par défaut. Elle n’est pas prise en charge par l’adaptateur hôte ASP.NET. Les applications ASP.NET qui doivent s’exécuter dans le contexte d’un Serveur de développement ASP.NET doivent être compatibles avec la version actuelle du .NET Framework.  
+- L’exécution de tests qui ciblent une version antérieure du .NET Framework est prise en charge uniquement par l’adaptateur hôte par défaut. Elle n’est pas prise en charge par l’adaptateur hôte ASP.NET. Les applications ASP.NET qui doivent s’exécuter dans le contexte d’un Serveur de développement ASP.NET doivent être compatibles avec la version actuelle du .NET Framework.  
   
--   La prise en charge de la collecte de données est désactivée quand vous exécutez des tests qui prennent en charge le multiciblage .NET Framework 3.5. Vous pouvez exécuter la couverture du code à l’aide des outils en ligne de commande Visual Studio.  
+- La prise en charge de la collecte de données est désactivée quand vous exécutez des tests qui prennent en charge le multiciblage .NET Framework 3.5. Vous pouvez exécuter la couverture du code à l’aide des outils en ligne de commande Visual Studio.  
   
--   Les tests unitaires qui utilisent .NET Framework 3.5 ne peuvent pas s’exécuter sur une machine distante.  
+- Les tests unitaires qui utilisent .NET Framework 3.5 ne peuvent pas s’exécuter sur une machine distante.  
   
--   Vous ne pouvez pas cibler les tests unitaires vers les précédentes versions client du framework.  
+- Vous ne pouvez pas cibler les tests unitaires vers les précédentes versions client du framework.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire Visual Basic  
   

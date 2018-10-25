@@ -13,12 +13,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66aa5d8166ce39dee80e23af20365eca6f5f8fee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f177306a8647d0de88546f9db51a2fc3e3ceab84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840946"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License, élément (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,12 +60,12 @@ Facultatif. Le chemin d’accès d’une version localisée du fichier de licenc
   
 ## <a name="element-information"></a>Informations sur les éléments  
   
-|||  
-|-|-|  
-|Espace de noms|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nom du schéma|Schéma du module linguistique VSIX|  
-|Fichier de validation|VSIXLanguagePackSchema.xsd|  
-|Peut être vide|Non applicable|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Espace de noms    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
+| Fichier de validation |                VSIXLanguagePackSchema.xsd                 |
+|  Peut être vide   |                      Non applicable                       |
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895338"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont accessibles à partir du clavier.  
@@ -49,29 +49,29 @@ Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont ac
 ### <a name="flowchart"></a>Organigramme  
  La liste suivante affiche les mouvements utilisés pour construire un organigramme à l'aide du clavier. Comme dans le reste de [!INCLUDE[wfd2](../includes/wfd2-md.md)], les activités sont ajoutées à l'aire du concepteur à l'aide des raccourcis de boîte à outils globaux fournis avec [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Pour déplacer une activité, sélectionnez-la et utilisez les touches de direction pour la repositionner.  
+- Pour déplacer une activité, sélectionnez-la et utilisez les touches de direction pour la repositionner.  
   
--   Pour redimensionner un organigramme, déplacez une activité au-delà de la bordure actuelle de l'organigramme à l'aide des touches de direction. L'organigramme est redimensionné automatiquement.  
+- Pour redimensionner un organigramme, déplacez une activité au-delà de la bordure actuelle de l'organigramme à l'aide des touches de direction. L'organigramme est redimensionné automatiquement.  
   
--   Pour définir une activité en tant que le nœud de départ, utilisez le **définir en tant que StartNode** commande dans le menu contextuel.  
+- Pour définir une activité en tant que le nœud de départ, utilisez le **définir en tant que StartNode** commande dans le menu contextuel.  
   
--   Pour connecter des activités :  
+- Pour connecter des activités :  
   
-    1.  Sélectionnez l'activité source en y accédant par tabulation.  
+  1.  Sélectionnez l'activité source en y accédant par tabulation.  
   
-    2.  Appuyez sur CTRL+E, M autant de fois que nécessaire pour déplacer le focus clavier sur l'activité de destination.  
+  2.  Appuyez sur CTRL+E, M autant de fois que nécessaire pour déplacer le focus clavier sur l'activité de destination.  
   
-    3.  Appuyez sur CTRL+E, S pour ajouter l'activité de destination à la sélection.  
+  3.  Appuyez sur CTRL+E, S pour ajouter l'activité de destination à la sélection.  
   
-    4.  Appuyez sur CTRL+E, F pour ajouter le connecteur de la source à la destination.  
+  4.  Appuyez sur CTRL+E, F pour ajouter le connecteur de la source à la destination.  
   
- Remarques à propos de la connexion des activités à l'aide du clavier :  
+  Remarques à propos de la connexion des activités à l'aide du clavier :  
   
--   Vous pouvez établir plusieurs connexions en même temps en ajoutant des activités à la sélection avant d'appuyer sur CTRL+E, F. Les connexions sont créées dans l'ordre dans lequel les activités ont été ajoutées à la sélection.  
+- Vous pouvez établir plusieurs connexions en même temps en ajoutant des activités à la sélection avant d'appuyer sur CTRL+E, F. Les connexions sont créées dans l'ordre dans lequel les activités ont été ajoutées à la sélection.  
   
--   Si une paire d'activités ne peut pas être connectée, par exemple si l'activité source possède déjà une connexion sortante, d'autres connexions entre les activités de la sélection sont établies dans la mesure du possible.  
+- Si une paire d'activités ne peut pas être connectée, par exemple si l'activité source possède déjà une connexion sortante, d'autres connexions entre les activités de la sélection sont établies dans la mesure du possible.  
   
--   Quand un **FlowDecision** est inclus dans la sélection et la **FlowDecision** ne possède aucun lien sortant, le connecteur est placé sur le **True** branche.  
+- Quand un **FlowDecision** est inclus dans la sélection et la **FlowDecision** ne possède aucun lien sortant, le connecteur est placé sur le **True** branche.  
   
 ### <a name="expression-editing"></a>Édition d'expressions  
  Par défaut, les raccourcis clavier par défaut pour l'édition de texte [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] s'appliquent dans l'éditeur d'expressions dans [!INCLUDE[wfd2](../includes/wfd2-md.md)], avec les limitations suivantes :  

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941189"
 ---
 # <a name="outlook-object-model-overview"></a>Vue d’ensemble du modèle d’objet Outlook
   Pour développer des compléments VSTO pour Microsoft Office Outlook, vous pouvez interagir avec les objets fournis par le modèle objet Outlook. Le modèle objet Outlook fournit des classes et des interfaces qui représentent des éléments dans l'interface utilisateur. Par exemple, l'objet <xref:Microsoft.Office.Interop.Outlook.Application> représente l'application entière, l'objet <xref:Microsoft.Office.Interop.Outlook.Folder> représente un dossier qui contient des messages électroniques ou d'autres éléments, et l'objet <xref:Microsoft.Office.Interop.Outlook.MailItem> représente un message électronique.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008266"
 ### <a name="application-object"></a>Objet Application  
  L'objet <xref:Microsoft.Office.Interop.Outlook.Application> représente l'application Outlook. Il s'agit de l'objet de niveau supérieur le plus élevé dans le modèle objet Outlook. Voici quelques-uns des membres les plus importants de cet objet :  
   
--   Le [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) méthode que vous pouvez utiliser pour créer un nouvel élément tel qu’un message électronique, une tâche ou un rendez-vous.  
+- la méthode [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) , qui vous permet de créer un élément tel qu'un message électronique, une tâche ou un rendez-vous ;  
   
--   la propriété <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> , qui vous permet d'accéder aux fenêtres affichant le contenu d'un dossier dans l'interface utilisateur d'Outlook ;  
+- la propriété <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> , qui vous permet d'accéder aux fenêtres affichant le contenu d'un dossier dans l'interface utilisateur d'Outlook ;  
   
--   la propriété <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> , qui vous permet d'accéder aux fenêtres affichant le contenu d'un élément unique, par exemple un message électronique ou une demande de réunion.  
+- la propriété <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> , qui vous permet d'accéder aux fenêtres affichant le contenu d'un élément unique, par exemple un message électronique ou une demande de réunion.  
   
- Pour obtenir une instance de la <xref:Microsoft.Office.Interop.Outlook.Application> d’objet, utilisez le champ d’Application de la `ThisAddIn` classe dans votre projet. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+  Pour obtenir une instance de la <xref:Microsoft.Office.Interop.Outlook.Application> d’objet, utilisez le champ d’Application de la `ThisAddIn` classe dans votre projet. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Afin d’éviter les avertissements de sécurité lorsque vous utilisez des propriétés et méthodes qui sont bloqués par le module de protection du modèle objet Outlook, récupérez les objets Outlook à partir du champ d’Application de la `ThisAddIn` classe. Pour plus d’informations, consultez [considérations de sécurité spécifiques pour les solutions Office](../vsto/specific-security-considerations-for-office-solutions.md).  
@@ -79,7 +79,7 @@ ms.locfileid: "40008266"
   
 -   Utilisez la méthode <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> de l'objet <xref:Microsoft.Office.Interop.Outlook.Application> pour obtenir le <xref:Microsoft.Office.Interop.Outlook.Explorer> qui possède actuellement le focus.  
   
--   Utilisez la méthode `GetExplorer` de l'objet <xref:Microsoft.Office.Interop.Outlook.Folder> pour obtenir le <xref:Microsoft.Office.Interop.Outlook.Explorer> du dossier actif.  
+-   Utilisez la méthode `GetExplorer` de l’objet <xref:Microsoft.Office.Interop.Outlook.Folder> pour obtenir le <xref:Microsoft.Office.Interop.Outlook.Explorer> du dossier actif.  
   
 ### <a name="inspector-object"></a>Objet Inspector  
  L'objet <xref:Microsoft.Office.Interop.Outlook.Inspector> représente une fenêtre qui affiche un élément unique, par exemple un message électronique, une tâche ou un rendez-vous. L'objet <xref:Microsoft.Office.Interop.Outlook.Inspector> inclut les méthodes et propriétés que vous pouvez utiliser pour modifier la fenêtre, ainsi que les événements qui sont déclenchés quand la fenêtre change.  
@@ -114,7 +114,7 @@ ms.locfileid: "40008266"
 ### <a name="taskitem-object"></a>Objet TaskItem  
  L'objet <xref:Microsoft.Office.Interop.Outlook.TaskItem> représente une tâche à exécuter dans un laps de temps spécifique. Les objets<xref:Microsoft.Office.Interop.Outlook.TaskItem> se trouvent dans le dossier **Tâches** .  
   
- Pour créer une tâche, utilisez la [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) méthode de la <xref:Microsoft.Office.Interop.Outlook.Application> de l’objet et passez la valeur <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> pour le paramètre.  
+ Pour créer une tâche, utilisez la méthode [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) de l'objet <xref:Microsoft.Office.Interop.Outlook.Application> , puis passez la valeur <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> pour le paramètre.  
   
 ### <a name="contactitem-object"></a>Objet ContactItem  
  L'objet <xref:Microsoft.Office.Interop.Outlook.ContactItem>représente un contact dans le dossier **Contacts** . Les objets<xref:Microsoft.Office.Interop.Outlook.ContactItem> contiennent diverses informations de contact pour les personnes qu'ils représentent, par exemple des adresses postales, des adresses de messagerie et des numéros de téléphone.  

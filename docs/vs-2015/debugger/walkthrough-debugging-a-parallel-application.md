@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823656"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Procédure pas à pas : débogage d'une application parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ Cette procédure pas à pas montre comment utiliser le **tâches parallèles** e
   
 #### <a name="to-create-the-sample-project"></a>Pour créer l'exemple de projet  
   
-1.  Dans Visual Studio, dans le menu **Fichier**,pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+1. Dans Visual Studio, dans le menu **Fichier**,pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-2.  Dans le **modèles installés** volet, sélectionnez Visual c#, Visual Basic ou Visual C++. Pour les langages managés, assurez-vous que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est affiché dans la fenêtre .NET Framework.  
+2. Dans le **modèles installés** volet, sélectionnez Visual c#, Visual Basic ou Visual C++. Pour les langages managés, assurez-vous que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est affiché dans la fenêtre .NET Framework.  
   
-3.  Sélectionnez **Application Console** puis cliquez sur **OK**. Restez en configuration Debug, qui est la valeur par défaut.  
+3. Sélectionnez **Application Console** puis cliquez sur **OK**. Restez en configuration Debug, qui est la valeur par défaut.  
   
-4.  Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.  
+4. Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.  
   
-5.  Collez le code suivant dans le langage choisi dans le fichier de code vide.  
+5. Collez le code suivant dans le langage choisi dans le fichier de code vide.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
+6. Sur le **fichier** menu, cliquez sur **Enregistrer tout**.  
   
-2.  Sur le **Build** menu, cliquez sur **régénérer la Solution**.  
+7. Sur le **Build** menu, cliquez sur **régénérer la Solution**.  
   
-     Notez qu'il y a quatre appels à `Debugger.Break` (`DebugBreak` dans l'exemple C++). Vous n'avez donc pas à insérer de points d'arrêt. La simple exécution de l'application entraînera son arrêt dans le débogueur jusqu'à quatre fois.  
+    Notez qu'il y a quatre appels à `Debugger.Break` (`DebugBreak` dans l'exemple C++). Vous n'avez donc pas à insérer de points d'arrêt. La simple exécution de l'application entraînera son arrêt dans le débogueur jusqu'à quatre fois.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilisation de la fenêtre Piles parallèles : vue Threads  
  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**. Attendez que le premier point d'arrêt soit atteint.  
@@ -153,33 +153,33 @@ Cette procédure pas à pas montre comment utiliser le **tâches parallèles** e
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Pour continuer l'exécution jusqu'au troisième point d'arrêt  
   
-1.  Pour reprendre l’exécution jusqu'à ce que le troisième point d’arrêt est atteint, sur le **déboguer** menu, cliquez sur **continuer**.  
+1. Pour reprendre l’exécution jusqu'à ce que le troisième point d’arrêt est atteint, sur le **déboguer** menu, cliquez sur **continuer**.  
   
-     Lorsque plusieurs threads se trouvent dans la même méthode mais que cette méthode ne figure pas au début de la pile des appels, la méthode s'affiche dans des zones différentes. Un exemple au point d'arrêt actuel est S.L, qui possède trois threads et apparaît dans trois zones. Double-cliquez sur S.L.  
+    Lorsque plusieurs threads se trouvent dans la même méthode mais que cette méthode ne figure pas au début de la pile des appels, la méthode s'affiche dans des zones différentes. Un exemple au point d'arrêt actuel est S.L, qui possède trois threads et apparaît dans trois zones. Double-cliquez sur S.L.  
   
-     ![Chemin d’exécution dans la fenêtre Piles parallèles](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Chemin d’exécution dans la fenêtre Piles parallèles](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Remarquez que S.L apparaît en gras dans les deux autres zones afin que vous puissiez voir où il s'affiche. Si vous souhaitez voir quels frames appeler dans S.L et quels frames, cliquez sur le **basculer dans la vue méthode** dans la barre d’outils. L’illustration suivante montre la vue méthode de la **piles parallèles** fenêtre.  
+    Remarquez que S.L apparaît en gras dans les deux autres zones afin que vous puissiez voir où il s'affiche. Si vous souhaitez voir quels frames appeler dans S.L et quels frames, cliquez sur le **basculer dans la vue méthode** dans la barre d’outils. L’illustration suivante montre la vue méthode de la **piles parallèles** fenêtre.  
   
-     ![Dans la fenêtre Piles parallèles dans la vue méthode](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Dans la fenêtre Piles parallèles dans la vue méthode](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Remarquez comment le diagramme a pivoté sur la méthode sélectionnée et l'a positionnée dans sa propre zone au milieu de la vue. Les appelés et appelants s'affichent en haut et en bas. Cliquez sur le **basculer dans la vue méthode** bouton pour quitter ce mode.  
+    Remarquez comment le diagramme a pivoté sur la méthode sélectionnée et l'a positionnée dans sa propre zone au milieu de la vue. Les appelés et appelants s'affichent en haut et en bas. Cliquez sur le **basculer dans la vue méthode** bouton pour quitter ce mode.  
   
-     Le menu contextuel de la **piles parallèles** fenêtre a également ce qui suit autres éléments.  
+    Le menu contextuel de la **piles parallèles** fenêtre a également ce qui suit autres éléments.  
   
-    -   **Affichage hexadécimal** Active ou désactive les numéros dans les info-bulles entre décimal et hexadécimal.  
+   - **Affichage hexadécimal** Active ou désactive les numéros dans les info-bulles entre décimal et hexadécimal.  
   
-    -   **Informations sur le chargement de symboles** et **paramètres des symboles** ouvrir les boîtes de dialogue respectives.  
+   - **Informations sur le chargement de symboles** et **paramètres des symboles** ouvrir les boîtes de dialogue respectives.  
   
-    -   **Atteindre le Code Source** et **atteindre le code machine** naviguer dans l’éditeur pour la méthode sélectionnée.  
+   - **Atteindre le Code Source** et **atteindre le code machine** naviguer dans l’éditeur pour la méthode sélectionnée.  
   
-    -   **Afficher le Code externe** affiche tous les frames même s’ils ne sont pas dans le code utilisateur. Essayez cet élément pour voir le diagramme se développer pour accueillir les frames supplémentaires (qui peuvent être grisés car vous n’avez pas de symboles pour eux).  
+   - **Afficher le Code externe** affiche tous les frames même s’ils ne sont pas dans le code utilisateur. Essayez cet élément pour voir le diagramme se développer pour accueillir les frames supplémentaires (qui peuvent être grisés car vous n’avez pas de symboles pour eux).  
   
      Lorsque vous possédez de grands diagrammes et que vous accédez au point d'arrêt suivant, vous pouvez souhaiter que la vue défile automatiquement vers le frame de pile actif du thread actuel, à savoir le thread qui a atteint en premier le point d'arrêt. Dans le **piles parallèles** fenêtre, assurez-vous que le **défilement automatique vers le Frame de pile actuel** bouton de la barre d’outils est activé.  
   
      ![Le défilement automatique dans la fenêtre Piles parallèles](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Avant de continuer, dans le **piles parallèles** fenêtre, défilez tout à gauche et vers le bas.  
+2. Avant de continuer, dans le **piles parallèles** fenêtre, défilez tout à gauche et vers le bas.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Pour continuer l'exécution jusqu'au quatrième point d'arrêt  
   

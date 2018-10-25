@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902475"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Options, Éditeur de texte, De base (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ La page de propriétés **Spécifique à VB**, accessible via le menu **Outils**
  **Mise en forme automatique avec tabulation du code**  
  L’éditeur de texte remet en forme votre code si nécessaire. Quand cette option est sélectionnée, l’éditeur de code effectue les opérations suivantes :  
   
--   Aligner votre code sur la tabulation correcte  
+- Aligner votre code sur la tabulation correcte  
   
--   Appliquer la casse correcte aux mots clés, variables et objets  
+- Appliquer la casse correcte aux mots clés, variables et objets  
   
--   Ajouter un élément `Then` manquant à une instruction `If...Then`  
+- Ajouter un élément `Then` manquant à une instruction `If...Then`  
   
--   Ajouter des parenthèses aux appels de fonctions  
+- Ajouter des parenthèses aux appels de fonctions  
   
--   Ajouter les guillemets fermants manquants aux chaînes  
+- Ajouter les guillemets fermants manquants aux chaînes  
   
--   Remettre en forme la notation exponentielle  
+- Remettre en forme la notation exponentielle  
   
--   Remettre en forme les dates  
+- Remettre en forme les dates  
   
- **Activer le mode Plan**  
- Quand vous ouvrez un fichier dans l’éditeur de code, vous pouvez afficher le document en mode Plan. Pour plus d’informations, consultez [Mode Plan](../../ide/outlining.md). Quand cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.  
+  **Activer le mode Plan**  
+  Quand vous ouvrez un fichier dans l’éditeur de code, vous pouvez afficher le document en mode Plan. Pour plus d’informations, consultez [Mode Plan](../../ide/outlining.md). Quand cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.  
   
- **Insertion automatique des membres Interface et MustOverride**  
- Quand vous validez une instruction `Implements` ou `Inherits` pour une classe, l’éditeur de texte insère des prototypes pour les membres qui doivent être implémentés ou substitués, respectivement.  
+  **Insertion automatique des membres Interface et MustOverride**  
+  Quand vous validez une instruction `Implements` ou `Inherits` pour une classe, l’éditeur de texte insère des prototypes pour les membres qui doivent être implémentés ou substitués, respectivement.  
   
- **Afficher les séparateurs de ligne de procédure**  
- L’éditeur de texte indique la portée visuelle des procédures. Une ligne est dessinée dans les fichiers sources .vb de votre projet aux emplacements répertoriés dans le tableau suivant :  
+  **Afficher les séparateurs de ligne de procédure**  
+  L’éditeur de texte indique la portée visuelle des procédures. Une ligne est dessinée dans les fichiers sources .vb de votre projet aux emplacements répertoriés dans le tableau suivant :  
   
 |Emplacement dans le fichier source .vb|Exemple d’emplacement de la ligne|  
 |---------------------------------|------------------------------|  

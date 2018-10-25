@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Documents Microsoft
+title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c1482d5ad2e748bb2664b796e272ce8e9c03d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7746f85eeec41b708bd4c1537ee725d2096c41ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920623"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Énumère les valeurs du programme détruire des indicateurs.  
@@ -42,12 +42,12 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>Termes  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Détruire le programme, mais continuer le débogage.  
+ Détruire le programme, mais continuer à déboguer.  
   
 ## <a name="remarks"></a>Notes  
- L’énumération retournée par le [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) (méthode).  
+ L’énumération est retournée par la [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837559"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Comment : modifier une commande de menu standard dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
   
  En résumé, pour modifier une commande :  
   
-1.  [Découvrez les commandes que vous pouvez modifier](#what).  
+1. [Découvrez les commandes que vous pouvez modifier](#what).  
   
-2.  [Créer une déclaration partielle de la classe de jeu de commandes appropriée](#extend).  
+2. [Créer une déclaration partielle de la classe de jeu de commandes appropriée](#extend).  
   
-3.  [Substituez les méthodes ProcessOnStatus et ProcessOnMenu](#override) pour la commande.  
+3. [Substituez les méthodes ProcessOnStatus et ProcessOnMenu](#override) pour la commande.  
   
- Cette rubrique explique cette procédure.  
+   Cette rubrique explique cette procédure.  
   
 > [!NOTE]
 >  Si vous souhaitez créer vos propres commandes de menu, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Écriture du code des méthodes  
  Les fragments suivants sont souvent utiles dans ces méthodes :  
   
--   `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.  
+- `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.  
   
--   `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.  
+- `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs formes.  
+- `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs formes.  
   
--   `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.  
+- `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.  
   
--   `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.  
+- `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.  
   
- Pour plus d’informations sur la façon de naviguer à partir d’un élément à l’élément et sur la création des objets et des liens, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Pour plus d’informations sur la façon de naviguer à partir d’un élément à l’élément et sur la création des objets et des liens, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.ComponentModel.Design.MenuCommand>   

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899953"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, élément (modèles de projet Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle de projet.  
@@ -53,14 +53,14 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
   
 ### <a name="attributes"></a>Attributs  
   
-|Attribut|Description|  
-|---------------|-----------------|  
-|`TargetFileName`|Attribut facultatif.<br /><br /> Spécifie le nom et le chemin d’accès de l’élément de projet lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour la création d’une structure de répertoires différente de la structure de répertoires dans le modèle *.zip* fichier, ou d’utiliser le remplacement de paramètre pour créer un nom d’élément.|  
-|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
-|`OpenInEditor`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert dans son éditeur respectif dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lorsqu’un projet est créé à partir du modèle.<br /><br /> Le `OpenInWebBrowser` et `OpenInHelpBrowser` attributs sont ignorés sur un élément avec un `OpenInEditor` valeur `true`.<br /><br /> La valeur par défaut est `false`.|  
-|`OpenInWebBrowser`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert le navigateur Web lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte qui sont locaux du projet peuvent être ouverts dans le navigateur Web. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`.|  
-|`OpenInHelpBrowser`|Attribut facultatif.<br /><br /> Une valeur booléenne qui spécifie si l’élément doit être ouvert dans la visionneuse d’aide lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte qui sont locaux du projet peuvent être ouverts dans le navigateur d’aide. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`.|  
-|`OpenOrder`|Attribut facultatif.<br /><br /> Spécifie une valeur numérique qui représente l’ordre que les éléments seront ouverts dans leurs éditeurs respectifs. Toutes les valeurs doivent être des multiples de 10. Éléments avec une version ultérieure `OpenOrder` valeurs sont d’abord ouvertes.|  
+| Attribut | Description |
+|---------------------| - |
+| `TargetFileName` | Attribut facultatif.<br /><br /> Spécifie le nom et le chemin d’accès de l’élément de projet lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour la création d’une structure de répertoires différente de la structure de répertoires dans le modèle *.zip* fichier, ou d’utiliser le remplacement de paramètre pour créer un nom d’élément. |
+| `ReplaceParameters` | Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`. |
+| `OpenInEditor` | Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert dans son éditeur respectif dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lorsqu’un projet est créé à partir du modèle.<br /><br /> Le `OpenInWebBrowser` et `OpenInHelpBrowser` attributs sont ignorés sur un élément avec un `OpenInEditor` valeur `true`.<br /><br /> La valeur par défaut est `false`. |
+| `OpenInWebBrowser` | Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert le navigateur Web lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte qui sont locaux du projet peuvent être ouverts dans le navigateur Web. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`. |
+| `OpenInHelpBrowser` | Attribut facultatif.<br /><br /> Une valeur booléenne qui spécifie si l’élément doit être ouvert dans la visionneuse d’aide lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte qui sont locaux du projet peuvent être ouverts dans le navigateur d’aide. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`. |
+| `OpenOrder` | Attribut facultatif.<br /><br /> Spécifie une valeur numérique qui représente l’ordre que les éléments seront ouverts dans leurs éditeurs respectifs. Toutes les valeurs doivent être des multiples de 10. Éléments avec une version ultérieure `OpenOrder` valeurs sont d’abord ouvertes. |
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -91,27 +91,27 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
   
 ### <a name="to-rename-files-with-parameters"></a>Pour renommer des fichiers avec des paramètres  
   
-1.  Utilisez le code XML suivant dans le *.vstemplate* fichier :  
+1. Utilisez le code XML suivant dans le *.vstemplate* fichier :  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  Ouvrez le fichier projet (*.vbproj* pour un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projet) dans un éditeur de texte ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Ouvrez le fichier projet (*.vbproj* pour un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projet) dans un éditeur de texte ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Recherchez la ligne dans le fichier projet qui ressemble au code XML suivant :  
+3. Recherchez la ligne dans le fichier projet qui ressemble au code XML suivant :  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  Remplacez la ligne de code par le code XML suivant :  
+4. Remplacez la ligne de code par le code XML suivant :  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     Lorsqu’un projet est créé à partir de ce modèle, le nom de fichier doit reposer sur le nom de l’utilisateur a entré dans le **nouveau projet** boîte de dialogue, avec tous les caractères sécurisés et supprimés les espaces. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).  
+    Lorsqu’un projet est créé à partir de ce modèle, le nom de fichier doit reposer sur le nom de l’utilisateur a entré dans le **nouveau projet** boîte de dialogue, avec tous les caractères sécurisés et supprimés les espaces. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  

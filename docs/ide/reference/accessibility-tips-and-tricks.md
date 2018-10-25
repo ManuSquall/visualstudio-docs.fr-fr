@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811839"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
@@ -48,7 +48,7 @@ L’éditeur Visual Studio inclut de nombreux « ornements » de texte qui vous 
 L’IDE Visual Studio possède des barres d’outils comme de nombreuses fenêtres Outil. Les combinaisons de touches de raccourci suivantes vous aident à y accéder.
 
 |Fonctionnalité|Description|Combinaison de touches|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |Barres d’outils IDE|Sélectionner le premier bouton de la barre d’outils Standard.|**Alt**, **Ctrl** + **Tab**|
 |Barres d’outils des fenêtres Outil|Déplacer le focus sur les barres d’outils dans une fenêtre Outil. <br> <br> **REMARQUE :** Cela fonctionne pour la plupart des fenêtres Outil, mais uniquement quand le focus se trouve dans une fenêtre Outil. En outre, vous devez choisir la touche Maj avant la touche Alt. Dans certaines fenêtres Outil, comme Team Explorer, vous devez maintenir la touche Maj enfoncée pendant un moment avant de choisir la touche Alt.|**Maj** + **Alt**|
 |Barres d'outils|Accéder au premier élément dans la barre d’outils suivante (quand une barre d’outils a le focus).|**Ctrl** + **Tab**|
@@ -58,7 +58,7 @@ L’IDE Visual Studio possède des barres d’outils comme de nombreuses fenêtr
 Parmi d’autres combinaisons de touches de raccourci utiles figurent les suivantes.
 
 |Fonctionnalité|Description|Combinaison de touches|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE|Activer et désactiver le contraste élevé. <br> <br> **REMARQUE :** Raccourci Windows standard|**Alt gauche + Maj gauche + Impr. écran**|
 |Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **REMARQUE :** Raccourci Windows standard|**Barre d’espace**|
 |Menus contextuels|Ouvrir un menu contextuel (clic droit). <br> <br> **REMARQUE :** Raccourci Windows standard|**Maj** + **F10**|
@@ -83,18 +83,18 @@ Voici comment procéder.
 
 1. Dans la zone de **recherche** sur un ordinateur exécutant Windows 10, tapez **Modifier les sons système**.
 
-  ![Zone de recherche dans Windows 10](media/type-here-to-search.png)
+   ![Zone de recherche dans Windows 10](media/type-here-to-search.png)
 
-  (Sinon, si Cortana est activé, dites « Hey Cortana », puis « Modifier les sons système ».)
+   (Sinon, si Cortana est activé, dites « Hey Cortana », puis « Modifier les sons système ».)
 
 2. Double-cliquez sur **Modifier les sons système**.
 
-  ![Résultats de recherche dans Windows 10](media/change-system-sounds.png)
+   ![Résultats de recherche dans Windows 10](media/change-system-sounds.png)
 
 3. Dans la boîte de dialogue **Sound** (Son), cliquez sur l’onglet **Sons**. <br><br>
- Ensuite, dans **Événements**, accédez à **Microsoft Visual Studio**, puis sélectionnez les sons que vous souhaitez appliquer aux événements que vous choisissez.
+   Ensuite, dans **Événements**, accédez à **Microsoft Visual Studio**, puis sélectionnez les sons que vous souhaitez appliquer aux événements que vous choisissez.
 
-  ![Onglet Sons de l’applet Son dans Windows 10](media/sound-applet.png)
+   ![Onglet Sons de l’applet Son dans Windows 10](media/sound-applet.png)
 
 4. Cliquez sur **OK**.
 

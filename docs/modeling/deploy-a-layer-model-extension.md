@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874616"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 
@@ -29,13 +29,13 @@ Votre extension est compilée dans un fichier VSIX, que vous pouvez installer su
 
 ### <a name="to-install-the-extension"></a>Pour installer l'extension
 
-1.  Dans le projet qui contient **source.vsix.manifest**, ouvrez **bin\\ \***  dans l’Explorateur de fichiers.
+1. Dans le projet qui contient **source.vsix.manifest**, ouvrez le *bin* répertoire dans l’Explorateur de fichiers.
 
-2.  Copie le  **\*.vsix** fichier sur l’ordinateur sur lequel vous souhaitez installer l’extension.
+2. Copie le  **\*.vsix** fichier sur l’ordinateur sur lequel vous souhaitez installer l’extension.
 
-3.  Sur l'ordinateur cible, double-cliquez sur le fichier *.vsix dans l'Explorateur Windows.
+3. Sur l'ordinateur cible, double-cliquez sur le fichier *.vsix dans l'Explorateur Windows.
 
-     L'installateur VSIX s'ouvre.
+    L'installateur VSIX s'ouvre.
 
 ### <a name="to-uninstall-the-extension"></a>Pour désinstaller l'extension
 

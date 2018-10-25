@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836734"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Ajout d’une commande à la barre d’outils de l’Explorateur de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explora
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Pour afficher un bouton quand un ou plusieurs projets sont ouverts  
   
-1.  Dans le `<Buttons>` section de ToolbarButtonPackage.vsct, ajouter deux indicateurs de commande à le `<Button>` élément, entre le `<Strings>` et `<Icons>` balises.  
+1. Dans le `<Buttons>` section de ToolbarButtonPackage.vsct, ajouter deux indicateurs de commande à le `<Button>` élément, entre le `<Strings>` et `<Icons>` balises.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     Le `DefaultInvisible` et `DynamicVisibility` indicateurs doivent être définis, ainsi que les entrées dans la `<VisibilityConstraints>` section peut entrer en vigueur.  
+    Le `DefaultInvisible` et `DynamicVisibility` indicateurs doivent être définis, ainsi que les entrées dans la `<VisibilityConstraints>` section peut entrer en vigueur.  
   
-2.  Créer un `<VisibilityConstraints>` section qui comporte deux `<VisibilityItem>` entrées. Placer la nouvelle section juste après la fermeture `</Commands>` balise.  
+2. Créer un `<VisibilityConstraints>` section qui comporte deux `<VisibilityItem>` entrées. Placer la nouvelle section juste après la fermeture `</Commands>` balise.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Chaque élément de visibilité représente une condition sous laquelle le bouton spécifié est affiché. Pour appliquer plusieurs conditions, vous devez créer plusieurs entrées pour le même bouton.  
+    Chaque élément de visibilité représente une condition sous laquelle le bouton spécifié est affiché. Pour appliquer plusieurs conditions, vous devez créer plusieurs entrées pour le même bouton.  
   
-3.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
+3. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
   
-     Le **l’Explorateur de solutions** barre d’outils ne contient pas le bouton Barré.  
+    Le **l’Explorateur de solutions** barre d’outils ne contient pas le bouton Barré.  
   
-4.  Ouvrez une solution qui contient un projet.  
+4. Ouvrez une solution qui contient un projet.  
   
-     Le bouton Barré apparaît sur la barre d’outils à droite des boutons existants.  
+    Le bouton Barré apparaît sur la barre d’outils à droite des boutons existants.  
   
-5.  Sur le **fichier** menu, cliquez sur **fermer la Solution**. Le bouton disparaît de la barre d’outils.  
+5. Sur le **fichier** menu, cliquez sur **fermer la Solution**. Le bouton disparaît de la barre d’outils.  
   
- La visibilité du bouton est contrôlée par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jusqu'à ce que le VSPackage est chargé. Une fois le VSPackage est chargé, la visibilité du bouton est contrôlée par le VSPackage.  Pour plus d’informations, consultez [MenuCommands et. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   La visibilité du bouton est contrôlée par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jusqu'à ce que le VSPackage est chargé. Une fois le VSPackage est chargé, la visibilité du bouton est contrôlée par le VSPackage.  Pour plus d’informations, consultez [MenuCommands et. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

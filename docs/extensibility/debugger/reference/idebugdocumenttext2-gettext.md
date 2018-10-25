@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Documents Microsoft
+title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905504"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Récupère le texte de la position spécifiée dans le document.  
+Récupère le texte à partir de la position spécifiée dans le document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,13 +47,13 @@ int GetText(
   
 #### <a name="parameters"></a>Paramètres  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte doit être récupéré.  
+ [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte à récupérer.  
   
  `cMaxChars`  
- [in] Le nombre maximal de caractères du texte doit être récupéré.  
+ [in] Le nombre maximal de caractères du texte à récupérer.  
   
  `pText`  
- [dans, out] Pointeur vers une mémoire tampon qui doit être remplie avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.  
+ [in, out] Pointeur vers une mémoire tampon qui doit être rempli avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.  
   
  `pcNumChars`  
  [out] Retourne le nombre de caractères réellement récupérées.  

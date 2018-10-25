@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::Terminate | Documents Microsoft
+title: IDebugExpressionEvaluator2::Terminate | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d38695062816c56a0fee635d939cdeea90d32a17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edc2368edecea28bbe59635b248bb7c0abc7d7a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929346"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 Arrête et nettoie l’évaluateur d’expression.  
@@ -40,10 +40,10 @@ int Terminate ();
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Indique à l’évaluateur d’expression lorsqu’il est en cours de nettoyage.  
+ Indique à l’évaluateur d’expression quand il est en cours de nettoyage.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **ExpressionEvaluatorPackage** objet qui expose la [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **ExpressionEvaluatorPackage** objet qui expose le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)  

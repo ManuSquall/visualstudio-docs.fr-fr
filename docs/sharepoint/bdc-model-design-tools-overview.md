@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914500"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Vue d’ensemble des outils de conception de modèle BDC
   Vous pouvez concevoir un modèle de connectivité de données métiers (BDC) en utilisant le concepteur BDC, le **détails de méthode BDC** fenêtre et le **Explorateur BDC**.  
@@ -43,13 +43,13 @@ ms.locfileid: "36326216"
 ## <a name="bdc-designer"></a>Concepteur BDC
  Le concepteur BDC vous permet de définir les entités dans votre modèle et regrouper visuellement leurs relations entre eux. Utilisez le concepteur BDC pour effectuer les tâches suivantes :  
   
--   Ajouter des entités au modèle.  
+- Ajouter des entités au modèle.  
   
--   Supprimer des entités du modèle.  
+- Supprimer des entités du modèle.  
   
--   Définir des relations entre des entités.  
+- Définir des relations entre des entités.  
   
- Pour ouvrir le concepteur BDC, double-cliquez sur le fichier de modèle dans votre projet, ou ouvrez le menu contextuel pour le fichier de modèle, puis choisissez **ouvrir**. Ajouter une entité au modèle en faisant glisser ou en copiant un **entité** à partir de la **boîte à outils** sur le concepteur. Pour créer une association entre deux entités, choisissez le **Association** dans contrôler le **boîte à outils**, choisissez la première entité, puis la deuxième entité.  
+  Pour ouvrir le concepteur BDC, double-cliquez sur le fichier de modèle dans votre projet, ou ouvrez le menu contextuel pour le fichier de modèle, puis choisissez **ouvrir**. Ajouter une entité au modèle en faisant glisser ou en copiant un **entité** à partir de la **boîte à outils** sur le concepteur. Pour créer une association entre deux entités, choisissez le **Association** dans contrôler le **boîte à outils**, choisissez la première entité, puis la deuxième entité.  
   
 ## <a name="bdc-method-details-window"></a>Fenêtre Détails de méthode BDC
  Utilisez le **détails de méthode BDC** fenêtre pour définir les paramètres, les instances et descripteurs de filtre d’une méthode.  

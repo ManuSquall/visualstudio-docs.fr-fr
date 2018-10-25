@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907922"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ La transformation de texte se produit avant les autres tâches du processus de g
 
 Dans `AfterTransform`, vous pouvez référencer des listes de fichiers :
 
--   GeneratedFiles : liste des fichiers écrits par le processus. Pour les fichiers qui ont remplacé des fichiers en lecture seule existants, %(GeneratedFiles.ReadOnlyFileOverwritten) a la valeur true. Ces fichiers peuvent être extraits du contrôle de code source.
+- GeneratedFiles : liste des fichiers écrits par le processus. Pour les fichiers qui ont remplacé des fichiers en lecture seule existants, %(GeneratedFiles.ReadOnlyFileOverwritten) a la valeur true. Ces fichiers peuvent être extraits du contrôle de code source.
 
--   NonGeneratedFiles : liste des fichiers en lecture seule qui n'ont pas été remplacés.
+- NonGeneratedFiles : liste des fichiers en lecture seule qui n'ont pas été remplacés.
 
- Par exemple, vous définissez une tâche afin d'extraire GeneratedFiles.
+  Par exemple, vous définissez une tâche afin d'extraire GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath et OutputFileName
 
@@ -255,7 +255,6 @@ Modifiez votre fichier projet .csproj ou .vbproj pour définir une propriété d
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Désormais, vous pouvez utiliser votre propriété de projet dans les directives d'assembly et Include :

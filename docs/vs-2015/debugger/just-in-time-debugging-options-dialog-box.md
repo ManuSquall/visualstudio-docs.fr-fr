@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872926"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Juste-à-temps, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Pour accéder à la **juste-à-temps** page, accédez à la **outils** menu et c
   
  Vous pouvez activer le débogage juste-à-temps pour les types de programmes suivants :  
   
--   Managé  
+- Managé  
   
--   Natif  
+- Natif  
   
--   Script  
+- Script  
   
- Le débogage juste-à-temps est une technique pour le débogage d'un programme démarré à l'extérieur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il est possible d'exécuter un programme créé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en dehors de l'environnement [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si vous avez activé le débogage juste-à-temps, un incident affichera une boîte de dialogue qui vous demandera si vous souhaitez déboguer.  
+  Le débogage juste-à-temps est une technique pour le débogage d'un programme démarré à l'extérieur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il est possible d'exécuter un programme créé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en dehors de l'environnement [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si vous avez activé le débogage juste-à-temps, un incident affichera une boîte de dialogue qui vous demandera si vous souhaitez déboguer.  
   
 ## <a name="associated-warnings"></a>Avertissements associés  
  Lorsque vous visitez cette page de la **Options** boîte de dialogue, vous pouvez voir un message d’avertissement comme suit :  

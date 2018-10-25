@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920129"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Modèle d’héritage : Fragments dans les méthodes de Base  
  Dans le modèle utilisé dans l’exemple suivant, notez les points suivants :  
   
--   La classe de base `SharedFragments` définit des méthodes dans les blocs de fonctionnalité de classe `<#+ ... #>`.  
+- La classe de base `SharedFragments` définit des méthodes dans les blocs de fonctionnalité de classe `<#+ ... #>`.  
   
--   La classe de base ne contient aucun texte libre. Au lieu de cela, tous ses blocs de texte se produisent à l’intérieur des méthodes de la fonctionnalité de classe.  
+- La classe de base ne contient aucun texte libre. Au lieu de cela, tous ses blocs de texte se produisent à l’intérieur des méthodes de la fonctionnalité de classe.  
   
--   La classe dérivée appelle les méthodes définies dans `SharedFragments`.  
+- La classe dérivée appelle les méthodes définies dans `SharedFragments`.  
   
--   L’application appelle le `TextTransform()` méthode de la classe dérivée, mais ne transforme ne pas la classe de base `SharedFragments`.  
+- L’application appelle le `TextTransform()` méthode de la classe dérivée, mais ne transforme ne pas la classe de base `SharedFragments`.  
   
--   Les classes de base et dérivées sont des modèles de texte de runtime : autrement dit, le **un outil personnalisé** propriété est définie sur **TextTemplatingFilePreprocessor**.  
+- Les classes de base et dérivées sont des modèles de texte de runtime : autrement dit, le **un outil personnalisé** propriété est définie sur **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt :**  
+  **SharedFragments.tt :**  
   
 ```csharp  
 <#@ template language="C#" #>  

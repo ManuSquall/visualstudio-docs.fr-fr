@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934887"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Guide pratique pour collecter des données d’échantillonnage au niveau ligne
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.  
@@ -32,21 +32,21 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
 ### <a name="available-data"></a>Données disponibles  
  Les données d’échantillonnage au niveau ligne qui sont disponibles comprennent les informations suivantes :  
   
--   Le nom de la fonction  
+- Le nom de la fonction  
   
--   L’adresse de la fonction  
+- L’adresse de la fonction  
   
--   Début de ligne : numéro de ligne du code échantillonné.  
+- Début de ligne : numéro de ligne du code échantillonné.  
   
--   Fin de ligne : numéro de la ligne source de fin. Il s’agit généralement des mêmes données que les données de début de ligne, sauf lorsqu’une instruction de programme s’étend sur plusieurs lignes de code source.  
+- Fin de ligne : numéro de la ligne source de fin. Il s’agit généralement des mêmes données que les données de début de ligne, sauf lorsqu’une instruction de programme s’étend sur plusieurs lignes de code source.  
   
--   Début de caractères : colonne de début de l’échantillon agrégé. Cette valeur est généralement égale à 0, sauf lorsqu’une ligne contient plusieurs instructions de programme.  
+- Début de caractères : colonne de début de l’échantillon agrégé. Cette valeur est généralement égale à 0, sauf lorsqu’une ligne contient plusieurs instructions de programme.  
   
--   Fin de caractère : colonne de fin de l’échantillon agrégé.  
+- Fin de caractère : colonne de fin de l’échantillon agrégé.  
   
--   IP : adresse à laquelle l’échantillon agrégé a été prélevé (vue IP uniquement).  
+- IP : adresse à laquelle l’échantillon agrégé a été prélevé (vue IP uniquement).  
   
- Dans la vue **Modules**, si une fonction comporte des statistiques au niveau ligne, celles-ci sont imbriquées sous chaque fonction. Les statistiques de niveau IP qui sont imbriquées sous chaque ligne sont également affichées.  
+  Dans la vue **Modules**, si une fonction comporte des statistiques au niveau ligne, celles-ci sont imbriquées sous chaque fonction. Les statistiques de niveau IP qui sont imbriquées sous chaque ligne sont également affichées.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Désactiver l’échantillonnage au niveau ligne dans du code managé  
  Par défaut, l’échantillonnage au niveau ligne est activé. Vous pouvez désactiver la collecte de données au niveau ligne pour du code managé à l’aide de l’une des commandes suivantes :  

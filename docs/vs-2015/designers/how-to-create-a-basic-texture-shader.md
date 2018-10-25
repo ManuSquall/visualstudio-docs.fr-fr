@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 247be4afe0b9363bd12a37ddfb753fe1a0f1c68c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898536"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,23 +45,23 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
   
 #### <a name="to-create-a-basic-texture-shader"></a>Pour créer un nuanceur de texture de base  
   
-1.  Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).  
+1. Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).  
   
-2.  Supprimez le nœud **Couleur du point**. En mode **Sélection**, sélectionnez le nœud **Couleur du point**, puis, dans la barre de menus, choisissez **Modifier**, **Supprimer**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.  
+2. Supprimez le nœud **Couleur du point**. En mode **Sélection**, sélectionnez le nœud **Couleur du point**, puis, dans la barre de menus, choisissez **Modifier**, **Supprimer**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.  
   
-3.  Ajoutez un nœud **Échantillon de texture** au graphique. Dans la **Boîte à outils**, sous **Texture**, sélectionnez **Échantillon de texture** et déplacez-le vers l’aire de conception.  
+3. Ajoutez un nœud **Échantillon de texture** au graphique. Dans la **Boîte à outils**, sous **Texture**, sélectionnez **Échantillon de texture** et déplacez-le vers l’aire de conception.  
   
-4.  Ajoutez un nœud **Coordonnée de texture** au graphique. Dans la **Boîte à outils**, sous **Texture**, sélectionnez **Coordonnée de texture** et déplacez-la vers l’aire de conception.  
+4. Ajoutez un nœud **Coordonnée de texture** au graphique. Dans la **Boîte à outils**, sous **Texture**, sélectionnez **Coordonnée de texture** et déplacez-la vers l’aire de conception.  
   
-5.  Choisissez une texture à appliquer. En mode **Sélection**, sélectionnez le nœud **Échantillon de texture**, puis, dans la fenêtre **Propriétés**, spécifiez la texture que vous souhaitez utiliser à l’aide de la propriété **Nom de fichier**.  
+5. Choisissez une texture à appliquer. En mode **Sélection**, sélectionnez le nœud **Échantillon de texture**, puis, dans la fenêtre **Propriétés**, spécifiez la texture que vous souhaitez utiliser à l’aide de la propriété **Nom de fichier**.  
   
-6.  Rendez la texture publiquement accessible. Sélectionnez le nœud **Échantillon de texture**, puis, dans la fenêtre **Propriétés**, définissez la propriété **Accès** sur **Public**. À présent, vous pouvez définir la texture à partir d’un autre outil, par exemple l’**Éditeur de modèle**.  
+6. Rendez la texture publiquement accessible. Sélectionnez le nœud **Échantillon de texture**, puis, dans la fenêtre **Propriétés**, définissez la propriété **Accès** sur **Public**. À présent, vous pouvez définir la texture à partir d’un autre outil, par exemple l’**Éditeur de modèle**.  
   
-7.  Connectez les coordonnées de texture à l’échantillon de texture. En mode **Sélection**, déplacez le terminal **Sortie** du nœud **Coordonnée de texture** vers le terminal **UV** du nœud **Échantillon de texture**. Cette connexion échantillonne la texture aux coordonnées spécifiées.  
+7. Connectez les coordonnées de texture à l’échantillon de texture. En mode **Sélection**, déplacez le terminal **Sortie** du nœud **Coordonnée de texture** vers le terminal **UV** du nœud **Échantillon de texture**. Cette connexion échantillonne la texture aux coordonnées spécifiées.  
   
-8.  Connectez l’échantillon de texture à la couleur finale. Déplacez le terminal **RVB** du nœud **Échantillon de texture** vers le terminal **RVB** du nœud **Couleur finale**, puis le terminal **Alpha** du nœud **Échantillon de texture** vers le terminal **Alpha** du nœud **Couleur finale**.  
+8. Connectez l’échantillon de texture à la couleur finale. Déplacez le terminal **RVB** du nœud **Échantillon de texture** vers le terminal **RVB** du nœud **Couleur finale**, puis le terminal **Alpha** du nœud **Échantillon de texture** vers le terminal **Alpha** du nœud **Couleur finale**.  
   
- L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un cube.  
+   L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un cube.  
   
 > [!NOTE]
 >  Dans cette illustration, un plan est utilisé comme forme d’aperçu, et une texture a été spécifiée pour mettre en évidence l’effet du nuanceur.  

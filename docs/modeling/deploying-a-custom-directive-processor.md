@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894816"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -154,7 +154,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
  Vérifiez que le fichier .pkgdef s’affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.
 
- Pour plus d’informations, consultez [VSPackages](../extensibility/internals/vspackages.md).
+ Pour plus d'informations, consultez [VSPackages](../extensibility/internals/vspackages.md).
 
 ## <a name="setting-a-registry-key"></a>Définition d'une clé de Registre
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.
@@ -164,30 +164,30 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre
 
-1.  Exécutez `regedit`.
+1. Exécutez `regedit`.
 
-2.  Dans regedit, accédez à
+2. Dans regedit, accédez à
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Si vous souhaitez installer le processeur de directive dans la version expérimentale de Visual Studio, insérez « Exp » après « 11.0 ».
+    Si vous souhaitez installer le processeur de directive dans la version expérimentale de Visual Studio, insérez « Exp » après « 11.0 ».
 
-3.  Ajoutez une clé de Registre ayant le même nom que la classe du processeur de directive.
+3. Ajoutez une clé de Registre ayant le même nom que la classe du processeur de directive.
 
-    -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.
+   -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.
 
-4.  Dans le nouveau nœud, ajoutez des valeurs de chaîne pour Class, CodeBase ou Assembly, en fonction des tableaux suivants.
+4. Dans le nouveau nœud, ajoutez des valeurs de chaîne pour Class, CodeBase ou Assembly, en fonction des tableaux suivants.
 
-    1.  Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.
+   1.  Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.
 
-    2.  Modifiez le nom de la valeur.
+   2.  Modifiez le nom de la valeur.
 
-    3.  Double-cliquez sur le nom et modifiez les données.
+   3.  Double-cliquez sur le nom et modifiez les données.
 
- Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
+   Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
 |Name|Type|Données|
-|----------|----------|----------|
+|-|-|-|
 |(Default)|REG_SZ|(valeur non définie)|
 |Classe|REG_SZ|**\<Nom de Namespace >. \<Nom de la classe >**|
 |CodeBase|REG_SZ|**\<Votre chemin d’accès >\\< votre nom de l’Assembly\>**|
@@ -195,7 +195,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
 |Name|Type|Données|
-|----------|----------|----------|
+|-|-|-|
 |(Default)|REG_SZ|(valeur non définie)|
 |Classe|REG_SZ|\<**Votre nom de classe complet**>|
 |Assembly|REG_SZ|\<**Votre nom de l’Assembly dans le GAC**>|

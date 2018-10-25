@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852743"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : Profiler une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L’application d’exemple est un récepteur d’événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d’événements de fonctionnalité. Le profileur Visual Studio vous permet de définir et supprimer la partie la plus coûteuse (exécution la plus lente) du projet, également connu sous le *chemin réactif*.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   [Ajout d’une fonctionnalité et un récepteur d’événements de fonctionnalité](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Ajout d’une fonctionnalité et un récepteur d’événements de fonctionnalité](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Configuration et déploiement de l’Application SharePoint](#BKMK_ConfigSharePointApp).  
+- [Configuration et déploiement de l’Application SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Exécution de l’Application SharePoint](#BKMK_RunSPApp).  
+- [Exécution de l’Application SharePoint](#BKMK_RunSPApp).  
   
--   [Affichage et interprétation des résultats de profilage](#BKMK_ViewResults).  
+- [Affichage et interprétation des résultats de profilage](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -52,23 +52,23 @@ ms.locfileid: "42634704"
   
 #### <a name="to-create-a-sharepoint-project"></a>Pour créer un projet SharePoint  
   
-1.  Dans la barre de menus, choisissez **fichier** > **New** > **projet** pour afficher le **nouveau projet** boîte de dialogue.  
+1. Dans la barre de menus, choisissez **fichier** > **New** > **projet** pour afficher le **nouveau projet** boîte de dialogue.  
   
-2.  Développez le **SharePoint** nœud sous **Visual C#** ou **Visual Basic**, puis choisissez le **2010** nœud.  
+2. Développez le **SharePoint** nœud sous **Visual C#** ou **Visual Basic**, puis choisissez le **2010** nœud.  
   
-3.  Dans le volet Modèles, choisissez le **projet SharePoint 2010** modèle.  
+3. Dans le volet Modèles, choisissez le **projet SharePoint 2010** modèle.  
   
-4.  Dans le **nom** , entrez **ProfileTest**, puis choisissez le **OK** bouton.  
+4. Dans le **nom** , entrez **ProfileTest**, puis choisissez le **OK** bouton.  
   
-     Le **Assistant Personnalisation de SharePoint** s’affiche.  
+    Le **Assistant Personnalisation de SharePoint** s’affiche.  
   
-5.  Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez l’URL pour le site du serveur SharePoint où vous souhaitez déboguer la définition de site ou utilisez l’emplacement par défaut (http://*nom système*/) .  
+5. Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez l’URL pour le site du serveur SharePoint où vous souhaitez déboguer la définition de site ou utilisez l’emplacement par défaut (http://<em>nom système</em>/) .  
   
-6.  Dans le **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez le **déployer en tant que solution de batterie** case d’option.  
+6. Dans le **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez le **déployer en tant que solution de batterie** case d’option.  
   
-     Actuellement, vous ne pouvez profiler que des solutions de batterie. Pour plus d’informations sur les solutions bac à sable par rapport aux solutions de batterie de serveurs, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
+    Actuellement, vous ne pouvez profiler que des solutions de batterie. Pour plus d’informations sur les solutions bac à sable par rapport aux solutions de batterie de serveurs, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Choisissez le **Terminer** bouton. Le projet s’affiche dans **l’Explorateur de solutions**.  
+7. Choisissez le **Terminer** bouton. Le projet s’affiche dans **l’Explorateur de solutions**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Ajouter une fonctionnalité et un récepteur d’événements de fonctionnalité
  Ensuite, ajoutez une fonctionnalité au projet avec un récepteur d’événements pour la fonctionnalité. Ce récepteur d'événements contiendra le code à profiler.  
@@ -215,7 +215,7 @@ ms.locfileid: "42634704"
      L’Assistant permet le profilage de l’application sur le serveur, affiche le **Explorateur de performances** fenêtre, puis génère, déploie et exécute l’application SharePoint.  
   
 ## <a name="run-the-sharepoint-application"></a>Exécutez l’application SharePoint
- Activez la fonctionnalité dans SharePoint, déclenchant le code d'événement `FeatureActivation` à exécuter.  
+ Activez la fonctionnalité dans SharePoint, déclenchant le code d’événement `FeatureActivation` à exécuter.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Pour exécuter l'application SharePoint  
   
@@ -261,7 +261,7 @@ ms.locfileid: "42634704"
   
 #### <a name="to-fix-the-code-and-reprofile-the-application"></a>Pour corriger le code et reprofiler l'application  
   
-1.  Dans le code du récepteur d'événements de fonctionnalité, commentez l'appel de méthode `TimeCounter` dans `FeatureActivated` pour empêcher tout appel.  
+1.  Dans le code du récepteur d’événements de fonctionnalité, commentez l’appel de méthode `TimeCounter` dans `FeatureActivated` pour empêcher tout appel.  
   
 2.  Enregistrez le projet.  
   

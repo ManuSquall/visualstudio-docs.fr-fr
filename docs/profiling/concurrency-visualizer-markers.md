@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bf0cd52e94ecd3765dd580d437a227f5c11c149d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884782"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
 Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représentent les événements d’une application.  En règle générale, l’application génère ces événements pour désigner les phases ou les occurrences d’une application.  Les événements peuvent être générés par l’application ou par les bibliothèques et les runtimes qu’utilise l’application.  
@@ -43,21 +43,21 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
 ## <a name="known-sources-of-markers"></a>Sources connues de marqueurs  
  Tous les fournisseurs ETW peuvent générer des marqueurs, tant qu’ils respectent certaines contraintes. Vous pouvez configurer le visualiseur concurrentiel pour qu’il écoute d’autres sources d’événements de marqueurs. Par défaut, le visualiseur écoute les sources d’événements suivantes :  
   
--   [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)  
+- [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)  
   
--   [La bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+- [La bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [Le flux de données](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+- [Le flux de données](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
--   [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
+- [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [Le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)  
+- [Le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)  
   
--   [Les marqueurs Scenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Les marqueurs Scenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
- Vous pouvez utiliser l’onglet Marqueurs de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) pour contrôler l’affichage des marqueurs provenant de différentes sources dans le visualiseur concurrentiel, et pour filtrer les marqueurs en fonction de leur importance et de leur catégorie.  
+  Vous pouvez utiliser l’onglet Marqueurs de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) pour contrôler l’affichage des marqueurs provenant de différentes sources dans le visualiseur concurrentiel, et pour filtrer les marqueurs en fonction de leur importance et de leur catégorie.  
   
 ## <a name="markers-from-eventsource"></a>Marqueurs EventSource  
  Le visualiseur concurrentiel peut également afficher des événements EventSource.  Pour plus d’informations, consultez [Visualiser des événements EventSource en tant que marqueurs](../profiling/visualizing-eventsource-events-as-markers.md).  

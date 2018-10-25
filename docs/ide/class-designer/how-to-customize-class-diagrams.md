@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour personnaliser des diagrammes de classes (Concepteur de classes)
+title: 'Comment : personnaliser des diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913213"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Guide pratique pour personnaliser des diagrammes de classes
 
@@ -108,7 +108,7 @@ Les sections qui contiennent des membres de type, telles que la section **Propri
 
 2. Cliquez avec le bouton droit sur le type avec l'association ou l'héritage masqué.
 
- Cliquez sur **Afficher tous les membres** pour les lignes d’association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d’héritage.
+   Cliquez sur **Afficher tous les membres** pour les lignes d’association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d’héritage.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Supprimer une forme dans un diagramme de classes
 Vous pouvez supprimer une forme de type dans le diagramme de classes sans affecter le code sous-jacent du type. La suppression de formes de type d'un diagramme de classes affecte uniquement ce diagramme : le code sous-jacent qui définit le type et les autres diagrammes qui affichent le type ne sont pas affectés.

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932310"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer les avertissements du compilateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plu
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Pour supprimer des avertissements spécifiques pour Visual Basic  
   
-1.  Dans l’**Explorateur de solutions**, choisissez le projet dans lequel vous souhaitez supprimer les avertissements.  
+1. Dans l’**Explorateur de solutions**, choisissez le projet dans lequel vous souhaitez supprimer les avertissements.  
   
-2.  Dans la barre de menus, choisissez **Projet**, **Décharger le projet**.  
+2. Dans la barre de menus, choisissez **Projet**, **Décharger le projet**.  
   
-3.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Modifier**_nom_projet_**.vbproj**.  
+3. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Modifier**_nom_projet_**.vbproj**.  
   
-     Le fichier projet s’ouvre dans l’éditeur de code.  
+    Le fichier projet s’ouvre dans l’éditeur de code.  
   
-4.  Recherchez l’élément `<NoWarn></NoWarn>` dans la configuration de build avec laquelle vous générez.  
+4. Recherchez l’élément `<NoWarn></NoWarn>` dans la configuration de build avec laquelle vous générez.  
   
-     L’exemple suivant montre l’élément `<NoWarn></NoWarn>` en gras pour la configuration de build Debug sur une plateforme x86 :  
+    L’exemple suivant montre l’élément `<NoWarn></NoWarn>` en gras pour la configuration de build Debug sur une plateforme x86 :  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Ajoutez un ou plusieurs numéros d’avertissement comme valeur de l’élément `<NoWarn>`. Si vous spécifiez plusieurs numéros d’avertissement, séparez-les par des virgules, comme illustré ci-dessous.  
+5. Ajoutez un ou plusieurs numéros d’avertissement comme valeur de l’élément `<NoWarn>`. Si vous spécifiez plusieurs numéros d’avertissement, séparez-les par des virgules, comme illustré ci-dessous.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  Enregistrez les modifications dans le fichier .vbproj.  
+6. Enregistrez les modifications dans le fichier .vbproj.  
   
-7.  Dans la barre de menus, choisissez **Projet**, **Recharger le projet**.  
+7. Dans la barre de menus, choisissez **Projet**, **Recharger le projet**.  
   
-8.  Dans la barre de menus, choisissez **Générer**, **Régénérer la solution**.  
+8. Dans la barre de menus, choisissez **Générer**, **Régénérer la solution**.  
   
-     La fenêtre **Sortie** n’affiche plus les avertissements que vous avez spécifiés.  
+    La fenêtre **Sortie** n’affiche plus les avertissements que vous avez spécifiés.  
   
- Pour plus d’informations, consultez [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Pour plus d’informations, consultez [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)   

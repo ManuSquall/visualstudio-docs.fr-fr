@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272231"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812742"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ Ces instructions générales peuvent être utiles si vous générez du code de p
  Autoriser un code personnalisé : générer des classes partielles.  
  Autoriser pour le code que vous écrivez à la main en outre le code généré. Il est rare qu’un schéma de génération de code pour être en mesure de prendre en compte toutes les variations possibles qui peuvent se produire. Par conséquent, vous devriez ajouter ou remplacer une partie du code généré. Où les données générées sont dans un langage .NET comme [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], deux stratégies sont particulièrement utiles :  
   
--   Les classes générées doivent être partielles. Vous pouvez ainsi ajouter du contenu au code généré.  
+- Les classes générées doivent être partielles. Vous pouvez ainsi ajouter du contenu au code généré.  
   
--   Classes doivent être générées par paires, une héritant de l’autre. La classe de base doit contenir toutes les propriétés et méthodes générées, et la classe dérivée doit contenir uniquement les constructeurs. Cela permet à votre code écrit manuellement remplacer les méthodes générées.  
+- Classes doivent être générées par paires, une héritant de l’autre. La classe de base doit contenir toutes les propriétés et méthodes générées, et la classe dérivée doit contenir uniquement les constructeurs. Cela permet à votre code écrit manuellement remplacer les méthodes générées.  
   
- Dans d’autres langages générés tels que XML, utilisez la `<#@include#>` directive pour créer des combinaisons simples du contenu généré et écrit manuellement. Dans les cas plus complexes, vous devrez peut-être écrire une étape de post-traitement qui combine le fichier généré avec les fichiers écrits manuellement.  
+  Dans d’autres langages générés tels que XML, utilisez la `<#@include#>` directive pour créer des combinaisons simples du contenu généré et écrit manuellement. Dans les cas plus complexes, vous devrez peut-être écrire une étape de post-traitement qui combine le fichier généré avec les fichiers écrits manuellement.  
   
- Déplacer le matériel commun dans les fichiers include ou les modèles au moment de l’exécution  
- Pour éviter de répéter des blocs identiques de texte et de code dans plusieurs modèles, utilisez la `<#@ include #>` directive. Pour plus d’informations, consultez [Directive Include de T4](../modeling/t4-include-directive.md).  
+  Déplacer le matériel commun dans les fichiers include ou les modèles au moment de l’exécution  
+  Pour éviter de répéter des blocs identiques de texte et de code dans plusieurs modèles, utilisez la `<#@ include #>` directive. Pour plus d’informations, consultez [Directive Include de T4](../modeling/t4-include-directive.md).  
   
- Vous pouvez également créer des modèles de texte de l’exécution dans un projet distinct et les appeler à partir du modèle au moment du design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet distinct. Pour obtenir des exemples, consultez [« L’héritage dans modèles de texte » dans le Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Vous pouvez également créer des modèles de texte de l’exécution dans un projet distinct et les appeler à partir du modèle au moment du design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet distinct. Pour obtenir des exemples, consultez [« L’héritage dans modèles de texte » dans le Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
   
- Envisagez de déplacer de grands blocs de code dans un assembly distinct.  
- Si vous avez des grands blocs de code et des blocs de fonctionnalité de classe, il peut être utile de déplacer une partie de ce code en méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la `<#@ assembly #>` directive pour accéder au code dans le modèle. Pour plus d’informations, consultez [Directive d’Assembly T4](../modeling/t4-assembly-directive.md).  
+  Envisagez de déplacer de grands blocs de code dans un assembly distinct.  
+  Si vous avez des grands blocs de code et des blocs de fonctionnalité de classe, il peut être utile de déplacer une partie de ce code en méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la `<#@ assembly #>` directive pour accéder au code dans le modèle. Pour plus d’informations, consultez [Directive d’Assembly T4](../modeling/t4-assembly-directive.md).  
   
- Vous pouvez placer les méthodes dans une classe abstraite qui peut hériter de celui-ci. La classe abstraite doit hériter <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Pour plus d’informations, consultez [Directive du modèle T4](../modeling/t4-template-directive.md).  
+  Vous pouvez placer les méthodes dans une classe abstraite qui peut hériter de celui-ci. La classe abstraite doit hériter <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Pour plus d’informations, consultez [Directive du modèle T4](../modeling/t4-template-directive.md).  
   
- Générer du code, pas les fichiers de configuration  
- Une méthode d’écriture d’une application variable consiste à écrire du code de programme générique qui accepte un fichier de configuration. Une application écrite de cette manière est très flexible et peut être reconfigurée lorsque les besoins changent, sans recréer l’application. Toutefois, l’inconvénient de cette approche est que l’application sera moins performante qu’une application plus spécifique. En outre, son code de programme sera plus difficile à lire et à gérer, en partie parce qu’il doit toujours prendre en compte avec les types les plus génériques.  
+  Générer du code, pas les fichiers de configuration  
+  Une méthode d’écriture d’une application variable consiste à écrire du code de programme générique qui accepte un fichier de configuration. Une application écrite de cette manière est très flexible et peut être reconfigurée lorsque les besoins changent, sans recréer l’application. Toutefois, l’inconvénient de cette approche est que l’application sera moins performante qu’une application plus spécifique. En outre, son code de programme sera plus difficile à lire et à gérer, en partie parce qu’il doit toujours prendre en compte avec les types les plus génériques.  
   
- En revanche, une application dont les parties variables sont générées avant la compilation peut être fortement typée. Cela rend beaucoup plus faciles et plus fiables pour écrire du code écrit manuellement et l’intégrer avec les parties du logiciel.  
+  En revanche, une application dont les parties variables sont générées avant la compilation peut être fortement typée. Cela rend beaucoup plus faciles et plus fiables pour écrire du code écrit manuellement et l’intégrer avec les parties du logiciel.  
   
- Pour obtenir le meilleur parti de la génération de code, essayez de générer du code de programme au lieu de fichiers de configuration.  
+  Pour obtenir le meilleur parti de la génération de code, essayez de générer du code de programme au lieu de fichiers de configuration.  
   
- Utiliser un dossier Code généré  
- Placez les modèles et les fichiers générés dans un dossier de projet nommé **le Code généré**, afin de pouvoir effacer que ceux-ci ne sont pas des fichiers qui doivent être modifiées directement. Si vous créez un code personnalisé pour remplacer ou compléter les classes générées, placez ces classes dans un dossier nommé **Code personnalisé**. La structure d’un projet classique ressemble à ceci :  
+  Utiliser un dossier Code généré  
+  Placez les modèles et les fichiers générés dans un dossier de projet nommé **le Code généré**, afin de pouvoir effacer que ceux-ci ne sont pas des fichiers qui doivent être modifiées directement. Si vous créez un code personnalisé pour remplacer ou compléter les classes générées, placez ces classes dans un dossier nommé **Code personnalisé**. La structure d’un projet classique ressemble à ceci :  
   
 ```  
 MyProject  

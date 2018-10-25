@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_lengthProlog | Documents Microsoft
+title: IDiaFrameData::get_lengthProlog | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8033e0f769c0222dc8c3ee90d680ea6f2de279fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843078"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 Récupère le nombre d’octets de code de prologue dans le bloc.  
@@ -40,7 +40,7 @@ HRESULT get_lengthProlog (
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le code de prologue est une séquence d’instructions qui conserve les registres, définit l’état de l’UC et établit la pile pour la fonction.  
+ Le code de prologue est une séquence d’instructions qui préserve des registres, définit l’état du processeur et établit la pile pour la fonction.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830676"
 ---
 # <a name="resources-in-vspackages"></a>Ressources dans VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ Vous pouvez incorporer des ressources localisées dans native interface utilisat
   
  Certaines ressources ne peut pas être incorporés dans les VSPackages. Les types managés suivants peuvent être incorporés :  
   
--   Chaînes  
+- Chaînes  
   
--   Clés de chargement de package (qui sont également des chaînes)  
+- Clés de chargement de package (qui sont également des chaînes)  
   
--   Icônes de fenêtre outil  
+- Icônes de fenêtre outil  
   
--   Fichiers de sortie de Table de commande (directeur) compilés  
+- Fichiers de sortie de Table de commande (directeur) compilés  
   
--   Bitmaps de directeur technique  
+- Bitmaps de directeur technique  
   
--   Aide en ligne de commande  
+- Aide en ligne de commande  
   
--   À propos des données de boîte de dialogue  
+- À propos des données de boîte de dialogue  
   
- Ressources dans un package managé sont sélectionnées par l’ID de ressource. Une exception est le fichier de directeur technique, qui doit être nommé CTMENU. Le fichier de directeur technique doit apparaître dans la table de ressources comme un `byte[]`. Tous les autres éléments de ressource sont identifiés par type.  
+  Ressources dans un package managé sont sélectionnées par l’ID de ressource. Une exception est le fichier de directeur technique, qui doit être nommé CTMENU. Le fichier de directeur technique doit apparaître dans la table de ressources comme un `byte[]`. Tous les autres éléments de ressource sont identifiés par type.  
   
- Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attribut pour indiquer au [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que les ressources managées sont disponibles.  
+  Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attribut pour indiquer au [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que les ressources managées sont disponibles.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Paramètre <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de cette manière indique que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit ignorer la DLL satellites non géré lorsqu’il recherche des ressources, par exemple, à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rencontre deux ou plusieurs ressources qui ont le même ID de ressource, il utilise la première ressource qu’il trouve.  
+  Paramètre <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de cette manière indique que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit ignorer la DLL satellites non géré lorsqu’il recherche des ressources, par exemple, à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rencontre deux ou plusieurs ressources qui ont le même ID de ressource, il utilise la première ressource qu’il trouve.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant est une représentation managée d’une icône de fenêtre outil.  

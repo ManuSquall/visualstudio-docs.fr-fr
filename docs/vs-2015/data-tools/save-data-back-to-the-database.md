@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829638"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215161"
   
 Le jeu de données est une copie en mémoire des données. Si vous modifiez ces données, il est conseillé d’enregistrer ces modifications dans la base de données. Pour cela de trois manières :  
   
--   En appelant une de le `Update` méthodes d’un TableAdapter  
+- En appelant une de le `Update` méthodes d’un TableAdapter  
   
--   En appelant une des méthodes DBDirect du TableAdapter  
+- En appelant une des méthodes DBDirect du TableAdapter  
   
--   En appelant la méthode UpdateAll sur le `TableAdapterManager` généré par Visual Studio pour vous lorsque le jeu de données contient des tables qui sont liées à d’autres tables dans le jeu de données  
+- En appelant la méthode UpdateAll sur le `TableAdapterManager` généré par Visual Studio pour vous lorsque le jeu de données contient des tables qui sont liées à d’autres tables dans le jeu de données  
   
- Lors de la lier des données des tables de jeu de données aux contrôles sur une page Windows Form ou XAML, l’architecture de liaison de données fait tout le travail pour vous.  
+  Lors de la lier des données des tables de jeu de données aux contrôles sur une page Windows Form ou XAML, l’architecture de liaison de données fait tout le travail pour vous.  
   
- Si vous êtes familiarisé avec les TableAdapters, vous pouvez passer directement à une des rubriques suivantes :  
+  Si vous êtes familiarisé avec les TableAdapters, vous pouvez passer directement à une des rubriques suivantes :  
   
 |Rubrique|Description|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
  Pour empêcher les violations de contrainte prématurées, vous pouvez interrompre temporairement les contraintes de mise à jour. Cela a deux objectifs :  
   
--   Il empêche une erreur ne soit levée une fois que vous avez terminé la mise à jour une colonne mais que vous n’avez pas commencé la mise à jour à un autre.  
+- Il empêche une erreur ne soit levée une fois que vous avez terminé la mise à jour une colonne mais que vous n’avez pas commencé la mise à jour à un autre.  
   
--   Il empêche la mise à jour de certains événements ne soient pas déclenchés (les événements sont souvent utilisés pour la validation).  
+- Il empêche la mise à jour de certains événements ne soient pas déclenchés (les événements sont souvent utilisés pour la validation).  
   
- Après avoir effectué une mise à jour, vous pouvez réactiver la vérification des contraintes, ce qui active les événements de mise à jour de nouveau et déclenche également les.  
+  Après avoir effectué une mise à jour, vous pouvez réactiver la vérification des contraintes, ce qui active les événements de mise à jour de nouveau et déclenche également les.  
   
 > [!NOTE]
 >  Dans Windows Forms, l’architecture de liaison de données qui est intégrée à la grille de données interrompt la contrainte de vérification jusqu'à ce que le focus se déplace en dehors d’une ligne, et il est inutile d’appeler explicitement la <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, ou <xref:System.Data.DataRow.CancelEdit%2A> méthodes.  
@@ -177,33 +177,33 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
  Si les modifications reflètent l’état actuel de la source de données, vous n’avez plus besoin de conserver ces informations. En règle générale, voici les deux heures lorsque le jeu de données et sa source sont synchronisés :  
   
--   Immédiatement après le chargement des informations dans le jeu de données, telles que lorsque vous lisez des données à partir de la source.  
+- Immédiatement après le chargement des informations dans le jeu de données, telles que lorsque vous lisez des données à partir de la source.  
   
--   Après l’envoi des modifications du jeu de données à la source de données (mais pas avant, car vous perdrez les informations de modification qui sont nécessaire pour envoyer les modifications à la base de données).  
+- Après l’envoi des modifications du jeu de données à la source de données (mais pas avant, car vous perdrez les informations de modification qui sont nécessaire pour envoyer les modifications à la base de données).  
   
- Vous pouvez valider les modifications en attente pour le jeu de données en appelant le <xref:System.Data.DataSet.AcceptChanges%2A> (méthode). En règle générale, <xref:System.Data.DataSet.AcceptChanges%2A> est appelée pendant les heures suivantes dans votre application.  
+  Vous pouvez valider les modifications en attente pour le jeu de données en appelant le <xref:System.Data.DataSet.AcceptChanges%2A> (méthode). En règle générale, <xref:System.Data.DataSet.AcceptChanges%2A> est appelée pendant les heures suivantes dans votre application.  
   
--   Après avoir chargé le jeu de données. Si vous chargez un jeu de données en appelant d’un TableAdapter `Fill` (méthode), puis l’adaptateur valide automatiquement les modifications pour vous. Toutefois, si vous chargez un jeu de données en y fusionnant un autre jeu de données, vous devez valider les modifications manuellement.  
+- Après avoir chargé le jeu de données. Si vous chargez un jeu de données en appelant d’un TableAdapter `Fill` (méthode), puis l’adaptateur valide automatiquement les modifications pour vous. Toutefois, si vous chargez un jeu de données en y fusionnant un autre jeu de données, vous devez valider les modifications manuellement.  
   
-    > [!NOTE]
-    >  Vous pouvez empêcher l’adaptateur de validation des modifications automatiquement lorsque vous appelez le `Fill` méthode en définissant le `AcceptChangesDuringFill` propriété de l’adaptateur à `false`. Si elle est définie sur `false`, puis le <xref:System.Data.DataRow.RowState%2A> de chaque ligne est insérée lors du remplissage est définie sur <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  Vous pouvez empêcher l’adaptateur de validation des modifications automatiquement lorsque vous appelez le `Fill` méthode en définissant le `AcceptChangesDuringFill` propriété de l’adaptateur à `false`. Si elle est définie sur `false`, puis le <xref:System.Data.DataRow.RowState%2A> de chaque ligne est insérée lors du remplissage est définie sur <xref:System.Data.DataRowState>.  
   
--   Une fois que vous envoyez les modifications de jeu de données à un autre processus, comme un service Web XML.  
+- Une fois que vous envoyez les modifications de jeu de données à un autre processus, comme un service Web XML.  
   
-    > [!CAUTION]
-    >  Validation de la modification de cette façon efface toutes les informations modifiées. Ne pas valider les modifications jusqu'à ce qu’après avoir terminent des opérations nécessitant de votre application pour savoir quelles modifications ont été apportées dans le jeu de données.  
+  > [!CAUTION]
+  >  Validation de la modification de cette façon efface toutes les informations modifiées. Ne pas valider les modifications jusqu'à ce qu’après avoir terminent des opérations nécessitant de votre application pour savoir quelles modifications ont été apportées dans le jeu de données.  
   
- Cette méthode effectue les opérations suivantes :  
+  Cette méthode effectue les opérations suivantes :  
   
--   Écrit le <xref:System.Data.DataRowVersion> version d’un enregistrement dans son <xref:System.Data.DataRowVersion> version et remplace la version d’origine.  
+- Écrit le <xref:System.Data.DataRowVersion> version d’un enregistrement dans son <xref:System.Data.DataRowVersion> version et remplace la version d’origine.  
   
--   Supprime toute ligne où le <xref:System.Data.DataRow.RowState%2A> propriété est définie sur <xref:System.Data.DataRowState>.  
+- Supprime toute ligne où le <xref:System.Data.DataRow.RowState%2A> propriété est définie sur <xref:System.Data.DataRowState>.  
   
--   Définit le <xref:System.Data.DataRow.RowState%2A> propriété d’un enregistrement à <xref:System.Data.DataRowState>.  
+- Définit le <xref:System.Data.DataRow.RowState%2A> propriété d’un enregistrement à <xref:System.Data.DataRowState>.  
   
- Le <xref:System.Data.DataSet.AcceptChanges%2A> méthode est disponible à trois niveaux. Vous pouvez l’appeler sur un <xref:System.Data.DataRow> objet aux validations est modifié pour simplement cette ligne. Vous pouvez également l’appeler sur un <xref:System.Data.DataTable> objet à valider toutes les lignes dans une table. Enfin, vous pouvez l’appeler sur le <xref:System.Data.DataSet> objet à valider toutes les modifications en attente dans tous les enregistrements de toutes les tables du jeu de données.  
+  Le <xref:System.Data.DataSet.AcceptChanges%2A> méthode est disponible à trois niveaux. Vous pouvez l’appeler sur un <xref:System.Data.DataRow> objet aux validations est modifié pour simplement cette ligne. Vous pouvez également l’appeler sur un <xref:System.Data.DataTable> objet à valider toutes les lignes dans une table. Enfin, vous pouvez l’appeler sur le <xref:System.Data.DataSet> objet à valider toutes les modifications en attente dans tous les enregistrements de toutes les tables du jeu de données.  
   
- Le tableau suivant décrit les modifications sont validées selon ce que la méthode est appelée sur l’objet.  
+  Le tableau suivant décrit les modifications sont validées selon ce que la méthode est appelée sur l’objet.  
   
 |Méthode|Résultat|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
  Vous pouvez valider les données de plusieurs manières :  
   
--   Dans la couche métier, en ajoutant du code à votre application pour valider les données. Le jeu de données est un seul endroit, vous pouvez le faire. Le jeu de données fournit quelques-uns des avantages de la validation de serveur principal, telles que la capacité à valider les modifications que la modifiant des valeurs de colonne et de ligne. Pour plus d’informations, consultez [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md).  
+- Dans la couche métier, en ajoutant du code à votre application pour valider les données. Le jeu de données est un seul endroit, vous pouvez le faire. Le jeu de données fournit quelques-uns des avantages de la validation de serveur principal, telles que la capacité à valider les modifications que la modifiant des valeurs de colonne et de ligne. Pour plus d’informations, consultez [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md).  
   
--   Dans la couche de présentation, en ajoutant la validation aux formulaires. Pour plus d’informations, consultez [Validation des entrées utilisateur dans les Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- Dans la couche de présentation, en ajoutant la validation aux formulaires. Pour plus d’informations, consultez [Validation des entrées utilisateur dans les Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   Dans les données back-end, en envoyant des données à la source de données, par exemple, la base de données et en l’autorisant à accepter ou refuser les données. Si vous travaillez avec une base de données qui a des fonctionnalités évoluées de validation des données et fournir des informations d’erreur, cela peut être une approche pratique, car vous pouvez valider les données, quel que soit l’emplacement d’origine. Toutefois, cette approche ne peut pas satisfaire les exigences de la validation spécifique à l’application. En outre, la source de données valider des données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la façon dont votre application facilite la résolution des erreurs de validation déclenchés par le serveur principal.  
+- Dans les données back-end, en envoyant des données à la source de données, par exemple, la base de données et en l’autorisant à accepter ou refuser les données. Si vous travaillez avec une base de données qui a des fonctionnalités évoluées de validation des données et fournir des informations d’erreur, cela peut être une approche pratique, car vous pouvez valider les données, quel que soit l’emplacement d’origine. Toutefois, cette approche ne peut pas satisfaire les exigences de la validation spécifique à l’application. En outre, la source de données valider des données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la façon dont votre application facilite la résolution des erreurs de validation déclenchés par le serveur principal.  
   
-    > [!IMPORTANT]
-    >  Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Les utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires dans le but d’obtenir un accès non autorisé ou d’endommager la base de données. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Les utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires dans le but d’obtenir un accès non autorisé ou d’endommager la base de données. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Une fois que les modifications ont été apportées dans un jeu de données, vous pouvez transmettre les modifications apportées à une source de données. En règle générale, ce faire, appelez le `Update` méthode d’un TableAdapter (ou adaptateur de données). La méthode parcourt chaque enregistrement dans une table de données détermine quel type de mise à jour est nécessaire (update, insert ou delete), le cas échéant, puis exécute la commande appropriée.  
+  Une fois que les modifications ont été apportées dans un jeu de données, vous pouvez transmettre les modifications apportées à une source de données. En règle générale, ce faire, appelez le `Update` méthode d’un TableAdapter (ou adaptateur de données). La méthode parcourt chaque enregistrement dans une table de données détermine quel type de mise à jour est nécessaire (update, insert ou delete), le cas échéant, puis exécute la commande appropriée.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Transmission des mises à jour à la source de données  
  En guise d’illustration de la façon dont les mises à jour sont effectuées, supposons que votre application utilise un jeu de données qui contient une table de données unique. L’application extrait les deux lignes de la base de données. Après la récupération, la table de données en mémoire ressemble à ceci :  

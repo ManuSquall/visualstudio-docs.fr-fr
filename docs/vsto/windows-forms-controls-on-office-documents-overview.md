@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892777"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Contrôles Windows Forms dans les documents Office
   Les contrôles Windows Forms sont des objets avec lesquels les utilisateurs peuvent interagir pour entrer ou manipuler des données. Dans les projets au niveau du document pour Microsoft Office Excel et Microsoft Office Word, vous pouvez ajouter des contrôles Windows Forms au document ou au classeur dans votre projet au moment du design, ou vous pouvez ajouter par programmation de ces contrôles lors de l’exécution. Vous pouvez ajouter par programmation ces contrôles à tout document ouvert ou d’une feuille de calcul lors de l’exécution dans un complément, VSTO pour Excel ou Word.  
@@ -52,25 +52,25 @@ ms.locfileid: "35671201"
  Dans un document.  
  -   Lorsque vous souhaitez afficher les contrôles en permanence.  
   
--   Lorsque vous souhaitez que les utilisateurs entrent des données directement dans le document, par exemple dans des documents basés sur des formulaires où la surface d’édition est verrouillée.  
+- Lorsque vous souhaitez que les utilisateurs entrent des données directement dans le document, par exemple dans des documents basés sur des formulaires où la surface d’édition est verrouillée.  
   
--   Lorsque vous souhaitez que les contrôles soient alignés avec les données dans le document. Par exemple, si vous ajoutez des boutons à chaque ligne d’un objet de liste, il vaut mieux qu’ils soient alignés avec chaque élément de liste.  
+- Lorsque vous souhaitez que les contrôles soient alignés avec les données dans le document. Par exemple, si vous ajoutez des boutons à chaque ligne d’un objet de liste, il vaut mieux qu’ils soient alignés avec chaque élément de liste.  
   
- Dans le volet d’actions ou un volet Office personnalisé.  
- -   Lorsque vous souhaitez fournir des informations contextuelles à l’utilisateur.  
+  Dans le volet d’actions ou un volet Office personnalisé.  
+  -   Lorsque vous souhaitez fournir des informations contextuelles à l’utilisateur.  
   
--   Lorsque vous souhaitez que seuls les résultats, et non les contrôles de requête et les données, apparaissent dans le document.  
+- Lorsque vous souhaitez que seuls les résultats, et non les contrôles de requête et les données, apparaissent dans le document.  
   
--   Lorsque vous souhaitez vous assurer que les contrôles ne soient pas imprimés avec le document.  
+- Lorsque vous souhaitez vous assurer que les contrôles ne soient pas imprimés avec le document.  
   
--   Lorsque vous souhaitez vous assurer que les contrôles n’interfèrent pas avec la vue du document.  
+- Lorsque vous souhaitez vous assurer que les contrôles n’interfèrent pas avec la vue du document.  
   
- Dans un Windows Form.  
- -   Lorsque vous souhaitez contrôler la taille de l’interface utilisateur.  
+  Dans un Windows Form.  
+  -   Lorsque vous souhaitez contrôler la taille de l’interface utilisateur.  
   
--   Lorsque vous souhaitez empêcher les utilisateurs de masquer ou de supprimer les contrôles.  
+- Lorsque vous souhaitez empêcher les utilisateurs de masquer ou de supprimer les contrôles.  
   
--   Lorsque vous souhaitez obtenir des informations à partir de l’utilisateur et l’empêcher de faire quoi que ce soit dans le document avant que ces informations aient été reçues.  
+- Lorsque vous souhaitez obtenir des informations à partir de l’utilisateur et l’empêcher de faire quoi que ce soit dans le document avant que ces informations aient été reçues.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Ajouter des contrôles Windows Forms par programmation  
  Vous pouvez ajouter des contrôles Windows Forms aux documents Word et les feuilles de calcul Excel lors de l’exécution. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] fournit des méthodes d’assistance pour ajouter les contrôles Windows Forms les plus courants. Ces méthodes d’assistance vous permettent d’ajouter rapidement des contrôles à votre document Office et d’accéder à la fonctionnalité Windows Forms et Office combinée de ces contrôles.  
@@ -134,13 +134,13 @@ ms.locfileid: "35671201"
   
  Lorsque vous ajoutez un contrôle à un document Word lors de l’exécution, vous pouvez spécifier le style de disposition du nouveau contrôle en utilisant différents `Add` \< *classe contrôle*> surcharges de méthode de la <xref:Microsoft.Office.Tools.Word.ControlCollection> classe :  
   
--   Pour aligner le contrôle avec le texte, utilisez une surcharge qui accepte un <xref:Microsoft.Office.Interop.Word.Range> qui spécifie l’emplacement du contrôle.  
+- Pour aligner le contrôle avec le texte, utilisez une surcharge qui accepte un <xref:Microsoft.Office.Interop.Word.Range> qui spécifie l’emplacement du contrôle.  
   
--   Pour ajouter le contrôle en tant que forme flottante, utilisez une surcharge qui accepte les coordonnées de gauche et supérieure du contrôle.  
+- Pour ajouter le contrôle en tant que forme flottante, utilisez une surcharge qui accepte les coordonnées de gauche et supérieure du contrôle.  
   
- Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Si vous ouvrez un modèle Word dans le concepteur Visual Studio, les contrôles non inline sur le modèle ne seront peut-être pas visibles, car Visual Studio ouvre le modèle en mode **Normal** . Pour afficher les contrôles, basculez en mode **Page**.  
+  Si vous ouvrez un modèle Word dans le concepteur Visual Studio, les contrôles non inline sur le modèle ne seront peut-être pas visibles, car Visual Studio ouvre le modèle en mode **Normal** . Pour afficher les contrôles, basculez en mode **Page**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Contrôles en dehors du corps du document principal  
  Les contrôles Windows Forms ne sont pas pris en charge dans un en-tête ou un pied de page, ni dans un sous-document.  

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853140"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Créer des pages d’application pour SharePoint
   Un *page application* est une page Web ASP.NET qui est conçue pour une utilisation dans un site SharePoint Web. Pages d’application sont un type spécialisé de page ASP.NET. La principale différence entre une page d’application et une page ASP.NET standard est qu’une page d’application contient du contenu est fusionné avec une page maître SharePoint. Une page maître permet aux pages d’application à partager la même apparence et le même comportement que les autres pages sur un site.  
@@ -67,7 +67,7 @@ ms.locfileid: "36326125"
   
  Vous pouvez déboguer une page d’application même manière que vous le feriez avec d’autres éléments de projet SharePoint dans Visual Studio. Lorsque vous démarrez le débogueur Visual Studio, Visual Studio ouvre le site SharePoint.  
   
- Pour afficher la page d’application, vous devez accéder manuellement à l’emplacement de la page d’application (par exemple : http://*nom_serveur*/_layouts/*Project_Name*  /ApplicationPage1.aspx).  
+ Pour afficher la page d’application, vous devez accéder manuellement à l’emplacement de la page d’application (par exemple : http://<em>nom_serveur</em>/_layouts/*Project_Name*  /ApplicationPage1.aspx).  
   
  Pour plus d’informations sur le débogage de projets SharePoint, consultez [solutions SharePoint de résoudre les problèmes](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference | Documents Microsoft
+title: IDebugObject::IsNullReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a886bf56cfafc615099aa489f9d329229ea8727
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6b5108d9fd830c047c020d4b3adab2526854e6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939694"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 Teste si cet objet est une référence null.  
@@ -47,7 +47,7 @@ int IsNullReference(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Une référence null signifie un objet vide ou un objet qui n’a pas été affecté à.  
+ Une référence null signifie qu’un objet vide ou un objet qui n’a pas été affecté à.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928956"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
   Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail 2007 SharePoint](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -53,21 +53,21 @@ ms.locfileid: "37118931"
 ### <a name="resolution"></a>Résolution  
  Pour les noms de projets et d'éléments de projet SharePoint, utilisez uniquement les caractères suivants :  
   
--   Caractères ASCII alphanumériques  
+- Caractères ASCII alphanumériques  
   
--   Espace  
+- Espace  
   
--   Point (.)  
+- Point (.)  
   
--   Virgule ()  
+- Virgule ()  
   
--   Trait de soulignement (_)  
+- Trait de soulignement (_)  
   
--   Tiret (-)  
+- Tiret (-)  
   
--   Barre oblique inverse (\\)  
+- Barre oblique inverse (\\)  
   
- Lorsqu’un projet est empaqueté, une règle de validation vérifie que la propriété du chemin d’accès de déploiement de chaque fichier déployé contient uniquement ces caractères valides.  
+  Lorsqu’un projet est empaqueté, une règle de validation vérifie que la propriété du chemin d’accès de déploiement de chaque fichier déployé contient uniquement ces caractères valides.  
   
 ## <a name="errors-when-creating-custom-fields"></a>Erreurs lors de la création de champs personnalisés
  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], les champs personnalisés sont définis dans XML. Des erreurs peuvent survenir si un champ n'est pas défini, ni référencé à l'aide d'un format spécifique.  
@@ -147,15 +147,15 @@ ms.locfileid: "37118931"
 ### <a name="resolution"></a>Résolution  
  Ce problème se produit car l’étendue de fonctionnalité doit être « Site » pour gérer les événements au niveau du site, mais l’étendue de fonctionnalité par défaut pour les projets de récepteur d’événement est « Web ». Les événements Web affectés sont :  
   
--   Un site est en cours de suppression (WebDeleting)  
+- Un site est en cours de suppression (WebDeleting)  
   
--   Un site a été supprimé (WebDeleted)  
+- Un site a été supprimé (WebDeleted)  
   
--   Un site est en cours de déplacement (WebMoving)  
+- Un site est en cours de déplacement (WebMoving)  
   
--   Un site a été déplacé (WebMoved)  
+- Un site a été déplacé (WebMoved)  
   
- Pour résoudre le problème, modifiez l’étendue de la fonctionnalité du récepteur d’événements, comme suit.  
+  Pour résoudre le problème, modifiez l’étendue de la fonctionnalité du récepteur d’événements, comme suit.  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Pour modifier l’étendue de fonctionnalité du récepteur d’événements  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37118931"
  Ce problème se produit si vous renommez une instance de liste importée et exécutez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Message d'erreur
- Erreur de build : une erreur s’est produite à l’étape de déploiement « Activer les fonctionnalités » : le fichier Template\Features\\[*importer le projet**fonctionnalité**nom*] \Files\Lists\\[*ancien ** nom de la liste*] \Schema.xml n’existe pas.  
+ Erreur de build : une erreur s’est produite à l’étape de déploiement « Activer les fonctionnalités » : le fichier Template\Features\\[*importer le projet*<em>fonctionnalité</em>*nom*] \Files\Lists \\[*ancien*<em>nom de la liste</em>] \Schema.xml n’existe pas.  
   
 ### <a name="resolution"></a>Résolution  
  Lorsque vous importez une instance de liste, un attribut nommé CustomSchema est ajouté au fichier Elements.xml de l’instance de liste. Le fichier Elements.XML inclut le chemin d’accès d’un fichier schema.xml personnalisé pour l’instance de liste. Lorsque vous renommez l’instance de liste dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], modifie le chemin d’accès de déploiement pour le fichier schema.xml personnalisé, mais la valeur de chemin d’accès de l’attribut CustomSchema n’est pas mis à jour. Par conséquent, l’instance de liste ne peut pas trouver le *schema.xml* fichier dans l’ancien chemin d’accès spécifié par l’attribut CustomSchema lorsque la fonctionnalité est activée.  

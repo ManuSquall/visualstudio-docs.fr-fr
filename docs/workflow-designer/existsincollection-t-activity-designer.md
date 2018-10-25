@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3525cb3f983495cc11403c1fcb419de43c5059
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 59ec7e9df4088c21820fa5fec319ab3e4ac10f78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853228"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > Concepteur d’activités
 
@@ -25,7 +25,7 @@ Le **ExistsInCollection\<T >** ActivityDesigner est utilisé pour créer et conf
 
 ## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > activité
 
-L'activité <xref:System.Activities.Statements.ExistsInCollection%601> détermine si un élément spécifié existe dans une collection particulière.
+L’activité <xref:System.Activities.Statements.ExistsInCollection%601> détermine si un élément spécifié existe dans une collection particulière.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>À l’aide de ExistsInCollection\<T > Concepteur d’activités
 
@@ -38,7 +38,7 @@ Le **ExistsInCollection\<T >** Concepteur d’activités peut être déplacé de
 Le tableau suivant présente le <xref:System.Activities.Statements.ExistsInCollection%601> propriétés et décrit comment elles sont utilisées dans le concepteur :
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.ExistsInCollection%601>. La valeur par défaut est ExistsInCollection < Int32\>. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|L’élément à rechercher dans la Collection\<T >. Cet élément est de type *T*, qui est de type *TypeArgument*. Pour spécifier l'élément, tapez une expression Visual Basic dans la grille des propriétés.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Collection dans laquelle vérifier l’existence de l’élément. Cette collection est de type **ICollection < TypeArgument\>.** Pour spécifier la collection, tapez une expression Visual Basic dans la grille des propriétés.|

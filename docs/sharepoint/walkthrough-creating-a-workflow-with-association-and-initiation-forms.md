@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873875"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation
   Cette procédure pas à pas montre comment créer un workflow séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation. Il s’agit de formulaires ASPX permettant d’activer les paramètres à ajouter à un flux de travail lorsqu’il est tout d’abord associée par l’administrateur SharePoint (formulaire d’association), et lorsque le workflow est démarré par l’utilisateur (le formulaire d’initiation).  
   
  Cette procédure pas à pas décrit un scénario où un utilisateur souhaite créer un workflow d’approbation des notes de frais qui exige les éléments suivants :  
   
--   Lorsque le flux de travail est associé à une liste, l’administrateur est invité avec un formulaire d’association où ils entrent une limite de dollar des notes de frais.  
+- Lorsque le flux de travail est associé à une liste, l’administrateur est invité avec un formulaire d’association où ils entrent une limite de dollar des notes de frais.  
   
--   Employés charger leurs rapports de dépenses dans la liste de Documents partagés, démarrer le flux de travail, puis entrez le coût total dans le formulaire d’initiation du flux de travail.  
+- Employés charger leurs rapports de dépenses dans la liste de Documents partagés, démarrer le flux de travail, puis entrez le coût total dans le formulaire d’initiation du flux de travail.  
   
--   Si une note de frais des employés total dépasse la limite prédéfinie de l’administrateur, une tâche est créée pour le Gestionnaire de l’employé approuver la note de frais. Toutefois, si le total de rapports de dépenses d’un employé est inférieur ou égal à la limite de dépense, un message d’auto-approuvés est écrite dans l’historique du flux de travail.  
+- Si une note de frais des employés total dépasse la limite prédéfinie de l’administrateur, une tâche est créée pour le Gestionnaire de l’employé approuver la note de frais. Toutefois, si le total de rapports de dépenses d’un employé est inférieur ou égal à la limite de dépense, un message d’auto-approuvés est écrite dans l’historique du flux de travail.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d’un projet de workflow séquentiel de définition de liste SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Création d’un projet de workflow séquentiel de définition de liste SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Création d’une planification de flux de travail.  
+- Création d’une planification de flux de travail.  
   
--   Gestion des événements d’activité de flux de travail.  
+- Gestion des événements d’activité de flux de travail.  
   
--   Création des formulaires d’association et d’initiation du flux de travail.  
+- Création des formulaires d’association et d’initiation du flux de travail.  
   
--   Associer le flux de travail.  
+- Associer le flux de travail.  
   
--   Démarrage manuel du flux de travail.  
+- Démarrage manuel du flux de travail.  
   
 > [!NOTE]  
 >  Bien que cette procédure pas à pas utilise un projet de workflow séquentiel, le processus est identique pour les workflows machine à états.  

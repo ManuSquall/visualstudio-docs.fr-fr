@@ -17,43 +17,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcffae0cadfb5973b532fcca5b0356eba004762
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 25d8d12b8ad49b40309845def60964c13a3da708
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919389"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Comment : créer des associations de fichiers pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications peuvent être associées à une ou plusieurs extensions de nom de fichier afin que l’application démarrera automatiquement quand l’utilisateur ouvre un fichier de ces types. Ajout du support d’extension de nom de fichier à un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est simple.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Pour créer des associations de fichiers pour une application ClickOnce  
   
-1.  Créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application normalement, ou utilisez votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
+1. Créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application normalement, ou utilisez votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
   
-2.  Ouvrez le manifeste d’application avec un texte ou un éditeur XML, tel que le bloc-notes.  
+2. Ouvrez le manifeste d’application avec un texte ou un éditeur XML, tel que le bloc-notes.  
   
-3.  Recherchez l'élément `assembly`. Pour plus d’informations, consultez [manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md).  
+3. Recherchez l’élément `assembly` . Pour plus d’informations, consultez [manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-4.  En tant qu’enfant de le `assembly` élément, ajoutez un `fileAssociation` élément. Le `fileAssociation` élément présente quatre attributs :  
+4. En tant qu’enfant de le `assembly` élément, ajoutez un `fileAssociation` élément. Le `fileAssociation` élément présente quatre attributs :  
   
-    -   `extension`: L’extension de nom de fichier à associer avec l’application.  
+   - `extension`: L’extension de nom de fichier à associer avec l’application.  
   
-    -   `description`: Description du type de fichier, qui apparaîtra dans l’interpréteur de commandes Windows.  
+   - `description`: Description du type de fichier, qui apparaîtra dans l’interpréteur de commandes Windows.  
   
-    -   `progid`: Chaîne identifiant de manière unique le type de fichier pour le marquer dans le Registre.  
+   - `progid`: Chaîne identifiant de manière unique le type de fichier pour le marquer dans le Registre.  
   
-    -   `defaultIcon`: Une icône à utiliser pour ce type de fichier. L’icône doit être ajoutée comme une ressource de fichier dans le manifeste d’application. Pour plus d'informations, consultez [Comment : inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Une icône à utiliser pour ce type de fichier. L’icône doit être ajoutée comme une ressource de fichier dans le manifeste d’application. Pour plus d'informations, consultez [Comment : inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Pour obtenir un exemple de la `file` et `fileAssociation` éléments, consultez [ \<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md).  
   
-5.  Si vous souhaitez associer plusieurs types de fichier à l’application, ajoutez d’autres `fileAssociation` éléments. Notez que le `progid` attribut doit être différent pour chacun.  
+5. Si vous souhaitez associer plusieurs types de fichier à l’application, ajoutez d’autres `fileAssociation` éléments. Notez que le `progid` attribut doit être différent pour chacun.  
   
-6.  Une fois que vous avez terminé avec le manifeste d’application, signer à nouveau le manifeste. Cela aide à partir de la ligne de commande *Mage.exe*.  
+6. Une fois que vous avez terminé avec le manifeste d’application, signer à nouveau le manifeste. Cela aide à partir de la ligne de commande *Mage.exe*.  
   
-     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
+    Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
 ## <a name="see-also"></a>Voir aussi  
  [\<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md)   

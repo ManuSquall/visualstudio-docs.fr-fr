@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862175"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Comment : créer des modèles d'élément multifichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il arrive que les modèles d’élément spécifient un seul élément, mais cet élément est parfois composé de plusieurs fichiers. Par exemple, un modèle d’élément Windows Forms pour Visual Basic nécessite les trois fichiers suivants :  
   
--   Un fichier .vb qui contient le code du formulaire.  
+- Un fichier .vb qui contient le code du formulaire.  
   
--   Un fichier .designer.vb qui contient les informations relatives au concepteur du formulaire.  
+- Un fichier .designer.vb qui contient les informations relatives au concepteur du formulaire.  
   
--   Un fichier .resx qui contient les ressources incorporées du formulaire.  
+- Un fichier .resx qui contient les ressources incorporées du formulaire.  
   
- Les modèles d’élément multifichier exigent des paramètres pour garantir que les extensions de nom de fichier appropriées sont utilisées lors de la création de l’élément dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si vous créez un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**, ces paramètres sont générés automatiquement et aucune autre modification n’est nécessaire. Les étapes suivantes expliquent comment utiliser les paramètres pour garantir que les extensions de nom de fichier appropriées soient créées.  
+  Les modèles d’élément multifichier exigent des paramètres pour garantir que les extensions de nom de fichier appropriées sont utilisées lors de la création de l’élément dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si vous créez un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**, ces paramètres sont générés automatiquement et aucune autre modification n’est nécessaire. Les étapes suivantes expliquent comment utiliser les paramètres pour garantir que les extensions de nom de fichier appropriées soient créées.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Pour créer manuellement un modèle d’élément multifichier  
   

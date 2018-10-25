@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119203"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893297"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fournir des informations d’empaquetage et de déploiement dans les éléments de projet
   Tous les éléments de projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ont des propriétés que vous pouvez utiliser pour fournir des données supplémentaires lorsque le projet est déployé sur SharePoint. Ces propriétés sont les suivantes :  
   
--   Propriétés de la fonctionnalité  
+- Propriétés de la fonctionnalité  
   
--   Récepteurs de fonctionnalité  
+- Récepteurs de fonctionnalité  
   
--   Références de sortie de projet  
+- Références de sortie de projet  
   
--   Entrées de contrôle sécurisé  
+- Entrées de contrôle sécurisé  
   
- Ces propriétés s’affichent dans le **propriétés** fenêtre.  
+  Ces propriétés s’affichent dans le **propriétés** fenêtre.  
   
 ## <a name="feature-properties"></a>Propriétés de fonctionnalité
  Utilisez le **propriétés de la fonctionnalité** propriété pour spécifier les données qui utilise la fonctionnalité. Données de propriétés de fonctionnalité sont un ensemble de valeurs (stockées en tant que paires clé/valeur) qui est inclus avec une fonctionnalité lorsqu’elle déploie sur SharePoint. Une fois la fonctionnalité déployée, vous pouvez accéder aux valeurs de propriété dans votre code.  

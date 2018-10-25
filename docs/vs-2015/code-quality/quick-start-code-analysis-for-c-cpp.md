@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851060"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
  Pour exécuter l'analyse du code sur une solution :  
   
--   Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.  
+- Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.  
   
- Pour exécuter l'analyse du code sur un projet :  
+  Pour exécuter l'analyse du code sur un projet :  
   
--   Dans l'Explorateur de solutions, choisissez le nom du projet.  
+- Dans l'Explorateur de solutions, choisissez le nom du projet.  
   
--   Sur le **Build** menu, choisissez **exécuter l’analyse du Code sur** *nom_projet*.  
+- Sur le **Build** menu, choisissez **exécuter l’analyse du Code sur** *nom_projet*.  
   
- Le projet ou la solution est compilé et l'analyse du code est exécutée. Les résultats s'affichent dans la fenêtre Analyse du code.  
+  Le projet ou la solution est compilé et l'analyse du code est exécutée. Les résultats s'affichent dans la fenêtre Analyse du code.  
   
 ##  <a name="BKMK_Analyze"></a> Analyser et résoudre les avertissements d’analyse du code  
  Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d'informations sur l'avertissement, y compris les solutions possibles au problème, choisissez l'identificateur d'avertissement pour afficher la rubrique d'aide du message dans la bibliothèque MSDN.  
@@ -106,13 +106,13 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
  Pour supprimer un avertissement :  
   
-1.  Si les informations détaillées ne sont pas affichées, choisissez le titre de l’avertissement pour le développer.  
+1. Si les informations détaillées ne sont pas affichées, choisissez le titre de l’avertissement pour le développer.  
   
-2.  Choisissez le lien **Actions** au bas de l’avertissement.  
+2. Choisissez le lien **Actions** au bas de l’avertissement.  
   
-3.  Choisissez **supprimer le Message** , puis **dans la Source**.  
+3. Choisissez **supprimer le Message** , puis **dans la Source**.  
   
- La suppression d’un message insère `#pragma warning (disable:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.  
+   La suppression d’un message insère `#pragma warning (disable:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Créer des éléments de travail pour le code avertissements d’analyse  
  Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour enregistrer les bogues à partir de Visual Studio. Pour utiliser cette fonctionnalité, vous devez vous connecter à une instance de Team Foundation Server.  

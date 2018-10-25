@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 180d7e4878ca0c9493c949eac055713212c964de
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: f32f429186aa0c4a657503ca9744bf570d624f25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869507"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Définir les types d’éléments de projet SharePoint personnalisés
   Définir un nouveau type d’élément de projet SharePoint lorsque vous souhaitez créer un nouveau genre d’élément de projet SharePoint. Par exemple, Visual Studio n’inclut pas les éléments de projet SharePoint pour l’ajout de champs ou des actions personnalisées sur un site SharePoint. Vous pouvez définir vos propres types d’éléments de projet SharePoint pour la création de champs, d’actions personnalisées ou d’autres types de composants SharePoint.  
@@ -32,11 +32,11 @@ ms.locfileid: "36326164"
   
  Lorsque vous définissez un type d’élément de projet personnalisé, vous pouvez également ajouter les fonctionnalités suivantes à l’élément de projet :  
   
--   Ajouter un élément de menu contextuel à l’élément de projet. L’élément de menu s’affiche lorsque vous ouvrez le menu contextuel de l’élément de projet dans **l’Explorateur de solutions** en double-cliquant sur l’élément de projet ou en sélectionnant puis en choisissant le **MAJ** +  **F10** clés. Pour plus d’informations, consultez [Comment : ajouter un élément de menu contextuel à un type d’élément de projet SharePoint personnalisé](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
+- Ajouter un élément de menu contextuel à l’élément de projet. L’élément de menu s’affiche lorsque vous ouvrez le menu contextuel de l’élément de projet dans **l’Explorateur de solutions** en double-cliquant sur l’élément de projet ou en sélectionnant puis en choisissant le **MAJ** +  **F10** clés. Pour plus d’informations, consultez [Comment : ajouter un élément de menu contextuel à un type d’élément de projet SharePoint personnalisé](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
   
--   Ajouter une propriété personnalisée à l’élément de projet. La propriété apparaît dans le **propriétés** fenêtre lorsque vous choisissez l’élément de projet dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Comment : ajouter une propriété à un type d’élément de projet SharePoint personnalisé](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+- Ajouter une propriété personnalisée à l’élément de projet. La propriété apparaît dans le **propriétés** fenêtre lorsque vous choisissez l’élément de projet dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Comment : ajouter une propriété à un type d’élément de projet SharePoint personnalisé](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- Pour activer les autres développeurs d’utiliser votre élément de projet dans Visual Studio, créez un fichier .spdata et créer un modèle d’élément ou d’un modèle de projet qui est associé à l’élément de projet. Pour plus d’informations, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+  Pour activer les autres développeurs d’utiliser votre élément de projet dans Visual Studio, créez un fichier .spdata et créer un modèle d’élément ou d’un modèle de projet qui est associé à l’élément de projet. Pour plus d’informations, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
 ## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Comprendre la relation entre les types d’éléments de projet et les instances d’élément de projet
  Lorsque vous définissez un type d’élément de projet SharePoint, Visual Studio charge votre extension lors de l’ajout d’un élément de projet du type associé à un projet SharePoint. Par exemple, si vous définissez une nouvelle **Custom Action** type d’élément de projet, Visual Studio charge votre extension lorsqu’un utilisateur ajoute un **Custom Action** élément de projet à un projet. Visual Studio utilise la même instance de votre extension pour toutes les instances du type d’élément de projet associé. Dans l’exemple précédent, si l’utilisateur ajoute un deuxième **Custom Action** l’élément de projet au projet, la même instance de votre extension est utilisée pour personnaliser le deuxième élément de projet.  

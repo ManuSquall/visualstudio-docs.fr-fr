@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925499"
 ---
 # <a name="memory-windows"></a>Fenêtres Mémoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par v
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Pour modifier le nombre de colonnes affichées dans la fenêtre Mémoire  
   
-1.  Dans la barre d’outils en haut de la **mémoire** fenêtre, recherchez le **colonnes** liste.  
+1. Dans la barre d’outils en haut de la **mémoire** fenêtre, recherchez le **colonnes** liste.  
   
-2.  Dans le **colonnes** , sélectionnez le nombre de colonnes que vous souhaitez afficher ou sélectionnez **automatique** pour l’ajustement automatique à la largeur de la fenêtre.  
+2. Dans le **colonnes** , sélectionnez le nombre de colonnes que vous souhaitez afficher ou sélectionnez **automatique** pour l’ajustement automatique à la largeur de la fenêtre.  
   
- Si vous ne souhaitez pas que le contenu de la **mémoire** fenêtre Modifier en tant que votre programme s’exécute, vous pouvez désactiver l’évaluation dynamique des expressions.  
+   Si vous ne souhaitez pas que le contenu de la **mémoire** fenêtre Modifier en tant que votre programme s’exécute, vous pouvez désactiver l’évaluation dynamique des expressions.  
   
 #### <a name="to-toggle-live-evaluation"></a>Pour activer ou désactiver l'évaluation dynamique  
   
-1.  Cliquez sur le **mémoire** fenêtre.  
+1. Cliquez sur le **mémoire** fenêtre.  
   
-2.  Dans le menu contextuel, cliquez sur **réévaluer automatiquement**.  
+2. Dans le menu contextuel, cliquez sur **réévaluer automatiquement**.  
   
-     Si l'évaluation dynamique est activée, l'option sera sélectionnée. Si vous cliquez sur l'option, l'évaluation dynamique sera désactivée. Si l'évaluation dynamique est désactivée, l'option ne sera pas sélectionnée. Si vous cliquez sur l'option, l'évaluation dynamique sera activée.  
+    Si l'évaluation dynamique est activée, l'option sera sélectionnée. Si vous cliquez sur l'option, l'évaluation dynamique sera désactivée. Si l'évaluation dynamique est désactivée, l'option ne sera pas sélectionnée. Si vous cliquez sur l'option, l'évaluation dynamique sera activée.  
   
- Vous pouvez masquer ou afficher la barre d’outils en haut de la **mémoire** fenêtre. Vous n'avez pas accès à la zone Adresse ou aux autres outils tant que la barre d'outils est masquée.  
+   Vous pouvez masquer ou afficher la barre d’outils en haut de la **mémoire** fenêtre. Vous n'avez pas accès à la zone Adresse ou aux autres outils tant que la barre d'outils est masquée.  
   
 #### <a name="to-toggle-the-toolbar"></a>Pour basculer la barre d'outils  
   

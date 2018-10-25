@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852529"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procédure pas à pas : création et exécution de tests unitaires pour les applications Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
   
  Visual Studio fournit les fonctionnalités de test unitaire suivantes :  
   
--   [Créer des projets de test unitaire](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Créer des projets de test unitaire](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Modifier le manifeste du projet de test unitaire](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Modifier le manifeste du projet de test unitaire](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Coder le test unitaire](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Coder le test unitaire](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Exécuter des tests unitaires](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Exécuter des tests unitaires](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- Les procédures suivantes décrivent les étapes pour créer, exécuter et déboguer des tests unitaires pour l'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] pour Windows 8.  
+  Les procédures suivantes décrivent les étapes pour créer, exécuter et déboguer des tests unitaires pour l'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] pour Windows 8.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Visual Studio  

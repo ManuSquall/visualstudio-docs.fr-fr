@@ -30,12 +30,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817340"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Débogage des applications en mode mixte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ Une application en mode mixte est une application qui combine du code natif (C++
   
 #### <a name="to-turn-off-property-evaluation"></a>Pour désactiver l'évaluation de propriété  
   
-1.  Dans le menu **Outils** , choisissez **Options**.  
+1. Dans le menu **Outils** , choisissez **Options**.  
   
-2.  Dans le **Options** boîte de dialogue, ouvrez le **débogage** dossier et sélectionnez le **général** catégorie.  
+2. Dans le **Options** boîte de dialogue, ouvrez le **débogage** dossier et sélectionnez le **général** catégorie.  
   
-3.  Effacer la **activer l’évaluation de la propriété et d’autres appels de fonction implicite** case à cocher.  
+3. Effacer la **activer l’évaluation de la propriété et d’autres appels de fonction implicite** case à cocher.  
   
- Dans la mesure où les piles des appels natives et managées sont différentes, le débogueur ne peut pas toujours fournir la pile des appels complète pour le code mixte. Lorsque le code natif appelle le code managé, il est possible que vous notiez certaines divergences. Pour plus d’informations, consultez [Code mixte et informations manquantes dans la fenêtre Pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Dans la mesure où les piles des appels natives et managées sont différentes, le débogueur ne peut pas toujours fournir la pile des appels complète pour le code mixte. Lorsque le code natif appelle le code managé, il est possible que vous notiez certaines divergences. Pour plus d’informations, consultez [Code mixte et informations manquantes dans la fenêtre Pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code managé](../debugger/debugging-managed-code.md)

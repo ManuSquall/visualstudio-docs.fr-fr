@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_checksum | Documents Microsoft
+title: IDiaSourceFile::get_checksum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 002ad16d94467c135e08ef0040fd7ffd51462719
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919427"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 Récupère les octets de la somme de contrôle.  
@@ -42,7 +42,7 @@ HRESULT get_checksum (
  [out] Retourne le nombre d’octets de la somme de contrôle. Ce paramètre ne peut pas être `NULL`.  
   
  `data`  
- [dans, out] Une mémoire tampon est remplie avec les octets de la somme de contrôle. Si ce paramètre est `NULL`, puis `pcbData` retourne le nombre d’octets requis.  
+ [in, out] Une mémoire tampon est remplie avec les octets de la somme de contrôle. Si ce paramètre est `NULL`, puis `pcbData` retourne le nombre d’octets requis.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
@@ -50,9 +50,9 @@ HRESULT get_checksum (
 ## <a name="remarks"></a>Notes  
  Pour déterminer le type d’algorithme de somme de contrôle qui a été utilisé pour générer les octets de la somme de contrôle, appelez le [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) (méthode).  
   
- La somme de contrôle est généralement générée à partir de l’image du fichier source pour les modifications dans le fichier source sont reflétées dans les modifications effectuées dans les octets de la somme de contrôle. Si les octets de la somme de contrôle ne correspondent pas généré à partir de l’image chargée du fichier, puis le fichier doit être considérée comme une somme de contrôle endommagés ou falsifiés.  
+ La somme de contrôle est généralement généré à partir de l’image du fichier source afin de modifications dans le fichier source sont répercutées dans les modifications dans les octets de la somme de contrôle. Si les octets de la somme de contrôle ne correspondent pas à une somme de contrôle généré à partir de l’image chargée du fichier, puis le fichier doit être considéré comme endommagé ou falsifié.  
   
- Les sommes de contrôle standards ne sont jamais plus de 32 octets de taille mais ne supposent pas qui est la taille maximale d’une somme de contrôle. Définir le `data` paramètre `NULL` pour obtenir le nombre d’octets requis pour récupérer la somme de contrôle. Allouer une mémoire tampon de la taille appropriée, puis appelez cette méthode une fois de plus, avec la nouvelle mémoire tampon.  
+ Sommes de contrôle standard ne sont jamais plus de 32 octets taille mais ne supposent pas qui est la taille maximale d’une somme de contrôle. Définir le `data` paramètre `NULL` pour obtenir le nombre d’octets requis pour récupérer la somme de contrôle. Allouer une mémoire tampon de la taille appropriée, puis appelez cette méthode une fois de plus, avec la nouvelle mémoire tampon.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

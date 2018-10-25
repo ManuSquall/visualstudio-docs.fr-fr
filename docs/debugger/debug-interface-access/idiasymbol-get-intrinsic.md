@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_intrinsic | Documents Microsoft
+title: IDiaSymbol::get_intrinsic | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5293c17d73e1c0b9232862f3b8ff491a55b7e24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 14f5525a63e4453c594cd84b248f71303b083312
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931218"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 Récupère un indicateur qui spécifie si une classe est un type intrinsèque.  
@@ -44,7 +44,7 @@ HRESULT get_intrinsic(
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

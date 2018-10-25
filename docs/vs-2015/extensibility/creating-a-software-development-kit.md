@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851996"
 ---
 # <a name="creating-a-software-development-kit"></a>Création d’un Kit de développement logiciel (SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
   
  Il existe deux types de kits de développement logiciel :  
   
--   Les kits de développement Platform SDK sont les composants obligatoires pour le développement d’applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../includes/win81-md.md)] SDK est requis pour développer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] applications.  
+- Les kits de développement Platform SDK sont les composants obligatoires pour le développement d’applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../includes/win81-md.md)] SDK est requis pour développer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] applications.  
   
--   SDK d’extension est des composants facultatifs qui étendent une plateforme, mais ne sont pas obligatoires pour le développement d’applications pour cette plateforme.  
+- SDK d’extension est des composants facultatifs qui étendent une plateforme, mais ne sont pas obligatoires pour le développement d’applications pour cette plateforme.  
   
- Les sections suivantes décrivent l’infrastructure générale de kits de développement logiciel et comment créer un kit platform SDK et un SDK d’extension.  
+  Les sections suivantes décrivent l’infrastructure générale de kits de développement logiciel et comment créer un kit platform SDK et un SDK d’extension.  
   
--   [Kits SDK de plateforme](#PlatformSDKs)  
+- [Kits SDK de plateforme](#PlatformSDKs)  
   
--   [SDK d’extension](#ExtensionSDKs)  
+- [SDK d’extension](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> Kits SDK de plateforme  
  Les kits de développement Platform SDK sont requis pour développer des applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../includes/win81-md.md)] SDK est nécessaire pour développer des applications pour [!INCLUDE[win81](../includes/win81-md.md)].  

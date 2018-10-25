@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0005dd52c9c70edf41c9fc32c51e555748c78bfc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878009"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle d’objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .  
@@ -53,17 +53,17 @@ ms.locfileid: "35258452"
   
  Les sections suivantes décrivent brièvement les objets de niveau supérieur et la façon dont ils interagissent les uns avec les autres. Ces objets incluent les cinq éléments suivants :  
   
--   Objet Application  
+- Objet Application  
   
--   Objet Document  
+- Objet Document  
   
--   Objet Selection  
+- Objet Selection  
   
--   Range (objet)  
+- Range (objet)  
   
--   Objet Bookmark  
+- Objet Bookmark  
   
- Outre le modèle objet Word, les projets Office dans Visual Studio fournissent des *éléments hôtes* et des *contrôles hôtes* qui étendent certains objets du modèle objet Word. Les éléments hôtes et les contrôles hôtes se comportent comme les objets Word qu'ils étendent, mais ils possèdent également des fonctionnalités supplémentaires, telles que la liaison de données, et des événements supplémentaires. Pour plus d’informations, consultez [automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md) et [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).  
+  Outre le modèle objet Word, les projets Office dans Visual Studio fournissent des *éléments hôtes* et des *contrôles hôtes* qui étendent certains objets du modèle objet Word. Les éléments hôtes et les contrôles hôtes se comportent comme les objets Word qu'ils étendent, mais ils possèdent également des fonctionnalités supplémentaires, telles que la liaison de données, et des événements supplémentaires. Pour plus d’informations, consultez [automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md) et [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).  
   
 ### <a name="application-object"></a>Objet Application  
  L'objet <xref:Microsoft.Office.Interop.Word.Application> représente l'application Word et est le parent de tous les autres objets. Ses membres s'appliquent généralement à Word dans son ensemble. Vous pouvez utiliser ses propriétés et méthodes pour contrôler l'environnement Word.  
@@ -90,17 +90,17 @@ ms.locfileid: "35258452"
 ### <a name="range-object"></a>Range (objet)  
  L'objet <xref:Microsoft.Office.Interop.Word.Range> représente une zone contiguë dans un document et il est défini par une position de caractère de début et une position de caractère de fin. Vous n'êtes pas limité à un seul objet <xref:Microsoft.Office.Interop.Word.Range> . Vous pouvez définir plusieurs objets <xref:Microsoft.Office.Interop.Word.Range> dans un même document. Un objet <xref:Microsoft.Office.Interop.Word.Range> a les caractéristiques suivantes :  
   
--   Il peut être constitué du point d'insertion seul, d'une plage de texte ou de l'intégralité du document.  
+- Il peut être constitué du point d'insertion seul, d'une plage de texte ou de l'intégralité du document.  
   
--   Il inclut des caractères non imprimables tels que des espaces, des tabulations et des marques de paragraphe.  
+- Il inclut des caractères non imprimables tels que des espaces, des tabulations et des marques de paragraphe.  
   
--   Il peut correspondre à la zone représentée par la sélection actuelle ou il peut représenter une zone différente de la sélection actuelle.  
+- Il peut correspondre à la zone représentée par la sélection actuelle ou il peut représenter une zone différente de la sélection actuelle.  
   
--   Il n'est pas visible dans un document, contrairement à une sélection, qui est toujours visible.  
+- Il n'est pas visible dans un document, contrairement à une sélection, qui est toujours visible.  
   
--   Il n'est pas enregistré avec un document et il existe uniquement pendant l'exécution du code.  
+- Il n'est pas enregistré avec un document et il existe uniquement pendant l'exécution du code.  
   
- Quand vous insérez du texte à la fin d'une plage, Word étend automatiquement la plage pour inclure le texte inséré.  
+  Quand vous insérez du texte à la fin d'une plage, Word étend automatiquement la plage pour inclure le texte inséré.  
   
 ### <a name="content-control-objects"></a>Objets de contrôle de contenu  
  Un objet <xref:Microsoft.Office.Interop.Word.ContentControl> vous permet de contrôler l'entrée et la présentation de texte et d'autres types de contenu dans les documents Word. Un objet <xref:Microsoft.Office.Interop.Word.ContentControl> peut afficher différents types d'interface utilisateur optimisés pour être utilisés dans des documents Word, comme un contrôle de texte enrichi, un sélecteur de date ou une zone de liste modifiable. Vous pouvez également utiliser <xref:Microsoft.Office.Interop.Word.ContentControl> pour empêcher les utilisateurs de modifier des sections du document ou du modèle.  
@@ -110,13 +110,13 @@ ms.locfileid: "35258452"
 ### <a name="bookmark-object"></a>Objet Bookmark  
  L'objet <xref:Microsoft.Office.Interop.Word.Bookmark> représente une zone contiguë dans un document, avec une position de début et une position de fin. Vous pouvez utiliser des signets pour marquer un emplacement dans un document ou comme conteneur de texte dans un document. Un objet <xref:Microsoft.Office.Interop.Word.Bookmark> peut être constitué du point d'insertion ou s'étendre à l'intégralité du document. Un objet <xref:Microsoft.Office.Interop.Word.Bookmark> présente les caractéristiques suivantes, qui le différencient de l'objet <xref:Microsoft.Office.Interop.Word.Range> :  
   
--   Vous pouvez nommer le signet au moment du design.  
+- Vous pouvez nommer le signet au moment du design.  
   
--   Les objets<xref:Microsoft.Office.Interop.Word.Bookmark> sont enregistrés avec le document et ne sont donc pas supprimés à la fin de l'exécution du code ou à la fermeture du document.  
+- Les objets<xref:Microsoft.Office.Interop.Word.Bookmark> sont enregistrés avec le document et ne sont donc pas supprimés à la fin de l'exécution du code ou à la fermeture du document.  
   
--   Vous pouvez masquer ou afficher les signets en attribuant à la propriété <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> de la classe <xref:Microsoft.Office.Interop.Word.View> la valeur **false** ou **true**.  
+- Vous pouvez masquer ou afficher les signets en attribuant à la propriété <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> de la classe <xref:Microsoft.Office.Interop.Word.View> la valeur **false** ou **true**.  
   
- Visual Studio étend l'objet <xref:Microsoft.Office.Interop.Word.Bookmark> en fournissant le contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> . Le contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> se comporte comme un objet <xref:Microsoft.Office.Interop.Word.Bookmark>natif, mais il possède des fonctionnalités de liaison de données et des événements supplémentaires. Vous pouvez lier des données à un contrôle de signet dans un document de la même façon que vous liez des données à un contrôle de zone de texte dans un Windows Form. Pour plus d’informations, consultez [Bookmark (contrôle)](../vsto/bookmark-control.md).  
+  Visual Studio étend l'objet <xref:Microsoft.Office.Interop.Word.Bookmark> en fournissant le contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> . Le contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> se comporte comme un objet <xref:Microsoft.Office.Interop.Word.Bookmark>natif, mais il possède des fonctionnalités de liaison de données et des événements supplémentaires. Vous pouvez lier des données à un contrôle de signet dans un document de la même façon que vous liez des données à un contrôle de zone de texte dans un Windows Form. Pour plus d’informations, consultez [Bookmark (contrôle)](../vsto/bookmark-control.md).  
   
 ##  <a name="WordOMDocumentation"></a> Utilisez la documentation du modèle objet Word  
  Pour obtenir des informations complètes sur le modèle objet Word, vous pouvez vous reporter à la documentation de référence de l'assembly PIA (Primary Interop Assembly) Word et à la documentation de référence du modèle objet VBA (Visual Basic pour Applications).  

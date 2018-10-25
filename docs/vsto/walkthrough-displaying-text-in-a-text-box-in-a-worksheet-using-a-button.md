@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840283"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procédure pas à pas : Afficher du texte dans une zone de texte dans une feuille de calcul à l’aide d’un bouton
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation des boutons et des zones de texte dans des feuilles de calcul Microsoft Office Excel et comment créer des projets Excel à l’aide des outils de développement Office dans Visual Studio. Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -62,22 +62,22 @@ ms.locfileid: "35258439"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>Pour ajouter un bouton et une zone de texte  
   
-1.  Vérifiez que le **mes Excel Button.xlsx** classeur est ouvert dans le concepteur Visual Studio, avec `Sheet1` affiché.  
+1. Vérifiez que le **mes Excel Button.xlsx** classeur est ouvert dans le concepteur Visual Studio, avec `Sheet1` affiché.  
   
-2.  À partir de la **contrôles communs** onglet de la boîte à outils, faites glisser un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> à `Sheet1`.  
+2. À partir de la **contrôles communs** onglet de la boîte à outils, faites glisser un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> à `Sheet1`.  
   
-3.  À partir de la **vue** menu, sélectionnez **fenêtre Propriétés**.  
+3. À partir de la **vue** menu, sélectionnez **fenêtre Propriétés**.  
   
-4.  Veillez à ce que **TextBox1** est visible dans le **propriétés** zone de liste déroulante de fenêtre et de modification le **nom** propriété de la zone de texte **displayText**.  
+4. Veillez à ce que **TextBox1** est visible dans le **propriétés** zone de liste déroulante de fenêtre et de modification le **nom** propriété de la zone de texte **displayText**.  
   
-5.  Faites glisser un **bouton** contrôler sur `Sheet1` et modifiez les propriétés suivantes :  
+5. Faites glisser un **bouton** contrôler sur `Sheet1` et modifiez les propriétés suivantes :  
   
-    |Propriété|Value|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Text**|**Insérer du texte**|  
+   |Propriété|Value|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**Text**|**Insérer du texte**|  
   
- Maintenant écrire le code à exécuter lorsque le bouton est activé.  
+   Maintenant écrire le code à exécuter lorsque le bouton est activé.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Remplir la zone de texte lorsque le bouton est activé.  
  Chaque fois que l’utilisateur clique sur le bouton, **Hello World !** est ajouté à la zone de texte.  

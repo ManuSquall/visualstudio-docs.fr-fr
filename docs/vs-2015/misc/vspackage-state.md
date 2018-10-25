@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895208"
 ---
 # <a name="vspackage-state"></a>État du VSPackage
 De nombreux facteurs déterminent le jeu de valeurs persistantes ou l’état d’un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] application.  
   
--   Les projets ont des propriétés de configuration et de projet.  
+- Les projets ont des propriétés de configuration et de projet.  
   
--   Solutions ont des propriétés.  
+- Solutions ont des propriétés.  
   
--   Paramètres utilisateur déterminent la taille et la position des fenêtres de document, les fenêtres Outil, état d’ancrage et raccourcis clavier.  
+- Paramètres utilisateur déterminent la taille et la position des fenêtres de document, les fenêtres Outil, état d’ancrage et raccourcis clavier.  
   
--   Applications peuvent avoir des options qui définit un utilisateur.  
+- Applications peuvent avoir des options qui définit un utilisateur.  
   
--   Les objets créés par une application peuvent avoir leurs propres propriétés.  
+- Les objets créés par une application peuvent avoir leurs propres propriétés.  
   
- Voici quelques-unes des méthodes qui un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] état de l’application peut être géré :  
+  Voici quelques-unes des méthodes qui un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] état de l’application peut être géré :  
   
--   Via les pages de propriétés de projet et solution.  
+- Via les pages de propriétés de projet et solution.  
   
--   Via le **Assistant Importation et exportation paramètres**, ce qui permet à un utilisateur déplacer les paramètres d’un ordinateur à un autre.  
+- Via le **Assistant Importation et exportation paramètres**, ce qui permet à un utilisateur déplacer les paramètres d’un ordinateur à un autre.  
   
--   Via le **Options** boîte de dialogue qui inclut des options relatives aux applications.  
+- Via le **Options** boîte de dialogue qui inclut des options relatives aux applications.  
   
--   Via le **propriétés** fenêtre, qui expose les propriétés d’objets.  
+- Via le **propriétés** fenêtre, qui expose les propriétés d’objets.  
   
--   Grâce à l’automatisation. Une application peut accéder à des propriétés VSPackage et les objets qui ont été exposées à Automation.  
+- Grâce à l’automatisation. Une application peut accéder à des propriétés VSPackage et les objets qui ont été exposées à Automation.  
   
- Sous-jacent de l’état de l’application est différents mécanismes de persistance qui permettent l’état de l’application à être enregistré et restauré.  
+  Sous-jacent de l’état de l’application est différents mécanismes de persistance qui permettent l’état de l’application à être enregistré et restauré.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Prise en charge de la persistance de l’état](../misc/support-for-state-persistence.md)  

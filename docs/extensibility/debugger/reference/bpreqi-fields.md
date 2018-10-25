@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS | Documents Microsoft
+title: BPREQI_FIELDS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff66a2c23f96ad083d84a937a45c1b2b8cf3ddec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37e78c8f03412b101a6d1fa3b57b984377f79cac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859417"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 Spécifie les informations à récupérer sur une demande de point d’arrêt.  
@@ -68,55 +68,55 @@ public enum enum_BPREQI_FIELDS {
   
 ## <a name="members"></a>Membres  
  BPREQI_BPLOCATION  
- Initialisation/utiliser le `bpLocation` champ (emplacement de point d’arrêt) de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ou [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.  
+ Initialize/utiliser le `bpLocation` champ (emplacement de point d’arrêt) de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ou [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.  
   
  BPREQI_LANGUAGE  
- Initialisation/utiliser le `guidLanguage` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `guidLanguage` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_PROGRAM  
- Initialisation/utiliser le `pProgram` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `pProgram` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_PROGRAMNAME  
- Initialisation/utiliser le `bstrProgramName` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `bstrProgramName` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_THREAD  
- Initialisation/utiliser le `pThread` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `pThread` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_THREADNAME  
- Initialisation/utiliser le `bstrThreadName` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `bstrThreadName` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_PASSCOUNT  
- Initialisation/utiliser le `bpPassCount` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `bpPassCount` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_CONDITION  
- Initialisation/utiliser le `bpCondition` champ (condition de point d’arrêt) de la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `bpCondition` champ (condition de point d’arrêt) de la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_FLAGS  
- Initialisation/utiliser le `dwFlags` champ le `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `dwFlags` champ la `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` structure.  
   
  BPREQI_ALLOLDFIELDS  
- Initialisation/utiliser tous les champs de la de la `BP_REQUEST_INFO` structure.  
+ Initialize/utiliser tous les champs pour la de la `BP_REQUEST_INFO` structure.  
   
  BPREQI_VENDOR  
- Initialisation/utiliser le `guidVendor` champ `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `guidVendor` champ `BP_REQUEST_INFO2` structure.  
   
  BPREQI_CONSTRAINT  
- Initialisation/utiliser le `bstrConstraint` champ `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `bstrConstraint` champ `BP_REQUEST_INFO2` structure.  
   
  BPREQI_TRACEPOINT  
- Initialisation/utiliser le `bstrTracepoint` champ `BP_REQUEST_INFO2` structure.  
+ Initialize/utiliser le `bstrTracepoint` champ `BP_REQUEST_INFO2` structure.  
   
  BPREQI_ALLFIELDS  
- Spécifie tous les champs pour la `BP_REQUEST_INFO2` structure.  
+ Spécifie tous les champs pour le `BP_REQUEST_INFO2` structure.  
   
 ## <a name="remarks"></a>Notes  
- Est passé comme argument à la [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) et [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) méthodes pour spécifier les champs de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) structures doivent être initialisées.  
+ Passé en tant qu’argument à la [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) et [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) méthodes pour spécifier les champs de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) structures doivent être initialisées.  
   
- Ces indicateurs sont également utilisés pour indiquer les champs de la `BP_REQUEST_INFO` et `BP_REQUEST_INFO2` les structures sont utilisés et valide lors de chaque structure est retournée.  
+ Ces indicateurs sont également utilisées pour indiquer les champs de la `BP_REQUEST_INFO` et `BP_REQUEST_INFO2` structures sont utilisées et valides lorsque chaque structure est retournée.  
   
- Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
+ Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897496"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ Un thread est une séquence d'instructions à laquelle le système d'exploitatio
  [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)  
  -   Utilisez des filtres de point d'arrêt pour placer un point d'arrêt sur un thread.  
   
--   Grâce aux points de trace, vous pouvez tracer l'exécution de votre programme sans interruption. Cette fonction peut être utile pour étudier des problèmes tels que les interblocages.  
+- Grâce aux points de trace, vous pouvez tracer l'exécution de votre programme sans interruption. Cette fonction peut être utile pour étudier des problèmes tels que les interblocages.  
   
- [Thread](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- Concepts de threading en programmation [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] avec exemple de code.  
+  [Thread](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  Concepts de threading en programmation [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] avec exemple de code.  
   
- [Multithreading dans les composants](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Utilisation du multithreading dans les composants [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  [Multithreading dans les composants](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Utilisation du multithreading dans les composants [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
- [Prise en charge du multithreading pour le code plus ancien (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- Concepts de threading et exemple de code pour les programmeurs C++ qui utilisent MFC.  
+  [Prise en charge du multithreading pour le code plus ancien (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  Concepts de threading et exemple de code pour les programmeurs C++ qui utilisent MFC.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Déboguer les Threads et processus](../debugger/debug-threads-and-processes.md)   

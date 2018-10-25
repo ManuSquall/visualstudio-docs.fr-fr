@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ba62fc129674bd25f97037efdfcdbf7396ea3a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824930"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 ## <a name="requirements"></a>Configuration requise  
  Pour utiliser Graphics Diagnostics dans Visual Studio 2015, vous devez avoir l’une de ces éditions :  
   
--   Visual Studio Enterprise 2015  
+- Visual Studio Enterprise 2015  
   
--   Visual Studio Professional 2015  
+- Visual Studio Professional 2015  
   
--   Visual Studio Community 2015  
+- Visual Studio Community 2015  
   
- [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
+  [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Composants requis pour Windows 10  
  La fonctionnalité Windows facultative *outils Graphics* fournit l’infrastructure de capture et de lecture est requis par Graphics Diagnostics sur Windows 10.  
@@ -54,17 +54,17 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Pour installer Outils Graphics pour Windows 10  
   
-1.  Sur le **Démarrer** menu, choisissez **paramètres**. Le **paramètres** boîte de dialogue apparaît.  
+1. Sur le **Démarrer** menu, choisissez **paramètres**. Le **paramètres** boîte de dialogue apparaît.  
   
-2.  Dans le **paramètres** boîte de dialogue, choisissez **système**, puis sélectionnez **applications installées** dans la liste des paramètres système.  
+2. Dans le **paramètres** boîte de dialogue, choisissez **système**, puis sélectionnez **applications installées** dans la liste des paramètres système.  
   
-3.  Sur le côté droit de la **paramètres** boîte de dialogue, choisissez **gestion des fonctionnalités facultatives** sous **installé des applications et fonctionnalités**. Le **gestion des fonctionnalités facultatives** boîte de dialogue apparaît.  
+3. Sur le côté droit de la **paramètres** boîte de dialogue, choisissez **gestion des fonctionnalités facultatives** sous **installé des applications et fonctionnalités**. Le **gestion des fonctionnalités facultatives** boîte de dialogue apparaît.  
   
-4.  Dans le **gestion des fonctionnalités facultatives** boîte de dialogue, choisissez **ajouter une fonctionnalité**. Une liste de fonctionnalités facultatives que vous pouvez installer s’affiche.  
+4. Dans le **gestion des fonctionnalités facultatives** boîte de dialogue, choisissez **ajouter une fonctionnalité**. Une liste de fonctionnalités facultatives que vous pouvez installer s’affiche.  
   
-5.  Sélectionnez **outils Graphics** à partir de la liste des fonctionnalités, puis choisissez **installer**.  
+5. Sélectionnez **outils Graphics** à partir de la liste des fonctionnalités, puis choisissez **installer**.  
   
- La fonctionnalité Outils Graphics est également installée automatiquement quand vous installez le Kit de développement logiciel (SDK) Windows 10.  
+   La fonctionnalité Outils Graphics est également installée automatiquement quand vous installez le Kit de développement logiciel (SDK) Windows 10.  
   
 > [!TIP]
 >  La fonctionnalité facultative outils Graphics de Windows 10 fournit des fonctionnalités légères de capture et de lecture, telles que le programme de ligne de commande de capture **dxcap.exe**, qui peut être utilisé dans la prise en charge, le test et les scénarios de diagnostic sur machines où les outils de développement ne sont pas installés. Pour plus d’informations, consultez le [l’outil de ligne de commande de Capture](../debugger/command-line-capture-tool.md) rubrique.  
@@ -75,11 +75,11 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 ### <a name="1---create-a-direct3d-app"></a>1 - Créer une application Direct3D  
  Si vous avez déjà votre propre application Direct3D pour explorer Graphics Diagnostics, c’est parfait ! Sinon, vous pouvez utiliser l'un des exemples Direct3D disponibles dans la galerie de code.  
   
--   Pour tester Graphics Diagnostics avec Direct3D 12, Windows 10 à l’aide de Visual Studio 2015, essayez le [exemple de Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.  
+- Pour tester Graphics Diagnostics avec Direct3D 12, Windows 10 à l’aide de Visual Studio 2015, essayez le [exemple de Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.  
   
--   Pour tester Graphics Diagnostics avec Direct3D les 11 sur Windows 10 ou Windows 8.1, vous pouvez utiliser la **application DirectX (Windows universel)** ou **application DirectX (Windows 8.1)** modèles de projet. Ou, plus intéressant, essayez le [exemple de jeu marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) pour Windows 8.1.  
+- Pour tester Graphics Diagnostics avec Direct3D les 11 sur Windows 10 ou Windows 8.1, vous pouvez utiliser la **application DirectX (Windows universel)** ou **application DirectX (Windows 8.1)** modèles de projet. Ou, plus intéressant, essayez le [exemple de jeu marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) pour Windows 8.1.  
   
- Assurez-vous que vous pouvez générer l'application avant de continuer.  
+  Assurez-vous que vous pouvez générer l'application avant de continuer.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Démarrer une session Graphics Diagnostics  
  Maintenant, vous êtes prêt à démarrer votre première session Graphics Diagnostics. Dans Visual Studio, dans le menu principal, choisissez **déboguer, graphiques, démarrer les Diagnostics**, ou appuyez simplement sur **Alt + F5**. Cela entraîne le démarrage de votre application dans Graphics Diagnostics et l’affichage des fenêtres de session de diagnostic dans Visual Studio.  
@@ -96,11 +96,11 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
   
 ##### <a name="to-capture-a-sequence-of-frames"></a>Pour capturer une séquence de frames  
   
--   Dans Visual Studio, dans la fenêtre de la session de diagnostic, définissez **Frames à capturer** au nombre de frames à capturer dans la séquence, puis capturez la séquence en utilisant l’une des méthodes ci-dessus pour capturer des frames uniques.  
+- Dans Visual Studio, dans la fenêtre de la session de diagnostic, définissez **Frames à capturer** au nombre de frames à capturer dans la séquence, puis capturez la séquence en utilisant l’une des méthodes ci-dessus pour capturer des frames uniques.  
   
-     Pour capturer des frames uniques à nouveau, définissez **Frames à capturer** à `1`.  
+   Pour capturer des frames uniques à nouveau, définissez **Frames à capturer** à `1`.  
   
- Lorsque vous avez terminé simplement capturer les frames quitter l’application ou choisissez la **arrêter** bouton à partir de la barre d’outils Graphics ou la fenêtre de session de diagnostic.  
+  Lorsque vous avez terminé simplement capturer les frames quitter l’application ou choisissez la **arrêter** bouton à partir de la barre d’outils Graphics ou la fenêtre de session de diagnostic.  
   
 ### <a name="4--examine-captured-frames-in-the-graphics-analyzer"></a>4 - Examiner les frames capturés dans Graphics Analyzer  
  À présent, vous êtes prêt à examiner les frames que vous venez de capturer. Pour démarrer l'analyse d'un frame, choisissez le numéro du frame que vous souhaitez examiner à partir de la fenêtre de session de diagnostic. Cette opération ouvre le frame dans la **Graphics Analyzer**, où vous pouvez utiliser les outils Graphics Diagnostics pour examiner la façon dont votre application utilise Direct3D pour traquer les problèmes de rendu, ou utiliser le **analyse des frames** outil pour comprendre ses performances.  

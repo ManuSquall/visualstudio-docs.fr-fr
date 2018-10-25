@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923210"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Comment : copier des éléments d'un diagramme de classes vers un document Microsoft Office (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Vous pouvez copier des formes depuis un diagramme de classes .NET (fichier .cd) 
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Pour copier tous les éléments dans un diagramme de classes  
   
-1.  Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**. (raccourci : **Ctrl+A**)  
+1. Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**. (raccourci : **Ctrl+A**)  
   
-2.  Dans le menu **Edition**, sélectionnez **Copier l’image**.  
+2. Dans le menu **Edition**, sélectionnez **Copier l’image**.  
   
- Vous pouvez également choisir **Copier** au lieu de **Copier l’image**. **Copier** copie l’image en tant que bitmap normale. **Copier l’image** copie l’image en tant qu’image vectorielle, ce qui est recommandé pour la plupart des applications Office.  
+   Vous pouvez également choisir **Copier** au lieu de **Copier l’image**. **Copier** copie l’image en tant que bitmap normale. **Copier l’image** copie l’image en tant qu’image vectorielle, ce qui est recommandé pour la plupart des applications Office.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour imprimer des diagrammes de classes (Concepteur de classes)](../ide/how-to-print-class-diagrams-class-designer.md)   

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a814e3d07c2e51a8f946ae9a7b6eff03ea3c2e01
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6196f8b8a058424732469ff954d607e00c97d396
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819769"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 Lorsque vous ouvrez tout d’abord une solution d’outils de langage spécifique à un domaine (outils DSL) dans Visual Studio, l’interface utilisateur ressemble à l’image suivante.
@@ -28,7 +28,7 @@ Lorsque vous ouvrez tout d’abord une solution d’outils de langage spécifiqu
  Le tableau suivant explique comment les parties de l’interface utilisateur sont utilisés.
 
 |**Élément**|**Définition**|
-|-----------------|--------------------|
+|-|-|
 |Diagramme|Le diagramme affiche le modèle de domaine.<br /><br /> Le diagramme comporte deux parties. Côté « un » définit les types des éléments dans vos modèles. L’autre côté définit l’apparaissent de vos modèles sur l’écran.|
 |Boîte à outils|Faites glisser des outils à partir de la boîte à outils pour ajouter des classes de domaine et forme des types au diagramme. Pour ajouter des mappages de formes, des connecteurs et des relations, cliquez sur l’outil, puis cliquez sur le nœud source sur le diagramme, puis le nœud cible.|
 |explorateur DSL|**Explorateur DSL** s’affiche lorsqu’une définition DSL est la fenêtre active. Il montre la solution DSL sous forme d’arborescence. Explorateur DSL vous permet de modifier les fonctionnalités du modèle qui ne sont pas affichées sur le diagramme. Par exemple, vous pouvez ajouter des éléments de boîte à outils et basculez sur le processus de validation à l’aide de la **Explorateur DSL**.|
@@ -42,7 +42,7 @@ Lorsque vous ouvrez tout d’abord une solution d’outils de langage spécifiqu
  Le tableau suivant décrit certains des éléments du diagramme de modèle de domaine.
 
 |**Terme**|**Définition**|
-|--------------|--------------------|
+|-|-|
 |Classe de domaine|Classes de domaine sont les types d’éléments dans vos modèles.<br /><br /> Une classe de domaine peut apparaître plusieurs fois dans un diagramme, s’il s’agit de la cible de plusieurs relations.<br /><br /> Pour ajouter une classe de domaine, faites glisser l’outil de classe de domaine à partir de la **boîte à outils** à la **Classes et relations** côté du diagramme.|
 |Relation de domaine|Relations de domaine sont les types de liens entre des éléments dans vos modèles.<br /><br /> Un *relation d’incorporation* indique que l’élément cible est détenu ou contenu par l’élément source et apparaît sous la forme d’une ligne pleine. Chaque élément dans un modèle doit être la cible d’une relation d’incorporation, afin que le modèle forme une arborescence. Un *relation de référence* indique un lien entre les éléments de modèle général et apparaît sous la forme d’une ligne en pointillés. N’importe quel élément peut avoir n’importe quel nombre de liens de référence.<br /><br /> Créer une relation en cliquant sur l’outil sur le **boîte à outils**, en cliquant sur la classe de domaine source, puis en cliquant sur la classe cible.|
 |Formes et connecteurs|Formes spécifient comment les éléments de modèle doivent être affichées sur un diagramme DSL., connecteurs spécifient des lignes dans un diagramme DSL qui peut être utilisé pour afficher les relations.<br /><br /> Pour créer une forme ou un connecteur, faites glisser l’outil pour la **éléments de diagramme** côté du diagramme.|

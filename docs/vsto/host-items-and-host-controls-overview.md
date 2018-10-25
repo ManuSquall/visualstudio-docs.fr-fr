@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937497"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Éléments hôtes et la vue d’ensemble des contrôles hôtes
   Les éléments hôtes et les contrôles hôtes sont des types qui fournissent un modèle de programmation pour les solutions Office créées à l’aide des outils de développement Office dans Visual Studio. Les éléments hôtes et les contrôles hôtes apparentent l’interaction avec les modèles objet Microsoft Office Word et Microsoft Office Excel, qui sont basés sur COM, davantage à l’interaction entre des objets managés tels que les contrôles Windows Forms.  
@@ -54,21 +54,21 @@ ms.locfileid: "35670900"
 ## <a name="host-items"></a>Éléments hôtes  
  Les éléments hôtes sont des types qui se trouvent en haut des hiérarchies de modèles objet dans les projets Office. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] définit les éléments hôtes suivants pour les solutions Word et Excel :  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Chacun de ces types étend un objet qui existe en mode natif dans le modèle objet Word ou Excel, appelé *objet Office natif*. Par exemple, l’élément hôte <xref:Microsoft.Office.Tools.Word.Document> étend l’objet <xref:Microsoft.Office.Interop.Word.Document> , qui est défini dans l’assembly PIA (Primary Interop Assembly) pour Word.  
+  Chacun de ces types étend un objet qui existe en mode natif dans le modèle objet Word ou Excel, appelé *objet Office natif*. Par exemple, l’élément hôte <xref:Microsoft.Office.Tools.Word.Document> étend l’objet <xref:Microsoft.Office.Interop.Word.Document> , qui est défini dans l’assembly PIA (Primary Interop Assembly) pour Word.  
   
- Les éléments hôtes possèdent généralement les mêmes fonctionnalités de base que les objets Office correspondants, mais ils sont améliorés avec les fonctionnalités suivantes :  
+  Les éléments hôtes possèdent généralement les mêmes fonctionnalités de base que les objets Office correspondants, mais ils sont améliorés avec les fonctionnalités suivantes :  
   
--   la capacité d’héberger des contrôles managés, y compris des contrôles hôtes et Windows Forms,  
+- la capacité d’héberger des contrôles managés, y compris des contrôles hôtes et Windows Forms,  
   
--   des modèles d’événement enrichis. Certains événements de document, de classeur et de feuille de calcul dans les objets Word et Excel natifs sont déclenchés uniquement au niveau de l'application. Les éléments hôtes fournissent ces événements au niveau du document, afin qu'il soit plus facile de les gérer pour un document spécifique.  
+- des modèles d’événement enrichis. Certains événements de document, de classeur et de feuille de calcul dans les objets Word et Excel natifs sont déclenchés uniquement au niveau de l'application. Les éléments hôtes fournissent ces événements au niveau du document, afin qu'il soit plus facile de les gérer pour un document spécifique.  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>Comprendre les éléments hôtes dans les projets au niveau du document  
  Dans les projets au niveau du document, les éléments hôtes fournissent un point d’entrée pour votre code et disposent de concepteurs qui vous aident à développer votre solution.  
@@ -85,35 +85,35 @@ ms.locfileid: "35670900"
  Après avoir généré un élément hôte, vous pouvez effectuer des tâches telles que l’ajout de contrôles à des documents. Pour plus d’informations, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="host-controls"></a>Contrôles hôtes  
- Contrôles hôtes étendent différents objets interface utilisateur dans les modèles objet Word et Excel, tels que `Microsoft.Office.Interop.Word.ContentControl` et <xref:Microsoft.Office.Interop.Excel.Range> objets.  
+ Les contrôles hôtes étendent différents objets interface utilisateur dans les modèles objet Word et Excel, tels que les objets `Microsoft.Office.Interop.Word.ContentControl` et <xref:Microsoft.Office.Interop.Excel.Range>.  
   
  Les contrôles hôtes suivants sont disponibles pour les projets Excel :  
   
--   [Contrôle de graphique](../vsto/chart-control.md)  
+- [Contrôle de graphique](../vsto/chart-control.md)  
   
--   [ListObject (contrôle)](../vsto/listobject-control.md)  
+- [ListObject (contrôle)](../vsto/listobject-control.md)  
   
--   [NamedRange (contrôle)](../vsto/namedrange-control.md)  
+- [NamedRange (contrôle)](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange, contrôle](../vsto/xmlmappedrange-control.md)  
+- [XmlMappedRange, contrôle](../vsto/xmlmappedrange-control.md)  
   
- Les contrôles hôtes suivants sont disponibles pour les projets Word :  
+  Les contrôles hôtes suivants sont disponibles pour les projets Word :  
   
--   [Bookmark (contrôle)](../vsto/bookmark-control.md)  
+- [Bookmark (contrôle)](../vsto/bookmark-control.md)  
   
--   [Contrôles de contenu](../vsto/content-controls.md)  
+- [Contrôles de contenu](../vsto/content-controls.md)  
   
--   [XMLNode, contrôle](../vsto/xmlnode-control.md)  
+- [XMLNode, contrôle](../vsto/xmlnode-control.md)  
   
--   [XMLNodes, contrôle](../vsto/xmlnodes-control.md)  
+- [XMLNodes, contrôle](../vsto/xmlnodes-control.md)  
   
- Les contrôles hôtes qui sont ajoutés aux documents Office se comportent comme les objets Office natifs ; toutefois, les contrôles hôtes possèdent des fonctionnalités supplémentaires, notamment des événements et des fonctionnalités de liaison de données. Par exemple, lorsque vous souhaitez capturer les événements d’un objet <xref:Microsoft.Office.Interop.Excel.Range> natif dans Excel, vous devez d’abord gérer l’événement de modification de la feuille de calcul. Vous devez ensuite déterminer si la modification s’est produite dans le <xref:Microsoft.Office.Interop.Excel.Range>. En revanche, le contrôle hôte <xref:Microsoft.Office.Tools.Excel.NamedRange> possède un événement <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> que vous pouvez gérer directement.  
+  Les contrôles hôtes qui sont ajoutés aux documents Office se comportent comme les objets Office natifs ; toutefois, les contrôles hôtes possèdent des fonctionnalités supplémentaires, notamment des événements et des fonctionnalités de liaison de données. Par exemple, lorsque vous souhaitez capturer les événements d’un objet <xref:Microsoft.Office.Interop.Excel.Range> natif dans Excel, vous devez d’abord gérer l’événement de modification de la feuille de calcul. Vous devez ensuite déterminer si la modification s’est produite dans le <xref:Microsoft.Office.Interop.Excel.Range>. En revanche, le contrôle hôte <xref:Microsoft.Office.Tools.Excel.NamedRange> possède un événement <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> que vous pouvez gérer directement.  
   
- La relation entre un élément hôte et des contrôles hôtes est similaire à la relation entre un contrôle Windows Form et Windows Forms. De la même manière que vous placez un contrôle de zone de texte sur un Windows Form, vous placez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> . L’illustration suivante montre la relation entre les éléments hôtes et les contrôles hôtes.  
+  La relation entre un élément hôte et des contrôles hôtes est similaire à la relation entre un contrôle Windows Form et Windows Forms. De la même manière que vous placez un contrôle de zone de texte sur un Windows Form, vous placez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> . L’illustration suivante montre la relation entre les éléments hôtes et les contrôles hôtes.  
   
- ![Relation entre éléments hôtes et contrôles hôtes](../vsto/media/hostitemscontrols.png "relation entre éléments hôtes et contrôles hôtes")  
+  ![Relation entre éléments hôtes et contrôles hôtes](../vsto/media/hostitemscontrols.png "relation entre éléments hôtes et contrôles hôtes")  
   
- Vous pouvez également utiliser des contrôles Windows Forms dans vos solutions Office en les ajoutant directement à la surface du document Word et Excel. Pour plus d’informations, consultez [des contrôles de Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+  Vous pouvez également utiliser des contrôles Windows Forms dans vos solutions Office en les ajoutant directement à la surface du document Word et Excel. Pour plus d’informations, consultez [des contrôles de Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
 >  L’ajout de contrôles hôtes ou de contrôles Windows Forms à un sous-document Word n’est pas pris en charge.  
@@ -121,31 +121,31 @@ ms.locfileid: "35670900"
 ### <a name="add-host-controls-to-your-documents"></a>Ajouter des contrôles hôtes à vos documents  
  Dans les projets au niveau du document, vous pouvez ajouter des contrôles hôtes à vos documents Word ou à vos feuilles de calcul Excel au moment du design, en procédant comme suit :  
   
--   Ajoutez des contrôles hôtes à votre document au moment du design de la même manière que vous ajouteriez un objet natif.  
+- Ajoutez des contrôles hôtes à votre document au moment du design de la même manière que vous ajouteriez un objet natif.  
   
--   Faites glisser des contrôles hôtes de la **boîte à outils** vers vos documents et feuilles de calcul. Les contrôles hôtes Excel sont disponibles sous l’onglet **Contrôles Excel** des projets Excel, et les contrôles hôtes Word sont disponibles sous l’onglet **Contrôles Word** des projets Word.  
+- Faites glisser des contrôles hôtes de la **boîte à outils** vers vos documents et feuilles de calcul. Les contrôles hôtes Excel sont disponibles sous l’onglet **Contrôles Excel** des projets Excel, et les contrôles hôtes Word sont disponibles sous l’onglet **Contrôles Word** des projets Word.  
   
--   Faites glisser des contrôles hôtes de la fenêtre **Sources de données** vers vos documents et feuilles de calcul. Vous pouvez ainsi ajouter des contrôles déjà liés à des données. Pour plus d’informations, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+- Faites glisser des contrôles hôtes de la fenêtre **Sources de données** vers vos documents et feuilles de calcul. Vous pouvez ainsi ajouter des contrôles déjà liés à des données. Pour plus d’informations, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Au niveau du document et les projets de complément VSTO, vous pouvez également ajouter des contrôles hôtes aux documents lors de l’exécution. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Au niveau du document et les projets de complément VSTO, vous pouvez également ajouter des contrôles hôtes aux documents lors de l’exécution. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Pour plus d’informations sur la manière d’ajouter des contrôles hôtes à des documents, consultez les rubriques suivantes :  
+  Pour plus d’informations sur la manière d’ajouter des contrôles hôtes à des documents, consultez les rubriques suivantes :  
   
--   [Comment : ajouter des contrôles Chart aux feuilles de calcul](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Comment : ajouter des contrôles Chart aux feuilles de calcul](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Comment : ajouter des contrôles ListObject aux feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Comment : ajouter des contrôles ListObject aux feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Comment : ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Comment : ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Comment : ajouter des contrôles XMLMappedRange aux feuilles de calcul](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Comment : ajouter des contrôles XMLMappedRange aux feuilles de calcul](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Comment : ajouter du contenu des contrôles à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Comment : ajouter du contenu des contrôles à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Comment : ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Comment : ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Comment : ajouter des contrôles XMLNodes à des documents Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Comment : ajouter des contrôles XMLNodes à des documents Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Nommer des contrôles hôtes  
  Lorsque vous faites glisser un contrôle hôte de la **boîte à outils** vers votre document, le contrôle est nommé automatiquement à l’aide du type de contrôle et d’un nombre incrémentiel à la fin. Par exemple, les signets sont nommés **bookmark1**, **bookmark2**, et ainsi de suite. Si vous utilisez les fonctionnalités natives de Word ou Excel pour ajouter le contrôle, vous pouvez lui attribuer un nom spécifique au moment de sa création. Vous pouvez également renommer vos contrôles en modifiant la valeur de la propriété **Name** dans la fenêtre **Propriétés** .  

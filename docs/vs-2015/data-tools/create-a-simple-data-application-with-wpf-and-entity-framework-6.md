@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922196"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ Cette procédure pas à pas montre comment créer une application de base « fo
   
 ## <a name="create-the-model"></a>Créer le modèle  
   
-1.  Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions et choisissez **ajouter &#124; un nouvel élément**. Dans le volet gauche, sous le nœud c#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.  
+1. Cliquez avec le bouton droit sur le nœud de projet dans l’Explorateur de solutions et choisissez **ajouter &#124; un nouvel élément**. Dans le volet gauche, sous le nœud c#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.  
   
-     ![Élément Entity Framework modèle nouveau projet](../data-tools/media/raddata-ef-new-project-item.png "raddata EF nouvel élément de projet")  
+    ![Élément Entity Framework modèle nouveau projet](../data-tools/media/raddata-ef-new-project-item.png "raddata EF nouvel élément de projet")  
   
-2.  Appeler le modèle `Northwind_model` et choisissez OK. Ceci fait apparaître la **Assistant Entity Data Model**. Choisissez **Entity Framework Designer à partir de la base de données** puis cliquez sur **suivant**.  
+2. Appeler le modèle `Northwind_model` et choisissez OK. Ceci fait apparaître la **Assistant Entity Data Model**. Choisissez **Entity Framework Designer à partir de la base de données** puis cliquez sur **suivant**.  
   
-     ![Modèle EF à partir de la base de données](../data-tools/media/raddata-ef-model-from-database.png "raddata modèle EF à partir de la base de données")  
+    ![Modèle EF à partir de la base de données](../data-tools/media/raddata-ef-model-from-database.png "raddata modèle EF à partir de la base de données")  
   
-3.  Dans l’écran suivant, choisissez votre LocalDB Northwind connexion et cliquez sur **suivant**.  
+3. Dans l’écran suivant, choisissez votre LocalDB Northwind connexion et cliquez sur **suivant**.  
   
-4.  Dans la page suivante de l’Assistant, nous choisissons les tables, procédures stockées et autres objets de base de données à inclure dans le modèle Entity Framework. Développez le nœud dbo dans l’arborescence et choisissez Customers, Orders et Order Details. Conservez les valeurs par défaut activées et cliquez sur **Terminer**.  
+4. Dans la page suivante de l’Assistant, nous choisissons les tables, procédures stockées et autres objets de base de données à inclure dans le modèle Entity Framework. Développez le nœud dbo dans l’arborescence et choisissez Customers, Orders et Order Details. Conservez les valeurs par défaut activées et cliquez sur **Terminer**.  
   
-     ![Choisissez les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png "raddata choisir des objets de EF")  
+    ![Choisissez les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png "raddata choisir des objets de EF")  
   
-5.  L’Assistant génère les classes c# qui représentent le modèle Entity Framework. Il s’agit plain old classes c# et ils sont ce que nous allons databind à l’interface utilisateur WPF. Le fichier .edmx décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données.  Les fichiers .tt sont des modèles T4 qui génèrent le code qui fonctionnent sur le modèle et enregistrer les modifications dans la base de données. Vous pouvez voir ces fichiers dans l’Explorateur de solutions sous le nœud Northwind_model :  
+5. L’Assistant génère les classes c# qui représentent le modèle Entity Framework. Il s’agit plain old classes c# et ils sont ce que nous allons databind à l’interface utilisateur WPF. Le fichier .edmx décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données.  Les fichiers .tt sont des modèles T4 qui génèrent le code qui fonctionnent sur le modèle et enregistrer les modifications dans la base de données. Vous pouvez voir ces fichiers dans l’Explorateur de solutions sous le nœud Northwind_model :  
   
-     ![Fichiers de modèle de solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata les fichiers de modèle EF de l’Explorateur de solutions")  
+    ![Fichiers de modèle de solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata les fichiers de modèle EF de l’Explorateur de solutions")  
   
-     L’aire du concepteur pour le fichier .edmx vous permet de modifier certaines propriétés et les relations dans le modèle. Nous n’allons pas utiliser le concepteur dans cette procédure pas à pas.  
+    L’aire du concepteur pour le fichier .edmx vous permet de modifier certaines propriétés et les relations dans le modèle. Nous n’allons pas utiliser le concepteur dans cette procédure pas à pas.  
   
-6.  Les fichiers .tt sont à usage général et nous devons ajuster un d’eux pour travailler avec la liaison de données WPF, ce qui oblige ObservableCollections.  Dans l’Explorateur de solutions, développez le nœud de Northwind_model jusqu'à ce que vous trouviez Northwind_model.tt. (Assurez-vous que vous êtes **pas** dans le *. Contexte fichier .tt qui est directement sous le fichier .edmx).  
+6. Les fichiers .tt sont à usage général et nous devons ajuster un d’eux pour travailler avec la liaison de données WPF, ce qui oblige ObservableCollections.  Dans l’Explorateur de solutions, développez le nœud de Northwind_model jusqu'à ce que vous trouviez Northwind_model.tt. (Assurez-vous que vous êtes **pas** dans le *. Contexte fichier .tt qui est directement sous le fichier .edmx).  
   
-    -   Remplacez les deux occurrences de <xref:System.Collections.ICollection> avec <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   -   Remplacez les deux occurrences de <xref:System.Collections.ICollection> avec <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-    -   Remplacez la première occurrence de <xref:System.Collections.Generic.HashSet%601> avec <xref:System.Collections.ObjectModel.ObservableCollection%601> autour de la ligne 51. Ne remplacez pas la deuxième occurrence de HashSet  
+   -   Remplacez la première occurrence de <xref:System.Collections.Generic.HashSet%601> avec <xref:System.Collections.ObjectModel.ObservableCollection%601> autour de la ligne 51. Ne remplacez pas la deuxième occurrence de HashSet  
   
-    -   Remplacer l’occurrence uniquement <xref:System.Collections.Generic> (autour de la ligne 334) avec <xref:System.Collections.ObjectModel>.  
+   -   Remplacer l’occurrence uniquement <xref:System.Collections.Generic> (autour de la ligne 334) avec <xref:System.Collections.ObjectModel>.  
   
-7.  Appuyez sur **Ctrl + Maj + B** pour générer le projet. Une fois la build terminée, les classes de modèle sont visibles par l’Assistant sources de données.  
+7. Appuyez sur **Ctrl + Maj + B** pour générer le projet. Une fois la build terminée, les classes de modèle sont visibles par l’Assistant sources de données.  
   
- Nous sommes désormais prêts raccorder à ce modèle à la page XAML afin que nous pouvons afficher, parcourir et modifier les données.  
+   Nous sommes désormais prêts raccorder à ce modèle à la page XAML afin que nous pouvons afficher, parcourir et modifier les données.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>Lier le modèle à la page XAML  
  Il est possible d’écrire votre propre code de liaison de données, mais il est beaucoup plus facile permettre à Visual Studio de le faire pour vous.  

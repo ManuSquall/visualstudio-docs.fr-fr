@@ -1,5 +1,5 @@
 ---
-title: "' Throw ' doit être suivi par une expression sur la même ligne source | Documents Microsoft"
+title: "' Throw ' doit être suivi par une expression sur la même ligne source | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951052"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>'Throw' doit être suivi d'une expression sur la même ligne source
-Vous avez utilisé le `throw` (mot clé), mais n’a ne pas suivi il avec une expression sur la même ligne source. A `throw` instruction se compose de deux parties : le `throw` (mot clé), suivi par l’expression à être levée. Exemple :  
+Vous avez utilisé le `throw` mot clé, mais vous n’avez ne pas suivi il avec une expression sur la même ligne source. Un `throw` instruction se compose de deux parties : le `throw` mot clé, suivi par l’expression devant être levé. Exemple :  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -40,9 +40,9 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Assurez-vous que le `throw` (mot clé) et l’expression de levée s’affiche sur la même ligne.  
+-   Assurez-vous que le `throw` mot clé et l’expression à être levée s’affiche sur la même ligne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet Error](../../javascript/reference/error-object-javascript.md)   
- [throw (instruction)](../../javascript/reference/throw-statement-javascript.md)   
+ [Objet d’erreur](../../javascript/reference/error-object-javascript.md)   
+ [Throw (instruction)](../../javascript/reference/throw-statement-javascript.md)   
  [Instruction try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

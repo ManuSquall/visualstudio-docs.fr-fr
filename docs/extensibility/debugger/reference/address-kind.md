@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND | Documents Microsoft
+title: ADDRESS_KIND | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53c93cb8e7d2c021c95c4b11047b5d699f7ae1c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3138b4151c1f78a05daf2320d5979d5c6e15db42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942294"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Spécifie les types d’adresses.  
@@ -61,7 +61,7 @@ public enum enum_ADDRESS_KIND {
  Une adresse native, représentée par le [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) structure.  
   
  ADDRESS_KIND_UNMANAGED_THIS_RELATIVE  
- Une adresse non managée relatif à un `this` (`Me` en Visual Basic) pointeur et représenté par la [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) structure.  
+ Une adresse non managée relatif à un `this` (`Me` en Visual Basic) pointeur et représenté par le [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) structure.  
   
  ADDRESS_KIND_UNMANAGED_PHYSICAL  
  Une adresse physique non managée, représentée par le [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) structure.  
@@ -73,7 +73,7 @@ public enum enum_ADDRESS_KIND {
  Un champ d’une classe, représenté par le [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) structure.  
   
  ADDRESS_KIND_LOCAL  
- L’adresse est pour une variable locale et est représenté par le [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) structure.  
+ L’adresse est d’une variable locale et est représenté par le [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) structure.  
   
  ADDRESS_KIND_PARAM  
  Un paramètre de méthode ou fonction, représenté par le [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) structure.  
@@ -85,9 +85,9 @@ public enum enum_ADDRESS_KIND {
  Une valeur de retour, représentée par le [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) structure.  
   
 ## <a name="remarks"></a>Notes  
- Le [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) méthode retourne la [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure qui contient une union de structures possibles, le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure. Le `dwKind` champ le `DEBUG_ADDRESS_UNION` structure contient la `ADDRESS_KIND` valeur et explique comment interpréter le champ union.  
+ Le [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) méthode retourne le [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure qui contient une union de structures possible, le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure. Le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure contient la `ADDRESS_KIND` valeur et explique comment interpréter le champ union.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

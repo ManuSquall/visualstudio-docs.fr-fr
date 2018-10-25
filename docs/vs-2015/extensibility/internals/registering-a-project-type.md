@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911329"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
   
  L’entrée de menu pointe l’IDE à la ressource utilisée pour récupérer les informations de menu. Lorsque ces données ont été fusionnées dans la base de données de menu, la même clé sera ajoutée dans la section MenusMerged du Registre. Le VSPackage doit ne rien modifier sous la section MenusMerged directement. Dans le champ de données dans le tableau suivant, il existe trois virgules-champs séparés par des. Le premier champ identifie un chemin d’accès complet d’un fichier de ressources de menu :  
   
--   Si le premier champ est omis, la ressource de menu est chargée à partir de la DLL identifié par le GUID du VSPackage satellite.  
+- Si le premier champ est omis, la ressource de menu est chargée à partir de la DLL identifié par le GUID du VSPackage satellite.  
   
- Le deuxième champ identifie un ID de ressource de menu du type CTMENU :  
+  Le deuxième champ identifie un ID de ressource de menu du type CTMENU :  
   
--   Si l’ID de ressource est spécifié, et le chemin d’accès de fichier est fourni par le premier paramètre, une ressource de menu est chargée à partir du chemin de fichier complet.  
+- Si l’ID de ressource est spécifié, et le chemin d’accès de fichier est fourni par le premier paramètre, une ressource de menu est chargée à partir du chemin de fichier complet.  
   
--   Si l’ID de ressource est fourni, mais le chemin d’accès de fichier n’est pas, la ressource de menu est chargée à partir de la DLL satellite.  
+- Si l’ID de ressource est fourni, mais le chemin d’accès de fichier n’est pas, la ressource de menu est chargée à partir de la DLL satellite.  
   
--   Si le chemin d’accès de fichier complet est fourni et l’ID de ressource est omis, le fichier à charger est censé être un fichier de directeur technique.  
+- Si le chemin d’accès de fichier complet est fourni et l’ID de ressource est omis, le fichier à charger est censé être un fichier de directeur technique.  
   
- Le dernier champ identifie le numéro de version pour la ressource CTMENU. Vous pouvez fusionner à nouveau le menu en modifiant le numéro de version.  
+  Le dernier champ identifie le numéro de version pour la ressource CTMENU. Vous pouvez fusionner à nouveau le menu en modifiant le numéro de version.  
   
 |Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  

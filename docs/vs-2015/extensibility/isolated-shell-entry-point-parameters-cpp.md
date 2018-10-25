@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830754"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Paramètres de Point d’entrée Shell isolé (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsqu’une application basée sur l’interpréteur de commandes de Visual Studio démarre, il appelle le point d’entrée de démarrage de l’interpréteur de commandes de Visual Studio. Les paramètres suivants peuvent être remplacés dans l’appel au point d’entrée de démarrage de l’interpréteur de commandes. Pour obtenir une description de chaque paramètre, consultez [. Fichiers pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   AppName  
+- AppName  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Le modèle Visual Studio Shell isolé crée un fichier source, *solutionName*.cpp, où *solutionName* est le nom de la solution pour l’application. Ce fichier définit le point d’entrée principal pour l’application, la fonction _tWinMain. Cette fonction appelle le point d’entrée de démarrage de l’interpréteur de commandes.  
+  Le modèle Visual Studio Shell isolé crée un fichier source, *solutionName*.cpp, où *solutionName* est le nom de la solution pour l’application. Ce fichier définit le point d’entrée principal pour l’application, la fonction _tWinMain. Cette fonction appelle le point d’entrée de démarrage de l’interpréteur de commandes.  
   
- Vous pouvez modifier le comportement de l’application en modifiant ces paramètres lorsque l’application démarre.  
+  Vous pouvez modifier le comportement de l’application en modifiant ces paramètres lorsque l’application démarre.  
   
 ## <a name="parameters"></a>Paramètres  
  Le point d’entrée de démarrage de l’interpréteur de commandes de Visual Studio définit cinq paramètres. Ne modifiez pas les quatre premiers paramètres. Le cinquième paramètre prend une liste de remplacement de paramètres. Le point d’entrée de démarrage de l’interpréteur de commandes est appelé à partir du point d’entrée principal d’une application.  

@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39; @&#39; | Documents Microsoft
+title: Attendu &#39;@&#39; | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856845"
 ---
-# <a name="expected-3939"></a>Attendu &#39; @&#39;
-Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais le n'a pas placé un signe «**@**» avant le nom de variable.  
+# <a name="expected-3939"></a>Attendu &#39;@&#39;
+Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais ne pas placer une arobase «**@**» avant le nom de variable.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ajouter un signe «**@**« immédiatement avant le nom de variable. Exemple :  
+-   Ajouter un signe «**@**« juste avant le nom de variable. Exemple :  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [@setInstruction](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Instruction](../../javascript/reference/at-set-statement-javascript.md)   
  [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)

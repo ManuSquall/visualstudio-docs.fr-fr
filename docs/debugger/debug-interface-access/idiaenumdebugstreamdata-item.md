@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData::Item | Documents Microsoft
+title: IDiaEnumDebugStreamData::Item | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941365dc4f999920e1a44688bdce482ed63a3dfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5101c5f43e3d931a0ec4653838e4b45c01d3c5fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936302"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Récupère l’enregistrement spécifié.  
@@ -37,7 +37,7 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Paramètres  
  index  
- [in] Index de l’enregistrement doit être récupéré. L’index est comprise entre 0 et `count`-1, où `count` est retourné par [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).  
+ [in] Index de l’enregistrement à récupérer. L’index est comprise entre 0 et `count`-1, où `count` est retourné par [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).  
   
  cbData  
  [in] Taille de la mémoire tampon de données, en octets.  
@@ -46,7 +46,7 @@ HRESULT Item (
  [out] Retourne le nombre d’octets retournés. Si `data` est `NULL`, puis `pcbData` contient le nombre total d’octets de données disponibles dans l’enregistrement spécifié.  
   
  données]  
- [out] Une mémoire tampon est remplie avec les données d’enregistrement de flux debug.  
+ [out] Une mémoire tampon est remplie avec les données d’enregistrement de débogage stream.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` de paramètres non valides et si le `index` paramètre est hors limites.  

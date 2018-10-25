@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927344"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : Déboguer une application SharePoint à l’aide d’IntelliTrace
 
@@ -46,7 +46,7 @@ En utilisant IntelliTrace, vous pouvez déboguer plus facilement des solutions S
 
 - [Déboguer et corriger la Solution SharePoint](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -265,15 +265,15 @@ Maintenant que le code est ajouté au récepteur de fonctionnalité et le collec
 
 3. Désactivez la fonctionnalité en procédant comme suit :
 
-    1. Sur le **Actions du Site** menu dans SharePoint, choisissez **paramètres du Site**.
+   1. Sur le **Actions du Site** menu dans SharePoint, choisissez **paramètres du Site**.
 
-    2. Sous **Actions du Site**, choisissez le **gérer les fonctionnalités du site** lien.
+   2. Sous **Actions du Site**, choisissez le **gérer les fonctionnalités du site** lien.
 
-    3. Regard **IntelliTraceTest Feature1**, choisissez le **désactiver** bouton.
+   3. Regard **IntelliTraceTest Feature1**, choisissez le **désactiver** bouton.
 
-    4. Dans la page d’avertissement, choisissez le **désactiver cette fonctionnalité** lien.
+   4. Dans la page d’avertissement, choisissez le **désactiver cette fonctionnalité** lien.
 
-     Le Gestionnaire d’événements FeatureDeactivating() génère une erreur.
+      Le Gestionnaire d’événements FeatureDeactivating() génère une erreur.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Collecter des données IntelliTrace à l’aide de Microsoft Monitoring Agent
 
@@ -286,15 +286,15 @@ Si vous installez Microsoft Monitoring Agent sur le système qui exécute ShareP
 
 2. Désactiver la fonctionnalité :
 
-    1. Sur le **Actions du Site** menu dans SharePoint, choisissez **paramètres du Site**.
+   1. Sur le **Actions du Site** menu dans SharePoint, choisissez **paramètres du Site**.
 
-    2. Sous **Actions du Site**, choisissez le **gérer les fonctionnalités du site** lien.
+   2. Sous **Actions du Site**, choisissez le **gérer les fonctionnalités du site** lien.
 
-    3. Regard **IntelliTraceTest Feature1**, choisissez le **désactiver** bouton.
+   3. Regard **IntelliTraceTest Feature1**, choisissez le **désactiver** bouton.
 
-    4. Dans la page d’avertissement, choisissez le **désactiver cette fonctionnalité** lien.
+   4. Dans la page d’avertissement, choisissez le **désactiver cette fonctionnalité** lien.
 
-     Une erreur se produit (dans ce cas, en raison de l’erreur levée dans le Gestionnaire d’événements FeatureDeactivating()).
+      Une erreur se produit (dans ce cas, en raison de l’erreur levée dans le Gestionnaire d’événements FeatureDeactivating()).
 
 3. Dans la fenêtre PowerShell, exécutez le [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) commande pour créer le fichier .iTrace, arrêter l’analyse et redémarrez votre solution SharePoint.
 

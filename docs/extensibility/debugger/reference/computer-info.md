@@ -1,5 +1,5 @@
 ---
-title: COMPUTER_INFO | Documents Microsoft
+title: COMPUTER_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f9f81532608a4919707b5acafbde7ce1d8fe400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a52247f36f3628d91e83a89ded88a35c6ee8e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864216"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 Décrit l’ordinateur sur lequel le débogueur est en cours d’exécution.  
@@ -51,12 +51,12 @@ public struct COMPUTER_INFO
  Identifie le masque de suite.  
   
  dwOperatingSystemVersion  
- Numéro de version du système d’exploitation.  
+ Numéro de version de système d’exploitation.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est retournée par la [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

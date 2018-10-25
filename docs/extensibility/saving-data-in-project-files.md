@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717cff683f5f16f8f42f967c5f3b90ff2fe1e3fc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900655"
 ---
 # <a name="save-data-in-project-files"></a>Enregistrer les données dans les fichiers projet
 Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed Package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :  
   
--   Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permet d’accéder aux valeurs de propriété à partir de la **MSBuild** section du fichier projet. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> peut être appelée par n’importe quel utilisateur chaque fois que l’utilisateur doit charger ou enregistrer générez les données associées.  
+- Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permet d’accéder aux valeurs de propriété à partir de la **MSBuild** section du fichier projet. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> peut être appelée par n’importe quel utilisateur chaque fois que l’utilisateur doit charger ou enregistrer générez les données associées.  
   
--   Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> est utilisée pour conserver la build non les données associées au format XML libre. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> sont appelées par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] chaque fois que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit conserver non-génération des données associées dans le fichier projet.  
+- Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> est utilisée pour conserver la build non les données associées au format XML libre. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> sont appelées par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] chaque fois que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit conserver non-génération des données associées dans le fichier projet.  
   
- Pour plus d’informations sur la conservation de build et les données connexes non-build, consultez [conserver les données dans le fichier projet MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Pour plus d’informations sur la conservation de build et les données connexes non-build, consultez [conserver les données dans le fichier projet MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
 ## <a name="save-and-retrieve-build-related-data"></a>Enregistrer et récupérer des données connexes de build  
   

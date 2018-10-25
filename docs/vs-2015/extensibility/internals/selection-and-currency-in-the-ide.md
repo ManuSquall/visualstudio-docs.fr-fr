@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902866"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Sélection et devise dans l’IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tient à jour l’environneme
 ### <a name="window-types-and-selection"></a>Sélection et les Types de fenêtres  
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organise windows en deux types généraux :  
   
--   Windows de type de hiérarchie  
+- Windows de type de hiérarchie  
   
--   Fenêtres frame, telles que des fenêtres Outil et document  
+- Fenêtres frame, telles que des fenêtres Outil et document  
   
- L’IDE effectue le suivi de devise différemment pour chacun de ces types de fenêtre.  
+  L’IDE effectue le suivi de devise différemment pour chacun de ces types de fenêtre.  
   
- La fenêtre de type de projet plus courantes est l’Explorateur de solutions, qui contrôle l’IDE. Une fenêtre de type de projet effectue le suivi de la hiérarchie globale et ItemID du contexte de sélection globale, et la fenêtre s’appuie sur la sélection d’utilisateur pour déterminer la hiérarchie actuelle. Pour windows de type de projet, l’environnement fournit le service global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, via lesquelles VSPackages peuvent surveiller les valeurs actuelles des éléments ouverts. Propriété de navigation dans l’environnement est pilotée par ce service global.  
+  La fenêtre de type de projet plus courantes est l’Explorateur de solutions, qui contrôle l’IDE. Une fenêtre de type de projet effectue le suivi de la hiérarchie globale et ItemID du contexte de sélection globale, et la fenêtre s’appuie sur la sélection d’utilisateur pour déterminer la hiérarchie actuelle. Pour windows de type de projet, l’environnement fournit le service global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, via lesquelles VSPackages peuvent surveiller les valeurs actuelles des éléments ouverts. Propriété de navigation dans l’environnement est pilotée par ce service global.  
   
- Fenêtres frame, utilisent quant à eux, sera imprimé dans la fenêtre frame pour transmettre la valeur SelectionContext (le trio hiérarchie/ItemID/SelectionContainer). . Fenêtres frame utilisent le service <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> à cet effet. Le DocObject peut transmettre uniquement les valeurs pour le conteneur de sélection, en laissant les valeurs locales pour la hiérarchie et ItemID inchangés, comme cela est courant pour les documents enfants MDI.  
+  Fenêtres frame, utilisent quant à eux, sera imprimé dans la fenêtre frame pour transmettre la valeur SelectionContext (le trio hiérarchie/ItemID/SelectionContainer). . Fenêtres frame utilisent le service <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> à cet effet. Le DocObject peut transmettre uniquement les valeurs pour le conteneur de sélection, en laissant les valeurs locales pour la hiérarchie et ItemID inchangés, comme cela est courant pour les documents enfants MDI.  
   
 ### <a name="events-and-currency"></a>Événements et devise  
  Deux types d’événements peuvent se produire et affectent la notion de l’environnement de devise :  

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899329"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 
@@ -36,11 +36,11 @@ Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **
 
 1. Dans le menu **Edition**, développez **Rechercher et remplacer**.
 
-1. Choisissez **Remplacer dans les fichiers**.
+2. Choisissez **Remplacer dans les fichiers**.
 
    — ou —
 
-  Si la fenêtre **Rechercher et remplacer** est déjà ouverte, dans la barre d’outils, choisissez **Remplacer dans les fichiers**.
+   Si la fenêtre **Rechercher et remplacer** est déjà ouverte, dans la barre d’outils, choisissez **Remplacer dans les fichiers**.
 
 ## <a name="find-what"></a>Rechercher
 

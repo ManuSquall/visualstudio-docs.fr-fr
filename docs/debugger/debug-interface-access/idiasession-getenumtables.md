@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::getEnumTables | Documents Microsoft
+title: IDiaSession::getEnumTables | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7556999e1455dcfa0d79b131ee4661a77732990f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f68da36fc527e0390789df22ed4550a6165adbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885836"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Récupère un énumérateur pour toutes les tables contenues dans le magasin de symboles.  
@@ -34,13 +34,13 @@ HRESULT getEnumTables (
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnumTables`  
- [out] Retourne un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objet. Cette interface permet d’énumérer les tables dans le magasin de symboles.  
+ [out] Retourne un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objet. Utilisez cette interface pour énumérer les tables dans le magasin de symboles.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple présente une fonction générale qui utilise le `getEnumTables` méthode pour obtenir un objet énumérateur spécifique. Si l’énumérateur est trouvé, la fonction retourne un pointeur qui peut être converti à l’interface souhaitée ; Sinon, la fonction retourne `NULL`.  
+ Cet exemple présente une fonction générale qui utilise le `getEnumTables` méthode pour obtenir un objet énumérateur spécifique. Si l’énumérateur est trouvé, la fonction retourne un pointeur qui peut être casté vers l’interface souhaitée ; Sinon, la fonction retourne `NULL`.  
   
 ```C++  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  

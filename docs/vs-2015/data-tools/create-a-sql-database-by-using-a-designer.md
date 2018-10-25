@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860327"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Créer une base de données SQL à l’aide d’un concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et déf
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Pour créer un projet et un fichier de base de données  
   
-1.  Créer un projet Windows Forms qui est nommé `SampleDatabaseWalkthrough`.  
+1. Créer un projet Windows Forms qui est nommé `SampleDatabaseWalkthrough`.  
   
-2.  Dans la barre de menus, sélectionnez **projet** > **ajouter un nouvel élément**.  
+2. Dans la barre de menus, sélectionnez **projet** > **ajouter un nouvel élément**.  
   
-3.  Dans la liste des modèles d’élément, faites défiler vers le bas et sélectionnez **base de données basée sur le Service**.  
+3. Dans la liste des modèles d’élément, faites défiler vers le bas et sélectionnez **base de données basée sur le Service**.  
   
-     ![Boîte de dialogue Modèles élément](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Boîte de dialogue Modèles élément](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Nom de la base de données **SampleDatabase**, puis sélectionnez le **ajouter** bouton.  
+4. Nom de la base de données **SampleDatabase**, puis sélectionnez le **ajouter** bouton.  
   
-5.  Si le **des Sources de données** fenêtre n’est pas ouverte, ouvrez-le en sélectionnant les touches Maj + Alt + D ou, sur la barre de menus, en sélectionnant **vue** > **Windows autres**  >  **Des Sources de données**.  
+5. Si le **des Sources de données** fenêtre n’est pas ouverte, ouvrez-le en sélectionnant les touches Maj + Alt + D ou, sur la barre de menus, en sélectionnant **vue** > **Windows autres**  >  **Des Sources de données**.  
   
-6.  Dans le **des Sources de données** fenêtre, sélectionnez le **ajouter une nouvelle Source de données** lien.  
+6. Dans le **des Sources de données** fenêtre, sélectionnez le **ajouter une nouvelle Source de données** lien.  
   
-7.  Dans le **Assistant de Configuration de Source de données**, sélectionnez le **suivant** quatre fois pour accepter les paramètres par défaut, puis sélectionnez le **Terminer** bouton.  
+7. Dans le **Assistant de Configuration de Source de données**, sélectionnez le **suivant** quatre fois pour accepter les paramètres par défaut, puis sélectionnez le **Terminer** bouton.  
   
- En ouvrant la fenêtre de propriétés pour la base de données, vous pouvez consulter la chaîne de connexion et l'emplacement du fichier principal .mdf. Vous verrez que le fichier de base de données est dans le dossier du projet.  
+   En ouvrant la fenêtre de propriétés pour la base de données, vous pouvez consulter la chaîne de connexion et l'emplacement du fichier principal .mdf. Vous verrez que le fichier de base de données est dans le dossier du projet.  
   
 -   Dans Visual Studio, sélectionnez **vue** > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud, ouvrez le menu contextuel de SampleDatabase.mdf, puis en sélectionnant **propriétés**.  
   

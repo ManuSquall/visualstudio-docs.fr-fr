@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839386"
 ---
 # <a name="supported-event-types"></a>Types d’événements pris en charge
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Débogage de Visual Studio prend actuellement en charge les types d’événements suivants :  
   
--   Événements asynchrones  
+- Événements asynchrones  
   
-     Notifier le Gestionnaire de session de débogage (SDM) et l’IDE qui change l’état de l’application en cours de débogage. Ces événements sont traités à la convenance du SDM et l’IDE. Aucune réponse n’est envoyée au moteur de débogage (dé) une fois que l’événement est traité. Le [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) et [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfaces sont des exemples d’événements asynchrones.  
+   Notifier le Gestionnaire de session de débogage (SDM) et l’IDE qui change l’état de l’application en cours de débogage. Ces événements sont traités à la convenance du SDM et l’IDE. Aucune réponse n’est envoyée au moteur de débogage (dé) une fois que l’événement est traité. Le [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) et [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfaces sont des exemples d’événements asynchrones.  
   
--   Événements synchrones  
+- Événements synchrones  
   
-     Notifier le SDM et l’IDE que la modification de l’état de l’application en cours de débogage. La seule différence entre ces événements et les événements asynchrones est qu’une réponse est envoyée par le biais de la [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) (méthode).  
+   Notifier le SDM et l’IDE que la modification de l’état de l’application en cours de débogage. La seule différence entre ces événements et les événements asynchrones est qu’une réponse est envoyée par le biais de la [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) (méthode).  
   
-     Envoyer un événement synchrone est utile si vous avez besoin de votre DE poursuivre le traitement une fois que l’IDE reçoit et traite l’événement.  
+   Envoyer un événement synchrone est utile si vous avez besoin de votre DE poursuivre le traitement une fois que l’IDE reçoit et traite l’événement.  
   
--   Les événements d’arrêt synchrones, ou que les événements d’arrêt  
+- Les événements d’arrêt synchrones, ou que les événements d’arrêt  
   
-     Notifier le SDM et l’IDE que l’application en cours de débogage s’est arrêté l’exécution de code. Lorsque vous envoyez un événement d’arrêt au moyen de la méthode [événement](../../extensibility/debugger/reference/idebugeventcallback2-event.md), le [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) paramètre est obligatoire. Événements d’arrêt sont maintenues par un appel à l’une des méthodes suivantes :  
+   Notifier le SDM et l’IDE que l’application en cours de débogage s’est arrêté l’exécution de code. Lorsque vous envoyez un événement d’arrêt au moyen de la méthode [événement](../../extensibility/debugger/reference/idebugeventcallback2-event.md), le [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) paramètre est obligatoire. Événements d’arrêt sont maintenues par un appel à l’une des méthodes suivantes :  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Les interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) et [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sont des exemples d’événements d’arrêt.  
+    Les interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) et [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sont des exemples d’événements d’arrêt.  
   
-    > [!NOTE]
-    >  Événements d’arrêt asynchrone ne sont pas pris en charge. C’est une erreur pour envoyer un événement d’arrêt asynchrone.  
+  > [!NOTE]
+  >  Événements d’arrêt asynchrone ne sont pas pris en charge. C’est une erreur pour envoyer un événement d’arrêt asynchrone.  
   
 ## <a name="discussion"></a>Discussion  
  L’implémentation réelle des événements dépend de la conception de votre DE. Le type de chaque événement envoyé est déterminé par ses attributs, qui sont définis lorsque vous concevez l’Allemagne. Par exemple, un dé peut envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) comme un événement asynchrone, tandis que l’autre peut l’envoyer comme un événement d’arrêt.  

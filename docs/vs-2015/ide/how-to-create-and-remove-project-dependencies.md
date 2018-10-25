@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823838"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +37,20 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
   
 ### <a name="to-assign-dependencies-to-projects"></a>Pour assigner des dépendances à des projets  
   
-1.  Dans l'Explorateur de solutions, sélectionnez un projet.  
+1. Dans l'Explorateur de solutions, sélectionnez un projet.  
   
-2.  Dans le menu **Projet**, choisissez **Dépendances du projet**.  
+2. Dans le menu **Projet**, choisissez **Dépendances du projet**.  
   
-     La boîte de dialogue **Dépendances du projet** s’ouvre.  
+    La boîte de dialogue **Dépendances du projet** s’ouvre.  
   
-    > [!NOTE]
-    >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
+   > [!NOTE]
+   >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
   
-3.  Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
+3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
   
-4.  Dans le champ **Dépend de**, cochez la case de tout autre projet à générer avant ce projet.  
+4. Dans le champ **Dépend de**, cochez la case de tout autre projet à générer avant ce projet.  
   
- Votre solution doit comporter plusieurs projets pour que vous puissiez créer des dépendances du projet.  
+   Votre solution doit comporter plusieurs projets pour que vous puissiez créer des dépendances du projet.  
   
 ### <a name="to-remove-dependencies-from-projects"></a>Pour supprimer des dépendances de projets  
   

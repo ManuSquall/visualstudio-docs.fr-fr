@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932349"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Guide pratique pour faire un zoom sur une région du graphique des résultats d’un test de charge
 
@@ -94,15 +94,15 @@ Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pou
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Pour effectuer un zoom avant d'une zone du graphique en cliquant dessus et en la faisant glisser
 
-1.  Choisissez un graphique à une extrémité de la zone de zoom.
+1. Choisissez un graphique à une extrémité de la zone de zoom.
 
-2.  Faites glisser le pointeur de la souris à l'autre extrémité de la zone de zoom.
+2. Faites glisser le pointeur de la souris à l'autre extrémité de la zone de zoom.
 
-3.  Relâchez le bouton de la souris.
+3. Relâchez le bouton de la souris.
 
-     Cela agrandit la zone que vous avez définie en cliquant dessus et en la faisant glisser.
+    Cela agrandit la zone que vous avez définie en cliquant dessus et en la faisant glisser.
 
- La procédure suivante décrit la manière d'effectuer rapidement un zoom arrière sans avoir à déplacer les extrémités de la barre de zoom.
+   La procédure suivante décrit la manière d'effectuer rapidement un zoom arrière sans avoir à déplacer les extrémités de la barre de zoom.
 
 ### <a name="to-zoom-out"></a>Pour effectuer un zoom arrière
 

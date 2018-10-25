@@ -26,12 +26,12 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 529f36b476158e7333cf03210dec94ec8bab4ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869156"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
 ##  <a name="Using"></a> À l’aide de diagrammes de séquence UML  
  Vous pouvez utiliser des diagrammes de séquence à diverses fins et à différents niveaux de détail du programme. Vous pouvez par exemple dessiner un diagramme de séquence dans les cas suivants :  
   
--   Si vous avez un diagramme de cas d'usage qui récapitule les utilisateurs de votre système et leurs objectifs, vous pouvez dessiner des diagrammes de séquence pour décrire comment les principaux composants du système interagissent pour remplir l'objectif de chaque cas d'usage. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Si vous avez un diagramme de cas d'usage qui récapitule les utilisateurs de votre système et leurs objectifs, vous pouvez dessiner des diagrammes de séquence pour décrire comment les principaux composants du système interagissent pour remplir l'objectif de chaque cas d'usage. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Si vous avez identifié des messages arrivant à une interface d'un composant, vous pouvez dessiner des diagrammes de séquence pour décrire comment les parties internes du composant interagissent pour obtenir le résultat nécessaire pour chaque message entrant. Pour plus d’informations, consultez [diagrammes de composants UML : indications](../modeling/uml-component-diagrams-guidelines.md).  
+- Si vous avez identifié des messages arrivant à une interface d'un composant, vous pouvez dessiner des diagrammes de séquence pour décrire comment les parties internes du composant interagissent pour obtenir le résultat nécessaire pour chaque message entrant. Pour plus d’informations, consultez [diagrammes de composants UML : indications](../modeling/uml-component-diagrams-guidelines.md).  
   
- Les diagrammes de séquence présentent plusieurs avantages :  
+  Les diagrammes de séquence présentent plusieurs avantages :  
   
--   Vous pouvez facilement voir comment les tâches sont réparties entre les composants.  
+- Vous pouvez facilement voir comment les tâches sont réparties entre les composants.  
   
--   Vous pouvez identifier des modèles d'interaction qui rendent difficile la mise à jour du logiciel.  
+- Vous pouvez identifier des modèles d'interaction qui rendent difficile la mise à jour du logiciel.  
   
 ## <a name="relationship-to-other-diagrams"></a>Relation aux autres diagrammes  
  Vous pouvez utiliser des diagrammes de séquence UML avec d'autres diagrammes de plusieurs façons.  
@@ -90,17 +90,17 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
 #### <a name="to-create-a-sequence-diagram"></a>Pour créer un diagramme de séquence  
   
-1.  Sur le **Architecture** menu, cliquez sur **nouveau UML ou diagramme de couche**.  
+1. Sur le **Architecture** menu, cliquez sur **nouveau UML ou diagramme de couche**.  
   
-2.  Sous **modèles**, cliquez sur **diagramme de séquence UML**.  
+2. Sous **modèles**, cliquez sur **diagramme de séquence UML**.  
   
-3.  Nommez le diagramme.  
+3. Nommez le diagramme.  
   
-4.  Dans **ajouter au projet de modélisation**, sélectionnez un projet de modélisation existant dans votre solution, ou **créer un nouveau projet de modélisation**, puis cliquez sur **OK**.  
+4. Dans **ajouter au projet de modélisation**, sélectionnez un projet de modélisation existant dans votre solution, ou **créer un nouveau projet de modélisation**, puis cliquez sur **OK**.  
   
-     Un nouveau diagramme de séquence apparaît avec la **diagramme de séquence** boîte à outils. La boîte à outils contient les éléments et connecteurs nécessaires.  
+    Un nouveau diagramme de séquence apparaît avec la **diagramme de séquence** boîte à outils. La boîte à outils contient les éléments et connecteurs nécessaires.  
   
- ![Parties d’un diagramme de séquence](../modeling/media/uml-sequence.png "UML_Sequence")  
+   ![Parties d’un diagramme de séquence](../modeling/media/uml-sequence.png "UML_Sequence")  
   
 #### <a name="to-draw-a-sequence-diagram"></a>Pour dessiner un diagramme de séquence  
   
@@ -143,15 +143,15 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Pour afficher et modifier le texte de signature d'un message  
   
--   La ligne de vie cible doit être liée ou mappée à des types pour que le texte de la signature soit visible. Pour ce faire, effectuez l'une des étapes suivantes :  
+- La ligne de vie cible doit être liée ou mappée à des types pour que le texte de la signature soit visible. Pour ce faire, effectuez l'une des étapes suivantes :  
   
-    -   Avec le bouton droit de la ligne de vie, puis choisissez **créer une classe**.  
+  - Avec le bouton droit de la ligne de vie, puis choisissez **créer une classe**.  
   
-         - ou -  
+     - ou -  
   
-    -   Sélectionnez la ligne de vie, appuyez sur **F4**, puis, dans le **propriétés** fenêtre, définissez la **Type** propriété à un type ou spécifiez le nom d’un nouveau type. Avec le bouton droit de l’étiquette du message, puis choisissez **créer une opération**.  
+  - Sélectionnez la ligne de vie, appuyez sur **F4**, puis, dans le **propriétés** fenêtre, définissez la **Type** propriété à un type ou spécifiez le nom d’un nouveau type. Avec le bouton droit de l’étiquette du message, puis choisissez **créer une opération**.  
   
-     Le texte de la signature apparaît sous l'étiquette du message. Vous pouvez maintenant modifier le texte de la signature. Pour plus d’informations, consultez [Classes et lignes de vie](#ClassesAndLifelines).  
+    Le texte de la signature apparaît sous l'étiquette du message. Vous pouvez maintenant modifier le texte de la signature. Pour plus d’informations, consultez [Classes et lignes de vie](#ClassesAndLifelines).  
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Pour améliorer la disposition d'un diagramme de séquence  
   
@@ -227,21 +227,21 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
  Les lignes de vie peuvent représenter l'un des niveaux de détail suivants :  
   
--   Objets dans le code de programme, qui existe déjà ou que vous développez actuellement.  
+- Objets dans le code de programme, qui existe déjà ou que vous développez actuellement.  
   
--   Composants ou leurs sous-composants, généralement en omettant les façades, proxys et autres mécanismes de connexion.  
+- Composants ou leurs sous-composants, généralement en omettant les façades, proxys et autres mécanismes de connexion.  
   
--   Votre système et les acteurs externes  
+- Votre système et les acteurs externes  
   
- Les messages peuvent représenter l'un des niveaux de détail suivants :  
+  Les messages peuvent représenter l'un des niveaux de détail suivants :  
   
--   Messages logiciels dans le code de programme, à une API ou une interface web.  
+- Messages logiciels dans le code de programme, à une API ou une interface web.  
   
--   Transactions ou sous-transactions, par exemple entre les utilisateurs et le système ou entre le code et la base de données.  
+- Transactions ou sous-transactions, par exemple entre les utilisateurs et le système ou entre le code et la base de données.  
   
--   Cas d'usage : interactions majeures entre les utilisateurs et le système.  
+- Cas d'usage : interactions majeures entre les utilisateurs et le système.  
   
- Que vous exploriez du code existant ou que vous décriviez une nouvelle conception, il est souvent utile de dessiner et de discuter des vues les moins détaillées.  
+  Que vous exploriez du code existant ou que vous décriviez une nouvelle conception, il est souvent utile de dessiner et de discuter des vues les moins détaillées.  
   
 ## <a name="describing-variations"></a>Description des variantes  
  Le diagramme montre une séquence typique d'événements. Si vous souhaitez illustrer d'autres possibilités, telles que des scénarios de défaillance, vous pouvez adopter l'une des approches suivantes :  
@@ -275,18 +275,18 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Pour créer une ligne de vie à partir d'un type existant  
   
--   Faites glisser une classe, un composant ou une interface de l'Explorateur de modèles UML vers un diagramme de séquence.  
+- Faites glisser une classe, un composant ou une interface de l'Explorateur de modèles UML vers un diagramme de séquence.  
   
-     \- ou -  
+   \- ou -  
   
-    1.  Avec le bouton droit de la classe, un composant ou une interface dans le diagramme correspondant, puis cliquez sur **créer la ligne de vie**.  
+  1. Avec le bouton droit de la classe, un composant ou une interface dans le diagramme correspondant, puis cliquez sur **créer la ligne de vie**.  
   
-    2.  Dans le **créer la ligne de vie** boîte de dialogue, sélectionnez un diagramme de séquence, puis cliquez sur **OK**.  
+  2. Dans le **créer la ligne de vie** boîte de dialogue, sélectionnez un diagramme de séquence, puis cliquez sur **OK**.  
   
      Une nouvelle ligne de vie d'instance nommée apparaît, dont le type est celui que vous avez fait glisser.  
   
-    > [!NOTE]
-    >  Vous pouvez répéter cette opération autant de fois que vous le souhaitez. Dans ce cas, vous créerez des lignes de vie avec différents noms d'instances.  
+  > [!NOTE]
+  >  Vous pouvez répéter cette opération autant de fois que vous le souhaitez. Dans ce cas, vous créerez des lignes de vie avec différents noms d'instances.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Pour modifier le type d'une ligne de vie  
   

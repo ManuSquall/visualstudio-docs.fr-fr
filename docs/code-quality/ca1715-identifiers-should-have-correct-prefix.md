@@ -20,14 +20,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e3e040b659b4e4b1484f7557a3ccececffa20e2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ad2e867b40bd8fc05215e7bb1d905a7d079eecf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879835"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|

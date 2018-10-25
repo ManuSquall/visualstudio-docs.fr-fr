@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941943"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Guide pratique pour créer un type Nullable (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiqu
   
  Les types Nullable sont des instances de la structure <xref:System.Nullable%601>. Chaque instance d’un type Nullable a deux propriétés publiques en lecture seule, `HasValue` et `Value` :  
   
--   `HasValue` est de type `bool` et indique si la variable contient une valeur définie. `True` signifie que la variable contient une valeur non null. Vous pouvez tester l’existence d’une valeur définie en utilisant une instruction telle que `if (x.HasValue)` ou `if (y != null)`.  
+- `HasValue` est de type `bool` et indique si la variable contient une valeur définie. `True` signifie que la variable contient une valeur non null. Vous pouvez tester l’existence d’une valeur définie en utilisant une instruction telle que `if (x.HasValue)` ou `if (y != null)`.  
   
--   `Value` est du même type que le type sous-jacent. Si `HasValue` est `True`, `Value` contient une valeur significative. Si `HasValue` est `False`, l’accès à `Value` lève une exception d’opération non valide.  
+- `Value` est du même type que le type sous-jacent. Si `HasValue` est `True`, `Value` contient une valeur significative. Si `HasValue` est `False`, l’accès à `Value` lève une exception d’opération non valide.  
   
- Par défaut, quand vous déclarez une variable en tant que type Nullable, elle n’a aucune valeur définie (`HasValue` est `False`), autre que la valeur par défaut de son type valeur sous-jacent.  
+  Par défaut, quand vous déclarez une variable en tant que type Nullable, elle n’a aucune valeur définie (`HasValue` est `False`), autre que la valeur par défaut de son type valeur sous-jacent.  
   
- Le Concepteur de classes affiche un type Nullable à l’image de son type sous-jacent.  
+  Le Concepteur de classes affiche un type Nullable à l’image de son type sous-jacent.  
   
- Pour plus d’informations sur les types Nullable dans Visual C#, consultez [Types Nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Pour plus d’informations sur les types Nullable dans Visual C#, consultez [Types Nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Pour ajouter un type Nullable à l’aide du Concepteur de classes  
   

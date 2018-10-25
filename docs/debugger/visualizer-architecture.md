@@ -1,5 +1,5 @@
 ---
-title: Architecture du visualiseur | Documents Microsoft
+title: Architecture d’un visualiseur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b20572409ac49451f58584be20fbabfdab39a3ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836604"
 ---
 # <a name="visualizer-architecture"></a>Architecture d'un visualiseur
 L'architecture d'un visualiseur du débogueur comporte deux parties :  
   
--   Le *côté débogueur* s’exécute dans le débogueur Visual Studio. Le code côté débogueur crée et affiche l'interface utilisateur de votre visualiseur.  
+- Le *côté débogueur* s’exécute dans le débogueur Visual Studio. Le code côté débogueur crée et affiche l'interface utilisateur de votre visualiseur.  
   
--   Le *côté programme débogué* s’exécute dans le processus que Visual Studio débogue (le *programme débogué*).  
+- Le *côté programme débogué* s’exécute dans le processus de débogage de Visual Studio (le *programme débogué*).  
   
- Un visualiseur est un composant de débogueur qui permet au débogueur afficher (*visualiser*) le contenu d’un objet de données sous forme explicite, compréhensible. Certains visualiseurs prennent également en charge la modification de l'objet de données. En écrivant des visualiseurs personnalisés, vous pouvez étendre les fonctionnalités du débogueur afin de gérer vos propres types de données personnalisés.  
+  Un visualiseur est un composant de débogueur qui permet au débogueur afficher (*visualiser*) le contenu d’un objet de données sous une forme explicite, compréhensible. Certains visualiseurs prennent également en charge la modification de l'objet de données. En écrivant des visualiseurs personnalisés, vous pouvez étendre les fonctionnalités du débogueur afin de gérer vos propres types de données personnalisés.  
   
- L’objet de données à visualiser réside dans le processus de débogage (le *programme débogué* processus). L'interface utilisateur qui affiche les données est créée dans le processus du débogueur Visual Studio :  
+  L’objet de données à visualiser réside dans le processus de débogage (le *programme débogué* processus). L'interface utilisateur qui affiche les données est créée dans le processus du débogueur Visual Studio :  
   
 |Processus du débogueur|Processus du programme débogué|  
 |----------------------|----------------------|  

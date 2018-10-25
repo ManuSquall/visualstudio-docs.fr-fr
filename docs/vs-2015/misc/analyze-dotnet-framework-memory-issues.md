@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812567"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analyser des problèmes de mémoire liés à .NET Framework
 Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dans le code .NET Framework à l'aide de l'analyseur de mémoire managée de Visual Studio. La version minimale de .NET Framework du code cible est .NET Framework 4.5.  
   
  Analyse les informations contenues dans l’outil d’analyse de mémoire *fichiers dump avec des données de tas* qui une copie des objets dans la mémoire d’une application. Vous pouvez recueillir des fichiers dump (.dmp) à partir de l'IDE Visual Studio IDE ou à l'aide d'autres outils système.  
   
--   Vous pouvez analyser un instantané pour comprendre l’impact relatif des types d’objets sur l’utilisation de la mémoire et pour rechercher le code dans votre application qui utilise la mémoire de manière inefficace.  
+- Vous pouvez analyser un instantané pour comprendre l’impact relatif des types d’objets sur l’utilisation de la mémoire et pour rechercher le code dans votre application qui utilise la mémoire de manière inefficace.  
   
--   Vous pouvez également comparer (*diff*) deux instantanés d’une application pour rechercher les sections de votre code qui provoquent la mémoire permet d’augmenter au fil du temps.  
+- Vous pouvez également comparer (*diff*) deux instantanés d’une application pour rechercher les sections de votre code qui provoquent la mémoire permet d’augmenter au fil du temps.  
   
- Pour obtenir une description de l’Analyseur de mémoire managée, consultez [à l’aide de Visual Studio 2013 pour diagnostiquer des problèmes de mémoire .NET en Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) sur Visual Studio ALM + Team Foundation Server blog.  
+  Pour obtenir une description de l’Analyseur de mémoire managée, consultez [à l’aide de Visual Studio 2013 pour diagnostiquer des problèmes de mémoire .NET en Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) sur Visual Studio ALM + Team Foundation Server blog.  
   
 ##  <a name="BKMK_Contents"></a> Sommaire  
  [Utilisation de la mémoire dans les applications .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  **Pour recueillir un dump à partir de Visual Studio**  
   
-1.  Vous pouvez créer un fichier dump pour un processus qui a été démarré à partir d'un projet Visual Studio ou vous pouvez attacher le débogueur à un processus en cours d'exécution. Consultez [attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Vous pouvez créer un fichier dump pour un processus qui a été démarré à partir d'un projet Visual Studio ou vous pouvez attacher le débogueur à un processus en cours d'exécution. Consultez [attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2.  Arrêtez l'exécution. Le débogueur s’arrête lorsque vous choisissez **interrompre tout** sur le **déboguer** menu, ou à une exception, ou à un point d’arrêt  
+2. Arrêtez l'exécution. Le débogueur s’arrête lorsque vous choisissez **interrompre tout** sur le **déboguer** menu, ou à une exception, ou à un point d’arrêt  
   
-3.  Sur le **déboguer** menu, choisissez **enregistrer le Dump sous**. Dans le **enregistrer le Dump sous** boîte de dialogue zone, spécifiez un emplacement et assurez-vous que l’option **Minidump avec segment mémoire** (la valeur par défaut) est sélectionné dans le **enregistrer en tant que type** liste.  
+3. Sur le **déboguer** menu, choisissez **enregistrer le Dump sous**. Dans le **enregistrer le Dump sous** boîte de dialogue zone, spécifiez un emplacement et assurez-vous que l’option **Minidump avec segment mémoire** (la valeur par défaut) est sélectionné dans le **enregistrer en tant que type** liste.  
   
- **Pour comparer deux instantanés de mémoire**  
+   **Pour comparer deux instantanés de mémoire**  
   
- Pour analyser l'augmentation de l'utilisation de la mémoire par une application, recueillez deux fichiers dump à partir d'une même instance de l'application.  
+   Pour analyser l'augmentation de l'utilisation de la mémoire par une application, recueillez deux fichiers dump à partir d'une même instance de l'application.  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analyser l’utilisation de la mémoire  
  [Filtrer la liste des objets](#BKMK_Filter_the_list_of_objects) **&#124;** [analyser les données de mémoire d’un seul instantané](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [comparer deux mémoire captures instantanées](#BKMK_Compare_two_memory_snapshots)  
   
  Pour analyser un fichier dump à la recherche de problèmes de mémoire  
   
-1.  Dans Visual Studio, choisissez **fichier**, **Open** et spécifiez le fichier de vidage.  
+1. Dans Visual Studio, choisissez **fichier**, **Open** et spécifiez le fichier de vidage.  
   
-2.  Sur le **résumé du fichier Minidump** page, choisissez **déboguer la mémoire managée**.  
+2. Sur le **résumé du fichier Minidump** page, choisissez **déboguer la mémoire managée**.  
   
-     ![Vider la page Résumé de fichier](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Vider la page Résumé de fichier](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- L'analyseur de mémoire démarre une session de débogage pour analyser le fichier et affiche les résultats dans la page Affichage du tas :  
+   L'analyseur de mémoire démarre une session de débogage pour analyser le fichier et affiche les résultats dans la page Affichage du tas :  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrer la liste des objets  
  Par défaut, l'analyseur de mémoire filtre la liste d'objets dans un instantané de la mémoire pour afficher uniquement les types et instances codés par un utilisateur et uniquement les types dont la taille inclusive totale dépasse un seuil de pourcentage de la taille totale du tas. Vous pouvez modifier ces options dans le **afficher les paramètres** liste :  
@@ -117,28 +117,28 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
 #### <a name="object-type-table"></a>Table Type d'objet  
  La table du haut mentionne les types d'objets contenus en mémoire.  
   
--   **Nombre** indique le nombre d’instances du type dans l’instantané.  
+- **Nombre** indique le nombre d’instances du type dans l’instantané.  
   
--   **Taille (octets)** est la taille des instances du type, sans compter la taille des objets auxquels il détient des références à tous les. La clé publique du signataire doit être fournie à la classe  
+- **Taille (octets)** est la taille des instances du type, sans compter la taille des objets auxquels il détient des références à tous les. La clé publique du signataire doit être fournie à la classe  
   
--   **Taille inclusive (octets)** inclut les tailles des objets référencés.  
+- **Taille inclusive (octets)** inclut les tailles des objets référencés.  
   
- Vous pouvez choisir l’icône des instances (![l’icône d’instance dans la colonne de Type d’objet](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) dans le **Type d’objet** colonne afin d’afficher une liste des instances de la type.  
+  Vous pouvez choisir l’icône des instances (![l’icône d’instance dans la colonne de Type d’objet](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) dans le **Type d’objet** colonne afin d’afficher une liste des instances de la type.  
   
 #### <a name="instance-table"></a>Table Instance  
  ![Tableau d’instances](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **Instance** est l’emplacement de mémoire de l’objet qui sert d’identificateur d’objet de l’objet  
+- **Instance** est l’emplacement de mémoire de l’objet qui sert d’identificateur d’objet de l’objet  
   
--   **Valeur** présente la valeur réelle des types valeur. Vous pouvez placer le pointeur de la souris sur le nom d'un type référence pour afficher ses valeurs de données dans une bulle d'informations.  
+- **Valeur** présente la valeur réelle des types valeur. Vous pouvez placer le pointeur de la souris sur le nom d'un type référence pour afficher ses valeurs de données dans une bulle d'informations.  
   
-     ![Instance de valeurs dans une bulle](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Instance de valeurs dans une bulle](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **Taille (octets)** est la taille de l’objet, sans compter la taille des objets il détient des références. La clé publique du signataire doit être fournie à la classe  
+- **Taille (octets)** est la taille de l’objet, sans compter la taille des objets il détient des références. La clé publique du signataire doit être fournie à la classe  
   
--   **Taille inclusive (octets)** inclut les tailles des objets référencés.  
+- **Taille inclusive (octets)** inclut les tailles des objets référencés.  
   
- Par défaut, les types et les instances sont triés par **taille Inclusive (octets)**. Pour changer l'ordre de tri, choisissez un en-tête de colonne dans la liste.  
+  Par défaut, les types et les instances sont triés par **taille Inclusive (octets)**. Pour changer l'ordre de tri, choisissez un en-tête de colonne dans la liste.  
   
 #### <a name="paths-to-root"></a>Chemins d’accès à la racine  
   
@@ -148,17 +148,17 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
 #### <a name="referenced-types--referenced-objects"></a>Types référencés / Objets référencés  
   
--   Pour un type sélectionné dans le **Type d’objet** table, le **Types référencés** onglet affiche la taille et le nombre de types référencés détenus par tous les objets du type sélectionné.  
+- Pour un type sélectionné dans le **Type d’objet** table, le **Types référencés** onglet affiche la taille et le nombre de types référencés détenus par tous les objets du type sélectionné.  
   
--   Pour une instance sélectionnée d’un type, **objets référencés** affiche les objets qui sont détenues par l’instance sélectionnée. Vous pouvez placer le pointeur de la souris sur le nom pour afficher ses valeurs de données dans une bulle d'informations.  
+- Pour une instance sélectionnée d’un type, **objets référencés** affiche les objets qui sont détenues par l’instance sélectionnée. Vous pouvez placer le pointeur de la souris sur le nom pour afficher ses valeurs de données dans une bulle d'informations.  
   
- **Références circulaires**  
+  **Références circulaires**  
   
- Un objet peut faire référence à un second objet qui détient directement ou indirectement une référence au premier objet. Lorsque l’Analyseur de mémoire rencontre cette situation, il cesse d’étendre le chemin d’accès de référence et ajoute un **[Cycle détecté]** annotation à la liste du premier objet et s’arrête.  
+  Un objet peut faire référence à un second objet qui détient directement ou indirectement une référence au premier objet. Lorsque l’Analyseur de mémoire rencontre cette situation, il cesse d’étendre le chemin d’accès de référence et ajoute un **[Cycle détecté]** annotation à la liste du premier objet et s’arrête.  
   
- **Types racines**  
+  **Types racines**  
   
- L'analyseur de mémoire ajoute des annotations aux objets racines qui décrivent le genre de référence détenu :  
+  L'analyseur de mémoire ajoute des annotations aux objets racines qui décrivent le genre de référence détenu :  
   
 |Annotation|Description|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> Comparer deux instantanés de mémoire  
  Vous pouvez comparer deux fichiers dump d'un processus pour rechercher les objets susceptibles de provoquer des fuites de mémoire. L'intervalle entre la collecte du premier fichier (plus ancien) et du second fichier (plus récent) doit être suffisamment élevé pour que l'augmentation du nombre d'objets ayant fuit soit facile à détecter. Pour comparer deux fichiers  
   
-1.  Ouvrez le fichier de vidage deuxième, puis choisissez **déboguer la mémoire managée** sur le **résumé du fichier Minidump** page.  
+1. Ouvrez le fichier de vidage deuxième, puis choisissez **déboguer la mémoire managée** sur le **résumé du fichier Minidump** page.  
   
-2.  Dans la page de rapport analyse de mémoire, ouvrez le **baseline sélectionnez** liste, puis choisissez **Parcourir** pour spécifier le premier fichier de vidage.  
+2. Dans la page de rapport analyse de mémoire, ouvrez le **baseline sélectionnez** liste, puis choisissez **Parcourir** pour spécifier le premier fichier de vidage.  
   
- L’analyseur ajoute des colonnes vers le volet supérieur du rapport qui affichent la différence entre la **nombre**, **taille**, et **taille Inclusive** des types et les valeurs de la instantané antérieur.  
+   L’analyseur ajoute des colonnes vers le volet supérieur du rapport qui affichent la différence entre la **nombre**, **taille**, et **taille Inclusive** des types et les valeurs de la instantané antérieur.  
   
- ![Colonnes diff dans la liste type](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Colonnes diff dans la liste type](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- Un **décompte de références Diff** colonne est également ajoutée à la **chemins d’accès à la racine** table.  
+   Un **décompte de références Diff** colonne est également ajoutée à la **chemins d’accès à la racine** table.  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Blog VS ALM TFS : À l’aide de Visual Studio 2013 pour diagnostiquer les problèmes de mémoire .NET en Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

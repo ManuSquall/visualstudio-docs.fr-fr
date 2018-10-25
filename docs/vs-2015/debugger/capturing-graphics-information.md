@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855402"
 ---
 # <a name="capturing-graphics-information"></a>Capture d'informations graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Pour exécuter l’application dans Graphics Diagnostics  
   
--   Dans la barre de menus, choisissez **Déboguer**, **Graphiques**, **Démarrer les diagnostics**. (Clavier : appuyez sur Alt+F5)  
+- Dans la barre de menus, choisissez **Déboguer**, **Graphiques**, **Démarrer les diagnostics**. (Clavier : appuyez sur Alt+F5)  
   
--   Sur le **Graphics** barre d’outils, choisissez le **démarrer les Diagnostics** bouton.  
+- Sur le **Graphics** barre d’outils, choisissez le **démarrer les Diagnostics** bouton.  
   
- Lorsqu’une application s’exécute dans Graphics Diagnostics, certains types d’informations graphiques sont systématiquement capturés. Notamment l’installation de périphérique, la création de chaîne de permutation, la création d’objets graphiques et de ressources, et d’autres événements significatifs qui affectent plusieurs frames. En même temps, vous pouvez capturer des informations détaillées sur des frames spécifiques. Cela inclut des appels de dessin et des distributions de nuanceur de calcul, ainsi que des objets Direct3D et des ressources qui les prennent en charge.  
+  Lorsqu’une application s’exécute dans Graphics Diagnostics, certains types d’informations graphiques sont systématiquement capturés. Notamment l’installation de périphérique, la création de chaîne de permutation, la création d’objets graphiques et de ressources, et d’autres événements significatifs qui affectent plusieurs frames. En même temps, vous pouvez capturer des informations détaillées sur des frames spécifiques. Cela inclut des appels de dessin et des distributions de nuanceur de calcul, ainsi que des objets Direct3D et des ressources qui les prennent en charge.  
   
 #### <a name="to-capture-a-frame"></a>Pour capturer un frame  
   
--   Dans Visual Studio, sur le **Graphics** barre d’outils, choisissez le **capturer le Frame** bouton![Graphics capture l’icône du bouton](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- Dans Visual Studio, sur le **Graphics** barre d’outils, choisissez le **capturer le Frame** bouton![Graphics capture l’icône du bouton](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   Appuyez sur la touche Impr. écran du clavier.  
+- Appuyez sur la touche Impr. écran du clavier.  
   
-    > [!NOTE]
-    >  Pendant l’exécution d’une application sous **Graphics Diagnostics**, la touche Impr. écran peut uniquement être utilisée pour capturer un frame d’informations graphiques ; il n’effectue pas sa fonction régulière. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.  
+  > [!NOTE]
+  >  Pendant l’exécution d’une application sous **Graphics Diagnostics**, la touche Impr. écran peut uniquement être utilisée pour capturer un frame d’informations graphiques ; il n’effectue pas sa fonction régulière. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.  
   
--   Dans l’interface de capture de Visual Studio, choisissez le **capturer le Frame** bouton situé au-dessus de la **session de Diagnostic** chronologie, ou choisissez le grand **capturer le Frame** bouton situé sous le **images par seconde** couloirs et à droite des frames précédemment capturés. Les deux boutons sont mis en évidence dans l'image ci-dessous.  
+- Dans l’interface de capture de Visual Studio, choisissez le **capturer le Frame** bouton situé au-dessus de la **session de Diagnostic** chronologie, ou choisissez le grand **capturer le Frame** bouton situé sous le **images par seconde** couloirs et à droite des frames précédemment capturés. Les deux boutons sont mis en évidence dans l'image ci-dessous.  
   
-     ![Capturer des frames à l’aide de l’outil utilisation du GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Capturer des frames à l’aide de l’outil utilisation du GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Lorsque vous êtes prêt à examiner les frames que vous avez capturés, démarrez le **Visual Studio Graphics Analyzer** en suivant le **Frame...** lien au-dessus des images miniatures ou en double-cliquant sur la miniature.  
+   Lorsque vous êtes prêt à examiner les frames que vous avez capturés, démarrez le **Visual Studio Graphics Analyzer** en suivant le **Frame...** lien au-dessus des images miniatures ou en double-cliquant sur la miniature.  
   
- Seuls les frames entiers peuvent être capturés. Par conséquent, lorsque vous faites une capture, il s'agit en fait des informations graphiques provenant du frame suivant qui sont enregistrées. L'enregistrement démarre dès que le frame dans lequel vous avez lancé la capture est affiché et se termine lorsque le frame capturé est affiché. Vous pouvez capturer autant de frames que vous souhaitez tant que l'application s'exécute dans Graphics Diagnostics. Si vous ne capturez pas frame, le journal de graphisme est ignoré.  
+  Seuls les frames entiers peuvent être capturés. Par conséquent, lorsque vous faites une capture, il s'agit en fait des informations graphiques provenant du frame suivant qui sont enregistrées. L'enregistrement démarre dès que le frame dans lequel vous avez lancé la capture est affiché et se termine lorsque le frame capturé est affiché. Vous pouvez capturer autant de frames que vous souhaitez tant que l'application s'exécute dans Graphics Diagnostics. Si vous ne capturez pas frame, le journal de graphisme est ignoré.  
   
- Durant la capture de frames, Visual Studio affiche la fenêtre de session de diagnostic (.diagsession). Si vous fermez cette fenêtre, arrêtez le débogage, ou fermez l'application. Dans ce cas, vous ne pouvez plus capturer de frames supplémentaires dans ce journal. Pour capturer des informations graphiques supplémentaires, vous devez réexécuter l'application Graphics Diagnostics et démarrer une nouvelle session de diagnostic.  
+  Durant la capture de frames, Visual Studio affiche la fenêtre de session de diagnostic (.diagsession). Si vous fermez cette fenêtre, arrêtez le débogage, ou fermez l'application. Dans ce cas, vous ne pouvez plus capturer de frames supplémentaires dans ce journal. Pour capturer des informations graphiques supplémentaires, vous devez réexécuter l'application Graphics Diagnostics et démarrer une nouvelle session de diagnostic.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Options de capture de Graphics Diagnostics  
  Vous pouvez configurer la capture pour collecter les piles des appels de tous les événements graphiques ou d'une partie limitée de ces derniers, désactiver le HUD de capture, et activer ou désactiver le mode de compatibilité de capture.  

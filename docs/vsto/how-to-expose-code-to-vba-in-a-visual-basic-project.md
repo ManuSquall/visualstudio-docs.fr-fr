@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839646"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Comment : exposer du code à VBA dans un projet Visual Basic
   Vous pouvez exposer du code dans un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet vers Visual Basic pour Applications (VBA), si vous souhaitez que les deux types de code pour interagir avec eux.  
@@ -35,11 +35,11 @@ ms.locfileid: "35256095"
   
  Le processus est différent pour le code dans une classe d’élément hôte pour le code dans d’autres classes :  
   
--   [Exposer du code dans une classe d’élément hôte](#HostItemCode)  
+- [Exposer du code dans une classe d’élément hôte](#HostItemCode)  
   
--   [Exposer du code qui n’est pas dans une classe d’élément hôte](#NonHostItem)  
+- [Exposer du code qui n’est pas dans une classe d’élément hôte](#NonHostItem)  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment coder les i : appelez VSTO à partir de VBA ?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment coder les i : appelez VSTO à partir de VBA ?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Exposer du code dans une classe d’élément hôte  
  Pour permettre au code VBA d’appeler du code de Visual Basic dans une classe d’élément hôte, définissez le **EnableVbaCallers** propriété de l’élément hôte la valeur **True**.  

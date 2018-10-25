@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839204"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Conception de Table de commande XML (. Fichiers VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ Un fichier de table (.vsct) de commande XML décrit la disposition et l’appare
 ## <a name="differences-between-ctc-and-vsct-files"></a>Différences entre les fichiers .ctc et .vsct  
  La signification derrière les balises XML dans un fichier .vsct est les mêmes que celles figurant dans le présent déconseillée le format de fichier .ctc, leur implémentation est un peu différente.  
   
--   La nouvelle  **\<extern >** balise est où vous référencer d’autres fichiers .h à compiler, telles que celles pour le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barre d’outils.  
+- La nouvelle  **\<extern >** balise est où vous référencer d’autres fichiers .h à compiler, telles que celles pour le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barre d’outils.  
   
--   Lors de prise en charge des fichiers .vsct le **/ include** instruction, comme les fichiers .ctc, il comporte également un nouveau \< **Importer >** élément. La différence est, **/ include** permet d’utiliser **tous les** des informations, mais \< **Importer >** permet d’utiliser uniquement les noms.  
+- Lors de prise en charge des fichiers .vsct le **/ include** instruction, comme les fichiers .ctc, il comporte également un nouveau \< **Importer >** élément. La différence est, **/ include** permet d’utiliser **tous les** des informations, mais \< **Importer >** permet d’utiliser uniquement les noms.  
   
--   Tandis que les fichiers .ctc nécessitent un fichier d’en-tête dans lequel vous définissez vos directives de préprocesseur, un n’est pas requis pour les fichiers .vsct. Au lieu de cela, placez vos directives dans la table de symboles, située dans le  **\<symbole >** éléments, situés en bas du fichier .vsct.  
+- Tandis que les fichiers .ctc nécessitent un fichier d’en-tête dans lequel vous définissez vos directives de préprocesseur, un n’est pas requis pour les fichiers .vsct. Au lieu de cela, placez vos directives dans la table de symboles, située dans le  **\<symbole >** éléments, situés en bas du fichier .vsct.  
   
--   fonctionnalité des fichiers .vsct un  **\<Annotation >** balise, qui vous permet d’incorporer des informations que vous le souhaitez, telles que des notes ou même d’images.  
+- fonctionnalité des fichiers .vsct un  **\<Annotation >** balise, qui vous permet d’incorporer des informations que vous le souhaitez, telles que des notes ou même d’images.  
   
--   Les valeurs sont stockées en tant qu’attributs sur l’élément.  
+- Les valeurs sont stockées en tant qu’attributs sur l’élément.  
   
--   Indicateurs de commande peuvent être stockées individuellement ou empilés.  Toutefois, IntelliSense, ne fonctionne pas sur les indicateurs de commande empilées. Pour plus d’informations sur les indicateurs de commande, consultez le [élément Command Flag](../../extensibility/command-flag-element.md).  
+- Indicateurs de commande peuvent être stockées individuellement ou empilés.  Toutefois, IntelliSense, ne fonctionne pas sur les indicateurs de commande empilées. Pour plus d’informations sur les indicateurs de commande, consultez le [élément Command Flag](../../extensibility/command-flag-element.md).  
   
--   Vous pouvez spécifier plusieurs types, tels que les listes déroulantes de fractionnement, combos, etc.  
+- Vous pouvez spécifier plusieurs types, tels que les listes déroulantes de fractionnement, combos, etc.  
   
--   Ne valident pas les GUID.  
+- Ne valident pas les GUID.  
   
--   Chaque élément d’interface utilisateur a une chaîne qui représente le texte qui s’affiche avec lui.  
+- Chaque élément d’interface utilisateur a une chaîne qui représente le texte qui s’affiche avec lui.  
   
--   Parent est facultatif. Si omis, la valeur « Groupe inconnu » est utilisée.  
+- Parent est facultatif. Si omis, la valeur « Groupe inconnu » est utilisée.  
   
--   L’argument de l’icône est facultatif.  
+- L’argument de l’icône est facultatif.  
   
--   La section bitmap--identique à un .ctc de fichiers, à ceci près que vous pouvez désormais spécifier un nom de fichier par le biais de href qui est extraites par le compilateur vsct.exe au moment de la compilation.  
+- La section bitmap--identique à un .ctc de fichiers, à ceci près que vous pouvez désormais spécifier un nom de fichier par le biais de href qui est extraites par le compilateur vsct.exe au moment de la compilation.  
   
--   ResID--l’ID de ressource bitmap ancien peut être utilisé et fonctionne toujours comme dans les fichiers .ctc.  
+- ResID--l’ID de ressource bitmap ancien peut être utilisé et fonctionne toujours comme dans les fichiers .ctc.  
   
--   HRef--une nouvelle méthode qui vous permet de spécifier un nom de fichier pour la ressource bitmap. Il suppose que toutes sont utilisées, donc vous pouvez omettre la section utilisée. Le compilateur recherche d’abord les ressources locales pour le fichier, puis sur tous les partages réseau et toutes les ressources définies par le commutateur /I.  
+- HRef--une nouvelle méthode qui vous permet de spécifier un nom de fichier pour la ressource bitmap. Il suppose que toutes sont utilisées, donc vous pouvez omettre la section utilisée. Le compilateur recherche d’abord les ressources locales pour le fichier, puis sur tous les partages réseau et toutes les ressources définies par le commutateur /I.  
   
--   Combinaison de touches--Vous n’avez plus à spécifier un émulateur. Si vous ne spécifiez pas un, le compilateur suppose que l’éditeur et l’émulateur sont les mêmes.  
+- Combinaison de touches--Vous n’avez plus à spécifier un émulateur. Si vous ne spécifiez pas un, le compilateur suppose que l’éditeur et l’émulateur sont les mêmes.  
   
--   Keychord--a été supprimé. Le nouveau format est Mod1, Key1, Key2, le Mod2.  Vous pouvez spécifier un caractère, hexadécimal ou constante VK.  
+- Keychord--a été supprimé. Le nouveau format est Mod1, Key1, Key2, le Mod2.  Vous pouvez spécifier un caractère, hexadécimal ou constante VK.  
   
- Le nouveau compilateur, vsct.exe, compile les fichiers .ctc et .vsct. L’ancien compilateur ctc.exe, toutefois, sera reconnaître ni compiler des fichiers .vsct.  
+  Le nouveau compilateur, vsct.exe, compile les fichiers .ctc et .vsct. L’ancien compilateur ctc.exe, toutefois, sera reconnaître ni compiler des fichiers .vsct.  
   
- Vous pouvez utiliser le compilateur vsct.exe pour convertir un fichier .cto existant dans un fichier .vsct. Pour plus d’informations, consultez [Comment : créer un. Fichier VSCT d’un existant. Fichier de directeur technique](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Vous pouvez utiliser le compilateur vsct.exe pour convertir un fichier .cto existant dans un fichier .vsct. Pour plus d’informations, consultez [Comment : créer un. Fichier VSCT d’un existant. Fichier de directeur technique](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Les éléments du fichier .vsct  
  La table de commande présente la hiérarchie et les éléments suivants :  

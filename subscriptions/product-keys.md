@@ -9,12 +9,12 @@ description: Découvrez comment obtenir et gérer vos clés de produit dans les 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900850"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -79,11 +79,11 @@ Seuls les abonnés ayant des abonnements actifs peuvent télécharger des produi
 
 
 Pour demander une clé de produit :
-1.  Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit.
-2.  Cliquez sur l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3.  Les clés de produit sont répertoriées par nom de produit, par ordre alphabétique.  Vous pouvez faire défiler la liste jusqu’au nom de produit recherché, ou rechercher le produit à l’aide de la barre de recherche en haut de la page.
-    > [!div class="mx-imgBorder"]
-    > ![Rechercher une clé de produit](_img\product-keys\visio-product-key-cropped.png)
+1. Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit.
+2. Cliquez sur l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
+3. Les clés de produit sont répertoriées par nom de produit, par ordre alphabétique.  Vous pouvez faire défiler la liste jusqu’au nom de produit recherché, ou rechercher le produit à l’aide de la barre de recherche en haut de la page.
+   > [!div class="mx-imgBorder"]
+   > ![Rechercher une clé de produit](_img/product-keys/visio-product-key-cropped.png)
 
 Dans cet exemple, nous avons utilisé la barre de recherche pour rechercher une clé de produit Visio 2010.
 Comme vous pouvez le voir, plusieurs versions de Visio 2010 sont répertoriées.  Une clé a déjà été demandée pour Visio Standard 2010 et pour Visio Premium 2010, et ces deux versions ont encore quatre clés disponibles chacune.  Les deux clés ayant été demandées sont des clés de produit commercialisé et sont affichées dans la page.  Notez que vous pouvez enregistrer une brève remarque sur les clés demandées dans la colonne **Remarques**.  Vous pouvez utiliser cette colonne conjointement avec la date de la colonne **Demandé** pour suivre les clés que vous avez demandées.  Par exemple, ajoutez une remarque quand vous activez une installation du produit à l’aide de la clé.

@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940379"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Espion et Espion express, fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Ajoutez les valeurs des trois variables à la fenêtre Espion de la façon suivante :  
   
-1.  Définissez un point d’arrêt sur la ligne `c = a + b;` .  
+1. Définissez un point d’arrêt sur la ligne `c = a + b;` .  
   
-2.  Démarrez le débogage (**F5**) L'exécution s'arrête au point d'arrêt.  
+2. Démarrez le débogage (**F5**) L'exécution s'arrête au point d'arrêt.  
   
-3.  Ouvrez la fenêtre Espion (**Déboguer/Fenêtres/Espion/Espion 1**ou **Ctrl+Alt+W, 1**).  
+3. Ouvrez la fenêtre Espion (**Déboguer/Fenêtres/Espion/Espion 1**ou **Ctrl+Alt+W, 1**).  
   
-4.  Ajoutez la variable `a` à la première ligne, la variable `b` à la deuxième ligne et la variable `c` à la troisième ligne.  
+4. Ajoutez la variable `a` à la première ligne, la variable `b` à la deuxième ligne et la variable `c` à la troisième ligne.  
   
-5.  Poursuivez le débogage.  
+5. Poursuivez le débogage.  
   
- Vous constatez normalement que les valeurs des variables changent à mesure que vous itérez au sein de la boucle `for`.  
+   Vous constatez normalement que les valeurs des variables changent à mesure que vous itérez au sein de la boucle `for`.  
   
- Si vous programmez en code natif, vous devrez peut-être parfois qualifier le contexte d’un nom de variable ou d’une expression contenant un nom de variable. Le contexte est la fonction, le fichier source et le module où se trouve une variable. Dans ce cas, vous pouvez utiliser la syntaxe d’opérateur de contexte. Pour plus d’informations, consultez Expressions en C++.  
+   Si vous programmez en code natif, vous devrez peut-être parfois qualifier le contexte d’un nom de variable ou d’une expression contenant un nom de variable. Le contexte est la fonction, le fichier source et le module où se trouve une variable. Dans ce cas, vous pouvez utiliser la syntaxe d’opérateur de contexte. Pour plus d’informations, consultez Expressions en C++.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Observation d’expressions dans la fenêtre Espion  
  Maintenant, essayons d’utiliser une expression. Vous pouvez ajouter n’importe quelle expression valide reconnue par le débogueur.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Si vous pointez sur l’icône, une info-bulle vous donne des indications sur ce qui a empêché l’évaluation de l’expression.  Si les flèches en cercle s’affichent, c’est que l’expression n’a pas été évaluée pour l’une des raisons suivantes :  
   
--   • Une erreur s’est produite car l’expression a été évaluée. Par exemple, un dépassement de délai a pu se produire ou une variable était peut-être hors de portée.  
+- • Une erreur s’est produite car l’expression a été évaluée. Par exemple, un dépassement de délai a pu se produire ou une variable était peut-être hors de portée.  
   
--   • L’expression contient un appel de fonction susceptible de produire un effet secondaire dans l’application (consultez [effets secondaires et Expressions](#bkmk_sideEffects)).  
+- • L’expression contient un appel de fonction susceptible de produire un effet secondaire dans l’application (consultez [effets secondaires et Expressions](#bkmk_sideEffects)).  
   
--   L’évaluation automatique des propriétés et des appels de fonctions implicites par le débogueur est désactivée (**Outils/Options/Débogage/Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), d’où l’impossibilité d’évaluer automatiquement l’expression.  
+- L’évaluation automatique des propriétés et des appels de fonctions implicites par le débogueur est désactivée (**Outils/Options/Débogage/Activer l’évaluation de la propriété et d’autres appels de fonction implicite**), d’où l’impossibilité d’évaluer automatiquement l’expression.  
   
- Pour actualiser la valeur, cliquez sur l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l’expression. Si l’icône d’actualisation est apparue parce que l’évaluation automatique des propriétés et les effets secondaires implicites étaient désactivés, l’expression peut être évaluée.  
+  Pour actualiser la valeur, cliquez sur l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l’expression. Si l’icône d’actualisation est apparue parce que l’évaluation automatique des propriétés et les effets secondaires implicites étaient désactivés, l’expression peut être évaluée.  
   
- Si vous voyez une icône représentant un cercle avec deux lignes ondulées qui s’apparentent à des fils, c’est que l’expression n’a pas été évaluée en raison d’une possible dépendance inter-threads. En d’autres termes, l’évaluation du code nécessite l’exécution temporaire d’autres threads dans votre application. Quand vous êtes en mode arrêt, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre programme et pousse le débogueur à ignorer certains événements tels que les points d’arrêt et les exceptions levées sur ces threads.  
+  Si vous voyez une icône représentant un cercle avec deux lignes ondulées qui s’apparentent à des fils, c’est que l’expression n’a pas été évaluée en raison d’une possible dépendance inter-threads. En d’autres termes, l’évaluation du code nécessite l’exécution temporaire d’autres threads dans votre application. Quand vous êtes en mode arrêt, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre programme et pousse le débogueur à ignorer certains événements tels que les points d’arrêt et les exceptions levées sur ces threads.  
   
 ##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Si vous voulez afficher uniquement l’ **Affichage dynamique** pour un objet, vous pouvez utiliser le spécificateur de format **dynamic** :  
   
--   C# : **ObjectName, dynamic**  
+- C# : **ObjectName, dynamic**  
   
--   Visual Basic:: **$dynamic, ObjectName**  
+- Visual Basic:: **$dynamic, ObjectName**  
   
- Par ailleurs, l’ **Affichage dynamique** améliore l’expérience de débogage pour les objets COM. Quand le débogueur rencontre un objet COM encapsulé dans **System.__ComObject**, il ajoute un nœud **Affichage dynamique** pour l’objet.  
+  Par ailleurs, l’ **Affichage dynamique** améliore l’expérience de débogage pour les objets COM. Quand le débogueur rencontre un objet COM encapsulé dans **System.__ComObject**, il ajoute un nœud **Affichage dynamique** pour l’objet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fenêtres du débogueur](../debugger/debugger-windows.md)

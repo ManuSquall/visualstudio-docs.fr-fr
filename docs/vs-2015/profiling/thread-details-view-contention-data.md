@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5a46f5d63e817a38808b0c48be75f750a4e2bc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865139"
 ---
 # <a name="thread-details-view---contention-data"></a>Vue Détails relatifs au thread - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ La vue Détails du Thread présente un graphique chronologique des événements 
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Pour afficher ou modifier le code source d’une fonction dans la pile des appels  
   
--   Dans la fenêtre Pile des appels, cliquez sur le nom de la fonction.  
+- Dans la fenêtre Pile des appels, cliquez sur le nom de la fonction.  
   
- Le code source de la fonction doit faire partie du projet actif.  
+  Le code source de la fonction doit faire partie du projet actif.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Pour voir les événements de conflit d’une ressource dans tous les threads de l’exécution du profilage  
   

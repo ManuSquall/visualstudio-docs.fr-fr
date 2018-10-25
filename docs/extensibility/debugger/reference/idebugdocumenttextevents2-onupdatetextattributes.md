@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Documents Microsoft
+title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d809a5f06be6facd43265fb00e25fc08aabd1f81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21ceb40f54c4af0285576545efb0d228e65af493
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876072"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Notifie le package de débogage que les attributs de texte ont été mis à jour dans le document.  
+Informe le package de débogage que les attributs de texte ont été mis à jour dans le document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ int onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Paramètres  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique où les attributs de texte ont été mis à jour.  
+ [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique où les attributs de texte ont été mis à jour.  
   
  `dwNumToUpdate`  
  [in] Spécifie le nombre de caractères de texte qui ont été mis à jour.  

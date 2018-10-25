@@ -1,5 +1,5 @@
 ---
-title: MESSAGETYPE | Documents Microsoft
+title: MESSAGETYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa09d938e0e7c3853431369c7e0634242df2ee0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66c254b56d5f7755a3578814ad5f3de7898f2f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872224"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Spécifie le type de message et la raison.  
+Spécifie le type de message et le motif.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ public enum enum_MESSAGETYPE {
   
 ## <a name="members"></a>Membres  
  MT_OUTPUTSTRING  
- Indique que le message doit être envoyé à la fenêtre Sortie. Cela s’excluent mutuellement `MT_MESSAGEBOX`.  
+ Indique que le message doit être envoyé à la fenêtre de sortie. Cela s’excluent mutuellement `MT_MESSAGEBOX`.  
   
  MT_MESSAGEBOX  
  Indique que le message doit s’afficher dans une boîte de message. Cela s’excluent mutuellement `MT_OUTPUTSTRING`.  
@@ -64,7 +64,7 @@ public enum enum_MESSAGETYPE {
  Indique qu’une boîte de message est affichée à la suite d’une exception. Cela s’excluent mutuellement `MT_REASON_TRACEPOINT`.  
   
  MT_REASON_TRACEPOINT  
- Indique qu’une boîte de message est affichée à la suite d’un point de trace. Cela s’excluent mutuellement pour `MT_REASON_EXCEPTION`.  
+ Indique qu’une boîte de message est affichée à la suite d’un point de trace. Cela est mutuellement exclusif avec `MT_REASON_EXCEPTION`.  
   
  MT_REASON_MASK  
  Une valeur de masque pour isoler la raison pour le message affiché.  
@@ -72,9 +72,9 @@ public enum enum_MESSAGETYPE {
 ## <a name="remarks"></a>Notes  
  Ces valeurs sont retournées à partir de la [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) et [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) méthodes.  
   
- Une des valeurs de la raison peut être combinée avec une des valeurs de destination de sortie à l’aide d’une opération de bits `OR`.  
+ Une des valeurs de raison peut être combinée avec une des valeurs de destination de sortie à l’aide d’une opération de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

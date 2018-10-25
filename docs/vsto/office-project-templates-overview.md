@@ -33,25 +33,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934325"
 ---
 # <a name="office-project-templates-overview"></a>Vue d’ensemble des modèles de projet Office
   Les Outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création des types suivants de solutions Office :  
   
--   [Personnalisations au niveau du document](#DocLevel)  
+- [Personnalisations au niveau du document](#DocLevel)  
   
--   [Compléments VSTO](#AppLevel)  
+- [Compléments VSTO](#AppLevel)  
   
- Pour une comparaison détaillée de ces types de solutions Office, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Pour une comparaison détaillée de ces types de solutions Office, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
- Les modèles de projet Office sont disponibles dans la boîte de dialogue **Nouveau projet** , sous le nœud **Office** des nœuds de langage **Visual C#** et **Visual Basic** . Chaque modèle génère un projet avec la configuration appropriée pour l'application cible, y compris les références d'assembly et les paramètres de débogage.  
+  Les modèles de projet Office sont disponibles dans la boîte de dialogue **Nouveau projet** , sous le nœud **Office** des nœuds de langage **Visual C#** et **Visual Basic** . Chaque modèle génère un projet avec la configuration appropriée pour l'application cible, y compris les références d'assembly et les paramètres de débogage.  
   
- Chaque projet fournit des fichiers et du code qui vous aident à démarrer sur un genre de solution spécifique. Le code généré pour chaque projet inclut le démarrage et l'arrêt des gestionnaires d'événements. Vous pouvez ajouter du code à ces gestionnaires pour initialiser votre solution lorsqu'elle est chargée et pour la nettoyer lorsqu'elle est déchargée. Pour plus d’informations, consultez [les projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) et [événements dans les projets Office](../vsto/events-in-office-projects.md).  
+  Chaque projet fournit des fichiers et du code qui vous aident à démarrer sur un genre de solution spécifique. Le code généré pour chaque projet inclut le démarrage et l'arrêt des gestionnaires d'événements. Vous pouvez ajouter du code à ces gestionnaires pour initialiser votre solution lorsqu'elle est chargée et pour la nettoyer lorsqu'elle est déchargée. Pour plus d’informations, consultez [les projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) et [événements dans les projets Office](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
 >  Les Outils de développement Office sont inclus avec certaines éditions de Visual Studio. Pour plus d’informations, consultez [configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -59,25 +59,25 @@ ms.locfileid: "35671073"
 ##  <a name="DocLevel"></a> Personnalisations au niveau du document  
  Le nœud **Office** dans la boîte de dialogue **Nouveau projet** fournit les modèles de projet suivants pour vous aider à créer des personnalisations au niveau du document pour Word et Excel :  
   
--   **Document VSTO pour Word 2013 et 2016**  
+- **Document VSTO pour Word 2013 et 2016**  
   
--   **Modèle VSTO pour Word 2013 et 2016**  
+- **Modèle VSTO pour Word 2013 et 2016**  
   
--   **Classeur VSTO pour Excel 2013 et 2016**  
+- **Classeur VSTO pour Excel 2013 et 2016**  
   
--   **Modèle VSTO pour Excel 2013 et 2016**  
+- **Modèle VSTO pour Excel 2013 et 2016**  
   
--   **Document VSTO pour Word 2010**  
+- **Document VSTO pour Word 2010**  
   
--   **Modèle VSTO pour Word 2010**  
+- **Modèle VSTO pour Word 2010**  
   
--   **Classeur VSTO pour Excel 2010**  
+- **Classeur VSTO pour Excel 2010**  
   
--   **Modèle VSTO pour Excel 2010**  
+- **Modèle VSTO pour Excel 2010**  
   
- Les modèles de projet Document Word et Classeur Excel fournissent le code qui vous permet de commencer à créer une solution basée sur un document ou classeur spécifique. Dans ces types de solutions, votre code s'exécute uniquement lorsque le document associé est ouvert dans Word ou Excel.  
+  Les modèles de projet Document Word et Classeur Excel fournissent le code qui vous permet de commencer à créer une solution basée sur un document ou classeur spécifique. Dans ces types de solutions, votre code s'exécute uniquement lorsque le document associé est ouvert dans Word ou Excel.  
   
- Les modèles de projet Modèle Word et Modèle Excel se comportent de la même façon que les modèles Document Word et Classeur Excel. Toutefois, les modèles de projet Modèle Word et Modèle Excel permettent aux utilisateurs de créer facilement un document local ou des copies de classeur du modèle personnalisé dans votre solution. Les fonctionnalités de votre solution sont disponibles dans le nouveau document que l'utilisateur crée à partir du modèle.  
+  Les modèles de projet Modèle Word et Modèle Excel se comportent de la même façon que les modèles Document Word et Classeur Excel. Toutefois, les modèles de projet Modèle Word et Modèle Excel permettent aux utilisateurs de créer facilement un document local ou des copies de classeur du modèle personnalisé dans votre solution. Les fonctionnalités de votre solution sont disponibles dans le nouveau document que l'utilisateur crée à partir du modèle.  
   
 > [!NOTE]  
 >  Vous ne pouvez pas utiliser des modèles Word qui font référence à des extensions de code managé comme compléments VSTO globaux. L'assembly n'est pas appelé si le modèle est chargé à partir du répertoire Startup de Word. Pour plus d’informations, consultez [Limitations des modèles globaux et compléments Excel (fichiers .xla)](#Limitations)  
@@ -97,51 +97,51 @@ ms.locfileid: "35671073"
 ##  <a name="AppLevel"></a> Compléments VSTO  
  Le nœud **Office/SharePoint** dans la boîte de dialogue **Nouveau projet** fournit les modèles de projets suivants pour vous aider à créer des compléments VSTO.  
   
--   **Complément VSTO pour Excel 2013 et 2016**  
+- **Complément VSTO pour Excel 2013 et 2016**  
   
--   **Complément VSTO pour InfoPath 2013**  
+- **Complément VSTO pour InfoPath 2013**  
   
--   **Complément VSTO pour Outlook 2013 et 2016**  
+- **Complément VSTO pour Outlook 2013 et 2016**  
   
--   **Complément VSTO pour PowerPoint 2013 et 2016**  
+- **Complément VSTO pour PowerPoint 2013 et 2016**  
   
--   **Complément pour Project 2013 et 2016**  
+- **Complément pour Project 2013 et 2016**  
   
--   **Complément pour Visio 2013 et 2016**  
+- **Complément pour Visio 2013 et 2016**  
   
--   **Complément pour Word 2013 et 2016**  
+- **Complément pour Word 2013 et 2016**  
   
--   **Complément pour Excel 2010**  
+- **Complément pour Excel 2010**  
   
--   **Complément pour InfoPath 2010**  
+- **Complément pour InfoPath 2010**  
   
--   **Complément pour Outlook 2010**  
+- **Complément pour Outlook 2010**  
   
--   **Complément pour PowerPoint 2010**  
+- **Complément pour PowerPoint 2010**  
   
--   **Complément pour Project 2010**  
+- **Complément pour Project 2010**  
   
--   **Complément pour Visio 2010**  
+- **Complément pour Visio 2010**  
   
--   **Complément pour Word 2010**  
+- **Complément pour Word 2010**  
   
- Lorsque vous créez un projet basé sur l'un de ces modèles de projet, le code de votre solution s'exécute lorsque l'application associée est ouverte. Contrairement aux projets au niveau du document, le code n'est pas associé à un document unique.  
+  Lorsque vous créez un projet basé sur l'un de ces modèles de projet, le code de votre solution s'exécute lorsque l'application associée est ouverte. Contrairement aux projets au niveau du document, le code n'est pas associé à un document unique.  
   
- Pour plus d'informations sur la mise en route avec ces types de projet, consultez les rubriques suivantes :  
+  Pour plus d'informations sur la mise en route avec ces types de projet, consultez les rubriques suivantes :  
   
--   [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+- [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)  
+- [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)  
   
--   [Procédure pas à pas : Créer votre premier complément pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [Procédure pas à pas : Créer votre premier complément pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Procédure pas à pas : Créer votre premier complément pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [Procédure pas à pas : Créer votre premier complément pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Procédure pas à pas : Créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Procédure pas à pas : Créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Procédure pas à pas : Créer votre premier complément pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [Procédure pas à pas : Créer votre premier complément pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>Par rapport aux solutions de modèle de document  
  Lorsque vous concevez une solution basée sur un document Word ou un classeur Excel, vous devez déterminer la meilleure façon de rendre ce document accessible aux utilisateurs.  
