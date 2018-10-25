@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817442"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installer Visual C++ pour le développement mobile multiplateforme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ Visual C++ for Cross-Platform Mobile Development (http://go.microsoft.com/fwlink
   
 ##  <a name="Requirements"></a> Spécifications  
   
--   Pour connaître la configuration requise pour l’installation, consultez [Configuration système requise pour Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
+- Pour connaître la configuration requise pour l’installation, consultez [Configuration système requise pour Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
-    > [!IMPORTANT]
-    >  Si vous utilisez Windows 7 ou Windows Server 2008 R2, vous pouvez développer du code pour les applications Windows classiques, pour les applications et les bibliothèques Android Native Activity, et pour les applications et les bibliothèques de code pour iOS, mais pas pour les applications Windows Store ni Windows universelles.  
+  > [!IMPORTANT]
+  >  Si vous utilisez Windows 7 ou Windows Server 2008 R2, vous pouvez développer du code pour les applications Windows classiques, pour les applications et les bibliothèques Android Native Activity, et pour les applications et les bibliothèques de code pour iOS, mais pas pour les applications Windows Store ni Windows universelles.  
   
- Pour créer des applications pour des plateformes d’appareils spécifiques, il y a quelques spécifications requises supplémentaires :  
+  Pour créer des applications pour des plateformes d’appareils spécifiques, il y a quelques spécifications requises supplémentaires :  
   
--   Les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android requièrent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration requise](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) de l’émulateur.  
+- Les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android requièrent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration requise](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) de l’émulateur.  
   
--   Les émulateurs Android x86 fournis avec le SDK Android offrent des performances optimales sur des ordinateurs pouvant exécuter le pilote Intel HAXM. Ce pilote nécessite un processeur Intel x64 avec prise en charge de Execute Disable Bit et de VT-x. Pour plus d’informations, consultez les [Instructions d’installation pour le gestionnaire d’exécution à accélération matérielle Intel® - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Les émulateurs Android x86 fournis avec le SDK Android offrent des performances optimales sur des ordinateurs pouvant exécuter le pilote Intel HAXM. Ce pilote nécessite un processeur Intel x64 avec prise en charge de Execute Disable Bit et de VT-x. Pour plus d’informations, consultez les [Instructions d’installation pour le gestionnaire d’exécution à accélération matérielle Intel® - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
--   La génération du code pour iOS nécessite un identifiant Apple, un compte iOS Developer Program et un ordinateur Mac pouvant exécuter [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) (ou ultérieur) sur OS X Mavericks (ou ultérieur). Pour obtenir une procédure d’installation simple, consultez [Install tools for iOS](#InstallForiOS).  
+- La génération du code pour iOS nécessite un identifiant Apple, un compte iOS Developer Program et un ordinateur Mac pouvant exécuter [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) (ou ultérieur) sur OS X Mavericks (ou ultérieur). Pour obtenir une procédure d’installation simple, consultez [Install tools for iOS](#InstallForiOS).  
   
 ##  <a name="GetTheTools"></a> Obtenir les outils  
  Visual C++ pour le développement mobile multiplateforme est un composant installable inclus dans les éditions Visual Studio Community, Professional et Enterprise. Pour obtenir Visual Studio, accédez à la page [Téléchargements de Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) et téléchargez Visual Studio 2015 avec Update 2 ou version ultérieure.  
@@ -101,31 +101,31 @@ Visual C++ for Cross-Platform Mobile Development (http://go.microsoft.com/fwlink
   
  Lisez les informations suivantes et utilisez ces liens pour installer des dépendances manuellement.  
   
--   [Kit de développement Java SE](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Kit de développement Java SE](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     Par défaut, le programme d’installation place les outils Java dans C:\Program Files (x86)\Java.  
+   Par défaut, le programme d’installation place les outils Java dans C:\Program Files (x86)\Java.  
   
--   [Kit de développement logiciel Android SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Kit de développement logiciel Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
-     Lors de l’installation, mettez à jour les API comme recommandé. Vérifiez que le kit SDK pour Android 5.0 Lollipop (niveau d’API 21), ou version ultérieure, est installé. Par défaut, le programme d’installation place le SDK Android dans C:\Program Files (x86)\Android\android-sdk.  
+   Lors de l’installation, mettez à jour les API comme recommandé. Vérifiez que le kit SDK pour Android 5.0 Lollipop (niveau d’API 21), ou version ultérieure, est installé. Par défaut, le programme d’installation place le SDK Android dans C:\Program Files (x86)\Android\android-sdk.  
   
-     Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les kits SDK installés dans le Gestionnaire du SDK.  
+   Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les kits SDK installés dans le Gestionnaire du SDK.  
   
-     Pour utiliser certains émulateurs Android fournis avec le kit SDK Android, vous devez installer les pilotes Intel HAXM facultatifs. Vous devrez peut-être supprimer la fonctionnalité Hyper-V de Windows pour installer correctement les pilotes Intel HAXM. Vous devez restaurer la fonctionnalité Hyper-V pour utiliser les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android.  
+   Pour utiliser certains émulateurs Android fournis avec le kit SDK Android, vous devez installer les pilotes Intel HAXM facultatifs. Vous devrez peut-être supprimer la fonctionnalité Hyper-V de Windows pour installer correctement les pilotes Intel HAXM. Vous devez restaurer la fonctionnalité Hyper-V pour utiliser les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android.  
   
--   [Kit de développement natif (NDK) Android](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Kit de développement natif (NDK) Android](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     Par défaut, le programme d’installation place le Kit de développement natif (NDK) Android dans C:\ProgramData\Microsoft\AndroidNDK. Vous pouvez retélécharger et réinstaller le Kit de développement natif (NDK) Android pour mettre à jour son installation.  
+   Par défaut, le programme d’installation place le Kit de développement natif (NDK) Android dans C:\ProgramData\Microsoft\AndroidNDK. Vous pouvez retélécharger et réinstaller le Kit de développement natif (NDK) Android pour mettre à jour son installation.  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     Par défaut, le programme d’installation place Apache Ant dans C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps.  
+   Par défaut, le programme d’installation place Apache Ant dans C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps.  
   
--   [Émulateur Microsoft Visual Studio pour Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Émulateur Microsoft Visual Studio pour Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     Vous pouvez installer et mettre à jour l’émulateur Microsoft Visual Studio pour Android à partir de la galerie Visual Studio.  
+   Vous pouvez installer et mettre à jour l’émulateur Microsoft Visual Studio pour Android à partir de la galerie Visual Studio.  
   
- Dans la plupart des cas, Visual Studio peut détecter les configurations pour les logiciels tiers que vous avez installés et gère les chemins d’installation dans des variables d’environnement internes. Vous pouvez remplacer les chemins par défaut de ces outils de développement multiplateformes dans l’IDE de Visual Studio.  
+  Dans la plupart des cas, Visual Studio peut détecter les configurations pour les logiciels tiers que vous avez installés et gère les chemins d’installation dans des variables d’environnement internes. Vous pouvez remplacer les chemins par défaut de ces outils de développement multiplateformes dans l’IDE de Visual Studio.  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>Pour définir les chemins des outils tiers  
   

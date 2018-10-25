@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887690"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
   
 #### <a name="to-start-debugging"></a>Pour démarrer le débogage  
   
-1.  À partir de la **fichier** menu, pointez sur **Open**, puis cliquez sur **fichier**.  
+1. À partir de la **fichier** menu, pointez sur **Open**, puis cliquez sur **fichier**.  
   
-2.  Recherchez le fichier belowAvg.xsl et cliquez sur **Open**.  
+2. Recherchez le fichier belowAvg.xsl et cliquez sur **Open**.  
   
-     La feuille de style s'ouvre dans l'éditeur XML.  
+    La feuille de style s'ouvre dans l'éditeur XML.  
   
-3.  Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.  
+3. Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.  
   
-4.  Recherchez le fichier books.xml et cliquez sur **Open**.  
+4. Recherchez le fichier books.xml et cliquez sur **Open**.  
   
-     Vous définissez ainsi le document source à utiliser pour la transformation XSLT.  
+    Vous définissez ainsi le document source à utiliser pour la transformation XSLT.  
   
-5.  Avec le bouton droit le `xsl:if` balise de début, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
+5. Avec le bouton droit le `xsl:if` balise de début, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
   
-6.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
+6. Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
   
- Le processus de débogage commence, ouvrant plusieurs nouvelles fenêtres utilisées par le débogueur.  
+   Le processus de débogage commence, ouvrant plusieurs nouvelles fenêtres utilisées par le débogueur.  
   
- Il existe deux fenêtres qui affichent le document d'entrée et la feuille de style. Le débogueur utilise ces fenêtres pour afficher l'état actuel de l'exécution. Le débogueur est positionné sur l'élément `xsl:if` de la feuille de style et sur le premier nœud book du fichier books.xml.  
+   Il existe deux fenêtres qui affichent le document d'entrée et la feuille de style. Le débogueur utilise ces fenêtres pour afficher l'état actuel de l'exécution. Le débogueur est positionné sur l'élément `xsl:if` de la feuille de style et sur le premier nœud book du fichier books.xml.  
   
- La fenêtre Variables locales affiche toutes les variables locales et leur valeur actuelle. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.  
+   La fenêtre Variables locales affiche toutes les variables locales et leur valeur actuelle. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.  
   
- Le **sortie XSLT** fenêtre affiche la sortie de la transformation XSL. Cette fenêtre est distincte de la **sortie de Visual Studio** fenêtre.  
+   Le **sortie XSLT** fenêtre affiche la sortie de la transformation XSL. Cette fenêtre est distincte de la **sortie de Visual Studio** fenêtre.  
   
 ## <a name="watch-window"></a>Fenêtre Espion  
   

@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877645"
 ---
 # <a name="editing-tableadapters"></a>Modifier des TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ Parfois, vous souhaiterez modifier le schéma de table de l’adaptateur. Pour c
 ## <a name="create-new-stored-procedures"></a>Créer des procédures stockées  
  Cette section explique comment effectuer la **Assistant Configuration de requêtes TableAdapter** lors de la sélection du **créer des procédures stockées** option.  
   
-1.  Dans le **générer les procédures stockées** , tapez l’instruction SQL à exécuter lors de l’appel de la procédure stockée.  
+1. Dans le **générer les procédures stockées** , tapez l’instruction SQL à exécuter lors de l’appel de la procédure stockée.  
   
-    > [!NOTE]
-    >  L’Assistant fournit l’accès à la **Générateur de requêtes**, un outil visuel pour créer des requêtes SQL. Pour l’ouvrir, cliquez sur le **Générateur de requêtes** bouton.  
+   > [!NOTE]
+   >  L’Assistant fournit l’accès à la **Générateur de requêtes**, un outil visuel pour créer des requêtes SQL. Pour l’ouvrir, cliquez sur le **Générateur de requêtes** bouton.  
   
-2.  Dans le **créer les procédures stockées** page, procédez comme suit :  
+2. Dans le **créer les procédures stockées** page, procédez comme suit :  
   
-    1.  Tapez un nom pour la nouvelle procédure stockée.  
+   1. Tapez un nom pour la nouvelle procédure stockée.  
   
-    2.  Choisissez de créer ou non la procédure stockée dans la base de données sous-jacente.  
+   2. Choisissez de créer ou non la procédure stockée dans la base de données sous-jacente.  
   
-        > [!NOTE]
-        >  La possibilité de créer une procédure stockée dans la base de données est déterminée par les paramètres de sécurité pour la base de données spécifique.  
+      > [!NOTE]
+      >  La possibilité de créer une procédure stockée dans la base de données est déterminée par les paramètres de sécurité pour la base de données spécifique.  
   
-     Le **résultats de l’Assistant vue** page affiche les résultats de la création de la requête TableAdapter. Si l'Assistant rencontre des problèmes, cette page propose des informations sur l'erreur.  
+      Le **résultats de l’Assistant vue** page affiche les résultats de la création de la requête TableAdapter. Si l'Assistant rencontre des problèmes, cette page propose des informations sur l'erreur.  
   
 ## <a name="use-existing-stored-procedures"></a>Utiliser des procédures stockées existantes  
  Cette section explique comment effectuer la **Assistant Configuration de requêtes TableAdapter** lors de la sélection du **utiliser des procédures stockées existantes** option.  

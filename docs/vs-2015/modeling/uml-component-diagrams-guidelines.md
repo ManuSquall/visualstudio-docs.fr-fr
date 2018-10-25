@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843845"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : indications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
  Le dessin de diagrammes de composants présente plusieurs avantages :  
   
--   La réflexion à propos de votre conception relativement aux principaux blocs permet à l'équipe de développement de comprendre une conception existante ou d'en créer une.  
+- La réflexion à propos de votre conception relativement aux principaux blocs permet à l'équipe de développement de comprendre une conception existante ou d'en créer une.  
   
--   En considérant votre système comme une collection de composants intégrant des interfaces fournies et requises bien définies, vous améliorez la séparation entre les différents composants. Cela facilite ensuite la compréhension de la conception, ainsi que sa modification lors de celle des impératifs.  
+- En considérant votre système comme une collection de composants intégrant des interfaces fournies et requises bien définies, vous améliorez la séparation entre les différents composants. Cela facilite ensuite la compréhension de la conception, ainsi que sa modification lors de celle des impératifs.  
   
- Vous pouvez utiliser un diagramme de composant pour représenter votre conception, indépendamment du langage ou de la plateforme que la conception utilise ou utilisera.  
+  Vous pouvez utiliser un diagramme de composant pour représenter votre conception, indépendamment du langage ou de la plateforme que la conception utilise ou utilisera.  
   
 ##  <a name="OtherDiagrams"></a> Relation aux autres diagrammes  
  Vous pouvez utiliser un diagramme de composant avec d'autres diagrammes.  
@@ -118,32 +118,32 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
 ##### <a name="to-add-ports-to-a-component"></a>Pour ajouter des ports à un composant  
   
-1.  Dans la boîte à outils, cliquez sur **Interface fournie** ou **Interface requise**.  
+1. Dans la boîte à outils, cliquez sur **Interface fournie** ou **Interface requise**.  
   
-2.  Cliquez sur le composant auquel vous souhaitez l'ajouter.  
+2. Cliquez sur le composant auquel vous souhaitez l'ajouter.  
   
-     Un port apparaît sur la limite du composant.  
+    Un port apparaît sur la limite du composant.  
   
-     Une nouvelle interface est créée en tant que type du port. Cette interface s’affiche dans **Explorateur de modèles UML**.  
+    Une nouvelle interface est créée en tant que type du port. Cette interface s’affiche dans **Explorateur de modèles UML**.  
   
-3.  Faites glisser le port autour de la limite du composant pour le placer là où vous le souhaitez.  
+3. Faites glisser le port autour de la limite du composant pour le placer là où vous le souhaitez.  
   
-4.  Faites glisser l'étiquette du port pour régler sa position.  
+4. Faites glisser l'étiquette du port pour régler sa position.  
   
-5.  Cliquez sur l'étiquette pour la modifier. L'étiquette affiche le nom de l'interface. Si vous la modifiez, vous modifiez également le nom de l'interface.  
+5. Cliquez sur l'étiquette pour la modifier. L'étiquette affiche le nom de l'interface. Si vous la modifiez, vous modifiez également le nom de l'interface.  
   
- Si vous souhaitez afficher les attributs et les opérations de l'interface, vous pouvez le faire en les ajoutant à l'interface dans l'Explorateur de modèles UML. Vous pouvez sinon faire glisser l'interface de l'Explorateur de modèles UML sur un diagramme de classes, puis ajouter les opérations et les attributs ici.  
+   Si vous souhaitez afficher les attributs et les opérations de l'interface, vous pouvez le faire en les ajoutant à l'interface dans l'Explorateur de modèles UML. Vous pouvez sinon faire glisser l'interface de l'Explorateur de modèles UML sur un diagramme de classes, puis ajouter les opérations et les attributs ici.  
   
 ### <a name="linking-between-components"></a>Liaison entre différents composants  
  Utilisez une dépendance (4) pour montrer qu'un impératif de composant peut être satisfait par les opérations ou services fournis par un autre composant.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Pour montrer qu'une interface fournie peut satisfaire une interface requise  
   
-1.  Dans la boîte à outils, cliquez sur **dépendance**.  
+1. Dans la boîte à outils, cliquez sur **dépendance**.  
   
-2.  Cliquez sur le port avec l'interface requise sur un composant, puis sur le port avec l'interface fournie dans un autre composant.  
+2. Cliquez sur le port avec l'interface requise sur un composant, puis sur le port avec l'interface fournie dans un autre composant.  
   
- Vous devez tenter d'éviter de concevoir des boucles de dépendance dans lesquelles tous les composants d'un groupe dépendent de tous les autres.  
+   Vous devez tenter d'éviter de concevoir des boucles de dépendance dans lesquelles tous les composants d'un groupe dépendent de tous les autres.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Pour ajouter un port pour une interface existante à un composant  
   
@@ -269,11 +269,11 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
  Utilisez les diagrammes de séquences pour évaluer comment le travail du système est réparti entre les différents composants.  
   
--   Si une quantité trop importante est affectée à une partie donnée, l'application sera probablement plus difficile à mettre à jour que si le travail est uniformément réparti.  
+- Si une quantité trop importante est affectée à une partie donnée, l'application sera probablement plus difficile à mettre à jour que si le travail est uniformément réparti.  
   
--   Si le travail est trop uniformément réparti et que de nombreuses interactions sont présentes, il se peut que le système s'exécute de manière incorrecte et qu'il soit difficile à comprendre.  
+- Si le travail est trop uniformément réparti et que de nombreuses interactions sont présentes, il se peut que le système s'exécute de manière incorrecte et qu'il soit difficile à comprendre.  
   
- ![Diagramme présentant collaboration les parties de la séquence](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Diagramme présentant collaboration les parties de la séquence](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Pour dessiner un diagramme de séquences qui affiche une collaboration entre les différentes parties  
   
@@ -327,13 +327,13 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
   
  Les genres classiques de dépendances sont les suivants :  
   
--   Un composant appelle le code dans l'autre.  
+- Un composant appelle le code dans l'autre.  
   
--   Un composant instancie une classe définie dans une autre.  
+- Un composant instancie une classe définie dans une autre.  
   
--   Un composant utilise des informations créées par un autre.  
+- Un composant utilise des informations créées par un autre.  
   
- Vous pouvez utiliser le nom de la flèche de dépendance pour dénoter un genre particulier d'utilisation. Pour définir le nom, cliquez sur la flèche, puis cliquez sur **propriétés**et définissez le **nom** champ dans la fenêtre Propriétés.  
+  Vous pouvez utiliser le nom de la flèche de dépendance pour dénoter un genre particulier d'utilisation. Pour définir le nom, cliquez sur la flèche, puis cliquez sur **propriétés**et définissez le **nom** champ dans la fenêtre Propriétés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   

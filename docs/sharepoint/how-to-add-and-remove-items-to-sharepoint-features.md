@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854830"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les éléments de projet SharePoint par défaut à votre fonction. Avant le déploiement, vous pouvez ajouter et supprimer des éléments de projet SharePoint pour modifier la fonctionnalité SharePoint.  
@@ -33,17 +33,17 @@ ms.locfileid: "36756244"
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Pour ajouter des éléments de projet SharePoint avec le Concepteur de fonctionnalités  
   
-1.  Ouvrez le Concepteur de fonctionnalités.  
+1. Ouvrez le Concepteur de fonctionnalités.  
   
-     Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Ajouter un ou plusieurs éléments à partir de la **éléments dans la Solution** list à le **éléments dans la fonctionnalité** liste en effectuant une ou plusieurs des étapes suivantes :  
+2. Ajouter un ou plusieurs éléments à partir de la **éléments dans la Solution** list à le **éléments dans la fonctionnalité** liste en effectuant une ou plusieurs des étapes suivantes :  
   
-    -   Double-cliquez sur chaque élément que vous souhaitez ajouter.  
+   - Double-cliquez sur chaque élément que vous souhaitez ajouter.  
   
-    -   Choisissez un élément que vous souhaitez ajouter, puis choisissez le **ajouter** bouton (>).  
+   - Choisissez un élément que vous souhaitez ajouter, puis choisissez le **ajouter** bouton (>).  
   
-    -   Choisissez le **ajouter tout** bouton (>>).  
+   - Choisissez le **ajouter tout** bouton (>>).  
   
      Les éléments de projet SharePoint s’affichent dans le **éléments dans la fonctionnalité** liste.  
   

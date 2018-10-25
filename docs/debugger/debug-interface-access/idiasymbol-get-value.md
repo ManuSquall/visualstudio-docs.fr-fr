@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_value | Documents Microsoft
+title: IDiaSymbol::get_value | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863735"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 Récupère la valeur d’une constante.  
@@ -34,7 +34,7 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [dans, out] A `VARIANT` objet qui est remplie avec la valeur d’une constante.  
+ [in, out] Un `VARIANT` objet qui est rempli avec la valeur d’une constante.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,7 +43,7 @@ HRESULT get_value (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- La variante fournie doit être initialisée avant d’être transmis à cette méthode. Pour plus d’informations, consultez l’exemple.  
+ La variante fournie doit être initialisée avant d’être passé à cette méthode. Pour plus d’informations, consultez l’exemple.  
   
 ## <a name="example"></a>Exemple  
   

@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824501"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Lier un cas d'usage à des documents et diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez lier un cas d'usage dans un diagramme de cas d'usage à un autre diagramme ou document. Par exemple, vous pouvez lier le cas d'usage aux documents et diagrammes suivants :  
   
--   un diagramme de séquence qui indique la façon dont les objectifs du cas d'usage sont atteints par des interactions entre les utilisateurs et le système ou ses principaux composants ;  
+- un diagramme de séquence qui indique la façon dont les objectifs du cas d'usage sont atteints par des interactions entre les utilisateurs et le système ou ses principaux composants ;  
   
--   un diagramme d'activités qui montre les actions détaillées des utilisateurs et du système ou de ses principaux composants lors de l'exécution du cas d'usage ;  
+- un diagramme d'activités qui montre les actions détaillées des utilisateurs et du système ou de ses principaux composants lors de l'exécution du cas d'usage ;  
   
--   une page ou un paragraphe OneNote qui décrit le cas d'usage en détail ;  
+- une page ou un paragraphe OneNote qui décrit le cas d'usage en détail ;  
   
--   un document Word ou une présentation PowerPoint qui décrit le cas d'usage en détail. Vous pouvez conserver ces documents dans la solution ou à un emplacement accessible par votre équipe, tel qu'un site SharePoint.  
+- un document Word ou une présentation PowerPoint qui décrit le cas d'usage en détail. Vous pouvez conserver ces documents dans la solution ou à un emplacement accessible par votre équipe, tel qu'un site SharePoint.  
   
- Pour lier un cas d'usage à un document, vous devez créer un artefact dans le diagramme de cas d'usage et connecter celui-ci à l'artefact. Dans les propriétés de l'artefact, vous définissez le chemin d'accès de l'autre diagramme ou document. Quand vous double-cliquez sur l'artefact, l'autre diagramme ou document s'ouvre.  
+  Pour lier un cas d'usage à un document, vous devez créer un artefact dans le diagramme de cas d'usage et connecter celui-ci à l'artefact. Dans les propriétés de l'artefact, vous définissez le chemin d'accès de l'autre diagramme ou document. Quand vous double-cliquez sur l'artefact, l'autre diagramme ou document s'ouvre.  
   
- Vous pouvez connecter autant d'artefacts que vous le souhaitez à chaque cas d'usage. Vous pouvez également lier des artefacts à d'autres types d'éléments dans un diagramme de cas d'usage.  
+  Vous pouvez connecter autant d'artefacts que vous le souhaitez à chaque cas d'usage. Vous pouvez également lier des artefacts à d'autres types d'éléments dans un diagramme de cas d'usage.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Pour ouvrir un document associé à un artefact  
   

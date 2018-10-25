@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByVA | Documents Microsoft
+title: IDiaSession::findLinesByVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d88a93e5bd22befb661505bb09cdce6f5d3b544
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870651"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Récupère les informations de numéro de ligne pour les lignes d’une plage d’adresse virtuelle spécifiée (VA).  
+Récupère les informations de numéro de ligne pour les lignes contenues dans une plage d’adresses virtuel spécifié (VA).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,7 +45,7 @@ HRESULT findLinesByVA (
  [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste de tous les nombres qui couvrent la plage d’adresses spécifiée.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple illustre une fonction qui obtient tous les numéros de ligne contenues dans une fonction à l’aide de l’adresse de fonction virtuelle et la longueur.  
+ Cet exemple montre une fonction qui obtient tous les numéros de ligne contenues dans une fonction à l’aide de l’adresse de fonction virtuel et la longueur.  
   
 ```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

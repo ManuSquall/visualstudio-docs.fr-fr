@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872978"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ L'infrastructure de test pour les tests codés de l'interface utilisateur et les
   
  **Spécifications**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Cette section présente une extension de test codé de l'interface utilisateur capable d'enregistrer et de lire les tests de feuilles de calcul Excel. Chaque partie de l’extension est expliquée dans cette section et dans les commentaires de code pour les développeurs qui souhaitent simplement créer cette extension.  
+  Cette section présente une extension de test codé de l'interface utilisateur capable d'enregistrer et de lire les tests de feuilles de calcul Excel. Chaque partie de l’extension est expliquée dans cette section et dans les commentaires de code pour les développeurs qui souhaitent simplement créer cette extension.  
   
- ![Architecture du test de l’interface utilisateur](../test/media/ui-testarch.png "UI_TestArch")  
-Vue d'ensemble de l'architecture  
+  ![Architecture du test de l’interface utilisateur](../test/media/ui-testarch.png "UI_TestArch")  
+  Vue d'ensemble de l'architecture  
   
 ## <a name="download-the-sample"></a>Télécharger l'exemple  
  L'exemple se compose de quatre projets dans la solution `CodedUIExtensibilitySample.sln` :  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Récupérez l’exemple à partir de ce [billet de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Récupérez l’exemple à partir de ce [billet de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  L'exemple est conçu pour être utilisé avec Microsoft Excel 2010. L'exemple peut fonctionner avec d'autres versions de Microsoft Excel, mais il n'est pas pris en charge actuellement.  

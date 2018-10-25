@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Next | Documents Microsoft
+title: IDiaEnumSectionContribs::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f700ef7160cff643c2a60007d7b1f83ecbe4eeb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818950"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Récupère un nombre spécifié de contributions section dans la séquence d’énumération.  
+Récupère un nombre spécifié de contributions de section dans la séquence d’énumération.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,16 +36,16 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre des contributions de section dans l’énumérateur doit être récupéré.  
+ [in] Le nombre de contributions de la section dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau à remplir avec les [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objets qui représentent les contributions de la section souhaitée.  
+ [out] Un tableau qui doit être rempli avec le [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objets qui représentent les contributions de la section souhaitée.  
   
  pceltFetched  
- [out] Retourne le nombre des contributions de la section dans l’énumérateur extraite.  
+ [out] Retourne le nombre de contributions de la section dans l’énumérateur extraite.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y aucun plus contributions de section. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si il n’y a aucune contribution de section plus. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

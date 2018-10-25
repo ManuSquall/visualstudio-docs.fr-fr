@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812502"
 ---
 # <a name="validate-your-uml-model"></a>Valider votre modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Certains des modèles UML que vous pouvez dessiner dans Visual Studio peuvent ê
 ## <a name="invoking-validation"></a>Appel de la validation  
  Une fois que vous avez installé une extension de validation, les contraintes qu'elle fournit peuvent être appliquées dans les cas suivants. Certaines contraintes sont définies pour s'appliquer uniquement dans quelques-uns de ces cas.  
   
--   **Commande de validation.** Pour appeler la validation à tout moment, cliquez sur **valider le modèle UML** sur le **Architecture** menu.  
+- **Commande de validation.** Pour appeler la validation à tout moment, cliquez sur **valider le modèle UML** sur le **Architecture** menu.  
   
-    > [!NOTE]
-    >  La commande s'affiche uniquement si les contraintes de validation sont installées.  
+  > [!NOTE]
+  >  La commande s'affiche uniquement si les contraintes de validation sont installées.  
   
--   **Sur l’enregistrement d’un modèle.** Les contraintes de validation peuvent être appliquées quand vous enregistrez le modèle. Ces contraintes visent à s'assurer que vous n'enregistrez pas un modèle non valide d'après l'interprétation de votre projet.  
+- **Sur l’enregistrement d’un modèle.** Les contraintes de validation peuvent être appliquées quand vous enregistrez le modèle. Ces contraintes visent à s'assurer que vous n'enregistrez pas un modèle non valide d'après l'interprétation de votre projet.  
   
-     Si des erreurs se produisent, il vous sera demandé si vous souhaitez toujours enregistrer le modèle. Vous pouvez choisir de corriger les erreurs ou d'enregistrer quand même le modèle.  
+   Si des erreurs se produisent, il vous sera demandé si vous souhaitez toujours enregistrer le modèle. Vous pouvez choisir de corriger les erreurs ou d'enregistrer quand même le modèle.  
   
--   **Sur l’ouverture d’un modèle.** Quand vous ouvrez un modèle, les méthodes de validation peuvent être appliquées pour restaurer les messages d'erreur qui existaient au moment de l'enregistrement du modèle. Des erreurs peuvent également être introduites par les incohérences qui résultent des modifications apportées par les utilisateurs travaillant sur différentes parties d'un modèle. Pour plus d’informations, consultez [partager des modèles et exporter des diagrammes](../modeling/share-models-and-exporting-diagrams.md).  
+- **Sur l’ouverture d’un modèle.** Quand vous ouvrez un modèle, les méthodes de validation peuvent être appliquées pour restaurer les messages d'erreur qui existaient au moment de l'enregistrement du modèle. Des erreurs peuvent également être introduites par les incohérences qui résultent des modifications apportées par les utilisateurs travaillant sur différentes parties d'un modèle. Pour plus d’informations, consultez [partager des modèles et exporter des diagrammes](../modeling/share-models-and-exporting-diagrams.md).  
   
- Les erreurs de validation sont signalées dans la fenêtre des erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  Les erreurs de validation sont signalées dans la fenêtre des erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Pour sélectionner les éléments incorrects dans un diagramme, double-cliquez sur l'erreur. Cette méthode fonctionne uniquement si les éléments incorrects sont visibles dans un diagramme ouvert.  
+  Pour sélectionner les éléments incorrects dans un diagramme, double-cliquez sur l'erreur. Cette méthode fonctionne uniquement si les éléments incorrects sont visibles dans un diagramme ouvert.  
   
 ## <a name="installing-validation-constraints"></a>Installation de contraintes de validation  
  Les contraintes sont empaquetées dans des fichiers VSIX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension). En règle générale, un ensemble de contraintes fait partie d'une extension qui contient également d'autres définitions telles que des commandes de menu, des profils et des éléments de boîte à outils.  

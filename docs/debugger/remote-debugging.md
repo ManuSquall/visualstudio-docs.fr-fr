@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872432"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -95,25 +95,25 @@ Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez 
 
  Si vous souhaitez configurer le débogueur distant en tant que service, procédez comme suit.
 
-1.  Recherchez l’ **Assistant Configuration Remote Debugger** (rdbgwiz.exe). (C’est une application distincte du débogueur distant). Il est disponible uniquement quand vous installez les outils de contrôle à distance. Il n’est pas installé avec Visual Studio.
+1. Recherchez l’ **Assistant Configuration Remote Debugger** (rdbgwiz.exe). (C’est une application distincte du débogueur distant). Il est disponible uniquement quand vous installez les outils de contrôle à distance. Il n’est pas installé avec Visual Studio.
 
-2.  Démarrez l’Assistant Configuration. Quand la première page s’affiche, cliquez sur **Suivant**.
+2. Démarrez l’Assistant Configuration. Quand la première page s’affiche, cliquez sur **Suivant**.
 
-3.  Cochez la case **Exécuter le débogueur distant Visual Studio 2015 en tant que service** .
+3. Cochez la case **Exécuter le débogueur distant Visual Studio 2015 en tant que service** .
 
-4.  Ajoutez le nom du compte d’utilisateur et le mot de passe.
+4. Ajoutez le nom du compte d’utilisateur et le mot de passe.
 
-     Vous devrez peut-être ajouter le **une session en tant que service** utilisateur directement à ce compte (trouver **stratégie de sécurité locale** (secpol.msc) dans le **Démarrer** page ou la fenêtre (ou type  **secpol.msc** à une invite de commandes). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**). Cliquez sur **Suivant**.
+    Vous devrez peut-être ajouter le **une session en tant que service** utilisateur directement à ce compte (trouver **stratégie de sécurité locale** (secpol.msc) dans le **Démarrer** page ou la fenêtre (ou type  **secpol.msc** à une invite de commandes). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**). Cliquez sur **Suivant**.
 
-5.  Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.
+5. Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.
 
-6.  Si le service peut être démarré, le message suivant s’affiche : **L’Assistant Configuration Visual Studio Remote Debugger est terminé**. Si le service ne peut pas être démarré, le message suivant s’affiche : **Échec de l’Assistant Configuration Débogueur distant Visual Studio**. La page fournit également des conseils à suivre pour faire démarrer le service.
+6. Si le service peut être démarré, le message suivant s’affiche : **L’Assistant Configuration Visual Studio Remote Debugger est terminé**. Si le service ne peut pas être démarré, le message suivant s’affiche : **Échec de l’Assistant Configuration Débogueur distant Visual Studio**. La page fournit également des conseils à suivre pour faire démarrer le service.
 
-7.  Cliquez sur **Terminer**.
+7. Cliquez sur **Terminer**.
 
- À ce stade, le débogueur distant s’exécute en tant que service. Vous pouvez le vérifier en accédant à **le panneau de configuration > Services** et en recherchant **débogueur distant Visual Studio 2015**.
+   À ce stade, le débogueur distant s’exécute en tant que service. Vous pouvez le vérifier en accédant à **le panneau de configuration > Services** et en recherchant **débogueur distant Visual Studio 2015**.
 
- Vous pouvez arrêter et démarrer le service débogueur distant à partir de **le panneau de configuration > Services**.
+   Vous pouvez arrêter et démarrer le service débogueur distant à partir de **le panneau de configuration > Services**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants
 

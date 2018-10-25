@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901318"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions d’éditeur et de service de langage
 Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnalités de service de langage telles que le mode plan, correspondance des accolades, IntelliSense et des ampoules à votre propre langage de programmation ou à n’importe quel type de contenu. Vous pouvez également personnaliser l’apparence et le comportement de l’éditeur Visual Studio, par exemple le texte de coloration, marges, les ornements et les autres éléments visuels. Vous pouvez également définir votre propre type de contenu et spécifier l’apparence et le comportement des vues de texte dans lequel votre contenu s’affiche.  
@@ -44,17 +44,17 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
   
  Voici quelques-uns des types de base des extensions de l’éditeur :  
   
--   Marges et les barres de défilement  
+- Marges et les barres de défilement  
   
--   Balises  
+- Balises  
   
--   Ornements  
+- Ornements  
   
--   Options  
+- Options  
   
--   IntelliSense  
+- IntelliSense  
   
- Pour plus d’informations sur les points d’extension de l’éditeur, consultez [points d’extension éditeur et le service de langage](../extensibility/language-service-and-editor-extension-points.md).  
+  Pour plus d’informations sur les points d’extension de l’éditeur, consultez [points d’extension éditeur et le service de langage](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Déploiement d’extensions de l’éditeur  
  Dans Visual Studio, vous déployez des extensions de l’éditeur en ajoutant un fichier de métadonnées nommé *source.extension.vsixmanifest* à la solution, génération de la solution et l’ajout d’une copie des fichiers binaires et le manifeste dans un dossier connu pour Visual Studio. Le fichier manifest définit les faits de base sur l’extension (par exemple, nom, auteur, version et type de contenu). Pour plus d’informations sur le fichier de manifeste VSIX et comment déployer des extensions, consultez [extensions Ship Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

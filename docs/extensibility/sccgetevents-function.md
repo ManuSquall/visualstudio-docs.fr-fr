@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21cc159f4ea09d817e81f74f338cc748833e1b62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 981b3c9b0a03abfa13fedc7c62e77f02a425b248
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896989"
 ---
 # <a name="sccgetevents-function"></a>Fonction SccGetEvents
 Cette fonction récupère un événement d’état en file d’attente.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetExtendedInfo | Documents Microsoft
+title: IDebugProperty::GetExtendedInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc549ecc4cfa3b3cbbb754585c751b16df2fd8a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c66ea53bde17f2936567cd93ae0be166f35382ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925538"
 ---
 # <a name="idebugpropertygetextendedinfo"></a>IDebugProperty::GetExtendedInfo
 Obtient les informations étendues pour la propriété.  
@@ -40,19 +40,19 @@ HRESULT GetExtendedInfo (
   
 #### <a name="parameters"></a>Paramètres  
  `cInfos`  
- [in] Nombre d’objets étendus.  
+ [in] Nombre d’objets d’informations étendues.  
   
  `rgguidExtendedInfo`  
  [in] Un tableau de `GUID`s est passé afin que plusieurs éléments d’informations étendues peuvent être récupérées en même temps.  
   
  `pExtendedInfo`  
- [out] Retourne un tableau de `VARIANT`qui peut être utilisé pour récupérer les informations de propriété étendue.  
+ [out] Retourne un tableau de `VARIANT`s qui peut être utilisé pour récupérer les informations de propriété étendue.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un élément valide `HRESULT`, généralement `S_OK`.  
+ Retourne une liste valide `HRESULT`, généralement `S_OK`.  
   
-## <a name="remarks"></a>Remarques  
- Cette interface obtient les étendues des informations pour cet objet. L’API existe uniquement à des fins de récupération des informations qui ne se prêtent pas à être récupérés par l’utilisation de `IDebugProperty::GetPropertyInfo`).  
+## <a name="remarks"></a>Notes  
+ Cette interface obtient les étendues info pour cet objet. L’API existe uniquement à des fins de récupération des informations qui ne se prêtent pas à leur récupération par l’utilisation de `IDebugProperty::GetPropertyInfo`).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

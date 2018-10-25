@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Documents Microsoft
+title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62c68bfc8e43370105a94818437bb0cfa2221e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926473"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Supprime un nœud du programme spécifié à partir de la disponibilité de déboguer des moteurs (DEs) et le Gestionnaire de session de débogage (SDM).  
+Supprime un nœud de programme spécifié à partir de la disponibilité pour déboguer les moteurs (DEs) et le Gestionnaire de session de débogage (SDM).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,9 +47,9 @@ int UnpublishProgramNode(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Une fois supprimé, le nœud du programme n’est plus disponible pour être interrogées pour les informations relatives au programme.  
+ Une fois supprimé, le nœud du programme n’est plus disponible pour être interrogées pour des informations sur le programme.  
   
- Pour libérer un nœud de programme, appelez le [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) (méthode).  
+ Pour rendre un nœud de programme, appelez le [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

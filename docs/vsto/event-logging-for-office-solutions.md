@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925110"
 ---
 # <a name="event-logging-for-office-solutions"></a>Journalisation des événements pour les solutions Office
   Vous pouvez utiliser l’observateur d’événements de Windows pour consulter les messages d’exception capturés par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] lors de l’installation ou de la désinstallation de solutions Office. Vous pouvez utiliser ces messages du journal des événements pour résoudre les problèmes d’installation et de déploiement.  
@@ -51,33 +51,33 @@ ms.locfileid: "35671108"
   
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008  
   
-1.  Dans le Panneau de configuration, ouvrez **Outils d’administration**.  
+1. Dans le Panneau de configuration, ouvrez **Outils d’administration**.  
   
-2.  Démarrez l’ **Observateur d’événements**.  
+2. Démarrez l’ **Observateur d’événements**.  
   
-3.  Développez **Journaux Windows**.  
+3. Développez **Journaux Windows**.  
   
-4.  Dans la liste des journaux des événements, sélectionnez **Application**.  
+4. Dans la liste des journaux des événements, sélectionnez **Application**.  
   
-5.  Dans le menu **Action** , cliquez sur **Filtrer le journal actuel**.  
+5. Dans le menu **Action** , cliquez sur **Filtrer le journal actuel**.  
   
-6.  Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.  
+6. Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.  
   
-7.  Pour les événements d’installation, dans la zone **ID d’événement** , tapez **4096**.  
+7. Pour les événements d’installation, dans la zone **ID d’événement** , tapez **4096**.  
   
-8.  Cliquez sur **OK** pour afficher la vue filtrée.  
+8. Cliquez sur **OK** pour afficher la vue filtrée.  
   
- L’observateur d’événements fournit les informations suivantes :  
+   L’observateur d’événements fournit les informations suivantes :  
   
--   L’emplacement du manifeste de déploiement pour la solution.  
+- L’emplacement du manifeste de déploiement pour la solution.  
   
--   Un message qui décrit la cause de l’erreur ou de l’exception.  
+- Un message qui décrit la cause de l’erreur ou de l’exception.  
   
- Ces messages d’exception peuvent vous aider à déterminer la cause d’un problème d’installation, tel qu’un certificat non approuvé, un emplacement de document non approuvé ou un manifeste de déploiement non valide.  
+  Ces messages d’exception peuvent vous aider à déterminer la cause d’un problème d’installation, tel qu’un certificat non approuvé, un emplacement de document non approuvé ou un manifeste de déploiement non valide.  
   
- Après la désinstallation d’une solution Office, les messages d’exception restent dans le journal des événements.  
+  Après la désinstallation d’une solution Office, les messages d’exception restent dans le journal des événements.  
   
- Pour afficher ou enregistrer des messages d’exception lors de l’exécution d’une solution Office, consultez [les projets Office déboguer](../vsto/debugging-office-projects.md) et [les projets Office déboguer](../vsto/debugging-office-projects.md).  
+  Pour afficher ou enregistrer des messages d’exception lors de l’exécution d’une solution Office, consultez [les projets Office déboguer](../vsto/debugging-office-projects.md) et [les projets Office déboguer](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Localisation  
  La langue du message d’exception est déterminée par la langue du runtime de Visual Studio Tools pour Office. Par exemple, si l’ordinateur de l’utilisateur final possède le module linguistique japonais installé, le message d’exception est écrit dans le journal des événements en japonais.  

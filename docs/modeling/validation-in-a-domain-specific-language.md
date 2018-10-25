@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 25fa9581dff49dbdebe9ce79f6f0143d393bb275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823617"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.
@@ -32,17 +32,17 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
 ## <a name="running-validation"></a>Exécution de la validation
  Quand un utilisateur modifie un modèle, à savoir, une instance de votre langage spécifique à un domaine, les actions suivantes peuvent exécuter la validation :
 
--   Cliquez sur le diagramme et sélectionnez **valider tout**.
+- Cliquez sur le diagramme et sélectionnez **valider tout**.
 
--   Cliquez sur le nœud supérieur dans l’Explorateur de votre DSL et sélectionnez **valider tout**
+- Cliquez sur le nœud supérieur dans l’Explorateur de votre DSL et sélectionnez **valider tout**
 
--   Enregistrez le modèle.
+- Enregistrez le modèle.
 
--   Ouvrez le modèle.
+- Ouvrez le modèle.
 
--   En outre, vous pouvez écrire le code de programme qui exécute la validation comme partie d'une commande de menu ou en réponse à une modification, par exemple.
+- En outre, vous pouvez écrire le code de programme qui exécute la validation comme partie d'une commande de menu ou en réponse à une modification, par exemple.
 
- Des erreurs de validation seront affiche dans le **liste d’erreurs** fenêtre. L'utilisateur peut double-cliquer sur un message d'erreur pour sélectionner les éléments du modèle qui sont à l'origine de l'erreur.
+  Des erreurs de validation seront affiche dans le **liste d’erreurs** fenêtre. L'utilisateur peut double-cliquer sur un message d'erreur pour sélectionner les éléments du modèle qui sont à l'origine de l'erreur.
 
 ## <a name="defining-validation-constraints"></a>Définition des contraintes de validation
  Vous définissez les contraintes de validation en ajoutant les méthodes de validation aux classes de domaine ou aux relations de votre DSL. Quand la validation est exécutée, que ce soit par l'utilisateur ou sous le contrôle du programme, tout ou partie des méthodes de validation est exécuté. Chaque méthode est appliquée à chaque instance de sa classe et il peut y avoir plusieurs méthodes de validation dans chaque classe.
@@ -54,37 +54,37 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
 
 #### <a name="to-define-a-validation-constraint"></a>Pour définir une contrainte de validation
 
-1.  Activez la validation dans le **éditeur\validation** nœud :
+1. Activez la validation dans le **éditeur\validation** nœud :
 
-    1.  Ouvrez **Dsl\DslDefinition.dsl**.
+   1.  Ouvrez **Dsl\DslDefinition.dsl**.
 
-    2.  Dans l’Explorateur DSL, développez le **éditeur** nœud et sélectionnez **Validation**.
+   2.  Dans l’Explorateur DSL, développez le **éditeur** nœud et sélectionnez **Validation**.
 
-    3.  Dans la fenêtre Propriétés, définissez la **utilise** propriétés à `true`. Il est plus pratique de définir toutes ces propriétés.
+   3.  Dans la fenêtre Propriétés, définissez la **utilise** propriétés à `true`. Il est plus pratique de définir toutes ces propriétés.
 
-    4.  Cliquez sur **transformer tous les modèles** dans le **l’Explorateur de solutions** barre d’outils.
+   4.  Cliquez sur **transformer tous les modèles** dans le **l’Explorateur de solutions** barre d’outils.
 
-2.  Écrivez les définitions de classe partielle pour une ou plusieurs de vos classes de domaine ou relations de domaine. Écrivez ces définitions dans un fichier de code dans le **Dsl** projet.
+2. Écrivez les définitions de classe partielle pour une ou plusieurs de vos classes de domaine ou relations de domaine. Écrivez ces définitions dans un fichier de code dans le **Dsl** projet.
 
-3.  Préfixez chaque classe avec l'attribut suivant :
+3. Préfixez chaque classe avec l'attribut suivant :
 
-    ```csharp
-    [ValidationState(ValidationState.Enabled)]
-    ```
+   ```csharp
+   [ValidationState(ValidationState.Enabled)]
+   ```
 
-    -   Par défaut, cet attribut activera aussi la validation pour les classes dérivées. Si vous voulez désactiver la validation pour une classe dérivée spécifique, vous pouvez utiliser `ValidationState.Disabled`.
+   -   Par défaut, cet attribut activera aussi la validation pour les classes dérivées. Si vous voulez désactiver la validation pour une classe dérivée spécifique, vous pouvez utiliser `ValidationState.Disabled`.
 
-4.  Ajoutez les méthodes de validation aux classes. Chaque méthode de validation peut avoir un nom quelconque, mais un seul paramètre de type <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
+4. Ajoutez les méthodes de validation aux classes. Chaque méthode de validation peut avoir un nom quelconque, mais un seul paramètre de type <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 
-     Elle doit être préfixée par un ou plusieurs attributs `ValidationMethod` :
+    Elle doit être préfixée par un ou plusieurs attributs `ValidationMethod` :
 
-    ```csharp
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
-    ```
+   ```csharp
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
+   ```
 
-     L'attribut ValidationCategories spécifie à quel moment la méthode est exécutée.
+    L'attribut ValidationCategories spécifie à quel moment la méthode est exécutée.
 
- Par exemple :
+   Par exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -127,27 +127,27 @@ public partial class ParentsHaveChildren
 
  Notez les points suivants relatifs au code :
 
--   Vous pouvez ajouter des méthodes de validation aux classes de domaine ou relations de domaine. Le code pour ces types se trouve dans **Dsl\Generated Code\Domain\*.cs**.
+- Vous pouvez ajouter des méthodes de validation aux classes de domaine ou relations de domaine. Le code pour ces types se trouve dans **Dsl\Generated Code\Domain\*.cs**.
 
--   Chaque méthode de validation s'applique à chaque instance de sa classe et de ses sous-classes. Dans le cas d'une relation de domaine, chaque instance est un lien entre deux éléments de modèle.
+- Chaque méthode de validation s'applique à chaque instance de sa classe et de ses sous-classes. Dans le cas d'une relation de domaine, chaque instance est un lien entre deux éléments de modèle.
 
--   Les méthodes de validation ne s'appliquent pas selon un ordre spécifié et chaque méthode ne s'applique pas aux instances de sa classe dans un ordre prévisible.
+- Les méthodes de validation ne s'appliquent pas selon un ordre spécifié et chaque méthode ne s'applique pas aux instances de sa classe dans un ordre prévisible.
 
--   Il n'est généralement pas recommandé qu'une méthode de validation mette à jour le contenu du magasin, car cela conduirait à des résultats incohérents. La méthode doit à la place signaler une erreur en appelant `context.LogError`, `LogWarning` ou `LogInfo`.
+- Il n'est généralement pas recommandé qu'une méthode de validation mette à jour le contenu du magasin, car cela conduirait à des résultats incohérents. La méthode doit à la place signaler une erreur en appelant `context.LogError`, `LogWarning` ou `LogInfo`.
 
--   Dans l'appel de LogError, vous pouvez fournir une liste d'éléments de modèle ou de liens de relation qui seront sélectionnés quand l'utilisateur double-clique sur le message d'erreur.
+- Dans l'appel de LogError, vous pouvez fournir une liste d'éléments de modèle ou de liens de relation qui seront sélectionnés quand l'utilisateur double-clique sur le message d'erreur.
 
--   Pour plus d’informations sur la façon de lire le modèle de code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+- Pour plus d’informations sur la façon de lire le modèle de code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- L'exemple s'applique au modèle de domaine suivant. La relation ParentsHaveChildren possède des rôles nommés Child et Parent.
+  L'exemple s'applique au modèle de domaine suivant. La relation ParentsHaveChildren possède des rôles nommés Child et Parent.
 
- ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt_person.png)
+  ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Catégories de validation
  Dans l'attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>, vous spécifiez à quel moment la méthode de validation doit s'exécuter.
 
 |Catégorie|Exécution|
-|--------------|---------------|
+|-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque l'utilisateur appelle la commande de menu Valider.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque le fichier de modèle est ouvert.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque le fichier est enregistré. S'il y a des erreurs de validation, l'utilisateur se voit offrir la possibilité d'annuler l'opération d'enregistrement.|
@@ -173,7 +173,6 @@ public partial class Person
     {
         if (this.BirthYear <= parent.BirthYear)
         { ...
-
 ```
 
  **Agrégation des contraintes de validation.** Pour appliquer la validation dans un ordre prévisible, définissez une méthode de validation unique sur une classe propriétaire, telle l’élément racine de votre modèle. Cette technique permet aussi de regrouper plusieurs rapports d'erreur au sein d'un seul message.
@@ -189,7 +188,6 @@ erroneousLinks = new List<ParentsHaveChildren>();
 erroneousLinks.Add(this);
 context.SetCacheValue("erroneousLinks", erroneousLinks);
 if (erroneousLinks.Count < 5) { context.LogError( ... ); }
-
 ```
 
 ## <a name="validation-of-multiplicities"></a>Validation des multiplicités
@@ -197,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Si vous définissez la multiplicité d'un rôle d'une relation de domaine sur 1..* ou 1..1, mais que l'utilisateur ne crée pas le lien de cette relation, un message d'erreur de validation s'affiche.
 
- Par exemple, si votre DSL possède des classes Person et Town et une relation PersonLivesInTown avec une relation **1..\***  dans le rôle Town, puis pour chaque personne qui n’a aucune Town, un message d’erreur s’affiche.
+ Par exemple, si votre DSL possède des classes Person et Town et une relation PersonLivesInTown avec une relation **1..\\** * dans le rôle Town, puis pour chaque personne qui n’a aucune Town, un message d’erreur s’affiche.
 
 ## <a name="running-validation-from-program-code"></a>Exécution de la validation à partir du code de programme
  Vous pouvez exécuter la validation en accédant à un ValidationController ou en en créant un. Si vous souhaitez que les erreurs à afficher à l’utilisateur dans la fenêtre d’erreur, utilisez le ValidationController attaché au DocData de votre diagramme. Par exemple, si vous écrivez une commande de menu, `CurrentDocData.ValidationController` est disponible dans la classe de l'ensemble de commandes :
@@ -213,7 +211,6 @@ partial class MyLanguageCommandSet
   {
    ValidationController controller = this.CurrentDocData.ValidationController;
 ...
-
 ```
 
  Pour plus d’informations, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
@@ -233,7 +230,6 @@ if (!validator.Validate(store, ValidationCategories.Save))
   // Deal with errors:
   foreach (ValidationMessage message in validator.ValidationMessages) { ... }
 }
-
 ```
 
 ## <a name="running-validation-when-a-change-occurs"></a>Exécution de la validation quand une modification intervient
@@ -297,7 +293,6 @@ namespace Company.FamilyTree
     }
   }
 }
-
 ```
 
  Les gestionnaires sont aussi appelés après les opérations Annuler ou Rétablir qui affectent les liens ou les éléments.
@@ -314,7 +309,6 @@ namespace Company.FamilyTree
 [ValidationMethod(ValidationCategory.Menu)]
 private void TestForCircularLinks(ValidationContext context)
 {...}
-
 ```
 
 > [!NOTE]

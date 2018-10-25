@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880654"
 ---
 # <a name="demo-sample"></a>Exemple de démonstration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Procédures suivantes vous indiquent comment créer l’exemple pour [procédure pas à pas : analyse du Code C/C++ pour rechercher les erreurs](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Les procédures créent :  
   
--   Un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution nommée CppDemo.  
+- Un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution nommée CppDemo.  
   
--   Un projet de bibliothèque statique nommé CodeDefects.  
+- Un projet de bibliothèque statique nommé CodeDefects.  
   
--   Un projet de bibliothèque statique nommé Annotations.  
+- Un projet de bibliothèque statique nommé Annotations.  
   
- Les procédures fournissent également le code pour les fichiers d’en-tête et .cpp pour les bibliothèques statiques.  
+  Les procédures fournissent également le code pour les fichiers d’en-tête et .cpp pour les bibliothèques statiques.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Créer la solution CppDemo et le projet CodeDefects  
   

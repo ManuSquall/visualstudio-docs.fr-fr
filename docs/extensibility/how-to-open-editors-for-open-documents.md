@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 902c7b6dffcb47c12e150ea49694d6c759d095ad
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 05e91dd296958e44d0c06f2b77d410efdd71fb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823123"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Comment : ouvrir des éditeurs pour les documents ouverts
 Avant d’un projet s’ouvre une fenêtre de document, le projet devez d’abord déterminer si le fichier est déjà ouvert dans la fenêtre de document pour un autre éditeur. Le fichier peut être soit ouvert dans un éditeur spécifique au projet ou un des éditeurs standards inscrit avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -28,21 +28,21 @@ Avant d’un projet s’ouvre une fenêtre de document, le projet devez d’abor
   
 ### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Pour ouvrir un éditeur spécifique au projet pour un fichier ouvert  
   
-1.  Appelez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
+1. Appelez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
   
-     Cet appel retourne des pointeurs vers la hiérarchie du document, élément de hiérarchie et le frame de fenêtre, le cas échéant.  
+    Cet appel retourne des pointeurs vers la hiérarchie du document, élément de hiérarchie et le frame de fenêtre, le cas échéant.  
   
-2.  Si le document est ouvert, le projet doit vérifier a posteriori si seul un objet de données de document existe, ou si un objet de vue de document est également présent.  
+2. Si le document est ouvert, le projet doit vérifier a posteriori si seul un objet de données de document existe, ou si un objet de vue de document est également présent.  
   
-    -   Si un objet de vue de document existe, et cette vue est pour une autre hiérarchie ou un élément de la hiérarchie, le projet utilise le pointeur de frame de fenêtre de la vue pour resurface la fenêtre existante.  
+   - Si un objet de vue de document existe, et cette vue est pour une autre hiérarchie ou un élément de la hiérarchie, le projet utilise le pointeur de frame de fenêtre de la vue pour resurface la fenêtre existante.  
   
-    -   Si un objet de vue de document existe, et cette vue est pour la même hiérarchie et un élément de la hiérarchie, le projet peut ouvrir une seconde vue si s’attacher à l’objet de données sous-jacent. Sinon, le projet doit utiliser le pointeur de frame de fenêtre de la vue à resurface la fenêtre existante.  
+   - Si un objet de vue de document existe, et cette vue est pour la même hiérarchie et un élément de la hiérarchie, le projet peut ouvrir une seconde vue si s’attacher à l’objet de données sous-jacent. Sinon, le projet doit utiliser le pointeur de frame de fenêtre de la vue à resurface la fenêtre existante.  
   
-    -   Si seul l’objet de données existe, le projet doit déterminer s’il peut utiliser l’objet de données pour sa vue. Si l’objet de données est compatible, terminé les étapes décrites dans [ouvrir un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
+   - Si seul l’objet de données existe, le projet doit déterminer s’il peut utiliser l’objet de données pour sa vue. Si l’objet de données est compatible, terminé les étapes décrites dans [ouvrir un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
   
      Si l’objet de données n’est pas compatible, une erreur doit être affichée à l’utilisateur qui indique que le fichier est actuellement en cours d’utilisation. Cette erreur doit être affichée uniquement dans les cas temporaires, tels que lors de la compilation d’un fichier en même temps l’utilisateur tente d’ouvrir le fichier à l’aide d’un éditeur autre que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] principal éditeur de texte. L’éditeur de texte principal peut partager des objets de données de document avec le compilateur.  
   
-3.  Si le document n’est pas ouvert, car il n’existe aucun objet de données de document ou d’un objet de vue de document, suivez les étapes de [ouvrir un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
+3. Si le document n’est pas ouvert, car il n’existe aucun objet de données de document ou d’un objet de vue de document, suivez les étapes de [ouvrir un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
   
 ## <a name="open-a-standard-editor"></a>Ouvrez un éditeur standard  
  Utilisez la procédure suivante pour ouvrir un éditeur standard d’un fichier qui est déjà ouvrir.  

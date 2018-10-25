@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879530"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Définir un élément de boîte à outils de modélisation personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 ### <a name="what-the-custom-tool-will-replicate"></a>Que réplique l'outil personnalisé ?  
  Un outil personnalisé réplique la plupart des fonctionnalités du diagramme source :  
   
--   Noms. Quand un élément est créé à partir de la boîte à outils, un numéro est ajouté à la fin du nom si nécessaire pour éviter les noms en double dans le même espace de noms.  
+- Noms. Quand un élément est créé à partir de la boîte à outils, un numéro est ajouté à la fin du nom si nécessaire pour éviter les noms en double dans le même espace de noms.  
   
--   Couleurs, tailles et formes.  
+- Couleurs, tailles et formes.  
   
--   Stéréotypes et profils de packages.  
+- Stéréotypes et profils de packages.  
   
--   Valeurs de propriétés comme Is Abstract.  
+- Valeurs de propriétés comme Is Abstract.  
   
--   Éléments de travail liés.  
+- Éléments de travail liés.  
   
--   Multiplicités et autres propriétés de relations.  
+- Multiplicités et autres propriétés de relations.  
   
--   Positions relatives des formes.  
+- Positions relatives des formes.  
   
- Les fonctionnalités suivantes ne sont pas conservées dans un outil personnalisé :  
+  Les fonctionnalités suivantes ne sont pas conservées dans un outil personnalisé :  
   
--   Formes simples. Il s'agit des formes qui ne sont liées à aucun élément de modèle, que vous pouvez dessiner dans certains genres de diagrammes.  
+- Formes simples. Il s'agit des formes qui ne sont liées à aucun élément de modèle, que vous pouvez dessiner dans certains genres de diagrammes.  
   
--   Routage de connecteur. Si vous routez des connecteurs manuellement, le routage n'est pas préservé quand votre outil est utilisé. Les positions de certaines formes imbriquées, telles que les Ports, ne sont pas conservées par rapport à leurs propriétaires.  
+- Routage de connecteur. Si vous routez des connecteurs manuellement, le routage n'est pas préservé quand votre outil est utilisé. Les positions de certaines formes imbriquées, telles que les Ports, ne sont pas conservées par rapport à leurs propriétaires.  
   
 ##  <a name="tbxinfo"></a> Comment définir les propriétés d’outils personnalisés  
  Des informations de boîte à outils (**.tbxinfo**) fichier vous permet de spécifier un nom de la boîte à outils, l’icône, l’info-bulle, l’onglet et de mot clé pour un ou plusieurs outils personnalisés d’aide. Donnez-lui le nom, tel que **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
   
  La valeur de chaque élément peut être :  
   
--   Comme indiqué dans l'exemple, `<bmp fileName="…"/>` pour l'icône de boîte à outils et `<value>string</value>` pour les autres éléments.  
+- Comme indiqué dans l'exemple, `<bmp fileName="…"/>` pour l'icône de boîte à outils et `<value>string</value>` pour les autres éléments.  
   
- \- ou -  
+  \- ou -  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     Dans ce cas, vous fournissez un assembly compilé dans lequel les valeurs de chaîne ont été compilées en tant que ressources.  
+   Dans ce cas, vous fournissez un assembly compilé dans lequel les valeurs de chaîne ont été compilées en tant que ressources.  
   
- Ajoutez un nœud `<customToolboxItem>` pour chaque élément de boîte à outils que vous souhaitez définir.  
+  Ajoutez un nœud `<customToolboxItem>` pour chaque élément de boîte à outils que vous souhaitez définir.  
   
- Les nœuds dans le **.tbxinfo** fichier sont les suivantes. Il existe une valeur par défaut pour chaque nœud.  
+  Les nœuds dans le **.tbxinfo** fichier sont les suivantes. Il existe une valeur par défaut pour chaque nœud.  
   
 |Nom du nœud|Définit|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Pour fournir des versions de l'outil dans plusieurs langues  
   
-1.  Créez un projet d'Extension Visual Studio qui contient un ou plusieurs outils personnalisés.  
+1. Créez un projet d'Extension Visual Studio qui contient un ou plusieurs outils personnalisés.  
   
-     Dans le **.tbxinfo** , utilisez la méthode de fichier de ressources pour définir l’outil `displayName`, boîte à outils `tabName`et l’info-bulle. Créez un fichier de ressources dans lequel ces chaînes sont définies, compilez-le dans un assembly et faites-y référence à partir du fichier tbxinfo.  
+    Dans le **.tbxinfo** , utilisez la méthode de fichier de ressources pour définir l’outil `displayName`, boîte à outils `tabName`et l’info-bulle. Créez un fichier de ressources dans lequel ces chaînes sont définies, compilez-le dans un assembly et faites-y référence à partir du fichier tbxinfo.  
   
-2.  Créez des assemblys supplémentaires qui contiennent des fichiers de ressources avec des chaînes dans d'autres langues.  
+2. Créez des assemblys supplémentaires qui contiennent des fichiers de ressources avec des chaînes dans d'autres langues.  
   
-3.  Placez chaque assembly supplémentaire dans un dossier dont le nom est le code de culture de la langue. Par exemple, placez une version Français de l’assembly dans un dossier nommé **fr**.  
+3. Placez chaque assembly supplémentaire dans un dossier dont le nom est le code de culture de la langue. Par exemple, placez une version Français de l’assembly dans un dossier nommé **fr**.  
   
-4.  Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [méthode CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.  
+4. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [méthode CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.  
   
-5.  Générez l'Extension Visual Studio et distribuez-la.  
+5. Générez l'Extension Visual Studio et distribuez-la.  
   
-6.  Une fois l'extension installée sur un autre ordinateur, la version du fichier de ressources pour la culture locale de l'utilisateur sera chargée automatiquement. Si vous n'avez pas fourni de version pour la culture de l'utilisateur, les ressources par défaut sont utilisées.  
+6. Une fois l'extension installée sur un autre ordinateur, la version du fichier de ressources pour la culture locale de l'utilisateur sera chargée automatiquement. Si vous n'avez pas fourni de version pour la culture de l'utilisateur, les ressources par défaut sont utilisées.  
   
- Vous ne pouvez pas appliquer cette méthode pour installer différentes versions du diagramme de prototype. Les noms des éléments et des connecteurs seront identiques dans chaque installation.  
+   Vous ne pouvez pas appliquer cette méthode pour installer différentes versions du diagramme de prototype. Les noms des éléments et des connecteurs seront identiques dans chaque installation.  
   
 ## <a name="other-toolbox-operations"></a>Autres opérations de boîte à outils  
  En règle générale, dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] vous pouvez personnaliser la boîte à outils en renommant les outils, en les déplaçant vers différents onglets de la boîte à outils et en les supprimant. Toutefois, ces modifications ne sont pas conservées pour les outils de modélisation personnalisés créés avec les procédures décrites dans cette rubrique. Quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], les outils personnalisés réapparaissent avec leurs noms et leurs emplacements dans la boîte à outils définis.  

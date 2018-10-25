@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894623"
 ---
 # <a name="graph-view"></a>Vue du graphique
 
@@ -48,7 +48,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
  Le tableau décrit les options disponibles pour tous les nœuds sur l'aire de conception de la vue du graphique.
 
 |Option|Description|
-|------------|-----------------|
+|-|-----------------|
 |**Afficher dans l’Explorateur de schémas XML**|Met le focus sur l'Explorateur de schémas et met en surbrillance le nœud de jeu de schémas.|
 |**Afficher dans la vue du graphique**|Bascule vers la vue du graphique (grisée).|
 |**Générer un exemple de XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|
@@ -63,7 +63,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les éléments globaux comprend les options suivantes :
 
 |Option|Description|
-|------------|-----------------|
+|-|-----------------|
 |**Ajoutez la définition de Type**|Ajoute le type de base au diagramme.|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence à l'élément et dessine des flèches pour indiquer les relations entre eux.|
 |**Ajouter des membres du groupe de Substitution**|Ajoute tous les membres du groupe de substitution. Cette option s'affiche dans la vue si l'élément est l'en-tête ou membre d'un groupe de substitution.|
@@ -72,7 +72,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les types simples et complexes globaux comprend les options suivantes :
 
 |Option|Description|
-|------------|-----------------|
+|-|-----------------|
 |**Ajouter le Type de Base**|Si le type sélectionné est dérivé d'un type global, ajoute le type de base du type sélectionné.|
 |**Ajouter toutes les références**|Ajoute toutes les références du type sélectionné. Ceci inclut les éléments et les attributs du type sélectionné, ainsi que les types dérivés du type sélectionné.|
 |**Ajouter tous les Types dérivés**|Ajoute tous les types qui sont directement et indirectement dérivés du type sélectionné.|
@@ -81,17 +81,17 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les groupes globaux et les groupes d'attributs comprend les options suivantes :
 
 |Option|Description|
-|------------|-----------------|
+|-|-----------------|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence au groupe et dessine des flèches pour indiquer les relations entre eux.|
 |**Ajouter tous les membres**|Ajoute tous les membres du groupe et dessine des flèches pour indiquer les relations entre eux.|
 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les attributs globaux comprend les options suivantes :
 
 |Option|Description|
-|------------|-----------------|
+|-|-----------------|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence au groupe et dessine des flèches pour indiquer les relations entre eux.|
 
-## <a name="properties-window"></a>Propriétés (fenêtre)
+## <a name="properties-window"></a>Fenêtre Propriétés
 
  Utilisez le menu contextuel pour ouvrir la **propriétés** fenêtre. Par défaut, le **propriétés** fenêtre apparaît dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud qui est affiché dans la vue de modèle de contenu, les propriétés de ce nœud seront affichera dans le **propriétés** fenêtre.
 
@@ -102,7 +102,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
  ![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Option|Description|
-|------------|-----------------|
+|-|-----------------|
 |**Afficher la vue de départ**|Bascule vers le [démarrer l’affichage](../xml-tools/start-view.md). Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**1**.|
 |**Afficher la vue de modèle de contenu**|Bascule vers le [vue du modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**2**.|
 |**Afficher la vue du graphique**|Bascule vers le [vue graphique](../xml-tools/graph-view.md). Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**3**.|

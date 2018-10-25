@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::pdataForVA | Documents Microsoft
+title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb500539184d6ac5e7e3cb00e753a00f3585057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901422"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Retourne le bloc de données PDATA associé à l’adresse virtuelle.  
@@ -46,7 +46,7 @@ HRESULT pdataForVA(
  [out] Retourne la taille réelle des données en octets qui ont été obtenues.  
   
  `pbData`  
- [dans, out] Une mémoire tampon est remplie avec les données demandées. Ne peut pas être `NULL`.  
+ [in, out] Une mémoire tampon est remplie avec les données demandées. Ne peut pas être `NULL`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe aucun PDATA pour l’adresse spécifiée. Sinon, retourne un code d'erreur.  
@@ -54,7 +54,7 @@ HRESULT pdataForVA(
 ## <a name="remarks"></a>Notes  
  PDATA (la section nommée « .pdata ») d’un module contient des informations sur la gestion des exceptions de fonctions.  
   
- L’appelant sait que la quantité de données doit être retourné pour l’appelant n’a pas besoin pour poser pour la quantité de données est disponible. Par conséquent, il est acceptable pour une implémentation de cette méthode pour retourner une erreur si le `pbData` paramètre est `NULL`.  
+ L’appelant sait que la quantité de données doit être retournée afin de l’appelant n’a pas besoin de poser pour la quantité de données est disponible. Par conséquent, il est acceptable pour une implémentation de cette méthode retourne une erreur si le `pbData` paramètre est `NULL`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

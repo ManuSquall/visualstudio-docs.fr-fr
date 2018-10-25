@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f73089c2894bd04c877302e87f11b77928048e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: fde39c346313dc66d5d94a5beb0e9e3b256ea436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920213"
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des options de configuration
 Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build décrit avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations, *déboguer* et *version*. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’ActiveX éditeur ou comme un composant sur place. Projets n’avez pas besoin de prendre en charge plusieurs configurations, toutefois. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.  
@@ -56,21 +56,21 @@ Interfaces de configuration
   
  Quelques remarques concernant le diagramme précédent :  
   
--   `IDispatch` est marqué comme facultatif dans l’objet de configuration. Plus précisément, il est facultatif pour que les interfaces de configuration sur l’objet de recherche.  
+- `IDispatch` est marqué comme facultatif dans l’objet de configuration. Plus précisément, il est facultatif pour que les interfaces de configuration sur l’objet de recherche.  
   
--   `IVsDebuggableProjectCfg` est marqué comme facultatif dans l’objet de configuration, mais est requis pour la prise en charge le débogage.  
+- `IVsDebuggableProjectCfg` est marqué comme facultatif dans l’objet de configuration, mais est requis pour la prise en charge le débogage.  
   
--   `IVsProjectCfg2` est marqué comme facultatif dans l’objet de configuration, mais est nécessaire pour la prise en charge de regroupement de sortie.  
+- `IVsProjectCfg2` est marqué comme facultatif dans l’objet de configuration, mais est nécessaire pour la prise en charge de regroupement de sortie.  
   
--   L’objet de fournisseur de configuration est marqué comme un objet facultatif, mais l’option est là pour l’implémenter. Vous pouvez implémenter l’objet sur l’objet de projet ou sur un objet distinct.  
+- L’objet de fournisseur de configuration est marqué comme un objet facultatif, mais l’option est là pour l’implémenter. Vous pouvez implémenter l’objet sur l’objet de projet ou sur un objet distinct.  
   
--   `IVsCfgProvider2` est nécessaire pour la prise en charge de la plateforme et la modification de configuration. `IVsCfgProvider` est suffisant si vous n’implémentez pas cette fonctionnalité.  
+- `IVsCfgProvider2` est nécessaire pour la prise en charge de la plateforme et la modification de configuration. `IVsCfgProvider` est suffisant si vous n’implémentez pas cette fonctionnalité.  
   
--   Certains de ces objets indiqués dans le diagramme, comme des objets distincts peuvent être combinés dans la même classe si possible selon vos besoins de conception spécifiques. Dans d’autres rubriques de cette section, toutefois, les objets et les interfaces associées à ces objets seront abordées selon le scénario présenté dans le diagramme.  
+- Certains de ces objets indiqués dans le diagramme, comme des objets distincts peuvent être combinés dans la même classe si possible selon vos besoins de conception spécifiques. Dans d’autres rubriques de cette section, toutefois, les objets et les interfaces associées à ces objets seront abordées selon le scénario présenté dans le diagramme.  
   
--   Certains objets sont implémentées séparément. Par exemple, projet et solution génération se produisent sur des threads distincts et de l’objet pour gérer la vie build séparément à partir de l’objet qui décrit la configuration de la build.  
+- Certains objets sont implémentées séparément. Par exemple, projet et solution génération se produisent sur des threads distincts et de l’objet pour gérer la vie build séparément à partir de l’objet qui décrit la configuration de la build.  
   
- Pour plus d’informations sur les interfaces d’objet de configuration et les interfaces d’objet de fournisseur de configuration dans le diagramme précédent, consultez [objet de configuration de projet](../../extensibility/internals/project-configuration-object.md). En outre, [configuration de projet pour la création de](../../extensibility/internals/project-configuration-for-building.md) fournit des informations sur la dépendance de build et de générateur de Configuration des interfaces d’objet et [configuration de projet pour la gestion du déploiement](../../extensibility/internals/project-configuration-for-managing-deployment.md) Décrit les interfaces reliés au responsable du déploiement de la configuration et les objets de dépendance de déploiement. Enfin, [configuration de projet pour la sortie](../../extensibility/internals/project-configuration-for-output.md) décrit le groupe de sorties et interfaces d’objet de sortie et l’utilisation des pages de propriétés pour afficher et définir les propriétés dépendantes de la configuration.  
+  Pour plus d’informations sur les interfaces d’objet de configuration et les interfaces d’objet de fournisseur de configuration dans le diagramme précédent, consultez [objet de configuration de projet](../../extensibility/internals/project-configuration-object.md). En outre, [configuration de projet pour la création de](../../extensibility/internals/project-configuration-for-building.md) fournit des informations sur la dépendance de build et de générateur de Configuration des interfaces d’objet et [configuration de projet pour la gestion du déploiement](../../extensibility/internals/project-configuration-for-managing-deployment.md) Décrit les interfaces reliés au responsable du déploiement de la configuration et les objets de dépendance de déploiement. Enfin, [configuration de projet pour la sortie](../../extensibility/internals/project-configuration-for-output.md) décrit le groupe de sorties et interfaces d’objet de sortie et l’utilisation des pages de propriétés pour afficher et définir les propriétés dépendantes de la configuration.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON | Documents Microsoft
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65398ac0c4bde18dc772d75ceea203bdbfe3b189
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1e344ff5adb51d118370f81de10ba01c8950e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904217"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Donne la raison pour laquelle qu'un point d’arrêt a été séparé.  
+Donne la raison pour laquelle qu'un point d’arrêt a été dissocié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,15 +54,15 @@ public enum enum_BP_UNBOUND_REASON {
  Le code qui contient le point d’arrêt a été déchargé.  
   
  BPUR_BREAKPOINT_REBIND  
- Le point d’arrêt a été reliée à un autre emplacement. Cela peut se produire après la modification et poursuivre vos opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.  
+ Le point d’arrêt a été reliée à un autre emplacement. Cela peut se produire après modification et continuer les opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.  
   
  BPUR_ BREAKPOINT_ERROR  
- Le point d’arrêt est déterminé comme étant dans l’erreur après que qu’il est lié. Cela se produit au point d’arrêt managé dont les conditions ne sont plus valides.  
+ Le point d’arrêt est déterminé comme étant erreur après que qu’il est lié. Cela se produit pour les points d’arrêt managés dont les conditions ne sont plus valides.  
   
 ## <a name="remarks"></a>Notes  
  Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841271"
 ---
 # <a name="deploying-custom-start-pages"></a>Déploiement de pages de démarrage personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Déploiement VSIX à l’aide du modèle de projet de Page de démarrage  
  Lorsque vous créez une Page de démarrage en utilisant le modèle de projet Page de démarrage, puis générez le projet, Visual Studio crée un fichier .vsix que vous pouvez distribuer. Empaquetage d’une Page de démarrage dans un fichier .vsix vous offre les options suivantes pour le déploiement, en fonction de votre public ciblé :  
   
--   Vous pouvez placer le fichier .vsix sur un partage réseau ou sur un site Web public. Quand un utilisateur ouvre le fichier, la Page de démarrage est automatiquement installée.  
+- Vous pouvez placer le fichier .vsix sur un partage réseau ou sur un site Web public. Quand un utilisateur ouvre le fichier, la Page de démarrage est automatiquement installée.  
   
--   Vous pouvez télécharger le fichier .vsix sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) afin que les utilisateurs peuvent l’installer à l’aide de site Web **Gestionnaire d’extensions**.  
+- Vous pouvez télécharger le fichier .vsix sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) afin que les utilisateurs peuvent l’installer à l’aide de site Web **Gestionnaire d’extensions**.  
   
- Le modèle de projet Page de démarrage crée une copie de la Page de démarrage de Visual Studio par défaut afin que vous puissiez modifier la copie et conserver l’original.  
+  Le modèle de projet Page de démarrage crée une copie de la Page de démarrage de Visual Studio par défaut afin que vous puissiez modifier la copie et conserver l’original.  
   
- Vous pouvez obtenir le modèle de projet Page de démarrage à l’aide de **Gestionnaire d’extensions** ou en le téléchargeant à partir du site Web.  
+  Vous pouvez obtenir le modèle de projet Page de démarrage à l’aide de **Gestionnaire d’extensions** ou en le téléchargeant à partir du site Web.  
   
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>Déploiement VSIX sans utiliser le modèle de projet de Page de démarrage  
  Réussite du déploiement VSIX requiert une extension pour être installés dans des dossiers qui sont reconnus par le processus d’inscription VSIX et par **Gestionnaire d’extensions**. Étant donné que le modèle de projet Page de démarrage spécifie déjà les dossiers appropriés, nous recommandons d’utiliser chaque fois que vous souhaitez un package d’extension pour le déploiement VSIX. Toutefois, si vous avez un cas dans lequel vous ne pouvez pas utiliser le modèle, vous pouvez créer un déploiement VSIX sans l’utiliser.  
   
  Pour créer un déploiement VSIX sans utiliser le modèle de projet Page de démarrage, commencez par créer un fichier .vsix pour la Page de démarrage dans une des deux façons suivantes :  
   
--   En ajoutant vos fichiers de Page de démarrage personnalisées à un projet VSIX vide. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).  
+- En ajoutant vos fichiers de Page de démarrage personnalisées à un projet VSIX vide. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).  
   
--   En créant manuellement un fichier .vsix. Pour plus d’informations, consultez [Comment : manuellement un Package d’Extension (déploiement VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- En créant manuellement un fichier .vsix. Pour plus d’informations, consultez [Comment : manuellement un Package d’Extension (déploiement VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
- Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.  
+  Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.  
   
- Si votre package de la Page de démarrage inclut des assemblys, vous devez ajouter l’inscription de chemin d’accès de liaison afin qu’ils soient disponibles au démarrage de Visual Studio. Pour ce faire, assurez-vous que votre package inclut un fichier .pkgdef qui comporte les informations suivantes.  
+  Si votre package de la Page de démarrage inclut des assemblys, vous devez ajouter l’inscription de chemin d’accès de liaison afin qu’ils soient disponibles au démarrage de Visual Studio. Pour ce faire, assurez-vous que votre package inclut un fichier .pkgdef qui comporte les informations suivantes.  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  

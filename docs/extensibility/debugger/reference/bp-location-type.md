@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Documents Microsoft
+title: BP_LOCATION_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db35e354b2cfbe91b9c6041dc6239d2dfd2531f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087f6c3ce0cbde32bd06a614e562c3d36fc86888
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927357"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Spécifie le type d’emplacement du point d’arrêt pour une demande de point d’arrêt.  
@@ -73,55 +73,55 @@ public enum enum_BP_LOCATION_TYPE {
  Ne spécifie aucun emplacement de point d’arrêt.  
   
  BPLT_FILE_LINE  
- Spécifie le type d’emplacement du point d’arrêt sous forme de fichier.  
+ Spécifie le type d’emplacement du point d’arrêt comme une ligne du fichier.  
   
  BPLT_FUNC_OFFSET  
- Spécifie le type d’emplacement du point d’arrêt en tant qu’un décalage de fonction.  
+ Spécifie le type d’emplacement du point d’arrêt comme un décalage de fonction.  
   
  BPLT_CONTEXT  
- Spécifie le type d’emplacement du point d’arrêt en tant qu’un contexte.  
+ Spécifie le type d’emplacement du point d’arrêt comme un contexte.  
   
  BPLT_STRING  
- Spécifie le type d’emplacement du point d’arrêt en tant que chaîne.  
+ Spécifie le type d’emplacement du point d’arrêt sous forme de chaîne.  
   
  BPLT_ADDRESS  
  Spécifie le type d’emplacement du point d’arrêt en tant qu’adresse.  
   
  BPLT_RESOLUTION  
- Spécifie le type d’emplacement du point d’arrêt en guise de solution.  
+ Spécifie le type d’emplacement du point d’arrêt comme une résolution.  
   
  BPLT_CODE_FILE_LINE  
  Spécifie le type d’emplacement du point d’arrêt comme une ligne de code source.  
   
  BPLT_CODE_FUNC_OFFSET  
- Spécifie le type d’emplacement du point d’arrêt en tant qu’un décalage de fonction de code.  
+ Spécifie le type d’emplacement du point d’arrêt comme un décalage de fonction de code.  
   
  BPLT_CODE_CONTEXT  
- Spécifie le type d’emplacement du point d’arrêt en tant qu’un contexte de code.  
+ Spécifie le type d’emplacement du point d’arrêt comme un contexte de code.  
   
  BPLT_CODE_STRING  
  Spécifie le type d’emplacement du point d’arrêt comme une chaîne de code.  
   
  BPLT_CODE_ADDRESS  
- Spécifie le type d’emplacement du point d’arrêt en tant qu’une adresse de code.  
+ Spécifie le type d’emplacement du point d’arrêt comme une adresse de code.  
   
  BPLT_DATA_STRING  
- Spécifie le type d’emplacement du point d’arrêt dans une chaîne de données.  
+ Spécifie le type d’emplacement du point d’arrêt comme une chaîne de données.  
   
  BPLT_TYPE_MASK  
- Spécifie un masque de bits, de telle sorte que le type de point d’arrêt peut être extraite en dehors de la valeur.  
+ Spécifie un masque de bits, afin que le type de point d’arrêt peut être extraites en dehors de la valeur.  
   
  BPLT_LOCATION_TYPE_MASK  
- Spécifie un masque de bits, de telle sorte que le type d’emplacement de point d’arrêt peut être extraite en dehors de la valeur.  
+ Spécifie un masque de bits, afin que le type d’emplacement de point d’arrêt permettre être extraites de la valeur.  
   
 ## <a name="remarks"></a>Notes  
  Passé en tant que paramètre à la [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) (méthode).  
   
- Un type d’emplacement de point d’arrêt se compose d’un type de point d’arrêt et un type d’emplacement. Cela signifie qu’un type d’emplacement de point d’arrêt n’est jamais simplement un type de point d’arrêt (par exemple, `BPT_CODE`) ou un type d’emplacement (par exemple, `BPLT_FILE_LINE`). Constantes prédéfinies pour tous les types d’emplacement de point d’arrêt actuellement pris en charge sont inclus dans cette énumération (`BPLT_CODE_FILE_LINE` via `BPLT_DATA_STRING`).  
+ Un type d’emplacement de point d’arrêt se compose d’un type de point d’arrêt et un type d’emplacement. Cela signifie qu’un type d’emplacement de point d’arrêt n’est jamais simplement un type de point d’arrêt (par exemple, `BPT_CODE`) ou un type d’emplacement (par exemple, `BPLT_FILE_LINE`). Les constantes prédéfinies pour tous les types d’emplacement de point d’arrêt actuellement pris en charge sont incluses dans cette énumération (`BPLT_CODE_FILE_LINE` via `BPLT_DATA_STRING`).  
   
  `BPT_CODE` et `BPT_DATA` sont membres de la [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) énumération.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

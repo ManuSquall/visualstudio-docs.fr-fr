@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844407"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : Créer un projet de définition de site de base
   Cette procédure pas à pas vous montre comment créer une définition de site de base qui contient un composant visual Web part avec certains contrôles dessus. Par souci de clarté, le composant visual Web part que vous créez a uniquement quelques contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent des fonctionnalités plus.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d’une définition de site à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modèle de projet.  
+- Création d’une définition de site à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modèle de projet.  
   
--   Création d’un site SharePoint à l’aide d’une définition de site dans SharePoint.  
+- Création d’un site SharePoint à l’aide d’une définition de site dans SharePoint.  
   
--   Ajout d’un composant visual Web part à la solution.  
+- Ajout d’un composant visual Web part à la solution.  
   
--   Personnalisation de la page du site default.aspx en y ajoutant le nouveau composant visual Web part.  
+- Personnalisation de la page du site default.aspx en y ajoutant le nouveau composant visual Web part.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -52,29 +52,29 @@ ms.locfileid: "37119190"
   
 #### <a name="to-create-a-site-definition-project"></a>Pour créer un projet de définition de site  
   
-1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**. Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, dans la barre de menus, choisissez **fichier** > **nouveau projet**.  
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**. Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, dans la barre de menus, choisissez **fichier** > **nouveau projet**.  
   
-     La boîte de dialogue **Nouveau projet** s’affiche.  
+    La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Développez le **Visual C#** nœud ou le **Visual Basic** nœud, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
+2. Développez le **Visual C#** nœud ou le **Visual Basic** nœud, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
   
-3.  Dans le **modèles** , choisissez le **projet SharePoint 2010** modèle.  
+3. Dans le **modèles** , choisissez le **projet SharePoint 2010** modèle.  
   
-4.  Dans le **nom** , entrez **TestSiteDef**, puis choisissez le **OK** bouton.  
+4. Dans le **nom** , entrez **TestSiteDef**, puis choisissez le **OK** bouton.  
   
-     Le **Assistant Personnalisation de SharePoint** s’affiche.  
+    Le **Assistant Personnalisation de SharePoint** s’affiche.  
   
-5.  Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez l’URL pour le site SharePoint où vous souhaitez déboguer la définition de site ou utilisez l’emplacement par défaut (http://*nom système*/).  
+5. Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez l’URL pour le site SharePoint où vous souhaitez déboguer la définition de site ou utilisez l’emplacement par défaut (http://<em>nom système</em>/).  
   
-6.  Dans le **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez le **déployer en tant que solution de batterie** case d’option.  
+6. Dans le **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez le **déployer en tant que solution de batterie** case d’option.  
   
-     Tous les projets de définition de site doivent être déployés en tant que solutions de batterie de serveurs. Pour plus d’informations sur les solutions bac à sable par rapport aux solutions de batterie de serveurs, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
+    Tous les projets de définition de site doivent être déployés en tant que solutions de batterie de serveurs. Pour plus d’informations sur les solutions bac à sable par rapport aux solutions de batterie de serveurs, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Choisissez le **Terminer** bouton.  
+7. Choisissez le **Terminer** bouton.  
   
-     Le projet s’affiche dans **l’Explorateur de solutions**.  
+    Le projet s’affiche dans **l’Explorateur de solutions**.  
   
-8.  Dans **l’Explorateur de solutions**, choisissez le nœud du projet, puis, dans la barre de menus, choisissez **projet** > **ajouter un nouvel élément**.  
+8. Dans **l’Explorateur de solutions**, choisissez le nœud du projet, puis, dans la barre de menus, choisissez **projet** > **ajouter un nouvel élément**.  
   
 9. Sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
   

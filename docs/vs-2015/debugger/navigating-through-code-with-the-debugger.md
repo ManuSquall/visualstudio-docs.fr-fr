@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898146"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Naviguer dans le code avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
   
  Voici quelques détails sur le comportement de **pas à pas détaillé**:  
   
--   Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va jusqu'à la fonction se trouvant au niveau le plus profond. Si vous utilisez **Pas à pas détaillé** dans un appel tel que `Func1(Func2())`, le débogueur parcourt la fonction `Func2`.  
+- Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va jusqu'à la fonction se trouvant au niveau le plus profond. Si vous utilisez **Pas à pas détaillé** dans un appel tel que `Func1(Func2())`, le débogueur parcourt la fonction `Func2`.  
   
--   En fait, le débogueur parcourt les instructions de code plutôt que les lignes physiques. Par exemple, une clause `if` peut être écrite sur une ligne :  
+- En fait, le débogueur parcourt les instructions de code plutôt que les lignes physiques. Par exemple, une clause `if` peut être écrite sur une ligne :  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Lorsque vous parcourez cette ligne, le débogueur traite la condition comme une étape et la conséquence comme une autre (dans cet exemple, la condition est remplie).  
+   Lorsque vous parcourez cette ligne, le débogueur traite la condition comme une étape et la conséquence comme une autre (dans cet exemple, la condition est remplie).  
   
- Pour suivre visuellement la pile des appels lors de l’entrer dans les fonctions, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Pour suivre visuellement la pile des appels lors de l’entrer dans les fonctions, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Parcourir le code, en ignorant les fonctions  
  Lors de l’exécution de code dans le débogueur, souvent vous réalisez que vous n’avez pas besoin de voir ce qui se passe dans une fonction particulière (vous ne vous souciez il ou si vous savez qu’il fonctionne, comme le code de bibliothèque bien testé). Utilisez ces commandes pour ignorer le code (les fonctions s’exécutent toujours, bien sûr, mais le débogueur ignore dessus).  
@@ -146,20 +146,20 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
   
 > [!CAUTION]
 >  Le fait de définir l'instruction suivante fait en sorte que le compteur du programme accède directement au nouvel emplacement. Utilisez cette commande avec précaution :  
->   
->  -   Les instructions entre les nouveaux et les anciens points d'exécution ne sont pas exécutées.  
-> -   Si vous déplacez le point d'exécution vers l'arrière, les instructions déjà traitées ne sont pas annulées.  
-> -   Le déplacement de l'instruction suivante vers une autre fonction ou portée entraîne généralement une altération de la pile des appels, provoquant une erreur ou exception d'exécution. Si vous tentez de déplacer l'instruction suivante vers une autre portée, le débogueur ouvre une boîte de dialogue avec un avertissement et vous donne une occasion d'annuler l'opération. En Visual Basic, vous ne pouvez pas déplacer l'instruction suivante à une autre portée ou fonction.  
-> -   En C++ natif, si les contrôles d'exécution sont activés, la définition de l'instruction suivante peut provoquer la levée d'une exception lorsque l'exécution atteint la fin de la méthode.  
-> -   Lorsque Modifier &amp; Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d'erreur s'affiche pour indiquer que l'opération n'est pas prise en charge.  
-  
+> 
+> - Les instructions entre les nouveaux et les anciens points d'exécution ne sont pas exécutées.  
+>   -   Si vous déplacez le point d'exécution vers l'arrière, les instructions déjà traitées ne sont pas annulées.  
+>   -   Le déplacement de l'instruction suivante vers une autre fonction ou portée entraîne généralement une altération de la pile des appels, provoquant une erreur ou exception d'exécution. Si vous tentez de déplacer l'instruction suivante vers une autre portée, le débogueur ouvre une boîte de dialogue avec un avertissement et vous donne une occasion d'annuler l'opération. En Visual Basic, vous ne pouvez pas déplacer l'instruction suivante à une autre portée ou fonction.  
+>   -   En C++ natif, si les contrôles d'exécution sont activés, la définition de l'instruction suivante peut provoquer la levée d'une exception lorsque l'exécution atteint la fin de la méthode.  
+>   -   Lorsque Modifier &amp; Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d'erreur s'affiche pour indiquer que l'opération n'est pas prise en charge.  
+> 
 > [!NOTE]
 >  Dans du code managé, vous ne pouvez pas déplacer l'instruction suivante dans les conditions suivantes :  
->   
->  -   L'instruction suivante se trouve dans une méthode différente de celle de l'instruction actuelle.  
-> -   Le débogage a été démarré à l'aide du débogage juste-à-temps.  
-> -   Le déroulement d'une pile des appels est en cours.  
-> -   Une exception System.StackOverflowException ou System.Threading.ThreadAbortException a été levée.  
+> 
+> - L'instruction suivante se trouve dans une méthode différente de celle de l'instruction actuelle.  
+>   -   Le débogage a été démarré à l'aide du débogage juste-à-temps.  
+>   -   Le déroulement d'une pile des appels est en cours.  
+>   -   Une exception System.StackOverflowException ou System.Threading.ThreadAbortException a été levée.  
   
  Il est impossible de définir l'instruction suivante lorsque l'application est active. Pour définir l'instruction suivante, le débogueur doit être en mode arrêt.  
   

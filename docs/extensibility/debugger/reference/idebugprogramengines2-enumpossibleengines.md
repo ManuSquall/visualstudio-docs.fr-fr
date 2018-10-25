@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Documents Microsoft
+title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30eb28398569aa3d14b4a7dd363abac785f352c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f5977e7dbac34e247838efe1e8d0036e60f0416
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887668"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-Retourne les GUID de tous les moteurs de débogage possible (DE) qui peuvent déboguer ce programme.  
+Retourne les GUID de tous les moteurs de débogage possible (dé) qui peuvent déboguer ce programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,19 +45,19 @@ int EnumPossibleEngines(
   
 #### <a name="parameters"></a>Paramètres  
  `celtBuffer`  
- [in] Le nombre de GUID DE à retourner. Il spécifie également la taille maximale de la `rgguidEngines` tableau.  
+ [in] Le nombre de GUID de dé à retourner. Il spécifie également la taille maximale de la `rgguidEngines` tableau.  
   
  `rgguidEngines`  
- [dans, out] Un tableau de GUID DE doit être renseigné.  
+ [in, out] Un tableau de GUID DE doit être renseigné.  
   
  `pceltEngines`  
  [out] Retourne le nombre réel de GUID DE qui sont retournées.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne (C++) `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [c#] 0x8007007A si la mémoire tampon n’est pas assez grande.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [c#] 0x8007007A si la mémoire tampon n’est pas assez grande.  
   
 ## <a name="remarks"></a>Notes  
- Afin de déterminer le nombre de moteurs est, appelez cette méthode une fois avec le `celtBuffer` paramètre la valeur 0 et le `rgguidEngines` paramètre défini sur une valeur null. Cela retourne `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A pour c#) et le `pceltEngines` paramètre retourne la taille nécessaire de la mémoire tampon.  
+ Afin de déterminer le nombre de moteurs est, appelez cette méthode une fois avec le `celtBuffer` paramètre défini sur 0 et le `rgguidEngines` paramètre défini sur une valeur null. Cette commande renvoie `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A pour c#) et le `pceltEngines` paramètre retourne la taille de la mémoire tampon nécessaire.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

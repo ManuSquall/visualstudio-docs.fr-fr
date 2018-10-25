@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812944"
 ---
 # <a name="defining-shapes-and-connectors"></a>Définition de formes et de connecteurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour
 ##  <a name="shapeTypes"></a> Types de base de formes et connecteurs  
  Un diagramme DSL affiche une collection de *formes* reliées par des lignes ou *connecteurs*.  En règle générale, sans que ce soit systématique :  
   
--   Les formes sont la représentation visible d'éléments de modèle.  
+- Les formes sont la représentation visible d'éléments de modèle.  
   
--   Les connecteurs représentent les relations de référence.  
+- Les connecteurs représentent les relations de référence.  
   
--   Le diagramme représente l'instance racine du modèle.  
+- Le diagramme représente l'instance racine du modèle.  
   
--   Les relations d'incorporation entre éléments de modèle sont affichées par contenance. Par exemple, les éléments représentant les ports d'un composant sont incorporés au composant.  
+- Les relations d'incorporation entre éléments de modèle sont affichées par contenance. Par exemple, les éléments représentant les ports d'un composant sont incorporés au composant.  
   
- Ces modèles ne sont pas appliqués, mais sont pris en charge plus fortement. Lors de la conception d'un DSL, gardez à l'esprit que la conception des relations d'incorporation doit être influencée par la façon dont vous voulez présenter le modèle sur l'écran. Par contraste, les relations de référence doivent refléter les concepts de votre domaine d'activité.  
+  Ces modèles ne sont pas appliqués, mais sont pris en charge plus fortement. Lors de la conception d'un DSL, gardez à l'esprit que la conception des relations d'incorporation doit être influencée par la façon dont vous voulez présenter le modèle sur l'écran. Par contraste, les relations de référence doivent refléter les concepts de votre domaine d'activité.  
   
- Les types de formes suivants sont disponibles :  
+  Les types de formes suivants sont disponibles :  
   
 |Type de forme|Description|  
 |----------------|-----------------|  

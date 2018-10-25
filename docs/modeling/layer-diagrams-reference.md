@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920924"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -59,7 +59,7 @@ Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme 
 Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances.
 
 |**Forme**|**Élément**|**Description**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**Couche**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour voir les artefacts qui sont liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens** pour ouvrir **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   **Il est interdit de dépendances de Namespace** -Spécifie que les artefacts associés à cette couche ne peut pas dépendre d’espaces de noms spécifiés.<br />-   **Il est interdit d’espaces de noms** -Spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **Required Namespaces** -Spécifie que les artefacts associés à cette couche doivent appartenir à un des espaces de noms spécifiés.|
 |2|**dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> -   **Direction** -spécifie la direction de la dépendance.|
 |3|**Dépendance bidirectionnelle**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, et vice versa.<br /><br /> -   **Direction** -spécifie la direction de la dépendance.|
@@ -92,7 +92,7 @@ Sur le diagramme de la dépendance, ouvrez le menu contextuel pour une ou plusie
 > Si vous ne voyez pas toutes ces propriétés, développez le **Explorateur de couches** fenêtre.
 
 |**Colonne dans l’Explorateur de couches**|**Description**|
-|----------------------------------|---------------------|
+|-|-|
 |**Catégories**|Genre d'artefact, tel qu'une classe, un espace de noms, un fichier source, etc.|
 |**Couche**|Couche liée à l'artefact.|
 |**Prend en charge la Validation**|Si **True**, puis le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si **False**, puis le lien ne participe pas le processus de validation de couche.<br /><br /> Pour plus d’informations, consultez [des diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md).|

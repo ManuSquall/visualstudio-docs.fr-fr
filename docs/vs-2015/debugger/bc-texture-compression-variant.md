@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837969"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
 ## <a name="remarks"></a>Notes  
  Vous compressez les textures en utilisant un format de compression de blocs à chaque appel à `ID3DDevice::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, les textures sont compressées quand :  
   
--   L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :  
+- L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :  
   
-    -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
+  -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
   
-    -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+  -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
-    -   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
+  -   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
   
-    -   Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
+  -   Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
   
--   Les données initiales sont fournies à l'appel à `CreateTexture2D`.  
+- Les données initiales sont fournies à l'appel à `CreateTexture2D`.  
   
- Voici les formats sources pris en charge et leurs formats de compression de blocs.  
+  Voici les formats sources pris en charge et leurs formats de compression de blocs.  
   
 |Format d'origine (source)|Format compressé (cible)|  
 |------------------------------|------------------------------|  

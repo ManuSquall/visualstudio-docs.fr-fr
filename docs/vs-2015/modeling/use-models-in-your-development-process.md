@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872278"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 ## <a name="how-to-use-models"></a>Utilisation des modèles  
  Les modèles peuvent vous aider de plusieurs façons :  
   
--   Dessiner des diagrammes de modélisation vous aide à clarifier les concepts liés aux spécifications, à l'architecture et à la conception de haut niveau. Pour plus d’informations, consultez [modéliser les besoins de l’utilisateur](../modeling/model-user-requirements.md).  
+- Dessiner des diagrammes de modélisation vous aide à clarifier les concepts liés aux spécifications, à l'architecture et à la conception de haut niveau. Pour plus d’informations, consultez [modéliser les besoins de l’utilisateur](../modeling/model-user-requirements.md).  
   
--   L'utilisation de modèles peut vous aider à exposer des incohérences dans les spécifications.  
+- L'utilisation de modèles peut vous aider à exposer des incohérences dans les spécifications.  
   
--   Communiquer avec des modèles vous permet de communiquer des concepts importants avec moins d'ambiguïté qu'avec un langage naturel. Pour plus d’informations, consultez [modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
+- Communiquer avec des modèles vous permet de communiquer des concepts importants avec moins d'ambiguïté qu'avec un langage naturel. Pour plus d’informations, consultez [modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
   
--   Vous pouvez parfois utiliser des modèles pour générer du code ou d'autres artefacts tels que des schémas de bases de données ou des documents. Par exemple, les composants de modélisation de [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] sont générés à partir d'un modèle.  Pour plus d’informations, consultez [générer et configurer votre application à partir de modèles](../modeling/generate-and-configure-your-app-from-models.md).  
+- Vous pouvez parfois utiliser des modèles pour générer du code ou d'autres artefacts tels que des schémas de bases de données ou des documents. Par exemple, les composants de modélisation de [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] sont générés à partir d'un modèle.  Pour plus d’informations, consultez [générer et configurer votre application à partir de modèles](../modeling/generate-and-configure-your-app-from-models.md).  
   
- Vous pouvez utiliser des modèles dans une large gamme de processus, de l'extrême agilité à la haute cérémonie.  
+  Vous pouvez utiliser des modèles dans une large gamme de processus, de l'extrême agilité à la haute cérémonie.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>Utiliser des modèles pour réduire l'ambiguïté  
  Le langage de modélisation est moins ambigu que le langage naturel et il est conçu pour exprimer les idées généralement requises lors du développement de logiciels.  

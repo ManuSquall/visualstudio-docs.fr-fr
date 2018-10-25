@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::Attach | Documents Microsoft
+title: IDebugEngine2::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4de13e9763cfed74c2b7dbbbb58ac80610501ace
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926083"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-Attache un moteur de débogage (DE) à un programme ou des programmes. Appelée par le Gestionnaire de session de débogage (SDM) lors de la D’est en cours d’exécution in-process pour le SDM.  
+Attache un moteur de débogage (dé) à un programme ou des programmes. Appelé par le Gestionnaire de session de débogage (SDM) lors de l’Allemagne est en cours d’exécution in-process pour le SDM.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,16 +52,16 @@ int Attach(
  [in] Un tableau de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objets qui représentent des programmes à joindre à. Il s’agit de programmes de port.  
   
  `rgpProgramNodes`  
- [in] Un tableau de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) les objets qui représentent des nœuds de programme, une pour chaque programme. Les nœuds de programme dans ce tableau représentent les mêmes programmes comme dans `pProgram`. Les nœuds de programme sont fournis pour que le DE peut identifier les programmes à attacher à.  
+ [in] Un tableau de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objets qui représentent des nœuds de programme, un pour chaque programme. Les nœuds de programme dans ce tableau représentent les mêmes programmes comme dans `pProgram`. Les nœuds de programme se voient attribuer afin que l’Allemagne peut identifier les programmes à attacher à.  
   
  `celtPrograms`  
  [in] Nombre de programmes et/ou des nœuds de programme dans le `pProgram` et `rgpProgramNodes` tableaux.  
   
  `pCallback`  
- [in] Le [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à être utilisé pour envoyer des événements de débogage pour le SDM.  
+ [in] Le [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à utiliser pour envoyer des événements de débogage vers le SDM.  
   
  `dwReason`  
- [in] Une valeur à partir de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Remarques.  
+ [in] Une valeur comprise entre le [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Remarques.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
@@ -69,25 +69,25 @@ int Attach(
 ## <a name="remarks"></a>Notes  
  Il existe trois raisons pour l’attachement à un programme, comme suit :  
   
--   `ATTACH_REASON_LAUNCH` Indique que le D’attachement au programme, car l’utilisateur a lancé le processus qui le contient.  
+- `ATTACH_REASON_LAUNCH` Indique que l’Allemagne est attacher au programme, car l’utilisateur a lancé le processus qui le contient.  
   
--   `ATTACH_REASON_USER` Indique que l’utilisateur a demandé explicitement le DE joindre à un programme (ou le processus qui contient un programme).  
+- `ATTACH_REASON_USER` Indique que l’utilisateur a demandé explicitement le DE joindre à un programme (ou le processus qui contient un programme).  
   
--   `ATTACH_REASON_AUTO` Indique le D’attachement à un programme particulier, car il est déjà déboguer des programmes dans un processus particulier. Également appelé attachement automatique.  
+- `ATTACH_REASON_AUTO` Indique le DE concerne l’attachement à un programme particulier, car il est déjà débogage autres programmes dans un processus particulier. On parle également l’attachement automatique.  
   
- Lorsque cette méthode est appelée, le DE doit envoyer ces événements dans l’ordre :  
+  Lorsque cette méthode est appelée, l’Allemagne a besoin envoyer ces événements de séquence :  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (si elle n'a pas encore été envoyée pour une instance particulière du moteur de débogage)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (si elle n'a pas déjà été envoyée pour une instance particulière du moteur de débogage)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- En outre, si le motif de l’attachement est `ATTACH_REASON_LAUNCH`, le DE doit envoyer le [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) événement.  
+   En outre, si la raison de l’attachement est `ATTACH_REASON_LAUNCH`, l’Allemagne doit envoyer le [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) événement.  
   
- Une fois l’obtient DE la [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) de l’objet correspondant au programme en cours de débogage, il peut être interrogé pour une interface privée.  
+   Une fois l’obtient DE la [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) de l’objet correspondant au programme en cours de débogage, il peut être interrogé pour n’importe quelle interface privée.  
   
- Avant d’appeler les méthodes d’un nœud de programme dans le tableau donné par `pProgram` ou `rgpProgramNodes`, l’emprunt d’identité, si nécessaire, doit être activée sur le `IDebugProgram2` interface qui représente le nœud de programme. Normalement, toutefois, cette étape n’est pas nécessaire. Pour plus d’informations, consultez [problèmes de sécurité](../../../extensibility/debugger/security-issues.md).  
+   Avant d’appeler les méthodes d’un nœud de programme dans le tableau donné par `pProgram` ou `rgpProgramNodes`, l’emprunt d’identité, le cas échéant, doit être activée sur le `IDebugProgram2` interface qui représente le nœud de programme. Normalement, toutefois, cette étape n’est pas nécessaire. Pour plus d’informations, consultez [des problèmes de sécurité](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

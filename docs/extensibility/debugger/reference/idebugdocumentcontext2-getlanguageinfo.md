@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetLanguageInfo | Documents Microsoft
+title: IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86a31893a62391c0da1041402e3806c7a1e997e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d8b9c31f5d681c80c1fe961fac039f8f9a6b5b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920636"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
-Obtient le langage associé à ce contexte de document.  
+Obtient la langue associée à ce contexte de document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,16 +43,16 @@ int GetLanguageInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrLanguage`  
- [out] Retourne le nom de la langue qui implémente le code dans le contexte de ce document.  
+ [out] Retourne le nom de la langue qui implémente le code à ce contexte de document.  
   
  `pguidLanguage`  
- [out] Retourne le GUID de la langue qui implémente le code dans le contexte de ce document. Par exemple, `guidVBScriptLang` ou `guidCPPLang`. Ce GUID n’est pas limité aux langues fournies par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ [out] Retourne le GUID du langage qui implémente le code à ce contexte de document. Par exemple, `guidVBScriptLang` ou `guidCPPLang`. Ce GUID n’est pas limité aux langues fournis par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugContext` objet qui expose la [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugContext` objet qui expose le [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
   
 ```cpp  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    

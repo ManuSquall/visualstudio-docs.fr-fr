@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846198"
 ---
 # <a name="secure-office-solutions"></a>Sécurisez les solutions Office
   Le modèle de sécurité pour les solutions Office implique plusieurs technologies : le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], le centre de confidentialité de Microsoft Office et la zone de sites sensibles d’Internet Explorer. Les sections suivantes décrivent le fonctionnement de ces différentes fonctionnalités de sécurité :  
   
--   [Accorder votre confiance à des solutions Office](#GrantingTrustToSolutions)  
+- [Accorder votre confiance à des solutions Office](#GrantingTrustToSolutions)  
   
--   [Accorder votre confiance à des documents](#GrantingTrustToDocuments)  
+- [Accorder votre confiance à des documents](#GrantingTrustToDocuments)  
   
--   [Accorder une confiance lorsque vous utilisez le programme d’installation de Windows](#GrantingTrustWindowsInstaller)  
+- [Accorder une confiance lorsque vous utilisez le programme d’installation de Windows](#GrantingTrustWindowsInstaller)  
   
--   [Considérations de sécurité spécifiques pour les solutions Office](#Security)  
+- [Considérations de sécurité spécifiques pour les solutions Office](#Security)  
   
--   [Sécurité pendant le développement](#SecurityDuringDeployment)  
+- [Sécurité pendant le développement](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools pour Office runtime](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools pour Office runtime](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Accorder votre confiance à des solutions Office  
  L'octroi de niveaux de confiance à des solutions Office implique de modifier la stratégie de sécurité de chaque utilisateur final pour approuver la solution Office sur la base des éléments suivants :  
   
--   le certificat utilisé pour signer le manifeste de déploiement,  
+- le certificat utilisé pour signer le manifeste de déploiement,  
   
--   l'URL du manifeste de déploiement.  
+- l'URL du manifeste de déploiement.  
   
- Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md).  
+  Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Accorder votre confiance à des documents  
  Pour une personnalisation au niveau du document, le document doit se trouver dans un répertoire désigné comme un emplacement approuvé. Pour plus d’informations, consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074063"
 ### <a name="document-level-solutions"></a>Solutions au niveau du document  
  Le chemin d’accès complet d’un document doit être ajouté à la liste des emplacements approuvés dans l’application Microsoft Office si vous développez les types de projets suivants :  
   
--   Les solutions qui se trouvent sur un partage de fichiers réseau comme au niveau du document  *\\\servername\sharename*.  
+- Les solutions qui se trouvent sur un partage de fichiers réseau comme au niveau du document  *\\\servername\sharename*.  
   
--   Au niveau du document solutions pour Word qui utilisent *.doc* ou *.docm* fichiers.  
+- Au niveau du document solutions pour Word qui utilisent *.doc* ou *.docm* fichiers.  
   
- Incluez les sous-répertoires quand vous ajoutez l’emplacement du document à la liste des emplacements approuvés, ou incluez spécifiquement les dossiers de débogage et de génération. Pour plus d’informations, consultez l’article d’aide en ligne de Microsoft Office [créer, supprimer ou modifier un emplacement approuvé pour vos fichiers](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Incluez les sous-répertoires quand vous ajoutez l’emplacement du document à la liste des emplacements approuvés, ou incluez spécifiquement les dossiers de débogage et de génération. Pour plus d’informations, consultez l’article d’aide en ligne de Microsoft Office [créer, supprimer ou modifier un emplacement approuvé pour vos fichiers](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Certificats temporaires  
  Visual Studio crée un certificat temporaire si un certificat de signature n'existe pas encore. Vous devez utiliser ce certificat temporaire uniquement pendant le développement et acheter un certificat officiel pour le déploiement.  

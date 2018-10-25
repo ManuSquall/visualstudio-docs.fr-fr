@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879296"
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Paramètres remplaçables, ou *jetons*, peut être utilisé à l’intérieur des fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont similaires à celui de la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [paramètres de modèle](/visualstudio/ide/template-parameters).  
@@ -34,17 +34,17 @@ ms.locfileid: "37119235"
 ## <a name="token-rules"></a>Règles de jeton
  Les règles suivantes s’appliquent aux jetons :  
   
--   Les jetons peuvent être spécifiées n’importe où dans une ligne.  
+- Les jetons peuvent être spécifiées n’importe où dans une ligne.  
   
--   Les jetons ne peuvent pas couvrir plusieurs lignes.  
+- Les jetons ne peuvent pas couvrir plusieurs lignes.  
   
--   Le même jeton peut être spécifié plusieurs fois sur la même ligne et dans le même fichier.  
+- Le même jeton peut être spécifié plusieurs fois sur la même ligne et dans le même fichier.  
   
--   Jetons différents peuvent être spécifiés sur la même ligne.  
+- Jetons différents peuvent être spécifiés sur la même ligne.  
   
- Les jetons qui ne suivent pas ces règles sont ignorées et n’entraînent pas un avertissement ou une erreur.  
+  Les jetons qui ne suivent pas ces règles sont ignorées et n’entraînent pas un avertissement ou une erreur.  
   
- Le remplacement des jetons par des valeurs de chaîne est effectué immédiatement après la transformation du manifeste. Ce remplacement permet à l’utilisateur de modifier les modèles de manifeste avec des jetons.  
+  Le remplacement des jetons par des valeurs de chaîne est effectué immédiatement après la transformation du manifeste. Ce remplacement permet à l’utilisateur de modifier les modèles de manifeste avec des jetons.  
   
 ### <a name="token-name-resolution"></a>Résolution de noms de jeton
  Dans la plupart des cas, un jeton est résolu en une valeur spécifique, quel que soit l’endroit où elle est contenue. Toutefois, si le jeton est lié à un package ou une fonctionnalité, sa valeur dépend dans lequel il est contenu. Par exemple, si une fonctionnalité est dans un Package un, le jeton `$SharePoint.Package.Name$` correspond à la valeur « Package A. » Si la même fonctionnalité figure dans le Package B, `$SharePoint.Package.Name$` correspond à « Package b ».  
@@ -75,19 +75,19 @@ ms.locfileid: "37119235"
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Ajouter des extensions à la liste d’extensions de fichier remplacement des jetons
  Bien que les jetons peuvent théoriquement être utilisés par n’importe quel fichier qui appartient à un projet SharePoint élément inclus dans le package, par défaut, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recherche les jetons uniquement dans les fichiers de package, les fichiers manifestes et les fichiers ayant les extensions suivantes :  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+- ASCX  
   
--   ASPX  
+- ASPX  
   
--   Composant WebPart  
+- Composant WebPart  
   
--   DWP  
+- DWP  
   
- Ces extensions sont définies par le `<TokenReplacementFileExtensions>` élément dans le fichier Microsoft.VisualStudio.SharePoint.targets, situé dans le... \\< fichiers programme\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools dossier.  
+  Ces extensions sont définies par le `<TokenReplacementFileExtensions>` élément dans le fichier Microsoft.VisualStudio.SharePoint.targets, situé dans le... \\< fichiers programme\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools dossier.  
   
- Vous pouvez, toutefois, ajouter des extensions de fichiers supplémentaires à la liste. Ajouter un `<TokenReplacementFileExtensions>` élément à n’importe quel élément PropertyGroup dans le fichier de projet SharePoint qui est défini avant le \<importation > du fichier de cibles SharePoint.  
+  Vous pouvez, toutefois, ajouter des extensions de fichiers supplémentaires à la liste. Ajouter un `<TokenReplacementFileExtensions>` élément à n’importe quel élément PropertyGroup dans le fichier de projet SharePoint qui est défini avant le \<importation > du fichier de cibles SharePoint.  
   
 > [!NOTE]  
 >  Étant donné que le remplacement des jetons se produit après la compilation d’un projet, n’ajoutez pas les extensions de fichier pour les types de fichiers qui sont compilés, tels que *.cs*, *.vb* ou *.resx*. Les jetons sont remplacés uniquement dans les fichiers qui ne sont pas compilées.  

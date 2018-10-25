@@ -10,12 +10,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3fb7c8ba5ad0a4992368b2dba9da2d2b09c7980
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884277"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,29 +24,29 @@ Un nombre croissant de périphériques fournies dans les écrans « haute réso
   
  Windows 8.1 et versions ultérieures contient plusieurs fonctionnalités pour activer ces ordinateurs travailler avec les environnements où l’ordinateur est attaché à la fois à haute densité et densité standard affiche en même temps et les affiche.  
   
--   Windows peut vous permettre au contenu de mise à l’échelle à l’appareil à l’aide de la « faire texte et autres éléments supérieure ou inférieure » paramètre (disponible depuis Windows XP).  
+- Windows peut vous permettre au contenu de mise à l’échelle à l’appareil à l’aide de la « faire texte et autres éléments supérieure ou inférieure » paramètre (disponible depuis Windows XP).  
   
--   Windows 8.1 et versions ultérieures est automatiquement adapter le contenu pour la plupart des applications être cohérent lorsque déplacées entre affiche de différentes densités de pixel. Lorsque l’écran principal est à haute densité (200 % mise à l’échelle) et l’affichage secondaire est densité standard (100 %), Windows sera automatiquement mise à l’échelle le contenu de la fenêtre application vers le bas sur l’affichage secondaire (1 pixel affichée pour chaque 4 pixels rendus par le application).  
+- Windows 8.1 et versions ultérieures est automatiquement adapter le contenu pour la plupart des applications être cohérent lorsque déplacées entre affiche de différentes densités de pixel. Lorsque l’écran principal est à haute densité (200 % mise à l’échelle) et l’affichage secondaire est densité standard (100 %), Windows sera automatiquement mise à l’échelle le contenu de la fenêtre application vers le bas sur l’affichage secondaire (1 pixel affichée pour chaque 4 pixels rendus par le application).  
   
--   Windows ne pourra pas le droit de mise à l’échelle pour la densité en pixels et à distance pour l’affichage (Windows 7 et versions ultérieures, configurables par l’OEM) d’affichage.  
+- Windows ne pourra pas le droit de mise à l’échelle pour la densité en pixels et à distance pour l’affichage (Windows 7 et versions ultérieures, configurables par l’OEM) d’affichage.  
   
--   Windows peut adapter automatiquement le contenu de 250 % sur de nouveaux périphériques qui dépassent les 280 PPP (à compter de Windows 8.1 s.14).  
+- Windows peut adapter automatiquement le contenu de 250 % sur de nouveaux périphériques qui dépassent les 280 PPP (à compter de Windows 8.1 s.14).  
   
- Windows a un moyen de traiter avec montée en charge l’interface utilisateur pour tirer parti des nombres de pixel accrue. Une application adhère à ce système en déclarant elle-même « système reconnaissant les résolutions. » Les applications qui ne le faites pas sont mis à l’échelle par le système. Cela peut entraîner une expérience utilisateur « approximative » où l’application entière est uniformément étiré par pixel. Exemple :  
+  Windows a un moyen de traiter avec montée en charge l’interface utilisateur pour tirer parti des nombres de pixel accrue. Une application adhère à ce système en déclarant elle-même « système reconnaissant les résolutions. » Les applications qui ne le faites pas sont mis à l’échelle par le système. Cela peut entraîner une expérience utilisateur « approximative » où l’application entière est uniformément étiré par pixel. Exemple :  
   
- ![PPP émet floue](../extensibility/media/dpi-issues-fuzzy.png "PPP émet floue")  
+  ![PPP émet floue](../extensibility/media/dpi-issues-fuzzy.png "PPP émet floue")  
   
- Visual Studio adhère à en cours de mise à l’échelle-reconnaissant les résolutions et par conséquent n’est pas « virtualisé. »  
+  Visual Studio adhère à en cours de mise à l’échelle-reconnaissant les résolutions et par conséquent n’est pas « virtualisé. »  
   
- Tirer parti de plusieurs technologies d’interface utilisateur, qui présentent les différentes manières de traiter les facteurs définies par le système de mise à l’échelle Windows (et Visual Studio). Exemple :  
+  Tirer parti de plusieurs technologies d’interface utilisateur, qui présentent les différentes manières de traiter les facteurs définies par le système de mise à l’échelle Windows (et Visual Studio). Exemple :  
   
--   WPF mesure les contrôles d’une manière indépendante du périphérique (unités, et non en pixels). WPF UI s’ajuste automatiquement pour la résolution actuelle.  
+- WPF mesure les contrôles d’une manière indépendante du périphérique (unités, et non en pixels). WPF UI s’ajuste automatiquement pour la résolution actuelle.  
   
--   Toutes les tailles de texte, quel que soit l’infrastructure d’interface utilisateur sont exprimées en points et par conséquent, sont traitées par le système en tant qu’indépendant des PPP. Texte dans Win32, WinForms et WPF déjà montée correctement lorsqu’elle est dessinée sur le périphérique d’affichage.  
+- Toutes les tailles de texte, quel que soit l’infrastructure d’interface utilisateur sont exprimées en points et par conséquent, sont traitées par le système en tant qu’indépendant des PPP. Texte dans Win32, WinForms et WPF déjà montée correctement lorsqu’elle est dessinée sur le périphérique d’affichage.  
   
--   Fenêtres et boîtes de dialogue Win32/WinForms disposent de moyens permettant la disposition est redimensionné avec texte – par exemple, via la grille, les flux et les panneaux de disposition de table. Ces outils permettent en évitant les emplacements de pixel codées en dur qui ne sont pas à l’échelle lorsque les tailles de police sont augmentées.  
+- Fenêtres et boîtes de dialogue Win32/WinForms disposent de moyens permettant la disposition est redimensionné avec texte – par exemple, via la grille, les flux et les panneaux de disposition de table. Ces outils permettent en évitant les emplacements de pixel codées en dur qui ne sont pas à l’échelle lorsque les tailles de police sont augmentées.  
   
--   Icônes fournies par le système ou des ressources en fonction des métriques du système (par exemple, SM_CXICON et SM_CXSMICON) sont déjà mis à l’échelle.  
+- Icônes fournies par le système ou des ressources en fonction des métriques du système (par exemple, SM_CXICON et SM_CXSMICON) sont déjà mis à l’échelle.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Win32 plus anciens (GDI, GDI +) et l’interface utilisateur basée sur WinForms  
  Bien que WPF est déjà en reconnaissant les résolutions élevées, une grande partie de notre code basé sur Win32/GDI initialement écrite avec prise en charge DPI à l’esprit. Windows a fourni les API de mise à l’échelle PPP. Résout les problèmes de Win32 doit les utiliser régulièrement sur le produit. Visual Studio a fourni une assistance de bibliothèque de classes afin d’éviter les dupliquent des fonctionnalités et de garantir la cohérence générale du produit.  
@@ -88,21 +88,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Problèmes de mise en page  
  Problèmes courants de mise en page peuvent être évités principalement en conservant des points dans l’interface utilisateur à l’échelle et par rapport à l’autre plutôt qu’en utilisant les emplacements absolus (plus précisément, exprimées en pixels). Exemple :  
   
--   Les positions de disposition/texte amené à ajuster au compte pour la mise à l’échelle des images.  
+- Les positions de disposition/texte amené à ajuster au compte pour la mise à l’échelle des images.  
   
--   Colonnes dans les grilles doivent avoir des largeurs ajustées pour le texte mis à l’échelle.  
+- Colonnes dans les grilles doivent avoir des largeurs ajustées pour le texte mis à l’échelle.  
   
--   Tailles codées en dur ou espace entre les éléments devez également être mis à l’échelle. Les tailles sont basés uniquement sur les dimensions de texte sont en général bien, étant donné que les polices sont automatiquement mis à l’échelle.  
+- Tailles codées en dur ou espace entre les éléments devez également être mis à l’échelle. Les tailles sont basés uniquement sur les dimensions de texte sont en général bien, étant donné que les polices sont automatiquement mis à l’échelle.  
   
- Fonctions d’assistance sont disponibles dans le <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe permettant d’autoriser la mise à l’échelle sur l’axe des X et Y :  
+  Fonctions d’assistance sont disponibles dans le <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe permettant d’autoriser la mise à l’échelle sur l’axe des X et Y :  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (fonctions permettent la mise à l’échelle sur X / axe des Y)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (fonctions permettent la mise à l’échelle sur X / axe des Y)  
   
--   int espace = DpiHelper.LogicalToDeviceUnitsX (10) ;  
+- int espace = DpiHelper.LogicalToDeviceUnitsX (10) ;  
   
--   int hauteur = VsUI::DpiHelper::LogicalToDeviceUnitsY(5) ;  
+- int hauteur = VsUI::DpiHelper::LogicalToDeviceUnitsY(5) ;  
   
- Il existe des surcharges de LogicalToDeviceUnits pour permettre la mise à l’échelle des objets tels que Rect, Point et Size.  
+  Il existe des surcharges de LogicalToDeviceUnits pour permettre la mise à l’échelle des objets tels que Rect, Point et Size.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>À l’aide de la bibliothèque/classe DPIHelper à l’échelle des images et la disposition  
  La bibliothèque d’assistance de Visual Studio PPP est disponible dans les formulaires natifs et managés et peut être utilisée par d’autres applications en dehors de l’interpréteur de commandes de Visual Studio.  
@@ -147,15 +147,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Recommandations :  
   
--   Pour le logo image et les bannières illustration, la valeur par défaut <xref:System.Windows.Media.BitmapScalingMode> mode de redimensionnement peut être utilisé.  
+- Pour le logo image et les bannières illustration, la valeur par défaut <xref:System.Windows.Media.BitmapScalingMode> mode de redimensionnement peut être utilisé.  
   
--   Pour les éléments de menu et les images de l’iconographie, la <xref:System.Windows.Media.BitmapScalingMode> doit être utilisée quand elle n’entraîne pas autres artefacts de distorsion éliminer la tolérance (à 200 et 300 %).  
+- Pour les éléments de menu et les images de l’iconographie, la <xref:System.Windows.Media.BitmapScalingMode> doit être utilisée quand elle n’entraîne pas autres artefacts de distorsion éliminer la tolérance (à 200 et 300 %).  
   
--   • Pour zoom grand ne niveaux pas des multiples de 100 % (par exemple, 250 % ou % de 350), mise à l’échelle des images iconographie avec bicubique résultats dans l’interface utilisateur floue, filigrane. Un meilleur résultat est obtenu par la première mise à l’échelle de l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et la mise à l’échelle avec bicubique à partir de là. Consultez des cas spéciaux : prescaling des images WPF pour grandes PPP niveaux pour plus d’informations.  
+- • Pour zoom grand ne niveaux pas des multiples de 100 % (par exemple, 250 % ou % de 350), mise à l’échelle des images iconographie avec bicubique résultats dans l’interface utilisateur floue, filigrane. Un meilleur résultat est obtenu par la première mise à l’échelle de l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et la mise à l’échelle avec bicubique à partir de là. Consultez des cas spéciaux : prescaling des images WPF pour grandes PPP niveaux pour plus d’informations.  
   
- La classe DpiHelper dans l’espace de noms Microsoft.VisualStudio.PlatformUI fournit un membre <xref:System.Windows.Media.BitmapScalingMode> qui peut être utilisé pour la liaison. Il permettra de l’interpréteur de commandes de Visual Studio contrôler l’image bitmap mise à l’échelle en mode sur le produit de manière uniforme, selon le facteur d’échelle PPP.  
+  La classe DpiHelper dans l’espace de noms Microsoft.VisualStudio.PlatformUI fournit un membre <xref:System.Windows.Media.BitmapScalingMode> qui peut être utilisé pour la liaison. Il permettra de l’interpréteur de commandes de Visual Studio contrôler l’image bitmap mise à l’échelle en mode sur le produit de manière uniforme, selon le facteur d’échelle PPP.  
   
- Pour l’utiliser dans XAML, ajoutez :  
+  Pour l’utiliser dans XAML, ajoutez :  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

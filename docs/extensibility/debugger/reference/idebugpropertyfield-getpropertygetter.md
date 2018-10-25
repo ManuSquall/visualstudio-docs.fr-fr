@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertyGetter | Documents Microsoft
+title: IDebugPropertyField::GetPropertyGetter | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d58b9f6e390378f10ef08e70894eb7ea74fc8296
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6411be501847648eed1dfdfa28e8a77a250855b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888423"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 Obtient la méthode qui obtient la propriété.  
@@ -41,13 +41,13 @@ int GetPropertyGetter(
   
 #### <a name="parameters"></a>Paramètres  
  `ppField`  
- [out] Retourne un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet représentant la méthode qui obtient la propriété.  
+ [out] Retourne un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet qui représente la méthode qui obtient la propriété.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Pour obtenir la méthode qui définit la propriété, [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) d’appeler la méthode.  
+ Pour obtenir la méthode qui définit la propriété, [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) appeler la méthode.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   

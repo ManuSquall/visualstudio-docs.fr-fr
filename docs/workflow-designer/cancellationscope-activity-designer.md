@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1032df2f7ebcf4cbc1eae0d4b18757a3f90c4f68
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d3b9e565e5579405fa73ea6a3de12d7c27ed7edc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926837"
 ---
 # <a name="cancellationscope-activity-designer"></a>Concepteur d'activités CancellationScope
 
@@ -38,7 +38,7 @@ Le **CancellationScope** Concepteur d’activités peut être déplacé de **bo�
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.CancellationScope> et décrit comment elles sont utilisées dans le concepteur. Le <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans la grille des propriétés, mais les autres propriétés doivent être modifiées sur l’aire du Concepteur de flux de travail.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.CancellationScope>. La valeur par défaut est CancellationScope. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Spécifie l'activité pour laquelle la logique d'annulation est fournie. Pour ajouter le <xref:System.Activities.Statements.CancellationScope.Body%2A> activité, déposez une activité de **boîte à outils** dans le **corps** zone sur le **CancellationScope** Concepteur d’activités. Ajoutez le texte d’indication « Déposer l’activité ici ».|
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Spécifie l’activité est exécutée s’il existe une annulation. Pour ajouter le <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> activité, déposez une activité de **boîte à outils** dans le **CancellationHandler** zone sur le **CancellationScope** Concepteur d’activités. Ajoutez le texte d’indication « Déposer l’activité ici ».|
@@ -47,6 +47,6 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 - [Transaction](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Compenser](../workflow-designer/compensate-activity-designer.md)
-- [Confirmer](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

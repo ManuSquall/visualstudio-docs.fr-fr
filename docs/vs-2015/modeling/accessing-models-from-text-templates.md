@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919856"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49257190"
   
  Pour accéder à un modèle à partir d’un modèle de texte :  
   
--   Définissez la propriété d’hériter de la directive de modèle à <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Cela permet d’accéder à la Store.  
+- Définissez la propriété d’hériter de la directive de modèle à <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Cela permet d’accéder à la Store.  
   
--   Spécifiez les processeurs de directive pour le DSL que vous souhaitez accéder. Cela charge les assemblys pour votre DSL afin que vous puissiez utiliser ses classes de domaine, les propriétés et les relations dans le code de votre modèle de texte. Il charge également le fichier de modèle que vous spécifiez.  
+- Spécifiez les processeurs de directive pour le DSL que vous souhaitez accéder. Cela charge les assemblys pour votre DSL afin que vous puissiez utiliser ses classes de domaine, les propriétés et les relations dans le code de votre modèle de texte. Il charge également le fichier de modèle que vous spécifiez.  
   
- Un `.tt` fichier similaire à l’exemple suivant est créé dans le projet de débogage lorsque vous créez un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution à partir du modèle de langage Minimal DSL.  
+  Un `.tt` fichier similaire à l’exemple suivant est créé dans le projet de débogage lorsque vous créez un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution à partir du modèle de langage Minimal DSL.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Notez que :  
   
-1.  Le `filename` et `validation` paramètres sont séparés par « ; » et il ne doit y avoir aucun autre séparateurs ou espaces.  
+1. Le `filename` et `validation` paramètres sont séparés par « ; » et il ne doit y avoir aucun autre séparateurs ou espaces.  
   
-2.  La liste des catégories de validation détermine les méthodes de validation seront exécutées. Plusieurs catégories doivent être séparées par «&#124;» et il ne doit y avoir aucun autre séparateurs ou espaces.  
+2. La liste des catégories de validation détermine les méthodes de validation seront exécutées. Plusieurs catégories doivent être séparées par «&#124;» et il ne doit y avoir aucun autre séparateurs ou espaces.  
   
- Si une erreur se produit, il est signalé dans la fenêtre des erreurs, et le fichier de résultats contiendra un message d’erreur.  
+   Si une erreur se produit, il est signalé dans la fenêtre des erreurs, et le fichier de résultats contiendra un message d’erreur.  
   
 ##  <a name="Multiple"></a> L’accès à plusieurs modèles à partir d’un modèle de texte  
   

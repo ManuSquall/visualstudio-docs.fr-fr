@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::SetBytes | Documents Microsoft
+title: IDebugPointerObject::SetBytes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8234117d7965c4f2e471855d39ed0c3cee1f88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f3a496eb0212863f2ed08479216ac6ca546009f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891503"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-Définit la valeur sur laquelle pointée à partir d’une série d’octets consécutifs.  
+Définit la valeur indiquée à partir d’une série d’octets consécutifs.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ int SetBytes(
  [in] Un tableau d’octets représentant la nouvelle valeur. Cette valeur est stockée dans l’objet, en commençant à l’offset donné.  
   
  `pdwBytes`  
- [out] Retourne que le nombre d’octets à l’origine définie.  
+ [out] Retourne que le nombre d’octets réellement définie.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  

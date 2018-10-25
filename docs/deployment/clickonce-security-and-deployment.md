@@ -19,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c90d70af60b6bd1f2399847447c1d49785ebb0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926447"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual c#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement propose trois problèmes majeurs au déploiement :  
   
--   **Difficultés de mise à jour des applications.** Avec le déploiement de Microsoft Windows Installer, chaque fois qu’une application est mise à jour, l’utilisateur peut installer une mise à jour, un fichier msp et s’appliquent au produit installé ; avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, vous pouvez fournir des mises à jour automatiquement. Uniquement les parties de l’application qui ont changé sont téléchargées, puis l’application complète, mise à jour est réinstallée à partir d’un nouveau dossier côte à côte.  
+- **Difficultés de mise à jour des applications.** Avec le déploiement de Microsoft Windows Installer, chaque fois qu’une application est mise à jour, l’utilisateur peut installer une mise à jour, un fichier msp et s’appliquent au produit installé ; avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, vous pouvez fournir des mises à jour automatiquement. Uniquement les parties de l’application qui ont changé sont téléchargées, puis l’application complète, mise à jour est réinstallée à partir d’un nouveau dossier côte à côte.  
   
--   **Impact sur l’ordinateur de l’utilisateur.** Avec le déploiement de programme d’installation de Windows, applications dépendent souvent des composants partagés, avec le risque de conflits de versions ; avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, chaque application est autonome et ne peut pas interférer avec d’autres applications.  
+- **Impact sur l’ordinateur de l’utilisateur.** Avec le déploiement de programme d’installation de Windows, applications dépendent souvent des composants partagés, avec le risque de conflits de versions ; avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, chaque application est autonome et ne peut pas interférer avec d’autres applications.  
   
--   **Autorisations de sécurité.** Déploiement de Windows Installer requiert des autorisations administratives et autorise uniquement l’installation utilisateur limité ; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement permet aux utilisateurs non administratifs d’installer et accorde uniquement les autorisations de sécurité d’accès du Code nécessaires à l’application.  
+- **Autorisations de sécurité.** Déploiement de Windows Installer requiert des autorisations administratives et autorise uniquement l’installation utilisateur limité ; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement permet aux utilisateurs non administratifs d’installer et accorde uniquement les autorisations de sécurité d’accès du Code nécessaires à l’application.  
   
- Dans le passé, ces problèmes parfois les développeurs choisissent de créer des applications Web au lieu de Windows des applications, pour autant sacrifier une interface utilisateur élaborée pour faciliter l’installation. À l’aide des applications déployées à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous pouvez bénéficier du meilleur des deux technologies.  
+  Dans le passé, ces problèmes parfois les développeurs choisissent de créer des applications Web au lieu de Windows des applications, pour autant sacrifier une interface utilisateur élaborée pour faciliter l’installation. À l’aide des applications déployées à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous pouvez bénéficier du meilleur des deux technologies.  
   
 ## <a name="what-is-a-clickonce-application"></a>Qu’est une application ClickOnce ?  
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est n’importe quel ordinateur Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), application console (*.exe*), ou une solution Office (*.dll*) publiée à l’aide [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie. Vous pouvez publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application de trois façons différentes : à partir d’une page Web, à partir d’un partage de fichiers réseau ou à partir d’un support tel qu’un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être installée sur l’ordinateur de l’utilisateur final et exécutée localement même si l’ordinateur est hors connexion, ou il peut être exécuté en mode en ligne uniquement sans installer quoi que ce soit de façon permanente sur l’ordinateur de l’utilisateur final. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
@@ -100,8 +100,8 @@ ms.locfileid: "39078424"
 |[*Mage.exe* (Manifest Generation and Editing outil)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Génère les manifestes d’application et de déploiement pour les applications Visual Basic, Visual c# et Visual C++.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de scripts de commandes et de l’invite de commandes.|  
 |[*MageUI.exe* (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Génère et modifie les manifestes d’application et de déploiement.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.|  
 |[GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md)|Génère le manifeste d’application.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [référence MSBuild](../msbuild/msbuild-reference.md).|  
-|[GenerateDeploymentManifest, tâche](../msbuild/generatedeploymentmanifest-task.md)|Génère le manifeste de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [référence MSBuild](../msbuild/msbuild-reference.md).|  
-|[Signfile, tâche](../msbuild/signfile-task.md)|Signe les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [référence MSBuild](../msbuild/msbuild-reference.md).|  
+|[Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Génère le manifeste de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [référence MSBuild](../msbuild/msbuild-reference.md).|  
+|[SignFile, tâche](../msbuild/signfile-task.md)|Signe les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [référence MSBuild](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Développer votre propre application pour générer les manifestes d’application et de déploiement.|  
   
  Le tableau suivant présente la version de .NET Framework requise pour prendre en charge des applications ClickOnce dans ces navigateurs.  

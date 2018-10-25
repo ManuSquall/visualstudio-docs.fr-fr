@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Documents Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c718414749bb6c748f25fb90837644fe984a274
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829961"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Spécifie des indicateurs qui contrôlent l’évaluation de l’expression.  
+Spécifie les indicateurs qui contrôlent l’évaluation de l’expression.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,32 +54,32 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>Membres  
  EVAL_RETURNVALUE  
- Spécifie que la valeur renvoyée, le cas échéant, être évaluées.  
+ Spécifie que la valeur renvoyée, le cas échéant, être évalué.  
   
  EVAL_NOSIDEEFFECTS  
  Spécifie que les effets secondaires ne seront ne pas autorisées.  
   
  EVAL_ALLOWBPS  
- Spécifie l’arrêt sur les points d’arrêt.  
+ Spécifie l’arrêt sur des points d’arrêt.  
   
  EVAL_ALLOWERRORREPORT  
- Spécifie le rapport d’erreurs à l’hôte pour être autorisée. Principalement utilisé pour l’évaluation d’expression dans le script dans Internet Explorer.  
+ Spécifie le rapport d’erreurs à l’hôte pour être autorisée. Principalement utilisé pour l’évaluation de l’expression dans le script dans Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
  Fonctions de force à évaluer en tant qu’adresses, au lieu d’appeler la fonction.  
   
  EVAL_NOFUNCEVAL  
- Fonction empêche d’en cours d’évaluation. Par exemple, considérez la `int` jeton dans l’expression `myExpression(int) + 10`. Cette fonction peut être évaluée correctement en tant qu’adresse, mais pas en tant que valeur.  
+ Fonction empêche d’en cours d’évaluation. Par exemple, considérez le `int` jeton dans l’expression `myExpression(int) + 10`. Cette fonction peut être correctement évaluée en tant qu’adresse, mais pas en tant que valeur.  
   
  EVAL_NOEVENTS  
- Indicateur pour indiquer que les événements qui se produisent pendant l’évaluation d’expression ne doivent pas être envoyées vers le Gestionnaire de session de débogage (SDM) ou à l’IDE.  
+ Indicateur pour indiquer que les événements qui se produisent pendant l’évaluation d’expression ne doivent pas être envoyées pour le Gestionnaire de session de débogage (SDM) ou à l’IDE.  
   
 ## <a name="remarks"></a>Notes  
- Ces indicateurs sont passés en tant qu’argument à la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) et [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthodes.  
+ Ces indicateurs sont passées en tant qu’argument à la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) et [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthodes.  
   
  Ces indicateurs peuvent être combinées avec une opération OR au niveau du bit.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

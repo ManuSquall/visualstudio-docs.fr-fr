@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_dataBytes | Documents Microsoft
+title: IDiaSymbol::get_dataBytes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e87eb61c70f3c3be28058c2acbc39f24d919c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 98febaa0d72071ac990cb88cec2d56845b3e9d67
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911822"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 Récupère les octets de données d’un symbole OEM.  
@@ -36,7 +36,7 @@ HRESULT get_dataBytes (
   
 #### <a name="parameters"></a>Paramètres  
  `cbData`  
- [in] Taille de la mémoire tampon pour stocker les données.  
+ [in] Taille de la mémoire tampon devant contenir les données.  
   
  `pcbData`  
  [out] Retourne le nombre d’octets écrits, ou, si le `data` paramètre est `NULL`, retourne le nombre d’octets disponibles.  
@@ -50,7 +50,7 @@ HRESULT get_dataBytes (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
