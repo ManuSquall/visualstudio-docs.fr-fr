@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Documents Microsoft
+title: ATTACH_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861616"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-Spécifie la raison pour le moteur de débogage (DE) à attacher à un nœud du programme.  
+Spécifie la raison pour le moteur de débogage (dé) à attacher à un nœud de programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ public enum enum_ATTACH_REASON {
 ## <a name="remarks"></a>Notes  
  Ces valeurs sont utilisées en tant que paramètre à la [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) et [attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) méthodes.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
@@ -66,5 +66,5 @@ public enum enum_ATTACH_REASON {
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Joindre](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857677"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Vue d’ensemble du multiciblage Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ Dans cette version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez 
 ## <a name="framework-targeting-features"></a>Fonctionnalités du ciblage du Framework  
  Le ciblage du Framework inclut les fonctionnalités suivantes :  
   
--   Quand vous ouvrez un projet qui cible une version antérieure de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] peut automatiquement le mettre à niveau ou laisser la cible telle quelle.  
+- Quand vous ouvrez un projet qui cible une version antérieure de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] peut automatiquement le mettre à niveau ou laisser la cible telle quelle.  
   
--   Quand vous créez un projet, vous pouvez spécifier la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que vous voulez cibler.  
+- Quand vous créez un projet, vous pouvez spécifier la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que vous voulez cibler.  
   
--   Vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que cible un projet existant.  
+- Vous pouvez modifier la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que cible un projet existant.  
   
--   Vous pouvez cibler une version différente du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dans chacun des différents projets de la même solution.  
+- Vous pouvez cibler une version différente du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dans chacun des différents projets de la même solution.  
   
--   Quand vous modifiez la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ciblée par un projet, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] applique les modifications obligatoires aux références et aux fichiers de configuration.  
+- Quand vous modifiez la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ciblée par un projet, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] applique les modifications obligatoires aux références et aux fichiers de configuration.  
   
- Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio change dynamiquement l’environnement de développement, de la façon suivante :  
+  Quand vous travaillez sur un projet qui cible une version antérieure du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio change dynamiquement l’environnement de développement, de la façon suivante :  
   
--   Il filtre les éléments des boîtes de dialogue **Nouveau projet**, **Ajouter un nouvel élément**, **Ajouter une nouvelle référence** et **Ajouter une référence de service** de façon à omettre les choix qui ne sont pas disponibles dans la version ciblée.  
+- Il filtre les éléments des boîtes de dialogue **Nouveau projet**, **Ajouter un nouvel élément**, **Ajouter une nouvelle référence** et **Ajouter une référence de service** de façon à omettre les choix qui ne sont pas disponibles dans la version ciblée.  
   
--   Il filtre les contrôles personnalisés de la **boîte à outils** pour supprimer ceux qui ne sont pas disponibles dans la version ciblée et pour afficher la version la plus récente quand plusieurs contrôles sont disponibles.  
+- Il filtre les contrôles personnalisés de la **boîte à outils** pour supprimer ceux qui ne sont pas disponibles dans la version ciblée et pour afficher la version la plus récente quand plusieurs contrôles sont disponibles.  
   
--   Il filtre IntelliSense de façon à omettre les fonctionnalités de langage qui ne sont pas disponibles dans la version ciblée.  
+- Il filtre IntelliSense de façon à omettre les fonctionnalités de langage qui ne sont pas disponibles dans la version ciblée.  
   
--   Il filtre les propriétés de la fenêtre **Propriétés** de façon à omettre celles qui ne sont pas disponibles dans la version ciblée.  
+- Il filtre les propriétés de la fenêtre **Propriétés** de façon à omettre celles qui ne sont pas disponibles dans la version ciblée.  
   
--   Il filtre les options de menu de façon à omettre celles qui ne sont pas disponibles dans la version ciblée.  
+- Il filtre les options de menu de façon à omettre celles qui ne sont pas disponibles dans la version ciblée.  
   
--   Pour les builds, il utilise la version du compilateur et les options de compilateur appropriées pour la version ciblée.  
+- Pour les builds, il utilise la version du compilateur et les options de compilateur appropriées pour la version ciblée.  
   
 > [!NOTE]
 >  Le ciblage du Framework ne garantit pas que votre application s’exécutera correctement. Vous devez tester votre application pour vous assurer qu’elle s’exécute sur la version ciblée. Vous ne pouvez pas cibler des versions du Framework antérieures à .NET Framework 2.0.  

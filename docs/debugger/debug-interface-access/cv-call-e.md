@@ -1,5 +1,5 @@
 ---
-title: CV_call_e | Documents Microsoft
+title: CV_call_e | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccdc9df86180883a5a3891563b22625fab4a2ad2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851109"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Spécifie la convention d’appel pour une fonction.  
   
 > [!NOTE]
->  Seules les valeurs d’énumération courants décrits ici. L’énumération complète est disponible dans le fichier d’en-tête cvconst.h.  
+>  Seules les valeurs d’énumération courants sont décrits ici. L’énumération complète est disponible dans le fichier d’en-tête cvconst.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,10 +45,10 @@ typedef enum CV_call_e {
  Spécifie une convention d’appel de fonction à l’aide d’un push proche de droite à gauche. La fonction appelante efface la pile.  
   
  CV_CALL_NEAR_FAST  
- Spécifie une convention d’appel de fonction à l’aide d’un push de gauche à droite near avec les registres. La fonction appelée utilise la somme des octets de paramètres pour effacer la pile.  
+ Spécifie une convention d’appel de fonction à l’aide d’un push de gauche à droite quasi avec les registres. La fonction appelée utilise la somme des octets de paramètre pour effacer la pile.  
   
  CV_CALL_NEAR_STD  
- Spécifie une convention d’appel de fonction via un appel standard near (push de droite à gauche).  
+ Spécifie une convention d’appel de fonction via un appel standard quasiment (push de droite à gauche).  
   
  CV_CALL_NEAR_SYS  
  Spécifie une convention d’appel de fonction à l’aide d’un appel système proche.  
@@ -60,9 +60,9 @@ typedef enum CV_call_e {
  Spécifie une convention d’appel de fonction utilisée par le Common Language Runtime (CLR) (également appelé un code managé convention d’appel).  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs de cette énumération sont retournées par un appel à la [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

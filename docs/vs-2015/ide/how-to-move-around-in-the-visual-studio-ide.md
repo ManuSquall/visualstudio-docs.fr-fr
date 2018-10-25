@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812854"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Comment : se déplacer dans l'IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ L’environnement de développement intégré (IDE) a été conçu pour vous per
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Pour parcourir les documents ouverts par ordre d'utilisation  
   
--   Pour activer les documents ouverts dans l'ordre dans lequel ils ont le plus récemment fait l'objet d'un accès, appuyez sur Ctrl + Signe moins (-).  
+- Pour activer les documents ouverts dans l'ordre dans lequel ils ont le plus récemment fait l'objet d'un accès, appuyez sur Ctrl + Signe moins (-).  
   
--   Pour activer les documents ouverts dans l'ordre inverse, appuyez sur Ctrl + Maj + Signe moins (-).  
+- Pour activer les documents ouverts dans l'ordre inverse, appuyez sur Ctrl + Maj + Signe moins (-).  
   
-    > [!NOTE]
-    >  **Naviguer vers l’arrière** et **Naviguer vers l’avant** sont aussi disponibles dans le menu **Affichage**.  
+  > [!NOTE]
+  >  **Naviguer vers l’arrière** et **Naviguer vers l’avant** sont aussi disponibles dans le menu **Affichage**.  
   
- Vous pouvez également basculer vers un fichier spécifique ouvert dans l’éditeur, indépendamment de la date à laquelle vous y avez accédé pour la dernière fois, à l’aide du **Navigateur IDE**, de la liste **Fichiers actifs** de l’éditeur ou de la boîte de dialogue **Fenêtres**.  
+  Vous pouvez également basculer vers un fichier spécifique ouvert dans l’éditeur, indépendamment de la date à laquelle vous y avez accédé pour la dernière fois, à l’aide du **Navigateur IDE**, de la liste **Fichiers actifs** de l’éditeur ou de la boîte de dialogue **Fenêtres**.  
   
- Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’applications Windows. Il n'est pas disponible à partir des menus et il n'est accessible qu'à l'aide des touches de raccourci. Vous pouvez utiliser l’une des deux commandes disponibles pour accéder au **Navigateur IDE** (illustré ci-dessous) afin de parcourir des fichiers, selon l’ordre de défilement de votre choix.  
+  Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’applications Windows. Il n'est pas disponible à partir des menus et il n'est accessible qu'à l'aide des touches de raccourci. Vous pouvez utiliser l’une des deux commandes disponibles pour accéder au **Navigateur IDE** (illustré ci-dessous) afin de parcourir des fichiers, selon l’ordre de défilement de votre choix.  
   
- ![Navigateur de l’IDE Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Navigateur de l’IDE Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` vous permet de passer au fichier ayant le plus récemment fait l'objet d'un accès, tandis que `Window.NextDocumentWindowNav` vous permet de vous déplacer dans le sens contraire. Les paramètres de développement généraux assignent Ctrl + Maj + Tab à `Window.PreviousDocumentWindowNav` et Ctrl + Tab à `Window.NextDocumentWindowNav`.  
+  `Window.PreviousDocumentWindowNav` vous permet de passer au fichier ayant le plus récemment fait l'objet d'un accès, tandis que `Window.NextDocumentWindowNav` vous permet de vous déplacer dans le sens contraire. Les paramètres de développement généraux assignent Ctrl + Maj + Tab à `Window.PreviousDocumentWindowNav` et Ctrl + Tab à `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Si la combinaison de paramètres que vous utilisez ne possède pas déjà une combinaison de touches de raccourci attribuée à cette commande, vous pouvez assigner votre propre commande personnalisée à l’aide de la page **Clavier** de la boîte de dialogue **Options**. Pour plus d’informations, consultez [Identification et personnalisation des raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

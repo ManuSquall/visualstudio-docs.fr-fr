@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::RemovePort | Documents Microsoft
+title: IDebugPortSupplier2::RemovePort | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fc4fe83d88e23269b7979eb95733bda14f71725
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6557d72561a15f8a330a0fc8eb9bc0b44a296f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947834"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 Supprime un port.  
@@ -47,7 +47,7 @@ int RemovePort(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode supprime le port à partir de la liste d’interne du fournisseur de port de ports actifs.  
+ Cette méthode supprime le port à partir de la liste interne du fournisseur de port des ports actifs.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   

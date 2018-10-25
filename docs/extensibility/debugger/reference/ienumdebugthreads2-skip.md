@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2::Skip | Documents Microsoft
+title: IEnumDebugThreads2::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 595889778a43c3bc1655ca59cd6e54bf0b4143e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afc5c0fd57eb73589b50dd0d10c18e4d31372912
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814935"
 ---
 # <a name="ienumdebugthreads2skip"></a>IEnumDebugThreads2::Skip
 Ignore le nombre spécifié d’éléments.  

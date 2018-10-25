@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853974"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : Le débogage n’est pas&#39;t Possible car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Ce message se produit lorsque vous essayez de déboguer du code managé :  
   
--   sur un système [!INCLUDE[win7](../debugger/includes/win7_md.md)] ou [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]qui a été démarré en mode débogage.  
+- sur un système [!INCLUDE[win7](../debugger/includes/win7_md.md)] ou [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]qui a été démarré en mode débogage.  
   
--   l'application utilise la version CLR CLR 2.0, 3.0, ou 3.5.  
+- l'application utilise la version CLR CLR 2.0, 3.0, ou 3.5.  
   
 ## <a name="solution"></a>Solution  
   
 #### <a name="to-fix-this-problem"></a>Pour corriger ce problème  
   
--   Mettez votre application à niveau pour utiliser la version CLR 4.0 ou 4.5  
+- Mettez votre application à niveau pour utiliser la version CLR 4.0 ou 4.5  
   
-     - ou -  
+   - ou -  
   
--   Désactivez le débogage du noyau et déboguez dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Désactivez le débogage du noyau et déboguez dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     - ou -  
+   - ou -  
   
--   Déboguez à l'aide du débogueur du noyau au lieu de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Déboguez à l'aide du débogueur du noyau au lieu de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     - ou -  
+   - ou -  
   
--   Dans le débogueur du noyau, désactivez les exceptions en mode utilisateur.  
+- Dans le débogueur du noyau, désactivez les exceptions en mode utilisateur.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Pour désactiver le débogage du noyau dans la session active  
   

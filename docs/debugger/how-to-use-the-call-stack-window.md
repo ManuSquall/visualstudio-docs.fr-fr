@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853608"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Afficher la pile des appels et utiliser la fenêtre Pile des appels dans le débogueur Visual Studio
 
@@ -45,17 +45,17 @@ Lorsque [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une 
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > Le **pile des appels** est identique à la perspective de débogage dans certains IDE comme Eclipse. 
-
+> 
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, sélectionnez **importation et exportation de paramètres** sur le **outils** menu.  Consultez [personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Afficher la pile des appels dans le débogueur 
   
--   Pendant le débogage, dans le **déboguer** menu, sélectionnez **Windows > pile des appels**.
+- Pendant le débogage, dans le **déboguer** menu, sélectionnez **Windows > pile des appels**.
 
- ![Fenêtre Pile des appels](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Fenêtre Pile des appels](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Une flèche jaune identifie le frame de pile où le pointeur d'exécution se trouve actuellement. Par défaut, il s’agit du frame de pile dont les informations apparaissent dans la source, **variables locales**, **automatique**, **espion**, et **désassemblage** windows . Si vous souhaitez modifier le contexte du débogueur vers un autre frame sur la pile, vous pouvez le faire [basculer vers un autre frame de pile](#bkmk_switch).   
   

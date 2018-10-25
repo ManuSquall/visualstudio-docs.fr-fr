@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa800b52f1477fa55caaab606d5fb1e87ead147d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868577"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Préparation du débogage : types de projets Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Cette section explique le débogage de types de projets de base, créés par les
   
  [Projets Win32](#BKMK_Win32_Projects)  
   
--   [Pour déboguer une application Win32 C ou C++](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [Pour déboguer une application Win32 C ou C++](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [Pour définir manuellement une configuration Debug](#BKMK_To_manually_set_a_Debug_configuration)  
+- [Pour définir manuellement une configuration Debug](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Applications Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Applications Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> Paramètres de propriété recommandés  
  Certaines propriétés doivent être définies de la même manière pour tous les scénarios de débogage non managé. Les tableaux suivants présentent les paramètres de propriété recommandés. Les paramètres qui n'y sont pas répertoriés peuvent varier parmi les différents types de projet non managés. Pour plus d’informations, consultez [paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -84,25 +84,25 @@ Cette section explique le débogage de types de projets de base, créés par les
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Pour définir manuellement une configuration Debug  
   
-1.  Dans le menu **vue**, cliquez sur **Pages de propriétés**.  
+1. Dans le menu **vue**, cliquez sur **Pages de propriétés**.  
   
-2.  Cliquez sur le **propriétés de Configuration** nœud pour l’ouvrir s’il n’est pas déjà  
+2. Cliquez sur le **propriétés de Configuration** nœud pour l’ouvrir s’il n’est pas déjà  
   
-3.  Sélectionnez **général**et définissez la valeur de la **sortie** ligne **déboguer**.  
+3. Sélectionnez **général**et définissez la valeur de la **sortie** ligne **déboguer**.  
   
-4.  Ouvrez le **C/C++** nœud, puis sélectionnez **général**.  
+4. Ouvrez le **C/C++** nœud, puis sélectionnez **général**.  
   
-     Dans le **déboguer** ligne que vous spécifiez le type d’informations devant être généré par le compilateur de débogage. Vous pouvez notamment choisir **la base de données de programme (/Zi)** ou **base de données de programme pour modifier & Continuer (/ Zi)**.  
+    Dans le **déboguer** ligne que vous spécifiez le type d’informations devant être généré par le compilateur de débogage. Vous pouvez notamment choisir **la base de données de programme (/Zi)** ou **base de données de programme pour modifier & Continuer (/ Zi)**.  
   
-5.  Sélectionnez **optimisation**, puis, dans le **optimisation** ligne, sélectionnez **désactivé (/ 0d)** dans la liste déroulante.  
+5. Sélectionnez **optimisation**, puis, dans le **optimisation** ligne, sélectionnez **désactivé (/ 0d)** dans la liste déroulante.  
   
-     Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous constatez que votre programme comporte un bogue visible uniquement dans le code optimisé, vous pouvez activer ce paramètre, mais rappelez-vous que le code affiché dans la fenêtre Code Machine est généré à partir d'une source optimisée qui ne correspond peut-être pas à ce que vous voyez dans vos fenêtres sources. Certains fonctionnalités, telles que l’exécution pas à pas, peuvent afficher des points d’arrêt et un point d’exécution incorrects.  
+    Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous constatez que votre programme comporte un bogue visible uniquement dans le code optimisé, vous pouvez activer ce paramètre, mais rappelez-vous que le code affiché dans la fenêtre Code Machine est généré à partir d'une source optimisée qui ne correspond peut-être pas à ce que vous voyez dans vos fenêtres sources. Certains fonctionnalités, telles que l’exécution pas à pas, peuvent afficher des points d’arrêt et un point d’exécution incorrects.  
   
-6.  Ouvrez le **l’éditeur de liens** nœud, puis sélectionnez **débogage**. Dans la première **générer** ligne, sélectionnez **Oui (/Debug)** dans la liste déroulante. Sélectionnez toujours ce paramètre lorsque vous déboguez.  
+6. Ouvrez le **l’éditeur de liens** nœud, puis sélectionnez **débogage**. Dans la première **générer** ligne, sélectionnez **Oui (/Debug)** dans la liste déroulante. Sélectionnez toujours ce paramètre lorsque vous déboguez.  
   
- Pour plus d’informations, consultez[paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+   Pour plus d’informations, consultez[paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applications Windows Forms (.NET)  
  Le **Windows Forms Application (.NET)** modèle crée un [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] application Windows Forms. Pour plus d'informations, consultez [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  

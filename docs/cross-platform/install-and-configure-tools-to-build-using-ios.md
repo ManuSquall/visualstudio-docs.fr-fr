@@ -12,19 +12,19 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: cbc9e2b0016fde990e2fbd6d79b083907ced5060
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251809"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881083"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 
 Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier et déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS, mais en raison de restrictions de licences, le code doit être généré et exécuté à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), sur votre Mac. L’agent distant gère les demandes de génération de Visual Studio et exécute l’application sur un appareil iOS connecté au Mac ou dans le simulateur iOS sur le Mac.
 
 > [!NOTE]
-> Pour plus d’informations sur l’utilisation des services Mac hébergés dans le cloud plutôt que sur un Mac, consultez [Configurer Visual Studio pour vous connecter à votre Mac hébergé dans le cloud](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Les instructions portent sur la génération à l’aide de Visual Studio Tools pour Apache Cordova. Pour utiliser les instructions de génération à l’aide de C++, remplacez vcremote par remotebuild.
+> Pour plus d’informations sur l’utilisation des services Mac hébergés dans le cloud plutôt que sur un Mac, consultez [Configurer Visual Studio pour vous connecter à votre Mac hébergé dans le cloud](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Les instructions portent sur la génération à l’aide de Visual Studio Tools pour Apache Cordova. Pour utiliser les instructions de génération à l’aide de C++, remplacez vcremote par remotebuild.
 
 Une fois que vous avez installé les outils permettant de générer avec iOS, reportez-vous à cette rubrique pour savoir comment configurer et mettre rapidement à jour l’agent distant en vue de développer du code pour iOS dans Visual Studio et sur votre Mac.
 

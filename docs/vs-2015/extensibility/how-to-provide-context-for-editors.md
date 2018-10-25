@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845329"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Comment : fournir un contexte pour les éditeurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour un éditeur, le contexte est actif uniquement lorsque l’éditeur a le focus ou qu’il avait le focus immédiatement avant le focus a été déplacé vers une fenêtre outil. Vous pouvez fournir le contexte pour un éditeur en procédant comme suit :  
   
-1.  Créer un conteneur de contexte.  
+1. Créer un conteneur de contexte.  
   
-2.  Publier le conteneur de contexte à l’identificateur de l’élément de sélection (SEID).  
+2. Publier le conteneur de contexte à l’identificateur de l’élément de sélection (SEID).  
   
-3.  Conserver le contexte dans le conteneur.  
+3. Conserver le contexte dans le conteneur.  
   
- Ces tâches sont couverts par les procédures suivantes. Pour plus d’informations sur la fourniture de contexte, consultez **programmation robuste** plus loin dans cette rubrique.  
+   Ces tâches sont couverts par les procédures suivantes. Pour plus d’informations sur la fourniture de contexte, consultez **programmation robuste** plus loin dans cette rubrique.  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Pour créer un conteneur de contexte pour un éditeur ou un concepteur  
   

@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Documents Microsoft
+title: DUMPTYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa44dfa59f4883fa29a1724344124267f28bce9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949550"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Spécifie la quantité d’état d’un programme (par exemple, les threads en cours d’exécution, les frames de pile et adresse d’instruction en cours) pour faire un dump.  
+Spécifie la quantité d’état d’un programme (par exemple, les threads en cours d’exécution, les frames de pile et adresse d’instruction en cours) pour vider.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,15 +44,15 @@ public enum enum_DUMPTYPE {
   
 ## <a name="members"></a>Membres  
  DUMP_MINIDUMP  
- Spécifie un fichier de vidage de petite taille, compact.  
+ Spécifie un fichier de vidage petit, plus compact.  
   
  DUMP_FULLDUMP  
- Spécifie un vidage volumineux, terminé.  
+ Spécifie un vidage volumineux et complet.  
   
 ## <a name="remarks"></a>Notes  
- Est passé comme argument à la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (méthode).  
+ Passé en tant qu’argument à la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

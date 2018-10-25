@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812892"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,71 +112,71 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 ## <a name="bkmk_setup"></a>Configurer le débogueur distant  
  Vous devez disposer des autorisations d’administration sur l’ordinateur distant  
   
-1.  Recherchez l’application du débogueur distant. (Ouvrez le menu Démarrer et recherchez **débogueur distant**.)
+1. Recherchez l’application du débogueur distant. (Ouvrez le menu Démarrer et recherchez **débogueur distant**.)
   
-     Si vous exécutez le débogueur distant sur un serveur distant, vous pouvez avec le bouton droit de l’application débogueur distant et choisissez **exécuter en tant qu’administrateur** (ou, vous pouvez exécuter le débogueur distant en tant que service). Si vous n’exécutez pas sur un serveur distant, seulement le démarrer normalement.
+    Si vous exécutez le débogueur distant sur un serveur distant, vous pouvez avec le bouton droit de l’application débogueur distant et choisissez **exécuter en tant qu’administrateur** (ou, vous pouvez exécuter le débogueur distant en tant que service). Si vous n’exécutez pas sur un serveur distant, seulement le démarrer normalement.
   
-3.  Lorsque vous démarrez les outils à distance pour la première fois (ou avant que vous l’avez configuré), le **Configuration du débogage distant** boîte de dialogue s’affiche.  
+2. Lorsque vous démarrez les outils à distance pour la première fois (ou avant que vous l’avez configuré), le **Configuration du débogage distant** boîte de dialogue s’affiche.  
   
-     ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
+    ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
-4.  Si l’API de Service Windows n’est pas installé (ce qui se produit uniquement sur Windows Server 2008 R2), choisissez le **installer** bouton.  
+3. Si l’API de Service Windows n’est pas installé (ce qui se produit uniquement sur Windows Server 2008 R2), choisissez le **installer** bouton.  
   
-5.  Sélectionnez les types de réseau sur lesquels vous voulez utiliser les outils de contrôle à distance. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément, selon les besoins.  
+4. Sélectionnez les types de réseau sur lesquels vous voulez utiliser les outils de contrôle à distance. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément, selon les besoins.  
   
-6.  Choisissez **configurer le débogage distant** pour configurer le pare-feu et démarrer l’outil.  
+5. Choisissez **configurer le débogage distant** pour configurer le pare-feu et démarrer l’outil.  
   
-7.  Une fois la configuration terminée, la fenêtre du débogueur distant s’affiche.
+6. Une fois la configuration terminée, la fenêtre du débogueur distant s’affiche.
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+    ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
   
-     Le débogueur distant est maintenant en attente pour une connexion. Prenez note du nom du serveur et le port numéro qui s’affiche, car vous en aurez besoin ultérieurement pour la configuration dans Visual Studio.  
+    Le débogueur distant est maintenant en attente pour une connexion. Prenez note du nom du serveur et le port numéro qui s’affiche, car vous en aurez besoin ultérieurement pour la configuration dans Visual Studio.  
   
- Lorsque vous avez terminé le débogage et vous devez arrêter le débogueur distant, cliquez sur **fichier / quitter** dans la fenêtre. Vous pouvez le redémarrer à partir de la **Démarrer** menu ou à partir de la ligne de commande :  
+   Lorsque vous avez terminé le débogage et vous devez arrêter le débogueur distant, cliquez sur **fichier / quitter** dans la fenêtre. Vous pouvez le redémarrer à partir de la **Démarrer** menu ou à partir de la ligne de commande :  
   
- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Remote Debugger\\< x86, x64 ou Appx\msvsmon.exe**.  
+   **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Remote Debugger\\< x86, x64 ou Appx\msvsmon.exe**.  
   
 ## <a name="configure-the-remote-debugger"></a>Configurer le débogueur distant  
  Vous pouvez modifier certains aspects de la configuration du débogueur distant après l’avoir démarré pour la première fois.
   
--   Pour activer les autres utilisateurs de se connecter au débogueur distant, choisissez **outils / autorisations**. Vous devez disposer de privilèges d’administrateur pour accorder ou refuser des autorisations.
+- Pour activer les autres utilisateurs de se connecter au débogueur distant, choisissez **outils / autorisations**. Vous devez disposer de privilèges d’administrateur pour accorder ou refuser des autorisations.
 
-    > [!IMPORTANT]
-    > Vous pouvez exécuter le débogueur distant sous un compte d’utilisateur différent à partir du compte d’utilisateur que vous utilisez sur l’ordinateur Visual Studio, mais vous devez ajouter le compte d’utilisateur différent pour les autorisations du débogueur distant. 
+  > [!IMPORTANT]
+  > Vous pouvez exécuter le débogueur distant sous un compte d’utilisateur différent à partir du compte d’utilisateur que vous utilisez sur l’ordinateur Visual Studio, mais vous devez ajouter le compte d’utilisateur différent pour les autorisations du débogueur distant. 
 
-     Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : **msvsmon /Allow \< username@computer>**.
+   Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : **msvsmon /Allow \< username@computer>**.
   
--   Pour modifier le mode d’authentification ou le numéro de port, ou pour spécifier une valeur de délai d’expiration pour les outils à distance : choisissez **Outils / Options**.  
+- Pour modifier le mode d’authentification ou le numéro de port, ou pour spécifier une valeur de délai d’expiration pour les outils à distance : choisissez **Outils / Options**.  
   
-     Pour obtenir la liste des numéros de port utilisés par défaut, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
+   Pour obtenir la liste des numéros de port utilisés par défaut, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
   
-     > [!WARNING]
->  Vous pouvez choisir d’exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n’existe aucune sécurité du réseau lorsque vous lancez l’exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
+   > [!WARNING]
+  >  Vous pouvez choisir d’exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n’existe aucune sécurité du réseau lorsque vous lancez l’exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
 
 ##  <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
  Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez exécuter le débogueur distant en tant qu’administrateur ou, si vous souhaitez qu’il est toujours en cours d’exécution, exécutez le débogueur distant en tant que service.
   
  Si vous souhaitez configurer le débogueur distant en tant que service, procédez comme suit.  
   
-1.  Recherchez l’ **Assistant Configuration Remote Debugger** (rdbgwiz.exe). (C’est une application distincte du débogueur distant). Il est disponible uniquement quand vous installez les outils de contrôle à distance. Il n’est pas installé avec Visual Studio.  
+1. Recherchez l’ **Assistant Configuration Remote Debugger** (rdbgwiz.exe). (C’est une application distincte du débogueur distant). Il est disponible uniquement quand vous installez les outils de contrôle à distance. Il n’est pas installé avec Visual Studio.  
   
-2.  Démarrez l’Assistant Configuration. Quand la première page s’affiche, cliquez sur **Suivant**.  
+2. Démarrez l’Assistant Configuration. Quand la première page s’affiche, cliquez sur **Suivant**.  
   
-3.  Cochez la case **Exécuter le débogueur distant Visual Studio 2015 en tant que service** .  
+3. Cochez la case **Exécuter le débogueur distant Visual Studio 2015 en tant que service** .  
   
-4.  Ajoutez le nom du compte d’utilisateur et le mot de passe.  
+4. Ajoutez le nom du compte d’utilisateur et le mot de passe.  
   
-     Vous devez peut-être ajouter le droit utilisateur **Ouvrir une session en tant que service** pour ce compte. (Recherchez **Stratégie de sécurité locale** (secpol.msc) dans la page ou la fenêtre **Démarrer** (ou tapez **secpol.msc** à l’invite de commande). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**.) Cliquez sur **suivant**.  
+    Vous devez peut-être ajouter le droit utilisateur **Ouvrir une session en tant que service** pour ce compte. (Recherchez **Stratégie de sécurité locale** (secpol.msc) dans la page ou la fenêtre **Démarrer** (ou tapez **secpol.msc** à l’invite de commande). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**.) Cliquez sur **suivant**.  
   
-5.  Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.  
+5. Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.  
   
-6.  Si le service peut être démarré, le message suivant s’affiche : **L’Assistant Configuration Visual Studio Remote Debugger est terminé**. Si le service ne peut pas être démarré, le message suivant s’affiche : **Échec de l’Assistant Configuration Débogueur distant Visual Studio**. La page fournit également des conseils à suivre pour faire démarrer le service.  
+6. Si le service peut être démarré, le message suivant s’affiche : **L’Assistant Configuration Visual Studio Remote Debugger est terminé**. Si le service ne peut pas être démarré, le message suivant s’affiche : **Échec de l’Assistant Configuration Débogueur distant Visual Studio**. La page fournit également des conseils à suivre pour faire démarrer le service.  
   
-7.  Cliquez sur **Terminer**.  
+7. Cliquez sur **Terminer**.  
   
- À ce stade, le débogueur distant s’exécute en tant que service. Vous pouvez le vérifier en accédant à **Panneau de configuration / Services** et en recherchant **Débogueur distant Visual Studio 2015**.  
+   À ce stade, le débogueur distant s’exécute en tant que service. Vous pouvez le vérifier en accédant à **Panneau de configuration / Services** et en recherchant **Débogueur distant Visual Studio 2015**.  
   
- Vous pouvez arrêter et démarrer le service du débogueur distant à partir de **Panneau de configuration / Services**.  
+   Vous pouvez arrêter et démarrer le service du débogueur distant à partir de **Panneau de configuration / Services**.  
 
 ## <a name="remote-debug-an-aspnet-application"></a>Déboguer à distance une application ASP.NET  
  Le déploiement d’une application ASP.NET sur un ordinateur distant qui exécute IIS implique différentes étapes, selon le système d’exploitation et la version d’IIS. Pour les ordinateurs distants exécutant Windows Server 2008 ou Windows Server 2012 et IIS 7.5 ou ultérieure, consultez [Remote Debugging ASP.NET sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
@@ -186,73 +186,73 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 ## <a name="remote-debug-a-visual-c-project"></a>Débogage distant d’un projet Visual C++  
  Dans la procédure suivante, le nom et le chemin d’accès du projet est C:\remotetemp\MyMfc, et le nom de l’ordinateur distant est **MJO-DL**.  
   
-1.  Créer une application MFC nommée **mymfc.**  
+1. Créer une application MFC nommée **mymfc.**  
   
-2.  Définissez un point d’arrêt quelque part dans l’application qui est facilement accessible, par exemple dans **MainFrm.cpp**, au début de `CMainFrame::OnCreate`.  
+2. Définissez un point d’arrêt quelque part dans l’application qui est facilement accessible, par exemple dans **MainFrm.cpp**, au début de `CMainFrame::OnCreate`.  
   
-3.  Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**. Ouvrez le **débogage** onglet.  
+3. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**. Ouvrez le **débogage** onglet.  
   
-4.  Définir le **débogueur à lancer** à **débogueur Windows distant**.  
+4. Définir le **débogueur à lancer** à **débogueur Windows distant**.  
   
-     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
-5.  Appliquez les modifications suivantes aux propriétés :  
+5. Appliquez les modifications suivantes aux propriétés :  
   
-    |Paramètre|Value|
-    |-|-|  
-    |Commande distante|C:\remotetemp\mymfc.exe|  
-    |Répertoire de travail|C:\remotetemp|  
-    |Nom de serveur distant|DL-MJO :*numéro_port*|  
-    |Connexion|À distance avec authentification Windows|  
-    |Type de débogueur|Natif uniquement|  
-    |Répertoire de déploiement|C:\remotetemp.|  
-    |Fichiers supplémentaires à déployer|C:\data\mymfcdata.txt.|  
+   |Paramètre|Value|
+   |-|-|  
+   |Commande distante|C:\remotetemp\mymfc.exe|  
+   |Répertoire de travail|C:\remotetemp|  
+   |Nom de serveur distant|DL-MJO :*numéro_port*|  
+   |Connexion|À distance avec authentification Windows|  
+   |Type de débogueur|Natif uniquement|  
+   |Répertoire de déploiement|C:\remotetemp.|  
+   |Fichiers supplémentaires à déployer|C:\data\mymfcdata.txt.|  
   
-     Si vous déployez des fichiers supplémentaires (facultatifs), le dossier doit exister sur les deux ordinateurs.  
+    Si vous déployez des fichiers supplémentaires (facultatifs), le dossier doit exister sur les deux ordinateurs.  
   
-6.  Dans l’Explorateur de solutions, cliquez sur la solution et choisissez **Configuration Manager**.  
+6. Dans l’Explorateur de solutions, cliquez sur la solution et choisissez **Configuration Manager**.  
   
-7.  Pour le **déboguer** configuration, sélectionnez le **déployer** case à cocher.  
+7. Pour le **déboguer** configuration, sélectionnez le **déployer** case à cocher.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8.  Démarrer le débogage (**déboguer / démarrer le débogage**, ou **F5**).  
+8. Démarrer le débogage (**déboguer / démarrer le débogage**, ou **F5**).  
   
 9. Le fichier exécutable est déployé automatiquement sur l’ordinateur distant.  
   
 10. Si vous y êtes invité, entrez les informations d’identification réseau pour vous connecter à l’ordinateur distant.  
   
-     Les informations d’identification requises sont spécifiques à la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pourrez choisir un certificat de sécurité ou entrez votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme **MJO-DL\name@something.com**, ainsi que le mot de passe correct.  
+     Les informations d’identification requises sont spécifiques à la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pourrez choisir un certificat de sécurité ou entrez votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme <strong>MJO-DL\name@something.com</strong>, ainsi que le mot de passe correct.  
   
 11. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.  
   
     > [!TIP]
     >  Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans le **l’Explorateur de solutions,** avec le bouton droit le **mymfc** nœud, puis choisissez **déployer**.  
   
- Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / nouveau dossier**.) Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / existant élément**, puis sélectionnez les fichiers.). Sur le **propriétés** pour chaque fichier, définissez **Copy to Output Directory** à **toujours copier**.  
+    Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / nouveau dossier**.) Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / existant élément**, puis sélectionnez les fichiers.). Sur le **propriétés** pour chaque fichier, définissez **Copy to Output Directory** à **toujours copier**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Débogage distant d’un projet Visual C# ou Visual Basic  
  Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visual Basic sur un ordinateur distant, mais vous pouvez toujours les déboguer à distance comme suit. La procédure suivante suppose que vous souhaitez déboguer sur un ordinateur nommé **MJO-DL**, comme illustré dans l’illustration précédente.
   
-1.  Créez un projet WPF nommé **MyWpf**.  
+1. Créez un projet WPF nommé **MyWpf**.  
   
-2.  Définissez un point d’arrêt facilement accessible quelque part dans le code.  
+2. Définissez un point d’arrêt facilement accessible quelque part dans le code.  
   
-     Par exemple, vous pouvez définir un point d’arrêt dans un gestionnaire de boutons. Pour ce faire, ouvrez MainWindow.xaml et ajouter un contrôle de bouton à partir de la boîte à outils, puis double-cliquez sur le bouton pour ouvrir son gestionnaire.
+    Par exemple, vous pouvez définir un point d’arrêt dans un gestionnaire de boutons. Pour ce faire, ouvrez MainWindow.xaml et ajouter un contrôle de bouton à partir de la boîte à outils, puis double-cliquez sur le bouton pour ouvrir son gestionnaire.
   
-3.  Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **propriétés**.  
+3. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **propriétés**.  
   
-4.  Sur le **propriétés** page, choisissez le **déboguer** onglet.  
+4. Sur le **propriétés** page, choisissez le **déboguer** onglet.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Assurez-vous que le **répertoire de travail** zone de texte est vide.  
+5. Assurez-vous que le **répertoire de travail** zone de texte est vide.  
   
-6.  Choisissez **utiliser l’ordinateur distant**et le type **MJO-DL:4020** dans la zone de texte. (4020 est le numéro de port indiqué dans la fenêtre du débogueur distant).  
+6. Choisissez **utiliser l’ordinateur distant**et le type **MJO-DL:4020** dans la zone de texte. (4020 est le numéro de port indiqué dans la fenêtre du débogueur distant).  
   
-7.  Assurez-vous que l’option **activer le débogage du code natif** n’est pas sélectionnée.  
+7. Assurez-vous que l’option **activer le débogage du code natif** n’est pas sélectionnée.  
   
-8.  Générez le projet.  
+8. Générez le projet.  
   
 9. Créez un dossier sur l’ordinateur distant qui est le même chemin que le **déboguer** dossier sur votre ordinateur Visual Studio :  **\<chemin_source > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -271,7 +271,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
   
 13. Si vous y êtes invité, entrez les informations d’identification réseau pour vous connecter à l’ordinateur distant.  
   
-     Les informations d’identification requises varient selon la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez entrer votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme **MJO-DL\name@something.com**, ainsi que le mot de passe correct.
+     Les informations d’identification requises varient selon la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez entrer votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme <strong>MJO-DL\name@something.com</strong>, ainsi que le mot de passe correct.
 
      La fenêtre principale de l’application WPF doit être ouverte sur l’ordinateur distant.
   
@@ -279,7 +279,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
   
 15. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.
   
- Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / nouveau dossier**.) Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / existant élément**, puis sélectionnez les fichiers.). Sur le **propriétés** pour chaque fichier, définissez **Copy to Output Directory** à **toujours copier**.
+    Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / nouveau dossier**.) Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / existant élément**, puis sélectionnez les fichiers.). Sur le **propriétés** pour chaque fichier, définissez **Copy to Output Directory** à **toujours copier**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants  
  Vous devez pouvoir déboguer votre code avec les symboles que vous générez sur l’ordinateur Visual Studio. Les performances du débogueur distant sont nettement meilleures quand vous utilisez des symboles locaux.  Si vous devez utiliser des symboles distants, vous devez indiquer au Remote Debugging Monitor de rechercher les symboles sur l’ordinateur distant.  

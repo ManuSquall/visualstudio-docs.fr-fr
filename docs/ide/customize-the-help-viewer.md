@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951104"
 ---
 # <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
 Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.
@@ -41,7 +41,7 @@ Augmentez l’espace disponible pour l’affichage de rubriques en choisissant l
 Pour ouvrir la boîte de dialogue **Options de la visionneuse**, sélectionnez le bouton **Options de la visionneuse** dans la barre d’outils.
 
 |Tâche à effectuer|Étape à suivre|
-|---------------------------|---------------------|
+| - | - |
 |Changer la taille de la police du texte qui s’affiche|Choisissez une taille dans la liste **Taille du texte**.|
 |Changer le nombre maximal de résultats de recherche qui s’affichent sous l’onglet **Recherche**|Choisissez une valeur dans la liste **Nombre maximal de résultats de recherche**.|
 |Changer le nombre maximal d’entrées d’historique qui s’affichent dans la fenêtre **Favoris**|Choisissez une valeur dans la liste **Nombre maximal d’entrées d’historique enregistrées**.|

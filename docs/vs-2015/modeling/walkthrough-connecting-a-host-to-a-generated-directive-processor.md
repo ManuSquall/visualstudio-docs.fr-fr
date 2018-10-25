@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817871"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connexion d'un hôte à un processeur de directive généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Pour utiliser des outils Domain-Specific Language pour générer un processeur de directive qui est basé sur un modèle de domaine  
   
-1.  Créer une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :  
+1. Créer une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :  
   
-    -   Nom : DSLMinimalTest  
+   - Nom : DSLMinimalTest  
   
-    -   Modèle de solution : langage Minimal  
+   - Modèle de solution : langage Minimal  
   
-    -   Extension de fichier : min  
+   - Extension de fichier : min  
   
-    -   Nom de la société : Fabrikam  
+   - Nom de la société : Fabrikam  
   
      Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
+2. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
-    > [!IMPORTANT]
-    >  Cette étape génère le processeur de directive et ajoute la clé pour celui-ci dans le Registre.  
+   > [!IMPORTANT]
+   >  Cette étape génère le processeur de directive et ajoute la clé pour celui-ci dans le Registre.  
   
-3.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
+3. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
   
-     Une deuxième instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre.  
+    Une deuxième instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre.  
   
-4.  Dans la build expérimentale, dans **l’Explorateur de solutions**, double-cliquez sur le fichier **sample.min**.  
+4. Dans la build expérimentale, dans **l’Explorateur de solutions**, double-cliquez sur le fichier **sample.min**.  
   
-     Le fichier s’ouvre dans le concepteur. Notez que le modèle a deux éléments, ExampleElement1 et ExampleElement2 et un lien entre eux.  
+    Le fichier s’ouvre dans le concepteur. Notez que le modèle a deux éléments, ExampleElement1 et ExampleElement2 et un lien entre eux.  
   
-5.  Fermez la deuxième instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Fermez la deuxième instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Enregistrer la solution, puis fermez le Concepteur de langage spécifique à un domaine.  
+6. Enregistrer la solution, puis fermez le Concepteur de langage spécifique à un domaine.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Connexion d’un hôte de modèle de texte personnalisé à un processeur de Directive  
  Après avoir généré le processeur de directive, vous vous connectez le processeur de directive et l’hôte de modèle de texte personnalisé que vous avez créé dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

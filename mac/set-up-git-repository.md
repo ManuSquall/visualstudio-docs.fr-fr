@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827959"
 ---
 # <a name="setting-up-a-git-repository"></a>Configuration d’un dépôt Git
 
@@ -38,7 +38,7 @@ Pour configurer un dépôt Git, effectuez les étapes suivantes :
 
     ![afficher et copier l’adresse](media/version-control-git3.png)
 
-  Vous avez besoin de l’adresse HTTPS pour faire pointer Visual Studio pour Mac vers ce dépôt.
+   Vous avez besoin de l’adresse HTTPS pour faire pointer Visual Studio pour Mac vers ce dépôt.
 
 
 ## <a name="publishing-an-existing-project"></a>Publication d’un projet existant
@@ -108,7 +108,7 @@ Il est très probable que vous devrez utiliser un dépôt GitHub qui existe uniq
 5. Entrez le répertoire dans lequel vous souhaitez cloner le dépôt et appuyez sur **Extraire**.
 
 > [!NOTE]
-Vous pouvez rencontrer des problèmes si le dépôt fait plus de 4 Go.
+> Vous pouvez rencontrer des problèmes si le dépôt fait plus de 4 Go.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

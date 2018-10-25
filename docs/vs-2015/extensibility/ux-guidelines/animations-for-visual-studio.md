@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824397"
 ---
 # <a name="animations-for-visual-studio"></a>Animations pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178423"
   
 #### <a name="do-not"></a>Ne pas :  
   
--   Utilisez des mouvements de petits (déplacement dans un faible encombrement), préférant le fondu et change au fil du déplacement d’objets.  
+- Utilisez des mouvements de petits (déplacement dans un faible encombrement), préférant le fondu et change au fil du déplacement d’objets.  
   
--   Utiliser des animations qui se produisent sur une large zone d’écran. Quelle que soit la taille, ce style d’animation est gênant l’utilisateur.  
+- Utiliser des animations qui se produisent sur une large zone d’écran. Quelle que soit la taille, ce style d’animation est gênant l’utilisateur.  
   
--   Utiliser des animations qui ne sont pas liées à l’objet de sur que l’utilisateur se concentre actuellement ou en interagissant avec.  
+- Utiliser des animations qui ne sont pas liées à l’objet de sur que l’utilisateur se concentre actuellement ou en interagissant avec.  
   
--   Utiliser des animations qui nécessitent l’intervention de l’utilisateur de réinitialiser l’état, telles que de forcer l’utilisateur à répondre à une notification clignotante afin de la rendre arrêter clignotant. Interagir avec elles dans n’importe quel moyen devrait suffire faire disparaître les.  
+- Utiliser des animations qui nécessitent l’intervention de l’utilisateur de réinitialiser l’état, telles que de forcer l’utilisateur à répondre à une notification clignotante afin de la rendre arrêter clignotant. Interagir avec elles dans n’importe quel moyen devrait suffire faire disparaître les.  
   
- Pour plus d’informations sur les applications pour ces meilleures pratiques, consultez [modèles d’Animation](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Pour plus d’informations sur les applications pour ces meilleures pratiques, consultez [modèles d’Animation](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Métriques d’animation  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178423"
 ### <a name="overview"></a>Vue d'ensemble  
  Les animations dans Visual Studio sont conçues pour répondre à une fonction spécifique et pas entraver la productivité des utilisateurs. Caractéristiques d’animation générales à respecter pour inclure :  
   
--   Petites et discrète  
+- Petites et discrète  
   
--   Réalistes et naturelles  
+- Réalistes et naturelles  
   
--   Subtils et tamisée  
+- Subtils et tamisée  
   
--   Rapide et efficace  
+- Rapide et efficace  
   
--   Assouplie, pressé ou ne disposant ne pas  
+- Assouplie, pressé ou ne disposant ne pas  
   
- L’illustration suivante montre les styles d’animation recommandées pour une utilisation dans Visual Studio. Aucune animation et les animations subtiles comme apparition en ne fondu / fondu sont les plus fréquemment utilisés. Il existe une application limitée du déplacement des animations telles que développer et de contrat, X et Y position modification et la rotation.  
+  L’illustration suivante montre les styles d’animation recommandées pour une utilisation dans Visual Studio. Aucune animation et les animations subtiles comme apparition en ne fondu / fondu sont les plus fréquemment utilisés. Il existe une application limitée du déplacement des animations telles que développer et de contrat, X et Y position modification et la rotation.  
   
- ![Recommandé de styles d’animation pour Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202-a_VSAnimStyles")  
+  ![Recommandé de styles d’animation pour Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202-a_VSAnimStyles")  
   
- **Styles d’animation recommandés pour Visual Studio**  
+  **Styles d’animation recommandés pour Visual Studio**  
   
 #### <a name="appear-and-disappear"></a>Apparaissent et disparaissent  
  Avec ce modèle, un élément bascule visible hors de la vue et revenir sans une animation de transition :  
@@ -363,65 +363,65 @@ ms.locfileid: "49178423"
   
 #### <a name="tab-open"></a>Onglet ouvert  
   
--   Style : apparaissent  
+- Style : apparaissent  
   
--   Durée : Zéro seconde  
+- Durée : Zéro seconde  
   
- ![Onglet animation ouvrir dans Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202-h_TabOpen")  
+  ![Onglet animation ouvrir dans Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202-h_TabOpen")  
   
 #### <a name="tab-close"></a>Onglet fermer  
   
--   Style : Changer de position X  
+- Style : Changer de position X  
   
--   Durée : 200 millisecondes  
+- Durée : 200 millisecondes  
   
- ![Onglet animation Fermer dans Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202-i_TabClose")  
+  ![Onglet animation Fermer dans Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202-i_TabClose")  
   
 #### <a name="tab-reorder"></a>Réorganisation de l’onglet  
   
--   Style : Changer de position X  
+- Style : Changer de position X  
   
--   Durée : 200 millisecondes  
+- Durée : 200 millisecondes  
   
- ![Onglet animation réorganiser dans Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202-j_TabReorder")  
+  ![Onglet animation réorganiser dans Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202-j_TabReorder")  
   
 #### <a name="close-floating-document"></a>Fermer le document flottante  
   
--   Style : apparaissent  
+- Style : apparaissent  
   
--   Durée : 200 millisecondes  
+- Durée : 200 millisecondes  
   
- ![Fermer flottante d’animation de document dans Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202-k_CloseFloatingDocument")  
+  ![Fermer flottante d’animation de document dans Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202-k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>Transition d’état de fenêtre  
   
--   Style : Pour garantir une cohérence avec d’autres fenêtres, permettent du système d’exploitation actuel définir l’animation de fermeture du document.  
+- Style : Pour garantir une cohérence avec d’autres fenêtres, permettent du système d’exploitation actuel définir l’animation de fermeture du document.  
   
--   Durée : 200 millisecondes  
+- Durée : 200 millisecondes  
   
- ![Animation de transition d’état fenêtre dans Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202-l_WindowStateTransition")  
+  ![Animation de transition d’état fenêtre dans Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202-l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>Menu Ouvrir  
   
--   Style : fondu  
+- Style : fondu  
   
--   Durée : 200 millisecondes  
+- Durée : 200 millisecondes  
   
- ![Animation ouvrir le menu dans Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202-m_MenuOpen")  
+  ![Animation ouvrir le menu dans Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202-m_MenuOpen")  
   
 #### <a name="menu-close"></a>Menu fermer  
   
--   Style : fondu  
+- Style : fondu  
   
--   Durée : 200 millisecondes  
+- Durée : 200 millisecondes  
   
- ![Animation fermer le menu dans Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202-n_MenuClose")  
+  ![Animation fermer le menu dans Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202-n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Divulgation de fenêtre outil de masquage automatique  
   
--   Style : apparaissent  
+- Style : apparaissent  
   
--   Durée : Zéro seconde  
+- Durée : Zéro seconde  
   
- ![Auto&#45;masquer l’animation de la fenêtre outil dans Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")
+  ![Auto&#45;masquer l’animation de la fenêtre outil dans Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")
 

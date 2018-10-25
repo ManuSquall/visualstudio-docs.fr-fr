@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844703"
 ---
 # <a name="switchlttgt-activity-designer"></a>Commutateur&lt;T&gt; Concepteur d’activités
 L’activité <xref:System.Activities.Statements.Switch%601> évalue une expression spécifiée et exécute l’activité à partir d’une collection d’activités dont la clé associée correspond à la valeur obtenue de l’évaluation.  
@@ -50,11 +50,11 @@ L’activité <xref:System.Activities.Statements.Switch%601> évalue une express
   
  Vous disposez de 2 méthodes pour supprimer un cas :  
   
-1.  Sélectionnez le cas et supprimez-le.  
+1. Sélectionnez le cas et supprimez-le.  
   
-2.  Sélectionnez le cas, avec le bouton droit pour afficher le menu contextuel et sélectionnez **supprimer**.  
+2. Sélectionnez le cas, avec le bouton droit pour afficher le menu contextuel et sélectionnez **supprimer**.  
   
- Notez que vous devez sélectionner le cas lui-même pour le supprimer. La sélection et la suppression de l'activité à l'intérieur d'un cas supprime uniquement l'activité mais pas le cas.  
+   Notez que vous devez sélectionner le cas lui-même pour le supprimer. La sélection et la suppression de l'activité à l'intérieur d'un cas supprime uniquement l'activité mais pas le cas.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

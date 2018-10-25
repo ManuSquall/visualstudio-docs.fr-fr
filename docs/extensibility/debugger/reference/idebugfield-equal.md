@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal | Documents Microsoft
+title: IDebugField::Equal | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d195c28123cc786c9a5a97add98b7f67d499b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830780"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Cette méthode compare ce champ avec le champ spécifié pour l’égalité.  
@@ -41,10 +41,10 @@ int Equal(
   
 #### <a name="parameters"></a>Paramètres  
  `pField`  
- [in] Le champ à comparer à celui-ci.  
+ [in] Champ à comparer à celui-ci.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Si les champs sont les mêmes, retourne `S_OK`. Si les champs sont différents, retourne `S_FALSE.` dans le cas contraire, retourne un code d’erreur.  
+ Si les champs sont identiques, retourne `S_OK`. Si les champs sont différents, retourne `S_FALSE.` sinon, retourne un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_noReturn | Documents Microsoft
+title: IDiaSymbol::get_noReturn | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5dae60d55db9743d06bbfbed3909421e87aa56
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8fc0410c045a42412866d1c85f84b13aa6acd796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846107"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 Récupère un indicateur qui spécifie si la fonction a été marquée comme retournant jamais avec les [noreturn](/cpp/cpp/noreturn) attribut.  
@@ -42,7 +42,7 @@ HRESULT get_noReturn(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

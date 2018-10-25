@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835928"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>À l’aide de marqueurs de texte avec l’API héritée
 Un marqueur de texte est une plage flottante de texte dans une mémoire tampon qui peut affecter l’affichage et le comportement d’une zone de texte. Marqueurs incluent des points d’arrêt, les signets, les soulignements ondulés et les zones en lecture seule. Marqueurs de texte sont fondamentalement différents à partir de la coloration syntaxique. Coloration de la syntaxe est un moyen rapide de communiquer la syntaxe du langage qui est associée à une zone de texte. Coloration de la syntaxe est généralement demandée lorsque Windows redessine l’écran, la vitesse est importante. La coloration syntaxique modifie uniquement la couleur du texte. Marqueurs de texte peuvent modifier de nombreuses autres propriétés de texte. Marqueurs de texte peuvent « flotter » et appliquer un comportement particulier et la couleur.  
@@ -30,14 +30,14 @@ Un marqueur de texte est une plage flottante de texte dans une mémoire tampon q
   
 ## <a name="related-topics"></a>Rubriques connexes  
   
-|Titre|Description|  
-|-----------|-----------------|  
-|[Guide pratique pour ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal pour un affichage de texte.|  
-|[Guide pratique pour implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges.|  
-|[Guide pratique pour créer des marqueurs de texte personnalisés](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
-|[Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
-|[Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)|Décrit les fonctionnalités de l’éditeur principal et fournit des détails sur la personnalisation de l’éditeur principal.|  
-|[Fonctionnalités de l’éditeur](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal.|  
+| Titre | Description |
+| - | - |
+| [Guide pratique pour ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md) | Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal pour un affichage de texte. |
+| [Guide pratique pour implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md) | Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges. |
+| [Guide pratique pour créer des marqueurs de texte personnalisés](../extensibility/how-to-create-custom-text-markers.md) | Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte. |
+| [Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md) | Explique comment ajouter des marqueurs de texte. |
+| [Dans l’éditeur de base](../extensibility/inside-the-core-editor.md) | Décrit les fonctionnalités de l’éditeur principal et fournit des détails sur la personnalisation de l’éditeur principal. |
+| [Fonctionnalités de l’éditeur](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal. |
   
 ## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

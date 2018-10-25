@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855441"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Raccourcis clavier pour le concepteur XAML
+
 Les raccourcis clavier peuvent accélérer votre travail dans le concepteur XAML en réduisant une action, qui nécessiterait plusieurs clics de souris, à un seul raccourci clavier.
 
 ## <a name="element-shortcuts"></a>Raccourcis d'élément
- Le tableau ci-après répertorie les raccourcis utilisables avec les éléments de la planche graphique.
+
+Le tableau ci-après répertorie les raccourcis utilisables avec les éléments de la planche graphique.
 
 |**Pour exécuter cette action**|**Procédez comme suit**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Créer un élément|Appuyez sur **Ctrl**+**N**.|
 |Dupliquer un élément|Maintenez la touche **Alt** enfoncée et appuyez sur une touche de direction.|
 |Modifier le texte dans un contrôle|Appuyez sur **F2** (appuyez sur **Échap** pour quitter).|
@@ -39,10 +41,11 @@ Les raccourcis clavier peuvent accélérer votre travail dans le concepteur XAML
 |Sélectionner une propriété d'un élément|Après avoir sélectionné un élément et placé le focus sur la fenêtre Propriétés, appuyez sur **Tab**. (Utilisez **Ctrl**+**Tab** pour placer le focus sur la fenêtre Propriétés.) Vous pouvez utiliser les touches de direction pour sélectionner les valeurs de propriété dans les listes déroulantes.|
 
 ## <a name="document-outline-window-shortcuts"></a>Raccourcis de la fenêtre Structure du document
- Le tableau suivant répertorie les raccourcis utilisables avec les éléments dans la fenêtre Structure du document.
+
+Le tableau suivant répertorie les raccourcis utilisables avec les éléments dans la fenêtre Structure du document.
 
 |**Pour exécuter cette action**|**Procédez comme suit**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Masquer les objets de la planche graphique tandis que le focus est sur la fenêtre Structure du document|**Ctrl**+**H**|
 |Afficher les objets de la planche graphique tandis que le focus est sur la fenêtre Structure du document|**Maj**+**Ctrl**+**H**|
 |Verrouiller les objets de la planche graphique tandis que le focus est sur la fenêtre Structure du document|**Ctrl**+**L**|

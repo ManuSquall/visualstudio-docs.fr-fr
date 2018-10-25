@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849162"
 ---
 # <a name="c-code-snippets"></a>Extraits de code C#
 
@@ -34,7 +34,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 Par défaut, les extraits de code suivants sont inclus dans Visual Studio pour C#.
 
 |Nom (ou raccourci)|Description|Emplacements valides où insérer l’extrait de code|
-|--------------------------|-----------------|---------------------------------------|
+| - |-----------------| - |
 |#if|Crée une directive [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) et une directive [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|N’importe où.|
 |#region|Crée une directive [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) et une directive [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|N’importe où.|
 |~|Crée un [finaliseur](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (destructeur) pour la classe conteneur.|Dans une classe.|

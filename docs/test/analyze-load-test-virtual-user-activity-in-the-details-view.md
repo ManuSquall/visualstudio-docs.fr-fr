@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5ab42b66fca32dc5325ce0cb4d78fbb53df8b90f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840634"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyse de l’activité des utilisateurs virtuels d’un test de charge dans la vue Détails de l’analyseur de test de charge
 
@@ -54,7 +54,7 @@ ms.locfileid: "36233793"
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-|
 |**Configurer votre test de charge pour utiliser le graphique d’activités des utilisateurs virtuels :** avant d’exécuter un test de charge dont vous souhaitez consulter les données d’activité des utilisateurs virtuels, vous devez d’abord configurer vos paramètres de propriété de tests de charge.|-   [Guide pratique pour configurer la collecte des détails complets afin d’activer le graphique d’activités des utilisateurs virtuels](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |**Exécuter votre test de charge :** une fois que vous avez créé un test de charge et que vous l’avez configuré pour la collecte des données d’activité des utilisateurs virtuels, vous devez exécuter le test jusqu’à son terme pour pouvoir consulter le **graphique d’activités des utilisateurs virtuels**.||
 |**Afficher les résultats des tests de charge qui contiennent des données d’activité des utilisateurs virtuels :** à la fin de la création, de la configuration et de l’exécution de votre test de charge, vous pouvez consulter les données d’activité des utilisateurs virtuels à l’aide du **graphique d’activités des utilisateurs virtuels**.|-   [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Guide pratique pour analyser l’activité des utilisateurs virtuels durant un test de charge](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|

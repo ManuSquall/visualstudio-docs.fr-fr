@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855597"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Ajout d’un contrôle utilisateur à la page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ Cette procédure pas à pas montre comment ajouter une référence DLL à une Pa
 ## <a name="adding-the-user-control-to-the-start-page"></a>Ajout du contrôle utilisateur à la Page de démarrage  
  Pour rendre ce contrôle soit disponible pour le projet de la Page de démarrage, dans le fichier de projet Page de démarrage, ajoutez une référence à la nouvelle bibliothèque de contrôle. Vous pouvez ensuite ajouter le contrôle au balisage XAML de Page Démarrer.  
   
-1.  Dans **l’Explorateur de solutions**, dans le projet de la Page de démarrage, cliquez sur **références** puis cliquez sur **ajouter une référence**.  
+1. Dans **l’Explorateur de solutions**, dans le projet de la Page de démarrage, cliquez sur **références** puis cliquez sur **ajouter une référence**.  
   
-2.  Sur le **projets** onglet, sélectionnez **WebUserControl, plus** puis cliquez sur **OK**.  
+2. Sur le **projets** onglet, sélectionnez **WebUserControl, plus** puis cliquez sur **OK**.  
   
-3.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
+3. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
-     Génération de la solution rend le contrôle utilisateur disponibles pour IntelliSense pour les autres fichiers dans la solution.  
+    Génération de la solution rend le contrôle utilisateur disponibles pour IntelliSense pour les autres fichiers dans la solution.  
   
- Pour ajouter le contrôle au balisage XAML de Page Démarrer, ajoutez une référence d’espace de noms à l’assembly, puis placez le contrôle sur la page.  
+   Pour ajouter le contrôle au balisage XAML de Page Démarrer, ajoutez une référence d’espace de noms à l’assembly, puis placez le contrôle sur la page.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Pour ajouter le contrôle au balisage  
   
-1.  Dans **l’Explorateur de solutions**, ouvrez le fichier .xaml de Page de démarrage.  
+1. Dans **l’Explorateur de solutions**, ouvrez le fichier .xaml de Page de démarrage.  
   
-2.  Dans le **XAML** volet, ajoutez la déclaration d’espace de noms suivante au niveau supérieur <xref:System.Windows.Controls.Grid> élément.  
+2. Dans le **XAML** volet, ajoutez la déclaration d’espace de noms suivante au niveau supérieur <xref:System.Windows.Controls.Grid> élément.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  Dans le **XAML** volet, faites défiler vers le \<grille > section.  
+3. Dans le **XAML** volet, faites défiler vers le \<grille > section.  
   
-     La section contient un <xref:System.Windows.Controls.TabControl> élément dans un <xref:System.Windows.Controls.Grid> élément.  
+    La section contient un <xref:System.Windows.Controls.TabControl> élément dans un <xref:System.Windows.Controls.Grid> élément.  
   
-4.  Ajouter un \<TabControl > élément contenant un \<TabItem > qui contient une référence à votre contrôle utilisateur.  
+4. Ajouter un \<TabControl > élément contenant un \<TabItem > qui contient une référence à votre contrôle utilisateur.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Vous pouvez maintenant tester le contrôle.  
+   Vous pouvez maintenant tester le contrôle.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Test d’une Page de démarrage personnalisée créée manuellement  
   

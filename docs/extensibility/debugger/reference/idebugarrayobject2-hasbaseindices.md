@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices | Documents Microsoft
+title: IDebugArrayObject2::HasBaseIndices | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69b3cf5dc0a1d86ea55f6518af30d28f2efcb959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 381ca6922891e00469bb52cb13f0ad5890b8b3b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863514"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
-Détermine si le tableau comporte des index de base (limites inférieures) défini.  
+Détermine si le tableau a des index de base (limites inférieures) défini.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,7 +40,7 @@ int HasBaseIndices (
   
 #### <a name="parameters"></a>Paramètres  
  `pfHasBaseIndices`  
- [out] TRUE pour spécifier que le tableau possède des index de base (limites inférieures) ; Sinon, FALSE.  
+ [out] TRUE pour spécifier que le tableau a des index de base (limites inférieures) ; Sinon, FALSE.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

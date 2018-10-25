@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Documents Microsoft
+title: IDebugObject2::IsUserData | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c20b4e531284156b8790b1ca65b32c85d1db997
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fee6b88b33080221d619d40f797d0a976d5f495
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849175"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 Détermine si l’objet représente les données utilisateur.  
@@ -41,13 +41,13 @@ int IsUserData(
   
 #### <a name="parameters"></a>Paramètres  
  `pfUser`  
- [out] Retourne zéro (`TRUE`) si l’objet représente les données utilisateur ; zéro (`FALSE`) si elle n’est pas le cas.  
+ [out] Retourne la valeur différente de zéro (`TRUE`) si l’objet représente les données utilisateur ; zéro (`FALSE`) si elle n’est pas le cas.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Données utilisateur sont un objet qui fait partie d’un module désigné comme JustMyCode (une option configurable par l’utilisateur qui marque un module comme du code utilisateur et sont donc visibles dans une trace de pile).  
+ Données utilisateur sont un objet qui fait partie d’un module désigné comme JustMyCode (une option configurable par l’utilisateur qui marque un module en tant que code utilisateur et sont donc visibles dans une trace de pile).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

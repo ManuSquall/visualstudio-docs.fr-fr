@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent | Documents Microsoft
+title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305179184df1241b6d944ea78e164c09af37923f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43589e4fd5a75c5c1cd7681dde4a3957f3fe4243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837514"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-Appelée par le Gestionnaire de session de débogage (SDM) pour indiquer qu’un événement de débogage synchrone précédemment envoyé par le moteur de débogage (DE) pour le SDM, a été reçu et traité.  
+Appelé par le Gestionnaire de session de débogage (SDM) pour indiquer qu’un événement de débogage synchrone, précédemment envoyé par le moteur de débogage (dé) pour le SDM, a été reçu et traité.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ HRESULT ContinueFromSynchronousEvent(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le DE doit vérifier sa source de l’événement représenté par le `pEvent` paramètre.  
+ Le DE doit vérifier qu’il était la source de l’événement représenté par le `pEvent` paramètre.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre comment implémenter cette méthode pour une simple `CEngine` objet qui implémente le [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  

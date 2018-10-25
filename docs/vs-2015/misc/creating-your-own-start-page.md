@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815037"
 ---
 # <a name="creating-your-own-start-page"></a>Création de votre propre page de démarrage
 Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle de projet Page de démarrage ou en créant une page de démarrage vierge.  
@@ -57,52 +57,52 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Pour créer une page de démarrage vierge à l’aide du modèle de projet Page de démarrage  
   
-1.  Créez un projet de page de démarrage en utilisant le modèle de projet Page de démarrage, comme décrit dans la procédure précédente.  
+1. Créez un projet de page de démarrage en utilisant le modèle de projet Page de démarrage, comme décrit dans la procédure précédente.  
   
-2.  Ouvrez StartPage.xaml.  
+2. Ouvrez StartPage.xaml.  
   
-3.  Supprimez le contenu de la page, en laissant uniquement les éléments xml externes et l’élément <xref:System.Windows.Controls.Grid> de la grille contenante, pour que le fichier .xaml ressemble à l’exemple suivant.  
+3. Supprimez le contenu de la page, en laissant uniquement les éléments xml externes et l’élément <xref:System.Windows.Controls.Grid> de la grille contenante, pour que le fichier .xaml ressemble à l’exemple suivant.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Supprimez les fichiers de prise en charge que vous ne comptez pas utiliser.  
+4. Supprimez les fichiers de prise en charge que vous ne comptez pas utiliser.  
   
-     Vous devez conserver les fichiers .vsix et .pkgdef pour le déploiement.  
+    Vous devez conserver les fichiers .vsix et .pkgdef pour le déploiement.  
   
- Vous pouvez également créer une page de démarrage vierge en créant un fichier XAML avec la structure de balise nécessaire pour qu’il soit reconnu par Visual Studio. Vous pouvez ensuite ajouter des balises et le code-behind pour obtenir l’apparence et les fonctionnalités voulues. Pour plus d’informations, consultez [création d’une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
+   Vous pouvez également créer une page de démarrage vierge en créant un fichier XAML avec la structure de balise nécessaire pour qu’il soit reconnu par Visual Studio. Vous pouvez ensuite ajouter des balises et le code-behind pour obtenir l’apparence et les fonctionnalités voulues. Pour plus d’informations, consultez [création d’une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Test et application de la page de démarrage personnalisée  
  Ne définissez pas l’instance principale de manière à exécuter la page de démarrage personnalisée avant de vérifier qu’elle ne se bloque pas. Quand vous avez testé votre page de démarrage personnalisée, vous pouvez l’appliquer à votre système en répétant les trois dernières étapes de cette procédure dans l’instance principale de Visual Studio.  
   
 #### <a name="to-test-a-custom-start-page"></a>Pour afficher une page de démarrage personnalisée  
   
-1.  Appuyez sur F5.  
+1. Appuyez sur F5.  
   
-     L’instance expérimentale de Visual Studio s’ouvre avec la nouvelle page de démarrage installée, mais non sélectionnée.  
+    L’instance expérimentale de Visual Studio s’ouvre avec la nouvelle page de démarrage installée, mais non sélectionnée.  
   
-2.  Dans l’instance expérimentale de Visual Studio, dans le menu **Outils** , cliquez sur **Options**.  
+2. Dans l’instance expérimentale de Visual Studio, dans le menu **Outils** , cliquez sur **Options**.  
   
-3.  Dans la boîte de dialogue **Options** , sous **Environnement**, sélectionnez **Démarrage**. Ensuite, dans la liste **Personnaliser la page de démarrage** , sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
+3. Dans la boîte de dialogue **Options** , sous **Environnement**, sélectionnez **Démarrage**. Ensuite, dans la liste **Personnaliser la page de démarrage** , sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
   
-4.  Dans le menu **Affichage** , cliquez sur **Page de démarrage**.  
+4. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.  
   
-     La page de démarrage active s’affiche. Vous devez fermer l’instance expérimentale, recopier les fichiers modifiés, puis rouvrir l’instance expérimentale pour voir les modifications.  
+    La page de démarrage active s’affiche. Vous devez fermer l’instance expérimentale, recopier les fichiers modifiés, puis rouvrir l’instance expérimentale pour voir les modifications.  
   
- Vous pouvez partager votre page de démarrage personnalisée en chargeant le fichier .vsix depuis votre répertoire bin\debug vers le site web de la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) ou vers un autre site web ou intranet de partage. Pour plus d’informations, consultez [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Vous pouvez partager votre page de démarrage personnalisée en chargeant le fichier .vsix depuis votre répertoire bin\debug vers le site web de la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) ou vers un autre site web ou intranet de partage. Pour plus d’informations, consultez [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   

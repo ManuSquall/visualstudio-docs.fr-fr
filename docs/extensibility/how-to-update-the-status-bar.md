@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829935"
 ---
 # <a name="how-to-update-the-status-bar"></a>Comment : mettre à jour de la barre d’état
 Le **barre d’état** une barre de contrôle ne se trouve en bas de nombreuses fenêtres d’application qui contient un ou plusieurs lignes de texte d’état ou des indicateurs.  
@@ -35,19 +35,19 @@ Le **barre d’état** une barre de contrôle ne se trouve en bas de nombreuses 
 ## <a name="robust-programming"></a>Programmation fiable  
  Un **barre d’état** contient quatre champs distincts :  
   
--   Texte d’état  
+- Texte d’état  
   
--   Barre de progression  
+- Barre de progression  
   
--   Icône animée  
+- Icône animée  
   
--   Informations d’éditeur  
+- Informations d’éditeur  
   
- Pour plus d’informations, consultez [barres d’état](/cpp/mfc/status-bars).  
+  Pour plus d’informations, consultez [barres d’état](/cpp/mfc/status-bars).  
   
- L’IDE appelle automatiquement la <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> méthode de votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implémentation lorsque votre fenêtre de document est activée.  
+  L’IDE appelle automatiquement la <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> méthode de votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implémentation lorsque votre fenêtre de document est activée.  
   
- L’implémenteur de VSPackage est chargé de la mise à jour le texte d’état dans la barre d’état. L’IDE réinitialise cette chaîne pour « Prêt » si le champ de texte d’état a la valeur texte vide (" ») en période d’inactivité.  
+  L’implémenteur de VSPackage est chargé de la mise à jour le texte d’état dans la barre d’état. L’IDE réinitialise cette chaîne pour « Prêt » si le champ de texte d’état a la valeur texte vide (" ») en période d’inactivité.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Barres d’état](/cpp/mfc/status-bars)

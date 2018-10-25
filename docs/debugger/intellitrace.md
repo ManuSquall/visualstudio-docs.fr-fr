@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825413"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 ## <a name="IntelliTraceSupport"></a> Quelles applications puis-je déboguer avec IntelliTrace ?
 
-|||
-|-|-|
-|**Prise en charge complète**|-Applications de Visual Basic et Visual C# qui utilisent le.NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace d’à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications de Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Prise en charge limitée**|-Applications natives ciblant l’affichage des instantanés à l’aide d’IntelliTrace revenir en arrière de la prise en charge Windows. Seuls les événements de débogueur et l’exception sont pris en charge.<br />-.NET core et des applications de base de ASP.NET pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClicent) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou Core d’ASP.NET.<br />-Applications F# à titre expérimental<br />-Applications UWP prise en charge des événements uniquement|
-|**Non pris en charge**|-Autres langages et un script<br />-Windows Services, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] les applications|
+| | |
+|---------------------| - |
+| **Prise en charge complète** | -Applications de Visual Basic et Visual C# qui utilisent le.NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace d’à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications de Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Prise en charge limitée** | -Applications natives ciblant l’affichage des instantanés à l’aide d’IntelliTrace revenir en arrière de la prise en charge Windows. Seuls les événements de débogueur et l’exception sont pris en charge.<br />-.NET core et des applications de base de ASP.NET pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClicent) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou Core d’ASP.NET.<br />-Applications F# à titre expérimental<br />-Applications UWP prise en charge des événements uniquement |
+| **Non pris en charge** | -Autres langages et un script<br />-Windows Services, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] les applications |
 
 > [!NOTE]
 > Si vous souhaitez déboguer un processus en cours d’exécution, vous pouvez collecter des événements IntelliTrace uniquement (aucune information d’appel). Vous pouvez attacher à un processus 32 bits ou 64 bits sur l’ordinateur local uniquement. Événements qui se produisent avant de joindre au processus ne sont pas collectés.
@@ -77,7 +77,7 @@ Vous pouvez enregistrer les données IntelliTrace à partir des sources suivante
 
 - Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Voir [utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [de surveillance avec l’Agent de surveillance de Microsoft](http://technet.microsoft.com/library/dn465153.aspx).
 
- Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTrace :
+  Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTrace :
 
 - Votre application a endommagé un fichier de données, mais vous ignorez à quel emplacement cet événement s'est produit.
 
@@ -111,11 +111,11 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
      Par défaut, pour améliorer les performances, IntelliTrace n’enregistre pas toutes les valeurs possibles pour un événement de débogueur. En revanche, il enregistre les valeurs suivantes :
 
-    - Les valeurs dans le **variables locales** fenêtre. Conserver la **variables locales** fenêtre ouverte pour afficher ces valeurs.
+  - Les valeurs dans le **variables locales** fenêtre. Conserver la **variables locales** fenêtre ouverte pour afficher ces valeurs.
 
-    - Les valeurs dans le **automatique** fenêtre uniquement lorsque la **automatique** fenêtre est ouverte
+  - Les valeurs dans le **automatique** fenêtre uniquement lorsque la **automatique** fenêtre est ouverte
 
-    - Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.
+  - Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.
 
     Lorsque le mode de Snapshots et les événements IntelliTrace est activé, IntelliTrace prend un instantané de processus de l’application à chaque débogueur **point d’arrêt** et **étape** événement. Cela enregistre les valeurs dans le **variables locales**, **automatique**, et **espion** windows, indépendamment de si les fenêtres sont ouvertes ou non. Les valeurs dans les DataTips épinglés seront également collectées.
 

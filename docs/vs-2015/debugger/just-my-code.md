@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833757"
 ---
 # <a name="just-my-code"></a>Uniquement mon code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Trois attributs affectent également ce que le débogueur considère comme étant du code MyCode :  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indique au débogueur que le code auquel il est appliqué n'est pas du code MyCode.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indique au débogueur que le code auquel il est appliqué n'est pas du code MyCode.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> masque le code au débogueur, même si l'option Uniquement mon code est désactivée.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> masque le code au débogueur, même si l'option Uniquement mon code est désactivée.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> indique au débogueur de passer pas à pas dans le code auquel il s'applique, plutôt que d'effectuer un pas à pas détaillé du code.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indique au débogueur de passer pas à pas dans le code auquel il s'applique, plutôt que d'effectuer un pas à pas détaillé du code.  
   
- Tout le reste du code est considéré comme du code utilisateur.  
+  Tout le reste du code est considéré comme du code utilisateur.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Comportement d’exécution pas à pas  
  Lorsque vous **pas à pas détaillé** (raccourci clavier : F11) code non-utilisateur, le débogueur exécute le code à l’instruction utilisateur suivante. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
@@ -80,17 +80,17 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Par défaut, le débogueur considère les fonctions suivantes comme étant du code non-utilisateur dans les fenêtres de pile des appels :  
   
--   Fonctions avec des informations sources supprimées dans leur fichier de symboles.  
+- Fonctions avec des informations sources supprimées dans leur fichier de symboles.  
   
--   Fonctions où les fichiers de symboles indiquent qu'il n'existe pas de fichier source correspondant au frame de pile.  
+- Fonctions où les fichiers de symboles indiquent qu'il n'existe pas de fichier source correspondant au frame de pile.  
   
--   Fonctions spécifiées dans des fichiers `*.natjmc` du dossier `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`.  
+- Fonctions spécifiées dans des fichiers `*.natjmc` du dossier `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`.  
   
- **Exécution pas à pas**  
+  **Exécution pas à pas**  
   
- Par défaut, seules les fonctions spécifiées dans des fichiers `*.natstepfilter` du dossier `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` sont considérées comme du code non-utilisateur.  
+  Par défaut, seules les fonctions spécifiées dans des fichiers `*.natstepfilter` du dossier `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` sont considérées comme du code non-utilisateur.  
   
- Vous pouvez créer vos propres fichiers `.natstepfilter` et `.natjmc` pour personnaliser le comportement de l'exécution pas à pas et de la fenêtre de pile des appels, et les placer dans le dossier `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+  Vous pouvez créer vos propres fichiers `.natstepfilter` et `.natjmc` pour personnaliser le comportement de l'exécution pas à pas et de la fenêtre de pile des appels, et les placer dans le dossier `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportement d’exécution pas à pas  
  Lorsque vous **pas à pas détaillé** (raccourci clavier : F11) code de non-utilisateur depuis du code utilisateur, le débogueur exécute le code à la ligne suivante de code utilisateur. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
@@ -103,11 +103,11 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement de l’exécution pas à pas  
  Vous pouvez spécifier des fonctions que l'exécution pas à pas doit ignorer en les répertoriant comme étant du code non-utilisateur dans des fichiers `*.natstepfilter`.  
   
--   Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier .natstepfilter à la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` dossier.  
+- Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier .natstepfilter à la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` dossier.  
   
--   Pour spécifier le code non-utilisateur pour un utilisateur individuel, ajoutez le fichier .natstepfilter à la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` dossier.  
+- Pour spécifier le code non-utilisateur pour un utilisateur individuel, ajoutez le fichier .natstepfilter à la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` dossier.  
   
- .natstepfilter sont des fichiers xml avec la syntaxe suivante :  
+  .natstepfilter sont des fichiers xml avec la syntaxe suivante :  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,11 +135,11 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de pile d’appel  
  Vous pouvez spécifier des modules, des fichiers sources et des fonctions à traiter comme du code non-utilisateur dans les piles des appels en les spécifiant dans des fichiers `*.natjmc`.  
   
--   Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier .natjmc à la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` dossier.  
+- Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier .natjmc à la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` dossier.  
   
--   Pour spécifier le code non-utilisateur pour un utilisateur individuel, ajoutez le fichier .natjmc à la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` dossier.  
+- Pour spécifier le code non-utilisateur pour un utilisateur individuel, ajoutez le fichier .natjmc à la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` dossier.  
   
- .natjmc sont des fichiers xml avec la syntaxe suivante :  
+  .natjmc sont des fichiers xml avec la syntaxe suivante :  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -197,19 +197,19 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Le débogueur JavaScript classe automatiquement ces types de code :  
   
--   Script qui est exécuté en passant une chaîne pour le fourni par l’hôte `eval` fonction est classifiée comme **MyCode**.  
+- Script qui est exécuté en passant une chaîne pour le fourni par l’hôte `eval` fonction est classifiée comme **MyCode**.  
   
--   Script qui est exécuté en passant une chaîne pour le `Function` constructeur est classé comme **LibraryCode**.  
+- Script qui est exécuté en passant une chaîne pour le `Function` constructeur est classé comme **LibraryCode**.  
   
--   Le script qui est contenue dans une référence de framework, comme WinJS ou le Kit de développement, est classé comme **LibraryCode**.  
+- Le script qui est contenue dans une référence de framework, comme WinJS ou le Kit de développement, est classé comme **LibraryCode**.  
   
--   Script qui est exécuté en passant une chaîne pour le `setTimeout`, `setImmediate`, ou `setInterval` est classé comme **UnrelatedCode**.  
+- Script qui est exécuté en passant une chaîne pour le `setTimeout`, `setImmediate`, ou `setInterval` est classé comme **UnrelatedCode**.  
   
--   Le fichier `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` spécifie d'autres codes utilisateur et non-utilisateur pour tous les projets JavaScript Visual Studio.  
+- Le fichier `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` spécifie d'autres codes utilisateur et non-utilisateur pour tous les projets JavaScript Visual Studio.  
   
- Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL spécifiques en ajoutant un fichier .json nommé `mycode.json` au dossier racine d’un projet.  
+  Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL spécifiques en ajoutant un fichier .json nommé `mycode.json` au dossier racine d’un projet.  
   
- Reste du code est classé comme **MyCode**.  
+  Reste du code est classé comme **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Comportement d’exécution pas à pas  
   
@@ -234,30 +234,30 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 ###  <a name="BKMK_JS_Exception_behavior"></a> Comportement d’exception  
  Si une exception non gérée se produit dans :  
   
--   **MyCode** ou **LibraryCode** code, le débogueur s’arrête toujours.  
+- **MyCode** ou **LibraryCode** code, le débogueur s’arrête toujours.  
   
--   **UnrelatedCode** code, et **MyCode** ou **LibraryCode** code se trouve sur la pile des appels, le débogueur s’arrête.  
+- **UnrelatedCode** code, et **MyCode** ou **LibraryCode** code se trouve sur la pile des appels, le débogueur s’arrête.  
   
- Si les exceptions de première chance sont activées pour l’exception dans la boîte de dialogue Exceptions et l’exception est levée **LibraryCode** ou **UnrelatedCode** code :  
+  Si les exceptions de première chance sont activées pour l’exception dans la boîte de dialogue Exceptions et l’exception est levée **LibraryCode** ou **UnrelatedCode** code :  
   
--   Si l'exception est gérée, le débogueur ne s'arrête pas.  
+- Si l'exception est gérée, le débogueur ne s'arrête pas.  
   
--   Si l'exception n'est pas gérée, le débogueur s'arrête.  
+- Si l'exception n'est pas gérée, le débogueur s'arrête.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personnaliser uniquement mon Code  
  Pour classer par catégorie du code utilisateur et non-utilisateur pour un seul projet Visual Studio, ajoutez un fichier .json nommé `mycode.json` dans le dossier racine du projet.  
   
  Les classifications sont effectuées dans cet ordre :  
   
-1.  Classifications par défaut  
+1. Classifications par défaut  
   
-2.  Classifications du fichier `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json`  
+2. Classifications du fichier `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json`  
   
-3.  Classifications du fichier `mycode. json` du projet actuel  
+3. Classifications du fichier `mycode. json` du projet actuel  
   
- Chaque étape de classification remplace les étapes précédentes. Un fichier .json n’a pas besoin répertorier toutes les paires clé / valeur et le **MyCode**, **bibliothèques**, et **Unrelated** valeurs peuvent être des tableaux vides.  
+   Chaque étape de classification remplace les étapes précédentes. Un fichier .json n’a pas besoin répertorier toutes les paires clé / valeur et le **MyCode**, **bibliothèques**, et **Unrelated** valeurs peuvent être des tableaux vides.  
   
- Les fichiers .json My Code utilisent cette syntaxe :  
+   Les fichiers .json My Code utilisent cette syntaxe :  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Vous pouvez changer la valeur en un de ces mots clés :  
   
--   `MyCode`  classe le script en tant que **MyCode**.  
+- `MyCode`  classe le script en tant que **MyCode**.  
   
--   `Library`  classe le script en tant que **LibraryCode**.  
+- `Library`  classe le script en tant que **LibraryCode**.  
   
--   `Unrelated`  classe le script en tant que **UnrelatedCode**.  
+- `Unrelated`  classe le script en tant que **UnrelatedCode**.  
   
- **MyCode, Libraries et Unrelated**  
+  **MyCode, Libraries et Unrelated**  
   
- Le **MyCode**, **bibliothèques**, et **Unrelated** paires clé / valeur spécifier les URL ou les fichiers que vous souhaitez inclure dans une classification :  
+  Le **MyCode**, **bibliothèques**, et **Unrelated** paires clé / valeur spécifier les URL ou les fichiers que vous souhaitez inclure dans une classification :  
   
 |||  
 |-|-|  

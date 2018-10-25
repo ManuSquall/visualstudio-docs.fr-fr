@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Documents Microsoft
+title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44285e1d0ec0210193f196b5436407d8a0c2ff66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a9f1c1ab49205a299b73837685b3d35b352a855d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837982"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Lit le nombre spécifié d’octets commençant au décalage spécifié à partir d’un fichier exécutable.  
@@ -37,7 +37,7 @@ HRESULT ReadExecutableAt (
   
 #### <a name="parameters"></a>Paramètres  
  fileOffset  
- [in] Offset dans le fichier exécutable pour commencer la lecture.  
+ [in] Offset dans le fichier exécutable à commencer la lecture.  
   
  cbData  
  [in] Nombre d’octets à lire.  
@@ -46,10 +46,10 @@ HRESULT ReadExecutableAt (
  [out] Retourne le nombre d’octets lus.  
   
  données]  
- [dans, out] Tableau qui est rempli avec les octets lus à partir du fichier.  
+ [in, out] Un tableau est rempli avec les octets lus à partir du fichier.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée par le code de prise en charge DIA pour charger des octets de données à partir d’un fichier exécutable à l’aide d’un offset de fichier absolu. Cette méthode est appelée à l’appui de la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
+ Cette méthode est appelée par le code de prise en charge DIA pour charger des octets de données à partir d’un fichier exécutable à l’aide d’un décalage de fichier absolu. Cette méthode est appelée à l’appui de la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   

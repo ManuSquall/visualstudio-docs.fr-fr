@@ -10,12 +10,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7bd65f109b15ce955da4b71139882358a7e1d1b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58596bc4ab8286641ddeda8bec7f9200da5ccd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874109"
 ---
 # <a name="setup-and-install"></a>Configurer et installer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "49289197"
   
 Pour générer des applications natives iOS, Android et Windows à partir d’une base de code C#/.NET commune en utilisant Xamarin, vous avez besoin des éléments suivants :  
   
--   Pour travailler avec des applications Windows et Android : un ordinateur de développement Windows où Visual Studio 2015 et Xamarin 4 sont installés (voir la remarque ci-dessous). (Vous pouvez également utiliser Visual Studio 2013 en suivant les instructions relatives à l’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).)   
+- Pour travailler avec des applications Windows et Android : un ordinateur de développement Windows où Visual Studio 2015 et Xamarin 4 sont installés (voir la remarque ci-dessous). (Vous pouvez également utiliser Visual Studio 2013 en suivant les instructions relatives à l’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).)   
   
--   Pour travailler avec des applications iOS : un Mac avec OS X Yosemite (10.10.5) ou ultérieur, où Xcode et Xamarin sont installés.  
+- Pour travailler avec des applications iOS : un Mac avec OS X Yosemite (10.10.5) ou ultérieur, où Xcode et Xamarin sont installés.  
   
- Vous pouvez configurer les ordinateurs Windows et Mac en même temps. Pendant l’exécution de ces programmes d’installation, vous pouvez parcourir la rubrique [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) pour vous familiariser avec les informations nécessaires.  
+  Vous pouvez configurer les ordinateurs Windows et Mac en même temps. Pendant l’exécution de ces programmes d’installation, vous pouvez parcourir la rubrique [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) pour vous familiariser avec les informations nécessaires.  
  
 Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d’installation et de configuration, publiez votre question sur [forums.xamarin.com](http://forums.xamarin.com/).
   
@@ -63,38 +63,38 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
 > [!TIP]
 >  Ces instructions s’appliquent à Visual Studio 2015. Pour utiliser Xamarin avec Visual Studio 2013 (Update 2 obligatoire), suivez les instructions d’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
-1.  [Téléchargez et lancez le programme d’installation de n’importe quelle édition de Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional ou Enterprise). Visual Studio 2015 Community est une version gratuite, tandis que les éditions Professional et Enterprise peuvent être utilisées dans le cadre d’un essai de 30 jours. Au-delà, vous devez acheter une licence.  
+1. [Téléchargez et lancez le programme d’installation de n’importe quelle édition de Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional ou Enterprise). Visual Studio 2015 Community est une version gratuite, tandis que les éditions Professional et Enterprise peuvent être utilisées dans le cadre d’un essai de 30 jours. Au-delà, vous devez acheter une licence.  
   
-    1.  Si vous avez déjà installé Visual Studio, ouvrez **Panneau de configuration > Programmes et fonctionnalités**, choisissez l’élément **Visual Studio 2015**, puis cliquez sur **Modifier**. Une fois le programme d’installation ouvert, cliquez sur **Modifier**, puis passez à l’étape 3 ci-dessous.  
+   1.  Si vous avez déjà installé Visual Studio, ouvrez **Panneau de configuration > Programmes et fonctionnalités**, choisissez l’élément **Visual Studio 2015**, puis cliquez sur **Modifier**. Une fois le programme d’installation ouvert, cliquez sur **Modifier**, puis passez à l’étape 3 ci-dessous.  
   
-2.  (Nouvelles installations uniquement) Dans le programme d’installation, sélectionnez une installation **Personnalisée** :  
+2. (Nouvelles installations uniquement) Dans le programme d’installation, sélectionnez une installation **Personnalisée** :  
   
-     ![Choisir l’option Personnalisée dans le programme d’installation de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Configuration multiplateforme de Xamarin 1")  
+    ![Choisir l’option Personnalisée dans le programme d’installation de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Configuration multiplateforme de Xamarin 1")  
   
-3.  Cochez les cases suivantes :  
+3. Cochez les cases suivantes :  
   
-    1.  **Développement mobile multiplateforme > C#/.NET (Xamarin)**. Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants. Cette option permet également de mettre à jour les installations Xamarin existantes.  
+   1.  **Développement mobile multiplateforme > C#/.NET (Xamarin)**. Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants. Cette option permet également de mettre à jour les installations Xamarin existantes.  
   
-         ![Sélectionner l’option Xamarin sous Développement multiplateforme pour appareils mobiles](../cross-platform/media/cross-plat-xamarin-setup-2.png "Configuration multiplateforme de Xamarin 2")  
+        ![Sélectionner l’option Xamarin sous Développement multiplateforme pour appareils mobiles](../cross-platform/media/cross-plat-xamarin-setup-2.png "Configuration multiplateforme de Xamarin 2")  
   
-    2.  Pour Windows 8 (et versions ultérieures) : **Développement mobile multiplateforme > Émulateur Microsoft Visual Studio pour Android**. Remarque : Si vous utilisez un ordinateur Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, vérifiez que cette case est *décochée*. Consultez « Remarque pour les émulateurs sur des ordinateurs Windows » après l’étape 5. Vous pouvez également laisser cette case décochée, si vous avez l’intention de déboguer uniquement sur les appareils Android physiques.  
+   2.  Pour Windows 8 (et versions ultérieures) : **Développement mobile multiplateforme > Émulateur Microsoft Visual Studio pour Android**. Remarque : Si vous utilisez un ordinateur Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, vérifiez que cette case est *décochée*. Consultez « Remarque pour les émulateurs sur des ordinateurs Windows » après l’étape 5. Vous pouvez également laisser cette case décochée, si vous avez l’intention de déboguer uniquement sur les appareils Android physiques.  
   
-    3.  (Facultatif) Si vous prévoyez de cibler des appareils Windows, cochez aussi **Développement d’applications Windows et web > Outils de développement d’applications Windows universelles** et/ou **Outils Windows 8.1 et Windows Phone 8.0/8.1**. Des options y sont proposées pour l’installation d’images d’émulateurs dont le chargement prend davantage de temps : vous pouvez toujours revenir au programme d’installation de Visual Studio pour les ajouter ultérieurement.  
+   3.  (Facultatif) Si vous prévoyez de cibler des appareils Windows, cochez aussi **Développement d’applications Windows et web > Outils de développement d’applications Windows universelles** et/ou **Outils Windows 8.1 et Windows Phone 8.0/8.1**. Des options y sont proposées pour l’installation d’images d’émulateurs dont le chargement prend davantage de temps : vous pouvez toujours revenir au programme d’installation de Visual Studio pour les ajouter ultérieurement.  
   
-4.  Cliquez sur le bouton Installer et laissez le processus s’exécuter. Là encore, cette opération va prendre un certain temps. Vous pouvez en profiter pour poursuivre la lecture des instructions de configuration du Mac, puis consulter [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).  
+4. Cliquez sur le bouton Installer et laissez le processus s’exécuter. Là encore, cette opération va prendre un certain temps. Vous pouvez en profiter pour poursuivre la lecture des instructions de configuration du Mac, puis consulter [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).  
   
-5.  Une fois l’installation terminée, lancez Visual Studio et connectez-vous avec votre compte Microsoft si vous y êtes invité (il s’agit du même compte que celui que vous utilisez avec Windows). Recherchez ensuite les mises à jour de Xamarin via **Outils > Options > Xamarin** ou **Outils > Options > Xamarin > Autre**, où vous trouverez un lien **Vérifier maintenant** :  
+5. Une fois l’installation terminée, lancez Visual Studio et connectez-vous avec votre compte Microsoft si vous y êtes invité (il s’agit du même compte que celui que vous utilisez avec Windows). Recherchez ensuite les mises à jour de Xamarin via **Outils > Options > Xamarin** ou **Outils > Options > Xamarin > Autre**, où vous trouverez un lien **Vérifier maintenant** :  
   
-     ![Recherche des mises à jour Xamarin dans les options de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Configuration multiplateforme de Xamarin 3")  
+    ![Recherche des mises à jour Xamarin dans les options de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Configuration multiplateforme de Xamarin 3")  
   
-    > [!NOTE]
-    >  Comme indiqué précédemment, veillez à mettre à jour Xamarin vers la version 4.0.3.214 (ou une version ultérieure) pour éviter les problèmes liés aux licences antérieures Xamarin.  
+   > [!NOTE]
+   >  Comme indiqué précédemment, veillez à mettre à jour Xamarin vers la version 4.0.3.214 (ou une version ultérieure) pour éviter les problèmes liés aux licences antérieures Xamarin.  
 
-    Si vous ne voyez pas d’option pour Xamarin dans **Outils > Options**, revérifiez votre installation, ou essayez de redémarrer Visual Studio. Vous pouvez également rechercher Xamarin dans la boîte de dialogue Options.
+   Si vous ne voyez pas d’option pour Xamarin dans **Outils > Options**, revérifiez votre installation, ou essayez de redémarrer Visual Studio. Vous pouvez également rechercher Xamarin dans la boîte de dialogue Options.
       
-6.  Pour Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, utilisez l’[Émulateur du kit Android SDK](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/) en l’absence d’appareils physiques. Voir la remarque ci-dessous.  
+6. Pour Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, utilisez l’[Émulateur du kit Android SDK](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/) en l’absence d’appareils physiques. Voir la remarque ci-dessous.  
   
- **Remarque pour les émulateurs sur des ordinateurs Windows :** Les UC ne prenant en charge qu’une seule technologie de virtualisation à la fois, il est préférable d’avoir un seul émulateur actif sur un ordinateur de développement. Il existe trois technologies de virtualisation principales : Hyper-V (utilisé par l’émulateur Visual Studio pour Android et par l’émulateur Windows Phone), Virtual Box (utilisé par Genymotion) et Intel HAXM (utilisé par l’émulateur du kit Android SDK). En raison de différents problèmes entre Hyper-V et Virtual Box, il est préférable d’utiliser des émulateurs d’un seul type sur un ordinateur donné. Ainsi, il est recommandé d’utiliser Hyper-V sur les ordinateurs Windows 8 (ou ultérieur) et les émulateurs Intel HAXM sur Windows 7 (ou antérieur) et dans les situations où Windows est exécuté sur un Mac.  
+   **Remarque pour les émulateurs sur des ordinateurs Windows :** Les UC ne prenant en charge qu’une seule technologie de virtualisation à la fois, il est préférable d’avoir un seul émulateur actif sur un ordinateur de développement. Il existe trois technologies de virtualisation principales : Hyper-V (utilisé par l’émulateur Visual Studio pour Android et par l’émulateur Windows Phone), Virtual Box (utilisé par Genymotion) et Intel HAXM (utilisé par l’émulateur du kit Android SDK). En raison de différents problèmes entre Hyper-V et Virtual Box, il est préférable d’utiliser des émulateurs d’un seul type sur un ordinateur donné. Ainsi, il est recommandé d’utiliser Hyper-V sur les ordinateurs Windows 8 (ou ultérieur) et les émulateurs Intel HAXM sur Windows 7 (ou antérieur) et dans les situations où Windows est exécuté sur un Mac.  
   
 ##  <a name="mac"></a> Configuration pour Mac (identifiant Apple, Xcode et Xamarin)  
   

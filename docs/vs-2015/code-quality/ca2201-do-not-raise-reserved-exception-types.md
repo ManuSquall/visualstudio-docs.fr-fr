@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be0fc7df23e7164371e95e92fbad1a32026284df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810591"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201 : Ne levez pas des types d'exceptions réservés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -42,31 +43,31 @@ ms.locfileid: "49227064"
 ## <a name="rule-description"></a>Description de la règle
  Les types d’exception suivants sont trop généraux pour fournir suffisamment d’informations à l’utilisateur :
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- Les types d’exception suivants sont réservés et doivent être levées uniquement par le common language runtime :
+  Les types d’exception suivants sont réservés et doivent être levées uniquement par le common language runtime :
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **Ne levez pas d’Exceptions générales**
+  **Ne levez pas d’Exceptions générales**
 
- Si vous lever un type d’exception générale, tel que <xref:System.Exception> ou <xref:System.SystemException> dans une bibliothèque ou une infrastructure, il oblige les utilisateurs à intercepter toutes les exceptions, y compris les exceptions inconnues qu’ils ne savent pas gérer.
+  Si vous lever un type d’exception générale, tel que <xref:System.Exception> ou <xref:System.SystemException> dans une bibliothèque ou une infrastructure, il oblige les utilisateurs à intercepter toutes les exceptions, y compris les exceptions inconnues qu’ils ne savent pas gérer.
 
- Au lieu de cela, levez un type plus dérivé qui existe déjà dans le framework ou créer votre propre type qui dérive de <xref:System.Exception>.
+  Au lieu de cela, levez un type plus dérivé qui existe déjà dans le framework ou créer votre propre type qui dérive de <xref:System.Exception>.
 
- **Lever des Exceptions spécifiques**
+  **Lever des Exceptions spécifiques**
 
- Le tableau suivant présente les paramètres et les exceptions à lever lorsque vous validez le paramètre, y compris le paramètre de valeur dans l’accesseur set d’une propriété :
+  Le tableau suivant présente les paramètres et les exceptions à lever lorsque vous validez le paramètre, y compris le paramètre de valeur dans l’accesseur set d’une propriété :
 
 |Description du paramètre|Exception|
 |---------------------------|---------------|

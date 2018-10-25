@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829467"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
@@ -40,103 +40,102 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment du design dans Visual Studio
 
-1.  Créer un projet Visual Studio, ou ouvrez-en une existante.
+1. Créer un projet Visual Studio, ou ouvrez-en une existante.
 
-     Par exemple, sur le **fichier** menu, choisissez **New** > **projet**.
+    Par exemple, sur le **fichier** menu, choisissez **New** > **projet**.
 
-2.  Ajouter un fichier de modèle de texte à votre projet et donnez-lui un nom qui a l’extension **.tt**.
+2. Ajouter un fichier de modèle de texte à votre projet et donnez-lui un nom qui a l’extension **.tt**.
 
-     Pour ce faire, dans **l’Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** sélectionnez boîte de dialogue **modèle de texte** dans le volet central.
+    Pour ce faire, dans **l’Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** sélectionnez boîte de dialogue **modèle de texte** dans le volet central.
 
-     Notez que le **un outil personnalisé** propriété du fichier est **TextTemplatingFileGenerator**.
+    Notez que le **un outil personnalisé** propriété du fichier est **TextTemplatingFileGenerator**.
 
-3.  Ouvrez le fichier. Il contient déjà les directives suivantes :
+3. Ouvrez le fichier. Il contient déjà les directives suivantes :
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     Si vous avez ajouté le modèle à un projet [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], l'attribut de langage est « `VB` ».
+    Si vous avez ajouté le modèle à un projet [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], l'attribut de langage est « `VB` ».
 
-4.  Ajoutez du texte à la fin du fichier. Par exemple :
+4. Ajoutez du texte à la fin du fichier. Par exemple :
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  Enregistrez le fichier.
+5. Enregistrez le fichier.
 
-     Vous pouvez voir un **avertissement de sécurité** boîte de message qui vous invite à confirmer que vous souhaitez exécuter le modèle. Cliquez sur **OK**.
+    Vous pouvez voir un **avertissement de sécurité** boîte de message qui vous invite à confirmer que vous souhaitez exécuter le modèle. Cliquez sur **OK**.
 
-6.  Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous trouverez un fichier portant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
+6. Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous trouverez un fichier portant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
 
-    > [!NOTE]
-    >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
+   > [!NOTE]
+   >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
 
 ### <a name="regenerating-the-code"></a>Regénération du code
  Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :
 
--   Modifier le modèle, puis modifiez le focus vers une autre fenêtre de Visual Studio.
+- Modifier le modèle, puis modifiez le focus vers une autre fenêtre de Visual Studio.
 
--   Enregistrez le modèle.
+- Enregistrez le modèle.
 
--   Cliquez sur **transformer tous les modèles** dans le **Build** menu. Cela transforme tous les modèles de la solution Visual Studio.
+- Cliquez sur **transformer tous les modèles** dans le **Build** menu. Cela transforme tous les modèles de la solution Visual Studio.
 
--   Dans **l’Explorateur de solutions**, dans le menu contextuel de n’importe quel fichier, choisissez **exécuter un outil personnalisé**. Appliquez cette méthode pour transformer un sous-ensemble de modèles sélectionné.
+- Dans **l’Explorateur de solutions**, dans le menu contextuel de n’importe quel fichier, choisissez **exécuter un outil personnalisé**. Appliquez cette méthode pour transformer un sous-ensemble de modèles sélectionné.
 
- Vous pouvez également configurer un projet Visual Studio afin que les modèles sont exécutées lorsque les fichiers de données qu’ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
+  Vous pouvez également configurer un projet Visual Studio afin que les modèles sont exécutées lorsque les fichiers de données qu’ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Génération de texte variable
  Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.
 
 #### <a name="to-generate-text-by-using-program-code"></a>Pour générer du texte à l'aide de code de programme
 
-1.  Modifiez le contenu du fichier `.tt` :
+1. Modifiez le contenu du fichier `.tt` :
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. Enregistrez le fichier .tt et inspectez de nouveau le fichier .txt généré. Il mentionne les carrés des chiffres de 0 à 10.
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
-    ```
-
-2.  Enregistrez le fichier .tt et inspectez de nouveau le fichier .txt généré. Il mentionne les carrés des chiffres de 0 à 10.
-
- Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
-
- Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.
+   Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception
  Pour déboguer un modèle de texte
 
--   Insérez `debug="true"` dans la directive `template`. Par exemple :
+- Insérez `debug="true"` dans la directive `template`. Par exemple :
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   Définissez des points d'arrêt dans le modèle comme vous le feriez pour du code ordinaire.
+- Définissez des points d'arrêt dans le modèle comme vous le feriez pour du code ordinaire.
 
--   Choisissez **déboguer le modèle T4** dans le menu contextuel du fichier de modèle de texte dans l’Explorateur de solutions.
+- Choisissez **déboguer le modèle T4** dans le menu contextuel du fichier de modèle de texte dans l’Explorateur de solutions.
 
- Le modèle s'exécute et s'arrête aux points d'arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.
+  Le modèle s'exécute et s'arrête aux points d'arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.
 
 > [!TIP]
 >  Avec `debug="true"`, le mappage du code généré au modèle de texte est plus précis car davantage de directives de numérotation de lignes sont insérées dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.
@@ -203,13 +202,13 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 ### <a name="structuring-text-templates"></a>Structuration des modèles de texte
  Une meilleure pratique consiste à séparer le code de modèle en deux parties :
 
--   Une partie configuration ou collecte de données, qui définit des valeurs dans des variables mais ne contient pas de blocs de texte. Dans l'exemple précédent, cette partie est l'initialisation de `properties`.
+- Une partie configuration ou collecte de données, qui définit des valeurs dans des variables mais ne contient pas de blocs de texte. Dans l'exemple précédent, cette partie est l'initialisation de `properties`.
 
-     On appelle parfois cette section la section « modèle », car elle construit un modèle en magasin et lit généralement un fichier de modèle.
+   On appelle parfois cette section la section « modèle », car elle construit un modèle en magasin et lit généralement un fichier de modèle.
 
--   La partie génération de texte (`foreach(...){...}` dans l'exemple), qui utilise les valeurs des variables.
+- La partie génération de texte (`foreach(...){...}` dans l'exemple), qui utilise les valeurs des variables.
 
- Cette séparation n'est pas obligatoire, mais elle simplifie la lecture du modèle en réduisant la complexité de la partie qui comprend du texte.
+  Cette séparation n'est pas obligatoire, mais elle simplifie la lecture du modèle en réduisant la complexité de la partie qui comprend du texte.
 
 ## <a name="reading-files-or-other-sources"></a>Lecture de fichiers ou d'autres sources
  Pour accéder à une base de données ou à un fichier de modèle, votre code de modèle peut utiliser des assemblys tels que System.XML. Pour pouvoir accéder à ces assemblys, vous devez insérer des directives telles que celles-ci :
@@ -236,7 +235,6 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>Ouverture d’un fichier avec un nom de chemin d’accès relatif
@@ -244,7 +242,6 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  Ensuite, vous pouvez par exemple écrire :
@@ -256,7 +253,6 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  Vous pouvez aussi utiliser `this.Host.TemplateFile`, qui identifie le nom du fichier de modèle actuel.
@@ -287,7 +282,6 @@ Modèles de texte T4 au moment du design vous permettent de générer du code de
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -326,37 +320,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment du design
 
-1.  À votre projet Visual Studio, ajoutez un fichier du type que vous souhaitez générer, tel qu’un `.cs`, `.vb`, ou `.resx` fichier.
+1. À votre projet Visual Studio, ajoutez un fichier du type que vous souhaitez générer, tel qu’un `.cs`, `.vb`, ou `.resx` fichier.
 
-2.  Testez le nouveau fichier pour vous assurer qu'il fonctionne.
+2. Testez le nouveau fichier pour vous assurer qu'il fonctionne.
 
-3.  Dans l’Explorateur de solutions, remplacez l’extension de nom de fichier **.tt**.
+3. Dans l’Explorateur de solutions, remplacez l’extension de nom de fichier **.tt**.
 
-4.  Vérifiez les propriétés suivantes de la **.tt** fichier :
+4. Vérifiez les propriétés suivantes de la **.tt** fichier :
 
-    |||
-    |-|-|
-    |**Outil personnalisé =**|**TextTemplatingFileGenerator**|
-    |**Action de génération =**|**Aucun**|
 
-5.  Insérez les lignes suivantes au début du fichier :
+   | | |
+   |-|-|
+   | **Outil personnalisé =** | **TextTemplatingFileGenerator** |
+   | **Action de génération =** | **Aucun** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     Si vous souhaitez écrire le code génération de votre modèle en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], affectez la valeur `language` au lieu de `"VB"` à l'attribut `"C#"`.
+5. Insérez les lignes suivantes au début du fichier :
 
-     Définissez l'attribut `extension` sur l'extension de nom de fichier correspondant au type de fichier que vous souhaitez générer, par exemple `.cs`, `.resx` ou `.xml`.
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  Enregistrez le fichier.
+    Si vous souhaitez écrire le code génération de votre modèle en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], affectez la valeur `language` au lieu de `"VB"` à l'attribut `"C#"`.
 
-     Un fichier auxiliaire est créé, avec l'extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.
+    Définissez l'attribut `extension` sur l'extension de nom de fichier correspondant au type de fichier que vous souhaitez générer, par exemple `.cs`, `.resx` ou `.xml`.
 
-     Vérifiez que le contenu du fichier généré est identique à celui du fichier d'origine.
+6. Enregistrez le fichier.
 
-7.  Identifiez une partie du fichier que vous souhaitez faire varier. Par exemple, une partie qui apparaît uniquement dans certaines conditions, qui est répétée ou dont les valeurs spécifiques varient. Insérez le code de génération. Enregistrez le fichier et vérifiez que le fichier auxiliaire est généré correctement. Répétez cette étape.
+    Un fichier auxiliaire est créé, avec l'extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.
+
+    Vérifiez que le contenu du fichier généré est identique à celui du fichier d'origine.
+
+7. Identifiez une partie du fichier que vous souhaitez faire varier. Par exemple, une partie qui apparaît uniquement dans certaines conditions, qui est répétée ou dont les valeurs spécifiques varient. Insérez le code de génération. Enregistrez le fichier et vérifiez que le fichier auxiliaire est généré correctement. Répétez cette étape.
 
 ## <a name="guidelines-for-code-generation"></a>Instructions pour la génération de code
  Consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
@@ -364,7 +360,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>Étapes suivantes
 
 |Étape suivante|Rubrique|
-|---------------|-----------|
+|-|-|
 |Écrire et déboguer un modèle de texte plus avancé, avec du code qui utilise des fonctions auxiliaires, des fichiers inclus et des données externes.|[Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)|
 |Générer des documents à partir de modèles au moment de l'exécution.|[Génération de texte à l’exécution à l’aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |Exécution de la génération de texte en dehors de Visual Studio.|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|

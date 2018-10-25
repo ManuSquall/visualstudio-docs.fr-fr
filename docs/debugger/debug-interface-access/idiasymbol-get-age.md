@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_age | Documents Microsoft
+title: IDiaSymbol::get_age | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81c41902b5e6a8421f15b69ebc77fe5ae6eebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868467"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Récupère la valeur de durée de vie d’un fichier .pdb.  
@@ -43,9 +43,9 @@ HRESULT get_age (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- La durée de vie ne correspond pas nécessairement une valeur de temps connu ; Il est généralement utilisé pour déterminer si un fichier .pdb n’est pas synchronisé avec un fichier .exe.  
+ La durée de vie ne correspond pas nécessairement à toute valeur d’heure connus ; Il est généralement utilisé pour déterminer si un fichier .pdb n’est pas synchronisé avec un fichier .exe correspondant.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

@@ -13,12 +13,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850657"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio et Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Xamarin est une plateforme de développement d’applications mobiles pour la cr
   
  Cette documentation vous permet d’évaluer toutes les fonctionnalités de **Visual Studio avec Xamarin** pour créer ces expériences utilisateur.  
   
--   Commencez par ceci : [Configurer et installer](../cross-platform/setup-and-install.md), processus qui prend un certain temps (généralement de 2 à 4 heures, selon la vitesse de votre connexion web, ce que vous avez déjà installé et les options sélectionnées).  
+- Commencez par ceci : [Configurer et installer](../cross-platform/setup-and-install.md), processus qui prend un certain temps (généralement de 2 à 4 heures, selon la vitesse de votre connexion web, ce que vous avez déjà installé et les options sélectionnées).  
   
--   Pendant l’exécution des programmes d’installation, vous pouvez consulter [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md). Vous y trouverez des informations sur la nature de Xamarin, vous pourrez comparer Xamarin.Forms à l’IU native, etc.  
+- Pendant l’exécution des programmes d’installation, vous pouvez consulter [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md). Vous y trouverez des informations sur la nature de Xamarin, vous pourrez comparer Xamarin.Forms à l’IU native, etc.  
   
--   Une fois l’installation terminée, il est recommandé de [vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
+- Une fois l’installation terminée, il est recommandé de [vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
   
--   Pour finir, parcourez le didacticiel [Principes fondamentaux de la création d’applications avec Xamarin.Forms dans Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
+- Pour finir, parcourez le didacticiel [Principes fondamentaux de la création d’applications avec Xamarin.Forms dans Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
   
- Vous pouvez travailler avec toutes les fonctionnalités de Xamarin via [n’importe quelle édition de Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional et Enterprise). Notez également qu’à partir du 31 mars 2016, Xamarin est inclus dans toutes les éditions de Visual Studio 2015 et ne nécessite plus de licence distincte. Pour Visual Studio 2013, vous pouvez installer Xamarin séparément, comme indiqué dans la rubrique [Configurer et installer](../cross-platform/setup-and-install.md).  
+  Vous pouvez travailler avec toutes les fonctionnalités de Xamarin via [n’importe quelle édition de Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional et Enterprise). Notez également qu’à partir du 31 mars 2016, Xamarin est inclus dans toutes les éditions de Visual Studio 2015 et ne nécessite plus de licence distincte. Pour Visual Studio 2013, vous pouvez installer Xamarin séparément, comme indiqué dans la rubrique [Configurer et installer](../cross-platform/setup-and-install.md).  
   
 > [!NOTE]
 >  Ces instructions décrivent la configuration la plus simple et la plus directe de l’ordinateur pour ceux qui connaissent bien Windows et Visual Studio. Avec cette configuration, toute la pratique du développement est simplifiée, car vous devez seulement interagir avec le Mac pour utiliser le simulateur iOS et l’appareil attaché. En revanche, si vous connaissez mieux l’univers Mac, nous vous recommandons d’exécuter Visual Studio dans Parallels/VMWare ou d’utiliser Xamarin Studio Community. Pour obtenir des instructions, consultez [Configuration, installation et vérifications pour les utilisateurs Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  

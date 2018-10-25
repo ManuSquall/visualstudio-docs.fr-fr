@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd99df10b7cfeefea38bd8399c3d21961d65d205
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856689"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  Utilisez...  
  -   chaque fois que vous devez créer un menu personnalisé.  
   
--   quand vous voulez faire correspondre un nouveau composant d’interface utilisateur aux menus Visual Studio.  
+- quand vous voulez faire correspondre un nouveau composant d’interface utilisateur aux menus Visual Studio.  
   
- N’utilisez pas...  
- la couleur d’arrière-plan toute seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée.  
+  N’utilisez pas...  
+  la couleur d’arrière-plan toute seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée.  
   
 #### <a name="menu-title"></a>Titre de menu  
  Les titres de menu comprennent un arrière-plan, une bordure et le texte du titre, ainsi qu’un glyphe facultatif, généralement quand le menu se trouve dans une barre de commandes.  
@@ -64,137 +64,137 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour tout élément que vous ne voulez pas toujours faire correspondre au titre de menu.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Par défaut de titre de menu](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")  
+  ![Par défaut de titre de menu](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")  
   
- **Titre de menu**  
+  **Titre de menu**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![Titre de menu avec valeur par défaut de glyphe](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")  
+  ![Titre de menu avec valeur par défaut de glyphe](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")  
   
- **Titre de menu avec glyphe**  
+  **Titre de menu avec glyphe**  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarMenuGlyph`  
+  `Environment.CommandBarMenuGlyph`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Titre de menu au pointage](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")  
+  ![Titre de menu au pointage](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")  
   
- **Titre de menu**  
+  **Titre de menu**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- ![Titre de menu avec glyphe au pointage](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")  
+  ![Titre de menu avec glyphe au pointage](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")  
   
- **Titre de menu avec glyphe**  
+  **Titre de menu avec glyphe**  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarMenuMouseOverGlyph`  
+  `Environment.CommandBarMenuMouseOverGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Titre de menu enfoncé](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")  
+  ![Titre de menu enfoncé](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")  
   
- **Titre de menu**  
+  **Titre de menu**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![Titre de menu avec glyphe enfoncé](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")  
+  ![Titre de menu avec glyphe enfoncé](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")  
   
- **Titre de menu avec glyphe**  
+  **Titre de menu avec glyphe**  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarMenuMouseDownGlyph`  
+  `Environment.CommandBarMenuMouseDownGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- Uniquement les côtés gauche, supérieur et droit.  
+  Uniquement les côtés gauche, supérieur et droit.  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Titre de menu avec glyphe désactivé](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")  
+  ![Titre de menu avec glyphe désactivé](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")  
   
- **Titre de menu avec glyphe**  
+  **Titre de menu avec glyphe**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
 #### <a name="menu"></a>Menu  
  Un élément de menu individuel comporte le texte du menu et éventuellement une icône, une case à cocher ou un glyphe de sous-menu. Sa couleur d’arrière-plan et de texte change au passage du curseur de la souris. Ce jeton de couleur est une paire arrière-plan/premier plan.  
@@ -207,153 +207,153 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour toute liste déroulante qui apparaît dans un autre contexte.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Par défaut du menu](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")  
+  ![Par défaut du menu](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")  
   
- **Menu**  
+  **Menu**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Premier plan (glyphe de sous-menu)  
+  Premier plan (glyphe de sous-menu)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- Arrière-plan de canal d’icône  
+  Arrière-plan de canal d’icône  
   
- `Environment.CommandBarMenuIconBackground`  
+  `Environment.CommandBarMenuIconBackground`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.CommandBarMenuSeparator`  
+  `Environment.CommandBarMenuSeparator`  
   
- Ombre  
+  Ombre  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- ![Menu activé](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")  
+  ![Menu activé](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")  
   
- **Activé**  
+  **Activé**  
   
- Coche  
+  Coche  
   
- `Environment.CommandBarCheckBox`  
+  `Environment.CommandBarCheckBox`  
   
- Arrière-plan de case à cocher  
+  Arrière-plan de case à cocher  
   
- `Environment.CommandBarSelectedIcon`  
+  `Environment.CommandBarSelectedIcon`  
   
- ![Menu sélectionné](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")  
+  ![Menu sélectionné](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")  
   
- **sélectionné**  
+  **sélectionné**  
   
- Arrière-plan d’icône  
+  Arrière-plan d’icône  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- Bordure d’icône  
+  Bordure d’icône  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Pointage de menu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")  
+  ![Pointage de menu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")  
   
- **Élément de menu**  
+  **Élément de menu**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- Premier plan (glyphe de sous-menu)  
+  Premier plan (glyphe de sous-menu)  
   
- `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
+  `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
   
- ![Pointage de menu activé](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")  
+  ![Pointage de menu activé](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")  
   
- **Activé**  
+  **Activé**  
   
- Coche  
+  Coche  
   
- `Environment.CommandBarCheckBoxMouseOver`  
+  `Environment.CommandBarCheckBoxMouseOver`  
   
- Arrière-plan de case à cocher  
+  Arrière-plan de case à cocher  
   
- `Environment.CommandBarHoverOverSelectedIcon`  
+  `Environment.CommandBarHoverOverSelectedIcon`  
   
- ![Pointage de menu sélectionné](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")  
+  ![Pointage de menu sélectionné](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")  
   
- **sélectionné**  
+  **sélectionné**  
   
- Arrière-plan d’icône  
+  Arrière-plan d’icône  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- Bordure d’icône  
+  Bordure d’icône  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Menu désactivé](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")  
+  ![Menu désactivé](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")  
   
- Menu Item  
+  Menu Item  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Premier plan (glyphe de sous-menu)  
+  Premier plan (glyphe de sous-menu)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- ![Menu désactivé activé](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")  
+  ![Menu désactivé activé](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")  
   
- Activé  
+  Activé  
   
- Coche  
+  Coche  
   
- `Environment.CommandBarCheckBoxDisabled`  
+  `Environment.CommandBarCheckBoxDisabled`  
   
- Arrière-plan de case à cocher  
+  Arrière-plan de case à cocher  
   
- `Environment.CommandBarSelectedIconDisabled`  
+  `Environment.CommandBarSelectedIconDisabled`  
   
 ### <a name="command-bar"></a>Barre de commandes  
  La barre de commandes peut apparaître à plusieurs endroits dans l’IDE Visual Studio, notamment dans l’interface de commande et incorporée dans des fenêtres de document ou d’outil.  
@@ -383,33 +383,33 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour les éléments d’interface utilisateur non similaires à une barre de commandes.  
   
--   pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.  
+- pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.  
   
- **Par défaut** (aucun autre état)  
+  **Par défaut** (aucun autre état)  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarGradientBegin`  
+  `Environment.CommandBarGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarToolBarBorder`  
+  `Environment.CommandBarToolBarBorder`  
   
- Faire glisser la poignée  
+  Faire glisser la poignée  
   
- `Environment.CommandBarDragHandle`  
+  `Environment.CommandBarDragHandle`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.CommandBarToolBarSeparator`  
+  `Environment.CommandBarToolBarSeparator`  
   
- `Environment.CommandBarToolBarSeparatorHighlight`  
+  `Environment.CommandBarToolBarSeparatorHighlight`  
   
 #### <a name="command-icons"></a>Icônes de commande  
  ![Ligne rouge d’icône de commande](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")  
@@ -422,139 +422,139 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour les contrôles qui possèdent leurs propres noms de jeton.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Commande par défaut d’icône](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")  
+  ![Commande par défaut d’icône](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")  
   
- **Default**  
+  **Default**  
   
- Présentation  
+  Présentation  
   
- N/A (hérite de l’arrière-plan de la barre commandes)  
+  N/A (hérite de l’arrière-plan de la barre commandes)  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- ![Commande par défaut d’icône sélectionnée](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")  
+  ![Commande par défaut d’icône sélectionnée](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")  
   
- **sélectionné**  
+  **sélectionné**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextSelected`  
+  `Environment.CommandBarTextSelected`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **Pointage et porte sur le clavier**  
+  **Pointage et porte sur le clavier**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Pointage d’icône de commande](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")  
+  ![Pointage d’icône de commande](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")  
   
- **Standard au pointage**  
+  **Standard au pointage**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- ![Pointage d’icône sélectionnée de la commande](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")  
+  ![Pointage d’icône sélectionnée de la commande](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")  
   
- **Sélectionné au pointage**  
+  **Sélectionné au pointage**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextHoverOverSelected`  
+  `Environment.CommandBarTextHoverOverSelected`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Icône de commande enfoncée](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")  
+  ![Icône de commande enfoncée](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")  
   
- **Icône de commande appuyée**  
+  **Icône de commande appuyée**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Icône de commande désactivée](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")  
+  ![Icône de commande désactivée](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")  
   
- **Icône de commande désactivée**  
+  **Icône de commande désactivée**  
   
- Présentation  
+  Présentation  
   
- N/A (hérite de l’arrière-plan de la barre commandes)  
+  N/A (hérite de l’arrière-plan de la barre commandes)  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
 ####  <a name="BKMK_CommandComboBox"></a> Zone de liste déroulante  
   
@@ -566,242 +566,242 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  Utilisez...  
  -   pour créer des zones de liste modifiable personnalisées.  
   
--   pour créer un contrôle de barre de commandes similaire à une zone de liste modifiable.  
+- pour créer un contrôle de barre de commandes similaire à une zone de liste modifiable.  
   
- N’utilisez pas...  
- -   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes.  
+  N’utilisez pas...  
+  -   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes.  
   
--   quand vous avez accès à une zone de liste modifiable qui comporte un style.  
+- quand vous avez accès à une zone de liste modifiable qui comporte un style.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Champ d’entrée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")  
+  ![Champ d’entrée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxBackground`  
+  `Environment.ComboBoxBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxText`  
+  `Environment.ComboBoxText`  
   
- Bordure  
+  Bordure  
   
- `Environment.ComboBoxBorder`  
+  `Environment.ComboBoxBorder`  
   
- Séparateur  
+  Séparateur  
   
- Aucun séparateur  
+  Aucun séparateur  
   
- ![Liste de zone de liste déroulante&#45;bouton enfoncé](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")  
+  ![Liste de zone de liste déroulante&#45;bouton enfoncé](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- N/A (hérite)  
+  N/A (hérite)  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ComboBoxGlyph`  
+  `Environment.ComboBoxGlyph`  
   
- ![Zone de liste déroulante&#47;drop&#45;liste déroulante](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")  
+  ![Zone de liste déroulante&#47;drop&#45;liste déroulante](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")  
   
- **Liste déroulante**  
+  **Liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxPopupBackgroundBegin`  
+  `Environment.ComboBoxPopupBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Bordure  
+  Bordure  
   
- `Environment.ComboBoxPopupBorder`  
+  `Environment.ComboBoxPopupBorder`  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Champ d’entrée de zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")  
+  ![Champ d’entrée de zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxMouseOverBackgroundBegin`  
+  `Environment.ComboBoxMouseOverBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxMouseOverText`  
+  `Environment.ComboBoxMouseOverText`  
   
- Bordure  
+  Bordure  
   
- `Environment.ComboBoxMouseOverBorder`  
+  `Environment.ComboBoxMouseOverBorder`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.ComboBoxMouseOverSeparator`  
+  `Environment.ComboBoxMouseOverSeparator`  
   
- ![Zone de liste déroulante&#47;drop&#45;le bouton de survol](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")  
+  ![Zone de liste déroulante&#47;drop&#45;le bouton de survol](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxButtonMouseOverBackground`  
+  `Environment.ComboBoxButtonMouseOverBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ComboBoxMouseOverGlyph`  
+  `Environment.ComboBoxMouseOverGlyph`  
   
- ![Zone de liste déroulante&#47;drop&#45;liste pointage vers le bas](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")  
+  ![Zone de liste déroulante&#47;drop&#45;liste pointage vers le bas](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")  
   
- **Liste déroulante**  
+  **Liste déroulante**  
   
- Arrière-plan (élément de menu)  
+  Arrière-plan (élément de menu)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- Bordure (élément de menu)  
+  Bordure (élément de menu)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **Focus**  
+  **Focus**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Color.category  
+  Nom du jeton : Color.category  
   
- ![Champ d’entrée de zone de liste déroulante concentré](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")  
+  ![Champ d’entrée de zone de liste déroulante concentré](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxFocusedBackground`  
+  `Environment.ComboBoxFocusedBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxFocusedText`  
+  `Environment.ComboBoxFocusedText`  
   
- Bordure  
+  Bordure  
   
- `Environment.ComboBoxFocusedBorder`  
+  `Environment.ComboBoxFocusedBorder`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.ComboBoxFocusedButtonSeparator`  
+  `Environment.ComboBoxFocusedButtonSeparator`  
   
- ![Zone de liste déroulante&#47;drop&#45;vers le bas du bouton actif](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")  
+  ![Zone de liste déroulante&#47;drop&#45;vers le bas du bouton actif](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxFocusedButtonBackground`  
+  `Environment.ComboBoxFocusedButtonBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ComboBoxFocusedGlyph`  
+  `Environment.ComboBoxFocusedGlyph`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Color.category  
+  Nom du jeton : Color.category  
   
- ![Champ d’entrée de zone de liste déroulante enfoncé](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")  
+  ![Champ d’entrée de zone de liste déroulante enfoncé](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxMouseDownBackground`  
+  `Environment.ComboBoxMouseDownBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxMouseDownText`  
+  `Environment.ComboBoxMouseDownText`  
   
- Bordure  
+  Bordure  
   
- `Environment.ComboBoxMouseDownBorder`  
+  `Environment.ComboBoxMouseDownBorder`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.ComboBoxMouseDownSeparator`  
+  `Environment.ComboBoxMouseDownSeparator`  
   
- ![Zone de liste déroulante&#47;drop&#45;le bouton enfoncé](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")  
+  ![Zone de liste déroulante&#47;drop&#45;le bouton enfoncé](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxButtonMouseDownBackground`  
+  `Environment.ComboBoxButtonMouseDownBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ComboBoxMouseDownGlyph`  
+  `Environment.ComboBoxMouseDownGlyph`  
   
- **Désactivé**  
+  **Désactivé**  
   
- ![Champ d’entrée de zone de liste déroulante désactivée](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")  
+  ![Champ d’entrée de zone de liste déroulante désactivée](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `Environment.ComboBoxDisabledBackground`  
+  `Environment.ComboBoxDisabledBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxDisabledText`  
+  `Environment.ComboBoxDisabledText`  
   
- Bordure  
+  Bordure  
   
- `Environment.ComboBoxDisabledBorder`  
+  `Environment.ComboBoxDisabledBorder`  
   
- Séparateur  
+  Séparateur  
   
- Aucun séparateur  
+  Aucun séparateur  
   
- ![Zone de liste déroulante&#47;drop&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")  
+  ![Zone de liste déroulante&#47;drop&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ComboBoxDisabledGlyph`  
+  `Environment.ComboBoxDisabledGlyph`  
   
 ####  <a name="BKMK_CommandDropDown"></a> Liste déroulante  
   
@@ -816,203 +816,203 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour tout élément qui n’est pas similaire à une liste déroulante.  
   
--   pour les zones de liste modifiable ou les boutons partagés.  
+- pour les zones de liste modifiable ou les boutons partagés.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas du champ de sélection](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")  
+  ![DROP&#45;vers le bas du champ de sélection](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")  
   
- **Champ de sélection**  
+  **Champ de sélection**  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownBackground`  
+  `Environment.DropDownBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `DropDownText`  
+  `DropDownText`  
   
- Bordure  
+  Bordure  
   
- `DropDownBorder`  
+  `DropDownBorder`  
   
- Séparateur  
+  Séparateur  
   
- Aucun séparateur  
+  Aucun séparateur  
   
- ![DROP&#45;bouton enfoncé](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")  
+  ![DROP&#45;bouton enfoncé](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DropDownGlyph`  
+  `Environment.DropDownGlyph`  
   
- ![DROP&#45;liste déroulante](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")  
+  ![DROP&#45;liste déroulante](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")  
   
- **Liste déroulante**  
+  **Liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownPopupBackgroundBegin`  
+  `Environment.DropDownPopupBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Bordure  
+  Bordure  
   
- `Environment.DropDownPopupBorder`  
+  `Environment.DropDownPopupBorder`  
   
- Ombre  
+  Ombre  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas du champ de sélection de survol](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")  
+  ![DROP&#45;vers le bas du champ de sélection de survol](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")  
   
- **Champ de sélection**  
+  **Champ de sélection**  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownMouseOverBackgroundBegin`  
+  `Environment.DropDownMouseOverBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.DropDownMouseOverText`  
+  `Environment.DropDownMouseOverText`  
   
- Bordure  
+  Bordure  
   
- `Environment.DropDownMouseOverBorder`  
+  `Environment.DropDownMouseOverBorder`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.DropDownButtonMouseOverSeparator`  
+  `Environment.DropDownButtonMouseOverSeparator`  
   
- ![DROP&#45;le bouton de survol](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")  
+  ![DROP&#45;le bouton de survol](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownButtonMouseOverBackground`  
+  `Environment.DropDownButtonMouseOverBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DropDownMouseOverGlyph`  
+  `Environment.DropDownMouseOverGlyph`  
   
- ![DROP&#45;liste pointage vers le bas](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")  
+  ![DROP&#45;liste pointage vers le bas](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")  
   
- **Liste déroulante**  
+  **Liste déroulante**  
   
- Arrière-plan (élément de menu)  
+  Arrière-plan (élément de menu)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- Bordure (élément de menu)  
+  Bordure (élément de menu)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas du champ de sélection enfoncé](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")  
+  ![DROP&#45;vers le bas du champ de sélection enfoncé](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")  
   
- **Champ de sélection**  
+  **Champ de sélection**  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownMouseDownBackground`  
+  `Environment.DropDownMouseDownBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.DropDownMouseDownText`  
+  `Environment.DropDownMouseDownText`  
   
- Bordure  
+  Bordure  
   
- `Environment.DropDownMouseDownBorder`  
+  `Environment.DropDownMouseDownBorder`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.DropDownButtonMouseDownSeparator`  
+  `Environment.DropDownButtonMouseDownSeparator`  
   
- ![DROP&#45;le bouton enfoncé](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")  
+  ![DROP&#45;le bouton enfoncé](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownButtonMouseDownBackground`  
+  `Environment.DropDownButtonMouseDownBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DropDownMouseDownGlyph`  
+  `Environment.DropDownMouseDownGlyph`  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas du champ de sélection désactivée](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")  
+  ![DROP&#45;vers le bas du champ de sélection désactivée](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")  
   
- Présentation  
+  Présentation  
   
- `Environment.DropDownDisabledBackground`  
+  `Environment.DropDownDisabledBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.DropDownDisabledText`  
+  `Environment.DropDownDisabledText`  
   
- Bordure  
+  Bordure  
   
- `Environment.DropDownDisabledBorder`  
+  `Environment.DropDownDisabledBorder`  
   
- Séparateur  
+  Séparateur  
   
- Aucun séparateur  
+  Aucun séparateur  
   
- ![DROP&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")  
+  ![DROP&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")  
   
- Présentation  
+  Présentation  
   
- N/A  
+  N/A  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DropDownDisabledGlyph`  
+  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Bouton Fractionner  
  Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes déroulantes de bouton partagé sont des implémentations de la barre de commandes [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
@@ -1025,139 +1025,139 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour les autres types de boutons.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton partagé](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")  
+  ![Bouton partagé](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")  
   
- **Bouton partagé (par défaut)**  
+  **Bouton partagé (par défaut)**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarSplitButtonGlyph`  
+  `Environment.CommandBarSplitButtonGlyph`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- Séparateur  
+  Séparateur  
   
- N/A  
+  N/A  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton Fractionner au pointage](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")  
+  ![Bouton Fractionner au pointage](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")  
   
- **Bouton partagé (pointage)**  
+  **Bouton partagé (pointage)**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarSplitButtonMouseOverGlyph`  
+  `Environment.CommandBarSplitButtonMouseOverGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Séparateur  
+  Séparateur  
   
- `Environment.CommandBarSplitButtonSeparator`  
+  `Environment.CommandBarSplitButtonSeparator`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton Fractionner enfoncé](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")  
+  ![Bouton Fractionner enfoncé](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")  
   
- **Bouton partagé (appuyé)**  
+  **Bouton partagé (appuyé)**  
   
- Présentation  
+  Présentation  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarSplitButtonMouseDownGlyph`  
+  `Environment.CommandBarSplitButtonMouseDownGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Séparateur  
+  Séparateur  
   
- N/A  
+  N/A  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton Fractionner désactivé](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")  
+  ![Bouton Fractionner désactivé](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")  
   
- **Bouton partagé (désactivé)**  
+  **Bouton partagé (désactivé)**  
   
- Présentation  
+  Présentation  
   
- N/A  
+  N/A  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.ComboBoxItemTextInactive`  
+  `Environment.ComboBoxItemTextInactive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- Séparateur  
+  Séparateur  
   
- N/A  
+  N/A  
   
 #### <a name="more-options-and-overflow-buttons"></a>Boutons « Autres options » et « >> »  
  Le bouton « Autres options » est utilisé quand un groupe de barres de commandes peut être personnalisé en ajoutant ou en supprimant des boutons de barre de commandes associés. Le bouton « >> » apparaît quand une barre de commandes est tronquée en raison d’un manque d’espace horizontal. En cliquant dessus, un menu se déroule pour afficher les autres boutons de la barre de commandes qui ne pouvaient pas apparaître. Les couleurs de ces deux boutons sont contrôlées par le même ensemble de noms de jeton.  
@@ -1420,19 +1420,19 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
 #### <a name="open-document-tabs"></a>Onglets de document ouvert  
  Chaque document ouvert possède un onglet dans le canal d’onglet de document qui affiche son nom. Les documents peuvent être soit sélectionnés, soit ouverts en arrière-plan et leurs onglets reflètent ces états :  
   
--   L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.  
+- L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.  
   
--   Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.  
+- Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.  
   
- ![Ligne rouge d’onglet de document ouvert](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
+  ![Ligne rouge d’onglet de document ouvert](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
   
- Utilisez...  
- quand vous créez des onglets de document personnalisés.  
+  Utilisez...  
+  quand vous créez des onglets de document personnalisés.  
   
- N’utilisez pas...  
- -   pour des onglets provisoires (en version préliminaire).  
+  N’utilisez pas...  
+  -   pour des onglets provisoires (en version préliminaire).  
   
--   pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
+- pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
   
 #### <a name="selected-tab"></a>Onglet sélectionné  
  **Focus**  
@@ -1553,117 +1553,117 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour tout type de document ou d’onglet qui n’est pas provisoire (en version préliminaire).  
   
--   pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
+- pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
   
- **Onglet d’aperçu sélectionné : focus**  
+  **Onglet d’aperçu sélectionné : focus**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Onglet d’aperçu actif](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")  
+  ![Onglet d’aperçu actif](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")  
   
- **Onglet d’aperçu avec focus**  
+  **Onglet d’aperçu avec focus**  
   
- Présentation  
+  Présentation  
   
- `Environment.FileTabProvisionalSelectedActive`  
+  `Environment.FileTabProvisionalSelectedActive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.FileTabProvisionalSelectedActiveForeground`  
+  `Environment.FileTabProvisionalSelectedActiveForeground`  
   
- Bordure  
+  Bordure  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- Défini sur la même couleur que l’arrière-plan.  
+  Défini sur la même couleur que l’arrière-plan.  
   
- Bordure de document  
+  Bordure de document  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- **Onglet d’aperçu sélectionné : sans focus**  
+  **Onglet d’aperçu sélectionné : sans focus**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Onglet d’aperçu inactif](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")  
+  ![Onglet d’aperçu inactif](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")  
   
- **Onglet d’aperçu sans focus**  
+  **Onglet d’aperçu sans focus**  
   
- Présentation  
+  Présentation  
   
- `Environment.FileTabProvisionalSelectedInactive`  
+  `Environment.FileTabProvisionalSelectedInactive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.FileTabProvisionalSelectedInactiveForeground`  
+  `Environment.FileTabProvisionalSelectedInactiveForeground`  
   
- Bordure  
+  Bordure  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- Bordure de document  
+  Bordure de document  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- **Onglet d’aperçu d’arrière-plan : par défaut**  
+  **Onglet d’aperçu d’arrière-plan : par défaut**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Onglet d’aperçu d’arrière-plan](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")  
+  ![Onglet d’aperçu d’arrière-plan](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")  
   
- **Onglet d’arrière-plan onglet d’aperçu**  
+  **Onglet d’arrière-plan onglet d’aperçu**  
   
- Présentation  
+  Présentation  
   
- `Environment.FileTabProvisionalInactive`  
+  `Environment.FileTabProvisionalInactive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.FileTabProvisionalInactiveForeground`  
+  `Environment.FileTabProvisionalInactiveForeground`  
   
- Bordure  
+  Bordure  
   
- `Environment.FileTabProvisionalInactiveBorder`  
+  `Environment.FileTabProvisionalInactiveBorder`  
   
- Défini sur la même couleur que l’arrière-plan.  
+  Défini sur la même couleur que l’arrière-plan.  
   
- **Onglet d’aperçu d’arrière-plan : placez le curseur**  
+  **Onglet d’aperçu d’arrière-plan : placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Onglet d’aperçu d’arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")  
+  ![Onglet d’aperçu d’arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")  
   
- **Onglet d’arrière-plan onglet d’aperçu au pointage**  
+  **Onglet d’arrière-plan onglet d’aperçu au pointage**  
   
- Présentation  
+  Présentation  
   
- `Environment.FileTabProvisionalHover`  
+  `Environment.FileTabProvisionalHover`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `Environment.FileTabProvisionalHoverForeground`  
+  `Environment.FileTabProvisionalHoverForeground`  
   
- Bordure  
+  Bordure  
   
- `Environment.FileTabProvisionalHoverBorder`  
+  `Environment.FileTabProvisionalHoverBorder`  
   
- Défini sur la même couleur que l’arrière-plan.  
+  Défini sur la même couleur que l’arrière-plan.  
   
 #### <a name="document-overflow-button"></a>Bouton de dépassement de capacité de document  
  Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu déroulant de dépassement de capacité de document, contrôlé par les couleurs **CommandBarMenu** (consultez [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), présente la liste de tous les documents ouverts, à la fois visibles et masqués, ainsi que le glyphe de dépassement de capacité change selon que tous les documents ouverts sont affichés dans le canal d’onglet.  
@@ -1676,79 +1676,79 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour une interface utilisateur qui n’est pas similaire à un bouton de dépassement de capacité.  
   
--   pour des boutons de dépassement de capacité de barre de commandes.  
+- pour des boutons de dépassement de capacité de barre de commandes.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")  
+  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")  
   
- **Bouton de dépassement de capacité de document**  
+  **Bouton de dépassement de capacité de document**  
   
- Présentation  
+  Présentation  
   
- `Environment.DocWellOverflowButtonBackground`  
+  `Environment.DocWellOverflowButtonBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DocWellOverflowButtonGlyph`  
+  `Environment.DocWellOverflowButtonGlyph`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Dépassement au pointage](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")  
+  ![Dépassement au pointage](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")  
   
- **Bouton de dépassement de capacité de document au pointage**  
+  **Bouton de dépassement de capacité de document au pointage**  
   
- Présentation  
+  Présentation  
   
- `Environment.DocWellOverflowButtonMouseOverBackground`  
+  `Environment.DocWellOverflowButtonMouseOverBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DocWellOverflowButtonMouseOverGlyph`  
+  `Environment.DocWellOverflowButtonMouseOverGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.DocWellOverflowButtonMouseOverBorder`  
+  `Environment.DocWellOverflowButtonMouseOverBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Dépassement enfoncé](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")  
+  ![Dépassement enfoncé](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")  
   
- **Enfoncé le bouton de dépassement de capacité de document**  
+  **Enfoncé le bouton de dépassement de capacité de document**  
   
- Présentation  
+  Présentation  
   
- `Environment.DocWellOverflowButtonMouseDownBackground`  
+  `Environment.DocWellOverflowButtonMouseDownBackground`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.DocWellOverflowButtonMouseDownGlyph`  
+  `Environment.DocWellOverflowButtonMouseDownGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.DocWellOverflowButtonMouseDownBorder`  
+  `Environment.DocWellOverflowButtonMouseDownBorder`  
   
 ## <a name="tool-windows"></a>Fenêtres d’outil  
  Il est inutile de répliquer les fenêtres d’outil, car elles sont fournies par l’environnement Visual Studio. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres d’outil, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
@@ -1908,127 +1908,127 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour les boutons qui apparaissent à d’autres endroits.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton actif de la barre de titre](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")  
+  ![Bouton actif de la barre de titre](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")  
   
- **Focus**  
+  **Focus**  
   
- Présentation  
+  Présentation  
   
- N/A  
+  N/A  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ToolWindowButtonActiveGlyph`  
+  `Environment.ToolWindowButtonActiveGlyph`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- ![Bouton inactif de la barre de titre](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")  
+  ![Bouton inactif de la barre de titre](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")  
   
- **Inactif**  
+  **Inactif**  
   
- Présentation  
+  Présentation  
   
- N/A  
+  N/A  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ToolWindowButtonInactiveGlyph`  
+  `Environment.ToolWindowButtonInactiveGlyph`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton de barre de titre actif au pointage](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")  
+  ![Bouton de barre de titre actif au pointage](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")  
   
- **Focus**  
+  **Focus**  
   
- Présentation  
+  Présentation  
   
- `Environment.ToolWindowButtonHoverActive`  
+  `Environment.ToolWindowButtonHoverActive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ToolWindowButtonHoverActiveGlyph`  
+  `Environment.ToolWindowButtonHoverActiveGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.ToolWindowButtonHoverActiveBorder`  
+  `Environment.ToolWindowButtonHoverActiveBorder`  
   
- ![Inactif au pointage du bouton de la barre de titre](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")  
+  ![Inactif au pointage du bouton de la barre de titre](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")  
   
- **Inactif**  
+  **Inactif**  
   
- Présentation  
+  Présentation  
   
- `Environment.ToolWindowButtonHoverInactive`  
+  `Environment.ToolWindowButtonHoverInactive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ToolWindowButtonHoverInactiveGlyph`  
+  `Environment.ToolWindowButtonHoverInactiveGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.ToolWindowButtonHoverInactiveBorder`  
+  `Environment.ToolWindowButtonHoverInactiveBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton actif et enfoncé la barre de titre](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")  
+  ![Bouton actif et enfoncé la barre de titre](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")  
   
- **Focus**  
+  **Focus**  
   
- Présentation  
+  Présentation  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ToolWindowButtonDownActiveGlyph`  
+  `Environment.ToolWindowButtonDownActiveGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
- ![Bouton de barre de titre inactif et enfoncé](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")  
+  ![Bouton de barre de titre inactif et enfoncé](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")  
   
- **Inactif**  
+  **Inactif**  
   
- Présentation  
+  Présentation  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `Environment.ToolWindowButtonDownInactiveGlyph`  
+  `Environment.ToolWindowButtonDownInactiveGlyph`  
   
- Bordure  
+  Bordure  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
 ### <a name="tool-window-tabs"></a>Onglets de fenêtre Outil  
  ![Ligne rouge d’onglet de fenêtre outil](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303-102_ToolWindowTabRedline")  
@@ -2218,307 +2218,307 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
   
  Une zone de recherche peut être dans plusieurs états, dont certains s’excluent mutuellement :  
   
--   Les états « avec focus » ou « sans focus » font référence à la présence ou non du curseur dans la zone de texte.  
+- Les états « avec focus » ou « sans focus » font référence à la présence ou non du curseur dans la zone de texte.  
   
--   Les états « actif » ou « inactif » font référence à l’éventuel entrée par l’utilisateur d’une requête de recherche dans la zone de texte.  
+- Les états « actif » ou « inactif » font référence à l’éventuel entrée par l’utilisateur d’une requête de recherche dans la zone de texte.  
   
--   L’état « pointage » signifie que l’utilisateur a placé le curseur de la souris au-dessus de la zone de recherche (cet état remplace tous les autres états).  
+- L’état « pointage » signifie que l’utilisateur a placé le curseur de la souris au-dessus de la zone de recherche (cet état remplace tous les autres états).  
   
--   L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.  
+- L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.  
   
- ![Ligne rouge de zone de recherche](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
+  ![Ligne rouge de zone de recherche](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
   
- Utilisez...  
- quand vous concevez une zone de recherche personnalisée.  
+  Utilisez...  
+  quand vous concevez une zone de recherche personnalisée.  
   
- N’utilisez pas...  
- -   pour tout élément qui n’est pas une zone de recherche.  
+  N’utilisez pas...  
+  -   pour tout élément qui n’est pas une zone de recherche.  
   
--   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la zone de recherche.  
+- pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la zone de recherche.  
   
- **Focus**  
+  **Focus**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Champ d’entrée de recherche actif](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")  
+  ![Champ d’entrée de recherche actif](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.FocusedBorder`  
+  `SearchControl.FocusedBorder`  
   
- Séparateur  
+  Séparateur  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- ![Bouton d’action de recherche actif](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")  
+  ![Bouton d’action de recherche actif](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")  
   
- **Bouton d’action**  
+  **Bouton d’action**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (glyphe Rechercher)  
+  Premier plan (glyphe Rechercher)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- Premier plan (glyphe Arrêter)  
+  Premier plan (glyphe Arrêter)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- Premier plan (glyphe Effacer)  
+  Premier plan (glyphe Effacer)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- ![Liste de recherche&#45;vers le bas du bouton actif](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")  
+  ![Liste de recherche&#45;vers le bas du bouton actif](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.FocusedDropDownButton`  
+  `SearchControl.FocusedDropDownButton`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `SearchControl.FocusedDropDownButtonGlyph`  
+  `SearchControl.FocusedDropDownButtonGlyph`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.FocusedDropDownButtonBorder`  
+  `SearchControl.FocusedDropDownButtonBorder`  
   
- **Inactif**  
+  **Inactif**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")  
+  ![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")  
   
- **Champ d’entrée actif**  
+  **Champ d’entrée actif**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Séparateur  
+  Séparateur  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")  
+  ![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")  
   
- **Champ d’entrée inactif**  
+  **Champ d’entrée inactif**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Séparateur  
+  Séparateur  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Bouton d’action de recherche inactif](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")  
+  ![Bouton d’action de recherche inactif](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")  
   
- **Bouton d’action**  
+  **Bouton d’action**  
   
- Présentation  
+  Présentation  
   
- N/A  
+  N/A  
   
- Premier plan (glyphe Rechercher)  
+  Premier plan (glyphe Rechercher)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- Premier plan (glyphe Arrêter)  
+  Premier plan (glyphe Arrêter)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- Premier plan (glyphe Effacer)  
+  Premier plan (glyphe Effacer)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Bordure  
+  Bordure  
   
- N/A  
+  N/A  
   
- ![Liste de recherche&#45;vers le bas du bouton inactif](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")  
+  ![Liste de recherche&#45;vers le bas du bouton inactif](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.UnfocusedDropDownButton`  
+  `SearchControl.UnfocusedDropDownButton`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `SearchControl.UnfocusedDropDownButtonGlyph`  
+  `SearchControl.UnfocusedDropDownButtonGlyph`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.UnfocusedDropDownButtonBorder`  
+  `SearchControl.UnfocusedDropDownButtonBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Bouton d’action de recherche enfoncé](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")  
+  ![Bouton d’action de recherche enfoncé](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")  
   
- **Bouton d’action**  
+  **Bouton d’action**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.ActionButtonMouseDown`  
+  `SearchControl.ActionButtonMouseDown`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `SearchControl.ActionButtonMouseDownGlyph`  
+  `SearchControl.ActionButtonMouseDownGlyph`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.ActionButtonMouseDownBorder`  
+  `SearchControl.ActionButtonMouseDownBorder`  
   
- ![Liste de recherche&#45;le bouton enfoncé](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")  
+  ![Liste de recherche&#45;le bouton enfoncé](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.MouseDownDropDownButton`  
+  `SearchControl.MouseDownDropDownButton`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `SearchControl.MouseDownDropDownButtonGlyph`  
+  `SearchControl.MouseDownDropDownButtonGlyph`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.MouseDownDropDownButtonBorder`  
+  `SearchControl.MouseDownDropDownButtonBorder`  
   
- **Texte mis en surbrillance (uniquement)**  
+  **Texte mis en surbrillance (uniquement)**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Mise en surbrillance du champ d’entrée de recherche](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")  
+  ![Mise en surbrillance du champ d’entrée de recherche](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")  
   
- **Champ d’entrée avec le texte mis en surbrillance**  
+  **Champ d’entrée avec le texte mis en surbrillance**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.Selection`  
+  `SearchControl.Selection`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- Séparateur  
+  Séparateur  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Champ d’entrée de recherche désactivé](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")  
+  ![Champ d’entrée de recherche désactivé](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")  
   
- **Champ d’entrée**  
+  **Champ d’entrée**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.DisabledBorder`  
+  `SearchControl.DisabledBorder`  
   
- Séparateur  
+  Séparateur  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![Bouton d’action de recherche désactivé](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")  
+  ![Bouton d’action de recherche désactivé](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")  
   
- **Bouton d’action**  
+  **Bouton d’action**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `SearchControl.ActionButtonDisabledGlyph`  
+  `SearchControl.ActionButtonDisabledGlyph`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- ![Liste de recherche&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")  
+  ![Liste de recherche&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")  
   
- **Bouton de liste déroulante**  
+  **Bouton de liste déroulante**  
   
- Présentation  
+  Présentation  
   
- Aucun.  
+  Aucun.  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `SearchControl.DisabledDownButtonGlyph`  
+  `SearchControl.DisabledDownButtonGlyph`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
 #### <a name="search-drop-down-lists"></a>Listes déroulantes de recherche  
  Le menu déroulant de la zone de recherche est susceptible d’être légèrement plus complexe que les autres menus déroulants dans Visual Studio. Les sections « options de recherche » et « recherches suggérées » peuvent apparaître seules ou ensemble dans le menu et chacune possède une couleur distincte. Une ligne sépare également ces deux sections quand elles apparaissent ensemble et une bordure entoure l’ensemble du menu déroulant.  
@@ -2528,176 +2528,176 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  Utilisez...  
  -   quand vous créez une liste déroulante de recherche personnalisée.  
   
--   les noms de jeton corrects pour les composants de liste corrects.  
+- les noms de jeton corrects pour les composants de liste corrects.  
   
- N’utilisez pas...  
- -   pour les listes déroulantes qui apparaissent dans d’autres contextes.  
+  N’utilisez pas...  
+  -   pour les listes déroulantes qui apparaissent dans d’autres contextes.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Par défaut (aucun autre état)**  
+  **Par défaut (aucun autre état)**  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- Bordure  
+  Bordure  
   
- `SearchControl.PopupBorder`  
+  `SearchControl.PopupBorder`  
   
- Séparateur  
+  Séparateur  
   
- `SearchControl.PopupSectionHeaderSeparator`  
+  `SearchControl.PopupSectionHeaderSeparator`  
   
- Ombre  
+  Ombre  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Recherche suggérée](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")  
+  ![Recherche suggérée](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")  
   
- **Recherches suggérées**  
+  **Recherches suggérées**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.PopupItemsListBackgroundGradientBegin`  
+  `SearchControl.PopupItemsListBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.PopupItemText`  
+  `SearchControl.PopupItemText`  
   
- ![Case à cocher Rechercher](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")  
+  ![Case à cocher Rechercher](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")  
   
- **Options de recherche (case à cocher)**  
+  **Options de recherche (case à cocher)**  
   
- ![Options de recherche](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")  
+  ![Options de recherche](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")  
   
- **Options de recherche (lien)**  
+  **Options de recherche (lien)**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.PopupSectionBackgroundGradientBegin`  
+  `SearchControl.PopupSectionBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte de case à cocher)  
+  Premier plan (texte de case à cocher)  
   
- `SearchControl.PopupCheckboxText`  
+  `SearchControl.PopupCheckboxText`  
   
- Premier plan (texte de lien)  
+  Premier plan (texte de lien)  
   
- `SearchControl.PopupButtonText`  
+  `SearchControl.PopupButtonText`  
   
- Arrière-plan d’en-tête  
+  Arrière-plan d’en-tête  
   
- `SearchControl.PopupSectionHeaderGradientBegin`  
+  `SearchControl.PopupSectionHeaderGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte d’en-tête)  
+  Premier plan (texte d’en-tête)  
   
- `SearchControl.PopupSectionHeaderText`  
+  `SearchControl.PopupSectionHeaderText`  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Recherche suggérée au pointage](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")  
+  ![Recherche suggérée au pointage](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")  
   
- **Recherches suggérées**  
+  **Recherches suggérées**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `SearchControl.PopupMouseOverItemText`  
+  `SearchControl.PopupMouseOverItemText`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- ![Case à cocher de recherche au pointage](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")  
+  ![Case à cocher de recherche au pointage](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")  
   
- **Recherches suggérées (case à cocher)**  
+  **Recherches suggérées (case à cocher)**  
   
- ![Options de survol de recherche](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")  
+  ![Options de survol de recherche](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")  
   
- **Options de recherche**  
+  **Options de recherche**  
   
- Présentation  
+  Présentation  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte de case à cocher)  
+  Premier plan (texte de case à cocher)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- Premier plan (texte de lien)  
+  Premier plan (texte de lien)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
- Bordure  
+  Bordure  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Recherche suggérée enfoncée](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")  
+  ![Recherche suggérée enfoncée](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")  
   
- **Recherches suggérées (case à cocher)**  
+  **Recherches suggérées (case à cocher)**  
   
- ![Rechercher les options enfoncées](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")  
+  ![Rechercher les options enfoncées](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")  
   
- **Options de recherche**  
+  **Options de recherche**  
   
- Arrière-plan de case à cocher  
+  Arrière-plan de case à cocher  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte de case à cocher)  
+  Premier plan (texte de case à cocher)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- Arrière-plan de lien  
+  Arrière-plan de lien  
   
- `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
   
- Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
+  Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.  
   
- Premier plan (texte de lien)  
+  Premier plan (texte de lien)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
 ### <a name="hyperlink"></a>Lien hypertexte  
  Le lien hypertexte est un contrôle qui n’a pas de paire premier plan/arrière-plan. Dans tous les cas, utilisez la couleur du lien hypertexte de premier plan, qui s’affiche correctement sur les arrière-plans foncés, gris et blancs. Si vous n’utilisez pas le jeton de couleur du contrôle de lien hypertexte, la couleur système par défaut pour l’état « appuyé » apparaît, laquelle clignote en rouge. Ce clignotement rouge indique le contrôle n’utilise pas le jeton de couleur d’environnement approprié.  
@@ -2923,181 +2923,181 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour tout élément qui n’est pas similaire à une arborescence.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Vue arborescente](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")  
+  ![Vue arborescente](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")  
   
- Présentation  
+  Présentation  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.Glyph`  
+  `TreeView.Glyph`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Arborescence au pointage](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")  
+  ![Arborescence au pointage](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")  
   
- Présentation  
+  Présentation  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.GlyphMouseOver`  
+  `TreeView.GlyphMouseOver`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- **Faites glisser**  
+  **Faites glisser**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Glissement d’arborescence](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")  
+  ![Glissement d’arborescence](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")  
   
- Présentation  
+  Présentation  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.DragOverItemGlyph`  
+  `TreeView.DragOverItemGlyph`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- **sélectionné**  
+  **sélectionné**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Arborescence concentré](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")  
+  ![Arborescence concentré](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")  
   
- **Focus**  
+  **Focus**  
   
- Présentation  
+  Présentation  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.SelectedItemActiveGlyph`  
+  `TreeView.SelectedItemActiveGlyph`  
   
- Bordure  
+  Bordure  
   
- `TreeView.FocusVisualBorder`  
+  `TreeView.FocusVisualBorder`  
   
- ![Arborescence inactive](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")  
+  ![Arborescence inactive](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")  
   
- **Inactif**  
+  **Inactif**  
   
- Présentation  
+  Présentation  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.SelectedItemInactiveGlyph`  
+  `TreeView.SelectedItemInactiveGlyph`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- **Pointage sélectionné**  
+  **Pointage sélectionné**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![Arborescence actif au pointage](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")  
+  ![Arborescence actif au pointage](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")  
   
- **Focus**  
+  **Focus**  
   
- Présentation  
+  Présentation  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Bordure  
+  Bordure  
   
- Aucun`TreeView.FocusVisualBorder`  
+  Aucun`TreeView.FocusVisualBorder`  
   
- ![Arborescence inactive au pointage](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")  
+  ![Arborescence inactive au pointage](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")  
   
- **Inactif**  
+  **Inactif**  
   
- Présentation  
+  Présentation  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Premier plan (texte)  
+  Premier plan (texte)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- Premier plan (glyphe)  
+  Premier plan (glyphe)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
 ### <a name="button-controls"></a>Contrôles boutons  
  ![Ligne rouge de contrôle de bouton](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")  
@@ -3346,229 +3346,229 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour toute interface utilisateur qui n’est pas une zone déroulante ou une zone de liste modifiable.  
   
--   pour un [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
+- pour un [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
   
- **Default**  
+  **Default**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas&#47;zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")  
+  ![DROP&#45;vers le bas&#47;zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")  
   
- Présentation  
+  Présentation  
   
- `CommonControls.ComboBoxBackground`  
+  `CommonControls.ComboBoxBackground`  
   
- Bordure  
+  Bordure  
   
- `CommonControls.ComboBoxBorder`  
+  `CommonControls.ComboBoxBorder`  
   
- Texte  
+  Texte  
   
- `CommonControls.ComboBoxText`  
+  `CommonControls.ComboBoxText`  
   
- Séparateur  
+  Séparateur  
   
- `CommonControls.ComboBoxSeparator`  
+  `CommonControls.ComboBoxSeparator`  
   
- Glyphe  
+  Glyphe  
   
- `CommonControls.ComboBoxGlyph`  
+  `CommonControls.ComboBoxGlyph`  
   
- Arrière-plan de glyphe  
+  Arrière-plan de glyphe  
   
- `CommonControls.ComboBoxGlyphBackground`  
+  `CommonControls.ComboBoxGlyphBackground`  
   
- **Désactivé**  
+  **Désactivé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas&#47;désactivée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")  
+  ![DROP&#45;vers le bas&#47;désactivée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")  
   
- Présentation  
+  Présentation  
   
- `CommonControls.ComboBoxBackgroundDisabled`  
+  `CommonControls.ComboBoxBackgroundDisabled`  
   
- Bordure  
+  Bordure  
   
- `CommonControls.ComboBoxBorderDisabled`  
+  `CommonControls.ComboBoxBorderDisabled`  
   
- Texte  
+  Texte  
   
- `CommonControls.ComboBoxTextDisabled`  
+  `CommonControls.ComboBoxTextDisabled`  
   
- Séparateur  
+  Séparateur  
   
- `CommonControls.ComboBoxSeparatorDisabled`  
+  `CommonControls.ComboBoxSeparatorDisabled`  
   
- Glyphe  
+  Glyphe  
   
- `CommonControls.ComboBoxGlyphDisabled`  
+  `CommonControls.ComboBoxGlyphDisabled`  
   
- Arrière-plan de glyphe  
+  Arrière-plan de glyphe  
   
- `CommonControls.ComboBoxGlyphBackgroundDisabled`  
+  `CommonControls.ComboBoxGlyphBackgroundDisabled`  
   
- **Placez le curseur**  
+  **Placez le curseur**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas&#47;zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")  
+  ![DROP&#45;vers le bas&#47;zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")  
   
- Présentation  
+  Présentation  
   
- `CommonControls.ComboBoxBackgroundHover`  
+  `CommonControls.ComboBoxBackgroundHover`  
   
- Bordure  
+  Bordure  
   
- `CommonControls.ComboBoxBorderHover`  
+  `CommonControls.ComboBoxBorderHover`  
   
- Texte  
+  Texte  
   
- `CommonControls.ComboBoxTextHover`  
+  `CommonControls.ComboBoxTextHover`  
   
- Séparateur  
+  Séparateur  
   
- `CommonControls.ComboBoxSeparatorHover`  
+  `CommonControls.ComboBoxSeparatorHover`  
   
- Glyphe  
+  Glyphe  
   
- `CommonControls.ComboBoxGlyphHover`  
+  `CommonControls.ComboBoxGlyphHover`  
   
- Arrière-plan de glyphe  
+  Arrière-plan de glyphe  
   
- `CommonControls.ComboBoxGlyphBackgroundHover`  
+  `CommonControls.ComboBoxGlyphBackgroundHover`  
   
- **Enfoncé**  
+  **Enfoncé**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas&#47;appuyée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")  
+  ![DROP&#45;vers le bas&#47;appuyée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")  
   
- Présentation  
+  Présentation  
   
- `CommonControls.ComboBoxBackgroundPressed`  
+  `CommonControls.ComboBoxBackgroundPressed`  
   
- Bordure  
+  Bordure  
   
- `CommonControls.ComboBoxBorderPressed`  
+  `CommonControls.ComboBoxBorderPressed`  
   
- Texte  
+  Texte  
   
- `CommonControls.ComboBoxTextPressed`  
+  `CommonControls.ComboBoxTextPressed`  
   
- Séparateur  
+  Séparateur  
   
- `CommonControls.ComboBoxSeparatorPressed`  
+  `CommonControls.ComboBoxSeparatorPressed`  
   
- Glyphe  
+  Glyphe  
   
- `CommonControls.ComboBoxGlyphPressed`  
+  `CommonControls.ComboBoxGlyphPressed`  
   
- Arrière-plan de glyphe  
+  Arrière-plan de glyphe  
   
- `CommonControls.ComboBoxGlyphBackgroundPressed`  
+  `CommonControls.ComboBoxGlyphBackgroundPressed`  
   
- **Focus**  
+  **Focus**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas&#47;zone de liste déroulante concentré](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")  
+  ![DROP&#45;vers le bas&#47;zone de liste déroulante concentré](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")  
   
- Présentation  
+  Présentation  
   
- `CommonControls.ComboBoxBackgroundFocused`  
+  `CommonControls.ComboBoxBackgroundFocused`  
   
- Bordure  
+  Bordure  
   
- `CommonControls.ComboBoxBorderFocused`  
+  `CommonControls.ComboBoxBorderFocused`  
   
- Texte  
+  Texte  
   
- `CommonControls.ComboBoxTextFocused`  
+  `CommonControls.ComboBoxTextFocused`  
   
- Séparateur  
+  Séparateur  
   
- `CommonControls.ComboBoxSeparatorFocused`  
+  `CommonControls.ComboBoxSeparatorFocused`  
   
- Glyphe  
+  Glyphe  
   
- `CommonControls.ComboBoxGlyphFocused`  
+  `CommonControls.ComboBoxGlyphFocused`  
   
- Arrière-plan de glyphe  
+  Arrière-plan de glyphe  
   
- `CommonControls.ComboBoxGlyphBackgroundFocused`  
+  `CommonControls.ComboBoxGlyphBackgroundFocused`  
   
- **Sélection d’entrée de texte**  
+  **Sélection d’entrée de texte**  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- ![DROP&#45;vers le bas&#47;entrée de texte de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")  
+  ![DROP&#45;vers le bas&#47;entrée de texte de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")  
   
- Surligner  
+  Surligner  
   
- `CommonControls.ComboBoxTextInputSelection`  
+  `CommonControls.ComboBoxTextInputSelection`  
   
- **Appuyé : vue d’élément de liste**  
+  **Appuyé : vue d’élément de liste**  
   
- ![DROP&#45;vers le bas&#47;vue de liste de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")  
+  ![DROP&#45;vers le bas&#47;vue de liste de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")  
   
- Présentation  
+  Présentation  
   
- `CommonControls.ComboBoxListBackground`  
+  `CommonControls.ComboBoxListBackground`  
   
- `CommonControls.ComboBoxListBackgroundHover`  
+  `CommonControls.ComboBoxListBackgroundHover`  
   
- `CommonControls.ComboBoxListItemBackgroundPressed`  
+  `CommonControls.ComboBoxListItemBackgroundPressed`  
   
- `CommonControls.ComboBoxListItemBackgroundFocused`  
+  `CommonControls.ComboBoxListItemBackgroundFocused`  
   
- Bordure  
+  Bordure  
   
- `CommonControls.ComboBoxListBorder`  
+  `CommonControls.ComboBoxListBorder`  
   
- `CommonControls.ComboBoxListBorderHover`  
+  `CommonControls.ComboBoxListBorderHover`  
   
- `CommonControls.ComboBoxListBorderPressed`  
+  `CommonControls.ComboBoxListBorderPressed`  
   
- `CommonControls.ComboBoxListBorderFocused`  
+  `CommonControls.ComboBoxListBorderFocused`  
   
- Texte d’élément  
+  Texte d’élément  
   
- `CommonControls.ComboBoxListItemText`  
+  `CommonControls.ComboBoxListItemText`  
   
- `CommonControls.ComboBoxListItemTextHover`  
+  `CommonControls.ComboBoxListItemTextHover`  
   
- `CommonControls.ComboBoxListItemTextPressed`  
+  `CommonControls.ComboBoxListItemTextPressed`  
   
- `CommonControls.ComboBoxListItemTextFocused`  
+  `CommonControls.ComboBoxListItemTextFocused`  
   
- Ombre d’arrière-plan  
+  Ombre d’arrière-plan  
   
- `CommonControls.ComboBoxListBackgroundShadow`  
+  `CommonControls.ComboBoxListBackgroundShadow`  
   
 ### <a name="tabular-data-grid-controls"></a>Contrôles de données tabulaires (grille)  
  Les contrôles de données tabulaires, également appelés contrôles de grille, sont des contrôles communs pour Visual Studio qui peuvent être utilisés pour présenter des grandes quantités de données dans plusieurs colonnes. Les contrôles de données tabulaires standard se trouvent à plusieurs endroits dans Visual Studio : la fenêtre Outil Liste d’erreurs, les rapports IntelliTrace et l’affichage du tas de mémoire, entre autres. Utilisez toujours les contrôles de données tabulaires standard fournis. Dans de rares cas, vous pouvez ne pas avoir accès aux contrôles de données tabulaires standard. Si tel est le cas, utilisez les noms de jeton suivants pour veiller à ce que votre interface utilisateur soit cohérente avec les autres contrôles de données tabulaires dans Visual Studio.  
@@ -3703,66 +3703,66 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  Utilisez...  
  -   pour les concepteurs qui sont similaires au concepteur de manifeste.  
   
--   au lieu d’utiliser des contrôles d’onglet commun en haut d’un éditeur au sein de la zone de configuration de document.  
+- au lieu d’utiliser des contrôles d’onglet commun en haut d’un éditeur au sein de la zone de configuration de document.  
   
- N’utilisez pas...  
- -   si vous avez plus de six onglets.  
+  N’utilisez pas...  
+  -   si vous avez plus de six onglets.  
   
--   pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.  
+- pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.  
   
- État  
+  État  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- Par défaut (sélectionné)  
+  Par défaut (sélectionné)  
   
- Onglet  
+  Onglet  
   
- Présentation  
+  Présentation  
   
- `ManifestDesigner.TabActive`  
+  `ManifestDesigner.TabActive`  
   
- Bordure  
+  Bordure  
   
- Aucun.  
+  Aucun.  
   
- Volet Description  
+  Volet Description  
   
- Présentation  
+  Présentation  
   
- `ManifestDesigner.DescriptionPane`  
+  `ManifestDesigner.DescriptionPane`  
   
- Page de contenu  
+  Page de contenu  
   
- Présentation  
+  Présentation  
   
- `ManifestDesigner.Background`  
+  `ManifestDesigner.Background`  
   
- Texte d’assistance de boîte de dialogue  
+  Texte d’assistance de boîte de dialogue  
   
- `ManifestDesigner.WatermarkText`  
+  `ManifestDesigner.WatermarkText`  
   
- Ce nom de jeton ne correspond pas à sa fonction.  
+  Ce nom de jeton ne correspond pas à sa fonction.  
   
- Non sélectionné  
+  Non sélectionné  
   
- Onglet  
+  Onglet  
   
- Présentation  
+  Présentation  
   
- `ManifestDesigner.Tab.Inactive`  
+  `ManifestDesigner.Tab.Inactive`  
   
- Pointage  
+  Pointage  
   
- Onglet  
+  Onglet  
   
- Présentation  
+  Présentation  
   
- `ManifestDesigner.Tab.Mouseover`  
+  `ManifestDesigner.Tab.Mouseover`  
   
 ## <a name="tagging"></a>Étiquetage  
  Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de déclarer des mots clés pouvant faire l’objet d’une recherche à des fins de suivi. Par exemple, les chefs de projet et développeurs peuvent utiliser Team Foundation Server (TFS) pour étiqueter des éléments de travail. Les tableaux ci-dessous indiquent les noms de couleurs pour l’étiquette elle-même et le glyphe de l’icône de fermeture qui apparaît dans les états Pointage et Sélectionné.  
@@ -3980,39 +3980,39 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   en tant que remplissage pour les endroits qui ne sont pas des surfaces d’arrière-plan.  
   
--   en guise d’arrière-plan sur lequel placer des éléments de premier plan.  
+- en guise d’arrière-plan sur lequel placer des éléments de premier plan.  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- Couche inférieure  
+  Couche inférieure  
   
- Présentation  
+  Présentation  
   
- `Environment.EnvironmentBackground`  
+  `Environment.EnvironmentBackground`  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- Couche supérieure  
+  Couche supérieure  
   
- Présentation  
+  Présentation  
   
- *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*  
+  *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*  
   
- `Environment.EnvironmentBackgroundGradientBegin`  
+  `Environment.EnvironmentBackgroundGradientBegin`  
   
- `Environment.EnvironmentBackgroundGradientEnd`  
+  `Environment.EnvironmentBackgroundGradientEnd`  
   
- `Environment.EnvironmentBackgroundGradientMiddle1`  
+  `Environment.EnvironmentBackgroundGradientMiddle1`  
   
- `Environment.EnvironmentBackgroundGradientMiddle2`  
+  `Environment.EnvironmentBackgroundGradientMiddle2`  
   
 ### <a name="command-shelf"></a>Interface de commande  
  Deux ensembles de noms de jeton sont utilisés pour les arrière-plans de l’interface de commande : un jeu pour l’emplacement de la barre de menus et l’autre pour l’emplacement des barres de commandes. Un groupe de barres de commandes possède ses propres valeurs de couleur d’arrière-plan, lesquelles sont décrites dans la section « Barre de commandes ». Le texte de la barre de menus et des barres de commandes est traité dans les sections qui leur sont dédiées.  
@@ -4022,40 +4022,40 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  Utilisez...  
  -   pour les zones où vous placez des menus ou barres d’outils.  
   
--   avec l’arrière-plan correct / ? combinaison de nom du jeton de premier plan.  
+- avec l’arrière-plan correct / ? combinaison de nom du jeton de premier plan.  
   
- N’utilisez pas...  
- pour les zones qui ne sont pas similaires à une interface de commande.  
+  N’utilisez pas...  
+  pour les zones qui ne sont pas similaires à une interface de commande.  
   
- Composant  
+  Composant  
   
- Élément  
+  Élément  
   
- Nom du jeton : Category.color  
+  Nom du jeton : Category.color  
   
- Barre de menus  
+  Barre de menus  
   
- Présentation  
+  Présentation  
   
- *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*  
+  *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*  
   
- `Environment.CommandShelfHighlightGradientBegin`  
+  `Environment.CommandShelfHighlightGradientBegin`  
   
- `Environment.CommandShelfHighlightGradientMiddle`  
+  `Environment.CommandShelfHighlightGradientMiddle`  
   
- `Environment.CommandShelfHighlightGradientEnd`  
+  `Environment.CommandShelfHighlightGradientEnd`  
   
- Barre de commandes  
+  Barre de commandes  
   
- Présentation  
+  Présentation  
   
- *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*  
+  *Défini sur la même valeur de couleur dans les thèmes clairs de 2013 Visual Studio et foncés de dégradé.*  
   
- `Environment.CommandShelfBackgroundGradientBegin`  
+  `Environment.CommandShelfBackgroundGradientBegin`  
   
- `Environment.CommandShelfBackgroundGradientMiddle`  
+  `Environment.CommandShelfBackgroundGradientMiddle`  
   
- `Environment.CommandShelfBackgroundGradientEnd`  
+  `Environment.CommandShelfBackgroundGradientEnd`  
   
 ## <a name="toolbox"></a>Boîte à outils  
  La boîte à outils est une fenêtre Outil commune fréquemment utilisée dans Visual Studio. Il s’agit essentiellement d’un contrôle d’arborescence avec un thème spécial et un style appliqués.  
