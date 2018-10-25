@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892309"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Créer des solutions de flux de travail SharePoint
 
@@ -70,25 +70,25 @@ Pour plus d’informations sur SharePoint, consultez [Microsoft produits et Tech
 
  Il existe deux types d’activités :
 
--   *Les activités simples* exécutent une seule unité de travail, telle que « retenir pendant 1 jour » ou « démarrer le service Web ».
+- *Les activités simples* exécutent une seule unité de travail, telle que « retenir pendant 1 jour » ou « démarrer le service Web ».
 
--   *Activités composites* contenir d’autres activités ; par exemple, une activité conditionnelle peut contenir deux branches.
+- *Activités composites* contenir d’autres activités ; par exemple, une activité conditionnelle peut contenir deux branches.
 
- Les deux types d’activités sont disponibles dans le **boîte à outils**.
+  Les deux types d’activités sont disponibles dans le **boîte à outils**.
 
- Activités peuvent avoir des propriétés, méthodes et événements. Utilisez le **propriétés** fenêtre pour définir les propriétés d’une activité.
+  Activités peuvent avoir des propriétés, méthodes et événements. Utilisez le **propriétés** fenêtre pour définir les propriétés d’une activité.
 
- Vous pouvez également créer une activité personnalisée. Pour plus d’informations, consultez [procédure pas à pas : créer une activité de flux de travail de site personnalisé](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Vous pouvez également créer une activité personnalisée. Pour plus d’informations, consultez [procédure pas à pas : créer une activité de flux de travail de site personnalisé](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Les activités sont réparties dans les onglets suivants dans le **boîte à outils**:
+  Les activités sont réparties dans les onglets suivants dans le **boîte à outils**:
 
--   **Flux de travail SharePoint**
+- **Flux de travail SharePoint**
 
--   **Windows Workflow v3.0**
+- **Windows Workflow v3.0**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- Pas toutes les activités de flux de travail de core sont pris en charge par SharePoint. Pour plus d’informations, consultez [vue d’ensemble des activités de flux de travail pour Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Pas toutes les activités de flux de travail de core sont pris en charge par SharePoint. Pour plus d’informations, consultez [vue d’ensemble des activités de flux de travail pour Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>Activités de flux de travail SharePoint
  Le **flux de travail SharePoint** onglets contiennent des activités spécialisées pour une utilisation dans [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Ces activités simplifient et rationaliser le développement de workflows de cycle de vie de document. Pour plus d’informations sur les activités répertoriées dans le **flux de travail SharePoint** , consultez la rubrique [vue d’ensemble des activités de flux de travail pour Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Pour plus d’informations sur SharePoint, consultez [Microsoft produits et Tech
 
  Il existe quatre types de formulaires qui peuvent être utilisées dans un flux de travail :
 
--   Association
+- Association
 
--   Initiation
+- Initiation
 
--   Modification
+- Modification
 
--   Tâche
+- Tâche
 
- Parmi ceux-ci, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclut des modèles d’élément pour les formulaires d’association et d’initiation. Un exemple d’un *formulaire d’association* est qui permet à l’administrateur de l’installation du flux de travail permet d’entrer les paramètres relatifs au flux de travail, telles que la limite de dépense pour un workflow de dépenses. Un exemple d’un *formulaire d’initiation* est celle qui permet à l’utilisateur d’un workflow dépenses d’entrer la quantité qu’ils passent dans le flux de travail. Pour plus d’informations sur ces types de formulaires, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Parmi ceux-ci, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclut des modèles d’élément pour les formulaires d’association et d’initiation. Un exemple d’un *formulaire d’association* est qui permet à l’administrateur de l’installation du flux de travail permet d’entrer les paramètres relatifs au flux de travail, telles que la limite de dépense pour un workflow de dépenses. Un exemple d’un *formulaire d’initiation* est celle qui permet à l’utilisateur d’un workflow dépenses d’entrer la quantité qu’ils passent dans le flux de travail. Pour plus d’informations sur ces types de formulaires, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Propriétés de l’élément
  Vous pouvez également collecter des informations à partir des utilisateurs en utilisant les propriétés d’un élément dans la liste ou bibliothèque SharePoint. Le fichier de code principal (Workflow1.cs ou Workflow1.vb) déclare une instance de la classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties nommée `workflowProperties`. Utilisez le `workflowProperties` objet pour accéder aux propriétés de la bibliothèque ou une liste dans le code. Pour obtenir un exemple, consultez [procédure pas à pas : créer et déboguer une solution de flux de travail SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

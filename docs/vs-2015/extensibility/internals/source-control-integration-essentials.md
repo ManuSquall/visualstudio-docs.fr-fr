@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811009"
 ---
 # <a name="source-control-integration-essentials"></a>Éléments fondamentaux de l’intégration du contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ ms.locfileid: "49232353"
   
  Pour implémenter un plug-in à l’aide de l’API de plug-in de contrôle de Source de contrôle de code source, procédez comme suit :  
   
-1.  Créer une DLL qui implémente les fonctions spécifiées dans [Plug-ins de contrôle de code Source](../../extensibility/source-control-plug-ins.md).  
+1. Créer une DLL qui implémente les fonctions spécifiées dans [Plug-ins de contrôle de code Source](../../extensibility/source-control-plug-ins.md).  
   
-2.  Inscrivez la DLL en rendant les entrées de Registre appropriée, comme décrit dans [Comment : installer un plug-in de contrôle de Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Inscrivez la DLL en rendant les entrées de Registre appropriée, comme décrit dans [Comment : installer un plug-in de contrôle de Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
-3.  Créer une application d’assistance de l’interface utilisateur et l’afficher lorsque vous y êtes invité par le Package de l’adaptateur de contrôle de code Source (le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] composant qui gère les fonctionnalités de contrôle de code source via le plug-ins de contrôle de code source).  
+3. Créer une application d’assistance de l’interface utilisateur et l’afficher lorsque vous y êtes invité par le Package de l’adaptateur de contrôle de code Source (le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] composant qui gère les fonctionnalités de contrôle de code source via le plug-ins de contrôle de code source).  
   
- Pour plus d’informations, consultez [création d’un plug-in de contrôle de Source](../../extensibility/internals/creating-a-source-control-plug-in.md).  
+   Pour plus d’informations, consultez [création d’un plug-in de contrôle de Source](../../extensibility/internals/creating-a-source-control-plug-in.md).  
   
 ## <a name="source-control-vspackage"></a>VSPackage de contrôle de code source  
  Un implémentation VSPackage de contrôle de code source vous permet de développer un remplacement personnalisé pour le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’interface utilisateur de contrôle de code source. Cette approche fournit un contrôle complet sur l’intégration du contrôle de code source, mais il vous oblige à fournir des éléments d’interface utilisateur et implémenter les interfaces de contrôle de code source qui seraient sinon fournies sous l’approche de plug-in.  
   
  Pour implémenter un VSPackage de contrôle de code source, vous devez :  
   
-1.  Créer et inscrire votre propre contrôle de code source VSPackage, comme décrit dans [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+1. Créer et inscrire votre propre contrôle de code source VSPackage, comme décrit dans [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-2.  Remplacez le contrôle de code source par défaut l’interface utilisateur avec votre interface utilisateur personnalisée. Consultez [Interface utilisateur personnalisée](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
+2. Remplacez le contrôle de code source par défaut l’interface utilisateur avec votre interface utilisateur personnalisée. Consultez [Interface utilisateur personnalisée](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
   
-3.  Spécifiez des glyphes à utiliser et gérer **l’Explorateur de solutions** événements de glyphe. Consultez [contrôle de glyphe](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
+3. Spécifiez des glyphes à utiliser et gérer **l’Explorateur de solutions** événements de glyphe. Consultez [contrôle de glyphe](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
   
-4.  Gère les événements de modification de la requête et d’enregistrement des requêtes, comme indiqué dans [requête d’enregistrement des requêtes modifier](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
+4. Gère les événements de modification de la requête et d’enregistrement des requêtes, comme indiqué dans [requête d’enregistrement des requêtes modifier](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
   
- Pour plus d’informations, consultez [création d’un VSPackage de contrôle de code Source](../../extensibility/internals/creating-a-source-control-vspackage.md).  
+   Pour plus d’informations, consultez [création d’un VSPackage de contrôle de code Source](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble](../../extensibility/internals/source-control-integration-overview.md)   

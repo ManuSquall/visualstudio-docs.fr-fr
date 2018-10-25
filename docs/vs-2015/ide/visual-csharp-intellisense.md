@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862201"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 ## <a name="completion-lists"></a>Listes de saisie semi-automatique  
  Les listes de saisie semi-automatique IntelliSense dans Visual C# contiennent des jetons des fonctionnalités Liste des membres, Compléter le mot, etc. Vous bénéficiez d'un accès rapide aux éléments suivants :  
   
--   Membres d'un type ou espace de noms  
+- Membres d'un type ou espace de noms  
   
--   Noms de variables, de commandes et de fonctions  
+- Noms de variables, de commandes et de fonctions  
   
--   [Extraits de code](#CodeSnippets)  
+- [Extraits de code](#CodeSnippets)  
   
--   [Mots clés de langage](#Keywords)  
+- [Mots clés de langage](#Keywords)  
   
--   [Méthodes d’extension](#ExtensionMethods)  
+- [Méthodes d’extension](#ExtensionMethods)  
   
- La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
  Pour afficher les options appropriées, vous pouvez utiliser l'une des procédures suivantes :  
   
--   Cliquez sur l'identificateur non défini. Un trait de soulignement court apparaît sous le caractère le plus à gauche. Placez le pointeur de la souris sur le trait de soulignement court ; une balise active (icône) apparaît. Cliquez sur la balise active.  
+- Cliquez sur l'identificateur non défini. Un trait de soulignement court apparaît sous le caractère le plus à gauche. Placez le pointeur de la souris sur le trait de soulignement court ; une balise active (icône) apparaît. Cliquez sur la balise active.  
   
--   Cliquez sur l'identificateur non défini, puis appuyez sur CTRL+. (point).  
+- Cliquez sur l'identificateur non défini, puis appuyez sur CTRL+. (point).  
   
--   Cliquez avec le bouton droit sur l’identificateur non défini, puis cliquez sur **Générer**.  
+- Cliquez avec le bouton droit sur l’identificateur non défini, puis cliquez sur **Générer**.  
   
- Les options qui apparaissent peuvent inclure les éléments suivants :  
+  Les options qui apparaissent peuvent inclure les éléments suivants :  
   
--   **Générer le stub de propriété**  
+- **Générer le stub de propriété**  
   
--   **Générer le stub de champ**  
+- **Générer le stub de champ**  
   
--   **Générer un stub de méthode**  
+- **Générer un stub de méthode**  
   
--   **Générer la classe**  
+- **Générer la classe**  
   
--   **Générer un nouveau type** (pour une classe, un struct, une interface ou un enum)  
+- **Générer un nouveau type** (pour une classe, un struct, une interface ou un enum)  
   
 ## <a name="generate-event-handlers"></a>Générer des gestionnaires d'événements  
  Dans l'éditeur de code, IntelliSense peut vous aider à connecter des méthodes (gestionnaires d'événements) à des champs d'événement.  

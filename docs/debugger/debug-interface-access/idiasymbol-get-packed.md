@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_packed | Documents Microsoft
+title: IDiaSymbol::get_packed | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124a27bb05e77d52bebde9f97dc81ea1fc971bc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c17d60509345e1a51df615c0d2aca90e32d055f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835850"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur (UDT) est compressé.  
@@ -34,7 +34,7 @@ HRESULT get_packed (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si l’UDT est compressée ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si l’UDT est empaqueté ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,7 +43,7 @@ HRESULT get_packed (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Empaquetés signifie que tous les membres de l’UDT sont positionnés aussi proches que possible, sans remplissage intermédiaire alignées sur des limites de mémoire.  
+ Conditionnés signifie que tous les membres de l’UDT sont positionnés aussi proches que possible, sans remplissage intermédiaire pour l’aligner sur des limites de mémoire.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

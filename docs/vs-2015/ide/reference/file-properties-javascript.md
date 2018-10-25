@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909729"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
 ### <a name="package-action"></a>Action de package  
  La propriété **Action de package** indique ce que Visual Studio doit faire avec un fichier lors de l’exécution d’une build. **Action de package** peut avoir l’une des valeurs suivantes :  
   
--   **Aucun** - Le fichier n’est pas inclus dans le manifeste du package. Exemple : un fichier texte qui contient de la documentation, tel qu’un fichier Lisez-moi.  
+- **Aucun** - Le fichier n’est pas inclus dans le manifeste du package. Exemple : un fichier texte qui contient de la documentation, tel qu’un fichier Lisez-moi.  
   
--   **Contenu** - Le fichier est inclus dans le manifeste du package. Par exemple, ce paramètre est la valeur par défaut pour un fichier .htm, .js, .css, image, audio ou vidéo.  
+- **Contenu** - Le fichier est inclus dans le manifeste du package. Par exemple, ce paramètre est la valeur par défaut pour un fichier .htm, .js, .css, image, audio ou vidéo.  
   
--   **Manifeste** : le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.  
+- **Manifeste** : le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.  
   
--   **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.  
+- **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.  
   
- La valeur par défaut d’**Action de package** dépend de l’extension du fichier que vous ajoutez à la solution.  
+  La valeur par défaut d’**Action de package** dépend de l’extension du fichier que vous ajoutez à la solution.  
   
 ### <a name="file-name-property"></a>Propriété Nom de fichier  
  Affiche le nom de fichier sous la forme d’une valeur en lecture seule. Pour renommer le fichier, vous devez cliquer avec le bouton droit sur le fichier dans l’Explorateur de solutions et sélectionner **Renommer**.  

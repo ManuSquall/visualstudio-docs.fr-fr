@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumArguments | Documents Microsoft
+title: IDebugMethodField::EnumArguments | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc92dc6b560332509f69a975eca63ddb5c191fab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfa467da3ebe500db7f8ee64653f294ad236f445
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849188"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Crée un énumérateur pour le type de chaque argument requis pour appeler la méthode.  
@@ -41,15 +41,15 @@ int EnumArguments(
   
 #### <a name="parameters"></a>Paramètres  
  `ppParams`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des types d’arguments. Retourne une valeur null s’il n’existe aucun argument.  
+ [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des types d’arguments. Retourne une valeur null s’il en existe aucun argument.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou retourne S_FALSE si il n’existe aucun argument. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il y a aucun argument. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
  Chaque élément est un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet représentant les types de chaque paramètre. Appelez le [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) méthode pour récupérer des informations sur le type de chaque paramètre.  
   
- Si le nom du paramètre est requis, ainsi que le type, puis appelez le [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) (méthode).  
+ Si le nom du paramètre est nécessaire, ainsi que le type, puis appelez le [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

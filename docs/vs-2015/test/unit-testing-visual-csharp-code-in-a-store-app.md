@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901552"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Test unitaire du code Visual C# dans une application du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
 > [!NOTE]
 >  Visual Studio Community, Enterprise, et Professional fournissent des fonctionnalités supplémentaires pour les tests unitaires.  
->   
->  -   Utilisez n'importe quel framework de test unitaire tiers et open source qui a créé un adaptateur complémentaire pour l'Explorateur de tests Microsoft. Vous pouvez également analyser et afficher les informations de couverture du code pour les tests.  
-> -   Exécutez vos tests après chaque build.  
-> -   VS Enterprise contient également Microsoft Fakes, framework d'isolement pour le code managé qui vous permet de concentrer vos tests sur votre propre code en remplaçant le code de test pour les fonctionnalités système et tierces.  
->   
->  Pour plus d’informations, consultez [Vérification du code à l’aide de tests unitaires](http://msdn.microsoft.com/library/dd264975.aspx) dans MSDN Library.  
+> 
+> - Utilisez n'importe quel framework de test unitaire tiers et open source qui a créé un adaptateur complémentaire pour l'Explorateur de tests Microsoft. Vous pouvez également analyser et afficher les informations de couverture du code pour les tests.  
+>   -   Exécutez vos tests après chaque build.  
+>   -   VS Enterprise contient également Microsoft Fakes, framework d'isolement pour le code managé qui vous permet de concentrer vos tests sur votre propre code en remplaçant le code de test pour les fonctionnalités système et tierces.  
+> 
+>   Pour plus d’informations, consultez [Vérification du code à l’aide de tests unitaires](http://msdn.microsoft.com/library/dd264975.aspx) dans MSDN Library.  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [Créer la solution et le projet de test unitaire](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Associer le projet de test au projet d’application  
   
-1.  Ajoutez une référence de l'application Maths au projet RooterTests.  
+1. Ajoutez une référence de l'application Maths au projet RooterTests.  
   
-    1.  Dans l’Explorateur de solutions, sélectionnez le projet **RooterTests**, puis **Ajouter une référence...** dans le menu contextuel.  
+   1.  Dans l’Explorateur de solutions, sélectionnez le projet **RooterTests**, puis **Ajouter une référence...** dans le menu contextuel.  
   
-    2.  Dans la boîte de dialogue **Ajouter une référence - RooterTests**, développez **Solution**, puis choisissez **Projets**. Sélectionnez ensuite l’élément **Maths**.  
+   2.  Dans la boîte de dialogue **Ajouter une référence - RooterTests**, développez **Solution**, puis choisissez **Projets**. Sélectionnez ensuite l’élément **Maths**.  
   
-         ![Ajouter une référence au projet Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![Ajouter une référence au projet Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  Ajoutez une instruction using au fichier UnitTest1.cs :  
+2. Ajoutez une instruction using au fichier UnitTest1.cs :  
   
-    1.  Ouvrez **UnitTest1.cs**.  
+   1.  Ouvrez **UnitTest1.cs**.  
   
-    2.  Ajoutez le code suivant sous la ligne `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` :  
+   2.  Ajoutez le code suivant sous la ligne `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` :  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  Ajoutez un test qui utilise la fonction Rooter. Ajoutez le code suivant à **UnitTest1.cpp** :  
+3. Ajoutez un test qui utilise la fonction Rooter. Ajoutez le code suivant à **UnitTest1.cpp** :  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  Générez la solution.  
+4. Générez la solution.  
   
-     Le nouveau test s’affiche dans l’Explorateur de tests, dans le nœud **Tests non exécutés**.  
+    Le nouveau test s’affiche dans l’Explorateur de tests, dans le nœud **Tests non exécutés**.  
   
-5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+5. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
-     ![Test de base réussi](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![Test de base réussi](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
+   Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire réussir  
   
@@ -256,70 +256,70 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> Déboguer un test ayant échoué  
   
-1.  Ajoutez un autre test à **UnitTest1.cs** :  
+1. Ajoutez un autre test à **UnitTest1.cs** :  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
-     Le test échoue. Sélectionnez le nom du test dans l'explorateur de tests. L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.  
+    Le test échoue. Sélectionnez le nom du test dans l'explorateur de tests. L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.  
   
-     ![Échec de NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![Échec de NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  Pour voir pourquoi le test échoue, parcourez la fonction :  
+3. Pour voir pourquoi le test échoue, parcourez la fonction :  
   
-    1.  Définissez un point d'arrêt au début de la fonction `SquareRoot`.  
+   1.  Définissez un point d'arrêt au début de la fonction `SquareRoot`.  
   
-    2.  Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.  
+   2.  Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.  
   
-         Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.  
+        Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.  
   
-    3.  Ajoutez le code à la méthode Rooter pour intercepter l'exception :  
+   3.  Ajoutez le code à la méthode Rooter pour intercepter l'exception :  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  Dans l’Explorateur de tests, choisissez **Exécuter tout** pour tester la méthode corrigée et vérifier que vous n’avez pas introduit une régression.  
+   1.  Dans l’Explorateur de tests, choisissez **Exécuter tout** pour tester la méthode corrigée et vérifier que vous n’avez pas introduit une régression.  
   
- Toutes les tests réussissent maintenant.  
+   Toutes les tests réussissent maintenant.  
   
- ![Tous les tests sont concluants](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![Tous les tests sont concluants](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a> Refactoriser le code  
  **Simplifier le calcul central de la fonction SquareRoot :**  

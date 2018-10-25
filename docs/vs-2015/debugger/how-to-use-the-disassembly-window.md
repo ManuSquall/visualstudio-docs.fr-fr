@@ -30,12 +30,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907584"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Comment : utiliser la fenêtre Code Machine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +46,23 @@ Cette fonctionnalité est disponible uniquement si le débogage au niveau des ad
   
  Outre les instructions assembleur, la **désassemblage** fenêtre peut afficher les informations facultatives suivantes :  
   
--   L'adresse mémoire de chaque instruction. Pour les applications natives, il s'agit effectivement de l'adresse mémoire. Pour Visual Basic, C# ou le code managé, il s'agit d'un offset à partir du début de la fonction.  
+- L'adresse mémoire de chaque instruction. Pour les applications natives, il s'agit effectivement de l'adresse mémoire. Pour Visual Basic, C# ou le code managé, il s'agit d'un offset à partir du début de la fonction.  
   
--   Le code source dont est tiré le code assembleur.  
+- Le code source dont est tiré le code assembleur.  
   
--   Octets du code (représentation sous forme d'octets des instructions machine réelles ou MSIL).  
+- Octets du code (représentation sous forme d'octets des instructions machine réelles ou MSIL).  
   
--   Les noms des symboles pour les adresses mémoire.  
+- Les noms des symboles pour les adresses mémoire.  
   
--   Les numéros de ligne correspondant au code source.  
+- Les numéros de ligne correspondant au code source.  
   
- Les instructions en langage assembleur sont constituées de mnémoniques, qui sont des abréviations des noms d'instructions, et de symboles représentant des variables, des registres et des constantes. Chaque instruction en langage machine est représentée par un mnémonique en langage assembleur, généralement suivi d'une ou plusieurs variables, registres ou constantes.  
+  Les instructions en langage assembleur sont constituées de mnémoniques, qui sont des abréviations des noms d'instructions, et de symboles représentant des variables, des registres et des constantes. Chaque instruction en langage machine est représentée par un mnémonique en langage assembleur, généralement suivi d'une ou plusieurs variables, registres ou constantes.  
   
- Si vous ne savez pas lire le langage assembleur et souhaitez pourtant profiter pleinement de la fenêtre Code Machine, consultez un ouvrage sur la programmation en langage assembleur. La programmation en langage assembleur va bien au-delà de l'objet de cette brève introduction sur la fenêtre Code Machine.  
+  Si vous ne savez pas lire le langage assembleur et souhaitez pourtant profiter pleinement de la fenêtre Code Machine, consultez un ouvrage sur la programmation en langage assembleur. La programmation en langage assembleur va bien au-delà de l'objet de cette brève introduction sur la fenêtre Code Machine.  
   
- Dans la mesure où le code assembleur dépend beaucoup des registres du processeur ou, dans le cas du code managé, des registres du Common Language Runtime. Il est souvent plus judicieux d'utiliser la fenêtre Code Machine en même temps que la fenêtre Registres car cela vous permet d'examiner le contenu des registres.  
+  Dans la mesure où le code assembleur dépend beaucoup des registres du processeur ou, dans le cas du code managé, des registres du Common Language Runtime. Il est souvent plus judicieux d'utiliser la fenêtre Code Machine en même temps que la fenêtre Registres car cela vous permet d'examiner le contenu des registres.  
   
- Vous n'aurez probablement jamais le désir ni le besoin de consulter les instructions du code machine dans leur format numérique brut, plutôt qu'en langage assembleur. Néanmoins, si vous le souhaitez, vous pouvez les consulter dans la fenêtre Mémoire ou en sélectionnant Octets du code dans le menu contextuel de la fenêtre Code Machine.  
+  Vous n'aurez probablement jamais le désir ni le besoin de consulter les instructions du code machine dans leur format numérique brut, plutôt qu'en langage assembleur. Néanmoins, si vous le souhaitez, vous pouvez les consulter dans la fenêtre Mémoire ou en sélectionnant Octets du code dans le menu contextuel de la fenêtre Code Machine.  
   
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

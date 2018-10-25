@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815739"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procédure pas à pas : Publier une extension Visual Studio
 
@@ -39,7 +39,7 @@ Cet article utilise une extension de package Visual Studio par défaut, mais les
 
 1. Mettre à jour de l’extension *.vsixmanifest* avec les informations correctes sur le nom de produit, auteur et la version.
 
-  ![mettre à jour d’extension vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![mettre à jour d’extension vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Générer votre extension **version** mode. Votre extension est maintenant fournie comme une extension VSIX dans le dossier \bin\Release.
 
@@ -67,7 +67,7 @@ Cet article utilise une extension de package Visual Studio par défaut, mais les
 
 5. Cliquez sur **publier des extensions**.  Cette option vous permet d’accéder à la page de gestion pour toutes vos extensions. Si vous n’avez pas un compte d’éditeur, vous êtes invité à en créer un pour l’instant.
 
-  ![Charger à la place de marché](media/upload-to-marketplace.png)
+   ![Charger à la place de marché](media/upload-to-marketplace.png)
 
 6. Choisissez le serveur de publication que vous souhaitez utiliser pour télécharger votre extension. Vous pouvez modifier les serveurs de publication en cliquant sur les noms d’éditeurs apparaissent à gauche. Cliquez sur **nouvelle extension** et sélectionnez **Visual Studio**.
 
@@ -85,29 +85,29 @@ Cet article utilise une extension de package Visual Studio par défaut, mais les
     
    * **Logo** qui est utilisé pour votre extension. Ce logo est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier s’il est fourni.
     
-    * **Description courte** de ce que fait votre extension. Cette description est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
+     * **Description courte** de ce que fait votre extension. Cette description est rempli automatiquement à partir de la *source.extension.vsixmanifest* fichier.
     
-    * **Vue d’ensemble** est un bon emplacement pour inclure des captures d’écran et des informations détaillées sur ce que fait votre extension.
+     * **Vue d’ensemble** est un bon emplacement pour inclure des captures d’écran et des informations détaillées sur ce que fait votre extension.
     
-    * **Prise en charge des versions de Visual Studio** vous permet de choisir les versions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces versions.
+     * **Prise en charge des versions de Visual Studio** vous permet de choisir les versions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces versions.
     
-    * ** Pris en charge de Visual Studio Édition vous permet de choisir quelles éditions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces éditions.
+     * ** Pris en charge de Visual Studio Édition vous permet de choisir quelles éditions de Visual Studio fonctionne sur votre extension. Votre extension est installée uniquement pour ces éditions.
     
-    * **Type**. Le type le plus courant des extensions sont **outils**.
+     * **Type**. Le type le plus courant des extensions sont **outils**.
     
-    * **Catégories**. Sélectionnez jusqu'à trois qui sont le mieux pour votre extension.
+     * **Catégories**. Sélectionnez jusqu'à trois qui sont le mieux pour votre extension.
     
-    * **Balises** sont les mots clés qui permettent aux utilisateurs de trouver votre extension. Balises peuvent aider à augmenter la pertinence de la recherche de vos extensions dans la place de marché.
+     * **Balises** sont les mots clés qui permettent aux utilisateurs de trouver votre extension. Balises peuvent aider à augmenter la pertinence de la recherche de vos extensions dans la place de marché.
     
-    * **Catégorie de tarification** est le coût de votre extension.
+     * **Catégorie de tarification** est le coût de votre extension.
     
-    * **Référentiel de code source** vous permet de partager un lien vers votre code source avec la Communauté.
+     * **Référentiel de code source** vous permet de partager un lien vers votre code source avec la Communauté.
     
-    * **Autoriser des questions et réponses pour votre extension** permet aux utilisateurs de laisser des questions sur votre page d’entrée extension.
+     * **Autoriser des questions et réponses pour votre extension** permet aux utilisateurs de laisser des questions sur votre page d’entrée extension.
 
 9. Cliquez sur **enregistrer et charger**. Page de gestion de cette option vous revenez à votre serveur de publication. Votre extension n’a pas encore été publiée. Pour publier votre extension, cliquez sur votre extension, puis sélectionnez **rendre Public**. Vous pouvez afficher la façon dont votre extension ressemblera sur place de marché en sélectionnant **afficher l’Extension**. Pour les nombres d’acquisition, cliquez sur **rapports**. Pour apporter des modifications à votre extension, cliquez sur **modifier**.
 
-  ![Menu de l’entrée extension](media/extension-entry-menu.png)
+   ![Menu de l’entrée extension](media/extension-entry-menu.png)
 
 10. Après avoir cliqué sur **rendre Public**, votre extension est désormais publique. Rechercher la place de marché Visual Studio pour votre extension.
 
@@ -119,17 +119,17 @@ Place de marché prend en charge l’octroi d’autorisations des utilisateurs s
 
 2. Sélectionnez **membres** , puis cliquez sur **ajouter**.
 
-  ![Ajouter des utilisateurs supplémentaires](media/add-users.png)
+   ![Ajouter des utilisateurs supplémentaires](media/add-users.png)
 
 3. Vous pouvez ensuite spécifier l’adresse de messagerie de l’utilisateur que vous souhaitez ajouter et accorder le niveau d’accès sous **sélectionner un rôle**.  Vous pouvez choisir parmi les options suivantes :
 
-  * **Créateur**: l’utilisateur peut publier des extensions, mais ne peut pas afficher ou gérer les extensions publiées par d’autres utilisateurs.
+   * **Créateur**: l’utilisateur peut publier des extensions, mais ne peut pas afficher ou gérer les extensions publiées par d’autres utilisateurs.
   
-  * **Lecteur**: l’utilisateur peut afficher les extensions, mais ne peut pas publier ou gérer les extensions.
+   * **Lecteur**: l’utilisateur peut afficher les extensions, mais ne peut pas publier ou gérer les extensions.
   
-  * **Contributeur**: l’utilisateur peut publier et gérer des extensions, mais ne peut pas modifier les paramètres de l’éditeur ou gérer l’accès.
+   * **Contributeur**: l’utilisateur peut publier et gérer des extensions, mais ne peut pas modifier les paramètres de l’éditeur ou gérer l’accès.
   
-  * **Propriétaire**: l’utilisateur peut publier et gérer les extensions, modifier les paramètres de l’éditeur et gérer l’accès.
+   * **Propriétaire**: l’utilisateur peut publier et gérer les extensions, modifier les paramètres de l’éditeur et gérer l’accès.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installer l’extension à partir de Visual Studio Marketplace
 

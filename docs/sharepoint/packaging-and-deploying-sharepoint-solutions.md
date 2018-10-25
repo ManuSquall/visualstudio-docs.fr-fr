@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863267"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaqueter et déployer des solutions SharePoint
   En règle générale, une solution SharePoint est déployée sur un serveur SharePoint à l’aide d’un fichier de package (.wsp) de solution. Vous pouvez utiliser Visual Studio pour organiser vos éléments de projet SharePoint en fonctionnalités et pour créer un package pour déployer vos fonctionnalités SharePoint.  
@@ -67,23 +67,23 @@ ms.locfileid: "37118985"
 ### <a name="packaging-explorer"></a>Explorateur de package  
  Pour compléter le Concepteur de fonctionnalités et le Concepteur de packages, vous pouvez utiliser l’Explorateur de package pour regrouper vos fichiers SharePoint en fonctionnalités et packages. En outre, vous pouvez voir la vue hiérarchique du projet SharePoint package, fonctionnalités, des fichiers et des éléments. L’Explorateur de package est une fenêtre outil que vous pouvez utiliser pour effectuer les tâches suivantes :  
   
--   Ouvrir des fichiers et des éléments de projet SharePoint.  
+- Ouvrir des fichiers et des éléments de projet SharePoint.  
   
--   Faites glisser les éléments de projet SharePoint à partir d’une fonctionnalité à un autre.  
+- Faites glisser les éléments de projet SharePoint à partir d’une fonctionnalité à un autre.  
   
--   Faites glisser les éléments de projet SharePoint et des fonctionnalités à partir d’un package à un autre.  
+- Faites glisser les éléments de projet SharePoint et des fonctionnalités à partir d’un package à un autre.  
   
--   Ajouter une nouvelle fonctionnalité à un package.  
+- Ajouter une nouvelle fonctionnalité à un package.  
   
--   Ouvrir un concepteur de fonctionnalités ou de packages.  
+- Ouvrir un concepteur de fonctionnalités ou de packages.  
   
--   Valider les fonctionnalités et les packages.  
+- Valider les fonctionnalités et les packages.  
   
- Les outils de développement SharePoint dans Visual Studio ont des règles de validation pour garantir que le package de solution est correctement formé. En outre, les règles de vérifient que le *.wsp* fichier solution peut être déployé et activé sur un serveur SharePoint. Pour plus d’informations sur le schéma XML pour les fonctionnalités, consultez [schémas](http://go.microsoft.com/fwlink/?LinkID=169192).  
+  Les outils de développement SharePoint dans Visual Studio ont des règles de validation pour garantir que le package de solution est correctement formé. En outre, les règles de vérifient que le *.wsp* fichier solution peut être déployé et activé sur un serveur SharePoint. Pour plus d’informations sur le schéma XML pour les fonctionnalités, consultez [schémas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
- Vous pouvez ajouter des règles de validation de package et de fonctionnalité personnalisée pour le système de projet SharePoint. Pour plus d’informations, consultez [Comment : créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Vous pouvez ajouter des règles de validation de package et de fonctionnalité personnalisée pour le système de projet SharePoint. Pour plus d’informations, consultez [Comment : créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
- Pour plus d’informations sur l’Explorateur de package, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Pour plus d’informations sur l’Explorateur de package, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Explorateur de solutions
  Vous pouvez utiliser l’Explorateur de solutions pour parcourir et ouvrir les fichiers du projet SharePoint. Utilisez le menu contextuel dans l’Explorateur de solutions pour ajouter des fonctionnalités, des récepteurs d’événements et les ressources de fonctionnalité. En outre, vous pouvez ouvrir le Concepteur de fonctionnalités et les concepteurs de Package pour configurer les fonctionnalités et les packages pour le déploiement.  
@@ -100,11 +100,11 @@ ms.locfileid: "37118985"
   
  Par exemple, pour ajouter un *.xml* de fichier à un projet SharePoint, effectuez l’une des actions suivantes :  
   
--   Ajouter un dossier mappé de « Dispositions » SharePoint à votre projet. Cette opération crée dans **l’Explorateur de solutions** un dossier nommé **dispositions** qui comporte un sous-dossier pour le projet. Ajouter le *.xml* fichier dans le nouveau sous-dossier. Par défaut, le fichier est déployé dans le système de fichiers SharePoint sous *... \TEMPLATE\LAYOUTS\\\<nom du dossier >*. Pour plus d’informations sur l’ajout de dossiers mappés, consultez [Comment : ajouter et supprimer des dossiers mappés](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+- Ajouter un dossier mappé de « Dispositions » SharePoint à votre projet. Cette opération crée dans **l’Explorateur de solutions** un dossier nommé **dispositions** qui comporte un sous-dossier pour le projet. Ajouter le *.xml* fichier dans le nouveau sous-dossier. Par défaut, le fichier est déployé dans le système de fichiers SharePoint sous *... \TEMPLATE\LAYOUTS\\\<nom du dossier >*. Pour plus d’informations sur l’ajout de dossiers mappés, consultez [Comment : ajouter et supprimer des dossiers mappés](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
--   Ajouter le *.xml* de fichiers dans le dossier d’un élément de projet SharePoint et modifiez le **Type de déploiement** propriété de la *.xml* à partir de fichiers **NoDeployment**  à un autre paramètre comme **RootFile** ou **ElementFile**. Approprié **Type de déploiement** paramètre varie selon le fichier et le projet. Pour plus d’informations sur la **Type de déploiement** paramètres de propriété, consultez [SharePoint de développer des solutions](../sharepoint/developing-sharepoint-solutions.md).  
+- Ajouter le *.xml* de fichiers dans le dossier d’un élément de projet SharePoint et modifiez le **Type de déploiement** propriété de la *.xml* à partir de fichiers **NoDeployment**  à un autre paramètre comme **RootFile** ou **ElementFile**. Approprié **Type de déploiement** paramètre varie selon le fichier et le projet. Pour plus d’informations sur la **Type de déploiement** paramètres de propriété, consultez [SharePoint de développer des solutions](../sharepoint/developing-sharepoint-solutions.md).  
   
- Si un fichier ajouté ne s’applique pas à un projet spécifique dans la solution, vous pouvez ajouter un projet SharePoint vide à votre solution et puis ajoutez les fichiers supplémentaires à ce dernier. Une autre solution pour le déploiement des fichiers sur SharePoint, en particulier pour la base de données de contenu, consiste à ajouter un module au projet, puis ajouter les fichiers au module. Pour plus d’informations, consultez [utiliser des modules pour inclure des fichiers dans la solution](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+  Si un fichier ajouté ne s’applique pas à un projet spécifique dans la solution, vous pouvez ajouter un projet SharePoint vide à votre solution et puis ajoutez les fichiers supplémentaires à ce dernier. Une autre solution pour le déploiement des fichiers sur SharePoint, en particulier pour la base de données de contenu, consiste à ajouter un module au projet, puis ajouter les fichiers au module. Pour plus d’informations, consultez [utiliser des modules pour inclure des fichiers dans la solution](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Voir aussi
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   

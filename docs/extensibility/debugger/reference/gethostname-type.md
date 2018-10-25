@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE | Documents Microsoft
+title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c6bc4f0736950042a62786caac6179f1edffab8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97e252f9f7b3d3177b099e98984ee459b85f0c82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823058"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
-Spécifie le type de nom d’hôte.  
+Spécifie le type du nom d’hôte.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,9 +50,9 @@ public enum enum_GETHOSTNAME_TYPE {
  Spécifie un nom de fichier de l’hôte.  
   
 ## <a name="remarks"></a>Notes  
- Ces valeurs sont passées en tant qu’argument à la [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) méthode pour récupérer un nom d’hôte dans des formats différents.  
+ Ces valeurs sont passées en tant qu’argument à la [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) méthode pour récupérer un nom d’hôte dans différents formats.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

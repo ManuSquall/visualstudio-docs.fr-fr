@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835707"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -115,41 +115,41 @@ Si vous disposez d’un diagramme de dépendance ouvert qui est lié aux éléme
 
 ### <a name="validate-code-at-the-command-prompt"></a>Valider le code à l’invite de commandes
 
-1.  Ouvrez l’invite de commandes de Visual Studio.
+1. Ouvrez l’invite de commandes de Visual Studio.
 
-2.  Choisissez l'une des valeurs suivantes :
+2. Choisissez l'une des valeurs suivantes :
 
-    - Pour valider le code par rapport à un projet de modélisation spécifique dans la solution, exécutez MSBuild avec la propriété personnalisée suivante.
+   - Pour valider le code par rapport à un projet de modélisation spécifique dans la solution, exécutez MSBuild avec la propriété personnalisée suivante.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - ou
+     - ou
 
-         Accédez au dossier qui contient le projet de modélisation (.modelproj) de fichiers et la dépendance de diagramme et puis exécutez MSBuild avec la propriété personnalisée suivante :
+       Accédez au dossier qui contient le projet de modélisation (.modelproj) de fichiers et la dépendance de diagramme et puis exécutez MSBuild avec la propriété personnalisée suivante :
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Pour valider le code par rapport à tous les projets de modélisation dans la solution, exécutez MSBuild avec la propriété personnalisée suivante :
+   - Pour valider le code par rapport à tous les projets de modélisation dans la solution, exécutez MSBuild avec la propriété personnalisée suivante :
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - ou
+     - ou
 
-         Accédez au dossier de solution, qui doit contenir un projet de modélisation contenant un diagramme de dépendance et puis exécutez MSBuild avec la propriété personnalisée suivante :
+       Accédez au dossier de solution, qui doit contenir un projet de modélisation contenant un diagramme de dépendance et puis exécutez MSBuild avec la propriété personnalisée suivante :
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Toutes les erreurs qui ont lieu seront répertoriées. Pour plus d’informations sur MSBuild, consultez [MSBuild](../msbuild/msbuild.md) et [tâche MSBuild](../msbuild/msbuild-task.md).
 
- Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
+   Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Gérer les erreurs de validation
 
@@ -165,7 +165,7 @@ Pendant le processus de développement, vous pouvez supprimer certains conflits 
 Utilisez ces tâches pour gérer les erreurs de validation dans le **liste d’erreurs** fenêtre :
 
 |**To**|**Procédez comme suit**|
-|------------|----------------------------|
+|-|-|
 |Supprimer des erreurs sélectionnées pendant la validation|Avec le bouton droit à un ou plusieurs erreurs sélectionnées, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **supprimer les erreurs**.<br /><br /> Les erreurs supprimées apparaissent barrées. Lors de la prochaine validation, ces erreurs ne s’afficheront pas.<br /><br /> Les erreurs supprimées sont suivies dans un fichier .suppressions pour le fichier de diagramme de dépendance correspondante.|
 |Cesser de supprimer des erreurs sélectionnées|Avec le bouton droit de l’ou les erreurs supprimées sélectionnées, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **arrêter la suppression des erreurs**.<br /><br /> Les erreurs supprimées qui sont sélectionnées s’afficheront lors de la prochaine validation.|
 |Restaurer toutes les erreurs supprimées dans le **liste d’erreurs** fenêtre|Avec le bouton droit n’importe où dans le **liste d’erreurs** fenêtre, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **afficher les erreurs supprimées**.|
@@ -204,7 +204,7 @@ Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer le
 Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
 
 |**Problème**|**Cause possible**|**Résolution**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Les erreurs de validation ne se produisent pas comme prévu.|La validation ne fonctionne pas sur des diagrammes de dépendance qui sont copiés à partir d’autres diagrammes de dépendance dans l’Explorateur de solutions et qui se trouvent dans le même projet de modélisation. diagrammes de dépendance qui sont copiés de cette façon contiennent les mêmes références que le diagramme de dépendance d’origine.|Ajoutez un nouveau diagramme de dépendances au projet de modélisation.<br /><br /> Copiez les éléments depuis le diagramme de dépendance source vers le nouveau diagramme.|
 
 ## <a name="resolve-layer-validation-errors"></a>Résoudre les erreurs de validation de couche
@@ -220,20 +220,20 @@ Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la valida
 La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique la signification de ces erreurs, et suggère des opérations pour les résoudre ou les gérer.
 
 |**Syntaxe**|**Description**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* est un artefact associé à une couche sur le diagramme de dépendances.<br /><br /> *ArtifactTypeN* est le type de *ArtifactN*, comme un **classe** ou **méthode**, par exemple :<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Nom d'un espace de noms.|
 |*LayerNameN*|Le nom d’une couche sur le diagramme de dépendances.|
 |*DependencyType*|Le type de relation de dépendance entre *Artifact1* et *Artifact2*. Par exemple, *Artifact1* a un **appels** relation avec *Artifact2*.|
 
-|**Syntaxe de l’erreur**|**Description de l’erreur**|
-|----------------------|---------------------------|
-|DV0001 : **dépendance non valide**|Ce problème est signalé lorsqu’un élément de code (espace de noms, type, membre) mappée à une référence de couche un élément de code mappé à une autre couche, mais il n’existe aucune flèche de dépendance entre ces couches dans le diagramme de validation de dépendance contenant cette couches. Il s’agit d’une violation de contrainte de dépendance.|
-|DV1001 : **nom de l’espace de noms non valide**|Ce problème est signalé sur un élément de code associé à une couche de propriété de « Autorisé de noms Namespace » ne contienne pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la syntaxe de « Autorisé de noms Namespace » est une liste de point-virgule des espaces de noms dans le code associés à des éléments constituent la couche sont autorisés à être définis.|
-|DV1002 : **dépendance sur l’espace de noms à ne pas référencer**|Ce problème est signalé sur un élément de code associé à une couche et faisant référence à un autre élément de code défini dans un espace de noms qui est défini dans la propriété « À ne pas référencer Namespace » de la couche. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Espaces de noms à ne pas référencer » est définie comme une liste séparée par des points-virgules des espaces de noms qui ne doivent pas être référencés dans les éléments de code associés à cette couche.|
-|DV1003 : **nom d’espace de noms non autorisé**|Ce problème est signalé sur un élément de code associé à une couche de propriété de « Interdites des noms Namespace » contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Nom d’espace de noms non autorisé » est définie comme une liste séparée par des points-virgules des espaces de noms dans le code les éléments associés à cette couche ne doivent pas être définis.|
-|DV3001 : **lien manquant**|Couche «*LayerName*'établit un lien vers'*artefact*' qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly.|*LayerName* lié à un artefact qui est introuvable. Par exemple, il manque peut-être un lien vers une classe car le projet de modélisation ne comporte pas de référence à l'assembly contenant la classe.|
-|DV9001 : **analyse de l’architecture des erreurs internes détectées**|Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie.|Consultez le journal détaillé des événements de build ou la fenêtre Sortie pour plus de détails.|
+| **Syntaxe de l’erreur** | **Description de l’erreur** |
+|-|-|
+| DV0001 : **dépendance non valide** | Ce problème est signalé lorsqu’un élément de code (espace de noms, type, membre) mappée à une référence de couche un élément de code mappé à une autre couche, mais il n’existe aucune flèche de dépendance entre ces couches dans le diagramme de validation de dépendance contenant cette couches. Il s’agit d’une violation de contrainte de dépendance. |
+| DV1001 : **nom de l’espace de noms non valide** | Ce problème est signalé sur un élément de code associé à une couche de propriété de « Autorisé de noms Namespace » ne contienne pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la syntaxe de « Autorisé de noms Namespace » est une liste de point-virgule des espaces de noms dans le code associés à des éléments constituent la couche sont autorisés à être définis. |
+| DV1002 : **dépendance sur l’espace de noms à ne pas référencer** | Ce problème est signalé sur un élément de code associé à une couche et faisant référence à un autre élément de code défini dans un espace de noms qui est défini dans la propriété « À ne pas référencer Namespace » de la couche. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Espaces de noms à ne pas référencer » est définie comme une liste séparée par des points-virgules des espaces de noms qui ne doivent pas être référencés dans les éléments de code associés à cette couche. |
+| DV1003 : **nom d’espace de noms non autorisé** | Ce problème est signalé sur un élément de code associé à une couche de propriété de « Interdites des noms Namespace » contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Nom d’espace de noms non autorisé » est définie comme une liste séparée par des points-virgules des espaces de noms dans le code les éléments associés à cette couche ne doivent pas être définis. |
+| DV3001 : **lien manquant** | Couche «*LayerName*'établit un lien vers'*artefact*' qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly. |
+| DV9001 : **analyse de l’architecture des erreurs internes détectées** | Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie. |
 
 ## <a name="see-also"></a>Voir aussi
 

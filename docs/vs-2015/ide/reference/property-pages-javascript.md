@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904191"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,26 +73,26 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  **Débogueur à lancer**  
  Spécifie l'hôte par défaut pour le débogueur.  
   
--   Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](http://go.microsoft.com/fwlink/?LinkId=234912).  
+- Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](http://go.microsoft.com/fwlink/?LinkId=234912).  
   
--   Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](http://go.microsoft.com/fwlink/?LinkId=234913).  
+- Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](http://go.microsoft.com/fwlink/?LinkId=234913).  
   
--   Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](http://go.microsoft.com/fwlink/?LinkId=234914).  
+- Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](http://go.microsoft.com/fwlink/?LinkId=234914).  
   
- **Lancer l’application**  
- Spécifie s’il faut démarrer l’application quand vous appuyez sur F5 ou quand vous cliquez sur **Déboguer**, **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.  
+  **Lancer l’application**  
+  Spécifie s’il faut démarrer l’application quand vous appuyez sur F5 ou quand vous cliquez sur **Déboguer**, **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.  
   
- **Type de débogueur**  
- Spécifie les types de code à déboguer. Sélectionnez **Script uniquement** pour déboguer du code JavaScript. Sélectionnez **Managé uniquement** pour déboguer du code qui est managé par le Common Language Runtime. Sélectionnez **Natif uniquement** pour déboguer du code C++. Sélectionnez **Natif avec script** pour déboguer du code C++ et JavaScript. Sélectionnez **Mixte (managé et natif)** pour déboguer à la fois le code managé et le code C++.  
+  **Type de débogueur**  
+  Spécifie les types de code à déboguer. Sélectionnez **Script uniquement** pour déboguer du code JavaScript. Sélectionnez **Managé uniquement** pour déboguer du code qui est managé par le Common Language Runtime. Sélectionnez **Natif uniquement** pour déboguer du code C++. Sélectionnez **Natif avec script** pour déboguer du code C++ et JavaScript. Sélectionnez **Mixte (managé et natif)** pour déboguer à la fois le code managé et le code C++.  
   
- **Autoriser le bouclage de réseau local**  
- Spécifie si l'accès à l'adresse de bouclage IP est autorisé pour tester les applications. Sélectionnez **Oui** pour autoriser l’utilisation de l’adresse de bouclage si l’application cliente est sur le même ordinateur que celui où l’application serveur est en cours d’exécution ; sinon, sélectionnez **Non**. Cette propriété est disponible seulement si la **Débogueur à lancer** est définie sur **Ordinateur distant**.  
+  **Autoriser le bouclage de réseau local**  
+  Spécifie si l'accès à l'adresse de bouclage IP est autorisé pour tester les applications. Sélectionnez **Oui** pour autoriser l’utilisation de l’adresse de bouclage si l’application cliente est sur le même ordinateur que celui où l’application serveur est en cours d’exécution ; sinon, sélectionnez **Non**. Cette propriété est disponible seulement si la **Débogueur à lancer** est définie sur **Ordinateur distant**.  
   
- **Nom de l’ordinateur**  
- Spécifie le nom de l'ordinateur distant pour héberger le débogueur. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.  
+  **Nom de l’ordinateur**  
+  Spécifie le nom de l'ordinateur distant pour héberger le débogueur. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.  
   
- **Exiger une authentification**  
- Spécifie si l'ordinateur distant requiert l'authentification. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.
+  **Exiger une authentification**  
+  Spécifie si l'ordinateur distant requiert l'authentification. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.
 
 
 

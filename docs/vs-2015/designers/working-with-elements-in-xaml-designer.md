@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896950"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,21 +46,21 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
   
 #### <a name="to-change-the-layering-order"></a>Pour modifier l'ordre de superposition  
   
--   Effectuez l’une des opérations suivantes :  
+- Effectuez l’une des opérations suivantes :  
   
-    -   Dans la fenêtre **Structure du document**, faites glisser les éléments vers le haut ou le bas pour créer l’ordre de superposition souhaité.  
+  - Dans la fenêtre **Structure du document**, faites glisser les éléments vers le haut ou le bas pour créer l’ordre de superposition souhaité.  
   
-    -   Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément pour lequel vous souhaitez modifier l’ordre de superposition, pointez sur **Ordre**, puis cliquez sur l’une des options suivantes :  
+  - Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément pour lequel vous souhaitez modifier l’ordre de superposition, pointez sur **Ordre**, puis cliquez sur l’une des options suivantes :  
   
-        -   **Mettre au premier plan** pour placer l’élément tout au début dans l’ordre.  
+    -   **Mettre au premier plan** pour placer l’élément tout au début dans l’ordre.  
   
-        -   **Avancer d’un plan** pour faire avancer l’élément d’un niveau dans l’ordre.  
+    -   **Avancer d’un plan** pour faire avancer l’élément d’un niveau dans l’ordre.  
   
-        -   **Reculer d’un plan** pour faire reculer l’élément d’un niveau dans l’ordre.  
+    -   **Reculer d’un plan** pour faire reculer l’élément d’un niveau dans l’ordre.  
   
-        -   **Mettre en arrière-plan** pour placer l’élément tout à la fin dans l’ordre.  
+    -   **Mettre en arrière-plan** pour placer l’élément tout à la fin dans l’ordre.  
   
-     Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** inférieure apparaît devant.  
+    Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** inférieure apparaît devant.  
   
 ## <a name="changing-the-alignment-of-an-element"></a>Modification de l'alignement d'un élément  
  Vous pouvez aligner des éléments dans la planche graphique à l'aide de commandes de menu ou en faisant glisser les éléments vers des lignes d'alignement.  
@@ -115,9 +115,9 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Pour dissocier des éléments et supprimer la disposition  
   
--   Cliquez avec le bouton droit sur le groupe à dissocier, puis cliquez sur **Dissocier**.  
+- Cliquez avec le bouton droit sur le groupe à dissocier, puis cliquez sur **Dissocier**.  
   
- Vous pouvez également regrouper ou dissocier des éléments en cliquant avec le bouton droit sur les éléments concernés dans la fenêtre Structure du document, puis en cliquant sur **Grouper** ou **Dissocier**.  
+  Vous pouvez également regrouper ou dissocier des éléments en cliquant avec le bouton droit sur les éléments concernés dans la fenêtre Structure du document, puis en cliquant sur **Grouper** ou **Dissocier**.  
   
 ## <a name="resetting-the-element-layout"></a>Réinitialisation de la disposition des éléments  
  Vous pouvez restaurer les valeurs par défaut de propriétés de disposition spécifiques d'un élément à l'aide des commandes de réinitialisation de la disposition. À l'aide de ces commandes, vous pouvez réinitialiser la marge, l'alignement, la largeur, la hauteur et la taille d'un élément, individuellement ou collectivement.  

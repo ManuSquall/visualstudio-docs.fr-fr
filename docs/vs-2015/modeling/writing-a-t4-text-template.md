@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897795"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Un modèle de texte contient le texte qui sera généré à partir du modèle. P
   
  Les modèles de texte sont formés des composants suivants :  
   
--   **Directives** -éléments qui contrôlent la façon dont le modèle est traité.  
+- **Directives** -éléments qui contrôlent la façon dont le modèle est traité.  
   
--   **Blocs de texte** - contenu qui est copié directement dans la sortie.  
+- **Blocs de texte** - contenu qui est copié directement dans la sortie.  
   
--   **Blocs de contrôle** -code de programme qui insère les valeurs des variables dans le texte et contrôle les parties conditionnelles ou répétées du texte.  
+- **Blocs de contrôle** -code de programme qui insère les valeurs des variables dans le texte et contrôle les parties conditionnelles ou répétées du texte.  
   
- Pour tester les exemples de cette rubrique, copiez-les dans un fichier de modèle comme décrit dans [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Après avoir modifié le fichier de modèle, enregistrez-le, puis examiner la sortie **.txt** fichier.  
+  Pour tester les exemples de cette rubrique, copiez-les dans un fichier de modèle comme décrit dans [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Après avoir modifié le fichier de modèle, enregistrez-le, puis examiner la sortie **.txt** fichier.  
   
 ## <a name="directives"></a>Directives  
  Les directives de modèle de texte fournissent des instructions générales au moteur de création de modèles de texte concernant la manière de générer le code de transformation et le fichier de sortie.  

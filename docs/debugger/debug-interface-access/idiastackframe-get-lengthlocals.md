@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_lengthLocals | Documents Microsoft
+title: IDiaStackFrame::get_lengthLocals | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe821ea0cc0e2258377218046464441c5b9cd7b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c14046edc62c91b47ab02ec5e78905fd07c5c55b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903008"
 ---
 # <a name="idiastackframegetlengthlocals"></a>IDiaStackFrame::get_lengthLocals
 Récupère le nombre d’octets de l’objet d’un push sur la pile de variables locales.  

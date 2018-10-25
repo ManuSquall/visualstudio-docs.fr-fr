@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896937"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper les dépendances des cartes de code
 
@@ -138,15 +138,15 @@ Pour afficher toutes les dépendances dans votre solution :
 
 10. Pour simplifier une carte de solution complexe, vous pouvez aussi générer une nouvelle carte contenant une sélection d’éléments à partir d’une carte existante. Maintenez la touche **Ctrl** tout en sélectionnant les éléments que vous souhaitez vous concentrer sur, ouvrez le menu contextuel, puis choisissez **nouveau graphique à partir de la sélection**.
 
-   ![Afficher les éléments sélectionnés dans une nouvelle carte du code](../modeling/media/codemapsshowonnewmap.png)
+    ![Afficher les éléments sélectionnés dans une nouvelle carte du code](../modeling/media/codemapsshowonnewmap.png)
 
 11. Le contexte est reporté sur la nouvelle carte. Masquer des dossiers de Solution et tout autre conteneur que vous ne souhaitez pas voir à l’aide de la **filtres** volet.
 
-   ![Filtrer les conteneurs pour simplifier l'affichage](../modeling/media/codemapsexpandnewgroups.png)
+    ![Filtrer les conteneurs pour simplifier l'affichage](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Développez les groupes et sélectionnez les éléments dans la carte pour afficher les relations.
 
-   ![Sélectionner des éléments pour afficher les relations](../modeling/media/codemapsviewnewrelationships.png)
+    ![Sélectionner des éléments pour afficher les relations](../modeling/media/codemapsviewnewrelationships.png)
 
 Voir aussi :
 

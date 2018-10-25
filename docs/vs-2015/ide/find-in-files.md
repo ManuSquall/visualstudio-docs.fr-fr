@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902137"
 ---
 # <a name="find-in-files"></a>Rechercher dans les fichiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Rechercher dans les fichiers ** vous permet de rechercher un ensemble de fichier
   
 ### <a name="to-display-find-in-files"></a>Pour afficher l'option Rechercher dans les fichiers  
   
-1.  Dans la barre de menus, choisissez **Edition**, puis **Rechercher et remplacer**.  
+1. Dans la barre de menus, choisissez **Edition**, puis **Rechercher et remplacer**.  
   
-2.  Choisissez **Rechercher dans les fichiers**.  
+2. Choisissez **Rechercher dans les fichiers**.  
   
- Pour annuler une opération de recherche, appuyez sur Ctrl+Pause.  
+   Pour annuler une opération de recherche, appuyez sur Ctrl+Pause.  
   
 > [!NOTE]
 >  L'outil Rechercher et remplacer n'effectue pas de recherche dans les répertoires définis avec l'attribut `Hidden` ou `System`.  

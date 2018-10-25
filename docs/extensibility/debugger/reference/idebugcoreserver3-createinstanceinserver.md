@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Documents Microsoft
+title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71995e38cf58c23437cbb9a6d6973fbd09cab8ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 171eda8b7c1b206ea54839366686ad43f690afe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886472"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Crée une instance d’un moteur de débogage sur le serveur.  
@@ -49,7 +49,7 @@ int CreateInstanceInServer(
   
 #### <a name="parameters"></a>Paramètres  
  `szDll`  
- [in] Chemin d’accès à la dll qui implémente le CLSID spécifié dans le `clsidObject` paramètre. S’il s’agit `NULL`, puis COM `CoCreateInstance` est appelée.  
+ [in] Chemin d’accès à la dll qui implémente le CLSID spécifié dans le `clsidObject` paramètre. S’il s’agit `NULL`, du puis COM `CoCreateInstance` fonction est appelée.  
   
  `wLangId`  
  [in] Paramètres régionaux du moteur de débogage. Cela peut être 0 si la [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) méthode ne doit pas être appelée.  
@@ -61,7 +61,7 @@ int CreateInstanceInServer(
  [in] ID de l’interface spécifique pour récupérer à partir de l’objet de classe.  
   
  `ppvObject`  
- [out] `IUnknown` interface à partir de l’objet instancié. Effectuez un cast ou marshaler cet objet à l’interface souhaitée.  
+ [out] `IUnknown` interface à partir de l’objet instancié. Effectuez un cast ou marshaler cet objet vers l’interface souhaitée.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895313"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
   
  Les processus qui peuvent être profilés dépendent des autorisations d’accès utilisateur définies par l’administrateur de l’ordinateur. Un compte d’utilisateur peut, par exemple, disposer d’autorisations pour ce qui suit :  
   
--   Fonctionnalités de profilage avancées quand l’administrateur a défini le démarrage du pilote et du service  
+- Fonctionnalités de profilage avancées quand l’administrateur a défini le démarrage du pilote et du service  
   
--   Profilage d’échantillons uniquement (utilisateurs du domaine)  
+- Profilage d’échantillons uniquement (utilisateurs du domaine)  
   
--   Refuser à tout le monde l’accès au profilage  
+- Refuser à tout le monde l’accès au profilage  
   
- Pour plus d’informations, consultez [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md), ainsi que les options d’administration dans [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Pour plus d’informations, consultez [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md), ainsi que les options d’administration dans [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution  
   

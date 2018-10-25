@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862357"
 ---
 # <a name="how-to-stop-code-changes"></a>Comment : arrêter des modifications de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Pendant que Modifier & Continuer est en train d'appliquer les modifications du c
   
 ### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code  
   
--   Choisissez **cesser d’appliquer les modifications du Code** à partir de la **déboguer** menu.  
+- Choisissez **cesser d’appliquer les modifications du Code** à partir de la **déboguer** menu.  
   
- Cet élément de menu est visible uniquement lorsque les modifications du code sont appliquées.  
+  Cet élément de menu est visible uniquement lorsque les modifications du code sont appliquées.  
   
- Si vous choisissez cette option, aucune modification du code n'est validée.  
+  Si vous choisissez cette option, aucune modification du code n'est validée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier & Continuer](../debugger/edit-and-continue.md)   

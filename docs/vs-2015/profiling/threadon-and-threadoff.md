@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833389"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Les sous-commandes **ThreadOff** et **ThreadOn** de VSPerfCmd.exe sont disponibl
   
  Les sous-commandes **ThreadOff** et **ThreadOn** affectent également le nombre de Start/Stop du thread qui est manipulé par les fonctions d’API du profileur.  
   
--   **ThreadOff** affecte immédiatement la valeur 0 au nombre de Start/Stop global et suspend ainsi le profilage.  
+- **ThreadOff** affecte immédiatement la valeur 0 au nombre de Start/Stop global et suspend ainsi le profilage.  
   
--   **ThreadOn** affecte immédiatement la valeur 1 au nombre de Start/Stop du thread et reprend ainsi le profilage.  
+- **ThreadOn** affecte immédiatement la valeur 1 au nombre de Start/Stop du thread et reprend ainsi le profilage.  
   
- Pour plus d’informations, consultez [API des outils de profilage](../profiling/profiling-tools-apis.md).  
+  Pour plus d’informations, consultez [API des outils de profilage](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   

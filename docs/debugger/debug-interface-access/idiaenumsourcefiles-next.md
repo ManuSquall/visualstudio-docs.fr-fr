@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::Next | Documents Microsoft
+title: IDiaEnumSourceFiles::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca815309009ee8e43c17fb8a579c055e75c684e0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fef2d096ca522a6f6f2a05a081fb5a5a494e168c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819926"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.  
@@ -36,13 +36,13 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de fichiers sources dans l’énumérateur doit être récupéré.  
+ [in] Le nombre de fichiers sources dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau qui doit être remplie avec les [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) les objets qui représentent les fichiers source de votre choix.  
+ [out] Un tableau qui doit être rempli avec le [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) les objets qui représentent les fichiers source souhaitée.  
   
  pceltFetched  
- [out] Retourne le nombre de fichiers sources dans l’énumérateur d’extraction.  
+ [out] Retourne le nombre de fichiers sources dans l’énumérateur extraite.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucun fichier source plus. Sinon, retourne un code d'erreur.  

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817533"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Code source de L2DBForm.xaml.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Cette rubrique présente le contenu et la description du code source C# dans le 
   
  Toutefois, le travail principal lié à la suppression de l'élément de livre sélectionné est effectué par deux instructions uniquement :  
   
--   Tout d'abord, l'élément de livre associé à l'élément actuellement sélectionné dans la zone de liste est récupéré :  
+- Tout d'abord, l'élément de livre associé à l'élément actuellement sélectionné dans la zone de liste est récupéré :  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   Ensuite, cet élément est supprimé du fournisseur de données :  
+- Ensuite, cet élément est supprimé du fournisseur de données :  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- Là encore, la liaison de données dynamiques s'assure que l'interface utilisateur du programme est mise à jour automatiquement.  
+  Là encore, la liaison de données dynamiques s'assure que l'interface utilisateur du programme est mise à jour automatiquement.  
   
 ## <a name="example"></a>Exemple  
   

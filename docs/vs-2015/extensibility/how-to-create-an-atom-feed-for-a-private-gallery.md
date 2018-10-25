@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894441"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Comment : créer un atome de flux pour une galerie privée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Vous pouvez créer un flux vers un emplacement intranet qui contient des extensi
 ## <a name="creating-an-atom-feed"></a>Création d’un atome de flux  
  Pour créer un flux dans une galerie privée Atom, vous commenciez par vos extensions (fichiers .vsix) dans un dossier. Vous pouvez les organiser dans des sous-dossiers si vous le souhaitez. Vous devez également les ressources suivantes :  
   
--   Un fichier atom.xml qui rend les extensions disponibles dans une galerie privée. Pour plus d’informations sur la façon de connecter le fichier atom.xml à **Extensions et mises à jour**, consultez [galeries privées](../extensibility/private-galleries.md).  
+- Un fichier atom.xml qui rend les extensions disponibles dans une galerie privée. Pour plus d’informations sur la façon de connecter le fichier atom.xml à **Extensions et mises à jour**, consultez [galeries privées](../extensibility/private-galleries.md).  
   
--   Un dossier qui contient tous les fichiers image qui ont été extraits à partir des extensions (par exemple, les captures d’écran). Le fichier atom.xml contient des liens relatifs à ces images afin qu’ils soient disponibles dans **Extensions et mises à jour**.  
+- Un dossier qui contient tous les fichiers image qui ont été extraits à partir des extensions (par exemple, les captures d’écran). Le fichier atom.xml contient des liens relatifs à ces images afin qu’ils soient disponibles dans **Extensions et mises à jour**.  
   
- Par exemple, supposons que vous avez collecté les deux extensions suivantes dans un dossier :  
+  Par exemple, supposons que vous avez collecté les deux extensions suivantes dans un dossier :  
   
--   Template_Wizard_239.VSIX, qui est un modèle de projet VSIX vide.  
+- Template_Wizard_239.VSIX, qui est un modèle de projet VSIX vide.  
   
--   SelectionHighlight.vsix, qui est un outil pour mettre en surbrillance toutes les instances d’un mot sélectionné.  
+- SelectionHighlight.vsix, qui est un outil pour mettre en surbrillance toutes les instances d’un mot sélectionné.  
   
- Le contenu du fichier atom.xml ressemblerait à l’exemple suivant :  
+  Le contenu du fichier atom.xml ressemblerait à l’exemple suivant :  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

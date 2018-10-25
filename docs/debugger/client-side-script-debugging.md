@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894987"
 ---
 # <a name="client-side-script-debugging"></a>Débogage de scripts côté client
 Le débogueur Visual Studio fournit un environnement de débogage complet pour rechercher et corriger les erreurs dans les scripts clients des pages ASP.NET.  
@@ -41,17 +41,17 @@ Vous pouvez afficher des listes de documents de script côté serveur et côté 
   
  Le débogueur effectue l'attachement au script automatiquement lorsque l'un des cas suivants se produit :  
   
--   Vous avez atteint un jeu de points d'arrêt dans le script.  
+- Vous avez atteint un jeu de points d'arrêt dans le script.  
   
--   Vous avez atteint une instruction `Stop` VBScript ou une instruction `debugger` JScript dans votre code de script.  
+- Vous avez atteint une instruction `Stop` VBScript ou une instruction `debugger` JScript dans votre code de script.  
   
--   Le navigateur ou le serveur rencontre une erreur de syntaxe ou d'exécution dans votre script. Lorsque cela se produit, une boîte de dialogue apparaît et propose de commencer le débogage.  
+- Le navigateur ou le serveur rencontre une erreur de syntaxe ou d'exécution dans votre script. Lorsque cela se produit, une boîte de dialogue apparaît et propose de commencer le débogage.  
   
- Lorsque vous effectuez l'attachement au script manuellement, le processus de script continue de s'exécuter jusqu'à ce qu'il soit interrompu d'une manière ou d'une autre. Vous pouvez l'arrêter en sélectionnant **Arrêter** dans le menu **Débogage** .  
+  Lorsque vous effectuez l'attachement au script manuellement, le processus de script continue de s'exécuter jusqu'à ce qu'il soit interrompu d'une manière ou d'une autre. Vous pouvez l'arrêter en sélectionnant **Arrêter** dans le menu **Débogage** .  
   
- Lorsque le débogueur effectue l'attachement automatiquement, l'exécution du script est interrompue à la ligne où le point d'arrêt, l'instruction `Stop` ou `debugger` ou l'erreur s'est produit(e), ou au point où vous avez choisi de lancer le débogage dans Internet Explorer.  
+  Lorsque le débogueur effectue l'attachement automatiquement, l'exécution du script est interrompue à la ligne où le point d'arrêt, l'instruction `Stop` ou `debugger` ou l'erreur s'est produit(e), ou au point où vous avez choisi de lancer le débogage dans Internet Explorer.  
   
- À ce stade, vous pouvez utiliser les fonctions normales de débogage pour commencer le débogage. Par exemple, vous pouvez utiliser les commandes **Step** pour continuer à exécuter votre code ligne par ligne. Vous pouvez utiliser la fenêtre **Pile des appels** pour afficher et contrôler le flux de script. Vous pouvez utiliser les fenêtres de variables ou la fenêtre **Immédiat** pour afficher ou modifier des variables et des propriétés.  
+  À ce stade, vous pouvez utiliser les fonctions normales de débogage pour commencer le débogage. Par exemple, vous pouvez utiliser les commandes **Step** pour continuer à exécuter votre code ligne par ligne. Vous pouvez utiliser la fenêtre **Pile des appels** pour afficher et contrôler le flux de script. Vous pouvez utiliser les fenêtres de variables ou la fenêtre **Immédiat** pour afficher ou modifier des variables et des propriétés.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Amélioration des messages d'erreur liés au débogage des scripts  
  Visual Studio fournit des messages d’erreur améliorés pour les problèmes courants de débogage de scripts. Ces messages n'apparaissent pas, à moins que vous n'effectuiez l'attachement manuellement à Internet Explorer. Si vous rencontrez une condition d'erreur lorsqu'Internet Explorer est ouvert automatiquement, essayez d'effectuer l'attachement manuellement afin de voir les messages d'erreur.  
@@ -59,11 +59,11 @@ Vous pouvez afficher des listes de documents de script côté serveur et côté 
 ## <a name="debugging-ajax-script-applications"></a>Débogage d'applications de script AJAX  
  Les applications Web AJAX ont un usage intensif du code de script et représentent un sérieux défi pour le débogage. Pour plus d'informations sur les techniques de débogage AJAX, consultez  
   
- [Débogage et de traçage d’ensemble des Applications Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage des Applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitations du débogage de Script](../debugger/limitations-on-script-debugging.md)   
  [Variable Windows](../debugger/debugger-windows.md)   
  [Fenêtre Exécution](../ide/reference/immediate-window.md)   
- [Débogage et traçage d’ensemble des Applications Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

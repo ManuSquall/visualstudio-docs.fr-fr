@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Documents Microsoft
+title: MODULE_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897002"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
-Décrit un module particulier (assembly, EXE ou DLL).  
+Décrit un module particulier (EXE, DLL ou assembly).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,13 +63,13 @@ public struct MODULE_INFO {
   
 ## <a name="members"></a>Membres  
  dwValidFields  
- Une combinaison d’indicateurs à partir de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) énumération qui spécifie les champs sont remplis.  
+ Une combinaison d’indicateurs de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) énumération qui spécifie quels champs sont renseignés.  
   
  m_bstrName  
  Nom du module.  
   
  m_bstrUrl  
- L’URL du module.  
+ L’URL de module.  
   
  m_bstrVersion  
  La version du module.  
@@ -90,20 +90,20 @@ public struct MODULE_INFO {
  L’ordre de chargement de module.  
   
  m_TimeStamp  
- L’heure de que dernière modification du fichier de symboles.  
+ Heure de que dernière modification du fichier de symboles.  
   
  m_bstrUrlSymbolLocation  
  L’emplacement du fichier de symboles (par exemple, «.\\») spécifié dans le module. Utilisé comme un emplacement de départ pour rechercher des symboles pour un module.  
   
  m_dwModuleFlags  
- Une combinaison d’indicateurs à partir de la [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) énumération qui décrit le module.  
+ Une combinaison d’indicateurs de la [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) énumération qui décrit le module.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode où il est renseigné.  
   
- Cette structure correspond à tous les modules figurant dans le **Modules** fenêtre.  
+ Cette structure correspond à chaque module répertoriée dans le **Modules** fenêtre.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

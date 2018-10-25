@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848785"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d’ensemble de déploiement d’Application approuvée
 Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.  
@@ -51,21 +51,21 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
  Dans les grandes entreprises, l'éditeur et le système de déploiement sont souvent deux entités distinctes :  
   
--   L'éditeur est le groupe qui crée l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
+- L'éditeur est le groupe qui crée l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
--   Le système de déploiement est le groupe, en général le service informatique, qui distribue l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aux ordinateurs de bureau de l'entreprise.  
+- Le système de déploiement est le groupe, en général le service informatique, qui distribue l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aux ordinateurs de bureau de l'entreprise.  
   
 Vous devez suivre ces étapes pour tirer parti du déploiement d'applications approuvées :  
   
-1.  Obtenir un certificat pour l'éditeur.  
+1. Obtenir un certificat pour l'éditeur.  
   
-2.  Ajouter l'éditeur au magasin d'éditeurs approuvés sur tous les clients.  
+2. Ajouter l'éditeur au magasin d'éditeurs approuvés sur tous les clients.  
   
-3.  Créer votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
+3. Créer votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
-4.  Signer le manifeste de déploiement avec le certificat de l'éditeur.  
+4. Signer le manifeste de déploiement avec le certificat de l'éditeur.  
   
-5.  Publier le déploiement d'applications sur les ordinateurs clients.  
+5. Publier le déploiement d'applications sur les ordinateurs clients.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Obtenir un certificat pour le serveur de publication  
  Les certificats numériques sont un composant principal du système de sécurité et d'authentification de Microsoft Authenticode. Authenticode est un composant standard du système d'exploitation Windows. Toutes les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] doivent être signées avec un certificat numérique, qu'elles participent ou non au déploiement d'applications approuvées. Pour obtenir une explication complète du fonctionne d’Authenticode avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consultez [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md).  

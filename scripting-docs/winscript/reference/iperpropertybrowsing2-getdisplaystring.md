@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetDisplayString | Documents Microsoft
+title: IPerPropertyBrowsing2::GetDisplayString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be6f665d1f63966b3828868f4fb8fbf1cae002e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be88a76ce22dfd863e680fcc1a6794065ecaf76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836877"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-Obtient une chaîne à afficher des types qui ne sont pas visibles, par nature, le texte retourné est un nom de la propriété et peut être affichée dans l’interface utilisateur de l’appelant.  
+Obtient une chaîne à afficher des types qui ne sont pas visibles, par nature, le texte retourné est un nom décrivant la propriété et peut être affichée dans l’interface utilisateur de l’appelant.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,9 +45,9 @@ HRESULT GetDisplayString(
  [out] Pointeur vers le `BSTR` contenant le nom complet de la propriété identifiée par `dispID`.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un élément valide `HRESULT`, généralement `S_OK`.  
+ Retourne une liste valide `HRESULT`, généralement `S_OK`.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La chaîne retournée n’est pas une valeur autorisée de la propriété. Il est simplement un affichage de la chaîne de la propriété.  
   
 ## <a name="see-also"></a>Voir aussi  

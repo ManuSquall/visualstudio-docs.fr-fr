@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveDynamicType | Documents Microsoft
+title: IDebugBinder::ResolveDynamicType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7d69bf1a3308e6eebfb11356506b8ea7fc062
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b49e3d42e8fbcc39d259c25081405c21ca1bc15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892803"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 Cette méthode retourne le type exact d’une variable.  

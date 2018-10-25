@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907246"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
   
 #### <a name="to-install-the-extension"></a>Pour installer l'extension  
   
-1.  Dans le projet qui contient **source.vsix.manifest**, ouvrez **bin\\ \***  dans l’Explorateur de fichiers.  
+1. Dans le projet qui contient **source.vsix.manifest**, ouvrez **bin\\\\*** dans l’Explorateur de fichiers.  
   
-2.  Copie le  **\*.vsix** fichier sur l’ordinateur sur lequel vous souhaitez installer l’extension.  
+2. Copie le  **\*.vsix** fichier sur l’ordinateur sur lequel vous souhaitez installer l’extension.  
   
-3.  Sur l'ordinateur cible, double-cliquez sur le fichier *.vsix dans l'Explorateur Windows.  
+3. Sur l'ordinateur cible, double-cliquez sur le fichier *.vsix dans l'Explorateur Windows.  
   
-     L'installateur VSIX s'ouvre.  
+    L'installateur VSIX s'ouvre.  
   
 #### <a name="to-uninstall-the-extension"></a>Pour désinstaller l'extension  
   

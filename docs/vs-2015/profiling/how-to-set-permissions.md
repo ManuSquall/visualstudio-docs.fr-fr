@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905252"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Les membres du groupe Utilisateurs devront pouvoir accéder aux dossiers et fichiers du disque qui sont partagés avec les autres membres de l’équipe. La deuxième procédure, « Pour accorder l’accès aux fichiers projet partagés », explique comment accorder cet accès.  
+  Les membres du groupe Utilisateurs devront pouvoir accéder aux dossiers et fichiers du disque qui sont partagés avec les autres membres de l’équipe. La deuxième procédure, « Pour accorder l’accès aux fichiers projet partagés », explique comment accorder cet accès.  
   
- Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si un administrateur leur accorde l’accès au pilote logiciel pour les outils de profilage. La dernière procédure, « Pour accorder l’accès au pilote de profilage », explique comment accorder l’accès à ce pilote.  
+  Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si un administrateur leur accorde l’accès au pilote logiciel pour les outils de profilage. La dernière procédure, « Pour accorder l’accès au pilote de profilage », explique comment accorder l’accès à ce pilote.  
   
 > [!NOTE]
 >  Pour suivre les étapes de ces procédures, vous devez disposer d’autorisations d’administrateur.  
@@ -89,47 +89,47 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Pour accorder l’accès au pilote de profilage  
   
-1.  Ouvrez une invite de commandes en tant qu'administrateur.  
+1. Ouvrez une invite de commandes en tant qu'administrateur.  
   
-2.  Remplacez le répertoire par :  
+2. Remplacez le répertoire par :  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Exécutez la commande suivante :  
+3. Exécutez la commande suivante :  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Cette commande installe et démarre le pilote des outils de profilage.  
+    Cette commande installe et démarre le pilote des outils de profilage.  
   
-     Cette commande démarre le pilote et le service de profilage afin que les utilisateurs non-administrateurs puissent utiliser les fonctionnalités de profilage disponibles dans leur espace de processus utilisateur. Seul un administrateur peut exécuter cette commande. Elle ne s’exécutera pas pour les utilisateurs non-administrateurs.  
+    Cette commande démarre le pilote et le service de profilage afin que les utilisateurs non-administrateurs puissent utiliser les fonctionnalités de profilage disponibles dans leur espace de processus utilisateur. Seul un administrateur peut exécuter cette commande. Elle ne s’exécutera pas pour les utilisateurs non-administrateurs.  
   
-     Notez que les effets de cette étape sont annulés après le redémarrage de l’ordinateur, sauf si vous exécutez également la dernière étape de cette procédure.  
+    Notez que les effets de cette étape sont annulés après le redémarrage de l’ordinateur, sauf si vous exécutez également la dernière étape de cette procédure.  
   
-4.  Exécutez la commande pour autoriser l’accès aux fonctionnalités du pilote de profilage par un utilisateur ou un groupe ne disposant pas de l’accès administrateur à l’ordinateur :  
+4. Exécutez la commande pour autoriser l’accès aux fonctionnalités du pilote de profilage par un utilisateur ou un groupe ne disposant pas de l’accès administrateur à l’ordinateur :  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<right> option peut avoir une ou plusieurs des valeurs suivantes :  
+    Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<right> option peut avoir une ou plusieurs des valeurs suivantes :  
   
-    -   FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.  
+   -   FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.  
   
-    -   SampleProfiling : autorise l’accès aux méthodes de profilage d’échantillon.  
+   -   SampleProfiling : autorise l’accès aux méthodes de profilage d’échantillon.  
   
-    -   CrossSession : autorise l’accès au profilage intersession exigé pour les services de profilage.  
+   -   CrossSession : autorise l’accès au profilage intersession exigé pour les services de profilage.  
   
-5.  (Facultatif) Pour conserver les résultats de l’une des étapes précédentes après le redémarrage de l’ordinateur, exécutez la commande suivante :  
+5. (Facultatif) Pour conserver les résultats de l’une des étapes précédentes après le redémarrage de l’ordinateur, exécutez la commande suivante :  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Après s’être connectés, les utilisateurs spécifiés pourront désormais utiliser les outils de profilage sans disposer d’autorisations d’administrateur.  
+   Après s’être connectés, les utilisateurs spécifiés pourront désormais utiliser les outils de profilage sans disposer d’autorisations d’administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   

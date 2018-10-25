@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedField::GetExtendedKind | Documents Microsoft
+title: IDebugExtendedField::GetExtendedKind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfafd854d9493ac57ef9dc082ddb7969e0b6136
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5e1be1da0ca207f5bc030bf5de72efdb0d24ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897600"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 Récupère le type de champ étendues spécifié.  
@@ -40,7 +40,7 @@ int GetExtendedKind(
   
 #### <a name="parameters"></a>Paramètres  
  `pdwKind`  
- [dans, out] Valeur à partir de la [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) énumération qui définit le type de champ.  
+ [in, out] Valeur à partir de la [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) énumération qui définit le type de champ.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

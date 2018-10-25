@@ -32,12 +32,12 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894025"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
  **Vous pouvez mapper les dépendances de code dans les langages suivants**:  
   
--   Visual C# .NET ou Visual Basic .NET dans une solution ou des assemblys (.dll ou .exe)  
+- Visual C# .NET ou Visual Basic .NET dans une solution ou des assemblys (.dll ou .exe)  
   
--   Code C ou C++ natif ou managé dans des projets, fichiers d’en-tête (.h ou `#include`) ou des fichiers binaires Visual C++  
+- Code C ou C++ natif ou managé dans des projets, fichiers d’en-tête (.h ou `#include`) ou des fichiers binaires Visual C++  
   
--   projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.  
+- projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.  
   
- **Remarque :** pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
+  **Remarque :** pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Pour afficher les dépendances globales dans votre solution  
   
@@ -122,51 +122,51 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 ###  <a name="OverviewSource"></a> Visualiser les dépendances dans votre solution  
   
-1.  Dans le menu **Architecture** , choisissez **Générer une carte du code pour la solution**.  
+1. Dans le menu **Architecture** , choisissez **Générer une carte du code pour la solution**.  
   
-     ![Générer une commande de carte de code](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![Générer une commande de carte de code](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     Vous obtenez une carte qui affiche les assemblys de niveau supérieur et les liens globaux qui les relient. Plus le lien global est large, plus il représente de dépendances.  
+    Vous obtenez une carte qui affiche les assemblys de niveau supérieur et les liens globaux qui les relient. Plus le lien global est large, plus il représente de dépendances.  
   
-2.  Utilisez le bouton **Légende** dans la barre d’outils de la carte de code pour afficher ou masquer la liste des icônes de type de projet (comme Projet de test, Projet web et Projet de téléphone), les éléments de code (comme Classes, Méthodes et Propriétés) et les types de relations (comme Hérite de, Implémente et Appelle).  
+2. Utilisez le bouton **Légende** dans la barre d’outils de la carte de code pour afficher ou masquer la liste des icônes de type de projet (comme Projet de test, Projet web et Projet de téléphone), les éléments de code (comme Classes, Méthodes et Propriétés) et les types de relations (comme Hérite de, Implémente et Appelle).  
   
-     ![Haut&#45;graphique de dépendance au niveau des assemblys](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![Haut&#45;graphique de dépendance au niveau des assemblys](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     Cet exemple de solution contient des dossiers de solution (**Tests** et **Composants**), des projets de test, des projets web et des assemblys. Par défaut, toutes les relations d’imbrication apparaissent sous forme de *groupes*que vous pouvez développer et réduire. Le groupe **Externes** contient les éléments qui ne font pas partie de votre solution, notamment les dépendances de plateforme. Les assemblys externes affichent uniquement les éléments utilisés. Par défaut, les types de base du système sont masqués pour ne pas trop encombrer la carte.  
+    Cet exemple de solution contient des dossiers de solution (**Tests** et **Composants**), des projets de test, des projets web et des assemblys. Par défaut, toutes les relations d’imbrication apparaissent sous forme de *groupes*que vous pouvez développer et réduire. Le groupe **Externes** contient les éléments qui ne font pas partie de votre solution, notamment les dépendances de plateforme. Les assemblys externes affichent uniquement les éléments utilisés. Par défaut, les types de base du système sont masqués pour ne pas trop encombrer la carte.  
   
-3.  Pour descendre dans la hiérarchie de la carte, développez les groupes qui représentent des projets et des assemblys. Pour développer tout, appuyez sur **Ctrl+A** pour sélectionner tous les nœuds. Ensuite, choisissez **Groupe**, puis **Développer** dans le menu contextuel.  
+3. Pour descendre dans la hiérarchie de la carte, développez les groupes qui représentent des projets et des assemblys. Pour développer tout, appuyez sur **Ctrl+A** pour sélectionner tous les nœuds. Ensuite, choisissez **Groupe**, puis **Développer** dans le menu contextuel.  
   
-     ![Développement de tous les groupes dans une carte de code](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![Développement de tous les groupes dans une carte de code](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  Ceci peut toutefois ne pas s’avérer très utile pour une solution de grande taille. En fait, pour les solutions complexes, les limitations de mémoire peuvent vous empêcher de développer tous les groupes. Pour visualiser l’intérieur d’un nœud individuel, développez-le. Déplacez le pointeur de la souris au-dessus du nœud, puis cliquez sur le chevron (flèche bas) quand il apparaît.  
+4. Ceci peut toutefois ne pas s’avérer très utile pour une solution de grande taille. En fait, pour les solutions complexes, les limitations de mémoire peuvent vous empêcher de développer tous les groupes. Pour visualiser l’intérieur d’un nœud individuel, développez-le. Déplacez le pointeur de la souris au-dessus du nœud, puis cliquez sur le chevron (flèche bas) quand il apparaît.  
   
-     ![Développement d’un nœud dans une carte de code](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![Développement d’un nœud dans une carte de code](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     Ou bien, sélectionnez l’élément et appuyez sur la touche plus (**+**) du clavier. Pour explorer des niveaux plus profonds de code, procédez de même pour les espaces de noms, les types et les membres.  
+    Ou bien, sélectionnez l’élément et appuyez sur la touche plus (**+**) du clavier. Pour explorer des niveaux plus profonds de code, procédez de même pour les espaces de noms, les types et les membres.  
   
-    > [!TIP]
-    >  Pour plus d’informations sur l’utilisation du code est mappé à l’aide de la souris, clavier et tactiles, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).  
+   > [!TIP]
+   >  Pour plus d’informations sur l’utilisation du code est mappé à l’aide de la souris, clavier et tactiles, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).  
   
-5.  Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, vous pouvez masquer tous les conteneurs Dossier Solution et Assembly.  
+5. Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, vous pouvez masquer tous les conteneurs Dossier Solution et Assembly.  
   
-     ![Simplifier la carte en filtrant les conteneurs](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![Simplifier la carte en filtrant les conteneurs](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     Vous pouvez également simplifier la carte en masquant ou en supprimant des groupes et des éléments individuels de la carte, sans affecter le code de la solution sous-jacent.  
+    Vous pouvez également simplifier la carte en masquant ou en supprimant des groupes et des éléments individuels de la carte, sans affecter le code de la solution sous-jacent.  
   
-6.  Pour visualiser les relations entre les éléments, sélectionnez-les dans la carte. Les couleurs des liens indiquent les types de relations, comme le montre le volet **Légende** .  
+6. Pour visualiser les relations entre les éléments, sélectionnez-les dans la carte. Les couleurs des liens indiquent les types de relations, comme le montre le volet **Légende** .  
   
-     ![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     Dans cet exemple, les liens violets correspondent aux appels, les liens en pointillés aux références et les liens bleu clair à l’accès aux champs. Les liens verts peuvent représenter l’héritage ou correspondre à des *liens globaux* qui indiquent plusieurs types de relations (ou *catégories*).  
+    Dans cet exemple, les liens violets correspondent aux appels, les liens en pointillés aux références et les liens bleu clair à l’accès aux champs. Les liens verts peuvent représenter l’héritage ou correspondre à des *liens globaux* qui indiquent plusieurs types de relations (ou *catégories*).  
   
-    > [!TIP]
-    >  Si vous voyez un lien vert, il ne signifie peut-être pas qu’il existe simplement une relation d’héritage. Il peut également exister des appels de méthode, mais ceux-ci sont masqués par la relation d’héritage. Pour afficher des types de liens spécifiques, utilisez les cases à cocher dans le volet **Filtres** pour masquer les types qui ne vous intéressent pas.  
+   > [!TIP]
+   >  Si vous voyez un lien vert, il ne signifie peut-être pas qu’il existe simplement une relation d’héritage. Il peut également exister des appels de méthode, mais ceux-ci sont masqués par la relation d’héritage. Pour afficher des types de liens spécifiques, utilisez les cases à cocher dans le volet **Filtres** pour masquer les types qui ne vous intéressent pas.  
   
-7.  Pour obtenir plus d’informations sur un élément ou un lien, déplacez le pointeur sur celui-ci jusqu’à ce qu’une info-bulle apparaisse. Celle-ci donne des détails sur un élément de code ou les catégories représentées par un lien.  
+7. Pour obtenir plus d’informations sur un élément ou un lien, déplacez le pointeur sur celui-ci jusqu’à ce qu’une info-bulle apparaisse. Celle-ci donne des détails sur un élément de code ou les catégories représentées par un lien.  
   
-     ![Afficher les catégories d’une relation](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![Afficher les catégories d’une relation](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  Pour examiner les éléments et les dépendances représentés par un lien global, sélectionnez d’abord le lien, puis ouvrez son menu contextuel. Choisissez **Afficher les liens de contribution** (ou **Afficher les liens de contribution sur des nouvelles cartes de code**). Cette opération développe les groupes aux deux extrémités du lien et affiche uniquement les éléments et les dépendances qui participent au lien.  
+8. Pour examiner les éléments et les dépendances représentés par un lien global, sélectionnez d’abord le lien, puis ouvrez son menu contextuel. Choisissez **Afficher les liens de contribution** (ou **Afficher les liens de contribution sur des nouvelles cartes de code**). Cette opération développe les groupes aux deux extrémités du lien et affiche uniquement les éléments et les dépendances qui participent au lien.  
   
 9. Pour cibler des parties spécifiques de la carte, continuez à supprimer les éléments qui ne vous intéressent pas. Par exemple, pour analyser l’affichage des classes et des membres, filtrez simplement tous les nœuds d’espace de noms dans le volet **Filtres** .  
   
@@ -184,7 +184,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
      ![Sélectionner les éléments à afficher les relations](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- Voir aussi :  
+    Voir aussi :  
   
 -   [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -304,11 +304,11 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ###  <a name="Troubleshooting"></a> Résoudre les problèmes liés aux cartes dans le code C et C++  
  Ces éléments ne sont pas pris en charge pour le code C et C++ :  
   
--   Les types de base n’apparaissent pas sur les cartes qui incluent la hiérarchie parente.  
+- Les types de base n’apparaissent pas sur les cartes qui incluent la hiérarchie parente.  
   
--   La plupart des éléments de menu **Affichage** ne sont pas disponibles pour le code C et C++.  
+- La plupart des éléments de menu **Affichage** ne sont pas disponibles pour le code C et C++.  
   
- Ces problèmes peuvent se produire quand vous créez des cartes de code pour du code C et C++ :  
+  Ces problèmes peuvent se produire quand vous créez des cartes de code pour du code C et C++ :  
   
 |**Problème**|**Causes possibles**|**Résolution**|  
 |---------------|------------------------|--------------------|  
@@ -324,23 +324,23 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code  
  Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions importantes, mais il améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire au rendu de la carte, considérez les points suivants :  
   
--   [Créez uniquement une carte des dépendances qui vous intéressent.](#SeeSpecificSource)  
+- [Créez uniquement une carte des dépendances qui vous intéressent.](#SeeSpecificSource)  
   
--   Avant de générer la carte pour une solution entière, limitez la portée de la solution.  
+- Avant de générer la carte pour une solution entière, limitez la portée de la solution.  
   
--   Désactivez la génération automatique de la solution à l’aide du bouton **Ignorer la build** situé dans la barre d’outils de la carte de code.  
+- Désactivez la génération automatique de la solution à l’aide du bouton **Ignorer la build** situé dans la barre d’outils de la carte de code.  
   
--   Désactivez l’ajout automatique d’éléments parents à l’aide du bouton **Inclure les parents** situé dans la barre d’outils de la carte de code.  
+- Désactivez l’ajout automatique d’éléments parents à l’aide du bouton **Inclure les parents** situé dans la barre d’outils de la carte de code.  
   
--   Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+- Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![Boutons Skip Build et inclure les Parents](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![Boutons Skip Build et inclure les Parents](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- Bien que Visual Studio puisse fonctionner avec 1 Go de mémoire, nous recommandons que votre ordinateur ait au moins 2 Go de mémoire pour éviter des délais importants quand Visual Studio crée l’index de code et génère la carte.  
+  Bien que Visual Studio puisse fonctionner avec 1 Go de mémoire, nous recommandons que votre ordinateur ait au moins 2 Go de mémoire pour éviter des délais importants quand Visual Studio crée l’index de code et génère la carte.  
   
- Quand la propriété **Copier dans le répertoire de sortie** d’un élément de projet a la valeur **Toujours copier**, la création de cartes ou l’ajout d’éléments à une carte à partir de l’Explorateur de solutions peut prendre plus de temps. Les problèmes liés aux builds incrémentielles et à Visual Studio peuvent provoquer la régénération du projet à chaque fois. Pour accroître les performances, remplacez la valeur de cette propriété par **Copier si plus récent** ou `PreserveNewest`. Consultez [Incremental Builds](../msbuild/incremental-builds.md).  
+  Quand la propriété **Copier dans le répertoire de sortie** d’un élément de projet a la valeur **Toujours copier**, la création de cartes ou l’ajout d’éléments à une carte à partir de l’Explorateur de solutions peut prendre plus de temps. Les problèmes liés aux builds incrémentielles et à Visual Studio peuvent provoquer la régénération du projet à chaque fois. Pour accroître les performances, remplacez la valeur de cette propriété par **Copier si plus récent** ou `PreserveNewest`. Consultez [Incremental Builds](../msbuild/incremental-builds.md).  
   
- La carte terminée présente uniquement les dépendances pour le code correctement généré. Si des erreurs de build se produisent pour certains composants, ces erreurs apparaissent sur la carte. Assurez-vous qu’un composant est réellement généré et qu’il a des dépendances avant de prendre des décisions architecturales basées sur la carte.  
+  La carte terminée présente uniquement les dépendances pour le code correctement généré. Si des erreurs de build se produisent pour certains composants, ces erreurs apparaissent sur la carte. Assurez-vous qu’un composant est réellement généré et qu’il a des dépendances avant de prendre des décisions architecturales basées sur la carte.  
   
 ##  <a name="SavingExporting"></a> Partager des cartes de code  
   

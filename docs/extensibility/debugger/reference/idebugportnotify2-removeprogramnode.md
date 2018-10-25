@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode | Documents Microsoft
+title: IDebugPortNotify2::RemoveProgramNode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60c6e7141d7a433bd40e0ab02802408c8a04c76e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1e56af8e5abe649a83c61d8404d1df80310485b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875578"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
-Annule l’inscription d’un programme qui peut être débogué à partir du port, sur qu'il est en cours d’exécution.  
+Annule l’inscription d’un programme qui peut être débogué à partir du port qu'il s’exécute.  
   
 ## <a name="syntax"></a>Syntaxe  
   

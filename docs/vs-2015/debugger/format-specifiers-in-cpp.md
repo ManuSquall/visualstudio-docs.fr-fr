@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894051"
 ---
 # <a name="format-specifiers-in-c"></a>Spécificateurs de format en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Vous pouvez modifier le format dans lequel une valeur est affichée dans la fen�
   
 > [!NOTE]
 >  Le débogueur natif Visual Studio utilise un nouveau moteur de débogage. Dans le cadre de cette modification, de nouveaux spécificateurs de format ont été ajoutés et d’anciens spécificateurs ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.  
->   
->  -   [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
-> -   [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
+> 
+> - [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
+>   -   [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
   
 ## <a name="using-format-specifiers"></a>Utilisation des spécificateurs de format  
  Si vous avez le code suivant :  

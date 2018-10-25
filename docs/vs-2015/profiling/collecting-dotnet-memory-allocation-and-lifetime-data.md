@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844573"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en charge la collecte des données d’allocation de mémoire .NET et de durée de vie des objets, ce qui permet de détecter les problèmes de performances liés à la mémoire de votre application.  
   
--   Les données concernant l’allocation de mémoire .NET incluent le nombre d’objets mémoire .NET Framework qui ont été alloués, ainsi que leur taille.  
+- Les données concernant l’allocation de mémoire .NET incluent le nombre d’objets mémoire .NET Framework qui ont été alloués, ainsi que leur taille.  
   
--   Les données concernant la durée de vie des objets incluent le nombre d’objets mémoire .NET Framework qui ont été récupérés dans les trois générations de garbage collection, ainsi que la taille de ces objets.  
+- Les données concernant la durée de vie des objets incluent le nombre d’objets mémoire .NET Framework qui ont été récupérés dans les trois générations de garbage collection, ainsi que la taille de ces objets.  
   
- **Spécifications**  
+  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -64,9 +64,9 @@ Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en
 ## <a name="common-tasks"></a>Tâches courantes  
  Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue des _pages de propriétés_**session de performance** . Pour ouvrir la boîte de dialogue :  
   
--   Dans l’ **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
+- Dans l’ **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
   
- Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue _Session de performance_**Pages de propriétés** quand vous collectez des données de mémoire .NET.  
+  Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue _Session de performance_**Pages de propriétés** quand vous collectez des données de mémoire .NET.  
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByAddr | Documents Microsoft
+title: IDiaSession::findInlineFramesByAddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696b73e9a6d84eff3aae7b3f0cbf393c1b935bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 237fdb31b223db1434ec4a2c936ed956e8e339d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899173"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Récupère une énumération qui permet à un client itérer au sein de tous les cadres inline sur une adresse donnée.  
+Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse donnée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT findInlineFramesByAddr (
   
 #### <a name="parameters"></a>Paramètres  
  `parent`  
- [in] Un `IDiaSymbol` objet qui représente le parent.  
+ [in] Un `IDiaSymbol` objet représentant le parent.  
   
  `isect`  
  [in] Spécifie le composant de la section de l’adresse.  

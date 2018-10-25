@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isMSILNetmodule | Documents Microsoft
+title: IDiaSymbol::get_isMSILNetmodule | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c902252e250c78e5712f5e91b8cc5404851cc6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904686"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-Récupère un indicateur qui indique si le module est un fichier .netmodule (module Microsoft Intermediate Language (MSIL) qui contient uniquement les métadonnées et aucun symbole natif).  
+Récupère un indicateur qui spécifie si le module est un fichier .netmodule (module en langage MSIL (Microsoft Intermediate Language) qui contient uniquement les métadonnées et aucun symbole natif).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,7 +45,7 @@ HRESULT get_isMSILNetmodule(
 ## <a name="remarks"></a>Notes  
  Cette propriété est disponible à partir de la `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryContext | Documents Microsoft
+title: IDebugReference2::GetMemoryContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d6137e3cc229fe16111e7c9078cdee1f427ea8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cbec8192f896fffa61a9df6a80493dd65087f59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905157"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Obtient un contexte de la mémoire d’une référence. Réservé à un usage ultérieur.  

@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889813"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233738"
   
  Pour les algorithmes de chiffrement :  
   
--   Le chiffrement<xref:System.Security.Cryptography.DES> contient une clé de petite taille qui peut être cassée par la force brute en moins d’une journée.  
+- Le chiffrement<xref:System.Security.Cryptography.DES> contient une clé de petite taille qui peut être cassée par la force brute en moins d’une journée.  
   
--   Le chiffrement<xref:System.Security.Cryptography.RC2> est vulnérable à une attaque par clé associée, où le pirate recherche les relations mathématiques entre toutes les valeurs de clés.  
+- Le chiffrement<xref:System.Security.Cryptography.RC2> est vulnérable à une attaque par clé associée, où le pirate recherche les relations mathématiques entre toutes les valeurs de clés.  
   
- Cette règle se déclenche quand elle détecte l’une des fonctions de chiffrement ci-dessus dans le code source et elle affiche un avertissement à l’utilisateur.  
+  Cette règle se déclenche quand elle détecte l’une des fonctions de chiffrement ci-dessus dans le code source et elle affiche un avertissement à l’utilisateur.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Utilisez des options de chiffrement plus fortes :  

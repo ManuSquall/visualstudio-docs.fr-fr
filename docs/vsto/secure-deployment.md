@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865724"
 ---
 # <a name="secure-deployment"></a>Déploiement sécurisé
   Lorsque vous créez une solution Office, votre ordinateur de développement est automatiquement mis à jour pour permettre au code dans votre projet doit être exécuté. Toutefois, lorsque vous déployez votre solution, vous devez fournir la preuve sur laquelle baser la décision d’approbation par la solution avec un certificat de signature, ou à l’aide de la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation. Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -35,17 +35,17 @@ ms.locfileid: "35670820"
 ## <a name="prevent-office-solutions-from-running-code"></a>Empêcher l’exécution de code des solutions Office  
  Les administrateurs peuvent utiliser le Registre pour empêcher que toutes les solutions Office en cours d’exécution sur un ordinateur. Lorsqu’une solution Office qui a des extensions de code managé est ouvert, Visual Studio Tools pour les vérifications à l’exécution Office si une entrée avec le nom `Disabled` existe sous une des clés de Registre suivantes sur l’ordinateur :  
   
--   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
   
- Pour empêcher les solutions Office à partir de l’exécution de code, créez un `Disabled` entrée sous un ou deux de ces clés de Registre et spécifiez l’une des valeurs pour les types de données suivants `Disabled`:  
+  Pour empêcher les solutions Office à partir de l’exécution de code, créez un `Disabled` entrée sous un ou deux de ces clés de Registre et spécifiez l’une des valeurs pour les types de données suivants `Disabled`:  
   
--   REG_SZ ou REG_EXPAND_SZ est définie sur n’importe quelle chaîne autre que « 0 » (zéro).  
+- REG_SZ ou REG_EXPAND_SZ est définie sur n’importe quelle chaîne autre que « 0 » (zéro).  
   
--   REG_DWORD qui est définie sur n’importe quelle valeur autre que 0 (zéro).  
+- REG_DWORD qui est définie sur n’importe quelle valeur autre que 0 (zéro).  
   
- Pour activer les solutions Office exécuter du code, définissez à la fois de la `Disabled` entrées à 0 (zéro), ou supprimer les entrées de Registre.  
+  Pour activer les solutions Office exécuter du code, définissez à la fois de la `Disabled` entrées à 0 (zéro), ou supprimer les entrées de Registre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   

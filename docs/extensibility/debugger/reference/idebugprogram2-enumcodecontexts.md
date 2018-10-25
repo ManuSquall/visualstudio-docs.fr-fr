@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Documents Microsoft
+title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90afe268a68d6a72e4444dd78a5748d30ddf7b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddd3f6f3fe06b0a02a1df992561428aa04895748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902514"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Récupère une liste des contextes de code pour une position donnée dans un fichier source.  
@@ -52,7 +52,7 @@ int EnumCodeContexts(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet le débogage de la session manager (SDM) ou IDE pour mapper une position de fichier source à une position de code. Plus d’un contexte de code est retourné si la source génère plusieurs blocs de code (par exemple, les modèles C++).  
+ Cette méthode permet le débogage de session manager (SDM) ou de l’IDE pour mapper une position de fichier source à une position de code. Plus d’un contexte de code est retourné si la source génère plusieurs blocs de code (par exemple, les modèles C++).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

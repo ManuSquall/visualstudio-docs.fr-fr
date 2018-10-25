@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Documents Microsoft
+title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e163daff6466f9cc6e0f83fff20b89006a73dcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fafba8e09ad4f0dccb40ebd6fb88b75eef70964d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896794"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Décrit les informations de point d’arrêt lié pour un point d’arrêt de code ou d’un point d’arrêt.  
+Décrit les informations de point d’arrêt lié pour un point d’arrêt de code ou un point d’arrêt de données.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ public struct BP_RESOLUTION_INFO {
   
 ## <a name="members"></a>Membres  
  `dwFields`  
- Une collection d’indicateurs à partir de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumérations qui spécifie quels champs sont remplies.  
+ Une collection d’indicateurs de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumérations qui spécifie quels champs sont remplies.  
   
  `bpResLocation`  
  Le [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure qui spécifie l’emplacement du point d’arrêt dans le code ou de données.  
@@ -61,7 +61,7 @@ public struct BP_RESOLUTION_INFO {
 ## <a name="remarks"></a>Notes  
  Cette structure est retournée par [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827556"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Didacticiel : Apprenez à déboguer à l’aide de Visual Studio
 
 Cet article présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Si vous souhaitez une vue plus générale des fonctionnalités du débogueur, consultez [visite guidée des fonctionnalités débogueur](../debugger/debugger-feature-tour.md). Lorsque vous *déboguer votre application*, cela signifie généralement que vous exécutez votre application avec le débogueur attaché. Lorsque vous effectuez cette opération, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant son exécution. Vous pouvez parcourir votre code et examinez les valeurs stockées dans des variables, vous pouvez définir des observations sur les variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’accès de l’exécution de votre code, si une branche de code est en cours d’exécution, et ainsi de suite. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
 
 Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#.
 
@@ -329,8 +329,8 @@ Principalement, nous utilisons ici, des raccourcis clavier, car c’est un bon m
 
      ![Utiliser l’exécution sur clic fonctionnalité](../debugger/media/get-started-run-to-click.png "exécuter jusqu’au clic")
 
-    >  [!NOTE]
-    > Le **exécuter jusqu’au clic** bouton est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton fléché vert, utilisez **F11** dans cet exemple à la place pour faire avancer le débogueur au bon endroit.
+   > [!NOTE]
+   > Le **exécuter jusqu’au clic** bouton est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton fléché vert, utilisez **F11** dans cet exemple à la place pour faire avancer le débogueur au bon endroit.
 
 6. Cliquez sur le **exécuter jusqu’au clic** bouton ![exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -408,14 +408,14 @@ Les fonctionnalités qui vous permettent d’inspecter les variables sont une de
 
 1. Pendant la suspension dans le `foreach` boucle (`for` boucle en C++), cliquez sur le **pile des appels** fenêtre, qui est par défaut ouvert dans le volet inférieur droit.
 
-1. Cliquez sur **F11** plusieurs fois jusqu'à ce que vous voyiez le débogueur suspendre dans le `Circle.Draw` méthode dans l’éditeur de code. Examinez le **pile des appels** fenêtre.
+2. Cliquez sur **F11** plusieurs fois jusqu'à ce que vous voyiez le débogueur suspendre dans le `Circle.Draw` méthode dans l’éditeur de code. Examinez le **pile des appels** fenêtre.
 
     ![Examiner la pile des appels](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont bien appelées. La première ligne affiche la fonction active (la `Circle.Draw` ou `Circle::Draw` méthode dans cette application). La deuxième ligne montre que `Circle.Draw` a été appelée à partir de la `Main` (méthode) (`main` en C++), et ainsi de suite.
 
-    >  [!NOTE]
-    > Le **pile des appels** est identique à la perspective de débogage dans certains IDE comme Eclipse.
+   > [!NOTE]
+   > Le **pile des appels** est identique à la perspective de débogage dans certains IDE comme Eclipse.
 
     La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
 

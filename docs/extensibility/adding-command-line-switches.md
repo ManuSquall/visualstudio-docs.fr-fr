@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901045"
 ---
 # <a name="add-command-line-switches"></a>Ajouter des commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lorsque *devenv.exe* est exécutée. Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommé **AddCommandSwitchPackage** avec aucun argument et le VSPackage chargé automatiquement.  
@@ -36,7 +36,7 @@ Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à 
 |-|-|-|-|
 | Paramètre | Description|
 | Arguments | Le nombre d’arguments pour le commutateur. Peut être « * », ou une liste d’arguments. |
-| DemandLoad |  Charger le VSPackage automatiquement si la valeur est 1, sinon la valeur 0. |  
+| DemandLoad | Charger le VSPackage automatiquement si la valeur est 1, sinon la valeur 0. |  
 | HelpString | La chaîne ou une ressource ID d’aide de la chaîne à afficher avec **devenv / ?**. |
 | Name | Le commutateur. |
 | PackageGuid | Le GUID du package. |  
@@ -54,11 +54,11 @@ Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à 
 ## <a name="retrieve-command-line-switches"></a>Récupérer des commutateurs de ligne de commande  
  Lors du chargement de votre package, vous pouvez récupérer les commutateurs de ligne de commande en effectuant les étapes suivantes.  
   
-1.  Dans votre package Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implémentation, appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> pour obtenir le <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
+1. Dans votre package Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implémentation, appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> pour obtenir le <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
   
-2.  Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> pour récupérer les commutateurs de ligne de commande que l’utilisateur a entré.  
+2. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> pour récupérer les commutateurs de ligne de commande que l’utilisateur a entré.  
   
- Le code suivant montre comment déterminer si le commutateur de ligne de commande MySwitch a été entré par l’utilisateur :  
+   Le code suivant montre comment déterminer si le commutateur de ligne de commande MySwitch a été entré par l’utilisateur :  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

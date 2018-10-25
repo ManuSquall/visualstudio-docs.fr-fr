@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_symbolsFileName | Documents Microsoft
+title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f04d4ffee712a87dc784b5b83496b86d70ae25
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46b468144e0d8275b121d9fe29e59d4789f06042
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840439"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
-Récupère le nom du fichier à partir de laquelle les symboles ont été chargés.  
+Récupère le nom du fichier à partir duquel les symboles ont été chargés.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_symbolsFileName (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le nom du fichier à partir de laquelle les symboles ont été chargés.  
+ [out] Retourne le nom du fichier à partir duquel les symboles ont été chargés.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -47,4 +47,4 @@ HRESULT get_symbolsFileName (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

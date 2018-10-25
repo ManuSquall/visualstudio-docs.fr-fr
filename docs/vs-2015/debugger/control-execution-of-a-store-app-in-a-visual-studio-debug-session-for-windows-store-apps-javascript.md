@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813289"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Contrôler l'exécution d'une application du Windows Store dans une session de débogage Visual Studio pour des applications du Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
  [Afficher des données de variables dans la fenêtre Variables locales](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [Afficher des données de variables et la chaîne prototype d'un objet](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [Afficher des données de variables et la chaîne prototype d'un objet](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [Examiner les données de chaîne de portée](#BKMK_Examine_scope_chain_data)  
+- [Examiner les données de chaîne de portée](#BKMK_Examine_scope_chain_data)  
   
- [Accéder au code à l'aide de la fenêtre Pile des appels](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [Accéder au code à l'aide de la fenêtre Pile des appels](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> Créer un exemple d'application  
  Le débogage concerne le code : l’exemple d’application utilise donc l’infrastructure de l’application du Windows Store uniquement pour créer un fichier source dans lequel vous pouvez observer comment fonctionne la navigation dans une session de débogage et comment examiner l’état du programme. Tout le code que vous appellerez est appelé à partir de la fonction `module` du fichier default.js. Aucun contrôle n’est ajouté et aucun événement n’est géré.  
   
-1.  **Créez une application du Windows Store JavaScript vide.** Ouvrez Visual Studio. Sur la page d'accueil, cliquez sur le lien **Nouveau projet** . Dans la boîte de dialogue **Nouveau projet** , choisissez **JavaScript** dans la liste **Installé** , puis **Windows Store**. Dans la liste de modèles de projet, choisissez **Application vide**. Visual Studio crée une solution et un projet et affiche le fichier default.htm dans l'éditeur de code.  
+1. **Créez une application du Windows Store JavaScript vide.** Ouvrez Visual Studio. Sur la page d'accueil, cliquez sur le lien **Nouveau projet** . Dans la boîte de dialogue **Nouveau projet** , choisissez **JavaScript** dans la liste **Installé** , puis **Windows Store**. Dans la liste de modèles de projet, choisissez **Application vide**. Visual Studio crée une solution et un projet et affiche le fichier default.htm dans l'éditeur de code.  
   
-     Notez les fichiers de script qui sont chargés dans la page.  
+    Notez les fichiers de script qui sont chargés dans la page.  
   
-    -   Les fichiers `base.js` et `ui.js` créent la **Bibliothèque Windows pour JavaScript**. La Bibliothèque Windows pour JavaScript est un ensemble de fichiers JavaScript et CSS qui simplifient la création d'applications du Windows Store avec JavaScript. Vous l’utilisez avec HTML, CSS et Windows Runtime pour créer votre application.  
+   -   Les fichiers `base.js` et `ui.js` créent la **Bibliothèque Windows pour JavaScript**. La Bibliothèque Windows pour JavaScript est un ensemble de fichiers JavaScript et CSS qui simplifient la création d'applications du Windows Store avec JavaScript. Vous l’utilisez avec HTML, CSS et Windows Runtime pour créer votre application.  
   
-    -   Votre code commence dans le fichier `default.js`  .  
+   -   Votre code commence dans le fichier `default.js`  .  
   
-2.  **Ouvrir le fichier source default.js.** Dans l’Explorateur de solutions, ouvrez le nœud **js** et choisissez `default.js`.  
+2. **Ouvrir le fichier source default.js.** Dans l’Explorateur de solutions, ouvrez le nœud **js** et choisissez `default.js`.  
   
-3.  **Remplacer le contenu de la page par l’exemple de code.** Supprimez tout le contenu du fichier `default.js` . Suivez ce lien : [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), puis copiez le code de la section JavaScript dans le Presse-papiers. (Choisissez **retour** dans le navigateur ou la visionneuse d’aide pour revenir à cette page de démarrage rapide.) Dans l'éditeur Visual Studio, collez le code dans le fichier `default.js` maintenant vide. Appuyez sur **Ctrl+S** pour enregistrer le fichier.  
+3. **Remplacer le contenu de la page par l’exemple de code.** Supprimez tout le contenu du fichier `default.js` . Suivez ce lien : [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md), puis copiez le code de la section JavaScript dans le Presse-papiers. (Choisissez **retour** dans le navigateur ou la visionneuse d’aide pour revenir à cette page de démarrage rapide.) Dans l'éditeur Visual Studio, collez le code dans le fichier `default.js` maintenant vide. Appuyez sur **Ctrl+S** pour enregistrer le fichier.  
   
- Vous pouvez désormais vous référer aux exemples contenus dans cette rubrique.  
+   Vous pouvez désormais vous référer aux exemples contenus dans cette rubrique.  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> Définir et exécuter jusqu'à un point d'arrêt, effectuer un pas à pas détaillé dans une fonction et examiner les données de programme  
  L’approche la plus courante pour démarrer une session de débogage consiste à choisir **Démarrer le débogage** dans le menu **Déboguer** (clavier : F5). L’application démarre et continue de s’exécuter jusqu’à ce qu’un point d’arrêt soit atteint, que vous suspendiez manuellement l’exécution, qu’une exception se produise ou que l’application se termine.  
@@ -88,45 +88,45 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
 ###  <a name="BKMK_Example_1"></a> Exemple 1  
  Dans cet exemple, vous définissez un point d’arrêt dans le corps de la fonction `module` dans `default.js` , là où elle appelle la première de nos instructions utilisateur. Vous effectuez ensuite un pas à pas détaillé dans la fonction, vous affichez les valeurs des variables dans des bulles d’informations, puis vous arrêtez le débogage.  
   
-1.  **Définir un point d'arrêt.** Définissez un point d'arrêt au niveau de l'instruction `callTrack = "module function";` qui se produit juste après l'appel à `app.start()`. Sélectionnez la ligne dans la marge grisée de l’éditeur de code source (clavier : positionnez le curseur sur la ligne et appuyez sur la touche **F9** ).  
+1. **Définir un point d'arrêt.** Définissez un point d'arrêt au niveau de l'instruction `callTrack = "module function";` qui se produit juste après l'appel à `app.start()`. Sélectionnez la ligne dans la marge grisée de l’éditeur de code source (clavier : positionnez le curseur sur la ligne et appuyez sur la touche **F9** ).  
   
-     ![Définir un point d’arrêt au example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![Définir un point d’arrêt au example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     L'icône du point d'arrêt apparaît dans la marge.  
+    L'icône du point d'arrêt apparaît dans la marge.  
   
-2.  **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** on the **Déboguer** (clavier : F5).  
+2. **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** on the **Déboguer** (clavier : F5).  
   
-     L'exécution de l'application démarre et est suspendue immédiatement avant l'instruction au niveau de laquelle vous avez défini le point d'arrêt. L'icône de la ligne en cours dans la marge identifie l'emplacement et l'instruction en cours est mise en surbrillance.  
+    L'exécution de l'application démarre et est suspendue immédiatement avant l'instruction au niveau de laquelle vous avez défini le point d'arrêt. L'icône de la ligne en cours dans la marge identifie l'emplacement et l'instruction en cours est mise en surbrillance.  
   
-     ![Exécuter jusqu’au point d’arrêt](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![Exécuter jusqu’au point d’arrêt](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     Vous êtes maintenant aux commandes de l'exécution de l'application et pouvez examiner l'état du programme lorsque vous exécutez pas-à-pas les instructions de programmation.  
+    Vous êtes maintenant aux commandes de l'exécution de l'application et pouvez examiner l'état du programme lorsque vous exécutez pas-à-pas les instructions de programmation.  
   
-3.  **Effectuer un pas à pas détaillé dans la fonction.** Dans la boîte de dialogue **Déboguer** , choisissez **Pas à pas détaillé** (clavier : **F11**).  
+3. **Effectuer un pas à pas détaillé dans la fonction.** Dans la boîte de dialogue **Déboguer** , choisissez **Pas à pas détaillé** (clavier : **F11**).  
   
-     ![Pas à pas détaillé d’une ligne de code](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![Pas à pas détaillé d’une ligne de code](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     Notez que le débogueur passe à la ligne suivante, qui est un appel à la fonction `example1` . Choisissez à nouveau **Pas à pas détaillé** . Le débogueur accède à la première ligne de code de la fonction `example1` . La ligne en surbrillance n’a pas été exécutée, mais la fonction a été chargée sur la pile des appels et la mémoire pour les variables locales a été allouée.  
+    Notez que le débogueur passe à la ligne suivante, qui est un appel à la fonction `example1` . Choisissez à nouveau **Pas à pas détaillé** . Le débogueur accède à la première ligne de code de la fonction `example1` . La ligne en surbrillance n’a pas été exécutée, mais la fonction a été chargée sur la pile des appels et la mémoire pour les variables locales a été allouée.  
   
-4.  Lorsque vous effectuez une exécution pas-à-pas d'une ligne de code, le débogueur effectue l'une des opérations suivantes :  
+4. Lorsque vous effectuez une exécution pas-à-pas d'une ligne de code, le débogueur effectue l'une des opérations suivantes :  
   
-    -   Si l'instruction suivante n'est pas un appel à une fonction dans votre solution, le débogueur exécute l'instruction, passe à l'instruction, puis suspend l'exécution.  
+   - Si l'instruction suivante n'est pas un appel à une fonction dans votre solution, le débogueur exécute l'instruction, passe à l'instruction, puis suspend l'exécution.  
   
-    -   Si l'instruction est un appel à une fonction dans votre solution, il passe à la première ligne de la fonction appelée, puis suspend l'exécution.  
+   - Si l'instruction est un appel à une fonction dans votre solution, il passe à la première ligne de la fonction appelée, puis suspend l'exécution.  
   
      Continuez à parcourir les instructions de `example1` jusqu'à atteindre le point de sortie. Le débogueur met en surbrillance l'accolade fermante de la fonction.  
   
-5.  **Afficher les valeurs des variables dans des bulles d’informations.** Continuez à parcourir les instructions de `example1` jusqu'à atteindre le point de sortie. Le débogueur met en surbrillance l'accolade fermante de la fonction. Quand vous placez la souris sur un nom de variable, le nom et la valeur de la variable sont affichés dans une bulle d’informations.  
+5. **Afficher les valeurs des variables dans des bulles d’informations.** Continuez à parcourir les instructions de `example1` jusqu'à atteindre le point de sortie. Le débogueur met en surbrillance l'accolade fermante de la fonction. Quand vous placez la souris sur un nom de variable, le nom et la valeur de la variable sont affichés dans une bulle d’informations.  
   
-     ![Afficher les valeurs des variables dans la bulle](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![Afficher les valeurs des variables dans la bulle](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **Ajouter un espion pour la variable callTrack.** Les fichiers `callTrack` est utilisée tout au long de ce guide de démarrage rapide pour afficher les fonctions appelées dans les exemples. Pour faciliter l'affichage de la valeur de la variable, ajoutez-la à une fenêtre Espion. Sélectionnez le nom de la variable dans l’éditeur, puis choisissez **Ajouter un espion** dans le menu contextuel.  
+6. **Ajouter un espion pour la variable callTrack.** Les fichiers `callTrack` est utilisée tout au long de ce guide de démarrage rapide pour afficher les fonctions appelées dans les exemples. Pour faciliter l'affichage de la valeur de la variable, ajoutez-la à une fenêtre Espion. Sélectionnez le nom de la variable dans l’éditeur, puis choisissez **Ajouter un espion** dans le menu contextuel.  
   
-     ![Surveiller une variable](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![Surveiller une variable](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     Examinez plusieurs variables dans une fenêtre Espion. Les valeurs des variables espionnées sont mises à jour chaque fois que l'exécution est suspendue, tout comme les valeurs qui figurent dans les fenêtres de bulles d'informations. Vos variables espionnées sont enregistrées d’une session de débogage à l’autre.  
+    Examinez plusieurs variables dans une fenêtre Espion. Les valeurs des variables espionnées sont mises à jour chaque fois que l'exécution est suspendue, tout comme les valeurs qui figurent dans les fenêtres de bulles d'informations. Vos variables espionnées sont enregistrées d’une session de débogage à l’autre.  
   
-7.  **Arrêter le débogage.** Dans la boîte de dialogue **Déboguer** , choisissez **Arrêter le débogage** (clavier : **Maj+F5**). La session de débogage se termine.  
+7. **Arrêter le débogage.** Dans la boîte de dialogue **Déboguer** , choisissez **Arrêter le débogage** (clavier : **Maj+F5**). La session de débogage se termine.  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Effectuer un pas à pas détaillé, principal et sortant  
  Contrairement au pas à pas détaillé dans une fonction appelée par une fonction parente, le pas à pas principal dans une fonction exécute la fonction enfant, puis suspend l’exécution dans la fonction appelante à la reprise du parent. Vous pouvez effectuer un pas à pas principal dans une fonction quand vous savez comment elle opère et que vous êtes certain que son exécution n'affectera pas le problème que vous examinez.  
@@ -241,13 +241,13 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
 ##  <a name="BKMK_Examine_scope_chain_data"></a> Examiner les données de chaîne de portée  
  La *chaîne de portée* d’une fonction comprend toutes les variables qui sont actives et accessibles par la fonction. Les variables globales font partie de la chaîne de portée, tout comme les objets (y compris les fonctions) qui sont définis dans la fonction qui définit la fonction en cours d'exécution. Par exemple, la variable `callTrack` définie dans la fonction `module` de `default.js` est accessible par n'importe quelle fonction qui est définie dans la fonction `module` . Chaque portée figure séparément dans la fenêtre Variables locales.  
   
--   Les variables de la fonction en cours d'exécution sont répertoriées en haut de la fenêtre.  
+- Les variables de la fonction en cours d'exécution sont répertoriées en haut de la fenêtre.  
   
--   Les variables de chaque portée de fonction dans la chaîne de portée sont répertoriées sous un nœud **[Portée]** pour la fonction. Les fonctions de la portée sont répertoriées selon leur ordre dans la chaîne, depuis la fonction qui définit la fonction actuelle jusqu’à la fonction la plus aux limites de la chaîne.  
+- Les variables de chaque portée de fonction dans la chaîne de portée sont répertoriées sous un nœud **[Portée]** pour la fonction. Les fonctions de la portée sont répertoriées selon leur ordre dans la chaîne, depuis la fonction qui définit la fonction actuelle jusqu’à la fonction la plus aux limites de la chaîne.  
   
--   Le nœud **[Variables globales]** répertorie les objets globaux qui sont définis en dehors des fonctions.  
+- Le nœud **[Variables globales]** répertorie les objets globaux qui sont définis en dehors des fonctions.  
   
- Les chaînes de portée pouvant prêter à confusion, il vaut mieux les illustrer par un exemple. Dans l’exemple suivant, vous pouvez voir comment la fonction `module` crée sa propre portée, et comment il est possible de créer un autre niveau de portée en créant une fermeture.  
+  Les chaînes de portée pouvant prêter à confusion, il vaut mieux les illustrer par un exemple. Dans l’exemple suivant, vous pouvez voir comment la fonction `module` crée sa propre portée, et comment il est possible de créer un autre niveau de portée en créant une fermeture.  
   
 ###  <a name="BKMK_Example_4"></a> Exemple 4  
   

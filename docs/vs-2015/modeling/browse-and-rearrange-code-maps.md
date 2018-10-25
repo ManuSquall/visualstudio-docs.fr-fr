@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896834"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Ajouter un lien entre des éléments de code existants  
   
-1.  Sélectionnez l'élément de code source. Une barre d'outils apparaît au-dessus de l'élément de code.  
+1. Sélectionnez l'élément de code source. Une barre d'outils apparaît au-dessus de l'élément de code.  
   
-     ![Barre d’outils du graphique de dépendance](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Barre d’outils du graphique de dépendance](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Dans la barre d’outils, choisissez la première icône, **créer un lien à partir de ce nœud vers lequel nœud que vous cliquez sur Suivant**.  
+2. Dans la barre d’outils, choisissez la première icône, **créer un lien à partir de ce nœud vers lequel nœud que vous cliquez sur Suivant**.  
   
-3.  Sélectionnez l'élément de code cible. Un lien apparaît entre les deux éléments de code.  
+3. Sélectionnez l'élément de code cible. Un lien apparaît entre les deux éléments de code.  
   
- \- ou -  
+   \- ou -  
   
-1.  Sélectionnez l'élément de code source sur la carte.  
+4. Sélectionnez l'élément de code source sur la carte.  
   
-2.  Si une souris est installée, déplacez le pointeur en dehors des limites de la carte.  
+5. Si une souris est installée, déplacez le pointeur en dehors des limites de la carte.  
   
-3.  Ouvrez le menu contextuel de l’élément de code et choisissez **modifier**, **ajouter**, **lien générique**.  
+6. Ouvrez le menu contextuel de l’élément de code et choisissez **modifier**, **ajouter**, **lien générique**.  
   
-4.  Accéder à l'élément de code cible à l'aide de la touche Tab et le sélectionner pour le lien.  
+7. Accéder à l'élément de code cible à l'aide de la touche Tab et le sélectionner pour le lien.  
   
-5.  Appuyez sur **RETOUR**.  
+8. Appuyez sur **RETOUR**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Ajouter un commentaire à un nœud existant sur la carte  

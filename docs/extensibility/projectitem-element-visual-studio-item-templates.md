@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855987"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, élément (modèles d’élément Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle d’élément.  
@@ -51,13 +51,13 @@ Spécifie un fichier qui est inclus dans le modèle d’élément.
   
 ### <a name="attributes"></a>Attributs  
   
-|Attribut|Description|  
-|---------------|-----------------|  
-|`SubType`|Attribut facultatif.<br /><br /> Spécifie le sous-type d’un élément dans un modèle d’élément multifichier. Cette valeur est utilisée pour déterminer l’éditeur qui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilisera pour ouvrir l’élément.|  
-|`CustomTool`|Attribut facultatif.<br /><br /> Définit l’outil personnalisé pour l’élément dans le fichier projet.|  
-|`ItemType`|Attribut facultatif.<br /><br /> Définit le ItemType pour l’élément dans le fichier projet.|  
-|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
-|`TargetFileName`|Attribut facultatif.<br /><br /> Spécifie le nom de l’élément qui est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètres pour créer un nom d’élément.|  
+| Attribut | Description |
+|---------------------| - |
+| `SubType` | Attribut facultatif.<br /><br /> Spécifie le sous-type d’un élément dans un modèle d’élément multifichier. Cette valeur est utilisée pour déterminer l’éditeur qui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilisera pour ouvrir l’élément. |
+| `CustomTool` | Attribut facultatif.<br /><br /> Définit l’outil personnalisé pour l’élément dans le fichier projet. |
+| `ItemType` | Attribut facultatif.<br /><br /> Définit le ItemType pour l’élément dans le fichier projet. |
+| `ReplaceParameters` | Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`. |
+| `TargetFileName` | Attribut facultatif.<br /><br /> Spécifie le nom de l’élément qui est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètres pour créer un nom d’élément. |
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  

@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873667"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Exécuter des tests unitaires sur des extensions UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour préserver la stabilité de votre code au fil des modifications successives, nous vous recommandons d’écrire des tests unitaires et de les exécuter dans le cadre d’un processus de génération normal. Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md). Pour configurer des tests pour les extensions de modélisation Visual Studio, vous avez besoin de certaines informations clés. En résumé :  
   
--   [Configuration d’un Test unitaire pour les Extensions VSIX](#Host)  
+- [Configuration d’un Test unitaire pour les Extensions VSIX](#Host)  
   
-     Exécutez les tests avec l’adaptateur hôte IDE VS. Faites précéder chaque méthode de test du préfixe `[HostType("VS IDE")]`. Cet adaptateur hôte démarre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pendant l’exécution de vos tests.  
+   Exécutez les tests avec l’adaptateur hôte IDE VS. Faites précéder chaque méthode de test du préfixe `[HostType("VS IDE")]`. Cet adaptateur hôte démarre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pendant l’exécution de vos tests.  
   
--   [Accéder à DTE et ModelStore](#DTE)  
+- [Accéder à DTE et ModelStore](#DTE)  
   
-     En principe, vous serez amené à ouvrir un modèle et ses diagrammes et à accéder à `IModelStore` dans l’initialisation du test.  
+   En principe, vous serez amené à ouvrir un modèle et ses diagrammes et à accéder à `IModelStore` dans l’initialisation du test.  
   
--   [Ouverture d’un diagramme de modèle](#Opening)  
+- [Ouverture d’un diagramme de modèle](#Opening)  
   
-     Vous pouvez effectuer un cast de `EnvDTE.ProjectItem` vers et à partir de `IDiagramContext`.  
+   Vous pouvez effectuer un cast de `EnvDTE.ProjectItem` vers et à partir de `IDiagramContext`.  
   
--   [Exécution des modifications dans le Thread d’interface utilisateur](#UiThread)  
+- [Exécution des modifications dans le Thread d’interface utilisateur](#UiThread)  
   
-     Les tests qui apportent des modifications au magasin de modèles doivent être exécutés dans le thread d’interface utilisateur. Pour cela, vous pouvez utiliser `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .  
+   Les tests qui apportent des modifications au magasin de modèles doivent être exécutés dans le thread d’interface utilisateur. Pour cela, vous pouvez utiliser `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .  
   
--   [Test des commandes, de mouvements et d’autres composants MEF](#MEF)  
+- [Test des commandes, de mouvements et d’autres composants MEF](#MEF)  
   
-     Pour tester des composants MEF, vous devez connecter explicitement leurs propriétés importées à des valeurs.  
+   Pour tester des composants MEF, vous devez connecter explicitement leurs propriétés importées à des valeurs.  
   
- Ces points sont développés dans les sections suivantes.  
+  Ces points sont développés dans les sections suivantes.  
   
- Vous trouverez un exemple d’extension UML ayant fait l’objet de tests unitaires dans la galerie d’exemples de code à la page [UML – Entrée rapide avec du texte](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Vous trouverez un exemple d’extension UML ayant fait l’objet de tests unitaires dans la galerie d’exemples de code à la page [UML – Entrée rapide avec du texte](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Configuration requise  
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db34be21836e4c317c5ad70c6874b21081da931d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826513"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Forum aux questions : Conversion des compléments en extensions VSPackage
 Les compléments sont désormais déconseillés. Pour effectuer une nouvelle extension de Visual Studio, vous devez créer une extension VSIX. Voici les réponses à certaines questions fréquemment posées sur la façon de convertir un complément Visual Studio pour une extension VSIX.  
@@ -58,94 +58,94 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
 ##  <a name="BKMK_RunAddin"></a> Comment puis-je exécuter mon code de complément dans un VSPackage ?  
  Un code de complément s'exécute généralement de l'une des deux façons suivantes :  
   
--   Déclenché par une commande de menu (le code se trouve dans le `IDTCommandTarget.Exec` méthode.)  
+- Déclenché par une commande de menu (le code se trouve dans le `IDTCommandTarget.Exec` méthode.)  
   
--   automatiquement au démarrage (le code se trouve dans le gestionnaire d'événements `OnConnection`.).  
+- automatiquement au démarrage (le code se trouve dans le gestionnaire d'événements `OnConnection`.).  
   
- Vous pouvez procéder de la même façon dans un VSPackage. Voici comment ajouter du code de complément dans une méthode de rappel :  
+  Vous pouvez procéder de la même façon dans un VSPackage. Voici comment ajouter du code de complément dans une méthode de rappel :  
   
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Pour implémenter une commande de menu dans un VSPackage  
   
-1.  Créez un VSPackage comportant une commande de menu. (Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1. Créez un VSPackage comportant une commande de menu. (Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  *\<nom de votre projet > Package.cs*.)  
+2. Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  *\<nom de votre projet > Package.cs*.)  
   
-3.  Ajoutez les instructions `using` suivantes au fichier :  
+3. Ajoutez les instructions `using` suivantes au fichier :  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Recherchez la méthode `MenuItemCallback`. Ajoutez un appel à <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet <xref:EnvDTE80.DTE2> :  
+4. Recherchez la méthode `MenuItemCallback`. Ajoutez un appel à <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet <xref:EnvDTE80.DTE2> :  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Ajoutez le code de votre complément qui se trouve dans sa méthode `IDTCommandTarget.Exec`. Par exemple, voici du code qui ajoute un nouveau volet à la **sortie** fenêtre et imprime du « Texte » dans le nouveau volet.  
+5. Ajoutez le code de votre complément qui se trouve dans sa méthode `IDTCommandTarget.Exec`. Par exemple, voici du code qui ajoute un nouveau volet à la **sortie** fenêtre et imprime du « Texte » dans le nouveau volet.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  Générez et exécutez ce projet. Appuyez sur **F5** ou sélectionnez **Démarrer** sur le **déboguer** barre d’outils. Dans l’instance expérimentale de Visual Studio, le **outils** menu doit avoir un bouton nommé **mon nom de commande**. Lorsque vous cliquez sur ce bouton, les mots **texte** doit apparaître dans un **sortie** volet de fenêtre. (Vous devrez peut-être ouvrir le **sortie** fenêtre.)  
+6. Générez et exécutez ce projet. Appuyez sur **F5** ou sélectionnez **Démarrer** sur le **déboguer** barre d’outils. Dans l’instance expérimentale de Visual Studio, le **outils** menu doit avoir un bouton nommé **mon nom de commande**. Lorsque vous cliquez sur ce bouton, les mots **texte** doit apparaître dans un **sortie** volet de fenêtre. (Vous devrez peut-être ouvrir le **sortie** fenêtre.)  
   
- Votre code peut également s'exécuter au démarrage. Toutefois, cette approche est généralement déconseillée dans le cas des extensions VSPackage. Si un nombre trop élevé d'extensions sont chargées au démarrage de Visual Studio, le démarrage peut durer plus longtemps. Une meilleure pratique consiste à charger automatiquement le VSPackage uniquement quand une condition spécifique est satisfaite (comme l'ouverture d'une solution).  
+   Votre code peut également s'exécuter au démarrage. Toutefois, cette approche est généralement déconseillée dans le cas des extensions VSPackage. Si un nombre trop élevé d'extensions sont chargées au démarrage de Visual Studio, le démarrage peut durer plus longtemps. Une meilleure pratique consiste à charger automatiquement le VSPackage uniquement quand une condition spécifique est satisfaite (comme l'ouverture d'une solution).  
   
- Cette procédure montre comment exécuter du code de complément dans un VSPackage qui est automatiquement chargé à l'ouverture d'une solution :  
+   Cette procédure montre comment exécuter du code de complément dans un VSPackage qui est automatiquement chargé à l'ouverture d'une solution :  
   
 ### <a name="to-autoload-a-vspackage"></a>Pour charger automatiquement un VSPackage  
   
-1.  Créez un projet VSIX avec un élément de projet de Package Visual Studio. (Pour savoir comment procéder, consultez [comment démarrer le développement d’extensions VSIX ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Il suffit d’ajouter le **Package Visual Studio** l’élément de projet à la place.) Nommez le projet VSIX **TestAutoload**.  
+1. Créez un projet VSIX avec un élément de projet de Package Visual Studio. (Pour savoir comment procéder, consultez [comment démarrer le développement d’extensions VSIX ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Il suffit d’ajouter le **Package Visual Studio** l’élément de projet à la place.) Nommez le projet VSIX **TestAutoload**.  
   
-2.  Ouvrez *TestAutoloadPackage.cs*. Recherchez la ligne où la classe de package est déclarée :  
+2. Ouvrez *TestAutoloadPackage.cs*. Recherchez la ligne où la classe de package est déclarée :  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  Un ensemble d'attributs se trouve au-dessus de cette ligne. Ajoutez cet attribut :  
+3. Un ensemble d'attributs se trouve au-dessus de cette ligne. Ajoutez cet attribut :  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  Définir un point d’arrêt dans le `Initialize()` (méthode) et démarrer le débogage (**F5**).  
+4. Définir un point d’arrêt dans le `Initialize()` (méthode) et démarrer le débogage (**F5**).  
   
-5.  Dans l'instance expérimentale, ouvrez un projet. Le VSPackage doit se charger et votre point d'arrêt doit être atteint.  
+5. Dans l'instance expérimentale, ouvrez un projet. Le VSPackage doit se charger et votre point d'arrêt doit être atteint.  
   
- Vous pouvez spécifier d'autres contextes dans lesquels charger votre VSPackage en utilisant les champs de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Pour plus d’informations, consultez [charge VSPackages](../extensibility/loading-vspackages.md).  
+   Vous pouvez spécifier d'autres contextes dans lesquels charger votre VSPackage en utilisant les champs de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Pour plus d’informations, consultez [charge VSPackages](../extensibility/loading-vspackages.md).  
   
 ## <a name="how-can-i-get-the-dte-object"></a>Comment obtenir l'objet DTE ?  
  Si votre complément n'affiche pas des éléments d'interface utilisateur, tels que des commandes de menu, des boutons de barre d'outils ou des fenêtres Outil, vous devez pouvoir utiliser votre code tel quel, tant que vous obtenez l'objet d'automation DTE du VSPackage. Voici comment :  
   
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>Pour obtenir l'objet DTE d'un VSPackage  
   
-1.  Dans un projet VSIX avec un modèle d’élément de Package Visual Studio, recherchez le  *\<nom du projet > Package.cs* fichier. Il s'agit de la classe dérivée de <xref:Microsoft.VisualStudio.Shell.Package> ; elle peut vous permettre d'interagir avec Visual Studio. Dans ce cas, vous utilisez sa méthode <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet <xref:EnvDTE80.DTE2>.  
+1. Dans un projet VSIX avec un modèle d’élément de Package Visual Studio, recherchez le  *\<nom du projet > Package.cs* fichier. Il s'agit de la classe dérivée de <xref:Microsoft.VisualStudio.Shell.Package> ; elle peut vous permettre d'interagir avec Visual Studio. Dans ce cas, vous utilisez sa méthode <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet <xref:EnvDTE80.DTE2>.  
   
-2.  Ajoutez ces instructions `using` :  
+2. Ajoutez ces instructions `using` :  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  Recherchez la méthode `Initialize`. Cette méthode gère la commande que vous avez spécifiée dans l'Assistant Package. Ajoutez un appel à <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet DTE :  
+3. Recherchez la méthode `Initialize`. Cette méthode gère la commande que vous avez spécifiée dans l'Assistant Package. Ajoutez un appel à <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet DTE :  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- Une fois obtenu l'objet d'automation <xref:EnvDTE.DTE>, vous pouvez ajouter le reste votre code de complément au projet. Si vous avez besoin de l'objet <xref:EnvDTE80.DTE2>, vous pouvez procéder de la même façon.  
+   Une fois obtenu l'objet d'automation <xref:EnvDTE.DTE>, vous pouvez ajouter le reste votre code de complément au projet. Si vous avez besoin de l'objet <xref:EnvDTE80.DTE2>, vous pouvez procéder de la même façon.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>Comment attribuer le style de mon complément VSPackage aux commandes de menu et aux boutons de barre d'outils ?  
  Utilisation d’extensions VSPackage le *.vsct* fichier pour créer la plupart des commandes de menu, barres d’outils, des boutons de barre d’outils et toute autre interface utilisateur. Le **commande personnalisée** modèle d’élément de projet vous donne la possibilité pour créer une commande sur le **outils** menu. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  

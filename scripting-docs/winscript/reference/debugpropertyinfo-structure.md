@@ -1,5 +1,5 @@
 ---
-title: DebugPropertyInfo (Structure) | Documents Microsoft
+title: Structure DebugPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874187"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo, structure
-Décrit un objet de nature hiérarchique qui a le nom, type et valeur. Il est utilisé pour décrire les propriétés de débogage des variables locales, des paramètres, des variables espionnes et des expressions et inscrit.  
+Décrit un objet de nature hiérarchique qui a le nom, type et valeur. Il est utilisé pour décrire les propriétés de débogage de variables locales, des paramètres, des variables espionnes et des expressions et inscrit.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Membres  
  dwValidFields  
- Type de données énuméré permet de spécifier les champs qui sont initialisés.  
+ Type de données énuméré permet de spécifier quels champs sont initialisés.  
   
  bstrName  
  Le nom de propriété dans un contexte.  

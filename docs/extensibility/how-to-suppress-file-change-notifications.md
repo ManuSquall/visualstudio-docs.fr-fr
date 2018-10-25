@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885822"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Comment : supprimer les notifications de modification de fichier
 Lorsque le fichier physique qui représente la mémoire tampon a été modifié, une boîte de dialogue s’affiche avec le message **voulez-vous enregistrer les modifications apportées aux éléments suivants ?** Il s’agit en tant que notification de modification de fichier. Si de nombreuses modifications vont être dans le fichier, cependant, cette boîte de dialogue Affichage indéfiniment peut rapidement devenir ennuyeux.  

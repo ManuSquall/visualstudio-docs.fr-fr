@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896924"
 ---
 # <a name="how-to-register-editor-file-types"></a>Comment : inscrire des types de fichiers de l’éditeur
 Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est à l’aide des attributs d’inscription fournis dans le cadre de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] package framework (MPF) classes managées. Si vous implémentez votre package en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vous pouvez également écrire un script de Registre qui inscrit votre éditeur et les extensions associées.
@@ -26,44 +26,44 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>Pour inscrire des types de fichiers de l’éditeur à l’aide des classes MPF
 
-1.  Fournir la <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe avec les paramètres appropriés pour votre éditeur dans la classe de votre VSPackage.
+1. Fournir la <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe avec les paramètres appropriés pour votre éditeur dans la classe de votre VSPackage.
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     Où *. Exemple* est l’extension qui est inscrit pour cet éditeur, et « 32 » est son niveau de priorité.
+    Où *. Exemple* est l’extension qui est inscrit pour cet éditeur, et « 32 » est son niveau de priorité.
 
-     Le `projectGuid` est le GUID pour les types de fichier divers, définis dans <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Le type de fichier divers est fourni, afin que le fichier résultant ne va pas faire partie du processus de génération.
+    Le `projectGuid` est le GUID pour les types de fichier divers, définis dans <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Le type de fichier divers est fourni, afin que le fichier résultant ne va pas faire partie du processus de génération.
 
-     *TemplateDir* représente le dossier qui contient les fichiers de modèle qui sont inclus dans l’exemple d’éditeur de base managé.
+    *TemplateDir* représente le dossier qui contient les fichiers de modèle qui sont inclus dans l’exemple d’éditeur de base managé.
 
-     `NameResourceID` est défini dans le *Resources.h* fichier du projet BasicEditorUI et identifie l’éditeur en tant que « Mes éditeur ».
+    `NameResourceID` est défini dans le *Resources.h* fichier du projet BasicEditorUI et identifie l’éditeur en tant que « Mes éditeur ».
 
-2.  Remplacez la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+2. Remplacez la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
-     Dans votre implémentation de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> méthode et passe l’instance de votre fabrique d’éditeur comme illustré ci-dessous.
+    Dans votre implémentation de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> méthode et passe l’instance de votre fabrique d’éditeur comme illustré ci-dessous.
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     Cette étape inscrit la fabrique d’éditeur et les extensions de fichier de l’éditeur.
+    Cette étape inscrit la fabrique d’éditeur et les extensions de fichier de l’éditeur.
 
-3.  Annuler l’inscription de fabriques d’éditeur.
+3. Annuler l’inscription de fabriques d’éditeur.
 
-     Fabriques d’éditeur sont automatiquement annulées lorsque le VSPackage est supprimé. Si l’objet de fabrique d’éditeur implémente le <xref:System.IDisposable> interface, son `Dispose` méthode est appelée une fois la fabrique a été annulée avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    Fabriques d’éditeur sont automatiquement annulées lorsque le VSPackage est supprimé. Si l’objet de fabrique d’éditeur implémente le <xref:System.IDisposable> interface, son `Dispose` méthode est appelée une fois la fabrique a été annulée avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Inscription à l’aide d’un script de Registre
  L’inscription des types de fichiers et les fabriques d’éditeur en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] s’effectue à l’aide d’un script de Registre à écrire dans le Registre windows, comme illustré ci-après.

@@ -75,12 +75,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: df3dbcd36bdb72bdd76972ff03a295ba9310f8f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897080"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 Cette rubrique présente en détail le tas de débogage CRT.  
@@ -207,19 +207,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Pour utiliser le tas de débogage**  
   
--   Liez la version Debug de votre application à une version débogage de la bibliothèque Runtime C.  
+- Liez la version Debug de votre application à une version débogage de la bibliothèque Runtime C.  
   
- **Pour modifier un ou plusieurs champs de bits _crtDbgFlag et créer un nouvel état de l’indicateur**  
+  **Pour modifier un ou plusieurs champs de bits _crtDbgFlag et créer un nouvel état de l’indicateur**  
   
-1.  Appelez `_CrtSetDbgFlag` alors que le paramètre `newFlag` a la valeur `_CRTDBG_REPORT_FLAG` (pour obtenir l'état actuel de `_crtDbgFlag`) et stockez la valeur retournée dans une variable temporaire.  
+1. Appelez `_CrtSetDbgFlag` alors que le paramètre `newFlag` a la valeur `_CRTDBG_REPORT_FLAG` (pour obtenir l'état actuel de `_crtDbgFlag`) et stockez la valeur retournée dans une variable temporaire.  
   
-2.  Activez les bits par `OR`- ing (au niveau du bit &#124; symbole) la variable temporaire avec les masques de bits correspondants (représentés dans le code d’application par des constantes manifestes).  
+2. Activez les bits par `OR`- ing (au niveau du bit &#124; symbole) la variable temporaire avec les masques de bits correspondants (représentés dans le code d’application par des constantes manifestes).  
   
-3.  Désactivez les autres bits en faisant une intersection logique `AND` (opérateur de bits de symbole &) entre la variable et un `NOT` (symbole ~ au niveau du bit) des masques de bits appropriés.  
+3. Désactivez les autres bits en faisant une intersection logique `AND` (opérateur de bits de symbole &) entre la variable et un `NOT` (symbole ~ au niveau du bit) des masques de bits appropriés.  
   
-4.  Appelez `_CrtSetDbgFlag` alors que le paramètre `newFlag` a la valeur stockée dans la variable temporaire afin de créer l'état de `_crtDbgFlag`.  
+4. Appelez `_CrtSetDbgFlag` alors que le paramètre `newFlag` a la valeur stockée dans la variable temporaire afin de créer l'état de `_crtDbgFlag`.  
   
- Par exemple, les lignes de code suivantes activent la détection automatique des fuites et désactivent la vérification pour les blocs de type `_CRT_BLOCK`:  
+   Par exemple, les lignes de code suivantes activent la détection automatique des fuites et désactivent la vérification pour les blocs de type `_CRT_BLOCK`:  
   
 ```cpp
 // Get current flag  
@@ -271,7 +271,7 @@ int main( )   {
 }  
 ```  
   
- La version Debug de l'opérateur `delete` fonctionne avec tous les types de bloc et ne nécessite aucune modification dans votre programme lorsque vous compilez une version Release.  
+ La version Debug de l’opérateur `delete` fonctionne avec tous les types de bloc et ne nécessite aucune modification dans votre programme lorsque vous compilez une version Release.  
   
  ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   

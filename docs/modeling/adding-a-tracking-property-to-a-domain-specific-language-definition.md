@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898718"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajouter une propriété de suivi à une définition de langage spécifique à un domaine
 
@@ -30,29 +30,30 @@ Par exemple, dans les outils de langage spécifique à un domaine (outils DSL), 
 
 Cette procédure pas à pas, vous allez créer un langage spécifique à un domaine (DSL) qui a une propriété qui a comme valeur par défaut basée sur la propriété Namespace de valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur les propriétés de suivi, consultez [définissant les propriétés de suivi](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas servir à ajouter une propriété de suivi à un langage. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.
+- La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas servir à ajouter une propriété de suivi à un langage. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.
 
- Une propriété de suivi a deux états : suivi et de mise à jour par l’utilisateur. Propriétés de suivi présentent les caractéristiques suivantes :
+  Une propriété de suivi a deux états : suivi et de mise à jour par l’utilisateur. Propriétés de suivi présentent les caractéristiques suivantes :
 
--   En cas de l’état de suivi, la valeur de la propriété de suivi est calculée, et la valeur est mise à jour que les autres propriétés dans la modification de modèle.
+- En cas de l’état de suivi, la valeur de la propriété de suivi est calculée, et la valeur est mise à jour que les autres propriétés dans la modification de modèle.
 
--   Dans la mise à jour par l’état utilisateur, la valeur de la propriété de suivi conserve la valeur à laquelle l’utilisateur précédente définition de la propriété.
+- Dans la mise à jour par l’état utilisateur, la valeur de la propriété de suivi conserve la valeur à laquelle l’utilisateur précédente définition de la propriété.
 
--   Dans le **propriétés** fenêtre, le **réinitialiser** commande pour la propriété de suivi est activée uniquement lorsque la propriété est dans la mise à jour par l’état utilisateur. Le **réinitialiser** commande définit la propriété de suivi à l’état de suivi.
+- Dans le **propriétés** fenêtre, le **réinitialiser** commande pour la propriété de suivi est activée uniquement lorsque la propriété est dans la mise à jour par l’état utilisateur. Le **réinitialiser** commande définit la propriété de suivi à l’état de suivi.
 
--   Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans le suivi de l’état, sa valeur est affichée dans une police normale.
+- Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans le suivi de l’état, sa valeur est affichée dans une police normale.
 
--   Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans la mise à jour par état de l’utilisateur, sa valeur est affichée dans une police en gras.
+- Dans le **propriétés** fenêtre, lorsque la propriété de suivi dans la mise à jour par état de l’utilisateur, sa valeur est affichée dans une police en gras.
 
 ## <a name="prerequisites"></a>Prérequis
 
 Avant de commencer cette procédure pas à pas, vous devez d’abord installer ces composants :
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Créer le projet
 
@@ -718,33 +719,33 @@ Ajoutez le code pour prendre en charge le comportement de post-chargement person
 
 L’étape suivante consiste à générer et exécuter le concepteur DSL dans une nouvelle instance de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] afin que vous puissiez vérifier que la propriété de suivi fonctionne correctement.
 
-1.  Sur le **Build** menu, cliquez sur **régénérer la Solution**.
+1. Sur le **Build** menu, cliquez sur **régénérer la Solution**.
 
-2.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.
+2. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.
 
-     La build expérimentale de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ouvre le **débogage** solution, qui contient un fichier de test vide.
+    La build expérimentale de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ouvre le **débogage** solution, qui contient un fichier de test vide.
 
-3.  Dans **l’Explorateur de solutions**, double-cliquez sur le fichier Test.trackingPropertyDsl pour l’ouvrir dans le concepteur, puis cliquez sur l’aire de conception.
+3. Dans **l’Explorateur de solutions**, double-cliquez sur le fichier Test.trackingPropertyDsl pour l’ouvrir dans le concepteur, puis cliquez sur l’aire de conception.
 
-     Notez que dans le **propriétés** fenêtre pour le diagramme, le **Namespace par défaut** propriété est **DefaultNamespace**et le **personnalisé éléments** est propriété **0/0**.
+    Notez que dans le **propriétés** fenêtre pour le diagramme, le **Namespace par défaut** propriété est **DefaultNamespace**et le **personnalisé éléments** est propriété **0/0**.
 
-4.  Faites glisser un **ExampleElement** élément à partir de la **boîte à outils** à la surface du diagramme.
+4. Faites glisser un **ExampleElement** élément à partir de la **boîte à outils** à la surface du diagramme.
 
-5.  Dans le **propriétés** fenêtre pour l’élément, sélectionnez le **élément Namespace** propriété et remplacez la valeur **DefaultNamespace** à  **OtherNamespace**.
+5. Dans le **propriétés** fenêtre pour l’élément, sélectionnez le **élément Namespace** propriété et remplacez la valeur **DefaultNamespace** à  **OtherNamespace**.
 
-     Notez que la valeur de **élément Namespace** est maintenant affichée en gras.
+    Notez que la valeur de **élément Namespace** est maintenant affichée en gras.
 
-6.  Dans le **propriétés** fenêtre, avec le bouton droit **élément Namespace**, puis cliquez sur **réinitialiser**.
+6. Dans le **propriétés** fenêtre, avec le bouton droit **élément Namespace**, puis cliquez sur **réinitialiser**.
 
-     La valeur de la propriété est modifiée pour **DefaultNamespace**, et la valeur est affichée dans une police normale.
+    La valeur de la propriété est modifiée pour **DefaultNamespace**, et la valeur est affichée dans une police normale.
 
-     Avec le bouton droit **élément Namespace** à nouveau. Le **réinitialiser** commande est désormais désactivée, car la propriété est actuellement dans son état de suivi.
+    Avec le bouton droit **élément Namespace** à nouveau. Le **réinitialiser** commande est désormais désactivée, car la propriété est actuellement dans son état de suivi.
 
-7.  Faites glisser un autre **ExampleElement** à partir de la **boîte à outils** à la surface du diagramme, puis remplacez son **élément Namespace** à **OtherNamespace**.
+7. Faites glisser un autre **ExampleElement** à partir de la **boîte à outils** à la surface du diagramme, puis remplacez son **élément Namespace** à **OtherNamespace**.
 
-8.  Cliquez sur l’aire de conception.
+8. Cliquez sur l’aire de conception.
 
-     Dans le **propriétés** fenêtre pour le diagramme, la valeur de **personnalisé éléments** est désormais **1/2**.
+    Dans le **propriétés** fenêtre pour le diagramme, la valeur de **personnalisé éléments** est désormais **1/2**.
 
 9. Modification **Namespace par défaut** pour le diagramme à partir de **DefaultNamespace** à **NewNamespace**.
 

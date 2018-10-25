@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853180"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  L'injection de l'interface applique la règle suivante :  
   
--   Le code de tous les composants de votre application ne doit jamais explicitement faire référence à une classe d'un autre composant, que ce soit dans une déclaration ou dans une instruction `new`. Au lieu de cela, les variables et les paramètres doivent être déclarés avec des interfaces. Les instances de composant doivent être créées uniquement par le conteneur du composant.  
+- Le code de tous les composants de votre application ne doit jamais explicitement faire référence à une classe d'un autre composant, que ce soit dans une déclaration ou dans une instruction `new`. Au lieu de cela, les variables et les paramètres doivent être déclarés avec des interfaces. Les instances de composant doivent être créées uniquement par le conteneur du composant.  
   
-     Dans ce cas, le terme « composant » signifie une classe ou un groupe de classes que vous développez et mettez à jour ensemble. En général, un composant est le code dans un projet Visual Studio. Il est moins important de séparer des classes dans un composant, parce qu'elles sont mises à jour simultanément.  
+   Dans ce cas, le terme « composant » signifie une classe ou un groupe de classes que vous développez et mettez à jour ensemble. En général, un composant est le code dans un projet Visual Studio. Il est moins important de séparer des classes dans un composant, parce qu'elles sont mises à jour simultanément.  
   
-     Il n'est également pas aussi important de séparer vos composants des classes d'une plateforme relativement stable, par exemple System.dll. Écrire des interfaces pour toutes ces classes encombrerait votre code.  
+   Il n'est également pas aussi important de séparer vos composants des classes d'une plateforme relativement stable, par exemple System.dll. Écrire des interfaces pour toutes ces classes encombrerait votre code.  
   
- Le code de StockAnalyzer peut donc être amélioré en le séparant de StockFeed à l'aide d'une interface, de la manière suivante :  
+  Le code de StockAnalyzer peut donc être amélioré en le séparant de StockFeed à l'aide d'une interface, de la manière suivante :  
   
 ```csharp  
 public interface IStockFeed  
