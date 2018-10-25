@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 511234a1a577bbad87fa9ceecc2afe34945cce5c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951169"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
 
@@ -88,7 +88,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
  Pour voir si un élément lié prend en charge la validation, ouvrez **Explorateur de couches** et examinez le **prend en charge la Validation** propriété de l’élément. Consultez [la gestion des liens vers les artefacts](#Managing).
 
 |**To**|**Procédez comme suit**|
-|------------|----------------------------|
+|-|-|
 |Créer une couche pour un artefact unique|<ol><li>Faites glisser l’élément sur le diagramme de dépendance à partir de ces sources :<br /><br /> <ul><li>**Explorateur de solutions**<br /><br />         Par exemple, vous pouvez faire glisser des fichiers ou des projets.</li><li>Cartes de code<br /><br />         Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) et [les cartes de code de l’utiliser pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Affichage de classes** ou **Explorateur d’objets**</li></ul><br />     Une couche s’affiche sur le diagramme et est liée à l’artefact.</li><li>Renommez la couche pour refléter les responsabilités du code ou des artefacts associés.</li></ol> **Important :** en faisant glisser des fichiers binaires vers le diagramme de dépendances n’ajoute pas automatiquement leurs références au projet de modélisation. Vous devez ajouter manuellement au projet de modélisation les fichiers binaires que vous voulez valider. **Pour ajouter des fichiers binaires au projet de modélisation** <ol><li>Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet de modélisation, puis choisissez **ajouter un élément existant**.</li><li>Dans le **ajouter un élément existant** boîte de dialogue, recherchez les fichiers binaires, sélectionnez-les, puis choisissez **OK**.     Les fichiers binaires s'affichent dans le projet de modélisation.</li><li>Dans **l’Explorateur de solutions**, choisissez un fichier binaire que vous avez ajouté, puis appuyez sur **F4** pour ouvrir le **propriétés** fenêtre.</li><li>Sur chaque fichier binaire, définissez la **Action de génération** propriété **Validate**.</li></ol>|
 |Créer une couche unique pour tous les artefacts sélectionnés|Faites glisser tous les artefacts vers le diagramme de dépendance en même temps.<br /><br /> Une couche qui est liée à tous les artefacts s’affiche sur le diagramme.|
 |Créer une couche pour chaque artefact sélectionné|Maintenez la **MAJ** enfoncée pendant que vous faites glisser en même temps tous les artefacts vers le diagramme de dépendances. **Remarque :** si vous utilisez le **MAJ** clé pour sélectionner une plage d’éléments, relâchez la touche après avoir sélectionné les artefacts. Appuyez de nouveau sur celle-ci et maintenez-la enfoncée lorsque vous faites glisser les artefacts vers le diagramme. <br /><br /> Une couche s'affiche sur le diagramme pour chaque artefact, auquel elle est liée.|
@@ -118,7 +118,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 2.  Utilisez les tâches suivantes pour gérer ces liens :
 
 |**To**|**Dans l’Explorateur de couches**|
-|------------|---------------------------|
+|-|-|
 |Supprimer le lien entre la couche et un artefact|Ouvrez le menu contextuel pour le lien d’artefact, puis choisissez **supprimer**.|
 |Déplacer le lien d'une couche vers une autre|Faites glisser le lien d'artefact vers une couche existante sur le diagramme.<br /><br /> ou<br /><br /> 1.  Ouvrez le menu contextuel pour le lien d’artefact, puis choisissez **couper**.<br />2.  Sur le diagramme de la dépendance, ouvrez le menu contextuel de la couche, puis choisissez **coller**.|
 |Copier le lien d'une couche vers une autre|1.  Ouvrez le menu contextuel pour le lien d’artefact, puis choisissez **copie**.<br />2.  Sur le diagramme de la dépendance, ouvrez le menu contextuel de la couche, puis choisissez **coller**.|
@@ -131,15 +131,15 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 > [!NOTE]
 > Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.
 
--   Sélectionnez une ou plusieurs couches, ouvrez le menu contextuel pour une couche sélectionnée, puis **générer des dépendances**.
+- Sélectionnez une ou plusieurs couches, ouvrez le menu contextuel pour une couche sélectionnée, puis **générer des dépendances**.
 
- En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.
+  En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.
 
 ## <a name="EditDependencies"></a> Modifier les couches et les dépendances pour afficher la conception prévue
  Pour décrire les modifications que vous envisagez d’apporter à votre système ou de l’architecture prévue, modifiez le diagramme de dépendances :
 
 |**To**|**Effectuez ces étapes**|
-|------------|-----------------------------|
+|-|-|
 |Changer ou restreindre la direction d'une dépendance|Définissez ses **Direction** propriété.|
 |Créer de nouvelles dépendances|Utilisez le **dépendance** et **dépendance bidirectionnelle** outils.<br /><br /> Pour dessiner plusieurs dépendances, double-cliquez sur l'outil. Lorsque vous avez terminé, choisissez le **pointeur** outil ou appuyez sur la **ÉCHAP** clé.|
 |Spécifier que les artefacts associés à une couche ne peuvent pas dépendre des espaces de noms spécifiés|Tapez les espaces de noms dans la couche **interdit les dépendances de Namespace** propriété. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|

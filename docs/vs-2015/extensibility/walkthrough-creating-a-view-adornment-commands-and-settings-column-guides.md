@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862318"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : création d’un ornement, de commandes et de paramètres pour l’affichage (repères de colonne)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les comman
   
  Dans cette procédure pas à pas, vous allez :  
   
--   Créez un projet VSIX  
+- Créez un projet VSIX  
   
--   Ajouter un ornement de vue de l’éditeur  
+- Ajouter un ornement de vue de l’éditeur  
   
--   Ajouter la prise en charge pour l’enregistrement et l’obtention des paramètres (où pour dessiner les repères de colonne et leur couleur)  
+- Ajouter la prise en charge pour l’enregistrement et l’obtention des paramètres (où pour dessiner les repères de colonne et leur couleur)  
   
--   Ajouter des commandes (Ajouter/supprimer des repères de colonne, modifier leur couleur)  
+- Ajouter des commandes (Ajouter/supprimer des repères de colonne, modifier leur couleur)  
   
--   Placez les commandes du menu Edition et les menus contextuels de document texte  
+- Placez les commandes du menu Edition et les menus contextuels de document texte  
   
--   Ajouter la prise en charge pour appeler les commandes à partir de la fenêtre de commande Visual Studio  
+- Ajouter la prise en charge pour appeler les commandes à partir de la fenêtre de commande Visual Studio  
   
- Vous pouvez essayer une version de la fonctionnalité de repères de colonne avec cette galerie Visual Studio[extension](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Vous pouvez essayer une version de la fonctionnalité de repères de colonne avec cette galerie Visual Studio[extension](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
- **Remarque**: dans cette procédure pas à pas vous collez beaucoup de code dans quelques fichiers générés par les modèles d’extension de visual studio, mais bientôt cette procédure pas à pas fait référence à une solution terminée sur github avec d’autres exemples d’extension.  Le code complet est légèrement différent car il a des icônes de commande réelles au lieu d’utiliser des icônes de generictemplate.  
+  **Remarque**: dans cette procédure pas à pas vous collez beaucoup de code dans quelques fichiers générés par les modèles d’extension de visual studio, mais bientôt cette procédure pas à pas fait référence à une solution terminée sur github avec d’autres exemples d’extension.  Le code complet est légèrement différent car il a des icônes de commande réelles au lieu d’utiliser des icônes de generictemplate.  
   
 ## <a name="getting-started"></a>Prise en main  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,21 +49,21 @@ Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les comman
 ## <a name="setting-up-the-solution"></a>Configuration de la Solution  
  Tout d’abord vous créez un projet VSIX, ajoutez un ornement de vue de l’éditeur et puis ajoutez une commande (qui ajoute un VSPackage doit détenir la commande).  L’architecture de base est la suivante :  
   
--   Vous avez un écouteur de la création de vue de texte qui crée un `ColumnGuideAdornment` objet par la vue.  Cet objet écoute les événements sur la modification de la vue ou les repères de colonne de la mise à jour ou écran Paramètres de modification, en fonction des besoins.  
+- Vous avez un écouteur de la création de vue de texte qui crée un `ColumnGuideAdornment` objet par la vue.  Cet objet écoute les événements sur la modification de la vue ou les repères de colonne de la mise à jour ou écran Paramètres de modification, en fonction des besoins.  
   
--   Il existe un `GuidesSettingsManager` qui gère la lecture et écriture à partir du stockage de paramètres de Visual Studio.  Le Gestionnaire de paramètres a également des opérations pour la mise à jour les paramètres qui prennent en charge les commandes de l’utilisateur (ajouter une colonne, supprimez la colonne, modifier la couleur).  
+- Il existe un `GuidesSettingsManager` qui gère la lecture et écriture à partir du stockage de paramètres de Visual Studio.  Le Gestionnaire de paramètres a également des opérations pour la mise à jour les paramètres qui prennent en charge les commandes de l’utilisateur (ajouter une colonne, supprimez la colonne, modifier la couleur).  
   
--   Il existe un package VSIP qui est nécessaire si vous avez des commandes de l’utilisateur, mais il est simplement un code réutilisable qui initialise l’objet d’implémentation de commandes.  
+- Il existe un package VSIP qui est nécessaire si vous avez des commandes de l’utilisateur, mais il est simplement un code réutilisable qui initialise l’objet d’implémentation de commandes.  
   
--   Il existe un `ColumnGuideCommands` objet qui implémente les commandes de l’utilisateur et raccorde les gestionnaires de commandes pour les commandes déclaré dans le fichier .vsct.  
+- Il existe un `ColumnGuideCommands` objet qui implémente les commandes de l’utilisateur et raccorde les gestionnaires de commandes pour les commandes déclaré dans le fichier .vsct.  
   
- **VSIX**.  Utilisez **fichier &#124; nouveau...** commande pour créer un projet.  Choisissez le nœud d’extensibilité sous c# dans le volet de navigation gauche, choisissez **projet VSIX** dans le volet droit.  Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.  
+  **VSIX**.  Utilisez **fichier &#124; nouveau...** commande pour créer un projet.  Choisissez le nœud d’extensibilité sous c# dans le volet de navigation gauche, choisissez **projet VSIX** dans le volet droit.  Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.  
   
- **Afficher les ornements**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; un nouvel élément...** commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; éditeur** dans le volet de navigation de gauche et choisissez **ornement de la fenêtre d’affichage de l’éditeur** dans le volet droit.  Entrez le nom ColumnGuideAdornment en tant que nom de l’élément et choisissez **ajouter** pour l’ajouter.  
+  **Afficher les ornements**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; un nouvel élément...** commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; éditeur** dans le volet de navigation de gauche et choisissez **ornement de la fenêtre d’affichage de l’éditeur** dans le volet droit.  Entrez le nom ColumnGuideAdornment en tant que nom de l’élément et choisissez **ajouter** pour l’ajouter.  
   
- Vous pouvez voir ce modèle d’élément ajouté deux fichiers au projet (ainsi que les références et ainsi de suite) : ColumnGuideAdornment.cs et ColumnGuideAdornmentTextViewCreationListener.cs.  Les modèles de dessiner simplement un rectangle violet sur la vue.  Ci-dessous vous modifie deux lignes dans l’écouteur de la création de vue et remplacez le contenu de ColumnGuideAdornment.cs.  
+  Vous pouvez voir ce modèle d’élément ajouté deux fichiers au projet (ainsi que les références et ainsi de suite) : ColumnGuideAdornment.cs et ColumnGuideAdornmentTextViewCreationListener.cs.  Les modèles de dessiner simplement un rectangle violet sur la vue.  Ci-dessous vous modifie deux lignes dans l’écouteur de la création de vue et remplacez le contenu de ColumnGuideAdornment.cs.  
   
- **Commandes**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; un nouvel élément...** commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation de gauche et choisissez **commande personnalisée** dans le volet droit.  Entrez le nom ColumnGuideCommands en tant que nom de l’élément et choisissez **ajouter** pour l’ajouter.  En plus de plusieurs références, ajout des commandes et package ajouté ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs et ColumnGuideCommandsPackage.vsct.  Ci-dessous, vous allez remplacer le contenu des premier et derniers fichiers pour définir et implémenter les commandes.  
+  **Commandes**.  Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions.  Choisissez le **ajouter &#124; un nouvel élément...** commande pour ajouter un nouvel élément d’ornement de vue.  Choisissez **extensibilité &#124; VSPackage** dans le volet de navigation de gauche et choisissez **commande personnalisée** dans le volet droit.  Entrez le nom ColumnGuideCommands en tant que nom de l’élément et choisissez **ajouter** pour l’ajouter.  En plus de plusieurs références, ajout des commandes et package ajouté ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs et ColumnGuideCommandsPackage.vsct.  Ci-dessous, vous allez remplacer le contenu des premier et derniers fichiers pour définir et implémenter les commandes.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Configuration de l’écouteur de la création de vue de texte  
  Ouvrez ColumnGuideAdornmentTextViewCreationListener.cs dans l’éditeur.  Ce code implémente un gestionnaire pour chaque fois que Visual Studio crée des affichages de texte.  Il existe des attributs qui contrôlent la lorsque le gestionnaire est appelé en fonction des caractéristiques de la vue.  

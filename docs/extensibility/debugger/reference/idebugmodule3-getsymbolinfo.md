@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Documents Microsoft
+title: IDebugModule3::GetSymbolInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53d84b9ef6cdabc12c88e30fc65d506cad673a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e121434f5db1edc1e4c13df3e832cba5be7d471
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876124"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Récupère une liste de chemins d’accès qui sont explorés pour les symboles, ainsi que les résultats de recherche dans chaque chemin d’accès.  
@@ -45,10 +45,10 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] Une combinaison d’indicateurs à partir de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant les champs de `pInfo` doivent être renseignés.  
+ [in] Une combinaison d’indicateurs de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant les champs de `pInfo` doivent être renseignés.  
   
  `pInfo`  
- [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) structure dont les membres sont à remplir avec les informations spécifiées. Si cela est une valeur null, cette méthode retourne `E_INVALIDARG`.  
+ [out] Un [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) structure dont les membres sont à remplir avec les informations spécifiées. Si c’est une valeur null, cette méthode retourne `E_INVALIDARG`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Si la méthode réussit, elle retourne `S_OK`; sinon, elle retourne un code d’erreur.  
@@ -57,14 +57,14 @@ int GetSymbolInfo(
 >  La chaîne retournée (dans le `MODULE_SYMBOL_SEARCH_INFO` structure) peut être vide même si `S_OK` est retourné. Dans ce cas, il n’a aucune information de recherche à retourner.  
   
 ## <a name="remarks"></a>Notes  
- Si le `bstrVerboseSearchInfo` champ le `MODULE_SYMBOL_SEARCH_INFO` structure n’est pas vide, puis il contient une liste des chemins de recherche et les résultats de recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivi par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :  
+ Si le `bstrVerboseSearchInfo` champ la `MODULE_SYMBOL_SEARCH_INFO` structure n’est pas vide, puis il contient une liste de chemins de recherche et les résultats de cette recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivi par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :  
   
  \<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat >  
   
  Notez que la dernière entrée n’est pas une séquence \r\n.  
   
 ## <a name="example"></a>Exemple  
- Dans cet exemple, cette méthode retourne les trois chemins d’accès avec trois des résultats différents. Chaque ligne se termine par une paire retour chariot /. L’exemple de sortie imprime simplement les résultats de recherche comme une chaîne unique.  
+ Dans cet exemple, cette méthode retourne les trois chemins d’accès avec trois résultats de recherche différente. Chaque ligne se termine par une paire retour chariot /. L’exemple de sortie imprime simplement les résultats de recherche sous forme de chaîne unique.  
   
 > [!NOTE]
 >  Un résultat d’état est tout ce qui suit immédiatement la «... » jusqu'à la fin de la ligne.  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907480"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs de Roslyn et bibliothèque de code pour ImmutableArrays
 
@@ -82,7 +82,6 @@ Vous pouvez implémenter un analyseur à l’aide de Visual Basic qui cible le c
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Ouvrez une nouvelle ligne dans cette méthode et type « le contexte. » Pour afficher une liste de saisie semi-automatique IntelliSense.  Vous pouvez voir dans la liste de saisie semi-automatique, il existe de nombreux `Register...` méthodes pour gérer différents types d’événements.  Par exemple, le, `RegisterCodeBlockAction`, appelle de nouveau votre code pour un bloc, ce qui est généralement le code entre accolades.  L’inscription pour un bloc également rappelle à votre code pour l’initialiseur de champ, la valeur donnée à un attribut ou la valeur d’un paramètre facultatif.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Épargner des membres dérivés.** À présent, placer le signe insertion de l’éditeur dans l’identificateur `CodeFixProvider` et appuyez sur **Ctrl**+**.** (point) pour remplacer l’implémentation de cette classe de base abstraite.  Cela génère une propriété et une méthode pour vous.

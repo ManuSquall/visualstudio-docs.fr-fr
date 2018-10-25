@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893823"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,11 +74,11 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Valeurs de verrouillage  
  Verrous peuvent être définies sur un Store, une Partition ou un ModelElement individuel. Verrous est un `Flags` énumération : vous pouvez combiner ses valeurs à l’aide de «&#124;».  
   
--   Verrous d’un ModelElement toujours incluent les verrous de sa Partition.  
+- Verrous d’un ModelElement toujours incluent les verrous de sa Partition.  
   
--   Verrous d’une Partition toujours incluent les verrous du Store.  
+- Verrous d’une Partition toujours incluent les verrous du Store.  
   
- Vous ne peut pas définir un verrou sur une partition ou stocker et à la fois désactiver le verrou sur un élément individuel.  
+  Vous ne peut pas définir un verrou sur une partition ou stocker et à la fois désactiver le verrou sur un élément individuel.  
   
 |Value|Ce qui signifie que si `IsLocked(Value)` a la valeur true|  
 |-----------|------------------------------------------|  

@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873407"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez spécifier la façon de déployer et de gérer le contenu d’aide locale à l’aide d’arguments de ligne de commande pour Help Content Manager (HlpCtntmgr.exe). Vous devez exécuter des scripts pour cet outil en ligne de commande avec des autorisations d’administrateur, et vous ne pouvez pas exécuter ces scripts en tant que service. Vous pouvez effectuer les tâches suivantes à l’aide de cet outil :  
   
--   Ajouter ou mettre à jour le contenu d’aide locale à partir d’un disque ou du cloud.  
+- Ajouter ou mettre à jour le contenu d’aide locale à partir d’un disque ou du cloud.  
   
--   Supprimer le contenu d’aide locale.  
+- Supprimer le contenu d’aide locale.  
   
--   Déplacer le magasin de contenu d’aide locale.  
+- Déplacer le magasin de contenu d’aide locale.  
   
--   Ajouter, mettre à jour, supprimer ou déplacer le contenu d’aide locale en mode silencieux.  
+- Ajouter, mettre à jour, supprimer ou déplacer le contenu d’aide locale en mode silencieux.  
   
- Syntaxe :  
+  Syntaxe :  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

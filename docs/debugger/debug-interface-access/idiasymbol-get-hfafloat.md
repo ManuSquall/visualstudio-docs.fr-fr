@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hfaFloat | Documents Microsoft
+title: IDiaSymbol::get_hfaFloat | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede9f02aa7fa4498e12382f22c43f4421342b669
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900239"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Récupère un indicateur qui spécifie si un type défini par l’utilisateur (UDT) contient des données de regroupement à virgule flottante homogènes (HFA), de type float.  
@@ -34,7 +34,7 @@ HRESULT get_hfaFloat(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si l’UDT contienne des données HFA de type float ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si l’UDT contient des données HFA de type float ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -44,7 +44,7 @@ HRESULT get_hfaFloat(
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

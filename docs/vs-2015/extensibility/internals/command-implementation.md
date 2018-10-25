@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925903"
 ---
 # <a name="command-implementation"></a>Implémentation de commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :  
   
-1.  Dans le fichier .vsct, configurer un groupe de commandes, puis ajoutez la commande à celui-ci. Pour plus d’informations, consultez [Visual Studio Command Table (. Fichiers VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
+1. Dans le fichier .vsct, configurer un groupe de commandes, puis ajoutez la commande à celui-ci. Pour plus d’informations, consultez [Visual Studio Command Table (. Fichiers VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
   
-2.  Inscrire la commande avec Visual Studio.  
+2. Inscrire la commande avec Visual Studio.  
   
-3.  Implémenter la commande.  
+3. Implémenter la commande.  
   
- Les sections suivantes expliquent comment inscrire et implémenter des commandes.  
+   Les sections suivantes expliquent comment inscrire et implémenter des commandes.  
   
 ## <a name="registering-commands-with-visual-studio"></a>L’enregistrement de commandes avec Visual Studio  
  Si votre commande doit apparaître dans un menu, vous devez ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> à votre VSPackage et les utiliser en tant que valeur le nom du menu ou son ID de ressource.  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>Méthodes d’état de requête  
  Si vous implémentez soit le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode ou le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> (méthode), recherchez le GUID de la commande jeu auquel appartient la commande et l’ID de la commande. Respectez les règles ci-dessous.  
   
--   Si le GUID n’est pas reconnu, votre implémentation de soit la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Si le GUID n’est pas reconnu, votre implémentation de soit la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Si votre implémentation de deux méthodes reconnaît le GUID mais n’a pas réellement implémenté la commande, la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Si votre implémentation de deux méthodes reconnaît le GUID mais n’a pas réellement implémenté la commande, la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) en utilisant les indicateurs suivants :  
+- Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) en utilisant les indicateurs suivants :  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est prise en charge.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est prise en charge.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande ne doit pas être visible.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande ne doit pas être visible.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée et qu’il semble avoir été archivé.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée et qu’il semble avoir été archivé.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande doit être masquée s’il apparaît dans un menu contextuel.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande doit être masquée s’il apparaît dans un menu contextuel.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)  
   
--   Si la commande a été définie dans le fichier .vsct avec le `TextChanges` indicateur, définissez les paramètres suivants :  
+- Si la commande a été définie dans le fichier .vsct avec le `TextChanges` indicateur, définissez les paramètres suivants :  
   
-    -   Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.  
+  -   Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.  
   
-    -   Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.  
+  -   Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.  
   
- Également vous assurer que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçu spécifiquement pour gérer les fonctions d’automatisation.  
+  Également vous assurer que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçu spécifiquement pour gérer les fonctions d’automatisation.  
   
- Pour indiquer que vous prenez en charge une commande particulière, retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Pour toutes les autres commandes, retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+  Pour indiquer que vous prenez en charge une commande particulière, retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK>. Pour toutes les autres commandes, retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
- Dans l’exemple suivant, la méthode de l’état de la requête tout d’abord permet de s’assurer que le contexte n’est pas une fonction d’automation, puis recherche le bon GUID du jeu de commandes et l’ID de commande. La commande elle-même est définie sur activé et la prise en charge. Aucune autre commande n’est pris en charge.  
+  Dans l’exemple suivant, la méthode de l’état de la requête tout d’abord permet de s’assurer que le contexte n’est pas une fonction d’automation, puis recherche le bon GUID du jeu de commandes et l’ID de commande. La commande elle-même est définie sur activé et la prise en charge. Aucune autre commande n’est pris en charge.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

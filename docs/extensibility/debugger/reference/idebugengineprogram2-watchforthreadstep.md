@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Documents Microsoft
+title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f7c897c4c5b8488766f72723f3e85909281abbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 17be4d47db15a80b2560d71f747e5b93b7e17474
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868337"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Surveille l’exécution (ou arrête la surveillance de l’exécution) sur le thread donné.  
+Surveille l’exécution (ou cesse de surveiller l’exécution) se produise sur le thread donné.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,16 +47,16 @@ int WatchForThreadStep(
   
 #### <a name="parameters"></a>Paramètres  
  `pOriginatingProgram`  
- [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet représentant le programme en cours en retrait.  
+ [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet représentant le programme en cours en escalier.  
   
  `dwTid`  
  [in] Spécifie l’identificateur du thread à surveiller.  
   
  `fWatch`  
- [in] Non nul (`TRUE`) signifie démarrer la surveillance de l’exécution sur le thread identifié par `dwTid`; sinon, zéro (`FALSE`) signifie l’arrêt de la surveillance de l’exécution sur `dwTid`.  
+ [in] Valeur différente de zéro (`TRUE`) moyen de visualiser la présentation pour l’exécution sur le thread identifié par `dwTid`; sinon, zéro (`FALSE`) signifie arrêter d’analyser pour l’exécution sur `dwTid`.  
   
  `dwFrame`  
- [in] Spécifie un index de frame qui contrôle le type d’étape. Lorsqu’il s’agit de valeur est zéro (0), le type d’étape est « pas à pas détaillé » et le programme doit s’arrêter dès que le thread identifié par `dwTid` s’exécute. Lorsque `dwFrame` est différente de zéro, le type d’étape est « pas à pas principal » et le programme doit s’arrêter uniquement si le thread identifié par `dwTid` est en cours d’exécution dans un frame dont l’index est égale ou supérieure sur la pile à `dwFrame`.  
+ [in] Spécifie un index de frame qui contrôle le type d’étape. Lorsqu’il s’agit valeur est zéro (0), le type d’étape est « détaillé » et le programme doit s’arrêter dès que le thread identifié par `dwTid` s’exécute. Lorsque `dwFrame` est différente de zéro, le type d’étape est « pas à pas principal » et le programme doit s’arrêter uniquement si le thread identifié par `dwTid` est en cours d’exécution dans un frame dont l’index est égale ou supérieure sur la pile à `dwFrame`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

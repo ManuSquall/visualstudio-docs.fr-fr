@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetDerivedMostReference | Documents Microsoft
+title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfa0e6b6755ea884b6dd9b6ba0409a614e80e290
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6e8998ca881bbeb4a90405ab01577bf6be18f33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858353"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Obtient la référence de la plus dérivée d’une référence. Réservé à un usage ultérieur.  
@@ -47,7 +47,7 @@ int GetDerivedMostReference(
  Retourne toujours `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Notes  
- Par exemple, si cette propriété décrit un objet qui implémente `ClassRoot` mais qui est réellement une instanciation de `ClassDerived` qui est dérivée de `ClassRoot`, cette méthode retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui représente une référence à la `ClassDerived` objet.  
+ Par exemple, si cette propriété décrit un objet qui implémente `ClassRoot` mais qui est en fait une instanciation de `ClassDerived` qui est dérivée de `ClassRoot`, cette méthode retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet représentant une référence à la `ClassDerived` objet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

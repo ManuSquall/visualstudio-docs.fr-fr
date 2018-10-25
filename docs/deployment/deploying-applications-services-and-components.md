@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861629"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : Premier aperçu au moment du déploiement dans Visual Studio
 
@@ -121,7 +121,7 @@ Dans un environnement d’équipe, vous pouvez utiliser des Pipelines d’Azure 
 | Type d'application | Scénario de déploiement | Lien |
 | --- | --- | --- |
 | **Application Office** | Vous pouvez publier un complément pour Office à partir de Visual Studio. | [Déployer et publier votre complément Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Service WCF ou OData**  | Autres applications peuvent utiliser les services RIA WCF que vous déployez sur un serveur web. | [Développement et le déploiement des Services de données WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Service WCF ou OData** | Autres applications peuvent utiliser les services RIA WCF que vous déployez sur un serveur web. | [Développement et le déploiement des Services de données WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch n’est plus pris en charge dans Visual Studio 2017, mais pourra être déployé à partir de Visual Studio 2015 et versions antérieures. | [Déploiement d’Applications LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Étapes suivantes

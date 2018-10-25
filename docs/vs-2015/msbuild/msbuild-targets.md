@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925733"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 ## <a name="target-build-order"></a>Ordre de génération des cibles  
  Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Il existe plusieurs façons de spécifier l’ordre d’exécution des cibles.  
   
--   Cibles initiales  
+- Cibles initiales  
   
--   Cibles par défaut  
+- Cibles par défaut  
   
--   Première cible  
+- Première cible  
   
--   Dépendances de cible  
+- Dépendances de cible  
   
--   `BeforeTargets` et `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` et `AfterTargets` (MSBuild 4.0)  
   
- Une cible n’est jamais exécutée deux fois au cours d’une même génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible est exécutée, sa contribution à la génération est terminée.  
+  Une cible n’est jamais exécutée deux fois au cours d’une même génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible est exécutée, sa contribution à la génération est terminée.  
   
- Pour plus d’informations sur l’ordre de génération des cibles, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).  
+  Pour plus d’informations sur l’ordre de génération des cibles, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Traitement par lot des cibles  
  Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(métadonnées). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple :  

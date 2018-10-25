@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_language | Documents Microsoft
+title: IDiaSymbol::get_language | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7797e4b6eb2aa35f13350580b110c757d7a5db
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b214e16538ba6447ce97ed6569bfbb580cf222e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935872"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
-Récupère la langue de la source.  
+Récupère le langage de la source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_language (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [cv_cfl_lang, énumération](../../debugger/debug-interface-access/cv-cfl-lang.md) énumération qui spécifie la langue de la source.  
+ [out] Retourne une valeur de la [CV_CFL_LANG (énumération)](../../debugger/debug-interface-access/cv-cfl-lang.md) énumération qui spécifie la langue de la source.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
@@ -44,4 +44,4 @@ HRESULT get_language (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV_CFL_LANG (énumération)](../../debugger/debug-interface-access/cv-cfl-lang.md)
+ [CV_CFL_LANG, énumération](../../debugger/debug-interface-access/cv-cfl-lang.md)

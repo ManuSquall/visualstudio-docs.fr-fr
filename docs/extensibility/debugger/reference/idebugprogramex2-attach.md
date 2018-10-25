@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach | Documents Microsoft
+title: IDebugProgramEx2::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c58f576a0126472ad60ceeb5fc5289b668bd54dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ac2e86c25f9f74b7be4b9606e6e1ec721743878
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906908"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-Joindre une session à un programme.  
+Attacher une session à un programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,22 +46,22 @@ int Attach(
   
 #### <a name="parameters"></a>Paramètres  
  `pCallback`  
- [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet qui représente la fonction de rappel qui envoie des événements pour le moteur de débogage attaché.  
+ [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet qui représente la fonction de rappel qui envoie les événements vers le moteur de débogage attaché.  
   
  `dwReason`  
- [in] Une valeur à partir de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui décrit la raison de l’opération d’attachement.  
+ [in] Une valeur comprise entre le [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui décrit la raison de l’opération d’attachement.  
   
  `pSession`  
- [in] Une valeur qui identifie de façon unique la session qui s’attache au programme.  
+ [in] Une valeur qui identifie de façon unique la session concerne l’attachement au programme.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Cette méthode doit retourner `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si le programme est déjà attaché.  
   
 ## <a name="remarks"></a>Notes  
- Le port qui contient le programme peut utiliser la valeur de `pSession` pour déterminer quelle session tente de se joindre au programme. Par exemple, si un port permet la session de débogage qu’un seul s’attacher à un processus à la fois, le port peut déterminer si la même session est déjà attachée à d’autres programmes dans le processus.  
+ Le port qui contient le programme peut utiliser la valeur dans `pSession` pour déterminer quelle session tente de se joindre au programme. Par exemple, si un port autorise la session de débogage qu’une seule s’attacher à un processus à la fois, le port peut déterminer si la même session est déjà attachée à d’autres programmes dans le processus.  
   
 > [!NOTE]
->  L’interface est passée dans `pSession` doit être traité uniquement en tant que cookie, une valeur qui identifie de façon unique le Gestionnaire de session de débogage attachement à ce programme ; aucune des méthodes sur l’interface fournie sont fonctionnels.  
+>  L’interface passée dans `pSession` doit être traité uniquement en tant que cookie, une valeur qui identifie de façon unique le Gestionnaire de débogage de session attachement à ce programme ; aucune des méthodes sur l’interface fournie sont fonctionnels.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

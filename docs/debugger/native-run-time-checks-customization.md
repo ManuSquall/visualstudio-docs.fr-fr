@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de contrôles de l’exécution native-| Documents Microsoft
+title: Personnalisation des vérifications natives à l’exécution | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,29 +24,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853926"
 ---
 # <a name="native-run-time-checks-customization"></a>Personnalisation des contrôles natifs à l'exécution
-Lorsque vous compilez avec **/RTC.** (contrôles d’exécution) ou utilisez le `runtime_checks` pragma, la bibliothèque Runtime C fournit les contrôles natifs à l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :  
+Lorsque vous compilez avec **/RTC** (contrôles d’exécution) ou utilisez le `runtime_checks` pragma, la bibliothèque Runtime C fournit les contrôles natifs à l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :  
   
--   Pour acheminer des messages de contrôle à l'exécution vers d'autres emplacements que le fichier ou la destination par défaut.  
+- Pour acheminer des messages de contrôle à l'exécution vers d'autres emplacements que le fichier ou la destination par défaut.  
   
--   Pour spécifier une destination de sortie en cas de messages de contrôle à l'exécution venant d'un débogueur tiers.  
+- Pour spécifier une destination de sortie en cas de messages de contrôle à l'exécution venant d'un débogueur tiers.  
   
--   Pour rapporter des messages de contrôle à l’exécution en provenance d’un programme compilé avec une version Release de la bibliothèque Runtime C. Les versions finales de la bibliothèque n'utilisent pas `_CrtDbgReportW` pour rapporter les erreurs d'exécution. Au lieu de cela, ils affichent une **Assert** boîte de dialogue pour chaque erreur d’exécution.  
+- Pour rapporter des messages de contrôle à l’exécution en provenance d’un programme compilé avec une version Release de la bibliothèque Runtime C. Les versions finales de la bibliothèque n’utilisent pas `_CrtDbgReportW` pour rapporter les erreurs d’exécution. Au lieu de cela, ils affichent une **Assert** boîte de dialogue pour chaque erreur d’exécution.  
   
- Pour personnaliser le contrôle des erreurs d'exécution, vous pouvez :  
+  Pour personnaliser le contrôle des erreurs d'exécution, vous pouvez :  
   
--   Écrire une fonction permettant d'obtenir un rapport sur les erreurs d'exécution. Pour plus d’informations, consultez [Comment : écrire une fonction de création de rapports exécution erreur](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Écrire une fonction permettant d'obtenir un rapport sur les erreurs d'exécution. Pour plus d’informations, consultez [Comment : écrire une fonction de création de rapports exécution erreur](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Personnaliser la destination des messages d'erreur.  
+- Personnaliser la destination des messages d'erreur.  
   
--   Demander des informations sur les erreurs de contrôle à l'exécution.  
+- Demander des informations sur les erreurs de contrôle à l'exécution.  
   
 ## <a name="customize-the-error-message-destination"></a>Personnaliser la destination des messages d'erreur  
  Si vous utilisez `_CrtDbgReportW` pour rapporter des erreurs, vous pouvez utiliser `_CrtSetReportMode` pour spécifier la destination des messages d'erreur.  

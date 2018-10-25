@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_notPaged | Documents Microsoft
+title: IDiaSectionContrib::get_notPaged | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db3836cceb020dba95703c40f8f450ae0bcbdea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28f494767820c59e7ece714768979b1778b79a8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869637"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-Récupère un indicateur qui indique si la section ne peut pas être paginée en dehors de la mémoire.  
+Récupère un indicateur qui indique si la section ne peut pas être averti par radiomessagerie de mémoire insuffisante.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_notPaged (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out, retval] Retourne `TRUE` si la section ne peut pas être paginée ; sinon, retourne `FALSE`.  
+ [out, retval] Retourne `TRUE` si la section ne peut pas être averti par radiomessagerie ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  

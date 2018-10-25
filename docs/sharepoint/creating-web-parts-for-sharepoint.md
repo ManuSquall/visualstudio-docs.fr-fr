@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906039"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et comportement des pages d’un site SharePoint à l’aide d’un navigateur. Composants WebPart sont des contrôles côté serveur qui s’exécutent à l’intérieur d’une page WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez [bloc de construction : composants WebPart](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -84,25 +84,25 @@ ms.locfileid: "36327214"
 ## <a name="visual-web-part-limitations"></a>Limitations de partie de Visual web
  À partir de Visual Studio, vous pouvez ajouter des composants visual web parts à des solutions SharePoint sandbox et des solutions de batterie de serveurs. Toutefois, les composants visual web parts présentent les limitations suivantes :  
   
--   Composants WebPart visuels ne prennent pas en charge les paramètres remplaçables. Pour plus d’informations, consultez [paramètres remplaçables](../sharepoint/replaceable-parameters.md).  
+- Composants WebPart visuels ne prennent pas en charge les paramètres remplaçables. Pour plus d’informations, consultez [paramètres remplaçables](../sharepoint/replaceable-parameters.md).  
   
--   Contrôles utilisateur visual WebPart ne peut pas être déplacé et supprimé ou copié sur les composants visual web parts. Cette action provoque une erreur de build.  
+- Contrôles utilisateur visual WebPart ne peut pas être déplacé et supprimé ou copié sur les composants visual web parts. Cette action provoque une erreur de build.  
   
--   Composants WebPart visuels ne prennent directement en charge les jetons du serveur SharePoint tels que $SPUrl. Pour plus d’informations, consultez « Jeton Restrictions dans sandbox Visual WebPart » dans la rubrique [solutions SharePoint de résoudre les problèmes](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+- Composants WebPart visuels ne prennent directement en charge les jetons du serveur SharePoint tels que $SPUrl. Pour plus d’informations, consultez « Jeton Restrictions dans sandbox Visual WebPart » dans la rubrique [solutions SharePoint de résoudre les problèmes](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
--   Composants Visual web parts dans une solution bac à sable obtiennent parfois l’erreur, « la demande d’exécution de code en mode sandbox a été refusée car le Service hôte de Code sandbox était trop occupé pour traiter la demande. » Pour plus d’informations sur cette erreur, consultez ce billet dans le [Blog de l’équipe SharePoint développeur](http://go.microsoft.com/fwlink/?LinkId=225932).  
+- Composants Visual web parts dans une solution bac à sable obtiennent parfois l’erreur, « la demande d’exécution de code en mode sandbox a été refusée car le Service hôte de Code sandbox était trop occupé pour traiter la demande. » Pour plus d’informations sur cette erreur, consultez ce billet dans le [Blog de l’équipe SharePoint développeur](http://go.microsoft.com/fwlink/?LinkId=225932).  
   
--   Débogage de JavaScript côté serveur n’est pas pris en charge dans Visual Studio, mais le débogage de JavaScript côté client est prise en charge.  
+- Débogage de JavaScript côté serveur n’est pas pris en charge dans Visual Studio, mais le débogage de JavaScript côté client est prise en charge.  
   
-     Bien que vous pouvez ajouter le code JavaScript intégré dans un fichier de balises côté serveur, le débogage n’est pas pris en charge pour les points d’arrêt ajoutés au balisage. Pour déboguer du code JavaScript, référencer un fichier JavaScript externe dans le fichier de balisage, puis définissez les points d’arrêt dans le fichier JavaScript.  
+   Bien que vous pouvez ajouter le code JavaScript intégré dans un fichier de balises côté serveur, le débogage n’est pas pris en charge pour les points d’arrêt ajoutés au balisage. Pour déboguer du code JavaScript, référencer un fichier JavaScript externe dans le fichier de balisage, puis définissez les points d’arrêt dans le fichier JavaScript.  
   
--   Débogage d’inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] code doit être effectué dans le fichier de code généré au lieu de dans le fichier de balisage.  
+- Débogage d’inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] code doit être effectué dans le fichier de code généré au lieu de dans le fichier de balisage.  
   
--   Composants WebPart visuels ne prennent pas en charge l’utilisation de la `<@ Assembly Src=` directive.  
+- Composants WebPart visuels ne prennent pas en charge l’utilisation de la `<@ Assembly Src=` directive.  
   
--   Contrôles web SharePoint et certains [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] contrôles ne sont pas pris en charge dans l’environnement sandbox de SharePoint. Si les contrôles non pris en charge sont utilisés sur un composant visual web part dans une solution bac à sable, l’erreur, « Le type ou espace de noms nom « Thème » n’existe pas dans l’espace de noms 'Microsoft.SharePoint.WebControls' » s’affiche.  
+- Contrôles web SharePoint et certains [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] contrôles ne sont pas pris en charge dans l’environnement sandbox de SharePoint. Si les contrôles non pris en charge sont utilisés sur un composant visual web part dans une solution bac à sable, l’erreur, « Le type ou espace de noms nom « Thème » n’existe pas dans l’espace de noms 'Microsoft.SharePoint.WebControls' » s’affiche.  
   
- Pour plus d’informations sur les solutions bac à sable, consultez [différences entre sandbox et les solutions de batterie](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+  Pour plus d’informations sur les solutions bac à sable, consultez [différences entre sandbox et les solutions de batterie](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Créer des parties du site web SharePoint de type ancien
  Vous pouvez utiliser les modèles dans Visual Studio pour créer des [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] WebPart pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] composants WebPart s’appuient sur le [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastructure WebPart et le type est recommandé pour les nouveaux projets.  

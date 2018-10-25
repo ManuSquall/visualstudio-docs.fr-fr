@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910795"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Saisie semi-automatique de mot renseigne les caractères manquants sur un mot pa
   
 ## <a name="implementation-steps"></a>Étapes d’implémentation  
   
-1.  Lorsque l’utilisateur sélectionne **compléter le mot** à partir de la **IntelliSense** menu, le <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande est envoyée au service de langage.  
+1. Lorsque l’utilisateur sélectionne **compléter le mot** à partir de la **IntelliSense** menu, le <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande est envoyée au service de langage.  
   
-2.  Le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe intercepte la commande et appelle le <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec le motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. Le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe intercepte la commande et appelle le <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec le motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  Le <xref:Microsoft.VisualStudio.Package.Source> classe puis appelle le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode pour obtenir la liste de saisies semi-automatiques possibles word puis affiche les mots dans une info-bulle de liste à l’aide de la <xref:Microsoft.VisualStudio.Package.CompletionSet> classe.  
+3. Le <xref:Microsoft.VisualStudio.Package.Source> classe puis appelle le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode pour obtenir la liste de saisies semi-automatiques possibles word puis affiche les mots dans une info-bulle de liste à l’aide de la <xref:Microsoft.VisualStudio.Package.CompletionSet> classe.  
   
-     S’il n'existe qu’un seul mot correspondant, le <xref:Microsoft.VisualStudio.Package.Source> classe termine le mot.  
+    S’il n'existe qu’un seul mot correspondant, le <xref:Microsoft.VisualStudio.Package.Source> classe termine le mot.  
   
- Ou bien, si l’analyseur renvoie la valeur du déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> quand le premier caractère d’un identificateur est tapé, la <xref:Microsoft.VisualStudio.Package.Source> classe le détecte et appelle le <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec le motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Dans ce cas, l’analyseur doit détecter la présence d’un caractère de sélection de membre et fournir une liste de membres.  
+   Ou bien, si l’analyseur renvoie la valeur du déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> quand le premier caractère d’un identificateur est tapé, la <xref:Microsoft.VisualStudio.Package.Source> classe le détecte et appelle le <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec le motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Dans ce cas, l’analyseur doit détecter la présence d’un caractère de sélection de membre et fournir une liste de membres.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>L’activation de la prise en charge pour la compléter le mot  
  Pour activer la prise en charge pour le jeu de saisies semi-automatiques word le `CodeSense` nommé paramètre passé à la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> un attribut utilisateur associé au package de langage. Cela définit le <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propriété sur le <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe.  

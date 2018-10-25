@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricString | Documents Microsoft
+title: IDebugSettingsCallback2::GetEEMetricString | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3805111c76068adee930be95baaedd57c19cb692
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7238eaf454dbd1ff25f29383da03cf9f276acc2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856000"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Récupère la chaîne de valeur d’une métrique d’évaluateur d’expression étant donné son nom.  
@@ -54,7 +54,7 @@ private int GetEEMetricString(
  [in] Nom de la mesure.  
   
  `pbstrValue`  
- [out] Retourne la chaîne de valeur de métrique.  
+ [out] Retourne la chaîne de valeur métrique.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

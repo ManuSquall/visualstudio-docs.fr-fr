@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863619"
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
   
  Nous créons une solution `MyBank` qui contient deux projets :  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- Notre première tentative de conception du projet `Accounts` comporte une classe destinée à détenir les informations de base d’un compte, une interface qui spécifie les fonctionnalités courantes de n’importe quel type de compte, comme le dépôt ou le retrait, et une classe dérivée de l’interface qui représente un compte courant. Nous commençons les projets Accounts (Comptes) en créant les fichiers sources suivants :  
+  Notre première tentative de conception du projet `Accounts` comporte une classe destinée à détenir les informations de base d’un compte, une interface qui spécifie les fonctionnalités courantes de n’importe quel type de compte, comme le dépôt ou le retrait, et une classe dérivée de l’interface qui représente un compte courant. Nous commençons les projets Accounts (Comptes) en créant les fichiers sources suivants :  
   
--   `AccountInfo.cs` définit les informations de base d’un compte.  
+- `AccountInfo.cs` définit les informations de base d’un compte.  
   
--   `IAccount.cs` définit une interface `IAccount` standard pour un compte, y compris les méthodes pour déposer de l’argent sur un compte ou en retirer, et pour récupérer le solde du compte.  
+- `IAccount.cs` définit une interface `IAccount` standard pour un compte, y compris les méthodes pour déposer de l’argent sur un compte ou en retirer, et pour récupérer le solde du compte.  
   
--   `CheckingAccount.cs` contient la classe `CheckingAccount` qui implémente l’interface `IAccounts` d’un compte courant.  
+- `CheckingAccount.cs` contient la classe `CheckingAccount` qui implémente l’interface `IAccounts` d’un compte courant.  
   
- Nous savons par expérience qu’un retrait sur un compte courant doit s’assurer que le montant retiré est inférieur au solde du compte. Aussi, nous remplaçons la méthode `IAccount.Withdaw` de `CheckingAccount` par une méthode qui vérifie cette condition. La méthode peut ressembler à ceci :  
+  Nous savons par expérience qu’un retrait sur un compte courant doit s’assurer que le montant retiré est inférieur au solde du compte. Aussi, nous remplaçons la méthode `IAccount.Withdaw` de `CheckingAccount` par une méthode qui vérifie cette condition. La méthode peut ressembler à ceci :  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **Créer un projet de test unitaire et des stubs de test unitaire**  
   
-1.  Dans la fenêtre de l’éditeur de code, cliquez avec le bouton droit et choisissez **Créer des tests unitaires** dans le menu contextuel.  
+1. Dans la fenêtre de l’éditeur de code, cliquez avec le bouton droit et choisissez **Créer des tests unitaires** dans le menu contextuel.  
   
-     ![À partir de la fenêtre de l’éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![À partir de la fenêtre de l’éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Cliquez sur OK pour accepter les valeurs par défaut pour créer vos tests unitaires, ou modifiez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.  
+2. Cliquez sur OK pour accepter les valeurs par défaut pour créer vos tests unitaires, ou modifiez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.  
   
-     ![Cliquez avec le bouton droit dans l’éditeur et choisissez Créer des tests unitaires](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![Cliquez avec le bouton droit dans l’éditeur et choisissez Créer des tests unitaires](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  Les stubs de test unitaire sont créés dans un nouveau projet de test unitaire pour toutes les méthodes dans la classe.  
+3. Les stubs de test unitaire sont créés dans un nouveau projet de test unitaire pour toutes les méthodes dans la classe.  
   
-     ![Les tests unitaires sont créés](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![Les tests unitaires sont créés](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Poursuivez votre lecture pour savoir comment [ajouter du code aux méthodes de test unitaire](#BKMK_Writing_your_tests) et rendre votre test unitaire explicite, et des tests unitaires supplémentaires que vous pouvez ajouter pour tester votre code de manière approfondie.  
+4. Poursuivez votre lecture pour savoir comment [ajouter du code aux méthodes de test unitaire](#BKMK_Writing_your_tests) et rendre votre test unitaire explicite, et des tests unitaires supplémentaires que vous pouvez ajouter pour tester votre code de manière approfondie.  
   
- **Créer le projet de test unitaire et les tests unitaires manuellement**  
+   **Créer le projet de test unitaire et les tests unitaires manuellement**  
   
- Un projet de test unitaire reflète généralement la structure d’un seul projet de code. Dans l’exemple MyBank, vous ajoutez deux projets de test unitaire nommés `AccountsTests` et `BankDbTests` à la solution `MyBanks` . Les noms des projets de test sont arbitraires, mais l’adoption d’une convention d’affectation de noms standard est une bonne idée.  
+   Un projet de test unitaire reflète généralement la structure d’un seul projet de code. Dans l’exemple MyBank, vous ajoutez deux projets de test unitaire nommés `AccountsTests` et `BankDbTests` à la solution `MyBanks` . Les noms des projets de test sont arbitraires, mais l’adoption d’une convention d’affectation de noms standard est une bonne idée.  
   
- **Pour ajouter un projet de test unitaire à une solution :**  
+   **Pour ajouter un projet de test unitaire à une solution :**  
   
-1.  Dans le menu **Fichier** , choisissez **Nouveau** , puis **Projet** (Ctrl+Maj+N).  
+5. Dans le menu **Fichier** , choisissez **Nouveau** , puis **Projet** (Ctrl+Maj+N).  
   
-2.  Dans la boîte de dialogue Nouveau projet, développez le nœud **Installé** , choisissez le langage que vous voulez utiliser pour votre projet de test, puis sélectionnez **Test**.  
+6. Dans la boîte de dialogue Nouveau projet, développez le nœud **Installé** , choisissez le langage que vous voulez utiliser pour votre projet de test, puis sélectionnez **Test**.  
   
-3.  Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet de l’infrastructure de tests unitaires que vous souhaitez utiliser. Pour tester le projet `Accounts` de notre exemple, vous devez le nommer `AccountsTests`.  
+7. Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet de l’infrastructure de tests unitaires que vous souhaitez utiliser. Pour tester le projet `Accounts` de notre exemple, vous devez le nommer `AccountsTests`.  
   
-    > [!WARNING]
-    >  Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.  
+   > [!WARNING]
+   >  Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.  
   
-4.  Dans votre projet de test unitaire, ajoutez une référence au projet de code testé : le projet Accounts (Comptes) dans notre exemple.  
+8. Dans votre projet de test unitaire, ajoutez une référence au projet de code testé : le projet Accounts (Comptes) dans notre exemple.  
   
-     Pour créer la référence au projet de code :  
+    Pour créer la référence au projet de code :  
   
-    1.  Sélectionnez le projet dans l’Explorateur de solutions.  
+   1.  Sélectionnez le projet dans l’Explorateur de solutions.  
   
-    2.  Dans le menu **Projet** , choisissez **Ajouter une référence**.  
+   2.  Dans le menu **Projet** , choisissez **Ajouter une référence**.  
   
-    3.  Dans la boîte de dialogue Gestionnaire de références, ouvrez le nœud **Solution** et choisissez **Projets**. Sélectionnez le nom du projet de code et fermez la boîte de dialogue.  
+   3.  Dans la boîte de dialogue Gestionnaire de références, ouvrez le nœud **Solution** et choisissez **Projets**. Sélectionnez le nom du projet de code et fermez la boîte de dialogue.  
   
- Chaque projet de test unitaire contient les classes qui reflètent les noms des classes du projet de code. Dans notre exemple, le projet `AccountsTests` contient les classes suivantes :  
+   Chaque projet de test unitaire contient les classes qui reflètent les noms des classes du projet de code. Dans notre exemple, le projet `AccountsTests` contient les classes suivantes :  
   
 -   la classe`AccountInfoTests` contient les méthodes de test unitaire pour la classe `AccountInfo` du projet `BankAccount` ;  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  Le modèle AAA (Arrange, Act, Assert) est un moyen couramment utilisé pour écrire les tests unitaires d’une méthode testée.  
   
--   La section **Arrange** d’une méthode de test unitaire initialise les objets et définit la valeur des données transmises à la méthode testée.  
+- La section **Arrange** d’une méthode de test unitaire initialise les objets et définit la valeur des données transmises à la méthode testée.  
   
--   La section **Act** appelle la méthode testée avec les paramètres triés.  
+- La section **Act** appelle la méthode testée avec les paramètres triés.  
   
--   La section **Assert** vérifie que l’action de la méthode testée se comporte comme prévu.  
+- La section **Assert** vérifie que l’action de la méthode testée se comporte comme prévu.  
   
- Pour tester la méthode `CheckingAccount.Withdraw` de notre exemple, nous pouvons écrire deux tests : l’un qui vérifie le comportement standard de la méthode et l’autre qui vérifie qu’un retrait supérieur au solde échouera. Dans la classe `CheckingAccountTests` , nous ajoutons les méthodes suivantes :  
+  Pour tester la méthode `CheckingAccount.Withdraw` de notre exemple, nous pouvons écrire deux tests : l’un qui vérifie le comportement standard de la méthode et l’autre qui vérifie qu’un retrait supérieur au solde échouera. Dans la classe `CheckingAccountTests` , nous ajoutons les méthodes suivantes :  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **R :** Utilisez l’explorateur de tests pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :  
   
-1.  Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
+1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
   
-    > [!NOTE]
-    >  Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
+   > [!NOTE]
+   >  Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
   
-2.  Dans l’explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
+2. Dans l’explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
- En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).  
+   En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).  
   
- **Q : Si j’utilise le développement axé sur des tests, comment générer du code à partir de mes tests ?**  
+   **Q : Si j’utilise le développement axé sur des tests, comment générer du code à partir de mes tests ?**  
   
- **R :** Utilisez IntelliSense pour générer des classes et méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez le menu IntelliSense dans le cadre de l’appel. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer un nouveau type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer une nouvelle méthode** à partir du menu IntelliSense.  
+   **R :** Utilisez IntelliSense pour générer des classes et méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez le menu IntelliSense dans le cadre de l’appel. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer un nouveau type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer une nouvelle méthode** à partir du menu IntelliSense.  
   
- ![Menu Intellisense de génération de stub de méthode](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![Menu Intellisense de génération de stub de méthode](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **Q : Puis-je créer des tests unitaires qui utilisent plusieurs groupes de données en entrée pour exécuter le test ?**  
+   **Q : Puis-je créer des tests unitaires qui utilisent plusieurs groupes de données en entrée pour exécuter le test ?**  
   
- **R :** Oui. Les*méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous affectez les valeurs de ligne aux variables à l’aide de l’indexeur `TestContext.DataRow[`*ColumnName*`]` .  
+   **R :** Oui. Les*méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous affectez les valeurs de ligne aux variables à l’aide de l’indexeur `TestContext.DataRow[`*ColumnName*`]` .  
   
 > [!NOTE]
 >  Ces procédures s’appliquent uniquement aux méthodes de test que vous écrivez à l’aide du framework de tests unitaires Microsoft pour le code managé. Si vous utilisez un autre framework, consultez sa documentation pour obtenir des fonctionnalités équivalentes.  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Microsoft Fakes utilise deux approches pour créer des classes de substitution pour les dépendances externes.  
   
-1.  Les*stubs* génèrent des classes de substitution dérivées de l’interface parente de la classe de dépendance cible. Les méthodes stub peuvent être remplacées par des méthodes virtuelles publiques de la classe cible.  
+1. Les*stubs* génèrent des classes de substitution dérivées de l’interface parente de la classe de dépendance cible. Les méthodes stub peuvent être remplacées par des méthodes virtuelles publiques de la classe cible.  
   
-2.  Les*shims* utilisent l’instrumentation du runtime pour rediriger les appels à une méthode cible vers une méthode shim de substitution pour les méthodes non virtuelles.  
+2. Les*shims* utilisent l’instrumentation du runtime pour rediriger les appels à une méthode cible vers une méthode shim de substitution pour les méthodes non virtuelles.  
   
- Dans les deux approches, vous utilisez les délégués générés des appels à la méthode de dépendance pour spécifier le comportement souhaité dans la méthode de test.  
+   Dans les deux approches, vous utilisez les délégués générés des appels à la méthode de dépendance pour spécifier le comportement souhaité dans la méthode de test.  
   
- En savoir plus sur l’ [isolement des méthodes de test unitaire avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+   En savoir plus sur l’ [isolement des méthodes de test unitaire avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **Q : Puis-je utiliser d’autres infrastructures de tests unitaires pour créer des tests unitaires ?**  
+   **Q : Puis-je utiliser d’autres infrastructures de tests unitaires pour créer des tests unitaires ?**  
   
- **R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos frameworks installés ici :  
+   **R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos frameworks installés ici :  
   
- ![Sélectionnez un autre framework de tests unitaires installée](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![Sélectionnez un autre framework de tests unitaires installée](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Vos stubs de test unitaire seront créés à l’aide du framework sélectionné.
+   Vos stubs de test unitaire seront créés à l’aide du framework sélectionné.
 
 
 

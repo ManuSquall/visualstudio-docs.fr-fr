@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_targetVirtualAddress | Documents Microsoft
+title: IDiaSymbol::get_targetVirtualAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6732ecad84e379ee574be94ce0170b9758329bc2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f4d4759bb256eea4db9cf00c6c051410c462131
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882362"
 ---
 # <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
-Récupère l’adresse virtuelle (VA) d’une cible de la conversion de code.  
+Récupère l’adresse virtuelle (VA) d’une cible de conversion de code.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_targetVirtualAddress (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne l’évaluation d’une cible de la conversion de code.  
+ [out] Retourne l’évaluation des vulnérabilités d’une cible de conversion de code.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,10 +43,10 @@ HRESULT get_targetVirtualAddress (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Cette propriété est valide uniquement si le symbole en tant qu’un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeur `SymTagThunk`.  
+ Cette propriété est valide uniquement si le symbole comme un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeur `SymTagThunk`.  
   
- Une conversion de « code » est un fragment de code qui effectue la conversion entre un espace d’adressage de mémoire de 32 bits (également appelé espace d’adresse) et un espace d’adressage de 16 bits (appelé un espace d’adressage segmentés).  
+ Une conversion de « code » est un morceau de code qui effectue la conversion entre un espace d’adressage de mémoire de 32 bits (également appelé espace d’adresse plat) et un espace d’adressage de 16 bits (appelé un espace d’adressage segmentés).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939491"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Didacticiel 3 : créer un jeu de combinaisons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans ce didacticiel, vous générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées. Vous apprenez à :  
   
--   stocker des objets, tels que des icônes, dans un objet `List` ;  
+- stocker des objets, tels que des icônes, dans un objet `List` ;  
   
--   utiliser une boucle `foreach` en Visual C# ou une boucle `For Each` en Visual Basic pour effectuer des itérations sur les éléments d'une liste ;  
+- utiliser une boucle `foreach` en Visual C# ou une boucle `For Each` en Visual Basic pour effectuer des itérations sur les éléments d'une liste ;  
   
--   effectuer le suivi de l'état d'un formulaire à l'aide de variables de référence ;  
+- effectuer le suivi de l'état d'un formulaire à l'aide de variables de référence ;  
   
--   générer un gestionnaire d'événements pour réagir aux événements, que vous pouvez utiliser avec plusieurs objets ;  
+- générer un gestionnaire d'événements pour réagir aux événements, que vous pouvez utiliser avec plusieurs objets ;  
   
--   créer un minuteur qui effectue un calcul à rebours, puis déclenche un événement une seule fois après avoir été démarré.  
+- créer un minuteur qui effectue un calcul à rebours, puis déclenche un événement une seule fois après avoir été démarré.  
   
- Lorsque vous aurez terminé ce didacticiel, votre programme aura l'aspect illustré ci-dessous.  
+  Lorsque vous aurez terminé ce didacticiel, votre programme aura l'aspect illustré ci-dessous.  
   
- ![Jeu créé dans ce didacticiel](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Jeu créé dans ce didacticiel  
+  ![Jeu créé dans ce didacticiel](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Jeu créé dans ce didacticiel  
   
- Pour télécharger une version complète de l’exemple, consultez [Exemple complet de didacticiel de création d’un jeu de combinaisons](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+  Pour télécharger une version complète de l’exemple, consultez [Exemple complet de didacticiel de création d’un jeu de combinaisons](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
   
 > [!NOTE]
 >  Ce didacticiel aborde Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  

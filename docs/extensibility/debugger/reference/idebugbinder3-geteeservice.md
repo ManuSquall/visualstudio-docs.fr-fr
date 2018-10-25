@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Documents Microsoft
+title: IDebugBinder3::GetEEService | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866660"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-Cette méthode retourne le service demandé.  
+Cette méthode retourne un service demandé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,7 +62,7 @@ Int GetEEService(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Passez le `IID` pour le [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interface (`IID_IEEVisualizerServiceProvider`) pour voir si le service de visualiseur de Type est disponible. Si, par conséquent, l’évaluateur d’expression peut obtenir le [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interface pour prendre en charge les visualiseurs de types. Consultez [Visualizing et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations.  
+ Passer le `IID` pour le [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interface (`IID_IEEVisualizerServiceProvider`) pour voir si le service de visualiseur de Type est disponible. Si, par conséquent, l’évaluateur d’expression peut obtenir le [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interface pour prendre en charge les visualiseurs de type. Consultez [visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866894"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : Ajouter une page d’application à un flux de travail
   Cette procédure pas à pas montre comment ajouter une page d’application qui affiche les données dérivées d’un flux de travail dans un projet de flux de travail. Il s’appuie sur le projet décrit dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Ajout d’une page d’application ASPX à un projet de flux de travail SharePoint.
+- Ajout d’une page d’application ASPX à un projet de flux de travail SharePoint.
 
--   Obtention de données à partir du projet de flux de travail et la manipulation.
+- Obtention de données à partir du projet de flux de travail et la manipulation.
 
--   Affichage des données dans une table sur la page d’application.
+- Affichage des données dans une table sur la page d’application.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
@@ -134,7 +134,7 @@ ms.locfileid: "43774586"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Ajoutez le code suivant à la méthode `Page_Load` :
+3.  Ajoutez le code suivant à la méthode `Page_Load` :
 
     ```vb
     Try
@@ -305,23 +305,23 @@ ms.locfileid: "43774586"
 
 #### <a name="to-test-the-application-page"></a>Pour tester la page d’application
 
-1.  Choisissez le **F5** touche pour exécuter et déployer le projet dans SharePoint.
+1. Choisissez le **F5** touche pour exécuter et déployer le projet dans SharePoint.
 
-2.  Choisissez le **accueil** bouton, puis choisissez le **Documents partagés** lien dans la barre de lancement rapide pour afficher la liste de Documents partagés sur le site SharePoint.
+2. Choisissez le **accueil** bouton, puis choisissez le **Documents partagés** lien dans la barre de lancement rapide pour afficher la liste de Documents partagés sur le site SharePoint.
 
-3.  Pour représenter les notes de frais de cet exemple, téléchargez de nouveaux documents dans la liste de Documents en choisissant le **Documents** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en choisissant le  **Télécharger un Document** bouton sur la barre d’outils.
+3. Pour représenter les notes de frais de cet exemple, téléchargez de nouveaux documents dans la liste de Documents en choisissant le **Documents** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en choisissant le  **Télécharger un Document** bouton sur la barre d’outils.
 
-4.  Une fois que vous téléchargez des documents, instanciez le flux de travail en choisissant le **bibliothèque** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en sélectionnant le **paramètres de la bibliothèque**bouton sur la barre d’outils.
+4. Une fois que vous téléchargez des documents, instanciez le flux de travail en choisissant le **bibliothèque** lien sur le **outils de bibliothèque** onglet en haut de la page, puis en sélectionnant le **paramètres de la bibliothèque**bouton sur la barre d’outils.
 
-5.  Dans le **Document Library Settings** page, choisissez le **les paramètres de flux de travail** lien dans le **autorisations et gestion** section.
+5. Dans le **Document Library Settings** page, choisissez le **les paramètres de flux de travail** lien dans le **autorisations et gestion** section.
 
-6.  Dans le **les paramètres de flux de travail** page, choisissez le **ajouter un flux de travail** lien.
+6. Dans le **les paramètres de flux de travail** page, choisissez le **ajouter un flux de travail** lien.
 
-7.  Dans le **ajouter un flux de travail** page, choisissez le **ExpenseReport - Workflow1** flux de travail, entrez un nom pour le flux de travail, tel que **TestNotedefrais**, puis choisissez le **Suivant** bouton.
+7. Dans le **ajouter un flux de travail** page, choisissez le **ExpenseReport - Workflow1** flux de travail, entrez un nom pour le flux de travail, tel que **TestNotedefrais**, puis choisissez le **Suivant** bouton.
 
-     Le formulaire d’Association de flux de travail s’affiche. Utilisez-le pour signaler la quantité de limite de dépense.
+    Le formulaire d’Association de flux de travail s’affiche. Utilisez-le pour signaler la quantité de limite de dépense.
 
-8.  Dans le formulaire d’Association, entrez **1000** dans le **limite d’approbation automatique** zone, puis choisissez le **associer le flux de travail** bouton.
+8. Dans le formulaire d’Association, entrez **1000** dans le **limite d’approbation automatique** zone, puis choisissez le **associer le flux de travail** bouton.
 
 9. Choisissez le **domestique** bouton pour revenir à la page d’accueil SharePoint.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774586"
 
 14. Répétez les étapes 11 à 13 avec d’autres documents dans la liste de Documents partagés. (Le nombre exact de documents n’est pas important.)
 
-15. Afficher la page de résumé d’application de rapport de frais en ouvrant l’URL suivante dans un navigateur Web : **http://**_Nom_système_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Afficher la page de résumé d’application de rapport de frais en ouvrant l’URL suivante dans un navigateur Web : **http://**<em>Nom_système</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      La page de résumé de rapport de notes de frais répertorie tous les rapports de dépenses ayant dépassé la quantité allouée, la quantité par qu'il dépassait et la quantité totale de tous les rapports.
 

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929970"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour votre Concepteur de langage spécifique à un domaine comme suit :
@@ -42,23 +42,23 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Pour ajouter une icône pour un nœud de l’Explorateur
 
-1.  Créer un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution à l’aide du modèle de solution flux de tâches.
+1. Créer un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution à l’aide du modèle de solution flux de tâches.
 
-2.  Placez un fichier .bmp qui contient une icône de 16 x 16 pixels dans le **Dsl\Resources** dossier dans la solution.
+2. Placez un fichier .bmp qui contient une icône de 16 x 16 pixels dans le **Dsl\Resources** dossier dans la solution.
 
-3.  Dans le **Explorateur DSL**, avec le bouton droit **comportement de l’Explorateur** puis cliquez sur **ajouter de nouveaux Explorer nœud paramètres**.
+3. Dans le **Explorateur DSL**, avec le bouton droit **comportement de l’Explorateur** puis cliquez sur **ajouter de nouveaux Explorer nœud paramètres**.
 
-     Un **ExplorerNodeSettings** nœud apparaît sous la **des paramètres de nœud personnalisés** nœud.
+    Un **ExplorerNodeSettings** nœud apparaît sous la **des paramètres de nœud personnalisés** nœud.
 
-4.  Sélectionnez **ExplorerNodeSettings**, puis, dans le **propriétés** fenêtre, définissez **classe** à **acteur**.
+4. Sélectionnez **ExplorerNodeSettings**, puis, dans le **propriétés** fenêtre, définissez **classe** à **acteur**.
 
-5.  Définissez **affichage de l’icône à** pour le chemin d’accès du fichier icône.
+5. Définissez **affichage de l’icône à** pour le chemin d’accès du fichier icône.
 
-6.  Transformer tous les modèles, puis générer et exécuter la solution.
+6. Transformer tous les modèles, puis générer et exécuter la solution.
 
-7.  Dans le concepteur généré, ouvrez l’exemple de diagramme.
+7. Dans le concepteur généré, ouvrez l’exemple de diagramme.
 
-     L’Explorateur doit montrer que trois **acteur** nœuds ayant votre icône.
+    L’Explorateur doit montrer que trois **acteur** nœuds ayant votre icône.
 
 > [!NOTE]
 >  Si vous avez défini une icône de nœud pour tout élément qui s’affiche dans l’Explorateur généré, tous les nœuds de l’Explorateur affiche l’icône. Si aucune icône n’a été défini, les nœuds seront affichent l’icône par défaut.

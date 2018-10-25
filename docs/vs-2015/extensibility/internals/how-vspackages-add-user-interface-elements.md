@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872445"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment VSPackages ajoute des éléments de l’interface utilisateur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ Un VSPackage peut ajouter des éléments d’interface (UI) utilisateur, par exe
 #### <a name="menus"></a>Menus  
  Chaque menu est défini comme un [élément de Menu](../../extensibility/menu-element.md) dans la `Menus` section. Menus doivent avoir `guid`, `id`, et `priority` attributs et un `Parent` élément et également les attributs supplémentaires suivants et enfants :  
   
--   Un `type` attribut qui spécifie si le menu doit apparaître dans l’IDE en tant qu’un type de menu ou une barre d’outils.  
+- Un `type` attribut qui spécifie si le menu doit apparaître dans l’IDE en tant qu’un type de menu ou une barre d’outils.  
   
--   Un [élément Strings](../../extensibility/strings-element.md) qui contient un [ButtonText élément](../../extensibility/buttontext-element.md), qui spécifie le titre du menu dans l’IDE et un [CommandName élément](../../extensibility/commandname-element.md), qui spécifie le nom est utilisé dans le **commande** fenêtre pour accéder au menu.  
+- Un [élément Strings](../../extensibility/strings-element.md) qui contient un [ButtonText élément](../../extensibility/buttontext-element.md), qui spécifie le titre du menu dans l’IDE et un [CommandName élément](../../extensibility/commandname-element.md), qui spécifie le nom est utilisé dans le **commande** fenêtre pour accéder au menu.  
   
--   Indicateurs facultatifs. Un [élément Command Flag](../../extensibility/command-flag-element.md) peut apparaître dans une définition de menu pour modifier son apparence ou le comportement dans l’IDE.  
+- Indicateurs facultatifs. Un [élément Command Flag](../../extensibility/command-flag-element.md) peut apparaître dans une définition de menu pour modifier son apparence ou le comportement dans l’IDE.  
   
- Chaque `Menu` élément doit avoir un groupe parent, sauf s’il est un élément ancrable comme une barre d’outils. Un menu ancrable est son propre parent. Pour plus d’informations sur les menus et les valeurs pour le `type` d’attribut, consultez le [élément de Menu](../../extensibility/menu-element.md) documentation.  
+  Chaque `Menu` élément doit avoir un groupe parent, sauf s’il est un élément ancrable comme une barre d’outils. Un menu ancrable est son propre parent. Pour plus d’informations sur les menus et les valeurs pour le `type` d’attribut, consultez le [élément de Menu](../../extensibility/menu-element.md) documentation.  
   
- L’exemple suivant montre un menu qui apparaît dans la barre de menus de Visual Studio, en regard du **outils** menu.  
+  L’exemple suivant montre un menu qui apparaît dans la barre de menus de Visual Studio, en regard du **outils** menu.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos sont définies dans le `Combos` section. Chaque `Combo` élément représente une zone de liste déroulante dans l’IDE. La zone de liste peut être ou non accessible en écriture par des utilisateurs, selon la valeur de la `type` attribut de la liste déroulante. Combos ont les mêmes éléments et le comportement que les boutons ont et peut avoir également les attributs supplémentaires suivants :  
   
--   Un `defaultWidth` attribut qui spécifie la largeur en pixels.  
+- Un `defaultWidth` attribut qui spécifie la largeur en pixels.  
   
--   Un `idCommandList` attribut qui spécifie une liste qui contient les éléments qui sont affichés dans la zone de liste. La liste de commandes doit être déclarée dans le même `GuidSymbol` nœud qui contient la liste déroulante.  
+- Un `idCommandList` attribut qui spécifie une liste qui contient les éléments qui sont affichés dans la zone de liste. La liste de commandes doit être déclarée dans le même `GuidSymbol` nœud qui contient la liste déroulante.  
   
- L’exemple suivant définit un élément de liste déroulante.  
+  L’exemple suivant définit un élément de liste déroulante.  
   
 ```xml  
 <Combos>  

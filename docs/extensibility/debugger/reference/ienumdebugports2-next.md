@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2::Next | Documents Microsoft
+title: IEnumDebugPorts2::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6a174b07950ea81321c7d7a422cbb84997568dc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08d07f087ad30fee76d90f33448a614e8728925b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913019"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
 Retourne l’ensemble suivant d’éléments de l’énumération.  
@@ -48,7 +48,7 @@ int Next(
  [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.  
   
  `rgelt`  
- [dans, out] Tableau de [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) éléments doit être renseigné.  
+ [in, out] Tableau de [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) éléments doit être renseigné.  
   
  `pceltFetched`  
  [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.  

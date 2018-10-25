@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_INFO_FLAGS | Documents Microsoft
+title: DBGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941280"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 Permet de spécifier `DebugPropertyInfo` champs  
@@ -61,7 +61,7 @@ enum {
  Initialise le `dwAttrib` champ.  
   
  DBGPROP_INFO_DEBUGPROP  
- Initialise le `pDebugProp` champ contenant une `IDebugProperty` interface.  
+ Initialise le `pDebugProp` champ qui contient un `IDebugProperty` interface.  
   
  DBGPROP_INFO_AUTOEXPAND  
  Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.  

@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938381"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d'arrière-plan pour les applications Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
   
  [Déclencher les tâches en arrière-plan](#BKMK_Trigger_background_tasks)  
   
--   [Déclencher un événement de tâche en arrière-plan à partir d'une session de débogage standard](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Déclencher un événement de tâche en arrière-plan à partir d'une session de débogage standard](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Déclencher une tâche en arrière-plan lorsque l'application n'est pas en cours d'exécution](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Déclencher une tâche en arrière-plan lorsque l'application n'est pas en cours d'exécution](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnostic des erreurs d'activation des tâches en arrière-plan](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnostic des erreurs d'activation des tâches en arrière-plan](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Déclencher les événements PLM (Process Lifetime Management)  
  Windows peut suspendre votre application lorsque l'utilisateur la quitte ou lorsque Windows entre dans un état de faible consommation d'énergie. Répondez à l'événement `Suspending` pour enregistrer des données appropriées relatives à l'application et aux utilisateurs dans un espace de stockage permanent et pour libérer les ressources. Lorsqu'une application quitte l'état **Suspendu** , elle entre dans l'état **Exécution** et reprend là où elle a été suspendue. Vous pouvez répondre à l'événement `Resuming` pour restaurer ou actualiser l'état de l'application et pour libérer les ressources.  

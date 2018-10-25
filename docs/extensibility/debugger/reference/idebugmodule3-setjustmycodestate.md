@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState | Documents Microsoft
+title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08ebb6e9b8f289d3a5fe1a9c34095b99c738d8f7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b029c1c5209e752776e1cdf8a97fecdcc5bea10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888591"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 Marque le module comme étant le code utilisateur ou non.  
@@ -41,7 +41,7 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Paramètres  
  `fIsUserCode`  
- [in] Différent de zéro (`TRUE`) si le module doit être considérée comme code utilisateur, zéro (`FALSE`) s’il ne doit pas.  
+ [in] Différent de zéro (`TRUE`) si le module doit être considéré comme du code de l’utilisateur, zéro (`FALSE`) s’il ne doit pas.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  

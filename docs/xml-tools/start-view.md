@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920675"
 ---
 # <a name="start-view"></a>vue de départ
 
 La vue de départ est le point de lancement du Concepteur de schémas XML (XSD). Lorsque vous créez un fichier XSD, la vue de départ est initialement affichée.
 
-La vue de départ contient deux sections principales, le *filigrane* et **détails du schéma de document** volet. Elle comprend également la barre d'outils, qui est disponible dans toutes les vues du Concepteur XSD.
+La vue de départ contient deux sections principales, le *filigrane* et **détails du jeu de schéma** volet. Elle comprend également la barre d'outils, qui est disponible dans toutes les vues du Concepteur XSD.
 
 ![Vue de départ du concepteur de schémas XML](../xml-tools/media/xsddesigner_startview.gif)
 
@@ -31,21 +31,21 @@ Le volet de filigrane contient une liste de liens vers toutes les vues du concep
 
 ## <a name="schema-set-details"></a>Détails du jeu de schémas
 
-Le **détails du schéma de document** répertorie les types de nœud de schéma global et affiche le nombre d’instances de chaque type dans le schéma. Vous pouvez utiliser la **ajouter** liens en regard des types de nœud pour ajouter de nouveaux nœuds à l’espace de travail.
+Le **détails du jeu de schéma** volet répertorie les types de nœud de schéma global et affiche le nombre d’instances de chaque type dans le schéma. Vous pouvez utiliser la **ajouter** liens en regard des types de nœud pour ajouter de nouveaux nœuds à l’espace de travail.
 
 ## <a name="toolbar"></a>ToolBar
 
-Vous pouvez naviguer entre la vue de départ, la [affichage du modèle de contenu](../xml-tools/content-model-view.md) et [vue du graphique](../xml-tools/graph-view.md) à partir de la barre d’outils du Concepteur de schémas XML.
+Vous pouvez naviguer entre la vue de départ, le [affichage du modèle de contenu](../xml-tools/content-model-view.md) et [vue du graphique](../xml-tools/graph-view.md) à partir de la barre d’outils du Concepteur de schémas XML.
 
 ![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Les boutons suivants sont activés dans la barre d'outils du Concepteur XSD lorsque la vue de départ est active :
 
 |Option|Description|
-|------------|-----------------|
-|**Afficher le mode de démarrage**|Bascule vers la vue de départ. Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**1**.|
-|**Afficher la vue du modèle de contenu**|Bascule vers la vue de modèle de contenu. Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**2**.|
-|**Afficher la vue du graphique**|Bascule vers la vue du graphique. Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**3**.|
+|-|-----------------|
+|**Afficher la vue de départ**|Bascule vers la vue de départ. Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**1**.|
+|**Afficher la vue de modèle de contenu**|Bascule vers la vue de modèle de contenu. Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**2**.|
+|**Afficher la vue du graphique**|Bascule vers la vue du graphique. Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Voir aussi
 

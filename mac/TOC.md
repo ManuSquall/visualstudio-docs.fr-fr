@@ -2,7 +2,8 @@
 # [Visite guidée de l’IDE](ide-tour.md)
 
 # [Installation](installation.md)
-## [Prévisualiser l’installation](install-preview.md)
+## [Installer et utiliser derrière un pare-feu ou un proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Installer une préversion](install-preview.md)
 ## [Mettre à jour](update.md)
 ## [Désinstaller](uninstall.md)
 
