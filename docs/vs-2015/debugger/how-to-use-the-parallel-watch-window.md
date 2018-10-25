@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837072"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Comment : utiliser la fenêtre Espion parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans le **espion parallèle** fenêtre :  
   
--   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
+- La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
   
--   La colonne de frame, dans laquelle une flèche indique le frame sélectionné.  
+- La colonne de frame, dans laquelle une flèche indique le frame sélectionné.  
   
--   Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.  
+- Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.  
   
-    > [!TIP]
-    >  Vous devez ouvrir le **tâches parallèles** fenêtre pour afficher les informations de tâche dans le **espion parallèle** fenêtre.  
+  > [!TIP]
+  >  Vous devez ouvrir le **tâches parallèles** fenêtre pour afficher les informations de tâche dans le **espion parallèle** fenêtre.  
   
--   Le  **\<ajouter un espion >** colonne, dans laquelle vous pouvez entrer des expressions à surveiller.  
+- Le  **\<ajouter un espion >** colonne, dans laquelle vous pouvez entrer des expressions à surveiller.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Pour afficher la fenêtre Espion parallèle  
   

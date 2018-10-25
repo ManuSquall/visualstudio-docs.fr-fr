@@ -12,23 +12,23 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925836"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procédure : création manuelle d’un package d’extension (déploiement VSIX)
 Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour le déploiement. Il existe trois façons de créer un package :  
   
--   Créez un projet de package VSIX avec l’un des modèles d’extensibilité inclus dans le Kit de développement logiciel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (SDK). Pour la plupart des scénarios, il s’agit de l’option la plus simple.  
+- Créez un projet de package VSIX avec l’un des modèles d’extensibilité inclus dans le Kit de développement logiciel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (SDK). Pour la plupart des scénarios, il s’agit de l’option la plus simple.  
   
--   Encapsulez la sortie de votre projet d’extension dans un [projet VSIX](../extensibility/vsix-project-template.md)vide. Cette option est recommandée pour les modèles, les assemblys non pris en charge et les types personnalisés.  
+- Encapsulez la sortie de votre projet d’extension dans un [projet VSIX](../extensibility/vsix-project-template.md)vide. Cette option est recommandée pour les modèles, les assemblys non pris en charge et les types personnalisés.  
   
--   Créez manuellement un package VSIX. Cette option est recommandée uniquement quand les deux autres options ne sont pas disponibles.  
+- Créez manuellement un package VSIX. Cette option est recommandée uniquement quand les deux autres options ne sont pas disponibles.  
   
- Ce document aborde la troisième option.  
+  Ce document aborde la troisième option.  
   
 ## <a name="creating-a-vsix-package"></a>Création d’un package VSIX  
  Pour créer manuellement un package d’extension, ajoutez un fichier extension.manifest et un fichier [Content_Types].xml au projet d’extension. Placez-les dans un fichier compressé avec votre sortie de génération, puis renommez le fichier compressé pour que son extension de nom de fichier soit .vsix. Le type de l’extension doit être pris en charge par le [schéma VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  

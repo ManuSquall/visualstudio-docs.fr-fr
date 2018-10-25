@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838099"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.  
@@ -24,17 +24,17 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 ## <a name="frame-analysis"></a>Analyse des frames  
  Si l'analyse des frames utilise les mêmes informations que celles capturées dans un fichier journal de graphisme à des fins de diagnostic, elle les utilise en revanche pour résumer les performances de rendu. Les informations de performance ne sont pas enregistrées dans le journal pendant la capture ; elles sont générées ultérieurement pendant l'analyse des frames en chronométrant les événements et en collectant les statiques à mesure que les frames sont lus. Cette approche présente plusieurs avantages par rapport à l'enregistrement des informations de performances pendant la capture :  
   
--   L'analyse des frames peut calculer la moyenne des résultats de plusieurs lectures d'un même frame pour s'assurer que le résumé des performances est cohérent du point de vue statistique.  
+- L'analyse des frames peut calculer la moyenne des résultats de plusieurs lectures d'un même frame pour s'assurer que le résumé des performances est cohérent du point de vue statistique.  
   
--   L'analyse des frames peut générer des informations de performances pour des configurations matérielles et des appareils autres que ceux sur lesquels les informations ont été capturées.  
+- L'analyse des frames peut générer des informations de performances pour des configurations matérielles et des appareils autres que ceux sur lesquels les informations ont été capturées.  
   
--   Analyse des frames peut générer de nouveaux résumés de performances à partir des informations capturées antérieurement, par exemple, lorsque les pilotes GPU sont optimisés ou exposer des fonctionnalités de débogage supplémentaires.  
+- Analyse des frames peut générer de nouveaux résumés de performances à partir des informations capturées antérieurement, par exemple, lorsque les pilotes GPU sont optimisés ou exposer des fonctionnalités de débogage supplémentaires.  
   
- En plus de ces avantages, l'analyse des frames permet aussi de changer la façon dont le frame est affiché pendant la lecture avec la possibilité de présenter des informations sur l'impact potentiel de ces changements sur les performances de rendu d'une application. Vous pouvez vous servir de ces informations pour tester les stratégies d'optimisation potentielles sans avoir à les implémenter, puis capturer et comparer tous les résultats.  
+  En plus de ces avantages, l'analyse des frames permet aussi de changer la façon dont le frame est affiché pendant la lecture avec la possibilité de présenter des informations sur l'impact potentiel de ces changements sur les performances de rendu d'une application. Vous pouvez vous servir de ces informations pour tester les stratégies d'optimisation potentielles sans avoir à les implémenter, puis capturer et comparer tous les résultats.  
   
- Bien que l'analyse des frames vise essentiellement à vous aider à accéder à de meilleures performances de rendu, elle peut également vous aider à obtenir une meilleure qualité visuelle pour une cible de performances donnée ou à réduire la consommation d'énergie du GPU.  
+  Bien que l'analyse des frames vise essentiellement à vous aider à accéder à de meilleures performances de rendu, elle peut également vous aider à obtenir une meilleure qualité visuelle pour une cible de performances donnée ou à réduire la consommation d'énergie du GPU.  
   
- Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
+  Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Utilisation de l'analyse des frames  
  Avant de pouvoir utiliser l'analyse des frames, vous devez d'abord capturer les informations graphiques de votre application pendant qu'elle s'exécute, comme vous le feriez avec un autre outil Graphics Analyzer. Puis, dans la fenêtre de document (.vsglog) de journal graphics, choisissez le **analyse des frames** onglet.  
@@ -48,23 +48,23 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
   
  Certains résultats montrent directement les effets d'une variante sur les performances de rendu :  
   
--   Si le filtrage de texture bilinéaire a donné lieu à des gains de performances, l'utilisation de ce mode dans votre application se traduira par les mêmes gains de performances.  
+- Si le filtrage de texture bilinéaire a donné lieu à des gains de performances, l'utilisation de ce mode dans votre application se traduira par les mêmes gains de performances.  
   
--   Si la variante Fenêtre d'affichage 1x1 a donné lieu à des gains de performances, la réduction de la taille des cibles de rendu dans votre application améliorera ses performances de rendu.  
+- Si la variante Fenêtre d'affichage 1x1 a donné lieu à des gains de performances, la réduction de la taille des cibles de rendu dans votre application améliorera ses performances de rendu.  
   
--   Si la variante de compression de texture BC a donné lieu à des gains de performances, l'utilisation de ce mode dans votre application se traduira par les mêmes gains de performances.  
+- Si la variante de compression de texture BC a donné lieu à des gains de performances, l'utilisation de ce mode dans votre application se traduira par les mêmes gains de performances.  
   
--   Si la variante MSAAx2 offre des performances proches de la variante MSAAx0, vous pouvez activer MSAAx0 dans votre application pour améliorer sa qualité de rendu sans supporter de coût en matière de performances.  
+- Si la variante MSAAx2 offre des performances proches de la variante MSAAx0, vous pouvez activer MSAAx0 dans votre application pour améliorer sa qualité de rendu sans supporter de coût en matière de performances.  
   
- Les autres résultats peuvent suggérer des incidences plus profondes et plus subtiles pour les performances de votre application :  
+  Les autres résultats peuvent suggérer des incidences plus profondes et plus subtiles pour les performances de votre application :  
   
--   Si la variante Fenêtre d'affichage 1x1 donne lieu à des gains de performances très importants, il est probable que votre application consomme un taux de remplissage supérieur à ce qui est disponible. Si les gains de performances apportés par cette variante sont nuls, il est probable que l'application traite trop de sommets.  
+- Si la variante Fenêtre d'affichage 1x1 donne lieu à des gains de performances très importants, il est probable que votre application consomme un taux de remplissage supérieur à ce qui est disponible. Si les gains de performances apportés par cette variante sont nuls, il est probable que l'application traite trop de sommets.  
   
--   Si la variante Format de cible de rendu 16 bpp ne montre pas de gains de performances significatifs, il est probable que votre application consomme trop de bande passante de mémoire.  
+- Si la variante Format de cible de rendu 16 bpp ne montre pas de gains de performances significatifs, il est probable que votre application consomme trop de bande passante de mémoire.  
   
--   Si la variante Dimensions de la texture moitié/un quart montre des gains de performances significatifs, il est probable que vos textures occupent trop de mémoire, consomment trop de bande passante ou n'utilisent pas efficacement le cache de texture. Si cette variante ne montre aucune évolution des performances, vous pouvez probablement utiliser des textures plus grandes et plus détaillées sans supporter de coût en matière de performances.  
+- Si la variante Dimensions de la texture moitié/un quart montre des gains de performances significatifs, il est probable que vos textures occupent trop de mémoire, consomment trop de bande passante ou n'utilisent pas efficacement le cache de texture. Si cette variante ne montre aucune évolution des performances, vous pouvez probablement utiliser des textures plus grandes et plus détaillées sans supporter de coût en matière de performances.  
   
- Si vous disposez de compteurs matériels, vous pouvez les utiliser pour recueillir des informations très détaillées qui vous renseignerons sur les risques de détérioration des performances de rendu auxquels votre application est exposée. Tous les appareils de 9.2 et supérieur au niveau des fonctionnalités prennent en charge les requêtes d’occlusion en profondeur (**pixels bloqués** compteur) et les horodatages. Il se peut que d'autres compteurs matériels soient disponibles si le fabricant de GPU les a implémentés, et les a exposés dans son pilote. Vous pouvez utiliser ces compteurs pour confirmer la cause exacte des résultats affichés dans le tableau Résumé (par exemple, vous pouvez déterminer si la superposition est un facteur en examinant le pourcentage de pixels qui ont été bloqués par le test de profondeur).  
+  Si vous disposez de compteurs matériels, vous pouvez les utiliser pour recueillir des informations très détaillées qui vous renseignerons sur les risques de détérioration des performances de rendu auxquels votre application est exposée. Tous les appareils de 9.2 et supérieur au niveau des fonctionnalités prennent en charge les requêtes d’occlusion en profondeur (**pixels bloqués** compteur) et les horodatages. Il se peut que d'autres compteurs matériels soient disponibles si le fabricant de GPU les a implémentés, et les a exposés dans son pilote. Vous pouvez utiliser ces compteurs pour confirmer la cause exacte des résultats affichés dans le tableau Résumé (par exemple, vous pouvez déterminer si la superposition est un facteur en examinant le pourcentage de pixels qui ont été bloqués par le test de profondeur).  
   
 ### <a name="timeline-and-summary-table"></a>Chronologie et tableau Résumé  
  Par défaut, la chronologie et le tableau Résumé sont affichés et les autres sections sont réduites.  
@@ -147,9 +147,9 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
   
  Comme aucun des GPU d'ordinateur actuellement proposés par Intel, AMD ou nVidia n'assure une prise en charge sûre des compteurs matériels GPU, l'analyse des frames ne collecte pas de données des compteurs de ces matériels. Toutefois, l’analyse des frames collecte des compteurs matériels à partir de la GPU suivant, qui les prend en charge fiable :  
   
--   nVidia T40 (Tegra4)
+- nVidia T40 (Tegra4)
   
- Aucune autre plateforme prenant en charge l'analyse des frames n'assure de collecte auprès des compteurs matériels GPU.  
+  Aucune autre plateforme prenant en charge l'analyse des frames n'assure de collecte auprès des compteurs matériels GPU.  
   
 > [!NOTE]
 >  Dans la mesure où les compteurs matériels GPU sont des ressources matérielles, plusieurs passages peuvent être nécessaires pour collecter l'ensemble des compteurs matériels pour chaque variante de rendu. Ainsi, l'ordre dans lequel les compteurs GPU sont collectés n'est pas spécifié.  

@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Documents Microsoft
+title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fdf3b6aee272990fb22feee13f8e46ee8550073
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2388d93c05500dc3c12bb5d57cd17293f5e16c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816777"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
-Décrit la résolution d’un point d’arrêt erreur, y compris l’emplacement, le programme et thread.  
+Décrit la résolution d’un point d’arrêt erreur, y compris l’emplacement, de programme et de thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +54,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
  Une combinaison de valeurs à partir de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) énumération spécifiant les champs de cette structure sont remplis.  
   
  `bpResLocation`  
- Le [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, ce qui spécifie l’emplacement de la résolution de point d’arrêt.  
+ Le [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, qui spécifie l’emplacement de la résolution de point d’arrêt.  
   
  `pProgram`  
  Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.  
@@ -63,15 +63,15 @@ public struct BP_ERROR_RESOLUTION_INFO {
  Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread sur lequel l’application qui a généré l’erreur de point d’arrêt est en cours d’exécution.  
   
  `bstrMessage`  
- Chaîne contenant un message d’avertissement ou d’erreur résultant de la résolution de cette erreur.  
+ Chaîne contenant un message d’avertissement ou une erreur résultant de la résolution de cette erreur.  
   
  `dwType`  
- Une valeur à partir de la [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) énumération qui spécifie le type d’erreur de point d’arrêt.  
+ Une valeur comprise entre le [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) énumération qui spécifie le type d’erreur de point d’arrêt.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est retournée à partir de la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  
