@@ -1,5 +1,5 @@
 ---
-title: Référence circulaire dans l’argument de valeur non pris en charge | Documents Microsoft
+title: Référence circulaire dans l’argument de valeur non pris en charge | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949420"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Référence circulaire dans l’argument de valeur non prise en charge
 Une tentative a été effectuée pour appeler `JSON.stringify` avec une valeur qui n’est pas valide. Le `value` argument, un tableau ou un objet, contient une référence circulaire.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Supprimez la référence circulaire de l’argument.  
+-   Supprimer la référence circulaire de l’argument.  
   
 ## <a name="example"></a>Exemple  
- Le code dans cet exemple génère une erreur d’exécution, car `john` a une référence à `mary` et `mary` a une référence à `john`. Pour supprimer la référence circulaire, soit supprimer ou annuler la propriété `brother` à partir de la `mary` objet ou le `sister` propriété à partir de la `john` objet.  
+ Le code dans cet exemple génère une erreur d’exécution, car `john` a une référence à `mary` et `mary` a une référence à `john`. Pour supprimer la référence circulaire, soit supprimer ou annuler la définition la propriété `brother` à partir de la `mary` objet ou le `sister` propriété à partir de la `john` objet.  
   
 ```JavaScript  
 var john = new Object();  

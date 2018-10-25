@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenExByRVA | Documents Microsoft
+title: IDiaSymbol::findChildrenExByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c80d50d2e1d3fb5a34b5508a8b67569fb0417cb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d1a77ba8527698271356fdc324ccefac2dc0f650
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938862"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
-Récupère les enfants du symbole valides à une adresse virtuelle relative (RVA) spécifiée.  
+Récupère les enfants du symbole sont valides à une adresse virtuelle relative (RVA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,13 +38,13 @@ HRESULT findChildrenExByRVA (
   
 #### <a name="parameters"></a>Paramètres  
  `symtag`  
- [in] Spécifie les balises symbol des enfants à récupérer, tel que défini dans le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md). La valeur `SymTagNull` pour tous les enfants doivent être récupérés.  
+ [in] Spécifie les balises de symbole des enfants à récupérer, tel que défini dans le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md). La valeur `SymTagNull` pour tous les enfants doivent être récupérées.  
   
  `name`  
- [in] Spécifie le nom de l’enfant doit être récupéré. La valeur `NULL` pour tous les enfants doivent être récupérés.  
+ [in] Spécifie le nom des enfants à récupérer. La valeur `NULL` pour tous les enfants doivent être récupérées.  
   
  `compareFlags`  
- [in] Spécifie les options de comparaison à appliquer à la correspondance de noms. Les valeurs à partir de la [namesearchoptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.  
+ [in] Spécifie les options de comparaison à appliquer à la correspondance de noms. Les valeurs de la [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.  
   
  `address`  
  [in] Spécifie l’adresse RVA.  
@@ -58,7 +58,7 @@ HRESULT findChildrenExByRVA (
 ## <a name="remarks"></a>Notes  
  Les symboles locaux qui sont retournées incluent des informations de plage dynamique.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
@@ -70,4 +70,4 @@ HRESULT findChildrenExByRVA (
  [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md)
+ [NameSearchOptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md)

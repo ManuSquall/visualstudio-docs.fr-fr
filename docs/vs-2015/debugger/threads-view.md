@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943035"
 ---
 # <a name="threads-view"></a>vue Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ La vue Threads est une liste plate de tous les threads associés à windows sur 
   
 #### <a name="to-open-the-threads-view"></a>Pour ouvrir la vue Threads  
   
-1.  À partir de la **Spy** menu, choisissez **Threads**.  
+1. À partir de la **Spy** menu, choisissez **Threads**.  
   
- ![Spy&#43; &#43; vue Threads](../debugger/media/spy-threads.png "Spy ++ _Threads")  
-Vue Threads Spy++  
+   ![Spy&#43; &#43; vue Threads](../debugger/media/spy-threads.png "Spy ++ _Threads")  
+   Vue Threads Spy++  
   
- La figure ci-dessus illustre la vue Threads.  
+   La figure ci-dessus illustre la vue Threads.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Recherche d’un Thread dans la vue Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  

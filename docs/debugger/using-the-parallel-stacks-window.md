@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d344cc8cd30d250c441788a7920d05086c38ca5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940006"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Afficher les Threads et tâches à l’aide de la fenêtre Piles parallèles
 Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applications multithread. Son **vue Threads** affiche les informations sur la pile d’appels pour tous les threads dans votre application. Elle vous permet de naviguer entre les threads et les frames de pile sur ces threads. Dans le code managé, le **vue tâches** affiche les piles d’appels <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets. En code natif, le **vue tâches** affiche les piles d’appels [groupes de tâches](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorithmes parallèles](/cpp/parallel/concrt/parallel-algorithms), [agents asynchrones](/cpp/parallel/concrt/asynchronous-agents)et [tâches légères](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -92,21 +92,21 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
 ## <a name="tasks-view"></a>Vue Tâches  
  Si votre application utilise <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets (code managé) ou `task_handle` objets (code natif) pour exprimer le parallélisme, vous pouvez utiliser la zone de liste déroulante dans la barre d’outils de la fenêtre Piles parallèles pour basculer vers *vue tâches*. La vue Tâches contient les piles d’appels des tâches et non celles des threads. Les différences entre la vue Tâches et la vue Threads sont les suivantes :  
   
--   Les piles d'appels des threads qui n'exécutent pas de tâches n'apparaissent pas.  
+- Les piles d'appels des threads qui n'exécutent pas de tâches n'apparaissent pas.  
   
--   Les piles d’appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d’afficher les frames les plus pertinents appartenant aux tâches.  
+- Les piles d’appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d’afficher les frames les plus pertinents appartenant aux tâches.  
   
--   Lorsque plusieurs tâches figurent sur un thread, les piles d’appels de ces tâches sont fractionnées dans des nœuds séparés.  
+- Lorsque plusieurs tâches figurent sur un thread, les piles d’appels de ces tâches sont fractionnées dans des nœuds séparés.  
   
- L’illustration suivante présente la vue Tâches de la fenêtre Piles parallèles à droite et la vue Threads correspondante à gauche.  
+  L’illustration suivante présente la vue Tâches de la fenêtre Piles parallèles à droite et la vue Threads correspondante à gauche.  
   
- ![Tâches d’affichage dans la fenêtre Piles parallèles](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
+  ![Tâches d’affichage dans la fenêtre Piles parallèles](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- Pour afficher la pile des appels complète, passez simplement en vue Threads en double-cliquant sur un frame de pile, puis sur **atteindre le Thread**.  
+  Pour afficher la pile des appels complète, passez simplement en vue Threads en double-cliquant sur un frame de pile, puis sur **atteindre le Thread**.  
   
- Comme décrit dans le tableau précédent, en pointant sur une méthode, vous pouvez voir des informations supplémentaires. L’image suivante présente les informations de l’info-bulle pour la vue Threads et la vue Tâches.  
+  Comme décrit dans le tableau précédent, en pointant sur une méthode, vous pouvez voir des informations supplémentaires. L’image suivante présente les informations de l’info-bulle pour la vue Threads et la vue Tâches.  
   
- ![Info-bulles dans la fenêtre Piles parallèles](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
+  ![Info-bulles dans la fenêtre Piles parallèles](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Vue Méthode  
  À partir de la vue Threads ou de la vue Tâches, vous pouvez faire pivoter le graphique sur la méthode actuelle en cliquant sur l'icône Vue Méthode de la barre d'outils. La vue Méthode présente toutes les méthodes de tous les threads qui appellent ou sont appelés par la méthode actuelle. L'illustration suivante présente une vue Threads, ainsi que la façon dont les mêmes informations s'affichent dans la vue Méthode.  
@@ -122,4 +122,4 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
  [Programmation parallèle](/dotnet/standard/parallel-programming/index)   
  [À l’aide de la fenêtre tâches](../debugger/using-the-tasks-window.md)   
- [Classe de tâche](../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../extensibility/debugger/task-class-internal-members.md)

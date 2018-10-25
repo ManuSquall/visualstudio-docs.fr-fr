@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931831"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Définit les options à la fois pour le navigateur web interne et pour Internet 
  Afficher la source dans  
  Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **Afficher la source** dans la page à partir du navigateur web interne.  
   
--   **Éditeur de code source** Sélectionnez cette option pour consulter le code source lors de l’[écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md).  
+- **Éditeur de code source** Sélectionnez cette option pour consulter le code source lors de l’[écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
--   **Éditeur HTML** Sélectionnez cette option pour consulter le code source dans le [Concepteur HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’un des deux modes suivants : le mode Design ou le mode Code source basé sur du texte standard.  
+- **Éditeur HTML** Sélectionnez cette option pour consulter le code source dans le [Concepteur HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’un des deux modes suivants : le mode Design ou le mode Code source basé sur du texte standard.  
   
--   **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.  
+- **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.  
   
- Options Internet Explorer  
- Cliquez sur ce bouton pour modifier les options relatives à Internet Explorer dans la boîte de dialogue **Propriétés Internet**. Les modifications apportées dans cette boîte de dialogue affectent à la fois le navigateur web interne et les instances d’Internet Explorer lancées en dehors de l’IDE de Visual Studio (par exemple, à partir du menu Démarrer).  
+  Options Internet Explorer  
+  Cliquez sur ce bouton pour modifier les options relatives à Internet Explorer dans la boîte de dialogue **Propriétés Internet**. Les modifications apportées dans cette boîte de dialogue affectent à la fois le navigateur web interne et les instances d’Internet Explorer lancées en dehors de l’IDE de Visual Studio (par exemple, à partir du menu Démarrer).  
   
 > [!NOTE]
 >  Pour remplacer le navigateur web interne de Visual Studio, qui est une version d’Internet Explorer, par un autre navigateur web externe, utilisez la boîte de dialogue Naviguer avec.  

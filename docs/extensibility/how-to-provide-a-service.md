@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942547"
 ---
 # <a name="how-to-provide-a-service"></a>Comment : fournir un service
 Un VSPackage peut fournir des services qui les VSPackages autres peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.  
@@ -32,50 +32,50 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
 ## <a name="implement-a-service"></a>Implémenter un service  
   
-1.  Créez un projet VSIX (**fichier** > **New** > **projet** > **Visual C#**  >  **Extensibilité** > **projet VSIX**).  
+1. Créez un projet VSIX (**fichier** > **New** > **projet** > **Visual C#**  >  **Extensibilité** > **projet VSIX**).  
   
-2.  Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **ajouter** > **un nouvel élément** > **éléments Visual c#**  >  **Extensibilité** > **Package Visual Studio**.  
+2. Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **ajouter** > **un nouvel élément** > **éléments Visual c#**  >  **Extensibilité** > **Package Visual Studio**.  
   
-3.  Pour implémenter un service, vous devez créer trois types :  
+3. Pour implémenter un service, vous devez créer trois types :  
   
-    -   Une interface qui décrit le service. La plupart de ces interfaces sont vides, autrement dit, elles n’ont aucuns méthodes.  
+   - Une interface qui décrit le service. La plupart de ces interfaces sont vides, autrement dit, elles n’ont aucuns méthodes.  
   
-    -   Interface qui décrit l’interface de service. Cette interface inclut les méthodes à implémenter.  
+   - Interface qui décrit l’interface de service. Cette interface inclut les méthodes à implémenter.  
   
-    -   Une classe qui implémente le service et l’interface de service.  
+   - Une classe qui implémente le service et l’interface de service.  
   
      L’exemple suivant montre une implémentation de base des trois types. Le constructeur de la classe de service doit définir le fournisseur de services.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="register-a-service"></a>Inscrire un service  
   

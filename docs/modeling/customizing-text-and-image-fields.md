@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942372"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personnalisation des champs de texte et d'image
 Lorsque vous définissez un décorateur de texte dans une forme, il est représenté par un champ de texte. Pour obtenir des exemples de l’initialisation de TextFields et autres dont ShapeFields, inspecter Dsl\GeneratedCode\Shapes.cs dans votre solution DSL.
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  Il existe plusieurs autres paires de `Get` méthodes et `Default` propriétés, telles que `DefaultMultipleLine/GetMultipleLine()`. Vous pouvez affecter une valeur à la propriété par défaut pour modifier la valeur pour toutes les instances du champ de forme. Pour rendre la valeur varient d’instance d’une forme à un autre ou dépend de l’état de la forme ou son élément de modèle, vous devez remplacer le `Get` (méthode).
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>Personnalisations dynamiques
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>Jeux de style
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Voir aussi

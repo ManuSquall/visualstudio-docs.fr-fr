@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated | Documents Microsoft
+title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcd383130c1af1765014adfa438482543c336ede
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09f2e81699683ec49155faceb375da3d636ed4c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934039"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-OBSOLÈTE. N’UTILISEZ PAS. Recharge les symboles de ce module.  
+OBSOLÈTE. N’UTILISEZ PAS. Recharge les symboles pour ce module.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,16 +43,16 @@ int ReloadSymbols(
   
 #### <a name="parameters"></a>Paramètres  
  `pszUrlToSymbols`  
- [in] Le chemin d’accès pour le magasin de symboles.  
+ [in] Le chemin d’accès dans le magasin de symboles.  
   
  `pbstrDebugMessage`  
- [out] Retourne un message d’information, par exemple un message d’état ou d’erreur, qui s’affiche à droite du nom du module dans la fenêtre Modules.  
+ [out] Retourne un message d’information, par exemple, un message état ou d’erreur qui s’affiche à droite du nom du module dans la fenêtre Modules.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Un moteur de débogage doit toujours renvoyer `E_FAIL`.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Un moteur de débogage doit toujours retourner `E_FAIL`.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode n’est plus pris en charge. Implémentez la [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) méthode à la place.  
+ Cette méthode n’est plus pris en charge. Implémentez le [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) méthode à la place.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

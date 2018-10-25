@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Documents Microsoft
+title: CANSTOP_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938810"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-Utilisé pour déterminer si un programme peut s’arrêter l’exécution après avoir atteint un point particulier dans l’exécution.  
+Utilisé pour déterminer si un programme peut arrêter l’exécution après avoir atteint un point particulier dans l’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,9 +50,9 @@ public enum enum_CANSTOP_REASON {
  Spécifie le pas à pas détaillé dans une fonction.  
   
 ## <a name="remarks"></a>Notes  
- Est passé comme argument à la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) méthode pour vérifier avec le Gestionnaire de Session de débogage (SDM) s’il s’agit OK arrêter après avoir atteint le point d’entrée du programme ou après l’exécution pas à pas dans une fonction ou méthode.  
+ Passé en tant qu’argument à la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) méthode pour vérifier avec le Gestionnaire de Session de débogage (SDM) s’il s’agit OK arrêter après avoir atteint le point d’entrée du programme ou après l’exécution pas à pas dans une fonction ou méthode.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

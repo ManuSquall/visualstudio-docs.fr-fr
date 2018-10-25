@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928813"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Word
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un document spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des apporter de modifications au niveau de l'application, comme afficher un nouvel onglet de ruban quand un document est ouvert.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778105"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d'un projet de document Word.  
+- Création d'un projet de document Word.  
   
--   Ajout de texte au document hébergé dans le concepteur Visual Studio.  
+- Ajout de texte au document hébergé dans le concepteur Visual Studio.  
   
--   Écriture de code qui utilise le modèle objet de Word pour ajouter du texte au document personnalisé lorsqu'il est ouvert.  
+- Écriture de code qui utilise le modèle objet de Word pour ajouter du texte au document personnalisé lorsqu'il est ouvert.  
   
--   Génération et exécution du projet pour le tester  
+- Génération et exécution du projet pour le tester  
   
--   Nettoyage du projet pour supprimer les fichiers de build inutiles et les paramètres de sécurité de votre ordinateur de développement.  
+- Nettoyage du projet pour supprimer les fichiers de build inutiles et les paramètres de sécurité de votre ordinateur de développement.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -101,7 +101,7 @@ ms.locfileid: "38778105"
   
 -   Une définition partielle de la classe `ThisDocument`, qui représente le modèle de programmation du document et permet d'accéder au modèle objet de Word. Pour plus d’informations, consultez [élément hôte de Document](../vsto/document-host-item.md) et [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md). Le reste de la classe `ThisDocument` est défini dans un fichier de code masqué que vous ne devez pas modifier.  
   
--   Les gestionnaires d'événements `ThisDocument_Startup` et `ThisDocument_Shutdown`. Ces gestionnaires d'événements sont appelés à l'ouverture et à la fermeture du document. Utilisez ces gestionnaires d'événements pour initialiser votre personnalisation à l'ouverture du document et pour nettoyer les ressources utilisées par votre personnalisation à la fermeture du document. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).  
+-   Les gestionnaires d'événements `ThisDocument_Startup` et `ThisDocument_Shutdown` . Ces gestionnaires d'événements sont appelés à l'ouverture et à la fermeture du document. Utilisez ces gestionnaires d'événements pour initialiser votre personnalisation à l'ouverture du document et pour nettoyer les ressources utilisées par votre personnalisation à la fermeture du document. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Pour ajouter un deuxième paragraphe de texte au document à l'aide de code  
   

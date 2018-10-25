@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949030"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Comment : mettre à jour les enregistrements dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ Vous pouvez utiliser la `TableAdapter.Update` méthode pour mettre à jour (modi
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>Pour mettre à jour des enregistrements dans une base de données avec la méthode TableAdapter.Update qui prend le DataSet, DataTable, DataRow ou DataRows ()  
   
-1.  Modifier les enregistrements de souhaité <xref:System.Data.DataTable> en modifiant directement le <xref:System.Data.DataRow> dans le <xref:System.Data.DataTable>. Pour plus d’informations, consultez [Comment : modifier les lignes dans un DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Modifier les enregistrements de souhaité <xref:System.Data.DataTable> en modifiant directement le <xref:System.Data.DataRow> dans le <xref:System.Data.DataTable>. Pour plus d’informations, consultez [Comment : modifier les lignes dans un DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  Après avoir modifié les lignes dans le <xref:System.Data.DataTable>, appelez le `TableAdapter.Update` (méthode). Vous pouvez contrôler la quantité de données pour mettre à jour en passant l’intégralité d’un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un seul <xref:System.Data.DataRow>.  
+2. Après avoir modifié les lignes dans le <xref:System.Data.DataTable>, appelez le `TableAdapter.Update` (méthode). Vous pouvez contrôler la quantité de données pour mettre à jour en passant l’intégralité d’un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un seul <xref:System.Data.DataRow>.  
   
-     Le code suivant montre comment modifier un enregistrement dans un <xref:System.Data.DataTable> , puis appelez le `TableAdapter.Update` méthode pour enregistrer les modifications apportées à la base de données. (Cet exemple utilise la table de région de base de données Northwind.)  
+    Le code suivant montre comment modifier un enregistrement dans un <xref:System.Data.DataTable> , puis appelez le `TableAdapter.Update` méthode pour enregistrer les modifications apportées à la base de données. (Cet exemple utilise la table de région de base de données Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Si votre application utilise des objets pour stocker les données dans votre application, vous pouvez utiliser le TableAdapter `DBDirect` des méthodes pour envoyer des données à partir de vos objets directement à la base de données. Ces méthodes vous permettent de vous permettent de transmettre des valeurs individuelles pour chaque colonne en tant que paramètres de méthode. Appel de cette méthode met à jour un enregistrement existant dans la base de données avec les valeurs de colonne passées dans la méthode.  
+   Si votre application utilise des objets pour stocker les données dans votre application, vous pouvez utiliser le TableAdapter `DBDirect` des méthodes pour envoyer des données à partir de vos objets directement à la base de données. Ces méthodes vous permettent de vous permettent de transmettre des valeurs individuelles pour chaque colonne en tant que paramètres de méthode. Appel de cette méthode met à jour un enregistrement existant dans la base de données avec les valeurs de colonne passées dans la méthode.  
   
- La procédure suivante utilise Northwind `Region` table comme exemple.  
+   La procédure suivante utilise Northwind `Region` table comme exemple.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>Pour mettre à jour des enregistrements dans une base de données à l’aide de la méthode TableAdapter.Update qui prend des valeurs de colonne  
   

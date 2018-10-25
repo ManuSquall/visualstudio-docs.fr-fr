@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950665"
 ---
 # <a name="troubleshooting-broken-references"></a>Dépannage de références rompues
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si votre application tente d’utiliser une référence rompue, une erreur d’exception est générée. Si la première cause d’erreur est l’impossibilité de localiser le composant référencé, il existe toutefois plusieurs situations dans lesquelles une référence peut être considérée comme rompue. Ces situations sont répertoriées dans la liste suivante :  
   
--   Le chemin de la référence du projet est incorrect ou incomplet.  
+- Le chemin de la référence du projet est incorrect ou incomplet.  
   
--   Le fichier référencé a été supprimé.  
+- Le fichier référencé a été supprimé.  
   
--   Le fichier référencé a été renommé.  
+- Le fichier référencé a été renommé.  
   
--   La connexion réseau ou l’authentification a échoué.  
+- La connexion réseau ou l’authentification a échoué.  
   
--   La référence pointe vers un composant COM qui n’est pas installé sur l’ordinateur.  
+- La référence pointe vers un composant COM qui n’est pas installé sur l’ordinateur.  
   
- Les solutions suivantes permettent de résoudre ces problèmes.  
+  Les solutions suivantes permettent de résoudre ces problèmes.  
   
 > [!NOTE]
 >  Les fichiers situés dans les assemblys sont référencés à l’aide de chemins absolus dans le fichier projet. Par conséquent, il est possible qu’un assembly référencé dans l’environnement local d’utilisateurs qui travaillent dans un environnement comprenant plusieurs développeurs soit manquant. Pour éviter ces erreurs, il est préférable, dans ce cas, d’ajouter des références entre projets. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) et [Programmation à l’aide d’assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

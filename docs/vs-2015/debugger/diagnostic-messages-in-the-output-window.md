@@ -34,12 +34,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa2e01859190b4e22f076892b23595c4617a29f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951299"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Messages de diagnostic dans la fenêtre Sortie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Vous pouvez écrire des messages d'exécution dans la fenêtre Sortie en utilisa
 ## <a name="output-methods"></a>Méthodes de sortie  
  Les classes <xref:System.Diagnostics.Trace> et <xref:System.Diagnostics.Debug> fournissent les méthodes de sortie suivantes :  
   
--   Plusieurs méthodes `Write`, qui génèrent des informations de sortie sans interrompre l'exécution. Ces méthodes remplacent la méthode `Debug.Print` utilisée dans les versions précédentes de Visual Basic.  
+- Plusieurs méthodes `Write`, qui génèrent des informations de sortie sans interrompre l'exécution. Ces méthodes remplacent la méthode `Debug.Print` utilisée dans les versions précédentes de Visual Basic.  
   
--   Les méthodes <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, qui interrompent l'exécution et génèrent des informations de sortie si une condition spécifique échoue. Par défaut, la méthode `Assert` affiche les informations dans une boîte de dialogue. Pour plus d’informations, consultez [Assertions dans du Code managé](../debugger/assertions-in-managed-code.md).  
+- Les méthodes <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, qui interrompent l'exécution et génèrent des informations de sortie si une condition spécifique échoue. Par défaut, la méthode `Assert` affiche les informations dans une boîte de dialogue. Pour plus d’informations, consultez [Assertions dans du Code managé](../debugger/assertions-in-managed-code.md).  
   
--   Les méthodes <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, qui interrompent toujours l'exécution et génèrent des informations de sortie. Par défaut, les méthodes `Fail` affichent les informations dans une boîte de dialogue.  
+- Les méthodes <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, qui interrompent toujours l'exécution et génèrent des informations de sortie. Par défaut, les méthodes `Fail` affichent les informations dans une boîte de dialogue.  
   
- En plus de programmer à partir de votre application, le **sortie** fenêtre peut afficher des informations sur :  
+  En plus de programmer à partir de votre application, le **sortie** fenêtre peut afficher des informations sur :  
   
--   Modules que le débogueur a chargés ou déchargés.  
+- Modules que le débogueur a chargés ou déchargés.  
   
--   Exceptions qui sont levées.  
+- Exceptions qui sont levées.  
   
--   Processus qui  cessent de s'exécuter.  
+- Processus qui  cessent de s'exécuter.  
   
--   Threads qui s'arrêtent.  
+- Threads qui s'arrêtent.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

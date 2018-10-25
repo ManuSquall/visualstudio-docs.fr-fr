@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933129"
 ---
 # <a name="editor-factories"></a>Fabriques d’éditeur
 Une fabrique d’éditeur crée les objets de l’éditeur et les place dans un frame de fenêtre, appelé une vue physique. Il crée les données de document et les objets de vue de document qui sont nécessaires pour créer des éditeurs et concepteurs. Une fabrique d’éditeur est requis pour créer l’éditeur principal de Visual Studio et n’importe quel éditeur standard. Un éditeur personnalisé peut également être créé avec une fabrique d’éditeur.  
@@ -46,13 +46,13 @@ Une fabrique d’éditeur crée les objets de l’éditeur et les place dans un 
 ## <a name="the-editor-factory-registration-process"></a>Le processus d’inscription de fabrique éditeur  
  Le processus suivant se produit lorsque Visual Studio charge votre éditeur à l’aide de votre fabrique d’éditeur :  
   
-1.  Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] appels système de projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] appels système de projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Cette méthode retourne la fabrique d’éditeur. Visual Studio des retards du chargement de package de l’éditeur, toutefois, jusqu'à ce qu’un système de projet a réellement besoin de l’éditeur.  
+2. Cette méthode retourne la fabrique d’éditeur. Visual Studio des retards du chargement de package de l’éditeur, toutefois, jusqu'à ce qu’un système de projet a réellement besoin de l’éditeur.  
   
-3.  Lorsque l’éditeur a besoin d’un système de projet, Visual Studio appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, une méthode spécialisée qui retourne des objets de données de la vue de document et le document.  
+3. Lorsque l’éditeur a besoin d’un système de projet, Visual Studio appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, une méthode spécialisée qui retourne des objets de données de la vue de document et le document.  
   
-4.  Si appels par Visual Studio à votre fabrique d’éditeur à l’aide <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> retourner un objet de données de document et un objet de vue de document, Visual Studio crée la fenêtre de document, place l’objet de vue de document qu’elle contient, puis crée une entrée dans le document en cours d’exécution RDT (table) pour l’objet de données de document.  
+4. Si appels par Visual Studio à votre fabrique d’éditeur à l’aide <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> retourner un objet de données de document et un objet de vue de document, Visual Studio crée la fenêtre de document, place l’objet de vue de document qu’elle contient, puis crée une entrée dans le document en cours d’exécution RDT (table) pour l’objet de données de document.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

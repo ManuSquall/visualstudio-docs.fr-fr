@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941219"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Génération de nouveau projet : les rouages du système, partie 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Un récapitulatif  
  Nous allons modifier le **nouveau projet** boîte de dialogue zone et créer un nouveau modèle de projet utilisateur.  
   
-1.  Ajouter un sous-dossier MyProjectNode vers le dossier \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp.  
+1. Ajouter un sous-dossier MyProjectNode vers le dossier \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp.  
   
-2.  Créer un fichier MyProject.vstdir dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.  
+2. Créer un fichier MyProject.vstdir dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.  
   
-3.  Ajoutez ces lignes au fichier .vstdir :  
+3. Ajoutez ces lignes au fichier .vstdir :  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Enregistrez et fermez le fichier .vstdir.  
+4. Enregistrez et fermez le fichier .vstdir.  
   
-5.  Créer un fichier MyProject.vstemplate dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.  
+5. Créer un fichier MyProject.vstemplate dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.  
   
-6.  Dans le fichier .vstemplate, ajoutez ces lignes :  
+6. Dans le fichier .vstemplate, ajoutez ces lignes :  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Enregistrez le fichier de the.vstemplate et fermez l’éditeur.  
+7. Enregistrez le fichier de the.vstemplate et fermez l’éditeur.  
   
-8.  Envoyer le fichier .vstemplate dans un nouveau dossier MyProjectNode\MyProject.zip compressé.  
+8. Envoyer le fichier .vstemplate dans un nouveau dossier MyProjectNode\MyProject.zip compressé.  
   
 9. À partir de la fenêtre de commande Visual Studio, tapez :  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Ouvrez Visual Studio.  
+   Ouvrez Visual Studio.  
   
-1.  Ouvrir le **nouveau projet** boîte de dialogue zone et développez le **Visual C#** nœud du projet.  
+10. Ouvrir le **nouveau projet** boîte de dialogue zone et développez le **Visual C#** nœud du projet.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** apparaît sous la forme d’un nœud enfant de Visual C# juste sous le nœud de Windows.  
+    **MyProjectNode** apparaît sous la forme d’un nœud enfant de Visual C# juste sous le nœud de Windows.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Génération de nouveau projet : les rouages du système, partie 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

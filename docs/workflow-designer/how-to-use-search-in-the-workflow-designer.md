@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943061"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail
 
@@ -35,11 +35,11 @@ Recherche rapide identifie les éléments suivants dans le concepteur :
 
 ### <a name="use-quick-find"></a>Utiliser la recherche rapide
 
-1.  Avec le Concepteur de flux de travail ouvert, appuyez sur **Ctrl + F**, ou sélectionnez **modifier** > **rechercher et remplacer** > **recherche rapide**.
+1. Avec le Concepteur de flux de travail ouvert, appuyez sur **Ctrl + F**, ou sélectionnez **modifier** > **rechercher et remplacer** > **recherche rapide**.
 
-2.  Entrez le terme de recherche dans les **rechercher** zone de texte et cliquez sur **suivant**.
+2. Entrez le terme de recherche dans les **rechercher** zone de texte et cliquez sur **suivant**.
 
-3.  Le terme de recherche se trouve dans le flux de travail en cours. L’illustration suivante montre un nom complet d’activité qui se trouve dans le concepteur :
+3. Le terme de recherche se trouve dans le flux de travail en cours. L’illustration suivante montre un nom complet d’activité qui se trouve dans le concepteur :
 
    ![Résultats de la recherche dans le concepteur de flux de travail](../workflow-designer/media/designersearch.png)
 

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929528"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 ### <a name="type-resolution-issues"></a>Problèmes de résolution de type  
  Le Concepteur de classes peut ne pas être en mesure de résoudre des types pour les raisons suivantes :  
   
--   Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Le type ne se trouve pas dans la portée correcte ; le Concepteur de classes ne peut donc pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
+- Le type ne se trouve pas dans la portée correcte ; le Concepteur de classes ne peut donc pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
   
--   Le type n'existe pas (ou a été commenté). Pour corriger cette erreur, assurez-vous que vous n'avez pas commenté ni supprimé le type.  
+- Le type n'existe pas (ou a été commenté). Pour corriger cette erreur, assurez-vous que vous n'avez pas commenté ni supprimé le type.  
   
--   Le type se trouve dans une bibliothèque référencée par une directive #import. Une solution de contournement possible consiste à ajouter manuellement le code généré (le fichier .tlh) à une directive #include dans le fichier d'en-tête.  
+- Le type se trouve dans une bibliothèque référencée par une directive #import. Une solution de contournement possible consiste à ajouter manuellement le code généré (le fichier .tlh) à une directive #include dans le fichier d'en-tête.  
   
- L’erreur que vous allez probablement voir en cas de problème de résolution de type est la suivante : **Code introuvable pour une ou plusieurs formes dans le diagramme de classes ’\<élément>’**. Ce message d'erreur n'indique pas nécessairement que votre code est erroné. Il indique seulement que le Concepteur de classes n'a pas pu afficher votre code. Essayez les actions suivantes.  
+  L’erreur que vous allez probablement voir en cas de problème de résolution de type est la suivante : **Code introuvable pour une ou plusieurs formes dans le diagramme de classes ’\<élément>’**. Ce message d'erreur n'indique pas nécessairement que votre code est erroné. Il indique seulement que le Concepteur de classes n'a pas pu afficher votre code. Essayez les actions suivantes.  
   
--   Assurez-vous que le type existe. Vérifiez que vous n'avez pas involontairement commenté ni supprimé le code source.  
+- Assurez-vous que le type existe. Vérifiez que vous n'avez pas involontairement commenté ni supprimé le code source.  
   
--   Assurez-vous que le Concepteur de classes prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations).  
+- Assurez-vous que le Concepteur de classes prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations).  
   
--   Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
+- Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
   
 ### <a name="troubleshooting-other-error-messages"></a>Résolution d'autres messages d'erreur  
  Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findFileById | Documents Microsoft
+title: IDiaSession::findFileById | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed79b65823c3a777c13a90331468074347425ef5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c56d66a78b52e99aecb8cb744cc3d8465d0d243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941410"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-Récupère un fichier source par l’identificateur du fichier source.  
+Récupère un fichier source par identificateur de fichier source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ HRESULT findFileById (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- L’identificateur du fichier source est une valeur unique utilisée en interne pour le SDK DIA pour que tous les fichiers source unique. Cette méthode est généralement utilisée en interne pour le SDK DIA.  
+ L’identificateur de fichier source est une valeur unique utilisée en interne pour le SDK DIA pour rendre tous les fichiers source unique. Cette méthode est généralement utilisée en interne pour le SDK DIA.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

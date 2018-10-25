@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Documents Microsoft
+title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d0972b4e326cabd00341db685a0b73c8c104c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930035"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 Décrit l’emplacement d’un point d’arrêt à une adresse dans le code.  
@@ -38,7 +38,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
   
 ## <a name="members"></a>Membres  
  `bstrContext`  
- Le contexte du point d’arrêt, en général, un nom de méthode ou fonction vu sur une pile des appels.  
+ Le contexte du point d’arrêt, généralement un nom de méthode ou fonction tels que présentés sur une pile des appels.  
   
  `bstrModuleUrl`  
  L’URL du module qui contient le point d’arrêt.  
@@ -47,12 +47,12 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
  Le nom de la fonction qui contient le point d’arrêt.  
   
  `bstrAddress`  
- L’adresse du point d’arrêt, qui est analysé par l’évaluateur d’expression pour le lier à un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objet.  
+ L’adresse du point d’arrêt, ce qui est analysé par un évaluateur d’expression pour le lier à un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objet.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

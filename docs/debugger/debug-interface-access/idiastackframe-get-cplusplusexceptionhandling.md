@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_cplusplusExceptionHandling | Documents Microsoft
+title: IDiaStackFrame::get_cplusplusExceptionHandling | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b342cf82c4a976a9bba7bc500fee308e5a913cbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca89decdad3a9cb7fdec221a515341639985dbda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936423"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Récupère un indicateur qui indique si la gestion des exceptions C++ sont en vigueur.  
+Récupère un indicateur qui indique si la gestion des exceptions C++ sont appliquée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_cplusplusExceptionHandling (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si la gestion des exceptions C++ sont en vigueur pour cette image ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si la gestion des exceptions C++ sont activée pour ce frame ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
@@ -42,7 +42,7 @@ HRESULT get_cplusplusExceptionHandling (
 ## <a name="remarks"></a>Notes  
  Gestion des exceptions C++ n’est pas le même que structurée ou la gestion des exceptions de système.  
   
- Pour déterminer si la structure de la gestion des exceptions sont en vigueur, appelez le [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (méthode).  
+ Pour déterminer si structurée des exceptions est en vigueur, appelez le [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

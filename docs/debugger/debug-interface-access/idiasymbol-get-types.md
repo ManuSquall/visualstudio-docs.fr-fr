@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_types | Documents Microsoft
+title: IDiaSymbol::get_types | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6521d2a7ffdf5bb285f571e0d3975626f34d84d1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951312"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 Récupère un tableau de types spécifiques au compilateur pour ce symbole.  
@@ -36,13 +36,13 @@ HRESULT get_types (
   
 #### <a name="parameters"></a>Paramètres  
  `cTypes`  
- [in] Taille de la mémoire tampon pour stocker les données.  
+ [in] Taille de la mémoire tampon devant contenir les données.  
   
  `pcTypes`  
  [out] Retourne le nombre de types écrits, ou, si le `types` paramètre est `NULL`, puis le nombre total de types disponibles.  
   
  `types[]`  
- [out] Un tableau qui doit être remplie avec les [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objets qui représentent tous les types de ce symbole.  
+ [out] Un tableau qui doit être rempli avec le [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) les objets qui représentent tous les types de ce symbole.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

@@ -18,25 +18,25 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 105a4ed0f30991fe656c7f257ca766dd06c150a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941709"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Commandes et menus utilisant des assemblys d’interopérabilité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un VSPackage qui implémente des commandes de menu et barre d’outils à l’aide des assemblys d’interopérabilité doit :  
   
--   Informe le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) sur les commandes prises en charge et s’ils sont actuellement activés.  
+- Informe le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) sur les commandes prises en charge et s’ils sont actuellement activés.  
   
--   Respecter les règles (contrat) pour la gestion des commandes.  
+- Respecter les règles (contrat) pour la gestion des commandes.  
   
--   Implémenter la gestion des commandes à l’aide de manière explicite la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface.  
+- Implémenter la gestion des commandes à l’aide de manière explicite la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface.  
   
- La section suivante décrit comment effectuer ces tâches.  
+  La section suivante décrit comment effectuer ces tâches.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Déterminer l’état de la commande à l’aide d’assemblys d’interopérabilité](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

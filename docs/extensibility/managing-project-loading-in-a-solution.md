@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950197"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Gérer le chargement du projet dans une solution
 Solutions Visual Studio peuvent contenir un grand nombre de projets. Le comportement de Visual Studio par défaut est de charger tous les projets dans une solution au moment de que l’ouverture de la solution et non à autoriser l’utilisateur à accéder à tous les projets jusqu'à la fin du chargement de tous les. Lorsque le processus de chargement de projet dure plus de deux minutes, une barre de progression s’affiche, indiquant le nombre de projets chargés et le nombre total de projets. L’utilisateur peut décharger les projets tout en travaillant dans une solution avec plusieurs projets, mais cette procédure présente certains inconvénients : les projets déchargés ne sont pas générés dans le cadre d’une commande de régénérer la Solution, et les descriptions IntelliSense des types et membres de fermeture projets ne sont pas affichés.  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Détecter et gérer la solution et du chargement de projet  
  Afin de détecter l’état de chargement des projets et solutions, appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> avec les valeurs suivantes :  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retourne `true` si la solution et tous ses projets sont chargés, sinon `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retourne `true` si la solution et tous ses projets sont chargés, sinon `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retourne `true` si un lot de projets est actuellement chargé en arrière-plan, sinon `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retourne `true` si un lot de projets est actuellement chargé en arrière-plan, sinon `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retourne `true` si un lot de projets est actuellement en cours chargé de façon synchrone en raison d’une commande de l’utilisateur ou autres chargement explicite, sinon `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retourne `true` si un lot de projets est actuellement en cours chargé de façon synchrone en raison d’une commande de l’utilisateur ou autres chargement explicite, sinon `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` retourne `true` si la solution est actuellement en cours fermée, sinon `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` retourne `true` si la solution est actuellement en cours fermée, sinon `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` retourne `true` si une solution est actuellement en cours d’ouverture, sinon `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` retourne `true` si une solution est actuellement en cours d’ouverture, sinon `false`.  
   
- Vous pouvez également vous assurer que les projets et solutions sont chargées en appelant une des méthodes suivantes :  
+  Vous pouvez également vous assurer que les projets et solutions sont chargées en appelant une des méthodes suivantes :  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: cette méthode force les projets dans une solution de chargement avant le retour de la méthode.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: cette méthode force les projets dans une solution de chargement avant le retour de la méthode.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: cette méthode force les projets de `guidProject` chargement avant le retour de la méthode.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: cette méthode force les projets de `guidProject` chargement avant le retour de la méthode.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: cette méthode force le projet dans `guidProjectID` chargement avant le retour de la méthode.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: cette méthode force le projet dans `guidProjectID` chargement avant le retour de la méthode.  

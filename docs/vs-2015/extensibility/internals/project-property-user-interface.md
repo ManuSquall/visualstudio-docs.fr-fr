@@ -17,12 +17,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c9bb58ab1d930c6beb2e1cfa9cc4b9b6ec52fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 898a266e2bb6f46d0b46fe2c97120d606833b546
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941774"
 ---
 # <a name="project-property-user-interface"></a>Interface utilisateur des propriétés du projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Un sous-type de projet permettre utiliser les éléments dans le projet **Pages 
   
  Le processus d’extension un **propriété du projet** boîte de dialogue est décrites ci-dessous :  
   
--   Le projet de base extrait les extendeurs à partir du sous-type de projet en implémentant le <xref:EnvDTE80.IInternalExtenderProvider> interface. Parcourir, automation de projet, les objets de parcourir de configuration de projet du projet de base toutes les implémentent cette interface.  
+- Le projet de base extrait les extendeurs à partir du sous-type de projet en implémentant le <xref:EnvDTE80.IInternalExtenderProvider> interface. Parcourir, automation de projet, les objets de parcourir de configuration de projet du projet de base toutes les implémentent cette interface.  
   
--   L’implémentation de <xref:EnvDTE80.IInternalExtenderProvider> pour l’objet de recherche de projet et de l’objet d’automation de projet déléguée à la <xref:EnvDTE80.IInternalExtenderProvider> implémentation de l’agrégateur de sous-type de projet (autrement dit, ils `QueryInterface` pour <xref:EnvDTE80.IInternalExtenderProvider> sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet de projet).  
+- L’implémentation de <xref:EnvDTE80.IInternalExtenderProvider> pour l’objet de recherche de projet et de l’objet d’automation de projet déléguée à la <xref:EnvDTE80.IInternalExtenderProvider> implémentation de l’agrégateur de sous-type de projet (autrement dit, ils `QueryInterface` pour <xref:EnvDTE80.IInternalExtenderProvider> sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet de projet).  
   
--   L’objet de recherche de configuration de projet de base implémente également <xref:EnvDTE80.IInternalExtenderProvider> afin d’associer directement dans l’extendeur d’Automation à partir de l’objet de configuration de sous-type de projet. Son implémentation délègue à la <xref:EnvDTE80.IInternalExtenderProvider> interface implémentée par l’agrégation de sous-type de projet.  
+- L’objet de recherche de configuration de projet de base implémente également <xref:EnvDTE80.IInternalExtenderProvider> afin d’associer directement dans l’extendeur d’Automation à partir de l’objet de configuration de sous-type de projet. Son implémentation délègue à la <xref:EnvDTE80.IInternalExtenderProvider> interface implémentée par l’agrégation de sous-type de projet.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, implémentée par l’objet de recherche de configuration projet, retourne le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, implémentée par l’objet de recherche de configuration projet, retourne le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, également implémentée par l’objet de recherche de configuration projet, retourne le <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> objet.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, également implémentée par l’objet de recherche de configuration projet, retourne le <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> objet.  
   
--   Un sous-type de projet peut déterminer le CATID approprié pour les divers objets extensibles du projet de base lors de l’exécution en récupérant les éléments suivants <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valeurs :  
+- Un sous-type de projet peut déterminer le CATID approprié pour les divers objets extensibles du projet de base lors de l’exécution en récupérant les éléments suivants <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valeurs :  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
- Pour déterminer le CATID de la portée du projet, le sous-type de projet récupère les propriétés ci-dessus pour <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> à partir de la `VSITEMID``typedef`. Un sous-type de projet peut également contrôler les **Pages de propriétés** pages des boîtes de dialogue sont affichées pour le projet, configuration dépendante et indépendantes de la configuration. Certains sous-types de projet peut-être supprimer les pages intégrées et ajouter des pages spécifiques de sous-type de projet. Pour permettre cela, le projet de client managé appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> méthode pour les propriétés suivantes :  
+  Pour déterminer le CATID de la portée du projet, le sous-type de projet récupère les propriétés ci-dessus pour <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> à partir de la `VSITEMID``typedef`. Un sous-type de projet peut également contrôler les **Pages de propriétés** pages des boîtes de dialogue sont affichées pour le projet, configuration dépendante et indépendantes de la configuration. Certains sous-types de projet peut-être supprimer les pages intégrées et ajouter des pages spécifiques de sous-type de projet. Pour permettre cela, le projet de client managé appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> méthode pour les propriétés suivantes :  
   
--   `VSHPROPID_PropertyPagesCLSIDList` : une liste délimitée par des points-virgules des CLSID des pages de propriétés indépendantes de la configuration.  
+- `VSHPROPID_PropertyPagesCLSIDList` : une liste délimitée par des points-virgules des CLSID des pages de propriétés indépendantes de la configuration.  
   
--   `VSHPROPID_CfgPropertyPagesCLSIDList —` une liste délimitée par des points-virgules des CLSID des pages de propriétés dépendantes de la configuration.  
+- `VSHPROPID_CfgPropertyPagesCLSIDList —` une liste délimitée par des points-virgules des CLSID des pages de propriétés dépendantes de la configuration.  
   
- Étant donné que les agrégats de sous-type de projet la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> de l’objet, il peut remplacer la définition de ces propriétés permettant de contrôler **Pages de propriétés** boîtes de dialogue sont affichées. Le sous-type de projet permettre extraire ces propriétés à partir du projet de base interne et puis ajoutez ou supprimez des CLSID en fonction des besoins.  
+  Étant donné que les agrégats de sous-type de projet la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> de l’objet, il peut remplacer la définition de ces propriétés permettant de contrôler **Pages de propriétés** boîtes de dialogue sont affichées. Le sous-type de projet permettre extraire ces propriétés à partir du projet de base interne et puis ajoutez ou supprimez des CLSID en fonction des besoins.  
   
- Nouvelles pages de propriétés ajoutées par un sous-type de projet sont transmis à un objet de recherche de configuration de projet à partir de l’implémentation de projet de base. Cet objet de recherche de configuration de projet prend en charge des extendeurs Automation. Pour plus d’informations sur AutomationExtenders, consultez [implémentation et à l’aide des extendeurs Automation](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Les pages de propriétés implémentées par l’appel de sous-type de projet <xref:EnvDTE.Project.Extender%2A> pour récupérer leur propre objet de recherche de projet sous-type configuration qui étend l’objet de recherche de configuration du projet de base.  
+  Nouvelles pages de propriétés ajoutées par un sous-type de projet sont transmis à un objet de recherche de configuration de projet à partir de l’implémentation de projet de base. Cet objet de recherche de configuration de projet prend en charge des extendeurs Automation. Pour plus d’informations sur AutomationExtenders, consultez [implémentation et à l’aide des extendeurs Automation](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Les pages de propriétés implémentées par l’appel de sous-type de projet <xref:EnvDTE.Project.Extender%2A> pour récupérer leur propre objet de recherche de projet sous-type configuration qui étend l’objet de recherche de configuration du projet de base.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:EnvDTE.IFilterProperties>   

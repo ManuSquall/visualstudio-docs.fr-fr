@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933441"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architecture des compléments VSTO
   Les compléments VSTO créés à l'aide des Outils de développement Office dans Visual Studio ont des fonctionnalités en termes d'architecture qui mettent l'accent sur la stabilité et la sécurité, et qui leur permettent de fonctionner étroitement avec Microsoft Office. Cette rubrique décrit les aspects suivants des compléments VSTO :  
   
--   [Comprendre les Compléments VSTO](#UnderstandingAddIns)  
+- [Comprendre les Compléments VSTO](#UnderstandingAddIns)  
   
--   [Composants des compléments VSTO](#AddinComponents)  
+- [Composants des compléments VSTO](#AddinComponents)  
   
--   [Fonctionnement des compléments VSTO avec les applications Microsoft Office](#HowAddinsWork)  
+- [Fonctionnement des compléments VSTO avec les applications Microsoft Office](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Pour obtenir des informations générales sur la création de compléments VSTO, consultez [présentation du développement de solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+  Pour obtenir des informations générales sur la création de compléments VSTO, consultez [présentation du développement de solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Comprendre les Compléments VSTO  
  Lorsque vous utilisez les outils de développement Office dans Visual Studio pour créer un complément, VSTO, vous créez un assembly de code managé chargé par une application Microsoft Office. Une fois l’assembly chargé, le complément VSTO peut répondre aux événements déclenchés dans l’application (par exemple, quand un utilisateur clique sur un élément de menu). Le complément VSTO peut également exécuter un appel dans le modèle objet pour automatiser et étendre l’application. En outre, il peut utiliser toutes les classes du [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  

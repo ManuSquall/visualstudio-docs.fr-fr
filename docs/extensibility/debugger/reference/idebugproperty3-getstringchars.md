@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Documents Microsoft
+title: IDebugProperty3::GetStringChars | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932928"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Récupère la chaîne associée à cette propriété et la stocke dans une mémoire tampon fournie par l’utilisateur.  
+Récupère la chaîne associée à cette propriété et le stocke dans une mémoire tampon fournie par l’utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ int GetStringChars(
  `rgString`  
  [out] Retourne la chaîne.  
   
- (C++ uniquement), `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (pas des octets) de taille.  
+ (C++ uniquement), `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.  
   
  `pceltFetched`  
  [out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)  
@@ -59,10 +59,10 @@ int GetStringChars(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- En C++, veillez à vous assurer que la mémoire tampon est au moins `buflen` caractères Unicode. Notez qu’un caractère Unicode est de 2 octets de long.  
+ En C++, doit veiller à s’assurer que la mémoire tampon est au moins `buflen` caractères Unicode. Notez qu’un caractère Unicode est de 2 octets de long.  
   
 > [!NOTE]
->  En C++, la chaîne retournée n’inclut pas un caractère null de fin. Si, `pceltFetched` indique le nombre de caractères dans la chaîne.  
+>  En C++, la chaîne retournée n’inclut pas un caractère null de fin. Si spécifié, `pceltFetched` indique le nombre de caractères dans la chaîne.  
   
 ## <a name="example"></a>Exemple  
  

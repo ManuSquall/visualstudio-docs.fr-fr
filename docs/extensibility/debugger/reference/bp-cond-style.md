@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Documents Microsoft
+title: BP_COND_STYLE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939772"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-Spécifie le style de condition de point d’arrêt pour en attente et les points d’arrêt liés.  
+Spécifie le style de condition de point d’arrêt pour en attente et de points d’arrêt liés.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,18 +46,18 @@ public enum enum_BP_COND_STYLE {
   
 ## <a name="members"></a>Membres  
  BP_COND_NONE  
- Se déclenche le point d’arrêt lorsque position du point d’arrêt est atteinte. Aucune condition de point d’arrêt spécifiée.  
+ Se déclenche le point d’arrêt lors de la position du point d’arrêt est atteint. Aucune condition de point d’arrêt spécifiée.  
   
  BP_COND_WHEN_TRUE  
- Se déclenche le point d’arrêt uniquement lorsque l’expression conditionnelle associé avec le point d’arrêt a la valeur `true`.  
+ Se déclenche le point d’arrêt uniquement lorsque l’expression conditionnelle associé au point d’arrêt a la valeur `true`.  
   
  BP_COND_WHEN_CHANGED  
- Se déclenche le point d’arrêt uniquement lorsque le point d’arrêt associé à la valeur de l’expression conditionnelle a changé depuis son évaluation précédente.  
+ Se déclenche le point d’arrêt uniquement lorsque le point d’arrêt associé à la valeur de l’expression conditionnelle a changé dans son évaluation précédente.  
   
 ## <a name="remarks"></a>Notes  
  Utilisé pour le `styleCondition` membre de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

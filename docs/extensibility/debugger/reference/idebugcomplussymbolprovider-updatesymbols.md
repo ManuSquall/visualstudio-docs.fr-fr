@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::UpdateSymbols | Documents Microsoft
+title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7919db95eba749888d8004522f1f820dfdfbc9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56a93435ac4b7cfa6741a106a025b20f11d1b6e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928540"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-Met à jour les symboles de débogage dans la mémoire avec ceux de flux de données spécifié.  
+Met à jour les symboles de débogage dans la mémoire avec celles à partir du flux de données spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +53,7 @@ int UpdateSymbols (
  [in] Flux de données qui contient les symboles de débogage mis à jour.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::UpdateSymbols(  

@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString | Documents Microsoft
+title: IDebugEnumField::GetValueFromString | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e7985491833be8243a30bd3134db2d1af1d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86cf8b1421769ac9a4b302e0da3676d826b9bea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942229"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Cette méthode retourne la valeur associée au nom d’une constante d’énumération.  
@@ -49,10 +49,10 @@ int GetValueFromString(
  [out] Retourne la valeur numérique associée.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE`, si le nom n’est pas partie de l’énumération ou un code d’erreur.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE`, si le nom ne fait pas partie de l’énumération ou un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est sensible à la casse. Si une recherche sans respecter la casse est nécessaire (par exemple, dans un langage tel que Visual Basic, où les noms ne sont pas respecter la casse), utilisez [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
+ Cette méthode respecte la casse. Si une recherche respectant la casse est nécessaire (par exemple, dans un langage tel que Visual Basic, où les noms ne sont pas sensible à la casse), utilisez [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   

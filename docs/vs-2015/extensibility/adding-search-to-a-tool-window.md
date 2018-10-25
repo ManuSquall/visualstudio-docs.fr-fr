@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939265"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Ajout de la recherche dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extension, vous pouvez ajouter les mêmes fonctionnalités de recherche apparaît ailleurs dans Visual Studio. Cette fonctionnalité inclut les fonctionnalités suivantes :  
   
--   Une zone de recherche qui se trouve toujours dans une zone personnalisée de la barre d’outils.  
+- Une zone de recherche qui se trouve toujours dans une zone personnalisée de la barre d’outils.  
   
--   Un indicateur de progression se superpose à la zone de recherche lui-même.  
+- Un indicateur de progression se superpose à la zone de recherche lui-même.  
   
--   La possibilité d’afficher les résultats dès que vous entrez chaque caractère (recherche instantanée) ou uniquement une fois que vous appuyez sur entrée (recherche à la demande).  
+- La possibilité d’afficher les résultats dès que vous entrez chaque caractère (recherche instantanée) ou uniquement une fois que vous appuyez sur entrée (recherche à la demande).  
   
--   Une liste qui affiche les termes du contrat pour lequel vous avez recherchées le plus récemment.  
+- Une liste qui affiche les termes du contrat pour lequel vous avez recherchées le plus récemment.  
   
--   La possibilité de filtrer les recherches par des champs ou des aspects des cibles de recherche.  
+- La possibilité de filtrer les recherches par des champs ou des aspects des cibles de recherche.  
   
- En suivant cette procédure pas à pas, vous allez apprendre à effectuer les tâches suivantes :  
+  En suivant cette procédure pas à pas, vous allez apprendre à effectuer les tâches suivantes :  
   
 1.  Créez un projet VSPackage.  
   

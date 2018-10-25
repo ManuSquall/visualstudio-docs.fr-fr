@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d610d5403bfe0341008213c5e4c663196b90229
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937419"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si votre projet contient une personnalisation de ruban qui a été créée à l’aide de la **ruban (Concepteur visuel)** l’élément de projet, vous devez vous les modifications suivantes à votre code de projet si le framework cible est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou plus tard.  
@@ -119,18 +119,18 @@ ms.locfileid: "39252505"
   
  Il existe deux façons d'accéder à l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> :  
   
--   À l’aide de la propriété Factory de la classe du ruban. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
+- À l’aide de la propriété Factory de la classe du ruban. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
   
--   À l'aide de la méthode `Globals.Factory.GetRibbonFactory`. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+- À l'aide de la méthode `Globals.Factory.GetRibbonFactory`. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- L'exemple de code suivant montre comment créer <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> dans une classe Ribbon, au sein d'un projet qui cible [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
+  L'exemple de code suivant montre comment créer <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> dans une classe Ribbon, au sein d'un projet qui cible [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  Le tableau suivant répertorie les contrôles que vous pouvez créer par programmation, ainsi que la méthode à utiliser pour créer les contrôles dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
   
 |Contrôle|Méthode RibbonFactory à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|  
-|-------------|---------------------------------------------------------------------------------------------------------------|  
+|-------------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonCheckBox%2A>|  
@@ -155,7 +155,7 @@ ms.locfileid: "39252505"
  Le tableau suivant répertorie les événements de ruban et les délégués qui leur sont associés dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.  
   
 |Événement|Délégué à utiliser dans les projets [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] et version ultérieure|  
-|-----------|---------------------------------------------------------------------------------------------------|  
+|-----------| - |  
 |Événement <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> dans une classe Ribbon générée|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
@@ -165,11 +165,11 @@ ms.locfileid: "39252505"
   
  Il existe deux façons d'accéder à l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> :  
   
--   À l'aide de la propriété `Factory` de la classe Ribbon. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
+- À l'aide de la propriété `Factory` de la classe Ribbon. Utilisez cette approche basée sur le code dans votre classe Ribbon.  
   
--   À l'aide de la méthode `Globals.Factory.GetRibbonFactory`. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+- À l'aide de la méthode `Globals.Factory.GetRibbonFactory`. Utilisez cette approche basée sur le code hors de votre classe Ribbon. Pour plus d’informations sur la classe Globals, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- L'exemple de code suivant montre comment définir la propriété `Position` d'un onglet dans une classe Ribbon, au sein d'un projet qui cible .NET Framework 3.5.  
+  L'exemple de code suivant montre comment définir la propriété `Position` d'un onglet dans une classe Ribbon, au sein d'un projet qui cible .NET Framework 3.5.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  
@@ -179,7 +179,7 @@ Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = RibbonPosition.AfterOfficeId("TabHome");  
 ```  
   
- L'exemple de code suivant montre la même tâche dans un projet qui cible [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].  
+ L’exemple de code suivant montre la même tâche dans un projet qui cible [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].  
   
 ```vb  
 Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")  

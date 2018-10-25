@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950392"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
 ## <a name="remarks"></a>Notes  
  Les dimensions des textures sont réduites à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus spécifiquement, les dimensions des textures sont réduites quand l'objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une texture utilisée dans le rendu, à savoir :  
   
--   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
+- Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
   
--   L'indicateur D3D11_RESOURCE_MISC_TILE_POOL ou D3D11_RESOURCE_MISC_TILED n'est pas défini pour le membre MiscFlags (les ressources en mosaïque ne sont pas redimensionnées).  
+- L'indicateur D3D11_RESOURCE_MISC_TILE_POOL ou D3D11_RESOURCE_MISC_TILED n'est pas défini pour le membre MiscFlags (les ressources en mosaïque ne sont pas redimensionnées).  
   
--   Le format de texture est pris en charge en tant que cible de rendu (déterminé par D3D11_FORMAT_SUPPORT_RENDER_TARGET), ce qui est nécessaire pour réduire la taille des textures. Les formats BC1, BC2 et BC3 sont aussi pris en charge, même s'ils ne sont pas pris en charge en tant que cibles de rendu.  
+- Le format de texture est pris en charge en tant que cible de rendu (déterminé par D3D11_FORMAT_SUPPORT_RENDER_TARGET), ce qui est nécessaire pour réduire la taille des textures. Les formats BC1, BC2 et BC3 sont aussi pris en charge, même s'ils ne sont pas pris en charge en tant que cibles de rendu.  
   
- Si les données initiales sont fournies par l'application, cette variante met les données de texture à l'échelle appropriée avant de créer la texture. Si les données initiales sont fournies dans un format de compression de blocs tel que BC1, BC2 ou BC3, elles sont décodées, mises à l'échelle, puis réencodées avant d'être utilisées pour créer la texture plus petite. (Du fait de la nature de la compression de blocs, le processus de décodage/mise à l'échelle/encodage entraîne presque toujours une perte de qualité d'image par rapport à une texture à blocs compressés générée à partir d'une version mise à l'échelle de la texture qui n'avait pas été auparavant encodée.)  
+  Si les données initiales sont fournies par l'application, cette variante met les données de texture à l'échelle appropriée avant de créer la texture. Si les données initiales sont fournies dans un format de compression de blocs tel que BC1, BC2 ou BC3, elles sont décodées, mises à l'échelle, puis réencodées avant d'être utilisées pour créer la texture plus petite. (Du fait de la nature de la compression de blocs, le processus de décodage/mise à l'échelle/encodage entraîne presque toujours une perte de qualité d'image par rapport à une texture à blocs compressés générée à partir d'une version mise à l'échelle de la texture qui n'avait pas été auparavant encodée.)  
   
- Si les mipmaps sont activés pour la texture, la variante réduit le nombre de niveaux MIP en conséquence (un de moins pour une taille réduite de moitié ou deux de moins pour une taille réduite au quart).  
+  Si les mipmaps sont activés pour la texture, la variante réduit le nombre de niveaux MIP en conséquence (un de moins pour une taille réduite de moitié ou deux de moins pour une taille réduite au quart).  
   
 ## <a name="example"></a>Exemple  
  Cette variante redimensionne les textures au moment de l'exécution avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures de taille réelle consomment plus d'espace disque et cette étape supplémentaire peut allonger sensiblement les temps de chargement dans votre application (surtout dans le cas des textures compressées, qui nécessitent des ressources de calcul importantes pour l'encodage). Nous vous recommandons plutôt de redimensionner vos textures hors connexion en utilisant un éditeur ou un processeur d'images intégré à votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges au moment de l’exécution de votre application et autorisent un temps de traitement supérieur, ce qui vous permet de conserver une qualité d’image optimale lors de la réduction ou de la compression de vos textures.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Documents Microsoft
+title: IDebugProcess2::GetAttachedSessionName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e404fe33858c1db7d9dfb103df7b4e0bb9fb91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89f1ea6e91176486c55ca2d84188e8183278cc1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928982"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-Obtient le nom de la session qui est déboguer ce processus. Un IDE peut afficher ces informations à un utilisateur de débogage d’un processus particulier sur un ordinateur particulier.  
+Obtient le nom de la session qui est le débogage de ce processus. Un IDE peut afficher ces informations à un utilisateur qui est un processus particulier sur un ordinateur particulier de débogage.  
   
 > [!NOTE]
 >  Cette méthode est déconseillée, et son implémentation doit toujours retourner `E_NOTIMPL`.  
@@ -40,7 +40,7 @@ HRESULT GetAttachedSessionName(
  `pbstrSessionName`  
   
 ## <a name="return-value"></a>Valeur de retour  
- Cette méthode doit toujours renvoyer `E_NOTIMPL`.  
+ Cette méthode doit toujours retourner `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

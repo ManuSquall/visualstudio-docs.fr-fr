@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928657"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Générer des fichiers avec l’utilitaire TextTransform
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>Paramètres
 
 |**Argument**|**Description**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|Identifie le nom du fichier de modèle que vous souhaitez transformer.|
 
 |**Option**|**Description**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<filename >|Le fichier dans lequel la sortie de la transformation est écrite.|
 |**-r** \<assembly>|Un assembly utilisé pour la compilation et exécution du modèle de texte.|
 |**-u** \<espace de noms >|Un espace de noms qui est utilisé pour la compilation du modèle.|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>Rubriques connexes
 
 |Tâche|Rubrique|
-|----------|-----------|
+|-|-|
 |Générer des fichiers dans une solution Visual Studio.|[Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d’une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|
 |Écrire un hôte de création de modèles de texte qui vous permet d’appeler des modèles de texte à partir de votre propre application.|[Traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md)|

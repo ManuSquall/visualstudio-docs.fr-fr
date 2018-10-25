@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48ad201a780c31fed5f324ff96a91bd21989522
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948744"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
@@ -50,11 +51,11 @@ ms.locfileid: "49213343"
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Cette règle émet des hypothèses qui peuvent entraîner des faux positifs. Vous pouvez supprimer sans risque un avertissement de cette règle si :
 
--   Le finaliseur ne libère pas le contenu de la <xref:System.IntPtr> ou <xref:System.UIntPtr> champ référencé par la méthode.
+- Le finaliseur ne libère pas le contenu de la <xref:System.IntPtr> ou <xref:System.UIntPtr> champ référencé par la méthode.
 
--   La méthode ne passe pas le <xref:System.IntPtr> ou <xref:System.UIntPtr> champ au code non managé.
+- La méthode ne passe pas le <xref:System.IntPtr> ou <xref:System.UIntPtr> champ au code non managé.
 
- Lisez attentivement les autres messages avant de les exclure. Cette règle détecte les erreurs qui sont difficiles à reproduire et à déboguer.
+  Lisez attentivement les autres messages avant de les exclure. Cette règle détecte les erreurs qui sont difficiles à reproduire et à déboguer.
 
 ## <a name="example"></a>Exemple
  Dans l’exemple suivant, `BadMethod` n’inclut pas d’un appel à `GC.KeepAlive` et par conséquent ne respecte pas la règle. `GoodMethod` contient le code corrigé.

@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938602"
 ---
 # <a name="graphics-pipeline-stages"></a>Étapes de canalisation Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
 ### <a name="links-to-related-graphics-objects"></a>Liens vers les objets graphiques connexes  
  Parfois, un contexte supplémentaire est nécessaire pour déterminer la raison pour laquelle un appel de dessin interagit de façon spécifique avec la canalisation Graphics. Pour faciliter la recherche de ce contexte supplémentaire, la fenêtre Étapes de canalisation Graphics comporte des liens vers un ou plusieurs objets qui fournissent un contexte supplémentaire relatif à ce qui se passe dans la canalisation Graphics.  
   
--   Dans Direct3D 12, cet objet est généralement une liste de commandes.  
+- Dans Direct3D 12, cet objet est généralement une liste de commandes.  
   
--   Dans Direct3D 11, cet objet est généralement un contexte de périphérique graphique.  
+- Dans Direct3D 11, cet objet est généralement un contexte de périphérique graphique.  
   
- Ces liens font partie de la signature d'événement Graphics actuelle dans le coin supérieur gauche de la fenêtre Étapes de canalisation Graphics. Suivez ces liens pour obtenir des détails supplémentaires sur l'objet.  
+  Ces liens font partie de la signature d'événement Graphics actuelle dans le coin supérieur gauche de la fenêtre Étapes de canalisation Graphics. Suivez ces liens pour obtenir des détails supplémentaires sur l'objet.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Affichage et débogage du code du nuanceur  
  Vous pouvez examiner et déboguer le code des nuanceurs de sommets, de coques, de domaines, de géométries et de pixels à l'aide des contrôles situés au bas de leurs étapes respectives dans la fenêtre Étapes de canalisation.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::GetService | Documents Microsoft
+title: IDebugExpressionEvaluator2::GetService | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfde812730a5f9d2fbad3144cf4298472ec2f8c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa07c11f6d7bc0cbbac2f55158012d7ce78a0e1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936689"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-Récupère un objet de service donné son identificateur unique.  
+Récupère un objet de service selon son identificateur unique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,7 +51,7 @@ int GetService (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cela peut être consommé par un évaluateur d’expression de tiers pour obtenir des services à partir d’un autre évaluateur d’expression. Par exemple, cette méthode peut être utilisée pour obtenir l’interface pour le service de visualiseur de l’évaluateur d’expression de valeur par défaut. Évaluateurs d’expression de tiers sont peu susceptibles d’avoir besoin d’implémenter cette interface.  
+ Cela peut être consommée par un évaluateur d’expression de tiers pour obtenir des services à partir d’un autre évaluateur d’expression. Par exemple, cette méthode peut être utilisée pour obtenir l’interface pour le service de visualiseur de l’évaluateur d’expression de valeur par défaut. Évaluateurs d’expression de fournisseurs tiers sont probablement pas besoin d’implémenter cette interface.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

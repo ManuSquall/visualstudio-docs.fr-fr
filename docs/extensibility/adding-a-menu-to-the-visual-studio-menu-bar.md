@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938218"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Ajouter un menu dans la barre de menus de Visual Studio
 Cette procédure pas à pas montre comment ajouter un menu dans la barre de menus de l’environnement de développement intégré (IDE) Visual Studio. La barre de menus IDE contient des catégories de menu comme **fichier**, **modifier**, **vue**, **fenêtre**, et **aide** .  
@@ -41,48 +41,48 @@ Cette procédure pas à pas montre comment ajouter un menu dans la barre de menu
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Créer un menu dans la barre de menus IDE  
   
-1.  Dans **l’Explorateur de solutions**, ouvrez *TestCommandPackage.vsct*.  
+1. Dans **l’Explorateur de solutions**, ouvrez *TestCommandPackage.vsct*.  
   
-     À la fin du fichier, il existe un \<symboles > nœud qui contient plusieurs \<GuidSymbol > nœuds. Dans le nœud nommé guidTestCommandPackageCmdSet, ajoutez un nouveau symbole, comme suit :  
+    À la fin du fichier, il existe un \<symboles > nœud qui contient plusieurs \<GuidSymbol > nœuds. Dans le nœud nommé guidTestCommandPackageCmdSet, ajoutez un nouveau symbole, comme suit :  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  Créer un vide \<Menus > nœud dans le \<commandes > nœud, juste avant \<groupes >. Dans le \<Menus > nœud, ajoutez un \<Menu > nœud, comme suit :  
+2. Créer un vide \<Menus > nœud dans le \<commandes > nœud, juste avant \<groupes >. Dans le \<Menus > nœud, ajoutez un \<Menu > nœud, comme suit :  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     Le `guid` et `id` valeurs du menu spécifient le jeu de commandes et dans le menu spécifique dans le jeu de commandes.  
+    Le `guid` et `id` valeurs du menu spécifient le jeu de commandes et dans le menu spécifique dans le jeu de commandes.  
   
-     Le `guid` et `id` valeurs du parent positionnement le menu sur la section de la barre de menus de Visual Studio qui contient les menus d’outils et compléments.  
+    Le `guid` et `id` valeurs du parent positionnement le menu sur la section de la barre de menus de Visual Studio qui contient les menus d’outils et compléments.  
   
-     La valeur de la `CommandName` chaîne indique que le texte doit apparaître dans l’élément de menu.  
+    La valeur de la `CommandName` chaîne indique que le texte doit apparaître dans l’élément de menu.  
   
-3.  Dans le \<groupes > section, recherchez le \<groupe > et modifier le \<Parent > élément pour pointer vers le menu que nous venons d’ajouter :  
+3. Dans le \<groupes > section, recherchez le \<groupe > et modifier le \<Parent > élément pour pointer vers le menu que nous venons d’ajouter :  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     Cela rend la partie du groupe du nouveau menu.  
+    Cela rend la partie du groupe du nouveau menu.  
   
-4.  Rechercher la `Buttons` section. Notez que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de Package a généré un `Button` élément qui a son parent la valeur `MyMenuGroup`. Par conséquent, cette commande s’affiche dans votre menu.  
+4. Rechercher la `Buttons` section. Notez que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de Package a généré un `Button` élément qui a son parent la valeur `MyMenuGroup`. Par conséquent, cette commande s’affiche dans votre menu.  
   
 ## <a name="build-and-test-the-extension"></a>Générer et tester l’extension  
   

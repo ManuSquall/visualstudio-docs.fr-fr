@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Documents Microsoft
+title: IDebugProcess3::GetENCAvailableState | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a34d9a6f403345bb84f172c416dda62f0109ec2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f70f685fe8792f698dcc397b2f3fc9ccb6de8dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927721"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Cette méthode obtient l’état actuel de modifier & Continuer du processus. Un fournisseur de port personnalisé doit toujours renvoyer `E_NOTIMPL`.  
+Cette méthode obtient l’état actuel de modifier & Continuer du processus. Un fournisseur de port personnalisé doit toujours retourner `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,13 +41,13 @@ int GetENCAvailableState(
   
 #### <a name="parameters"></a>Paramètres  
  `pReason`  
- [out] Une valeur à partir de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) énumération.  
+ [out] Une valeur comprise entre le [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) énumération.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
 > [!NOTE]
->  Un fournisseur de port personnalisé doit toujours renvoyer `E_NOTIMPL`.  
+>  Un fournisseur de port personnalisé doit toujours retourner `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Notes  
  Cet état peut être affecté par [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).  

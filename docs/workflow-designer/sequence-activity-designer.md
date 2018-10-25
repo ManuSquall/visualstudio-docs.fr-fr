@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58aea13f99f225c01806186903b62a58362715b3
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 288e184f2ae2b4df74860a2cd8066d00e02a44c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950587"
 ---
 # <a name="sequence-activity-designer"></a>Concepteur d'activités Sequence
 
-L'activité <xref:System.Activities.Statements.Sequence> contient une collection ordonnée d'activités enfants qu'elle exécute dans l'ordre.
+L’activité <xref:System.Activities.Statements.Sequence> contient une collection ordonnée d’activités enfants qu’elle exécute dans l’ordre.
 
 Une autre façon d'exécuter un ensemble d'activités dans l'ordre consiste à utiliser une activité <xref:System.Activities.Statements.Flowchart>. Envisagez d’utiliser le [organigramme](../workflow-designer/flowchart-activity-designer.md) lorsque vous avez un branchement ou en boucle les flux de programme que vous souhaitez modéliser schématiquement.
 
@@ -34,7 +34,7 @@ Pour ajouter un <xref:System.Activities.Statements.Sequence> activité, faites g
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Sequence> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.Sequence> dans l'en-tête. Sequence est la valeur par défaut. La valeur peut être modifiée dans la grille Propriétés ou directement dans l'en-tête du concepteur d'activités.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 
 ## <a name="see-also"></a>Voir aussi

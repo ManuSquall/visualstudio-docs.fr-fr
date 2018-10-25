@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange | Documents Microsoft
+title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be53b50bc21d81c60f7131e8ed437ecb2ac2f16c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1b46dd9993eb8a7611b4d84211016168d609101
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950379"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtient une représentation sous forme de dépendantes de l’ordinateur de la plage d’adresses physiques associés à un frame de pile.  
@@ -43,7 +43,7 @@ int GetPhysicalStackRange (
   
 #### <a name="parameters"></a>Paramètres  
  `paddrMin`  
- [out] Retourne l’adresse physique le plus bas associé à ce frame de pile.  
+ [out] Retourne l’adresse physique la plus faible associée à ce frame de pile.  
   
  `paddrMax`  
  [out] Retourne l’adresse physique le plus élevé associé à ce frame de pile.  
@@ -54,7 +54,7 @@ int GetPhysicalStackRange (
 ## <a name="remarks"></a>Notes  
  Les informations retournées par cette méthode sont utilisées par le Gestionnaire de session de débogage (SDM) pour trier les frames de pile.  
   
- Il est supposé que la pile des appels se développe vers le bas, autrement dit, que des frames de pile sont ajoutés à des adresses mémoire plus en plus bas. Une architecture d’exécution doit fournir des plages de pile correspondant à cette hypothèse.  
+ Il est supposé que la pile des appels se développe vers le bas, autrement dit, que des frames de pile sont ajoutés à des adresses de mémoire inférieures de plus en plus. Une architecture d’exécution doit fournir les plages de pile physique qui correspondent à cette hypothèse.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

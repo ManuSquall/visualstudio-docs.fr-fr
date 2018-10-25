@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_platform | Documents Microsoft
+title: IDiaSymbol::get_platform | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db35057ba5926c8732e61940f043119e08c7f51d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 328fcbd071fcacc8ef8d749c9ffcef1cc13e6520
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936522"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 Récupère le type de plateforme pour laquelle le module a été compilée.  
@@ -34,7 +34,7 @@ HRESULT get_platform (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [cv_cpu_type_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md) type d’énumération qui spécifie la plateforme pour laquelle le module a été compilé.  
+ [out] Retourne une valeur de la [CV_CPU_TYPE_e (énumération)](../../debugger/debug-interface-access/cv-cpu-type-e.md) type d’énumération qui spécifie la plateforme pour laquelle du module a été compilé.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -44,4 +44,4 @@ HRESULT get_platform (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV_CPU_TYPE_e (énumération)](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+ [CV_CPU_TYPE_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950564"
 ---
 # <a name="transactionscope-activity-designer"></a>Concepteur d’activités TransactionScope
 
@@ -36,7 +36,7 @@ Accès le **TransactionScope** Concepteur d’activités dans le **Transaction**
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.TransactionScope> et décrit comment elles sont utilisées dans le concepteur. Le <xref:System.Activities.Activity.DisplayName%2A> et <xref:System.Activities.Statements.TransactionScope.Body%2A> propriétés peuvent être modifiées sur l’aire du Concepteur de flux de travail. En revanche, les autres propriétés doivent être modifiées dans la grille des propriétés.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.TransactionScope>. La valeur par défaut est TransactionScope. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Spécifie l’activité à exécuter dans une transaction unique. Pour ajouter le <xref:System.Activities.Statements.TransactionScope.Body%2A> activité, déposez une activité de la **boîte à outils** dans le **corps** zone sur le **TransactionScope** Concepteur d’activités avec le texte d’indication « déposer l’activité « ici ».|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|Spécifie la valeur <xref:System.Transactions.IsolationLevel> de cet objet <xref:System.Activities.Statements.TransactionScope>.|
@@ -48,5 +48,5 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 - [Transaction](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [Compenser](../workflow-designer/compensate-activity-designer.md)
-- [Confirmer](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)

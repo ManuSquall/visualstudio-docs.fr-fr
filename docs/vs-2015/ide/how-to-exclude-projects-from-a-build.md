@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6419d2aa216f625aaf82087f0dc8f453e0d0d475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941839"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d'une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
   
  Vous pouvez exclure un projet en adoptant les approches suivantes :  
   
--   Suppression temporaire du projet de la configuration de solution active.  
+- Suppression temporaire du projet de la configuration de solution active.  
   
--   Création d'une configuration de solution qui n'inclut pas le projet.  
+- Création d'une configuration de solution qui n'inclut pas le projet.  
   
- Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).  
+  Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Pour supprimer temporairement un projet de la configuration de solution active  
   

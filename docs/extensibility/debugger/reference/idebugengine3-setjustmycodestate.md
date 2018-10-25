@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState | Documents Microsoft
+title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fda672cc9d6861520b9da3a894b94d51f4100683
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ffad3e6be4d81e19bd6f707bd30c744904217ba5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928969"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Cette méthode indique au moteur de débogage sur les informations d’état JustMyCode.  
@@ -45,7 +45,7 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Paramètres  
  `fUpdate`  
- [in] Différent de zéro (`TRUE`) pour mettre à jour les informations actuelles, zéro (`FALSE`) pour réinitialiser toutes les informations (en ignorant tout élément défini précédemment).  
+ [in] Différent de zéro (`TRUE`) pour mettre à jour les informations actuelles, zéro (`FALSE`) pour réinitialiser toutes les informations (en ignorant quoi que ce soit défini précédemment).  
   
  `dwModules`  
  [in] Nombre de structures d’informations dans `rgJMCSpec.`  
@@ -57,7 +57,7 @@ int SetJustMyCodeState(
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- JustMyCode est le concept de débogage uniquement le code qui appartient à un utilisateur et en ignorant tout code intermédiaire tel que le code du système, même si le code source est disponible pour ce code système.  
+ JustMyCode est le concept de débogage uniquement du code qui appartient à un utilisateur et en ignorant tout le code intermédiaire tel que le code du système, même si le code source est disponible pour le code de ce système.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928761"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Id de règle | DA0018 |
   
  Si une charge excessive de mémoire managée constitue un problème, envisagez l’une des options suivantes :  
   
--   Optimisez la manière dont l’application utilise les ressources de mémoire managée.  
+- Optimisez la manière dont l’application utilise les ressources de mémoire managée.  
   
-     - ou -  
+   - ou -  
   
--   Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.  
+- Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.  
   
- Pour optimiser la manière dont l’application utilise les ressources de mémoire managée, collectez des données d’allocation de mémoire managée lors d’une exécution de profilage par allocation de mémoire .NET. Consultez les rapports [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md) pour comprendre le modèle d’allocation de mémoire de l’application.  
+  Pour optimiser la manière dont l’application utilise les ressources de mémoire managée, collectez des données d’allocation de mémoire managée lors d’une exécution de profilage par allocation de mémoire .NET. Consultez les rapports [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md) pour comprendre le modèle d’allocation de mémoire de l’application.  
   
- Consultez la [vue Durée de vie des objets](../profiling/object-lifetime-view.md) pour déterminer quels objets de données du programme passent d’une génération à une autre, puis sont récupérés.  
+  Consultez la [vue Durée de vie des objets](../profiling/object-lifetime-view.md) pour déterminer quels objets de données du programme passent d’une génération à une autre, puis sont récupérés.  
   
- Consultez la [vue Allocations](../profiling/dotnet-memory-allocations-view.md) pour connaître le chemin d’exécution qui a entraîné ces allocations.  
+  Consultez la [vue Allocations](../profiling/dotnet-memory-allocations-view.md) pour connaître le chemin d’exécution qui a entraîné ces allocations.  
   
- Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez l’article technique .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) sur le site MSDN.  
+  Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez l’article technique .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) sur le site MSDN.  
   
- Pour alléger les contraintes architecturales de mémoire virtuelle associées à la taille de la partie privée d’un espace d’adressage de processus, exécutez ce processus 32 bits sur un ordinateur 64 bits.  Un processus 32 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 4 Go de mémoire virtuelle privée.  
+  Pour alléger les contraintes architecturales de mémoire virtuelle associées à la taille de la partie privée d’un espace d’adressage de processus, exécutez ce processus 32 bits sur un ordinateur 64 bits.  Un processus 32 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 4 Go de mémoire virtuelle privée.  
   
- Un processus 64 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 8 To de mémoire virtuelle. Recompilez l’application pour qu’elle s’exécute comme une application 64 bits native. Cette règle possède un caractère informatif et ne nécessite pas forcément d’action corrective.
+  Un processus 64 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 8 To de mémoire virtuelle. Recompilez l’application pour qu’elle s’exécute comme une application 64 bits native. Cette règle possède un caractère informatif et ne nécessite pas forcément d’action corrective.
 
 
 
