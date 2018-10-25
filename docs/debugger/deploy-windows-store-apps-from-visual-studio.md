@@ -1,5 +1,5 @@
 ---
-title: Déployer des applications de plateforme Windows universelle à partir de Visual Studio | Documents Microsoft
+title: Déployer des applications UWP à partir de Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fda8e9b09fadfb57145331b1fc09acc1687e58e7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81d29324f0888655e729f347d1ae22e12d777be4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818417"
 ---
-# <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications de plateforme Windows universelle à partir de Visual Studio
+# <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
   
- La fonctionnalité de déploiement de Visual Studio génère et enregistre les applications UWP qui sont créées avec Visual Studio sur un appareil cible. La façon dont l'application est exactement enregistrée varie selon que le périphérique cible est local ou distant :  
+ La fonctionnalité de déploiement de Visual Studio génère et inscrit les applications UWP qui sont créées avec Visual Studio sur un appareil cible. La façon dont l'application est exactement enregistrée varie selon que le périphérique cible est local ou distant :  
   
--   Lorsque la cible est l'ordinateur Visual Studio local, Visual Studio enregistre l'application depuis son dossier de génération.  
+- Lorsque la cible est l'ordinateur Visual Studio local, Visual Studio enregistre l'application depuis son dossier de génération.  
   
--   Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.  
+- Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.  
   
- Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :  
+  Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :  
   
--   Test ad hoc sur un ordinateur local ou distant.  
+- Test ad hoc sur un ordinateur local ou distant.  
   
--   Déploiement d'une application qui démarre une autre application que vous voulez déboguer.  
+- Déploiement d'une application qui démarre une autre application que vous voulez déboguer.  
   
--   Déploiement d'une application qui est déboguée quand elle est démarrée par une autre application ou méthode.
+- Déploiement d'une application qui est déboguée quand elle est démarrée par une autre application ou méthode.
   
 ##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Comment déployer une application UWP  
  Le déploiement manuel d'une application obéit à une procédure simple :  
@@ -52,7 +52,7 @@ ms.locfileid: "31477279"
 
 **Composants requis**  
   
-Sur un appareil distant Windows 10, vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 mise à jour du créateur ou une version ultérieure, les outils à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [déboguer un package d’application installés](../debugger/debug-installed-app-package.md).
+Sur un appareil distant Windows 10, vous devez activer [mode développeur](/windows/uwp/get-started/enable-your-device-for-development). Sur les appareils Windows 10 exécutant Update Creators ou une version ultérieure, les outils à distance sont installés automatiquement lorsque vous déployez votre application. Pour plus d’informations, consultez [déboguer un package d’application installé](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
 > Sur les versions de mise à jour du pre-créateur de Windows 10, les outils à distance pour Visual Studio doit être installés sur le périphérique distant, et le débogueur distant doit être en cours d’exécution.
@@ -61,56 +61,56 @@ Le déploiement utilise le canal réseau du débogueur distant pour envoyer les 
   
 #### <a name="to-specify-a-remote-device"></a>Pour spécifier un périphérique distant  
   
-1.  Dans la page de propriétés de débogage du projet de démarrage, spécifiez le nom ou l'adresse IP d'une cible de déploiement distante.  
+1. Dans la page de propriétés de débogage du projet de démarrage, spécifiez le nom ou l'adresse IP d'une cible de déploiement distante.  
   
-2.  Pour ouvrir la page de propriétés de débogage, sélectionnez le projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
+2. Pour ouvrir la page de propriétés de débogage, sélectionnez le projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
   
-3.  Sélectionnez ensuite le nœud **Déboguer** dans la fenêtre de la page de propriétés.
+3. Sélectionnez ensuite le nœud **Déboguer** dans la fenêtre de la page de propriétés.
 
-4. Pour **appareil cible**, sélectionnez **ordinateur distant**.
+4. Pour **appareil cible**, sélectionnez **Machine distante**.
 
-5. Sous **ordinateur distant**, cliquez sur **trouver**.
+5. Sous **machine distante**, cliquez sur **trouver**.
   
-4.  Vous pouvez taper le nom ou l’adresse IP du périphérique distant, ou vous pouvez choisir le périphérique à partir de la **connexion à distance** boîte de dialogue.  
+6. Vous pouvez taper le nom ou l’adresse IP du périphérique distant, ou vous pouvez choisir l’appareil à partir de la **connexion à distance** boîte de dialogue.  
   
-     ![Boîte de dialogue de connexion du débogueur distant sélectionnez](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
+    ![Boîte de dialogue de connexion du débogueur distant sélectionnez](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
-     Le **connexion à distance** boîte de dialogue affiche les périphériques sur le sous-réseau local et tout périphérique qui est directement connecté à l’ordinateur Visual Studio via un câble Ethernet.  
+    Le **connexion à distance** boîte de dialogue affiche les périphériques sur le sous-réseau du réseau local et n’importe quel appareil qui est directement connecté à l’ordinateur Visual Studio via un câble Ethernet.  
   
- **Spécification du périphérique distant dans une page de projet JavaScript ou Visual C++**  
+   **Spécification du périphérique distant dans une page de projet JavaScript ou Visual C++**  
   
- ![C&#43; &#43; propriétés pour le débogage distant de projet](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+   ![C&#43; &#43; projeter des propriétés pour le débogage distant](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Choisissez **Remote Debugger** dans la liste **Débogueur à lancer** .  
+7. Choisissez **Remote Debugger** dans la liste **Débogueur à lancer** .  
   
-2.  Entrez le nom du réseau du périphérique distant dans la zone **Nom de l'ordinateur** . Ou cliquez sur la flèche Bas de la zone pour sélectionner le périphérique dans la boîte de dialogue Sélectionner une connexion du débogueur distant.  
+8. Entrez le nom du réseau du périphérique distant dans la zone **Nom de l'ordinateur** . Ou cliquez sur la flèche Bas de la zone pour sélectionner le périphérique dans la boîte de dialogue Sélectionner une connexion du débogueur distant.  
   
- **Spécification du périphérique distant dans une page de projet Visual C# ou Visual Basic**  
+   **Spécification du périphérique distant dans une page de projet Visual C# ou Visual Basic**  
   
- ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
+   ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Choisissez **Ordinateur distant** dans la liste **Périphérique cible** .  
+9. Choisissez **Ordinateur distant** dans la liste **Périphérique cible** .  
   
-2.  Entrez le nom du réseau du périphérique distant dans la zone **Ordinateur distant** ou cliquez sur **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .  
+10. Entrez le nom du réseau du périphérique distant dans la zone **Ordinateur distant** ou cliquez sur **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .  
   
 ##  <a name="BKMK_Deployment_options"></a> Options de déploiement  
  Vous pouvez définir les options de déploiement suivantes sur la page de propriétés de débogage du projet de démarrage.  
   
  **Autoriser le bouclage de réseau**  
- Pour des raisons de sécurité, une application UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] application qui est installée en mode standard n’est pas autorisée à effectuer des appels réseau sur l’appareil n’est installé sur. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], vous devez la tester sans l'exemption.  
+ Pour des raisons de sécurité, une UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] application est installée en mode standard n’est pas autorisée à effectuer des appels réseau à l’appareil n’est installé sur. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], vous devez la tester sans l'exemption.  
   
  Pour supprimer de l'application l'exemption du bouclage de réseau :  
   
--   Dans la page de propriétés de débogage C# ou VB, décochez la case **Autoriser le bouclage de réseau** .  
+- Dans la page de propriétés de débogage C# ou VB, décochez la case **Autoriser le bouclage de réseau** .  
   
--   Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Autoriser le bouclage de réseau** la valeur **Non**.  
+- Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Autoriser le bouclage de réseau** la valeur **Non**.  
   
- **Ne pas lancer, mais déboguer mon code au démarrage (C# et VB) / Lancer l'application (JavaScript and C++)**  
- Pour configurer le déploiement afin qu'il démarre automatiquement une session de débogage au lancement de l'application :  
+  **Ne pas lancer, mais déboguer mon code au démarrage (C# et VB) / Lancer l'application (JavaScript and C++)**  
+  Pour configurer le déploiement afin qu'il démarre automatiquement une session de débogage au lancement de l'application :  
   
--   Dans la page de propriétés de débogage C# ou VB, cochez la case **Ne pas lancer, mais déboguer mon code au démarrage** .  
+- Dans la page de propriétés de débogage C# ou VB, cochez la case **Ne pas lancer, mais déboguer mon code au démarrage** .  
   
--   Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Lancer l'application** la valeur **Oui**.  
+- Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Lancer l'application** la valeur **Oui**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Les options de déploiement à distance avancées](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  

@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819782"
 ---
 # <a name="how-to-debug-injected-code"></a>Comment : déboguer du code injecté
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ REMARQUE]
   
  L'utilisation d'attributs peut simplifier considérablement la programmation en C++. Pour plus d’informations, consultez [Concepts](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Certains attributs sont interprétés directement par le compilateur. D'autres injectent du code dans la source du programme, code qui est ensuite traité par le compilateur. Ce code injecté simplifie la programmation en réduisant la quantité de code à écrire. Parfois, cependant, un bogue peut provoquer un échec de l'application pendant l'exécution du code injecté. Dans ce cas, vous voudrez probablement examiner le code injecté. Visual Studio vous permet de visualiser le code injecté de deux façons :  
   
--   Vous pouvez afficher le code injecté dans la **désassemblage** fenêtre.  
+- Vous pouvez afficher le code injecté dans la **désassemblage** fenêtre.  
   
--   À l’aide de [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), vous pouvez créer un fichier source fusionné contenant le code injecté et d’origine.  
+- À l’aide de [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), vous pouvez créer un fichier source fusionné contenant le code injecté et d’origine.  
   
- Le **désassemblage** fenêtre affiche les instructions en langage assembleur qui correspondent au code source et le code injecté par des attributs. En outre, le **désassemblage** fenêtre peut afficher l’annotation de code source.  
+  Le **désassemblage** fenêtre affiche les instructions en langage assembleur qui correspondent au code source et le code injecté par des attributs. En outre, le **désassemblage** fenêtre peut afficher l’annotation de code source.  
   
 ### <a name="to-turn-on-source-annotation"></a>Pour activer l'annotation de la source  
   

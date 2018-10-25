@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246895"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833516"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
   
  En résumé, les étapes sont effectuées dans le projet DslPackage comme suit :  
   
-1.  [Déclarer la commande dans Commands.VSCT.](#VSCT)  
+1. [Déclarer la commande dans Commands.VSCT.](#VSCT)  
   
-2.  [Mettre à jour le numéro de version de package dans Package.tt](#version). Vous devez effectuer cette opération chaque fois que vous modifiez Commands.vsct.  
+2. [Mettre à jour le numéro de version de package dans Package.tt](#version). Vous devez effectuer cette opération chaque fois que vous modifiez Commands.vsct.  
   
-3.  [Écrire des méthodes dans la classe CommandSet](#CommandSet) pour rendre la commande visible et pour définir ce que vous voulez la commande à exécuter.  
+3. [Écrire des méthodes dans la classe CommandSet](#CommandSet) pour rendre la commande visible et pour définir ce que vous voulez la commande à exécuter.  
   
- Pour obtenir des exemples, consultez le [site Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
+   Pour obtenir des exemples, consultez le [site Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
 >  Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
@@ -45,15 +45,15 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
   
  Appliquez la méthode décrite dans cette rubrique dans les cas suivants :  
   
-1.  Vous souhaitez définir des commandes de menu dans des menus autres que le menu contextuel accessible par un clic droit.  
+1. Vous souhaitez définir des commandes de menu dans des menus autres que le menu contextuel accessible par un clic droit.  
   
-2.  Vous souhaitez définir des regroupements spécifiques de commandes dans le menu.  
+2. Vous souhaitez définir des regroupements spécifiques de commandes dans le menu.  
   
-3.  Vous ne souhaitez pas que d'autres personnes puissent étendre la solution DSL avec leurs propres commandes.  
+3. Vous ne souhaitez pas que d'autres personnes puissent étendre la solution DSL avec leurs propres commandes.  
   
-4.  Vous ne souhaitez définir qu'une seule commande.  
+4. Vous ne souhaitez définir qu'une seule commande.  
   
- Autrement, vous pouvez utiliser la méthode MEF pour définir des commandes. Pour plus d’informations, consultez [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+   Autrement, vous pouvez utiliser la méthode MEF pour définir des commandes. Pour plus d’informations, consultez [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ##  <a name="VSCT"></a> Déclarer la commande dans Commands.VSCT.  
  La déclaration des commandes de menu s'effectue dans DslPackage\Commands.vsct. Ces définitions spécifient les étiquettes des éléments de menu et l'emplacement où est elles apparaissent dans les menus.  
@@ -226,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  Les fragments suivants sont souvent utiles dans les méthodes OnStatus :  
   
--   `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.  
+- `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.  
   
--   `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.  
+- `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs objets.  
+- `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs objets.  
   
--   `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.  
+- `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.  
   
--   `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.  
+- `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.  
   
- En règle générale, vous devez faire en sorte que la propriété `Visible` dépende de ce qui est sélectionné et que la propriété `Enabled` dépende de l'état des éléments sélectionnés.  
+  En règle générale, vous devez faire en sorte que la propriété `Visible` dépende de ce qui est sélectionné et que la propriété `Enabled` dépende de l'état des éléments sélectionnés.  
   
- Une méthode OnStatus ne doit pas modifier l'état du magasin.  
+  Une méthode OnStatus ne doit pas modifier l'état du magasin.  
   
 ### <a name="define-what-the-command-does"></a>Définir ce que fait la commande  
  Pour chaque commande, définissez une méthode `OnMenu...` qui exécute l'action requise quand l'utilisateur clique sur la commande de menu.  
@@ -338,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Résolution des problèmes  
  **Commande n’apparaît pas dans le menu :**  
   
--   La commande apparaît uniquement dans les instances de débogage de Visual Studio jusqu'à ce que vous installiez le package DSL. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+- La commande apparaît uniquement dans les instances de débogage de Visual Studio jusqu'à ce que vous installiez le package DSL. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
   
--   Assurez-vous que votre exemple expérimental a l'extension de nom de fichier correcte pour cette solution DSL. Pour vérifier l'extension de nom de fichier, ouvrez DslDefinition.dsl dans l'instance principale de Visual Studio. Ensuite, dans l'Explorateur DSL, cliquez avec le bouton droit sur le nœud Éditeur, puis cliquez sur Propriétés. Dans la fenêtre Propriétés, examinez la propriété FileExtension.  
+- Assurez-vous que votre exemple expérimental a l'extension de nom de fichier correcte pour cette solution DSL. Pour vérifier l'extension de nom de fichier, ouvrez DslDefinition.dsl dans l'instance principale de Visual Studio. Ensuite, dans l'Explorateur DSL, cliquez avec le bouton droit sur le nœud Éditeur, puis cliquez sur Propriétés. Dans la fenêtre Propriétés, examinez la propriété FileExtension.  
   
--   Avez-vous [incrémenter le numéro de version de package](#version)?  
+- Avez-vous [incrémenter le numéro de version de package](#version)?  
   
--   Définissez un point d'arrêt au début de votre méthode OnStatus. Elle doit s'arrêter quand vous cliquez avec le bouton droit sur une partie quelconque du diagramme.  
+- Définissez un point d'arrêt au début de votre méthode OnStatus. Elle doit s'arrêter quand vous cliquez avec le bouton droit sur une partie quelconque du diagramme.  
   
-     **Méthode OnStatus n’est pas appelée**:  
+   **Méthode OnStatus n’est pas appelée**:  
   
-    -   Assurez-vous que les GUID et les ID dans votre code CommandSet correspondent à ceux de la section Symbols de Commands.vsct.  
+  -   Assurez-vous que les GUID et les ID dans votre code CommandSet correspondent à ceux de la section Symbols de Commands.vsct.  
   
-    -   Dans Commands.vsct, assurez-vous que le GUID et l'ID dans chaque nœud Parent identifient le groupe parent correct.  
+  -   Dans Commands.vsct, assurez-vous que le GUID et l'ID dans chaque nœud Parent identifient le groupe parent correct.  
   
-    -   Dans une invite de commandes Visual Studio, tapez devenv /rootsuffix exp /setup. Ensuite, redémarrez l'instance de débogage de Visual Studio.  
+  -   Dans une invite de commandes Visual Studio, tapez devenv /rootsuffix exp /setup. Ensuite, redémarrez l'instance de débogage de Visual Studio.  
   
--   Parcourez la méthode OnStatus pour vérifier que command.Visible et command.Enabled ont la valeur True.  
+- Parcourez la méthode OnStatus pour vérifier que command.Visible et command.Enabled ont la valeur True.  
   
- **Menu incorrect apparaît ou la commande apparaît au mauvais endroit**:  
+  **Menu incorrect apparaît ou la commande apparaît au mauvais endroit**:  
   
--   Assurez-vous que la combinaison de GUID et ID est unique à cette commande.  
+- Assurez-vous que la combinaison de GUID et ID est unique à cette commande.  
   
--   Assurez-vous d'avoir désinstallé les versions antérieures du package.  
+- Assurez-vous d'avoir désinstallé les versions antérieures du package.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

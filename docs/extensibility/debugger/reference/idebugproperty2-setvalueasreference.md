@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Documents Microsoft
+title: IDebugProperty2::SetValueAsReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f8d871e6193835b51336a48355fde78fe95e103
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af0f31ba2bff7effce91232fd7e5cfc6f96afd9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833861"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Définit la valeur de cette propriété à la valeur de la référence donnée.  
@@ -47,7 +47,7 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>Paramètres  
  `rgpArgs`  
- [in] Tableau d’arguments à passer à l’accesseur Set de propriété du code managé. Si l’accesseur Set de propriété ne prend pas d’arguments, ou si cette [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet ne fait pas référence à cet un accesseur Set de propriété, `rgpArgs` doit être une valeur null. Ce paramètre est généralement une valeur null.  
+ [in] Tableau d’arguments à passer à l’accesseur de propriété de code managé. Si la méthode setter de propriété ne prend pas d’arguments ou si cette [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet ne fait pas référence à cet un accesseur Set de propriété, `rgpArgs` doit être une valeur null. Ce paramètre est généralement une valeur null.  
   
  `dwArgCount`  
  [in] Le nombre d’arguments dans le `rgpArgs` tableau.  
@@ -56,14 +56,14 @@ int SetValueAsReference(
  [in] Une référence, sous la forme d’un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet, à la valeur à utiliser pour définir cette propriété.  
   
  `dwTimeout`  
- [in] Combien de temps à suivre pour définir la valeur, en millisecondes. Une valeur par défaut est `INFINITE`. Cela affecte la durée de toute évaluation possible peut prendre.  
+ [in] Combien de temps à suivre pour définir la valeur, en millisecondes. Une valeur typique est `INFINITE`. Cela affecte la durée pendant laquelle toute évaluation possible peut prendre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne une erreur de code, généralement une des opérations suivantes :  
   
 |Error|Description|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Définition de la valeur d’une référence n’est pas pris en charge.|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Définition de la valeur à partir d’une référence n’est pas pris en charge.|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|Impossible de définir la valeur que cette propriété fait référence à une méthode.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|La valeur est en lecture seule et ne peut pas être définie.|  
 |`E_NOTIMPL`|La méthode n’est pas implémentée.|  

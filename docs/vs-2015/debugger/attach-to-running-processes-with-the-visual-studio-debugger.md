@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825687"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d'exécution avec le débogueur Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Vous pouvez utiliser cette fonctionnalité pour déboguer des applications qui s
 
 1. Dans Visual Studio, sélectionnez **déboguer / attacher au processus** (ou appuyez sur **CTRL + ALT + P**).
 
-2.  Dans la boîte de dialogue **Attacher au processus** , sélectionnez le type de connexion approprié dans la liste **Transport** . Généralement, ce paramètre a la valeur**Défaut** .
+2. Dans la boîte de dialogue **Attacher au processus** , sélectionnez le type de connexion approprié dans la liste **Transport** . Généralement, ce paramètre a la valeur**Défaut** .
 
-    Le paramètre **Transport** persiste entre des sessions de débogage. 
+   Le paramètre **Transport** persiste entre des sessions de débogage. 
   
-3.  La zone de liste **Qualificateur** vous permet de sélectionner le nom de l’ordinateur distant à l’aide de l’une des méthodes suivantes :  
+3. La zone de liste **Qualificateur** vous permet de sélectionner le nom de l’ordinateur distant à l’aide de l’une des méthodes suivantes :  
   
-    1.  Tapez le nom dans la zone de liste **Qualificateur** .
+   1. Tapez le nom dans la zone de liste **Qualificateur** .
     
-        >**Remarque** si, dans les étapes ultérieures, vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, utilisez l’adresse IP. (Le numéro de port peut être automatiquement après avoir sélectionné le processus. Vous pouvez également l’entrer manuellement. Dans l’illustration ci-dessous, 4020 est le port par défaut pour le débogueur distant.)  
+      >**Remarque** si, dans les étapes ultérieures, vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, utilisez l’adresse IP. (Le numéro de port peut être automatiquement après avoir sélectionné le processus. Vous pouvez également l’entrer manuellement. Dans l’illustration ci-dessous, 4020 est le port par défaut pour le débogueur distant.)  
   
-    2.  Cliquez sur la flèche de déroulement associée à la zone de liste **Qualificateur** , puis sélectionnez le nom de l’ordinateur dans la liste déroulante.  
+   2. Cliquez sur la flèche de déroulement associée à la zone de liste **Qualificateur** , puis sélectionnez le nom de l’ordinateur dans la liste déroulante.  
   
-    3.  Cliquez sur le bouton **Rechercher** en regard de la liste**Qualificateur** pour ouvrir la boîte de dialogue **Sélectionner une connexion du débogueur distant** . La boîte de dialogue **Sélectionner une connexion du débogueur distant** répertorie tous les appareils qui se trouvent sur votre sous-réseau local, et les éventuels appareils directement connectés à votre ordinateur via un câble Ethernet. Cliquez sur l’ordinateur ou l’appareil souhaité, puis sur **Sélectionner**. 
+   3. Cliquez sur le bouton **Rechercher** en regard de la liste**Qualificateur** pour ouvrir la boîte de dialogue **Sélectionner une connexion du débogueur distant** . La boîte de dialogue **Sélectionner une connexion du débogueur distant** répertorie tous les appareils qui se trouvent sur votre sous-réseau local, et les éventuels appareils directement connectés à votre ordinateur via un câble Ethernet. Cliquez sur l’ordinateur ou l’appareil souhaité, puis sur **Sélectionner**. 
   
-     Le paramètre **Qualificateur** persiste entre des sessions de débogage uniquement si une connexion de débogage réussie est établie avec ce qualificateur.
+      Le paramètre **Qualificateur** persiste entre des sessions de débogage uniquement si une connexion de débogage réussie est établie avec ce qualificateur.
      
-4.  Cliquez sur **Actualiser**.
+4. Cliquez sur **Actualiser**.
 
-      La liste **Processus disponibles** s’affiche automatiquement quand vous ouvrez la boîte de dialogue **Processus** . Les processus peuvent démarrer et s’interrompre en arrière-plan pendant que la boîte de dialogue est ouverte. Toutefois, le contenu n’est pas toujours actualisé. Vous pouvez actualiser la liste à tout moment pour visualiser la liste des processus en cours d’exécution en cliquant sur **Actualiser**. 
+     La liste **Processus disponibles** s’affiche automatiquement quand vous ouvrez la boîte de dialogue **Processus** . Les processus peuvent démarrer et s’interrompre en arrière-plan pendant que la boîte de dialogue est ouverte. Toutefois, le contenu n’est pas toujours actualisé. Vous pouvez actualiser la liste à tout moment pour visualiser la liste des processus en cours d’exécution en cliquant sur **Actualiser**. 
      
-4.  Dans la boîte de dialogue **Attacher au processus** , recherchez le programme que vous voulez attacher dans la liste **Processus disponibles** .  
+5. Dans la boîte de dialogue **Attacher au processus** , recherchez le programme que vous voulez attacher dans la liste **Processus disponibles** .  
   
-     Si le processus s’exécute sous un compte d’utilisateur différent, cochez la case **Afficher les processus de tous les utilisateurs** .
+    Si le processus s’exécute sous un compte d’utilisateur différent, cochez la case **Afficher les processus de tous les utilisateurs** .
      
-5.  Cliquez sur **Attacher**.  
+6. Cliquez sur **Attacher**.  
 
 ## <a name="additional-info"></a>Informations supplémentaires
 
@@ -164,21 +164,21 @@ Dans certains scénarios de débogage locales, vous pouvez déboguer dans Visual
   
  **Pour obtenir des informations spécifiques sur la raison de l’échec de l’attachement d’un type de code**  
   
-1.  Procédez au détachement du processus. Dans le menu **Déboguer** , cliquez sur **Détacher tout**.  
+1. Procédez au détachement du processus. Dans le menu **Déboguer** , cliquez sur **Détacher tout**.  
   
-2.  Rattachez le processus en sélectionnant un seul type de code.  
+2. Rattachez le processus en sélectionnant un seul type de code.  
   
-    1.  Dans la boîte de dialogue **Attacher au processus** , sélectionnez le processus dans la liste **Processus disponibles** .  
+   1. Dans la boîte de dialogue **Attacher au processus** , sélectionnez le processus dans la liste **Processus disponibles** .  
   
-    2.  Cliquez sur **Sélectionner**.  
+   2. Cliquez sur **Sélectionner**.  
   
-    3.  Dans la boîte de dialogue **Sélectionner le type de code** , sélectionnez **Déboguer ces types de codes** et le type de code qui a échoué lors de l’attachement. Effacez tout autre code.  
+   3. Dans la boîte de dialogue **Sélectionner le type de code** , sélectionnez **Déboguer ces types de codes** et le type de code qui a échoué lors de l’attachement. Effacez tout autre code.  
   
-    4.  Cliquez sur **OK**. La boîte de dialogue **Sélectionner le type de code** se ferme.  
+   4. Cliquez sur **OK**. La boîte de dialogue **Sélectionner le type de code** se ferme.  
   
-    5.  Dans la boîte de dialogue **Attacher au processus** , cliquez sur **Attacher**.  
+   5. Dans la boîte de dialogue **Attacher au processus** , cliquez sur **Attacher**.  
   
-     Cette fois-ci, l’attachement échoue entièrement et un message d’erreur spécifique s’affiche.  
+      Cette fois-ci, l’attachement échoue entièrement et un message d’erreur spécifique s’affiche.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)   

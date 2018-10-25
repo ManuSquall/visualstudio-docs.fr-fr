@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838339"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Comment : démarrer avec la personnalisation du ruban
   Pour personnaliser le ruban d’une application Microsoft Office, ajoutez un **ruban (Concepteur visuel)** ou **ruban (XML)** élément à un projet Office.  
@@ -32,45 +32,45 @@ ms.locfileid: "35254603"
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Pour ajouter un ruban à un projet  
   
-1.  Sur le **projet** Menu, cliquez sur **ajouter un nouvel élément**.  
+1. Sur le **projet** Menu, cliquez sur **ajouter un nouvel élément**.  
   
-2.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (Concepteur visuel)** ou **ruban (XML)**. Pour plus d’informations sur ces modèles, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
+2. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (Concepteur visuel)** ou **ruban (XML)**. Pour plus d’informations sur ces modèles, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
-3.  Dans le **nom** , tapez un nom pour l’élément de ruban.  
+3. Dans le **nom** , tapez un nom pour l’élément de ruban.  
   
-     Les noms ne peut pas contenir les caractères suivants :  
+    Les noms ne peut pas contenir les caractères suivants :  
   
-    -   Signe dièse (#)  
+   -   Signe dièse (#)  
   
-    -   Pourcentage (%)  
+   -   Pourcentage (%)  
   
-    -   Esperluette (&)  
+   -   Esperluette (&)  
   
-    -   astérisque (*)  
+   -   astérisque (*)  
   
-    -   barre verticale (|)  
+   -   barre verticale (|)  
   
-    -   Barre oblique inverse (\\)  
+   -   Barre oblique inverse (\\)  
   
-    -   Signe deux-points ( :))  
+   -   Signe deux-points ( :))  
   
-    -   Guillemet double (")  
+   -   Guillemet double (")  
   
-    -   Inférieur à (\<)  
+   -   Inférieur à (\<)  
   
-    -   Supérieur à (>)  
+   -   Supérieur à (>)  
   
-    -   point d'interrogation (?)  
+   -   point d'interrogation (?)  
   
-    -   Oblique (/)  
+   -   Oblique (/)  
   
-    -   Espaces à gauche ou (' ')  
+   -   Espaces à gauche ou (' ')  
   
-    -   Noms réservés à Windows ou à MS-DOS comme (« nul », « aux », « con », « com1 », « lpt1 » et ainsi de suite)  
+   -   Noms réservés à Windows ou à MS-DOS comme (« nul », « aux », « con », « com1 », « lpt1 » et ainsi de suite)  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
- L’élément de ruban s’affiche dans **l’Explorateur de solutions**. Pour plus d’informations sur les étapes, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
+   L’élément de ruban s’affiche dans **l’Explorateur de solutions**. Pour plus d’informations sur les étapes, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   

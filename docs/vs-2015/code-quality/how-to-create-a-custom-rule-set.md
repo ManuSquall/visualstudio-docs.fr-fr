@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812463"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Comment : créer un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Pour créer une règle personnalisée à partir d’un seul ensemble de règles existant  
   
-1.  Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**.  
+1. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**.  
   
-2.  Sur le **propriétés** , cliquez sur **analyse du Code**.  
+2. Sur le **propriétés** , cliquez sur **analyse du Code**.  
   
-3.  Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :  
+3. Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :  
   
-    -   Sélectionnez l’ensemble de règles que vous souhaitez personnaliser.  
+   - Sélectionnez l’ensemble de règles que vous souhaitez personnaliser.  
   
      \- ou -  
   
-    -   Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.  
+   - Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.  
   
-4.  Cliquez sur **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.  
+4. Cliquez sur **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Pour créer une règle personnalisée définie à partir de plusieurs ensembles de règles existant  
   

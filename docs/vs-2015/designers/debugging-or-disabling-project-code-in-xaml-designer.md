@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837579"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Débogage ou désactivation de code de projet dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
   
  Le code de projet est constitué des éléments suivants :  
   
--   contrôles personnalisés et contrôles utilisateur ;  
+- contrôles personnalisés et contrôles utilisateur ;  
   
--   bibliothèques de classes ;  
+- bibliothèques de classes ;  
   
--   convertisseurs de valeurs ;  
+- convertisseurs de valeurs ;  
   
--   liaisons avec des données au moment de la conception générées à partir du code de projet.  
+- liaisons avec des données au moment de la conception générées à partir du code de projet.  
   
- Quand le code de projet est désactivé, Visual Studio affiche des espaces réservés. Pour une liaison, il peut s’agir du nom de la propriété dans le cas où les données ne sont plus disponibles ou bien un espace réservé pour un contrôle qui n’est plus en cours d’exécution.  
+  Quand le code de projet est désactivé, Visual Studio affiche des espaces réservés. Pour une liaison, il peut s’agir du nom de la propriété dans le cas où les données ne sont plus disponibles ou bien un espace réservé pour un contrôle qui n’est plus en cours d’exécution.  
   
- ![Boîte de dialogue d’exception non gérée](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Boîte de dialogue d’exception non gérée](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Pour déterminer si le code de projet est à l’origine d’une exception  
   

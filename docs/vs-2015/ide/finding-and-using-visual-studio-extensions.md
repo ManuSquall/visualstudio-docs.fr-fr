@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831131"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Recherche et utilisation des extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Les extensions Visual Studio sont des packages de code qui s’exécutent à l�
 ## <a name="sample-master-copies-and-working-copies"></a>Exemple de copies principales et de copies de travail  
  Lorsque vous installez un exemple en ligne, la solution est stockée dans deux emplacements :  
   
--   Une copie de travail est stockée dans l'emplacement que vous avez spécifié dans la boîte de dialogue **Nouveau projet** .  
+- Une copie de travail est stockée dans l'emplacement que vous avez spécifié dans la boîte de dialogue **Nouveau projet** .  
   
--   Une copie principale distincte est stockée sur votre ordinateur.  
+- Une copie principale distincte est stockée sur votre ordinateur.  
   
- Utilisez la boîte de dialogue **Extensions et mises à jour** pour effectuer les tâches suivantes, relatives aux exemples :  
+  Utilisez la boîte de dialogue **Extensions et mises à jour** pour effectuer les tâches suivantes, relatives aux exemples :  
   
--   Répertorier les copies principales des exemples que vous avez installés.  
+- Répertorier les copies principales des exemples que vous avez installés.  
   
--   Désactiver ou désinstaller la copie principale d'un exemple.  
+- Désactiver ou désinstaller la copie principale d'un exemple.  
   
--   Installer des packs d'exemples, qui sont des collections d'exemples se rapportant à une technologie ou une fonctionnalité.  
+- Installer des packs d'exemples, qui sont des collections d'exemples se rapportant à une technologie ou une fonctionnalité.  
   
--   Installer différents exemples en ligne. (Vous pouvez également effectuer cette opération dans la boîte de dialogue **Nouveau projet** .)  
+- Installer différents exemples en ligne. (Vous pouvez également effectuer cette opération dans la boîte de dialogue **Nouveau projet** .)  
   
--   Afficher les notifications de mise à jour lorsque des modifications de code source sont publiées pour des exemples installés.  
+- Afficher les notifications de mise à jour lorsque des modifications de code source sont publiées pour des exemples installés.  
   
--   Mettre à jour la copie principale d'un exemple installé lors de la réception d'une notification de mise à jour.  
+- Mettre à jour la copie principale d'un exemple installé lors de la réception d'une notification de mise à jour.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installation sans utiliser la boîte de dialogue Extensions et mises à jour  
  Les extensions empaquetées dans des fichiers .vsix peuvent être disponibles à d'autres emplacements que la galerie Visual Studio. La boîte de dialogue **Extensions et mises à jour** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier .vsix en double-cliquant dessus, ou en sélectionnant le fichier et en appuyant sur la touche Entrée. Après cela, suivez les instructions. Lorsque l'extension est installée, utilisez la boîte de dialogue **Extensions et mises à jour** pour l'activer, la désactiver ou la désinstaller.  

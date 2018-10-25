@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_upperBoundId | Documents Microsoft
+title: IDiaSymbol::get_upperBoundId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bc4fafb1c0ffc860ca10b41e0bc545b568faf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 93de67915f8c0382a984786a1c33bc1dc3290f5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815713"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 Récupère l’identificateur de symbole de la limite supérieure d’une dimension de tableau FORTRAN.  
@@ -34,7 +34,7 @@ HRESULT get_upperBoundId (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne l’ID de symbole qui représente la limite supérieure d’une dimension de tableau FORTRAN.  
+ [out] Retourne l’ID du symbole qui représente la limite supérieure d’une dimension de tableau FORTRAN.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,7 +43,7 @@ HRESULT get_upperBoundId (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles de manière unique.  
+ L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

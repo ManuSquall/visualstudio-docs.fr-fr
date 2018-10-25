@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817975"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l'aide d'un fichier .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d�
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personnalisation des tests avec un fichier .runsettings  
   
-1.  Ajoutez un fichier XML à votre solution Visual Studio et renommez-le test.runsettings. (Le nom du fichier n’a pas d’importance, mais l’extension doit être .runsettings.)  
+1. Ajoutez un fichier XML à votre solution Visual Studio et renommez-le test.runsettings. (Le nom du fichier n’a pas d’importance, mais l’extension doit être .runsettings.)  
   
-2.  Remplacez le contenu du fichier par l’ [exemple](#example).  
+2. Remplacez le contenu du fichier par l’ [exemple](#example).  
   
-     Effectuez des modifications en fonction de vos propres besoins.  
+    Effectuez des modifications en fonction de vos propres besoins.  
   
-3.  Dans le menu **Test** , choisissez **Paramètres de test**, **Sélectionner le fichier de paramètres des tests**.  
+3. Dans le menu **Test** , choisissez **Paramètres de test**, **Sélectionner le fichier de paramètres des tests**.  
   
- Vous pouvez créer plusieurs fichiers \*.runsettings dans votre solution et les activer ou les désactiver à différents moments via le menu **Paramètres de test**.  
+   Vous pouvez créer plusieurs fichiers \*.runsettings dans votre solution et les activer ou les désactiver à différents moments via le menu **Paramètres de test**.  
   
- ![Activation d’un fichier de paramètres d’exécution](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Activation d’un fichier de paramètres d’exécution](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Copier cet exemple de fichier .runsettings  
  Voici un fichier *.runsettings classique. Chaque élément du fichier est facultatif, car chaque valeur est définie par défaut.  

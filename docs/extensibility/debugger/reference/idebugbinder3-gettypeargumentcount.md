@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Documents Microsoft
+title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e853e17f1805f85fecaac1610a04de86851b6df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01578661017d76907263cddecf770a6cc0b8c033
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842831"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-Cette méthode retourne le nombre de types d’arguments associé à cet objet.  
+Cette méthode retourne le nombre de types d’arguments associée à cet objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ int GetTypeArgumentCount(
   
 #### <a name="parameters"></a>Paramètres  
  `uCount`  
- [out] Nombre de types d’arguments associé à cet objet.  
+ [out] Nombre de types d’arguments associée à cet objet.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

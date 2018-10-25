@@ -26,35 +26,35 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c9abfbba2eb1e5c3e107440f0988b1002c1386
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa7aca2b86e8cc7c8d9cea4eba27b850d26bc13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825652"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogage distant utilise DCOM pour les communications entre l’ordinateur hôte et l’ordinateur distant dans les situations suivantes :  
   
--   Le débogueur est défini sur **Mode de compatibilité natif** ou l’option **Mode de compatibilité managé** est activée dans la page **Outils/Options/Débogage** .  
+- Le débogueur est défini sur **Mode de compatibilité natif** ou l’option **Mode de compatibilité managé** est activée dans la page **Outils/Options/Débogage** .  
   
--   Vous déboguez du code C++ managé (C++/CLI).  
+- Vous déboguez du code C++ managé (C++/CLI).  
   
--   Dans Visual Studio 2013, l’option **Activer Modifier &amp; Continuer natif** est activée dans la page **Outils/Options/Débogage** .  
+- Dans Visual Studio 2013, l’option **Activer Modifier &amp; Continuer natif** est activée dans la page **Outils/Options/Débogage** .  
   
--   Quelques scénarios de débogage tiers  
+- Quelques scénarios de débogage tiers  
   
- Cette erreur se produit lorsque le processus Visual Studio ne peut pas s'authentifier (ou que les informations d'identification fournies ont été considérées inappropriées) lors du processus du débogueur distant sur DCOM. Une ou plusieurs des solutions suivantes peuvent résoudre le problème :  
+  Cette erreur se produit lorsque le processus Visual Studio ne peut pas s'authentifier (ou que les informations d'identification fournies ont été considérées inappropriées) lors du processus du débogueur distant sur DCOM. Une ou plusieurs des solutions suivantes peuvent résoudre le problème :  
   
--   Désactivez  **Mode de compatibilité natif** et **Mode de compatibilité managé**.  
+- Désactivez  **Mode de compatibilité natif** et **Mode de compatibilité managé**.  
   
--   Dans Visual Studio 2013, désactivez **Activer Modifier &amp; Continuer natif**.  
+- Dans Visual Studio 2013, désactivez **Activer Modifier &amp; Continuer natif**.  
   
--   Redémarrez les deux ordinateurs.  
+- Redémarrez les deux ordinateurs.  
   
--   Si le débogage distant requiert la saisie des informations d'identification, activez l'option pour enregistrer les informations d'identification.  
+- Si le débogage distant requiert la saisie des informations d'identification, activez l'option pour enregistrer les informations d'identification.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   

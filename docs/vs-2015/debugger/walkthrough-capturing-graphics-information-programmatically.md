@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812905"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Pour définir l'interface IDXGraphicsAnalysis  
   
--   Définissez l'interface IDXGraphicsAnalysis dans le fichier où vous avez inclus les fichiers d'en-tête.  
+- Définissez l'interface IDXGraphicsAnalysis dans le fichier où vous avez inclus les fichiers d'en-tête.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Pour des raisons pratiques, vous pouvez effectuer ces étapes dans un nouveau fichier d'en-tête et l'inclure là où votre application en a besoin.  
+  Pour des raisons pratiques, vous pouvez effectuer ces étapes dans un nouveau fichier d'en-tête et l'inclure là où votre application en a besoin.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Obtention de l'interface IDXGraphicsAnalysis  
  Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.  
@@ -171,23 +171,23 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Pour configurer le nom et l'emplacement du fichier journal de graphisme  
   
--   Pour éviter que le journal de graphisme soit écrit dans le répertoire temporaire, avant la ligne `#include <vsgcapture.h>` , ajoutez ceci :  
+- Pour éviter que le journal de graphisme soit écrit dans le répertoire temporaire, avant la ligne `#include <vsgcapture.h>` , ajoutez ceci :  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     Vous pouvez définir cette valeur pour écrire le journal de graphisme à un emplacement relatif au répertoire de travail ou dans un chemin d'accès absolu si la définition de `VSG_DEFAULT_RUN_FILENAME` est un chemin d'accès absolu.  
+   Vous pouvez définir cette valeur pour écrire le journal de graphisme à un emplacement relatif au répertoire de travail ou dans un chemin d'accès absolu si la définition de `VSG_DEFAULT_RUN_FILENAME` est un chemin d'accès absolu.  
   
--   Pour enregistrer le journal de graphisme à un emplacement différent ou pour lui donner un autre nom de fichier, avant la ligne `#include <vsgcapture.h>` , ajoutez ceci :  
+- Pour enregistrer le journal de graphisme à un emplacement différent ou pour lui donner un autre nom de fichier, avant la ligne `#include <vsgcapture.h>` , ajoutez ceci :  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Si vous n'effectuez pas cette étape, le nom de fichier est default.vsglog. Si vous n'avez pas défini `DONT_SAVE_VSGLOG_TO_TEMP`, l'emplacement du fichier est relatif au répertoire temporaire ; sinon, il est relatif au répertoire de travail ou se situe à un autre emplacement si vous avez spécifié un nom de fichier absolu.  
+   Si vous n'effectuez pas cette étape, le nom de fichier est default.vsglog. Si vous n'avez pas défini `DONT_SAVE_VSGLOG_TO_TEMP`, l'emplacement du fichier est relatif au répertoire temporaire ; sinon, il est relatif au répertoire de travail ou se situe à un autre emplacement si vous avez spécifié un nom de fichier absolu.  
   
- Pour [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] applications, l’emplacement du répertoire temp est spécifique à chaque utilisateur et l’application et se trouve généralement dans un emplacement tel que C:\users\\*nom d’utilisateur*\AppData\Local\Packages\\ *nom de famille de package*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temp est spécifique à chaque utilisateur et se trouve généralement dans un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
+  Pour [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] applications, l’emplacement du répertoire temp est spécifique à chaque utilisateur et l’application et se trouve généralement dans un emplacement tel que C:\users\\*nom d’utilisateur*\AppData\Local\Packages\\ *nom de famille de package*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temp est spécifique à chaque utilisateur et se trouve généralement dans un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 >  Pour écrire à un emplacement spécifique, vous devez avoir des autorisations d'accès en écriture à cet emplacement ; sinon, une erreur se produit. Gardez à l'esprit que les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sont plus limitées que les applications de bureau en ce qui concerne l'écriture des données et qu'une configuration supplémentaire peut être nécessaire pour leur permettre d'écrire à certains emplacements.  

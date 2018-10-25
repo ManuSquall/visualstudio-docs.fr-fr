@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e430ac4658cd34db34f87c6b051c9269c3b6454
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 3146de7efb7db567149b7741f2868a932f8476ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842064"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Utilisation de Microsoft Monitoring Agent
 **Microsoft Monitoring Agent**vous permet de surveiller localement les applications web ASP.NET hébergées sur IIS et les applications SharePoint 2010 ou 2013 pour diagnostiquer les erreurs, les problèmes de performances ou autres dysfonctionnements. Vous pouvez enregistrer les événements de diagnostic de l’agent dans un journal IntelliTrace (.iTrace), puis ouvrir ce journal dans Visual Studio Enterprise (mais pas Professional ni Community) pour résoudre les problèmes à l’aide des différents outils de diagnostic de Visual Studio. Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace en exécutant l’agent en mode **Trace** . Microsoft Monitoring Agent peut être intégré à [Application Insights](/azure/application-insights/) et [System Center Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé.  
@@ -79,33 +79,33 @@ ms.locfileid: "49073660"
 ####  <a name="FullPermissionsITLog"></a> Q : Comment définir les autorisations pour le pool d’applications ?  
  **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Exemple :  
   
--   Pour définir des autorisations avec la commande Windows **icacls** :  
+- Pour définir des autorisations avec la commande Windows **icacls** :  
   
-    -   Pour une application web du pool d’applications **DefaultAppPool** :  
+  - Pour une application web du pool d’applications **DefaultAppPool** :  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   Pour une application SharePoint du pool d’applications **SharePoint – 80** :  
+  - Pour une application SharePoint du pool d’applications **SharePoint – 80** :  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     - ou -  
+    - ou -  
   
--   Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :  
+- Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :  
   
-    1.  Ouvrez **Propriétés** pour le répertoire des journaux IntelliTrace.  
+  1.  Ouvrez **Propriétés** pour le répertoire des journaux IntelliTrace.  
   
-    2.  Sous l’onglet **Sécurité** , choisissez **Modifier**, puis **Ajouter**.  
+  2.  Sous l’onglet **Sécurité** , choisissez **Modifier**, puis **Ajouter**.  
   
-    3.  Vérifiez que l’élément **Principaux de sécurité intégrés** est affiché dans la zone **Sélectionnez le type de cet objet** . Si elle n’a pas, choisissez **Types d’objet** pour l’ajouter.  
+  3.  Vérifiez que l’élément **Principaux de sécurité intégrés** est affiché dans la zone **Sélectionnez le type de cet objet** . Si elle n’a pas, choisissez **Types d’objet** pour l’ajouter.  
   
-    4.  Vérifiez que votre ordinateur local apparaît dans la zone **À partir de cet emplacement** . Si elle n’a pas, choisissez **emplacements** pour le modifier.  
+  4.  Vérifiez que votre ordinateur local apparaît dans la zone **À partir de cet emplacement** . Si elle n’a pas, choisissez **emplacements** pour le modifier.  
   
-    5.  Dans la zone **Entrez les noms des objets à sélectionner** , ajoutez le pool d’applications de l’application web ou SharePoint.  
+  5.  Dans la zone **Entrez les noms des objets à sélectionner** , ajoutez le pool d’applications de l’application web ou SharePoint.  
   
-    6.  Choisissez **Vérifier les noms** pour résoudre le nom. Cliquez sur **OK**.  
+  6.  Choisissez **Vérifier les noms** pour résoudre le nom. Cliquez sur **OK**.  
   
-    7.  Vérifiez que le pool d’applications a **lecture & exécution** autorisations.  
+  7.  Vérifiez que le pool d’applications a **lecture & exécution** autorisations.  
   
 ##  <a name="MonitorEvents"></a> Étape 2 : Démarrer la surveillance de votre application  
  Utilisez la commande Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) pour démarrer la surveillance de votre application. Si vous utilisez System Center 2012, consultez [Analyse des applications web avec Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -149,83 +149,83 @@ ms.locfileid: "49073660"
 ####  <a name="Minimizing"></a> Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?  
  **R :** Microsoft Monitoring Agent peut collecter beaucoup de données. L’impact de la collecte sur les performances de votre application dépend donc des données collectées et du mode de collecte choisi. Voici quelques méthodes permettant d’obtenir le maximum de données sans ralentir votre application :  
   
--   Pour les applications web et SharePoint, l’agent enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application. Pour éviter de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.  
+- Pour les applications web et SharePoint, l’agent enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application. Pour éviter de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.  
   
--   Passez en revue les événements du plan de collecte pour lesquels l’agent collecte des données. Modifiez le plan de collecte en y désactivant les événements qui ne sont pas pertinents ou qui ne vous intéressent pas. Cela peut améliorer les performances de démarrage et les performances d’exécution.  
+- Passez en revue les événements du plan de collecte pour lesquels l’agent collecte des données. Modifiez le plan de collecte en y désactivant les événements qui ne sont pas pertinents ou qui ne vous intéressent pas. Cela peut améliorer les performances de démarrage et les performances d’exécution.  
   
-     Pour désactiver un événement, définissez l'attribut `enabled` pour l'élément `<DiagnosticEventSpecification>` avec la valeur `false` :  
+   Pour désactiver un événement, définissez l'attribut `enabled` pour l'élément `<DiagnosticEventSpecification>` avec la valeur `false` :  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Si l’attribut `enabled` n’existe pas, l’événement est activé.  
+   Si l’attribut `enabled` n’existe pas, l’événement est activé.  
   
-     Par exemple :  
+   Par exemple :  
   
-    -   Désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.  
+  -   Désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.  
   
-    -   Désactivez les événements de Registre pour les applications qui accèdent au Registre, mais qui n’affichent pas les problèmes liés aux paramètres du Registre.  
+  -   Désactivez les événements de Registre pour les applications qui accèdent au Registre, mais qui n’affichent pas les problèmes liés aux paramètres du Registre.  
   
--   Passez en revue les modules du plan de collecte pour lesquels l’agent collecte des données. Modifiez le plan de collecte en y incluant seulement les modules qui vous intéressent.  
+- Passez en revue les modules du plan de collecte pour lesquels l’agent collecte des données. Modifiez le plan de collecte en y incluant seulement les modules qui vous intéressent.  
   
-     Cela réduit la quantité d’informations sur les appels de méthode et autres données d’instrumentation que l’agent collecte quand l’application démarre et s’exécute. Ces données vous aident à parcourir le code quand vous examinez et déboguez les valeurs passées aux appels de fonction et les valeurs de retour correspondantes.  
+   Cela réduit la quantité d’informations sur les appels de méthode et autres données d’instrumentation que l’agent collecte quand l’application démarre et s’exécute. Ces données vous aident à parcourir le code quand vous examinez et déboguez les valeurs passées aux appels de fonction et les valeurs de retour correspondantes.  
   
-    1.  Ouvrez le plan de collecte. Recherchez l’élément `<ModuleList>` .  
+  1. Ouvrez le plan de collecte. Recherchez l’élément `<ModuleList>` .  
   
-    2.  Dans `<ModuleList>`, définissez l’attribut `isExclusionList` avec la valeur `false`.  
+  2. Dans `<ModuleList>`, définissez l’attribut `isExclusionList` avec la valeur `false`.  
   
-    3.  Utilisez l’élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.  
+  3. Utilisez l’élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.  
   
      Cet exemple crée une liste qui collecte uniquement des données du module principal de l’application web Fabrikam Fiber :  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Pour collecter des données d’un module dont le nom inclut « Fabrikam », créez une liste comme celle-ci :  
+   Pour collecter des données d’un module dont le nom inclut « Fabrikam », créez une liste comme celle-ci :  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Pour collecter des données de modules en spécifiant leurs jetons de clé publique, créez une liste comme celle-ci :  
+   Pour collecter des données de modules en spécifiant leurs jetons de clé publique, créez une liste comme celle-ci :  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **Q : Pourquoi ne pas simplement exclure des modules à la place ?**  
+   **Q : Pourquoi ne pas simplement exclure des modules à la place ?**  
   
-     **R :** Par défaut, les plans de collecte excluent les modules en définissant l’attribut `isExclusionList` avec la valeur `true`. Toutefois, malgré l’exclusion des modules, il est possible que des données soient collectées dans des modules qui ne répondent pas aux critères de la liste d’exclusion ou qui ne vous intéressent pas (par exemple, les modules tiers ou open source).  
+   **R :** Par défaut, les plans de collecte excluent les modules en définissant l’attribut `isExclusionList` avec la valeur `true`. Toutefois, malgré l’exclusion des modules, il est possible que des données soient collectées dans des modules qui ne répondent pas aux critères de la liste d’exclusion ou qui ne vous intéressent pas (par exemple, les modules tiers ou open source).  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>Q : Quelles sont les valeurs collectées par l’agent ?  
  **R :** Pour réduire l’impact sur les performances, l’agent limite la collecte des données aux valeurs suivantes :  
   
--   Types de données primitives qui sont passés à des méthodes et retournés par ces dernières.  
+- Types de données primitives qui sont passés à des méthodes et retournés par ces dernières.  
   
--   Types de données primitives dans les champs sur les objets de niveau supérieur qui sont passés à des méthodes et retournés par ces dernières.  
+- Types de données primitives dans les champs sur les objets de niveau supérieur qui sont passés à des méthodes et retournés par ces dernières.  
   
- Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee` `oldemployee`:  
+  Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee` `oldemployee`:  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- Le type `Employee` a les attributs suivants : `Id`, `Name`et `HomeAddress`. Une relation d’association existe entre `Employee` et le type `Address` .  
+  Le type `Employee` a les attributs suivants : `Id`, `Name`et `HomeAddress`. Une relation d’association existe entre `Employee` et le type `Address` .  
   
- ![Relation entre employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![Relation entre employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, l’agent n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). L’agent n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).  
+  L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, l’agent n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). L’agent n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).  
   
 ##  <a name="SaveEvents"></a> Étape 3 : Créer un journal des événements enregistrés  
  Si vous trouvez une erreur ou un problème de performances, consignez les événements enregistrés dans un journal IntelliTrace. L’agent ne crée un journal que s’il a enregistré des événements. Si vous utilisez System Center 2012, consultez [Analyse des applications web avec Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -233,63 +233,63 @@ ms.locfileid: "49073660"
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Créer un journal des événements enregistrés et continuer la surveillance  
  Suivez la procédure ci-dessous pour créer le journal IntelliTrace sans avoir à redémarrer votre application ni arrêter la surveillance. L’agent continue alors la surveillance même si le serveur ou l’application redémarre.  
   
-1.  Sur votre serveur web, ouvrez une fenêtre d’invite de commandes Windows PowerShell en tant qu’administrateur.  
+1. Sur votre serveur web, ouvrez une fenêtre d’invite de commandes Windows PowerShell en tant qu’administrateur.  
   
-2.  Exécutez la commande [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) pour enregistrer un instantané du journal IntelliTrace :  
+2. Exécutez la commande [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) pour enregistrer un instantané du journal IntelliTrace :  
   
-     **Checkpoint-WebApplicationMonitoring** *»\<IISWebsiteName >\\< IISWebAppName\>»*  
+    **Checkpoint-WebApplicationMonitoring** *»\<IISWebsiteName >\\< IISWebAppName\>»*  
   
-     \- ou -  
+    \- ou -  
   
-     **Checkpoint-WebApplicationMonitoring » IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*  
+    **Checkpoint-WebApplicationMonitoring » IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*  
   
-     Exemple :  
+    Exemple :  
   
-     **PS C :\\> Checkpoint-WebApplicationMonitoring « Fabrikam\FabrikamFiber.Web »**  
+    **PS C :\\> Checkpoint-WebApplicationMonitoring « Fabrikam\FabrikamFiber.Web »**  
   
-     - ou -  
+    - ou -  
   
-     **PS C : > Checkpoint-WebApplicationMonitoring « IIS:sitesFabrikamFabrikamFiber.Web »**  
+    **PS C : > Checkpoint-WebApplicationMonitoring « IIS:sitesFabrikamFabrikamFiber.Web »**  
   
-     Pour plus d’informations, exécutez le **get-help Checkpoint-WebApplicationMonitoring-détaillées** commande ou le **get-help Checkpoint-WebApplicationMonitoring-exemples** commande.  
+    Pour plus d’informations, exécutez le **get-help Checkpoint-WebApplicationMonitoring-détaillées** commande ou le **get-help Checkpoint-WebApplicationMonitoring-exemples** commande.  
   
-3.  Copiez le journal dans un dossier partagé sécurisé, puis ouvrez-le à partir d’un ordinateur équipé de Visual Studio Enterprise (mais pas Professional ni Community).  
+3. Copiez le journal dans un dossier partagé sécurisé, puis ouvrez-le à partir d’un ordinateur équipé de Visual Studio Enterprise (mais pas Professional ni Community).  
   
-    > [!IMPORTANT]
-    >  Partagez vos journaux IntelliTrace avec précaution, car ils peuvent contenir des données personnelles et sensibles. Assurez-vous que les autres utilisateurs qui ont accès à ces journaux sont autorisés à consulter ces données. Respectez la politique de confidentialité de votre société.  
+   > [!IMPORTANT]
+   >  Partagez vos journaux IntelliTrace avec précaution, car ils peuvent contenir des données personnelles et sensibles. Assurez-vous que les autres utilisateurs qui ont accès à ces journaux sont autorisés à consulter ces données. Respectez la politique de confidentialité de votre société.  
   
- **Étape suivante :** [Diagnostiquer les événements enregistrés dans Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Étape suivante :** [Diagnostiquer les événements enregistrés dans Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Créer un journal des événements enregistrés et arrêter la surveillance  
  Suivez la procédure ci-dessous si vous voulez simplement obtenir des informations de diagnostic lors de la reproduction d’un problème. Cette opération aura pour effet de redémarrer toutes les applications web sur votre serveur web.  
   
-1.  Sur votre serveur web, ouvrez une fenêtre d’invite de commandes Windows PowerShell en tant qu’administrateur.  
+1. Sur votre serveur web, ouvrez une fenêtre d’invite de commandes Windows PowerShell en tant qu’administrateur.  
   
-2.  Exécutez la commande [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) pour créer le journal IntelliTrace et arrêter la surveillance d’une application web spécifique :  
+2. Exécutez la commande [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) pour créer le journal IntelliTrace et arrêter la surveillance d’une application web spécifique :  
   
-     **Stop-WebApplicationMonitoring** *»\<IISWebsiteName >\\< IISWebAppName\>»*  
+    **Stop-WebApplicationMonitoring** *»\<IISWebsiteName >\\< IISWebAppName\>»*  
   
-     \- ou -  
+    \- ou -  
   
-     **Stop-WebApplicationMonitoring » IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*  
+    **Stop-WebApplicationMonitoring » IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*  
   
-     Vous pouvez aussi arrêter la surveillance de toutes les applications web :  
+    Vous pouvez aussi arrêter la surveillance de toutes les applications web :  
   
-     **Stop-WebApplicationMonitoring - tous les**  
+    **Stop-WebApplicationMonitoring - tous les**  
   
-     Exemple :  
+    Exemple :  
   
-     **PS C :\\> Stop-WebApplicationMonitoring « Fabrikam\iFabrikamFiber.Web »**  
+    **PS C :\\> Stop-WebApplicationMonitoring « Fabrikam\iFabrikamFiber.Web »**  
   
-     \- ou -  
+    \- ou -  
   
-     **PS C :\\> Stop-WebApplicationMonitoring « IIS:\sites\Fabrikam\FabrikamFiber.Web »**  
+    **PS C :\\> Stop-WebApplicationMonitoring « IIS:\sites\Fabrikam\FabrikamFiber.Web »**  
   
-     Pour plus d’informations, exécutez le **get-help Stop-WebApplicationMonitoring-détaillées** commande ou le **get-help Stop-WebApplicationMonitoring-exemples** commande.  
+    Pour plus d’informations, exécutez le **get-help Stop-WebApplicationMonitoring-détaillées** commande ou le **get-help Stop-WebApplicationMonitoring-exemples** commande.  
   
-3.  Copiez le journal dans un dossier partagé sécurisé, puis ouvrez-le à partir d’un ordinateur équipé de Visual Studio Enterprise.  
+3. Copiez le journal dans un dossier partagé sécurisé, puis ouvrez-le à partir d’un ordinateur équipé de Visual Studio Enterprise.  
   
- **Étape suivante :** [Diagnostiquer les événements enregistrés dans Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Étape suivante :** [Diagnostiquer les événements enregistrés dans Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Questions et réponses  
   

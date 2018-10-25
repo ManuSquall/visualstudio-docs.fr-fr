@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824436"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Prise en main du débogage dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 intègre un ensemble puissant d'outils de génération et de
   
  Parmi les utilisations courantes des points d'arrêt, citons les suivantes :  
   
-1.  Pour cibler la source d'un incident ou d'un blocage, disséminez des points d'arrêt à l'intérieur et tout autour du code de l'appel de méthode qui semble être à l'origine de l'échec. À mesure que vous effectuez un pas à pas dans le code, supprimez les points d'arrêt, puis rapprochez-les les uns des autres jusqu'à ce que vous identifiiez la ligne de code incriminée.  
+1. Pour cibler la source d'un incident ou d'un blocage, disséminez des points d'arrêt à l'intérieur et tout autour du code de l'appel de méthode qui semble être à l'origine de l'échec. À mesure que vous effectuez un pas à pas dans le code, supprimez les points d'arrêt, puis rapprochez-les les uns des autres jusqu'à ce que vous identifiiez la ligne de code incriminée.  
   
-2.  Quand vous introduisez une nouvelle section de code, définissez un point d'arrêt au début de celle-ci, puis effectuez un pas à pas dans le code pour vous assurer qu'il se comporte comme prévu.  
+2. Quand vous introduisez une nouvelle section de code, définissez un point d'arrêt au début de celle-ci, puis effectuez un pas à pas dans le code pour vous assurer qu'il se comporte comme prévu.  
   
-3.  Si vous avez implémenté un comportement complexe, définissez un ou plusieurs points d'arrêt dans le code algorithmique de manière à inspecter les valeurs des variables et des données quand le programme s'arrête.  
+3. Si vous avez implémenté un comportement complexe, définissez un ou plusieurs points d'arrêt dans le code algorithmique de manière à inspecter les valeurs des variables et des données quand le programme s'arrête.  
   
-4.  Si vous écrivez du code en C ou C++, utilisez des points d'arrêt pour arrêter le code de manière à inspecter les valeurs d'adresse (recherchez NULL) et les compteurs de références lors du débogage d'échecs liés à la mémoire.  
+4. Si vous écrivez du code en C ou C++, utilisez des points d'arrêt pour arrêter le code de manière à inspecter les valeurs d'adresse (recherchez NULL) et les compteurs de références lors du débogage d'échecs liés à la mémoire.  
   
- Pour plus d’informations sur l’utilisation des points d’arrêt, consultez [Utilisation des points d’arrêt](../debugger/using-breakpoints.md).  
+   Pour plus d’informations sur l’utilisation des points d’arrêt, consultez [Utilisation des points d’arrêt](../debugger/using-breakpoints.md).  
   
 ### <a name="setting-conditional-breakpoints"></a>Définition de points d'arrêt conditionnels  
  Si vous avez défini un point d'arrêt dans une boucle ou une récurrence, ou si vous effectuez fréquemment un pas à pas dans du code contenant un grand nombre de points d'arrêt, utilisez un point d'arrêt conditionnel pour vous assurer que votre code s'interrompt UNIQUEMENT quand certaines conditions sont remplies. Sinon, vous allez devoir appuyer sur F11 sans relâche.  

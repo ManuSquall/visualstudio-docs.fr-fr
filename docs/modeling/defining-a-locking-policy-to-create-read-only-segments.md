@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828674"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité de la Visual Studio Visualization and Modeling SDK permet à un programme verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais leur interdire de modifier l’original.
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Valeurs de verrouillage
  Verrous peuvent être définies sur un Store, une Partition ou un ModelElement individuel. Verrous est un `Flags` énumération : vous pouvez combiner ses valeurs à l’aide de «&#124;».
 
--   Verrous d’un ModelElement toujours incluent les verrous de sa Partition.
+- Verrous d’un ModelElement toujours incluent les verrous de sa Partition.
 
--   Verrous d’une Partition toujours incluent les verrous du Store.
+- Verrous d’une Partition toujours incluent les verrous du Store.
 
- Vous ne peut pas définir un verrou sur une partition ou stocker et à la fois désactiver le verrou sur un élément individuel.
+  Vous ne peut pas définir un verrou sur une partition ou stocker et à la fois désactiver le verrou sur un élément individuel.
 
 |Value|Ce qui signifie que si `IsLocked(Value)` a la valeur true|
-|-----------|------------------------------------------|
+|-|-|
 |Aucun.|Aucune restriction.|
 |Propriété|Propriétés du domaine d’éléments ne peut pas être modifiées. Cela ne s’applique pas aux propriétés qui sont générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Nouveaux éléments et liens ne peut pas être créés dans une partition ou stocker.<br /><br /> Non applicable à `ModelElement`.|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  Pour vous assurer que les utilisateurs peuvent toujours supprimer des éléments, même si d’autres appels de code `SetLocks(Lock.Delete):`

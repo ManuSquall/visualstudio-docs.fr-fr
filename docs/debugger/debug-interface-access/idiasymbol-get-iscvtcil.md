@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isCVTCIL | Documents Microsoft
+title: IDiaSymbol::get_isCVTCIL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a959b145775bdc1ea5e6073e03b304ad33f84c83
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7d721338e1dfc21a54ce663377aba0aa71c83a87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836461"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-Récupère un indicateur qui indique si le module a été converti à partir d’un module de langage CIL (Common Intermediate) à un module natif.  
+Récupère un indicateur qui spécifie si le module a été converti à partir d’un module de langage CIL (Common Intermediate) à un module natif.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_isCVTCIL(
   
 #### <a name="parameters"></a>Paramètres  
  `pFlag`  
- [out] Retourne `TRUE` si le module a été converti à partir de la liste CIL en code natif ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si le module a été converti à partir de code CIL en code natif ; sinon, retourne `FALSE`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -45,7 +45,7 @@ HRESULT get_isCVTCIL(
 ## <a name="remarks"></a>Notes  
  Cette propriété est disponible à partir de la `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

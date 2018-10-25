@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826543"
 ---
 # <a name="supporting-multiple-document-views"></a>Prise en charge de vues de document multiples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez fournir plusieurs vues d’un document en créant des données de document distinct et les objets de vue de document pour votre éditeur. Certains cas dans lesquels une vue de document supplémentaire serait utile sont :  
   
--   Nouvelle prise en charge de la fenêtre : vous souhaitez que votre éditeur pour fournir deux ou plusieurs vues du même type, afin qu’un utilisateur qui possède déjà une fenêtre Ouvrir dans l’éditeur peut ouvrir une nouvelle fenêtre en sélectionnant le **nouvelle fenêtre** commande à partir de la **fenêtre** menu.  
+- Nouvelle prise en charge de la fenêtre : vous souhaitez que votre éditeur pour fournir deux ou plusieurs vues du même type, afin qu’un utilisateur qui possède déjà une fenêtre Ouvrir dans l’éditeur peut ouvrir une nouvelle fenêtre en sélectionnant le **nouvelle fenêtre** commande à partir de la **fenêtre** menu.  
   
--   Prise en charge de vue de formulaire et code : vous souhaitez que votre éditeur pour proposer des vues de différents types. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], par exemple, fournit une vue de formulaire et un mode code.  
+- Prise en charge de vue de formulaire et code : vous souhaitez que votre éditeur pour proposer des vues de différents types. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], par exemple, fournit une vue de formulaire et un mode code.  
   
- Pour plus d’informations, consultez la procédure CreateEditorInstance dans le fichier EditorFactory.cs dans le projet de l’éditeur personnalisé créé par le modèle de Package Visual Studio. Pour plus d’informations sur ce projet, consultez [procédure pas à pas : création d’un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Pour plus d’informations, consultez la procédure CreateEditorInstance dans le fichier EditorFactory.cs dans le projet de l’éditeur personnalisé créé par le modèle de Package Visual Studio. Pour plus d’informations sur ce projet, consultez [procédure pas à pas : création d’un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Synchronisation des vues  
  Lorsque vous implémentez plusieurs vues, l’objet de données est responsable de toutes les vues sont synchronisées avec les données. Vous pouvez utiliser la gestion des interfaces sur les événements <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> pour synchroniser plusieurs vues avec les données.  

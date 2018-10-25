@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816064"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sécurité d'accès du code pour les applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
 ## <a name="default-clickonce-code-access-security"></a>Sécurité d'accès du code ClickOnce par défaut  
  Par défaut, une application ClickOnce reçoit des autorisations Confiance totale quand elle est installée ou exécutée sur un ordinateur client.  
   
--   Une application ayant des autorisations Confiance totale dispose d'un accès illimité aux ressources, telles que le système de fichiers et le Registre. Cela signifie que votre application, ainsi que le système de l'utilisateur final, peuvent être potentiellement exploités par du code malveillant.  
+- Une application ayant des autorisations Confiance totale dispose d'un accès illimité aux ressources, telles que le système de fichiers et le Registre. Cela signifie que votre application, ainsi que le système de l'utilisateur final, peuvent être potentiellement exploités par du code malveillant.  
   
--   Quand une application nécessite des autorisations Confiance totale, l'utilisateur final peut être invité à accorder des autorisations à l'application. Cela signifie que l'application n'est pas réellement une application ClickOnce et que l'invite peut porter à confusion pour les utilisateurs moins expérimentés.  
+- Quand une application nécessite des autorisations Confiance totale, l'utilisateur final peut être invité à accorder des autorisations à l'application. Cela signifie que l'application n'est pas réellement une application ClickOnce et que l'invite peut porter à confusion pour les utilisateurs moins expérimentés.  
   
-    > [!NOTE]
-    >  Lors de l'installation d'une application à partir d'un média amovible, tel qu'un CD-ROM, l'utilisateur ne reçoit pas d'invite. En outre, un administrateur réseau peut configurer la stratégie réseau pour que les utilisateurs ne reçoivent pas d'invite quand ils installent une application provenant d'une source approuvée. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > [!NOTE]
+  >  Lors de l'installation d'une application à partir d'un média amovible, tel qu'un CD-ROM, l'utilisateur ne reçoit pas d'invite. En outre, un administrateur réseau peut configurer la stratégie réseau pour que les utilisateurs ne reçoivent pas d'invite quand ils installent une application provenant d'une source approuvée. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
- Pour restreindre les autorisations accordées à une application ClickOnce, vous pouvez modifier les autorisations de sécurité d'accès du code de votre application afin de demander la zone la plus appropriée aux autorisations que votre application nécessite. Dans la plupart des cas, vous pouvez choisir la zone à partir de laquelle l'application est déployée. Par exemple, si votre application est une application d'entreprise, utilisez la zone **Intranet local** . S'il s'agit d'une application Internet, utilisez la zone **Internet** .  
+  Pour restreindre les autorisations accordées à une application ClickOnce, vous pouvez modifier les autorisations de sécurité d'accès du code de votre application afin de demander la zone la plus appropriée aux autorisations que votre application nécessite. Dans la plupart des cas, vous pouvez choisir la zone à partir de laquelle l'application est déployée. Par exemple, si votre application est une application d'entreprise, utilisez la zone **Intranet local** . S'il s'agit d'une application Internet, utilisez la zone **Internet** .  
   
 ## <a name="configuring-security-permissions"></a>Configuration des autorisations de sécurité  
  Vous devez toujours configurer votre application ClickOnce pour demander la zone permettant de limiter les autorisations de sécurité d'accès du code. Vous pouvez définir les autorisations de sécurité dans la page **Sécurité** du **Concepteur de projets**.  
@@ -80,23 +80,23 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Autorisations de sécurité pour les applications hébergées dans un navigateur  
  Visual Studio fournit les types de projets suivants pour les applications Windows Presentation Foundation (WPF) :  
   
--   Application de fenêtres WPF  
+- Application de fenêtres WPF  
   
--   Application de navigateur web WPF  
+- Application de navigateur web WPF  
   
--   Bibliothèque de contrôles personnalisés WPF  
+- Bibliothèque de contrôles personnalisés WPF  
   
--   Bibliothèque de services WPF  
+- Bibliothèque de services WPF  
   
- Parmi ces types de projets, seules les applications de navigateur web WPF sont hébergées dans un navigateur web, et nécessitent donc des paramètres de déploiement et de sécurité particuliers. Les paramètres de sécurité par défaut de ces applications sont les suivants :  
+  Parmi ces types de projets, seules les applications de navigateur web WPF sont hébergées dans un navigateur web, et nécessitent donc des paramètres de déploiement et de sécurité particuliers. Les paramètres de sécurité par défaut de ces applications sont les suivants :  
   
--   **Activer les paramètres de sécurité ClickOnce**  
+- **Activer les paramètres de sécurité ClickOnce**  
   
--   **Il s'agit d'une application de confiance partielle**  
+- **Il s'agit d'une application de confiance partielle**  
   
--   **Zone Internet** (avec le jeu d'autorisations par défaut pour les applications de navigateur web WPF sélectionnées)  
+- **Zone Internet** (avec le jeu d'autorisations par défaut pour les applications de navigateur web WPF sélectionnées)  
   
- Dans la boîte de dialogue **Paramètres de sécurité avancés** , la case à cocher **Déboguer cette application à l'aide du jeu d'autorisations sélectionné** est cochée et désactivée. En effet, le débogage par zone ne peut pas être désactivé pour les applications hébergées dans un navigateur.  
+  Dans la boîte de dialogue **Paramètres de sécurité avancés** , la case à cocher **Déboguer cette application à l'aide du jeu d'autorisations sélectionné** est cochée et désactivée. En effet, le débogage par zone ne peut pas être désactivé pour les applications hébergées dans un navigateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   

@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO | Documents Microsoft
+title: FRAMEINFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4080a0d868f154136b11058abdf29948a353b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834030"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Décrit un frame de pile.  
@@ -65,22 +65,22 @@ public struct FRAMEINFO {
   
 ## <a name="members"></a>Membres  
  m_dwValidFields  
- Une combinaison d’indicateurs à partir de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie quels champs sont renseignés.  
+ Une combinaison d’indicateurs de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie quels champs sont renseignés.  
   
  m_bstrFuncName  
- Le nom de fonction associé avec le frame de pile.  
+ Le nom de fonction associé au frame de pile.  
   
  m_bstrReturnType  
- Le type de retour associé le frame de pile.  
+ Le type de retour associé au frame de pile.  
   
  m_bstrArgs  
- Les arguments de la fonction associée le frame de pile.  
+ Arguments à la fonction associée le frame de pile.  
   
  m_bstrLanguage  
- La langue dans laquelle la fonction est implémentée.  
+ Le langage dans lequel la fonction est implémentée.  
   
  m_bstrModule  
- Le nom du module associé le frame de pile.  
+ Le nom du module associé au frame de pile.  
   
  m_addrMin  
  L’adresse physique minimale de la pile.  
@@ -95,18 +95,18 @@ public struct FRAMEINFO {
  Le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objet qui représente le module qui contient ce frame de pile.  
   
  m_fHasDebugInfo  
- Non nul (`TRUE`) si les informations de débogage existent dans le frame donné.  
+ Valeur différente de zéro (`TRUE`) si les informations de débogage existent dans le frame donné.  
   
  m_fHasDebugInfo  
- Non nul (`TRUE`) si le frame de pile est associé avec le code qui n’est plus valid.  
+ Valeur différente de zéro (`TRUE`) si le frame de pile est associé au code qui n’est plus valide.  
   
  m_fHasDebugInfo  
- Non nul (`TRUE`) si le frame de pile est annoté par le Gestionnaire de session de débogage (SDM).  
+ Valeur différente de zéro (`TRUE`) si le frame de pile est annoté par le Gestionnaire de session de débogage (SDM).  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) (méthode) doit être renseigné. Cette structure est également contenue dans une liste qui est contenue dans le [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).  
+ Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) méthode doit être renseigné. Cette structure est également contenue dans une liste qui est contenue dans le [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816696"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation Kit de développement logiciel (SDK) VISUALIZATION fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :
@@ -35,7 +35,7 @@ Visual Studio de modélisation et de visualisation Kit de développement logicie
 ## <a name="customShapes"></a> Dans cette Section
 
 |Pour obtenir cet effet|Reportez-vous à cette rubrique|
-|----------------------------|-------------------------|
+|-|-|
 |Autoriser l’utilisateur à définir les propriétés de couleur et le style de la forme.|Avec le bouton droit de la classe de forme ou le lien, pointez sur **ajouter les objets exposés**, cliquez sur un élément.<br /><br /> Consultez [personnaliser la présentation du diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
 |Différentes classes d’élément de modèle se présenter comme sur le diagramme, partage des propriétés telles que la hauteur initiale et la largeur, la couleur, info-bulles.|Utiliser l’héritage entre les formes ou des classes de connecteur. Mappages entre les formes dérivées et les classes de domaine dérivées héritent les détails de mappage des parents.<br /><br /> Ou bien, mapper les classes de domaine différent à la même classe de forme.|
 |Une classe d’élément de modèle est affichée par les contextes de différentes formes.|Mapper plusieurs classes de forme à la même classe de domaine. Lorsque vous générez la solution, suivez le rapport d’erreurs et fournissez le code demandé pour décider quelle forme à utiliser.|

@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95b0b2dfd85f1184dc81c2c395d902d50626f7f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827276"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Déployer des applications du Windows Store à partir de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
   
  La fonctionnalité de déploiement de Visual Studio génère et enregistre les applications du Windows Store créées avec Visual Studio sur un périphérique cible. La façon dont l'application est exactement enregistrée varie selon que le périphérique cible est local ou distant :  
   
--   Lorsque la cible est l'ordinateur Visual Studio local, Visual Studio enregistre l'application depuis son dossier de génération.  
+- Lorsque la cible est l'ordinateur Visual Studio local, Visual Studio enregistre l'application depuis son dossier de génération.  
   
--   Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.  
+- Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.  
   
- Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :  
+  Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :  
   
--   Test ad hoc sur un ordinateur local ou distant.  
+- Test ad hoc sur un ordinateur local ou distant.  
   
--   Déploiement d'une application qui démarre une autre application que vous voulez déboguer.  
+- Déploiement d'une application qui démarre une autre application que vous voulez déboguer.  
   
--   Déploiement d'une application qui est déboguée quand elle est démarrée par une autre application ou méthode.  
+- Déploiement d'une application qui est déboguée quand elle est démarrée par une autre application ou méthode.  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  Dans cette rubrique, vous pouvez apprendre :  
@@ -78,33 +78,33 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
   
 #### <a name="to-specify-a-remote-device"></a>Pour spécifier un périphérique distant  
   
-1.  Dans la page de propriétés de débogage du projet de démarrage, spécifiez le nom ou l'adresse IP d'une cible de déploiement distante.  
+1. Dans la page de propriétés de débogage du projet de démarrage, spécifiez le nom ou l'adresse IP d'une cible de déploiement distante.  
   
-2.  Pour ouvrir la page de propriétés de débogage, sélectionnez le projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
+2. Pour ouvrir la page de propriétés de débogage, sélectionnez le projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
   
-3.  Sélectionnez ensuite le nœud **Déboguer** dans la fenêtre de la page de propriétés.  
+3. Sélectionnez ensuite le nœud **Déboguer** dans la fenêtre de la page de propriétés.  
   
-4.  Vous pouvez entrer le nom ou l'adresse IP du périphérique distant, ou choisir le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .  
+4. Vous pouvez entrer le nom ou l'adresse IP du périphérique distant, ou choisir le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .  
   
-     ![Boîte de dialogue de connexion du débogueur distant sélectionnez](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
+    ![Boîte de dialogue de connexion du débogueur distant sélectionnez](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
-     La boîte de dialogue **Sélectionner une connexion du débogueur distant** affiche les périphériques situés sur le sous-réseau du réseau local et tout périphérique qui est directement connecté à l'ordinateur Visual Studio via un câble Ethernet.  
+    La boîte de dialogue **Sélectionner une connexion du débogueur distant** affiche les périphériques situés sur le sous-réseau du réseau local et tout périphérique qui est directement connecté à l'ordinateur Visual Studio via un câble Ethernet.  
   
- **Spécification du périphérique distant dans une page de projet JavaScript ou Visual C++**  
+   **Spécification du périphérique distant dans une page de projet JavaScript ou Visual C++**  
   
- ![C&#43; &#43; projeter des propriétés pour le débogage distant](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
+   ![C&#43; &#43; projeter des propriétés pour le débogage distant](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Choisissez **Remote Debugger** dans la liste **Débogueur à lancer** .  
+5. Choisissez **Remote Debugger** dans la liste **Débogueur à lancer** .  
   
-2.  Entrez le nom du réseau du périphérique distant dans la zone **Nom de l'ordinateur** . Ou cliquez sur la flèche Bas de la zone pour sélectionner le périphérique dans la boîte de dialogue Sélectionner une connexion du débogueur distant.  
+6. Entrez le nom du réseau du périphérique distant dans la zone **Nom de l'ordinateur** . Ou cliquez sur la flèche Bas de la zone pour sélectionner le périphérique dans la boîte de dialogue Sélectionner une connexion du débogueur distant.  
   
- **Spécification du périphérique distant dans une page de projet Visual C# ou Visual Basic**  
+   **Spécification du périphérique distant dans une page de projet Visual C# ou Visual Basic**  
   
- ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
+   ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Choisissez **Ordinateur distant** dans la liste **Périphérique cible** .  
+7. Choisissez **Ordinateur distant** dans la liste **Périphérique cible** .  
   
-2.  Entrez le nom du réseau du périphérique distant dans la zone **Ordinateur distant** ou cliquez sur **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .  
+8. Entrez le nom du réseau du périphérique distant dans la zone **Ordinateur distant** ou cliquez sur **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .  
   
 ##  <a name="BKMK_Deployment_options"></a> Options de déploiement  
  Vous pouvez définir les options de déploiement suivantes sur la page de propriétés de débogage du projet de démarrage.  
@@ -114,16 +114,16 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
   
  Pour supprimer de l'application l'exemption du bouclage de réseau :  
   
--   Dans la page de propriétés de débogage C# ou VB, décochez la case **Autoriser le bouclage de réseau** .  
+- Dans la page de propriétés de débogage C# ou VB, décochez la case **Autoriser le bouclage de réseau** .  
   
--   Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Autoriser le bouclage de réseau** la valeur **Non**.  
+- Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Autoriser le bouclage de réseau** la valeur **Non**.  
   
- **Ne pas lancer, mais déboguer mon code au démarrage (C# et VB) / Lancer l'application (JavaScript and C++)**  
- Pour configurer le déploiement afin qu'il démarre automatiquement une session de débogage au lancement de l'application :  
+  **Ne pas lancer, mais déboguer mon code au démarrage (C# et VB) / Lancer l'application (JavaScript and C++)**  
+  Pour configurer le déploiement afin qu'il démarre automatiquement une session de débogage au lancement de l'application :  
   
--   Dans la page de propriétés de débogage C# ou VB, cochez la case **Ne pas lancer, mais déboguer mon code au démarrage** .  
+- Dans la page de propriétés de débogage C# ou VB, cochez la case **Ne pas lancer, mais déboguer mon code au démarrage** .  
   
--   Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Lancer l'application** la valeur **Oui**.  
+- Dans la page de propriétés de débogage JavaScript ou C++, attribuez à **Lancer l'application** la valeur **Oui**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

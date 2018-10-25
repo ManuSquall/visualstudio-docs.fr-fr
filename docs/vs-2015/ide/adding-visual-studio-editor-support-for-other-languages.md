@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823773"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
   
  Outre la coloration syntaxique et la saisie semi-automatique des instructions de base, Visual Studio propose également une fonctionnalité appelée [Naviguer vers](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Elle vous permet de rechercher rapidement des fichiers de code, des chemins de fichier et des symboles de code. Visual Studio fournit la prise en charge de Naviguer vers pour les langages suivants.  
   
--   Go  
+- Go  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- Tous ces types de fichier offrent les fonctionnalités décrites précédemment même si la prise en charge d’un langage donné n’a pas encore été installée. L’installation de la prise en charge spécialisée pour certains langages peut fournir une prise en charge de langage supplémentaire, comme IntelliSense ou d’autres fonctionnalités de langage avancées comme les ampoules.  
+  Tous ces types de fichier offrent les fonctionnalités décrites précédemment même si la prise en charge d’un langage donné n’a pas encore été installée. L’installation de la prise en charge spécialisée pour certains langages peut fournir une prise en charge de langage supplémentaire, comme IntelliSense ou d’autres fonctionnalités de langage avancées comme les ampoules.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Ajout de la prise en charge des langages non pris en charge  
  Visual Studio 2015 Update 1 et versions ultérieures fournissent la prise en charge des langages dans l’éditeur à l’aide des [grammaires TextMate](https://manual.macromates.com/en/language_grammars). Si votre langage de programmation préféré n’est pas pris en charge dans l’éditeur Visual Studio, recherchez tout d’abord sur le web. Un lot TextMate existe peut-être déjà pour ce langage. Si vous n’en trouvez aucun, vous pouvez ajouter la prise en charge vous-même dans Visual Studio 2015 Update 1 ou ultérieur en créant un modèle de lot TextMate pour des extraits de code et des grammaires de langage.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831924"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Référence de schéma 2.0 d’extension VSIX
 Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2.0 de ce schéma prend en charge l’ajout d’attributs et types personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et attributs qui ne comprend pas XML.  
@@ -162,33 +162,33 @@ Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package V
 ### <a name="assets-element"></a>Élément de ressources  
  Cet élément contient une liste de `<Asset>` balises pour chaque élément d’extension ou du contenu présenté par ce package.  
   
--   `<Asset>` -Cet élément contient les attributs et les éléments suivants :  
+- `<Asset>` -Cet élément contient les attributs et les éléments suivants :  
   
-    -   `Type` -Type d’extension ou de contenu représenté par cet élément. Chaque `<Asset>` élément doit avoir un seul `Type`, mais plusieurs `<Asset>` éléments peuvent avoir les mêmes `Type`. Cet attribut doit être représenté comme un nom qualifié complet, en fonction des conventions de l’espace de noms. Les types connus sont :  
+  - `Type` -Type d’extension ou de contenu représenté par cet élément. Chaque `<Asset>` élément doit avoir un seul `Type`, mais plusieurs `<Asset>` éléments peuvent avoir les mêmes `Type`. Cet attribut doit être représenté comme un nom qualifié complet, en fonction des conventions de l’espace de noms. Les types connus sont :  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Vous pouvez créer vos propres types et leur donner des noms uniques. Au moment de l’exécution à l’intérieur de Visual Studio, votre code peut énumérer et accéder à ces types personnalisés via l’API du Gestionnaire d’extensions.  
+       Vous pouvez créer vos propres types et leur donner des noms uniques. Au moment de l’exécution à l’intérieur de Visual Studio, votre code peut énumérer et accéder à ces types personnalisés via l’API du Gestionnaire d’extensions.  
   
-    -   `Path` -le chemin d’accès relatif au fichier ou dossier dans le package qui contient l’élément multimédia.  
+  - `Path` -le chemin d’accès relatif au fichier ou dossier dans le package qui contient l’élément multimédia.  
     
-    -   `TargetVersion` -la plage de version à laquelle s’applique l’élément multimédia donné. Utilisé pour la livraison de plusieurs versions d’éléments multimédias à différentes versions de Visual Studio. Nécessite Visual Studio ait effet 2017.3 ou une version ultérieure.
+  - `TargetVersion` -la plage de version à laquelle s’applique l’élément multimédia donné. Utilisé pour la livraison de plusieurs versions d’éléments multimédias à différentes versions de Visual Studio. Nécessite Visual Studio ait effet 2017.3 ou une version ultérieure.
   
-    -   `AnyAttribute*` -Un durée indéterminée ensemble d’attributs est exposé lors de l’exécution en tant qu’un dictionnaire de paires nom-valeur.  
+  - `AnyAttribute*` -Un durée indéterminée ensemble d’attributs est exposé lors de l’exécution en tant qu’un dictionnaire de paires nom-valeur.  
   
-         `<AnyElement>*` -N’importe quel contenu structuré est autorisé entre un `<Asset>` commencer et la balise de fin. Tous les éléments sont exposés sous forme de liste d’objets XmlElement. Extensions VSIX peuvent définir les métadonnées spécifiques au type structurée dans le fichier manifeste et les énumérer lors de l’exécution.  
+     `<AnyElement>*` -N’importe quel contenu structuré est autorisé entre un `<Asset>` commencer et la balise de fin. Tous les éléments sont exposés sous forme de liste d’objets XmlElement. Extensions VSIX peuvent définir les métadonnées spécifiques au type structurée dans le fichier manifeste et les énumérer lors de l’exécution.  
   
 ### <a name="sample-manifest"></a>Exemple de fichier manifeste  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812424"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d'un Entity Data Model généré à partir des données de l'exemple de base de données AdventureWorksLT.  
+- Création d'un Entity Data Model généré à partir des données de l'exemple de base de données AdventureWorksLT.  
   
--   Création d’un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] qui expose les données dans l’Entity Data Model dans une application WPF.  
+- Création d’un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] qui expose les données dans l’Entity Data Model dans une application WPF.  
   
--   Création d’un ensemble de contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le Concepteur WPF.  
+- Création d’un ensemble de contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le Concepteur WPF.  
   
--   Création de boutons permettant d'avancer et de reculer dans les enregistrements client.  
+- Création de boutons permettant d'avancer et de reculer dans les enregistrements client.  
   
--   Création d’un bouton qui enregistre les modifications apportées aux données dans les contrôles à la [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] et la source de données sous-jacente.  
+- Création d’un bouton qui enregistre les modifications apportées aux données dans les contrôles à la [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] et la source de données sous-jacente.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir de la [site CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir de la [site CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :  
+  La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :  
   
--   Services de données WCF. Pour plus d’informations, consultez [vue d’ensemble](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Services de données WCF. Pour plus d’informations, consultez [vue d’ensemble](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Modèles de données dans les [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Modèles de données dans les [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Entity Data Models et ADO.NET Entity Framework. Pour plus d’informations, consultez [présentation d’Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Entity Data Models et ADO.NET Entity Framework. Pour plus d’informations, consultez [présentation d’Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Créer le projet de service  
  Commencez cette procédure pas à pas par la création d'un projet pour un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
 #### <a name="to-create-the-data-bound-controls"></a>Pour créer des contrôles liés aux données  
   
-1.  Dans le **des Sources de données** fenêtre, cliquez sur le menu déroulant pour le **SalesOrderHeaders** nœud, puis sélectionnez **détails**.  
+1. Dans le **des Sources de données** fenêtre, cliquez sur le menu déroulant pour le **SalesOrderHeaders** nœud, puis sélectionnez **détails**.  
   
-2.  Développez le **SalesOrderHeaders** nœud.  
+2. Développez le **SalesOrderHeaders** nœud.  
   
-3.  Pour cet exemple, certains champs n’apparaissent pas, par conséquent, cliquez sur le menu déroulant en regard des nœuds suivants et sélectionnez **aucun**:  
+3. Pour cet exemple, certains champs n’apparaissent pas, par conséquent, cliquez sur le menu déroulant en regard des nœuds suivants et sélectionnez **aucun**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
      Cette action empêche Visual Studio de créer des contrôles liés aux données pour ces nœuds à l'étape suivante. Pour cette procédure pas à pas, supposez que l’utilisateur final n’a pas besoin d’afficher ces données.  
   
-4.  À partir de la **des Sources de données** fenêtre, faites glisser le **SalesOrderHeaders** nœud à la ligne de grille sous la ligne qui contient les boutons.  
+4. À partir de la **des Sources de données** fenêtre, faites glisser le **SalesOrderHeaders** nœud à la ligne de grille sous la ligne qui contient les boutons.  
   
-     Visual Studio génère du XAML et le code qui crée un ensemble de contrôles liés aux données dans le **produit** table. Pour plus d’informations sur le XAML et le code généré, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio génère du XAML et le code qui crée un ensemble de contrôles liés aux données dans le **produit** table. Pour plus d’informations sur le XAML et le code généré, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  Dans le concepteur, cliquez sur la zone de texte en regard du **Customer ID** étiquette.  
+5. Dans le concepteur, cliquez sur la zone de texte en regard du **Customer ID** étiquette.  
   
-6.  Dans le **propriétés** fenêtre, sélectionnez la case à cocher à côté du **IsReadOnly** propriété.  
+6. Dans le **propriétés** fenêtre, sélectionnez la case à cocher à côté du **IsReadOnly** propriété.  
   
-7.  Définir le **IsReadOnly** propriété pour chacune des zones de texte suivantes :  
+7. Définir le **IsReadOnly** propriété pour chacune des zones de texte suivantes :  
   
-    -   **Numéro de bon de commande**  
+   -   **Numéro de bon de commande**  
   
-    -   **ID de commande**  
+   -   **ID de commande**  
   
-    -   **Numéro de commande client**  
+   -   **Numéro de commande client**  
   
 ## <a name="load-the-data-from-the-service"></a>Charger les données à partir du service  
  Utilisez l’objet proxy de service pour charger les données de ventes à partir du service. Puis assignez les données retournées à la source de données pour la <xref:System.Windows.Data.CollectionViewSource> dans la fenêtre WPF.  

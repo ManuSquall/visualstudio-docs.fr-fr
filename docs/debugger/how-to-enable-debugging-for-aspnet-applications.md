@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813419"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
 
@@ -121,29 +121,29 @@ Les projets ASP.NET ont *web.config* par défaut, les fichiers qui contiennent l
   
 3. Assurez-vous que le `debug` d’attribut dans le `compilation` élément est défini sur `true`. (Si le `compilation` élément ne contient pas un `debug` d’attribut, ajoutez-le et affectez-lui la valeur `true`.) 
   
-  Si vous utilisez IIS local au lieu du serveur d’IIS Express par défaut, assurez-vous que le `targetFramework` attribut la valeur dans la `compilation` élément correspond à l’infrastructure sur le serveur IIS.
+   Si vous utilisez IIS local au lieu du serveur d’IIS Express par défaut, assurez-vous que le `targetFramework` attribut la valeur dans la `compilation` élément correspond à l’infrastructure sur le serveur IIS.
   
-  Le `compilation` élément de la *web.config* fichier doit se présenter comme dans l’exemple suivant :
+   Le `compilation` élément de la *web.config* fichier doit se présenter comme dans l’exemple suivant :
 
-  > [!NOTE]
-  > Cet exemple est un partiel *web.config* fichier. Il existe généralement autres sections XML dans le `configuration` et `system.web` éléments et le `compilation` élément peut également contenir des autres éléments et attributs.
+   > [!NOTE]
+   > Cet exemple est un partiel *web.config* fichier. Il existe généralement autres sections XML dans le `configuration` et `system.web` éléments et le `compilation` élément peut également contenir des autres éléments et attributs.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] détecte automatiquement les modifications apportées aux *web.config* fichiers et applique les nouveaux paramètres de configuration. Vous n’êtes pas obligé de redémarrer l’ordinateur ou le serveur IIS pour que les modifications entrent en vigueur.  
   
 Un site Web peut contenir plusieurs répertoires et sous-répertoires virtuels, avec *web.config* fichiers dans chacun d’eux. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications héritent des paramètres de configuration de *web.config* fichiers à des niveaux supérieurs dans le chemin d’URL. La liste hiérarchique *web.config* les paramètres de fichier s’appliquent à tous les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications inférieurs dans la hiérarchie. Définition d’une configuration différente dans un *web.config* fichier inférieur dans la hiérarchie substitue aux paramètres dans le fichier plus élevé.  
   
-Par exemple, si vous spécifiez `debug="true"` dans *www.microsoft.com/aaa/web.config*, n’importe quelle application dans le *aaa* dossier ou dans n’importe quel sous-dossier de *aaa* hérite de ce paramètre, sauf si une de ces applications remplace le paramètre avec sa propre *web.config* fichier.  
+Par exemple, si vous spécifiez `debug="true"` dans <em>www.microsoft.com/aaa/web.config</em>, n’importe quelle application dans le *aaa* dossier ou dans n’importe quel sous-dossier de *aaa* hérite de ce paramètre, sauf si une de ces applications remplace le paramètre avec sa propre *web.config* fichier.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Publier en mode débogage à l’aide du système de fichiers
 

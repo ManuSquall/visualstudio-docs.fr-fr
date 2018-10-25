@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLines | Documents Microsoft
+title: IDiaSession::findLines | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb256778f2bf92827ff98c5cafbb77bfdcba6c12
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2dc5e2509e3edda0c9cd89b84a3e109e0ac2d0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828362"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-Récupère les numéros de ligne dans compiland spécifié et d’identificateurs de fichier source.  
+Récupère les numéros de ligne au sein de compiland spécifié et les identificateurs de fichier source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,10 +36,10 @@ HRESULT findLines (
   
 #### <a name="parameters"></a>Paramètres  
  `compiland`  
- [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland. Utilisez cette interface comme contexte dans lequel rechercher les numéros de ligne.  
+ [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland. Utilisez cette interface en tant qu’un contexte dans lequel rechercher les numéros de ligne.  
   
  `file`  
- [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet représentant le fichier source dans lequel rechercher les numéros de ligne.  
+ [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet représentant le fichier source dans laquelle rechercher les numéros de ligne.  
   
  `ppResult`  
  [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) de récupérer l’objet qui contient une liste des numéros de ligne.  

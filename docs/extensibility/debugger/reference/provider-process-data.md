@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Documents Microsoft
+title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 789385ae229214beeb6c2ab9be90a964127e5e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819730"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Cette structure fournit des informations sur les processus en cours d’exécution sur un ordinateur.  
@@ -45,10 +45,10 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>Membres  
  Champs  
- Une combinaison d’indicateurs à partir de la [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) énumération, qui indique quels champs sont renseignés.  
+ Une combinaison d’indicateurs de la [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) énumération, indiquant quels champs sont renseignés.  
   
  ProgramNodes  
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) structure qui contient un tableau de nœuds de programme.  
+ Un [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) structure qui contient un tableau de nœuds de programme.  
   
  fIsDebuggerPresent  
  Différent de zéro (`TRUE`) si le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur est en cours d’exécution, zéro (`FALSE`) si elle n’est pas.  
@@ -56,7 +56,7 @@ public struct PROVIDER_PROCESS_DATA {
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) méthode où il est renseigné.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

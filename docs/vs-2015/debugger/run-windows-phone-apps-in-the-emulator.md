@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e17d1af4af50981b1c816d52444f3028162345c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5027c9d40d37aeaee6186662567a009fb051900e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812607"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Exécuter des applications Windows Phone dans l'émulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
  Quand vous exécutez une application Windows Phone pour la première fois dans l'émulateur Windows Phone, les événements suivants se produisent :  
   
-1.  L’émulateur démarre.  
+1. L’émulateur démarre.  
   
-2.  L'émulateur charge le système d'exploitation Windows Phone.  
+2. L'émulateur charge le système d'exploitation Windows Phone.  
   
-3.  L'émulateur affiche l'écran d'accueil Windows Phone.  
+3. L'émulateur affiche l'écran d'accueil Windows Phone.  
   
-4.  Votre application est déployée dans l'émulateur.  
+4. Votre application est déployée dans l'émulateur.  
   
-5.  Votre application s'exécute dans l'émulateur.  
+5. Votre application s'exécute dans l'émulateur.  
   
- Si l'émulateur sélectionné est déjà en cours d'exécution, votre application est déployée et démarrée dans l'émulateur en exécution. Une seule instance de chaque émulateur peut être exécutée à la fois.  
+   Si l'émulateur sélectionné est déjà en cours d'exécution, votre application est déployée et démarrée dans l'émulateur en exécution. Une seule instance de chaque émulateur peut être exécutée à la fois.  
   
 > [!TIP]
 >  Quand vous testez votre application dans l'émulateur, laissez l'émulateur ouvert entre les sessions de débogage pour pouvoir réexécuter votre application rapidement.  
@@ -75,13 +75,13 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
 ##### <a name="to-stop-a-running-app"></a>Pour arrêter une application en cours d'exécution  
   
--   Pour arrêter une application en cours d'exécution, effectuez l'une des opérations suivantes :  
+- Pour arrêter une application en cours d'exécution, effectuez l'une des opérations suivantes :  
   
-    -   Dans Visual Studio, sur le **déboguer** menu, cliquez sur **arrêter le débogage**, ou appuyez sur MAJ + F5.  
+  - Dans Visual Studio, sur le **déboguer** menu, cliquez sur **arrêter le débogage**, ou appuyez sur MAJ + F5.  
   
-    -   Dans l’émulateur, appuyez sur la **retour** bouton pour quitter l’application. Si la page active de l’application n’était pas page de démarrage de l’application, vous devrez peut-être appuyer sur le **retour** bouton plusieurs fois.  
+  - Dans l’émulateur, appuyez sur la **retour** bouton pour quitter l’application. Si la page active de l’application n’était pas page de démarrage de l’application, vous devrez peut-être appuyer sur le **retour** bouton plusieurs fois.  
   
-     L'application se ferme et l'écran de démarrage s'ouvre. Cette étape termine la session active de débogage.  
+    L'application se ferme et l'écran de démarrage s'ouvre. Cette étape termine la session active de débogage.  
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Pour redémarrer une application sans débogage  
   
@@ -122,21 +122,21 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 ##  <a name="BKMK_buttons"></a> Utiliser les boutons physiques simulés dans l’émulateur  
  Simulez l'utilisation des boutons physiques d'un téléphone à l'aide des boutons physiques simulés situés à droite de l'écran de l'émulateur.  
   
--   Cliquez sur le **Power** bouton pour simuler la désactivant et l’affichage. Cliquez et maintenez le bouton enfoncé pour simuler la désactivation du téléphone.  
+- Cliquez sur le **Power** bouton pour simuler la désactivant et l’affichage. Cliquez et maintenez le bouton enfoncé pour simuler la désactivation du téléphone.  
   
--   Cliquez sur le **monter le Volume** ou **baisser le Volume** bouton pour simuler la modification du volume des haut-parleurs du téléphone pour les appels téléphoniques et les notifications.  
+- Cliquez sur le **monter le Volume** ou **baisser le Volume** bouton pour simuler la modification du volume des haut-parleurs du téléphone pour les appels téléphoniques et les notifications.  
   
--   Le **caméra** bouton lance l’application caméra. Vous pouvez simuler la prise de photo ou de vidéo à l'aide des commandes de l'application Caméra.  
+- Le **caméra** bouton lance l’application caméra. Vous pouvez simuler la prise de photo ou de vidéo à l'aide des commandes de l'application Caméra.  
   
- La capture d'écran suivante montre les boutons physiques simulés.  
+  La capture d'écran suivante montre les boutons physiques simulés.  
   
-1.  L'image de gauche affiche l'écran d'accueil sur l'émulateur.  
+1. L'image de gauche affiche l'écran d'accueil sur l'émulateur.  
   
-2.  L’image du milieu affiche l’émulateur après avoir appuyé sur le **Power** bouton pour désactiver l’affichage.  
+2. L’image du milieu affiche l’émulateur après avoir appuyé sur le **Power** bouton pour désactiver l’affichage.  
   
-3.  L’image de droite affiche l’écran de l’émulateur après avoir appuyé sur le **monter le Volume** bouton pour augmenter le volume.  
+3. L’image de droite affiche l’écran de l’émulateur après avoir appuyé sur le **monter le Volume** bouton pour augmenter le volume.  
   
- ![Boutons sur l’émulateur Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
+   ![Boutons sur l’émulateur Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
 ##  <a name="BKMK_tasks_kbd"></a> Utiliser le clavier de l’ordinateur avec l’émulateur  
  L'émulateur prend en charge le mappage du clavier physique de votre ordinateur de développement au clavier d'un Windows Phone. Le comportement des touches est le même que sur un appareil Windows Phone.  
@@ -175,21 +175,21 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
  Par exemple, si votre application requiert plusieurs contacts, vous pouvez créer les enregistrements de contact une fois et enregistrer un instantané de l'émulateur. Sinon, vous devez recréez les enregistrements de contact chaque fois que vous démarrez l'émulateur.  
   
--   Cliquez sur **nouveau point de contrôle** pour capturer un nouvel instantané de l’état de l’émulateur avec les données et les paramètres requis pour tester votre application plus tard. Le nouveau point de contrôle est ajouté à la **points de contrôle** liste.  
+- Cliquez sur **nouveau point de contrôle** pour capturer un nouvel instantané de l’état de l’émulateur avec les données et les paramètres requis pour tester votre application plus tard. Le nouveau point de contrôle est ajouté à la **points de contrôle** liste.  
   
-     Vous ne pouvez pas capturer un point de vérification si le débogueur est attaché à l'émulateur.  
+   Vous ne pouvez pas capturer un point de vérification si le débogueur est attaché à l'émulateur.  
   
--   Sélectionnez un point de contrôle dans le **points de contrôle** liste pour afficher les informations sur le point de contrôle.  
+- Sélectionnez un point de contrôle dans le **points de contrôle** liste pour afficher les informations sur le point de contrôle.  
   
--   Sélectionnez la case dans la **par défaut** colonne afin qu’un point de contrôle enregistré le point de contrôle par défaut pour l’émulateur actif.  
+- Sélectionnez la case dans la **par défaut** colonne afin qu’un point de contrôle enregistré le point de contrôle par défaut pour l’émulateur actif.  
   
--   Cliquez sur **restaurer** pour redémarrer le système d’exploitation Windows Phone sur l’émulateur et charger l’instantané sélectionné.  
+- Cliquez sur **restaurer** pour redémarrer le système d’exploitation Windows Phone sur l’émulateur et charger l’instantané sélectionné.  
   
--   Cliquez sur **supprimer** pour supprimer un instantané dont vous n’avez plus besoin.  
+- Cliquez sur **supprimer** pour supprimer un instantané dont vous n’avez plus besoin.  
   
- L’image d’origine de l’émulateur apparaît toujours comme premier élément dans le **points de contrôle** liste et ne peut pas être modifiées ou supprimées. Toutefois, vous pouvez sélectionner un autre instantané que l'image par défaut de l'émulateur.  
+  L’image d’origine de l’émulateur apparaît toujours comme premier élément dans le **points de contrôle** liste et ne peut pas être modifiées ou supprimées. Toutefois, vous pouvez sélectionner un autre instantané que l'image par défaut de l'émulateur.  
   
- ![Onglet points de contrôle de l’émulateur Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
+  ![Onglet points de contrôle de l’émulateur Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Captures d’écran dans l’émulateur  
  Vous pouvez créer des captures d'écran de vos applications Windows Phone à l'aide de l'outil de capture d'écran de la fenêtre Outils supplémentaires. L’outil crée des fichiers PNG dans la même résolution que celle de l’émulateur en cours d’exécution.  
@@ -198,27 +198,27 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
 #### <a name="to-create-an-app-screenshot-by-using-the-built-in-emulator-screenshot-tool"></a>Pour créer une capture d'écran d'application à l'aide de l'outil de capture d'écran intégré à l'émulateur  
   
-1.  Pour optimiser la qualité de vos captures d'écran, définissez le niveau de zoom de l'émulateur sur 100 %. Plus le niveau de zoom est élevé, plus la qualité de la capture d'écran est élevée.  
+1. Pour optimiser la qualité de vos captures d'écran, définissez le niveau de zoom de l'émulateur sur 100 %. Plus le niveau de zoom est élevé, plus la qualité de la capture d'écran est élevée.  
   
-2.  Démarrez votre application dans l'émulateur.  
+2. Démarrez votre application dans l'émulateur.  
   
-3.  Dans la barre d’outils de l’émulateur, cliquez sur le bouton développer pour ouvrir le **des outils supplémentaires** fenêtre.  
+3. Dans la barre d’outils de l’émulateur, cliquez sur le bouton développer pour ouvrir le **des outils supplémentaires** fenêtre.  
   
-4.  Cliquez sur le **capture d’écran** onglet.  
+4. Cliquez sur le **capture d’écran** onglet.  
   
-5.  Lorsque votre application est prête, cliquez sur le **capturer** bouton.  
+5. Lorsque votre application est prête, cliquez sur le **capturer** bouton.  
   
-     La capture d'écran apparaît dans l'espace de travail.  
+    La capture d'écran apparaît dans l'espace de travail.  
   
-6.  Cliquez sur le **enregistrer** bouton pour ouvrir la **Enregistrer sous** boîte de dialogue.  
+6. Cliquez sur le **enregistrer** bouton pour ouvrir la **Enregistrer sous** boîte de dialogue.  
   
-7.  Choisissez l’emplacement et **nom de fichier** que vous souhaitez, puis cliquez sur **enregistrer**.  
+7. Choisissez l’emplacement et **nom de fichier** que vous souhaitez, puis cliquez sur **enregistrer**.  
   
-8.  Vous pouvez aussi accéder à d'autres pages de votre application et créer d'autres captures d'écran.  
+8. Vous pouvez aussi accéder à d'autres pages de votre application et créer d'autres captures d'écran.  
   
 9. Lancez un émulateur avec une résolution d’écran différente pour créer les mêmes captures d’écran avec différentes résolutions. Si vous avez exécuté votre application avec débogage, vous devez arrêter le débogage avant de pouvoir la réexécuter sur un autre émulateur.  
   
- Désactivez les compteurs de fréquence des trames sur l'écran de l'émulateur avant de créer des captures d'écran destinées au Windows Phone Store.  
+   Désactivez les compteurs de fréquence des trames sur l'écran de l'émulateur avant de créer des captures d'écran destinées au Windows Phone Store.  
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Pour désactiver les compteurs de fréquence des trames dans l'émulateur avant de créer des captures d'écran  
   
