@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd034f4802679daa442f04b469a37f04d580ea94
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: da2ddc582c6555e8ec4567f4faace603f6f0f677
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872484"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes et des contrôles Windows Forms dans des projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à une feuille de calcul Microsoft Office Excel et les lier à des données au moment de l’exécution.
@@ -31,11 +31,11 @@ ms.locfileid: "36758908"
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Ajout d’un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle à une feuille de calcul lors de l’exécution.
+- Ajout d’un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle à une feuille de calcul lors de l’exécution.
 
--   Création d’un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle à une instance d’un dataset.
+- Création d’un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle à une instance d’un dataset.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
@@ -66,27 +66,27 @@ ms.locfileid: "36758908"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Pour ajouter un dataset typé au projet
 
-1.  Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.
+1. Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.
 
-2.  Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
+2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
-3.  Cliquez sur **Base de données**, puis sur **Suivant**.
+3. Cliquez sur **Base de données**, puis sur **Suivant**.
 
-4.  Si vous disposez d’une connexion à la base de données `AdventureWorksLT` , choisissez cette connexion et cliquez sur **Suivant**.
+4. Si vous disposez d’une connexion à la base de données `AdventureWorksLT` , choisissez cette connexion et cliquez sur **Suivant**.
 
-     Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+    Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
-5.  Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
+5. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
-6.  Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Address (SalesLT)**.
+6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Address (SalesLT)**.
 
-7.  Cliquez sur **Terminer**.
+7. Cliquez sur **Terminer**.
 
-     Le *AdventureWorksLTDataSet.xsd* fichier est ajouté au **l’Explorateur de solutions**. Ce fichier définit les éléments suivants :
+    Le *AdventureWorksLTDataSet.xsd* fichier est ajouté au **l’Explorateur de solutions**. Ce fichier définit les éléments suivants :
 
-    -   Un dataset typé nommé `AdventureWorksLTDataSet`. Ce dataset représente le contenu de la table **Address (SalesLT)** dans la base de données AdventureWorksLT.
+   - Un dataset typé nommé `AdventureWorksLTDataSet`. Ce dataset représente le contenu de la table **Address (SalesLT)** dans la base de données AdventureWorksLT.
 
-    -   Un TableAdapter nommé `AddressTableAdapter`. Ce TableAdapter peut être utilisé pour lire et écrire des données le `AdventureWorksLTDataSet`. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un TableAdapter nommé `AddressTableAdapter`. Ce TableAdapter peut être utilisé pour lire et écrire des données le `AdventureWorksLTDataSet`. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Vous utiliserez ces deux objets ultérieurement dans cette procédure pas à pas.
 

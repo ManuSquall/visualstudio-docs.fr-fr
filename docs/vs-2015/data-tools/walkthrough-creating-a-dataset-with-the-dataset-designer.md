@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868259"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : création d'un groupe de données avec le Concepteur de DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Dans cette procédure pas à pas, vous allez créer un jeu de données à l’ai
   
  Cette procédure pas à pas décrit notamment les tâches suivantes :  
   
--   Création d’un nouveau **Windows Application** projet.  
+- Création d’un nouveau **Windows Application** projet.  
   
--   Ajout de vide **DataSet** élément au projet.  
+- Ajout de vide **DataSet** élément au projet.  
   
--   Création et configuration d’une source de données dans votre application en générant un dataset avec le **Concepteur de Dataset**.  
+- Création et configuration d’une source de données dans votre application en générant un dataset avec le **Concepteur de Dataset**.  
   
--   Création d’une connexion à la base de données Northwind dans **Explorateur de serveurs**.  
+- Création d’une connexion à la base de données Northwind dans **Explorateur de serveurs**.  
   
--   Création de tables avec les TableAdapters dans le jeu de données basée sur des tables dans la base de données.  
+- Création de tables avec les TableAdapters dans le jeu de données basée sur des tables dans la base de données.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  

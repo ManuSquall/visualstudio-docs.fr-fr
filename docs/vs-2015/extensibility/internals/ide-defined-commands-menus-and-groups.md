@@ -17,12 +17,12 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0707544f739f934b49c6092bcb4c1c61975028ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cebe468e6325c73802ec073fc250a598f897c2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848512"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Commandes, menus et groupes définis par l’IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Nombreux menus, les commandes et les groupes de commandes sont déjà définis p
 ## <a name="finding-environment-defined-commands"></a>Recherche des commandes définies par l’environnement  
  Les commandes d’environnement sont définies dans un ensemble de quatre fichiers .vsct :  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- Ces fichiers se trouvent dans  *\<chemin d’installation de Visual Studio SDK >* \VisualStudioIntegration\Common\Inc\\. Ces fichiers fournissent les définitions et les GUID des menus et des groupes que vous pouvez utiliser dans le fichier de configuration (.vsct) de table de commande de votre VSPackage en tant que conteneurs pour vos propres menus, les groupes et les commandes.  
+  Ces fichiers se trouvent dans  *\<chemin d’installation de Visual Studio SDK >* \VisualStudioIntegration\Common\Inc\\. Ces fichiers fournissent les définitions et les GUID des menus et des groupes que vous pouvez utiliser dans le fichier de configuration (.vsct) de table de commande de votre VSPackage en tant que conteneurs pour vos propres menus, les groupes et les commandes.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [GUID et ID des menus Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

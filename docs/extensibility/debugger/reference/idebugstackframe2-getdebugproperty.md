@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty | Documents Microsoft
+title: IDebugStackFrame2::GetDebugProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d0fcb648f25667d47a164c14443bafd14cc315f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f1a8153326fbb88a569680c84376b8c7c911622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883312"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Obtient une description des propriétés d’un frame de pile.  
@@ -47,7 +47,7 @@ int GetDebugProperty (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Appel de la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) méthode avec les filtres appropriés peut récupérer les variables locales, les paramètres de méthode, les registres et le pointeur « this » associé le frame de pile.  
+ Appel de la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) méthode avec les filtres appropriés peut récupérer les variables locales, des paramètres de méthode, des registres et d’un pointeur « this » associé au frame de pile.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

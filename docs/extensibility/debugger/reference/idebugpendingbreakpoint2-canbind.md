@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Documents Microsoft
+title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e09bae8cfa6b4c2ba1b79ff74945e5256e23ed2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47a40691de66828a1b46067393cddaa7e303d118
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872601"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Détermine si ce point d’arrêt en attente peut lier à un emplacement du code.  
+Détermine si ce point d’arrêt en attente peut lier à un emplacement de code.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,13 +45,13 @@ int CanBind (
  [out] Retourne un [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objet qui contient une liste de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objets si des erreurs peuvent se.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK.` retourne `S_FALSE` si le point d’arrêt ne peut pas effectuer de liaison, auquel cas les erreurs sont retournées par la `ppErrorEnum` paramètre. Sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
+ En cas de réussite, retourne `S_OK.` retourne `S_FALSE` si le point d’arrêt ne peut pas être lié, auquel cas les erreurs sont retournées par la `ppErrorEnum` paramètre. Sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée pour déterminer ce qui se passerait si cela en attente de point d’arrêt a été lié. Appelez le [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) méthode réellement lier le point d’arrêt en attente.  
+ Cette méthode est appelée pour déterminer ce qui se passerait si celle-ci en attente de point d’arrêt a été liée. Appelez le [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) méthode réellement lier le point d’arrêt en attente.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CPendingBreakpoint` objet qui expose la [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CPendingBreakpoint` objet qui expose le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
@@ -142,4 +142,4 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [Lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

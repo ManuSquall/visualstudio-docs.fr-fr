@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845263"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procédure : utiliser le concepteur d'importations
 
@@ -25,13 +25,13 @@ Le concepteur d'importations vous permet d'entrer des espaces de noms pour les t
 
 Le concepteur d'importations réagit aux modifications apportées à l'interface utilisateur ainsi qu'aux modifications apportées lors de l'enregistrement du workflow. Lorsque le workflow est enregistré, des espaces de noms peuvent être automatiquement ajoutés au concepteur d'importations. Notamment :
 
--   les espaces de noms pour tout type utilisé dans les déclarations de variables et d'arguments ;
+- les espaces de noms pour tout type utilisé dans les déclarations de variables et d'arguments ;
 
--   les espaces de noms pour tout type utilisé dans des expressions ;
+- les espaces de noms pour tout type utilisé dans des expressions ;
 
--   tous les autres espaces de noms requis pour la sérialisation du workflow (par exemple, les espaces de noms utilisés par les activités personnalisées déposées dans le workflow).
+- tous les autres espaces de noms requis pour la sérialisation du workflow (par exemple, les espaces de noms utilisés par les activités personnalisées déposées dans le workflow).
 
- Lorsque le workflow est enregistré, vous pouvez remarquer que certains espaces de noms que vous avez supprimés manuellement sont automatiquement à nouveau ajoutés au concepteur d'importations en raison de la logique décrite dans la liste précédente.
+  Lorsque le workflow est enregistré, vous pouvez remarquer que certains espaces de noms que vous avez supprimés manuellement sont automatiquement à nouveau ajoutés au concepteur d'importations en raison de la logique décrite dans la liste précédente.
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Pour ajouter un espace de noms à la liste d'espaces de noms importés
 

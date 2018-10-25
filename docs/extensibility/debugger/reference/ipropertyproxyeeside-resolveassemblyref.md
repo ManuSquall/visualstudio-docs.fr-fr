@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Documents Microsoft
+title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c95d33c2d31e5476153ddd0d0a9598f67080c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7711d185e92b0cc8a29070aa78a4acff835df33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846939"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Détermine l’emplacement de la référence de l’assembly managé spécifié.  
+Détermine l’emplacement de la référence d’assembly managé spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ int ResolveAssemblyRef(
  [in] Nom de l’assembly à résoudre.  
   
  `assemBytes`  
- [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets de l’assembly associés à la référence.  
+ [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets d’assembly associés à la référence.  
   
  `assemPdb`  
  [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker les données associées à cette référence.  
@@ -67,7 +67,7 @@ int ResolveAssemblyRef(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- En règle générale, cette méthode n’est pas implémentée par un évaluateur d’expression personnalisée.  
+ Cette méthode n’est pas généralement implémentée par un évaluateur d’expression personnalisée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

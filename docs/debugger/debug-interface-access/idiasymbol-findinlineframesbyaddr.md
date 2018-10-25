@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr | Documents Microsoft
+title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf330238d213854ba26d8345d0daaee7b3f9b1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0ddc8e2ea4c4ba8e2f142a3f30ec1206a8abc4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862370"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Récupère une énumération qui permet à un client itérer au sein de tous les cadres inline sur une adresse donnée.  
+Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse donnée.  
   
 ## <a name="syntax"></a>Syntaxe  
   

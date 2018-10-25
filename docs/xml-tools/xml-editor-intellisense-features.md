@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34476844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886381"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
 L'éditeur XML offre des fonctionnalités IntelliSense complètes comparables à celles d'autres éditeurs de langage fournis dans Visual Studio. Cette section explique comment vous pouvez utiliser IntelliSense avec des documents en langage XSD (XML Schema Definition) et XSLT.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense dans un document XSD
- Une fois un schéma est associé à votre document, vous obtenez une liste déroulante d’éléments attendus chaque fois que vous tapez `"<"` ou cliquez sur le **afficher une liste des membres objets** bouton dans la barre d’outils de l’éditeur XML. Pour plus d’informations sur la façon d’associer des schémas à vos documents XML, consultez [validation de documents XML](../xml-tools/xml-document-validation.md).
+ Une fois un schéma est associé à votre document, vous obtenez une liste déroulante d’éléments attendus chaque fois que vous tapez `"<"` ou cliquez sur le **afficher une liste des membres objets** bouton sur la barre d’outils de l’éditeur XML. Pour plus d’informations sur la façon d’associer des schémas à vos documents XML, consultez [validation de documents XML](../xml-tools/xml-document-validation.md).
 
  Lorsque vous entrez un ESPACE dans une étiquette de début, vous obtenez également une liste déroulante de tous les attributs qui peuvent être ajoutés à l’élément actuel.
 
@@ -74,7 +74,7 @@ Pour plus d’informations, consultez [procédure pas à pas : utilisation d’
 
 -   Fin d'une déclaration DTD : `>`
 
-L’éditeur XML a également la possibilité d’insérer un espace de noms si vous sélectionnez un élément qualifié d’espace de noms ou d’attribut à partir d’une liste IntelliSense et l’espace de noms de cet élément ou un attribut n’est pas encore dans la portée de déclaration.
+L’éditeur XML a également la possibilité d’insérer un espace de noms déclaration si vous sélectionnez un élément qualifié d’espace de noms ou d’attribut à partir d’une liste IntelliSense et l’espace de noms pour cet élément ou cet attribut n’est pas encore dans la portée.
 
 Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSense, sachant que le préfixe est lié à l'espace de noms `http://books` qui n'a pas encore été déclaré dans le document, l'éditeur XML insère automatiquement la déclaration d'espace de noms requise. Il en résulte le texte XML suivant :
 
@@ -105,7 +105,7 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
  Le **insertion automatique** section de la **divers** page contrôle le comportement suivant :
 
 |Name|Description|
-|----------|-----------------|
+|-|-----------------|
 |Balises de fermeture|Insère des balises de fermeture pour les nouveaux éléments.|
 |Guillemets d'attribut|Insère les guillemets marquant une valeur d'attribut lorsque vous entrez un nouveau nom d'attribut.|
 |Autre balisage|Complète les commentaires, CDATA, DOCTYPE, instructions de traitement et autres déclarations de balisage.|
@@ -116,7 +116,7 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 2.  Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.
 
-3.  Apporter des modifications à la **insertion automatique** et cliquez sur **OK**.
+3.  Apporter des modifications à la **insertion automatique** section et cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

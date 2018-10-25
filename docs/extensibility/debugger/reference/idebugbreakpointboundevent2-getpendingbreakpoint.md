@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Documents Microsoft
+title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a9b08909bc3d10c80caa5dcf6350368066ca6c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55baf532e8e08d26e2b7258dbb4e95bb3aa78010
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850111"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 Obtient le point d’arrêt en attente qui est lié.  
@@ -47,7 +47,7 @@ int GetPendingBreakpoint(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CBreakpointSetDebugEventBase** objet qui expose la [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CBreakpointSetDebugEventBase** objet qui expose le [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interface.  
   
 ```cpp  
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(  

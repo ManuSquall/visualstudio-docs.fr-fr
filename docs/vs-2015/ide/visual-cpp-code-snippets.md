@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861358"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
 ## <a name="inserting-a-code-snippet"></a>Insertion d'un extrait de code  
  Pour insérer un extrait de code, ouvrez un fichier de code C++ (.cpp ou .h), cliquez n'importe où dans le fichier et effectuez l'une des opérations suivantes :  
   
--   Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Insérer un extrait**  
+- Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Insérer un extrait**  
   
--   Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**  
+- Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**  
   
--   Utilisez les touches d’accès rapide : **Ctrl + K + X**  
+- Utilisez les touches d’accès rapide : **Ctrl + K + X**  
   
- Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :  
+  Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Utilisation d'un extrait de code pour entourer du code sélectionné  
  Pour utiliser un extrait de code pour entourer du code sélectionné, sélectionnez une ligne (ou plusieurs lignes) et effectuez l'une des opérations suivantes :  
   
-1.  Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Entourer de**  
+1. Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Entourer de**  
   
-2.  Dans le menu **Edition / IntelliSense**, sélectionnez **Entourer de**  
+2. Dans le menu **Edition / IntelliSense**, sélectionnez **Entourer de**  
   
-3.  Utilisez les touches d’accès rapide : **Ctrl + K + S**  
+3. Utilisez les touches d’accès rapide : **Ctrl + K + S**  
   
- Sélectionnez **#if**. Vous devez voir quelque chose de similaire à :  
+   Sélectionnez **#if**. Vous devez voir quelque chose de similaire à :  
   
 ```cpp  
 #if 0  

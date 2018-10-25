@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_type | Documents Microsoft
+title: IDiaStackFrame::get_type | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3faa997311645ac8a1f6a8ad7dec701e386497e5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 99abb7de8955fce6c532b126d883f3b327134a1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884366"
 ---
 # <a name="idiastackframegettype"></a>IDiaStackFrame::get_type
-Récupère le type de frame.  
+Récupère le type de trame.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,11 +34,11 @@ HRESULT get_type (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [stackframetypeenum, énumération](../../debugger/debug-interface-access/stackframetypeenum.md) énumération.  
+ [out] Retourne une valeur de la [StackFrameTypeEnum (énumération)](../../debugger/debug-interface-access/stackframetypeenum.md) énumération.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [StackFrameTypeEnum (énumération)](../../debugger/debug-interface-access/stackframetypeenum.md)
+ [StackFrameTypeEnum, énumération](../../debugger/debug-interface-access/stackframetypeenum.md)

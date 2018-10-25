@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e38a2ae9c7cdf1cd8f8e664571add353a87dd7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7abb977d69f6221e396a5aea8c2268d505b4ab21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870456"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143 : Les méthodes transparentes ne doivent pas utiliser de demandes de sécurité
+
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotDemand|

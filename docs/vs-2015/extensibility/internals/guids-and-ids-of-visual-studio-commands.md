@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868574"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID et ID des commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Les valeurs GUID et l’ID de commandes incluses dans l’environnement de déve
   
 #### <a name="to-locate-a-command-definition"></a>Pour localiser une définition de commande  
   
-1.  Dans Visual Studio, ouvrez les fichiers suivants dans le *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ dossier : SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
+1. Dans Visual Studio, ouvrez les fichiers suivants dans le *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ dossier : SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     La plupart des commandes de Visual Studio sont définies dans SharedCmdDef.vsct et ShellCmdDef.vsct. VsDbgCmdUsed.vsct définit des commandes qui se rapportent au débogueur et Venusmenu.vsct définit des commandes qui sont spécifiques au développement Web.  
+    La plupart des commandes de Visual Studio sont définies dans SharedCmdDef.vsct et ShellCmdDef.vsct. VsDbgCmdUsed.vsct définit des commandes qui se rapportent au débogueur et Venusmenu.vsct définit des commandes qui sont spécifiques au développement Web.  
   
-2.  Si la commande est un élément de menu, notez le texte exact de l’élément de menu. Si la commande est un bouton sur une barre d’outils, notez le texte d’info-bulle qui apparaît lorsque vous pointez sur elle.  
+2. Si la commande est un élément de menu, notez le texte exact de l’élément de menu. Si la commande est un bouton sur une barre d’outils, notez le texte d’info-bulle qui apparaît lorsque vous pointez sur elle.  
   
-3.  Appuyez sur CTRL + F pour ouvrir le **trouver** boîte de dialogue.  
+3. Appuyez sur CTRL + F pour ouvrir le **trouver** boîte de dialogue.  
   
-4.  Dans le **rechercher** , tapez le texte que vous avez noté à l’étape 2.  
+4. Dans le **rechercher** , tapez le texte que vous avez noté à l’étape 2.  
   
-5.  Vérifiez que **tous les Documents ouverts** s’affiche dans le **Regarder dans** boîte.  
+5. Vérifiez que **tous les Documents ouverts** s’affiche dans le **Regarder dans** boîte.  
   
-6.  Cliquez sur le **suivant** jusqu'à ce que le texte est sélectionné dans le `<Strings>` section d’un [élément Button](../../extensibility/button-element.md).  
+6. Cliquez sur le **suivant** jusqu'à ce que le texte est sélectionné dans le `<Strings>` section d’un [élément Button](../../extensibility/button-element.md).  
   
-     Le `<Button>` élément apparaissant dans la commande est la définition de commande.  
+    Le `<Button>` élément apparaissant dans la commande est la définition de commande.  
   
- Lorsque vous avez trouvé la définition de commande, vous pouvez placer une copie de la commande sur un autre menu ou une barre d’outils, en créant un [CommandPlacement élément](../../extensibility/commandplacement-element.md) qui a le même `guid` et `id` valeurs en tant que la commande. Pour plus d’informations, consultez [création de groupes réutilisable de boutons](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Lorsque vous avez trouvé la définition de commande, vous pouvez placer une copie de la commande sur un autre menu ou une barre d’outils, en créant un [CommandPlacement élément](../../extensibility/commandplacement-element.md) qui a le même `guid` et `id` valeurs en tant que la commande. Pour plus d’informations, consultez [création de groupes réutilisable de boutons](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Cas particuliers  
  Dans les cas suivants, le texte de menu ou le texte d’info-bulle peut pas correspondre exactement à ce qui figure dans la définition de commande.  

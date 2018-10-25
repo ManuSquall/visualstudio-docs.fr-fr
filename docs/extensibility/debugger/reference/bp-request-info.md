@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Documents Microsoft
+title: BP_REQUEST_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e317f360eaa796eb8bdbea2a58950c8b72a3fef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf2138a96245e46057fb8ca4bca73b7146a48318
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877768"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Contient les informations requises pour implémenter un point d’arrêt.  
@@ -59,7 +59,7 @@ public struct BP_REQUEST_INFO {
   
 ## <a name="members"></a>Membres  
  `dwFields`  
- Une combinaison d’indicateurs à partir de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui spécifie les champs sont remplis.  
+ Une combinaison d’indicateurs de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui spécifie quels champs sont renseignés.  
   
  `guidLanguage`  
  GUID de la langue.  
@@ -80,20 +80,20 @@ public struct BP_REQUEST_INFO {
  Le nom du thread dans lequel le point d’arrêt se produit.  
   
  `bpCondition`  
- Le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure qui décrit les conditions dans lesquelles le point d’arrêt se déclenche.  
+ Le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure qui décrit les conditions sous lesquelles le point d’arrêt se déclenche.  
   
  `bpPassCount`  
  Le [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui contient les informations de nombre passe du point d’arrêt.  
   
  `dwFlags`  
- Une combinaison d’indicateurs à partir de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) énumération qui spécifie les indicateurs pour le point d’arrêt demandé.  
+ Une combinaison d’indicateurs de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) énumération qui spécifie les indicateurs pour le point d’arrêt demandé.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est retournée par la [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) (méthode).  
   
- Si vous avez besoin d’obtenir le fournisseur de moteur de débogage GUID, la contrainte de point d’arrêt ou le point de trace, consultez le [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.  
+ Si vous avez besoin obtenir le fournisseur de moteur de débogage GUID, la contrainte de point d’arrêt ou le point de trace, consultez le [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

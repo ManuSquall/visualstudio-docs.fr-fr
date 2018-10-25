@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 783f3101f567f5fe45a1de24a8dad866ea619a39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848128"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > Concepteur d’activités
 
-L'activité <xref:System.Activities.Statements.FlowSwitch%601> est un nœud conditionnel qui fournit la création de branches pour le flux de contrôle selon un critère de correspondance lorsque plus de deux branches sont requises. Si la création de branches de flux requiert uniquement deux chemins d'accès, utilisez l'activité <xref:System.Activities.Statements.FlowDecision> à la place.
+L’activité <xref:System.Activities.Statements.FlowSwitch%601> est un nœud conditionnel qui fournit la création de branches pour le flux de contrôle selon un critère de correspondance lorsque plus de deux branches sont requises. Si la création de branches de flux requiert uniquement deux chemins d’accès, utilisez l’activité <xref:System.Activities.Statements.FlowDecision> à la place.
 
 ## <a name="the-flowswitcht-activity"></a>FlowSwitch\<T > activité
 
@@ -43,7 +43,7 @@ Placez la souris sur le **FlowSwitch\<T >** Concepteur d’activités pour provo
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.FlowSwitch%601> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Spécifie l'expression qui est évaluée pour déterminer le cas du jeu de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> vers lequel basculer dans le chemin d'exécution.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Spécifie un mappage unique, à partir des résultats possibles obtenus de l'évaluation de la propriété <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>, à un jeu d'objets <xref:System.Activities.Statements.FlowNode>.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Spécifie le mappage lorsque l'évaluation de la propriété <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> ne correspond pas à l'une des valeurs contenues dans l'objet <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|

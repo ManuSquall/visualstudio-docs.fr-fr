@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847810"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Code personnalisé pour générateurs de connexions  
  Les quatre cases à cocher de l'interface utilisateur définissent différents types de personnalisation de générateurs de connexions :  
   
--   le **acceptation personnalisée** case à cocher sur une directive de rôle source ou cible  
+- le **acceptation personnalisée** case à cocher sur une directive de rôle source ou cible  
   
--   le **une connexion personnalisée** case à cocher sur une directive de rôle source ou cible  
+- le **une connexion personnalisée** case à cocher sur une directive de rôle source ou cible  
   
--   le **utilise la connexion personnalisée** case à cocher sur une directive de connexion  
+- le **utilise la connexion personnalisée** case à cocher sur une directive de connexion  
   
--   le **personnalisé est** propriété du Générateur de connexion  
+- le **personnalisé est** propriété du Générateur de connexion  
   
- Vous devez écrire un certain code de programme pour procéder à ces personnalisations. Pour savoir quel code vous devez fournir, cochez l'une de ces cases, cliquez sur Transformer tous les modèles, puis générez votre solution. Il en résultera un rapport d'erreurs. Double-cliquez sur le rapport d'erreurs pour afficher un commentaire expliquant quel code vous devez ajouter.  
+  Vous devez écrire un certain code de programme pour procéder à ces personnalisations. Pour savoir quel code vous devez fournir, cochez l'une de ces cases, cliquez sur Transformer tous les modèles, puis générez votre solution. Il en résultera un rapport d'erreurs. Double-cliquez sur le rapport d'erreurs pour afficher un commentaire expliquant quel code vous devez ajouter.  
   
 > [!NOTE]
 >  Pour ajouter un code personnalisé, créez une définition de classe partielle dans un fichier de code distinct des fichiers de code des dossiers GeneratedCode. Pour éviter de perdre votre travail, vous ne devez pas modifier les fichiers de code générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).  

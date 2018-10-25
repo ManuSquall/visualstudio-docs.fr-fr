@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891724"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Utilisation de la fenêtre Piles parallèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
 ## <a name="tasks-view"></a>Vue Tâches  
  Si votre application utilise <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets (code managé) ou `task_handle` objets (code natif) pour exprimer le parallélisme, vous pouvez utiliser la zone de liste déroulante dans la barre d’outils de la fenêtre Piles parallèles pour basculer vers *vue tâches*. La vue Tâches contient les piles d’appels des tâches et non celles des threads. Les différences entre la vue Tâches et la vue Threads sont les suivantes :  
   
--   Les piles d'appels des threads qui n'exécutent pas de tâches n'apparaissent pas.  
+- Les piles d'appels des threads qui n'exécutent pas de tâches n'apparaissent pas.  
   
--   Les piles d’appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d’afficher les frames les plus pertinents appartenant aux tâches.  
+- Les piles d’appels des threads qui exécutent des tâches sont tronquées visuellement en haut et en bas afin d’afficher les frames les plus pertinents appartenant aux tâches.  
   
--   Lorsque plusieurs tâches figurent sur un thread, les piles d’appels de ces tâches sont fractionnées dans des nœuds séparés.  
+- Lorsque plusieurs tâches figurent sur un thread, les piles d’appels de ces tâches sont fractionnées dans des nœuds séparés.  
   
- L’illustration suivante présente la vue Tâches de la fenêtre Piles parallèles à droite et la vue Threads correspondante à gauche.  
+  L’illustration suivante présente la vue Tâches de la fenêtre Piles parallèles à droite et la vue Threads correspondante à gauche.  
   
- ![Tâches d’affichage dans la fenêtre Piles parallèles](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Tâches d’affichage dans la fenêtre Piles parallèles](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Pour afficher la pile des appels complète, passez simplement en vue Threads en double-cliquant sur un frame de pile, puis sur **atteindre le Thread**.  
+  Pour afficher la pile des appels complète, passez simplement en vue Threads en double-cliquant sur un frame de pile, puis sur **atteindre le Thread**.  
   
- Comme indiqué dans le tableau précédent, vous pouvez afficher des informations supplémentaires en pointant le curseur de la souris sur un contexte de méthode. L’image suivante présente les informations de l’info-bulle pour la vue Threads et la vue Tâches.  
+  Comme indiqué dans le tableau précédent, vous pouvez afficher des informations supplémentaires en pointant le curseur de la souris sur un contexte de méthode. L’image suivante présente les informations de l’info-bulle pour la vue Threads et la vue Tâches.  
   
- ![Info-bulles dans la fenêtre Piles parallèles](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Info-bulles dans la fenêtre Piles parallèles](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Vue Méthode  
  À partir de la vue Threads ou de la vue Tâches, vous pouvez faire pivoter le graphique sur la méthode actuelle en cliquant sur l'icône Vue Méthode de la barre d'outils. La vue Méthode présente toutes les méthodes de tous les threads qui appellent ou sont appelés par la méthode actuelle. L'illustration suivante présente une vue Threads, ainsi que la façon dont les mêmes informations s'affichent dans la vue Méthode.  

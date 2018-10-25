@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount | Documents Microsoft
+title: IDebugArrayObject::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81788423523837b6e8b29a8869abca7b393cf37a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891399"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Obtient le nombre d’éléments dans le tableau.  
@@ -49,7 +49,7 @@ int GetCount(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode voit tous les éléments d’un objet tableau comme un tableau unidimensionnel, même si l’objet de tableau est multidimensionnel. Par exemple, étant donné le tableau `myarray[3][2][6]`, cette méthode retourne 36 dans le `pdwElements` paramètre. Utilisez le [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) méthode pour récupérer l’un des éléments individuels à la fois.  
+ Cette méthode voit tous les éléments d’un objet tableau comme un tableau unidimensionnel, même si l’objet de tableau est multidimensionnel. Par exemple, étant donné le tableau `myarray[3][2][6]`, cette méthode retourne 36 dans le `pdwElements` paramètre. Utilisez le [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) méthode pour récupérer les éléments individuels d’un à la fois.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

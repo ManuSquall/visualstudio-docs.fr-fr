@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum | Documents Microsoft
+title: StackFrameTypeEnum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853922"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Spécifie le type de frame de pile.  
@@ -39,13 +39,13 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Éléments  
  `FrameTypeFPO`  
- Pointeur de frame omis ; Information sur FPO disponible.  
+ Pointeur de frame omis ; Information FPO est disponible.  
   
  `FrameTypeTrap`  
- Cadre du noyau.  
+ Frame d’interruption du noyau.  
   
  `FrameTypeTSS`  
- Cadre du noyau.  
+ Frame d’interruption du noyau.  
   
  `FrameTypeStandard`  
  Frame de pile EBP standard.  
@@ -54,12 +54,12 @@ enum StackFrameTypeEnum {
  Pointeur de frame omis ; Informations de données image disponibles.  
   
  `FrameTypeUnknown`  
- Cadre qui ne dispose pas des informations de débogage.  
+ Frame qui n’a pas les informations de débogage.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs de cette énumération sont retournées par un appel à la [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par un appel à la [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878581"
 ---
 # <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,27 +90,27 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 ## <a name="property-and-item-evaluation-order"></a>Ordre d’évaluation des propriétés et des éléments  
  Pendant la phase d’évaluation d’une génération, les fichiers importés sont incorporés à la génération dans l’ordre dans lequel ils apparaissent. Les propriétés et les éléments sont définis en trois passes dans l’ordre suivant :  
   
--   Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent.  
+- Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent.  
   
--   Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent.  
+- Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent.  
   
--   Les éléments sont définis et modifiés dans l’ordre dans lequel ils apparaissent.  
+- Les éléments sont définis et modifiés dans l’ordre dans lequel ils apparaissent.  
   
- Pendant la phase d’exécution d’une génération, les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble en une seule phase dans l’ordre dans lequel ils apparaissent.  
+  Pendant la phase d’exécution d’une génération, les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble en une seule phase dans l’ordre dans lequel ils apparaissent.  
   
- Néanmoins, ce n’est pas complet. Lorsqu’une propriété, une définition d’élément ou un élément sont définis, leur valeur est évaluée. L’évaluateur d’expression développe la chaîne qui spécifie la valeur. Le développement de la chaîne dépend de la phase de la génération. Voici un ordre d’évaluation des éléments et des propriétés plus détaillé :  
+  Néanmoins, ce n’est pas complet. Lorsqu’une propriété, une définition d’élément ou un élément sont définis, leur valeur est évaluée. L’évaluateur d’expression développe la chaîne qui spécifie la valeur. Le développement de la chaîne dépend de la phase de la génération. Voici un ordre d’évaluation des éléments et des propriétés plus détaillé :  
   
--   Pendant la phase d’évaluation d’une génération :  
+- Pendant la phase d’évaluation d’une génération :  
   
-    -   Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés sont exécutées. Les valeurs de propriété de la forme $(PropertyName) sont développées dans des expressions. La valeur de propriété est définie sur l’expression développée.  
+  -   Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés sont exécutées. Les valeurs de propriété de la forme $(PropertyName) sont développées dans des expressions. La valeur de propriété est définie sur l’expression développée.  
   
-    -   Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés ont déjà été développées dans des expressions. Les valeurs de métadonnées sont définies sur les expressions développées.  
+  -   Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés ont déjà été développées dans des expressions. Les valeurs de métadonnées sont définies sur les expressions développées.  
   
-    -   Les types d’élément sont définis et modifiés dans l’ordre dans lequel ils apparaissent. Les valeurs d’éléments de la forme @(ItemType) sont développées. Les transformations d’élément sont également développées. Les fonctions et valeurs de propriétés ont déjà été développées dans des expressions. La liste d’éléments et les valeurs de métadonnées sont définies sur les expressions développées.  
+  -   Les types d’élément sont définis et modifiés dans l’ordre dans lequel ils apparaissent. Les valeurs d’éléments de la forme @(ItemType) sont développées. Les transformations d’élément sont également développées. Les fonctions et valeurs de propriétés ont déjà été développées dans des expressions. La liste d’éléments et les valeurs de métadonnées sont définies sur les expressions développées.  
   
--   Pendant la phase d’exécution d’une génération :  
+- Pendant la phase d’exécution d’une génération :  
   
-    -   Les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble dans l’ordre dans lequel ils apparaissent. Les fonctions de propriétés sont exécutées, et les valeurs de propriétés sont développées dans des expressions. Les valeurs d’éléments et les transformations d’élément sont également développées. Les valeurs de propriétés, les valeurs de types d’élément et les valeurs de métadonnées sont définies sur les expressions développées.  
+  -   Les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble dans l’ordre dans lequel ils apparaissent. Les fonctions de propriétés sont exécutées, et les valeurs de propriétés sont développées dans des expressions. Les valeurs d’éléments et les transformations d’élément sont également développées. Les valeurs de propriétés, les valeurs de types d’élément et les valeurs de métadonnées sont définies sur les expressions développées.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effets discrets de l’ordre d’évaluation  
  Dans la phase d’évaluation d’une génération, l’évaluation des propriétés précède celle des éléments. Néanmoins, les valeurs de certaines propriétés peuvent sembler dépendre des valeurs d’éléments. Examinez le script ci-dessous.  

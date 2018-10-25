@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876514"
 ---
 # <a name="cpu-usage"></a>Utilisation du processeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d'utilisation de l'UC  
   
-1.  Dans Visual Studio, définissez la configuration de solution sur **Version finale** et choisissez la cible de déploiement.  
+1. Dans Visual Studio, définissez la configuration de solution sur **Version finale** et choisissez la cible de déploiement.  
   
-     ![Sélectionner la version et l’ordinateur local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Sélectionner la version et l’ordinateur local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   L'exécution de l'application en mode **Version finale** vous offre une meilleure vue des performances réelles de votre application.  
+   -   L'exécution de l'application en mode **Version finale** vous offre une meilleure vue des performances réelles de votre application.  
   
-    -   L'exécution de l'application sur l'ordinateur local réplique au mieux l'exécution de l'application installée.  
+   -   L'exécution de l'application sur l'ordinateur local réplique au mieux l'exécution de l'application installée.  
   
-    -   Si vous collectez les données à partir d'un appareil distant, exécutez l'application directement sur l'appareil et non par une connexion Bureau à distance.  
+   -   Si vous collectez les données à partir d'un appareil distant, exécutez l'application directement sur l'appareil et non par une connexion Bureau à distance.  
   
-    -   Pour les applications Windows Phone, la collecte des données directement à partir de l' **Appareil** fournit les données les plus précises.  
+   -   Pour les applications Windows Phone, la collecte des données directement à partir de l' **Appareil** fournit les données les plus précises.  
   
-2.  Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
+2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
   
-3.  Choisissez **Utilisation de l'UC** , puis **Démarrer**.  
+3. Choisissez **Utilisation de l'UC** , puis **Démarrer**.  
   
-     ![Cliquer sur Utilisation du processeur](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Cliquer sur Utilisation du processeur](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Lorsque l'application démarre, cliquez sur **Obtenir le nombre maximal**. Attendez environ une seconde après que la sortie s'est affichée, puis choisissez **Obtenir le nombre maximal asynchrone**. L'attente entre les clics de bouton permet plus facilement d'isoler les routines de clic de bouton dans le rapport de diagnostic.  
+4. Lorsque l'application démarre, cliquez sur **Obtenir le nombre maximal**. Attendez environ une seconde après que la sortie s'est affichée, puis choisissez **Obtenir le nombre maximal asynchrone**. L'attente entre les clics de bouton permet plus facilement d'isoler les routines de clic de bouton dans le rapport de diagnostic.  
   
-5.  Quand apparaît la deuxième ligne de sortie, choisissez **Arrêter la collecte** dans le hub Performances et diagnostics.  
+5. Quand apparaît la deuxième ligne de sortie, choisissez **Arrêter la collecte** dans le hub Performances et diagnostics.  
   
- ![Arrêter la collecte des données CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Arrêter la collecte des données CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- L'outil Utilisation de l'UC analyse les données et affiche le rapport.  
+   L'outil Utilisation de l'UC analyse les données et affiche le rapport.  
   
- ![Rapport CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Rapport CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analyser le rapport d'utilisation de l'UC  
   

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19c2ab969de8f3e1e24cf789ae3979d2c15809b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851476"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio
   Cette procédure pas à pas montre comment importer un flux de travail réutilisable créé avec SharePoint Designer 2010 dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet de flux de travail SharePoint.  
@@ -38,17 +38,17 @@ ms.locfileid: "42626500"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d’un flux de travail simple et réutilisable dans SharePoint Designer.  
+- Création d’un flux de travail simple et réutilisable dans SharePoint Designer.  
   
--   Exportation du flux de travail réutilisable de SharePoint Designer pour un *.wsp* fichier et dans SharePoint.  
+- Exportation du flux de travail réutilisable de SharePoint Designer pour un *.wsp* fichier et dans SharePoint.  
   
--   L’importation de la *.wsp* votre fichier en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en utilisant le projet de flux de travail réutilisable importation.  
+- L’importation de la *.wsp* votre fichier en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en utilisant le projet de flux de travail réutilisable importation.  
   
--   Modification du flux de travail en ajoutant du code.  
+- Modification du flux de travail en ajoutant du code.  
   
--   À l’aide du flux de travail importé dans un site SharePoint.  
+- À l’aide du flux de travail importé dans un site SharePoint.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -64,21 +64,21 @@ ms.locfileid: "42626500"
   
 #### <a name="to-create-sharepoint-subsites"></a>Pour créer des sous-sites de SharePoint  
   
-1.  Dans SharePoint Designer 2010, dans la barre de menus, choisissez **fichier** > **nouveau Site Web vide**.  
+1. Dans SharePoint Designer 2010, dans la barre de menus, choisissez **fichier** > **nouveau Site Web vide**.  
   
-2.  Dans le **nouveau Site Web vide** boîte de dialogue, accédez à un site SharePoint où vous souhaitez créer le flux de travail, ou utilisez la valeur http://*Nom_système*/, puis choisissez le **OK** bouton.  
+2. Dans le **nouveau Site Web vide** boîte de dialogue, accédez à un site SharePoint où vous souhaitez créer le flux de travail, ou utilisez la valeur http://<em>Nom_système</em>/, puis choisissez le **OK** bouton.  
   
-     La page d’accueil s’affiche.  
+    La page d’accueil s’affiche.  
   
-3.  Dans le **sous-sites** , choisissez le **New** bouton.  
+3. Dans le **sous-sites** , choisissez le **New** bouton.  
   
-4.  Dans le **New** boîte de dialogue, sélectionnez **modèles SharePoint** à partir de la liste dans le volet gauche, puis choisissez **Site d’équipe** dans la liste dans le volet droit.  
+4. Dans le **New** boîte de dialogue, sélectionnez **modèles SharePoint** à partir de la liste dans le volet gauche, puis choisissez **Site d’équipe** dans la liste dans le volet droit.  
   
-5.  Dans le **spécifier l’emplacement du site Web** zone, remplacez le mot **sous-site** dans l’URL par **SPD1**, puis choisissez le **OK** bouton.  
+5. Dans le **spécifier l’emplacement du site Web** zone, remplacez le mot **sous-site** dans l’URL par **SPD1**, puis choisissez le **OK** bouton.  
   
-     Cette opération ouvre le nouveau sous-site dans SharePoint Designer. Fermez cette instance de SharePoint Designer, puis revenez à la première instance (site de niveau supérieur).  
+    Cette opération ouvre le nouveau sous-site dans SharePoint Designer. Fermez cette instance de SharePoint Designer, puis revenez à la première instance (site de niveau supérieur).  
   
-6.  Répétez les étapes 3 à 5 pour créer le deuxième sous-site, cette fois en remplaçant le mot **sous-site** dans le [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] avec **SPD2**.  
+6. Répétez les étapes 3 à 5 pour créer le deuxième sous-site, cette fois en remplaçant le mot **sous-site** dans le [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] avec **SPD2**.  
   
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>Créer un flux de travail réutilisable de SharePoint Designer
  Étant donné que SharePoint n’inclut pas de n’importe quel flux de travail réutilisables que vous pouvez utiliser pour cet exemple, vous allez créer un. Dans ce flux de travail simple, lorsqu’un utilisateur entre une nouvelle tâche dans la liste des tâches qui a un logiciel spécifique, la tâche est affectée à cet utilisateur.  
@@ -158,32 +158,32 @@ ms.locfileid: "42626500"
   
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>Importer un workflow à partir d’un fichier .wsp et le modifier  
   
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dans la barre de menus, choisissez **fichier** > **New** > **projet**.  
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dans la barre de menus, choisissez **fichier** > **New** > **projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, développez le **SharePoint** nœud sous **Visual C#** ou **Visual Basic**, puis choisissez le **2010** nœud.  
+2. Dans le **nouveau projet** boîte de dialogue, développez le **SharePoint** nœud sous **Visual C#** ou **Visual Basic**, puis choisissez le **2010** nœud.  
   
-3.  Dans le **modèles** volet, choisissez le **importation de flux de travail réutilisable SharePoint 2010** modèle, laisser le nom du projet en tant que **WorkflowImportProject1**, puis choisissez le **OK** bouton.  
+3. Dans le **modèles** volet, choisissez le **importation de flux de travail réutilisable SharePoint 2010** modèle, laisser le nom du projet en tant que **WorkflowImportProject1**, puis choisissez le **OK** bouton.  
   
-     L’Assistant de personnalisation de SharePoint s’affiche.  
+    L’Assistant de personnalisation de SharePoint s’affiche.  
   
-4.  Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez le [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] du deuxième sous-site SharePoint que vous avez créé précédemment : http://*nom système*  /SPD2.  
+4. Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez le [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] du deuxième sous-site SharePoint que vous avez créé précédemment : http://<em>nom système</em>  /SPD2.  
   
-5.  Dans le **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez le **déployer en tant que solution de batterie** case d’option, puis choisissez le **suivant** bouton.  
+5. Dans le **quel est le niveau de confiance de cette solution SharePoint ?** , choisissez le **déployer en tant que solution de batterie** case d’option, puis choisissez le **suivant** bouton.  
   
-     Pour plus d’informations sur sandbox par rapport aux solutions de batterie de serveurs, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
+    Pour plus d’informations sur sandbox par rapport aux solutions de batterie de serveurs, consultez [considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
   
-6.  Dans le **spécifier la nouvelle source de projet** page, accédez à l’emplacement sur le système où vous avez enregistré le *.wsp* de fichiers, ouvrez le fichier, puis choisissez le **suivant** bouton.  
+6. Dans le **spécifier la nouvelle source de projet** page, accédez à l’emplacement sur le système où vous avez enregistré le *.wsp* de fichiers, ouvrez le fichier, puis choisissez le **suivant** bouton.  
   
-    > [!NOTE]  
-    >  Choisissez le **Terminer** bouton Importer tous les éléments disponibles dans le *.wsp* fichier.  
+   > [!NOTE]  
+   >  Choisissez le **Terminer** bouton Importer tous les éléments disponibles dans le *.wsp* fichier.  
   
-     Cela affiche une liste de flux de travail réutilisables disponibles pour l’importation.  
+    Cela affiche une liste de flux de travail réutilisables disponibles pour l’importation.  
   
-7.  Dans le **sélectionner les éléments à importer** , sélectionnez le **tâches SPD** flux de travail, puis choisissez le **Terminer** bouton.  
+7. Dans le **sélectionner les éléments à importer** , sélectionnez le **tâches SPD** flux de travail, puis choisissez le **Terminer** bouton.  
   
-     Une fois l’opération d’importation est terminée, un projet nommé **WorkflowImportProject1** est créé contenant un flux de travail nommé **SPD_Workflow_TestFT**. Dans ce dossier est le fichier de définition du flux de travail *Elements.xml* et le fichier de Concepteur de flux de travail (*.xoml*). Le concepteur contient deux fichiers : le fichier de règles (.rules) et le fichier code-behind (soit *.cs* ou *.vb*, en fonction de langage de programmation de votre projet).  
+    Une fois l’opération d’importation est terminée, un projet nommé **WorkflowImportProject1** est créé contenant un flux de travail nommé **SPD_Workflow_TestFT**. Dans ce dossier est le fichier de définition du flux de travail *Elements.xml* et le fichier de Concepteur de flux de travail (*.xoml*). Le concepteur contient deux fichiers : le fichier de règles (.rules) et le fichier code-behind (soit *.cs* ou *.vb*, en fonction de langage de programmation de votre projet).  
   
-8.  Dans **l’Explorateur de solutions**, supprimez le **autres fichiers importés** dossier.  
+8. Dans **l’Explorateur de solutions**, supprimez le **autres fichiers importés** dossier.  
   
 9. Dans le *Elements.xml* , supprimez `InstantiationURL="_layouts/IniErkflIP.sspx"`.  
   
@@ -203,11 +203,11 @@ ms.locfileid: "42626500"
   
 13. Dans le **Windows Workflow v3.0** nœud de la **boîte à outils**, effectuez l’une des étapes suivantes :  
   
-    -   Ouvrez le menu contextuel pour le **Code** activité, puis choisissez **copie**. Dans le Concepteur de flux de travail, ouvrez le menu contextuel de la ligne sous le **SequenceActivity1** activité, puis choisissez **coller**.  
+    - Ouvrez le menu contextuel pour le **Code** activité, puis choisissez **copie**. Dans le Concepteur de flux de travail, ouvrez le menu contextuel de la ligne sous le **SequenceActivity1** activité, puis choisissez **coller**.  
   
-    -   Faites glisser le **Code** activité à partir de la **boîte à outils** vers le Concepteur de flux de travail et connectez-la à la ligne sous le **SequenceActivity1** activité.  
+    - Faites glisser le **Code** activité à partir de la **boîte à outils** vers le Concepteur de flux de travail et connectez-la à la ligne sous le **SequenceActivity1** activité.  
   
-     Cette opération ajoute une activité vers le Concepteur de flux de travail nommé **CodeActivity1**. Dans cette activité, vous allez ajouter une action de code qui crée une annonce dans la liste d’annonces lorsque l’utilisateur démarre le flux de travail.  
+      Cette opération ajoute une activité vers le Concepteur de flux de travail nommé **CodeActivity1**. Dans cette activité, vous allez ajouter une action de code qui crée une annonce dans la liste d’annonces lorsque l’utilisateur démarre le flux de travail.  
   
 14. Effectuez l'un des ensembles d'étapes suivants :  
   

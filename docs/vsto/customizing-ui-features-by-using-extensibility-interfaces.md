@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873968"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personnaliser les fonctionnalités d’interface utilisateur à l’aide des interfaces d’extensibilité
   Les Outils de développement Office dans Visual Studio fournissent des classes et des concepteurs qui gèrent de nombreux détails d’implémentation quand vous les utilisez pour créer des volets de tâches personnalisés, des personnalisations de ruban et des zones de formulaire Outlook dans un complément VSTO. Toutefois, vous pouvez également implémenter vous-même l' *interface d'extensibilité* pour chaque fonctionnalité si vous avez des spécifications spéciales.  
@@ -61,17 +61,17 @@ ms.locfileid: "35672772"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Exemple d’implémentation d’une interface d’extensibilité  
  L'exemple de code suivant présente une implémentation simple de l'interface <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> pour créer un volet de tâches personnalisé. Cet exemple définit deux classes :  
   
--   La classe `TaskPaneHelper` implémente <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> pour créer et afficher un volet de tâches personnalisé.  
+- La classe `TaskPaneHelper` implémente <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> pour créer et afficher un volet de tâches personnalisé.  
   
--   La classe `TaskPaneUI` fournit l'interface utilisateur du volet de tâches. Les attributs de la classe `TaskPaneUI` rendent la classe visible pour COM, ce qui permet aux applications Microsoft Office de la découvrir. Dans cet exemple, l'interface utilisateur est un <xref:System.Windows.Forms.UserControl>vide, mais vous pouvez ajouter des contrôles en modifiant le code.  
+- La classe `TaskPaneUI` fournit l'interface utilisateur du volet de tâches. Les attributs de la classe `TaskPaneUI` rendent la classe visible pour COM, ce qui permet aux applications Microsoft Office de la découvrir. Dans cet exemple, l'interface utilisateur est un <xref:System.Windows.Forms.UserControl>vide, mais vous pouvez ajouter des contrôles en modifiant le code.  
   
-    > [!NOTE]  
-    >  Pour exposer la classe `TaskPaneUI` à COM, vous devez également définir la propriété **Inscrire pour COM Interop** pour le projet.  
+  > [!NOTE]  
+  >  Pour exposer la classe `TaskPaneUI` à COM, vous devez également définir la propriété **Inscrire pour COM Interop** pour le projet.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Pour plus d’informations sur l’implémentation <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, consultez [créer des volets de tâches personnalisés dans Office system 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) dans la documentation de Microsoft Office.  
+  Pour plus d’informations sur l’implémentation <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, consultez [créer des volets de tâches personnalisés dans Office system 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) dans la documentation de Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Exemple de substitution de la méthode RequestService  
  L'exemple de code suivant montre comment substituer la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> pour retourner une instance de la classe `TaskPaneHelper` de l'exemple de code précédent. Il vérifie la valeur du paramètre *serviceGuid* pour déterminer quelle interface est demandée, puis retourne un objet qui implémente cette interface.  

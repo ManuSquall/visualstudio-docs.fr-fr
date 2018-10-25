@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_registerId | Documents Microsoft
+title: IDiaSymbol::get_registerId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6a4583206666f90adb90cbebebf9417e66fc78
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0acc6d79e1e5da810e2f2da699df5d4def424df9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861462"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
-Récupère l’indicateur de Registre de l’emplacement lors de la [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsEnregistered`.  
+Récupère l’indicateur de Registre de l’emplacement lorsque le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsEnregistered`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,8 +43,8 @@ HRESULT get_registerId (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Si le symbole est relatif à un Registre, autrement dit, si du symbole [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsRegRel`, utilisez le `get_registerId` méthode suivie par un appel à la [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) méthode pour obtenir le décalage à partir du Registre où se trouve le symbole.  
+ Si le symbole est relatif à un Registre, autrement dit, si le symbole [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsRegRel`, utiliser le `get_registerId` méthode suivie par un appel à la [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) méthode pour obtenir le décalage à partir du Registre où se trouve le symbole.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)

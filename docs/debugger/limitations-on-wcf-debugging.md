@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887421"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitations du débogage WCF
 Il existe trois façons de commencer à déboguer un service WCF :  
   
--   Vous déboguez un processus client qui appelle un service. Le débogueur effectue un pas à pas détaillé dans le service. Le service n'a pas besoin d'être dans la même solution que votre application cliente.  
+- Vous déboguez un processus client qui appelle un service. Le débogueur effectue un pas à pas détaillé dans le service. Le service n'a pas besoin d'être dans la même solution que votre application cliente.  
   
--   Vous déboguez un processus client qui fait une demande à un service. Le service doit faire partie de votre solution.  
+- Vous déboguez un processus client qui fait une demande à un service. Le service doit faire partie de votre solution.  
   
--   Vous utilisez **attacher au processus** à attacher à un service qui est en cours d’exécution. Le débogage commence à l'intérieur du service.  
+- Vous utilisez **attacher au processus** à attacher à un service qui est en cours d’exécution. Le débogage commence à l'intérieur du service.  
   
- Cette rubrique décrit les limitations relatives à ces scénarios.  
+  Cette rubrique décrit les limitations relatives à ces scénarios.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitations relatives au pas à pas détaillé dans un service  
  Pour effectuer un pas à pas détaillé dans un service à partir d'une application cliente que vous déboguez, les conditions suivantes doivent être satisfaites :  
@@ -61,19 +61,19 @@ Il existe trois façons de commencer à déboguer un service WCF :
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitations relatives à l'attachement automatique à un service  
  L'attachement automatique à un service a les limitations suivantes :  
   
--   Le service doit faire partie de la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous déboguez.  
+- Le service doit faire partie de la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous déboguez.  
   
--   Le service doit être hébergé. Il peut faire partie d’un projet de Site Web (système de fichiers et HTTP), le projet d’Application Web (système de fichiers et HTTP) ou le projet bibliothèque du Service WCF. Les projets Bibliothèque du service WCF peuvent être des bibliothèques du service ou des bibliothèques du service de workflow.  
+- Le service doit être hébergé. Il peut faire partie d’un projet de Site Web (système de fichiers et HTTP), le projet d’Application Web (système de fichiers et HTTP) ou le projet bibliothèque du Service WCF. Les projets Bibliothèque du service WCF peuvent être des bibliothèques du service ou des bibliothèques du service de workflow.  
   
--   Le service doit être appelé à partir d'un client WCF.  
+- Le service doit être appelé à partir d'un client WCF.  
   
--   Le débogage doit être activé avec le code suivant dans le fichier app.config ou Web.config :  
+- Le débogage doit être activé avec le code suivant dans le fichier app.config ou Web.config :  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>Auto-hébergement  
  Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, l’hôte de Service WCF, ou le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serveur de développement. Pour plus d’informations sur le débogage d’un service auto-hébergé, consultez [Comment : déboguer un Service de WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  

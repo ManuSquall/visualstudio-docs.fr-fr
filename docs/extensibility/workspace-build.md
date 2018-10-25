@@ -1,5 +1,5 @@
 ---
-title: Génération d’espace de travail dans Visual Studio | Documents Microsoft
+title: Génération d’espace de travail dans Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology:
@@ -12,57 +12,57 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: f7415c99c68436519f9bab721fe88a48f750fa1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857632"
 ---
 # <a name="workspace-build"></a>Génération de l’espace de travail
 
-Générez la prise en charge dans [ouvrir le dossier](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) scénarios requiert un extendeur pour fournir [indexée](workspace-indexing.md) et [de contexte du fichier](workspace-file-contexts.md) les données de la [espace de travail](workspaces.md), en tant que ainsi que l’action de génération à exécuter.
+Créez la prise en charge [ouvrir le dossier](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) scénarios requiert un extendeur pour fournir [indexées](workspace-indexing.md) et [contexte de fichier](workspace-file-contexts.md) données pour le [espace de travail](workspaces.md), en tant que ainsi que l’action de génération à exécuter.
 
-Voici un plan de besoins votre extension.
+Voici une présentation de ce que votre extension sera nécessaire.
 
-## <a name="build-file-context"></a>Générer le contexte du fichier
+## <a name="build-file-context"></a>Contexte de fichier de build
 
-- Fabrique de fournisseurs
-  - `ExportFileContextProviderAttribute` attribut `supportedContextTypeGuids` applicable que tous les `string` constantes à partir de `BuildContextTypes`
+- Fabrique de fournisseur
+  - `ExportFileContextProviderAttribute` attribut avec `supportedContextTypeGuids` applicable que tous les `string` constantes à partir de `BuildContextTypes`
   - Implémente `IWorkspaceProviderFactory<IFileContextProvider>`
   - Fournisseur de contexte de fichier
-    - Retourner un `FileContext` pour chaque build configuration prise en charge et du fonctionnement
+    - Retourner un `FileContext` pour chaque build configuration pris en charge et du fonctionnement
       - `contextType` De <xref:Microsoft.VisualStudio.Workspace.Build.BuildContextTypes>
-      - `context` implémente <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> avec la `Configuration` propriété en tant que la configuration de build (par exemple `"Debug|x86"`, `"ret"`, ou `null` si non applicable). Vous pouvez également utiliser une instance de <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext>. La valeur de configuration **doit** correspond à la configuration de la valeur de données de fichiers indexés.
+      - `context` implémente <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> avec la `Configuration` propriété en tant que la configuration de build (par exemple `"Debug|x86"`, `"ret"`, ou `null` si non applicable). Vous pouvez également utiliser une instance de <xref:Microsoft.VisualStudio.Workspace.Build.BuildConfigurationContext>. La valeur de configuration **doit** correspondent à la configuration de la valeur de données de fichiers indexés.
 
 ## <a name="indexed-build-file-data-value"></a>Valeur de données de fichier indexée de build
 
-- Fabrique de fournisseurs
+- Fabrique de fournisseur
   - `ExportFileScannerAttribute` attribut avec `IReadOnlyCollection<FileDataValue>` comme un type pris en charge
   - Implémente `IWorkspaceProviderFactory<IFileScanner>`
 - Analyseur de fichiers sur `ScanContentAsync<T>`
   - Retourne des données lorsque `FileScannerTypeConstants.FileDataValuesType` est l’argument de type
   - Retourne une valeur de données de fichier pour chaque configuration construite avec :
     - `type` en tant que `BuildConfigurationContext.ContextTypeGuid`
-    - `context` en tant que votre configuration de build (par exemple `"Debug|x86"`, `"ret"`, ou `null` si non applicable). Cette valeur **doit** correspond à la configuration à partir du contexte du fichier.
+    - `context` en tant que votre configuration de build (par exemple `"Debug|x86"`, `"ret"`, ou `null` si non applicable). Cette valeur **doit** correspondent à la configuration à partir du contexte de fichier.
 
-## <a name="build-file-context-action"></a>Fichier contexte action de génération
+## <a name="build-file-context-action"></a>Action de contexte de fichier de génération
 
-- Fabrique de fournisseurs
-  - `ExportFileContextActionProvider` attribut `supportedContextTypeGuids` applicable que tous les `string` constantes à partir de `BuildContextTypes`
+- Fabrique de fournisseur
+  - `ExportFileContextActionProvider` attribut avec `supportedContextTypeGuids` applicable que tous les `string` constantes à partir de `BuildContextTypes`
   - Implémente `IWorkspaceProviderFactory<IFileContextActionProvider>`
 - Fournisseur d’actions sur `IFileContextActionProvider.GetActionsAsync`
   - Retourner un `IFileContextAction` qui correspond à la donnée `FileContext.ContextType` valeur
-- Action de contexte de fichiers
+- Action contextuelle de fichier
   - Implémente `IFileContextAction` et <xref:Microsoft.VisualStudio.Workspace.Extensions.VS.IVsCommandItem>
   - `CommandGroup` retourne de propriété `16537f6e-cb14-44da-b087-d1387ce3bf57`
-  - `CommandId` est `0x1000` pour la build, `0x1010` de reconstruction, ou `0x1020` pour nettoyer
+  - `CommandId` est `0x1000` pour la build, `0x1010` pour la reconstruction, ou `0x1020` pour nettoyer
 
 >[!NOTE]
->Étant donné que le `FileDataValue` doit être indexée, il y aura une certaine quantité de temps entre l’ouverture de l’espace de travail et le point auquel le fichier est analysé pour la fonctionnalité de génération complète. Le délai d’attente s’affiche sur la première ouverture d’un dossier, car il n’existe aucun index précédemment mise en cache.
+>Dans la mesure où le `FileDataValue` à indexer, il y aura une certaine quantité de temps entre l’ouverture de l’espace de travail et le point auquel le fichier est analysé pour la fonctionnalité de génération complète. Le délai est visibles sur la première ouverture d’un dossier, car il n’existe aucun index précédemment mise en cache.
 
-## <a name="reporting-messages-from-a-build"></a>Messages de création de rapports à partir d’une build
+## <a name="reporting-messages-from-a-build"></a>Création de rapports de messages à partir d’une build
 
-La build peut apparaître plus d’informations, d’avertissement et messages d’erreur pour les utilisateurs de deux manières. La simple consiste à utiliser le <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> et fournir un <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>, comme suit :
+La build peut se manifester d’informations, d’avertissement et messages d’erreur aux utilisateurs de deux manières. Le simple consiste à utiliser le <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> et fournir un <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>, comme suit :
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -92,17 +92,17 @@ private static void OutputBuildMessage(IWorkspace workspace)
 }
 ```
 
-`BuildMessage.Type` et `BuildMessage.LogMessage` contrôler le comportement d’où les informations sont présentées à l’utilisateur. N’importe quel `BuildMessage.TaskType` valeur autre que `None` produira une **liste d’erreurs** entrée avec les détails donnés. `LogMessage` affichera toujours dans le **générer** volet de la **sortie** fenêtre outil.
+`BuildMessage.Type` et `BuildMessage.LogMessage` contrôler le comportement d’où les informations sont présentées à l’utilisateur. N’importe quel `BuildMessage.TaskType` valeur autre que `None` produira un **liste d’erreurs** entrée avec les détails donnés. `LogMessage` affichera toujours dans le **Build** volet de la **sortie** fenêtre outil.
 
-Vous pouvez également les extensions peuvent interagir directement avec le **liste d’erreurs** ou **générer** volet. Il existe un bogue dans les versions antérieures de Visual Studio 2017 Version 15.7 où le `pszProjectUniqueName` argument de <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> est ignoré.
+Vous pouvez également les extensions peuvent interagir directement avec le **liste d’erreurs** ou **Build** volet. Il existe un bogue dans les versions antérieures de Visual Studio 2017 Version 15.7 où le `pszProjectUniqueName` argument de <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> est ignoré.
 
 >[!WARNING]
->Les appelants de `IFileContextAction.ExecuteAsync` peut fournir des implémentations sous-jacentes arbitraires pour le `IProgress<IFileContextActionProgressUpdate>` argument. Ne jamais appeler `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` directement. Il n’y a actuellement aucun règles générales pour l’utilisation de cet argument, mais ces recommandations sont susceptibles de changer.
+>Les appelants de `IFileContextAction.ExecuteAsync` peut fournir des implémentations sous-jacentes arbitraires pour le `IProgress<IFileContextActionProgressUpdate>` argument. Ne jamais appeler `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` directement. Il n’existe actuellement aucune des instructions générales pour à l’aide de cet argument, mais ces instructions sont susceptibles d’être modifiées.
 
 ## <a name="build-related-apis"></a>API associées à la build
 
 - <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> Fournit des détails de configuration de build.
-- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> montre <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>s pour les utilisateurs.
+- <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> montre <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>s aux utilisateurs.
 
 ## <a name="tasksvsjson-and-launchvsjson"></a>Tasks.VS.JSON et launch.vs.json
 

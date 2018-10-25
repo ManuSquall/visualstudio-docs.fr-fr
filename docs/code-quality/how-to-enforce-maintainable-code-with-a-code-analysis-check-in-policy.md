@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892088"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 
@@ -47,15 +47,15 @@ Les administrateurs du contrôle de version de Team Foundation peuvent ajouter d
 
 2. Sélectionnez les cases à cocher pour les règles suivantes :
 
-    -   Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : avertissement à plus de 5 niveaux de profondeur
+   - Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : avertissement à plus de 5 niveaux de profondeur
 
-    -   Complexité : **CA1502 AvoidExcessiveComplexity** -seuil : avertissement à plus de 25
+   - Complexité : **CA1502 AvoidExcessiveComplexity** -seuil : avertissement à plus de 25
 
-    -   Indice de maintenabilité : **CA1505 AvoidUnmaintainableCode** -seuil : avertissement à moins de 20
+   - Indice de maintenabilité : **CA1505 AvoidUnmaintainableCode** -seuil : avertissement à moins de 20
 
-    -   COUPLAGE de classe : **CA1506 AvoidExcessiveClassCoupling** -seuil : avertissement à plus de 80 pour une classe et plus de 30 pour une méthode
+   - COUPLAGE de classe : **CA1506 AvoidExcessiveClassCoupling** -seuil : avertissement à plus de 80 pour une classe et plus de 30 pour une méthode
 
-    En outre, si vous souhaitez une violation de règle pour empêcher une génération réussie, sélectionnez le **traiter un avertissement comme une erreur** case à cocher en regard de la description de la règle.
+     En outre, si vous souhaitez une violation de règle pour empêcher une génération réussie, sélectionnez le **traiter un avertissement comme une erreur** case à cocher en regard de la description de la règle.
 
 3. Cliquez sur **OK**. La nouvelle stratégie de vérification s’applique désormais aux archivages ultérieurs.
 

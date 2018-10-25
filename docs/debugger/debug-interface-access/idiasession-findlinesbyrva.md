@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByRVA | Documents Microsoft
+title: IDiaSession::findLinesByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e14b41fe3e7595ef56364fa92b0153f4f457fdd6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2e2f3713407ad17f468e125a1592ee8d684d27d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869741"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Récupère les lignes qui contiennent une adresse virtuelle relative (RVA) spécifiée dans un module spécifié.  
+Récupère les lignes dans un compiland spécifiée qui contiennent une adresse virtuelle relative (RVA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,7 +36,7 @@ HRESULT findLinesByRVA (
   
 #### <a name="parameters"></a>Paramètres  
  `rva`  
- [in] Spécifie l’adresse en tant qu’une adresse RVA.  
+ [in] Spécifie l’adresse comme une RVA.  
   
  `length`  
  [in] Spécifie le nombre d’octets de la plage d’adresses pour couvrir cette requête.  
@@ -48,7 +48,7 @@ HRESULT findLinesByRVA (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple illustre une fonction qui obtient tous les numéros de ligne contenues dans la fonction spécifiée à l’aide d’adresse virtuelle relative de la fonction et la longueur.  
+ Cet exemple montre une fonction qui obtient tous les numéros de ligne contenues dans la fonction spécifiée à l’aide d’adresse virtuelle relative de la fonction et la longueur.  
   
 ```C++  
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

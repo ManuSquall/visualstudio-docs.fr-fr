@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849643"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,44 +31,44 @@ C++ natif peuvent souvent offrir les meilleures performances lorsque vous accéd
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Se connecter à la base de données locale via ODBC et SQL Native Client à partir d’une application C++  
   
-1.  Installer SQL Server Data Tools.  
+1. Installer SQL Server Data Tools.  
   
-2.  Si vous avez besoin d’une base de données exemple SQL pour vous connecter à, téléchargez la base de données Northwind et décompressez-le dans un nouvel emplacement.  
+2. Si vous avez besoin d’une base de données exemple SQL pour vous connecter à, téléchargez la base de données Northwind et décompressez-le dans un nouvel emplacement.  
   
-3.  Utilisez SQL Server Management Studio pour attacher le fichier Northwind.mdf décompressé à base de données locale. Au démarrage de SQL Server Management Studio, connectez-vous à (localdb) \MSSQLLocalDB.  
+3. Utilisez SQL Server Management Studio pour attacher le fichier Northwind.mdf décompressé à base de données locale. Au démarrage de SQL Server Management Studio, connectez-vous à (localdb) \MSSQLLocalDB.  
   
-     ![Boîte de dialogue de connexion de SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS boîte de dialogue de connexion")  
+    ![Boîte de dialogue de connexion de SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS boîte de dialogue de connexion")  
   
-     Avec le bouton droit sur le nœud de base de données locale dans le volet gauche, puis choisissez **attacher**.  
+    Avec le bouton droit sur le nœud de base de données locale dans le volet gauche, puis choisissez **attacher**.  
   
-     ![SSMS attacher la base de données](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS attacher le base de données")  
+    ![SSMS attacher la base de données](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS attacher le base de données")  
   
-4.  Téléchargez l’exemple de kit de développement logiciel Windows ODBC et décompressez-le dans un nouvel emplacement. Cet exemple montre les commandes ODBC de base qui sont utilisés pour se connecter à une base de données et émettre des requêtes et commandes. Vous pouvez en savoir plus sur ces fonctions dans le [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Lorsque vous chargez tout d’abord la solution (il s’agit dans le dossier C++), Visual Studio propose de mettre à niveau de la solution vers la version actuelle de Visual Studio. Cliquez sur **Oui**.  
+4. Téléchargez l’exemple de kit de développement logiciel Windows ODBC et décompressez-le dans un nouvel emplacement. Cet exemple montre les commandes ODBC de base qui sont utilisés pour se connecter à une base de données et émettre des requêtes et commandes. Vous pouvez en savoir plus sur ces fonctions dans le [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Lorsque vous chargez tout d’abord la solution (il s’agit dans le dossier C++), Visual Studio propose de mettre à niveau de la solution vers la version actuelle de Visual Studio. Cliquez sur **Oui**.  
   
-5.  Pour utiliser le client natif, vous avez besoin de son en-tête et lib fichier. Ces fichiers contiennent des fonctions et des définitions spécifiques à SQL Server, au-delà des fonctions ODBC définies dans sql.h. Dans **projet** > **propriétés** > **répertoires VC ++**, ajoutez le répertoire include de ce qui suit :  
+5. Pour utiliser le client natif, vous avez besoin de son en-tête et lib fichier. Ces fichiers contiennent des fonctions et des définitions spécifiques à SQL Server, au-delà des fonctions ODBC définies dans sql.h. Dans **projet** > **propriétés** > **répertoires VC ++**, ajoutez le répertoire include de ce qui suit :  
   
- **\<lecteur système > : \Program Files\Microsoft SQL Server\110\SDK\Include** et ce répertoire de la bibliothèque :  
+   **\<lecteur système > : \Program Files\Microsoft SQL Server\110\SDK\Include** et ce répertoire de la bibliothèque :  
   
- **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
+   **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
   
-6.  Ajoutez ces lignes dans odbcsql.cpp. Le #define empêche des définitions de OLE DB non pertinentes à partir d’en cours de compilation.  
+6. Ajoutez ces lignes dans odbcsql.cpp. Le #define empêche des définitions de OLE DB non pertinentes à partir d’en cours de compilation.  
   
-    ```  
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
+   ```  
+   #define _SQLNCLI_ODBC_  
+   #include <sqlncli.h>  
+   ```  
   
-     Notez que l’exemple ne pas réellement utilise toute la fonctionnalité de client natif, les étapes précédentes sont donc pas nécessaires compiler et exécuter. Mais le projet est maintenant configuré pour pouvoir utiliser cette fonctionnalité. Pour plus d’informations, consultez [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
+    Notez que l’exemple ne pas réellement utilise toute la fonctionnalité de client natif, les étapes précédentes sont donc pas nécessaires compiler et exécuter. Mais le projet est maintenant configuré pour pouvoir utiliser cette fonctionnalité. Pour plus d’informations, consultez [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
   
-7.  Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion de pilote dans comme un argument de ligne de commande. Dans **projet** > **propriétés** > **débogage**, ajoutez l’argument de commande suivant :  
+7. Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion de pilote dans comme un argument de ligne de commande. Dans **projet** > **propriétés** > **débogage**, ajoutez l’argument de commande suivant :  
   
-    ```  
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
+   ```  
+   DRIVER="SQL Server Native Client 11.0"  
+   ```  
   
-8.  Appuyez sur F5 pour générer et exécuter l'application. Vous devez voir une boîte de dialogue à partir du pilote qui vous invite à entrer une base de données. Entrez `(localdb)\MSSQLLocalDB`et vérifiez **utiliser la connexion approuvée**. Appuyez sur **OK**. Vous devez voir une console avec les messages qui indiquent une connexion réussie. Vous devriez également voir une invite de commandes où vous pouvez taper une instruction SQL. L’écran suivant montre un exemple de requête et les résultats :  
+8. Appuyez sur F5 pour générer et exécuter l'application. Vous devez voir une boîte de dialogue à partir du pilote qui vous invite à entrer une base de données. Entrez `(localdb)\MSSQLLocalDB`et vérifiez **utiliser la connexion approuvée**. Appuyez sur **OK**. Vous devez voir une console avec les messages qui indiquent une connexion réussie. Vous devriez également voir une invite de commandes où vous pouvez taper une instruction SQL. L’écran suivant montre un exemple de requête et les résultats :  
   
-     ![Sortie de requête d’exemple ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "sortie de la requête raddata exemple ODBC")  
+    ![Sortie de requête d’exemple ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "sortie de la requête raddata exemple ODBC")  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

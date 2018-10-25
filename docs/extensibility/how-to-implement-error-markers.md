@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75c6d92ae1cb5b71535d7f9aa4c9f2731f81e6ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861161"
 ---
 # <a name="how-to-implement-error-markers"></a>Comment : implémenter des marqueurs d’erreur
 Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalisations de l’éditeur de texte pour implémenter la plus difficile. Toutefois, les avantages qu’ils donnent aux utilisateurs de votre VSPackage peuvent compensent largement le coût afin de lui fournir. Marqueurs d’erreur légèrement marquer le texte que votre analyseur de langage juge incorrecte avec une ligne rouge ondulée ou ondulée. Cet indicateur permet aux programmeurs en affichant visuellement code incorrect.  
@@ -27,23 +27,23 @@ Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalis
   
 ## <a name="to-implement-the-red-wavy-underline-feature"></a>Pour implémenter la fonctionnalité de soulignement ondulé rouge  
   
-1.  Sélectionnez le texte sous lequel vous voulez placer la ligne ondulée rouge.  
+1. Sélectionnez le texte sous lequel vous voulez placer la ligne ondulée rouge.  
   
-2.  Créer un marqueur de type `MARKER_CODESENSE_ERROR`. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md).  
+2. Créer un marqueur de type `MARKER_CODESENSE_ERROR`. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Après cela, transmettez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> pointeur d’interface.  
+3. Après cela, transmettez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> pointeur d’interface.  
   
- Ce processus vous permet également de vous permettent de créer le texte info-bulle ou un menu contextuel spéciaux sur un marqueur donné. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md).  
+   Ce processus vous permet également de vous permettent de créer le texte info-bulle ou un menu contextuel spéciaux sur un marqueur donné. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md).  
   
- Les objets suivants sont nécessaires avant que les marqueurs d’erreur peuvent être affichées.  
+   Les objets suivants sont nécessaires avant que les marqueurs d’erreur peuvent être affichées.  
   
--   Un analyseur.  
+- Un analyseur.  
   
--   Un fournisseur de tâches (autrement dit, une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) qui conserve un enregistrement des modifications dans les informations de ligne afin d’identifier les lignes pour être réanalysé.  
+- Un fournisseur de tâches (autrement dit, une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) qui conserve un enregistrement des modifications dans les informations de ligne afin d’identifier les lignes pour être réanalysé.  
   
--   Événements de modification d’un filtre de vue de texte qui capture le signe insertion à partir de la vue en utilisant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) méthode.  
+- Événements de modification d’un filtre de vue de texte qui capture le signe insertion à partir de la vue en utilisant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) méthode.  
   
- L’analyseur, le fournisseur de tâche et le filtre fournissent l’infrastructure nécessaire pour rendre les marqueurs d’erreur possible. Les étapes suivantes décrivent le processus pour l’affichage des marqueurs d’erreur.  
+  L’analyseur, le fournisseur de tâche et le filtre fournissent l’infrastructure nécessaire pour rendre les marqueurs d’erreur possible. Les étapes suivantes décrivent le processus pour l’affichage des marqueurs d’erreur.  
   
 1.  Dans une vue filtrée, le filtre Obtient un pointeur vers le fournisseur de tâches associé aux données de cette vue.  
   

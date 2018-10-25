@@ -14,23 +14,23 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094c59f1ef7acd1105cdefc4f556a50fb7e8a161
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851027"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Utilisez l’outil en ligne de commande **VsPerf** pour :  
   
-1.  Profiler des applications du Windows Store à partir de la ligne de commande quand Visual Studio n’est pas installé sur l’appareil.  
+1. Profiler des applications du Windows Store à partir de la ligne de commande quand Visual Studio n’est pas installé sur l’appareil.  
   
-2.  Profiler des applications de bureau Windows 8 et des applications Windows Server 2012 à l’aide de la méthode de profilage par échantillonnage.  
+2. Profiler des applications de bureau Windows 8 et des applications Windows Server 2012 à l’aide de la méthode de profilage par échantillonnage.  
   
- Pour plus d’informations sur les options de profilage, consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+   Pour plus d’informations sur les options de profilage, consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  Cette rubrique décrit les options que vous pouvez utiliser avec l’outil en ligne de commande `vsperf.exe`. La rubrique contient les sections suivantes :  

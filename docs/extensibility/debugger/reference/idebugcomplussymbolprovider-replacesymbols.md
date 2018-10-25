@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::ReplaceSymbols | Documents Microsoft
+title: IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31d27f90c0c898ff053401e186d0b153939bc760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d67626778aefe67c5f0973da8b74fc0b7e776ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876150"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Remplace les symboles de débogage actuelle avec ceux présents dans le flux de données spécifié.  
@@ -56,7 +56,7 @@ int ReplaceSymbols(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::ReplaceSymbols(  

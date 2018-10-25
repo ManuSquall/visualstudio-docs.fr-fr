@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a4f71af9e19cbb9eaefd2937e498b0e59cc2b8f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891282"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Comment : modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation
   Vous pouvez modifier la police d’une ligne entière qui contient une cellule sélectionnée afin que le texte est en gras.  
@@ -31,42 +31,42 @@ ms.locfileid: "35256378"
   
 ## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Pour afficher la ligne actuelle en gras et précédemment les lignes en gras normal  
   
-1.  Déclarez une variable statique pour effectuer le suivi de la ligne précédemment sélectionnée.  
+1. Déclarez une variable statique pour effectuer le suivi de la ligne précédemment sélectionnée.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
-     [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
+    [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
   
-2.  Récupérer une référence à la cellule en cours à l’aide du <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> propriété.  
+2. Récupérer une référence à la cellule en cours à l’aide du <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> propriété.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
-     [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
+    [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
   
-3.  Style de l’actuelle ligne en gras à l’aide du <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> propriété de la cellule active.  
+3. Style de l’actuelle ligne en gras à l’aide du <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> propriété de la cellule active.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
-     [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
+    [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
   
-4.  Vérifiez que la valeur actuelle de `previousRow` est pas égal à 0. 0 (zéro) indique qu’il s’agit de la première fois sur ce code.  
+4. Vérifiez que la valeur actuelle de `previousRow` est pas égal à 0. 0 (zéro) indique qu’il s’agit de la première fois sur ce code.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
-     [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
+    [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
   
-5.  Vérifiez que la ligne actuelle est différente de la ligne précédente.  
+5. Vérifiez que la ligne actuelle est différente de la ligne précédente.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
-     [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
+    [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
   
-6.  Récupérez une référence à une plage qui représente la ligne qui a été précédemment sélectionnée, jeu de cette ligne ne soit ne pas en gras.  
+6. Récupérez une référence à une plage qui représente la ligne qui a été précédemment sélectionnée, jeu de cette ligne ne soit ne pas en gras.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
-     [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
+    [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
   
-7.  Store la ligne actuelle afin qu’elle devienne la ligne précédente pour le test suivant.  
+7. Store la ligne actuelle afin qu’elle devienne la ligne précédente pour le test suivant.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
-     [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
+    [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  
   
- L'exemple suivant montre la méthode complète.  
+   L'exemple suivant montre la méthode complète.  
   
 ## <a name="example"></a>Exemple  
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]

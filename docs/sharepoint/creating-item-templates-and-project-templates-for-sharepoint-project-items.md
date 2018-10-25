@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854284"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Créer des modèles d’élément et les modèles de projet pour les éléments de projet SharePoint
   Lorsque vous définissez un type d’élément de projet SharePoint personnalisé, vous pouvez l’associer avec un modèle d’élément ou un modèle de projet. Cette association permet d’autres développeurs d’utiliser l’élément de projet dans Visual Studio. Vous pouvez également créer un Assistant pour le modèle.
@@ -47,14 +47,16 @@ ms.locfileid: "36327139"
 
  Le tableau suivant répertorie certains des fichiers courants facultatifs qui peuvent être inclus dans le modèle d’élément. Certains types d’éléments de projet peuvent nécessiter d’autres fichiers non répertoriées ici.
 
-|Fichier facultatif|Description|
-|-------------------|-----------------|
-|*Elements.Xml*|Un *élément de fonctionnalité* fichier. Ce fichier définit l’interface utilisateur et le comportement de la personnalisation créée par l’élément de projet. Chaque type de personnalisation, telles que les instances de listes, les types de contenu ou des actions personnalisées, a un schéma différent qui définit le contenu de ce fichier. Pour plus d’informations, consultez [bloc de construction : fonctionnalités](http://go.microsoft.com/fwlink/?LinkId=169183) et [schémas](http://go.microsoft.com/fwlink/?LinkId=169192).|
-|*Schema.Xml*|Le fichier de schéma pour les définitions de liste. Pour plus d’informations, consultez [bloc de construction : listes et bibliothèques de documents](http://go.microsoft.com/fwlink/?LinkId=177792) et [Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793).|
-|*.WebPart*|Un *définition WebPart* fichier. Ce fichier contient les paramètres de propriété pour un composant WebPart. Pour plus d’informations, consultez [bloc de construction : composants WebPart](http://go.microsoft.com/fwlink/?LinkId=177791).|
-|*.ascx*|Un fichier de contrôle utilisateur ASP.NET. Ce fichier définit l’interface utilisateur d’un composant Visual Web Part.|
-|*.aspx*|Un fichier de page ASP.NET. Ce fichier contient le balisage XML qui définit une page d’application.|
-|*.cs* ou *.vb* fichiers|Ces fichiers de code définissent le comportement des personnalisations de SharePoint qui ont un modèle de programmation qui est accessible à partir de Visual c# ou Visual Basic code, par exemple les pages d’application, les composants WebPart et les workflows.|
+
+| Fichier facultatif | Description |
+|----------------------| - |
+| *Elements.Xml* | Un *élément de fonctionnalité* fichier. Ce fichier définit l’interface utilisateur et le comportement de la personnalisation créée par l’élément de projet. Chaque type de personnalisation, telles que les instances de listes, les types de contenu ou des actions personnalisées, a un schéma différent qui définit le contenu de ce fichier. Pour plus d’informations, consultez [bloc de construction : fonctionnalités](http://go.microsoft.com/fwlink/?LinkId=169183) et [schémas](http://go.microsoft.com/fwlink/?LinkId=169192). |
+| *Schema.Xml* | Le fichier de schéma pour les définitions de liste. Pour plus d’informations, consultez [bloc de construction : listes et bibliothèques de documents](http://go.microsoft.com/fwlink/?LinkId=177792) et [Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793). |
+| *.WebPart* | Un *définition WebPart* fichier. Ce fichier contient les paramètres de propriété pour un composant WebPart. Pour plus d’informations, consultez [bloc de construction : composants WebPart](http://go.microsoft.com/fwlink/?LinkId=177791). |
+| *.ascx* | Un fichier de contrôle utilisateur ASP.NET. Ce fichier définit l’interface utilisateur d’un composant Visual Web Part. |
+| *.aspx* | Un fichier de page ASP.NET. Ce fichier contient le balisage XML qui définit une page d’application. |
+| *.cs* ou *.vb* fichiers | Ces fichiers de code définissent le comportement des personnalisations de SharePoint qui ont un modèle de programmation qui est accessible à partir de Visual c# ou Visual Basic code, par exemple les pages d’application, les composants WebPart et les workflows. |
+
 ## <a name="create-project-templates"></a>Créer des modèles de projet
  Lorsque vous créez un modèle de projet SharePoint, il existe certains fichiers sont toujours les fichiers requis et facultatifs qui peuvent être utilisées par certains types de projets. En règle générale, les projets SharePoint incluent au moins un élément de projet SharePoint. Toutefois, cela n’est pas nécessaire. Par exemple, vous pouvez définir un modèle de projet SharePoint qui est destiné à être utilisé que pour déployer des solutions SharePoint créées dans d’autres projets.
 

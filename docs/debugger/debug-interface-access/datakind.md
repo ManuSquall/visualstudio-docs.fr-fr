@@ -1,5 +1,5 @@
 ---
-title: DataKind | Documents Microsoft
+title: DataKind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867622"
 ---
 # <a name="datakind"></a>DataKind
-Indique l’étendue spécifique d’une valeur de données.  
+Indique la portée d’une valeur de données particulière.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -67,15 +67,15 @@ enum DataKind {
  Élément de données est une variable de membre d’objet.  
   
  DataIsStaticMember  
- Élément de données est une variable de classe statique.  
+ Élément de données est une variable statique de classe.  
   
  DataIsConstant  
  Élément de données est une valeur constante.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs de cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

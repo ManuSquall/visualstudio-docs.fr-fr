@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872666"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Vue d’ensemble de l’analyse du code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ L'outil d'analyse du code managé analyse les assemblys et signale les informati
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Exécuter l’analyse du code dans le cadre de la stratégie d’archivage  
  En tant qu'organisation, vous pourriez demander à ce que tous les archivages respectent certaines stratégies. En particulier, vous souhaitez vous assurer que vous suivez ces règles :  
   
--   Il n'y a eu aucune erreur de build dans le code en cours d'archivage.  
+- Il n'y a eu aucune erreur de build dans le code en cours d'archivage.  
   
--   L'analyse du code a été effectuée sur la version de code la plus récente.  
+- L'analyse du code a été effectuée sur la version de code la plus récente.  
   
- Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Intégration de Team Build  
  Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse dans le cadre du processus de génération. Pour plus d’informations, consultez l’article [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

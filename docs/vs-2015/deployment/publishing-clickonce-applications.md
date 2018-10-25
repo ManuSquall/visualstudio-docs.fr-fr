@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891763"
 ---
 # <a name="publishing-clickonce-applications"></a>Publication d'applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../includes/ndpteccl
 ## <a name="publish-wizard"></a>Assistant Publication  
  Vous pouvez utiliser l'Assistant Publication pour définir les paramètres de base de la publication de votre application. Cette définition inclut les propriétés de publication suivantes :  
   
--   Emplacement du dossier de publication : endroit où Visual Studio copie les fichiers (ordinateur local, partage de fichiers réseau, serveur FTP ou site web)  
+- Emplacement du dossier de publication : endroit où Visual Studio copie les fichiers (ordinateur local, partage de fichiers réseau, serveur FTP ou site web)  
   
--   Emplacement du dossier d'installation : endroit à partir duquel les utilisateurs finaux installent (partage de fichiers réseau, serveur FTP, site web, CD/DVD)  
+- Emplacement du dossier d'installation : endroit à partir duquel les utilisateurs finaux installent (partage de fichiers réseau, serveur FTP, site web, CD/DVD)  
   
--   Disponibilité en ligne ou hors connexion : indique si les utilisateurs finaux peuvent accéder à l'application avec ou sans connexion réseau  
+- Disponibilité en ligne ou hors connexion : indique si les utilisateurs finaux peuvent accéder à l'application avec ou sans connexion réseau  
   
--   Fréquence des mises à jour : fréquence à laquelle l'application vérifie la présence de nouvelles mises à jour.  
+- Fréquence des mises à jour : fréquence à laquelle l'application vérifie la présence de nouvelles mises à jour.  
   
- Pour plus d’informations, consultez [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Pour plus d’informations, consultez [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Page Publier  
  La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce. Le tableau suivant répertorie les rubriques.  

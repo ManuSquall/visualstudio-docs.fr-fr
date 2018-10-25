@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884886"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Didacticiel 2 : créer un questionnaire mathématique chronométré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans ce didacticiel, vous générez un questionnaire dans lequel la personne interrogée doit résoudre quatre problèmes arithmétiques aléatoires dans un délai imparti. Vous apprenez à :  
   
--   Générer des nombres aléatoires à l'aide de la classe `Random`.  
+- Générer des nombres aléatoires à l'aide de la classe `Random`.  
   
--   Déclencher des événements à une heure spécifique à l’aide d’un contrôle **Timer**.  
+- Déclencher des événements à une heure spécifique à l’aide d’un contrôle **Timer**.  
   
--   Contrôler le flux d'un programme à l'aide d'instructions `if else`.  
+- Contrôler le flux d'un programme à l'aide d'instructions `if else`.  
   
--   Effectuer des opérations arithmétiques de base dans le code.  
+- Effectuer des opérations arithmétiques de base dans le code.  
   
- Lorsque vous aurez terminé, votre questionnaire ressemblera à celui illustré ci-dessous, avec des valeurs différentes.  
+  Lorsque vous aurez terminé, votre questionnaire ressemblera à celui illustré ci-dessous, avec des valeurs différentes.  
   
- ![Questionnaire mathématique avec quatre problèmes](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Questionnaire créé dans ce didacticiel  
+  ![Questionnaire mathématique avec quatre problèmes](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Questionnaire créé dans ce didacticiel  
   
- Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du didacticiel](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du didacticiel](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  Ce didacticiel couvre à la fois Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  

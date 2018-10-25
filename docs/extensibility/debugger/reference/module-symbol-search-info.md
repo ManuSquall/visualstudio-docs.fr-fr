@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Documents Microsoft
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb62fb0a830c8c3bf6bb9b7ca186e001573b7b37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9deadc13f8cbe3678282bb2d9ac619959ecd26b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875916"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
-Contient des informations d’état sur les chemins de recherche de symbole qui ont été recherchées.  
+Contient des informations d’état sur les chemins de recherche de symbole qui a été effectuée dans.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,15 +44,15 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>Paramètres  
  `dwValidFields`  
- Une combinaison d’indicateurs à partir de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant le type d’information de recherche décrit dans cette structure.  
+ Une combinaison d’indicateurs de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant le type d’information de recherche décrit dans cette structure.  
   
  `bstrVerboseSearchInfo`  
- Chemin de recherche et les résultats concaténées en une chaîne unique.  
+ Chemin de recherche et les résultats concaténés en une seule chaîne.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est retournée à partir d’un appel à la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) (méthode).  
   
- Si le `bstrVerboseSearchInfo` champ n’est pas vide, puis il contient une liste des chemins de recherche et les résultats de recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivi par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :  
+ Si le `bstrVerboseSearchInfo` champ n’est pas vide, puis il contient une liste de chemins de recherche et les résultats de cette recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivi par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :  
   
  \<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat >  
   
@@ -66,7 +66,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

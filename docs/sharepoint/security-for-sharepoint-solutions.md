@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878763"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] intègre les fonctionnalités suivantes pour vous aider à améliorer la sécurité des applications SharePoint.
@@ -34,7 +34,7 @@ ms.locfileid: "42626131"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Attribut AllowPartiallyTrustedCallers
  Par défaut, seules les applications qui sont totalement approuvées par le système de sécurité d’accès du code runtime peuvent accéder à un assembly de code managé partagé. Marquage d’un assembly entièrement fiable avec l’attribut AllowPartiallyTrustedCallers permet des assemblys de confiance partiel à y accéder.
 
- L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée dans le global assembly cache de système ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Cela inclut les solutions bac à sable ou solutions déployées au répertoire Bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité Version 1 pour Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) et [déploiement de composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée dans le global assembly cache de système ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Cela inclut les solutions bac à sable ou solutions déployées au répertoire Bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité Version 1 pour Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) et [déploiement de composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Protégé contre les propriété de script
  *L’injection de script* est l’insertion de code potentiellement malveillant dans les contrôles ou des pages Web. Pour protéger les sites SharePoint 2010 contre l’injection de script, contributeurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], définissez cet attribut dans un élément de projet **entrées de contrôle sécurisé** sous-propriété **protégé contre les scripts**. Pour plus d’informations, consultez [fournissent des informations de déploiement du package et dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).

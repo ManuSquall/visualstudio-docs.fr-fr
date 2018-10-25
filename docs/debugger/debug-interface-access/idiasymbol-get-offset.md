@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_offset | Documents Microsoft
+title: IDiaSymbol::get_offset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1cf6b88a306fbb6cb127ec8174b5030a6d4d88
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0b2fa3ed234532ad3de02a31d4600f10f5375ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850072"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
-Récupère le décalage de l’emplacement de symboles. Quand utiliser le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField`.  
+Récupère le décalage de l’emplacement du symbole. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_offset (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne l’offset en octets de l’emplacement de symboles.  
+ [out] Retourne le décalage en octets de l’emplacement du symbole.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,9 +43,9 @@ HRESULT get_offset (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Le décalage est d’un point connu préalablement déterminé. Par exemple, le décalage pour un `LocIsBitField` type d’emplacement est généralement à partir du début de la classe conteneur.  
+ Le décalage est d’un point connu précédemment déterminé. Par exemple, l’offset pour un `LocIsBitField` type d’emplacement est généralement à partir du début de la classe conteneur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
@@ -54,4 +54,4 @@ HRESULT get_offset (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d107b1b55808149f480629b8a06f981598a992
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5ea47032ed2c5e4fb9b99afb214e068ca39d692
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857521"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework dans l’éditeur
 L’éditeur est généré à l’aide des composants de Managed Extensibility Framework (MEF). Vous pouvez créer vos propres composants MEF pour étendre l’éditeur, et votre code peut consommer des composants de l’éditeur ainsi.  
@@ -33,13 +33,13 @@ L’éditeur est généré à l’aide des composants de Managed Extensibility F
 ### <a name="component-parts-and-composition-containers"></a>Composants et conteneurs de composition  
  Un composant est une classe ou un membre d’une classe qui peut effectuer une des opérations suivantes (ou les deux) :  
   
--   Utiliser un autre composant  
+- Utiliser un autre composant  
   
--   Être consommé par un autre composant  
+- Être consommé par un autre composant  
   
- Par exemple, considérez une application d’achat qui a un composant d’entrée de commande qui dépend des données de disponibilité de produit fournies par un composant de stock d’entrepôt. En termes MEF, la partie de l’inventaire peut *exporter* les données de disponibilité de produit et le peut de partie commande entrée *importer* les données. La partie entrée de commande et la partie de l’inventaire n’ont pas à connaître sur les autres ; le *conteneur de composition* (fourni par l’application hôte) est responsable en conservant le jeu d’exportations et la résolution des exportations et importations.  
+  Par exemple, considérez une application d’achat qui a un composant d’entrée de commande qui dépend des données de disponibilité de produit fournies par un composant de stock d’entrepôt. En termes MEF, la partie de l’inventaire peut *exporter* les données de disponibilité de produit et le peut de partie commande entrée *importer* les données. La partie entrée de commande et la partie de l’inventaire n’ont pas à connaître sur les autres ; le *conteneur de composition* (fourni par l’application hôte) est responsable en conservant le jeu d’exportations et la résolution des exportations et importations.  
   
- Le conteneur de composition, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, est généralement détenus par l’hôte. Le conteneur de composition conserve un *catalogue* composants exporté.  
+  Le conteneur de composition, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, est généralement détenus par l’hôte. Le conteneur de composition conserve un *catalogue* composants exporté.  
   
 ### <a name="export-and-import-component-parts"></a>Exporter et importer des composants  
  Vous pouvez exporter toutes les fonctionnalités, tant qu’elle est implémentée comme une classe publique ou un membre public d’une classe (propriété ou méthode). Vous n’êtes pas obligé de dériver votre composant à partir de <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Au lieu de cela, vous devez ajouter un <xref:System.ComponentModel.Composition.ExportAttribute> d’attribut à la classe ou un membre de classe que vous souhaitez exporter. Cet attribut spécifie le *contrat* par le composant d’une autre partie peut importer vos fonctionnalités.  

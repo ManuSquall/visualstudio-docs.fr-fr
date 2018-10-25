@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Documents Microsoft
+title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899afbc801baee88dd941763b559845b90be8500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed136217f9f5c7cffc72ba03562d308723ef5029
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867778"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Obtient le point d’arrêt en attente à partir de laquelle le point d’arrêt lié spécifié a été créé.  
+Obtient le point d’arrêt en attente à partir duquel le point d’arrêt lié spécifié a été créé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,7 +51,7 @@ int GetPendingBreakpoint(
  Un point d’arrêt en attente peut être considéré comme une collection de toutes les informations nécessaires pour lier un point d’arrêt au code qui peut être appliqué à un ou plusieurs programmes.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CBoundBreakpoint` objet qui expose la [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CBoundBreakpoint` objet qui expose le [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
   
 ```  
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(  

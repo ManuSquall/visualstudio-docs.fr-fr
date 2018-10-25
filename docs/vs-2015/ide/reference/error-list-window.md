@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873690"
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ REMARQUE]
   
  La fenêtre **Liste d’erreurs** permet d’accélérer le développement des applications. Par exemple, il est possible de réaliser les tâches suivantes :  
   
--   afficher les erreurs, avertissements et messages générés pendant l'écriture du code ;  
+- afficher les erreurs, avertissements et messages générés pendant l'écriture du code ;  
   
--   rechercher les erreurs de syntaxe relevées par IntelliSense ;  
+- rechercher les erreurs de syntaxe relevées par IntelliSense ;  
   
--   rechercher les erreurs de déploiement, certaines erreurs d'analyse statique et les erreurs détectées lors de l'application de stratégies de modèle d'entreprise ;  
+- rechercher les erreurs de déploiement, certaines erreurs d'analyse statique et les erreurs détectées lors de l'application de stratégies de modèle d'entreprise ;  
   
--   double-cliquer sur toute entrée de message d'erreur pour ouvrir le fichier où le problème se produit et accéder à l'emplacement de l'erreur ;  
+- double-cliquer sur toute entrée de message d'erreur pour ouvrir le fichier où le problème se produit et accéder à l'emplacement de l'erreur ;  
   
--   filtrer les entrées qui sont affichées et les colonnes d'information qui apparaissent pour chaque entrée ;  
+- filtrer les entrées qui sont affichées et les colonnes d'information qui apparaissent pour chaque entrée ;  
   
--   rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.  
+- rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.  
   
- Pour afficher la **Liste d’erreurs**, cliquez sur **Afficher/Liste d’erreurs** ou appuyez sur **CTRL+\\+E**.  
+  Pour afficher la **Liste d’erreurs**, cliquez sur **Afficher/Liste d’erreurs** ou appuyez sur **CTRL+\\+E**.  
   
- Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.  
+  Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.  
   
- Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.  
+  Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.  
   
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -63,18 +63,18 @@ REMARQUE]
   
  Vous pouvez restreindre la portée de la recherche pour analyser et agir sur des groupes d'erreurs. Par exemple, vous pouvez vous concentrer sur les erreurs principales qui empêchent la compilation d'un projet. Les options de portée disponibles sont les suivantes :  
   
-1.  **Documents ouverts** : afficher les erreurs, les avertissements et les messages relatifs aux documents ouverts.  
+1. **Documents ouverts** : afficher les erreurs, les avertissements et les messages relatifs aux documents ouverts.  
   
-2.  **Projet actif** : afficher les erreurs, les avertissements et les messages du projet du document actuellement sélectionné dans l’**Éditeur** ou du projet sélectionné dans l’**Explorateur de solutions**.  
+2. **Projet actif** : afficher les erreurs, les avertissements et les messages du projet du document actuellement sélectionné dans l’**Éditeur** ou du projet sélectionné dans l’**Explorateur de solutions**.  
   
-    > [!NOTE]
-    >  La liste filtrée d’erreurs, d’avertissements et de messages est modifiée si le projet du document actuellement sélectionné est différent du projet sélectionné dans l’**Explorateur de solutions**.  
+   > [!NOTE]
+   >  La liste filtrée d’erreurs, d’avertissements et de messages est modifiée si le projet du document actuellement sélectionné est différent du projet sélectionné dans l’**Explorateur de solutions**.  
   
-3.  **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.  
+3. **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.  
   
- Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments ; par exemple, les boutons indiquent x erreurs sur y. Si aucun filtre n'est appliqué, la barre de titre indique uniquement « Liste d'erreurs ».  
+   Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments ; par exemple, les boutons indiquent x erreurs sur y. Si aucun filtre n'est appliqué, la barre de titre indique uniquement « Liste d'erreurs ».  
   
- La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.  
+   La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.  
   
 ## <a name="search"></a>Rechercher  
  Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à droite de la barre d’outils **Liste d’erreurs** pour rechercher des erreurs spécifiques dans la liste d’erreurs. Vous pouvez rechercher sur toute colonne visible dans la liste et les résultats de la recherche sont toujours triés selon la colonne de tri prioritaire au lieu de la requête ou du filtre appliqué. Si vous choisissez la touche **Échap** tandis que le focus est dans la **Liste d’erreurs**, vous pouvez effacer le terme de recherche et les résultats de la recherche filtrés. Vous pouvez également cliquer sur la croix (**X**) à droite de la zone de texte pour l’effacer.  

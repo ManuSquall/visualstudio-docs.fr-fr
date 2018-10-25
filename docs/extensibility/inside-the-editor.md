@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859679"
 ---
 # <a name="inside-the-editor"></a>À l’intérieur de l’éditeur
 L’éditeur est composée d’un nombre de différents sous-systèmes, lesquels sont conçus pour empêcher l’éditeur de texte modèle distinct l’affichage de texte et l’interface utilisateur.  
   
  Ces sections décrivent les différents aspects de l’éditeur :  
   
--   [Vue d’ensemble des sous-systèmes](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [Vue d’ensemble des sous-systèmes](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [Le modèle de texte](../extensibility/inside-the-editor.md#the-text-model)  
+- [Le modèle de texte](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [L’affichage de texte](../extensibility/inside-the-editor.md#the-text-view)  
+- [L’affichage de texte](../extensibility/inside-the-editor.md#the-text-view)  
   
- Ces sections décrivent les fonctionnalités de l’éditeur :  
+  Ces sections décrivent les fonctionnalités de l’éditeur :  
   
--   [Balises et les classifieurs](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [Balises et les classifieurs](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [Ornements](../extensibility/inside-the-editor.md#adornments)  
+- [Ornements](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projection](../extensibility/inside-the-editor.md#projection)  
+- [Projection](../extensibility/inside-the-editor.md#projection)  
   
--   [Mode Plan](../extensibility/inside-the-editor.md#outlining)  
+- [Mode Plan](../extensibility/inside-the-editor.md#outlining)  
   
--   [Liaisons de souris](../extensibility/inside-the-editor.md#mousebindings)  
+- [Liaisons de souris](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Opérations de l’éditeur](../extensibility/inside-the-editor.md#editoroperations)  
+- [Opérations de l’éditeur](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>Vue d’ensemble des sous-systèmes  
   
 ### <a name="text-model-subsystem"></a>Sous-système de modèle de texte  
  Le sous-système de modèle de texte est responsable représentant le texte et l’activation de sa manipulation. Le sous-système de modèle de texte contient le <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface, qui décrit la séquence de caractères qui doit être affichée par l’éditeur. Ce texte peut être modifié, suivi et manipulé à bien des égards. Le modèle de texte fournit également des types pour les aspects suivants :  
   
--   Un service qui associe le texte avec des fichiers et gère la lecture et de les écrire dans le système de fichiers.  
+- Un service qui associe le texte avec des fichiers et gère la lecture et de les écrire dans le système de fichiers.  
   
--   Un service de différenciation qui recherche la grande différence entre deux séquences d’objets.  
+- Un service de différenciation qui recherche la grande différence entre deux séquences d’objets.  
   
--   Un système qui décrit le texte dans une mémoire tampon en termes de sous-ensembles du texte dans les autres mémoires tampons.  
+- Un système qui décrit le texte dans une mémoire tampon en termes de sous-ensembles du texte dans les autres mémoires tampons.  
   
- Le sous-système de modèle de texte est libre de concepts d’interface (UI) utilisateur. Par exemple, il n’est pas responsable de la mise en forme du texte ou de la disposition du texte, et il n’a aucune connaissance des ornements visuels qui peuvent être associées à du texte.  
+  Le sous-système de modèle de texte est libre de concepts d’interface (UI) utilisateur. Par exemple, il n’est pas responsable de la mise en forme du texte ou de la disposition du texte, et il n’a aucune connaissance des ornements visuels qui peuvent être associées à du texte.  
   
- Les types publics du sous-système de modèle de texte sont contenues dans *Microsoft.VisualStudio.Text.Data.dll* et *Microsoft.VisualStudio.CoreUtility.dll*, qui dépendent uniquement de la base de .NET Framework bibliothèque de classes et de Managed Extensibility Framework (MEF).  
+  Les types publics du sous-système de modèle de texte sont contenues dans *Microsoft.VisualStudio.Text.Data.dll* et *Microsoft.VisualStudio.CoreUtility.dll*, qui dépendent uniquement de la base de .NET Framework bibliothèque de classes et de Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Sous-système d’affichage de texte  
  Le sous-système d’affichage de texte est responsable de la mise en forme et l’affichage de texte. Les types dans ce sous-système sont divisées en deux couches, selon que les types s’appuient sur Windows Presentation Foundation (WPF). Les types les plus importants sont <xref:Microsoft.VisualStudio.Text.Editor.ITextView> et <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, qui contrôle l’ensemble de lignes de texte qui doivent être affichées et également le point d’insertion, la sélection et les installations pour orner le texte à l’aide des éléments de WPF UI. Ce sous-système fournit également des marges autour du texte de zone d’affichage. Ces marges peuvent être étendus et peuvent contenir différents types de contenu et visuelle des effets. Ligne numéro affiche et barres de défilement sont des exemples de marges.  

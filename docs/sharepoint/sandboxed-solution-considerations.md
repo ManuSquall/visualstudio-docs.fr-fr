@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890034"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considérations relatives à la solution bac à sable
   *Solutions bac à sable* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collection de sites de télécharger leurs propres solutions de code personnalisé. Une solution bac à sable courante est les utilisateurs de télécharger leurs propres composants WebPart.  
@@ -81,66 +81,66 @@ ms.locfileid: "37119164"
 ## <a name="sandboxed-solution-limitations"></a>Limitations de la solution bac à sable
  Lorsqu’une solution bac à sable est déployée, le tableau des fonctionnalités de SharePoint à sa disposition est limité pour réduire les vulnérabilités de sécurité, qu'elle peut avoir. Certaines de ces restrictions sont les suivantes :  
   
--   Les solutions sandbox. vous ont un sous-ensemble limité d’éléments de solution pouvant être déployée à leur disposition. Les modèles de projet SharePoint potentiellement vulnérables, tels que les définitions de site et les flux de travail, ne sont pas disponibles.  
+- Les solutions sandbox. vous ont un sous-ensemble limité d’éléments de solution pouvant être déployée à leur disposition. Les modèles de projet SharePoint potentiellement vulnérables, tels que les définitions de site et les flux de travail, ne sont pas disponibles.  
   
--   SharePoint exécute le code de la solution bac à sable dans un processus (*SPUCWorkerProcess.exe*) distinct à partir de la main [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool d’applications (*w3wp.exe*) processus.  
+- SharePoint exécute le code de la solution bac à sable dans un processus (*SPUCWorkerProcess.exe*) distinct à partir de la main [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool d’applications (*w3wp.exe*) processus.  
   
--   Dossiers mappés ne peut pas être ajoutés au projet.  
+- Dossiers mappés ne peut pas être ajoutés au projet.  
   
--   Types dans le [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server ne peut pas être utilisé dans les solutions sandbox. En outre, seuls les types dans le [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft.SharePoint peuvent être utilisés dans les solutions sandbox.  
+- Types dans le [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server ne peut pas être utilisé dans les solutions sandbox. En outre, seuls les types dans le [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft.SharePoint peuvent être utilisés dans les solutions sandbox.  
   
- Il est important de noter que si vous spécifiez une solution SharePoint comme une solution bac à sable n’a aucun effet sur le serveur SharePoint. Il détermine uniquement comment le projet SharePoint est déployé sur SharePoint à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et les assemblys qu’il se lie au. Il n’affecte pas le texte généré *.wsp* fichier et le *.wsp* fichier ne comporte aucune donnée directement en corrélation avec la *Solution bac à sable* propriété.  
+  Il est important de noter que si vous spécifiez une solution SharePoint comme une solution bac à sable n’a aucun effet sur le serveur SharePoint. Il détermine uniquement comment le projet SharePoint est déployé sur SharePoint à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et les assemblys qu’il se lie au. Il n’affecte pas le texte généré *.wsp* fichier et le *.wsp* fichier ne comporte aucune donnée directement en corrélation avec la *Solution bac à sable* propriété.  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Éléments dans les solutions sandbox et des fonctions
  Solutions bac à sable prennent en charge les fonctionnalités et les éléments suivants :  
   
--   Types de contenu/champs  
+- Types de contenu/champs  
   
--   Actions personnalisées  
+- Actions personnalisées  
   
--   Flux de travail déclaratifs  
+- Flux de travail déclaratifs  
   
--   Récepteurs d’événements  
+- Récepteurs d’événements  
   
--   Légendes des fonctionnalités  
+- Légendes des fonctionnalités  
   
--   Définitions de listes  
+- Définitions de listes  
   
--   Instances de listes  
+- Instances de listes  
   
--   Module/fichiers  
+- Module/fichiers  
   
--   Navigation  
+- Navigation  
   
--   *onet.Xml*  
+- *onet.Xml*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   Prise en charge pour tous les composants WebPart qui dérivent de `System.Web.UI.WebControls.WebParts.WebPart`  
+- Prise en charge pour tous les composants WebPart qui dérivent de `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   WebParts  
+- WebParts  
   
--   Éléments de fonctionnalité WebTemplate (au lieu de *Webtemp.xml*)  
+- Éléments de fonctionnalité WebTemplate (au lieu de *Webtemp.xml*)  
   
--   Composants Visual Web Parts  
+- Composants Visual Web Parts  
   
- Solutions bac à sable ne prennent pas en charge les fonctionnalités et les éléments suivants :  
+  Solutions bac à sable ne prennent pas en charge les fonctionnalités et les éléments suivants :  
   
--   Pages d’application  
+- Pages d’application  
   
--   Groupe d’actions personnalisées  
+- Groupe d’actions personnalisées  
   
--   Fonctionnalités étendues à la batterie de serveurs  
+- Fonctionnalités étendues à la batterie de serveurs  
   
--   `HideCustomAction` (élément)  
+- `HideCustomAction` (élément)  
   
--   Fonctionnalités de portée d’Application Web  
+- Fonctionnalités de portée d’Application Web  
   
--   Flux de travail avec code  
+- Flux de travail avec code  
   
 ## <a name="see-also"></a>Voir aussi
  [Différences entre le bac à sable et les solutions de batterie](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

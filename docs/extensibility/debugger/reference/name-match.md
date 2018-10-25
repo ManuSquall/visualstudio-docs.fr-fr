@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Documents Microsoft
+title: NAME_MATCH | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a61e8a3cadeeadf0657ca6fe293a527113505a0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e49933c0bdc5b9a98c165aebd8e263bca2a2be5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867518"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Sélectionne l’option de casse pour les noms correspondants.  
@@ -54,7 +54,7 @@ public enum NameMatchOptions {
  Indique que les noms à mettre en correspondance ne respectent pas la casse.  
   
 ## <a name="remarks"></a>Notes  
- Passé en tant qu’argument pour les méthodes suivantes :  
+ Passé en tant qu’argument aux méthodes suivantes :  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
@@ -64,7 +64,7 @@ public enum NameMatchOptions {
   
 -   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

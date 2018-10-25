@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885198"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifications que vous pouvez apporter en mode lecture seule  
  Si vous ouvrez un modèle et ses diagrammes dans une version de Visual Studio qui ne prend pas en charge la création de modèles, vous ne pouvez pas modifier le modèle. Autrement dit, vous ne pouvez pas modifier les éléments et les relations qui sont affichés dans les diagrammes ou dans l'Explorateur de modèles. En revanche, vous pouvez apporter certaines modifications à la disposition des diagrammes. Vous pouvez :  
   
--   réorganiser les formes et connecteurs dans le diagramme ;  
+- réorganiser les formes et connecteurs dans le diagramme ;  
   
--   développer et réduire des formes.  
+- développer et réduire des formes.  
   
- Vous pouvez enregistrer ces modifications. Si vous souhaitez rendre visibles à d’autres utilisateurs vos modifications, vous devez envoyer au moins la mise à jour **.layout** fichiers.  
+  Vous pouvez enregistrer ces modifications. Si vous souhaitez rendre visibles à d’autres utilisateurs vos modifications, vous devez envoyer au moins la mise à jour **.layout** fichiers.  
   
 ##  <a name="RelatedTopics"></a> Rubriques connexes  
   

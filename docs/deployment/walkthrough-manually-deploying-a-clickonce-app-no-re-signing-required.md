@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875097"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation
 Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client pour publier et le déploiement, le client a généralement mis à jour le manifeste de déploiement et de signer à nouveau. Si qui est toujours la méthode recommandée dans la plupart des cas, le .NET Framework 3.5 vous permet de créer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [ClickOnce de déployer des applications pour les serveurs de test et de production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -48,36 +48,36 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Pour déployer une application ClickOnce avec plusieurs déploiements et la prise en charge de la personnalisation à l’aide de Mage.exe  
   
-1.  Ouvrez une invite de commandes Visual Studio ou un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] invite de commandes et accédez au répertoire dans lequel vous souhaitez stocker votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichiers.  
+1. Ouvrez une invite de commandes Visual Studio ou un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] invite de commandes et accédez au répertoire dans lequel vous souhaitez stocker votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichiers.  
   
-2.  Créez un répertoire nommé d’après la version actuelle de votre déploiement. S’il s’agit de la première fois que vous déployez l’application, vous choisirez probablement **1.0.0.0**.  
+2. Créez un répertoire nommé d’après la version actuelle de votre déploiement. S’il s’agit de la première fois que vous déployez l’application, vous choisirez probablement **1.0.0.0**.  
   
-    > [!NOTE]
-    >  La version de votre déploiement peut être différente de la version de vos fichiers d’application.  
+   > [!NOTE]
+   >  La version de votre déploiement peut être différente de la version de vos fichiers d’application.  
   
-3.  Créez un sous-répertoire nommé **bin** et copier tous vos fichiers d’application, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.  
+3. Créez un sous-répertoire nommé **bin** et copier tous vos fichiers d’application, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.  
   
-4.  Générer le manifeste d’application avec un appel à Mage.exe.  
+4. Générer le manifeste d’application avec un appel à Mage.exe.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Signer le manifeste d’application avec votre certificat numérique.  
+5. Signer le manifeste d’application avec votre certificat numérique.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Générer le manifeste de déploiement avec un appel à *Mage.exe*. Par défaut, *Mage.exe* marque votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement sous la forme d’une application installée, afin qu’il peut être exécuté à la fois en ligne et hors connexion. Pour rendre l’application disponible uniquement lorsque l’utilisateur est en ligne, utilisez le `-i` argument avec la valeur `f`. Étant donné que cette application prend en charge plusieurs déploiements, exclure les `-providerUrl` l’argument de *Mage.exe*. (Dans les versions du .NET Framework antérieures à la version 3.5, à l’exclusion `-providerUrl` pour une application hors connexion entraîne une erreur.)  
+6. Générer le manifeste de déploiement avec un appel à *Mage.exe*. Par défaut, *Mage.exe* marque votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement sous la forme d’une application installée, afin qu’il peut être exécuté à la fois en ligne et hors connexion. Pour rendre l’application disponible uniquement lorsque l’utilisateur est en ligne, utilisez le `-i` argument avec la valeur `f`. Étant donné que cette application prend en charge plusieurs déploiements, exclure les `-providerUrl` l’argument de *Mage.exe*. (Dans les versions du .NET Framework antérieures à la version 3.5, à l’exclusion `-providerUrl` pour une application hors connexion entraîne une erreur.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  Ne vous connectez pas le manifeste de déploiement.  
+7. Ne vous connectez pas le manifeste de déploiement.  
   
-8.  Fournissez tous les fichiers au client, ce qui vous allez déployer l’application sur son réseau.  
+8. Fournissez tous les fichiers au client, ce qui vous allez déployer l’application sur son réseau.  
   
 9. À ce stade, le client doit signer le manifeste de déploiement avec son propre certificat généré automatiquement. Par exemple, si le client fonctionne pour une société nommée Adventure Works, il peut générer un certificat auto-signé à l’aide de la *MakeCert.exe* outil. Ensuite, utilisez le *Pvk2pfx.exe* outil pour combiner les fichiers créés par *MakeCert.exe* dans un fichier PFX qui peut être passé à *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Pour déployer une application ClickOnce avec plusieurs déploiements et la prise en charge de la personnalisation à l’aide de MageUI.exe  
   
-1.  Ouvrez une invite de commandes Visual Studio ou un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] invite de commandes et accédez au répertoire dans lequel vous souhaitez stocker votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichiers.  
+1. Ouvrez une invite de commandes Visual Studio ou un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] invite de commandes et accédez au répertoire dans lequel vous souhaitez stocker votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichiers.  
   
-2.  Créez un sous-répertoire nommé **bin** et copier tous vos fichiers d’application, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.  
+2. Créez un sous-répertoire nommé **bin** et copier tous vos fichiers d’application, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.  
   
-3.  Créez un sous-répertoire nommé d’après la version actuelle de votre déploiement. S’il s’agit de la première fois que vous déployez l’application, vous choisirez probablement **1.0.0.0**.  
+3. Créez un sous-répertoire nommé d’après la version actuelle de votre déploiement. S’il s’agit de la première fois que vous déployez l’application, vous choisirez probablement **1.0.0.0**.  
   
-    > [!NOTE]
-    >  La version de votre déploiement peut être différente de la version de vos fichiers d’application.  
+   > [!NOTE]
+   >  La version de votre déploiement peut être différente de la version de vos fichiers d’application.  
   
-4.  Déplacer le \\ **bin** répertoire dans le répertoire que vous avez créé à l’étape 2.  
+4. Déplacer le \\ **bin** répertoire dans le répertoire que vous avez créé à l’étape 2.  
   
-5.  Démarrez l’outil graphique *MageUI.exe*.  
+5. Démarrez l’outil graphique *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Créer un nouveau manifeste d’application en sélectionnant **fichier**, **New**, **manifeste d’Application** dans le menu.  
+6. Créer un nouveau manifeste d’application en sélectionnant **fichier**, **New**, **manifeste d’Application** dans le menu.  
   
-7.  Sur la valeur par défaut **nom** , entrez le nom et numéro de version de ce déploiement. Vous devez également fournir une valeur pour **Publisher**, qui sera utilisé comme nom de dossier pour le lien de raccourci de l’application dans le menu Démarrer, lorsqu’elle est déployée.  
+7. Sur la valeur par défaut **nom** , entrez le nom et numéro de version de ce déploiement. Vous devez également fournir une valeur pour **Publisher**, qui sera utilisé comme nom de dossier pour le lien de raccourci de l’application dans le menu Démarrer, lorsqu’elle est déployée.  
   
-8.  Sélectionnez le **Options d’Application** onglet et cliquez sur **utiliser le manifeste d’Application pour les informations d’approbation**. Cela permettra de personnalisation pour ce tiers [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
+8. Sélectionnez le **Options d’Application** onglet et cliquez sur **utiliser le manifeste d’Application pour les informations d’approbation**. Cela permettra de personnalisation pour ce tiers [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
   
 9. Sélectionnez le **fichiers** onglet et cliquez sur le **Parcourir** situé en regard du **répertoire de l’Application** zone de texte.  
   

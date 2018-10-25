@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Documents Microsoft
+title: IDebugArrayField::GetRank | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fee642bb5f19efb62b631d71d3ba95eec45c0be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6921da02b2df62509dd820795581e3ce6dae92d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846237"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 Obtient le rang ou le nombre de dimensions du tableau.  
@@ -47,7 +47,7 @@ int GetRank(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le rang d’un tableau correspond au nombre de dimensions. Dans C++ et c#, les tableaux multidimensionnels sont vraiment les tableaux de tableaux et peut donc être considéré comme simplement un tableau unidimensionnel (et le `GetRank` méthode retourne toujours 1). Dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], quant à eux, les tableaux multidimensionnels sont gérées différemment et le rang d’un tel tableau reflète le nombre de dimensions (et le `GetRank` méthode retourne toujours le nombre de dimensions).  
+ Le rang d’un tableau correspond au nombre de dimensions. Dans C++ et c#, les tableaux multidimensionnels sont vraiment les tableaux de tableaux et peut donc être considéré comme simplement un tableau unidimensionnel (et le `GetRank` méthode retourne toujours 1). Dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], quant à eux, des tableaux multidimensionnels sont gérés différemment et le classement d’un tel tableau reflète le nombre de dimensions (et le `GetRank` méthode retourne toujours le nombre de dimensions).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886459"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personnaliser le stockage de fichiers et la sérialisation XML
 
@@ -301,7 +301,7 @@ Nœuds de la propriété XML sont trouvent sous les nœuds de la classe.
 Les nœuds de données de rôle sont trouvent sous les nœuds de la classe source.
 
 |Propriété|Description|
-|--------------|-----------------|
+|-|-|
 |A Moniker personnalisé|Définissez cette propriété sur true si vous souhaitez fournir votre propre code pour la génération et la résolution des monikers qui passent par cette relation.<br /><br /> Pour obtenir des instructions détaillées, générez la solution, puis double-cliquez sur les messages d’erreur.|
 |Relation de domaine|Spécifie la relation à laquelle ces options s’appliquent. Lecture seule.|
 |Omettre l’élément|Si la valeur est true, le nœud XML qui correspond au rôle source est omis à partir du schéma.<br /><br /> S’il existe plusieurs relations entre les classes source et cible, ce nœud de rôle fait la distinction entre les liens qui appartiennent aux deux relations. Par conséquent, nous recommandons que vous ne définissez pas cette option dans ce cas.|

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Item | Documents Microsoft
+title: IDiaEnumFrameData::Item | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d725c38073b82bc94081b3c27791e88f64343cd3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c15d0dec0ccaa20e2fcf59f88d68d5febc63eb04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887401"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
-Récupère un élément de données de frame au moyen d’un index.  
+Récupère un élément de données d’image au moyen d’un index.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,7 +38,7 @@ HRESULT Item (
  [in] Index de la [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet à récupérer. L’index est comprise entre 0 et `count`-1, où `count` est retourné par la [IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md) (méthode).  
   
  section  
- [out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet représentant l’élément de données d’image souhaitée.  
+ [out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet représentant l’élément de données d’images souhaitée.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

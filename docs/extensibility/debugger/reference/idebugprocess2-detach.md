@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach | Documents Microsoft
+title: IDebugProcess2::Detach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fce67b16d8de1e70e308fd107af3c26012e752c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de18df907c8a30235fcfc3391fe6879afdcaa1f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854297"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Détache le débogueur à partir de ce processus en détachant de tous les programmes dans le processus.  
@@ -41,7 +41,7 @@ int Detach();
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Tous les programmes et le processus de continuent à s’exécuter, mais ne font plus partie de la session de débogage. Une fois l’opération de détachement est terminé, plus aucun débogage recevront les événements de ce processus (et ses programmes).  
+ Tous les programmes et le processus de continuent à s’exécuter, mais ne font plus partie de la session de débogage. Une fois l’opération de détachement débogage complète, pas d’autres événements pour ce processus (et ses programmes) seront envoyés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

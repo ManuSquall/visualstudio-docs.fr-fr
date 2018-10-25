@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884899"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Procédure pas à pas : débogage d'une application multithread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>Pour découvrir le marqueur de thread  
   
-1.  Avec le bouton droit dans le **Threads** fenêtre, puis cliquez sur **afficher les Threads dans la Source**.  
+1. Avec le bouton droit dans le **Threads** fenêtre, puis cliquez sur **afficher les Threads dans la Source**.  
   
-2.  Examinez la reliure située sur le côté gauche de la fenêtre. Une icône ressemblant à un maillage s'affiche sur cette ligne. Un des threads est rouge et l'autre est bleu. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement. Le thread s'interrompt peut-être à cet emplacement.  
+2. Examinez la reliure située sur le côté gauche de la fenêtre. Une icône ressemblant à un maillage s'affiche sur cette ligne. Un des threads est rouge et l'autre est bleu. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement. Le thread s'interrompt peut-être à cet emplacement.  
   
-3.  Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu. Dans ce cas, il n'existe qu'un seul thread dont le nom est probablement `<noname>`.  
+3. Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu. Dans ce cas, il n'existe qu'un seul thread dont le nom est probablement `<noname>`.  
   
-4.  Cliquez avec le bouton droit sur le marqueur de thread. Notez les choix dans le menu contextuel.  
+4. Cliquez avec le bouton droit sur le marqueur de thread. Notez les choix dans le menu contextuel.  
   
- Cette icône est un *marqueur de thread*:  
+   Cette icône est un *marqueur de thread*:  
   
- ![Marqueur de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Marqueur de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Ajout et suppression d'indicateur de threads  
  Dans [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], vous pouvez indiquer les threads auxquels vous souhaitez accorder une attention particulière. Le signalement des threads vous permet de suivre les threads importants et d'ignorer ceux de moindre importance.  

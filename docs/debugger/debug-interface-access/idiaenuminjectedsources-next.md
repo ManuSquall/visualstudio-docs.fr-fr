@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Next | Documents Microsoft
+title: IDiaEnumInjectedSources::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f199ffcc61f11d14c010e2eea3626e0016272826
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42b0e76bea62e27d0afe12b8c16eb4e6775edd61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845081"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-Récupère un nombre spécifié de sources injectées dans la séquence d’énumération.  
+Récupère un nombre spécifié de sources injectés dans la séquence d’énumération.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de sources injectées dans l’énumérateur doit être récupéré.  
+ [in] Le nombre de sources injectés dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Retourne un tableau de [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objets qui représentent les sources injectées souhaitées.  
+ [out] Retourne un tableau de [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objets qui représentent les sources injectés souhaités.  
   
  pceltFetched  
- [out] Retourne le nombre de sources injectées dans l’énumérateur d’extraction.  
+ [out] Retourne le nombre de sources injectés dans l’énumérateur extraite.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il y a plus aucune injectées sources. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il existe plus aucun injectées sources. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

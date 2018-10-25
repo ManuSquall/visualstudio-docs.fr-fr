@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883352"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procédure pas à pas : Publication d’une extension de Visual Studio via la ligne de commande
 
@@ -33,12 +33,12 @@ VsixPublisher.exe est l’outil de ligne de commande pour la publication des ext
 
 Publie une extension à la place de marché. L’extension peut être une extension vsix, un fichier exe/msi ou un lien. Si l’extension existe déjà avec la même version, elle remplace l’extension. Si l’extension n’existe pas déjà, il crée une nouvelle extension.
 
-|Options de commande                    |Description  |
+|Options de commande |Description |
 |---------|---------|
-|charge utile (obligatoire)                 |  Soit un chemin d’accès à la charge utile de publier ou d’un lien à utiliser comme la « URL informations ».      |
-|publishManifest (obligatoire)         |  Chemin d’accès à la publication manifeste de fichier à utiliser.       |
-|ignoreWarnings                     |  Liste d’avertissements à ignorer lors de la publication d’une extension. Ces avertissements sont affichés sous forme de messages de la ligne de commande lors de la publication d’une extension. (par exemple, « VSIXValidatorWarning01, VSIXValidatorWarning02 »)  
-|personalAccesToken                 |  Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés.       |
+|charge utile (obligatoire) | Soit un chemin d’accès à la charge utile de publier ou d’un lien à utiliser comme la « URL informations ». |
+|publishManifest (obligatoire) | Chemin d’accès à la publication manifeste de fichier à utiliser. |
+|ignoreWarnings | Liste d’avertissements à ignorer lors de la publication d’une extension. Ces avertissements sont affichés sous forme de messages de la ligne de commande lors de la publication d’une extension. (par exemple, « VSIXValidatorWarning01, VSIXValidatorWarning02 »)  
+|personalAccesToken | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Crée un serveur de publication sur la place de marché. Enregistre également le serveur de publication à la machine pour les actions futures (par exemple, la suppression/une extension de publication).
 
-|Options de commande                    |Description  |
+|Options de commande |Description |
 |---------|---------|
-|displayName (obligatoire)             |  Nom complet du serveur de publication.      |
-|publisherName (obligatoire)           |  Le nom du serveur de publication (par exemple, l’identificateur).      |
-|personalAccessToken (obligatoire)     |  Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication.      |
-|shortDescription                   |  Une brève description du serveur de publication (pas un fichier).       |
-|longDescription                    |  Longue description du serveur de publication (pas un fichier).      |
+|displayName (obligatoire) | Nom complet du serveur de publication. |
+|publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
+|personalAccessToken (obligatoire) | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. |
+|shortDescription | Une brève description du serveur de publication (pas un fichier). |
+|longDescription | Longue description du serveur de publication (pas un fichier). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Supprime un serveur de publication sur la place de marché.
 
-|Options de commande                    |Description  |
+|Options de commande |Description |
 |---------|---------|
-|publisherName (obligatoire)           |  Le nom du serveur de publication (par exemple, l’identificateur).      |
-|personalAccessToken (obligatoire)     |  Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication.      |
+|publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
+|personalAccessToken (obligatoire) | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Supprime une extension de la place de marché.
 
-|Options de commande                    |Description  |
+|Options de commande |Description |
 |---------|---------|
-|extensionName (obligatoire)           |  Le nom de l’extension à supprimer.      |
-|publisherName (obligatoire)           |  Le nom du serveur de publication (par exemple, l’identificateur).      |
-|personalAccessToken                |  Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés.     |
+|extensionName (obligatoire) | Le nom de l’extension à supprimer. |
+|publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
+|personalAccessToken | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Se connecte à un serveur de publication à l’ordinateur.
 
-|Options de commande                    |Description  |
+|Options de commande |Description |
 |---------|---------|
-|personalAccessToken (obligatoire      |  Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication.      |
-|publisherName (obligatoire)           |  Le nom du serveur de publication (par exemple, l’identificateur).      |
-|Remplacer                          |  Spécifie que n’importe quel éditeur existant doit être remplacé par le nouveau jeton d’accès personnel.     |
+|personalAccessToken (obligatoire | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. |
+|publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
+|Remplacer | Spécifie que n’importe quel éditeur existant doit être remplacé par le nouveau jeton d’accès personnel. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Enregistre un serveur de publication en dehors de l’ordinateur.
 
-|Options de commande                    |Description  |
+|Options de commande |Description |
 |---------|---------|
-|publisherName (obligatoire)           |  Le nom du serveur de publication (par exemple, l’identificateur).      |
-|ignoreMissingPublisher             |  Spécifie que l’outil ne doit pas d’erreur si le serveur de publication spécifié n'est pas déjà connecté en.     |
+|publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
+|ignoreMissingPublisher | Spécifie que l’outil ne doit pas d’erreur si le serveur de publication spécifié n'est pas déjà connecté en. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

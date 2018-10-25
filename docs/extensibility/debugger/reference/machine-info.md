@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Documents Microsoft
+title: MACHINE_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be6ee66149acb970287628289a15574894b8b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e548552b5acda6a3334b6d7df90b2aeab80c2e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847225"
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
 Décrit un ordinateur particulier.  
@@ -45,18 +45,18 @@ public struct MACHINE_INFO {
   
 ## <a name="members"></a>Membres  
  `Fields`  
- Une combinaison d’indicateurs à partir de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) énumération qui spécifient les champs de la structure sont initialisés.  
+ Une combinaison d’indicateurs de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) énumération qui spécifient les champs de la structure sont initialisés.  
   
  `bstrName`  
  Le nom de l’ordinateur. Équivalent à l’appel [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
   
  `Flags`  
- Une combinaison d’indicateurs à partir de la [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) énumération décrivant les attributs de l’ordinateur.  
+ Une combinaison d’indicateurs de la [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) énumération décrivant les attributs de l’ordinateur.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est retournée par un appel à la [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

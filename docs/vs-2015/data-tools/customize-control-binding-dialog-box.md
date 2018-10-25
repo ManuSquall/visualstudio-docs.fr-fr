@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889702"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Personnaliser la liaison de contrôles, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Utilisez le **personnaliser la liaison de contrôle** boîte de dialogue pour sp
  **Type de données**  
  Affiche la liste des types que vous associez à des contrôles :  
   
--   Tables, les entités et les objets sont représentés en tant que **[liste]** types.  
+- Tables, les entités et les objets sont représentés en tant que **[liste]** types.  
   
--   Colonnes ou des propriétés publiques d’entités et les objets sont représentées en tant que type de données réel de la colonne ou une propriété dans le magasin de données sous-jacent.  
+- Colonnes ou des propriétés publiques d’entités et les objets sont représentées en tant que type de données réel de la colonne ou une propriété dans le magasin de données sous-jacent.  
   
--   Les objets avec des formes définis par l’utilisateur sont représentés en tant que **[autre]**. Par exemple, si votre application comporte un contrôle personnalisé qui affiche les données à partir de plusieurs propriétés d’un objet, sélectionnez le **[autre]** type de données pour votre contrôle.  
+- Les objets avec des formes définis par l’utilisateur sont représentés en tant que **[autre]**. Par exemple, si votre application comporte un contrôle personnalisé qui affiche les données à partir de plusieurs propriétés d’un objet, sélectionnez le **[autre]** type de données pour votre contrôle.  
   
- **Contrôles associés**  
- Affiche une liste de contrôles que vous pouvez associer à un type de données particulier. Si vous souhaitez associer un contrôle particulier avec le type de données sélectionné dans le **Type de données** , sélectionnez la case à cocher correspondante. Désactivez la case à cocher pour supprimer une association. Vérifié les contrôles apparaissent dans le menu contextuel présenté par le **des Sources de données** fenêtre pour un élément du type de données associé.  
+  **Contrôles associés**  
+  Affiche une liste de contrôles que vous pouvez associer à un type de données particulier. Si vous souhaitez associer un contrôle particulier avec le type de données sélectionné dans le **Type de données** , sélectionnez la case à cocher correspondante. Désactivez la case à cocher pour supprimer une association. Vérifié les contrôles apparaissent dans le menu contextuel présenté par le **des Sources de données** fenêtre pour un élément du type de données associé.  
   
- Vous pouvez ajouter des contrôles à la liste en ajoutant des contrôles qui ont une de plusieurs attributs de liaison de données pour le **boîte à outils**. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Vous pouvez ajouter des contrôles à la liste en ajoutant des contrôles qui ont une de plusieurs attributs de liaison de données pour le **boîte à outils**. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Définir par défaut**  
- Assigne le type de contrôle sélectionné à la valeur par défaut pour les éléments du type de données sélectionné. Le contrôle par défaut apparaît comme première sélection dans le menu contextuel présenté par le **des Sources de données** fenêtre pour un élément. Type de contrôle qu’un seul peut être affecté en tant que la valeur par défaut pour un type de données.  
+  **Définir par défaut**  
+  Assigne le type de contrôle sélectionné à la valeur par défaut pour les éléments du type de données sélectionné. Le contrôle par défaut apparaît comme première sélection dans le menu contextuel présenté par le **des Sources de données** fenêtre pour un élément. Type de contrôle qu’un seul peut être affecté en tant que la valeur par défaut pour un type de données.  
   
- **Effacer la valeur par défaut**  
- Supprime la désignation d’un contrôle en tant que la valeur par défaut pour le type de données sélectionnée. S’il n’existe aucune valeur par défaut pour le type de données sélectionné, **[None]** apparaît comme première sélection dans le menu contextuel présenté par le **des Sources de données** fenêtre pour un élément du type associé.  
+  **Effacer la valeur par défaut**  
+  Supprime la désignation d’un contrôle en tant que la valeur par défaut pour le type de données sélectionnée. S’il n’existe aucune valeur par défaut pour le type de données sélectionné, **[None]** apparaît comme première sélection dans le menu contextuel présenté par le **des Sources de données** fenêtre pour un élément du type associé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

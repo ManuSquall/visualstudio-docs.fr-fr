@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::get_name | Documents Microsoft
+title: IDiaTable::get_name | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf326d718c9d015aa488c1dc2fdf9210c4fc9e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 87527cd4a025973294ffc6219a452eb1b23bc897
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880700"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 Récupère le nom de la table.  

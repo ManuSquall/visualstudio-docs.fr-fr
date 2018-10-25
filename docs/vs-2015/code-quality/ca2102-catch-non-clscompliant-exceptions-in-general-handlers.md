@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877416"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102 : Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244868"
 ## <a name="rule-description"></a>Description de la règle
  Un bloc catch qui gère <xref:System.Exception> intercepte toutes les exceptions conformes Common Language Specification (CLS). Toutefois, il n’intercepte pas les exceptions non conformes CLS. Non-CLS conformes exceptions peuvent être levées à partir du code natif ou du code managé qui a été généré par le Microsoft intermediate language (MSIL) assembleur. Notez que c# et [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilateurs n’autorisent pas non-CLS levée d’exceptions et [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] n’intercepte pas les exceptions non conformes CLS. Si l’intention du bloc catch doit gérer toutes les exceptions, utilisez la syntaxe de bloc catch général suivante.
 
--   C#: `catch {}`
+- C#: `catch {}`
 
--   C++ : `catch(...) {}` ou `catch(Object^) {}`
+- C++ : `catch(...) {}` ou `catch(Object^) {}`
 
- Une exception compatible non-CLS non gérée devient un problème de sécurité lorsque les autorisations précédemment accordées sont supprimées dans le bloc catch. Étant donné que les exceptions non conformes CLS ne sont pas interceptées, une méthode malveillante qui lève une non-CLS exception pourrait exécuter avec des autorisations élevées.
+  Une exception compatible non-CLS non gérée devient un problème de sécurité lorsque les autorisations précédemment accordées sont supprimées dans le bloc catch. Étant donné que les exceptions non conformes CLS ne sont pas interceptées, une méthode malveillante qui lève une non-CLS exception pourrait exécuter avec des autorisations élevées.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle lorsque l’objectif est d’intercepter toutes les exceptions, remplacer ou ajouter un bloc catch général ou marquez l’assembly `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Si les autorisations sont supprimées dans le bloc catch, en double la fonctionnalité dans le grand bloc catch. Si elle n’est pas l’intention de gérer toutes les exceptions, remplacez le bloc catch qui gère <xref:System.Exception> avec les blocs catch qui gèrent des types d’exceptions spécifiques.

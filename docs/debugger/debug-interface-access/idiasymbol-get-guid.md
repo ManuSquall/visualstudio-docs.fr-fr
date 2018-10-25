@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_guid | Documents Microsoft
+title: IDiaSymbol::get_guid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16fa27bf7938a0e7e6202daa4284cd3f2e6634b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e9498e8795daf5e1d566782461f2505bc8753135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884379"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
-Récupère l’identificateur du symbole global unique (GUID).  
+Récupère l’identificateur global unique du symbole (GUID).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_guid (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne GUID du symbole.  
+ [out] Retourne les GUID du symbole.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
@@ -42,7 +42,7 @@ HRESULT get_guid (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

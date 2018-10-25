@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847381"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 
@@ -41,7 +41,7 @@ Pour plus d’informations, consultez le [référence de l’interface utilisate
  La fenêtre Variables locales affiche également les variables de contexte prédéfinies qui servent au suivi du contexte de la transformation XSLT. Le tableau suivant décrit les variables de contexte prédéfinies utilisées par le débogueur XSLT.
 
 |Nom|Description|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|Taille du contexte.|
 |`position()`|Position (index) du nœud de contexte par rapport à la taille du contexte.|
 |`self::node()`|Valeur du nœud de contexte.|
@@ -82,7 +82,7 @@ Pour plus d’informations, consultez le [référence de l’interface utilisate
  Si vous cliquez sur un autre élément que celui situé en haut de la liste, les flèches vertes et le surlignage vert standard indiquent la création de branche de l’exécution XSLT.
 
 ## <a name="quickwatch-dialog-box"></a>Espion express (boîte de dialogue)
- Le **Espion express** boîte de dialogue est utilisée pour évaluer des expressions XPath 1.0. Le nœud de contexte (le nœud `self::node()` de la fenêtre Variables locales) est le contexte de l'exécution de l'expression XPath. Le résultat de l'exécution de l'expression XPath s'affiche dans la fenêtre Espion.
+ Le **Espion express** boîte de dialogue est utilisée pour évaluer des expressions XPath 1.0. Le nœud de contexte (le nœud `self::node()` de la fenêtre Variables locales) est le contexte de l’exécution de l’expression XPath. Le résultat de l'exécution de l'expression XPath s'affiche dans la fenêtre Espion.
 
  La liste suivante décrit certaines limitations liées à l'évaluation des expressions XPath.
 

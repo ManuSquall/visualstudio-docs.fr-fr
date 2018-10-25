@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Documents Microsoft
+title: IDebugProgram2::CauseBreak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fb04db3342bb8ce7d5e314c9a912b873ffb627
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1abd2e5c3681a63d918763b99ebc09a43fe5988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864528"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
-Les demandes que le programme s’arrêter l’exécution de la prochaine heure à laquelle un de ses tentatives de threads d’exécution.  
+Demande que le programme arrête l’exécution de la prochaine heure d’un de ses tentatives de threads d’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ int CauseBreak();
 ## <a name="remarks"></a>Notes  
  Un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter du code une fois que cette méthode est appelée.  
   
- Cette méthode est asynchrone, la méthode retourne immédiatement sans nécessairement attendre l’arrêt du programme.  
+ Cette méthode est asynchrone, car la méthode retourne immédiatement sans nécessairement attendre l’arrêt du programme.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
