@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853517"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -162,7 +164,7 @@ Comparez une modification entrante à votre version locale en appuyant sur **Maj
 L’icône dans la colonne **Branche** vous indique comment la branche est liée à la branche dans laquelle vous travaillez.
 
 |**Icône**|**La modification provient de :**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens - icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png)|La branche actuelle|
 |![CodeLens : icône Modification provenant de la branche parent](../ide/media/codelensbranchparenticon.png)|La branche parente|
 |![CodeLens : icône Changer à partir de la branche enfant](../ide/media/codelensbranchchildicon.png)|Un branche enfant|
@@ -295,7 +297,7 @@ Pour utiliser le clavier :
 
 4. Appuyez sur **Tab** pour accéder à la liste **Afficher les paramètres de**, puis appuyez sur **Bas** pour sélectionner **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l’affichage tête haute CodeLens ?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l’affichage tête haute CodeLens `head`?
 
 **R :** Oui, choisissez ![Icône Ancre](../ide/media/codelensdockwindow.png) pour ancrer CodeLens en tant que fenêtre.
 
