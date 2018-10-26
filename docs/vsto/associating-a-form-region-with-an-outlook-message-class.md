@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891997"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050260"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook
   Vous pouvez spécifier les éléments Microsoft Office Outlook qui affichent une zone de formulaire en associant la zone de formulaire à la classe de message de chaque élément. Par exemple, si vous souhaitez ajouter une zone de formulaire au bas d’un élément de messagerie, vous pouvez associer la zone de formulaire avec le `IPM.Note` classe de message.  
@@ -111,7 +111,7 @@ ms.locfileid: "49891997"
  [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
  [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Instructions pour créer des zones de formulaire Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Nom du formulaire et classes de messages vue d’ensemble](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Fonctionnement des formulaires Outlook et des éléments](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Nom du formulaire et classes de messages vue d’ensemble](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Fonctionnement des formulaires Outlook et des éléments](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   
