@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923093"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143175"
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : génération d'une application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 3.  Choisissez la page **Générer**, puis, dans la boîte de dialogue **Supprimer les avertissements**, spécifiez le numéro d’avertissement `1762`.  
   
-     ![Page Générer, Concepteur de projets](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![Page Générer, Concepteur de projets](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      Pour plus d’informations, consultez [Générer, page du Concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -162,7 +162,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 3. Dans la page **Compiler**, cochez la case **Désactiver tous les avertissements**.  
   
-    ![Page Compiler, Concepteur de projets](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![Page compiler, Concepteur de projets](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     Pour plus d’informations, consultez [Configuration d’avertissements en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).  
   
