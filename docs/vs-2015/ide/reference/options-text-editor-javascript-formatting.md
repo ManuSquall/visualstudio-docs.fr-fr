@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271048"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219989"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 |**Placer l’accolade ouvrante sur une nouvelle ligne pour les blocs de contrôle**|Quand cette option est sélectionnée, l’éditeur de code déplace l’accolade ouvrante associée à un bloc de contrôle (tel que `if` et `while`) sur une nouvelle ligne.|  
   
 ## <a name="spacing"></a>Espacement  
- Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.  
+ Ces options déterminent la façon dont les espaces sont insérés dans **Source** vue.  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
   

@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868574"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219827"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID et ID des commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Les valeurs GUID et l’ID de commandes incluses dans l’environnement de déve
   
 -   Les éléments de menu qui incluent un caractère souligné, telles que la **impression** commande sur le **fichier** menu, dans lequel le P est souligné.  
   
-     Les caractères qui sont précédés du caractère « & » dans les noms d’élément de menu sont affichés comme souligné. Toutefois, les fichiers .vsct sont écrits en XML, qui utilise le caractère « & » pour indiquer les caractères spéciaux et nécessite qu’une esperluette qui doit être affichée doit être développée sous&amp;'. Par conséquent, dans un fichier .vsct, le **P**Imp commande apparaît sous la forme «&amp;impression ».  
+     Les caractères qui sont précédés du caractère « & » dans les noms d’élément de menu sont affichés comme souligné. Toutefois, les fichiers .vsct sont écrits en XML, qui utilise le caractère « & » pour indiquer les caractères spéciaux et nécessite qu’une esperluette qui doit être affichée doit être développée sous&amp;'. Par conséquent, dans un fichier .vsct, le **impression** commande apparaît sous la forme «&amp;impression ».  
   
 -   Les commandes qui ont un texte dynamique, tel que **enregistrer** *nom de fichier actuel*et généré dynamiquement des éléments de menu, tels que des éléments sur le **fichiers récents** liste.  
   

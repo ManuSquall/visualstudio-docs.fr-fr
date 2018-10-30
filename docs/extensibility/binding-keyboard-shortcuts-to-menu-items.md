@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822099"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219638"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Lier des raccourcis clavier aux éléments de menu
 Pour lier un raccourci clavier à une commande de menu personnalisé, il suffit d’ajouter une entrée à la *.vsct* fichier pour le package. Cette rubrique explique comment mapper un raccourci clavier pour un bouton personnalisé, un élément de menu ou une commande de barre d’outils et comment appliquer le mappage du clavier dans l’éditeur par défaut ou de limiter à un éditeur personnalisé.  
@@ -78,7 +78,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisé, il suffit 
   
    Dans la plupart des situations, **MAJ** ne doit pas être utilisé sans un modificateur deuxième car en appuyant sur déjà entraîne la plupart des touches d’alphanumériques à taper une lettre majuscule ou un symbole.  
   
-   Codes de touche virtuelle vous permettent d’accéder à des touches spéciales qui n’ont pas un caractère qui s’y rapportent, par exemple, les touches de fonction et le **retour arrière** clé. Pour plus d’informations, consultez [codes de touche virtuelle](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Codes de touche virtuelle vous permettent d’accéder à des touches spéciales qui n’ont pas un caractère qui s’y rapportent, par exemple, les touches de fonction et le **retour arrière** clé. Pour plus d’informations, consultez [codes de touche virtuelle](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Pour rendre la commande disponible dans Visual Studio éditeur, définissez le `editor` attribut `guidVSStd97`.  
   

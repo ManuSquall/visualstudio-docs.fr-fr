@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812931"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220415"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 3.  Dans le **modèles** volet, sélectionnez **Windows Application**.  
   
-4.  Nommez le projet `ConcurrencyWalkthrough`, puis sélectionnez**OK**.  
+4.  Nommez le projet `ConcurrencyWalkthrough`, puis sélectionnez **OK**.  
   
      Visual Studio ajoute le projet à **l’Explorateur de solutions** et affiche un nouveau formulaire dans le concepteur.  
   
@@ -96,7 +96,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 5.  Développez le **Tables** nœud et sélectionnez le `Customers` table. Le nom par défaut pour le jeu de données doit être `NorthwindDataSet`.  
   
-6.  Sélectionnez**Terminer** pour ajouter le jeu de données au projet.  
+6.  Sélectionnez **Terminer** pour ajouter le jeu de données au projet.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Créer un contrôle de DataGridView lié aux données  
  Dans cette section, vous allez créer un <xref:System.Windows.Forms.DataGridView> en faisant glisser le **clients** d’élément à partir de la **des Sources de données** fenêtre sur votre formulaire Windows.  
@@ -107,7 +107,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 2.  Dans le **des Sources de données** fenêtre, développez le **NorthwindDataSet** nœud, puis sélectionnez le **clients** table.  
   
-3.  Sélectionnez la flèche bas sur le nœud de la table, puis **DataGridView**dans la liste déroulante.  
+3.  Sélectionnez la flèche bas sur le nœud de la table, puis **DataGridView** dans la liste déroulante.  
   
 4.  Faites glisser la table dans une zone vide de votre formulaire.  
   
@@ -118,7 +118,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 #### <a name="to-test-the-form"></a>Pour tester le formulaire  
   
-1.  Sélectionnez**F5** pour exécuter l’application  
+1.  Sélectionnez **F5** pour exécuter l’application  
   
      Le formulaire s’affiche avec un <xref:System.Windows.Forms.DataGridView> contrôle sur ce dernier qui est rempli avec des données à partir de la `Customers` table.  
   
@@ -192,7 +192,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 #### <a name="to-test-the-form"></a>Pour tester le formulaire  
   
-1.  Sélectionnez**F5** pour exécuter l’application.  
+1.  Sélectionnez **F5** pour exécuter l’application.  
   
 2.  Une fois que le formulaire s’affiche, laissez-la en cours d’exécution et basculer vers l’IDE Visual Studio.  
   
@@ -215,8 +215,8 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
      L’erreur d’accès concurrentiel est levée, et la boîte de message s’affiche.  
   
-10. En sélectionnant**non** annule la mise à jour et met à jour le jeu de données avec les valeurs qui se trouvent actuellement dans la base de données. En sélectionnant**Oui** écrit la valeur proposée dans la base de données.  
+10. En sélectionnant **non** annule la mise à jour et met à jour le jeu de données avec les valeurs qui se trouvent actuellement dans la base de données. En sélectionnant **Oui** écrit la valeur proposée dans la base de données.
   
-## <a name="see-also"></a>Voir aussi  
- [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Voir aussi
 
+- [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220809"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219716"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
 2.  Nommez le projet **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Sélectionnez **Windows Application**et enfin**OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Le **TableAdapterDbDirectMethodsWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
   
@@ -70,13 +70,13 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
 #### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
-1.  Sur le **données** menu, sélectionnez**afficher les Sources de données**.  
+1.  Sur le **données** menu, sélectionnez **afficher les Sources de données**.  
   
 2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.  
   
-3.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**, puis sélectionnez**suivant**.  
+3.  Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.  
   
-4.  Sur le **choisir votre connexion de données**, effectuez une des opérations suivantes :  
+4.  Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :  
   
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
   
@@ -84,13 +84,13 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
     -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.  
   
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez**suivant**.  
+5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.  
   
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application**s’affiche, sélectionnez **suivant**.  
+6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** s’affiche, sélectionnez **suivant**.  
   
-7.  Sur le **choisir vos objets de base de données**écran, développez le **Tables** nœud.  
+7.  Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.  
   
-8.  Sélectionnez le `Region` table, puis sélectionnez**Terminer**.  
+8.  Sélectionnez le `Region` table, puis sélectionnez **Terminer**.  
   
      Le **NorthwindDataSet** est ajouté à votre projet et le `Region` table s’affiche dans le **des Sources de données** fenêtre.  
   
@@ -117,7 +117,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Pour ajouter du code afin d'insérer de nouveaux enregistrements dans la base de données  
   
-1.  Sélectionnez**InsertButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.  
+1.  Sélectionnez **InsertButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.  
   
 2.  Remplacez le gestionnaire d'événements `InsertButton_Click` par le code suivant :  
   
@@ -135,7 +135,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Pour ajouter du code pour supprimer des enregistrements à partir de la base de données  
   
-1.  Sélectionnez**DeleteButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.  
+1.  Sélectionnez **DeleteButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.  
   
 2.  Remplacez le gestionnaire d'événements `DeleteButton_Click` par le code suivant :  
   
@@ -146,7 +146,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour l’exéc
   
 #### <a name="to-run-the-application"></a>Pour exécuter l’application  
   
--   Sélectionnez**F5** pour exécuter l’application.  
+-   Sélectionnez **F5** pour exécuter l’application.  
   
 -   Sélectionnez le **insérer** bouton et vérifiez que le nouvel enregistrement apparaît dans la grille.  
   

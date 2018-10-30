@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79710dca958bbc895e5366e4ab316f1a1e4fa64c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234466"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219742"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du cod
   
 2.  Nommez la classe `CustomersTableAdapterExtended`.  
   
-3.  Sélectionnez**ajouter**.  
+3.  Sélectionnez **Ajouter**.  
   
 4.  Remplacez le code avec le nom de classe partielle pour votre projet et un espace de noms approprié comme suit :  
   

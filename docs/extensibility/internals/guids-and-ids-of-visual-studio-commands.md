@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926540"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220158"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Commandes de GUID et ID de Visual Studio
 Les valeurs GUID et l’ID de commandes incluses dans l’environnement de développement intégré (IDE) Visual Studio sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [commandes définies par l’IDE, les menus et les groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +57,7 @@ Les valeurs GUID et l’ID de commandes incluses dans l’environnement de déve
   
 -   Les éléments de menu qui incluent un caractère souligné, telles que la **impression** commande sur le **fichier** menu, dans lequel le *P* est souligné.  
   
-     Les caractères qui sont précédés de l’esperluette (&) caractères dans les noms d’élément de menu sont affichées comme souligné. Toutefois, *.vsct* fichiers sont écrits en XML, qui utilise le caractère esperluette (&) pour indiquer les caractères spéciaux et nécessite qu’une esperluette à afficher doit être développée en tant que  *&amp;amp ;*. Par conséquent, dans un *.vsct* fichier, le **P**Imp commande apparaît sous la forme  *&amp;amp ; Impression*.  
+     Les caractères qui sont précédés de l’esperluette (&) caractères dans les noms d’élément de menu sont affichées comme souligné. Toutefois, *.vsct* fichiers sont écrits en XML, qui utilise le caractère esperluette (&) pour indiquer les caractères spéciaux et nécessite qu’une esperluette à afficher doit être développée en tant que  *&amp;amp ;*. Par conséquent, dans un *.vsct* fichier, le **impression** commande apparaît sous la forme  *&amp;amp ; Impression*.  
   
 -   Les commandes qui ont un texte dynamique, tel que **enregistrer** \<nom de fichier actuel\>et généré dynamiquement des éléments de menu, tels que des éléments sur le **fichiers récents** liste.  
   

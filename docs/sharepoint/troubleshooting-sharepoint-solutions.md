@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928956"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219781"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
   Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail 2007 SharePoint](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -136,7 +136,7 @@ ms.locfileid: "49928956"
   
 -   Installez [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Assurez-vous d’avoir un accès administrateur au site Web de SharePoint. Pour plus d’informations, consultez le [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] article en ligne [affecter ou supprimer des administrateurs d’applications de service dans SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Assurez-vous d’avoir un accès administrateur au site Web de SharePoint. Pour plus d’informations, consultez le [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] article en ligne [affecter ou supprimer des administrateurs d’applications de service dans SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Événement de web site suppression ne se produit pas dans le projet de récepteur d’événements
  Lorsque vous créez un projet de récepteur d’événements et vous sélectionnez certains événements Web tels que « un site est en cours de suppression », l’événement se produit jamais.  

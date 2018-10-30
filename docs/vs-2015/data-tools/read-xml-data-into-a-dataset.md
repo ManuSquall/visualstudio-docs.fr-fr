@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a4f5a7497e24ccd8e769198938dbd20a6bdf0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284555"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219729"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
   
 2.  Attribuez un nom au projet `ReadingXML`.  
   
-3.  Sélectionnez **Windows Application**, puis sélectionnez**OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Le **ReadingXML** projet est créé et ajouté à **l’Explorateur de solutions**.  
   
@@ -74,7 +74,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
   
 1.  Sur le **projet** menu, sélectionnez**ajouter un nouvel élément**.  
   
-2.  Sélectionnez **fichier XML**, nommez le fichier `authors.xml`, puis sélectionnez**ajouter**.  
+2.  Sélectionnez **fichier XML**, nommez le fichier `authors.xml`, puis sélectionnez **ajouter**.  
   
      Le fichier XML chargé dans le concepteur et est prêt pour la modification.  
   
@@ -187,7 +187,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
   
 2.  À partir de la [boîte à outils, onglet données](../ide/reference/toolbox-data-tab.md), faites glisser un **DataSet** sur **Form1**.  
   
-3.  Dans le **ajouter un Dataset** boîte de dialogue, sélectionnez **dataset non typé**, puis sélectionnez**OK**.  
+3.  Dans le **ajouter un Dataset** boîte de dialogue, sélectionnez **dataset non typé**, puis sélectionnez **OK**.  
   
      **DataSet1** est ajouté à la barre d’état du composant.  
   
@@ -232,7 +232,7 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
   
 #### <a name="to-test-the-form"></a>Pour tester le formulaire  
   
-1.  Sélectionnez**F5** pour exécuter l’application.  
+1.  Sélectionnez **F5** pour exécuter l’application.  
   
 2.  Sélectionnez le **lire XML** bouton.  
   

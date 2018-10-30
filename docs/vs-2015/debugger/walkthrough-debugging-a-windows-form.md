@@ -31,12 +31,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665f2513d96b58a541970252c81848c20672f48b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53bd1af80b9d86b6a8e22d7bdfd79cee92554a15
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180256"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219651"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 6.  Sur le **déboguer** menu, choisissez **pas à pas détaillé**.  
   
-     La valeur de TextBox1.Text, dans le **Espion1**fenêtre pour :  
+     La valeur de TextBox1.Text, dans le **Espion1** fenêtre pour :  
   
     ```  
     Button was clicked!  

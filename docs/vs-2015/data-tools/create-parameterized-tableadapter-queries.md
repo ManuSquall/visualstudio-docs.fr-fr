@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823500"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218897"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Une requête paramétrable retourne des données remplissant les conditions d'un
   
 1. Ouvrez le formulaire dans le **Concepteur Windows Forms**.  
   
-2. Sur le **données** menu, sélectionnez**ajouter une requête**ou**balises actives de données**.  
+2. Sur le **données** menu, sélectionnez **ajouter une requête** ou **balises actives de données**.  
   
    > [!NOTE]
-   >  Si **ajouter une requête** n’est pas disponible sur le **données** menu, sélectionnez un contrôle sur le formulaire qu’affiche les source de données vous souhaitez ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.  
+   > Si **ajouter une requête** n’est pas disponible sur le **données** menu, sélectionnez un contrôle sur le formulaire qu’affiche les source de données vous souhaitez ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.  
   
 3. Dans le **table de source de données Sélectionnez** zone, sélectionnez le tablethat que vous souhaitez ajouter le paramétrage à.  
   
@@ -82,7 +82,7 @@ Une requête paramétrable retourne des données remplissant les conditions d'un
   
 5. Dans le **texte de la requête** , tapez une requête qui accepte des paramètres.  
   
-6. Sélectionnez**OK**.  
+6. Sélectionnez **OK**.  
   
     Un contrôle pour le paramètre d’entrée et un **charge** bouton sont ajoutés au formulaire dans un <xref:System.Windows.Forms.ToolStrip> contrôle.  
   
@@ -105,7 +105,7 @@ Une requête paramétrable retourne des données remplissant les conditions d'un
   
 1.  Dans le **Concepteur de Dataset**, sélectionnez la requête TableAdapter qui doit accepter les valeurs de paramètre null.  
   
-2.  Dans le **propriétés** fenêtre, sélectionnez**paramètres**. Appuyez sur le bouton de sélection (**...** ) pour ouvrir la **éditeur de collections Parameters**.  
+2.  Dans le **propriétés** fenêtre, sélectionnez **paramètres**. Appuyez sur le bouton de sélection (**...** ) pour ouvrir la **éditeur de collections Parameters**.  
   
 3.  Sélectionnez le paramètre qui autorise les valeurs null et définissez le **AllowDbNull** propriété `true`.  
   

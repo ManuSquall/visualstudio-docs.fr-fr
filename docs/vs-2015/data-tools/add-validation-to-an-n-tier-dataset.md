@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7b9955cf71b1d8862274d4b3501cee35ddd080f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212380"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220532"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Ajouter la validation à un dataset multiniveau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ End Sub
   
 3.  Ajouter du code pour vérifier que `e.ProposedValue` contient des données qui répondent aux exigences de votre application. Si la valeur proposée est inacceptable, définissez la colonne pour indiquer qu’il contient une erreur.  
   
-     L’exemple de code suivant valide le fait que le **quantité** colonne contient plus de 0. Si**quantité** est inférieure ou égale à 0, la colonne est définie sur une erreur. Le `Else` clause efface l’erreur si**quantité** est supérieure à 0. Le code dans le Gestionnaire d’événements de modification de colonne doit ressembler à ce qui suit :  
+     L’exemple de code suivant valide le fait que le **quantité** colonne contient plus de 0. Si **quantité** est inférieure ou égale à 0, la colonne est définie sur une erreur. Le `Else` clause efface l’erreur si **quantité** est supérieure à 0. Le code dans le Gestionnaire d’événements de modification de colonne doit ressembler à ce qui suit :  
   
     ```vb  
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then  

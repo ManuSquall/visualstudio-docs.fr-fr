@@ -774,7 +774,7 @@ items:
         - name: Éditeur de texte – Toutes les langues
           href: ide/reference/options-text-editor-all-languages.md
         - name: Éditeur de texte – Toutes les langues, barres de défilement
-          href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
+          href: ide/reference/options-text-editor-all-languages-scroll-bars.md
         - name: Éditeur de texte – Toutes les langues, onglets
           href: ide/reference/options-text-editor-all-languages-tabs.md
         - name: Éditeur de texte – De base (Visual Basic), avancé
@@ -789,7 +789,7 @@ items:
           href: ide/reference/options-text-editor-c-cpp-advanced.md
         - name: Éditeur de texte – C/C++, expérimental
           href: ide/reference/options-text-editor-c-cpp-experimental.md
-        - name: Éditeur de texte – C#, mise en forme
+        - name: Éditeur de texte - C#, style de code, mise en forme
           href: ide/reference/options-text-editor-csharp-formatting.md
         - name: Éditeur de texte – C#, avancé
           href: ide/reference/options-text-editor-csharp-advanced.md
@@ -1087,9 +1087,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Nous contacter
     href: ide/talk-to-us.md
-ms.openlocfilehash: 8964084be1b142b7ab5ac7203b1436abe7fb08e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32ae829c7ddde6da31cd3ef869020255da078c59
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883092"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220350"

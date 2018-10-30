@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d84780565d1761e75de7be9e5996a908d399f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233779"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219573"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Enregistrer des données à l’aide d’une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Vous enregistrez des données dans une transaction en utilisant le <xref:System.
   
 1.  Sur le **projet** menu, sélectionnez **ajouter une référence**.  
   
-2.  Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**et enfin**OK**.  
+2.  Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**, puis sélectionnez **OK**.  
   
      Une référence à System.Transactions.dll est ajoutée au projet.  
   
