@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865360"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219911"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostiquer des problèmes après déploiement à l’aide d’IntelliTrace
 
@@ -44,7 +44,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
 Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déconseillée et puis supprimé. Pour déboguer les applications web ASP.NET après le déploiement, utilisez une des méthodes suivantes :
 
-* Pour le déploiement vers Azure, utilisez [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Pour le déploiement vers Azure, utilisez [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Si vous devez utiliser IntelliTrace, ouvrez le projet dans Visual Studio et charger les fichiers de symboles à partir de la build correspondante. Vous pouvez charger des fichiers de symboles à partir de la **Modules** fenêtre ou en configurant des symboles dans **outils** > **Options** > **débogage**   >  **Symboles**.
 

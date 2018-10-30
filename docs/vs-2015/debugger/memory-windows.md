@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925499"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219521"
 ---
 # <a name="memory-windows"></a>Fenêtres Mémoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par votre application. Le **espion** fenêtre, **Espion express** boîte de dialogue, **automatique** fenêtre, et **variables locales** fenêtre vous affichez le contenu des variables, lesquelles sont stockées à des emplacements spécifiques dans la mémoire. Mais le **mémoire** fenêtre vous montre l’image à grande échelle. Cette vue peut s'avérer pratique pour l'examen de grands fragments de données (mémoires tampons ou longues chaînes, par exemple) dont l'affichage n'est pas satisfaisant dans les autres fenêtres. Toutefois, le **mémoire** fenêtre n’est pas tenu d’afficher des données. Elle affiche tout ce qui se trouve dans l'espace mémoire, qu'il s'agisse de données, de code ou de bits aléatoires de garbage de la mémoire non assignée.  
   
- Le **mémoire** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options**boîte de dialogue,**débogage** nœud. Le **mémoire** fenêtre n’est pas disponible pour le Script ou SQL, qui sont des langages qui ne reconnaissent pas le concept de mémoire.  
+ Le **mémoire** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue,**débogage** nœud. Le **mémoire** fenêtre n’est pas disponible pour le Script ou SQL, qui sont des langages qui ne reconnaissent pas le concept de mémoire.  
   
 ## <a name="opening-a-memory-window"></a>Ouvrir une fenêtre Mémoire  
   

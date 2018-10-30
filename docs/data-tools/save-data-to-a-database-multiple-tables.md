@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174395"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220337"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 L'un des scénarios les plus courants dans le développement d'applications consiste à afficher des données dans un formulaire d'une application Windows, à modifier ces données, puis à renvoyer les données mises à jour à la base de données. Cette procédure pas à pas crée un formulaire affichant les données de deux tables associées et indique comment modifier les enregistrements et enregistrer les modifications dans la base de données. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind.
@@ -86,7 +86,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 1.  Sur le **données** menu, sélectionnez **afficher les Sources de données**.
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez**ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.
+2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.
 
 3.  Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.
 
@@ -102,7 +102,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application**, sélectionnez **suivant**.
 
-7.  Sur le **choisir vos objets de base de données**écran, développez le **Tables** nœud.
+7.  Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.
 
 8.  Sélectionnez le **clients** et **commandes** tables, puis sélectionnez **Terminer**.
 

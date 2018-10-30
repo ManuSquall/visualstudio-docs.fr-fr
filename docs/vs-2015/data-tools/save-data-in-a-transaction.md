@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874642"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219300"
 ---
 # <a name="save-data-in-a-transaction"></a>Enregistrer des données dans une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 2.  Nommez le projet **SavingDataInATransactionWalkthrough**.  
   
-3.  Sélectionnez **Windows Application**, puis sélectionnez**OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Le **SavingDataInATransactionWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
   
@@ -61,7 +61,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.  
   
-3.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**, puis sélectionnez**suivant**.  
+3.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.  
   
 4.  Sur le **choisir votre connexion de données**écran, procédez comme suit :  
   
@@ -71,13 +71,13 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
     -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue zone et créer une connexion à la base de données Northwind.  
   
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez**suivant**.  
+5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.  
   
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** s’affiche, sélectionnez**suivant**.  
+6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** s’affiche, sélectionnez **suivant**.  
   
 7.  Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.  
   
-8.  Sélectionnez le `Customers` et `Orders` tables, puis sélectionnez**Terminer**.  
+8.  Sélectionnez le `Customers` et `Orders` tables, puis sélectionnez **Terminer**.  
   
      Le **NorthwindDataSet** est ajouté à votre projet et le `Customers` et `Orders` tables apparaissent dans le **des Sources de données** fenêtre.  
   
@@ -103,7 +103,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 1.  Sur le **projet** menu, sélectionnez**ajouter une référence**.  
   
-2.  Sélectionnez **System.Transactions**(sur le **.NET** onglet), puis sélectionnez**OK**.  
+2.  Sélectionnez **System.Transactions**(sur le **.NET** onglet), puis sélectionnez **OK**.  
   
      Une référence à **System.Transactions** est ajouté au projet.  
   
@@ -161,7 +161,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 #### <a name="to-run-the-application"></a>Pour exécuter l’application  
   
--   Sélectionnez**F5** pour exécuter l’application.  
+-   Sélectionnez **F5** pour exécuter l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)

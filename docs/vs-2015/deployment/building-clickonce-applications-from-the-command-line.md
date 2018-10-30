@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836786"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220015"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Génération d'applications ClickOnce à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vous pouv
   
 5. Tapez `msbuild /target:publish`.  
   
-   Les étapes ci-dessus produira un intégral [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement d’application dans un sous-dossier de votre projet nommé P**ublier**. CmdLineDemo.application est le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste de déploiement. Le dossier CmdLineDemo_1.0.0.0 contient les fichiers CmdLineDemo.exe et CmdLineDemo.exe.manifest, le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Setup.exe est le programme d’amorçage, qui par défaut est configuré pour installer le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Le dossier DotNetFX contient les composants redistribuables pour le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Il s’agit de l’ensemble des fichiers que vous avez besoin pour déployer votre application via le Web ou UNC ou d’un CD/DVD.  
+   Les étapes ci-dessus produira un intégral [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement d’application dans un sous-dossier de votre projet nommé **publier**. CmdLineDemo.application est le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste de déploiement. Le dossier CmdLineDemo_1.0.0.0 contient les fichiers CmdLineDemo.exe et CmdLineDemo.exe.manifest, le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Setup.exe est le programme d’amorçage, qui par défaut est configuré pour installer le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Le dossier DotNetFX contient les composants redistribuables pour le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Il s’agit de l’ensemble des fichiers que vous avez besoin pour déployer votre application via le Web ou UNC ou d’un CD/DVD.  
   
 ## <a name="publishing-properties"></a>Propriétés de publication  
  Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la façon dont le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est générée.  

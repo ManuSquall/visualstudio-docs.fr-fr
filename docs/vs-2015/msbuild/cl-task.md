@@ -27,12 +27,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6035e9024b7c81d3d9d5fc7b4d482aa2aae7c06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb9b6924f5d11e3d857308e3a1bcf1e1644f78bc
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844716"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220246"
 ---
 # <a name="cl-task"></a>CL, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
    Pour plus d’informations, consultez l’article [Options du compilateur](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
-- **AdditionalUsingDirectories**Paramètre String[] facultatif.  
+- **AdditionalUsingDirectories** paramètre facultatif String [].  
   
    Spécifie un répertoire dans lequel le compilateur doit faire une recherche en vue de résoudre les références de fichiers transmises à la directive **#using**.  
   
