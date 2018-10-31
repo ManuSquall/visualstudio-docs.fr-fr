@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6afc2acab36be88b4eb554d1900e6b314e395bd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849879"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -41,44 +41,44 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Code mis en surbrillance (C#)](media/extractinterface-highlight-cs.png)
+       ![Code mis en surbrillance (C#)](media/extractinterface-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code mis en surbrillance (Visual Basic)](media/extractinterface-highlight-vb.png)
+       ![Code mis en surbrillance (Visual Basic)](media/extractinterface-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl+R**, puis **Ctrl+I**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **Ctrl+R**, puis **Ctrl+I**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
-     - Sélectionnez **Modifier > Refactoriser > Extraire l’interface**.
-     - Cliquez avec le bouton droit sur le nom de la classe et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
+      - Sélectionnez **Modifier > Refactoriser > Extraire l’interface**.
+      - Cliquez avec le bouton droit sur le nom de la classe et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
 
-1. Dans la boîte de dialogue **Extraire l’interface** qui s’affiche, entrez les informations demandées :
+3. Dans la boîte de dialogue **Extraire l’interface** qui s’affiche, entrez les informations demandées :
 
    ![Extraire l'interface](media/extractinterface-dialog-cs.png)
 
+
    | Champ | Description |
-   | --- | --- |
+   | - | - |
    | **Nouveau nom d’interface** | Nom de l'interface à créer. Cette valeur est définie par défaut sur I*ClassName*, où *ClassName* représente le nom de la classe que vous avez sélectionné ci-dessus. |
    | **Nouveau nom de fichier** | Le nom du fichier qui sera généré et qui contiendra l’interface. Comme pour le nom de l’interface, cette valeur est définie par défaut sur I*ClassName*, où *ClassName* représente le nom de la classe que vous avez sélectionné ci-dessus. |
    | **Sélectionner les membres publics pour former l'interface** | Les éléments à extraire dans l’interface. Vous pouvez sélectionner autant d’éléments que vous le souhaitez. |
 
-1. Cliquez sur **OK**.
+
+4. Cliquez sur **OK**.
 
    L’interface est créée dans le fichier portant le nom spécifié. De plus, la classe que vous avez sélectionnée implémente cette interface.
 
    - C# :
 
-    ![Classe résultante (C#)](media/extractinterface-class-cs.png)
-    ![Interface résultante (C#)](media/extractinterface-interface-cs.png)
+      ![Classe résultante – C#](media/extractinterface-class-cs.png)![Interface résultante – C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic :
 
-    ![Classe résultante (Visual Basic)](media/extractinterface-class-vb.png)
-    ![Interface résultante (Visual Basic)](media/extractinterface-interface-vb.png)
+      ![Classe résultante – Visual Basic](media/extractinterface-class-vb.png)![Interface résultante – Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

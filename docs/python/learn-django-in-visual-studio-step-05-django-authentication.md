@@ -1,4 +1,4 @@
----
+﻿---
 title: Tutoriel - Découvrez Django dans Visual Studio, étape 5
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités d’authentification comme fournies par les modèles de projet Web Django.
 ms.date: 08/13/2018
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627254"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120353"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
@@ -198,9 +198,9 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 1. Lorsque vous avez tout terminé, arrêtez le serveur et validez à nouveau les modifications apportées au contrôle de code source.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Question : Quel est l’objectif de la balise {% csrf_token %} qui s’affiche dans les éléments du \<formulaire\> ?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Question : quel est l’objectif de la balise {% csrf_token %} qui apparaît dans les éléments du \<formulaire\> ?
 
-Réponse : la balise `{% csrf_token %}` inclut la [protection (csrf) de falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
+Réponse : la balise `{% csrf_token %}` inclut la [protection (csrf) contre la falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

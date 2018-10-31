@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835902"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -22,8 +22,7 @@ Dans Visual Studio 2017, vous pouvez ajouter un fichier [EditorConfig](http://ed
 
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
-> [!NOTE]
-> Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig. Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig. Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Cohérence du codage
 
@@ -32,6 +31,9 @@ Les paramètres définis dans les fichiers EditorConfig vous permettent de garan
 Les conventions de codage que vous utilisez dans vos projets personnels peuvent différer de celles utilisées dans les projets de votre équipe. Par exemple, vous préférerez peut-être que lors du codage, la mise en retrait ajoute une tabulation. De son côté, votre équipe préférera peut-être que la mise en retrait ajoute quatre espaces au lieu d’une tabulation. Les fichiers EditorConfig résolvent ce problème en vous permettant d’avoir une configuration pour chaque scénario.
 
 Les paramètres étant contenus dans un fichier dans la base de code, ils se déplacent avec cette base de code. Tant que vous ouvrez le fichier de code dans un éditeur compatible avec EditorConfig, les paramètres de l’éditeur de texte sont implémentés. Pour plus d’informations sur les fichiers EditorConfig, consultez le site web [EditorConfig.org](http://editorconfig.org/).
+
+> [!NOTE]
+> Les conventions définies dans un fichier EditorConfig ne sont pour l’instant pas applicables dans un pipeline CI/CD comme erreurs ou avertissements de build. Les écarts de style apparaissent seulement dans l’éditeur Visual Studio et dans la **Liste d’erreurs**.
 
 ## <a name="supported-settings"></a>Paramètres pris en charge
 
@@ -126,7 +128,7 @@ L’exemple suivant montre la mise en retrait d’un extrait de code C# avant et
 
 ![Paramètre de tabulation de l’Éditeur de texte](../ide/media/vside_editorconfig_tabsetting.png)
 
-Comme prévu, un appui sur la touche **Tab** sur la ligne suivante met en retrait la ligne en ajoutant quatre espaces supplémentaires.
+Comme prévu, si l’on appuie sur la touche **Tab** sur la ligne suivante, quatre espaces blancs supplémentaires sont ajoutés, ce qui a pour effet de mettre la ligne en retrait.
 
 ![Code avant l’utilisation d’EditorConfig](../ide/media/vside_editorconfig_before.png)
 

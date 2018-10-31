@@ -1,7 +1,7 @@
 ---
 title: Modèles d’application web pour Python
 description: Vue d’ensemble des modèles Visual Studio pour les applications web écrites dans Python à l’aide des infrastructures Bottle, Flask et Django, y compris les configurations de débogage et la publication sur Azure App Service.
-ms.date: 07/03/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029025"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219846"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -34,7 +34,7 @@ Vous créez une projet à partir d’un modèle en utilisant **Fichier** > **Nou
 
 Le modèle générique **Projet web**, mentionné précédemment, propose un projet Visual Studio vide sans code et sans autre hypothèse mis à part qu’il s’agit d’un projet Python. Pour plus d’informations sur le modèle **Service cloud Azure**, consultez [Projets de service cloud Azure pour Python](python-azure-cloud-service-project-template.md).
 
-Tous les autres modèles reposent sur les frameworks web Bottle, Flask ou Django et appartiennent à trois groupes généraux, comme décrit dans les sections qui suivent. Les applications créées à partir de l’un de ces modèles contiennent suffisamment de code pour exécuter et déboguer l’application localement. Chacun de ces modèles fournit également l’[objet d’application WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) nécessaire pour effectuer un [déploiement sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Tous les autres modèles reposent sur les frameworks web Bottle, Flask ou Django et appartiennent à trois groupes généraux, comme décrit dans les sections qui suivent. Les applications créées à partir de l’un de ces modèles contiennent suffisamment de code pour exécuter et déboguer l’application localement. Chacun de ces modèles fournit également [l’objet d’application WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) nécessaire aux serveurs web de production.
 
 ### <a name="blank-group"></a>Groupe Vide
 

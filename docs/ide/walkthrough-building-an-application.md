@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748216"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143188"
 ---
 # <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
 
@@ -100,7 +100,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Choisissez la page **Build**, puis, dans la zone **Supprimer les avertissements**, spécifiez le numéro d’avertissement **0168**.
 
-     ![Page Générer, Concepteur de projets](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Page Générer, Concepteur de projets](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Pour plus d’informations, consultez [Générer, page du Concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -114,23 +114,23 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-1. Dans la barre de menus, sélectionnez **Afficher** > **Pages de propriétés**.
+2. Dans la barre de menus, sélectionnez **Afficher** > **Pages de propriétés**.
 
      Le **Concepteur de projets** s’ouvre.
 
-1. Dans la page **Compiler**, cochez la case **Désactiver tous les avertissements**.
+3. Dans la page **Compiler**, cochez la case **Désactiver tous les avertissements**.
 
-     ![Page Compiler, Concepteur de projets](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Page Compiler, Concepteur de projets](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Pour plus d’informations, consultez [Configurer des avertissements dans Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-1. Générez la solution.
+4. Générez la solution.
 
- La fenêtre **Sortie** affiche uniquement le résumé de la génération.
+   La fenêtre **Sortie** affiche uniquement le résumé de la génération.
 
- ![Fenêtre Sortie, Avertissement sur la génération Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Fenêtre Sortie, Avertissement sur la génération Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- Pour plus d’informations, consultez [Guide pratique pour supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
+   Pour plus d’informations, consultez [Guide pratique pour supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Afficher des informations de génération supplémentaires dans la fenêtre Sortie
 
@@ -138,7 +138,6 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
 > [!IMPORTANT]
 > Si vous décidez d’afficher davantage d’informations, la génération sera plus longue.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Changer la quantité d’informations dans la fenêtre Sortie
 
@@ -221,7 +220,7 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
    Le fichier exécutable est copié sur le chemin réseau que vous avez spécifié. Son chemin est `\\myserver\builds\\FileName.exe`.
 
-La procédure pas à pas est terminée.
+Félicitations ! La procédure pas à pas est terminée.
 
 ## <a name="see-also"></a>Voir aussi
 

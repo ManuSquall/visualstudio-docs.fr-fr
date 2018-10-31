@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241187"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244435"
 ---
 # <a name="xml-editor-tasks"></a>Tâches de l’Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Cette section décrit comment effectuer des tâches courantes à l’aide de l�
  Montre comment créer des extraits XML.  
   
  [Procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- Montre comment utiliser la fonctionnalité IntelliSence XSLT.  
+ Montre comment utiliser la fonctionnalité IntelliSense XSLT.  
   
  [Procédure pas à pas : utilisation de la hiérarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Montre comment déboguer une feuille de style référencée.  

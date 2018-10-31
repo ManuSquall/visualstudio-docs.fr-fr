@@ -7,9 +7,9 @@ Pour plus d’informations, consultez la [FAQ sur le code de conduite](https://o
 
 Bienvenue ! Ce dépôt contient des fichiers sources associés à la documentation technique de Visual Studio 2017 en cours d’élaboration. Les rubriques sont publiées sur le [site de la documentation de Visual Studio](https://docs.microsoft.com/visualstudio).
 
-Ce dépôt a été retiré le 23 juin 2017 de https://github.com/Microsoft/vsdocs. Le trafic vers les anciennes URL est redirigé ici.
+Ce référentiel a été déplacé de https://github.com/Microsoft/vsdocs le 23 juin 2017. Le trafic vers les anciennes URL est redirigé ici.
 
-La documentation de Visual Basic et Visual C# se trouve dans un dépôt distinct situé à l’adresse [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs) et la documentation de Visual C++ se trouve dans le dépôt situé à l’adresse [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs).
+La documentation de Visual Basic et Visual C# se trouve dans un référentiel distinct situé à l’adresse [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs) et celle de Visual C++ se trouve dans le référentiel situé à l’adresse [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contributing-to-the-documentation"></a>Contribution à la documentation
 

@@ -1,5 +1,5 @@
 ---
-title: Paramètres des conventions de codage .NET pour EditorConfig dans Visual Studio
+title: Paramètres des conventions de codage .NET pour EditorConfig
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -18,18 +18,20 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 7d67baf0e29468f5225139ed3b6952da60a04855
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496049"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050402"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
 Dans Visual Studio 2017, vous pouvez définir le style de votre code base, et le maintenir cohérent, à l’aide d’un fichier [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig inclut plusieurs propriétés de mise en forme de base, telles que `indent_style` et `indent_size`. Dans Visual Studio, les paramètres des conventions de codage .NET peuvent également être configurés à l’aide d’un fichier EditorConfig. Grâce aux fichiers EditorConfig, vous pouvez activer ou désactiver des conventions de codage .NET spécifiques, et configurer le degré d’application de la convention au moyen d’un niveau de gravité. Pour en savoir plus sur l’utilisation d’EditorConfig pour appliquer la cohérence dans votre code base, lisez [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md).
 
-Pour obtenir un exemple de fichier .editorconfig, voir à la fin de ce document.
+Voir [l’exemple de fichier .editorconfig](#example-editorconfig-file) à la fin de cet article.
+
+## <a name="convention-categories"></a>Catégories de conventions
 
 Trois catégories de conventions de codage .NET sont prises en charge :
 
@@ -130,7 +132,7 @@ Les règles de style mentionnées dans cette section s’appliquent aussi bien a
 
 #### Qualificateurs <a name="this_and_me"></a>« This. » et « Me. »
 
-Cette règle de style (ID de règle IDE0003 et IDE0009) peut être appliquée à des champs, à des propriétés, à des méthodes ou à des événements. La valeur **true** signifie qu’il faut faire en sorte de faire précéder le symbole de code de `this.` en C# ou de `Me.` en Visual Basic. La valeur **false** signifie qu’il faut faire en sorte de ne _pas_ faire précéder l’élément de code de `this.` ou de `Me.`.
+Cette règle de style (ID de règle IDE0003 et IDE0009) peut s’appliquer à des champs, à des propriétés, à des méthodes ou à des événements. La valeur **true** signifie qu’il faut faire en sorte de faire précéder le symbole de code de `this.` en C# ou de `Me.` en Visual Basic. La valeur **false** signifie qu’il faut faire en sorte de ne _pas_ faire précéder l’élément de code de `this.` ou de `Me.`.
 
 Le tableau suivant indique le nom des règles, les langages de programmation applicables et les valeurs par défaut :
 
@@ -246,7 +248,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="language_keywords"></a>Mots clés du langage au lieu des noms de types de framework pour les références de type
 
-Cette règle de style peut être appliquée à des variables locales, des paramètres de méthode et des membres de classe, ou comme une règle distincte à des expressions d’accès de membre de type. La valeur **true** signifie qu’il faut faire en sorte que les types qui ont un mot clé de langage pour les représenter utilisent le mot clé du langage (par exemple, `int` ou `Integer`) plutôt que le nom de type (par exemple, `Int32`). La valeur **false** signifie qu’il faut faire en sorte que le nom du type soit utilisé plutôt que le mot clé du langage.
+Cette règle de style peut être appliquée à des variables locales, des paramètres de méthode et des membres de classe, ou comme une règle distincte à des expressions d’accès de membre de type. La valeur **true** signifie que, pour les types représentés par un mot clé de langage (par exemple, `int` ou `Integer`), on utilise de préférence ce mot clé plutôt que le nom de type (par exemple, `Int32`). La valeur **false** signifie qu’il faut faire en sorte que le nom du type soit utilisé plutôt que le mot clé du langage.
 
 Le tableau suivant indique le nom des règles, les ID de règles, les langages de programmation applicables et les valeurs par défaut :
 
@@ -317,7 +319,7 @@ Les règles de style de cette section concernent les préférences des modificat
 Le tableau suivant indique le nom des règles, les ID de règles, les langages de programmation applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | ID de règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# et Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:none | 15.5 |
@@ -456,7 +458,7 @@ Dim v = a + b * c
 
 **dotnet\_style\_parentheses\_in\_relational\_binary_operators**
 
-- Quand cette règle a la valeur **always_for_clarity**, il est préférable d’utiliser des parenthèses pour clarifier la priorité des opérateurs relationnels (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`).
+- Quand cette règle a la valeur **always_for_clarity**, on utilise de préférence des parenthèses pour clarifier la précédence des opérateurs relationnels (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`).
 - Quand cette règle a la valeur **never_if_unnecessary**, il est préférable d’éviter les parenthèses si la priorité des opérateurs relationnels (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) est évidente.
 
 Exemples de code :
@@ -669,7 +671,6 @@ var anon = new { age, name };
 
 // dotnet_style_prefer_inferred_anonymous_type_member_names = false
 var anon = new { age = age, name = name };
-
 ```
 
 ```vb
@@ -678,13 +679,12 @@ Dim anon = New With {name, age}
 
 ' dotnet_style_prefer_inferred_anonymous_type_member_names = false
 Dim anon = New With {.name = name, .age = age}
-
 ```
 
 **dotnet\_style\_prefer\_auto\_properties**
 
-- Quand cette règle est définie sur **true**, préférer les propriétés automatiques aux propriétés avec des champs de stockage privés.
-- Quand cette règle est définie sur **false**, préférer les propriétés avec des champs de stockage privés aux propriétés automatiques.
+- Quand cette règle est définie sur **true**, on utilise de préférence des propriétés automatiques plutôt que des propriétés comportant des champs de stockage privés.
+- Quand cette règle est définie sur **False**, on utilise de préférence des propriétés comportant des champs de stockage privés plutôt que des propriétés automatiques.
 
 Exemples de code :
 
@@ -736,12 +736,12 @@ if (object.ReferenceEquals(value, null))
 ```
 
 ```vb
-' dotnet_style_prefer_auto_properties = true
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
 If value Is Nothing
     Return
 End If
 
-' dotnet_style_prefer_auto_properties = false
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
 If Object.ReferenceEquals(value, Nothing)
     Return
 End If
@@ -982,7 +982,7 @@ Les règles de style mentionnées dans cette section concernent l’utilisation 
 Le tableau suivant indique le nom des règles, l’ID des règles, les versions de langage applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | ID de règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_operators | IDE0023 et IDE0024 | C# 7.0+ | false:none | 15.3 |
@@ -1217,7 +1217,7 @@ Les règles de style mentionnées dans cette section concernent les préférence
 Le tableau suivant indique le nom de la règle, l’ID de la règle, les versions de langage applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | ID de règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | true:suggestion | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0+ | true:suggestion | 15.5 |
@@ -1352,7 +1352,7 @@ Cette règle de style concerne l’utilisation d’accolades `{ }` pour entourer
 Le tableau suivant indique le nom de la règle, l’ID de la règle, les versions de langage applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | ID de règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
 
 **csharp\_prefer\_braces**
@@ -1431,8 +1431,8 @@ Cette règle de mise en forme concerne l’emplacement des directives using Syst
 Le tableau suivant indique le nom de la règle, les langages applicables, la valeur par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| dotnet_sort_system_directives_first |  C# et Visual Basic | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| dotnet_sort_system_directives_first | C# et Visual Basic | true | 15.3 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1472,14 +1472,14 @@ Ces règles de mise en forme concernent l’utilisation de nouvelles lignes pour
 Le tableau suivant indique le nom des règles de "nouvelles lignes", les langages applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_new_line_before_open_brace |  C# | all | 15.3  |
-| csharp_new_line_before_else |  C# | true | 15.3  |
-| csharp_new_line_before_catch |  C# | true | 15.3  |
-| csharp_new_line_before_finally |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_object_initializers |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
-| csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_new_line_before_open_brace | C# | all | 15.3 |
+| csharp_new_line_before_else | C# | true | 15.3 |
+| csharp_new_line_before_catch | C# | true | 15.3 |
+| csharp_new_line_before_finally | C# | true | 15.3 |
+| csharp_new_line_before_members_in_object_initializers | C# | true | 15.3 |
+| csharp_new_line_before_members_in_anonymous_types | C# | true | 15.3 |
+| csharp_new_line_between_query_expression_clauses | C# | true | 15.3 |
 
 **csharp\_new\_line\_before\_open_brace**
 
@@ -1590,7 +1590,7 @@ try {
 
 **csharp\_new\_line\_before\_members\_in\_object_initializers**
 
-- Quand cette règle est définie sur **true**, les membres des initialiseurs d’objet doivent se trouver sur des lignes distinctes.
+- Quand cette règle est définie sur **true**, les membres des initialiseurs d’objets doivent se trouver sur des lignes distinctes.
 - Quand cette règle est définie sur **false**, les membres des initialiseurs d’objet doivent se trouver sur la même ligne.
 
 Exemples de code :
@@ -1671,10 +1671,10 @@ Ces règles de mise en forme concernent l’utilisation de l’indentation pour 
 Le tableau suivant indique le nom des règles, les langages applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_indent_case_contents |  C# | true | 15.3  |
-| csharp_indent_switch_labels |  C# | true | 15.3  |
-| csharp_indent_labels |  C# | no_change | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_indent_case_contents | C# | true | 15.3 |
+| csharp_indent_switch_labels | C# | true | 15.3 |
+| csharp_indent_labels | C# | no_change | 15.3 |
 
 **csharp\_indent\_case_contents**
 
@@ -1816,18 +1816,18 @@ Ces règles de mise en forme concernent l’utilisation de caractères d’espac
 Le tableau suivant indique le nom des règles, les langages applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | False | 15.3  |
-| csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_parentheses |  C# | False | 15.3  |
-| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
-| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | False | 15.7  |
-| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | False | 15.7  |
-| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | False | 15.7  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_space_after_cast | C# | False | 15.3 |
+| csharp_space_after_keywords_in_control_flow_statements | C# | true | 15.3 |
+| csharp_space_between_method_declaration_parameter_ list_parentheses | C# | False | 15.3 |
+| csharp_space_between_method_call_parameter_list_parentheses | C# | False | 15.3 |
+| csharp_space_between_parentheses | C# | False | 15.3 |
+| csharp_space_before_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_after_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_around_binary_operators | C# | before_and_after | 15.7 |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | False | 15.7 |
+| csharp_space_between_method_call_name_and_opening_parenthesis | C# | False | 15.7 |
+| csharp_space_between_method_call_empty_parameter_list_parentheses | C# | False | 15.7 |
 
 **csharp\_space\_after_cast**
 
@@ -2119,9 +2119,9 @@ Ces règles de mise en forme concernent l’utilisation de lignes uniques ou de 
 Le tableau suivant indique le nom des règles, les langages applicables, les valeurs par défaut et la première version de Visual Studio prise en charge :
 
 | Nom de la règle | Langages applicables | Valeur par défaut de Visual Studio | Version de Visual Studio 2017 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_preserve_single_line_statements |  C# | true | 15.3  |
-| csharp_preserve_single_line_blocks |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_preserve_single_line_statements | C# | true | 15.3 |
+| csharp_preserve_single_line_blocks | C# | true | 15.3 |
 
 **csharp_preserve_single_line_statements**
 
@@ -2222,8 +2222,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
-dotnet_prefer_inferred_tuple_names = true:suggestion
-dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:silent
 dotnet_style_prefer_conditional_expression_over_return = true:silent

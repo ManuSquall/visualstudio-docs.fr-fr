@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224272"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228860"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visite guidée de Visual Studio pour Mac
 
@@ -97,7 +97,7 @@ Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Gi
 
 ![Nom de la branche pour indiquer un projet soumis au contrôle du code source](media/ide-tour-image22.png)
 
-Les fichiers avec des modifications non validées comportent une annotation sur leurs icônes dans le panneau Solution, comme illustré dans l’image suivante :
+Les fichiers comportant des modifications non validées sont indiqués par une annotation sur leur icône dans le Panneau Solution, comme l’illustre l’image suivante :
 
 ![Fichiers non validés dans le panneau Solution](media/ide-tour-image23.png)
 

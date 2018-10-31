@@ -1,5 +1,5 @@
 ---
-title: Générer un constructeur dans Visual Basic
+title: Action rapide Générer un constructeur
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926733"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -47,10 +47,10 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
 
    ![Générer l’aperçu du constructeur](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
 
-     ![Aperçu Générer le constructeur](media/constructor2-preview-cs.png)
+      ![Aperçu Générer le constructeur](media/constructor2-preview-cs.png)
 
 1. Sélectionnez **Générer le constructeur 'TypeName(...)'** dans le menu déroulant.
 
@@ -97,24 +97,24 @@ Cette génération de code s’applique à :
 
    - C# :
 
-    ![Code C# mis en surbrillance](media/constructor-highlight-cs.png)
+       ![Code C# mis en surbrillance](media/constructor-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code VB mis en surbrillance](media/constructor-highlight-vb.png)
+       ![Code VB mis en surbrillance](media/constructor-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
-    ![Générer l’aperçu du constructeur](media/constructor-preview-cs.png)
+      ![Générer l’aperçu du constructeur](media/constructor-preview-cs.png)
 
-1. Sélectionnez **Générer le constructeur dans '*TypeName*'** dans le menu déroulant.
+3. Sélectionnez **Générer le constructeur dans '*TypeName*'** dans le menu déroulant.
 
    > [!TIP]
    > Utilisez le lien **Aperçu des modifications** en bas de la fenêtre d’aperçu [pour voir tous les changements](../../ide/preview-changes.md) qui seront apportés avant d’effectuer votre sélection.
@@ -123,36 +123,38 @@ Cette génération de code s’applique à :
 
    - C# :
 
-      ![Résultat de l’action Générer une méthode (C#)](media/constructor-result-cs.png)
+       ![Résultat de l’action Générer une méthode (C#)](media/constructor-result-cs.png)
 
    - Visual Basic :
 
-      ![Résultat de l’action Générer une méthode (VB)](media/constructor-result-vb.png)
+       ![Résultat de l’action Générer une méthode (VB)](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Ajouter un paramètre au constructeur existant (C# uniquement)
 
 1. Ajoutez un paramètre à un appel de constructeur existant.
 
-1. Placez votre curseur sur la ligne ondulée rouge indiquant que vous avez utilisé un constructeur qui n’existe pas encore.
+2. Placez votre curseur sur la ligne ondulée rouge indiquant que vous avez utilisé un constructeur qui n’existe pas encore.
 
     ![Mise en surbrillance de l’option Générer le constructeur](media/constructor4-highlight-cs.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+3. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
-    ![Générer l’aperçu du constructeur](media/constructor4-preview-cs.png)
+      ![Générer l’aperçu du constructeur](media/constructor4-preview-cs.png)
 
-1. Sélectionnez **Ajouter un paramètre à 'TypeName(...)'** dans le menu déroulant.
+4. Sélectionnez **Ajouter un paramètre à 'TypeName(...)'** dans le menu déroulant.
 
    Le paramètre est ajouté au constructeur, son type étant déduit de son utilisation.
 
    ![Résultat de l’action Générer le constructeur](media/constructor4-result-cs.png)
+
+Vous pouvez également ajouter un paramètre à une méthode existante. Pour plus d’informations, voir [Ajouter un paramètre à une méthode](add-parameter.md).
 
 ## <a id="create"></a> Créer et initialiser un champ ou une propriété à partir d’un paramètre de constructeur (C# uniquement)
 
@@ -165,10 +167,10 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
 
    ![Générer l’aperçu du constructeur](media/constructor5-preview-cs.png)
 

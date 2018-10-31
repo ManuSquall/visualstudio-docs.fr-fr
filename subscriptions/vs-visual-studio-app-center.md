@@ -9,12 +9,12 @@ description: Découvrez l’avantage Visual Studio App Center inclus dans les ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940981"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -41,6 +41,7 @@ La mise en route de Visual Studio App Center est simple.
     > ![Portail de VS App Center](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Éligibilité
+
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuel et cloud mensuel)   | Licences en volume, Azure, Détail, NFR<sup>1</sup> | Included       |  Oui          |
@@ -50,7 +51,7 @@ La mise en route de Visual Studio App Center est simple.
 | Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
 
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Partner), RD (Region Director).*
+<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Region Director).*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

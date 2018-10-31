@@ -1,7 +1,7 @@
 ---
 title: Débogage de code Python sur des ordinateurs Linux distants
 description: Guide pratique pour utiliser Visual Studio pour déboguer du code Python exécuté sur des ordinateurs Linux distants, y compris les étapes de configuration nécessaires, la sécurité et le dépannage.
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549309"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356767"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 
@@ -74,10 +74,8 @@ Pour plus d’informations sur la création d’une règle de pare-feu pour une 
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   Le premier argument passé à `enable_attach` (appelé « secret ») restreint l’accès au script exécuté. Vous entrez ce secret au moment où vous attachez le débogueur distant. (Cette pratique est déconseillée, mais vous pouvez autoriser tout le monde à se connecter, en utilisant le code `enable_attach(secret=None)`.)
 
 1. Enregistrez le fichier et exécutez `python3 guessing-game.py`. L’appel à `enable_attach` s’exécute en arrière-plan et attend les connexions entrantes issues de vos interactions avec le programme. Si vous le souhaitez, la fonction `wait_for_attach` peut être appelée après `enable_attach` pour bloquer le programme jusqu’à ce que le débogueur soit attaché.
 
@@ -96,10 +94,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. Dans la boîte de dialogue **Attacher au processus** qui s’affiche, définissez **Type de connexion** sur **Python à distance (ptvsd)**. (Dans les versions antérieures de Visual Studio, ces commandes s’appellent **Transport** et **Débogage à distance Python**.)
 
-1. Dans le champ **Cible de la connexion** (ou **Qualificateur** dans les versions antérieures), entrez `tcp://<secret>@<ip_address>:5678` où `<secret>` est la chaîne `enable_attach` passée dans le code Python, `<ip_address>` est celle de l’ordinateur distant (qui peut être une adresse explicite ou un nom tel que myvm.cloudapp.net) et `:5678` est le numéro du port de débogage à distance.
-
-    > [!Warning]
-    > Si vous créez une connexion sur l’Internet public, vous devez utiliser `tcps` à la place et suivre les instructions ci-dessous pour [sécuriser la connexion du débogueur avec SSL](#secure-the-debugger-connection-with-ssl).
+1. Dans le champ **Cible de la connexion** (**Qualificateur** dans les versions antérieures), entrez `tcp://<ip_address>:5678`, où `<ip_address>` est celle de l’ordinateur distant (qui peut être une adresse explicite ou un nom comme myvm.cloudapp.net) et `:5678` le numéro du port de débogage à distance.
 
 1. Appuyez sur **Entrée** pour remplir la liste des processus ptvsd disponibles sur cet ordinateur :
 
@@ -121,7 +116,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 1. Vérifiez que le secret dans **Cible de la connexion** (ou **Qualificateur**) est strictement identique au secret dans le code distant.
 1. Vérifiez que l’adresse IP dans **Cible de la connexion** (ou **Qualificateur**) correspond à celle de l’ordinateur distant.
 1. Vérifiez que vous avez ouvert le port de débogage à distance sur l’ordinateur distant et que vous avez inclus le suffixe du port, tel que `:5678`, dans la cible de la connexion.
-    - Si vous devez utiliser un port différent, vous pouvez le spécifier dans l’appel à `enable_attach` avec l’argument `address`, comme ceci : `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. Dans ce cas, ouvrez ce port spécifique dans le pare-feu.
+    - Si vous devez utiliser un port différent, vous pouvez le spécifier dans l’appel à `enable_attach` avec l’argument `address`, comme ceci : `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. Dans ce cas, ouvrez ce port spécifique dans le pare-feu.
 1. Vérifiez que la version du ptvsd installée sur l’ordinateur distant, et qui est retournée par `pip3 list`, correspond à celle utilisée par la version des outils Python utilisés dans Visual Studio, comme indiqué dans le tableau suivant. Si nécessaire, mettez à jour ptvsd sur l’ordinateur distant.
 
     | Version de Visual Studio | Version des outils Python/ptvsd |
@@ -136,9 +131,15 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>Sécuriser la connexion du débogueur avec SSL
+## <a name="using-ptvsd-3x"></a>Avec ptvsd 3.x
 
-Par défaut, la connexion au serveur de débogage à distance ptvsd est sécurisée uniquement par le secret, et toutes les données sont transmises en texte brut. Pour sécuriser davantage la connexion, ptvsd prend en charge SSL, que vous devez définir comme suit :
+Les informations suivantes s’appliquent uniquement au débogage à distance avec ptvsd 3.x, dont certaines fonctionnalités ont été supprimées dans ptvsd 4.x.
+
+1. Avec ptvsd 3.x, la fonction `enable_attach` exige comme premier argument un « secret » qui limite l’accès au script en cours d’exécution. Ce secret est entré lors de l’attachement du débogueur distant. Pour autoriser tout le monde à se connecter, utilisez `enable_attach(secret=None)` (non recommandé).
+
+1. L’URL de la cible de connexion est `tcp://<secret>@<ip_address>:5678`, où `<secret>` est la chaîne transmise à `enable_attach` dans le code Python.
+
+Par défaut, la connexion au serveur de débogage à distance ptvsd 3.x n’est sécurisée que par le secret ; toutes les données sont transmises en texte brut. Pour sécuriser davantage la connexion, ptvsd 3.x prend en charge SSL avec le protocole `tcsp`, configuré ainsi :
 
 1. Sur l’ordinateur distant, générez séparément un certificat auto-signé et les fichiers de clés en utilisant openssl :
 
@@ -171,17 +172,12 @@ Par défaut, la connexion au serveur de débogage à distance ptvsd est sécuris
 
     ![Choix du transport de débogage à distance avec SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Avertissements
+1. Visual Studio vous avertit en cas de problèmes potentiels de certificat lors de la connexion SSL. Vous pouvez ignorer les avertissements et continuer mais, même si le canal reste chiffré contre les écoutes clandestines, il est vulnérable à des attaques de l’intercepteur.
 
-Visual Studio vous avertit de problèmes de certificat potentiels quand vous vous connectez via le protocole SSL, comme décrit ci-dessous. Vous pouvez ignorer les avertissements et continuer mais, même si le canal reste chiffré contre les écoutes clandestines, il est vulnérable à des attaques de l’intercepteur.
+    1. Si vous recevez un avertissement du type **le certificat distant n’est pas approuvé**, comme celui illustré ci-dessous, cela signifie que vous n’avez pas ajouté correctement le certificat à l’autorité de certification racine de confiance. Vérifiez ces étapes, puis réessayez.
 
-1. Si vous recevez un avertissement du type **le certificat distant n’est pas approuvé**, comme celui illustré ci-dessous, cela signifie que vous n’avez pas ajouté correctement le certificat à l’autorité de certification racine de confiance. Vérifiez ces étapes, puis réessayez.
+        ![Avertissement lié au certificat SSL approuvé](media/remote-debugging-ssl-warning.png)
 
-    ![Avertissement lié au certificat SSL approuvé](media/remote-debugging-ssl-warning.png)
+    1. Si vous recevez un avertissement du type **le nom du certificat distant ne correspond pas au nom d’hôte**, comme celui illustré ci-dessous, cela signifie que vous n’avez pas utilisé le nom d’hôte ou l’adresse IP approprié comme **nom commun** au moment de la création du certificat.
 
-1. Si vous recevez un avertissement du type **le nom du certificat distant ne correspond pas au nom d’hôte**, comme celui illustré ci-dessous, cela signifie que vous n’avez pas utilisé le nom d’hôte ou l’adresse IP approprié comme **nom commun** au moment de la création du certificat.
-
-    ![Avertissement lié au nom d’hôte du certificat SSL](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> À l’heure actuelle, Visual Studio 2017 se bloque si vous ignorez ces avertissements. Assurez-vous de corriger tous les problèmes avant d’essayer de vous connecter.
+        ![Avertissement lié au nom d’hôte du certificat SSL](media/remote-debugging-ssl-warning2.png)

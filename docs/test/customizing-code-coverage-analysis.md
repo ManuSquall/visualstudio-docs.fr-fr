@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: b5d652c24f5250af38e6a1c82dbb57dc739cbe3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880778"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -91,7 +91,7 @@ Si **Include** est vide, le traitement de la couverture du code inclut tous les 
 
 Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l’équivalent des caractères génériques. En particulier :
 
-- **\*** correspond à une chaîne de n’importe quels caractères
+- **.\\*** correspond à une chaîne de caractères (quels qu’ils soient)
 
 - **\\.** correspond à un point « . »
 

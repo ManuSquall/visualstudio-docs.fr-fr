@@ -1,7 +1,7 @@
 ---
 title: Sélection et installation des interpréteurs Python
 description: La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548962"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324975"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
 Par défaut, l’installation de la charge de travail de développement Python dans Visual Studio 2017 installe également Python 3 (64 bits). Vous pouvez choisir d’installer les versions 32 bits et 64 bits de Python 2, Python 3, Anaconda 2 et Anaconda 3, comme décrit dans la rubrique [Installation](installing-python-support-in-visual-studio.md).
 
-Vous pouvez également installer manuellement l’un des interpréteurs figurant dans le tableau suivant en dehors de Visual Studio installer. Par exemple, si vous avez installé Anaconda 3 avant Visual Studio, vous n’avez pas besoin de le réinstaller avec Visual Studio Installer.
+Vous pouvez également installer manuellement l’un des interpréteurs figurant dans le tableau suivant en dehors de Visual Studio installer. Par exemple, si vous avez installé Anaconda 3 avant Visual Studio, vous n’avez pas besoin de le réinstaller avec Visual Studio Installer. Vous pouvez également installer un interpréteur manuellement si, par exemple, une nouvelle version est disponible mais n’apparaît pas encore dans Visual Studio Installer.
 
 Avec **Visual Studio 2015 et les versions antérieures**, vous devez installer manuellement un des interpréteurs.
 

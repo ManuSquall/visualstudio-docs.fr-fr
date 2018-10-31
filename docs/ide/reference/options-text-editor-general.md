@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830663"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219157"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
 
@@ -94,14 +94,6 @@ Quand cette option est sélectionnée, une marge verticale s’affiche le long d
 ### <a name="indicator-margin"></a>Marge des indicateurs
 
 Quand cette option est sélectionnée, une marge verticale s’affiche à l’extérieur du bord gauche de la zone de texte de l’éditeur. Quand vous cliquez dans cette marge, une icône et une info-bulle relatives au texte s’affichent. Par exemple, les raccourcis des points d’arrêt ou de la liste des tâches s’affichent dans la marge des indicateurs. Le contenu de la marge des indicateurs ne s’imprime pas.
-
-### <a name="vertical-scroll-bar"></a>Barre de défilement verticale
-
-Quand cette option est sélectionnée, une barre de défilement verticale s’affiche pour vous permettre de faire défiler verticalement les éléments situés hors de la zone d’affichage de l’éditeur. Si des barres de défilement verticales ne sont pas disponibles, vous pouvez faire défiler le contenu de l’éditeur à l’aide des touches du curseur et des touches Page précédente et Page suivante.
-
-### <a name="horizontal-scroll-bar"></a>Barre de défilement horizontale
-
-Quand cette option est sélectionnée, une barre de défilement horizontale s’affiche pour vous permettre de faire défiler horizontalement les éléments situés hors de la zone d’affichage de l’éditeur. Si les barres de défilement horizontales ne sont pas disponibles, vous pouvez faire défiler le contenu de l’éditeur à l’aide des touches du curseur.
 
 ### <a name="highlight-current-line"></a>Mettre en surbrillance la ligne active
 

@@ -9,12 +9,12 @@ description: Découvrez l’avantage Concierge Chat inclus dans les abonnements 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831846"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -39,6 +39,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
     > ![Concierge Chat, Session](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Éligibilité
+
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
@@ -48,7 +49,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 | Visual Studio Dev Essentials | NA  | Non disponible |N/A |
 
-<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut : FTE, MVP (Microsoft Valued Partner), RD (Region Director), MPN (Microsoft Partner Network), Imagine.*
+<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut : FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), Imagine.*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

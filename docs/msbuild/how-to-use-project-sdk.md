@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151013"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220442"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
 
@@ -101,7 +101,7 @@ Durant l’évaluation de l’importation, [!INCLUDE[vstecmsbuild](../extensibil
    Ce programme de résolution localise les kits SDK de projet tels que `Microsoft.NET.Sdk` et `Microsoft.NET.Sdk.Web` qui font partie du produit.
 3. Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
 
-Le programme de résolution de kits SDK basé sur NuGet prend en charge la spécification d’une version dans votre fichier [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json), ce qui vous permet de contrôler la version du kit SDK de projet à partir d’un seul emplacement, et non de chaque projet individuel :
+Le programme de résolution de kits SDK basé sur NuGet prend en charge la spécification d’une version dans votre fichier [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json), ce qui vous permet de contrôler la version du kit SDK de projet à partir d’un seul emplacement, et non de chaque projet individuel :
 
 ```json
 {
