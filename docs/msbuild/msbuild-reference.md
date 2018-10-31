@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081782"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120381"
 ---
 # <a name="msbuild-reference"></a>Informations de référence sur MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est le système de génération de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les liens indiqués ci-dessous renvoient aux rubriques qui contiennent les informations de référence sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -71,25 +71,24 @@ ms.locfileid: "39081782"
  Répertorie les caractères qui peuvent devoir être insérés dans une « séquence d’échappement » pour être interprétés correctement. Une séquence d’échappement est une série de caractères qui signifie que ce qui suit est une autre interprétation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble de MSBuild](../msbuild/msbuild.md) Présente [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
+ [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)     
+ Présente [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Contient des informations de référence sur l’espace de noms Conversion.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Contient des informations de référence sur l’espace de noms Evaluation.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Contient des informations de référence sur l’espace de noms Execution.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Contient des informations de référence sur l’espace de noms Framework.  
   
- <xref:Microsoft.Build.Logging>  
- Contient des informations de référence sur l’espace de noms Logging.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) Contient des informations de référence sur l’espace de noms Logging.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Contient des informations de référence sur l’espace de noms Tasks.  
   
- <xref:Microsoft.Build.Utilities>  
- Contient des informations de référence sur l’espace de noms Utilities.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) Contient des informations de référence sur l’espace de noms Utilities.

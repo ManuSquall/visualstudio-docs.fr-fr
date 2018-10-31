@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081808"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880227"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Guide pratique pour afficher une liste d’éléments séparés par des virgules
 Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), il est parfois utile d’afficher le contenu de ces listes de manière à faciliter leur lecture. Vous pouvez également avoir une tâche qui accepte une liste d’éléments séparés par une chaîne de séparation particulière. Dans ces deux cas, vous pouvez spécifier une chaîne de séparation pour la liste d’éléments.  
@@ -45,7 +45,7 @@ Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengin
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Exemple  
- Dans cet exemple, la tâche [Exec](../msbuild/exec-task.md) exécute l’outil findstr pour rechercher des chaînes de texte spécifiées dans le fichier *Phrases.txt*. Dans la commande findstr, les chaînes de recherche littérales sont indiquées par le commutateur **/c:**. Ainsi, le séparateur d’éléments `/c:` est inséré entre les éléments de la liste `@(Phrase)`.  
+ Dans cet exemple, la tâche [Exec](../msbuild/exec-task.md) exécute l’outil findstr pour rechercher des chaînes de texte spécifiées dans le fichier *Phrases.txt*. Dans la commande findstr, les chaînes de recherche littérales sont indiquées par le commutateur **-c:**. Ainsi, le séparateur d’éléments `-c:` est inséré entre les éléments de la liste `@(Phrase)`.  
   
  Pour cet exemple, la commande équivalente de ligne de commande est la suivante :  
   

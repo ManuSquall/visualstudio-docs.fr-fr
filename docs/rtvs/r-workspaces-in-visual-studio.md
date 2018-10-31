@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 859e44c912ed98a50d5127675eb2c1bed699ede6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919297"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 
@@ -37,7 +37,7 @@ La commande **Outils R** > **Session** > **Réinitialiser** et le bouton de ré
 
 La liste des espaces de travail locaux affiche tous les interpréteurs R que vous avez installés sur votre ordinateur. 
 
-Au démarrage, Visual Studio essaie de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE\Software\R-Core\**. Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
+Au démarrage, Visual Studio essaie de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
 
 RTVS peut ne pas détecter un interpréteur R installé de manière non standard (par exemple, quand vous copiez simplement des fichiers dans un dossier au lieu d’exécuter un programme d’installation). Dans ce cas, créez manuellement un nouvel espace de travail R local comme suit :
 
