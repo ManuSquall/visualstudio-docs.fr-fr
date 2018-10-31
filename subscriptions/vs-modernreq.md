@@ -9,12 +9,12 @@ description: Découvrez la suite de produits ModernRequirements incluse dans cer
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942866"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Avantage MODERNRequirements4TFS dans les abonnements Visual Studio
 
@@ -22,69 +22,70 @@ Les abonnements Visual Studio sélectionnés incluent un abonnement de six mois 
 
 
 ## <a name="activation-steps"></a>Étapes d’activation
-1.  Pour utiliser votre avantage MODERNRequirementsTFS, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Recherchez la vignette MODERNRequirements4TFS dans la section Outils, puis cliquez sur le lien **Obtenir un code** en bas à gauche de la vignette.
-    > [!div class="mx-imgBorder"]
-    > ![Vignette de l’avantage ModernRequirements](_img\vs-modernreq\vs-modernreq-tile.png)
+1. Pour utiliser votre avantage MODERNRequirementsTFS, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Recherchez la vignette MODERNRequirements4TFS dans la section Outils, puis cliquez sur le lien **Obtenir un code** en bas à gauche de la vignette.
+   > [!div class="mx-imgBorder"]
+   > ![Vignette de l’avantage ModernRequirements](_img/vs-modernreq/vs-modernreq-tile.png)
 
-2.  Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**.
+3. Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**.
 
-3.  Vous êtes redirigé vers le site web ModernRequirements sur lequel vous pourrez créer votre compte et télécharger le logiciel.  Dans la page de destination, entrez les coordonnées demandées et cliquez sur **Get License Key and Download** (Obtenir une clé de licence et télécharger).
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements, Page de destination](_img\vs-modernreq\vs-modernreq-landing.png)
-
-
-4.  La page suivante contient votre clé de licence.  Vérifiez les informations sur les installations fournies dans la page, puis cliquez sur le lien bleu **To download the software please click here** (Pour télécharger le logiciel, cliquez ici) au milieu de la page.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements, Clé de licence](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+4. Vous êtes redirigé vers le site web ModernRequirements sur lequel vous pourrez créer votre compte et télécharger le logiciel.  Dans la page de destination, entrez les coordonnées demandées et cliquez sur **Get License Key and Download** (Obtenir une clé de licence et télécharger).
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements, Page de destination](_img/vs-modernreq/vs-modernreq-landing.png)
 
 
-5.  La page de téléchargement offre l’option d’installer les suites MODERNRequirements ou l’option d’installer des modules individuels de la suite SMARTOffice4TFS.  Les options appropriées à choisir dépendent de vos préférences, ainsi que de la version de TFS que vous avez installée.  Lisez bien toutes les informations de la page pour déterminer quelle version des produits est adaptée à votre situation.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirement, Options de téléchargement](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+5. La page suivante contient votre clé de licence.  Vérifiez les informations sur les installations fournies dans la page, puis cliquez sur le lien bleu **To download the software please click here** (Pour télécharger le logiciel, cliquez ici) au milieu de la page.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements, Clé de licence](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
 
-6.  Dans cet exemple, nous allons choisir SMARTOffice4TFS.  La boîte de dialogue de téléchargement qui s’affiche propose trois options de téléchargement et d’enregistrement du fichier .zip.  Nous allons choisir **Enregistrer** pour créer une copie du package dans le dossier Téléchargements du PC.
 
-7.  À la fin du téléchargement de **SmartOffice4TFS_Online.zip**, cliquez sur **Ouvrir le dossier**.
+6. La page de téléchargement offre l’option d’installer les suites MODERNRequirements ou l’option d’installer des modules individuels de la suite SMARTOffice4TFS.  Les options appropriées à choisir dépendent de vos préférences, ainsi que de la version de TFS que vous avez installée.  Lisez bien toutes les informations de la page pour déterminer quelle version des produits est adaptée à votre situation.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirement, Options de téléchargement](_img/vs-modernreq/vs-modernreq-download-page-new.png)
 
-8.  Ouvrez le dossier « SmartOffice4TFS_Online ».
+7. Dans cet exemple, nous allons choisir SMARTOffice4TFS.  La boîte de dialogue de téléchargement qui s’affiche propose trois options de téléchargement et d’enregistrement du fichier .zip.  Nous allons choisir **Enregistrer** pour créer une copie du package dans le dossier Téléchargements du PC.
 
-9.  Ouvrez le sous-dossier « SmartOffice4TFS_Online ».
+8. À la fin du téléchargement de **SmartOffice4TFS_Online.zip**, cliquez sur **Ouvrir le dossier**.
 
-10. Le dossier contient un programme d’installation pour chacune des quatre applications suivantes :
+9. Ouvrez le dossier « SmartOffice4TFS_Online ».
+
+10. Ouvrez le sous-dossier « SmartOffice4TFS_Online ».
+
+11. Le dossier contient un programme d’installation pour chacune des quatre applications suivantes :
     - SmartExcel4TFS_Online
     - SmartOutlook4TFS_Online
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
     > [!div class="mx-imgBorder"]
-    > ![ModernRequirement, Options de téléchargement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > ![ModernRequirement, Options de téléchargement](_img/vs-modernreq/vs-modernreq-downloaded-cropped.png)
 
-11. Cliquez avec le bouton droit dans le dossier et choisissez **Extraire tout**.  Spécifiez l’emplacement où extraire les fichiers, puis cliquez sur **Extraire**.
+12. Cliquez avec le bouton droit dans le dossier et choisissez **Extraire tout**.  Spécifiez l’emplacement où extraire les fichiers, puis cliquez sur **Extraire**.
 
-12. Pour installer un des produits, lancez le programme d’installation correspondant à partir du dossier Téléchargements.  Dans notre exemple, nous allons installer SmartWord4TFS.  Dans la boîte de dialogue Contrôle de compte utilisateur qui s’ouvre, cliquez sur **Oui** pour démarrer l’installation.
+13. Pour installer un des produits, lancez le programme d’installation correspondant à partir du dossier Téléchargements.  Dans notre exemple, nous allons installer SmartWord4TFS.  Dans la boîte de dialogue Contrôle de compte utilisateur qui s’ouvre, cliquez sur **Oui** pour démarrer l’installation.
 
-13. L’Assistant Installation démarre.  Cliquez sur **Suivant** pour continuer.
+14. L’Assistant Installation démarre.  Cliquez sur **Suivant** pour continuer.
 
-14. Cochez la case d’option **J’accepte** pour accepter les termes du contrat, puis cliquez sur **Suivant**.
+15. Cochez la case d’option **J’accepte** pour accepter les termes du contrat, puis cliquez sur **Suivant**.
 
-15. Choisissez l’emplacement où vous souhaitez installer l’application et spécifiez si vous souhaitez qu’elle soit disponible pour tous les utilisateurs ou uniquement pour vous-même.  Cliquez sur **Suivant**.
+16. Choisissez l’emplacement où vous souhaitez installer l’application et spécifiez si vous souhaitez qu’elle soit disponible pour tous les utilisateurs ou uniquement pour vous-même.  Cliquez sur **Suivant**.
 
-16. Choisissez si vous souhaitez installer SmartWord en mode auteur ou en mode réviseur.  Pour plus d’informations sur ces modes, contactez le [support MODERNRequirements](http://www.modernrequirements.com/support-2/).  Cliquez sur **Suivant**.
+17. Choisissez si vous souhaitez installer SmartWord en mode auteur ou en mode réviseur.  Pour plus d’informations sur ces modes, contactez le [support MODERNRequirements](http://www.modernrequirements.com/support-2/).  Cliquez sur **Suivant**.
 
-17. Ensuite, choisissez si vous voulez installer des modèles, puis cliquez sur **Suivant**.
+18. Ensuite, choisissez si vous voulez installer des modèles, puis cliquez sur **Suivant**.
 
-18. Recliquez sur **Suivant** pour démarrer l’installation.
+19. Recliquez sur **Suivant** pour démarrer l’installation.
 
-19. Dans la boîte de dialogue Contrôle de compte d’utilisateur qui s’ouvre, cliquez sur **Oui**.
+20. Dans la boîte de dialogue Contrôle de compte d’utilisateur qui s’ouvre, cliquez sur **Oui**.
 
-20. À la fin de l’installation, cliquez sur **Fermer**.
+21. À la fin de l’installation, cliquez sur **Fermer**.
 
-21. Au prochain démarrage de Microsoft Word, une boîte de dialogue Programme d’installation de la personnalisation Microsoft Office vous invite à confirmer que vous souhaitez installer le complément SmartWord4TFS.  Cliquez sur **Installer**.
+22. Au prochain démarrage de Microsoft Word, une boîte de dialogue Programme d’installation de la personnalisation Microsoft Office vous invite à confirmer que vous souhaitez installer le complément SmartWord4TFS.  Cliquez sur **Installer**.
 
-22. Quand Word s’ouvre, vous voyez qu’un onglet SmartWord4TFS a été ajouté. Cliquez sur l’onglet pour afficher l’ensemble d’outils SmartWord4TFS.
+23. Quand Word s’ouvre, vous voyez qu’un onglet SmartWord4TFS a été ajouté. Cliquez sur l’onglet pour afficher l’ensemble d’outils SmartWord4TFS.
 
 ## <a name="eligibility"></a>Éligibilité
+
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
@@ -94,7 +95,7 @@ Les abonnements Visual Studio sélectionnés incluent un abonnement de six mois 
 | Visual Studio Dev Essentials | NA  |Non disponible                                                          |NA     |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), FTE.  Exclut : Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (Region Director).  MCT Software & Services.*
+<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), FTE.  Exclut : Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (Region Director).  MCT Software & Services.*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

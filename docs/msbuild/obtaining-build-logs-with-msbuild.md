@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07936a7902e6c09070dddcb01af47079c579734e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 83f4de3efc64d78dd561a44fabed1e16f673d736
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179227"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879125"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtenir des journaux de génération avec MSBuild
 En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de données de build que vous souhaitez vérifier, et spécifier si vous voulez enregistrer les données de build dans un ou plusieurs fichiers. Vous pouvez également spécifier un enregistreur d’événements personnalisé pour collecter les données de build. Pour plus d’informations sur les commutateurs de ligne de commande MSBuild que cette rubrique ne traite pas, consultez l’article [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md).  
@@ -35,36 +35,36 @@ En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de do
   
 -   Résumé de la génération  
 
-En utilisant le commutateur **/verbosity** (**/v**), vous pouvez contrôler la quantité de données affichées dans le journal de sortie. Pour la résolution des problèmes, utilisez un niveau de détail `detailed` (`d`) ou `diagnostic` (`diag`), qui fournit le plus d’informations.  
+En utilisant le commutateur **-verbosity** (**-v**), vous pouvez contrôler le volume de données affichées dans le journal de sortie. Pour la résolution des problèmes, utilisez un niveau de détail `detailed` (`d`) ou `diagnostic` (`diag`), qui fournit le plus d’informations.  
 
-Le processus de génération peut être plus lent si vous définissez le commutateur **/verbosity** sur `detailed`, et même encore plus lent si vous définissez le commutateur **/verbosity** sur `diagnostic`.  
+Le processus de build peut être plus lent si le commutateur **-verbosity** est défini sur `detailed`, et encore plus si le commutateur **-verbosity** est défini sur `diagnostic`.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /v:diag  
+msbuild MyProject.proj -t:go -v:diag  
 ```  
 
 ## <a name="save-the-build-log-to-a-file"></a>Enregistrer le journal de génération dans un fichier  
- Vous pouvez utiliser le commutateur **/fileLogger** (**fl**) pour enregistrer les données de build dans un fichier. Dans l’exemple suivant, les données de build sont enregistrées dans un fichier nommé *msbuild.log*.  
+ Vous pouvez utiliser le commutateur **-fileLogger** (**fl**) pour enregistrer les données de build dans un fichier. Dans l’exemple suivant, les données de build sont enregistrées dans un fichier nommé *msbuild.log*.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /fileLogger  
+msbuild MyProject.proj -t:go -fileLogger  
 ```  
   
- Dans l’exemple suivant, le fichier journal est nommé *MyProjectOutput.log*, et le niveau de détail de sa sortie est défini sur `diagnostic`. Le commutateur **/filelogparameters** (`flp`) vous permet de spécifier ces deux paramètres.  
+ Dans l’exemple suivant, le fichier journal est nommé *MyProjectOutput.log*, et le niveau de détail de sa sortie est défini sur `diagnostic`. Le commutateur **-filelogparameters** (`flp`) permet de spécifier ces deux paramètres.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
+msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
  Pour plus d’informations, consultez [Référence de ligne de commande](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="save-the-log-output-to-multiple-files"></a>Enregistrer le journal de sortie dans plusieurs fichiers  
- Dans l’exemple suivant, la totalité du journal est enregistrée dans *msbuild1.log*, les erreurs le sont dans *JustErrors.log* et les avertissements dans *JustWarnings.log*. Cet exemple utilise des numéros de fichier pour chacun des trois fichiers. Les numéros de fichier sont spécifiés juste après les commutateurs **/fl** et **/flp** (par exemple, `/fl1` et `/flp1`).  
+ Dans l’exemple suivant, la totalité du journal est enregistrée dans *msbuild1.log*, les erreurs le sont dans *JustErrors.log* et les avertissements dans *JustWarnings.log*. Cet exemple utilise des numéros de fichier pour chacun des trois fichiers. Les numéros de fichier sont spécifiés juste après les commutateurs **-fl** et **-flp** (par exemple, `-fl1` et `-flp1`).  
   
- Les commutateurs **/filelogparameters** (`flp`) des fichiers 2 et 3 indiquent comment nommer chaque fichier et les éléments à y inclure. Comme aucun nom n’est spécifié pour le fichier 1, le nom par défaut *msbuild1.log* est utilisé.  
+ Les commutateurs **-filelogparameters** (`flp`) des fichiers 2 et 3 indiquent comment nommer chaque fichier et quels éléments y inclure. Comme aucun nom n’est spécifié pour le fichier 1, le nom par défaut *msbuild1.log* est utilisé.  
   
 ```cmd  
-msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
+msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
   
@@ -72,7 +72,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>Enregistrer un journal binaire
 
-Vous pouvez enregistrer le journal dans un format binaire compressé à l’aide du commutateur **/binaryLogger** (**bl**). Ce journal inclut une description détaillée du processus de génération et peut être lu par certains outils d’analyse de journaux.
+Vous pouvez enregistrer le journal dans un format binaire compressé à l’aide du commutateur **-binaryLogger** (**bl**). Ce journal inclut une description détaillée du processus de génération et peut être lu par certains outils d’analyse de journaux.
 
 Dans l’exemple suivant, un fichier journal binaire est créé avec le nom *binarylogfilename*.
 
@@ -85,7 +85,7 @@ Pour plus d’informations, consultez [Référence de ligne de commande](../msbu
 ## <a name="use-a-custom-logger"></a>Utiliser un journal personnalisé  
  Vous pouvez écrire votre propre enregistreur d’événements en créant un type managé qui implémente l’interface <xref:Microsoft.Build.Framework.ILogger>. Vous pouvez utiliser un enregistreur d’événements personnalisé, par exemple, pour envoyer des erreurs de build par courrier électronique, et les enregistrer dans une base de données ou dans un fichier XML. Pour plus d’informations, consultez l’article [Enregistreurs d’événements de génération](../msbuild/build-loggers.md).  
   
- Dans la ligne de commande MSBuild, vous spécifiez l’enregistreur d’événements personnalisé à l’aide du commutateur **Logger**. Vous pouvez également utiliser le commutateur **/noconsolelogger** pour désactiver l’enregistreur d’événements de console par défaut.  
+ Dans la ligne de commande MSBuild, vous pouvez spécifier l’enregistreur d’événements personnalisé à l’aide du commutateur **-logger**. Par ailleurs, le commutateur **-noconsolelogger** permet de désactiver l’enregistreur d’événements de console par défaut.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   

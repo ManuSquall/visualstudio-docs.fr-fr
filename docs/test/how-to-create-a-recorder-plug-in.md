@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909770"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Guide pratique pour créer un plug-in d’enregistreur
 
@@ -62,7 +62,7 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 9. Écrivez le code de votre plug-in d'enregistreur. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Remplacez la méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
+10. Remplacez la méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -87,11 +87,11 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 ### <a name="deploy-the-recorder-plug-in"></a>Déployer le plug-in d’enregistreur
 
-Après avoir compilé le plug-in d'enregistreur, vous devrez placer la DLL créée dans un des deux emplacements :
+Après avoir compilé le plug-in d’enregistreur, placez la DLL ainsi créée dans un de ces deux emplacements :
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[version]\\[édition]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [version]\WebTestPlugins*
 
 > [!WARNING]
 > Après avoir copié le plug-in d'enregistreur dans l'un des deux emplacements, vous devez redémarrer Visual Studio pour enregistrer le plug-in d'enregistreur.
@@ -107,14 +107,14 @@ Après avoir compilé le plug-in d'enregistreur, vous devrez placer la DLL cré�
      À l’issue de l’enregistrement du test de performances web, le nouveau plug-in d’enregistreur sera exécuté.
 
     > [!WARNING]
-    > Vous risquez de rencontrer l’erreur suivante si vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
+    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
     > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
-    > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
+    > 1. Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple
 
@@ -123,7 +123,7 @@ Cet exemple montre comment créer un plug-in d’enregistreur pour le test de pe
 > [!NOTE]
 > Une liste complète de l'exemple de code se trouve à la fin de cette rubrique.
 
- **Revue de l’exemple de code**
+**Revue de l’exemple de code**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Effectue une itération au sein du résultat pour rechercher la première page avec ReportSession
 

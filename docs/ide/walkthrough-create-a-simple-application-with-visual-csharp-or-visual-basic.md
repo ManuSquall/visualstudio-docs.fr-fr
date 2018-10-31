@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008445"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788017"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Procédure pas à pas : créer une application simple avec C# ou Visual Basic
 
-Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser quand vous développez des applications avec Visual Studio. Vous allez créer une application simple « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré (IDE).
+Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser quand vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré ([IDE](visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>Configurer l'IDE
 
@@ -48,9 +48,12 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
 1. Sélectionnez **OK**.
 
-Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différents fichiers dans **l’Explorateur de solutions**. Le **Concepteur WPF** affiche une vue Design et une vue XAML pour *MainWindow.xaml* dans une vue fractionnée. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues. Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
+   Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différents fichiers dans **l’Explorateur de solutions**. Le **Concepteur WPF** affiche une vue Design et une vue XAML pour *MainWindow.xaml* dans une vue fractionnée. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues. Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
 
-![Explorateur de solutions avec fichiers HelloWPFApp chargés](../ide/media/exploreide-hellowpfappfiles.png)
+   ![Explorateur de solutions avec fichiers HelloWPFApp chargés](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > Pour plus d’informations sur XAML (Extensible Application Markup Language), voir la page [Vue d’ensemble de XAML pour WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **Propriétés** (disponible dans le menu **Affichage** ), vous pouvez afficher et modifier les options des éléments du projet, des contrôles et des autres éléments d'une application.
 
@@ -84,7 +87,7 @@ Votre fenêtre doit ressembler à l'illustration suivante :
 
 ![Contrôle TextBlock sur le formulaire Greetings](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-Le balisage XAML doit ressembler à ce qui suit :
+Le balisage XAML devrait ressembler à l’exemple suivant :
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -130,7 +133,7 @@ Vous pouvez maintenant afficher du texte pour chaque contrôle RadioButton. La p
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Définir une case d’option activée par défaut
 
-Dans cette étape, nous allons définir la case d’option HelloButton pour qu’elle soit activée par défaut. Ainsi, il y a toujours une des deux cases d’option qui est activée.
+Dans cette étape, nous allons faire en sorte que la case HelloButton soit cochée par défaut. Ainsi, il y aura toujours une des deux cases d’option sélectionnée.
 
 Dans l’affichage XAML, recherchez la balise du contrôle HelloButton et ajoutez un attribut **IsChecked** :
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816778"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
@@ -86,6 +86,19 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
     > [!NOTE]
     > La désactivation du code de projet peut entraîner une perte de données au moment du design. Une autre solution consiste à déboguer le code s’exécutant dans le concepteur.
+
+## <a name="control-display-options"></a>Options d’affichage des contrôles
+
+> [!NOTE]
+> Les **Options d’affichage des contrôles** ne sont disponibles que pour les applications UWP (plateforme Windows universelle) qui ciblent Windows 10 Fall Creators Update (build 16299) ou une version ultérieure. La fonctionnalité **Options d’affichage des contrôles** est disponible dans Visual Studio 2017 15.9 et les versions ultérieures. 
+
+Dans le Concepteur XAML, vous pouvez modifier vos options d’affichage des contrôles pour afficher seulement les contrôles de plateforme du Kit SDK Windows. Cela peut améliorer la fiabilité du Concepteur XAML.
+
+Pour modifier les options d’affichage des contrôles, cliquez sur l’icône en bas à gauche de la fenêtre du concepteur, puis sélectionnez une option sous **Options d’affichage des contrôles** :
+
+![Options d’affichage des contrôles](../designers/media/control_display_options.png)
+
+Si vous sélectionnez **Afficher seulement les contrôles de plateforme**, les contrôles personnalisés provenant de Kits SDK, les contrôles utilisateur client, etc. ne s’afficheront pas complètement. Ils sont remplacés par les contrôles de secours qui représentent la taille et la position du contrôle.
 
 ## <a name="see-also"></a>Voir aussi
 

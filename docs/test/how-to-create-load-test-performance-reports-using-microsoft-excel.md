@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ecd4e81389e50614b19095fcff1d0ada8b4d1c60
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861915"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 
@@ -29,118 +29,118 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
 > [!TIP]
 > Vous pouvez également créer manuellement des rapports Microsoft Word en copiant et collant des données des vues Résumé, Graphiques et Tables. Consultez [Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
- Chaque type de rapport permet de partager des données de performance avec les parties prenantes et d'indiquer si l'intégrité et les performances globales du système s'améliorent ou empirent.
+Chaque type de rapport permet de partager des données de performance avec les parties prenantes et d'indiquer si l'intégrité et les performances globales du système s'améliorent ou empirent.
 
- Les définitions des rapports sont stockées dans la base de données de tests de charge. Une fois un rapport enregistré, sa définition est enregistrée dans la base de données et peut être réutilisée par la suite.
+Les définitions des rapports sont stockées dans la base de données de tests de charge. Une fois un rapport enregistré, sa définition est enregistrée dans la base de données et peut être réutilisée par la suite.
 
- Le classeur Excel peut être partagé avec les parties prenantes sans que ceux-ci aient à se connecter à la base de données pour consulter le rapport.
+Le classeur Excel peut être partagé avec les parties prenantes sans que ceux-ci aient à se connecter à la base de données pour consulter le rapport.
 
 > [!NOTE]
 > Vous pouvez partager le classeur Excel. Cependant, seuls les utilisateurs ayant installé Visual Studio sur leur ordinateur peuvent modifier les feuilles de calcul. Les autres utilisateurs ne verront pas l’option **Rapport de test de charge** dans le ruban **Office**, mais ils pourront afficher le classeur.
 
- L’illustration suivante est un exemple de rapport qui affiche une corrélation entre une baisse de vitesse de la transaction (Mettre à jour le panier) et la dégénération du compteur (% processeur). Cela indique un problème potentiel dans le code de l'application, au lieu de la base de données ou du réseau, et présente un bon exemple à diagnostiquer à l'aide du profileur ASP.NET.
+L’illustration suivante est un exemple de rapport qui affiche une corrélation entre une baisse de vitesse de la transaction (Mettre à jour le panier) et la dégénération du compteur (% processeur). Cela indique un problème potentiel dans le code de l'application, au lieu de la base de données ou du réseau, et présente un bon exemple à diagnostiquer à l'aide du profileur ASP.NET.
 
- ![Problème potentiel dans le code de l'application](../test/media/lt_excel.png)
+![Problème potentiel dans le code de l'application](../test/media/lt_excel.png)
 
- Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge**, à l’aide du bouton **Créer un rapport Excel** de la barre d’outils, ou à partir d’Excel par le biais de l’option **Rapport de test de charge** sous l’onglet **Test de charge** du ruban **Office**.
+Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge**, à l’aide du bouton **Créer un rapport Excel** de la barre d’outils, ou à partir d’Excel par le biais de l’option **Rapport de test de charge** sous l’onglet **Test de charge** du ruban **Office**.
 
 > [!NOTE]
 > Si vous ajoutez des commentaires à un test de charge, ils s'affichent dans le rapport Excel. Pour plus d’informations, consultez [Guide pratique pour ajouter des commentaires pendant l’analyse d’un test de charge terminé](../test/how-to-add-comments-on-a-completed-load-test.md).
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Pour créer des rapports de comparaison de tests de charge à l'aide d'Excel
 
-1.  Avant de créer un rapport, vous devez exécuter un test de charge.
+1. Avant de créer un rapport, vous devez exécuter un test de charge.
 
-2.  Vous pouvez créer les rapports de tests de charge Excel de deux façons :
+2. Vous pouvez créer les rapports de tests de charge Excel de deux façons :
 
-    1.  Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
+   - Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
-        > [!NOTE]
-        > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
+      > [!NOTE]
+      > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
 
-     Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
+      Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
 
-     - ou -
+   **OU**
 
-    1.  Ouvrez Microsoft Excel, sélectionnez l’onglet **Test de charge** dans le ruban **Office**, puis choisissez **Rapport de test de charge**.
+   1. Ouvrez Microsoft Excel, sélectionnez l’onglet **Test de charge** dans le ruban **Office**, puis choisissez **Rapport de test de charge**.
 
-         **L’Assistant Générer un rapport de test de charge** s’affiche.
+       **L’Assistant Générer un rapport de test de charge** s’affiche.
 
-    2.  Dans la page **Sélectionner la base de données contenant les tests de charge**, sous **Nom du serveur**, tapez le nom du serveur contenant les résultats du test de charge.
+   2. Dans la page **Sélectionner la base de données contenant les tests de charge**, sous **Nom du serveur**, tapez le nom du serveur contenant les résultats du test de charge.
 
-    3.  Dans la liste déroulante **Databasename**, sélectionnez la base de données qui contient les résultats du test de charge.
+   3. Dans la liste déroulante **Databasename**, sélectionnez la base de données qui contient les résultats du test de charge.
 
-3.  Dans la page **Comment voulez-vous générer votre rapport ?**, vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
+3. Dans la page **Comment voulez-vous générer votre rapport ?**, vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
 
-4.  Dans la page **Quel type de rapport voulez-vous générer ?**, vérifiez que **Exécuter la comparaison** est sélectionné et choisissez **Suivant**.
+4. Dans la page **Quel type de rapport voulez-vous générer ?**, vérifiez que **Exécuter la comparaison** est sélectionné et choisissez **Suivant**.
 
-5.  Dans la page **Entrer le détail du rapport de test de charge**, attribuez un nom à votre rapport dans **Nom du rapport**.
+5. Dans la page **Entrer le détail du rapport de test de charge**, attribuez un nom à votre rapport dans **Nom du rapport**.
 
-6.  Sélectionnez le test de charge dont vous souhaitez créer le rapport, puis sélectionnez **Suivant**.
+6. Sélectionnez le test de charge dont vous souhaitez créer le rapport, puis sélectionnez **Suivant**.
 
-7.  Dans la page **Sélectionner les séries pour votre rapport**, sous **Sélectionner une ou plusieurs séries à ajouter à ce rapport**, sélectionnez deux résultats de test de charge que vous souhaitez comparer dans le rapport et cliquez sur **Suivant**.
+7. Dans la page **Sélectionner les séries pour votre rapport**, sous **Sélectionner une ou plusieurs séries à ajouter à ce rapport**, sélectionnez deux résultats de test de charge que vous souhaitez comparer dans le rapport et cliquez sur **Suivant**.
 
-    > [!NOTE]
-    > Vous ne pouvez créer un rapport de comparaison que sur la base de deux résultats de test de charge. Si vous sélectionnez un seul résultat de test de charge ou plus de deux résultats de test de charge, un message d'avertissement s'affiche.
+   > [!NOTE]
+   > Vous ne pouvez créer un rapport de comparaison que sur la base de deux résultats de test de charge. Si vous sélectionnez un seul résultat de test de charge ou plus de deux résultats de test de charge, un message d'avertissement s'affiche.
 
-8.  Dans la page **Sélectionner les compteurs pour votre rapport**, sous **Sélectionner un ou plusieurs compteurs à ajouter à ce rapport**, vous disposez d’une liste de compteurs pouvant être développée pour personnaliser votre rapport. Sélectionnez les compteurs à partir desquels vous souhaitez comparer les deux séries de tests sélectionnées dans le rapport et cliquez sur **Terminer**.
+8. Dans la page **Sélectionner les compteurs pour votre rapport**, sous **Sélectionner un ou plusieurs compteurs à ajouter à ce rapport**, vous disposez d’une liste de compteurs pouvant être développée pour personnaliser votre rapport. Sélectionnez les compteurs à partir desquels vous souhaitez comparer les deux séries de tests sélectionnées dans le rapport et cliquez sur **Terminer**.
 
 9. Le rapport du classeur Excel est créé avec les onglets de feuille de calcul suivants :
 
-    -   **Table des matières** - Affiche le nom du rapport du test de charge et propose une table des matières comportant des liens vers les différents onglets du rapport.
+   - **Table des matières** - Affiche le nom du rapport du test de charge et propose une table des matières comportant des liens vers les différents onglets du rapport.
 
-    -   **Séries** - Donne des détails sur les deux séries comparées dans le rapport.
+   - **Séries** - Donne des détails sur les deux séries comparées dans le rapport.
 
-    -   **Comparaison de tests** - Donne des détails sous forme d’histogramme sur les améliorations et les régressions des performances entre les deux séries faisant l’objet d’une comparaison.
+   - **Comparaison de tests** - Donne des détails sous forme d’histogramme sur les améliorations et les régressions des performances entre les deux séries faisant l’objet d’une comparaison.
 
-    -   **Comparaison de pages** - Propose des données de comparaison de performances sous forme d’histogramme et de pourcentage entre les deux séries sur les différentes pages figurant dans les séries de tests.
+   - **Comparaison de pages** - Propose des données de comparaison de performances sous forme d’histogramme et de pourcentage entre les deux séries sur les différentes pages figurant dans les séries de tests.
 
-    -   **Comparaison d’ordinateurs** - Propose des données de comparaison entre les deux séries sur la base des ordinateurs utilisés.
+   - **Comparaison d’ordinateurs** - Propose des données de comparaison entre les deux séries sur la base des ordinateurs utilisés.
 
-    -   **Comparaison d’erreurs** - Compare les types d’erreurs rencontrés entre les deux séries et indique le nombre d’occurrences.
+   - **Comparaison d’erreurs** - Compare les types d’erreurs rencontrés entre les deux séries et indique le nombre d’occurrences.
 
-    > [!TIP]
-    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
+     > [!TIP]
+     > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Pour créer des rapports de tendance de tests de charge à l'aide d'Excel
 
-1.  Avant de créer un rapport, vous devez exécuter un test de charge.
+1. Avant de créer un rapport, vous devez exécuter un test de charge.
 
-2.  Vous pouvez créer les rapports de tests de charge Excel de deux façons :
+2. Vous pouvez créer les rapports de tests de charge Excel de deux façons :
 
-    1.  Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
+   - Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
-        > [!NOTE]
-        > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
+      > [!NOTE]
+      > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
 
-     Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
+      Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
 
-     - ou -
+   **OU**
 
-    1.  Ouvrez Microsoft Excel, sélectionnez l’onglet **Test de charge** dans le ruban **Office**, puis choisissez **Rapport de test de charge**.
+   1. Ouvrez Microsoft Excel, sélectionnez l’onglet **Test de charge** dans le ruban **Office**, puis choisissez **Rapport de test de charge**.
 
-         **L’Assistant Générer un rapport de test de charge** s’affiche.
+       **L’Assistant Générer un rapport de test de charge** s’affiche.
 
-    2.  Dans la page **Sélectionner la base de données contenant les tests de charge**, sous **Nom du serveur**, tapez le nom du serveur contenant les résultats du test de charge.
+   2. Dans la page **Sélectionner la base de données contenant les tests de charge**, sous **Nom du serveur**, tapez le nom du serveur contenant les résultats du test de charge.
 
-    3.  Dans la liste déroulante **Databasename**, sélectionnez la base de données qui contient les résultats du test de charge.
+   3. Dans la liste déroulante **Databasename**, sélectionnez la base de données qui contient les résultats du test de charge.
 
-3.  Dans la page **Comment voulez-vous générer votre rapport ?**, vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
+3. Dans la page **Comment voulez-vous générer votre rapport ?**, vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
 
-4.  Dans la page **Quel type de rapport voulez-vous générer ?**, vérifiez que **Tendance** est sélectionné et choisissez **Suivant**.
+4. Dans la page **Quel type de rapport voulez-vous générer ?**, vérifiez que **Tendance** est sélectionné et choisissez **Suivant**.
 
-5.  Dans la page **Entrer le détail du rapport de test de charge**, attribuez un nom à votre rapport dans **Nom du rapport**.
+5. Dans la page **Entrer le détail du rapport de test de charge**, attribuez un nom à votre rapport dans **Nom du rapport**.
 
-6.  Sélectionnez le test de charge dont vous souhaitez créer le rapport, puis sélectionnez **Suivant**.
+6. Sélectionnez le test de charge dont vous souhaitez créer le rapport, puis sélectionnez **Suivant**.
 
-7.  Dans la page **Sélectionner les séries pour votre rapport**, sous **Sélectionner une ou plusieurs séries à ajouter à ce rapport**, sélectionnez deux résultats de test de charge que vous souhaitez comparer dans le rapport et choisissez **Suivant**.
+7. Dans la page **Sélectionner les séries pour votre rapport**, sous **Sélectionner une ou plusieurs séries à ajouter à ce rapport**, sélectionnez deux résultats de test de charge que vous souhaitez comparer dans le rapport et choisissez **Suivant**.
 
-8.  Dans la page **Sélectionner les compteurs pour votre rapport**, sous **Sélectionner un ou plusieurs compteurs à ajouter à ce rapport**, vous disposez d’une liste de compteurs pouvant être développée pour personnaliser votre rapport. Sélectionnez les compteurs que vous souhaitez comparer en vue d’effectuer une analyse de tendances et choisissez **Terminer**.
+8. Dans la page **Sélectionner les compteurs pour votre rapport**, sous **Sélectionner un ou plusieurs compteurs à ajouter à ce rapport**, vous disposez d’une liste de compteurs pouvant être développée pour personnaliser votre rapport. Sélectionnez les compteurs que vous souhaitez comparer en vue d’effectuer une analyse de tendances et choisissez **Terminer**.
 
-10. Le rapport est créé avec une table des matières qui propose des liens vers les différents onglets du classeur Excel générés dans le rapport. Les liens reposent sur les compteurs sélectionnés pour le rapport de tendance. Par exemple, si vous avez laissé les compteurs par défaut sélectionnés au cours de l'étape 7, le rapport générera alors des données présentées dans des onglets séparés dans Excel, pour chaque compteur répertorié au cours de l'étape 7. Les données générées pour chaque compteur sont présentées sous forme de graphiques tendanciels.
+9. Le rapport est créé avec une table des matières qui propose des liens vers les différents onglets du classeur Excel générés dans le rapport. Les liens reposent sur les compteurs sélectionnés pour le rapport de tendance. Par exemple, si vous avez laissé les compteurs par défaut sélectionnés au cours de l'étape 7, le rapport générera alors des données présentées dans des onglets séparés dans Excel, pour chaque compteur répertorié au cours de l'étape 7. Les données générées pour chaque compteur sont présentées sous forme de graphiques tendanciels.
 
-    > [!TIP]
-    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
+   > [!TIP]
+   > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
 ## <a name="net-framework-security"></a>sécurité du .NET Framework
 

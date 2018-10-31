@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812658"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
 Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Vous pouvez utiliser les attributs suivants pour spécifier l’ordre d’exécution des cibles :  
   
--   `InitialTargets`. L’attribut `Project` spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.  
+- `InitialTargets`. L’attribut `Project` spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.  
   
--   `DefaultTargets`. Cet attribut `Project` spécifie les cibles qui sont exécutées si aucune cible n’est spécifiée explicitement sur la ligne de commande.  
+- `DefaultTargets`. Cet attribut `Project` spécifie les cibles qui sont exécutées si aucune cible n’est spécifiée explicitement sur la ligne de commande.  
   
--   `DependsOnTargets`. Cet attribut `Target` spécifie les cibles qui doivent s’exécuter avant que cette cible puisse s’exécuter.  
+- `DependsOnTargets`. Cet attribut `Target` spécifie les cibles qui doivent s’exécuter avant que cette cible puisse s’exécuter.  
   
--   Voir `BeforeTargets` et `AfterTargets`. Ces attributs `Target` indiquent que cette cible doit s’exécuter avant ou après les cibles spécifiées (MSBuild 4.0).  
+- Voir `BeforeTargets` et `AfterTargets`. Ces attributs `Target` indiquent que cette cible doit s’exécuter avant ou après les cibles spécifiées (MSBuild 4.0).  
   
- Une cible n’est jamais exécutée deux fois pendant une génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible a été exécutée, sa contribution à la génération est terminée.  
+  Une cible n’est jamais exécutée deux fois pendant une génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible a été exécutée, sa contribution à la génération est terminée.  
   
- Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).  
+  Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Cibles initiales  
  L’attribut `InitialTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`. En règle générale, les cibles initiales sont utilisées pour la vérification des erreurs.  
@@ -56,9 +56,9 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Vous pouvez remplacer les cibles par défaut en utilisant le commutateur **/target** sur la ligne de commande. Dans l’exemple suivant, la cible `Build` est exécutée avant la cible `Report`. Si vous spécifiez des cibles de cette manière, les cibles par défaut sont ignorées.  
+ Vous pouvez remplacer les cibles par défaut avec le commutateur **-target** en ligne de commande. Dans l’exemple suivant, la cible `Build` est exécutée avant la cible `Report`. Si vous spécifiez des cibles de cette manière, les cibles par défaut sont ignorées.  
   
- `msbuild /target:Build;Report`  
+ `msbuild -target:Build;Report`  
   
  Si des cibles initiales et des cibles par défaut sont spécifiées et si aucune cible de ligne de commande n’est indiquée, MSBuild exécute d’abord les cibles initiales, puis les cibles par défaut.  
   
@@ -108,7 +108,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
 1.  Les cibles `InitialTargets` sont exécutées.  
   
-2.  Les cibles spécifiées sur la ligne de commande par le commutateur **/target** sont exécutées. Si vous n’indiquez aucune cible sur la ligne de commande, les cibles `DefaultTargets` sont alors exécutées. En l’absence de ces cibles, la première cible rencontrée est exécutée.  
+2.  Les cibles spécifiées en ligne de commande par le commutateur **-target** sont exécutées. Si vous n’indiquez aucune cible sur la ligne de commande, les cibles `DefaultTargets` sont alors exécutées. En l’absence de ces cibles, la première cible rencontrée est exécutée.  
   
 3.  L’attribut `Condition` de la cible est évalué. Si l’attribut `Condition` est indiqué et défini sur la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération.
 

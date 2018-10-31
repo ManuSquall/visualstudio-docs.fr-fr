@@ -1,7 +1,7 @@
 ---
 title: Débogage du code Python
 description: Procédure pas à pas des fonctionnalités de débogage de code Python dans Visual Studio, y compris la définition des points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627142"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101158"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -25,7 +25,6 @@ Visual Studio offre une expérience de débogage complète pour Python, comprena
 Consultez également les articles ci-après concernant le débogage propre à un scénario :
 
 - [Débogage à distance Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Débogage à distance Azure](debugging-remote-python-code-on-azure.md)
 - [Débogage Python/C++ en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symboles de débogage en mode mixte](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
@@ -227,9 +226,45 @@ Pour gérer votre installation de ptvsd :
 
 1. Si la version est inférieure à 4.1.1a9 (la version groupée avec Visual Studio), sélectionnez le **X** à droite du package pour désinstaller l’ancienne version. Visual Studio utilise alors sa version groupée. (Vous pouvez également la désinstaller à l’aide de PowerShell via `pip uninstall ptvsd`.)
 
-1. Vous pouvez également mettre à jour le package ptvsd vers sa version la plus récente. Entrez `ptvsd --upgrade -pre` dans la zone de recherche, puis sélectionnez **Exécuter la commande : pip install ptvsd --upgrade -pre**. (Vous pouvez également utiliser la même commande à partir de PowerShell.)
+1. Autre possibilité : vous pouvez mettre à jour le package ptvsd (dernière version) en suivant les instructions de la section [Résolution des problèmes](#troubleshooting).
 
-    ![Commande de mise à niveau dans la fenêtre Environnements Python](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Résolution des problèmes
+
+Si vous rencontrez des problèmes avec le débogueur, commencez par mettre à niveau votre version de ptvsd :
+
+1. Accédez à l’onglet **Packages** de la fenêtre **Environnements Python**.
+
+1. Entrez `ptvsd --upgrade` dans la zone de recherche, puis sélectionnez **Exécuter la commande : pip install ptvsd --upgrade**. (Vous pouvez également utiliser la même commande à partir de PowerShell.)
+
+    ![Commande de mise à niveau ptvsd dans la fenêtre Environnements Python](media/debugging-experimental-upgrade-ptvsd.png)
+
+Si les problèmes persistent, signalez-les dans le [référentiel GitHub PTVS](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Activer la journalisation du débogueur
+
+Au cours d’une enquête sur un problème de débogueur, Microsoft est susceptible de vous demander d’activer et de recueillir les journaux de débogage, qui facilitent le diagnostic.
+
+Les étapes suivantes permettent le débogage dans la session active de Visual Studio :
+
+1. Ouvrez une Fenêtre Commande dans Visual Studio avec la commande de menu **Affichage** > **Autres fenêtres** > **Fenêtre Commande**.
+
+1. Entrez la commande suivante :
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Commencez le débogage et suivez toutes les étapes nécessaires pour reproduire votre problème. Pendant ce temps, les journaux de débogage s’affichent dans la Fenêtre **Sortie** sous **Journaux de l’hôte d’adaptateur de débogage**. Vous pouvez alors copier les journaux de cette fenêtre et les coller dans un problème GitHub, un e-mail, etc.
+
+    ![Sortie de la journalisation du débogueur dans la Fenêtre Sortie](media/debugger-logging-output.png)
+
+1. Si Visual Studio se bloque ou que vous ne parvenez pas à accéder à la Fenêtre **Sortie**, redémarrez Visual Studio, ouvrez une Fenêtre Commande et entrez la commande suivante :
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Commencez le débogage et reproduisez votre problème. Les journaux du débogueur se trouvent dans `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Voir aussi
 

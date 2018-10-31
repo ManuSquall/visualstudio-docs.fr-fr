@@ -9,12 +9,12 @@ description: Découvrez l’abonnement DataCamp Training inclus dans certains ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863905"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -27,15 +27,15 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette de l’avantage DataCamp dans la catégorie « Développement professionnel », puis cliquez sur **Activer**.
-    > [!div class="mx-imgBorder"]
-    > ![Vignette de l’avantage DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Vignette de l’avantage DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. Dans la page DataCamp, vous pouvez créer un compte.  Vous pouvez choisir d’entrer une adresse e-mail et un mot de passe, ou de vous connecter avec des comptes Facebook, LinkedIn ou Google existants.  Une fois que vous avez fourni vos informations de connexion, cliquez sur **Get Started** (Démarrer).
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp : Créer un compte](_img\vs-datacamp\vs-datacamp-create-account.png)
-
-    > [!NOTE]
-    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp : Créer un compte](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
 
 4. Une fois que votre compte a été créé, vous pouvez choisir un parcours d’apprentissage.  Les options sont les suivantes :
     - Apprentissage de R pour la science des données
@@ -43,28 +43,30 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
     - Développer vos compétences en science des données
 
 
-    Cliquez simplement sur le parcours de votre choix pour commencer.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp, Choisir un parcours](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
+Just click on your chosen path to get started.
+> [!div class="mx-imgBorder"]
+> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
 
 5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **I am not sure.  Show me all career paths** (Je ne suis pas sûr. Montrez-moi tous les parcours professionnels.) pour créer un parcours plus étendu.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp, Compétences en science des données](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp, Compétences en science des données](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Selon le parcours et les options que vous avez sélectionnés, vous voyez une sélection de parcours professionnels.  Cliquez sur le bouton **Enroll** (Inscription) pour le parcours de votre choix.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp, Parcours professionnel](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp, Parcours professionnel](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. Une fois que vous êtes inscrit à votre parcours, le premier cours de celui-ci s’ouvre.  Vous voyez un didacticiel expliquant comment interagir avec le cours, notamment la navigation et la réalisation des exercices du cours.
 
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp, Prise en main](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp, Prise en main](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine session.  Accédez à [http://www.datacamp.com](http://www.datacamp.com), puis connectez-vous.  Vous voyez votre tableau de bord et vous pouvez reprendre votre formation là où vous l’avez interrompue. Cliquez simplement sur **Continue Track** (Continuer le parcours).
 
 > [!div class="mx-imgBorder"]   
-> ![DataCamp : Continuer la formation](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Éligibilité
 
@@ -80,7 +82,7 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 
 
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, MVP (Microsoft Valued Partner), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup> *Inclut : NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine.*
 
 
 

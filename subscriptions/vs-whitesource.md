@@ -9,12 +9,12 @@ description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus d
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935774"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -22,49 +22,51 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 
 ## <a name="activation-steps"></a>Étapes d’activation
 
-1.  Pour activer votre avantage WhiteSource Bolt, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Pour activer votre avantage WhiteSource Bolt, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Recherchez la vignette WhiteSource Bolt dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.
-    > [!div class="mx-imgBorder"]
-    > ![Vignette de l’avantage WhiteSource](_img\vs-whitesource\vs-whitesource-tile.png)
+2. Recherchez la vignette WhiteSource Bolt dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.
+   > [!div class="mx-imgBorder"]
+   > ![Vignette de l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-tile.png)
 
-2.  Vous recevez une notification contenant votre code d’activation.  **Copiez le code dans votre Presse-papiers**, puis cliquez sur **Activer**.
-    > [!div class="mx-imgBorder"]
-    > ![Code de l’avantage WhiteSource](_img\vs-whitesource\vs-whitesource-code.png)
+3. Vous recevez une notification contenant votre code d’activation.  **Copiez le code dans votre Presse-papiers**, puis cliquez sur **Activer**.
+   > [!div class="mx-imgBorder"]
+   > ![Code de l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-code.png)
 
-3.  Dans la page web WhiteSource, cliquez sur le bouton **Activer** ou faites défiler la page jusqu’à la section **Activer votre compte**.
-    > [!div class="mx-imgBorder"]
-    > ![Activer l’avantage WhiteSource](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+4. Dans la page web WhiteSource, cliquez sur le bouton **Activer** ou faites défiler la page jusqu’à la section **Activer votre compte**.
+   > [!div class="mx-imgBorder"]
+   > ![Activer l’avantage WhiteSource](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-4.  Dans la section **Activer votre compte** de la page, vous êtes guidé pas à pas pour effectuer quatre étapes :
+5. Dans la section **Activer votre compte** de la page, vous êtes guidé pas à pas pour effectuer quatre étapes :
 
-    - [Installez](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) l’extension WhiteSource Bolt à partir de Microsoft Visual Studio Marketplace. Si vous n’êtes pas autorisé à installer des extensions, consultez [Installer des extensions gratuites pour Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
+   - [Installez](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) l’extension WhiteSource Bolt à partir de Microsoft Visual Studio Marketplace. Si vous n’êtes pas autorisé à installer des extensions, consultez [Installer des extensions gratuites pour Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-    Cliquez sur le bouton vert **Installer** si vous utilisez Azure DevOps Services, ou sur le bouton **Télécharger** si vous utilisez Team Foundation Server.  Pour cet exemple, nous allons utiliser Azure DevOps Services.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage WhiteSource, Installer l’extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+~~~
+Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Ensuite, sélectionnez l’organisation Azure DevOps que vous souhaitez utiliser et cliquez sur **Confirmer**.  (Si vous n’avez pas encore configuré Azure DevOps Services, visitez la page [Avantages](https://my.visualstudio.com/benefits) et activez votre avantage Azure DevOps Services.)
+- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
 
-    > [!div class="mx-imgBorder"]
-    > ![Avantage WhiteSource, Confirmer le compte](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - Vous recevez une confirmation indiquant que l’extension est installée et prête à être utilisée.  Cliquez sur **Démarrer** pour revenir à la page WhiteSource Bolt et continuer.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage WhiteSource, Installation effectuée](_img\vs-whitesource\vs-whitesource-install-complete.png)
+- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
+~~~
 
-5.  Ouvrez votre tableau de bord de projet Azure DevOps, cliquez sur le menu **Azure Pipelines** et choisissez **WhiteSource Bolt**.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage WhiteSource, Ajouter l’extension](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+5. Ouvrez votre tableau de bord de projet Azure DevOps, cliquez sur le menu **Azure Pipelines** et choisissez **WhiteSource Bolt**.
+   > [!div class="mx-imgBorder"]
+   > ![Avantage WhiteSource, Ajouter l’extension](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
 6. Collez le code d’activation de la vignette de l’avantage WhiteSource Bolt, puis cliquez sur **Activer**. Chaque code d’activation fourni vous permet d’activer un seul projet.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage WhiteSource, Code d’activation](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![Avantage WhiteSource, Code d’activation](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
-7.  Votre avantage est maintenant activé pour une durée de 180 jours restants dans votre abonnement.
+7. Votre avantage est maintenant activé pour une durée de 180 jours restants dans votre abonnement.
 
-8.  Vous devez ensuite ajouter l’extension WhiteSource Bolt comme l’une de vos étapes de build.  Une vidéo disponible dans la [page WhiteSource Bolt](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) vous montre comment faire.
+8. Vous devez ensuite ajouter l’extension WhiteSource Bolt comme l’une de vos étapes de build.  Une vidéo disponible dans la [page WhiteSource Bolt](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) vous montre comment faire.
 
 9. Une fois que vous avez exécuté votre build, les rapports et tableaux de bord complets suivants sont automatiquement générés :
     - Tableau de bord des failles de sécurité
@@ -84,7 +86,7 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 | Visual Studio Dev Essentials | NA  | Non disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : Microsoft Partner Network (Enterprise).  Exclut : autres NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (Region Director), MCT Software & Services, Microsoft Partner Network (Professional).*
+<sup>1</sup> *Inclut : Microsoft Partner Network (Enterprise).  Exclut : autres NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services, Microsoft Partner Network (Professional).*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

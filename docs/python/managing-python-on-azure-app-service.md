@@ -1,7 +1,7 @@
 ---
-title: Configuration de Python sur Azure App Service
+title: Configurer Python sur Azure App Service (Windows)
 description: Guide pratique pour installer un interpréteur et des bibliothèques Python sur Azure App Service, et pour configurer correctement des applications web faisant référence à cet interpréteur.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468713"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459866"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Comment configurer un environnement Python sur Azure App Service
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Guide pratique pour configurer un environnement Python sur Azure App Service (Windows)
 
 > [!Important]
-> Microsoft prévoit de déprécier les extensions Python pour App Service, comme décrit dans cet article, en faveur d’un déploiement direct sur App Service sur Linux. D’ici là, les extensions demeureront opérationnelles. Pour effectuer un déploiement sur App Service sur Linux, consultez [Déployer une application Web Python dans Web App pour conteneurs](/azure/app-service/containers/quickstart-python).
+> Microsoft déconseille l’utilisation des extensions Python pour App Service sous Windows, comme nous le décrivons dans cet article, en faveur d’un déploiement direct sur [App Service sous Linux](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) est une offre PaaS (Platform-as-a-Service) pour les applications web, qu’il s’agisse de sites accessibles via un navigateur, d’API REST utilisées par vos propres clients ou de traitement déclenché par un événement. App Service prend entièrement en charge l’utilisation de Python pour implémenter des applications.
 

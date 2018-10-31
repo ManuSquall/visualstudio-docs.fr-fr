@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626560"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443582"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -88,11 +88,14 @@ Pour décrire les modificateurs des symboles auxquels vous voulez appliquer la r
 
 La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule.
 
-- abstract ou must_inherit
-- async
-- const
-- readonly
-- static ou shared
+- `abstract` ou `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` ou `shared`
+
+   > [!NOTE]
+   > S’il existe une règle d’affectation des noms pour les symboles `static` ou `shared`, elle est également appliquée aux symboles `const`, car ils sont implicitement statiques. Si vous ne souhaitez pas que la règle d’affectation des noms `static` s’applique aux symboles `const`, créez une règle d’affectation des noms distincte pour les symboles `const`.
 
 `required_modifiers` est une propriété facultative. Si vous omettez cette propriété, votre règle de nommage s’applique à tous les modificateurs.
 
