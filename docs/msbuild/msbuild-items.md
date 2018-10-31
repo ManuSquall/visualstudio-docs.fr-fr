@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204126"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443595"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 Les éléments MSBuild sont des entrées du système de génération qui représentent généralement des fichiers (spécifiés dans l’attribut `Include`). Les éléments sont regroupés en différents types selon leurs noms d’élément. Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération.  
@@ -35,7 +35,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>  
 ```  
   
- L’élément *file2.cs* ne remplace pas l’élément *file1.cs*. Le nom de fichier est ajouté à la liste des valeurs correspondant au type d’élément `Compile`. Vous ne pouvez pas supprimer un élément d’un type d’élément pendant la phase d’évaluation d’une build.  
+ L’élément *file2.cs* ne remplace pas l’élément *file1.cs*. Le nom de fichier est ajouté à la liste des valeurs correspondant au type d’élément `Compile`.
   
  Le code XML suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut `Include`. Notez que les noms de fichiers sont séparés par un point-virgule.  
   
@@ -60,25 +60,26 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
  Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(\<ItemType>, '\<separator>') pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez [Guide pratique pour afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Utiliser des caractères génériques pour spécifier des éléments  
- Vous pouvez utiliser les caractères génériques **, \* et ? pour spécifier un groupe de fichiers comme entrées d’une génération au lieu de répertorier chaque fichier séparément.  
-  
--   Le caractère générique ? correspond à un caractère unique.  
-  
--   Le caractère générique * correspond à zéro ou plusieurs caractères.  
-  
--   La séquence de caractères génériques ** correspond à un chemin d’accès partiel.  
 
-Par exemple, vous pouvez spécifier tous les fichiers *.cs* du répertoire qui contient le fichier projet à l’aide de l’élément ci-dessous contenu dans votre fichier projet.  
+Vous pouvez utiliser les caractères génériques `**`, `*` et `?` pour spécifier un groupe de fichiers comme entrées d’une génération au lieu de répertorier chaque fichier séparément.
+  
+- Le caractère générique `?` correspond à un caractère unique.
+- Le caractère générique `*` correspond à zéro ou plusieurs caractères.
+- La séquence de caractères génériques `**` correspond à un chemin d’accès partiel.
+
+Par exemple, vous pouvez spécifier tous les fichiers `.cs` du répertoire qui contient le fichier projet à l’aide de l’élément ci-dessous contenu dans votre fichier projet.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-L’élément suivant permet de sélectionner tous les fichiers *.vb* sur le lecteur *D:* :  
+L’élément suivant permet de sélectionner tous les fichiers `.vb` sur le lecteur `D:` :
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Si vous souhaitez inclure des caractères `*` ou `?` littéraux dans un élément sans le développement des caractères génériques, vous devez utiliser des [caractères génériques d’échappement](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Pour plus d’informations sur les caractères génériques, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
 
@@ -180,7 +181,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
  Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item. Les attributs de cette section sont valides s’ils sont spécifiés pour un élément d’un `ItemGroup` qui se trouve dans une `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Supprimer l’attribut  
- Les éléments d’un `ItemGroup` d’une cible peuvent contenir l’attribut `Remove`, qui supprime des éléments spécifiques (fichiers) du type d’élément. (Cet attribut a été introduit dans .NET Framework 3.5).  
+ L’attribut `Remove` supprime des éléments spécifiques (fichiers) du type d’élément. Cet attribut a été introduit dans .NET Framework 3.5, mais n’était pris en charge que dans les cibles jusqu’à MSBuild 15.0.
   
  Dans l’exemple suivant, tous les fichiers *.config* sont supprimés du type d’élément Compile.  
   

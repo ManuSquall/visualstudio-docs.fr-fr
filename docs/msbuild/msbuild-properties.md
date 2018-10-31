@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080748"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879188"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour configurer des générations. Elles sont utiles pour transmettre des valeurs aux tâches, évaluer des conditions et stocker les valeurs qui seront référencées dans tout le fichier projet.  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>Propriétés globales  
- MSBuild vous permet de définir des propriétés sur la ligne de commande à l’aide du commutateur **/property** (ou **/p**). Les valeurs de ces propriétés globales remplacent les valeurs de propriétés qui sont définies dans le fichier projet. Cela inclut les propriétés d’environnement, mais pas les propriétés réservées, qui ne peuvent pas être modifiées.  
+ MSBuild vous permet de définir des propriétés sur la ligne de commande à l’aide du commutateur **-property** (ou **-p**). Les valeurs de ces propriétés globales remplacent les valeurs de propriétés qui sont définies dans le fichier projet. Cela inclut les propriétés d’environnement, mais pas les propriétés réservées, qui ne peuvent pas être modifiées.  
   
  L’exemple suivant définit la propriété globale `Configuration` sur `DEBUG`.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  Les propriétés globales peuvent également être définies ou modifiées pour les projets enfants d’une génération multiprojet à l’aide de l’attribut `Properties` de la tâche MSBuild. Des propriétés globales sont également transférées aux projets enfants, sauf si l’attribut `RemoveProperties` de la tâche MSBuild est utilisé pour spécifier la liste des propriétés à ne pas transférer. Pour plus d’informations, consultez l’article [Tâche MSBuild](../msbuild/msbuild-task.md).

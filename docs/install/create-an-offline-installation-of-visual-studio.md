@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028947"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859564"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Créer une installation hors connexion de Visual Studio 2017
 
@@ -60,6 +60,9 @@ Commencez par télécharger le programme d’amorçage de Visual Studio pour l�
 ### <a name="step-2---create-a-local-install-cache"></a>Étape 2 : Créer un cache d’installation local
 
 Vous devez avoir une connexion Internet pour effectuer cette étape.
+
+> [!IMPORTANT]
+> Si vous installez Visual Studio Community 2017, vous devez l’activer dans les 30 jours suivant l’installation. Une connexion Internet est requise.
 
 Ouvrez une invite de commandes et utilisez l’une des commandes des exemples suivants. Les exemples listés ici supposent que vous utilisez l’édition Community de Visual Studio. Changez la commande en fonction de votre édition.
 

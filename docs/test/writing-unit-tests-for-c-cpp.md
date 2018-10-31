@@ -1,20 +1,20 @@
 ---
 title: Écrire des tests unitaires pour C/C++ dans Visual Studio
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341370"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879221"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -31,6 +31,10 @@ Visual Studio inclut ces frameworks de test C++, aucun téléchargement supplém
 - CTest
 
 En plus des frameworks installés, vous pouvez écrire votre propre adaptateur de test pour n’importe quel framework que vous voulez utiliser dans Visual Studio. Un adaptateur de test peut intégrer des tests unitaires à la fenêtre de **l’Explorateur de tests**. Plusieurs adaptateurs de tiers sont disponibles sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 version 15.7 (Professionnel et Entreprise)**
+
+Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017 version 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS et TEST_METHOD font partie du [framework de test natif Microsoft](mic
 TEST_METHOD retourne void. Pour produire un résultat de test, utilisez les méthodes statiques de la classe `Assert` pour tester les résultats réels par rapport à ce qui est attendu. Dans l’exemple suivant, supposons que `MyClass` a un constructeur qui accepte une `std::string`. Nous pouvons tester que le constructeur initialise la classe comme attendu :
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 Dans l’exemple précédent, le résultat de l’appel `Assert::AreEqual` détermine si le test réussit ou échoue. La classe Assert contient de nombreuses autres méthodes pour la comparaison entre des résultats attendus et des résultats réels.
 
 Vous pouvez ajouter des *caractéristiques* aux méthodes de test pour spécifier des propriétaires, la priorité et d’autres informations sur les tests. Vous pouvez ensuite utiliser ces valeurs pour trier et regrouper des tests dans **l’Explorateur de tests**. Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Pour les tests ayant échoué, le message montre des détails qui vous aident à
 Pour plus d’informations sur l’utilisation de **l’Explorateur de tests**, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md).
 
 Pour connaître les bonnes pratiques relatives aux tests unitaires, consultez [Concepts de base des tests unitaires](unit-test-basics.md).
+
+## <a name="use-codelens"></a>Utiliser CodeLens
+
+**Visual Studio 2017 version 15.7 Éditions Professionnel et Entreprise uniquement** : [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
+
+- Modifiez et générez votre projet de test ou solution.
+- Régénérez votre projet ou solution.
+- Exécutez des tests à partir de la fenêtre **Explorateur de tests**.
+
+Une fois que **CodeLens** est initialisé, vous pouvez voir des icônes d’état au-dessus de chaque test unitaire.
+
+![C++ CodeLens - Icônes](media/cpp-test-codelens-icons.png)
+
+ Cliquez sur l’icône pour plus d’informations, ou pour exécuter ou déboguer le test unitaire :
+
+![C++ CodeLens - Exécuter et déboguer](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Voir aussi
 
