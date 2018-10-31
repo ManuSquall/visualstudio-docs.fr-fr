@@ -1,6 +1,6 @@
 ---
-title: Installation de Visual Studio Tools for AI
-description: Installation de Visual Studio Tools for AI
+title: Installer des outils d’intelligence artificielle
+description: Explique comment installer des outils d’intelligence artificielle pour Visual Studio.
 keywords: ia, visual studio
 author: lisawong19
 ms.author: liwong
@@ -12,34 +12,35 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303107"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459762"
 ---
 # <a name="installation"></a>Installation
 
-Visual Studio Tools for AI peut être installé sur les systèmes d’exploitation Windows 64 bits.
+Visual Studio Tools pour IA peut être installé sur les systèmes d’exploitation Windows 64 bits.
 
 ## <a name="install-visual-studio-tools-for-ai"></a>Installer Visual Studio Tools for AI
 
 Cette extension fonctionne avec Visual Studio 2015 et Visual Studio 2017 Community Edition ou version ultérieure.
 
-Pour l’installer, téléchargez-la à partir de [Visual Studio Marketplace](http://aka.ms/vstoolsforai) ou à partir de Visual Studio.
+Vous pouvez télécharger les outils sur [Visual Studio Marketplace](http://aka.ms/vstoolsforai) ou dans Visual Studio :
 
-1. **Outils** > **Extensions et mises à jour**
+1. Sélectionnez **Outils** > **Extensions et mises à jour**.
 
-![installer CUDA sur Windows](media\installation\extensions.png)
+   ![Menu Extensions et mises à jour dans Visual Studio](media/installation/extensions.png)
 
-1. **Recherchez** dans le coin supérieur droit « Tools pour IA »
-2. Sélectionnez **Visual Studio Tools pour IA**
-3. Cliquez sur **Télécharger**
+2. Dans la boîte de dialogue **Extensions et mises à jour**, sélectionnez **En ligne** sur le côté gauche.
+3. Dans la zone de recherche en haut à droite, tapez ou entrez « Tools for AI ».
+4. Sélectionnez **Visual Studio Tools for AI** dans les résultats.
+5. Cliquez sur **Télécharger**.
 
 ## <a name="prepare-your-local-machine"></a>Préparer votre ordinateur local
 
-Avant de former des modèles deep learning sur votre ordinateur local, vous devez vérifier que les composants requis applicables les plus récents sont installés. Cela inclut les derniers pilotes et bibliothèques pour votre GPU NVIDIA (si vous en avez une). Vous devez également vous assurer que vous avez installé Python et les bibliothèques Python, telles que NumPy et SciPy, ainsi que les frameworks deep learning appropriés comme CNTK (Microsoft Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch et/ou Chainer que vous prévoyez d’utiliser dans votre projet.
+Avant d’entraîner des modèles de Deep Learning sur votre ordinateur local, vérifiez que les composants requis applicables sont installés, y compris la dernière version des pilotes et des bibliothèques de votre GPU NVIDIA (si vous en avez un). Veillez également à installer Python et les bibliothèques Python, notamment NumPy et SciPy, ainsi que les frameworks de Deep Learning, comme Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch ou Chainer, que vous prévoyez d’utiliser dans votre projet.
 
 > [!NOTE]
 > La présentation des logiciels dans les sous-sections suivantes provient de leurs pages d’accueil.
@@ -50,9 +51,7 @@ Les frameworks deep learning tirent parti de la GPU NVIDIA pour permettre aux ma
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone) est une plateforme de calcul parallèle et un modèle de programmation inventé par NVIDIA.
-Il permet d’améliorer considérablement les performances de calcul en exploitant la puissance de la GPU.
-Actuellement, CUDA Toolkit 8.0 est requis par les frameworks deep learning.
+[CUDA](https://developer.nvidia.com/cuda-zone) est une plateforme de calcul parallèle et un modèle de programmation inventé par NVIDIA. Il permet d’améliorer considérablement les performances de calcul en exploitant la puissance de la GPU. Actuellement, CUDA Toolkit 8.0 est requis par les frameworks deep learning.
 
 Pour installer CUDA
 
@@ -60,7 +59,7 @@ Pour installer CUDA
 - Veillez à installer les bibliothèques runtime CUDA, puis ajoutez le chemin binaire CUDA à la variable d’environnement %PATH% ou $Path.
 - Sous Windows, ce chemin est « C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin » par défaut.
 
-![installer CUDA sur Windows](media\installation\install_cuda_win.png)
+![Installer CUDA sous Windows](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -86,7 +85,7 @@ Python a représenté le langage de programmation principal pour les application
 
 Les frameworks deep learning s’appuient sur pip pour leur propre installation.
 
-![installer Python sous Windows](media\installation\install_python_win.png)
+![Installer Python sous Windows](media/installation/install_python_win.png)
 
 Ensuite, nous devons vérifier si Python 3.5 est installé correctement, et mettre à niveau pip vers la dernière version en exécutant les commandes suivantes dans un terminal :
 

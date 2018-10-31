@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892998"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219794"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
 2.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.  
   
-     Le **Configuration de Source de données**Assistant s’ouvre.  
+     Le **Configuration de Source de données** Assistant s’ouvre.  
   
 3.  Sur le **choisir un Type de Source de données** page, sélectionnez **base de données**, puis cliquez sur **suivant**.  
   
@@ -122,7 +122,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
 2.  Dans le concepteur, cliquez sur le **Fill,GetData()** de requête et sélectionnez **configurer**.  
   
-     Le **Configuration de TableAdapter**Assistant s’ouvre.  
+     Le **Configuration de TableAdapter** Assistant s’ouvre.  
   
 3.  Dans le **Entrez une instruction SQL** , ajoutez la clause WHERE suivante après la `SELECT` instruction dans la zone de texte.  
   

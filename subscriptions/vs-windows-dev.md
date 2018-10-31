@@ -9,12 +9,12 @@ description: Découvrez le compte de développeur Windows inclus dans votre abon
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832405"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 
@@ -29,27 +29,28 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette du compte de développeur Windows dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.  Copiez le code dans votre Presse-papiers, puis cliquez sur **Activer**.
-    > [!div class="mx-imgBorder"]
-    > ![Vignette de l’avantage Compte de développeur Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Vignette de l’avantage Compte de développeur Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-2. Sur le site [https://developer.microsoft.com](https://developer.microsoft.com), vous pouvez commencer le processus d’inscription.  Cliquez sur **S’inscrire** pour continuer.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Compte de développeur Windows, Inscription](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+3. Sur le site [https://developer.microsoft.com](https://developer.microsoft.com), vous pouvez commencer le processus d’inscription.  Cliquez sur **S’inscrire** pour continuer.
+   > [!div class="mx-imgBorder"]
+   > ![Avantage Compte de développeur Windows, Inscription](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
-3. Connectez-vous à votre abonnement.  Si vous avez plusieurs comptes, choisissez celui qui est associé à votre abonnement Enterprise.
-4. Dans la page suivante, sélectionnez le pays ou la région où vous vivez ou bien où se trouve votre entreprise, puis cliquez sur **Suivant**.
-5. Sélectionnez **Individuel** comme type de compte.
-6. Créez votre nom d’affichage d’éditeur.  Ce nom unique sera associé à l’ensemble de vos applications, services et compléments présentés aux utilisateurs.
-7. Entrez vos coordonnées et la langue par défaut de vos e-mails, puis cliquez sur **Suivant**.
-8. Vous pouvez être invité à vérifier votre mot de passe.  Entrez-le, puis cliquez sur **Se connecter**.
-9. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Suivant**.
+4. Connectez-vous à votre abonnement.  Si vous avez plusieurs comptes, choisissez celui qui est associé à votre abonnement Enterprise.
+5. Dans la page suivante, sélectionnez le pays ou la région où vous vivez ou bien où se trouve votre entreprise, puis cliquez sur **Suivant**.
+6. Sélectionnez **Individuel** comme type de compte.
+7. Créez votre nom d’affichage d’éditeur.  Ce nom unique sera associé à l’ensemble de vos applications, services et compléments présentés aux utilisateurs.
+8. Entrez vos coordonnées et la langue par défaut de vos e-mails, puis cliquez sur **Suivant**.
+9. Vous pouvez être invité à vérifier votre mot de passe.  Entrez-le, puis cliquez sur **Se connecter**.
+10. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Suivant**.
     > [!div class="mx-imgBorder"]
-    > ![Avantage Compte de développeur Windows, Inscription](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > ![Avantage Compte de développeur Windows, Inscription](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-10. Vérifiez les informations de votre compte et lisez le Contrat du développeur d’applications, puis cochez la case pour indiquer que vous acceptez les conditions générales.  Cliquez ensuite sur **Terminer**.
-11. Cliquez sur **Accéder au tableau de bord** pour commencer à utiliser votre compte de développeur Windows !
+11. Vérifiez les informations de votre compte et lisez le Contrat du développeur d’applications, puis cochez la case pour indiquer que vous acceptez les conditions générales.  Cliquez ensuite sur **Terminer**.
+12. Cliquez sur **Accéder au tableau de bord** pour commencer à utiliser votre compte de développeur Windows !
 
 ## <a name="eligibility"></a>Éligibilité
+
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Included       |  Oui|
@@ -59,7 +60,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Visual Studio Dev Essentials | NA  | Non disponible                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclut : MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Partner), RD (Region Director), MCT Software & Services.*
+<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclut : MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services.*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837085"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests
 
@@ -33,33 +33,33 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pour exécuter des tests unitaires à l’aide de l’Explorateur de tests
 
-1.  Créez des tests unitaires qui utilisent les frameworks de test de votre choix.
+1. Créez des tests unitaires qui utilisent les frameworks de test de votre choix.
 
-     Par exemple, pour créer un test qui utilise le framework MSTest :
+    Par exemple, pour créer un test qui utilise le framework MSTest :
 
-    1.  Créez un projet de test.
+   1.  Créez un projet de test.
 
-         Dans la boîte de dialogue **Nouveau projet**, développez **Visual Basic** > **Visual C#** ou **Visual C++**, puis choisissez **Test**.
+        Dans la boîte de dialogue **Nouveau projet**, développez **Visual Basic**, **Visual C#** ou **Visual C++**, puis sélectionnez **Test**.
 
-         Sélectionnez **Projet de test unitaire**.
+        Sélectionnez **Projet de test unitaire**.
 
-    2.  Écrivez chaque test unitaire sous forme de méthode. Ajoutez devant chaque méthode de test l'attribut `[TestMethod]` .
+   2.  Écrivez chaque test unitaire sous forme de méthode. Ajoutez devant chaque méthode de test l'attribut `[TestMethod]` .
 
-2.  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+2. Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
-3.  Dans la barre de menus, sélectionnez **Test** > **Exécuter les tests unitaires** > **Tous les tests**.
+3. Dans la barre de menus, sélectionnez **Test** > **Exécuter les tests unitaires** > **Tous les tests**.
 
-     La solution se génère et les tests s'exécutent.
+    La solution se génère et les tests s'exécutent.
 
-     L'Explorateur de tests ouvre et affiche un résumé des résultats.
+    L'Explorateur de tests ouvre et affiche un résumé des résultats.
 
- **Pour afficher une liste complète des tests :** Choisissez **Afficher tout** dans une catégorie.
+   **Pour afficher une liste complète des tests :** Choisissez **Afficher tout** dans une catégorie.
 
- **Pour afficher les détails d'un résultat de test :** Sélectionnez le test dans l'Explorateur de tests pour afficher des détails tels que les messages d'exception dans le volet d'informations.
+   **Pour afficher les détails d'un résultat de test :** Sélectionnez le test dans l'Explorateur de tests pour afficher des détails tels que les messages d'exception dans le volet d'informations.
 
- **Pour accéder au code d'un test :** Double-cliquez sur le test dans l'Explorateur de tests ou choisissez **Ouvrir un test** dans le menu contextuel.
+   **Pour accéder au code d'un test :** Double-cliquez sur le test dans l'Explorateur de tests ou choisissez **Ouvrir un test** dans le menu contextuel.
 
- **Pour déboguer un test :** Ouvrez le menu contextuel d'un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.
+   **Pour déboguer un test :** Ouvrez le menu contextuel d'un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.
 
 > [!IMPORTANT]
 > Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.
@@ -74,61 +74,61 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 ### <a name="create-the-test-and-method"></a>Créer le test et la méthode
 
-1.  Créez un projet de bibliothèque de classes Visual C#. Ce projet contiendra le code que nous voulons fournir. Dans cet exemple, cela est nommé `MyMath`.
+1. Créez un projet de bibliothèque de classes Visual C#. Ce projet contiendra le code que nous voulons fournir. Dans cet exemple, cela est nommé `MyMath`.
 
-2.  Créez un projet de test.
+2. Créez un projet de test.
 
-    -   Dans la boîte de dialogue **Nouveau projet**, choisissez **Visual C#** > **Test**, puis **Projet de test unitaire**.
+   -   Dans la boîte de dialogue **Nouveau projet**, choisissez **Visual C#** > **Test**, puis **Projet de test unitaire**.
 
-         ![Nouveaux codes et projets de test](../test/media/unittestexplorerwalk1.png)
+        ![Nouveaux codes et projets de test](../test/media/unittestexplorerwalk1.png)
 
-3.  Écrivez une méthode de test de base. Vérifiez le résultat obtenu pour une entrée spécifique :
+3. Écrivez une méthode de test de base. Vérifiez le résultat obtenu pour une entrée spécifique :
 
-    ```csharp
+   ```csharp
 
-    [TestMethod]
-    public void BasicRooterTest()
-    {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Define a test input and output value:
-      double expectedResult = 2.0;
-      double input = expectedResult * expectedResult;
-      // Run the method under test:
-      double actualResult = rooter.SquareRoot(input);
-      // Verify the result:
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 100);
-    }
-    ```
+   [TestMethod]
+   public void BasicRooterTest()
+   {
+     // Create an instance to test:
+     Rooter rooter = new Rooter();
+     // Define a test input and output value:
+     double expectedResult = 2.0;
+     double input = expectedResult * expectedResult;
+     // Run the method under test:
+     double actualResult = rooter.SquareRoot(input);
+     // Verify the result:
+     Assert.AreEqual(expectedResult, actualResult,
+         delta: expectedResult / 100);
+   }
+   ```
 
-4.  Générez la méthode à partir du test.
+4. Générez la méthode à partir du test.
 
-    1.  Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer** > **Nouveau type**.
+   1.  Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer** > **Nouveau type**.
 
-    2.  Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.
+   2.  Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.
 
-    3.  Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer** > **Stub de méthode**.
+   3.  Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer** > **Stub de méthode**.
 
-5.  Exécutez le test unitaire.
+5. Exécutez le test unitaire.
 
-    1.  Dans le menu **Test**, choisissez **Exécuter les tests unitaires** > **Tous les tests**.
+   1.  Dans le menu **Test**, choisissez **Exécuter les tests unitaires** > **Tous les tests**.
 
-         La solution se génère et s'exécute.
+        La solution se génère et s'exécute.
 
-         L'Explorateur de tests ouvre et affiche les résultats.
+        L'Explorateur de tests ouvre et affiche les résultats.
 
-         Le test s'affiche sous **Échec de tests**.
+        Le test s'affiche sous **Échec de tests**.
 
-6.  Sélectionnez le nom du test.
+6. Sélectionnez le nom du test.
 
-     Les détails du test s'affichent dans la partie inférieure de l'Explorateur de tests.
+    Les détails du test s'affichent dans la partie inférieure de l'Explorateur de tests.
 
-7.  Sélectionnez les éléments sous **Trace de la pile** pour voir où le test a échoué.
+7. Sélectionnez les éléments sous **Trace de la pile** pour voir où le test a échoué.
 
- ![Explorateur de tests unitaires indiquant un échec de test.](../test/media/unittestexplorerwalkthrough2.png)
+   ![Explorateur de tests unitaires indiquant un échec de test.](../test/media/unittestexplorerwalkthrough2.png)
 
- À ce stade, vous avez créé un test et un stub que vous avez modifié afin que le test réussisse.
+   À ce stade, vous avez créé un test et un stub que vous avez modifié afin que le test réussisse.
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Après chaque modification, faites en sorte que tous les tests réussissent
 

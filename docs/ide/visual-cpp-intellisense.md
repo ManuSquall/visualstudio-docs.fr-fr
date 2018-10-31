@@ -1,26 +1,34 @@
 ---
 title: IntelliSense pour C++
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124903"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879848"
 ---
 # <a name="visual-c-intellisense-features"></a>Fonctionnalités IntelliSense pour Visual C++
 
 IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers *.cpp* et *.c* du projet de code partagé, même quand vous êtes dans un contexte Android ou iOS.
 
-Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués dans l’image suivante pour accéder à IntelliSense :
+Cet article présente une vue d’ensemble des fonctionnalités IntelliSense C++. Pour plus d’informations sur la configuration des projets pour IntelliSense et la résolution des problèmes, voir [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md).
+
+## <a name="intellisense-features-in-c"></a>Fonctionnalités IntelliSense en C++
+
+IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
+
+![Boîte de dialogue Options d’outil](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués dans l'image suivante pour accéder à IntelliSense.
 
 ![Menu IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -32,7 +40,7 @@ Pour obtenir la liste des icônes et leurs significations, consultez [Affichage 
 
 ![Fenêtre Compléter le mot de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Au premier appel de la liste des membres, elle montre seulement les membres qui sont accessibles pour le contexte actuel. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Répertorier automatiquement les membres**.
+Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Répertorier automatiquement les membres**.
 
 ![Liste de membres Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
@@ -100,4 +108,5 @@ Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoire
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser IntelliSense](../ide/using-intellisense.md)
+- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md)

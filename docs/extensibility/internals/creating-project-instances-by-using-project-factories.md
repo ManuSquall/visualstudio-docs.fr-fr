@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833991"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219495"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Créer des instances de projet à l’aide de fabriques de projet
 Types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliser un *fabrique de projet* pour créer des instances d’objets du projet. Une fabrique de projet est similaire à une fabrique de classe standard pour les objets COM cocreatable. Toutefois, les objets du projet ne sont pas cocreatable ; ils peuvent uniquement être créés à l’aide d’une fabrique de projet.  
@@ -27,8 +27,6 @@ Types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
  Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE appelle la fabrique de projets implémentée dans votre VSPackage lorsqu’un utilisateur charge un projet existant ou crée un nouveau projet dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Le nouvel objet de projet fournit l’IDE avec suffisamment d’informations pour remplir **l’Explorateur de solutions**. Le nouvel objet de projet fournit également les interfaces requises pour prendre en charge toutes les actions d’interface utilisateur pertinentes initiées par l’IDE.  
   
  Vous pouvez implémenter la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface dans une classe dans votre projet. En règle générale, il se trouve dans son propre module.  
-  
- Pour obtenir un exemple d’implémentation de la `IVsProjectFactory` l’interface, consultez *PrjFac.cpp*, qui est contenu dans le [projet de base](https://www.microsoft.com/download/details.aspx?id=55984) répertoire d’exemple.  
   
  Les projets qui prennent en charge l’agrégation par un propriétaire doivent conserver une clé de propriétaire dans leur fichier projet. Lorsque le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> méthode est appelée sur un projet avec une clé de propriétaire, le projet détenu convertit sa clé de propriétaire à une fabrique de projet GUID appelle ensuite la `CreateProject` méthode sur cette fabrique de projet pour effectuer la création réelle.  
   

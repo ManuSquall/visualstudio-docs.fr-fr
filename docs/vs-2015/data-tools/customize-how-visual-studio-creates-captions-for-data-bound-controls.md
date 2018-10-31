@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195609"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220177"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de 
   
 10. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionSuffix`.  
   
-11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez**modifier**.  
+11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez **modifier**.  
   
 12. Entrez l’expression régulière que vous souhaitez que le **des Sources de données** fenêtre à utiliser.  
   
-13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez**modifier**.  
+13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez **modifier**.  
   
 14. Entrez le remplacement de la chaîne mise en forme comme vous le souhaitez afficher les modèles mis en correspondance dans votre expression régulière.  
   
-15. Cliquez sur le **SmartCaptionSuffix** d’élément, puis sélectionnez**modifier**.  
+15. Cliquez sur le **SmartCaptionSuffix** d’élément, puis sélectionnez **modifier**.  
   
 16. Entrez les caractères que vous souhaitez voir apparaître à la fin de la légende.  
   
@@ -119,11 +119,11 @@ Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de 
   
 10. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionSuffix`.  
   
-11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez**modifier**.  
+11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez **modifier**.  
   
 12. Entrez `(.*)` pour la valeur. Il correspond à la chaîne entière.  
   
-13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez**modifier**.  
+13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez **modifier**.  
   
 14. Entrez `$1` pour la valeur. Cela remplace la chaîne avec la valeur mise en correspondance, ce qui est la chaîne entière afin qu’elle reste inchangée.  
   

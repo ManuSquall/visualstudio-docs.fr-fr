@@ -9,12 +9,12 @@ description: Découvrez l’avantage Support prioritaire inclus dans les abonnem
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866738"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Support prioritaire dans les abonnements Visual Studio
 
@@ -37,10 +37,10 @@ Les abonnés avec certains abonnements Visual Studio sont éligibles à un suppo
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Services cloud (rôles Web et Worker)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
-   - [Stockage Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
+   - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
 
    - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
 
@@ -229,6 +229,7 @@ Les abonnés avec certains abonnements Visual Studio sont éligibles à un suppo
 
 
 ## <a name="eligibility"></a>Éligibilité
+
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Included       |  Oui          |
@@ -238,7 +239,7 @@ Les abonnés avec certains abonnements Visual Studio sont éligibles à un suppo
 | Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine.  Exclut : MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Partner), RD (Region Director).*
+<sup>1</sup> *Inclut : NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine.  Exclut : MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Region Director).*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

@@ -9,12 +9,12 @@ description: Découvrez comment tirer parti de l’avantage Azure Advisory Chat 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896001"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -38,14 +38,15 @@ L’utilisation d’Azure Advisory Chat est très simple.
 
 ## <a name="eligibility"></a>Éligibilité
 
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail   | Un an      |  Oui          |
-| Visual Studio Professional (Standard, cloud annuel, cloud mensuel) Visual Studio Enterprise (cloud mensuel, NFR<sup>1</sup>) | Tous                                      | Non disponible                                                            |  Non          |
-| Visual Studio Test Professional (Standard)                         | Tous                                              | Non disponible                                             |  Non          |
-| Plateformes MSDN (Standard)                                          | Tous                                              |Non disponible                                              |  Non          |
-| Visual Studio Dev Essentials                                          | N/A                                              |Non disponible                                              |  Non          |
-<sup>1</sup> *Inclut : NFR (revente interdite), MVP (Microsoft Valued Partner), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT*
+|                                                      Niveau d'abonnement                                                      |     Canaux      |    Avantage    | Renouvelable ? |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise (Standard, cloud annuel)                                       | Licences en volume, Azure, Détail |   Un an    |    Oui     |
+| Visual Studio Professional (Standard, cloud annuel, cloud mensuel) Visual Studio Enterprise (cloud mensuel, NFR<sup>1</sup>) |        Tous        | Non disponible |     Non     |
+|                                          Visual Studio Test Professional (Standard)                                          |        Tous        | Non disponible |     Non     |
+|                                                  Plateformes MSDN (Standard)                                                   |        Tous        | Non disponible |     Non     |
+|                                                 Visual Studio Dev Essentials                                                 |        N/A        | Non disponible |     Non     |
+
+<sup>1</sup> *Inclut : NFR (revente interdite), MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT.*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

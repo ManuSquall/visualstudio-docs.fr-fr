@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915841"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer du contenu local
 
@@ -40,7 +40,7 @@ Pour gérer du contenu sur votre ordinateur local, vous devez vous connecter ave
 
 ## <a name="change-the-content-installation-source"></a>Changer la source d’installation du contenu
 
-Par défaut, la visionneuse d'aide installe le contenu à partir d'un service en ligne Microsoft. En règle générale, vous ne devez pas modifier votre source de contenu, sauf si vous travaillez dans un environnement d'entreprise et qu'un administrateur système a déjà installé du contenu dans un autre emplacement.
+Par défaut, Help Viewer installe le contenu à partir d’un service en ligne Microsoft. En règle générale, vous ne devez pas modifier votre source de contenu, sauf si vous travaillez dans un environnement d'entreprise et qu'un administrateur système a déjà installé du contenu dans un autre emplacement.
 
 ### <a name="to-change-the-content-installation-source"></a>Pour modifier la source d'installation du contenu
 
@@ -110,9 +110,9 @@ La barre d'état indique si des mises à jour de votre contenu installé sont di
 
 ### <a name="to-update-local-content"></a>Pour mettre à jour le contenu local
 
--   En bas à droite de la barre d’état, choisissez le lien **Cliquez ici pour télécharger**.
+- En bas à droite de la barre d’état, choisissez le lien **Cliquez ici pour télécharger**.
 
- La durée de la mise à jour varie, mais vous pouvez observer la progression dans la barre d'état.
+La durée de la mise à jour varie, mais vous pouvez observer la progression dans la barre d'état.
 
 ## <a name="move-local-content"></a>Déplacer du contenu local
 

@@ -1,6 +1,6 @@
 ---
-title: "Comment : activer et désactiver l'analyse du code automatique pour le code managé"
-ms.date: 09/28/2018
+title: Activer ou désactiver l’analyse du code
+ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,22 +9,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3113143b07ccb6f765cd0cf1735b34be6e952c72
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443543"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143396"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse du code automatique pour le code managé
 
-Vous pouvez configurer l’analyse du code à exécuter après chaque génération d’un projet de code managé. Vous pouvez définir des propriétés d’analyse pour chaque configuration de build de code différents, par exemple, debug et release.
+Vous pouvez configurer l’analyse du code (statique) à exécuter après chaque génération d’un projet de code managé. Vous pouvez définir des propriétés d’analyse pour chaque configuration de build de code différents, par exemple, debug et release.
+
+Cet article s’applique à l’analyse du code uniquement comme étant statique et l’analyse du code pas en temps réel à l’aide [analyseurs de code Roslyn](roslyn-analyzers-overview.md).
 
 ## <a name="to-enable-or-disable-automatic-code-analysis"></a>Pour activer ou désactiver l’analyse du code automatique
 
 1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis choisissez **propriétés**.
 
 1. Dans la boîte de dialogue Propriétés du projet, choisissez le **analyse du Code** onglet.
+
+   > [!TIP]
+   > Les types de projet plus récent tels que des applications .NET Core et .NET Standard n’ont pas un **analyse du Code** onglet. Analyse statique du code n’est pas disponible pour ces types de projets, mais vous pouvez toujours obtenir d’analyse du code en temps réel à l’aide [analyseurs de code Roslyn](roslyn-analyzers-overview.md). Pour supprimer les avertissements d’analyseurs de Roslyn de code, consultez la Remarque à la fin de cet article.
 
 1. Spécifiez le type de build dans **Configuration** et la plateforme cible dans **plateforme**.
 

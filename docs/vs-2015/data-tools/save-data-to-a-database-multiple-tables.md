@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234479"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218401"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
   
 2.  Attribuez un nom au projet `UpdateMultipleTablesWalkthrough`.  
   
-3.  Sélectionnez **Windows Application**, puis sélectionnez**OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Le **UpdateMultipleTablesWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.  
   
@@ -81,7 +81,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
   
 2.  Dans le **des Sources de données** fenêtre, sélectionnez**ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.  
   
-3.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**, puis sélectionnez**suivant**.  
+3.  Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.  
   
 4.  Sur le **choisir votre connexion de données**écran, procédez comme suit :  
   
@@ -91,9 +91,9 @@ L'un des scénarios les plus courants dans le développement d'applications cons
   
     -   Sélectionnez **nouvelle connexion** pour ouvrir le **Ajouter/modifier la connexion** boîte de dialogue.  
   
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez**suivant**.  
+5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.  
   
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application**, sélectionnez**suivant**.  
+6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application**, sélectionnez **suivant**.  
   
 7.  Sur le **choisir vos objets de base de données**écran, développez le **Tables** nœud.  
   
@@ -127,7 +127,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
      Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un [OrdersTableAdapter](../data-tools/tableadapter-overview.md) et <xref:System.Windows.Forms.BindingSource> s’affichent dans la barre d’état du composant.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode pour mettre à jour de la base de données  
- Vous pouvez mettre à jour la base de données en appelant le `Update` méthodes de la **clients** et **commandes** TableAdapters. Par défaut, un gestionnaire d’événements pour le**enregistrer** bouton de la<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer des mises à jour dans le bon ordre. Cela élimine le risque de lever des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.  
+ Vous pouvez mettre à jour la base de données en appelant le `Update` méthodes de la **clients** et **commandes** TableAdapters. Par défaut, un gestionnaire d’événements pour le **enregistrer** bouton de la<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer des mises à jour dans le bon ordre. Cela élimine le risque de lever des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.  
   
 > [!NOTE]
 >  Pour plus de clarté, cette procédure pas à pas n’utilise pas une transaction. Toutefois, si vous mettez à jour deux ou plusieurs tables connexes, inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées à une base de données sont réussies avant que toutes les modifications soient validées. Pour plus d’informations, consultez [Transactions et la concurrence](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
   
 #### <a name="to-test-the-application"></a>Pour tester l'application  
   
-1.  Sélectionnez**F5**.  
+1.  Sélectionnez **F5**.  
   
 2.  Apportez quelques modifications aux données d'un ou plusieurs enregistrements dans chaque table.  
   

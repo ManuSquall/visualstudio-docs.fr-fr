@@ -476,7 +476,7 @@ items:
               href: allocation-hooks-and-c-run-time-memory-allocations.md
           - name: Fonctions de raccordement de rapport
             href: report-hook-functions.md
-        - name: Recherche de fuites de mémoire à l’aide de la bibliothèque CRT
+        - name: Rechercher les fuites de mémoire avec la bibliothèque CRT
           href: finding-memory-leaks-using-the-crt-library.md
       - name: Questions fréquentes (FAQ) sur le débogage du code natif
         href: debugging-native-code-faqs.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 96117c4b066013a5581d25abc10f0f08d78de274
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382829"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050376"

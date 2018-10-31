@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour suivre votre code en personnalisant la barre de défilement
-ms.date: 11/04/2016
+title: Mode de barre et mode de mappage pour la barre de défilement
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,52 +9,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745735"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219950"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Guide pratique pour suivre votre code en personnalisant la barre de défilement
+# <a name="how-to-customize-the-scroll-bar"></a>Procédure : Personnaliser la barre de défilement
 
-Quand vous travaillez sur de longs fichiers de code, il peut être difficile de tout garder en tête. Vous pouvez personnaliser la barre de défilement de la fenêtre de code pour avoir une vue générale de ce qui se produit dans votre code.
+Quand vous travaillez sur de longs fichiers de code, il peut être difficile de suivre où tout se trouve dans le fichier. Vous pouvez personnaliser la barre de défilement de l’éditeur de code pour avoir une vue générale de ce qui se produit dans votre code.
 
-## <a name="to-show-annotations-on-the-scroll-bar"></a>Pour afficher les annotations dans la barre de défilement
+## <a name="annotations"></a>Annotations
 
-1. Vous pouvez configurer la barre de défilement pour y afficher les modifications du code, les points d'arrêt, les erreurs et les signets.
+Vous pouvez choisir si la barre de défilement affiche des annotations, telles que les modifications du code, les points d’arrêt, les signets, les erreurs et la position du signe d’insertion.
 
-    Ouvrez la page d’options **Barre de défilement** en choisissant **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** ou un langage spécifique, ou en entrant **barre de défilement** dans la fenêtre **Lancement rapide**.
+   1. Ouvrez la page des options **Barres de défilement** en choisissant **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **Barres de défilement**.
 
-2. Sélectionnez **Afficher les annotations au-dessus de la barre de défilement verticale**, puis sélectionnez les annotations à afficher.
+   2. Sélectionnez **Afficher les annotations au-dessus de la barre de défilement verticale**, puis sélectionnez les annotations à afficher. Les annotations disponibles sont :
 
-    L’option **Marques** inclut les points d’arrêt et les signets.
+      - est modifiée
+      - marques
+      - erreurs
+      - position du signe d’insertion
 
-3. Essayez maintenant. Ouvrez un long fichier de code et remplacez un élément qui se répète à différents endroits dans le fichier. La barre de défilement affiche l'effet de ces remplacements. Vous pouvez ainsi annuler des modifications si vous avez remplacé un élément par erreur.
+      > [!TIP]
+      > L’option **Afficher les marques** inclut les points d’arrêt et les signets.
 
-    Voici à quoi ressemble la barre de défilement après la recherche d'une chaîne. Notez que toutes les instances de la chaîne sont affichées.
+Testez-la en ouvrant un long fichier de code et en remplaçant du texte qui se répète à différents endroits dans le fichier. La barre de défilement affiche l'effet de ces remplacements. Vous pouvez ainsi annuler des modifications si vous avez remplacé un élément par erreur.
 
-    ![Barre de défilement après recherche d’une chaîne.](../ide/media/enhancedscrollbarsearch.png)
+Voici à quoi ressemble la barre de défilement après la recherche d'une chaîne. Notez que toutes les instances de la chaîne sont affichées dans la barre de défilement.
 
-    Voici la barre de défilement après le remplacement de toutes les instances de la chaîne. Vous voyez immédiatement que l'opération a causé quelques problèmes.
+![Barre de défilement Visual Studio après recherche d’une chaîne](../ide/media/enhancedscrollbarsearch.png)
 
-    ![Barre de défilement après remplacement d’une chaîne sans erreurs](../ide/media/enhancedscrollbarreplace.png)
+Voici la barre de défilement après le remplacement de toutes les instances de la chaîne. Les marques rouge dans la barre de défilement montrent où le remplacement de texte a introduit des erreurs.
 
-## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Pour définir le mode d'affichage de la barre de défilement
+![Barre de défilement Visual Studio après remplacement d’une chaîne sans erreurs](../ide/media/enhancedscrollbarreplace.png)
 
-1. La barre de défilement offre deux modes d’affichage : le mode barre (par défaut) et le mode mappage. Le mode barre affiche uniquement les indicateurs d'annotation dans la barre de défilement. En mode mappage, les lignes de code sont représentées dans la barre de défilement. Vous pouvez choisir la largeur des lignes et spécifier si les lignes affichent le code sous-jacent quand vous placez le pointeur dessus. Quand vous cliquez quelque part dans la barre de défilement, le curseur se déplace vers l'emplacement correspondant dans le code. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
+## <a name="display-modes"></a>Modes d’affichage
 
-    Dans la page d’options **Barre de défilement**, sélectionnez **Utiliser le mode barre pour la barre de défilement verticale** ou **Utiliser le mode mappage pour la barre de défilement verticale**. Vous pouvez choisir la largeur de l’affichage dans la liste déroulante **Vue d’ensemble du code source**.
+La barre de défilement offre deux modes : le mode barre et le mode mappage.
 
-    Voici comment se présente l’exemple de recherche avec le mode mappage et une largeur **moyenne** :
+### <a name="bar-mode"></a>Mode barre
 
-    ![Barre de défilement en mode mappage](../ide/media/enhancedscrollbar.png)
+Le *mode barre* affiche les indicateurs d'annotation dans la barre de défilement. En cliquant sur la barre de défilement, la page défile vers le haut ou vers le bas, mais ne va pas à cet emplacement dans le fichier.
 
-2. En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l’option **Afficher l’info-bulle d’aperçu**. Voici le résultat :
+### <a name="map-mode"></a>Mode mappage
 
-    ![Barre de défilement avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png)
+En *mode mappage*, lorsque vous cliquez sur un emplacement dans la barre de défilement, le curseur va à cet emplacement dans le fichier au lieu de faire simplement défiler la page vers le haut ou vers le bas. Les lignes de code sont indiquées, en miniature, dans la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour activer un aperçu plus grand du code lorsque vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
 
-    Pour conserver le mode mappage et l’info-bulle d’aperçu de la barre de défilement, mais pas la vue d’ensemble du code source, définissez **Vue d’ensemble du code source** sur **Désactivé**.
+> [!TIP]
+> Vous pouvez désactiver l’affichage du code miniature en mode mappage en définissant **Vue d’ensemble de la source** sur **Désactivé**. Si l’option **Afficher une info-bulle d’aperçu** est sélectionnée, vous voyez toujours un aperçu du code à cet emplacement lorsque vous placez votre pointeur sur la barre de défilement, et le curseur va toujours à cet emplacement dans le fichier lorsque vous cliquez.
+
+L’image suivante illustre l’exemple de recherche avec le mode mappage et une largeur **moyenne** :
+
+![Barre de défilement Visual Studio en mode mappage](../ide/media/enhancedscrollbar.png)
+
+L’image suivante illustre l’option **Afficher une info-bulle d’aperçu** :
+
+![Barre de défilement Visual Studio avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 ## <a name="see-also"></a>Voir aussi
 

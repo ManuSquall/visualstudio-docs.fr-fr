@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856169"
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
@@ -63,11 +63,11 @@ Ensuite, exécutez le fichier du programme d’amorçage pour installer Visual S
 
 1. Dans votre dossier **Téléchargements**, double-cliquez sur le programme d’amorçage correspondant ou similaire à l’un des fichiers suivants :
 
-  * **vs_enterprise.exe** pour Visual Studio Enterprise
-  * **vs_professional.exe** pour Visual Studio Professional
-  * **vs_community.exe** pour Visual Studio Community  <br><br>
+   * **vs_enterprise.exe** pour Visual Studio Enterprise
+   * **vs_professional.exe** pour Visual Studio Professional
+   * **vs_community.exe** pour Visual Studio Community  <br><br>
 
-  Si vous recevez une notification du contrôle de compte d’utilisateur, cliquez sur **Oui**.
+   Si vous recevez une notification du contrôle de compte d’utilisateur, cliquez sur **Oui**.
 
 2. Vous devez accepter les [Termes du contrat de licence](https://visualstudio.microsoft.com/license-terms/) Microsoft et la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement) Microsoft. Cliquez sur **Continuer**.
 
@@ -79,7 +79,7 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 
 1. Recherchez la charge de travail que vous voulez dans l’écran **Installation de Visual Studio**.
 
- ![Sélectionnez une charge de travail à partir de la boîte de dialogue d’installation de Visual Studio 2017.](../install/media/install-visual-studio-community.png)
+   ![Sélectionnez une charge de travail à partir de la boîte de dialogue d’installation de Visual Studio 2017.](../install/media/install-visual-studio-community.png)
 
      Par exemple, choisissez la charge de travail « Développement .NET Desktop ». Elle comprend l’éditeur principal par défaut, qui inclut une prise en charge de la modification du code de base pour plus de 20 langues, la possibilité d’ouvrir et de modifier le code dans n’importe quel dossier sans projet et un contrôle de code source intégré.
 
@@ -130,15 +130,17 @@ Pour plus d’informations, consultez la page [Changer les emplacements d’inst
 
 ## <a name="step-8---start-developing"></a>Étape 8 : Démarrer le développement
 
-1. Lorsque l’installation de Visual Studio est terminée, cliquez sur le bouton **Lancer** pour [bien démarrer avec le développement Visual Studio](../ide/get-started-developing-with-visual-studio.md).
+1. Une fois l’installation de Visual Studio terminée, cliquez sur le bouton **Lancer** pour commencer le développement avec Visual Studio.
 
 2. Cliquez sur **Fichier**, puis cliquez sur **Nouveau projet**.
 
-3. Sélectionnez un type de projet. <br><br>
-   Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), cliquez sur **Installé**, développez **Visual C++**, puis sélectionnez le type de projet C++ que vous souhaitez générer. <br><br>
+3. Sélectionnez un type de projet.
+
+   Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), cliquez sur **Installé**, développez **Visual C++**, puis sélectionnez le type de projet C++ que vous souhaitez générer.
+
    Pour [créer une application C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), cliquez sur **Installé**, développez **Visual C#**, puis sélectionnez le type de projet C# que vous souhaitez générer.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

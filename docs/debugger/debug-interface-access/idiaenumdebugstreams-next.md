@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc8bfcbf9d95e838648d8923c01cc9b145ed9bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acd95d68ed32e5bb9116123f4cbdfd9d30e26f16
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916218"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220449"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Récupère un nombre spécifié de flux de débogage dans la séquence d’énumération.  
@@ -27,7 +27,7 @@ Récupère un nombre spécifié de flux de débogage dans la séquence d’énum
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
    ULONG*                    pceltFetched  
@@ -36,7 +36,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] **T**le nombre de flux de débogage dans l’énumérateur à récupérer.  
+ [in] Le nombre de flux de débogage dans l’énumérateur à récupérer.  
   
  rgelt  
  [out] Retourne un tableau de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) diffuse d’objets qui représente le débogage en cours de récupération.  

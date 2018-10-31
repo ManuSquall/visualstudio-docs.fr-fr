@@ -12,16 +12,17 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933987"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Former un modèle TensorFlow localement
 
 Dans ce démarrage rapide, nous allons former un modèle TensorFlow avec le jeu de données [MNIST](http://yann.lecun.com/exdb/mnist/) localement dans Visual Studio Tools pour IA.
+
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
 ## <a name="prerequisites"></a>Prérequis
@@ -30,7 +31,8 @@ Avant de commencer, vérifiez que les composants suivants sont installés :
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
-Exécutez la commande suivante dans un terminal.
+Exécutez la commande suivante dans un terminal :
+
 ```cmd
 C:\>pip.exe install tensorflow
 ```
@@ -47,9 +49,9 @@ Téléchargez ce [dépôt GitHub](https://github.com/Microsoft/samples-for-ai) c
 
 - Sélectionnez le dossier **Exemples TensorFlow** dans le dépôt des exemples téléchargé et ouvrez le fichier **TensorflowExamples.sln**.
 
-![Ouvrir un projet](media\tensorflow-local\open-project.png)
+   ![Ouvrir un projet](media/tensorflow-local/open-project.png)
 
-![Ouvrir une solution](media\tensorflow-local\open-solution.png)
+   ![Ouvrir une solution](media/tensorflow-local/open-solution.png)
 
 - Recherchez le projet MNIST dans **l’Explorateur de solutions**, cliquez avec le bouton droit et sélectionnez **Définir comme projet de démarrage**.
 
@@ -57,7 +59,7 @@ Téléchargez ce [dépôt GitHub](https://github.com/Microsoft/samples-for-ai) c
 
 - La sortie est imprimée dans la console.
 
-![Exemple de sortie de console](media\tensorflow-local\console-output.png)
+   ![Exemple de sortie de console](media/tensorflow-local/console-output.png)
 
 > [!div class="nextstepaction"]
 > [Former un modèle TensorFlow dans le cloud](tensorflow-vm.md)

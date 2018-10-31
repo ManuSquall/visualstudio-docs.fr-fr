@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9926846ceaba3591a3e89f2eba0fa2d3888e9302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 591cf2465d8d37b55c0b4d3fb11a5416fb04bf33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897523"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostics de Visual Studio pour mieux comprendre l'utilisation du matériel de pointe par votre application Direct3D. Vous pouvez l'utiliser pour déterminer si les performances de votre application sont liées à l'UC ou au GPU, et mieux comprendre comment tirer parti de la plateforme matérielle plus efficacement. L'outil Utilisation du GPU prend en charge les applications Direct3D 12, Direct3D 11 et Direct3D 10. Il ne prend pas en charge les autres API graphiques telles que Direct2D ou OpenGL.  
@@ -26,58 +26,58 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 ## <a name="requirements"></a>Configuration requise  
  Voici les conditions requises pour l'outil Utilisation du GPU, en plus de celles de Graphics Diagnostics.  
   
--   GPU et pilote qui prennent en charge l'instrumentation de minutage nécessaire.  
+- GPU et pilote qui prennent en charge l'instrumentation de minutage nécessaire.  
   
-    > [!NOTE]
-    >  Pour plus d’informations sur le matériel et les pilotes pris en charge, consultez [Prise en charge du matériel et des pilotes](#hwsupport) à la fin de ce document.  
+  > [!NOTE]
+  >  Pour plus d’informations sur le matériel et les pilotes pris en charge, consultez [Prise en charge du matériel et des pilotes](#hwsupport) à la fin de ce document.  
   
- Pour plus d’informations sur les conditions requises par l’exécution de Graphics Diagnostics, consultez [Prise en main](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Pour plus d’informations sur les conditions requises par l’exécution de Graphics Diagnostics, consultez [Prise en main](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Emploi de l'outil Utilisation du GPU  
  Quand vous exécutez votre application dans l’Outil utilisation du GPU, Visual Studio crée une session de diagnostic qui représente sous forme graphique des informations générales relatives aux performances de rendu et à l’utilisation du GPU en temps réel de votre application.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Pour démarrer l'outil Utilisation du GPU :  
   
-1.  Dans le menu principal, choisissez **Déboguer**, puis **Performances et diagnostics** (clavier : appuyez sur Alt+F2).  
+1. Dans le menu principal, choisissez **Déboguer**, puis **Performances et diagnostics** (clavier : appuyez sur Alt+F2).  
   
-2.  Dans le hub Performances et diagnostics, cochez la case en regard de l’option **Utilisation du GPU**. Vous pouvez éventuellement cocher les cases en regard des autres outils qui vous intéressent. Vous pouvez exécuter simultanément plusieurs outils du hub Performances et diagnostics pour obtenir une image plus complète des performances de votre application.  
+2. Dans le hub Performances et diagnostics, cochez la case en regard de l’option **Utilisation du GPU**. Vous pouvez éventuellement cocher les cases en regard des autres outils qui vous intéressent. Vous pouvez exécuter simultanément plusieurs outils du hub Performances et diagnostics pour obtenir une image plus complète des performances de votre application.  
   
-     ![Choisissez les outils de diagnostic que vous souhaitez utiliser.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+    ![Choisissez les outils de diagnostic que vous souhaitez utiliser.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  Tous les outils du hub Performances et diagnostics peuvent être utilisés en même temps.  
+   > [!NOTE]
+   >  Tous les outils du hub Performances et diagnostics peuvent être utilisés en même temps.  
   
-3.  Choisissez le bouton **Démarrer** bleu au bas du hub Performances et diagnostics pour exécuter votre application à l’aide des outils que vous avez sélectionnés.  
+3. Choisissez le bouton **Démarrer** bleu au bas du hub Performances et diagnostics pour exécuter votre application à l’aide des outils que vous avez sélectionnés.  
   
- Les informations générales qui s’affichent en temps réel incluent le minutage de frame, la fréquence d’images et l’utilisation du GPU. Chacune de ces informations est représentée graphiquement de manière indépendante, mais selon une échelle de temps commune, ce qui vous permet d'associer facilement les informations entre elles.  
+   Les informations générales qui s’affichent en temps réel incluent le minutage de frame, la fréquence d’images et l’utilisation du GPU. Chacune de ces informations est représentée graphiquement de manière indépendante, mais selon une échelle de temps commune, ce qui vous permet d'associer facilement les informations entre elles.  
   
- Les graphiques **Durée de frame (ms)** et **Images par seconde (FPS)** contiennent deux lignes rouges horizontales qui représentent les performances cibles de 60 et 30 frames par seconde. Dans le graphique **Durée de frame**, votre application dépasse les performances cibles quand le graphique est en dessous de la ligne, et n’atteint pas les performances cibles quand le graphique est au-dessus de la ligne. Pour le graphique Images par seconde, la situation est inversée. Votre application dépasse les performances cibles quand le graphique est au-dessus de la ligne, et n’atteint pas les performances cibles quand le graphique est en dessous de la ligne. Ces graphiques servent principalement à obtenir une idée générale des performances de votre application, et à identifier les ralentissements dont vous souhaitez peut-être connaître l’origine (par exemple, une chute soudaine de la fréquence d’images ou un pic d’utilisation du GPU).  
+   Les graphiques **Durée de frame (ms)** et **Images par seconde (FPS)** contiennent deux lignes rouges horizontales qui représentent les performances cibles de 60 et 30 frames par seconde. Dans le graphique **Durée de frame**, votre application dépasse les performances cibles quand le graphique est en dessous de la ligne, et n’atteint pas les performances cibles quand le graphique est au-dessus de la ligne. Pour le graphique Images par seconde, la situation est inversée. Votre application dépasse les performances cibles quand le graphique est au-dessus de la ligne, et n’atteint pas les performances cibles quand le graphique est en dessous de la ligne. Ces graphiques servent principalement à obtenir une idée générale des performances de votre application, et à identifier les ralentissements dont vous souhaitez peut-être connaître l’origine (par exemple, une chute soudaine de la fréquence d’images ou un pic d’utilisation du GPU).  
   
- Pendant que votre application s'exécute dans l'outil Utilisation du GPU, la session de diagnostic collecte également des informations détaillées sur les événements graphiques exécutés sur le GPU. Ces informations sont utilisées pour générer un rapport plus précis de la manière dont votre application utilise le matériel. Dans la mesure où ce rapport prend un certain temps pour générer les résultats à partir des informations collectées, il est disponible uniquement à la fin de la collecte d’informations de la session de diagnostic.  
+   Pendant que votre application s'exécute dans l'outil Utilisation du GPU, la session de diagnostic collecte également des informations détaillées sur les événements graphiques exécutés sur le GPU. Ces informations sont utilisées pour générer un rapport plus précis de la manière dont votre application utilise le matériel. Dans la mesure où ce rapport prend un certain temps pour générer les résultats à partir des informations collectées, il est disponible uniquement à la fin de la collecte d’informations de la session de diagnostic.  
   
- Quand vous souhaitez examiner plus attentivement un problème de performances ou d'utilisation, arrêtez de collecter les informations de performances pour que le rapport puisse être généré.  
+   Quand vous souhaitez examiner plus attentivement un problème de performances ou d'utilisation, arrêtez de collecter les informations de performances pour que le rapport puisse être généré.  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>Pour générer et afficher le rapport d'utilisation du GPU :  
   
-1.  Dans la partie inférieure de la fenêtre de session de diagnostic, choisissez le lien **Arrêter la collecte** ou appuyez sur **Arrêter** en haut à gauche.  
+1. Dans la partie inférieure de la fenêtre de session de diagnostic, choisissez le lien **Arrêter la collecte** ou appuyez sur **Arrêter** en haut à gauche.  
   
-     ![Collectez les informations de minutage GPU et UC.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+    ![Collectez les informations de minutage GPU et UC.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  Dans la partie supérieure du rapport, sélectionnez une section dans l'un des graphiques qui illustre le problème à examiner. Votre sélection peut durer jusqu'à 3 secondes. Le début des sections plus longues est tronqué.  
+2. Dans la partie supérieure du rapport, sélectionnez une section dans l'un des graphiques qui illustre le problème à examiner. Votre sélection peut durer jusqu'à 3 secondes. Le début des sections plus longues est tronqué.  
   
-     ![Postcollection, sélectionner une plage pour afficher les détails](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+    ![Postcollection, sélectionner une plage pour afficher les détails](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  Dans la partie inférieure du rapport, choisissez le lien **Afficher les détails** du message **...cliquez ici pour afficher les détails de l’utilisation du GPU pour cette plage** afin d’afficher une chronologie détaillée de votre sélection.  
+3. Dans la partie inférieure du rapport, choisissez le lien **Afficher les détails** du message **...cliquez ici pour afficher les détails de l’utilisation du GPU pour cette plage** afin d’afficher une chronologie détaillée de votre sélection.  
   
-     ![Postcollection, avec la plage sélectionnée](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+    ![Postcollection, avec la plage sélectionnée](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
- Cela entraîne l'ouverture d'un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l'UC et où il atteint le GPU, ainsi que sa durée d'exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d’étranglement et les opportunités d’augmentation du parallélisme dans votre code.  
+   Cela entraîne l'ouverture d'un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l'UC et où il atteint le GPU, ainsi que sa durée d'exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d’étranglement et les opportunités d’augmentation du parallélisme dans votre code.  
 
 <!-- VERSIONLESS -->
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Exporter vers GPUView ou Windows Performance Analyzer
 À partir de Visual Studio 2017, vous pouvez ouvrir ces données avec [GPUView](/windows-hardware/drivers/display/using-gpuview) et [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) en cliquant sur les liens **Ouvrir dans GpuView** ou **Ouvrir dans WPA** situés en bas à droite de la session de diagnostic.
 
-![Ouvrir dans...](media/gfx_diag_open_in.png)
+![Ouvrir dans…](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>Emploi du rapport Utilisation du GPU  

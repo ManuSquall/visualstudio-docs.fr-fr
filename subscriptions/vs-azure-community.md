@@ -9,12 +9,12 @@ description: Découvrez l’avantage Azure Community inclus dans certains abonne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937458"
 ---
 # <a name="azure-community"></a>Communauté Azure
 
@@ -24,7 +24,7 @@ Obtenez de l’aide directement de la part de l’équipe Azure au sein de forum
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
 | [Services cloud (rôles Web et Worker)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc) | [Gestion de réseau Azure (DNS, Traffic Manager, VPN, Réseau virtuel)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc) | [Azure App Service - Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)         |
 | [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
-| [Stockage Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Gestion des API Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
+| [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Gestion des API Azure](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Sites web Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
 | [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Tarification et facturation](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Scripts et outils de ligne de commande Azure](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [Portail de gestion Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Sauvegarde Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
@@ -51,16 +51,18 @@ Il est facile de bien démarrer avec la Communauté Azure.
 ## <a name="eligibility"></a>Éligibilité
 La disponibilité de l’avantage Azure Community dépend de votre niveau d’abonnement, comme indiqué ci-dessous :
 
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail   | Un an      |  Oui          |
-| Visual Studio Professional (Standard, cloud annuel)  | Licences en volume, Azure, Détail                                      | Un an                                                           |  Oui          |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Un an                                             |  Oui          |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |Un an                                              |  Oui          |
-| Visual Studio Enterprise (cloud mensuel), Visual Studio Professional (cloud mensuel), NFR<sup>1</sup>                                          | Tous                                              |Non disponible                                              |  Non          |
-| Visual Studio Dev Essentials                                        | N/A                                              |Non disponible                                              |  Non          |
-|
-<sup>1</sup> *Inclut : NFR (revente interdite), Microsoft FTE, MVP (Microsoft Valued Partner), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
+
+|                                          Niveau d'abonnement                                           |     Canaux      |    Avantage    | Renouvelable ? |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Visual Studio Enterprise (Standard, cloud annuel)                           | Licences en volume, Azure, Détail |   Un an    |    Oui     |
+|                          Visual Studio Professional (Standard, cloud annuel)                          | Licences en volume, Azure, Détail |   Un an    |    Oui     |
+|                              Visual Studio Test Professional (Standard)                               |    Licences en volume, Détail     |   Un an    |    Oui     |
+|                                       Plateformes MSDN (Standard)                                       |    Licences en volume, Détail     |   Un an    |    Oui     |
+| Visual Studio Enterprise (cloud mensuel), Visual Studio Professional (cloud mensuel), NFR<sup>1</sup> |        Tous        | Non disponible |     Non     |
+|                                     Visual Studio Dev Essentials                                      |        N/A        | Non disponible |     Non     |
+|                                                                                                       |                   |               |            |
+
+<sup>1</sup> *Inclut : NFR (revente interdite), Microsoft FTE, MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer).*
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

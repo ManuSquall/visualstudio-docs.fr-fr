@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949433"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220233"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Mot clé**|Mots clés réservés du langage donné. Exemple : class et namespace.|  
 |**Adresse mémoire**|Couleur de texte utilisée pour afficher la colonne d’adresse dans la fenêtre **Mémoire**.|  
 |**Mémoire modifiée**|Couleur de texte utilisée pour afficher les données modifiées dans la fenêtre **Mémoire**.|  
-|**Données de la mémoire**|Couleur de texte utilisée pour afficher les données dans la fenêtre **Mémoire**.|  
+|**Données de la mémoire**|La couleur de texte utilisée pour afficher les données dans le **mémoire** fenêtre.|  
 |**Mémoire illisible**|Couleur de texte utilisée pour afficher les zones de mémoire illisibles dans la fenêtre **Mémoire**.|  
 |**Nombre**|Nombre dans du code, qui représente une valeur numérique réelle.|  
 |**Operator**|Opérateurs tels que +, - et !=.|  

@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac52f3b393c411f58c27091fbbf3940f20f5dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930828"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219937"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.  
@@ -440,7 +440,7 @@ pMyPerson->Dump( afxDump );
 
    4.  Dans la liste **Copier les paramètres à partir de** , cliquez sur **Release**.  
 
-   5.  Cliquez sur **OK** pour fermer la boîte de dialogue **Nouvelle configuration de projet**.  
+   5.  Cliquez sur **OK** pour fermer la **nouvelle Configuration de projet** boîte de dialogue.  
 
    6.  Fermez la boîte de dialogue **Gestionnaire de configurations** .  
 

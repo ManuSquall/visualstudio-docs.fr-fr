@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884145"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Déplacer un type vers un fichier correspondant (refactorisation)
 
@@ -35,32 +35,32 @@ Cette refactorisation s’applique à :
 
 ## <a name="how-to"></a>Procédure
 
-1. Mettez en surbrillance ou placez le curseur de texte dans le nom du type à déplacer :
+1. Placez le curseur dans le nom du type dans lequel il est défini. Exemple :
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. Effectuez ensuite l'une des opérations suivantes :
+
+   - Appuyez sur **Ctrl**+**.**
+   - Cliquez avec le bouton droit sur le nom du type et sélectionnez **Actions rapides et refactorisations**.
+
+1. Sélectionnez **Déplacer le type vers *NomType*.cs** dans le menu, où *NomType* est le nom du type que vous avez sélectionné.
+
+   Le type est déplacé vers un nouveau fichier, dans le projet, qui porte le même nom que le type.
 
    - C# :
 
-    ![Code mis en surbrillance (C#)](media/movetype-highlight-cs.png)
+      ![Résultat de l’action Inclure (C#)](media/movetype-result-cs.png)
 
    - Visual Basic :
 
-    ![Code mis en surbrillance (Visual Basic)](media/movetype-highlight-vb.png)
-
-1. Effectuez ensuite l'une des opérations suivantes :
-
-   - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Déplacer le type vers *TypeName*.cs** dans la fenêtre contextuelle d’aperçu, où *TypeName* est le nom du type que vous avez sélectionné.
-   - **Souris**
-     - Cliquez avec le bouton droit sur le code, choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Déplacer le type vers *TypeName*.cs** dans la fenêtre contextuelle d’aperçu, où *TypeName* est le nom du type que vous avez sélectionné.
-
-   Le type est déplacé vers un nouveau fichier portant ce nom dans le cadre de votre solution.
-
-   - C# :
-
-    ![Résultat de l’action Inclure (C#)](media/movetype-result-cs.png)
-
-   - Visual Basic :
-
-    ![Résultat de l’action Inclure (Visual Basic)](media/movetype-result-vb.png)
+      ![Résultat de l’action Inclure (Visual Basic)](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

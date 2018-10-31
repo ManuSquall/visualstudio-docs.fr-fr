@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933558"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219885"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Procédure pas à pas : Déboguer une application multithread dans Visual Studio à l’aide de la fenêtre Threads
 Visual Studio fournit un **Threads** fenêtre et autres l’interface utilisateur éléments pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser le **Threads** fenêtre et la **emplacement de débogage** barre d’outils. Pour plus d’informations sur les autres outils, consultez [commencer le débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md). Ce didacticiel vous prendra que quelques minutes, mais comment la compléter vous familiarisera avec les fonctionnalités de débogage d’applications multithread.   
@@ -37,7 +37,7 @@ Pour commencer ce didacticiel, vous avez besoin d’un projet d’application mu
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Dans le **Type de projet**s, cliquez sur le langage de votre choix : **Visual Basic**, **Visual C#**, ou **Visual C++**.  
+2.  Dans le **Types de projets** , cliquez sur le langage de votre choix : **Visual Basic**, **Visual C#** , ou **Visual C++**.  
   
 3.  Sous **Windows Desktop**, choisissez **application Console**.  
   

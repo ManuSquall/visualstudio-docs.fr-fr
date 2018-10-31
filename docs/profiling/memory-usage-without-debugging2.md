@@ -1,7 +1,7 @@
 ---
 title: Analyser l’utilisation de la mémoire sans le débogueur de VS | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827729"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analyser l’utilisation de la mémoire sans le débogueur de Visual Studio
 Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pour effectuer les opérations suivantes :  
   
--   Surveiller l'utilisation de mémoire de vos applications directement dans Visual Studio quand vous développez un scénario.  
+- Surveiller l'utilisation de mémoire de vos applications directement dans Visual Studio quand vous développez un scénario.  
   
--   Créer des instantanés détaillés de l’état de la mémoire de votre application.  
+- Créer des instantanés détaillés de l’état de la mémoire de votre application.  
   
--   Comparer des instantanés pour trouver la cause initiale des problèmes de mémoire.  
+- Comparer des instantanés pour trouver la cause initiale des problèmes de mémoire.  
   
- Cette rubrique explique comment utiliser l’outil Utilisation de la mémoire pour analyser une application XAML UWP. Si vous voulez analyser l’utilisation de la mémoire d’une application UWP qui utilise JavaScript et HTML, consultez [Analyser l’utilisation de la mémoire (JavaScript)](../profiling/javascript-memory.md).  
+  Actuellement, pour mesurer l’utilisation de la mémoire faite par une application .NET Core, vous devez utiliser l’outil avec le débogueur joint. Pour les autres applications managées et natives, vous pouvez utiliser l’outil avec ou sans débogueur. Les captures d’écran de cette rubrique montrent une application XAML UWP. Si vous voulez analyser l’utilisation de la mémoire d’une application UWP qui utilise JavaScript et HTML, consultez [Analyser l’utilisation de la mémoire (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Commencer une session de diagnostic de l'utilisation de la mémoire  
   
@@ -69,13 +69,13 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Vues d’instantanés d’utilisation de la mémoire  
  Vous utilisez les vues d'instantanés pour ouvrir des rapports détaillés dans de nouvelles fenêtres Visual Studio. Il existe deux types de vues d'instantanés :  
   
--   Un [rapport détaillé d’instantané](#snapshot-reports) indique les types et les instances d’un seul instantané.  
+- Un [rapport détaillé d’instantané](#snapshot-reports) indique les types et les instances d’un seul instantané.  
   
--   Un [rapport de comparaison d’instantanés](#snapshot-difference-diff-reports) compare les types et les instances de deux instantanés.  
+- Un [rapport de comparaison d’instantanés](#snapshot-difference-diff-reports) compare les types et les instances de deux instantanés.  
   
- ![Liens de la vue Instantané](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Liens de la vue Instantané](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Les éléments numérotés de l'image de la vue d'instantané sont des liens ouvrant les vues de rapport d'utilisation de la mémoire.  
+  Les éléments numérotés de l'image de la vue d'instantané sont des liens ouvrant les vues de rapport d'utilisation de la mémoire.  
   
 |||  
 |-|-|  

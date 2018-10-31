@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile, tâche | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341808"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228836"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tâche)
 Écrit les chemins des éléments spécifiés dans le fichier texte spécifié.  
@@ -39,7 +39,8 @@ ms.locfileid: "39341808"
 |`Lines`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les éléments à écrire dans le fichier.|  
 |`Overwrite`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, remplace le contenu existant dans le fichier.|  
 |`Encoding`|Paramètre `String` facultatif.<br /><br /> Sélectionne l’encodage des caractères, par exemple « Unicode ».  Voir aussi <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le fichier cible spécifié, existe, il sera lu en premier pour effectuer la comparaison avec ce que la tâche aurait écrit. Si les deux sont identiques, le fichier n’est pas enregistré sur le disque et l’horodatage est conservé.|  
+
 ## <a name="remarks"></a>Notes  
  Si `Overwrite` est `true`, crée un fichier, écrit le contenu dans ce fichier, puis le ferme. Si le fichier cible existe déjà, il est remplacé. Si `Overwrite` est `false`, ajoute le contenu au fichier, en créant le fichier cible s’il n’existe pas.  
   

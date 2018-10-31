@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88e5815abbd9b773db1b6c35f2ecbbf08fd4862f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70ebc816b5bf0b2b27805499ebd688f62431a87f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291304"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220285"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSInstr [/U] filename [/options]
 |**ExcludeSmallFuncs**|Exclut de l’instrumentation les petites fonctions (fonctions courtes qui n’effectuent pas d’appels de fonction). L’option **ExcludeSmallFuncs** permet de réduire la charge liée à l’instrumentation et donc d’accélérer celle-ci.<br /><br /> En outre, l’exclusion des petites fonctions réduit la taille du fichier .vsp et le temps nécessaire pour l’analyse.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Insère une marque de profil (identificateur utilisé pour délimiter les données dans les rapports) que vous pouvez utiliser pour identifier le début ou la fin d’une plage de données dans le fichier de rapport .vsp.<br /><br /> **Before** : juste avant l’entrée dans la fonction cible.<br /><br /> **After** : juste après la sortie de la fonction cible.<br /><br /> **Top** : juste après l’entrée dans la fonction cible.<br /><br /> **Bottom** : juste avant chaque retour dans la fonction cible.<br /><br /> `funcname` : nom de la fonction cible<br /><br /> `Markid` : entier positif (long) à utiliser comme identificateur de la marque de profil.|  
 |**Coverage**|Exécute l’instrumentation de la couverture. Cette option ne peut être utilisée qu’avec les options suivantes : **Verbose**, **OutputPath**, **Exclude** et **Logfile**.|  
-|**Verbose**|L’option **Verbose** permet d’afficher des informations détaillées sur le processus d’instrumentation.|  
+|**Verbose**|Le **Verbose** option est utilisée pour afficher des informations détaillées sur le processus d’instrumentation.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Supprimer la totalité ou une partie spécifique des avertissements.<br /><br /> `Message Number` : numéro d’avertissement. Si `Message Number` est omis, tous les avertissements sont supprimés.<br /><br /> Pour plus d’informations, consultez [Avertissements VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Spécifie le niveau de profilage des options suivantes du contrôle de la collecte de données VSInstr :<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** : spécifie les fonctions de contrôle de collecte de données au niveau du thread. Le profilage est démarré ou arrêté uniquement pour le thread actuel. L’état de profilage des autres threads n’est pas affecté. La valeur par défaut correspond au thread.<br /><br /> **Process** : spécifie les fonctions de contrôle de collecte de données de profilage au niveau du processus. Le profilage démarre ou s’arrête pour tous les threads dans le processus actuel. L’état de profilage des autres processus n’est pas affecté.<br /><br /> **Global** : spécifie les fonctions de contrôle de collecte de données (interprocessus) au niveau global.<br /><br /> Une erreur se produit si vous ne spécifiez pas le niveau de profilage.|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Limite la collecte de données à la fonction cible et aux fonctions enfants appelées par cette fonction.<br /><br /> **Inside** : insère la fonction StartProfile immédiatement après l’entrée dans la fonction cible. Insère la fonction StopProfile juste avant chaque retour dans la fonction cible.<br /><br /> **Outside** : insère la fonction StartProfile juste avant chaque appel à la fonction cible. Insère la fonction StopProfile immédiatement après chaque appel à la fonction cible.<br /><br /> `funcname` : nom de la fonction cible.|  

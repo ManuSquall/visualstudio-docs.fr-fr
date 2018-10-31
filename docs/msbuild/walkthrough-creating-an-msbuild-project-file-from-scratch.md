@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828858"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
 Les langages de programmation qui ciblent .NET Framework utilisent des fichiers projet MSBuild pour décrire et contrôler le processus de génération d'application. Quand vous utilisez Visual Studio pour créer un fichier projet MSBuild, le code XML approprié est ajouté automatiquement au fichier. Il peut cependant être utile de comprendre comment le code XML est organisé et comment vous pouvez le modifier pour contrôler une build.  
@@ -172,7 +172,7 @@ Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, l
   
 #### <a name="to-build-the-application"></a>Pour générer l'application  
   
-1.  À l’invite de commandes, tapez **msbuild helloworld.csproj /t:Build**.  
+1.  Dans l’invite de commandes, tapez **msbuild helloworld.csproj -t:Build**.  
   
      Ceci crée la cible Build du fichier projet Helloworld en appelant le compilateur Visual C# pour créer l'application Helloworld.  
   
@@ -183,7 +183,7 @@ Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, l
 > [!NOTE]
 >  Vous pouvez afficher plus de détails sur la génération en augmentant le niveau de détail. Pour définir le niveau de détail sur « détaillé », entrez cette commande à l’invite de commandes :  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>Ajouter des propriétés de build  
  Vous pouvez ajouter des propriétés de build au fichier projet pour contrôler davantage la génération. Ajoutez maintenant ces propriétés :  
@@ -259,7 +259,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
   
 #### <a name="to-test-the-build-properties"></a>Pour tester les propriétés de build  
   
-1.  À l’invite de commandes, tapez **msbuild helloworld.csproj /t:Build**.  
+1.  Dans l’invite de commandes, tapez **msbuild helloworld.csproj -t:Build**.  
   
      Ceci crée le dossier *\Bin\\*, puis appelle le compilateur Visual C# pour créer l’application *MSBuildSample* et la place dans le dossier *\Bin\\*.  
   
@@ -334,9 +334,9 @@ Votre fichier projet doit maintenant ressembler au code suivant :
   
 #### <a name="to-test-the-build-targets"></a>Pour tester les cibles de génération  
   
-1.  À l’invite de commandes, tapez **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
+1.  Dans l’invite de commandes, tapez **msbuild helloworld.csproj -p:AssemblyName=Greetings**.  
   
-     Comme vous n’avez pas utilisé le commutateur **/t** pour définir explicitement la cible, MSBuild exécute la cible de génération par défaut. Le commutateur **/p** remplace la propriété `AssemblyName` et lui donne la nouvelle valeur, `Greetings`. Ceci provoque la création d’une nouvelle application, *Greetings.exe* dans le dossier *\Bin\\*.  
+     Comme vous n’avez pas utilisé le commutateur **-** pour définir explicitement la cible, MSBuild exécute la cible Build par défaut. Le commutateur **-p** remplace la propriété `AssemblyName` et lui donne la nouvelle valeur, `Greetings`. Ceci provoque la création d’une nouvelle application, *Greetings.exe* dans le dossier *\Bin\\*.  
   
 2.  Pour vérifier que le dossier *\Bin\\* contient à la fois l’application *MSBuildSample* et la nouvelle application *Greetings*, entrez **dir Bin**.  
   
@@ -344,11 +344,11 @@ Votre fichier projet doit maintenant ressembler au code suivant :
   
      Le message **Hello, world!** doit s’afficher.  
   
-4.  Supprimez l’application MSBuildSample en entrant **msbuild helloworld.csproj /t:clean**.  
+4.  Supprimez l’application MSBuildSample en tapant **msbuild helloworld.csproj -t:clean**.  
   
      Cela exécute la tâche Clean pour supprimer l’application qui a la valeur de la propriété `AssemblyName` par défaut, `MSBuildSample`.  
   
-5.  Supprimez l’application Greetings en entrant **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**.  
+5.  Supprimez l’application Greetings en tapant **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.  
   
      Cela exécute la tâche Clean pour supprimer l’application qui a la valeur de la propriété **AssemblyName** spécifiée, `Greetings`.  
   
@@ -382,11 +382,11 @@ Votre fichier projet doit maintenant ressembler au code suivant :
     </Target>  
     ```  
   
-2.  Testez la cible Build en entrant **msbuild /v:d** à l’invite de commandes.  
+2.  Testez la cible Build en tapant **msbuild -v:d** dans l’invite de commandes.  
   
      Rappelez-vous que *helloworld.csproj* est le fichier projet par défaut et que Build est la cible par défaut.  
   
-     Le commutateur **/v:d** spécifie une description détaillée du processus de génération.  
+     Le commutateur **-v:d** spécifie une description détaillée du processus de build.  
   
      Ces lignes doivent être affichées.  
   

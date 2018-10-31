@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320837"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356793"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
@@ -34,7 +34,8 @@ Pendant le débogage, vous pouvez utiliser la fenêtre **Outils de diagnostic** 
 
 La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour profiler des applications, mais pour les versions de mise en production (Release), vous pouvez également effectuer une analyse post-mortem de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour connaître la prise en charge des outils de profilage pour différents types d’applications, consultez [Quel outil utiliser ?](#which-tool-should-i-use).
 
-> ![REMARQUE] Vous pouvez utiliser les outils post mortem avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
+> [!NOTE]
+> Vous pouvez utiliser les outils post mortem avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
 ## <a name="analyze-cpu-usage"></a>Analyser l'utilisation de l'UC
 
@@ -119,7 +120,7 @@ Quand vous sélectionnez une période de temps dans les graphiques et que vous c
 
 Vous pouvez également utiliser les graphiques pour déterminer la présence éventuelle de goulots d’étranglement liés à l’UC ou au GPU.
 
-## <a name="analyze-performance-javascript"></a>Analyser les performances (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>Analyser les performances (JavaScript UWP)
 
 Pour les applications UWP, vous pouvez utiliser les outils Mémoire JavaScript et Réactivité de l’interface utilisateur HTML.
 
@@ -155,8 +156,8 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
   
 |Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui| 
 |[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
+|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui| 
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non| 
 |[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
 |[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|

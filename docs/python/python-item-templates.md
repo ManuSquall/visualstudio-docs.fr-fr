@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776033"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100937"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 
@@ -42,15 +42,10 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 | **Fenêtre IronPython WPF** | Une fenêtre WPF composée de deux fichiers côte à côte : un fichier *.xaml* qui définit `<Window>` avec un élément `<Grid>` vide, et un fichier *.py* associé qui charge le fichier XAML à l’aide de la bibliothèque `wpf`. Généralement utilisé dans un projet créé avec un des modèles de projet IronPython. Consultez [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Fichiers de prise en charge des rôles web** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
 | **Fichiers de prise en charge des rôles de travail** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement et de lancement par défaut, ainsi qu’un fichier *web.config*, pour les rôles de travail Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
-| **Fichier web.config Azure (FastCGI)** | Un fichier *web.config* qui contient des entrées pour les applications utilisant un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) afin de prendre en charge les connexions entrantes. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Fichier web.config Azure (HttpPlatformHandler)** | Un fichier *web.config* qui contient des entrées pour les applications qui sont à l’écoute des connexions entrantes sur un socket. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Fichier web.config des fichiers statiques Azure** | Un fichier *web.config* généralement ajouté à un dossier *static* (ou à tout autre dossier contenant des éléments statiques) pour désactiver la prise en charge de ce dossier par Python. Ce fichier de configuration fonctionne conjointement avec l’un des fichiers de configuration FastCGI ou HttpPlatformHandler ci-dessus. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Fichier web.config de débogage à distance Azure** | Un fichier *web.config.debug* qui active le débogage à distance sur WebSockets, ainsi que *Microsoft.PythonTools.WebRole.dll* et un dossier *ptvsd* qui contient les modules à déployer sur le serveur pour activer le débogage à distance. En règle générale, vous créez cet élément au même emplacement que votre fichier *web.config*. Pour plus d’informations, consultez [Déboguer à distance du code Python sur Azure](debugging-remote-python-code-on-azure.md). Lisez également la remarque ci-dessous. |
-
-> [!Note]
-> Si vous ajoutez le modèle de débogage *web.config* à un projet et si vous prévoyez d’utiliser le débogage à distance Python, vous devez publier le site en configuration **Debug**. Ce paramètre est distinct de la configuration de la solution active et a toujours la valeur par défaut **Release**. Pour le changer, ouvrez l’onglet **Paramètres** et utilisez la zone de liste modifiable **Configuration** dans l’Assistant **Publication**. (Consultez la [documentation Azure](https://azure.microsoft.com/develop/python/) pour plus d’informations sur la création et le déploiement vers des applications Web Azure.)
->
-> ![Modification de la configuration de publication](media/template-web-publish-config.png)
+| **Fichier web.config Azure (FastCGI)** | Un fichier *web.config* qui contient des entrées pour les applications utilisant un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) afin de prendre en charge les connexions entrantes. Ce fichier est généralement déployé à la racine d’un serveur web sous IIS. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
+| **Fichier web.config Azure (HttpPlatformHandler)** | Un fichier *web.config* qui contient des entrées pour les applications qui sont à l’écoute des connexions entrantes sur un socket. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
+| **Fichier web.config des fichiers statiques Azure** | Un fichier *web.config* généralement ajouté à un dossier *static* (ou à tout autre dossier contenant des éléments statiques) pour désactiver la prise en charge de ce dossier par Python. Ce fichier de configuration fonctionne conjointement avec l’un des fichiers de configuration FastCGI ou HttpPlatformHandler ci-dessus. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
+| **Fichier web.config de débogage à distance Azure** | Déconseillé (auparavant utilisé pour le débogage à distance sur Azure App Service pour Windows, qui n’est plus pris en charge). |
 
 ## <a name="see-also"></a>Voir aussi
 
