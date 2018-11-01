@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672897"
 ---
 # <a name="content-controls"></a>Contrôles de contenu
   Les contrôles de contenu vous permettent de concevoir des documents et des modèles qui ont les fonctionnalités suivantes :  
@@ -81,7 +81,7 @@ ms.locfileid: "49940227"
  Vous pouvez ajouter neuf types de contrôles de contenu différents à des documents. La plupart des contrôles de contenu disposent d'un type correspondant dans l'espace de noms <xref:Microsoft.Office.Tools.Word>. Vous avez également la possibilité d'utiliser un <xref:Microsoft.Office.Tools.Word.ContentControl> générique, qui peut représenter l'un des contrôles de contenu disponibles. Pour une procédure pas à pas qui montre comment utiliser chacun des contrôles de contenu disponibles, consultez [procédure pas à pas : créer un modèle à l’aide de contrôles de contenu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Galerie de blocs de build  
- Une galerie de bloc de construction permet aux utilisateurs de sélectionner parmi une liste de *blocs de construction de document* à insérer dans un document. Un bloc de construction de document est une partie de contenu créée pour être utilisée plusieurs fois, telle qu'une page de garde commune, un tableau mis en forme ou un en-tête. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Pour plus d’informations sur les blocs de construction, consultez [quelles sont les nouveautés pour les développeurs dans Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Une galerie de bloc de construction permet aux utilisateurs de sélectionner parmi une liste de *blocs de construction de document* à insérer dans un document. Un bloc de construction de document est une partie de contenu créée pour être utilisée plusieurs fois, telle qu'une page de garde commune, un tableau mis en forme ou un en-tête. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Pour plus d’informations sur les blocs de construction, consultez [quelles sont les nouveautés pour les développeurs dans Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Case à cocher  
  Une case à cocher fournit une interface utilisateur qui représente un état binaire : coché ou décoché.  

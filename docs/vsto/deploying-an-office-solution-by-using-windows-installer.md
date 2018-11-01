@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874915"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673053"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Déployer une solution Office à l’aide du programme d’installation de Windows
 Découvrez comment créer un fichier Windows Installer pour votre solution Office à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -532,7 +532,7 @@ Pour modifier les propriétés personnalisées, vous créez un programme qui sup
 
 
 ## <a name="see-also"></a>Voir aussi  
-[Composants nécessaires au déploiement de solutions Office](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Composants nécessaires au déploiement de solutions Office](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
 [Entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md)  

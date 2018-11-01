@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866426"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673079"
 ---
 # <a name="create-outlook-form-regions"></a>Créer des zones de formulaire Outlook
   Vous pouvez utiliser des zones de formulaire pour personnaliser des formulaires Microsoft Office Outlook. Visual Studio fournit des outils avancés qui simplifient la conception, le développement et le débogage des zones de formulaire.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866426"
   
 - affichage de l'interface utilisateur personnalisée dans le volet de lecture et dans les inspecteurs.  
   
-  Pour plus d’informations, consultez [personnaliser des pages et des zones de formulaire](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Pour plus d’informations, consultez [personnaliser des pages et des zones de formulaire](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Ajoutez une zone de formulaire Outlook à votre projet  
  Vous pouvez utiliser la **nouvelle zone de formulaire Outlook** Assistant pour concevoir une nouvelle zone de formulaire ou importer une zone de formulaire conçue dans Outlook. En outre, si vous disposez d’une zone de formulaire que vous avez utilisée dans un autre projet de complément VSTO Outlook, vous pouvez réutiliser votre zone de formulaire existante.  

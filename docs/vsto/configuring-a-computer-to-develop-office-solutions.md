@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670868"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672224"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurer un ordinateur pour développer des solutions Office
 
@@ -44,7 +44,7 @@ Si vous installez une version prise en charge de Visual Studio, le .NET Framewor
 
      Pour vous assurer que ces outils sont installés, démarrez le programme d’installation de Visual Studio, puis choisissez le **modifier** bouton. Cochez la case **Outils de développement Microsoft Office** , puis choisissez le bouton **Mettre à jour** .
 
-- Assurez-vous que vous n’exécutez pas une version d’Office qui a été remis par démarrer en un clic. Consultez [Comment : vérifier si Outlook est une application démarrer en un clic sur un ordinateur](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Assurez-vous que vous n’exécutez pas une version d’Office qui a été remis par démarrer en un clic. Consultez [Comment : vérifier si Outlook est une application démarrer en un clic sur un ordinateur](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Assurez-vous que vous exécutez qu’une seule version de Microsoft Office.
 

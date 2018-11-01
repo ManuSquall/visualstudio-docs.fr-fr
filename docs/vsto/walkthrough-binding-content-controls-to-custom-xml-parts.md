@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673038"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procédure pas à pas : Lier des contrôles de contenu à des parties XML personnalisées
   Cette procédure pas à pas montre comment lier les contrôles de contenu d'une personnalisation au niveau du document pour Word aux données XML stockées dans le document.  
@@ -296,7 +296,7 @@ ms.locfileid: "49916749"
   
 9. Nommez le fichier **EmployeeControls.docx.zip**.  
   
-     Le **EmployeeControls.docx** document est enregistré au Format Open XML. En renommant ce document avec la *.zip* fichier l’extension de nom, vous pouvez examiner le contenu du document. Pour plus d’informations sur Open XML, consultez l’article technique [présentation d’Office (2007) Open XML formats de fichier](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     Le **EmployeeControls.docx** document est enregistré au Format Open XML. En renommant ce document avec la *.zip* fichier l’extension de nom, vous pouvez examiner le contenu du document. Pour plus d’informations sur Open XML, consultez l’article technique [présentation d’Office (2007) Open XML formats de fichier](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Ouvrez le **EmployeeControls.docx.zip** fichier.  
   

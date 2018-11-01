@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673708"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671935"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Mise à niveau, boîte de dialogue Options projets
   Utilisez la page **Mise à niveau du projet** pour spécifier si Visual Studio modifie automatiquement les projets de complément VSTO pour cibler la version d’Office installée sur l’ordinateur de développement.  
@@ -37,6 +37,6 @@ ms.locfileid: "35673708"
   
 ## <a name="see-also"></a>Voir aussi  
  [Mettre à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Comment : solutions de mise à niveau d’Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
+ [Comment : solutions de mise à niveau d’Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

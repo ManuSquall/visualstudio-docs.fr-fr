@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673348"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744936"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestes d’application pour les solutions Office
   Un manifeste d’application est un fichier XML qui décrit les assemblys qui sont chargés dans une solution Microsoft Office. Les outils de développement Microsoft Office dans Visual Studio utilisent le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste d’application défini dans le [manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest) référence.  
@@ -96,7 +96,7 @@ ms.locfileid: "35673348"
  Vous pouvez modifier manuellement les manifestes d’application et de déploiement dans les solutions Office. Par la suite, vous devez resigner l’application et les manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (*mage.exe* et *mageui.exe*). Pour plus d’informations, consultez [Comment : signer à nouveau les manifestes d’application et de déploiement](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Emplacement du fichier  
- Un manifeste d’application est propre à une seule version d’une solution. Pour cette raison, les manifestes d’application doivent être stockés à l’écart des manifestes de déploiement. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] place les fichiers spécifiques à la version dans un sous-répertoire nommé d’après la version associée dans le *fichiers d’Application* sous-répertoire dans le dossier de publication.  
+ Un manifeste d’application est propre à une seule version d’une solution. Pour cette raison, les manifestes d’application doivent être stockés à l’écart des manifestes de déploiement. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] place les fichiers spécifiques à la version dans un sous-répertoire qui reprend le nom de la version associée dans le sous-répertoire *Fichiers d’application* du dossier de publication.  
   
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier  
  Le nom d’un fichier de manifeste d’application doit être le nom complet et l’extension de l’application tel qu’identifié dans le **assemblyIdentity** élément, suivi de l’extension *.manifest*. Par exemple, un manifeste d’application qui fait référence à la *OutlookAddIn1.dll* personnalisation utiliserait la syntaxe de nom de fichier suivante.  

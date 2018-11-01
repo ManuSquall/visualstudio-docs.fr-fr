@@ -16,41 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b5b66690d3856a2bf1fc6df417b60ab5e293127
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671558"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Comment : créer par programme des documents Visio
-  Lorsque vous créez un dessin Microsoft Office Visio, ajoutez-le à la `Microsoft.Office.Interop.Visio.Documents` collection de documents Visio ouverts. Par conséquent, le `Microsoft.Office.Interop.Visio.Documents.Add` méthode crée un nouveau document de dessin Visio. Pour plus d’informations, consultez la documentation de référence VBA de la méthode [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) .  
+  Quand vous créez un dessin Microsoft Office Visio, vous l’ajoutez à la collection `Microsoft.Office.Interop.Visio.Documents` de documents Visio ouverts. Ainsi, la méthode `Microsoft.Office.Interop.Visio.Documents.Add` crée un dessin Visio. Pour plus d’informations, consultez la documentation de référence VBA de la méthode [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .  
   
 ## <a name="create-new-blank-documents"></a>Créer des documents vierges  
   
 ### <a name="to-create-a-new-document"></a>Pour créer un document  
   
--   Utilisez le `Microsoft.Office.Interop.Visio.Documents.Add` méthode pour créer un nouveau document vierge qui n’est pas basé sur un modèle.  
+-   Utilisez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` pour créer un document vierge qui n’est pas basé sur un modèle.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]  
   
 ## <a name="create-documents-copied-from-existing-documents"></a>Créer des documents copiés à partir de documents existants  
- Le `Microsoft.Office.Interop.Visio.Documents.Add` méthode peut créer un nouveau document qui est une copie d’un document Visio existant. Vous devez fournir le nom de fichier et le chemin complet du diagramme.  
+ La méthode `Microsoft.Office.Interop.Visio.Documents.Add` peut créer un document qui est une copie d’un document Visio existant. Vous devez fournir le nom de fichier et le chemin complet du diagramme.  
   
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>Pour créer un document copié à partir d’un document existant  
   
--   Appelez le `Microsoft.Office.Interop.Visio.Documents.Add` (méthode) et spécifiez le chemin d’accès du diagramme Visio.  
+-   Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du diagramme Visio.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
 ## <a name="create-stencils-copied-from-existing-stencils"></a>Création de gabarits copiés à partir de gabarits existants  
- La méthode [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) peut créer un gabarit qui est une copie d’un gabarit Visio existant. Vous devez fournir le nom de fichier et le chemin complet du gabarit.  
+ La méthode [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) peut créer un gabarit qui est une copie d’un gabarit Visio existant. Vous devez fournir le nom de fichier et le chemin complet du gabarit.  
   
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Pour créer un gabarit copié à partir d’un gabarit existant  
   
--   Appelez le `Microsoft.Office.Interop.Visio.Documents.Add` (méthode) et spécifiez le chemin du gabarit.  
+-   Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du gabarit.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]  
@@ -60,7 +60,7 @@ ms.locfileid: "35256742"
   
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Pour créer un document basé sur un modèle existant  
   
--   Appelez le `Microsoft.Office.Interop.Visio.Documents.Add` (méthode) et spécifiez le chemin d’accès du modèle.  
+-   Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du modèle.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]  
