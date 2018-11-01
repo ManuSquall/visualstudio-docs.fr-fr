@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917100"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672949"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :  
@@ -124,7 +124,7 @@ ms.locfileid: "49917100"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Pour plus d’informations sur les interfaces d’événement dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Pour plus d’informations sur les interfaces d’événement dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Ne peut pas référence d’assembly PIA Office classes dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], le code qui fait référence à une classe définie dans un assembly PIA Office ne peut pas être compilé par défaut. Classes dans les assemblys PIA utilisent la convention d’affectation de noms *objectname*classe, telle que <xref:Microsoft.Office.Interop.Word.DocumentClass> et <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Par exemple, le code suivant issu d’un projet de complément Word VSTO ne peut pas être compilé.  

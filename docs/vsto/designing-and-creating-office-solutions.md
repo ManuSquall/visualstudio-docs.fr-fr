@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917179"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671242"
 ---
 # <a name="design-and-create-office-solutions"></a>Concevoir et créer des solutions Office
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer différents types de solutions Office. Cette section de la documentation décrit les modèles de projet et apporte des conseils sur la création de projets Office. Pour plus d’informations sur la façon d’implémenter les personnalisations de l’interface utilisateur et le code après avoir créé votre projet, consultez [Office de développer des solutions](../vsto/developing-office-solutions.md).  
@@ -53,7 +53,7 @@ ms.locfileid: "49917179"
   
   Toutefois, après le changement de la version cible du .NET Framework par Visual Studio, vous devrez peut-être modifier une partie du code de votre projet s’il utilise certaines fonctionnalités. Pour plus d’informations sur la façon de modifier le framework cible, consultez [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Pour plus d’informations sur les modifications que vous devrez peut-être apporter dans votre projet, consultez [solutions Office de migrer vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Si Visual Studio modifie le .NET Framework cible pour votre projet et que vous utilisez ClickOnce pour déployer votre solution, assurez-vous que vous sélectionnez également la version correspondante du .NET Framework dans le **conditions préalables** boîte de dialogue. Cette sélection ne change pas automatiquement quand vous modifiez la version cible du .NET Framework pour votre projet. Pour plus d’informations, consultez [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Si Visual Studio modifie le .NET Framework cible pour votre projet et que vous utilisez ClickOnce pour déployer votre solution, assurez-vous que vous sélectionnez également la version correspondante du .NET Framework dans le **conditions préalables** boîte de dialogue. Cette sélection ne change pas automatiquement quand vous modifiez la version cible du .NET Framework pour votre projet. Pour plus d’informations, consultez [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Vous ne pouvez pas cibler le .NET Framework 3.5 ou version antérieure dans les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Les projets Office créés à l’aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nécessitent les fonctionnalités introduites dans le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
@@ -61,7 +61,7 @@ ms.locfileid: "49917179"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendre quand les assemblys PIA Office sont requises sur les ordinateurs des utilisateurs finaux  
  Par défaut, Office assemblys PIA (Primary Interop Assemblies) n’avez pas besoin d’être installés sur les ordinateurs des utilisateurs finaux si la **incorporer les Types Interop** propriété de chaque référence d’assembly PIA Office dans le projet est définie sur **True**, qui est la valeur par défaut. Dans ce scénario, les informations relatives aux types PIA utilisés par votre solution sont incorporées dans l'assembly de solution au moment de la génération du projet. Au moment de l’exécution, les informations de type incorporées sont utilisées au lieu des assemblys PIA à appeler dans le modèle objet COM de l’application Office. Pour plus d’informations sur la façon dont les types provenant d’assemblys PIA sont incorporés dans votre solution, consultez [équivalence de Type et types interop incorporés](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  
   
- Si le **incorporer les Types Interop** propriété de chaque référence d’assembly PIA Office dans le projet est définie sur **False**, assemblys PIA Office doit être installé et enregistré dans le global assembly cache sur chaque ordinateur de l’utilisateur final qui exécute la solution. Dans la plupart des cas, les assemblys PIA sont installés par défaut avec Office, mais vous pouvez également inclure le composant redistribuable de l'assembly PIA comme composant requis pour votre solution. Pour plus d’informations, consultez [composants nécessaires au déploiement de solutions Office](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Si le **incorporer les Types Interop** propriété de chaque référence d’assembly PIA Office dans le projet est définie sur **False**, assemblys PIA Office doit être installé et enregistré dans le global assembly cache sur chaque ordinateur de l’utilisateur final qui exécute la solution. Dans la plupart des cas, les assemblys PIA sont installés par défaut avec Office, mais vous pouvez également inclure le composant redistribuable de l'assembly PIA comme composant requis pour votre solution. Pour plus d’informations, consultez [composants nécessaires au déploiement de solutions Office](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="understand-the-client-profile"></a>Comprendre le profil client  
  Le .NET Framework Client Profile est un sous-ensemble du .NET Framework complet. Vous pouvez cibler le .NET Framework Client Profile si vous devez utiliser uniquement les fonctionnalités client du .NET Framework et souhaitez fournir le déploiement le plus rapide possible pour votre solution Office. Pour plus d’informations, consultez [profil client .NET Framework](/dotnet/framework/deployment/client-profile).  

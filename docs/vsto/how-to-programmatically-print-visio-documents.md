@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6beed729ed670d5f34c645575795b625e03e9583
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257503"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671220"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Comment : imprimer des documents Visio par programmation
   Vous pouvez imprimer un document Microsoft Office Visio complet ou uniquement une page spécifique.  
   
- Pour plus d’informations sur les méthodes d’impression, consultez la documentation de référence de VBA pour la méthode [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) et la méthode [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) .  
+ Pour plus d’informations sur les méthodes d’impression, consultez la documentation de référence de VBA pour la méthode [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) et la méthode [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) .  
   
 ## <a name="print-a-visio-document"></a>Imprimer un document Visio  
   
 ### <a name="to-print-a-complete-document"></a>Pour imprimer un document complet  
   
--   Appelez le `Microsoft.Office.Interop.Visio.Document.Print` méthode de la `Microsoft.Office.Interop.Visio.Document` objet que vous souhaitez imprimer.  
+-   Appelez la méthode `Microsoft.Office.Interop.Visio.Document.Print` de l’objet `Microsoft.Office.Interop.Visio.Document` à imprimer.  
   
      L’exemple de code suivant imprime le document actif. Pour utiliser cet exemple, exécutez le code à partir de la classe `ThisAddIn` dans votre projet.  
   
@@ -43,7 +43,7 @@ ms.locfileid: "35257503"
   
 ### <a name="to-print-a-page-of-a-document"></a>Pour imprimer une page d’un document  
   
--   Appelez le `Microsoft.Office.Interop.Visio.Pages.Print` méthode de la `Microsoft.Office.Interop.Visio.Pages` objet que vous souhaitez imprimer.  
+-   Appelez la méthode `Microsoft.Office.Interop.Visio.Pages.Print` de l’objet `Microsoft.Office.Interop.Visio.Pages` à imprimer.  
   
      L’exemple de code suivant imprime la première page du document actif. Pour utiliser cet exemple, exécutez le code à partir de la classe `ThisAddIn` dans votre projet.  
   

@@ -1,7 +1,7 @@
 ---
-title: L’impact de cette fonctionnalité sur les solutions Office
+title: Comment la fonctionnalité AutoSave sur les solutions Office
 ms.custom: ''
-ms.date: 07/20/2017
+ms.date: 10/26/2018
 ms.technology:
 - office-development
 ms.topic: conceptual
@@ -15,18 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21c49599ddc992bf35e6c1464b664a23fb33a691
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 60c83b8d83967d93f079033c4853904068ad29d5
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672429"
 ---
-# <a name="how-autosave-impacts-office-solutions"></a>L’impact de cette fonctionnalité sur les solutions Office
+# <a name="how-autosave-impacts-office-solutions"></a>Comment la fonctionnalité AutoSave sur les solutions Office
 
-Cette fonctionnalité est une fonctionnalité pour Excel, PowerPoint et Word qui, lorsque activé, permet des modifications de l’utilisateur à enregistrer automatiquement et en continu. Si cette fonctionnalité est désactivée, puis enregistrer doit être déclenchée manuellement pour la conservation des modifications de l’utilisateur. Avec l’ajout de cette fonctionnalité, vous devrez peut-être effectuer des ajustements à votre solution Office afin de vous assurer qu’il fonctionne correctement même alors que l’enregistrement automatique. Pour plus d’informations, consultez [comment cette fonctionnalité a un impact sur les compléments et les macros](https://msdn.microsoft.com/vba/office-shared-vba/articles/how-autosave-impacts-addins-and-macros). Pour plus d’informations sur cette fonctionnalité en général, consultez [quel est l’enregistrement automatique ?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5).
+Enregistrement automatique est une fonctionnalité pour Excel, PowerPoint et Word qui en continu et automatiquement enregistre vos modifications. Si la fonctionnalité est désactivée, vous devez enregistrer les fichiers manuellement pour conserver vos modifications. Vous devrez peut-être ajuster votre solution Office afin qu’il travaille en étroite collaboration même lorsque l’enregistrement automatique est activé. Pour plus d’informations, consultez [la fonctionnalité AutoSave sur des compléments et macros](/office/vba/library-reference/concepts/how-autosave-impacts-addins-and-macros). Pour plus d’informations sur l’enregistrement automatique en général, consultez [What ' s AutoSave ?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5).
 
-Remarque : Cette fonctionnalité pour Windows Desktop Word, Excel et PowerPoint a été introduite dans 2017 et n’est actuellement disponible pour les abonnés d’Office 365. Les utilisateurs qui ont acheté une licence définitive pour Office 2016 ou une version antérieure n’ont pas actuellement accès à la fonction cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent également en charge cette fonctionnalité). 
+> [!NOTE]
+> Enregistrement automatique pour Windows Desktop Word, Excel et PowerPoint a été introduit dans 2017 et n’est actuellement disponible pour les abonnés Office 365. Si vous avez acheté une licence perpétuelle pour Office 2016 ou une version antérieure, vous n’avez actuellement accès à la fonction de cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent en charge cette fonctionnalité, cependant.)
 
 ## <a name="see-also"></a>Voir aussi
+
 [Développer des solutions Office](./developing-office-solutions.md)

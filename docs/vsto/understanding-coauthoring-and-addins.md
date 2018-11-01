@@ -1,5 +1,5 @@
 ---
-title: Comprendre la co-création et compléments
+title: Comprendre la cocréation et Add-ins
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 39098a56b3ff17b1e491c15f3b6119978a28a2ca
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671116"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Comprendre la co-création et compléments
+# <a name="understand-coauthoring-and-add-ins"></a>Comprendre la cocréation et Add-ins
 
-Co-création est une fonctionnalité de bureau d’Excel pour Windows qui permet de modifier un classeur hébergé dans le cloud (c'est-à-dire, OneDrive, OneDrive entreprise ou SharePoint Online) simultanément avec d’autres utilisateurs. Avec l’ajout de cette fonctionnalité, vous devrez peut-être apporter des modifications dans votre Solution Excel afin de garantir qu’elle fonctionne correctement même si les utilisateurs sont co-création. Consultez [sur co-création dans Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
+Cocréation est une fonctionnalité de bureau d’Excel pour Windows qui vous permet de modifier un classeur hébergé dans le cloud (autrement dit, OneDrive, OneDrive entreprise ou SharePoint Online) simultanément avec d’autres utilisateurs. Avec l’ajout de cette fonctionnalité, vous devrez peut-être effectuer des ajustements à votre Solution Excel afin de garantir qu’elle fonctionne sans problème même lorsque les utilisateurs sont cocréation. Consultez [sur cocréation dans Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Remarque : Co-création pour Windows Desktop Excel a été introduite dans 2017 et n’est actuellement disponible pour les abonnés d’Office 365. Les utilisateurs qui ont acheté une licence définitive pour Office 2016 ou une version antérieure n’ont pas actuellement accès à la fonction cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent également en charge co-création).
+Remarque : Cocréation pour Windows Desktop Excel a été introduite dans 2017 et n’est actuellement disponible pour les abonnés Office 365. Les utilisateurs qui ont acheté une licence perpétuelle pour Office 2016 ou une version antérieure n’ont pas actuellement accès à la fonction de cocréation. (Excel Online, Excel pour Android, Excel pour iOS et Excel Mobile dans le Windows Store prennent également en charge cocréation).
 
 ## <a name="see-also"></a>Voir aussi
 [Solutions Excel](./excel-solutions.md)
