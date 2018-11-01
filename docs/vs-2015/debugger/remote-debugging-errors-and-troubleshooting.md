@@ -42,7 +42,7 @@ ms.locfileid: "49270970"
 
 Les erreurs suivantes peuvent se produire lors d’une tentative de débogage distant.  
   
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Erreur : Impossible d’effectuer automatiquement un pas à pas détaillé sur le serveur](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   
