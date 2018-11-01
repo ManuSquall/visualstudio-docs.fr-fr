@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951255"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modification des tests codés de l'interface utilisateur à l'aide de l'éditeur de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Modifier les propriétés d'une action d'interface utilisateur
   
  Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.  
   
- Par exemple, si un serveur est indisponible et que vous avez une action d’interface utilisateur associée à votre navigateur Web qui stipule **atteindre la page Web « http://Contoso1/default.aspx'**, vous pouvez replacer l’URL à `‘ http://Contoso2/default.aspx’`.  
+ Par exemple, si un serveur est indisponible et si une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’> »**, vous pouvez remplacer l’URL par `‘ http://Contoso2/default.aspx’`.  
   
  ![Propriétés d’un contrôle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modifier les propriétés d'un contrôle  
@@ -125,19 +125,19 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** si vous fractionnez une méthode, vous devez modifier tout le code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer si vous voulez toujours inclure ces actions d’interface. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.  
+- ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** si vous fractionnez une méthode, vous devez modifier tout le code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer si vous voulez toujours inclure ces actions d’interface. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.  
   
- **Conseils**  
+  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Pour annuler le fractionnement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z.  
+- ![Conseil](../test/media/tip.png "Conseil") Pour annuler le fractionnement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z.  
   
--   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.  
+- ![Conseil](../test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.  
   
-     - ou -  
+   - ou -  
   
-     Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.  
+   Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.  
   
-     Une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui fait référence à la méthode. Cliquez sur **Oui**.  
+   Une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui fait référence à la méthode. Cliquez sur **Oui**.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Déplacer une méthode de test vers le fichier UIMap pour en faciliter la personnalisation  
  Si vous déterminez qu'une de vos méthodes de test dans votre test codé de l'interface utilisateur requiert du code personnalisé, vous devez la déplacer vers le fichier UIMap.cs ou UIMap.vb. Sinon, votre code sera remplacé chaque fois que le test codé de l'interface utilisateur sera recompilé. Si vous ne déplacez pas la méthode, votre code personnalisé sera remplacé à chaque nouvelle compilation du test.  
@@ -149,11 +149,11 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.  
+- ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.  
   
- **Conseils**  
+  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Pour annuler le déplacement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z. Toutefois, vous devez ensuite supprimer manuellement le code du fichier UIMap.cs ou UIMap.vb.  
+- ![Conseil](../test/media/tip.png "Conseil") Pour annuler le déplacement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z. Toutefois, vous devez ensuite supprimer manuellement le code du fichier UIMap.cs ou UIMap.vb.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Localisation d’un contrôle d’IU dans l’application testée  
  Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. L'utilisation de la fonctionnalité **Localiser le contrôle IU** dans l'application testée peut également servir à vérifier les modifications de propriété de recherche que vous avez apportées à un contrôle.  
@@ -167,11 +167,11 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
+- ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
   
- **Conseils**  
+  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez également utiliser l’option **Localiser tout** pour vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés. Cette option est décrite dans la section suivante.  
+- ![Conseil](../test/media/tip.png "Conseil") Vous pouvez également utiliser l’option **Localiser tout** pour vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés. Cette option est décrite dans la section suivante.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Localisation d’un contrôle et de ses descendants  
  Vous pouvez vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés dans l'interface utilisateur de l'application testée. Cela peut s'avérer utile pour vérifier les modifications de propriété de recherche apportées au conteneur. De plus, si des modifications importantes ont été apportées à l'interface utilisateur de l'application testée, vous pouvez vous assurer que les propriétés de recherche des contrôles existants sont toujours correctes.  
@@ -201,11 +201,11 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Remarques**  
   
--   ![Composant requis](../test/media/prereq.png "Composant requis") Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl.WaitForControlXXX() appropriée. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+- ![Composant requis](../test/media/prereq.png "Composant requis") Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl.WaitForControlXXX() appropriée. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
- **Conseils**  
+  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Si la fenêtre Propriétés n’est pas affichée, maintenez la touche Alt enfoncée et appuyez sur Entrée, ou appuyez sur la touche F4.  
+- ![Conseil](../test/media/tip.png "Conseil") Si la fenêtre Propriétés n’est pas affichée, maintenez la touche Alt enfoncée et appuyez sur Entrée, ou appuyez sur la touche F4.  
   
 ## <a name="external-resources"></a>Ressources externes  
   
