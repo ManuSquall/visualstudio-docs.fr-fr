@@ -330,7 +330,7 @@ Et tous seront rendus comme ceci : ![Styles d’alerte](../images/alerts.png)
 > [!div class="button"]
 [Liens de boutons](../docs/core/index.md)
 
-Vous pouvez voir un exemple de boutons en action dans la [documentation Intune](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+Vous pouvez voir un exemple de boutons en action dans la [documentation Intune](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
 
 ### <a name="selectors"></a>Sélecteurs
 
@@ -338,7 +338,7 @@ Vous pouvez voir un exemple de boutons en action dans la [documentation Intune](
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Fenêtres](../docs/core/tutorials/using-on-windows.md)
 
-Vous pouvez voir un exemple de sélecteurs en action dans la [documentation Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+Vous pouvez voir un exemple de sélecteurs en action dans la [documentation Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### <a name="step-by-steps"></a>Procédures détaillées
 
@@ -346,4 +346,4 @@ Vous pouvez voir un exemple de sélecteurs en action dans la [documentation Intu
 [Précédent](../docs/csharp/expression-trees-interpreting.md)
 [Suivant](../docs/csharp/expression-trees-translating.md)
 
-Vous pouvez voir un exemple de procédures détaillées en action dans la [documentation Advanced Threat Analytics](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
+Vous pouvez voir un exemple de procédures détaillées en action dans la [documentation Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
