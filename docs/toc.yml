@@ -789,18 +789,28 @@ items:
           href: ide/reference/options-text-editor-c-cpp-advanced.md
         - name: Éditeur de texte – C/C++, expérimental
           href: ide/reference/options-text-editor-c-cpp-experimental.md
+        - name: Éditeur de texte – C/C++, vue
+          href: ide/reference/options-text-editor-c-cpp-view.md
         - name: Éditeur de texte - C#, style de code, mise en forme
           href: ide/reference/options-text-editor-csharp-formatting.md
         - name: Éditeur de texte – C#, avancé
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: Éditeur de texte – C#, IntelliSense
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: Éditeur de texte – JavaScript, validation du code
+          href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: Éditeur de texte – JavaScript, mise en page
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: Éditeur de texte – JavaScript, IntelliSense
           href: ide/reference/options-text-editor-javascript-intellisense.md
         - name: Éditeur de texte – XAML, mise en page
           href: ide/reference/options-text-editor-xaml-formatting.md
+        - name: Éditeur de texte - XAML, divers
+          href: ide/reference/options-text-editor-xaml-miscellaneous.md
+        - name: Éditeur de texte - XML, mise en forme
+          href: ide/reference/options-text-editor-xml-formatting.md
+        - name: Éditeur de texte - XML, divers
+          href: ide/reference/options-text-editor-xml-miscellaneous.md
       - name: Boîte de dialogue Options, Projets et solutions
         href: ide/reference/projects-and-solutions-options-dialog-box.md
         items:
@@ -1087,9 +1097,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Nous contacter
     href: ide/talk-to-us.md
-ms.openlocfilehash: 32ae829c7ddde6da31cd3ef869020255da078c59
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f1fd877d75f4a771826c44b6992ecde6165b3f41
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671909"
