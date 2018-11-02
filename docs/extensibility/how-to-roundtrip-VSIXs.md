@@ -1,30 +1,30 @@
 ---
-title: 'Comment : Extensions aller-retour pour Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Comment les Extensions aller-retour
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498683"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750730"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Comment : créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
 
-Ce document explique comment créer des projets d’extensibilité aller-retour entre Visual Studio 2015 et Visual Studio 2017. À l’issue de cette mise à niveau, un projet seront en mesure d’ouvrir, générer, installer et exécuter dans Visual Studio 2015 et Visual Studio 2017.  En tant que référence, certaines extensions que vous peuvent effectuer un aller-retour entre Visual Studio 2015 et Visual Studio 2017 trouverez [ici](https://github.com/Microsoft/VSSDK-Extensibility-Samples) dans les exemples d’extensibilité de Microsoft.
+Ce document explique comment créer des projets d’extensibilité aller-retour entre Visual Studio 2015 et Visual Studio 2017. À l’issue de cette mise à niveau, un projet seront en mesure d’ouvrir, générer, installer et exécuter dans Visual Studio 2015 et Visual Studio 2017. En tant que référence, certaines extensions que vous peuvent effectuer un aller-retour entre Visual Studio 2015 et Visual Studio 2017 se trouve dans le [exemples d’extensibilité de Visual Studio SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Si vous souhaitez uniquement créer dans Visual Studio 2017, mais la sortie VSIX à exécuter dans Visual Studio 2015 et Visual Studio 2017, puis vous référer à la [document de migration d’Extension](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Remarque :** en raison de modifications dans Visual Studio entre les versions, certaines choses qui fonctionnait dans une version ne fonctionnera pas une autre. Veillez à ce que les fonctionnalités que vous essayez d’accéder sont disponibles dans les deux versions, l’extension sera résultats inattendus.
+> [!NOTE]
+> En raison de modifications dans Visual Studio entre les versions, certaines choses qui fonctionnait dans une version ne fonctionnent pas dans un autre. Assurez-vous que les fonctionnalités que vous essayez d’accéder sont disponibles dans les deux versions ou l’extension aura des résultats inattendus.
 
 Voici une brève présentation des étapes que vous effectuerez dans ce document pour effectuer un aller-retour d’une extension VSIX :
 
@@ -57,13 +57,13 @@ Plus loin dans ce document, nous insérera dans les instructions import conditio
 Si votre projet contient un *project.json* fichier :
 
 * Prenez note des références dans *project.json*.
-* À partir de la **l’Explorateur de solutions**, supprimez le *project.json* fichier à partir du projet.
-    * Cette opération supprimera le *project.json* de fichier et le supprimer à partir du projet.
-* Ajoutez que les références NuGet de nouveau dans le projet.
+* À partir de la **l’Explorateur de solutions**, supprimez le *project.json* fichier à partir du projet. Cette opération supprime le *project.json* de fichiers et supprime du projet.
+* Ajoutez que les références NuGet de nouveau dans le projet :
     * Avec le bouton droit sur le **Solution** et choisissez **gérer les Packages NuGet pour la Solution**.
-    * Visual Studio crée automatiquement le *packages.config* fichier pour vous
+    * Visual Studio crée automatiquement le *packages.config* fichier pour vous.
 
->**Remarque :** si votre projet contient les packages EnvDTE, ils peuvent avoir à être ajoutés en cliquant avec le bouton droit sur **références** en sélectionnant **ajouter une référence** et l’ajout de la référence appropriée.  À l’aide de packages NuGet peut créer des erreurs lors de la tentative générer votre projet.
+> [!NOTE]
+> Si votre projet contient les packages EnvDTE, ils peuvent avoir à être ajoutés en cliquant avec le bouton droit sur **références** en sélectionnant **ajouter une référence** et l’ajout de la référence appropriée.  À l’aide de packages NuGet peut créer des erreurs lors de la tentative générer votre projet.
 
 ## <a name="add-appropriate-build-tools"></a>Ajouter des outils de génération approprié
 
@@ -113,7 +113,8 @@ Pour effectuer cette opération manuellement :
 
 * Enregistrez et fermez le fichier.
 
->**Remarque :** si vous choisissez d’y parvenir avec le concepteur VSIX dans Visual Studio 2017, vous devez modifier manuellement la version prérequise pour vous assurer qu’il est compatible avec toutes les versions de Visual Studio 2017.  Il s’agit, car le concepteur insère la version minimale que votre version actuelle de Visual Studio (par exemple, 15.0.26208.0).  Toutefois, étant donné que les autres utilisateurs devront peut-être une version antérieure, vous devez modifier manuellement ce 15.0.
+> [!NOTE]
+> Si vous choisissez d’y parvenir avec le concepteur VSIX dans Visual Studio 2017, vous devez modifier manuellement la version prérequise pour vous assurer qu’il est compatible avec toutes les versions de Visual Studio 2017.  Il s’agit, car le concepteur insère la version minimale que votre version actuelle de Visual Studio (par exemple, 15.0.26208.0).  Toutefois, étant donné que les autres utilisateurs devront peut-être une version antérieure, vous devez modifier manuellement ce 15.0.
 
 À ce stade, votre fichier manifeste doit ressembler à ceci :
 
@@ -139,7 +140,8 @@ Il est fortement recommandé d’avoir une référence à une modification .cspr
 
 * Ajoutez la balise suivante `<VsixType>v3</VsixType>` à un groupe de propriétés.
 
->**Remarque :** il est recommandé d’ajouter ce ci-dessous le `<OutputType></OutputType>` balise.
+> [!NOTE]
+> Il est recommandé d’ajouter ce ci-dessous le `<OutputType></OutputType>` balise.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Ajoutez les propriétés de débogage
 
@@ -211,4 +213,5 @@ Exemple :
 
 ![Rechercher une extension VSIX](media/finding-a-VSIX-example.png)
 
->**Remarque :** si votre projet se bloque avec le message **l’ouverture du fichier**, forcer l’arrêt Visual Studio, accédez à votre répertoire de projet, afficher les dossiers cachés et supprimez le *.vs* dossier.
+> [!NOTE]
+> Si votre projet se bloque avec le message **l’ouverture du fichier**, forcer l’arrêt Visual Studio, accédez à votre répertoire de projet, afficher les dossiers cachés et supprimez le *.vs* dossier.
