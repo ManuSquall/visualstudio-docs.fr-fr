@@ -367,7 +367,7 @@ items:
       - name: Commencer une session de débogage pour une application UWP
         href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
         items:
-        - name: Exécuter des applications UWP sur un ordinateur distant
+        - name: Déboguer des applications UWP sur un ordinateur distant
           href: run-windows-store-apps-on-a-remote-machine.md
         - name: Exécuter des applications UWP dans le simulateur
           href: run-windows-store-apps-in-the-simulator.md
@@ -832,9 +832,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 7e308b631a5ce56ec065fcada6b65e11d8afe4bb
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050376"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751048"

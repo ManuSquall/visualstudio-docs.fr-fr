@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101054"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143474"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle Sondages du projet web Django
 
@@ -376,4 +376,4 @@ L’exécution d’une application web sur votre ordinateur de développement n�
 
 - Transformer l’application de SQLite en magasin de données au niveau de la production comme PostgreSQL, MySQL et SQL Server (qui peuvent tous être hébergés sur Azure). Comme décrit dans [Quand utiliser SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite fonctionne bien sur les sites au trafic faible à moyen, avec moins de 100 000 accès par jour, mais n’est pas recommandé pour les volumes plus élevés. Il est également limité à un seul ordinateur et ne peut par conséquent pas être utilisé dans un scénario multiserveur tel que l’équilibrage de charge et la géoréplication. Pour plus d’informations sur la prise en charge de Django pour d’autres bases de données, consultez [Configuration de la base de données](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Vous pouvez également utiliser le [kit de développement logiciel (SDK) Azure pour Python](azure-sdk-for-python.md) pour travailler avec les services de stockage Azure, comme les tables et les objets blob.
 
-- Configurer un pipeline d’intégration continue/de déploiement continu sur un service comme Visual Studio Team Services (VSTS). Au-delà de l’utilisation avec le contrôle de code source (sur VSTS, GitHub ou ailleurs), VSTS peut exécuter automatiquement vos tests unitaires comme condition préalable à la mise en production, ainsi que configurer le pipeline à déployer sur un serveur de mise en lots pour des tests supplémentaires avant le déploiement de production. Par ailleurs, VSTS s’intègre aux solutions de surveillance comme App Insights et complète le cycle avec des outils de planification agile. Pour plus d’informations, consultez [Créer un pipeline CI/CD pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts).
+- Configurez un pipeline d’intégration continue ou de déploiement continu sur un service comme Azure DevOps. En plus de l’utilisation du contrôle de code source (via Azure Repos, GitHub ou ailleurs), vous pouvez configurer un projet Azure DevOps pour exécuter automatiquement vos tests unitaires, dans le cadre des prérequis à la mise en production. Vous pouvez également configurer le pipeline pour effectuer le déploiement sur un serveur de préproduction pour des tests supplémentaires, avant le déploiement en production. Par ailleurs, Azure DevOps s’intègre aux solutions de supervision comme App Insights, et termine le cycle avec des outils de planification agile. Pour plus d’informations, consultez [Créer un pipeline CI/CD pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts), ainsi que la [documentation générale sur Azure DevOps ](/azure/devops/?view=vsts).

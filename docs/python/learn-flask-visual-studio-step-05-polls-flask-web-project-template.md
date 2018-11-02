@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908989"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143201"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask de sondage
 
@@ -356,4 +356,4 @@ L’exécution d’une application web sur votre ordinateur de développement n�
 
 - Ajoutez une implémentation du dépôt qui utilise un autre magasin de données de niveau production, comme PostgreSQL, MySQL et SQL Server (chacun pouvant être hébergé sur Azure). Vous pouvez aussi utiliser [Azure SDK pour Python](azure-sdk-for-python.md) pour travailler avec des services de stockage Azure, comme Stockage Table ou Stockage Blob, ainsi que Cosmos DB.
 
-- Configurer un pipeline d’intégration continue/de déploiement continu sur un service comme Visual Studio Team Services (VSTS). Au-delà de l’utilisation avec le contrôle de code source (sur VSTS, GitHub ou ailleurs), VSTS peut exécuter automatiquement vos tests unitaires comme condition préalable à la mise en production, ainsi que configurer le pipeline à déployer sur un serveur de mise en lots pour des tests supplémentaires avant le déploiement de production. Par ailleurs, VSTS s’intègre aux solutions de surveillance comme App Insights et complète le cycle avec des outils de planification agile. Pour plus d’informations, consultez [Créer un pipeline CI/CD pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts).
+- Configurez un pipeline d’intégration continue ou de déploiement continu sur un service comme Azure DevOps. En plus de l’utilisation du contrôle de code source (via Azure Repos, GitHub ou ailleurs), vous pouvez configurer un projet Azure DevOps pour exécuter automatiquement vos tests unitaires, dans le cadre des prérequis à la mise en production. Vous pouvez également configurer le pipeline pour effectuer le déploiement sur un serveur de préproduction pour des tests supplémentaires, avant le déploiement en production. Par ailleurs, Azure DevOps s’intègre aux solutions de supervision comme App Insights, et termine le cycle avec des outils de planification agile. Pour plus d’informations, consultez [Créer un pipeline CI/CD pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts), ainsi que la [documentation générale sur Azure DevOps ](/azure/devops/?view=vsts).

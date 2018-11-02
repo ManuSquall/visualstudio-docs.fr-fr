@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100924"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050220"
 ---
 # <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
 
@@ -39,7 +39,7 @@ Vous pouvez également suivre les instructions d’[installation de Python et du
 
 Le [kit SDK Azure pour le centre de développement Python](https://docs.microsoft.com/python/azure/?view=azure-python) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels :
 
-- Création d’applications web sur Azure App Service sur Linux(/azure/app-service/containers/quickstart-python).
+- [Création d’applications web sur Azure App Service dans Linux](/azure/app-service/containers/quickstart-python).
 - [Stockage d’objets BLOB](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [Stockage de tables](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Stockage de file d’attente](/azure/storage/storage-python-how-to-use-queue-storage)
