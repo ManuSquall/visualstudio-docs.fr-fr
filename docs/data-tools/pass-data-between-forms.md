@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089436"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750759"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
+
 Cette procédure pas à pas fournit des instructions détaillées pour passer des données d'un formulaire à l'autre. Les tables customers et orders de Northwind, un formulaire permet aux utilisateurs de sélectionner un client et un deuxième formulaire affiche les commandes du client sélectionné. Cette procédure pas à pas montre comment créer une méthode sur la deuxième forme qui reçoit des données à partir de la première forme.
 
 > [!NOTE]
->  Cette procédure pas à pas n'indique qu'un seul moyen de passer les données entre formulaires. Il existe d’autres options pour passer des données à un formulaire, y compris la création d’un deuxième constructeur pour recevoir des données, ou création d’une propriété publique qui peut être définie avec des données à partir de la première forme.
+> Cette procédure pas à pas n'indique qu'un seul moyen de passer les données entre formulaires. Il existe d’autres options pour passer des données à un formulaire, y compris la création d’un deuxième constructeur pour recevoir des données, ou création d’une propriété publique qui peut être définie avec des données à partir de la première forme.
 
- Cette procédure pas à pas décrit notamment les tâches suivantes :
+Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 -   Création d’un nouveau **Windows Forms Application** projet.
 
@@ -49,6 +50,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
 -   Transfert de données entre formulaires.
 
 ## <a name="prerequisites"></a>Prérequis
+
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
 
 1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peuvent être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
@@ -65,9 +67,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
-## <a name="create-the-windows-forms-application"></a>Créer l’Application de formulaires Windows
-
-### <a name="to-create-the-new-windows-project"></a>Pour créer un projet Windows
+## <a name="create-the-windows-forms-app-project"></a>Créer le projet d’application Windows Forms
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
@@ -80,8 +80,6 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
      Le **PassingDataBetweenForms** projet est créé et ajouté à **l’Explorateur de solutions**.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
-
-### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
 1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
@@ -108,7 +106,8 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
      Le **NorthwindDataSet** est ajouté à votre projet et le **clients** et **commandes** tables apparaissent dans le **des Sources de données** fenêtre.
 
 ## <a name="create-the-first-form-form1"></a>Créer le premier formulaire (Form1)
- Vous pouvez créer une grille liée aux données (un <xref:System.Windows.Forms.DataGridView> contrôle), en faisant glisser le **clients** nœud à partir de la **des Sources de données** fenêtre vers le formulaire.
+
+Vous pouvez créer une grille liée aux données (un <xref:System.Windows.Forms.DataGridView> contrôle), en faisant glisser le **clients** nœud à partir de la **des Sources de données** fenêtre vers le formulaire.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>Pour créer une grille liée aux données dans le formulaire
 
@@ -116,9 +115,9 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
      Un <xref:System.Windows.Forms.DataGridView> et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur **Form1**. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
 
-## <a name="create-the-second-form-form2"></a>Créer le deuxième formulaire (Form2)
+## <a name="create-the-second-form"></a>Créer la deuxième forme
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Pour créer un deuxième formulaire auquel passer les données
+Créer un deuxième formulaire auquel passer les données.
 
 1.  Dans le menu **Projet**, choisissez **Ajouter un formulaire Windows**.
 
@@ -132,9 +131,9 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
      Le **OrdersBindingNavigator** disparaît de **Form2**.
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Ajouter une requête TableAdapter à Form2 pour charger les commandes du client sélectionné dans Form1
+## <a name="add-a-tableadapter-query"></a>Ajouter une requête TableAdapter
 
-### <a name="to-create-a-tableadapter-query"></a>Pour créer une requête TableAdapter
+Ajouter une requête TableAdapter à Form2 pour charger les commandes du client sélectionné sur Form1.
 
 1.  Double-cliquez sur le **NorthwindDataSet.xsd** fichier **l’Explorateur de solutions**.
 
@@ -153,7 +152,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
     ```
 
     > [!NOTE]
-    >  Vérifiez que la syntaxe du paramètre est correcte pour votre base de données. Par exemple, dans Microsoft Access, la clause WHERE est de type : `WHERE CustomerID = ?`.
+    > Vérifiez que la syntaxe du paramètre est correcte pour votre base de données. Par exemple, dans Microsoft Access, la clause WHERE est de type : `WHERE CustomerID = ?`.
 
 6.  Cliquez sur **Suivant**.
 
@@ -165,8 +164,6 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Créez une méthode sur Form2 pour passer des données
 
-### <a name="to-create-a-method-to-pass-data-to"></a>Pour créer une méthode pour y passer les données
-
 1.  Avec le bouton droit **Form2**, puis sélectionnez **afficher le Code** pour ouvrir **Form2** dans le **éditeur de Code**.
 
 2.  Ajoutez le code suivant à **Form2** après le `Form2_Load` méthode :
@@ -175,8 +172,6 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Créez une méthode sur Form1 pour passer des données et afficher Form2
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>Pour créer une méthode pour passer les données à Form2
 
 1.  Dans **Form1**, avec le bouton droit de la grille de données client, puis cliquez sur **propriétés**.
 
@@ -191,9 +186,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>Exécution de l'application
-
-### <a name="to-run-the-application"></a>Pour exécuter l’application
+## <a name="run-the-app"></a>Exécuter l'application
 
 -   Appuyez sur **F5** pour exécuter l’application.
 

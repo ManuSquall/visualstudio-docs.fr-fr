@@ -18,22 +18,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9fd3051aae78f6f0440c637137ea5a04f726df8c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220337"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750826"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
+
 L'un des scénarios les plus courants dans le développement d'applications consiste à afficher des données dans un formulaire d'une application Windows, à modifier ces données, puis à renvoyer les données mises à jour à la base de données. Cette procédure pas à pas crée un formulaire affichant les données de deux tables associées et indique comment modifier les enregistrements et enregistrer les modifications dans la base de données. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind.
 
- Vous pouvez enregistrer des données de votre application dans la base de données en appelant la méthode `Update` d'un TableAdapter. Lorsque vous faites glisser les tables à partir de la **des Sources de données** fenêtre sur un formulaire, le code qui est nécessaire pour enregistrer les données est automatiquement ajoutée. Toutes les tables supplémentaires qui sont ajoutés à un formulaire requièrent l’ajout manuel de ce code. Cette procédure pas à pas indique comment ajouter du code pour enregistrer les mises à jour de plusieurs tables.
+Vous pouvez enregistrer des données de votre application dans la base de données en appelant la méthode `Update` d'un TableAdapter. Lorsque vous faites glisser les tables à partir de la **des Sources de données** fenêtre sur un formulaire, le code qui est nécessaire pour enregistrer les données est automatiquement ajoutée. Toutes les tables supplémentaires qui sont ajoutés à un formulaire requièrent l’ajout manuel de ce code. Cette procédure pas à pas indique comment ajouter du code pour enregistrer les mises à jour de plusieurs tables.
 
 > [!NOTE]
->  Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- Cette procédure pas à pas décrit notamment les tâches suivantes :
+Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 -   Création d’un nouveau **Windows Forms Application** projet.
 
@@ -48,6 +49,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 -   Modification du code pour renvoyer les données mises à jour dans le dataset à la base de données.
 
 ## <a name="prerequisites"></a>Prérequis
+
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
 
 1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
@@ -65,9 +67,8 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
 ## <a name="create-the-windows-forms-application"></a>Créer l’application Windows Forms
- La première étape consiste à créer un **Windows Forms Application**. Affectation d’un nom au projet est facultative pendant cette étape, mais nous allons lui donner un nom, car nous allons enregistrer le projet ultérieurement.
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>Pour créer le nouveau projet d’application Windows forms
+La première étape consiste à créer un **Windows Forms Application**. Affectation d’un nom au projet est facultative pendant cette étape, mais nous allons lui donner un nom, car nous allons enregistrer le projet ultérieurement.
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
@@ -80,9 +81,8 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
      Le **UpdateMultipleTablesWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
- Cette étape crée une source de données à partir de la base de données Northwind à l’aide du **Assistant de Configuration de Source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>Pour créer la source de données
+Cette étape crée une source de données à partir de la base de données Northwind à l’aide du **Assistant de Configuration de Source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Sur le **données** menu, sélectionnez **afficher les Sources de données**.
 
@@ -109,18 +109,18 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
      Le **NorthwindDataSet** est ajouté à votre projet, et les tables apparaissent dans le **des Sources de données** fenêtre.
 
 ## <a name="set-the-controls-to-be-created"></a>Définir les contrôles à créer
- Pour cette procédure pas à pas, les données dans le `Customers` table se trouve dans un **détails** où les données sont affichées dans des contrôles individuels. Les données à partir de la `Orders` table se trouve dans un **grille** mise en page qui s’affiche dans un <xref:System.Windows.Forms.DataGridView> contrôle.
 
-#### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Pour définir le type de dépôt des éléments de la fenêtre Sources de données
+Pour cette procédure pas à pas, les données dans le `Customers` table se trouve dans un **détails** où les données sont affichées dans des contrôles individuels. Les données à partir de la `Orders` table se trouve dans un **grille** mise en page qui s’affiche dans un <xref:System.Windows.Forms.DataGridView> contrôle.
+
+### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Pour définir le type de dépôt des éléments de la fenêtre Sources de données
 
 1.  Dans le **des Sources de données** fenêtre, développez le **clients** nœud.
 
 2.  Sur le **clients** nœud, sélectionnez **détails** à partir de la liste de contrôle pour modifier le contrôle de la **clients** table par des contrôles individuels. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Création d’un formulaire lié aux données
- Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire
+Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire.
 
 1.  Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre sur **Form1**.
 
@@ -129,17 +129,18 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 2.  Faites glisser le **commandes** nœud à partir de la **des Sources de données** fenêtre sur **Form1**.
 
     > [!NOTE]
-    >  Connexe **Orders** nœud se trouve sous le **télécopie** colonne et est un nœud enfant de la **clients** nœud.
+    > Connexe **Orders** nœud se trouve sous le **télécopie** colonne et est un nœud enfant de la **clients** nœud.
 
      Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un `OrdersTableAdapter` et <xref:System.Windows.Forms.BindingSource> s’affichent dans la barre d’état du composant.
 
 ## <a name="add-code-to-update-the-database"></a>Ajouter du code pour mettre à jour de la base de données
- Vous pouvez mettre à jour la base de données en appelant le `Update` méthodes de la **clients** et **commandes** TableAdapters. Par défaut, un gestionnaire d’événements pour le **enregistrer** bouton de la<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer des mises à jour dans le bon ordre. Cela élimine le risque de lever des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
+
+Vous pouvez mettre à jour la base de données en appelant le `Update` méthodes de la **clients** et **commandes** TableAdapters. Par défaut, un gestionnaire d’événements pour le **enregistrer** bouton de la<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer des mises à jour dans le bon ordre. Cela élimine le risque de lever des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
 
 > [!NOTE]
->  Pour plus de clarté, cette procédure pas à pas n’utilise pas une transaction. Toutefois, si vous mettez à jour deux ou plusieurs tables connexes, inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées à une base de données sont réussies avant que toutes les modifications soient validées. Pour plus d’informations, consultez [Transactions et la concurrence](/dotnet/framework/data/adonet/transactions-and-concurrency).
+> Pour plus de clarté, cette procédure pas à pas n’utilise pas une transaction. Toutefois, si vous mettez à jour deux ou plusieurs tables connexes, inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées à une base de données sont réussies avant que toutes les modifications soient validées. Pour plus d’informations, consultez [Transactions et la concurrence](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
-#### <a name="to-add-update-logic-to-the-application"></a>Pour ajouter une logique de mise à jour à l'application
+### <a name="to-add-update-logic-to-the-application"></a>Pour ajouter une logique de mise à jour à l'application
 
 1.  Sélectionnez le **enregistrer** situé dans le <xref:System.Windows.Forms.BindingNavigator>. Cette opération ouvre l’éditeur de Code pour le `bindingNavigatorSaveItem_Click` Gestionnaire d’événements.
 
@@ -150,16 +151,13 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="test-the-application"></a>Tester l’application
 
-#### <a name="to-test-the-application"></a>Pour tester l'application
-
-1.  Sélectionnez **F5**.
+1.  Appuyez sur **F5**.
 
 2.  Apportez quelques modifications aux données d'un ou plusieurs enregistrements dans chaque table.
 
 3.  Sélectionnez le **enregistrer** bouton.
 
 4.  Vérifiez les valeurs figurant dans la base de données pour confirmer que les modifications ont bien été enregistrées.
-
 
 ## <a name="see-also"></a>Voir aussi
 

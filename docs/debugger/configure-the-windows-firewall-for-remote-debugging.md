@@ -1,7 +1,7 @@
 ---
-title: Configurer le pare-feu Windows pour le débogage à distance | Microsoft Docs
+title: Configurer le pare-feu de Windows pour le débogage à distance | Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2017
+ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
@@ -10,114 +10,106 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847953"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750934"
 ---
-# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
-Cette rubrique explique comment configurer le pare-feu pour activer le débogage distant sur des ordinateurs qui exécutent les systèmes d’exploitation suivants :  
-  
-- Windows 10  
-  
-- Windows 8/8.1  
-  
-- Windows 7   
-  
-- Windows Server 2012 R2  
+# <a name="configure-windows-firewall-for-remote-debugging"></a>Configurer le pare-feu de Windows pour le débogage distant
 
-- Windows Server 2012
+Sur un réseau protégé par le pare-feu Windows, le pare-feu doit être configuré pour autoriser le débogage à distance. Visual Studio et les outils de débogage à distance essaient d’ouvrir les ports corrects du pare-feu durant l’installation ou de démarrage, mais vous devrez peut-être également ouvrir des ports ou autoriser les applications manuellement. 
+
+Cette rubrique explique comment configurer le pare-feu Windows pour activer le débogage à distance sur Windows 10, 8/8.1 et 7 ; et les ordinateurs Windows Server 2012 R2, 2012 et 2008 R2. L’ordinateur distant et Visual Studio n’êtes pas obligé d’exécuter le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10, et l’ordinateur distant peut exécuter Windows Server 2012 R2.      
   
-- Windows Server 2008 R2 
+>[!NOTE]
+>Les instructions pour configurer le pare-feu Windows diffèrent légèrement sur différents systèmes d’exploitation et pour les versions antérieures de Windows. Paramètres de Windows 8/8.1, Windows 10 et Windows Server 2012 utilisent le mot *application*, tandis que Windows 7 et Windows Server 2008 utilisent le mot *programme*.  
+
+## <a name="configure-ports-for-remote-debugging"></a>Configurer des ports pour le débogage distant  
+
+Visual Studio et le débogueur distant essaient d’ouvrir les ports appropriés pendant l’installation ou de démarrage. Toutefois, dans certains scénarios, tel qu’un pare-feu tiers, vous devrez peut-être ouvrir des ports manuellement. 
+
+**Pour ouvrir un port :**
   
-  Si le réseau sur lequel vous effectuez un débogage n’est pas protégé par un pare-feu, cette configuration est inutile. Dans le cas contraire, il est nécessaire d’apporter des modifications à la configuration du pare-feu pour l’ordinateur qui héberge Visual Studio et l’ordinateur distant qui doit être débogué.  
-  
-  **IPSec** Si votre réseau nécessite que la communication soit effectuée à l’aide d’IPSec, vous devez ouvrir des ports supplémentaires sur l’ordinateur hôte Visual Studio et l’ordinateur distant.  
-  
-  **Serveur web** Si vous déboguez un serveur web distant, vous devez ouvrir un port supplémentaire sur l’ordinateur distant. (Pour IIS, le port 80 doit être ouvert).  
-  
-  Notez que les deux ordinateurs n’ont pas à exécuter le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10 et l’ordinateur distant peut exécuter Windows Server 2012 R2.      
-  
-## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports sur l’ordinateur distant qui permettent le débogage distant  
-  
+1. Dans Windows **Démarrer** menu, recherchez et ouvrez **pare-feu Windows avec fonctions avancées de sécurité**. Dans Windows 10, il s’agit de **pare-feu Windows Defender avec fonctions avancées de sécurité**.
+   
+1. Pour un nouveau port entrant, sélectionnez **règles de trafic entrant** , puis sélectionnez **nouvelle règle**. Pour une règle sortante, sélectionnez **règles de trafic sortant** à la place.
+
+1. Dans le **Assistant Nouvelle règle de trafic entrant**, sélectionnez **Port**, puis sélectionnez **suivant**. 
+   
+1. Sélectionnez **TCP** ou **UDP**, selon le numéro de port à partir des tables suivantes.
+   
+1. Sous **ports locaux spécifiques**, entrez un numéro de port à partir des tables suivantes, puis sélectionnez **suivant**.
+   
+1. Sélectionnez **autoriser la connexion**, puis sélectionnez **suivant**.
+   
+1. Sélectionnez un ou plusieurs types de réseau à activer, y compris le type de réseau pour la connexion à distance, puis **suivant**.
+   
+1. Ajouter un nom pour la règle (par exemple, **msvsmon**, **IIS**, ou **Web Deploy**), puis sélectionnez **Terminer**.
+
+   La nouvelle règle doit apparaître et être sélectionnée dans le **règles de trafic entrant** ou **règles de trafic sortant** liste.
+
+### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports sur l’ordinateur distant qui permettent le débogage distant
+
+Pour le débogage distant, les ports suivants doivent être ouverts sur l’ordinateur distant :
+
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|   
-|-|-|-|-|  
-|4022|Entrant|TCP|Pour Visual Studio 2017. Le numéro de port est incrémenté de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).|  
-|4023|Entrant|TCP|Pour Visual Studio 2017. Le numéro de port est incrémenté de 2 pour chaque version de Visual Studio. (Uniquement utilisée à distance déboguer un processus 32 bits à partir de la version 64 bits du débogueur distant.) Pour plus d’informations, consultez [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).| 
+|-|-|-|-|
+|4022|Entrant|TCP|Pour Visual Studio 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez [affectations de port du débogueur distant Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Entrant|TCP|Pour Visual Studio 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Ce port est uniquement utilisé à distance déboguer un processus 32 bits à partir d’une version 64 bits du débogueur distant. Pour plus d’informations, consultez [affectations de port du débogueur distant Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Sortant|UDP|(Facultatif) Requis pour la détection du débogueur distant.|    
   
-## <a name="how-to-configure-ports-in-windows-firewall"></a>Comment configurer des ports dans le Pare-feu Windows  
+Si vous sélectionnez **utiliser le Mode compatibilité managé** sous **outils** > **Options** > **débogage**, ouvrez ces ports supplémentaires débogueur distant. Mode de compatibilité de débogueur managé permet un hérité, la version de Visual Studio 2010 du débogueur. 
 
-Lorsque vous installez Visual Studio ou le débogueur distant, le logiciel tente d’ouvrir les ports corrects. Toutefois, dans certains scénarios (par exemple, à l’aide d’un pare-feu tiers), vous devrez peut-être ouvrir un port manuellement. Si vous devez vérifier que les ports sont ouverts, consultez [dépannage](#troubleshooting). Des instructions relatives à l’ouverture d’un port peuvent être différents sur les versions antérieures de Windows.
-
-Pour ouvrir un port :
-  
-1. Ouvrez le **Démarrer** menu, recherchez **pare-feu Windows avec fonctions avancées de sécurité**.
-
-2. Puis choisissez **règles de trafic entrant > nouvelle règle > Port**, puis cliquez sur **suivant**. (Pour les règles sortantes, choisissez **règles de trafic sortant** à la place.)
-
-3. Choisissez **TCP** ou **UDP**, selon le numéro de port.
-
-4. Sous **ports locaux spécifiques**, entrez le numéro de port, cliquez sur **suivant**.
-
-5. Cliquez sur **Allow the Connection** , puis sur **Suivant**.
-
-6. Sélectionnez un ou plusieurs types de réseau à activer pour le port, puis cliquez sur **suivant**.
-
-    Les types que vous sélectionnez doivent inclure le réseau auquel l’ordinateur distant est connecté.
-7. Ajoutez le nom (par exemple, **msvsmon**, **IIS**, ou **Web Deploy**) pour la règle et cliquez sur **Terminer**.
-
-    Vous devez voir votre nouvelle règle dans la liste des règles de trafic entrant ou règles de trafic sortant.
-
-## <a name="troubleshooting"></a>Résolution des problèmes
-
-Si vous ne parvenez pas à attacher à votre application avec le débogueur distant, vous devrez peut-être vérifier que les ports appropriés sont ouverts.
-
-### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-visual-studio-computer"></a>Vérifiez que les ports sont ouverts dans le pare-feu Windows sur l’ordinateur Visual Studio  
- Les instructions pour configurer le Pare-feu Windows diffèrent légèrement en fonction des systèmes d’exploitation. Sur Windows 8/8.1, Windows 10 et Windows Server 2012, le mot **application** est utilisé ; sur Windows 7 ou Windows Server 2008, le mot **programme** est utilisé ;  Dans les étapes suivantes, nous allons utiliser le mot **application**.  
-  
-1.  Ouvrez la page Pare-feu Windows. (Dans la zone de recherche du menu **Démarrer** , tapez **Pare-feu Windows**.)  
-  
-2.  Cliquez sur **Autoriser une application ou une fonctionnalité via le Pare-feu Windows**.  
-  
-3.  Dans la liste **Applications et fonctionnalités autorisées** , recherchez **Détection du débogueur distant de Visual Studio**. Si l’option est répertoriée, assurez-vous qu’elle est sélectionnée et qu’un ou que plusieurs types de réseau sont également sélectionnés.  
-  
-4.  Si l’option **Détection du débogueur distant de Visual Studio** n’est pas répertoriée, cliquez sur **Autoriser une autre application**. Si vous n’apparaissent toujours pas dans le **ajouter une application** fenêtre, cliquez sur **Parcourir** et accédez à  **\<répertoire d’installation de Visual Studio > \Common7\IDE\Remote Debugger**. Recherchez le dossier approprié pour l’application (x86, x64, Appx), puis sélectionnez **msvsmon.exe**. Cliquez ensuite sur **Ajouter**.  
-  
-5.  Dans le **applications et fonctionnalités autorisées** liste, sélectionnez **débogueur distant Visual Studio**. Cochez un ou plusieurs types de réseau (**Domaine, Domestique/entreprise (privé), Public**) avec lesquels vous souhaitez que Remote Debugging Monitor communique. Les types doivent inclure le réseau auquel l’ordinateur Visual Studio est connecté. 
-
-### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-remote-computer"></a>Vérifiez que les ports sont ouverts dans le pare-feu Windows sur l’ordinateur distant  
- Les composants de débogage distant peuvent être installés sur l’ordinateur distant ou exécutés à partir d’un répertoire partagé. Le pare-feu de l’ordinateur distant doit être configuré dans les deux cas. Les composants de débogage distants sont situés dans :  
-  
- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Remote Debugger**  
-  
- Les instructions pour configurer le Pare-feu Windows diffèrent légèrement en fonction des systèmes d’exploitation. Sur Windows 8/8.1, Windows 10 et Windows Server 2012, le mot **application** est utilisé ; sur Windows 7 ou Windows Server 2008, le mot **programme** est utilisé ;  Dans les étapes suivantes, nous allons utiliser le mot **application**.  
-  
-1.  Ouvrez la page Pare-feu Windows. (Dans la zone de recherche du menu **Démarrer** , tapez **Pare-feu Windows**.)  
-  
-2.  Cliquez sur **Autoriser une application ou une fonctionnalité via le Pare-feu Windows**.  
-  
-3.  Dans le **applications et fonctionnalités autorisées** liste, recherchez **débogueur distant Visual Studio**. Si l’option est répertoriée, assurez-vous qu’elle est sélectionnée et qu’un ou que plusieurs types de réseau sont également sélectionnés.  
-  
-4.  Si **débogueur distant Visual Studio** est ne pas répertorié, cliquez sur **autoriser une autre application**. Si vous n’apparaissent toujours pas dans le **ajouter une fenêtre de l’application**, cliquez sur **Parcourir** et accédez à  **\<répertoire d’installation de Visual Studio > \Common7\IDE\Remote Debugger**. Recherchez le dossier approprié pour l’application (x86, x64, Appx), puis sélectionnez **msvsmon.exe**. Cliquez ensuite sur **Ajouter**.  
-  
-5.  Dans le **applications autorisées** liste, sélectionnez **débogueur distant Visual Studio**. Cochez un ou plusieurs types de réseau (**Domaine, Domestique/entreprise (privé), Public**) avec lesquels vous souhaitez que Remote Debugging Monitor communique. Les types doivent inclure le réseau auquel l’ordinateur Visual Studio est connecté. 
-
-### <a name="managed-or-native-compatibility-mode-open-additional-ports-on-the-remote-computer"></a>(Mode de compatibilité managé ou natif) Ouvrir des ports supplémentaires sur l’ordinateur distant
-
-Si vous utilisez le mode de compatibilité pour le débogueur (**Outils > Options > débogage**), des ports supplémentaires seront doivent être ouverts. Mode de compatibilité permet à une version héritée du débogueur et des ports différents sont requis.
-
-> [!NOTE]
-> L’ancienne version du débogueur est le débogueur de Visual Studio 2010.
-  
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|  
 |-|-|-|-|  
 |135, 139, 445|Sortant|TCP|Requis.|  
 |137, 138|Sortant|UDP|Obligatoire.|  
+
+Si votre stratégie de domaine nécessite la communication réseau soit effectuée via IPSec, vous devez ouvrir des ports supplémentaires sur Visual Studio et les ordinateurs distants. Pour déboguer sur un serveur de web IIS distant, ouvrez le port 80 sur l’ordinateur distant.
+
+|**Ports**|**Entrant/sortant**|**Protocole**|**Description**|  
+|-|-|-|-|  
 |500, 4500|Sortant|UDP|Requis si votre stratégie de domaine nécessite que la communication réseau soit effectuée via IPSec.|  
-|80|Sortant|TCP|Requis pour le débogage du serveur web.|
+|80|Sortant|TCP|Requis pour déboguer le serveur web.|
+
+Pour permettre à des applications spécifiques via le pare-feu Windows, consultez [configurer le débogage à distance via le pare-feu de Windows](#configure-remote-debugging-through-windows-firewall). 
+
+## <a name="configure-remote-debugging-through-windows-firewall"></a>Configurer le débogage à distance via le pare-feu de Windows
+
+Vous pouvez installer les outils de débogage à distance sur l’ordinateur distant, ou les exécuter à partir d’un dossier partagé. Dans les deux cas, le pare-feu de l’ordinateur distant doit être configuré correctement. 
+
+Sur un ordinateur distant, les outils de débogage distants sont dans :  
   
+*\<Répertoire d’installation de Visual Studio\>\\Common7\\IDE\\débogueur distant\\\<x86*, *x64*, ou  *AppX*\> 
+  
+### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Autoriser et configurer le débogueur distant via le pare-feu de Windows 
+  
+1. Dans Windows **Démarrer** menu, recherchez et ouvrez **Windows Firewall**, ou **pare-feu Windows Defender**. 
+  
+1. Sélectionnez **permettre à une application via le pare-feu de Windows**.  
+  
+1.  Si **débogueur distant** ou **débogueur distant Visual Studio** n’apparaît pas sous **applications et fonctionnalités autorisées**, sélectionnez **modifier les paramètres**, puis sélectionnez **autoriser une autre application**. 
+
+1.  Si l’application débogueur distant n’est pas toujours répertoriée dans le **ajouter une application** boîte de dialogue, sélectionnez **Parcourir**et accédez à  *\<répertoire d’installation de Visual Studio\> \\Common7\\IDE\\débogueur distant\\\<x86*, *x64*, ou *Appx* \> , en fonction de l’architecture appropriée pour votre application. Sélectionnez *msvsmon.exe*, puis sélectionnez **ajouter**.  
+    
+1.  Dans le **applications** liste, sélectionnez le **débogueur distant** que vous venez d’ajouter. Sélectionnez **types de réseau**, puis sélectionnez un ou plusieurs types de réseau, y compris le type de réseau pour la connexion à distance. 
+    
+1.  Sélectionnez **ajouter**, puis sélectionnez **OK**.
+
+## <a name="troubleshooting"></a>Résoudre les problèmes de la connexion de débogage à distance
+  
+Si vous ne pouvez pas attacher à votre application avec le débogueur distant, assurez-vous que les ports du pare-feu de débogage à distance, protocoles, les types de réseau et les paramètres d’application sont corrects. 
+
+- Dans le Windows **Démarrer** menu, recherchez et ouvrez **Windows Firewall**, puis sélectionnez **permettre à une application via le pare-feu de Windows**. Assurez-vous que **débogueur distant** ou **débogueur distant Visual Studio** s’affiche dans le **applications et fonctionnalités autorisées** liste avec une case à cocher activée et les types de réseau corrects sont sélectionné. Si ce n’est pas le cas, [ajouter les applications correctes et les paramètres](#configure-remote-debugging-through-windows-firewall).
+  
+- Dans le Windows **Démarrer** menu, recherchez et ouvrez **pare-feu Windows avec fonctions avancées de sécurité**. Assurez-vous que **débogueur distant** ou **débogueur distant Visual Studio** apparaît sous **règles de trafic entrant** (et éventuellement, **règles de trafic sortant**) avec une coche verte et que tous les paramètres sont corrects. 
+  
+  - Pour afficher ou modifier les paramètres de règle, cliquez sur le **débogueur distant** application dans la liste et sélectionnez **propriétés**. Utilisez le **propriétés** onglets pour activer ou désactiver la règle ou modifier le port nombres, des protocoles ou types de réseau. 
+  - Si l’application débogueur distant n’apparaît pas dans la liste des règles, [ajouter et configurer les ports corrects](#configure-ports-for-remote-debugging). 
+
 ## <a name="see-also"></a>Voir aussi  
- [Remote Debugging](../debugger/remote-debugging.md)
+[Débogage distant](../debugger/remote-debugging.md)
+
+[Affectations de port débogueur distant Visual Studio](../debugger/remote-debugger-port-assignments.md)
