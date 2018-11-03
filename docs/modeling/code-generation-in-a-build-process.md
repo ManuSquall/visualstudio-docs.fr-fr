@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409802"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967114"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 
-[Transformation de texte](../modeling/code-generation-and-t4-text-templates.md) peut être appelée dans le cadre de la [du processus de génération](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.
+[Transformation de texte](../modeling/code-generation-and-t4-text-templates.md) peut être appelée dans le cadre de la [du processus de génération](/azure/devops/pipelines/index) d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.
 
 Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l’API Visual Studio (EnvDTE) si le [hostspecific = « true »](../modeling/t4-template-directive.md) attribut est défini. Mais qui n’est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous lancez une génération serveur via Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé.
 
@@ -33,7 +33,7 @@ Pour activer les tâches de génération sur votre ordinateur de développement,
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Si [votre serveur de builds](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) s’exécute sur un ordinateur sur lequel Visual Studio n’est pas installé, copiez les fichiers suivants sur l’ordinateur de build à partir de votre ordinateur de développement. Remplacez les numéros de version plus récente pour ' *'.
+Si [votre serveur de builds](/azure/devops/pipelines/agents/agents) s’exécute sur un ordinateur sur lequel Visual Studio n’est pas installé, copiez les fichiers suivants sur l’ordinateur de build à partir de votre ordinateur de développement. Remplacez les numéros de version plus récente pour ' *'.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -236,7 +236,7 @@ Dans un modèle de texte, définissez `hostspecific` dans la directive de modèl
 The project folder is: <#= ProjectFolder #>
 ```
 
-Dans un processeur de directive, vous pouvez appeler [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+Dans un processeur de directive, vous pouvez appeler [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

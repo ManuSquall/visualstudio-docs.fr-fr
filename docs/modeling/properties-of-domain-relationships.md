@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c346001058ebfc6bdfe27ed81ee8388da06d3f53
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ec468ebedbe1d15ddff3527bcf0783b9831247e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816783"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966438"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriétés des relations de domaine
 Les propriétés dans le tableau suivant sont associées à une relation de domaine. Pour plus d’informations sur les relations de domaine, consultez [présentation des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,4 +40,4 @@ Les propriétés dans le tableau suivant sont associées à une relation de doma
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

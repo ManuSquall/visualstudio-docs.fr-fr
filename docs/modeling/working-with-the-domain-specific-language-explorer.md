@@ -11,19 +11,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 94839efcf8899c288c07de15a362b2c09d9ad13d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965159"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966620"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilisation de l'Explorateur de langage spécifique à un domaine
 Le **Explorateur DSL** affiche plusieurs types d’informations dans une arborescence. Pour plus d’informations sur la plupart des éléments dans l’Explorateur DSL, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
 
  Il comporte les nœuds suivants :
 
--   **Les générateurs de connexion**. Liste des générateurs de connexions dans le modèle.
+-   **Les générateurs de connexions**. Liste des générateurs de connexions dans le modèle.
 
 -   **Connecteurs**. Liste des éléments de diagramme de type connecteur dans le modèle.
 
@@ -35,14 +35,14 @@ Le **Explorateur DSL** affiche plusieurs types d’informations dans une arbores
 
 -   **Types de domaine**. Liste des types intégrés et externes utilisés dans le modèle.
 
--   **Éditeur de**. Une liste de **boîte à outils** onglets et les éléments qu’ils contiennent et paramètres de validation pour le modèle. Pour plus d’informations sur la validation, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+-   **Éditeur**. Une liste de **boîte à outils** onglets et les éléments qu’ils contiennent et les paramètres de validation pour le modèle. Pour plus d’informations sur la validation, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
 -   **Comportement de l’Explorateur**. Paramètres qui spécifient le comportement de l'explorateur dans le concepteur généré. Pour plus d’informations sur la personnalisation de l’Explorateur, consultez [personnalisation de l’Explorateur de modèles](../modeling/customizing-the-model-explorer.md).
 
 -   **Formes**. Liste des éléments de diagramme de type forme dans le modèle.
 
--   **Comportement de sérialisation XML**. Paramètres de sérialisation du modèle. Pour plus d’informations sur la sérialisation, consultez [personnalisation de stockage de fichier et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+-   **Comportement de sérialisation XML**. Paramètres de sérialisation du modèle. Pour plus d’informations sur la sérialisation, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

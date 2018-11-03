@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820772"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966936"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Nouveautés en matière de conception dans Visual Studio
 
@@ -40,7 +40,7 @@ Le **Architecture** menu contient maintenant une commande pour créer directemen
 
 Vous voyez maintenant l’impact de vos modifications immédiatement dans les résultats d’analyse du code en cours dans la solution chaque fois que vous enregistrez le diagramme. Vous n’êtes pas obligé d’attendre plus longtemps la fin de la commande « Valider les dépendances ».
 
-Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Des concepteurs UML ont été supprimés.
 
@@ -61,7 +61,7 @@ Toutefois, la prise en charge pour visualiser l’architecture de code .NET et C
 
 Si vous êtes un utilisateur important des concepteurs UML, vous pouvez continuer à utiliser Visual Studio 2015 ou une version antérieure alors que vous choisissez un autre outil pour vos besoins UML.
 
-Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

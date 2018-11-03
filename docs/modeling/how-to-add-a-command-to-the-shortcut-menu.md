@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9ae270e9a3a6c7b313d7bf811205b183f8c77fb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913928"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967413"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 Vous pouvez ajouter des commandes de menu à votre langage spécifique à un domaine (DSL, Domain-Specific Language) pour que vos utilisateurs puissent effectuer des tâches spécifiques à votre solution DSL. Les commandes apparaissent dans le menu contextuel quand les utilisateurs cliquent avec le bouton droit sur le diagramme. Vous pouvez définir une commande pour qu'elle apparaisse dans le menu uniquement dans des circonstances spécifiques. Par exemple, vous pouvez rendre la commande visible uniquement quand l'utilisateur clique sur des types d'éléments spécifiques ou sur des éléments qui sont dans des états spécifiques.
@@ -362,6 +362,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Guide pratique pour modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md)
-- [Exemple de code : diagrammes de Circuit](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Exemple de code : diagrammes de Circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

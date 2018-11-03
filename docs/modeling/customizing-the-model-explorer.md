@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32ee70edb27ff68d7e2ee4c83a600a8725e6c08e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929970"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966649"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour votre Concepteur de langage spécifique à un domaine comme suit :
@@ -115,4 +115,4 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

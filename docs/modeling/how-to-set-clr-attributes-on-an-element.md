@@ -13,15 +13,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ceca2556e269d554d40e025e5edcb91753149622
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1609b92e631abdaba34a18bd32d4fc6d892f7cd7
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948910"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966789"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Comment : définir des attributs CLR sur un élément
-Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajoutés à des diagrammes, des formes, des connecteurs et des éléments de domaine. Vous pouvez ajouter tout attribut qui hérite de la `System.Attribute` classe.
+Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajoutés à des diagrammes, des formes, des connecteurs et des éléments de domaine. Vous pouvez ajouter n’importe quel attribut qui hérite de la `System.Attribute` classe.
 
 ### <a name="to-add-a-custom-attribute"></a>Pour ajouter un attribut personnalisé
 
@@ -45,4 +45,4 @@ Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajou
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

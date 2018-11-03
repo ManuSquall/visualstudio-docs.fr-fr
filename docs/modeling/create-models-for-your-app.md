@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849444"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966542"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 
@@ -52,10 +52,10 @@ Pour visualiser l'architecture d'un système ou de code existant, créez les dia
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|
 |[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|Utiliser des modèles pour décrire la structure globale et le comportement de votre système et pour vous assurer qu'il répond aux besoins des utilisateurs.|
 |[Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)|Assurez-vous que votre logiciel reste cohérent avec les besoins de vos utilisateurs et avec l'architecture globale de votre système.|
-|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|
+|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser des modèles dans le développement Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|
 |[Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)|Organiser les modèles dans un projet de grande ou moyenne taille.|
 
 ## <a name="resources"></a>Ressources
 
 - [Visual Studio Visualization and Modeling Forum des outils](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Forum extensibilité Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Forum extensibilité Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

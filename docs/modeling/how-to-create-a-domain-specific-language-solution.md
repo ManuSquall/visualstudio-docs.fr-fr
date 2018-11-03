@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f138f1f809ae5a81aa97c571a147c679bacaa3b2
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838242"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967231"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio spécialisée.
@@ -134,4 +134,4 @@ Par défaut est un nom composé à partir de votre entreprise et les noms de pro
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
