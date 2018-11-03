@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835707"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967283"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -173,7 +173,7 @@ Utilisez ces tâches pour gérer les erreurs de validation dans le **liste d’e
 
 ## <a name="validate-code-automatically"></a>Valider automatiquement le code
 
-Exécutez la validation de couche chaque fois que vous exécutez une build locale. Si votre équipe utilise Azure DevOps, vous pouvez effectuer la validation de couche avec les archivages, que vous pouvez spécifier en créant une tâche MSBuild personnalisée et utiliser les rapports de build pour collecter les erreurs de validation. Pour créer des builds d’archivage contrôlé, consultez [utiliser un processus de build d’archivage contrôlé pour valider les modifications](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+Exécutez la validation de couche chaque fois que vous exécutez une build locale. Si votre équipe utilise Azure DevOps, vous pouvez effectuer la validation de couche avec les archivages, que vous pouvez spécifier en créant une tâche MSBuild personnalisée et utiliser les rapports de build pour collecter les erreurs de validation. Pour créer des builds d’archivage contrôlé, consultez [TFVC archivage contrôlé](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Pour valider automatiquement le code au cours d'une build locale
 
@@ -237,6 +237,6 @@ La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Validation de dépendances dynamique dans Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Validation de dépendances dynamique dans Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
 - [Vidéo : Valider les dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
