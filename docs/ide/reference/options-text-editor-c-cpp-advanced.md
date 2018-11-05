@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3129df5ad051641499276fd5ee76fa0afde8a7d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fd6522f80a367be33830f02a30c056531593d9ac
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234444"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220428"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.
@@ -134,6 +134,12 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 
  Désactive les tildes d’erreur IntelliSense. Les « tildes » rouges ne s’affichent pas dans la fenêtre de l’éditeur, mais l’erreur apparaît toujours dans la fenêtre Liste d’erreurs.
 
+ **Réglage auto de Unités de traduction mises en cache maximum**
+
+ Nombre maximal d’unités de traduction qui restent actives à tout moment pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.
+
+ Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](/cpp/preprocessor/phases-of-translation).
+
  **Désactiver la saisie semi-automatique des #include**
 
  Désactive la saisie semi-automatique des instructions `#include`.
@@ -141,16 +147,6 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  **Utiliser la barre oblique dans la saisie semi-automatique des #include**
 
  Déclenche la saisie semi-automatique des instructions `#include` quand « / » est utilisé. Le délimiteur par défaut est une barre oblique inverse ’\'. Le compilateur peut accepter les deux, donc utilisez cette option pour spécifier le délimiteur que votre base de code utilise.
-
- **Unités de traduction mises en cache maximum**
-
- Nombre maximal d’unités de traduction qui restent actives à tout moment pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.
-
- Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](/cpp/preprocessor/phases-of-translation).
-
- **« Point par flèche » pour la liste des membres**
-
- Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
  **Désactiver la liste de membres agressifs**
 
@@ -164,21 +160,25 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 
  Les extraits de code n’apparaissent pas dans les suggestions des listes de membres.
 
+ **Mode filtre des listes de membres**
+
+ Définit le type d’algorithme de correspondance. **Approximatif** recherche la correspondance la plus probable, car il utilise un algorithme similaire à un vérificateur d’orthographe pour rechercher les correspondances similaires, mais non identiques. **Filtrage intelligent** recherche des sous-chaînes, même si elles ne sont pas au début d’un mot. **Préfixe** recherche uniquement les sous-chaînes identiques qui démarrent au début du mot.
+
  **Désactiver la colorisation sémantique**
 
  Désactive toute la colorisation de code, à l’exception des mots clés de langage, des chaînes et des commentaires.
+
+ **Caractères de validation des listes de membres**
+
+ Spécifie les caractères qui entraînent la validation de la suggestion de liste de membres actuellement mise en surbrillance. Vous pouvez ajouter ou supprimer des caractères de la liste.
 
  **Validation intelligente de la liste des membres**
 
  Ajoute une ligne quand vous appuyez sur la touche Entrée à la fin du mot complet tapé.
 
- **Mode filtre des listes de membres**
+ **Activer la liste des membres point par flèche**
 
- Définit le type d’algorithme de correspondance. **Approximatif** recherche la correspondance la plus probable, car il utilise un algorithme similaire à un vérificateur d’orthographe pour rechercher les correspondances similaires, mais non identiques. **Filtrage intelligent** recherche des sous-chaînes, même si elles ne sont pas au début d’un mot. **Préfixe** recherche uniquement les sous-chaînes identiques qui démarrent au début du mot.
-
- **Caractères de validation des listes de membres**
-
- Spécifie les caractères qui entraînent la validation de la suggestion de liste de membres actuellement mise en surbrillance. Vous pouvez ajouter ou supprimer des caractères de la liste.
+ Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
 ## <a name="references"></a>Références
  **Désactiver la résolution**
@@ -191,12 +191,14 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 
  **Désactiver la mise en surbrillance des références**
 
+Par défaut, quand vous sélectionnez du texte, toutes les occurrences du même texte sont automatiquement mises en surbrillance dans le document actif. Vous pouvez désactiver cette fonctionnalité en définissant **Désactiver la mise en surbrillance de la référence** sur **Vrai**.
+
  ## <a name="text-editor"></a>Éditeur de texte
- **Activer Développer la portée**
+ **Activer l’entourage avec des accolades**
 
  Si cette option est activée, vous pouvez entourer le texte sélectionné d’accolades en tapant « { » dans l’éditeur de texte.
 
- **Activer Développer la priorité**
+ **Activer l’entourage avec des parenthèses**
 
  Si cette option est activée, vous pouvez entourer le texte sélectionné de parenthèses en tapant « ( » dans l’éditeur de texte.
 

@@ -18,29 +18,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ef3b173643c7bff0e1417ffc9ecfb431b06685
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944133"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219352"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Événements de build, boîte de dialogue (Visual Basic)
+
 Utilisez la boîte de dialogue **Événements de build** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements pré-build ou post-build sont exécutés. Pour plus d’informations, consultez [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
- **Ligne de commande de l’événement pré-build** Spécifie les commandes à exécuter avant le début de la génération. Pour taper de longues commandes, cliquez sur **Modifier pré-build** pour afficher la [boîte de dialogue Ligne de commande de l’événement pré-build/post-build](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+**Ligne de commande de l’événement pré-build**
+
+Spécifie les commandes à exécuter avant le début de la génération. Pour taper de longues commandes, cliquez sur **Modifier pré-build** pour afficher la [boîte de dialogue Ligne de commande de l’événement pré-build/post-build](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
 > [!NOTE]
 > Les événements pré-build ne s’exécutent pas si le projet est à jour et qu’aucune build n’est déclenchée.
 
+**Ligne de commande de l’événement post-build**
 
- **Ligne de commande de l’événement post-build** Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **Modifier post-build** pour afficher la **boîte de dialogue Ligne de commande de l’événement pré-build/post-build**.
+Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **Modifier post-build** pour afficher la boîte de dialogue **Ligne de commande de l’événement pré-build/post-build**.
 
 > [!NOTE]
 > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
+**Exécuter l’événement post-build**
 
- **Exécuter l’événement post-build** Spécifie les conditions pour l’événement post-build à exécuter, comme indiqué dans le tableau ci-dessous.
+Spécifie les conditions pour l’événement post-build à exécuter, comme indiqué dans le tableau ci-dessous.
 
 |Option|Résultat|
 |------------|------------|

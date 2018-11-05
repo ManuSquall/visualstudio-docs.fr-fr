@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746124"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244474"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -31,7 +31,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Prise en charge de la coloration syntaxique, de la saisie semi-automatique des instructions et de Naviguer vers
 
-Des fonctionnalités de l’éditeur Visual Studio, telles que la coloration syntaxique, la saisie semi-automatique des instructions et Naviguer vers, peuvent vous aider à lire, créer et modifier votre code. La capture d’écran suivante montre un exemple de modification de script Perl dans Visual Studio. La syntaxe est colorée automatiquement. Par exemple, les remarques dans le code sont colorées en vert, le code est en noir, les chemins sont en rouge et les instructions sont en bleu. L’éditeur Visual Studio applique automatiquement la coloration syntaxique à tout langage pris en charge. De plus, quand vous commencez à entrer un mot clé de langage ou un objet connu, la saisie semi-automatique affiche une liste d’instructions et d’objets possibles. La saisie semi-automatique des instructions simplifie et accélère la création du code.
+Certaines fonctionnalités de l’éditeur Visual Studio, comme la coloration syntaxique, la saisie semi-automatique des instructions (aussi connue sous le nom d’IntelliSense) et _Naviguer vers_, peuvent vous aider à écrire, lire et modifier votre code. La capture d’écran suivante montre un exemple de modification de script Perl dans Visual Studio. La syntaxe est colorée automatiquement. Par exemple, les remarques dans le code sont colorées en vert, le code est en noir, les chemins sont en rouge et les instructions sont en bleu. L’éditeur Visual Studio applique automatiquement la coloration syntaxique à tout langage pris en charge. De plus, quand vous commencez à entrer un mot clé de langage ou un objet connu, la saisie semi-automatique affiche une liste d’instructions et d’objets possibles. La saisie semi-automatique des instructions simplifie et accélère l’écriture de code.
 
 ![Coloration syntaxique dans un script Perl](../ide/media/vside_perledit.png)
 

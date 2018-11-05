@@ -32,14 +32,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081707"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220119"
 ---
-# <a name="link-task"></a>Tâche Link
+# <a name="link-task"></a>Lier la tâche
 Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (*.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).  
   
 ## <a name="parameters"></a>Paramètres  
@@ -67,7 +67,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
      Spécifie les attributs qui sont placés dans la section `dependency` du fichier manifeste.  
   
-     Pour plus d’informations, consultez [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également [Fichiers de configuration des serveurs de publication](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files).  
+     Pour plus d’informations, consultez [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également [Fichiers de configuration des serveurs de publication](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).  
   
 -   **AdditionalOptions**  
   
@@ -87,7 +87,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **AllowIsolation**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, le système d’exploitation recherche et charge le manifeste. Si `false`, indique que les DLL sont chargées comme s’il n’existait pas de manifeste.  
   
@@ -95,7 +95,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **AssemblyDebug**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, émet l’attribut **DebuggableAttribute** avec le suivi des informations de débogage, et désactive les optimisations JIT. Si `false`, émet l’attribut **DebuggableAttribute**, mais désactive le suivi des informations de débogage et active les optimisations JIT.  
   
@@ -125,7 +125,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **BuildingInIDE**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si true, indique que MSBuild est appelé à partir de l’IDE. Dans le cas contraire, indique que MSBuild est appelé à partir de la ligne de commande.  
   
@@ -183,11 +183,11 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **CLRUnmanagedCodeCheck**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Spécifie si l’Éditeur de liens applique **SuppressUnmanagedCodeSecurityAttribute** aux appels P/Invoke générés par l’Éditeur de liens à partir du code managé dans les DLL natives.  
   
-    Pour plus d’informations, consultez l’article [/CLRUNMANAGEDCODECHECK (Ajouter SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Pour plus d’informations, consultez [/CLRUNMANAGEDCODECHECK (Ajouter SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   
@@ -209,7 +209,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **DataExecutionPrevention**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique que la compatibilité d’un exécutable avec la fonctionnalité Prévention de l’exécution des données Windows a été testée.  
   
@@ -225,7 +225,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **DelaySign**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, signe partiellement un assembly. Par défaut, la valeur est définie sur `false`.  
   
@@ -259,7 +259,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **EnableCOMDATFolding**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, active le pliage COMDAT identique.  
   
@@ -267,7 +267,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **EnableUAC**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique que les informations de contrôle de compte d’utilisateur sont incorporées dans le manifeste du programme.  
   
@@ -283,7 +283,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **FixedBaseAddress**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, crée un programme ou une DLL qui peuvent être chargés uniquement à leur adresse de base préférée.  
   
@@ -323,7 +323,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **GenerateDebugInformation**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, crée des informations de débogage pour le fichier *.exe* ou la DLL.  
   
@@ -331,7 +331,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **GenerateManifest**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, crée un fichier manifeste côte à côte.  
   
@@ -339,7 +339,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **GenerateMapFile**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, crée un *fichier de mappage*. L’extension de nom du fichier de mappage est *.map*.  
   
@@ -363,7 +363,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **IgnoreAllDefaultLibraries**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique à l’Éditeur de liens de supprimer une ou plusieurs bibliothèques par défaut de la liste de recherche des bibliothèques lors de la résolution des références externes.  
   
@@ -371,7 +371,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **IgnoreEmbeddedIDL**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, spécifie que les attributs IDL définis dans le code source ne doivent pas être traités dans un fichier *.idl*.  
   
@@ -379,7 +379,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **IgnoreImportLibrary**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, spécifie que la bibliothèque d’importation générée par cette configuration ne doit pas être importée dans des projets dépendants.  
   
@@ -395,7 +395,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **ImageHasSafeExceptionHandlers**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, l’Éditeur de liens produit une image uniquement s’il peut également produire un tableau des gestionnaires d’exceptions sécurisés de l’image.  
   
@@ -425,7 +425,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **LargeAddressAware**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, l’application peut gérer des adresses supérieures à 2 gigaoctets.  
   
@@ -433,7 +433,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **LinkDLL**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, génère une DLL comme fichier de sortie principal.  
   
@@ -459,7 +459,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **LinkIncremental**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, active les liens incrémentiels.  
   
@@ -467,7 +467,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **LinkLibraryDependencies**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, spécifie que les sorties de bibliothèque émanant des dépendances du projet sont automatiquement liées.  
   
@@ -475,7 +475,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **LinkStatus**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, spécifie que l’Éditeur de liens doit afficher un indicateur de progression qui montre le pourcentage d’exécution du lien.  
   
@@ -513,7 +513,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **MapExports**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique à l’Éditeur de liens d’inclure les fonctions exportées dans un fichier de mappage.  
   
@@ -573,7 +573,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **NoEntryPoint**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, crée une DLL de ressource uniquement.  
   
@@ -587,7 +587,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **OptimizeReferences**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, élimine les fonctions et/ou les données qui ne sont jamais référencées.  
   
@@ -603,7 +603,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **PerUserRedirection**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true` et si l’inscription de la sortie est activée, force les entrées de Registre écrites dans **HKEY_CLASSES_ROOT** à être redirigées vers **HKEY_CURRENT_USER**.  
   
@@ -615,7 +615,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **PreventDllBinding**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, indique à *Bind.exe* que l’image liée ne doit pas être associée.  
   
@@ -647,7 +647,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **RandomizedBaseAddress**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, génère une image exécutable qui peut être redéfinie de façon aléatoire au moment du chargement en utilisant la fonctionnalité de *randomisation du format d’espace d’adresse* (ASLR) de Windows.  
   
@@ -655,7 +655,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **RegisterOutput**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, inscrit la sortie principale de cette génération.  
   
@@ -669,7 +669,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **SetChecksum**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, définit la somme de contrôle dans l’en-tête d’un fichier *.exe*.  
   
@@ -769,7 +769,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique à l’Éditeur de liens de ne pas inclure dans l’image finale de table IAT (Import Address Table).  
   
@@ -777,7 +777,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **SupportUnloadOfDelayLoadedDLL**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique à la fonction d’assistance de chargement différé de prendre en charge le déchargement explicite de la DLL.  
   
@@ -785,7 +785,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **SuppressStartupBanner**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.  
   
@@ -793,7 +793,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **SwapRunFromCD**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.  
   
@@ -801,7 +801,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **SwapRunFromNET**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.  
   
@@ -843,7 +843,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **TerminalServerAware**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, définit un indicateur dans le champ DllCharacteristics IMAGE_OPTIONAL_HEADER de l’en-tête facultatif de l’image du programme. Si cet indicateur est défini, le serveur Terminal Server n’apportera aucune modification à l’application.  
   
@@ -857,7 +857,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **TreatLinkerWarningAsErrors**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, aucun fichier de sortie n’est créé lorsque l’Éditeur de liens génère un avertissement.  
   
@@ -865,7 +865,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **TurnOffAssemblyGeneration**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, crée une image du fichier de sortie actif sans générer un assembly .NET Framework.  
   
@@ -905,7 +905,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **UACUIAccess**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, l’application ignore les niveaux de protection de l’interface utilisateur et exécute l’entrée vers des fenêtres d’autorisations supérieures sur le Bureau. Dans le cas contraire, `false`.  
   
@@ -913,7 +913,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
   
 -   **UseLibraryDependencyInputs**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, les entrées de l’outil Générateur de bibliothèques sont utilisées à la place du fichier bibliothèque lors de la liaison des sorties de bibliothèque des dépendances du projet.  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919362"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220220"
 ---
 # <a name="active-script-debugging-overview"></a>Débogage de script actif (présentation)
 Les interfaces de débogage de script actif permettent d’effectuer un débogage indépendant du langage et indépendant de l’hôte, et elles prennent en charge un large éventail d’environnements de développement.  
@@ -33,31 +33,30 @@ Figure 1
   
  Les sous-sections qui suivent décrivent chaque composant clé de débogage actif et ses interfaces associées. Toutefois, avant de continuer, nous devons définir plusieurs concepts clés du débogage actif :  
   
- application hôte  
+ **Application hôte**  
  Application qui héberge les moteurs de script et fournit un ensemble d’objets scriptable (ou « modèle objet »).  
   
- Moteur de langage  
+ **Moteur de langage**  
  Composant qui fournit les abstractions de débogage, d’analyse et d’exécution pour un langage particulier.  
   
- IDE de débogueur  
+ **IDE de débogueur**  
  Application qui fournit l’interface utilisateur de débogage en communiquant avec l’application hôte et les moteurs de langage.  
   
- Gestionnaire de débogage d’ordinateur  
- Composant qui tient à jour un registre des processus d’application pouvant être débogués.  
+ **Gestionnaire de débogage d’ordinateur** Composant qui tient à jour un registre des processus d’application pouvant être débogués.  
   
- Gestionnaire de débogage de processus  
+ **Gestionnaire de débogage de processus**  
  Composant qui tient à jour l’arborescence de documents pouvant être débogués pour une application particulière, qui effectue le suivi des threads en cours d’exécution, et ainsi de suite.  
   
- Contexte de document  
+ **Contexte de document**  
  Un contexte de document est une abstraction représentant une plage spécifique dans le code source d’un document hôte.  
   
- Contexte de code  
+ **Contexte de code**  
  Un contexte de code représente un emplacement particulier dans le code en cours d’exécution d’un moteur de langage (un « pointeur d’instruction virtuel ».)  
   
- Contexte d’expression  
+ **Contexte d’expression**  
  Contexte particulier (par exemple un frame de pile) dans lequel les expressions peuvent être évaluées par un moteur de langage.  
   
- Exploration des objets  
+ **Exploration des objets**  
  Représentation structurée et indépendante du langage du nom, du type, de la valeur et des sous-objets d’un objet, et qui convient à l’implémentation d’une interface utilisateur de « fenêtre Espion ».  
   
  Vous trouverez ci-dessous une présentation de chacun des principaux composants du débogage actif et des interfaces associées correspondantes, suivie des détails de ces interfaces.  

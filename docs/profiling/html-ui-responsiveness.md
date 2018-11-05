@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834520"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220145"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -42,7 +42,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 2.  Dans le menu **Déboguer**, choisissez **Profileur de performances**.  
   
-     Pour modifier la cible d’analyse du profileur, sélectionnez**Modifier la cible**.  
+     Pour modifier la cible d’analyse du profileur, choisissez **Modifier la cible**.  
   
      ![Modifier la cible de l’analyse](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
