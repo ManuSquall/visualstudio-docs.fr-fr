@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775102"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244383"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775102"
 **Il n’y a plus de filtre « Chemin d’accès du fichier » dans la zone de recherche de l’explorateur de tests.**
 
 Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**explorateur de tests** a été supprimé dans Visual Studio 2017, version 15.7, préversion 3. Cette fonctionnalité était très peu utilisée, et l’explorateur de tests peut récupérer des méthodes de test plus rapidement en excluant cette fonctionnalité. Si cette modification interrompt votre flux de développement, faites-le nous savoir en envoyant vos commentaires à la [Communauté des développeurs](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Supprimer des interfaces non documentées
+**Certaines API liées aux tests ne sont plus présentes dans Visual Studio 2019. Que s’est-il passé ?**
+Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient auparavant dites publiques mais qui n’ont jamais été officiellement documentées, seront retirées. Elles avaient été marquées comme étant « déconseillées » dans Visual Studio 2017 pour avertir à l’avance les personnes chargées de la maintenance des extensions. À notre connaissance, très peu d’extensions avaient trouvé ces API et en dépendaient. Il s’agit notamment de `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` et `SearchFilterTokenType`. Si ce changement affecte votre extension, faites-le nous savoir en soumettant un rapport de bogue dans la [Communauté des développeurs](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Référence NuGet sur l’adaptateur de test
 **Dans Visual Studio 2017 version 15.8, mes tests sont détectés, mais ne s’exécutent pas.**

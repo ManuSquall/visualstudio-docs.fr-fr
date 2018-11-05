@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble de Visual Studio 2017
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907519"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244448"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bienvenue dans l’IDE Visual Studio
 
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
-Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2017, et est optimisé pour le développement d’applications mobiles et multiplateformes.
+Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2017, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2017.
 
-Cet article de présentation se concentre sur Visual Studio 2017 pour Windows. Il vous présente les fonctionnalités de base de l’IDE. Nous allons voir en détail certaines opérations que vous pouvez effectuer avec Visual Studio, notamment la création d’un projet simple, l’utilisation d’[IntelliSense](using-intellisense.md) comme aide au codage et le débogage d’une application pour afficher la valeur d’une variable pendant l’exécution du programme. Nous allons également effectuer une visite guidée des différentes fenêtres Outil.
+Il existe trois éditions de Visual Studio 2017 : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+
+Cet article d’ensemble vous présente les fonctionnalités de base de l’IDE. Nous allons voir en détail certaines opérations que vous pouvez effectuer avec Visual Studio, notamment la création d’un projet simple, l’utilisation d’[IntelliSense](using-intellisense.md) comme aide au codage et le débogage d’une application pour afficher la valeur d’une variable pendant l’exécution du programme. Nous allons également effectuer une visite guidée des différentes fenêtres Outil.
 
 ## <a name="install-the-visual-studio-ide"></a>Installer l’IDE de Visual Studio
 

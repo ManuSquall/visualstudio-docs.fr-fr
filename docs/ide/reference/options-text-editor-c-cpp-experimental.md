@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddb535a61b654297c8b7d93ac13e1161725d769
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dc0783ad10b01e8dcc7f5f85fa627ec142334597
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234632"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218616"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 
@@ -35,12 +35,12 @@ Ces fonctionnalités sont disponibles dans une installation de Visual Studio 20
 
 La fonctionnalité IntelliSense prédictive limite le nombre de résultats affichés dans la liste déroulante IntelliSense afin que vous ne voyiez que les résultats qui sont pertinents dans le contexte. Par exemple, si vous tapez <code>int x =</code> et appelez la liste déroulante IntelliSense, vous voyez uniquement des entiers ou des fonctions qui retournent des entiers. La fonctionnalité IntelliSense prédictive est désactivée par défaut.
 
-## <a name="enable-faster-project-load"></a>Activer le chargement accéléré du projet
+## <a name="enable-faster-project-load"></a>Activer le chargement accéléré de projet
 
 **Visual Studio 2017 versions 15.3 et ultérieures** : cette fonctionnalité est désormais appelée **Activer la mise en cache du projet** et a été déplacée dans la page de propriétés [Paramètres de projet VC ++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Cette option permet à Visual Studio de mettre en cache des données de projet pour que, lors de la prochaine ouverture du projet, il puisse charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.
 
-## <a name="additional-features-in-the-visual-studio-marketplace"></a>Autres fonctionnalités dans la Place de marché Visual Studio
+## <a name="additional-features-in-the-visual-studio-marketplace"></a>Autres fonctionnalités dans Visual Studio Marketplace
 
 Vous pouvez parcourir d’autres fonctionnalités de l’éditeur de texte dans la [Place de marché Visual Studio](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads). Par exemple, les [Corrections rapides C++](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017)prennent en charge les éléments suivants :
 

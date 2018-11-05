@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945544"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050298"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -49,7 +49,8 @@ Voici quelques exemples :
 |Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible)|*?|`e.*?e` correspond à "ee" dans "feeder", mais pas à "eede".|
 |Correspond à une ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible)|+?|`e.+?e` correspond à "ente" et "erprise" dans "enterprise", mais pas au mot entier "enterprise".|
 |Ancre la chaîne de correspondance au début d'une ligne ou d'une chaîne|^|`^car` correspond au mot "car" uniquement quand il apparaît au début d’une ligne.|
-|Ancre la chaîne de correspondance à la fin d'une ligne|\r?$|`End\r?$` correspond au mot "end" uniquement quand il apparaît à la fin d’une ligne.|
+|Ancre la chaîne de correspondance à la fin d'une ligne|\r?$|`end\r?$` correspond au mot "end" uniquement quand il apparaît à la fin d’une ligne.|
+|Ancre la chaîne de correspondance à la fin du fichier|$|`end$` correspond au mot "end" uniquement quand il apparaît à la fin du fichier.|
 |Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]` correspond à "ba", "bb" et "bc".|
 |Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]` correspond à "bet" dans "between", à "ben" dans "beneath" et à "bes" dans "beside", mais pas à "below".|
 |Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". « \1 » fait référence au premier groupe d’expressions « [a-z] ».|
@@ -58,8 +59,8 @@ Voici quelques exemples :
 |Correspond à l'expression placée avant ou après le symbole.|&#124;|`(sponge\|mud) bath` correspond à "sponge bath" et à "mud bath".|
 |Crée une séquence d'échappement pour le caractère placé après la barre oblique inverse| \\ |`\^` correspond au caractère ^.|
 |Spécifie le nombre d'occurrences du caractère ou du groupe précédent|{x}, où x est le nombre d'occurrences|`x(ab){2}x` correspond à "xababx", et `x(ab){2,3}x` correspond à "xababx" et à "xabababx", mais pas à "xababababx".|
-|Met en correspondance du texte dans une classe de caractères Unicode, où « X » est le nombre Unicode. Pour plus d'informations sur les classes de caractères Unicode, consultez<br /><br /> [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` correspond à "T" et à "D" dans "Thomas Doe".|
-|Correspond à la limite d'un mot|`\b` (En dehors d’une classe de caractères, \b spécifie une limite de mot ; à l’intérieur d’une classe de caractères, \b spécifie un retour arrière.)|`\bin` correspond à "in" dans "inside", mais pas dans "pinto".|
+|Correspond à du texte dans une classe de caractères Unicode. Pour plus d'informations sur les classes de caractères Unicode, consultez<br /><br /> [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, où "X" est le numéro Unicode.|`\p{Lu}` correspond à "T" et à "D" dans "Thomas Doe".|
+|Correspond à la limite d'un mot|\b (en dehors d’une classe de caractères `\b` spécifie une limite de mot et, à l’intérieur d’une classe de caractères, `\b` spécifie un retour arrière)|`\bin` correspond à "in" dans "inside", mais pas dans "pinto".|
 |Correspond à un saut de ligne (c’est-à-dire un retour chariot suivi d’une nouvelle ligne).|\r?\n|`End\r?\nBegin` correspond à "End" et à "Begin" uniquement quand "END" est la dernière chaîne d’une ligne et "Begin" la première chaîne de la ligne suivante.|
 |Correspond à n'importe quel caractère alphanumérique|\w|`a\wd` correspond à "add" et à "a1d", mais pas à "a d".|
 |Correspond à n'importe quel espace blanc|(?([^\r\n])\s)|`Public\sInterface` correspond à l’expression "Public Interface".|
