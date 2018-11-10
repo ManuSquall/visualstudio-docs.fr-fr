@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774914"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295967"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déployer des extensions pour les outils SharePoint dans Visual Studio
 
@@ -235,13 +235,13 @@ Si vous souhaitez créer manuellement le package VSIX pour votre extension d’o
 
 4.  Modifiez le fichier extension.vsixmanifest :
 
-    -   Ajouter un `Microsoft.VisualStudio.MefComponent` élément sous le `Assets` élément et définissez la valeur du nouvel élément pour le chemin d’accès relatif de l’assembly qui implémente votre extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).
+    -   Ajouter un `Microsoft.VisualStudio.MefComponent` élément sous le `Assets` élément et définissez la valeur du nouvel élément pour le chemin d’accès relatif de l’assembly qui implémente votre extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Si votre extension inclut une commande SharePoint qui appelle le modèle d’objet serveur pour SharePoint, ajoutez un `Microsoft.VisualStudio.Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly qui implémente la commande SharePoint dans le package VSIX. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    -   Si votre extension inclut une commande SharePoint qui appelle le modèle d’objet serveur pour SharePoint, ajoutez un `Microsoft.VisualStudio.Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly qui implémente la commande SharePoint dans le package VSIX. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Si votre extension inclut un modèle de projet ou un modèle d’élément, ajoutez un `ProjectTemplate` ou `ItemTemplate` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif du dossier qui contient le modèle dans le package VSIX. Pour plus d’informations, consultez [ProjectTemplate, élément (schéma VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1) et [ItemTemplate, élément (schéma VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).
+    -   Si votre extension inclut un modèle de projet ou un modèle d’élément, ajoutez un `ProjectTemplate` ou `ItemTemplate` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif du dossier qui contient le modèle dans le package VSIX. Pour plus d’informations, consultez [ProjectTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) et [ItemTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Si votre extension inclut un Assistant personnalisé pour un modèle de projet ou un modèle d’élément, ajoutez un `Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly dans le package VSIX et définissez le `AssemblyName` attribut nom d’assembly complet (y compris la version, culture et jeton de clé publique). Pour plus d’informations, consultez [dépendance, élément (schéma VSX)](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    -   Si votre extension inclut un Assistant personnalisé pour un modèle de projet ou un modèle d’élément, ajoutez un `Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly dans le package VSIX et définissez le `AssemblyName` attribut nom d’assembly complet (y compris la version, culture et jeton de clé publique). Pour plus d’informations, consultez [dépendance, élément (schéma VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Exemple
 

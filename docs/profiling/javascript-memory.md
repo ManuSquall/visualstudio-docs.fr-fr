@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911315"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221033"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -355,15 +355,15 @@ if (performance && performance.mark) {
   
 -   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Exemple :  
   
-    -   l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) peut entraîner ce problème.  
+    -   l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) peut entraîner ce problème.  
   
-    -   Certains objets peuvent fournir une méthode `dispose` et des recommandations d'utilisation. Par exemple, appelez `dispose` sur [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) si vous appelez la méthode `createFiltered` de la liste, avant de quitter une page.  
+    -   Certains objets peuvent fournir une méthode `dispose` et des recommandations d'utilisation. Par exemple, appelez `dispose` sur [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si vous appelez la méthode `createFiltered` de la liste, avant de quitter une page.  
   
     -   Vous devrez peut-être supprimer un ou plusieurs détecteurs d'événements. Pour plus d'informations, consultez [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
--   Examinez la dernière partie de [cette vidéo](http://channel9.msdn.com/Events/Build/2013/3-316) dans la conférence Build 2013 sur l'analyseur de mémoire JavaScript.  
+-   Examinez la dernière partie de [cette vidéo](https://channel9.msdn.com/Events/Build/2013/3-316) dans la conférence Build 2013 sur l'analyseur de mémoire JavaScript.  
   
--   Lisez [Gestion de la mémoire dans les applications UWP](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+-   Lisez [Gestion de la mémoire dans les applications UWP](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 -   Envisagez de modifier temporairement le code pour isoler les problèmes. Vous pouvez, par exemple, décider d'effectuer les opérations suivantes :  
   

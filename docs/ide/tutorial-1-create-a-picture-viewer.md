@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672156"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : créer une visionneuse d'images
 
@@ -42,7 +42,7 @@ Quand vous avez terminé, votre programme se présente comme dans l’image suiv
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du tutoriel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du tutoriel](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
 ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Guide pratique pour créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Guide pratique pour créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 

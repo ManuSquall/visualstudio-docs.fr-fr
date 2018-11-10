@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86c7171b781f85ae4679209519267adcadcc090
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8b608b41ea4fd1b5b7544604e8d04bed02361b06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573308"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220864"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Guide pratique pour sérialiser les informations de symboles
 Vous pouvez sérialiser les symboles nécessaires à l’analyse de votre application. La sérialisation de symboles permet d’ajouter des symboles au fichier .*vsp*. L’ajout d’informations de symboles au fichier .*vsp* permet aux autres utilisateurs d’analyser un rapport de performances sans avoir accès aux symboles d’origine. Si les symboles ne sont pas sérialisés, vous devez disposer des fichiers .*exe* et .*pdb* instrumentés d’origine pour analyser le fichier .*vsp*.  
@@ -38,4 +38,4 @@ Vous pouvez sérialiser les symboles nécessaires à l’analyse de votre applic
 ## <a name="see-also"></a>Voir aussi  
  [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Guide pratique pour enregistrer des fichiers de rapports analysés](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Guide pratique pour enregistrer des fichiers de rapports analysés](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

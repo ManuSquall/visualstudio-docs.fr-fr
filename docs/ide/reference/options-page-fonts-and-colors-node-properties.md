@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05724c81b9983414c4e0c86870b630e29c33ade3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 94a253d6e723cfa810ada9a7384fe1cda0826ac4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926577"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672261"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Page Options, Polices et couleurs, propriétés de nœud
 Ce document décrit les propriétés de police et de couleur d’une fenêtre Outil qui est inscrite pour apparaître sous **Polices et couleurs** dans la catégorie **Environnement** de la boîte de dialogue **Options**. La nature dynamique des groupes d’éléments colorables, qui peuvent changer si des packages VS sont installés ou désinstallés, est prise en charge.
@@ -44,7 +44,7 @@ Ce document décrit les propriétés de police et de couleur d’une fenêtre Ou
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôle des paramètres de la boîte de dialogue Options](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Détermination des noms d’éléments de propriété dans les pages Options](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Contrôle des paramètres de la boîte de dialogue Options](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Détermination des noms d’éléments de propriété dans les pages Options](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Page Options, Propriétés du nœud Environnement](../../ide/reference/options-page-environment-node-properties.md)
 - [Page Options, Propriétés du nœud Éditeur de texte](../../ide/reference/options-page-text-editor-node-properties.md)

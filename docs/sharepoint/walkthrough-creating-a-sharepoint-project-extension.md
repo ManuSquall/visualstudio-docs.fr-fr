@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893427"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295980"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : Créer une extension de projet SharePoint
   Cette procédure pas à pas illustre comment créer une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet tels que quand un projet est ajouté, supprimé ou renommé. Vous pouvez également ajouter des propriétés personnalisées ou répondre lorsqu’une valeur de propriété change. Contrairement aux extensions d’élément de projet, les extensions de projet ne peut pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension de charge tout type de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -131,7 +131,7 @@ ms.locfileid: "49893427"
   
 1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez le **ouvrir** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le fichier dans le Concepteur de manifeste. Les informations qui apparaissent dans le **métadonnées** onglet apparaît également dans le **Extensions et mises à jour**. Tous les packages VSIX requièrent le fichier extension.vsixmanifest. Pour plus d’informations sur ce fichier, consultez [VSIX Extension schéma 1.0 référence](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le fichier dans le Concepteur de manifeste. Les informations qui apparaissent dans le **métadonnées** onglet apparaît également dans le **Extensions et mises à jour**. Tous les packages VSIX requièrent le fichier extension.vsixmanifest. Pour plus d’informations sur ce fichier, consultez [VSIX Extension schéma 1.0 référence](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  Dans le **Product Name** , entrez **propriété de projet personnalisé**.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49893427"
 6.  Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Cette valeur correspond à la `MEFComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Cette valeur correspond à la `MEFComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  Dans le **Source** , choisissez le **un projet dans la solution actuelle** case d’option.  
   

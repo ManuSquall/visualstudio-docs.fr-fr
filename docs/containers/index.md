@@ -5,12 +5,12 @@ description: Apprenez à créer et gérer des services et des applications basé
 ms.topic: hub-page
 featureFlags:
 - clicktale
-ms.openlocfilehash: a05798bd66176f6ac94964b65792e7a5ed7d74f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fceea4bbdd3f0964c95cd5d94a3b6a1fbe78c1bc
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636067"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000189"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -120,7 +120,7 @@ ms.locfileid: "42636067"
                                                 <div class="cardText">
                                                     <h3>Visual Studio Tools</h3>
                                                     <ul class="noBullet">
-                                                        <li><a class="barLink" href="https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Outils Docker dans Visual Studio</a></li>
+                                                        <li><a class="barLink" href="/visualstudio/docker/"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Outils Docker dans Visual Studio</a></li>
                                                         <li><a class="barLink" href="https://docs.microsoft.com/visualstudio/install/build-tools-container"><img src="https://docs.microsoft.com/media/common/i_build.svg" alt="">Exécution d’outils de build dans un conteneur</a></li>
                                                         <li><a class="barLink" href="/visualstudio/deployment/tutorial-kubernetes-tools"><img src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" alt="">Visual Studio Tools pour Kubernetes</a></li>
                                                     </ul>

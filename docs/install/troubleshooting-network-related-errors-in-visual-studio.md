@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865777"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672312"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Résolution des erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -69,7 +69,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
      OU
 
-- Vous pouvez également suivre les instructions fournies dans le billet de blog [Comment se connecter via un proxy Web authentifié](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx), qui vous expliquent comment ajouter du code pour utiliser le proxy.
+- Vous pouvez également suivre les instructions fournies dans le billet de blog [Comment se connecter via un proxy Web authentifié](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/), qui vous expliquent comment ajouter du code pour utiliser le proxy.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erreur : « La connexion sous-jacente a été fermée »
 

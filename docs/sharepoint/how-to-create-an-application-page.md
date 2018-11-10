@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eefbb12584cdff2bb32b9d4406c916969ec435c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118859"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296201"
 ---
 # <a name="how-to-create-an-application-page"></a>Comment : créer une page d’application
   Vous pouvez créer une page web ASP.NET pour un ou plusieurs sites SharePoint. Dans SharePoint, ces pages sont appelés des pages d’application. Contrairement à une page de site, une page d’application contient le code qui s’exécute derrière la page. Pour plus d’informations, consultez [créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
@@ -46,7 +46,7 @@ ms.locfileid: "37118859"
   
      Visual Studio ajoute plusieurs fichiers et dossiers à votre projet. Pour plus d’informations sur ces fichiers, consultez [créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
-     Dans le **Source** vue du concepteur Visual Web Developer, le fichier de page ASP.NET s’affiche. Vous pouvez concevoir la page en ajoutant des contrôles à partir de la **boîte à outils** et en les plaçant sur des espaces réservés de contenu. Pour plus d’informations, consultez [vue de Source, le Concepteur de pages Web](http://msdn.microsoft.com/en-us/5911396b-fe51-4150-9ff1-b085f812862f).  
+     Dans le **Source** vue du concepteur Visual Web Developer, le fichier de page ASP.NET s’affiche. Vous pouvez concevoir la page en ajoutant des contrôles à partir de la **boîte à outils** et en les plaçant sur des espaces réservés de contenu. Pour plus d’informations, consultez [vue de Source, le Concepteur de pages Web](/previous-versions/aspnet/ms178154\(v\=vs.100\)).  
   
 7.  Si vous souhaitez gérer les événements de contrôle, ajoutez le code au fichier de code pour la page d’application.  
   

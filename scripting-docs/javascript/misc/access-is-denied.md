@@ -1,5 +1,5 @@
 ---
-title: L’accès est refusé | Documents Microsoft
+title: L’accès est refusé | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -19,23 +19,23 @@ ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9c097cd09712d19acf5a0e4999b5c7a47469f958
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632729"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295161"
 ---
 # <a name="access-is-denied"></a>Accès refusé
 Un script a essayé d'accéder aux données à partir d'une source autre que l'hôte de la page actuelle. La stratégie d'origine suivie par Internet Explorer et d'autres navigateurs permet aux scripts d'accéder aux données uniquement à partir de sources avec les mêmes schéma, hôte et port de l'URL de la page actuelle.  
   
- Par exemple, si la page actuelle est https://employees.mycompany.com, vous ne pouvez pas accéder aux données à partir des URL suivantes :  
+ Par exemple, si la page actuelle est `https://employees.mycompany.com`, vous ne pouvez pas accéder aux données à partir des URL suivantes :  
   
--   http://data.contoso.com, car elle utilise HTTP et non HTTPS.  
+-   `http://data.contoso.com`, car il est à l’aide de HTTP au lieu de HTTPS.  
   
--   https://somedatasource.com, car il s'agit d'un autre domaine.  
+-   `https://somedatasource.com`, s’agissant d’un autre domaine.  
   
--   https://employees.mycompany.com:8888, car elle utilise un port différent.  
+-   `https://employees.mycompany.com:8888`, car il utilise un port différent.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

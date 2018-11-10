@@ -1,7 +1,7 @@
 ---
-title: Afficher les DLL et les exécutables dans le débogueur | Microsoft Docs
+title: Afficher les DLL et les exécutables dans la fenêtre Modules | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,56 +25,59 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f582c435239c83503b179d6bb5e142936a41cb4b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279009"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296266"
 ---
-# <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Afficher les DLL et les exécutables à l’aide de la fenêtre Modules dans le débogueur Visual Studio
+# <a name="view-dlls-and-executables-in-the-modules-window"></a>Afficher les DLL et les exécutables dans la fenêtre Modules
  
-Le **Modules** fenêtre répertorie les DLL et les fichiers exécutables (EXE) qui sont utilisés par votre programme et affiche les informations pertinentes pour chacun. 
+Pendant le débogage de Visual Studio, le **Modules** fenêtre répertorie et affiche des informations sur les DLL et les fichiers exécutables (*.exe* fichiers) utilise votre application. 
 
 > [!NOTE]
->  Cette fonctionnalité n’est pas disponible pour le débogage de script ou SQL. 
+> La fenêtre Modules n’est pas disponible pour le débogage de script ou SQL. 
   
-### <a name="to-display-the-modules-window"></a>Pour afficher la fenêtre Modules  
+## <a name="use-the-modules-window"></a>Utiliser la fenêtre Modules
+
+Pour ouvrir la fenêtre Modules, pendant que vous déboguez, sélectionnez **déboguer** > **Windows** > **Modules**. 
   
--   Pendant le débogage, sélectionnez **Déboguer > Windows** puis cliquez sur **Modules**.  
+Par défaut, le **Modules** fenêtre trie les modules par ordre de chargement. Pour trier par n’importe quelle colonne de la fenêtre, sélectionnez l’en-tête en haut de la colonne.  
   
-     Par défaut, le **Modules** fenêtre trie les modules par ordre de chargement. Cependant, vous pouvez choisir d'effectuer le tri en fonction d'une autre colonne.  
+## <a name="load-symbols"></a>Charger les symboles  
+
+Le **état du symbole** colonne dans le **Modules** fenêtre montre quels modules ont chargé des symboles de débogage. Si l’état est **chargement des symboles ignoré**, **ne peut pas trouver ou ouvrir le fichier PDB**, ou **chargement désactivé par le paramètre include/exclude**, vous pouvez charger manuellement les symboles. Pour plus d’informations sur le chargement et l’utilisation de symboles, consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+**Pour charger des symboles manuellement :**  
+
+1. Dans le **Modules** fenêtre, avec le bouton droit, le module pour lequel des symboles n’est pas chargé. 
+   
+   - Sélectionnez **charger les informations de symboles** pour plus d’informations sur la raison n’a pas charger les symboles. 
+   
+   - Sélectionnez **charger les symboles** pour charger manuellement les symboles.  
+   
+1. Si les symboles ne se chargent pas, sélectionnez **paramètres des symboles** pour ouvrir le **Options** boîte de dialogue et spécifier ou modifier des emplacements le chargement des symboles. 
+   
+   Vous pouvez télécharger des symboles à partir des serveurs de symboles publics de Microsoft ou d’autres serveurs ou charger des symboles à partir d’un dossier sur votre ordinateur. Pour plus d’informations, consultez [spécifier des emplacements de symboles et le comportement de chargement](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior).   
+
+**Pour modifier les paramètres de comportement de chargement des symboles :**  
+
+1. Dans le **Modules** fenêtre, avec le bouton droit n’importe quel module.  
+   
+1. Sélectionnez **paramètres des symboles**.  
   
-### <a name="to-sort-by-any-column"></a>Pour trier selon une colonne  
+1. Sélectionnez **charger tous les symboles**, ou sélectionnez les modules à inclure ou exclure.  
   
--   Cliquez sur le bouton en haut de la colonne.  
+1. Sélectionnez **OK**. Modifications prennent effet dans la prochaine session de débogage.  
   
-     Vous pouvez charger des symboles ou spécifier un chemin d’accès de symboles à partir de la **Modules** fenêtre en utilisant le menu contextuel.  
-  
-## <a name="loading-symbols"></a>Chargement de symboles  
- Dans le **Modules** fenêtre, vous pouvez voir les modules qui possèdent des symboles chargés de débogage. Cette information s’affiche dans le **état du symbole** colonne. Si l’état indique que **ignoré loadingCannot trouver ou d’ouvrir le fichier PDB**, ou **chargement désactivé par le paramètre include/exclude**, vous pouvez demander au débogueur de télécharger des symboles à partir des symboles publics Microsoft serveurs ou pour charger des symboles à partir d’un répertoire de symboles sur votre ordinateur. Pour plus d’informations, consultez [spécifier le symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-#### <a name="to-load-symbols-manually"></a>Pour charger manuellement les symboles  
-  
-1.  Dans le **Modules** fenêtre, avec le bouton droit un module pour lequel les symboles n’ont pas chargés.  
-  
-2.  Pointez sur **charger les symboles depuis** puis cliquez sur **serveurs de symboles Microsoft** ou **chemin des symboles**.  
-  
-#### <a name="to-change-symbol-load-settings"></a>Pour modifier les paramètres de chargement de symboles  
-  
-1.  Dans le **Modules** fenêtre, avec le bouton droit n’importe quel module.  
-  
-2.  Cliquez sur **paramètres des symboles**.  
-  
-     Vous pouvez maintenant modifier les paramètres de chargement de symboles, comme décrit dans [spécifier des emplacements de symboles et le comportement de chargement](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Les modifications seront appliquées lorsque vous redémarrerez la session de débogage.  
-  
-#### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Pour modifier le chargement des symboles pour un module spécifique  
-  
+**Pour modifier le comportement d’un module spécifique de chargement de symboles :**  
+
 1.  Dans le **Modules** fenêtre, cliquez sur le module.  
-  
-2.  Pointez sur **paramètres de chargement des symboles automatique** puis cliquez sur **toujours charger manuellement** ou **par défaut**. Les modifications seront appliquées lorsque vous redémarrerez la session de débogage.  
+
+1.  Dans le menu contextuel, sélectionnez ou désélectionnez **charge automatiquement**. Modifications prennent effet dans la prochaine session de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interruption de l’exécution](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

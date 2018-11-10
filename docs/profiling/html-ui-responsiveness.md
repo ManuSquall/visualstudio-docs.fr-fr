@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220145"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221046"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>Informations supplémentaires  
   
--   Visionnez [cette vidéo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conférence Build 2013 sur le profileur de réactivité de l’interface utilisateur.  
+-   Visionnez [cette vidéo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conférence Build 2013 sur le profileur de réactivité de l’interface utilisateur.  
   
--   Prenez connaissance des conseils sur les performances pour les applications UWP générées pour Windows en JavaScript. Pour plus d’informations, consultez [Bonnes pratiques en matière de performances pour les applications UWP en JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Prenez connaissance des conseils sur les performances pour les applications UWP générées pour Windows en JavaScript. Pour plus d’informations, consultez [Bonnes pratiques en matière de performances pour les applications UWP en JavaScript](/previous-versions/windows/apps/hh465194\(v\=win.10\)).  
   
--   Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](/previous-versions/windows/apps/hh781217\(v\=win.10\)).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

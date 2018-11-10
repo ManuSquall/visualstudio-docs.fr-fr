@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a986675a2fd239918c43fd2350713bfabee4f046
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511650"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000625"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -146,4 +146,4 @@ La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être ut
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
