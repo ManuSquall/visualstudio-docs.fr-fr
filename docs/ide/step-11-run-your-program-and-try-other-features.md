@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671922"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : exécuter votre programme et tester d'autres fonctionnalités
 Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et définir la couleur d'arrière-plan du contrôle <xref:System.Windows.Forms.PictureBox>. Pour découvrir d'autres fonctionnalités, essayez d'améliorer le programme en modifiant la couleur du formulaire, en personnalisant les boutons et la case à cocher, et en modifiant les propriétés du formulaire.
 
- Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du tutoriel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+ Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du tutoriel](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
  ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic - Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Tutoriel 1 : Créer une visionneuse d’images en C# - Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
@@ -53,7 +53,7 @@ Boîte de dialogue **Couleur**
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour en savoir plus sur la programmation dans Visual Studio, consultez [Concepts de programmation](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+-   Pour en savoir plus sur la programmation dans Visual Studio, consultez [Concepts de programmation](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
 -   Pour en savoir plus sur Visual Basic, consultez [Développement d’applications avec Visual Basic](/dotnet/visual-basic/developing-apps/index).
 

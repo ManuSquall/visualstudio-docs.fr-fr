@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670817"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Page Options, Éditeur de texte, propriétés de nœud
 Ce document décrit certaines pages (ou collections de propriétés) associées à la catégorie **Éditeur de texte**, `DTE.Properties("TextEditor", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l'appel utilisé pour accéder à la collection `Properties`, et le tableau figurant dans chaque sous-section répertorie les propriétés présentes dans la collection.
 
- Les macros Visual Basic dans [Contrôle des paramètres de la boîte de dialogue Options](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) montrent comment afficher des options actuelles et leurs valeurs pour chaque page de la boîte de dialogue **Options**.
+ Les macros Visual Basic dans [Contrôle des paramètres de la boîte de dialogue Options](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) montrent comment afficher des options actuelles et leurs valeurs pour chaque page de la boîte de dialogue **Options**.
 
 ## <a name="general"></a>Général
  `DTE.Properties("TextEditor", "General")`
@@ -66,7 +66,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôle des paramètres de la boîte de dialogue Options](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Détermination des noms d’éléments de propriété dans les pages Options](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Contrôle des paramètres de la boîte de dialogue Options](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Détermination des noms d’éléments de propriété dans les pages Options](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Page Options, Propriétés du nœud Environnement](../../ide/reference/options-page-environment-node-properties.md)
 - [Page Options, Propriétés du nœud Polices et couleurs](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

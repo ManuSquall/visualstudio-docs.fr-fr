@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0ee3f5765c3be3228453ef6c870335bde5e999d8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326019"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295018"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informations supplémentaires pour les erreurs SharePoint
-  Vous trouverez une assistance de dépannage [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erreurs et avertissements rubriques de dépannage et les forums publics Microsoft Developer Network (MSDN) des outils SharePoint.  
+  Vous trouverez une assistance de dépannage [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erreurs et avertissements rubriques de dépannage et les forums publics des outils SharePoint.  
   
 ## <a name="troubleshoot-errors-and-issues"></a>Résolution des problèmes et erreurs
  Pour obtenir une assistance avec quelques erreurs courantes et d’autres problèmes dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] outils SharePoint, consultez les rubriques suivantes :  
@@ -41,7 +41,7 @@ ms.locfileid: "36326019"
 -   [Résoudre les problèmes de déploiement et empaquetage de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Autres ressources
- Le tableau suivant répertorie les [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] des outils SharePoint forums et autres ressources disponibles sur MSDN.  
+ Le tableau suivant répertorie les [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] forums et autres ressources disponibles des outils SharePoint.  
   
 |Terme|Définition|  
 |----------|----------------|  

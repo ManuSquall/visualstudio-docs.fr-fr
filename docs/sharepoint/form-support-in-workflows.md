@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908780"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296188"
 ---
 # <a name="form-support-in-workflows"></a>Prise en charge de formulaire dans les workflows
-  Quatre types de formulaires peuvent être utilisés dans un flux de travail : association, initiation, tâche et la modification. Ces types de formulaire peuvent être basés sur un formulaire ASPX ou un formulaire InfoPath. Le niveau de prise en charge qui [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit pour un formulaire particulier dépend de plusieurs facteurs, qui sont décrites dans les tableaux suivants. Pour plus d’informations sur les types de formulaires de flux de travail, consultez [vue d’ensemble des formulaires de flux de travail](http://go.microsoft.com/fwlink/?LinkId=185228) sur le site Web MSDN.  
+  Quatre types de formulaires peuvent être utilisés dans un flux de travail : association, initiation, tâche et la modification. Ces types de formulaire peuvent être basés sur un formulaire ASPX ou un formulaire InfoPath. Le niveau de prise en charge qui [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit pour un formulaire particulier dépend de plusieurs facteurs, qui sont décrites dans les tableaux suivants. Pour plus d’informations sur les types de formulaires de flux de travail, consultez [vue d’ensemble des formulaires de flux de travail](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Refactorisation de XML
  Lorsque vous ajoutez un formulaire d’association ou d’initiation ASPX à un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] élément de projet de flux de travail, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automatiquement refactorise le code XML dans le flux de travail *Elements.xml* à conserver l’attribut qui fait référence à l’association ou le formulaire d’initiation synchronisée chaque fois que le formulaire nom ou chemin de déploiement est mis à jour ou le formulaire est supprimé. Toutefois, lorsque vous utilisez des autres types de formulaires dans un flux de travail, tel qu’un formulaire de tâche ou de modification, le *Elements.xml* fichier n’est pas refactorisé.  
