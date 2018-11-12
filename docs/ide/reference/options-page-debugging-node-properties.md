@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920896"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670831"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.
@@ -81,10 +81,10 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôle des paramètres de la boîte de dialogue Options](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Détermination des noms d’éléments de propriété dans les pages Options](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Contrôle des paramètres de la boîte de dialogue Options](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Détermination des noms d’éléments de propriété dans les pages Options](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Page Options, Propriétés du nœud Polices et couleurs](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Page Options, Propriétés du nœud Éditeur de texte](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Général, Débogage, boîte de dialogue Options](../../debugger/general-debugging-options-dialog-box.md)
-- [Modifier & Continuer, Débogage, Boîte de dialogue Options](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [Modifier & Continuer, Débogage, Boîte de dialogue Options](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [Juste-à-temps, Débogage, boîte de dialogue Options](../../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118888"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294667"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Comment : inclure un assembly personnalisé dans une fonctionnalité BDC
   Votre projet peut référencer des assemblys à partir d’autres projets dans la même solution. Toutefois, vous devez ajouter ces assemblys dans le fichier de fonctionnalité du projet à l’aide de la **affecter les assemblys à des LobSystems référencés** boîte de dialogue.  
@@ -45,7 +45,7 @@ ms.locfileid: "37118888"
 4.  Dans le **sélectionner un Assembly** , sélectionnez l’assembly personnalisé.  
   
     > [!NOTE]  
-    >  Assemblys s’affichent uniquement dans le **affecter les assemblys à des LobSystems référencés** boîte de dialogue si vous avez ajouté une référence au projet qui contient l’assembly. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Assemblys s’affichent uniquement dans le **affecter les assemblys à des LobSystems référencés** boîte de dialogue si vous avez ajouté une référence au projet qui contient l’assembly. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 5.  Dans le **propriétés de la référence** de groupe, ouvrez la liste qui s’affiche pour le **portée de LobSystem** propriété, choisissez le système LOB des méthodes qui utilisent l’assembly personnalisé, puis choisissez le **OK**  bouton.  
   

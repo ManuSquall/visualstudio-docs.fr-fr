@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827729"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220773"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analyser l’utilisation de la mémoire sans le débogueur de Visual Studio
 Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pour effectuer les opérations suivantes :  
@@ -204,5 +204,5 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  [Mémoire JavaScript](../profiling/javascript-memory.md)  
  [Profilage dans Visual Studio](../profiling/index.md)  
  [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)  
- [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

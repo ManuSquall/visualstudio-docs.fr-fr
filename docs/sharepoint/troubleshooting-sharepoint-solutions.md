@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219781"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296045"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
-  Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail 2007 SharePoint](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail 2007 SharePoint](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrictions des jetons dans les composants WebPart visuels bac à sable
  Les composants Visual WebPart de solutions bac à sable ne peuvent pas traiter les jetons standard, tels que $SPUrl, que le runtime SharePoint prend en charge. Par conséquent, l'URL n'est pas résolue et vous ne pouvez pas avoir d'aperçu du contenu en mode Design du concepteur de composants Visual WebPart si vous y faites référence directement dans un élément de script, tel que dans l'exemple suivant :  
@@ -105,7 +105,7 @@ ms.locfileid: "50219781"
  Aucun.  
   
 ### <a name="resolution"></a>Résolution  
- Ce problème se produit en raison d’une valeur incorrecte dans le **chemin d’accès** fichier de propriété pour la configuration de définition de site webtemp, telles que *webtemp_SiteDefinitionProject1.xml*. Dans le **chemin d’accès** propriété pour le fichier webtemp, situé sous le **emplacement de déploiement**, remplacez 1033 par les paramètres régionaux appropriés [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Par exemple, pour utiliser un paramètre régional japonais modifier la valeur par 1041. Pour plus d’informations, consultez [ID de paramètres régionaux assignés par Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) sur le site Web MSDN.  
+ Ce problème se produit en raison d’une valeur incorrecte dans le **chemin d’accès** fichier de propriété pour la configuration de définition de site webtemp, telles que *webtemp_SiteDefinitionProject1.xml*. Dans le **chemin d’accès** propriété pour le fichier webtemp, situé sous le **emplacement de déploiement**, remplacez 1033 par les paramètres régionaux appropriés [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Par exemple, pour utiliser un paramètre régional japonais modifier la valeur par 1041. Pour plus d’informations, consultez [ID de paramètres régionaux assignés par Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Erreur s’affiche lorsqu’un projet de flux de travail est déployé sur un système propre
  Ce problème se produit si vous déployez un projet de flux de travail dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur un système propre. Un système propre est un ordinateur avec une nouvelle installation de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et SharePoint, sans aucun projet de flux de travail déployé.  

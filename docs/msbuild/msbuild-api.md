@@ -9,15 +9,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afe299efb63ed0e124c754d890f8a25af8f3769
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 432a918318ab02052c707c06f7d7ed726aa0eb6f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39078545"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220714"
 ---
 # <a name="use-the-msbuild-api"></a>Utiliser l’API MSBuild
 
 MSBuild fournit une surface d’API publique qui permet à votre programme d’effectuer des builds et d’inspecter des projets.
 
-La documentation de l’API MSBuild se trouve [sur MSDN](https://msdn.microsoft.com/en-us/library/mt476050(v=vs.110).aspx).
+La documentation de l’API MSBuild se trouve [sur MSDN](https://msdn.microsoft.com/library/mt476050(v=vs.110).aspx).

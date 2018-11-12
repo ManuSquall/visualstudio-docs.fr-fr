@@ -17,17 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f2c306876451ef13977fb9237d96da66bd069bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635282"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295213"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Prise en main (développement de SharePoint dans Visual Studio)
   Cette section vous permet de commencer à utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour développer des solutions SharePoint qui tirent parti de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) et [Compléments SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).
+ Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) et [Compléments SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint offre une plateforme de collaboration basée sur le web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit de nombreux modèles de projet pour créer des sites et du contenu SharePoint, y compris des définitions de listes, des flux de travail, des modèles de connectivité de données métiers et des définitions de sites. En outre, vous pouvez créer des extensions pour les outils et les projets SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 

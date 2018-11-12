@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930906"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220734"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
 Le profileur **Consommation d’énergie** de Visual Studio vous permet d’analyser la consommation d’électricité et de batterie des applications UWP sur les tablettes de faible puissance qui fonctionnent tout ou partie du temps sur batterie. Sur un périphérique alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L’optimisation de l’utilisation d’énergie peut augmenter la popularité et l’utilisation de votre application par les clients.  
@@ -54,7 +54,7 @@ Le profileur **Consommation d’énergie** de Visual Studio vous permet d’anal
   
  **Ajouter des marques au code C#, Visual Basic, C++**  
   
- Pour ajouter des marques à du code C#, Visual Basic ou C++, créez tout d’abord un objet [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Insérez ensuite un appel aux méthodes [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) aux points de votre code que vous souhaitez marquer. Utilisez [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) dans les appels.  
+ Pour ajouter des marques à du code C#, Visual Basic ou C++, créez tout d’abord un objet [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) . Insérez ensuite un appel aux méthodes [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) aux points de votre code que vous souhaitez marquer. Utilisez [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) dans les appels.  
   
  Lors de l'exécution de la méthode, une marque utilisateur est ajoutée aux données de profilage accompagnées d'un message.  
   
@@ -62,7 +62,7 @@ Le profileur **Consommation d’énergie** de Visual Studio vous permet d’anal
 > - Windows.Foundation.Diagnostics LoggingChannel implémente l’interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interface (projetée comme [System.IDisposable](/dotnet/api/system.idisposable) en C# et Visual Basic). Pour éviter la fuite de ressources du système d’exploitation, appelez [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# et Visual Basic) quand vous avez terminé d’utiliser un canal d’enregistrement.  
 >   -   Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
   
- Consultez la page [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) concernant un exemple du Kit de développement logiciel (SDK) Windows.  
+ Consultez la page [LoggingSession Sample](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) concernant un exemple du Kit de développement logiciel (SDK) Windows.  
   
  **Ajouter des marques au code JavaScript**  
   
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>Autres ressources  
   
--   Les sections **Gestion de l’état et des coûts de connexion** pour [C#/VB/C++ et XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) et [JavaScript et HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) dans le Centre de développement Windows décrivent les API Windows qui fournissent les informations de connexion réseau que votre application peut utiliser pour réduire le coût du trafic réseau.  
+-   Les sections **Gestion de l’état et des coûts de connexion** pour [C#/VB/C++ et XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) et [JavaScript et HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) dans le Centre de développement Windows décrivent les API Windows qui fournissent les informations de connexion réseau que votre application peut utiliser pour réduire le coût du trafic réseau.  
   
      Le simulateur Visual Studio pour les applications UWP vous permet de simuler les propriétés de connexion aux données des API d’informations réseau. Consultez [Exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
