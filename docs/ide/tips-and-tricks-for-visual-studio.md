@@ -1,6 +1,6 @@
 ---
 title: Raccourcis clavier Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321279"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220851"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier pour Visual Studio
 
@@ -73,6 +73,11 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 
 |Commande|Raccourci|Disponibilité de la version|
 |-|-|-|
+|Atteindre tout|**Ctrl**+**T**|
+|Accéder à Fichiers récents|**Ctrl**+**T**,**R**|
+|Ajout de plusieurs signes insertion|**Ctrl**+**Alt**+**clic**|
+|Ajout de sélections correspondantes avec plusieurs signes insertion|**Maj**+**Alt**+**Ins**|
+|Mettre le document en forme|**Ctrl**+**K**,**D**|Visual Studio 2017 version 15.8|
 |Mode de suggestion IntelliSense|**Ctrl**+**Alt**+**Espace** (Bascule)||
 |Forcer l'affichage d'IntelliSense|**Ctrl**+**J**||
 |Actions rapides|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Naviguer entre plusieurs fenêtres d'aperçu de définition|**Ctrl**+**Alt**+**-** et **Ctrl**+**Alt**+**=**||
 |Naviguer entre plusieurs résultats d'aperçu de définition|**F8** et **Maj**+**F8**||
 |Permuter entre la fenêtre de l'éditeur de code et la fenêtre Aperçu de définition|**Maj**+**Échap**||
+|Accéder à Bloc englobant|**Ctrl**+**Alt**+**Flèche haut**|
+|Accéder au problème suivant/précédent|**Alt**+**Pg préc**/**Pg suiv**|
+|Menu contextuel de navigation|**Alt**+**`**|
 
 ## <a name="toolbars"></a>Barres d'outils
 
@@ -128,4 +136,4 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)
 - [Raccourcis clavier (Azure DevOps Services et TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog de conseils et d’astuces pour Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Blog de conseils et d’astuces pour Visual Studio](https://blogs.msdn.com/b/zainnab)

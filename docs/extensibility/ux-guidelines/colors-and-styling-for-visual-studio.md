@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918023"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561710"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -141,7 +141,7 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
     {
         //get the COLORREF structure
         uint win32Color;
-        uiShell.GetVSSysColorEx(VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
+        uiShell2.GetVSSysColorEx((int)__VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
 
         //translate it to a managed Color structure
         Color myColor = ColorTranslator.FromWin32((int)win32Color);
@@ -425,7 +425,7 @@ Pour ce faire, un VSPackage doit :
 
 - **gérer les événements générés par l’IDE** en implémentant la [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) interface. L’IDE appelle la méthode appropriée suivant les modifications de l’utilisateur de la page polices et couleurs. Par exemple, il appelle le [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) méthode si une nouvelle police est sélectionnée.
 
-  **OR**
+  **OU**
 
 - **interroger l’IDE pour les modifications**. Cela est possible via l’implémenté par le système [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) interface. Bien que principalement pour la prise en charge de la persistance, le [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) méthode peut obtenir des informations de police et de couleur pour afficher les éléments. Pour plus d’informations sur les paramètres de police et couleur, consultez l’article MSDN [l’accès à stockées paramètres de police et couleur](../accessing-stored-font-and-color-settings.md).
 

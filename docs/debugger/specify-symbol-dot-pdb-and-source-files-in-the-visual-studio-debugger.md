@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850234"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349489"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 
@@ -73,7 +73,7 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
    
    - N’importe quel dossier de cache de symboles local.  
   
-   - Réseau spécifié, internet, ou les serveurs de symboles local et emplacements, tels que les serveurs de symboles Microsoft si sélectionné. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger des fichiers de symboles de débogage à partir de serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) et [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent utiliser des serveurs de symboles. 
+   - Réseau spécifié, internet, ou les serveurs de symboles local et emplacements, tels que les serveurs de symboles Microsoft si sélectionné. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger des fichiers de symboles de débogage à partir de serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) et [outils de débogage pour Windows](/windows-hardware/drivers/debugger/index) sont deux outils qui peuvent utiliser des serveurs de symboles.
       
      Vous pouvez utiliser des serveurs de symboles sont les suivantes :  
       

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671714"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
 
@@ -29,25 +29,25 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
 
 ## <a name="technologies"></a>Technologies
 
-* **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées au système d'exploitation, ainsi qu'une interface COM et des éléments de programmation d'application qui fournissent des méthodes fiables pour exposer des informations sur les éléments d'interface utilisateur. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
+* **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées dans le système d’exploitation et une interface COM. Elle contient également des éléments de programmation d’application qui fournissent des méthodes pour exposer des informations sur les éléments d’interface utilisateur. Pour plus d’informations, consultez [Microsoft Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility).
 
-* **Technologies Microsoft .NET Speech** Le kit de développement logiciel SDK Microsoft .NET Speech comprend un ensemble de contrôles Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un add-in Microsoft Internet Explorer Speech, des exemples d’applicatins et de la documentation grâce auxquels les développeurs web peuvent créer, déboguer et déploiyer des applications [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] de reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Technologies Microsoft .NET Speech** : le SDK Microsoft .NET Speech comprend un ensemble de contrôles Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un complément Speech de Microsoft Internet Explorer, des exemples d’applications et de la documentation. Les développeurs web peuvent utiliser ces outils pour créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] avec reconnaissance vocale. Les outils sont complètement intégrés à Microsoft Visual Studio, ce qui permet aux développeurs de travailler dans un environnement de développement familier. Pour plus d’informations, consultez [Speech Server](/previous-versions/office/developer/speech-technologies/ms950383\(v\=msdn.10\)).
 
-* **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d'informations, consultez [Comprendre SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).
+* **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d'informations, consultez [Comprendre SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0).
 
 ## <a name="windows-applications"></a>applications Windows
 
-* **[Procédure pas à pas : création d’une application Windows accessible](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)** Cette rubrique fournit des instructions détaillées pour inclure les cinq conditions requises pour l’accessibilité et obtenir le logo « Certifié pour Windows » dans un exemple d’application Windows.
+* **[Procédure pas à pas : création d’une application Windows accessible](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** : cet article fournit des instructions détaillées pour inclure les cinq exigences d’accessibilité et obtenir le logo « Certifié pour Windows » dans un exemple d’application Windows.
 
-* **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir l’interface utilisateur d’une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
+* **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [Recommandations en matière de conception d’interface utilisateur clavier](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
-* **Accessibilité de la console** Cet article technique décrit les API et événements qui permettent d’exposer la console dans Windows XP pour les options d’accessibilité. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
+* **Accessibilité de la console** Cet article technique décrit les API et événements qui permettent d’exposer la console dans Windows XP pour les options d’accessibilité. Pour plus d’informations, consultez [Accessibilité de la console](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Sites Web
 
--   [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web, ainsi que des conseils de design concernant l’accessibilité pour le web.
+-   [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
 
--   **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [Créer des pages web accessibles avec DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Ressources tierces
 

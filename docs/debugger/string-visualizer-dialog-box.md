@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274311"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349086"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Afficher les chaînes dans un visualiseur de chaîne dans Visual Studio
 
@@ -43,9 +43,9 @@ Pour ouvrir le visualiseur de chaîne, vous devez être suspendus pendant le dé
 
 ## <a name="view-string-visualizer-data"></a>Afficher les données de visualiseur de chaîne
 
-Dans la fenêtre visualiseur de chaîne, le **Expression** champ indique la variable ou l’expression que vous pointez sur, et le **valeur** champ affiche la valeur de chaîne. 
+Dans la fenêtre visualiseur de chaîne, le **Expression** champ indique la variable ou l’expression que vous pointez sur, et le **valeur** champ affiche la valeur de chaîne.
 
-Une valeur vide **valeur** signifie que le visualiseur choisi ne peut pas reconnaître la chaîne. Par exemple, le **visualiseur XML** montre une valeur vide **valeur** pour une chaîne de texte avec les balises XML ou une chaîne JSON. 
+Une valeur vide **valeur** signifie que le visualiseur choisi ne peut pas reconnaître la chaîne. Par exemple, le **visualiseur XML** montre une valeur vide **valeur** pour une chaîne de texte avec les balises XML ou une chaîne JSON.
 
 Pour afficher les chaînes qui le visualiseur choisi ne peut pas reconnaître, choisissez le **visualiseur de texte**. Le **visualiseur de texte** affiche le texte brut.
 
@@ -67,5 +67,7 @@ Une chaîne HTML bien formée apparaît comme s’affiché dans un navigateur, c
 
 ![Visualiseur de chaîne HTML](../debugger/media/dbg-string-visualizers-html.png "visualiseur de chaîne HTML")
 
-## <a name="see-also"></a>Voir aussi  
- [Créer des visualiseurs personnalisés (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Voir aussi
+
+- [Créer des visualiseurs personnalisés (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations)

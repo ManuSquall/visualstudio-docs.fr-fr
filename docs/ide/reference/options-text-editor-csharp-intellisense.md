@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672483"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Options, Éditeur de texte, C#, IntelliSense
 
@@ -44,11 +44,9 @@ La page d’options **IntelliSense** contient les options suivantes :
 
 - Mettre en surbrillance les parties correspondantes des éléments de liste de saisie semi-automatique
 
-- Afficher les filtres d’éléments de saisie semi-automatique
+- Afficher les filtres d’éléments de complétion
 
-- Afficher les suggestions de nom
-
-### <a name="snippets-behavior"></a>Comportement des extraits de code
+## <a name="snippets-behavior"></a>Comportement des extraits de code
 
 - Ne jamais inclure d’extrait de code
 
@@ -62,7 +60,7 @@ La page d’options **IntelliSense** contient les options suivantes :
 
    Quand cette option est sélectionnée, IntelliSense ajoute des alias pour les extraits de code C# à la liste de saisie semi-automatique à la suite d’un appui sur **?**+**Tab** après un identificateur.
 
-### <a name="enter-key-behavior"></a>Comportement de la touche Entrée
+## <a name="enter-key-behavior"></a>Comportement de la touche Entrée
 
 - Ne jamais ajouter de nouvelle ligne après Entrée
 
@@ -85,6 +83,10 @@ La page d’options **IntelliSense** contient les options suivantes :
 - Toujours ajouter une nouvelle ligne après Entrée
 
    Spécifie que si vous tapez *n’importe lequel* des caractères d’une entrée dans la liste de saisie semi-automatique et que vous appuyez ensuite sur **Entrée**, une ligne est automatiquement créée et le curseur passe à la nouvelle ligne.
+
+## <a name="show-name-suggestions"></a>Afficher les suggestions de nom
+
+   Effectue la complétion automatique du nom d’objet pour les membres que vous avez sélectionnés récemment. 
 
 ## <a name="see-also"></a>Voir aussi
 

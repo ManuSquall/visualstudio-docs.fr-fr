@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468528"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349164"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
 Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
@@ -59,7 +59,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 4.  Cliquez sur **OK**.  
   
-     Visual Studio crée un nouveau projet et affiche un nouveau formulaire dans le Concepteur Windows Forms. Pour plus d’informations, consultez [Windows Forms Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio crée un nouveau projet et affiche un nouveau formulaire dans le Concepteur Windows Forms. Pour plus d’informations, consultez [Windows Forms Designer](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).  
   
 5.  Sur le **vue** menu, sélectionnez **boîte à outils**.  
   
@@ -110,7 +110,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.  
+     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [des points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.  
   
     > [!NOTE]
     >  Vous pouvez également cliquer sur n’importe quelle ligne de code, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.  

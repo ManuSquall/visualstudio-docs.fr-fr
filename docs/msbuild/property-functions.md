@@ -163,7 +163,7 @@ Voici une liste de fonctions de propriété MSBuild :
 |long Modulo(long a, long b)|Calcule le modulo de deux longs.|
 |chaîne Escape(chaîne sans caractère d'échappement)|Place un caractère d'échappement devant la chaîne selon les règles d'échappement de MSBuild.|
 |chaîne Unescape(chaîne avec caractère d'échappement)|Enlève le caractère d'échappement de la chaîne selon les règles d'échappement de MSBuild.|
-|entier BitwiseOr(entier premier, entier second)|Effectue un `OR` au niveau du bit sur le premier et le second entier (premier | second).|
+|entier BitwiseOr(entier premier, entier second)|Effectue un `OR` au niveau du bit sur le premier et le second entier (premier &#124; second).|
 |entier BitwiseAnd(entier premier, entier second)|Effectue un `AND` au niveau du bit sur le premier et le second entier (premier & second).|
 |entier BitwiseXor(entier premier, entier second)|Effectue un `XOR` au niveau du bit sur le premier et le second entier (premier ^ second).|
 |entier BitwiseNot(entier premier)|Effectue un `NOT` au niveau du bit (~premier).|

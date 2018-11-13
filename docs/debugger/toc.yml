@@ -2,8 +2,12 @@ items:
 - name: Documentation sur le débogueur
   href: index.md
 - name: Vue d'ensemble
-  href: debugger-overview.md
-- name: Démarrages rapides
+  items:
+  - name: Qu’est-ce que le débogage ?
+    href: what-is-debugging.md
+  - name: Écrire un meilleur code C# avec Visual Studio
+    href: write-better-code-with-visual-studio.md
+- name: Guides de démarrage rapide
   items:
   - name: Présentation du débogueur
     href: debugger-feature-tour.md
@@ -13,7 +17,7 @@ items:
     href: quickstart-debug-with-cplusplus.md
   - name: Déboguer une application ASP.NET
     href: quickstart-debug-aspnet.md
-- name: Didacticiels
+- name: Tutoriels
   items:
   - name: Apprendre à déboguer avec Visual Studio
     href: getting-started-with-the-debugger.md
@@ -832,9 +836,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 7e308b631a5ce56ec065fcada6b65e11d8afe4bb
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751048"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561684"

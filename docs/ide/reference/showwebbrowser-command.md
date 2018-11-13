@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 87536df138de092948d845cf05d20af8e63ad68a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176383"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672143"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 
@@ -50,10 +50,10 @@ View.ShowWebBrowser URL [/new][/ext]
  L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant affiche la page d’accueil de MSDN Online dans un navigateur web en dehors de l’environnement IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
+ L’exemple suivant affiche la page d’accueil de Microsoft Docs dans un navigateur web en dehors de l’IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
 
 ```cmd
->View.ShowWebBrowser http://msdn.microsoft.com /ext
+>View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
 ## <a name="see-also"></a>Voir aussi
@@ -61,4 +61,4 @@ View.ShowWebBrowser URL [/new][/ext]
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120677"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000724"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3807"></a>3.8.0.7
  Publiée le 20 septembre 2018
- 
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Débogueur :**
@@ -31,7 +31,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3806"></a>3.8.0.6
  Publication : 27 août 2018
- 
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Intégration :**
@@ -40,7 +40,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3805"></a>3.8.0.5
  Publication : 20 août 2018
- 
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Intégration :**
@@ -49,13 +49,13 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3804"></a>3.8.0.4
  Publication : 14 août 2018
- 
+
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
 -   **Évaluation :**
 
     -   Ajout de la prise en charge des valeurs de pointeurs.
-    
+
     -   Ajout de la prise en charge des méthodes génériques.
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
@@ -66,7 +66,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3803"></a>3.8.0.3
  Publiée le 24 juillet 2018
- 
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Génération de projet :**
@@ -75,24 +75,24 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3802"></a>3.8.0.2
  Publication : 7 juillet 2018
- 
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Génération de projet :**
 
     -   Solution de contournement temporaire pour un bogue de performances Unity : mise en cache de MonoIslands lors de la génération des projets.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Publiée le 26 juin 2018
- 
+
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
 -   **Débogage :**
 
     -   Ajout de la prise en charge des commandes UserLog et UserBreak.
-    
+
     -   Ajout de la prise en charge du chargement différé (optimisation de la charge réseau et de la latence de réponse du débogueur).
-       
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Évaluation :**
@@ -101,19 +101,19 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ## <a name="3800"></a>3.8.0.0
  Publication : 30 mai 2018
- 
+
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
 -   **Débogage :**
 
     -   Ajout de la prise en charge de l’affichage des variables dans les constructions asynchrones.
-    
+
     -   Ajout de la prise en charge du traitement des types imbriqués durant la définition des points d’arrêt, pour empêcher les avertissements liés aux constructions du compilateur.
-    
+
 -   **Intégration :**
 
     -   Ajout de la prise en charge des grammaires textmate pour les nuanceurs (la charge de travail C++ n’est plus nécessaire pour la coloration du code Shader).
-    
+
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
 -   **Génération de projet :**
@@ -137,15 +137,15 @@ Journal des modifications Visual Studio Tools pour Unity
 -   **Débogage :**
 
     -   Ajout de la prise en charge du débogage orchestré (débogage de plusieurs lecteurs/éditeurs dans la même session Visual Studio).
-    
+
     -   Ajout de la prise en charge du débogage du lecteur USB Android.
-    
+
     -   Ajout de la prise en charge du débogage du lecteur UWP/IL2CPP.
 
 -   **Évaluation :**
 
     -   Ajout de la prise en charge des spécificateurs hexadécimaux.
-    
+
     -   Amélioration de l’évaluation de la fenêtre Espion.
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
@@ -841,9 +841,9 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
--   Corriger la gestion des thèmes Visual Studio. Auparavant, les boîtes de dialogue de thèmes noirs pouvaient apparaître vides (problèmes de connexion [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) et [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Corriger la gestion des thèmes Visual Studio. Avant, les boîtes de dialogue de thèmes noirs pouvaient apparaître vides.
 
--   Corriger le blocage d’Unity lors de la connexion du débogueur pendant la recompilation d’Unity (problèmes de connexion [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) et [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Correction du problème de blocage d’Unity lors de la connexion du débogueur pendant la recompilation par Unity.
 
 -   Corriger les points d’arrêt lors du débogage à distance des éditeurs ou des lecteurs compilés sur un autre système.
 
@@ -853,7 +853,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   Corriger la gestion de la portée des variables dans le débogueur pour éviter que des variables en direct n’apparaissent hors de portée.
 
--   Corriger la recherche de membres statiques dans l’évaluation d’expression du débogueur (problème de connexion [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Correction du problème de la recherche de membres statiques dans l’évaluation d’expression du débogueur.
 
 -   Corriger l’affichage des types dans l’évaluation d’expression du débogueur pour afficher les propriétés et les champs statiques.
 

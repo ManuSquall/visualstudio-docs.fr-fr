@@ -6,7 +6,7 @@ items:
   items:
   - name: Installer les interpréteurs Python
     href: installing-python-interpreters.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   items:
   - name: Créer une application web avec Flask
     href: ../ide/quickstart-python.md
@@ -19,7 +19,7 @@ items:
     href: quickstart-03-python-in-visual-studio-project-from-repository.md
   - name: Créer un projet à partir d’un modèle Cookiecutter
     href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
-- name: Tutoriels
+- name: Didacticiels
   items:
   - name: Python dans Visual Studio
     items:
@@ -74,11 +74,11 @@ items:
       href: python-django-web-application-project-template.md
     - name: Modèle de service cloud Azure
       href: python-azure-cloud-service-project-template.md
-  - name: Kit SDK Azure pour Python
+  - name: Kit de développement logiciel (SDK) Azure pour Python
     href: azure-sdk-for-python.md
 - name: Guides pratiques
   items:
-  - name: Gestion des environnements
+  - name: Gérer des environnements Python
     href: managing-python-environments-in-visual-studio.md
     items:
     - name: Sélectionner un interpréteur pour un projet
@@ -134,9 +134,9 @@ items:
     href: python-item-templates.md
   - name: Options
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: 49649ec3fa283eccc068ffc790b0199cf310ec23
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 25583cb5cea6c7ef971413b14ec986d08af9dab8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100950"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349255"
