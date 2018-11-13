@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176185"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349346"
 ---
 # <a name="working-with-xml-data"></a>Utilisation des données XML
 
@@ -50,11 +50,11 @@ Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur perme
 
 [Débogage XSLT](../xml-tools/debugging-xslt.md) explique comment déboguer des feuilles de style à l’aide du débogueur Visual Studio.
 
-[Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
+[Référence du standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
 
 [Créer et configurer des datasets dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fournit une explication des outils au moment du design pour la création de jeux de données.
 
-[Les services web XML en code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) explique comment créer et déployer des services web XML et comment accéder aux services web XML.
+[Les services web XML en code managé](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) explique comment créer et déployer des services web XML et comment accéder aux services web XML.
 
 ## <a name="see-also"></a>Voir aussi
 

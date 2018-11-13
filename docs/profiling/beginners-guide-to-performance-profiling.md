@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898230"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220675"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profiler les performances de votre application dans Visual Studio
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
@@ -69,7 +69,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
      ![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Pour plus d’informations sur les événements, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
+     Pour plus d’informations sur les événements, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6.  Exécutez le scénario qui doit provoquer le premier point d’arrêt.
 

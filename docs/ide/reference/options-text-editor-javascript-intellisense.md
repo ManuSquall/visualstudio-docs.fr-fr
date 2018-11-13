@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, JavaScript, IntelliSense
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,54 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ca451f4585e57c430456412e1811ddb56d8adf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670778"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Options, Éditeur de texte, JavaScript, IntelliSense
-Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils**, **Options** dans la barre de menus, et en développant ensuite **Éditeur de texte**, **JavaScript**, **IntelliSense.**
+Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils** > **Options** dans la barre de menus, puis en développant **Éditeur de texte** > **JavaScript** > **IntelliSense**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 La page **IntelliSense** contient les sections suivantes :
 
-## <a name="validation"></a>Validation
- Vous pouvez utiliser ces options pour définir comment l'éditeur JavaScript doit valider la syntaxe dans votre document.
-
-## <a name="uielement-list"></a>Liste des éléments d’interface
- **Afficher les erreurs de syntaxe**
-
- Lorsque cette case à cocher n'est pas activée, l'éditeur de code JavaScript n'affiche aucune erreur de syntaxe. Cela est utile si vous travaillez avec du code dont vous n'êtes pas l'auteur et que vous n'avez pas l'intention de corriger les erreurs de syntaxe.
-
- Lorsque cette case à cocher est activée, vous pouvez activer la case à cocher **Afficher les erreurs comme des avertissements** .
-
- **Afficher les erreurs comme des avertissements**
-
- Lorsque cette case à cocher est activée, les erreurs JavaScript sont indiquées sous forme d'avertissements et non d'erreurs dans la liste d'erreurs.
-
- **Télécharger les références distantes (par exemple, http://) pour les fichiers dans le projet Fichiers divers**
-
- Lorsque cette case à cocher est activée, et si vous disposez d'un fichier JavaScript ouvert en dehors d'un projet, Visual Studio télécharge des fichiers JavaScript distants référencés dans le fichier afin de fournir des informations IntelliSense. Si cette option est sélectionnée, les fichiers sont téléchargés lorsque vous les incluez en tant que référence dans votre fichier JavaScript.
-
-> [!NOTE]
-> Dans le cas des projets web, les fichiers distants auxquels ils font référence sont téléchargés par défaut.
-
-
 ## <a name="statement-completion"></a>Compléter automatiquement les instructions
  Vous pouvez utiliser ces options pour modifier le comportement de la saisie semi-automatique des instructions IntelliSense.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
- **Utiliser uniquement la touche Tabulation ou Entrée pour valider**
+### <a name="uielement-list"></a>Liste des éléments d’interface
+ **Utiliser uniquement la touche Tab ou Entrée pour valider**
 
- Lorsque cette case à cocher est activée, l'éditeur de code JavaScript ajoute des instructions aux éléments sélectionnés dans la liste de saisie semi-automatique uniquement lorsque vous appuyez sur la touche Tabulation ou la touche Entrée. Lorsque cette case à cocher est désactivée, d'autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante, et une accolade ouvrante ({)) peuvent également ajouter des instructions aux éléments sélectionnés.
+ Quand vous cochez cette case, l’éditeur de code JavaScript ajoute des instructions avec les éléments sélectionnés dans la liste de complétion seulement quand vous appuyez sur la touche **Tab** ou **Entrée**. Quand vous décochez cette case, d’autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante et une accolade ouvrante ({), peuvent également ajouter des instructions avec les éléments sélectionnés.
 
 ## <a name="references"></a>Références
  Vous pouvez utiliser ces options pour spécifier les types de fichiers IntelliSense .js qui sont dans la portée pour différents types de projet JavaScript. Les références IntelliSense sont généralement utilisées pour fournir une prise en charge IntelliSense pour les objets globaux. Vous pouvez également utiliser cette page pour définir l'ordre de chargement des scripts qui doivent être chargés au moment de l'exécution, et ajouter des fichiers d'extension IntelliSense.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+### <a name="uielement-list"></a>Liste des éléments d’interface
  **Groupes de référence**
 
  Cette option spécifie le type de groupe de référence. Trois groupes de référence sont pris en charge :
@@ -87,6 +65,15 @@ Cette option spécifie l'ordre dans lequel les fichiers sont chargés dans le co
 **Ajouter une référence au groupe**
 
 Cette option permet d'ajouter des fichiers IntelliSense .js supplémentaires en parcourant les fichiers appropriés.
+
+**Télécharger les références distantes (par exemple, http://) pour les fichiers dans le projet Fichiers divers**
+
+Quand cette case est cochée, et si vous avez un fichier JavaScript ouvert en dehors du contexte d’un projet, Visual Studio télécharge des fichiers JavaScript distants référencés dans le fichier pour fournir des informations IntelliSense. Si cette option est sélectionnée, les fichiers sont téléchargés lorsque vous les incluez comme référence dans votre fichier JavaScript.
+
+> [!NOTE]
+> Dans le cas des projets web, les fichiers distants auxquels ils font référence sont téléchargés par défaut.
+
+
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780426"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349622"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Comment : afficher l’onglet Développeur sur le ruban
   Pour accéder à la **développeur** onglet sur le ruban d’une application Office, vous devez le configurer pour afficher l’onglet, car il n’apparaît pas par défaut. Par exemple, vous devez afficher cet onglet pour ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> à une personnalisation au niveau du document pour Word.  
   
 > [!NOTE]  
->  Ces informations d'aide s'appliquent uniquement aux applications Office 2010 ou version ultérieure. Si vous souhaitez afficher cet onglet dans Microsoft Office System 2007, consultez la version suivante de cette rubrique [Comment : afficher l’onglet Développeur sur le ruban](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx).  
+>  Ces informations d'aide s'appliquent uniquement aux applications Office 2010 ou version ultérieure. Si vous souhaitez afficher cet onglet dans Microsoft Office System 2007, consultez la version suivante de cette rubrique [Comment : afficher l’onglet Développeur sur le ruban](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   

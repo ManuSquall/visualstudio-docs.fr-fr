@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755922"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000227"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Guide pratique pour signaler un problème avec Visual Studio 2017
 
@@ -73,7 +73,7 @@ Pour signaler un problème pour Visual Studio, vous devez lancer le rapport à p
 
 ## <a name="record-a-repro"></a>Enregistrer une reproduction
 
-Les fichiers d'image mémoire de tas et de trace nous sont utiles pour faciliter le diagnostic des problèmes. Nous vous remercions d’employer l’outil **Signaler un problème** pour enregistrer les étapes de reproduction de votre problème et envoyer les données à Microsoft. Voici comment faire :
+Les fichiers heap dump et de trace nous sont utiles pour faciliter le diagnostic des problèmes. Nous vous remercions d’employer l’outil **Signaler un problème** pour enregistrer les étapes de reproduction de votre problème et envoyer les données à Microsoft. Voici comment faire :
 
 1. Après avoir entré un titre et une description pour votre problème, sélectionnez **Suivant** afin d’accéder à l’onglet **Pièces jointes**.
 
@@ -125,7 +125,7 @@ Les fichiers d'image mémoire de tas et de trace nous sont utiles pour faciliter
 
 Si vous ne souhaitez pas ou ne pouvez pas utiliser Visual Studio pour signaler un problème, il est possible que ce dernier ait déjà été signalé et qu’une solution ait été postée dans la page de la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
 
-Si vous n’avez pas de problème à signaler mais que vous voulez faire des commentaires ou une suggestion, il existe pour cela un emplacement spécifique. Pour plus d’informations, consultez la page [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
+Si vous n’avez pas de problème à signaler, mais que vous voulez suggérer une fonctionnalité, il existe pour cela un emplacement spécifique. Pour plus d’informations, consultez la page [Suggérer une fonctionnalité](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Voir aussi
 

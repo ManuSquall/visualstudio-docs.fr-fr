@@ -1,6 +1,6 @@
 ---
-title: Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
-ms.date: 07/17/2017
+title: Création d'une interface utilisateur à l'aide du concepteur XAML
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903255"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220994"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Créer une interface utilisateur avec le concepteur XAML dans Visual Studio
 
 Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications web et Windows basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.
 
@@ -108,6 +108,9 @@ Le zoom de balisage permet de dimensionner l’affichage **XAML**. Vous pouvez e
 
 ## <a name="device-window"></a>Fenêtre Périphérique
 
+> [!NOTE]
+> Si la version de la plateforme cible (`TargetPlatformVersion`) d’une application UWP est 10.0.16299.0 ou ultérieure, la fenêtre **Appareil** n’est pas disponible.
+
 La fenêtre **Appareil** du concepteur XAML vous permet de faire des simulations à l’aide de plusieurs vues, écrans et options d’affichage pour votre projet au moment du design. La fenêtre **Appareil** est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :
 
 ![Fenêtre Périphérique](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ La fenêtre **Propriétés** vous permet de définir des valeurs de propriété 
 
 ![Fenêtre Propriétés](../designers/media/xaml_editor_prop_window.png)
 
-Plusieurs options apparaissent en haut de la fenêtre **Propriétés**. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre **Propriétés** affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Démarrage rapide : Ajout de contrôles et gestion des événements](http://go.microsoft.com/fwlink/?LinkID=247983)
+Plusieurs options apparaissent en haut de la fenêtre **Propriétés**. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre **Propriétés** affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Présentation des contrôles et des modèles](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 

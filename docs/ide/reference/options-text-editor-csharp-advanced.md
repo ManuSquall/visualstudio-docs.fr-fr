@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, C#, Avancé
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356741"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670713"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -36,7 +36,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
 - Placer les directives « System » en premier lors du tri des usings
 
-   La commande **Supprimer et trier les instructions using** du menu contextuel trie les directives `using` et place les espaces de noms « System » en haut de la liste.
+   Quand elle est sélectionnée, la commande **Supprimer et trier les instructions using** du menu contextuel trie les directives `using` et place les espaces de noms « System » en haut de la liste.
 
    Avant le tri :
 
@@ -89,9 +89,10 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using System.Linq;
    ```
    
-- Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet 
+- Suggérer des usings pour les types dans les assemblys de référence 
+- Suggérer des usings pour les types dans les packages NuGet 
 
-   Une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
+   Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 - Passer en mode Plan à l'ouverture des fichiers
 
    Quand cette option est sélectionnée, le fichier de code passe automatiquement en mode Plan, ce qui crée des blocs de code réductibles. La première fois qu’un fichier est ouvert, les blocs #regions et les blocs de code inactifs sont réduits.
+
+- Afficher les séparateurs de ligne de procédure
+
+   L’éditeur de texte indique la portée visuelle des procédures. Une ligne est tracée dans les fichiers sources *.vb* de votre projet, aux emplacements présentés dans le tableau suivant :
+
+   |Emplacement dans le fichier source .vb|Exemple d’emplacement de la ligne|
+   |---------------------------------|------------------------------|
+   |Après la fermeture d’une construction de déclaration de bloc|-   À la fin d’une classe, d’une structure, d’un module, d’une interface ou d’un enum<br />-   Après une propriété, une fonction ou un sub<br />-   Pas entre les clauses get et set d’une propriété|
+   |Après un ensemble de constructions de lignes uniques|-   Après les instructions import, avant une définition de type dans un fichier de classe<br />-   Après les variables déclarées dans une classe, avant toute procédure|
+   |Après les déclarations de lignes uniques (déclarations pas au niveau des blocs)|-   À la suite des instructions import et inherits, des déclarations de variables, des déclarations event et delegate, et des instructions declare de DLL|
 
 ## <a name="editor-help"></a>Aide de l'éditeur
 

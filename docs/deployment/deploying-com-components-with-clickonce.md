@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820460"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348745"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Déployer des composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Composants doivent être inscrits dans le monde entier et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou offrent une compatibilité côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le Windows XP ou un système d’exploitation ultérieur.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fournit un mécanisme simple et sécurisé pour le déploiement de vos applications .NET. Toutefois, si vos applications utilisent les composants COM installés, vous devez prendre des mesures supplémentaires pour les déployer. Cette rubrique décrit comment déployer des composants COM isolés et référencer des composants natifs (par exemple, à partir de Visual Basic 6.0 ou Visual C++).  
   
- Pour plus d’informations sur le déploiement des composants COM isolés, consultez « Simplify App Deployment with [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et Registration-Free COM » à [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Pour plus d’informations sur le déploiement des composants COM isolés, consultez [Simplify App Deployment with ClickOnce and Registration-Free COM](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>Registration-free COM  
  COM sans inscription est une nouvelle technologie de déploiement et d’activation des composants COM isolés. Il fonctionne en plaçant la bibliothèque de types de tous les du composant et les informations d’inscription qui sont généralement installées dans le Registre système dans un fichier XML appelé manifeste, stocké dans le même dossier que l’application.  

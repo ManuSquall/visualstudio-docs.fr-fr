@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab47830d0d6f3c221d08f6869bd8efcbe5b4ff9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859716"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348876"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -112,4 +112,4 @@ Un langage spécifique à un domaine est une notation que vous concevez dans un 
 ## <a name="see-also"></a>Voir aussi
 
 - [Nouveautés](../modeling/what-s-new-for-design-in-visual-studio.md)
-- [DevOps et Application Lifecycle Management](http://msdn.microsoft.com/Library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps et Application Lifecycle Management](/azure/devops/user-guide/devops-alm-overview)

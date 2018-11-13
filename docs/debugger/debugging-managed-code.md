@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179477"
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
@@ -35,7 +35,7 @@ Cette section décrit les problèmes de débogage courants et les techniques des
 Décrit le <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace> classes, avec lequel vous pouvez écrire des messages d’exécution pour le **sortie** fenêtre. Ces classes contiennent des méthodes de sortie qui permettent la génération d'informations sans interrompre l'exécution et la génération d'informations avec interruption de l'exécution si une condition spécifique échoue.
 
 [Assertions dans du code managé](../debugger/assertions-in-managed-code.md)  
-Décrit des assertions en code managé, qui testent les conditions que vous spécifiez comme arguments aux méthodes `Assert`. De plus, cette rubrique fournit des exemples de code, des informations sur l'utilisation des méthodes de classe  <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>, des considérations des versions Debug et Release de code, les effets secondaires, les arguments assert, la personnalisation du comportement d'assertion et les fichiers de configuration.
+Décrit des assertions en code managé, qui testent les conditions que vous spécifiez comme arguments aux méthodes `Assert`. De plus, cette rubrique fournit des exemples de code, des informations sur l’utilisation des méthodes de classe <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>, des considérations des versions Debug et Release de code, les effets secondaires, les arguments assert, la personnalisation du comportement d’assertion et les fichiers de configuration.
 
 [Instructions Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 Décrit l'instruction `Stop`, qui propose une alternative à la définition d'un point d'arrêt. Un exemple de code, ainsi que les comparaisons entre les instructions `Stop` et `End` et les instructions `Stop` et `Assert` sont également fournis.
@@ -46,7 +46,7 @@ Fournit des instructions étape par étape pour créer un Windows Form et le dé
 [Débogage de la méthode OnStart](../debugger/how-to-debug-the-onstart-method.md)  
 Fournit des exemples de code pour vous permettre de déboguer la méthode `OnStart` d'un service Windows managé. Pour déboguer la méthode `OnStart` d'un service Windows, vous devez ajouter quelques lignes de code pour simuler le service.
 
-[Le débogage en Mode mixte](../debugger/debugging-mixed-mode-applications.md)  
+[Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
 Présente les applications de débogage en mode mixte. Désigne toutes les applications qui combinent du code natif avec du code managé.
 
 [Erreur : le débogage est impossible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
@@ -68,7 +68,7 @@ Décrit comment utiliser le **tâches parallèles** et **piles parallèles** out
 [Suivi et instrumentation d’applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
 Décrit le traçage, qui vous permet de contrôler l'exécution de votre application lorsque celle-ci s'exécute, et l'instrumentation, qui implique de placer des instructions de traçage à des endroits stratégiques de votre code. Cette rubrique fournit également des liens vers une introduction à l'instrumentation et au traçage, aux commutateurs de trace, aux écouteurs de la trace, au code de traçage dans une application, à l'ajout d'instructions de traçage au code d'une application et à la compilation conditionnelle avec <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>.
 
-[/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
+[/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
 Décrit une option de l’éditeur de liens qui ajoute <xref:System.Diagnostics.DebuggableAttribute> au code écrit avec C++. Cet attribut est nécessaire pour utiliser les fonctionnalités de débogage telles que l’attachement avec C++.
 
 [Débogage des Applications Service Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
@@ -81,7 +81,7 @@ Décrit le débogage des applications .NET Framework et les exigences de config
 Décrit les problèmes et techniques de débogage courants relatifs au débogage de scripts et d'applications Web.
 
 [Quelles sont les nouveautés du débogueur dans Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
-Description des nouvelles fonctionnalités de débogage ajoutées à cette version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+Description des nouvelles fonctionnalités de débogage ajoutées à cette mise en production de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 [Page d’accueil de débogage](../debugger/debugger-feature-tour.md)  
 Fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations présentées sont les suivantes : nouveautés du débogueur, paramètres et préparation, points d'arrêt, gestion des exceptions, fonctionnalité Modifier & Continuer, débogage de code managé, débogage de projets Visual C++, débogage COM et ActiveX, débogage de DLL, débogage SQL et les références relatives à l'interface utilisateur.

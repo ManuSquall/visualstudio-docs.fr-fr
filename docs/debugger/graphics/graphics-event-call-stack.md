@@ -24,7 +24,7 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
   
  Voici la fenêtre Pile des appels des événements :  
   
- ![La pile des appels qui précède un événement DrawIndexed. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![La pile des appels qui précède un événement DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Présentation de la pile des appels des événements Graphics  
  Vous pouvez utiliser la fenêtre Pile des appels des événements pour comprendre le flux d'exécution qui a conduit à un événement Direct3D particulier. Il ressemble à la fenêtre Pile des appels Visual Studio, mais au lieu d’afficher la pile des appels actuelle du thread actuel dans une application en cours d’exécution, il affiche la pile des appels telle qu’elle existait quand l’événement Direct3D sélectionné s’est produite. À partir de la pile des appels des événements, vous pouvez accéder au site d'appel de l'événement Direct3D sélectionné pour inspecter le code environnant.  
