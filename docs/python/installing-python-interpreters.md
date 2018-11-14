@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324975"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348706"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
@@ -30,7 +30,7 @@ Visual Studio (toutes versions) détecte automatiquement chacun des interpréteu
 
 Si Visual Studio ne parvient pas à détecter un environnement installé, consultez la section [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio affiche tous les environnements connus dans la fenêtre [**Environnements Python**](managing-python-environments-in-visual-studio.md), et détecte automatiquement les mises à jour apportées aux interpréteurs existants.
+Visual Studio affiche tous les environnements connus dans la fenêtre [**Environnements Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window), et détecte automatiquement les mises à jour apportées aux interpréteurs existants.
 
 | Interpréteur | Description |
 | --- | --- |

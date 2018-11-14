@@ -85,7 +85,7 @@ Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous
    ![Boîte de dialogue Nouvelle application web ASP.NET Core](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas **ASP.NET Core 2.0** ou ultérieur dans le menu déroulant du haut, vérifiez que vous exécutez la version la plus récente de Visual Studio. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
+   > Si vous ne voyez pas **ASP.NET Core 2.0** ou ultérieur dans le menu déroulante du haut, vérifiez que vous exécutez la version la plus récente de Visual Studio. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
 
 ### <a name="about-your-solution"></a>À propos de votre solution
 
