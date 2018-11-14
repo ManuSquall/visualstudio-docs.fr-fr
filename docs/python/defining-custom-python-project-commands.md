@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour définir des commandes de menu personnalisées pour les projets Python
 description: Montre comment modifier des fichiers projet et des fichiers de cibles pour ajouter des commandes personnalisées dans le menu contextuel du projet Python dans Visual Studio. Les commandes peuvent être appelées sur des programmes exécutables, des scripts, des modules, des extraits de code inline et des commandes pip.
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008321"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607846"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Définir des commandes personnalisées pour les projets Python
 
@@ -135,7 +135,7 @@ Pour faire référence aux propriétés du projet ou aux variables d’environne
 | Attribut | Obligatoire | Description |
 | --- | --- | --- |
 | Name | Oui | Identificateur de la commande dans le projet Visual Studio. Ce nom doit être ajouté au groupe de propriétés `<PythonCommands>` pour que la commande apparaisse dans le sous-menu Python. |
-| Ajouter des contrôles | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
+| Etiquette | Oui | Nom d’affichage d’interface utilisateur qui apparaît dans le sous-menu Python. |
 | Returns (Retours) | Oui | Doit contenir `@(Commands)`, qui identifie la cible en tant que commande. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributs CreatePythonCommandItem

@@ -33,11 +33,11 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ### <a name="update-visual-studio"></a>Mettre à jour Visual Studio 2017
 
-Si vous avez déjà installé Visual Studio, veillez à exécuter la version la plus récente. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
+Si vous avez déjà installé Visual Studio, veillez à exécuter la version la plus récente. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
 
 ### <a name="choose-your-theme-optional"></a>Choisir votre thème (facultatif)
 
-Ce tutoriel de démarrage rapide contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](quickstart-personalize-the-ide.md) pour savoir comment faire.
+Ce tutoriel de démarrage rapide contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé, mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](quickstart-personalize-the-ide.md) pour savoir comment faire.
 
 ## <a name="create-a-project"></a>Créer un projet
 
@@ -52,7 +52,7 @@ Pour commencer, vous allez créer un projet d’application web ASP.NET Core. Vo
 1. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, sélectionnez **ASP.NET Core 2.0** ou une version ultérieure dans le menu déroulant du haut, puis sélectionnez**Application web**.
 
    > [!NOTE]
-   > Si vous ne voyez pas **ASP.NET Core 2.0** ou ultérieur dans le menu déroulante du haut, vérifiez que vous exécutez la version la plus récente de Visual Studio. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
+   > Si vous ne voyez pas **ASP.NET Core 2.0** ou ultérieur dans le menu déroulante du haut, vérifiez que vous exécutez la version la plus récente de Visual Studio. Pour savoir comment mettre à jour votre installation, consultez la page [Mettre à jour Visual Studio 2017 vers la version la plus récente](../install/update-visual-studio.md).
 
    ![Afficher le fichier .gif animé qui montre comment créer un projet C# ASP.NET Core dans Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
