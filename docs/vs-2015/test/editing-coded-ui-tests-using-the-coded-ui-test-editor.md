@@ -80,7 +80,7 @@ Modifier les propriétés d'une action d'interface utilisateur
   
  Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.  
   
- Par exemple, si un serveur est indisponible et si une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’> »**, vous pouvez remplacer l’URL par `‘ http://Contoso2/default.aspx’`.  
+ Par exemple, si un serveur est indisponible et si une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’> »**, vous pouvez remplacer l’URL par `‘http://Contoso2/default.aspx’`.  
   
  ![Propriétés d’un contrôle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modifier les propriétés d'un contrôle  
