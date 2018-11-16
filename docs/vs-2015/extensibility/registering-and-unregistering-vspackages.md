@@ -16,12 +16,12 @@ ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5f43dd44dde41de4ecf3e34fa5e895ee0f4711f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e14422b7430dc0429954bf11c77b30619fb7f7da
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187614"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763421"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Inscription et désinscription de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Vous utilisez des attributs pour inscrire un VSPackage, mais
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
-public sealed class BasicPackage : Package  
+public sealed class BasicPackage : Package  
 {. . .}  
 ```  
   
