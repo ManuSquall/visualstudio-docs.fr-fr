@@ -17,12 +17,12 @@ ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a431060f54567a443a0aa12137a06ce8227e9f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9a26866928a413329b056155df029773f5f5865
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721903"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,27 +32,27 @@ Spécifie les propriétés souhaitées doivent être obtenues à partir d’un f
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_PROVIDER_FLAGS {  
-   PFLAG_NONE                    = 0x00,  
-   PFLAG_REMOTE_PORT             = 0x01,  
-   PFLAG_DEBUGGEE                = 0x02,  
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
-   PFLAG_REASON_WATCH            = 0x08,  
-   PFLAG_GET_PROGRAM_NODES       = 0x10,  
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
+enum enum_PROVIDER_FLAGS {  
+   PFLAG_NONE                    = 0x00,  
+   PFLAG_REMOTE_PORT             = 0x01,  
+   PFLAG_DEBUGGEE                = 0x02,  
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
+   PFLAG_REASON_WATCH            = 0x08,  
+   PFLAG_GET_PROGRAM_NODES       = 0x10,  
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
 };  
-typedef DWORD PROVIDER_FLAGS;  
+typedef DWORD PROVIDER_FLAGS;  
 ```  
   
 ```csharp  
-public enum enum_PROVIDER_FLAGS {  
-   PFLAG_NONE                    = 0x00,  
-   PFLAG_REMOTE_PORT             = 0x01,  
-   PFLAG_DEBUGGEE                = 0x02,  
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
-   PFLAG_REASON_WATCH            = 0x08,  
-   PFLAG_GET_PROGRAM_NODES       = 0x10,  
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
+public enum enum_PROVIDER_FLAGS {  
+   PFLAG_NONE                    = 0x00,  
+   PFLAG_REMOTE_PORT             = 0x01,  
+   PFLAG_DEBUGGEE                = 0x02,  
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
+   PFLAG_REASON_WATCH            = 0x08,  
+   PFLAG_GET_PROGRAM_NODES       = 0x10,  
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
 };  
 ```  
   

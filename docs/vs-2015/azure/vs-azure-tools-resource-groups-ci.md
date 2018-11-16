@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002048"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791603"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Intégration continue dans les Services Azure DevOps à l’aide de projets de déploiement de groupe de ressources Azure
 Pour déployer un modèle Azure, vous effectuer des tâches dans les différentes étapes : générer, tester, copier sur Azure (également appelé « Intermédiaire ») et déployer le modèle. Il existe deux façons de déployer des modèles dans les Services Azure DevOps. Les deux méthodes fournissent les mêmes résultats, par conséquent, choisissez celle qui convient le mieux à votre flux de travail.

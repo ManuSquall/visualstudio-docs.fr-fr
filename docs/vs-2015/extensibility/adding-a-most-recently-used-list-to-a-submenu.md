@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87e9fb6ec0b4d0339427175fd18fdb79f6ef500b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818099"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744355"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Ajout d’une liste de fichiers récents à un sous-menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
 2.  Dans le `Symbols` section, dans le `GuidSymbol` nœud nommé guidTestCommandPackageCmdSet, ajoutez le symbole pour le `MRUListGroup` groupe et le `cmdidMRUList` de commande, comme suit.  
   
     ```csharp  
-    <IDSymbol name="MRUListGroup" value="0x1200"/>  
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
+    <IDSymbol name="MRUListGroup" value="0x1200"/>  
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
 3.  Dans la `Groups` section, ajoutez le groupe déclaré après les entrées de groupe existant.  
@@ -93,7 +93,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
-    public const uint cmdidMRUList = 0x200;  
+    public const uint cmdidMRUList = 0x200;  
     ```  
   
 2.  Dans TestCommand.cs, ajoutez le code suivant à l’aide d’instruction.  
@@ -155,7 +155,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
 6.  Après le `InitMRUMenu` (méthode), ajoutez le code suivant `OnMRUQueryStatus` (méthode). Il s’agit de gestionnaire qui définit le texte pour chaque élément de la liste des fichiers récents.  
   
     ```csharp  
-    private void OnMRUQueryStatus(object sender, EventArgs e)  
+    private void OnMRUQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -163,7 +163,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
             }  
         }  
     }  
@@ -172,7 +172,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
 7.  Après le `OnMRUQueryStatus` (méthode), ajoutez le code suivant `OnMRUExec` (méthode). Ceci est le gestionnaire pour la sélection d’un élément de la liste des fichiers récents. Cette méthode déplace l’élément sélectionné vers le haut de la liste, puis affiche l’élément sélectionné dans une boîte de message.  
   
     ```csharp  
-    private void OnMRUExec(object sender, EventArgs e)  
+    private void OnMRUExec(object sender, EventArgs e)  
     {  
         var menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -180,7 +180,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                string selection = this.mruList[MRUItemIndex] as string;  
+                string selection = this.mruList[MRUItemIndex] as string;  
                 for (int i = MRUItemIndex; i > 0; i--)  
                 {  
                     this.mruList[i] = this.mruList[i - 1];  
