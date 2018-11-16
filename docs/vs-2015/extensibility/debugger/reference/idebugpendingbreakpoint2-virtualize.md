@@ -18,12 +18,12 @@ ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc974372d5ffc81db09bfa9418dbbc6fc18308fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d8757047cf96c0a050950191064f3c9394dd022
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819678"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799572"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Active ou désactive le virtualisé cela en attente de point d’arrêt. Lorsqu�
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT Virtualize(   
+HRESULT Virtualize(   
    BOOL fVirtualize  
 );  
 ```  
   
 ```cpp#  
-int Virtualize(   
+int Virtualize(   
    int fVirtualize  
 );  
 ```  
