@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7bb911734ee4240d61a5fbb132a7e0c67b535c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e12e0ed9abf90911e9d22de60d8dc11363f67adb
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821212"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645066"
 ---
 # <a name="register-the-program"></a>Enregistrer le programme
 Une fois que le moteur de débogage a acquis un port, représenté par un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, l’étape suivante dans le programme à déboguer est pour l’inscrire auprès du port. Une fois inscrit, le programme est disponible pour le débogage par un des moyens suivants :  
@@ -73,7 +73,7 @@ Une fois que le moteur de débogage a acquis un port, représenté par un [IDebu
                 if (SUCCEEDED(hr))  
                 {  
                     // pass on the parameters we were given (omitted here)  
-                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                    hr = spPortEx->LaunchSuspended(/* omitted parameters */,ppDebugProcess)  
                 }  
             }  
         }  
