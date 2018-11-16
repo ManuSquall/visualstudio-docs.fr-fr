@@ -24,15 +24,15 @@ helpviewer_keywords:
 - tool windows
 ms.assetid: 31b6ff46-8820-40ff-92ab-561d90e89ec6
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5fa0a761adc3eded6756a67499e61795c30deb21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15f7c9462bcf064f9d9e62ea5793ea2eaf29b2f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280447"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726017"
 ---
 # <a name="kinds-of-windows"></a>Types de fenêtres
 Ce contenu a été déplacé vers [personnalisation des dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md)
