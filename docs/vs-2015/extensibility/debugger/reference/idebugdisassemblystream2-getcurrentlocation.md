@@ -17,12 +17,12 @@ ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cd479bfc3edfcfef2d5990a121cf63fe2c6a049
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0629eac86af77f464bdd46df9872b37dda46da41
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877021"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799312"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Retourne un identificateur d’emplacement de code qui représente l’emplaceme
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetCurrentLocation(   
+HRESULT GetCurrentLocation(   
    UINT64* puCodeLocationId  
 );  
 ```  
   
 ```csharp  
-int GetCurrentLocation(   
+int GetCurrentLocation(   
    out ulong puCodeLocationId  
 );  
 ```  

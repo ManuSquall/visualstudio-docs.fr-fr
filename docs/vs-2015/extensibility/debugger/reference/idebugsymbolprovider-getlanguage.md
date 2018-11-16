@@ -17,12 +17,12 @@ ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9fa14555dee5ee4e39ccd34de51ecdae567e038
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21cdd47f2f43cd0e079ec3b37ef66ddfcbdf9f02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817591"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779747"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Cette méthode obtient le langage ayant servi à compiler le code à l’adresse
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetLanguage(   
+HRESULT GetLanguage(   
    IDebugAddress* pAddress,  
    GUID*          pguidLanguage,  
    GUID*          pguidLanguageVendor  

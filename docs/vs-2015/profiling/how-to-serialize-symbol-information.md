@@ -16,15 +16,15 @@ helpviewer_keywords:
 - performance tools, serializing symbol information
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6c0e567131d36cbc7e805533f7d5acb9c5f3277
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f57339f7fc5c7c9e2cd34441daf4c8e42d485cc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256553"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802510"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Guide pratique pour sérialiser les informations de symboles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Vous pouvez sérialiser les symboles nécessaires à l’analyse de votre applic
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Pour sérialiser automatiquement les informations de symboles  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1.  Dans le menu **Outils**, cliquez sur **Options**.  
   
      La boîte de dialogue **Options** s’affiche.  
   
