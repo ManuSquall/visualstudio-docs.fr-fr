@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_type method
 ms.assetid: efca38b5-c479-4d0a-a164-f903f25c5509
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abae285ebbb8401f399095101432b52e36baaab1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48fc62b0e1ca302aca61faedc42537925d13c7a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885770"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750406"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère le type de frame de spécifiques au compilateur.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_type (   
+HRESULT get_type (   
    DWORD* pRetVal  
 );  
 ```  
