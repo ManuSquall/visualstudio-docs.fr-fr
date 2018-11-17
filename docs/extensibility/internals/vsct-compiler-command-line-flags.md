@@ -1,5 +1,5 @@
 ---
-title: Indicateurs de ligne de commande du compilateur VSCT | Documents Microsoft
+title: Indicateurs de ligne de commande du compilateur VSCT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e2e1045adb451c7f4dd06b888fca356d26b7ff3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0cdf74d0c6c77a2c7c22829c8aaa3e238e65703a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139771"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744887"
 ---
-# <a name="vsct-compiler-command-line-flags"></a>Indicateurs de ligne de commande du compilateur VSCT
-Le compilateur de la Table de commande Visual Studio (VSTC) fournit des commutateurs de ligne de commande pour vous assurer de la compilation des fichiers .vsct réussit.  
+# <a name="vsct-compiler-command-line-flags"></a>Indicateurs de la ligne de commande du compilateur VSCT
+Le compilateur de la Table de commande Visual Studio (VSTC) fournit des commutateurs de ligne de commande pour vous assurer de compilation réussie de fichiers .vsct.  
   
 ## <a name="command-line-parameters"></a>Paramètres de ligne de commande  
- Pour afficher l’aide VSCT base d’un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **commande** fenêtre, accédez à la *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Tools\Bin\ dossier et le type :  
+ Pour afficher l’aide VSCT base à partir d’un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **commande** fenêtre, accédez à la *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Tools\Bin\ dossier et tapez :  
   
 ```  
 vsct /?  
 ```  
   
- Cet exemple renvoie :  
+ Cette commande renvoie :  
   
 ```  
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000  
@@ -40,44 +40,44 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 [-I<include-path>]* [-L<language>] [-E[C|H|N]:<name>]  
   
   -D    Specify any additional preprocessor defines  
-  -I    Indcate what additional include paths to send to the preprocessor  
-  -L    Specify the langauge to use when selecting strings  
+  -I    Indicate what additional include paths to send to the preprocessor  
+  -L    Specify the language to use when selecting strings  
   -E    Emit C# objects in the specified namespace for command items,  
-        folowed by [L|F|H|N]:<value>  
+        followed by [L|F|H|N]:<value>  
         F = Name of the file to emit (used if -EL is provided)  
         L = Name of a language providing a CodeDOM provider  
         N = namespace (required if -EL is provided)  
         H = C++ header  
-  -c    Clean build skipping dependancy checks  
+  -c    Clean build skipping dependency checks  
   -v    Verbose output  
 ```  
   
 > [!NOTE]
->  Les caractères - (tiret) et / (barre oblique) sont les deux notation acceptée pour indiquer les paramètres de ligne de commande.  
+>  Les caractères - (tiret) et / (barre oblique) sont les deux notation acceptées pour ce qui indique les paramètres de ligne de commande.  
   
  Indicateurs acceptables et leur signification sont les suivantes.  
   
 |Basculer|Description|  
 |------------|-----------------|  
 |-D|Spécifiez tous les symboles définis supplémentaires.|  
-|-I|Indiquer que supplémentaires incluent des chemins d’accès qui doivent être utilisés lors de la résolution des références de fichier.|  
+|-JE|Indiquer que le supplémentaires incluent des chemins d’accès qui doivent être utilisés lors de la résolution des références de fichier.|  
 |-L|Spécifiez le <xref:System.Globalization.CultureInfo> nom de culture, par exemple, « en-US ».|  
-|-E|Émettre des objets c# dans l’espace de noms pour les éléments de la commande, suivi par [C&#124;H&#124;N] :*nom de fichier*où C = c#, H = en-tête C++, N = espace de noms. L’espace de noms est requis pour c#.|  
-|-v|Sortie des commentaires.|  
+|-E|Émettre C# suivie d’objets dans l’espace de noms pour les éléments de la commande, [C&#124;H&#124;N] :*filename*où C = C#, H = en-tête C++, N = espace de noms. L’espace de noms est obligatoire pour c#.|  
+|-v|Sortie détaillée.|  
   
- Le commutateur -L indique au compilateur pour sélectionner un groupe de chaînes pour générer le fichier .cto binaire qui correspond à la donnée <xref:System.Globalization.CultureInfo> nom de la culture. Le nom de culture spécifié doit correspondre à l’attribut de langue d’un ou plusieurs [élément Strings](../../extensibility/strings-element.md) dans le fichier .vsct. Si un élément de chaînes n’a aucun attribut de langage, il est hérité de l’objet contenant [CommandTable élément](../../extensibility/commandtable-element.md).  
+ Le commutateur -L indique au compilateur pour sélectionner un groupe de chaînes pour générer le fichier .cto binaire qui correspond à la donnée <xref:System.Globalization.CultureInfo> nom de culture. Le nom de culture spécifié doit correspondre à l’attribut de langue d’un ou plusieurs [élément Strings](../../extensibility/strings-element.md) dans le fichier .vsct. Si un élément de chaînes n’a aucun attribut de langage, il est hérité à partir de la contenant [CommandTable élément](../../extensibility/commandtable-element.md).  
   
- Un fichier .vsct peut avoir plusieurs éléments de chaînes, et chacune peut avoir un attribut de langue différent. Globalisation est obtenue en exécutant le compilateur VSCT plusieurs fois et la modification du commutateur -L pour chaque nom de la culture.  
+ Un fichier .vsct peut-être avoir plusieurs éléments de chaînes, et chacun peut avoir un autre attribut de langage. La globalisation est obtenue en exécutant le compilateur VSCT plusieurs fois et en modifiant le commutateur -L pour chaque nom de culture.  
   
- Si le nom de culture donné par le commutateur -L ne correspond pas à l’attribut Language de n’importe quel élément de chaînes, le compilateur tente de correspondre à la langue et pas la région. Par exemple, si « en-US » est introuvable, le compilateur va tenter « fr » à la place. À défaut, il va tenter de la culture actuelle du système d’exploitation. À défaut, il peut être compilé le premier élément de chaînes qu’il trouve.  
+ Si le nom de culture fourni par le commutateur -L ne correspond pas à l’attribut Language de n’importe quel élément de chaînes, le compilateur tente de correspondre à la langue et pas la région. Par exemple, si « en-US » est introuvable, le compilateur essaie « fr » à la place. En cas d’échec, il essaiera de la culture actuelle du système d’exploitation. En cas d’échec, il sera compilé le premier élément de chaînes qu’il trouve.  
   
- Le commutateur -E peut être utilisé pour émettre un fichier d’en-tête C-style qui contient les symboles qui sont utilisées par la table de commande ou d’émettre un fichier c# qui contient des objets pour les symboles de commande.  
+ Le commutateur -E peut être utilisé pour émettre un fichier d’en-tête C-style qui contient les symboles qui sont utilisés par la table de commande ou d’émettre un fichier c# qui contient des objets pour les symboles de commande.  
   
- L’option-D et - commutateurs ont la syntaxe des indicateurs de préprocesseur Cl.exe C qui portent le même nom. D - définitions qui ont le format X = Y sont utilisées pour le développement basé sur XML \<Defined > teste dans `Condition` attributs. -Inclure des chemins d’accès sont utilisés pour résoudre \<Include >, \<Extern > et \<Bitmap > références de fichiers. Pour plus d’informations, consultez la [référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ L’option-D et - commutateurs ont la syntaxe des indicateurs de préprocesseur Cl.exe C qui portent le même nom. D - définitions qui ont le format X = Y sont utilisées pour l’expansion de basé sur XML \<Defined > tests dans `Condition` attributs. -Je les chemins d’accès include permettent de résoudre \<Include >, \<Extern > et \<Bitmap > références de fichiers. Pour plus d’informations, consultez le [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   
- Le compilateur VSCT peut décompiler également un fichier binaire généré précédemment. Pour ce faire, fournissez un fichier binaire pour le \<fichier_entree >.   Si le fichier binaire a été généré par le compilateur VSCT, il aura ses symboles déjà incorporées et produira un résultat avec les noms symboliques dans un \<symboles > section de la sortie. Si le fichier binaire a été produit par le compilateur CTC, la sortie contient le GUID et l’ID réel. Si le fichier *.ctsym qui est généré par les versions actuelles de Ctc.exe est dans le même dossier que le fichier d’entrée binaire, les symboles sont chargées à partir de ce fichier et utilisés pour la sortie.  
+ Le compilateur VSCT peut décompiler également un fichier binaire généré précédemment. Pour ce faire, fournissez un fichier binaire pour le \<infile >.   Si le fichier binaire a été produit par le compilateur VSCT, il aura ses symboles déjà incorporées et produira un résultat avec les noms symboliques dans un \<symboles > section de la sortie. Si le fichier binaire a été généré par le compilateur CTC, la sortie contient le GUID et l’ID réel. Si le fichier *.ctsym qui est généré par les versions actuelles de Ctc.exe est dans le même dossier que le fichier d’entrée binaire, les symboles sont chargées à partir de ce fichier et utilisés pour la sortie.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tableau de commandes de Visual Studio (. Fichiers VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Référence du schéma XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)   
+ [Visual Studio Command Table (. Fichiers VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md)   
  [Comment VSPackages ajoute des éléments de l’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

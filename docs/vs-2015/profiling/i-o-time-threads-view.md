@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, I/O time (Threads View)
 ms.assetid: 0c4ec14d-d8dd-49c1-999c-dcbf4e8e1dc8
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55050ad6ed805c2996cfc52561b17e2614a6ee12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab10b52052ddacb005668a2620846f618e45bc62
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236793"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808594"
 ---
 # <a name="io-time-threads-view"></a>Durée des E/S (vue Threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
