@@ -64,14 +64,14 @@ helpviewer_keywords:
 - errors [debugger], Edit and Continue
 ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 277208c47a51b1320a29d7cac869b0e786b7b291
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca47a7b7ea5a330176b6f75862819a4c0a5c64d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175953"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793319"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier & Continuer (C#)
 Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dans Modifier & Continuer.  
