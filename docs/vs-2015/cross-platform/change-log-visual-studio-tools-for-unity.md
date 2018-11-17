@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 98d0aa1be1ac30de74a226735ca90743474043b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000840"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807190"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -333,9 +333,9 @@ Journal des modifications Visual Studio Tools pour Unity
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
--   Corriger la gestion des thèmes Visual Studio. Auparavant, les boîtes de dialogue de thèmes noirs pouvaient apparaître vides.
+-   Corriger la gestion des thèmes Visual Studio. Avant, les boîtes de dialogue de thèmes noirs pouvaient apparaître vides.
 
--   Corriger le blocage d’Unity lors de la connexion du débogueur pendant la recompilation d’Unity.
+-   Correction du problème de blocage d’Unity lors de la connexion du débogueur pendant la recompilation par Unity.
 
 -   Corriger les points d’arrêt lors du débogage à distance des éditeurs ou des lecteurs compilés sur un autre système.
 
@@ -345,7 +345,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   Corriger la gestion de la portée des variables dans le débogueur pour éviter que des variables en direct n’apparaissent hors de portée.
 
--   Corriger la recherche de membres statiques dans l’évaluation d’Expression du débogueur.
+-   Correction du problème de la recherche de membres statiques dans l’évaluation d’expression du débogueur.
 
 -   Corriger l’affichage des types dans l’évaluation d’expression du débogueur pour afficher les propriétés et les champs statiques.
 

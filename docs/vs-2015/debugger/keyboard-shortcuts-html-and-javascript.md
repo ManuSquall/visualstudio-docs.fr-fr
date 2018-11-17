@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a808a8c94780f32bdb33fed948be816872150c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7313869648a22a2c455f06b73981d788b9f678cc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271632"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807203"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Raccourcis clavier (HTML et JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

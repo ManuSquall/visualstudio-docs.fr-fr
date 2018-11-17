@@ -12,15 +12,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom gestures
 ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889787"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733372"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
