@@ -23,15 +23,15 @@ helpviewer_keywords:
 - DCOM, access errors
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fa7aca2b86e8cc7c8d9cea4eba27b850d26bc13
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec23d23934268ebb50699bc1de3d17b75d357d3a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825652"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770290"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

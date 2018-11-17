@@ -13,15 +13,15 @@ f1_keywords:
 - vs.tasklisterror.copy_version_warning
 ms.assetid: 116819f3-a4d4-48b5-9e71-7c54660d38ef
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 95b566c719c7d6adc27039a691315e93eb43eb05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3dad547664768247f7837b9d65797ffba15bbdf8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185599"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794814"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Avertissement : la dépendance &#39;fichier&#39; dans le projet &#39;projet&#39; ne peut pas être copié dans le répertoire d’exécution, car elle remplacerait la référence &#39;fichier.&#39;
 Un conflit existe entre des dépendances ; plusieurs fichiers d’assembly distincts ayant le même nom doivent être copiés dans le répertoire bin pour permettre à l’application de s’exécuter. Le répertoire d’exécution peut résoudre le conflit, car l’une des dépendances est une référence principale.  
