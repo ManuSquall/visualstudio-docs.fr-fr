@@ -15,12 +15,12 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c91c515051760fd1eda4585155a2303ef895466e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab22549550c0564f7e27b88adae4627f24ab9acc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273700"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772740"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Création d’une extension avec un modèle d’élément d’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
