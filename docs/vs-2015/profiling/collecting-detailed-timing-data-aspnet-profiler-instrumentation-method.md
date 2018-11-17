@@ -14,15 +14,15 @@ helpviewer_keywords:
 - instrumentation profiling method
 ms.assetid: 29f2fc55-aaf7-4e18-a672-8815455fba73
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1a6e53eb896a1e38033667620d07752294eb6a5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 191d61fd14bef7b64f7095461df0cc83cdda7246
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255350"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726274"
 ---
 # <a name="collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Collecte de données de temporisation détaillées pour une application Web ASP.NET en utilisant la méthode d'instrumentation du profileur à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
