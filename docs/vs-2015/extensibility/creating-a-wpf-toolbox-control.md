@@ -17,12 +17,12 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a521566d25509750334e4f1202699787c3343ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225613"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786026"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Création d’un contrôle de boîte à outils WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
