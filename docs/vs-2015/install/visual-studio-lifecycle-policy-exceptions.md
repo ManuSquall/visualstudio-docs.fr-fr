@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3094e18798fa987390fce3ee64d0a6da2fe0a9ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7c60747429bd702cdcea5f19891829411cd4a9c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196116"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772623"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Exceptions liées à la stratégie de cycle de vie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

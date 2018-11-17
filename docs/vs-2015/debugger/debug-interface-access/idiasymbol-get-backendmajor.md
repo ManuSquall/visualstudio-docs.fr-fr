@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_backEndMajor method
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1517338ba83597dd9a90b396e860b916b71de17f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eedbd58113ca670079f860daa607085a172c54c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878321"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732421"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère le numéro de version principale de back-end du compilateur.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_backEndMajor (   
+HRESULT get_backEndMajor (   
    DWORD* pRetVal  
 );  
 ```  
