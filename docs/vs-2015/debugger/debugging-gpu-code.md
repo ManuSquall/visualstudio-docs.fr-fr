@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ccad74608cc2332317a9a0c3081ef022b13a202d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279264"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738421"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 -   [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Exceptions de synchronisation de données  
- Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l'exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous avez deux options :**rompre** ou **continuer**. À l’aide de la **Exceptions** boîte de dialogue, vous pouvez configurer si le débogueur détecte ces conditions et également quelles conditions il s’arrêtera. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser le **Options** boîte de dialogue pour spécifier que le débogueur doit ignorer les exceptions si les données sont écrites ne changent pas la valeur des données. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
+ Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l'exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous avez deux options :**rompre** ou **continuer**. À l’aide de la **Exceptions** boîte de dialogue, vous pouvez configurer si le débogueur détecte ces conditions et également quelles conditions il s’arrêtera. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser le **Options** boîte de dialogue pour spécifier que le débogueur doit ignorer les exceptions si les données sont écrites ne changent pas la valeur des données. Pour plus d’informations, consultez [Général, Débogage, Boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Résolution des problèmes  
   

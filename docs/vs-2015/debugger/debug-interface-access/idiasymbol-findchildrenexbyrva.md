@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::findChildrenExByRVA
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fe90812c9fc655669fa6c7b93a5f7b5a9cdebb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 001804a8e47f7870c61d869751165fc054997223
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937079"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736310"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère les enfants du symbole sont valides à une adresse virtuelle relative
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT findChildrenExByRVA (   
+HRESULT findChildrenExByRVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
