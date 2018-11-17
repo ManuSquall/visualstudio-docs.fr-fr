@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_upperBound method
 ms.assetid: a77dcafa-ea3f-45da-826d-8f9b4489a03f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f62369de4c69fcff9cf3b3af01467d51d9327bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f9be93192dd1d7b0a54f747347701383a21ba551
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938290"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806202"
 ---
 # <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère un symbole qui représente la limite supérieure d’une dimension de
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_upperBound (   
+HRESULT get_upperBound (   
    IDiaSymbol** pRetVal  
 );  
 ```  

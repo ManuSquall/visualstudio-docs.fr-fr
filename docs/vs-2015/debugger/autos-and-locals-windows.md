@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191319"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782477"
 ---
 # <a name="autos-and-locals-windows"></a>Fenêtres Variables locales et Automatique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

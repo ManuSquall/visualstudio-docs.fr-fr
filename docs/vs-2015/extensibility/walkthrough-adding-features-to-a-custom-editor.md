@@ -15,12 +15,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283060"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737041"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procédure pas à pas : ajout de fonctionnalités à un éditeur personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

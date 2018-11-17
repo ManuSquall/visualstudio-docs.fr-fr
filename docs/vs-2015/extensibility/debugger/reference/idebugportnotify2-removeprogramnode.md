@@ -17,12 +17,12 @@ ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f5e041a35a45a00f825d4b93feb1b62b0ad89dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f553f499f358f7c94974ce1b3cf66cfdcf78bb79
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809274"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Annule l’inscription d’un programme qui peut être débogué à partir du po
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT RemoveProgramNode(   
+HRESULT RemoveProgramNode(   
    IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
 ```csharp  
-int RemoveProgramNode(   
+int RemoveProgramNode(   
    IDebugProgramNode2 pProgramNode  
 );  
 ```  
