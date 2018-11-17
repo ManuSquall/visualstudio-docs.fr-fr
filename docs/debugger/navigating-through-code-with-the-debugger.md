@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748678"
+ms.locfileid: "51826735"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
-Le débogueur Visual Studio peut vous aider à naviguer dans le code pour inspecter l’état d’une application et afficher ses flux d’exécution. Vous pouvez utiliser des raccourcis clavier, les commandes de débogage, les points d’arrêt et les autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Vous êtes familiarisé avec les commandes de navigation du débogueur et raccourcis accélère et plus faciles à trouver et résoudre les problèmes de l’application.  
+Le débogueur Visual Studio peut vous aider à naviguer dans le code pour inspecter l’état d’une application et afficher ses flux d’exécution. Vous pouvez utiliser des raccourcis clavier, les commandes de débogage, les points d’arrêt et les autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Vous êtes familiarisé avec les commandes de navigation du débogueur et raccourcis accélère et plus faciles à trouver et résoudre les problèmes de l’application.  S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
   
 ## <a name="basic-debugging"></a>Bases du débogage  
 
@@ -183,4 +183,9 @@ Pour charger des symboles de Microsoft, consultez [configurer des emplacements d
 1. Dans le **Modules** fenêtre, vous pouvez indiquer à qui les modules ont des symboles chargés dans le **état du symbole** colonne. Cliquez sur le module que vous souhaitez charger des symboles pour, puis sélectionnez **charger les symboles**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé  
- Par défaut, le débogueur effectue dans les propriétés et les opérateurs en code managé. Pas à pas détaillé dans les propriétés et opérateurs généralement fournit une meilleure expérience de débogage. Pour activer l’exécution pas à pas détaillé des propriétés et des opérateurs, en **outils** (ou **déboguer**) > **Options** > **débogage**  >  **Général**, désactivez le **pas à pas principal des propriétés et les opérateurs (managé uniquement)** case à cocher.
+ Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer l’exécution pas à pas détaillé des propriétés ou des opérateurs, choisissez **déboguer** > **Options**. Sur le **débogage** > **général** page, désactivez le **pas à pas principal des propriétés et les opérateurs (managé uniquement)** case à cocher.
+
+## <a name="see-also"></a>Voir aussi
+ [Quel est le débogage ?](../debugger/what-is-debugging.md)  
+ [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) 
