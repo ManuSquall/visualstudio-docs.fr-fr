@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_sealed method
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9917281e56e33eba8002c34401fadaa8625b541
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe0fc949183396cb626f0a41bc0a021a3b663065
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875032"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766118"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère un indicateur qui spécifie si la classe ou la méthode est sealed.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_sealed(   
+HRESULT get_sealed(   
    BOOL* pRetVal)  
 );  
 ```  

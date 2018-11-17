@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9cd0e331536c194acdde95bdd74e5f41668a23e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863280"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806280"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procédure pas à pas : affichage d’info-bulles Info express
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: 'Comment : rechercher le nom du processus ASP.NET | Documents Microsoft'
+title: Recherchez le processus ASP.NET en cours d’exécution | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,41 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 899860baf5461eb798341cebf775ccde488915b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473817"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751769"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Comment : rechercher le nom du processus ASP.NET
-Pour créer un attachement à une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en cours d'exécution, vous devez connaître le nom du processus [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :  
+# <a name="find-the-name-of-the-aspnet-process"></a>Rechercher le nom du processus ASP.NET
 
--   Si vous exécutez ASP.NET Core sur IIS ou IIS, le nom du processus est dotnet.exe.
+Pour déboguer en cours d’exécution [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application, le débogueur Visual Studio doit attacher à la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processus par nom.
 
--   Si vous exécutez ASP.NET sur IIS 6.0 ultérieurement, le nom est w3wp.exe.  
-  
--   Si vous exécutez ASP.NET sur une version antérieure d’IIS, le nom est aspnet_wp.exe.
+**Pour savoir quel processus est en cours d’exécution d’une application ASP.NET :**
 
--   Si vous exécutez ASP.NET sur IIS, le nom est iisexpress.exe.
-  
-Pour les applications créées à l’aide de versions de Visual Studio antérieures à Visual Studio 2012, le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] code peut résider sur le système de fichiers et s’exécuter sous le serveur de test WebDev.WebServer.exe ou WebDev.WebServer40.exe. Dans ce cas, vous devez attacher à WebDev.WebServer.exe ou WebDev.WebServer40.exe au lieu du [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processus. Ce scénario s'applique uniquement au débogage local.
-  
-Les applications antérieures d'ASP s'exécutent à l'intérieur du processus IIS inetinfo.exe lorsqu'elles s'exécutent in-process.  
+1. Avec l’application en cours d’exécution, dans Visual Studio, sélectionnez **déboguer** > **attacher au processus**. 
+   
+1. Dans le **attacher au processus** boîte de dialogue, tapez les premières lettres du processus de noms à partir de la liste suivante, ou les entrer dans la zone de recherche. Celui qui est en cours d’exécution est l’exécution de l’application ASP.NET. Attacher à ce processus pour déboguer l’application. 
+   
+    - *w3wp.exe* est IIS 6.0 et versions ultérieures. 
+    - *aspnet_wp.exe* est les versions antérieures d’IIS.
+    - *iisexpress.exe* est IISExpress.
+    - *dotnet.exe* est ASP.NET Core.
+    - *Inetinfo.exe* est anciennes applications ASP exécute in-process. 
 
-### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Pour déterminer la version d'IIS sous laquelle l'application s'exécute  
+>[!NOTE]
+>Visual Studio 2012 et versions antérieur [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] code peut être sur le système de fichiers et exécuté sur le serveur de test *WebDev.WebServer.exe* ou *WebDev.WebServer40.exe*. Dans ce cas, pour le débogage local, attacher à *WebDev.WebServer.exe* ou *WebDev.WebServer40.exe* au lieu du [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processus. 
 
-1.  Assurez-vous que l’application est en cours d’exécution et à partir de Visual Studio, utilisez ensuite la [attacher au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) commande.
+**Voir aussi :**
 
-2.  Tapez la première lettre d’un nom de processus tels que w3wp.exe pour trouver rapidement les processus dans le **processus disponibles** liste.
-
-    Les processus disponibles dans la liste de cette rubrique indique les versions d’IIS sont disponibles, le processus qui exécute votre application.
-
-    > [!NOTE]
-    > À partir de Visual Studio 2017, vous pouvez utiliser la zone de recherche pour rechercher le nom du processus.
-  
-## <a name="see-also"></a>Voir aussi  
  [Attacher à un processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Conditions requises pour le débogage des Applications Web à distance](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
- [Configuration requise](../debugger/aspnet-debugging-system-requirements.md)   
- [Débogage d’Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Conditions préalables pour le débogage distant des applications web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [Configuration système requise](../debugger/aspnet-debugging-system-requirements.md)   
+ [Déboguer des applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

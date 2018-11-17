@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e45c7903-f945-495d-b43b-11cdd09052aa
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7bc1719b0cac40aa35c0aad3841a0ca49c9da44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3efdd43762e3ce9afdfebf29a9a7529b97ca995
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226471"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754451"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2010 Premium fournit une fonctionnalité de filtrage qui vous per
   
 ### <a name="to-enable-just-my-code"></a>Pour activer Uniquement mon code  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1.  Dans le menu **Outils**, cliquez sur **Options**.  
   
 2.  Dans la boîte de dialogue **Options**, développez **Outils d’analyse des performances**, puis sélectionnez le nœud **Général**.  
   
@@ -36,7 +36,7 @@ Visual Studio 2010 Premium fournit une fonctionnalité de filtrage qui vous per
   
 ### <a name="to-disable-just-my-code"></a>Pour désactiver Uniquement mon code  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1.  Dans le menu **Outils**, cliquez sur **Options**.  
   
 2.  Dans la boîte de dialogue **Options**, développez **Outils d’analyse des performances**, puis sélectionnez le nœud **Général**.  
   
