@@ -19,12 +19,12 @@ ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17967d1d124fa1607aa5415208cf589486f4d7eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed118f63210e5d26a46383fe6de3f3b690f62d42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183844"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734906"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Extension des propriétés et la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

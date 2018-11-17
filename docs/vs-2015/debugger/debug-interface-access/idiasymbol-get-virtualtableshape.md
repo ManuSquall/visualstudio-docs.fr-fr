@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_virtualTableShape method
 ms.assetid: 92360cbd-0761-446e-93f9-04dc8f4b66c6
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de8129c5ede9bcf046a6454c8534569ab447efed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 185c32a959956fc5d3227fbd44492801d0be07d2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826836"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727313"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère l’interface de symbole du type de la table virtuelle pour un type d
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_virtualTableShape (   
+HRESULT get_virtualTableShape (   
    IDiaSymbol** pRetVal  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
-title: Envoyer des Messages de Diagnostic dans la fenêtre de sortie | Microsoft Docs
+title: Envoyer des messages dans la fenêtre Sortie | Microsoft Docs
 ms.custom: ''
-ms.date: 04/25/2017
+ms.date: 11/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -28,26 +28,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be9081bc2b6778d2f115ebe61078956aeace85e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842792"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724486"
 ---
-# <a name="send-diagnostic-messages-to-the-output-window"></a>Envoyer des Messages de Diagnostic dans la fenêtre Sortie
-Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide de la fenêtre la <xref:System.Diagnostics.Debug> classe ou le <xref:System.Diagnostics.Trace> (classe), qui font partie de la <xref:System.Diagnostics> bibliothèque de classes. Utilisez le <xref:System.Diagnostics.Debug> classe si vous copiez uniquement dans le *déboguer* version de votre programme. Utilisez le <xref:System.Diagnostics.Trace> classe si vous souhaitez que la sortie à la fois dans le *déboguer* et *version* versions.  
+# <a name="send-messages-to-the-output-window"></a>Envoyer des messages dans la fenêtre Sortie
+
+Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide de la fenêtre la <xref:System.Diagnostics.Debug> classe ou le <xref:System.Diagnostics.Trace> (classe), qui font partie de la <xref:System.Diagnostics> bibliothèque de classes. Utilisez le <xref:System.Diagnostics.Debug> classe si vous ne voulez que la sortie le *déboguer* version de votre programme. Utilisez le <xref:System.Diagnostics.Trace> classe si vous souhaitez que la sortie à la fois dans le *déboguer* et *version* versions.  
   
 ## <a name="output-methods"></a>Méthodes de sortie  
  Les classes <xref:System.Diagnostics.Trace> et <xref:System.Diagnostics.Debug> fournissent les méthodes de sortie suivantes :  
   
 - Plusieurs méthodes `Write`, qui génèrent des informations de sortie sans interrompre l'exécution. Ces méthodes remplacent la méthode `Debug.Print` utilisée dans les versions précédentes de Visual Basic.  
   
-- Les méthodes <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, qui interrompent l'exécution et génèrent des informations de sortie si une condition spécifique échoue. Par défaut, la méthode `Assert` affiche les informations dans une boîte de dialogue. Pour plus d’informations, consultez [Assertions dans du Code managé](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> méthodes, qui interrompent l’exécution et la sortie des informations si une condition spécifique échoue. Par défaut, la méthode `Assert` affiche les informations dans une boîte de dialogue. Pour plus d’informations, consultez [Assertions dans du code managé](../debugger/assertions-in-managed-code.md).  
   
-- Les méthodes <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, qui interrompent toujours l'exécution et génèrent des informations de sortie. Par défaut, les méthodes `Fail` affichent les informations dans une boîte de dialogue.  
+- Le <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> méthodes, qui interrompent toujours les informations de l’exécution et de sortie. Par défaut, les méthodes `Fail` affichent les informations dans une boîte de dialogue.  
   
-  En plus de programmer à partir de votre application, le **sortie** fenêtre peut afficher des informations sur :  
+Le **sortie** fenêtre peut également afficher des informations sur :  
   
 - Modules que le débogueur a chargés ou déchargés.  
   
@@ -60,6 +61,6 @@ Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide d
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Fenêtre Sortie](../ide/reference/output-window.md)   
- [Suivi et instrumentation d’applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Trace et instrumenter des applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
+ [C#, F#et les types de projets Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)

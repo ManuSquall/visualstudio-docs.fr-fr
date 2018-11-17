@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855810"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780787"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Référence de schéma 2.0 du module linguistique VSIX
 
@@ -31,7 +31,7 @@ Le schéma du module linguistique VSIX fournit des informations d’installation
 
 L’élément racine du fichier de pack de langue est `<PackageLanguagePackManifest>`, avec un attribut `Version`, qui est la version du format de pack de langue. Cet article décrit la version 2.0 du format de pack de langue, qui est spécifiée dans le manifeste en définissant le `Version` à la valeur d’attribut `Version="2.0.0"`. L’élément racine contient exactement un seul enfant `<Metadata>` élément.
 
-### <a name="packagelangaugepackmanifest-element"></a>Élément de PackageLangaugePackManifest
+### <a name="packagelanguagepackmanifest-element"></a>Élément de PackageLanguagePackManifest
 
 Dans le `<PackageLanguagePackManifest>` élément l’élément suivant doit exister :
 
