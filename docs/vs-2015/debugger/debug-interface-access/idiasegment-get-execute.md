@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSegment::get_execute method
 ms.assetid: 746cdf8e-9097-415d-ba10-069854153185
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85858e5cd500a47fba01a20b46bc3d955d1cf9e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 670e2fd8c296e16f0a04aee65b102ae229a91350
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852867"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735164"
 ---
 # <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère un indicateur qui indique si le segment est exécutable.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_execute (   
+HRESULT get_execute (   
    BOOL* pRetVal  
 );  
 ```  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c6d6601c5b3affdd57d49d0461c4f3d8e487c67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769034"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Comment : spécifier une version .NET Framework pour le débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870157"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750980"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Comment : ouvrir des éditeurs pour les Documents ouverts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
