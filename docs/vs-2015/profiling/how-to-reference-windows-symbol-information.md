@@ -16,15 +16,15 @@ helpviewer_keywords:
 - symbol servers
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d327847d20574f6b52886fe8895037d28fd209ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c18825a27bfefdd1a6c817951983d85ac459b78b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225418"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763596"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Guide pratique pour référencer les informations de symboles Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) 
   
 1.  Créez un dossier destiné à contenir les informations du fichier de symboles (par exemple, C:\SymbolCache).  
   
-2.  Dans le menu **Outils** , cliquez sur **Options**.  
+2.  Dans le menu **Outils**, cliquez sur **Options**.  
   
      La boîte de dialogue **Options** s'affiche.  
   

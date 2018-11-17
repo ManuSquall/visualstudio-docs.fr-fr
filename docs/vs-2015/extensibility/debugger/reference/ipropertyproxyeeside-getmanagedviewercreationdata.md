@@ -17,12 +17,12 @@ ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3137073bdfc7e2258f643d70853b588340d2bcbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 570407afc4e06a1456f5e97e06814a44344aaa94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948510"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756584"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,18 +32,18 @@ Récupère des informations sur la visionneuse pour ce type de propriété afin 
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetManagedViewerCreationData(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  className,  
-   ASSEMBLYLOCRESOLUTION* alr,  
-   BOOL*                  replacementOk  
+HRESULT GetManagedViewerCreationData(  
+   BSTR*                  assemName,  
+   IEEDataStorage**       assemBytes,  
+   IEEDataStorage**       assemPdb,  
+   BSTR*                  className,  
+   ASSEMBLYLOCRESOLUTION* alr,  
+   BOOL*                  replacementOk  
 );  
 ```  
   
 ```csharp  
-int GetManagedViewerCreationData(  
+int GetManagedViewerCreationData(  
    out string                     assemName,  
    out IEEDataStorage             assemBytes,  
    out IEEDataStorage             assemPdb,  

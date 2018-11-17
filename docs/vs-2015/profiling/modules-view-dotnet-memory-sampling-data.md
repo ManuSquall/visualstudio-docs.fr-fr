@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9a02e5579eb5dc82f2e1f21a10444c329a317f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185383"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765525"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - Données d’échantillonnage de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

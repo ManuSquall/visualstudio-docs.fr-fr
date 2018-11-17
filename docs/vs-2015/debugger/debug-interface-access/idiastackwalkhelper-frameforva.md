@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::frameForVA method
 ms.assetid: f35fc61b-f8dd-473a-b583-82c304059422
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43a5cda236359d0a418c06a1c2b157caab75f47a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fba2fad5893a870fe32d53210c5ba636de32408c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763496"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère le frame de pile qui contient l’adresse virtuelle spécifiée.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT frameForVA(   
+HRESULT frameForVA(   
    ULONGLONG        va,  
    IDiaFrameData**  ppFrame  
 );  

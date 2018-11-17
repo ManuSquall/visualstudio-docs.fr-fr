@@ -16,12 +16,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05ee2b91204c9dca07f59e088ab07db7ee9ceaca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210130"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764315"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

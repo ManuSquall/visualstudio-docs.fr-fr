@@ -17,12 +17,12 @@ ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6e9b9ddb9a88416fdfe0d060da1c732b7b68409
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8980a3e19b115145129c14fd51278a745320e033
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835250"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809842"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Obtient le nom et le GUID du moteur de débogage (dé) ce programme en cours d�
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetEngineInfo(   
+HRESULT GetEngineInfo(   
    BSTR* pbstrEngine,  
    GUID* pguidEngine  
 );  
 ```  
   
 ```csharp  
-int GetEngineInfo(   
+int GetEngineInfo(   
    out string pbstrEngine,  
    out GUID   pguidEngine  
 );  

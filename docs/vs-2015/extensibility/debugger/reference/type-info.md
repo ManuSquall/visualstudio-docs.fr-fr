@@ -17,12 +17,12 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13df0a98d7a13e6f529cb32081fd38cf12639800
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 628d6e5ae2e13ea117cb3fd50aca3ba2150ac59f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829237"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755455"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ public struct TYPE_INFO {
  Nom de l’union.  
   
  unionmember  
- (C# uniquement) Cette option pour le type de structure appropriée en fonction de marshaler `dwKind`.  
+ [C# uniquement] Cette option pour le type de structure appropriée en fonction de marshaler `dwKind`.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) méthode où il est renseigné. Comment le contenu de la structure est interprété selon le `dwKind` champ.  
@@ -78,7 +78,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  (C++ uniquement) Si `dwKind` est égal à `TYPE_KIND_BUILT`, il est nécessaire pour libérer des sous-jacent [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) lors de la destruction de l’objet le `TYPE_INFO` structure. Pour ce faire, il suffit d'appeler `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- (C# uniquement) Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque genre de type. L’exemple montre comment procéder pour un seul type de type.  
+ [C# uniquement] Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque genre de type. L’exemple montre comment procéder pour un seul type de type.  
   
 |`dwKind`|`unionmember` interprété en tant que|  
 |--------------|----------------------------------|  

@@ -17,12 +17,12 @@ ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eccbec16d073b67eb16a369d9cf242731b45edbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53a56dc74559e7b61ec1e0c9f1eb9d448337647c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840127"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787716"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Obtient un objet de code managé qui représente la valeur associée à cet obje
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
 ```csharp  
-int GetICorDebugValue(  
-   out object ppUnk  
+int GetICorDebugValue(  
+   out object ppUnk  
 );  
 ```  
   

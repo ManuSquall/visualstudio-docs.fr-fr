@@ -17,12 +17,12 @@ ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a7bc7edf46533c377857a3aae85e8dc97da8012
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0bff5235224b0bc93ebe63b7b77b812bb54e0845
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827512"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754855"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -94,12 +94,12 @@ public struct DEBUG_ADDRESS_UNION {
  (C++ uniquement) Le nom de l’union.  
   
  unionmember  
- (C# uniquement) Cette valeur doit être marshalé vers le type de structure appropriée selon `dwKind`. Consultez la section Notes pour l’association entre `dwKind` et l’interprétation de l’union.  
+ [C# uniquement] Cette valeur doit être marshalé vers le type de structure appropriée selon `dwKind`. Consultez la section Notes pour l’association entre `dwKind` et l’interprétation de l’union.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure fait partie de la [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structurer et représente un d’un nombre de différents types d’adresses (la `DEBUG_ADDRESS` structure est remplie par un appel à la [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) méthode).  
   
- (C# uniquement) Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque type d’adresse. L’exemple montre comment procéder pour un type d’adresse.  
+ [C# uniquement] Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque type d’adresse. L’exemple montre comment procéder pour un type d’adresse.  
   
 |`dwKind`|`unionmember` interprété en tant que|  
 |--------------|----------------------------------|  
