@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2017
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2017.
 ms.custom: ''
-ms.date: 09/04/2018
+ms.date: 11/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673028"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607872"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
-**Mis à jour pour la [version 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Mis à jour pour la [version 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? Visual Studio 2017 peut vous apporter une productivité inégalée pour l’ensemble des développements, applications et plateformes. Utilisez Visual Studio 2017 afin de développer des applications pour Android, iOS, Windows, le web et le Cloud. Écrivez votre code rapidement, déboguez et diagnostiquez facilement, testez souvent et publiez en toute confiance. Vous pouvez également étendre et personnaliser Visual Studio en créant vos propres extensions. Avec cette version, utilisez la gestion de versions, soyez agile et collaborez efficacement !
 

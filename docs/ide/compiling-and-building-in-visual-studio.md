@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863619"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349131"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compiler et générer dans Visual Studio
 
-L’exécution d’une génération crée des assemblys et des applications exécutables à partir de votre code source à n’importe quel moment d’un cycle de développement. D’une façon générale, le processus de génération est très similaire entre de nombreux types différents de projets, comme Windows, ASP.NET, des applications mobiles, etc. Le processus de génération est également très similaire entre les langages de programmation, comme C#, Visual Basic, C++ et F#.
+Quand vous générez le code source, le moteur de génération crée des assemblys et des applications exécutables. D’une façon générale, le processus de génération est très similaire entre de nombreux types différents de projets, comme Windows, ASP.NET, des applications mobiles, etc. Le processus de génération est également similaire entre langages de programmation, comme C#, Visual Basic, C++ et F#.
 
-En générant souvent une build à partir de votre code, vous pouvez identifier rapidement les erreurs de compilation, comme une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez aussi détecter et corriger les erreurs d’exécution, comme les erreurs de logique et les erreurs sémantiques, en générant et en exécutant souvent des versions Debug du code.
+En générant souvent une build à partir de votre code, vous pouvez identifier rapidement les erreurs de compilation, comme une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez aussi détecter et corriger les erreurs d’exécution, comme les erreurs de logique et les erreurs sémantiques, en générant et en exécutant les versions Debug du code.
 
-Une build réussie est essentiellement une validation que le code source de l’application contient une syntaxe correcte et que toutes les références statiques à des bibliothèques, des assemblys et à d’autres composants ont été résolues. Le résultat est une application exécutable dont le fonctionnement correct peut ensuite être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Vous trouverez une présentation de ce processus sur la page [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md).
+Une génération réussie valide que le code source de l’application contient une syntaxe correcte et que toutes les références statiques aux bibliothèques, assemblys et autres composants peuvent être résolues. Le résultat est une application exécutable dont le fonctionnement peut être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Vous trouverez une présentation de ce processus sur la page [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md).
 
 Il existe plusieurs méthodes permettant de générer une application : l’environnement IDE Visual Studio, les outils en ligne de commande de MSBuild et Azure Pipelines :
 
@@ -37,6 +37,9 @@ Il existe plusieurs méthodes permettant de générer une application : l’envi
 | Azure Pipelines | - Automatiser votre processus de génération dans un pipeline d’intégration continue/de livraison continue.<br />- Appliquer des tests automatisés avec chaque build.<br />- Utiliser des ressources cloud virtuellement illimitées pour les processus de génération.<br />- Modifier le flux de travail de la génération et créer des activités de génération pour effectuer des tâches fortement personnalisées.|
 
 La documentation de cette section contient plus de détails sur le processus de génération avec l’IDE. Pour plus d’informations sur les autres méthodes, consultez [MSBuild](../msbuild/msbuild.md) et [Pipelines Azure](/azure/devops/pipelines/index?view=vsts), respectivement.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Compiler et générer dans Visual Studio pour Mac](/visualstudio/mac/compiling-and-building).
 
 ## <a name="overview-of-building-from-the-ide"></a>Vue d’ensemble de la génération à partir de l’IDE
 
@@ -57,3 +60,4 @@ Consultez ensuite [Génération et nettoyage des solutions et de projets dans Vi
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération (compilation) de projets de site web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Compiler et générer (Visual Studio pour Mac)](/visualstudio/mac/compiling-and-building)

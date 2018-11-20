@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856169"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349687"
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
 Découvrez une nouvelle façon d’installer Visual Studio ! Dans notre toute nouvelle version, nous avons facilité la sélection et l’installation des seules fonctionnalités nécessaires. Nous avons également réduit l’encombrement minimal de Visual Studio afin qu’il s’installe plus rapidement et avec moins d’impact sur le système qu’auparavant.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Installer Visual Studio pour Mac](/visualstudio/mac/installation).
 
 Vous voulez en savoir plus sur les autres nouveautés de cette version ? Consultez nos [notes de publication](/visualstudio/releasenotes/vs2017-relnotes).
 
@@ -149,4 +152,4 @@ Pour plus d’informations, consultez la page [Changer les emplacements d’inst
 * [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
 * [Créer une installation hors connexion de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Installer et configurer Visual Studio pour Mac](/visualstudio/mac/installation)
+* [Installer Visual Studio pour Mac](/visualstudio/mac/installation)

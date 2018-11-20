@@ -16,20 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349648"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826706"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
-Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage.
-
-Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active.
-
-Pour ouvrir le **automatique** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **automatique**, ou appuyez sur **Ctrl**+**Alt**+**V** > **A**.
+Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+  
+Pour ouvrir le **automatique** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **automatique**, ou appuyez sur **Ctrl**+**Alt**+**V** > **A**.  
 
 Pour ouvrir le **variables locales** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **variables locales**, ou appuyez sur **Alt**+**4**.
 
@@ -147,13 +145,13 @@ private static int subtractVars(int i, int j)
 
 Pour afficher les valeurs de retour de la `sumVars()` et `subtractVars()` des appels de méthode dans la fenêtre automatique :
 
-1. Définissez un point d’arrêt sur la ligne `int x = sumVars(a, b) + subtractVars(c, d);` .
-
-1. Démarrez le débogage et lors de l’exécution s’arrête au point d’arrêt, sélectionnez **pas à pas principal** ou appuyez sur **F10**. Vous devez voir les valeurs de retournés suivantes dans le **automatique** fenêtre :
-
-  ![Valeur de retour automatique C# ](../debugger/media/autosreturnvaluecsharp2.png "valeur de retour automatiqueC#")
-
-## <a name="see-also"></a>Voir aussi
-
-- [Fenêtres du débogueur](../debugger/debugger-windows.md)
-- [Visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations)
+1. Définissez un point d’arrêt sur la ligne `int x = sumVars(a, b) + subtractVars(c, d);` .  
+   
+1. Démarrez le débogage et lors de l’exécution s’arrête au point d’arrêt, sélectionnez **pas à pas principal** ou appuyez sur **F10**. Vous devez voir les valeurs de retournés suivantes dans le **automatique** fenêtre :  
+   
+  ![Valeur de retour automatique C# ](../debugger/media/autosreturnvaluecsharp2.png "valeur de retour automatiqueC#")  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Quel est le débogage ?](../debugger/what-is-debugging.md)  
+ [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [fenêtres du débogueur](../debugger/debugger-windows.md)

@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: e363d02c7d84d80a3a60d54e13ff2a5341145dc5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224301"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294401"
 ---
-# <a name="updating-visual-studio-for-mac"></a>Mise à jour de Visual Studio pour Mac
+# <a name="update-visual-studio-for-mac"></a>Mettre à jour Visual Studio pour Mac
 
 Visual Studio pour Mac distribue des mises à jour de l’IDE et des frameworks pris en charge sur une base régulière. Ces mises à jour peuvent prendre la forme de nouvelles fonctionnalités, d’améliorations et de correctifs de bogues.
 
@@ -26,7 +26,7 @@ Visual Studio pour Mac fournit trois canaux pour obtenir les dernières versions
 
 Vous pouvez utiliser la boîte de dialogue **Visual Studio Updater** pour rechercher les nouvelles mises à jour, changer de canal, et télécharger et installer les mises à jour.
 
-Pour ouvrir **Visual Studio Updater**, accédez à **Visual Studio > Rechercher les mises à jour...**  :
+Pour ouvrir **Visual Studio Updater**, accédez à **Visual Studio > Rechercher les mises à jour** :
 
 ![Option Rechercher les mises à jour](media/update-image1.png)
 
@@ -51,3 +51,7 @@ Pour démarrer l’installation des mises à jour, sélectionnez le bouton **Red
 ![Bouton pour démarrer l’installation des mises à jour](media/update-image4.png)
 
 En fonction des composants qui doivent être installés, vous pouvez avoir besoin d’accepter des licences supplémentaires ou d’entrer le nom d’utilisateur administrateur et le mot de passe de votre ordinateur.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Mettre à jour Visual Studio (sur Windows)](/visualstudio/install/update-visual-studio)

@@ -1,7 +1,7 @@
 ---
 title: Mode d’application des chemins de recherche Python
 description: Présentation de la façon dont Visual Studio utilise les chemins de recherche Python dans les environnements et les projets.
-ms.date: 10/29/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219976"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607899"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 
@@ -30,13 +30,19 @@ Visual Studio ignore la variable d’environnement de chemin de recherche, même
 
 Visual Studio fournit ainsi un moyen permettant de spécifier les chemins de recherche directement dans les environnements et les projets. Le code que vous exécutez ou déboguez dans Visual Studio reçoit les chemins de recherche dans la valeur de `PYTHONPATH` (et autres variables équivalentes). En ajoutant des chemins de recherche, Visual Studio inspecte les bibliothèques de ces emplacements et génère des bases de données IntelliSense pour celles-ci lorsque nécessaire (Visual Studio 2017 version 15.5 et versions antérieures ; la construction de la base de données peut prendre un certain temps en fonction du nombre de bibliothèques).
 
-Pour ajouter un chemin de recherche, cliquez avec le bouton droit sur l’élément **Chemins de recherche** dans l’**Explorateur de solutions**, sélectionnez **Ajouter le dossier au chemin de recherche**, puis sélectionnez le dossier à inclure. Ce chemin d’accès est utilisé pour n’importe quel environnement associé au projet. (Vous pouvez voir des erreurs si l’environnement est basé sur Python 3 et que vous essayez d’ajouter un chemin de recherche à des modules Python 2.7.)
+Pour ajouter un chemin de recherche, accédez à l’**Explorateur de solutions**, développez le nœud de votre projet, cliquez avec le bouton droit sur **Chemins de recherche**, puis sélectionnez **Ajouter le dossier au chemin de recherche** :
 
-Vous pouvez également ajouter les fichiers ayant une extension *.zip* ou *.egg* en tant que chemins de recherche, en sélectionnant **Ajouter une archive zip au chemin de recherche**. À l’instar des dossiers, le contenu de ces fichiers est analysé et mis à disposition d’IntelliSense.
+![Commande Ajouter le dossier au chemin de recherche dans l’Explorateur de solutions](media/search-paths-command.png)
 
-Si vous utilisez régulièrement les mêmes chemins de recherche et si le contenu ne change pas souvent, il peut être plus efficace de l’installer dans votre dossier site-packages. Le chemin de recherche est ensuite analysé et stocké dans la base de données IntelliSense. Il est toujours associé à l’environnement souhaité. Vous n’avez pas besoin d’ajouter un chemin de recherche à chaque projet.
+Cette commande permet d’afficher un navigateur dans lequel vous sélectionnez le dossier à inclure.
 
-### <a name="see-also"></a>Voir aussi
+Si votre variable d’environnement `PYTHONPATH` inclut déjà le ou les dossiers souhaités, utilisez **Ajouter PYTHONPATH au chemin de recherche** en tant que raccourci pratique.
+
+Une fois les dossiers ajoutés aux chemins de recherche, Visual Studio les utilise pour n’importe quel environnement associé au projet. (Vous pouvez voir des erreurs si l’environnement est basé sur Python 3 et que vous essayez d’ajouter un chemin de recherche à des modules Python 2.7.)
+
+Vous pouvez également ajouter les fichiers ayant une extension *.zip* ou *.egg* en tant que chemins de recherche, en sélectionnant la commande **Ajouter une archive zip au chemin de recherche**. À l’instar des dossiers, le contenu de ces fichiers est analysé et mis à disposition d’IntelliSense.
+
+## <a name="see-also"></a>Voir aussi
 
 - [Gérer les environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)

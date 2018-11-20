@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811839"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349203"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811839"
 > Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Visual Studio inclut des fonctionnalités d’accessibilité intégrées qui sont compatibles avec les lecteurs d’écran et d’autres appareils de technologie d’assistance. Cette rubrique répertorie des combinaisons de touches de raccourci courantes que vous pouvez utiliser pour effectuer des tâches avec le clavier uniquement, et inclut des informations sur l’utilisation de thèmes à contraste élevé pour améliorer la visibilité. Elle vous montre également comment utiliser des annotations pour révéler des informations utiles sur votre code et comment définir des signaux audio pour les événements de build et de point d’arrêt.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Accessibilité pour Visual Studio pour Mac](/visualstudio/mac/accessibility).
 
 ## <a name="save-your-ide-settings"></a>Enregistrer vos paramètres IDE
 
@@ -104,3 +107,4 @@ Voici comment procéder.
 * [Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Accessibilité Microsoft](https://www.microsoft.com/Accessibility)
+* [Accessibilité (Visual Studio pour Mac)](/visualstudio/mac/accessibility)

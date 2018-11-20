@@ -17,12 +17,12 @@ ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff8e2897ba3be9dc0703990582809dc508707912
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad987445864725eed5ab0f41607fa41ea6068e81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810890"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796595"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Obtient les propriétés qui décrivent ce thread.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetThreadProperties (   
+HRESULT GetThreadProperties (   
    THREADPROPERTY_FIELDS dwFields,  
    THREADPROPERTIES*     ptp  
 );  
 ```  
   
 ```csharp  
-int GetThreadProperties (   
+int GetThreadProperties (   
    enum_THREADPROPERTY_FIELDS dwFields,  
    THREADPROPERTIES[]         ptp  
 );  

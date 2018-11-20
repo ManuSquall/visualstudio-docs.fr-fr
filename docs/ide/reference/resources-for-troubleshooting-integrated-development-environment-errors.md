@@ -95,16 +95,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176539"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349282"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d’environnement de développement intégré
 
 Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, les forums ou le support technique.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Résoudre les problèmes de Visual Studio pour Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances
 
@@ -123,3 +126,4 @@ Si vous avez encore des questions après avoir essayé les autres ressources, vo
 ## <a name="see-also"></a>Voir aussi
 
 * [Résoudre les erreurs liées au réseau ou au proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Résolution des problèmes (Visual Studio pour Mac)](/visualstudio/mac/troubleshooting)

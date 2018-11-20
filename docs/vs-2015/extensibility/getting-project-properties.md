@@ -16,12 +16,12 @@ ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b99e86c4b955471ee10e0eb63cb5ca81fa675263
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: d7137012fb5b1a562257134ae7f87b19068db165
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561593"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749241"
 ---
 # <a name="getting-project-properties"></a>Obtention des propriétés d’un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

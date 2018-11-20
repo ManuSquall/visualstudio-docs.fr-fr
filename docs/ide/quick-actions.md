@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064848"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349372"
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -29,6 +29,9 @@ Les actions rapides peuvent servir à :
 - [supprimer](../code-quality/use-roslyn-analyzers.md) une violation de règle de l’analyseur de code ;
 - appliquer une refactorisation (par exemple, [rendre inline une variable temporaire](../ide/reference/inline-temporary-variable.md)) ;
 - générer du code (par exemple, [introduire une variable locale](../ide/reference/introduce-local-variable.md)).
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Refactorisation (Visual Studio pour Mac)](/visualstudio/mac/refactoring).
 
 Les actions rapides peuvent être appliquées en utilisant l’icône en forme d’ampoule ![icône en forme d’ampoule](media/light-bulb-icon.png) ou de tournevis ![icône en forme de tournevis](media/screwdriver-icon.png), ou en appuyant sur **Ctrl**+**.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
 
@@ -60,3 +63,4 @@ Sélectionnez la flèche vers le bas en regard de l’ampoule ou le lien **Affic
 - [Actions rapides courantes](../ide/common-quick-actions.md)
 - [Styles de code et actions rapides](../ide/code-styles-and-quick-actions.md)
 - [Écrire et refactoriser du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Refactorisation (Visual Studio pour Mac)](/visualstudio/mac/refactoring)

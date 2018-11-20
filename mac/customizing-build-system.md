@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224288"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296305"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
-MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Cependant, xbuild a été supprimé en faveur de l’utilisation de MSBuild sur tous les systèmes d’exploitation.
+MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
 
-**MSbuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac. 
+**MSbuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac.
 
-MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sources, et les transforme en sorties, comme des fichiers exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur. 
-
+MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sources, et les transforme en sorties, comme des fichiers exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur.
 
 ## <a name="msbuild-file"></a>Fichier MSBuild
 
-MSBuild utilise un fichier XML, appelé fichier projet, qui définit les *éléments* qui font partie de votre projet (par exemple des ressources d’image) et les *propriétés* nécessaires pour générer votre projet. Ce fichier projet a toujours une extension de fichier se terminant par `proj`, par exemple `.csproj` pour les projets C#. 
+MSBuild utilise un fichier XML, appelé fichier projet, qui définit les *éléments* qui font partie de votre projet (par exemple des ressources d’image) et les *propriétés* nécessaires pour générer votre projet. Ce fichier projet a toujours une extension de fichier se terminant par `proj`, par exemple `.csproj` pour les projets C#.
 
 ### <a name="viewing-the-msbuild-file"></a>Affichage du fichier MSBuild
 
@@ -61,7 +60,7 @@ Il existe deux types de données fondamentaux dans MSBuild : les *éléments* e
 
 Les propriétés sont des paires clé/valeur, qui sont utilisées pour stocker les paramètres qui affectent la compilation, comme les options du compilateur.
 
-Elles sont définies à l’aide d’un PropertyGroup et peuvent contenir un nombre quelconque de PropertiesGroups, qui peuvent eux-mêmes contenir un nombre quelconque de propriétés. 
+Elles sont définies à l’aide d’un PropertyGroup et peuvent contenir un nombre quelconque de PropertiesGroups, qui peuvent eux-mêmes contenir un nombre quelconque de propriétés.
 
 Par exemple, le PropertyGroup pour une pour une application de console simple peut se présenter comme le XML suivant :
 
@@ -83,7 +82,7 @@ Les propriétés peuvent être référencées dans des expressions avec la synta
 
 Les éléments offrent un moyen de traiter les entrées dans le système de génération sous formes de listes ou d’ensembles, et représentent en général des fichiers. Chaque élément a un *type*d’élément, une *spécification* d’élément et des *métadonnées* arbitraires facultatives. Notez que MSBuild ne travaille pas sur des éléments individuels, il prend tous les éléments d’un type donné, appelé un *ensemble* d’éléments.
 
-Les éléments sont créés en déclarant un `ItemGroup`. Il peut y avoir un nombre quelconque d’ItemGroups, qui peuvent contenir un nombre quelconque d’éléments. 
+Les éléments sont créés en déclarant un `ItemGroup`. Il peut y avoir un nombre quelconque d’ItemGroups, qui peuvent contenir un nombre quelconque d’éléments.
 
 Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’iOS. Les écrans de lancement ont le type de build `BundleResource`, avec les spécifications en tant que chemin d’accès à l’image :
 
@@ -104,5 +103,5 @@ Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’i
 
 Les ressources suivantes peuvent être utilisées pour obtenir plus d’informations sur MSBuild :
 
-* [MSDN - Vue d’ensemble](https://msdn.microsoft.com/library/dd393574.aspx)
-* [MSDN - Concepts](https://msdn.microsoft.com/library/dd637714.aspx)
+* [MSBuild Overview (Vue d’ensemble de MSBuild)](/visualstudio/msbuild/msbuild)
+* [Concepts MSBuild](/visualstudio/msbuild/msbuild-concepts)

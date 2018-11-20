@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223921"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294654"
 ---
 # <a name="enable-subscription"></a>Activer l’abonnement
 
@@ -43,3 +43,7 @@ Il n’existe actuellement aucun moyen d’utiliser une clé de produit pour act
 > Pour activer votre abonnement Visual Studio 2017 pour Mac Professional ou Enterprise, vous devez être connecté à Internet.
 
 Si vous avez acheté Visual Studio Enterprise 2017 pour Mac pour des machines sans connexion Internet, vous pouvez continuer à utiliser Visual Studio pour Mac sans activation, mais Xamarin Inspector, Xamarin Profiler et les fonctionnalités des assemblys incorporés ne seront pas disponibles.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Se connecter à Visual Studio (sur Windows)](/visualstudio/ide/signing-in-to-visual-studio)

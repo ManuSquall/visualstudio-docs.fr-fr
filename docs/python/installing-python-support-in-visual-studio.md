@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324988"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349019"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -59,7 +59,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
     | Option | Description |
     | --- | --- |
-    | Distributions Python | Choisissez n’importe quelle combinaison des variantes 32 bits et 64 bits des distributions Python 2, Python 3, Anaconda2 et Anaconda3 avec lesquelles vous prévoyez de travailler. Chacune comprend l’interpréteur, le runtime et les bibliothèques de la distribution. Anaconda est une plateforme de science des données ouverte qui inclut une large gamme de packages préinstallés. (Vous pouvez revenir au programme d’installation de Visual Studio à tout moment pour ajouter ou supprimer des distributions.)  **Remarque** : Si vous avez installé une distribution en dehors du programme d’installation de Visual Studio, il n’est pas nécessaire de vérifier l’option équivalente ici. Visual Studio détecte automatiquement les installations existantes de Python. Consultez [Environnements Python](managing-python-environments-in-visual-studio.md). En outre, si une version de Python plus récente que celle qui apparaît dans le programme d’installation est disponible, vous pouvez installer cette nouvelle version séparément ; Visual Studio la détectera. |
+    | Distributions Python | Choisissez n’importe quelle combinaison des variantes 32 bits et 64 bits des distributions Python 2, Python 3, Anaconda2 et Anaconda3 avec lesquelles vous prévoyez de travailler. Chacune comprend l’interpréteur, le runtime et les bibliothèques de la distribution. Anaconda est une plateforme de science des données ouverte qui inclut une large gamme de packages préinstallés. (Vous pouvez revenir au programme d’installation de Visual Studio à tout moment pour ajouter ou supprimer des distributions.)  **Remarque** : Si vous avez installé une distribution en dehors du programme d’installation de Visual Studio, il n’est pas nécessaire de vérifier l’option équivalente ici. Visual Studio détecte automatiquement les installations existantes de Python. Consultez [Fenêtre Environnements Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). En outre, si une version de Python plus récente que celle qui apparaît dans le programme d’installation est disponible, vous pouvez installer cette nouvelle version séparément ; Visual Studio la détectera. |
     | **Prise en charge des modèles Cookiecutter** | Installe l’interface utilisateur graphique Cookiecutter pour découvrir des modèles, entrer des options de modèle et créer des projets et fichiers. Consultez [Utiliser l’extension Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Prise en charge de Python web** | Installe des outils pour le développement web incluant la prise en charge de l’édition de code HTML, CSS et JavaScript, ainsi que des modèles pour des projets utilisant les frameworks Bottle, Flask et Django. Consultez [Modèles de projet web Python](python-web-application-project-templates.md). |
     | **Prise en charge de Python IoT** | Prend en charge le développement Windows IoT Core avec Python. |

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228860"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295681"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visite guidée de Visual Studio pour Mac
 
@@ -56,13 +56,13 @@ C’est ici que le code source, les ressources, l’interface utilisateur et les
 Pour plus d’informations sur l’utilisation de projets et de solutions dans Visual Studio pour Mac, consultez l’article [Projets et solutions](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Références d'assembly
- 
+
 Les références d’assemblys pour chaque projet sont disponibles dans le dossier Références :
 
 ![Dossier Références dans le panneau Solution](media/ide-tour-image19.png)
 
 Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les références**, que vous pouvez afficher en double-cliquant sur le dossier Références ou en sélectionnant **Modifier les références** dans les actions de son menu contextuel :
- 
+
 ![Boîte de dialogue Modifier les références](media/ide-tour-image20.png)
 
 Pour plus d’informations sur l’utilisation de références dans Visual Studio pour Mac, consultez l’article [Gestion des références dans un projet](managing-references-in-a-project.md).
@@ -93,7 +93,7 @@ Pour plus d’informations sur les visualisations des données du débogueur, co
 
 ## <a name="version-control"></a>Gestion de version
 
-Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Git et Subversion. Les projets soumis au contrôle du code source sont signalés par la branche figurant en regard du nom de la solution : 
+Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Git et Subversion. Les projets soumis au contrôle du code source sont signalés par la branche figurant en regard du nom de la solution :
 
 ![Nom de la branche pour indiquer un projet soumis au contrôle du code source](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Les fichiers comportant des modifications non validées sont indiqués par une a
 ![Fichiers non validés dans le panneau Solution](media/ide-tour-image23.png)
 
 Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](version-control.md).
+
+## <a name="see-also"></a>Voir aussi
+
+- [IDE Visual Studio (sur Windows)](/visualstudio/ide/visual-studio-ide)

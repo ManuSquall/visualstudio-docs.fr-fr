@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561774"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826659"
 ---
 # <a name="what-is-debugging"></a>Qu’est-ce que le débogage ?
 
@@ -49,7 +49,7 @@ Le débogueur est un outil essentiel pour rechercher et corriger les bogues dans
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cet article, vous avez appris quelques concepts généraux de débogage. Ensuite, vous pouvez démarrer le débogage avec Visual Studio et comment écrire du code avec moins de bogues d’apprentissage.
+Dans cet article, vous avez appris quelques concepts généraux de débogage. Ensuite, vous pouvez démarrer le débogage avec Visual Studio et comment écrire du code avec moins de bogues d’apprentissage. L’article suivant montre C# exemples de code, mais les concepts s’appliquent à tous les langages pris en charge par Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)

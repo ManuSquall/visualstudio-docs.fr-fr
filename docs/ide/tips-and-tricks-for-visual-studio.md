@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220851"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348941"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier pour Visual Studio
 
@@ -22,6 +22,9 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 
 > [!TIP]
 > Les raccourcis répertoriés ici représentent uniquement un sous-ensemble des raccourcis clavier disponibles. Pour obtenir une liste plus complète, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Raccourcis clavier courants dans Visual Studio pour Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Gestion des fenêtres
 
@@ -136,4 +139,5 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)
 - [Raccourcis clavier (Azure DevOps Services et TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog de conseils et d’astuces pour Visual Studio](https://blogs.msdn.com/b/zainnab)
+- [Blog de conseils et d’astuces pour Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Raccourcis clavier courants dans Visual Studio pour Mac](/visualstudio/mac/keyboard-shortcuts)

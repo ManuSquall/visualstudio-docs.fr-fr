@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224056"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349437"
 ---
 # <a name="data-visualizations"></a>Visualisations des données
 
@@ -19,43 +19,40 @@ Visual Studio pour Mac offre la prise en charge de l’interface utilisateur du 
 
 Les visualiseurs du panneau de débogage **Local** peuvent être affichés en cliquant sur l’icône d’aperçu qui apparaît à droite de la valeur quand l’utilisateur pointe sur la ligne :
 
- ![Panneau Local](media/data-visualizations-image9.png)
+![Panneau Local](media/data-visualizations-image9.png)
 
 La liste ci-dessous présente la plupart des nouvelles visualisations disponibles lors du débogage dans Visual Studio pour Mac.
 
 ## <a name="point"></a>Point
 Une structure Point/PointF, ou CGPoint dans iOS et Mac, est restituée sous la forme d’un tuple montrant les valeurs X et Y dans le panneau de débogage :
 
- ![Visualisation d’une structure Point](media/data-visualizations-image10.png)
+![Visualisation d’une structure Point](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>Size
-Une structure Size/SizeF, ou CGSize dans iOS et Mac, est restituée sous la forme d’un rectangle. Il est dessiné avec une mise à l’échelle jusqu’à ce qu’une dimension dépasse 250 pixels, moment où il est mis à l’échelle avec comme dimension maximale 250 pixels :
+Une structure Size/SizeF, ou CGSize dans iOS et Mac, est restituée sous la forme d’un rectangle. Elle est dessinée à l’échelle jusqu’à ce qu’une dimension dépasse 250 pixels, limite à partir de laquelle elle est mise à l’échelle par rapport au rectangle avec comme dimension maximale 250 pixels :
 
-![Visualisation d’une structure Size](media/data-visualizations-image11.png)
-
+[Visualisation d’une structure Size](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>Rectangle
 Une structure Rectangle/RectangleF, ou CGRect dans iOS et Mac, affiche les dimensions et l’origine. Similaire à la structure Size, elle est dessinée à l’échelle, jusqu’à ce qu’une dimension dépasse 250 pixels :
 
- ![Visualisation d’une structure Rectangle](media/data-visualizations-image12.png)
+![Visualisation d’une structure Rectangle](media/data-visualizations-image12.png)
 
 ## <a name="coordinate"></a>Coordonnée
 Les coordonnées sont tracées sur un plan, avec l’emplacement épinglé au centre :
 
-![Visualisation d’une coordonnée](media/data-visualizations-image13.png)
+[Visualisation d’une coordonnée](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>Color
 Ceci affiche les propriétés UIColor, CGColor et Color, en montrant un aperçu de la couleur, les composants RVBA, les valeurs Teinte-Saturation-Luminosité et la valeur hexadécimale de la couleur :
 
 ![Visualisation d’une couleur](media/data-visualizations-image14.png)
 
-
 ## <a name="images"></a>Images
 
-Le média est restitué à l’échelle, jusqu’à une dimension maximale de 250 pixels et est ajusté quand l’image dépasse 250 pixels :
+Le média est affiché à l’échelle, jusqu’à une dimension maximale de 250 pixels, et est ajusté quand l’image dépasse 250 pixels :
 
- ![Visualisation d’une image](media/data-visualizations-image15.png)
-
+![Visualisation d’une image](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>Courbes de Bézier
 
@@ -63,10 +60,9 @@ Le visualiseur affiche un `NSBezierPath` :
 
 ![Visualisation d’une courbe de Bézier](media/data-visualizations-image16.png)
 
-
 ## <a name="string"></a>Chaîne
 
-Une chaîne de moins de 100 caractères s’affiche dans sa totalité, sans aperçu. Les chaînes plus longues sont affichées en totalité dans l’aperçu. Les chaînes sont modifiables, et le visualiseur comporte un bouton Modifier, qui permet la modification de la valeur de la chaîne dans l’aperçu ou dans l’éditeur de valeur de chaîne, montré ci-dessous :
+Une chaîne de moins de 100 caractères s’affiche en totalité, sans aperçu. Les chaînes plus longues s’affichent en totalité dans l’aperçu. Les chaînes sont modifiables, et le visualiseur comporte un bouton Modifier, qui permet la modification de la valeur de la chaîne dans l’aperçu ou dans l’éditeur de valeur de chaîne, montré ci-dessous :
 
 ![Visualisation d’une chaîne](media/data-visualizations-image17.png)
 
@@ -78,7 +74,7 @@ Une chaîne de moins de 100 caractères s’affiche dans sa totalité, sans ape
 
 ### <a name="editor"></a>Éditeur :
 
- ![Visualisation de l’éditeur](media/data-visualizations-image21.png)
+![Visualisation de l’éditeur](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
@@ -90,7 +86,7 @@ IEnumerable énumère toutes les valeurs ; les valeurs de chaque élément peuv
 
 Voici quelques autres types qui ont leur propre visualiseur :
 
- ![Autre visualisation](media/data-visualizations-image23.png)
+![Autre visualisation](media/data-visualizations-image23.png)
 
 *   **Primitifs**
     *   Ceci affiche la valeur brute du type primitif.
@@ -104,3 +100,8 @@ Voici quelques autres types qui ont leur propre visualiseur :
     *   Ceci affiche un lien hypertexte sur lequel vous pouvez cliquer.
 *   **IntPtr**
     *   Ceci affiche une représentation hexadécimale de IntPtr.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Inspecter les variables dans les fenêtres Automatique et Variables locales (Visual Studio sur Windows)](/visualstudio/debugger/autos-and-locals-windows)
+- [Afficher les chaînes dans un visualiseur (Visual Studio sur Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

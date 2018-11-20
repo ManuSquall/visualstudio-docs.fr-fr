@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: ced442c0fafc47b5cdae1568dbbfb6df7c2f2f50
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204425"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948388"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser la règle définit pour les règles d’analyse de code de groupe
 
@@ -58,10 +58,15 @@ Le contenu d’un *.ruleset* fichier ressemble à ce document XML :
 > [!TIP]
 > Il est plus facile à [modifier un ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md) dans le graphique **Éditeur d’ensemble de règles** que manuellement.
 
+## <a name="specify-a-rule-set-for-a-project"></a>Spécifiez un ensemble de règles pour un projet
+
 La règle définie pour un projet est spécifié par le **CodeAnalysisRuleSet** propriété dans le fichier de projet Visual Studio. Exemple :
 
 ```xml
-<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
 ```
 
 ## <a name="see-also"></a>Voir aussi

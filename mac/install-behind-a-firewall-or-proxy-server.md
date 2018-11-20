@@ -6,12 +6,12 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: a63f3a6ff8963cd1136b604bf151d71d950f2164
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991880"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295189"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
@@ -89,5 +89,5 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Installer et utiliser Visual Studio 2017 et les services Azure derrière un pare-feu ou un serveur proxy](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [Résoudre des problèmes similaires sous Windows](https://docs.microsoft.com/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [Installer et utiliser Visual Studio 2017 et les services Azure derrière un pare-feu ou un serveur proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Résoudre des problèmes similaires sur Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384238"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349099"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 
@@ -93,6 +93,9 @@ Vous pouvez définir des jeux de composants comme étendue de recherche en chois
 
 ## <a name="multi-caret-selection"></a>Sélection avec signes insertion multiples
 
+> [!NOTE]
+> Cette section s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Sélection de bloc](/visualstudio/mac/block-selection).
+
 **Nouveauté de Visual Studio 2017 version 15.8**
 
 Utilisez la *sélection avec signes insertion multiples* pour effectuer la même modification à plusieurs endroits à la fois. Par exemple, vous pouvez insérer le même texte ou modifier du texte existant à plusieurs emplacements en même temps.
@@ -130,3 +133,4 @@ Certaines des commandes sont également disponibles dans le menu **Edition**, so
 
 - [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refactoriser le code dans Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Sélection de bloc (Visual Studio pour Mac)](/visualstudio/mac/block-selection)

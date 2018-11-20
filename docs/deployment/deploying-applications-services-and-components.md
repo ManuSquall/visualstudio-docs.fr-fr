@@ -1,6 +1,6 @@
 ---
 title: Présentation des fonctionnalités de déploiement
-description: En savoir plus sur les options disponibles pour le déploiement d’applications à partir de Visual Studio.
+description: Découvrez plus d’informations sur les options de déploiement d’applications à partir de Visual Studio.
 ms.custom: mvc
 ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
@@ -26,107 +26,107 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49861629"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : Premier aperçu au moment du déploiement dans Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : Présentation du déploiement dans Visual Studio
 
-En déployant une application, un service ou un composant, vous le distribuez pour l’installation sur d’autres ordinateurs, appareils ou serveurs, ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin. (Nombreux types d’application prend en charge les autres outils de déploiement telles que le déploiement de la ligne de commande ou NuGet qui ne sont pas décrites ici).
+Quand vous déployez une application, un service ou un composant, vous le distribuez pour l’installer sur d’autres ordinateurs, appareils, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin. (De nombreux types d’application prennent en charge d’autres outils de déploiement comme l’outil de déploiement en ligne de commande ou NuGet qui ne sont pas décrits ici.)
 
-Consultez les Démarrages rapides et didacticiels pour obtenir des instructions de déploiement étape par étape. Pour une vue d’ensemble des options de déploiement, consultez [quelles options de publication sont me convient ?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
+Consultez les guides de démarrage rapide et les tutoriels pour obtenir des instructions de déploiement pas à pas. Pour une vue d’ensemble des options de déploiement, consultez [Quelles options de publication choisir ?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
-## <a name="deploy-to-local-folder"></a>Déployer sur le dossier local
+## <a name="deploy-to-local-folder"></a>Déployer dans un dossier local
 
-Déploiement vers un dossier local est généralement utilisé pour le test ou pour lancer un déploiement intermédiaire dans lequel un autre outil est utilisé pour le déploiement final.
+Le déploiement dans un dossier local est généralement utilisé pour les tests ou pour lancer un déploiement de préproduction dans lequel un autre outil est utilisé pour le déploiement final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, et. **NET Core**: utiliser l’outil de publication pour déployer vers un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez sur votre projet et choisissez **publier**. (Si vous avez déjà configuré des profils de publication, vous devez ensuite cliquer sur **créer nouveau profil**.) Ensuite, choisissez **dossier**. Pour plus d’informations, consultez [déployer vers un dossier local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et **.NET Core** : Utiliser l’outil Publier pour déployer dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
 
-    ![Choisissez publier](../deployment/media/quickstart-publish.png)
+    ![Choisir Publier](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ runtime**: vous pouvez déployer le runtime Visual C++ à l’aide de déploiement local ou liaison statique. Pour plus d’informations, consultez [déploiement d’Applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Runtime Visual C++** : Vous pouvez déployer le runtime Visual C++ à l’aide d’un déploiement local ou d’une liaison statique. Pour plus d'informations, consultez [Déploiement d’applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**, et **Node.js**: vous pouvez utiliser l’outil de publication pour déployer rapidement des applications sur Azure App Service ou à un commutateur Azure Machine. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez ensuite cliquer sur **créer nouveau profil**.) Dans la boîte de dialogue Publier, choisissez **App Service** ou **Machines virtuelles**, puis suivez les étapes de configuration.
+- **ASP.NET**, **ASP.NET Core**, **Python** et **Node.js** : Vous pouvez utiliser l’outil Publier pour déployer rapidement des applications sur Azure App Service ou sur une machine virtuelle Azure. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Dans la boîte de dialogue Publier, choisissez **App Service** ou **Machines virtuelles Azure**, puis suivez les étapes de configuration.
 
-    ![Choisissez Azure App Service](../deployment/media/quickstart-publish-azure.png "choisir Azure App Service")
+    ![Choisir Azure App Service](../deployment/media/quickstart-publish-azure.png "Choisir Azure App Service")
 
-    Dans Visual Studio 2017 version 15.7 et ultérieure, vous pouvez déployer des applications ASP.NET Core **App Service pour Linux**.
+    Dans Visual Studio 2017 version 15.7 et ultérieure, vous pouvez déployer des applications ASP.NET Core sur **App Service pour Linux**.
 
-    Pour les applications Python, consultez également [Python - publication sur Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Pour les applications Python, consultez également [Python - Publication sur Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-    Pour une présentation rapide, consultez [publier sur Azure](quickstart-deploy-to-azure.md) et [publier sur Linux](quickstart-deploy-to-linux.md). En outre, consultez [publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Pour le déploiement à l’aide de Git, consultez [déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment).
+    Pour une présentation rapide, consultez [Publier sur Azure](quickstart-deploy-to-azure.md) et [Publier sur Linux](quickstart-deploy-to-linux.md). Consultez également [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Pour le déploiement avec Git, consultez [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-    Pour plus d’informations sur l’importation d’un profil de publication à partir d’Azure App Service pour Visual Studio, consultez [importer les paramètres de publication et la déployer dans Azure](../deployment/tutorial-import-publish-settings-azure.md).
+    Pour plus d’informations sur l’importation d’un profil de publication à partir d’Azure App Service vers Visual Studio, consultez [Importer des paramètres de publication et déployer sur Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     > [!NOTE]
-    > Si vous n’avez pas déjà un compte Azure, vous pouvez [Inscrivez-vous ici](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+    > Si vous n’avez pas encore de compte Azure, vous pouvez vous [inscrire ici](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-## <a name="publish-to-web-or-deploy-to-network-share"></a>Publier sur le Web ou le déployer sur un partage réseau
+## <a name="publish-to-web-or-deploy-to-network-share"></a>Publier sur le web ou déployer sur un partage réseau
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, et **Python**: vous pouvez utiliser l’outil de publication pour déployer sur un site Web à l’aide de FTP ou Web Deploy. Pour plus d’informations, consultez [déployer vers un site web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** et **Python** : Vous pouvez utiliser l’outil Publier pour déployer sur un site web à l’aide de FTP ou Web Deploy. Pour plus d’informations, consultez [Déployer sur un site web](quickstart-deploy-to-a-web-site.md).
 
-    Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez ensuite cliquer sur **créer nouveau profil**.) Dans l’outil de publication, choisissez l’option souhaitée et suivez les étapes de configuration.
+    Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Dans l’outil Publier, choisissez l’option souhaitée et suivez les étapes de configuration.
 
     ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png)
 
-    Pour plus d’informations sur l’importation d’un profil de publication dans Visual Studio, consultez [importer les paramètres de publication et la déployer sur IIS](../deployment/tutorial-import-publish-settings-iis.md).
+    Pour plus d’informations sur l’importation d’un profil de publication dans Visual Studio, consultez [Importer des paramètres de publication et déployer sur IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    Vous pouvez également déployer des applications ASP.NET et services dans plusieurs autres façons. Pour plus d’informations, consultez [ASP.NET de déploiement d’applications et services web](http://www.asp.net/aspnet/overview/deployment).
+    Vous pouvez également déployer des applications et services ASP.NET de plusieurs autres façons. Pour plus d’informations, consultez [Déploiement d’applications et services web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++ runtime**: vous pouvez déployer le runtime Visual C++ à l’aide de déploiement central. Pour plus d’informations, consultez [déploiement d’Applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Runtime Visual C++** : Vous pouvez déployer le runtime Visual C++ à l’aide d’un déploiement central. Pour plus d'informations, consultez [Déploiement d’applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
-- **Bureau de Windows** vous pouvez publier une application de bureau Windows à un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [déployer une application de bureau à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) et [déployer une application native à l’aide de ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de bureau à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) et [Déployer une application native à l’aide de ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
 ## <a name="publish-to-microsoft-store"></a>Publier sur Microsoft Store
 
 À partir de Visual Studio, vous pouvez créer des packages d’application pour le déploiement sur Microsoft Store.
 
-- **UWP**: vous pouvez empaqueter votre application et le déployer à l’aide des éléments de menu. Pour plus d’informations, consultez [empaqueter une application UWP à l’aide de Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP** : Vous pouvez empaqueter votre application et la déployer à l’aide des éléments de menu. Pour plus d’informations, consultez [Empaqueter une application UWP à l’aide de Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Création d'un package d'application](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Bureau de Windows**: vous pouvez déployer sur le Microsoft Store à l’aide de Desktop Bridge à partir de Visual Studio 2017 version 15.4. Pour ce faire, commencez par créer un projet de package d’Application Windows. Pour plus d’informations, consultez [empaqueter une application de bureau pour Microsoft Store (pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Windows Desktop** : Vous pouvez déployer sur Microsoft Store à l’aide du Pont du bureau à partir de Visual Studio 2017 version 15.4. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-    ![Pont de bureau](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Pont du bureau](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>Déployer sur un appareil (UWP)
 
-Si vous déployez une application UWP pour le test sur un appareil, consultez [exécuter des applications UWP sur un ordinateur distant dans Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
+Si vous déployez une application UWP à des fins de test sur un appareil, consultez [Exécuter des applications UWP sur un ordinateur distant dans Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 ## <a name="create-an-installer-package-windows-client"></a>Créer un package d’installation (client Windows)
 
-Si vous avez besoin plus d’une installation complexe d’une application de bureau que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) peut fournir, vous pouvez créer un package d’installation, un projet d’installation ou un programme d’amorçage personnalisé.
+Si vous avez besoin d’une installation d’application de bureau plus complexe que ce que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) peut fournir, vous pouvez créer un package d’installation, un projet d’installation ou un programme d’amorçage personnalisé.
 
-- Un programme d’installation WiX basé sur MSI peut être créé à l’aide de la [Extension WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+- Vous pouvez créer un programme d’installation WiX basé sur MSI à l’aide de [l’Extension WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 
-- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) à partir de Flexera Software peut être utilisée avec Visual Studio 2017 (Community Edition ne pas pris en charge). Notez que InstallShield Limited Edition n’est plus incluse avec Visual Studio et n’est pas pris en charge dans Visual Studio 2017 ; Vérifiez auprès de [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) sur la disponibilité des futures.
+- Vous pouvez utiliser [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software avec Visual Studio 2017 (l’édition Community n’est pas prise en charge). Notez qu’InstallShield Limited Edition n’est plus inclus avec Visual Studio et n’est pas pris en charge dans Visual Studio 2017. Vérifiez auprès de [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) la disponibilité future.
 
-- Si vous souhaitez créer un projet d’installation (vdproj), installez le [extension des projets de programme d’installation de Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Si vous voulez créer un projet d’installation (vdproj), installez [l’extension Visual Studio 2017 Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-- Vous pouvez installer les composants requis pour les applications bureautiques en configurant un programme d’installation générique, qui est connu comme un programme d’amorçage. Pour plus d’informations, consultez [conditions préalables au déploiement de Application](../deployment/application-deployment-prerequisites.md).
+- Vous pouvez installer les composants prérequis pour les applications de bureau en configurant un programme d’installation générique, appelé programme d’amorçage. Pour plus d’informations, consultez [Prérequis du déploiement d’applications](../deployment/application-deployment-prerequisites.md).
 
-## <a name="deploy-to-test-lab"></a>Déployer pour le laboratoire de test
+## <a name="deploy-to-test-lab"></a>Déployer sur un laboratoire de test
 
-Vous pouvez activer plus sophistiquées de développement et de test en déployant vos applications dans des environnements virtuels. Pour plus d’informations, consultez [Test sur un environnement lab](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
+Vous pouvez effectuer des développements et des tests plus sophistiqués en déployant vos applications dans des environnements virtuels. Pour plus d'informations, consultez [Tester sur un environnement lab](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-## <a name="devops-deployment"></a>Déploiement de DevOps
+## <a name="devops-deployment"></a>Déploiement DevOps
 
-Dans un environnement d’équipe, vous pouvez utiliser des Pipelines d’Azure pour activer le déploiement continu de votre application. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) et [déployer sur Azure](/azure/devops/deploy-azure/index?view=vsts).
+Dans un environnement d’équipe, vous pouvez utiliser Azure Pipelines pour permettre le déploiement continu de votre application. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) et [Déployer sur Azure](/azure/devops/deploy-azure/index?view=vsts).
 
-## <a name="deployment-for-other-app-types"></a>Déploiement pour les autres types d’application
+## <a name="deployment-for-other-app-types"></a>Déploiement pour d’autres types d’application
 
 | Type d'application | Scénario de déploiement | Lien |
 | --- | --- | --- |
 | **Application Office** | Vous pouvez publier un complément pour Office à partir de Visual Studio. | [Déployer et publier votre complément Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Service WCF ou OData** | Autres applications peuvent utiliser les services RIA WCF que vous déployez sur un serveur web. | [Développement et le déploiement des Services de données WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch n’est plus pris en charge dans Visual Studio 2017, mais pourra être déployé à partir de Visual Studio 2015 et versions antérieures. | [Déploiement d’Applications LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **Service WCF ou OData** | D’autres applications peuvent utiliser des services RIA WCF que vous déployez sur un serveur web. | [Développement et déploiement de WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **LightSwitch** | LightSwitch n’est plus pris en charge dans Visual Studio 2017, mais peut encore être déployé à partir de Visual Studio 2015 et versions antérieures. | [Déploiement d’applications LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous avez examiné rapide des options de déploiement pour différentes applications.
+Dans ce tutoriel, vous avez eu un bref aperçu des options de déploiement pour différentes applications.
 
 > [!div class="nextstepaction"]
-> [Quelles options de publication sont me convient ?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)
+> [Quelles options de publication choisir ?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 79d96ac61bcec198c899d709677df775332db383
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224005"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295278"
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 
@@ -27,9 +27,9 @@ Des références web et des références natives peuvent également être ajout�
 
 ## <a name="assembly-references"></a>Références d’assembly
 
-Chaque framework dans Xamarin est fourni avec plus d’une dizaine d’assemblys. Certains de ces packages d’assemblys ne sont pas référencés dans votre projet par défaut. 
+Chaque framework dans Xamarin est fourni avec plus d’une dizaine d’assemblys. Certains de ces packages d’assemblys ne sont pas référencés dans votre projet par défaut.
 
-Pour modifier les packages qui sont référencés dans votre projet, utilisez la boîte de dialogue _Modifier les références_, que vous pouvez afficher en double-cliquant sur le dossier Références ou en sélectionnant Modifier les références dans les actions de son menu contextuel :
+Pour modifier les packages référencés dans votre projet, utilisez la boîte de dialogue **Modifier les références**, que vous pouvez afficher en double-cliquant sur le dossier Références, ou en sélectionnant **Modifier les références** dans les actions de son menu contextuel :
 
 ![Boîte de dialogue Références d’assembly](media/projects-and-solutions-image11.png)
 
@@ -42,3 +42,8 @@ NuGet est le gestionnaire de packages le plus répandu pour le développement .N
 Pour cela, cliquez avec le bouton droit sur le dossier **Package** dans le panneau Solution et sélectionnez Ajouter des Packages.
 
 Vous trouverez plus d’informations sur l’utilisation d’un package NuGet dans la procédure pas à pas [Inclusion d’un package NuGet dans votre projet](nuget-walkthrough.md).
+
+## <a name="see-also"></a>Voir aussi
+
+- [Gérer les références (Visual Studio sur Windows)](/visualstudio/ide/managing-references-in-a-project)
+- [Ajout de références avec NuGet ou un kit SDK d’extension (Visual Studio sur Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

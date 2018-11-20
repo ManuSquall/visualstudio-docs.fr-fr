@@ -1,5 +1,5 @@
 ---
-title: Publier sur un site Web
+title: Publier sur un site web
 ms.custom: ''
 ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
@@ -14,46 +14,46 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 036d7549995f79808142c3a0a64e7e5f2075df2c
 ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/17/2018
 ms.locfileid: "39077501"
 ---
-# <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publier une application Web sur un site web à l’aide de Visual Studio
+# <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publier une application web sur un site web à l’aide de Visual Studio
 
-Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET, ASP.NET Core, .NET Core et Python à un site Web à partir de Visual Studio. Pour Node.js, les étapes sont pris en charge, mais l’interface utilisateur est différente.
+Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET, ASP.NET Core, .NET Core et Python sur un site web à partir de Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
-## <a name="publish-to-a-web-site"></a>Publier sur un site Web
+## <a name="publish-to-a-web-site"></a>Publier sur un site web
 
-1. Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **publier** (ou utilisez le **Build** > **publier** élément de menu).
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
-    ![La commande Publier sur le menu contextuel du projet dans l’Explorateur de solutions](../deployment/media/quickstart-publish.png "choisissez Publier")
+    ![Commande Publier du menu contextuel du projet dans l’Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisissez Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Sélectionnez **créer nouveau profil**.
+1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Cliquez sur **Créer un profil**.
 
-1. Dans le **choisir une cible de publication** boîte de dialogue, choisissez **IIS, FTP, etc**.
+1. Dans la boîte de dialogue **Choisir une cible de publication**, choisissez **IIS, FTP, etc**.
 
-    ![Choisissez IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "choisir de IIS, FTP, etc..")
+    ![Choisir IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "Choisir IIS, FTP, etc.")
 
-1. Sélectionnez **Publier**. Le profil des paramètres ouvre la boîte de dialogue de publication.
+1. Sélectionnez **Publier**. La boîte de dialogue des paramètres de publication du profil s’ouvre.
 
-    ![Choisissez le dossier](../deployment/media/quickstart-publish-settings-web.png "choisir le dossier")
+    ![Choisir un dossier](../deployment/media/quickstart-publish-settings-web.png "Choisir un dossier")
 
-1. Dans le **méthode de publication** champ, choisissez une méthode comme **Web Deploy** ou **FTP**. Ensuite, les paramètres que vous voyez correspondent à votre méthode de publication. Web Deploy simplifie le déploiement d’applications Web et sites Web sur des serveurs IIS et doit être installé en tant qu’application sur le serveur. Utilisez le [le programme d’installation de Web platform](https://www.microsoft.com/web/downloads/platform.aspx) pour l’installer.
+1. Dans le champ **Méthode de publication**, choisissez la méthode **Web Deploy** ou **FTP**. Les paramètres que vous voyez ensuite correspondent à votre méthode de publication. Web Deploy simplifie le déploiement d’applications web et de sites web sur des serveurs IIS, et doit être installé comme une application sur le serveur. Utilisez [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) pour l’installer.
 
-1. Configurer les paramètres requis pour la méthode de publication et sélectionnez **valider la connexion**. Si le serveur ou la cible est disponible et vos paramètres sont corrects, un message qui indique la connexion est validé, et vous êtes prêt à publier.
+1. Configurez les paramètres nécessaires pour la méthode de publication et sélectionnez **Valider la connexion**. Si le serveur ou la cible est disponible et que vos paramètres sont corrects, un message indique que la connexion est validée, et vous êtes prêt à publier.
 
-    ![Valider votre connexion](../deployment/media/quickstart-publish-web-deploy.png "valider votre connexion")
+    ![Valider votre connexion](../deployment/media/quickstart-publish-web-deploy.png "Valider votre connexion")
 
-1. Sélectionnez **paramètres** pour configurer d’autres paramètres de déploiement, comme s’il faut déployer une configuration Debug ou Release, puis sélectionnez **enregistrer**. Si vous déboguez à distance, une configuration Debug est requise.
+1. Sélectionnez **Paramètres** pour configurer les autres paramètres de déploiement, comme ceux qui permettent de définir s’il faut déployer une configuration Debug ou Release, puis sélectionnez **Enregistrer**. Si vous déboguez à distance, une configuration Debug est nécessaire.
 
-1. Pour publier, sélectionnez **publier**. La fenêtre Sortie affiche les résultats et la progression du déploiement.
+1. Pour publier, sélectionnez **Publier**. La fenêtre Sortie affiche la progression du déploiement et les résultats.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication. Vous pouvez également configurer une publication profil en important les paramètres de publication.
+Dans ce guide de démarrage rapide, vous avez appris à utiliser Visual Studio pour créer un profil de publication. Vous pouvez aussi configurer un profil de publication en important des paramètres de publication.
 
 > [!div class="nextstepaction"]
 > [Importer des paramètres de publication et déployer sur IIS](tutorial-import-publish-settings-iis.md)

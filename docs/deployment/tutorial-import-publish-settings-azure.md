@@ -1,5 +1,5 @@
 ---
-title: Publier sur Azure en important les paramètres de publication
+title: Publier sur Azure en important des paramètres de publication
 ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
@@ -13,62 +13,62 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2b4b0e4ea963f20199267f32a8c87440c8cc350b
 ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/11/2018
 ms.locfileid: "38808319"
 ---
-# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publier une application dans Azure App Service en important les paramètres de publication dans Visual Studio
+# <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur Azure App Service en important des paramètres de publication dans Visual Studio
 
-Vous pouvez utiliser la **publier** outil permettant d’importer les paramètres de publication, puis déployer votre application. Dans cet article, nous utilisons paramètres de publication pour Azure App Service, mais vous pouvez utiliser une procédure similaire pour importer les paramètres de publication [IIS](../deployment/tutorial-import-publish-settings-iis.md). Dans certains scénarios, l’utilisation de publier une version de profil des paramètres peut être plus rapide que de configurer manuellement le déploiement vers le service pour chaque installation de Visual Studio.
+Vous pouvez utiliser l’outil **Publier** pour importer des paramètres de publication, puis déployer votre application. Dans cet article, nous utilisons des paramètres de publication pour Azure App Service, mais vous pouvez utiliser une procédure similaire pour importer des paramètres de publication [IIS](../deployment/tutorial-import-publish-settings-iis.md). Dans certains scénarios, l’utilisation d’un profil de paramètres de publication peut être plus rapide que la configuration manuelle du déploiement sur le service pour chaque installation de Visual Studio.
 
-Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio. Vous pouvez également importer des paramètres de publication pour [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) applications. Les étapes correspondent à Visual Studio 2017 version 15.6.
+Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio. Vous pouvez aussi importer des paramètres de publication pour les applications [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md). Les étapes correspondent à Visual Studio 2017 version 15.6.
 
-Dans ce didacticiel, vous allez effectuer les actions suivantes :
+Dans ce tutoriel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Générer un fichier de paramètres de publication à partir d’Azure App Service
 > * Importer le fichier de paramètres de publication dans Visual Studio
 > * Déployer l’application sur Azure App Service
 
-Un fichier de paramètres de publication (*\*.publishsettings*) est différente de celle d’un profil de publication (*\*.pubxml*) créés dans Visual Studio. Un fichier de paramètres de publication est créé par Azure App Service, et il peut être importé dans Visual Studio.
+Un fichier de paramètres de publication (*\*.publishsettings*) est différent de celui d’un profil de publication (*\*.pubxml*) créé dans Visual Studio. Un fichier de paramètres de publication est créé par Azure App Service et peut être importé dans Visual Studio.
 
 > [!NOTE]
-> Si vous souhaitez simplement copier un profil de publication de Visual Studio (*\*.pubxml* fichier) à partir d’une installation de Visual Studio à l’autre, vous pouvez trouver le profil de publication,  *\<profilename\>.pubxml*, dans le  *\\< nom_projet\>\Properties\PublishProfiles* dossier pour les types de projet managé. Pour les sites Web, regardez sous le *\App_Data* dossier. Les profils de publication sont des fichiers XML de MSBuild.
+> Si vous voulez simplement copier un profil de publication Visual Studio (fichier *\*.pubxml*) d’une installation de Visual Studio vers une autre, le profil de publication, *\<nom_profil\>.pubxml*, se trouve dans le dossier *\\<nom_projet\>\Properties\PublishProfiles* pour les types de projet gérés. Pour les sites web, regardez sous le dossier *\App_Data*. Les profils de publication sont des fichiers XML MSBuild.
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez disposer de Visual Studio 2017 est installé et le **ASP.NET** et. **NET Framework** charge de travail de développement. Pour une application .NET Core, vous devez également le. **NET Core** charge de travail.
+* Vous devez avoir installé Visual Studio 2017 et la charge de travail de développement **ASP.NET** et **NET Framework**. Pour une application .NET Core, vous avez aussi besoin de la charge de travail **NET Core**.
 
     Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
-* Créer un Azure App Service. Pour obtenir des instructions détaillées, consultez [déployer une application web ASP.NET Core sur Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+* Créez un service Azure App Service. Pour des instructions détaillées, consultez [Déployer une application web ASP.NET Core sur Azure avec Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Créer un nouveau projet ASP.NET dans Visual Studio
+## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Créer un projet ASP.NET dans Visual Studio
 
-1. Sur l’ordinateur exécutant Visual Studio, choisissez **fichier** > **nouveau projet**.
+1. Sur l’ordinateur exécutant Visual Studio, choisissez **Fichier** > **Nouveau projet**.
 
-1. Sous **Visual C#** ou **Visual Basic**, choisissez **Web**, puis dans le volet central **Application Web ASP.NET (.NET Framework)** ou (c# uniquement) **Application Web ASP.NET Core**, puis cliquez sur **OK**.
+1. Sous **Visual C#**  ou **Visual Basic**, choisissez **Web**, puis dans le volet central choisissez **Application web ASP.NET (.NET Framework)** ou (C# uniquement) **Application web ASP.NET Core**, puis cliquez sur **OK**.
 
-    Si vous ne voyez pas les modèles de projet spécifiée, cliquez sur le **ouvrir Visual Studio Installer** lien dans le volet gauche de la **nouveau projet** boîte de dialogue. Visual Studio Installer est lancé. Consultez les conditions préalables dans cet article pour identifier les charges de travail Visual Studio requis, que vous devez installer.
+    Si vous ne voyez pas les modèles de projet spécifiés, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Consultez les prérequis dans cet article pour identifier les charges de travail Visual Studio à installer.
 
-1. Choisissez **MVC** (.NET Framework) ou **l’Application Web (Model-View-Controller)** (pour .NET Core) et assurez-vous que l’option **aucune authentification** est sélectionnée, puis cliquez sur **OK**.
+1. Choisissez **MVC** (.NET Framework) ou **Application web (modèle-vue-contrôleur)** (pour .NET Core) et vérifiez que l’option **Aucune authentification** est sélectionnée, puis cliquez sur **OK**.
 
-1. Tapez un nom tel que **MyWebApp** et cliquez sur **OK**.
+1. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
 
     Visual Studio crée le projet.
 
-1. Choisissez **Build** > **générer la Solution** pour générer le projet.
+1. Choisissez **Générer** > **Générer la solution** pour générer le projet.
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Créer le fichier de paramètres de publication dans Azure App Service
 
 1. Dans le portail Azure, ouvrez Azure App Service.
 
-1. Cliquez sur **obtenir le profil de publication** et enregistrez le profil local.
+1. Cliquez sur **Obtenir le profil de publication** et enregistrez le profil localement.
 
     ![Obtenir le profil de publication](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 
-    Un fichier avec un *.publishsettings* extension de fichier a été générée à l’emplacement où vous l’avez enregistré. Le code suivant montre un exemple partiel du fichier (dans une mise en forme plus lisible).
+    Un fichier avec une extension *.publishsettings* a été généré à l’emplacement où vous l’avez enregistré. Le code suivant montre un exemple partiel du fichier (avec une mise en forme plus lisible).
 
     ```xml
     <publishData>
@@ -89,7 +89,7 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différente 
       </publishProfile>
     </publishData>
     ```
-    En règle générale, le fichier *.publishsettings précédent contient deux profils de publication que vous pouvez utiliser dans Visual Studio, un déploiement à l’aide de Web Deploy et un déploiement à l’aide de FTP. Le code précédent affiche le profil de Web Deploy. Les deux profils seront importées ultérieurement lorsque vous importez le profil.
+    En règle générale, le fichier *.publishsettings précédent contient deux profils de publication que vous pouvez utiliser dans Visual Studio, un pour déployer à l’aide de Web Deploy et l’autre pour déployer à l’aide de FTP. Le code précédent affiche le profil Web Deploy. Les deux profils sont importés quand vous importez le profil.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importer les paramètres de publication dans Visual Studio et déployer
 
@@ -97,7 +97,7 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différente 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous créé un fichier de paramètres de publication importé dans Visual Studio et déployé une application ASP.NET sur Azure App Service. Vous souhaiterez peut-être une vue d’ensemble d’options de publication dans Visual Studio.
+Dans ce tutoriel, vous avez créé un fichier de paramètres de publication, l’avez importé dans Visual Studio et avez déployé une application ASP.NET sur Azure App Service. Consultez une vue d’ensemble des options de publication dans Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Présentation du déploiement](../deployment/deploying-applications-services-and-components.md)

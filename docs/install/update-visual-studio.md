@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cdb36294f027fcd2e47fca8d903caf5856c236
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeb4dad2be491cea09decd5338ba11d9e25370d9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906063"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349593"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Mettre à jour Visual Studio 2017 vers la version la plus récente
 
@@ -29,6 +29,9 @@ Et si vous souhaitez tester une fonctionnalité avant sa publication, envisagez 
 
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Mettre à jour Visual Studio pour Mac](/visualstudio/mac/update).
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>Mettre à jour Visual Studio 2017 version 15.6 ou ultérieure
 

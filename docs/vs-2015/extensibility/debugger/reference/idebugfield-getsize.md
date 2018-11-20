@@ -17,12 +17,12 @@ ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01a776e78bcf140fd976791df12023627dcd7d38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2366714d48d9355e9447c19757f5f2b511eec4cc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831353"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809140"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Cette méthode obtient la taille d’un champ, en octets.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetSize(   
+HRESULT GetSize(   
    DWORD* pdwSize  
 );  
 ```  

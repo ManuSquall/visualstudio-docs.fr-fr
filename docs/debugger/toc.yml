@@ -7,7 +7,7 @@ items:
     href: what-is-debugging.md
   - name: Écrire un meilleur code C# avec Visual Studio
     href: write-better-code-with-visual-studio.md
-- name: Guides de démarrage rapide
+- name: Démarrages rapides
   items:
   - name: Présentation du débogueur
     href: debugger-feature-tour.md
@@ -17,7 +17,7 @@ items:
     href: quickstart-debug-with-cplusplus.md
   - name: Déboguer une application ASP.NET
     href: quickstart-debug-aspnet.md
-- name: Tutoriels
+- name: Didacticiels
   items:
   - name: Apprendre à déboguer avec Visual Studio
     href: getting-started-with-the-debugger.md
@@ -413,7 +413,7 @@ items:
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Préparation du débogage : services Windows'
           href: debugging-preparation-windows-services.md
-      - name: Messages de diagnostic dans la fenêtre Sortie
+      - name: Envoyer des messages vers la Fenêtre Sortie
         href: diagnostic-messages-in-the-output-window.md
       - name: Assertions dans du code managé
         href: assertions-in-managed-code.md
@@ -836,9 +836,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561684"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770468"

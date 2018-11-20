@@ -15,12 +15,12 @@ ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374ee61c65da830b85a8983e61939c25c2296718
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab670d64f82f76170e83ff75a52d30a3bf4eae5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227108"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755187"
 ---
 # <a name="structures-and-unions"></a>Structures et unions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
