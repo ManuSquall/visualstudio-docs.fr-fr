@@ -1,6 +1,6 @@
 ---
-title: Débogage du code pour les débutants
-description: Si vous effectuez un débogage pour la première fois, découvrez quelques principes pour vous aider à exécuter votre application en mode débogage avec Visual Studio
+title: Débogage du code pour grands débutants
+description: Si vous effectuez un débogage pour la première fois, découvrez quelques principes qui vous aideront à exécuter votre application en mode débogage avec Visual Studio.
 ms.custom: ''
 ms.date: 07/06/2018
 ms.technology: vs-ide-debug
@@ -14,87 +14,87 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
 ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/14/2018
 ms.locfileid: "45612673"
 ---
-# <a name="how-to-debug-for-absolute-beginners"></a>Le débogage pour les débutants
+# <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
-Sans échec, le code que nous écrivons en tant que développeurs de logiciels ne fait toujours pas ce que nous attendions à effectuer. Il fait parfois quelque chose de complètement différent ! Dans ce cas, la tâche suivante consiste à identifier la raison, et bien que nous pouvons être tentés de simplement conserver fixant notre code pour les heures, il est beaucoup plus facile et efficace d’utiliser un outil de débogage, ou du débogueur.
+Le code que nous écrivons en tant que développeurs de logiciels ne fait pas toujours ce que nous attendions. Il fait parfois quelque chose de totalement différent ! Dans ce cas, la tâche suivante consiste à identifier la raison, et bien qu’il soit tentant de rester simplement bouche bée devant notre code pendant des heures, il est beaucoup plus facile et efficace d’utiliser un outil de débogage, ou débogueur.
 
-Un débogueur, malheureusement, n’est pas quelque chose qui peut révéler comme par magie tous les problèmes ou « bogues », dans notre code. *Débogage* moyen d’exécuter votre code pas à pas dans un outil de débogage que Visual Studio, pour trouver le point exact où vous avez effectué une erreur de programmation. Vous comprenez ensuite les corrections que vous devez faire dans votre code et outils de débogage vous permettent souvent d’apporter des modifications temporaires pour pouvoir continuer l’exécution du programme.
+Malheureusement, un débogueur n’est pas quelque chose qui peut révéler comme par magie tous les problèmes ou « bogues » dans notre code. *Déboguer* signifie exécuter votre code pas à pas dans un outil de débogage tel que Visual Studio afin de trouver le point exact où vous avez fait une erreur de programmation. Vous comprenez alors les corrections que vous devez effectuer dans votre code, et les outils de débogage vous permettent souvent d’apporter des modifications temporaires afin de pouvoir continuer l’exécution du programme.
 
-À l’aide d’un débogueur efficacement est également une qualification qui demande du temps et pratique pour en savoir plus, mais qui est finalement une tâche essentielle pour chaque développeur de logiciels. Dans cet article, puis, nous présentent les principes fondamentaux du débogage et fournissent des conseils pour vous aider à démarrer.
+L’utilisation efficace d’un débogueur est également une compétence qui nécessite du temps et des efforts, mais il s’agit d’une tâche essentielle que tout développeur de logiciels doit savoir effectuer. Dans cet article, nous allons présenter les principes fondamentaux du débogage et fournir des conseils pour vous aider à démarrer.
 
-## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Clarifier le problème par vous-même poser les bonnes questions
+## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Clarifiez le problème en vous posant les bonnes questions
 
-Cela permet de clarifier le problème que vous avez rencontré avant d’essayer de résoudre le problème. Nous pensons que vous avez déjà exécuté dans un problème dans votre code, sinon vous n’ici essaie de déterminer comment déboguer ! Par conséquent, avant de commencer le débogage, veillez à ce que vous avez identifié le problème que vous cherchez à résoudre :
+Cela aide d’identifier clairement le problème que vous avez rencontré avant d’essayer de le résoudre. Nous supposons que vous avez déjà rencontré un problème dans votre code, sinon vous ne seriez pas ici à essayer de déterminer comment déboguer ! Par conséquent, avant de commencer le débogage, veillez à bien identifier le problème que vous cherchez à résoudre :
 
-* Ce que vous attendez-vous votre code à faire ?
+* Que devait faire votre code initialement ?
 
-* Qu’est-il arrivé à la place ?
+* Que s’est-il passé à la place ?
 
-    Si vous avez rencontré une erreur (exception) pendant l’exécution de votre application, qui peut être une bonne chose ! Une exception est un événement inattendu rencontré lors de l’exécution de code, généralement une erreur quelconque. Un outil de débogage vous permet d’accéder à l’endroit exact dans votre code où l’exception s’est produite et peut vous aider à rechercher des solutions possibles.
+    Si vous avez rencontré une erreur (exception) pendant l’exécution de votre application, cela peut être une bonne chose ! Une exception est un événement inattendu rencontré lors de l’exécution de code, généralement une erreur quelconque. Un outil de débogage vous permet d’accéder à l’emplacement exact dans votre code où l’exception s’est produite, et peut vous aider à examiner les solutions possibles.
 
-    Si quelque chose d’autre s’est produit, ce qui est le symptôme du problème ? Après vous, déjà où ce problème s’est produite dans votre code ? Par exemple, si votre code affiche du texte, mais le texte est incorrect, vous savez que vos données soient incorrectes ou que le code que définir le texte d’affichage a un type de bogue. En parcourant le code dans un débogueur, vous pouvez examiner chaque modification à vos variables pour découvrir exactement quand et comment les valeurs incorrectes sont affectés.
+    Si quelque chose d’autre s’est produit, quel est le symptôme du problème ? Avez-vous déjà une idée de l’emplacement où ce problème s’est produit dans votre code ? Par exemple, si votre code affiche du texte, mais que celui-ci est incorrect, vous savez que soit vos données sont incorrectes, soit le code qui définit le texte d’affichage présente un bogue. En parcourant le code pas à pas dans un débogueur, vous pouvez examiner chaque modification apportée à vos variables pour découvrir exactement quand et comment des valeurs incorrectes sont affectées.
 
 ## <a name="examine-your-assumptions"></a>Examinez vos hypothèses
 
-Avant d’examiner un bogue ou une erreur, considérez les hypothèses que vous apportées à certains résultats. Hypothèses masqués ou inconnus peuvent interférer avec identification d’un problème même lorsque vous cherchez directement à la cause du problème dans un débogueur. Avoir une longue liste d’hypothèses possible ! Voici quelques questions à se poser en question vos hypothèses.
+Avant d’étudier un bogue ou une erreur, réfléchissez aux hypothèses qui vous ont mené à attendre certains résultats. Des hypothèses cachées ou inconnues peuvent interférer avec l’identification d’un problème même quand vous observez directement la cause du problème dans un débogueur. Il se peut que vous ayez une longue liste d’hypothèses ! Voici quelques questions à se poser pour vous aider à y voir plus clair dans vos hypothèses.
 
-* Vous utilisez l’API de droite (autrement dit, l’objet droit, fonction, méthode ou propriété) ? Une API que vous utilisez peut ne pas faire ce que vous pensez qu’il fait. (Une fois que vous examinez l’appel d’API dans le débogueur, sa correction peut nécessiter un aller-retour vers la documentation pour aider à identifier l’API appropriée.)
+* Utilisez-vous la bonne API (autrement dit, l’objet, la fonction, la méthode ou la propriété adéquat) ? Une API que vous utilisez peut ne pas faire ce que vous pensez qu’elle fait. (Une fois que vous avez examiné l’appel d’API dans le débogueur, sa correction peut nécessiter un aller-retour vers la documentation pour aider à identifier l’API correcte.)
 
-* Vous utilisez une API correctement ? Peut-être vous utilisé l’API de droite mais n’a pas l’utiliser correctement.
+* Utilisez-vous une API correctement ? Peut-être avez-vous utilisé la bonne API, mais pas de la bonne manière.
 
-* Votre code contient-il des fautes de frappe ? Quelques fautes de frappe, comme une faute d’orthographe simple d’un nom de variable peuvent être difficiles à voir, en particulier lorsque vous travaillez avec les langues qui ne nécessitent pas de variables à être déclarés avant leur utilisation.
+* Votre code contient-il des fautes de frappe ? Certaines fautes de frappe, comme une simple faute d’orthographe dans le nom d’une variable, peuvent être difficiles à voir, en particulier quand vous travaillez avec des langages qui ne nécessitent pas la déclaration des variables avant leur utilisation.
 
-* Fait que vous apportez une modification à votre code et supposent qu’il n’est pas lié au problème que vous observez ?
+* Avez-vous apporté une modification à votre code, que vous pensez ne pas être liée au problème que vous observez ?
 
-* Vous attendez-vous un objet ou une variable pour contenir une certaine valeur (ou un certain type de valeur) qui est différent de ce qui est réellement arrivé ?
+* Vous attendiez-vous à ce qu’un objet ou une variable contienne une certaine valeur (ou un certain type de valeur) différente de celle réellement présente ?
 
-* Connaissez-vous l’intention du code ? Il est souvent plus difficile à quelqu'un d’autre déboguer du code. Si elle n’est pas votre code, il est possible que vous devrez peut-être passer du temps à apprendre fait exactement quel le code avant de pouvoir les déboguer efficacement.
+* Connaissez-vous l’intention du code ? Il est souvent plus difficile de déboguer le code rédigé par quelqu’un d’autre. Si ce n’est pas votre code, vous devrez peut-être consacrer du temps à apprendre ce que fait exactement le code avant de pouvoir le déboguer efficacement.
 
     > [!TIP]
-    > Lors de l’écriture de code, commencer à petite échelle et commencez avec le code qui fonctionne ! (Les exemples de code est utile ici.) Parfois, il est plus facile de corriger un ensemble volumineux ou complexe de code en commençant par un petit morceau de code qui illustre la tâche principale que vous voulez atteindre. Ensuite, vous pouvez modifier ou ajouter du code de façon incrémentielle, à chaque point pour les erreurs de test.
+    > Lors de l’écriture de code, commencez à petite échelle et avec du code qui fonctionne ! (Un bon exemple de code est utile ici.) Parfois, il est plus facile de corriger un ensemble volumineux ou complexe de code en commençant par un petit segment de code qui illustre le but principal que vous voulez atteindre. Ensuite, vous pouvez modifier ou ajouter du code de façon incrémentielle, en effectuant des tests à chaque stade.
 
-Par la remise en question vos hypothèses, vous pouvez réduire le temps que nécessaire pour trouver un problème dans votre code. Vous pouvez également réduire le temps que nécessaire pour résoudre un problème.
+Par la remise en question de vos hypothèses, vous pouvez réduire le temps nécessaire pour identifier un problème dans votre code. Vous pouvez également réduire le temps nécessaire pour résoudre un problème.
 
-## <a name="step-through-your-code-in-debugging-mode-to-find-where-the-problem-occurred"></a>Parcourir votre code en mode pour trouver où le problème s’est produite de débogage
+## <a name="step-through-your-code-in-debugging-mode-to-find-where-the-problem-occurred"></a>Parcourez votre code pas à pas en mode débogage pour déterminer où le problème s’est produit.
 
-Lorsque vous exécutez normalement une application, vous voir les erreurs et des résultats incorrects uniquement après l’exécution du code. Un programme peut également interrompre de façon inattendue sans vous indiquant pourquoi.
+Quand vous exécutez normalement une application, vous voyez les erreurs et les résultats incorrects uniquement après l’exécution du code. Un programme peut également se terminer de façon inattendue sans vous indiquer pourquoi.
 
-Exécution d’une application dans un débogueur, également appelé *mode débogage*, signifie que le débogueur surveille activement tout ce qui se produit en tant que le programme s’exécute. Il vous permet également à suspendre l’application à tout moment pour examiner son état et puis parcourir votre code ligne par ligne et écoutez tous les détails du problème.
+Quand vous exécutez une application dans un débogueur (autrement dit en *mode débogage*), le débogueur surveille activement tout ce qui se produit durant l’exécution du programme. Cela vous permet également de suspendre l’exécution de l’application à tout moment pour examiner son état, et de parcourir votre code ligne par ligne afin d’observer chaque détail à mesure qu’il se produit.
 
-Dans Visual Studio, vous permet d’entrer en mode débogage à l’aide de **F5** (ou le **déboguer** > **démarrer le débogage** commande de menu ou le **démarrer le débogage**  bouton ![démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "démarrer le débogage")) dans la barre d’outils déboguer. Si toutes les exceptions se produisent, assistance de l’Exception de Visual Studio ouvre le point exact où l’exception s’est produite et fournit d’autres informations utiles.
+Dans Visual Studio, vous basculez en mode débogage à l’aide de la touche **F5** (ou de la commande de menu **Déboguer** > **Démarrer le débogage** ou du bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage")) dans la barre d’outils Débogage. Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles.
 
-Si vous n’obtenez une exception, vous avez probablement une bonne idée où rechercher le problème dans votre code. Cela dans lequel vous utilisez *des points d’arrêt* avec le débogueur pour vous-même une occasion d’examiner votre code plus attentivement. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Un point d’arrêt indique où Visual Studio doit suspendre votre code en cours d’exécution afin que vous puissiez examiner les valeurs des variables, ou le comportement de la mémoire ou la séquence dans laquelle le code s’exécute.
+Si aucune exception ne s’est produite, vous avez probablement une bonne idée de l’endroit où rechercher le problème dans votre code. C’est dans ce cas-là que vous utilisez des *points d’arrêt* avec le débogueur afin d’examiner votre code plus attentivement. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d’arrêt, Visual Studio interrompt l’exécution du code à l’emplacement du point d’arrêt pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire ou la séquence d’exécution du code.
 
-Dans Visual Studio, vous pouvez rapidement définir un point d’arrêt en cliquant dans la marge de gauche en regard d’une ligne de code. Placez le curseur sur une ligne et appuyez sur un ou **F9**.
+Dans Visual Studio, vous pouvez rapidement définir un point d’arrêt en cliquant dans la marge de gauche en regard d’une ligne de code, ou en plaçant le curseur sur une ligne et en appuyant sur **F9**.
 
-Pour illustrer ces concepts, nous vous guident un exemple de code qui a déjà plusieurs bogues. Nous sommes à l’aide de c#, mais les fonctionnalités de débogage s’appliquent à Visual Basic, C++, JavaScript, Python et autres langues prises en charge.
+Pour illustrer ces concepts, nous allons vous guider à travers un exemple de code qui a déjà plusieurs bogues. Nous utilisons C#, mais les fonctionnalités de débogage s’appliquent à Visual Basic, C++, JavaScript, Python et d’autres langages pris en charge.
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>Créer un exemple d’application (avec des bogues)
 
-Ensuite, nous allons créer une application qui a quelques bogues.
+Nous allons maintenant créer une application qui comporte quelques bogues.
 
-1. Vous devez avoir installé Visual Studio et soit le. **Développement bureautique NET** charge de travail ou. **NET Core le développement multiplateforme** charge de travail, selon le type d’application qui vous souhaitez créer.
+1. Visual Studio et la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, en fonction du type d’application que vous souhaitez créer, doivent être installés sur votre ordinateur.
 
     Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
-    Si vous devez installer la charge de travail, mais avez déjà installé Visual Studio, cliquez sur **outils** > **obtenir les outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez le. **Développement bureautique NET** (ou. **NET Core le développement multiplateforme**) charge de travail, puis choisissez **modifier**.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir des outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop** (ou **Développement multiplateforme .NET Core**), puis **Modifier**.
 
-1. Ouvrez Visual Studio, puis choisissez **fichier** > **New** > **projet**.
+1. Ouvrez Visual Studio, puis choisissez **Fichier** > **Nouveau** > **Projet**.
 
-1. Choisir un modèle pour votre code d’application.
+1. Choisissez un modèle pour votre code d’application.
 
-    Pour .NET Framework, dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C#**, **Windows Desktop** à partir de la section Modèles installés, puis, dans le panneau central, sélectionnez  **Application console (.NET Framework)**.
+    Pour .NET Framework, dans la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C#** , **Windows Desktop** dans la section Modèles installés puis, dans le volet central, sélectionnez **Application console (.NET Framework)**.
 
-    Pour .NET Core, dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C#**, **.NET Core** à partir de la section Modèles installés, puis, dans le volet du milieu sélectionnez  **Console App (.NET Core)**.
+    Pour .NET Core, dans la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C#** , **.NET Core** dans la section Modèles installés puis, dans le volet central, sélectionnez **Application console (.NET Core)**.
 
-    Si vous ne voyez pas ces modèles, vous devez installer la charge de travail approprié (voir les étapes précédentes).
+    Si vous ne voyez pas ces modèles, vous devez installer la charge de travail appropriée (voir les étapes précédentes).
 
-1. Dans le **nom** , tapez **ConsoleApp-FirstApp** et cliquez sur **OK**.
+1. Dans le champ **Nom**, tapez **ConsoleApp-FirstApp** et cliquez sur **OK**.
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 
@@ -179,15 +179,15 @@ Ensuite, nous allons créer une application qui a quelques bogues.
     }
     ```
 
-    Notre intention pour ce code consiste à afficher le nom de galaxy, la distance et le galaxy et le type de galaxy tout dans une liste. Pour déboguer, il est important de comprendre l’objectif du code. Voici le format pour une seule ligne dans la liste que nous souhaitons afficher dans la sortie :
+    Notre intention pour ce code consiste à afficher le nom de la galaxie, sa distance et son type dans une même liste. Pour déboguer, il est important de comprendre l’intention du code. Voici le format d’une ligne de la liste que nous souhaitons afficher dans la sortie :
 
-    *nom de Galaxy*, *distance*, *type de galaxy*.
+    *nom de la galaxie*, *distance*, *type de galaxie*.
 
 ### <a name="run-the-app"></a>Exécuter l'application
 
-1. Appuyez sur **F5** ou **démarrer le débogage** bouton ![démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "démarrer le débogage") dans la barre d’outils de débogage, situés au-dessus de l’éditeur de code.
+1. Appuyez sur **F5** ou sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils Débogage située au-dessus de l’éditeur de code.
 
-    L’application démarre et aucune exception n’est indiquée pour nous par le débogueur. Toutefois, la sortie que vous voyez dans la fenêtre de console n’est pas ce que vous attendez. Voici la sortie attendue :
+    L’application démarre et aucune exception n’est signalée par le débogueur. Toutefois, la sortie visible dans la fenêtre de console n’est pas celle à laquelle vous vous attendez. Voici la sortie attendue :
 
     ```
     Tadpole  400,  Spiral 
@@ -198,7 +198,7 @@ Ensuite, nous allons créer une application qui a quelques bogues.
     Maffei 1,  Elliptical
     ```
 
-    Toutefois, nous voyons ceci à la place :
+    Et voici ce que nous obtenons à la place :
 
     ```
     Tadpole  400,  ConsoleApp_FirstApp.GType 
@@ -209,11 +209,11 @@ Ensuite, nous allons créer une application qui a quelques bogues.
     Maffei 1, 11,  ConsoleApp_FirstApp.GType
     ```
 
-    Recherchez la sortie et notre code, nous savons que `GType` est le nom de la classe qui stocke le type galaxy. Nous essayons d’afficher le type réel galaxy (par exemple, « spirale »), pas le nom de classe !
+    D’après la sortie et notre code, nous savons que `GType` est le nom de la classe qui stocke le type de galaxie. Nous essayons d’afficher le type de galaxie (par exemple, « Spiral »), pas le nom de la classe !
 
 ### <a name="debug-the-app"></a>Déboguer l’application
 
-1. Avec l’application en cours d’exécution, définissez un point d’arrêt en cliquant dans la marge de gauche à côté du `Console.WriteLine` appel de méthode dans cette ligne de code.
+1. Avec l’application en cours d’exécution, définissez un point d’arrêt en cliquant dans la marge de gauche à côté de l’appel de méthode `Console.WriteLine` sur cette ligne de code.
 
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
@@ -222,49 +222,49 @@ Ensuite, nous allons créer une application qui a quelques bogues.
     }    
     ```
 
-    Lorsque vous définissez le point d’arrêt, un point rouge apparaît dans la marge de gauche.
+    Quand vous définissez le point d’arrêt, un point rouge apparaît dans la marge de gauche.
 
-    Étant donné que nous voyons un problème dans la sortie, nous allons commencer le débogage en examinant le code précédent qui définit la sortie dans le débogueur.
+    Puisque nous constatons la présence d’un problème dans la sortie, nous allons commencer le débogage en examinant le code précédent qui définit la sortie dans le débogueur.
 
-1. Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils déboguer (**Ctrl** + **MAJ**   +  **F5**).
+1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj** + **F5**).
 
-    L’application s’arrête au point d’arrêt que vous définissez. La mise en surbrillance jaune indique où le débogueur est suspendu (la ligne jaune de code n’a pas encore exécuté).
+    L’application s’interrompt au point d’arrêt que vous avez défini. La mise en surbrillance jaune indique où le débogueur est suspendu (la ligne de code jaune n’a pas encore été exécutée).
 
-1. Placez le curseur sur le `GalaxyType` variable sur la droite, puis, à gauche de l’icône de clé, développez `theGalaxy.GalaxyType`. Vous pouvez constater que `GalaxyType` contient une propriété `MyGType`, et la valeur de propriété est définie sur `Spiral`.
+1. Placez le curseur sur la variable `GalaxyType` à droite puis, à gauche de l’icône de clé, développez `theGalaxy.GalaxyType`. Vous pouvez constater que `GalaxyType` contient une propriété `MyGType`, et que la valeur de propriété est définie sur `Spiral`.
 
     ![Inspecter une variable](../debugger/media/beginners-inspect-variable.png)
 
-    « Spirale » est effectivement la valeur correcte que vous attendiez imprimer sur la console ! Il est donc un bon point de départ que vous pouvez accéder cette valeur dans ce code lors de l’exécution de l’application. Dans ce scénario, nous utilisons l’API incorrect. Nous verrons si nous pouvons résoudre ce problème lors de l’exécution de code dans le débogueur.
+    « Spiral » est la valeur correcte que vous attendiez dans la console. Un bon point de départ consiste donc à pouvoir accéder à cette valeur dans ce code pendant l’exécution de l’application. Dans ce scénario, nous n’utilisons pas la bonne API. Nous allons voir si nous pouvons corriger cela pendant l’exécution du code dans le débogueur.
 
-1. Dans le même code, pendant le débogage encore, placez votre curseur à la fin de `theGalaxy.GalaxyType` et remplacez-le par `theGalaxy.GalaxyType.MyGType`. Bien que vous pouvez effectuer cette modification, l’éditeur de code vous montre une erreur indiquant qu’il ne peut pas compiler ce code.
+1. Dans le même code, toujours pendant le débogage, placez votre curseur à la fin de `theGalaxy.GalaxyType` et remplacez-le par `theGalaxy.GalaxyType.MyGType`. Bien que vous puissiez effectuer cette modification, l’éditeur de code signale une erreur indiquant qu’il ne peut pas compiler ce code.
 
     ![Erreur de syntaxe](../debugger/media/beginners-edit.png)
 
-1. Cliquez sur **modifier** dans le **Modifier & Continuer** boîte de message. Vous voyez un message d’erreur présent dans le **liste d’erreurs** fenêtre. L’erreur indique que le `'object'` ne contient pas une définition pour `MyGType`.
+1. Cliquez sur **Modifier** dans la boîte de message **Modifier et Continuer**. Un message d’erreur s’affiche maintenant dans la fenêtre **Liste d’erreurs**. L’erreur indique que `'object'` ne contient pas de définition pour `MyGType`.
 
     ![Erreur de syntaxe](../debugger/media/beginners-no-definition.png)
 
-    Même si nous définissons chaque galaxy avec un objet de type `GType` (qui a le `MGType` propriété), le débogueur ne reconnaît pas le `theGalaxy` objet en tant qu’objet de type `GType`. Que se passe-t-il ? Vous souhaitez examiner n’importe quel code qui définit le type de galaxy. Lorsque vous effectuez cette opération, vous constatez que le `GType` classe a sans aucun doute une propriété de `MyGType`, mais quelque chose ne vous convient pas. Le message d’erreur sur `object` s’avère pour être l’indice ; pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
+    Bien que nous ayons défini chaque galaxie avec un objet de type `GType` (qui a la propriété `MGType`), le débogueur ne reconnaît pas l’objet `theGalaxy` comme un objet de type `GType`. Que se passe-t-il ? Vous devez examiner tout code qui définit le type de galaxie. Vous constatez alors que la classe `GType` a indubitablement une propriété `MyGType`, mais quelque chose ne va pas. Le message d’erreur concernant `object` s’avère être l’indice : pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
 
-1. En lisant votre code lié à la définition du type galaxy, vous trouvez le `GalaxyType` propriété de la `Galaxy` classe est spécifiée en tant que `object` au lieu de `GType`.
+1. En examinant votre code associé à la définition du type de galaxie, vous constatez que la propriété `GalaxyType` de la classe `Galaxy` est spécifiée comme `object` au lieu de `GType`.
 
     ```csharp
     public object GalaxyType { get; set; }     
     ```
 
-1. Modifiez le code précédent comme suit :
+1. Remplacez le code précédent par ceci :
 
     ```csharp
     public GType GalaxyType { get; set; }     
     ```
 
-1. Cliquez sur le **redémarrage** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (**Ctrl** + **MAJ**   +  **F5**) pour recompiler le code et redémarrer.
+1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**) pour recompiler le code et redémarrer.
 
-    Désormais, lorsque le débogueur met en pause sur `Console.WriteLine`, vous pouvez pointer sur `theGalaxy.GalaxyType.MyGType`et vérifie qu’elle est définie correctement.
+    Maintenant, quand le débogueur s’arrête sur `Console.WriteLine`, vous pouvez pointer sur `theGalaxy.GalaxyType.MyGType` et vérifier que la valeur est définie correctement.
 
-1. Supprimer le point d’arrêt en cliquant sur le cercle de point d’arrêt dans la marge de gauche (ou avec le bouton droit et choisissez **point d’arrêt** > **supprimer un point d’arrêt**), puis appuyez sur **F5** pour continuer.
+1. Supprimez le point d’arrêt en cliquant sur le cercle de point d’arrêt dans la marge de gauche (ou cliquez avec le bouton droit et choisissez **Point d’arrêt** > **Supprimer le point d’arrêt**), puis appuyez sur **F5** pour continuer.
 
-    L’application s’exécute et affiche la sortie. Cela semble assez bonne maintenant, mais vous remarquer une chose ; vous vous attendiez le galaxy petit nuage Magellanic s’affiche comme une galaxie très irrégulière dans la sortie de console, mais il n’affiche aucun type galaxy du tout.
+    L’application s’exécute et affiche la sortie. Cela semble correct désormais, mais vous remarquez une chose : vous vous attendiez à ce que la galaxie Small Magellanic Cloud apparaisse comme une galaxie de type Irregular dans la sortie de console, mais aucun type de galaxie n’est mentionné.
 
     ```
     Tadpole  400,  Spiral 
@@ -281,55 +281,55 @@ Ensuite, nous allons créer une application qui a quelques bogues.
     public GType(char type)
     ```
 
-    Ce code étant où le type galaxy est défini, nous souhaitons tirer un examiner plus en détail.
+    Ce code étant celui où le type de galaxie est défini, nous devons l’examiner plus en détail.
 
-1. Cliquez sur le **redémarrage** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (**Ctrl** + **MAJ**   +  **F5**) pour redémarrer.
+1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**) pour redémarrer.
 
-    Le débogueur s’arrête à la ligne de code où vous avez défini le point d’arrêt.  
+    Le débogueur s’arrête sur la ligne de code où vous avez défini le point d’arrêt.  
 
-1. Placez le curseur sur la `type` variable. Vous voyez la valeur `S` (en suivant le code de caractère). Vous êtes intéressé par une valeur de `I`, étant donné que vous savez qui est un type galaxy irrégulières.
+1. Pointez sur la variable `type`. Vous voyez la valeur `S` (après le code de caractère). Ce qui vous intéresse, c’est une valeur `I`, puisque vous savez qu’il s’agit du type de galaxie Irregular.
 
-1. Appuyez sur **F5** et placez le curseur sur la `type` variable à nouveau. Répétez cette étape jusqu'à ce que vous voyez la valeur `I` dans le `type` variable.
+1. Appuyez sur **F5** et pointez à nouveau sur la variable `type`. Répétez cette étape jusqu’à voir la valeur `I` dans la variable `type`.
 
     ![Inspecter une variable](../debugger/media/beginners-inspecting-data.png)
 
-1. Maintenant, appuyez sur **F11** (**déboguer** > **pas à pas détaillé** ou **pas à pas détaillé** bouton dans la barre d’outils Déboguer).
+1. Maintenant, appuyez sur **F11** (**Déboguer** > **Pas à pas détaillé** ou le bouton **Pas à pas détaillé** dans la barre d’outils Débogage).
 
-    **F11** fait avancer le débogueur (et exécute le code) à une seule instruction à la fois. **F10** (**pas à pas principal**) est une commande similaire, et les deux sont extrêmement utiles pour apprendre à utiliser le débogueur.
+    **F11** fait avancer le débogueur (et exécute le code) une seule instruction à la fois. **F10** (**Pas à pas principal**) est une commande similaire, et toutes deux sont extrêmement utiles pour apprendre à utiliser le débogueur.
 
-1. Appuyez sur **F11** jusqu'à ce que vous arrêtiez sur la ligne de code dans la `switch` instruction pour une valeur de « I ». Vous voyez ici un problème clair résultant d’une faute de frappe. Vous vous attendiez le code pour accéder à où elle définit `MyGType` comme un anormales type de galaxy, mais le débogueur à la place ignore ce code complètement et s’arrête à la `default` section de la `switch` instruction.
+1. Appuyez sur **F11** jusqu’à vous arrêter sur une ligne de code dans l’instruction `switch` pour une valeur « I ». Vous constatez ici un problème évident résultant d’une faute de frappe. Vous vous attendiez à ce que le code accède à l’emplacement où il définit `MyGType` comme type de galaxie Irregular, mais au lieu de cela le débogueur ignore complètement ce code et s’arrête à la section `default` de l’instruction `switch`.
 
     ![Rechercher une faute de frappe](../debugger/media/beginners-typo.png)
 
-    En examinant le code, vous voyez une faute de frappe dans le `case 'l'` instruction. Il doit être `case 'I'`.
+    En examinant le code, vous voyez une faute de frappe dans l’instruction `case 'l'`. Cela devrait être `case 'I'`.
 
-1. Cliquez sur dans le code de `case 'l'` et remplacez-la par `case 'I'`.
+1. Cliquez dans le code `case 'l'` et remplacez-le par `case 'I'`.
 
-1. Supprimer votre point d’arrêt, puis cliquez sur le **redémarrer** bouton redémarrer l’application.
+1. Supprimez votre point d’arrêt, puis cliquez sur le bouton **Redémarrer** pour redémarrer l’application.
 
-    Les bogues sont corrigés maintenant et vous voyez la sortie que vous attendez !
+    Les bogues sont maintenant corrigés et vous voyez la sortie attendue.
 
-    Appuyez sur n’importe quelle touche pour terminer l’application.
+    Appuyez sur n’importe quelle touche pour fermer l’application.
 
 ## <a name="summary"></a>Récapitulatif
 
-Lorsque vous identifiez un problème, utilisez le débogueur et [étape commandes](../debugger/navigating-through-code-with-the-debugger.md) comme **F10** et **F11** pour rechercher la région de code avec le problème.
+Quand vous constatez un problème, utilisez le débogueur et les [commandes de pas à pas](../debugger/navigating-through-code-with-the-debugger.md) telles que **F10** et **F11** pour rechercher la région de code où se trouve le problème.
 
 > [!NOTE]
-> S’il est difficile d’identifier la région de code où le problème se produit, définir un point d’arrêt dans le code qui s’exécute avant que le problème se produit, puis utilisez les commandes pas à pas jusqu'à ce que vous voyiez le problème manifeste. Vous pouvez également utiliser [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) pour connecter des messages vers le **sortie** fenêtre. En examinant les messages enregistrés (et constaté que les messages n’ont pas encore été enregistrées !), vous pouvez souvent isoler la région de code avec le problème. Vous devrez peut-être répéter ce processus plusieurs fois pour le réduire.
+> Si son identification est difficile, définissez un point d’arrêt dans le code qui s’exécute avant le moment où le problème se produit, puis utilisez les commandes de pas à pas jusqu’à ce que le problème se manifeste. Vous pouvez également utiliser des [points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) pour enregistrer des messages dans la fenêtre **Sortie**. En examinant les messages enregistrés (et en observant ceux qui n’ont pas encore été enregistrés), vous pouvez souvent isoler la région de code présentant un problème. Vous devrez peut-être répéter ce processus plusieurs fois afin de localiser l’emplacement précis du problème.
 
-Lorsque vous trouvez la région de code avec le problème, utilisez le débogueur pour examiner. Pour rechercher la cause d’un problème, examinez le code de problème lors de l’exécution de votre application dans le débogueur :
+Une fois identifiée la région de code à problème, utilisez le débogueur pour l’examiner. Pour rechercher la cause d’un problème, inspectez le code défectueux tout en exécutant votre application dans le débogueur :
 
-* [Inspecter les variables](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) et vérifier s’ils contiennent le type de valeurs qu’ils doivent contenir. Si vous trouvez une valeur incorrecte, Découvrez où la valeur incorrecte a été définie (pour rechercher où la valeur a été définie, vous devrez peut-être soit redémarrer le débogueur, examinez le [pile des appels](../debugger/how-to-use-the-call-stack-window.md), ou les deux).
+* [Inspectez les variables](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) et vérifiez si elles contiennent le type de valeur prévu. Si vous trouvez une valeur incorrecte, recherchez où elle a été définie (vous devrez peut-être pour cela redémarrer le débogueur, examiner la [pile des appels](../debugger/how-to-use-the-call-stack-window.md), ou les deux).
 
-* Vérifiez si votre application s’exécute le code que vous attendez. (Par exemple, dans l’exemple d’application, nous attendions le code pour l’instruction switch définir le type de galaxy à irréguliers, mais l’application ignorée le code en raison de la faute de frappe.)
+* Vérifiez si votre application exécute le code prévu. (Par exemple, dans l’exemple d’application, nous nous attendions à ce que le code pour l’instruction switch affecte la valeur Irregular comme type de galaxie, mais l’application a ignoré le code à cause de la faute de frappe.)
 
 > [!TIP]
-> Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *vous* uniquement s’il en connaît l’objectif de votre code. Un outil ne peut avoir connaissance l’objectif de votre code si vous, le développeur, exprimer cette intention. Écriture [tests unitaires](../test/improve-code-quality.md) est comment procéder.
+> Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *à votre place* uniquement s’il connaît l’intention de votre code. Un outil ne peut avoir connaissance de l’intention de votre code que si vous, le développeur, exprimez cette intention. Vous devez pour cela écrire des [tests unitaires](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cet article, vous avez appris quelques concepts généraux de débogage. Ensuite, vous pouvez démarrer d’apprendre à déboguer avec Visual Studio.
+Dans cet article, vous avez découvert quelques concepts généraux liés au débogage. Maintenant, vous pouvez commencer à apprendre à déboguer avec Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)

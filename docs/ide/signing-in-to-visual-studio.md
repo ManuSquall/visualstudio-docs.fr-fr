@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542492"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348333"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
 Vous pouvez éventuellement personnaliser et optimiser votre expérience de développement dans Visual Studio si vous configurez votre compte de personnalisation en vous connectant à l'IDE.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Se connecter à Visual Studio pour Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Pourquoi dois-je me connecter à Visual Studio ?
 
@@ -68,3 +71,5 @@ Si vous rencontrez des problèmes pendant la connexion, consultez la [page de su
 
 * [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+* [Se connecter (Visual Studio pour Mac)](/visualstudio/mac/signing-in)
+* [Activation (Visual Studio pour Mac)](/visualstudio/mac/activation)

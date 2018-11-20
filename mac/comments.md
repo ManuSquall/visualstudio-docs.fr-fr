@@ -1,20 +1,20 @@
 ---
-title: Commentaires
+title: Commenter du code
 description: Cet article décrit l’utilisation de commentaires dans l’éditeur de source de Visual Studio pour Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 28c02f7f6347da67133a82c1d0aa71d44a4309d2
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224268"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295655"
 ---
 # <a name="comments"></a>Commentaires
 
-Lors du débogage ou de l’expérimentation du code, il peut être utile de marquer en commentaire des blocs de code, de façon temporaire ou définitive. 
+Durant le débogage ou l’expérimentation du code, il peut être utile de commenter des blocs de code, de façon temporaire ou à long terme.
 
 Pour marquer en commentaire tout un bloc de code :
 
@@ -24,20 +24,21 @@ OU
 
 * Utilisez la combinaison de touches `cmd + /` sur le code sélectionné.
 
-Vous pouvez utiliser ces méthodes pour ajouter et supprimer des marques de commentaire dans les sections de code. Dans les fichiers C#, vous pouvez ajouter des niveaux supplémentaires de marques de commentaire de ligne, ce qui permet d’ajouter et de supprimer des marques de commentaire dans des parties du code, tout en conservant les commentaires déjà présents : 
+Vous pouvez utiliser ces méthodes pour ajouter et supprimer des marques de commentaire dans les sections de code. Dans les fichiers C#, vous pouvez ajouter des niveaux supplémentaires de marques de commentaire de ligne, ce qui permet d’ajouter et de supprimer des marques de commentaire dans des parties du code, tout en conservant les commentaires déjà présents :
 
- ![commentaires multiniveaux](media/source-editor-image8.png)
+![commentaires multiniveaux](media/source-editor-image8.png)
 
 Les commentaires sont également utiles pour documenter le code à l’attention des développeurs susceptibles d’intervenir dessus. Ils se présentent généralement sous la forme de commentaires multilignes, qui sont ajoutés de la façon suivante dans chaque langage :
 
 **C#**
 
-``` cs
+```csharp
 /*
  This is a multi-line
  comment in C#
 */
 ```
+
 **F#**
 
 ```fsharp
@@ -46,3 +47,7 @@ Les commentaires sont également utiles pour documenter le code à l’attention
   comment in F#
 *)
 ```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Commenter du code (Visual Studio sur Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

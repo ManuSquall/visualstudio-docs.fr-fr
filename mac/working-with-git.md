@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223958"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296448"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
@@ -24,7 +24,7 @@ L’image ci-dessous illustre les options fournies par Visual Studio pour Mac pa
 
 ![Élément de menu Gestion de version](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Envoyer (push) et Tirer (pull) 
+## <a name="push-and-pull"></a>Envoyer (push) et Tirer (pull)
 
 L’envoi et le tirage sont les deux actions les plus souvent utilisées dans Git. Pour synchroniser les modifications que d’autres personnes ont apportées sur le dépôt distant, vous devez les **Tirer (pull)** du dépôt. Pour ce faire, dans Visual Studio pour Mac, sélectionnez **Gestion de version > Mettre à jour la solution**.
 
@@ -54,11 +54,11 @@ Ces onglets permettent d’effectuer les actions suivantes :
 
     ![Onglet Journal](media/version-control-gitLog.png)
 
-* **Fusion** : Cet onglet peut être utilisé en cas de conflit de fusion pendant la validation de votre travail. Il montre une représentation visuelle des modifications apportées par vous et l’autre développeur, ce qui vous permet de combiner correctement les deux sections de code. 
+* **Fusion** : Cet onglet peut être utilisé en cas de conflit de fusion pendant la validation de votre travail. Il montre une représentation visuelle des modifications apportées par vous et l’autre développeur, ce qui vous permet de combiner correctement les deux sections de code.
 
-## <a name="switching-branches"></a>Changement de branches 
+## <a name="switching-branches"></a>Changement de branches
 
-Par défaut, la première branche créée dans un dépôt est appelée branche **maître**. Techniquement, il n’y a aucune différence entre la branche maître et les autres branches, si ce n’est que la branche maître est celle qui est le plus souvent considérée par les équipes de développeurs comme la branche « active » ou « de production ».
+Par défaut, la première branche créée dans un dépôt est appelée branche **maîtresse** . Techniquement, il n’y a aucune différence entre la branche maître et les autres branches, si ce n’est que la branche maître est celle qui est le plus souvent considérée par les équipes de développeurs comme la branche « active » ou « de production ».
 
 Une ligne indépendante de développement peut être créée en séparant la branche maître (ou n’importe quelle autre branche, dans notre exemple). Vous obtenez alors une nouvelle version de la branche maître à un point dans le temps, ce qui vous permet de séparer le développement de ce qui est « actif ». L’utilisation de branches de cette manière est souvent utilisée pour les fonctionnalités dans le cadre du développement de logiciels
 
@@ -80,7 +80,7 @@ Affichez la branche actuelle dans le panneau Solutions, à côté du nom de proj
 
  ![Branche actuelle affichée dans le panneau Solutions](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Examen et validation 
+## <a name="reviewing-and-committing"></a>Examen et validation
 
 Pour examiner les modifications apportées aux fichiers, utilisez les onglets Modifications, Responsable, Journal et Fusion de chaque document, comme illustré dans cette rubrique.
 
@@ -90,8 +90,12 @@ Examinez toutes les modifications d’un projet en accédant à l’élément de
 
 Ce menu permet d’afficher toutes les modifications de chaque fichier d’un projet avec les options Restaurer, Créer un correctif ou Valider.
 
-Pour valider un fichier dans le dépôt distant, appuyez sur **Valider...**, entrez un message de validation et confirmez avec le bouton Valider :
+Pour valider un fichier dans le dépôt distant, appuyez sur **Valider**, entrez un message de validation, puis confirmez avec le bouton Valider :
 
 ![Validation d’un fichier](media/version-control-gitCommit.png)
 
 Une fois que vous avez validé les modifications, envoyez-les (push) dans le dépôt distant pour permettre aux autres utilisateurs de les afficher.
+
+## <a name="see-also"></a>Voir aussi
+
+* [Partager du code avec Visual Studio 2017 et Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

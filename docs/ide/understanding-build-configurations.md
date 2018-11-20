@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901188"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349047"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
 Vous pouvez enregistrer différentes configurations de propriétés de solution et de projet à utiliser dans différents types de builds. Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, dans la barre de menus, choisissez **Générer** > **Gestionnaire de configurations**, ou tapez simplement **Configuration** dans la zone **Lancement rapide**. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Créer des configurations dans Visual Studio pour Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ Chaque entrée dans la zone **Contextes des projets** d’une configuration de s
 
 > [!NOTE]
 > Quand vous définissez une nouvelle configuration de solution et que vous cochez la case **Créer des configurations de projet**, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] attribue automatiquement la nouvelle configuration à tous les projets. De la même manière, quand vous définissez une nouvelle plateforme de solution et que vous cochez la case **Créer des plateformes de projet**, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] attribue automatiquement la nouvelle plateforme à tous les projets. En outre, si vous ajoutez un projet ciblant une nouvelle plateforme, Visual Studio ajoute cette plateforme à la liste des plateformes de solution et l'attribue à tous les projets.
-> 
+>
 > Vous pouvez toujours modifier les paramètres de chaque projet.
 
 La configuration de solution active fournit également le contexte à l'IDE. Par exemple, si vous travaillez sur un projet et que la configuration indique qu’il doit être généré pour un appareil mobile, la **Boîte à outils** n’affiche que les éléments qui peuvent être utilisés dans un projet d’appareil mobile.
@@ -92,3 +95,4 @@ La configuration de solution active fournit également le contexte à l'IDE. Par
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
 - [Informations de référence sur les builds C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv command line switches](../ide/reference/devenv-command-line-switches.md)
+- [Créer des configurations (Visual Studio pour Mac)](/visualstudio/mac/configurations)

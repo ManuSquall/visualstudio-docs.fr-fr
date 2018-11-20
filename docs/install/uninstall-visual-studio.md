@@ -15,16 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0760c101ce669dc2e44527ea18b8f213a12df973
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d4e178bce3b1a74174d59b9fde701ef2d7645b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817741"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348655"
 ---
 # <a name="uninstall-visual-studio"></a>Désinstaller Visual Studio
 
 Cette page vous guide dans la désinstallation de Visual Studio, notre suite intégrée d’outils de productivité pour les développeurs.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Désinstaller Visual Studio pour Mac](/visualstudio/mac/uninstall).
 
 1. Recherchez le programme d’installation de Visual Studio sur votre ordinateur.
 
@@ -33,7 +36,7 @@ Cette page vous guide dans la désinstallation de Visual Studio, notre suite int
      ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
 
    > [!NOTE]
-   >   Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Cliquez pour démarrer le programme d’installation, cliquez sur l’![icône Détails](media/vs2017uninstall-UninstallIcon.png "Cliquez sur l’icône Sélectionner les options"), puis sur **Désinstaller**.
 

@@ -1,15 +1,15 @@
 
-1. Fermez et rouvrez la Console de gestion IIS pour afficher les options de configuration mis à jour dans l’interface utilisateur.
+1. Fermez et rouvrez la console de gestion IIS pour afficher les options de configuration mises à jour dans l’IU.
 
-2. Dans IIS, cliquez sur le **Site Web par défaut**, choisissez **déployer** > **configurer Web déployer la publication**.
+2. Dans IIS, cliquez avec le bouton droit sur le **site web par défaut**, choisissez **Déployer** > **Activer la publication Web Deploy**.
 
-    ![Configurer Web Deploy](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+    ![Configurer la configuration Web Deploy](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-3. Dans le **configurer Web déployer la publication** boîte de dialogue zone, examinez les paramètres.
+3. Dans la boîte de dialogue **Activer la publication Web Deploy**, examinez les paramètres.
 
-4. Cliquez sur **le programme d’installation**.
+4. Cliquez sur **Configurer**.
 
-    Dans le **résultats** Panneau de configuration, la sortie montre que les droits d’accès est accordée à l’utilisateur spécifié et qu’un fichier avec un *.publishsettings* extension de fichier a été générée à l’emplacement indiqué dans la boîte de dialogue zone.
+    Dans le panneau **Résultats**, la sortie indique que les droits d’accès sont accordés à l’utilisateur spécifié et qu’un fichier ayant l’extension *.publishsettings* a été généré à l’emplacement indiqué dans la boîte de dialogue.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -26,14 +26,14 @@
     </publishData>
     ```
 
-    Selon votre configuration de Windows Server et IIS, vous consultez des valeurs différentes dans le fichier XML. Voici quelques détails sur les valeurs que vous voyez :
+    En fonction de votre configuration Windows Server et IIS, vous voyez des valeurs distinctes dans le fichier XML. Voici quelques détails sur les valeurs que vous voyez :
 
-   * Le *msdeploy.axd* fichier référencé dans le `publishUrl` attribut est un fichier de gestionnaire HTTP généré dynamiquement pour Web Deploy. (Pour des tests, `http://myhostname:8172` généralement fonctionne aussi bien.)
-   * Le `publishUrl` port est défini sur le port 8172, qui est la valeur par défaut pour Web Deploy.
-   * Le `destinationAppUrl` port est défini sur le port 80, qui est la valeur par défaut pour IIS.
-   * Si vous ne parvenez pas à vous connecter à l’hôte distant dans Visual Studio en utilisant le nom d’hôte (dans les étapes ultérieures), testez l’adresse IP à la place le nom d’hôte.
+   * Le fichier *msdeploy.axd* référencé dans l’attribut `publishUrl` est un fichier de gestionnaire HTTP généré dynamiquement pour Web Deploy. (À des fins de test, `http://myhostname:8172` fonctionne également, en règle générale.)
+   * Le port `publishUrl` a la valeur 8172, ce qui correspond au port par défaut de Web Deploy.
+   * Le port `destinationAppUrl` a la valeur 80, ce qui correspond au port par défaut d’IIS.
+   * Si vous ne parvenez pas à vous connecter à l’hôte distant dans Visual Studio à l’aide du nom d’hôte (dans les étapes qui suivent), testez l’adresse IP à la place du nom d’hôte.
 
      > [!NOTE]
-     > Si vous publiez sur IIS s’exécutant sur une machine virtuelle Azure, vous devez ouvrir les ports IIS et Web Deploy dans le groupe de sécurité réseau. Pour plus d’informations, consultez [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > Si vous publiez sur IIS, sur une machine virtuelle Azure, vous devez ouvrir les ports Web Deploy et IIS dans le groupe Sécurité réseau. Pour plus d’informations, consultez [Installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
 
 5. Copiez ce fichier sur l’ordinateur où vous exécutez Visual Studio.

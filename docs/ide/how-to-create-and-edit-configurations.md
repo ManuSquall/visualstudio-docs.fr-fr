@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808790"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348524"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
 
 Vous pouvez créer plusieurs configurations de build pour une solution. Par exemple, vous pouvez configurer une build de débogage que vos testeurs peuvent utiliser pour rechercher et résoudre des problèmes. Vous pouvez également configurer différents types de builds que vous pouvez distribuer à des clients différents.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Créer et modifier des configurations dans Visual Studio pour Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Créer des configurations de build
 
@@ -127,3 +128,4 @@ Dans la boîte de dialogue **Gestionnaire de configurations**, vous pouvez utili
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Gérer les propriétés des projets et des solutions](managing-project-and-solution-properties.md)
+- [Créer et modifier des configurations (Visual Studio pour Mac)](/visualstudio/mac/create-and-edit-configurations)

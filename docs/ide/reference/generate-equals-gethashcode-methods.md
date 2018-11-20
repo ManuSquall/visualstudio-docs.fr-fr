@@ -1,5 +1,5 @@
 ---
-title: Générer des substitutions des méthodes C# Equals et GetHashCode dans Visual Studio
+title: Générer des remplacements de méthode C# Equals et GetHashCode
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903112"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295707"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Générer des substitutions des méthodes Equals et GetHashCode dans Visual Studio
 
@@ -36,17 +36,20 @@ Cette génération de code s’applique à :
 
 ## <a name="how-to"></a>Procédure
 
-1. Placez votre curseur dans votre déclaration de type.
+1. Placez votre curseur quelque part sur la ligne de votre déclaration de type.
 
    ![Code mis en surbrillance](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > N’effectuez pas de double-clic, sélectionnez le nom de type, sinon l’option de menu n’est pas disponible. Placez simplement le curseur quelque part sur la ligne.
+
 1. Effectuez ensuite l'une des opérations suivantes :
 
-   - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
-   - **Souris**
-      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la déclaration de type.
+   - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+
+   - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+
+   - Cliquez sur le bouton ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
 
    ![Générer un aperçu des substitutions](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ Cette génération de code s’applique à :
     ![Boîte de dialogue Générer les substitutions](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > Vous pouvez également choisir de générer des opérateurs à partir de cette boîte de dialogue en utilisant les cases à cocher situées sous la liste des membres.
+    > Vous pouvez également choisir de générer des opérateurs à partir de cette boîte de dialogue en utilisant la case à cocher en bas de celle-ci.
 
-   Les substitutions Equals et GetHashCode sont générées avec des implémentations par défaut.
+   Les méthodes `Equals` et `GetHashCode` sont générées avec des implémentations par défaut.
 
    ![Résultat de l’action Générer une méthode](media/overrides-result-cs.png)
 

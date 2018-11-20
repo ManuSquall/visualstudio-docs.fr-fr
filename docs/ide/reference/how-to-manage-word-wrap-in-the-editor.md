@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour gérer le retour automatique à la ligne dans l'éditeur
-ms.date: 11/04/2016
+title: Retour automatique à la ligne
+ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,16 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42627103"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349112"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Guide pratique pour gérer le retour automatique à la ligne dans l’éditeur
 
 Vous pouvez activer et désactiver l’option **Retour automatique à la ligne**. Lorsque cette option est activée, la partie d’une longue ligne qui s’étend au-delà de la largeur de la fenêtre de l’éditeur de code s’affiche à la ligne suivante. Lorsque cette option est désactivée, par exemple, pour faciliter l’utilisation de la numérotation des lignes, vous pouvez faire défiler l’affichage vers la droite pour voir l’extrémité des longues lignes.
+
+> [!NOTE]
+> Cette rubrique s’applique uniquement à Visual Studio sur Windows. Actuellement, Visual Studio pour Mac ne prend pas en charge le retour automatique à la ligne.
 
 ## <a name="to-set-word-wrap-preferences"></a>Pour définir les préférences de retour automatique à la ligne
 

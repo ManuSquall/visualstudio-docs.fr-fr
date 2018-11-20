@@ -1,5 +1,5 @@
 ---
-title: Génération et nettoyage de solutions et de projets dans Visual Studio
+title: Génération et nettoyage des projets et des solutions
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -24,15 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b0ef6eab346215631559e8c9cfb16ecac0a4bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918528"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349268"
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Génération et nettoyage de solutions et de projets dans Visual Studio
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Générer et nettoyer des projets et des solutions dans Visual Studio
+
 En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour obtenir un didacticiel pas à pas, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Générer et nettoyer des projets et des solutions dans Visual Studio pour Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
 > En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
@@ -46,7 +50,7 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
     -   Choisissez **Générer** ou **Générer la Solution** pour compiler uniquement les fichiers de projet et les composants qui ont été modifiés depuis la dernière génération.
 
         > [!NOTE]
-        >  La commande **Générer** devient **Générer la Solution** quand une solution contient plusieurs projets.
+        > La commande **Générer** devient **Générer la Solution** quand une solution contient plusieurs projets.
 
     -   Choisissez **Régénérer la Solution** pour « nettoyer » la solution, puis générer tous les fichiers projet et les composants.
 
@@ -118,3 +122,4 @@ Effectuez l'une des étapes suivantes :
 - [Référence à la génération d’un programme C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv command line switches](../ide/reference/devenv-command-line-switches.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
+- [Générer et nettoyer des projets et des solutions (Visual Studio pour Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

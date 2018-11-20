@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 4ffb7ce8a796641d54a5c29c58b9f166a9189d1c
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228797"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294927"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Ouvrir plusieurs solutions ou instances de Visual Studio pour Mac
 
-Par défaut, toutes les applications d’un Mac, y compris Visual Studio pour Mac, sont des applications _à instance unique_. Cela signifie que si l’application que vous souhaitez utiliser est déjà ouverte (ce qui se voit par le point sous l’icône dans le panneau d’ancrage), le fait de sélectionner de nouveau l’icône ouvrira l’instance en cours d’exécution, plutôt qu’une nouvelle instance.  Si vous avez besoin d’instances supplémentaires de l’application, vous pouvez demander au système de les ouvrir pour vous, comme décrit dans la [section suivante](#open-a-second-instance-of-visual-studio-for-mac).
+Par défaut, toutes les applications d’un Mac, y compris Visual Studio pour Mac, sont des applications _à instance unique_. Cela signifie que si l’application que vous souhaitez utiliser est déjà ouverte (ce qui se voit par le point sous l’icône dans le panneau d’ancrage), le fait de sélectionner de nouveau l’icône ouvre l’instance en cours d’exécution, au lieu d’une nouvelle instance. Si vous avez besoin d’instances supplémentaires de l’application, vous pouvez demander au système de les ouvrir pour vous, comme décrit dans la [section suivante](#open-a-second-instance-of-visual-studio-for-mac).
 
 En outre, lorsque vous ouvrez une solution, le comportement par défaut est d’ouvrir la solution dans un nouvel espace de travail et de fermer l’espace de travail actuel (si nécessaire). Vous pouvez remplacer ce comportement par défaut de manière à garder l’actuel espace de travail ouvert, comme décrit dans la section [Ouvrir une deuxième solution](#open-a-second-solution-inside-a-single-instance).
 
@@ -33,13 +33,14 @@ Pour ouvrir une autre solution à côté de votre première solution, effectuez 
 1. Dans la première solution déjà ouverte, sélectionnez **Fichier** > **Ouvrir**.
 2. Parcourez le système de fichiers pour trouver la solution existante.
 3. Sélectionnez le fichier **.sln** et **Options** :
-    
+
     ![Capture d’écran de Visual Studio pour Mac, avec le fichier .sln et Options en surbrillance](media/open-multiple-solutions-image3.png)
+
 4. Décochez la case **Fermer l’espace de travail actif** :
 
     ![Capture d’écran de la boîte de dialogue Options, avec la case Fermer l’espace de travail actif décochée](media/open-multiple-solutions-image1.png)
 
-1. Sélectionnez **Ouvrir** pour ouvrir la deuxième solution dans le Panneau Solutions.
+5. Sélectionnez **Ouvrir** pour ouvrir la deuxième solution dans le Panneau Solutions.
 
 Autre possibilité, si vous avez récemment ouvert la solution, vous pouvez suivre les étapes ci-dessous :
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943697"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348719"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
 
@@ -38,11 +38,13 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 
 -   Saisie semi-automatique pour les méthodes et les paramètres
 
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Accessibilité pour Visual Studio pour Mac](/visualstudio/mac/accessibility).
+
 > [!IMPORTANT]
 > Les informations contenues dans cette rubrique s'appliquent uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, vous pouvez utiliser la carte d'information de la filiale fournie avec votre package logiciel, ou consulter la [page Nous contacter du support technique](http://support.microsoft.com/ContactUs) et cliquer sur le lien **Rechercher des adresses Microsoft dans le monde entier** (en bas de la page). Cette page fournit la liste des numéros de téléphone et adresses des services de support technique Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et services décrits dans cette section sont disponibles dans votre région. Les informations sur l'accessibilité sont disponibles dans d'autres langues, y compris le japonais et le français.
 
-
- Pour plus d’informations, consultez les rubriques suivantes :
+Pour plus d’informations, consultez les rubriques suivantes :
 
 -   [Guide pratique pour définir les options d’accessibilité de l’IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 

@@ -17,16 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447205"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349177"
 ---
 # <a name="outlining"></a>mode Plan
 
 Vous pouvez choisir de masquer certaines parties du code en réduisant une zone de code pour qu’elle apparaisse sous un signe plus (**+**). Pour développer une zone réduite, vous devez cliquer sur le signe plus (+). Si vous utilisez le clavier, choisissez **Ctrl**+**M**+**M** pour réduire et développer. Vous pouvez aussi réduire une zone en mode Plan en double-cliquant sur n’importe quelle ligne dans la zone dans la marge de mode Plan, affichée juste à gauche du code. Vous pouvez afficher le contenu d’une zone réduite sous forme d’info-bulle quand vous pointez sur la partie réduite.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Éditeur de code Source (Visual Studio pour Mac)](/visualstudio/mac/source-editor).
 
 Les zone dans la marge de mode Plan sont également mises en surbrillance quand vous pointez sur la marge avec la souris. La couleur de mise en surbrillance par défaut peut sembler plutôt fade dans certaines configurations de couleur. Vous pouvez la modifier dans **Outils** > **Options** > **Environnement** > **Polices et couleurs** > **Zone réductible**.
 
@@ -55,3 +58,4 @@ Vous pouvez également utiliser le SDK Visual Studio pour définir les zones de 
 ## <a name="see-also"></a>Voir aussi
 
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Éditeur de code source (Visual Studio pour Mac)](/visualstudio/mac/source-editor)

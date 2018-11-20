@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 8652b73b9bd7e414a989a1b711238126a742290f
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224326"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296461"
 ---
 # <a name="refactoring"></a>Refactorisation
 
@@ -20,25 +20,25 @@ Elle génère une base de code plus saine, rendant le code plus utilisable, lisi
 
 L’intégration de Visual Studio pour Mac à Roslyn, la plateforme de compilateurs .NET open source de Microsoft, permet une refactorisation plus importante.
 
-## <a name="renaming"></a>Renommage 
+## <a name="renaming"></a>Renommage
 
 La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez avec le bouton droit sur celui-ci et choisissez **Refactoriser > Renommer**, ou la combinaison de touches **Cmd+R** :
 
 ![Élément de menu Renommer](media/refactoring-renaming1.png)
 
-Ceci met en évidence le symbole et toutes les références à celui-ci. Quand vous commencez à taper un nouveau nom, il change automatiquement toutes les références dans votre code, et vous pouvez indiquer que le renommage est terminé en appuyant sur **Entrée** :
+Ceci met en évidence le symbole et toutes les références à celui-ci. Quand vous commencez à taper un nouveau nom, il change automatiquement toutes les références dans votre code. Vous pouvez indiquer que le renommage a été effectué en appuyant sur **Entrée** :
 
- ![Renommage et identificateur](media/refactoring-renaming2.png)
+![Renommage et identificateur](media/refactoring-renaming2.png)
 
 ## <a name="context-actions"></a>Actions contextuelles
 
-Les actions contextuelles vous permettent d’inspecter le code C# et de voir toutes les options de refactorisation possibles. 
+Les actions contextuelles vous permettent d’inspecter le code C# et de voir toutes les options de refactorisation possibles.
 
 Les éléments contextuels **Résoudre** et **Refactoriser** sont combinés en un seul élément *Correction rapide...* qui vous propose toutes les actions contextuelles disponibles :
 
 ![Afficher les éléments contextuels](media/refactoring-context-action.png)
 
-En pointant avec la souris sur les actions contextuelles, vous obtenez un aperçu de ce qui sera ajouté ou supprimé dans votre code.
+En passant le pointeur de la souris sur les actions contextuelles, vous obtenez un aperçu de ce qui est ajouté ou supprimé dans votre code.
 
 Vous pouvez aussi appuyer sur **Option+Entrée** n’importe où dans votre code :
 
@@ -46,11 +46,11 @@ Vous pouvez aussi appuyer sur **Option+Entrée** n’importe où dans votre code
 
 Pour activer ces options, vous devez sélectionner *Activer l’analyse du code source des fichiers ouverts* dans les options de **Visual Studio pour Mac > Préférences > Éditeur de texte > Analyse du code source** :
 
- ![Activer l’analyse du code source](media/refactoring-options.png)
+![Activer l’analyse du code source](media/refactoring-options.png)
 
 Il existe plus de 100 actions possibles qui peuvent être suggérées, qui sont activées ou désactivées en accédant à **Visual Studio pour Mac > Préférences > Analyse du code source > C# > Actions de code**, et en cochant ou en décochant la case en regard de l’action :
 
- ![Actions de l’analyse du code source C#](media/refactoring-image3a.png)
+![Actions de l’analyse du code source C#](media/refactoring-image3a.png)
 
 ### <a name="common-context-actions"></a>Actions contextuelles courantes
 
@@ -85,7 +85,6 @@ L’opération de refactorisation Extraire la méthode vous permet de créer une
 
 3. Utilisez les touches de direction pour sélectionner l’emplacement de la nouvelle méthode dans votre code.
 
-
 #### <a name="encapsulate-field"></a>Encapsuler le champ
 
 L’opération Encapsuler le champ vous permet de créer une propriété à partir d’un champ existant et met à jour votre code pour référencer la propriété nouvellement créée. En créant une propriété qui encapsule votre champ, vous empêchez un accès direct à votre champ public, ce qui signifie que qu’autres objets ne peuvent pas le modifier.
@@ -95,16 +94,19 @@ Cette action effectue les opérations suivantes :
 * Elle change le modificateur d’accès en privé.
 * Elle génère une méthode getter et une méthode setter pour le champ (sauf si le champ est en lecture seule, auquel cas elle crée seulement une méthode getter).
 
-
 ## <a name="source-analysis"></a>Analyse du code source
 
-L’analyse du code source analyse votre code à la volée et souligne les erreurs potentielles et les violations de style, et fournit des corrections automatiques sous forme d’actions contextuelles. 
+L’analyse du code source analyse votre code à la volée. Elle souligne les erreurs potentielles et les violations de style, et fournit des corrections automatiques sous forme d’actions contextuelles.
 
 Vous pouvez voir tous les résultats de l’analyse du code source pour n’importe quel fichier et à tout moment, en consultant la barre de défilement sur le côté droit de l’éditeur de texte :
 
- ![Barre latérale Analyse du code source](media/refactoring-image4a.png)
+![Barre latérale Analyse du code source](media/refactoring-image4a.png)
 
-Si vous cliquez sur le cercle en haut, vous pouvez parcourir les différentes suggestions, les problèmes avec la gravité la plus élevée figurant en premier. Pointez sur un résultat ou une ligne individuelle pour afficher le problème. Vous pouvez alors le résoudre via des actions contextuelles :
+Si vous cliquez sur le cercle en haut, vous pouvez parcourir les différentes suggestions, les problèmes avec la gravité la plus élevée figurant en premier. Passez le pointeur sur un résultat ou une ligne individuelle pour afficher le problème. Vous pouvez alors le corriger via des actions contextuelles :
 
- ![Élément d’analyse du code source](media/refactoring-image5.png)
+![Élément d’analyse du code source](media/refactoring-image5.png)
 
+## <a name="see-also"></a>Voir aussi
+
+- [Actions rapides (Visual Studio sur Windows)](/visualstudio/ide/quick-actions)
+- [Refactoriser du code (Visual Studio sur Windows)](/visualstudio/ide/refactoring-in-visual-studio)

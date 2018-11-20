@@ -1,17 +1,17 @@
 ---
-title: Résolution des problèmes liés à Visual Studio pour Mac
+title: Résoudre les problèmes
 description: Problèmes courants et résolutions spécifiques aux utilisateurs de Visual Studio pour Mac.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223934"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294641"
 ---
 # <a name="troubleshooting"></a>Résolution des problèmes
 
@@ -23,11 +23,11 @@ Vous pouvez trouver les journaux en accédant à l’élément de menu **Aide > 
 
 ## <a name="viewing-exceptions"></a>Affichage des exceptions
 
-Quand une exception a été interceptée, une bulle d’exception s’affiche. Pour afficher plus de détails, sélectionnez le bouton **Afficher les détails** :
+Quand une exception est interceptée, une bulle d’exception s’affiche. Pour afficher plus de détails, sélectionnez le bouton **Afficher les détails** :
 
 ![Afficher plus de détails sur une exception](media/troubleshooting-image2.png)
 
-Ceci affiche la boîte de dialogue **Afficher les détails**, qui fournit plus d’informations sur l’exception :
+Cela entraîne l’affichage de la boîte de dialogue **Afficher les détails**, qui fournit des informations supplémentaires sur l’exception :
 
 ![Boîte de dialogue Afficher les détails](media/troubleshooting-image3.png)
 
@@ -45,4 +45,8 @@ Voici les sections importantes de la boîte de dialogue, numérotées ci-dessus 
 10. Par défaut, elle est définie d’après l’option **Déboguer uniquement le code du projet** définie dans les paramètres du débogueur. Le fait de cocher cette case permet la réduction de tout le code non-utilisateur à une seule ligne dans la trace de pile.
 11. Un bouton Copier pour copier la sortie de `exception.ToString()` dans le Presse-papiers.
 
-Notez que certaines de ces sections sont visibles seulement quand l’exception a une exception interne.
+Notez que certaines de ces sections sont visibles uniquement quand l’exception a une exception interne.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Ressources disponibles pour la résolution des erreurs de l’IDE (Visual Studio sur Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

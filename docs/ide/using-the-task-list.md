@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612699"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349391"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
 Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui utilisent des jetons tels que `TODO` et `HACK`, ou des jetons personnalisés, et gérez les raccourcis qui permettent d’accéder directement à un emplacement prédéfini dans le code. Cliquez sur l’élément dans la liste pour accéder à son emplacement dans le code source.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Commentaires de tâche (Visual Studio pour Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>Fenêtre Liste des tâches
 
@@ -104,3 +107,4 @@ Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dan
 ## <a name="see-also"></a>Voir aussi
 
 - [Liste des tâches, Environnement, boîte de dialogue Options](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Commentaires de tâche (Visual Studio pour Mac)](/visualstudio/mac/task-comments)

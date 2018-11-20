@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 244312646de83e935dfa84cde4a9b793eb01a76f
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835902"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349713"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -23,6 +23,9 @@ Dans Visual Studio 2017, vous pouvez ajouter un fichier [EditorConfig](http://ed
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
 Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig. Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [EditorConfig dans Visual Studio pour Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Cohérence du codage
 
@@ -172,3 +175,4 @@ Vous pouvez contrôler la portée de vos conventions EditorConfig en définissan
 - [Prise en charge d’EditorConfig pour un service de langage](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Fonctionnalités de l’éditeur de code](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig (Visual Studio pour Mac)](/visualstudio/mac/editorconfig)

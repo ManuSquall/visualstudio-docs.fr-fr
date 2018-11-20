@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919739"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296435"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -44,12 +44,10 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Nommage et création d’un projet de fonction Azure](media/azure-functions-lab-image2.png)
 
-5. Développez les nœuds dans le **Panneau Solutions**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json. 
+5. Développez les nœuds dans le **Panneau Solutions**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json.
 
-     Il y a également trois fichiers :  
-        - **host.json** pour décrire les options de configuration globale de l’hôte  
-        - **local.settings.json** pour configurer les paramètres de service.  
-        - Le modèle de projet crée également un HttpTrigger par défaut. Pour les besoins de cet atelier, supprimez le fichier **HttpTrigger.cs** du projet.  
+     Il comprend également trois fichiers : - **host.json** pour décrire les options de configuration globales pour l’hôte. - **local.settings.json** pour configurer les paramètres de service.
+        - Le modèle de projet crée également un HttpTrigger par défaut. Pour les besoins de cet atelier, supprimez le fichier **HttpTrigger.cs** du projet.
 
     Ouvrez **local.settings.json**. Il contient par défaut deux paramètres de chaîne de connexion vides.
 
@@ -58,7 +56,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercice 2 : Création d’un compte de stockage Azure
 
 1. Connectez-vous à votre compte Azure à l’adresse [https://portal.azure.com](https://portal.azure.com).
- 
+
 1. Sous la section **Favoris** située à gauche de l’écran, sélectionnez **Comptes de stockage** :
 
     ![Section Favoris du portail Azure montrant l’élément Comptes de stockage](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemple 3 : Création et débogage d’une fonction Azure
 
-1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions**, puis sélectionnez **Ajouter > Ajouter une fonction** :
+1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions**, puis sélectionnez **Ajouter > Ajouter une fonction** :
 
     ![Option Ajouter une fonction](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
         return x + y;
     }
     ```
-1. Passons en revue la définition de la méthode élément par élément. 
-    
+1. Passons en revue la définition de la méthode élément par élément.
+
     La première chose que vous voyez est l’attribut **FunctionName**. Celui-ci marque la méthode comme étant une fonction Azure. L’attribut désigne le nom public de la fonction. Le nom de l’attribut ne doit pas forcément correspondre au nom réel de la méthode.
 
     ![Nouvelle méthode Run avec l’attribut FunctionName mis en surbrillance](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![URL d’API de fonction Azure](media/azure-functions-lab-image20.png)
 
-1. Le point d’arrêt doit se déclencher immédiatement. La requête web a été routée à la fonction et peut désormais être déboguée. Pointez avec la souris sur la variable **x** pour afficher sa valeur. 
+1. Le point d’arrêt doit se déclencher immédiatement. La requête web a été routée à la fonction et peut désormais être déboguée. Pointez avec la souris sur la variable **x** pour afficher sa valeur.
 
     ![Point d’arrêt déclenché](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercice 5 : Utilisation des tables de stockage Azure
 
-Les services que vous générez sont souvent beaucoup plus complexes que ceux que nous avons générés jusqu’à présent, et leur exécution nécessite des ressources importantes en termes de temps et/ou d’infrastructure. Dans ce cas, il peut être judicieux d’accepter les demandes qui sont en file d’attente de traitement quand les ressources deviennent disponibles, ce qu’il est possible de faire avec Azure Functions. Dans d’autres cas, vous pouvez stocker les données de manière centralisée. Pour y parvenir rapidement, utilisez des tables de stockage Azure. 
+Les services que vous générez sont souvent beaucoup plus complexes que ceux que nous avons générés jusqu’à présent, et leur exécution nécessite des ressources importantes en termes de temps et/ou d’infrastructure. Dans ce cas, il peut être judicieux d’accepter les demandes qui sont en file d’attente de traitement quand les ressources deviennent disponibles, ce qu’il est possible de faire avec Azure Functions. Dans d’autres cas, vous pouvez stocker les données de manière centralisée. Pour y parvenir rapidement, utilisez des tables de stockage Azure.
 
 1. Ajoutez la classe ci-dessous à **Add.cs**. Placez-la dans l’espace de noms, mais à l’extérieur de la classe existante.
 
@@ -332,7 +330,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 
 1. Revenez au navigateur pour actualiser la requête à la même URL. Cette fois, vous devriez voir une erreur après la méthode **Process**. Cette erreur vient du fait que le code tente d’ajouter une ligne à la table Stockage Table Azure à l’aide d’une combinaison clé de partition/clé de ligne qui existe déjà.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 1. Revenez à **Visual Studio pour Mac** et mettez fin à la session de débogage.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

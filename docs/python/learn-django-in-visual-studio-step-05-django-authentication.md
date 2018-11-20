@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120353"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561645"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
@@ -152,24 +152,30 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 1. Pour vérifier si l’utilisateur authentifié est autorisé à accéder aux ressources spécifiques, vous devez récupérer les autorisations spécifiques à l’utilisateur à partir de votre base de données. Pour plus d’informations, consultez [Utilisation du système d’authentification Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (documents Django).
 
-1. Le superutilisateur ou l’administrateur, en particulier, est autorisé à accéder aux interfaces d’administrateur intégrées Django à l’aide des URL relatives « /admin/ » et « /admin/doc/ ». Pour activer ces interfaces, ouvrez le script *urls.py* du projet Django et supprimez les commentaires des entrées suivantes :
+1. Le superutilisateur ou l’administrateur, en particulier, est autorisé à accéder aux interfaces d’administrateur intégrées Django à l’aide des URL relatives « /admin/ » et « /admin/doc/ ». Pour activer ces interfaces, effectuez ce qui suit :
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Installez le package Python docutils dans votre environnement. Pour y parvenir, ajoutez « docutils » à votre fichier *requirements.txt*, puis dans l’**Explorateur de solutions**, développez le projet, développez le nœud **Environnements Python**, puis cliquez avec le bouton droit sur l’environnement utilisé et sélectionnez **Installer à partir de requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Ouvrez le fichier *urls.py* du projet Django, puis supprimez les commentaires par défaut des entrées suivantes :
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Lorsque vous redémarrez l’application, vous pouvez accéder à « /admin/ » et « / admin/doc / » et effectuer des tâches telles que créer des comptes d’utilisateur supplémentaires.
+    1. Dans le fichier *settings.py* du projet Django, accédez à la collection `INSTALLED_APPS` et ajoutez `'django.contrib.admindocs'`.
 
-    ![Interface de l’administrateur Django](media/django/step05-administrator-interface.png)
+    1. Quand vous redémarrez l’application, vous pouvez accéder à « /admin/ » et « /admin/doc/ », et effectuer des tâches telles que la création de comptes d’utilisateurs supplémentaires.
+
+        ![Interface de l’administrateur Django](media/django/step05-administrator-interface.png)
 
 1. La dernière partie du flux d’authentification est la fermeture de session. Comme vous pouvez le voir dans *loginpartial.html*, le lien **Fermeture de session** place simplement une requête POST à l’URL relative « /login », qui est gérée par l’affichage intégré `django.contrib.auth.views.logout`. Cet affichage n’affiche aucune interface utilisateur et simplement accède à la page d’accueil (comme indiqué dans *urls.py* pour le modèle « ^logout$ »). Si vous souhaitez afficher une page de fermeture de session, tout d’abord modifiez le modèle d’URL comme suit pour ajouter une propriété « template_name » et supprimez la propriété « next_page » :
 
