@@ -1,6 +1,6 @@
 ---
 title: Laisser Visual Studio vous aident à écrire C# code avec moins de bogues
-description: Apprendre à utiliser le débogueur pour déboguer votre application
+description: Comprendre comment mieux écrire votre code avec moins de bogues
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561775"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948957"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Écrire de meilleures C# code à l’aide de Visual Studio
 
@@ -33,7 +33,7 @@ Dans cet article, nous parler en tirant parti de l’IDE pour améliorer la prod
 
 * Quand utiliser le débogueur
 
-Pour illustrer ces tâches, nous montrons quelques-uns des types plus courants des erreurs et des bogues que vous allez rencontrer lorsque vous tentez de déboguer vos applications. Bien que l’exemple de code est C#, les informations conceptuelles sont généralement applicables à C++, Visual Basic, JavaScript et autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#.
+Pour illustrer ces tâches, nous montrons quelques-uns des types plus courants des erreurs et des bogues que vous allez rencontrer lorsque vous tentez de déboguer vos applications. Bien que l’exemple de code est C#, les informations conceptuelles sont généralement applicables à C++, Visual Basic, JavaScript et autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en C#.
 
 ## <a name="follow-along-using-the-sample-app"></a>Suivre la procédure à l’aide de l’exemple d’application
 
@@ -42,7 +42,7 @@ Si vous préférez, vous pouvez créer une application console .NET Framework ou
 Pour créer l’application, ouvrez Visual Studio et choisissez **fichier > Nouveau projet**. Sous **Visual C#** , choisissez **Windows Desktop** ou **.NET Core**, puis, dans le volet central, choisissez un **application Console**. Tapez un nom tel que **Console_Parse_JSON** et cliquez sur **OK**. Visual Studio crée le projet. Coller le [exemple de code](#sample-code) dans le projet *Program.cs* fichier.
 
 > [!NOTE]
-> Si vous ne voyez pas le **Application Console** modèle de projet, cliquez sur le **ouvrir Visual Studio Installer** lien dans le volet gauche de la **nouveau projet** boîte de dialogue. Visual Studio Installer est lancé. Choisissez le **développement .NET desktop** ou **.NET Core le développement multiplateforme** charge de travail, puis choisissez **modifier**.
+> Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez le **développement .NET desktop** ou **.NET Core le développement multiplateforme** charge de travail, puis choisissez **modifier**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Rechercher les tildes rouges et vertes !
 
@@ -166,13 +166,13 @@ Voici quelques conseils importants pour la gestion des exceptions :
     }
     ```
 
-* Pour les méthodes non connus que vous incluez dans votre application, consultez la documentation pour voir les exceptions que la méthode est susceptible de lever. Il peut s’agir des informations critiques pour la gestion correcte des erreurs et pour déboguer votre application.
+* Pour les fonctions non connues que vous incluez dans votre application, spécialement ceux interagir avec des données externes (par exemple, une requête web), consultez la documentation pour voir quelles exceptions la fonction est susceptible de lever. Il peut s’agir des informations critiques pour la gestion correcte des erreurs et pour déboguer votre application.
 
 Pour l’exemple d’application, vous devez corriger le `SerializationException` dans le `GetJsonData` méthode en modifiant `4o` à `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Clarifier votre intention du code à l’aide d’assert
 
-Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils déboguer (**Ctrl** + **MAJ**   +  **F5**). Cette commande redémarre l’application dans moins d’étapes. Affiche la sortie suivante dans la fenêtre de console.
+Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj** + **F5**). Cette commande redémarre l’application dans moins d’étapes. Affiche la sortie suivante dans la fenêtre de console.
 
 ![Valeur null en sortie](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ En ajoutant `assert` instructions telles que pour vos fonctions pendant le proce
 
 En spécifiant l’intention de cette façon, vous appliquez vos besoins. Il s’agit d’une méthode simple et pratique que vous pouvez utiliser à la surface d’exposition des bogues au cours du développement. (`assert` instructions sont également utilisées comme l’élément principal dans les tests unitaires.)
 
-Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils déboguer (**Ctrl** + **MAJ**   +  **F5**).
+Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj** + **F5**).
 
 > [!NOTE]
 > Le `assert` code est actif uniquement dans une version Debug.
@@ -217,7 +217,10 @@ Lorsque vous redémarrez, le débogueur s’arrête à la `assert` instruction, 
 
 ![Assert résout sur false](../debugger/media/write-better-code-using-assert.png)
 
-Le `assert` erreur vous indique qu’il existe un problème que vous devez examiner. `assert` peut couvrir de nombreux scénarios où vous ne voyez pas nécessairement une exception. Dans cet exemple, l’utilisateur ne voit une exception (dans d’autres scénarios un `NullReferenceException` peut se produire) et un `null` valeur est ajoutée en tant que `firstname` dans votre base de données. Cela peut entraîner des problèmes par la suite (telles que vous voyez dans la sortie de console) et peut être plus difficile à déboguer.
+Le `assert` erreur vous indique qu’il existe un problème que vous devez examiner. `assert` peut couvrir de nombreux scénarios où vous ne voyez pas nécessairement une exception. Dans cet exemple, l’utilisateur ne voit une exception et un `null` valeur est ajoutée en tant que `firstname` dans votre liste d’enregistrements. Cela peut entraîner des problèmes par la suite (telles que vous voyez dans la sortie de console) et peut être plus difficile à déboguer.
+
+> [!NOTE]
+> Dans les scénarios où vous appelez une méthode sur le `null` valeur, un `NullReferenceException` résultats. Vous voulez normalement Évitez d’utiliser un `try/catch` block pour une exception générale, autrement dit, une exception qui n’est pas liée à la fonction de bibliothèque spécifique. N’importe quel objet peut lever une `NullReferenceException`. Consultez la documentation de la fonction de bibliothèque si vous n’êtes pas sûr.
 
 Pendant le processus de débogage, il est bon de garder un particulier `assert` instruction jusqu'à ce que vous savez que vous avez besoin pour la remplacer par un correctif de code réel. Supposons que vous décidez que l’utilisateur peut rencontrer l’exception dans une version Release de l’application. Dans ce cas, vous devez refactoriser le code pour vous assurer que votre application ne lèvent une exception irrécupérable ou entraîner une autre erreur. Par conséquent, pour corriger ce code, remplacez le code suivant :
 
@@ -276,7 +279,7 @@ Bogues d’un autre type incluent du code inefficace qui incite votre applicatio
 
 ## <a name="sample-code"></a> Exemple de code
 
-Le code suivant a des bogues que vous pouvez corriger à l’aide de l’IDE Visual Studio. L’application ici est une application simple qui simule l’obtention de données JSON à partir d’une opération, la désérialisation des données à un objet et la mise à jour d’une simple base de données en mémoire avec les nouvelles données.
+Le code suivant a des bogues que vous pouvez corriger à l’aide de l’IDE Visual Studio. L’application ici est une application simple qui simule l’obtention de données JSON à partir d’une opération, la désérialisation des données à un objet et la mise à jour d’une liste simple avec les nouvelles données.
 
 ```csharp
 using System;
