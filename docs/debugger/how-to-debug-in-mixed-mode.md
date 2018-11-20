@@ -1,7 +1,7 @@
 ﻿---
 title: 'Comment : déboguer en Mode mixte | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182674"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295473"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Comment : déboguer en mode mixte
 Les procédures suivantes décrivent comment activer le débogage de code managé et natif simultanément, également appelé en mode mixte. Il existe deux scénarios de débogage en mode mixte :  
@@ -58,9 +58,12 @@ Si vous n’avez pas accès au projet de l’appel d’une application, vous pou
    
 1. Sélectionnez le **déboguer** onglet, puis sélectionnez **activer le débogage du code natif**.
    
-1. Utilisez **fichier** > **enregistrer les éléments sélectionnés** ou **Ctrl + S** pour enregistrer les modifications.
+1. Fermez la page de propriétés pour enregistrer les modifications.
 
    ![Activer le débogage du code natif](../debugger/media/dbg-mixed-mode-from-csharp.png "activer le débogage du code natif")
   
+>[!NOTE]
+>Dans la plupart des versions de Visual Studio 2017, vous devez utiliser le *launchSettings.json* fichier au lieu de propriétés du projet pour activer le débogage en mode mixte pour le code natif dans une application .NET Core. Pour plus d’informations, consultez [déboguer le code managé et natif](../debugger/how-to-debug-managed-and-native-code.md).
+
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour déboguer à partir d’un projet DLL](../debugger/how-to-debug-from-a-dll-project.md)

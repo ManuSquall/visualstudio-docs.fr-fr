@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671727"
 ---
 # <a name="custom-xml-parts-overview"></a>Vue d’ensemble de parties XML personnalisée
   Vous pouvez incorporer des données XML dans des documents pour certaines applications Microsoft Office. Lorsque vous incorporez des données XML dans un document, elles sont appelées une *partie XML personnalisée*.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325001"
   
  Pour plus d'informations sur la structure d'Open XML et des parties XML personnalisées, consultez les articles suivants :  
   
--   [Présentation des formats de fichier Open XML Office (2007)](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Présentation des formats de fichier Open XML Office (2007)](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Comment : manipuler des documents aux formats Open XML](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Comment : manipuler des documents aux formats Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [Procédure pas à pas : Format de Word 2007 XML](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [Procédure pas à pas : Format de Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Créer des documents Word 2007 à l’aide des formats Open XML](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Créer des documents Word 2007 à l’aide des formats Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Excel, Word et PowerPoint vous permettent également d'utiliser les parties XML personnalisées dans des documents enregistrés dans les formats de fichier binaires. Toutefois, si un document est enregistré dans un format binaire, vous ne pouvez pas ajouter ni modifier de parties XML personnalisées sans démarrer l'application Microsoft Office.  
@@ -76,7 +76,7 @@ ms.locfileid: "49325001"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modifier des parties XML sans démarrer l’application Office  
  Vous pouvez ajouter ou modifier une partie XML personnalisée sans démarrer Excel, PowerPoint ni Word. Cela est utile si vous souhaitez utiliser les données XML d'un document sur un ordinateur qui ne dispose pas des applications Microsoft Office, tel qu'un serveur.  
   
- Pour ajouter une partie XML personnalisée sans démarrer Microsoft Office, utilisez les classes du Kit de développement logiciel (SDK) Open XML. Ces classes ont été conçues pour fournir l'accès au contenu Open XML spécifique aux documents Office. Par exemple, pour ajouter une partie XML personnalisée à un classeur Excel, vous utilisez le [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) méthode d’un [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) objet. Pour plus d’informations, consultez [SDK Open XML](/office/open-xml/open-xml-sdk).  
+ Pour ajouter une partie XML personnalisée sans démarrer Microsoft Office, utilisez les classes du Kit de développement logiciel (SDK) Open XML. Ces classes ont été conçues pour fournir l'accès au contenu Open XML spécifique aux documents Office. Par exemple, pour ajouter une partie XML personnalisée à un classeur Excel, vous utilisez le <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> méthode d’un <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> objet. Pour plus d’informations, consultez [SDK Open XML](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Lier des parties XML personnalisées aux contrôles de contenu Word  
  Vous pouvez lier des contrôles de contenu d'une solution Word à des éléments figurant dans une partie XML personnalisée. Quand un contrôle de contenu est lié à une partie XML personnalisée, les données figurant dans la partie XML personnalisée s'affichent dans l'interface utilisateur du contrôle de contenu. Si un utilisateur modifie le texte du contrôle, l'élément XML correspondant est automatiquement mis à jour. De la même façon, si les valeurs des éléments figurant dans les parties XML personnalisées sont modifiées, les contrôles de contenu liés aux éléments XML affichent les nouvelles données. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).  
@@ -87,5 +87,3 @@ ms.locfileid: "49325001"
  [Comment : ajouter des parties XML personnalisées à des documents à l’aide de compléments VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Contrôles de contenu](../vsto/content-controls.md)   
  [Procédure pas à pas : Lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  

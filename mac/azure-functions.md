@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: f014eb4782fabce6517009e448d5878dd66700c7
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "43224412"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295941"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
-Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
+Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -26,12 +26,12 @@ Pour créer et déployer des fonctions, vous devez également disposer d’un ab
 
 ## <a name="creating-your-first-azure-functions-project"></a>Création d’un premier projet Azure Functions
 
-1. Dans Visual Studio pour Mac, sélectionnez **Fichier > Nouvelle solution**. 
+1. Dans Visual Studio pour Mac, sélectionnez **Fichier > Nouvelle solution**.
 2. Dans la boîte de dialogue Nouveau projet, sélectionnez le modèle Azure Functions sous **Cloud > Général**, puis cliquez sur **Suivant** :
 
     ![Boîte de dialogue Nouveau projet montrant l’option Azure Functions](media/azure-functions-image1.png)
 
-3. Sélectionnez le modèle Azure Functions initial à utiliser, entrez le nom de la fonction, puis cliquez sur **Suivant**. 
+3. Sélectionnez le modèle Azure Functions initial à utiliser, entrez le nom de la fonction, puis cliquez sur **Suivant**.
 
     ![Boîte de dialogue Nouveau projet montrant les modèles de fonctions Azure Functions](media/azure-functions-image2.png)
 
@@ -49,9 +49,9 @@ Visual Studio pour Mac crée un projet .NET Standard qui inclut une fonction par
 
 Le nouveau projet contient les fichiers suivants :
 
-* **votre-nom-de-fonction.cs** - cette classe contient du code réutilisable pour la fonction que vous avez sélectionnée. Elle contient un attribut **FunctionName** avec le nom de la fonction, ainsi qu’un attribut déclencheur, qui spécifie ce qui déclenche la fonction (par exemple une requête HTTP). Pour plus d’informations sur la méthode de fonction, consultez l’article [Informations de référence pour les développeurs C# sur Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library).
-* **host.json** : ce fichier décrit les options de configuration globale pour l’hôte Functions. Pour obtenir un exemple de fichier et des informations sur les paramètres disponibles pour ce fichier, consultez [Informations de référence sur le fichier host.json pour Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-host-json).
-* **local.settings.json** : ce fichier contient tous les paramètres nécessaires pour exécuter des fonctions localement. Ces paramètres sont utilisés par Azure Functions Core Tools. Pour plus d’informations, consultez [Fichier de paramètres locaux](https://docs.microsoft.com/azure/azure-functions/functions-run-local#local-settings-file) dans l’article sur Azure Functions Core Tools.
+* **votre-nom-de-fonction.cs** - cette classe contient du code réutilisable pour la fonction que vous avez sélectionnée. Elle contient un attribut **FunctionName** avec le nom de la fonction, ainsi qu’un attribut déclencheur, qui spécifie ce qui déclenche la fonction (par exemple une requête HTTP). Pour plus d’informations sur la méthode de fonction, consultez l’article [Informations de référence pour les développeurs C# sur Azure Functions](/azure/azure-functions/functions-dotnet-class-library).
+* **host.json** : ce fichier décrit les options de configuration globale pour l’hôte Functions. Pour obtenir un exemple de fichier et des informations sur les paramètres disponibles pour ce fichier, consultez [Informations de référence sur le fichier host.json pour Azure Functions](/azure/azure-functions/functions-host-json).
+* **local.settings.json** : ce fichier contient tous les paramètres nécessaires pour exécuter des fonctions localement. Ces paramètres sont utilisés par Azure Functions Core Tools. Pour plus d’informations, consultez [Fichier de paramètres locaux](/azure/azure-functions/functions-run-local#local-settings-file) dans l’article sur Azure Functions Core Tools.
 
 Une fois que vous avez créé votre projet Azure Functions dans Visual Studio pour Mac, vous pouvez tester la fonction déclenchée par HTTP par défaut à partir de votre ordinateur local.
 
@@ -63,9 +63,9 @@ Dans la mesure où Visual Studio pour Mac prend en charge Azure Functions, vous 
 
     ![Bouton de démarrage du débogage dans Visual Studio pour Mac](media/azure-functions-run.png)
 
-1. L’exécution du projet démarre le débogage local sur la fonction Azure et ouvre une nouvelle fenêtre de terminal, comme l’illustre l’image suivante : 
+1. L’exécution du projet démarre le débogage local sur la fonction Azure et ouvre une nouvelle fenêtre de terminal, comme l’illustre l’image suivante :
 
-    ![Fenêtre de terminal montrant la sortie de la fonction](media/azure-functions-terminal.png) 
+    ![Fenêtre de terminal montrant la sortie de la fonction](media/azure-functions-terminal.png)
 
     Copiez l’URL de la sortie.
 
@@ -87,7 +87,7 @@ Les modèles de fonctions vous permettent de créer rapidement des fonctions à 
 
     Une liste de modèles Azure Functions est fournie dans la section [Modèles de fonctions disponibles](#available-function-templates).
 
-Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions à votre projet d’application de fonction. Chaque fonction du projet peut avoir un déclencheur différent, mais une fonction doit avoir un seul déclencheur. Pour plus d’informations, consultez [Concepts des déclencheurs et liaisons Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions à votre projet d’application de fonction. Chaque fonction du projet peut avoir un déclencheur différent, mais une fonction doit avoir un seul déclencheur. Pour plus d’informations, consultez [Concepts des déclencheurs et liaisons Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
@@ -100,8 +100,8 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions
     |---------|---------|
     |**Nom de l’App Service**|Nom global unique qui identifie votre nouvelle application de fonction.|
     |**Abonnement**|Abonnement Azure à utiliser.|
-    |**[Groupe de ressources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)**|Nom du groupe de ressources dans lequel créer votre application de fonction. Choisissez **+** pour créer un groupe de ressources.|
-    |**[Plan de service](https://docs.microsoft.com/azure/azure-functions/functions-scale)**|Choisissez un plan existant, ou créez un plan personnalisé. Choisissez un emplacement dans une région proche de chez vous, ou proche d’autres services auxquels vos fonctions ont accès.|
+    |**[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)**|Nom du groupe de ressources dans lequel créer votre application de fonction. Choisissez **+** pour créer un groupe de ressources.|
+    |**[Plan de service](/azure/azure-functions/functions-scale)**|Choisissez un plan existant, ou créez un plan personnalisé. Choisissez un emplacement dans une région proche de chez vous, ou proche d’autres services auxquels vos fonctions ont accès.|
 
     > [!CAUTION]
     > Il existe un bogue dans la version 7.6 de Visual Studio pour Mac, qui entraîne l’échec de la publication avec une erreur de provisionnement, si vous essayez de créer un plan de service personnalisé où **Tarification** a la valeur **Consommation**. Ce problème sera corrigé dans le prochain Service Release.
@@ -113,7 +113,7 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions
 6. Cliquez sur **Créer** pour créer une application de fonction, ainsi que les ressources connexes dans Azure avec ces paramètres, et déployer votre code de projet de fonction.
 
 7. Durant la publication, une boîte de dialogue vous invite éventuellement à « Mettre à jour la version de Functions sur Azure ». Cliquez sur **Oui** :
- 
+
     ![Option de menu Publier sur Azure](media/azure-functions-image12.png)
 
 > [!CAUTION]
@@ -139,7 +139,7 @@ Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTEN
 
 ## <a name="available-function-templates"></a>Modèles de fonctions disponibles
 
-- **GitHub Trigger** : répond aux événements qui se produisent dans vos dépôts GitHub. Pour plus d’informations, consultez [l’article Azure Functions sur GitHub](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function).
+- **GitHub Trigger** : répond aux événements qui se produisent dans vos dépôts GitHub. Pour plus d’informations, consultez [l’article Azure Functions sur GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function).
     - GitHub commenter : cette fonction est exécutée quand elle reçoit un webhook GitHub pour un problème ou une demande de tirage (pull request), et ajoute un commentaire.
     - WebHook GitHub - Cette fonction est exécutée quand elle reçoit un Webhook GitHub.
 
@@ -150,16 +150,16 @@ Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTEN
     - Http Trigger with parameters
 
 
-- **Timer** : exécute le nettoyage ou d’autres tâches de traitement par lots selon une planification prédéfinie. Ce modèle accepte deux champs : un nom et une planification (expression CRON de six champs). Pour plus d’informations, consultez [l’article Azure Functions sur les minuteurs](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function).
+- **Timer** : exécute le nettoyage ou d’autres tâches de traitement par lots selon une planification prédéfinie. Ce modèle accepte deux champs : un nom et une planification (expression CRON de six champs). Pour plus d’informations, consultez [l’article Azure Functions sur les minuteurs](/azure/azure-functions/functions-create-scheduled-function).
 
 
-- **Queue Trigger** : cette fonction répond aux messages à mesure qu’ils arrivent dans la file d’attente Stockage Azure. En plus du nom de fonction, ce modèle accepte un **chemin** (nom de la file d’attente à partir de laquelle le message est lu) et une **connexion** de compte de stockage (nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage). Pour plus d’informations, consultez [l’article Azure Functions sur Stockage File d’attente](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Queue Trigger** : cette fonction répond aux messages à mesure qu’ils arrivent dans la file d’attente Stockage Azure. En plus du nom de fonction, ce modèle accepte un **chemin** (nom de la file d’attente à partir de laquelle le message est lu) et une **connexion** de compte de stockage (nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage). Pour plus d’informations, consultez [l’article Azure Functions sur Stockage File d’attente](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Blob Trigger** : traite les objets blob Stockage Azure quand ils sont ajoutés à un conteneur. En plus du nom de fonction, ce modèle accepte des propriétés de chemin et de connexion. La propriété de chemin correspond au chemin dans le compte de stockage surveillé par le déclencheur. Le compte de connexion correspond au nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage. Pour plus d’informations, consultez [l’article Azure Functions sur Stockage Blob](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Blob Trigger** : traite les objets blob Stockage Azure quand ils sont ajoutés à un conteneur. En plus du nom de fonction, ce modèle accepte des propriétés de chemin et de connexion. La propriété de chemin correspond au chemin dans le compte de stockage surveillé par le déclencheur. Le compte de connexion correspond au nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage. Pour plus d’informations, consultez [l’article Azure Functions sur Stockage Blob](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **Generic WebHook** : cette fonction simple s’exécute chaque fois qu’elle reçoit une demande d’un service prenant en charge les webhooks. Pour plus d’informations, consultez l’[article Azure Functions sur les Webhooks génériques](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **Generic WebHook** : cette fonction simple s’exécute chaque fois qu’elle reçoit une demande d’un service prenant en charge les webhooks. Pour plus d’informations, consultez l’[article Azure Functions sur les Webhooks génériques](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Durable functions orchestration** : les fonctions durables vous permettent d’écrire des fonctions avec état dans un environnement serverless. L’extension gère l’état, les points de contrôle et les redémarrages pour vous. Pour plus d’informations, consultez les guides Azure Functions sur [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview).
+- **Durable functions orchestration** : les fonctions durables vous permettent d’écrire des fonctions avec état dans un environnement serverless. L’extension gère l’état, les points de contrôle et les redémarrages pour vous. Pour plus d’informations, consultez les guides Azure Functions sur [Durable Functions](/azure/azure-functions/durable-functions-overview).
 
 - **Image Resizer** : cette fonction crée des images redimensionnées chaque fois qu’un objet blob est ajouté à un conteneur. Le modèle accepte un chemin et une chaîne de connexion pour le déclencheur, une petite image de sortie et une moyenne image de sortie.
 

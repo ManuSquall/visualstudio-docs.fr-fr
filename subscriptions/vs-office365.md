@@ -9,12 +9,12 @@ description: Découvrez l’avantage Office 365 inclus dans certains abonnement
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908390"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244461"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 dans les abonnements Visual Studio Subscription
 
@@ -25,15 +25,24 @@ Donnez le meilleur de vous-même. Travaillez partout où vous le souhaitez avec 
 Suivez ces étapes pour télécharger et activer Office 365 :
 1. Connectez-vous à votre abonnement Visual Studio Enterprise.  
 2. Cliquez sur l’onglet **Téléchargements**.
-3. La liste de téléchargements recommandés s’affiche. Dans la liste Office, sélectionnez **Office Professionnel Plus 2019**.
-0. Deux listes s’affichent.  La liste Office 365 est la deuxième.  Vérifiez que la première et la dernière listes déroulantes, qui déterminent le type de support et d’architecture, sont respectivement **UNK** et **OTH**.   
-0. Pour installer Office 365, il vous faut une clé de produit.  Cliquez sur le lien **Obtenir une clé** sous la deuxième liste.
-0. Une fenêtre volante affiche toutes les clés que vous avez déjà demandées.  Pour obtenir une nouvelle clé, cliquez sur **Demander une clé**.
+3. La liste de téléchargements recommandés s’affiche. Dans la liste Office, sélectionnez **Office 365**. 
+   > [!div class="mx-imgBorder"]
+   > ![Téléchargements Office 365](_img/vs-office365/vs-office365-downloads.png)
+0. Pour installer Office 365, il vous faut une clé de produit.  Cliquez sur le lien **Obtenir une clé** sous la liste Office 365.
+   > [!div class="mx-imgBorder"]
+   > ![Obtenir une clé de produit Office 365](_img/vs-office365/vs-office365-get-key.png)
+0. Une fenêtre volante affiche toutes les clés que vous avez déjà revendiquées, ainsi que celles qui sont disponibles.  Pour obtenir une nouvelle clé, cliquez sur **Claim key** (Revendiquer une clé) sous la liste **Office Professionnel Plus 2019**.
+   > [!div class="mx-imgBorder"]
+   > ![Revendiquer une clé de produit Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Enregistrez la clé que vous avez demandée. (Vous pourrez toujours revenir à cette liste pour l’afficher à nouveau.)
 0. Fermez la fenêtre volante.
 0. Cliquez sur le bouton **Télécharger**. 
+   > [!div class="mx-imgBorder"]
+   > ![Démarrer le téléchargement d’Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Connectez-vous avec votre compte Microsoft. (Si vous avez déjà ouvert une session, cliquez sur **Suivant**.)
 0. Entrez votre clé de produit, votre pays ou région et votre langue, puis cliquez sur **Suivant**.
+   > [!div class="mx-imgBorder"]
+   > ![Entrer la clé de produit Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Cliquez à nouveau sur **Suivant**.
 0. Cliquez sur **Installer** pour installer les applications Office. 
 

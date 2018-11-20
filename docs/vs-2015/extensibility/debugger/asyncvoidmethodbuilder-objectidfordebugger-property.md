@@ -15,12 +15,12 @@ ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e646b4044b77cdf62b0abbc2ae6dea008fed554
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83cd91d718bb1f1ddb998687261fdedd1572ac75
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208235"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787307"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propriété AsyncVoidMethodBuilder.ObjectIdForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

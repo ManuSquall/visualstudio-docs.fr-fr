@@ -15,12 +15,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2669571fee0ea9f43c06ba9ec7526d0716931fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b86f33390068b04d9e54c0022e8adeb77ed4700f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239926"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720756"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Procédure pas à pas : accès à l’objet DTE à partir d’une extension de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

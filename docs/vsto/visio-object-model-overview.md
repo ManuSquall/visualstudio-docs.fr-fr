@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du modèle d’objet Visio
+title: Présentation du modèle objet de Visio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,26 +20,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0da6dac3ffde6e6394546e78462205eb4fa08c8c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671402"
 ---
-# <a name="visio-object-model-overview"></a>Vue d’ensemble du modèle d’objet Visio
+# <a name="visio-object-model-overview"></a>Présentation du modèle objet de Visio
   Pour développer les solutions Office pour Microsoft Office Visio, vous pouvez interagir avec le modèle objet Visio. Ce modèle objet se compose de classes et d'interfaces qui sont fournies dans l'assembly PIA de Visio et définies dans l'espace de noms `Microsoft.Office.Interop.Visio`.  
   
  Cette rubrique propose une brève vue d'ensemble du modèle objet Excel. Pour plus d'informations sur l'utilisation du modèle objet Visio pour exécuter des tâches dans les projets Office, consultez les rubriques suivantes :  
   
 -   [Travailler avec des documents Visio](../vsto/working-with-visio-documents.md)  
   
--   [Travailler avec les formes Visio](../vsto/working-with-visio-shapes.md)  
+-   [Utilisez des formes Visio](../vsto/working-with-visio-shapes.md)  
   
 ## <a name="understand-the-visio-object-model"></a>Comprendre le modèle objet Visio  
- Visio fournit de nombreux objets avec lesquels vous pouvez interagir. Ces objets sont organisés selon une hiérarchie qui suit étroitement l'interface utilisateur. En haut de la hiérarchie se trouve l'objet [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx) . Cet objet représente l'instance en cours de Visio. Le `Microsoft.Office.Interop.Visio.Application` objet contient la `Microsoft.Office.Interop.Visio.Document` et `Microsoft.Office.Interop.Visio.Page` objets, ainsi que les `Microsoft.Office.Interop.Visio.Documents` et `Microsoft.Office.Interop.Visio.Pages` collections. Chacun de ces objets et collections possède de nombreuses méthodes et propriétés auxquelles vous pouvez accéder pour le manipuler et interagir avec lui.  
+ Visio fournit de nombreux objets avec lesquels vous pouvez interagir. Ces objets sont organisés selon une hiérarchie qui suit étroitement l'interface utilisateur. En haut de la hiérarchie se trouve l'objet [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) . Cet objet représente l'instance en cours de Visio. Le `Microsoft.Office.Interop.Visio.Application` objet contient la `Microsoft.Office.Interop.Visio.Document` et `Microsoft.Office.Interop.Visio.Page` objets ainsi que la `Microsoft.Office.Interop.Visio.Documents` et `Microsoft.Office.Interop.Visio.Pages` collections. Chacun de ces objets et collections possède de nombreuses méthodes et propriétés auxquelles vous pouvez accéder pour le manipuler et interagir avec lui.  
   
- Pour plus d’informations, consultez la documentation de référence VBA [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx), [Microsoft.Office.Interop.Visio.Document](https://msdn.microsoft.com/library/office/ff765575.aspx), et [ Microsoft.Office.Interop.Visio.Page](https://msdn.microsoft.com/library/office/ff767035.aspx) objets, ainsi que les [Microsoft.Office.Interop.Visio.Documents](https://msdn.microsoft.com/library/office/ff768812.aspx) et [Microsoft.Office.Interop.Visio.Pages](https://msdn.microsoft.com/library/office/ff766165.aspx) Collections.  
+ Pour plus d’informations, consultez la documentation de référence VBA [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application), [Microsoft.Office.Interop.Visio.Document](/office/vba/api/Visio.Document), et [ Microsoft.Office.Interop.Visio.Page](/office/vba/api/Visio.Page) objets, ainsi que la [Microsoft.Office.Interop.Visio.Documents](/office/vba/api/Visio.Documents) et [Microsoft.Office.Interop.Visio.Pages](/office/vba/api/Visio.Pages) Collections.  
   
  Les sections suivantes décrivent brièvement les objets de niveau supérieur et la façon dont ils interagissent les uns avec les autres. Ces objets incluent les éléments suivants :  
   
@@ -62,10 +62,10 @@ ms.locfileid: "34767830"
 ### <a name="page-object"></a>Page (objet)  
  L’objet Microsoft.Office.Interop.Visio.Page représente la zone de dessin d’une page de premier plan ou d’arrière-plan. Vous pouvez utiliser la propriété `Microsoft.Office.Interop.Visio.Page.Background` pour déterminer si une page est une page de premier plan ou d'arrière-plan.  
   
- Pour créer des formes, vous pouvez utiliser les méthodes qui incluent les méthodes `Microsoft.Office.Interop.Visio.Page.DrawSpline` et `Microsoft.Office.Interop.Visio.Page.DrawOval`. En outre, vous pouvez récupérer des masques de stencils et placer ces formes sur une page à l'aide des méthodes `Microsoft.Office.Interop.Visio.Page.Drop` ou `Microsoft.Office.Interop.Visio.Page.DropMany`.  
+ Pour créer des formes, vous pouvez utiliser les méthodes qui incluent les méthodes `Microsoft.Office.Interop.Visio.Page.DrawSpline` et `Microsoft.Office.Interop.Visio.Page.DrawOval`. En outre, vous pouvez récupérer des formes de base de gabarits et placer ces formes sur une page à l'aide des méthodes `Microsoft.Office.Interop.Visio.Page.Drop` ou `Microsoft.Office.Interop.Visio.Page.DropMany`.  
   
 ## <a name="use-the-visio-object-model-documentation"></a>Utilisez la documentation du modèle objet Visio  
- Pour obtenir des informations complètes sur le modèle objet Visio, vous pouvez vous reporter à la référence du modèle objet Visio VBA. La documentation du modèle objet VBA présente le modèle objet Visio tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [de référence du modèle objet Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199775).  
+ Pour obtenir des informations complètes sur le modèle objet Visio, vous pouvez vous reporter à la référence du modèle objet Visio VBA. La documentation du modèle objet VBA présente le modèle objet Visio tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [référence du modèle objet Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199775).  
   
  Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Visio. Par exemple, le `Document` objet dans la référence du modèle objet VBA correspond au type Microsoft.Office.Interop.Visio.Document dans l’assembly PIA Visio. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans documentation de référence en Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet de complément VSTO Visio créé à l'aide de Visual Studio.  
   
@@ -82,6 +82,6 @@ ms.locfileid: "34767830"
 ## <a name="see-also"></a>Voir aussi  
  [Solutions Visio](../vsto/visio-solutions.md)   
  [Travailler avec des documents Visio](../vsto/working-with-visio-documents.md)   
- [Travailler avec les formes Visio](../vsto/working-with-visio-shapes.md)  
+ [Utilisez des formes Visio](../vsto/working-with-visio-shapes.md)  
   
   

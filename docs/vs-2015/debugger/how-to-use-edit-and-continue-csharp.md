@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Edit and Continue [C#], about Edit and Continue
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 536a54958154a8ec4741ea979f70caf7183dbd12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4106a8bcaec8890192fdc33b9db0d66c12d8b07d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298335"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789159"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Comment : utiliser Modifier & Continuer (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Avec Modifier & Continuer pour C#, vous pouvez modifier votre code en mode arrê
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Pour activer ou désactiver Modifier & Continuer  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1.  Dans le menu **Outils**, cliquez sur **Options**.  
   
 2.  Dans le **Options** boîte de dialogue, développez le **débogage** nœud, puis sélectionnez **Modifier & Continuer**.  
   

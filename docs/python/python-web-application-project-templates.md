@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219846"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349333"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
 Python dans Visual Studio prend en charge le développement de projets web dans les frameworks Bottle, Django et Flask, via des modèles de projet et un lanceur de débogueur qui peuvent être configurés pour gérer différents frameworks. Ces modèles comprennent un fichier *requirements.txt* permettant de déclarer les dépendances nécessaires. Au moment de la création d’un projet à partir de l’un de ces modèles, Visual Studio vous invite à installer ces packages (voir [Installer les spécifications du projet](#install-project-requirements) plus loin dans cet article).
 
-Vous pouvez également utiliser le modèle **Projet web** générique pour d’autres frameworks, comme Pyramid. Dans ce cas, aucun framework n’est installé avec le modèle. Vous devrez installer les packages nécessaires dans l’environnement que vous utilisez pour le projet (voir [Gérer les environnements Python](managing-python-environments-in-visual-studio.md)).
+Vous pouvez également utiliser le modèle **Projet web** générique pour d’autres frameworks, comme Pyramid. Dans ce cas, aucun framework n’est installé avec le modèle. Installez plutôt les packages nécessaires dans l’environnement que vous utilisez pour le projet (consultez [Fenêtre Environnements Python - Onglet Package](python-environments-window-tab-reference.md#packages-tab)).
 
 Pour plus d’informations sur le déploiement d’une application web Python sur Azure, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

@@ -24,7 +24,7 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
  Voici la fenêtre Historique des pixels :  
   
- ![Pixel avec trois événements Direct3D dans son historique. ] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Pixel avec trois événements Direct3D dans son historique. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Présentation de la fenêtre Historique des pixels  
  À l'aide de l'Historique des pixels, vous pouvez analyser la façon dont un pixel spécifique de la cible de rendu est affecté par des événements Direct3D dans un frame. Vous pouvez identifier un problème de rendu d'un événement Direct3D spécifique, même quand d'autres évènements (ou d'autres primitives du même événement) continuent à changer la valeur de la couleur finale du pixel. Par exemple, un pixel peut être rendu de manière incorrecte et être ensuite masqué par un autre pixel, semi-transparent, ce qui entraîne un mélange de leurs couleurs dans le framebuffer. Ce genre de problème peut être difficile à diagnostiquer si vous n'avez que le contenu final de la cible de rendu comme repère.  
@@ -42,9 +42,9 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
 |Icône|Raison de l'exclusion|  
 |----------|--------------------------|  
-|![Icône d’échec au test de profondeur. ] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|  
-|![Icône d’échec au test scissor. ] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|  
-|![Icône d’échec au test stencil. ] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|  
+|![Icône d’échec au test de profondeur. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|  
+|![Icône d’échec au test scissor. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|  
+|![Icône d’échec au test stencil. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|  
   
 ### <a name="draw-call-exclusion"></a>Exclusion d'appel de dessin  
  Si aucune des primitives d'un appel de dessin ne peut affecter la cible de rendu, car elles ne réussissent pas un test, l'appel de dessin ne peut pas être développé et une icône correspondant à la raison de l'exclusion s'affiche juste à côté. Les raisons de l'exclusion d'un appel de dessin ressemblent aux raisons de l'exclusion d'une primitive. En outre, leurs icônes sont similaires.  

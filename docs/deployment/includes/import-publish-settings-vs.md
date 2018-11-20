@@ -1,18 +1,18 @@
 
-1. Sur l’ordinateur où vous avez le projet ASP.NET ouvert dans Visual Studio, cliquez sur le projet dans l’Explorateur de solutions, puis choisissez **publier**.
+1. Sur l’ordinateur sur lequel le projet ASP.NET est ouvert dans Visual Studio, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions, puis choisissez **Publier**.
 
-1. Si vous avez déjà configuré des profils de publication, le **publier** volet s’affiche. Cliquez sur **créer nouveau profil**.
+1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Cliquez sur **Créer un profil**.
 
-1. Dans le **choisir une cible de publication** boîte de dialogue, cliquez sur **importer un profil**.
+1. Dans la boîte de dialogue **Choisir une cible de publication**, cliquez sur **Profil d’importation**.
 
-    ![Choisissez publier](../../deployment/media/tutorial-publish-tool-import-profile.png)
+    ![Choisir Publier](../../deployment/media/tutorial-publish-tool-import-profile.png)
 
 1. Accédez à l’emplacement du fichier de paramètres de publication que vous avez créé dans la section précédente.
 
-1. Dans le **importation publier un fichier de paramètres** boîte de dialogue, accédez à et sélectionnez le profil que vous avez créé dans la section précédente, puis cliquez sur **Open**.
+1. Dans la boîte de dialogue **Importer le fichier de paramètres de publication**, accédez au profil que vous avez créé dans la section précédente et sélectionnez-le, puis cliquez sur **Ouvrir**.
 
-    Visual Studio lance le processus de déploiement, et la fenêtre Sortie affiche la progression et les résultats.
+    Visual Studio commence le processus de déploiement, tandis que la fenêtre Sortie affiche la progression et les résultats.
 
-    Si vous obtenez des erreurs de tout un déploiement, cliquez sur **paramètres** pour modifier les paramètres. Modifier les paramètres et cliquez sur **Validate** pour tester les nouveaux paramètres. Si le nom d’hôte est introuvable, essayez de l’adresse IP au lieu du nom d’hôte dans le **Server** et **URL de Destination** champs.
+    Si vous obtenez des erreurs de déploiement, cliquez sur **Paramètres** pour modifier les paramètres. Modifiez les paramètres, puis cliquez sur **Valider** pour tester les nouveaux paramètres. Si le nom d’hôte est introuvable, essayez de l’adresse IP au lieu du nom d’hôte dans les champs **Serveur** et **URL de destination**.
 
     ![Modifier les paramètres dans l’outil de publication](../../deployment/media/tutorial-configure-publish-settings-in-tool.png)

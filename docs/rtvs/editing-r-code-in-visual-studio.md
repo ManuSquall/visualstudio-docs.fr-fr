@@ -1,7 +1,7 @@
 ---
-title: Modification du code R
+title: Modifier du code R
 description: Visual Studio offre une expérience de modification personnalisée pour R, tout en conservant toutes les fonctionnalités et la possibilité d’utiliser des extensions.
-ms.date: 01/24/2018
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235339"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220877"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 
-Les Outils R pour Visual Studio (RTVS) personnalisent l’expérience de modification dans Visual Studio spécifiquement pour R, tout en conservant toutes les fonctionnalités et la possibilité d’utiliser des extensions. (Par exemple, si vous préférez les combinaisons de touches VIM, vous pouvez installer la version gratuite de l’[extension VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) à partir de la galerie Visual Studio.)
+Les Outils R pour Visual Studio (RTVS) personnalisent l’expérience de modification dans Visual Studio spécifiquement pour R, tout en conservant toutes les fonctionnalités et la possibilité d’utiliser des extensions. (Par exemple, si vous préférez les combinaisons de touches VIM, vous pouvez installer la version gratuite de l’[extension VsVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim) à partir de la Place de marché Visual Studio.)
 
 Outre les fonctionnalités décrites dans cet article, consultez également [IntelliSense](r-intellisense.md), [Linting](linting-r-code.md), [Extraits de code](code-snippets-for-r.md) et [R Markdown](rmarkdown-with-r-in-visual-studio.md).
 

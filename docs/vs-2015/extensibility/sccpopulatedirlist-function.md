@@ -17,12 +17,12 @@ ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c58e374e6d22c5565f53a31c5731b35b73c43bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ebfe2e28eb020547c65afd603d1899ebde510a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755922"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Cette fonction détermine les répertoires et (éventuellement) les fichiers son
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-SCCRTN SccPopulateDirList(  
+SCCRTN SccPopulateDirList(  
    LPVOID        pContext,  
    LONG          nDirs,  
    LPCSTR*       lpDirPaths,  

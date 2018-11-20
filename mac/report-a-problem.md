@@ -6,12 +6,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: f02bd648f7e52a7ff82a2ab546f19e979eccf9e6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101119"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293612"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Guide pratique pour signaler un problème avec Visual Studio pour Mac
 
@@ -29,7 +29,7 @@ Ceci affiche la page web **Signaler un problème**. Vous pouvez utiliser cette p
 
 ![Page web Signaler un problème](media/report-problem-image2.png)
 
-Sélectionnez le bouton **Signaler un problème** sur la page web. 
+Sélectionnez le bouton **Signaler un problème** sur la page web.
 
 Si vous ne vous êtes pas encore connecté à l’application Communauté des développeurs, vous êtes invité à le faire dans la page suivante. Sélectionnez le bouton **Accepter** pour autoriser l’application Communauté des développeurs pour votre compte Microsoft :
 
@@ -41,4 +41,9 @@ Donnez un titre descriptif pour le problème, ainsi que des informations supplé
 
 ## <a name="provide-a-suggestion"></a>Fournir une suggestion
 
-Utilisez le lien **Fournir une suggestion** dans la page d’accueil. Ce lien vous donne accès à la page [UserVoice de Visual Studio pour Mac](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac). Vous pouvez ajouter ici de nouvelles demandes ou voter pour des demandes existantes.
+Utilisez le lien **Fournir une suggestion** dans la page d’accueil. Ce lien vous donne accès à la page [Suggérer une fonctionnalité de Visual Studio pour Mac](https://developercommunity.visualstudio.com/content/idea/post.html?space=41). Vous pouvez ajouter ici de nouvelles demandes ou voter pour des demandes existantes.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Signaler un problème avec Visual Studio (sur Windows)](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [Suggérer une fonctionnalité pour Visual Studio](/visualstudio/ide/suggest-a-feature)

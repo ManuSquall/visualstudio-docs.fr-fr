@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ed65437d82436473468a73d4cbce2a669a42328e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2fc72084434bf689e45651cbf8b1f029ab6d026
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739078"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Comment : trouver la clé de produit de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671091"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement COM, VSTO et VBA des compléments dans Office
   Si vous développez des compléments COM, VSTO ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela permet de s’assurer :
@@ -39,12 +39,12 @@ Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types in
 Si votre solution utilise une version antérieure de .NET, nous recommandons que vous mettez à jour votre solution pour utiliser .NET 4.0 ou version ultérieure. À l’aide de .NET 4.0 ou version ultérieure réduit les composants requis de runtime sur les versions plus récentes de Windows.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>Éviter en fonction des versions spécifiques d’Office  
-Si votre solution utilise une fonction qui est uniquement disponible dans les versions plus récentes d’Office, vérifiez que la fonctionnalité existe (si possible, au niveau de fonctionnalité) lors de l’exécution (par exemple, à l’aide d’exception de gestion des exceptions ou en vérifiant la version). Valider les versions minimales, au lieu des versions spécifiques, à l’aide d’API prises en charge dans le modèle objet, tel que le [Application.Version propriété](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Nous ne recommandons pas s’appuient sur les métadonnées binaires Office, les chemins d’installation ou les clés de Registre, car ceux-ci peuvent changer entre des installations, des environnements et des versions.
+Si votre solution utilise une fonction qui est uniquement disponible dans les versions plus récentes d’Office, vérifiez que la fonctionnalité existe (si possible, au niveau de fonctionnalité) lors de l’exécution (par exemple, à l’aide d’exception de gestion des exceptions ou en vérifiant la version). Valider les versions minimales, au lieu des versions spécifiques, à l’aide d’API prises en charge dans le modèle objet, tel que le [Application.Version propriété](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Nous ne recommandons pas s’appuient sur les métadonnées binaires Office, les chemins d’installation ou les clés de Registre, car ceux-ci peuvent changer entre des installations, des environnements et des versions.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Activer l’utilisation de Office 32 bits et 64 bits   
 Votre cible de build par défaut doit prendre en charge les (x86) 32 bits et 64 bits (x64), sauf si votre solution dépend des bibliothèques qui sont uniquement disponibles pour un nombre de bits spécifique. L’augmentation de la version 64 bits d’Office dans l’adoption, en particulier dans les environnements big data. Prise en charge 32 bits et 64 bits rend plus facile pour vos utilisateurs pour effectuer la transition entre les versions 32 bits et 64 bits d’Office.
 
-Lorsque vous écrivez du code VBA, utilisez 64 bits safe instructions declare et convertir des variables comme il convient. En outre, assurez-vous que les documents peuvent être partagées entre les utilisateurs qui exécutent des versions 32 bits ou 64 bits d’Office en fournissant le code pour chaque nombre de bits. Pour plus d’informations, consultez [64 bits de Visual Basic pour une vue d’ensemble des applications](https://msdn.microsoft.com/library/office/gg264421.aspx).
+Lorsque vous écrivez du code VBA, utilisez 64 bits safe instructions declare et convertir des variables comme il convient. En outre, assurez-vous que les documents peuvent être partagées entre les utilisateurs qui exécutent des versions 32 bits ou 64 bits d’Office en fournissant le code pour chaque nombre de bits. Pour plus d’informations, consultez [64 bits de Visual Basic pour une vue d’ensemble des applications](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 ## <a name="support-restricted-environments"></a>Prendre en charge les environnements restreints   
 Votre solution ne doit pas nécessiter de privilèges d’élévation de compte d’utilisateur ou administrateur. En outre, la solution ne doit pas dépendre définition ou la modification :

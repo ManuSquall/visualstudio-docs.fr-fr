@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117210"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348485"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
 Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans un fichier de code à l'aide d'une commande de menu contextuel ou une combinaison de touches d'accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés, tels que les blocs `try-finally` ou `if-else`, mais ils permettent d’insérer des classes ou des méthodes entières.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Extraits de code (Visual Studio pour Mac)](/visualstudio/mac/snippets).
 
 Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visual Basic, XML, T-SQL, etc. Pour afficher tous les extraits installés disponibles pour un langage, ouvrez le **Gestionnaire des extraits de code** à partir du menu **Outils** dans Visual Studio, puis choisissez le langage dans le menu déroulant situé dans la partie supérieure.
 
@@ -103,3 +106,4 @@ Si vous remplacez `newPropertyValue` par `m_property`, chaque instance de `newPr
 - [Extraits de code C#](../ide/visual-csharp-code-snippets.md)
 - [Extraits de code Visual C++](../ide/visual-cpp-code-snippets.md)
 - [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)
+- [Extraits de code (Visual Studio pour Mac)](/visualstudio/mac/snippets)

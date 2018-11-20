@@ -17,12 +17,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1d86f723ae4c9acc64dfe7643552b9a74b78963
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4dce6301e5f55dce2c9786033ca895e0ac43518
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254895"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721047"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Comment : mettre à jour une Extension Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

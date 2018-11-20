@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: 72effcf5-7251-4638-869a-e1bf9bc02e8b
 caps.latest.revision: 8
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: 081cd296f80518a4074a287efbac686e3c3f74d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa380249980701c35915ae8a742fd63bed55964f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224664"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721476"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Éléments présélectionnés d'une liste de saisie semi-automatique en C# #
 Ce contenu a été déplacé vers [listes de saisie semi-automatique en c#](../misc/completion-lists-in-csharp.md)

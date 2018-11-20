@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e48d777332c63859f84f56425c786b430018d1f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34547996"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348537"
 ---
 # <a name="debugging-xslt"></a>Débogage XSLT
 
@@ -33,4 +33,4 @@ Le [Générateur de profils XSLT](../xml-tools/xslt-profiler.md) est un outil qu
 - [Modification des feuilles de style XSLT](../xml-tools/editing-xslt-style-sheets.md) décrit l’utilisation de l’éditeur XML pour modifier les feuilles de style.
 - [Considérations sur la sécurité lorsque vous travaillez avec des données XML](../xml-tools/security-considerations-when-working-with-xml-data.md) traite des problèmes de sécurité que vous devez savoir sur lors de l’utilisation de l’éditeur XML ou du débogueur XSLT.
 - [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md) présente le débogueur Visual Studio.
-- [Référence XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) fournit une documentation de référence pour les fonctions et les éléments XSLT.
+- [Référence XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) fournit des documents de référence pour les fonctions et les éléments XSLT.

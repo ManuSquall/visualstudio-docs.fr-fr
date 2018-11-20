@@ -11,24 +11,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc842af3723a8b056d1de684bd798f4fda37cff8
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 395d8512536c5ea2470eeeed1d25bd9de4c2f581
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672130"
 ---
 # <a name="step-9-try-other-features"></a>Étape 9 : tester d'autres fonctionnalités
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.  
   
- Pour télécharger une version complète de l’exemple, consultez [Exemple complet de tutoriel de création d’un jeu de combinaisons](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+ Pour télécharger une version complète de l’exemple, consultez [Exemple complet de tutoriel de création d’un jeu de combinaisons](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
   
 ## <a name="to-try-other-features"></a>Pour essayer d’autres fonctionnalités  
 
 -   Remplacez les icônes et les couleurs par d'autres de votre choix.  
 
     > [!TIP]
-    >  Examinez la propriété [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor.aspx) du contrôle Label.  
+    >  Examinez la propriété [Forecolor](<xref:System.Windows.Forms.Control.ForeColor%2A>) du contrôle Label.  
 
 -   Ajoutez une horloge de jeu qui relèvera le temps requis par le joueur pour gagner.  
 
@@ -49,8 +49,8 @@ Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et le
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   Si vous êtes bloqué ou avez des questions liées à la programmation, essayez de publier votre question sur l'un des forums MSDN. Consultez le [forum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) et le [forum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).  
+-   Si vous êtes bloqué ou avez des questions liées à la programmation, essayez de publier votre question sur l'un des forums MSDN. Consultez le [forum Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) et le [forum Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral).
   
--   Des ressources vidéo d'apprentissage efficaces et gratuites sont à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en Visual C#, consultez [Notions de base de C# : développement pour grands débutants](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
+-   Des ressources vidéo d'apprentissage efficaces et gratuites sont à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en Visual C#, consultez [Notions de base de C# : développement pour grands débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).  
   
 -   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

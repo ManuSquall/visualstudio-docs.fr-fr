@@ -73,9 +73,9 @@ La première chose à prendre en compte lors de la stylisation de contrôles est
   
 -   Champs d’entrée doivent être dimensionnées en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni d’arbitrairement correspond à la longueur d’un champ long, par exemple, un chemin d’accès. Longueur peut être une indication à l’utilisateur de limitations concernant le nombre de caractères est autorisé dans le champ.  
   
-     ![Longueur de champ d’entrée incorrecte : il est peu probable que le nom sera ce long. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Longueur de champ d’entrée incorrecte : il est peu probable que le nom sera ce long.
+     ![Longueur de champ d’entrée incorrecte : il est peu probable que le nom sera ce long. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Longueur de champ d’entrée incorrecte : il est peu probable que le nom sera ce long.
   
-     ![Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.
+     ![Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Zones de liste déroulante et les listes déroulantes  
 Pour le comportement de l’interaction typique, suivez le [instructions de bureau de Windows pour les listes déroulantes et des zones de liste déroulante](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Pour le comportement de l’interaction typique, suivez le [instructions de bure
 #### <a name="layout"></a>Mise en page  
 Zones de liste déroulante et les listes déroulantes doivent être dimensionnés en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni d’arbitrairement correspond à la longueur d’un champ long, par exemple, un chemin d’accès.  
   
-![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui s’affichera. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui s’affichera.
+![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui s’affichera. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui s’affichera.
   
-![Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement longs. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement longs. 
+![Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement longs. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement longs. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Cases à cocher  
 Pour le comportement de l’interaction typique, suivez le [instructions de bureau de Windows pour les cases à cocher](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Pour le comportement de l’interaction typique, suivez le [instructions de bure
   
 -   Aligner les cases à cocher avec la ligne de base de la première ligne de texte.  
   
-     ![Incorrecte : la case à cocher est centrée sur le texte. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Incorrecte : la case à cocher est centrée sur le texte.
+     ![Incorrecte : la case à cocher est centrée sur le texte. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Incorrecte : la case à cocher est centrée sur le texte.
   
-     ![Correct : la case à cocher est aligné avec la première ligne du texte. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Correct : la case à cocher est aligné avec la première ligne du texte.
+     ![Correct : la case à cocher est aligné avec la première ligne du texte. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Correct : la case à cocher est aligné avec la première ligne du texte.
   
 ###  <a name="BKMK_RadioButtons"></a> Cases d’option  
 Pour le comportement de l’interaction typique, suivez le [instructions Windows Desktop pour les boutons radio](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Contrôles d’arborescence doivent être conforme à la conception de l’expan
 #### <a name="selection"></a>Sélection  
 Lorsqu’un nœud est sélectionné dans l’arborescence, la mise en surbrillance doit se développer pour la largeur totale du contrôle arborescence. Cela permet aux utilisateurs à identifier clairement quel élément qu’ils ont sélectionnées. Couleurs de la sélection doivent refléter le thème de Visual Studio actuel.  
   
-![Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence.
+![Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence.
   
-![Incorrect : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Incorrect : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence.
+![Incorrect : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Incorrect : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence.
   
 #### <a name="icons"></a>Icônes  
 Icônes doivent uniquement être utilisées dans les contrôles d’arborescence si ils permettent d’identifier visuellement les différences entre les éléments. En règle générale, les icônes doivent être utilisés uniquement dans les listes hétérogènes dans lequel les icônes communiquent les informations pour différencier les types d’éléments. Dans une liste homogène à l’aide des icônes peuvent fréquemment être vu comme un bruit et doit être évitée. Dans ce cas, l’icône de groupe (parent) peut transmettre le type d’éléments qu’il contient. L’exception à cette règle serait si l’icône est dynamique et est utilisée pour indiquer l’état.  
@@ -356,14 +356,14 @@ Icônes doivent uniquement être utilisées dans les contrôles d’arborescence
 #### <a name="scroll-bars"></a>Barres de défilement  
 Barres de défilement doivent toujours être masquées si le contenu tient dans le contrôle arborescence. Il est acceptable pour les barres de défilement pour être masquées ou semi-transparent dans une fenêtre de défilement et s’affichent lorsque la fenêtre contenant l’arborescence a le focus ou lors de pointage de l’arborescence afficher lui-même.  
   
-![Les deux barres de défilement horizontales et verticales sont affichées, car le contenu a dépassé les limites du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Les deux barres de défilement horizontales et verticales sont affichées, car le contenu a dépassé les limites du contrôle arborescence.
+![Les deux barres de défilement horizontales et verticales sont affichées, car le contenu a dépassé les limites du contrôle arborescence. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Les deux barres de défilement horizontales et verticales sont affichées, car le contenu a dépassé les limites du contrôle arborescence.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Interactions de vue d’arborescence  
   
 #### <a name="context-menus"></a>Menus contextuels  
 Un nœud d’arborescence peut révéler des options de sous-menu dans un menu contextuel. En règle générale, cela se produit lorsqu’un utilisateur a cliqué un élément ou appuyé sur la touche de Menu un clavier Windows avec l’élément sélectionné. Il est important que le nœud Obtient le focus et qu’il est sélectionné. Cela permet à l’utilisateur d’identifier quel élément auquel appartient le sous-menu.  
   
-![L’élément produisant a le focus de gains de menu contextuel pour notifier l’utilisateur auquel l’élément a été sélectionné. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />L’élément produisant a le focus de gains de menu contextuel pour notifier l’utilisateur auquel l’élément a été sélectionné.
+![L’élément produisant a le focus de gains de menu contextuel pour notifier l’utilisateur auquel l’élément a été sélectionné. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />L’élément produisant a le focus de gains de menu contextuel pour notifier l’utilisateur auquel l’élément a été sélectionné.
   
 #### <a name="keyboard"></a>Clavier  
 L’arborescence doit fournir la possibilité de sélectionner des éléments et développer/réduire les nœuds à l’aide du clavier. Cela garantit que la navigation répond à nos exigences en termes d’accessibilité.  

@@ -2,7 +2,7 @@
 title: Publier une application Node.js sur App Service Linux
 description: Vous pouvez publier des applications Node.js créées dans Visual Studio sur App Service Linux sur Azure.
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924769"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750765"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publier une application Node.js sur Azure (App Service Linux)
 
@@ -31,7 +31,7 @@ App Service Linux déploie un conteneur Linux Docker pour exécuter l’applicat
 
 Ce tutoriel montre comment créer une application Node.js à partir d’un modèle installé avec les outils Node.js pour Visual Studio, pousser le code vers un dépôt sur GitHub, puis provisionner Azure App Service par le biais du portail web Azure afin de pouvoir procéder au déploiement à partir du dépôt GitHub. Pour utiliser la ligne de commande afin de provisionner Azure App Service et d’envoyer le code à partir d’un dépôt Git local, consultez [Créer une application Node.js](/azure/app-service/containers/quickstart-nodejs).
 
-Dans ce tutoriel, vous apprendrez à :
+Dans ce didacticiel, vous apprendrez à :
 > [!div class="checklist"]
 > * Créer un projet Node.js
 > * Créer un dépôt GitHub pour le code
@@ -42,15 +42,19 @@ Dans ce tutoriel, vous apprendrez à :
 
 1. Créez une application TypeScript Express en utilisant la boîte de dialogue **Fichier** > **Nouveau projet**.
 
+1. Sous le nœud **TypeScript**, sélectionnez **Application Node.js Express 4 de base**.
+
     ![Créer une application TypeScript Express](../javascript/media/azure-ts-express-app.png)
 
-2. Appuyez sur **F5** pour générer et exécuter l’application, et vérifiez que tout s’exécute comme prévu.
+1. Cliquez sur **OK** pour créer le projet dans Visual Studio.
 
-3. Sélectionnez **Fichier** > **Ajouter au contrôle de code source** pour créer un dépôt Git local pour le projet.
+1. Appuyez sur **F5** pour générer et exécuter l’application, et vérifiez que tout s’exécute comme prévu.
+
+1. Sélectionnez **Fichier** > **Ajouter au contrôle de code source** pour créer un dépôt Git local pour le projet.
 
     À ce stade, une application Node.js utilisant le framework Express et écrite en TypeScript fonctionne et est archivée dans le contrôle de code source local.
 
-4. Modifiez le projet comme vous le souhaitez avant de procéder aux étapes suivantes.
+1. Modifiez le projet comme vous le souhaitez avant de procéder aux étapes suivantes.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Pousser le code de Visual Studio vers GitHub
 

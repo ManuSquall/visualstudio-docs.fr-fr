@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 077754b31b80575c4fbee78d0a2f19f87f82e481
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251573"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220890"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
@@ -90,7 +90,7 @@ Si Visual Studio ne parvient pas à trouver un emplacement source pour un point 
 
 ## <a name="breakpoints-not-hit"></a>Points d’arrêt non atteints
 
-Vérifiez que le script utilisé est correctement chargé/utilisé dans la scène Unity actuelle. Quittez à la fois Visual Studio et Unity, puis supprimez tous les fichiers générés (*.csproj, *.sln) et l’intégralité du dossier de bibliothèque.
+Vérifiez que le script utilisé est correctement chargé/utilisé dans la scène Unity actuelle. Quittez à la fois Visual Studio et Unity, puis supprimez tous les fichiers générés (\*.csproj, \*.sln) et l’intégralité du dossier Library.
 
 ## <a name="unable-to-debug-android-players"></a>Impossible de déboguer les lecteurs Android
 

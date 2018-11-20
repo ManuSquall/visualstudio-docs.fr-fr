@@ -13,14 +13,14 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: eae6b19d9901eb2a2d047b4c262b02a825c0f83b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303210"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751716"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd (erreurs)
 FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd dispose d’informations suffisantes pour effectuer une analyse partielle, il effectue l’analyse et signale les erreurs qui se sont produites. Le code d’erreur, qui est un entier 32 bits, contient une combinaison au niveau du bit des valeurs numériques qui correspondent aux erreurs.  

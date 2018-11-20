@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumFrameData::frameByRVA method
 ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e437d0b344436205dc924ed6deb6b54563dad401
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f486c40cd5e7a95d7e60954dfbfed737b4903e66
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850826"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743405"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Retourne un cadre par adresse virtuelle relative (RVA).
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT frameByRVA(   
+HRESULT frameByRVA(   
    DWORD           relativeVirtualAddress,  
    IDiaFrameData** frame  
 );  

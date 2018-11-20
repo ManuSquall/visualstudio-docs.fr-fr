@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Gestion de version dans Visual Studio | VSTS & TFS
+title: Gestion de version
 description: Guide pour bien démarrer avec la gestion de version dans Visual Studio
 keywords: VSTS, TFS, Gestion de version
 author: steved0x
@@ -12,23 +12,24 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: e37645f8960aae54907dffeb0bcb88848d9cd63f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 3640fba7d1ca3993841adb94dfdd08bc7d405e9b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320577"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348160"
 ---
 # <a name="version-control-in-visual-studio"></a>Gestion de version dans Visual Studio
 
 Les systèmes de gestion de version vous permettent de suivre les modifications apportées au code. À mesure que vous effectuez des modifications, le système de gestion de version prend une capture instantanée de vos fichiers. Le système de gestion de version enregistre cette capture instantanée définitivement afin que vous puissiez la rappeler ultérieurement si nécessaire. Visual Studio fournit [Git](/azure/devops/repos/git/index?view=vsts) et [Contrôle de version Team Foundation (TFVC)](/azure/devops/repos/tfvc/index?view=vsts). Pour choisir entre les deux systèmes, consultez [Choisir la gestion de version appropriée pour votre projet](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
+
 Git est le système de gestion de version actuellement le plus utilisé, et devient rapidement la norme dans ce domaine. Git est un système de gestion de version distribué. Cela signifie que votre copie locale du code est un référentiel de gestion de version complet. Ces dépôts locaux entièrement opérationnels facilitent le travail en mode hors connexion ou à distance. Vous validez votre travail localement, puis synchronisez votre copie du référentiel avec la copie sur le serveur. Ce paradigme diffère de la gestion de version centralisée où les clients doivent synchroniser le code avec un serveur avant de créer de nouvelles versions du code.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/azure/devops/git/what-is-git">
+        <a href="/azure/devops/git/what-is-git">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -46,7 +47,7 @@ Git est le système de gestion de version actuellement le plus utilisé, et devi
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -56,7 +57,7 @@ Git est le système de gestion de version actuellement le plus utilisé, et devi
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Bien démarrer avec Git et Visual Studio</h3>
+                        <h3>Bien démarrer avec Git dans Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@ Git est le système de gestion de version actuellement le plus utilisé, et devi
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/clone">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -107,7 +108,7 @@ Le contrôle de version Team Foundation (TFVC, Team Foundation Version Control) 
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -125,7 +126,7 @@ Le contrôle de version Team Foundation (TFVC, Team Foundation Version Control) 
         </a>
     </li>
    <li>
-        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -144,9 +145,9 @@ Le contrôle de version Team Foundation (TFVC, Team Foundation Version Control) 
     </li>
 </ul>
 
-
 ## <a name="resources"></a>Ressources
 
 - [Livre Pro Git](https://git-scm.com/book/en/v2)
 - [Planifier votre migration vers Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
 - [Migrer de TFVC vers Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
+- [Gestion de version (Visual Studio pour Mac)](/visualstudio/mac/version-control)

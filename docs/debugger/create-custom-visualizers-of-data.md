@@ -1,7 +1,7 @@
 ---
-title: Créer des visualiseurs de données personnalisés | Microsoft Docs
+title: Créer des visualiseurs de données personnalisées | Microsoft Docs
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 11/07/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -21,72 +21,72 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859bf6493a06663a8977898ffa07d600b826d458
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854310"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607820"
 ---
-# <a name="create-custom-visualizers-of-data"></a>Créer des visualiseurs de données personnalisés
- Les visualiseurs sont des composants de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface utilisateur du débogueur. Un *visualiseur* crée une boîte de dialogue ou une autre interface pour afficher une variable ou un objet d’une manière qui convient à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat tel qu'il apparaîtrait dans une fenêtre du navigateur ; un visualiseur bitmap interprète une structure bitmap et affiche le graphique représenté. Certains visualiseurs vous permettent de modifier et de consulter les données.
+# <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisées 
+ Un *visualiseur* fait partie de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface utilisateur du débogueur qui affiche une variable ou un objet d’une manière adaptée à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat, telle qu’affichée dans une fenêtre de navigateur. Un visualiseur bitmap interprète une structure bitmap et affiche le graphique représenté. Certains visualiseurs vous permettent de modifier, ainsi que d’afficher les données.
 
- Le débogueur [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] comprend six visualiseurs standard. Il s’agit de texte, les visualiseurs HTML, XML et JSON, qui fonctionnent sur les objets de chaîne ; le visualiseur de l’arborescence WPF, pour afficher les propriétés d’une arborescence d’objets visual WPF ; et le visualiseur dataset, qui fonctionne pour les objets DataSet, DataView et DataTable. Des visualiseurs supplémentaires sont disponibles auprès de tiers et de la communauté. Vous pourrez en télécharger plus tard chez Microsoft Corporation. De plus, vous pouvez écrire vos propres visualiseurs et les installer dans le débogueur [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
+ Le débogueur [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] comprend six visualiseurs standard. Le texte HTML, XML et JSON visualiseurs fonctionnent sur les objets de chaîne. Le visualiseur de l’arborescence WPF affiche les propriétés d’une arborescence visuelle d’objet WPF. Le visualiseur dataset fonctionne pour les objets DataSet, DataView et DataTable. 
+
+Les visualiseurs plus peuvent être disponibles en téléchargement à partir de Microsoft, des tiers et la Communauté. Vous pouvez également écrire vos propres visualiseurs et les installer dans le [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] débogueur.
+
+Dans le débogueur, un visualiseur est représenté par une icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur"). Vous pouvez sélectionner l’icône dans un **DataTip**, débogueur **espion** fenêtre, ou **Espion express** boîte de dialogue et sélectionnez le visualiseur approprié pour l’objet correspondant.
+
+## <a name="write-custom-visualizers"></a>Écrire les visualiseurs personnalisés
 
  > [!NOTE]
- > Pour créer un visualiseur personnalisé pour le code natif, consultez le [visualiseur du débogueur natif SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) exemple. Dans les applications UWP et Windows 8.x, les visualiseurs personnalisés ne sont pas pris en charge.
+ > Pour créer un visualiseur personnalisé pour le code natif, consultez le [visualiseur du débogueur natif SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) exemple. Les visualiseurs personnalisés ne sont pas pris en charge pour les applications 8.x UWP et Windows.
 
- Dans le débogueur, les visualiseurs sont représentés par une icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur"). Lorsque vous voyez l’icône de loupe qui se trouve dans un **DataTip**, dans une fenêtre du débogueur, comme le **espion** fenêtre, ou dans le **Espion express** boîte de dialogue, vous pouvez cliquer sur la loupe pour sélectionner un visualiseur approprié au type de données de l’objet correspondant.
+Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe managée à l’exception de <xref:System.Object> et <xref:System.Array>.  
+  
+L'architecture d'un visualiseur du débogueur comporte deux parties :  
+  
+- Le *côté débogueur* s’exécute dans le débogueur Visual Studio et crée et affiche l’interface utilisateur du visualiseur.  
+  
+- Le *côté programme débogué* s’exécute dans le processus de débogage de Visual Studio (le *programme débogué*). L’objet de données à visualiser (par exemple, il s’agit d’un objet String) existe dans le processus du programme débogué. Le côté programme débogué envoie l’objet vers le côté débogueur, qui l’affiche dans l’interface utilisateur que vous créez.  
 
-## <a name="overview-of-custom-visualizers"></a>Vue d’ensemble des visualiseurs personnalisés
+Le côté débogueur reçoit l’objet de données à partir d’un *fournisseur d’objets* qui implémente le <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Le côté programme débogué envoie l’objet via le *source de l’objet*, qui est dérivée de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
-Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe managée à l'exception de <xref:System.Object> ou <xref:System.Array>.  
+Le fournisseur d’objets peut également renvoyer des données à la source de l’objet, qui vous permet d’écrire un visualiseur qui peut modifier des données. Vous substituez le fournisseur d’objets pour communiquer avec l’évaluateur d’expression et de la source de l’objet.  
   
- L'architecture d'un visualiseur du débogueur comporte deux parties :  
+Le côté programme débogué et le côté débogueur communiquent entre eux via <xref:System.IO.Stream> méthodes qui sérialisent les données de l’objet dans un <xref:System.IO.Stream> et désérialiser les <xref:System.IO.Stream> dans un objet de données.  
+
+Vous pouvez écrire un visualiseur pour un type générique uniquement si le type est un type ouvert. Cette restriction est identique à la restriction qui s'applique lorsque vous utilisez l'attribut `DebuggerTypeProxy`. Pour plus d’informations, consultez [utiliser l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
-- Le *côté débogueur* s’exécute dans le débogueur Visual Studio. Le code côté débogueur crée et affiche l'interface utilisateur de votre visualiseur.  
+Les visualiseurs personnalisés peuvent avoir des exigences en matière de sécurité. Consultez [considérations de sécurité visualiseur](../debugger/visualizer-security-considerations.md).  
   
-- Le *côté programme débogué* s’exécute dans le processus de débogage de Visual Studio (le *programme débogué*).  
-  
-  L’objet de données que vous souhaitez visualiser (un objet String, par exemple) existe dans le processus de l’élément débogué. Le côté élément débogué doit donc envoyer cet objet de données au côté débogueur qui peut alors l’afficher à l’aide d’une interface utilisateur que vous créez.  
-  
-  Le côté débogueur reçoit cet objet de données à visualiser à partir d’un *fournisseur d’objets* qui implémente le <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Le côté programme débogué envoie l’objet de données via le *source de l’objet*, qui est dérivée de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Le fournisseur d'objets peut également renvoyer des données à la source d'objet, vous permettant d'écrire un visualiseur capable de modifier et d'afficher des données. Le fournisseur d'objets peut être substitué pour parler à l'évaluateur d'expression et, par conséquent, à la source de l'objet.  
-  
-  Le côté programme débogué et le côté débogueur communiquent entre eux via <xref:System.IO.Stream>. Des méthodes sont fournies pour sérialiser un objet de données dans un <xref:System.IO.Stream> et désérialiser le <xref:System.IO.Stream> dans un objet de données.  
-  
-  Le code côté programme débogué est spécifié à l'aide de l'attribut DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
-  
-  Pour créer l'interface utilisateur du visualiseur côté débogueur, vous devez créer une classe qui hérite de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> et substituer la méthode <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> pour afficher l'interface.  
-  
-  Vous pouvez utiliser <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> pour afficher des formulaires, des boîtes de dialogue et des contrôles Windows à partir de votre visualiseur.  
-  
-  La prise en charge des types génériques est limitée. Vous pouvez écrire un visualiseur pour une cible qui est un type générique uniquement si le type générique est un type ouvert. Cette restriction est identique à la restriction qui s'applique lorsque vous utilisez l'attribut `DebuggerTypeProxy`. Pour plus d’informations, consultez [à l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
-  
-  Les visualiseurs personnalisés peuvent avoir des exigences en matière de sécurité. Consultez [considérations de sécurité visualiseur](../debugger/visualizer-security-considerations.md).  
-  
-  Les procédures ci-après fournissent une vue d'ensemble de la marche à suivre pour créer un visualiseur. Pour obtenir une explication plus détaillée, consultez [procédure pas à pas : écriture d’un visualiseur en c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+La procédure suivante donne une vue d’ensemble de la création du visualiseur. Pour obtenir des instructions détaillées, consultez [procédure pas à pas : écrire un visualiseur en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) ou [procédure pas à pas : écrire un visualiseur en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Pour créer le côté débogueur  
   
+Pour créer l’interface utilisateur du visualiseur côté débogueur, vous créez une classe qui hérite de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>et remplacer le <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> méthode pour afficher l’interface. Vous pouvez utiliser <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> pour afficher des formulaires, des boîtes de dialogue et des contrôles Windows dans votre visualiseur.  
+  
 1.  Utilisez les méthodes <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> pour obtenir l'objet visualisé côté débogueur.  
   
-2.  Créez une classe qui hérite de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
+1.  Créez une classe qui hérite de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
   
-3.  Substituez la méthode <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> pour afficher votre interface. Les méthodes <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> vous permettent d'afficher des formulaires, des boîtes de dialogue et des contrôles Windows dans le cadre de votre interface.  
+1.  Substituez la méthode <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> pour afficher votre interface. Utilisez <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> méthodes pour afficher des formulaires Windows, les boîtes de dialogue et les contrôles dans votre interface.  
   
-4.  Appliquez <xref:System.Diagnostics.DebuggerVisualizerAttribute>, en lui affectant un visualiseur (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
+4.  Appliquer <xref:System.Diagnostics.DebuggerVisualizerAttribute>, en lui attribuant le visualiseur pour afficher (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
   
-### <a name="to-create-the-debuggee-side"></a>Pour créer le côté débogué  
+### <a name="to-create-the-debuggee-side"></a>Pour créer le côté élément débogué  
   
-1.  Appliquez <xref:System.Diagnostics.DebuggerVisualizerAttribute>, en lui affectant un visualiseur (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) et une source d'objet (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Si vous omettez la source de l'objet, une source d'objet par défaut sera utilisée.  
+Vous spécifiez le code côté programme débogué à l’aide de la <xref:System.Diagnostics.DebuggerVisualizerAttribute>.  
   
-2.  Si vous souhaitez que votre visualiseur modifie et affiche des objets de données, substituez les méthodes `TransferData` ou `CreateReplacementObject` de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.   
+1.  Appliquez <xref:System.Diagnostics.DebuggerVisualizerAttribute>, en lui affectant un visualiseur (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) et une source d'objet (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Si vous omettez la source d’objet, le visualiseur utilise une source d’objet par défaut.  
   
-## <a name="in-this-section"></a>Dans cette section
+1.  Pour permettre le visualiseur à modifier, ainsi que d’afficher les objets de données, substituez le `TransferData` ou `CreateReplacementObject` méthodes à partir de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.   
   
- [Procédure pas à pas : écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+## <a name="see-also"></a>Voir aussi
+  
+ [Procédure pas à pas : écrire un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [Procédure pas à pas : écriture d’un visualiseur en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [Procédure pas à pas : écrire un visualiseur en Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
  [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)  
   
@@ -94,5 +94,4 @@ Vous pouvez écrire un visualiseur personnalisé pour un objet de toute classe m
   
  [Informations de référence sur l’API du visualiseur](../debugger/visualizer-api-reference.md)  
   
-## <a name="related-sections"></a>Rubriques connexes  
  [Afficher les données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

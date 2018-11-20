@@ -1,6 +1,6 @@
 ---
 title: 'CA1052 : Les types de conteneurs statiques doivent être sealed'
-ms.date: 11/04/2016
+ms.date: 11/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 937a5eba672eef928dd4f8c0e5356e504d769153
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859495"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348660"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052 : Les types de conteneurs statiques doivent être sealed
 
@@ -37,34 +37,35 @@ ms.locfileid: "47859495"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type public ou protégé contient uniquement des membres statiques et n’est pas déclaré avec le [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificateur.
+
+Un public ou protégé, non abstraite type contient uniquement des membres statiques et n’est pas déclaré avec le [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificateur.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle suppose qu’un type qui contient uniquement des membres statiques n’est pas conçu pour être héritée, de le, car le type ne fournit pas toutes les fonctionnalités qui peuvent être substituées dans un type dérivé. Un type qui n’est pas destiné à être hérité doit être marqué avec le `sealed` modificateur d’empêcher son utilisation comme un type de base.
+
+CA1052 de règle suppose qu’un type qui contient uniquement des membres statiques n’est pas conçu pour être héritée, de le, car le type ne fournit pas toutes les fonctionnalités qui peuvent être substituées dans un type dérivé. Un type qui n’est pas destiné à être hérité doit être marqué avec le `sealed` ou `NotInheritable` modificateur d’empêcher son utilisation comme un type de base. Cette règle ne déclenche pas pour les classes abstraites.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, marquez le type comme `sealed`. Si vous ciblez .NET Framework 2.0 ou version ultérieure, une meilleure approche consiste à marquer le type en tant que `static`. De cette manière, vous évitez d’avoir à déclarer un constructeur privé pour empêcher la création de la classe.
+
+Pour corriger une violation de cette règle, marquez le type comme `sealed` ou `NotInheritable`. Si vous ciblez .NET Framework 2.0 ou version ultérieure, une meilleure approche consiste à marquer le type en tant que `static` ou `Shared`. De cette manière, vous n’êtes pas obligé de déclarer un constructeur privé pour empêcher la création de la classe.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle uniquement si le type est conçu pour être hérité. L’absence de la `sealed` modificateur suggère que le type est utile comme type de base.
 
-## <a name="example-of-a-violation"></a>Exemple de Violation
+Supprimez un avertissement de cette règle uniquement si le type est conçu pour être hérité. L’absence de la `sealed` ou `NotInheritable` modificateur suggère que le type est utile comme type de base.
 
-### <a name="description"></a>Description
- L’exemple suivant montre un type qui viole la règle.
+## <a name="example-of-a-violation"></a>Exemple de violation
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
- [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
- [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
+L’exemple suivant montre un type qui viole la règle.
 
-## <a name="fix-with-the-static-modifier"></a>Résoudre avec le modificateur Static
+[!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
+[!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
+[!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
 
-### <a name="description"></a>Description
- L’exemple suivant montre comment la corriger une violation de cette règle en marquant le type avec le `static` modificateur.
+## <a name="fix-with-the-static-modifier"></a>Résoudre avec le modificateur static
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
+L’exemple suivant montre comment la corriger une violation de cette règle en marquant le type avec le `static` modificateur dans C#.
+
+[!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+
+[CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

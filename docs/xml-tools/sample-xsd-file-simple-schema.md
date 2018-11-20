@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572697"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : schéma Simple
+# <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : schéma simple
 
 Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD. Ce fichier est un schéma de bon de commande simple.
 

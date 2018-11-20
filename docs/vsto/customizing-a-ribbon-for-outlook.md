@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 572b92d6a74a3ef61f85e13494856c1193a7770f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 035a38abc2285f744841b1d095387f61a21335a7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673100"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671532"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personnaliser un ruban pour Outlook
   Quand vous personnalisez le ruban dans Microsoft Office Outlook, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. Outlook affiche le ruban dans l'interface utilisateur principale de l'application et dans les fenêtres qui s'ouvrent lorsque les utilisateurs effectuent certaines tâches, telles que la création de messages électroniques. Ces fenêtres d'application sont appelées inspecteurs.  
@@ -41,12 +41,12 @@ ms.locfileid: "35673100"
   
  Si vous utilisez le **ruban (Concepteur visuel)** d’élément, cliquez sur le **RibbonType** propriété du ruban dans le **propriétés** fenêtre et puis sélectionnez un ou plusieurs ID à partir du ruban la liste de valeurs.  
   
- Vous pouvez ajouter plusieurs rubans à un projet. Si plusieurs rubans partagent un ID de ruban, substituez la méthode `CreateRibbonExtensibilityObject` de la classe `ThisAddin` de votre projet pour spécifier le ruban à afficher au moment de l'exécution. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md). Pour plus d’informations sur chaque type de ruban, consultez l’article technique [personnaliser le ruban dans Outlook 2007](http://msdn.microsoft.com/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ Vous pouvez ajouter plusieurs rubans à un projet. Si plusieurs rubans partagent un ID de ruban, substituez la méthode `CreateRibbonExtensibilityObject` de la classe `ThisAddin` de votre projet pour spécifier le ruban à afficher au moment de l'exécution. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md). Pour plus d’informations sur chaque type de ruban, consultez l’article technique [personnaliser le ruban dans Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).  
   
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Spécifiez le type de ruban à l’aide d’élément XML ribbon  
  Si vous utilisez le **ruban (XML)** d’élément, vérifiez la valeur de la *ribbonID* paramètre dans le <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> méthode et retournez le ruban approprié.  
   
- La méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> est automatiquement générée par Visual Studio dans le fichier de code du ruban. Le *ribbonID* paramètre est une chaîne qui identifie l’Explorateur ou un type spécifique d’inspecteur. Pour obtenir la liste complète des valeurs possibles de la *ribbonID* paramètre, consultez l’article technique [personnaliser le ruban dans Outlook 2007](http://msdn.microsoft.com/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ La méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> est automatiquement générée par Visual Studio dans le fichier de code du ruban. Le *ribbonID* paramètre est une chaîne qui identifie l’Explorateur ou un type spécifique d’inspecteur. Pour obtenir la liste complète des valeurs possibles de la *ribbonID* paramètre, consultez l’article technique [personnaliser le ruban dans Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).  
   
  L'exemple de code suivant montre comment afficher un ruban personnalisé uniquement dans l' inspecteur `Microsoft.Outlook.Mail.Compose`. Il s'agit de l'inspecteur qui s'affiche lorsqu'un utilisateur crée un message électronique. Le ruban à afficher est spécifié dans le `GetResourceText()` (méthode), qui est généré dans le **ruban** classe. Pour plus d’informations sur la **ruban** de classe, consultez [ruban XML](../vsto/ribbon-xml.md).  
   
@@ -57,6 +57,6 @@ ms.locfileid: "35673100"
  [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
- [Élément XML Ribbon](../vsto/ribbon-xml.md)  
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

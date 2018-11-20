@@ -1,5 +1,5 @@
 ---
-title: Analyse de code FxCop et les analyseurs FxCop
+title: Analyse de code FxCop et analyseurs FxCop
 ms.date: 09/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,38 +13,38 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: e05dd0e01254bf1222a8a7de497b11ec2a808bfb
 ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/19/2018
 ms.locfileid: "46136365"
 ---
-# <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Forum aux questions sur FxCop et FxCop analyseurs
+# <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
-Il peut être un peu difficile de comprendre les différences entre les systèmes hérités FxCop et FxCop analyseurs. Cet article vise à résoudre certains de vos questions que éventuelles.
+Il peut être un peu difficile de comprendre les différences entre les analyseurs FxCop et FxCop hérité. Cet article vise à répondre à certaines des questions que vous pouvez vous poser.
 
-## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>Quelle est la différence entre les systèmes hérités FxCop et FxCop analyseurs ?
+## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>Quelle est la différence entre les analyseurs FxCop et FxCop hérité ?
 
-FxCop héritée exécute une analyse post-build sur un assembly compilé. Elle s’exécute comme un exécutable séparé appelé **FxCopCmd.exe**. FxCopCmd.exe charge l’assembly compilé, exécute l’analyse de code, puis signale les résultats (ou *diagnostics*).
+FxCop hérité exécute une analyse post-build sur un assembly compilé. Il s’exécute en tant qu’exécutable distinct appelé **FxCopCmd.exe**. FxCopCmd.exe charge l’assembly compilé, exécute l’analyse du code, puis signale les résultats (ou *diagnostics*).
 
-Les analyseurs FxCop sont basées sur .NET Compiler Platform (« Roslyn »). Vous [installer sous la forme d’un package NuGet](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) qui est référencé par le projet ou la solution. Analyse basée sur les analyseurs FxCop exécuter du code source pendant l’exécution du compilateur. Les analyseurs FxCop sont hébergés au sein du processus du compilateur, soit **csc.exe** ou **vbc.exe**, et exécuter l’analyse quand le projet est généré. Résultats de l’analyseur sont signalées en même temps que les résultats du compilateur.
+Les analyseurs FxCop sont basés sur .NET Compiler Platform (« Roslyn »). Vous [les installez comme package NuGet](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) référencé par le projet ou la solution. Les analyseurs FxCop exécutent une analyse basée sur le code source pendant l’exécution du compilateur. Les analyseurs FxCop sont hébergés dans le processus du compilateur, **csc.exe** ou **vbc.exe**, et exécutent l’analyse quand le projet est généré. Les résultats des analyseurs sont signalés en même temps que les résultats du compilateur.
 
 > [!NOTE]
-> Vous pouvez également [installer des analyseurs FxCop en tant qu’une extension Visual Studio](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix). Dans ce cas, les analyseurs de l’exécuter que vous tapez dans l’éditeur de code, mais ils ne s’exécute au moment de la génération. Si vous souhaitez exécuter des analyseurs FxCop dans le cadre de l’intégration continue (CI), les installer comme package NuGet à la place.
+> Vous pouvez également [installer des analyseurs FxCop en tant qu’extension Visual Studio](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix). Dans ce cas, les analyseurs s’exécutent quand vous tapez dans l’éditeur de code, mais pas au moment de la génération. Si vous voulez exécuter des analyseurs FxCop dans le cadre de l’intégration continue (CI), installez-les en tant que package NuGet à la place.
 
-## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>La commande Exécuter l’analyse du Code s’exécute les analyseurs FxCop ?
+## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>La commande Exécuter l’analyse du Code exécute-t-elle les analyseurs FxCop ?
 
-Non. Lorsque vous sélectionnez **analyser** > **exécuter l’analyse du Code** dans Visual Studio 2017, il exécute l’analyse du code statique ou FxCop héritée. **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs de roslyn, y compris les analyseurs FxCop basée sur Roslyn.
+Non. Quand vous sélectionnez **Analyser** > **Exécuter l’analyse du code** dans Visual Studio 2017, elle exécute l’analyse statique du code ou FxCop hérité. L’option **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs basés sur Roslyn, notamment les analyseurs FxCop basés sur Roslyn.
 
-## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>La propriété de projet msbuild RunCodeAnalysis exécuter des analyseurs ?
+## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>La propriété de projet msbuild RunCodeAnalysis exécute-t-elle des analyseurs ?
 
-Non. Le **RunCodeAnalysis** propriété dans un fichier projet (par exemple, *.csproj*) est utilisé uniquement pour exécuter FxCop héritée. Il s’exécute une tâche msbuild de post-build qui appelle **FxCopCmd.exe**. Cela revient à sélectionner **analyser** > **exécuter l’analyse du Code** dans Visual Studio.
+Non. La propriété **RunCodeAnalysis** dans un fichier projet (par exemple, *.csproj*) est utilisée uniquement pour exécuter FxCop hérité. Elle s’exécute une tâche msbuild post-build qui appelle **FxCopCmd.exe**. Cela revient à sélectionner **Analyser** > **Exécuter l’analyse du code** dans Visual Studio.
 
-## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Par conséquent, comment exécuter des analyseurs FxCop puis ?
+## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Alors, comment exécuter des analyseurs FxCop ?
 
-Pour exécuter des analyseurs FxCop, tout d’abord [installer le package NuGet](install-fxcop-analyzers.md) pour eux. Puis générez votre projet ou solution à partir de Visual Studio ou à l’aide de msbuild. Les avertissements et erreurs qui génèrent les analyseurs FxCop apparaîtra dans le **liste d’erreurs** ou la fenêtre de commande.
+Pour exécuter des analyseurs FxCop, commencez par [installer le package NuGet](install-fxcop-analyzers.md) correspondant à ces derniers. Générez ensuite votre projet ou solution à partir de Visual Studio ou à l’aide de msbuild. Les avertissements et erreurs que génèrent les analyseurs FxCop s’affichent dans la **liste d’erreurs** ou la fenêtre Commande.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des analyseurs de .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Prise en main des analyseurs](fxcop-analyzers.yml)
-- [Installer les analyseurs FxCop](install-fxcop-analyzers.md)
+- [Vue d’ensemble des analyseurs .NET Compiler Platform](roslyn-analyzers-overview.md)
+- [Bien démarrer avec les analyseurs](fxcop-analyzers.yml)
+- [Installer des analyseurs FxCop](install-fxcop-analyzers.md)

@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
-- vs.toolsoptionspages.text_editor.all_languages.scrollbars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175733"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220480"
 ---
 # <a name="options-text-editor-all-languages"></a>Options, Éditeur de texte, Tous les langages
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de l’éditeur de code. Ces paramètres s’appliquent également à d’autres éditeurs basés sur l’éditeur de code, tels que le mode Source du concepteur HTML. Pour ouvrir cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Général**.
@@ -42,24 +42,24 @@ Cette boîte de dialogue vous permet de modifier le comportement par défaut de 
 
 
 ## <a name="statement-completion"></a>Compléter automatiquement les instructions
- Répertorier automatiquement les membres
+ **Répertorier automatiquement les membres**
 
  Lorsque cette option est sélectionnée, les listes contextuelles des membres disponibles, les propriétés, les valeurs ou les méthodes sont affichées par IntelliSense lorsque vous tapez dans l’éditeur. Choisissez un élément dans la liste contextuelle pour l’insérer dans votre code. La sélection de cette option active l’option **Masquer les membres avancés**.
 
- Masquer les membres avancés
+ **Masquer les membres avancés**
 
  Lorsque cette option est activée, les listes de saisie semi-automatique d’instructions contextuelles se limitent à l’affichage des éléments les plus couramment utilisés. Les autres éléments sont filtrés dans la liste.
 
- Information sur les paramètres
+ **Informations sur les paramètres**
 
  Lorsque cette option est sélectionnée, la syntaxe complète de la procédure ou déclaration actuelle s’affiche sous le point d’insertion dans l’éditeur, avec tous ses paramètres disponibles. Le paramètre suivant que vous pouvez assigner est affiché en gras.
 
 ## <a name="settings"></a>Paramètres
- Activer l'espace virtuel
+ **Activer l’espace virtuel**
 
  Lorsque cette option est sélectionnée et que l’option **Retour automatique à la ligne** est désactivée, vous pouvez cliquer hors de la limite d’une ligne de l’éditeur de code et saisir du texte. Cette fonctionnalité peut être utilisée pour placer des commentaires à un point précis en regard de votre code.
 
- Retour automatique à la ligne
+ **Retour automatique à la ligne**
 
  Lorsque cette option est sélectionnée, toute partie d’une ligne qui dépasse horizontalement de la zone affichable de l’éditeur est automatiquement affichée à la ligne suivante. La sélection de cette option active l’option **Afficher des glyphes visuels pour le retour automatique à la ligne**.
 
@@ -67,7 +67,7 @@ Cette boîte de dialogue vous permet de modifier le comportement par défaut de 
 > La fonctionnalité **Espace virtuel** est désactivée quand l’option **Retour automatique à la ligne** est activée.
 
 
- Afficher des glyphes visuels pour le retour automatique à la ligne
+ **Afficher des glyphes visuels pour le retour automatique à la ligne**
 
  Lorsque cette option est sélectionnée, un indicateur fléché de retour s’affiche à l’endroit où une ligne longue est automatiquement renvoyée à une deuxième ligne.
 
@@ -79,7 +79,23 @@ Cette boîte de dialogue vous permet de modifier le comportement par défaut de 
 > Ces flèches de rappel ne sont pas ajoutées à votre code et ne sont pas imprimées. Elles ne sont utilisées qu'à titre de référence.
 
 
- Appliquer les commandes Couper ou Copier aux lignes vides en l'absence de sélection
+**Numéros de ligne**
+
+ Lorsque cette option est sélectionnée, un numéro de ligne apparaît en regard de chaque ligne de code.
+
+> [!NOTE]
+> Ces numéros de lignes ne sont pas ajoutés à votre code et ne sont pas imprimés. Elles ne sont utilisées qu'à titre de référence.
+
+
+ **Activer la navigation dans les URL par simple clic**
+
+ Lorsque cette option est sélectionnée, le curseur de souris prend la forme d’une main avec un doigt pointé lorsqu’il passe sur une URL dans l’éditeur. Vous pouvez cliquer sur l’URL pour afficher la page indiquée dans votre navigateur web.
+
+ **Barre de navigation**
+
+ Lorsque cette option est sélectionnée, la **barre de navigation** est affichée en haut de l’éditeur de code. Ses listes déroulantes **Objets** et **Membres** vous permettent de choisir un objet particulier dans votre code, de sélectionner parmi ses membres et d’accéder à la déclaration du membre sélectionné dans l’éditeur de code.
+
+**Appliquer les commandes Couper ou Copier aux lignes vides en l’absence de sélection**
 
  Cette option définit le comportement de l’éditeur lorsque vous placez le point d’insertion sur une ligne vide, ne sélectionnez rien, puis effectuez une action Copier ou Couper.
 
@@ -91,24 +107,6 @@ Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une li
 
 > [!TIP]
 > Pour afficher les indicateurs d’espaces, de tabulations et de fins de ligne et distinguer ainsi les lignes en retrait de celles qui sont complètement vides, sélectionnez **Avancé** dans le menu **Edition**, puis choisissez **Afficher les espaces blancs**.
-
-
-## <a name="display"></a>Afficher
- Numéros de ligne
-
- Lorsque cette option est sélectionnée, un numéro de ligne apparaît en regard de chaque ligne de code.
-
-> [!NOTE]
-> Ces numéros de lignes ne sont pas ajoutés à votre code et ne sont pas imprimés. Elles ne sont utilisées qu'à titre de référence.
-
-
- Activer la navigation dans les URL par simple clic
-
- Lorsque cette option est sélectionnée, le curseur de souris prend la forme d’une main avec un doigt pointé lorsqu’il passe sur une URL dans l’éditeur. Vous pouvez cliquer sur l’URL pour afficher la page indiquée dans votre navigateur web.
-
- Barre de navigation
-
- Lorsque cette option est sélectionnée, la **barre de navigation** est affichée en haut de l’éditeur de code. Ses listes déroulantes **Objets** et **Membres** vous permettent de choisir un objet particulier dans votre code, de sélectionner parmi ses membres et d’accéder à la déclaration du membre sélectionné dans l’éditeur de code.
 
 ## <a name="see-also"></a>Voir aussi
 

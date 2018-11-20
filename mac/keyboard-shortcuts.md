@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224323"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295109"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier courants dans Visual Studio pour Mac
 
@@ -18,17 +18,17 @@ ms.locfileid: "43224323"
 
 Cette commande génère du code en fonction du contexte :
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![Un panneau s’affiche avec les options de génération de code associées au symbole sélectionné.](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>Rechercher des fichiers, des symboles et des commandes
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>Saisie semi-automatique 
+## <a name="autocomplete"></a>Saisie semi-automatique
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>Correctifs rapides et actions
 
@@ -50,7 +50,7 @@ Permet de basculer rapidement entre des fichiers :
 
 ## <a name="move-lines-around-in-editor"></a>Déplacer des lignes dans l’éditeur
 
-`alt + up/down` 
+`alt + up/down`
 
 Utilisez la commande **Alt+Flèche haut** pour déplacer vers le haut la ligne active ou les lignes sélectionnées, et utilisez la commande **Alt+Flèche bas** pour déplacer les lignes vers le bas. Si le complément du langage le prend en charge, les lignes seront réindentées de façon à correspondre au contexte quand elles passent dans et en dehors de l’étendue.
 
@@ -71,3 +71,7 @@ Déplace le point d’insertion au début ou à la fin de la ligne :
 Étend la sélection des mots, des sous-expressions, des instructions et des membres d’une ligne de façon logique :
 
 `alt + shift + up` pour sélectionner `alt + shift + down` pour désélectionner
+
+## <a name="see-also"></a>Voir aussi
+
+- [Raccourcis clavier dans Visual Studio (sur Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

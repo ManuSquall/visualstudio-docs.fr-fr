@@ -2,7 +2,11 @@ items:
 - name: Documentation sur le débogueur
   href: index.md
 - name: Vue d'ensemble
-  href: debugger-overview.md
+  items:
+  - name: Qu’est-ce que le débogage ?
+    href: what-is-debugging.md
+  - name: Écrire un meilleur code C# avec Visual Studio
+    href: write-better-code-with-visual-studio.md
 - name: Démarrages rapides
   items:
   - name: Présentation du débogueur
@@ -367,7 +371,7 @@ items:
       - name: Commencer une session de débogage pour une application UWP
         href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
         items:
-        - name: Exécuter des applications UWP sur un ordinateur distant
+        - name: Déboguer des applications UWP sur un ordinateur distant
           href: run-windows-store-apps-on-a-remote-machine.md
         - name: Exécuter des applications UWP dans le simulateur
           href: run-windows-store-apps-in-the-simulator.md
@@ -409,7 +413,7 @@ items:
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Préparation du débogage : services Windows'
           href: debugging-preparation-windows-services.md
-      - name: Messages de diagnostic dans la fenêtre Sortie
+      - name: Envoyer des messages vers la Fenêtre Sortie
         href: diagnostic-messages-in-the-output-window.md
       - name: Assertions dans du code managé
         href: assertions-in-managed-code.md
@@ -832,9 +836,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cc81f388e27fff52376d384af8c45546ef2b13c4
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050376"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770468"

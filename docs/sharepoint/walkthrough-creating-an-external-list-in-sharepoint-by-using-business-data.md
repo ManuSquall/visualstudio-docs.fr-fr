@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913967"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295837"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : Créer une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -85,7 +85,7 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
 2. Ajouter une connexion à la base de données SQL Server AdventureWorks.
 
-     Pour plus d’informations, consultez [Ajouter/modifier la connexion (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Pour plus d’informations, consultez [Ajouter/modifier la connexion (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
 
 3. Dans l' **Explorateur de solutions**, choisissez le nœud du projet.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853517"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220298"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -127,7 +127,7 @@ Vous pouvez trouver combien de personnes ont modifié votre code et combien de m
 
 ### <a name="find-when-your-code-was-branched"></a>Savoir quand une branche a été créée dans votre code
 
-Pour trouver quand une branche a été créée dans votre code, accédez à votre code dans la branche enfant. Ensuite, sélectionnez l’indicateur **Modifications** ou appuyez sur**Alt**+**6** :
+Pour trouver quand une branche a été créée dans votre code, accédez à votre code dans la branche enfant. Ensuite, sélectionnez l’indicateur **Modifications** ou appuyez sur**Alt**+**6** :
 
 ![CodeLens : savoir quand une branche a été créée dans votre code](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Pour utiliser le clavier :
 
 4. Appuyez sur **Tab** pour accéder à la liste **Afficher les paramètres de**, puis appuyez sur **Bas** pour sélectionner **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l’affichage tête haute CodeLens `head`?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l'affichage tête haute CodeLens ?
 
 **R :** Oui, choisissez ![Icône Ancre](../ide/media/codelensdockwindow.png) pour ancrer CodeLens en tant que fenêtre.
 

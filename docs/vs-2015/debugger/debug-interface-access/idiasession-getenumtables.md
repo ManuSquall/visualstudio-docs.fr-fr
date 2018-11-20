@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::getEnumTables method
 ms.assetid: 66e0fba2-ca63-4e24-a46a-c99c7fb61dd1
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fe00336dc9a33c18c4f98ae74b1fbcb2e692f87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7637706a569050d52b61626ec59748d4f7405e87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886628"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768054"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Récupère un énumérateur pour toutes les tables contenues dans le magasin de 
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT getEnumTables (   
+HRESULT getEnumTables (   
    IDiaEnumTables** ppEnumTables  
 );  
 ```  

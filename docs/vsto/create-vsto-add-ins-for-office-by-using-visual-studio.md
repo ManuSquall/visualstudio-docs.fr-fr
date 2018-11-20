@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670870"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l’aide de Visual Studio
   Vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office. Ces applications sont également appelées *solutions Office*.  
@@ -108,10 +108,10 @@ ms.locfileid: "35673716"
  [Section de développement Microsoft Office de MSDN library](http://go.microsoft.com/fwlink/?LinkId=149870)  
  Zone de MSDN library où vous pouvez rechercher des articles et documentation de référence sur le développement de solutions pour plusieurs versions d’Office (non spécifique au développement Office à l’aide de Visual Studio).  
   
- [Développement d’applications dans Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Développement d’applications dans Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  Contient des liens vers des rubriques qui expliquent comment vous pouvez utiliser Visual Studio pour concevoir, développer, déboguer et déployer des applications clientes traditionnelles, les services web XML et les applications web.  
   
- [Programmation .NET framework dans Visual Studio](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Programmation .NET framework dans Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Décrit le développement d'applications avec le .NET Framework en Visual Basic et Visual C#.  
   
   

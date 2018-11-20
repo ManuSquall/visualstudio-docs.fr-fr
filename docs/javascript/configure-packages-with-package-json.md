@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126637"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219093"
 ---
 # <a name="packagejson-configuration"></a>Configuration de package.json
 
@@ -28,7 +28,7 @@ Le système de gestion des versions des packages npm a des règles strictes. Le 
 
     [major].[minor].[patch]
 
-Supposons que vous avez un package dans votre application avec une version 5.2.1. 5 est la version principale, 2 est la version secondaire, et 1 le correctif logiciel.
+Supposons que vous avez un package dans votre application avec une version 5.2.1. 5 correspond à la version principale, 2 à la version secondaire et 1 au correctif.
 
 * Dans une mise à jour de la version principale, le package inclut de nouvelles fonctionnalités qui sont incompatibles avec la version précédente, c’est-à-dire des changements cassants.
 * Dans une mise à jour de la version secondaire, les nouvelles fonctionnalités qui ont une compatibilité descendante avec les versions antérieures du package ont été ajoutées au package.

@@ -18,12 +18,12 @@ ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a0bbbd6f578b45919d6c1d9395a8e09bd4ffc11
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 91d18b3af347ad4d59d76178f6f156b18c77a7bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879621"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752330"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Obtient la demande de point d’arrêt a été utilisée pour créer ce point d�
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetBreakpointRequest(   
+HRESULT GetBreakpointRequest(   
    IDebugBreakpointRequest2** ppBPRequest  
 );  
 ```  
   
 ```csharp  
-int GetBreakpointRequest(   
+int GetBreakpointRequest(   
    out IDebugBreakpointRequest2 ppBPRequest  
 );  
 ```  

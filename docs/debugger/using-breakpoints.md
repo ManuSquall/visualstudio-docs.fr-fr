@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816681"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826841"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
-Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt.  
+Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
   
 ##  <a name="BKMK_Overview"></a> Ensemble des points d’arrêt dans le code source  
  Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code c# suivant, vous pouvez définir un point d’arrêt sur la déclaration de variable, le `for` boucle ou code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou une classe, ou sur la signature de méthode.  
@@ -235,8 +235,8 @@ Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir en
  >- Pour le code natif, le débogueur ne considère pas la première évaluation de la condition comme étant une modification, donc n’atteint le point d’arrêt sur la première évaluation. 
  >- Pour le code managé, le débogueur atteint le point d’arrêt sur la première évaluation après **lorsque modifié** est sélectionné.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>À l’aide des ID d’objet dans des expressions conditionnelles (c# et F # uniquement)  
- Il est parfois lorsque vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être savoir pourquoi un objet a été inséré dans une collection plusieurs fois. Dans c# et F #, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types)et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>À l’aide des ID d’objet dans des expressions conditionnelles (C# et F# uniquement)  
+ Il est parfois lorsque vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être savoir pourquoi un objet a été inséré dans une collection plusieurs fois. Dans C# et F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types)et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
 
 **Pour créer un ID d’objet :** 
   
@@ -305,5 +305,7 @@ Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des
 Points de trace apparaissent sous forme de losanges rouge dans la marge gauche du code source et **des points d’arrêt** windows. 
   
 ## <a name="see-also"></a>Voir aussi  
-[Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)  
-[Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)
+ [Quel est le débogage ?](../debugger/what-is-debugging.md)  
+ [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Premier aperçu de débogage](../debugger/debugger-feature-tour.md)  
+ [Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)  

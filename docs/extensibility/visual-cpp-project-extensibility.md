@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850806"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349674"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
@@ -434,7 +434,7 @@ Le système de projet Visual C++ est basé sur le [système de projet Visual Stu
 
 ### <a name="project-property-pages"></a>Pages de propriétés du projet
 
-Pour plus d’informations générales de conception, consultez [extensibilité des plateformes - partie 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) et [extensibilité des plateformes - partie 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Pour plus d’informations générales de conception, consultez [extensibilité des plateformes - partie 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) et [extensibilité des plateformes - partie 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 En termes simples, les pages de propriétés que vous consultez dans la **propriétés du projet** boîte de dialogue pour un projet C++ sont définis par *règle* fichiers. Un fichier de règle spécifie un jeu de propriétés à afficher sur une page de propriétés et comment et où ils doivent être enregistrés dans le projet de fichier. Fichiers de règles sont des fichiers .xml qui utilisent le format Xaml. Les types utilisés pour sérialiser les sont décrites dans [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Pour plus d’informations sur l’utilisation de fichiers de règles dans les projets, consultez [les fichiers de règles XML de la Page propriété](/cpp/ide/property-page-xml-files).
 

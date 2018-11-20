@@ -16,12 +16,12 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5319721d57212f4fc853ca99c1544a51d4af878c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201888"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732132"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualiseur de type et visionneuse personnalisée
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

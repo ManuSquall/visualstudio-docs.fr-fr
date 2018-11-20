@@ -17,12 +17,12 @@ ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b934eb299470293fd82409be10e88d3e589915c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b91b2c49e02dc0a0426b39037e26431b80e4d128
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885120"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779695"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Obtient le type de classe d’attribut personnalisé.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetAttributeTypeField(   
+HRESULT GetAttributeTypeField(   
    IDebugClassField** ppCAType  
 );  
 ```  

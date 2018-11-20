@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746310"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349242"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gérer les propriétés des projets et des solutions
 
@@ -25,6 +25,9 @@ Les projets ont des propriétés qui régissent de nombreux aspects de la compil
 Les projets .NET peuvent également avoir un nœud Propriétés dans l’arborescence-même du projet.
 
 ![Nœud Propriétés dans l'arborescence de l'Explorateur de solutions](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Gestion des propriétés de solution et projet (Visual Studio pour Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Propriétés de projet
 
@@ -56,3 +59,4 @@ Pour accéder aux propriétés sur la solution, cliquez avec le bouton droit sur
 ## <a name="see-also"></a>Voir aussi
 
 - [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Gestion des propriétés de solution et projet (Visual Studio pour Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

@@ -1,5 +1,5 @@
 ---
-title: Solutions et projets dans Visual Studio
+title: Solutions et projets
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,14 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089657"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349307"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
+
+Cet article décrit le concept d’un *projet* et d’une *solution* dans Visual Studio. Il décrit également brièvement comment créer un projet ainsi que la fenêtre Outil **Explorateur de solutions**.
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Projets et solutions dans Visual Studio pour Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Projets
 
@@ -62,7 +67,7 @@ Visual Studio utilise deux types de fichiers (*.sln* et *.suo*) pour stocker les
 
 ## <a name="create-new-projects"></a>Créer de nouveaux projets
 
-Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Les modèles disponibles s’affichent dans la boîte de dialogue **Nouveau projet** ou **Nouveau site web** quand vous choisissez **Fichier** > **Nouveau** > **Projet** ou **Fichier** > **Nouveau** > **Site web**. Pour plus d’informations, consultez [Créer des solutions et des projets](../ide/creating-solutions-and-projects.md).
+Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Ces modèles s’affichent dans la boîte de dialogue **Nouveau projet** quand vous choisissez **Fichier** > **Nouveau** > **Projet**. Pour plus d’informations, consultez [Créer des solutions et des projets](../ide/creating-solutions-and-projects.md).
 
 Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
@@ -75,3 +80,5 @@ Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de
 ## <a name="see-also"></a>Voir aussi
 
 - [IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Projets et solutions (Visual Studio pour Mac)](/visualstudio/mac/projects-and-solutions)
+- [Ajouter et supprimer des éléments de projet (Visual Studio pour Mac)](/visualstudio/mac/add-and-remove-project-items)

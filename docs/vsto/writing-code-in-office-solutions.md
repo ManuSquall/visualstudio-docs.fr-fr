@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671113"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670986"
 ---
 # <a name="write-code-in-office-solutions"></a>Écrire du code dans les solutions Office
   Certains aspects de l'écriture de code dans les projets Office diffèrent des autres types de projets dans Visual Studio. La plupart de ces différences sont liées à la façon dont les modèles objet Office sont exposés au code managé. Les autres différences portent sur la conception des projets Office.  
@@ -62,7 +62,7 @@ ms.locfileid: "35671113"
  Sur les ordinateurs des utilisateurs finaux, les assemblys PIA d'Office ne sont pas nécessaires pour exécuter les solutions Office ciblant [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure. Pour plus d’informations, consultez [conception et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Utiliser des types dans les assemblys PIA  
- Les assemblys PIA d'Office fournissent une combinaison de types qui exposent le modèle objet des applications Office et d'autres types d'infrastructure qui ne sont pas prévus pour être utilisés directement dans votre code. Pour une vue d’ensemble des types dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Les assemblys PIA d'Office fournissent une combinaison de types qui exposent le modèle objet des applications Office et d'autres types d'infrastructure qui ne sont pas prévus pour être utilisés directement dans votre code. Pour une vue d’ensemble des types dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Étant donné que les types des assemblys PIA d'Office correspondent aux types des modèles objet COM, la façon dont vous utilisez ces types diffère souvent des autres types managés. Par exemple, le mode d'appel des méthodes possédant des paramètres optionnels dans un assembly PIA d'Office dépend du langage de programmation utilisé dans le projet. Pour plus d’informations, consultez les rubriques suivantes :  
   

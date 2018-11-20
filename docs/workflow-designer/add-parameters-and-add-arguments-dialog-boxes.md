@@ -1,5 +1,5 @@
 ---
-title: Le Concepteur de flux de travail - ajouter des paramètres et ajouter des boîtes de dialogue d’Arguments
+title: Concepteur de flux de travail - ajouter des paramètres et ajouter des boîtes de dialogue d’Arguments
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 67e81423bbd14065249cf7fe91503ab280ec2d8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b01e08ee5579f5422e8e51562444302d685d58d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967636"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789042"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments
 
@@ -27,7 +27,7 @@ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur 
 |-|-|
 |**Direction**|Spécifie si le paramètre représente le flux de données dans la méthode, hors de la méthode, ou les deux.|
 |**Type**|Nom du type du nouveau paramètre.|
-|**Valeur**|Expression VB utilisée pour assigner une valeur par défaut au nouveau paramètre|
+|**Valeur**|Une expression Visual Basic qui est utilisée pour affecter une valeur par défaut pour le nouveau paramètre|
 
 Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **ajouter des Arguments** boîte de dialogue utilisée par le <xref:System.Activities.Statements.InvokeDelegate> concepteur :
 

@@ -17,12 +17,12 @@ ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be81a74f9ce13511e463c4244fc1e817f5c94d1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96671c364703faa9bb70cf44e5df6e9d21c9dcfa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940630"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726583"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Obtient un contexte d’évaluation pour l’évaluation d’expression dans le 
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT GetExpressionContext (   
+HRESULT GetExpressionContext (   
    IDebugExpressionContext2** ppExprCxt  
 );  
 ```  
   
 ```csharp  
-int GetExpressionContext (   
+int GetExpressionContext (   
    out IDebugExpressionContext2 ppExprCxt  
 );  
 ```  

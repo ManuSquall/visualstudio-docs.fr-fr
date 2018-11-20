@@ -1,8 +1,8 @@
 ---
-title: 'Didacticiel : Déboguer du code managé et natif (mode mixte)'
-description: Découvrez comment déboguer une DLL native à partir d’une application .NET Core ou .NET Framework à l’aide du débogage en mode mixte
+title: 'Tutoriel : Déboguer du code managé et du code natif (mode mixte)'
+description: Découvrez comment déboguer une DLL native d’une application .NET Core ou .NET Framework avec le débogage en mode mixte
 ms.custom: ''
-ms.date: 10/24/2018
+ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -16,60 +16,69 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 97ad3b6e112a05db817f7a522c3865893d439fd7
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050324"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295759"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Didacticiel : Déboguer du code managé et natif dans la même session de débogage
+# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code managé et du code natif dans la même session de débogage
 
-Visual Studio vous permet d’activer plusieurs types de débogueur lors du débogage, qui est appelée débogage en mode mixte. Dans ce didacticiel, vous définissez des options pour déboguer le code managé et natif dans une seule session de débogage. Ce didacticiel montre comment déboguer le code natif à partir d’une application gérée, mais vous pouvez également effectuer l’opération inverse, et [déboguer du code managé à partir d’une application native](../debugger/how-to-debug-in-mixed-mode.md). Le débogueur prend également en charge les autres types de débogage en mode mixte, telles que le débogage [code Python et natif](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) et à l’aide du débogueur de script dans types d’applications comme ASP.NET.
+Visual Studio vous permet d’activer plusieurs types de débogueur dans une session de débogage, qui est appelée « débogage en mode mixte ». Dans ce tutoriel, vous découvrez comment déboguer du code managé et du code natif dans une même session de débogage. 
 
-Dans ce didacticiel, vous allez effectuer les actions suivantes :
+Ce tutoriel montre comment déboguer le code natif d’une application managée, mais vous pouvez également [déboguer le code managé d’une application native](../debugger/how-to-debug-in-mixed-mode.md). Le débogueur prend également en charge d’autres types de débogage en mode mixte, comme le débogage [de code Python et de code natif](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), ainsi que l’utilisation du débogueur de script dans des types d’applications comme ASP.NET.
+
+Dans ce tutoriel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Créer une DLL native simple
-> * Créer une simple application .NET Core ou .NET Framework pour appeler la DLL
-> * Démarrez le débogueur
-> * Atteindre un point d’arrêt dans l’application gérée
-> * Pas à pas détaillé du code natif
+> * Créer une application .NET Core ou .NET Framework simple pour appeler la DLL
+> * Configurer le débogage en mode mixte
+> * Démarrer le débogueur
+> * Atteindre un point d’arrêt dans l’application managée
+> * Effectuer un pas à pas détaillé dans le code natif
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez avoir installé Visual Studio et le **développement Desktop en C++** charge de travail.
+Vous devez disposer de Visual Studio avec les charges de travail suivantes :
+- **Développement Desktop avec C++**
+- **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, selon le type d’application que vous voulez créer.
 
-    Si vous n’avez pas déjà installé Visual Studio, accédez à la [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) page pour l’installer gratuitement.
+Si vous n’avez pas Visual Studio, accédez à la page  [Téléchargements de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
 
-    Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
-
-* Vous devez également avoir le **développement .NET desktop** charge de travail ou le **.NET Core, le développement multiplateforme** charge de travail, selon le type d’application qui vous souhaitez créer.
+Si vous disposez d’une version installée de Visual Studio, mais que vous n’avez pas les charges de travail nécessaires, sélectionnez **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Dans Visual Studio Installer, sélectionnez les charges de travail nécessaires, puis sélectionnez **Modifier**.
 
 ## <a name="create-a-simple-native-dll"></a>Créer une DLL native simple
 
-1. Dans Visual Studio, choisissez **fichier** > **New** > **projet**.
+**Pour créer les fichiers du projet de DLL :**
 
-1. Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C++**, **autres** à partir de la section Modèles installés, puis, dans le volet du milieu sélectionnez **projet vide** .
+1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet**.
 
-1. Dans le **nom** , tapez **Mixed_Mode_Debugging** et cliquez sur **OK**.
+1. Dans la boîte de dialogue **Nouveau projet**, sous **Visual C++**, sélectionnez **Autres**, puis sélectionnez **Projet vide** dans le volet central.
 
-    Visual Studio crée le projet vide, ce qui s’affiche dans l’Explorateur de solutions dans le volet droit.
+1. Dans le champ **Nom**, tapez **Mixed_Mode_Debugging**, puis sélectionnez **OK**.
 
-1. Dans l’Explorateur de solutions, cliquez sur le **fichiers sources** nœud dans le C++ de projet, puis choisissez **ajouter** > **un nouvel élément**, puis sélectionnez **C++ fichier (.cpp)**. Nommez le fichier **Mixed_Mode.cpp**, puis choisissez **ajouter**.
+   Visual Studio crée le projet vide et l’affiche dans **l’Explorateur de solutions**.
 
-    Visual Studio ajoute le nouveau fichier C++.
+1. Dans **l’Explorateur de solutions**, sélectionnez **Fichiers sources**, puis sélectionnez **Projet** > **Ajouter un nouvel élément**. Vous pouvez aussi cliquer avec le bouton droit sur **Fichiers sources** et sélectionner **Ajouter** > **Nouvel élément**. 
 
-1. Copiez le code suivant dans *Mixed_Mode.cpp*:
+1. Dans la boîte de dialogue **Nouvel élément**, sélectionnez **Fichier C++ (.cpp)**. Tapez **Mixed_Mode.cpp** dans le champ **Nom**, puis sélectionnez **Ajouter**.
+
+    Visual Studio ajoute le nouveau fichier C++ à **l’Explorateur de solutions**.
+
+1. Copiez le code suivant dans *Mixed_Mode.cpp* :
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. Dans l’Explorateur de solutions, cliquez sur le **fichiers d’en-tête** nœud dans le C++ de projet, puis choisissez **ajouter** > **un nouvel élément**, puis sélectionnez  **Fichier d’en-tête (.h)**. Nommez le fichier **Mixed_Mode.h**, puis choisissez **ajouter**.
+1. Dans **l’Explorateur de solutions**, sélectionnez **Fichiers d’en-tête**, puis sélectionnez **Projet** > **Ajouter un nouvel élément**. Vous pouvez aussi cliquer avec le bouton droit sur **Fichiers d’en-tête** et sélectionner **Ajouter** > **Nouvel élément**. 
 
-    Visual Studio ajoute le nouveau fichier d’en-tête.
+1. Dans la boîte de dialogue **Nouvel élément**, sélectionnez **Fichier d’en-tête (.h)**. Tapez **Mixed_Mode.h** dans le champ **Nom**, puis sélectionnez **Ajouter**.
 
-1. Copiez le code suivant dans *Mixed_Mode.h*:
+   Visual Studio ajoute le nouveau fichier d’en-tête à **l’Explorateur de solutions**.
+
+1. Copiez le code suivant dans *Mixed_Mode.h* :
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -84,41 +93,47 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     #endif
     ```
 
-1. Dans la barre d’outils de débogage, sélectionnez un **déboguer** configuration et **x86** ou **x64** en tant que la plateforme (pour .NET Core, qui s’exécute toujours en mode 64 bits, sélectionnez **x64**  en tant que la plateforme).
+1. Sélectionnez **Fichier** > **Enregistrer tout** ou appuyez sur **Ctrl**+**Maj**+**S** pour enregistrer les fichiers.
 
-1. Dans l’Explorateur de solutions, cliquez sur le nœud du projet (**Mixed_Mode_Debugging**) et choisissez **propriétés**.
+**Pour configurer et générer le projet DLL :**
 
-    > [!IMPORTANT]
-    > Configuration de la propriété pour C++ est par plateforme. Par conséquent, si vous passez d’un à l’autre (x86 à x64 ou vice versa), vous devez également définir les propriétés pour la nouvelle configuration. (Dans la page de propriétés, vérifiez que **x64** ou **Win32** est définie comme plateforme en haut de la page.)
+1. Dans la barre d’outils de Visual Studio, sélectionnez la configuration **Débogage** et la plateforme **x86** ou **x64**. Si votre application appelante est .NET Core, qui s’exécute toujours en mode 64 bits, sélectionnez **x64** comme plateforme.
 
-1. Dans le **propriétés** page, choisissez **propriétés de Configuration** > **l’éditeur de liens** > **avancé**, et Ensuite, dans le **aucun Point d’entrée** déroulante liste, assurez-vous que l’option **non** est sélectionné. Si vous avez besoin de modifier le paramètre pour **non**, puis choisissez **appliquer**.
+1. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet **Mixed_Mode_Debugging** et sélectionnez l’icône **Propriétés**, ou cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Propriétés**.
 
-1. Dans le **propriétés** page, choisissez **propriétés de Configuration** > **général**, puis sélectionnez **bibliothèque dynamique (.dll)** à partir de la **Configuration Type** champ. Appliquez des paramètres.
+1. En haut du volet **Propriétés**, vérifiez que **Configuration** est défini sur **Active (Déboguer)** et que la **Plateforme** est identique à ce que vous avez défini dans la barre d’outils : **x64**, ou **Win32** pour la plateforme x86. 
 
-    ![Basculer vers une DLL native](../debugger/media/mixed-mode-set-as-native-dll.png)
+   > [!IMPORTANT]
+   > Si vous faites passer la plateforme de **x86** à **x64** ou vice versa, vous devez reconfigurer les propriétés pour la nouvelle plateforme. 
 
-1. Cliquez sur le projet et choisissez **Build**.
+1. Sous **Propriétés de configuration** dans le volet gauche, sélectionnez **Éditeur de liens** > **Avancé** et, dans la liste déroulante en regard de **Aucun point d’entrée**, sélectionnez **Non**. Si vous avez dû le changer en **Non**, sélectionnez **Appliquer**.
 
-    Le projet doit se générer sans erreurs.
+1. Sous **Propriétés de configuration**, sélectionnez **Général** et, dans la liste déroulante en regard de **Type de configuration**, sélectionnez **Bibliothèque dynamique (.dll)**. Sélectionnez **Appliquer**, puis **OK**.
 
-## <a name="create-a-simple-net-framework-or-net-core-app-to-call-the-dll"></a>Créer une application .NET Framework ou .NET Core simple pour appeler la DLL
+   ![Passer à une DLL native](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Dans Visual Studio, choisissez **fichier** > **New** > **projet**.
+1. Sélectionnez le projet dans **l’Explorateur de solutions**, puis sélectionnez **Générer** > **Générer la solution**, appuyez sur **F7**, ou cliquez avec le bouton droit sur le projet et sélectionnez **Générer**.
 
-    > [!NOTE]
-    > Bien que vous pouvez également ajouter le nouveau projet managé à la solution avec le projet C++, au lieu de créer une nouvelle solution, nous ne procédons qui ici pour prendre en charge un ensemble plus important de scénarios de débogage.
+   Le projet doit être généré sans erreur.
 
-1. Choisir un modèle pour votre code d’application.
+## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Créer une application managée simple pour appeler la DLL
 
-    Pour .NET Framework, dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C#**, **Windows Desktop** à partir de la section Modèles installés, puis, dans le panneau central, sélectionnez  **Application console (.NET Framework)**.
+1. Dans Visual Studio, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-    Pour .NET Core, dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual C#**, **.NET Core** à partir de la section Modèles installés, puis, dans le volet du milieu sélectionnez  **Console App (.NET Core)**.
+   > [!NOTE]
+   > Bien que vous puissiez aussi ajouter le nouveau projet managé à votre solution C++ existante, la création d’une nouvelle solution prend en charge plus de scénarios de débogage.
 
-1. Dans le **nom** , tapez **Mixed_Mode_Calling_App** et cliquez sur **OK**.
+1. Dans la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C#**  et, dans le volet central :
 
-    Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
+   - Pour une application .NET Framework, sélectionnez **Application console (.NET Framework)**.
+   
+   - Pour une application .NET Core, sélectionnez **Application console (.NET Core)**.
 
-1. Dans *Program.cs*, remplacez le code par défaut par le code suivant :
+1. Dans le champ **Nom**, tapez **Mixed_Mode_Calling_App**, puis sélectionnez **OK**.
+
+   Visual Studio crée le projet vide et l’affiche dans **l’Explorateur de solutions**.
+
+1. Remplacez tout le code de *Program.cs* par le code suivant :
 
     ```csharp
     using System;
@@ -146,33 +161,36 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     }
     ```
 
-1. Dans le nouveau code, mettez à jour le chemin d’accès de fichier pour le chemin d’accès pour la DLL que vous avez créé précédemment (voir les commentaires de code). Veillez à remplacer le *nom d’utilisateur* espace réservé.
+1. Dans le nouveau code, remplacez le chemin de fichier dans `[DllImport]` par votre chemin de fichier vers *Mixed_Mode_Debugging.dll* que vous venez de créer. Consultez le commentaire du code pour des conseils. Veillez à remplacer l’espace réservé *username* (nom d’utilisateur).
 
-## <a name="configure-mixed-mode-debugging-net-framework"></a>Configurer le mode mixte de débogage (.NET Framework)
+1. Sélectionnez **Fichier** > **Enregistrer Program.cs** ou appuyez sur **Ctrl**+**S** pour enregistrer le fichier.
 
-1. Dans l’Explorateur de solutions, cliquez sur managé **Mixed_Mode_Calling_App** de projet et choisissez **définir comme projet de démarrage**.
+## <a name="configure-mixed-mode-debugging"></a>Configurer le débogage en mode mixte 
 
-1. Avec le bouton droit managé **Mixed_Mode_Calling_App** de projet, puis choisissez **propriétés**, puis choisissez **déboguer** dans le volet gauche. Sélectionnez **activer le débogage du code natif**, puis fermez la page de propriétés pour enregistrer les modifications.
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Pour configurer le débogage en mode mixte pour une application .NET Framework 
+
+1. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet **Mixed_Mode_Calling_App** et sélectionnez l’icône **Propriétés**, ou cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Propriétés**.
+
+1. Sélectionnez **Déboguer** dans le volet gauche, cochez la case **Activer le débogage du code natif**, puis fermez la page des propriétés pour enregistrer les modifications.
 
     ![Activer le débogage en mode mixte](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-## <a name="configure-mixed-mode-debugging-net-core"></a>Configurer le mode mixte de débogage (.NET Core)
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Pour configurer le débogage en mode mixte pour une application .NET Core 
 
-Dans la plupart des versions de Visual Studio 2017, vous devez activer le débogage en mode mixte pour le code natif dans une application .NET Core à l’aide du *launchSettings.json* de fichiers au lieu du **propriétés** page. Pour effectuer le suivi des mises à jour de l’interface utilisateur pour cette fonctionnalité, consultez ce [problème GitHub](https://github.com/dotnet/project-system/issues/1125).
+Dans la plupart des versions de Visual Studio 2017, vous devez utiliser le fichier *launchSettings.json* au lieu des propriétés du projet pour activer le débogage en mode mixte pour le code natif dans une application .NET Core. Pour effectuer le suivi des mises à jour de l’interface utilisateur pour cette fonctionnalité, consultez ce [problème GitHub](https://github.com/dotnet/project-system/issues/1125).
 
-1. Ouvrez le *launchSettings.json* de fichiers dans le *propriétés* dossier. Par défaut, vous trouverez le fichier à cet emplacement.
+1. Dans **l’Explorateur de solutions**, développez **Propriétés**, puis ouvrez le fichier *launchSettings.json*. 
 
-    *C:\Users\<nom d’utilisateur > \source\repos\Mixed_Mode_Calling_App\Properties*
+   >[!NOTE]
+   >Par défaut, *launchSettings.json* se trouve dans *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Si *launchSettings.json* n’existe pas, sélectionnez le nœud du projet **Mixed_Mode_Calling_App** dans **l’Explorateur de solutions**, puis sélectionnez l’icône **Propriétés**, ou cliquez avec le bouton droit sur le projet et sélectionnez **Propriétés**. Faites une modification temporaire dans l’onglet **Déboguer** et générez le projet. Ceci crée un fichier *launchSettings.json*. Annulez la modification que vous avez apportée dans l’onglet **Déboguer**.
 
-    Si le fichier n’est pas présent, ouvrez les propriétés du projet (avec le bouton droit managé **Mixed_Mode_Calling_App** projet dans l’Explorateur de solutions, puis sélectionnez **propriétés**). Apportez une modification temporaire dans le **déboguer** onglet et générez votre projet. Annuler la modification que vous avez apportées.
-
-1. Dans le *lauchsettings.json* , ajoutez la propriété suivante :
+1. Dans le fichier *lauchsettings.json*, ajoutez la ligne suivante :
 
     ```csharp
     "nativeDebugging": true
     ```
 
-    Par conséquent, par exemple, votre fichier peut se présenter comme suit :
+    Le fichier complet se présente alors comme l’exemple suivant :
 
     ```csharp
     {
@@ -185,47 +203,47 @@ Dans la plupart des versions de Visual Studio 2017, vous devez activer le débog
     }
     ```
 
-## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définissez un point d’arrêt et démarrez le débogueur
+## <a name="set-a-breakpoint-and-start-debugging"></a>Définir un point d’arrêt et démarrer le débogage
 
-1. Dans le projet c#, ouvrez *Program.cs* et définissez un point d’arrêt dans la ligne de code suivante en cliquant dans la marge de gauche :
+1. Dans le projet C#, ouvrez *Program.cs*. Définissez un point d’arrêt sur la ligne de code suivante en cliquant dans la marge de gauche, en sélectionnant la ligne et en appuyant sur **F9**, ou en cliquant avec le bouton droit sur la ligne et en sélectionnant **Point d’arrêt**  > **Insérer un point d’arrêt**.
 
     ```csharp
     int result = Multiply(7, 7);
     ```
 
-    Un cercle rouge apparaît dans la marge de gauche pour indiquer que vous avez défini le point d’arrêt.
+    Un cercle rouge apparaît là dans la marge gauche où vous avez défini le point d’arrêt.
 
-1. Appuyez sur **F5** (**déboguer** > **démarrer le débogage**) pour démarrer le débogueur.
+1. Appuyez sur **F5**, sélectionnez la flèche verte dans la barre d’outils de Visual Studio, ou sélectionnez **Déboguer** > **Démarrer le débogage** pour démarrer le débogage.
 
-    Le débogueur s’arrête sur le point d’arrêt que vous définissez. Une flèche jaune indique où le débogueur est actuellement suspendu.
+   Le débogueur se met en pause sur point d’arrêt que vous avez défini. Une flèche jaune indique l’endroit où le débogueur est actuellement en pause.
 
-## <a name="step-into-native-code"></a>Pas à pas détaillé du code natif
+## <a name="step-in-and-out-of-native-code"></a>Effectuer un pas à pas détaillé et un pas à pas sortant du code natif
 
-1. Pendant la suspension de l’application gérée, appuyez sur **F11** (**déboguer** > **pas à pas détaillé**).
+1. Avec le débogage en pause dans l’application managée, appuyez sur **F11** ou sélectionnez **Déboguer** > **Pas à pas détaillé**.
 
-    Le fichier d’en-tête avec le code natif s’ouvre et vous voyez la flèche jaune, où le débogueur est suspendu.
+   Le fichier d’en-tête natif *Mixed_Mode.h* s’ouvre et vous voyez la flèche jaune où le débogueur est en pause.
 
-    ![Pas à pas détaillé du code natif](../debugger/media/mixed-mode-step-into-native-code.png)
+   ![Effectuer un pas à pas détaillé dans du code natif](../debugger/media/mixed-mode-step-into-native-code.png)
 
-    Maintenant, vous pouvez effectuer des opérations comme ensemble et points d’arrêt et inspecter les variables.
+1. Vous pouvez maintenant définir et atteindre des points d’arrêt, et inspecter les variables dans le code natif ou dans le code managé.
 
-1. Pointez sur les variables pour voir leur valeur.
+   - Placez le curseur sur des variables dans le code source pour voir leur valeur.
 
-1. Examinez le **automatique** et **variables locales** windows pour afficher une variable et leurs valeurs.
+   - Examinez des variables et leur valeur dans les fenêtres **Automatique** et **Variables locales**.
 
-    Pendant la suspension dans le débogueur, vous pouvez utiliser d’autres fonctionnalités du débogueur comme le **espion** fenêtre et la **pile des appels** fenêtre.
+   - Avec le débogueur en pause, vous pouvez également utiliser la fenêtre **Espion** et la fenêtre **Pile des appels**.
 
-1. Appuyez sur **F11** à nouveau pour la débogueur une ligne d’avance.
+1. Appuyez à nouveau sur **F11** pour faire avancer le débogueur d’une ligne.
 
-1. Appuyez sur **MAJ + F11** (**déboguer** > **pas à pas sortant**) pour continuer l’exécution d’application et de suspendre à nouveau dans l’application gérée.
+1. Appuyez sur **Maj**+**F11** ou sélectionnez **Déboguer** > **Pas à pas sortant** pour continuer l’exécution et placer à nouveau le débogueur en pause dans l’application managée.
 
-1. Appuyez sur **F5** pour continuer l’exécution de l’application.
+1. Appuyez sur **F5** ou sélectionnez la flèche verte pour continuer le débogage de l’application.
 
-    Félicitations ! Vous avez terminé le didacticiel sur le débogage en mode mixte.
+Félicitations ! Vous avez terminé le didacticiel sur le débogage en mode mixte.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
-Dans ce didacticiel, vous avez appris à déboguer le code natif à partir d’une application gérée en activant le débogage en mode mixte. Pour une vue d’ensemble des autres fonctionnalités du débogueur, consultez l’article suivant :
+Dans ce didacticiel, vous avez découvert comment déboguer du code natif à partir d’une application managée en activant le débogage en mode mixte. Pour une vue d’ensemble des autres fonctionnalités du débogueur, consultez :
 
 > [!div class="nextstepaction"]
 > [Présentation du débogueur](../debugger/debugger-feature-tour.md)

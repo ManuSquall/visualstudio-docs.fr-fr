@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 93dbaf0d8c3d1f3542683a05b175c43c0c43b948
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237625"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220709"
 ---
 # <a name="marks-view"></a>Marques, vue
 La vue Marques affiche l’échantillonnage et les événements ETW qui ont été insérés dans l’application.  
@@ -48,4 +48,4 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du rapport de performances](../profiling/performance-report-overview.md)   
  [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

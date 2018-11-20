@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
 caps.latest.revision: 6
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6bc8d96c6207889f07ec6bf1257be3d620855fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899927"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731426"
 ---
 # <a name="create-an-android-native-activity-app"></a>Créer une application Android Native Activity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849357"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809127"
 ---
 # <a name="interop-activity-designer"></a>Concepteur d'activités Interop
 
@@ -35,7 +35,7 @@ Le [Migration](../workflow-designer/migration-activity-designers.md) catégorie 
 
 Pour les projets c#, vous pouvez recibler le projet pour utiliser le .NET Framework 4 complet en double-cliquant sur le projet dans **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **Application** onglet, sélectionnez le **NET Framework 4** option dans le **framework cible**. Sélectionnez **Oui** confirmer cette modification.
 
-Pour les projets VB, vous pouvez recibler le projet pour utiliser le .NET Framework 4 complet en cliquant sur le projet dans **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **compiler** , cliquez sur le **Options avancées de compilation** bouton. Sélectionnez **.Net Framework 4** à partir de la **liste de framework cible**, puis cliquez sur **OK**. Sélectionnez **Oui** confirmer cette modification.
+Pour les projets Visual Basic, vous pouvez recibler le projet pour utiliser le .NET Framework 4 complet en cliquant sur le projet dans **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **compiler** , cliquez sur le **Options avancées de compilation** bouton. Sélectionnez **.Net Framework 4** à partir de la **liste de framework cible**, puis cliquez sur **OK**. Sélectionnez **Oui** confirmer cette modification.
 
 Le **Interop** Concepteur d’activités peut être déplacé de **boîte à outils** et déposé sur l’aire du Concepteur de flux de travail chaque fois que les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Suppression de la **Interop** Concepteur d’activités crée un <xref:System.Activities.Statements.Interop> activité avec une valeur par défaut **DisplayName** Interop. Vous pouvez modifier le <xref:System.Activities.Activity.DisplayName%2A> dans l’en-tête de la **Interop** Concepteur d’activités, ou dans le **DisplayName** case de la grille des propriétés.
 

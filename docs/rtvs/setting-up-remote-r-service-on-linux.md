@@ -11,12 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667923"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220806"
 ---
 # <a name="remote-r-service-for-linux"></a>Service R à distance pour Linux
 
@@ -108,7 +108,7 @@ Dans chaque cas, les interpréteurs R suivants doivent être installés sur l’
 
 ### <a name="windows-subsystem-for-linux-wsl"></a>Sous-système Windows pour Linux (WSL)
 
-1. Suivez les instructions d’installation WSL pour [Windows 10](https://msdn.microsoft.com/commandline/wsl/install-win10) ou [Windows Server](https://msdn.microsoft.com/en-us/commandline/wsl/install-on-server).
+1. Suivez les instructions d’installation WSL pour [Windows 10](/windows/wsl/install-win10#install-the-windows-subsystem-for-linux) ou [Windows Server](/windows/wsl/install-on-server#enable-the-windows-subsystem-for-linux-wsl).
 1. Démarrez Bash sur Windows et suivez les instructions précédentes relatives à un [ordinateur Ubuntu physique](#physical-ubuntu-computer) à une exception près. Dans l’étape 3, démarrez le service plutôt à l’aide de la commande `rtvsd`, car WSL ne prend actuellement pas en charge les interfaces systemd/systemctl.
 
 ### <a name="local-or-remote-docker-container-clean-build"></a>Conteneur Docker local ou distant (build propre)

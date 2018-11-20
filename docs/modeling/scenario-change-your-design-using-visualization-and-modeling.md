@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942476"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967504"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -186,11 +186,11 @@ Pour vous assurer qu’est en conflit avec la conception ne se produire pas pend
 
 Consultez :
 
-- [Définir votre processus de génération](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [Utiliser le concepteur visuel](/azure/devops/pipelines/get-started-designer)
 
-- [Utiliser un processus de génération d’archivage contrôlé pour la validation des modifications](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC archivage contrôlé](/azure/devops/pipelines/build/triggers#gated)
 
-- [Personnaliser votre modèle de processus de génération](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [Générez et publiez des tâches](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Conseils généraux sur la création et l’utilisation de modèles
 
@@ -220,7 +220,7 @@ Consultez :
 
 - [Graphiques, tableaux de bord et widgets (Services de DevOps Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> Tester, valider et archivez du Code
 
@@ -486,5 +486,5 @@ Diagrammes de dépendance vous aider à :
 
 - [Visualiser du code](../modeling/visualize-code.md)
 - [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
-- [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Utiliser des modèles dans le développement Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
