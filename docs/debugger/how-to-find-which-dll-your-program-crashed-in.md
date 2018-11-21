@@ -1,5 +1,5 @@
 ---
-title: 'Comment : savoir quelle DLL votre programme a causé l’arrêt | Documents Microsoft'
+title: 'Comment : trouver quelle DLL votre programme a causé l’arrêt | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,22 +24,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 350cd8a78780eb8ddb2a197ed1e8920fda23bbf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 40f27e0bec20e1dd037beaa5f60ea648c0ccb171
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474825"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257095"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Comment : savoir quelle DLL a causé l'arrêt de votre programme
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Comment : trouver quelle DLL votre programme a causé l’arrêt (C#, C++, Visual Basic, F#)
   
- Si votre application tombe en panne pendant un appel à une DLL système ou au code de quelqu'un d'autre, vous devez rechercher la DLL active au moment de l'incident. Si vous rencontrez un incident dans une DLL en dehors de votre propre programme, vous pouvez identifier l’emplacement en utilisant la **Modules** fenêtre.  
+ Si votre application tombe en panne pendant un appel à une DLL système ou au code de quelqu'un d'autre, vous devez rechercher la DLL active au moment de l'incident. Si vous rencontrez un incident dans une DLL en dehors de votre propre programme, vous pouvez identifier l’emplacement en utilisant le **Modules** fenêtre.  
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Pour savoir où une panne s'est produite à l'aide de la fenêtre Modules  
   
 1.  Notez l'adresse où la panne s'est produite.
 
-    Si l’adresse n’est pas affiché dans le message d’erreur, vous devrez peut-être utiliser d’autres méthodes pour identifier la DLL. Si vous suspectez une DLL système, vous pouvez [charger les symboles](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) à partir des serveurs de symboles Microsoft lors du débogage. Dans le cas contraire, vous devrez peut-être [créer un fichier dump](../debugger/using-dump-files.md) avec segment de mémoire des informations à la place. Divers [outils](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) sont disponibles pour créer des fichiers de vidage.
+    Si l’adresse n’est pas affiché dans le message d’erreur, vous devrez peut-être utiliser d’autres méthodes pour identifier la DLL. Si vous suspectez une DLL système, vous pouvez [charger les symboles](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) à partir de serveurs de symboles Microsoft lors du débogage. Sinon, vous devrez peut-être [créer un fichier dump](../debugger/using-dump-files.md) avec tas d’informations à la place. Divers [outils](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) sont disponibles pour créer des fichiers de vidage.
   
 2.  Sur le **déboguer** menu, choisissez **Windows**, puis cliquez sur **Modules**.  
   

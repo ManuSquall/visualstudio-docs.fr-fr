@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180176"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257197"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Déboguer au moment du Design dans Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Déboguer au moment du Design dans Visual Studio (C#, C++, Visual Basic, F#)
 
 Dans certains scénarios, vous souhaiterez déboguer du code lors de la conception de temps au lieu de pendant l’exécution de l’application. Vous pouvez le faire à l’aide de la **immédiat** fenêtre. Si vous souhaitez déboguer du code XAML qui interagit avec un autre code, tel que le code de liaison de données, vous pouvez utiliser **déboguer** > **attacher au processus** pour ce faire.
   
@@ -32,7 +32,7 @@ Dans certains scénarios, vous souhaiterez déboguer du code lors de la concepti
 
 Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou une sous-routine contient un point d’arrêt, Visual Studio s’arrête l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment du design.  
 
-L’exemple suivant est en Visual Basic, mais le **immédiat** fenêtre est également pris en charge dans les applications c# et C++.
+L’exemple suivant est en Visual Basic. Utilisation de la **immédiat** fenêtre au moment du design est également pris en charge dans C#, C++, et F# applications.
   
 1.  Collez le code suivant dans une application de console Visual Basic :  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : afficher et masquer les groupes de registres | Documents Microsoft'
+title: 'Comment : afficher et masquer les groupes de registres | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,14 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a98927d0132402e2977d5d8f1f28cbba43da636c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474087"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257145"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Comment : afficher et masquer les groupes de registres
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Comment : afficher et masquer les groupes de registres (C#, C++, Visual Basic, F#)
+
 Le **inscrit** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud, **général**catégorie.  
   
  Pour réduire l’encombrement, la **inscrit** fenêtre classe les registres en groupes. Si vous cliquez sur le **inscrit** fenêtre, vous verrez un menu contextuel contenant ces groupes, vous pouvez afficher ou masquer comme vous le souhaitez en suivant la procédure ci-dessous.  

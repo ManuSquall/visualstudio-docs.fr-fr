@@ -1,5 +1,5 @@
 ---
-title: 'Comment : modifier une valeur de Registre | Documents Microsoft'
+title: 'Comment : modifier une valeur de Registre | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,19 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de743aa67b3875654dee1b13b27a74e208bb6d53
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475001"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257077"
 ---
-# <a name="how-to-edit-a-register-value"></a>Comment : modifier une valeur de Registre
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Comment : modifier une valeur de Registre (C#, C++, Visual Basic, F#)
+
 La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud.  
   
 ### <a name="to-change-the-value-of-a-register"></a>Pour modifier la valeur d'un Registre  
   
-1.  Dans le **inscrit** fenêtre, utilisez la touche TAB ou la souris pour placer l’insertion de point à la valeur que vous souhaitez modifier. Quand vous commencez à taper, le curseur doit se trouver en face de la valeur à remplacer.  
+1.  Dans le **inscrit** fenêtre, utilisez la touche TAB ou la souris pour déplacer l’insertion de point à la valeur que vous souhaitez modifier. Quand vous commencez à taper, le curseur doit se trouver en face de la valeur à remplacer.  
   
 2.  Tapez la nouvelle valeur.  
   

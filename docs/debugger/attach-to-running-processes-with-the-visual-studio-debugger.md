@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843260"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257340"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus est en cours d’exécution, sélectionnez **déboguer** > **attacher au processus** ou appuyez sur **Ctrl**+**Alt** + **P** dans Visual Studio et utiliser le **attacher au processus** boîte de dialogue pour attacher le débogueur au processus.
@@ -153,7 +153,7 @@ Pour certains types d’applications, telles que des applications de l’applica
 
 Pour que le débogueur s’attache au code écrit en C++, le code doit émettre `DebuggableAttribute`. Vous pouvez ajouter cela automatiquement à votre code grâce à la liaison, à l'aide de l'option [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) .
 
-Débogage de script côté client, le débogage de script doit être activé dans le navigateur. Pour le débogage de script côté client sur Chrome, choisissez **Webkit** en tant que le type de code et, selon votre type d’application, vous devrez peut-être démarrer le navigateur en mode débogage (type `chrome.exe --remote-debugging-port=9222` à partir d’une ligne de commande).
+Débogage de script côté client, le débogage de script doit être activé dans le navigateur. Pour le débogage de script côté client sur Chrome, choisissez **Webkit** en tant que le type de code et, selon votre type d’application, vous devrez peut-être fermer toutes les instances de Chrome et démarrer le navigateur en mode débogage (type `chrome.exe --remote-debugging-port=9222` à partir d’une ligne de commande).
 
 Pour sélectionner rapidement un processus en cours d’exécution à attacher, dans Visual Studio, tapez **Ctrl**+**Alt**+**P**, puis tapez la première lettre de la nom du processus.
 
