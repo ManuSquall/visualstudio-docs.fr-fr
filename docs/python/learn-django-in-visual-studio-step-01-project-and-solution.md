@@ -1,7 +1,7 @@
 ---
 title: 'Tutoriel : Découvrez Django dans Visual Studio, étape 1'
 description: Une procédure pas à pas des notions fondamentales de Django dans le cadre de projets Visual Studio, qui montre la prise en charge du développement de Django par Visual Studio.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942737"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001241"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 

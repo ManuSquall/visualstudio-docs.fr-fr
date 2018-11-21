@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 368680321f8ff8ab908e79e075a5797ba9ecd598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945114"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948879"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Déploie une solution après une génération ou une regénération. S’applique aux projets de code managé uniquement.
@@ -64,7 +64,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)

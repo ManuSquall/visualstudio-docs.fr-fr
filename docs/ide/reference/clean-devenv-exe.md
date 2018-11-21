@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc621aaa8bac5fa191efd9602a47977d29fa1da2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942995"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948853"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Nettoie tous les fichiers et répertoires de sortie intermédiaires.
@@ -64,7 +64,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

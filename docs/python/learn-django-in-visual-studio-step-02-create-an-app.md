@@ -1,7 +1,7 @@
 ---
 title: Tutoriel - Découvrez Django dans Visual Studio, étape 2
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les étapes de création d’une application et l’utilisation des affichages et modèles.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547930"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001280"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 

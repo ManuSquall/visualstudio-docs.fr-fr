@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561671"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826776"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutoriel : Apprendre à déboguer avec Visual Studio
 
@@ -33,7 +33,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 
 Bien que l’application de démonstration soit écrite en C# et en C++, les fonctionnalités sont applicables à Visual Basic, à JavaScript et à d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en C#.
 
-Dans ce tutoriel, vous allez effectuer les actions suivantes :
+Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur et atteindre des points d’arrêt
@@ -91,7 +91,7 @@ Dans ce tutoriel, vous allez effectuer les actions suivantes :
     }
     ```
 
-    par ce code :
+    par le code suivant :
 
     ```csharp
     using System;
@@ -297,7 +297,7 @@ Dans ce tutoriel, vous allez effectuer les actions suivantes :
 
     Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code. 
 
-6. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer le débogage** : l’application démarre et le débogueur s’exécute jusqu’à la ligne de code où vous avez défini le point d’arrêt.
+2. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer le débogage** : l’application démarre et le débogueur s’exécute jusqu’à la ligne de code où vous avez défini le point d’arrêt.
 
     ![Définir et atteindre un point d’arrêt](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code avec Exécuter jusqu’au clic
 
-5. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur la méthode `Console.WriteLine` (`std::cout` en C++) dans la classe `Triangle` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png " RunToClick") apparaisse à gauche.
+1. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur la méthode `Console.WriteLine` (`std::cout` en C++) dans la classe `Triangle` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png " RunToClick") apparaisse à gauche.
 
      ![Utiliser la fonctionnalité Exécuter jusqu’au clic](../debugger/media/get-started-run-to-click.png "Exécuter jusqu’au clic")
 
    > [!NOTE]
    > Le bouton **Exécuter jusqu’au clic** est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton avec la flèche verte, utilisez à la place **F11** dans cet exemple pour faire avancer le débogueur jusqu’au bon endroit.
 
-6. Cliquez sur le bouton **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Cliquez sur le bouton **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     L’utilisation de ce bouton revient à définir un point d’arrêt temporaire. **Exécuter jusqu’au clic** est pratique pour examiner rapidement une zone visible du code d’application (vous pouvez cliquer dans n’importe quel fichier ouvert).
 
@@ -440,11 +440,11 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 1. Appuyez sur **F5** pour poursuivre l’exécution de l’application.
 
-    Félicitations ! Vous avez terminé ce tutoriel.
+    Félicitations ! Vous avez terminé ce didacticiel.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Dans ce tutoriel, vous avez découvert comment démarrer le débogueur, parcourir le code pas à pas et inspecter des variables. Vous pouvez obtenir une présentation générale des fonctionnalités du débogueur et suivre des liens qui donnent accès à plus d’informations.
 
 > [!div class="nextstepaction"]
-> [Conseils et astuces pour les débogueurs](../debugger/debugger-tips-and-tricks.md)
+> [Présentation du débogueur](../debugger/debugger-feature-tour.md)

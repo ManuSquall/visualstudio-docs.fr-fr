@@ -1,7 +1,7 @@
 ---
 title: Modification de code Python
 description: La modification de Python dans Visual Studio fournit des fonctionnalités diverses telles que la navigation, des extraits de code et IntelliSense, ainsi que la mise en forme, le linting et la refactorisation.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774763"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001267"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
