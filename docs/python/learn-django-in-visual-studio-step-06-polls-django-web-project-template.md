@@ -1,7 +1,7 @@
 ---
 title: Tutoriel – Découvrez Django dans Visual Studio, étape 6
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités du modèle de projet web Django telles que la personnalisation de l’administration.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143474"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001254"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle Sondages du projet web Django
 

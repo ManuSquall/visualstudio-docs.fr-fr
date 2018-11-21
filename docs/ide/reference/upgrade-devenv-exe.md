@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fe5a4e75ddf349210a936f47d99c94ec70c240
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ba94a599c119d537efb90b29c1c2ec0084ace447
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704705"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948333"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 Met à jour le fichier solution et tous ses fichiers projet, ou le fichier projet spécifié, aux formats [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] actuels pour ces fichiers.
@@ -55,4 +55,4 @@ devenv "MyProject.sln" /upgrade
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

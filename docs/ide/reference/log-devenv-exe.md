@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3373f1e1a23ae0373a9c49a39a924398ebe143e0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fb33eedf322009cfd5602c481bce36beb4126a9b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704770"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948391"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 Enregistre toute l'activité dans le fichier journal de résolution des problèmes. Ce fichier apparaît une fois que vous avez appelé `devenv /log` au moins une fois. Par défaut, le fichier journal est :
@@ -41,4 +41,4 @@ Devenv /log Path\NameOfLogFile
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c678d7304c879cf42c24de9d83704971043676
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6df78ec4be1fc94951634b84a98e80dc1403a41b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704146"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948736"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 Démarre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en mode sans échec, en chargeant uniquement l’environnement et les services par défaut.
@@ -44,4 +44,4 @@ Devenv.exe /SafeMode
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

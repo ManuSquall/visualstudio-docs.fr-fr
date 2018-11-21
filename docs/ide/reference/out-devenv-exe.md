@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 623f4e8a8a2f6e275c42507aa3839106f3a1dd2f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704484"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948242"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Spécifie un fichier pour stocker et afficher les erreurs qui se produisent quand vous exécutez, générez, regénérez ou déployez une solution.
@@ -55,7 +55,7 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)

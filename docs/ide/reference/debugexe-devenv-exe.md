@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07dfcbb6064d0f1043c0621534b953a5f5c63e82
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704952"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948775"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 Ouvre le fichier exécutable spécifié à déboguer.
@@ -49,4 +49,4 @@ Devenv.exe /debugexe MyApplication.exe
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
