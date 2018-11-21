@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826706"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257210"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
 Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+
+ Le **automatique** fenêtre n’est disponible pour C#, code Visual Basic, C++ et Python, mais pas pour JavaScript ou F#.
   
 Pour ouvrir le **automatique** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **automatique**, ou appuyez sur **Ctrl**+**Alt**+**V** > **A**.  
 
@@ -71,9 +73,7 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
 ![Barre d’outils emplacement de débogage](../debugger/media/debuglocationtoolbar.png "barre d’outils emplacement de débogage")
 
-## <a name="bkmk_whatvariables"></a> Variables dans la fenêtre automatique
-
- Le **automatique** fenêtre n’est disponible pour C#, Visual Basic et C++ de code, mais pas pour JavaScript ou F#.
+## <a name="bkmk_whatvariables"></a> Variables dans la fenêtre automatique (C#, C++, Visual Basic, Python)
 
  Affichent les variables différentes dans différents langages le **automatique** fenêtre.
 

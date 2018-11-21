@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348889"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257236"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre Pile des appels dans le débogueur
 
-À l’aide de la **pile des appels** , vous pouvez afficher les appels de fonction ou une procédure qui se trouvent actuellement sur la pile. Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont bien appelées. La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
+À l’aide de la **pile des appels** , vous pouvez afficher les appels de fonction ou une procédure qui se trouvent actuellement sur la pile. La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
   
 Lorsque [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une partie d’une pile des appels, le **pile des appels** fenêtre n’est peut-être pas en mesure d’afficher des informations correctes pour cette partie de la pile des appels, afficher à la place :  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> Le **pile des appels** est identique à la perspective de débogage dans certains IDE comme Eclipse. 
+> La fenêtre **Pile des appels** est similaire à la perspective Débogage dans certains IDE, comme Eclipse. 
 > 
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, sélectionnez **importation et exportation de paramètres** sur le **outils** menu.  Consultez [personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -103,7 +103,7 @@ Dans Visual Studio Enterprise (uniquement), vous pouvez afficher des cartes de c
 
 ![Afficher la pile des appels sur carte de Code](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Afficher le code machine pour une fonction sur la pile des appels  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine pour une fonction sur la pile des appels (C#, C++, Visual Basic, F#) 
   
 -   Dans le **pile des appels** fenêtre, clic droit de la fonction dont le code machine code que vous souhaitez afficher et sélectionner **atteindre le code machine**.    
 
@@ -111,7 +111,8 @@ Dans Visual Studio Enterprise (uniquement), vous pouvez afficher des cartes de c
   
 -   Avec le bouton droit dans le **pile des appels** fenêtre et activez ou désactivez **afficher \<**  _les informations que vous souhaitez_ **>**.  
   
-## <a name="bkmk_symbols"></a> Charger les symboles pour un module
+## <a name="bkmk_symbols"></a> Charger les symboles pour un module (C#, C++, Visual Basic, F#)
+
 Dans le **pile des appels** fenêtre, vous pouvez charger des symboles de débogage pour le code qui n’a pas de symboles chargés. Ces symboles peuvent être .NET Framework ou des symboles système téléchargés à partir des serveurs de symboles publics Microsoft ou des symboles dans un chemin d’accès de symboles sur l’ordinateur que vous déboguez.  
   
 Consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

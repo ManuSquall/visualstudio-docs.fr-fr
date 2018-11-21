@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612725"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257353"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -54,16 +54,16 @@ S’il est difficile ou du temps recréer un état particulier dans votre applic
 
 3. Si vous êtes intéressé par un autre type de condition, sélectionnez **filtre** au lieu de **expression conditionnelle** dans le **les paramètres de point d’arrêt** boîte de dialogue, puis suivez les conseils de filtre.
 
-## <a name="change-the-execution-flow"></a>Modifier le flux d’exécution
+## <a name="change-the-execution-flow"></a>Changer le flux d’exécution
 
 Avec le débogueur en pause sur une ligne de code, utilisez la souris pour obtenir le pointeur de la flèche jaune à gauche. Déplacez le pointeur de la flèche jaune vers un autre point dans le chemin d’accès de l’exécution de code. Puis vous utilisez F5 ou une commande d’étape pour poursuivre l’exécution de l’application.
 
 ![Déplacer le pointeur d’exécution](../debugger/media/dbg-tour-move-the-execution-pointer.gif "déplacer le pointeur d’exécution")
 
-En modifiant le flux d’exécution, vous pouvez effectuer des opérations telles que les chemins d’exécution de code différent de test ou de réexécuter le code sans avoir à redémarrer le débogueur.
+En changeant le flux d’exécution, vous pouvez effectuer des opérations comme tester d’autres chemins d’exécution du code ou réexécuter du code sans devoir redémarrer le débogueur.
 
 > [!WARNING]
-> Souvent, vous devez être prudent avec cette fonctionnalité, et un avertissement s’affiche dans l’info-bulle. Vous pouvez voir les autres avertissements, trop. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
+> Vous devez rester prudent avec cette fonctionnalité, vous pouvez voir un avertissement dans l’info-bulle. Vous pouvez aussi en voir d’autres. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (c#, Visual Basic)
 
@@ -145,7 +145,7 @@ Sélectionnez une opération dans la vue du résumé pour afficher des informati
 
 Pour plus d’informations, consultez [Utilisation du réseau](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Vous familiariser avec la façon dont le débogueur s’attache à votre application
+## <a name="modules_window"></a> Vous familiariser avec la façon dont le débogueur s’attache à votre application (C#, C++, Visual Basic, F#)
 
 Pour attacher à votre application en cours d’exécution, le débogueur charge les fichiers de symboles (.pdb) générés pour exactement identique à celle de l’application que vous essayez de déboguer. Dans certains scénarios, une petite base de connaissances des fichiers de symboles peut être utile. Vous pouvez examiner la façon dont Visual Studio charge les fichiers de symboles à l’aide de la **Modules** fenêtre.
 
