@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089028"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281743"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multicouches
 *Applications multicouches* des applications de données sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une séparation claire entre les différentes couches qui composent l’application.
@@ -64,7 +64,7 @@ L’illustration suivante montre les fonctionnalités et technologies qui sont d
 En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.
 
 ## <a name="data-tier"></a>Couche Données
-Le *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).
+Le *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant SQL Server).
 
 L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche données d’une application multiniveau.
 

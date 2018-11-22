@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829638"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281847"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 ## <a name="two-stage-updates"></a>Mises à jour de deux étapes  
  La mise à jour une source de données est un processus en deux étapes. La première étape consiste à mettre à jour le jeu de données avec les nouveaux enregistrements, enregistrements modifiés ou enregistrements supprimés. Si votre application envoie jamais ces modifications à la source de données, puis vous avez terminé la mise à jour.  
   
- Si vous envoyez les modifications apportées à la base de données, puis une deuxième étape est requise. Si vous n’utilisez pas des contrôles liés aux données, vous devez appeler manuellement la méthode de mise à jour de la même TableAdapter (ou adaptateur de données) que vous avez utilisé pour remplir le jeu de données. Toutefois, vous pouvez également utiliser différents adaptateurs, par exemple, pour déplacer des données à partir d’une source de données vers un autre ou pour mettre à jour de plusieurs sources de données. Si vous n’utilisez pas la liaison de données et enregistrez les modifications pour les tables associées, vous devez instancier manuellement une variable de la classe TableAdapterManager généré automatiquement, puis appelez sa méthode UdpateAll.  
+ Si vous envoyez les modifications apportées à la base de données, puis une deuxième étape est requise. Si vous n’utilisez pas des contrôles liés aux données, vous devez appeler manuellement la méthode de mise à jour de la même TableAdapter (ou adaptateur de données) que vous avez utilisé pour remplir le jeu de données. Toutefois, vous pouvez également utiliser différents adaptateurs, par exemple, pour déplacer des données à partir d’une source de données vers un autre ou pour mettre à jour de plusieurs sources de données. Si vous n’utilisez pas la liaison de données et enregistrez les modifications pour les tables associées, vous devez instancier manuellement une variable de la classe TableAdapterManager généré automatiquement, puis appelez sa méthode UpdateAll.  
   
  ![Mises à jour du jeu de données de Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans une mise à jour réussie  
