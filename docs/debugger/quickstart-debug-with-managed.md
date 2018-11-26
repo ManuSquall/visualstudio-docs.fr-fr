@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637521"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257184"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code managé à l’aide du débogueur Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code C# ou Visual Basic avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
@@ -126,7 +126,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 
 ## <a name="set-a-breakpoint"></a>Définir un point d’arrêt
 
-Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interrompre l’exécution du code pour vous permettre d’examiner les valeurs des variables ou le comportement de la mémoire, ou de voir si une branche de code est, ou non, exécutée. C’est la fonctionnalité la plus élémentaire du débogage.
+Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interrompre l’exécution du code pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire, ou l’exécution ou non d’une branche de code. C’est la fonctionnalité la plus élémentaire du débogage.
 
 1. Pour définir le point d’arrêt, cliquez dans la marge à gauche de l’appel de la fonction `doWork` (ou sélectionnez la ligne de code et appuyez sur **F9**).
 
@@ -161,13 +161,13 @@ L’application poursuit son exécution en appelant `doWork`, puis s’arrête �
 
     Le datatip vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel. 
 
-2. Développez le datatip pour examiner les valeurs de propriétés actuelles de l’objet `c1`.
+2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c1`.
 
 3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c1` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé vers un emplacement approprié.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Modifier le code et continuer le débogage
 
-Si vous identifiez un changement que vous voulez tester dans votre code au milieu d’une session de débogage, vous pouvez également le faire.
+Si vous identifiez une modification que vous voulez tester dans votre code pendant votre session de débogage, vous pouvez également le faire.
 
 1. Cliquez sur la deuxième instance de `c2.First.Value` et remplacez `c2.First.Value` par `c2.Last.Value`.
 
