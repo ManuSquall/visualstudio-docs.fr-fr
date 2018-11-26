@@ -1,5 +1,5 @@
 ---
-title: Analyseurs Roslyn dans Visual Studio
+title: Analyse du code à l’aide d’analyseurs Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511420"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948840"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Vue d’ensemble des analyseurs .NET Compiler Platform
 
-Visual Studio 2017 comprend un ensemble intégré d’analyseurs .NET Compiler Platform qui analysent votre code C# et Visual Basic à mesure que vous tapez. Vous pouvez installer des analyseurs supplémentaires comme une extension Visual Studio ou par projet comme un package NuGet. Les analyseurs observent le style du code, la qualité et facilité de gestion du code, la conception du code, ainsi que d’autres problèmes.
+Visual Studio 2017 comprend un ensemble intégré d’analyseurs .NET Compiler Platform qui analysent votre code C# et Visual Basic à mesure que vous tapez. Les analyseurs observent le style du code, la qualité et facilité de gestion du code, la conception du code, ainsi que d’autres problèmes. Vous pouvez installer des analyseurs supplémentaires comme une extension Visual Studio ou par projet comme un package NuGet.
 
 Si des violations de règle sont trouvées par un analyseur, elles sont signalées à la fois dans l’éditeur de code sous la forme d’une *ligne ondulée* sous le code problématique et dans la **liste d’erreurs**.
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219378"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766536"
 ---
 # <a name="unit-testing-in-nodejs"></a>Test unitaire dans Node.js
 
@@ -33,7 +33,7 @@ Les frameworks pris en charge sont :
 > [!WARNING]
 > Un problème dans Tape empêche pour l’instant l’exécution des tests Tape. Si [PR #361](https://github.com/substack/tape/pull/361) est fusionnée, le problème doit être résolu.
 
-Si votre framework préféré n’est pas pris en charge, consultez [Ajouter la prise en charge d’un framework de tests unitaires](#addingFramework) pour plus d’informations sur l’ajout d’une prise en charge. 
+Si votre framework préféré n’est pas pris en charge, consultez [Ajouter la prise en charge d’un framework de tests unitaires](#addingFramework) pour plus d’informations sur l’ajout d’une prise en charge.
 
 ## <a name="write-unit-tests"></a>Écrire des tests unitaires
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Si vous obtenez une erreur indiquant que *vstest.console.exe* est introuvable, vérifiez que vous avez ouvert l’invite de commandes développeur et non une invite de commandes standard. 
+> Si vous obtenez une erreur indiquant que *vstest.console.exe* est introuvable, vérifiez que vous avez ouvert l’invite de commandes développeur et non une invite de commandes standard.
 
 ## <a name="addingFramework"></a>Ajouter la prise en charge d’un framework de tests unitaires
 
@@ -149,7 +149,7 @@ Pour obtenir un bon exemple des implémentations `find_tests` et `run_tests`, co
 La découverte des frameworks de tests disponibles se produit au démarrage de Visual Studio. Si un framework est ajouté pendant que Visual Studio est en cours d’exécution, redémarrez Visual Studio pour détecter le framework. Toutefois, vous n’avez pas besoin de redémarrer quand vous apportez des modifications à l’implémentation.
 
 ## <a name="unit-tests-in-other-project-types"></a>Tests unitaires dans d’autres types de projet
-Vous n’êtes pas limité à l’écriture de tests unitaires juste dans vos projets Node.js. Quand vous ajoutez les propriétés TestFramework et TestRoot à un projet C# ou VB, ces tests sont énumérés et vous pouvez les exécuter en utilisant la fenêtre Explorateur de tests.
+Vous n’êtes pas limité à l’écriture de tests unitaires juste dans vos projets Node.js. Quand vous ajoutez les propriétés TestFramework et TestRoot à un projet C# ou Visual Basic, ces tests sont énumérés et vous pouvez les exécuter en utilisant la fenêtre Explorateur de tests.
 
 Pour ce faire, cliquez sur le nœud du projet dans l’Explorateur de solutions, choisissez **Décharger le projet**, puis choisissez **Modifier le projet**. Ensuite, dans le fichier projet, ajoutez les deux éléments suivants à un groupe de propriétés.
 
