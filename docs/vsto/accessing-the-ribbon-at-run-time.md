@@ -1,5 +1,5 @@
 ---
-title: Accéder au ruban au moment de l’exécution
+title: Accéder au ruban lors de l’exécution
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Globals class, Ribbon
 - Ribbon [Office development in Visual Studio], accessing
 - RibbonManager class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: abeffdbc61861aae3c0c9c53cb07d597abaa31c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263211"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304621"
 ---
-# <a name="access-the-ribbon-at-runtime"></a>Accéder au ruban au moment de l’exécution
+# <a name="access-the-ribbon-at-runtime"></a>Accéder au ruban lors de l’exécution
   Vous pouvez écrire du code pour afficher, masquer et modifier le ruban, et permettre aux utilisateurs d’exécuter ce code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.  
 
  Vous pouvez accéder au ruban à l'aide de la classe `Globals`. Pour les projets Outlook, vous pouvez accéder au ruban qui s'affiche dans une fenêtre de l'explorateur ou de l'inspecteur Outlook spécifique.  
@@ -50,7 +50,7 @@ ms.locfileid: "34263211"
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
 
 ## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accéder à une collection de rubans qui s’affichent pour un Explorateur Outlook spécifique  
- Vous pouvez accéder à une collection de rubans qui s’affichent dans Outlook *Explorer*. Un explorateur est l'interface utilisateur principale de l'application pour une instance d'Outlook. Pour accéder au ruban d'une fenêtre d'explorateur, appelez la propriété `Ribbons` de la classe `Globals` et passez-lui un objet <xref:Microsoft.Office.Interop.Outlook.Explorer> qui représente l'explorateur.  
+ Vous pouvez accéder à une collection de rubans qui s’affichent dans un Outlook *Explorer*. Un explorateur est l'interface utilisateur principale de l'application pour une instance d'Outlook. Pour accéder au ruban d'une fenêtre d'explorateur, appelez la propriété `Ribbons` de la classe `Globals` et passez-lui un objet <xref:Microsoft.Office.Interop.Outlook.Explorer> qui représente l'explorateur.  
 
  L'exemple suivant obtient la collection de rubans de l'explorateur actif. Cet exemple accède ensuite à un ruban nommé `Ribbon1` et définit le texte qui s'affiche dans une zone de liste modifiable du ruban sur `Hello World`.  
 
@@ -62,7 +62,7 @@ ms.locfileid: "34263211"
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
  [Élément XML Ribbon](../vsto/ribbon-xml.md)   
  [Présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)   
- [Procédure pas à pas : Création d’un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Procédure pas à pas : Mise à jour les contrôles sur un ruban au moment de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procédure pas à pas : Mise à jour les contrôles sur un ruban lors de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Accéder à une zone de formulaire lors de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)  
