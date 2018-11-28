@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945986"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388934"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les plus critiques présents dans vos projets C++ qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime.
@@ -37,7 +37,7 @@ Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les
 |[C6270](../code-quality/c6270.md)|Argument float manquant pour le formatage de la fonction|
 |[C6271](../code-quality/c6271.md)|Argument supplémentaire pour le formatage de la fonction|
 |[C6272](../code-quality/c6272.md)|Argument non float pour le formatage de la fonction|
-|[C6273](../code-quality/c6273.md)|Argument non entier pour le formatage de la fonction|
+|[C6273](../code-quality/c6273.md)|Argument de type non entier pour le formatage (fonction)|
 |[C6274](../code-quality/c6274.md)|Argument autre qu’un caractère pour le formatage de la fonction|
 |[C6276](../code-quality/c6276.md)|Cast de chaîne non valide|
 |[C6277](../code-quality/c6277.md)|Appel CreateProcess non valide|
@@ -96,7 +96,7 @@ Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
 |[C28217](../code-quality/c28217.md)|Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier|
-|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, le paramètre de l'annotation ne correspond pas au paramètre trouvé dans le fichier|
+|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier|
 |[C28219](../code-quality/c28219.md)|Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation|
 |[C28220](../code-quality/c28220.md)|Expression d'entier attendue pour une annotation, le paramètre dans l'annotation|
 |[C28221](../code-quality/c28221.md)|Expression de chaîne attendue pour le paramètre dans l'annotation|
