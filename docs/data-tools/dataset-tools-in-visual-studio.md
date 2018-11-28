@@ -1,6 +1,8 @@
 ---
-title: Outils de DataSet dans Visual Studio
-ms.date: 11/04/2016
+title: Outils de jeu de données
+ms.date: 11/21/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -45,25 +47,23 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582458"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304985"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Outils de DataSet dans Visual Studio
+# <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
 
 > [!NOTE]
 > Jeux de données et les classes connexes sont des technologies .NET héritées à partir du début des années 2000 qui permettent aux applications d’utiliser les données en mémoire, tandis que les applications sont déconnectées de la base de données. Ils sont particulièrement utiles pour les applications qui permettent aux utilisateurs de modifier des données et conserver les modifications apportées à la base de données. Bien que les jeux de données s’est avérés une technologie très réussie, nous recommandons d’utilisent Entity Framework nouvelles applications .NET. Entity Framework fournit un moyen plus naturel pour travailler avec des données tabulaires en tant que modèles d’objet, et elle possède une interface de programmation plus simple.
 
 Un `DataSet` objet est un objet en mémoire qui est essentiellement un mini-de base de données. Il contient `DataTable`, `DataColumn`, et `DataRow` objets dans lequel vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le jeu de données conserve les informations sur les modifications apportées à ses données, afin de mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.
 
-Jeux de données et les classes connexes sont définis dans le *System.Data* espace de noms dans la bibliothèque de classes .NET Framework. Vous pouvez créer et modifier des jeux de données dynamiquement dans le code à l’aide d’ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide des concepteurs de Visual Studio. Jeux de données qui est créés à l’aide de concepteurs **TableAdapter** objets pour interagir avec la base de données. Utiliser des jeux de données qui est créées par programmation **DataAdapter** objets. Pour plus d’informations sur la création de jeux de données par programmation, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Jeux de données et les classes connexes sont définis dans le <xref:System.Data?displayProperty=fullName> espace de noms dans la bibliothèque de classes .NET Framework. Vous pouvez créer et modifier des jeux de données dynamiquement dans le code à l’aide d’ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide des concepteurs de Visual Studio. Jeux de données qui est créés à l’aide de concepteurs **TableAdapter** objets pour interagir avec la base de données. Utiliser des jeux de données qui est créées par programmation **DataAdapter** objets. Pour plus d’informations sur la création de jeux de données par programmation, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Si votre application doit uniquement lire les données à partir d’une base de données et n’effectue pas les mises à jour, ajoute ou supprime, vous pouvez généralement obtenir de meilleures performances en utilisant un `DataReader` objet pour récupérer des données dans un générique `List` objet ou un autre objet de collection. Si vous affichez les données, vous pouvez lier l’interface utilisateur à la collection.
 
@@ -71,7 +71,7 @@ Si votre application doit uniquement lire les données à partir d’une base de
 
 Visual Studio fournit des outils pour simplifier l’utilisation des jeux de données. Le workflow de bout en bout de base est :
 
-- Utilisez le **Source de données** fenêtre pour créer un nouveau jeu de données à partir d’une ou plusieurs sources de données. Utilisez le **Concepteur de Dataset** pour configurer le jeu de données et définissez ses propriétés. Par exemple, vous devez spécifier les tables à partir de la source de données à inclure et quelles colonnes de chaque table. Choisissez soigneusement préserver la quantité de mémoire nécessitant le jeu de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Utilisez le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window) pour créer un nouveau jeu de données à partir d’une ou plusieurs sources de données. Utilisez le **Concepteur de Dataset** pour configurer le jeu de données et définissez ses propriétés. Par exemple, vous devez spécifier les tables à partir de la source de données à inclure et quelles colonnes de chaque table. Choisissez soigneusement préserver la quantité de mémoire nécessitant le jeu de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Spécifier les relations entre les tables afin que les clés étrangères sont gérées correctement. Pour plus d’informations, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 

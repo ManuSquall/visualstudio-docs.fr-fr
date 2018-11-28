@@ -1,5 +1,5 @@
 ---
-title: Lier des contrôles à des images à partir d’une base de données
+title: Lier des contrôles à des images d’une base de données
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,34 +19,37 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00608bae35a9f3272e46e53d7e0205b48c0ea7d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: d93ca95a67bc3816d8d65a799282dc6c7969e093
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920468"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304915"
 ---
-# <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images à partir d’une base de données
+# <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images d’une base de données
 
 Vous pouvez utiliser la **des Sources de données** fenêtre pour lier une image dans une base de données à un contrôle dans votre application. Par exemple, vous pouvez lier une image à un <xref:System.Windows.Controls.Image> contrôler dans une application WPF, ou à un <xref:System.Windows.Forms.PictureBox> contrôle dans une application Windows Forms.
 
-Images dans une base de données sont généralement stockés en tant que tableaux d’octets. Les éléments dans le **des Sources de données** les fenêtres qui sont stockées sous forme de tableaux d’octets ont leur contrôle de type **aucun** par défaut, car les tableaux d’octets peuvent contenir tout ce à partir d’un simple tableau d’octets du fichier exécutable d’une application volumineuse. Pour créer un contrôle lié aux données pour un élément de tableau d’octets dans le **des Sources de données** fenêtre qui représente une image, vous devez sélectionner le contrôle à créer.
+Images dans une base de données sont généralement stockées en tant que tableaux d’octets. Les éléments dans le **des Sources de données** fenêtre stockés sous forme de tableaux d’octets ont leur contrôle de type définie sur **aucun** par défaut, étant donné que les tableaux d’octets peuvent contenir tout ce à partir d’un simple tableau d’octets au fichier exécutable d’une grande application. Pour créer un contrôle lié aux données pour un élément de tableau d’octets dans le **des Sources de données** fenêtre qui représente une image, vous devez sélectionner le contrôle à créer.
 
-La procédure suivante suppose que la **des Sources de données** fenêtre est déjà remplie avec un élément qui est lié à votre image.
+La procédure suivante suppose que le **des Sources de données** fenêtre est déjà remplie avec un élément qui est lié à votre image.
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Pour lier une image dans une base de données à un contrôle
 
-1.  Assurez-vous que vous souhaitez ajouter le contrôle à l’aire de conception est ouvert dans le Concepteur WPF ou le Concepteur Windows Forms.
+1.  Assurez-vous que vous souhaitez ajouter le contrôle à l’aire de conception est ouvert dans le Concepteur WPF ou le Concepteur de formulaires Windows.
 
-2.  Dans le **des Sources de données** fenêtre, développez la table souhaitée, ou pour afficher ses colonnes ou les propriétés de l’objet.
+2.  Dans le **des Sources de données** fenêtre, développez la table souhaitée ou pour afficher ses colonnes ou propriétés de l’objet.
+
+   > [!TIP]
+   > Si le **des Sources de données** fenêtre n’est pas ouverte, ouvrez-le en sélectionnant **vue** > **Windows autres** > **desSourcesdedonnées**.
 
 3.  Sélectionnez la colonne ou la propriété qui contient vos données d’image, puis sélectionnez un des contrôles suivants à partir de sa liste de contrôle de liste déroulante :
 
-    -   Si le Concepteur WPF est ouvert, sélectionnez **Image**.
+    - Si le Concepteur WPF est ouvert, sélectionnez **Image**.
 
-    -   Si le Concepteur Windows Forms est ouvert, sélectionnez **PictureBox**.
+    - Si le Concepteur Windows Forms est ouvert, sélectionnez **PictureBox**.
 
-    -   Vous pouvez également sélectionner un autre contrôle qui prend en charge la liaison de données et qui peut afficher des images. Si le contrôle que vous souhaitez utiliser n’est pas dans la liste des contrôles disponibles, vous pouvez ajouter à la liste et sélectionnez-le. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    - Vous pouvez également sélectionner un autre contrôle qui prend en charge la liaison de données et qui peut afficher des images. Si le contrôle que vous souhaitez utiliser n’est pas dans la liste des contrôles disponibles, vous pouvez l’ajouter à la liste et sélectionnez-le. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="see-also"></a>Voir aussi
 

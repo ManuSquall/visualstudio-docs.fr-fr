@@ -1,5 +1,5 @@
 ---
-title: Afficher les données associées dans les applications WPF
+title: Afficher des données associées dans des applications WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,41 +18,42 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
-ms.translationtype: MT
+ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746544"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304595"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>Afficher les données associées dans les applications WPF
-Dans certaines applications, vous souhaiterez éventuellement utiliser des données provenant de plusieurs tables ou entités qui sont liés entre eux dans une relation parent-enfant. Par exemple, vous souhaiterez peut-être afficher une grille qui montre les clients d’un `Customers` table. Lorsque l’utilisateur sélectionne un client spécifique, une autre grille affiche les commandes de ce client à partir d’un `Orders` table.
+# <a name="display-related-data-in-wpf-applications"></a>Afficher des données associées dans des applications WPF
 
-Vous pouvez créer des contrôles liés aux données qui affichent les données connexes en faisant glisser des éléments depuis la **des Sources de données** fenêtre vers le Concepteur WPF.
+Dans certaines applications, vous souhaiterez utiliser des données provenant de plusieurs tables ou entités qui sont liées entre eux dans une relation parent-enfant. Par exemple, vous souhaiterez peut-être afficher une grille qui montre les clients d’un `Customers` table. Lorsque l’utilisateur sélectionne un client spécifique, un autre élément grid affiche les commandes de ce client à partir d’un connexes `Orders` table.
+
+Vous pouvez créer des contrôles liés aux données qui affichent les données associées en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le Concepteur WPF.
 
 ## <a name="to-create-controls-that-display-related-records"></a>Pour créer des contrôles qui affichent des enregistrements connexes
 
-1. Sur le **données** menu, cliquez sur **afficher les Sources de données** pour ouvrir le **des Sources de données** fenêtre.
+1. Dans le menu Données **, cliquez sur Afficher les sources de données** pour ouvrir la fenêtre Sources de données **.
 
-2. Cliquez sur **ajouter une nouvelle Source de données**, terminez la **Configuration de Source de données** Assistant.
+2. Cliquez sur Ajouter une nouvelle source de données **et suivez les étapes de l'Assistant Configuration de source de données**.
 
-3. Ouvrez le Concepteur WPF et vous assurer que le concepteur contient un conteneur qui est une cible de déplacement valide pour les éléments de la **des Sources de données** fenêtre.
+3. Ouvrez le Concepteur WPF et vous assurer que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments dans le **des Sources de données** fenêtre.
 
-     Pour plus d’informations sur les cibles de déplacement valides, consultez [WPF de lier des contrôles aux données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Pour plus d’informations sur les cibles de dépôt valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-4. Dans le **des Sources de données** fenêtre, développez le nœud qui représente la table parente ou de l’objet dans la relation. La table parent ou l’objet se trouve sur le côté « un » d’une relation un-à-plusieurs.
+4. Dans le **des Sources de données** fenêtre, développez le nœud qui représente la table parente ou de l’objet dans la relation. La table parente ou l’objet est sur le côté « un » d’une relation un-à-plusieurs.
 
-5. Faites glisser le nœud parent (ou tous les éléments individuels dans le nœud parent) de la **des Sources de données** fenêtre vers une cible de déplacement valide dans le concepteur.
+5. Faites glisser le nœud parent (ou tous les éléments individuels dans le nœud parent) de la **des Sources de données** fenêtre vers une cible de dépôt valides dans le concepteur.
 
-     Visual Studio génère du code XAML qui crée des contrôles liés aux données pour chaque élément que vous faites glisser. Le code XAML ajoute également un nouveau <xref:System.Windows.Data.CollectionViewSource> pour l’objet pour les ressources de la cible de déplacement ou de la table parente. Pour certaines sources de données, Visual Studio génère également du code pour charger les données dans la table parent ou l’objet. Pour plus d’informations, consultez [WPF de lier des contrôles aux données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio génère le XAML qui crée des contrôles liés aux données pour chaque élément que vous faites glisser. Le XAML ajoute également un nouveau <xref:System.Windows.Data.CollectionViewSource> pour l’objet pour les ressources de la cible de déplacement ou la table parente. Pour certaines sources de données, Visual Studio génère également du code pour charger les données dans la table parente ou l’objet. Pour plus d’informations, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-6. Dans le **des Sources de données** fenêtre, recherchez la table enfant connexe ou l’objet. Tables et objets enfants connexes apparaissent sous forme de nœuds extensibles en bas de la liste du nœud parent de données.
+6. Dans le **des Sources de données** fenêtre, recherchez la table enfant connexe ou l’objet. Tables et objets enfants connexes s’affichent en tant que nœuds extensibles en bas de la liste du nœud parent de données.
 
-7. Faites glisser le nœud enfant (ou tous les éléments individuels dans le nœud enfant) de la **des Sources de données** fenêtre vers une cible de déplacement valide dans le concepteur.
+7. Faites glisser le nœud enfant (ou tous les éléments individuels dans le nœud enfant) de la **des Sources de données** fenêtre vers une cible de dépôt valides dans le concepteur.
 
-     Visual Studio génère du code XAML qui crée de nouveaux contrôles liés aux données pour chacun des éléments que vous faites glisser. Le code XAML ajoute également un nouveau <xref:System.Windows.Data.CollectionViewSource> pour la table enfant ou l’objet pour les ressources de la cible de dépôt. Cette nouvelle <xref:System.Windows.Data.CollectionViewSource> est liée à la propriété de la table parent ou l’objet que vous venez de faire glisser vers le concepteur. Pour certaines sources de données, Visual Studio génère également du code pour charger les données dans la table enfant ou l’objet.
+     Visual Studio génère le XAML qui crée des contrôles liés aux données pour chacun des éléments que vous faites glisser. Le XAML ajoute également un nouveau <xref:System.Windows.Data.CollectionViewSource> pour l’objet pour les ressources de la cible de déplacement ou la table enfant. Cette nouvelle <xref:System.Windows.Data.CollectionViewSource> est lié à la propriété de la table parente ou l’objet que vous venez de faire glisser vers le concepteur. Pour certaines sources de données, Visual Studio génère également du code pour charger les données dans la table enfant ou l’objet.
 
-     La figure suivante illustre le **commandes** table de la **clients** table dans un jeu de données dans le **des Sources de données** fenêtre.
+     La figure suivante illustre le connexes **commandes** table de la **clients** table dans un jeu de données dans le **Sources de données** fenêtre.
 
      ![Fenêtre Sources de données montrant des relations](../data-tools/media/datasources2.gif)
 
