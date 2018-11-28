@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843989"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388947"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Page Projets et solutions, boîte de dialogue Options
 
 Définit le comportement des projets et des solutions Visual Studio. Pour accéder à ces options, sélectionnez **Outils** > **Options**, développez **Projets et solutions** et sélectionnez **Général**.
 
 Définissez les chemins par défaut des dossiers de projet et de modèle dans l’onglet **Emplacements** de la même boîte de dialogue.
-
-> [!NOTE]
-> Les options disponibles dans l’interface utilisateur peuvent différer de ce qui est décrit ici, en fonction de vos paramètres actifs ou de votre édition. Cet article concerne les **Paramètres de développement généraux**. Pour afficher ou modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Page Général
 

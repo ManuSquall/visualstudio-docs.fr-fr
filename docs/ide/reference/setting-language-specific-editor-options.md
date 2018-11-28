@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945894"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389414"
 ---
 # <a name="setting-language-specific-editor-options"></a>Définition d’options d’éditeur spécifiques au langage
 
@@ -56,6 +56,6 @@ Visual Studio offre un éventail d’options d’éditeur de texte qui s’appli
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)
+- [Personnaliser l’éditeur](../../ide/customizing-the-editor.md)
 - [Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig](../../ide/create-portable-custom-editor-options.md)
-- [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md) &mdash; Fournit des liens vers les rubriques qui expliquent comment personnaliser vos paramètres, combinaisons de touches et autres fonctionnalités de l’environnement de développement intégré (IDE).
+- [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

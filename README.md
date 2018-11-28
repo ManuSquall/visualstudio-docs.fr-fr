@@ -1,8 +1,3 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite open source de Microsoft
-
-Ce projet a adopté le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Pour plus d’informations, consultez la [FAQ sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou envoyez vos questions ou commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com).
-
 # <a name="visual-studio-2017-documentation"></a>Documentation de Visual Studio 2017
 
 Bienvenue ! Ce dépôt contient des fichiers sources associés à la documentation technique de Visual Studio 2017 en cours d’élaboration. Les rubriques sont publiées sur le [site de la documentation de Visual Studio](https://docs.microsoft.com/visualstudio).
@@ -18,5 +13,9 @@ Vos contributions sont les bienvenues pour nous aider à améliorer la documenta
 
 Plusieurs fonctionnalités de Visual Studio ont leurs propres dossiers dans ce dépôt, comme **debugger** pour les rubriques sur le débogage, **ide** pour les rubriques sur l’environnement de développement intégré (IDE) de Visual Studio, et ainsi de suite. Le sous-dossier **/media** dans chaque dossier contient les fichiers art pour les rubriques. Le [guide du contributeur](CONTRIBUTING.md) contient d’autres informations.
 
-Ce projet a adopté le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, consultez la [FAQ sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou envoyez vos questions ou commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com).
+## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite open source de Microsoft
+
+Ce projet a adopté le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Pour plus d’informations, consultez la [FAQ sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou envoyez vos questions ou commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com).
+
 
