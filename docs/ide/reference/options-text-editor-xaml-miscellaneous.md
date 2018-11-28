@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673218"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388632"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Options, Éditeur de texte, XAML, Divers
+
 Utilisez la page de propriétés **Divers** pour spécifier la mise en forme des éléments et des attributs dans vos documents XAML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Divers**, développez le nœud **Éditeur de texte** > **XAML** > **Divers**.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Insertion automatique
- Ce paramètre permet de contrôler à quel moment les balises et les guillemets sont générés automatiquement.
+
+Ce paramètre permet de contrôler à quel moment les balises et les guillemets sont générés automatiquement.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Utilisez la page de propriétés **Divers** pour spécifier la mise en forme des
 |**Virgules pour séparer les paramètres MarkupExtension**|Spécifie si des virgules sont générées quand vous tapez plusieurs paramètres dans une extension de balisage.|
 
 ## <a name="errors-and-warnings"></a>Erreurs et avertissements
- Utilisez ce paramètre pour contrôler à quel moment les erreurs et les avertissements sont générés automatiquement. Pour plus d’informations, consultez [Erreurs et avertissements XAML](../../designers/xaml-errors-warnings.md).
+
+Utilisez ce paramètre pour contrôler à quel moment les erreurs et les avertissements sont générés automatiquement. Pour plus d’informations, consultez [Erreurs et avertissements XAML](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Voir aussi
 

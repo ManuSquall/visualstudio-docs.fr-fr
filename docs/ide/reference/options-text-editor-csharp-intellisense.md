@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672483"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389255"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Options, Éditeur de texte, C#, IntelliSense
 
 Utilisez la page d’options **IntelliSense** pour modifier les paramètres qui affectent le comportement d’IntelliSense pour C#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **C#** > **IntelliSense**.
-
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 La page d’options **IntelliSense** contient les options suivantes :
 
@@ -86,7 +83,7 @@ La page d’options **IntelliSense** contient les options suivantes :
 
 ## <a name="show-name-suggestions"></a>Afficher les suggestions de nom
 
-   Effectue la complétion automatique du nom d’objet pour les membres que vous avez sélectionnés récemment. 
+Effectue la complétion automatique du nom d’objet pour les membres que vous avez sélectionnés récemment.
 
 ## <a name="see-also"></a>Voir aussi
 

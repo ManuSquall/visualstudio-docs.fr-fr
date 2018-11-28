@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177709"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388528"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
 
@@ -31,12 +31,7 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 -   essaient d’ouvrir le site web indiqué quand vous appuyez sur **Ctrl**+ **et cliquez** sur le lien. Par défaut, le site web apparaît dans le navigateur web interne.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Procédure
-
-### <a name="to-display-urls-as-links"></a>Pour afficher les URL en tant que liens
+## <a name="display-urls-as-links"></a>Afficher les URL sous forme de liens
 
 1.  Dans le menu **Outils** , cliquez sur **Options**.
 

@@ -33,19 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae8fd7cf7acb27fd528c306c0d6a57955c6fe8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 3009f32adeb70dd376d7116280de6e3e1b557e7a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "50143383"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388921"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documents, Environnement, boîte de dialogue Options
 
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Documents** dans le nœud **Environnement**. Si **Documents** ne figure pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
-
-> [!NOTE]
-> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 **Réutiliser la fenêtre du document actif, si elle a été enregistrée**
 
