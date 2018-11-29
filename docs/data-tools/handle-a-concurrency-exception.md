@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750810"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388736"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 
@@ -65,16 +65,13 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
-> [!NOTE]
-> Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="create-a-new-project"></a>Créer un nouveau projet
+## <a name="create-a-new-project"></a>Créer un projet
 
 Commencez par créer une application Windows Forms :
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
@@ -88,7 +85,7 @@ Ensuite, créez un dataset nommé **NorthwindDataSet**:
 
 1. Sur le **données** menu, choisissez **ajouter nouvelle source de données**.
 
-   L’Assistant de Configuration de Source de données s’ouvre.
+   L'Assistant Configuration de source de données s'ouvre.
 
 2. Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**.
 
@@ -109,7 +106,7 @@ Ensuite, créez un dataset nommé **NorthwindDataSet**:
 
 Dans cette section, vous allez créer un <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> en faisant glisser le **clients** d’élément à partir de la **des Sources de données** fenêtre sur votre formulaire Windows.
 
-1. Sur le **données** menu, choisissez **afficher les Sources de données** pour ouvrir le **fenêtre Sources de données**.
+1. Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, choisissez **afficher les Sources de données**.
 
 2. Dans le **des Sources de données** fenêtre, développez le **NorthwindDataSet** nœud, puis sélectionnez le **clients** table.
 

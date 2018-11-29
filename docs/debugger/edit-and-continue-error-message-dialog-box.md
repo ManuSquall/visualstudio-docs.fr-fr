@@ -1,7 +1,7 @@
 ---
 title: Modifier et continuer, boîte de dialogue erreur message | Microsoft Docs
 ms.custom: ''
-ms.date: 06/22/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd4fe31996a75c4b743f3dac12e7b945c912506
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382790"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388706"
 ---
 # <a name="edit-and-continue-error-message"></a>Modifier & Continuer le message d’erreur 
 
@@ -49,5 +49,5 @@ Les raisons possibles de ce message d’erreur sont les suivantes :
   
 Pour plus d'informations, voir :
 - [C++ modifier et continuer blog publier](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
-- [Prise en charge des modifications de code (C++)](../debugger/supported-code-changes-cpp.md)
+- [Modifications de code prises en charge (C++)](../debugger/supported-code-changes-cpp.md)
 - [Modifier & Continuer](../debugger/edit-and-continue.md)

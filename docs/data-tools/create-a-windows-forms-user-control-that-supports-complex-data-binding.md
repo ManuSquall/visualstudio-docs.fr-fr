@@ -16,20 +16,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db8059cf34c2de9a52cda18dd09ce6040bf8d841
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7de5cbfe7de8919143cd30517c18f9e5ad6ba598
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937900"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305245"
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données complexe
+# <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Procédure pas à pas : création d’un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexes
 
-Lors de l’affichage des données dans des formulaires dans les applications Windows, vous pouvez choisir des contrôles existants à partir de la **boîte à outils**, ou vous pouvez créer des contrôles personnalisés si votre application nécessite une fonctionnalité qui n’est pas disponible dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contiennent une propriété `DataSource` et `DataMember` pouvant être liée aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.DataGridView> ou <xref:System.Windows.Forms.ListBox>.
+Pour présenter des données dans des formulaires d'applications Windows, vous pouvez choisir des contrôles existants dans la Boîte à outils** ou créer des contrôles personnalisés si votre application requiert des fonctionnalités qui ne sont pas disponibles dans les contrôles standard. Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Les contrôles qui implémentent <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contiennent une propriété `DataSource` et `DataMember` pouvant être liée aux données. Ce type de contrôles est similaire à <xref:System.Windows.Forms.DataGridView> ou <xref:System.Windows.Forms.ListBox>.
 
 Pour plus d’informations sur la création de contrôles, consultez [développement de formulaires Windows contrôle au moment du design](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
-Lors de la création de contrôles à utiliser dans les scénarios de liaison de données, vous devez implémenter l’un des attributs de liaison de données suivants :
+Quand vous créez des contrôles utilisables dans des scénarios de liaison de données, vous devez implémenter l’un des attributs Databinding suivants :
 
 |Utilisation d’attributs de liaison de données|
 | - |
@@ -41,9 +41,9 @@ Cette procédure pas à pas crée un contrôle complexe affichant les lignes de 
 
 Pendant cette procédure pas à pas, vous allez apprendre à :
 
-- Créer un nouveau **Windows Forms Application**.
+- Créez une application Windows Forms.
 
-- Ajouter un nouveau **contrôle utilisateur** à votre projet.
+- Ajouter un nouveau Contrôle utilisateur** à votre projet.
 
 - Concevoir visuellement le contrôle utilisateur.
 
@@ -51,9 +51,9 @@ Pendant cette procédure pas à pas, vous allez apprendre à :
 
 - Créer un jeu de données avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
-- Définir le **clients** table dans le [fenêtre Sources de données](add-new-data-sources.md) à utiliser le nouveau contrôle complexe.
+- Définir le **clients** table dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window) à utiliser le nouveau contrôle complexe.
 
-- Ajouter le nouveau contrôle en le faisant glisser à partir de la **fenêtre Sources de données** sur **Form1**.
+- Ajouter le nouveau contrôle en le faisant glisser depuis la fenêtre Sources de données **vers Form1**.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -73,29 +73,29 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
-## <a name="create-a-windows-forms-application"></a>Créer une application Windows Forms
+## <a name="create-a-windows-forms-application"></a>Créer une application Windows Forms.
 
 La première étape consiste à créer un **Windows Forms Application**:
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-1. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+1. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 1. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 1. Nommez le projet **ComplexControlWalkthrough**, puis choisissez **OK**.
 
-    Le **ComplexControlWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
+    Le projet ComplexControlWalkthrough **est créé et ajouté à l'Explorateur de solutions**.
 
-## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet
+## <a name="add-a-user-control-to-the-project"></a>Ajoutez un contrôle utilisateur au projet
 
 Étant donné que cette procédure pas à pas crée un contrôle complexe pouvant être lié à des données à partir d’un **contrôle utilisateur**, ajoutez un **contrôle utilisateur** élément au projet :
 
-1. À partir de la **projet** menu, choisissez **ajouter un contrôle utilisateur**.
+1. Dans le menu Projet **, choisissez Ajouter un contrôle utilisateur**.
 
-1. Type **ComplexDataGridView** dans le **nom** zone, puis cliquez sur **ajouter**.
+1. Tapez ComplexDataGridView dans la zone Nom **, puis cliquez sur Ajouter**.
 
-    Le **ComplexDataGridView** contrôle est ajouté à **l’Explorateur de solutions**et s’ouvre dans le concepteur.
+    Le contrôle ComplexDataGridView  **est ajouté à l'Explorateur de solutions** et s'ouvre dans le concepteur.
 
 ## <a name="design-the-complexdatagridview-control"></a>Concevoir le contrôle ComplexDataGridView
 
@@ -103,9 +103,9 @@ Pour ajouter un <xref:System.Windows.Forms.DataGridView> au contrôle utilisateu
 
 ## <a name="add-the-required-data-binding-attribute"></a>Ajoutez l’attribut de liaison de données requis
 
-Pour cette liaison de données prise en charge des contrôles complexes, vous pouvez implémenter le <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
+Pour des contrôles complexes prenant en charge la liaison de données, vous pouvez implémenter l’attribut<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
 
-1. Commutateur le **ComplexDataGridView** contrôle en mode code. (Sur le **vue** menu, sélectionnez **Code**.)
+1. Basculez le contrôle ComplexDataGridView** sur le mode Code. (Dans le menu Affichage **, choisissez Code**.)
 
 1. Remplacez le code de `ComplexDataGridView` par le code suivant :
 
@@ -118,45 +118,45 @@ Pour cette liaison de données prise en charge des contrôles complexes, vous po
 
 Utilisez le **Configuration de Source de données** Assistant pour créer une source de données selon le `Customers` table dans la base de données Northwind :
 
-1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
+1.  Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Configuration de Source de données** Assistant.
+2.  Dans la fenêtre Sources de données **, sélectionnez Ajouter une nouvelle source de données** pour démarrer l'Assistant Configuration de source de données **.
 
 3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4.  Sur le **choisir votre connexion de données** page, procédez comme suit :
+4.  Dans la page Choisir votre connexion de données **, effectuez l'une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-    - Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.
+    - Sélectionnez Nouvelle connexion **pour afficher la boîte de dialogue Ajouter/Modifier la connexion**.
 
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **suivant**.
+5.  Si votre base de données requiert un mot de passe, sélectionnez l'option pour inclure les données sensibles, puis cliquez sur Suivant **.
 
 6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.
 
-7.  Sur le **choisir vos objets de base de données** page, développez le **Tables** nœud.
+7.  Sur la page Choisir vos objets de base de données **, développez le nœud Tables**.
 
-8.  Sélectionnez le `Customers` table, puis cliquez sur **Terminer**.
+8.  Sélectionnez la table `Customers`, puis cliquez sur Terminer **.
 
-    Le **NorthwindDataSet** est ajouté à votre projet et le `Customers` table s’affiche dans le **des Sources de données** fenêtre.
+    NorthwindDataSet**est ajouté à votre projet et la table** apparaît dans la fenêtre Sources de données`Customers`.
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Définir la table Customers pour utiliser le contrôle ComplexDataGridView
 
-Dans le **des Sources de données** fenêtre, vous pouvez définir le contrôle à créer avant de faire glisser des éléments sur votre formulaire :
+Dans la fenêtre Sources de données **, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.
 
-1. Ouvrez **Form1** dans le concepteur.
+1. Ouvrez Form1** dans le concepteur.
 
-1. Développez le **clients** nœud dans le **des Sources de données** fenêtre.
+1. Développez le nœud Customers **dans la fenêtre Sources de données**.
 
-1. Cliquez sur la flèche déroulante du **clients** nœud, puis choisissez **personnaliser**.
+1. Cliquez sur la flèche déroulante du nœud Customers **et choisissez Personnaliser**.
 
-1. Sélectionnez le **ComplexDataGridView** dans la liste des **contrôles associés** dans le **Options de personnalisation de l’interface utilisateur de données** boîte de dialogue.
+1. Sélectionnez ComplexDataGridView **dans la liste des Contrôles associés** de la boîte de dialogue Options de personnalisation de l'interface utilisateur du formulaire de données **.
 
-1. Cliquez sur la flèche déroulante du `Customers` table, puis choisissez **ComplexDataGridView** à partir de la liste de contrôle.
+1. Cliquez sur la flèche déroulante de la table `Customers` et choisissez ComplexDataGridView** dans la liste de contrôles.
 
-## <a name="add-controls-to-the-form"></a>Ajouter des contrôles au formulaire
+## <a name="add-controls-to-the-form"></a>Ajouter les commandes au formulaire.
 
-Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire. Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre vers le formulaire. Vérifiez que le **ComplexDataGridView** contrôle est utilisé pour afficher les données de la table.
+Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre Sources de données** vers votre formulaire. Faites glisser le nœud Customers **principal depuis la fenêtre Sources de données** vers le formulaire. Vérifiez que le **ComplexDataGridView** contrôle est utilisé pour afficher les données de la table.
 
 ## <a name="run-the-application"></a>Exécuter l'application
 
