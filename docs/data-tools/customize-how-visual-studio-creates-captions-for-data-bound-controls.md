@@ -1,5 +1,5 @@
 ---
-title: Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
+title: Personnaliser des légendes pour les contrôles liés aux données
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758418"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305583"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 
-Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md) sur un concepteur, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont identifiés comme étant concaténées. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data concepteurs** clé de Registre.
+Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md#data-sources-window) sur un concepteur, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont identifiés comme étant concaténées. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data concepteurs** clé de Registre.
 
 > [!NOTE]
 > Cette clé de Registre n’existe pas jusqu'à ce que vous la créez.
@@ -44,7 +44,7 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
-|**SmartCaptionReplacement**|**$1 $2**|Le **$1** représente les caractères appariés dans la première parenthèse de l’expression et le **$2** représente les caractères appariés dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|
+|**SmartCaptionReplacement**|"$1"|Le **$1** représente les caractères appariés dans la première parenthèse de l’expression et le **$2** représente les caractères appariés dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|
 |**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 
 3.  Développez le **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio**nœud.
 
-7.  Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
+4.  Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
 
-8.  Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
+5.  Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Cliquez sur le **SmartCaptionExpression** valeur, puis sélectionnez **modifier**.
+6. Cliquez sur le **SmartCaptionExpression** valeur, puis sélectionnez **modifier**.
 
-12. Entrez l’expression régulière que vous souhaitez que le **des Sources de données** fenêtre à utiliser.
+7. Entrez l’expression régulière que vous souhaitez que le **des Sources de données** fenêtre à utiliser.
 
-13. Cliquez sur le **SmartCaptionReplacement** valeur, puis sélectionnez **modifier**.
+8. Cliquez sur le **SmartCaptionReplacement** valeur, puis sélectionnez **modifier**.
 
-14. Entrez le remplacement de la chaîne mise en forme comme vous le souhaitez afficher les modèles mis en correspondance dans votre expression régulière.
+9. Entrez le remplacement de la chaîne mise en forme comme vous le souhaitez afficher les modèles mis en correspondance dans votre expression régulière.
 
-15. Cliquez sur le **SmartCaptionSuffix** valeur, puis sélectionnez **modifier**.
+10. Cliquez sur le **SmartCaptionSuffix** valeur, puis sélectionnez **modifier**.
 
-16. Entrez les caractères que vous souhaitez voir apparaître à la fin de la légende.
+11. Entrez les caractères que vous souhaitez voir apparaître à la fin de la légende.
 
     La prochaine fois que vous faites glisser des éléments à partir de la **des Sources de données** fenêtre, les étiquettes de légende sont créés à l’aide des nouvelles valeurs de Registre fournies.
 
@@ -90,21 +90,21 @@ Le tableau suivant répertorie les paramètres internes par défaut pour ces val
 
 3.  Développez le **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio**nœud.
 
-7.  Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
+4.  Avec le bouton droit le **15.0** nœud, puis créez un **clé** nommé `Data Designers`.
 
-8.  Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
+5.  Avec le bouton droit le **concepteurs de données** nœud et créer trois nouvelles valeurs de chaîne :
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez **modifier**.
+6. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez **modifier**.
 
-12. Entrez `(.*)` pour la valeur. Il correspond à la chaîne entière.
+7. Entrez `(.*)` pour la valeur. Il correspond à la chaîne entière.
 
-13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez **modifier**.
+8. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez **modifier**.
 
-14. Entrez `$1` pour la valeur. Cela remplace la chaîne avec la valeur mise en correspondance, ce qui est la chaîne entière afin qu’elle reste inchangée.
+9. Entrez `$1` pour la valeur. Cela remplace la chaîne avec la valeur mise en correspondance, ce qui est la chaîne entière afin qu’elle reste inchangée.
 
     La prochaine fois que vous faites glisser des éléments à partir de la **des Sources de données** fenêtre, les étiquettes de légende sont créés avec des légendes non modifiées.
 

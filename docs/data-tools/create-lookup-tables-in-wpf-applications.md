@@ -1,5 +1,5 @@
 ---
-title: Créer des tables de recherche dans les applications WPF
+title: Créer des tables de recherche dans des applications WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924198"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305479"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans les applications WPF
+# <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
+
 Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) décrit un contrôle qui affiche des informations à partir d’une table de données basée sur la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de recherche en faisant glisser le nœud principal d’une table parente ou de l’objet dans le **des Sources de données** fenêtre sur un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant connexe.
 
 Par exemple, considérez une table de `Orders` dans une base de données de ventes. Chaque enregistrement dans le `Orders` table inclut un `CustomerID` qui indique le client ayant passé la commande. Le `CustomerID` est une clé étrangère qui pointe vers un enregistrement de client dans le `Customers` table. Lorsque vous affichez une liste de commandes à partir de la `Orders` table, vous souhaiterez afficher le nom réel au lieu du `CustomerID`. Étant donné que le nom du client est dans le `Customers` table, vous devez créer une table de recherche pour afficher le nom du client. La table de recherche utilise le `CustomerID` valeur dans le `Orders` d’eux pour naviguer jusqu'à la relation et retourne le nom du client.
@@ -38,21 +39,21 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
     -   Service de données WCF, service WCF ou service web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Objets. Pour plus d’informations, consultez [lier des objets dans Visual Studio](bind-objects-in-visual-studio.md).
+    -   Objects Pour plus d’informations, consultez [lier des objets dans Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.
+    > Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.
 
 2.  Ouvrez le **Concepteur WPF**et vous assurer que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments dans le **Sources de données** fenêtre.
 
      Pour plus d’informations sur les cibles de dépôt valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Sur le **données** menu, cliquez sur **afficher les Sources de données** pour ouvrir le **des Sources de données** fenêtre.
+3.  Dans le menu Données **, cliquez sur Afficher les sources de données** pour ouvrir la fenêtre Sources de données **.
 
 4.  Développez les nœuds dans le **des Sources de données** fenêtre, jusqu'à ce que vous pouvez voir la table parente ou objet et la table enfant connexe ou l’objet.
 
     > [!NOTE]
-    >  La table enfant connexe ou l’objet est le nœud qui apparaît sous la forme d’un nœud enfant développable sous la table parente ou l’objet.
+    > La table enfant connexe ou l’objet est le nœud qui apparaît sous la forme d’un nœud enfant développable sous la table parente ou l’objet.
 
 5.  Cliquez sur le menu déroulant pour le nœud enfant, puis sélectionnez **détails**.
 
@@ -67,12 +68,12 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
     -   **ListView**
 
         > [!NOTE]
-        >  Si le **ListBox** ou **ListView** contrôle n’apparaît pas dans la liste, vous pouvez ajouter ces contrôles à la liste. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Si le **ListBox** ou **ListView** contrôle n’apparaît pas dans la liste, vous pouvez ajouter ces contrôles à la liste. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   N’importe quel contrôle personnalisé qui dérive de <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Pour plus d’informations sur l’ajout de contrôles personnalisés à la liste des contrôles vous pouvez sélectionner des éléments dans le **des Sources de données** fenêtre, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Pour plus d’informations sur l’ajout de contrôles personnalisés à la liste des contrôles vous pouvez sélectionner des éléments dans le **des Sources de données** fenêtre, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Faites glisser le nœud enfant à partir de la **des Sources de données** fenêtre sur un conteneur dans le Concepteur WPF. (Dans l’exemple précédent, le nœud enfant est la **commandes** nœud.)
 
@@ -82,7 +83,7 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
      Visual Studio définit certaines propriétés sur le contrôle pour configurer la liaison de la recherche. Le tableau suivant répertorie les propriétés Visual Studio modifie. Si nécessaire, vous pouvez modifier ces propriétés dans le XAML ou dans le **propriétés** fenêtre.
 
-    |Propriété|Explication du paramètre|
+    |Property|Explication du paramètre|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Cette propriété spécifie la collection ou liaison qui est utilisée pour obtenir les données qui s’affiche dans le contrôle. Visual Studio définit cette propriété sur le <xref:System.Windows.Data.CollectionViewSource> pour les données parent que vous avez fait glisser vers le contrôle.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Cette propriété spécifie le chemin d’accès de l’élément de données qui s’affiche dans le contrôle. Visual Studio définit cette propriété pour la première colonne ou propriété dans les données parent, après la clé primaire, ce qui a un type de données de chaîne.<br /><br /> Si vous souhaitez afficher une autre colonne ou une propriété dans les données parentes, modifiez cette propriété pour le chemin d’accès d’une autre propriété.|
@@ -93,4 +94,4 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
 - [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Afficher des données associées dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Procédure pas à pas : Affichage de données liées dans une application WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Procédure pas à pas : affichage de données connexes dans une application WPF](../data-tools/display-related-data-in-wpf-applications.md)
