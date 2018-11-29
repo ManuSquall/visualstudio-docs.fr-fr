@@ -27,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220259"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389261"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
+
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
 
+**Afficher les paramètres de**
 
- Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
-
- **Afficher les paramètres de** Répertorie tous les éléments d’interface utilisateur pour lesquels vous pouvez changer le jeu de polices et le modèle de couleurs. Après avoir sélectionné un élément dans cette liste, vous pouvez personnaliser les paramètres de couleurs de l’élément en question dans **Éléments affichés**.
+Répertorie tous les éléments d'interface utilisateur pour lesquels vous pouvez modifier le jeu de polices et le modèle de couleurs. Après avoir sélectionné un élément dans cette liste, vous pouvez personnaliser les paramètres de couleurs de l’élément en question dans **Éléments affichés**.
 
 -   **Éditeur de texte**
 
@@ -54,7 +53,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
      Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'imprimante affectent l'apparence du texte dans les documents imprimés.
 
     > [!NOTE]
-    >  Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.
+    > Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.
 
 -   **Compléter automatiquement les instructions**
 
@@ -73,21 +72,28 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
      Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour cet élément affectent l'apparence du texte dans les fenêtres Outil qui ont des volets de sortie dans l'IDE. C'est le cas, par exemple, de la fenêtre Sortie, la fenêtre Commande, la fenêtre Exécution, etc.
 
     > [!NOTE]
-    >  Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.
+    > Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.
 
-**Par défaut** Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.
+**Utiliser les valeurs par défaut**
 
-**Police (les polices à largeur fixe sont en gras)** Répertorie toutes les polices installées sur votre système. Quand le menu déroulant s’affiche pour la première fois, la police active de l’élément sélectionné dans le champ **Afficher les paramètres de** est mise en surbrillance. Les polices fixes, qui sont plus faciles à aligner dans l'éditeur, s'affichent en gras.
+Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.
 
-**Taille** Répertorie les tailles en points disponibles pour la police sélectionnée. Le changement de taille de la police affecte tous les **éléments affichés** de la sélection dans **Afficher les paramètres de**.
+**Police (les polices à largeur fixe sont en gras)**
 
-**Éléments affichés** Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d’arrière-plan.
+Répertorie toutes les polices installées sur votre système. Quand le menu déroulant s’affiche pour la première fois, la police active de l’élément sélectionné dans le champ **Afficher les paramètres de** est mise en surbrillance. Les polices fixes, qui sont plus faciles à aligner dans l'éditeur, s'affichent en gras.
+
+**Taille**
+
+Répertorie les tailles en points disponibles pour la police sélectionnée. Le changement de taille de la police affecte tous les **éléments affichés** de la sélection dans **Afficher les paramètres de**.
+
+**Éléments affichés**
+
+Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d'arrière-plan.
 
 > [!NOTE]
 > **Texte brut** est l’élément d’affichage par défaut. Ainsi, les propriétés assignées à **Texte brut** sont remplacées par les propriétés assignées aux autres éléments d’affichage. Par exemple, si vous assignez la couleur bleue à **Texte brut** et la couleur verte à **Identificateur**, tous les identificateurs s’affichent en vert. Dans cet exemple, les propriétés associées à **Identificateur** remplacent les propriétés associées à **Texte brut**.
 
-
- Voici certains éléments d'affichage :
+Voici certains éléments d'affichage :
 
 |Élément d'affichage|Description|
 |------------------|-----------------|
@@ -198,29 +204,48 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Texte XML**|Contenu de l'élément en texte brut.|
 |**Mot clé XSLT**|Noms d'éléments XSLT.|
 
- **Premier plan de l’élément** Répertorie les couleurs disponibles que vous pouvez choisir pour le premier plan de l’élément sélectionné dans **Éléments affichés**. Dans la mesure où certains éléments sont liés et doivent conserver un modèle d'affichage cohérent, le changement de la couleur de premier plan du texte modifie également les valeurs par défaut des éléments tels que Erreur du compilateur, Mot clé ou Opérateur.
+**Premier plan de l’élément**
 
- **Automatique** Les éléments peuvent hériter de la couleur de premier plan d’autres éléments d’affichage tels que **Texte brut**. À l'aide de cette option, quand vous modifiez la couleur d'un élément d'affichage hérité, la couleur des éléments d'affichage associés change aussi automatiquement. Par exemple, si vous avez sélectionné la valeur **Automatique** pour **Erreur du compilateur**, et si vous changez plus tard la couleur de **Texte brut** en rouge, **Erreur du compilateur** hérite aussi automatiquement de la couleur rouge.
+Répertorie les couleurs disponibles que vous pouvez choisir pour le premier plan de l’élément sélectionné dans **Éléments affichés**. Dans la mesure où certains éléments sont liés et doivent conserver un modèle d'affichage cohérent, le changement de la couleur de premier plan du texte modifie également les valeurs par défaut des éléments tels que Erreur du compilateur, Mot clé ou Opérateur.
 
- **Par défaut** Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
+**Automatique**
 
- **Personnalisée** Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l’élément sélectionné dans la liste Éléments affichés.
+Les éléments peuvent hériter de la couleur de premier plan d’autres éléments d’affichage tels que **Texte brut**. À l'aide de cette option, quand vous modifiez la couleur d'un élément d'affichage hérité, la couleur des éléments d'affichage associés change aussi automatiquement. Par exemple, si vous avez sélectionné la valeur **Automatique** pour **Erreur du compilateur**, et si vous changez plus tard la couleur de **Texte brut** en rouge, **Erreur du compilateur** hérite aussi automatiquement de la couleur rouge.
+
+**Default**
+
+Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
+
+**Personnalisé**
+
+Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.
 
 > [!NOTE]
 > Votre capacité à définir des couleurs personnalisées peut être limitée par les paramètres de couleur spécifiques à l'affichage de votre ordinateur. Par exemple, si votre ordinateur est configuré pour afficher 256 couleurs, et si vous sélectionnez une couleur personnalisée dans la boîte de dialogue **Couleur**, l’IDE adopte par défaut la **couleur de base** la plus proche et affiche la couleur noire dans la zone d’aperçu **Couleur**.
 
+**Arrière-plan de l’élément**
 
- **Arrière plan de l’élément** Fournit une palette de couleurs à partir de laquelle vous pouvez choisir une couleur d’arrière-plan pour l’élément sélectionné dans **Éléments affichés**. Dans la mesure où certains éléments sont liés et doivent conserver un modèle d'affichage cohérent, le changement de la couleur d'arrière-plan du texte modifie également les valeurs par défaut des éléments tels que Erreur du compilateur, Mot clé ou Opérateur.
+Fournit une palette de couleurs à partir de laquelle vous pouvez choisir une couleur d’arrière-plan pour l’élément sélectionné dans **Éléments affichés**. Dans la mesure où certains éléments sont liés et doivent conserver un modèle d'affichage cohérent, le changement de la couleur d'arrière-plan du texte modifie également les valeurs par défaut des éléments tels que Erreur du compilateur, Mot clé ou Opérateur.
 
- **Automatique** Les éléments peuvent hériter de la couleur d’arrière-plan d’autres éléments d’affichage tels que **Texte brut**. À l'aide de cette option, quand vous modifiez la couleur d'un élément d'affichage hérité, la couleur des éléments d'affichage associés change aussi automatiquement. Par exemple, si vous avez sélectionné la valeur **Automatique** pour **Erreur du compilateur**, et si vous changez plus tard la couleur de **Texte brut** en rouge, **Erreur du compilateur** hérite aussi automatiquement de la couleur rouge.
+**Automatique**
 
- **Par défaut** Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
+Les éléments peuvent hériter de la couleur d’arrière-plan d’autres éléments d’affichage tels que **Texte brut**. À l'aide de cette option, quand vous modifiez la couleur d'un élément d'affichage hérité, la couleur des éléments d'affichage associés change aussi automatiquement. Par exemple, si vous avez sélectionné la valeur **Automatique** pour **Erreur du compilateur**, et si vous changez plus tard la couleur de **Texte brut** en rouge, **Erreur du compilateur** hérite aussi automatiquement de la couleur rouge.
 
- **Personnalisée** Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l’élément sélectionné dans la liste Éléments affichés.
+**Default**
 
- **Bold** Sélectionnez cette option pour afficher le texte des **éléments affichés** en gras. Le texte en gras est plus facilement repérable dans l'éditeur.
+Couleur qui s’affiche pour l’élément la première fois que vous démarrez Visual Studio. Si vous cliquez sur le bouton **Par défaut**, la valeur initiale est restaurée à l’aide de cette couleur.
 
- **Exemple**Affiche un aperçu du modèle de style, du modèle de taille et du modèle de couleurs de la police pour les éléments sélectionnés dans **Afficher les paramètres de** et **Éléments affichés**. Vous pouvez utiliser cette zone pour afficher un aperçu des résultats obtenus quand vous testez différentes options de mise en forme.
+**Personnalisé**
+
+Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.
+
+**Gras**
+
+Sélectionnez cette option pour afficher le texte des **éléments affichés** en gras. Le texte en gras est plus facilement repérable dans l'éditeur.
+
+**Exemple**
+
+Affiche un aperçu du modèle de style, du modèle de taille et du modèle de couleurs de la police pour les éléments sélectionnés dans **Afficher les paramètres de** et **Éléments affichés**. Vous pouvez utiliser cette zone pour afficher un aperçu des résultats obtenus quand vous testez différentes options de mise en forme.
 
 ## <a name="see-also"></a>Voir aussi
 

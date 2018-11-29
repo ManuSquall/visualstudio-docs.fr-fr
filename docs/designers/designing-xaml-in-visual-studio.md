@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348641"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389615"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Concevoir en XAML dans Visual Studio
 
@@ -48,7 +48,7 @@ Pour la plupart des tâches de base, l'IDE de Visual Studio et l'IDE de Blend po
 
      ![Expérience de rechargement de fichier](../designers/media/blendfilereload.png)
 
-- **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs quand vous vous connectez avec le même compte Microsoft. Consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs quand vous vous connectez avec le même compte Microsoft. Consultez [Synchroniser les paramètres sur plusieurs ordinateurs](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Un Explorateur de solutions commun :** **Explorateur de solutions** vous offre une vue organisée de vos projets et de leurs fichiers, ainsi qu’un accès aux commandes qui s’y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
 

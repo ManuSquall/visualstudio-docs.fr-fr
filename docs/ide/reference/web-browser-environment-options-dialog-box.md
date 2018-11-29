@@ -24,32 +24,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671883"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389443"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options
+
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > L’ouverture de certains fichiers ou composants à partir du web peut entraîner l’exécution de code sur votre ordinateur.
 
-
 ## <a name="home-page"></a>Page d'accueil
- Définit la page affichée quand vous ouvrez le navigateur web de l’IDE.
+
+Définit la page affichée quand vous ouvrez le navigateur web de l’IDE.
 
 ## <a name="search-page"></a>Page de recherche
- Vous permet de désigner une page de recherche pour le navigateur web interne. Cet emplacement peut différer de la page de recherche utilisée par des instances d’Internet Explorer lancées en dehors de l’environnement de développement intégré (IDE).
+
+Vous permet de désigner une page de recherche pour le navigateur web interne. Cet emplacement peut différer de la page de recherche utilisée par des instances d’Internet Explorer lancées en dehors de l’environnement de développement intégré (IDE).
 
 ## <a name="view-source-in"></a>Afficher la source dans
- Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **Afficher la source** dans la page à partir du navigateur web interne.
+
+Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **Afficher la source** dans la page à partir du navigateur web interne.
 
 -   **Éditeur de code source** Sélectionnez cette option pour afficher le code source dans [l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md).
 
@@ -58,11 +60,11 @@ Définit les options à la fois pour le navigateur web interne et pour Internet 
 -   **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Options Internet Explorer
+
 Cliquez sur ce bouton pour modifier les options relatives à Internet Explorer dans la boîte de dialogue **Propriétés Internet**. Les modifications apportées dans cette boîte de dialogue affectent à la fois le navigateur web interne et les instances d’Internet Explorer lancées en dehors de l’IDE de Visual Studio (par exemple, à partir du menu Démarrer).
 
 > [!NOTE]
 > Utilisez la boîte de dialogue **Naviguer avec** pour remplacer le navigateur web interne de Visual Studio par un navigateur de votre choix. Vous pouvez accéder à la boîte de dialogue Naviguer avec pour, par exemple, un fichier HTML dans votre projet en cliquant dessus avec le bouton droit ou en utilisant son menu contextuel.
-
 
 ## <a name="see-also"></a>Voir aussi
 
