@@ -1,6 +1,6 @@
 ---
-title: Synchroniser vos paramètres
-ms.date: 01/23/2017
+title: Synchroniser les paramètres
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 633767e66a4b3d976999574c885a3e6f7a06ddcf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766127"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388489"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -27,7 +27,7 @@ Quand vous vous connectez à Visual Studio sur plusieurs ordinateurs en utilisan
 
 Par défaut, les paramètres suivants sont synchronisés :
 
-- Paramètres de développement. Vous devez sélectionner un ensemble de paramètres la première fois que vous exécutez Visual Studio, mais vous pouvez changer la sélection à tout moment. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- Paramètres de développement. Vous sélectionnez un ensemble de paramètres la première fois que vous ouvrez Visual Studio, mais vous pouvez les changer quand vous voulez. Pour plus d’informations, consultez [Paramètres d’environnement](../ide/environment-settings.md).
 
 - Alias de commande définis par l'utilisateur. Pour plus d’informations sur la façon de définir des alias de commande, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
@@ -53,24 +53,6 @@ Par défaut, les paramètres suivants sont synchronisés :
 
 Les paramètres synchronisés pour Visual Studio sont activés par défaut. Vous pouvez désactiver les paramètres synchronisés sur un ordinateur en accédant à la page **Outils** > **Options** > **Environnement** > **Comptes**, et en décochant la case **Synchroniser les paramètres entre les appareils quand ils sont connectés à Visual Studio**. Par exemple, si vous décidez de ne pas synchroniser les paramètres de Visual Studio sur l’ordinateur « A », les changements apportés aux paramètres sur l’ordinateur « A » n’apparaissent pas sur l’ordinateur « B » ou « C ». Les ordinateurs « B » et « C » continuent à se synchroniser entre eux, mais pas avec l’ordinateur « A ».
 
-## <a name="reset-settings"></a>Réinitialiser les paramètres
-
-Vous pouvez réinitialiser tous les paramètres selon une collection de paramètres par défaut en effectuant les étapes suivantes :
-
-1. Dans Visual Studio, sélectionnez **Outils** > **Importation et exportation de paramètres** pour ouvrir l’Assistant **Importation et exportation de paramètres**.
-
-1. Dans l’Assistant **Importation et exportation de paramètres**, sélectionnez **Réinitialiser tous les paramètres**, puis **Suivant**.
-
-   ![Assistant Importation et exportation de paramètres dans Visual Studio](media/reset-all-settings.png)
-
-1. Dans la page **Enregistrer les paramètres actuels**, sélectionnez **Oui** ou **Non**, puis **Suivant**.
-
-1. Dans la page **Choisir une collection de paramètres par défaut**, choisissez une collection, puis sélectionnez **Terminer**.
-
-   ![Collections de paramètres dans Visual Studio](media/settings-collections.png)
-
-1. Dans la page **Réinitialisation terminée**, sélectionnez **Fermer**.
-
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchroniser les paramètres entre les éditions et les produits de la famille Visual Studio
 
 Vous pouvez synchroniser des paramètres dans toutes les éditions de Visual Studio, notamment la Community Edition. Les paramètres sont également synchronisés entre les produits de la famille Visual Studio. Toutefois, chacun de ces produits de famille peut avoir ses propres paramètres, lesquels ne sont pas partagés avec Visual Studio. Par exemple, les paramètres spécifiques à un produit sur l’ordinateur « A » sont partagés avec un autre produit sur l’ordinateur « B », mais pas avec Visual Studio sur les ordinateurs « A » ou « B ».
@@ -94,4 +76,6 @@ Si vous disposez d’installations côte à côte de Visual Studio 2017 et si v
 
 ## <a name="see-also"></a>Voir aussi
 
-[Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Paramètres d’environnement](../ide/environment-settings.md)
+- [Environnement > Comptes, boîte de dialogue Options](reference/synchronized-settings-environment-options-dialog-box.md)

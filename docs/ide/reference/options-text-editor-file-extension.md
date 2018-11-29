@@ -17,50 +17,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eacb43dfa414d29f614c1ee188c38467ba288b33
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218424"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389038"
 ---
 # <a name="options-text-editor-file-extension"></a>Options, Éditeur de texte, Extension de fichier
+
 Cette boîte de dialogue Options permet de spécifier comment tous les fichiers avec une extension donnée seront gérés par l’environnement de développement intégré (IDE) Visual Studio. Pour chaque **Extension** que vous entrez, vous pouvez sélectionner un éditeur. Cela vous permet de choisir l’éditeur IDE ou le concepteur dans lequel les documents d’un certain type s’ouvriront. Pour afficher ces options, choisissez **Options** dans le menu **Outils**, développez le nœud **Éditeur de texte**, puis sélectionnez **Extension de fichier**.
 
- Quand vous sélectionnez une option « avec encodage », une boîte de dialogue s’affiche chaque fois que vous ouvrez un document de ce type et vous permet de sélectionner un schéma de codage pour le document. Ce comportement peut être utile si vous préparez des versions de vos documents de projet pour les utiliser sur différentes plateformes ou dans des langages cibles différents.
+Quand vous sélectionnez une option « avec encodage », une boîte de dialogue s’affiche chaque fois que vous ouvrez un document de ce type et vous permet de sélectionner un schéma de codage pour le document. Ce comportement peut être utile si vous préparez des versions de vos documents de projet pour les utiliser sur différentes plateformes ou dans des langages cibles différents.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+## <a name="uielement-list"></a>Liste UIElement
 
+**Extension**
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
- **Extension**
+Tapez l’extension de fichier pour laquelle vous souhaitez définir un Éditeur choisi dans l’IDE.
 
- Tapez l’extension de fichier pour laquelle vous souhaitez définir un Éditeur choisi dans l’IDE.
-
- **Éditeur**
+**Éditeur**
 
  Sélectionnez l’éditeur IDE ou le concepteur dans lequel les documents avec cette extension de fichier s’ouvriront. Quand vous sélectionnez une option « avec encodage », une boîte de dialogue s’affiche chaque fois que vous ouvrez un tel document et vous permet de sélectionner un schéma de codage.
 
- **Ajouter**
+**Ajouter**
 
- Ajoute à la liste des extensions une entrée qui inclut l’**Extension** et l’**Éditeur choisi** spécifiés.
+Ajoute à la liste des extensions une entrée qui inclut l’**Extension** et l’**Éditeur choisi** spécifiés.
 
- **Supprimer**
+**Supprimer**
 
- Supprime l’entrée sélectionnée de la liste des extensions.
+Supprime l’entrée sélectionnée de la liste des extensions.
 
- **Liste d’extensions**
+**Liste d’extensions**
 
- Répertorie toutes les extensions pour lesquelles un Éditeur choisi a été spécifié.
+Répertorie toutes les extensions pour lesquelles un Éditeur choisi a été spécifié.
 
- **Mapper les fichiers sans extension vers**
+**Mapper les fichiers sans extension vers**
 
- Sélectionnez cette option si vous souhaitez spécifier comment les fichiers sans extension doivent être gérés par l’IDE.
+Sélectionnez cette option si vous souhaitez spécifier comment les fichiers sans extension doivent être gérés par l’IDE.
 
- **Options des fichiers sans extensions**
+**Options des fichiers sans extensions**
 
- Fournit la même liste que l’option **Éditeur**. Sélectionnez l’éditeur IDE ou le concepteur dans lequel les documents sans extension de fichier s’ouvriront.
+Fournit la même liste que l’option **Éditeur**. Sélectionnez l’éditeur IDE ou le concepteur dans lequel les documents sans extension de fichier s’ouvriront.
 
 ## <a name="see-also"></a>Voir aussi
 

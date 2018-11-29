@@ -11,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16d0ed610843826f0eac77fc2ce95bcfca3df6e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952285"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388359"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
 
 Utilisez la page des options du **concepteur XAML** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir cette page, choisissez le menu **Outils**, puis **Options**. Pour accéder à la page de propriétés du **concepteur XAML**, choisissez le nœud **Concepteur XAML**. Les paramètres du concepteur XAML sont appliqués quand vous ouvrez le document. Par conséquent, si vous modifiez les paramètres, vous devez fermer et rouvrir Visual Studio pour afficher les modifications.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Activer le concepteur XAML
 
