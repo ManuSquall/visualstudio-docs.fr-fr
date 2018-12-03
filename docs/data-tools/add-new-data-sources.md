@@ -1,6 +1,6 @@
 ---
 title: Ajouter de nouvelles sources de données
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666629"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304608"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 
-Dans le contexte de .NET data tools dans Visual Studio, le terme *source de données* fait référence aux objets .NET qui se connectent à un magasin de données et exposent les données à une application .NET. Les concepteurs de Visual Studio peuvent consommer la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires lorsque vous glissez -déplacez des objets de base de données à partir de la **des Sources de données** fenêtre. Ce type de source de données peut être :
+Dans le contexte de .NET data tools dans Visual Studio, le terme *source de données* fait référence aux objets .NET qui se connectent à un magasin de données et rendre les données disponibles à une application .NET. Les concepteurs de Visual Studio peuvent consommer la sortie de la source de données pour générer le code réutilisable qui lie les données aux formulaires lorsque vous glissez -déplacez des objets de base de données à partir de la **des Sources de données** fenêtre. Ce type de source de données peut être :
 
 - Une classe dans un modèle Entity Framework qui est associé à un type de base de données.
 
@@ -37,13 +37,22 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
 - Une classe ou une collection dans votre solution.
 
 > [!NOTE]
-> Si vous n’utilisez pas les fonctionnalités de liaison de données, jeux de données, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « data source » ne s’applique pas. Connectez-vous directement à la base de données en utilisant les objets SQLCommand simplement et communiquer directement avec la base de données.
+> Si vous n’utilisez pas de fonctionnalités de liaison de données, jeux de données, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « data source » ne s’applique pas. Connectez-vous directement à la base de données en utilisant les objets SQLCommand simplement et communiquer directement avec la base de données.
 
 Vous créez et modifiez des sources de données à l’aide de la **Assistant de Configuration de Source de données** dans une application Windows Forms ou Windows Presentation Foundation. Pour Entity Framework, commencez par créer vos classes d’entité, puis démarrer l’Assistant en sélectionnant **projet** > **ajouter une nouvelle Source de données** (décrite plus en détail plus loin dans cet article).
 
 ![Assistant Configuration de source de données](../data-tools/media/data-source-configuration-wizard.png)
 
-Après avoir créé une source de données, il apparaît dans le **des Sources de données** fenêtre outil (**MAJ**+**Alt**+**D**ou **vue** > **autres Windows** > **Source de données**). Vous pouvez faire glisser une source de données à partir de la **des Sources de données** fenêtre sur une aire de conception de formulaire ou d’un contrôle. Cela entraîne la génération d’un code réutilisable qui affiche les données à partir du magasin de données. L’illustration suivante montre un jeu de données qui a été supprimé sur un formulaire Windows. Si vous sélectionnez **F5** sur l’application, les données à partir de la base de données sous-jacente s’affichent dans les contrôles du formulaire.
+## <a name="data-sources-window"></a>Fenêtre Sources de données
+
+Après avoir créé une source de données, il apparaît dans le **des Sources de données** fenêtre outil.
+
+> [!TIP]
+> Pour ouvrir le **des Sources de données** fenêtre, assurez-vous que votre projet est ouvert, puis appuyez sur **MAJ**+**Alt**+**D**ou choisissez **vue** > **Windows autres** > **des Sources de données**.
+
+Vous pouvez faire glisser une source de données à partir de la **des Sources de données** fenêtre sur une aire de conception de formulaire ou d’un contrôle. Cela entraîne la génération d’un code réutilisable qui affiche les données à partir du magasin de données.
+
+L’illustration suivante montre un jeu de données qui a été supprimé sur un formulaire Windows. Si vous sélectionnez **F5** sur l’application, les données à partir de la base de données sous-jacente s’affichent dans les contrôles du formulaire.
 
 ![Opération de glisser de Source de données](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -55,7 +64,7 @@ Vous pouvez créer un jeu de données ou un modèle Entity Framework à utiliser
 
 Pour créer un jeu de données comme source de données, exécutez le **Assistant de Configuration de Source de données** en sélectionnant **projet** > **ajouter une nouvelle Source de données**. Choisissez le **base de données** source de données tapez, puis suivez les invites pour spécifier une connexion de base de données nouvelle ou existante, ou d’un fichier de base de données.
 
-### <a name="entity-classes"></a>Classes d’entité
+### <a name="entity-classes"></a>Classes Entity
 
 Pour créer un modèle Entity Framework comme source de données :
 
@@ -79,14 +88,14 @@ Lorsque vous créez une source de données à partir d’un service, Visual Stud
 
 Vous pouvez créer une source de données parmi les types de services suivants :
 
-- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [Services de données WCF](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
 - [Services WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
 - Services web
 
     > [!NOTE]
-    > Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peut ne pas fournissent suffisamment d’informations pour le **Assistant de Configuration de Source de données** pour créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément ne s’affichent dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.
+    > Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément ne s’affichent dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.
 
 ## <a name="data-source-for-an-object"></a>Source de données pour un objet
 

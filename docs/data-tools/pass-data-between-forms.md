@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750759"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305544"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
 
@@ -39,13 +39,13 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 -   Création et configuration d’un dataset avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
--   Sélection du contrôle à créer sur le formulaire lorsque vous faites glisser des éléments à partir de la **des Sources de données** fenêtre. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-   Sélection du contrôle à créer dans le formulaire pendant le déplacement d’éléments depuis la fenêtre **Sources de données**. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Création d’un contrôle lié aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers un formulaire.
+-   Création de contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.
 
 -   Création d'un deuxième formulaire avec une grille pour afficher les données.
 
--   Création d'une requête TableAdapter pour extraire les commandes d'un client spécifique.
+-   Création d’une requête TableAdapter pour récupérer les commandes d’un client spécifique.
 
 -   Transfert de données entre formulaires.
 
@@ -71,49 +71,49 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **PassingDataBetweenForms**, puis choisissez **OK**.
 
-     Le **PassingDataBetweenForms** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet **PassingDataBetweenForms** est créé et ajouté à l’**Explorateur de solutions**.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
-1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
+1.  Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Configuration de Source de données** Assistant.
+2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
 
 3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4.  Sur le **choisir un modèle de base de données** page, vérifiez que **Dataset** est spécifié, puis cliquez sur **suivant**.
+4.  Dans la page **Choisir un modèle de base de données**, vérifiez que **Dataset** est spécifié, puis cliquez sur **Suivant**.
 
-5.  Sur le **choisir votre connexion de données** page, effectuez l’une des opérations suivantes :
+5.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
 
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-    -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.
+    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
-6.  Si votre base de données requiert un mot de passe et si l’option pour inclure des données sensibles est activée, sélectionnez l’option, puis cliquez sur **suivant**.
+6.  Si votre base de données nécessite un mot de passe et si l’option permettant d’inclure les données sensibles est activée, sélectionnez l’option, puis cliquez sur **Suivant**.
 
 7.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.
 
-8.  Sur le **choisir vos objets de base de données** page, développez le **Tables** nœud.
+8.  Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
-9. Sélectionnez le **clients** et **commandes** tables, puis cliquez sur **Terminer**.
+9. Sélectionnez les tables **Customers** et **Orders**, puis cliquez sur **Terminer**.
 
-     Le **NorthwindDataSet** est ajouté à votre projet et le **clients** et **commandes** tables apparaissent dans le **des Sources de données** fenêtre.
+     **NorthwindDataSet** est ajouté à votre projet, et les tables **Customers** et **Orders** apparaissent dans la fenêtre **Sources de données**.
 
 ## <a name="create-the-first-form-form1"></a>Créer le premier formulaire (Form1)
 
-Vous pouvez créer une grille liée aux données (un <xref:System.Windows.Forms.DataGridView> contrôle), en faisant glisser le **clients** nœud à partir de la **des Sources de données** fenêtre vers le formulaire.
+Vous pouvez créer une grille liée aux données (un contrôle <xref:System.Windows.Forms.DataGridView>) en faisant glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers le formulaire.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>Pour créer une grille liée aux données dans le formulaire
 
--   Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre sur **Form1**.
+-   Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers **Form1**.
 
-     Un <xref:System.Windows.Forms.DataGridView> et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur **Form1**. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
+     Un <xref:System.Windows.Forms.DataGridView> et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur **Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
 ## <a name="create-the-second-form"></a>Créer la deuxième forme
 
@@ -121,29 +121,29 @@ Créer un deuxième formulaire auquel passer les données.
 
 1.  Dans le menu **Projet**, choisissez **Ajouter un formulaire Windows**.
 
-2.  Laissez le nom par défaut **Form2**, puis cliquez sur **ajouter**.
+2.  Laissez le nom par défaut (**Form2**), puis cliquez sur **Ajouter**.
 
-3.  Faites glisser le **commandes** nœud à partir de la **des Sources de données** fenêtre sur **Form2**.
+3.  Faites glisser le nœud **Orders** principal depuis la fenêtre **Sources de données** vers **Form2**.
 
-     Un <xref:System.Windows.Forms.DataGridView> et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur **Form2**. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
+     Un <xref:System.Windows.Forms.DataGridView> et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
-4.  Supprimer le **OrdersBindingNavigator** à partir de la barre d’état du composant.
+4.  Supprimez **OrdersBindingNavigator** de la barre d’état des composants.
 
-     Le **OrdersBindingNavigator** disparaît de **Form2**.
+     **OrdersBindingNavigator** disparaît de **Form2**.
 
 ## <a name="add-a-tableadapter-query"></a>Ajouter une requête TableAdapter
 
 Ajouter une requête TableAdapter à Form2 pour charger les commandes du client sélectionné sur Form1.
 
-1.  Double-cliquez sur le **NorthwindDataSet.xsd** fichier **l’Explorateur de solutions**.
+1.  Double-cliquez sur le fichier **NorthwindDataSet.xsd** dans l’**Explorateur de solutions**.
 
-2.  Cliquez sur le **OrdersTableAdapter**, puis sélectionnez **ajouter une requête**.
+2.  Cliquez avec le bouton droit sur **OrdersTableAdapter** et sélectionnez **Ajouter une requête**.
 
-3.  Laissez l’option par défaut **utiliser des instructions SQL**, puis cliquez sur **suivant**.
+3.  Laissez l’option par défaut (**Utiliser des instructions SQL**), puis cliquez sur **Suivant**.
 
-4.  Laissez l’option par défaut **LECT qui retourne des lignes**, puis cliquez sur **suivant**.
+4.  Laissez l’option par défaut (**SELECT qui retourne des lignes**), puis cliquez sur **Suivant**.
 
-5.  Ajoutez une clause WHERE à la requête, pour retourner `Orders` selon le `CustomerID`. La requête doit ressembler à la suivante :
+5.  Ajoutez une clause WHERE à la requête pour retourner `Orders` en fonction de `CustomerID`. La requête doit ressembler à la suivante :
 
     ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
@@ -158,26 +158,26 @@ Ajouter une requête TableAdapter à Form2 pour charger les commandes du client 
 
 7.  Pour le **remplir un nom DataTableMethod**, type `FillByCustomerID`.
 
-8.  Effacer la **retourner un DataTable** option, puis cliquez sur **suivant**.
+8.  Désactivez l’option **Retourner un DataTable**, puis cliquez sur **Suivant**.
 
 9. Cliquez sur **Terminer**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Créez une méthode sur Form2 pour passer des données
 
-1.  Avec le bouton droit **Form2**, puis sélectionnez **afficher le Code** pour ouvrir **Form2** dans le **éditeur de Code**.
+1.  Cliquez avec le bouton droit sur **Form2** et sélectionnez **Afficher le code** pour ouvrir **Form2** dans l’**Éditeur de code**.
 
-2.  Ajoutez le code suivant à **Form2** après le `Form2_Load` méthode :
+2.  Ajoutez le code suivant à **Form2** après la méthode `Form2_Load` :
 
      [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Créez une méthode sur Form1 pour passer des données et afficher Form2
 
-1.  Dans **Form1**, avec le bouton droit de la grille de données client, puis cliquez sur **propriétés**.
+1.  Dans **Form1**, cliquez avec le bouton droit sur la grille de données Customer, puis cliquez sur **Propriétés**.
 
-2.  Dans le **propriétés** fenêtre, cliquez sur **événements**.
+2.  Dans la fenêtre **Propriétés**, cliquez sur **Événements**.
 
-3.  Double-cliquez sur le **CellDoubleClick** événement.
+3.  Double-cliquez sur l’événement **CellDoubleClick**.
 
      L'éditeur de code apparaît.
 
@@ -190,7 +190,7 @@ Ajouter une requête TableAdapter à Form2 pour charger les commandes du client 
 
 -   Appuyez sur **F5** pour exécuter l’application.
 
--   Double-cliquez sur un enregistrement de client dans **Form1** pour ouvrir **Form2** avec les commandes de ce client.
+-   Double-cliquez sur un enregistrement client dans **Form1** pour ouvrir **Form2** avec les commandes de ce client.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

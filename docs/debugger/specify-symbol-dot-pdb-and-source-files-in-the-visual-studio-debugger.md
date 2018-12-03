@@ -1,7 +1,7 @@
 ---
 title: Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257379"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389174"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -49,7 +49,7 @@ Le *.pdb* fichier conserve des informations d’état de débogage et de projet 
 
 Fichiers de symboles indiquent également l’emplacement des fichiers sources et éventuellement, le serveur pour les récupérer à partir de.
   
-Le débogueur charge uniquement *.pdb* les fichiers qui correspondent exactement à la *.pdb* fichiers créés quand une application a été générée (autrement dit, la version d’origine *.pdb* fichiers ou des copies). Cette duplication exacte est nécessaire, car la disposition des applications peut changer même si le code lui-même n’a pas changé. Pour plus d’informations, consultez [pourquoi Visual Studio requièrent des symboles de débogueur fichiers doivent correspondre exactement aux fichiers binaires qui elles ont été générées avec ?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+Le débogueur charge uniquement *.pdb* les fichiers qui correspondent exactement à la *.pdb* fichiers créés quand une application a été générée (autrement dit, la version d’origine *.pdb* fichiers ou des copies). Cette duplication exacte est nécessaire, car la disposition des applications peut changer même si le code lui-même n’a pas changé. Pour plus d’informations, consultez [Why does Visual Studio require debugger symbol files to *exactly* match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 > [!TIP]
 > Pour déboguer le code en dehors de votre code source du projet, telles que le code de Windows ou tiers appelé par votre projet de code, vous devez spécifier l’emplacement du code externe *.pdb* fichiers (et éventuellement, les fichiers sources), qui doit correspondre exactement à les builds dans votre application. 
@@ -71,7 +71,7 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
    
 3. Tous les emplacements spécifiés dans les options du débogueur pour les fichiers de symboles. Pour ajouter et activer des emplacements de symboles, consultez [configurer des emplacements de symboles et options de chargement](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-   - N’importe quel dossier de cache de symboles local.  
+   - Tout dossier de cache de symboles local.  
   
    - Réseau spécifié, internet, ou les serveurs de symboles local et emplacements, tels que les serveurs de symboles Microsoft si sélectionné. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger des fichiers de symboles de débogage à partir de serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) et [outils de débogage pour Windows](/windows-hardware/drivers/debugger/index) sont deux outils qui peuvent utiliser des serveurs de symboles.
       
@@ -139,7 +139,7 @@ Sur le **outils** > **Options** > **débogage** > **symboles** page, vous pouvez
   
 Vous pouvez sélectionner les options de symbole supplémentaires dans **outils** > **Options** > **débogage** > **général** (ou **déboguer** > **Options** > **général**) :  
 
-- **Charger les exportations de DLL (natif uniquement)**  
+- **Charger les exportations de dll (Natif uniquement)**  
   
   Tables d’exportation de DLL des charges pour C/C++. Pour plus d’informations, consultez [tables d’exportation de DLL](#use-dumpbin-exports). Informations d’exportation de DLL de lecture implique une surcharge, donc le chargement des tables d’exportation est désactivé par défaut. Vous pouvez également utiliser `dumpbin /exports` dans une ligne de commande de génération C/C++.  
   
@@ -156,7 +156,7 @@ Vous pouvez sélectionner les options de symbole supplémentaires dans **outils*
   Vous pouvez limiter les commandes qui *srcsrv.dll* peuvent exécuter à partir de l’application *.pdb* fichier en répertoriant les commandes autorisées dans un fichier nommé *srcsrv.ini*. Place le *srcsrv.ini* fichier dans le même dossier que *srcsrv.dll* et *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécuter une commande pas dans le *srcsvr.ini* fichier entraîne une zone de boîte de dialogue de confirmation s’affiche. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez mis *cmd.exe* dans votre *srcsrv.ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd.exe* qui rendrait dangereux.  
   
@@ -176,13 +176,13 @@ Quand vous générez un projet à partir de l’IDE de Visual Studio avec la nor
   
   Si vous générez votre application C/C++ à l’aide d’un makefile, et que vous spécifiez **/Zi** ou **/Zi** sans utiliser **/Fd**, le compilateur crée deux *.pdb*fichiers :  
   
-  - *VC\<x > .pdb*, où  *\<x >* représente la version de Visual C++, par exemple *VC11.pdb* 
+  - *VC\<x.pdb*, où *\<x>* représente la version de Visual C++, par exemple *VC11.pdb* 
     
-    Le *VC\<x > .pdb* fichier stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le makefile du projet. Chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC\<x > .pdb*. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que  *\<windows.h >*, les typedefs de ces en-têtes sont stockés qu’une seule fois, plutôt que dans chaque fichier objet. Les informations insérées inclut des informations de type, mais n’incluent pas les informations de symboles, tels que des définitions de fonction.  
+    Le *VC\<x > .pdb* fichier stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le makefile du projet. Chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC\<x > .pdb*. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que  *\<windows.h >*, les typedefs de ces en-têtes sont stockés qu’une seule fois, plutôt que dans chaque fichier objet. Les informations insérées incluent les informations de type, mais pas les informations de symbole, comme les définitions de fonctions.  
   
   - *\<projet > .pdb* 
     
-    Le  *\<projet > .pdb* fichier stocke toutes les informations de débogage pour le projet *.exe* de fichiers et se trouve dans le *\debug* sous-répertoire. Le  *\<projet > .pdb* fichier contient des informations de débogage complètes, y compris les prototypes de fonction, pas seulement les informations de type trouvent dans *VC\<x > .pdb*. 
+    Le  *\<projet > .pdb* fichier stocke toutes les informations de débogage pour le projet *.exe* de fichiers et se trouve dans le *\debug* sous-répertoire. Le fichier *\<projet>.pdb* contient toutes les informations de débogage, y compris les prototypes de fonction, et non pas seulement les informations de type présentes dans *VC\<x>.pdb*. 
   
   Les deux le *VC\<x > .pdb* et  *\<projet > .pdb* fichiers autorisent les mises à jour incrémentielles. L’éditeur de liens incorpore également le chemin d’accès à la *.pdb* des fichiers dans le *.exe* ou *.dll* fichier qu’il crée.  
   
@@ -194,7 +194,7 @@ Quand vous générez un projet à partir de l’IDE de Visual Studio avec la nor
   
 ### <a name="net-framework-options"></a>Options du .NET Framework 
   
-Générer avec **/debug** pour créer un *.pdb* fichier. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. Génération avec **pdbonly** génère *.pdb* des fichiers, mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **pdbonly** si vous souhaitez générer *.pdb* fichiers pour une version de génération que vous ne souhaitez pas être déboguée. Pour plus d’informations, consultez [/Debug (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Générer avec **/debug** pour créer un *.pdb* fichier. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers *.pdb*, mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous voulez générer des fichiers *.pdb* pour une version Release sans qu’elle puisse être déboguée. Pour plus d’informations, consultez [/debug (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
 ### <a name="web-applications"></a>Applications Web  
   
@@ -265,4 +265,4 @@ Vous pouvez spécifier les emplacements que le débogueur recherche les fichiers
 ## <a name="see-also"></a>Voir aussi  
 [Comprendre les fichiers de symboles et les paramètres des symboles de Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Modifications dans Visual Studio 2012 et 2013 du chargement des symboles distants .NET](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Modifications du chargement des symboles distants .NET dans Visual Studio 2012 et 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

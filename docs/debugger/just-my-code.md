@@ -1,7 +1,7 @@
 ---
 title: Déboguer du code utilisateur avec uniquement mon Code | Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050337"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389025"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec uniquement mon Code 
 
@@ -23,7 +23,7 @@ ms.locfileid: "50050337"
 
 Uniquement mon Code fonctionne différemment dans les projets .NET Framework, C++ et JavaScript.
 
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Activer ou désactiver uniquement mon Code  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Activer ou désactiver Uniquement mon code  
 
 Pour la plupart des langages de programmation, uniquement mon Code est activé par défaut. 
 
@@ -56,7 +56,7 @@ Dans le **pile des appels** ou **tâches** fenêtre, uniquement mon Code réduit
 
 Double-cliquez sur une ligne de code externe développée dans le **pile des appels** fenêtre met en surbrillance la ligne de code appelant en vert dans le code source. Pour les DLL ou d’autres modules pas trouvé ou chargé, un symbole ou une source introuvable peut s’ouvrir.
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Uniquement mon Code .NET framework 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Uniquement mon code .NET Framework 
 
 Dans les projets .NET Framework, uniquement mon Code utilise le symbole (*.pdb*) les fichiers et les optimisations de programme pour classer le code utilisateur et non-utilisateur. Le débogueur .NET Framework prend en compte optimisé des fichiers binaires et non chargé *.pdb* fichiers doivent être du code non-utilisateur.
   
@@ -81,7 +81,7 @@ Si une exception non gérée se produit dans le code non-utilisateur, le débogu
   
 Si les exceptions de première chance sont activées pour l’exception, la ligne de code de l’utilisateur appelant est mis en surbrillance en vert dans le code source. Le **pile des appels** fenêtre affiche le cadre annoté intitulé **[Code externe]**.  
 
-##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon Code C++  
+##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C++  
   
 En C++, l’activation d’uniquement mon Code est identique à l’aide de la [/JMC (débogage uniquement mon code)](/cpp/build/reference/jmc) commutateur de compilateur.
 
@@ -140,8 +140,8 @@ Un *.natstepfilter* fichier est un fichier XML avec la syntaxe suivante :
 |Élément|Description|  
 |-------------|-----------------|  
 |`Function`|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|  
-|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|  
-|`Module`|Facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
+|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|  
+|`Module`|Facultative. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
 |`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`  -Indique au débogueur de survol de la fonction.<br /> `StepInto`  -Indique au débogueur de pas à pas détaillé de la fonction de la substitution de n’importe quel autre `NoStepInto` pour la fonction de mise en correspondance.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de pile d’appel C++  
@@ -173,30 +173,30 @@ Un *.natjmc* fichier est un fichier XML avec la syntaxe suivante :
   
 ```  
   
- **Attributs d’élément de module**  
+ **Attributs des éléments Module**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Chemin d’accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro ou plusieurs caractères). Par exemple :<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> Indique au débogueur de traiter tous les modules dans *\3rdParty\UtilLibs* sur n’importe quel lecteur comme du code externe.|  
-|`Company`|Facultatif. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
+|`Company`|Facultative. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
   
- **Attributs de l’élément de fichier**  
+ **Attributs des éléments File**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Chemin d'accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d’accès.|  
   
- **Attributs de l’élément (fonction)**  
+ **Attributs des éléments Function**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Le nom complet de la fonction à traiter comme du code externe.|  
-|`Module`|Facultatif. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
+|`Module`|Facultative. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon Code JavaScript  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> Uniquement mon Code JavaScript contrôle l’affichage de pile pas à pas détaillé et d’appel en classant les code dans une de ces classifications :  
+<a name="BKMK_JS_User_and_non_user_code"></a> Uniquement mon code JavaScript contrôle l’exécution pas à pas et l’affichage de la pile des appels en catégorisant le code selon la classification suivante :  
 
 |||  
 |-|-|  
@@ -218,7 +218,7 @@ Le débogueur JavaScript classifie un code en tant qu’utilisateur ou non-utili
   
 Chaque étape de classification remplace les étapes précédentes. 
 
-Reste du code est classé comme **MyCode**.  
+Le reste du code est classé comme **MyCode**.  
 
 Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL en tant que code utilisateur ou non à l’utilisateur, en ajoutant un *.json* fichier nommé *mycode.json* dans le dossier racine d’un projet JavaScript. Consultez [personnaliser uniquement mon Code JavaScript](#BKMK_JS_Customize_Just_My_Code). 
 
@@ -226,7 +226,7 @@ Vous pouvez modifier les classifications par défaut et classer des fichiers et 
 
 - Si une fonction est le code non-utilisateur, **déboguer** > **pas à pas détaillé** (ou **F11**) se comporte comme **déboguer**  >  **Pas à pas principal** (ou **F10**).  
 - Si une étape commence dans non-utilisateur (**LibraryCode** ou **UnrelatedCode**) le code, pas à pas détaillé temporairement se comporte comme si uniquement mon Code n’est pas activé. Quand vous passez au code utilisateur, uniquement mon Code pas à pas est réactivé.  
-- Quand un code utilisateur étape aboutit à quitter le contexte d’exécution actuel, le débogueur s’arrête à la ligne de code exécutée utilisateur suivante. Par exemple, si un rappel s’exécute dans **LibraryCode** code, le débogueur continue jusqu'à ce que la ligne suivante du code utilisateur s’exécute.
+- Quand un code utilisateur étape aboutit à quitter le contexte d’exécution actuel, le débogueur s’arrête à la ligne de code exécutée utilisateur suivante. Par exemple, si un rappel s’exécute dans du code **LibraryCode**, le débogueur continue jusqu’à ce que la ligne suivante du code utilisateur s’exécute.
 - **Pas à pas sortant** (ou **MAJ**+**F11**) s’arrête sur la ligne suivante du code utilisateur. 
 
 S’il n’existe plus aucun code utilisateur, le débogage se poursuit jusqu'à ce qu’il se termine, rencontre un autre point d’arrêt ou génère une erreur. 
@@ -242,7 +242,7 @@ Si une exception non gérée se produit dans **UnrelatedCode**, et **MyCode** ou
   
 Si les exceptions de première chance sont activées pour l’exception et l’exception se produit dans **LibraryCode** ou **UnrelatedCode**:  
   
--   Si l’exception est gérée, le débogueur ne s’arrête.  
+-   Si l’exception est gérée, le débogueur ne s’arrête pas.  
 -   Si l'exception n'est pas gérée, le débogueur s'arrête.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personnaliser uniquement mon Code JavaScript  
@@ -279,28 +279,28 @@ Spécifications de ce fichier remplacent les classifications par défaut et le *
   
  **Eval, Function et ScriptBlock**  
   
- Le **Eval**, **fonction**, et **ScriptBlock** Déterminez comment dynamiquement les paires clé / valeur code généré est classé :  
+ Les paires clé-valeur **Eval**, **Function** et **ScriptBlock** déterminent comment le code généré dynamiquement est classifié :  
   
 |||  
 |-|-|  
-|**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classé comme **MyCode**.|  
-|**Function**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé en tant que **LibraryCode**.|  
-|**ScriptBlock**|un script qui est exécuté en passant une chaîne aux fonctions `setTimeout`, `setImmediate` ou `setInterval`. Par défaut, le script ScriptBlock est classé en tant que **UnrelatedCode**.|  
+|**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classifié comme **MyCode**.|  
+|**Function**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé comme **LibraryCode**.|  
+|**ScriptBlock**|un script qui est exécuté en passant une chaîne aux fonctions `setTimeout`, `setImmediate` ou `setInterval`. Par défaut, le script ScriptBlock est classé comme **UnrelatedCode**.|  
   
  Vous pouvez changer la valeur en un de ces mots clés :  
   
--   `MyCode`  classe le script en tant que **MyCode**.  
--   `Library`  classe le script en tant que **LibraryCode**.  
--   `Unrelated`  classe le script en tant que **UnrelatedCode**.  
+-   `MyCode` classifie le script comme **MyCode**.  
+-   `Library` classifie le script comme **LibraryCode**.  
+-   `Unrelated` classifie le script comme **UnrelatedCode**.  
   
   **MyCode, Libraries et Unrelated**  
   
- Le **MyCode**, **bibliothèques**, et **Unrelated** paires clé / valeur spécifier les URL ou les fichiers que vous souhaitez inclure dans une classification :  
+ Les paires clé-valeur **MyCode**, **Libraries** et **Unrelated** spécifient les URL ou les fichiers que vous voulez inclure dans une classification :  
   
 |||  
 |-|-|  
 |**MyCode**|Un tableau d’URL ou de fichiers qui sont classés comme **MyCode**.|  
-|**Bibliothèques**|Un tableau d’URL ou de fichiers qui sont classés comme **LibraryCode**.|  
-|**Non liées**|Un tableau d’URL ou de fichiers qui sont classés comme **UnrelatedCode**.|  
+|**Libraries**|Un tableau d’URL ou de fichiers qui sont classifiés comme **LibraryCode**.|  
+|**Unrelated**|Un tableau d’URL ou de fichiers qui sont classés comme **UnrelatedCode**.|  
   
  La chaîne URL ou le fichier peut avoir une ou plusieurs `*` caractères, ce qui correspond à zéro ou plusieurs caractères. `*` est le même que l’expression régulière `.*`.

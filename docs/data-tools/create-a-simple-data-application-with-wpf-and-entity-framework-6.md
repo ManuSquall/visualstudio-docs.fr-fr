@@ -1,5 +1,5 @@
 ---
-title: Créer une application de données simple avec WPF et Entity Framework 6
+title: Créer une application de données simple avec WPF et Entity Framework 6
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,14 +11,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822070"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305609"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
 Cette procédure pas à pas montre comment créer une application de base « formulaires de données » dans Visual Studio. L’application utilise la base de données SQL Server locale, la base de données Northwind, Entity Framework 6 et Windows Presentation Foundation. Il montre comment effectuer la liaison de données base avec une vue maître-détail, et il a également un navigateur de liaison personnalisée avec des boutons **Move Next**, **Move Previous**, **déplacer au début de**, **Déplacer à la fin**, **mise à jour** et **supprimer**.
 
@@ -46,7 +46,7 @@ Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind.
 
 ## <a name="configure-the-project"></a>Configurer le projet
 
-1.  Dans Visual Studio, choisissez **fichier** > **New** > **projet** , puis créez une Application WPF c#.
+1.  Dans Visual Studio, choisissez **fichier** > **New** > **projet** , puis créez un nouveau C# Application WPF.
 
 2.  Ensuite, ajoutez le package NuGet pour Entity Framework 6. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet** > **gérer les Packages NuGet**.
 
@@ -60,11 +60,11 @@ Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind.
 
 ## <a name="create-the-model"></a>Créer le modèle
 
-1. Avec le bouton droit sur le nœud de projet dans **l’Explorateur de solutions** et choisissez **ajouter** > **un nouvel élément**. Dans le volet gauche, sous le nœud c#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.
+1. Avec le bouton droit sur le nœud de projet dans **l’Explorateur de solutions** et choisissez **ajouter** > **un nouvel élément**. Dans le volet gauche, sous le C# nœud, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.
 
    ![Élément Entity Framework modèle de projet](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Appeler le modèle `Northwind_model` et choisissez **OK**. Le **Assistant Entity Data Model** s’ouvre. Choisissez **Entity Framework Designer à partir de la base de données** puis cliquez sur **suivant**.
+2. Appeler le modèle `Northwind_model` et choisissez **OK**. L’**Assistant Entity Data Model** s’ouvre. Choisissez **Entity Framework Designer à partir de la base de données** puis cliquez sur **suivant**.
 
    ![Modèle EF à partir de la base de données](../data-tools/media/raddata-ef-model-from-database.png)
 
@@ -74,7 +74,7 @@ Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind.
 
     ![Choisissez les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. L’Assistant génère les classes c# qui représentent le modèle Entity Framework. Les classes sont plain old classes c# et qui nous sont databind à l’interface utilisateur WPF. Le *.edmx* fichier décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données. Le *.tt* fichiers sont des modèles T4 qui génèrent le code qui fonctionne sur le modèle et enregistrer les modifications apportées à la base de données. Vous pouvez voir tous ces fichiers dans **l’Explorateur de solutions** sous le nœud Northwind_model :
+5. L’Assistant génère le C# classes qui représentent le modèle Entity Framework. Les classes sont simples C# classes et font ce que nous databind à l’interface utilisateur WPF. Le *.edmx* fichier décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données. Le *.tt* fichiers sont des modèles T4 qui génèrent le code qui fonctionne sur le modèle et enregistrer les modifications apportées à la base de données. Vous pouvez voir tous ces fichiers dans **l’Explorateur de solutions** sous le nœud Northwind_model :
 
       ![Fichiers de modèle EF de l’Explorateur de solutions](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -116,7 +116,7 @@ Il est possible d’écrire votre propre code de liaison de données, mais il es
         </Grid.RowDefinitions>
     ```
 
-5.  Ouvrez maintenant *MainWindow.xaml* afin que vous l’affichez dans le concepteur. Cela entraîne le **des Sources de données** fenêtre s’affiche en tant qu’option dans la marge de la fenêtre Visual Studio à côté du **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou sinon, appuyez sur **MAJ**+**Alt**+**D** ou choisissez **vue**  >  **Autres Windows** > **des Sources de données**. Nous allons afficher chaque propriété de la classe de clients dans sa propre zone de texte individuelles. Tout d’abord, cliquez sur la flèche dans le **clients** liste déroulante et sélectionnez **détails**. Ensuite, faire glisser le nœud de la partie centrale de l’aire de conception afin que le concepteur sait que vous souhaitez qu’il figure dans la ligne du milieu. Si vous égarez il, vous pouvez spécifier la ligne manuellement plus tard dans le XAML. Par défaut, les contrôles sont placés verticalement dans un élément de grille, mais à ce stade, vous pouvez les organiser sur le formulaire comme vous le souhaitez. Par exemple, il peut être judicieux de placer le **nom** zone de texte en haut, au-dessus de l’adresse. L’exemple d’application pour cet article réorganise les champs et les réorganise en deux colonnes.
+5.  Ouvrez maintenant *MainWindow.xaml* afin que vous êtes l’affichage dans le concepteur. Cela entraîne le **des Sources de données** fenêtre s’affiche en tant qu’option dans la marge de la fenêtre Visual Studio à côté du **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou sinon, appuyez sur **MAJ**+**Alt**+**D** ou choisissez **vue**  >  **Autres Windows** > **des Sources de données**. Nous allons afficher chaque propriété de la classe de clients dans sa propre zone de texte individuelles. Tout d’abord, cliquez sur la flèche dans le **clients** liste déroulante et sélectionnez **détails**. Ensuite, faire glisser le nœud de la partie centrale de l’aire de conception afin que le concepteur sait que vous souhaitez qu’il figure dans la ligne du milieu. Si vous égarez il, vous pouvez spécifier la ligne manuellement plus tard dans le XAML. Par défaut, les contrôles sont placés verticalement dans un élément de grille, mais à ce stade, vous pouvez les organiser sur le formulaire comme vous le souhaitez. Par exemple, il peut être judicieux de placer le **nom** zone de texte en haut, au-dessus de l’adresse. L’exemple d’application pour cet article réorganise les champs et les réorganise en deux colonnes.
 
      ![Liaison de source de données de clients par des contrôles individuels](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
