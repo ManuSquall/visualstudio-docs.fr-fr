@@ -1,5 +1,5 @@
 ---
-title: Configurer la référence de service (boîte de dialogue)
+title: Configurer la référence de service, boîte de dialogue
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,35 +16,32 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854076"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389498"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 
 Le **configurer la référence de Service** boîte de dialogue vous permet de configurer le comportement des services Windows Communication Foundation (WCF).
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
-Pour accéder à la **configurer la référence de Service** boîte de dialogue, avec le bouton droit, un service de référence dans **l’Explorateur de solutions** et choisissez **configurer la référence de Service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le **avancé** situé dans le **ajouter une référence de Service, boîte de dialogue**.
+Pour accéder à la boîte de dialogue **Configurer la référence de service**, cliquez avec le bouton droit sur une référence de service dans l’**Explorateur de solutions** et choisissez **Configurer la référence de service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le bouton **Avancé** dans la **boîte de dialogue Ajouter une référence de service**.
 
 ## <a name="task-list"></a>Liste des tâches
 
-- Pour modifier l’adresse où un service WCF est hébergé, entrez la nouvelle adresse dans le **adresse** champ.
+- Pour modifier l’adresse d’hébergement d’un service WCF, entrez la nouvelle adresse dans le champ **Adresse**.
 
-- Pour modifier le niveau d’accès pour les classes dans un client WCF, sélectionnez un mot clé de niveau d’accès dans le **niveau pour les classes générées d’accès** liste.
+- Pour modifier le niveau d’accès des classes dans un client WCF, sélectionnez un mot clé de niveau d’accès dans la liste **Niveau d’accès pour les classes générées**.
 
-- Pour appeler les méthodes d’un service WCF de façon asynchrone, sélectionnez le **générer des opérations asynchrones** case à cocher.
+- Pour appeler de façon asynchrone les méthodes d’un service WCF, cochez la case **Générer des opérations asynchrones**.
 
-- Pour générer des types de contrat de message dans un client WCF, sélectionnez le **toujours générer des contrats de message** case à cocher.
+- Pour générer des types de contrats de message dans un client WCF, cochez la case **Toujours générer des contrats de message**.
 
-- Pour spécifier les types de collections de dictionnaires ou de listes pour un client WCF, sélectionnez les types à partir de la **type de Collection** et **type de collection dictionnaire** répertorie.
+- Pour spécifier des types de collections de dictionnaires ou de listes pour un client WCF, sélectionnez les types dans les listes **Type de collection** et **Type de collection Dictionnaire**.
 
-- Pour désactiver le partage de type, désactivez le **réutiliser les types dans les assemblys référencés** case à cocher. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, sélectionnez le **réutiliser les types dans les assemblys référencés** case à cocher, sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, puis sélectionnez le texte souhaité fait référence dans le **liste des assemblys référencés**.
+- Pour désactiver le partage de type, décochez la case **Réutiliser les types dans les assemblys référencés**. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, cochez la case **Réutiliser les types dans les assemblys référencés**, sélectionnez **Réutiliser les types dans les assemblys référencés spécifiés**, puis sélectionnez les références souhaitées dans la **Liste des assemblys référencés**.
 
 ## <a name="uielement-list"></a>Liste UIElement
 
@@ -53,32 +50,32 @@ Pour accéder à la **configurer la référence de Service** boîte de dialogue,
  Met à jour l’adresse web dans lesquels une référence de service recherche pour un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement et transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d’adresse.
 
 > [!NOTE]
-> L’élément adresse n’est pas disponible lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.
+> L’élément Adresse n’est pas disponible quand la boîte de dialogue **Configurer la référence de service** est affichée à partir de la boîte de dialogue **Ajouter une référence de service**.
 
  **Niveau d’accès pour les classes générées**
 
  Détermine le niveau d'accès du code pour les classes clientes WCF.
 
 > [!NOTE]
-> Pour les projets de site web, cette option a toujours la valeur `Public` et ne peut pas être modifiée. Pour plus d’informations, consultez [dépannage de références de service](../data-tools/troubleshooting-service-references.md).
+> Pour les projets de site web, cette option a toujours la valeur `Public` et ne peut pas être modifiée. Pour plus d’informations, consultez [Dépannage des références de service](../data-tools/troubleshooting-service-references.md).
 
  **Générer des opérations asynchrones**
 
  Détermine si les méthodes de service WCF est appelée de façon synchrone (valeur par défaut) ou asynchrone.
 
- **Générer des opérations basées sur des tâches**
+ **Générer des opérations basées sur les tâches**
 
  Lorsque vous écrivez du code asynchrone, cette option vous permet de tirer parti de la bibliothèque (parallèle de tâches) qui a été introduit avec .NET 4. Consultez [(TPL) de bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
 
  **Toujours générer des contrats de message**
 
- Détermine si les types de contrat de message sont générés pour un client WCF. Pour plus d’informations sur les contrats de message, consultez [à l’aide de contrats de message](/dotnet/framework/wcf/feature-details/using-message-contracts).
+ Détermine si les types de contrat de message sont générés pour un client WCF. Pour plus d’informations sur les contrats de message, consultez [Utilisation de contrats de message](/dotnet/framework/wcf/feature-details/using-message-contracts).
 
  **Type de collection**
 
  Spécifie le type de collection de listes pour un client WCF. Le type par défaut est <xref:System.Array>.
 
- **Type de collection dictionnaire**
+ **Type de collection Dictionnaire**
 
  Spécifie le type de collection de dictionnaires pour un client WCF. Le type par défaut est <xref:System.Collections.Generic.Dictionary%602>.
 
@@ -98,17 +95,17 @@ Pour accéder à la **configurer la référence de Service** boîte de dialogue,
 
  Contient une liste d’assemblys référencés pour le projet ou le site Web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, vous pouvez sélectionner ou effacer des assemblys individuels.
 
- **Ajouter une référence Web**
+ **Ajouter une référence web**
 
- Affiche le **ajouter une référence Web** boîte de dialogue.
+ Affiche la boîte de dialogue **Ajouter une référence web**.
 
 > [!NOTE]
 > Cette option doit uniquement être utilisée pour les projets qui ciblent la version 2.0 de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-> 
+>
 > [!NOTE]
 > Le **ajouter une référence Web** bouton est disponible uniquement lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : ajouter une référence à un service web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Guide pratique pour ajouter une référence à un service web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Services Windows Communication Foundation et WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

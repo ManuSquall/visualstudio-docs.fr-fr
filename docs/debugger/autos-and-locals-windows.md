@@ -1,7 +1,7 @@
 ---
 title: Inspecter des variables dans les fenêtres automatique et variables locales | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257210"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388515"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
@@ -33,7 +33,7 @@ Pour ouvrir le **automatique** fenêtre, pendant le débogage, sélectionnez **d
 
 Pour ouvrir le **variables locales** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **variables locales**, ou appuyez sur **Alt**+**4**.
 
-Si vous avez besoin de plus d’informations sur les bases du débogage, consultez [mise en route avec le débogueur](../debugger/getting-started-with-the-debugger.md).
+Si vous avez besoin de plus d’informations sur le débogage de base, consultez [Bien démarrer avec le débogueur](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [des visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations).
@@ -54,7 +54,7 @@ Pour modifier les valeurs de la plupart des variables dans le **automatique** ou
 
 Vous pouvez entrer une expression pour une valeur, par exemple `a + b`. Le débogueur accepte la plupart des expressions de langage valides.
 
-Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom de variable. Pour plus d’informations, consultez [opérateur de contexte (C++)](../debugger/context-operator-cpp.md).
+Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom de variable. Pour plus d’informations, consultez [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
 >Assurez-vous que vous comprenez les conséquences avant de modifier des valeurs et les expressions. Certains problèmes possibles sont :
@@ -77,7 +77,7 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
  Affichent les variables différentes dans différents langages le **automatique** fenêtre.
 
- - Dans C# et Visual Basic, le **automatique** fenêtre affiche n’importe quelle variable utilisée sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
+ - En C# et en Visual Basic, la fenêtre **Automatique** affiche les variables utilisées sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
 
    ```csharp
        public static void Main()
@@ -152,6 +152,6 @@ Pour afficher les valeurs de retour de la `sumVars()` et `subtractVars()` des ap
   ![Valeur de retour automatique C# ](../debugger/media/autosreturnvaluecsharp2.png "valeur de retour automatiqueC#")  
   
 ## <a name="see-also"></a>Voir aussi  
- [Quel est le débogage ?](../debugger/what-is-debugging.md)  
+ [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
  [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [fenêtres du débogueur](../debugger/debugger-windows.md)

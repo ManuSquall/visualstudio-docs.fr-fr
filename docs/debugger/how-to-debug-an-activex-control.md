@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déboguer un contrôle ActiveX | Documents Microsoft'
+title: 'Comment : déboguer un contrôle ActiveX | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,40 +26,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8892d83bb92198b9e8f1b7df1293a06f27d27716
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474425"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389291"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Comment : déboguer un contrôle ActiveX
+
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exécutable) à utiliser pour l'exécution du contrôle.  
-  
-### <a name="to-specify-a-container-for-the-debug-session"></a>Pour spécifier un conteneur pour une session de débogage  
-  
-1.  Dans l'Explorateur de solutions, sélectionnez le projet.  
-  
-2.  À partir de la **vue** menu, choisissez **Pages de propriétés**.  
-  
-3.  Dans le **les Pages de propriétés de projet** boîte de dialogue, ouvrez le **propriétés de Configuration** dossier, puis sélectionnez **débogage**.  
-  
-4.  Sous le **débogage** catégorie, recherchez le **commande** propriété.  
-  
-5.  Spécifiez le nom de chemin pour le conteneur. Par exemple, C:\Program Files\Internet Explorer\IEXPLORE.EXE.  
-  
-6.  Si vous spécifiez Internet Explorer comme conteneur et que vous utilisez Active Desktop, tapez `/new` dans les **Arguments de commande** boîte.  
-  
-7.  Cliquez sur **OK**.  
-  
-     Si vous ne spécifiez pas un conteneur dans le **les Pages de propriétés de projet** boîte de dialogue, vous pouvez spécifier le conteneur lorsque vous commencerez le débogage. Lorsque vous sélectionnez une commande d’exécution pour démarrer le débogage, la [exécutable pour la boîte de dialogue de Session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche. Spécifiez le nom de chemin du conteneur dans la boîte de dialogue.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Contrôles ActiveX](/cpp/mfc/activex-controls)   
- [Test des propriétés et des événements avec le conteneur de Test](/cpp/mfc/testing-properties-and-events-with-test-container)   
- [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
- [Débogage dans Visual Studio](../debugger/index.md)  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+
+Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exécutable) à utiliser pour l'exécution du contrôle.
+
+## <a name="to-specify-a-container-for-the-debug-session"></a>Pour spécifier un conteneur pour une session de débogage
+
+1.  Dans l'Explorateur de solutions, sélectionnez le projet.
+
+2.  À partir de la **vue** menu, choisissez **Pages de propriétés**.
+
+3.  Dans la boîte de dialogue **Pages de propriété de projet**, ouvrez le dossier **Propriétés de configuration** et sélectionnez **Débogage**.
+
+4.  Dans la catégorie **Débogage**, recherchez la propriété **Commande**.
+
+5.  Spécifiez le nom de chemin pour le conteneur. Par exemple, C:\Program Files\Internet Explorer\IEXPLORE.EXE.
+
+6.  Si vous spécifiez Internet Explorer comme conteneur et que vous utilisez Active Desktop, tapez `/new` dans la zone **Arguments de la commande**.
+
+7.  Cliquez sur **OK**.
+
+     Si vous ne spécifiez pas un conteneur dans la boîte de dialogue **Pages de propriétés de projet**, vous pouvez spécifier le conteneur quand vous commencez à déboguer. Quand vous sélectionnez une commande d’exécution pour commencer le débogage, la [boîte de dialogue Exécutable pour la session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche. Spécifiez le nom de chemin du conteneur dans la boîte de dialogue.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Contrôles ActiveX](/cpp/mfc/activex-controls)
+- [Test des propriétés et des événements avec le conteneur de test](/cpp/mfc/testing-properties-and-events-with-test-container)
+- [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)
+- [Débogage dans Visual Studio](../debugger/index.md)
+- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

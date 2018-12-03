@@ -1,5 +1,5 @@
 ---
-title: Lier des contrôles WPF à des données dans Visual Studio - partie 1 | Microsoft Docs
+title: Lier des contrôles WPF à des données - partie 1
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,40 +18,39 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942905"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305336"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre vers le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] dans Visual Studio. Cette rubrique décrit quelques tâches, outils et classes les plus courants que vous pouvez utiliser pour créer des applications [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] liées aux données.
 
-Pour obtenir des informations générales sur la création de contrôles liés aux données dans Visual Studio, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Pour plus d’informations sur [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] liaison de données, consultez [vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).
+Pour obtenir des informations générales sur la création de contrôles liés aux données dans Visual Studio, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Pour plus d’informations sur la liaison de données [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)], consultez [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).
 
-## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tâches impliquées dans la liaison de contrôles WPF aux données
+## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tâches impliquées dans la liaison de contrôles WPF à des données
 
-Le tableau suivant répertorie les tâches qui peuvent être accomplies en faisant glisser des éléments à partir de la **des Sources de données** fenêtre pour le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
+Le tableau suivant liste les tâches qui peuvent être accomplies en faisant glisser des éléments de la fenêtre **Sources de données** vers le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
 |Tâche|Complément d'information|
 |----------| - |
 |Créer des contrôles liés aux données.<br /><br /> Lier des contrôles existants à des données.|[Lier des contrôles WPF à un dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Créer des contrôles qui affichent les données connexes d'une relation parent-enfant : lorsque l'utilisateur sélectionne un enregistrement de données parentes dans un contrôle, un autre contrôle affiche les données enfants connexes pour l'enregistrement sélectionné.|[Afficher des données associées dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md)|
-|Créer un *table de recherche* qui affiche des informations à partir d’une table basée sur la valeur d’un champ de clé étrangère dans une autre table.|[Créer des tables de recherche dans des applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|Créer une *table de recherche* qui affiche les informations provenant d’une table en fonction de la valeur d’un champ de clé étrangère d’une autre table.|[Créer des tables de recherche dans des applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |Lier un contrôle à une image dans une base de données.|[Lier des contrôles à des images d’une base de données](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
-## <a name="valid-drop-targets"></a>Cibles de dépôt valide
+## <a name="valid-drop-targets"></a>Cibles de dépôt valides
 
-Vous pouvez faire glisser des éléments le **des Sources de données** fenêtre uniquement pour les cibles de dépôt valides dans le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Il existe deux genres principaux de cibles de dépôt valides : conteneurs et contrôles. Un conteneur est un élément d'interface utilisateur qui contient généralement des contrôles. Par exemple, une grille est un conteneur, de même qu'une fenêtre.
+Vous pouvez faire glisser des éléments dans la fenêtre **Sources de données** seulement vers les cibles de dépôt valides dans le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Il existe deux genres principaux de cibles de dépôt valides : conteneurs et contrôles. Un conteneur est un élément d'interface utilisateur qui contient généralement des contrôles. Par exemple, une grille est un conteneur, de même qu'une fenêtre.
 
-## <a name="generated-xaml-and-code"></a>XAML et le code généré
+## <a name="generated-xaml-and-code"></a>XAML généré et code
 
 Lorsque vous faites glisser un élément à partir de la **des Sources de données** fenêtre pour le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], Visual Studio génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui définit un nouveau contrôle lié aux données (ou lie un contrôle existant à la source de données). Pour certaines sources de données, Visual Studio génère également du code dans le fichier code-behind qui remplit la source de données avec les données.
 
 Le tableau suivant répertorie les [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] et le code généré par Visual Studio pour chaque type de source de données dans le **des Sources de données** fenêtre.
-
 
 | Source de données | Générer le code XAML qui lie un contrôle à la source de données | Générer du code qui remplit la source de données avec les données |
 | - | - | - |
@@ -101,7 +100,7 @@ Visual Studio génère du code XAML qui effectue les opérations suivantes :
 Lorsque vous faites glisser un objet ou une propriété à partir de la **des Sources de données** fenêtre vers le concepteur, Visual Studio génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou la propriété). Toutefois, Visual Studio ne génère pas de code pour remplir l’objet de données. Vous devez écrire ce code vous-même.
 
 > [!NOTE]
->  Classes personnalisées doivent être publique et, par défaut, un constructeur sans paramètres. Ils classes can'tbe imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et classes personnalisées pour WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Classes personnalisées doivent être publique et, par défaut, un constructeur sans paramètres. Ils classes can'tbe imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et classes personnalisées pour WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui effectue les opérations suivantes :
 
