@@ -19,13 +19,17 @@ items:
     href: quickstart-debug-aspnet.md
 - name: Didacticiels
   items:
-  - name: Apprendre à déboguer avec Visual Studio
+  - name: Apprendre à déboguer C#
     href: getting-started-with-the-debugger.md
+  - name: Apprendre à déboguer C++
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Apprendre à déboguer Visual Basic
+    href: getting-started-with-the-debugger-vb.md
   - name: Exécution de code Python dans le débogueur...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Déboguer une application Azure en direct
     href: debug-live-azure-applications.md
-  - name: Déboguer un code C# ou C++
+  - name: Déboguer du code C# et C++
     href: how-to-debug-managed-and-native-code.md
   - name: Inspecter les précédents états des applications
     href: view-historical-application-state.md
@@ -836,9 +840,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 03b91cd33994c5fbc49a8ae3a5ace1bbac611e4a
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621602"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821394"
