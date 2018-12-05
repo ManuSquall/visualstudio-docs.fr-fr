@@ -3,14 +3,14 @@ title: Présentation de Visual Studio pour Mac
 description: Cet article présente les fonctionnalités de Visual Studio pour Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42625825"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895676"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Présentation de Visual Studio pour Mac
 
@@ -26,9 +26,12 @@ Il inclut des fonctionnalités comme un éditeur avancé, le débogage, l’int�
 
 Cet article traite de différents aspects de Visual Studio pour Mac et présente des fonctionnalités qui en font un outil puissant pour créer des applications multiplateformes.
 
+> [!TIP]
+> La préversion de Visual Studio 2019 pour Mac est maintenant disponible pour le test. Suivez ces [instructions d’installation](install-preview.md) et consultez la [visite guidée de l’IDE](ide-tour.md).
+
 ## <a name="installation"></a>Installation
 
-Suivez les étapes du guide [Installation](installation.md) pour télécharger et installer Visual Studio pour Mac.
+Suivez les étapes du guide [Installation](install-preview.md) pour télécharger et installer Visual Studio pour Mac.
 
 ## <a name="language-support"></a>Langages pris en charge
 

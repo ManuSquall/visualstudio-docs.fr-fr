@@ -681,6 +681,8 @@ items:
     items:
     - name: Temps de démarrage
       href: ide/optimize-visual-studio-startup-time.md
+    - name: Charger une solution filtrée
+      href: ide/filtered-solutions.md
     - name: Conseils et astuces
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: Gérer les fonctionnalités d’accessibilité
@@ -690,11 +692,11 @@ items:
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: Utiliser uniquement le clavier
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: Conseils et astuces d'accessibilité
+    - name: Conseils et astuces d’accessibilité
       href: ide/reference/accessibility-tips-and-tricks.md
-    - name: Services et produits d’accessibilité de Microsoft
+    - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-    - name: Ressources pour la conception d'applications accessibles
+    - name: Ressources pour la conception d’applications accessibles
       href: ide/reference/resources-for-designing-accessible-applications.md
   - name: Globaliser et localiser des applications
     href: ide/globalizing-and-localizing-applications.md
@@ -1082,8 +1084,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Ressources
   items:
-  - name: Nouveautés
+  - name: Nouveautés de Visual Studio 2017
     href: ide/whats-new-in-visual-studio.md
+  - name: Nouveautés de Visual Studio 2019
+    href: ide/whats-new-visual-studio-2019.md
   - name: Notes de publication et configuration requise
     items:
     - name: Notes de publication actuelles
@@ -1123,9 +1127,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Nous contacter
     href: ide/talk-to-us.md
-ms.openlocfilehash: 4e8c6398d89f5db9f97b8ce61a17960a76e938cb
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389239"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895546"
