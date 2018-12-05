@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297814"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896547"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurer les retards de début de scénario dans les tests de charge
 
@@ -24,6 +24,8 @@ Spécifiez un délai avant le démarrage d’un scénario de test de charge dans
 Par exemple, vous pouvez utiliser la propriété **Retarder l’heure de début**, si vous avez besoin qu’un scénario commence à produire des éléments consommés par un autre scénario. Vous pouvez retarder le scénario d'utilisation pour permettre au scénario de production de remplir certaines données.
 
 Comme autre exemple, vous pouvez être amené à exécuter un scénario uniquement à une certaine heure de la journée. Par conséquent, vous voulez retarder le début du scénario pour simuler cette situation.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-delay-start-time-of-a-scenario"></a>Spécifier le délai de démarrage d’un scénario
 

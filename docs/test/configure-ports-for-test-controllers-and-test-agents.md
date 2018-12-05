@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297594"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894532"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurer les ports des contrôleurs de test et des agents de test
 
 Vous pouvez modifier les ports entrants par défaut utilisés par le contrôleur de test, l’agent de test et le client. Cela peut s’avérer nécessaire si vous essayez d’utiliser le contrôleur de test, l’agent de test ou le client avec un autre logiciel qui entre en conflit avec les paramètres de port. Une autre raison motivant le changement de ports est la restriction de pare-feu entre le contrôleur de test et le client. Dans ce cas, vous pouvez configurer manuellement le port pour l'activer pour un pare-feu afin que le contrôleur de test puisse envoyer des résultats au client.
 
- L'illustration suivante montre les points de connexion entre le contrôleur de test, l'agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Ports et sécurité du contrôleur de test et de l’agent de test](../test/media/test-controller-agent-firewall.png)
+L'illustration suivante montre les points de connexion entre le contrôleur de test, l'agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
+
+![Ports et sécurité du contrôleur de test et de l’agent de test](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Connexions entrantes
 

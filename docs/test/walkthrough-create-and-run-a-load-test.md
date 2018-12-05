@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381014"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895377"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procédure pas à pas : Créer et exécuter un test de charge qui contient des tests unitaires
 
 Dans cette procédure pas à pas, vous allez créer un test de charge qui contient des tests unitaires.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Cette procédure pas à pas vous guide dans la création et l’exécution d’un test de charge à l’aide de Visual Studio Enterprise. Un test de charge est un conteneur de tests de performances web et de tests unitaires. Vous créez des tests de charge avec **l’Assistant Nouveau test de charge**.
 

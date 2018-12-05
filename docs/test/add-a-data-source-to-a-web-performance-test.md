@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295096"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896105"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
 Liez les données pour fournir différentes valeurs au même test, par exemple, pour fournir différentes valeurs à vos paramètres de publication de formulaire.
 
- ![Lier les données à un test des performances de site web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Nous allons utiliser un exemple d'application ASP.NET. Elle contient trois pages *.aspx* : la page par défaut, une page rouge et une page bleue. La page par défaut a une case d'option pour choisir Rouge ou Bleu et un bouton Envoyer. Les deux autres pages *.aspx* sont simples. L'une a une étiquette nommée Rouge et l'autre a une étiquette nommée Bleu. Lorsque vous choisissez Envoyer sur la page par défaut, nous affichons l'une des autres pages. Vous pouvez télécharger l’exemple [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplement suivre les étapes avec votre propre application web.
+![Lier les données à un test des performances de site web](../test/media/web_test_databinding_conceptual.png)
 
- ![Exécution de l'application web à tester](../test/media/web_test_databinding_runwebapp.png)
+Nous allons utiliser un exemple d'application ASP.NET. Elle contient trois pages *.aspx* : la page par défaut, une page rouge et une page bleue. La page par défaut a une case d'option pour choisir Rouge ou Bleu et un bouton Envoyer. Les deux autres pages *.aspx* sont simples. L'une a une étiquette nommée Rouge et l'autre a une étiquette nommée Bleu. Lorsque vous choisissez Envoyer sur la page par défaut, nous affichons l'une des autres pages. Vous pouvez télécharger l’exemple [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplement suivre les étapes avec votre propre application web.
 
- Votre solution doit également inclure un test de performances web qui parcourt les pages de l’application web.
+![Exécution de l'application web à tester](../test/media/web_test_databinding_runwebapp.png)
 
- ![Solution avec le test des performances de site web](../test/media/web_test_databinding_solution.png)
+Votre solution doit également inclure un test de performances web qui parcourt les pages de l’application web.
+
+![Solution avec le test des performances de site web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Créer une base de données SQL
 

@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950015"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895455"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gérer des résultats de tests de charge dans le référentiel des résultats des tests de charge
 
 Quand vous exécutez vos tests de charge, toutes les informations collectées pendant une série de tests de charge peuvent être stockées dans le *référentiel des résultats des tests de charge*, qui est une base de données SQL. Le référentiel des résultats des tests de charge contient des données de compteurs de performance et des informations relatives aux erreurs enregistrées. La base de données du référentiel des résultats est créée par le programme d'installation pour les contrôleurs ou créée automatiquement lors de la première série locale d'un test de charge. Pour une série locale, la base de données sera créée automatiquement si le schéma de test de charge n'est pas présent.
 
- Si vous modifiez la chaîne de connexion du référentiel des résultats du contrôleur de façon à utiliser un autre serveur, le nouveau serveur doit exécuter le script *loadtestresultsrepository.sql* pour créer le schéma.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueillent des compteurs de performance courants en fonction d’une technologie. Ces ensembles sont utiles lorsque vous analysez un serveur IIS, un serveur ASP.NET ou un serveur SQL. Toutes les données recueillies avec les ensembles de compteurs sont stockées dans le référentiel des résultats des tests de charge.
+Si vous modifiez la chaîne de connexion du référentiel des résultats du contrôleur de façon à utiliser un autre serveur, le nouveau serveur doit exécuter le script *loadtestresultsrepository.sql* pour créer le schéma.
+
+Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueillent des compteurs de performance courants en fonction d’une technologie. Ces ensembles sont utiles lorsque vous analysez un serveur IIS, un serveur ASP.NET ou un serveur SQL. Toutes les données recueillies avec les ensembles de compteurs sont stockées dans le référentiel des résultats des tests de charge.
 
 > [!IMPORTANT]
 > Il existe une différence entre un ensemble de compteurs et les données de compteurs de performance. Un ensemble de compteurs est composé de métadonnées. Il définit un groupe de compteurs de performance qui doivent être recueillis à partir d'un ordinateur qui exécute un rôle particulier, tel qu'un serveur IIS ou SQL Server. L'ensemble de compteurs fait partie de la définition de test de charge. Les données de compteurs de performance sont recueillies en fonction des ensembles de compteurs, du mappage de l'ensemble de compteurs à un ordinateur spécifique et du taux d'échantillonnage.

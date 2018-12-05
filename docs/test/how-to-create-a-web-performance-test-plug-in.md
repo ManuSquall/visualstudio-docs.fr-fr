@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380164"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894519"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Guide pratique pour créer un plug-in de test de performances web
 
 Les plug-ins de tests de performances web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Un plug-in de test de performancesweb personnalisé permet d'appeler du code durant l'exécution du test de performances web. Le plug-in de test de performances web est exécuté une seule fois pour chaque itération de test. De plus, si vous substituez les méthodes PreRequest ou PostRequest dans le plug-in de test, ces plug-ins de requête s'exécuteront avant ou après chaque requête, respectivement.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Vous pouvez créer un plug-in de test de performances web personnalisé en dérivant votre propre classe de la classe de base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 

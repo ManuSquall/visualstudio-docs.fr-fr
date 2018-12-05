@@ -1,5 +1,5 @@
 ---
-title: Modification des scénarios de test de charge dans Visual Studio
+title: Scénarios de test de charge
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837137"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896534"
 ---
 # <a name="edit-load-test-scenarios"></a>Modifier les scénarios de test de charge
 
 Un *scénario de test de charge* spécifie le modèle de charge, ainsi que la combinaison de tests, de navigateurs et de réseaux. Les scénarios sont importants, car ils vous permettent de configurer des tests pour simuler des charges de travail complexes et réalistes.
 
 Par exemple, vous pouvez tester un site de commerce électronique qui a une vitrine Internet utilisée par des centaines de clients simultanés, connectés par le biais de nombreuses vitesses de connexion et utilisant différents navigateurs. Le même site peut également avoir une fonction d'administration utilisée par les employés internes pour mettre à jour des produits et consulter des statistiques. Ces utilisateurs internes accèdent en général au site à l'aide du même navigateur et d'une connexion de réseau local rapide. Vous souhaiteriez encapsuler les propriétés de ces deux groupes d'utilisateurs différents dans des scénarios différents. Chaque scénario peut contenir un type d'utilisateur virtuel. Dans ce cas, un scénario de test de charge peut être créé pour représenter des clients virtuels et un autre pour représenter les utilisateurs internes virtuels d’un site web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Composants du scénario
 

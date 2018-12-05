@@ -1,5 +1,5 @@
 ---
-title: Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur dans Visual Studio
+title: Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914487"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896187"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
 Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Spécifications**
 
@@ -27,15 +29,14 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 > [!WARNING]
 > Dans les versions antérieures à Internet Explorer 10, il était possible d'exécuter des tests codés de l'interface utilisateur à un niveau de privilège plus élevé que celui du processus Internet Explorer. Quand vous exécutez des tests codés de l'interface utilisateur dans Internet Explorer 10, le test codé de l'interface utilisateur et le processus Internet Explorer doivent être au même niveau de privilège. Cette obligation est due aux fonctionnalités AppContainer plus sécurisées dans Internet Explorer 10.
 
-
 > [!WARNING]
 > Si vous créez un test codé de l'interface utilisateur dans Internet Explorer 10, il risque de ne pas s'exécuter avec Internet Explorer 9 ou Internet Explorer 8. Cela tient au fait qu'Internet Explorer 10 inclut des contrôles HTML5 tels que des contrôles Audio, Video, ProgressBar et Slider. Ces contrôles HTML5 ne sont pas reconnus par Internet Explorer 9 ou Internet Explorer 8. De même, votre test codé de l’interface utilisateur avec Internet Explorer 9 peut inclure certains contrôles HTML5 qui ne seront pas non plus reconnus dans Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Contrôle Audio
- **Contrôle Audio :** les actions sur le contrôle Audio HTML5 sont correctement enregistrées et lues.
 
- ![Contrôle audio HTML5](../test/media/codedui_html5_audio.png)
+**Contrôle Audio :** les actions sur le contrôle Audio HTML5 sont correctement enregistrées et lues.
+
+![Contrôle audio HTML5](../test/media/codedui_html5_audio.png)
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
