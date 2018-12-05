@@ -1,5 +1,5 @@
 ---
-title: Collecter des informations de diagnostic avec des paramètres de test dans Visual Studio
+title: Collecter des informations de diagnostic avec des paramètres de test
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865347"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895208"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Collecter des informations de diagnostic avec des paramètres de test
 
@@ -32,6 +32,8 @@ Vous pouvez utiliser des *Paramètres de test* dans Visual Studio pour collecter
 -   Collecter des données IntelliTrace pour aider à isoler les bogues non reproductibles
 
 Les adaptateurs de données de diagnostic peuvent également être utilisés pour modifier le comportement d'un ordinateur de test. Par exemple, avec un paramètre de test dans Visual Studio, vous pouvez émuler plusieurs goulots d’étranglement de la topologie du réseau pour évaluer les performances de l’application de votre équipe.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Utiliser des paramètres de test avec Visual Studio
 

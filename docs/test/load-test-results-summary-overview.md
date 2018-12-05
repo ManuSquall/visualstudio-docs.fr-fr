@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380562"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895013"
 ---
 # <a name="load-test-results-summary-overview"></a>Présentation du récapitulatif des résultats des tests de charge
 
 Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Mode Résumé](../test/media/ltest_summaryview.png)
+![Mode Résumé](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Récapitulatif du test de charge
 
@@ -127,7 +129,7 @@ La section relative aux ressources du contrôleur et de l'agent contient une lis
 
 ## <a name="errors"></a>Erreurs
 
-La section relative aux erreurs contient une liste de toutes les erreurs qui se sont produites durant le test de charge. Le type et sous-type de l'erreur, le compte et le dernier message sont affichés. Vous pouvez choisir une erreur pour ouvrir la table **Erreurs** et obtenir plus de détails sur cette erreur. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) et [Comment : analyser les erreurs dans le volet Compteurs](../test/how-to-analyze-errors-using-the-counters-panel.md).
+La section relative aux erreurs contient une liste de toutes les erreurs qui se sont produites durant le test de charge. Le type et sous-type de l'erreur, le compte et le dernier message sont affichés. Vous pouvez choisir une erreur pour ouvrir la table **Erreurs** et obtenir plus de détails sur cette erreur. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.

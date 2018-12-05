@@ -1,5 +1,5 @@
 ---
-title: Paramètres d’exécution des tests de charge dans Visual Studio
+title: Paramètres d'exécution du test de charge
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817385"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895494"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
 Les paramètres d’exécution d’un test de charge déterminent divers autres paramètres, y compris la durée du test, le niveau de détail de collection des résultats et les ensembles de compteurs collectés lors de l’exécution du test. Vous pouvez créer et stocker plusieurs paramètres d'exécution pour chaque test de charge, puis sélectionner un paramètre particulier à utiliser lors de l'exécution du test. Un paramètre d'exécution initial est ajouté à votre test de charge lorsque vous créez ce dernier à l'aide de l'**Assistant Nouveau test de charge**.
 
- Les tableaux suivants décrivent les différentes propriétés des paramètres d'exécution du test de charge. Vous pouvez modifier ces propriétés pour répondre aux exigences des test de charge spécifiques.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Pour plus d’informations, consultez [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md).
+Les tableaux suivants décrivent les différentes propriétés des paramètres d'exécution du test de charge. Vous pouvez modifier ces propriétés pour répondre aux exigences des test de charge spécifiques.
+
+Pour plus d’informations, consultez [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Propriétés générales
 
@@ -42,7 +44,7 @@ Les paramètres d’exécution d’un test de charge déterminent divers autres 
 |Property|Définition|
 |-|----------------|
 |**Nombre maximal de journaux des tests**|Indique le nombre maximum de journaux des tests à enregistrer pour le test de charge. Lorsque la valeur entrée pour le nombre maximum de journaux des tests est atteint, le test de charge arrête de collecter les journaux. Par conséquent, les journaux seront collectés au début du test, non à la fin. Le test de charge continue de fonctionner jusqu'à ce qu'il soit terminé.|
-|**Enregistrer la fréquence d’entrée au journal pour les tests terminés**|Spécifie la fréquence d'écriture du journal des tests. Cette valeur indique qu'un test sur le nombre de tests entré doit être enregistré dans le journal des tests. Par exemple, si vous entrez la valeur dix, cela indique que le dixième test, le vingtième test, le trentième test, et ainsi de suite, doivent être écrits dans le journal des tests. La valeur 0 indique qu'aucun journal des tests ne sera enregistré.<br /><br /> Pour plus d’informations, consultez [Guide pratique pour spécifier la fréquence d’enregistrement des journaux des tests](../test/how-to-specify-how-frequently-test-logs-are-saved.md).|
+|**Enregistrer la fréquence d’entrée au journal pour les tests terminés**|Spécifie la fréquence d'écriture du journal des tests. Cette valeur indique qu'un test sur le nombre de tests entré doit être enregistré dans le journal des tests. Par exemple, si vous entrez la valeur dix, cela indique que le dixième test, le vingtième test, le trentième test, et ainsi de suite, doivent être écrits dans le journal des tests. La valeur 0 indique qu'aucun journal des tests ne sera enregistré.|
 |**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. La valeur par défaut est `True`.<br /><br /> Pour plus d’informations, consultez [Guide pratique pour spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md).|
 
  Pour plus d’informations, consultez [Modifier les paramètres de journalisation des tests de charge](../test/modify-load-test-logging-settings.md).

@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380692"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895611"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word
 
 Vous pouvez créer manuellement des rapports de test de charge en copiant et en collant les données du mode Résumé et de la vue Graphiques des résultats des tests de charge. Les données qui sont présentées dans les vues Graphiques et Résumé sont appliquées au format HTML lorsqu'elles sont copiées.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Vous pouvez également copier le texte brut de la vue Tables et les captures d’écran du mode Détails dans Microsoft Word. Toutefois, il n’est pas appliqué au format HTML et nécessite une mise en forme et des modifications supplémentaires.

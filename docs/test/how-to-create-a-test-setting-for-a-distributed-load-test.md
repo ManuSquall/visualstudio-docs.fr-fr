@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296084"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895468"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Guide pratique pour créer un paramètre de test pour un test de charge distribué
 
 Configurez des *paramètres de test* pour vos tests de charge afin de pouvoir distribuer ces tests sur plusieurs ordinateurs en utilisant des agents de test et des contrôleurs de test. Vous pouvez aussi configurer des paramètres de test pour utiliser des *adaptateurs de données de diagnostic*, qui spécifient les types de données que vous voulez collecter ou la façon d’affecter les ordinateurs de test quand vous exécutez des tests de charge depuis Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Par exemple, vous pouvez utiliser l'adaptateur de données de diagnostic du profileur ASP.NET pour collecter la répartition des performances du code. En outre, les adaptateurs de données de diagnostic peuvent être utilisés pour simuler des goulots d'étranglement potentiels sur l'ordinateur de test ou pour réduire la mémoire système disponible.
 

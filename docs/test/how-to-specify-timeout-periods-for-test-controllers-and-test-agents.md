@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827933"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895689"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
 Le contrôleur de test et l’agent de test comportent plusieurs paramètres de délai d’attente qui spécifient le délai d’attente des réponses entre eux, ou à partir d’une source de données avant de se solder par un échec avec une erreur. Dans certaines circonstances, il peut être nécessaire de modifier les valeurs du délai d'attente en fonction des besoins de votre topologie ou d'autres problèmes d'environnement. Pour modifier les valeurs du délai d'attente, modifiez le fichier de configuration XML associé au contrôleur de test ou à l'agent de test, comme indiqué dans les procédures suivantes.
 
- Pour modifier les divers paramètres de délai d’attente d’un contrôleur de test ou d’un agent de test, modifiez les fichiers de configuration suivants à l’aide des noms de clé et des valeurs des tables :
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Pour modifier les divers paramètres de délai d’attente d’un contrôleur de test ou d’un agent de test, modifiez les fichiers de configuration suivants à l’aide des noms de clé et des valeurs des tables :
 
 -   Contrôleur de test : *QTController.exe.config*
 

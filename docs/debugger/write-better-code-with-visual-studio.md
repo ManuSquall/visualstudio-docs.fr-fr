@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389375"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621589"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corriger les bogues en écrivant mieux C# code à l’aide de Visual Studio
 
-Débogage du code peut prendre du temps--et parfois frustrante--la tâche. De temps pour apprendre à déboguer efficacement. Un puissant IDE comme Visual Studio peut rendre votre travail beaucoup plus facile. Un IDE peut aider à vous déboguez votre code plus rapidement et pas seulement ça, mais il peut également aider à écrire de code de meilleure qualité avec moins de bogues. Notre objectif dans cet article est de vous donner une vue holistique du processus de débogage, afin de savoir quand utiliser l’Analyseur de code, ainsi que l’utilisation du débogueur et quand utiliser d’autres outils.
+Débogage du code peut prendre du temps--et parfois frustrante--la tâche. De temps pour apprendre à déboguer efficacement, mais un puissant IDE comme Visual Studio votre travail beaucoup plus facile. Un IDE peut aider à vous déboguez votre code plus rapidement et pas seulement ça, mais il peut également aider à écrire de code de meilleure qualité avec moins de bogues. Notre objectif dans cet article est de vous donner une vue holistique du processus de débogage, afin de savoir quand utiliser l’Analyseur de code, ainsi que l’utilisation du débogueur et quand utiliser d’autres outils.  
 
 Dans cet article, nous parler en tirant parti de l’IDE pour améliorer la productivité de vos sessions de débogage. Nous abordons le thème sur plusieurs tâches, telles que :
 
