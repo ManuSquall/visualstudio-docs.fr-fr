@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370729"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895338"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assigner des rôles à un contrôleur de test et à un agent de test
 
 Cette procédure pas à pas montre comment créer et configurer un paramètre de test qui utilise un contrôleur de test et un agent de test pour distribuer des tests sur plusieurs ordinateurs en utilisant Visual Studio. En outre, elle indique comment ajouter des adaptateurs de diagnostic et de données au paramètre de test.
 
-Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
-
--   Créer un paramètre de test.
-
--   Assigner des rôles à un contrôleur de test et à des agents de test.
-
--   Assigner un adaptateur de diagnostic et de données à votre paramètre de test.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Prérequis
 

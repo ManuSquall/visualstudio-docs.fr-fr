@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645183"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895598"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corriger les paramètres dynamiques non détectables dans un test de performances de site Web
 
@@ -30,6 +30,8 @@ Certains sites web utilisent des paramètres dynamiques pour traiter certaines d
 -   Valeurs de paramètre dynamique qui sont définies comme paramètres de chaîne de requête ou de publication de formulaire. Celles-ci sont gérées par le biais de la détection des paramètres dynamiques après avoir enregistré un test de performances web.
 
 Certains types de paramètres dynamiques ne sont pas détectés. Un paramètre dynamique non détecté provoquera l'échec du test de performances de site Web lors de son exécution, car la valeur dynamique sera différente à chaque exécution du test. Pour gérer correctement ces paramètres, vous pouvez ajouter manuellement des règles d'extraction aux paramètres dynamiques dans les tests de performances de site Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Créer et exécuter une application Web avec les paramètres dynamiques
 

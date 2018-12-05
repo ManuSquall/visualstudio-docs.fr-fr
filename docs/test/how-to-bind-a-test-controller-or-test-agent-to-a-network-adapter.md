@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203961"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896046"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau
 
@@ -30,6 +30,8 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 > **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur**
 >
 > Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau. Il est également possible d'installer avec succès des agents et de ne pas rencontrer ce problème avant d'exécuter un test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Liaison entre un contrôleur de test et une carte réseau spécifique
 
@@ -57,7 +59,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 3.  Ouvrez le fichier config XML *QTCcontroller.exe.config* situé dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
 
-4.  recherchez la balise `<appSettings>`.
+4.  recherchez l’étiquette `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -103,7 +105,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 3.  Ouvrez le fichier config XML *QTAgentService.exe.config* situé dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
 
-4.  recherchez la balise `<appSettings>`.
+4.  recherchez l’étiquette `<appSettings>`.
 
     ```xml
     <appSettings>

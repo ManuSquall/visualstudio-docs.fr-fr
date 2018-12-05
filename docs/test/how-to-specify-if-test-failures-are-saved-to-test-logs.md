@@ -11,20 +11,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381451"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895117"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Guide pratique pour spécifier si les échecs de test sont enregistrés dans les journaux des tests à l’aide de l’éditeur de test de charge
 
 Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés du test de charge en fonction de vos besoins et objectifs. Consultez [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md). Vous pouvez spécifier l’enregistrement du journal des tests en cas d’échec d’un test de charge. Pour ce faire, changez la propriété **Enregistrer le journal lors de l’échec d’un test**.
 
 > [!NOTE]
-> Pour obtenir la liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
+> Pour obtenir une liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Pour spécifier si le journal des tests doit être enregistré en cas d'échec d'un test dans un scénario
 
@@ -48,5 +49,3 @@ Après avoir créé votre test de charge avec l’**Assistant Nouveau test de ch
 
 - [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
 - [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
-- [Guide pratique pour configurer la collecte des détails complets afin d’activer le graphique d’activités des utilisateurs virtuels](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [Guide pratique pour spécifier la fréquence d’enregistrement des journaux des tests](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

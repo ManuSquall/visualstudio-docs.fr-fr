@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380246"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896079"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Utiliser la légende de la vue Graphiques pour analyser des tests de charge
 
 La vue Graphiques de l'outil Analyseur de test de charge inclut le volet de la légende qui affiche des informations sur chaque compteur de performance associé au graphique actuellement sélectionné.
 
 ![Légende de la vue Graphiques](../test/media/load_viewlegend.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Les informations suivantes sont contenues dans la légende :
 
@@ -31,11 +33,11 @@ Les informations suivantes sont contenues dans la légende :
 -   **Plage :** cette colonne affiche la plage de l’axe Y du compteur de performances. Par défaut, cette valeur s'ajuste automatiquement au fur et à mesure que la plage des exemples de données évolue. Une plage ajustée automatiquement sera toujours la puissance 10 supérieure à la valeur Max ; cela inclut les puissances 10 négatives. Un graphique peut contenir divers compteurs, chacun avec une plage différente. Par conséquent, l'axe Y n'est pas étiqueté avec un plage spécifique, mais est étiqueté avec les valeurs comprises entre 0 et 100 qui représentent un pourcentage de la plage totale de chaque compteur. Par exemple, pour un compteur avec une plage de 1 000, un point de données de 60 sur l'axe Y correspondrait à une valeur de 600 pour le compteur.
 
     > [!NOTE]
-    > Vous pouvez désactiver le réglage automatique des valeurs de la plage en verrouillant la plage sur une valeur spécifique. Lorsque la plage est verrouillée, toutes les valeurs qui dépassent la plage s'affichent comme valeur maximale spécifiée en haut du graphique. Utilisez la boîte de dialogue **Options de tracé** pour verrouiller la plage sur une valeur spécifique. Pour plus d’informations, consultez [Guide pratique pour spécifier les options de traçage pour les compteurs graphiques](../test/how-to-specify-plot-options-for-graphing-counters.md).
+    > Vous pouvez désactiver le réglage automatique des valeurs de la plage en verrouillant la plage sur une valeur spécifique. Lorsque la plage est verrouillée, toutes les valeurs qui dépassent la plage s'affichent comme valeur maximale spécifiée en haut du graphique. Utilisez la boîte de dialogue **Options de tracé** pour verrouiller la plage sur une valeur spécifique.
 
 -   **Compteur :** Les quatre colonnes nommées **Compteur**, **Instance**, **Catégorie** et **Ordinateur** identifient le compteur de performances de manière unique.
 
--   **Couleur :** La colonne **Couleur** affiche la couleur et le style de la ligne tracée pour le compteur de performances. Utilisez la boîte de dialogue **Options de tracé** pour modifier la couleur ou le style de ligne d’un compteur de performances sur le graphique. La boîte de dialogue **Options de tracé** est disponible dans le menu contextuel de la légende. Pour plus d’informations, consultez [Guide pratique pour spécifier les options de traçage pour les compteurs graphiques](../test/how-to-specify-plot-options-for-graphing-counters.md).
+-   **Couleur :** La colonne **Couleur** affiche la couleur et le style de la ligne tracée pour le compteur de performances. Utilisez la boîte de dialogue **Options de tracé** pour modifier la couleur ou le style de ligne d’un compteur de performances sur le graphique. La boîte de dialogue **Options de tracé** est disponible dans le menu contextuel de la légende.
 
 -   **Statistiques :** Les colonnes **Min**, **Max**, **Moy** et **Dernier** affichent les statistiques respectives relatives au compteur de performances. Ces valeurs correspondent aux données affichées dans la région visible du graphique. Par exemple, si vous appliquez un zoom avant sur une région d'une exécution, les statistiques de la légende reflètent uniquement les valeurs de la zone zoomée. La colonne « Dernier » correspond à la valeur du compteur de performance sur le dernier intervalle d'échantillonnage effectué.
 
@@ -59,6 +61,5 @@ La sélection d'un élément dans la légende effectue les opérations suivantes
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour spécifier les options de traçage des compteurs graphiques](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)

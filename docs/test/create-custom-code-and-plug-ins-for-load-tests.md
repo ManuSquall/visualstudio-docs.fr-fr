@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826971"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895754"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Créer un code et des plug-ins personnalisés pour les tests de charge
 
 Un plug-in personnalisé utilise du code écrit et attaché à un test de charge ou à un test de performances web. Vous pouvez utiliser l’API de test de charge et l’API de test de performances web pour créer des plug-ins personnalisés de test qui étendent les fonctionnalités intégrées. Vous pouvez ajouter plusieurs plug-ins à votre test de charge.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>Tâches
 

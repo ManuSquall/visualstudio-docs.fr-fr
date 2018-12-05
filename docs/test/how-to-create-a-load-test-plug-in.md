@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380536"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896729"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Guide pratique pour créer un plug-in de test de charge
 
@@ -27,6 +27,8 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 > [!NOTE]
 > Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d’informations, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Pour créer un plug-in de test de charge à l'aide de Visual C#
 
@@ -36,7 +38,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
      Pour plus d’informations, consultez [Guide pratique pour créer un projet de test de charge](../test/quickstart-create-a-load-test-project.md).
 
-3.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+3.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
@@ -48,9 +50,9 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 7.  Cliquez sur **OK**.
 
-8.  Le nouveau projet de bibliothèque de classes est ajouté à l'**Explorateur de solutions** et la nouvelle classe s'affiche dans l'**éditeur de code**.
+8.  Le nouveau projet de bibliothèque de classes est ajouté à **l’Explorateur de solutions** et la nouvelle classe s’affiche dans **l’éditeur de code**.
 
-9. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
+9. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
 10. La boîte de dialogue **Ajouter une référence** s’affiche.
 
