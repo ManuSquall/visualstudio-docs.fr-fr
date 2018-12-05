@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879837"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894506"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 
 Les tests de charge fournissent des ensembles de compteurs nommés, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs sont organisés par technologie et incluent Application, ASP.NET, .NET Application, IIS et SQL. Quand vous créez un test de charge avec **l’Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis et importants pour votre test de charge. Vous gérez vos compteurs dans l’**éditeur de test de charge**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
@@ -42,7 +44,7 @@ Il est important que vous ajoutiez les serveurs sous test à la liste des ordina
 |**Gérer les ensembles de compteurs pour votre test de charge :** Après avoir créé votre test de charge, vous pouvez modifier l’ensemble de compteurs dans l’éditeur de test de charge. La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans l'éditeur de test de charge.|-   [Guide pratique pour gérer des ensembles de compteurs](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Ajouter des ensembles de compteurs à votre test de charge :** quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge. Après avoir créé un test de charge, vous pouvez ajouter de nouveaux compteurs aux ensembles de compteurs existants à l'aide de l'éditeur de test de charge.|-   [Guide pratique pour ajouter des compteurs à des ensembles de compteurs](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Guide pratique pour ajouter des ensembles de compteurs personnalisés](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Spécifier une règle de seuil à l’aide de compteurs pour votre test de charge :** Une règle de seuil est une règle définie sur un compteur de performances individuel pour monitorer l’utilisation des ressources système pendant un test de charge. Les définitions d'ensembles de compteurs contiennent des règles de seuil prédéfinies pour de nombreux compteurs de performance clés. Les règles de seuil contenues dans des tests de charge comparent une valeur de compteur de performance à une valeur de constante ou une autre valeur de compteur de performance.|-   [Guide pratique pour ajouter une règle de seuil](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Assigner des noms conviviaux aux ordinateurs auxquels les ensembles de compteurs sont mappés :** Vous pouvez ajouter des balises d’ordinateur qui vous permettent d’appliquer un nom reconnu facilement par un ordinateur. Les balises s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence dans l’éditeur de test de charge. Plus important, les balises s’affichent dans les rapports Excel qui permettent aux parties prenantes d’identifier le rôle de l’ordinateur dans le test de charge, par exemple, « ServerWeb1 dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ».<br /><br /> Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).|-   [Guide pratique pour ajouter des étiquettes d’ordinateur aux mappages des ensembles de compteurs](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Assigner des noms conviviaux aux ordinateurs auxquels les ensembles de compteurs sont mappés :** Vous pouvez ajouter des balises d’ordinateur qui vous permettent d’appliquer un nom reconnu facilement par un ordinateur. Les balises s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence dans l’éditeur de test de charge. Plus important, les balises s’affichent dans les rapports Excel qui permettent aux parties prenantes d’identifier le rôle de l’ordinateur dans le test de charge, par exemple, « ServerWeb1 dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ».<br /><br /> Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Utiliser des ensembles de compteurs
 

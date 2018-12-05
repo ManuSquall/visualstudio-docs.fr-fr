@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176760"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896469"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateurs web dans un scénario de test de charge
 
 La *combinaison de navigateurs* vous permet de simuler une charge avec plus de réalisme dans un scénario de test de charge. La charge est générée à l’aide d’une combinaison hétérogène de navigateurs web au lieu d’un seul. Il s’agit de créer une approximation plus proche des navigateurs web qui seront utilisés avec les applications.
 
- Une combinaison de navigateurs indique la probabilité qu’un utilisateur virtuel lance un type de navigateur web donné dans un scénario de test de charge. À la création d’un test de charge, il peut être intéressant de simuler le fait que cette charge soit générée par le biais de plusieurs navigateurs web. Lorsque vous ajoutez un type de navigateur web à la combinaison à partir des différents navigateurs web fournis, un ensemble d’en-têtes associés au navigateur web sélectionné est ajouté à chaque requête HTTP envoyée par un test de performances web.
+Une combinaison de navigateurs indique la probabilité qu’un utilisateur virtuel lance un type de navigateur web donné dans un scénario de test de charge. À la création d’un test de charge, il peut être intéressant de simuler le fait que cette charge soit générée par le biais de plusieurs navigateurs web. Lorsque vous ajoutez un type de navigateur web à la combinaison à partir des différents navigateurs web fournis, un ensemble d’en-têtes associés au navigateur web sélectionné est ajouté à chaque requête HTTP envoyée par un test de performances web.
 
- La combinaison de navigateurs fonctionne comme d'autres options de combinaison. Un type de navigateur web est associé de manière aléatoire à un utilisateur virtuel, selon la combinaison de navigateurs. Les tests de cet utilisateur sont exécutés sur un navigateur web donné, en fonction de la probabilité spécifiée dans la combinaison.
+La combinaison de navigateurs fonctionne comme d'autres options de combinaison. Un type de navigateur web est associé de manière aléatoire à un utilisateur virtuel, selon la combinaison de navigateurs. Les tests de cet utilisateur sont exécutés sur un navigateur web donné, en fonction de la probabilité spécifiée dans la combinaison.
 
- Il est possible d’ajouter et de supprimer des types de navigateurs web à une combinaison de navigateurs après l’avoir spécifiée. Vous pouvez également modifier la distribution de la combinaison de navigateurs en utilisant le contrôle de combinaison. Le contrôle de combinaison vous permet d'ajuster facilement la distribution des navigateurs dans un scénario.
+Il est possible d’ajouter et de supprimer des types de navigateurs web à une combinaison de navigateurs après l’avoir spécifiée. Vous pouvez également modifier la distribution de la combinaison de navigateurs en utilisant le contrôle de combinaison. Le contrôle de combinaison vous permet d'ajuster facilement la distribution des navigateurs dans un scénario.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Ajouter de nouveaux navigateurs à un scénario
 

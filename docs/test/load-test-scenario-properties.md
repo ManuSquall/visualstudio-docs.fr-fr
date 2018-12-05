@@ -1,5 +1,5 @@
 ---
-title: Propriétés du scénario de test de charge Visual Studio
+title: Propriétés du scénario de test de charge
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 235f5d7a686f431555f34e232f6cc1af8195cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890190"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894597"
 ---
 # <a name="load-test-scenario-properties"></a>Propriétés des scénarios de test de charge
 
 Changez les paramètres des propriétés de votre scénario de test de charge dans Visual Studio selon vos besoins de test de charge. Cet article répertorie les différentes propriétés de scénario de test de charge par catégorie.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="general"></a>Général
 

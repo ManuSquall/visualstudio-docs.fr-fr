@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829285"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896300"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
 
@@ -24,7 +24,9 @@ Vous pouvez configurer l’adaptateur de données de diagnostic pour tester votr
 > [!WARNING]
 > Si vous exécutez vos tests sur un vrai réseau d'un type plus lent que le réseau que vous émulez, le test s'exécutera à la vitesse réseau la plus lente. L'émulation peut uniquement ralentir l'environnement réseau, pas l'accélérer.
 
- La procédure suivante décrit comment configurer l'émulation de réseau à partir de l'éditeur de configuration. Ces étapes s’appliquent à l’éditeur de configuration de Microsoft Test Manager et Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+La procédure suivante décrit comment configurer l'émulation de réseau à partir de l'éditeur de configuration. Ces étapes s’appliquent à l’éditeur de configuration de Microsoft Test Manager et Visual Studio.
 
 > [!NOTE]
 > L'adaptateur de diagnostic de données de l'émulation de réseau s'applique uniquement aux paramètres de test Visual Studio. Il n’est pas utilisé pour les paramètres de test dans Microsoft Test Manager.
@@ -34,9 +36,9 @@ Un compte qui est doté de privilèges d'administrateur doit être utilisé pour
 > [!NOTE]
 > Le compte Service réseau, qui est le compte par défaut de l’agent de test, n’est pas membre du groupe Administrateurs.
 
- **Émulation réseau véritable**
+**Émulation réseau véritable**
 
- Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests. Cela inclut des tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
+Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests. Cela inclut des tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
 
 - Délai aller-retour sur le réseau (latence)
 
@@ -50,12 +52,13 @@ Un compte qui est doté de privilèges d'administrateur doit être utilisé pour
 
 - Propagations des erreurs
 
-  L'émulation de réseau véritable fournit également la flexibilité nécessaire au filtrage des paquets réseau selon les adresses IP ou en fonction des protocoles tels que TCP, UDP et ICMP.
+L'émulation de réseau véritable fournit également la flexibilité nécessaire au filtrage des paquets réseau selon les adresses IP ou en fonction des protocoles tels que TCP, UDP et ICMP.
 
-  L'émulation de réseau véritable peut être utilisée par les testeurs et les développeurs réseau pour émuler un environnement de test souhaité, évaluer les performances, prévoir l'impact des modifications ou prendre des décisions en matière d'optimisation de technologie. En comparaison des bancs d'essais matériels, l'émulation de réseau véritable est une solution bien plus économique et plus flexible.
+L'émulation de réseau véritable peut être utilisée par les testeurs et les développeurs réseau pour émuler un environnement de test souhaité, évaluer les performances, prévoir l'impact des modifications ou prendre des décisions en matière d'optimisation de technologie. En comparaison des bancs d'essais matériels, l'émulation de réseau véritable est une solution bien plus économique et plus flexible.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Configurer l’émulation réseau pour vos paramètres de test
- Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les paramètres de test depuis Visual Studio, puis sélectionner la page **Données et diagnostics**.
+
+Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les paramètres de test depuis Visual Studio, puis sélectionner la page **Données et diagnostics**.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Pour configurer l'émulation de réseau pour vos paramètres de test
 

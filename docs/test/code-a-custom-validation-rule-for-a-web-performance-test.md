@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 09faa6473ee3f9570e57655e065a4bb9bd622e9c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948268"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895143"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Coder une règle de validation personnalisée pour un test de performances web
 
@@ -30,6 +30,8 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
 > [!NOTE]
 > Il est également possible de créer vos propres règles d'extraction personnalisées. Pour plus d’informations, consultez [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-custom-validation-rules"></a>Pour créer des règles de validation personnalisées
 

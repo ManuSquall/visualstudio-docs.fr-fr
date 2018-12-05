@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257366"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821368"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -244,7 +244,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     ![Erreur de syntaxe](../debugger/media/beginners-no-definition.png)
 
-    Bien que nous ayons défini chaque galaxie avec un objet de type `GType` (qui a la propriété `MGType`), le débogueur ne reconnaît pas l’objet `theGalaxy` comme un objet de type `GType`. Que se passe-t-il ? Vous devez examiner tout code qui définit le type de galaxie. Vous constatez alors que la classe `GType` a indubitablement une propriété `MyGType`, mais quelque chose ne va pas. Le message d’erreur concernant `object` s’avère être l’indice : pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
+    Bien que nous ayons défini chaque galaxie avec un objet de type `GType` (qui a la propriété `MyGType`), le débogueur ne reconnaît pas l’objet `theGalaxy` comme un objet de type `GType`. Que se passe-t-il ? Vous devez examiner tout code qui définit le type de galaxie. Vous constatez alors que la classe `GType` a indubitablement une propriété `MyGType`, mais quelque chose ne va pas. Le message d’erreur concernant `object` s’avère être l’indice : pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
 
 1. En examinant votre code associé à la définition du type de galaxie, vous constatez que la propriété `GalaxyType` de la classe `Galaxy` est spécifiée comme `object` au lieu de `GType`.
 
