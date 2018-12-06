@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826659"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821446"
 ---
 # <a name="what-is-debugging"></a>Qu’est-ce que le débogage ?
 
@@ -25,13 +25,13 @@ Le débogueur Visual Studio est un outil puissant. Avant de vous montrer comment
 
 ## <a name="debugger-vs-debugging"></a>Débogueur et débogage
 
-Le terme *débogage* est assez général et peut signifier beaucoup de choses. Dans l’utilisation la plus littérale du mot, il implique de supprimer les bogues à partir de votre code. Maintenant, il existe de nombreuses manières de procéder. Par exemple, vous pouvez déboguer en analysant votre code à la recherche de frappe, ou à l’aide d’un analyseur de code. Vous pouvez déboguer le code à l’aide d’un profileur de performances. Ou, vous pouvez déboguer en utilisant un *débogueur*.
+Le terme *débogage* peut signifier beaucoup de choses, mais plus littéralement, cela signifie que la suppression des bogues à partir de votre code. Maintenant, il existe de nombreuses manières de procéder. Par exemple, vous pouvez déboguer en analysant votre code à la recherche de frappe, ou à l’aide d’un analyseur de code. Vous pouvez déboguer le code à l’aide d’un profileur de performances. Ou, vous pouvez déboguer en utilisant un *débogueur*.
 
-Un débogueur est un outil de développement très spécialisée. Un débogueur s’attache à votre application en cours d’exécution et vous permet d’inspecter votre code. Dans la documentation relative au débogage pour Visual Studio, il s’agit en général, ce que nous entendons lorsque nous disons « débogage ».
+Un débogueur est un outil de développement très spécialisée qui s’attache à votre application en cours d’exécution et vous permet d’inspecter votre code. Dans la documentation relative au débogage pour Visual Studio, il s’agit en général, ce que nous entendons lorsque nous disons « débogage ».
 
 ## <a name="debug-mode-vs-running-your-app"></a>Déboguer en mode et l’exécution de votre application
 
-Lorsque vous exécutez votre application dans Visual Studio pour la première fois, vous pouvez le démarrer en appuyant sur le bouton fléché vert ![démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "démarrer le débogage") dans la barre d’outils. Par défaut, le **déboguer** valeur apparaît dans la liste déroulante à gauche. Si vous débutez avec Visual Studio, cela peut exposer l’impression que le débogage de votre application a quelque chose à faire avec exécutant votre application--qu’elle ne les--mais il s’agit fondamentalement de deux tâches très différentes.
+Lorsque vous exécutez votre application dans Visual Studio pour la première fois, vous pouvez le démarrer en appuyant sur le bouton fléché vert ![démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "démarrer le débogage") dans la barre d’outils (ou **F5**). Par défaut, le **déboguer** valeur apparaît dans la liste déroulante à gauche. Si vous débutez avec Visual Studio, cela peut exposer l’impression que le débogage de votre application a quelque chose à faire avec exécutant votre application--qu’elle ne les--mais il s’agit fondamentalement de deux tâches très différentes.
 
 ![Sélectionnez une version Debug](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -49,7 +49,7 @@ Le débogueur est un outil essentiel pour rechercher et corriger les bogues dans
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cet article, vous avez appris quelques concepts généraux de débogage. Ensuite, vous pouvez démarrer le débogage avec Visual Studio et comment écrire du code avec moins de bogues d’apprentissage. L’article suivant montre C# exemples de code, mais les concepts s’appliquent à tous les langages pris en charge par Visual Studio.
+Dans cet article, vous avez découvert quelques concepts généraux liés au débogage. Ensuite, vous pouvez démarrer le débogage avec Visual Studio et comment écrire du code avec moins de bogues d’apprentissage. L’article suivant montre C# exemples de code, mais les concepts s’appliquent à tous les langages pris en charge par Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+> [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)

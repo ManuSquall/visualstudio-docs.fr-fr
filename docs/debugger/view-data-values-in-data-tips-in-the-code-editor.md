@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388158"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621537"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans DataTips dans l’éditeur de code
 
-Les DataTips sont un moyen pratique d’afficher des informations sur les variables dans votre application pendant le débogage. 
+Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
 S’il s’agit de la première fois que le débogage, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de lire cet article.
   
@@ -127,8 +127,8 @@ Vous pouvez exporter des DataTips vers un fichier XML, que vous pouvez partager 
 
 ## <a name="see-also"></a>Voir aussi  
  [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Premier aperçu de débogage](../debugger/debugger-feature-tour.md)   
- [Afficher les données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
+ [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [affichage de données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   
+
