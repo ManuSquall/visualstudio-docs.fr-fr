@@ -1,20 +1,21 @@
 ---
 layout: LandingPage
-title: Profilage de vos applications avec Visual Studio | Documents Microsoft
+title: Mesure des performances d’application à l’aide du profilage | Microsoft Docs
 description: Apprenez à utiliser Visual Studio 2017 pour profiler les performances de vos applications, services et outils dans le langage de votre choix.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267684"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065543"
 ---
-# <a name="profiling-in-visual-studio"></a>Profilage dans Visual Studio
+# <a name="measure-app-performance-in-visual-studio"></a>Mesurer les performances d’application dans Visual Studio
 
 Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilisation de la mémoire et du processeur et d’autres problèmes au niveau de l’application. Grâce à ces outils, vous pouvez accumuler des données (par exemple, des valeurs de variables, des appels de fonctions et des événements) pendant que vous exécutez votre application dans le débogueur. Vous pouvez examiner l’état de votre application à différents stades au cours de l’exécution de votre code. 
 

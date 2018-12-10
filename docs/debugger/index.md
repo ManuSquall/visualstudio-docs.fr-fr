@@ -1,18 +1,19 @@
 ---
 layout: LandingPage
-title: Débogage de vos applications dans Visual Studio | Documents Microsoft
+title: Débogage de vos applications | Microsoft Docs
 description: Apprenez à utiliser Visual Studio 2017 pour déboguer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: de0edba7396ceb75ce6a367a57d98e22fd43a83b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948255"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048604"
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
 
