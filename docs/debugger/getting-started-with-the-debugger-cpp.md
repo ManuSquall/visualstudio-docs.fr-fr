@@ -1,12 +1,12 @@
 ---
-title: Apprendre à déboguer le code C# avec le débogueur Visual Studio
+title: Apprendre à déboguer C++ avec le débogueur Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
-ms.date: 11/27/2018
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
-- CSharp
+- C++
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821303"
+ms.locfileid: "52825901"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer C++ avec Visual Studio
 
-Cet article présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Quand vous *déboguez votre application*, cela signifie généralement que vous exécutez votre application en y ayant attaché le débogueur. Quand vous faites cela, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant qu’il s’exécute. Vous pouvez parcourir votre code pas à pas et examiner les valeurs stockées dans les variables, vous pouvez définir des espions sur des variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’exécution de votre code, voir si une branche de code s’exécute, etc. Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
+Cet article présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Si vous voulez une vue plus générale des fonctionnalités du débogueur, consultez [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md). Quand vous *déboguez votre application*, cela signifie généralement que vous exécutez votre application en y ayant attaché le débogueur. Quand vous faites cela, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant qu’il s’exécute. Vous pouvez parcourir votre code pas à pas et examiner les valeurs stockées dans les variables, vous pouvez définir des espions sur des variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’exécution de votre code, voir si une branche de code s’exécute, etc. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
 | | |
 |---------|---------|
 | ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui montre des étapes similaires. |
-
-Bien que l’application de démonstration soit écrite en C#, la plupart des fonctionnalités sont applicables à C++, Visual Basic, F#, Python, JavaScript et d’autres langages pris en charge par Visual Studio (F# ne prend pas en charge Modifier et continuer. F# et JavaScript ne prennent pas en charge la fenêtre **Automatique**). Les captures d’écran sont en C#.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -42,126 +40,124 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail **Développement .NET Desktop**.
+* Au préalable, vous devez avoir installé Visual Studio 2017 et la charge de travail **Développement Desktop en C++**.
 
     Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
 
-    Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis **Modifier**.
+    Si vous devez installer la charge de travail mais que vous avez déjà Visual Studio, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
 
 ## <a name="create-a-project"></a>Créer un projet
 
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
 
-2. Sous **Visual C#**, choisissez **Windows Desktop** puis, dans le volet central, **Application console**.
+2. Sous **Visual C++**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console Windows**.
 
-    Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail *Développement .NET Desktop**, puis **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console Windows**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
 
 3. Tapez un nom comme **get-started-debugging**, puis cliquez sur **OK**.
 
     Visual Studio crée le projet.
 
-4. Dans *Program.cs*, remplacez le code suivant
+4. Dans *get-started-debugging.cpp*, remplacez le code suivant
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace get_started_debugging
+    ```c++
+    int main()
     {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
+        return 0;
     }
     ```
 
     par le code suivant :
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```c++
+    #include "pch.h"
 
-    public class Shape
+    #include <string>
+    #include <vector>
+    #include <iostream>
+
+    class Shape
     {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
+        int privateX = 0;
+        int privateY = 0;
+        int privateHeight = 0;
+        int privateWidth = 0;
+
+        int getX() const { return privateX; }
+        void setX(int value) { privateX = value; }
+
+        int getY() const { return privateY; }
+        void setY(int value) { privateY = value; }
+
+        int getHeight() const { return privateHeight; }
+        void setHeight(int value) { privateHeight = value; }
+
+        int getWidth() const { return privateWidth; }
+        void setWidth(int value) { privateWidth = value; }
+
+        public:
         // Virtual method
-        public virtual void Draw()
+        virtual void Draw()
         {
-            Console.WriteLine("Performing base class drawing tasks");
+            std::wcout << L"Performing base class drawing tasks" << std::endl;
         }
-    }
+    };
 
-    class Circle : Shape
+    class Circle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
+        // Code to draw a circle...
+        std::wcout << L"Drawing a circle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Rectangle : Shape
+    class Rectangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
+        // Code to draw a rectangle...
+        std::wcout << L"Drawing a rectangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Triangle : Shape
+    class Triangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
+        // Code to draw a triangle...
+        std::wcout << L"Drawing a trangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Program
+    int main(std::vector<std::wstring> &args)
     {
-        static void Main(string[] args)
+        auto shapes = std::vector<Shape*>
         {
+            new Rectangle(),
+            new Triangle(),
+            new Circle()
+        };
 
-            var shapes = new List<Shape>
-            {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
-            }
-
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+        for (auto shape : shapes)
+        {
+            shape->Draw();
         }
-
     }
 
     /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
+    Drawing a rectangle
+    Performing base class drawing tasks
+    Drawing a triangle
+    Performing base class drawing tasks
+    Drawing a circle
+    Performing base class drawing tasks
     */
     ```
 
@@ -171,7 +167,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
      **F5** démarre l’application avec le débogueur attaché au processus de l’application, mais jusqu’à présent, nous n’avons rien fait de spécial pour examiner le code. L’application se charge juste et vous voyez la sortie de la console.
 
-    ```cmd
+    ```
     Drawing a rectangle
     Performing base class drawing tasks
     Drawing a triangle
@@ -186,9 +182,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrer le débogueur
 
-1. Dans la boucle `foreach` de la fonction `Main`, définissez un point d’arrêt en cliquant dans la marge gauche de la ligne de code suivante :
+1. Dans la boucle `for` de la fonction `main`, définissez un point d’arrêt en cliquant dans la marge gauche de la ligne de code suivante :
 
-    `shape.Draw()`
+    `shape->Draw()`
 
     Un cercle rouge apparaît là où vous avez défini le point d’arrêt.
 
@@ -196,7 +192,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 2. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer le débogage** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging". L’application démarre, et le débogueur s’exécute jusqu’à la ligne de code où vous avez défini le point d’arrêt.
 
-    ![Définir et atteindre un point d’arrêt](../debugger/media/get-started-set-breakpoint.gif)
+    ![Définir et atteindre un point d’arrêt](../debugger/media/get-started-set-breakpoint-cpp.gif)
 
     La flèche jaune représente l’instruction sur laquelle le débogueur s’est mis en pause, ce qui interrompt également l’exécution de l’application au même point (cette instruction n’a pas encore été exécutée).
 
@@ -208,23 +204,23 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moyen d’exécuter rapidement votre application dans le débogueur (les commandes équivalentes, comme les commandes des menus, sont indiquées entre parenthèses).
 
-1. Alors que l’exécution est mise en pause dans l’appel de la méthode `shape.Draw` dans la méthode `Main`, appuyez sur **F11** (ou choisissez **Déboguer > Pas à pas détaillé**) pour avancer dans le code de la classe `Rectangle`.
+1. Alors que l’exécution est mise en pause dans l’appel de la méthode `shape->Draw` dans la fonction `main`, appuyez sur **F11** (ou choisissez **Déboguer > Pas à pas détaillé**) pour avancer dans le code de la classe `Rectangle`.
 
-     ![Utilisez F11 pour exécuter le code en pas à pas détaillé](../debugger/media/get-started-f11.png "F11 Pas à pas détaillé")
+     ![Utilisez F11 pour exécuter le code en pas à pas détaillé](../debugger/media/get-started-f11-cpp.png "F11 Pas à pas détaillé")
 
      F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. (Pour avancer plus rapidement dans le code, il existe d’autres options, que nous allons vous montrer.) Par défaut, le débogueur ignore le code non-utilisateur (si vous voulez plus d’informations, consultez [Uniquement mon code](../debugger/just-my-code.md)).
 
-2. Appuyez plusieurs fois sur **F10** (ou choisissez **Déboguer > Pas à pas principal**) jusqu’à ce que le débogueur s’arrête à l’appel de la méthode `base.Draw`, puis appuyez sur **F10** encore une fois.
+2. Appuyez plusieurs fois sur **F10** (ou choisissez **Déboguer > Pas à pas principal**) jusqu’à ce que le débogueur s’arrête à l’appel de la méthode `Shape::Draw`, puis appuyez sur **F10** encore une fois.
 
-     ![Utiliser la touche F10 pour effectuer un pas à pas principal dans le code](../debugger/media/get-started-step-over.png "F10 Pas à pas principal")
+     ![Utiliser la touche F10 pour effectuer un pas à pas principal dans le code](../debugger/media/get-started-step-over-cpp.png "F10 Pas à pas principal")
 
-     Notez que cette fois, le débogueur n’effectue pas de pas à pas détaillé dans la méthode `Draw` de la classe de base (`Shape`). **F10** fait avancer le débogueur sans effectuer de pas à pas détaillé dans les fonctions ou les méthodes du code de votre application (le code s’exécute néanmoins). En appuyant sur F10 sur l’appel de la méthode `base.Draw` (au lieu de **F11**), nous avons ignoré le code d’implémentation pour `base.Draw` (qui ne nous intéresse peut-être pas pour l’instant).
+     Notez que cette fois, le débogueur n’effectue pas de pas à pas détaillé dans la méthode `Draw` de la classe de base (`Shape`). **F10** fait avancer le débogueur sans effectuer de pas à pas détaillé dans les fonctions ou les méthodes du code de votre application (le code s’exécute néanmoins). En appuyant sur F10 sur l’appel de la méthode `Shape::Draw` (au lieu de **F11**), nous avons ignoré le code d’implémentation pour `Draw` dans la classe de base (qui ne nous intéresse peut-être pas pour l’instant).
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code avec Exécuter jusqu’au clic
 
-1. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur la méthode `Console.WriteLine` dans la classe `Triangle` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
+1. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur `std::cout` dans la classe `Triangle` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
 
-     ![Utiliser la fonctionnalité Exécuter jusqu’au clic](../debugger/media/get-started-run-to-click.png "Exécuter jusqu’au clic")
+     ![Utiliser la fonctionnalité Exécuter jusqu’au clic](../debugger/media/get-started-run-to-click-cpp.png "Exécuter jusqu’au clic")
 
    > [!NOTE]
    > Le bouton **Exécuter jusqu’au clic** est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton avec la flèche verte, utilisez à la place **F11** dans cet exemple pour faire avancer le débogueur jusqu’au bon endroit.
@@ -233,7 +229,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
     L’utilisation de ce bouton revient à définir un point d’arrêt temporaire. **Exécuter jusqu’au clic** est pratique pour examiner rapidement une zone visible du code d’application (vous pouvez cliquer dans n’importe quel fichier ouvert).
 
-    Le débogueur avance jusqu’à l’implémentation de la méthode `Console.WriteLine` pour la classe `Triangle`.
+    Le débogueur avance jusqu’à l’implémentation de la méthode `std::cout` pour la classe `Triangle`.
 
     Alors que l’application est mise en pause, vous remarquez une faute de frappe ! La sortie « Drawing a trangle » est mal orthographiée. Nous pouvons la corriger directement ici pendant l’exécution de l’application dans le débogueur.
 
@@ -241,7 +237,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 1. Cliquez dans « Drawing a trangle » et corrigez en remplaçant « trangle » par « triangle ».
 
-1. Appuyez une fois sur **F11** : vous voyez que le débogueur avance à nouveau.
+1. Appuyez sur **F11** une fois. Un message apparaît pour vous dire que le code est en cours de recompilation, puis le débogueur avance à nouveau.
 
     > [!NOTE]
     > Selon le type de code que vous modifiez dans le débogueur, vous pouvez voir un message d’avertissement. Dans certains scénarios, vous devez recompiler le code avant de pouvoir continuer.
@@ -254,7 +250,7 @@ Supposons que vous avez terminé d’examiner la méthode `Draw` de la classe `T
 
      Cette commande reprend l’exécution de l’application (et fait avancer le débogueur) jusqu’au retour de la fonction active.
 
-     Vous devez normalement être revenu dans la boucle `foreach` de la méthode `Main`.
+     Vous devez normalement être revenu dans la boucle `for` de la méthode `main`.
 
 ## <a name="restart-your-app-quickly"></a>Redémarrer rapidement votre application
 
@@ -262,39 +258,35 @@ Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger
 
 Quand vous appuyez sur **Redémarrer**, vous gagnez du temps par rapport à l’action consistant à arrêter l’application, puis à redémarrer le débogueur. Le débogueur se met en pause sur le premier point d’arrêt qui est atteint par l’exécution du code.
 
-Le débogueur s’arrête à nouveau au niveau du point d’arrêt que vous définissez, à la méthode `shape.Draw()`.
+Le débogueur s’arrête à nouveau au niveau du point d’arrêt que vous définissez, à la méthode `shape->Draw()`.
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations (datatips)
 
 Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi les plus pratiques du débogueur : vous pouvez faire cela de différentes façons. Souvent, quand vous essayez de déboguer un problème, vous essayez de déterminer si les variables stockent les valeurs que vous prévoyez à un moment donné.
 
-1. Alors que l’exécution est mise en pause sur la méthode `shape.Draw()`, placez le curseur sur l’objet `shape`. Vous voyez alors sa valeur de propriété par défaut, le type d’objet `Rectangle`.
+1. Alors que l’exécution est mise en pause sur la méthode `shape->Draw()`, placez le curseur sur le conteneur `shapes` (objet de vecteur). Vous voyez alors que sa valeur de propriété par défaut, la propriété `size`, a la valeur `size=3`.
 
-1. Développez l’objet `shape` pour voir toutes ses propriétés (notamment la propriété `Height`, qui a la valeur 0).
+1. Développez l’objet `shapes` pour voir toutes ses propriétés, comme le premier index du tableau `[0]`, qui a une adresse mémoire.
 
-1. Appuyez plusieurs fois sur **F10** (ou choisissez **Déboguer** > **Pas à pas principal**) pour itérer une fois la boucle `foreach`, en effectuant à nouveau une pause sur `shape.Draw()`.
+    Vous pouvez développer davantage les objets pour afficher leurs propriétés.
 
-1. Placez une nouvelle fois le curseur sur l’objet shape. Cette fois-ci, vous voyez un nouvel objet de type `Triangle`.
+1. Développez le premier index `[0]` pour voir la propriété `privateHeight` du rectangle.
 
-     ![Afficher une bulle d’informations](../debugger/media/get-started-data-tip.gif "Afficher une bulle d’informations")
+     ![Afficher une bulle d’informations](../debugger/media/get-started-data-tip-cpp.png "Afficher une bulle d’informations")
 
-    Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs des propriétés sur des variables pour voir si elles stockent bien les valeurs prévues. Les bulles d’informations (« data tips ») sont un bon moyen de le faire.
+     Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs des propriétés sur des objets : les datatips sont un bon moyen de le faire.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspecter des variables avec les Fenêtres Automatique et Variables locales
 
 1. Examinez la fenêtre **Automatique** en bas de l’éditeur de code.
 
-    Si elle est fermée, ouvrez-la pendant que l’exécution est mise en pause dans le débogueur en choisissant **Déboguer** > **Windows** > **Automatique**.
+     ![Inspecter des variables dans la fenêtre Automatique](../debugger/media/get-started-autos-window-cpp.png "Fenêtre Automatique")
 
-1. Développez l’objet `shapes`.
+    Dans la fenêtre **Automatique**, vous voyez des variables et leur valeur actuelle. Pour C++, la fenêtre **Automatique** montre les variables dans les trois lignes de code précédentes.
 
-     ![Inspecter des variables dans la fenêtre Automatique](../debugger/media/get-started-autos-window.png "Fenêtre Automatique")
+2. Ensuite, examinons la fenêtre **Variables locales**, sous un onglet à côté de la fenêtre **Automatique**.
 
-    Dans la fenêtre **Automatique**, vous voyez des variables et leur valeur actuelle. La fenêtre **Automatique** montre toutes les variables utilisées dans la ligne active ou la ligne précédente (consultez la documentation pour les comportements selon le langage).
-
-1. Ensuite, examinons la fenêtre **Variables locales**, sous un onglet à côté de la fenêtre **Automatique**.
-
-    La fenêtre **Variables locales** montre les variables qui se trouvent dans l’[étendue](https://www.wikipedia.org/wiki/Scope_(computer_science)) actuelle, c’est-à-dire le contexte d’exécution actif.
+    La fenêtre **Variables locales** montre les variables qui se trouvent dans l’[étendue](https://www.wikipedia.org/wiki/Scope_(computer_science)) actuelle, c’est-à-dire le contexte d’exécution de code actif.
 
 ## <a name="set-a-watch"></a>Définir un espion
 
@@ -306,15 +298,13 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 ## <a name="examine-the-call-stack"></a>Examiner la pile des appels
 
-1. Alors que l’exécution est mise en pause dans la boucle `foreach`, cliquez sur la fenêtre **Pile des appels** qui est ouverte par défaut dans le volet inférieur droit.
+1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels**, qui est ouverte par défaut dans le volet inférieur droit.
 
-    Si elle est fermée, ouvrez-la pendant que l’exécution est mise en pause dans le débogueur en choisissant **Déboguer** > **Windows** > **Pile des appels**.
+2. Appuyez plusieurs fois sur **F11** jusqu’à ce que le débogueur fasse une pause dans la méthode `Shape::Draw` de la classe `Rectangle` dans l’éditeur de code. Regardez la fenêtre **Pile des appels**.
 
-2. Appuyez plusieurs fois sur **F11** jusqu’à ce que le débogueur fasse une pause dans la méthode `Base.Draw` de la classe `Triangle` dans l’éditeur de code. Regardez la fenêtre **Pile des appels**.
+    ![Examiner la pile des appels](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
 
-    ![Examiner la pile des appels](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. La ligne du haut montre la fonction active (méthode `Triangle.Draw` dans cette application). La deuxième ligne montre que `Triangle.Draw` a été appelée à partir de la méthode `Main`, etc.
+    La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. La ligne du haut montre la fonction active (dans cet exemple, la méthode `Rectangle::Draw`). La deuxième ligne montre que `Rectangle::Draw` a été appelée à partir de la fonction `main`, etc.
 
    > [!NOTE]
    > La fenêtre **Pile des appels** est similaire à la perspective Débogage dans certains IDE, comme Eclipse.
@@ -327,11 +317,11 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 ## <a name="change-the-execution-flow"></a>Changer le flux d’exécution
 
-1. Alors que le débogueur est mis en pause dans l’appel de la méthode `Circle.Draw`, utilisez la souris pour sélectionner la flèche jaune (pointeur d’exécution) sur la gauche, puis déplacez la flèche jaune d’une ligne vers le haut, où est fait l’appel de la méthode `Console.WriteLine`.
+1. Alors que le débogueur est mis en pause dans l’appel de la méthode `Shape::Draw`, utilisez la souris pour sélectionner la flèche jaune (pointeur d’exécution) sur la gauche, puis déplacez la flèche jaune d’une ligne vers le haut, où est fait l’appel de la méthode `std::cout`.
 
 1. Appuyez sur **F11**.
 
-    Le débogueur réexécute la méthode `Console.WriteLine` (vous voyez ceci dans la sortie de la fenêtre de console).
+    Le débogueur réexécute la méthode `std::cout` (vous voyez ceci dans la sortie de la fenêtre de console).
 
     En changeant le flux d’exécution, vous pouvez effectuer des opérations comme tester d’autres chemins d’exécution du code ou réexécuter du code sans devoir redémarrer le débogueur.
 

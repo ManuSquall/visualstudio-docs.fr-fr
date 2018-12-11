@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178411"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895390"
 ---
 # <a name="edit-load-tests"></a>Modifier des tests de charge
 
 Les tests de charge exécutent des tests de performances web ou des tests unitaires pour simuler l’accès simultané de plusieurs utilisateurs à un serveur. Un test de charge vous donne accès aux données de performance et de contrainte d'une application. Un test de charge peut être configuré pour émuler diverses conditions de charge telles que les charges utilisateur et les types de réseau.
 
-> [!NOTE]
-> Les tests de charge sont disponibles seulement dans l’édition Enterprise de Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Un test de charge est défini par des *scénarios*, des *ensembles de compteurs* et des *paramètres d’exécution*. L’illustration suivante explique les différences entre les [scénarios](../test/edit-load-test-scenarios.md), les [ensembles de compteurs](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) et les [paramètres d’exécution](../test/load-test-run-settings-properties.md) :
 
 ![Architecture du test de charge](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Configuration logicielle requise
+
+Les projets de test de performances web et de test de charge sont uniquement disponibles dans l’édition Enterprise de Visual Studio.
 
 ## <a name="edit-load-test-scenario-settings"></a>Modifier les paramètres des scénarios de test de charge
 

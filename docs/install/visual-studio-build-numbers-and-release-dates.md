@@ -5,26 +5,30 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 19223bf7c2a0c1645842aa57476af283f3e0d1f1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 1e3c14687fe48b3929488f539378d49bf2d43e65
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257327"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895403"
 ---
-# <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numéros de build et dates de publication de Visual Studio 2017
+# <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
+
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 Le tableau suivant répertorie les numéros de build et les dates de publication de Visual Studio 2017, à ce jour.
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.3 | Preview 1 | 28 novembre 2018 | 15.9.28307.145 |
+| 15.9.3 | Mise en production | 28 novembre 2018 | 15.9.28307.145 |
 | 15.9.2 | Mise en production | 19 novembre 2018 | 15.9.28307.108 |
 | 15.9.1 | Mise en production | 15 novembre 2018 | 15.9.28307.105 |
 | 15.9.0 | Mise en production | 13 novembre 2018 | 15.9.28307.53 |
@@ -84,35 +88,35 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.6.0 Préversion 7 | Preview | 2 mars 2018 | 15.6.27428.1 |
 | 15.6.0 Préversion 6 | Preview | 23 février 2018 | 15.6.27421.1 |
 | 15.0.10 | Mise en production | 21 février 2018 | 15.0.26228.28 |
-| 15.5.7 | Mise en production | 20 février 2018 | 15.5.27130.2036 |
+| 15.5.7 | Mise en production | 20 février 2018 | 15.0.27130.2036 |
 | 15.6.0 Préversion 5 | Preview | 14 février 2018 | 15.6.27413.0 |
 | 15.6.0 Préversion 4 | Preview | 7 février 2018 | 15.6.27406.0 |
 | 15.0.9 | Mise en production | 2 février 2018 | 15.0.26228.23 |
-| 15.5.6 | Mise en production | 29 janvier 2018 | 15.5.27130.2027 |
-| 15.5.5 | Mise en production | 25 janvier 2018 | 15.5.27130.2026 |
+| 15.5.6 | Mise en production | 29 janvier 2018 | 15.0.27130.2027 |
+| 15.5.5 | Mise en production | 25 janvier 2018 | 15.0.27130.2026 |
 | 15.6.0 Préversion 3 | Preview | 25 janvier 2018 | 15.6.27323.2 |
-| 15.5.4 | Mise en production | 16 janvier 2018 | 15.5.27130.2024 |
+| 15.5.4 | Mise en production | 16 janvier 2018 | 15.0.27130.2024 |
 | 15.6.0 Préversion 2 | Preview | 10 janvier 2018 | 15.6.27309.0 |
-| 15.5.3 | Mise en production |  9 janvier 2018 | 15.5.27130.2020 |
+| 15.5.3 | Mise en production |  9 janvier 2018 | 15.0.27130.2020 |
 | 15.0.8 | Mise en production |  9 janvier 2018 | 15.0.26228.21 |
-| 15.5.2 | Mise en production | 14 décembre 2017 | 15.5.27130.2010 |
+| 15.5.2 | Mise en production | 14 décembre 2017 | 15.0.27130.2010 |
 | 15.6.0 Préversion 1 | Preview | 14 décembre 2017 | 15.6.27205.2004 |
-| 15.5.1 | Mise en production | 7 décembre 2017 | 15.5.27130.2003 |
+| 15.5.1 | Mise en production | 7 décembre 2017 | 15.0.27130.2003 |
 | 15.6.0 Préversion 1 | Preview | 7 décembre 2017 | 15.6.27205.0 |
 | 15.0.7 | Mise en production | 6 décembre 2017 | 15.0.26228.18 |
-| 15.5 | Mise en production | 4 décembre 2017 | 15.5.27130.0 |
-| 15.5.0 Préversion 5 | Preview | 30 novembre 2017 | 15.5.27128.1 |
-| 15.4.5 | Mise en production | 27 novembre 2017 | 15.4.27004.2010 |
-| 15.5.0 Préversion 4 | Preview | 14 novembre 2017 | 15.5.27110.0 |
-| 15.4.4 | Mise en production | 14 novembre 2017 | 15.4.27004.2009 |
+| 15.5 | Mise en production | 4 décembre 2017 | 15.0.27130.0 |
+| 15.5.0 Préversion 5 | Preview | 30 novembre 2017 | 15.0.27128.1 |
+| 15.4.5 | Mise en production | 27 novembre 2017 | 15.0.27004.2010 |
+| 15.5.0 Préversion 4 | Preview | 14 novembre 2017 | 15.0.27110.0 |
+| 15.4.4 | Mise en production | 14 novembre 2017 | 15.0.27004.2009 |
 | 15.0.6 | Mise en production | 14 novembre 2017 | 15.0.26228.17 |
-| 15.4.3 | Mise en production | 8 novembre 2017 | 15.4.27004.2008 |
-| 15.5.0 Préversion 3 | Preview | 6 novembre 2017 | 15.5.27102.0 |
-| 15.4.2 | Mise en production | 31 octobre 2017 | 15.4.27004.2006 |
-| 15.5.0 Préversion 2 | Preview | 23 octobre 2017 | 15.5.27019.1 |
-| 15.4.1 | Mise en production | 19 octobre 2017 | 15.4.27004.2005 |
+| 15.4.3 | Mise en production | 8 novembre 2017 | 15.0.27004.2008 |
+| 15.5.0 Préversion 3 | Preview | 6 novembre 2017 | 15.0.27102.0 |
+| 15.4.2 | Mise en production | 31 octobre 2017 | 15.0.27004.2006 |
+| 15.5.0 Préversion 2 | Preview | 23 octobre 2017 | 15.0.27019.1 |
+| 15.4.1 | Mise en production | 19 octobre 2017 | 15.0.27004.2005 |
 | 15.5 préversion 1 | Preview | 11 octobre 2017 | 15.0.27009.1 |
-| 15.4 | Mise en production | 9 octobre 2017 | 15.0.27004.20002 |
+| 15.4 | Mise en production | 9 octobre 2017 | 15.0.27004.2002 |
 | 15.4 préversion 6 | Preview | 9 octobre 2017| 15.0.27004.20002 |
 | 15.4 préversion 5 | Preview | 6 octobre 2017 | 15.0.27004.2000 |
 | 15.4 préversion 4 | Preview | 2 octobre 2017 | 15.0.26929.2 |
@@ -127,7 +131,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.3.1 | Mise en production | 18 août 2017 | 15.0.26730.08 |
 | 15.3.1 préversion 1 | Preview | 18 août 2017 | 15.0.26730.08 |
 | 15.3.1  | Mise en production | 18 août 2017 | 15.0.26730.08 |
-| 15.4 préversion 1 | Preview | 24 août 2017 | 15.4.26823.1 |
+| 15.4 préversion 1 | Preview | 24 août 2017 | 15.0.26823.1 |
 | 15.3 | Mise en production | 14 août 2017 | 15.0.26730.3 |
 | 15.3 préversion 7.1 | Preview | 11 août 2017 | 15.0.26730.3 |
 | 15.3 préversion 7 | Preview | 1er août 2017 | 15.0.26730.0 |
@@ -161,6 +165,14 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.0.1  | Mise en production | 14 mars 2017 | 15.0.26228.9 |
 | 15.1 préversion 1 | Preview | 7 mars 2017 | 15.0.26304.0 |
 | 15.0.0 | Mise en production | 7 mars 2017 | 15.0.26228.4 |
+
+## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Preview
+
+Le tableau suivant liste les numéros de build et les dates de publication de Visual Studio 2019 Preview, à ce jour.
+
+| **Version**| **Canal** | **Date de publication** | **Version de build** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Preview 1 | 4 décembre 2018 | 16.0.28329.73 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Modèles de charge pour les tests de charge dans Visual Studio
+title: Modèles de charge pour les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862500"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895299"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels
 
@@ -27,6 +27,8 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
 > [!NOTE]
 > Dans tous les modèles de charge, la charge générée par Visual Studio est une charge simulée d’utilisateurs virtuels.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>Modèles de charge
 

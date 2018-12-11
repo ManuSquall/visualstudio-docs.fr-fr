@@ -1,5 +1,5 @@
 ---
-title: Mise en attente de tests codés de l’interface utilisateur d’événements spécifiques dans Visual Studio
+title: Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295122"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894766"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques lors de la lecture
 
 Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consultez [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Spécifications**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Spécifications**
+
+Visual Studio Enterprise
 
 > [!TIP]
 > Vous pouvez également ajouter des délais avant les actions à l'aide de l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Guide pratique pour insérer un délai avant une action de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**UITestControl.WaitForControlXXX(), méthodes**
 
- **UITestControl.WaitForControlXXX(), méthodes**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Attend que le contrôle soit prêt à accepter une entrée de souris et une entrée au clavier. Le moteur appelle implicitement cette API pour toutes les actions pour attendre que le contrôle soit prêt avant toute opération. Toutefois, bizarrement, vous devez parfois effectuer un appel explicite.
 
- Attend que le contrôle soit prêt à accepter une entrée de souris et une entrée au clavier. Le moteur appelle implicitement cette API pour toutes les actions pour attendre que le contrôle soit prêt avant toute opération. Toutefois, bizarrement, vous devez parfois effectuer un appel explicite.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Attend que le contrôle soit activé quand l’Assistant effectue une validation asynchrone de l’entrée via des appels au serveur. Par exemple, vous pouvez imposer à la méthode d’attendre le bouton **Suivant** de l’Assistant avant d’être activée. Pour obtenir un exemple de cette méthode, consultez [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Attend que le contrôle soit activé quand l’Assistant effectue une validation asynchrone de l’entrée via des appels au serveur. Par exemple, vous pouvez imposer à la méthode d’attendre le bouton **Suivant** de l’Assistant avant d’être activée. Pour obtenir un exemple de cette méthode, consultez [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Attend que le contrôle s'affiche dans l'interface utilisateur. Par exemple, vous attendez une boîte de dialogue d'erreur une fois que l'application a terminé la validation des paramètres. Le temps nécessaire à la validation est variable. Vous pouvez utiliser cette méthode pour attendre la boîte de dialogue d'erreur.
 
- Attend que le contrôle s'affiche dans l'interface utilisateur. Par exemple, vous attendez une boîte de dialogue d'erreur une fois que l'application a terminé la validation des paramètres. Le temps nécessaire à la validation est variable. Vous pouvez utiliser cette méthode pour attendre la boîte de dialogue d'erreur.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Attend que le contrôle disparaisse de l’interface utilisateur. Par exemple, vous pouvez attendre que la barre de progression disparaisse.
 
- Attend que le contrôle disparaisse de l'interface utilisateur. Par exemple, vous pouvez attendre que la barre de progression disparaisse.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Attend que la propriété spécifiée du contrôle ait la valeur donnée. Par exemple, vous attendez que le texte d’état passe à **Terminé**.
 
- Attend que la propriété spécifiée du contrôle ait la valeur donnée. Par exemple, vous attendez que le texte d’état passe à **Terminé**.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Attend que la propriété spécifiée du contrôle ait la valeur inverse de la valeur spécifiée. Par exemple, vous attendez que la zone d'édition ne soit pas en lecture seule, autrement dit, qu'elle soit modifiable.
 
- Attend que la propriété spécifiée du contrôle ait la valeur inverse de la valeur spécifiée. Par exemple, vous attendez que la zone d'édition ne soit pas en lecture seule, autrement dit, qu'elle soit modifiable.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Attend que le prédicat spécifié reprenne la valeur `true`. Cette méthode peut servir pour une opération d'attente complexe (comme des conditions OR) sur un contrôle donné. Par exemple, vous pouvez attendre que le texte d’état soit **Succeeded** ou **Failed**, comme le montre le code suivant :
+Attend que le prédicat spécifié reprenne la valeur `true`. Cette méthode peut servir pour une opération d'attente complexe (comme des conditions OR) sur un contrôle donné. Par exemple, vous pouvez attendre que le texte d’état soit **Succeeded** ou **Failed**, comme le montre le code suivant :
 
 ```csharp
 
