@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834279"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895026"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Créer des rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse des tendances
 
-Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests. Deux types de rapports de test de charge sont disponibles :
+Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Deux types de rapports de test de charge sont disponibles :
 
 - Exécuter la comparaison&mdash;Ce rapport correspond en réalité à deux rapports qui présentent des données de comparaison côte à côte sous forme de tableaux et de graphiques à barres.
 
@@ -33,7 +37,7 @@ Les définitions des rapports sont stockées dans la base de données de tests d
 Le fichier de feuille de calcul peut être partagé avec les parties prenantes sans que ceux-ci aient à se connecter à la base de données pour consulter le rapport.
 
 > [!NOTE]
-> Si vous ajoutez des commentaires à un test de charge, ils s'affichent dans le rapport Excel. Pour plus d’informations, consultez [Guide pratique pour ajouter des commentaires pendant l’analyse d’un test de charge terminé](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Si vous ajoutez des commentaires à un test de charge, ils apparaissent dans le rapport Excel.
 
 ## <a name="tasks"></a>Tâches
 

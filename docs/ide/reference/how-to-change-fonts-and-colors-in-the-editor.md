@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23978b13808054bfcf8ef3c809307e4f6cf37b43
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388619"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894545"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor"></a>Guide pratique pour changer les polices et les couleurs de l’éditeur
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Guide pratique pour changer les polices et les couleurs de l’éditeur dans Visual Studio 2017
 
 Vous pouvez changer le type de police par défaut, ajuster la taille de police et changer les couleurs de premier plan et d’arrière-plan de divers **éléments d’affichage** texte dans l’éditeur de code. Quand vous changez les paramètres de police, gardez à l’esprit les informations suivantes :
 

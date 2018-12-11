@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379804"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895195"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio
 
 Vous pouvez utiliser l’adaptateur de données de diagnostic du profileur ASP.NET pour collecter les informations du profileur ASP.NET. Cet adaptateur de données de diagnostic collecte les données de performance pour les applications ASP.NET.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Cet adaptateur de données de diagnostic ne peut pas être utilisé pour les tests exécutés à l’aide de Microsoft Test Manager. Vous pouvez utiliser l’adaptateur de diagnostic du profileur ASP.NET avec les tests de charge uniquement à l’aide de sites web, ce qui nécessite Visual Studio Enterprise.
@@ -31,13 +33,9 @@ L’adaptateur de données de diagnostic du profileur ASP.NET vous permet de col
 
 Pour plus d’informations, consultez [Guide pratique pour créer un paramètre de test pour un test de charge distribué](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-La procédure suivante décrit comment configurer l’adaptateur de données de diagnostic pour le profileur ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Pour configurer le profileur ASP.NET pour les paramètres de test
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Configurer le profileur ASP.NET pour vos paramètres de test
 
 Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les paramètres de test depuis Visual Studio, puis sélectionner la page **Données et diagnostics**.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Pour configurer le profileur ASP.NET pour les paramètres de test
 
 1.  Sélectionnez le rôle à utiliser pour collecter les données du profileur ASP.NET.
 

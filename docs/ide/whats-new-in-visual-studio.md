@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2017
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2017.
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607872"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895767"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -377,7 +377,7 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 
 ### <a name="report-a-problem"></a>Signaler un problème
 
- Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un incident ou un autre problème de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio-2017.md).
+ Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un plantage ou d’autres problèmes de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -386,3 +386,4 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
 * [Nouveautés de Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Nouveautés de Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Nouveautés de Visual Studio 2019](whats-new-visual-studio-2019.md)

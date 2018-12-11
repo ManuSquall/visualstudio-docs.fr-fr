@@ -1,5 +1,5 @@
 ---
-title: Combinaison de tests pour un scénario de test de charge dans Visual Studio
+title: Combinaison de tests pour un scénario de test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179513"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895988"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à inclure dans un scénario de test de charge
 
 La *combinaison de tests* d’un scénario associe la sélection des tests de performances web et des tests unitaires contenus dans le scénario, et la distribution de ces tests dans le scénario. La distribution est un paramètre que vous pouvez spécifier pour la probabilité qu'un test particulier sera sélectionné par un utilisateur virtuel durant une série de tests de charge.
 
- Une fois que vous avez ajouté un ensemble de tests à un test de charge, la *combinaison de tests* fonctionne comme les autres options de combinaison. Un utilisateur virtuel sélectionne de manière aléatoire un test, selon la probabilité que vous avez spécifiée dans la combinaison. Par exemple, si vous avez deux tests, chacun représentant 50 % de la combinaison, un nouvel utilisateur virtuel choisit d'exécuter le premier test environ une fois sur deux. Dans une combinaison 50/50, si un test est long et que l'autre est court, une charge plus importante provient du test long.
+Une fois que vous avez ajouté un ensemble de tests à un test de charge, la *combinaison de tests* fonctionne comme les autres options de combinaison. Un utilisateur virtuel sélectionne de manière aléatoire un test, selon la probabilité que vous avez spécifiée dans la combinaison. Par exemple, si vous avez deux tests, chacun représentant 50 % de la combinaison, un nouvel utilisateur virtuel choisit d'exécuter le premier test environ une fois sur deux. Dans une combinaison 50/50, si un test est long et que l'autre est court, une charge plus importante provient du test long.
 
- Après avoir ajouté des tests à la combinaison, vous pouvez les supprimer si nécessaire. Vous pouvez également modifier la distribution de la combinaison à l'aide du contrôle de combinaison de tests. Le contrôle de combinaison vous permet d'ajuster facilement la distribution des tests dans le scénario.
+Après avoir ajouté des tests à la combinaison, vous pouvez les supprimer si nécessaire. Vous pouvez également modifier la distribution de la combinaison à l'aide du contrôle de combinaison de tests. Le contrôle de combinaison vous permet d'ajuster facilement la distribution des tests dans le scénario.
 
 > [!NOTE]
 > La distribution est une mesure de la probabilité selon laquelle un test particulier sera sélectionné par un utilisateur virtuel au cours d'une série de tests de charge. La distribution est exprimée sous la forme d'un pourcentage. Par conséquent, la somme des valeurs de distribution de tous les tests contenus dans un scénario est de 100. Par exemple, si un scénario contient un seul test, la distribution pour ce test est de 100 %.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Ajouter de nouveaux tests à une combinaison de tests dans un scénario existant
 

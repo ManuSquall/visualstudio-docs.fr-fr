@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861915"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896560"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 
-Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests. Deux types de rapports de test de charge sont disponibles :
+Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Deux types de rapports de test de charge sont disponibles :
 
 -   **Comparaison de séries** Ce rapport crée un ensemble de rapports qui permettent de comparer les données de deux résultats de test de charge à l’aide de tables et de graphiques à barres.
 
@@ -45,7 +49,7 @@ L’illustration suivante est un exemple de rapport qui affiche une corrélation
 Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge**, à l’aide du bouton **Créer un rapport Excel** de la barre d’outils, ou à partir d’Excel par le biais de l’option **Rapport de test de charge** sous l’onglet **Test de charge** du ruban **Office**.
 
 > [!NOTE]
-> Si vous ajoutez des commentaires à un test de charge, ils s'affichent dans le rapport Excel. Pour plus d’informations, consultez [Guide pratique pour ajouter des commentaires pendant l’analyse d’un test de charge terminé](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Si vous ajoutez des commentaires à un test de charge, ils apparaissent dans le rapport Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Pour créer des rapports de comparaison de tests de charge à l'aide d'Excel
 

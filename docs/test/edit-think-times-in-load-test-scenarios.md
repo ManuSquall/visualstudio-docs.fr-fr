@@ -1,5 +1,5 @@
 ---
-title: Temps de réflexion des tests de charge dans Visual Studio
+title: Temps de réflexion des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 236b6dffa3885928b48b7d6ea044f2494e7d7b28
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175980"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895910"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web dans les scénarios de tests de charge
 
 Les temps de réflexion permettent de simuler un comportement humain selon lequel les utilisateurs attendent entre des interactions avec un site web. Ils ont lieu entre les demandes dans un test de performances web et entre les itérations de test dans un scénario de test de charge. L'utilisation de temps de réflexion dans un test de charge peut être utile pour la création de simulations de charge plus précises. Vous pouvez choisir d'utiliser ou d'ignorer les temps de réflexion dans les tests de charge. Pour activer ou désactiver les temps de réflexion dans vos tests de charge, utilisez **l’Éditeur de test de charge**.
 
- Le *profil de réflexion* est un paramètre qui s’applique à un scénario dans un test de charge. Le paramètre détermine si les temps de réflexion enregistrés dans les différents tests de performances web sont utilisés pendant le test de charge. Si vous souhaitez utiliser des temps de réflexion dans certains tests de performances web mais pas dans d’autres, placez-les dans des scénarios différents. Pour plus d’informations sur les scénarios, voir [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md).
+Le *profil de réflexion* est un paramètre qui s’applique à un scénario dans un test de charge. Le paramètre détermine si les temps de réflexion enregistrés dans les différents tests de performances web sont utilisés pendant le test de charge. Si vous souhaitez utiliser des temps de réflexion dans certains tests de performances web mais pas dans d’autres, placez-les dans des scénarios différents. Pour plus d’informations sur les scénarios, voir [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md).
 
- La première étape consiste à choisir ou non d’utiliser les temps de réflexion dans un test de charge lors de sa création avec **l’Assistant Nouveau test de charge**. Pour plus d’informations, voir [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md).
+La première étape consiste à choisir ou non d’utiliser les temps de réflexion dans un test de charge lors de sa création avec **l’Assistant Nouveau test de charge**. Pour plus d’informations, voir [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md).
 
- Les options **Profil de réflexion** sont décrites dans la liste suivante :
+Les options **Profil de réflexion** sont décrites dans la liste suivante :
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 
