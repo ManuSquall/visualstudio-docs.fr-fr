@@ -1,5 +1,6 @@
 ---
 title: Assemblys dans Visual Studio Tools pour Office runtime
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050207"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248109"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblys dans Visual Studio Tools pour Office runtime
   Lorsque vous créez un projet Office, Visual Studio ajoute automatiquement des références aux assemblys [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilisés pour le type de projet et la version .NET Framework cible du projet. Il existe différents assemblys dans les extensions Office pour .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]et [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Pour plus d’informations sur les extensions Office, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "50050207"
   
 |Nom de l'assembly|Description|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Fournit les types suivants :<br /><br /> -Types pour la création de personnalisations du ruban et des balises actives. **Remarque :** balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Types pour la création de volets actions dans les personnalisations au niveau du document et les volets de tâches personnalisés dans les Compléments VSTO.|  
+|Microsoft.Office.Tools.Common.dll|Fournit les types suivants :<br /><br /> -Types pour la création de personnalisations du ruban et des balises actives. **Remarque :**      Les balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Types pour la création de volets actions dans les personnalisations au niveau du document et les volets de tâches personnalisés dans les Compléments VSTO.|  
 |Microsoft.Office.Tools.Excel.dll|Fournit des interfaces qui représentent des éléments hôtes et des contrôles hôtes pour les projets Excel, ainsi que des types de prise en charge. Pour plus d’informations, consultez [automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Fournit des types que vous pouvez utiliser pour créer des zones de formulaire personnalisées dans les compléments VSTO Outlook.|  
 |Microsoft.Office.Tools.Word.dll|Fournit des interfaces qui représentent des éléments hôtes et des contrôles hôtes pour les projets Word, ainsi que des types de prise en charge. Pour plus d’informations, consultez [automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050207"
   
 |Nom de l'assembly|Description|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Fournit les types suivants :<br /><br /> -Microsoft.Office.Tools.AddIn classe de base pour les Compléments VSTO.<br />-Classes pour la création de personnalisations du ruban et des balises actives. **Remarque :** balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Classes pour la création de volets actions dans les personnalisations au niveau du document et les volets Office personnalisés dans des Compléments VSTO.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Fournit les types suivants :<br /><br /> -Microsoft.Office.Tools.AddIn classe de base pour les Compléments VSTO.<br />-Classes pour la création de personnalisations du ruban et des balises actives. **Remarque :**      Les balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Classes pour la création de volets actions dans les personnalisations au niveau du document et les volets Office personnalisés dans des Compléments VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Fournit des éléments hôtes et des contrôles hôtes pour les solutions Excel. Pour plus d’informations, consultez [automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Fournit des classes que vous pouvez utiliser pour créer des zones de formulaire personnalisées dans les compléments VSTO Outlook.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Fournit des éléments hôtes et des contrôles hôtes pour les solutions Word. Pour plus d’informations, consultez [automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md).|  

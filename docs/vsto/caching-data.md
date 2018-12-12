@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846887"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248116"
 ---
 # <a name="cache-data"></a>Données du cache
   Vous pouvez mettre en cache les objets de données dans une personnalisation au niveau du document afin que les données sont accessibles en mode hors connexion ou sans ouvrir Microsoft Office Word ou Microsoft Office Excel. Pour mettre en cache un objet, l’objet doit avoir un type de données qui répond à certaines exigences. Nombreux types de données courants dans le .NET Framework répondent à ces exigences, y compris <xref:System.String>, <xref:System.Data.DataSet>, et <xref:System.Data.DataTable>.  
@@ -31,9 +31,9 @@ ms.locfileid: "49846887"
   
  Il existe deux façons d’ajouter un objet au cache de données :  
   
-- Pour ajouter un objet au cache de données lorsque la solution est générée, appliquez le <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> à la déclaration de l’objet d’attribut. Pour plus d’informations, consultez [Comment : mettre en Cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+- Pour ajouter un objet au cache de données lorsque la solution est générée, appliquez le <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> à la déclaration de l’objet d’attribut. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
-- Pour ajouter par programme un objet au cache de données en cours d’exécution, utilisez la `StartCaching` (méthode) d’un hôte de l’élément, tel que le `ThisDocument` ou `ThisWorkbook` classes. Pour plus d’informations, consultez [Comment : mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+- Pour ajouter par programme un objet au cache de données en cours d’exécution, utilisez la `StartCaching` (méthode) d’un hôte de l’élément, tel que le `ThisDocument` ou `ThisWorkbook` classes. Pour plus d'informations, voir [Procédure : Mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
   Une fois que vous ajoutez un objet au cache de données, vous pouvez accéder et modifier les données mises en cache sans démarrer Word ou Excel. Pour plus d’informations, consultez [accéder aux données dans des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).  
   
@@ -79,7 +79,7 @@ ms.locfileid: "49846887"
 ## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Conserver les modifications apportées aux données mises en cache dans les documents protégés par mot de passe  
  Si vous mettez en cache des objets de données dans un document est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées. Vous pouvez enregistrer des modifications aux données mises en cache en remplaçant les deux méthodes. Substituer ces méthodes pour supprimer temporairement la protection lorsque le document est enregistré et puis réappliquer la protection après l’enregistrement l’opération est terminée.  
   
- Pour plus d’informations, consultez [Comment : mettre en Cache les données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+ Pour plus d'informations, voir [Procédure : Mettre en cache les données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Éviter la perte de données lors de l’ajout de valeurs null au cache de données  
  Lorsque vous ajoutez des objets au cache de données, tous les objets mis en cache doivent être initialisé à une non -**null** valeur avant que le document est enregistré et fermé. Si un objet mis en cache a un **null** valeur lorsque le document est enregistré puis fermé, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] supprimera automatiquement tous les objets mis en cache à partir du cache de données.  
@@ -87,9 +87,9 @@ ms.locfileid: "49846887"
  Si vous ajoutez un objet avec un **null** valeur au cache de données à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribut au moment du design, vous pouvez utiliser la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe pour initialiser les données mises en cache des objets avant que le document est ouvert. Cela est utile si vous souhaitez initialiser les données mises en cache sur un serveur sans Word ou Excel, avant que le document est ouvert par un utilisateur final. Pour plus d’informations, consultez [accéder aux données dans des documents sur le serveur](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : mettre en Cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Comment : mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Comment : mettre en Cache les données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Guide pratique pour Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Guide pratique pour Mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Guide pratique pour Cache des données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

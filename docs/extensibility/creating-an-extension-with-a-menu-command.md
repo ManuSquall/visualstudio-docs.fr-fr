@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821426"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248135"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu
 Cette procédure pas à pas montre comment créer une extension avec une commande de menu qui lance le bloc-notes.  
@@ -55,23 +55,15 @@ Cette procédure pas à pas montre comment créer une extension avec une command
 2.  Recherchez le constructeur de FirstCommand privé. Il s’agit dans lequel la commande est raccordée au service de commande et le Gestionnaire de commandes est spécifié. Remplacez le nom du Gestionnaire de commandes StartNotepad, comme suit :  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -120,18 +112,18 @@ Cette procédure pas à pas montre comment créer une extension avec une command
   
 1. Vous pouvez effectuer bien d’autres choses avec une commande de menu simple :  
   
-   1.  Ajouter votre propre icône : [ajouter des icônes aux commandes de menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Ajoutez votre propre icône : [Ajouter des icônes aux commandes de menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Modifier le texte de la commande de menu : [modifier le texte d’une commande de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Modifier le texte de la commande de menu : [Modifier le texte d’une commande de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Ajouter un raccourci du menu à une commande : [lier des raccourcis clavier aux éléments de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Ajouter un raccourci du menu à une commande : [Lier des raccourcis clavier aux éléments de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Ajouter différents types de commandes, menus et barres d’outils : [étendre des menus et commandes](../extensibility/extending-menus-and-commands.md)  
+2. Ajouter différents types de commandes, menus et barres d’outils : [Étendre des menus et commandes](../extensibility/extending-menus-and-commands.md)  
   
-3. Ajouter des fenêtres Outil et d’étendre les fenêtres d’outils intégrés de Visual Studio : [étendre et personnaliser les fenêtres Outil](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Ajouter des fenêtres Outil et d’étendre les fenêtres d’outils intégrés de Visual Studio : [Étendre et personnaliser les fenêtres Outil](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. Ajouter des suggestions de code, IntelliSense et éditeurs de code des autres fonctionnalités à un élément existant : [étendre les services de l’éditeur et la langue](../extensibility/extending-the-editor-and-language-services.md)  
+4. Ajoutez des suggestions de code, IntelliSense et d’autres fonctionnalités dans les éditeurs de code existants : [Étendre les services de l’éditeur et la langue](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Ajouter des pages de propriété et les Options et paramètres utilisateur vers votre extension : [étendre les propriétés et la fenêtre des propriétés](../extensibility/extending-properties-and-the-property-window.md) et [étendre des paramètres utilisateur et Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. Ajouter des pages de propriété et les Options et paramètres utilisateur vers votre extension : [Étendre les propriétés et la fenêtre des propriétés](../extensibility/extending-properties-and-the-property-window.md) et [étendre des paramètres utilisateur et Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   D’autres types d’extensions nécessitent un peu plus de travail, telles que la création d’un nouveau type de projet ([étendre des projets](../extensibility/extending-projects.md)), création d’un nouveau type d’éditeur ([créer concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)), ou en implémentant votre extension dans un interpréteur de commandes isolé : [shell isolé Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+   D’autres types d’extensions nécessitent un peu plus de travail, telles que la création d’un nouveau type de projet ([étendre des projets](../extensibility/extending-projects.md)), création d’un nouveau type d’éditeur ([créer concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)), ou en implémentant votre extension dans un interpréteur de commandes isolé : [Shell Visual Studio isolé](../extensibility/visual-studio-isolated-shell.md)
