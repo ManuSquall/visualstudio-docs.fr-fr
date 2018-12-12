@@ -1,5 +1,6 @@
 ---
 title: Fonctionnalités avancées de Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863646"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159397"
 ---
 # <a name="features-of-visual-studio-2017"></a>Fonctionnalités de Visual Studio 2017
 
-L’article [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md) fournit une présentation générale de Visual Studio. Cet article décrit les fonctionnalités qui peuvent être plus appropriées pour les développeurs expérimentés, ou pour ceux qui sont déjà familiarisés avec Visual Studio.
+L’article [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md) fournit une présentation générale de Visual Studio. Cet article décrit les fonctionnalités qui peuvent être plus appropriées pour les développeurs expérimentés, ou pour ceux qui sont déjà familiarisés avec Visual Studio.
 
 ## <a name="modular-installation"></a>Installation modulaire
 
@@ -126,5 +127,5 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Nouveautés dans Visual Studio 2017](../ide/whats-new-in-visual-studio.md)
