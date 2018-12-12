@@ -1,10 +1,11 @@
 ---
 title: Nouveautés de Visual Studio 2019 Preview
+titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de la préversion de Visual Studio 2019.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897245"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159748"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Nouveautés de Visual Studio 2019 Preview
 
@@ -86,7 +87,7 @@ Dans Visual Studio 2019 Preview, ce service est installé par défaut.
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Gérer les demandes de tirage (pull request) à partir de l’IDE
 
-Nous introduisons une nouvelle extension que vous pouvez télécharger et utiliser avec Visual Studio 2019 Preview. Cette nouvelle extension vous permet de passer en revue, d’exécuter et même de déboguer les demandes de tirage de votre équipe sans quitter l’IDE [(environnement de développement intégré)](../ide/visual-studio-ide.md) de Visual Studio. Nous prenons actuellement en charge le code dans Azure Repos, mais nous travaillons à étendre la fonctionnalité pour prendre en charge GitHub et améliorer l’expérience globale.
+Nous introduisons une nouvelle extension que vous pouvez télécharger et utiliser avec Visual Studio 2019 Preview. Cette nouvelle extension vous permet de passer en revue, d’exécuter et même de déboguer les demandes de tirage de votre équipe sans quitter l’IDE [(environnement de développement intégré)](../get-started/visual-studio-ide.md) de Visual Studio. Nous prenons actuellement en charge le code dans Azure Repos, mais nous travaillons à étendre la fonctionnalité pour prendre en charge GitHub et améliorer l’expérience globale.
 
 Pour démarrer, téléchargez l’extension [Pull Requests for Visual Studio](https://aka.ms/pr4vs) dans Visual Studio Marketplace.
 
