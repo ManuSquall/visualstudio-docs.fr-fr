@@ -1,5 +1,5 @@
 ---
-title: Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
+title: Mapper les méthodes sur la pile des appels tout en déboguant
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856182"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067396"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
-Créer une carte de code pour suivre visuellement la pile des appels pendant le débogage. Vous pouvez rédiger des notes sur la carte pour effectuer le suivi de ce que fait le code afin de vous concentrer sur la recherche de bogues.
+Créez une carte de code pour effectuer un suivi visuel de la pile des appels pendant le débogage. Vous pouvez rédiger des notes sur la carte pour effectuer le suivi de ce que fait le code afin de vous concentrer sur la recherche de bogues.
 
  ![Débogage avec des piles d’appels sur des cartes de code](../debugger/media/debuggermap_overview.png)
 
@@ -85,7 +85,7 @@ Créer une carte de code pour suivre visuellement la pile des appels pendant le 
 
  ![Ajouter un commentaire à la pile d’appels sur la carte de code](../debugger/media/debuggermap_addcomment.png)
 
-## <a name="UpdateMap"></a> Mettre à jour de la carte avec la pile d’appels suivante
+## <a name="UpdateMap"></a> Mettre à jour la carte avec la pile d’appels suivante
  Exécutez votre application jusqu'au point d'arrêt suivant ou exécutez pas à pas une fonction. La carte ajoute une nouvelle pile d'appels.
 
  ![Mettre à jour la carte de code avec la pile d’appels suivante](../debugger/media/debuggermap_addclearcallstack.png)
