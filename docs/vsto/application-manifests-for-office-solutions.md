@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9665be31a59de33713f981889bc8cb8a8cb55eea
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744936"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248174"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestes d’application pour les solutions Office
   Un manifeste d’application est un fichier XML qui décrit les assemblys qui sont chargés dans une solution Microsoft Office. Les outils de développement Microsoft Office dans Visual Studio utilisent le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste d’application défini dans le [manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest) référence.  
@@ -93,7 +93,7 @@ ms.locfileid: "50744936"
 |[&#60;vstoRuntime&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Obligatoire. Décrit la version spécifique de Visual Studio Tools pour Office Runtime qui est prise en charge par la solution Office.|**release**<br /><br /> **version**<br /><br /> **supportUrl**|  
   
 ## <a name="remarks"></a>Notes  
- Vous pouvez modifier manuellement les manifestes d’application et de déploiement dans les solutions Office. Par la suite, vous devez resigner l’application et les manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (*mage.exe* et *mageui.exe*). Pour plus d’informations, consultez [Comment : signer à nouveau les manifestes d’application et de déploiement](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Vous pouvez modifier manuellement les manifestes d’application et de déploiement dans les solutions Office. Par la suite, vous devez resigner l’application et les manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (*mage.exe* et *mageui.exe*). Pour plus d'informations, voir [Procédure : Signer à nouveau les manifestes d’application et de déploiement](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Emplacement du fichier  
  Un manifeste d’application est propre à une seule version d’une solution. Pour cette raison, les manifestes d’application doivent être stockés à l’écart des manifestes de déploiement. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] place les fichiers spécifiques à la version dans un sous-répertoire qui reprend le nom de la version associée dans le sous-répertoire *Fichiers d’application* du dossier de publication.  

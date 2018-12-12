@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050260"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248031"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook
   Vous pouvez spécifier les éléments Microsoft Office Outlook qui affichent une zone de formulaire en associant la zone de formulaire à la classe de message de chaque élément. Par exemple, si vous souhaitez ajouter une zone de formulaire au bas d’un élément de messagerie, vous pouvez associer la zone de formulaire avec le `IPM.Note` classe de message.  
@@ -48,7 +48,7 @@ ms.locfileid: "50050260"
  Vous pouvez également spécifier les noms des classes de message personnalisées. Classes de message personnalisées identifient des formulaires personnalisés que vous définissez dans Outlook.  
   
 > [!NOTE]  
->  Pour le remplacement et de zones de formulaire de remplacement global, vous pouvez spécifier un nouveau nom de classe de message personnalisé. Vous n’avez pas besoin d’utiliser le nom de classe de message d’un formulaire personnalisé existant. Le nom de la classe de message personnalisée doit être unique. Pour vous assurer que le nom est unique consiste à utiliser une convention d’affectation de noms similaire à ce qui suit : \< *NomClasseMessageStandard*>.\< *Entreprise*>.\< *NomClasseMessage*> (par exemple : `IPM.Note.Contoso.MyMessageClass`).  
+>  Pour le remplacement et de zones de formulaire de remplacement global, vous pouvez spécifier un nouveau nom de classe de message personnalisé. Vous n’avez pas besoin d’utiliser le nom de classe de message d’un formulaire personnalisé existant. Le nom de la classe de message personnalisée doit être unique. Pour vous assurer que le nom est unique consiste à utiliser une convention d’affectation de noms similaire à ce qui suit : \<*NomClasseMessageStandard*>.\< *Entreprise*>.\< *NomClasseMessage*> (par exemple : `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook  
  Il existe deux façons pour associer une zone de formulaire à une classe de message :  
@@ -60,19 +60,19 @@ ms.locfileid: "50050260"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Utilisez l’Assistant Nouvelle zone de formulaire Outlook  
  Sur la page finale de le **nouvelle zone de formulaire Outlook** Assistant, vous pouvez sélectionner les classes de message standard et tapez les noms des classes de message personnalisées que vous souhaitez associer à la zone de formulaire.  
   
- Les classes de message standard ne sont pas disponibles si la zone de formulaire est conçue pour remplacer la totalité du formulaire ou la page par défaut d’un formulaire. Vous pouvez spécifier des noms de classe de message standard uniquement pour les formulaires qui ajoutent une nouvelle page à un formulaire ou qui sont ajoutés au bas d’un formulaire. Pour plus d’informations, consultez [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ Les classes de message standard ne sont pas disponibles si la zone de formulaire est conçue pour remplacer la totalité du formulaire ou la page par défaut d’un formulaire. Vous pouvez spécifier des noms de classe de message standard uniquement pour les formulaires qui ajoutent une nouvelle page à un formulaire ou qui sont ajoutés au bas d’un formulaire. Pour plus d'informations, voir [Procédure : Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  Pour inclure une ou plusieurs classes de message personnalisées, tapez leurs noms dans le **quelles classes de message personnalisées afficheront cette zone de formulaire ?** boîte.  
   
  Les noms que vous tapez doivent respecter les consignes suivantes :  
   
-- Utiliser le nom de classe qualifié complet (par exemple : « gestion intégrée. Note.Contoso »).  
+- Utiliser le nom de classe qualifié complet (par exemple : « GESTION INTÉGRÉE. Note.Contoso »).  
   
 - Utilisez des points-virgules pour séparer plusieurs noms de classe de message.  
   
 - N’incluez pas les classes de message Outlook standard, tels que « gestion intégrée. Remarque » ou « gestion intégrée. Contact ». Inclure uniquement les classes de message personnalisées, telles que « gestion intégrée. Note.Contoso ».  
   
-- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : « Gestion intégrée »).  
+- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : « GESTION INTÉGRÉE »).  
   
 - Ne dépasse pas 256 caractères pour chaque nom de classe de message.  
   
@@ -93,13 +93,13 @@ ms.locfileid: "50050260"
   
  Les attributs doivent respecter les consignes suivantes :  
   
-- Pour les classes de message personnalisé, utilisez le nom de classe qualifié complet (par exemple : « gestion intégrée. Note.Contoso »).  
+- Pour les classes de message personnalisé, utilisez le nom de classe qualifié complet (par exemple : « GESTION INTÉGRÉE. Note.Contoso »).  
   
-- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : « Gestion intégrée »).  
+- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : « GESTION INTÉGRÉE »).  
   
 - Ne dépasse pas 256 caractères pour chaque nom de classe de message.  
   
-- N’incluez pas les noms des classes de message standard si la zone de formulaire remplace l’intégralité du formulaire ou la page par défaut d’un formulaire. Vous pouvez spécifier des noms de classe de message standard uniquement pour les formulaires qui ajoutent une nouvelle page à un formulaire ou qui sont ajoutés au bas d’un formulaire. Pour plus d’informations, consultez [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- N’incluez pas les noms des classes de message standard si la zone de formulaire remplace l’intégralité du formulaire ou la page par défaut d’un formulaire. Vous pouvez spécifier des noms de classe de message standard uniquement pour les formulaires qui ajoutent une nouvelle page à un formulaire ou qui sont ajoutés au bas d’un formulaire. Pour plus d'informations, voir [Procédure : Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
   Visual Studio valide le format des noms de classe de message lorsque vous générez le projet.  
   
