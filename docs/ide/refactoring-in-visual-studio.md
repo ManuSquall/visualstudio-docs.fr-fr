@@ -1,5 +1,5 @@
 ---
-title: Refactoriser du code dans Visual Studio | Microsoft Docs
+title: Refactorisation
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 3275e03139b9befff0ec0e1f817bc8b54532bb72
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348954"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159430"
 ---
 # <a name="refactor-code"></a>Refactoriser du code
 
@@ -29,7 +29,7 @@ Diverses opérations de refactorisation sont disponibles pour les différents la
 ## <a name="see-also"></a>Voir aussi
 
 - [Actions rapides](../ide/quick-actions.md)
-- [IDE Visual Studio](../ide/visual-studio-ide.md)
+- [IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Aperçu des changements](../ide/preview-changes.md)
 - [Refactorisation (Visual Studio pour Mac)](/visualstudio/mac/refactoring)

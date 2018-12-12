@@ -1,23 +1,24 @@
 ---
-title: 'Vue d’ensemble : signaler un problème dans Visual Studio'
+title: Signaler un problème
 description: Fournit une vue d’ensemble de l’outil Signaler un problème et inclut des définitions et états de problèmes
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56047150ce98cb6554248e43b7b8d7ff433cf283
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826672"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159826"
 ---
-# <a name="overview-report-a-problem"></a>Vue d’ensemble : Signaler un problème
+# <a name="overview-report-a-problem"></a>Vue d'ensemble : Signaler un problème
 
 L’outil Signaler un problème permet à la Communauté des développeurs Visual Studio de soumettre des problèmes. Chacun de vos signalements de problème devient un élément de travail dans notre système d’ingénierie, ce qui vous permet d’interagir directement avec nos équipes de produit pour nous aider à identifier et à résoudre les problèmes à fort impact. Les commentaires que vous soumettez avec des informations de diagnostics complètes sont essentiels pour améliorer la famille de produits Visual Studio. Nous vous sommes très reconnaissants de prendre le temps de signaler des problèmes.
 
