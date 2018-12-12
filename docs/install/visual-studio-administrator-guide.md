@@ -1,7 +1,8 @@
 ---
 title: Guide de l’administrateur Visual Studio
+titleSuffix: ''
 description: En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a675c0a737c4ee713d48b8912f74185a9f7cdc9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 358614cae2001f46588bb447d97a863cf19b8036
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139260"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159462"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guide de l’administrateur Visual Studio 2017
 
