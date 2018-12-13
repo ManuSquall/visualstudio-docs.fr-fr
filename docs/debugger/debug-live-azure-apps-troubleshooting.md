@@ -1,5 +1,6 @@
 ---
-title: Problèmes connus et dépannage pour le débogage d’instantané | Microsoft Docs
+title: Résolution des problèmes de débogage d’instantané | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284105"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059825"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour le débogage d’instantané dans Visual Studio
 
@@ -32,7 +33,7 @@ Procédez comme suit :
 
 1. Assurez-vous que vous disposez de la même version de code source qui a été utilisé pour générer et déployer votre app.isua1. Assurez-vous que vous chargez les symboles appropriés pour votre déploiement. Pour ce faire, vous devez afficher le **Modules** fenêtre lors du débogage d’instantané et vérifiez que la colonne du fichier de symboles affiche un fichier .pdb chargé pour le module que vous déboguez. Le débogueur d’instantané tente de télécharger et utiliser des symboles pour votre déploiement automatiquement.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Les symboles ne se chargent pas lorsque j’ouvre une capture instantanée
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Symboles ne se chargent pas lorsque j’ouvre une capture instantanée
 
 Si vous voyez après la fenêtre, les symboles n’a pas chargé.
 
@@ -48,14 +49,14 @@ Procédez comme suit :
 
 - Également, si votre organisation utilise un serveur de symboles ou supprime les symboles dans un autre chemin d’accès, vous pouvez utiliser les paramètres des symboles pour charger les symboles appropriés pour votre déploiement.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : je ne vois pas l’option « Attacher le débogueur instantané » dans l’Explorateur de Cloud
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : Je ne vois pas l’option « Attacher le débogueur instantané » dans l’Explorateur de Cloud
 
 Procédez comme suit :
 
 - Assurez-vous que le composant de débogueur de capture instantanée est installé. Ouvrez Visual Studio Installer et vérifiez la **débogueur de capture instantanée** composant dans la charge de travail Azure.
 - Assurez-vous que votre application est prise en charge. Actuellement, seuls ASP.NET (4.6.1+) et les applications ASP.NET Core (2.0 +) déployées dans Azure App Services sont pris en charge.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : je vois seulement limité des instantanés dans les outils de Diagnostic
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : Je vois seulement limité des instantanés dans les outils de Diagnostic
 
 ![Point d’ancrage limitées](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitées de point d’ancrage")
 

@@ -1,6 +1,6 @@
 ---
-title: Parcourir le code avec le débogueur Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Parcourir le code avec le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621524"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068271"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 

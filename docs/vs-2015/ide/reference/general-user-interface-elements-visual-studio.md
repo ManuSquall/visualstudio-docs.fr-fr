@@ -1,5 +1,5 @@
 ---
-title: Éléments généraux de l’interface utilisateur (Visual Studio) | Microsoft Docs
+title: Les éléments généraux de l’Interface utilisateur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: f2559cc618b006213fd5aa1f8fe66ecdce9d9f84
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214641"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054435"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Éléments généraux de l'interface utilisateur (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Cette section décrit quelques éléments de l'interface utilisateur de l'enviro
 
  [Options, éditeur de texte, C/C++, avancé](../../ide/reference/options-text-editor-c-cpp-advanced.md) vous permet de spécifier des options avancées pour les fichiers C ou C++.
 
- [Options, éditeur de texte, c#, mise en forme](../../ide/reference/options-text-editor-csharp-formatting.md) vous permet de spécifier des options de mise en forme pour les fichiers c#.
+ [Options, éditeur de texte, C#, mise en forme](../../ide/reference/options-text-editor-csharp-formatting.md) vous permet de spécifier des options de mise en forme pour C# fichiers.
 
- [Options, éditeur de texte, c#, avancé](../../ide/reference/options-text-editor-csharp-advanced.md) vous permet de spécifier des options avancées pour les fichiers c#.
+ [Options, éditeur de texte, C#, avancées](../../ide/reference/options-text-editor-csharp-advanced.md) vous permet de spécifier des options avancées pour C# fichiers.
 
- [Options, éditeur de texte, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) vous permet de spécifier les options IntelliSense pour les fichiers c#.
+ [Options, éditeur de texte, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) vous permet de spécifier les options IntelliSense pour C# fichiers.
 
  [Options, éditeur de texte, XAML, mise en forme](../../ide/reference/options-text-editor-xaml-formatting.md) vous permet de spécifier des options de mise en forme pour les fichiers XAML.
 

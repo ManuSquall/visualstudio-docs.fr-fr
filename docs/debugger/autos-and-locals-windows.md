@@ -1,6 +1,6 @@
 ---
-title: Inspecter des variables dans les fenêtres automatique et variables locales | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Inspecter des variables - fenêtres automatique et variables locales | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 584704471f9346611f240a3a24e0d45cf2eec364
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621469"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068352"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
