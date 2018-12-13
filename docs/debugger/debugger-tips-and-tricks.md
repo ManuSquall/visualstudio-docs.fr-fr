@@ -1,7 +1,7 @@
 ---
-title: Trucs et astuces dans le débogueur Visual Studio
+title: Trucs et astuces dans le débogueur
 description: En savoir plus sur certaines des fonctionnalités connues prises en charge par le débogueur Visual Studio
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257353"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055223"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -32,7 +32,7 @@ Si vous survolez fréquemment des bulles d’informations pendant le débogage, 
 
 ![L’épinglage d’une bulle](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (c#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (C#, VB, C++)
 
 Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et continuer le débogage. Pour utiliser cette fonctionnalité, cliquez sur dans votre code avec votre curseur pendant la suspension dans le débogueur, vérifiez les modifications, puis appuyez sur **F5**, **F10**, ou **F11** pour continuer le débogage.
 
@@ -65,7 +65,7 @@ En changeant le flux d’exécution, vous pouvez effectuer des opérations comme
 > [!WARNING]
 > Vous devez rester prudent avec cette fonctionnalité, vous pouvez voir un avertissement dans l’info-bulle. Vous pouvez aussi en voir d’autres. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (c#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (C#, Visual Basic)
 
 Il est facile d’afficher des variables à l’aide des fenêtres du débogueur, comme le **espion** fenêtre. Toutefois, quand une variable est hors de portée dans le **espion** fenêtre, vous pouvez remarquer qu’il est grisé. Dans certains scénarios d’application, la valeur d’une variable peut changer même lorsque la variable est hors de portée, et vous pouvez souhaiter surveiller de près (par exemple, une variable peut obtenir la garbage collection). Vous pouvez suivre la variable en créant un ID d’objet pour celui-ci dans le **espion** fenêtre.
 

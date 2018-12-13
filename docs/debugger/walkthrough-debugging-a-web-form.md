@@ -1,6 +1,6 @@
 ---
-title: 'Procédure pas à pas : Débogage d’un formulaire Web | Microsoft Docs'
-ms.custom: ''
+title: Déboguer un Web Form | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389602"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055152"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : débogage d'un formulaire Web
+# <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : Débogage d’un formulaire Web
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], également connue sous le nom de Web Form. Elle vous explique également comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans la fenêtre **Espion**.
 
 > [!NOTE]
@@ -69,7 +69,7 @@ Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les c
 
 11. Double-cliquez sur le contrôle Button que vous avez déposé.
 
-     Cette opération vous permet d'atteindre la page de codes : Default.aspx.cs pour C# ou Default.aspx.vb pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Le curseur doit se trouver dans la fonction `Button1_Click`.
+     Vous accédez alors à la page de codes : Default.aspx.cs pour C# ou Default.aspx.vb pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Le curseur doit se trouver dans la fonction `Button1_Click`.
 
 12. Dans la fonction `Button1_Click`, ajoutez le code suivant :
 
