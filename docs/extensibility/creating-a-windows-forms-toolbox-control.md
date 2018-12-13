@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936036"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307703"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
 Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK) vous permet de créer un contrôle qui est automatiquement ajouté à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un contrôle simple compteur que vous pouvez distribuer à d’autres utilisateurs.  
@@ -77,16 +77,16 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
 3.  Créer les déclarations suivantes de la propriété publique.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
 4.  Placez le code suivant le `Load` événement pour le contrôle.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
 5.  Créez la méthode publique suivante pour incrémenter le compteur.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
 6.  Ajoutez une déclaration pour le `Incremented` événement à la classe de contrôle.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Les appelants peuvent ajouter des gestionnaires à cet événement pour répondre aux modifications de la valeur du compteur.  
@@ -131,7 +131,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
 7.  Revenez à la vue de conception et double-cliquez sur le **réinitialiser** bouton pour générer le `btnReset_Click` Gestionnaire d’événements et le remplir dans comme illustré dans l’exemple suivant.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Tester le contrôle  
@@ -209,7 +209,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
      Le compteur est remis à **0**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le <em>\bin\debug\* dossier de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix</em> fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* de fichiers à la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) de site Web afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >  **Extension et mises à jour** boîte de dialogue.  
+ Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le dossier \bin\debug\ de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix* fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* fichier [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >   **Extension et mises à jour** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
