@@ -1,6 +1,6 @@
 ---
-title: 'Préparation du débogage : Projets Console | Microsoft Docs'
-ms.custom: ''
+title: Préparer le débogage des projets console | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c54c4bfdeb0341270d78ce677b6085d6f159a2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305180"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057075"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Préparation du débogage : Projets Console (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Préparation du débogage : Projets console (C#, C++, Visual Basic, F#)
 
-La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : Applications de formulaires Windows (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :  
+La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : applications Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :  
   
 - C#, Visual Basic, et F# Application Console  
   
