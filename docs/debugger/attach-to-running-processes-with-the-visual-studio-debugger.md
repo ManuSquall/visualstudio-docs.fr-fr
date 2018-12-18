@@ -1,7 +1,7 @@
 ---
-title: Attacher au processus en cours d’exécution avec le débogueur dans Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
-ms.date: 06/20/2018
+title: Attacher au processus en cours d’exécution avec le débogueur | Microsoft Docs
+ms.custom: seodec18
+ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,17 +29,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257340"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068459"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus est en cours d’exécution, sélectionnez **déboguer** > **attacher au processus** ou appuyez sur **Ctrl**+**Alt** + **P** dans Visual Studio et utiliser le **attacher au processus** boîte de dialogue pour attacher le débogueur au processus.
 
-Vous pouvez utiliser **attacher au processus** pour déboguer des applications en cours d’exécution sur des ordinateurs locaux ou distants, déboguer plusieurs processus simultanément, déboguer des applications qui n’ont pas été créées dans Visual Studio ou déboguer n’importe quelle application que vous n’avez pas démarré à partir de Visual Studio avec le débogueur attaché. Par exemple, si vous exécutez une application sans le débogueur et une exception, vous pouvez ensuite attacher le débogueur au processus de l’application en cours d’exécution et commencez le débogage.
+Vous pouvez utiliser **attacher au processus** pour déboguer des applications en cours d’exécution sur des ordinateurs locaux ou distants, déboguer plusieurs processus simultanément, de déboguer des applications qui n’ont pas été créées dans Visual Studio ou déboguer n’importe quelle application que vous n’avez pas démarré à partir de Visual Studio avec le débogueur attaché. Par exemple, si vous exécutez une application sans le débogueur et une exception, vous pouvez ensuite attacher le débogueur au processus de l’application en cours d’exécution et commencez le débogage.
 
 Pour plus d’informations sur les bases du débogage dans Visual Studio, consultez [mise en route avec le débogueur](../debugger/getting-started-with-the-debugger.md).
 
@@ -134,13 +134,13 @@ Pour des instructions détaillées pour le débogage des applications ASP.NET qu
 >[!NOTE]
 >Vous pouvez être connecté à plusieurs applications pour le débogage, mais qu’une seule application est active dans le débogueur à la fois. Vous pouvez configurer l’application active dans Visual Studio **emplacement de débogage** barre d’outils ou **processus** fenêtre.  
 
-Dans certains cas, lorsque vous déboguez dans une session Bureau à distance (Terminal Services), le **processus disponibles** liste n’affiche pas tous les processus disponibles. Si vous exécutez Visual Studio en tant qu’utilisateur disposant d’un compte d’utilisateur limité, la **processus disponibles** liste n’affiche pas les processus qui s’exécutent dans la Session 0, qui est utilisée pour les services et les autres processus serveur, y compris *w3wp.exe*. Vous pouvez résoudre le problème en exécutant [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sous un compte administrateur ou en exécutant [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir de la console du serveur au lieu d’une session Terminal Server. 
+Dans certains cas, lorsque vous déboguez dans une session Bureau à distance (Terminal Services), le **processus disponibles** liste affichera tous les processus disponibles. Si vous exécutez Visual Studio en tant qu’utilisateur disposant d’un compte d’utilisateur limité, la **processus disponibles** liste n’affiche les processus qui s’exécutent dans la Session 0. La session 0 est utilisée pour les services et les autres processus serveur, y compris *w3wp.exe*. Vous pouvez résoudre le problème en exécutant [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sous un compte administrateur ou en exécutant [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir de la console du serveur au lieu d’une session Terminal Server. 
 
-Si aucune de ces solutions n’est possible, une troisième option consiste à attacher au processus en exécutant `vsjitdebugger.exe -p <ProcessId>` à partir de la ligne de commande Windows. Vous pouvez déterminer l’id de processus à l’aide *tlist.exe*. Pour obtenir *tlist.exe*, téléchargez et installez les outils de débogage pour Windows, disponible à l’adresse [téléchargements WDK et à WinDbg](/windows-hardware/drivers/download-the-wdk).
+Si aucune de ces solutions n’est possible, la troisième option consiste à attacher le débogueur au processus en exécutant `vsjitdebugger.exe -p <ProcessId>` à partir de la ligne de commande Windows. Vous pouvez déterminer l’ID de processus avec *tlist.exe*. Pour obtenir *tlist.exe*, téléchargez et installez les outils de débogage pour Windows, qui sont disponibles dans [Téléchargements relatifs au WDK et à WinDbg](/windows-hardware/drivers/download-the-wdk).
 
 ## <a name="BKMK_reattach"></a> Rattacher à un processus
 
-Vous pouvez rattacher rapidement aux processus qui vous ont été précédemment attaché en choisissant **déboguer** > **rattacher au processus** (**MAJ** + **Alt**+**P**). Lorsque vous choisissez cette commande, le débogueur va immédiatement tenter de joindre à la dernière des processus vous avez attaché à par la première tentative faire correspondre l’ID du processus précédent, puis, si cette tentative échoue, en faisant correspondre le nom de processus précédent. Si aucune correspondance n’est trouvée, ou s’il existe plusieurs processus portent le même nom, le **attacher au processus** boîte de dialogue s’ouvre, vous pouvez sélectionner le processus correct.
+Vous pouvez rattacher rapidement aux processus qui vous ont été précédemment attaché en choisissant **déboguer** > **rattacher au processus** (**MAJ** + **Alt**+**P**). Lorsque vous choisissez cette commande, le débogueur va immédiatement tenter d’attacher au dernier processus que vous avez attaché à par la première tentative correspond à l’ID de processus précédente et si cette tentative échoue, en mettant en correspondance pour le précédent nom du processus. Si aucune correspondance n’est trouvée, ou si plusieurs processus portent le même nom, le **attacher au processus** boîte de dialogue s’ouvre, vous pouvez sélectionner le processus correct.
 
 > [!NOTE]
 > Le **rattacher au processus** commande est une nouveauté de Visual Studio 2017.
@@ -161,21 +161,21 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |-|-|-|-|
 |Débogage distant ASP.NET 4 ou 4.5 sur un serveur IIS|Utiliser les outils distants et **attacher au processus**|*w3wp.exe*|Consultez [débogage ASP.NET sur un ordinateur IIS distant à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils distants et **attacher au processus**|*dotnet.exe*|Déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [distant débogage ASP.NET Core sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Déboguer un script côté client sur un serveur IIS local (types d’application pris en charge uniquement)|Utilisez **attacher au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|Débogage de script doit être activé. Pour Chrome, vous devez également exécuter Chrome en mode débogage et sélectionnez **code Webkit** dans le **attacher à** champ.|
-|Déboguer une application c#, Visual Basic ou C++ sur l’ordinateur local|Utilisez [débogage standard](../debugger/getting-started-with-the-debugger.md) ou **attacher au processus**|*\<appname > .exe*|Dans la plupart des scénarios, utiliser le débogage standard et non **attacher au processus**.|
-|Débogage à distance une application de bureau Windows|Outils à distance|N/A| Consultez [à distance déboguer une application c# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [à distance déboguer une application C++](../debugger/remote-debugging-cpp.md)|
-|Déboguer des applications ASP.NET sur l’ordinateur local après le démarrage de l’application sans le débogueur|Utilisez **attacher au processus**|*iiexpress.exe*|Cela peut être utile pour rendre votre application à charger plus rapidement, telles que (par exemple) lors du profilage. |
-|Déboguer d’autres types d’application pris en charge sur un processus de serveur|Utiliser les outils à distance (si le serveur est à distance) et **attacher au processus**|*chrome.exe*, *iexplore.exe*, ou d’autres processus|Si nécessaire, utilisez le moniteur de ressources pour aider à identifier le processus. Consultez [le débogage à distance](../debugger/remote-debugging.md).|
-|Une application universelle Windows (UWP), OneCore, HoloLens, IoT application ou de débogage à distance|Déboguer le package d’application installé|N/A|Consultez [déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|
-|Déboguer une application universelle Windows (UWP), OneCore, HoloLens, IoT application ou que vous n’avez pas démarré à partir de Visual Studio|Déboguer le package d’application installé|N/A|Consultez [déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|  
+|Déboguer un script côté client sur un serveur IIS local, pour les types d’application pris en charge |Utilisez **attacher au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|Débogage de script doit être activé. Pour Chrome, vous devez également exécuter Chrome en mode débogage et sélectionnez **code Webkit** dans le **attacher à** champ.|
+|Déboguer un C#, Visual Basic ou C++ application sur l’ordinateur local|Utilisez [débogage standard](../debugger/getting-started-with-the-debugger.md) ou **attacher au processus**|*\<appname > .exe*|Dans la plupart des scénarios, utiliser le débogage standard et non **attacher au processus**.|
+|Débogage à distance une application de bureau Windows|Outils à distance|N/A| Consultez [déboguer à distance un C# ou Visual Basic application](../debugger/remote-debugging-csharp.md) ou [à distance déboguer une application C++](../debugger/remote-debugging-cpp.md)|
+|Déboguer une application ASP.NET sur l’ordinateur local après avoir démarré l’application sans le débogueur|Utilisez **attacher au processus**|*iiexpress.exe*|Cela peut être utile pour rendre votre application à charger plus rapidement, telles que (par exemple) lors du profilage. |
+|Déboguer d’autres types d’application pris en charge sur un processus de serveur|Si server est distant, utilisez les outils à distance, et **attacher au processus**|*chrome.exe*, *iexplore.exe*, ou d’autres processus|Si nécessaire, utilisez le moniteur de ressources pour aider à identifier le processus. Consultez [Débogage à distance](../debugger/remote-debugging.md).|
+|Une application universelle Windows (UWP), OneCore, HoloLens, IoT application ou de débogage à distance|Déboguer un package d’application installé|N/A|Consultez [déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|
+|Déboguer une application universelle Windows (UWP), OneCore, HoloLens, IoT application ou que vous n’avez pas démarré à partir de Visual Studio|Déboguer un package d’application installé|N/A|Consultez [déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser **attacher au processus**|  
   
 ## <a name="use-debugger-features"></a>Utiliser les fonctionnalités du débogueur
 
-Pour utiliser toutes les fonctionnalités du débogueur Visual Studio (par exemple, en appuyant sur des points d’arrêt) lors de l’attachement à un processus, l’application doit correspondre exactement à votre source local et les symboles (autrement dit, le débogueur doit être en mesure de charger le bon [(.pbd) fichiersdesymboles](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). Par défaut, cela requiert une version debug.
+Pour utiliser toutes les fonctionnalités du débogueur Visual Studio (par exemple, en appuyant sur des points d’arrêt) lors de l’attachement à un processus, l’application doit correspondre exactement à votre code source local et des symboles. Autrement dit, le débogueur doit être en mesure de charger le bon [de symboles (.pdb) fichiers](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Par défaut, cela requiert une version debug.
 
 Pour les scénarios de débogage à distance, vous devez disposer du code source (ou une copie du code source) déjà ouvert dans Visual Studio. Les fichiers binaires d’application compilée sur l’ordinateur distant doivent provenir de la même build que sur l’ordinateur local.
 
-Dans certains scénarios de débogage locales, vous pouvez déboguer dans Visual Studio sans accès à la source si les fichiers de symboles corrects sont présents à l’application (par défaut, cela requiert une version debug). Pour plus d’informations, consultez [spécifier les symboles et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Dans certains scénarios de débogage locales, vous pouvez déboguer dans Visual Studio sans accès à la source si les fichiers de symboles corrects sont présents à l’application. Par défaut, cela requiert une version debug. Pour plus d’informations, consultez [spécifier les symboles et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
 ##  <a name="BKMK_Troubleshoot_attach_errors"></a> Résoudre les erreurs d’attachement  
  Quand le débogueur est attaché à un processus en cours d’exécution, le processus peut contenir un ou plusieurs types de code. Les types de code auxquels le débogueur peut s’attacher sont affichés et sélectionnés dans la boîte de dialogue **Sélectionner le type de code** .  
@@ -184,17 +184,17 @@ Dans certains scénarios de débogage locales, vous pouvez déboguer dans Visual
   
  Si le débogueur est en mesure de joindre à certains, mais pas tous les types de code, vous voyez un message identifiant les types d’échec d’attachement.  
   
- Si le débogueur parvient à s’attacher à au moins un type de code, vous pouvez procéder au débogage du processus. Vous pouvez uniquement déboguer les types de code attachés avec succès. Le code non attaché dans le processus s’exécutera, mais vous ne serez pas en mesure de définir des points d’arrêt, afficher les données ou effectuer d’autres opérations de débogage de ce code.  
+ Si le débogueur parvient à s’attacher à au moins un type de code, vous pouvez procéder au débogage du processus. Vous pouvez uniquement déboguer les types de code attachés avec succès. Le code non attaché dans le processus s’exécutera, mais vous ne pourrez pas définir des points d’arrêt, afficher les données ou effectuer d’autres opérations de débogage de ce code.  
   
- Si vous souhaitez des informations plus spécifiques sur l’incapacité du débogueur à s’attacher à un type de code, vous pouvez tenter d’attacher à nouveau le débogueur uniquement à ce type de code.  
+ Si vous souhaitez des informations plus spécifiques sur l’incapacité du débogueur à attacher à un type de code, essayez de rattacher à uniquement ce type de code.  
   
- **Pour obtenir des informations spécifiques sur la raison de l’échec de l’attachement d’un type de code :**  
+ **Pour connaître les raisons de l’échec de l’attachement d’un type de code :**  
   
 1.  Procédez au détachement du processus. Sur le **déboguer** menu, sélectionnez **Détacher tout**.  
   
 1.  Rattacher au processus, en sélectionnant le type de code qui n’a pas pu attacher.  
   
-    1.  Dans le **attacher au processus** boîte de dialogue, sélectionnez le processus dans le **processus disponibles** liste.  
+    1.  Dans la boîte de dialogue **Attacher au processus**, sélectionnez le processus dans la liste **Processus disponibles**.  
   
     2.  Sélectionnez **sélectionnez**.  
   
