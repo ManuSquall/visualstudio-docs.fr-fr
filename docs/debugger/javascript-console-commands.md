@@ -1,6 +1,6 @@
 ---
-title: Commandes de la Console de JavaScript dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: JavaScript Console commands | Microsoft Docs
+ms.custom: seodec18
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823747"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052220"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Commandes de JavaScript Console dans Visual Studio
   
- Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : déboguer le JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’applique aux applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
+ Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’applique aux applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** > **Windows** > **Console JavaScript**.  
   
@@ -86,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examen des objets de la fenêtre de console JavaScript  
  Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Sinon, vous pouvez interagir avec l’objet dans la fenêtre de la console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre code (**Point d’arrêt** > **Insert Point d’arrêt**).  
   
-##  <a name="ConsoleLog"></a> Mise en forme la sortie de console.log  
+##  <a name="ConsoleLog"></a> Mise en forme de la sortie de console.log  
  Si vous passez plusieurs arguments à `console.log`, la console les traite sous forme de tableau et concatène la sortie.  
   
 ```javascript  

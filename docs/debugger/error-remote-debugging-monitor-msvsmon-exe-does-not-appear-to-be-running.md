@@ -1,6 +1,7 @@
 ---
-title: 'Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant | Microsoft Docs'
-ms.custom: ''
+title: 'Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -16,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8c8bb1b206461749b20660d8131f747fd637de
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: MT
+ms.openlocfilehash: b2047174106c552357de69a25b0b676c4ab6a2c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066429"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
 Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instance appropriée de Visual Studio Remote Debugging Monitor sur l’ordinateur distant. Visual Studio Remote Debugging Monitor doit être installé pour que le débogage distant fonctionne. Pour plus d’informations sur le téléchargement et la configuration du débogueur distant, consultez [le débogage à distance](../debugger/remote-debugging.md).  
   
 > [!IMPORTANT]
@@ -38,7 +39,7 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
  Les sections suivantes répertorient les autres causes éventuelles de ce message et ce que vous pouvez faire pour résoudre le problème.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>L’ordinateur distant n’est pas accessible  
- Essayez d’exécuter une commande [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) sur l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourrez pas vous connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.  
+ Essayez d’exécuter une commande [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) sur l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourront pas non plus se connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La version du débogueur distant ne correspond pas à la version de Visual Studio  
  La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez au [Centre de téléchargement](http://www.microsoft.com/en-us/download) pour rechercher la version appropriée du débogueur distant.  
@@ -51,11 +52,11 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
   
 -   Vous pouvez arrêter le débogueur distant et le redémarrer avec le compte que vous utilisez sur l’ordinateur local.  
   
--   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : `msvsmon /allow <username@computer>`  
+-   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`  
   
--   Vous pouvez ajouter l’utilisateur aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, **Outils > autorisations**).  
+-   Vous pouvez ajouter l’utilisateur aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, **Outils > Autorisations**).  
   
--   Si vous ne pouvez pas utiliser les méthodes dans les étapes précédentes, vous pouvez autoriser tous les utilisateurs à effectuer un débogage distant. Dans la fenêtre du débogueur distant, accédez à la **Outils > Options** boîte de dialogue. Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, utilisez uniquement cette option si vous n’avez pas d’autre choix ou que vous êtes sur un réseau privé.  
+-   Si vous ne pouvez pas utiliser les méthodes dans les étapes précédentes, vous pouvez autoriser tous les utilisateurs à effectuer un débogage distant. Dans la fenêtre du débogueur distant, accédez à la boîte de dialogue **Outils > Options**. Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, utilisez uniquement cette option si vous n’avez pas d’autre choix ou que vous êtes sur un réseau privé.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>Le pare-feu sur l’ordinateur distant n’autorise pas les connexions entrantes au débogueur distant  
  Le pare-feu sur l’ordinateur Visual Studio et celui sur l’ordinateur distant doivent être configurés pour autoriser la communication entre Visual Studio et le débogueur distant. Pour plus d’informations sur les ports utilisés par le débogueur distant, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Pour plus d’informations sur la configuration du Pare-feu Windows, consultez [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
