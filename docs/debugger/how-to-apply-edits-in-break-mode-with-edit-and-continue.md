@@ -1,6 +1,6 @@
 ---
-title: 'Comment : appliquer des modifications en Mode arrêt avec modifier et continuer | Microsoft Docs'
-ms.custom: ''
+title: Appliquer des modifications en mode arrêt avec Modifier & Continuer | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257070"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063724"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Comment : appliquer des modifications en Mode arrêt avec modifier et continuer (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procédure : Appliquer des modifications en Mode arrêt avec modifier et continuer (Visual Basic)
 Vous pouvez utiliser Modifier & Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.  
   
 Pour connaître les limitations sur l’utilisation de modifier & Continuer pendant le débogage, consultez [pris en charge les modifications de Code (C# et Visual Basic](../debugger/supported-code-changes-csharp.md)]
@@ -40,13 +40,13 @@ Pour connaître les limitations sur l’utilisation de modifier & Continuer pend
   
 1.  Passez en mode Arrêt en procédant de l'une des manières suivantes :  
   
-    -   Définissez un point d’arrêt dans votre code, puis choisissez **démarrer le débogage** à partir de la **déboguer** menu et attendez que l’application atteindre le point d’arrêt.  
+    -   Définissez un point d’arrêt dans votre code, puis cliquez sur **Démarrer le débogage** dans le menu **Déboguer** et attendez que l’application parvienne au point d’arrêt.  
   
-         - ou -  
+         ou  
   
-    -   Démarrer le débogage, puis sélectionnez **interrompre tout** à partir de la **déboguer** menu.  
+    -   Démarrez le débogage, puis sélectionnez **Interrompre tout** dans le menu **Déboguer**.  
   
-         - ou -  
+         ou  
   
     -   Lorsqu’une exception se produit, choisissez **activer la modification** sur le **Assistant Exception**.  
   
@@ -57,7 +57,7 @@ Pour connaître les limitations sur l’utilisation de modifier & Continuer pend
     > [!NOTE]
     >  Si vous tentez d’effectuer une modification du code qui n’est pas autorisée par l’opération Modifier & Continuer, votre modification est soulignée d’un trait ondulé violet et une tâche s’affiche dans la liste des tâches. Il vous est impossible de continuer l'exécution du code sauf si vous annulez la modification de code non autorisée.  
   
-3.  Sur le **déboguer** menu, cliquez sur **continuer** pour reprendre l’exécution.  
+3.  Dans le menu **Déboguer**, cliquez sur **Continuer** pour reprendre l’exécution.  
   
      Votre code s'exécute désormais avec les modifications que vous avez appliquées dans le projet.  
   

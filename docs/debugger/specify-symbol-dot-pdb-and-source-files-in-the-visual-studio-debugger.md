@@ -1,6 +1,6 @@
 ---
-title: Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Définissez des symboles (.pdb) et les fichiers sources dans le débogueur
+ms.custom: seodec18
 ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389174"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060444"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -77,11 +77,11 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
       
      Vous pouvez utiliser des serveurs de symboles sont les suivantes :  
       
-     **Serveurs de symboles publics Microsoft**: pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft. 
+     **Serveurs de symboles publics de Microsoft**: Pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft. 
       
-     **Sur un réseau interne ou sur votre ordinateur local de serveurs de symboles**: votre équipe ou votre entreprise peut créer des serveurs de symboles de vos propres produits et en tant que cache de symboles provenant de sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. 
+     **Serveurs de symboles sur un réseau interne ou sur votre ordinateur local** : Votre équipe ou société peut créer les serveurs de symboles de vos propres produits et comme cache des symboles à partir des sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. 
       
-     **Serveurs de symboles tiers**: les fournisseurs tiers de bibliothèques et des applications de Windows permettent d’accéder au serveur de symboles sur internet. 
+     **Serveurs de symboles tiers** : Les fournisseurs tiers des applications et des bibliothèques Windows peuvent donner accès au serveur de symboles sur Internet. 
     
      > [!WARNING]
      > Si vous utilisez un serveur de symboles autres que les serveurs de symboles publics Microsoft, assurez-vous que le serveur de symboles et son chemin d’accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous pouvez être exposées aux menaces de sécurité.  
@@ -156,7 +156,7 @@ Vous pouvez sélectionner les options de symbole supplémentaires dans **outils*
   Vous pouvez limiter les commandes qui *srcsrv.dll* peuvent exécuter à partir de l’application *.pdb* fichier en répertoriant les commandes autorisées dans un fichier nommé *srcsrv.ini*. Place le *srcsrv.ini* fichier dans le même dossier que *srcsrv.dll* et *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : Le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez mis *cmd.exe* dans votre *srcsrv.ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd.exe* qui rendrait dangereux.  
   

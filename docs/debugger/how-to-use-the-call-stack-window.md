@@ -1,6 +1,6 @@
 ---
-title: Afficher la pile des appels dans le débogueur Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Afficher la pile des appels dans le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/29/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -30,16 +30,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7804ed478fc218d1e218af6e26f5ee91071fb29c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388023"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062349"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre Pile des appels dans le débogueur
 
-La fenêtre Pile des appels** permet d'afficher les appels de fonctions ou de procédures actuellement dans la pile. La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
+La fenêtre **Pile des appels** permet d’afficher les appels de fonctions ou de procédures actuellement dans la pile. La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
 
 Lorsque [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une partie d’une pile des appels, le **pile des appels** fenêtre n’est peut-être pas en mesure d’afficher des informations correctes pour cette partie de la pile des appels, afficher à la place :
 
@@ -49,7 +49,7 @@ Lorsque [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une 
 > La fenêtre **Pile des appels** est similaire à la perspective Débogage dans certains IDE, comme Eclipse.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur Importation et exportation de paramètres **dans le menu Outils**.  Consultez [réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**.  Consultez [réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Afficher la pile des appels dans le débogueur
 
@@ -61,7 +61,7 @@ Une flèche jaune identifie le frame de pile où le pointeur d'exécution se tro
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Afficher le code non-utilisateur dans la fenêtre Pile des appels
 
--   Cliquez avec le bouton droit sur la fenêtre Pile des appels **, puis sélectionnez Afficher le code externe** dans le menu contextuel.
+-   Cliquez avec le bouton droit sur la fenêtre **Pile des appels**, puis sélectionnez **Afficher le code externe**.
 
 Code non-utilisateur est un code qui n’est pas affiché quand [uniquement mon Code](../debugger/just-my-code.md) est activé. Dans le code managé, les frames de code non-utilisateur sont masqués par défaut. La notation suivante apparaît à la place les frames de code non-utilisateur :
 
@@ -73,13 +73,13 @@ Code non-utilisateur est un code qui n’est pas affiché quand [uniquement mon 
 
     Ou, vous pouvez double-cliquer sur un frame dans la **pile des appels** fenêtre pour basculer vers ce frame.
 
-2.  Sélectionnez Basculer vers le frame **.
+2.  Sélectionnez **Basculer vers le frame**.
 
-     Une flèche verte avec extrémité recourbée apparaît à côté du frame de pile que vous avez sélectionné. Le pointeur d'exécution reste dans le frame d'origine, qui est toujours identifié par la flèche jaune. Si vous sélectionnez Pas à pas **ou Continuer** dans le menu Débogage **, l'exécution se poursuivra dans le frame d'origine, et non dans le frame sélectionné.
+     Une flèche verte avec extrémité recourbée apparaît à côté du frame de pile que vous avez sélectionné. Le pointeur d'exécution reste dans le frame d'origine, qui est toujours identifié par la flèche jaune. Si vous sélectionnez **Pas à pas** ou **Continuer** dans le menu **Déboguer**, l’exécution se poursuivra dans le frame d’origine, et non dans le frame sélectionné.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Afficher le code source pour une fonction sur la pile des appels
 
--   Dans la fenêtre Pile des appels **, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code source, puis sélectionnez Atteindre le code source**.
+-   Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code source, puis sélectionnez **Atteindre le code source**.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Exécuter jusqu'à une fonction spécifique à partir de la fenêtre Pile des appels
 
@@ -91,13 +91,13 @@ Code non-utilisateur est un code qui n’est pas affiché quand [uniquement mon 
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Afficher les appels vers ou à partir d’un autre thread
 
--   Cliquez avec le bouton droit dans la fenêtre Pile des appels **, puis sélectionnez Inclure les appels échangés avec d'autres threads**.
+-   Cliquez avec le bouton droit sur la fenêtre **Pile des appels**, puis sélectionnez **Inclure les appels échangés avec d’autres threads**.
 
 ## <a name="visually-trace-the-call-stack"></a>Afficher la trace de la pile des appels
 
 Dans Visual Studio Enterprise (uniquement), vous pouvez afficher des cartes de code pour la pile des appels pendant le débogage.
 
-- Dans la fenêtre Pile des appels **, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur carte de Code** (**Ctrl** + **MAJ** + **`**).
+- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur carte de Code** (**Ctrl** + **MAJ** + **`**).
 
     Pour plus d’informations, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -105,7 +105,7 @@ Dans Visual Studio Enterprise (uniquement), vous pouvez afficher des cartes de c
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine pour une fonction sur la pile des appels (C#, C++, Visual Basic, F#)
 
--   Dans la fenêtre Pile des appels **, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code machine, puis sélectionnez Atteindre le code machine**.
+-   Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code machine, puis sélectionnez **Atteindre le code machine**.
 
 ## <a name="change-the-optional-information-displayed"></a>Modifier l’affichage des informations facultatives
 
@@ -113,7 +113,7 @@ Dans Visual Studio Enterprise (uniquement), vous pouvez afficher des cartes de c
 
 ## <a name="bkmk_symbols"></a> Charger les symboles pour un module (C#, C++, Visual Basic, F#)
 
-Dans la fenêtre Pile des appels **, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET Framework ou système téléchargés à partir des serveurs de symboles publics de Microsoft ou des symboles situés dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
+Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET Framework ou système téléchargés à partir des serveurs de symboles publics de Microsoft ou des symboles situés dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
 
 Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
@@ -125,15 +125,15 @@ Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](..
 
 ### <a name="to-set-the-symbol-path"></a>Pour définir le chemin d’accès aux symboles
 
-1.  Dans la fenêtre Pile des appels **, choisissez Paramètres des symboles** dans le menu contextuel.
+1.  Dans la fenêtre **Pile des appels**, choisissez **Paramètres des symboles** dans le menu contextuel.
 
-     La boîte de dialogue Options **s'ouvre et la page Symboles** s'affiche.
+     La boîte de dialogue **Options** s’ouvre et la page **Symboles** s’affiche.
 
 2.  Sélectionnez **paramètres des symboles**.
 
-3.  Dans la boîte de dialogue Options **, cliquez sur l’icône de dossier.
+3.  Dans la boîte de dialogue **Options**, cliquez sur l’icône de dossier.
 
-     Un curseur apparaît dans la zone Emplacements du fichier de symboles (.pdb)**.
+     Un curseur apparaît dans la zone **Emplacements du fichier de symboles (.pdb)**.
 
 4.  Entrez un chemin d’accès du répertoire à l’emplacement de symboles sur l’ordinateur que vous déboguez. Pour le débogage local et distant, il s’agit d’un chemin d’accès sur votre ordinateur local.
 

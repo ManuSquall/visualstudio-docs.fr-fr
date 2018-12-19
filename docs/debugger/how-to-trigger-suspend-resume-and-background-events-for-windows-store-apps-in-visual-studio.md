@@ -1,6 +1,6 @@
 ---
-title: Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage des applications UWP | Microsoft Docs
-ms.custom: ''
+title: Déclencheur suspendre, reprendre et événements en arrière-plan pendant le débogage UWP | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280010"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054659"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage des applications UWP dans Visual Studio
 Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management** (PLM) contrôle l'état d'exécution de votre application, soit son démarrage, sa suspension, sa reprise et sa fin en réponse aux actions utilisateur et à l'état du périphérique. Lorsque vous effectuez un débogage, Windows désactive ces événements d'activation. Cette rubrique décrit comment déclencher ces événements dans le débogueur.  
   
  Cette rubrique décrit également comment déboguer les **tâches en arrière-plan**. Les tâches en arrière-plan vous permettent d'effectuer certaines opérations dans un processus en arrière-plan, même lorsque votre application n'est pas en cours d'exécution. Utilisez le débogueur pour placer votre application en mode débogage, puis, sans démarrer l'interface utilisateur, démarrez et déboguez la tâche en arrière-plan.  
   
- Pour plus d’informations sur les tâches de gestion de durée de vie des processus et d’arrière-plan, consultez [Launching, resuming et multitâche](/windows/uwp/launch-resume/index).  
+ Pour plus d'informations sur PLM (Process Lifetime Management) et les tâches en arrière-plan, consultez [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Déclencher les événements PLM (Process Lifetime Management)  
  Windows peut suspendre votre application lorsque l'utilisateur la quitte ou lorsque Windows entre dans un état de faible consommation d'énergie. Répondez à l'événement `Suspending` pour enregistrer des données appropriées relatives à l'application et aux utilisateurs dans un espace de stockage permanent et pour libérer les ressources. Lorsqu'une application quitte l'état **Suspendu** , elle entre dans l'état **Exécution** et reprend là où elle a été suspendue. Vous pouvez répondre à l'événement `Resuming` pour restaurer ou actualiser l'état de l'application et pour libérer les ressources.  
@@ -48,7 +48,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
      Notez que **Interrompre et quitter** ferme l'application et termine la session de débogage.  
   
 ##  <a name="BKMK_Trigger_background_tasks"></a> Déclencher les tâches en arrière-plan  
- Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d’informations, consultez [prenant en charge de votre application avec des tâches en arrière-plan](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
+ Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d'informations, consultez [Supporting your app with background tasks](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
  Déclenchez les événements qui démarrent les tâches en arrière-plan pour votre application à partir du débogueur.  
   
@@ -99,18 +99,18 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
  Une fois l'application chargée dans le débogueur, vous pouvez utiliser l'une des procédures décrites ci-dessus.  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostic des erreurs d'activation des tâches en arrière-plan  
- Les journaux de diagnostic dans l’Observateur d’événements Windows pour l’infrastructure d’arrière-plan contient des informations détaillées que vous pouvez utiliser pour diagnostiquer et résoudre les erreurs de tâche en arrière-plan. Pour consulter le journal :  
+ Les journaux de diagnostic dans l’observateur d’événements Windows pour infrastructure en arrière-plan contiennent des informations détaillées que vous pouvez utiliser pour diagnostiquer et résoudre les erreurs des tâches en arrière-plan. Pour consulter le journal :  
   
 1.  Ouvrez l'application Observateur d'événements.  
   
 2.  Dans le volet **Actions** , choisissez **Afficher** et assurez-vous que la case à cocher **Afficher les journaux d’analyse et de débogage** est activée.  
   
-3.  Sur le **Observateur d’événements (Local)** arborescence, développez les nœuds **journaux des Applications et Services** > **Microsoft** > **Windows**   >  **BackgroundTasksInfrastructure**.  
+3.  Dans la barre d'outils **Observateur d'événements (local)** , développez les nœuds **Journaux des applications et des services** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.  
   
 4.  Choisissez le journal **Diagnostic** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Test d’applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Cycle de vie des applications](/windows/uwp/launch-resume/app-lifecycle)   
- [Lancement de la reprise et multitâche](/windows/uwp/launch-resume/index)
+ [Cycle de vie de l’application](/windows/uwp/launch-resume/app-lifecycle)   
+ [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

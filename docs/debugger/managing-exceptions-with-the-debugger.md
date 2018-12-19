@@ -1,6 +1,6 @@
 ---
-title: Gérer les exceptions avec le débogueur Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Gérer les exceptions avec le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881688"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057916"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
@@ -47,7 +47,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
 
 Fournir des gestionnaires qui répondent aux exceptions plus importantes. Découvrez également comment configurer le débogueur pour toujours arrêter l’exécution pour certaines exceptions.
 
-Lorsqu’une exception se produit, le débogueur écrit un message d’exception à la **sortie** fenêtre. Cette action peut interrompre l’exécution dans l’exemple suivant cas quand :
+Quand une exception est levée, le débogueur écrit un message d’exception dans la fenêtre **Sortie**. Cette action peut interrompre l’exécution dans l’exemple suivant cas quand :
 
 - Une exception est levée qui n’est pas gérée.
 - Le débogueur est configuré pour arrêter l’exécution avant tout gestionnaire est appelé.
@@ -59,7 +59,7 @@ Lorsqu’une exception se produit, le débogueur écrit un message d’exception
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> Dans une application Visual Basic, le débogueur gère toutes les erreurs en tant qu’exceptions, même si vous utilisez sur les gestionnaires d’erreurs de style d’erreur.
+> Dans une application Visual Basic, le débogueur gère toutes les erreurs comme des exceptions, même si vous utilisez des gestionnaires d’erreurs de style « en cas d’erreur ».
 
 ## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indiquer le débogueur s’arrête lorsqu’une exception est levée.
 
@@ -74,7 +74,7 @@ Dans le **paramètres d’Exception** fenêtre (**Déboguer > Windows > Paramèt
 
 Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêtre, l’exécution du débogueur s’arrête chaque fois que l’exception est levée, peu importe si elle est gérée. L’exception est devenue une exception de première chance. Voici, par exemple, quelques scénarios :
 
-- Dans l’application de console c# suivante, la méthode Main lève une **AccessViolationException** à l’intérieur d’un `try/catch` bloc.
+- Dans l’application console C# suivante, la méthode Main lève une exception **AccessViolationException** à l’intérieur d’un bloc `try/catch`.
 
   ```csharp
   static void Main(string[] args)
@@ -101,7 +101,7 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
 
   mais il n’affiche pas le `here` ligne.
 
-- Une application de console c# fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes. Une méthode lève une exception et prend en charge, tandis que d’une deuxième méthode lève la même exception mais ne la gère.
+- Un C# application console fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes. Une méthode lève une exception et prend en charge, tandis que d’une deuxième méthode lève la même exception mais ne la gère.
 
   ```csharp
   public class Class1
@@ -125,7 +125,7 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
   }
   ```
 
-  Voici la méthode Main() de l’application de console :
+  Voici la méthode Main() de l’application console :
 
   ```csharp
   static void Main(string[] args)
@@ -181,9 +181,9 @@ Pour ajouter une exception :
 Pour ajouter une exception pour les Exceptions d’accès mémoire GPU, Exceptions du Runtime JavaScript ou des catégories d’Exceptions Win32, incluez le code d’erreur et la description.
 
 > [!TIP]
-> Vérifiez l'orthographe. Le **paramètres d’Exception** fenêtre ne vérifie pas l’existence d’une exception ajoutée. Par conséquent, si vous tapez **Sytem.UriTemplateMatchException**, vous obtenez une entrée pour cette exception (et non pour **System.UriTemplateMatchException**).
+> Vérifiez l'orthographe. La fenêtre **Paramètres d’exception** ne vérifie pas l’existence d’une exception ajoutée. Par conséquent, si vous tapez **Sytem.UriTemplateMatchException**, vous obtenez une entrée pour cette exception (mais pas pour **System.UriTemplateMatchException**).
 
-Paramètres d’exception sont conservés dans le fichier .suo de la solution, et s’appliquent à une solution spécifique. Vous ne pouvez pas réutiliser les paramètres d’exception spécifique sur les solutions. Maintenant seulement les exceptions ajoutées sont conservées ; exceptions supprimées ne sont pas. Vous pouvez ajouter une exception, fermez et rouvrez la solution, et l’exception sera toujours présente. Mais si vous supprimez une exception et que vous fermez/rouvrez la solution, l'exception ne s'affiche plus.
+Les paramètres d’exception sont conservés dans le fichier .suo de la solution ; ils s’appliquent donc à une solution spécifique. Vous ne pouvez pas réutiliser des paramètres d’exception spécifiques entre plusieurs solutions. Maintenant seulement les exceptions ajoutées sont conservées ; exceptions supprimées ne sont pas. Vous pouvez ajouter une exception, fermez et rouvrez la solution, et l’exception sera toujours présente. Mais si vous supprimez une exception et que vous fermez/rouvrez la solution, l'exception ne s'affiche plus.
 
 La fenêtre **Paramètres d'exception** prend en charge les types d'exceptions génériques en C#, mais pas en Visual Basic. Pour effectuer un arrêt sur des exceptions telles que `MyNamespace.GenericException<T>`, vous devez ajouter l'exception en tant que **MyNamespace.GenericException'1**. Autrement dit, si vous avez créé une exception semblable à ce code :
 
@@ -224,7 +224,7 @@ Pour ajouter des exceptions conditionnelles :
 ## <a name="see-also"></a>Voir aussi
 
 [Poursuivre l’exécution après une exception](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Guide pratique pour examiner un code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+[Guide pratique pour examiner du code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Utiliser des contrôles d’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Didacticiel : Apprenez à déboguer à l’aide de Visual Studio](../debugger/getting-started-with-the-debugger.md)
+[Utiliser des vérifications à l’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[Tutoriel : Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)

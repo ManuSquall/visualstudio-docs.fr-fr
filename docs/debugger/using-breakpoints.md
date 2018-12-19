@@ -1,6 +1,6 @@
 ---
-title: Utilisez des points d’arrêt dans le débogueur Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Utilisez des points d’arrêt dans le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389135"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068446"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
@@ -61,7 +61,7 @@ Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont aut
   
  ![L’exécution de point d’arrêt s’est arrêtée](../debugger/media/breakpointexecution.png "l’exécution du point d’arrêt")  
   
- Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
+ Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : Utilisez la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Le point d’arrêt est un bouton bascule. Vous pouvez cliquer dessus, appuyez sur **F9**, ou utilisez **déboguer** > **point d’arrêt** pour supprimer ou insérez-la à nouveau.
   
@@ -89,7 +89,7 @@ Le point d’arrêt de la pile des appels s’affiche dans le **des points d’a
 
 Le débogueur s’arrête au niveau de l’instruction.  
 
-Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md). 
+Pour plus d’informations sur la pile des appels, consultez [Comment : Utilisez la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md). 
 
 À visuellement trace des points d’arrêt pendant l’exécution de code, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -220,7 +220,7 @@ Points d’arrêt avec un ensemble de conditions apparaissent avec un **+** symb
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Expression conditionnelle
 
-Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir entre deux conditions : **vaut** ou **lorsque modifié**. Choisissez **vaut** pour arrêter l’exécution lorsque l’expression est satisfaite, ou **lorsque modifié** à arrêter quand la valeur de l’expression a changé.  
+Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir entre deux conditions : **A la valeur true** ou **lorsque modifié**. Choisissez **vaut** pour arrêter l’exécution lorsque l’expression est satisfaite, ou **lorsque modifié** à arrêter quand la valeur de l’expression a changé.  
   
  Dans l’exemple suivant, le point d’arrêt est atteint uniquement lorsque la valeur de `testInt` est **4**:  
   

@@ -1,5 +1,5 @@
 ---
-title: Compatibilité de base de données Visual Studio
+title: Compatibilité de base de données
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089193"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049558"
 ---
-# <a name="compatible-database-systems-for-visual-studio"></a>Systèmes de base de données compatible pour Visual Studio
+# <a name="compatible-database-systems-for-visual-studio"></a>Systèmes de base de données compatibles pour Visual Studio
 
 Pour développer une application connecté aux données dans Visual Studio, votre généralement installer le système de base de données sur votre ordinateur de développement local, puis déployer l’application et la base de données dans un environnement de production lorsqu’elles sont prêtes. Visual Studio installe SQL Server Express LocalDB sur votre ordinateur dans le cadre de la **stockage de données et de traitement** charge de travail. Cette instance de base de données locale est utile pour le développement d’applications connectées avec données rapidement et facilement.
 
@@ -58,4 +58,4 @@ Firebird est un système de base de données SQL open source. Vous pouvez le té
 ## <a name="see-also"></a>Voir aussi
 
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Comment déterminer la version et l’édition de SQL Server et ses composants](http://support.microsoft.com/kb/321185)
+- [Guide pratique pour déterminer la version et l’édition de SQL Server et de ses composants](http://support.microsoft.com/kb/321185)

@@ -1,5 +1,5 @@
 ---
-title: Créer une application de données simple à l’aide d’ADO.NET dans Visual Studio
+title: Créer une application de données simple à l’aide d’ADO.NET
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891009"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064870"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
-Lorsque vous créez une application qui manipule des données dans une base de données, vous effectuez des tâches de base telles que la définition des chaînes de connexion, insertion de données et l’exécution des procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.
+Quand vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application simple « formulaires Windows Forms de données » à l’aide de Visual C# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.
 
 Cet article montre un moyen simple d’obtenir des données en dehors d’une base de données de manière rapide. Si votre application a besoin de modifier les données de manières non triviale et mettre à jour de la base de données, vous devez envisager l’utilisation de Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.
 
 > [!IMPORTANT]
-> Pour simplifier le code, il n’inclut pas la gestion des exceptions de prêt pour la production.
+> Pour que le code reste simple, il n’inclut pas la gestion des exceptions prête à la production.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -37,7 +37,7 @@ Pour créer l'application, vous aurez besoin des éléments suivants :
 
 -   SQL Server Express LocalDB. Si vous n’avez pas SQL Server Express LocalDB, vous pouvez l’installer à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) rubrique avant de commencer cette procédure pas à pas.
+Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual C# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) rubrique avant de commencer cette procédure pas à pas.
 
 ## <a name="set-up-the-sample-database"></a>Installer l'exemple de base de données
 
@@ -61,15 +61,15 @@ Créer la base de données en suivant ces étapes :
 
 7. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.
 
-     Après une courte période, la requête est terminée en cours d’exécution et les objets de base de données sont créés. La base de données contient deux tables : Customer et Orders. Ces tables contiennent pas de données initialement, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.
+     Après une courte période, la requête est terminée en cours d’exécution et les objets de base de données sont créés. La base de données contient deux tables : Client et les commandes. Ces tables contiennent pas de données initialement, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Créer les formulaires et ajouter les contrôles
 
-1. Créer un projet pour une application Windows Forms, puis nommez-le **SimpleDataApp**.
+1. Créez un projet pour une application Windows Forms, puis nommez-le **SimpleDataApp**.
 
-    Visual Studio crée le projet et plusieurs fichiers, y compris un formulaire Windows vide nommé **Form1**.
+    Visual Studio crée le projet et plusieurs fichiers, dont un formulaire Windows vide nommé **Form1**.
 
-2. Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires et puis attribuez-leur les noms suivants :
+2. Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires, puis attribuez-leur les noms suivants :
 
    -   **Navigation**
 
@@ -82,11 +82,11 @@ Créer la base de données en suivant ces étapes :
    > [!NOTE]
    > La zone de groupe et les contrôles d'étiquette ajoutent de la clarté mais ne sont pas utilisés dans le code.
 
-   **Écran de navigation**
+   **Formulaire Navigation**
 
    ![Boîte de dialogue Navigation](../data-tools/media/simpleappnav.png)
 
-|Contrôles du formulaire Navigation|Properties|
+|Contrôles du formulaire Navigation|Propriétés|
 | - |----------------|
 |Bouton|Name = btnGoToAdd|
 |Bouton|Name = btnGoToFillOrCancel|
@@ -96,7 +96,7 @@ Créer la base de données en suivant ces étapes :
 
  ![Ajouter un nouveau client et passer une commande](../data-tools/media/simpleappnewcust.png)
 
-|Contrôles du formulaire NewCustomer|Properties|
+|Contrôles du formulaire NewCustomer|Propriétés|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -111,7 +111,7 @@ Créer la base de données en suivant ces étapes :
 
  ![remplir ou annuler les commandes](../data-tools/media/simpleappcancelfill.png)
 
-|Contrôles du formulaire FillOrCancel|Properties|
+|Contrôles du formulaire FillOrCancel|Propriétés|
 | - |----------------|
 |TextBox|Name = txtOrderID|
 |Bouton|Name = btnFindByOrderID|
@@ -126,7 +126,7 @@ Créer la base de données en suivant ces étapes :
 
  Vous pouvez trouver la chaîne de connexion en cliquant sur le **Sales** connexion de données dans **Explorateur de serveurs** et en choisissant **propriétés**. Recherchez le **ConnectionString** propriété, puis utilisez **Ctrl**+**A**, **Ctrl**+**C**  pour sélectionner et copier la chaîne dans le Presse-papiers.
 
-1.  Si vous utilisez c#, dans **l’Explorateur de solutions**, développez le **propriétés** nœud sous le projet et ouvrez le **Settings.settings** fichier.
+1.  Si vous utilisez C#, dans **l’Explorateur de solutions**, développez le **propriétés** nœud sous le projet et ouvrez le **Settings.settings** fichier.
     Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, cliquez sur **afficher tous les fichiers**, développez le **mon projet** nœud, puis ouvrez le **Settings.settings** fichier.
 
 2.  Dans le **nom** colonne, entrez `connString`.
@@ -146,11 +146,11 @@ Cette section présentent brièvement ce que fait chaque formulaire. Il fournit 
 
 ### <a name="navigation-form"></a>Formulaire Navigation
 
-Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le **ajouter un compte** bouton ouvre le formulaire NewCustomer. Le **remplissage ou annuler des commandes** bouton ouvre le formulaire FillOrCancel. Le **Exit** bouton ferme l’application.
+Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le bouton **Ajouter un compte** ouvre le formulaire NewCustomer. Le bouton **Remplir ou annuler les commandes** ouvre le formulaire FillOrCancel. Le bouton **Quitter** ferme l’application.
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage
 
-Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez **Program.cs**, puis modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`
+Si vous utilisez C#, dans l’**Explorateur de solutions**, ouvrez **Program.cs**, puis remplacez la ligne `Application.Run` par `Application.Run(new Navigation());`
 
 Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, ouvrez le **propriétés** fenêtre, sélectionnez le **Application** onglet, puis sélectionnez  **SimpleDataApp.Navigation** dans le **formulaire de démarrage** liste.
 
@@ -231,7 +231,7 @@ Pour terminer la logique du formulaire FillOrCancel, procédez comme suit.
 
 ## <a name="test-your-application"></a>Tester votre application
 
-Sélectionnez le **F5** clé pour générer et tester votre application après avoir codé chaque gestionnaire d’événements Click, puis après avoir terminé le codage.
+Sélectionnez la touche **F5** pour générer et tester votre application après avoir codé chaque gestionnaire d’événements Click et avoir terminé le codage.
 
 ## <a name="see-also"></a>Voir aussi
 

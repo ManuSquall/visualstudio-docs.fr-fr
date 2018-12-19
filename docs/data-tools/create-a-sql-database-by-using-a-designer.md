@@ -1,5 +1,6 @@
 ---
 title: Créez un fichier de base de données et utiliser le Concepteur de tables
+description: Didacticiel décrit comment ajouter des tables et les clés étrangères à une base de données à l’aide du Concepteur de tables dans Visual Studio. Il montre également comment ajouter des données via l’interface graphique.
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c071daeaa1ffe10aa9de995b375e33b76b358da7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305323"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159865"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 
@@ -29,9 +30,9 @@ Vous pouvez utiliser Visual Studio pour créer et mettre à jour un fichier de b
 
 Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facultatif **stockage de données et de traitement** charge de travail installée dans Visual Studio. Pour l’installer, ouvrez **le programme d’installation de Visual Studio** et choisissez le **charges de travail** onglet. Sous **Web & Cloud**, choisissez **stockage de données et de traitement**. Choisissez le **modifier** pour ajouter la charge de travail pour Visual Studio.
 
-## <a name="create-a-project-and-a-local-database-file"></a>Créer un projet et un fichier de base de données local.
+## <a name="create-a-project-and-a-local-database-file"></a>Créer un projet et un fichier de base de données local
 
-1. Créez un projet Windows Forms nommé ProcédureExempleBaseDonnées **.
+1. Créez un projet Windows Forms nommé **SampleDatabaseWalkthrough**.
 
 2. Dans la barre de menus, sélectionnez **projet** > **ajouter un nouvel élément**.
 
@@ -41,13 +42,13 @@ Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facul
 
 4. Nom de la base de données **SampleDatabase**, puis sélectionnez le **ajouter** bouton.
 
-### <a name="to-add-a-data-source"></a>Pour ajouter une source de données
+### <a name="add-a-data-source"></a>Ajouter une source de données
 
 1. Si le **des Sources de données** fenêtre n’est pas ouverte, ouvrez-le en appuyant sur **MAJ**+**Alt**+**D** ou en sélectionnant **Vue** > **Windows autres** > **des Sources de données** sur la barre de menus.
 
 1. Dans le **des Sources de données** fenêtre, sélectionnez le **ajouter une nouvelle Source de données** lien.
 
-   L'Assistant Configuration de source de données** s'ouvre.
+   L’Assistant **Configuration de source de données** s’ouvre.
 
 1. Sur le **choisir un Type de Source de données** page, choisissez **base de données** , puis **suivant**.
 
@@ -59,25 +60,25 @@ Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facul
 
 1. Un seul le **choisir vos objets de base de données** page, vous verrez un message indiquant que la base de données ne contient pas tous les objets. Choisissez **Terminer**.
 
-### <a name="to-view-properties-of-the-data-connection"></a>Pour afficher les propriétés de la connexion de données
+### <a name="view-properties-of-the-data-connection"></a>Afficher les propriétés de la connexion de données
 
 Vous pouvez afficher la chaîne de connexion pour le *SampleDatabase.mdf* fichier en ouvrant la fenêtre Propriétés de la connexion de données :
 
--   Dans Visual Studio, sélectionnez **vue** > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud, en ouvrant le menu contextuel pour *SampleDatabase.mdf*, puis en sélectionnant **propriétés**.
+- Dans Visual Studio, sélectionnez **vue** > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud, en ouvrant le menu contextuel pour *SampleDatabase.mdf*, puis en sélectionnant **propriétés**.
 
--   Vous pouvez également sélectionner **vue** > **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud. Ouvrez le menu contextuel pour *SampleDatabase.mdf*, puis sélectionnez **propriétés**.
+- Vous pouvez également sélectionner **vue** > **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud. Ouvrez le menu contextuel pour *SampleDatabase.mdf*, puis sélectionnez **propriétés**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Créer des tables et des clés à l’aide du Concepteur de tables
 
 Dans cette section, vous allez créer deux tables, une clé primaire dans chaque table et quelques lignes d’exemples de données. Vous allez également créer une clé étrangère pour spécifier comment les enregistrements dans une table correspondent aux enregistrements dans l’autre table.
 
-### <a name="to-create-the-customers-table"></a>Pour créer la table Customers
+### <a name="create-the-customers-table"></a>Créer la table Customers
 
 1. Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le **des connexions de données** nœud, puis développez le **SampleDatabase.mdf**nœud.
 
 2. Ouvrez le menu contextuel pour **Tables**, puis sélectionnez **ajouter une nouvelle Table**.
 
-     Le Concepteur de tables** s'ouvre et affiche une grille avec une ligne par défaut, qui représente une seule colonne de la table que vous créez. En ajoutant des lignes à la grille, vous définissez des colonnes supplémentaires dans la table.
+     Le **Concepteur de tables** s’ouvre et affiche une grille avec une ligne par défaut, qui représente une seule colonne de la table que vous créez. En ajoutant des lignes à la grille, vous définissez des colonnes supplémentaires dans la table.
 
 3. Dans la grille, ajoutez une ligne pour chaque entrée suivante :
 
@@ -108,7 +109,7 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 
     Vos modifications sont enregistrées dans le fichier de base de données local.
 
-### <a name="to-create-the-orders-table"></a>Pour créer la table Orders
+### <a name="create-the-orders-table"></a>Créer la table Orders
 
 1. Ajoutez une table, puis ajoutez une ligne pour chaque entrée dans le tableau suivant :
 
@@ -133,13 +134,13 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 
     Vos modifications sont enregistrées dans le fichier de base de données local.
 
-### <a name="to-create-a-foreign-key"></a>Pour créer une clé étrangère
+### <a name="create-a-foreign-key"></a>Créer une clé étrangère
 
 1. Dans le volet contextuel sur le côté droit de la grille, ouvrez le menu contextuel pour **clés étrangères**, puis sélectionnez **ajouter une nouvelle clé étrangère**, comme le montre l’illustration suivante.
 
      ![Ajout d'une clé étrangère dans le concepteur de tables](../data-tools/media/foreignkey.png)
 
-2. Dans la zone de texte qui apparaît, remplacez ToTable **par Clients**.
+2. Dans la zone de texte qui apparaît, remplacez **ToTable** par **Customers**.
 
 3. Dans le volet T-SQL, mettez à jour la dernière ligne pour correspondre à l’exemple suivant :
 
@@ -170,7 +171,7 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 6. Ajouter des données pour certaines commandes.
 
     > [!IMPORTANT]
-    > Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne CustomerID de la table Customers.
+    > Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne **CustomerID** de la table Customers.
 
 7. Dans la barre de menus, sélectionnez **fichier** > **Enregistrer tout**.
 

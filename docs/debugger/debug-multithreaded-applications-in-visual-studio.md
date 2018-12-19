@@ -1,6 +1,6 @@
 ---
-title: Déboguer les Applications multithread dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Déboguer les applications multithread | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/06/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 599880f3c8e04b742ab943304ac910f8c0bcbe78
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349528"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059676"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 Un thread est une séquence d’instructions à laquelle le système d’exploitation accorde le temps processeur. Chaque processus exécuté dans le système d'exploitation se compose d'au moins un thread. Les processus qui comportent plusieurs threads sont appelés multithread.  
@@ -41,11 +41,11 @@ Le traitement multithread peut introduire de nouveaux types de bogues potentiels
 
 Visual Studio fournit différents outils pour une utilisation dans les applications multithread de débogage.
 
-- Pour les threads, les principaux outils de débogage de threads sont les **Threads** fenêtre, les marqueurs de thread dans les fenêtres source le **piles parallèles** fenêtre, le **espion parallèle** fenêtre et le **emplacement de débogage** barre d’outils. Pour en savoir plus sur la **Threads** fenêtre et **emplacement de débogage** barre d’outils, consultez [procédure pas à pas : déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md). Pour savoir comment utiliser le **piles parallèles** et **espion parallèle** windows, consultez [commencer le débogage d’une application multithread](../debugger/get-started-debugging-multithreaded-apps.md). Les deux rubriques montrent comment utiliser des marqueurs de thread.
+- Pour les threads, les principaux outils de débogage de threads sont les **Threads** fenêtre, les marqueurs de thread dans les fenêtres source le **piles parallèles** fenêtre, le **espion parallèle** fenêtre et le **emplacement de débogage** barre d’outils. Pour en savoir plus sur la **Threads** fenêtre et **emplacement de débogage** barre d’outils, consultez [procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md). Pour savoir comment utiliser le **piles parallèles** et **espion parallèle** windows, consultez [commencer le débogage d’une application multithread](../debugger/get-started-debugging-multithreaded-apps.md). Les deux rubriques montrent comment utiliser des marqueurs de thread.
   
-- Pour le code qui utilise le [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime/), les principaux outils de débogage sont le **piles parallèles** fenêtre, le **Espion parallèle** fenêtre et le **tâches** fenêtre, qui prend également en charge JavaScript. Pour commencer, consultez [procédure pas à pas : débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md) et [procédure pas à pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
+- Pour le code qui utilise le [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime/), les principaux outils de débogage sont le **piles parallèles** fenêtre, le **Espion parallèle** fenêtre et le **tâches** fenêtre, qui prend également en charge JavaScript. Pour commencer, consultez [procédure pas à pas : Débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md) et [procédure pas à pas : Débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
-- Pour déboguer des threads sur le GPU, le principal outil est la **Threads GPU** fenêtre. Consultez [Comment : utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
+- Pour déboguer des threads sur le GPU, le principal outil est la **Threads GPU** fenêtre. Consultez [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
 - Pour les processus, les principaux outils sont le **attacher au processus** boîte de dialogue, le **processus** fenêtre et le **emplacement de débogage** barre d’outils.  
   
@@ -64,35 +64,35 @@ Le débogage d'une application multithread comportant une interface utilisateur 
  [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)  
  Explique comment déboguer plusieurs processus.
 
- [Procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
+ [Procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
  Procédure pas à pas qui montre comment utiliser le **Threads** fenêtre et la **emplacement de débogage** barre d’outils. 
 
- [Procédure pas à pas : déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Procédure pas à pas qui montre comment utiliser le **piles parallèles** et **tâches** windows.  
   
  [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  Plusieurs façons pour basculer le contexte de débogage vers un autre thread.  
   
- [Guide pratique pour ajouter et supprimer des threads](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Guide pratique pour ajouter et supprimer les indicateurs des threads](../debugger/how-to-flag-and-unflag-threads.md)  
  Ajoutez des marques ou des indicateurs aux threads auxquels vous souhaitez prêter une attention particulière lors du débogage.    
   
- [Comment : déboguer sur un cluster hautement performant](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [Guide pratique pour déboguer sur un cluster à hautes performances](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniques permettant de déboguer une application exécutée sur un cluster hautement performant.  
 
  [Conseils pour le débogage de threads en code natif](../debugger/tips-for-debugging-threads-in-native-code.md)  
  Techniques simples pouvant être utiles dans le cadre du débogage de threads natifs. 
 
  [Guide pratique pour définir un nom de thread dans du code natif](../debugger/how-to-set-a-thread-name-in-native-code.md)  
- Attribuez au thread un nom qui s’affiche dans le **Threads** fenêtre.  
+ Attribuez au thread un nom qui s’affiche dans la fenêtre **Threads**.  
   
  [Guide pratique pour définir un nom de thread dans du code managé](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
- Attribuez au thread un nom qui s’affiche dans le **Threads** fenêtre. 
+ Attribuez au thread un nom qui s’affiche dans la fenêtre **Threads**. 
   
 ## <a name="see-also"></a>Voir aussi  
 
 [Utiliser des points d’arrêt](../debugger/using-breakpoints.md)  
 [Thread](/dotnet/standard/threading/index)  
 [Multithreading dans les composants](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
-[Prise en charge le multithreading pour le code plus ancien (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- [Déboguer les threads et processus](../debugger/debug-threads-and-processes.md)   
+[Prise en charge du multithreading pour le code plus ancien (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+ [Déboguer les threads et les processus](../debugger/debug-threads-and-processes.md)   
  [Débogage distant](../debugger/remote-debugging.md)

@@ -1,6 +1,8 @@
 ---
-title: Débogage à distance dans Visual Studio | Microsoft Docs
-ms.custom: remotedebugging
+title: Débogage à distance | Microsoft Docs
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872432"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065504"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -44,7 +46,7 @@ Pour obtenir des instructions détaillées sur le débogage distant, consultez l
 
 Si vous avez simplement à télécharger et installer le débogueur distant et que vous n’avez pas besoin des instructions supplémentaires pour votre scénario, suivez les étapes décrites dans cet article.
 
-## <a name="download-and-install-the-remote-tools"></a>Téléchargez et installez les outils à distance
+## <a name="download-and-install-the-remote-tools"></a>Télécharger et installer les outils de contrôle à distance
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -103,7 +105,7 @@ Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez 
 
 4. Ajoutez le nom du compte d’utilisateur et le mot de passe.
 
-    Vous devrez peut-être ajouter le **une session en tant que service** utilisateur directement à ce compte (trouver **stratégie de sécurité locale** (secpol.msc) dans le **Démarrer** page ou la fenêtre (ou type  **secpol.msc** à une invite de commandes). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**). Cliquez sur **Suivant**.
+    Vous devrez peut-être ajouter le **une session en tant que service** utilisateur directement à ce compte (trouver **stratégie de sécurité locale** (secpol.msc) dans le **Démarrer** page ou la fenêtre (ou type  **secpol.msc** à une invite de commandes). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajoutez le compte d’utilisateur à la fenêtre **Propriétés** et cliquez sur **OK**). Cliquez sur **Suivant**.
 
 5. Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.
 
@@ -111,9 +113,9 @@ Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez 
 
 7. Cliquez sur **Terminer**.
 
-   À ce stade, le débogueur distant s’exécute en tant que service. Vous pouvez le vérifier en accédant à **le panneau de configuration > Services** et en recherchant **débogueur distant Visual Studio 2015**.
+   À ce stade, le débogueur distant s’exécute en tant que service. Vous pouvez le vérifier en accédant à **Panneau de configuration > Services** et en recherchant **Débogueur distant Visual Studio 2015**.
 
-   Vous pouvez arrêter et démarrer le service débogueur distant à partir de **le panneau de configuration > Services**.
+   Vous pouvez arrêter et démarrer le service du débogueur distant à partir de **Panneau de configuration > Services**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants
 

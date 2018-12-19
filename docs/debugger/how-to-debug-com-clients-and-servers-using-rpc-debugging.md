@@ -1,6 +1,6 @@
 ---
-title: 'Comment : déboguer des Clients COM et serveurs à l’aide du débogage RPC | Documents Microsoft'
-ms.custom: ''
+title: Déboguer des clients COM et des serveurs à l’aide du débogage RPC | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,25 +27,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473736"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049018"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Comment : déboguer des clients COM et des serveurs à l'aide du débogage RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procédure : Déboguer des clients et des serveurs COM à l’aide du débogage RPC
 Vous pouvez utiliser le débogage RPC pour déboguer des applications client/serveur COM. Vous devez activer le débogage RPC pour l'utiliser. Lorsque le débogage RPC est activé, si vous effectuez un pas à pas détaillé dans l'appel serveur à partir du client, le débogueur est attaché au serveur, ce qui permet de déboguer son code. Une fois que le débogueur est attaché, vous pouvez utiliser toutes ses fonctionnalités avec les processus client et serveur.  
   
 ### <a name="to-enable-rpc-debugging"></a>Pour activer le débogage RPC  
   
 1.  Dans le menu **Outils** , cliquez sur **Options**.  
   
-2.  Dans le **Options** boîte de dialogue, cliquez sur le **débogage** dossier.  
+2.  Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.  
   
-3.  Cliquez sur le **natif** page.  
+3.  Cliquez sur la page **Natif**.  
   
-4.  Sélectionnez le **débogage RPC** case à cocher.  
+4.  Cochez la case **Débogage RPC**.  
   
     > [!NOTE]
     >  Pour déboguer des appels RPC, vous devez posséder les privilèges Administrateur ou Utilisateur avec pouvoirs.  

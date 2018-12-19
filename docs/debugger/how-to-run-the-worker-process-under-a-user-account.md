@@ -1,6 +1,6 @@
 ---
-title: 'Comment : exécuter le processus de travail sous un compte d’utilisateur | Microsoft Docs'
-ms.custom: ''
+title: Exécuter un processus de travail sous un compte d’utilisateur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939110"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067814"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procédure : exécuter le processus Worker sous un compte d’utilisateur
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.  
 
  > [!IMPORTANT]
@@ -40,7 +40,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 1. Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.  
   
-2. Rechercher la &lt;processModel&gt; section et modifier les attributs d’utilisateur et mot de passe pour le nom et le mot de passe du compte d’utilisateur que vous souhaitez aspnet_wp.exe doit s’exécuter sous.  
+2. Recherchez la section &lt;processModel&gt; et remplacez les attributs user et password par le nom et le mot de passe du compte d’utilisateur sous lequel aspnet_wp.exe doit s’exécuter.  
   
 3. Enregistrez le fichier machine.config.  
   
@@ -78,7 +78,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
     La boîte de dialogue **Sélectionner un utilisateur, des ordinateurs ou des groupes** s'affiche.  
   
-10. Tapez le nom d'utilisateur dans la zone **Entrez le nom de l'objet à sélectionner** , puis cliquez sur **OK**. Le nom d'utilisateur doit suivre le format NomDomaine\NomUtilisateur.  
+10. Tapez le nom d'utilisateur dans la zone **Entrez le nom de l'objet à sélectionner** , puis cliquez sur **OK**. Le nom d’utilisateur doit respecter le format : Nomdomaine\nomutilisateur.  
   
 11. Dans la boîte de dialogue **Entrée d'autorisation pour les fichiers ASP.Net temporaires** , accordez à l'utilisateur le **Contrôle total**, puis cliquez sur **OK** pour fermer la boîte de dialogue **Entrées des fichiers ASP.Net temporaires** .  
   
@@ -87,6 +87,6 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
 13. Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés des fichiers ASP.Net temporaires** .  
   
 ## <a name="see-also"></a>Voir aussi  
-[Déboguer des Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Déboguer des applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [Débogage ASP.NET : configuration système requise](../debugger/aspnet-debugging-system-requirements.md)  
   
