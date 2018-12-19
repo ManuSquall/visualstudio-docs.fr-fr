@@ -1,6 +1,6 @@
 ---
-title: 'Déboguer les Applications Web : Dépannage | Documents Microsoft'
-ms.custom: ''
+title: Déboguer les applications web - résolution des problèmes | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470853"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063993"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Débogage d'applications Web : dépannage
+# <a name="debugging-web-applications-troubleshooting"></a>Débogage d’applications web : Résolution des problèmes
 Cette section contient des procédures courantes qui peuvent servir à résoudre des erreurs.  
   
 ## <a name="in-this-section"></a>Dans cette section  
@@ -38,4 +38,4 @@ Cette section contient des procédures courantes qui peuvent servir à résoudre
  Explique la résolution de problèmes et d’erreurs.  
   
  [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)  
- Vue d'ensemble du débogage d'applications Web telles que les projets [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], les services Web XML et les projets ATL Server.
+ Vue d’ensemble du débogage d’applications Web telles que les projets [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], les services web XML et les projets ATL Server.

@@ -1,6 +1,6 @@
 ---
-title: 'Débogage d’Applications Web : Erreurs et dépannage | Documents Microsoft'
-ms.custom: ''
+title: 'Débogage des applications web : erreurs et dépannage'
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -28,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d9ba4a2e37124f8d8b3641a129d09da1728118
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471516"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053649"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.  
   
 -   [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)  
@@ -52,9 +52,9 @@ Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'ap
   
 -   [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Erreur : Expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [Erreur : expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Erreur : Impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+-   [Erreur : impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

@@ -1,6 +1,6 @@
 ---
-title: Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Résoudre les problèmes de points d’arrêt dans le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/23/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b285fd77c7e1ee25e6c82fc3f8c0ce48b4429e8b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155397"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052849"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio
 
@@ -24,7 +24,7 @@ Lors du débogage, un point d’arrêt a deux états visuels possible : un cerc
 
 Les deux sections suivantes décrivent les avertissements importants et comment les résoudre. 
 
-### <a name="no-symbols-have-been-loaded-for-this-document"></a>« Aucun symbole n’ont été chargés pour ce document » 
+### <a name="no-symbols-have-been-loaded-for-this-document"></a>« Aucun symbole n’a été chargé pour ce document » 
 
 Accédez à la **Modules** fenêtre (**déboguer** > **Windows** > **Modules**) et vérifiez si votre module chargé.  
 * Si votre module est chargé, vérifiez le **état du symbole** colonne pour voir si les symboles ont été chargés. 
@@ -36,7 +36,7 @@ Accédez à la **Modules** fenêtre (**déboguer** > **Windows** > **Modules**) 
 
 * Si votre module n’est pas chargé, vérifiez la commande suivante pour rechercher la cause : 
   * Vérifiez que vous déboguez le processus correct. 
-  * Vérifiez que vous déboguez le bon type de code. Vous pouvez trouver le type de code, le débogueur est configuré pour déboguer dans le **processus** fenêtre (**déboguer** > **Windows**  >  **Processus**). Par exemple, si vous essayez de déboguer du code c#, vérifiez que votre débogueur est configuré pour le type approprié de .NET Framework (par exemple, géré (v4\*) et géré (v2\*/v3\*) et géré (CoreCLR)). 
+  * Vérifiez que vous déboguez le bon type de code. Vous pouvez trouver le type de code, le débogueur est configuré pour déboguer dans le **processus** fenêtre (**déboguer** > **Windows**  >  **Processus**). Par exemple, si vous essayez de déboguer C# de code, vérifiez que votre débogueur est configuré pour le type de .NET Framework approprié (par exemple, géré (v4\*) et géré (v2\*/v3\*) et géré (CoreCLR)) . 
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… le code source en cours est différent de la version intégrée... » 
 
@@ -54,7 +54,7 @@ Cette section fournit des informations pour résoudre les problèmes lorsque le 
 
 Voici quelques points à vérifier : 
 1. Si votre code s’exécute dans plusieurs processus ou de plusieurs ordinateurs, assurez-vous que vous déboguez le processus correct ou l’ordinateur.  
-2. Vérifiez que votre code s’exécute. Pour vérifier que votre code s’exécute, ajoutez un appel à `System.Diagnostics.Debugger.Break` (C# /Visual Basic) ou `__debugbreak` (C++) à la ligne de code où vous essayez de définir le point d’arrêt et puis régénérez votre projet. 
+2. Vérifiez que votre code s’exécute. Pour vérifier que votre code s’exécute, ajoutez un appel à `System.Diagnostics.Debugger.Break` (C#/VB) ou `__debugbreak` (C++) à la ligne de code où vous essayez de définir le point d’arrêt et puis régénérez votre projet. 
 3. Si vous déboguez du code optimisé, assurez-vous que la fonction où votre point d’arrêt est défini n’est pas en cours d’inline dans une autre fonction. Le `Debugger.Break` test décrit dans la vérification précédente peut travailler pour tester également ce problème. 
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>J’ai supprimé un point d’arrêt, mais je continue de l’atteindre quand je relance le débogage 

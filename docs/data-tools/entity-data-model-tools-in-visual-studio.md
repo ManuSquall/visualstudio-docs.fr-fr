@@ -1,5 +1,5 @@
 ---
-title: Outils Entity Framework dans Visual Studio
+title: Outils Entity Framework
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819093"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066795"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Outils Entity Framework dans Visual Studio
+
 Entity Framework est une technologie de mapping objet-relationnel qui permet aux développeurs .NET de travailler avec des données relationnelles à l’aide des objets spécifiques au domaine. Du coup, ils n’ont plus à écrire une grande partie du code d’accès aux données qu’ils doivent généralement écrire. Entity Framework est le recommandé mappage objet-relationnel (ORM) technologie pour les nouvelles applications .NET de modélisation.
 
 Outils Entity Framework sont conçues pour vous aider à créer des applications Entity Framework (EF). La documentation complète pour Entity Framework est ici : [EF Core et EF 6](/ef/).
 
 Avec les outils Entity Framework, vous pouvez créer un *modèle conceptuel* depuis une base de données puis graphiquement visualiser et modifier votre modèle conceptuel. Vous pouvez également commencer par créer graphiquement un modèle conceptuel, puis générer une base de données prenant en charge ce modèle. Dans les deux cas, vous pouvez mettre à jour automatiquement votre modèle lorsque la base de données sous-jacente change et générer automatiquement le code de couche objet pour votre application. La génération de base de données et la génération de code de couche objet sont personnalisables.
 
-Les outils Entity Framework sont installés dans le cadre de la **stockage de données et de traitement** charge de travail dans Visual Studio Installer. Vous pouvez également les installer comme composant individuels sous le **SDK, bibliothèques et infrastructures** catégorie.
+Les outils Entity Framework sont installés dans le cadre de la **stockage de données et de traitement** charge de travail dans Visual Studio Installer. Vous pouvez également installer en tant qu’un composant individuel sous la **SDK, bibliothèques et infrastructures** catégorie.
 
 Voici les outils spécifiques qui composent les outils Entity Framework dans Visual Studio :
 
@@ -37,7 +38,7 @@ Voici les outils spécifiques qui composent les outils Entity Framework dans Vis
 - Vous pouvez utiliser la **Assistant modèle de mise à jour** pour mettre à jour votre modèle conceptuel, le modèle de stockage et le mappage lorsque les modifications ont été apportées à la base de données sous-jacente.
 
   > [!NOTE]
-  >  À compter de Visual Studio 2010, les outils Entity Framework ne gèrent pas [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > À compter de Visual Studio 2010, les outils Entity Framework ne gèrent pas [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Les outils génèrent ou modifient un *.edmx* fichier. Cela *.edmx* fichier contient des informations qui décrivent le modèle conceptuel, le modèle de stockage et les mappages entre eux. Pour plus d’informations, consultez [EDMX](https://docs.microsoft.com/ef/ef6/).
 

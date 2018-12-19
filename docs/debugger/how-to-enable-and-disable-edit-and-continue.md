@@ -1,6 +1,6 @@
 ---
-title: 'Comment : activer et désactiver Modifier & Continuer (C#, VB, C++) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Activer et désactiver Modifier & Continuer | Microsoft Docs'
+ms.custom: seodec18
 ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,16 +27,16 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382742"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051385"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Comment : activer et désactiver Modifier & Continuer (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procédure : Activer et désactiver Modifier & Continuer (C#, VB, C++)
 
-Vous pouvez activer ou désactiver **Modifier & Continuer** dans Visual Studio **Options** boîte de dialogue au moment du design. **Modifier & Continuer** génère fonctionne uniquement en mode de débogage. Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md). 
+Vous pouvez activer ou désactiver **Modifier & Continuer** dans Visual Studio **Options** boîte de dialogue au moment du design. **Modifier et Continuer** ne fonctionne que dans les versions Debug. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md). 
   
 Pour C++ natif, **Modifier & Continuer** nécessite que vous utilisiez le `/INCREMENTAL` option. Pour plus d’informations sur les fonctionnalités requises en C++, consultez ce [billet de blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) et [Modifier & Continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
   

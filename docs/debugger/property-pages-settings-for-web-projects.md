@@ -1,6 +1,6 @@
 ---
-title: Paramètres pour les projets Web de Pages de propriétés | Microsoft Docs
-ms.custom: ''
+title: Paramètres de propriété pour les projets Web | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,35 +22,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e859f94f9ed86b7e94c6a30153cece18663f337f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fbe5ab8d863cbf77647bde8b8d7da69d9c4823e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868493"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064217"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Paramètres des pages de propriétés pour les projets Web
-Vous pouvez modifier les paramètres de propriété pour une configuration de débogage de site web dans le **Pages de propriétés** boîte de dialogue, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où trouver les paramètres du débogueur dans le **Pages de propriétés** boîte de dialogue.  
+Vous pouvez modifier les paramètres de propriété de configuration Debug d’un site web dans la boîte de dialogue **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>Dossier Propriétés de configuration (catégorie Options de démarrage)  
   
 | **Paramètre** | **Description** |
 | - | - |
 | **Action de démarrage** | Titre qui regroupe les options liées au démarrage d'une application. |
-| **Utilisez la Page actuelle** | Spécifie la page active comme point de départ du débogage. |
+| **Utiliser la page active** | Spécifie la page active comme point de départ du débogage. |
 | **Page spécifique :** | Spécifie la page web à partir de laquelle vous voulez débuter le débogage. |
 | **Démarrer le programme externe :** | Spécifie la commande de lancement du programme que vous voulez déboguer. |
 | **Arguments de ligne de commande :** | Spécifie les arguments de la commande spécifiée ci-dessus. |
 | **Répertoire de travail :** | Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée : \bin\debug par défaut. |
 | **URL de démarrage** | Spécifie l'emplacement de l'application Web que vous voulez déboguer. |
-| **Ne pas ouvrir de page. Attendre une demande à partir d’une application externe** | Indique d'attendre une demande émanant d'une application externe. Cette option ne lance pas Internet Explorer ou une autre application. Elle prépare simplement au débogage en cas d'appel par une application. |
+| **Ne pas ouvrir de page. Attendre une demande émanant d’une application externe** | Indique d'attendre une demande émanant d'une application externe. Cette option ne lance pas Internet Explorer ou une autre application. Elle prépare simplement au débogage en cas d'appel par une application. |
 | **Serveur** | Titre qui regroupe des options liées au serveur à utiliser. |
 | **Utiliser le serveur Web par défaut** | Indique d’utiliser le serveur web par défaut. |
 | **Utiliser le serveur personnalisé** | Vous permet d'entrer l'URL de base à utiliser comme serveur. |
 | **Débogueurs** | Titre qui regroupe des options liées au type de débogage à réaliser. |
-| **Débogage ASP.NET** | Active le débogage des pages ASP écrites pour la plateforme de développement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous devez spécifier une URL dans **démarrer l’URL**. |
+| **Débogage ASP.NET** | Active le débogage des pages ASP écrites pour la plateforme de développement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous devez spécifier une URL dans **URL de démarrage**. |
 | **Débogage du code natif** | Vous permet de déboguer les appels au code Win32 natif (non managé) à partir de votre application managée. |
-| **Le débogage SQL Server** | Autorise le débogage d'objets de base de données SQL Server. |
+| **Débogage SQL Server** | Autorise le débogage d'objets de base de données SQL Server. |
 | **Débogage Silverlight** | Autorise le débogage de composants Silverlight. |
   
 ## <a name="see-also"></a>Voir aussi  
