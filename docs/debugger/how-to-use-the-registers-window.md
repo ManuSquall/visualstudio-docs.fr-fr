@@ -1,6 +1,6 @@
 ---
-title: Vue inscrire des valeurs dans le débogueur Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Vue inscrire des valeurs dans le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389323"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058439"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Vue inscrire des valeurs dans la fenêtre Registres (C#, C++, Visual Basic, F#)
 
@@ -41,9 +41,9 @@ Le **inscrit** fenêtre affiche le contenu du Registre lors du débogage de Visu
 
 Pendant le débogage, inscrire la modification des valeurs pendant l’exécution de code dans votre application. Les valeurs qui ont été modifiés récemment s’affichent en rouge dans le **inscrit** fenêtre.
 
-Pour réduire l’encombrement, la fenêtre **Registres** classe les registres en groupes, lesquels varient en fonction de la plateforme et du type de processeur. Vous pouvez afficher ou masquer des groupes de registres. Pour plus d’informations, consultez [Comment : afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).
+Pour réduire l’encombrement, la fenêtre **Registres** classe les registres en groupes, lesquels varient en fonction de la plateforme et du type de processeur. Vous pouvez afficher ou masquer des groupes de registres. Pour plus d'informations, voir [Procédure : Afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).
 
-Il est possible de modifier les valeurs des registres. Pour plus d’informations, consultez [Comment : modifier une valeur de Registre](../debugger/how-to-edit-a-register-value.md).
+Il est possible de modifier les valeurs des registres. Pour plus d'informations, voir [Procédure : Modifier une valeur de registre](../debugger/how-to-edit-a-register-value.md).
 
 **Pour ouvrir la fenêtre Registres**
 
@@ -56,5 +56,5 @@ Il est possible de modifier les valeurs des registres. Pour plus d’information
 
 ### <a name="see-also"></a>Voir aussi
 
-- [Concepts de base du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md)
+- [Éléments fondamentaux du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

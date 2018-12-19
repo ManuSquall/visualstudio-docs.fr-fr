@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: John-Hart
-ms.author: johnhart
+author: TerryGLee
+ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MT
+ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305674"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673405"
 ---
 # <a name="actions-pane-overview"></a>Vue d’ensemble du volet Actions
   Un volet actions est un personnalisable **Actions de Document** volet des tâches qui est attaché à un document Microsoft Office Word spécifique ou d’un classeur Microsoft Office Excel. Le volet actions est hébergé dans le volet de tâches, ainsi que d’autres volets de tâches intégrées, telles que la **Source XML** volet dans Excel ou le **Styles et mise en forme** volet de tâches dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.
@@ -48,16 +48,16 @@ ms.locfileid: "52305674"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Ajoutez plusieurs contrôles au volet actions  
  Lorsque vous ajoutez plusieurs contrôles au volet actions, vous devez regrouper les contrôles dans un contrôle utilisateur et puis ajoutez le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété. Ce processus comprend les étapes suivantes :  
 
-1. Créer l’interface utilisateur (IU) du volet actions en ajoutant un **contrôle de volet Actions** ou **contrôle utilisateur** élément à votre projet. Ces deux éléments incluent une classe <xref:System.Windows.Forms.UserControl> Windows Forms personnalisée. Le **contrôle de volet Actions** et **contrôle utilisateur** éléments sont équivalents ; la seule différence est leur nom.  
+1.  Créer l’interface utilisateur (IU) du volet actions en ajoutant un **contrôle de volet Actions** ou **contrôle utilisateur** élément à votre projet. Ces deux éléments incluent une classe <xref:System.Windows.Forms.UserControl> Windows Forms personnalisée. Le **contrôle de volet Actions** et **contrôle utilisateur** éléments sont équivalents ; la seule différence est leur nom.  
 
-2. Ajouter des contrôles Windows Forms au <xref:System.Windows.Forms.UserControl> à l'aide du concepteur ou en écrivant du code.  
+2.  Ajouter des contrôles Windows Forms au <xref:System.Windows.Forms.UserControl> à l'aide du concepteur ou en écrivant du code.  
 
-   > [!NOTE]  
-   >  Vous pouvez aussi ajouter des contrôles WPF au volet Actions en ajoutant un <xref:System.Windows.Controls.UserControl> WPF au <xref:System.Windows.Forms.UserControl> Windows Forms. Pour plus d’informations, consultez [contrôle l’utilisation WPF dans les solutions Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+    > [!NOTE]  
+    >  Vous pouvez aussi ajouter des contrôles WPF au volet Actions en ajoutant un <xref:System.Windows.Controls.UserControl> WPF au <xref:System.Windows.Forms.UserControl> Windows Forms. Pour plus d’informations, consultez [contrôle l’utilisation WPF dans les solutions Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3. Ajouter une instance du contrôle utilisateur personnalisé aux contrôles contenus dans le champ `ActionsPane` de la classe `ThisWorkbook` (pour Excel) ou `ThisDocument` (pour Word) de votre projet.  
+3.  Ajouter une instance du contrôle utilisateur personnalisé aux contrôles contenus dans le champ `ActionsPane` de la classe `ThisWorkbook` (pour Excel) ou `ThisDocument` (pour Word) de votre projet.  
 
-   Pour obtenir des exemples qui illustrent ce processus plus en détail, consultez [Comment : ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+ Pour obtenir des exemples qui illustrent ce processus plus en détail, consultez [Comment : ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Masquer le volet actions  
  Bien que la classe <xref:Microsoft.Office.Tools.ActionsPane> ait une méthode <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> et une propriété <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, vous ne pouvez pas supprimer le volet Actions à partir de l'interface utilisateur à l'aide des membres de la classe <xref:Microsoft.Office.Tools.ActionsPane> elle-même. Appelant le <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> méthode ou paramètre la <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriété **false** masque uniquement les contrôles du volet actions ; il ne masque pas le volet des tâches.  
@@ -104,7 +104,7 @@ ms.locfileid: "52305674"
  Vous pouvez lier des contrôles du volet Actions et des contrôles du document au même jeu de données. Par exemple, vous pouvez créer une relation maître/détail entre les contrôles du volet Actions et les contrôles de la feuille de calcul. Pour plus d’informations, consultez [procédure pas à pas : liaison de données aux contrôles dans un volet actions Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
 
 ## <a name="validate-data-in-actions-pane-controls"></a>Valider les données dans les contrôles de volet actions  
- Si vous affichez un message dans le gestionnaire d'événements <xref:System.Windows.Forms.Control.Validating> d'un contrôle du volet Actions, l'événement peut être déclenché une deuxième fois lorsque le focus se déplace du contrôle au message. Pour éviter ce problème, utilisez un contrôle <xref:System.Windows.Forms.ErrorProvider> pour afficher les messages d’erreur de validation.  
+ Si vous affichez un message dans le gestionnaire d'événements <xref:System.Windows.Forms.Control.Validating> d'un contrôle du volet Actions, l'événement peut être déclenché une deuxième fois lorsque le focus se déplace du contrôle au message. Pour éviter ce problème, utilisez un contrôle <xref:System.Windows.Forms.ErrorProvider> pour afficher les messages d'erreur de validation.  
 
 ## <a name="user-control-stacking-order"></a>Contrôle utilisateur ordre d’empilement  
  Si vous utilisez plusieurs contrôles utilisateur, vous pouvez écrire le code pour empiler correctement les contrôles utilisateur du volet Actions, qu'il soit ancré verticalement ou horizontalement. Vous pouvez définir l'ordre d'empilement des contrôles utilisateur du volet Actions à l'aide de l'énumération <xref:Microsoft.Office.Tools.StackStyle> de la propriété <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>. Pour plus d’informations, consultez [Comment : gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
@@ -128,7 +128,7 @@ ms.locfileid: "52305674"
  Si l’utilisateur redimensionne le volet actions lors de l’exécution, les contrôles peuvent être redimensionnés avec le volet actions. Vous pouvez utiliser la propriété <xref:System.Windows.Forms.Control.Anchor%2A> d'un contrôle Windows Forms pour ancrer des contrôles au volet Actions. Vous pouvez également ancrer les contrôles Windows Forms au contrôle utilisateur de la même manière. Pour plus d’informations, consultez [Comment : ancrer des contrôles aux Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
 
 ## <a name="resize-the-actions-pane"></a>Redimensionner le volet actions  
- Vous ne pouvez pas modifier directement la taille d’un <xref:Microsoft.Office.Tools.ActionsPane>, car le <xref:Microsoft.Office.Tools.ActionsPane> est incorporé au volet des tâches. Toutefois, vous pouvez modifier par programmation la largeur du volet des tâches en définissant la propriété <xref:Microsoft.Office.Core.CommandBar.Width%2A> du <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Vous pouvez modifier la hauteur du volet des tâches s’il est ancré horizontalement ou est flottant.  
+ Vous ne pouvez pas modifier directement la taille d'un <xref:Microsoft.Office.Tools.ActionsPane>, car le <xref:Microsoft.Office.Tools.ActionsPane> est incorporé au volet des tâches. Toutefois, vous pouvez modifier par programmation la largeur du volet des tâches en définissant la propriété <xref:Microsoft.Office.Core.CommandBar.Width%2A> du <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Vous pouvez modifier la hauteur du volet des tâches s’il est ancré horizontalement ou est flottant.  
 
  Le redimensionnement par programmation le volet des tâches n’est pas recommandé, car l’utilisateur doit être en mesure de sélectionner la taille du volet de tâches qui correspond le mieux à leurs besoins. Toutefois, si vous devez redimensionner la largeur du volet Office, vous pouvez utiliser le code suivant pour effectuer cette tâche.  
 
@@ -148,7 +148,7 @@ ms.locfileid: "52305674"
 
  Définition de la <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> et <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propriétés de la <xref:Microsoft.Office.Tools.ActionsPane> ne change pas sa position, car le <xref:Microsoft.Office.Tools.ActionsPane> objet est incorporé dans le volet des tâches.  
 
- Si le volet des tâches n’est pas ancré, vous pouvez définir les propriétés <xref:Microsoft.Office.Core.CommandBar.Top%2A> et <xref:Microsoft.Office.Core.CommandBar.Left%2A> de l’objet <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Le code suivant déplace un volet des tâches non ancré vers l’angle supérieur gauche du document.  
+ Si le volet des tâches n'est pas ancré, vous pouvez définir les propriétés <xref:Microsoft.Office.Core.CommandBar.Top%2A> et <xref:Microsoft.Office.Core.CommandBar.Left%2A> de l'objet <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Le code suivant déplace un volet des tâches non ancré vers l’angle supérieur gauche du document.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]  
