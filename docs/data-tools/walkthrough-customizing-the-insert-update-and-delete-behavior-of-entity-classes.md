@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Personnalisation de l’insertion, mise à jour et supprimer le comportement des classes d’entité'
+title: 'Procédure pas à pas : personnalisation du comportement d’insertion, de mise à jour et de suppression de classes d’entité'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174972"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305531"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : Personnaliser l’insertion, mise à jour et comportement de suppression de classes d’entité
 
-Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit une aire de conception visuelle pour créer et modifier LINQ aux classes SQL (classes d’entité) basées sur des objets dans une base de données. À l’aide de [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), vous pouvez utiliser la technologie LINQ pour les bases de données access SQL. Pour plus d’informations, consultez [LINQ (Language-Integrated query)](/dotnet/csharp/linq/).
+Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit une aire de conception visuelle pour créer et modifier LINQ aux classes SQL (classes d’entité) basées sur des objets dans une base de données. À l’aide de [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), vous pouvez utiliser la technologie LINQ pour les bases de données access SQL. Pour plus d’informations, consultez [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).
 
-Par défaut, la logique pour effectuer des mises à jour est fournie par l’exécution LINQ to SQL. Le runtime crée par défaut `Insert`, `Update`, et `Delete` instructions basés sur le schéma de la table (définitions de colonne et informations de clé primaire). Lorsque vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour l’exécution des instructions d’insertion, des mises à jour et des suppressions requises pour fonctionner avec les données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [personnalisation d’opérations à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Par défaut, la logique pour effectuer des mises à jour est fournie par l’exécution LINQ to SQL. Le runtime crée par défaut `Insert`, `Update`, et `Delete` instructions basés sur le schéma de la table (définitions de colonne et informations de clé primaire). Si vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour exécuter les instructions d'insertion, de mise à jour et de suppression nécessaires à la manipulation des données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [personnalisation d’opérations à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
-> Cette procédure pas à pas nécessite la disponibilité de la **InsertCustomer**, **UpdateCustomer**, et **DeleteCustomer** des procédures stockées pour la base de données Northwind.
+> Cette procédure pas à pas nécessite les procédures stockées InsertCustomer **, UpdateCustomer** et DeleteCustomer** pour la base de données Northwind.
 
 Cette procédure pas à pas décrit les étapes à suivre pour substituer le comportement au moment de l'exécution par défaut de LINQ to SQL et enregistrer les données dans une base de données à l'aide de procédures stockées.
 
@@ -65,7 +65,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Création d’une application et ajout de LINQ to SQL classes
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Création d'une application et ajout de classes LINQ to SQL
 
 Étant donné que vous travaillez avec LINQ aux classes SQL et afficher les données sur un formulaire Windows, créer une application Windows Forms et ajouter un LINQ vers le fichier de Classes SQL.
 
@@ -75,17 +75,17 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **UpdatingWithSProcsWalkthrough**, puis choisissez **OK**.
 
-     Le **UpdatingWithSProcsWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet UpdateSingleTableWalkthrough est créé et ajouté à l'Explorateur de solutions **.
 
 4.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-5.  Cliquez sur le **Classes LINQ to SQL** modèle et le type **Northwind.dbml** dans le **nom** boîte.
+5.  Cliquez sur le modèle Classes LINQ to SQL **et tapez Northwind.dbml dans la zone Nom**.
 
 6.  Cliquez sur **Ajouter**.
 
@@ -101,24 +101,24 @@ Créer LINQ to SQL des classes qui sont mappées aux tables de base de données 
 
 2.  Faites glisser le **clients** nœud à partir de **Explorateur de serveurs** ou **l’Explorateur de base de données** sur le **Concepteur O/R* surface.
 
-     Une classe d’entité nommée **client** est créé. Elle comporte des propriétés qui correspondent aux colonnes de la table Customers. La classe d’entité est nommée **client** (pas **clients**) parce qu’elle représente un seul client à partir de la table Customers.
+     Une classe d'entité nommée Customer** est créée. Elle comporte des propriétés qui correspondent aux colonnes de la table Customers. La classe d'entité est nommée Customer **(et non Customers**) parce qu'elle représente un seul client de la table Customers.
 
     > [!NOTE]
-    > Ce comportement de changement de nom est appelé *pluralisation*. Il peut être activée ou désactivée le [boîte de dialogue Options](../ide/reference/options-dialog-box-visual-studio.md). Pour plus d’informations, consultez [Comment : activer et désactiver (Concepteur O/R) la pluralisation](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Ce comportement de changement de nom est appelé pluralisation *. Il peut être activée ou désactivée le [boîte de dialogue Options](../ide/reference/options-dialog-box-visual-studio.md). Pour plus d’informations, consultez [Comment : activer et désactiver (Concepteur O/R) la pluralisation](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
-3.  Sur le **Build** menu, cliquez sur **générer UpdatingwithSProcsWalkthrough** pour générer le projet.
+3.  Dans le menu Générer **, cliquez sur Générer UpdatingwithSProcsWalkthrough** pour générer le projet.
 
-4.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
+4.  Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
 
 5.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-6.  Cliquez sur **objet** sur le **choisir un Type de Source de données** page, puis cliquez sur **suivant**.
+6.  Dans la page Choisir un type de source de données **, cliquez sur Objet**, puis sur Suivant **.
 
-7.  Développez le **UpdatingwithSProcsWalkthrough** nœud puis localisez et sélectionnez le **client** classe.
+7.  Développez le nœud UpdatingwithSProcsWalkthrough **, puis localisez et sélectionnez la classe Customer**.
 
     > [!NOTE]
-    > Si le **client** classe n’est pas disponible, quittez l’Assistant, générez le projet, et réexécutez l’Assistant.
-8.  Cliquez sur **Terminer** pour créer la source de données et ajouter la **client** classe d’entité à la **des Sources de données** fenêtre.
+    > Si la classe Customer** n'est pas disponible, quittez l'Assistant, générez le projet et lancez une nouvelle fois l'Assistant.
+8.  Cliquez sur Terminer **pour créer la source de données et ajouter la classe d'entité Customer** à la fenêtre Sources de données **.
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Créer un DataGridView pour afficher les données des clients sur un formulaire Windows
 
@@ -126,14 +126,14 @@ Créer des contrôles qui sont liés aux classes d’entité en faisant glisser 
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Pour ajouter des contrôles liés aux classes d'entité
 
-1.  Ouvrez **Form1** en mode Design.
+1.  Ouvrez Form1** en mode Design.
 
-2.  À partir de la **des Sources de données** fenêtre, faites glisser le **client** nœud sur **Form1**.
+2.  Depuis la fenêtre Sources de données **, faites glisser le nœud Customer** vers Form1 **.
 
     > [!NOTE]
-    > Pour afficher le **des Sources de données** fenêtre, cliquez sur **afficher les Sources de données** sur le **données** menu.
+    > Pour ouvrir la fenêtre Sources de données **, cliquez sur Afficher les sources de données** dans le menu Données **.
 
-3.  Ouvrez **Form1** dans l’éditeur de Code.
+3.  Ouvrez Form1 dans l'éditeur de code.
 
 4.  Ajoutez le code suivant au formulaire, global au formulaire, en dehors de toute méthode spécifique, mais dans le `Form1` classe :
 
@@ -163,11 +163,11 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 ### <a name="to-implement-save-functionality"></a>Pour implémenter la fonctionnalité d'enregistrement
 
-1.  Ouvrez **Form1** en mode Design.
+1.  Ouvrez Form1** en mode Design.
 
-2.  Sélectionnez l’enregistrement bouton sur le **CustomerBindingNavigator** (le bouton avec l’icône de disquette).
+2.  Sélectionnez le bouton d'enregistrement sur CustomerBindingNavigator** (le bouton avec l'icône de disquette).
 
-3.  Dans le **propriétés** fenêtre, définissez la **activé** propriété **True**.
+3.  Dans la fenêtre Propriétés **, attribuez à la propriété Enabled** la valeur True **.
 
 4.  Double-cliquez sur le bouton d'enregistrement pour créer un gestionnaire d'événements et basculer vers l'éditeur de code.
 
@@ -185,9 +185,9 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 ### <a name="to-override-the-default-update-behavior"></a>Pour substituer le comportement de mise à jour par défaut
 
-1.  Ouvrez le fichier LINQ to SQL dans le **Concepteur O/R**. (Double-cliquez sur le **Northwind.dbml** fichier **l’Explorateur de solutions**.)
+1.  Ouvrez le fichier LINQ to SQL dans le **Concepteur O/R**. (Double-cliquez sur le fichier Northwind.dbml **dans l'Explorateur de solutions**.)
 
-2.  Dans **Explorateur de serveurs** ou **Database Explorer**, développez les bases de données Northwind **Stored Procedures** nœud et recherchez le **InsertCustomers**, **UpdateCustomers**, et **DeleteCustomers** procédures stockées.
+2.  Dans l’Explorateur de serveurs **/Explorateur de bases de données**, développez le nœud Procédures stockées **de la base de données Northwind et localisez les procédures stockées InsertCustomers**, UpdateCustomers **et DeleteCustomers**.
 
 3.  Faites glisser les trois procédures stockées sur le **Concepteur O/R**.
 
@@ -195,41 +195,41 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 4.  Sélectionnez le **client** classe d’entité dans le **Concepteur O/R**.
 
-5.  Dans le **propriétés** fenêtre, sélectionnez le **insérer** propriété.
+5.  Dans la fenêtre Propriétés **, sélectionnez la propriété Insert**.
 
-6.  Cliquez sur le bouton de sélection (**...** ) à côté **utiliser le Runtime** pour ouvrir le **configurer le comportement** boîte de dialogue.
+6.  Cliquez sur les points de suspension (…) de l'option Utiliser le runtime **pour ouvrir la boîte de dialogue Configurer le comportement**.
 
-7.  Sélectionnez **personnaliser**.
+7.  Sélectionnez Personnaliser **.
 
-8.  Sélectionnez le **InsertCustomers** méthode dans le **personnaliser** liste.
+8.  Sélectionnez la méthode InsertCustomers **dans la liste Personnaliser**.
 
-9. Cliquez sur **appliquer** pour enregistrer la configuration de la classe et le comportement sélectionné.
-
-    > [!NOTE]
-    > Vous pouvez continuer à configurer le comportement pour chaque combinaison classe/comportement tant que vous cliquez sur **appliquer** après chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement offrant la possibilité d’appliquer toutes les modifications s’affiche.
-
-10. Sélectionnez **mise à jour** dans le **comportement** liste.
-
-11. Sélectionnez **personnaliser**.
-
-12. Sélectionnez le **UpdateCustomers** méthode dans le **personnaliser** liste.
-
-     Inspectez la liste de **Arguments de méthode** et **propriétés de la classe** et notez qu’il existe deux **Arguments de méthode** et deux **propriétés de la classe**pour certaines colonnes de la table. Cela simplifie le suivi des modifications et la création des instructions qui vérifient les violations d'accès concurrentiel.
-
-13. Carte le **Original_CustomerID** argument de méthode à la **CustomerID (Original)** propriété de classe.
+9. Cliquez sur Appliquer** pour enregistrer la configuration de la classe et du comportement sélectionnés.
 
     > [!NOTE]
-    > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété sont modifiés et ne correspondent plus entre la table et la classe d’entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper à if le **Concepteur O/R** ne peut pas déterminer le mappage correct. En outre, si les arguments de méthode n’ont pas de propriétés de classe valide pour mapper à, vous pouvez définir le **propriétés de la classe** valeur **(aucun)**.
+    > Vous pouvez continuer à configurer le comportement de chaque combinaison classe/comportement tant que vous cliquez sur Appliquer** après chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement offrant la possibilité d’appliquer toutes les modifications s’affiche.
 
-14. Cliquez sur **appliquer** pour enregistrer la configuration de la classe et le comportement sélectionné.
+10. Sélectionnez Mettre à jour **dans la liste Comportement**.
 
-15. Sélectionnez **supprimer** dans le **comportement** liste.
+11. Sélectionnez Personnaliser **.
 
-16. Sélectionnez **personnaliser**.
+12. Sélectionnez la méthode UpdateCustomers **dans la liste Personnaliser**.
 
-17. Sélectionnez le **DeleteCustomers** méthode dans le **personnaliser** liste.
+     Inspectez la liste d’ Arguments de méthode **et de Propriétés de classe** ; remarquez qu’il y a deux Arguments de méthode **et deux Propriétés de classe** pour certaines colonnes de la table. Cela simplifie le suivi des modifications et la création des instructions qui vérifient les violations d'accès concurrentiel.
 
-18. Carte le **Original_CustomerID** argument de méthode à la **CustomerID (Original)** propriété de classe.
+13. Mappez l’argument de méthode Original_CustomerID **à la propriété de classe CustomerID (Original)**.
+
+    > [!NOTE]
+    > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété sont modifiés et ne correspondent plus entre la table et la classe d'entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le Concepteur O/R ne peut pas déterminer le mappage correct. En outre, si les arguments de méthode n’ont pas de propriétés de classe valides à mapper, vous pouvez donner à Propriétés de classe **la valeur (Aucune)**.
+
+14. Cliquez sur Appliquer** pour enregistrer la configuration de la classe et du comportement sélectionnés.
+
+15. Sélectionnez Supprimer **dans la liste Comportement**.
+
+16. Sélectionnez Personnaliser **.
+
+17. Sélectionnez la méthode DeleteCustomers **dans la liste Personnaliser**.
+
+18. Mappez l’argument de méthode Original_CustomerID **à la propriété de classe CustomerID (Original)**.
 
 19. Cliquez sur **OK**.
 
@@ -238,30 +238,30 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 ## <a name="test-the-application"></a>Tester l’application
 
-Exécutez l’application à nouveau pour vérifier que le **UpdateCustomers** procédure stockée met correctement à jour l’enregistrement de client dans la base de données.
+Exécutez une nouvelle fois l'application pour vérifier que la procédure stockée UpdateCustomers** met à jour correctement l'enregistrement Customer dans la base de données.
 
 1.  Appuyez sur **F5**.
 
-2.  Modifier un enregistrement dans la grille pour tester le comportement de mise à jour.
+2.  Modifiez un enregistrement dans la grille pour tester le comportement de mise à jour.
 
-3.  Ajouter un nouvel enregistrement pour tester le comportement d’insertion.
+3.  Ajoutez un nouvel enregistrement pour tester le comportement d'insertion.
 
 4.  Cliquez sur le bouton d'enregistrement pour enregistrer les modifications dans la base de données.
 
 5.  Fermez le formulaire.
 
-6.  Appuyez sur **F5** et vérifiez que l’enregistrement mis à jour et l’enregistrement inséré qui vient d’être rendues persistantes.
+6.  Appuyez sur F5 et vérifiez que l'enregistrement mis à jour et l'enregistrement inséré persistent.
 
-7.  Supprimez le nouvel enregistrement que vous avez créé dans l’étape 3 pour tester le comportement de suppression.
+7.  Supprimez le nouvel enregistrement que vous avez créé au cours de l'étape 3 pour tester le comportement de suppression.
 
-8.  Cliquez sur l’enregistrement bouton pour soumettre les modifications et supprimer l’enregistrement supprimé de la base de données.
+8.  Cliquez sur le bouton d'enregistrement pour valider les modifications et supprimer l'enregistrement effacé de la base de données
 
 9. Fermez le formulaire.
 
-10. Appuyez sur **F5** et vérifiez que l’enregistrement supprimé a été supprimé de la base de données.
+10. Appuyez sur F5 et vérifiez que l'enregistrement effacé a été bien supprimé de la base de données.
 
     > [!NOTE]
-    > Si votre application utilise SQL Server Express Edition, selon la valeur de la **Copy to Output Directory** propriété du fichier de base de données, les modifications n’apparaissent pas lorsque vous appuyez sur **F5** à l’étape 10.
+    > Si votre application utilise SQL Server Express Edition, selon la valeur de la propriété Copier dans le répertoire de sortie** du fichier de base de données, les modifications peuvent ne pas paraître lorsque vous appuyez sur F5 à l'étape 10.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -269,7 +269,7 @@ Selon les exigences de votre application, il existe plusieurs étapes que vous p
 
 - Implémenter la vérification des accès concurrentiels pendant les mises à jour. Pour plus d’informations, consultez [d’accès concurrentiel optimiste : vue d’ensemble](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Ajouter des requêtes LINQ pour filtrer des données. Pour plus d’informations, consultez [Introduction aux requêtes LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Ajouter des requêtes LINQ pour filtrer des données. Pour plus d’informations, consultez [Introduction aux requêtes LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Voir aussi
 

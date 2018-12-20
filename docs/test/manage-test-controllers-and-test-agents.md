@@ -1,5 +1,5 @@
 ---
-title: Gérer les contrôleurs de test et les agents de test dans Visual Studio
+title: Gérer les contrôleurs de test et les agents de test
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926590"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059494"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
 Si vous voulez utiliser Visual Studio pour exécuter des tests à distance, distribuer des tests sur plusieurs ordinateurs ou exécuter des tests de charge, vous devez configurer un contrôleur de test, des agents de test et un fichier de paramètres de test. Cette rubrique explique comment gérer des contrôleurs de test et des agents de test après les avoir installés et configurés pour la première fois.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Si vous utilisez Microsoft Test Manager pour exécuter des tests dans des environnements lab, vous gérez les contrôleurs de test et leurs agents en utilisant le **Gestionnaire de contrôleurs de test** dans le **Centre lab** pour Microsoft Test Manager. Cette rubrique s'applique seulement si vous utilisez Visual Studio pour exécuter vos tests.
 
@@ -43,7 +45,7 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
 
 2. Deux modes d’exécution de l’agent de test sont proposés :
 
-   - **Service** Si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo lors de l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L’agent de test démarrera en tant que service. Sélectionnez **Suivant**.
+   - **Service** : si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo durant l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L’agent de test démarrera en tant que service. Sélectionnez **Suivant**.
 
       Vous pouvez maintenant entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que service.
 
@@ -58,7 +60,7 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
         |- Si le nom d’utilisateur de l’agent n’est pas dans le service d’agent, celui-ci essaiera de l’ajouter, ce qui nécessite des autorisations sur le contrôleur de test.|
         |- L’utilisateur qui essaie d’utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test ; sinon il ne pourra pas exécuter les tests sur le contrôleur.|
 
-   - **Processus interactif** Si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo lors de l’exécution de votre test, sélectionnez **Processus interactif**. L’agent de test démarrera en tant que processus interactif et non en tant que service.
+   - **Processus interactif** : si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo durant l’exécution de votre test, sélectionnez **Processus interactif**. L’agent de test démarrera en tant que processus interactif et non en tant que service.
 
       Sur la page suivante, entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que processus, ainsi que d’autres options.
 
@@ -143,8 +145,8 @@ Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à 
 |Propriété de l’agent de test|Description|
 |-|-----------------|
 |**Poids**|Utilisé pour distribuer la charge lorsque vous utilisez des agents de test avec des niveaux de performance différents. Par exemple, un agent de test avec un poids de 100 reçoit une charge deux fois supérieure à celle d’un agent de test avec un poids de 50.|
-|**Commutation IP**|Utilisé pour configurer la commutation IP. La commutation IP permet à un agent de test d'envoyer des demandes à un serveur à l'aide d'une plage d'adresses IP. Cela simule des appels provenant de différents ordinateurs clients.<br /><br /> La commutation IP est importante si votre test de charge accède à une batterie de serveurs web. La plupart des programmes d’équilibrage de charge établissent l’affinité entre un client et un serveur web particulier en utilisant l’adresse IP du client. Si toutes les demandes semblent provenir d’un seul client, l’équilibrage de charge n’équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP. **Remarque :** Vous pouvez spécifier une carte réseau ou utiliser **(Non assigné)** pour sélectionner automatiquement une carte réseau qui n’est pas actuellement utilisée. <br /><br /> Pour utiliser la fonctionnalité de commutation IP, le service Visual Studio Test Agent doit s’exécuter en tant qu’utilisateur du groupe Administrateurs de cet ordinateur agent. Cet utilisateur est sélectionné pendant la configuration de l'agent, mais peut être modifié en modifiant les propriétés du service puis en le redémarrant.<br /><br /> Pour vérifier que la commutation IP fonctionne correctement, activez le processus d’enregistrement du journal d’IIS sur le serveur web, puis utilisez les fonctionnalités de ce processus pour vérifier que les requêtes proviennent des adresses IP que vous avez configurées.|
-|**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d’agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :** Ce paramètre est disponible seulement pour les agents de test inscrits auprès d’un contrôleur de test qui n’est lui-même pas inscrit auprès d’un projet, car ces attributs sont utilisés seulement dans les paramètres de test pour Visual Studio.|
+|**Commutation IP**|Utilisé pour configurer la commutation IP. La commutation IP permet à un agent de test d'envoyer des demandes à un serveur à l'aide d'une plage d'adresses IP. Cela simule des appels provenant de différents ordinateurs clients.<br /><br /> La commutation IP est importante si votre test de charge accède à une batterie de serveurs web. La plupart des programmes d’équilibrage de charge établissent l’affinité entre un client et un serveur web particulier en utilisant l’adresse IP du client. Si toutes les demandes semblent provenir d’un seul client, l’équilibrage de charge n’équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP. **Remarque :**  Vous pouvez spécifier une carte réseau ou utiliser **(Non assigné)** pour sélectionner automatiquement une carte réseau non utilisée. <br /><br /> Pour utiliser la fonctionnalité de commutation IP, le service Visual Studio Test Agent doit s’exécuter en tant qu’utilisateur du groupe Administrateurs de cet ordinateur agent. Cet utilisateur est sélectionné pendant la configuration de l'agent, mais peut être modifié en modifiant les propriétés du service puis en le redémarrant.<br /><br /> Pour vérifier que la commutation IP fonctionne correctement, activez le processus d’enregistrement du journal d’IIS sur le serveur web, puis utilisez les fonctionnalités de ce processus pour vérifier que les requêtes proviennent des adresses IP que vous avez configurées.|
+|**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d’agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :**  Ce paramètre est disponible seulement pour les agents de test inscrits auprès d’un contrôleur de test qui n’est pas lui-même inscrit auprès d’un projet, car ces attributs sont utilisés uniquement dans les paramètres de test de Visual Studio.|
 
 Les modifications du poids et des attributs des agents de test sont appliquées immédiatement, mais n’affectent pas les tests en cours d’exécution. La plage d'adresses IP prend effet après le redémarrage du contrôleur de test.
 

@@ -1,5 +1,5 @@
 ---
-title: Analyse des résultats et des erreurs des tests de charge dans Visual Studio
+title: Analyse des résultats et des erreurs des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928670"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068563"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
 Lorsque vous consultez les résultats d'une série de tests de charge, vous pouvez afficher différents volets vous permettant d'analyser les données de différentes manières. Vous pouvez afficher les données sous forme de graphique pour voir comment elles évoluent dans le temps ou les consulter dans des tables détaillées.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Pour basculer en mode table, choisissez **Tables** dans la barre d’outils de **test de charge**. Pour passer d’une table à une autre, utilisez la liste déroulante **Table** accessible dans la barre d’outils située au-dessus de la grille des tables. En mode table, vous pouvez consulter jusqu'à quatre tables à la fois. Pour plus d’informations, consultez [Disposer en mosaïque les tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) dans cette rubrique.
 
@@ -41,19 +43,19 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 > [!NOTE]
 > Les colonnes nommées **Dernièrement** ne sont disponibles qu’au cours de l’exécution d’un test de charge. Une fois qu'un test de charge est terminé, ces colonnes ne sont plus disponibles.
 
- Vous pouvez trier la plupart des tables en choisissant le titre de la colonne sur laquelle vous souhaitez effectuer le tri. Par défaut, certaines tables n'affichent pas toutes les colonnes disponibles. Vous pouvez ajouter des colonnes aux tables, si des colonnes sont disponibles. Pour ajouter des colonnes, cliquez avec le bouton droit sur la table, puis choisissez **Ajouter/Supprimer des colonnes**.
+Vous pouvez trier la plupart des tables en choisissant le titre de la colonne sur laquelle vous souhaitez effectuer le tri. Par défaut, certaines tables n'affichent pas toutes les colonnes disponibles. Vous pouvez ajouter des colonnes aux tables, si des colonnes sont disponibles. Pour ajouter des colonnes, cliquez avec le bouton droit sur la table, puis choisissez **Ajouter/Supprimer des colonnes**.
 
 > [!NOTE]
 > Vous pouvez copier les données d'une table dans d'autres applications telles qu'Excel, à des fins d'analyse supplémentaire.
 
 ## <a name="the-load-test-tables"></a>Tables de tests de charge
 
- Le tableau suivant répertorie les tables disponibles pour analyser des séries de tests de charge.
+Le tableau suivant répertorie les tables disponibles pour analyser des séries de tests de charge.
 
 |Nom de la table|Description|
 |-|-|
 |Erreurs|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Requêtes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
 |Trace SQL|Affiche les résultats du traçage SQL. Cette table n'est disponible qu'à l'issue d'un test de charge et uniquement si le traçage SQL a été utilisé pendant le test. Pour plus d’informations, consultez [Table Données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) dans cette rubrique.|
 |Tests|Affiche des détails relatifs aux tests exécutés pendant un test de charge. Pour plus d’informations, consultez [Table Tests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) dans cette rubrique.|
@@ -64,7 +66,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 
 ## <a name="collect-percentile-data"></a>Collecter les données de centile
 
- Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Table Requêtes
 
@@ -116,7 +118,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
  Le tableau suivant répertorie les colonnes de la table **Transactions**.
 
 > [!NOTE]
-> Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Colonne|Description|Visible sans les détails de minuterie|
 |-|-|-|
@@ -131,8 +133,8 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 |**Temps de réponse min**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse max**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse médian**|Cela n'inclut pas les temps de réflexion.|Non|
-|**90% du temps de réponse**|90e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :** Ce comportement est différent de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **90% du temps de transaction**.|Non|
-|**95% du temps de réponse**|95e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :** Ce comportement est différent de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **95% du temps de transaction**.|Non|
+|**90% du temps de réponse**|90e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :**  Ce comportement est différent de celui de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **90 % du temps de transaction**.|Non|
+|**95% du temps de réponse**|95e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :**  Ce comportement est différent de celui de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **95 % du temps de transaction**.|Non|
 |**99% du temps de réponse**|99e centile du temps de transaction. Cela n'inclut pas les temps de réflexion.|Non|
 |**Écart type du temps de réponse**|Cela n'inclut pas les temps de réflexion.|Non|
 

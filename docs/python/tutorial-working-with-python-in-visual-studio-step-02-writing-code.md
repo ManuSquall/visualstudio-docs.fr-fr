@@ -1,5 +1,6 @@
 ---
-title: 'Utiliser le tutoriel Python – Étape 2 : Écrire et exécuter du code'
+title: Tutoriel Python dans Visual Studio - étape 2, écrire et exécuter du code
+titleSuffix: ''
 description: Étape 2 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment modifier du code et exécuter un projet.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219417"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054798"
 ---
-# <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
+# <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 
-**Étape précédente : [Créer un projet Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Étape précédente : [Créer un projet Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Bien que l’**Explorateur de solutions** soit l’emplacement où vous gérez les fichiers projet, la fenêtre *Éditeur* est généralement l’emplacement où vous travaillez sur les *contenus* des fichiers, par exemple le code source. L’éditeur fonctionne contextuellement selon le type de fichier que vous éditez, notamment le langage de programmation (sur la base de l’extension de fichier) et offre des fonctionnalités appropriées à ce langage, comme la coloration syntaxique et la saisie semi-automatique avec IntelliSense.
 

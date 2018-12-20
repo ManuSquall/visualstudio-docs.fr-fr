@@ -1,7 +1,7 @@
 ---
-title: Inspecter des variables dans les fenêtres automatique et variables locales | Microsoft Docs
-ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+title: Inspecter des variables - fenêtres automatique et variables locales | Microsoft Docs
+ms.custom: seodec18
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 584704471f9346611f240a3a24e0d45cf2eec364
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826706"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068352"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
-Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+
+ Le **automatique** fenêtre n’est disponible pour C#, code Visual Basic, C++ et Python, mais pas pour JavaScript ou F#.
   
 Pour ouvrir le **automatique** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **automatique**, ou appuyez sur **Ctrl**+**Alt**+**V** > **A**.  
 
 Pour ouvrir le **variables locales** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **variables locales**, ou appuyez sur **Alt**+**4**.
-
-Si vous avez besoin de plus d’informations sur les bases du débogage, consultez [mise en route avec le débogueur](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [des visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations).
@@ -52,7 +52,7 @@ Pour modifier les valeurs de la plupart des variables dans le **automatique** ou
 
 Vous pouvez entrer une expression pour une valeur, par exemple `a + b`. Le débogueur accepte la plupart des expressions de langage valides.
 
-Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom de variable. Pour plus d’informations, consultez [opérateur de contexte (C++)](../debugger/context-operator-cpp.md).
+Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom de variable. Pour plus d’informations, consultez [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
 >Assurez-vous que vous comprenez les conséquences avant de modifier des valeurs et les expressions. Certains problèmes possibles sont :
@@ -71,13 +71,11 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
 ![Barre d’outils emplacement de débogage](../debugger/media/debuglocationtoolbar.png "barre d’outils emplacement de débogage")
 
-## <a name="bkmk_whatvariables"></a> Variables dans la fenêtre automatique
-
- Le **automatique** fenêtre n’est disponible pour C#, Visual Basic et C++ de code, mais pas pour JavaScript ou F#.
+## <a name="bkmk_whatvariables"></a> Variables dans la fenêtre automatique (C#, C++, Visual Basic, Python)
 
  Affichent les variables différentes dans différents langages le **automatique** fenêtre.
 
- - Dans C# et Visual Basic, le **automatique** fenêtre affiche n’importe quelle variable utilisée sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
+ - En C# et en Visual Basic, la fenêtre **Automatique** affiche les variables utilisées sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
 
    ```csharp
        public static void Main()
@@ -152,6 +150,6 @@ Pour afficher les valeurs de retour de la `sumVars()` et `subtractVars()` des ap
   ![Valeur de retour automatique C# ](../debugger/media/autosreturnvaluecsharp2.png "valeur de retour automatiqueC#")  
   
 ## <a name="see-also"></a>Voir aussi  
- [Quel est le débogage ?](../debugger/what-is-debugging.md)  
- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
+ [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [fenêtres du débogueur](../debugger/debugger-windows.md)

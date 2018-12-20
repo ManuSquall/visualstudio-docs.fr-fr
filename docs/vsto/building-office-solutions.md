@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847576"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248229"
 ---
 # <a name="build-office-solutions"></a>Générer des solutions Office
   En général, la génération et le débogage de projets Office sont identiques à la génération et au débogage d’autres types de projets dans Visual Studio, tels que les Windows Forms. Les rubriques de cette section expliquent les différences qui existent. Pour obtenir des informations générales sur la façon de créer des applications, consultez [compiler et générer dans Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -100,7 +100,7 @@ ms.locfileid: "49847576"
 ## <a name="change-the-platform-target"></a>Modifier la plateforme cible  
  Par défaut, la plateforme cible pour les projets Office est **Any CPU**. En règle générale, vous ne devez pas modifier ce paramètre. Les solutions Office générées avec le paramètre de plateforme cible **Any CPU** s’exécutent dans les versions 32 bits et 64 bits de Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
- Vous devez spécifier la plateforme cible x64 seulement si vous créez une solution destinée à s’exécuter uniquement dans les versions 64 bits de Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], et que votre solution appelle des API 64 bits natives. Pour plus d’informations sur la modification du paramètre de la plateforme cible, consultez [Comment : configurer des projets pour cibler les plateformes](../ide/how-to-configure-projects-to-target-platforms.md).  
+ Vous devez spécifier la plateforme cible x64 seulement si vous créez une solution destinée à s’exécuter uniquement dans les versions 64 bits de Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], et que votre solution appelle des API 64 bits natives. Pour plus d’informations sur la modification du paramètre de la plateforme cible, consultez [Comment : Configurer des projets pour cibler les plateformes](../ide/how-to-configure-projects-to-target-platforms.md).  
   
  Si vous spécifiez la plateforme cible x64, la solution ne s’exécutera pas dans les versions 32 bits de Windows et Office. La plateforme cible x64 exige que la solution s’exécute dans un processus 64 bits.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49847576"
 |-----------|-----------------|  
 |[Déboguez des projets Office](../vsto/debugging-office-projects.md)|Présente des problèmes liés au débogage de projets Office.|  
 |[Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Montre comment créer une personnalisation de base au niveau du document pour Excel.|  
-|[Comment : réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Décrit comment réactiver un complément qui a été matériel ou logiciel désactivé.|  
+|[Guide pratique pour Réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Décrit comment réactiver un complément qui a été matériel ou logiciel désactivé.|  
 |[Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)|Fournit des liens vers des informations concernant la création de solutions Office et le rôle des assemblys dans ces solutions.|  
   
   

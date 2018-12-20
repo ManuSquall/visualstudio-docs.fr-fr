@@ -1,26 +1,28 @@
 ---
-title: Tutoriel - Découvrez Django dans Visual Studio, étape 2
+title: Tutoriel d’apprentissage de Django dans Visual Studio - étape 2, vues et modèles de pages
+titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les étapes de création d’une application et l’utilisation des affichages et modèles.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547930"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058543"
 ---
-# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
-**Étape précédente : [créer une solution et un projet Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
+**Étape précédente : [Créer un projet et une solution Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
 Le projet Visual Studio vous offre jusqu’à présent uniquement les composants au niveau du site d’un *projet* Django, qui peut exécuter une ou plusieurs *applications* Django. L’étape suivante consiste à créer votre première application avec une seule page.
 
@@ -32,15 +34,15 @@ Dans cette étape, vous apprenez comment :
 > - afficher un affichage à l’aide de HTML (étape 2-3)
 > - afficher un affichage à l’aide d’un modèle de page Django (étape 2-4)
 
-## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Étape 2-1 : créer une application avec une structure par défaut
+## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Étape 2-1 : Créer une application avec une structure par défaut
 
 Une application Django est un package Python distinct qui contient un ensemble de fichiers associés dans un but spécifique. Un projet Django peut contenir plusieurs applications, par conséquent, un hôte Web peut servir plusieurs points d’entrée distincts à partir d’un nom de domaine unique. Par exemple, un projet Django pour un domaine comme contoso.com peut contenir une application pour www.contoso.com, une deuxième application pour support.contoso.com et une troisième application pour docs.contoso.com. Dans ce cas, le projet Django gère le routage d’URL et les paramètres au niveau du site (dans ses fichiers *urls.py* et *settings.py*), tandis que chaque application possède son propre style et comportement distinct via son routage interne, ses affichages, modèles, fichiers statiques et son interface d’administration.
 
 Une application Django commence généralement par un ensemble standard de fichiers. Visual Studio fournit des modèles d’élément pour initialiser une application Django dans un projet Django, ainsi qu’une commande de menu intégrée qui remplit la même fonction :
 
-- Modèles : dans **Explorateur de solutions**, cliquez avec le bouton de droite sur le projet, puis sélectionnez **Ajouter** > **Nouvel élément**. Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez le modèle **Application Django 1.9**, spécifiez le nom de l’application dans le champ **Nom**, puis sélectionnez **OK**.
+- Modèles : Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter** > **Nouveau élément**. Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez le modèle **Application Django 1.9**, spécifiez le nom de l’application dans le champ **Nom**, puis sélectionnez **OK**.
 
-- Commande intégrée : dans **Explorateur de solutions**, cliquez avec le bouton de droite sur le projet et sélectionnez **Ajouter** > **l’application Django**. Cette commande vous demande un nom et crée une application Django 1.9.
+- Commande intégrée : Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet et sélectionnez **Ajouter** > **Application Django**. Cette commande vous demande un nom et crée une application Django 1.9.
 
     ![Commande de menu pour l’ajout d’une application Django](media/django/step02-add-django-app-command.png)
 
@@ -68,11 +70,11 @@ class HelloDjangoAppConfig(AppConfig):
     name = 'HelloDjango'
 ```
 
-### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Question : la création d’une application Django dans Visual Studio diffère-t-elle de la création d’une application sur la ligne de commande ?
+### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. La création d’une application Django dans Visual Studio diffère-t-elle de la création d’une application sur la ligne de commande ?
 
-Réponse : l’exécution de la commande **Ajouter** > **application Django** ou l’utilisation de **Ajouter** > **un nouvel élément** avec un modèle d’application Django produit les mêmes fichiers que la commande Django `manage.py startapp <app_name>`. L’avantage de la création de l’application dans Visual Studio est que le dossier de l’application et tous ses fichiers sont automatiquement intégrés dans le projet. Vous pouvez utiliser la même commande de Visual Studio pour créer toutes les applications que vous désirez dans votre projet.
+Réponse : L’exécution de la commande **Ajouter** > **Application Django** et l’utilisation de l’option **Ajouter** > **Nouvel élément** avec un modèle d’application Django génèrent les mêmes fichiers que la commande Django `manage.py startapp <app_name>`. L’avantage de la création de l’application dans Visual Studio est que le dossier de l’application et tous ses fichiers sont automatiquement intégrés dans le projet. Vous pouvez utiliser la même commande de Visual Studio pour créer toutes les applications que vous désirez dans votre projet.
 
-## <a name="step-2-2-run-the-app-from-the-django-project"></a>Étape 2-2 : exécuter l’application à partir du projet Django
+## <a name="step-2-2-run-the-app-from-the-django-project"></a>Étape 2-2 : Exécuter l’application à partir du projet Django
 
 À ce stade, si vous exécutez à nouveau le projet dans Visual Studio (à l’aide du bouton de la barre d’outils ou **Déboguer** > **Démarrer le débogage**), vous voyez toujours la page par défaut. Aucun contenu de l’application ne s’affiche, car vous devez définir une page spécifique à l’application et ajouter l’application au projet Django :
 
@@ -115,19 +117,19 @@ Réponse : l’exécution de la commande **Ajouter** > **application Django** o
 
     ![Envoyer des validations à distance dans Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
-### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Question : Que représente le préfixe « r » avant les chaînes de routage ?
+### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Que représente le préfixe « r » avant les chaînes de routage ?
 
-Réponse : le préfixe « r » sur une chaîne dans Python signifie « brut, » et avertit Python de ne pas échapper des caractères dans la chaîne. Étant donné que les expressions régulières utilisent plusieurs caractères spéciaux, l’utilisation du préfixe « r » permet une lecture de ces chaînes beaucoup plus facile que si elles contenaient un certain nombre de caractères d’échappement « \\ ».
+Réponse : Le préfixe « r » d’une chaîne dans Python signifie « raw » (brut) et indique à Python de n’échapper aucun des caractères de la chaîne. Étant donné que les expressions régulières utilisent plusieurs caractères spéciaux, l’utilisation du préfixe « r » permet une lecture de ces chaînes beaucoup plus facile que si elles contenaient un certain nombre de caractères d’échappement « \\ ».
 
-### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Question : Que signifient les caractères ^ et $ dans les entrées de routage d’URL ?
+### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Que signifient les caractères ^ et $ dans les entrées de routage d’URL ?
 
-Réponse : dans les expressions régulières qui définissent des modèles d’URL, ^ signifie « début de ligne » et $ signifie « fin de ligne, » où une nouvelle fois les URL sont relatives par rapport à la racine du site (la partie qui suit `https://www.domain.com/`). L’expression régulière `^$` signifie effectivement « vide » et par conséquent correspond à l’URL complète `https://www.domain.com/` (rien n’est ajouté à la racine du site). Le modèle `^home$` correspond exactement à `https://www.domain.com/home/`. (Django n’utilise pas le symbole de fin / dans les critères spéciaux.)
+Réponse : Dans les expressions régulières qui définissent des modèles d’URL, ^ signifie « début de ligne » et $ signifie « fin de ligne », les URL étant là encore relatives par rapport à la racine du site (la partie qui suit `https://www.domain.com/`). L’expression régulière `^$` signifie effectivement « vide » et par conséquent correspond à l’URL complète `https://www.domain.com/` (rien n’est ajouté à la racine du site). Le modèle `^home$` correspond exactement à `https://www.domain.com/home/`. (Django n’utilise pas le symbole de fin / dans les critères spéciaux.)
 
 Si vous n’utilisez pas un symbole $ de fin dans une expression régulière, comme avec `^home`, le modèle d’URL correspond alors à *toute* URL qui commence par « home », tels que « home », « homework », « homestead » et « home192837 ».
 
 Pour faire des essais avec différentes expressions régulières, essayez les outils en ligne tels que [regex101.com](https://regex101.com) sur [pythex.org](https://www.pythex.org).
 
-## <a name="step-2-3-render-a-view-using-html"></a>Étape 2-3 : afficher un affichage à l’aide de HTML
+## <a name="step-2-3-render-a-view-using-html"></a>Étape 2-3 : Afficher une vue à l’aide de HTML
 
 La fonction `index` que vous avez jusqu’à présent dans *views.py* ne génère rien de plus qu’une réponse HTTP de texte brut pour la page. Les pages Web les plus réelles, bien entendu, répondent avec des pages HTML riches qui intègrent souvent des données dynamiques. En effet, la principale raison pour laquelle vous définissez une vue à l’aide d’une fonction est de vous permettre de générer ce contenu de manière dynamique.
 
@@ -153,7 +155,7 @@ Exécutez le projet à nouveau pour afficher le message tel que «**Bonjour, Dja
 >
 > ![Bouton Redémarrer de la barre d’outils de débogage dans Visual Studio](media/debugging-restart-toolbar-button.png)
 
-## <a name="step-2-4-render-a-view-using-a-page-template"></a>Étape 2-4 : afficher un affichage à l’aide d’un modèle de page
+## <a name="step-2-4-render-a-view-using-a-page-template"></a>Étape 2-4 : Afficher une vue en utilisant un modèle de page
 
 La génération HTML dans le code fonctionne bien pour les très petites pages, mais à mesure que les pages deviennent plus sophistiquées, vous souhaiterez généralement conserver les parties HTML statiques de votre page (ainsi que les références à des fichiers CSS et JavaScript) en tant que « modèles de page », dans lesquels vous insérez ensuite un contenu dynamique, généré par le code. Dans la section précédente, seules la date et l’heure à partir de l’appel `now.strftime` sont dynamiques, ce qui signifie que tout autre contenu peut être placé dans un modèle de page.
 
@@ -247,27 +249,27 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
     ![Exécution de l’application à l’aide du modèle](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 version 15.7 et versions antérieures : pour finir, déplacez vos modèles dans un sous-dossier portant le même nom que votre application, ce qui permet de créer un espace de noms et d’éviter les conflits potentiels avec d’autres applications que vous pouvez éventuellement ajouter au projet. (Les modèles de VS 2017 15.8+ le font automatiquement pour vous.) Autrement dit, créez un sous-dossier dans *templates* nommé *HelloDjangoApp*, déplacez *index.html* dans ce sous-dossier et modifiez la fonction d’affichage `index` pour faire référence au nouveau chemin d’accès du modèle, *HelloDjangoApp/index.html*. Puis exécutez le projet, vérifiez que la page s’affiche correctement et arrêtez le serveur.
+1. <a name="template-namespacing"></a>Visual Studio 2017 version 15.7 et antérieures : Pour finir, déplacez vos modèles dans un sous-dossier portant le même nom que votre application, ce qui permet de créer un espace de noms et d’éviter les conflits potentiels avec d’autres applications que vous pouvez éventuellement ajouter au projet. (Les modèles de VS 2017 15.8+ le font automatiquement pour vous.) Autrement dit, créez un sous-dossier dans *templates* nommé *HelloDjangoApp*, déplacez *index.html* dans ce sous-dossier et modifiez la fonction d’affichage `index` pour faire référence au nouveau chemin d’accès du modèle, *HelloDjangoApp/index.html*. Puis exécutez le projet, vérifiez que la page s’affiche correctement et arrêtez le serveur.
 
 1. Validez vos modifications du contrôle de code source et mettez à jour votre référentiel distant, si vous le souhaitez, comme indiqué sous [l’étape 2-2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : les modèles de page doivent-ils être dans un fichier distinct ?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles de pages doivent-ils être dans un fichier distinct ?
 
-Réponse : bien que les modèles soient généralement conservés dans des fichiers HTML distincts, vous pouvez également utiliser un modèle inclus. L’utilisation d’un fichier distinct est recommandée, toutefois, pour maintenir une séparation nette entre la balise et le code.
+Réponse : Bien que les modèles soient généralement conservés dans des fichiers HTML distincts, vous pouvez également utiliser un modèle inclus. L’utilisation d’un fichier distinct est recommandée, toutefois, pour maintenir une séparation nette entre la balise et le code.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Question : les modèles doivent-ils utiliser l’extension de fichier .html ?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles doivent-ils utiliser l’extension de fichier .html ?
 
-Réponse : L’extension *.html* pour les fichiers de modèle de page est entièrement facultative, car vous identifiez toujours le chemin d’accès relatif exact au fichier dans le deuxième argument de la fonction `render`. Toutefois, Visual Studio (et d’autres éditeurs) en général vous offrent des fonctionnalités comme la complétion de code et la coloration syntaxique avec des fichiers *.html*, ce qui compense le fait que les modèles de page ne soient pas strictement HTML.
+Réponse : L’extension *.html* pour les fichiers de modèle de page est complètement facultative, car vous identifiez toujours le chemin relatif exact du fichier dans le deuxième argument de la fonction `render`. Toutefois, Visual Studio (et d’autres éditeurs) en général vous offrent des fonctionnalités comme la complétion de code et la coloration syntaxique avec des fichiers *.html*, ce qui compense le fait que les modèles de page ne soient pas strictement HTML.
 
 En fait, lorsque vous travaillez avec un projet Django, Visual Studio détecte automatiquement lorsque le fichier HTML que vous êtes en train de modifier est réellement un modèle Django et fournit certaines fonctionnalités de saisie semi-automatique. Par exemple, lorsque vous commencez à saisir un commentaire sur le modèle de page Django, `{#`, Visual Studio vous donne automatiquement les caractères de fermeture `#}`. Les commandes **Commenter la sélection** et **Supprimer les marques de commentaire de la sélection** (sur le menu **Modifier** > **Avancé** et la barre d’outils) utilisent également les commentaires des modèles au lieu des commentaires HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Question : lorsque j’exécute le projet, je vois une erreur indiquant qu’il est impossible de trouver le modèle. Quel est le problème ?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Lorsque j’exécute le projet, une erreur indique que le modèle est introuvable. Quel est le problème ?
 
-Réponse : Si vous rencontrez des erreurs indiquant que le modèle est introuvable, vérifiez que vous avez ajouté l’application au script *settings.py* du projet Django dans la liste `INSTALLED_APPS`. Sans cette entrée, Django ne saura pas qu’il doit rechercher dans le dossier *templates* de l’application.
+Réponse : Si vous rencontrez des erreurs indiquant que le modèle est introuvable, vérifiez que vous avez ajouté l’application au script *settings.py* du projet Django dans la liste `INSTALLED_APPS`. Sans cette entrée, Django ne saura pas qu’il doit rechercher dans le dossier *templates* de l’application.
 
-### <a name="question-why-is-template-namespacing-important"></a>Question : pourquoi les espaces de noms du modèle sont-ils importants ?
+### <a name="question-why-is-template-namespacing-important"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Pourquoi les espaces de noms du modèle sont-ils importants ?
 
-Réponse : lorsque Django recherche un modèle référencé dans la fonction `render`, il utilise le premier fichier qu’il trouve correspondant au chemin d’accès relatif. Si vous avez plusieurs applications Django dans le même projet qui utilisent les mêmes structures de dossiers pour les modèles, il est probable qu’une seule application utilisera involontairement un modèle à partir d’une autre application. Pour éviter de telles erreurs, créez toujours un sous-dossier sous un dossier *templates* d’une application qui correspond au nom de l’application afin d’éviter toute duplication.
+Réponse : Lorsque Django recherche un modèle référencé dans la fonction `render`, il utilise le premier fichier qu’il trouve correspondant au chemin d’accès relatif. Si vous avez plusieurs applications Django dans le même projet qui utilisent les mêmes structures de dossiers pour les modèles, il est probable qu’une seule application utilisera involontairement un modèle à partir d’une autre application. Pour éviter de telles erreurs, créez toujours un sous-dossier sous un dossier *templates* d’une application qui correspond au nom de l’application afin d’éviter toute duplication.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -279,4 +281,4 @@ Réponse : lorsque Django recherche un modèle référencé dans la fonction `r
 - [Écrire votre première application Django, partie 1 - affichages](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Pour davantage de fonctionnalités avec les modèles Django, tels que fichiers inclus et héritage, consultez [Le langage de gabarit Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - [Formation d’expression régulière sur inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

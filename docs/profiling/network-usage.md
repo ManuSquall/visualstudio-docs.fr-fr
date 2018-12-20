@@ -1,6 +1,6 @@
 ---
-title: Analyser l’utilisation du réseau dans les applications UWP dans Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Analyser l’utilisation du réseau dans les applications UWP
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220786"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062242"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](/uwp/api/windows.web.http). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.  
@@ -74,7 +74,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
- [Blog Visual Studio : Présentation de l’inspecteur de réseau de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vidéo Channel 9 : Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Blog Visual Studio : Présentation de l’inspecteur de réseau Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Vidéo Channel 9 : Outils de diagnostic VS - nouveau profileur réseau](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilage dans Visual Studio](../profiling/index.md)  
  [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

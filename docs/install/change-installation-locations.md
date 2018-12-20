@@ -1,8 +1,9 @@
 ---
-title: Sélectionner les emplacements d’installation dans Visual Studio 2017
-description: Découvrez comment réduire l’empreinte de l’installation sur votre lecteur système en changeant l’emplacement du cache de téléchargement, des composants partagés, des SDK et des outils sur d’autres lecteurs.
+title: Sélectionner les emplacements d'installation
+description: Découvrez comment réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en plaçant le cache de téléchargement, les composants partagés, les kits SDK et les outils sur d’autres lecteurs.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +16,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295031"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159839"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Sélectionner les emplacements d’installation dans Visual Studio 2017
 
-**Nouveauté de la version 15.7** : vous pouvez désormais réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en changeant l’emplacement de certains de ses fichiers. Plus précisément, vous pouvez utiliser un autre emplacement pour le cache de téléchargement, les composants partagés, les SDK et les fichiers des outils.
+**Nouveautés de la version 15.7** : Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système en changeant l’emplacement de certains de ses fichiers. Plus précisément, vous pouvez utiliser un autre emplacement pour le cache de téléchargement, les composants partagés, les SDK et les fichiers des outils.
 
    > [!NOTE]
    > L’emplacement d’installation de certains outils et SDK est régi par des règles différentes. Ces outils et SDK sont toujours installés sur votre lecteur système, même si vous choisissez un autre emplacement.

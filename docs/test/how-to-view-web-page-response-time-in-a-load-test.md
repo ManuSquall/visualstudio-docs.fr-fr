@@ -1,5 +1,5 @@
 ---
-title: Temps de réponse d’une page dans un test de charge dans Visual Studio
+title: Temps de réponse d’une page dans un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821836"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068093"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Guide pratique pour afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procédure : afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 
 Le temps nécessaire pour charger chaque page web est appelé *temps de réponse*. Lorsque vous créez un test de performances web, vous pouvez définir un objectif de temps de réponse pour chaque requête de page web de votre test de performances web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Si vous exécutez votre test de performances web sous contrainte dans un test de charge, vous pouvez analyser les informations suivantes pour chaque page :
 
@@ -36,8 +38,6 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
 -   Analyse des temps de réponse de la page web dans la vue Graphiques
 
 ## <a name="view-response-time-data-in-a-table"></a>Afficher les données de temps de réponse dans un tableau
-
-### <a name="to-view-response-time-data-in-a-table"></a>Pour consulter les données de temps de réponse dans un tableau
 
 1. Dans **l’Analyseur de test de charge**, choisissez **Tables** dans la barre d’outils pour vérifier que la grille des tables est affichée.
 
@@ -61,7 +61,7 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
    |**Max**|Temps de réponse maximum de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Écart type**|Par défaut, les données d'écart type ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
    |**Temps de réponse de la page**|Temps de réponse moyen pour toutes les requêtes effectuées pour la page web.|
-   |**Objectif**|Objectif de temps de réponse de la page. Il s'agit d'une valeur constante pour la page. **Remarque :** L’objectif de temps de réponse de la page n’apparaît que quand l’objectif a été défini pour la requête dans le test de performances web.|
+   |**Objectif**|Objectif de temps de réponse de la page. Il s'agit d'une valeur constante pour la page. **Remarque :**  L’objectif de temps de réponse de la page apparaît uniquement quand l’objectif a été défini pour la requête dans le test de performances web.|
    |**% correspondant à l’objectif**|Pourcentage de requêtes effectuées pour la page web qui a atteint l’objectif de temps de réponse.|
 
    Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -70,7 +70,7 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
 
 Vous pouvez également consulter les données de temps de réponse dans un graphique pour savoir comment elles changent avec le temps pendant votre test de charge. Ces données sont particulièrement utiles si votre modèle de charge augmente pendant l’exécution du test (par exemple, si vous utilisez le modèle de charge par étape). Pour plus d’informations, consultez [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>Pour consulter les données de temps de réponse dans un graphique
+Pour consulter les données de temps de réponse dans un graphe :
 
 1. Dans **l’Analyseur de test de charge**, choisissez **Graphiques** dans la barre d’outils pour vérifier que le graphique est affiché.
 

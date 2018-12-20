@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612673"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160021"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -66,7 +66,7 @@ Quand vous exécutez normalement une application, vous voyez les erreurs et les 
 
 Quand vous exécutez une application dans un débogueur (autrement dit en *mode débogage*), le débogueur surveille activement tout ce qui se produit durant l’exécution du programme. Cela vous permet également de suspendre l’exécution de l’application à tout moment pour examiner son état, et de parcourir votre code ligne par ligne afin d’observer chaque détail à mesure qu’il se produit.
 
-Dans Visual Studio, vous basculez en mode débogage à l’aide de la touche **F5** (ou de la commande de menu **Déboguer** > **Démarrer le débogage** ou du bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage")) dans la barre d’outils Débogage. Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles.
+Dans Visual Studio, vous basculez en mode débogage à l’aide de la touche **F5** (ou de la commande de menu **Déboguer** > **Démarrer le débogage** ou du bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils Débogage). Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles.
 
 Si aucune exception ne s’est produite, vous avez probablement une bonne idée de l’endroit où rechercher le problème dans votre code. C’est dans ce cas-là que vous utilisez des *points d’arrêt* avec le débogueur afin d’examiner votre code plus attentivement. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d’arrêt, Visual Studio interrompt l’exécution du code à l’emplacement du point d’arrêt pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire ou la séquence d’exécution du code.
 
@@ -78,9 +78,9 @@ Pour illustrer ces concepts, nous allons vous guider à travers un exemple de co
 
 Nous allons maintenant créer une application qui comporte quelques bogues.
 
-1. Visual Studio et la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, en fonction du type d’application que vous souhaitez créer, doivent être installés sur votre ordinateur.
+1. Visual Studio et la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, en fonction du type d’application que vous souhaitez créer, doivent être installés.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
 
     Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir des outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop** (ou **Développement multiplateforme .NET Core**), puis **Modifier**.
 
@@ -244,7 +244,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     ![Erreur de syntaxe](../debugger/media/beginners-no-definition.png)
 
-    Bien que nous ayons défini chaque galaxie avec un objet de type `GType` (qui a la propriété `MGType`), le débogueur ne reconnaît pas l’objet `theGalaxy` comme un objet de type `GType`. Que se passe-t-il ? Vous devez examiner tout code qui définit le type de galaxie. Vous constatez alors que la classe `GType` a indubitablement une propriété `MyGType`, mais quelque chose ne va pas. Le message d’erreur concernant `object` s’avère être l’indice : pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
+    Bien que nous ayons défini chaque galaxie avec un objet de type `GType` (qui a la propriété `MyGType`), le débogueur ne reconnaît pas l’objet `theGalaxy` comme un objet de type `GType`. Que se passe-t-il ? Vous devez examiner tout code qui définit le type de galaxie. Vous constatez alors que la classe `GType` a indubitablement une propriété `MyGType`, mais quelque chose ne va pas. Le message d’erreur concernant `object` s’avère être l’indice : pour l’interpréteur de langage, le type semble être un objet de type `object` au lieu d’un objet de type `GType`.
 
 1. En examinant votre code associé à la définition du type de galaxie, vous constatez que la propriété `GalaxyType` de la classe `Galaxy` est spécifiée comme `object` au lieu de `GType`.
 
@@ -325,11 +325,11 @@ Une fois identifiée la région de code à problème, utilisez le débogueur pou
 * Vérifiez si votre application exécute le code prévu. (Par exemple, dans l’exemple d’application, nous nous attendions à ce que le code pour l’instruction switch affecte la valeur Irregular comme type de galaxie, mais l’application a ignoré le code à cause de la faute de frappe.)
 
 > [!TIP]
-> Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *à votre place* uniquement s’il connaît l’intention de votre code. Un outil ne peut avoir connaissance de l’intention de votre code que si vous, le développeur, exprimez cette intention. Vous devez pour cela écrire des [tests unitaires](../test/improve-code-quality.md).
+> Vous utilisez un débogueur pour vous aider à trouver des bogues. Un outil de débogage peut trouver des bogues *à votre place* uniquement s’il connaît l’intention de votre code. Un outil ne peut avoir connaissance de l’intention de votre code que si vous, le développeur, exprimez cette intention. Vous devez pour cela écrire des [tests unitaires](../test/improve-code-quality.md). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cet article, vous avez découvert quelques concepts généraux liés au débogage. Maintenant, vous pouvez commencer à apprendre à déboguer avec Visual Studio.
+Dans cet article, vous avez découvert quelques concepts généraux liés au débogage. Vous pouvez à présent en découvrir plus sur le débogueur.
 
 > [!div class="nextstepaction"]
 > [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)

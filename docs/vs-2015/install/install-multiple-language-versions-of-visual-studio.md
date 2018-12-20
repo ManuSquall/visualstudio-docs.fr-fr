@@ -1,5 +1,5 @@
 ---
-title: Installer plusieurs Versions linguistiques de Visual Studio | Microsoft Docs
+title: Installer plusieurs Versions linguistiques | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,28 +17,27 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9cb869cac5059592838fe7e0ef371c4b40e1fb4d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 4dff5f290461ee3863a533adb79f2af0b32202b2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723832"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052982"
 ---
-# <a name="install-multiple-language-versions-of-visual-studio"></a>Installer plusieurs Versions linguistiques de Visual Studio
+# <a name="install-multiple-language-versions-of-visual-studio"></a>Installer des versions multilingues de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour la documentation la plus récente pour Visual Studio 2017, consultez [packs de langue d’installation dans Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio#install-language-packs).
 
-En installant un ou plusieurs packages de langue, vous pouvez exécuter Visual Studio 2015 dans d’autres langues sur le même ordinateur. Vous devez obtenir un module linguistique différent pour chaque langue que vous souhaitez installer.  
-  
-## <a name="important-considerations"></a>Points importants à prendre en considération  
-  
--   Quand vous installez un module linguistique, les fichiers de ressources pour les fonctionnalités installées sont automatiquement installés pour chaque version linguistique.  
-  
--   Les packages de services Visual Studio s’appliquent à toutes les versions linguistiques installées de Visual Studio. Vous n’avez plus besoin d’installer un package de services pour chaque version linguistique de Visual Studio que vous avez installée.  
-  
--   Vous pouvez désinstaller les modules linguistiques en utilisant le mode maintenance du programme d’installation de Visual Studio. Ouvrez le **Panneau de configuration**, ouvrez **Programmes et fonctionnalités**, choisissez votre édition de Visual Studio, puis choisissez **Désinstaller/Modifier**.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Microsoft Language Interface Packs (LIP) et Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)   
- [Installer Visual Studio](../install/install-visual-studio-2015.md)
+En installant un ou plusieurs packages de langue, vous pouvez exécuter Visual Studio 2015 dans d’autres langues sur le même ordinateur. Vous devez obtenir un module linguistique différent pour chaque langue que vous souhaitez installer.
+
+## <a name="important-considerations"></a>Points importants à prendre en considération
+
+-   Quand vous installez un module linguistique, les fichiers de ressources pour les fonctionnalités installées sont automatiquement installés pour chaque version linguistique.
+
+-   Les packages de services Visual Studio s’appliquent à toutes les versions linguistiques installées de Visual Studio. Vous n’avez plus besoin d’installer un package de services pour chaque version linguistique de Visual Studio que vous avez installée.
+
+-   Vous pouvez désinstaller les modules linguistiques en utilisant le mode maintenance du programme d’installation de Visual Studio. Ouvrez le **Panneau de configuration**, ouvrez **Programmes et fonctionnalités**, choisissez votre édition de Visual Studio, puis choisissez **Désinstaller/Modifier**.
+
+## <a name="see-also"></a>Voir aussi
+ [Microsoft Language Interface Packs (LIP) et Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md) [installer Visual Studio](../install/install-visual-studio-2015.md)

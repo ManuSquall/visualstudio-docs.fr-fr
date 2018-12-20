@@ -1,6 +1,6 @@
 ---
-title: Déployer des applications UWP à partir de Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Déployer des applications UWP | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726315"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056809"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio
 
@@ -29,7 +29,7 @@ La fonctionnalité de déploiement de Visual Studio génère et inscrit les appl
 
 - Lorsque la cible est un périphérique distant, Visual Studio copie les fichiers requis sur l'ordinateur distant et enregistre l'appareil sur ce périphérique.
 
-Le déploiement est automatique lorsque vous déboguez votre application à partir de Visual Studio à l’aide de la **démarrer le débogage** option (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5). Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :
+Le déploiement est automatique lorsque vous déboguez une application depuis Visual Studio à l'aide de l'option Démarrer le débogage** (clavier : F5) ou le **démarrer sans débogage** option (clavier : CTRL + F5 Vous pouvez aussi déployer votre application manuellement. Le déploiement manuel est utile dans les scénarios suivants :
 
 - Test ad hoc sur un ordinateur local ou distant.
 
@@ -117,6 +117,6 @@ Pour configurer le déploiement afin qu'il démarre automatiquement une session 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Les options de déploiement à distance avancées](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Options avancées de déploiement à distance](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Déboguer un package d'application installé](../debugger/debug-installed-app-package.md)
 - [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

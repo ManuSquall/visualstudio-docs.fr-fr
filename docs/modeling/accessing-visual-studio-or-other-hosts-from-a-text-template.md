@@ -1,5 +1,6 @@
 ---
 title: Accès à Visual Studio ou à d'autres hôtes à partir d'un modèle de texte
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,25 +10,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 657abba976e0f0d167651943289296d340981e62
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bb7bce5cb047018540599c9488fa4471dad2d1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946515"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059296"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou autres hôtes à partir d’un modèle de texte
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou d’autres hôtes à partir d’un modèle de texte
 
 Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés qui sont exposées par l’hôte qui exécute le modèle. Visual Studio est un exemple d’un ordinateur hôte.
 
 > [!NOTE]
-> Vous pouvez utiliser les propriétés et méthodes de l’hôte dans les modèles de texte standard, mais pas dans *prétraité* modèles de texte.
+> Vous pouvez utiliser les propriétés et méthodes de l’hôte dans les modèles de texte standard, mais pas dans *prétraitée* modèles de texte.
 
 ## <a name="obtain-access-to-the-host"></a>Obtenir l’accès à l’hôte
 
 Pour accéder à l’ordinateur hôte, définissez `hostspecific="true"` dans la `template` directive. Vous pouvez désormais utiliser `this.Host`, qui a le type <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Le <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> type possède des membres que vous pouvez utiliser, par exemple, pour résoudre les noms de fichiers et de consigner les erreurs.
 
-### <a name="resolve-file-names"></a>Résoudre les noms de fichiers
+### <a name="resolve-file-names"></a>Résoudre les noms de fichier
 
 Pour rechercher le chemin d’accès complet d’un fichier relatif au modèle de texte, utilisez `this.Host.ResolvePath()`.
 
@@ -45,7 +46,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>Afficher les Messages d’erreur
 
-Cet exemple enregistre des messages lorsque vous transformez le modèle. Si l’hôte est Visual Studio, les erreurs sont ajoutés à la **liste d’erreurs**.
+Cet exemple montre comment les messages des journaux lorsque vous transformez le modèle. Si l’hôte est Visual Studio, les erreurs sont ajoutés à la **liste d’erreurs**.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -61,9 +62,9 @@ Cet exemple enregistre des messages lorsque vous transformez le modèle. Si l’
 #>
 ```
 
-## <a name="use-the-visual-studio-api"></a>Utilisez l’API Visual Studio
+## <a name="use-the-visual-studio-api"></a>Utiliser l’API Visual Studio
 
-Si l’exécution d’un modèle de texte dans Visual Studio, vous pouvez utiliser `this.Host` pour accéder aux services fournis par Visual Studio et des packages ou les extensions qui sont chargées.
+Si vous exécutez un modèle de texte dans Visual Studio, vous pouvez utiliser `this.Host` pour accéder aux services fournis par Visual Studio et des packages ou les extensions qui sont chargées.
 
 Définissez hostspecific = « true » et effectuez un cast `this.Host` à <xref:System.IServiceProvider>.
 
@@ -81,6 +82,6 @@ Cet exemple obtient l’API Visual Studio, <xref:EnvDTE.DTE>, en tant que servic
 Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
-## <a name="use-hostspecific-with-template-inheritance"></a>Utilisez hostSpecific avec héritage de modèle
+## <a name="use-hostspecific-with-template-inheritance"></a>Utilisez hostSpecific avec l’héritage de modèle
 
-Spécifiez `hostspecific="trueFromBase"` si vous utilisez également le `inherits` attribut, et si vous héritez d’un modèle qui spécifie `hostspecific="true"`. Si vous ne le faites pas, vous pouvez obtenir un avertissement qui du compilateur de la propriété `Host` a été déclarée deux fois.
+Spécifiez `hostspecific="trueFromBase"` si vous utilisez également le `inherits` attribut, et si vous héritez d’un modèle qui spécifie `hostspecific="true"`. Si vous ne le faites, vous pouvez obtenir un avertissement qui du compilateur de la propriété `Host` a été déclarée deux fois.

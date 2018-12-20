@@ -1,6 +1,6 @@
 ---
-title: Parcourir le code avec le débogueur Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Parcourir le code avec le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826735"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068271"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
-Le débogueur Visual Studio peut vous aider à naviguer dans le code pour inspecter l’état d’une application et afficher ses flux d’exécution. Vous pouvez utiliser des raccourcis clavier, les commandes de débogage, les points d’arrêt et les autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Vous êtes familiarisé avec les commandes de navigation du débogueur et raccourcis accélère et plus faciles à trouver et résoudre les problèmes de l’application.  S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+Le débogueur Visual Studio peut vous aider à naviguer dans le code pour inspecter l’état d’une application et afficher ses flux d’exécution. Vous pouvez utiliser des raccourcis clavier, les commandes de débogage, les points d’arrêt et les autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Vous êtes familiarisé avec les commandes de navigation du débogueur et raccourcis accélère et plus faciles à trouver et résoudre les problèmes de l’application.  S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
   
 ## <a name="basic-debugging"></a>Bases du débogage  
 
@@ -41,7 +41,7 @@ Plus fenêtres du débogueur, comme le **Modules** et **espion** windows, sont d
 
 En mode arrêt, exécution de l’application est interrompue lors de fonctions, variables, et les objets restent en mémoire. Vous pouvez examiner leurs positions et états à la recherche de violations ou de bogues. Pour certains types de projets, vous pouvez également effectuer des ajustements à l’application en mode arrêt. Pour une vidéo montrant ces fonctionnalités, consultez [mise en route avec le débogueur](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Si vous interrompez dans le code n’ayant pas source ou au symbole (*.pdb*) les fichiers chargés, le débogueur affiche un **fichiers sources introuvables** ou **symboles introuvables** page qui peut vous aider à Rechercher et charger les fichiers. Consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si vous ne pouvez pas charger les fichiers sources ou de symboles, vous pouvez toujours déboguer les instructions d’assembly dans le **désassemblage** fenêtre. 
+Si vous interrompez dans le code n’ayant pas source ou au symbole (*.pdb*) les fichiers chargés, le débogueur affiche un **fichiers sources introuvables** ou **symboles introuvables** page qui peut vous aider à Rechercher et charger les fichiers. Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si vous ne pouvez pas charger les fichiers sources ou de symboles, vous pouvez toujours déboguer les instructions d’assembly dans le **désassemblage** fenêtre. 
 
 Vous n’êtes pas obligé toujours démarrer le débogage en démarrant une application au début. Vous pouvez également appuyer sur **F11** à [détaillé code](#BKMK_Step_into__over__or_out_of_the_code), appuyez sur **F10** à [ignorer le code](#BKMK_Step_over_Step_out), ou [exécuter jusqu'à un emplacement spécifique ou fonction](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).    
 
@@ -55,7 +55,7 @@ Si vous devez rechercher le point d’entrée dans votre application, commencez 
 
 Pour arrêter sur chaque ligne de code ou instruction pendant le débogage, utilisez **déboguer** > **pas à pas détaillé**, ou appuyez sur **F11**.  
 
-Le débogueur exécute les instructions de code, les lignes non physiques. Par exemple, un `if` clause peut être écrit sur une seule ligne :  
+Le débogueur exécute les instructions de code, les lignes non physiques. Par exemple, une clause `if` peut être écrite sur une ligne :  
   
   ```csharp  
   int x = 42;  
@@ -93,13 +93,13 @@ Vous pouvez exécuter directement à un emplacement spécifique ou la fonction l
   
 Pour définir un point d’arrêt simple dans votre code, cliquez sur la marge gauche en regard de la ligne de code où vous souhaitez interrompre l’exécution. Vous pouvez également sélectionner la ligne et appuyez sur **F9**, sélectionnez **déboguer** > **point d’arrêt**, ou avec le bouton droit et sélectionnez **point d’arrêt**  >  **Insérer le point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge gauche en regard de la ligne de code. Le débogueur interrompt l’exécution juste avant la ligne s’exécute.
   
-![Définissez un point d’arrêt](../debugger/media/dbg_basics_setbreakpoint.png "définir un point d’arrêt")  
+![Définir un point d’arrêt](../debugger/media/dbg_basics_setbreakpoint.png "Définir un point d’arrêt")  
   
 Les points d'arrêt dans Visual Studio fournissent un ensemble enrichi de fonctionnalités supplémentaires, telles que les points d'arrêt et les points de trace conditionnels. Pour plus d’informations, consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).  
   
 ### <a name="run-to-a-function-breakpoint"></a>Exécuter un point d’arrêt (fonction)  
 
-Vous pouvez indiquer au débogueur d’exécuter jusqu'à ce qu’il atteigne une fonction spécifiée. Vous pouvez spécifier la fonction par nom, ou vous pouvez la choisir à partir de la pile des appels.  
+Vous pouvez indiquer au débogueur d’exécuter jusqu'à ce qu’il atteigne une fonction spécifiée. Vous pouvez spécifier la fonction par nom ou la sélectionner dans la pile des appels.  
   
 **Pour spécifier un point d’arrêt de la fonction par nom**
 
@@ -131,7 +131,7 @@ Pour exécuter à l’emplacement du curseur, dans le code source ou la **pile d
 
 Pendant la suspension dans le débogueur, vous pouvez pointer sur une instruction dans le code source ou la **désassemblage** , puis sélectionnez le **exécuter l’exécution jusqu’ici** icône de flèche verte. À l’aide de **exécuter jusqu’au clic** élimine la nécessité de définir un point d’arrêt temporaire.
 
-![Exécuter jusqu’au clic](../debugger/media/dbg-run-to-click.png "exécuter jusqu’au clic") 
+![Exécuter jusqu’au clic](../debugger/media/dbg-run-to-click.png "Exécuter jusqu’au clic") 
 
 > [!NOTE]
 > **Exécuter jusqu’au clic** est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -183,9 +183,9 @@ Pour charger des symboles de Microsoft, consultez [configurer des emplacements d
 1. Dans le **Modules** fenêtre, vous pouvez indiquer à qui les modules ont des symboles chargés dans le **état du symbole** colonne. Cliquez sur le module que vous souhaitez charger des symboles pour, puis sélectionnez **charger les symboles**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé  
- Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer l’exécution pas à pas détaillé des propriétés ou des opérateurs, choisissez **déboguer** > **Options**. Sur le **débogage** > **général** page, désactivez le **pas à pas principal des propriétés et les opérateurs (managé uniquement)** case à cocher.
+ Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer l’exécution pas à pas détaillé des propriétés ou des opérateurs, choisissez **déboguer** > **Options**. Dans la page **Débogage** > **Général**, désactivez la case à cocher **Pas à pas principal dans les propriétés et les opérateurs (Managé uniquement)**.
 
 ## <a name="see-also"></a>Voir aussi
- [Quel est le débogage ?](../debugger/what-is-debugging.md)  
- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
+ [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) 

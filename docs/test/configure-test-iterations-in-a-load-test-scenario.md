@@ -1,5 +1,5 @@
 ---
-title: Configuration des itérations de tests pour un test de charge dans Visual Studio
+title: Configuration des itérations de tests pour un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176139"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055685"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurer les itérations de tests dans un scénario de test de charge
 
 Pour configurer les paramètres d’itération de test, modifiez un scénario de test de charge en utilisant l’éditeur de test de charge et la fenêtre **Propriétés**. Par défaut, un scénario de test de charge est configuré sans spécifier d'itérations de test maximum. Vous avez la possibilité de configurer le nombre maximum d'itérations dans le scénario et la durée de pause entre deux itérations.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Spécifier le nombre maximal d’itérations de tests pour un scénario
 

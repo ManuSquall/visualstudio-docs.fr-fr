@@ -1,5 +1,5 @@
 ---
-title: Outils de test Visual Studio
+title: Outils de test
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321058"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068245"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 

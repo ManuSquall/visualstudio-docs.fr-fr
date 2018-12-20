@@ -1,6 +1,6 @@
 ---
-title: 'Procédure pas à pas : Débogage d’un formulaire Windows | Microsoft Docs'
-ms.custom: ''
+title: Débogage d’un formulaire Windows | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349164"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066754"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
-Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
+# <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
+Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, C#, ou C++.  
   
  Tout d’abord, vous devez fermer les solutions ouvertes.  
   
@@ -40,7 +40,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 -   Si vous avez déjà ouvert une solution ouverte, fermez-la. (Sur le **fichier** menu, sélectionnez **fermer la Solution**.)  
   
-## <a name="create-a-new-windows-form"></a>Créer un nouveau formulaire Windows  
+## <a name="create-a-new-windows-form"></a>Créer un Windows Form  
  Ensuite, vous allez créer un nouveau formulaire Windows.  
   
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Pour créer le formulaire Windows pour cette procédure pas à pas  
@@ -49,9 +49,9 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#**, ou **Visual C++** nœud, puis  
+2.  Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#** , ou **Visual C++** nœud, puis  
   
-    1.  Pour Visual Basic ou Visual c#, sélectionnez **Windows Desktop** > **application de formulaire Windows**.  
+    1.  Pour Visual Basic ou Visual C#, sélectionnez **Windows Desktop** > **application de formulaire Windows**.  
   
     2.  Pour Visual C++, sélectionnez **Application de bureau Windows**.  
   
@@ -73,7 +73,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
      Vous accédez alors à la page de codes. Le curseur doit se trouver dans `button1_Click`.  
   
-10. Dans la fonction `button1_Click`., ajoutez le code suivant :  
+10. Dans la fonction `button1_Click`, ajoutez le code suivant :  
   
     ```vb  
     textBox1.Text = "Button was clicked!"
@@ -89,7 +89,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 11. Dans le menu **Générer**, sélectionnez **Générer la solution**.  
   
-     Le projet doit se générer sans erreurs.  
+     Le projet doit être généré sans erreur.  
   
 ## <a name="debug-your-form"></a>Déboguer votre formulaire  
  Maintenant, vous êtes prêt à commencer le débogage.  
@@ -110,12 +110,12 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [des points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.  
+     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [Points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.  
   
     > [!NOTE]
     >  Vous pouvez également cliquer sur n’importe quelle ligne de code, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.  
   
-2.  ON le **déboguer** menu, choisissez **Démarrer**.  
+2.  Dans le menu **Déboguer**, choisissez **Démarrer**.  
   
      Le formulaire Windows commence à s’exécuter.  
   
@@ -125,13 +125,13 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 4.  Sur le **déboguer** menu, choisissez **Windows**, puis **espion**, puis cliquez sur **Espion1**.  
   
-5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic ou Visual c#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
+5.  Dans le **Espion1** fenêtre, cliquez sur une ligne vide. Dans le **nom** colonne, tapez `textBox1.Text` (si vous utilisez Visual Basic ou Visual C#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur ENTRÉE.  
   
      Le **Espion1** fenêtre affiche la valeur de cette variable entre guillemets :  
   
     `""`  
  
-6.  Sur le **déboguer** menu, choisissez **pas à pas détaillé**.  
+6.  Dans le menu **Déboguer**, choisissez **Pas à pas détaillé**.  
   
      La valeur de TextBox1.Text, dans le **Espion1** fenêtre pour :  
   
@@ -147,7 +147,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
      Cette opération supprime le point d’arrêt à partir de votre code.  
   
-10. Sur le **déboguer** menu, choisissez **arrêter le débogage**.  
+10. Dans le menu **Déboguer**, choisissez **Arrêter le débogage**.  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>Attacher à votre Application de formulaire Windows pour le débogage  
  Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez attacher le débogueur à un processus en cours d'exécution. Si vous utilisez une édition Express, cette fonctionnalité n’est pas pris en charge.  

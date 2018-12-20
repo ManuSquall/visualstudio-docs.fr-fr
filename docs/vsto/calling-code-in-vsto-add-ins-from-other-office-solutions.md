@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904646"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248096"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Appeler du code dans des Compléments VSTO à partir d’autres solutions Office
   Vous pouvez exposer un objet inclus dans votre complément VSTO à d’autres solutions, notamment d’autres solutions Microsoft Office. Cette possibilité s’avère utile si votre complément VSTO propose un service que vous voulez permettre à d’autres solutions d’utiliser. Par exemple, si vous avez un VSTO Add-in pour Microsoft Office Excel qui effectue des calculs sur des données financières à partir d’un service Web, les autres solutions peuvent effectuer ces calculs en appelant le complément VSTO Excel lors de l’exécution.  
@@ -77,7 +77,7 @@ ms.locfileid: "49904646"
   
    -   Définissez la propriété **Inscrire pour COM Interop** dans le projet où vous définissez l'interface. Cette propriété est nécessaire uniquement si vous souhaitez permettre aux clients d’utiliser une liaison anticipée pour appeler le composant logiciel complément VSTO.  
   
-   L'exemple de code suivant présente une classe `AddInUtilities` avec une méthode `ImportData` que d'autres solutions peuvent appeler. Pour voir ce code dans le contexte d’une procédure pas à pas plus volumineux, consultez [procédure pas à pas : appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   L'exemple de code suivant présente une classe `AddInUtilities` avec une méthode `ImportData` que d'autres solutions peuvent appeler. Pour voir ce code dans le contexte d’une procédure pas à pas plus volumineux, consultez [procédure pas à pas : Appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904646"
  Pour plus d’informations sur l’utilisation des threads dans les solutions Office, consultez [Threading prise en charge dans Office](../vsto/threading-support-in-office.md).  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Substituez la méthode RequestComAddInAutomationService  
- L'exemple de code suivant montre comment remplacer <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> dans la classe `ThisAddIn` de votre complément VSTO. L’exemple suppose que vous avez défini une classe nommée `AddInUtilities` que vous souhaitez exposer à d’autres solutions. Pour voir ce code dans le contexte d’une procédure pas à pas plus volumineux, consultez [procédure pas à pas : appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ L'exemple de code suivant montre comment remplacer <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> dans la classe `ThisAddIn` de votre complément VSTO. L’exemple suppose que vous avez défini une classe nommée `AddInUtilities` que vous souhaitez exposer à d’autres solutions. Pour voir ce code dans le contexte d’une procédure pas à pas plus volumineux, consultez [procédure pas à pas : Appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904646"
    La façon que vous utilisez la valeur de retour de la propriété COMAddIn.Object est différente pour les clients VBA et les clients non-VBA. Pour les clients hors processus, du code supplémentaire est nécessaire pour éviter une éventuelle condition de concurrence.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Accéder aux objets de solutions VBA  
- L’exemple de code suivant montre comment utiliser VBA pour appeler une méthode qui est exposée par un composant logiciel complément VSTO. Cette macro VBA appelle une méthode nommée `ImportData` qui est définie dans un complément nommé **ExcelImportData**. Pour voir ce code dans le contexte d’une procédure pas à pas plus volumineux, consultez [procédure pas à pas : appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ L’exemple de code suivant montre comment utiliser VBA pour appeler une méthode qui est exposée par un composant logiciel complément VSTO. Cette macro VBA appelle une méthode nommée `ImportData` qui est définie dans un complément nommé **ExcelImportData**. Pour voir ce code dans le contexte d’une procédure pas à pas plus volumineux, consultez [procédure pas à pas : Appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -147,9 +147,9 @@ utilities.ImportData();
   
 ## <a name="see-also"></a>Voir aussi  
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
- [Procédure pas à pas : Appel de code dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [Procédure pas à pas : Code d’appel dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Développer des solutions Office](../vsto/developing-office-solutions.md)   
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Personnaliser les fonctionnalités d’interface utilisateur à l’aide des interfaces d’extensibilité](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

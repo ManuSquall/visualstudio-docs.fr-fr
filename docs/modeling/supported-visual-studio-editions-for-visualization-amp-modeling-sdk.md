@@ -1,5 +1,6 @@
 ---
-title: Prise en charge des éditions de Visual Studio pour la visualisation &amp; Modeling SDK
+title: Prise en charge des éditions de Visual Studio pour Visualization and Modeling SDK
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +12,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3dce04e4460222bcd0fcf2cebd747d9dd95f14d4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 65014d8c697adbf5fb8e13d28708090360bb9c17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966750"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049948"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour la visualisation &amp; Modeling SDK
+# <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Éditions de Visual Studio prises en charge pour la visualisation et la modélisation du Kit de développement logiciel (SDK)
+
 Les éléments suivants sont des listes d’éditions de Visual Studio qui sont prises en charge avec [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dans les environnements de création et de déploiement. Pour plus d’informations sur ces éditions, consultez Microsoft Visual Studio [centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Édition de création
- Pour définir un DSL, vous devez avoir installé les composants suivants :
+
+Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 |||
 |-|-|
@@ -33,7 +36,8 @@ Les éléments suivants sont des listes d’éditions de Visual Studio qui sont 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>Éditions de déploiement
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous créez :
+
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous créez :
 
 -   Visual Studio Enterprise
 
@@ -44,7 +48,7 @@ Les éléments suivants sont des listes d’éditions de Visual Studio qui sont 
 -   Package redistribuable Visual Studio Shell (mode isolé) package redistribuable
 
 > [!NOTE]
->  Pour rendre un DSL puisse s’exécuter sur un produit Shell, vous devez définir le **pris en charge les éditions de Visual Studio** champ dans le manifeste d’Extension. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+> Pour rendre un DSL puisse s’exécuter sur un produit Shell, vous devez définir le **pris en charge les éditions de Visual Studio** champ dans le manifeste d’Extension. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Voir aussi
 

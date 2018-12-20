@@ -1,5 +1,5 @@
 ---
-title: Créer un test de service web dans Visual Studio
+title: Créer un test de service web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380666"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053397"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
+# <a name="how-to-create-a-web-service-test"></a>Procédure : Créer un test de service web
 
 Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Spécifications**
+**Spécifications**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Pour tester un service web
 
@@ -69,7 +71,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
 12. Assignez un nom et une valeur au paramètre de chaîne de requête. Dans l’exemple précédent, le nom est `op` et la valeur `CheckStatus`. Cela identifie l'opération de service web à exécuter.
 
     > [!NOTE]
-    > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
+    > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n’importe quelle valeur d’espace réservé par des valeurs liées aux données à l’aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
 13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
 

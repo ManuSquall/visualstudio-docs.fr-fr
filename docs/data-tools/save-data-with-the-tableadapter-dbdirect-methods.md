@@ -18,34 +18,36 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2509e7629898b0ad6323dc40be147d617e5f70d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: ef1860274c9234774b8af42525a0215d9468a858
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174862"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304572"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
-Cette procédure pas à pas fournit des instructions détaillées pour l’exécution des instructions SQL directement sur une base de données en utilisant les méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau de contrôle sur vos mises à jour de la base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et les procédures stockées en appelant l’individu `Insert`, `Update`, et `Delete` méthodes selon les besoins de votre application (par opposition à surchargées `Update` méthode qui effectue la mise à jour Instructions INSERT et DELETE dans un seul appel).
 
- Pendant cette procédure pas à pas, vous allez apprendre à :
+Cette procédure pas à pas fournit des instructions détaillées pour l’exécution des instructions SQL directement sur une base de données en utilisant les méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau élevé de contrôle sur vos mises à jour de base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et les procédures stockées en appelant l’individu `Insert`, `Update`, et `Delete` méthodes selon les besoins de votre application (par opposition à surchargées `Update` méthode qui effectue la mise à jour Instructions INSERT et DELETE dans un seul appel).
 
--   Créer un nouveau **Windows Forms Application**.
+Pendant cette procédure pas à pas, vous allez apprendre à :
+
+-   Créer une **application Windows Forms**.
 
 -   Créer et configurer un jeu de données avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
--   Sélectionnez le contrôle à créer sur le formulaire lorsque vous faites glisser des éléments à partir de la **des Sources de données** fenêtre. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-   Sélectionner le contrôle à créer dans le formulaire lors du déplacement d’éléments depuis la fenêtre **Sources de données**. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Créer un formulaire lié aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le formulaire.
+-   Créer un formulaire lié aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** sur le formulaire.
 
 -   Ajouter des méthodes pour accéder à la base de données directement et d’effectuer des insertions, mises à jour et suppressions.
 
 ## <a name="prerequisites"></a>Prérequis
+
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
 
-1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
+1. Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
 
-2.  Installer la base de données Northwind en suivant ces étapes :
+2. Installer la base de données Northwind en suivant ces étapes :
 
     1. Dans Visual Studio, ouvrez le **Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans Visual Studio Installer.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête**.
 
@@ -58,63 +60,64 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
 ## <a name="create-a-windows-forms-application"></a>Créer une application Windows Forms
- La première étape consiste à créer un **Windows Forms Application**.
 
-#### <a name="to-create-the-new-windows-project"></a>Pour créer un projet Windows
+La première étape consiste à créer un **Windows Forms Application**.
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **TableAdapterDbDirectMethodsWalkthrough**, puis choisissez **OK**.
 
-     Le **TableAdapterDbDirectMethodsWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet **TableAdapterDbDirectMethodsWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
- Cette étape utilise le **Assistant de Configuration de Source de données** pour créer une source de données basée sur le `Region` table dans la base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>Pour créer la source de données
+Cette étape utilise l’**Assistant Configuration de source de données** pour créer une source de données basée sur la table `Region` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  Sur le **données** menu, sélectionnez **afficher les Sources de données**.
+### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.
+1. Sur le **données** menu, sélectionnez **afficher les Sources de données**.
 
-3.  Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.
+   La fenêtre **Sources de données** s’ouvre.
 
-4.  Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :
+2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’**Assistant Configuration de source de données**.
+
+3. Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.
+
+4. Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :
 
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
          - ou -
 
-    -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.
+    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.
+5. Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.
 
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** s’affiche, sélectionnez **suivant**.
+6. Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** s’affiche, sélectionnez **suivant**.
 
-7.  Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.
+7. Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.
 
-8.  Sélectionnez le `Region` table, puis sélectionnez **Terminer**.
+8. Sélectionnez le `Region` table, puis sélectionnez **Terminer**.
 
-     Le **NorthwindDataSet** est ajouté à votre projet et le `Region` table s’affiche dans le **des Sources de données** fenêtre.
+     **NorthwindDataSet** est ajouté à votre projet et la table `Region` apparaît dans la fenêtre **Sources de données**.
 
 ## <a name="add-controls-to-the-form-to-display-the-data"></a>Ajouter des contrôles au formulaire pour afficher les données
- Créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Pour créer des données des contrôles sur le formulaire Windows liés
+Créez les contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** sur votre formulaire.
 
--   Faites glisser le **région** nœud à partir de la **des Sources de données** fenêtre vers le formulaire.
+Pour créer des contrôles liés aux données sur le formulaire Windows, faites glisser le **région** nœud à partir de la **des Sources de données** fenêtre vers le formulaire.
 
-     Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
+Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
 
-#### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Pour ajouter des boutons pour appeler les méthodes DbDirect individuelles de TableAdapter
+### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Pour ajouter des boutons pour appeler les méthodes DbDirect individuelles de TableAdapter
 
-1.  Faites glisser trois <xref:System.Windows.Forms.Button> des contrôles de la **boîte à outils** sur **Form1** (sous le **RegionDataGridView**).
+1. Faites glisser trois contrôles <xref:System.Windows.Forms.Button> depuis la **Boîte à outils** vers **Form1** (sous la **RegionDataGridView**).
 
-2.  Définissez les éléments suivants **nom** et **texte** propriétés sur chaque bouton.
+2. Définissez les propriétés **Name** et **Text** suivantes sur chaque bouton.
 
     |Name|Texte|
     |----------|----------|
@@ -122,36 +125,34 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
     |`UpdateButton`|**Mettre à jour**|
     |`DeleteButton`|**Supprimer**|
 
-#### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Pour ajouter du code afin d'insérer de nouveaux enregistrements dans la base de données
+### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Pour ajouter du code afin d'insérer de nouveaux enregistrements dans la base de données
 
-1.  Sélectionnez **InsertButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.
+1. Sélectionnez **InsertButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.
 
-2.  Remplacez le gestionnaire d'événements `InsertButton_Click` par le code suivant :
+2. Remplacez le gestionnaire d'événements `InsertButton_Click` par le code suivant :
 
      [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
      [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]
 
-#### <a name="to-add-code-to-update-records-in-the-database"></a>Pour ajouter du code afin de mettre à jour des enregistrements dans la base de données
+### <a name="to-add-code-to-update-records-in-the-database"></a>Pour ajouter du code afin de mettre à jour des enregistrements dans la base de données
 
-1.  Double-cliquez sur le **UpdateButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.
+1. Double-cliquez sur **UpdateButton** pour créer un gestionnaire d’événements pour l’événement Click et ouvrir votre formulaire dans l’éditeur de code.
 
-2.  Remplacez le gestionnaire d'événements `UpdateButton_Click` par le code suivant :
+2. Remplacez le gestionnaire d'événements `UpdateButton_Click` par le code suivant :
 
      [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
      [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]
 
-#### <a name="to-add-code-to-delete-records-from-the-database"></a>Pour ajouter du code pour supprimer des enregistrements à partir de la base de données
+### <a name="to-add-code-to-delete-records-from-the-database"></a>Pour ajouter du code pour supprimer des enregistrements à partir de la base de données
 
-1.  Sélectionnez **DeleteButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.
+1. Sélectionnez **DeleteButton** pour créer un gestionnaire d’événements pour l’événement click et ouvrir votre formulaire dans l’éditeur de code.
 
-2.  Remplacez le gestionnaire d'événements `DeleteButton_Click` par le code suivant :
+2. Remplacez le gestionnaire d'événements `DeleteButton_Click` par le code suivant :
 
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
 ## <a name="run-the-application"></a>Exécuter l'application
-
-#### <a name="to-run-the-application"></a>Pour exécuter l’application
 
 -   Sélectionnez **F5** pour exécuter l’application.
 
@@ -162,11 +163,12 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 -   Sélectionnez le **supprimer** bouton et vérifiez que l’enregistrement est supprimé de la grille.
 
 ## <a name="next-steps"></a>Étapes suivantes
- Selon les exigences de votre application, il existe plusieurs étapes, que vous souhaiterez peut-être effectuer après la création d’un formulaire lié aux données. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
+
+Selon les exigences de votre application, il existe plusieurs étapes, que vous souhaiterez peut-être effectuer après la création d’un formulaire lié aux données. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 
 -   Ajout d'une fonctionnalité de recherche au formulaire.
 
--   Ajout de tables supplémentaires au jeu de données en sélectionnant **configurer le jeu de données avec l’Assistant** depuis le **des Sources de données** fenêtre. Vous pouvez ajouter des contrôles pour afficher les données associées en faisant glisser les nœuds associés vers le formulaire. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
+-   Ajout de tables supplémentaires au dataset en sélectionnant **Configurer le DataSet à l’aide de l’Assistant** dans la fenêtre **Sources de données**. Vous pouvez ajouter des contrôles pour afficher les données associées en faisant glisser les nœuds associés vers le formulaire. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Voir aussi
 

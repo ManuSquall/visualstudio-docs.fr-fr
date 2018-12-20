@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225046"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389012"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales natives
 Les règles minimales natives de Microsoft vous concentrer sur les problèmes les plus critiques présents dans votre code natif, notamment les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets natifs.
@@ -37,7 +37,7 @@ Les règles minimales natives de Microsoft vous concentrer sur les problèmes le
 |[C6270](../code-quality/c6270.md)|Argument float manquant pour le formatage de la fonction|
 |[C6271](../code-quality/c6271.md)|Argument supplémentaire pour le formatage de la fonction|
 |[C6272](../code-quality/c6272.md)|Argument non float pour le formatage de la fonction|
-|[C6273](../code-quality/c6273.md)|Argument non entier pour le formatage de la fonction|
+|[C6273](../code-quality/c6273.md)|Argument de type non entier pour le formatage (fonction)|
 |[C6274](../code-quality/c6274.md)|Argument autre qu’un caractère pour le formatage de la fonction|
 |[C6276](../code-quality/c6276.md)|Cast de chaîne non valide|
 |[C6277](../code-quality/c6277.md)|Appel CreateProcess non valide|
@@ -102,7 +102,7 @@ Les règles minimales natives de Microsoft vous concentrer sur les problèmes le
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
 |[C28217](../code-quality/c28217.md)|Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier|
-|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, le paramètre de l'annotation ne correspond pas au paramètre trouvé dans le fichier|
+|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier|
 |[C28219](../code-quality/c28219.md)|Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation|
 |[C28220](../code-quality/c28220.md)|Expression d'entier attendue pour une annotation, le paramètre dans l'annotation|
 |[C28221](../code-quality/c28221.md)|Expression de chaîne attendue pour le paramètre dans l'annotation|

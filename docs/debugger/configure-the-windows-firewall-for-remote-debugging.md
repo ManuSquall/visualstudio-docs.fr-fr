@@ -1,6 +1,5 @@
 ---
 title: Configurer le pare-feu de Windows pour le débogage à distance | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,18 +9,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750934"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058595"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurer le pare-feu de Windows pour le débogage distant
 
 Sur un réseau protégé par le pare-feu Windows, le pare-feu doit être configuré pour autoriser le débogage à distance. Visual Studio et les outils de débogage à distance essaient d’ouvrir les ports corrects du pare-feu durant l’installation ou de démarrage, mais vous devrez peut-être également ouvrir des ports ou autoriser les applications manuellement. 
 
-Cette rubrique explique comment configurer le pare-feu Windows pour activer le débogage à distance sur Windows 10, 8/8.1 et 7 ; et les ordinateurs Windows Server 2012 R2, 2012 et 2008 R2. L’ordinateur distant et Visual Studio n’êtes pas obligé d’exécuter le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10, et l’ordinateur distant peut exécuter Windows Server 2012 R2.      
+Cette rubrique explique comment configurer le pare-feu Windows pour activer le débogage à distance sur Windows 10, 8/8.1 et 7 ; et les ordinateurs Windows Server 2012 R2, 2012 et 2008 R2. L’ordinateur distant et Visual Studio n’êtes pas obligé d’exécuter le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10 et l’ordinateur distant peut exécuter Windows Server 2012 R2.      
   
 >[!NOTE]
 >Les instructions pour configurer le pare-feu Windows diffèrent légèrement sur différents systèmes d’exploitation et pour les versions antérieures de Windows. Paramètres de Windows 8/8.1, Windows 10 et Windows Server 2012 utilisent le mot *application*, tandis que Windows 7 et Windows Server 2008 utilisent le mot *programme*.  
@@ -56,8 +55,8 @@ Pour le débogage distant, les ports suivants doivent être ouverts sur l’ordi
 
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|   
 |-|-|-|-|
-|4022|Entrant|TCP|Pour Visual Studio 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez [affectations de port du débogueur distant Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
-|4023|Entrant|TCP|Pour Visual Studio 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Ce port est uniquement utilisé à distance déboguer un processus 32 bits à partir d’une version 64 bits du débogueur distant. Pour plus d’informations, consultez [affectations de port du débogueur distant Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
+|4022|Entrant|TCP|Pour VS 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Pour plus d’informations, consultez [Affectations de port du débogueur distant de Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Entrant|TCP|Pour VS 2017. Le port numéro s’incrémente de 2 pour chaque version de Visual Studio. Ce port est uniquement utilisé à distance déboguer un processus 32 bits à partir d’une version 64 bits du débogueur distant. Pour plus d’informations, consultez [Affectations de port du débogueur distant de Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Sortant|UDP|(Facultatif) Requis pour la détection du débogueur distant.|    
   
 Si vous sélectionnez **utiliser le Mode compatibilité managé** sous **outils** > **Options** > **débogage**, ouvrez ces ports supplémentaires débogueur distant. Mode de compatibilité de débogueur managé permet un hérité, la version de Visual Studio 2010 du débogueur. 
@@ -72,7 +71,7 @@ Si votre stratégie de domaine nécessite la communication réseau soit effectu�
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|  
 |-|-|-|-|  
 |500, 4500|Sortant|UDP|Requis si votre stratégie de domaine nécessite que la communication réseau soit effectuée via IPSec.|  
-|80|Sortant|TCP|Requis pour déboguer le serveur web.|
+|80|Sortant|TCP|Requis pour le débogage du serveur web.|
 
 Pour permettre à des applications spécifiques via le pare-feu Windows, consultez [configurer le débogage à distance via le pare-feu de Windows](#configure-remote-debugging-through-windows-firewall). 
 

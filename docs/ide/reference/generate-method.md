@@ -1,5 +1,5 @@
 ---
-title: Générer une méthode dans Visual Studio
+title: Générer une méthode
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6d7d17810e53de80bfecff697e960613dc06a6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295850"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057176"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Générer une méthode dans Visual Studio
 
@@ -24,11 +24,11 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** vous permet d’ajouter immédiatement une méthode à une classe.
+**Quoi :** Vous permet d’ajouter immédiatement une méthode à une classe.
 
-**Quand :** vous introduisez une nouvelle méthode et souhaitez la déclarer correctement, automatiquement.
+**Quand :** Vous introduisez une nouvelle méthode et souhaitez la déclarer correctement, automatiquement.
 
-**Pourquoi :** vous pouvez déclarer la méthode et ses paramètres avant de l’utiliser, mais cette fonctionnalité le générera automatiquement la déclaration.
+**Pourquoi :** Vous pouvez déclarer la méthode et ses paramètres avant de l’utiliser, mais cette fonctionnalité génère automatiquement cette déclaration.
 
 ## <a name="how-to"></a>Procédure
 

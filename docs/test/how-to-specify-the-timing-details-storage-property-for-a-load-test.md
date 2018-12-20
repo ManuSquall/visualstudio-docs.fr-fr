@@ -1,5 +1,5 @@
 ---
-title: Propriété de stockage des détails de minuterie d’un paramètre d’exécution des tests de charge dans Visual Studio
+title: Propriété de stockage des détails de minuterie d’un paramètre d’exécution de test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842168"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054582"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Guide pratique pour spécifier la propriété de stockage des détails de minuterie d’un paramètre d’exécution de tests de charge
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procédure : spécifier la propriété de stockage des détails de minuterie d’un paramètre d’exécution de test de charge
 
 Après avoir créé votre test de charge à l’aide de **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les paramètres afin de répondre à vos besoins et vos objectifs de test.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Vous pouvez modifier la valeur de la propriété **Stockage des détails de minuterie** des paramètres d’exécution dans la fenêtre **Propriétés**. Vous pouvez définir la propriété **Stockage des détails de minuterie** avec l’une des options suivantes :
 
-- **Tous les détails individuels :** Collecte et stocke les données de temporisation individuelles pour chaque test, transaction et page émis pendant le test.
+- **Tous les détails individuels :** collecte et stocke les données de temporisation individuelles pour chaque test, transaction et page émis pendant le test.
 
   > [!NOTE]
   > L’option **Tous les détails individuels** doit être sélectionnée pour activer les informations relatives aux données des utilisateurs virtuels dans vos résultats des tests de charge. Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 - **Aucune :** ne collecte aucun détail de minuterie. Toutefois, les valeurs moyennes sont toujours disponibles.
 
-- **Statistiques uniquement :** stocke les données de temporisation individuelles, mais uniquement en tant que centiles. Cela permet d'économiser les ressources en matière d'espace.
+- **Statistiques seulement :** stocke les données de temporisation individuelles, mais uniquement en tant que centiles. Cela permet d'économiser les ressources en matière d'espace.
 
   **Considérations relatives à la propriété Stockage des détails de minuterie**
 
@@ -57,7 +59,7 @@ Vous pouvez modifier la valeur de la propriété **Stockage des détails de minu
 
 5.  Sous la catégorie **Résultats**, choisissez la propriété **Stockage des détails de minuterie**, puis sélectionnez **Tous les détails individuels**.
 
-     Après avoir configuré le paramètre **Tous les détails individuels** de la propriété **Stockage des détails de minuterie**, vous pouvez exécuter votre test de charge et consulter le **Graphique d’activités des utilisateurs virtuels**. Pour plus d’informations, consultez [Guide pratique pour analyser l’activité des utilisateurs virtuels durant un test de charge](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Après avoir configuré le paramètre **Tous les détails individuels** de la propriété **Stockage des détails de minuterie**, vous pouvez exécuter votre test de charge et consulter le **Graphique d’activités des utilisateurs virtuels**. Pour plus d'informations, voir [Procédure : analyser l’activité des utilisateurs virtuels durant un test de charge](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Voir aussi
 

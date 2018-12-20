@@ -1,5 +1,5 @@
 ---
-title: Durées du délai d’expiration pour les contrôleurs de test et les agents de test dans Visual Studio
+title: Délais d’expiration des contrôleurs de test et des agents de test
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,36 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827933"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064677"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procédure : spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
 Le contrôleur de test et l’agent de test comportent plusieurs paramètres de délai d’attente qui spécifient le délai d’attente des réponses entre eux, ou à partir d’une source de données avant de se solder par un échec avec une erreur. Dans certaines circonstances, il peut être nécessaire de modifier les valeurs du délai d'attente en fonction des besoins de votre topologie ou d'autres problèmes d'environnement. Pour modifier les valeurs du délai d'attente, modifiez le fichier de configuration XML associé au contrôleur de test ou à l'agent de test, comme indiqué dans les procédures suivantes.
 
- Pour modifier les divers paramètres de délai d’attente d’un contrôleur de test ou d’un agent de test, modifiez les fichiers de configuration suivants à l’aide des noms de clé et des valeurs des tables :
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
--   Contrôleur de test : *QTController.exe.config*
+Pour modifier les divers paramètres de délai d’attente d’un contrôleur de test ou d’un agent de test, modifiez les fichiers de configuration suivants à l’aide des noms de clé et des valeurs des tables :
+
+-   Contrôleur de test : *QTController.exe.config*
 
     |Nom de la clé|Description|Value|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Nombre de secondes du délai d'attente de la demande de la commande ping de l'agent avant que la connexion ne soit perdue.|"n" secondes.|
     |AgentSyncTimeoutInSeconds|Lorsque vous démarrez une série de tests de synchronisation, nombre de secondes d’attente de la synchronisation de tous les agents avant d’abandonner l’exécution.|"n" secondes.|
-    |AgentInitializeTimeout|Nombre de secondes d'attente de l'initialisation de tous les agents et de leurs collecteurs de données initialise au début de l'exécution d'un test, avant d'abandonner la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Valeur par défaut : "120" (deux minutes).|
-    |AgentCleanupTimeout|Nombre de secondes d'attente du nettoyage de tous les agents et de leurs collecteurs de données, avant de compléter la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Valeur par défaut : "120" (deux minutes).|
+    |AgentInitializeTimeout|Nombre de secondes d'attente de l'initialisation de tous les agents et de leurs collecteurs de données initialise au début de l'exécution d'un test, avant d'abandonner la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Par défaut : « 120 » (deux minutes).|
+    |AgentCleanupTimeout|Nombre de secondes d'attente du nettoyage de tous les agents et de leurs collecteurs de données, avant de compléter la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Par défaut : « 120 » (deux minutes).|
 
--   Agent de test : *QTAgentService.exe.config*
+-   Agent de test : *QTAgentService.exe.config*
 
     |Nom de la clé|Description|Value|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|Nombre de secondes séparant deux tentatives de connexion au contrôleur.|"n" secondes. Valeur par défaut : "30" (trente secondes).|
-    |RemotingTimeoutSeconds|Durée maximum d'un appel à distance en secondes.|"n" secondes. Valeur par défaut : "600" (dix minutes).|
-    |StopTestRunCallTimeoutInSeconds|Nombre de secondes d'attente l'appel de l'arrêt de la série de tests.|"n" secondes. Valeur par défaut : "120" (deux minutes).|
-    |GetCollectorDataTimeout|Nombre de secondes d'attente du collecteur de données.|"n" secondes. Valeur par défaut : "300" (cinq minutes).|
+    |ControllerConnectionPeriodInSeconds|Nombre de secondes séparant deux tentatives de connexion au contrôleur.|"n" secondes. Par défaut : « 30 » (trente secondes).|
+    |RemotingTimeoutSeconds|Durée maximum d'un appel à distance en secondes.|"n" secondes. Par défaut : « 600 » (dix minutes).|
+    |StopTestRunCallTimeoutInSeconds|Nombre de secondes d'attente l'appel de l'arrêt de la série de tests.|"n" secondes. Par défaut : « 120 » (deux minutes).|
+    |GetCollectorDataTimeout|Nombre de secondes d'attente du collecteur de données.|"n" secondes. Par défaut : « 300 » (cinq minutes).|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Pour spécifier les options d’expiration de l’agent d’un contrôleur de test
 
@@ -102,7 +104,7 @@ Le contrôleur de test et l’agent de test comportent plusieurs paramètres de 
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - ou -
+    ou
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `RemotingTimeoutSeconds` dans la section `<appSettings>` et spécifier une valeur de quinze minutes :
 

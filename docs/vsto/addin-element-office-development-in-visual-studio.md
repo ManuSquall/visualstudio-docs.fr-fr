@@ -1,5 +1,6 @@
 ---
 title: '&lt;AddIn&gt; élément (développement Office dans Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262380"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247979"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; élément (développement Office dans Visual Studio)
-  Le **addin** élément de la `vstav3` espace de noms contient des informations qui sont spécifiques aux compléments Microsoft Office VSTO et les personnalisations au niveau du document développés avec Visual Studio.  
+  Le **addin** élément de la `vstav3` espace de noms contient des informations spécifiques à Microsoft Office VSTO Add-ins et des personnalisations au niveau du document développées avec Visual Studio.  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -52,7 +53,7 @@ ms.locfileid: "34262380"
 ```  
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le **addin** élément de la `vstav3` espace de noms contient des informations sur la solution Office et l’application Microsoft Office. Cet élément doit être dans l’espace de noms suivant : `vstav3=urn:schemas-microsoft-com:vsta.v3`. Les éléments enfants doivent également être dans cet espace de noms.  
+ Le **addin** élément de la `vstav3` espace de noms contient des informations sur la solution Office et l’application Microsoft Office. Cet élément doit figurer dans l’espace de noms suivant : `vstav3=urn:schemas-microsoft-com:vsta.v3`. Les éléments enfants doivent également être dans cet espace de noms.  
 
  L’élément `addin` ne possède pas d’attributs.  
 
@@ -137,7 +138,7 @@ ms.locfileid: "34262380"
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
 
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre la **addin** élément dans une solution Office au niveau de l’application est déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre la **addin** élément dans une solution Office au niveau de l’application qui est déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Code  
 

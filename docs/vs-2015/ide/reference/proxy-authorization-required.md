@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49259207"
@@ -43,7 +43,7 @@ Cette erreur se produit généralement lorsque les utilisateurs sont connectés 
   
     -   *.live.com  
   
--   Sinon, vous pouvez supprimer le http://go.microsoft.com à partir de la liste blanche d’adresses afin que la boîte de dialogue de l’authentification de proxy s’affiche à la fois pour le http://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.  
+-   Sinon, vous pouvez supprimer le http://go.microsoft.com à partir de la liste verte d’adresses afin que la boîte de dialogue de l’authentification de proxy s’affiche à la fois pour le http://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.  
   
 -   OU  
   

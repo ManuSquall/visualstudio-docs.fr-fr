@@ -1,6 +1,6 @@
 ---
-title: Définir un espion sur les variables dans Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Définir un espion sur variables | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/11/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 898c79f3985e24f52620f12dc25ad6044d05ac64
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826789"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059481"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Regardez des variables avec les fenêtres Espion et Espion express 
 
 Pendant le débogage, vous pouvez utiliser **espion** windows et **Espion express** pour observer les variables et expressions. Les fenêtres sont disponibles uniquement pendant une session de débogage.
 
 **Espion** windows peuvent afficher plusieurs variables à la fois pendant le débogage. Le **Espion express** boîte de dialogue affiche une seule variable à la fois et doit être fermé pour que le débogage puisse se poursuivre.
+
+S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observer variables dans une fenêtre Espion
 
@@ -142,11 +144,11 @@ Une expression avec effets secondaires est évaluée une seule fois, lorsque vou
 
 Un moyen d’empêcher la désignation des effets secondaires consiste à désactiver l’évaluation de fonction automatique. Dans **outils** > **Options** > **débogage** > **général**, désélectionnez **Activer l’évaluation de la propriété et d’autres appels de fonction implicite**.
 
-Pour C# uniquement, lors de l’évaluation des propriétés ou des appels de fonction implicite est désactivée, vous pouvez forcer l’évaluation en ajoutant le **ac** modificateur du format à une variable **nom** dans le **espion**  fenêtre. Consultez [Format specifiers en C#](../debugger/format-specifiers-in-csharp.md).
+Pour C# uniquement, lors de l’évaluation des propriétés ou des appels de fonction implicite est désactivée, vous pouvez forcer l’évaluation en ajoutant le **ac** modificateur du format à une variable **nom** dans le **espion**  fenêtre. Consultez [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md).
 
 ## <a name="bkmk_objectIds"></a> Utiliser l’ID d’objet dans la fenêtre Espion (C# et Visual Basic)
 
-Parfois, vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être suivre un objet référencé par une variable locale une fois que cette variable a hors de portée. Dans C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques des types référence et les utiliser dans le **espion** fenêtre et dans les conditions de point d’arrêt. L’ID d’objet est généré par le services de débogage du common language runtime (CLR) et associé à l’objet.
+Parfois, vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être suivre un objet référencé par une variable locale une fois que cette variable a hors de portée. En C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types de références et les utiliser dans la fenêtre **Espion** et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.
 
 > [!NOTE]
 > ID d’objet créent des références faibles qui n’empêchent pas l’objet d’une garbage collecté. Leur validité ne vaut que pour la session de débogage active.
@@ -217,13 +219,13 @@ Pour actualiser **affichage dynamique** valeurs, sélectionnez le [icône d’ac
 
 Pour afficher uniquement les **affichage dynamique** pour un objet, ajoutez un **dynamique** spécificateur de format après le nom de l’objet dynamique dans le **espion** fenêtre :
 
-- Pour c# : `ObjectName, dynamic`
+- Pour C# : `ObjectName, dynamic`
 - Pour Visual Basic : `$dynamic, ObjectName`
 
 >[!NOTE]
 >- Le C# débogueur ne réévalue automatiquement les valeurs dans le **affichage dynamique** quand vous passez à la ligne de code suivante. 
 >- Le débogueur de Visual Basic actualise automatiquement les expressions ajoutées via la **affichage dynamique**.
->- L’évaluation des membres d’un **affichage dynamique** peut avoir [effets](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
+>- L’évaluation des membres d’un **affichage dynamique** peut avoir des [effets secondaires](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
 
 **Pour insérer un nouvel espion variable qui convertit un objet vers un objet dynamique :**
   
@@ -278,6 +280,6 @@ Pour observer le `a` variable,
 1. Poursuivez le débogage. Vous pouvez observer la variable dans le **espion** fenêtre.
 
 ## <a name="see-also"></a>Voir aussi
- [Quel est le débogage ?](../debugger/what-is-debugging.md)  
- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
+ [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [fenêtres du débogueur](../debugger/debugger-windows.md)

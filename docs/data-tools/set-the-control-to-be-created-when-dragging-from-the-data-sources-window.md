@@ -15,49 +15,55 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a72800cda8b80daec1adeb82d7884789cc4d2bd7
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: daceedd2709de7882ecff5b29a657f706c96175d
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174164"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305466"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
+
 Vous pouvez créer des contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le Concepteur WPF ou le Concepteur Windows Forms. Chaque élément dans le **des Sources de données** fenêtre possède un contrôle par défaut qui est créé lorsque vous faites glisser vers le concepteur. Toutefois, vous pouvez choisir de créer un autre contrôle.
 
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Définir les contrôles doivent être créés pour les tables de données ou d’objets
+
 Avant de faire glisser des éléments qui représentent des tables de données ou des objets à partir de la **des Sources de données** fenêtre, vous pouvez choisir d’afficher toutes les données dans un contrôle, ou pour afficher chaque colonne ou propriété dans un contrôle séparé.
 
 Dans ce contexte, le terme *objet* fait référence à un objet métier personnalisé, une entité (dans un Entity Data Model) ou un objet retourné par un service.
 
 ### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Pour définir les contrôles doivent être créés pour les tables de données ou d’objets
 
-1.  Vérifiez que le **WPF** concepteur ou le **Windows Forms** concepteur est ouvert.
+1. Vérifiez que le **WPF** concepteur ou le **Windows Forms** concepteur est ouvert.
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez l’élément qui représente la table de données ou de l’objet à définir.
+2. Dans le **des Sources de données** fenêtre, sélectionnez l’élément qui représente la table de données ou de l’objet à définir.
 
-3.  Cliquez sur le menu déroulant pour l’élément, puis cliquez sur un des éléments suivants dans le menu :
+   > [!TIP]
+   > Si le **des Sources de données** fenêtre n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **vue** > **Windows autres** > **desSourcesdedonnées**.
 
-    -   Pour afficher chaque champ de données dans un contrôle séparé, cliquez sur **détails**. Lorsque vous faites glisser l’élément de données vers le concepteur, cette action crée un contrôle lié aux données différent pour chaque colonne ou propriété de l’objet, ainsi que des étiquettes pour chaque contrôle ou une table de données parente.
+3. Cliquez sur le menu déroulant pour l’élément, puis cliquez sur un des éléments suivants dans le menu :
 
-    -   Pour afficher toutes les données dans un seul contrôle, sélectionnez un autre contrôle dans la liste, tel que **DataGrid** ou **liste** dans une application WPF, ou **DataGridView** dans un formulaire Windows application.
+    - Pour afficher chaque champ de données dans un contrôle séparé, cliquez sur **détails**. Lorsque vous faites glisser l’élément de données vers le concepteur, cette action crée un contrôle lié aux données différent pour chaque colonne ou propriété de l’objet, ainsi que des étiquettes pour chaque contrôle ou une table de données parente.
+
+    - Pour afficher toutes les données dans un seul contrôle, sélectionnez un autre contrôle dans la liste, tel que **DataGrid** ou **liste** dans une application WPF, ou **DataGridView** dans un formulaire Windows application.
 
     La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version du .NET Framework que votre projet cible, et si vous avez ajouté des contrôles personnalisés cette prise en charge de liaison de données à la **boîte à outils**. Si le contrôle que vous souhaitez créer n’est pas dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Pour savoir comment créer un contrôle Windows Forms personnalisé qui peut être ajouté à la liste des contrôles pour les tables de données ou des objets dans le **des Sources de données** fenêtre, consultez [créer un contrôle utilisateur Windows Forms qui prend en charge des données complexes liaison](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
 ## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Définir les contrôles à créer pour les colonnes de données ou des propriétés
+
 Avant de faire glisser un élément qui représente une colonne ou une propriété d’un objet à partir de la **des Sources de données** fenêtre vers le concepteur, vous pouvez définir le contrôle à créer.
 
-#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Pour définir les contrôles à créer des colonnes ou des propriétés
+### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Pour définir les contrôles à créer des colonnes ou des propriétés
 
-1.  Vérifiez que le **WPF** concepteur ou le **Windows Forms** concepteur est ouvert.
+1. Vérifiez que le **WPF** concepteur ou le **Windows Forms** concepteur est ouvert.
 
-2.  Dans le **des Sources de données** fenêtre, développez la table souhaitée ou pour afficher ses colonnes ou propriétés de l’objet.
+2. Dans le **des Sources de données** fenêtre, développez la table souhaitée ou pour afficher ses colonnes ou propriétés de l’objet.
 
-3.  Sélectionnez chaque colonne ou la propriété pour laquelle vous souhaitez définir le contrôle à créer.
+3. Sélectionnez chaque colonne ou la propriété pour laquelle vous souhaitez définir le contrôle à créer.
 
-4.  Cliquez sur le menu déroulant de la colonne ou la propriété, puis sélectionnez le contrôle à créer lorsque l’élément est déplacé vers le concepteur.
+4. Cliquez sur le menu déroulant de la colonne ou la propriété, puis sélectionnez le contrôle à créer lorsque l’élément est déplacé vers le concepteur.
 
      La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version du .NET Framework que votre projet cible, et des contrôles personnalisés qui prennent en charge de liaisons de données ont ajoutés à la **boîte à outils**. Si le contrôle que vous souhaitez créer est dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 

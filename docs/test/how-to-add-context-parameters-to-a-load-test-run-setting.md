@@ -1,5 +1,5 @@
 ---
-title: Ajouter des paramètres de contexte dans un paramètre d’exécution des tests de charge dans Visual Studio
+title: Ajouter des paramètres de contexte à un paramètre d’exécution de test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905896"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048487"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procédure : ajouter des paramètres de contexte à un paramètre d’exécution de test de charge
 
 Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Pour obtenir la liste complète des propriétés des paramètres et leur description, voir [Propriétés des paramètres de série de tests de charge](../test/load-test-run-settings-properties.md).
@@ -36,9 +38,9 @@ Si vous affectez la valeur du paramètre de contexte Webserver1 à `http://Corpo
 
 En outre, en assignant des valeurs différentes à un paramètre de contexte en reprenant le même nom dans des paramètres d'exécution du test de charge différents, vous pouvez exécuter le test de charge dans différents environnements :
 
-- Paramètre d’exécution du serveur web de préproduction d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateStagingWebServer`
+- Paramètre d’exécution du serveur web de préproduction d’entreprise : Paramètre de contexte nommé `WebServer1=http://CorporateStagingWebServer`
 
-- Paramètre d’exécution du serveur web de production d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateProductionWebServer`
+- Paramètre d’exécution du serveur web de production d’entreprise : Paramètre de contexte nommé `WebServer1=http://CorporateProductionWebServer`
 
   **Changement du paramètre d’exécution depuis la ligne de commande**
 
@@ -60,7 +62,7 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
      Un nouveau paramètre de contexte est ajouté au dossier **Paramètres de contexte** dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge.
 
-     - ou -
+     ou
 
      Si le paramètre d’exécution contient déjà un dossier **Paramètres de contexte**, vous pouvez cliquer dessus avec le bouton droit, puis choisir **Ajouter un paramètre de contexte**.
 

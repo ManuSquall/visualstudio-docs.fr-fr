@@ -1,5 +1,6 @@
 ---
 title: ID de composant et de charge de travail de Visual Studio Test Professional 2017
+titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f9ffe423da289246ef91f927f082578e2aec12
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: fa09c844d4ea0fa1b6d4c255f10af6bda4f3128c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607560"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049277"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Répertoire des composants Visual Studio Test Professional 2017
 
@@ -43,7 +44,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 **ID :** Microsoft.VisualStudio.Workload.TestProfessional
 
-**Description :** Test Professional fournit des outils de test intégrés qui répondent aux besoins des testeurs généralistes tout au long du cycle de vie des tests.
+**Description :** Test Professional fournit aux testeurs généralistes des outils de test intégrés, qui répondent à leurs besoins tout au long du cycle de vie des tests.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 

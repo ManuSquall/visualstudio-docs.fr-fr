@@ -4,11 +4,11 @@ items:
 - name: Vue d'ensemble
   items:
   - name: À propos de Visual Studio 2017
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: À propos de l’éditeur de code
-    href: ide/quickstart-editor.md
+    href: get-started/tutorial-editor.md
   - name: À propos des projets et des solutions
-    href: ide/quickstart-projects-solutions.md
+    href: get-started/tutorial-projects-solutions.md
   - name: Autres fonctionnalités de Visual Studio
     href: ide/advanced-feature-overview.md
   expanded: true
@@ -81,7 +81,7 @@ items:
         href: install/tools-for-managing-visual-studio-instances.md
     - name: Gérer les abonnements
       items:
-      - name: 'Abonnements Visual Studio : vue d’ensemble pour l’administrateur'
+      - name: 'Abonnements Visual Studio : Vue d’ensemble de l’administrateur'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Guide de l'administrateur Help Viewer
       href: ide/help-viewer-administrator-guide.md
@@ -130,21 +130,21 @@ items:
   items:
   - name: Orientation de Visual Studio
     href: ide/quickstart-ide-orientation.md
-  - name: 'C++ : créer une application console'
+  - name: 'C++ : Créer une application console'
     href: ide/getting-started-with-cpp-in-visual-studio.md
-  - name: 'Python : créer une application web'
+  - name: 'Python : Créer une application web'
     href: ide/quickstart-python.md
-  - name: 'Node.js : créer une application web'
+  - name: 'Node.js : Créer une application web'
     href: ide/quickstart-nodejs.md
-  - name: 'F# : créer un service web'
+  - name: 'F# : Créer un service web'
     href: ide/quickstart-fsharp.md
-  - name: 'C# : créer une application web'
+  - name: 'C# : Créer une application web'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C# : créer une application UWP'
+  - name: 'C# : Créer une application UWP'
     href: ide/quickstart-uwp-csharp.md
-  - name: 'C# : créer une application console'
+  - name: 'C# : Créer une application console'
     href: ide/quickstart-csharp-console.md
-  - name: 'Visual Basic : créer une application console'
+  - name: 'Visual Basic : Créer une application console'
     href: ide/quickstart-visual-basic-console.md
 - name: Didacticiels
   items:
@@ -158,9 +158,9 @@ items:
     href: javascript/tutorial-nodejs.md
   - name: C# dans Visual Studio
     items:
-    - name: 'C# : créer une application web'
+    - name: 'C# : Créer une application web'
       href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C# : créer une application console'
+    - name: 'C# : Créer une application console'
       href: ide/tutorial-csharp-console.md
   - name: Visual Basic dans Visual Studio
     href: ide/tutorial-visual-basic-console.md
@@ -180,6 +180,8 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: Porter, migrer et mettre à niveau des projets
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+      - name: Porter, migrer et mettre à niveau des projets Visual Studio 2019 Preview
+        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Gérer les propriétés des projets et des solutions
         href: ide/managing-project-and-solution-properties.md
       - name: Gérer les références dans un projet
@@ -243,6 +245,8 @@ items:
       items:
       - name: Personnaliser des tâches de génération et de débogage
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Se connecter à un projet ou à un dépôt
+      href: ide/connect-team-project.md
     - name: Utiliser l’éditeur
       href: ide/writing-code-in-the-code-and-text-editor.md
       items:
@@ -284,7 +288,7 @@ items:
               href: ide/best-practices-for-using-code-snippets.md
           - name: Créer des extraits de code
             items:
-            - name: 'Procédure pas à pas : créer un extrait de code'
+            - name: 'Procédure pas à pas : Créer un extrait de code'
               href: ide/walkthrough-creating-a-code-snippet.md
             - name: Distribuer des extraits de code
               href: ide/how-to-distribute-code-snippets.md
@@ -350,7 +354,7 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Utiliser un type explicite
             href: ide/reference/convert-var-to-explicit-type.md
-        - name: 'Procédure pas à pas : générer du code à partir de l’utilisation'
+        - name: 'Procédure pas à pas : Générer du code à partir de l’utilisation'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Conseils de productivité
         href: ide/productivity-tips-for-visual-studio.md
@@ -516,68 +520,68 @@ items:
         href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
       - name: Tutoriels pour l’application Windows Forms
         items:
-        - name: 'Tutoriel 1 : créer une visionneuse d’images (C#)'
+        - name: 'Tutoriel 1 : Créer une visionneuse d’images (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: "Étape 1 : créer un projet d'application Windows Forms"
+          - name: 'Étape 1 : Créer un projet Application Windows Forms'
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: 'Étape 2 : exécuter votre programme'
+          - name: 'Étape 2 : Exécuter votre programme'
             href: ide/step-2-run-your-program.md
-          - name: 'Étape 3 : définir les propriétés de votre formulaire'
+          - name: 'Étape 3 : Définir les propriétés de votre formulaire'
             href: ide/step-3-set-your-form-properties.md
-          - name: 'Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel'
+          - name: 'Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel'
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: 'Étape 5 : ajouter des contrôles à votre formulaire'
+          - name: 'Étape 5 : Ajouter des contrôles à votre formulaire'
             href: ide/step-5-add-controls-to-your-form.md
-          - name: 'Étape 6 : affecter un nom à vos contrôles bouton'
+          - name: 'Étape 6 : Nommer vos contrôles bouton'
             href: ide/step-6-name-your-button-controls.md
-          - name: 'Étape 7 : ajouter des composants Dialog à votre formulaire'
+          - name: 'Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire'
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: "Étape 8 : écrire du code pour le gestionnaire d'événements du bouton Afficher une image"
+          - name: 'Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image'
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: 'Étape 9 : examiner, commenter et tester votre code'
+          - name: 'Étape 9 : Passer en revue, commenter et tester votre code'
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: 'Étape 10 : écrire du code pour les boutons supplémentaires et une case à cocher'
+          - name: 'Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher'
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: "Étape 11 : exécuter votre programme et tester d'autres fonctionnalités"
+          - name: 'Étape 11 : Exécuter votre programme et tester d’autres fonctionnalités'
             href: ide/step-11-run-your-program-and-try-other-features.md
-        - name: 'Tutoriel 2 : créer un questionnaire mathématique chronométré (C#)'
+        - name: 'Tutoriel 2 : Créer un questionnaire mathématique chronométré (C#)'
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: 'Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire'
+          - name: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: "Étape 2 : créer un problème d'addition aléatoire"
+          - name: 'Étape 2 : Créer un problème d’addition aléatoire'
             href: ide/step-2-create-a-random-addition-problem.md
-          - name: 'Étape 3 : ajouter un temporisateur'
+          - name: 'Étape 3 : Ajouter un temporisateur'
             href: ide/step-3-add-a-countdown-timer.md
-          - name: 'Étape 4 : ajouter la méthode CheckTheAnswer()'
+          - name: 'Étape 4 : Ajouter la méthode CheckTheAnswer()'
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: "Étape 5 : ajouter des gestionnaires d'événements Enter pour les contrôles NumericUpDown"
+          - name: 'Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown'
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: 'Étape 6 : ajouter un problème de soustraction'
+          - name: 'Étape 6 : Ajouter un problème de soustraction'
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: 'Étape 7 : ajouter des problèmes de multiplication et de division'
+          - name: 'Étape 7 : Ajouter des problèmes de multiplication et de division'
             href: ide/step-7-add-multiplication-and-division-problems.md
-          - name: 'Étape 8 : Personnaliser le questionnaire'
+          - name: 'Étape 8 : Personnaliser le questionnaire'
             href: ide/step-8-customize-the-quiz.md
-        - name: 'Tutoriel 3 : créer un jeu de combinaisons (C#)'
+        - name: 'Tutoriel 3 : Créer un jeu de combinaisons (C#)'
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: 'Étape 1 : créer un projet et ajouter une table au formulaire'
+          - name: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: "Étape 2 : ajouter un objet aléatoire et une liste d'icônes"
+          - name: 'Étape 2 : Ajouter un objet aléatoire et une liste d’icônes'
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: 'Étape 3 : Assigner une icône aléatoire à chaque contrôle Label'
+          - name: 'Étape 3 : Affecter une icône aléatoire à chaque contrôle Label'
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: "Étape 4 : ajouter un gestionnaire d'événements Click à chaque contrôle Label"
+          - name: 'Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette'
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
-          - name: 'Étape 5 : ajouter des références de contrôles Label'
+          - name: 'Étape 5 : Ajouter des références aux contrôles Label'
             href: ide/step-5-add-label-references.md
           - name: 'Étape 6 : Ajouter une minuterie'
             href: ide/step-6-add-a-timer.md
-          - name: 'Étape 7 : garder les paires visibles'
+          - name: 'Étape 7 : Garder les paires visibles'
             href: ide/step-7-keep-pairs-visible.md
-          - name: 'Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné'
+          - name: 'Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné'
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
           - name: 'Étape 9 : Tester d’autres fonctionnalités'
             href: ide/step-9-try-other-features.md
@@ -588,14 +592,14 @@ items:
   - name: Compiler et générer
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: 'Procédure pas à pas : générer une application'
+    - name: 'Procédure pas à pas : Générer une application'
       href: ide/walkthrough-building-an-application.md
     - name: Générer et nettoyer des projets et des solutions
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
       items:
       - name: Changer le répertoire de sortie de build
         href: ide/how-to-change-the-build-output-directory.md
-      - name: Générer un répertoire de sortie commun
+      - name: Créer un répertoire de sortie commun
         href: ide/how-to-build-to-a-common-output-directory.md
       - name: Spécifier des événements de build personnalisés
         href: ide/specifying-custom-build-events-in-visual-studio.md
@@ -603,27 +607,29 @@ items:
         href: ide/how-to-set-multiple-startup-projects.md
       - name: Créer et supprimer les dépendances d’un projet
         href: ide/how-to-create-and-remove-project-dependencies.md
-      - name: Afficher, enregistrer et configurer des fichiers journaux de build
+      - name: Afficher, enregistrer et configurer des fichiers journaux de génération
         href: ide/how-to-view-save-and-configure-build-log-files.md
       - name: Exclure des projets d’une build
         href: ide/how-to-exclude-projects-from-a-build.md
       - name: Supprimer les avertissements du compilateur
         href: ide/how-to-suppress-compiler-warnings.md
+    - name: Actions de génération
+      href: ide/build-actions.md
     - name: Configurations de build
       href: ide/understanding-build-configurations.md
       items:
       - name: Créer et modifier des configurations
         href: ide/how-to-create-and-edit-configurations.md
-      - name: Gérer des configurations de build en appliquant les paramètres développeur Visual Basic
+      - name: Gérer des configurations de build avec les paramètres développeur Visual Basic
         href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
       - name: Créer plusieurs configurations simultanément
         href: ide/how-to-build-multiple-configurations-simultaneously.md
-    - name: Générer des plateformes
+    - name: Créer des plateformes
       href: ide/understanding-build-platforms.md
       items:
-      - name: Configurer des projets pour des plateformes cibles
+      - name: Configurer des projets pour qu’ils ciblent une plateforme
         href: ide/how-to-configure-projects-to-target-platforms.md
-      - name: Configurer des projets pour plusieurs plateformes cibles
+      - name: Configurer des projets pour qu’ils ciblent plusieurs plateformes
         href: ide/how-to-configure-projects-to-target-multiple-platforms.md
     - name: MSBuild...
       href: msbuild/msbuild.md
@@ -633,9 +639,9 @@ items:
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: Spécifier des événements de build (C#)
       href: ide/how-to-specify-build-events-csharp.md
-    - name: Configuration d'avertissements en Visual Basic
+    - name: Configurer les avertissements en Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 'Procédure pas à pas : créer un environnement de build sur plusieurs ordinateurs'
+    - name: 'Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: Déboguer...
     href: debugger/index.md
@@ -654,8 +660,12 @@ items:
   - name: Personnaliser l’IDE
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 'Démarrage rapide : personnaliser les couleurs du thème et du texte'
+    - name: 'Démarrage rapide : Personnaliser les couleurs des thèmes et du texte'
       href: ide/quickstart-personalize-the-ide.md
+    - name: Paramètres d’environnement
+      href: ide/environment-settings.md
+    - name: Paramètres synchronisés
+      href: ide/synchronized-settings-in-visual-studio.md
     - name: Changer les polices et les couleurs
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
     - name: Personnaliser des menus et des barres d’outils
@@ -670,13 +680,13 @@ items:
       href: ide/finding-and-using-visual-studio-extensions.md
     - name: Gérer les outils externes
       href: ide/managing-external-tools.md
-    - name: Paramètres synchronisés
-      href: ide/synchronized-settings-in-visual-studio.md
   - name: Optimiser les performances
     href: ide/optimize-visual-studio-performance.md
     items:
     - name: Temps de démarrage
       href: ide/optimize-visual-studio-startup-time.md
+    - name: Charger une solution filtrée
+      href: ide/filtered-solutions.md
     - name: Conseils et astuces
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: Gérer les fonctionnalités d’accessibilité
@@ -686,11 +696,11 @@ items:
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: Utiliser uniquement le clavier
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: Conseils et astuces d'accessibilité
+    - name: Conseils et astuces d’accessibilité
       href: ide/reference/accessibility-tips-and-tricks.md
-    - name: Services et produits d’accessibilité de Microsoft
+    - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-    - name: Ressources pour la conception d'applications accessibles
+    - name: Ressources pour la conception d’applications accessibles
       href: ide/reference/resources-for-designing-accessible-applications.md
   - name: Globaliser et localiser des applications
     href: ide/globalizing-and-localizing-applications.md
@@ -905,8 +915,10 @@ items:
         href: ide/reference/signing-page-project-designer.md
     - name: Pages de propriétés (JavaScript)
       href: ide/reference/property-pages-javascript.md
-    - name: Propriétés (fenêtre)
+    - name: Fenêtre Propriétés
       href: ide/reference/properties-window.md
+    - name: Informations de référence sur Team Explorer
+      href: ide/reference/team-explorer-reference.md
     - name: Boîte à outils
       href: ide/reference/toolbox.md
       items:
@@ -1078,8 +1090,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Ressources
   items:
-  - name: Nouveautés
+  - name: Nouveautés de Visual Studio 2017
     href: ide/whats-new-in-visual-studio.md
+  - name: Nouveautés de Visual Studio 2019
+    href: ide/whats-new-visual-studio-2019.md
   - name: Notes de publication et configuration requise
     items:
     - name: Notes de publication actuelles
@@ -1106,9 +1120,9 @@ items:
       href: ide/developer-community-privacy.md
   - name: Guide pratique pour signaler un problème avec Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Vue d’ensemble : Signaler un problème'
+  - name: "Vue d'ensemble : Signaler un problème"
     href: ide/report-a-problem.md
-  - name: 'Vue d’ensemble : Suggérer une fonctionnalité'
+  - name: "Vue d'ensemble : Suggérer une fonctionnalité"
     href: ide/suggest-a-feature.md
   - name: Programme d'amélioration de l'expérience utilisateur
     href: ide/visual-studio-experience-improvement-program.md
@@ -1119,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Nous contacter
     href: ide/talk-to-us.md
-ms.openlocfilehash: 02c451e03d36baf818dc504c79ee5576a91c9319
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826828"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160073"

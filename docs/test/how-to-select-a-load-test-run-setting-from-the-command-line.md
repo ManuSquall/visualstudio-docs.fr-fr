@@ -1,5 +1,5 @@
 ---
-title: Définir les paramètres d’exécution d’un test de charge Visual Studio à partir de la ligne de commande
+title: Définir les paramètres d’exécution des tests de charge à partir de la ligne de commande
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 263f8a671897b5f9c8af835f13214139e3abef17
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382475"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051835"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Guide pratique pour sélectionner un paramètre d’exécution des tests de charge à utiliser à partir d’une ligne de commande
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Procédure : sélectionner un paramètre d’exécution de test de charge à utiliser à partir de la ligne de commande
 
 Un test de charge peut contenir des *paramètres d’exécution*, autrement dit des propriétés qui influencent la manière dont un test de charge est exécuté. Les paramètres d’exécution sont classés par catégories dans la fenêtre **Propriétés**. Lorsqu'un test de charge est exécuté, il utilise le paramètre d'exécution actuellement actif.
 
- Si votre test de charge contient un seul paramètre d'exécution, c'est toujours le nœud actif. Si votre test de charge contient plusieurs nœuds Paramètres d’exécution, vous pouvez sélectionner celui à utiliser lors de l’exécution d’un test de charge à partir la ligne de commande. Consultez [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Si votre test de charge contient un seul paramètre d'exécution, c'est toujours le nœud actif. Si votre test de charge contient plusieurs nœuds Paramètres d’exécution, vous pouvez sélectionner celui à utiliser lors de l’exécution d’un test de charge à partir la ligne de commande. Consultez [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Pour modifier le paramètre d’exécution depuis la ligne de commande
 
@@ -39,4 +41,4 @@ Un test de charge peut contenir des *paramètres d’exécution*, autrement dit 
 - [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
 - [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [Guide pratique pour sélectionner le paramètre d’exécution active d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

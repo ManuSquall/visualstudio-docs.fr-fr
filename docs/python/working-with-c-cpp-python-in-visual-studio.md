@@ -1,22 +1,23 @@
 ---
-title: Utilisation de C++ et Python
+title: Écrire des extensions C++ pour Python
 description: Procédure pas à pas de création d’une extension C++ pour Python en utilisant Visual Studio, CPython et PyBind11, avec le débogage en mode mixte.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443647"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053475"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -135,7 +136,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     > Si vous ne voyez pas l’onglet C/C++ dans les propriétés du projet, cela signifie que le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Cette situation peut se produire si vous créez un fichier source sans extension *.c* ou *.cpp*. Par exemple, si vous avez accidentellement entré `module.coo` au lieu de `module.cpp` dans la nouvelle boîte de dialogue d’ajout d’élément, Visual Studio crée le fichier, mais ne définit pas le type de fichier « Code C/C++ » qui permet d’activer l’onglet de propriétés C/C++. Une telle erreur d’identification demeure, même si vous renommez le fichier avec l’extension `.cpp`. Pour définir correctement le type de fichier, cliquez avec le bouton droit sur celui-ci dans l’**Explorateur de solutions**, sélectionnez **Propriétés**, puis affectez à **Type de fichier** la valeur **Code C/C++**.
 
     > [!Warning]
-    > Affectez toujours à l’option **C/C++** > **Génération de code** > **Bibliothèque runtime** la valeur **DLL multithread (/MD)**, même pour une configuration Debug, car les ressources binaires Python qui ne sont pas des ressources binaires de débogage sont générées avec ce paramètre. Si vous définissez l’option **DLL de débogage multithread (/MDd)**, la génération d’une configuration **Debug** produit l’ erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` pour éviter l’erreur de build, Python se bloque quand vous tentez d’importer le module. (L’incident se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)
+    > Affectez toujours à l’option **C/C++** > **Génération de code** > **Bibliothèque runtime** la valeur **DLL multithread (/MD)**, même pour une configuration Debug, car les ressources binaires Python qui ne sont pas des ressources binaires de débogage sont générées avec ce paramètre. Si vous définissez l’option **DLL de débogage multithread (/MDd)**, la génération d’une configuration **Debug** produit l’erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` pour éviter l’erreur de build, Python se bloque quand vous tentez d’importer le module. (Le plantage se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)
     >
     > L’option /MDd permet de générer les ressources binaires de débogage Python (par exemple *python_d.exe*), mais sa sélection pour une DLL d’extension provoque toujours l’erreur de build avec `Py_LIMITED_API`.
 
@@ -265,7 +266,7 @@ Si vous avez effectué les étapes de la section précédente, vous avez certain
 
 La compilation du module C++ peut échouer pour les raisons suivantes :
 
-- Impossible de localiser *Python.h* (**E1696 : impossible d’ouvrir le fichier source « Python.h »** et/ou **C1083 : impossible d’ouvrir le fichier Include : « Python.h » : fichier ou répertoire inexistant**) : vérifiez que le chemin indiqué dans **C/C++** > **Général** > **Autres répertoires Include** dans les propriétés du projet pointe vers le dossier *include* de votre installation de Python. Consultez l’étape 6 sous [Créer le projet C++ principal](#create-the-core-c-projects).
+- Impossible de localiser *Python.h* (**E1696 : impossible d’ouvrir le fichier source « Python.h »** et/ou **C1083 : Impossible d’ouvrir le fichier include : « Python.h » : Fichier ou répertoire introuvable**) : vérifiez que le chemin indiqué dans **C/C++** > **Général** > **Autres répertoires Include** dans les propriétés du projet pointe vers le dossier *include* de votre installation de Python. Consultez l’étape 6 sous [Créer le projet C++ principal](#create-the-core-c-projects).
 
 - Bibliothèques Python introuvables : vérifiez que le chemin indiqué via **Éditeur de liens** > **Général** > **Répertoires de bibliothèques supplémentaires** dans les propriétés du projet pointe vers le dossier *libs* de votre installation de Python. Consultez l’étape 6 sous [Créer le projet C++ principal](#create-the-core-c-projects).
 
@@ -404,7 +405,7 @@ Il existe différents autres moyens de créer des extensions Python, comme décr
 | --- | --- | --- | --- | --- |
 | Modules d’extension C/C++ pour CPython | 1991 | Bibliothèque standard | [Documentation et didacticiels complets](https://docs.python.org/3/c-api/). Contrôle total. | Compilation, portabilité, gestion des références. Niveau élevé de connaissances en C. |
 | [PyBind11](https://github.com/pybind/pybind11) (recommandé pour C++) | 2015 |  | Bibliothèque légère et à en-tête uniquement pour la création de liaisons Python de code C++ existant. Peu de dépendances. Compatibilité PyPy. | Plus récente, moins reconnue. Utilisation intensive des fonctionnalités C++11. Très peu de compilateurs pris en charge (Visual Studio est inclus). |
-| Cython (recommandé pour C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Semblable à Python. Approche hautement reconnue. Performances élevées. | Compilation, nouvelle syntaxe, nouvelle chaîne d’outils. |
+| Cython (recommandé pour C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Semblable à Python. Approche hautement reconnue. Performances élevées. | Compilation, nouvelle syntaxe, nouvelle chaîne d’outils. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Fonctionne avec pratiquement tous les compilateurs C++. | Suite volumineuse et complexe de bibliothèques ; contient de nombreuses solutions de contournement pour les anciens compilateurs. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Pas de compilation, large disponibilité. | Accès et mutation des structures C fastidieux et sujets aux erreurs. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Générer des liaisons pour de nombreux langages à la fois. | Surcharge excessive si Python est la seule cible. |

@@ -1,5 +1,5 @@
 ---
-title: Sélectionner un paramètre d’exécution pour un test de charge dans Visual Studio
+title: Sélectionner un paramètre d’exécution d’un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381909"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067383"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procédure : sélectionner le paramètre d’exécution active d’un test de charge
 
 Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Un test de charge peut contenir un ou plusieurs *paramètres d’exécution*, c’est-à-dire un ensemble de propriétés qui influencent la manière dont un test de charge est exécuté. Les paramètres d’exécution sont classés par catégories dans la fenêtre **Propriétés**. Lorsqu'un test de charge est exécuté, il utilise le paramètre d'exécution actuellement actif.
 
 > [!NOTE]
-> Pour obtenir la liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
+> Pour obtenir une liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
 
 Si votre test de charge contient un seul nœud de paramètre d’exécution sous le dossier **Paramètres d’exécution**, ce nœud est toujours le nœud actif. Si votre test de charge contient plusieurs nœuds Paramètres d'exécution, vous pouvez sélectionner celui à utiliser lors de l'exécution d'un test de charge. Consultez [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 Dans **l’Éditeur de test de charge**, le paramètre d’exécution actif est identifié par le suffixe « [Active] ».
 
 ## <a name="select-the-active-run-setting"></a>Sélectionner le paramètre d’exécution actif
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Pour sélectionner le paramètre d'exécution actif dans un test de charge
 
 1.  Ouvrez un test de charge.
 

@@ -1,6 +1,7 @@
 ---
-title: 'Utiliser le tutoriel Python – Étape 1 : Créer un projet'
-description: Vue d’ensemble et étape 1 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente les conditions préalables et explique comment créer un projet Python.
+title: 'Tutoriel : Python dans Visual Studio, étape 1, créer un projet'
+titleSuffix: ''
+description: Vue d’ensemble et étape 1 d’une procédure pas à pas principale qui présente les fonctionnalités de Python dans Visual Studio, notamment les prérequis et la création d’un projet Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,33 +9,34 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220080"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049848"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
 
 Python est un langage de programmation très apprécié, car il est fiable, souple, simple d’emploi et utilisable sur tous les systèmes d’exploitation. Il est soutenu à la fois par une solide communauté de développeurs et par de nombreuses bibliothèques gratuites. Le langage prend en charge toutes les méthodes de développement, notamment les applications Web, les services web, les applications pour poste de travail, les scripts et le calcul scientifique, et il est utilisé par une multitude d’universités, de scientifiques et de développeurs, aussi bien occasionnels que professionnels.
 
 Visual Studio fournit une prise en charge du langage de premier ordre pour Python. Ce didacticiel vous guide tout au long des étapes suivantes :
 
-- [Étape 0 : Installation](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Étape 0 : Installation](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [Étape 1 : Créer un projet Python (cet article)](#step-1-create-a-new-python-project)
 - [Étape 2 : Écrire et exécuter du code pour voir à l’œuvre Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Étape 3 : Créer davantage de code dans la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Étape 4 : Exécuter le programme terminé dans le débogueur Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Étape 4 : Exécuter le programme achevé dans le débogueur Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 - [Étape 5 : Installer des packages et gérer des environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Étape 6 : Utiliser Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
-## <a name="step-1-create-a-new-python-project"></a>Étape 1 : Créer un projet Python
+## <a name="step-1-create-a-new-python-project"></a>Étape 1 : Création d’un nouveau projet Python
 
 Un *projet* représente la façon dont Visual Studio gère tous les fichiers qui constituent ensemble une application, notamment le code source, les ressources, les configurations, etc. Un projet formalise et maintient la relation entre tous les projets fichiers du projet, ainsi que des ressources externes qui sont partagées entre plusieurs projets. Ainsi, un projet vous permet de développer beaucoup plus facilement votre application qu’en gérant simplement les relations d’un projet dans des dossiers, des scripts, des fichiers texte ad hoc, et même dans votre esprit.
 

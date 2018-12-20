@@ -1,5 +1,5 @@
 ---
-title: Introduire une variable locale dans Visual Studio
+title: Introduire une variable locale
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97e0e994a15c9587ae781280743b42329753e43d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294940"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068080"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -24,11 +24,11 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** vous permet de générer immédiatement une variable locale pour remplacer une expression existante.
+**Quoi :** Vous permet de générer immédiatement une variable locale pour remplacer une expression existante.
 
-**Quand :** vous disposez d’un code pouvant être facilement réutilisé ultérieurement s’il figurait dans une variable locale.
+**Quand :** Vous disposez d’un code pouvant être facilement réutilisé ultérieurement s’il figurait dans une variable locale.
 
-**Pourquoi :** vous pouvez copier et coller le code plusieurs fois pour l’utiliser à différents emplacements. Toutefois, il est préférable d’effectuer l’opération une seule fois, d’enregistrer le résultat dans une variable locale, puis d’utiliser cette variable locale au gré des besoins.
+**Pourquoi :** Vous pouvez copier et coller le code plusieurs fois pour l’utiliser à différents emplacements. Toutefois, il est préférable d’effectuer l’opération une seule fois, d’enregistrer le résultat dans une variable locale, puis d’utiliser cette variable locale au gré des besoins.
 
 ## <a name="how-to"></a>Procédure
 

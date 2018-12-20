@@ -1,7 +1,7 @@
 ---
-title: Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy | Microsoft Docs
+title: Installer et utiliser derrière un pare-feu ou un serveur proxy
 description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349567"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160164"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
 Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un pare-feu ou un serveur proxy, il existe des URL de domaine que vous pouvez vouloir mettre sur « liste verte » et des ports et protocoles que vous pouvez vouloir ouvrir afin d’obtenir une meilleure expérience lorsque vous installez et utilisez Visual Studio et les services Azure.
 
-* **[Installer Visual Studio](#install-visual-studio)**  : ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.
+* **[Installer Visual Studio](#install-visual-studio)**  : Ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.
 
 * **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)**  : Cette table inclut les URL de domaine à la liste verte et les ports et protocoles à ouvrir pour avoir accès à toutes les fonctionnalités et tous les services désirés.
 
@@ -55,7 +55,7 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 | visualstudio.microsoft.com | Emplacement de la documentation |
 | docs.microsoft.com | Emplacement de la documentation |
 | msdn.microsoft.com | Emplacement de la documentation |
-| www.microsoft.com | Emplacement de la documentation |
+| www\.microsoft.com | Emplacement de la documentation |
 | \*.windows.net | Emplacement de connexion |
 | \*.microsoftonline.com | Emplacement de connexion |
 | \*.live.com | Emplacement de connexion |
@@ -72,9 +72,9 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 | download.unity3d.com | Développement de jeux avec Unity (Unity) |
 | netstorage.unity3d.com | Développement de jeux avec Unity (Unity) |
 | dl.google.com | Développement mobile avec JavaScript (Kit de développement logiciel Android et NDK, Emulator) <br /><br />Développement mobile avec .NET (Kit de développement logiciel Android et NDK, Emulator) |
-| www.incredibuild.com | Développement de jeux avec C++ (Incredibuild) |
+| www\.incredibuild.com | Développement de jeux avec C++ (Incredibuild) |
 | incredibuildvs2017i.azureedge.net | Développement de jeux avec C++ (Incredibuild) |
-| www.python.org | Développement Python (Python) <br /><br />Applications de science des données et analytiques (Python) |
+| www\.python.org | Développement Python (Python) <br /><br />Applications de science des données et analytiques (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Utiliser Visual Studio et les services Azure
@@ -121,7 +121,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Instantané <br>Débogueur | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dépendant de la version Visual Studio) | 1. Fichier .json de requête sur la taille de la référence (SKU) du service d’applications <br>2. Différents appels du Gestionnaire de ressources Azure <br>3. Appel de préparation de site via  <br>4. Point de terminaison Kudu du service d’application ciblé du client <br>5. Version de l’Extension de site de requête publiée dans nuget.org <br>6. Canal de débogage à distance |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Permet d’afficher, soumettre, exécuter et gérer des travaux ASA <br><br> Permet de parcourir des clusters HDI et soumettre, diagnostiquer et déboguer des travaux HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Permet de compiler, soumettre, afficher, diagnostiquer et déboguer des travaux ; utilisé pour parcourir des fichiers ADLS ; permet de charger et télécharger des fichiers |
-| Service d’empaquetage | [compte].visualstudio.com <br/> [compte].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org et \*.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple, le programme d’installation d’outils NuGet ou Node), ou pour utiliser des flux ascendants publics. Les trois autres domaines sont requis pour les fonctionnalités de base du service de création de packages. |
+| Service d’empaquetage | [compte].visualstudio.com <br/> [compte].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org et \*.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple : le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics. Les trois autres domaines sont requis pour les fonctionnalités de base du service de création de packages. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Utilisé pour se connecter avec Azure DevOps Services |
 | | | | | |
 

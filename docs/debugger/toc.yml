@@ -5,27 +5,31 @@ items:
   items:
   - name: Qu’est-ce que le débogage ?
     href: what-is-debugging.md
-  - name: Écrire un meilleur code C# avec Visual Studio
+  - name: Correction des bogues par amélioration du code C#
     href: write-better-code-with-visual-studio.md
 - name: Démarrages rapides
   items:
   - name: Présentation du débogueur
     href: debugger-feature-tour.md
-  - name: Déboguer une application managée
+  - name: Déboguer une application C# ou Visual Basic
     href: quickstart-debug-with-managed.md
-  - name: Déboguer une application native
+  - name: Déboguer une application C++
     href: quickstart-debug-with-cplusplus.md
   - name: Déboguer une application ASP.NET
     href: quickstart-debug-aspnet.md
 - name: Didacticiels
   items:
-  - name: Apprendre à déboguer avec Visual Studio
+  - name: Apprendre à déboguer C#
     href: getting-started-with-the-debugger.md
+  - name: Apprendre à déboguer C++
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Apprendre à déboguer Visual Basic
+    href: getting-started-with-the-debugger-vb.md
   - name: Exécution de code Python dans le débogueur...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Déboguer une application Azure en direct
     href: debug-live-azure-applications.md
-  - name: Déboguer un code natif et managé
+  - name: Déboguer du code C# et C++
     href: how-to-debug-managed-and-native-code.md
   - name: Inspecter les précédents états des applications
     href: view-historical-application-state.md
@@ -105,7 +109,7 @@ items:
       items:
       - name: Utiliser Modifier & Continuer (C#)
         href: how-to-use-edit-and-continue-csharp.md
-      - name: Modifications de code prises en charge (C#)
+      - name: Modifications de code prises en charge
         href: supported-code-changes-csharp.md
     - name: Modifier & Continuer (Visual Basic)
       href: edit-and-continue-visual-basic.md
@@ -836,9 +840,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770468"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821394"

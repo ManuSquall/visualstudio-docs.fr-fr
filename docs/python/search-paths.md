@@ -1,6 +1,6 @@
 ---
 title: Mode d’application des chemins de recherche Python
-description: Présentation de la façon dont Visual Studio utilise les chemins de recherche Python dans les environnements et les projets.
+description: Visual Studio fournit un moyen plus spécifique de spécifier des chemins de recherche pour les environnements et les projets afin d’éviter d’utiliser des variables à l’échelle du système.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: e3e6bd1ce14e1803e48a476246e3cfb8858286bb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607899"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051527"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 
@@ -26,7 +27,7 @@ Dans le cadre de l’utilisation typique de Python, la variable d’environnemen
 1. Dossier contenant le code Python que vous exécutez.
 1. « Chemin de recherche du module », comme défini par la variable d’environnement applicable. (Consultez les sections [The Module Search Path](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) (Chemin de recherche de module) et [Environment variables](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) (Variables d’environnement) dans la documentation Python principale.)
 
-Visual Studio ignore la variable d’environnement de chemin de recherche, même si elle a été définie pour l’ensemble du système. En fait, elle est ignorée, *car* elle est définie pour l’ensemble du système et entraîne donc certaines questions auxquelles il est impossible de répondre automatiquement : les modules référencés sont-ils destinés à Python 2.7 ou à Python 3.6 ? Vont-ils remplacer les modules de bibliothèque standard ? Le développeur est-il informé de ce comportement ou s’agit-il d’une tentative de piratage ?
+Visual Studio ignore la variable d’environnement de chemin de recherche, même si elle a été définie pour l’ensemble du système. En fait, elle est ignorée, *car* elle est définie pour l’ensemble du système et entraîne donc certaines questions auxquelles il est impossible de répondre automatiquement : Les modules référencés sont-ils destinés à Python 2.7 ou à Python 3.6+ ? Vont-ils remplacer les modules de bibliothèque standard ? Le développeur est-il informé de ce comportement ou s’agit-il d’une tentative de piratage ?
 
 Visual Studio fournit ainsi un moyen permettant de spécifier les chemins de recherche directement dans les environnements et les projets. Le code que vous exécutez ou déboguez dans Visual Studio reçoit les chemins de recherche dans la valeur de `PYTHONPATH` (et autres variables équivalentes). En ajoutant des chemins de recherche, Visual Studio inspecte les bibliothèques de ces emplacements et génère des bases de données IntelliSense pour celles-ci lorsque nécessaire (Visual Studio 2017 version 15.5 et versions antérieures ; la construction de la base de données peut prendre un certain temps en fonction du nombre de bibliothèques).
 

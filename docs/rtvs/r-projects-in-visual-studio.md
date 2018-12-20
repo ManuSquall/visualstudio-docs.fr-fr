@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813835"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248281"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Créer des projets R dans Visual Studio
 
@@ -63,7 +63,7 @@ Si vous avez un dossier de fichiers *.R* que vous souhaitez gérer dans un proje
 
 ## <a name="project-properties"></a>Propriétés de projet
 
-Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)*. La fenêtre qui s’ouvre affiche les propriétés du projet :
+Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions**, puis sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)**. La fenêtre qui s’ouvre affiche les propriétés du projet :
 
 
 | Onglet | Property | Description | 

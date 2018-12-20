@@ -1,5 +1,5 @@
 ---
-title: Exporter les résultats des tests de charge dans Visual Studio
+title: Exporter des résultats des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e9f3513cb5d7bb03f51be68d1b44b8df161a088
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381502"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057163"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Guide pratique pour exporter les résultats des tests de charge à partir d’un référentiel
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Procédure : exporter des résultats des tests de charge à partir d’un dépôt
 
 Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gérer les résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur de test de charge via la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**. Vous pouvez ouvrir, importer, exporter et supprimer les résultats des tests de charge.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-export-results-from-a-repository"></a>Pour exporter les résultats à partir d'un référentiel
 
@@ -56,6 +58,6 @@ Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur 
 ## <a name="see-also"></a>Voir aussi
 
 - [Gérer des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Guide pratique pour supprimer les résultats d’un test de charge d’un référentiel](../test/how-to-delete-load-test-results-from-a-repository.md)
+- [Guide pratique pour supprimer des résultats des tests de charge dans un dépôt](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Guide pratique pour importer les résultats d’un test de charge dans un référentiel](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Guide pratique pour importer des résultats des tests de charge dans un dépôt](../test/how-to-import-load-test-results-into-a-repository.md)

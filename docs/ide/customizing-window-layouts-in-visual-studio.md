@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des dispositions de fenêtres dans Visual Studio
+title: Personnaliser les dispositions de fenêtres
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746843"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389641"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -72,7 +72,7 @@ Vous pouvez organiser les fenêtres comme suit :
 
 -   ancrer les fenêtres Outil au bord d'un cadre dans l'IDE ;
 
--   faire flotter des fenêtres de document ou Outil par-dessus l’IDE ou en dehors de celui-ci ;
+-   faire flotter des fenêtres de document ou Outil par dessus l'IDE ou en dehors de celui-ci ;
 
 -   masquer les fenêtres Outil le long du bord de l'IDE ;
 
@@ -81,9 +81,6 @@ Vous pouvez organiser les fenêtres comme suit :
 -   rétablir la position de la fenêtre selon la disposition par défaut ou une disposition personnalisée enregistrée.
 
 Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.
-
-> [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ### <a name="dock-windows"></a>Ancrer des fenêtres
 

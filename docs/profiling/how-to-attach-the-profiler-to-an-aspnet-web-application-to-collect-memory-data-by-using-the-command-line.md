@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des données de mémoire en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à une application ASP.NET pour collecter des données de mémoire
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: fd5f5b1ede7f5261d03ae8e75cfe6a603ead38da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f5c592733cc43101cb5cf022caf84892a55af7a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841687"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052956"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application web ASP.NET et collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procédure : attacher le profileur à une application web ASP.NET pour collecter des données de mémoire en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et collecter des données sur le nombre et la taille des allocations de mémoire du .NET Framework. Vous pouvez également collecter des données sur la durée de vie des objets en mémoire du .NET Framework.  
 
 > [!NOTE]
@@ -109,7 +109,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    - Tapez **VSPerfCmd** [/detach](../profiling/detach.md)  
 
-      - ou -  
+      ou  
 
    - Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :  
 

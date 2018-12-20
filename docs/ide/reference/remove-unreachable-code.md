@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd06fb7cd7b0e31df777a488c34a59e5a036e3b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836383"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059309"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Supprimer le code inaccessible dans Visual Studio (refactorisation)
 
@@ -24,11 +24,11 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** supprime le code qui ne sera jamais exécuté.
+**Quoi :** Supprime le code qui ne sera jamais exécuté.
 
-**Quand :** votre programme ne dispose d’aucun chemin d’accès à un extrait de code, rendant cet extrait de code inutile.
+**Quand :** Votre programme ne dispose d’aucun chemin d’accès à un extrait de code, ce qui rend l’extrait de code inutile.
 
-**Pourquoi :** pour améliorer la lisibilité et la maintenance en supprimant un code superflu et qui ne sera jamais exécuté.
+**Pourquoi :** Pour améliorer la lisibilité et la maintenance en supprimant un code superflu qui ne sera jamais exécuté.
 
 ## <a name="how-to"></a>Procédure
 

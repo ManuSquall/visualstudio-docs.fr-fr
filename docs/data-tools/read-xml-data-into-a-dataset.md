@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908422"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389213"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 
 ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dans cette procédure pas à pas, vous créez une application Windows qui charge des données XML dans un jeu de données. Le jeu de données est ensuite affichée dans un <xref:System.Windows.Forms.DataGridView> contrôle. Enfin, un schéma XML en fonction du contenu du fichier XML s’affiche dans une zone de texte.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, sur le **outils** menu, sélectionnez **importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+## <a name="create-a-new-project"></a>Créer un projet
 
-## <a name="create-a-new-project"></a>Créer un nouveau projet
-
-Dans cette étape, vous créez un projet Visual Basic ou Visual c#.
+Dans cette étape, vous allez créer un Visual Basic ou le visuel C# projet.
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
@@ -54,7 +51,7 @@ Dans cette étape, vous créez un projet Visual Basic ou Visual c#.
 
 Étant donné que cette procédure pas à pas se concentre sur la lecture de données XML dans un dataset, le contenu d’un fichier XML est fourni.
 
-1. Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
+1. Dans le menu Projet **, sélectionnez Ajouter un nouvel élément**.
 
 2. Sélectionnez **fichier XML**, nommez le fichier **authors.xml**, puis sélectionnez **ajouter**.
 
@@ -152,10 +149,10 @@ L’interface utilisateur pour cette application se compose des éléments suiva
 
 3.  Définissez les propriétés suivantes :
 
-    |Contrôle|Propriété|Paramètre|
+    |Contrôle|Property|Paramètre|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**Barres de défilement**|**Vertical**|
+    ||ScrollBars|**Vertical**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ Le **Afficher schéma** bouton crée un <xref:System.IO.StringWriter> objet qui 
 
      Le **éditeur de Code** s’ouvre à la `ShowSchemaButton_Click` Gestionnaire d’événements.
 
-3.  Collez le code suivant dans le `ShowSchemaButton_Click` Gestionnaire d’événements.
+3.  Collez le code suivant dans le gestionnaire d'événements `ShowSchemaButton_Click` :
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]

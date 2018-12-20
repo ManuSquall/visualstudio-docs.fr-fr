@@ -1,5 +1,5 @@
 ---
-title: Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages
+title: Ajouter la prise en charge de l’éditeur pour d’autres langages
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244474"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062093"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -84,9 +84,9 @@ Sous ce chemin de base, ajoutez le ou les dossiers suivants s’ils s’applique
 
 Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier d’extensions n’existe pas sur votre système, vous devez le créer. Si le dossier existe déjà, il est masqué.
 
-Pour plus d’informations sur la création de grammaires TextMate, consultez [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Présentation des grammaires de langage : comment ajouter la coloration syntaxique du code source incorporée en HTML) et [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un lot Textmate).
+Pour plus d’informations sur la création de grammaires TextMate, consultez [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML Comment ajouter la coloration syntaxique du code source incorporée en HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Présentation des grammaires de langage : comment ajouter la coloration syntaxique du code source incorporée en HTML) et [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un lot Textmate).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
-- [Procédure pas à pas : afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)

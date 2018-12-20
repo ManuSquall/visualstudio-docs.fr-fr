@@ -1,5 +1,5 @@
 ---
-title: Supprimer des avertissements du compilateur dans Visual Studio pour les projets et les packages NuGet
+title: Supprimer les avertissements du compilateur pour les projets et les packages NuGet
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948559"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060363"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
+# <a name="how-to-suppress-compiler-warnings"></a>Procédure : Supprimer les avertissements du compilateur
 
 Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaitez peut-être passer en revue uniquement une partie de la sortie générée quand vous définissez le niveau de détail **Normal**, **Détaillé** ou **Diagnostic** pour le journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 

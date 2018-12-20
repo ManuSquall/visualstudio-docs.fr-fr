@@ -1,5 +1,5 @@
 ---
-title: Ajouter des paramètres de nom à des modèles de projet et d’élément dans Visual Studio
+title: Ajouter des paramètres de nom à des modèles de projet et d’élément
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7dbc27762319538053ecee5d7566d86c998db852
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945933"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062468"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Guide pratique pour substituer des paramètres dans un modèle
+# <a name="how-to-substitute-parameters-in-a-template"></a>Procédure : Substituer des paramètres dans un modèle
 
 Les paramètres de modèle vous permettent de remplacer des identificateurs, comme des noms de classes et des espaces de noms, pendant la création d’un fichier à partir d’un modèle. Vous pouvez ajouter des paramètres de modèle à des modèles existants ou créer vos propres modèles avec des paramètres de modèle.
 
@@ -28,7 +28,7 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
 
 ## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Pour utiliser un paramètre pour remplacer le nom de l’espace de noms
 
-1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Exemple :
+1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Par exemple :
 
     ```csharp
     namespace $safeprojectname$

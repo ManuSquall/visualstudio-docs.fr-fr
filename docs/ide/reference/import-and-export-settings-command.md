@@ -1,6 +1,6 @@
 ---
 title: Importation et exportation de paramètres (commande)
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704585"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388700"
 ---
 # <a name="import-and-export-settings-command"></a>Importation et exportation de paramètres (commande)
-Importe, exporte ou réinitialise les paramètres [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+Importe, exporte ou réinitialise les paramètres Visual Studio.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,25 +33,26 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
 ## <a name="switches"></a>Commutateurs
- /export:`filename`
 
- Facultative. Exporte les paramètres actuels dans le fichier spécifié.
+/export:`filename`
 
- /import:`filename`
+Facultative. Exporte les paramètres actuels dans le fichier spécifié.
 
- Facultative. Importe les paramètres figurant dans le fichier spécifié.
+/import:`filename`
 
- /reset
+Facultative. Importe les paramètres figurant dans le fichier spécifié.
 
- Facultative. Réinitialise les paramètres actuels.
+/reset
+
+Facultative. Réinitialise les paramètres actuels.
 
 ## <a name="remarks"></a>Notes
 
-L’exécution de cette commande sans commutateur ouvre l’Assistant **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Synchroniser vos paramètres](../../ide/synchronized-settings-in-visual-studio.md).
+L’exécution de cette commande sans commutateur ouvre l’Assistant **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Synchroniser vos paramètres](../synchronized-settings-in-visual-studio.md) et [Paramètres d’environnement](../environment-settings.md).
 
 ## <a name="example"></a>Exemple
 
-La commande suivante exporte les paramètres actuels dans le fichier `MyFile.vssettings`.
+La commande suivante exporte les paramètres actuels dans le fichier `MyFile.vssettings` :
 
 ```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
@@ -58,5 +60,7 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Paramètres d’environnement](../../ide/environment-settings.md)
+- [Synchroniser vos paramètres](../../ide/synchronized-settings-in-visual-studio.md)
 - [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)

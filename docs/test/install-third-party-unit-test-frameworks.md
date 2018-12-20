@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379636"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954082"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Installer des frameworks de tests unitaires tierces
+# <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 
-L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de tests unitaires ayant développé une interface d'adaptateur pour l'Explorateur. Le programme d'installation du framework installe les fichiers binaires et ajoute des modèles de projet Visual Studio pour les langages qu'il prend en charge. Lorsque vous créez un projet avec le modèle, le framework est inscrit avec l'Explorateur de tests. Une solution Visual Studio peut contenir des projets de test unitaire qui utilisent des frameworks différents et qui sont destinés à des langages différents. L'Explorateur de tests les exécute tous.
+L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de tests unitaires ayant développé une interface d'adaptateur pour l'Explorateur. Le programme d'installation du framework installe les fichiers binaires et ajoute des modèles de projet Visual Studio pour les langages qu'il prend en charge. Lorsque vous créez un projet avec le modèle, le framework est inscrit avec l'Explorateur de tests. Une solution Visual Studio peut contenir des projets de test unitaire qui utilisent des frameworks différents et qui sont destinés à des langages différents. L’Explorateur de tests les exécute tous.
 
-## <a name="acquire-third-party-frameworks"></a>Obtenir des frameworks tiers
+[MSTest](getting-started-with-unit-testing.md) est le framework de tests fourni par Visual Studio et installé par défaut avec Visual Studio.
 
-Vous pouvez télécharger et installer plusieurs frameworks de test unitaire tiers avec le gestionnaire d’extensions de Visual Studio ou à partir de Visual Studio Marketplace. Il est également possible de télécharger des frameworks à partir d'autres sites tels que le site web du framework.
+## <a name="acquire-frameworks"></a>Acquérir des frameworks
+
+Vous pouvez télécharger et installer des frameworks de tests unitaires tiers à l’aide du gestionnaire d’extensions de Visual Studio ou à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Il est également possible de télécharger des frameworks à partir d'autres sites tels que le site web du framework.
 
 ### <a name="install-from-visual-studio"></a>Installer à partir de Visual Studio
 
@@ -64,7 +66,7 @@ Mettez à jour vers l’adaptateur de test stable le plus récent afin de béné
 
 1. Ouvrez le Gestionnaire de package Nuget pour votre solution en accédant à **Outils** > **Gestionnaire de package NuGet** > **Gérer les packages NuGet pour la solution**.
 
-2. Cliquez sur l’onglet **Mises à jour** et recherchez les adaptateurs de test NUnit ou xUnit installés.
+2. Cliquez sur l’onglet **Mises à jour**, puis recherchez les adaptateurs de test MSTest, NUnit ou xUnit installés.
 
 3. Sélectionnez chaque adaptateur de test, puis sélectionnez la dernière version stable dans le menu déroulant.
 

@@ -1,26 +1,28 @@
 ﻿---
-title: Tutoriel - Découvrez Django dans Visual Studio, étape 5
+title: Tutoriel d’apprentissage de Django dans Visual Studio, étape 5, authentification
+titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités d’authentification comme fournies par les modèles de projet Web Django.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561645"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064071"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
+# <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
-**Étape précédente : [utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Étape précédente : [Utiliser le modèle de projet web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Étant donné que l’authentification est un besoin courant pour les applications Web, le modèle « Projet Web de Django » contient un flux de l’authentification de base. (Le modèle « Sondages sur le projet Web Django » discuté à l’étape 6 de ce tutoriel inclut également le même flux.) Quand vous utilisez un des modèles de projet Django, Visual Studio inclut tous les modules nécessaires pour l’authentification dans le script *settings.py* du projet Django.
 
@@ -29,7 +31,7 @@ Dans cette étape vous apprenez :
 > [!div class="checklist"]
 > - à utiliser le flux d’authentification fourni dans les modèles Visual Studio (étape 5-1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Étape 5-1 : utiliser le flux d’authentification
+## <a name="step-5-1-use-the-authentication-flow"></a>Étape 5-1 : Utiliser le flux d’authentification
 
 Les étapes suivantes exécutent le flux d’authentification et décrivent les parties du projet qui sont impliquées :
 
@@ -204,9 +206,9 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 1. Lorsque vous avez tout terminé, arrêtez le serveur et validez à nouveau les modifications apportées au contrôle de code source.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Question : quel est l’objectif de la balise {% csrf_token %} qui apparaît dans les éléments du \<formulaire\> ?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quel est l’objectif de la balise {% csrf_token %} qui apparaît dans les éléments du \<formulaire\> ?
 
-Réponse : la balise `{% csrf_token %}` inclut la [protection (csrf) contre la falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
+Réponse : La balise `{% csrf_token %}` inclut la [protection (csrf) contre la falsification de requête intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -216,4 +218,4 @@ Réponse : la balise `{% csrf_token %}` inclut la [protection (csrf) contre la 
 ## <a name="go-deeper"></a>Approfondir la question
 
 - [Authentification des utilisateurs dans Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

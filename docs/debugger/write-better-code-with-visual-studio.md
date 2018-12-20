@@ -1,8 +1,10 @@
 ---
-title: Laisser Visual Studio vous aident à écrire C# code avec moins de bogues
+title: Correction des bogues par amélioration du code C#
 description: Comprendre comment mieux écrire votre code avec moins de bogues
-ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.custom:
+- debug-experiments
+- seodec18
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948957"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051673"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Écrire de meilleures C# code à l’aide de Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corriger les bogues en écrivant mieux C# code à l’aide de Visual Studio
 
-Débogage du code peut prendre du temps--et parfois frustrante--la tâche. De temps pour apprendre à déboguer efficacement. Un puissant IDE comme Visual Studio peut rendre votre travail beaucoup plus facile. Un IDE peut aider à vous déboguez votre code plus rapidement et pas seulement ça, mais il peut également aider à écrire de code de meilleure qualité avec moins de bogues. Notre objectif dans cet article est de vous donner une vue holistique du processus de débogage, afin de savoir quand utiliser l’Analyseur de code, ainsi que l’utilisation du débogueur et quand utiliser d’autres outils.
+Débogage du code peut prendre du temps--et parfois frustrante--la tâche. De temps pour apprendre à déboguer efficacement, mais un puissant IDE comme Visual Studio votre travail beaucoup plus facile. Un IDE peut aider à vous déboguez votre code plus rapidement et pas seulement ça, mais il peut également aider à écrire de code de meilleure qualité avec moins de bogues. Notre objectif dans cet article est de vous donner une vue holistique du processus de débogage, afin de savoir quand utiliser l’Analyseur de code, ainsi que l’utilisation du débogueur et quand utiliser d’autres outils.  
 
 Dans cet article, nous parler en tirant parti de l’IDE pour améliorer la productivité de vos sessions de débogage. Nous abordons le thème sur plusieurs tâches, telles que :
 
@@ -42,7 +44,7 @@ Si vous préférez, vous pouvez créer une application console .NET Framework ou
 Pour créer l’application, ouvrez Visual Studio et choisissez **fichier > Nouveau projet**. Sous **Visual C#** , choisissez **Windows Desktop** ou **.NET Core**, puis, dans le volet central, choisissez un **application Console**. Tapez un nom tel que **Console_Parse_JSON** et cliquez sur **OK**. Visual Studio crée le projet. Coller le [exemple de code](#sample-code) dans le projet *Program.cs* fichier.
 
 > [!NOTE]
-> Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez le **développement .NET desktop** ou **.NET Core le développement multiplateforme** charge de travail, puis choisissez **modifier**.
+> Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, puis **Modifier**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Rechercher les tildes rouges et vertes !
 
@@ -81,7 +83,7 @@ Pour corriger cette erreur, modifiez le `points` membre de la `User` classe à p
 internal string points;
 ```
 
-Par ceci :
+en ceci :
 
 ```csharp
 [DataMember]
@@ -113,7 +115,7 @@ La ligne verte ondulée disparaît.
 
 Lorsque vous avez résolu tous les tildes rouges et résolu--ou au moins examiné--les tildes verts, vous êtes prêt à démarrer le débogueur et exécuter l’application.
 
-Appuyez sur **F5** (**Déboguer > Démarrer le débogage**) ou le **démarrer le débogage** bouton ![démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "démarrer le débogage ") dans la barre d’outils de débogage.
+Appuyez sur **F5** (**Déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage ") dans la barre d’outils Débogage.
 
 À ce stade, l’exemple d’application lève une `SerializationException` exception (une erreur d’exécution). Autrement dit, l’application amaigrit sur les données qu’il tente de sérialiser. Étant donné que vous avez démarré l’application en mode débogage (débogueur attaché), assistance de l’Exception du débogueur ouvre directement le code qui a levé l’exception et vous donne un message d’erreur utiles.
 
@@ -123,7 +125,7 @@ Le message d’erreur vous indique que la valeur `4o` ne peut pas être analysé
 
 Lorsque vous atteignez une exception, vous devez (et réponses) quelques questions :
 
-* Cette exception n’est simplement un bogue que vous pouvez corriger ? Ou,
+* Cette exception n’est simplement un bogue que vous pouvez corriger ? Ou
 
 * Est cette exception quelque chose que vos utilisateurs peuvent rencontrer ?
 
@@ -407,4 +409,4 @@ namespace Console_Parse_JSON_DotNetCore
 Dans cet article, vous avez appris comment éviter et résoudre de nombreux bogues courants dans votre code et quand utiliser le débogueur. Ensuite, en savoir plus sur l’utilisation du débogueur Visual Studio pour corriger les bogues.
 
 > [!div class="nextstepaction"]
-> [Débogage pour les débutants](../debugger/debugging-absolute-beginners.md)
+> [Débogage pour les grands débutants](../debugger/debugging-absolute-beginners.md)

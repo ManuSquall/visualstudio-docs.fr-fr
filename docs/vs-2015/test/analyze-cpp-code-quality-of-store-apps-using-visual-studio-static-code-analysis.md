@@ -1,14 +1,9 @@
 ---
-title: Analyser la qualité du code C++ des applications du Windows Store à l’aide de l’analyse statique du code Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Applications de Store d’analyse statique du code C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
@@ -16,85 +11,72 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e140f2e1066f6e2025491517106d27f6955d871b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863787"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064152"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code C++ des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)
 
- L'outil d'analyse du code dans les éditions Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.  
+ L'outil d'analyse du code dans les éditions Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
 > [!NOTE]
->  Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes des outils d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](http://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.  
+> Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes des outils d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](http://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
 
-## <a name="in-this-topic"></a>Dans cette rubrique  
- Vous allez découvrir ce qui suit :  
+##  <a name="BKMK_Run"></a> Exécution de l’analyse du code
+ Pour exécuter l'analyse du code sur votre solution Visual Studio :
 
- [Exécution de l’analyse du code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)  
+- Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.
 
- [Analyse et résolution des avertissements de l’analyse du code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)  
+  Pour exécuter automatiquement l'analyse du code chaque fois que vous générez un projet :
 
- [Suppression des avertissements de l’analyse du code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Suppress)  
+1. Dans l’Explorateur de solutions, choisissez le nom du projet, puis choisissez **Propriétés**.
 
- [Explorer et filtrer les résultats d’analyse du code](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Search)  
+2. Dans la page des propriétés du projet, choisissez **Analyse du code**, puis **Activer l’analyse du code pour la génération C/C++ sur la build**.
 
- [Avertissements de l’analyse du code C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#Warnings)  
+   La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.
 
-##  <a name="BKMK_Run"></a> Exécution de l’analyse du code  
- Pour exécuter l'analyse du code sur votre solution Visual Studio :  
+   ![Fenêtre d’analyse du code](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-- Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.  
+##  <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
+ Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème. Quand cela est possible, l'analyse du code affiche le numéro de la ligne et la logique de l'analyse qui a conduit à l'avertissement.
 
-  Pour exécuter automatiquement l'analyse du code chaque fois que vous générez un projet :  
+ ![Avertissements liés à l’analyse du code développé](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
-1. Dans l’Explorateur de solutions, choisissez le nom du projet, puis choisissez **Propriétés**.  
+ Quand vous développez un avertissement, les lignes de code à l’origine de l’avertissement sont mises en surbrillance dans l’éditeur de Visual Studio Code.
 
-2. Dans la page des propriétés du projet, choisissez **Analyse du code**, puis **Activer l’analyse du code pour la génération C/C++ sur la build**.  
+ ![Code source en surbrillance](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
-   La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.  
-
-   ![Fenêtre d’analyse du code](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")  
-
-##  <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code  
- Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème. Quand cela est possible, l'analyse du code affiche le numéro de la ligne et la logique de l'analyse qui a conduit à l'avertissement.  
-
- ![Avertissements liés à l’analyse du code développé](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")  
-
- Quand vous développez un avertissement, les lignes de code à l’origine de l’avertissement sont mises en surbrillance dans l’éditeur de Visual Studio Code.  
-
- ![Code source en surbrillance](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")  
-
- Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.  
+ Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.
 
 > [!TIP]
->  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le bouton **Analyser**, puis choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.  
+>  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le bouton **Analyser**, puis choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
 
-##  <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code  
- Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.  
+##  <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code
+ Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.
 
- Pour supprimer un avertissement :  
+ Pour supprimer un avertissement :
 
-1. Si les informations détaillées ne s’affichent pas, développez le titre de l’avertissement.  
+1. Si les informations détaillées ne s’affichent pas, développez le titre de l’avertissement.
 
-2. Choisissez le lien **Actions** au bas de l’avertissement.  
+2. Choisissez le lien **Actions** au bas de l’avertissement.
 
-3. Choisissez de **Supprimer le message**, puis choisissez **Dans la source**.  
+3. Choisissez de **Supprimer le message**, puis choisissez **Dans la source**.
 
-   La suppression d’un message insère `#pragma(warning:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.  
+   La suppression d’un message insère `#pragma(warning:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.
 
-##  <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code  
- Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.  
+##  <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
+ Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
- ![Explorer et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")  
+ ![Explorer et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Avertissements de l’analyse du code C++  
- L'analyse du code génère les avertissements suivants pour le code C++ :  
+##  <a name="Warnings"></a> Avertissements de l’analyse du code C++
+ L'analyse du code génère les avertissements suivants pour le code C++ :
 
 
 |                                      Règle                                      |                                                  Description                                                  |
@@ -114,7 +96,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                       [C6270](../code-quality/c6270.md)                        |                                   Argument float manquant pour le formatage de la fonction                                   |
 |                       [C6271](../code-quality/c6271.md)                        |                                       Argument supplémentaire pour le formatage de la fonction                                       |
 |                       [C6272](../code-quality/c6272.md)                        |                                     Argument non float pour le formatage de la fonction                                     |
-|                       [C6273](../code-quality/c6273.md)                        |                                    Argument non entier pour le formatage de la fonction                                     |
+|                       [C6273](../code-quality/c6273.md)                        |                                    Argument non entier pour la fonction Format                                     |
 |                       [C6274](../code-quality/c6274.md)                        |                                   Argument autre qu’un caractère pour le formatage de la fonction                                   |
 |                       [C6276](../code-quality/c6276.md)                        |                                              Cast de chaîne non valide                                              |
 |                       [C6277](../code-quality/c6277.md)                        |                                          Appel CreateProcess non valide                                           |
@@ -135,7 +117,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null sur élément non pointeur                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck sur Void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Taille de mémoire tampon sur élément non pointeur ou tableau                                      |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Incompatibilité de null au déréférencement nul                                       |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilité de null au déréférencement nul                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Accès en écriture sur constante                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Retour utilisé sur condition préalable                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        Terminaison par Null sur élément non pointeur                                         |
@@ -146,13 +128,13 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                       [C6516](../code-quality/c6516.md)                        |                                          Attribut sans propriété                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Taille valide dans mémoire tampon non lisible                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Taille accessible en écriture dans mémoire tampon non accessible en écriture                                      |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Annotation non valide : la propriété NeedsRelease doit avoir la valeur Yes ou No                   |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Déréférencement de chaîne de taille non valide                                        |
+| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Annotation non valide : la propriété NeedsRelease doit avoir la valeur Yes ou No                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Déréférencement de chaîne de taille non valide                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Type de chaîne de taille non valide                                            |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Paramètre de chaîne de taille non valide                                         |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Paramètre de chaîne de taille non valide                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Chaîne de taille non valide. Emplacement inaccessible                                    |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Type de tampon de chaîne de taille non valide                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void               |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Type de tampon de chaîne de taille non valide                                        |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : La propriété 'NeedsRelease' ne peut pas être utilisée sur des valeurs de type void.               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Style de chaîne de format non reconnu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Spécification de taille non valide : expression impossible à analyser                              |
@@ -167,18 +149,18 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                      [C28182](../code-quality/c28182.md)                       |         Déréférencement du pointeur NULL. Le pointeur contient la même valeur NULL qu'un autre pointeur.          |
 |                      [C28202](../code-quality/c28202.md)                       |                                    Référence non autorisée à un membre non statique                                     |
 |                      [C28203](../code-quality/c28203.md)                       |                                     Référence ambiguë à un membre de classe.                                      |
-|                      [C28205](../code-quality/c28205.md)                       |                           \_Réussite\_ ou \_On_failure\_ utilisé dans un contexte non autorisé                            |
+|                      [C28205](../code-quality/c28205.md)                       |                           \_Success\_ ou \_On_failure\_ utilisé dans un contexte non autorisé                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   L’opérande de gauche pointe vers un struct, utiliser '->'                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       L’opérande de gauche est un struct, utiliser '.'                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                 Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 Nom du contexte statique attendu pour SAL_context                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  Expression de pointeur attendue pour l'annotation                                   |
-|                      [C28213](../code-quality/c28213.md)                       | Le \_Use_decl_annotations\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure. |
+|                      [C28213](../code-quality/c28213.md)                       | L’annotation \_Use_decl_annotations\_ doit être utilisée pour référencer, sans modification, une déclaration antérieure. |
 |                      [C28214](../code-quality/c28214.md)                       |                                   Les noms des paramètres d'attribut doivent être p1...p9                                   |
 |                      [C28215](../code-quality/c28215.md)                       |                    Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix                    |
 |                      [C28216](../code-quality/c28216.md)                       |        L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier             |
-|                      [C28218](../code-quality/c28218.md)                       |             Pour le paramètre de fonction, le paramètre de l'annotation ne correspond pas au paramètre trouvé dans le fichier              |
+|                      [C28218](../code-quality/c28218.md)                       |             Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Expression d'entier attendue pour une annotation, le paramètre dans l'annotation                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Expression de chaîne attendue pour le paramètre dans l'annotation                         |
@@ -212,27 +194,26 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() n'est pas pris en charge dans les annotations                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Une erreur de syntaxe dans l'annotation a été trouvée dans la fonction, pour l'annotation                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Une erreur de syntaxe dans une annotation conditionnelle a été trouvée pour l'annotation intrinsèque                 |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Les valeurs des listes de résultats doivent être des constantes.                                     |
+| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Les valeurs des listes de résultats doivent être des constantes.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Pour la fonction, les indices sont incohérents avec la déclaration de fonction                     |
-|                      [C28275](../code-quality/c28275.md)                       |                                   Le paramètre \_Macro_value\_ a la valeur null                                    |
+|                      [C28275](../code-quality/c28275.md)                       |                                   Le paramètre de \_Macro_value\_ a une valeur null                                    |
 |                      [C28279](../code-quality/c28279.md)                       |                           Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant                            |
 |                      [C28280](../code-quality/c28280.md)                       |                           Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant                           |
 |                      [C28282](../code-quality/c28282.md)                       |                                    Les chaînes de format doivent être comprises dans des conditions préalables                                    |
 |                      [C28285](../code-quality/c28285.md)                       |                                    Pour la fonction, erreur de syntaxe dans le paramètre                                    |
 |                      [C28286](../code-quality/c28286.md)                       |                                    Pour la fonction, erreur de syntaxe près de la fin                                    |
-|                      [C28287](../code-quality/c28287.md)                       |                Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non reconnu)                |
-|                      [C28288](../code-quality/c28288.md)                       |                  Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non valide)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre                |
+|                      [C28287](../code-quality/c28287.md)                       |                Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)                |
+|                      [C28288](../code-quality/c28288.md)                       |                  Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)                   |
+|                      [C28289](../code-quality/c28289.md)                       |                Pour la fonction : ReadableTo ou WritableTo n’avait pas une spécification de limite en tant que paramètre                |
 |                      [C28290](../code-quality/c28290.md)                       |           l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres            |
 |                      [C28291](../code-quality/c28291.md)                       |                        post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Opérandes d’expression de types incompatibles pour l’opérateur                             |
 |                      [C28301](../code-quality/c28301.md)                       |                               Aucune annotation pour la première déclaration de la fonction.                               |
-|                      [C28302](../code-quality/c28302.md)                       |                             Un supplémentaire \_Deref\_ opérateur a été trouvé dans une annotation.                              |
-|                      [C28303](../code-quality/c28303.md)                       |                           Un ambigu \_Deref\_ opérateur a été trouvé dans une annotation.                            |
-|                      [C28304](../code-quality/c28304.md)                       |                     Un placé \_Notref\_ opérateur appliqué à un jeton a été trouvé.                      |
+|                      [C28302](../code-quality/c28302.md)                       |                             Un opérateur \_Deref\_ en trop a été trouvé dans une annotation.                              |
+|                      [C28303](../code-quality/c28303.md)                       |                           Un opérateur ambigu \_Deref\_ a été trouvé dans une annotation.                            |
+|                      [C28304](../code-quality/c28304.md)                       |                     Un opérateur \_Notref\_ placé de manière incorrecte et appliqué à un jeton a été trouvé.                      |
 |                      [C28305](../code-quality/c28305.md)                       |                                Une erreur a été détectée pendant l'analyse d'un jeton.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  L'annotation décrit une situation qui n'est pas applicable de manière conditionnelle.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.          |
-

@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050109"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257262"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Utiliser les fenêtres de mémoire dans le débogueur Visual Studio
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Utiliser les fenêtres de mémoire dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
 Pendant le débogage, le **mémoire** fenêtre affiche l’espace de mémoire à l’aide de votre application. 
 

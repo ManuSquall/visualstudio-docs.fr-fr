@@ -1,6 +1,7 @@
 ---
-title: Afficher les DLL et les exécutables dans la fenêtre Modules | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Afficher les DLL et les exécutables
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296266"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066780"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window"></a>Afficher les DLL et les exécutables dans la fenêtre Modules
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Afficher les DLL et les exécutables dans la fenêtre Modules (C#, C++, Visual Basic, F#)
  
 Pendant le débogage de Visual Studio, le **Modules** fenêtre répertorie et affiche des informations sur les DLL et les fichiers exécutables (*.exe* fichiers) utilise votre application. 
 
@@ -43,7 +44,7 @@ Pendant le débogage de Visual Studio, le **Modules** fenêtre répertorie et af
 
 Pour ouvrir la fenêtre Modules, pendant que vous déboguez, sélectionnez **déboguer** > **Windows** > **Modules**. 
   
-Par défaut, le **Modules** fenêtre trie les modules par ordre de chargement. Pour trier par n’importe quelle colonne de la fenêtre, sélectionnez l’en-tête en haut de la colonne.  
+Par défaut, la fenêtre **Modules** trie les modules dans l’ordre de chargement. Pour trier par n’importe quelle colonne de la fenêtre, sélectionnez l’en-tête en haut de la colonne.  
   
 ## <a name="load-symbols"></a>Charger les symboles  
 
@@ -63,7 +64,7 @@ Le **état du symbole** colonne dans le **Modules** fenêtre montre quels module
 
 **Pour modifier les paramètres de comportement de chargement des symboles :**  
 
-1. Dans le **Modules** fenêtre, avec le bouton droit n’importe quel module.  
+1. Dans la fenêtre **Modules**, cliquez avec le bouton droit sur un module.  
    
 1. Sélectionnez **paramètres des symboles**.  
   
@@ -73,11 +74,11 @@ Le **état du symbole** colonne dans le **Modules** fenêtre montre quels module
   
 **Pour modifier le comportement d’un module spécifique de chargement de symboles :**  
 
-1.  Dans le **Modules** fenêtre, cliquez sur le module.  
+1.  Dans la fenêtre **Modules**, cliquez avec le bouton droit sur le module.  
 
 1.  Dans le menu contextuel, sélectionnez ou désélectionnez **charge automatiquement**. Modifications prennent effet dans la prochaine session de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interruption de l’exécution](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

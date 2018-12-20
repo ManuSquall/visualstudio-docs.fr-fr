@@ -1,5 +1,5 @@
 ---
-title: Analyser l’activité des utilisateurs virtuels pour les tests de charge dans Visual Studio
+title: Analyser l’activité des utilisateurs virtuels pour les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,26 +10,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881701"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059520"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Guide pratique pour analyser l’activité des utilisateurs virtuels lors d’un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procédure : analyser l’activité des utilisateurs virtuels durant un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
 
 Affichez les activités des utilisateurs virtuels associées à votre test de charge à l'aide du **graphique d'activités des utilisateurs virtuels**. Chaque ligne du graphique représente un utilisateur virtuel individuel. Le **graphique d'activités des utilisateurs virtuels** vous montre exactement ce que chaque utilisateur virtuel faisait pendant le test. Cela vous permet de visualiser les modèles d’activités des utilisateurs, de charger des modèles, de mettre en corrélation les tests lents ou non aboutis, et de consulter les requêtes basées sur d’autres activités d’utilisateurs virtuels. Le **graphique d'activités des utilisateurs virtuels** est disponible uniquement après que le test de charge a terminé de s'exécuter.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Les procédures suivantes montrent comment consulter le **graphique d'activités des utilisateurs virtuels**, comment examiner les activités d'utilisateurs spécifiques, et comment utiliser le filtrage.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Pour consulter le graphique d'activités des utilisateurs virtuels dans vos résultats de test de charge
 
-1.  Pour consulter les données des utilisateurs virtuels, vous devez d’abord configurer le paramètre **Tous les détails individuels** pour la propriété **Stockage des détails de minuterie** associée à votre test de charge. Exécutez ensuite le test de charge. Pour plus d’informations, consultez [Guide pratique pour configurer la collecte des détails complets afin d’activer le graphique d’activités des utilisateurs virtuels](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Pour consulter les données des utilisateurs virtuels, vous devez d’abord configurer le paramètre **Tous les détails individuels** pour la propriété **Stockage des détails de minuterie** associée à votre test de charge. Exécutez ensuite le test de charge.
 
 2.  Après l'exécution de votre test de charge, la page de résumé des résultats des tests s'affiche. Choisissez le bouton **Détail de l’utilisateur** dans la barre d’outils.
 
-     - ou -
+     ou
 
      Ouvrez la vue Graphiques en choisissant le bouton **Graphiques** dans la barre d’outils. Cliquez avec le bouton droit sur un graphique, puis sélectionnez **Accéder au détail de l’utilisateur**.
 
@@ -106,4 +108,4 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyse de l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Procédure pas à pas : utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Procédure pas à pas : Utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

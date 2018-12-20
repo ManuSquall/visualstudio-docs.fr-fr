@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déboguer du Code assembleur Inline | Documents Microsoft'
+title: 'Comment : déboguer du Code assembleur Inline | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,27 +21,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d52f0d27c0ef63eff8c4cc2b36a9a35b2cbfcf8a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473717"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388310"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Comment : déboguer du code assembleur inline
+
 > [!NOTE]
->  Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Le débogueur offre deux fenêtres pour le débogage du code assembleur inline, le **code machine** fenêtre et **inscrit** fenêtre.  
-  
-## <a name="procedure"></a>Procédure  
-  
-#### <a name="to-debug-inline-assembly-code"></a>Pour déboguer du code assembleur inline  
-  
-1.  Utilisez le **code machine** pour afficher les instructions assembleur.  
-  
-2.  Utilisez le **inscrit** fenêtre pour afficher le contenu du Registre.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Débogage du code natif](../debugger/debugging-native-code.md)
+> Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+
+Le débogueur offre deux fenêtres pour le débogage du code assembleur inline, la fenêtre Code Machine **et la fenêtre Registres**.
+
+## <a name="debug-inline-assembly-code"></a>Déboguer du code assembleur inline
+
+1.  Utilisez la fenêtre Code machine** pour afficher les instructions assembleur.
+
+2.  Utilisez la fenêtre Registres** pour afficher le contenu du registre.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [Débogage du code natif](../debugger/debugging-native-code.md)

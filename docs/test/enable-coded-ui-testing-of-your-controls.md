@@ -1,5 +1,5 @@
 ---
-title: Activer le test codé de l’interface utilisateur de vos contrôles dans Visual Studio
+title: Activer le test codé de l'interface utilisateur de vos contrôles
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153561"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895949"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer les tests codés de l’interface utilisateur de vos contrôles
 
 Implémentez la prise en charge du framework de tests codés de l’interface utilisateur pour rendre votre contrôle plus facile à tester. Vous pouvez ajouter des niveaux croissants de prise en charge de manière incrémentielle. Commencez par permettre la prise en charge de l’enregistrement et de la lecture, ainsi que de la validation de propriété. Ensuite, utilisez cette prise en charge pour permettre au générateur de test codé de l’interface utilisateur de reconnaître les propriétés personnalisées de votre contrôle. Fournissez des classes personnalisées pour accéder à ces propriétés à partir du code généré. Vous pouvez également aider à ce que les actions de capture du générateur de test codé de l'interface utilisateur soient plus proches de l'objectif de l'action en cours d'enregistrement.
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Prendre en charge l’enregistrement et la lecture, ainsi que la validation de propriété, en implémentant l’accessibilité
 

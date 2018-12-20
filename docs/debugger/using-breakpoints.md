@@ -1,7 +1,7 @@
 ---
-title: Utilisez des points d’arrêt dans le débogueur Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+title: Utilisez des points d’arrêt dans le débogueur | Microsoft Docs
+ms.custom: seodec18
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,20 +36,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826841"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068446"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
   
 ##  <a name="BKMK_Overview"></a> Ensemble des points d’arrêt dans le code source  
- Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code c# suivant, vous pouvez définir un point d’arrêt sur la déclaration de variable, le `for` boucle ou code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou une classe, ou sur la signature de méthode.  
+ Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans l’exemple suivant C# code, vous pouvez définir un point d’arrêt sur la déclaration de variable, le `for` boucle ou code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les déclarations d’espace de noms ou une classe, ou sur la signature de méthode.  
 
  Pour définir un point d’arrêt dans le code source, cliquez dans la marge gauche en regard d’une ligne de code. Vous pouvez également sélectionner la ligne et appuyez sur **F9**, sélectionnez **déboguer** > **point d’arrêt**, ou avec le bouton droit et sélectionnez **point d’arrêt**  >  **Insérer le point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche.  
+
+Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont automatiquement mis en surbrillance. Pour le code C++, vous pouvez activer la mise en surbrillance de point d’arrêt et de lignes actuelles en sélectionnant **outils** (ou **déboguer**) > **Options**  >   **Débogage** >  **mettre en surbrillance la ligne source entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**. 
   
  ![Définissez un point d’arrêt](../debugger/media/basicbreakpoint.png "base point d’arrêt")  
   
@@ -59,7 +61,7 @@ Points d’arrêt sont une des techniques de débogage plus importantes dans la 
   
  ![L’exécution de point d’arrêt s’est arrêtée](../debugger/media/breakpointexecution.png "l’exécution du point d’arrêt")  
   
- Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
+ Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : Utilisez la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Le point d’arrêt est un bouton bascule. Vous pouvez cliquer dessus, appuyez sur **F9**, ou utilisez **déboguer** > **point d’arrêt** pour supprimer ou insérez-la à nouveau.
   
@@ -87,7 +89,7 @@ Le point d’arrêt de la pile des appels s’affiche dans le **des points d’a
 
 Le débogueur s’arrête au niveau de l’instruction.  
 
-Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md). 
+Pour plus d’informations sur la pile des appels, consultez [Comment : Utilisez la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md). 
 
 À visuellement trace des points d’arrêt pendant l’exécution de code, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -113,11 +115,11 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : utilise
    
    - Utilisez le nom de fonction qualifié complet. 
      
-     Exemple :  `Namespace1.ClassX.MethodA()`
+     Exemple : `Namespace1.ClassX.MethodA()`
      
    - Ajouter les types de paramètre d’une fonction surchargée. 
      
-     Exemple :  `MethodA(int, string)`
+     Exemple : `MethodA(int, string)`
      
    - Utilisez le ' !' symbole pour spécifier le module.
      
@@ -158,21 +160,21 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : utilise
 
     Vous pouvez également sélectionner **New** > **point d’arrêt** dans le **des points d’arrêt** fenêtre.
   
-2.  Dans le **adresse** , tapez une adresse mémoire ou une expression qui correspond à une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.  
+2.  Dans la zone **Adresse**, tapez une adresse mémoire ou une expression qui prend comme valeur une adresse mémoire. Par exemple, tapez `&avar` pour interrompre l’exécution quand le contenu de la variable `avar` change.  
   
 3.  Dans la zone déroulante **Nombre d’octets** , sélectionnez le nombre d’octets que le débogueur doit surveiller. Par exemple, si vous sélectionnez **4**, le débogueur surveille les quatre octets à partir de `&avar` et interrompt l’exécution si l’un de ces octets change de valeur.  
 
 Points d’arrêt de données ne fonctionnent pas dans les conditions suivantes :  
--   Un processus qui n’est pas en cours de débogage écrit dans l’emplacement de mémoire.  
--   L’emplacement de mémoire est partagé entre deux ou plusieurs processus.  
+-   Un processus qui n’est pas en cours de débogage écrit à l’emplacement mémoire.  
+-   L’emplacement mémoire est partagé entre plusieurs processus.  
 -   L’emplacement de mémoire est mis à jour dans le noyau. Par exemple, si la mémoire est transmise à la Windows 32 bits `ReadFile` (fonction), la mémoire sera mise à jour du mode noyau, donc le débogueur ne s’arrête sur la mise à jour.  
 
 >[!NOTE]
 >- Arrêt sur variable dépend d’adresses de mémoire spécifiques. L’adresse d’une variable change à partir d’une session de débogage à l’autre, des points d’arrêt de données sont automatiquement désactivés à la fin de chaque session de débogage.  
 >  
->- Si vous définissez un point d’arrêt sur une variable locale, le point d’arrêt reste activé lorsque la fonction se termine, mais l’adresse de mémoire n’est plus applicable, par conséquent, le comportement du point d’arrêt est imprévisible. Si vous définissez un point d’arrêt sur une variable locale, vous devez supprimer ou désactiver le point d’arrêt avant la fin de la fonction.  
+>- Si vous définissez un point d’arrêt sur une variable locale, ce point d’arrêt reste activé quand la fonction s’arrête. Cependant, l’adresse mémoire n’est plus applicable, et le comportement du point d’arrêt est donc imprévisible. Si vous définissez un point d’arrêt sur une variable locale, vous devez supprimer ou désactiver le point d’arrêt avant la fin de la fonction.  
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gérer les points d’arrêt dans la fenêtre points d’arrêt 
+##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gérer les points d’arrêt dans la fenêtre Points d’arrêt 
 
  Vous pouvez utiliser la **des points d’arrêt** fenêtre pour afficher et gérer tous les points d’arrêt dans votre solution. Cet emplacement centralisé est particulièrement utile dans une solution de grande taille, ou pour des scénarios de débogage complexes où les points d’arrêt sont déterminants. 
 
@@ -218,7 +220,7 @@ Points d’arrêt avec un ensemble de conditions apparaissent avec un **+** symb
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Expression conditionnelle
 
-Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir entre deux conditions : **vaut** ou **lorsque modifié**. Choisissez **vaut** pour arrêter l’exécution lorsque l’expression est satisfaite, ou **lorsque modifié** à arrêter quand la valeur de l’expression a changé.  
+Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir entre deux conditions : **A la valeur true** ou **lorsque modifié**. Choisissez **vaut** pour arrêter l’exécution lorsque l’expression est satisfaite, ou **lorsque modifié** à arrêter quand la valeur de l’expression a changé.  
   
  Dans l’exemple suivant, le point d’arrêt est atteint uniquement lorsque la valeur de `testInt` est **4**:  
   
@@ -231,12 +233,12 @@ Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir en
  Si vous définissez une condition de point d’arrêt dont la syntaxe est incorrecte, un message d’avertissement s’affiche. Si vous spécifiez une condition de point d’arrêt avec une syntaxe valide, mais dont la sémantique n’est pas valide, un message d’avertissement apparaît quand le point d’arrêt est atteint pour la première fois. Dans les deux cas, le débogueur s’arrête lorsqu’il atteint le point d’arrêt non valide. Le point d’arrêt n’est ignoré que si la condition est valide et prend la valeur `false`.  
   
  >[!NOTE]
- >Le comportement de la **lorsque modifié** champ est différent pour différents langages de programmation. 
+ >Le comportement du champ **En cas de modification** varie en fonction du langage de programmation. 
  >- Pour le code natif, le débogueur ne considère pas la première évaluation de la condition comme étant une modification, donc n’atteint le point d’arrêt sur la première évaluation. 
  >- Pour le code managé, le débogueur atteint le point d’arrêt sur la première évaluation après **lorsque modifié** est sélectionné.  
   
 ### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>À l’aide des ID d’objet dans des expressions conditionnelles (C# et F# uniquement)  
- Il est parfois lorsque vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être savoir pourquoi un objet a été inséré dans une collection plusieurs fois. Dans C# et F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types)et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
+ Il est parfois lorsque vous souhaitez observer le comportement d’un objet spécifique. Par exemple, vous souhaiterez peut-être savoir pourquoi un objet a été inséré dans une collection plusieurs fois. En C# et en F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](/dotnet/csharp/language-reference/keywords/reference-types) et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
 
 **Pour créer un ID d’objet :** 
   
@@ -248,9 +250,9 @@ Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir en
    
    Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Il s’agit de l’ID d’objet.  
    
-3. Ajouter un nouveau point d’arrêt au point que vous voulez examiner ; par exemple, lorsque l’objet doit être ajouté à la collection. Cliquez sur le point d’arrêt et sélectionnez **Conditions**.  
+3. Ajouter un nouveau point d’arrêt au point que vous voulez examiner ; par exemple, lorsque l’objet doit être ajouté à la collection. Cliquez avec le bouton droit sur le point d’arrêt et sélectionnez **Conditions**.  
    
-4. Utiliser l’ID d’objet dans le **Expression conditionnelle** champ. Par exemple, si la variable `item` est l’objet à ajouter à la collection, sélectionnez **vaut** et type **item == $\<n >**, où \<n > est le numéro d’ID objet .  
+4. Utilisez l’ID d’objet dans le champ **Expression conditionnelle**. Par exemple, si la variable `item` est l’objet à ajouter à la collection, sélectionnez **vaut** et type **item == $\<n >**, où \<n > est le numéro d’ID objet .  
    
    L’exécution s’arrête au point où cet objet doit être ajouté à la collection.  
    
@@ -279,14 +281,14 @@ Sous **Conditions** dans le **les paramètres de point d’arrêt** fenêtre, s�
 
 Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des clauses à l’aide de `&` (AND), `||` (OR), `!` (NOT) et de parenthèses.  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Actions de point d’arrêt et points de trace  
- Un *point de trace* est un point d’arrêt qui affiche un message dans le **sortie** fenêtre. Un point de trace peut faire office d’instruction de trace temporaire dans le langage de programmation.  
+##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Actions de points d’arrêt et points de trace  
+ Un *point de trace* est un point d’arrêt qui affiche un message dans la fenêtre **Sortie**. Un point de trace peut faire office d’instruction de trace temporaire dans le langage de programmation.  
   
 **Pour définir un point de trace :**
 
 1. Cliquez sur un point d’arrêt et sélectionnez **Actions**. Ou, dans le **les paramètres de point d’arrêt** fenêtre, pointez sur le point d’arrêt, sélectionnez le **paramètres** icône, puis sélectionnez **Actions**.  
    
-1. Entrez un message dans le **consigner le message dans la fenêtre sortie** champ. Le message peut contenir des chaînes de texte générique, les valeurs des variables ou des expressions entre accolades et spécificateurs de format ([c#](../debugger/format-specifiers-in-csharp.md) et [C++](../debugger/format-specifiers-in-cpp.md)) pour les valeurs.
+1. Entrez un message dans le **consigner le message dans la fenêtre sortie** champ. Le message peut contenir des chaînes de texte générique, les valeurs des variables ou des expressions entre accolades et spécificateurs de format ([ C# ](../debugger/format-specifiers-in-csharp.md) et [C++](../debugger/format-specifiers-in-cpp.md)) pour les valeurs.
    
    Vous pouvez également utiliser les mots clés spéciaux suivants dans le message :  
    
@@ -305,7 +307,7 @@ Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des
 Points de trace apparaissent sous forme de losanges rouge dans la marge gauche du code source et **des points d’arrêt** windows. 
   
 ## <a name="see-also"></a>Voir aussi  
- [Quel est le débogage ?](../debugger/what-is-debugging.md)  
+ [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
  [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md)  
  [Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)  

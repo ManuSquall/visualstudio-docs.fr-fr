@@ -31,20 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f6939907681d5059580f9f7120d9beb76559e9a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672186"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388986"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Options, Éditeur de texte, XAML, Mise en forme
+
 Utilisez la page de propriétés **Mise en forme** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Mise en forme**, développez le nœud **Éditeur de texte** > **XAML** > **Mise en forme**.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="auto-formatting-events"></a>Événements de mise en forme automatique
+
 La mise en forme automatique peut se produire quand un des événements suivants est détecté.
 
 -   Saisie d’une balise de fin ou une balise simple
@@ -57,106 +56,124 @@ La mise en forme automatique peut se produire quand un des événements suivants
 
 Vous pouvez spécifier quels événements provoquent la mise en forme automatique.
 
-**Après une balise de fin ou une balise simple**  
+**Après une balise de fin ou une balise simple**
+
 La mise en forme automatique se produit quand vous finissez de taper une balise de fin ou une balise simple. Une balise simple n’a pas d’attributs, par exemple `<Button />`.
 
-**Après une balise de début**  
+**Après une balise de début**
+
 La mise en forme automatique se produit quand vous avez fini de taper une balise de début.
 
-**En collant le contenu du presse-papiers**  
+**En collant le contenu du presse-papiers**
+
 La mise en forme automatique se produit quand vous collez du XAML à partir du Presse-papiers dans la vue XAML.
 
 ## <a name="quotation-mark-style"></a>Style de guillemet
+
 Ce paramètre indique si les valeurs d’attribut sont entre guillemets simples ou doubles. La mise en forme automatique et la complétion automatique IntelliSense utilisent ce paramètre.
 
 Une fois que vous définissez cette option, seuls les attributs ajoutés par la suite à l’aide du concepteur ou manuellement dans la vue XAML sont affectés.
 
-**Guillemets doubles (")**  
-Les valeurs d’attribut sont entre guillemets doubles.  
+**Guillemets doubles (")**
+
+Les valeurs d’attribut sont entre guillemets doubles.
 `<Button Name="button1">Hello</Button>`
 
-**Guillemets simples (')**  
-Les valeurs d’attribut sont entre guillemets simples.  
+**Guillemets simples (')**
+
+Les valeurs d’attribut sont entre guillemets simples.
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>Étiquette de renvoi à la ligne
+
 Vous pouvez spécifier une longueur de ligne pour la balise de renvoi à la ligne. Quand la balise de renvoi à la ligne est activée, tout XAML ajouté par la suite à l’aide du concepteur est encapsulé de manière appropriée.
 
-**Renvoyer à la ligne les balises qui dépassent la longueur spécifiée**  
+**Renvoyer à la ligne les balises qui dépassent la longueur spécifiée**
+
 Spécifie si les lignes sont renvoyées à la longueur de ligne spécifiée par **Longueur**.
 
-**Longueur**  
+**Longueur**
+
 Nombre de caractères qu’une ligne peut contenir. Si nécessaire, certaines lignes XAML peuvent dépasser la longueur spécifiée.
 
 ## <a name="attribute-spacing"></a>Espacement d'attributs
+
 Ce paramètre permet de contrôler la manière dont les attributs sont organisés dans votre document XAML.
 
-**Conserver les nouvelles lignes et les espaces entre les attributs**  
+**Conserver les nouvelles lignes et les espaces entre les attributs**
+
 La mise en forme automatique n’affecte pas les nouvelles lignes et les espaces entre les attributs.
 
 ```xml
-<Button Height="23"   Name="button1"  
+<Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Insérer un seul espace entre les attributs**  
+**Insérer un seul espace entre les attributs**
+
 Les attributs occupent une seule ligne, avec un espace séparant les attributs adjacents. Les paramètres de balise de renvoi à la ligne sont appliqués.
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
 ```
 
-**Positionner chaque attribut sur une ligne distincte**  
-Chaque attribut occupe sa propre ligne, ce qui est pratique quand de nombreux attributs sont présents.  
+**Positionner chaque attribut sur une ligne distincte**
+
+Chaque attribut occupe sa propre ligne, ce qui est pratique quand de nombreux attributs sont présents.
 
 ```xml
-<Button  
-Height="23"  
-Name="button1"  
+<Button
+Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
-**Positionner le premier attribut sur la même ligne que la balise de début**  
-Quand cette option est cochée, le premier attribut apparaît sur la même ligne que la balise de début de l’élément.  
+**Positionner le premier attribut sur la même ligne que la balise de début**
+
+Quand cette option est cochée, le premier attribut apparaît sur la même ligne que la balise de début de l’élément.
 
 ```xml
-<Button Height="23"  
-Name="button1"  
+<Button Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
 ## <a name="element-spacing"></a>Espacement d'éléments
+
 Ce paramètre permet de contrôler la manière dont les éléments sont organisés dans votre document XAML.
 
-**Conserver les nouvelles lignes du contenu**  
-Les lignes vides du contenu de l’élément ne sont pas supprimées.  
+**Conserver les nouvelles lignes du contenu**
+
+Les lignes vides du contenu de l’élément ne sont pas supprimées.
 
 ```xml
-<Grid>  
+<Grid>
 
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Réduire plusieurs lignes vides du contenu en une seule ligne**  
-Les lignes vides du contenu de l’élément sont réduites en une seule ligne.  
+**Réduire plusieurs lignes vides du contenu en une seule ligne**
+
+Les lignes vides du contenu de l’élément sont réduites en une seule ligne.
 
 ```xml
-<Grid>  
+<Grid>
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**Supprimer les lignes vides du contenu**  
-Toutes les lignes vides du contenu de l’élément sont supprimées.  
+**Supprimer les lignes vides du contenu**
+
+Toutes les lignes vides du contenu de l’élément sont supprimées.
 
 ```xml
-<Grid>  
-<Button Name="button1">Hello</Button>  
+<Grid>
+<Button Name="button1">Hello</Button>
 </Grid>
 ```
 

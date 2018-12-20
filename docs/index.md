@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Documentation Visual Studio | Documents Microsoft
+titleSuffix: ''
 description: Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
 ms.topic: hub-page
-ms.openlocfilehash: 961d9f46d78b23fa976b3a8cdc774d219445c8b1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.custom: seodec18
+ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000281"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160099"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,7 +91,7 @@ ms.locfileid: "51000281"
                                             <div class="cardText">
                                                 <h3>Apprendre à utiliser Visual Studio</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Commencer la visite guidée</a></li>
+                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Commencer la visite guidée</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Écrire et modifier du code</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Générer votre code</a></li>
                                                     <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Déboguer votre code</a></li>

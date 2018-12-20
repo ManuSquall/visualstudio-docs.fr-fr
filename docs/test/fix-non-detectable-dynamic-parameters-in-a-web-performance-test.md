@@ -1,5 +1,5 @@
 ---
-title: Corriger les paramètres dynamiques non détectables dans un test de performances web dans Visual Studio
+title: Corriger les paramètres dynamiques non détectables dans un test de performances web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177823"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063779"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corriger les paramètres dynamiques non détectables dans un test de performances de site Web
 
@@ -30,6 +30,8 @@ Certains sites web utilisent des paramètres dynamiques pour traiter certaines d
 -   Valeurs de paramètre dynamique qui sont définies comme paramètres de chaîne de requête ou de publication de formulaire. Celles-ci sont gérées par le biais de la détection des paramètres dynamiques après avoir enregistré un test de performances web.
 
 Certains types de paramètres dynamiques ne sont pas détectés. Un paramètre dynamique non détecté provoquera l'échec du test de performances de site Web lors de son exécution, car la valeur dynamique sera différente à chaque exécution du test. Pour gérer correctement ces paramètres, vous pouvez ajouter manuellement des règles d'extraction aux paramètres dynamiques dans les tests de performances de site Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Créer et exécuter une application Web avec les paramètres dynamiques
 
@@ -237,7 +239,7 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
      ![Remplacer le texte par le paramètre](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Le paramètre QueryString sous la demande *JScriptQuery.aspx* est mis à jour à l’aide du nouveau paramètre de contexte : CustomQueryString=jScriptQueryString___ {{Param0}}.
+     Le paramètre QueryString sous la requête *JScriptQuery.aspx* est mis à jour à l’aide du nouveau paramètre de contexte :  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Paramètre appliqué à la chaîne de requête](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +251,9 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ## <a name="qa"></a>Questions et réponses
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q : Puis-je réexécuter la détection de paramètres dynamiques si mon application Web est modifiée ?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q : Puis-je réexécuter la détection de paramètres dynamiques si mon application web est modifiée ?
 
- **R :** Oui, utilisez la procédure suivante :
+ **R :** Oui, utilisez la procédure suivante :
 
 1.  Dans la barre d’outils, choisissez le bouton **Promouvoir les paramètres dynamiques en paramètres de test web**.
 
@@ -265,4 +267,4 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q : Dois-je configurer Visual Studio pour détecter les paramètres dynamiques ?
 
- **R :** La configuration Visual Studio par défaut consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l’application web qui est testée est modifiée à l’aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l’éditeur de test de performances Web.
+ **R :** La configuration par défaut de Visual Studio consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l’application web qui est testée est modifiée à l’aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l’éditeur de test de performances Web.

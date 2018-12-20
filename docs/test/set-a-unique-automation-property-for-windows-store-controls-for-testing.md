@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: c01633f4814326867d7c7e43e345f4faf052622f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924978"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894779"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles UWP à des fins de test
 
 Si vous voulez exécuter des tests codés de l’interface utilisateur pour vos applications UWP en XAML, chaque contrôle doit être identifié par une propriété d’automatisation unique. Vous pouvez assigner une propriété Automation unique selon le type de contrôle XAML dans votre application.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>Définition XAML statique
 
@@ -43,7 +45,7 @@ Affectez à **AutomationProperties.Name** la valeur **ButtonY** à l’aide de l
 Affectez à **AutomationProperties.AutomationId** la valeur **ButtonX** de façon explicite dans le code XAML du contrôle.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Affectez à **AutomationProperties.Name** la valeur **ButtonY** de façon explicite dans le code XAML du contrôle.

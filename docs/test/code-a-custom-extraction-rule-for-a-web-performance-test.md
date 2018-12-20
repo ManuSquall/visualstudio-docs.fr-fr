@@ -1,5 +1,5 @@
 ---
-title: Codage d’une règle d’extraction personnalisée pour un test de performances web dans Visual Studio
+title: Codage d'une règle d'extraction personnalisée pour un test de performances de site Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283208"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066676"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
 
@@ -28,6 +28,8 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 > [!NOTE]
 > Il est également possible de créer vos propres règles de validation personnalisées. Pour plus d’informations, consultez [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Pour créer une règle d'extraction personnalisée
 
@@ -204,7 +206,7 @@ Namespace ClassLibrary2
 End Namespace
 ```
 
-La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contient la fonctionnalité principale d'une règle d'extraction. La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> de l'exemple précédent prend un <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> qui fournit la réponse générée par la demande couverte par cette règle d'extraction. La réponse contient un <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> qui contient toutes les balises dans la réponse. Les balises d'entrées sont éliminées du <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> par filtrage. Chaque étiquette d’entrée est examinée pour y détecter la présence d’un attribut appelé `name` dont la valeur est égale à la valeur utilisateur de la propriété `Name`. Si une étiquette avec l’attribut correspondant est trouvée, une tentative d’extraction de la valeur contenue dans l’attribut `value` est effectuée (si une valeur d’attribut existe). Si une valeur d’attribut existe, le nom et la valeur de l’étiquette sont extraits et ajoutés au contexte de test de performances de site Web. La règle d'extraction est passée.
+La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contient la fonctionnalité principale d'une règle d'extraction. La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> de l'exemple précédent prend un <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> qui fournit la réponse générée par la demande couverte par cette règle d'extraction. La réponse contient un <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> qui contient toutes les balises dans la réponse. Les étiquettes d’entrées sont éliminées du <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> par filtrage. Chaque étiquette d’entrée est examinée pour y détecter la présence d’un attribut appelé `name` dont la valeur est égale à la valeur utilisateur de la propriété `Name`. Si une étiquette avec l’attribut correspondant est trouvée, une tentative d’extraction de la valeur contenue dans l’attribut `value` est effectuée (si une valeur d’attribut existe). Si une valeur d’attribut existe, le nom et la valeur de l’étiquette sont extraits et ajoutés au contexte de test de performances de site Web. La règle d'extraction est passée.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912621"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248268"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architecture des personnalisations au niveau du document
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] comprend des projets pour créer des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Cette rubrique décrit les aspects suivants des personnalisations au niveau du document :  
@@ -81,7 +81,7 @@ ms.locfileid: "49912621"
 |À l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le développeur écrit du code accessible à Word et Excel.<br /><br /> Bien qu’il puisse sembler que le développeur crée un fichier exécutable qui exécute Word ou Excel, c’est en fait le processus inverse qui se produit. Le document est associé à un assembly et contient un pointeur vers cet assembly. Quand le document s’ouvre, Word ou Excel recherche l’assembly et exécute le code en réponse à tous les événements gérés.|Ceux qui utilisent la solution ouvrent simplement le document ou le classeur (ou créent un document à partir d’un modèle), comme ils le feraient pour n’importe quel autre fichier Microsoft Office.<br /><br /> L’assembly fournit des personnalisations dans le document ou le classeur, telles que le remplissage automatique avec des données à jour ou l’affichage d’une boîte de dialogue pour demander des informations.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Prise en charge des formats de documents pour les personnalisations au niveau du document  
- Quand vous créez un projet de personnalisation, vous pouvez choisir le format du document que vous souhaitez utiliser dans le projet. Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Quand vous créez un projet de personnalisation, vous pouvez choisir le format du document que vous souhaitez utiliser dans le projet. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Le tableau suivant répertorie les formats de documents que vous pouvez utiliser dans les personnalisations au niveau du document pour Excel et Word.  
   

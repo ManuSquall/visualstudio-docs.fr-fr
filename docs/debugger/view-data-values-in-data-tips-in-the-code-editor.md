@@ -1,7 +1,7 @@
 ---
-title: Afficher les valeurs de données dans DataTips dans l’éditeur de code | Microsoft Docs
-ms.custom: ''
-ms.date: 07/14/2017
+title: Afficher les valeurs des variables dans DataTips | Microsoft Docs
+ms.custom: seodec18
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,127 +19,116 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afb318c8aa327345b3cd76ee16b718db1e0386aa
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826736"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066848"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans DataTips dans l’éditeur de code
-Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
-  
-### <a name="to-display-a-datatip"></a>Pour afficher un DataTip  
-  
-1. Définissez un point d’arrêt et démarrer le débogage (appuyez sur **F5**).
 
-2. Où en pause dans le débogueur, placez le pointeur de la souris sur n’importe quelle variable dans la portée actuelle.
-  
-     Un DataTip apparaît.
-  
-3.  Le DataTip disparaît lorsque vous retirez le pointeur de la souris. Pour épingler un DataTip afin qu’il reste ouvert, cliquez sur le **épingler à la source** icône ou avec le bouton droit sur une variable, puis cliquez sur **épingler à la source**.
+Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
 
-    ![L’épinglage d’une bulle](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+S’il s’agit de la première fois que le débogage, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de lire cet article.
+  
+## <a name="work-with-datatips"></a>Utiliser des DataTips
 
-    > [!NOTE]
-    > Les conseils relatifs aux données sont toujours évalués dans le contexte où l'exécution est interrompue, et non pas lorsque le curseur pointe un élément. Si vous pointez sur une variable dans une autre fonction portant le même nom qu'une variable qui est dans le contexte actuel, la variable dans l'autre fonction est affichée comme la valeur de la variable dans le contexte actuel.
+Les DataTips apparaissent uniquement en mode arrêt et uniquement sur des variables qui se trouvent dans la portée en cours d’exécution.
+
+### <a name="display-a-datatip"></a>Afficher un DataTip  
   
-### <a name="to-unpin-a-datatip-and-make-it-float"></a>Pour détacher un DataTip et le rendre flottant  
+1. Définissez un point d’arrêt dans votre code et démarrez le débogage en appuyant sur **F5** ou en sélectionnant **déboguer** > **démarrer le débogage**.
   
--   Dans un DataTip épinglé, cliquez sur le **détacher de la source** icône.  
+1. Cas de suspension au point d’arrêt, placez le curseur sur une variable quelconque dans la portée actuelle. Un DataTip apparaît, affichant le nom et la valeur actuelle de la variable.
+
+### <a name="make-a-datatip-transparent"></a>Rendre un DataTip transparent  
+
+Pour rendre un DataTip transparent pour afficher le code qui est situé en dessous, tandis que dans le DataTip, appuyez sur **Ctrl**. Le DataTip reste transparent tant que vous maintenez le **Ctrl** clé. Cela ne fonctionne pas pour les DataTips épinglés ou flottants.  
+### <a name="pin-a-datatip"></a>Épingler un DataTip
+
+Pour épingler un DataTip afin qu’elle reste ouverte, sélectionnez la punaise **épingler à la source** icône. 
+
+![Épingler un DataTip](../debugger/media/dbg-tips-data-tips-pinned.png "épingler un DataTip")
+
+Vous pouvez déplacer un DataTip épinglé en le faisant glisser autour de la fenêtre de code. Une icône de punaise apparaît dans la marge à côté de la ligne à que le DataTip est épinglé. 
+
+>[!NOTE]
+>Les DataTips sont toujours évalués dans le contexte où l’exécution est suspendue, pas le curseur actuel ou l’emplacement du DataTip. Si vous pointez sur une variable dans une autre fonction qui a le même nom qu’une variable dans le contexte actuel, la valeur de la variable dans le contexte actuel s’affiche.
   
-     L'icône d'épingle reprend sa position détachée. Le DataTip flotte à présent au-dessus de toutes les fenêtres actives. Le DataTip flottant se ferme à la fin de la session de débogage.  
+### <a name="unpin-a-datatip-from-source"></a>Détacher un DataTip à partir de la source
+
+Pour détacher un DataTip épinglé, pointez sur le DataTip, puis sélectionnez l’icône de punaise dans le menu contextuel. 
+
+L’icône de punaise passe à reprend sa position, et le DataTip flotte maintenant ou peut être déplacé au-dessus de toutes les fenêtres. Les DataTips flottants fermer lorsque la session de débogage se termine.  
   
-### <a name="to-repin-a-floating-datatip"></a>Pour réépingler un DataTip flottant  
+### <a name="repin-a-datatip"></a>Réépingler un DataTip  
   
--   Dans un DataTip, cliquez sur l'icône d'épingle.  
+Pour réépingler un DataTip flottant à source, placez le curseur dessus dans l’éditeur de code, puis sélectionnez l’icône de punaise. L’icône de punaise change sa position épinglée, et le DataTip est épinglé à nouveau uniquement dans la fenêtre de code. 
+
+Si un DataTip flotte au-dessus d’une fenêtre de code non source, l’icône de punaise n’est pas disponible, et le DataTip ne peut pas être réépinglé. Pour accéder à l’icône de punaise, retourner le DataTip à la fenêtre d’éditeur de code en faisant glisser ou en donnant le focus de la fenêtre de code. 
   
-     L'icône d'épingle reprend sa position épinglée. Si le DataTip se trouve à l'extérieur d'une fenêtre source, l'icône d'épingle est désactivée et le DataTip ne peut pas être épinglé.  
+### <a name="close-a-datatip"></a>Fermer un DataTip  
   
-### <a name="to-close-a-datatip"></a>Pour fermer un DataTip  
+Pour fermer un DataTip, placez le curseur sur le DataTip, puis sélectionnez la fermeture (**x**) icône dans le menu contextuel.  
   
--   Placez le pointeur de la souris sur un DataTip, puis cliquez sur le **fermer** icône.  
+### <a name="close-all-datatips"></a>Fermer tous les DataTips  
   
-### <a name="to-close-all-datatips"></a>Pour fermer tous les DataTips  
+Pour fermer tous les DataTips, sur le **déboguer** menu, sélectionnez **effacer tous les DataTips**.  
   
--   Sur le **déboguer** menu, cliquez sur **effacer tous les DataTips**.  
+### <a name="close-all-datatips-for-a-specific-file"></a>Fermer tous les DataTips d’un fichier spécifique  
   
-### <a name="to-close-all-datatips-for-a-specific-file"></a>Pour fermer tous les DataTips d'un fichier spécifique  
-  
--   Sur le **déboguer** menu, cliquez sur **effacer tous les DataTips épinglés à** *fichier*.  
+Pour fermer tous les DataTips d’un fichier spécifique, sur le **déboguer** menu, sélectionnez **effacer tous les DataTips épinglés à \<Filename >**.  
   
 ## <a name="expand-and-edit-information"></a>Développez et modifier les informations  
- Vous pouvez utiliser les DataTips pour développer un tableau, une structure ou un objet afin d’en afficher les membres. Vous pouvez également modifier la valeur d'une variable depuis un DataTip.  
+Vous pouvez utiliser les DataTips pour développer un tableau, une structure ou un objet afin d’en afficher les membres. Vous pouvez également modifier la valeur d'une variable depuis un DataTip.  
   
-#### <a name="to-expand-a-variable-to-see-its-elements"></a>Développer une variable pour voir ses éléments  
-  
--   Dans un DataTip, placez le pointeur de la souris sur le **+** connexion qui précède le nom de variable.  
-  
-    La variable se développe et affiche ses éléments sous forme d’arborescence.
+### <a name="expand-a-variable"></a>Développer une variable
 
-    ![Afficher une bulle](../debugger/media/dbg-tour-data-tips.gif "afficher une info-bulle de données")
-  
-    Une fois la variable développée, vous pouvez utiliser les touches de direction du clavier pour vous déplacer vers le haut ou vers le bas. Vous pouvez également utiliser la souris.  
-  
-#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Pour modifier la valeur d'une variable à l'aide d'un DataTip  
-  
-1.  Dans un DataTip, cliquez sur la valeur. Cette possibilité est désactivée pour les valeurs en lecture seule.  
-  
-2.  Tapez une nouvelle valeur et appuyez sur ENTRÉE.  
-  
-## <a name="making-a-datatip-transparent"></a>Rendre un DataTip transparent  
- Si vous souhaitez visualiser le code masqué par un DataTip, vous pouvez rendre celui-ci temporairement transparent. Cela ne s'applique pas aux DataTips épinglés ou flottants.  
-  
-#### <a name="to-make-a-datatip-transparent"></a>Pour rendre un DataTip transparent  
-  
--   Dans un DataTip, appuyez sur CTRL.  
-  
-     Le DataTip reste transparent tant que vous maintenez la touche CTRL enfoncée.  
-  
+Pour développer un objet dans un DataTip pour voir ses éléments, pointez sur les flèches de développement avant les noms d’élément pour afficher les éléments sous forme d’arborescence. Pour un DataTip épinglé, sélectionnez le **+** avant que la variable nom, puis développez l’arborescence. 
+
+![Développez un DataTip](../debugger/media/dbg-tour-data-tips.png "développez un DataTip")
+
+Vous pouvez utiliser la souris ou les touches de direction du clavier pour monter ou Descendre dans la vue développée. 
+
+Vous pouvez également épingler des éléments développés pour le DataTip épinglé en pointant dessus et en sélectionnant leur icône de punaise. Les éléments apparaissent ensuite dans le DataTip épinglé une fois que l’arborescence est réduite. 
+
+### <a name="edit-the-value-of-a-variable"></a>Modifier la valeur d’une variable
+
+Pour modifier la valeur d’une variable ou d’un élément dans un DataTip, sélectionnez la valeur, tapez une nouvelle valeur, puis appuyez sur **entrée**. Sélection est désactivée pour les valeurs en lecture seule.  
+
 ## <a name="visualize-complex-data-types"></a>Visualiser les types de données complexes  
- Si une icône de loupe apparaît à côté d’un nom de variable dans un DataTip, un ou plusieurs [visualiseurs](../debugger/create-custom-visualizers-of-data.md), telles que la [des visualiseurs de chaînes](../debugger/string-visualizer-dialog-box.md), sont disponibles pour les variables de ce type de données. Les visualiseurs servent à afficher les informations de façon plus explicite (en général graphique).
+
+Une icône de loupe qui se trouve en regard d’une variable ou d’un élément dans un DataTip signifie qu’une ou plusieurs [visualiseurs](../debugger/create-custom-visualizers-of-data.md), telles que la [visualiseur de texte](../debugger/string-visualizer-dialog-box.md), sont disponibles pour la variable. Visualiseurs affichent des informations de manière plus explicite, parfois graphique.
   
-#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Voir le contenu d'une variable à l'aide d'un visualiseur  
-  
--   Cliquez sur l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur") pour sélectionner le visualiseur par défaut pour le type de données.  
-  
-     - ou -  
-  
-     Cliquez sur la flèche contextuelle à côté du visualiseur pour choisir dans une liste le visualiseur approprié pour ce type de données.  
-  
-     Un visualiseur apparaît et affiche les informations.  
-  
-## <a name="add-information-to-a-watch-window"></a>Ajouter des informations dans une fenêtre Espion  
- Si vous souhaitez continuer à surveiller une variable dans un affichage de liste, vous pouvez ajouter la variable à la **espion** fenêtre à partir d’un DataTip.  
-  
-#### <a name="to-add-a-variable-to-the-watch-window"></a>Ajouter une variable à la fenêtre Espion  
-  
--   Cliquez sur un DataTip, puis cliquez sur **ajouter un espion**.  
-  
-     La variable est ajoutée à la **espion** fenêtre. Si vous utilisez une édition qui prend en charge plusieurs **espion** windows, la variable est ajoutée à **Espion 1.**  
+Pour afficher l’élément en utilisant le visualiseur par défaut pour le type de données, sélectionnez l’icône de loupe ![icône de visualiseur](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur"). Sélectionnez la flèche en regard de l’icône de loupe pour sélectionner dans une liste de visualiseurs pour le type de données.  
+
+## <a name="add-a-variable-to-a-watch-window"></a>Ajouter une variable à une fenêtre Espion  
+
+Si vous souhaitez continuer à surveiller une variable, vous pouvez l’ajouter à un **espion** fenêtre à partir d’un DataTip. Avec le bouton droit de la variable dans le DataTip, puis sélectionnez **ajouter un espion**. 
+
+La variable s’affiche dans le **espion** fenêtre. Si votre édition de Visual Studio prend en charge plusieurs **espion** fenêtre, la variable s’affiche dans **Espion 1**. 
   
 ## <a name="import-and-export-datatips"></a>Importer et exporter des DataTips  
- Vous pouvez exporter des DataTips vers un fichier XML, qui peut être partagé avec un collègue ou modifié à l'aide d'un éditeur de texte.  
+
+Vous pouvez exporter des DataTips vers un fichier XML, que vous pouvez partager ou modifier à l’aide d’un éditeur de texte. Vous pouvez également importer un fichier DataTip XML reçu ou modifié. 
   
-#### <a name="to-export-datatips"></a>Pour exporter des DataTips  
+**Pour exporter des DataTips :** 
   
-1.  Dans le menu Déboguer, cliquez sur **exporter les DataTips**.  
+1. Sélectionnez **déboguer** > **exporter des DataTips**.  
+   
+1. Dans le **exporter les DataTips** boîte de dialogue, accédez à l’emplacement pour enregistrer le fichier XML, tapez un nom pour le fichier, puis sélectionnez **enregistrer**.  
   
-     Le **exporter les DataTips** boîte de dialogue s’affiche.  
+**Pour importer des DataTips :** 
   
-2.  Utilisez les techniques standard pour accéder à l’emplacement où vous souhaitez enregistrer le fichier XML, tapez un nom pour le fichier dans le **nom de fichier** , puis cliquez sur **OK**.  
-  
-#### <a name="to-import-datatips"></a>Pour importer des DataTips  
-  
-1.  Dans le menu Déboguer, cliquez sur **importer les DataTips**.  
-  
-     Le **importer les DataTips** boîte de dialogue s’affiche.  
-  
-2.  Utilisez la boîte de dialogue pour rechercher le fichier XML que vous souhaitez ouvrir et cliquez sur **OK**.  
-  
+1. Sélectionnez **déboguer** > **importer les DataTips**.  
+   
+1. Dans le **importer les DataTips** boîte de dialogue, sélectionnez le fichier DataTips XML que vous souhaitez ouvrir, puis sélectionnez **ouvrir**.  
+
 ## <a name="see-also"></a>Voir aussi  
- [Quel est le débogage ?](../debugger/what-is-debugging.md)  
- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
+ [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)  
  [Premier aperçu de débogage](../debugger/debugger-feature-tour.md) [affichage de données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Espion et Espion express Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   
+

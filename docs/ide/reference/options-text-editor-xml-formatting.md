@@ -10,56 +10,63 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1af8ff6f085d744cb58cb3844fced18d3e484494
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 652d9ff3b2178089b4ef35838a4181408aef7f09
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673232"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388297"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Options, Éditeur de texte, XML, Mise en forme
+
 Utilisez la page de propriétés **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Mise en forme**, développez le nœud **Éditeur de texte** > **XML** > **Mise en forme**.
 
-> [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+## <a name="attributes"></a>Attributs
 
-## <a name="attributes"></a>Attributs  
-**Préserver la mise en forme manuelle des attributs**  
-Ne remet pas en forme les attributs. Il s’agit du paramétrage par défaut.  
-  
-> [!NOTE]  
->  Si les attributs figurent sur plusieurs lignes, l'éditeur met en retrait chaque ligne d'attributs au niveau d'indentation de l'élément parent.  
-  
-**Aligner les attributs chacun sur une ligne séparée**  
-À partir du deuxième attribut, aligne les attributs verticalement au niveau d’indentation du premier attribut. Le texte XML qui suivant illustre la façon dont les attributs sont alignés.  
-  
+**Préserver la mise en forme manuelle des attributs**
+
+Ne remet pas en forme les attributs. Il s’agit du paramétrage par défaut.
+
+> [!NOTE]
+> Si les attributs figurent sur plusieurs lignes, l'éditeur met en retrait chaque ligne d'attributs au niveau d'indentation de l'élément parent.
+
+**Aligner les attributs chacun sur une ligne séparée**
+
+À partir du deuxième attribut, aligne les attributs verticalement au niveau d’indentation du premier attribut. Le texte XML qui suivant illustre la façon dont les attributs sont alignés.
+
 ```xml
-<item id = "123-A"  
-      name = "hammer"  
-      price = "9.95"  
-</item>  
-```  
-  
-## <a name="auto-reformat"></a>Remise en forme automatique  
-**En collant le contenu du presse-papiers**  
-Remet en forme le texte XML collé à partir du Presse-papiers.  
-  
-**Après la balise de fin**  
-Remet l’élément en forme une fois la balise de fin complétée.  
-  
-## <a name="mixed-content"></a>Contenu mixte  
-**Mettre en forme les contenus mixtes par défaut**  
-Tente de remettre en forme le contenu mixte, sauf lorsque celui-ci se trouve dans une étendue `xml:space="preserve"`. Il s’agit du paramétrage par défaut.  
-  
-Si un élément contient un mélange de texte et de balises, ce contenu est considéré comme mixte. Voici un exemple d’élément avec un contenu mixte.  
-  
+<item id = "123-A"
+      name = "hammer"
+      price = "9.95">
+</item>
+```
+
+## <a name="auto-reformat"></a>Remise en forme automatique
+
+**En collant le contenu du presse-papiers**
+
+Remet en forme le texte XML collé à partir du Presse-papiers.
+
+**Après la balise de fin**
+
+Remet l’élément en forme une fois la balise de fin complétée.
+
+## <a name="mixed-content"></a>Contenu mixte
+
+**Mettre en forme les contenus mixtes par défaut**
+
+Tente de remettre en forme le contenu mixte, sauf lorsque celui-ci se trouve dans une étendue `xml:space="preserve"`. Il s’agit du paramétrage par défaut.
+
+Si un élément contient un mélange de texte et de balises, ce contenu est considéré comme mixte. Voici un exemple d’élément avec un contenu mixte.
+
 ```xml
-<dir>c:\data\AlphaProject\  
-  <file readOnly="false">test1.txt</file>  
-  <file readOnly="false">test2.txt</file>  
-\</dir>  
-```  
+<dir>c:\data\AlphaProject\
+  <file readOnly="false">test1.txt</file>
+  <file readOnly="false">test2.txt</file>
+</dir>
+```
+
 ## <a name="see-also"></a>Voir aussi
+
 - [Guide pratique pour créer une documentation XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Génération de code](../code-generation-in-visual-studio.md)
-  

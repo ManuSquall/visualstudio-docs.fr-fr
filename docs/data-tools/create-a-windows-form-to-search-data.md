@@ -16,20 +16,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b2a72306a3636bb5bca601f600afdaa175b4dd1
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 15cfd136050d9a0e3fca89964c5a9712b7b5ae06
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582419"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159891"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 
 Un scénario d'application courant consiste à afficher les données sélectionnées dans un formulaire. Par exemple, supposons que vous souhaitiez afficher les commandes d'un client spécifique ou les détails d'une commande spécifique. Dans ce scénario, un utilisateur entre des informations dans un formulaire, puis une requête est exécutée prenant l'entrée de l'utilisateur comme paramètre. C'est-à-dire que les données sont sélectionnées selon une requête paramétrable. La requête retourne uniquement les données répondant aux critères entrés par l'utilisateur. Cette procédure pas à pas indique comment créer une requête retournant les clients d'une ville spécifique et modifier l'interface utilisateur de sorte que les utilisateurs puissent entrer un nom de ville et appuyer sur un bouton pour exécuter la requête.
 
-L'utilisation des requêtes paramétrables renforce l'efficacité de votre application en utilisant la base de données de la meilleure manière possible : pour filtrer rapidement des enregistrements. En revanche, si vous demandez une table de base de données entière, transférez sur le réseau et ensuite utilisez logique d’application pour rechercher les enregistrements souhaités, votre application peut devenir lente et inefficace.
+L'utilisation des requêtes paramétrables renforce l'efficacité de votre application en utilisant la base de données de la meilleure manière possible : pour filtrer rapidement des enregistrements. À l’inverse, si vous interrogez une table de base de données entière, que vous la transférez sur le réseau et que vous utilisez la logique d’application pour trouver les enregistrements souhaités, votre application peut devenir lente et perdre en efficacité.
 
-Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapter (et contrôles pour accepter les valeurs de paramètre et exécuter la requête), à l’aide de la **Générateur de critères de recherche** boîte de dialogue. Ouvrez la boîte de dialogue en sélectionnant le **ajouter une requête** commande sur le **données** menu (ou sur toute balise active TableAdapter).
+Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapter (et contrôles pour accepter les valeurs de paramètre et exécuter la requête), à l’aide de la **Générateur de critères de recherche** boîte de dialogue. Ouvrez la boîte de dialogue en sélectionnant la commande **Ajouter une requête** dans le menu **Données** (ou dans n’importe quelle balise active TableAdapter).
 
 Cette procédure pas à pas décrit notamment les tâches suivantes :
 
@@ -39,7 +39,7 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 -   Définissant le type de déplacement des éléments dans le **des Sources de données** fenêtre.
 
--   Création de contrôles qui affichent des données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers un formulaire.
+-   Création de contrôles affichant les données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.
 
 -   Ajout de contrôles pour afficher les données dans le formulaire.
 
@@ -71,59 +71,59 @@ La première étape consiste à créer une application Windows Forms. Affectatio
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **WindowsSearchForm**, puis choisissez **OK**.
 
-     Le **WindowsSearchForm** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet **WindowsSearchForm** est créé et ajouté à l’**Explorateur de solutions**.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
-Cette étape crée une source de données à partir d’une base de données à l’aide de la **Configuration de Source de données** Assistant :
+Cette étape crée une source de données à partir d’une base de données à l’aide de l’**Assistant Configuration de source de données** :
 
-1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
+1.  Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Configuration de Source de données** Assistant.
+2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
 
 3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4.  Sur le **choisir votre connexion de données** page, procédez comme suit :
+4.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
 
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-    -   Sélectionnez **nouvelle connexion** pour lancer le **Ajouter/modifier la connexion** boîte de dialogue.
+    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **suivant**.
+5.  Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.
 
 6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.
 
-7.  Sur le **choisir vos objets de base de données** page, développez le **Tables** nœud.
+7.  Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
-8.  Sélectionnez le **clients** table, puis cliquez sur **Terminer**.
+8.  Sélectionnez la table **Customers**, puis cliquez sur **Terminer**.
 
-     Le **NorthwindDataSet** est ajouté à votre projet et le **clients** table s’affiche dans le **des Sources de données** fenêtre.
+     **NorthwindDataSet** est ajouté à votre projet et la table **Customers** apparaît dans la fenêtre **Sources de données**.
 
-## <a name="create-the-form"></a>Création d’un formulaire
+## <a name="create-the-form"></a>Créer le formulaire
 
-Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire :
+Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire :
 
-1.  Développez le **clients** nœud dans le **des Sources de données** fenêtre.
+1.  Développez le nœud **Customers** dans la fenêtre **Sources de données**.
 
-2.  Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre à votre formulaire.
+2.  Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers votre formulaire.
 
-     Un <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur le formulaire. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
+     Un <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>Ajoutez le paramétrage (fonctionnalité de recherche) à la requête
 
 Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le **Générateur de critères de recherche** boîte de dialogue :
 
-1.  Sélectionnez le <xref:System.Windows.Forms.DataGridView> contrôler, puis choisissez **ajouter une requête** sur le **données** menu.
+1.  Sélectionnez le contrôle <xref:System.Windows.Forms.DataGridView>, puis choisissez **Ajouter une requête** dans le menu **Données**.
 
 2.  Type **FillByCity** dans le **nouveau nom de requête** zone sur le **Générateur de critères de recherche** boîte de dialogue.
 
-3.  Ajouter `WHERE City = @City` à la requête dans le **texte de la requête** zone.
+3.  Ajoutez `WHERE City = @City` à la requête dans la zone **Texte de la requête**.
 
      La requête doit ressembler à la suivante :
 
@@ -137,7 +137,7 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le 
     > [!NOTE]
     > Les sources de données Access et OleDb utilisent le point d’interrogation (« ? ») pour indiquer les paramètres, par conséquent, la clause WHERE ressemblerait à ceci : `WHERE City = ?`.
 
-4.  Cliquez sur **OK** pour fermer la **Générateur de critères de recherche** boîte de dialogue.
+4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.
 
      Un **FillByCityToolStrip** est ajouté au formulaire.
 
@@ -147,9 +147,9 @@ Exécution de l’application ouvre votre formulaire et le rend prêt à utilise
 
 1.  Appuyez sur **F5** pour exécuter l’application.
 
-2.  Type **Londres** dans le **Ville** zone de texte, puis cliquez sur **FillByCity**.
+2.  Tapez **London** dans la zone de texte **City**, puis cliquez sur **FillByCity**.
 
-     La grille de données est remplie avec les clients qui répondent aux critères. Dans cet exemple, la grille de données affiche uniquement les clients qui ont une valeur de **Londres** dans leurs **Ville** colonne.
+     La grille de données est remplie avec les clients qui répondent aux critères. Dans cet exemple, la grille de données n’affiche que les clients possédant une valeur **London** dans leur colonne **City**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

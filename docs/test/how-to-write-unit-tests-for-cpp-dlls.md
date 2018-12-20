@@ -1,5 +1,5 @@
 ---
-title: Écrire des tests unitaires pour des DLL C++ dans Visual Studio
+title: Écrire des tests unitaires pour des DLL C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,32 +9,32 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862520"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056173"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
  Il existe plusieurs façons de tester du code de DLL, selon qu’elle exporte ou non les fonctions que vous voulez tester. Choisissez l'un des moyens suivants :
 
- **Les tests unitaires appellent seulement des fonctions exportées depuis la DLL :** ajoutez un projet de test distinct comme décrit dans [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md). Dans le projet de test, ajoutez une référence au projet DLL.
+ **Les tests unitaires appellent seulement des fonctions exportées depuis la DLL :** Ajoutez un projet de test distinct, comme indiqué dans [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md). Dans le projet de test, ajoutez une référence au projet DLL.
 
  Passez à la procédure [Pour référencer des fonctions exportées depuis le projet DLL](#projectRef).
 
- **La DLL est générée sous la forme d’un fichier .exe :** ajoutez un projet de test distinct. Liez-le au fichier objet de sortie.
+ **La DLL est générée sous la forme d’un fichier .exe :** Ajoutez un projet de test distinct. Liez-le au fichier objet de sortie.
 
  Passez à la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).
 
- **Les tests unitaires appellent des fonctions non-membres qui ne sont pas exportées depuis la DLL, et la DLL peut être générée sous forme de bibliothèque statique :** modifiez le projet DLL pour qu’il soit compilé en un fichier *.lib*. Ajoutez un projet de test distinct qui référence le projet testé.
+ **Les tests unitaires appellent des fonctions non-membres qui ne sont pas exportées depuis la DLL, et la DLL peut être générée sous forme de bibliothèque statique :** Changez le projet DLL pour qu’il soit compilé sous forme de fichier *.lib*. Ajoutez un projet de test distinct qui référence le projet testé.
 
  Cette approche présente l’avantage de permettre à vos tests d’utiliser des membres non exportés, mais de conserver les tests dans un projet distinct.
 
  Passez à la procédure [Pour changer la DLL en une bibliothèque statique](#staticLink).
 
- **Les tests unitaires doivent appeler des fonctions non-membres qui ne sont pas exportées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :** ajoutez des tests unitaires dans le même projet que le code du produit.
+ **Les tests unitaires doivent appeler des fonctions non-membres qui ne sont pas exportées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :** Ajoutez les tests unitaires dans le même projet que le code du produit.
 
  Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](#sameProject).
 
@@ -125,7 +125,7 @@ ms.locfileid: "49862520"
 
 1.  Dans chaque fichier de code de test unitaire, ajoutez une instruction `#include` pour les en-têtes du projet testé.
 
-2.  Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Exemple :
+2.  Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Par exemple :
 
     ```cpp
     #include "stdafx.h"
@@ -160,4 +160,4 @@ ms.locfileid: "49862520"
 - [Déboguer du code natif](../debugger/debugging-native-code.md)
 - [Procédure pas à pas : création et utilisation d’une bibliothèque de liens dynamiques (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importation et exportation](/cpp/build/importing-and-exporting)
-- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)

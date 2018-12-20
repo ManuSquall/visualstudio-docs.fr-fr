@@ -11,22 +11,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380692"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064454"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procédure : créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word
 
 Vous pouvez créer manuellement des rapports de test de charge en copiant et en collant les données du mode Résumé et de la vue Graphiques des résultats des tests de charge. Les données qui sont présentées dans les vues Graphiques et Résumé sont appliquées au format HTML lorsqu'elles sont copiées.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Vous pouvez également copier le texte brut de la vue Tables et les captures d’écran du mode Détails dans Microsoft Word. Toutefois, il n’est pas appliqué au format HTML et nécessite une mise en forme et des modifications supplémentaires.
 
 > [!TIP]
-> Vous pouvez également générer des rapports Microsoft Excel organisés automatiquement. Pour plus d’informations, consultez [Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> Vous pouvez également générer des rapports Microsoft Excel organisés automatiquement. Pour plus d'informations, voir [Procédure : créer des rapports de performances de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Copier les données du mode Résumé
 
@@ -44,7 +46,7 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 1.  Dans **Résultats du test de charge**, si la vue Graphiques n’est pas affichée, choisissez **Graphiques** dans la barre d’outils.
 
-2.  (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d’informations, consultez [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2.  (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Contrôle de zoom de l'affichage de graphiques](../test/media/ltest_zoomcontrol.png)
 

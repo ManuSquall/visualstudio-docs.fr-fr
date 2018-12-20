@@ -1,6 +1,6 @@
 ---
 title: Débogage en mode mixte pour Python
-description: Guide pratique pour déboguer simultanément C++ et Python dans Visual Studio, notamment pour passer d’un environnement à l’autre, afficher les valeurs et évaluer les expressions.
+description: Déboguez simultanément C++ et Python dans Visual Studio, notamment pour passer d’un environnement à l’autre, afficher les valeurs et évaluer les expressions.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607833"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052233"
 ---
 # <a name="debug-python-and-c-together"></a>Déboguer conjointement Python et C++
 
@@ -35,11 +36,11 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
 - Consultez les représentations Python d’objets dans des cadres natifs et vice versa
 - Débogage dans le contexte du projet Python ou du projet C++
 
-![Débogage en mode mixte](media/mixed-mode-debugging.png)
+![Débogage en mode mixte pour Python dans Visual Studio](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour introduction des modules C natifs de génération, de test et de débogage avec Visual Studio, visionnez la vidéo [Exploration : créer les modules natifs](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 min09 s). La vidéo s’applique à Visual Studio 2015 et 2017. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction des modules C natifs de génération, de test et de débogage avec Visual Studio, visionnez la vidéo [Exploration : créer des modules natifs](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 min 09 s). La vidéo s’applique à Visual Studio 2015 et 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Activer le débogage en mode mixte dans un projet Python
 
@@ -96,7 +97,7 @@ Pour toutes les versions précédentes de Visual Studio, le débogage en mode mi
 
 La fenêtre **Pile des appels** affiche des frames de pile natifs et Python entrelacés, en insérant des transitions entre les deux :
 
-![Pile des appels combinée](media/mixed-mode-debugging-call-stack.png)
+![Pile des appels combinée avec débogage en mode mixte](media/mixed-mode-debugging-call-stack.png)
 
 Si l’option **Outils** > **Options** > **Débogage** > **Général** > **Activer Uniquement mon code** est définie, les transitions apparaissent sous la forme **[Code externe]**, sans spécifier la direction de la transition.
 
@@ -110,11 +111,11 @@ Quand vous utilisez les commandes **Pas à pas détaillé** (**F11**) ou **Pas �
 
 Quand un frame natif (C ou C++) est actif, ses variables locales s’affichent dans la fenêtre **Variables locales** du débogueur. Dans les modules d’extension Python natifs, de nombreuses variables sont de type `PyObject` (qui est un typedef de `_object`), ou de quelques autres types Python fondamentaux (consultez la liste ci-dessous). Dans le cadre du débogage en mode mixte, ces valeurs présentent un nœud enfant supplémentaire intitulé **[Vue Python]**. Quand ce nœud est développé, il affiche la représentation Python de la variable, telle qu’elle apparaîtrait si une variable locale référençant le même objet était présente dans un frame Python. Les enfants de ce nœud sont modifiables.
 
-![Vue Python](media/mixed-mode-debugging-python-view.png)
+![Vue Python dans la fenêtre Variables locales](media/mixed-mode-debugging-python-view.png)
 
 Pour désactiver cette fonctionnalité, cliquez avec le bouton droit sur un emplacement quelconque de la fenêtre **Variables locales**, puis désélectionnez l’option de menu **Python** > **Afficher les nœuds de la vue Python** :
 
-![Activation de la vue Python](media/mixed-mode-debugging-enable-python-view.png)
+![Activation de la vue Python dans la fenêtre Variables locales](media/mixed-mode-debugging-enable-python-view.png)
 
 Types C affichant les nœuds **[Vue Python]** (si cette option est activée) :
 
@@ -143,11 +144,11 @@ Une autre option (mieux adaptée) consiste à suivre la spécification [PEP 312
 
 Comme dans la section précédente, vous pouvez activer un nœud **[C++ view]** (Vue C++) pour les valeurs natives dans la fenêtre **Variables locales** quand un frame Python est actif. Cette fonctionnalité est désactivée par défaut. Si vous souhaitez l’activer, cliquez avec le bouton droit dans la fenêtre **Variables locales**, puis sélectionnez l’option **Python** > **Afficher les nœuds de la vue C++**.
 
-![Activation de la vue C++](media/mixed-mode-debugging-enable-cpp-view.png)
+![Activation de la vue C++ dans la fenêtre Variables locales](media/mixed-mode-debugging-enable-cpp-view.png)
 
 Le nœud **[Vue C++]** fournit une représentation de la structure C/C++ sous-jacente d’une valeur, telle qu’elle apparaîtrait dans un frame natif. Par exemple, il affiche une instance de `_longobject` (dont `PyLongObject` est un typedef) pour un entier long Python, et il essaie de déduire les types des classes natives que vous avez vous-même créées. Les enfants de ce nœud sont modifiables.
 
-![Vue C++](media/mixed-mode-debugging-cpp-view.png)
+![Vue C++ dans la fenêtre Variables locales](media/mixed-mode-debugging-cpp-view.png)
 
 Si un champ enfant d’un objet est du type `PyObject` ou de l’un des autres types pris en charge, il comporte un nœud de représentation **[Vue Python]** (si ces représentations sont activées), ce qui offre la possibilité de parcourir les graphiques d’objet quand les liens ne sont pas directement exposés à Python.
 
@@ -169,9 +170,9 @@ Le débogueur en mode mixte se différencie du [débogueur Python standard](debu
 
 - Fonctionnalités non prises en charge : points d’arrêt conditionnels, fenêtre de **débogage interactive** et débogage à distance multiplateforme.
 - Fenêtre **Exécution** : disponible mais avec un sous-ensemble de fonctionnalités restreint, incluant notamment toutes les limitations répertoriées dans cette section.
-- Versions Python prises en charge : CPython 2.7, 3.3 et versions ultérieures uniquement.
-- Visual Studio Shell : lorsque vous utilisez Python avec Visual Studio Shell (par exemple, si vous l’avez installé à l’aide du programme d’installation intégré), Visual Studio n’est pas en mesure d’ouvrir les projets C++, et l’expérience de modification des fichiers C++ se limite à celle d’un éditeur de texte de base. Toutefois, le débogage C/C++ et le débogage en mode mixte sont entièrement pris en charge dans Shell avec le code source, l’exécution d’un pas à pas détaillé dans le code natif et l’évaluation des expressions C++ dans les fenêtres de débogage.
-- Visualisation et développement d’objets : quand vous visualisez des objets Python dans les fenêtres d’outil de débogage **Variables locales** et **Espion**, le débogueur en mode mixte présente uniquement la structure des objets. Il n’évalue pas automatiquement les propriétés et n’affiche pas les attributs calculés. Dans le cas des collections, il présente uniquement les éléments pour les types de collections intégrés (`tuple`, `list`, `dict`, `set`). Les types de collections personnalisés ne sont pas visualisés sous forme de collections, sauf s’ils sont hérités d’un type de collection intégré.
+- Versions Python prises en charge : CPython 2.7 et 3.3+ uniquement.
+- Visual Studio Shell : Lorsque vous utilisez Python avec Visual Studio Shell (par exemple, si vous l’avez installé à l’aide du programme d’installation intégré), Visual Studio n’est pas en mesure d’ouvrir les projets C++, et l’expérience de modification des fichiers C++ se limite à celle d’un éditeur de texte de base. Toutefois, le débogage C/C++ et le débogage en mode mixte sont entièrement pris en charge dans Shell avec le code source, l’exécution d’un pas à pas détaillé dans le code natif et l’évaluation des expressions C++ dans les fenêtres de débogage.
+- Visualisation et développement d’objets : Quand vous visualisez des objets Python dans les fenêtres d’outil de débogage **Variables locales** et **Espion**, le débogueur en mode mixte présente uniquement la structure des objets. Il n’évalue pas automatiquement les propriétés et n’affiche pas les attributs calculés. Dans le cas des collections, il présente uniquement les éléments pour les types de collections intégrés (`tuple`, `list`, `dict`, `set`). Les types de collections personnalisés ne sont pas visualisés sous forme de collections, sauf s’ils sont hérités d’un type de collection intégré.
 - Évaluation des expressions : voir ci-dessous.
 
 ### <a name="expression-evaluation"></a>Évaluation des expressions

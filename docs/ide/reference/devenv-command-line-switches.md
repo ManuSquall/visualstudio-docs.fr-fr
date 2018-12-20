@@ -1,5 +1,5 @@
 ---
-title: Commutateurs de la ligne de commande devenv de Visual Studio
+title: Commutateurs de la ligne de commande devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907038"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063394"
 ---
-# <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande devenv
+# <a name="devenv-command-line-switches"></a>Commutateurs de ligne de commande Devenv
 
 devenv vous permet de définir différentes options pour l’IDE, et de créer, déboguer et déployer des projets à partir de la ligne de commande. Utilisez ces commutateurs pour exécuter l’IDE à partir d’un script ou d’un fichier .bat, par exemple un script de génération nocturne ou pour lancer l’IDE dans une configuration particulière.
 
@@ -31,9 +31,9 @@ devenv vous permet de définir différentes options pour l’IDE, et de créer, 
 
 ## <a name="devenv-switch-syntax"></a>Syntaxe des commutateurs devenv
 
-Par défaut, les commandes devenv passent des commutateurs à l’utilitaire devenv.com. L’utilitaire devenv.com fournit ses sorties via des flux système standard, comme `stdout` et `stderr`. L’utilitaire détermine la redirection d’E/S appropriée lors de la capture de la sortie, par exemple dans un fichier .txt.
+Les commandes qui commencent par `devenv` sont gérées par l’utilitaire `devenv.com`, qui fournit ses sorties via des flux système standard, tels que `stdout` et `stderr`. L’utilitaire détermine la redirection d’E/S appropriée lors de la capture de la sortie, par exemple dans un fichier .txt.
 
-En revanche, les commandes qui commencent par `devenv.exe` peuvent utiliser les mêmes commutateurs, mais l’utilitaire devenv.com est alors ignoré.
+En revanche, les commandes qui commencent par `devenv.exe` peuvent utiliser les mêmes commutateurs, mais l’utilitaire `devenv.com` est alors ignoré. L’utilisation de `devenv.exe` empêche l’affichage direct de la sortie sur la console.
 
 Les règles de syntaxe pour les commutateurs `devenv` ressemblent à celles d’autres utilitaires de ligne de commande DOS. Les règles de syntaxe suivantes s’appliquent à tous les commutateurs `devenv` et leurs arguments :
 
@@ -45,7 +45,7 @@ Les règles de syntaxe pour les commutateurs `devenv` ressemblent à celles d’
 
 - Si le premier argument est un fichier qui n’est pas une solution ou un projet, ce fichier s’ouvre dans l’éditeur approprié, dans une nouvelle instance de l’IDE.
 
-- Quand vous fournissez un nom de fichier projet au lieu d’un nom de fichier solution, une commande `devenv` recherche le dossier parent du fichier projet pour un fichier solution du même nom. Par exemple, la commande `devenv /build myproject1.vbproj` recherche le dossier parent d’un fichier solution nommé « myproject1.sln ».
+- Quand vous fournissez un nom de fichier projet au lieu d’un nom de fichier solution, une commande `devenv` recherche le dossier parent du fichier projet pour un fichier solution du même nom. Par exemple, la commande `devenv myproject1.vbproj /build` recherche le dossier parent d’un fichier solution nommé « myproject1.sln ».
 
     > [!NOTE]
     > Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient deux fichiers solution ou plus qui le référencent, un fichier solution temporaire est créé.
@@ -78,12 +78,12 @@ Les commutateurs de ligne de commande suivants n’affichent pas l’IDE.
 
 |Commutateur de ligne de commande|Description|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Affiche l’aide des commutateurs devenv dans la **fenêtre d’invite de commandes**.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.<br /><br /> **Devenv myproj.csproj /build**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Supprime tous les fichiers créés par la commande build, sans affecter les fichiers sources.<br /><br /> **Devenv myproj.csproj /clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Génère la solution, ainsi que les fichiers nécessaires pour le déploiement, en fonction de la configuration des solutions.<br /><br /> **Devenv myproj.csproj /deploy**|
-|[/Diff](../../ide/reference/diff.md)|Compare deux fichiers. Prend quatre paramètres : SourceFile, TargetFile, SourceDisplayName (facultatif) et TargetDisplayName (facultatif).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Permet de spécifier un fichier pour recevoir les erreurs pendant la génération.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
+|[/?](../../ide/reference/q-devenv-exe.md)|Affiche l’aide des commutateurs devenv dans la **fenêtre d’invite de commandes**.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Supprime tous les fichiers créés par la commande build, sans affecter les fichiers sources.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Génère la solution, ainsi que les fichiers nécessaires pour le déploiement, en fonction de la configuration des solutions.<br /><br /> `devenv myproj.csproj /deploy`|
+|[/Diff](../../ide/reference/diff.md)|Compare deux fichiers. Accepte quatre paramètres : SourceFile, TargetFile, SourceDisplayName (facultatif) et TargetDisplayName (facultatif).|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Permet de spécifier un fichier pour recevoir les erreurs pendant la génération.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projet à générer, nettoyer ou déployer. Vous pouvez utiliser ce commutateur uniquement si vous avez également spécifié le commutateur /build, /rebuild, /clean ou /deploy.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Spécifie la configuration de projet à générer ou déployer. Vous pouvez utiliser ce commutateur uniquement si vous avez également spécifié le commutateur /project.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Efface, puis génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.|

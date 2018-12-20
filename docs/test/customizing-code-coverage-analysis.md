@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de l’analyse de la couverture du code dans Visual Studio
+title: Personnalisation de l'analyse de couverture du code
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52e2465a1e0a25e852073dc39a8aee18a6b47d7e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295345"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054936"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -105,7 +105,7 @@ Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus 
 
 Les correspondances ne respectent pas la casse.
 
-Exemple :
+Par exemple :
 
 ```xml
 <ModulePaths>
@@ -137,7 +137,7 @@ Exemple :
 
 - **Attribute** : correspond à des éléments auxquels un attribut spécial est attaché. Spécifiez le nom complet de l’attribut et insérez « Attribute » à la fin du nom.
 
-- **Function** : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet. Pour correspondre à un nom de fonction, l’expression régulière doit correspondre au nom complet de la fonction, y compris l’espace de noms, le nom de classe, le nom de méthode et la liste des paramètres. Exemple :
+- **Function** : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet. Pour correspondre à un nom de fonction, l’expression régulière doit correspondre au nom complet de la fonction, y compris l’espace de noms, le nom de classe, le nom de méthode et la liste des paramètres. Par exemple :
 
    ```csharp
    Fabrikam.Math.LocalMath.SquareRoot(double);

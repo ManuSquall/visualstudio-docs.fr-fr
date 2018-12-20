@@ -1,6 +1,8 @@
 ---
-title: ASP.NET sur un ordinateur distant IIS de déboguer à distance | Microsoft Docs
-ms.custom: remotedebugging
+title: Déboguer à distance ASP.NET sur un ordinateur IIS
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826504"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065556"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.
@@ -30,7 +32,7 @@ Ce guide explique comment paramétrer et configurer une application Visual Studi
 Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2012 R2 et IIS 8 (pour Windows Server 2008 R2, les étapes de serveur sont différents)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Le débogueur distant est pris en charge sur Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -47,7 +49,7 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Créer l’ASP.NET 4.5.2 application sur l’ordinateur Visual Studio
   
-1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans le ** ASP.NET 4.5.2</strong> section de modèles, sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
+1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans la section des modèles ASP.NET 4.5.2 , sélectionnez MVC</strong>. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
 
 2. Ouvrez le fichier HomeController.cs et définissez un point d’arrêt dans la méthode `About()` .
 
@@ -59,10 +61,10 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 Si la Configuration de sécurité renforcée est activée dans Internet Explorer (il est activé par défaut), vous devrez peut-être ajouter des domaines comme sites approuvés pour vous permettre de télécharger certaines des composants de serveur web. Ajouter les sites de confiance en accédant à **Options Internet > sécurité > Sites de confiance > Sites**. Ajoutez les domaines suivants.
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- IIS.NET
+- iis.net
 
 Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour accorder des autorisations requises pour charger des différents scripts de site web et des ressources. Certaines de ces ressources ne sont pas nécessaires, mais pour simplifier le processus, cliquez sur **ajouter** lorsque vous y êtes invité.
 
@@ -70,7 +72,7 @@ Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour ac
 
 Si vous souhaitez des informations plus détaillées pour installer ASP.NET sur IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-1. Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez sur le serveur et sélectionnez **Internet Information Services (IIS) Manager**.
+1. Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez avec le bouton droit sur le serveur, puis sélectionnez **Gestionnaire des services Internet (IIS)**.
 
 1. Web Platform Installer (WebPI) permet d’installer ASP.NET 4.5 (à partir du nœud de serveur dans Windows Server 2012 R2, choisissez **obtenir nouveaux composants Web Platform** , puis recherchez ASP.NET)
 
@@ -79,9 +81,9 @@ Si vous souhaitez des informations plus détaillées pour installer ASP.NET sur 
     > [!NOTE]
     > Si vous utilisez Windows Server 2008 R2, installez ASP.NET 4 au lieu d’utiliser cette commande :
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
 
-2. Redémarrez le système (ou exécutez **net stop was /y** suivie **net démarrer w3svc** à partir d’une invite de commandes à assimiler à une modification apportée à la variable système PATH).
+2. Redémarrez le système ou exécutez **net stop was /y** suivi de **net start w3svc** à partir d’une invite de commandes pour prendre en compte une modification de la variable système PATH.
 
 ## <a name="choose-a-deployment-option"></a>Choisissez une option de déploiement
 
@@ -110,7 +112,7 @@ Vous pouvez utiliser cette option créer un fichier de paramètres de publicatio
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Une fois que l’application se déploie correctement, il doit démarrer automatiquement. Si l’application ne démarre pas à partir de Visual Studio, démarrez l’application dans IIS.
+Une fois l’application déployée, elle doit démarrer automatiquement. Si l’application ne démarre pas à partir de Visual Studio, démarrez l’application dans IIS.
 
 1. Dans le **paramètres** boîte de dialogue, activer le débogage en cliquant sur **suivant**, choisissez un **déboguer** configuration, puis choisissez **supprimer les fichiers supplémentaires à destination** sous le **de publication des fichiers** options.
 
@@ -127,7 +129,7 @@ Vous pouvez utiliser cette option pour déployer votre application si vous souha
 
 1. Ouvrez l’Explorateur Windows et créez un dossier, **C:\Publish**, où vous allez déployer ultérieurement le projet ASP.NET.
 
-2. Si elle n’est pas déjà ouverte, ouvrez le **Internet Information Services (IIS) Manager**. (Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez sur le serveur et sélectionnez **Internet Information Services (IIS) Manager**.)
+2. Si elle n’est pas déjà ouverte, ouvrez le **Internet Information Services (IIS) Manager**. (Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez avec le bouton droit sur le serveur, puis sélectionnez **Gestionnaire des services Internet (IIS)**.)
 
 3. Sous **connexions** dans le volet gauche, accédez à **Sites**.
 
@@ -183,9 +185,9 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Dans Visual Studio 2017, vous pouvez rattacher vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** (Maj + Alt + P). 
+    > Dans Visual Studio 2017, vous pouvez rattacher vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P 
 
-3. Définissez le champ qualificateur sur  **\<nom_ordinateur_distant > : 4022**.
+3. Définissez le champ Qualificateur sur **\<nom_ordinateur_distant>:4022**.
 4. Cliquez sur **Actualiser**.
     Des processus doivent s’afficher dans la fenêtre **Processus disponibles** .
 
@@ -196,16 +198,16 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-7. Cliquez sur **attacher**
+7. Cliquez sur **Attacher**
 
-8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant >**.
+8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>**.
     
     La page web ASP.NET doit s’afficher.
 9. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers le **sur** page.
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-## <a name="bkmk_openports"></a> Résolution des problèmes : Ouvrir les ports requis sur Windows Server
+## <a name="bkmk_openports">Résolution des problèmes</a> Ouvrez les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, vous devrez peut-être vérifier que les ports sont ouverts.
 

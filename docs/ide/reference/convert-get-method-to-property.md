@@ -1,5 +1,5 @@
 ---
-title: Convertir la méthode Get en propriété et convertir une propriété en méthode Get dans Visual Studio
+title: Convertir la méthode Get en propriété et convertir une propriété en méthode Get
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,15 +11,15 @@ manager: douge
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 862f3d82decbd934fa64b5d88e41d7e906dcea57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920857"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056345"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Convertir la méthode Get en propriété/convertir une propriété en méthode Get (refactorisations)
 
@@ -29,9 +29,9 @@ Ces refactorisations s’appliquent à :
 
 ## <a name="convert-get-method-to-property"></a>Convertir la méthode Get en propriété
 
-**Quoi :** vous permet de convertir une méthode Get en une propriété (et éventuellement votre méthode Set).
+**Quoi :** Vous permet de convertir une méthode Get en une propriété (et éventuellement votre méthode Set).
 
-**Quand :** vous avez une méthode Get qui ne contient aucune logique.
+**Quand :** Vous avez une méthode Get qui ne contient aucune logique.
 
 ### <a name="how-to"></a>Procédure
 
@@ -70,9 +70,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Convertir la propriété en méthode Get
 
-**Quoi :** vous permet de convertir une propriété en une méthode Get
+**Quoi :** Vous permet de convertir une propriété en une méthode Get
 
-**Quand :** vous disposez d’une propriété qui implique plus que la définition et l’obtention immédiates d’une valeur
+**Quand :** Vous disposez d’une propriété qui implique plus que la définition et l’obtention immédiates d’une valeur
 
 ### <a name="how-to"></a>Procédure
 

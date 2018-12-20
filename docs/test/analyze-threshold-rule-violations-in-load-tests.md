@@ -1,5 +1,5 @@
 ---
-title: Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge dans Visual Studio
+title: Analyse des violations de règles de seuil dans les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812996"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061809"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
 
 Les règles de seuil sont associées à des compteurs de performance spécifiques, et les violations indiquent qu'un compteur de performance a dépassé ou est descendu en dessous d'une valeur définie. Lorsque vous exécutez un test de charge, vous pouvez analyser les violations qui se produisent pour les règles de seuil définies précédemment.
 
 Si des violations se produisent, un lien hypertexte **Violations de seuil** apparaît sur la barre d’état de **Analyseur de test de charge** et spécifie le nombre de violations qui se sont produites. Vous cliquez sur le lien hypertexte pour afficher le tableau des violations de seuils. Vous pouvez également consulter les violations de seuil dans la fenêtre **Compteurs** et sur le graphique.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Affichage des violations de seuil du tableau
 
@@ -37,7 +39,7 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
 |Colonne|Description|Visible par défaut|
 |-|-|-|
 |réflexion|Heure à laquelle la violation s'est produite lors du test de charge.|Oui|
-|Ordinateur|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :** Ceci est important quand vous exécutez des tests de charge sur des plateformes de test.|Oui|
+|Ordinateur|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :**  Ceci est important lorsque vous exécutez des tests de charge sur des plateformes de test.|Oui|
 |Category|Catégorie du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Counter|Nom du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Instance|Instance de compteur de performance sur laquelle la violation s'est produite.|Oui|
@@ -67,8 +69,6 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
  Les violations de seuils peuvent également être indiquées sur le graphique (facultatif). L'icône de seuil apparaît sur le graphique à côté du point de données où la violation de seuil s'est produite.
 
  Dans l'arborescence de compteurs, l'icône de violation de seuil est propagée du nœud de compteur spécifique jusqu'au nœud racine. Ceci vous signale une violation sur un compteur qui n’est pas forcément visible dans l’arborescence, car elle n’a pas été développée.
-
- Pour plus d’informations, consultez [Utilisation du volet Compteurs dans la vue Graphiques et la vue Tables](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Affichage des violations de seuil sur le graphique
 

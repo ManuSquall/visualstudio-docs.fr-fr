@@ -1,5 +1,5 @@
 ---
-title: Test d’une grande application avec plusieurs mappages d’interface utilisateur dans Visual Studio
+title: Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891022"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895130"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
 Cette rubrique explique comment utiliser des tests codés de l'interface utilisateur quand vous testez une grande application à l'aide de plusieurs mappages d'interface utilisateur.
 
- **Spécifications**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**Spécifications**
 
 - Visual Studio Enterprise
 
-  Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
+Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
-  Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.
+Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.
 
-  L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages suivants :
+L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages suivants :
 
 - Chaque mappage peut être associé à un sous-ensemble logique de l'application. Cela facilite la gestion des modifications.
 

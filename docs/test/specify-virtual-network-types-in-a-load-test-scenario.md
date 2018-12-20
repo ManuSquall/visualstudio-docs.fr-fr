@@ -1,5 +1,5 @@
 ---
-title: Spécification de types de réseaux virtuels dans un scénario de test de charge dans Visual Studio
+title: Spécification de types de réseaux virtuels dans un scénario de test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380226"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894675"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 
 La *combinaison de réseaux* vous permet de simuler une charge avec plus de réalisme dans un scénario de test de charge. La charge est générée à l'aide d'une combinaison hétérogène de types de réseaux au lieu d'un seul type de réseau. Vous créez une meilleure approximation de la façon dont les utilisateurs finaux interagissent avec vos applications.
 
- Une combinaison de réseaux spécifie la probabilité qu’un utilisateur virtuel exécute un *profil réseau* donné. Un profil réseau est une simulation de bande passante réseau au niveau de la couche Application. Il ne simule pas la latence.
+Une combinaison de réseaux spécifie la probabilité qu’un utilisateur virtuel exécute un *profil réseau* donné. Un profil réseau est une simulation de bande passante réseau au niveau de la couche Application. Il ne simule pas la latence.
 
- Lorsque vous créez un test de charge, vous pouvez souhaiter simuler que cette charge soit générée par plusieurs types de connexions réseau. La combinaison de réseaux offre plusieurs types de réseau. Les différents réseaux sont simulés. Quand vous choisissez une option comme `Cable-DSL 1.5Mbps`, des durées d’attente sont injectées dans le test afin de simuler la bande passante sélectionnée.
+Lorsque vous créez un test de charge, vous pouvez souhaiter simuler que cette charge soit générée par plusieurs types de connexions réseau. La combinaison de réseaux offre plusieurs types de réseau. Les différents réseaux sont simulés. Quand vous choisissez une option comme `Cable-DSL 1.5Mbps`, des durées d’attente sont injectées dans le test afin de simuler la bande passante sélectionnée.
 
- La combinaison de réseaux fonctionne comme d'autres options de combinaison. Un type de réseau est sélectionné et associé aléatoirement à un utilisateur virtuel, selon la combinaison de réseaux. Les tests de cet utilisateur sont exécutés avec un type de réseau particulier, selon la probabilité que vous avez spécifiée dans la combinaison.
+La combinaison de réseaux fonctionne comme d'autres options de combinaison. Un type de réseau est sélectionné et associé aléatoirement à un utilisateur virtuel, selon la combinaison de réseaux. Les tests de cet utilisateur sont exécutés avec un type de réseau particulier, selon la probabilité que vous avez spécifiée dans la combinaison.
 
- Après avoir spécifié une combinaison de réseaux, vous pouvez ajouter et supprimer des types de réseaux. Vous pouvez également modifier la distribution de la combinaison de réseaux à l'aide du contrôle de combinaison.
+Après avoir spécifié une combinaison de réseaux, vous pouvez ajouter et supprimer des types de réseaux. Vous pouvez également modifier la distribution de la combinaison de réseaux à l'aide du contrôle de combinaison.
 
- Le contrôle de combinaison vous permet d'ajuster facilement la distribution des réseaux dans un scénario.
+Le contrôle de combinaison vous permet d'ajuster facilement la distribution des réseaux dans un scénario.
 
- Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Émulation réseau véritable
 
- Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests, notamment les tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
+Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests, notamment les tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
 
 -   Délai aller-retour sur le réseau (latence)
 

@@ -1,5 +1,5 @@
 ---
-title: Réduire et développer des régions de code dans Visual Studio
+title: Réduire et développer des régions de code
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349177"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064703"
 ---
 # <a name="outlining"></a>mode Plan
 
@@ -53,7 +53,7 @@ Les commandes suivantes sont disponibles dans le sous-menu **Edition** > **Mode 
 |Réduire le bloc :\<limite logique>|(Visual C++) Réduit une zone dans la fonction contenant le point d’insertion. Par exemple, si le point d’insertion se trouve à l’intérieur d’une boucle, celle-ci est masquée.|
 |Réduire tout dans : \<structures logiques>|(Visual C++) Réduit toutes les structures à l’intérieur de la fonction.|
 
-Vous pouvez également utiliser le SDK Visual Studio pour définir les zones de texte que vous souhaitez développer ou réduire. Consultez [Procédure pas à pas : mode Plan](../extensibility/walkthrough-outlining.md).
+Vous pouvez également utiliser le SDK Visual Studio pour définir les zones de texte que vous souhaitez développer ou réduire. Consultez [Procédure pas à pas : Mode Plan](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Voir aussi
 

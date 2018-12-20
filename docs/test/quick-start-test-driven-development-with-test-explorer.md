@@ -1,5 +1,5 @@
 ---
-title: Développement piloté par les tests avec l’Explorateur de tests dans Visual Studio
+title: Développement piloté par les tests avec l’Explorateur de tests
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837085"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062902"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests
 
 Nous vous recommandons de créer des tests unitaires pour que votre code continue à s'exécuter correctement dans de nombreuses étapes incrémentielles de développement. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Il existe des frameworks de tests qui sont spécialisés dans les tests avec certains langages ou certaines plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Les adaptateurs sont disponibles pour les infrastructures les plus couramment utilisées, et vous pouvez écrire vos propres adaptateurs pour d'autres frameworks.
 
@@ -53,13 +53,13 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
     L'Explorateur de tests ouvre et affiche un résumé des résultats.
 
-   **Pour afficher une liste complète des tests :** Choisissez **Afficher tout** dans une catégorie.
+   **Pour voir une liste complète des tests :** Choisissez **Tout afficher** dans une catégorie.
 
-   **Pour afficher les détails d'un résultat de test :** Sélectionnez le test dans l'Explorateur de tests pour afficher des détails tels que les messages d'exception dans le volet d'informations.
+   **Pour voir les détails d’un résultat de test :** Sélectionnez le test dans l’Explorateur de tests pour voir des détails tels que les messages d’exception dans le volet d’informations.
 
-   **Pour accéder au code d'un test :** Double-cliquez sur le test dans l'Explorateur de tests ou choisissez **Ouvrir un test** dans le menu contextuel.
+   **Pour accéder au code d’un test :** Double-cliquez sur le test dans l’Explorateur de tests, ou choisissez **Ouvrir un test** dans le menu contextuel.
 
-   **Pour déboguer un test :** Ouvrez le menu contextuel d'un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.
+   **Pour déboguer un test :** Ouvrez le menu contextuel d’un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.
 
 > [!IMPORTANT]
 > Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.
@@ -69,7 +69,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procédure pas à pas : utilisation de tests unitaires pour développer une méthode
  Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Créer le test et la méthode

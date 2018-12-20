@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à un service .NET pour collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à un service .NET pour collecter des données concurrentielles
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60f300f58c0cc9c06d8af64a4054b95306899f3a
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a12ce0b60a2ef47e1901b0c2e20f730faa225681
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815741"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052165"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service .NET et collecter des données de concurrence en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le profileur à un service .NET pour collecter des données concurrentielles en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et collecter des données de concurrence sur les processus et les threads à l’aide de la méthode d’échantillonnage.  
   
 > [!NOTE]
@@ -73,7 +73,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
   
     -   `PID` spécifie l’ID ou le nom de processus du service. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.  
   
-    -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultative.  
+    -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
   
 ## <a name="control-data-collection"></a>Contrôler la collecte des données  
  Pendant l’exécution du service, vous pouvez contrôler la collecte de données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  

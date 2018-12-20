@@ -3,19 +3,19 @@ title: Installer Visual Studio pour Mac
 description: Instructions sur l’installation de Visual Studio pour Mac et des composants supplémentaires nécessaires pour le développement multiplateforme.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294992"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158955"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>Installer et configurer Visual Studio pour Mac
 
-## <a name="setup"></a>Installation
+## <a name="requirements"></a>Configuration requise
 
 Pour commencer à développer des applications multiplateformes natives quand vous téléchargez Visual Studio pour Mac, vous devez installer et configurer un certain nombre de choses.
 
@@ -25,11 +25,14 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 * Xcode 8.3 ou ultérieur. La dernière version stable est généralement recommandée.
 * un ID Apple. Si vous n’avez pas encore d’identifiant Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
 
+> [!TIP]
+> La préversion de Visual Studio 2019 pour Mac est [maintenant disponible](install-preview.md) à des fins de test.
+
 ## <a name="install"></a>Installez
 
 1. Télécharger Visual Studio pour Mac à partir de [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
-2. Une fois le package d’installation téléchargé, cliquez sur le fichier **VisualStudioInstaller.dmg** pour monter le programme d’installation puis exécutez-le en double-cliquant sur le logo, comme illustré dans l’image suivante :
+2. Une fois le package d’installation téléchargé, cliquez sur le fichier **VisualStudioForMacInstaller.dmg** pour monter le programme d’installation, puis exécutez ce dernier en double-cliquant sur le logo, comme indiqué dans l’image suivante :
 
    ![Boîte de dialogue Programme d’installation](media/installer-image1.png)
 

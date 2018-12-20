@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’un fichier requirements.txt pour gérer les exigences du package
+title: Gérer les dépendances de package à l’aide d’un fichier requirements.txt
 description: Fichier requirements.txt contenant les dépendances d’un projet. Si vous recevez un projet contenant un fichier requirements.txt, vous pouvez installer ces dépendances en toute simplicité, en une seule étape.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +8,20 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218426"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066170"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gérer les packages requis avec requirements.txt
 
-Si vous partagez un projet avec d’autres utilisateurs, si vous utilisez un système de build ou si vous prévoyez de copier le projet à un autre emplacement dans lequel vous devrez restaurer un environnement, il vous faut spécifier les packages externes nécessaires au projet. L’approche recommandée consiste à utiliser un [fichier requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) qui contient une liste de commandes pour pip qui installe les versions requises des packages dépendants. La commande la plus courante est `pip freeze > requirements.txt`, qui enregistre la liste des packages actuels d’un environnement dans le fichier *requirements.txt*.
+Si vous partagez un projet avec d’autres utilisateurs, si vous utilisez un système de build ou si vous prévoyez de copier le projet à un autre emplacement dans lequel vous devrez restaurer un environnement, il vous faut spécifier les packages externes nécessaires au projet. L’approche recommandée consiste à utiliser un [fichier requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) qui contient une liste de commandes pour pip qui installe les versions requises des packages dépendants. La commande la plus courante est `pip freeze > requirements.txt`, qui enregistre la liste des packages actuels d’un environnement dans le fichier *requirements.txt*.
 
 Techniquement, vous pouvez utiliser n’importe quel nom de fichier pour suivre les exigences (à l’aide de `-r <full path to file>` durant l’installation d’un package), mais Visual Studio fournit une prise en charge spécifique pour *requirements.txt* :
 

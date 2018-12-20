@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : utilisation d’un fichier config pour définir une source de données dans Visual Studio'
+title: 'Procédure pas à pas : utilisation d’un fichier config pour définir une source de données'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821615"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066991"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
 
 Cette procédure pas à pas illustre l’utilisation d’une source de données définie dans un fichier *app.config* pour les tests unitaires. Vous apprendrez à créer un fichier *app.config* qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :
 
@@ -272,4 +272,4 @@ Maintenant qu’un fichier *app.config* a été défini, vous allez créer un te
 ## <a name="see-also"></a>Voir aussi
 
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)
-- [Guide pratique pour créer un test unitaire piloté par les données ](../test/how-to-create-a-data-driven-unit-test.md)
+- [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)

@@ -1,5 +1,5 @@
 ---
-title: Écrire des tests unitaires pour C/C++ dans Visual Studio
+title: Écrire des tests unitaires pour C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879221"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053742"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -73,7 +73,7 @@ Ensuite, dans votre fichier de test unitaire *.cpp*, ajoutez une directive `#inc
 ### <a name="write-test-methods"></a>Écrire des méthodes de test
 
 > [!NOTE]
-> Cette section décrit la syntaxe du framework de tests unitaires Microsoft pour C/C++. Elle est documentée ici : [Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Pour consulter la documentation de Google Test, consultez [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Pour Boost.Test, consultez [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Cette section décrit la syntaxe du framework de tests unitaires Microsoft pour C/C++. Elle est documentée ici : [Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Pour consulter la documentation de Google Test, consultez [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Pour Boost.Test, consultez [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Le fichier *.cpp* de votre projet de test a une classe et une méthode stub déjà définies, pour vous montrer comment écrire du code de test. Notez que les signatures utilisent les macros TEST_CLASS et TEST_METHOD, qui rendent les méthodes découvrables à partir de la fenêtre **Explorateur de tests**.
 
@@ -119,7 +119,7 @@ Pour connaître les bonnes pratiques relatives aux tests unitaires, consultez [C
 
 ## <a name="use-codelens"></a>Utiliser CodeLens
 
-**Visual Studio 2017 version 15.7 Éditions Professionnel et Entreprise uniquement** : [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
+**Visual Studio 2017 version 15.7, éditions Professional et Enterprise uniquement** : [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
 
 - Modifiez et générez votre projet de test ou solution.
 - Régénérez votre projet ou solution.

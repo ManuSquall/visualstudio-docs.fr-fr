@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fd3051aae78f6f0440c637137ea5a04f726df8c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750826"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388817"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 
@@ -31,18 +31,15 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 
 Vous pouvez enregistrer des données de votre application dans la base de données en appelant la méthode `Update` d'un TableAdapter. Lorsque vous faites glisser les tables à partir de la **des Sources de données** fenêtre sur un formulaire, le code qui est nécessaire pour enregistrer les données est automatiquement ajoutée. Toutes les tables supplémentaires qui sont ajoutés à un formulaire requièrent l’ajout manuel de ce code. Cette procédure pas à pas indique comment ajouter du code pour enregistrer les mises à jour de plusieurs tables.
 
-> [!NOTE]
-> Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 -   Création d’un nouveau **Windows Forms Application** projet.
 
 -   Création et configuration d’une source de données dans votre application avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
--   Définition des contrôles des éléments dans le [fenêtre Sources de données](add-new-data-sources.md). Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-   Définition des contrôles des éléments dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window). Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Création de contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire.
+-   Création de contrôles liés aux données en faisant glisser des éléments depuis la fenêtre Sources de données** vers votre formulaire.
 
 -   Modification des enregistrements dans chaque table dans le jeu de données.
 
@@ -52,9 +49,9 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
 
-1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
+1. Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
 
-2.  Installer la base de données Northwind en suivant ces étapes :
+2. Installer la base de données Northwind en suivant ces étapes :
 
     1. Dans Visual Studio, ouvrez le **Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans Visual Studio Installer.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête**.
 
@@ -72,41 +69,43 @@ La première étape consiste à créer un **Windows Forms Application**. Affecta
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **UpdateMultipleTablesWalkthrough**, puis choisissez **OK**.
 
-     Le **UpdateMultipleTablesWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet UpdateMultipleTablesWalkthrough **est créé et ajouté à l'Explorateur de solutions**.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
-Cette étape crée une source de données à partir de la base de données Northwind à l’aide du **Assistant de Configuration de Source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
+Cette étape crée une source de données à partir de la base de données Northwind à l'aide de l'Assistant Configuration de source de données **. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  Sur le **données** menu, sélectionnez **afficher les Sources de données**.
+1. Sur le **données** menu, sélectionnez **afficher les Sources de données**.
 
-2.  Dans le **des Sources de données** fenêtre, sélectionnez **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.
+   La fenêtre Sources de données** s'ouvre.
 
-3.  Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.
+2. Dans la fenêtre Sources de données **, sélectionnez Ajouter une nouvelle source de données** pour démarrer l'Assistant Configuration de source de données **.
 
-4.  Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :
+3. Sur le **choisir un Type de Source de données** s’affiche, sélectionnez **base de données**, puis sélectionnez **suivant**.
+
+4. Sur le **choisir votre connexion de données** , effectuez une des opérations suivantes :
 
     -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
          - ou -
 
-    -   Sélectionnez **nouvelle connexion** pour ouvrir le **Ajouter/modifier la connexion** boîte de dialogue.
+    -   Sélectionnez Nouvelle connexion **pour ouvrir la boîte de dialogue Ajouter/Modifier la connexion**.
 
-5.  Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.
+5. Si votre base de données requiert un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis sélectionnez **suivant**.
 
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application**, sélectionnez **suivant**.
+6. Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application**, sélectionnez **suivant**.
 
-7.  Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.
+7. Sur le **choisir vos objets de base de données** écran, développez le **Tables** nœud.
 
-8.  Sélectionnez le **clients** et **commandes** tables, puis sélectionnez **Terminer**.
+8. Sélectionnez le **clients** et **commandes** tables, puis sélectionnez **Terminer**.
 
-     Le **NorthwindDataSet** est ajouté à votre projet, et les tables apparaissent dans le **des Sources de données** fenêtre.
+     NorthwindDataSet **est ajouté à votre projet et les tables apparaissent dans la fenêtre Sources de données**.
 
 ## <a name="set-the-controls-to-be-created"></a>Définir les contrôles à créer
 
@@ -114,50 +113,50 @@ Pour cette procédure pas à pas, les données dans le `Customers` table se trou
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Pour définir le type de dépôt des éléments de la fenêtre Sources de données
 
-1.  Dans le **des Sources de données** fenêtre, développez le **clients** nœud.
+1. Dans le **des Sources de données** fenêtre, développez le **clients** nœud.
 
-2.  Sur le **clients** nœud, sélectionnez **détails** à partir de la liste de contrôle pour modifier le contrôle de la **clients** table par des contrôles individuels. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+2. Sur le **clients** nœud, sélectionnez **détails** à partir de la liste de contrôle pour modifier le contrôle de la **clients** table par des contrôles individuels. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Création d’un formulaire lié aux données
 
-Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers votre formulaire.
+Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre Sources de données** vers votre formulaire.
 
-1.  Faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre sur **Form1**.
+1. Faites glisser le nœud Customers **depuis la fenêtre Sources de données** vers Form1.
 
      Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.
 
-2.  Faites glisser le **commandes** nœud à partir de la **des Sources de données** fenêtre sur **Form1**.
+2. Faites glisser le nœud Orders **associé depuis la fenêtre Sources de données** vers Form1 **.
 
     > [!NOTE]
-    > Connexe **Orders** nœud se trouve sous le **télécopie** colonne et est un nœud enfant de la **clients** nœud.
+    > Le nœud Orders **associé est situé sous la colonne Fax** et constitue un nœud enfant du nœud Customers **.
 
      Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un `OrdersTableAdapter` et <xref:System.Windows.Forms.BindingSource> s’affichent dans la barre d’état du composant.
 
 ## <a name="add-code-to-update-the-database"></a>Ajouter du code pour mettre à jour de la base de données
 
-Vous pouvez mettre à jour la base de données en appelant le `Update` méthodes de la **clients** et **commandes** TableAdapters. Par défaut, un gestionnaire d’événements pour le **enregistrer** bouton de la<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer des mises à jour dans le bon ordre. Cela élimine le risque de lever des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
+Vous pouvez mettre à jour la base de données en appelant les méthodes `Update` des TableAdapters Customers **et Orders**. Par défaut, un gestionnaire d’événements pour le **enregistrer** bouton de la<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer des mises à jour dans le bon ordre. Cela élimine le risque de lever des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
 
 > [!NOTE]
 > Pour plus de clarté, cette procédure pas à pas n’utilise pas une transaction. Toutefois, si vous mettez à jour deux ou plusieurs tables connexes, inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées à une base de données sont réussies avant que toutes les modifications soient validées. Pour plus d’informations, consultez [Transactions et la concurrence](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
 ### <a name="to-add-update-logic-to-the-application"></a>Pour ajouter une logique de mise à jour à l'application
 
-1.  Sélectionnez le **enregistrer** situé dans le <xref:System.Windows.Forms.BindingNavigator>. Cette opération ouvre l’éditeur de Code pour le `bindingNavigatorSaveItem_Click` Gestionnaire d’événements.
+1. Sélectionnez le **enregistrer** situé dans le <xref:System.Windows.Forms.BindingNavigator>. Cette opération ouvre l’éditeur de Code pour le `bindingNavigatorSaveItem_Click` Gestionnaire d’événements.
 
-2.  Remplacez le code dans le gestionnaire d'événements pour appeler les méthodes `Update` des TableAdapters associés. Le code suivant crée d'abord trois tables de données temporaires pour contenir les informations mises à jour pour chaque <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> et <xref:System.Data.DataRowState.Modified>). Les mises à jour sont exécutées dans l’ordre approprié. Le code doit se présenter comme suit :
+2. Remplacez le code dans le gestionnaire d'événements pour appeler les méthodes `Update` des TableAdapters associés. Le code suivant crée d'abord trois tables de données temporaires pour contenir les informations mises à jour pour chaque <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> et <xref:System.Data.DataRowState.Modified>). Les mises à jour sont exécutées dans l’ordre approprié. Le code doit se présenter comme suit :
 
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
 ## <a name="test-the-application"></a>Tester l’application
 
-1.  Appuyez sur **F5**.
+1. Appuyez sur **F5**.
 
-2.  Apportez quelques modifications aux données d'un ou plusieurs enregistrements dans chaque table.
+2. Apportez quelques modifications aux données d'un ou plusieurs enregistrements dans chaque table.
 
-3.  Sélectionnez le **enregistrer** bouton.
+3. Sélectionnez le **enregistrer** bouton.
 
-4.  Vérifiez les valeurs figurant dans la base de données pour confirmer que les modifications ont bien été enregistrées.
+4. Vérifiez les valeurs figurant dans la base de données pour confirmer que les modifications ont bien été enregistrées.
 
 ## <a name="see-also"></a>Voir aussi
 

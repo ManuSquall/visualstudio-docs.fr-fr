@@ -1,6 +1,6 @@
 ---
-title: Utiliser des fichiers de vidage dans le débogueur Visual Studio | Microsoft Docs
-ms.custom: H1HackMay2017
+title: Utiliser des fichiers de vidage dans le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: MT
+ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296136"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066952"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers de vidage dans le débogueur Visual Studio
 
@@ -50,9 +50,9 @@ Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code mana
 
 -   Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien [dump complet en mode utilisateur](/windows/desktop/wer/collecting-user-mode-dumps) format. Un vidage complet en mode utilisateur n’est pas un dump avec tas.
 
--   Le débogage des fichiers dump de code optimisé peut faire l'objet de confusion. Par exemple, incorporation du compilateur des fonctions peut entraîner des piles d’appels inattendue et autres optimisations peuvent modifier la durée de vie des variables.
+-   Le débogage des fichiers dump de code optimisé peut faire l'objet de confusion. Par exemple, l’incorporation du compilateur des fonctions peut entraîner des piles d’appels inattendues et d’autres optimisations peuvent modifier la durée de vie des variables.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Fichiers dump avec ou sans tas
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Fichiers dump, avec ou sans tas
 
 Fichiers de vidage peuvent ou peut-être pas les informations de segment de mémoire.
 
@@ -75,13 +75,13 @@ Avec [débogage juste à temps](../debugger/just-in-time-debugging-in-visual-stu
 1. Accédez à un chemin d’accès et sélectionnez un nom pour le fichier de vidage, puis **enregistrer**. 
 
 >[!NOTE]
->Vous pouvez créer des fichiers dump avec n’importe quel programme prenant en charge le format minidump Windows. Par exemple, le **Procdump** utilitaire de ligne de commande à partir de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) peut créer des fichiers de vidage sur incident de processus basés sur des déclencheurs ou à la demande. Consultez [spécifications et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers de vidage.
+>Vous pouvez créer des fichiers dump avec n’importe quel programme prenant en charge le format minidump Windows. Par exemple, l’utilitaire en ligne de commande **Procdump** de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) peut créer des fichiers de processus de vidage sur incident sur des déclencheurs ou à la demande. Consultez [spécifications et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers de vidage.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Ouvrir un fichier dump
 
 1. Dans Visual Studio, sélectionnez **fichier** > **Open** > **fichier**.
 
-1. Dans le **ouvrir un fichier** boîte de dialogue, recherchez et sélectionnez le fichier de vidage. Il a généralement un *.dmp* extension. Sélectionnez **OK**.
+1. Dans la boîte de dialogue **Ouvrir un fichier**, localisez et sélectionnez le fichier dump. Il porte généralement une extension *.dmp*. Sélectionnez **OK**.
 
    Le **résumé du fichier Minidump** fenêtre affiche les informations résumé et le module pour le fichier de vidage et les actions que vous pouvez prendre.
 
@@ -96,7 +96,7 @@ Avec [débogage juste à temps](../debugger/just-in-time-debugging-in-visual-stu
 Pour utiliser complet de fonctionnalités sur un fichier de vidage de débogage Visual Studio a besoin :
 
 - Le *.exe* le dump a été créé pour des fichiers et autres fichiers binaires (DLL, etc.) que le processus de vidage utilisé.
-- Symbole (*.pdb*) des fichiers pour le *.exe* et autres fichiers binaires.
+- Fichiers de symboles (*.pdb*) pour le fichier *.exe* et d’autres fichiers binaires.
 - Le *.exe* et *.pdb* vider les fichiers qui correspondent exactement à la version et la génération des fichiers à la création.
 - Fichiers sources pour les modules appropriés. Vous pouvez utiliser le code machine des modules si vous ne trouvez pas les fichiers sources.
 
@@ -112,10 +112,10 @@ Visual Studio recherche automatiquement ces emplacements pour *.exe* fichiers qu
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Utilisez les pages non binaire, aucun symbole ou aucune Source trouvée
 
-Si Visual Studio ne peut pas trouver les fichiers qu’il a besoin déboguer un module dans le fichier de vidage, il affiche un **aucun binaire trouvé**, **aucun symbole trouvé**, ou **aucune Source trouvée** page. Ces pages fournissent des informations détaillées sur la cause du problème et fournissent des liens d’action qui peuvent vous aider à localiser les fichiers. Consultez [spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Si Visual Studio ne peut pas trouver les fichiers qu’il a besoin déboguer un module dans le fichier de vidage, il affiche un **aucun binaire trouvé**, **aucun symbole trouvé**, ou **aucune Source trouvée** page. Ces pages fournissent des informations détaillées sur la cause du problème et fournissent des liens d’action qui peuvent vous aider à localiser les fichiers. Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

@@ -1,5 +1,6 @@
 ---
 title: ID de composant et de charge de travail de Visual Studio Build Tools 2017
+titleSuffix: ''
 description: ID de composant et de charge de travail Visual Studio pour créer des applications Windows classiques
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607859"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063044"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Répertoire de composants Visual Studio Build Tools 2017
 
@@ -41,9 +42,9 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ## <a name="azure-development-build-tools"></a>Outils de build pour le développement Azure
 
-**ID :** Microsoft.VisualStudio.Workload.AzureBuildTools
+**ID :** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Description :** tâches et cibles MSBuild pour la création d’applications Azure.
+**Description :** Tâches et cibles MSBuild pour la génération d’applications Azure.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -87,7 +88,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Outils de développement .NET 
 
 **ID :** Microsoft.VisualStudio.Workload.DataBuildTools
 
-**Description :** générer des projets de base de données SQL Server
+**Description :** Générer des projets de base de données SQL Server
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -106,9 +107,9 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Outils d’analyse stat
 
 ## <a name="net-desktop-build-tools"></a>Outils de build pour applications de bureau .NET
 
-**ID :** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**ID :** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
-**Description :** outils permettant de générer des applications WPF, Windows Forms et console en C#, Visual Basic et F#.
+**Description :** Outils permettant de générer des applications WPF, Windows Forms et console en C#, Visual Basic et F#.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | compilateur F# | 15.8.27825.0
 
 **ID :** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**Description :** fournit les outils nécessaires pour générer des applications MSBuild.
+**Description :** Fournit les outils nécessaires pour générer des applications MSBuild.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -164,7 +165,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Vis
 
 **ID :** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**Description :** outils permettant de générer des applications en utilisant .NET Core, ASP.NET Core, HTML/JavaScript et des conteneurs.
+**Description :** Outils permettant de générer des applications en utilisant .NET Core, ASP.NET Core, HTML/JavaScript et des conteneurs.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -180,7 +181,7 @@ Microsoft.Net.Core.Component.SDK.1x | Outils de développement .NET Core 1.0 - 1
 
 **ID :** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Description :**  tâches et cibles MSBuild pour la génération d'applications réseau scalables via Node.js, un runtime JavaScript piloté par des événements asynchrones.
+**Description :** Tâches et cibles MSBuild pour la génération d’applications réseau scalables via Node.js, un runtime JavaScript piloté par des événements asynchrones.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -191,9 +192,9 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | SDK TypeScript 3.1 | 15.0.2821
 
 ## <a name="officesharepoint-build-tools"></a>Outils de build Office/SharePoint
 
-**ID :** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**ID :** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
-**Description :** générez des compléments Office et SharePoint, ainsi que des compléments VSTO.
+**Description :** Générez des compléments Office et SharePoint, ainsi que des compléments VSTO.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -231,9 +232,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Outils de développement .NET 
 
 ## <a name="universal-windows-platform-build-tools"></a>Outils de génération d’applications de plateforme Windows universelle
 
-**ID :** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**ID :** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**Description :** fournit les outils nécessaires à la génération d’applications de plateforme Windows universelle.
+**Description :** Fournit les outils nécessaires à la génération d’applications de plateforme Windows universelle.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -254,12 +255,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK Windows 10 (10.0.1024
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK Windows 10 (10.0.10586.0) | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK Windows 10 (10.0.14393.0) | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK Windows 10 (10.0.15063.0) pour plateforme desktop C++ [x86 et x64] | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK Windows 10 (10.0.15063.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK Windows 10 (10.0.15063.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Kit SDK Windows 10 (10.0.15063.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Kit SDK Windows 10 (10.0.15063.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [x86 et x64] | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [ARM et ARM64] | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK Windows 10 (10.0.16299.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK Windows 10 (10.0.16299.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Kit SDK Windows 10 (10.0.16299.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Kit SDK Windows 10 (10.0.16299.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | SDK Windows 10 (10.0.15063.0) | 15.8.27825.0 | Facultatif
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK Windows 10 (10.0.16299.0) | 15.8.27825.0 | Facultatif
 
@@ -267,7 +268,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK Windows 10 (10.0
 
 **ID :** Microsoft.VisualStudio.Workload.VCTools
 
-**Description :** générez des applications de bureau Windows via l'ensemble d'outils Microsoft C++, ATL ou MFC.
+**Description :** Générez des applications de bureau Windows via l’ensemble d’outils Microsoft C++, ATL ou MFC.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -295,12 +296,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK Windows 10 (10.0.1024
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK Windows 10 (10.0.10586.0) | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK Windows 10 (10.0.14393.0) | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK Windows 10 (10.0.15063.0) pour plateforme desktop C++ [x86 et x64] | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK Windows 10 (10.0.15063.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK Windows 10 (10.0.15063.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Kit SDK Windows 10 (10.0.15063.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Kit SDK Windows 10 (10.0.15063.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [x86 et x64] | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK Windows 10 (10.0.16299.0) pour plateforme desktop C++ [ARM et ARM64] | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK Windows 10 (10.0.16299.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK Windows 10 (10.0.16299.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Kit SDK Windows 10 (10.0.16299.0) pour UWP : C#, VB, JS | 15.6.27406.0 | Facultatif
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Kit SDK Windows 10 (10.0.16299.0) pour UWP : C++ | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.Windows81SDK | SDK Windows 8.1 | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.Component.WinXP | Prise en charge de Windows XP pour C++ | 15.8.27924.0 | Facultatif
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK Windows 8.1 et SDK UCRT | 15.6.27406.0 | Facultatif
@@ -312,7 +313,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK Windows 10 (10.0
 
 **ID :** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**Description :** outils pour la génération de composants additionnels et d'extensions pour Visual Studio, notamment des nouvelles commandes, des analyseurs de code et des fenêtres Outil.
+**Description :** Outils pour la génération de composants additionnels et d’extensions pour Visual Studio, notamment des nouvelles commandes, des analyseurs de code et des fenêtres Outil.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -338,7 +339,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Outils VC++ 2017 version 15.
 
 **ID :** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Description :** tâches et cibles MSBuild pour la création d’applications web.
+**Description :** Tâches et cibles MSBuild pour créer des applications web.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -381,9 +382,9 @@ Microsoft.Net.Core.Component.SDK.1x | Outils de développement .NET Core 1.0 - 1
 
 ## <a name="mobile-development-with-net"></a>Développement mobile en .NET
 
-**ID :** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**ID :** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**Description :** outils permettant de générer des applications multiplateformes pour iOS, Android et Windows en C# et F#.
+**Description :** Outils permettant de générer des applications multiplateformes pour iOS, Android et Windows en C# et F#.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 

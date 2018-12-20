@@ -9,12 +9,12 @@ description: La connexion peut échouer si des alias ou des noms conviviaux sont
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854466"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817436"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 
@@ -24,7 +24,7 @@ Selon le type de compte utilisé pour la connexion, les abonnements disponibles 
 
 L’utilisation d’alias fait référence aux utilisateurs qui emploient des identités différentes pour se connecter à Windows (ou à leur compte Active Directory) et accéder à leur messagerie électronique.
 
-Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa connexion active (comme JohnD@contoso.com), mais les utilisateurs accèdent à leurs comptes de messagerie à l’aide d’alias ou de noms conviviaux (comme John.Doe@contoso.com).  Pour de nombreux clients qui gèrent leurs abonnements à travers le Centre de gestion des licences en volume (VLSC), cela peut se traduire par un échec de la connexion, car l’adresse e-mail fournie (John.Doe@contoso.com) ne correspond pas à l’adresse d’annuaire (JohnD@contoso.com) requise pour une authentification correcte via l’option « Compte professionnel ou scolaire ».
+Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa connexion active (comme JohnD@contoso.com), mais les utilisateurs accèdent à leurs comptes de messagerie à l’aide d’alias ou de noms conviviaux (comme John.Doe@contoso.com). Pour de nombreux clients qui gèrent leurs abonnements à travers le Centre de gestion des licences en volume (VLSC), cela peut se traduire par un échec de la connexion, car l’adresse e-mail fournie (John.Doe@contoso.com) ne correspond pas à l’adresse d’annuaire (JohnD@contoso.com) requise pour une authentification correcte via l’option « Compte professionnel ou scolaire ».
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>En tant qu’administrateur, quelles options ai-je à ma disposition ?
 
@@ -33,15 +33,15 @@ En tant qu’administrateur, vous avez deux options pour garantir à vos abonné
 - La deuxième option (moins sécurisée) consiste à permettre à vos abonnés d’associer leur adresse e-mail « professionnelle ou scolaire » à un compte « personnel » (également appelé compte Microsoft ou MSA). Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account ) de cet article.
 
 > [!NOTE]
-> Dès que votre entreprise aura migré vers le nouveau [portail de gestion](https://manage.visualstudio.com) des abonnements Visual Studio, vous pourrez bénéficier de la nouvelle expérience d’administration qui permet de fournir à la fois des adresses e-mail et des adresses d’annuaire en tant qu’éléments de profil des abonnés.  Découvrez-en plus sur [la migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+> Dès que votre entreprise aura migré vers le nouveau [portail de gestion](https://manage.visualstudio.com) des abonnements Visual Studio, vous pourrez bénéficier de la nouvelle expérience d’administration qui permet de fournir à la fois des adresses e-mail et des adresses d’annuaire en tant qu’éléments de profil des abonnés. Découvrez-en plus sur [la migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>En tant qu’abonné, quelles sont mes options ?
 
-En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise.  Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise.  Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action.  Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account ) de cet article.
+En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise. Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action. Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account) de cet article.
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>Attribution d’abonnés à un compte d’annuaire
 
-Dans tous les cas, le Gestionnaire d’abonnements du Centre de gestion des licences en volume (VLSC) doit utiliser l’adresse d’annuaire pour les nouveaux abonnés ou mettre à jour l’adresse e-mail pour les abonnés « existants ».  Il est important de souligner le fait que quand l’adresse d’annuaire est utilisée, les nouveaux abonnés ne reçoivent pas de message de bienvenue. L’administrateur doit par conséquent notifier l’abonné qu’un abonnement lui a été attribué.  Après avoir effectué les étapes ci-dessous, vous pouvez, si vous le souhaitez, utiliser le [modèle](#notifying-your-subscribers-with-directory-addresses) de message électronique pour notifier vos abonnés et les aider à réaliser le processus de connexion.
+Dans tous les cas, le Gestionnaire d’abonnements du Centre de gestion des licences en volume (VLSC) doit utiliser l’adresse d’annuaire pour les nouveaux abonnés ou mettre à jour l’adresse e-mail pour les abonnés « existants ». Il est important de souligner le fait que quand l’adresse d’annuaire est utilisée, les nouveaux abonnés ne reçoivent pas de message de bienvenue. L’administrateur doit par conséquent notifier l’abonné qu’un abonnement lui a été attribué. Après avoir effectué les étapes ci-dessous, vous pouvez, si vous le souhaitez, utiliser le [modèle](#notifying-your-subscribers-with-directory-addresses) de message électronique pour notifier vos abonnés et les aider à réaliser le processus de connexion.
 
 ### <a name="adding-new-subscribers"></a>Ajout de nouveaux abonnés
 
@@ -88,7 +88,7 @@ Suivez les étapes ci-dessous pour mettre à jour un abonné existant avec un co
 
 Bonjour %NOM DE L’ABONNÉ%,
 
-Un abonnement Visual Studio vous a été attribué.  Consultez https://my.visualstudio.com et connectez-vous avec votre adresse %DIRECTORY ADDRESS% pour activer votre abonnement et y accéder.
+Un abonnement Visual Studio vous a été attribué. Consultez https://my.visualstudio.com et connectez-vous avec votre adresse %DIRECTORY ADDRESS% pour activer votre abonnement et y accéder.
 
 Si vous rencontrez des problèmes, contactez l’équipe de support technique (https://visualstudio.microsoft.com/subscriptions/support/).
 
@@ -99,8 +99,6 @@ En bas de la page, sélectionnez les options suivantes :
    - Sélectionnez l’option de support assisté souhaitée
 
 ----------- Fin du texte -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Définition d’un compte professionnel ou scolaire comme compte personnel
 

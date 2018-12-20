@@ -1,5 +1,5 @@
 ---
-title: Refactoriser un changement de nom dans Visual Studio
+title: Refactoriser - Renommer
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295954"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063151"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
 
@@ -29,11 +29,11 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** vous permet de renommer des identificateurs pour des symboles de code, tels que des champs, variables locales, méthodes, espaces de noms, propriétés et types.
+**Quoi :** Vous permet de renommer des identificateurs pour des symboles de code, tels que des champs, variables locales, méthodes, espaces de noms, propriétés et types.
 
-**Quand :** vous voulez renommer en toute sécurité un élément sans avoir à rechercher toutes les instances et à copier/coller le nouveau nom.
+**Quand :** Vous voulez renommer en toute sécurité un élément sans avoir à rechercher toutes les instances et à copier/coller le nouveau nom.
 
-**Pourquoi :** un copier-coller du nouveau nom dans un projet entier entraînera probablement des erreurs. Cet outil de refactorisation effectuera avec précision le changement de nom.
+**Pourquoi :** Un copier-coller du nouveau nom dans un projet entier entraînera probablement des erreurs. Cet outil de refactorisation effectuera avec précision le changement de nom.
 
 ## <a name="how-to"></a>Procédure
 

@@ -1,6 +1,6 @@
 ---
 title: Déboguer des applications de production ASP.NET Azure
-ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
+description: Découvrez comment définir des points d’ancrage et afficher les captures instantanées avec le débogueur de capture instantanée.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154461"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056916"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de capture instantanée
 
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Débogueur de capture instantanée est uniquement disponible pour Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement ASP.NET et web**. Pour ASP.NET Core, vous devez également le. **Développement NET Core** charge de travail installée.
+* Débogueur de capture instantanée est uniquement disponible pour Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement ASP.NET et web**. Pour ASP.NET Core, vous devez également le **développement .NET Core** charge de travail installée.
 
     S’il n’est pas déjà installé, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de capture instantanée le **charge de travail de développement ASP.NET et web**.
 
@@ -114,7 +114,7 @@ S’il est difficile de recréer un état particulier dans votre application, co
 
 1. Cliquez sur une icône de point d’ancrage (la balle creuse) et choisissez **paramètres**.
 
-   ![Choisir les paramètres](../debugger/media/snapshot-snappoint-settings.png)
+   ![Choisir des paramètres](../debugger/media/snapshot-snappoint-settings.png)
 
 1. Dans la fenêtre Paramètres de point d’ancrage, tapez une expression.
 

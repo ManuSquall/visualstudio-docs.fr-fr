@@ -1,5 +1,5 @@
 ---
-title: Commandes Visual Studio
+title: Commandes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879002"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063459"
 ---
 # <a name="visual-studio-commands"></a>Commandes Visual Studio
+
 Les commandes Visual Studio vous permettent d’appeler une commande depuis la fenêtre **Commande** , depuis la fenêtre **Exécution** ou depuis la zone **Rechercher/Commande** . Dans chaque cas, le signe Supérieur à (`>`) est utilisé pour indiquer qu’une commande doit suivre, et non pas une opération de recherche ou de débogage.
 
- Vous pouvez trouver une liste complète des commandes et leur syntaxe dans la boîte de dialogue **Clavier, Options d’environnement** .
+Vous pouvez trouver une liste complète des commandes et leur syntaxe dans la boîte de dialogue **Clavier, Options d’environnement** .
 
- Le caractère d’échappement pour les commandes Visual Studio est un caractère d’accent circonflexe (^), ce qui signifie que le caractère qui le suit immédiatement est interprété littéralement et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
+Le caractère d’échappement pour les commandes Visual Studio est un caractère d’accent circonflexe (^), ce qui signifie que le caractère qui le suit immédiatement est interprété littéralement et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré.
+Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré.
 
- Dans les versions localisées de l’IDE, les noms des commandes peuvent être entrés dans la langue native de l’IDE ou en anglais. Par exemple, vous pouvez taper `File.NewFile` ou `Fichier.NouveauFichier` dans l’IDE localisé en français pour exécuter la même commande.
+Dans les versions localisées de l’IDE, les noms des commandes peuvent être entrés dans la langue native de l’IDE ou en anglais. Par exemple, vous pouvez taper `File.NewFile` ou `Fichier.NouveauFichier` dans l’IDE localisé en français pour exécuter la même commande.
 
- De nombreuses commandes ont des alias. Pour obtenir la liste des alias de commande, consultez [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
+De nombreuses commandes ont des alias. Pour obtenir la liste des alias de commande, consultez [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
 
- Les commandes suivantes prennent des arguments et/ou des commutateurs.
-
+Les commandes suivantes prennent des arguments et/ou des commutateurs.
 
 | Nom de la commande | Description |
 | - | - |

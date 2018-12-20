@@ -1,5 +1,5 @@
 ---
-title: Tests de performances web codés dans Visual Studio
+title: Tests de performances web codés
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,16 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f57d22963aa5078d3947bc94d3077c1e24534481
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295564"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067840"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
 Les tests de performances web sont enregistrés lors de la navigation au sein de votre application web. Les tests sont inclus dans les tests de charge afin de mesurer les performances de votre application web soumise à l’activité de plusieurs utilisateurs. Un test de performances de site web peut être converti en un script basé sur le code que vous pouvez modifier et personnaliser comme tout autre code source. Par exemple, vous pouvez ajouter des boucles et des branchements.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="generate-a-coded-web-performance-test"></a>Générer un test de performances Web codé
 
@@ -85,16 +87,16 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 ## <a name="qa"></a>Questions et réponses
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q : Puis-je exécuter plusieurs tests simultanément ?
- **R :** Oui, utilisez le menu contextuel dans l’**Explorateur de solutions**.
+ **R :** Oui, utilisez le menu contextuel dans l’**Explorateur de solutions**.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter une source de données avant ou après la génération d'un test codé ?
- **R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code sera généré automatiquement pour vous.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter une source de données avant ou après la génération d’un test codé ?
+ **R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code est généré automatiquement pour vous.
 
  Lorsque vous exécutez un test codé avec une source de données, le message d'erreur suivant peut s'afficher :
 
- **Impossible d’exécuter le test \<nom du test> sur l’agent de \<nom de l’ordinateur> : référence d’objet non définie sur une instance d’un objet.**
+ **Impossible d’exécuter le test \<Nom du test > sur l’agent \<Nom de l’ordinateur> : La référence d’objet n’a pas la valeur d’une instance d’un objet.**
 
  Cette erreur peut se produire parce qu'un DataSourceAttribute a été défini pour la classe de test, sans DataBindingAttribute correspondant. Pour résoudre cette erreur, ajoutez un DataBindingAttribute approprié, supprimez-le ou commentez-le hors du code.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter des règles de validation et d’extraction avant ou après la génération d’un test codé ?
- **R :** Il est plus facile d’ajouter des règles de validation et d’extraction avant de générer le test codé. Cependant, nous vous recommandons d’utiliser des [tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) à des fins de validation.
+ **R :** Il est plus facile d’ajouter des règles de validation et d’extraction avant de générer le test codé. Toutefois, nous vous recommandons d’utiliser des [tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) à des fins de validation.

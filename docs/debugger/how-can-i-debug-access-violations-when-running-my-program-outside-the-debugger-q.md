@@ -1,6 +1,6 @@
 ---
-title: Comment puis-je déboguer les violations d'accès lorsque mon programme fonctionne hors du débogueur ? | Microsoft Docs
-ms.custom: ''
+title: Déboguer les violations d’accès lors de l’exécution d’une application en dehors du débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,20 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47941b2d98029c6466451fb947e31e71d14e6c57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 42284de1195afb3b0926b15335c8e37bdcd5ec30
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473008"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048474"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Comment puis-je déboguer les violations d'accès lorsque mon programme fonctionne hors du débogueur ?
+
 ## <a name="problem-description"></a>Description du problème  
  Mon programme fonctionne correctement dans l'environnement Visual Studio, mais lorsque je l'exécute de façon autonome avec le système d'exploitation Windows, il génère une violation d'accès. Comment puis-je corriger cette erreur ?  
   
 ## <a name="solution"></a>Solution  
- Définir le [juste-à-temps débogage](../debugger/just-in-time-debugging-in-visual-studio.md) option et exécuter votre programme de façon autonome jusqu'à ce que la violation d’accès se produit. Puis, dans le **Violation d’accès** boîte de dialogue, vous pouvez cliquer sur **Annuler** pour démarrer le débogueur.  
+ Paramétrez l’option [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md) et exécutez votre programme de façon autonome jusqu’à ce que la violation d’accès se produise. Dans la boîte de dialogue **Violation d’accès**, vous pouvez ensuite cliquer sur **Annuler** afin de démarrer le débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Foire aux questions de débogage du Code natif](../debugger/debugging-native-code-faqs.md)   
+ [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

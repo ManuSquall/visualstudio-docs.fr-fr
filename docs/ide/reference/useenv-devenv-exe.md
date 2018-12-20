@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6d04064b9912fbd0592fcaeffd179016ef38c1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a11d8eceec682e37f9bf34c79980c37880bdbe6
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944539"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948489"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,4 +51,4 @@ Devenv.exe /useenv
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+* [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

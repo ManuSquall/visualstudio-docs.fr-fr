@@ -1,5 +1,5 @@
 ---
-title: Ajouter une règle de seuil pour un test de charge dans Visual Studio
+title: Ajouter une règle de seuil pour un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179877"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063368"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Guide pratique pour ajouter une règle de seuil à l’aide de l’éditeur de test de charge
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procédure : ajouter une règle de seuil à l’aide de l’éditeur de test de charge
 
 Les règles de seuil contenues dans des tests de charge comparent une valeur de compteur de performance à une valeur de constante ou une autre valeur de compteur de performance.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-threshold-rule"></a>Pour ajouter une règle de seuil
 
@@ -36,7 +38,7 @@ Les règles de seuil contenues dans des tests de charge comparent une valeur de 
 
      La boîte de dialogue **Ajouter une règle de seuil** s’affiche.
 
-5.  Vous pouvez choisir parmi deux types de règles : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
+5.  Vous avez le choix entre deux types de règle : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
 
     > [!NOTE]
     > Affectez à la propriété **Alerte en cas de dépassement** la valeur **True** pour indiquer que le dépassement d’un seuil constitue un problème, ou la valeur **False** pour indiquer que le fait de ne pas atteindre un seuil constitue un problème.

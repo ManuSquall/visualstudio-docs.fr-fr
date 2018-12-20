@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour changer les polices et les couleurs utilisées dans Visual Studio
+title: Changer les polices et les couleurs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb7e762c15b99492bda03d5300af398552cfd01
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942167"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067639"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Guide pratique pour changer les polices et les couleurs utilisées dans Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procédure : changer les polices et les couleurs utilisées dans Visual Studio
 
 Vous pouvez personnaliser la couleur des fenêtres d'outils et du cadre de l'environnement IDE de Visual Studio de différentes façons.
 
 > [!TIP]
-> Pour plus d’informations sur la façon de changer les couleurs de l’éditeur de code, consultez [Guide pratique pour changer les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Pour plus d’informations sur la façon de modifier les couleurs de l’éditeur de code, consultez [Guide pratique pour changer les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="change-the-color-theme-of-the-ide"></a>Changer le thème de couleur de l’IDE
+## <a name="change-the-color-theme-of-the-ide"></a>Modifier le thème de couleur de l’environnement IDE
 
 1. Dans la barre de menus, choisissez **Outils** > **Options**.
 

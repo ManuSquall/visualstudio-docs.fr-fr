@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926187"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257249"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
   
- Les sections suivantes fournissent plus d’informations sur les expressions dans différents langages.  
+ Les sections suivantes décrivent les limitations de l’évaluation d’expression pour les langues prises en charge par Visual Studio.
   
 ## <a name="f-expressions-are-not-supported"></a>Les expressions F# ne sont pas prises en charge.  
  Les expressions F# ne sont pas reconnues Si vous déboguez du code F#, vous devez traduire vos expressions en syntaxe C# avant d’introduire les expressions dans une boîte de dialogue ou fenêtre de débogueur. Quand vous traduisez des expressions de F# en C#, gardez à l’esprit que C# utilise l’opérateur `==` pour tester l’égalité, tandis que F# utilise un seul `=`.  

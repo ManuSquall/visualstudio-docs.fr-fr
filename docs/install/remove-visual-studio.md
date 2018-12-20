@@ -1,7 +1,8 @@
 ---
-title: Supprimer Visual Studio 2017 │ Microsoft Docs
+title: Supprimer Visual Studio
+titleSuffix: ''
 description: Découvrez comment supprimer complètement Visual Studio de votre ordinateur, étape par étape.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/12/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -21,14 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: fb3f86c59f205137dc3b72c8f0beff69f4d95a99
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382764"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159657"
 ---
-# <a name="remove-visual-studio"></a>Supprimer Visual Studio
+# <a name="remove-visual-studio-2017"></a>Supprimer Visual Studio 2017
 
 Si vous rencontrez une erreur grave et ne parvenez pas à réparer ou à désinstaller Visual Studio, vous pouvez exécuter l’outil `InstallCleanup.exe` pour supprimer les fichiers d’installation et les informations produit de toutes les instances installées de Visual Studio 2017 (et versions ultérieures). Cet outil ne doit être exécuté qu’en dernier recours, lorsque la réparation ou la désinstallation échouent. En effet, l’outil peut désinstaller des fonctionnalités d’autres installations de Visual Studio ou d’autres produits qui doivent être réparés.
 

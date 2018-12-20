@@ -1,8 +1,9 @@
 ---
-title: Exemples de paramètres de ligne de commande pour l’installation de Visual Studio
+title: Exemples de paramètres de ligne de commande pour l’installation
 description: Personnalisez ces exemples pour créer votre propre installation en ligne de commande de Visual Studio.
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de5e7f194fff87b5148a2262925d3ac5c4287293
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895481"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160151"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Exemples de paramètres de ligne de commande pour l’installation de Visual Studio 2017
 
@@ -128,6 +129,39 @@ Ces paramètres de ligne de commande sont **nouveaux dans 15.7**. Pour plus d’
 * Utilisation du chemin install uniquement :
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+
+## <a name="using-export"></a>Utilisation d’export
+
+Cette commande de ligne de commande est **nouvelle dans la version 15.9**. Pour plus d’informations à son sujet, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+* Utilisation d’export pour enregistrer la sélection à partir d’une installation :
+
+```cmd
+vs_enterprise.exe export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* Utilisation d’export pour enregistrer une sélection personnalisée à partir de zéro :
+
+```cmd
+vs_enterprise.exe export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>Utilisation de --config
+
+Ce paramètre de ligne de commande est **nouveau dans la version 15.9**. Pour plus d’informations à son sujet, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+* Utilisation de --config pour installer les composants et charges de travail à partir d’un fichier de configuration d’installation enregistré :
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* Utilisation de --config pour ajouter des composants et charges de travail à une installation existante :
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

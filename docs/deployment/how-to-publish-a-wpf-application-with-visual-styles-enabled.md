@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830052"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388106"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Comment : publier une application WPF avec les styles visuels activés
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Guide pratique pour publier une application WPF avec les styles visuels activés
 Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution provoque une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec les styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble de styles visuels](/windows/desktop/Controls/visual-styles-overview). Pour plus d’informations sur le message d’erreur, consultez [résoudre les erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Pour résoudre l’erreur et publiez la solution, vous devez effectuer les tâches suivantes :  
@@ -39,7 +39,11 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
      Par défaut, les styles visuels ne sont pas activés.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Les procédures suivantes montrent comment ouvrir le fichier manifest associé à votre projet.  
@@ -54,7 +58,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
          Le fichier App.manifest s’ouvre dans le **éditeur de Code**.  
   
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Pour ouvrir le fichier manifeste dans un projet c#  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Pour ouvrir le fichier manifeste dans un C# projet  
   
     1.  Dans la barre de menus, choisissez **projet**, *nom_projet* **propriétés**, où *nom_projet* est le nom de votre projet WPF.  
   
@@ -65,7 +69,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
         > [!NOTE]
         >  Si **manifeste incorporé avec les paramètres par défaut** ou **créer une application sans manifeste** apparaissent dans le champ de manifeste, les styles visuels ne sont pas activés. Si le nom d’un fichier manifeste apparaît dans le champ de manifeste, passez à l’étape suivante de cette procédure.  
   
-    3.  Dans **l’Explorateur de solutions**, choisissez **afficher tous les fichiers**.  
+    3.  Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.  
   
          Ce bouton affiche tous les éléments de projet, y compris ceux qui ont été exclus et ceux qui sont normalement masqués. Le fichier manifest apparaît comme un élément de projet.  
   
@@ -78,7 +82,18 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
      Ce fichier XML décrit l’assembly qui contient les contrôles qui prennent en charge les styles visuels.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  Dans le bloc-notes, cliquez sur **fichier**, puis cliquez sur **Enregistrer sous**.  
@@ -165,5 +180,5 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
 -[Dépannage d’erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Vue d’ensemble de Styles visuels](/windows/desktop/Controls/visual-styles-overview)
-- [Activation des Styles visuels](/windows/desktop/Controls/cookbook-overview)
+- [Activation des styles visuels](/windows/desktop/Controls/cookbook-overview)
 - [Invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs)

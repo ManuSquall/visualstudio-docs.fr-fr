@@ -1,7 +1,7 @@
 ---
-title: 'Tutoriel : Déboguer du code managé et du code natif (mode mixte)'
+title: 'Tutoriel : Déboguer du code C# et C++ (mode mixte)'
 description: Découvrez comment déboguer une DLL native d’une application .NET Core ou .NET Framework avec le débogage en mode mixte
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,20 +16,20 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051447"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code managé et du code natif dans la même session de débogage
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et C++ dans la même session de débogage
 
 Visual Studio vous permet d’activer plusieurs types de débogueur dans une session de débogage, qui est appelée « débogage en mode mixte ». Dans ce tutoriel, vous découvrez comment déboguer du code managé et du code natif dans une même session de débogage. 
 
 Ce tutoriel montre comment déboguer le code natif d’une application managée, mais vous pouvez également [déboguer le code managé d’une application native](../debugger/how-to-debug-in-mixed-mode.md). Le débogueur prend également en charge d’autres types de débogage en mode mixte, comme le débogage [de code Python et de code natif](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), ainsi que l’utilisation du débogueur de script dans des types d’applications comme ASP.NET.
 
-Dans ce tutoriel, vous allez effectuer les actions suivantes :
+Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Créer une DLL native simple

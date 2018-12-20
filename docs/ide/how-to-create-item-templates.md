@@ -1,5 +1,5 @@
 ---
-title: Créer des modèles d’élément pour Visual Studio
+title: Créer des modèles d’élément
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954660"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062455"
 ---
-# <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
+# <a name="how-to-create-item-templates"></a>Procédure : Créer des modèles d’élément
 
-Cet article vous montre comment créer un modèle d’élément à l’aide de l’**Assistant Exportation de modèle**. Si votre modèle comprend plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md).
+Cet article vous montre comment créer un modèle d’élément à l’aide de l’**Assistant Exportation de modèle**. Si votre modèle comprend plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Pour ajouter un modèle d’élément utilisateur à la boîte de dialogue Ajouter un nouvel élément
 
@@ -26,7 +26,7 @@ Cet article vous montre comment créer un modèle d’élément à l’aide de l
 
 1. Ajoutez un élément au projet et modifiez-le si vous le souhaitez.
 
-1. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d'informations, voir [Procédure : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. Dans le menu **Projet**, choisissez **Exporter le modèle**.
 
@@ -123,10 +123,10 @@ Dans certains cas, vous pouvez avoir envie de créer un modèle d’élément ma
 
 1. Dans l’**Explorateur Windows**, sélectionnez les fichiers à inclure dans votre modèle. Cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier *.zip*.
 
-1. Copiez le fichier *.zip*, puis collez-le à l’emplacement du modèle d’élément utilisateur. Dans Visual Studio 2017, le répertoire par défaut est *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles de projet et d’élément](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiez le fichier *.zip*, puis collez-le à l’emplacement du modèle d’élément utilisateur. Dans Visual Studio 2017, le répertoire par défaut est *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Pour plus d'informations, voir [Procédure : localiser et organiser des modèles de projet et d’élément](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Guide pratique pour créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md)
+- [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md)
 - [Informations de référence sur les schémas de modèles Visual Studio (extensibilité)](../extensibility/visual-studio-template-schema-reference.md)

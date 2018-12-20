@@ -1,5 +1,5 @@
 ---
-title: Comparaison des résultats des tests de charge dans Visual Studio
+title: Comparaison des résultats des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834279"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066442"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Créer des rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse des tendances
 
-Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests. Deux types de rapports de test de charge sont disponibles :
+Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Deux types de rapports de test de charge sont disponibles :
 
 - Exécuter la comparaison&mdash;Ce rapport correspond en réalité à deux rapports qui présentent des données de comparaison côte à côte sous forme de tableaux et de graphiques à barres.
 
@@ -33,14 +37,14 @@ Les définitions des rapports sont stockées dans la base de données de tests d
 Le fichier de feuille de calcul peut être partagé avec les parties prenantes sans que ceux-ci aient à se connecter à la base de données pour consulter le rapport.
 
 > [!NOTE]
-> Si vous ajoutez des commentaires à un test de charge, ils s'affichent dans le rapport Excel. Pour plus d’informations, consultez [Guide pratique pour ajouter des commentaires pendant l’analyse d’un test de charge terminé](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Si vous ajoutez des commentaires à un test de charge, ils apparaissent dans le rapport Excel.
 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
 |-|-|
 |**Créer un rapport sur les tests de performances et de contrainte :** vous pouvez créer des rapports sur vos tests de performances web et de charge avec Microsoft Excel.|- [Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Créer manuellement un rapport de performances et de contrainte avec Microsoft Word :** vous pouvez créer manuellement des rapports sur vos tests de performances web et de charge en copiant et en collant les données de synthèse, de table et de graphique dans un document Microsoft Word.|- [Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Créer manuellement un rapport de performances et de contrainte avec Microsoft Word :** vous pouvez créer manuellement des rapports sur vos tests de performances web et de charge en copiant et en collant les données de synthèse, de table et de graphe dans un document Microsoft Word.|- [Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

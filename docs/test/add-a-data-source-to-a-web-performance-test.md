@@ -1,5 +1,5 @@
 ---
-title: Ajouter une source de données à un test de performances web dans Visual Studio
+title: Ajouter une source de données à un test de performances de site Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295096"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065205"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
 Liez les données pour fournir différentes valeurs au même test, par exemple, pour fournir différentes valeurs à vos paramètres de publication de formulaire.
 
- ![Lier les données à un test des performances de site web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Nous allons utiliser un exemple d'application ASP.NET. Elle contient trois pages *.aspx* : la page par défaut, une page rouge et une page bleue. La page par défaut a une case d'option pour choisir Rouge ou Bleu et un bouton Envoyer. Les deux autres pages *.aspx* sont simples. L'une a une étiquette nommée Rouge et l'autre a une étiquette nommée Bleu. Lorsque vous choisissez Envoyer sur la page par défaut, nous affichons l'une des autres pages. Vous pouvez télécharger l’exemple [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplement suivre les étapes avec votre propre application web.
+![Lier les données à un test des performances de site web](../test/media/web_test_databinding_conceptual.png)
 
- ![Exécution de l'application web à tester](../test/media/web_test_databinding_runwebapp.png)
+Nous allons utiliser un exemple d'application ASP.NET. Elle contient trois pages *.aspx* : la page par défaut, une page rouge et une page bleue. La page par défaut a une case d'option pour choisir Rouge ou Bleu et un bouton Envoyer. Les deux autres pages *.aspx* sont simples. L'une a une étiquette nommée Rouge et l'autre a une étiquette nommée Bleu. Lorsque vous choisissez Envoyer sur la page par défaut, nous affichons l'une des autres pages. Vous pouvez télécharger l’exemple [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplement suivre les étapes avec votre propre application web.
 
- Votre solution doit également inclure un test de performances web qui parcourt les pages de l’application web.
+![Exécution de l'application web à tester](../test/media/web_test_databinding_runwebapp.png)
 
- ![Solution avec le test des performances de site web](../test/media/web_test_databinding_solution.png)
+Votre solution doit également inclure un test de performances web qui parcourt les pages de l’application web.
+
+![Solution avec le test des performances de site web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Créer une base de données SQL
 
@@ -124,7 +126,7 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q : Quelles bases de données puis-je utiliser comme source de données ?
 
-**R :** Vous pouvez utiliser :
+**R :** Vous pouvez utiliser :
 
 - Microsoft SQL Azure.
 
@@ -138,9 +140,9 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
 - Oracle 7.3, 8i, 9i ou 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Q : Comment utiliser un fichier texte de valeurs séparées par des virgules (CSV) comme source de données ?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Q : Comment utiliser un fichier texte au format CSV (valeurs séparées par des virgules) comme source de données ?
 
-**R :** Voici comment procéder :
+**R :** Voici comment :
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 
@@ -162,9 +164,9 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
      ![Entrer un nom et choisir Fichier CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q : Que se passe-t-il si le fichier CSV existant ne contient pas d'en-têtes de colonne ?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q : Que se passe-t-il si le fichier CSV existant ne contient pas d’en-têtes de colonne ?
 
-**R :** Si vous ne pouvez pas ajouter des en-têtes de colonnes, vous pouvez utiliser un fichier de description de schéma pour traiter le fichier CSV comme une base de données.
+**R :** Si vous ne pouvez pas ajouter d’en-têtes de colonnes, vous pouvez utiliser un fichier de description de schéma pour traiter le fichier CSV en tant que base de données.
 
 1. Ajoutez un nouveau fichier texte nommé *schema.ini*.
 
@@ -213,9 +215,9 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
      ![Source de données ajoutée au test](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
 
-**R :** Oui.
+**R :** Oui.
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 
@@ -245,9 +247,9 @@ Liez les données pour fournir différentes valeurs au même test, par exemple, 
 
      ![Entrer un nom et choisir Fichier XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q : Puis-je ajouter la liaison de données à une requête de service Web qui utilise SOAP ?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q : Puis-je ajouter la liaison de données à une requête de service web qui utilise SOAP ?
 
-**R :** Oui, vous devez modifier le code XML SOAP manuellement.
+**R :** Oui, vous devez changer le code XML SOAP manuellement.
 
 1. Choisissez la requête de service Web dans l’arborescence des requêtes et dans la fenêtre Propriétés, choisissez le bouton de sélection (...) dans la propriété Corps chaîne.
 

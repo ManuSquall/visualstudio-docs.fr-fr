@@ -1,22 +1,23 @@
 ---
-title: Débogage de code Python sur des ordinateurs Linux distants
-description: Guide pratique pour utiliser Visual Studio pour déboguer du code Python exécuté sur des ordinateurs Linux distants, y compris les étapes de configuration nécessaires, la sécurité et le dépannage.
-ms.date: 10/15/2018
+title: Déboguer du code Python sur des ordinateurs Linux distants
+description: Utilisez Visual Studio pour déboguer du code Python exécuté sur des ordinateurs Linux distants. Découvrez notamment les informations relatives aux étapes de configuration nécessaires, à la sécurité et au dépannage.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356767"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067944"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 
@@ -26,7 +27,7 @@ Lorsque vous utilisez ptvsd, le code Python faisant l’objet du débogage hébe
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, regardez la vidéo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 min 22 s), qui s’applique à Visual Studio 2015 et 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Configurer un ordinateur Linux
 
@@ -106,7 +107,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. Visual Studio passe alors en mode débogage. Le script continue à s’exécuter sur l’ordinateur distant pour fournir toutes les fonctionnalités de [débogage](debugging-python-in-visual-studio.md) habituelles. Par exemple, définissez un point d’arrêt sur la ligne `if guess < number:`, puis basculez sur l’ordinateur distant et entrez une autre hypothèse. Après cela, Visual Studio sur votre ordinateur local s’arrête au point d’arrêt défini, affiche les variables locales, et ainsi de suite :
 
-    ![Le point d’arrêt est atteint](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio interrompt le débogage quand le point d’arrêt est atteint.](media/remote-debugging-breakpoint-hit.png)
 
 1. Quand vous arrêtez le débogage, Visual Studio se détache du programme, qui continue à s’exécuter sur l’ordinateur distant. ptvsd poursuit également l’écoute des attachements de débogueurs, pour vous permettre de rattacher le processus à tout moment.
 
@@ -121,8 +122,8 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
     | Version de Visual Studio | Version des outils Python/ptvsd |
     | --- | --- |
-    | 2017 15.8 | 4.1.1a9 (débogueur hérité : 3.2.1.0) |
-    | 2017 15.7 | 4.1.1a1 (débogueur hérité : 3.2.1.0) |
+    | 2017 15.8 | 4.1.1a9 (débogueur hérité : 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (débogueur hérité : 3.2.1.0) |
     | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |

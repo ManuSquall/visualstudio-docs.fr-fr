@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349541"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067059"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017
 
@@ -62,7 +62,7 @@ Si un type de projet ou de fichier n’apparaît pas alors qu’il le devrait, c
 | SharePoint 2010 | Lorsqu’un projet de solution SharePoint est ouvert avec Visual Studio 2017, il est mis à niveau vers SharePoint 2013 ou SharePoint 2016. La charge de travail « Développement .NET Desktop » doit être installée dans Visual Studio 2017 pour la mise à niveau.<br/><br/>Pour plus d’informations sur la mise à niveau des projets SharePoint, consultez les articles [Mettre à niveau vers SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx), [Mettre à jour le flux de travail dans SharePoint Server 2013](https://technet.microsoft.com/library/dn133867.aspx) et [Créer une batterie de serveurs SharePoint Server 2016 pour une mise à niveau d’attachement de base de données](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | Les projets de complément SharePoint créés dans Office Developer Tools Preview 2 ne peuvent pas être ouverts dans Visual Studio 2017. Pour contourner cette limite, mettez à jour `MinimumVisualStudioVersion` avec la valeur 12.0 et `MinimumOfficeToolsVersion` avec la valeur 12.2 dans le fichier csproj vbproj. |
 | Silverlight | Les projets Silverlight ne sont pas pris en charge dans Visual Studio 2017. Pour gérer des applications Silverlight, continuez à utiliser Visual Studio 2015. |
-| SQL Server Reporting Services et SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | La prise en charge de ces types de projets est assurée par le biais de deux extensions de la galerie Visual Studio : [Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) et [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). La prise en charge de SSDT est également incluse dans la charge de travail Stockage et traitement des données dans Visual Studio 2017. |
+| SQL Server Reporting Services et SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | La prise en charge de ces types de projets est assurée par le biais de deux extensions de la galerie Visual Studio :  [Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) et [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). La prise en charge de SSDT est également incluse dans la charge de travail Stockage et traitement des données dans Visual Studio 2017. |
 | SQL Server Integration Services (SSIS) | La prise en charge de Visual Studio 2017 est disponible par le biais de SQL Server Data Tools (SSDT). Pour plus d’informations, consultez le [blog de SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Vous pouvez utiliser Visual Studio 2017 pour travailler sur des projets créés dans des versions antérieures de Visual Studio, jusqu’à Visual Studio 2010. À la première ouverture du projet, il est possible d’effectuer une mise à niveau vers la dernière version du compilateur et de l’ensemble d’outils, ou bien de continuer d’utiliser ceux d’origine. Si vous choisissez de rester sur les originaux, Visual Studio 2017 ne modifie pas le fichier projet et utilise l’ensemble d’outils de l’ancienne installation de Visual Studio pour générer votre projet. En conservant les options d’origine, vous pouvez toujours ouvrir le projet dans la version d’origine de Visual Studio, le cas échéant. Pour plus d’informations, consultez [Utiliser le multiciblage natif dans Visual Studio pour générer d’anciens projets](/cpp/porting/use-native-multi-targeting). |
 | Extensibilité de Visual Studio/VSIX | Un projet pour lequel le paramètre MinimumVersion est défini sur 14.0 ou moins est mis à jour pour déclarer 15.0 comme version minimale, ce qui empêche son ouverture dans les versions antérieures de Visual Studio. Pour permettre l’ouverture d’un projet dans les versions antérieures, définissez MinimumVersion sur `$(VisualStudioVersion)`. Consultez aussi [Guide pratique pour migrer les projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
@@ -95,7 +95,13 @@ Pour conserver une compatibilité maximale avec les projets créés dans des ver
 
 Dans ce contexte, la question se pose naturellement de savoir si vous devez essayer de mettre à jour manuellement ou de faire migrer un projet vers une valeur de `ToolsVersion` plus récente. Ce type de changement est inutile. Il va générer probablement beaucoup d’erreurs et d’avertissements que vous devrez traiter pour que le projet puisse être regénéré. De plus, si Visual Studio cesse un jour de prendre en charge un `ToolsVersion` spécifique, l’ouverture du projet va déclencher le processus de migration de ce dernier, car la valeur de `ToolsVersion` devra être changée. Dans ce cas, le sous-système de ce type de projet sait exactement ce qui doit être changé. Il peut donc effectuer les changements nécessaires automatiquement, comme indiqué plus haut dans cet article.
 
+# <a name="next-steps"></a>Étapes suivantes
+
 Pour plus d’informations, consultez les articles suivants :
 
 - [Aide relative à ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Aide relative au ciblage de framework](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>Voir aussi
+
+[Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2019 Preview](port-migrate-upgrade-visual-studio-projects-2019.md)

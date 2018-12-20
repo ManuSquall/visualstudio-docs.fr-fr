@@ -1,5 +1,5 @@
 ---
-title: Extension Cookiecutter pour Python
+title: Utiliser des modèles Cookiecutter avec Python
 description: Visual Studio prend en charge l’extension Cookiecutter graphique pour la découverte de modèles pour le code Python et la création de projets à partir de ces modèles.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219690"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057189"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Utiliser l’extension Cookiecutter
 
@@ -101,7 +102,7 @@ Il est possible d’améliorer ce rendu en spécifiant des métadonnées supplé
 | Ajouter des contrôles | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
 | Description | Spécifie l’info-bulle qui apparaît sur le contrôle d’édition, au lieu de la valeur par défaut de cette variable. |
 | URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Un clic sur le lien hypertexte ouvre le navigateur par défaut de l’utilisateur pour une redirection vers cette URL. |
-| Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string` : zone de texte standard, valeur par défaut pour les chaînes.</li><li>`list` : zone de liste modifiable, valeur par défaut pour les listes.</li><li>`yesno` : zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection` : zone de texte avec un bouton **...** qui fait apparaître une boîte de dialogue de connexion de base de données.</li></ul> |
+| Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string`: zone de texte standard, valeur par défaut des chaînes.</li><li>`list`: zone de liste modifiable standard, valeur par défaut des listes.</li><li>`yesno`: zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection`: zone de texte avec un bouton **...** qui fait apparaître une boîte de dialogue de connexion de base de données.</li></ul> |
 
 Exemple :
 
@@ -171,7 +172,7 @@ Si vous n’avez pas besoin de transmettre un argument, laissez une chaîne vide
 ]
 ```
 
-Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, séparez le commutateur et sa valeur en arguments distincts, et utilisez une mise entre guillemets appropriée. Exemple :
+Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, séparez le commutateur et sa valeur en arguments distincts, et utilisez une mise entre guillemets appropriée. Par exemple :
 
 ```json
 "_visual_studio_post_cmds": [

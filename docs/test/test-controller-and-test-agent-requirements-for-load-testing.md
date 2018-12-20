@@ -1,5 +1,5 @@
 ---
-title: Spécifications du contrôleur de test et de l’agent de test pour les tests de charge dans Visual Studio
+title: Spécifications du contrôleur de test et de l’agent de test pour le test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813984"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051448"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
 
 Visual Studio intègre plusieurs types de tests, notamment les tests de performances web, les tests de charge et les tests manuels. Visual Studio permet aux utilisateurs de Visual Studio Application Lifecycle Management d’exécuter des tests sur des ordinateurs distants à l’aide d’un contrôleur de test et d’un ou plusieurs agents. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Configurations matérielle et logicielle requises
 
