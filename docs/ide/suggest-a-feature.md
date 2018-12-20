@@ -1,5 +1,5 @@
 ---
-title: 'Vue d’ensemble : Suggérer une fonctionnalité pour Visual Studio'
+title: Suggérer une fonctionnalité
 description: Décrit les suggestions présentes dans la Communauté des développeurs, explique comment faire une suggestion et montre comment elles sont utilisées par Microsoft dans la feuille de route Visual Studio.
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826690"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160034"
 ---
-# <a name="overview-suggest-a-feature"></a>Vue d’ensemble : Suggérer une fonctionnalité
+# <a name="overview-suggest-a-feature"></a>Vue d'ensemble : Suggérer une fonctionnalité
 
 Nous avons introduit une toute nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). C’est pour vous un nouveau moyen de contribuer directement au flux de travail d’ingénierie de Visual Studio.
 
-Jusqu’à présent, les utilisateurs de Visual Studio utilisaient le forum UserVoice pour proposer des idées de nouvelles fonctionnalités. L’expérience *Suggérer une fonctionnalité* dans la Communauté des développeurs permet de passer du forum UserVoice à une plateforme unique pour tous les commentaires qui concernent directement les équipes produit Visual Studio.  
+Jusqu’à présent, les utilisateurs de Visual Studio utilisaient le forum UserVoice pour proposer des idées de nouvelles fonctionnalités. L’expérience *Suggérer une fonctionnalité* dans la Communauté des développeurs permet de passer du forum UserVoice à une plateforme unique pour tous les commentaires qui concernent directement les équipes produit Visual Studio.
 
 Nous avons migré une sélection initiale d’idées du forum UserVoice à la Communauté des développeurs. Cette migration a été effectuée en fonction de l’impact des commentaires sur la Communauté et des priorités de notre feuille de route produit. Si nous sommes passés à côté d’une suggestion que vous attendiez, n’hésitez pas à l’ajouter à la Communauté des développeurs.
 
 ## <a name="votes"></a>Votes
 
-Le système de vote de UserVoice fonctionne différemment de celui de la Communauté des développeurs. Pour maintenir l’intégrité des nombres de votes de la Communauté des développeurs et éviter qu’ils ne soient faussés, nous mettons les nombres de votes UserVoice bien en évidence sous la forme d’une étiquette à côté de chaque suggestion de fonctionnalité. Par la suite, lorsque vous voterez pour des suggestions de la Communauté des développeurs nouvelle version, vos nouveaux nombres de votes s’afficheront séparément des volumes UserVoice.  
+Le système de vote de UserVoice fonctionne différemment de celui de la Communauté des développeurs. Pour maintenir l’intégrité des nombres de votes de la Communauté des développeurs et éviter qu’ils ne soient faussés, nous mettons les nombres de votes UserVoice bien en évidence sous la forme d’une étiquette à côté de chaque suggestion de fonctionnalité. Par la suite, lorsque vous voterez pour des suggestions de la Communauté des développeurs nouvelle version, vos nouveaux nombres de votes s’afficheront séparément des volumes UserVoice.
 
 ## <a name="user-voice"></a>UserVoice
 
@@ -77,7 +77,7 @@ L’état **Fermé - Autre produit** signifie que nous ne pouvons pas traiter vo
 
 - - -
 
-![État Closed – Not Enough Info des suggestions dans la Communauté des développeurs](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![État Closed – Not Enough Info des suggestions dans la Communauté des développeurs](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Closed – Not Enough Info** (Fermé – Informations insuffisantes) indique que, après plusieurs tentatives, nous n’avons pas reçu suffisamment d’informations pour comprendre pleinement votre suggestion de nouvelle fonctionnalité. Nous devons la fermer, car il n’y a aucune action que nous puissions entreprendre à ce stade.
 

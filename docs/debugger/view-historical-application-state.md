@@ -1,7 +1,7 @@
 ---
 title: Afficher l’état précédent de l’application à l’aide d’IntelliTrace
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+description: Découvrez comment prendre des captures instantanées et les voir avec le retour en arrière IntelliTrace
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846861"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060143"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecter les précédents états des applications à l’aide du retour en arrière IntelliTrace dans Visual Studio
 
@@ -96,9 +96,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 IntelliTrace en mode Événements uniquement vous permet d’activer le débogage d’historique sur les points d’arrêt et les étapes du débogueur. Toutefois, IntelliTrace capture les données des fenêtres **Variables locales** et **Automatique** uniquement si ces fenêtres sont ouvertes, et il capture uniquement les données qui sont développées et dans la vue. En mode Événements uniquement, vous avez rarement une vue complète des variables et des objets complexes. De plus, l’évaluation des expressions et l’affichage des données dans la fenêtre **Espion** ne sont pas prises en charge. 
 
-En mode Événements et captures instantanées, IntelliTrace crée une capture instantanée complète du processus de l’application, y compris les objets complexes. Sur une ligne de code, vous pouvez voir les mêmes informations que si vous étiez arrêtés à un point d’arrêt (et peu importe si vous avez auparavant développé les informations). L’évaluation des expressions est également prise en charge lors de l’affichage d’une capture instantanée.  
+En mode Événements et captures instantanées, IntelliTrace crée une capture instantanée complète du processus de l’application, y compris les objets complexes. Sur une ligne de code, vous pouvez voir les mêmes informations que si vous étiez arrêtés à un point d’arrêt (et peu importe si vous avez auparavant développé les informations). L’évaluation des expressions est également prise en charge lors de l’affichage d’une capture instantanée.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qu’est l’impact de cette fonctionnalité sur les performances ? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qu’est l’impact de cette fonctionnalité sur les performances ? 
 
 L’impact sur les performances globales du pas à pas dépend de votre application. La surcharge liée à la création de capture instantanée est d’environ 30 ms. Quand une capture instantanée est créée, le processus de l’application est dupliqué et la copie dupliquée est suspendue. Quand vous affichez une capture instantanée, Visual Studio s’attache à la copie dupliquée du processus. Pour chaque capture instantanée, Visual Studio copie uniquement la table des pages et définit les pages sur « copie pour écriture ». Si des objets sur le tas changent entre les étapes du débogueur avec des captures instantanées associées, la table des pages correspondante est alors copiée, ce qui entraîne un coût mémoire minimal. Si Visual Studio détecte qu’il n’y a pas suffisamment de mémoire pour créer une capture instantanée, il n’en crée pas.
  
@@ -112,7 +112,7 @@ L’impact sur les performances globales du pas à pas dépend de votre applicat
   * Ou encore : 
     1. Installez l’ensemble d’outils VC ++ 2015.3 v140 du composant poste de travail (x86, x64) à partir du programme d’installation de Visual Studio.
     2. Générez l’application cible.
-    3. À partir de la ligne de commande, utilisez l’outil editbin afin de définir l’indicateur `Largeaddressaware` pour l’exécutable cible. Par exemple, vous pouvez utiliser cette commande (après avoir mis à jour le chemin) : « C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe ».
+    3. À partir de la ligne de commande, utilisez l’outil editbin afin de définir l’indicateur `Largeaddressaware` pour l’exécutable cible. Par exemple, vous pouvez utiliser cette commande (après avoir mis à jour le chemin) : "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Pour démarrer le débogage, appuyez sur **F5**. À présent, des captures instantanées peuvent être créées au niveau des points d’arrêt et des étapes du débogueur.
 
        > [!Note]

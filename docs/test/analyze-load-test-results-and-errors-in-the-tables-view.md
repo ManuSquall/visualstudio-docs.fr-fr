@@ -1,5 +1,5 @@
 ---
-title: Analyse des résultats et des erreurs des tests de charge dans Visual Studio
+title: Analyse des résultats et des erreurs des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896625"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068563"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -55,7 +55,7 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 |Nom de la table|Description|
 |-|-|
 |Erreurs|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Requêtes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
 |Trace SQL|Affiche les résultats du traçage SQL. Cette table n'est disponible qu'à l'issue d'un test de charge et uniquement si le traçage SQL a été utilisé pendant le test. Pour plus d’informations, consultez [Table Données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) dans cette rubrique.|
 |Tests|Affiche des détails relatifs aux tests exécutés pendant un test de charge. Pour plus d’informations, consultez [Table Tests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) dans cette rubrique.|
@@ -66,7 +66,7 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 ## <a name="collect-percentile-data"></a>Collecter les données de centile
 
- Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Table Requêtes
 
@@ -118,7 +118,7 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
  Le tableau suivant répertorie les colonnes de la table **Transactions**.
 
 > [!NOTE]
-> Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Colonne|Description|Visible sans les détails de minuterie|
 |-|-|-|
@@ -133,8 +133,8 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 |**Temps de réponse min**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse max**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse médian**|Cela n'inclut pas les temps de réflexion.|Non|
-|**90% du temps de réponse**|90e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :** Ce comportement est différent de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **90% du temps de transaction**.|Non|
-|**95% du temps de réponse**|95e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :** Ce comportement est différent de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **95% du temps de transaction**.|Non|
+|**90% du temps de réponse**|90e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :**  Ce comportement est différent de celui de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **90 % du temps de transaction**.|Non|
+|**95% du temps de réponse**|95e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :**  Ce comportement est différent de celui de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **95 % du temps de transaction**.|Non|
 |**99% du temps de réponse**|99e centile du temps de transaction. Cela n'inclut pas les temps de réflexion.|Non|
 |**Écart type du temps de réponse**|Cela n'inclut pas les temps de réflexion.|Non|
 

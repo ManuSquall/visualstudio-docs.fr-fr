@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio
+title: Personnaliser des menus et des barres d’outils
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -29,14 +29,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745947"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049689"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser des menus et des barres d’outils dans Visual Studio
 
 Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d’outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d’outils ou un menu.
 
@@ -81,7 +81,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
         Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.
 
         > [!NOTE]
-        > Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité de l’IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Personnaliser un menu ou une barre d’outils</a>
 

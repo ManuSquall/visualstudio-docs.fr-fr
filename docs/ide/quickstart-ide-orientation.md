@@ -1,5 +1,6 @@
 ---
 title: Présentation de l’IDE Visual Studio
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626853"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159566"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez effectuer une visite guidée de quelques fenêtres, menus et autres fonctionnalités de l’interface utilisateur.
 
@@ -105,13 +106,13 @@ Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou s
 Nous avons exploré quelques fonctionnalités de Visual Studio pour nous familiariser avec l’interface utilisateur. Pour en apprendre davantage :
 
 > [!div class="nextstepaction"]
-> [Découvrez l’éditeur de code](../ide/quickstart-editor.md)
+> [Découvrez l’éditeur de code](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Découvrir les projets et les solutions](../ide/quickstart-projects-solutions.md)
+> [Découvrir les projets et les solutions](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Fonctionnalités supplémentaires de Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Changer le thème et les couleurs de police](../ide/quickstart-personalize-the-ide.md)

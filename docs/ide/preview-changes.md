@@ -1,5 +1,5 @@
 ---
-title: Aperçu des changements de code dans Visual Studio
+title: Aperçu des modifications du code
 ms.date: 12/16/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: dfb9ff26ca20060a8df9a0b3a81783b60e0b46f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16f681d8498242eb8ddc9c1a81fe8d17186f2fff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942453"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067354"
 ---
 # <a name="preview-changes-window"></a>Fenêtre Aperçu des modifications
 

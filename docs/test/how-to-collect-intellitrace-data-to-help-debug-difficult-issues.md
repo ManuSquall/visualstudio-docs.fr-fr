@@ -1,5 +1,5 @@
 ---
-title: Données Intellitrace dans Visual Studio
+title: Données Intellitrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894636"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064755"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procédure : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
 
 Vous pouvez configurer l’adaptateur de données de diagnostic pour IntelliTrace pour collecter des informations de trace de diagnostic spécifiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
 
@@ -83,7 +83,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 7.  Choisissez l’onglet **Modules**. Sélectionnez **Collecter les données de tous les modules à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
-     - ou -
+     ou
 
      Sélectionnez **Collecter les données des modules suivants uniquement**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet de spécifier quels modules doivent être utilisés.
 
@@ -92,7 +92,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 8.  Choisissez l’onglet **Processus**. Sélectionnez **Collecter les données de tous les processus à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
-     - ou -
+     ou
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 

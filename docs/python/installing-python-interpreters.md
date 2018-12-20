@@ -1,22 +1,23 @@
 ---
-title: Sélection et installation des interpréteurs Python
+title: Sélectionner et installer les interpréteurs Python
 description: La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348706"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063559"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
@@ -34,7 +35,7 @@ Visual Studio affiche tous les environnements connus dans la fenêtre [**Environ
 
 | Interpréteur | Description |
 | --- | --- |
-| [CPython](https://www.python.org/) | Interpréteur « natif » et le plus couramment utilisé, disponible en versions 32 bits et 64 bits (version 32 bits recommandée). Il inclut les dernières fonctionnalités du langage, une compatibilité des packages Python maximale, la prise en charge complète du débogage et l’interopérabilité avec [IPython](http://ipython.org/). Consultez aussi : [Should I use Python 2 or Python 3 ?](https://wiki,python.org/moin/Python2orPython3). Notez que Visual Studio 2015 et les versions antérieures ne prennent pas en charge Python 3.6+, et qu’ils peuvent générer des erreurs telles que **Python version 3.6 n’est pas pris en charge**. Utilisez à la place Python 3.5 ou antérieur. |
+| [CPython](https://www.python.org/) | Interpréteur « natif » et le plus couramment utilisé, disponible en versions 32 bits et 64 bits (version 32 bits recommandée). Il inclut les dernières fonctionnalités du langage, une compatibilité des packages Python maximale, la prise en charge complète du débogage et l’interopérabilité avec [IPython](https://ipython.org/). Voir aussi : [Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3). Notez que Visual Studio 2015 et les versions antérieures ne prennent pas en charge Python 3.6+, et qu’ils peuvent générer des erreurs telles que **Python version 3.6 n’est pas pris en charge**. Utilisez à la place Python 3.5 ou antérieur. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implémentation .NET de Python, disponible en versions 32 bits et 64 bits, fournissant une interopérabilité C#/F#/Visual Basic, un accès aux API .NET, le débogage Python standard (mais pas le débogage en mode mixte C++) et le débogage mixte IronPython/C#. Toutefois, IronPython, ne prend pas en charge les environnements virtuels. |
 | [Anaconda](https://www.continuum.io) | Une plateforme de science des données ouverte alimentée par Python, qui inclut la dernière version de CPython et la plupart des packages difficiles à installer. Nous vous la recommandons si vous ne pouvez pas décider autrement. |
 | [PyPy](https://www.pypy.org/) | Une implémentation JIT de suivi hautes performances de Python qui convient aux programmes longs et aux situations dans lesquelles vous identifiez des problèmes de performances, mais que vous ne trouvez pas d’autres solutions. Fonctionne avec Visual Studio, mais avec une prise en charge limitée des fonctionnalités de débogage avancées. |

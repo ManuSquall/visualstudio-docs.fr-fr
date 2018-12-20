@@ -1,5 +1,5 @@
 ---
-title: Paramètres de modèle de projet et d’élément Visual Studio
+title: Paramètres de modèle de projet et d’élément
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178632"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067666"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -25,7 +25,7 @@ Vous pouvez remplacer des valeurs dans votre modèle quand ce dernier est instan
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Déclaration et activation des paramètres de modèle
 
-Les paramètres de modèle sont déclarés au format $*paramètre*$. Exemple :
+Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
 
 - $safeprojectname$
 
@@ -74,7 +74,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 
 Vous pouvez spécifier vos propres paramètres et valeurs de modèle, en plus des paramètres de modèle réservés par défaut utilisés lors du remplacement de paramètres. Pour plus d’informations, consultez [CustomParameters, élément (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : utilisation du nom du projet comme nom de fichier
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : Utiliser le nom du projet comme nom de fichier
 
 Vous pouvez spécifier des noms de fichiers de variables pour les éléments de projet à l’aide d’un paramètre dans l’attribut `TargetFileName`.
 
@@ -91,7 +91,7 @@ L’exemple suivant spécifie que le nom d’un fichier exécutable utilise le n
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : utilisation du nom du projet sécurisé comme nom de l’espace de noms
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : Utiliser le nom du projet sécurisé comme nom de l’espace de noms
 
 Pour utiliser le nom du projet sécurisé pour l’espace de noms dans un fichier de classe C#, utilisez la syntaxe suivante :
 

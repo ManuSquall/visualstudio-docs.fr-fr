@@ -1,5 +1,5 @@
 ---
-title: Concepts de base des tests unitaires dans Visual Studio
+title: Notions de base des tests unitaires
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935313"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053167"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -32,9 +32,9 @@ L’explorateur de tests peut également exécuter des infrastructures de tests 
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
-- [Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Écrire des tests unitaires pour C/C++ dans Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -219,7 +219,7 @@ La barre d’outils de **l’explorateur de tests** vous permet de découvrir, d
 
 ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute_toolbar.png)
 
-Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter. Après que vous avez exécuté un ensemble de tests, un résumé de la série de tests s’affiche en bas de la fenêtre **Explorateur de tests**. Sélectionnez un test pour en afficher les détails dans le volet inférieur. Choisissez **Ouvrir un test** dans le menu contextuel (ou **F12**) pour afficher le code source du test sélectionné.
+Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter. Après que vous avez exécuté un ensemble de tests, un résumé de la série de tests s’affiche en bas de la fenêtre **Explorateur de tests**. Sélectionnez un test pour en afficher les détails dans le volet inférieur. Choisissez **Ouvrir un test** dans le menu contextuel (clavier : **F12**) pour afficher le code source du test sélectionné.
 
 Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
@@ -246,9 +246,9 @@ Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Ex
 
 ## <a name="qa"></a>Questions et réponses
 
-**Q : Comment déboguer des tests unitaires ?**
+**Q : Comment déboguer des tests unitaires ?**
 
-**R :** Utilisez **l’explorateur de tests** pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
+**R :** Utilisez l’**Explorateur de tests** pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
 
 1.  Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
 
@@ -259,15 +259,15 @@ Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Ex
 
 En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).
 
-**Q : Si j’utilise le développement axé sur des tests, comment générer du code à partir de mes tests ?**
+**Q : Si j’utilise le TDD (développement piloté par les tests), comment générer du code à partir de mes tests ?**
 
-**R :** Utilisez IntelliSense pour générer des classes et méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez le menu IntelliSense dans le cadre de l’appel. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer un nouveau type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer une nouvelle méthode** à partir du menu IntelliSense.
+**R :** Utilisez IntelliSense pour générer des classes et des méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez le menu IntelliSense dans le cadre de l’appel. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer un nouveau type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer une nouvelle méthode** à partir du menu IntelliSense.
 
 ![Menu IntelliSense Gérer un stud de méthode](../test/media/ute_generatemethodstubintellisense.png)
 
-**Q : Puis-je créer des tests unitaires qui utilisent plusieurs groupes de données en entrée pour exécuter le test ?**
+**Q : Puis-je créer des tests unitaires qui acceptent plusieurs ensembles de données en entrée pour exécuter le test ?**
 
-**R :** Oui. Les*méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous affectez les valeurs de ligne aux variables à l’aide de l’indexeur `TestContext.DataRow[`*ColumnName*`]` .
+**R :** Oui. Les*méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous affectez les valeurs de ligne aux variables à l’aide de l’indexeur `TestContext.DataRow[`*ColumnName*`]` .
 
 > [!NOTE]
 > Ces procédures s’appliquent uniquement aux méthodes de test que vous écrivez à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé. Si vous utilisez un autre framework, consultez sa documentation pour obtenir des fonctionnalités équivalentes.
@@ -297,9 +297,9 @@ La méthode attribuée s’exécute une fois pour chaque ligne de la table. **L�
 
 En savoir plus sur les [tests unitaires pilotés par les données](../test/how-to-create-a-data-driven-unit-test.md).
 
-**Q : Puis-je afficher la quantité de code testée par mes tests unitaires ?**
+**Q : Puis-je voir la quantité de code testée par mes tests unitaires ?**
 
-**R :** Oui. Vous pouvez déterminer la quantité de code qui est réellement testée par vos tests unitaires à l’aide de l’outil de couverture du code Visual Studio. Les langages natifs et managés ainsi que toutes les infrastructures de tests unitaires qui peuvent être exécutés par l’infrastructure de tests unitaires sont pris en charge.
+**R :** Oui. Vous pouvez déterminer la quantité de code qui est réellement testée par vos tests unitaires à l’aide de l’outil de couverture du code Visual Studio. Les langages natifs et managés ainsi que toutes les infrastructures de tests unitaires qui peuvent être exécutés par l’infrastructure de tests unitaires sont pris en charge.
 
 Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d’une solution. La fenêtre **Résultats de la couverture du code** affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.
 
@@ -313,7 +313,7 @@ En savoir plus sur la [couverture du code](../test/using-code-coverage-to-determ
 
 **Q : Puis-je tester des méthodes de mon code qui ont des dépendances externes ?**
 
-**R :** Oui. Si vous disposez de Visual Studio Enterprise, Microsoft Fakes peut être utilisé avec les méthodes de test que vous écrivez à l’aide des infrastructures de tests unitaires pour le code managé.
+**R :** Oui. Si vous disposez de Visual Studio Enterprise, Microsoft Fakes peut être utilisé avec les méthodes de test que vous écrivez à l’aide des infrastructures de tests unitaires pour le code managé.
 
 Microsoft Fakes utilise deux approches pour créer des classes de substitution pour les dépendances externes :
 
@@ -325,9 +325,9 @@ Dans les deux approches, vous utilisez les délégués générés des appels à 
 
 En savoir plus sur l’ [isolement des méthodes de test unitaire avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Q : Puis-je utiliser d’autres infrastructures de tests unitaires pour créer des tests unitaires ?**
+**Q : Puis-je utiliser d’autres frameworks de tests unitaires pour créer des tests unitaires ?**
 
-**R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos infrastructures installées ici :
+**R :** Oui, suivez ces étapes pour [rechercher et installer d’autres frameworks](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos infrastructures installées ici :
 
 ![Sélectionner un autre framework de test unitaire installé](../test/media/createunittestsdialogextensions.png)
 

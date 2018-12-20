@@ -1,5 +1,5 @@
 ---
-title: Utilisation de stubs pour isoler des parties de votre application pour des tests unitaires dans Visual Studio
+title: Utilisation de stubs pour isoler des parties de votre application pour des tests unitaires
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382566"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065530"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
@@ -396,7 +396,7 @@ Si le code devait appeler `GetValue<T>` avec une autre instanciation, le stub ap
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs de classes virtuelles
 
-Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Exemple :
+Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
 
 ```csharp
 // Base class in application under test

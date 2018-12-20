@@ -1,5 +1,5 @@
 ---
-title: Créer des modèles à plusieurs projets pour Visual Studio
+title: Créer des modèles à projets multiples
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978383"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049663"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
+# <a name="how-to-create-multi-project-templates"></a>Procédure : Créer des modèles à projets multiples
 
 Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Quand vous créez un projet basé sur un modèle à plusieurs projets à partir de la boîte de dialogue **Nouveau projet**, tous les projets inclus dans le modèle sont ajoutés à la solution.
 
@@ -48,7 +48,7 @@ Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deu
 
 Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :
 
-- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Exemple :
+- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"

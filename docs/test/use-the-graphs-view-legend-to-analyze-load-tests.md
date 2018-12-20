@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la légende de la vue Graphiques pour analyser des tests de charge dans Visual Studio
+title: Utilisation de la légende de la vue Graphes pour analyser des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e379cd3f05063424a7db9905611fa86467bee2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896079"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067192"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Utiliser la légende de la vue Graphiques pour analyser des tests de charge
 
@@ -28,23 +28,23 @@ La vue Graphiques de l'outil Analyseur de test de charge inclut le volet de la l
 
 Les informations suivantes sont contenues dans la légende :
 
--   **Afficher sur le graphique :** Utilisez les cases à cocher pour indiquer si la ligne d’un compteur particulier, comme **Charge utilisateur** ou **Erreurs/s**, est tracée sur le graphique. Activez une case à cocher pour que la ligne soit tracée sur le graphique. Désactivez une case à cocher pour supprimer du graphique la ligne du tracé. Lorsqu'une ligne de tracé est supprimée, les statistiques du compteur continuent à s'afficher dans la légende.
+-   **Afficher sur le graphique :** Utilisez les cases à cocher pour indiquer si la ligne d’un compteur particulier, comme **Charge utilisateur** ou **Erreurs/s**, est tracée sur le graphique. Activez une case à cocher pour que la ligne soit tracée sur le graphique. Désactivez une case à cocher pour supprimer du graphique la ligne du tracé. Lorsqu'une ligne de tracé est supprimée, les statistiques du compteur continuent à s'afficher dans la légende.
 
--   **Plage :** cette colonne affiche la plage de l’axe Y du compteur de performances. Par défaut, cette valeur s'ajuste automatiquement au fur et à mesure que la plage des exemples de données évolue. Une plage ajustée automatiquement sera toujours la puissance 10 supérieure à la valeur Max ; cela inclut les puissances 10 négatives. Un graphique peut contenir divers compteurs, chacun avec une plage différente. Par conséquent, l'axe Y n'est pas étiqueté avec un plage spécifique, mais est étiqueté avec les valeurs comprises entre 0 et 100 qui représentent un pourcentage de la plage totale de chaque compteur. Par exemple, pour un compteur avec une plage de 1 000, un point de données de 60 sur l'axe Y correspondrait à une valeur de 600 pour le compteur.
+-   **Plage :** Cette colonne affiche la plage de l’axe Y du compteur de performances. Par défaut, cette valeur s'ajuste automatiquement au fur et à mesure que la plage des exemples de données évolue. Une plage ajustée automatiquement sera toujours la puissance 10 supérieure à la valeur Max ; cela inclut les puissances 10 négatives. Un graphique peut contenir divers compteurs, chacun avec une plage différente. Par conséquent, l'axe Y n'est pas étiqueté avec un plage spécifique, mais est étiqueté avec les valeurs comprises entre 0 et 100 qui représentent un pourcentage de la plage totale de chaque compteur. Par exemple, pour un compteur avec une plage de 1 000, un point de données de 60 sur l'axe Y correspondrait à une valeur de 600 pour le compteur.
 
     > [!NOTE]
     > Vous pouvez désactiver le réglage automatique des valeurs de la plage en verrouillant la plage sur une valeur spécifique. Lorsque la plage est verrouillée, toutes les valeurs qui dépassent la plage s'affichent comme valeur maximale spécifiée en haut du graphique. Utilisez la boîte de dialogue **Options de tracé** pour verrouiller la plage sur une valeur spécifique.
 
--   **Compteur :** Les quatre colonnes nommées **Compteur**, **Instance**, **Catégorie** et **Ordinateur** identifient le compteur de performances de manière unique.
+-   **Compteur :** Les quatre colonnes nommées **Compteur**, **Instance**, **Catégorie** et **Ordinateur** identifient le compteur de performances de manière unique.
 
--   **Couleur :** La colonne **Couleur** affiche la couleur et le style de la ligne tracée pour le compteur de performances. Utilisez la boîte de dialogue **Options de tracé** pour modifier la couleur ou le style de ligne d’un compteur de performances sur le graphique. La boîte de dialogue **Options de tracé** est disponible dans le menu contextuel de la légende.
+-   **Couleur :** La colonne **Couleur** affiche la couleur et le style de la ligne tracée pour le compteur de performances. Utilisez la boîte de dialogue **Options de tracé** pour modifier la couleur ou le style de ligne d’un compteur de performances sur le graphique. La boîte de dialogue **Options de tracé** est disponible dans le menu contextuel de la légende.
 
--   **Statistiques :** Les colonnes **Min**, **Max**, **Moy** et **Dernier** affichent les statistiques respectives relatives au compteur de performances. Ces valeurs correspondent aux données affichées dans la région visible du graphique. Par exemple, si vous appliquez un zoom avant sur une région d'une exécution, les statistiques de la légende reflètent uniquement les valeurs de la zone zoomée. La colonne « Dernier » correspond à la valeur du compteur de performance sur le dernier intervalle d'échantillonnage effectué.
+-   **Statistiques :** Les colonnes **Min**, **Max**, **Moy** et **Dernier** affichent les statistiques respectives relatives au compteur de performances. Ces valeurs correspondent aux données affichées dans la région visible du graphique. Par exemple, si vous appliquez un zoom avant sur une région d'une exécution, les statistiques de la légende reflètent uniquement les valeurs de la zone zoomée. La colonne « Dernier » correspond à la valeur du compteur de performance sur le dernier intervalle d'échantillonnage effectué.
 
     > [!NOTE]
     > La colonne Dernier s'affiche uniquement dans la légende de l'outil Analyseur de test de charge pendant l'exécution du test de charge.
 
-     Pour plus d’informations, consultez [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 La sélection d'un élément dans la légende effectue les opérations suivantes :
 
@@ -61,5 +61,5 @@ La sélection d'un élément dans la légende effectue les opérations suivantes
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Guide pratique pour effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)

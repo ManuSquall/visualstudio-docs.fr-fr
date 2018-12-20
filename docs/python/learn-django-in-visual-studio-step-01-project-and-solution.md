@@ -1,5 +1,6 @@
 ---
-title: 'Tutoriel : Découvrez Django dans Visual Studio, étape 1'
+title: Tutoriel d’apprentissage de Django dans Visual Studio, étape 1, notions de base de Django
+titleSuffix: ''
 description: Une procédure pas à pas des notions fondamentales de Django dans le cadre de projets Visual Studio, qui montre la prise en charge du développement de Django par Visual Studio.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001241"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061078"
 ---
-# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
 [Django](https://www.djangoproject.com/) est un framework Python général conçu pour un développement web rapide, sécurisé et scalable. Ce tutoriel explore l’infrastructure Django dans le contexte des modèles de projet fournis par Visual Studio pour rationaliser la création d’applications web basées sur Django.
 
@@ -50,7 +52,7 @@ Un projet Visual Studio peut, quant à lui, contenir le projet Django, ainsi que
 
 Au cours de ce tutoriel, vous allez créer une solution Visual Studio unique qui contient trois projets Django distincts contenant pour leur part chacun une seule application Django. Conserver les projets dans la même solution vous pouvez permet de basculer facilement entre différents fichiers pour effectuer des comparaisons.
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Étape 1-1 : créer un projet et une solution Visual Studio
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Étape 1-1 : Créer un projet et une solution Visual Studio
 
 Lorsque vous travaillez avec Django à partir de la ligne de commande, vous commencez généralement un projet en exécutant la commande `django-admin startproject <project_name>`. Dans Visual Studio, l’utilisation du modèle « Projet web Django vide » fournit la même structure dans un projet et dans une solution Visual Studio.
 
@@ -64,8 +66,8 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
     - **Solution** : laissez l’option **Créer une solution** par défaut pour ce contrôle.
     - **Nom de la solution** : valeur **LearningDjango**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
-    - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
-    - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
+    - **Créer un répertoire pour la solution** : Laissez cette option activée (par défaut).
+    - **Créer un dépôt Git** : Sélectionnez cette option (désactivée par défaut) pour que Visual Studio crée un dépôt Git local au moment de la création de la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
 1. Au bout d’un moment, Visual Studio affiche une boîte de dialogue indiquant **Des packages externes sont nécessaires pour ce projet** (voir plus bas). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Django 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
@@ -73,7 +75,7 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 
 1. Sélectionnez l’option **I will install them myself**. Vous créez brièvement l’environnement virtuel pour vous assurer qu’il est exclu du contrôle de code source. (L’environnement peut toujours être créé à partir de *requirements.txt*.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : examiner les contrôles Git et publiez sur un référentiel distant
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : Examiner les contrôles Git et publier sur un dépôt distant
 
 Étant donné que vous avez sélectionné **Créer un référentiel Git** dans la boîte de dialogue **Nouveau projet**, le projet est déjà validé par le contrôle de code source local dès que le processus de création est terminé. À cette étape, vous vous familiarisez avec les contrôles Git de Visual Studio et la fenêtre **Team Explorer** dans laquelle vous travaillez avec le contrôle de code source.
 
@@ -107,17 +109,17 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 > [!Tip]
 > Pour naviguer rapidement dans **Team Explorer**, sélectionnez l’en-tête (qui s’appelle **Modifications** ou **Push** dans les images ci-dessus) pour afficher un menu contextuel des pages disponibles.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
-Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un référentiel distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
+Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un dépôt distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
 
-Pour poursuivre la discussion sur le contrôle de code source comme méthode d’automatisation, consultez Pour obtenir des informations supplémentaires sur le contrôle de code source en tant qu’automation, consultez [La Source de vérité : le rôle des référentiels dans DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
+Pour obtenir des informations supplémentaires sur le contrôle de code source et l’Automation, consultez [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
 
-### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Question : Puis-je empêcher Visual Studio de valider automatiquement un nouveau projet ?
+### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Puis-je empêcher Visual Studio de valider automatiquement un nouveau projet ?
 
 Réponse : Oui. Pour désactiver la validation automatique, accédez à la page **Paramètres** dans **Team Explorer**, sélectionnez **Git** > **Paramètres globaux**, désactivez l’option intitulée **Valider les modifications après une fusion par défaut**, puis sélectionnez **Mise à jour**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Étape 1-3 : créer l’environnement virtuel et l’exclure du contrôle de code source
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Étape 1-3 : Créer l’environnement virtuel et l’exclure du contrôle de code source
 
 Maintenant que vous avez configuré le contrôle de code source pour votre projet, vous pouvez créer l’environnement virtuel qui contient les packages Django nécessaires pour le projet. Vous pouvez ensuite utiliser **Team Explorer** pour exclure le dossier de l’environnement du contrôle de code source.
 
@@ -145,17 +147,17 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Entrez un message de validation et sélectionnez le bouton **Valider tout**, puis envoyez les validations à votre référentiel distant si vous le souhaitez.
 
-### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : Pourquoi créer un environnement virtuel ?
+### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Pourquoi créer un environnement virtuel ?
 
 Réponse : Un environnement virtuel est un excellent moyen d’isoler les dépendances exactes de votre application. Cette isolation évite les conflits dans un environnement Python global et facilite les tests et la collaboration. Au fil du temps, quand vous développez une application, vous introduisez invariablement de nombreux packages Python très utiles. En conservant les packages dans un environnement virtuel spécifique au projet, vous pouvez facilement mettre à jour le fichier *requirements.txt* du projet qui décrit cet environnement, ce qui est inclus dans le contrôle de code source. Quand le projet est copié vers d’autres ordinateurs, dont des serveurs de builds, des serveurs de déploiement et d’autres ordinateurs de développement, il est facile de recréer l’environnement uniquement avec *requirements.txt* (c’est la raison pour laquelle l’environnement n’a pas besoin d’être dans le contrôle de code source). Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : Comment supprimer un environnement virtuel déjà validé par le contrôle de code source ?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment supprimer un environnement virtuel déjà validé auprès du contrôle de code source ?
 
-Réponse : tout d’abord, modifiez votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)` et ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir**  >   **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
+Réponse : Commencez par modifier votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)`, puis ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir**  >   **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
 
 Ensuite, ouvrez une fenêtre Commande, accédez au dossier, par exemple *BasicProject*, qui contient le dossier d’environnement virtuel, par exemple *env*, et exécutez `git rm -r env`. Validez ensuite ces modifications depuis la ligne de commande (`git commit -m 'Remove venv'`), ou depuis la page **Modifications** de **Team Explorer**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Étape 1-4 : examiner le code réutilisable
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Étape 1-4 : Examiner le code réutilisable
 
 Une fois la création du projet terminée, examinez le code de projet Django réutilisable (qui est à nouveau le même que celui généré par la commande CLI `django-admin startproject <project_name>`).
 
@@ -174,11 +176,11 @@ Une fois la création du projet terminée, examinez le code de projet Django ré
 
 3. Comme indiqué précédemment, le modèle Visual Studio ajoute également un fichier *requirements.txt* à votre projet en spécifiant la dépendance du package Django. C’est ce fichier qui vous invite à créer un environnement virtuel lors de la création du projet.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Question : Est-ce que Visual Studio peut générer un fichier requirements.txt à partir d’un environnement virtuel après l’installation d’autres packages ?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Est-ce que Visual Studio peut générer un fichier requirements.txt à partir d’un environnement virtuel après l’installation d’autres packages ?
 
 Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le bouton droit sur votre environnement virtuel, puis sélectionnez la commande **Générer requirements.txt**. Il est bon d’utiliser régulièrement cette commande quand vous modifiez l’environnement, et d’envoyer les modifications à *requirements.txt* pour le contrôle de code source ainsi que d’autres modifications de code qui dépendent de cet environnement. Si vous configurez l’intégration continue sur un serveur de builds, vous devez générer le fichier et valider les modifications chaque fois que vous modifiez l’environnement.
 
-## <a name="step-1-5-run-the-empty-django-project"></a>Étape 1-5 : exécuter le projet Django vide
+## <a name="step-1-5-run-the-empty-django-project"></a>Étape 1-5 : Exécuter le projet Django vide
 
 1. Dans Visual Studio, sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur web** dans la barre d’outils (le navigateur affiché peut varier) :
 
@@ -192,13 +194,13 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
 1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de console, ou à l’aide de la commande **Déboguer** > **Arrêter le débogage** dans Visual Studio.
 
-### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Question : Django est-il à la fois un serveur web et une infrastructure ?
+### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Django est-il à la fois un serveur web et un framework ?
 
-Réponse : oui et non. Django a un serveur web intégré qui est utilisé à des fins de développement. Ce serveur web est utilisé lorsque vous exécutez l’application web localement, par exemple lors d’un débogage dans Visual Studio. Cependant, lorsque vous déployez sur un hôte web, Django utilise le serveur web de l’hôte à la place. Le module *wsgi.py* dans le projet Django prend en charge le raccordement aux serveurs de production.
+Réponse : Oui et non. Django a un serveur web intégré qui est utilisé à des fins de développement. Ce serveur web est utilisé lorsque vous exécutez l’application web localement, par exemple lors d’un débogage dans Visual Studio. Cependant, lorsque vous déployez sur un hôte web, Django utilise le serveur web de l’hôte à la place. Le module *wsgi.py* dans le projet Django prend en charge le raccordement aux serveurs de production.
 
-### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : Quelle est la différence entre les commandes de menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
+### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quelle est la différence entre les commandes du menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
 
-Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pourrez attacher un débogueur au processus en cours d’exécution plus tard si vous le souhaitez, avec la commande **Déboguer** > **Attacher au processus**.
+Réponse : En plus des commandes du menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pourrez attacher un débogueur au processus en cours d’exécution plus tard si vous le souhaitez, avec la commande **Déboguer** > **Attacher au processus**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -209,6 +211,6 @@ Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre 
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- Code de projet Django : [Écrire votre première application Django, 1ère partie](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
+- Code de projet Django : [Écriture de votre première application Django, partie 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Utilitaire d’administration : [django-admin et manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -1,6 +1,6 @@
 ---
 title: Sélectionner un environnement et un interpréteur Python pour un projet
-description: Guide pratique pour sélectionner un environnement ou un interpréteur Python à utiliser dans un projet Visual Studio, notamment Anaconda et les environnements virtuels.
+description: Vous pouvez sélectionner un environnement Python, y compris les environnements Anaconda et virtuels, à appliquer à un projet spécifique.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349450"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062533"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Guide pratique pour sélectionner l’environnement Python d’un projet
 

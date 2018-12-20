@@ -1,5 +1,6 @@
 ---
-title: Tutoriel – Découvrir Flask dans Visual Studio, étape 2
+title: 'Tutoriel : Découvrir Flask dans Visual Studio, étape 2, vues et modèles'
+titleSuffix: ''
 description: Une procédure pas à pas montrant les concepts de base de Flask dans le contexte de projets Visual Studio, en particulier les étapes de création d’une application, et l’utilisation de vues et de modèles.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812619"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052943"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
-**Étape précédente : [créer une solution et un projet Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Étape précédente : [Créer un projet et une solution Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Après l’étape 1 de ce tutoriel, vous disposez d’une application Flask avec une seule page et de tout le code dans un même fichier. Pour permettre les développements futurs, il est préférable à refactoriser le code et de créer une structure pour les modèles de page. En particulier, vous voulez séparer le code pour les vues de l’application du code lié à d’autres aspects, comme code du démarrage.
 
@@ -30,7 +32,7 @@ Dans cette étape, vous apprenez comment :
 > - Refactoriser le code de l’application pour séparer le code des vues du code du démarrage (étape 2-1)
 > - Afficher une vue en utilisant un modèle de page (étape 2-2)
 
-## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Étape 2-1 : refactoriser le projet pour prendre en charge les développements futurs
+## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Étape 2-1 : Refactoriser le projet pour prendre en charge les développements futurs
 
 Dans le code créé par le modèle « Projet web Flask vide », vous avez un seul fichier *app.py* qui contient le code du démarrage ainsi qu’une seule vue. Pour permettre les développements futurs d’une application avec plusieurs vues et modèles, il est préférable de séparer ces aspects.
 
@@ -101,13 +103,13 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
 
     ![Envoyer des validations à distance dans Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 
-### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Question : à quelle fréquence faut-il valider auprès du contrôle de code source ?
+### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. À quelle fréquence faut-il effectuer une validation auprès du contrôle de code source ?
 
-Réponse : la validation des modifications auprès du contrôle de code source crée un enregistrement dans le journal des modifications et un point auquel vous pouvez rétablir le dépôt si nécessaire. Vous pouvez aussi examiner les modifications spécifiques de chaque validation. Les validations dans Git ne coûtant rien, il est préférable de faire des validations fréquentes que d’accumuler un grand nombre de modifications dans une même validation. Vous n’avez clairement pas besoin de valider chaque petite modification apportée à des fichiers individuels. En général, vous faites une validation lors de l’ajout d’une fonctionnalité, lors d’un changement de la structure comme celui que vous avez effectué dans cette étape, ou quand vous avez procédé à une refactorisation du code. Vérifiez également avec les autres membres de votre équipe quelle granularité des validations convient le mieux à tous.
+Réponse : La validation des modifications auprès du contrôle de code source crée un enregistrement dans le journal des modifications et un point auquel vous pouvez rétablir le dépôt si nécessaire. Vous pouvez aussi examiner les modifications spécifiques de chaque validation. Les validations dans Git ne coûtant rien, il est préférable de faire des validations fréquentes que d’accumuler un grand nombre de modifications dans une même validation. Vous n’avez clairement pas besoin de valider chaque petite modification apportée à des fichiers individuels. En général, vous faites une validation lors de l’ajout d’une fonctionnalité, lors d’un changement de la structure comme celui que vous avez effectué dans cette étape, ou quand vous avez procédé à une refactorisation du code. Vérifiez également avec les autres membres de votre équipe quelle granularité des validations convient le mieux à tous.
 
 La fréquence à laquelle vous validez et celle à laquelle vous envoyez (push) les validations dans un dépôt distant sont deux problèmes différents. Vous pouvez accumuler plusieurs validations dans votre dépôt local avant de les envoyer (push) dans le dépôt distant. Là encore, la fréquence à laquelle vous validez dépend de la façon dont votre équipe veut gérer le dépôt.
 
-## <a name="step-2-2-use-a-template-to-render-a-page"></a>Étape 2-2 : Utiliser un modèle pour restituer une page
+## <a name="step-2-2-use-a-template-to-render-a-page"></a>Étape 2-2 : Utiliser un modèle pour afficher une page
 
 La fonction `home` que vous avez jusqu’à présent dans *views.py* ne génère rien de plus qu’une réponse HTTP de texte brut pour la page. Cependant, la plupart des pages web réelles répondent avec des pages HTML riches qui intègrent souvent des données dynamiques. En effet, la raison principale pour définir une vue en utilisant une fonction est de générer du contenu dynamiquement.
 
@@ -194,23 +196,23 @@ La fonction `home` que vous avez jusqu’à présent dans *views.py* ne génère
 
 1. Validez vos modifications auprès du contrôle de code source et si vous le souhaitez, mettez à jour votre dépôt distant, comme décrit dans [l’étape 2-1](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : les modèles de page doivent-ils être dans un fichier distinct ?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles de page doivent-ils être dans un fichier distinct ?
 
-Réponse : bien que les modèles soient généralement conservés dans des fichiers HTML distincts, vous pouvez également utiliser un modèle inclus. L’utilisation d’un fichier distinct est recommandée, toutefois, pour maintenir une séparation nette entre la balise et le code.
+Réponse : Bien que les modèles soient généralement conservés dans des fichiers HTML distincts, vous pouvez également utiliser un modèle inline. L’utilisation d’un fichier distinct est recommandée, toutefois, pour maintenir une séparation nette entre la balise et le code.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Question : les modèles doivent-ils utiliser l’extension de fichier .html ?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles doivent-ils utiliser l’extension de fichier .html ?
 
-Réponse : l’extension *.html* pour les fichiers de modèle de page est entièrement facultative, car vous identifiez toujours le chemin relatif exact du fichier dans le premier argument de la fonction `render_template`. Toutefois, Visual Studio (et d’autres éditeurs) en général vous offrent des fonctionnalités comme la complétion de code et la coloration syntaxique avec des fichiers *.html*, ce qui compense le fait que les modèles de page ne soient pas strictement HTML.
+Réponse : L’extension *.html* des fichiers de modèles de page est complètement facultative, car vous identifiez toujours le chemin relatif exact du fichier dans le premier argument de la fonction `render_template`. Toutefois, Visual Studio (et d’autres éditeurs) en général vous offrent des fonctionnalités comme la complétion de code et la coloration syntaxique avec des fichiers *.html*, ce qui compense le fait que les modèles de page ne soient pas strictement HTML.
 
 En fait, quand vous travaillez avec un projet Flask, Visual Studio détecte automatiquement lorsque le fichier HTML que vous êtes en train de modifier est réellement un modèle Flask et fournit certaines fonctionnalités de saisie semi-automatique. Par exemple, quand vous commencez à saisir un commentaire sur le modèle de page Flask, `{#`, Visual Studio vous donne automatiquement les caractères de fermeture `#}`. Les commandes **Commenter la sélection** et **Supprimer les marques de commentaire de la sélection** (sur le menu **Modifier** > **Avancé** et la barre d’outils) utilisent également les commentaires des modèles au lieu des commentaires HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Question : lorsque j’exécute le projet, je vois une erreur indiquant qu’il est impossible de trouver le modèle. Quel est le problème ?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quand j’exécute le projet, je vois une erreur indiquant que le modèle est introuvable. Quel est le problème ?
 
-Réponse : si vous rencontrez des erreurs indiquant que le modèle est introuvable, vérifiez que vous avez ajouté l’application au script *settings.py* du projet Flask dans la liste `INSTALLED_APPS`. Sans cette entrée, Flask ne saura pas qu’il doit rechercher dans le dossier *templates* de l’application.
+Réponse : Si vous rencontrez des erreurs indiquant que le modèle est introuvable, vérifiez que vous avez ajouté l’application au fichier *settings.py* du projet Flask dans la liste `INSTALLED_APPS`. Sans cette entrée, Flask ne saura pas qu’il doit rechercher dans le dossier *templates* de l’application.
 
-### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Question : les modèles peuvent-ils être organisés selon d’autres sous-dossiers ?
+### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles peuvent-ils être organisés dans des sous-dossiers ?
 
-Réponse : oui, vous pouvez utiliser des sous-dossiers, puis référencer le chemin relatif sous *templates* dans les appels à `render_template`. Procéder ainsi est un excellent moyen pour créer efficacement des espaces de noms pour vos modèles.
+Réponse : Oui, vous pouvez utiliser des sous-dossiers, puis référencer le chemin relatif sous *templates* dans les appels à `render_template`. Procéder ainsi est un excellent moyen pour créer efficacement des espaces de noms pour vos modèles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -220,4 +222,4 @@ Réponse : oui, vous pouvez utiliser des sous-dossiers, puis référencer le che
 ## <a name="go-deeper"></a>Approfondir la question
 
 - [Flask - Démarrage rapide : Rendu des modèles](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

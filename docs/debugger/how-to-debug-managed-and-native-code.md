@@ -1,7 +1,7 @@
 ---
-title: 'Tutoriel : Déboguer du code managé et du code natif (mode mixte)'
+title: 'Tutoriel : Déboguer du code C# et C++ (mode mixte)'
 description: Découvrez comment déboguer une DLL native d’une application .NET Core ou .NET Framework avec le débogage en mode mixte
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257275"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051447"
 ---
-# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et du code C++ dans la même session de débogage
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et C++ dans la même session de débogage
 
 Visual Studio vous permet d’activer plusieurs types de débogueur dans une session de débogage, qui est appelée « débogage en mode mixte ». Dans ce tutoriel, vous découvrez comment déboguer du code managé et du code natif dans une même session de débogage. 
 

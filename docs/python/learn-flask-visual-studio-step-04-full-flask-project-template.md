@@ -1,5 +1,6 @@
 ---
-title: Tutoriel – Découvrir Flask dans Visual Studio, étape 4
+title: Tutoriel d’apprentissage de Flask dans Visual Studio - étape 4, modèles de projet web
+titleSuffix: ''
 description: Une procédure pas à pas montrant les principes de base de Flask dans le contexte de projets Visual Studio, en particulier les fonctionnalités fournies par les modèles Projet web Flask et Projet web Flask/Jade.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775956"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051699"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>Étape 4 : Utiliser le modèle Projet web Flask complet
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Flask complet
 
-**Étape précédente : [servir les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Étape précédente : [Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Maintenant que vous avez exploré les concepts de base de Flask en créant une application sur le modèle « Projet d’application Flask vide » dans Visual Studio, vous pouvez facilement comprendre l’application complète qui est produite par le modèle « Projet web Flask ».
 
@@ -33,7 +35,7 @@ Dans cette étape vous pouvez désormais :
 
 Cet article s’applique également au modèle « Projet web Flask/Jade », qui produit une application identique à celle du « Projet web Flask » en utilisant le moteur de création de modèles Jade au lieu de Jinja. Vous pouvez trouver des détails supplémentaires à la fin de cet article.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Étape 4-1 : créer un projet à partir du modèle
+## <a name="step-4-1-create-a-project-from-the-template"></a>Étape 4-1 : Créer un projet à partir du modèle
 
 1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningFlask** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Ou bien, si vous souhaitez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
 
@@ -74,9 +76,9 @@ Le modèle « Projet web Flask » crée la structure ci-dessous. Le contenu est 
   - Le dossier *static* contient des sous-dossiers nommés *content* (fichiers CSS), *fonts* (fichiers de polices) et *scripts* (fichiers JavaScript).
   - Le dossier *templates* contient un modèle de base *layout.html* avec *about.html*, *contact.html* et *index.html* pour des pages spécifiques qui étendent chacune *layout.html*.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
 
-Réponse : oui, mais pour ce faire, gardez à l’esprit que différents projets sont susceptibles d’utiliser différents packages au fil du temps et par conséquent, un environnement virtuel partagé doit contenir tous les packages pour tous les projets qui l’utilisent.
+Réponse : Oui, mais pour ce faire, gardez à l’esprit que différents projets sont susceptibles d’utiliser différents packages au fil du temps et par conséquent, un environnement virtuel partagé doit contenir tous les packages pour tous les projets qui l’utilisent.
 
 Néanmoins, pour utiliser un environnement virtuel existant, procédez comme suit :
 
@@ -84,7 +86,7 @@ Néanmoins, pour utiliser un environnement virtuel existant, procédez comme sui
 1. Dans **Explorateur de solutions**, cliquez avec le bouton de droite sur le nœud **Environnements Python** et sélectionnez **Ajouter un environnement virtuel existant**.
 1. Accédez au dossier contenant l’environnement virtuel et sélectionnez-le, puis sélectionnez **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Étape 4-2 : comprendre les affichages et les modèles de page créés par le modèle de projet
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Étape 4-2 : Comprendre les vues et les modèles de pages créés par le modèle de projet
 
 Comme vous pouvez le constater lors de l’exécution du projet, l’application contient trois vues : Accueil, À propos et Contact. Le code de ces affichages se trouve dans le dossier *FlaskWeb/views.py*. Chaque fonction d’une vue appelle simplement `flask.render_template` avec le chemin vers un modèle et une liste variable d’arguments pour les valeurs à donner au modèle. Par exemple, la page About est gérée par la fonction `about` (dont le décorateur fournit le routage d’URL) :
 
@@ -235,4 +237,4 @@ N’hésitez pas à faire des essais avec les syntaxes de Jinja et de Jade pour 
 
 - [Écriture de votre première application Flask, partie 4 - Formulaires et vues génériques](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade sur GitHub (Documentation)](https://github.com/liuliqiang/pyjade) (github.com)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

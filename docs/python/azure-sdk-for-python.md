@@ -1,7 +1,7 @@
 ---
 title: Kit de développement logiciel (SDK) Azure pour Python
 description: Le kit SDK Azure pour Python facilite l’utilisation des services Microsoft Azure à partir d’applications Python fonctionnant sur n’importe quelle plateforme.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050220"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062882"
 ---
-# <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
+# <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Consommer les services Azure à l’aide du kit SDK Azure pour Python
 
 Le kit SDK Azure pour Python facilite l’utilisation et la gestion des services Microsoft Azure à partir d’applications fonctionnant sur Windows, MacOS et Linux.
 

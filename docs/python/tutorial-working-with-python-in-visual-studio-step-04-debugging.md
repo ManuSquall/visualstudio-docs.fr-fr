@@ -1,5 +1,6 @@
 ---
-title: 'Utilisation du didacticiel Python - Étape 4 : Débogage'
+title: 'Tutoriel : Python dans Visual Studio, étape 4, débogage'
+titleSuffix: ''
 description: Étape 4 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment exécuter le code Python dans le débogueur.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220132"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060418"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Étape 4 : Exécuter du code dans le débogueur
+# <a name="step-4-run-code-in-the-debugger"></a>Étape 4 : Exécuter du code dans le débogueur
 
 **Étape précédente : [Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 

@@ -1,5 +1,6 @@
 ---
-title: Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
+title: Créer une interface utilisateur - Blend pour Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890140"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059858"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 
@@ -46,7 +47,7 @@ Vous pouvez utiliser le panneau **Outils** dans Blend pour Visual Studio pour c
 |![Outils de composant](../designers/media/b1_5.png)|**Outils de composant** Donne accès au panneau **Composants** et affiche le dernier composant utilisé de la bibliothèque.|![Légende E](../designers/media/b5_label_e.png)|**Contrôles de texte**|
 |||![Légende F](../designers/media/b5_label_f.png)|**Contrôles courants**|
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [La barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [La barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="tour-of-the-assets-panel"></a>Présentation du panneau Composants
 
@@ -115,7 +116,7 @@ Cet panneau permet d'afficher et de modifier les propriétés d'un objet. Vous p
 |![Légende 16](../designers/media/b5_label_16.png)|**Curseur de dégradé** S’affiche uniquement si un pinceau de dégradé est sélectionné.|
 |![Afficher les propriétés avancées](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Afficher les propriétés avancées** Affiche les catégories de propriétés moins fréquemment utilisées.|
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Panneau Propriétés](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [La barre d’outils](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Voir aussi
 

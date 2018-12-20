@@ -1,5 +1,5 @@
 ---
-title: Utiliser des expressions régulières dans Visual Studio
+title: Utiliser les expressions régulières
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050298"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063796"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio utilise les [expressions régulières du .NET Framework](/dotnet/s
 
 ## <a name="replacement-patterns"></a>Modèles de substitution
 
-Pour utiliser un groupe de capture numéroté, placez le groupe entre parenthèses dans le modèle d’expression régulière. Utilisez `$number`, où `number` est un entier commençant à 1, pour spécifier un groupe numéroté spécifique dans un modèle de remplacement. Par exemple, l’expression régulière groupée `(\d)([a-z])` définit deux groupes : le premier contient un chiffre décimal unique tandis que le deuxième contient un caractère unique compris entre **a** et **z**. L’expression recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` référence le premier groupe uniquement et convertit la chaîne en **z1 z2 z3 z4**.
+Pour utiliser un groupe de capture numéroté, placez le groupe entre parenthèses dans le modèle d’expression régulière. Utilisez `$number`, où `number` est un entier commençant à 1, pour spécifier un groupe numéroté spécifique dans un modèle de remplacement. Par exemple, l’expression régulière groupée `(\d)([a-z])` définit deux groupes : le premier contient un chiffre décimal unique tandis que le deuxième contient un caractère unique compris entre **a** et **z**. L’expression recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` référence le premier groupe uniquement et convertit la chaîne en **z1 z2 z3 z4**.
 
 Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions dans les expressions régulières (Guide .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 

@@ -1,5 +1,5 @@
 ---
-title: Créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web dans Visual Studio
+title: Créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896742"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068407"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Guide pratique pour créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procédure : créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances Web
 
 Vous pouvez créer un éditeur de contenu personnalisé permettant de modifier le contenu du corps de type chaîne ou du corps binaire d’une demande de service web, de type SOAP, REST, asmx, wcf, RIA ou autre.
 
@@ -327,9 +327,9 @@ Pour plus d’informations, consultez [Page Application, Concepteur de projets (
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md)
+- [Guide pratique pour créer un plug-in au niveau de la requête](../test/how-to-create-a-request-level-plug-in.md)
 - [Coder une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Coder une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)
 - [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Guide pratique pour créer un complément Visual Studio pour l’afficheur de résultats de test de performances web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Guide pratique pour créer un complément Visual Studio pour l’Afficheur de résultats de test de performances Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités de l’éditeur de code dans Visual Studio
+title: Fonctionnalités de l’éditeur de code
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349073"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160112"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
@@ -60,8 +60,8 @@ De nombreuses fonctionnalités avancées sont disponibles dans le menu **Éditio
 |Remplacer les tabulations par des espaces|Remplace les tabulations à gauche par des espaces. Si vous souhaitez convertir tous les espaces de votre fichier en tabulations (ou toutes les tabulations en espaces), vous pouvez utiliser les commandes `Edit.ConvertSpacesToTabs` et `Edit.ConvertTabsToSpaces`. Ces commandes n’apparaissent pas dans les menus de Visual Studio, mais vous pouvez les appeler à partir de la fenêtre **Accès rapide** ou de la fenêtre Commande.|
 |Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion.|
 |Mettre en minuscules|Met tous les caractères de la sélection en minuscules ou, en l’absence de sélection, met en minuscule le caractère au point d’insertion.|
-|Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **Alt**+**Haut**.|
-|Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **Alt**+**Bas**.|
+|Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **Alt**+**Flèche Haut**.|
+|Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **Alt**+**Flèche Bas**.|
 |Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active.|
 |Afficher les espaces blancs|Affiche les espaces sous forme de points et les tabulations sous forme de flèches. La fin d’un fichier est indiquée par un glyphe rectangulaire. Si l’option **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **Retour automatique à la ligne** > **Afficher des glyphes visuels pour le retour automatique à la ligne** est sélectionnée, ce glyphe s’affiche également.|
 |Retour automatique à la ligne|Rend visibles toutes les lignes d’un document dans la fenêtre de code. Vous pouvez activer et désactiver cette fonctionnalité dans les paramètres **Éditeur de texte – Tous les langages** (**Outils** > **Options** > **Éditeur de texte** > **Tous les langages**).|
@@ -91,7 +91,7 @@ Pour plus d’informations sur la personnalisation de l’éditeur, consultez [P
 ## <a name="see-also"></a>Voir aussi
 
 - [Éditeur de code source (Visual Studio pour Mac)](/visualstudio/mac/source-editor)
-- [IDE Visual Studio](../ide/visual-studio-ide.md)
+- [IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Bien démarrer avec C++ dans Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Bien démarrer avec C# et ASP.NET dans Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Bien démarrer avec Python dans Visual Studio](../ide/quickstart-python.md)

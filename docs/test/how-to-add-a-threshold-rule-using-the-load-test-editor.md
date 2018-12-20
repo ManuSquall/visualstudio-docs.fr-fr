@@ -1,5 +1,5 @@
 ---
-title: Ajouter une règle de seuil pour un test de charge dans Visual Studio
+title: Ajouter une règle de seuil pour un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896326"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063368"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Guide pratique pour ajouter une règle de seuil à l’aide de l’éditeur de test de charge
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procédure : ajouter une règle de seuil à l’aide de l’éditeur de test de charge
 
 Les règles de seuil contenues dans des tests de charge comparent une valeur de compteur de performance à une valeur de constante ou une autre valeur de compteur de performance.
 
@@ -38,7 +38,7 @@ Les règles de seuil contenues dans des tests de charge comparent une valeur de 
 
      La boîte de dialogue **Ajouter une règle de seuil** s’affiche.
 
-5.  Vous pouvez choisir parmi deux types de règles : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
+5.  Vous avez le choix entre deux types de règle : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
 
     > [!NOTE]
     > Affectez à la propriété **Alerte en cas de dépassement** la valeur **True** pour indiquer que le dépassement d’un seuil constitue un problème, ou la valeur **False** pour indiquer que le fait de ne pas atteindre un seuil constitue un problème.

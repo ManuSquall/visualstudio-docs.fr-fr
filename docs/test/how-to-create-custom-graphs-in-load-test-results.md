@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour créer des graphiques personnalisés avec des résultats des tests de charge dans Visual Studio
+title: 'Procédure : créer des graphes personnalisés dans les résultats des tests de charge'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895819"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055398"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Guide pratique pour créer des graphiques personnalisés dans les résultats d’un test de charge
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procédure : créer des graphes personnalisés dans les résultats des tests de charge
 
 Vous pouvez concevoir des graphiques qui affichent des informations spécifiques à propos des résultats de test de charge. Vous concevez un graphique personnalisé en spécifiant les compteurs de test de charge que le graphique affichera.
 
@@ -40,9 +40,9 @@ Vous pouvez appliquer la procédure suivante pendant l'exécution d'un test de c
 
      Le nouveau graphique s’affiche dans **l’Analyseur de test de charge**. Il apparaît dans le panneau graphique sélectionné et remplace le graphique qui s'y trouvait précédemment.
 
-3.  Personnalisez le nouveau graphique en ajoutant des compteurs. Pour plus d’informations, consultez [Guide pratique pour ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Personnalisez le nouveau graphique en ajoutant des compteurs. Pour plus d'informations, voir [Procédure : ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Guide pratique pour ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Guide pratique pour ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

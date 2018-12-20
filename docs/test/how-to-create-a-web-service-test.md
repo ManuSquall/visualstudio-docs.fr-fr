@@ -1,5 +1,5 @@
 ---
-title: Créer un test de service web dans Visual Studio
+title: Créer un test de service web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894467"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053397"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
+# <a name="how-to-create-a-web-service-test"></a>Procédure : Créer un test de service web
 
 Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 

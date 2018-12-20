@@ -1,24 +1,60 @@
 ---
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000724"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068378"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="3903"></a>3.9.0.3
+ Publication : 28 novembre 2018
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Intégration :**
+
+    -   Correction des problèmes intellisense et de rechargement de projet lors de l’ajout ou de la suppression de scripts situés dans le tout premier projet.
+
+## <a name="3902"></a>3.9.0.2
+ Publication : 19 novembre 2018
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Débogueur :**
+
+    -   Correction d’un blocage dans la bibliothèque utilisée pour communiquer avec le moteur de débogage de Unity, à cause duquel Visual Studio ou Unity se figeait, en particulier lorsque l’on sélectionnait « Attacher à Unity » ou que l’on redémarrait le jeu.
+
+## <a name="3901"></a>3.9.0.1
+ Publication : 15 novembre 2018
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Intégration :**
+
+    -   Correction du problème d’activation du plug-in Unity lorsqu’un autre éditeur par défaut était sélectionné.
+
+## <a name="3900"></a>3.9.0.0
+ Publication : 13 novembre 2018
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+-   **Génération de projet :**
+
+    -   Restauration de la solution de contournement d’un bogue de performances Unity corrigé par Unity.
 
 ## <a name="3807"></a>3.8.0.7
  Publiée le 20 septembre 2018
@@ -27,7 +63,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   **Débogueur :**
 
-    -   Correction d’un blocage dans la bibliothèque utilisée pour communiquer avec le moteur de débogage de Unity, à cause duquel Visual Studio ou Unity se figeait, en particulier lorsque l’on sélectionnait « Attacher à Unity » ou que l’on redémarrait le jeu.
+    -   (Reporté depuis 3.9.0.2) Correction d’un blocage dans la bibliothèque utilisée pour communiquer avec le moteur de débogage de Unity, à cause duquel Visual Studio ou Unity se figeait, en particulier lorsque l’on sélectionnait « Attacher à Unity » ou que l’on redémarrait le jeu.
 
 ## <a name="3806"></a>3.8.0.6
  Publication : 27 août 2018
@@ -71,7 +107,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   **Génération de projet :**
 
-    -   Restauration de la solution de contournement d’un bogue de performances Unity corrigé par Unity.
+    -   (Reporté depuis 3.9.0.0) Restauration de la solution de contournement d’un bogue de performances Unity corrigé par Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Publication : 7 juillet 2018
@@ -634,7 +670,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   Correction des références aux assemblys UnityEngine et UnityEditor pour les applications du Windows Store.
 
--   Correction de l’erreur lors de l’exécution pas à pas dans le débogueur : impossible de parcourir, exception générale.
+-   Correction de l’erreur lors de l’exécution pas à pas dans le débogueur : Impossible de parcourir, exception générale.
 
 -   Correction du nombre d’accès des points d’arrêt dans Visual Studio 2015.
 
@@ -714,13 +750,13 @@ Journal des modifications Visual Studio Tools pour Unity
 
     -   Installer le package Visual Studio Tools pour Unity pour Unity 5.
 
--   **Documentation :** améliorer les performances de la génération de la documentation.
+-   **Documentation :** Améliorer les performances de la génération de la documentation.
 
--   **Assistants :** prise en charge de nouvelles méthodes MonoBehavior pour Unity 4.6 et Unity 5.
+-   **Assistants :** Prise en charge de nouvelles méthodes MonoBehavior pour Unity 4.6 et Unity 5.
 
--   **Unity :** indicateurs de recherche non sécurisés et définitions personnalisées dans les fichiers .rsp pendant la génération du fichier projet.
+-   **Unity :** Indicateurs de recherche non sécurisés et définitions personnalisées dans les fichiers .rsp pendant la génération du fichier projet.
 
--   **Interface utilisateur :** ajout de la boîte de dialogue **Options** Visual Studio Tools pour Unity dans Visual Studio.
+-   **Interface utilisateur :** Ajout de la boîte de dialogue **Options** des Outils Visual Studio pour Unity dans Visual Studio.
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
@@ -754,13 +790,13 @@ Journal des modifications Visual Studio Tools pour Unity
 
     -   Envoyer les journaux de console Unity à la liste d’erreurs Visual Studio.
 
--   **Documentation :** corriger la génération de la documentation pour la nouvelle documentation Unity.
+-   **Documentation :** Corriger la génération de la documentation pour la nouvelle documentation Unity.
 
--   **Projet :** déplacer et renommer les fichiers .meta Unity si nécessaire, même dans les dossiers.
+-   **Projet :** Déplacer et renommer les fichiers .meta Unity si nécessaire, même dans les dossiers.
 
--   **Interface utilisateur :** corriger l’ordre des paramètres de la méthode MonoBehavior lors de la génération de code.
+-   **Assistants :** Corriger l’ordre des paramètres de la méthode MonoBehavior lors de la génération de code.
 
--   **Interface utilisateur :** prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.
+-   **Interface utilisateur :** Prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 préversion
  Publication : 12 novembre 2014
@@ -1105,21 +1141,21 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   Correctif de bogue UVS-48 : la saisie de guillemets doubles produit parfois des erreurs et arrête toutes les fonctions (exécution de code, mise en surbrillance de la syntaxe, etc.).
 
--   Résolution de bogue UVS-46 : ouverture de fichier de script dupliqué (UnityScript) quand vous cliquez sur la liste d’erreurs de Visual Studio.
+-   Résolution de bogue UVS-46 : Duplication du fichier de script ouvert (UnityScript) quand vous cliquez sur la liste d’erreurs de Visual Studio.
 
--   Résolution de bogue UVS-42 : le logo de connectivité Unity dans la barre d’état ne traite pas les événements de souris dans Visual Studio 2012.
+-   Résolution de bogue UVS-42 : Le logo de connectivité Unity dans la barre d’état ne traite pas les événements de souris dans Visual Studio 2012.
 
--   Résolution de bogue UVS-44 : CTRL+MAJ+Q n’est pas disponible dans Visual Studio 2012 pour les MonoBehaviours rapides.
+-   Résolution de bogue UVS-44 : La combinaison Ctrl+Maj+Q n’est pas disponible dans Visual Studio 2012 pour les MonoBehaviours rapides.
 
--   Résolution de bogue UVS-40 : les éléments sélectionnés dans l’Explorateur de projets Unity sont illisibles quand la fenêtre est inactive dans le thème « foncé » Visual Studio 2012.
+-   Résolution de bogue UVS-40 : Les éléments sélectionnés dans l’Explorateur de projets Unity sont illisibles quand la fenêtre est inactive dans le thème « foncé » de Visual Studio 2012.
 
--   Résolution de bogue UVS-39 : problème d’échappement des chaînes de création de jetons.
+-   Résolution de bogue UVS-39 : Problème de création de jetons pour les chaînes d’échappement.
 
--   Résolution de bogue UVS-35 : appel de ToString sur les objets durant l’inspection de variables.
+-   Résolution de bogue UVS-35 : Appel de ToString sur des objets durant l’inspection de variables.
 
--   Résolution de bogue UVS-27 : incohérence de la fenêtre Aller au symbole avec le thème « foncé » dans Visual Studio 2012.
+-   Résolution de bogue UVS-27 : Incohérence de la fenêtre Aller au symbole avec le thème « foncé » dans Visual Studio 2012.
 
--   Résolution de bogue UVS-11 : variables locales dans les coroutines.
+-   Résolution de bogue UVS-11 : Variables locales dans les coroutines.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - Version bêta
  Publication : 9 mars 2013
@@ -1225,9 +1261,9 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   Résolution de la façon dont les types sont recherchés dans les assemblys chargés pour l’évaluation d’expression.
 
--   Résolution de bogue UVS-21 : l’évaluation de l’affectation sur les objets Unity n’a aucun effet.
+-   Résolution de bogue UVS-21 : L’évaluation de l’affectation sur les objets Unity n’a aucun effet.
 
--   Résolution de bogue UVS-21 : pointeur non valide durant l’évaluation d’un appel de méthode vers l’API Math Unity.
+-   Résolution de bogue UVS-21 : Pointeur non valide durant l’évaluation d’un appel de méthode à l’API Math Unity.
 
 ## <a name="1080"></a>1.0.8.0
  Publication : 26 septembre 2012

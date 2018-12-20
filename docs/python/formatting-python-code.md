@@ -1,6 +1,6 @@
 ---
-title: Mise en forme de code Python
-description: Guide pratique pour la remise en forme automatique de code Python dans Visual Studio, y compris l’espacement, les instructions, le retour à la ligne et les commentaires.
+title: Mettre en forme le code Python
+description: Visual Studio peut reformater automatiquement du code Python, y compris les espacements, les instructions, le retour à la ligne et les commentaires.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219547"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052191"
 ---
 # <a name="format-python-code"></a>Mettre en forme le code Python
 
@@ -29,7 +30,7 @@ Les options sont définies via **Outils** > **Options** > **Éditeur de texte** 
 
 ![Options de mise en forme Python dans Visual Studio](media/options-editor-formatting.png)
 
-Les options de mise en forme par défaut sont définies pour correspondre à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les paramètres des trois autres onglets sont décrits dans cet article.
+Les options de mise en forme par défaut sont définies pour correspondre à un sur-ensemble du [guide de style PEP 8](https://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les paramètres des trois autres onglets sont décrits dans cet article.
 
 La [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) ajoute également la commande [**Remplir le paragraphe de commentaire**](#fill-comment-paragraph-command) utile au menu **Modifier** > **Avancé**, comme dans une section ultérieure.
 
@@ -112,7 +113,7 @@ L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur m
 
 La commande **Modifier** > **Avancé** > **Remplir le paragraphe de commentaire** (**Ctrl**+**E** > **P**) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
 
-Exemple :
+Par exemple :
 
 ```python
 # foo

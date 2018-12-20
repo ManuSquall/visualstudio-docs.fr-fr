@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513398"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160138"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -60,21 +60,21 @@ Les méthodes d’extension utilisent une icône différente de celle des métho
 
 IntelliSense supprime les membres inutiles de la liste de saisie semi-automatique à l'aide de filtres. C# filtre les listes de saisie semi-automatique qui apparaissent pour les éléments suivants :
 
-- **Interfaces et classes de base** : IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d’interfaces et de classes de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapiez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique, car C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.
+- **Interfaces et classes de base** : IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d'interface et de classe de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapiez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique, car C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.
 
-- **Attributs** : quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, comme <xref:System.Attribute>.
+- **Attributs** : Quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, tels que <xref:System.Attribute>.
 
 - **Clauses catch**
 
-- **Initialiseurs d’objets** : seuls les membres qui peuvent être initialisés apparaissent dans la liste de saisie semi-automatique.
+- **Initialiseurs d’objets** : Seuls les membres qui peuvent être initialisés apparaissent dans la liste de saisie semi-automatique.
 
-- **Mot clé new** : quand vous tapez `new` puis que vous appuyez sur la **barre d’espace**, une liste de complétion apparaît. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.
+- **Mot clé new** : Quand vous tapez `new` et appuyez sur **Espace**, une liste de saisie semi-automatique s’affiche. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.
 
-- **Mot clé enum** : quand vous appuyez sur la **barre d’espace** après un signe égal pour l’affectation d’une enum, une liste de complétion apparaît. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique quand vous tapez le mot clé return et quand vous effectuez une déclaration.
+- **Mot clé enum** : Quand vous appuyez sur **Espace** après un signe égal pour une assignation enum, une liste de saisie semi-automatique apparaît. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique quand vous tapez le mot clé return et quand vous effectuez une déclaration.
 
-- **Opérateurs as et is** : une liste de complétion filtrée s’affiche automatiquement quand vous appuyez sur la **barre d’espace** après avoir tapé le mot clé `as` ou `is`.
+- **Opérateurs as et is** : Une liste de saisie semi-automatique filtrée s’affiche automatiquement quand vous appuyez sur **Espace** après avoir tapé le mot clé `as` ou `is`.
 
-- **Événements** : quand vous tapez le mot clé `event`, la liste de saisie semi-automatique contient uniquement des types délégués.
+- **Événements** : Quand vous tapez le mot clé `event`, la liste de saisie semi-automatique contient uniquement des types délégués.
 
 - **Aide sur les paramètres** : affiche automatiquement la première surcharge de méthode qui correspond aux paramètres que vous entrez. Si plusieurs surcharges de méthode sont disponibles, vous pouvez utilisez les flèches haut et bas pour accéder à la surcharge suivante dans la liste.
 
@@ -116,7 +116,7 @@ L’option Implémenter l’interface génère le nombre minimal de stubs de mé
 
 IntelliSense fournit une option qui vous aidera à implémenter automatiquement les membres d’une classe de base abstraite pendant que vous travaillez dans l’éditeur de code. Normalement, pour implémenter les membres d'une classe de base abstraite, il est nécessaire de créer une nouvelle définition de méthode pour chaque méthode de la classe de base abstraite dans votre classe dérivée. Grâce à IntelliSense, après avoir tapé le nom d’une classe de base abstraite dans une déclaration de classe, une ampoule **Actions rapides** s’affiche. Cette fonctionnalité vous permet d’implémenter automatiquement les méthodes de la classe de base.
 
-Les stubs de méthode générés par la fonctionnalité **Implémenter une classe de base abstraite** sont modélisés par l’extrait de code défini dans le fichier *MethodStub.snippet*. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
+Les stubs de méthode générés par la fonctionnalité **Implémenter une classe de base abstraite** sont modélisés par l’extrait de code défini dans le fichier *MethodStub.snippet*. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Générer à partir de l'utilisation
 
@@ -165,4 +165,4 @@ Si vous appuyez sur la touche **Tab**, IntelliSense choisit une méthode avec la
 ## <a name="see-also"></a>Voir aussi
 
 - [Utiliser IntelliSense](../ide/using-intellisense.md)
-- [IDE Visual Studio](../ide/visual-studio-ide.md)
+- [IDE Visual Studio](../get-started/visual-studio-ide.md)

@@ -1,22 +1,23 @@
 ---
 title: Référence sur la fenêtre Environnements Python
 description: Cet article donne des informations sur chacun des onglets qui s’affichent sur la fenêtre Environnements Python dans Visual Studio.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996075"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051427"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
@@ -102,7 +103,7 @@ Au moment d’installer des packages dans un environnement situé dans une zone 
 
 ![Invite d’élévation pour l’installation de packages](media/environments-pip-elevate.png)
 
-**Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. Quand vous sélectionnez **Continuer sans privilège d’administrateur**, une tentative d’installation du package a lieu, mais pip ne parvient pas à créer de dossiers, et une sortie telle que **Erreur : impossible de créer « C:\Program Files\Anaconda3\Lib\site-packages\png.py » : Autorisation refusée** s’affiche.
+**Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. Quand vous sélectionnez **Continuer sans privilège d’administrateur**, une tentative d’installation du package a lieu, mais pip ne parvient pas à créer de dossiers, et une sortie telle que **Erreur : impossible de créer « C:\Program Files\Anaconda3\Lib\site-packages\png.py » : Autorisation refusée.** s’affiche.
 
 En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils** > **Options** > **Python Tools** > **Général**, puis sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**.
 

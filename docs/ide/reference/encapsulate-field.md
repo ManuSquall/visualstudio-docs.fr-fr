@@ -1,5 +1,5 @@
 ---
-title: Refactoriser un champ en propriété dans Visual Studio
+title: Refactoriser un champ en propriété
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942918"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049929"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Encapsuler un champ (refactorisation)
 
@@ -29,11 +29,11 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** vous permet de transformer un champ en une propriété et de mettre à jour toutes les utilisations de ce champ afin d’utiliser cette nouvelle propriété.
+**Quoi :** Vous permet de transformer un champ en une propriété et de mettre à jour toutes les utilisations de ce champ afin d’utiliser cette nouvelle propriété.
 
-**Quand :** vous souhaitez déplacer un champ vers une propriété et mettre à jour toutes les références à ce champ.
+**Quand :** Vous souhaitez déplacer un champ vers une propriété et mettre à jour toutes les références à ce champ.
 
-**Pourquoi :** vous voulez donner à d’autres classes l’accès à un champ, mais ne souhaitez pas que ces classes dispose d’un accès direct.  En encapsulant le champ dans une propriété, vous pouvez écrire un code pour vérifier la valeur assignée, par exemple.
+**Pourquoi :** Vous voulez donner à d’autres classes l’accès à un champ, mais ne souhaitez pas que ces classes disposent d’un accès direct.  En encapsulant le champ dans une propriété, vous pouvez écrire un code pour vérifier la valeur assignée, par exemple.
 
 ## <a name="how-to"></a>Procédure
 

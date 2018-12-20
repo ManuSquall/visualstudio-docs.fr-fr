@@ -1,5 +1,6 @@
 ---
 title: ID de composant et de charge de travail de Visual Studio Desktop Express 2017
+titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide de la ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c478986ba79d84bb4cc93e7437a9a8a6aac33a
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6b11aec1291847e917ad7c5d53ad81a3a5b37390
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607651"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051741"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Répertoire de composants Visual Studio 2017 Desktop Express
 
@@ -41,9 +42,9 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ## <a name="express-for-windows-desktop"></a>Express pour Windows Desktop
 
-**ID :** Microsoft.VisualStudio.Workload.WDExpress
+**ID :** Microsoft.VisualStudio.Workload.WDExpress
 
-**Description :** générez des applications natives et gérées comme WPF, WinForms et Win32 avec modification du code avec prise en charge de la syntaxe, contrôle de code source et gestion des éléments de travail. Inclut la prise en charge de C#, Visual Basic et Visual C++.
+**Description :** Générez des applications natives et gérées comme WPF, WinForms et Win32 avec modification du code avec prise en charge de la syntaxe, contrôle de code source et gestion des éléments de travail. Inclut la prise en charge de C#, Visual Basic et Visual C++.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 

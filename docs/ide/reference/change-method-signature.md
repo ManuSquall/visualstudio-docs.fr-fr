@@ -1,5 +1,5 @@
 ---
-title: Refactoriser une signature de méthode dans Visual Studio
+title: Refactoriser la signature de la méthode
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842285"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062333"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Changer une signature de méthode (refactorisation)
 
@@ -30,11 +30,11 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** vous permet de supprimer ou de modifier l’ordre des paramètres d’une méthode.
+**Quoi :** Vous permet de supprimer ou de modifier l’ordre des paramètres d’une méthode.
 
-**Quand :** vous souhaitez déplacer ou supprimer un paramètre de méthode actuellement utilisé dans différents emplacements.
+**Quand :** Vous souhaitez déplacer ou supprimer un paramètre de méthode actuellement utilisé dans différents emplacements.
 
-**Pourquoi :** vous pouvez manuellement supprimer et réorganiser les paramètres, puis rechercher tous les appels à cette méthode et les modifier un par un, mais cela peut entraîner des erreurs.  Cet outil de refactorisation effectuera automatiquement cette tâche.
+**Pourquoi :** Vous pouvez manuellement supprimer et réorganiser les paramètres, puis rechercher tous les appels à cette méthode et les modifier un par un, mais cela peut entraîner des erreurs.  Cet outil de refactorisation effectuera automatiquement cette tâche.
 
 ## <a name="how-to"></a>Procédure
 
