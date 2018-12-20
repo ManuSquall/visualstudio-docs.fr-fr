@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à une application autonome native et collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à une application native et collecter des données concurrentielles
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220493"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067043"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application autonome native et collecter des données de concurrence en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le profileur à une application autonome native et collecter des données concurrentielles en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application native (C/C++) autonome en cours d’exécution et collecter des données sur les contentions de threads.  
   
 > [!NOTE]

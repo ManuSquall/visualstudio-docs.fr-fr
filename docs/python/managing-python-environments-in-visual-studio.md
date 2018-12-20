@@ -1,7 +1,7 @@
 ---
 title: Gérer des interpréteurs et des environnements Python
 description: Utilisez la fenêtre Environnements Python pour gérer les environnements globaux, virtuels et conda, installer des interpréteurs et des packages Python et affecter des environnements à des projets Visual Studio.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349359"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063208"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -57,7 +57,9 @@ Dans les deux cas, la fenêtre **Environnements Python** apparaît à côté de 
 
 Visual Studio recherche les environnements globaux installés à l’aide du Registre (conformément au [PEP 514](https://www.python.org/dev/peps/pep-0514/)) ainsi que les environnements virtuels et les environnements conda (consultez [Types d’environnement](#types-of-environments)). Si un environnement attendu ne figure pas dans la liste, consultez [Identifier manuellement un environnement existant](#manually-identify-an-existing-environment).
 
-Quand vous sélectionnez un environnement dans la liste, Visual Studio affiche diverses propriétés et commandes pour cet environnement sous l’onglet **Vue d’ensemble**. Par exemple, vous pouvez voir dans l’image ci-dessus que l’emplacement de l’interpréteur est *C:\Python36-32*. Utilisez la liste déroulante sous la liste des environnements pour accéder aux différents onglets, comme **Packages** et **IntelliSense**. Ces onglets sont décrits dans les [Informations de référence sur les onglets de la fenêtre Environnements Python](python-environments-window-tab-reference.md).
+Quand vous sélectionnez un environnement dans la liste, Visual Studio affiche diverses propriétés et commandes pour cet environnement sous l’onglet **Vue d’ensemble**. Par exemple, vous pouvez voir dans l’image ci-dessus que l’emplacement de l’interpréteur est *C:\Python36-32*. Les quatre commandes au bas de l’onglet **Vue d’ensemble** ouvrent chacune une invite de commandes avec l’interpréteur en cours d’exécution. Pour plus d’informations, consultez [Informations de référence sur les onglets de la fenêtre Environnements Python - Vue d’ensemble](python-environments-window-tab-reference.md#overview-tab).
+
+Utilisez la liste déroulante sous la liste des environnements pour accéder aux différents onglets, comme **Packages** et **IntelliSense**. Ces onglets sont également décrits dans les [Informations de référence sur les onglets de la fenêtre Environnements Python](python-environments-window-tab-reference.md).
 
 La sélection d’un environnement ne change pas sa relation avec les projets. L’environnement par défaut, en gras dans la liste, est celui utilisé par Visual Studio pour tous les nouveaux projets. Pour utiliser un autre environnement avec de nouveaux projets, utilisez la commande **Définir cet environnement comme valeur par défaut pour les nouveaux projets**. Dans le contexte d’un projet, vous pouvez toujours sélectionner un environnement spécifique. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 

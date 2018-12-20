@@ -1,7 +1,8 @@
 ---
-title: Installer Visual Studio 2017 │ Microsoft Docs
+title: Installer Visual Studio
+titleSuffix: ''
 description: Découvrez comment installer Visual Studio, étape par étape.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349687"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159735"
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
@@ -125,7 +126,7 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 ## <a name="step-7---change-the-installation-location-optional"></a>Étape 7 : Changer l’emplacement d’installation (facultatif)
 
-**Nouveauté de la version 15.7** : vous pouvez désormais réduire l’encombrement de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
+**Nouveautés de la version 15.7** : Vous pouvez désormais réduire l’encombrement de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
   ![Visual Studio 2017 : changer l’emplacement d’installation](media/installation-options-by-location.png "Changer l’emplacement d’installation")
 

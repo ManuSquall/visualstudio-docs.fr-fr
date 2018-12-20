@@ -1,5 +1,5 @@
 ---
-title: Présentation du récapitulatif des résultats de test de charge dans Visual Studio
+title: Vue d'ensemble du résumé des résultats des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895013"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062607"
 ---
 # <a name="load-test-results-summary-overview"></a>Présentation du récapitulatif des résultats des tests de charge
 
-Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
+Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d'informations, voir [Procédure : accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Mode Résumé](../test/media/ltest_summaryview.png)
 
@@ -39,11 +39,11 @@ Le résumé du test de charge est divisé en sections. Les sections initiales ap
 
 - Résultats globaux
 
-- Statistique clé : 5 premières pages les plus lentes
+- Statistique clé : Top 5 des pages les plus lentes
 
-- Statistique clé : 5 premiers tests les plus lents
+- Statistique clé : Top 5 des tests les plus lents
 
-- Statistique clé : 5 premières opérations SQL les plus lentes
+- Statistique clé : Top 5 des opérations SQL les plus lentes
 
     > [!NOTE]
     > La section relative aux opérations SQL s'affiche uniquement si le traçage SQL est activé dans le test de charge.
@@ -70,19 +70,19 @@ La section des informations relatives à la série de tests contient des informa
 
 La section relative aux résultats globaux contient une synthèse des résultats du test, dont le nombre de requêtes par seconde, le nombre total de requêtes ayant échoué, le temps de réponse moyen et le temps de réponse moyen de la page.
 
-## <a name="key-statistic-top-5-slowest-pages"></a>Statistique clé : 5 pages les plus lentes
+## <a name="key-statistic-top-5-slowest-pages"></a>Statistique clé : Top 5 des pages les plus lentes
 
-La section relative aux pages les plus lentes contient les 5 premières pages les plus lentes du test de charge. L'URL et le temps de chargement moyens de la page sont affichés pour chaque page. Les pages sont répertoriées dans l'ordre décroissant. Vous pouvez choisir l’URL d’une page pour ouvrir la table **Pages** et obtenir plus de détails sur cette page. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La section relative aux pages les plus lentes contient les 5 premières pages les plus lentes du test de charge. L'URL et le temps de chargement moyens de la page sont affichés pour chaque page. Les pages sont répertoriées dans l'ordre décroissant. Vous pouvez choisir l’URL d’une page pour ouvrir la table **Pages** et obtenir plus de détails sur cette page. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 La valeur du centile pour **95% du temps de réponse de la page (s)** indique que 95 % des pages ont été traitées dans un délai inférieur à cette durée en secondes.
 
-## <a name="key-statistic-top-5-slowest-tests"></a>Statistique clé : 5 tests les plus lents
+## <a name="key-statistic-top-5-slowest-tests"></a>Statistique clé : Top 5 des tests les plus lents
 
 La section relative aux tests les plus lents contient les 5 premiers tests les plus lents du test de charge. Le nom et la durée moyenne du test sont affichés pour chaque test. Les tests sont répertoriés dans l'ordre décroissant. Vous pouvez choisir le nom d’un test pour ouvrir la table **Tests** et obtenir plus de détails sur ce test. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 La valeur du centile pour **95% du temps de test (s)** indique que 95 % des tests ont été effectués dans un délai inférieur à cette durée en secondes.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Statistique clé : 5 opérations SQL les plus lentes
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Statistique clé : Top 5 des opérations SQL les plus lentes
 
 Si le traçage SQL est activé dans le test de charge, la section relative aux requêtes les plus lentes contient les 5 premières requêtes les plus lentes du test de charge. Le nom et la durée de l'opération sont affichés pour chaque test. La durée est affichée en microsecondes (SQL Server 2005) ou en millisecondes (SQL Server 2000 et versions antérieurs). Les tests sont répertoriés dans l'ordre décroissant en fonction de la durée. Vous pouvez choisir le nom d’une opération pour ouvrir la table **Trace SQL** et obtenir plus de détails sur cette opération. Pour plus d’informations, consultez [Table Données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
@@ -95,7 +95,7 @@ La section relative aux résultats des tests contient une liste de tous les test
 
 ## <a name="page-results"></a>Résultats de la page
 
-La section relative aux résultats de la page contient la liste de toutes les pages web du test de charge. L'URL, le scénario, le nom du test, le temps de réponse moyen de la page et le compte sont affichés. Vous pouvez choisir l’URL d’une page pour ouvrir la table **Pages** et obtenir plus de détails sur cette page. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La section relative aux résultats de la page contient la liste de toutes les pages web du test de charge. L'URL, le scénario, le nom du test, le temps de réponse moyen de la page et le compte sont affichés. Vous pouvez choisir l’URL d’une page pour ouvrir la table **Pages** et obtenir plus de détails sur cette page. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.

@@ -1,5 +1,6 @@
 ---
 title: ID de composant et de charge de travail de Visual Studio Team Explorer 2017
+titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d34c8ea2c79c9d9444e553d37da353e4e3ece3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607443"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066104"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Répertoire des composants Visual Studio Team Explorer 2017
 
@@ -43,7 +44,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 **ID :** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Description :** Expérience de l’interpréteur de commandes de base de Visual Studio, notamment la modification du code prenant en compte la syntaxe, la gestion de code source et la gestion des éléments de travail.
+**Description :** Utilisation de l’interpréteur de commandes de base Visual Studio, modification du code avec prise en charge de la syntaxe, contrôle de code source et gestion des éléments de travail.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 

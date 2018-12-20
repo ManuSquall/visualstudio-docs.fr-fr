@@ -1,5 +1,5 @@
 ---
-title: Taille du fichier journal pour les tests de charge dans Visual Studio
+title: Taille du fichier journal pour les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22cc77426abca46a95fd12c8954fd0965a194f5e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894428"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067273"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Guide pratique pour spécifier la taille maximale du fichier journal pour les tests de charge
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Procédure : spécifier la taille maximale du fichier journal pour les tests de charge
 
 Par défaut, la taille maximale du fichier journal utilisé pour les tests de charge a pour valeur 20 mégaoctets. Vous pouvez changer cette valeur en modifiant le fichier de configuration associé au service du contrôleur.
 

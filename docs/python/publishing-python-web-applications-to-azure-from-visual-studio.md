@@ -1,23 +1,24 @@
 ---
-title: Publication d’une application Python sur Azure App Service
-description: Options de publication d’une application Python sur Azure App Service.
-ms.date: 10/10/2018
+title: Publier une application Python sur Azure App Service
+description: Options de publication d’une application Python sur Azure App Service, y compris le déploiement Git et les conteneurs pour Linux, ainsi que le déploiement vers IIS.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 1c8c48eaa777da973f0a4b21d826bbab384b4536
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459658"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066689"
 ---
 # <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
 
@@ -34,7 +35,7 @@ Le déploiement Git connecte un App Service sur Linux à une branche spécifique
 
 Pour plus d'informations, consultez les articles suivants dans la documentation Azure :
 
-- [Démarrage rapide : Créer une application web Python dans App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fournit une courte procédure pas à pas du processus de déploiement Git à l’aide d’une application Flask simple et d’un déploiement à partir d’un référentiel Git local.
+- [Démarrage rapide : Créer une application web Python dans App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fournit une courte procédure pas à pas du processus de déploiement Git à l’aide d’une application Flask simple et d’un déploiement à partir d’un dépôt Git local.
 - [Comment configurer Python](/azure/app-service/containers/how-to-configure-python) décrit les caractéristiques du conteneur App Service sur Linux et la façon de personnaliser la commande de démarrage Gunicorn pour votre application.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Publier sur App Service sur Linux à l’aide de conteneurs

@@ -1,5 +1,5 @@
 ---
-title: Live Unit Testing dans Visual Studio
+title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626673"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066208"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing avec Visual Studio 2017
 
@@ -81,7 +81,7 @@ Les options configurables sont les suivantes :
 - Répertoire où stocker les données persistantes.
 
 - Possibilité de supprimer toutes les données persistantes. Cette opération est utile lorsque Live Unit Testing se comporte de façon imprévisible ou inattendue, signe que des données persistantes ont été endommagées.
-   
+
 - L’intervalle après lequel un cas de test expire ; la valeur par défaut est 30 secondes.
 
 - Le nombre maximal de processus de test que Live Unit Testing crée.
@@ -203,4 +203,3 @@ Vous pouvez également utiliser les attributs suivants pour exclure des méthode
 - [Blog sur Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [FAQ Live Unit Testing](live-unit-testing-faq.md)
 - [Vidéo Channel 9 : Live Unit Testing dans Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
-

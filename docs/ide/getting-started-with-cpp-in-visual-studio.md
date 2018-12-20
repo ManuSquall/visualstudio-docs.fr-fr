@@ -1,5 +1,5 @@
 ---
-title: Bien démarrer avec C++ dans Visual Studio
+title: Bien démarrer avec C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
@@ -7,18 +7,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459671"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159995"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -156,5 +156,5 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide.
 ## <a name="see-also"></a>Voir aussi
 
 - [Utilisation de l’IDE de Visual Studio pour le développement C++ pour poste de travail](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Procédure pas à pas : création d’une application simple avec C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Procédure pas à pas : Créer une application simple avec C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)

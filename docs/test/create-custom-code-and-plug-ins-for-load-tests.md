@@ -1,5 +1,5 @@
 ---
-title: Créer du code et des plug-ins personnalisés pour les tests de charge dans Visual Studio
+title: Créer un code et des plug-ins personnalisés pour les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895754"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062743"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Créer un code et des plug-ins personnalisés pour les tests de charge
 
@@ -30,10 +30,10 @@ Un plug-in personnalisé utilise du code écrit et attaché à un test de charge
 
 |Tâches|Rubriques associées|
 |-|-----------------------|
-|**Créer un plug-in personnalisé pour votre test de charge :** vous pouvez utiliser l’API de test de charge pour créer un plug-in personnalisé et ajouter des fonctionnalités de test à votre test de charge.|-   [Guide pratique pour utiliser l’API de test de charge](../test/how-to-use-the-load-test-api.md)<br />-   [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)|
-|**Créer un plug-in personnalisé pour un test de performances web :** vous pouvez utiliser l’API de test de performances web pour créer un plug-in personnalisé visant à ajouter des fonctionnalités de test au test de performances web, y compris au niveau de la demande. Il est également possible de créer un test de service web.<br /><br /> Par ailleurs, vous pouvez créer un plug-in d’enregistreur web capable de modifier un test de performances web après son enregistrement, mais avant qu’il ne s’affiche dans l’Afficheur de résultats de test de performances web.|-   [Guide pratique pour utiliser l’API de test de performances web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Guide pratique pour créer un test de service web](../test/how-to-create-a-web-service-test.md)<br />-   [Guide pratique pour créer un plug-in d’enregistreur](../test/how-to-create-a-recorder-plug-in.md)|
-|**Ajouter des fonctionnalités d’IU à l’Afficheur des résultats des tests de performances web :** Vous pouvez ajouter d’autres fonctionnalités d’interface utilisateur à l’Afficheur de résultats de test de performances web à l’aide d’un complément Visual Studio.|-   [Guide pratique pour créer un complément Visual Studio pour l’afficheur de résultats de test de performances web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Créer un éditeur de corps HTTP personnalisé :** vous pouvez créer un éditeur personnalisé pour modifier les réponses XML HTTP binaires ou de chaîne à partir d’un service web.|-   [Guide pratique pour créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances Web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Créer un plug-in personnalisé pour votre test de charge** : vous pouvez utiliser l’API de test de charge pour créer un plug-in personnalisé et ajouter des fonctionnalités de test à votre test de charge.|-   [Guide pratique pour utiliser l’API de test de charge](../test/how-to-use-the-load-test-api.md)<br />-   [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)|
+|**Créer un plug-in personnalisé pour votre test de performances web** : vous pouvez utiliser l’API de test de performances web pour créer un plug-in personnalisé visant à ajouter des fonctionnalités de test au test de performances web, notamment au niveau de la requête. Il est également possible de créer un test de service web.<br /><br /> Par ailleurs, vous pouvez créer un plug-in d’enregistreur web capable de modifier un test de performances web après son enregistrement, mais avant qu’il ne s’affiche dans l’Afficheur de résultats de test de performances web.|-   [Guide pratique pour utiliser l’API de test de performances web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Guide pratique pour créer un plug-in au niveau de la requête](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Guide pratique pour créer un test de service web](../test/how-to-create-a-web-service-test.md)<br />-   [Guide pratique pour créer un plug-in d’enregistreur](../test/how-to-create-a-recorder-plug-in.md)|
+|**Ajouter des fonctionnalités d’IU à l’Afficheur de résultats de test de performances Web :** vous pouvez ajouter d’autres fonctionnalités d’IU à l’Afficheur de résultats de test de performances Web à l’aide d’un complément Visual Studio.|-   [Guide pratique pour créer un complément Visual Studio pour l’Afficheur de résultats de test de performances Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Créer un éditeur de corps HTTP personnalisé :** vous pouvez créer un éditeur personnalisé pour modifier les réponses XML http binaires ou de chaîne à partir d’un service web.|-   [Guide pratique pour créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Référence
 

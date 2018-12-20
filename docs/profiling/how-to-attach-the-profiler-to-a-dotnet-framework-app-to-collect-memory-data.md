@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à une application .NET Framework autonome pour collecter des données de mémoire en utilisant la ligne de commande │ Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à une application .NET pour collecter des données de mémoire
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a72a6a7bdaa77cb313369dda8b84aff8b405a79
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a550ac10b5983041da93b0c290877f8e1b1a3720
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835044"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051793"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procédure : attacher le profileur à une application .NET Framework autonome pour collecter des données de mémoire en utilisant la ligne de commande
 
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage Visual Studio pour attacher le profileur à une application .NET Framework autonome (cliente) en cours d’exécution et collecter des données de mémoire.
 
@@ -73,7 +73,7 @@ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne d
 
     - `PID` spécifie l’ID de processus de l’application cible. `ProcessName` spécifie le nom du processus. Notez que si vous spécifiez `ProcessName` et que plusieurs processus de même nom sont en cours d’exécution, les résultats sont imprévisibles. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.
 
-    - **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application. Facultative.
+    - **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application. Optionnel.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
 

@@ -1,5 +1,5 @@
 ---
-title: Créer un plug-in d’enregistreur pour les tests de performances web dans Visual Studio
+title: Créer un plug-in d’enregistreur pour les tests de performances web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895832"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064625"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Guide pratique pour créer un plug-in d’enregistreur
+# <a name="how-to-create-a-recorder-plug-in"></a>Procédure : Créer un plug-in d’enregistreur
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet de modifier un test de performances web enregistré. La modification se produit une fois le bouton **Arrêter** sélectionné dans la barre d’outils de **l’Enregistreur de test de performances web**, mais avant l’enregistrement et la présentation du test dans l’éditeur de test de performances web.
 
@@ -111,7 +111,7 @@ Après avoir compilé le plug-in d’enregistreur, placez la DLL ainsi créée d
     > [!WARNING]
     > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
+    > **Échec de la demande : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >

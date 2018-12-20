@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 74bd467417d6138d603382bd5432fe84af04d3b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909846"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027339"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
@@ -91,7 +91,7 @@ Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant M
 
 L’Explorateur de projets Unity affiche tous les fichiers projet et répertoires Unity de la même manière que l’éditeur Unity. Ce n’est pas la même chose que de parcourir les scripts Unity avec l’Explorateur de solutions normal de Visual Studio, qui les organise en projets et une solution générée par Visual Studio.
 
-- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt**+**Maj**+**E**
+- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt**+**Maj**+**E**
 
    ![Afficher la fenêtre Explorateur de projet Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
 
@@ -181,7 +181,7 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Pour déboguer un projet DLL managée utilisé dans votre projet Unity
 
-1. Ajoutez votre projet DLL existant à la solution Visual Studio générée par Visual Studio Tools pour Unity. Moins couramment, vous pouvez aussi démarrer un nouveau projet de DLL managée pour qu'il contienne les composants de code de votre projet Unity ; si tel est le cas, vous pouvez à la place ajouter un nouveau projet DLL managée à la solution Visual Studio. Pour plus d’informations sur l’ajout d’un projet nouveau ou existant à une solution, consultez [Comment : ajouter des projets à une solution](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Ajoutez votre projet DLL existant à la solution Visual Studio générée par Visual Studio Tools pour Unity. Moins couramment, vous pouvez aussi démarrer un nouveau projet de DLL managée pour qu'il contienne les composants de code de votre projet Unity ; si tel est le cas, vous pouvez à la place ajouter un nouveau projet DLL managée à la solution Visual Studio. Pour plus d’informations sur l’ajout d’un projet nouveau ou existant à une solution, consultez [Guide pratique pour ajouter des projets à une solution](https://msdn.microsoft.com/library/ff460187.aspx).
 
    ![Ajoutez votre projet DLL existant à la solution.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 

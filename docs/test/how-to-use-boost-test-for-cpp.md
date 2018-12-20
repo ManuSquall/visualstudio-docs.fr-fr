@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
+title: Guide pratique pour utiliser Boost.Test pour C++
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65ee2d95d85c657057f7ef4494c19f8b5644513e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380448"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063245"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 
@@ -87,7 +87,7 @@ Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément
 
 ## <a name="add-include-directives"></a>Ajouter des directives include
 
-1. Dans votre fichier *.cpp* de test, ajoutez les directives `#include` nécessaires pour rendre les types et les fonctions de votre programme visibles par le code de test. En règle générale, le programme est un niveau au-dessus dans l’arborescence des dossiers. Si vous tapez `#include "../"`, une fenêtre IntelliSense apparaît et vous permet de sélectionner le chemin complet du fichier d’en-tête.
+1. Dans le fichier *.cpp* de test, ajoutez les directives `#include` nécessaires pour rendre les types et les fonctions de votre programme visibles par le code de test. En règle générale, le programme est un niveau au-dessus dans l’arborescence des dossiers. Si vous tapez `#include "../"`, une fenêtre IntelliSense apparaît et vous permet de sélectionner le chemin complet du fichier d’en-tête.
 
    ![Ajouter des directives #include](media/cpp-gtest-includes.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Ajouter des paramètres d’exécution à un test de charge dans Visual Studio
+title: Ajouter des paramètres d’exécution à un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896612"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048052"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Guide pratique : Ajouter des paramètres d’exécution supplémentaires à un test de charge
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procédure : ajouter des paramètres d’exécution supplémentaires à un test de charge
 
 Les paramètres d'exécution d'un test de charge déterminent d'autres paramètres. Ceux-ci incluent la durée du test, le niveau de détail de la collection des résultats et les ensembles de compteurs collectés pendant l'exécution des tests. Vous pouvez créer et stocker plusieurs paramètres d'exécution pour chaque test de charge, puis sélectionner un paramètre particulier à utiliser lors de l'exécution du test. Un paramètre d’exécution initial est ajouté à votre test de charge lors de la création de ce dernier à l’aide de **l’Assistant Nouveau test de charge**.
 
@@ -47,7 +47,7 @@ Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charg
     > [!NOTE]
     > Pour obtenir la liste complète des propriétés des paramètres et leur description, voir [Propriétés des paramètres de série de tests de charge](../test/load-test-run-settings-properties.md).
 
-     Vous pouvez maintenant indiquer que vous souhaitez utiliser le paramètre d'exécution ajouté en l'activant. Pour plus d’informations, voir [Guide pratique : Sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Vous pouvez maintenant indiquer que vous souhaitez utiliser le paramètre d'exécution ajouté en l'activant. Pour plus d'informations, voir [Procédure : sélectionner le paramètre d’exécution active d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: Rechercher et utiliser des extensions Visual Studio
+title: Rechercher et utiliser des extensions
 ms.date: 06/07/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5b562aa6fe4a64f92d66ad0a6fff0395e5314a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cc67602db2d830283bb47fe7c3a9728d0d9fd799
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950278"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067905"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Rechercher et utiliser des extensions Visual Studio
 
-Les extensions Visual Studio sont des packages de code qui s’exécutent à l’intérieur de Visual Studio et fournissent des fonctionnalités de Visual Studio nouvelles ou améliorées. Vous trouverez plus d’informations sur les extensions Visual Studio ici : [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Les extensions Visual Studio sont des packages de code qui s’exécutent à l’intérieur de Visual Studio et fournissent des fonctionnalités de Visual Studio nouvelles ou améliorées. Vous trouverez plus d’informations sur les extensions Visual Studio ici : [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 Vous pouvez utiliser la boîte de dialogue **Extensions et mises à jour** pour installer des extensions et des exemples Visual Studio à partir de sites Web ou d'autres emplacements, puis les activer, les désactiver, les mettre à jour ou les désinstaller. (**Outils > Extensions et mises à jour**, ou tapez **Extensions** dans la fenêtre de **lancement rapide**). La boîte de dialogue affiche également les mises à jour des exemples et extensions installés. Vous pouvez également télécharger des extensions à partir de sites web ou les obtenir auprès d'autres développeurs.
 

@@ -1,5 +1,5 @@
 ---
-title: Encodages et sauts de ligne dans Visual Studio
+title: Encodages et caractères de saut de ligne
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,26 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117093"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052007"
 ---
 # <a name="encodings-and-line-endings"></a>Encodages et fins de ligne
 
 Les caractères suivants sont interprétés comme des sauts de ligne dans Visual Studio :
 
-- CR LF : retour chariot + saut de ligne, caractères Unicode 000D + 000A
+- CR LF : Retour chariot + saut de ligne, caractères Unicode 000D + 000A
 
-- LF : saut de ligne, caractère Unicode 000A
+- LF : Saut de ligne, caractère Unicode 000A
 
-- NEL : ligne suivante, caractère Unicode 0085
+- NEL : Ligne suivante, caractère Unicode 0085
 
-- LS : séparateur de ligne, caractère Unicode 2028
+- LS : Séparateur de ligne, caractère Unicode 2028
 
-- PS : séparateur de paragraphe, caractère Unicode 2029
+- PS : Séparateur de paragraphe, caractère Unicode 2029
 
 Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.
 

@@ -1,8 +1,9 @@
 ---
-title: Mettre à jour une installation réseau de Visual Studio
+title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 736f8dc9c79faa5c81055296c9fbf534c512f6fa
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138826"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159488"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
+# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Mettre à jour une installation réseau de Visual Studio 2017
 
 Il est possible de mettre à jour une disposition d’installation réseau de Visual Studio avec les dernières mises à jour de produit, afin de pouvoir l’utiliser comme point d’installation de la dernière mise à jour de Visual Studio, et pour gérer aussi les installations déjà déployées sur les stations de travail clientes.
 

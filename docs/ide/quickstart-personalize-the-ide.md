@@ -1,5 +1,5 @@
 ---
-title: Définir le thème de couleur et les polices dans Visual Studio
+title: Définir un thème de couleurs et des polices
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626660"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159410"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio
+# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : Personnaliser l’éditeur et l’IDE de Visual Studio
 
 Dans ce guide de démarrage rapide qui dure entre 5 et 10 minutes, nous allons personnaliser le thème de couleur de Visual Studio en sélectionnant le thème sombre. Nous allons également personnaliser les couleurs de deux types de texte différents dans l’éditeur de texte.
 
@@ -100,4 +100,4 @@ Nous avons seulement exploré deux façons de personnaliser les couleurs dans Vi
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’éditeur](../ide/customizing-the-editor.md)
-- [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md)

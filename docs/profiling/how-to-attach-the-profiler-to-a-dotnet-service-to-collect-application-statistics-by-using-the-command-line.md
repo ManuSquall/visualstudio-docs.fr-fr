@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à un service .NET et collecter des statistiques d’application en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à un service .NET pour collecter des statistiques d’application
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5202e84c4ca5d1d42ec6987f59cd60dd98a0582b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7347824b56a6bcf4a12f8f8bd8bf4d5389280d1b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934955"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067503"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service .NET et collecter des statistiques d’application en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le profileur à un service .NET et collecter des statistiques d’application en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service .NET Framework et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.  
 
 > [!NOTE]
@@ -90,7 +90,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|  
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifiés dans `Config`.|  
 
-   -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultative.  
+   -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données  
  Quand le service s’exécute, vous pouvez utiliser les options de *VSPerfCmd.exe* pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
@@ -116,7 +116,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     -   Arrêtez le service.  
 
-         - ou -  
+         ou  
 
     -   Tapez **VSPerfCmd /detach**  
 

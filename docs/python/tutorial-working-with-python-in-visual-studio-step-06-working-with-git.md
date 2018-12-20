@@ -1,5 +1,6 @@
 ---
-title: 'Utiliser le tutoriel Python – Étape 6 : Utiliser git'
+title: Tutoriel Python dans Visual Studio - étape 6, utilisation de Git
+titleSuffix: ''
 description: Étape 6 d’une procédure pas à pas portant sur Python dans Visual Studio qui décrit les fonctionnalités Git de Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e958046bb5574cb1a9b9799482fa3c96c203b013
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6c23a1d9835b7b065f24536c89a8f0befb03717c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219404"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054474"
 ---
-# <a name="step-6-work-with-git"></a>Étape 6 : Utiliser Git
+# <a name="step-6-work-with-git"></a>Étape 6 : Utiliser Git
 
-**Étape précédente : [Installer des packages et gérer des environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Étape précédente : [Installer des packages et gérer vos environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio fournit une intégration directe aux dépôts Git locaux et aux dépôts distants sur des services comme GitHub et Azure Repos. L’intégration inclut le clonage d’un dépôt, la validation des modifications et la gestion des branches.
 

@@ -1,5 +1,5 @@
 ---
-title: Configurer les agents de test et les contrôleurs de test pour les tests de charge dans Visual Studio
+title: Configurer les agents de test et les contrôleurs de test pour les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895637"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068015"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurer les agents de test et les contrôleurs de test pour l’exécution de tests de charge
 
@@ -39,21 +39,21 @@ Cette architecture offre les avantages suivants :
 
 - La possibilité de faire évoluer la génération de charge en ajoutant des agents de test supplémentaires à un contrôleur de test.
 
-- Une flexibilité pour l’installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Exemple :
+- Une flexibilité pour l’installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Par exemple :
 
    **Configuration locale :**
 
-  - Ordinateur1 : Visual Studio, contrôleur, agent.
+  - Machine1 : Visual Studio, contrôleur, agent.
 
     ![Ordinateur local utilisant le contrôleur et l'agent](./media/load-test-configa.png)
 
     **Configuration à distance classique :**
 
-  - Ordinateur1 et Ordinateur2 : Visual Studio (plusieurs testeurs peuvent utiliser le même contrôleur).
+  - Machine1 et 2 : Visual Studio (plusieurs testeurs peuvent utiliser le même contrôleur).
 
-  - Ordinateur3 : contrôleur (sur lequel des agents peuvent également être installés).
+  - Machine3 : contrôleur (sur lequel des agents peuvent également être installés).
 
-  - Ordinateur4-n : agent ou agents tous associés au contrôleur sur Ordinateur3.
+  - Machine4-n : agent ou agents tous associés au contrôleur sur Machine3.
 
     ![Ordinateurs locaux utilisant le contrôleur et les agents](./media/load-test-configb.png)
 

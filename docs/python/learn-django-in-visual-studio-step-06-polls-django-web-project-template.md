@@ -1,5 +1,6 @@
 ---
-title: Tutoriel – Découvrez Django dans Visual Studio, étape 6
+title: Tutoriel d’apprentissage de Django dans Visual Studio - étape 6, modèle de projet Sondage
+titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités du modèle de projet web Django telles que la personnalisation de l’administration.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001254"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062494"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle Sondages du projet web Django
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle de projet web Django Sondage
 
-**Étape précédente : [authentifier les utilisateurs dans Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Étape précédente : [Authentifier les utilisateurs dans Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Une fois que vous avez compris le modèle « Projet web Django » de Visual Studio, vous pouvez vous consacrer au troisième modèle Django, le « Projet web Django de sondage », qui est basé sur le même code et montre comment travailler avec une base de données.
 
@@ -35,7 +37,7 @@ Dans cette section, vous apprenez comment :
 
 Un projet créé à l’aide de ce modèle est similaire à ce que vous obtenez en suivant le tutoriel [Écrire votre première application Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) dans les documents Django. L’application web se compose d’un site public qui permet aux personnes d’afficher des sondages et de voter, ainsi que d’une interface d’administration personnalisée par le biais de laquelle vous pouvez gérer les sondages. Il utilise le même système d’authentification que le modèle « Projet web de Django » et utilise plus la base de données en implémentant des modèles Django comme parcourus dans les sections suivantes.
 
-## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Étape 6-1 : créer le projet et d’initialiser la base de données
+## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Étape 6-1 : Créer le projet et initialiser la base de données
 
 1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningDjango** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Ou bien, si vous souhaitez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
 
@@ -67,7 +69,7 @@ Un projet créé à l’aide de ce modèle est similaire à ce que vous obtenez 
 
 Comme mentionné précédemment. La majorité de ce qui se trouve dans un projet créé à partir du modèle « Projet web Django de sondage » devrait vous être familière si vous avez exploré les modèles de projet dans Visual Studio. Les étapes supplémentaires dans cet article résument les modifications plus importantes et les ajouts, à savoir les modèles de données et les vues supplémentaires.
 
-### <a name="question-what-does-the-django-migrate-command-do"></a>Question : Que fait la commande Django – Migrer ?
+### <a name="question-what-does-the-django-migrate-command-do"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Que fait la commande Django – Migrer ?
 
 Réponse : La commande **Django – Migrer** exécute en particulier la commande `manage.py migrate`, qui exécute dans le dossier *app/migrations* tous les scripts qui ne l’ont pas été précédemment. Dans ce cas, la commande exécute le script *0001_initial.py* dans ce dossier pour configurer le schéma nécessaire dans la base de données.
 
@@ -75,7 +77,7 @@ Le script de migration proprement dit est créé par la commande `manage.py make
 
 Vous travaillerez sur une migration à l’étape 6-3 plus loin dans cet article.
 
-## <a name="step-6-2-understand-data-models"></a>Étape 6-2 : comprendre les modèles de données
+## <a name="step-6-2-understand-data-models"></a>Étape 6-2 : Comprendre les modèles de données
 
 Les modèles de l’application nommés Poll et Choice, sont définis dans *app/models.py*. Chacun est une classe Python dérivée de `django.db.models.Model` et utilisant les méthodes de la classe `models`, telles que `CharField` et `IntegerField`, pour définir dans le modèle des champs mappés aux colonnes de la base de données.
 
@@ -158,11 +160,11 @@ Pour voir l’effet, commencez par exécuter l’application pour vérifier qu�
 
 ![Application de projet web Django de sondage avec base de données amorcée](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Question : Peut-on initialiser la base de données avec l’utilitaire d’administration Django ?
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Peut-on initialiser la base de données avec l’utilitaire d’administration Django ?
 
 Réponse : Oui, vous pouvez utiliser la [commande django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) pour accomplir la même tâche que la page d’amorçage dans l’application. Lorsque vous travaillez sur une application web complète, vous pouvez utiliser une combinaison des deux méthodes : initialisation d’une base de données à partir de la ligne de commande, puis conversion de la page d’amorçage de départ en API à laquelle vous pouvez envoyer n’importe quel autre fichier JSON arbitraire au lieu de vous appuyer sur un fichier codé en dur.
 
-## <a name="step-6-3-use-migrations"></a>Étape 6-3 : utiliser les migrations
+## <a name="step-6-3-use-migrations"></a>Étape 6-3 : Utiliser les migrations
 
 Quand vous avez exécuté la commande `manage.py makemigrations` (à l’aide du menu contextuel dans Visual Studio) après avoir créé le projet, Django a créé le fichier *app/migrations/0001_initial.py*. Ce fichier contient un script qui crée les tables de base de données initiale.
 
@@ -190,23 +192,23 @@ Pour voir l’effet de la modification d’un modèle, essayez de suivre les ét
 
 En général, fonctionnalité de migration de Django signifie que vous ne devez jamais gérer votre schéma de base de données manuellement. Vous devez juste apporter des modifications à vos modèles, générer les scripts de migration et les appliquer à l’aide de la commande de migration.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Question : Que se passe-t-il si j’ai oublié d’exécuter la commande de migration après avoir modifié des modèles ?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Que se passe-t-il si j’oublie d’exécuter la commande de migration après avoir modifié des modèles ?
 
 Réponse : Si les modèles ne correspondent pas à ce qui se trouve dans la base de données, Django échoue lors de l’exécution avec les exceptions appropriées. Par exemple, si vous oubliez de migrer la modification de modèle indiquée dans la section précédente, vous voyez une erreur **no such column: app_poll.author** :
 
 ![Erreur affichée quand une modification de modèle n’a pas été migrée](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Question : Pourquoi l’Explorateur de solutions n’affiche-t-il pas des scripts qui viennent d’être générés après l’exécution de Django – Migrer ?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Pourquoi l’Explorateur de solutions n’affiche pas des scripts qui viennent d’être générés après l’exécution de Django – Migrer ?
 
-Réponse : Bien que les nouveaux scripts générés existent dans le dossier *app/migrations* et soient appliqués quand vous exécutez la commande **Django – Migrer**, ils n’apparaissent pas automatiquement dans **l’Explorateur de solutions**, car ils n’ont pas été ajoutés au projet Visual Studio. Pour les rendre visibles, sélectionnez d’abord la commande de menu **Projet** > **Afficher tous les fichiers** ou le bouton de barre d’outils encadré dans l’image ci-dessous. Suite à cette commande, **l’Explorateur de solutions** affiche tous les fichiers dans le dossier du projet, avec une icône en pointillés qui entoure les éléments qui n’ont pas été ajoutés au projet proprement dit. Cliquez sur les fichiers que vous souhaitez ajouter, puis sélectionnez **Inclure dans le projet**, ce qui les inclut également dans le contrôle de code source avec votre prochaine validation.
+Réponse : Bien que les nouveaux scripts générés existent dans le dossier *app/migrations* et soient appliqués quand vous exécutez la commande **Django – Migrer**, ils n’apparaissent pas automatiquement dans l’**Explorateur de solutions**, car ils n’ont pas été ajoutés au projet Visual Studio. Pour les rendre visibles, sélectionnez d’abord la commande de menu **Projet** > **Afficher tous les fichiers** ou le bouton de barre d’outils encadré dans l’image ci-dessous. Suite à cette commande, **l’Explorateur de solutions** affiche tous les fichiers dans le dossier du projet, avec une icône en pointillés qui entoure les éléments qui n’ont pas été ajoutés au projet proprement dit. Cliquez sur les fichiers que vous souhaitez ajouter, puis sélectionnez **Inclure dans le projet**, ce qui les inclut également dans le contrôle de code source avec votre prochaine validation.
 
 ![Commande Inclure dans le projet dans l’Explorateur de solutions](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Question : Puis-je voir quelles migrations seront appliquées avant d’exécuter la commande de migration ?
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Puis-je voir quelles migrations seront appliquées avant d’exécuter la commande de migration ?
 
 Réponse : Oui, utilisez la [commande django-admin showmigrations](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Étape 6-4 : comprendre les affichages et les modèles de page créés par le modèle de projet
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Étape 6-4 : Comprendre les vues et les modèles de pages créés par le modèle de projet
 
 La plupart des vues générés par le modèle « Projet Django web projet de sondage », telles que les vues des pages À propos et Contact, sont très similaires aux vues créées par le modèle « Projet Django web » avec lequel vous avez travaillé avec précédemment dans ce tutoriel. La différence dans l’application de sondage est que sa page d’accueil utilise les modèles, de même que plusieurs pages ajoutées pour le vote et pour l’affichage des résultats du sondage.
 
@@ -321,7 +323,7 @@ def vote(request, poll_id):
 
 Ici, l’affichage n’a pas son propre modèle correspondant, comme les autres pages. Au lieu de cela, il valide le sondage sélectionné, indiquant une erreur 404 si le sondage n’existe pas (au cas où un utilisateur entrerait une URL telle que « vote/1a2b3c »). Il vérifie ensuite que le choix de vote est valide pour le sondage. Si ce n’est pas le cas, le bloc `except` affiche simplement à nouveau la page de détails avec un message d’erreur. Si le choix est valide, l’affichage comptabilise le vote et redirige vers la page de résultats.
 
-## <a name="step-6-5-create-a-custom-administration-interface"></a>Étape 6-5 : créer une interface d’administration personnalisée
+## <a name="step-6-5-create-a-custom-administration-interface"></a>Étape 6-5 : Créer une interface d’administration personnalisée
 
 Les derniers éléments du modèle « Projet Django web de sondage » sont des extensions personnalisées de l’interface d’administration Django par défaut, comme indiqué plus haut dans cet article sous l’étape 6-1. L’interface par défaut est exclusivement destinée à l’utilisateur et à la gestion des groupes. Le modèle de projet Sondage ajoute des fonctionnalités qui vous permettent de gérer également des sondages.
 
@@ -362,7 +364,7 @@ L’appel à `admin.site.register` connecte alors cette classe au modèle (`Poll
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!Note]
-> Si vous validez votre solution Visual Studio lors du contrôle de code source pendant ce tutoriel, c’est le bon moment pour effectuer une autre validation. Votre solution doit correspondre au code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> Si vous validez votre solution Visual Studio lors du contrôle de code source pendant ce tutoriel, c’est le bon moment pour effectuer une autre validation. Votre solution doit correspondre au code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Vous avez maintenant parcouru l’intégralité des modèles du « projet Django web vide », du « projet Django web » et du « projet Django web de sondage » dans Visual Studio. Vous avez appris tous les principes fondamentaux de Django, tels que l’utilisation des affichages et des modèles et vous avez exploré le routage, l’authentification et l’utilisation des modèles de base de données. Vous devez maintenant être en mesure de créer vous-même une application web avec les affichages et les modèles dont vous avez besoin.
 

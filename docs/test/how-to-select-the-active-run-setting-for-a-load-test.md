@@ -1,5 +1,5 @@
 ---
-title: Sélectionner un paramètre d’exécution pour un test de charge dans Visual Studio
+title: Sélectionner un paramètre d’exécution d’un test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895325"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067383"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procédure : sélectionner le paramètre d’exécution active d’un test de charge
 
 Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs.
 

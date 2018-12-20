@@ -1,5 +1,5 @@
 ---
-title: Commutateurs de la ligne de commande devenv de Visual Studio
+title: Commutateurs de la ligne de commande devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948892"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063394"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de ligne de commande Devenv
 
@@ -82,7 +82,7 @@ Les commutateurs de ligne de commande suivants n’affichent pas l’IDE.
 |[/Build](../../ide/reference/build-devenv-exe.md)|Génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Supprime tous les fichiers créés par la commande build, sans affecter les fichiers sources.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Génère la solution, ainsi que les fichiers nécessaires pour le déploiement, en fonction de la configuration des solutions.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|Compare deux fichiers. Prend quatre paramètres : SourceFile, TargetFile, SourceDisplayName (facultatif) et TargetDisplayName (facultatif).|
+|[/Diff](../../ide/reference/diff.md)|Compare deux fichiers. Accepte quatre paramètres : SourceFile, TargetFile, SourceDisplayName (facultatif) et TargetDisplayName (facultatif).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Permet de spécifier un fichier pour recevoir les erreurs pendant la génération.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projet à générer, nettoyer ou déployer. Vous pouvez utiliser ce commutateur uniquement si vous avez également spécifié le commutateur /build, /rebuild, /clean ou /deploy.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Spécifie la configuration de projet à générer ou déployer. Vous pouvez utiliser ce commutateur uniquement si vous avez également spécifié le commutateur /project.|

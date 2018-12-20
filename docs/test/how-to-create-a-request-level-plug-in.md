@@ -1,5 +1,5 @@
 ---
-title: Créer un plug-in de niveau de requête pour les tests de performances web dans Visual Studio
+title: Créer un plug-in au niveau de la requête pour les tests de performances web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895273"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054072"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Guide pratique pour créer un plug-in de niveau requête
+# <a name="how-to-create-a-request-level-plug-in"></a>Procédure : créer un plug-in au niveau de la requête
 
 Les *requêtes* sont les instructions déclaratives qui constituent les tests de performances web. Les plug-ins de tests de performances de site Web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Vous pouvez créer des plug-ins et les ajouter à une requête individuelle aussi bien qu'au test de performances web qui la contient. Un *plug-in de requête* personnalisé permet d’appeler du code quand une requête particulière est exécutée dans un test de performances web.
 
@@ -84,7 +84,7 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
     > [!WARNING]
     > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
+    > **Échec de la requête : Exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >

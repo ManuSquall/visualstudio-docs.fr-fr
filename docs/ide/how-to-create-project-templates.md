@@ -1,5 +1,5 @@
 ---
-title: Créer des modèles de projet pour Visual Studio
+title: Créer des modèles de projet
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05ba1dcd5328b80d8fa5526336cf027995abf7dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5cb90ea6f1e404d65ac3c375f49e77dd02c6711c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903723"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066913"
 ---
-# <a name="how-to-create-project-templates"></a>Guide pratique pour créer des modèles de projet
+# <a name="how-to-create-project-templates"></a>Procédure : Créer des modèles de projet
 
 Cette rubrique vous montre comment créer un modèle à l’aide de l’**Assistant Exportation de modèle**, qui crée un package de votre modèle sous forme de fichier *.zip*.
 
@@ -42,11 +42,11 @@ Cette rubrique vous montre comment créer un modèle à l’aide de l’**Assist
    Le projet est exporté dans un fichier *.zip* et placé à l’emplacement de sortie spécifié. S’il est sélectionné, il est importé dans Visual Studio.
 
 >[!NOTE]
-> Pour rechercher votre modèle dans la boîte de dialogue **Nouveau projet**, développez **Installé**, puis développez la catégorie qui correspond à l’élément `ProjectType` dans le fichier *.vstemplate*. Par exemple, un fichier *.vstemplate* contenant `<ProjectType>CSharp</ProjectType>` apparaît sous **Installé** > **Visual C#**, par défaut. Vous pouvez organiser votre modèle dans un sous-répertoire du type de projet en créant simplement un dossier dans ce répertoire et en y plaçant le fichier *.zip* du modèle. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+> Pour rechercher votre modèle dans la boîte de dialogue **Nouveau projet**, développez **Installé**, puis développez la catégorie qui correspond à l’élément `ProjectType` dans le fichier *.vstemplate*. Par exemple, un fichier *.vstemplate* contenant `<ProjectType>CSharp</ProjectType>` apparaît sous **Installé** > **Visual C#**, par défaut. Vous pouvez organiser votre modèle dans un sous-répertoire du type de projet en créant simplement un dossier dans ce répertoire et en y plaçant le fichier *.zip* du modèle. Pour plus d'informations, voir [Procédure : localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="other-ways-to-create-project-templates"></a>Autres méthodes pour créer des modèles de projet
 
-Vous pouvez créer manuellement des modèles de projet en rassemblant les fichiers qui constituent le projet dans un dossier, puis en créant un fichier XML *.vstemplate* avec les métadonnées appropriées. Pour plus d’informations, consultez [Guide pratique pour créer manuellement des modèles web](../ide/how-to-manually-create-web-templates.md).
+Vous pouvez créer manuellement des modèles de projet en rassemblant les fichiers qui constituent le projet dans un dossier, puis en créant un fichier XML *.vstemplate* avec les métadonnées appropriées. Pour plus d'informations, voir [Procédure : créer manuellement des modèles web](../ide/how-to-manually-create-web-templates.md).
 
 Si le SDK Visual Studio est installé, vous pouvez inclure dans un wrapper le modèle fini, dans un fichier VSIX, pour le déployer en utilisant le modèle **Projet VSIX**. Pour plus d’informations, consultez [Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 

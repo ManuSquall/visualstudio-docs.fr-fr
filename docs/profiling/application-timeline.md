@@ -1,6 +1,6 @@
 ---
-title: Analyser la consommation des ressources dans les applications XAML sous Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Analyser la consommation des ressources dans les applications XAML
+ms.custom: seodec18
 ms.date: 11/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 971d8eff11d28eda884066407b03f3f6addb43ad
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 32368b280faf7b87aa128865cf169c7675a58c95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220955"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059176"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 
@@ -124,7 +124,7 @@ Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer e
   
 ## <a name="see-also"></a>Voir aussi
 
-- [Blog de l’équipe WPF : nouvel outil d’analyse des performances de l’IU pour les applications WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
+- [Blog de l’équipe WPF : Nouvel outil d’analyse des performances de l’interface utilisateur pour les applications WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
 - [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optimiser les performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
 - [Profilage dans Visual Studio](../profiling/index.md)  

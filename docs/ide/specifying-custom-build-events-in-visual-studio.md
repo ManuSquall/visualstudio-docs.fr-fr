@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908732"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055126"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Spécifier des événements de build personnalisés
 
@@ -61,4 +61,4 @@ Les événements de build suivent la même syntaxe que les commandes DOS, mais v
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md)
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)

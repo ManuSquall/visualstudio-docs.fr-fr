@@ -1,5 +1,5 @@
 ---
-title: Affichage des définitions de type dans Visual Studio
+title: Affichage des définitions de type
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745761"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062080"
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
 
@@ -52,7 +52,7 @@ Ensuite, appuyez sur **Ctrl** (ou sur la touche de modification sélectionnée d
 
 Si vous affichez un aperçu d’une autre définition à partir de la fenêtre contextuelle, vous commencerez un chemin de fil d’Ariane que vous pourrez parcourir à l’aide des cercles et des flèches qui apparaîtront au-dessus de la fenêtre contextuelle.
 
-Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Pour plus d'informations, voir [Procédure : afficher et modifier le code en utilisant l’Aperçu de définition (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Afficher les métadonnées en tant que code source (C#)
 
@@ -79,4 +79,4 @@ Nouveauté de Visual Studio 2017 version 15.6 : vous pouvez définir une option 
 ## <a name="see-also"></a>Voir aussi
 
 - [Naviguer dans le code](../ide/navigating-code.md)
-- [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Guide pratique pour afficher et modifier le code en utilisant l’Aperçu de définition (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

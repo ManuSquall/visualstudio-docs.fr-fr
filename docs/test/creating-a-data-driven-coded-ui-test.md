@@ -1,5 +1,5 @@
 ---
-title: Création d’un test codé de l’interface utilisateur piloté par les données dans Visual Studio
+title: Création d'un test codé de l'interface utilisateur piloté par les données
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896139"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068485"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
 
@@ -230,9 +230,9 @@ Vous pouvez utiliser les exemples de chaînes de source de données indiqués da
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
-**R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
+**R :** Toutes les modifications du code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
 
 Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier *UIMap.cs* et la renommer. Le fichier *UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs*. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded *UITest.cs* et la remplacer par le nom de la méthode renommée.
 

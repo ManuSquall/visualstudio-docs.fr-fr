@@ -1,5 +1,5 @@
 ---
-title: Mettre à jour des modèles de projet et d’élément existants dans Visual Studio
+title: Mettre à jour des modèles d’élément de projet existants
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,14 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 52f24f76ff217b694a1e5d2b510d16b0911d2fda
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572564"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061466"
 ---
-# <a name="how-to-update-existing-templates"></a>Guide pratique pour mettre à jour des modèles existants
+# <a name="how-to-update-existing-templates"></a>Procédure : Mettre à jour des modèles existants
 
 Une fois que vous avez créé un modèle et compressé les fichiers dans un fichier *.zip*, vous pouvez modifier le modèle. Vous pouvez modifier les fichiers manuellement dans le modèle ou exporter un nouveau modèle à partir d'un projet basé sur le modèle.
 

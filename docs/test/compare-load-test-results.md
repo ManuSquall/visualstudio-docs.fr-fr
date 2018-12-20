@@ -1,5 +1,5 @@
 ---
-title: Comparaison des résultats des tests de charge dans Visual Studio
+title: Comparaison des résultats des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895026"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066442"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Créer des rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse des tendances
 
@@ -44,7 +44,7 @@ Le fichier de feuille de calcul peut être partagé avec les parties prenantes s
 |Tâches|Rubriques associées|
 |-|-|
 |**Créer un rapport sur les tests de performances et de contrainte :** vous pouvez créer des rapports sur vos tests de performances web et de charge avec Microsoft Excel.|- [Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Créer manuellement un rapport de performances et de contrainte avec Microsoft Word :** vous pouvez créer manuellement des rapports sur vos tests de performances web et de charge en copiant et en collant les données de synthèse, de table et de graphique dans un document Microsoft Word.|- [Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Créer manuellement un rapport de performances et de contrainte avec Microsoft Word :** vous pouvez créer manuellement des rapports sur vos tests de performances web et de charge en copiant et en collant les données de synthèse, de table et de graphe dans un document Microsoft Word.|- [Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

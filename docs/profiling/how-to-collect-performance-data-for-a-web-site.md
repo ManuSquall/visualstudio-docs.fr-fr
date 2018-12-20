@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : collecte des données de performances pour un site web | Microsoft Docs'
+title: 'Procédure : collecter des données de performances pour un site web | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835982"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064295"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Guide pratique pour collecter les données de performances d’un site web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecter des données de performances pour un site web
 
 Vous pouvez utiliser **l’Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous pouvez profiler une application web ouverte dans Visual Studio, ou bien un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE de Visual Studio.
 
@@ -79,11 +79,11 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
 5. Dans la zone **Quel URL ou chemin d’accès exécutera votre application web** sur la troisième page de l’Assistant, entrez l’URL de la page d’accueil de l’application, puis cliquez sur **Suivant**.
 
-   - Pour un site web basé sur un serveur (IIS), tapez une URL telle que **<http://localhost/MySite/default.aspx>**. Ceci déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sur l’ordinateur local à la racine de l’application MonSite et le démarrage de la page defaut.aspx dans Internet Explorer pour démarrer la session.
+   - Pour un site web basé sur un serveur (IIS), tapez une URL telle que **<`http://localhost/MySite/default.aspx`>**. Ceci déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sur l’ordinateur local à la racine de l’application MonSite et le démarrage de la page defaut.aspx dans Internet Explorer pour démarrer la session.
 
-   - Pour un site web basé sur un fichier, tapez un chemin comme file///**c:\sites_web\MonSite\defaut.aspx**. Cela déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] située sur c:\webSites\MySite et l’ouverture de la page http://localhost:nnnn/MySite/default.aspx dans Internet Explorer pour démarrer la session.
+   - Pour un site web basé sur un fichier, tapez un chemin comme file///**c:\sites_web\MonSite\defaut.aspx**. Cela déclenche le profilage de l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] située sur c:\webSites\MySite et l’ouverture de la page `http://localhost:nnnn/MySite/default.aspx` dans Internet Explorer pour démarrer la session.
 
-   - Pour les sites externes dont vous souhaitez collecter les données JavaScript, tapez une URL telle que http://www.contoso.com.
+   - Pour les sites externes dont vous souhaitez collecter les données JavaScript, tapez une URL telle que `http://www.contoso.com`.
 
      Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 

@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à une application autonome native et collecter des statistiques d’application en utilisant la ligne de commande │ Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à une application native et collecter des statistiques d’application
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfe5e6f0bcdf84d3ef91933ff2c754cf0fc52bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d304e74d9480404e768789ffa0000c35da4f66ce
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842038"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063627"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application autonome native et collecter des statistiques d’application en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le profileur à une application autonome native et collecter des statistiques d’application en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application autonome native (cliente) en cours d’exécution et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.  
 
 > [!NOTE]
@@ -91,7 +91,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     -   Tapez **VSPerfCmd /detach**  
 
-         - ou -  
+         ou  
 
     -   Fermez l’application cible.  
 

@@ -1,5 +1,5 @@
 ---
-title: Lier un contrôleur de test ou un agent de test à une carte réseau dans Visual Studio
+title: Lier un contrôleur de test ou un agent de test à une carte réseau
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896046"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065945"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procédure : Lier un contrôleur de test ou un agent de test à une carte réseau
 
 Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est installé, a plusieurs cartes réseau, vous devez spécifier l’adresse IP à la place du nom de l’ordinateur pour identifier le contrôleur de test ou l’agent de test.
 
@@ -51,7 +51,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 2.  Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Controller**, puis choisissez **Arrêter**.
 
-     - ou -
+     ou
 
      Ouvrez une invite de commandes élevée et exécutez la commande suivante à une commande :
 
@@ -97,7 +97,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 2.  Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Agent**, puis choisissez **Arrêter**.
 
-     - ou -
+     ou
 
      Ouvrez une invite de commandes élevée et exécutez la commande suivante à une commande :
 
@@ -136,4 +136,4 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 - [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
 - [Configurer les ports des contrôleurs de test et des agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Guide pratique pour spécifier durées du délai d’expiration des contrôleurs de test et des agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

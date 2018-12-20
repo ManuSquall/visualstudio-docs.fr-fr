@@ -1,6 +1,6 @@
 ---
-title: Gestion de projets d’application Python
-description: Objectif des projets dans Visual Studio, comment créer et gérer des projets pour le code Python, et différents modèles de projet disponibles pour Python.
+title: Gérer des projets d’application Python
+description: Les projets dans Visual Studio gèrent les dépendances entre les fichiers et la complexité des relations dans une application.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220467"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068284"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -38,7 +39,7 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 |   |   |
 |---|---|
 | ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) pour obtenir une présentation des projets Python (2 min17 s). |
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Visionnez également la vidéo [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8m 55s. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Visionnez également la vidéo [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8 min 55 s. |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Ajouter des fichiers, attribuer un fichier de démarrage et définir des environnements
 
@@ -92,7 +93,7 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 
 ## <a name="linked-files"></a>Fichiers liés
 
-Les fichiers liés sont les fichiers placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans **l’Explorateur de solutions** en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](media/projects-linked-file-icon.png)
+Les fichiers liés sont les fichiers placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans l’**Explorateur de solutions** en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](media/projects-linked-file-icon.png)
 
 Les fichiers liés sont spécifiés dans le fichier *.pyproj* à l’aide de l’élément `<Compile Include="...">`. Les fichiers liés sont implicites s’ils utilisent un chemin relatif en dehors de la structure de répertoires, ou explicites s’ils utilisent des chemins dans **l’Explorateur de solutions** :
 

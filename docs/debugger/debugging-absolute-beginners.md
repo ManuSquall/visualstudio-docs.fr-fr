@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821368"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160021"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -66,7 +66,7 @@ Quand vous exécutez normalement une application, vous voyez les erreurs et les 
 
 Quand vous exécutez une application dans un débogueur (autrement dit en *mode débogage*), le débogueur surveille activement tout ce qui se produit durant l’exécution du programme. Cela vous permet également de suspendre l’exécution de l’application à tout moment pour examiner son état, et de parcourir votre code ligne par ligne afin d’observer chaque détail à mesure qu’il se produit.
 
-Dans Visual Studio, vous basculez en mode débogage à l’aide de la touche **F5** (ou de la commande de menu **Déboguer** > **Démarrer le débogage** ou du bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage")) dans la barre d’outils Débogage. Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles.
+Dans Visual Studio, vous basculez en mode débogage à l’aide de la touche **F5** (ou de la commande de menu **Déboguer** > **Démarrer le débogage** ou du bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils Débogage). Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles.
 
 Si aucune exception ne s’est produite, vous avez probablement une bonne idée de l’endroit où rechercher le problème dans votre code. C’est dans ce cas-là que vous utilisez des *points d’arrêt* avec le débogueur afin d’examiner votre code plus attentivement. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d’arrêt, Visual Studio interrompt l’exécution du code à l’emplacement du point d’arrêt pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire ou la séquence d’exécution du code.
 
@@ -78,7 +78,7 @@ Pour illustrer ces concepts, nous allons vous guider à travers un exemple de co
 
 Nous allons maintenant créer une application qui comporte quelques bogues.
 
-1. Visual Studio et la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, en fonction du type d’application que vous souhaitez créer, doivent être installés sur votre ordinateur.
+1. Visual Studio et la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, en fonction du type d’application que vous souhaitez créer, doivent être installés.
 
     Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
 

@@ -1,5 +1,5 @@
 ---
-title: Paramètres de journalisation du test de charge dans Visual Studio
+title: Paramètres de journalisation du test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24bb1b3af468f35ae333407fc96c42f4f9e669b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894883"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060036"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modifier les paramètres de journalisation du test de charge
 
@@ -27,8 +27,8 @@ Le *contrôleur de test* met en attente toutes les données d’échantillons de
 
 |Tâche|Rubriques associées|
 |-|-----------------------|
-|**Enregistrer des journaux si un test de charge échoue :** Vous pouvez également spécifier si vous souhaitez enregistrer le journal des tests chaque fois qu’un test de charge échoue.|-   [Guide pratique pour spécifier si les échecs de test doivent être enregistrés dans les journaux de tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Définir la taille de fichier maximum du fichier journal :** Vous pouvez modifier le fichier de configuration XML associé au service de contrôleur de test pour spécifier la taille de fichier maximum à utiliser pour le fichier journal.|[Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Enregistrer des journaux en cas d’échec d’un test de charge :** vous pouvez spécifier si vous souhaitez enregistrer le journal des tests chaque fois qu’un test de charge échoue.|-   [Guide pratique pour spécifier si les échecs de test doivent être enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Définir la taille maximale du fichier journal :** vous pouvez modifier le fichier config XML associé au service de contrôleur de test pour spécifier la taille de fichier maximale à utiliser pour le fichier journal.|[Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

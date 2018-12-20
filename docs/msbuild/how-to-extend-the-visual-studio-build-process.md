@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour étendre le processus de génération Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Étendre le processus de génération
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777c2c4ecb5ea8561a43a12f1897c2260d6638d0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081551"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058270"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Guide pratique pour étendre le processus de génération Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Procédure : Étendre le processus de génération Visual Studio
 Le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est défini par une série de fichiers *.targets* [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] importés dans votre fichier projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :  
   
 -   Substitution de cibles spécifiques prédéfinies dans *Microsoft.Common.targets*.  
@@ -36,7 +36,7 @@ Le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_m
   
 1.  Identifiez une cible prédéfinie dans *Microsoft.Common.targets* que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.  
   
-2.  Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Exemple :  
+2.  Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :  
   
     ```xml  
     <Project>  
@@ -57,7 +57,7 @@ Le tableau suivant montre toutes les cibles de *Microsoft.Common.targets* que vo
 |Nom de la cible|Description|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après la compilation principale. La plupart des personnalisations sont effectuées dans l’une de ces deux cibles.|  
-|`BeforeBuild`, `AfterBuild`|Les tâches insérées dans l’une de ces cibles s’exécutent avant ou après tout le reste lors de la génération. **Remarque :** Les cibles `BeforeBuild` et `AfterBuild` sont déjà définies dans les commentaires à la fin de la plupart des fichiers projet. Vous pouvez ainsi ajouter facilement des événements pré-build et post-build à votre fichier projet.|  
+|`BeforeBuild`, `AfterBuild`|Les tâches insérées dans l’une de ces cibles s’exécutent avant ou après tout le reste lors de la génération. **Remarque :**  Les cibles `BeforeBuild` et `AfterBuild` sont déjà définies dans les commentaires à la fin de la plupart des fichiers projet. Vous pouvez ainsi ajouter facilement des événements pré-build et post-build à votre fichier projet.|  
 |`BeforeRebuild`, `AfterRebuild`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de regénération principale. L’ordre d’exécution des cibles dans *Microsoft.Common.targets* est le suivant : `BeforeRebuild`, `Clean`, `Build`, puis `AfterRebuild`.|  
 |`BeforeClean`, `AfterClean`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de nettoyage principale.|  
 |`BeforePublish`, `AfterPublish`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après l’appel de la fonctionnalité de publication principale.|  

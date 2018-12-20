@@ -1,5 +1,5 @@
 ---
-title: Configurer des tests unitaires pour cibler une version antérieure du .NET Framework dans Visual Studio
+title: Les tests unitaires ciblent une version antérieure du .NET Framework
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7b9032e8a1b6ee796bbea6ce7f7e3f5db7bcd205
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380642"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064729"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires pour cibler une version antérieure du .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procédure : configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 
 Quand vous créez un projet de test dans Microsoft Visual Studio, la version la plus récente du .NET Framework est définie en tant que cible, par défaut. De plus, si vous mettez à niveau des projets de test à partir de versions antérieures de Visual Studio, ceux-ci sont mis à niveau pour cibler la version la plus récente du .NET Framework. En modifiant les propriétés du projet, vous pouvez recibler explicitement le projet vers des versions antérieures du .NET Framework.
 

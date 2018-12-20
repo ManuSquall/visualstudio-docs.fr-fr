@@ -1,5 +1,6 @@
 ---
-title: Tutoriel – Découvrir Flask dans Visual Studio, étape 3
+title: Tutoriel d’apprentissage de Flask dans Visual Studio - étape 3, pages et fichiers statiques
+titleSuffix: ''
 description: Une procédure pas à pas montrant les concepts de base de Flask dans le contexte de projets Visual Studio, expliquant en particulier comment prendre en charge des fichiers statiques, ajouter des pages à l’application et utiliser l’héritage de modèle
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775754"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065023"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
-**Étape précédente : [Créer une application Flask avec des vues et des modèles de page](learn-flask-visual-studio-step-02-create-app.md)**
+**Étape précédente : [Créer une application Flask avec des vues et des modèles de pages](learn-flask-visual-studio-step-02-create-app.md)**
 
 Dans les étapes précédentes de ce tutoriel, vous avez découvert comment créer une application Flask minimale avec une seule page HTML autonome. Les applications web modernes sont cependant composées en général de nombreuses pages et utilisent des ressources partagées, comme des fichiers CSS et JavaScript, pour offrir un comportement et un style cohérents.
 
@@ -32,7 +34,7 @@ Dans cette étape, vous apprenez comment :
 > - ajoutez des pages supplémentaires à l’application (étape 3-3)
 > - utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Étape 3-1 : se familiariser avec les modèles d’élément
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Étape 3-1 : Se familiariser avec les modèles d’élément
 
 Quand vous développez une application Flask, vous ajoutez généralement beaucoup plus de fichiers Python, HTML, CSS et JavaScript. Pour chaque type de fichier (ainsi que d’autres fichiers tels que *web.config* dont vous pouvez avoir besoin pour le déploiement), Visual Studio fournit des [modèles d’élément](python-item-templates.md) pratiques pour bien commencer.
 
@@ -42,11 +44,11 @@ Pour afficher les modèles disponibles, accédez à **Explorateur de solutions**
 
 Pour utiliser un modèle, sélectionnez le modèle souhaité, spécifiez un nom pour le fichier et sélectionnez **OK**. L’ajout d’un élément de cette manière permet d’ajouter automatiquement le fichier à votre projet Visual Studio et marque les modifications du contrôle de code source.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : comment Visual Studio sait quel modèle d’élément proposer ?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment Visual Studio sait quels modèles d’élément proposer ?
 
-Réponse : le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
+Réponse : Le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Étape 3-2 : prendre en charge les fichiers statiques à partir de votre application
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Étape 3-2 : Prendre en charge les fichiers statiques à partir de votre application
 
 Dans une application Web générée avec Python (à l’aide de n’importe quelle infrastructure), vos fichiers Python s’exécutent toujours sur le serveur de l’hôte Web et ne sont jamais transmis à l’ordinateur d’un utilisateur. D’autres fichiers, cependant, tels que CSS et JavaScript, sont utilisés exclusivement par le navigateur, afin que le serveur hôte les remette simplement tel-quel à chaque fois qu’ils sont demandés. Ces fichiers sont appelés des fichiers « statiques » et Flask peut les produire automatiquement sans que vous ayez besoin d’écrire du code. Dans les fichiers HTML, vous pouvez par exemple référencer des fichiers statiques en utilisant seulement un chemin relatif dans le projet. La première section de cette étape ajoute un fichier CSS à votre modèle de page existant.
 
@@ -113,15 +115,15 @@ Flask fournit une fonction appelée `serve_static_file`, que vous pouvez appeler
 
 1. Exécutez l’application et accédez au point de terminaison /api/data pour constater que le fichier statique est retourné. Arrêtez l’application quand vous avez terminé.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : existe-t-il des conventions pour organiser des fichiers statiques ?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Existe-t-il des conventions pour organiser des fichiers statiques ?
 
-Réponse : vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une manière générale d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *polices*, *scripts* et *contenu* (pour les feuilles de style et autres fichiers).
+Réponse : Vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une façon classique d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *fonts*, *scripts* et *content* (pour les feuilles de style et autres fichiers).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Question : Comment gérer les variables d’URL et les paramètres de requête dans une API ?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment gérer les variables d’URL et les paramètres de requête dans une API ?
 
-Réponse : Reportez-vous à la réponse donnée à l’étape 1-4 pour [Question : Comment Flask fonctionne-t-il avec les routes d’URL et les paramètres de requête des variables ?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Réponse : Consultez la réponse à l’étape 1-4 pour [Question : Comment Flask fonctionne-t-il avec des routes d’URL et des paramètres de requête variables ?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Étape 3-3 : ajouter une page à l’application
+## <a name="step-3-3-add-a-page-to-the-app"></a>Étape 3-3 : Ajouter une page à l’application
 
 L’ajout d’une autre page à l’application signifie les éléments suivants :
 
@@ -172,11 +174,11 @@ Les étapes suivantes ajoutent une page « About » au projet « HelloFlask » e
 
 1. Exécutez le projet pour observer les résultats et contrôler la navigation entre les pages. Arrêtez l’application quand c’est terminé.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Question : Est-ce que le nom d’une fonction de page compte pour Flask ?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Est-ce que le nom d’une fonction de page compte pour Flask ?
 
-Réponse : Non, car c’est le décorateur `@app.route` qui détermine les URL pour lesquelles Flask appelle la fonction de façon à générer une réponse. Les développeurs font généralement correspondre le nom de la fonction à la route, mais cette correspondance n’est pas obligatoire.
+Réponse : Non, car c’est le décorateur `@app.route` qui détermine les URL pour lesquelles Flask appelle la fonction de façon à générer une réponse. Les développeurs font généralement correspondre le nom de la fonction à la route, mais cette correspondance n’est pas obligatoire.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Étape 3-4 : utiliser l’héritage du modèle pour créer un en-tête et une barre de navigation
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Étape 3-4 : Utiliser l’héritage du modèle pour créer un en-tête et une barre de navigation
 
 Au lieu de liens de navigation explicites sur chaque page, les applications Web modernes utilisent généralement un en-tête de marque et une barre de navigation qui fournit les liens de page, menus contextuels, et ainsi de suite, les plus importants. Pour vous assurer que l’en-tête et la barre de navigation sont les mêmes dans toutes les pages, toutefois, vous ne souhaitez pas répéter le même code dans chaque modèle de page. Au lieu de cela, vous souhaitez définir les parties communes de toutes les pages dans un seul emplacement.
 
@@ -288,4 +290,4 @@ Les étapes suivantes démontrent l’héritage :
 - [Déployer l’application web sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Pour plus d’informations sur les fonctionnalités des modèles Jinja, comme les flux de contrôle, consultez la [documentation du concepteur de modèle Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Pour plus d’informations sur l’utilisation de `url_for`, consultez [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) dans la documentation de l’objet d’application Flask (flask.pocoo.org)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

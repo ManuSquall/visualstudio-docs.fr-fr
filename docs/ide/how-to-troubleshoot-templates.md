@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes liés au chargement des modèles de projet et d’élément Visual Studio
+title: Résoudre les problèmes liés au chargement des modèles de projet et d’élément
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4bb6a10e92bf8f26ffbcb81796b3c5c8371600b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061867"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Guide pratique pour résoudre les problèmes de modèles
+# <a name="how-to-troubleshoot-templates"></a>Procédure : Dépanner des modèles
 
 Si le chargement d’un modèle dans l’environnement de développement échoue, il existe plusieurs façons de procéder pour localiser le problème.
 

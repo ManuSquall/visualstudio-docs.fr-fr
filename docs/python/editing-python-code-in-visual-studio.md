@@ -1,6 +1,6 @@
 ---
-title: Modification de code Python
-description: La modification de Python dans Visual Studio fournit des fonctionnalités diverses telles que la navigation, des extraits de code et IntelliSense, ainsi que la mise en forme, le linting et la refactorisation.
+title: Modifier le code Python
+description: Pour Python, Visual Studio fournit des fonctionnalités riches et diverses telles que la navigation, des extraits de code et IntelliSense, ainsi que la mise en forme, le linting et la refactorisation.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,21 +8,22 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001267"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062814"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
 Comme vous passez beaucoup de votre temps de développement dans l’éditeur de code, la [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) fournit plusieurs fonctionnalités pour améliorer la productivité. Ces fonctionnalités comprennent la mise en surbrillance de la syntaxe IntelliSense, la saisie semi-automatique, l’aide de signature, les substitutions de méthode, la recherche et la navigation.
 
-L’éditeur est également intégré à la **fenêtre interactive** dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du tutoriel : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
+L’éditeur est également intégré à la **fenêtre interactive** dans Visual Studio, ce qui facilite l’échange de code entre les deux. Consultez [Tutotiel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) pour plus d’informations.
 
 |   |   |
 |---|---|
@@ -44,7 +45,7 @@ Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017
 
 Les saisies semi-automatiques s’affichent sous forme d’instructions, d’identificateurs et d’autres mots qui peuvent tout à fait être saisis à l’emplacement actuel dans l’éditeur. Ce qui apparaît dans la liste est basé sur le contexte et est filtré pour omettre les options inappropriées ou inexactes. Les saisies semi-automatiques sont souvent déclenchées en tapant diverses instructions (comme `import`) et différents opérateurs (dont un point), mais vous pouvez les afficher à tout moment en tapant **Ctrl**+**J** > **espace**.
 
-![Saisie semi-automatique de membres](media/code-editing-completions-simple.png)
+![Saisie semi-automatique de membres dans l’éditeur Visual Studio](media/code-editing-completions-simple.png)
 
 Lorsqu’une liste de saisies semi-automatiques est ouverte, vous pouvez rechercher la proposition que vous souhaitez grâce aux touches de direction, à la souris ou en continuant de taper. À mesure que vous tapez, la liste est filtrée pour afficher les propositions les plus probables. Vous pouvez également utiliser des raccourcis tels que :
 
@@ -54,27 +55,27 @@ Lorsqu’une liste de saisies semi-automatiques est ouverte, vous pouvez recherc
 
 Voici quelques exemples :
 
-![Saisie semi-automatique de membres avec filtrage](media/code-editing-completion-filtering.png)
+![Saisie semi-automatique de membres avec filtrage dans l’éditeur Visual Studio](media/code-editing-completion-filtering.png)
 
 Les saisies semi-automatiques de membres apparaissent automatiquement quand vous tapez un point après une variable ou une valeur, ainsi que les méthodes et attributs des types potentiels. Si une variable peut être plus d’un type, la liste inclut toutes les possibilités de tous les types, avec des informations supplémentaires pour indiquer quels types prennent en charge chaque proposition. Lorsqu’une saisie semi-automatique est prise en charge par tous les types possibles, elle est affichée sans annotation.
 
-![Saisie semi-automatique de membres sur plusieurs types](media/code-editing-completion-types.png)
+![Saisie semi-automatique de membres sur plusieurs types dans l’éditeur Visual Studio](media/code-editing-completion-types.png)
 
 Par défaut, les membres commençant et se terminant par un trait de soulignement double ne sont pas affichés. En règle générale, vous ne devez pas accéder à ces membres directement. Toutefois, si vous en avez besoin, la saisie du trait de soulignement double de début permet d’ajouter ces saisies semi-automatiques à la liste :
 
-![Saisie semi-automatique de membres privés](media/code-editing-completion-dunder.png)
+![Saisie semi-automatique de membres privés dans l’éditeur Visual Studio](media/code-editing-completion-dunder.png)
 
 Les instructions `import` et `from ... import` affichent une liste des modules qui peuvent être importés. Dans le cas de `from ... import`, la liste inclut les membres qui peuvent être importés à partir du module spécifié.
 
-![Importation de saisie semi-automatique](media/code-editing-completion-import.png)
+![Importation de saisie semi-automatique dans l’éditeur Visual Studio](media/code-editing-completion-import.png)
 
 Les instructions `raise` et `except` affichent les listes des classes susceptibles d’être des types d’erreurs. Les exceptions définies par l’utilisateur peuvent ne pas toutes faire partie de cette liste, mais elle vous permet de trouver les exceptions intégrées appropriées rapidement :
 
-![Saisie semi-automatique d’exceptions](media/code-editing-completion-exception.png)
+![Saisie semi-automatique d’exceptions dans l’éditeur Visual Studio](media/code-editing-completion-exception.png)
 
 Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart de ces éléments ne sont pas utilisables en tant que décorateurs ; consultez la documentation de la bibliothèque pour déterminer lequel utiliser.
 
-![Saisie semi-automatique de décorateurs](media/code-editing-completion-decorator.png)
+![Saisie semi-automatique de décorateurs dans l’éditeur Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Vous pouvez configurer le comportement des saisies semi-automatiques via **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé**. Parmi les options proposées, **Filter list based on search string** (Filtrer la liste en fonction de la chaîne de recherche) applique un filtre aux propositions de saisie semi-automatique à mesure que vous tapez (option sélectionnée par défaut) et **La saisie semi-automatique des membres affiche l’intersection des membres** affiche uniquement les saisies semi-automatiques prises en charge par tous les types possibles (option non sélectionnée par défaut). Consultez [Options - Résultats de la saisie semi-automatique](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreu
 
 Quand vous écrivez du code qui appelle une fonction, l’aide de signature apparaît lorsque vous tapez le caractère `(` ouvrant et affiche les informations sur le paramètre et la documentation disponibles. Vous pouvez également les faire apparaître avec **Ctrl**+**Maj**+**Espace** à l’intérieur d’un appel de fonction. Les informations affichées dépendent des chaînes de documentation du code source de la fonction, mais elles incluent toutes les valeurs par défaut.
 
-![Assistance pour la signature](media/code-editing-signature-help.png)
+![Assistance pour la signature dans l’éditeur Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Pour désactiver l’assistance pour la signature, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Saisie semi-automatique des instructions** > **Informations sur les paramètres**.
@@ -132,17 +133,17 @@ Quand vous écrivez du code qui appelle une fonction, l’aide de signature appa
 
 Placer le pointeur de la souris sur un identificateur permet d’afficher une info-bulle Info express. En fonction de l’identificateur, Info express peut afficher les valeurs ou les types potentiels, la documentation disponible, les types de retour et les emplacements de définition :
 
-![Info express](media/code-editing-quick-info.png)
+![Informations rapides dans l’éditeur Visual Studio](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloration du code
 
 La coloration du code utilise les informations issues de l’analyse du code pour les variables de couleurs, les instructions et d’autres parties de votre code. Par exemple, les variables qui font référence à des modules ou à des classes peuvent être affichées dans une couleur différente des fonctions ou d’autres valeurs, et les noms de paramètres s’affichent dans une couleur différente des variables locales ou globales. (Par défaut, les fonctions ne sont pas affichées en gras) :
 
-![Coloration du code](media/code-editing-code-coloring.png)
+![Coloration du code et de la syntaxe dans l’éditeur Visual Studio](media/code-editing-code-coloring.png)
 
 Pour personnaliser les couleurs, accédez à **Outils** > **Options** > **Environnement** > **Polices et couleurs** et modifiez les entrées **Python** dans la liste **Afficher les éléments** :
 
-![Options Polices et couleurs](media/code-editing-customize-colors.png)
+![Options Polices et Couleurs dans Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Pour désactiver la coloration du code, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé** et désactivez **Options diverses** > **Color names based on type** (Colorer les noms en fonction du type). Consultez [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,9 +182,9 @@ Le fait de sélectionner ce code et de choisir la commande **Entourer de** affic
 
 Vous pouvez voir les extraits de code disponibles dans le **Gestionnaire des extraits de code**, que vous ouvrez avec la commande de menu **Outils** > **Gestionnaire des extraits de code** et en sélectionnant **Python** comme langage :
 
-![Gestionnaire des extraits de code](media/code-editing-code-snippets-manager.png)
+![Gestionnaire des extraits de code dans Visual Studio](media/code-editing-code-snippets-manager.png)
 
-Pour créer vos propres extraits de code, consultez [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
+Pour créer vos propres extraits de code, consultez [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si vous écrivez un extrait de code de qualité et que vous souhaitez le partager, n’hésitez pas à le publier dans un contenu Gist et [informez-nous](https://github.com/Microsoft/PTVS/issues). Nous pourrons peut-être l’ajouter dans une prochaine version de Visual Studio.
 
@@ -195,7 +196,7 @@ La prise en charge de Python dans Visual Studio fournit plusieurs options pour n
 
 La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et inclut une liste de définitions à deux niveaux. La liste déroulante de gauche contient des définitions de fonction et de classe de niveau supérieur du fichier actuel. La liste déroulante de droite affiche une liste de définitions dans l’étendue illustrée à gauche. À mesure de vos déplacements dans l’éditeur, les listes sont mises à jour pour afficher votre contexte actuel. En outre, vous pouvez sélectionner une entrée à partir de ces listes pour y accéder directement.
 
-![Barre de navigation](media/code-editing-navigation-bar.png)
+![Navigation Bar] dans l’éditeur de Visual Studio(media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Pour masquer la barre de navigation, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Paramètres** > **Barre de navigation**.
@@ -204,7 +205,7 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 
 **Atteindre la définition** permet de passer rapidement de l’utilisation d’un identificateur (p. ex. un nom de fonction, une classe ou une variable) au code source dans lequel il est défini. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Atteindre la définition** ou placer le signe insertion dans l’identificateur et appuyer sur **F12**. Cela fonctionne dans l’ensemble de votre code et des bibliothèques externes sous réserve que ce code source soit disponible. Si le code source de la bibliothèque n’est pas disponible, **Atteindre la définition** passe à l’instruction `import` appropriée pour une référence de module ou affiche une erreur.
 
-![Atteindre la définition](media/code-editing-go-to-definition.png)
+![Commande Atteindre la définition dans Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Boîte de dialogue Naviguer vers
 
@@ -212,7 +213,7 @@ La commande **Modifier** > **Naviguer vers** (**Ctrl**+**,**) affiche une zone d
 
 Vous pouvez accéder à la définition de cet identificateur en double-cliquant sur n’importe quel nom ou en effectuant une sélection avec les touches de direction et en appuyant sur **Entrée**.
 
-![Boîte de dialogue Naviguer vers](media/code-editing-navigate-to.png)
+![Commande Naviguer vers dans Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Rechercher toutes les références
 

@@ -1,6 +1,6 @@
 ---
 title: Fenêtre interactive Python (REPL)
-description: Guide pratique pour utiliser la fenêtre interactive (REPL) pour le code Python dans Visual Studio pour un développement de code rapide.
+description: Utilisez la fenêtre interactive (REPL) pour développer rapidement du code Python dans Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8146e43a51e4d1634cbba78d789a3ef8cff99f95
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3c3a3a6cd3694a0affa6ca1d5cfabac58b124ec9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219924"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055713"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -35,7 +36,7 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 Cet article décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Utiliser IPython REPL](interactive-repl-ipython.md).
 
-Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur, telles que **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
 |   |   |
 |---|---|

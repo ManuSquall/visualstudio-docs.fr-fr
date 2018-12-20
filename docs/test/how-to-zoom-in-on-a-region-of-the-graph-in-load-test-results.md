@@ -1,5 +1,5 @@
 ---
-title: Faire un zoom sur les graphiques des résultats des tests de charge dans Visual Studio
+title: Effectuer un zoom sur les graphiques des résultats des tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895884"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064891"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Guide pratique pour faire un zoom sur une région du graphique des résultats d’un test de charge
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procédure : effectuer un zoom sur une région du graphique des résultats d’un test de charge
 
 Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pour effectuer un zoom avant et accéder à une zone spécifique du graphique. En zoomant en avant, vous pouvez examiner en détail les données générées durant une série de tests de charge.
 
@@ -59,7 +59,7 @@ Pour afficher des graphes :
 
      \- ou -
 
-     Voir les détails d'un test de charge exécuté par le passé. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
+     Voir les détails d'un test de charge exécuté par le passé. Pour plus d'informations, voir [Procédure : accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Choisissez **Graphiques** si vos graphiques ne sont pas affichés.
 

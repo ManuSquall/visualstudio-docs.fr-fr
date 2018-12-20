@@ -1,5 +1,5 @@
 ---
-title: Cibler une version du .NET Framework dans Visual Studio
+title: Cibler une version du .NET Framework
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752305"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059468"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Guide pratique pour cibler une version du .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Procédure : Cibler une version du .NET Framework
 
 Ce document explique comment cibler une version du .NET Framework quand vous créez un projet, puis comment changer la version ciblée dans un projet Visual Basic, C# ou Visual F# existant.
 
 > [!IMPORTANT]
-> Pour plus d’informations sur le changement de la version cible des projets C++, consultez [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> Pour plus d’informations sur la modification de la version cible pour les projets C++, consultez [Guide pratique pour modifier l’infrastructure cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Pour cibler une version lorsque vous créez un projet
 
@@ -46,7 +46,7 @@ Lorsque vous créez un projet, les versions .NET Framework disponibles dépenden
 
 Vous pouvez modifier la version ciblée de .NET Framework dans un projet Visual Basic, C# ou Visual F# en suivant cette procédure.
 
-Pour plus d’informations sur le changement de la version cible des projets C++, consultez [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+Pour plus d’informations sur la modification de la version cible pour les projets C++, consultez [Guide pratique pour modifier l’infrastructure cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet que vous souhaitez modifier, puis choisissez **Propriétés**.
 
@@ -74,4 +74,4 @@ Pour plus d’informations sur le changement de la version cible des projets C+
 - [Résoudre les problèmes liés aux erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
 - [Application, page du Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Application, page du Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Guide pratique pour modifier l’infrastructure cible et l’ensemble d’outils de plateforme (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

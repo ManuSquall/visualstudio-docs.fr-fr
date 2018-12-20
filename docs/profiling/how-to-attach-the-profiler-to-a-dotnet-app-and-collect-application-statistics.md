@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des statistiques d'applications en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: Attacher le profileur à une application autonome .NET Framework et collecter des statistiques d’application
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 17a6e425984872b8611ca5210d8cc47af5a96be5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06092367bc900c34ff6c599e6819321800cf2084
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833471"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067490"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des statistiques d’application en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le profileur à une application .NET Framework autonome et collecter des statistiques d’application en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application .NET Framework autonome (cliente) en cours d’exécution et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.  
 
 > [!NOTE]
@@ -70,9 +70,9 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    -   `PID` spécifie l’ID de processus de l’application cible. `ProcessName` spécifie le nom du processus. Notez que si vous spécifiez `ProcessName` et que plusieurs processus de même nom sont en cours d’exécution, les résultats sont imprévisibles. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultative.  
+   -   [/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
 
-   -   Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Cela correspond environ à une fois toutes les 10 secondes sur un processeur de 1 GH. Vous pouvez spécifier l’une des options suivantes pour modifier l’intervalle du cycle d’horloge ou pour spécifier un événement d’échantillonnage différent. [/targetclr](../profiling/targetclr.md)**:**`Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultative.  
+   -   Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Cela correspond environ à une fois toutes les 10 secondes sur un processeur de 1 GH. Vous pouvez spécifier l’une des options suivantes pour modifier l’intervalle du cycle d’horloge ou pour spécifier un événement d’échantillonnage différent. [/targetclr](../profiling/targetclr.md)**:**`Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
 
    |||  
    |-|-|  
@@ -106,7 +106,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     -   Tapez **VSPerfCmd /detach**  
 
-         - ou -  
+         ou  
 
     -   Fermez l’application cible.  
 

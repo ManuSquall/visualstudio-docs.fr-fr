@@ -1,6 +1,6 @@
 ---
-title: Débogage du code Python
-description: Procédure pas à pas des fonctionnalités de débogage de code Python dans Visual Studio, y compris la définition des points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
+title: Déboguer du code Python
+description: Visual Studio fournit de riches fonctionnalités de débogage du code Python, y compris la définition de points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101158"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068433"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -54,7 +55,7 @@ Une session de débogage est initialisée par la commande **Débogage** > **Dém
 
 Les points d’arrêt arrêtent l’exécution du code au niveau d’un point marqué, ce qui vous permet d’inspecter l’état du programme. Pour définir des points d’arrêt, cliquez dans la marge gauche de l’éditeur de code ou cliquez avec le bouton droit sur une ligne de code et sélectionnez **Point d’arrêt** > **Insérer un point d’arrêt**. Un point rouge apparaît sur chaque ligne comportant un point d’arrêt.
 
-![Points d’arrêt dans Visual Studio](media/debugging-breakpoints.png)
+![Points d’arrêt qui apparaissent dans Visual Studio](media/debugging-breakpoints.png)
 
 Pour supprimer un point d’arrêt, cliquez sur le point rouge, ou cliquez avec le bouton droit sur la ligne de code et sélectionnez **Point d’arrêt** > **Supprimer le point d’arrêt**. Vous pouvez également désactiver le point d’arrêt sans le supprimer en utilisant la commande **Point d’arrêt** > **Désactiver le point d’arrêt**.
 
@@ -87,27 +88,27 @@ Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifie
 
 Pour visualiser une valeur à l’aide des **DataTips**, il vous suffit de positionner le pointeur de la souris sur une variable quelconque dans l’éditeur. Vous pouvez alors cliquer sur cette valeur si vous souhaitez la modifier :
 
-![DataTips dans le débogueur](media/debugging-quick-tips.png)
+![DataTips affichés dans le débogueur Visual Studio](media/debugging-quick-tips.png)
 
 La fenêtre **Automatique** (**Débogage** > **Fenêtres** > **Automatique**) contient les variables et expressions qui sont proches de l’instruction actuelle. Vous pouvez double-cliquer sur la colonne Valeur ou sélectionner une valeur et appuyer sur **F2** pour la modifier :
 
-![Fenêtre Automatique dans le débogueur](media/debugging-autos-window.png)
+![Fenêtre Automatique dans le débogueur Visual Studio](media/debugging-autos-window.png)
 
 La fenêtre **Variables locales** (**Débogage** > **Fenêtres** > **Variables locales**) affiche toutes les variables qui se trouvent dans la portée actuelle et que vous pouvez modifier :
 
-![Fenêtre Variables locales dans le débogueur](media/debugging-locals-window.png)
+![Fenêtre Variables locales dans le débogueur Visual Studio](media/debugging-locals-window.png)
 
 Pour plus d’informations sur l’utilisation des fenêtres **Automatique** et **Variables locales**, consultez l’article [Inspecter les variables dans les fenêtres Automatique et Variables locales](../debugger/autos-and-locals-windows.md).
 
 Les Fenêtres **Espion** (**Débogage** > **Fenêtres** > **Espion** > **Espion 1-4**) vous permettent d’entrer des expressions Python arbitraires et d’en visualiser les résultats. Les expressions sont réévaluées pour chaque étape :
 
-![Fenêtre Espion dans le débogueur](media/debugging-watch-window.png)
+![Fenêtre Espion dans le débogueur Visual Studio](media/debugging-watch-window.png)
 
 Pour plus d’informations sur l’utilisation de la fonctionnalité **Espion**, consultez l’article [Définir un espion sur les variables à l’aide des Fenêtres Espion et Espion express](../debugger/watch-and-quickwatch-windows.md).
 
 Pendant l’inspection d’une valeur de chaîne (`str`, `unicode`, `bytes` et `bytearray` sont toutes considérées comme des chaînes dans ce but), une icône Loupe apparaît à droite de la valeur. Quand vous cliquez sur l’icône, la valeur de chaîne sans guillemets s’affiche dans une boîte de dialogue contextuelle, avec retour à la ligne et défilement, ce qui est utile pour les chaînes longues. En outre, la sélection de la flèche déroulante vers le bas en regard de l’icône vous permet de sélectionner des visualisations aux formats texte brut, HTML, XML et JSON :
 
-![Visualiseurs de chaîne](media/debugging-string-visualizers.png)
+![Visualiseurs de chaîne dans le débogueur Visual Studio](media/debugging-string-visualizers.png)
 
 Les visualisations HTML, XML et JSON apparaissent dans des fenêtres contextuelles distinctes avec des arborescences et mise en surbrillance de la syntaxe.
 
@@ -115,13 +116,13 @@ Les visualisations HTML, XML et JSON apparaissent dans des fenêtres contextuell
 
 Si une erreur survient dans votre programme lors du débogage, mais que vous ne disposez pas d’un gestionnaire d’exceptions à cet effet, le débogueur s’arrête au niveau de l’exception :
 
-![Fenêtre contextuelle d’exceptions](media/debugging-exception-popup.png)
+![Fenêtre contextuelle d’exceptions dans le débogueur Visual Studio](media/debugging-exception-popup.png)
 
 À ce stade, vous pouvez inspecter l’état du programme, y compris la pile des appels. Toutefois, si vous essayez d’exécuter le code pas à pas, l’exception continue d’être levée jusqu’à ce qu’elle soit gérée ou que votre programme se ferme.
 
 La commande de menu **Débogage** > **Fenêtres** > **Paramètres d’exception** affiche une fenêtre vous permettant de développer **Python Exceptions** (Exceptions Python) :
 
-![Fenêtre d’exceptions](media/debugging-exception-settings.png)
+![Fenêtre d’exceptions dans le débogueur Visual Studio](media/debugging-exception-settings.png)
 
 La case à cocher de chaque exception détermine si le débogueur s’arrête *systématiquement* lorsque l’exception est déclenchée. Cochez cette case si vous souhaitez que le débogueur s’arrête plus souvent pour une exception spécifique.
 
@@ -133,7 +134,7 @@ Pour configurer une exception absente de cette liste, ajoutez-la en cliquant sur
 
 Par défaut, le débogueur démarre votre programme avec le lanceur Python standard, sans aucun argument de ligne de commande et aucun autre chemin d’accès ni condition spéciaux. Les options de démarrage sont modifiées par le biais des propriétés de débogage du projet accessibles en cliquant avec le bouton droit sur votre projet dans **l’Explorateur de solutions**, en sélectionnant **Propriétés**, puis l’onglet **Débogage**.
 
-![Propriétés de débogage du projet](media/debugging-project-properties.png)
+![Propriétés de débogage du projet dans le débogueur Visual Studio](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Options du mode de lancement
 

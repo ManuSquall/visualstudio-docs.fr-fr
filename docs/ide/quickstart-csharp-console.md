@@ -1,10 +1,11 @@
 ---
-title: 'Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#'
+title: Utiliser Visual Studio pour créer une première application console C#
+titleSuffix: ''
 description: Découvrez pas à pas comment créer une application console Hello World simple dans Visual Studio, en C#.
-ms.custom: ''
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -14,14 +15,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443413"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158604"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
+# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application C# simple qui s’exécute dans la console.
 

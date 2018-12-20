@@ -1,5 +1,5 @@
 ---
-title: Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge dans Visual Studio
+title: Analyse des violations de règles de seuil dans les tests de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895429"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061809"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
 
@@ -39,7 +39,7 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
 |Colonne|Description|Visible par défaut|
 |-|-|-|
 |réflexion|Heure à laquelle la violation s'est produite lors du test de charge.|Oui|
-|Ordinateur|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :** Ceci est important quand vous exécutez des tests de charge sur des plateformes de test.|Oui|
+|Ordinateur|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :**  Ceci est important lorsque vous exécutez des tests de charge sur des plateformes de test.|Oui|
 |Category|Catégorie du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Counter|Nom du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Instance|Instance de compteur de performance sur laquelle la violation s'est produite.|Oui|

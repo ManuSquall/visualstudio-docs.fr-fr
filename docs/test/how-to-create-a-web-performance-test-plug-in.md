@@ -1,5 +1,5 @@
 ---
-title: Créer un plug-in de test de performances web pour Visual Studio
+title: Créer un plug-in de test de performances web
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894519"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067652"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Guide pratique pour créer un plug-in de test de performances web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procédure : créer un plug-in de test de performances web
 
 Les plug-ins de tests de performances web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Un plug-in de test de performancesweb personnalisé permet d'appeler du code durant l'exécution du test de performances web. Le plug-in de test de performances web est exécuté une seule fois pour chaque itération de test. De plus, si vous substituez les méthodes PreRequest ou PostRequest dans le plug-in de test, ces plug-ins de requête s'exécuteront avant ou après chaque requête, respectivement.
 
@@ -111,7 +111,7 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
     > [!WARNING]
     > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
+    > **Échec de la requête : Exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
@@ -177,7 +177,7 @@ namespace SampleRules
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md)
+- [Guide pratique pour créer un plug-in au niveau de la requête](../test/how-to-create-a-request-level-plug-in.md)
 - [Coder une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Coder une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)

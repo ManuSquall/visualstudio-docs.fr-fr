@@ -1,5 +1,5 @@
 ---
-title: Conception XAML dans Visual Studio
+title: Utiliser XAML
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389615"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062980"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Concevoir en XAML dans Visual Studio
 
@@ -36,25 +36,25 @@ Vous pouvez basculer entre Visual Studio et Blend pour Visual Studio, et vous po
 
 Pour la plupart des tâches de base, l'IDE de Visual Studio et l'IDE de Blend pour Visual Studio partagent le même ensemble de fenêtres et de fonctionnalités, avec quelques différences subtiles. Voici quelques points clés :
 
-- **Une interface utilisateur cohérente :** vous pouvez concevoir vos applications dans le contexte familier de l'interface utilisateur de Visual Studio, ce qui rend le passage d'un IDE à un autre plus agréable et plus productif. Blend pour Visual Studio utilise le thème sombre de Visual Studio qui vous permet de vous concentrer sur le contenu que vous créez en améliorant le contraste entre le contenu et l'interface utilisateur. Consultez [Créer une IU à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+- **Une interface utilisateur cohérente :** Vous pouvez concevoir vos applications dans le contexte familier de l’interface utilisateur de Visual Studio, ce qui rend le passage d’un IDE à un autre plus agréable et plus productif. Blend pour Visual Studio utilise le thème sombre de Visual Studio qui vous permet de vous concentrer sur le contenu que vous créez en améliorant le contraste entre le contenu et l'interface utilisateur. Consultez [Créer une IU à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
      ![Environnement IDE Blend for Visual Studio](../designers/media/blendide.png)
 
-- **XAML IntelliSense :** les deux IDE prennent en charge toutes les fonctionnalités courantes que vous pouvez attendre d'IntelliSense, notamment la saisie semi-automatique des instructions, la prise en charge des opérations courantes de l'éditeur telles que l'ajout de commentaires et la mise en forme de code, ainsi que la navigation des ressources, la liaison et le code.
+- **XAML IntelliSense :** Les deux IDE prennent en charge toutes les fonctionnalités courantes que vous pouvez attendre d’IntelliSense, notamment la saisie semi-automatique des instructions, la prise en charge des opérations courantes de l’éditeur telles que l’ajout de commentaires et la mise en forme de code, ainsi que la navigation des ressources, la liaison et le code.
 
-- **Fonctionnalités de débogage de base :** vous pouvez maintenant déboguer dans Blend, notamment en définissant des points d'arrêt dans votre code afin de déboguer votre application en cours d'exécution. Pour maintenir une expérience de débogage cohérente avec Visual Studio, Blend pour Visual Studio inclut la plupart des fenêtres de débogage et barres d’outils de Visual Studio. Certaines fonctionnalités de débogage avancées, telles que les diagnostics et l'analyse du code, sont disponibles uniquement dans Visual Studio. Consultez [Déboguer dans Visual Studio](../debugger/debugging-in-visual-studio.md).
+- **Fonctionnalités de débogage de base :** Vous pouvez maintenant déboguer dans Blend, notamment en définissant des points d’arrêt dans votre code afin de déboguer votre application en cours d’exécution. Pour maintenir une expérience de débogage cohérente avec Visual Studio, Blend pour Visual Studio inclut la plupart des fenêtres de débogage et barres d’outils de Visual Studio. Certaines fonctionnalités de débogage avancées, telles que les diagnostics et l'analyse du code, sont disponibles uniquement dans Visual Studio. Consultez [Déboguer dans Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-- **Expérience de rechargement de fichier :** vous pouvez modifier vos fichiers XAML dans Blend pour Visual Studio ou dans Visual Studio. Vos fichiers modifiés sont alors rechargés automatiquement quand vous passez de l'un à l'autre. Pour minimiser les interruptions de flux de travail, vous pouvez maintenant définir vos préférences de rechargement des fichiers dans la boîte de dialogue correspondante.
+- **Expérience de rechargement de fichier :** Vous pouvez modifier vos fichiers XAML dans Blend pour Visual Studio ou dans Visual Studio. Vos fichiers modifiés sont alors rechargés automatiquement quand vous passez de l’un à l’autre. Pour minimiser les interruptions de flux de travail, vous pouvez maintenant définir vos préférences de rechargement des fichiers dans la boîte de dialogue correspondante.
 
      ![Expérience de rechargement de fichier](../designers/media/blendfilereload.png)
 
-- **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs quand vous vous connectez avec le même compte Microsoft. Consultez [Synchroniser les paramètres sur plusieurs ordinateurs](../ide/synchronized-settings-in-visual-studio.md).
+- **Dispositions et paramètres synchronisés :** Les dispositions personnalisées vous permettent d’enregistrer et d’appliquer des personnalisations de disposition de fenêtre d’outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs quand vous vous connectez avec le même compte Microsoft. Consultez [Synchroniser les paramètres sur plusieurs ordinateurs](../ide/synchronized-settings-in-visual-studio.md).
 
-- **Un Explorateur de solutions commun :** **Explorateur de solutions** vous offre une vue organisée de vos projets et de leurs fichiers, ainsi qu’un accès aux commandes qui s’y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
+- **Un Explorateur de solutions commun :** L’**Explorateur de solutions** vous offre une vue organisée de vos projets et de leurs fichiers, ainsi qu’un accès aux commandes qui s’y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer :** Team Explorer vous permet de gérer vos projets avec les référentiels GIT ou TFS afin de faciliter la collaboration d'équipe. Consultez [Travailler dans Team Explorer](/azure/devops/user-guide/work-team-explorer).
+- **Team Explorer :** Team Explorer vous permet de gérer vos projets avec les référentiels GIT ou TFS afin de faciliter la collaboration d’équipe. Consultez [Travailler dans Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet :** vous pouvez gérer les packages NuGet aussi bien dans Visual Studio que dans Blend pour Visual Studio. NuGet est un gestionnaire de package pour le .NET Framework qui simplifie l'installation et la suppression de packages d'une solution.
+- **NuGet :** Vous pouvez gérer les packages NuGet aussi bien dans Visual Studio que dans Blend pour Visual Studio. NuGet est un gestionnaire de package pour le .NET Framework qui simplifie l'installation et la suppression de packages d'une solution.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Fonctionnalités avancées dans Blend pour Visual Studio
 

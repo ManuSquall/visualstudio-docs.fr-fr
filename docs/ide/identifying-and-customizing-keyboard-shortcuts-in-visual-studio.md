@@ -1,5 +1,5 @@
 ---
-title: Identifier et personnaliser les raccourcis clavier dans Visual Studio
+title: Identifier et personnaliser les raccourcis clavier
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747227"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062969"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 
@@ -69,7 +69,7 @@ Si un raccourci est affecté à une commande du contexte global et à aucun autr
 
 2. Développez le dossier **Environnement**, puis choisissez **Clavier**.
 
-3. Facultatif : filtrez la liste des commandes en entrant tout ou partie du nom de la commande, sans espaces, dans la zone **Afficher les commandes contenant**.
+3. Facultatif : Filtrez la liste des commandes en entrant tout ou partie du nom de la commande, sans espaces, dans la zone **Afficher les commandes contenant**.
 
 4. Dans la liste, choisissez la commande à laquelle vous souhaitez associer un raccourci clavier.
 
@@ -78,7 +78,7 @@ Si un raccourci est affecté à une commande du contexte global et à aucun autr
     Par exemple, choisissez **Global** si vous voulez que le raccourci fonctionne dans tous les contextes. Vous pouvez utiliser n'importe quel raccourci qui n'est pas mappé (comme Global) dans un autre éditeur. Sinon, l'éditeur substitue le raccourci.
 
     > [!NOTE]
-    > Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, la touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison de touches Ctrl+Alt+Suppr.
+    > Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison de touches Ctrl+Alt+Suppr.
 
 6. Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 

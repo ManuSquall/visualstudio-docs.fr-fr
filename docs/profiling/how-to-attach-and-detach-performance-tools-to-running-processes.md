@@ -1,6 +1,6 @@
 ---
-title: Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher | Microsoft Docs
-ms.custom: ''
+title: Attacher les outils d’analyse des performances à des processus en cours d’exécution
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920928"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048526"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procédure : Attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.  
   
 > [!NOTE]

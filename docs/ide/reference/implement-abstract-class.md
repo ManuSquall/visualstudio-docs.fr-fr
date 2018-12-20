@@ -1,5 +1,5 @@
 ---
-title: Implémenter une classe abstraite dans Visual Studio
+title: Implémenter une classe abstraite
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294694"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047601"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implémenter une classe abstraite dans Visual Studio
 
@@ -24,11 +24,11 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** vous permet de générer immédiatement le code requis pour implémenter une classe abstraite.
+**Quoi :** Vous permet de générer immédiatement le code requis pour implémenter une classe abstraite.
 
-**Quand :** vous voulez hériter d’une classe abstraite.
+**Quand :** Vous voulez hériter d’une classe abstraite.
 
-**Pourquoi :** vous pouvez implémenter manuellement tous les membres abstraits un par un, mais cette fonctionnalité générera automatiquement toutes les signatures de la méthode.
+**Pourquoi :** Vous pouvez implémenter manuellement tous les membres abstraits un par un, mais cette fonctionnalité générera automatiquement toutes les signatures de la méthode.
 
 ## <a name="how-to"></a>Procédure
 
