@@ -1,5 +1,5 @@
 ---
-title: 'Comment : mettre en Cache les données dans un document protégé par un mot de passe'
+title: 'Procédure : Cache des données dans un document protégé par un mot de passe'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255341"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647289"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>Comment : mettre en Cache les données dans un document protégé par un mot de passe
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Procédure : Cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données dans le cache de données dans un document ou classeur est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer des modifications aux données mises en cache en remplaçant les deux méthodes dans votre projet.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -78,7 +78,7 @@ ms.locfileid: "35255341"
   
 ## <a name="see-also"></a>Voir aussi  
  [Données du cache](../vsto/caching-data.md)   
- [Comment : mettre en Cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Comment : mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+ [Guide pratique pour Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Guide pratique pour Mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

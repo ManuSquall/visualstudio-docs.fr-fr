@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter des parties XML personnalisées à des documents à l’aide de compléments VSTO'
+title: 'Procédure : Ajouter des parties XML personnalisées à des documents à l’aide des Compléments VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,19 +17,19 @@ helpviewer_keywords:
 - custom XML parts [Office development in Visual Studio], adding
 - documents [Office development in Visual Studio], custom XML parts
 - application-level add-ins [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b5cbdd401466e2aa5be5efd5824a73477943664
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826894"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648520"
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Comment : ajouter des parties XML personnalisées à des documents à l’aide de compléments VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Procédure : Ajouter des parties XML personnalisées à des documents à l’aide des Compléments VSTO
   Vous pouvez stocker des données XML dans les types suivants de documents en créant une partie XML personnalisée dans un complément VSTO :  
   
 - un classeur Microsoft Office Excel,  
@@ -40,7 +40,7 @@ ms.locfileid: "49826894"
   
   Pour plus d’informations, consultez [vue d’ensemble des parties XML personnalisées](../vsto/custom-xml-parts-overview.md).  
   
-  **S'applique à :** les informations de cette rubrique s'appliquent aux projets de niveau application pour Excel, PowerPoint et Word. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux projets de niveau application pour Excel, PowerPoint et Word. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Pour ajouter une partie XML personnalisée à un classeur Excel  
   
@@ -86,6 +86,6 @@ ms.locfileid: "49826894"
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble de parties XML personnalisée](../vsto/custom-xml-parts-overview.md)   
- [Comment : ajouter des parties XML personnalisées aux personnalisations au niveau du document](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [Guide pratique pour Ajouter des parties XML personnalisées aux personnalisations au niveau du document](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

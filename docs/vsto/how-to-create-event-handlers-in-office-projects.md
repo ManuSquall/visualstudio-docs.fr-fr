@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer des gestionnaires d’événements dans les projets Office'
+title: 'Procédure : Créer des gestionnaires d’événements dans les projets Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - event handlers [Office development in Visual Studio]
 - Visual C# [Office development in Visual Studio], event handlers
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b7e55ee7f094ad104d9c8eb6ef3057621bcccee
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254242"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648598"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Comment : créer des gestionnaires d’événements dans les projets Office
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Procédure : Créer des gestionnaires d’événements dans les projets Office
   Il existe plusieurs façons de créer des gestionnaires d’événements en Visual Basic et c#. En mode conception, vous pouvez créer des gestionnaires d’événements pour les contrôles de la valeur par défaut en double-cliquant sur le contrôle, ou utiliser le volet événements de la **propriétés** fenêtre pour créer des gestionnaires pour tout événement sur le contrôle. Toutefois, si vous êtes en mode Code, vous ne souhaitez ne peut-être pas basculer en mode Design pour créer un gestionnaire d’événements.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -55,7 +55,7 @@ ms.locfileid: "35254242"
   
 ## <a name="see-also"></a>Voir aussi  
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)   
- [Procédure pas à pas : Programmer des événements d’un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Procédure pas à pas : Programmer par rapport aux événements d’un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Générer des solutions Office](../vsto/building-office-solutions.md)  
   
   

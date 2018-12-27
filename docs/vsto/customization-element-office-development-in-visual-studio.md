@@ -1,6 +1,7 @@
 ---
 title: '&lt;personnalisation&gt; élément (développement Office dans Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f1344b69aaf098f766aeafddfd23cea84d1a981
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1fc3b24a85c1fca61e024cb59e33c5d4c735271a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671172"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647221"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;personnalisation&gt; élément (développement Office dans Visual Studio)
   L’élément `customization` de l’espace de noms `vstov4` décrit une solution Office spécifique. Les éléments enfants sont différents pour les personnalisations au niveau du document et les compléments VSTO.  
@@ -63,7 +64,7 @@ ms.locfileid: "35671172"
 |`id`|Obligatoire pour un déploiement à projets multiples. L’élément `id` identifie de façon unique une solution Office.|  
   
 ### <a name="document-level-customizations"></a>Personnalisations au niveau du document  
- L’élément `customization` comporte l’élément enfant suivant.  
+ L’élément `customization` possède l’élément enfant suivant.  
   
 #### <a name="document"></a>document  
  Le `document` élément dans le `vstov4` espace de noms est défini dans [ &#60;document&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).  

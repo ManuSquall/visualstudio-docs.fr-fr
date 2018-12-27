@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567455"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647775"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisation et localisation de solutions Excel
   Cette section contient des informations sur les considérations spéciales concernant les solutions Microsoft Office Excel appelées à être exécutées sur des ordinateurs dont les paramètres Windows sont autres qu’anglais. La plupart des aspects de la globalisation et de la localisation des solutions Microsoft Office sont les mêmes que ceux que vous rencontrez quand vous créez d’autres types de solutions à l’aide de Visual Studio. Pour obtenir des informations générales, consultez [Globalize et localisation d’applications](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567455"
   
  Même si vous utilisez le format Anglais (États-Unis) pour les données passées ou manipulées par du code managé, Excel interprète et affiche les données correctement en fonction des paramètres régionaux de l’utilisateur final. Excel peut mettre correctement en forme les données, car le code managé passe l’ID de paramètres régionaux 1033 en même temps que les données, ce qui indique que les données sont au format Anglais (États-Unis) et qu’elles doivent donc être remises en forme en fonction des paramètres régionaux de l’utilisateur.  
   
- Par exemple, si les utilisateurs finaux ont défini leurs options régionales sur les paramètres régionaux Allemand (Allemagne), ils s’attendent à ce que la date du 29 juin 2005 soit mise en forme de de cette façon : 29.06.2005. Or, si votre solution passe la date à Excel sous forme de chaîne, vous devez mettre en forme la date selon le format Anglais (États-Unis) : 6/29/2005. Si la cellule est mise en forme en tant que cellule de date, Excel affiche la date au format Allemand (Allemagne).  
+ Par exemple, si les utilisateurs finaux ont leurs options régionales défini pour les paramètres régionaux allemands (Allemagne), qu’elles attendent la date du 29 juin 2005, à mettre en forme de cette façon : 29.06.2005. Toutefois, si votre solution transmet la date à Excel sous forme de chaîne, vous devez mettre en forme la date en fonction du format anglais (États-Unis) : 6/29/2005. Si la cellule est mise en forme en tant que cellule de date, Excel affiche la date au format Allemand (Allemagne).  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passer d’autres ID de paramètres régionaux au modèle objet Excel  
  Le Common Language Runtime (CLR) passe automatiquement l’ID de paramètres régionaux 1033 à toutes les méthodes et propriétés du modèle objet Excel qui acceptent les données sensibles aux paramètres régionaux. Il n’y a aucun moyen de modifier ce comportement automatiquement pour tous les appels à destination du modèle objet. Cependant, vous pouvez passer un autre ID de paramètres régionaux à une méthode spécifique en utilisant <xref:System.Type.InvokeMember%2A> pour appeler la méthode et en passant l’ID de paramètres régionaux au paramètre *culture* de la méthode.  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  Tout code ouvrant ou utilisant des données externes, telles que des fichiers contenant des valeurs séparées par des virgules (fichiers CSV) exportés à partir d’un système hérité, peut aussi être affecté si ces fichiers sont exportés en utilisant un format en plus de « en-US ». Il se peut que l’accès à la base de données ne soit pas affecté, car toutes les valeurs sont censées être au format binaire, à moins que la base de données stocke les dates sous forme de chaînes ou exécute des opérations qui n’utilisent pas le format binaire. De même, si vous créez des requêtes SQL en utilisant des données à partir d’Excel, vous devrez peut-être vérifier qu’elles sont au format en-US, selon la fonction que vous utilisez.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : cibler l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Guide pratique pour Cible de l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   

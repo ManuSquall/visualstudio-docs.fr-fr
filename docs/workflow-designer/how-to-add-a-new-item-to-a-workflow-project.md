@@ -1,5 +1,5 @@
 ---
-title: 'Concepteur de flux de travail - Comment : ajouter un nouvel élément à un projet de flux de travail'
+title: 'Concepteur de flux de travail - Comment : Ajouter un nouvel élément à un projet de workflow'
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbed404f2cdd69446d8945fc9ff96703eccd161f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0e5df48d1c96905c022a6737d58f75d6c548ccb
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814225"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738687"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de flux de travail
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procédure : Ajouter un nouvel élément à un projet de flux de travail
 
 Une fois que vous avez créé un projet de flux de travail, vous pouvez ajouter des activités de flux de travail, les concepteurs et les autres éléments Visual Studio familiers à votre projet.
 
@@ -26,14 +26,14 @@ Le tableau suivant répertorie les éléments Windows Workflow Foundation (WF) q
 
 | Name | Description |
 |-| - |
-| Activité | Activité à composer d'autres activités. Sélection de cet élément ajoute le même fichier XAML au projet que ceux obtenus lors de la sélection du **bibliothèque d’activités** modèle pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une bibliothèque d’activités](../workflow-designer/how-to-create-an-activity-library.md). |
-| Concepteur d'activités | Concepteur pour personnaliser l’expérience au moment du design d’une activité. Sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du **Bibliothèque ActivityDesigner** modèle pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une bibliothèque ActivityDesigner](../workflow-designer/how-to-create-an-activity-designer-library.md). |
+| Activité | Activité à composer d'autres activités. Sélection de cet élément ajoute le même fichier XAML au projet que ceux obtenus lors de la sélection du **bibliothèque d’activités** modèle pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [créer un projet de flux de travail](creating-a-workflow-project.md). |
+| Concepteur d'activités | Concepteur pour personnaliser l’expérience au moment du design d’une activité. Sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du **Bibliothèque ActivityDesigner** modèle pour un nouveau projet. |
 | Activité de code | Activité avec logique d'exécution écrite dans le code. Un fichier de code source avec substitution de la méthode <xref:System.Activities.CodeActivity.Execute%2A> est déjà généré automatiquement. |
-| Service de workflow WCF | Service [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] construit à l'aide d'activités de workflow. Sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du **Application de Service de Workflow WCF** modèle pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une Application de Service de Workflow WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md). |
+| Service de workflow WCF | Service [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] construit à l'aide d'activités de workflow. Sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du **Application de Service de Workflow WCF** modèle pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : Créer une Application de Service de Workflow WCF](/visualstudio/workflow-designer/creating-a-workflow-project). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
-1. Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 

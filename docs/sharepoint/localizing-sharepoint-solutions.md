@@ -22,16 +22,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119199"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684741"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localiser des solutions SharePoint
 
-  Le processus de préparation de vos applications afin qu’elles puissent être utilisées mondialement est appelé localisation. La localisation est traduction de ressources pour une culture spécifique. Pour plus d’informations, consultez [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications). Cette rubrique fournit une vue d’ensemble de la localisation d’une solution SharePoint.  
+  Le processus de préparation de vos applications afin qu’elles puissent être utilisées mondialement est appelé localisation. La localisation est traduction de ressources pour une culture spécifique. Pour plus d’informations, consultez [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md). Cette rubrique fournit une vue d’ensemble de la localisation d’une solution SharePoint.  
   
  Pour localiser une solution, vous supprimez des chaînes codées en dur à partir du code et les rendez abstraites dans des fichiers de ressources. Un fichier de ressources est un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-en fonction du fichier avec un *.resx* extension. Le fichier de ressources contient les versions traduites des chaînes utilisées dans votre solution. Pour plus d’informations, consultez [ressources dans les Applications](http://go.microsoft.com/fwlink/?LinkID=155844).  
   
@@ -59,7 +59,7 @@ ms.locfileid: "37119199"
  Il existe trois domaines vous localisez généralement dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] applications SharePoint : fonctionnalités, le balisage de page ASPX et le code. À des fins d’illustration, les sections suivantes supposent que d’une solution SharePoint que vous souhaitez localiser en allemand et japonais. La langue par défaut est l’anglaise.  
   
 ### <a name="localize-features"></a>Localiser des fonctionnalités
- Pour localiser une fonctionnalité, vous devez remplacer le titre codé en dur et la description de la fonctionnalité avec une expression qui référence le titre traduite et la chaîne dans le fichier de ressources localisées. Vous effectuez cette modification dans le **Concepteur de fonctionnalités** dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Comment : localiser une fonctionnalité](../sharepoint/how-to-localize-a-feature.md).  
+ Pour localiser une fonctionnalité, vous devez remplacer le titre codé en dur et la description de la fonctionnalité avec une expression qui référence le titre traduite et la chaîne dans le fichier de ressources localisées. Vous effectuez cette modification dans le **Concepteur de fonctionnalités** dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Localiser une fonctionnalité](../sharepoint/how-to-localize-a-feature.md).  
   
  Pour localiser votre fonctionnalité anglaise en allemand et en japonais, vous ajoutez trois éléments de projet de fichier de ressources à votre projet : un pour l’anglais, un pour l’allemand et un pour le japonais. Fichiers de ressources de fonctionnalité ne peut pas être utilisés pour localiser le balisage ASPX ou le code ; fichiers de ressources séparés sont nécessaires.  
   
@@ -109,7 +109,7 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- Pour plus d’informations, consultez [Comment : le balisage ASPX localiser](../sharepoint/how-to-localize-aspx-markup.md).  
+ Pour plus d'informations, voir [Procédure : Localiser le balisage ASPX](../sharepoint/how-to-localize-aspx-markup.md).  
   
 ### <a name="localize-code"></a>Localiser le code
  Outre la localisation des chaînes de fonctionnalité et [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] balisage, vous devez également localiser les chaînes de message et les chaînes d’erreur qui s’affichent dans le code de votre solution. D’information localisés et les messages d’erreur sont contenus dans des assemblys satellites. Les assemblys satellites contiennent des chaînes qui sont visibles aux utilisateurs, tel que [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] messages texte et de sortie comme les exceptions.  
@@ -126,7 +126,7 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   
- Pour plus d’informations, consultez [Comment : localiser du code](../sharepoint/how-to-localize-code.md).  
+ Pour plus d'informations, voir [Procédure : Localiser le code](../sharepoint/how-to-localize-code.md).  
   
 #### <a name="web-part-code-localization"></a>Localisation du code Web partie
  Composants WebPart inclure une fonctionnalité d’éditeur de propriété personnalisée qui inclut des attributs de code qui utilisent des chaînes codées en dur, par exemple WebDisplayName, Category et WebDescription. Pour remplacer les valeurs de chaîne pour ces attributs, créez une classe séparée qui dérive de la classe de l’attribut. Dans ces classes, définissez la propriété de l’attribut. La propriété d’attribut dépend de la classe de base. Par exemple, la propriété d’attribut WebDisplayName est DisplayNameValue et la propriété d’attribut WebDescription est DescriptionValue.  
@@ -134,9 +134,8 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  Dans la classe dérivée, référencez l’ID de chaîne à partir du fichier de ressources et l’objet ResourceManager pour obtenir la valeur localisée pour l’ID de chaîne. Retourne cette valeur à l’attribut d’éditeur de propriété.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : localiser une fonctionnalité](../sharepoint/how-to-localize-a-feature.md)   
- [Comment : localiser le balisage ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Comment : localiser du code](../sharepoint/how-to-localize-code.md)   
- [Comment : ajouter un fichier de ressources](../sharepoint/how-to-add-a-resource-file.md)   
- [Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  
+ [Guide pratique pour Localiser une fonctionnalité](../sharepoint/how-to-localize-a-feature.md)   
+ [Guide pratique pour Localiser le balisage ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Guide pratique pour Localiser le code](../sharepoint/how-to-localize-code.md)   
+ [Guide pratique pour Ajouter un fichier de ressources](../sharepoint/how-to-add-a-resource-file.md)   
+ [Guide pratique pour Utilisez un fichier de ressources pour spécifier des autorisations, les propriétés et les noms localisés](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  

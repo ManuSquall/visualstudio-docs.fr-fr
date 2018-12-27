@@ -1,5 +1,5 @@
 ---
-title: "CA1502 : Éviter l'excès de complexité"
+title: 'CA1502 : Éviter l’excès de complexité'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,14 +20,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819301"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740323"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l’excès de complexité
 
 |||
 |-|-|
@@ -50,7 +50,7 @@ où un nœud représente un point de branchement logique et un bord représente 
 
 La règle signale une violation lorsque la complexité cyclomatique est supérieure à 25.
 
-Plus d’informations sur la métrique du code à [mesure la complexité et la facilité de maintenance du Code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Plus d’informations sur la métrique du code à [mesure la complexité et la facilité de maintenance du Code managé](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -104,8 +104,8 @@ Les exemples suivants montrent des méthodes qui ont différentes complexité cy
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1501 : Évitez l’excès d’héritage](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501 : Éviter l’excès d’héritage](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)

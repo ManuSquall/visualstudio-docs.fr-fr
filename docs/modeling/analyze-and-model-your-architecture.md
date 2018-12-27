@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348876"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740443"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -49,13 +49,13 @@ Assurez-vous que votre application répond aux spécifications architecturales �
 
 * Créez des modèles à différents niveaux de détails tout au long du cycle de vie de l’application dans le cadre de votre processus de développement.
 
-Consultez [scénario : modifier votre conception à l’aide de la visualisation et modélisation](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
+Consultez [scénario : Modifier votre conception à l’aide de la visualisation et modélisation](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
 ## <a name="to"></a>À
 
 |||
 |-|-|
-|**Visualiser du code**:<br /><br /> -Consultez organisation et les relations du code en créant des cartes de code. Visualisez les dépendances entre les assemblys, les espaces de noms, les classes, les méthodes et ainsi de suite.<br />-Consultez la structure des classes et membres d’un projet spécifique en créant des diagrammes de classes à partir de code.<br />-Recherchez des conflits entre votre code et sa conception en créant des diagrammes de dépendance pour valider le code.|-   [Visualiser du code](../modeling/visualize-code.md)<br />-   [Utilisation des Classes et d’autres Types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Vidéo : Comprendre la conception à partir du code avec Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Vidéo : Valider les dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Visualiser du code**:<br /><br /> -Consultez organisation et les relations du code en créant des cartes de code. Visualisez les dépendances entre les assemblys, les espaces de noms, les classes, les méthodes et ainsi de suite.<br />-Consultez la structure des classes et membres d’un projet spécifique en créant des diagrammes de classes à partir de code.<br />-Recherchez des conflits entre votre code et sa conception en créant des diagrammes de dépendance pour valider le code.|-   [Visualiser du code](../modeling/visualize-code.md)<br />-   [Utilisation des Classes et d’autres Types (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Vidéo : Comprendre la conception à partir du code avec Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Vidéo : Valider les dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Définir l’architecture**:<br /><br /> -Permet de définir et appliquer des contraintes sur les dépendances entre les composants de votre code en créant des diagrammes de dépendance.|-   [Vidéo : Valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Valider votre système avec les spécifications et la conception prévue**<br /><br /> -Valider les dépendances de code avec des diagrammes de dépendance qui décrivent l’architecture prévue et empêchent les modifications pouvant entrer en conflit avec la conception.|-   [Vidéo : Valider les dépendances d’architecture avec Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Personnaliser des modèles et des diagrammes**:<br /><br /> -Créer vos propres langages spécifiques à un domaine.|-   [SDK Modeling pour Visual Studio - langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -90,7 +90,7 @@ Diagrammes de dépendance vous permettent de définir la structure d’une appli
 **Voir :**
 
 -   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
+-   [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
 -   [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Langage spécifique à un domaine (DSL)

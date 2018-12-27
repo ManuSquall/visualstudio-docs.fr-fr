@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7f6ca4310e8de644f799c8c921ac27cb3e1c458
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758039"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684329"
 ---
 # <a name="using-the-activity-designers"></a>Utilisation des concepteurs d'activités
 
@@ -30,8 +30,6 @@ Le Concepteur de Workflow inclut un nombre d’activités fournies par le systè
 
 ## <a name="related-sections"></a>Rubriques connexes
 
- [Utilisation du Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)
-
- [Débogage de flux de travail à l’aide du Concepteur de flux de travail](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [Aide sur l’interface utilisateur du Concepteur de flux de travail](../workflow-designer/workflow-designer-ui-help.md)
+- [Utilisation du Concepteur de flux de travail](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [Débogage de flux de travail à l’aide du Concepteur de flux de travail](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [Aide sur l’interface utilisateur du Concepteur de flux de travail](../workflow-designer/workflow-designer-ui-help.md)

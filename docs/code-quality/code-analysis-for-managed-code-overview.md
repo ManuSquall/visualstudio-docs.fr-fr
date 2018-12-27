@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389310"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739680"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse statique du code pour le code managé dans Visual Studio
 
@@ -36,7 +36,7 @@ L'outil d'analyse représente les contrôles effectués lors d'une analyse comme
 
 Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou automatiquement.
 
-Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez **activer l’analyse du Code sur la Build** sur la Page de propriétés du projet. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse du Code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez **activer l’analyse du Code sur la Build** sur la Page de propriétés du projet. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse du Code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Pour exécuter manuellement l’analyse du code sur un projet, dans la barre de menus, choisissez **analyser** > **exécuter l’analyse du Code** > **exécuter l’analyse du Code sur \<projet >**.
 
@@ -71,7 +71,7 @@ En tant qu'organisation, vous pourriez demander à ce que tous les archivages re
 
 - Analyse du code est exécutée dans le cadre de la build la plus récente.
 
-Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage de projet](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage de projet](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Intégration de Team build
 
@@ -81,4 +81,4 @@ Vous pouvez utiliser les fonctionnalités intégrées du système de génératio
 
 - [Vue d’ensemble des analyseurs de Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Guide pratique pour activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Guide pratique pour Activer et désactiver l’analyse du Code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

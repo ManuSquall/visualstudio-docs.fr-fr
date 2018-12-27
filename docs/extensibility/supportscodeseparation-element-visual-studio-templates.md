@@ -1,10 +1,9 @@
 ---
-title: SupportsCodeSeparation, élément (modèles Visual Studio) | Documents Microsoft
+title: SupportsCodeSeparation, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140740"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561377"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation, élément (modèles Visual Studio)
-Spécifie si le **placer le code dans un fichier distinct** case à cocher est activée dans le **ajouter un nouvel élément** boîte de dialogue.  
+Spécifie ou non le **placer le code dans un fichier distinct** case à cocher est activée dans le **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,12 +48,12 @@ Spécifie si le **placer le code dans un fichier distinct** case à cocher est a
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche, que ce soit le **nouveau projet** ou **un nouvel élément** boîte de dialogue.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue.|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`, qui indique si Oui ou non le **placer le code dans un fichier distinct** case à cocher est activée dans le **ajouter un nouvel élément** boîte de dialogue.  
+ Le texte doit être `true` ou `false`indiquant ou non la **placer le code dans un fichier distinct** case à cocher est activée dans le **ajouter un nouvel élément** boîte de dialogue.  
   
 ## <a name="remarks"></a>Notes  
  `SupportsCodeSeparation` est un élément facultatif. La valeur par défaut est `false`.  

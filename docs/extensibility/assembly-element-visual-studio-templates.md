@@ -2,9 +2,8 @@
 title: Assembly, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2d2c1482f419153d14ad2d319f4581b1e14de7c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155462"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561065"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
 Spécifie les informations relatives à un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  
@@ -53,7 +52,7 @@ Spécifie les informations relatives à un assembly, le modèle utilise pour ajo
 |-------------|-----------------|  
 |[Référence](../extensibility/reference-element-visual-studio-templates.md)|Spécifie la référence d’assembly à ajouter quand l’élément est ajouté à un projet.|  
   
-## <a name="text-value"></a>Valeur de texte  
+## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
  Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Ce nom d’assembly doit être spécifié dans une des manières suivantes :  

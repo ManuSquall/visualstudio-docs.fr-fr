@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671242"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648805"
 ---
 # <a name="design-and-create-office-solutions"></a>Concevoir et créer des solutions Office
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer différents types de solutions Office. Cette section de la documentation décrit les modèles de projet et apporte des conseils sur la création de projets Office. Pour plus d’informations sur la façon d’implémenter les personnalisations de l’interface utilisateur et le code après avoir créé votre projet, consultez [Office de développer des solutions](../vsto/developing-office-solutions.md).  
@@ -34,7 +34,7 @@ ms.locfileid: "50671242"
 >  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.  
   
 ## <a name="create-office-projects"></a>Créer des projets Office  
- Avant de commencer, vous devez déterminer vos besoins et choisir le type de solution qui convient le mieux. Par exemple, si votre solution Office doit s'exécuter chaque fois que l'application est utilisée, un complément VSTO correspond mieux à vos critères. Si le code est étroitement intégré à un document unique, créez une personnalisation au niveau du document. Ces types de projets sont disponibles sous forme de modèles de projet Visual Studio. Pour plus d’informations sur les modèles de projet Office qui sont inclus avec Visual Studio, consultez [vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md). Pour plus d’informations sur la création de projets Office, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Avant de commencer, vous devez déterminer vos besoins et choisir le type de solution qui convient le mieux. Par exemple, si votre solution Office doit s'exécuter chaque fois que l'application est utilisée, un complément VSTO correspond mieux à vos critères. Si le code est étroitement intégré à un document unique, créez une personnalisation au niveau du document. Ces types de projets sont disponibles sous forme de modèles de projet Visual Studio. Pour plus d’informations sur les modèles de projet Office qui sont inclus avec Visual Studio, consultez [vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md). Pour plus d’informations sur la création de projets Office, consultez [Comment : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Certaines fonctionnalités et certains éléments des projets Office diffèrent des autres types de projets dans Visual Studio. Par exemple, quand vous créez un projet au niveau du document, le document ou le classeur de votre projet peut être ouvert et modifié depuis Visual Studio. Pour plus d’informations, consultez [les projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
@@ -53,7 +53,7 @@ ms.locfileid: "50671242"
   
   Toutefois, après le changement de la version cible du .NET Framework par Visual Studio, vous devrez peut-être modifier une partie du code de votre projet s’il utilise certaines fonctionnalités. Pour plus d’informations sur la façon de modifier le framework cible, consultez [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Pour plus d’informations sur les modifications que vous devrez peut-être apporter dans votre projet, consultez [solutions Office de migrer vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Si Visual Studio modifie le .NET Framework cible pour votre projet et que vous utilisez ClickOnce pour déployer votre solution, assurez-vous que vous sélectionnez également la version correspondante du .NET Framework dans le **conditions préalables** boîte de dialogue. Cette sélection ne change pas automatiquement quand vous modifiez la version cible du .NET Framework pour votre projet. Pour plus d’informations, consultez [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Si Visual Studio modifie le .NET Framework cible pour votre projet et que vous utilisez ClickOnce pour déployer votre solution, assurez-vous que vous sélectionnez également la version correspondante du .NET Framework dans le **conditions préalables** boîte de dialogue. Cette sélection ne change pas automatiquement quand vous modifiez la version cible du .NET Framework pour votre projet. Pour plus d'informations, voir [Procédure : Installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Vous ne pouvez pas cibler le .NET Framework 3.5 ou version antérieure dans les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Les projets Office créés à l’aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nécessitent les fonctionnalités introduites dans le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
@@ -66,7 +66,7 @@ ms.locfileid: "50671242"
 ### <a name="understand-the-client-profile"></a>Comprendre le profil client  
  Le .NET Framework Client Profile est un sous-ensemble du .NET Framework complet. Vous pouvez cibler le .NET Framework Client Profile si vous devez utiliser uniquement les fonctionnalités client du .NET Framework et souhaitez fournir le déploiement le plus rapide possible pour votre solution Office. Pour plus d’informations, consultez [profil client .NET Framework](/dotnet/framework/deployment/client-profile).  
   
- Quand vous créez un projet Office qui cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] est ciblé par défaut. Si vous souhaitez développer pour la version complète du [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], vous devez définir cette option après la création du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+ Quand vous créez un projet Office qui cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] est ciblé par défaut. Si vous souhaitez développer pour la version complète du [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], vous devez définir cette option après la création du projet. Pour plus d'informations, voir [Procédure : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Créer des solutions pour l’Édition 64 bits de Microsoft Office  
  Microsoft Office est disponibles dans les éditions 64 bits et 32 bits. Pour créer des solutions Office qui peuvent s’exécuter dans les deux éditions, le paramètre de plateforme cible pour votre projet doit être défini **Any CPU**. Il s'agit de la valeur par défaut pour les projets Office. Pour plus d’informations, consultez [solutions Office Build](../vsto/building-office-solutions.md).  
@@ -96,13 +96,13 @@ ms.locfileid: "50671242"
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)   
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Propriétés dans les projets Office](../vsto/properties-in-office-projects.md)   
  [Exécuter des solutions dans différentes versions de Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [Comment : applications Office de cible via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Guide pratique pour Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [Comment : définir les informations de configuration pour une solution Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
+ [Guide pratique pour Configurer les informations de configuration pour une solution Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [Utiliser les fonctionnalités Office dans Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md)   

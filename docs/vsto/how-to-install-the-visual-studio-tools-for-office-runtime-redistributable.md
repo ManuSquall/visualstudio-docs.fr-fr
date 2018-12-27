@@ -1,6 +1,7 @@
 ---
-title: 'Comment : installer Visual Studio Tools pour Office runtime redistributable'
-ms.custom: ''
+title: 'Procédure : Installer Visual Studio Tools pour Office runtime redistributable'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -11,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Office runtime [Office development in Visual Studio]
 - installing Office development tools in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15e3c1b25d4834808fb17e596fcc7babe7dd969f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 83bc53dec2c4085b59a07ddc4694ff184b9e75a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255848"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648494"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Comment : installer Visual Studio Tools pour Office runtime redistributable
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Procédure : Installer Visual Studio Tools pour Office runtime redistributable
   Visual Studio 2010 Tools pour Office runtime doit être installé sur chaque ordinateur qui exécute des solutions qui sont créées en utilisant les outils de développement Microsoft Office dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le runtime est installé automatiquement quand vous installez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et Microsoft Office. Pour plus d’informations, consultez [Visual Studio Tools pour les scénarios d’installation Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
  Dans les situations suivantes, vous devrez peut-être suivre les instructions d'installation manuelles ci-dessous :  
@@ -54,8 +55,8 @@ ms.locfileid: "35255848"
 ## <a name="see-also"></a>Voir aussi  
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [Comment : configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [Comment : assemblys PIA Office d’installation](../vsto/how-to-install-office-primary-interop-assemblies.md)   
+ [Guide pratique pour Configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [Guide pratique pour Installer les assemblys PIA Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [Gérer des documents sur un serveur à l’aide de la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
   

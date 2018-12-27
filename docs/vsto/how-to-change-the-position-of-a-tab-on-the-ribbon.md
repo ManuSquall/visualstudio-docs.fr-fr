@@ -1,5 +1,5 @@
 ---
-title: 'Comment : modifier la position d’un onglet dans le ruban'
+title: 'Procédure : Modifier la position d’un onglet dans le ruban'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255387"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647110"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Comment : modifier la position d’un onglet dans le ruban
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procédure : Modifier la position d’un onglet dans le ruban
   Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban à l’aide de la **éditeur de collections Tab**. Vous pouvez positionner les onglets personnalisés avant ou après un onglet prédéfini du ruban. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -57,7 +57,7 @@ ms.locfileid: "35255387"
   
 5.  Définir le **OfficeId** propriété ID de contrôle d’un onglet intégré.  
   
-     Pour obtenir la liste d’ID de contrôle, consultez [les fichiers d’aide Office 2010 : identificateurs de contrôle interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Pour obtenir la liste d’ID de contrôle, consultez [les fichiers d’aide Office 2010 : Identificateurs de contrôle interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   

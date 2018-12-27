@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879296"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684689"
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
-  Paramètres remplaçables, ou *jetons*, peut être utilisé à l’intérieur des fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont similaires à celui de la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [paramètres de modèle](/visualstudio/ide/template-parameters).  
+  Paramètres remplaçables, ou *jetons*, peut être utilisé à l’intérieur des fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont similaires à celui de la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Format de jeton
  Les jetons commenceront et se terminent par un caractère de signe dollar ($). Sur le déploiement, les jetons employés sont remplacés par les valeurs réelles lorsqu’un projet est empaqueté dans un package de solution SharePoint (*.wsp* fichier). Par exemple, le jeton **$SharePoint.Package.Name$** susceptibles de résoudre vers la chaîne « Test du Package SharePoint ».  
@@ -111,4 +111,3 @@ ms.locfileid: "49879296"
   
 ## <a name="see-also"></a>Voir aussi
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : remplir des documents avec des données à partir des services'
+title: 'Procédure : Remplir des documents avec des données à partir des services'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,27 +12,27 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ac901b524818086d6dbf23b7b55487054170b3e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fe69a35fb7f11eb649a45cd2d2238d1fb8e17ad1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758540"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647034"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>Comment : remplir des documents avec des données à partir des services
+# <a name="how-to-populate-documents-with-data-from-services"></a>Procédure : Remplir des documents avec des données à partir des services
 
 Vous pouvez accéder aux projets au niveau du document pour Microsoft Office en procédant de la même façon que pour les projets Windows Forms. Vous utilisez les mêmes outils et le même code pour importer les données dans votre solution, et vous pouvez même utiliser des contrôles Windows Forms pour afficher les données. En outre, vous pouvez tirer parti de contrôles appelés contrôles hôtes, qui sont des objets natifs dans Microsoft Office Excel et Microsoft Office Word qui ont été améliorés avec des événements et une fonctionnalité de liaison de données. Pour plus d’informations, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-L’exemple suivant montre comment ajouter des contrôles liés aux données à des documents au moment du design. Pour obtenir un exemple montrant comment ajouter des contrôles liés aux données dans des Compléments VSTO au moment de l’exécution, consultez [procédure pas à pas : lier à des données à partir d’un service dans un projet de complément VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
+L’exemple suivant montre comment ajouter des contrôles liés aux données à des documents au moment du design. Pour obtenir un exemple montrant comment ajouter des contrôles liés aux données dans des Compléments VSTO au moment de l’exécution, consultez [procédure pas à pas : Lier à des données à partir d’un service dans un projet de complément VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
 
-![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire pour interagir avec les services web à partir de Microsoft Excel ?](http://go.microsoft.com/fwlink/?LinkID=130284).
+![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Interagir avec les services web à partir de Microsoft Excel ? ](http://go.microsoft.com/fwlink/?LinkID=130284).
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Pour remplir un projet au niveau du document avec des données à partir d’un service web
 
@@ -59,7 +59,7 @@ Lorsque vous exécutez le projet, les contrôles affichent le premier enregistre
 - [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Comment : remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Comment : remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Comment : mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Guide pratique pour Remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Guide pratique pour Remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Guide pratique pour Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

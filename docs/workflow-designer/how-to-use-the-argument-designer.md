@@ -1,5 +1,5 @@
 ---
-title: 'Concepteur de flux de travail - Comment : utiliser le Concepteur d’arguments'
+title: 'Concepteur de flux de travail - Comment : Utiliser le concepteur d’arguments'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755520"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684598"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Procédure : utiliser le concepteur d’arguments
+# <a name="how-to-use-the-argument-designer"></a>Procédure : Utiliser le concepteur d’arguments
 
 Par rapport aux versions précédentes du .NET Framework, le Concepteur d’arguments facilite aux données de circuler vers et depuis une activité. Le concepteur est accessible en cliquant sur le **Arguments** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur contient une liste d’arguments qui s’affichent sous forme tabulaire et peuvent être triées en fonction de chacun des en-têtes de colonnes, à l’exception de la **valeur par défaut** colonne. Chaque argument contient une direction Entrée, Sortie, Entrée-Sortie ou Propriété, un type et une valeur d’expression par défaut (le cas échéant). Le nom et la valeur d’expression par défaut sont des champs de texte modifiables ; le type et la direction sont des zones de liste déroulante. Pour plus d’informations, consultez [Variables et arguments (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
@@ -37,5 +37,5 @@ Par rapport aux versions précédentes du .NET Framework, le Concepteur d’argu
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation du Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)
+- [Utilisation du Concepteur de flux de travail](developing-applications-with-the-workflow-designer.md)
 - [Variables et arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

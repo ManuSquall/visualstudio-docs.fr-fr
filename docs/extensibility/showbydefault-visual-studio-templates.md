@@ -1,10 +1,8 @@
 ---
-title: ShowByDefault (modèles Visual Studio) | Documents Microsoft
-ms.custom: ''
+title: Élément ShowByDefault (modèles Visual Studio)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc9b2f1f0f44439a87bef13063d694490b1c84d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e2617c374ba240c421ba0cac339b9488608f2c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561458"
 ---
-# <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (modèles Visual Studio)
-Si `false`, spécifie que le modèle est uniquement affiché sous le [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
+# <a name="showbydefault-element-visual-studio-templates"></a>Élément ShowByDefault (modèles Visual Studio)
+Si `false`, spécifie que le modèle est uniquement affiché sous spécifié [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -62,7 +60,7 @@ Si `false`, spécifie que le modèle est uniquement affiché sous le [TemplateGr
 ## <a name="example"></a>Exemple  
  L'exemple suivant illustre les métadonnées d'un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-```  
+```xml
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906024"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739158"
 ---
 # <a name="visual-studio-sdk"></a>SDK Visual Studio
 Le SDK Visual Studio vous permet d’étendre les fonctionnalités de Visual Studio ou d’intégrer de nouvelles fonctionnalités à Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la place de marché Visual Studio. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :  
@@ -78,8 +78,8 @@ Le SDK Visual Studio vous permet d’étendre les fonctionnalités de Visual Stu
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Comment : migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [Forum aux questions : Conversion des compléments en extensions VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Guide pratique pour Migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [FAQ : Conversion des compléments en extensions VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Gérer plusieurs threads en code managé](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Étendre des menus et commandes](../extensibility/extending-menus-and-commands.md)   
  [Ajouter des commandes aux barres d’outils](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Le SDK Visual Studio vous permet d’étendre les fonctionnalités de Visual Stu
  [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Utilisation et la fourniture de services](../extensibility/using-and-providing-services.md)   
  [Gérer les packages VS](../extensibility/managing-vspackages.md)   
- [Shell Visual Studio isolé](../extensibility/visual-studio-isolated-shell.md)   
+ [Shell Visual Studio isolé](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Expédier les extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Dans le Kit de développement logiciel de Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Prise en charge pour le SDK Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
