@@ -1,5 +1,5 @@
 ---
-title: 'Concepteur de flux de travail - Comment : déboguer XAML avec Workflow Designer'
+title: 'Concepteur de flux de travail - Comment : Déboguer du code XAML à l’aide du concepteur de workflow'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f965a7ba94242b44fc83317bf0d152de540e0a90
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a486183b9f8c2f8a41b888d32cbc4113d25e51c8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758180"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684624"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procédure : déboguer du code XAML avec Workflow Designer
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procédure : Déboguer du code XAML à l’aide du concepteur de workflow
 
 Les workflows sont définis en code XAML. La représentation de l’interface utilisateur du workflow est construite sur l’arborescence XAML définissant le workflow. L’expérience de débogage est semblable au débogage de flux de travail dans le Concepteur de Workflow. Par exemple, pendant le débogage de XAML, les variables locales, Espion et threads windows fonctionnent la même façon comme ils le font dans le Concepteur de flux de travail de débogage. De plus, la vue de la pile des appels pendant le débogage de code XAML est une vue hiérarchique basée sur les lignes du flux d'exécution pour le workflow.
 
@@ -28,15 +28,15 @@ Les workflows sont définis en code XAML. La représentation de l’interface ut
 
 1.  Dans Visual Studio, ouvrez un projet de flux de travail ou d’activité.
 
-2.  Définir un point d’arrêt sur l’activité ou les activités que vous souhaitez déboguer, comme décrit dans [Comment : définir des points d’arrêt dans les Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
+2.  Définir un point d’arrêt sur l’activité ou les activités que vous souhaitez déboguer, comme décrit dans [Comment : Définir des points d’arrêt dans les Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 
 3.  Cliquez sur le fichier .xaml qui contient votre définition de flux de travail, puis sélectionnez **afficher le Code**. Vous verrez un point d'arrêt affiché sur la même ligne que la déclaration d'élément XAML de l'activité sur laquelle vous définissez le point d'arrêt en mode Design.
 
-4.  Appelez le débogueur, comme décrit dans [Comment : appeler le débogueur de flux de travail](../workflow-designer/how-to-invoke-the-workflow-debugger.md).
+4.  Appelez le débogueur, comme décrit dans [déboguer des workflows](debugging-workflows-with-the-workflow-designer.md).
 
 5.  Lorsque l'exécution du code atteint l'un de vos points d'arrêt, l'élément XAML associé à ce point d'arrêt est mis en surbrillance. Pour déplacer le point d’arrêt suivant, utilisez le **F10** ou **F11** clé.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour définir des points d’arrêt dans les flux de travail](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
-- [Guide pratique pour appeler le débogueur de flux de travail](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
+- [Guide pratique pour Définir des points d’arrêt dans les Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+- [Déboguer des workflows](debugging-workflows-with-the-workflow-designer.md)

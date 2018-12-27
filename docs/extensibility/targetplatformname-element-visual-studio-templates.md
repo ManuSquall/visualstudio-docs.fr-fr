@@ -1,22 +1,21 @@
 ---
-title: L’élément TargetPlatformName (modèles Visual Studio) | Documents Microsoft
+title: Élément TargetPlatformName (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 738021c693bf0ea82319c411e3b5832306f05503
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f43ce574a1fd528ced40c186b3d58dc5b28ea416
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561562"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Élément TargetPlatformName (modèles Visual Studio)
 Spécifie la plateforme ciblée par le modèle de projet. Cet élément permet de spécifier qu’un modèle de projet est utilisé pour créer des applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .  

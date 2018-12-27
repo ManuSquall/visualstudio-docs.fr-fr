@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248135"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739265"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu
 Cette procédure pas à pas montre comment créer une extension avec une commande de menu qui lance le bloc-notes.  
@@ -126,4 +126,4 @@ Cette procédure pas à pas montre comment créer une extension avec une command
   
 5. Ajouter des pages de propriété et les Options et paramètres utilisateur vers votre extension : [Étendre les propriétés et la fenêtre des propriétés](../extensibility/extending-properties-and-the-property-window.md) et [étendre des paramètres utilisateur et Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   D’autres types d’extensions nécessitent un peu plus de travail, telles que la création d’un nouveau type de projet ([étendre des projets](../extensibility/extending-projects.md)), création d’un nouveau type d’éditeur ([créer concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)), ou en implémentant votre extension dans un interpréteur de commandes isolé : [Shell Visual Studio isolé](../extensibility/visual-studio-isolated-shell.md)
+   D’autres types d’extensions nécessitent un peu plus de travail, telles que la création d’un nouveau type de projet ([étendre des projets](../extensibility/extending-projects.md)), création d’un nouveau type d’éditeur ([créer concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)), ou en implémentant votre extension dans un interpréteur de commandes isolé : [Shell Visual Studio isolé](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

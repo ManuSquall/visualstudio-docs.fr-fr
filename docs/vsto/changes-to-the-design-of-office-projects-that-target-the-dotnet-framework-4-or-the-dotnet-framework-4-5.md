@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248242"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739482"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Modifications apportées à la conception des projets Office qui ciblent le .NET Framework 4 ou .NET Framework 4.5
   Depuis [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio a introduit des modifications à la conception des projets Office ciblant le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure. Si vous avez déjà travaillé avec des projets Office dans les versions antérieures de Visual Studio, vous devez tenir compte de ces modifications avant de développer des projets Office ciblant ces versions du .NET Framework 4.0 ou version ultérieure. Par défaut, tous les projets que vous créez à l'aide de Visual Studio 2013 ou version ultérieure ciblent le .NET Framework 4.0 ou version ultérieure.  
@@ -35,7 +35,7 @@ ms.locfileid: "53248242"
   
 -   [Mettre à jour des projets Excel et Word que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248242"
 |---------------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute> n'est plus utilisé ni pris en charge dans les projets Office.|Vous devez supprimer cet attribut du fichier de code AssemblyInfo dans les projets Office que vous mettez à niveau depuis Visual Studio 2008. Pour plus d’informations, consultez [requis des modifications pour exécuter des projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Le **ExcelLocale1033Attribute** n’est plus utilisé ni pris en charge dans les projets Excel.|Vous devez supprimer cet attribut à partir de la *AssemblyInfo* fichier de code dans les projets Excel. Pour plus d’informations, consultez [mise à jour Excel et Word projets que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Le modèle de programmation des éléments de projet **Ruban (Concepteur visuel)** a changé.|Vous devez modifier le fichier code-behind pour tous les éléments du ruban dans votre projet. Vous devez également modifier tout code qui instancie des contrôles du ruban lors de l’exécution, gère les événements de ruban ou définit la position d’un composant de ruban par programmation. Pour plus d’informations, consultez [personnalisations du ruban de la mise à jour dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|Le modèle de programmation des éléments de projet **Ruban (Concepteur visuel)** a changé.|Vous devez modifier le fichier code-behind pour tous les éléments du ruban dans votre projet. Vous devez également modifier tout code qui instancie des contrôles du ruban lors de l’exécution, gère les événements de ruban ou définit la position d’un composant de ruban par programmation. Pour plus d’informations, consultez [personnalisations du ruban de la mise à jour dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |Le modèle de programmation des zones de formulaire Outlook a changé.|Vous devez modifier le fichier code-behind pour les zones de formulaire dans votre projet et tout code qui instancie certaines classes de zone de formulaire lors de l’exécution. Pour plus d’informations, consultez [mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Le modèle de programmation des balises actives dans les projets Excel et Word a changé. Les balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Si votre solution utilise des balises actives, des erreurs se produisent quand vous générez le projet. Étant donné que les balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], vous devez supprimer les balises avant de pouvoir tester et déboguer la solution dans [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou version ultérieure.|  
 |La syntaxe des méthodes `GetVstoObject` et `HasVstoObject` a changé.|Vous devez passer l'objet `Globals.Factory` à ces méthodes quand vous y accéder sur les objets natifs depuis les assemblys PIA (Primary Interop Assemblies). Vous pouvez également accéder à ces méthodes sur l'objet retourné par la propriété `Globals.Factory` dans votre projet. Pour plus d’informations, consultez [mise à jour Excel et Word projets que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  

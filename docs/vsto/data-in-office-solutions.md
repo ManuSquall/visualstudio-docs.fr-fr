@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], data
 - datasets [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87aca3cea98f97ff2a27efb41f912f1295939718
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 92a2b7caad4ec4fe12879da683560da59b7f2d6a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263452"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646823"
 ---
 # <a name="data-in-office-solutions"></a>Données dans les solutions Office
   De nombreuses solutions Office permettent aux utilisateurs de récupérer ou modifier des données. Quand vous créez des solutions Office à l’aide de Visual Studio, vous pouvez utiliser les données de plusieurs façons différentes.  
@@ -31,13 +31,13 @@ ms.locfileid: "34263452"
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Explique comment lier des données aux contrôles dans les solutions Office.  
   
- [Vue d’ensemble des parties XML personnalisée](../vsto/custom-xml-parts-overview.md)  
+ [Vue d’ensemble de parties XML personnalisée](../vsto/custom-xml-parts-overview.md)  
  Explique comment utiliser des parties XML personnalisées pour traiter les données dans les solutions Office.  
   
  [Données mises en cache dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md)  
  Explique comment stocker des données dans un îlot de données incorporé, accessible sans démarrage de l’application Office.  
   
- [Schémas XML et les données dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Schémas XML et des données dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
  Explique comment utiliser des schémas XML dans les personnalisations au niveau du document pour créer des contrôles liés aux données XML.  
   
  [Utiliser des fichiers de base de données locale dans la vue d’ensemble des solutions Office](../vsto/using-local-database-files-in-office-solutions-overview.md)  

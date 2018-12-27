@@ -1,5 +1,5 @@
 ---
-title: 'Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code'
+title: 'Procédure : Appliquer du Code facile à maintenir avec une stratégie d’archivage de l’analyse du Code'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892088"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739374"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procédure : Appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 
 Les développeurs peuvent utiliser l’outil de métrique du Code pour mesurer la complexité et la facilité de maintenance de leur code, mais vous ne pouvez pas appeler métrique du Code dans le cadre d’une stratégie d’archivage. Toutefois, vous pouvez activer les règles d’analyse du Code qui vérifient la conformité de votre code avec les normes des métriques de code et appliquer les règles via des stratégies d’archivage. Pour plus d’informations sur la métrique du code, consultez [les valeurs de métriques de Code](../code-quality/code-metrics-values.md).
 
@@ -47,13 +47,13 @@ Les administrateurs du contrôle de version de Team Foundation peuvent ajouter d
 
 2. Sélectionnez les cases à cocher pour les règles suivantes :
 
-   - Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : avertissement à plus de 5 niveaux de profondeur
+   - Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : Avertissement à plus de 5 niveaux de profondeur
 
-   - Complexité : **CA1502 AvoidExcessiveComplexity** -seuil : avertissement à plus de 25
+   - Complexité : **CA1502 AvoidExcessiveComplexity** -seuil : Avertissement à plus de 25
 
-   - Indice de maintenabilité : **CA1505 AvoidUnmaintainableCode** -seuil : avertissement à moins de 20
+   - Indice de maintenabilité : **CA1505 AvoidUnmaintainableCode** -seuil : Avertissement à moins de 20
 
-   - COUPLAGE de classe : **CA1506 AvoidExcessiveClassCoupling** -seuil : avertissement à plus de 80 pour une classe et plus de 30 pour une méthode
+   - COUPLAGE de classe : **CA1506 AvoidExcessiveClassCoupling** -seuil : Avertissement à plus de 80 pour une classe et plus de 30 pour une méthode
 
      En outre, si vous souhaitez une violation de règle pour empêcher une génération réussie, sélectionnez le **traiter un avertissement comme une erreur** case à cocher en regard de la description de la règle.
 
@@ -62,4 +62,4 @@ Les administrateurs du contrôle de version de Team Foundation peuvent ajouter d
 ## <a name="see-also"></a>Voir aussi
 
 - [Valeurs de métriques de code](../code-quality/code-metrics-values.md)
-- [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

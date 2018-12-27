@@ -1,6 +1,7 @@
 ---
-title: 'Comment : mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio'
-ms.custom: ''
+title: 'Procédure : Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,19 +14,19 @@ helpviewer_keywords:
 - mappings [Office development in Visual Studio], XML schemas to Excel worksheets
 - Excel [Office development in Visual Studio], XML schemas
 - worksheets [Office development in Visual Studio], XML schemas
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b95e24d151ef6bf8a0083d130c4e38f3f33d480
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256043"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646652"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Comment : mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procédure : Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio
   Alors que la feuille de calcul est ouvert dans Visual Studio, vous pouvez mapper un schéma XML à une feuille de calcul. Vous utilisez les mêmes outils de Microsoft Office Excel que vous utilisez lorsque le classeur est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma à la feuille de calcul avant ou après avoir créé votre solution Excel.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -42,7 +43,7 @@ ms.locfileid: "35256043"
 3.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
     > [!NOTE]  
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  Dans le **XML** de groupe, cliquez sur **Source**.  
   
@@ -67,7 +68,7 @@ ms.locfileid: "35256043"
      Si vous faites glisser un élément de schéma répétitif, le projet Office génère un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle qui n’est pas lié automatiquement à une source de données. Pour plus d’informations, consultez [schémas et données dans XML au niveau du document personnalisations](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : mapper des schémas à des documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Guide pratique pour Mapper des schémas à des documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Schémas XML et des données dans les personnalisations au niveau du document](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

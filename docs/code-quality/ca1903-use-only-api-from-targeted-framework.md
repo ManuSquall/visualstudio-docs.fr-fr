@@ -1,5 +1,5 @@
 ---
-title: "CA1903 : Utiliser uniquement l'API à partir du Framework cible"
+title: 'CA1903 : Utiliser uniquement l’API du framework cible'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822811"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738870"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l’API du framework cible
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822811"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
- Pour modifier le framework cible d’un projet, consultez [ciblant une Version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Pour modifier le framework cible d’un projet, consultez [ciblant une Version spécifique du .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour supprimer la dépendance sur le service pack, supprimez toutes les utilisations du nouveau membre ou type. S’il s’agit d’une dépendance délibérée, supprimez l’avertissement ou désactiver cette règle.
@@ -69,4 +69,4 @@ ms.locfileid: "49822811"
 ## <a name="see-also"></a>Voir aussi
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Cibler une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Cibler une version spécifique du .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

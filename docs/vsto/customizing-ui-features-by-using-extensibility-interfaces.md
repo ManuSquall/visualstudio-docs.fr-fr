@@ -18,17 +18,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670843"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648889"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personnaliser les fonctionnalités d’interface utilisateur à l’aide des interfaces d’extensibilité
   Les Outils de développement Office dans Visual Studio fournissent des classes et des concepteurs qui gèrent de nombreux détails d’implémentation quand vous les utilisez pour créer des volets de tâches personnalisés, des personnalisations de ruban et des zones de formulaire Outlook dans un complément VSTO. Toutefois, vous pouvez également implémenter vous-même l' *interface d'extensibilité* pour chaque fonctionnalité si vous avez des spécifications spéciales.  
@@ -47,7 +47,7 @@ ms.locfileid: "50670843"
   
 |Interface|Description|Applications|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implémentez cette interface pour personnaliser l'interface utilisateur du ruban. **Remarque :** vous pouvez ajouter un **ruban (XML)** élément à un projet pour générer une valeur par défaut <xref:Microsoft.Office.Core.IRibbonExtensibility> mise en œuvre dans votre complément, VSTO. Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implémentez cette interface pour personnaliser l'interface utilisateur du ruban. **Remarque :**  Vous pouvez ajouter un **ruban (XML)** élément à un projet pour générer une valeur par défaut <xref:Microsoft.Office.Core.IRibbonExtensibility> mise en œuvre dans votre complément, VSTO. Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implémentez cette interface pour créer un volet de tâches personnalisé.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implémentez cette interface pour créer une zone de formulaire Outlook.|Outlook|  
   
@@ -84,7 +84,7 @@ ms.locfileid: "50670843"
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Développer des solutions Office](../vsto/developing-office-solutions.md)   
  [Appeler du code dans des Compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)  
   
   

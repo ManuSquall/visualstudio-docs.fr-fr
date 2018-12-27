@@ -1,5 +1,5 @@
 ---
-title: Peut &#39; t ont &#39; continuer &#39; en dehors de la boucle | Documents Microsoft
+title: Ne peut pas avoir 'continue' en dehors de la boucle | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633299"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531243"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Peut &#39; t ont &#39; continuer &#39; en dehors de la boucle
+# <a name="cant-have-continue-outside-of-loop"></a>Impossible d'utiliser une instruction 'continue' en dehors d'une boucle
 Vous avez tenté d’utiliser le **continuer** instruction en dehors d’une boucle. Le **continuer** instruction peut être utilisée uniquement dans le corps des éléments suivants :  
   
--   `do-while`boucle,  
+-   `do-while` boucle,  
   
--   `while`boucle,  
+-   `while` boucle,  
   
 -   **pour** boucle,  
   
@@ -42,15 +42,15 @@ Vous avez tenté d’utiliser le **continuer** instruction en dehors d’une bou
   
 -   Assurez-vous que le **continuer** instruction apparaît au sein des éléments suivants :  
   
-    -   `do-while`boucle,  
+    -   `do-while` boucle,  
   
-    -   `while`boucle,  
+    -   `while` boucle,  
   
     -   **pour** boucle,  
   
     -   **pour/dans** boucle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [continue, instruction](../../javascript/reference/continue-statement-javascript.md)   
+ [continue (instruction)](../../javascript/reference/continue-statement-javascript.md)   
  [Contrôle du flux de programme](../../javascript/controlling-program-flow-javascript.md)   
  [Résolution des problèmes liés aux scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

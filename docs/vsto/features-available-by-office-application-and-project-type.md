@@ -17,17 +17,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], features available
 - add-ins [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], features available
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672457"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648150"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Fonctionnalités disponibles par type d’application et de projet Office
   Visual Studio possède plusieurs types de modèles de projet qui prennent en charge différents scénarios professionnels pour les applications Microsoft Office, y compris les types suivants :  
@@ -62,7 +62,7 @@ ms.locfileid: "50672457"
 |Exposer un objet dans un complément VSTO à d’autres solutions Microsoft Office.|Projets de complément VSTO|[Appeler du code dans des Compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Contrôles hôtes suivants :<br /><br /> -Graphique<br />-ListObject<br />-NamedRange<br />-Contrôles de contenu<br />-Signet|Projets au niveau du document.<br /><br /> Projets de complément VSTO pour Word et Excel.|[Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)|  
 |Contrôles hôtes suivants :<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Projets au niveau du document.|[Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)|  
-|Déploiement de plusieurs projet|Projets au niveau du document.<br /><br /> Projets de complément VSTO|[Procédure pas à pas : Déploiement de plusieurs solutions Office dans un seul programme d’installation ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Déploiement de plusieurs projet|Projets au niveau du document.<br /><br /> Projets de complément VSTO|[Procédure pas à pas : Déployer plusieurs solutions Office dans un seul programme d’installation ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Zones de formulaire Outlook|Projets de complément VSTO pour Outlook.|[Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)|  
 |Actions de post-déploiement|Projets au niveau du document.<br /><br /> Projets de complément VSTO|[Procédure pas à pas : Copier un document à l’ordinateur de l’utilisateur final après une installation ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Personnalisations du ruban|Projets au niveau du document.<br /><br /> Projets de complément VSTO pour les applications suivantes :<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 et InfoPath 2010 uniquement)<br />-Outlook<br />-PowerPoint<br />-Projet<br />-Visio<br />-Word|[Vue d’ensemble du ruban](../vsto/ribbon-overview.md)|  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901045"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738587"
 ---
 # <a name="add-command-line-switches"></a>Ajouter des commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lorsque *devenv.exe* est exécutée. Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommé **AddCommandSwitchPackage** avec aucun argument et le VSPackage chargé automatiquement.  
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Commutateurs de ligne de commande devenv](../ide/reference/devenv-command-line-switches.md)   
  [Utilitaire CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Fichiers pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [. Fichiers pkgdef](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

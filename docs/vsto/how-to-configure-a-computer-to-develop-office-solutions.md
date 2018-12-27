@@ -1,5 +1,5 @@
 ---
-title: 'Comment : configurer un ordinateur pour développer des solutions Office'
+title: 'Procédure : Configurer un ordinateur pour développer des solutions Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - prerequisites [Office development in Visual Studio]
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a07545fb9a7ddb2fc70ba5053ad131d2e214636
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 848994aec796b25c031e7367db10f67e95f09f79
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671311"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648472"
 ---
-# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Comment : configurer un ordinateur pour développer des solutions Office
+# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Procédure : Configurer un ordinateur pour développer des solutions Office
   Pour configurer un ordinateur de développement de manière à pouvoir utiliser les Outils de développement Microsoft Office dans Visual Studio, suivez les instructions de cette rubrique. Vous devez détenir des privilèges d'administrateur sur l'ordinateur de développement pour effectuer ces étapes.  
   
 ### <a name="to-configure-the-development-computer"></a>Pour configurer l'ordinateur de développement  
@@ -39,7 +39,7 @@ ms.locfileid: "50671311"
 ## <a name="see-also"></a>Voir aussi  
  [Quelles sont les nouveautés dans le développement Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Comment : installer Visual Studio Tools pour Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Comment : assemblys PIA Office d’installation](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Guide pratique pour Installer Visual Studio Tools pour Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [Guide pratique pour Installer les assemblys PIA Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

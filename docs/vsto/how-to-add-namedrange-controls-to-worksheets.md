@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter des contrôles NamedRange aux feuilles de calcul'
+title: 'Procédure : Ajouter des contrôles NamedRange aux feuilles de calcul'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, adding to worksheets
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867115"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648364"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Comment : ajouter des contrôles NamedRange aux feuilles de calcul
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procédure : Ajouter des contrôles NamedRange aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans les projets au niveau du document.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -102,7 +102,7 @@ ms.locfileid: "49867115"
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
  [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
- [Comment : redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Guide pratique pour Redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

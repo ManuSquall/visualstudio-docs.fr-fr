@@ -1,5 +1,5 @@
 ---
-title: 'Comment : colonnes carte ListObject aux données'
+title: 'Procédure : Mapper des colonnes ListObject aux données'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673229"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646836"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Comment : colonnes carte ListObject aux données
+# <a name="how-to-map-listobject-columns-to-data"></a>Procédure : Mapper des colonnes ListObject aux données
   Lorsque vous liez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> à un <xref:System.Data.DataTable>, vous ne souhaitez peut-être pas afficher toutes les colonnes d’une liste ou vous pouvez avoir certaines colonnes non qui ne sont pas liées aux données. Vous pouvez mapper les colonnes que vous souhaitez voir apparaître dans le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lorsque vous appelez la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : créer une liste dans Excel qui est connecté à une liste SharePoint ?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Créer une liste dans Excel qui est connecté à une liste SharePoint ? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Mapper des colonnes  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35673229"
  [Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
  [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Comment : contrôle le ListObject de remplissage avec des données](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Guide pratique pour Remplir des contrôles ListObject de données](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject (contrôle)](../vsto/listobject-control.md)  
   

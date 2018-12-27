@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf7c9c5348e7a7c31fa7e1d65b7fa6047d05d565
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755652"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685703"
 ---
 # <a name="workflow-project-templates"></a>Modèles de projet de flux de travail
 
@@ -72,12 +72,12 @@ Si vous choisissez la **bibliothèque d’activités** modèle, Visual Studio cr
 
 Si vous choisissez la **Bibliothèque ActivityDesigner** modèle, Visual Studio crée une définition de concepteur d’activités dans XAML et un fichier d’implémentation code-behind. Le Concepteur de flux de travail s’ouvre et affiche la zone de dessin pour votre concepteur d’activités. Faites glisser Windows Presentation Foundation (WPF) des contrôles de **boîte à outils** vers l’aire de conception pour les utiliser dans votre concepteur d’activités personnalisées.
 
-Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : créer un concepteur d’activités personnalisées](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : Créer un concepteur d’activités personnalisées](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
 > Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées et pour les activités de .NET Framework par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser le Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)
+- [Utiliser le Concepteur de flux de travail](developing-applications-with-the-workflow-designer.md)
 - [Concevez des workflows (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

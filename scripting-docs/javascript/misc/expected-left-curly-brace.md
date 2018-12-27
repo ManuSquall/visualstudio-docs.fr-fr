@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39; {&#39; | Documents Microsoft
+title: Attendu ' {' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c72953f30ff80fcd48110afb74d628319863e99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632769"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348381"
 ---
-# <a name="expected-3939"></a>Attendu &#39; {&#39;
-Vous n’avez pas inclus l’accolade gauche qui marque le début du corps de la fonction. Code qui compose le corps d’une fonction, même s’il s’agit d’une seule ligne, doit figurer entre accolades gauche et droite. Notez que l’utilisation des accolades dans le corps de fonction est plus stricte que dans les boucles.  
+# <a name="expected-"></a>'{' attendu
+Vous n’avez pas inclus l’accolade gauche qui marque le début du corps de la fonction. Code qui constitue le corps d’une fonction, même si elle est une seule ligne, doit figurer entre accolades gauche et droite. Notez que l’utilisation d’accolades dans le corps de fonction est plus stricte que dans des boucles.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

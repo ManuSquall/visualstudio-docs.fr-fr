@@ -2,9 +2,8 @@
 title: ProjectTemplateLink, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495971"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561497"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink, élément (modèles Visual Studio)
 Spécifie le chemin d’accès à la *.vstemplate* fichier d’un projet dans un modèle à plusieurs projets.  
@@ -30,7 +29,7 @@ Spécifie le chemin d’accès à la *.vstemplate* fichier d’un projet dans un
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
-- ou -  
+ou  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
@@ -71,7 +70,7 @@ Spécifie le chemin d’accès à la *.vstemplate* fichier d’un projet dans un
  Ce texte spécifie le chemin d’accès à la *.vstemplate* fichier du modèle.  
   
 ## <a name="remarks"></a>Notes  
- Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Le `ProjectTemplateLink` élément est utilisé pour spécifier l’emplacement de la *.vstemplate* fichier pour l’un des projets dans le modèle. Le *.vstemplate* fichier d’un modèle à plusieurs projets contient un `ProjectTemplateLink` élément pour chaque projet dans le modèle. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).  
+ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Le `ProjectTemplateLink` élément est utilisé pour spécifier l’emplacement de la *.vstemplate* fichier pour l’un des projets dans le modèle. Le *.vstemplate* fichier d’un modèle à plusieurs projets contient un `ProjectTemplateLink` élément pour chaque projet dans le modèle. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : Créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple montre une racine de plusieurs projets simple *.vstemplate* fichier. Dans cet exemple, le modèle contient deux projets, `My Windows Application` et `My Class Library`. L'attribut `ProjectName` de l'élément `ProjectTemplateLink` définit le nom à assigner au projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si le `ProjectName` attribut n’existe pas, le nom de la *.vstemplate* fichier est utilisé comme nom de projet.  
@@ -101,4 +100,4 @@ Spécifie le chemin d’accès à la *.vstemplate* fichier d’un projet dans un
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Comment : créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md)
+ [Guide pratique pour Créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md)

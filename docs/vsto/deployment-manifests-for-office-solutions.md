@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - manifests [Office development in Visual Studio], deployment
 - Office development in Visual Studio, deployment manifests
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4404b9469aef465a2a105d037b3474855ed3bb68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263488"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647163"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifestes de déploiement pour les solutions Office
   Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version actuelle de l’application.  
@@ -34,10 +34,10 @@ ms.locfileid: "34263488"
  Le fichier manifeste de déploiement pour les solutions Office, identifie la version actuelle et autres paramètres de déploiement. Il fait référence au manifeste d’application et décrit la version actuelle de la solution et tous les fichiers au sein de la solution.  
   
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier  
- Le nom d’un fichier de manifeste de déploiement doit se terminer par le *.vsto* extension. Bien qu’il soit une norme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est différente de l’extension de manifeste de déploiement, pour permettre de Visual Studio Tools pour Office runtime gérer le fichier.  
+ Le nom d’un fichier de manifeste de déploiement doit se terminer par le *.vsto* extension. Bien qu’il soit une norme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] diffère de l’extension de manifeste de déploiement, pour activer le Visual Studio Tools pour Office runtime gérer le fichier.  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre un manifeste de déploiement pour un Visual Studio Tools pour les solutions Office.  
+ L’exemple de code suivant illustre un manifeste de déploiement pour un Visual Studio Tools pour la solution Office.  
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  

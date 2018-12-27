@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671129"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647898"
 ---
 # <a name="debug-office-projects"></a>Déboguez des projets Office
   Vous pouvez déboguer des projets Office à l'aide des mêmes outils Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que ceux que vous utilisez pour d'autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Les fonctionnalités du débogueur[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] telles que la capacité d'insérer des points d'arrêt et d'afficher des variables dans la fenêtre **Variables locales** , sont également disponibles lorsque vous déboguez des projets Office. Pour plus d’informations sur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] outils de débogage, consultez [déboguer dans Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35671129"
  Pour déboguer un projet de Document Word basé sur un Document Word 97-2003 (*/*.doc *) format, vous devez ajouter le dossier du projet à la liste de dossiers approuvés. Pour plus d’informations sur la façon de procéder, consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Débogage désactivé des compléments  
- Les applications Microsoft Office peuvent désactiver les compléments VSTO qui se comportent de façon inattendue. Une application Microsoft Office désactive les compléments VSTO pour empêcher le chargement de tout code problématique chaque fois qu’elle démarre. Toutefois, il est également facile de provoquer un comportement inattendu au cours d'un débogage classique. Pour plus d’informations sur la façon de réactiver les Compléments VSTO, consultez [Comment : réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Les applications Microsoft Office peuvent désactiver les compléments VSTO qui se comportent de façon inattendue. Une application Microsoft Office désactive les compléments VSTO pour empêcher le chargement de tout code problématique chaque fois qu’elle démarre. Toutefois, il est également facile de provoquer un comportement inattendu au cours d'un débogage classique. Pour plus d’informations sur la façon de réactiver les Compléments VSTO, consultez [Comment : Réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  Les applications Microsoft Office utilisent deux types de désactivation pour les compléments VSTO : dure et douce.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35671129"
   
 ## <a name="see-also"></a>Voir aussi  
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
- [Comment : réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Guide pratique pour Réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

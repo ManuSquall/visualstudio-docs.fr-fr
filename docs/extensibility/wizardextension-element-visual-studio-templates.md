@@ -1,10 +1,9 @@
 ---
-title: WizardExtension, élément (modèles Visual Studio) | Documents Microsoft
+title: WizardExtension, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561147"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension, élément (modèles Visual Studio)
-Contient les éléments d’enregistrement pour la personnalisation de l’Assistant de modèle.  
+Contient les éléments de l’inscription pour la personnalisation de l’Assistant modèle.  
   
  \<VSTemplate >  
  ...  
@@ -62,7 +61,7 @@ Contient les éléments d’enregistrement pour la personnalisation de l’Assis
  `WizardExtension` est un élément enfant facultatif de `VSTemplate`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.  
+ L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -95,4 +94,4 @@ Contient les éléments d’enregistrement pour la personnalisation de l’Assis
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Guide pratique pour Utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

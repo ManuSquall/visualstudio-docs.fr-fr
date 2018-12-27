@@ -1,6 +1,7 @@
 ---
 title: '&lt;point d’entrée&gt; élément (développement Office dans Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoint> element
 - <entryPoint> element
 - entryPoint element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f28da1a564196833adff530c3c7d31eb9ea9bb4e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447087"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648650"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;point d’entrée&gt; élément (développement Office dans Visual Studio)
   Chaque élément `entryPoint` de l’espace de noms `vstav3` identifie un assembly de personnalisation qui doit être exécuté lorsque cette application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est installée.  

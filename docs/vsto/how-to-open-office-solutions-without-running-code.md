@@ -1,5 +1,5 @@
 ---
-title: 'Comment : solutions Open Office sans exécuter le code'
+title: 'Procédure : Ouvrir des solutions Office sans exécuter le code'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254986"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646904"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Comment : solutions Open Office sans exécuter le code
+# <a name="how-to-open-office-solutions-without-running-code"></a>Procédure : Ouvrir des solutions Office sans exécuter le code
   Une solution Microsoft Office créée avec des extensions de code managé s’exécute même si le paramètre de sécurité dans l’application Office de l’utilisateur final est défini sur élevé. Il s’agit, car la sécurité du code assembly .NET est gérée par Microsoft .NET Framework, et non par Microsoft Office.  
   
  Toutefois, voici les heures lorsque vous souhaiterez ouvrir un document sans exécuter le code. Par exemple, le contenu susceptible de modifier le code qui s’exécute lorsque le document s’ouvre, mais que vous souhaitez mettre à jour de l’apparence du document avant les modifications de code il. Ou vous souhaiterez peut-être envoyer le document avec certaines informations qu’il contient, à une personne, et vous ne souhaitez pas que le code pour exécuter et éventuellement modifier le contenu.  

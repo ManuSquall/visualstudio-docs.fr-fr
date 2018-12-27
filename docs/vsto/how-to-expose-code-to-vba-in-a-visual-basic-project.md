@@ -1,5 +1,5 @@
 ---
-title: 'Comment : exposer du code à VBA dans un projet Visual Basic'
+title: 'Procédure : Exposer du code à VBA dans un projet Visual Basic'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,24 +14,24 @@ helpviewer_keywords:
 - Visual Basic [Office development in Visual Studio], exposing code to VBA
 - exposing code to VBA
 - host items [Office development in Visual Studio], exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839646"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648637"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Comment : exposer du code à VBA dans un projet Visual Basic
+# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procédure : Exposer du code à VBA dans un projet Visual Basic
   Vous pouvez exposer du code dans un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet vers Visual Basic pour Applications (VBA), si vous souhaitez que les deux types de code pour interagir avec eux.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Le processus de Visual Basic est différent du processus Visual c#. Pour plus d’informations, consultez [Comment : exposer du code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Le processus de Visual Basic est différent du processus Visual c#. Pour plus d'informations, voir [Procédure : Exposer du code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Le processus est différent pour le code dans une classe d’élément hôte pour le code dans d’autres classes :  
   
@@ -39,12 +39,12 @@ ms.locfileid: "49839646"
   
 - [Exposer du code qui n’est pas dans une classe d’élément hôte](#NonHostItem)  
   
-  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment coder les i : appelez VSTO à partir de VBA ?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Appeler du code VSTO à partir de VBA ? ](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Exposer du code dans une classe d’élément hôte  
  Pour permettre au code VBA d’appeler du code de Visual Basic dans une classe d’élément hôte, définissez le **EnableVbaCallers** propriété de l’élément hôte la valeur **True**.  
   
- Pour une procédure pas à pas qui montre comment exposer une méthode d’une classe d’élément hôte et puis l’appeler à partir de VBA, consultez [procédure pas à pas : appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Pour plus d’informations sur les éléments hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).  
+ Pour une procédure pas à pas qui montre comment exposer une méthode d’une classe d’élément hôte et puis l’appeler à partir de VBA, consultez [procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Pour plus d’informations sur les éléments hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).  
   
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>Pour exposer le code dans un élément hôte à VBA  
   
@@ -121,10 +121,10 @@ ms.locfileid: "49839646"
 9. Générez le projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Combiner VBA et personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
  [Procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Comment : exposer du code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Guide pratique pour Exposer du code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

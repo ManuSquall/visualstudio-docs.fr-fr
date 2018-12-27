@@ -1,5 +1,5 @@
 ---
-title: 'Comment : assemblys PIA Office d’installation'
+title: 'Procédure : Installer les assemblys PIA Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd044c228e20bbdf169dda456cf24c3246b0ae34
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255666"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648585"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Comment : assemblys PIA Office d’installation
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Procédure : Installer les assemblys PIA Office
   Installez les assemblys PIA (Primary Interop Assembly) Microsoft Office lorsque vous installez Office.  
   
 ## <a name="to-install-the-pias-when-you-install-office"></a>Pour installer les assemblys PIA lors de l'installation de Microsoft Office  
@@ -37,9 +37,9 @@ ms.locfileid: "35255666"
   
 ## <a name="see-also"></a>Voir aussi  
  [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)   
- [Comment : applications Office de cible via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [Comment : configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [Comment : installer Visual Studio Tools pour Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [Guide pratique pour Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Guide pratique pour Configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [Guide pratique pour Installer Visual Studio Tools pour Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   

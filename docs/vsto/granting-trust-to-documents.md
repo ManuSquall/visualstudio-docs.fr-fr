@@ -13,17 +13,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - trust [Office development in Visual Studio], 2007 Office system
 - granting trust [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5dfa0ad9b27b94c472feabc0e202bd9eee58f08d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670908"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648832"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder votre confiance à des documents
   Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l’application : il convient de signer les manifestes à l’aide d’un certificat ou de cliquer sur l’invite d’approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.  
@@ -44,7 +44,7 @@ ms.locfileid: "50670908"
   
 -   Le document lui-même est approuvé en utilisant les emplacements approuvés. Toutefois, des autorisations supplémentaires sont requises pour approuver la personnalisation. Vous pouvez accorder une confiance totale à la personnalisation à l’aide de la signature des manifestes avec un certificat, en cliquant sur l’invite d’approbation ou l’installation de la solution Office à le *Program Files* directory.  
   
--   Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d’informations, consultez [Comment : publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d'informations, voir [Procédure : Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accorder votre confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)   

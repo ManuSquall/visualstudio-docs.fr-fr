@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942060"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648737"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personnaliser un ruban pour InfoPath
   Quand vous personnalisez le ruban dans Microsoft Office InfoPath, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] peut afficher le ruban dans les trois types suivants de fenêtres d'application InfoPath :  
@@ -32,7 +32,7 @@ ms.locfileid: "49942060"
   
 - Fenêtre Aperçu avant impression.  
   
-  **S’applique à :** les informations contenues dans cette rubrique s’appliquent aux projets de compléments VSTO pour InfoPath 2010. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux projets de complément VSTO pour InfoPath 2010. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
   Les utilisateurs et les concepteurs ouvrent un modèle de formulaire en mode Création pour modifier l'apparence et la disposition du modèle. Les utilisateurs ouvrent des formulaires basés sur un modèle de formulaire pour ajouter du contenu.  
   

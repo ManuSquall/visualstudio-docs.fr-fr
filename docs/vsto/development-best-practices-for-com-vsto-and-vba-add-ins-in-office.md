@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671091"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648905"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement COM, VSTO et VBA des compléments dans Office
   Si vous développez des compléments COM, VSTO ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela permet de s’assurer :
@@ -34,7 +34,7 @@ ms.locfileid: "50671091"
  Nous ne vous recommandons d’avoir votre complément détecter si Office est installé pendant l’installation du complément. Si Office n’est pas installé, vous pouvez installer le complément et l’utilisateur sera en mesure d’y accéder une fois Office installé. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Utiliser des Types Interop incorporés (NoPIA)  
-Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types interop incorporés (NoPIA) au lieu d’en fonction de l’Office assemblys PIA (Primary Interop) redistribuables. À l’aide de l’incorporation de type réduit la taille de l’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office fourni l’assembly PIA redistribuable. Pour plus d’informations, consultez [procédure pas à pas : incorporation des informations de type provenant d’assemblys Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) et [équivalence de Type et types interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
+Si votre solution utilise .NET 4.0 ou version ultérieure, utilisez des types interop incorporés (NoPIA) au lieu d’en fonction de l’Office assemblys PIA (Primary Interop) redistribuables. À l’aide de l’incorporation de type réduit la taille de l’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office fourni l’assembly PIA redistribuable. Pour plus d’informations, consultez [Procédure pas à pas : Incorporation d’informations de type provenant d’assemblys Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) et [équivalence de Type et types interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si votre solution utilise une version antérieure de .NET, nous recommandons que vous mettez à jour votre solution pour utiliser .NET 4.0 ou version ultérieure. À l’aide de .NET 4.0 ou version ultérieure réduit les composants requis de runtime sur les versions plus récentes de Windows.
   
@@ -64,7 +64,7 @@ Les clients demandent les éditeurs de logiciels pour fournir des instructions d
 
 Pour fournir des instructions de prise en charge pour les applications clientes Office (par exemple, Word ou Excel), vérifiez d’abord que vos compléments s’exécutent dans la version actuelle d’Office et validez ensuite à fournir des mises à jour si votre complément s’arrête dans une version ultérieure. Il est inutile de tester vos compléments lorsque Microsoft publie une nouvelle build ou une mise à jour pour Office. Microsoft change rarement la plate-forme d’extensibilité COM, VSTO et VBA dans Office, et ces modifications seront bien documentées.
 
->Important : Microsoft gère une liste des compléments pris en charge pour les rapports de compatibilité et les informations de contact d’éditeurs de logiciels indépendants. Pour obtenir votre complément répertorié, consultez [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
+>Important : Microsoft conserve une liste des compléments pris en charge pour les rapports de compatibilité et les informations de contact d’éditeurs de logiciels indépendants. Pour obtenir votre complément répertorié, consultez [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utiliser Process Monitor pour vous aider à déboguer l’installation ou le chargement des problèmes
 Si votre complément présente des problèmes de compatibilité durant l’installation ou de la charge, ils peuvent être liés aux problèmes concernant l’accès de fichier ou du Registre. Utilisez [Process Monitor](/sysinternals/downloads/procmon) ou un outil de débogage similaire pour vous connecter et de comparer le comportement par rapport à un environnement de travail pour aider à identifier le problème.

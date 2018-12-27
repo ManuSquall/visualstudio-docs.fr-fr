@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895780"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647817"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution
   Vous pouvez utiliser un complément VSTO pour personnaliser des documents Word et des classeurs Excel comme suit :  
@@ -39,7 +39,7 @@ ms.locfileid: "49895780"
   
   Pour utiliser cette fonctionnalité, vous générez un objet lors de l’exécution qui étend le document ou le classeur.  
   
-  **S’applique à :** les informations contenues dans cet article s’appliquent aux projets de complément VSTO pour les applications suivantes : Excel et Word. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **S’applique à :** Les informations contenues dans cet article s’appliquent aux projets de complément VSTO pour les applications suivantes : Excel et Word. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Générer des objets étendus dans les Compléments VSTO  
  Les*objets étendus* sont des instances des types fournis par le runtime Visual Studio Tools pour Office qui ajoutent des fonctionnalités aux objets qui existent en mode natif dans les modèles objet Word ou Excel (appelés *objets Office natifs*). Pour générer un objet étendu pour un objet Word ou Excel, utilisez la méthode `GetVstoObject`. La première fois que vous appelez le `GetVstoObject` l’objet de méthode pour un Word ou Excel spécifié, elle retourne un nouvel objet qui étend l’objet spécifié. Chaque fois que vous appelez la méthode et que vous spécifiez le même objet Word ou Excel, elle retourne le même objet étendu.  

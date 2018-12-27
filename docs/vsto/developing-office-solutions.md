@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833061"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648850"
 ---
 # <a name="develop-office-solutions"></a>Développer des solutions Office
   Après avoir conçu un projet à l'aide des Outils de développement Office dans Visual Studio et configuré les fichiers projet, vous pouvez vous concentrer sur l'implémentation du code et de l'interface utilisateur personnalisée.  
@@ -63,9 +63,9 @@ ms.locfileid: "49833061"
 |[Accessibilité dans les projets Office](../vsto/accessibility-in-office-projects.md)|Décrit les fonctionnalités d'accessibilité disponibles dans les solutions Office.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [Comment : lire et écrire aux propriétés de document](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [Comment : cibler l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Guide pratique pour Créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)   
+ [Guide pratique pour Lire et écrire dans les propriétés de document](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [Guide pratique pour Cible de l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Procédure pas à pas : Créer votre premier complément pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
  [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   

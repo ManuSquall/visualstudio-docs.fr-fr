@@ -1,6 +1,7 @@
 ---
-title: '&lt;EntryPoint&gt; élément (développement Office dans Visual Studio)'
-ms.custom: ''
+title: '&lt;entryPoints&gt; élément (développement Office dans Visual Studio)'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,19 +11,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 01b28dab575f867f017b04f2e0180c07193b983b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448387"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647008"
 ---
-# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint&gt; élément (développement Office dans Visual Studio)
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; élément (développement Office dans Visual Studio)
   L’élément `entryPoints` de l’espace de noms `vstav3` contient tous les éléments `entryPoint` associés à une solution Office.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -55,7 +56,7 @@ ms.locfileid: "34448387"
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre l’élément `entryPoints` d’un manifeste de l’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre l’élément `entryPoints` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   
@@ -99,7 +100,7 @@ ms.locfileid: "34448387"
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre un élément `entryPoints` d’un manifeste de l’application pour une solution au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
+ L’exemple de code suivant illustre l’élément `entryPoints` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Code  
   

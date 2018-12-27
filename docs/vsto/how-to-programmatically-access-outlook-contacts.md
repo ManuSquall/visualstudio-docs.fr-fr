@@ -1,5 +1,5 @@
 ---
-title: 'Comment : accéder par programmation aux contacts Outlook'
+title: 'Procédure : Accéder par programmation aux contacts Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,18 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 6ee09e0d0a51675bc00b19aedd0508276cb0cb09
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 79fb7ea0b8f44943b3a8665cb9cf83160e8e0ffe
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255939"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647021"
 ---
-# <a name="how-to-programmatically-access-outlook-contacts"></a>Comment : accéder par programmation aux contacts Outlook
+# <a name="how-to-programmatically-access-outlook-contacts"></a>Procédure : Accéder par programmation aux contacts Outlook
   Cet exemple recherche tous les contacts dont le nom contient une chaîne de recherche spécifié.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,9 +38,9 @@ ms.locfileid: "35255939"
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)   
- [Comment : ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Comment : rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Comment : rechercher une adresse de messagerie dans les contacts par programmation](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
- [Comment : supprimer des contacts Outlook par programmation](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
+ [Guide pratique pour Ajouter par programmation une entrée aux contacts Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [Guide pratique pour Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Guide pratique pour Rechercher une adresse de messagerie dans les contacts par programmation](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
+ [Guide pratique pour Supprimer des contacts Outlook par programmation](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
   
   

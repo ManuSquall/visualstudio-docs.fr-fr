@@ -1,6 +1,7 @@
 ---
 title: '&lt;personnalisations&gt; élément (développement Office dans Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - <customizations> element
 - customizations element
 - application manifests [Office development in Visual Studio], <customizations> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f324b65e6a008aa25df03ef5870617b9a8427e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670829"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646665"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personnalisations&gt; élément (développement Office dans Visual Studio)
   L’élément `customizations` de l’espace de noms `vstov4` contient toutes les informations sur l’installation et le chargement de chaque solution Office.  

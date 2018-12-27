@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer et modifier les propriétés de document personnalisées'
+title: 'Procédure : Créer et modifier les propriétés de document personnalisées'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - custom document properties
 - documents [Office development in Visual Studio], properties
 - document properties [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb66d2fbd1af41cfa89fc38f7694ee3783d10f76
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254434"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646507"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Comment : créer et modifier les propriétés de document personnalisées
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Procédure : Créer et modifier les propriétés de document personnalisées
   Les applications Microsoft Office répertoriées ci-dessus fournissent des propriétés intégrées qui sont stockées avec les documents. En outre, vous pouvez créer et modifier des propriétés de document personnalisées si vous souhaitez stocker des informations supplémentaires avec le document.  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35254434"
   
  L'exemple suivant illustre l'ajout d'une propriété personnalisée dans une personnalisation au niveau du document pour Excel et l'affectation d'une valeur à cette propriété.  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment accéder et manipuler les propriétés de document personnalisées dans Microsoft Word ?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Accéder et manipuler les propriétés de document personnalisées dans Microsoft Word ? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
 ## <a name="example"></a>Exemple  
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
@@ -45,6 +45,6 @@ ms.locfileid: "35254434"
 ## <a name="see-also"></a>Voir aussi  
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
- [Comment : lire et écrire aux propriétés de document](../vsto/how-to-read-from-and-write-to-document-properties.md)  
+ [Guide pratique pour Lire et écrire dans les propriétés de document](../vsto/how-to-read-from-and-write-to-document-properties.md)  
   
   

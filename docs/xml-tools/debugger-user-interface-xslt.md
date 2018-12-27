@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561916"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 
@@ -92,15 +92,15 @@ Pour plus d’informations, consultez le [référence de l’interface utilisate
 
 -   Les fonctions définies par l'utilisateur ne sont pas autorisées.
 
-Pour plus d’informations, consultez [Comment : évaluer une expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Pour plus d'informations, voir [Procédure : Évaluer une expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Code Machine (fenêtre)
  La fenêtre Code machine affiche le code machine généré par le compilateur XSLT. Elle peut s'utiliser de la même façon que toutes les autres fenêtres de code machine Visual Studio.
 
- Pour plus d’informations, [Comment : utiliser la fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md).
+ Pour plus d’informations, [Comment : La fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage XSLT](../xml-tools/debugging-xslt.md)
-- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)   
 - [Inspecter des variables dans les fenêtres automatique et variables locales dans Visual Studio](../debugger/autos-and-locals-windows.md)

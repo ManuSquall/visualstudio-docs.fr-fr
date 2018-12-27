@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter par programmation une entrée aux contacts Outlook'
+title: 'Procédure : Ajouter par programmation une entrée aux contacts Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - contacts [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 690d3c71ab00d5d32f882529600a91769669a3b1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c94328600c2da262aed3c111b660fc4cd25be5d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255250"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648398"
 ---
-# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Comment : ajouter par programmation une entrée aux contacts Outlook
+# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Procédure : Ajouter par programmation une entrée aux contacts Outlook
   Cet exemple crée un contact et entre des données dans le nouveau contact.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -33,8 +33,8 @@ ms.locfileid: "35255250"
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)   
- [Comment : créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)   
- [Comment : accéder par programmation aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Comment : rechercher une adresse de messagerie dans les contacts par programmation](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
+ [Guide pratique pour Créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)   
+ [Guide pratique pour Accéder par programmation aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Guide pratique pour Rechercher une adresse de messagerie dans les contacts par programmation](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
   
   
