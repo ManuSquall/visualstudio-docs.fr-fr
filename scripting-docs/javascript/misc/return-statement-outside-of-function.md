@@ -1,5 +1,5 @@
 ---
-title: '&#39;retourner&#39; instruction en dehors de la fonction | Microsoft Docs'
+title: instruction en dehors de la fonction ' return' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846516"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802522"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39;retourner&#39; instruction en dehors de la fonction
+# <a name="return-statement-outside-of-function"></a>Instruction 'return' en dehors de la fonction
 Vous avez utilisé un `return` instruction dans la portée globale de votre code. La `return` instruction doit uniquement apparaître dans le corps d’une fonction.  
   
  Appel d’une fonction avec la `()` opérateur est une expression. Toutes les expressions ont des valeurs ; la `return` instruction est utilisée pour spécifier la valeur retournée par une fonction. Le format général est :  

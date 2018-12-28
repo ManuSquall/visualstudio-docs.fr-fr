@@ -18,58 +18,57 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 035c8a402c0b596b8a6e06d5e6c72e4ab34ebb4f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d72206ac6ddd6696c1f2fac0f9de6552408a5a46
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647189"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804589"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; élément (développement Office dans Visual Studio)
-  Le `formRegions` élément de la `vstov4` espace de noms contient les zones de formulaire Microsoft Office Outlook qui sont associés à un composant logiciel complément VSTO.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```xml  
-<formRegions>  
-  <formRegion>  
-  </formRegion>  
-</formRegions>  
-```  
-  
-## <a name="elements-and-attributes"></a>Éléments et attributs  
- L’élément `formRegions` de l’espace de noms `vstov4` contient tous les éléments `formRegion` pour un complément VSTO Outlook. Il est uniquement obligatoire pour les compléments VSTO Outlook qui incluent des zones de formulaire.  
-  
- Un seul élément `formRegions` peut être défini dans un manifeste de l’application.  
-  
- L’élément `formRegions` ne possède pas d’attributs.  
-  
- L’élément `formRegions` possède l’élément suivant.  
-  
-### <a name="formregion"></a>formRegion  
- Obligatoire pour les compléments VSTO Outlook qui comprennent des zones de formulaire. Le `formRegion` élément est défini dans [ &#60;formRegion&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
-  
-## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
-  
-### <a name="description"></a>Description  
- L’exemple de code suivant illustre un élément `formRegions` dans un manifeste de l’application pour une solution Office au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Code  
-  
-```xml  
-<vstov4:formRegions>  
-  <vstov4:formRegion  
-      name="OutlookAddIn1.FormRegion1">  
-    <vstov4:messageClass name="IPM.Note" />  
-    <vstov4:messageClass name="IPM.Contact" />  
-    <vstov4:messageClass name="IPM.Appointment" />  
-  </vstov4:formRegion>  
-</vstov4:formRegions>  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  Le `formRegions` élément de la `vstov4` espace de noms contient les zones de formulaire Microsoft Office Outlook qui sont associés à un composant logiciel complément VSTO.
+
+## <a name="syntax"></a>Syntaxe
+
+```xml
+<formRegions>
+  <formRegion>
+  </formRegion>
+</formRegions>
+```
+
+## <a name="elements-and-attributes"></a>Éléments et attributs
+ L’élément `formRegions` de l’espace de noms `vstov4` contient tous les éléments `formRegion` pour un complément VSTO Outlook. Il est uniquement obligatoire pour les compléments VSTO Outlook qui incluent des zones de formulaire.
+
+ Un seul élément `formRegions` peut être défini dans un manifeste de l’application.
+
+ L’élément `formRegions` ne possède pas d’attributs.
+
+ L’élément `formRegions` possède l’élément suivant.
+
+### <a name="formregion"></a>formRegion
+ Obligatoire pour les compléments VSTO Outlook qui comprennent des zones de formulaire. Le `formRegion` élément est défini dans [ &#60;formRegion&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).
+
+## <a name="vsto-add-in-example"></a>Exemple de complément VSTO
+
+### <a name="description"></a>Description
+ L’exemple de code suivant illustre un élément `formRegions` dans un manifeste de l’application pour une solution Office au niveau de l’application déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Code
+
+```xml
+<vstov4:formRegions>
+  <vstov4:formRegion
+      name="OutlookAddIn1.FormRegion1">
+    <vstov4:messageClass name="IPM.Note" />
+    <vstov4:messageClass name="IPM.Contact" />
+    <vstov4:messageClass name="IPM.Appointment" />
+  </vstov4:formRegion>
+</vstov4:formRegions>
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

@@ -18,46 +18,45 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 634a2aff43b19098629392fedbfbaef7549e8e6c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ac66f4f7dd458ecba5f26cc99ad795540dba648d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647060"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802470"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;document&gt; élément (développement Office dans Visual Studio)
-  Le `document` élément de la `vstov4` espace de noms stocke les informations de personnalisation spécifiques pour les personnalisations au niveau du document.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```xml  
-<document solutionId />  
-```  
-  
-## <a name="elements-and-attributes"></a>Éléments et attributs  
- Obligatoire uniquement pour les personnalisations au niveau du document. L’élément `document` se trouve dans l’espace de noms `vstov4` . L’élément `document` a les attributs suivants.  
-  
-|Attribut|Description|  
-|---------------|-----------------|  
-|`solutionId`|Obligatoire. Le GUID utilisé par Visual Studio Tools pour Office runtime pour identifier de manière unique une solution au niveau du document. Cette valeur est stockée en tant que la propriété de document personnalisée _AssemblyLocation. Pour plus d’informations, consultez [vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md).|  
-  
- `document` n’a aucun élément enfant.  
-  
-## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
-  
-### <a name="description"></a>Description  
- L’exemple de code suivant illustre la `document` élément dans une solution de Office au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### <a name="code"></a>Code  
-  
+  Le `document` élément de la `vstov4` espace de noms stocke les informations de personnalisation spécifiques pour les personnalisations au niveau du document.
+
+## <a name="syntax"></a>Syntaxe
+
 ```xml
-<vstov4:document   
-  solutionId="73e" />  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+<document solutionId />
+```
+
+## <a name="elements-and-attributes"></a>Éléments et attributs
+ Obligatoire uniquement pour les personnalisations au niveau du document. L’élément `document` se trouve dans l’espace de noms `vstov4` . L’élément `document` a les attributs suivants.
+
+|Attribut|Description|
+|---------------|-----------------|
+|`solutionId`|Obligatoire. Le GUID utilisé par Visual Studio Tools pour Office runtime pour identifier de manière unique une solution au niveau du document. Cette valeur est stockée en tant que la propriété de document personnalisée _AssemblyLocation. Pour plus d’informations, consultez [vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md).|
+
+ `document` n’a aucun élément enfant.
+
+## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document
+
+### <a name="description"></a>Description
+ L’exemple de code suivant illustre la `document` élément dans une solution de Office au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+
+### <a name="code"></a>Code
+
+```xml
+<vstov4:document
+  solutionId="73e" />
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)
+- [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)
+- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

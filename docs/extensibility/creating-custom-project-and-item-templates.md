@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739823"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802733"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 
@@ -29,7 +29,7 @@ Vous pouvez également configurer un modèle pour installer les packages NuGet. 
 Pour les scénarios de création de modèle de base, vous devez utiliser le **Export Template** Assistant, qui envoie le résultat vers un fichier compressé. Pour plus d’informations sur la création de modèle de base, consultez [création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
 > [!NOTE]
-> À partir de Visual Studio 2017, l’analyse pour les modèles de projets et modèles d’élément est n’est plus effectuée. Au lieu de cela, l’extension doit fournir les fichiers de manifeste de modèle qui décrivent l’emplacement d’installation de ces modèles. Vous pouvez utiliser Visual Studio 2017 pour mettre à jour vos extensions VSIX. Si vous déployez votre extension à l’aide d’un fichier MSI, vous devez générer manuellement les fichiers manifeste de modèle. Pour plus d’informations, consultez [mise à niveau projet et élément de modèles personnalisés pour Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Le schéma de manifeste de modèle est documenté dans [référence de schéma de manifeste de modèle Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
+> À partir de Visual Studio 2017, l’analyse pour les modèles de projets et modèles d’élément est n’est plus effectuée. Au lieu de cela, l’extension doit fournir les fichiers de manifeste de modèle qui décrivent l’emplacement d’installation de ces modèles. Vous pouvez utiliser Visual Studio 2017 pour mettre à jour vos extensions VSIX. Si vous déployez votre extension à l’aide d’un fichier MSI, vous devez générer manuellement les fichiers manifeste de modèle. Pour plus d’informations, consultez [mise à niveau des modèles de projet et d’élément personnalisés pour Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Le schéma de manifeste de modèle est documenté dans [référence de schéma de manifeste de modèle Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="create-a-project-template"></a>Créer un modèle de projet
 

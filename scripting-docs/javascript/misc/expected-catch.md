@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39; catch &#39; | Documents Microsoft
+title: "'Catch' attendu | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633789"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801974"
 ---
-# <a name="expected-39catch39"></a>Attendu &#39; catch &#39;
-Vous avez utilisé la gestion des exceptions **essayez** bloque, mais n’avez pas écrit associé **catch** instruction. Le mécanisme de gestion des exceptions requiert que le code peut échouer, ainsi que le code ne doit pas s’exécuter si une exception se produit, encapsulés dans un **essayez** bloc. Des exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et capturées à l’extérieur de la **essayez** bloc avec un ou plusieurs **catch**instructions.  
+# <a name="expected-catch"></a>'catch' attendu
+Vous avez utilisé la gestion des exceptions **essayez** bloquer, mais n’avez pas écrit associé **catch** instruction. Le mécanisme de gestion des exceptions requiert que le code peut échouer, ainsi que le code qui ne doit pas s’exécuter si une exception se produit, être encapsulées à l’intérieur d’un **essayez** bloc. Exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et interceptées en dehors de la **essayez** bloc avec un ou plusieurs **catch**instructions.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ajouter au **catch** bloc.  
+-   Ajouter associé **catch** bloc.  
   
 -   Essayez d’utiliser un **enfin** bloquer au lieu d’un **catch** bloc.  
   

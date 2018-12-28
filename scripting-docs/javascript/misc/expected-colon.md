@@ -1,5 +1,5 @@
 ---
-title: 'Attendu &#39; : &#39; | Documents Microsoft'
+title: Attendu ' :' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c882c2da52de7a41c558f34f6912a0da1ad272a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633269"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802392"
 ---
-# <a name="expected-3939"></a>Attendu &#39; : &#39;
-Vous a tenté de créer une expression à l’aide de l’opérateur conditionnel ternaire, mais n’incluez pas le signe deux-points entre les deuxième et troisième opérandes. Opérateur conditionnel ternaire (trois opérandes) nécessite un signe deux-points entre le deuxième (true) et le troisième (false) opérandes.  
+# <a name="expected-"></a>':' attendu
+Vous a tenté de créer une expression à l’aide de l’opérateur conditionnel ternaire, mais n’incluez pas le signe deux-points entre les deuxième et troisième opérandes. L’opérateur conditionnel (trois opérandes) ternaire nécessite un signe deux-points entre le deuxième (true) et le troisième (false) opérandes.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
