@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672325"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804862"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procédure pas à pas : Insérer des données dans un classeur sur un serveur
   Cette procédure pas à pas montre comment insérer des données dans un jeu de données est mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -57,9 +57,9 @@ ms.locfileid: "50672325"
 
 -   Accès à une instance en cours d’exécution de Microsoft SQL Server ou Microsoft SQL Server Express à laquelle la base de données AdventureWorksLT attachée à. Vous pouvez télécharger la base de données AdventureWorksLT à partir de la [site Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
 
-    -   Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
+    -   Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Créez un projet de bibliothèque de classes qui définit un jeu de données
  Pour utiliser le même jeu de données dans un projet de classeur Excel et une application console, vous devez définir le jeu de données dans un assembly distinct qui est référencé par ces deux projets. Pour cette procédure pas à pas, définissez le jeu de données dans un projet de bibliothèque de classes.
@@ -89,7 +89,7 @@ ms.locfileid: "50672325"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Définir un jeu de données dans le projet de bibliothèque de classes
  Définir un dataset typé qui contient des données à partir de la base de données AdventureWorksLT pour SQL Server 2005. Plus loin dans cette procédure pas à pas, vous ferez référence ce jeu de données à partir d’un projet de classeur Excel et un projet d’application console.
 
- Le jeu de données est un *dataset typé* qui représente les données dans la table Product de la base de données AdventureWorksLT. Pour plus d’informations sur les datasets typés, consultez [outils de Dataset dans Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Le jeu de données est un *dataset typé* qui représente les données dans la table Product de la base de données AdventureWorksLT. Pour plus d’informations sur les datasets typés, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Pour définir un dataset typé dans le projet de bibliothèque de classes
 
@@ -103,7 +103,7 @@ ms.locfileid: "50672325"
 
 5. Si vous avez une connexion existante à la base de données AdventureWorksLT, choisissez cette connexion et cliquez sur **suivant**.
 
-    Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d’informations, consultez [Comment : se connecter aux données dans une base de données](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    Sinon, cliquez sur **Nouvelle connexion**et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d'informations, voir [Procédure : Se connecter aux données dans une base de données](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672325"
 
 2.  Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-     Le **Assistant de Configuration de Source de données** s’ouvre.
+     L’Assistant **Configuration de source de données** s’ouvre.
 
 3.  Cliquez sur **objet**, puis cliquez sur **suivant**.
 
@@ -293,8 +293,8 @@ ms.locfileid: "50672325"
 
 Pour plus d’informations sur l’utilisation des données mises en cache à partir de ces rubriques :
 
--   Modification des données dans un dataset mis en cache sans démarrer Excel. Pour plus d’informations, consultez [procédure pas à pas : modification mis en cache les données dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
+-   Modification des données dans un dataset mis en cache sans démarrer Excel. Pour plus d’informations, consultez [Procédure pas à pas : Modifier les données mises en cache dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Modification des données mises en cache dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [Procédure pas à pas : Modifier les données mises en cache dans un classeur sur un serveur](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

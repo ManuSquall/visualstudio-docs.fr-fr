@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39;] &#39; | Documents Microsoft
+title: Attendu ']' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31975b80764773f16eb4009322b712c06a4ff4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632749"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804349"
 ---
-# <a name="expected-3939"></a>Attendu &#39;] &#39;
-Vous fait une référence à un élément de tableau, mais n’incluez pas le crochet de droite. Toute expression qui fait référence à un élément de tableau doit inclure les crochets ouvrants et fermants.  
+# <a name="expected-"></a>']' attendu
+Vous fait une référence à un élément de tableau, mais n’incluez pas le crochet droit. Toute expression qui fait référence à un élément de tableau doit inclure les crochets ouvrants et fermants.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
 -   Ajoutez le crochet droit à l’expression qui fait référence à l’élément de tableau.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)   
+ [À l’aide de tableaux](../../javascript/advanced/using-arrays-javascript.md)   
  [Objet Array](../../javascript/reference/array-object-javascript.md)

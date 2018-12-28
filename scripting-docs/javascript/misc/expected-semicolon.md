@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39; &#39; | Documents Microsoft
+title: Attendu ';' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54fbd2eb72f6e6401eca85f61b0651a3ead4900
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632789"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804336"
 ---
-# <a name="expected-3939"></a>Attendu &#39; &#39;
-Vous tenté de placer plusieurs instructions sur une ligne, mais que vous ne pas séparez-les par des points-virgules. Des points-virgules sont utilisés pour terminer les instructions. Bien que vous pouvez placer plusieurs instructions sur une seule ligne, chacun d’eux doit être délimité de l’élément suivant par un point-virgule.  
+# <a name="expected-"></a>';' attendu
+Vous avez tenté de placer plusieurs instructions sur une ligne, mais s’est pas séparez-les par des points-virgules. Des points-virgules servent à terminer les instructions. Bien que vous pouvez placer plusieurs instructions sur une seule ligne, chacun d’eux doit être délimité de la suivante par un point-virgule.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

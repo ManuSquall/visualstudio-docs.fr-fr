@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter par programmation des commentaires à du texte dans des documents'
+title: 'Procédure : Ajouter par programmation des commentaires à du texte dans des documents'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670861"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804602"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Comment : ajouter par programmation des commentaires à du texte dans des documents
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procédure : Ajouter par programmation des commentaires à du texte dans des documents
   La propriété de commentaires de la classe de Document ajoute un commentaire à une plage de texte dans un document Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,7 +50,7 @@ ms.locfileid: "35670861"
  Pour modifier les initiales de l’utilisateur que Word ajoute aux commentaires, utilisez la propriété <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : supprimer par programmation tous les commentaires des documents](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [Guide pratique pour Supprimer par programmation tous les commentaires des documents](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Élément hôte de document](../vsto/document-host-item.md)  
   
   

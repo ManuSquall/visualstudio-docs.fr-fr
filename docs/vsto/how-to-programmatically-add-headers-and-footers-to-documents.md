@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter par programmation des en-têtes et pieds de page aux documents'
+title: 'Procédure : Ajouter par programmation des en-têtes et pieds de page aux documents'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding headers
 - documents [Office development in Visual Studio], adding footers
 - footers, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849904"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803374"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Comment : ajouter par programmation des en-têtes et pieds de page aux documents
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procédure : Ajouter par programmation des en-têtes et pieds de page aux documents
   Vous pouvez ajouter du texte aux en-têtes et pieds de page dans votre document à l'aide de la propriété <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> et de la propriété <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de <xref:Microsoft.Office.Interop.Word.Section>. Chaque section d'un document contient trois en-têtes et pieds de page :  
   
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
@@ -73,7 +73,7 @@ ms.locfileid: "49849904"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)   
- [Comment : étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Comment : Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
+ [Guide pratique pour Créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Guide pratique pour Étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Guide pratique pour Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
    

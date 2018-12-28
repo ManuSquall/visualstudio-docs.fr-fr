@@ -17,36 +17,44 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e58f84a48104553e5517d24f746769e6f0959e5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 757db51093dcd7e300831287b5da42cd05430e28
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920946"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804498"
 ---
 # <a name="intrinsic-functions"></a>Fonctions intrinsèques
-Une expression dans SAL peut être une expression C/C++ condition qu’il soit une expression qui n’a pas d’effets secondaires, par exemple, ++,--et les appels de fonction tous ont des effets secondaires dans ce contexte.  Toutefois, SAL fournit certains objets de type fonction et certains symboles réservés qui peuvent être utilisées dans les expressions de SAL. Ils sont désignés en tant que *des fonctions intrinsèques*.
+Une expression dans SAL peut être une expression C/C++ condition qu’il soit une expression qui n’a pas d’effets secondaires, par exemple, ++,--et les appels de fonction tous avoir des effets secondaires dans ce contexte.  Toutefois, SAL fournit certains objets de type fonction et certains symboles réservés qui peuvent être utilisées dans les expressions de SAL. Ils sont désignés comme *fonctions intrinsèques*.
 
 ## <a name="general-purpose"></a>Usage général
  Les annotations de fonction intrinsèques suivantes fournissent des utilitaires générales pour SAL.
 
 |Annotation|Description|
 |----------------|-----------------|
-|`_Curr_`|Un synonyme de l’objet qui est actuellement en cours d’annotation.  Lorsque le `_At_` annotation est en cours d’utilisation, `_Curr_` est le même que le premier paramètre de `_At_`.  Dans le cas contraire, il est le paramètre ou la valeur entière/retour de fonction à laquelle l’annotation est lexicalement associée.|
-|`_Inexpressible_(expr)`|Exprime une situation où la taille d’une mémoire tampon est trop complexe pour représenter à l’aide d’une expression d’annotation, par exemple, quand elle est calculée par l’analyse d’un jeu de données d’entrée et ensuite le comptage des membres sélectionnés.|
-|`_Nullterm_length_(param)`|`param` est le nombre d’éléments dans la mémoire tampon jusqu'à sans inclure un terminateur null. Il peut être appliqué à une mémoire tampon de type non agrégées, non void.|
-|`_Old_(expr)`|Lorsqu’elle est évaluée dans la condition préalable, `_Old_` retourne la valeur d’entrée `expr`.  Lorsqu’elle est évaluée dans la condition préalable, il retourne la valeur `expr` car il aurait été évalué dans une condition préalable.|
-|`_Param_(n)`|Le `n`ième paramètre à une fonction, en comptant à partir de 1 à `n`, et `n` est une constante intégrale littéral. Si le paramètre est nommé, cette annotation est identique à l’accès à la paramètre par nom. **Remarque :** `n` peuvent faire référence aux paramètres positionnels qui sont définies par les points de suspension, ou peuvent être utilisés dans les prototypes de fonction où les noms ne sont pas utilisés.  |
-|`return`|Mot clé réservé de C/C++ `return` peut être utilisé pour indiquer la valeur de retour d’une fonction dans une expression de SAL.  La valeur est uniquement disponible dans l’état de la publication ; Il est une erreur de syntaxe à utiliser dans l’état des versions antérieures.|
+|`_Curr_`|Synonyme de l’objet qui est actuellement en cours d’annotation.  Lorsque le `_At_` annotation est en cours d’utilisation, `_Curr_` est le même que le premier paramètre de `_At_`.  Sinon, il est le paramètre ou la valeur de retour de fonction entière/auquel l’annotation est lexicalement associée.|
+|`_Inexpressible_(expr)`|Exprime une situation où la taille d’une mémoire tampon est trop complexe pour représenter à l’aide d’une expression d’annotation, par exemple, quand elle est calculée en analysant un jeu de données d’entrée et de puis comptage des membres sélectionnés.|
+|`_Nullterm_length_(param)`|`param` est le nombre d’éléments dans la mémoire tampon jusqu'à mais ne pas y compris une marque de fin null. Il peut être appliqué à une mémoire tampon de type non agrégé, non void.|
+|`_Old_(expr)`|Lorsqu’elle est évaluée de la précondition, `_Old_` retourne la valeur d’entrée `expr`.  Lorsqu’elle est évaluée dans la condition préalable, il retourne la valeur `expr` telle qu’elle est évaluée dans la condition préalable.|
+|`_Param_(n)`|Le `n`ième paramètre à une fonction, en partant de 1 à `n`, et `n` est une constante intégrale littéral. Si le paramètre est nommé, cette annotation est identique à accéder à la paramètre par nom. **Remarque :** `n` peuvent faire référence aux paramètres positionnels sont définies par les points de suspension, ou peuvent être utilisés dans les prototypes de fonction où les noms ne sont pas utilisés.|
+|`return`|Le C/C++ de mot clé réservé `return` peut être utilisé pour indiquer la valeur de retour d’une fonction dans une expression de SAL.  La valeur est disponible uniquement dans l’état de la publication ; Il est une erreur de syntaxe à utiliser dans un état antérieur.|
 
 ## <a name="string-specific"></a>Chaîne spécifique
- Les annotations suivantes de la fonction intrinsèque permettent une manipulation de chaînes. Les quatre de ces fonctions ont la même fonction : pour retourner le nombre d’éléments du type qui se trouve avant une marque de fin null. Les différences sont les types de données dans les éléments qui portent le nom. Notez que si vous souhaitez spécifier la longueur d’une valeur null se terminant par la mémoire tampon qui n’est pas composé de caractères, utilisez la `_Nullterm_length_(param)` annotation à partir de la section précédente.
+ Les annotations suivantes de la fonction intrinsèque permettent une manipulation de chaînes. Les quatre de ces fonctions ont la même fonction : pour retourner le nombre d’éléments de type qui se trouve avant une marque de fin null. Les différences sont les types de données dans les éléments qui portent le nom. Notez que si vous souhaitez spécifier la longueur d’un par un caractère null de la mémoire tampon qui n’est pas composée de caractères, utilisez la `_Nullterm_length_(param)` annotation à partir de la section précédente.
 
 |Annotation|Description|
 |----------------|-----------------|
-|`_String_length_(param)`|`param` est le nombre d’éléments dans la chaîne, mais ne pas y compris un terminateur null. Cette annotation est réservée pour les types de caractère de chaîne.|
-|`strlen(param)`|`param` est le nombre d’éléments dans la chaîne, mais ne pas y compris un terminateur null. Cette annotation est réservée pour l’utilisation de caractères les tableaux et ressemble à la fonction C Runtime [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
-|`wcslen(param)`|`param` est le nombre d’éléments dans la chaîne de configuration (mais sans inclure) un terminateur null. Cette annotation est réservée pour utilisation sur un caractère large tableaux et ressemble à la fonction C Runtime [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`_String_length_(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à mais ne pas y compris une marque de fin null. Cette annotation est réservée pour les types de chaîne de caractères.|
+|`strlen(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à mais ne pas y compris une marque de fin null. Cette annotation est réservée pour utilisation sur le caractère tableaux et ressemble à la fonction Runtime C [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`wcslen(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à (mais sans inclure) un terminateur null. Cette annotation est réservée pour utilisation sur le caractère large tableaux et ressemble à la fonction Runtime C [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [présentation de SAL](../code-quality/understanding-sal.md) [annotation de paramètres de fonction et valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md) [annotation du comportement de la fonction](../code-quality/annotating-function-behavior.md) [Structs et Classes d’annotation](../code-quality/annotating-structs-and-classes.md) [annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md) [spécifiant le moment où une Annotation est applicable et](../code-quality/specifying-when-and-where-an-annotation-applies.md) [meilleures pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)
+
+- [Utilisation d’annotations SAL pour réduire les défauts du code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Présentation de SAL](../code-quality/understanding-sal.md)
+- [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)
+- [Annotations des structs et des classes](../code-quality/annotating-structs-and-classes.md)
+- [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)
+- [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)

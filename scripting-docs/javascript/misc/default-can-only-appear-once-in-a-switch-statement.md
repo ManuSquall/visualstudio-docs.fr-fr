@@ -1,5 +1,5 @@
 ---
-title: '&#39; par défaut &#39; ne peut apparaître qu’une seule fois dans un &#39; commutateur &#39; instruction | Documents Microsoft'
+title: "'default' ne peut apparaître qu’une seule fois dans une instruction 'switch' | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633099"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803881"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; par défaut &#39; ne peut apparaître qu’une seule fois dans un &#39; commutateur &#39; instruction
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' ne peut apparaître qu'une fois dans une instruction 'switch'
 Vous avez tenté d’utiliser le **par défaut** instruction plusieurs fois dans une instruction switch. Le cas par défaut est toujours la dernière instruction case dans une instruction switch (c’est le cas de passage).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Supprimer les supplémentaire **par défaut** cas les instructions à partir de votre `switch` instruction (utilisez à la plupart des instruction case une valeur par défaut dans votre instruction switch).  
+-   Supprimez les supplémentaire **par défaut** cas les instructions à partir de votre `switch` instruction (utilisez à la plupart des instruction case par défaut dans votre instruction switch).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Instruction switch](../../javascript/reference/switch-statement-javascript.md)   

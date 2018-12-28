@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39; lors de la &#39; | Documents Microsoft
+title: "'While' attendu | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633029"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801970"
 ---
-# <a name="expected-39while39"></a>Attendu &#39; lors de la &#39;
-Vous n’avez pas inclus le `while` de condition dans une `do...while` boucle. A **faire** instruction doit correspondre à une `while` à la fin du bloc de code de test.  
+# <a name="expected-while"></a>'while' attendu
+Vous n’avez pas inclus le `while` condition dans une `do...while` boucle. Un **faire** instruction doit avoir un correspondant `while` à la fin du bloc de code de test.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Inclure la `while` instruction après l’accolade fermante de test.  
+-   Inclure le `while` tester instruction après l’accolade fermante.  
   
 ## <a name="see-also"></a>Voir aussi  
  [while, instruction](../../javascript/reference/while-statement-javascript.md)   

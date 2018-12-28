@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295578"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804284"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : Déboguer une application SharePoint à l’aide d’IntelliTrace
 
@@ -32,7 +32,7 @@ En utilisant IntelliTrace, vous pouvez déboguer plus facilement des solutions S
 
  Cette procédure pas à pas montre comment déboguer un projet SharePoint 2010 ou SharePoint 2013 dans Visual Studio à l’aide de Microsoft Monitoring Agent pour collecter des données IntelliTrace à partir d’applications déployées. Pour analyser ces données, vous devez utiliser Visual Studio Enterprise. Ce projet comprend un récepteur de fonctionnalité qui, lorsque la fonctionnalité est activée, ajoute une tâche à la liste des tâches et une annonce à la liste d’annonces. Lorsque la fonctionnalité est désactivée, la tâche est marquée comme terminée et une deuxième annonce est ajoutée à la liste d’annonces. Toutefois, la procédure contient une erreur logique qui empêche le projet de s’exécuter correctement. En utilisant IntelliTrace, vous recherchez et corrigez l’erreur.
 
- **S’applique à :** les informations contenues dans cette rubrique s’applique aux solutions SharePoint 2010 et SharePoint 2013 qui ont été créées dans Visual Studio.
+ **S’applique à :** Les informations contenues dans cette rubrique s’applique aux solutions SharePoint 2010 et SharePoint 2013 qui ont été créées dans Visual Studio.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
@@ -206,7 +206,7 @@ Ensuite, ajoutez le code à deux méthodes dans le récepteur de fonctionnalité
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ Maintenant que le code est ajouté au récepteur de fonctionnalité et le collec
 
 2. Afficher le contenu des listes de tâches et des annonces.
 
-     La liste d’annonces doit avoir une nouvelle annonce nommé **Activated feature : IntelliTraceTest_Feature1**, et la liste des tâches doit avoir une nouvelle tâche qui est nommée **Deactivate feature : IntelliTraceTest_ Feature1**. Si un de ces éléments est manquant, vérifiez si la fonctionnalité est activée. S’il n’est pas activé, activez-le.
+     La liste d’annonces doit avoir une nouvelle annonce nommé **Activated fonctionnalité : IntelliTraceTest_Feature1**, et la liste des tâches doit avoir une nouvelle tâche qui est nommée **Deactivate feature : IntelliTraceTest_Feature1**. Si un de ces éléments est manquant, vérifiez si la fonctionnalité est activée. S’il n’est pas activé, activez-le.
 
 3. Désactivez la fonctionnalité en procédant comme suit :
 
@@ -280,9 +280,9 @@ Maintenant que le code est ajouté au récepteur de fonctionnalité et le collec
 Si vous installez Microsoft Monitoring Agent sur le système qui exécute SharePoint, vous pouvez déboguer des solutions SharePoint à l’aide de données qui sont plus spécifiques que les informations génériques qui retourne IntelliTrace. L’agent fonctionne en dehors de Visual Studio à l’aide des applets de commande PowerShell pour capturer les informations de débogage lors de l’exécution de votre solution SharePoint.
 
 > [!NOTE]
-> Les informations de configuration dans cette section sont spécifiques à cet exemple. Pour plus d’informations sur les autres options de configuration, consultez [à l’aide du collecteur autonome IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> Les informations de configuration dans cette section sont spécifiques à cet exemple. Pour plus d’informations sur les autres options de configuration, consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-1. Sur l’ordinateur qui exécute SharePoint, [configurer Microsoft Monitoring Agent et commencer à surveiller votre solution](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. Sur l’ordinateur qui exécute SharePoint, [configurer Microsoft Monitoring Agent et commencer à surveiller votre solution](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Désactiver la fonctionnalité :
 
@@ -310,7 +310,7 @@ Vous pouvez maintenant afficher le fichier journal IntelliTrace dans Visual Stud
 
 2. Choisissez le **Exception de débogage** bouton.
 
-     Si vous y êtes invité, charger des fichiers de symboles. Dans le **IntelliTrace** fenêtre, l’exception est mise en surbrillance en tant que « levé : erreur grave s’est produite ! ».
+     Si vous y êtes invité, charger des fichiers de symboles. Dans le **IntelliTrace** fenêtre, l’exception est mise en surbrillance en tant que « levé : Erreur grave s’est produite ! ».
 
      Dans la fenêtre IntelliTrace, choisir l’exception pour afficher le code qui a échoué.
 
@@ -334,6 +334,6 @@ Vous pouvez maintenant afficher le fichier journal IntelliTrace dans Visual Stud
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vérifier et de déboguer du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Procédure pas à pas : Vérifier le Code SharePoint à l’aide de Tests unitaires](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Vérifier et de déboguer du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [Procédure pas à pas : Vérifier le Code SharePoint à l’aide de Tests unitaires](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
