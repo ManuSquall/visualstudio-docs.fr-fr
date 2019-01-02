@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062436"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740271"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 -   **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.
 
 ## <a name="debugging-and-diagnostics"></a>Débogage et diagnostics
- Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Pour plus d’informations sur les nouveautés introduite dans les diagnostics, consultez [What ' s New in des outils de profilage](./profiling/what-s-new-in-profiling-tools.md).
 
  Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
 ### <a name="perftips"></a>Conseils sur les performances
- Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [PerfTips : informations sur les performances at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Liste d'erreurs
  La liste d'erreurs prend désormais en charge le filtrage sur n'importe quelle colonne. Elle affiche aussi une vue dynamique des erreurs, des avertissements et de l'analyse du code dans l'ensemble de votre solution C# ou Visual Basic, au fur et à mesure que vous tapez, même quand un changement de code produit des milliers d'avertissements. La nouvelle liste d'erreurs est compatible avec les usages existants. Pour plus d'informations, consultez [Error List Window](./ide/reference/error-list-window.md).

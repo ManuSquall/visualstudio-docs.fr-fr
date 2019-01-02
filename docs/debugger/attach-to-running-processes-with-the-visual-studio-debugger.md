@@ -1,6 +1,6 @@
 ---
-title: Attacher au processus en cours d’exécution avec le débogueur dans Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Attacher au processus en cours d’exécution avec le débogueur | Microsoft Docs
+ms.custom: seodec18
 ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561640"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus est en cours d’exécution, sélectionnez **déboguer** > **attacher au processus** ou appuyez sur **Ctrl**+**Alt** + **P** dans Visual Studio et utiliser le **attacher au processus** boîte de dialogue pour attacher le débogueur au processus.
 
 Vous pouvez utiliser **attacher au processus** pour déboguer des applications en cours d’exécution sur des ordinateurs locaux ou distants, déboguer plusieurs processus simultanément, de déboguer des applications qui n’ont pas été créées dans Visual Studio ou déboguer n’importe quelle application que vous n’avez pas démarré à partir de Visual Studio avec le débogueur attaché. Par exemple, si vous exécutez une application sans le débogueur et une exception, vous pouvez ensuite attacher le débogueur au processus de l’application en cours d’exécution et commencez le débogage.
 
-Pour plus d’informations sur les bases du débogage dans Visual Studio, consultez [mise en route avec le débogueur](../debugger/getting-started-with-the-debugger.md).
+Pour plus d’informations sur les bases du débogage dans Visual Studio, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Ne savez pas s’il faut utiliser **attacher au processus** pour votre scénario de débogage ? Consultez [commune de scénarios de débogage](#BKMK_Scenarios). 
@@ -162,7 +162,7 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |Débogage distant ASP.NET 4 ou 4.5 sur un serveur IIS|Utiliser les outils distants et **attacher au processus**|*w3wp.exe*|Consultez [débogage ASP.NET sur un ordinateur IIS distant à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils distants et **attacher au processus**|*dotnet.exe*|Déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [distant débogage ASP.NET Core sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Déboguer un script côté client sur un serveur IIS local, pour les types d’application pris en charge |Utilisez **attacher au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|Débogage de script doit être activé. Pour Chrome, vous devez également exécuter Chrome en mode débogage et sélectionnez **code Webkit** dans le **attacher à** champ.|
-|Déboguer un C#, Visual Basic ou C++ application sur l’ordinateur local|Utilisez [débogage standard](../debugger/getting-started-with-the-debugger.md) ou **attacher au processus**|*\<appname > .exe*|Dans la plupart des scénarios, utiliser le débogage standard et non **attacher au processus**.|
+|Déboguer un C#, Visual Basic ou C++ application sur l’ordinateur local|Utilisez [débogage standard](../debugger/debugger-feature-tour.md) ou **attacher au processus**|*\<appname > .exe*|Dans la plupart des scénarios, utiliser le débogage standard et non **attacher au processus**.|
 |Débogage à distance une application de bureau Windows|Outils à distance|N/A| Consultez [déboguer à distance un C# ou Visual Basic application](../debugger/remote-debugging-csharp.md) ou [à distance déboguer une application C++](../debugger/remote-debugging-cpp.md)|
 |Déboguer une application ASP.NET sur l’ordinateur local après avoir démarré l’application sans le débogueur|Utilisez **attacher au processus**|*iiexpress.exe*|Cela peut être utile pour rendre votre application à charger plus rapidement, telles que (par exemple) lors du profilage. |
 |Déboguer d’autres types d’application pris en charge sur un processus de serveur|Si server est distant, utilisez les outils à distance, et **attacher au processus**|*chrome.exe*, *iexplore.exe*, ou d’autres processus|Si nécessaire, utilisez le moniteur de ressources pour aider à identifier le processus. Consultez [Débogage à distance](../debugger/remote-debugging.md).|
