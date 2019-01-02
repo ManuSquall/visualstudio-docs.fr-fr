@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fd9aa8cc571ba58964346ca85a62b7ec311a744a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079472"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803660"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Utiliser des composants 3D pour les jeux et les applications
 
@@ -44,7 +44,7 @@ Ce document décrit les outils Visual Studio que vous pouvez utiliser pour crée
  Vous pouvez utiliser le concepteur Shader Visual Studio, qui est un outil de conception de nuanceur graphique, pour créer des effets visuels personnalisés sans connaître la programmation HLSL.
 
 > [!NOTE]
-> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur la façon de déboguer une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md).
+> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur la façon de déboguer une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilité des versions DirectX
  Visual Studio utilise DirectX pour restituer les composants 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, consultez [Guide de la plateforme WARP (Windows Advanced Rasterization Platform)](http://go.microsoft.com/fwlink/p/?LinkId=224634).

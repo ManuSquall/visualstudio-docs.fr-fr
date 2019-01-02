@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160190"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740391"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -223,7 +223,7 @@ Vous pouvez parcourir et afficher les captures instantanées à l’aide des bou
 
 ![Nouvelle boîte de dialogue Assistance sur l’exception dans Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons Étape précédente et Étape suivante")
 
-Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/view-historical-application-state.md).
 
 ### <a name="containerization"></a>Mise en conteneur
 
@@ -278,7 +278,7 @@ Pour plus d’informations sur UWP, consultez la page [Développer des applicati
 
 Dans le cadre de la charge de travail du « développement mobile avec .NET », les développeurs familiarisés avec C#, .NET et Visual Studio peuvent fournir des applications Android, iOS et Windows natives à l’aide de Xamarin. Les développeurs peuvent bénéficier de la même puissance et de la même productivité quand ils travaillent avec Xamarin pour les applications mobiles, notamment le débogage à distance sur les appareils Android, iOS et Windows, sans devoir apprendre les langages de codage natifs comme Objective-C ou Java.
 
-Pour plus d’informations, consultez la page [Visual Studio et Xamarin](../cross-platform/visual-studio-and-xamarin.md).
+Pour plus d’informations, consultez la page [Visual Studio et Xamarin](/xamarin/).
 
 ### <a name="entitlements-editor"></a>Éditeur de droits
 
@@ -366,7 +366,7 @@ Pour plus d’informations, consultez la page [Visual Studio Tools pour AI](../a
 Nous mettons souvent à jour Visual Studio 2017 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Voici un récapitulatif des principales mises à jour actuellement en préversion expérimentale :
 
 * **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, un nouvel outil qui vous permet de partager une base de code et son contexte avec un collègue, et de bénéficier d’une collaboration bidirectionnelle instantanée directement à partir de Visual Studio. Avec Live Share, un collègue peut lire, accéder, modifier et déboguer un projet que vous avez partagé avec lui, de manière sécurisée et fluide.<br><br>Pour plus d’informations, consultez le [FAQ sur Live Share](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, une nouvelle fonctionnalité qui simplifie le développement de logiciel en faisant appel à l’IA pour fournir une complétion de code plus performante et sensible au contexte. Elle guide les développeurs afin qu’ils codent conformément aux modèles et aux styles de l’équipe, recherche les problèmes de code difficiles à intercepter et focalise les revues de code sur les zones les plus importantes. <br><br>Pour plus d’informations, consultez [Questions fréquentes (FAQ) sur IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, une nouvelle fonctionnalité qui simplifie le développement de logiciel en faisant appel à l’IA pour fournir une complétion de code plus performante et sensible au contexte. Elle guide les développeurs afin qu’ils codent conformément aux modèles et aux styles de l’équipe, recherche les problèmes de code difficiles à intercepter et focalise les revues de code sur les zones les plus importantes. <br><br>Pour plus d’informations, consultez [Questions fréquentes (FAQ) sur IntelliCode](/visualstudio/intellicode/faq).
 
 Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2017 ? Consultez la page [Feuille de route Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 

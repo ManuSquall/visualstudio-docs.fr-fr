@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056916"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648818"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de capture instantanée
 
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Débogueur de capture instantanée est uniquement disponible pour Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement ASP.NET et web**. Pour ASP.NET Core, vous devez également le **développement .NET Core** charge de travail installée.
+* Débogueur de capture instantanée est uniquement disponible pour Visual Studio 2017 Enterprise version 15.5 ou version ultérieure avec le **charge de travail de développement Azure**. (Sous la **composants individuels** onglet, vous retrouver sous **débogage et test** > **débogueur de capture instantanée**.)
 
     S’il n’est pas déjà installé, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de capture instantanée le **charge de travail de développement ASP.NET et web**.
 

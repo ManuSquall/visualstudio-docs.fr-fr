@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670831"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684832"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.
@@ -86,5 +86,5 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 - [Page Options, Propriétés du nœud Polices et couleurs](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Page Options, Propriétés du nœud Éditeur de texte](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Général, Débogage, boîte de dialogue Options](../../debugger/general-debugging-options-dialog-box.md)
-- [Modifier & Continuer, Débogage, Boîte de dialogue Options](/visualstudio/debugger/edit-and-continue?view=vs-2015)
+- [Modifier & Continuer, Débogage, Boîte de dialogue Options](../../debugger/edit-and-continue.md?view=vs-2015)
 - [Juste-à-temps, Débogage, boîte de dialogue Options](../../debugger/just-in-time-debugging-options-dialog-box.md)

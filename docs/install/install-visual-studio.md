@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159735"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739969"
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
@@ -142,7 +142,7 @@ Pour plus d’informations, consultez la page [Changer les emplacements d’inst
 
    Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), cliquez sur **Installé**, développez **Visual C++**, puis sélectionnez le type de projet C++ que vous souhaitez générer.
 
-   Pour [créer une application C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), cliquez sur **Installé**, développez **Visual C#**, puis sélectionnez le type de projet C# que vous souhaitez générer.
+   Pour [créer une application C#](../get-started/csharp/tutorial-wpf.md), cliquez sur **Installé**, développez **Visual C#**, puis sélectionnez le type de projet C# que vous souhaitez générer.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

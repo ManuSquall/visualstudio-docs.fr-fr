@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885757"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684676"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 
@@ -33,12 +33,12 @@ Vous pouvez faire quasiment tout dans l’IDE Visual Studio en tant qu’utilisa
 |Domaine|Tâche|Pour plus d'informations|
 |----------|----------| - |
 |Installation|Installez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md)|
-||Installer, mettre à jour ou supprimer le contenu d’aide locale.|[Installer et gérer le contenu d’aide locale](../ide/install-and-manage-local-content.md)|
+||Installer, mettre à jour ou supprimer le contenu d’aide locale.|[Installer et gérer le contenu d’aide locale](../help-viewer/install-manage-local-content.md)|
 |Boîte à outils|Ajouter des contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|
 |Génération|Utiliser des événements post-build qui inscrivent un composant.|[Présentation des étapes de build personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Inclure une étape d’inscription lors de la gestion de projets C++.||
 |Débogage|Déboguer des applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|
-||Déboguer des applications exécutées sous un compte d’utilisateur différent, comme les sites web ASP.NET.|[Déboguer des applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Déboguer des applications exécutées sous un compte d’utilisateur différent, comme les sites web ASP.NET.|[Déboguer des applications ASP.NET et AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Déboguer dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Utiliser l’émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Déboguer un service cloud dans Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Configurer un pare-feu pour le débogage distant|[Débogage distant](../debugger/remote-debugging.md)|

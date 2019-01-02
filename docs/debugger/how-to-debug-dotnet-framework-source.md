@@ -1,5 +1,5 @@
 ---
-title: 'Comment : source de débogage .NET Framework | Microsoft Docs'
+title: 'Procédure : Déboguer une source .NET Framework | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389278"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443910"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Guide pratique pour déboguer une source .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procédure : Déboguer une source .NET Framework
 
 Pour déboguer une source .NET Framework, vous devez :
 
@@ -55,7 +55,7 @@ Pour déboguer une source .NET Framework, vous devez :
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Pour charger des symboles à partir de Modules ou de la pile des appels windows  
   
-1. Pendant le débogage, ouvrez la fenêtre en sélectionnant **déboguer** > **Windows** > **Modules** ou **pile des appels** . 
+1. Pendant le débogage, ouvrez la fenêtre en sélectionnant **déboguer** > **Windows** > **Modules** (ou appuyez sur **Ctrl + Alt + U**) ou **déboguer** > **Windows** > **pile des appels** (**Ctrl + Alt + C**). 
    
 1. Cliquez sur un module pour lequel des symboles n’ont pas été chargés. Dans le **Modules** fenêtre, état de chargement des symboles sont dans le **état du symbole** colonne. Dans le **pile des appels** fenêtre, l’état est dans le **état du Frame** colonne et le frame est grisée. 
    

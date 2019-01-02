@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120381"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739836"
 ---
 # <a name="msbuild-reference"></a>Informations de référence sur MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est le système de génération de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les liens indiqués ci-dessous renvoient aux rubriques qui contiennent les informations de référence sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -61,7 +61,7 @@ ms.locfileid: "48120381"
  [Fichiers réponse](../msbuild/msbuild-response-files.md)  
  Décrit les fichiers *.rsp* qui contiennent des commutateurs de ligne de commande.  
   
- [Ressources supplémentaires](../msbuild/additional-resources-for-msbuild.md)  
+ [Ressources supplémentaires](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Fournit des liens vers les sites web et groupes de discussion [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4b0996faf26279ff8018e0e072fd25a33d783
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063420"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561721"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Déboguer au moment du design dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -106,5 +106,4 @@ Dans certains scénarios de liaison de données déclarative, il peut vous aider
    Lorsque la page se charge, le point d’arrêt est atteint.
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
+ [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) [sécurité du débogueur](../debugger/debugger-security.md)   

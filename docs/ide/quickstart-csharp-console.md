@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158604"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441533"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
 
@@ -99,4 +99,4 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous avez appris des choses sur C# et l’environnement IDE de Visual Studio. Pour plus d’informations, passez aux tutoriels suivants.
 
 > [!div class="nextstepaction"]
-> [Bien démarrer avec une application console C# dans Visual Studio](tutorial-csharp-console.md)
+> [Bien démarrer avec une application console C# dans Visual Studio](../get-started/csharp/tutorial-console.md)
