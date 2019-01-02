@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159605"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684468"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
 
@@ -91,4 +91,4 @@ Vous allez maintenant ajouter du code pour suspendre l’application et demander
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Pour en apprendre davantage, passez au tutoriel suivant.
 
 > [!div class="nextstepaction"]
-> [Bien démarrer avec Visual Basic dans Visual Studio](tutorial-visual-basic-console.md)
+> [Bien démarrer avec Visual Basic dans Visual Studio](../get-started/visual-basic/tutorial-console.md)

@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 66a107fbd738bc26fdf608223ff43f958754e3ae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87f7b724f2b7712e4318bc2bfbef4f06ee5ee9bb
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065298"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802483"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour des applications UWP
 
@@ -108,5 +108,5 @@ Dans **l’Éditeur de code**, modifiez le test unitaire et ajoutez les assertio
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tester des applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)
+- [Tester des applications UWP avec Visual Studio](../test/unit-test-your-code.md)
 - [Générer et tester une application UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

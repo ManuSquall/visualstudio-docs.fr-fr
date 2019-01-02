@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063724"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684260"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procédure : Appliquer des modifications en Mode arrêt avec modifier et continuer (Visual Basic)
 Vous pouvez utiliser Modifier & Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.  
   
-Pour connaître les limitations sur l’utilisation de modifier & Continuer pendant le débogage, consultez [pris en charge les modifications de Code (C# et Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Pour connaître les limitations sur l’utilisation de modifier & Continuer pendant le débogage, consultez [pris en charge les modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).
   
 ### <a name="to-edit-code-in-break-mode"></a>Pour modifier du code en mode Arrêt  
   
@@ -52,7 +52,7 @@ Pour connaître les limitations sur l’utilisation de modifier & Continuer pend
   
 2.  Apportez les modifications de code souhaitées et pris en charge.  
   
-     Pour plus d’informations, consultez [pris en charge les modifications de Code (C# et Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Pour plus d’informations, consultez [pris en charge les modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Si vous tentez d’effectuer une modification du code qui n’est pas autorisée par l’opération Modifier & Continuer, votre modification est soulignée d’un trait ondulé violet et une tâche s’affiche dans la liste des tâches. Il vous est impossible de continuer l'exécution du code sauf si vous annulez la modification de code non autorisée.  
@@ -62,5 +62,5 @@ Pour connaître les limitations sur l’utilisation de modifier & Continuer pend
      Votre code s'exécute désormais avec les modifications que vous avez appliquées dans le projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Prise en charge des modifications de Code (C# et Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Prise en charge des modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

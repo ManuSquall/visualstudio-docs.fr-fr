@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561445"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : Applications Windows Forms
 Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
@@ -63,7 +63,7 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
   
 3. Dans le menu **Déboguer**, cliquez sur **Démarrer**.  
   
-4. Débogage en utilisant les techniques présentées dans [principes fondamentaux du débogueur](../debugger/getting-started-with-the-debugger.md).  
+4. Débogage en utilisant les techniques présentées dans [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code managé](../debugger/debugging-managed-code.md)   

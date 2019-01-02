@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064870"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740099"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
@@ -37,7 +37,7 @@ Pour créer l'application, vous aurez besoin des éléments suivants :
 
 -   SQL Server Express LocalDB. Si vous n’avez pas SQL Server Express LocalDB, vous pouvez l’installer à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual C# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) rubrique avant de commencer cette procédure pas à pas.
+Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual C# et Visual Basic](../ide/quickstart-visual-basic-console.md) rubrique avant de commencer cette procédure pas à pas.
 
 ## <a name="set-up-the-sample-database"></a>Installer l'exemple de base de données
 

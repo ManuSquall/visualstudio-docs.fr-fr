@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178915"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561627"
 ---
 # <a name="debugging-web-applications"></a>Débogage d'applications Web
 Cette section décrit comment déboguer plusieurs types d'applications Web.  
@@ -41,6 +41,5 @@ Cette section décrit comment déboguer plusieurs types d'applications Web.
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)   
- [Débogage dans Visual Studio](../debugger/index.md)  
+ [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) [débogage dans Visual Studio](../debugger/index.md)  
  [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

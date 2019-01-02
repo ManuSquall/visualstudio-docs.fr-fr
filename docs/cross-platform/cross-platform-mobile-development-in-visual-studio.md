@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496140"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802798"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -36,7 +36,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[Installer Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[En savoir plus sur Xamarin dans Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Documentation sur le développement d’applications mobiles Xamarin](/xamarin/) |
-|[DevOps avec les applications Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[DevOps avec les applications Xamarin](/xamarin/tools/ci/devops/) |
 |[En savoir plus sur les applications Windows universelles dans Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[En savoir plus sur les similitudes entre Swift et C#](http://aka.ms/scposter) (download.microsoft.com)|
 
@@ -54,7 +54,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Concevoir un ensemble de pages qui s'affichent sur tous les appareils à l'aide de Xamarin.Forms
 
- Selon la complexité de la conception de vos applications, vous pouvez envisager de les créer en utilisant les modèles *Xamarin.Forms* du groupe de modèles de projet **Applications mobiles** . Xamarin.Forms est un kit de ressources d’IU qui vous permet de créer une interface utilisateur que vous pouvez partager sur Android et iOS, ainsi que sur Windows Phone.  Quand vous compilez une solution Xamarin.Forms, vous obtenez une application Android, une application iOS et une application Windows. Pour plus d’informations, consultez [En savoir plus sur le développement mobile avec Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) et la [documentation Xamarin.Forms](/xamarin/xamarin-forms/).
+ Selon la complexité de la conception de vos applications, vous pouvez envisager de les créer en utilisant les modèles *Xamarin.Forms* du groupe de modèles de projet **Applications mobiles** . Xamarin.Forms est un kit de ressources d’IU qui vous permet de créer une interface utilisateur que vous pouvez partager sur Android et iOS, ainsi que sur Windows Phone.  Quand vous compilez une solution Xamarin.Forms, vous obtenez une application Android, une application iOS et une application Windows. Pour plus d’informations, consultez [En savoir plus sur le développement mobile avec Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) et la [documentation Xamarin.Forms](/xamarin/xamarin-forms/).
 
 ####  <a name="ShareHTML"></a> Partager du code entre des appareils Android, iOS et Windows
 

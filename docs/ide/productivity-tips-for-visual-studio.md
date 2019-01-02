@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecaae21757c5a23eeb13858026d5f4fcfe3dab22
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067976"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684880"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -124,5 +124,5 @@ Vous pouvez rapidement accéder à une invite de commandes développeur ou à un
 
 - [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Procédure pas à pas : Créer une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Procédure pas à pas : Créer une application simple](../get-started/csharp/tutorial-wpf.md)
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)

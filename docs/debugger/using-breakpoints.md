@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068446"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425849"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
@@ -61,7 +60,7 @@ Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont aut
   
  ![L’exécution de point d’arrêt s’est arrêtée](../debugger/media/breakpointexecution.png "l’exécution du point d’arrêt")  
   
- Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : Utilisez la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
+ Lorsque le débogueur s’arrête au point d’arrêt, vous pouvez consulter l’état actuel de l’application, y compris les valeurs des variables et la pile des appels. Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md)  
 
 - Le point d’arrêt est un bouton bascule. Vous pouvez cliquer dessus, appuyez sur **F9**, ou utilisez **déboguer** > **point d’arrêt** pour supprimer ou insérez-la à nouveau.
   
@@ -89,7 +88,7 @@ Le point d’arrêt de la pile des appels s’affiche dans le **des points d’a
 
 Le débogueur s’arrête au niveau de l’instruction.  
 
-Pour plus d’informations sur la pile des appels, consultez [Comment : Utilisez la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md). 
+Pour plus d’informations sur la pile des appels, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md) 
 
 À visuellement trace des points d’arrêt pendant l’exécution de code, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -306,8 +305,9 @@ Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des
 
 Points de trace apparaissent sous forme de losanges rouge dans la marge gauche du code source et **des points d’arrêt** windows. 
   
-## <a name="see-also"></a>Voir aussi  
- [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)  
- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Premier aperçu de débogage](../debugger/debugger-feature-tour.md)  
- [Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Voir aussi
+
+- [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)
+- [Écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Premier aperçu de débogage](../debugger/debugger-feature-tour.md)
+- [Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio](../debugger/troubleshooting-breakpoints.md)

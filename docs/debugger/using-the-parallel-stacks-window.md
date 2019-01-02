@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389226"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562332"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>Afficher les threads et les tâches dans la fenêtre Piles parallèles
 
@@ -140,8 +140,7 @@ Si vous basculez vers un nouveau frame de pile, vous faites de cette méthode la
 ## <a name="see-also"></a>Voir aussi  
  [Commencer à déboguer une application multithread](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)   
- [Débogage du code managé](../debugger/debugging-managed-code.md)   
+ [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) [débogage du code managé](../debugger/debugging-managed-code.md)   
  [Programmation parallèle](/dotnet/standard/parallel-programming/index)   
  [Utiliser la fenêtre Tâches](../debugger/using-the-tasks-window.md)   
  [Classe Task](../extensibility/debugger/task-class-internal-members.md)

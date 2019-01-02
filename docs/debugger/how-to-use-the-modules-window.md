@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066780"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443923"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Afficher les DLL et les exécutables dans la fenêtre Modules (C#, C++, Visual Basic, F#)
  
@@ -42,7 +42,7 @@ Pendant le débogage de Visual Studio, le **Modules** fenêtre répertorie et af
   
 ## <a name="use-the-modules-window"></a>Utiliser la fenêtre Modules
 
-Pour ouvrir la fenêtre Modules, pendant que vous déboguez, sélectionnez **déboguer** > **Windows** > **Modules**. 
+Pour ouvrir la fenêtre Modules, pendant que vous déboguez, sélectionnez **déboguer** > **Windows** > **Modules** (ou appuyez sur **Ctrl + Alt + U** ). 
   
 Par défaut, la fenêtre **Modules** trie les modules dans l’ordre de chargement. Pour trier par n’importe quelle colonne de la fenêtre, sélectionnez l’en-tête en haut de la colonne.  
   

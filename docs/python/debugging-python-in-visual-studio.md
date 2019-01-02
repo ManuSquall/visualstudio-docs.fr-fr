@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561747"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -84,7 +84,7 @@ Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différent
 
 ### <a name="inspect-and-modify-values"></a>Inspecter et modifier les valeurs
 
-Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifier les valeurs des variables. Vous pouvez également utiliser la Fenêtre **Espion** pour surveiller des variables spécifiques, ainsi que des expressions personnalisées. (Pour obtenir des informations générales, consultez la section [Inspect Variables](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) (Inspecter des variables).)
+Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifier les valeurs des variables. Vous pouvez également utiliser la Fenêtre **Espion** pour surveiller des variables spécifiques, ainsi que des expressions personnalisées. (Pour obtenir des informations générales, consultez la section [Inspect Variables](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) (Inspecter des variables).)
 
 Pour visualiser une valeur à l’aide des **DataTips**, il vous suffit de positionner le pointeur de la souris sur une variable quelconque dans l’éditeur. Vous pouvez alors cliquer sur cette valeur si vous souhaitez la modifier :
 

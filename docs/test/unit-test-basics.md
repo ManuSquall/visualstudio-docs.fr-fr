@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053167"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740349"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -32,7 +32,7 @@ L’explorateur de tests peut également exécuter des infrastructures de tests 
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
-- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -257,7 +257,7 @@ Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Ex
 
 2.  Dans **l’explorateur de tests**, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.
 
-En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).
+En savoir plus sur le [débogage des tests unitaires](../debugger/debugger-feature-tour.md).
 
 **Q : Si j’utilise le TDD (développement piloté par les tests), comment générer du code à partir de mes tests ?**
 
