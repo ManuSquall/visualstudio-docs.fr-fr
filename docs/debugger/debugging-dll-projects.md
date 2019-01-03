@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561692"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Déboguer des DLL dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -102,7 +102,7 @@ Vous ne pouvez pas exécuter une DLL directement. Il doit être appelé par une 
 
 Pour déboguer une DLL, vous pouvez [démarrer le débogage à partir de l’application appelante](#vxtskdebuggingdllprojectsthecallingapplication), ou [déboguer à partir du projet DLL](how-to-debug-from-a-dll-project.md) en spécifiant son application appelante. Vous pouvez également utiliser le débogueur [fenêtre exécution](#vxtskdebuggingdllprojectstheimmediatewindow) pour évaluer des méthodes ou des fonctions DLL au moment du design, sans utiliser une application appelante.
 
-Pour plus d’informations, consultez [prise en main du débogueur](getting-started-with-the-debugger.md).
+Pour plus d’informations, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Démarrer le débogage à partir de l’application appelante
 
@@ -119,11 +119,11 @@ Pour déboguer une DLL à partir d’une application appelante, vous pouvez :
 
   ou  
 
-- Attacher à une application qui est déjà déployé et en cours d’exécution sur un ordinateur de test ou de production. Utilisez cette méthode pour les DLL sur les sites Web ou dans les applications web. Pour plus d’informations, consultez [Guide pratique pour attacher à un processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Attacher à une application qui est déjà déployé et en cours d’exécution sur un ordinateur de test ou de production. Utilisez cette méthode pour les DLL sur les sites Web ou dans les applications web. Pour plus d'informations, voir [Procédure : Attacher à un processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Avant de commencer le débogage de l’application appelante, définissez un point d’arrêt dans la DLL. Consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md). Lorsque le point d’arrêt de la DLL est atteint, vous pouvez parcourir le code, en observant l’action à chaque ligne. Pour plus d’informations, consultez [parcourir le code dans le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
   
-Pendant le débogage, vous pouvez utiliser la **Modules** fenêtre pour vérifier les DLL et *.exe* fichiers le chargement de l’application. Pour ouvrir le **Modules** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **Modules**. Pour plus d’informations, consultez [Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md). 
+Pendant le débogage, vous pouvez utiliser la **Modules** fenêtre pour vérifier les DLL et *.exe* fichiers le chargement de l’application. Pour ouvrir le **Modules** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **Modules**. Pour plus d'informations, voir [Procédure : Utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utiliser la fenêtre exécution  
 
@@ -158,7 +158,7 @@ Par exemple, pour tester une méthode nommée `Test` dans la classe `Class1`:
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Débogage en mode mixte  
 
-Vous pouvez écrire une application appelante pour une DLL en code managé ou natif. Si votre application native appelle une DLL managée et que vous souhaitez déboguer les deux, vous pouvez activer les débogueurs managés et natifs dans les propriétés du projet. Le processus exact varie selon que vous souhaitez démarrer le débogage à partir du projet de DLL ou le projet d’application appelant. Pour plus d’informations, consultez [Guide pratique pour déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md). 
+Vous pouvez écrire une application appelante pour une DLL en code managé ou natif. Si votre application native appelle une DLL managée et que vous souhaitez déboguer les deux, vous pouvez activer les débogueurs managés et natifs dans les propriétés du projet. Le processus exact varie selon que vous souhaitez démarrer le débogage à partir du projet de DLL ou le projet d’application appelant. Pour plus d'informations, voir [Procédure : Déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md). 
 
 Vous pouvez également déboguer une DLL native à partir d’un projet appelant managé. Pour plus d’informations, consultez [comment déboguer le code managé et natif](how-to-debug-managed-and-native-code.md). 
 

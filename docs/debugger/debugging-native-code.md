@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561968"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
-Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [présentation du débogueur](../debugger/getting-started-with-the-debugger.md).  
+Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour déboguer le code optimisé](../debugger/how-to-debug-optimized-code.md)  
+ [Guide pratique pour Déboguer du code optimisé](../debugger/how-to-debug-optimized-code.md)  
  Contient des conseils sur le débogage d’un code optimisé, en particulier sur les raisons pour lesquelles vous devez déboguer une version non optimisée de votre programme, sur les paramètres d’optimisation par défaut pour les configurations Debug et Release, ainsi que sur la recherche des bogues qui n’apparaissent que dans le code optimisé (activation de l’optimisation dans une configuration de build Debug).  
   
  [DebugBreak et __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -42,7 +42,7 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
  [Assertions C/C++](../debugger/c-cpp-assertions.md)  
  Décrit les instructions d'assertion, leur fonctionnement, les avantages liés à leur utilisation (interception des erreurs de logique, vérification des résultats d'une opération et test des conditions d'erreur), leur interaction avec `_DEBUG` et les types d'assertions pris en charge dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- [Guide pratique pour déboguer du code d’assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Guide pratique pour Déboguer du code assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
  Explique brièvement comment utiliser la fenêtre Code Machine pour afficher les instructions assembly et la fenêtre Registres pour afficher le contenu du Registre, et fournit des liens vers des rubriques relatives à ces fenêtres.  
   
  [Techniques de débogage de MFC](../debugger/mfc-debugging-techniques.md)  
@@ -57,11 +57,11 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)  
  Fournit des informations sur le débogage des applications COM et ActiveX, y compris sur les outils que vous pouvez utiliser pour le débogage COM et ActiveX.  
   
- [Guide pratique pour déboguer du code injecté](../debugger/how-to-debug-injected-code.md)  
+ [Guide pratique pour Déboguer du code injecté](../debugger/how-to-debug-injected-code.md)  
  Explique comment déboguer du code qui utilise des attributs. Les instructions concernent le mode d'activation de l'annotation de la source, le mode d'affichage du code injecté et le mode d'affichage du code machine au point d'exécution en cours.  
   
- [Procédure pas à pas : débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Décrit comment utiliser le **tâches parallèles** et **piles parallèles** outil windows pour déboguer une application parallèle.  
+ [Procédure pas à pas : Débogage d'une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Explique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Types de projets Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  

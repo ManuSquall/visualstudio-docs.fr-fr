@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562033"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Préparation du débogage : Types de projets Visual C++
 Cette section explique le débogage de types de projets de base, créés par les modèles de projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -73,7 +73,7 @@ Cette section explique le débogage de types de projets de base, créés par les
   
 2.  Dans le menu **Déboguer**, choisissez **Démarrer**.  
   
-3.  Débogage en utilisant les techniques présentées dans [principes fondamentaux du débogueur](../debugger/getting-started-with-the-debugger.md).  
+3.  Débogage en utilisant les techniques présentées dans [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Pour définir manuellement une configuration Debug  
   
@@ -111,7 +111,7 @@ Cette section explique le débogage de types de projets de base, créés par les
  [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)   
+ [Présentation du débogueur](../debugger/debugger-feature-tour.md)   
  [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Attachement à un ou plusieurs programmes en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)   

@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "39179477"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561890"
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
 
-Cette section décrit les problèmes de débogage courants et les techniques destinées aux applications managées ou aux applications écrites dans des langages qui ciblent le Common Language Runtime, tels que Visual Basic, C# et C++. Les techniques présentées ici sont d'un niveau élevé. Pour plus d’informations, consultez [l’utilisation du débogueur](../debugger/getting-started-with-the-debugger.md).
+Cette section décrit les problèmes de débogage courants et les techniques destinées aux applications managées ou aux applications écrites dans des langages qui ciblent le Common Language Runtime, tels que Visual Basic, C# et C++. Les techniques présentées ici sont d'un niveau élevé. [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>Dans cette section
 
 [Messages de diagnostic dans la fenêtre Sortie](../debugger/diagnostic-messages-in-the-output-window.md)  
-Décrit le <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace> classes, avec lequel vous pouvez écrire des messages d’exécution pour le **sortie** fenêtre. Ces classes contiennent des méthodes de sortie qui permettent la génération d'informations sans interrompre l'exécution et la génération d'informations avec interruption de l'exécution si une condition spécifique échoue.
+Décrit les classes <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>, avec lesquelles vous pouvez écrire des messages d'exécution dans la fenêtre **Sortie**. Ces classes contiennent des méthodes de sortie qui permettent la génération d'informations sans interrompre l'exécution et la génération d'informations avec interruption de l'exécution si une condition spécifique échoue.
 
 [Assertions dans du code managé](../debugger/assertions-in-managed-code.md)  
 Décrit des assertions en code managé, qui testent les conditions que vous spécifiez comme arguments aux méthodes `Assert`. De plus, cette rubrique fournit des exemples de code, des informations sur l’utilisation des méthodes de classe <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>, des considérations des versions Debug et Release de code, les effets secondaires, les arguments assert, la personnalisation du comportement d’assertion et les fichiers de configuration.
@@ -40,7 +40,7 @@ Décrit des assertions en code managé, qui testent les conditions que vous spé
 [Instructions Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 Décrit l'instruction `Stop`, qui propose une alternative à la définition d'un point d'arrêt. Un exemple de code, ainsi que les comparaisons entre les instructions `Stop` et `End` et les instructions `Stop` et `Assert` sont également fournis.
 
-[Procédure pas à pas : débogage d’un Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)  
+[Procédure pas à pas : débogage d’un formulaire Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
 Fournit des instructions étape par étape pour créer un Windows Form et le déboguer. Un Windows Form, composant standard d'une application Windows managée, est l'une des applications managées les plus courantes. Cette procédure pas à pas utilise Visual C# et Visual Basic, mais les techniques de création d'un formulaire Windows avec C++ sont généralement similaires.
 
 [Débogage de la méthode OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -50,7 +50,7 @@ Fournit des exemples de code pour vous permettre de déboguer la méthode `OnSta
 Présente les applications de débogage en mode mixte. Désigne toutes les applications qui combinent du code natif avec du code managé.
 
 [Erreur : le débogage est impossible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-Décrit un message d’erreur qui se produit si vous essayez de déboguer du code managé sur un [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], ou un système Windows NT qui a été démarré en mode débogage.
+Décrit le message d'erreur qui s'affiche si vous tentez de déboguer du code managé sur un système [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] ou Windows NT qui a été démarré en mode débogage.
 
 [Optimisation et débogage JIT](../debugger/jit-optimization-and-debugging.md)  
 Décrit les effets de l'optimisation JIT sur le débogage.
@@ -58,8 +58,8 @@ Décrit les effets de l'optimisation JIT sur le débogage.
 [Débogage LINQ et DLINQ](../debugger/debugging-linq.md)  
 Décrit les techniques de débogage des requêtes LINQ.
 
-[Procédure pas à pas : débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
-Décrit comment utiliser le **tâches parallèles** et **piles parallèles** outil windows pour déboguer une application parallèle.
+[Procédure pas à pas : Débogage d'une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
+Explique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle.
 
 ## <a name="related-sections"></a>Rubriques connexes
 
@@ -69,21 +69,21 @@ Décrit comment utiliser le **tâches parallèles** et **piles parallèles** out
 Décrit le traçage, qui vous permet de contrôler l'exécution de votre application lorsque celle-ci s'exécute, et l'instrumentation, qui implique de placer des instructions de traçage à des endroits stratégiques de votre code. Cette rubrique fournit également des liens vers une introduction à l'instrumentation et au traçage, aux commutateurs de trace, aux écouteurs de la trace, au code de traçage dans une application, à l'ajout d'instructions de traçage au code d'une application et à la compilation conditionnelle avec <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>.
 
 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
-Décrit une option de l’éditeur de liens qui ajoute <xref:System.Diagnostics.DebuggableAttribute> au code écrit avec C++. Cet attribut est nécessaire pour utiliser les fonctionnalités de débogage telles que l’attachement avec C++.
+Décrit une option de l'éditeur de liens qui ajoute <xref:System.Diagnostics.DebuggableAttribute> à du code écrit avec C++. Cet attribut est nécessaire pour utiliser les fonctionnalités de débogage telles que l’attachement avec C++.
 
-[Débogage des Applications Service Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
+[Débogage des applications de service Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
 Fournit des considérations pour le débogage d'applications de service Windows, y compris la configuration, l'attachement au processus, le débogage de code dans la méthode `OnStart` du service et de code dans la méthode Main, la définition de points d'arrêt, et l'utilisation du Gestionnaire de contrôle des services pour démarrer, arrêter, interrompre et continuer votre service.
 
 [Débogage et profilage](/dotnet/framework/debug-trace-profile/index)  
 Décrit le débogage des applications .NET Framework et les exigences de configuration.
 
-[Débogage de scripts et des Applications Web](../debugger/debugging-web-applications-and-script.md)  
+[Débogage de scripts et d'applications web](../debugger/debugging-web-applications-and-script.md)  
 Décrit les problèmes et techniques de débogage courants relatifs au débogage de scripts et d'applications Web.
 
-[Quelles sont les nouveautés du débogueur dans Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
+[Nouveautés du débogueur dans Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
 Description des nouvelles fonctionnalités de débogage ajoutées à cette mise en production de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-[Page d’accueil de débogage](../debugger/debugger-feature-tour.md)  
+[Débogage de la page d'accueil](../debugger/debugger-feature-tour.md)  
 Fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations présentées sont les suivantes : nouveautés du débogueur, paramètres et préparation, points d'arrêt, gestion des exceptions, fonctionnalité Modifier & Continuer, débogage de code managé, débogage de projets Visual C++, débogage COM et ActiveX, débogage de DLL, débogage SQL et les références relatives à l'interface utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
