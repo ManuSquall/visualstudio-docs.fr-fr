@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872653"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802609"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur l‘ensemble des cibles de rendu et des chaînes de permutation.  
   
 ## <a name="interpretation"></a>Interprétation  
- L'anticrénelage MSSA accroît la qualité visuelle en prélevant des échantillons à plusieurs endroits dans chaque pixel ; la proportion d'échantillons prélevés est proportionnelle au niveau de MSAA. Quand l'anticrénelage MSAA est désactivé, un seul échantillon est prélevé au centre du pixel. L'activation de l'anticrénelage MSAA dans votre application a un coût modeste mais palpable sur le plan des performances de rendu, mais sous certaines charges de travail ou sur certains GPU, il est possible d'en bénéficier sans pratiquement aucun impact.  
+ L'anticrénelage MSSA accroît la qualité visuelle en prélevant des échantillons à plusieurs endroits dans chaque pixel ; la proportion d'échantillons prélevés est proportionnelle au niveau de MSAA. Quand l'anticrénelage MSAA est désactivé, un seul échantillon est prélevé au centre du pixel. L’activation de l’anticrénelage MSAA dans votre application a un coût modeste mais palpable sur le plan des performances de rendu, mais sous certaines charges de travail ou sur certains GPU, il est possible d’en bénéficier sans pratiquement aucun impact.  
   
  Si l'anticrénelage MSAA est déjà activé dans votre application, les variantes MSAA inférieures indiquent le coût relatif en matière de performances occasionné par un niveau supérieur d'anticrénelage MSAA. En particulier, la variante MSAA 0x indique les performances relatives de votre application sans MSAA.  
   
@@ -45,7 +45,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
   
 - L'appareil prend en charge le nombre d'échantillons demandé (0, 2 ou 4) et la qualité d'échantillon (0) pour le format cible de rendu demandé (membre D3D11_TEXTURE2D_DESC::Format), ce qui est déterminé par `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Si les indicateurs D3D_BIND_SHADER_RESOUCE ou D3D11_BIND_UNORDERED_ACCESS sont définis pour le membre D3D11_TEXTURE2D_DESC::BindFlags, deux versions de la texture sont créées : dans la première, ces indicateurs sont effacés pour une utilisation en tant que cible de rendu ; dans l'autre, qui est une texture non MSAA, ces indicateurs sont laissés en l'état pour faire office de mémoire tampon de résolution pour la première version. Cela est nécessaire, car l'utilisation d'une texture MSAA en tant que ressource de nuanceur ou dans le cadre d'un accès arbitraire a peu de chances d'être valide. Par exemple, un nuanceur agissant sur cette texture générerait des résultats incorrects, car il s'attendrait à une texture non MSAA. Si la variante a créé la texture non MSAA secondaire, chaque fois que la cible de rendu MSAA est détachée du contexte de l'appareil, son contenu est résolu en texture non MSAA. De la même manière, chaque fois que la cible de rendu MSAA doit être liée en tant que ressource de nuanceur ou qu'elle est utilisée dans une vue de l'accès arbitraire, la texture non MSAA résolue est liée.  
+  Si les indicateurs D3D_BIND_SHADER_RESOUCE ou D3D11_BIND_UNORDERED_ACCESS sont définis pour le membre D3D11_TEXTURE2D_DESC::BindFlags, deux versions de la texture sont créées : dans la première, ces indicateurs sont effacés pour une utilisation en tant que cible de rendu ; dans l'autre, qui est une texture non MSAA, ces indicateurs sont laissés en l'état pour faire office de mémoire tampon de résolution pour la première version. Cela est nécessaire, car l'utilisation d'une texture MSAA en tant que ressource de nuanceur ou dans le cadre d'un accès arbitraire a peu de chances d'être valide. Par exemple, un nuanceur agissant sur cette texture générerait des résultats incorrects, car il s'attendrait à une texture non MSAA. Si la variante a créé la texture non MSAA secondaire, chaque fois que la cible de rendu MSAA est détachée du contexte de l'appareil, son contenu est résolu en texture non MSAA. De la même manière, chaque fois que la cible de rendu MSAA doit être liée en tant que ressource de nuanceur ou qu’elle est utilisée dans une vue de l’accès non ordonné, la texture non MSAA résolue est liée.  
   
   De même, ces variantes substituent les paramètres MSAA sur toutes les chaînes de permutation créées à l'aide de `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` et `ID3D11CreateDeviceAndSwapChain`.  
   

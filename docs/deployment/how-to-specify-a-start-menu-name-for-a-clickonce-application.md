@@ -1,5 +1,5 @@
 ---
-title: 'Comment : spécifier un nom de Menu Démarrer pour une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Spécifier un nom de Menu Démarrer pour une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bf265b2e3761ba1fd929e72e29f4c2c47cd449
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a7cf4f2b30079a76012acfe972ea0de0b9e0ea78
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592831"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Comment : spécifier un nom de menu Démarrer pour une application ClickOnce
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Procédure : Spécifier un nom de menu Démarrer pour une application ClickOnce
 Quand un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est installée pour une utilisation en ligne et hors connexion, une entrée est ajoutée à la **Démarrer** menu et le **Ajout / Suppression de programmes** liste. Par défaut, le nom complet est le même que le nom de l’assembly d’application, mais vous pouvez modifier le nom d’affichage en définissant **Product name** dans le **Options de publication** boîte de dialogue.  
   
  **Nom de produit** s’affichera sur le *publish.htm* page ; pour une application hors ligne installée, il sera le nom de l’entrée dans le **Démarrer** menu et il sera également le nom qui apparaît dans **Ajouter ou supprimer des programmes**.  
   
  **Nom de l’éditeur** apparaîtra sur la *publish.htm* page ci-dessus **Product name**, et pour une application hors ligne installée, il sera également le nom du dossier qui contient l’application icône dans le **Démarrer** menu.  
+
+ La référence le raccourci ou d’application du menu Démarrer est créée dans *%appdata%\Microsoft\Windows\Start Menu\Programs\\< nom de l’éditeur\>*. La référence de raccourci ou l’application a le même nom que le nom du produit.
   
  Vous pouvez définir le **Product name** et **nom de l’éditeur** propriétés dans le **Options de publication** boîte de dialogue, disponible sur le **publier** page de la **Concepteur de projet**.  
   
@@ -38,7 +40,7 @@ Quand un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
   
@@ -50,4 +52,4 @@ Quand un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
   
 ## <a name="see-also"></a>Voir aussi  
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

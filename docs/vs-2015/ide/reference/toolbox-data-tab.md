@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307649"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648559"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,22 +39,14 @@ Affiche des objets de données que vous pouvez ajouter à un formulaire et à de
   
 |Name|Description|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|Ajoute une instance d’un dataset typé ou non typé au formulaire ou composant. Quand vous faites glisser cet objet dans un concepteur, il affiche une boîte de dialogue qui permet de sélectionner une classe de dataset typée existante ou de spécifier que vous souhaitez créer un dataset vide et non typé. **Remarque :** N’utilisez pas l’objet <xref:System.Data.DataSet> de la **boîte à outils** pour créer un schéma et une classe de dataset typés. Pour plus d’informations, consultez [Créer et configurer des datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|<xref:System.Data.DataSet>|Ajoute une instance d’un dataset typé ou non typé au formulaire ou composant. Quand vous faites glisser cet objet dans un concepteur, il affiche une boîte de dialogue qui permet de sélectionner une classe de dataset typée existante ou de spécifier que vous souhaitez créer un dataset vide et non typé. **Remarque :**  Vous n’utilisez pas le <xref:System.Data.DataSet> de l’objet sur le **boîte à outils** pour créer un nouveau schéma de dataset typé et une classe. Pour plus d’informations, consultez [Créer et configurer des datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Offre un moyen puissant et souple d’afficher des données sous forme de tableau.|  
 |<xref:System.Windows.Forms.BindingSource>|Simplifie le processus de liaison des contrôles à une source de données sous-jacente.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Représente l'interface utilisateur de navigation et manipulation pour les contrôles d'un formulaire liés aux données.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédures pas à pas de données](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Procédures pas à pas relatives aux données](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Vue d’ensemble des Applications de données dans Visual Studio](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Connexion aux données dans Visual Studio](../../data-tools/connecting-to-data-in-visual-studio.md)   
- [Préparation de votre Application à recevoir des données](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Récupération de données dans votre Application](../../data-tools/fetching-data-into-your-application.md)   
+ [Préparation de votre application pour recevoir des données](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Lier des contrôles à des données dans Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modification des données dans votre Application](../../data-tools/editing-data-in-your-application.md)   
  [Validation des données](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Enregistrer des données](../../data-tools/saving-data.md)
-
-
-
