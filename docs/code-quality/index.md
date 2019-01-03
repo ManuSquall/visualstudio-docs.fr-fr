@@ -4,17 +4,16 @@ title: Analyse du code
 description: Découvrez comment utiliser Visual Studio 2017 pour analyser la qualité du code.
 ms.date: 12/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: douge
-ms.openlocfilehash: 3ea14057f084b892de3392f294f82c8c3304ba6b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c5a4d238c897b60258d87ed231d6d4cced26e476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936631"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Analyse du code dans Visual Studio
 
