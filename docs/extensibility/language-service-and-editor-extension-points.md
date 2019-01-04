@@ -1,9 +1,6 @@
 ---
 title: Service de langage et les Points d’Extension Éditeur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907960"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Points d’extension éditeur et le service de langage
 L’éditeur fournit des points d’extension que vous pouvez étendre en tant que parties de composant Managed Extensibility Framework (MEF), y compris la plupart des fonctionnalités de service de langage. Voici les catégories de point d’extension principal :  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associé à un ornement.  
   
   > [!NOTE]
-  >  Pour obtenir un exemple d’un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consultez la définition de HighlightWordTag dans [procédure pas à pas : mise en surbrillance le texte](../extensibility/walkthrough-highlighting-text.md).  
+  >  Pour obtenir un exemple d’un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consultez la définition de HighlightWordTag dans [procédure pas à pas : Mise en surbrillance de texte](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associées aux régions qui peuvent être développées ou réduites dans le mode plan.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Pour appliquer cette définition de format à une balise, référencer le nom que vous définissez dans l’attribut de nom de la classe (pas le nom d’affichage).  
   
 > [!NOTE]
->  Pour obtenir un exemple d’un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consultez la classe HighlightWordFormatDefinition dans [procédure pas à pas : mise en surbrillance le texte](../extensibility/walkthrough-highlighting-text.md).  
+>  Pour obtenir un exemple d’un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consultez la classe HighlightWordFormatDefinition dans [procédure pas à pas : Mise en surbrillance de texte](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Étendre des ornements  
  Ornements définissent des effets visuels qui peuvent être ajoutés au texte affiché dans un affichage de texte ou au texte afficher lui-même. Vous pouvez définir vos propres ornements comme n’importe quel type de <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: le nom de l’ornement.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: le classement de l’ornement en ce qui concerne les autres couches de l’ornement. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> définit quatre couches par défaut : sélection, mode plan, du signe insertion et texte.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: le classement de l’ornement en ce qui concerne les autres couches de l’ornement. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> définit quatre couches par défaut : Sélection, le mode plan, point d’insertion et de texte.  
   
   L’exemple suivant montre les attributs d’exportation sur une définition de couche d’ornement.  
   
@@ -546,11 +543,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Pour plus d’informations sur l’implémentation des sources d’IntelliSense, consultez les procédures suivantes :  
   
- [Procédure pas à pas : Info-bulles Info Express d’affichage](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procédure pas à pas : Afficher des info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Procédure pas à pas : Afficher l’aide de la Signature](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procédure pas à pas : afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implement-an-intellisense-controller"></a>Implémenter un contrôleur IntelliSense  
  Pour personnaliser un contrôleur, vous devez implémenter le <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> interface. En outre, vous devez implémenter un fournisseur de contrôleur avec les attributs suivants :  
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Pour plus d’informations sur l’utilisation des contrôleurs IntelliSense, consultez les procédures suivantes :  
   
- [Procédure pas à pas : Info-bulles Info Express d’affichage](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Procédure pas à pas : Afficher des info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

@@ -1,9 +1,6 @@
 ---
 title: Fusionner du code XML dans les fonctionnalités et de packages de manifestes | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914434"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Fusion de contenu XML dans les manifestes de fonctionnalités et de packages
   Fonctionnalités et les packages sont définis par [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers manifeste. Ces manifestes ajoutés au package sont une combinaison de données générées par les concepteurs et personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] les utilisateurs entrent dans le modèle de manifeste. Au moment de l’empaquetage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fusionne personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instructions avec fourni par le concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour former le package [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier manifeste. Les éléments semblables, avec les exceptions notées plus loin dans les Exceptions de fusion, sont fusionnés pour éviter [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erreurs de validation une fois que vous déployez les fichiers sur SharePoint, et pour rendre le manifeste de fichiers plus petits et plus efficace.  
   
 ## <a name="modify-the-manifests"></a>Modifier les manifestes
- Vous ne peut pas modifier directement les fichiers manifestes du package jusqu'à ce que vous désactiviez les concepteurs de fonctionnalité ou un package. Toutefois, vous pouvez ajouter manuellement personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments pour le modèle de manifeste via les concepteurs de fonctionnalités et de packages ou [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éditeur. Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) et [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+ Vous ne peut pas modifier directement les fichiers manifestes du package jusqu'à ce que vous désactiviez les concepteurs de fonctionnalité ou un package. Toutefois, vous pouvez ajouter manuellement personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éléments pour le modèle de manifeste via les concepteurs de fonctionnalités et de packages ou [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éditeur. Pour plus d'informations, voir [Procédure : Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) et [Comment : Personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Processus de fusion de manifeste de fonctionnalité et package
  Lors de la combinaison d’éléments personnalisés avec des éléments fournis par le concepteur, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise le processus suivant. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vérifie si chaque élément a une valeur de clé unique. Si un élément n’a aucune valeur de clé unique, elle est ajoutée au fichier de manifeste du package. De même, les éléments qui ont plusieurs clés ne peut pas être fusionnées. Par conséquent, ils sont ajoutés au fichier manifeste.  
@@ -84,4 +81,3 @@ ms.locfileid: "37119176"
 ## <a name="see-also"></a>Voir aussi
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

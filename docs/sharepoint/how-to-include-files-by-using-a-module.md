@@ -1,13 +1,8 @@
 ---
-title: 'Comment : inclure des fichiers à l’aide d’un Module | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Inclure des fichiers à l’aide d’un Module | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923491"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Comment : inclure des fichiers à l’aide d’un module
+# <a name="how-to-include-files-by-using-a-module"></a>Procédure : Inclure des fichiers à l’aide d’un module
   *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules) sont des conteneurs qui vous permettent de déployer des fichiers tels que les pages maîtres ASPX, des fichiers texte ou des images sur SharePoint.  
   
  Vous pouvez choisir de déployer un fichier dans une bibliothèque de documents ou dans un fichier normal (par exemple, default.aspx) en dehors d’une bibliothèque de documents. Pour ajouter un fichier à une bibliothèque de documents, spécifiez `Type="GhostableInLibrary"` en tant qu’attribut dans le **fichier** élément. Ce paramètre indique à SharePoint pour créer un élément de liste à associer à votre fichier lorsqu’il est ajouté à la bibliothèque. Pour déployer un fichier en dehors d’une bibliothèque de documents, spécifiez `Type="Ghostable"` ou omettez simplement le **Type** attribut.  
@@ -71,4 +66,3 @@ ms.locfileid: "37118864"
 ## <a name="see-also"></a>Voir aussi
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

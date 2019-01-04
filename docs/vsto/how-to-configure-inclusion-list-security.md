@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Configurer la sécurité de liste d’inclusion'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895571"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procédure : Configurer la sécurité de liste d’inclusion
   Si vous disposez des autorisations d’administrateur, vous pouvez configurer le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer les solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [solutions Office faire confiance à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -213,5 +210,3 @@ ms.locfileid: "53647733"
 ## <a name="see-also"></a>Voir aussi  
  [Approuver des solutions Office à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)  
-  
-  

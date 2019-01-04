@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble de la couleur et de police | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966489"
 ---
 # <a name="font-and-color-overview"></a>Vue d’ensemble de police et de couleur
 Cette rubrique décrit les paramètres de police et la couleur du texte dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Il présente également les concepts des catégories et des éléments d’affichage, et il explique comment les VSPackages et l’éditeur principal utilisent des attributs de texte.  
   
 ## <a name="the-fonts-and-colors-property-page"></a>Les polices et couleurs propriété page  
- Vous pouvez gérer les attributs du texte affiché dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) via la **polices et couleurs** page de propriétés. Pour rechercher le **polices et couleurs** page de propriété, sur le **outils** menu, cliquez sur **Options**. Développez **environnement**, puis cliquez sur **polices et couleurs**.  
+ Vous pouvez gérer les attributs du texte affiché dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) via la **polices et couleurs** page de propriétés. Pour rechercher le **polices et couleurs** page de propriété, sur le **outils** menu, cliquez sur **Options**. Développez l’option **Environnement**, puis cliquez sur **Polices et couleurs**.  
   
 ## <a name="categories-and-display-items"></a>Catégories et les éléments d’affichage  
  Polices et couleurs sont organisés en **catégories** et **éléments affichés**.  
@@ -74,7 +71,7 @@ Cette rubrique décrit les paramètres de police et la couleur du texte dans le 
   
 - La possibilité pour les deux utiliser des éléments d’affichage intégrées à partir de la **texte EditorCategory** et d’étendre les.  
   
-   Pour plus d’informations, consultez [Comment : utiliser des éléments coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
+   Pour plus d'informations, voir [Procédure : Utiliser des éléments coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
   
 - Persistance automatique du courant de l’état de ces deux intégrés et personnalisé afficher les éléments avec le **éditeur de texte** catégorie.  
   

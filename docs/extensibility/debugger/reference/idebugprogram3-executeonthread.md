@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb2650fc2c001e57de7b1820cff238c8963e8cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889434"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Exécute le programme de débogueur. Le thread est retourné pour fournir les informations du débogueur threads sur lesquels l’utilisateur consulte lorsque l’exécution du programme.  
@@ -46,9 +43,9 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>Notes  
  Il existe trois façons différentes qu’un débogueur peut reprendre l’exécution après l’arrêt :  
   
-- Exécuter : Annuler toutes les étapes précédentes et exécuter jusqu'à ce que le point d’arrêt suivant, et ainsi de suite.  
+- Exécutez : Annuler toutes les étapes précédentes et exécuter jusqu'à ce que le point d’arrêt suivant, et ainsi de suite.  
   
-- Étape : Annuler une étape quelconque ancien et exécuter jusqu'à la fin de la nouvelle étape.  
+- Étape : Annulez toute étape ancien et exécuter jusqu'à la fin de la nouvelle étape.  
   
 - Continuer : Exécutez à nouveau et laisser une étape quelconque ancien active.  
   

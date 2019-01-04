@@ -1,9 +1,6 @@
 ---
 title: Entrées de Registre pour les Compléments VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909110"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entrées de Registre pour les Compléments VSTO
   Vous devez créer un ensemble spécifique d'entrées de Registre quand vous déployez des compléments VSTO créés à l'aide de Visual Studio. Ces entrées de Registre fournissent des informations qui permettent à l'application Microsoft Office de découvrir et de charger le complément VSTO.  
@@ -78,8 +75,8 @@ ms.locfileid: "49881779"
 |-----------|----------|-----------|  
 |**Description**|REG_SZ|Obligatoire. Brève description du complément VSTO.<br /><br /> Cette description s'affiche quand l'utilisateur sélectionne le complément VSTO dans le volet **Compléments** de la boîte de dialogue **Options** de l'application Microsoft Office.|  
 |**FriendlyName**|REG_SZ|Obligatoire. Nom descriptif du complément VSTO qui s'affiche dans la boîte de dialogue **Compléments COM** de l'application Microsoft Office. La valeur par défaut est l'ID du complément VSTO.|  
-|**LoadBehavior**|REG_DWORD|Obligatoire. Valeur qui spécifie le moment où l'application tente de charger le complément VSTO, ainsi que l'état actuel du complément VSTO (chargé ou non chargé).<br /><br /> Par défaut, cette entrée a la valeur 3, ce qui indique que le complément VSTO est chargé au démarrage. Pour plus d’informations, consultez [LoadBehavior values](#LoadBehavior). **Remarque :** si un utilisateur désactive le complément, VSTO, cette action modifie **LoadBehavior** valeur dans le **HKEY_CURRENT_USER** ruche du Registre. Pour chaque utilisateur, la valeur de la **LoadBehavior** dans la ruche HKEY_CURRENT_USER remplace la valeur par défaut **LoadBehavior** définies dans le **HKEY_LOCAL_MACHINE** hive.|  
-|**Manifest**|REG_SZ|Obligatoire. Chemin d'accès complet du manifeste de déploiement du complément VSTO. Le chemin d'accès peut être un emplacement sur l'ordinateur local, un partage réseau (UNC) ou un serveur web (HTTP).<br /><br /> Si vous utilisez Windows Installer pour déployer la solution, vous devez ajouter le préfixe **file:///** au chemin d'accès du **manifeste** . Vous devez également ajouter la chaîne  **&#124;vstolocal** (autrement dit, le caractère barre verticale **&#124;** suivie **vstolocal**) à la fin de ce chemin d’accès. Cela permet de garantir que votre solution est chargée à partir du dossier d'installation, et non à partir du cache ClickOnce. Pour plus d’informations, consultez [déployer une solution Office à l’aide du programme d’installation de Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Remarque :** lorsque vous générez un VSTO Add-in sur l’ordinateur de développement, Visual Studio ajoute automatiquement le  **&#124;vstolocal** chaîne pour cette entrée de Registre.|  
+|**LoadBehavior**|REG_DWORD|Obligatoire. Valeur qui spécifie le moment où l'application tente de charger le complément VSTO, ainsi que l'état actuel du complément VSTO (chargé ou non chargé).<br /><br /> Par défaut, cette entrée a la valeur 3, ce qui indique que le complément VSTO est chargé au démarrage. Pour plus d’informations, consultez [LoadBehavior values](#LoadBehavior). **Remarque :**  Si un utilisateur désactive le complément, VSTO, cette action modifie **LoadBehavior** valeur dans le **HKEY_CURRENT_USER** ruche du Registre. Pour chaque utilisateur, la valeur de la **LoadBehavior** dans la ruche HKEY_CURRENT_USER remplace la valeur par défaut **LoadBehavior** définies dans le **HKEY_LOCAL_MACHINE** hive.|  
+|**Manifest**|REG_SZ|Obligatoire. Chemin d'accès complet du manifeste de déploiement du complément VSTO. Le chemin d'accès peut être un emplacement sur l'ordinateur local, un partage réseau (UNC) ou un serveur web (HTTP).<br /><br /> Si vous utilisez Windows Installer pour déployer la solution, vous devez ajouter le préfixe **file:///** au chemin d'accès du **manifeste** . Vous devez également ajouter la chaîne  **&#124;vstolocal** (autrement dit, le caractère barre verticale **&#124;** suivie **vstolocal**) à la fin de ce chemin d’accès. Cela permet de garantir que votre solution est chargée à partir du dossier d'installation, et non à partir du cache ClickOnce. Pour plus d’informations, consultez [déployer une solution Office à l’aide du programme d’installation de Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Remarque :**  Lorsque vous générez un VSTO Add-in sur l’ordinateur de développement, Visual Studio ajoute automatiquement le  **&#124;vstolocal** chaîne pour cette entrée de Registre.|  
   
 ###  <a name="OutlookEntries"></a> Entrées de Registre des zones de formulaire Outlook  
  Si vous créez une zone de formulaire personnalisée dans un complément VSTO pour Outlook, des entrées de Registre supplémentaires sont utilisées pour inscrire la zone de formulaire dans Outlook. Ces entrées sont créées sous une autre clé de Registre pour chaque classe de message prise en charge par la zone de formulaire. Ces clés de Registre sont à l’emplacement suivant, où *racine* est **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE**.  
@@ -88,7 +85,7 @@ ms.locfileid: "49881779"
   
  Comme pour les autres entrées de Registre partagées par l'ensemble des compléments VSTO, Visual Studio crée les entrées de Registre de zones de formulaire sur l'ordinateur de développement au moment où vous générez votre projet. Si vous utilisez ClickOnce pour déployer votre complément, VSTO, les entrées de Registre sont automatiquement créées sur l’ordinateur de l’utilisateur final. Si vous utilisez Windows Installer pour déployer votre complément, VSTO, vous devez configurer le projet InstallShield Limited Edition pour créer les entrées de Registre sur l’ordinateur de l’utilisateur final.  
   
- Pour plus d’informations sur les entrées de Registre des zones de formulaire, consultez [spécifier l’emplacement d’une zone de formulaire dans un formulaire personnalisé](http://msdn.microsoft.com/library/office/ff868998.aspx). Pour plus d’informations sur les zones de formulaire Outlook, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).  
+ Pour plus d’informations sur les entrées de Registre des zones de formulaire, consultez [spécifier l’emplacement d’une zone de formulaire dans un formulaire personnalisé](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Pour plus d’informations sur les zones de formulaire Outlook, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Valeurs de LoadBehavior  
  Le **LoadBehavior** entrée sous le *racine*\Software\Microsoft\Office\\*nom de l’application*\Addins\\*complément ID* clé contient une combinaison au niveau du bit des valeurs qui spécifient le comportement d’exécution de la macro complémentaire VSTO. Le bit d'ordre le plus bas (valeurs 0 et 1) indique si le complément VSTO est actuellement chargé ou non chargé. Les autres bits indiquent le moment où l'application tente de charger le complément VSTO.  
@@ -112,5 +109,3 @@ ms.locfileid: "49881779"
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
-  
-  

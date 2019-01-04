@@ -2,7 +2,6 @@
 title: Extraits XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ddb1dd64e5d972c23a032cb1eb752515d92ab6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5572e020dba08c7a417c8a7af40f8d20083198a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928313"
 ---
 # <a name="xml-snippets"></a>extraits XML
 
@@ -39,19 +38,19 @@ L’éditeur XML comprend de nombreux extraits couvrant certaines tâches couran
 </xs:element>
 ```
 
- Vous pouvez insérer des extraits de deux manières. Le **insérer un extrait** commande insère l’extrait XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Les deux commandes sont disponibles à partir de la **IntelliSense** sous-menu sous le **modifier** menu, ou dans le menu contextuel de l’éditeur.
+ Vous pouvez insérer des extraits de deux manières. Le **insérer un extrait** commande insère l’extrait de code XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Les deux commandes sont disponibles à partir de la **IntelliSense** sous-menu sous le **modifier** menu, ou dans le menu contextuel de l’éditeur.
 
- Pour plus d’informations, consultez [Comment : des extraits de code XML de l’utilisation](../xml-tools/how-to-use-xml-snippets.md).
+ Pour plus d'informations, voir [Procédure : Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md).
 
 ## <a name="schema-generated-xml-snippets"></a>Extraits XML générés par schéma
  L'éditeur XML permet également de générer un extrait XML à partir d'un schéma XML. Cette fonctionnalité permet de remplir un élément avec des éléments XML générés d’après les informations de schéma de cet élément.
 
- Pour plus d’informations, consultez [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
+ Pour plus d'informations, voir [Procédure : Générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Créer de nouveaux extraits XML
  Outre les extraits de code sont inclus avec [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio par défaut, vous pouvez également créer et utiliser vos propres extraits XML.
 
- Pour plus d’informations, consultez [Comment : des extraits de code XML de créer](../xml-tools/how-to-create-xml-snippets.md).
+ Pour plus d'informations, voir [Procédure : Créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md).
 
 ## <a name="see-also"></a>Voir aussi
 

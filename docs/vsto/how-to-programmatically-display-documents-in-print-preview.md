@@ -1,9 +1,6 @@
 ---
-title: 'Comment : afficher des documents par programmation dans l’aperçu avant impression'
-ms.custom: ''
+title: 'Procédure : Afficher des documents par programmation dans l’aperçu avant impression'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a2ab538707156826be3a31252cde16e67edff9c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 66a21f2def806dc7800caa01d26a989f9a4cf8e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891937"
 ---
-# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Comment : afficher des documents par programmation dans l’aperçu avant impression
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>Procédure : Afficher des documents par programmation dans l’aperçu avant impression
   Si votre solution génère un rapport, vous pouvez afficher ce dernier pour l’utilisateur en mode Aperçu avant impression.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -61,8 +58,6 @@ ms.locfileid: "35257223"
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : imprimer des documents par programmation](../vsto/how-to-programmatically-print-documents.md)   
- [Comment : ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Comment : créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)  
-  
-  
+ [Guide pratique pour Imprimer des documents par programmation](../vsto/how-to-programmatically-print-documents.md)   
+ [Guide pratique pour Ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Guide pratique pour Créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)  

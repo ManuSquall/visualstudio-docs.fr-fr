@@ -2,7 +2,6 @@
 title: Validation de documents XML dans l’éditeur XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899728"
 ---
 # <a name="xml-document-validation"></a>Validation de documents XML
 
@@ -23,7 +22,7 @@ L’éditeur XML vérifie la syntaxe XML 1.0 et effectue une validation des don
 
  Les schémas utilisés pour la validation sont recherchés en fonction de la comparaison du `targetNamespace` d'un schéma compilé à la déclaration xmlns de l'élément. Les schémas compilés sont chargés à partir d'un des emplacements suivants, répertoriés par ordre de priorité :
 
--   Nom de fichier spécifié dans le **schémas** champ du document **propriétés** fenêtre.
+-   À partir du nom de fichier spécifié dans le **schémas** champ du document **propriétés** fenêtre.
 
 -   Une DTD ou un schéma inline
 

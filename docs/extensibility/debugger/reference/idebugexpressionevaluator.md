@@ -1,9 +1,6 @@
 ---
-title: IDebugExpressionEvaluator | Documents Microsoft
-ms.custom: ''
+title: IDebugExpressionEvaluator | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator
@@ -15,16 +12,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a4b7061b5de50162bd04e033a983987ab4f35f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5b66c13b202e4f0b4838565f4ee5816f0dbdeb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846358"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Cette interface représente l’évaluateur d’expression.  
   
@@ -34,11 +31,11 @@ ms.locfileid: "31117460"
 IDebugExpressionEvaluator : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  L’évaluateur d’expression doit implémenter cette interface.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Pour obtenir cette interface, l’évaluateur d’expression par le biais d’instancier le `CoCreateInstance` méthode à l’aide de l’ID de classe (CLSID) de l’évaluateur. Consultez l’exemple.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Pour obtenir cette interface, instanciez l’évaluateur d’expression via la `CoCreateInstance` méthode à l’aide de l’ID de classe (CLSID) de l’évaluateur. Consultez l’exemple.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugExpressionEvaluator`.  
@@ -46,25 +43,25 @@ IDebugExpressionEvaluator : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[Analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Convertit une chaîne d’expression en une expression analysée.|  
-|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Obtient les variables locales, arguments et autres propriétés d’une méthode.|  
+|[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Obtient les variables locales, les arguments et les autres propriétés d’une méthode.|  
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Convertit un emplacement de la méthode et le décalage en une adresse mémoire.|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Détermine la langue à utiliser pour créer des résultats imprimables.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Définit la racine du Registre. Utilisé pour le débogage côte-à-côte.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Définit la racine du Registre. Utilisé pour le débogage côte à côte.|  
   
 ## <a name="remarks"></a>Notes  
- En général, le moteur de débogage (DE) instancie l’évaluateur d’expression (EE) suite à un appel à [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Car le DE connaît la langue et le fournisseur de l’il souhaite utiliser Java EE, le D’obtient CLSID du EE à partir du Registre (la [programmes d’assistance du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) fonction, `GetEEMetric`, permet de cette récupération).  
+ En général, le moteur de débogage (dé) instancie l’évaluateur d’expression (EE) suite à un appel à [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Car le DE sait que la langue et le fournisseur de l’il souhaite utiliser Java EE, l’Allemagne obtient CLSID du EE à partir du Registre (la [aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) (fonction), `GetEEMetric`, permet de cette récupération).  
   
- Une fois le EE est instancié, le D’appelle [analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour analyser l’expression et les stocker dans un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objet. Une version ultérieure, un appel à [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) évalue l’expression.  
+ Une fois que le EE est instancié, l’Allemagne appelle [analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour analyser l’expression et le stocker dans un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objet. Plus tard, un appel à [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) évalue l’expression.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment instancier l’évaluateur d’expression donné d’un fournisseur de symboles et une adresse dans le code source. Cet exemple utilise une fonction, `GetEEMetric`, à partir de la [programmes d’assistance du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) library, dbgmetric.lib.  
+ Cet exemple montre comment instancier l’évaluateur d’expression étant donné un fournisseur de symboles et une adresse dans le code source. Cet exemple utilise une fonction, `GetEEMetric`, à partir de la [aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) library, dbgmetric.lib.  
   
 ```cpp  
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,  

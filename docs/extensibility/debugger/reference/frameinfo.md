@@ -1,9 +1,6 @@
 ---
 title: FRAMEINFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FRAMEINFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf77548136b941a4895e300e25612411611645dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958863"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Décrit un frame de pile.  
@@ -28,7 +25,7 @@ Décrit un frame de pile.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct tagFRAMEINFO {   
+typedef struct tagFRAMEINFO {   
    FRAMEINFO_FLAGS    m_dwValidFields;  
    BSTR               m_bstrFuncName;  
    BSTR               m_bstrReturnType;  
@@ -46,7 +43,7 @@ typedef struct tagFRAMEINFO {
 ```  
   
 ```csharp  
-public struct FRAMEINFO {   
+public struct FRAMEINFO {   
    public uint              m_dwValidFields;  
    public string            m_bstrFuncName;  
    public string            m_bstrReturnType;  
@@ -106,12 +103,12 @@ public struct FRAMEINFO {
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) méthode doit être renseigné. Cette structure est également contenue dans une liste qui est contenue dans le [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

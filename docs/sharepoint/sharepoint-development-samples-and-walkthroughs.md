@@ -1,13 +1,8 @@
 ---
 title: Exemples de développement SharePoint et des procédures pas à pas | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892518"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Procédures pas à pas et des exemples de développement SharePoint
   Cette section contient des exemples d’applications, exemple de code et procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour générer des solutions SharePoint.  
@@ -39,4 +34,3 @@ ms.locfileid: "37118871"
   
 ## <a name="see-also"></a>Voir aussi
  [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)  
-  

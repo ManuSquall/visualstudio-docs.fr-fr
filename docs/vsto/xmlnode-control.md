@@ -1,9 +1,6 @@
 ---
 title: XMLNode (contrôle)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f83d829ac5067d751cc035ac83c0fb3397178658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927439"
 ---
 # <a name="xmlnode-control"></a>XMLNode (contrôle)
   **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.  
@@ -32,13 +29,13 @@ ms.locfileid: "35258887"
  Le <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle peut être supprimé uniquement en supprimant le mappage d’élément dans Word.  
   
 ## <a name="bind-data-to-the-control"></a>Lier des données au contrôle  
- Un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle prend en charge la liaison de données simple. Le nœud XML doit être lié à une source de données à l’aide de la <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propriété. Si les données du DataSet lié sont mis à jour, le <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle reflète les modifications.  
+ Un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle prend en charge la liaison de données simple. Le nœud XML doit être lié à une source de données à l’aide de la <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propriété. Si les données du jeu de données lié sont mises à jour, le contrôle <xref:Microsoft.Office.Tools.Word.XMLNode> reflète les changements apportés.  
   
 ## <a name="formatting"></a>Mise en forme  
  Mise en forme qui peut être appliqué à un <xref:Microsoft.Office.Interop.Word.XMLNode> objet peut être appliqué à un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle. Cela inclut les polices, des styles de soulignement et des styles de caractère.  
   
 ## <a name="events"></a>Événements  
- Les événements suivants sont disponibles pour le contrôle <xref:Microsoft.Office.Tools.Word.XMLNode> :  
+ Les événements suivants sont disponibles pour le contrôle <xref:Microsoft.Office.Tools.Word.XMLNode> :  
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>  
   
@@ -84,8 +81,6 @@ ms.locfileid: "35258887"
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNodes, contrôle](../vsto/xmlnodes-control.md)   
- [Comment : ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [Comment : mapper des schémas à des documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Guide pratique pour Ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
+ [Guide pratique pour Mapper des schémas à des documents Word dans Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

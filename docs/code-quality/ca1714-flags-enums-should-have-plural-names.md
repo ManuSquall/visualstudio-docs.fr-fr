@@ -1,8 +1,7 @@
 ---
-title: "CA1714 : Les énumérations d'indicateurs doivent avoir des noms au pluriel"
+title: 'CA1714 : Énumérations d’indicateurs doivent avoir des noms au pluriel'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc24a758d5c3c124267e4c967c6eb4afd1364cc2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf78041d61da991804a4dcdb0f924dc4a5f489e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881811"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714 : Les énumérations d'indicateurs doivent avoir des noms au pluriel
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714 : Énumérations d’indicateurs doivent avoir des noms au pluriel
 
 |||
 |-|-|
@@ -47,9 +46,9 @@ ms.locfileid: "49871548"
  Il est possible de supprimer une violation si le nom est un mot au pluriel mais ne pas se termine sans de ». Par exemple, si l’énumération de plusieurs jours qui a été décrite ont été précédemment nommée « DaysOfTheWeek », cela risque de violer la logique de la règle, mais pas son intention. Ces violations doivent être supprimées.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027 : Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217 : Ne pas marquer les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

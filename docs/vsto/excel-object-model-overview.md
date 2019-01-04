@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble du modèle objet Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821767"
 ---
 # <a name="excel-object-model-overview"></a>Vue d’ensemble du modèle d’objet Excel
   Pour développer des solutions qui utilisent Microsoft Office Excel, vous pouvez interagir avec les objets fournis par le modèle objet Excel. Cette rubrique présente les objets les plus importants :  
@@ -123,5 +120,3 @@ ms.locfileid: "53647523"
 |[Travailler avec des plages](../vsto/working-with-ranges.md)|Fournit des exemples montrant comment effectuer des tâches courantes avec des plages.|  
 |[Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)|Fournit des exemples montrant comment effectuer des tâches courantes avec des feuilles de calcul.|  
 |[Travailler avec des classeurs](../vsto/working-with-workbooks.md)|Fournit des exemples montrant comment effectuer des tâches courantes avec des classeurs.|  
-  
-  

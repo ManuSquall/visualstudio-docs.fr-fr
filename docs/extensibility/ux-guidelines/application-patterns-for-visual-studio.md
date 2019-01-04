@@ -1,9 +1,6 @@
 ---
 title: Modèles d’application pour Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898570"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interactions de la fenêtre  
@@ -184,17 +181,17 @@ Il existe plusieurs types de base différents éditeurs de document et chacun po
 
 -   **Éditeur de texte :** éditeur de code, les fichiers journaux  
 
--   **Aire de conception :** formulaires Windows concepteur, de WPF forms  
+-   **Aire de conception :** Formulaires de Windows concepteur, WPF forms  
 
--   **Éditeur de boîte de dialogue-style :** Concepteur de manifeste, propriétés du projet  
+-   **Éditeur de style de la boîte de dialogue :** Concepteur de manifeste, propriétés du projet  
 
 -   **Générateur de modèles :** Concepteur de workflow, codemap, diagramme d’architecture, progression  
 
 Il existe également plusieurs types non éditeur qui utilisent le document correctement. Pendant qu’ils ne modifiez pas les documents eux-mêmes, elles doivent suivre des interactions standard pour les fenêtres de document.  
 
--   **Rapports :** IntelliTrace de rapports, rapports de Hyper-V, le rapport de profileur  
+-   **Rapports :** Rapport d’IntelliTrace, rapport de Hyper-V, le rapport de profileur  
 
--   **Tableau de bord :** Hub de diagnostic  
+-   **Tableau de bord :** Concentrateur de diagnostic  
 
 #### <a name="text-based-editors"></a>Éditeurs de texte  
 
@@ -401,7 +398,7 @@ La boîte de dialogue doit inclure un bouton de contrôle par défaut. Pour dét
 
 Évitez de choisir une action destructrice définitivement pour la commande par défaut. Si une commande de ce type est présente, choisissez une commande plus sûre en tant que la valeur par défaut.  
 
-#### <a name="access-keys"></a>Clés d’accès  
+#### <a name="access-keys"></a>Touches d’accès rapide  
 N’utilisez pas les clés d’accès de **OK**, **Annuler**, ou **aide** boutons. Ces boutons sont mappés aux touches de raccourci par défaut :  
 
 | Nom du bouton | Raccourci clavier |  
@@ -427,9 +424,9 @@ Présente des avantages et inconvénients des différentes méthodes de superpos
 
 | Mécanisme de commutation | Avantages et l’utilisation appropriée | Utilisation inappropriée et des inconvénients |  
 | --- | --- | --- |  
-| Contrôle Tab | Regrouper logiquement des pages de la boîte de dialogue dans les ensembles liés<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent dans une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Onglet étiquettes doivent être courts : un ou deux mots qui peuvent identifier facilement le contenu<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **Explorateur de fichiers &gt; propriétés d’un élément** | Étiquettes courts descriptifs peut s’avérer<br /><br />En règle générale n’évolue pas au-delà de cinq onglets dans une boîte de dialogue<br /><br />Inapproprié si vous avez trop d’onglets pour une ligne (utilisez une technique alternative superposition)<br /><br />Pas extensible. |  
-| Navigation avec barre latérale | Périphérique de commutation simple pouvant s’adapter à plusieurs catégories à onglets<br /><br />Liste plate de catégories (aucune hiérarchie)<br /><br />Extensible<br /><br />Exemple : **personnaliser... &gt; Ajouter des commandes** | Pas un bon usage d’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut être mieux adaptée à une liste déroulante. |  
-| Contrôle Tree | Permet de catégories illimités<br /><br />Permet le regroupement et/ou de la hiérarchie de catégories<br /><br />Extensible<br /><br />Exemple : **outils &gt; Options** | Hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessive<br /><br />Visual Studio a un overabundance de vues de l’arborescence |  
+| Contrôle Tab | Regrouper logiquement des pages de la boîte de dialogue dans les ensembles liés<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent dans une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Onglet étiquettes doivent être courts : un ou deux mots qui peuvent identifier facilement le contenu<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **Explorateur de fichiers &gt; propriétés d’un élément** | Étiquettes courts descriptifs peut s’avérer<br /><br />En règle générale n’évolue pas au-delà de cinq onglets dans une boîte de dialogue<br /><br />Inapproprié si vous avez trop d’onglets pour une ligne (utilisez une technique alternative superposition)<br /><br />Pas extensible. |  
+| Navigation avec barre latérale | Périphérique de commutation simple pouvant s’adapter à plusieurs catégories à onglets<br /><br />Liste plate de catégories (aucune hiérarchie)<br /><br />Extensible<br /><br />Exemple : **Personnaliser... &gt; Ajouter des commandes** | Pas un bon usage d’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut être mieux adaptée à une liste déroulante. |  
+| Contrôle Tree | Permet de catégories illimités<br /><br />Permet le regroupement et/ou de la hiérarchie de catégories<br /><br />Extensible<br /><br />Exemple : **Outils &gt; Options** | Hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessive<br /><br />Visual Studio a un overabundance de vues de l’arborescence |  
 | Assistant | Permet à la fin de la tâche à guider l’utilisateur à travers les étapes séquentielles, basé sur des tâches : l’Assistant représente une tâche de haut niveau et les panneaux individuels représentent les tâches subordonnées nécessaires pour accomplir la tâche globale<br /><br />Utile lorsque la tâche traverse les limites de l’interface utilisateur, comme lorsque l’utilisateur auriez à utiliser plusieurs éditeurs et fenêtres pour terminer la tâche d’outil<br /><br />Utile lors de la tâche nécessite la création de branches<br /><br />Utile lors de la tâche contient des dépendances entre les étapes<br /><br />Utile lorsque plusieurs tâches similaires avec la branche d’une décision peuvent être présentés dans une boîte de dialogue pour réduire le nombre de différentes boîtes de dialogue similaire | Inapproprié pour n’importe quelle tâche qui ne nécessite pas un workflow séquentiel<br /><br />Les utilisateurs peuvent être submergée et confondues par un Assistant avec de trop nombreuses étapes<br /><br />Assistants sont limitée, par nature, écran |  
 
 ##### <a name="hallways-or-dashboards"></a>Couloirs ou des tableaux de bord  
@@ -470,11 +467,11 @@ Projets classifier généralement eux-mêmes en tant que base de référence (en
 
 À partir d’un point de vue de glisser-déplacer, les caractéristiques suivantes doivent s’appliquer à chaque type de projet au sein de la **l’Explorateur de solutions**:  
 
--   **En fonction de référence de projet :** le point essentiel est que le projet fait glisser autour d’une référence à un élément dans le stockage. Lorsqu’un projet basé sur la référence agit comme une source pour une opération de déplacement, il doit supprimer uniquement la référence à l’élément à partir du projet. L’élément ne doit pas réellement supprimé du disque dur. Lorsqu’un projet basé sur la référence agit comme une cible pour une opération de déplacement (ou copie), il doit ajouter une référence à l’élément source d’origine sans avoir à effectuer une copie privée de l’élément.  
+-   **Projet de référence :** Le point essentiel est que le projet fait glisser autour d’une référence à un élément dans le stockage. Lorsqu’un projet basé sur la référence agit comme une source pour une opération de déplacement, il doit supprimer uniquement la référence à l’élément à partir du projet. L’élément ne doit pas réellement supprimé du disque dur. Lorsqu’un projet basé sur la référence agit comme une cible pour une opération de déplacement (ou copie), il doit ajouter une référence à l’élément source d’origine sans avoir à effectuer une copie privée de l’élément.  
 
--   **Projet basé sur le répertoire :** du point de vue du glisser-déplacer, le projet fait glisser autour de l’élément physique plutôt qu’une référence. Lorsqu’un projet basé sur le répertoire agit comme une source pour une opération de déplacement, il doit se terminer si vous supprimez l’élément physique du disque dur, ainsi que de supprimer du projet. Lorsqu’un projet basé sur le répertoire agit comme une cible pour une opération de déplacement (ou copie), il doit être une copie de l’élément source dans son emplacement cible.  
+-   **Basé sur le répertoire de projet :** Du point de vue du glisser-déplacer, le projet fait glisser autour de l’élément physique plutôt qu’une référence. Lorsqu’un projet basé sur le répertoire agit comme une source pour une opération de déplacement, il doit se terminer si vous supprimez l’élément physique du disque dur, ainsi que de supprimer du projet. Lorsqu’un projet basé sur le répertoire agit comme une cible pour une opération de déplacement (ou copie), il doit être une copie de l’élément source dans son emplacement cible.  
 
--   **Projet cible mixte :** du point de vue du glisser-déplacer, le comportement de ce type de projet est basé sur la nature de l’élément déplacé (il s’agit d’une référence à un élément dans le stockage) ou l’élément lui-même. Le comportement correct des références et les éléments physiques sont décrits ci-dessus.  
+-   **Projet cible mixte :** Du point de vue du glisser-déplacer, le comportement de ce type de projet est basé sur la nature de l’élément déplacé (il s’agit d’une référence à un élément dans le stockage) ou l’élément lui-même. Le comportement correct des références et les éléments physiques sont décrits ci-dessus.  
 
 S’il n'agissait qu’un seul type de projet dans le **l’Explorateur de solutions**, les opérations de glisser-déplacer est simples. Étant donné que chaque système de projet a la possibilité de définir son propre comportement de glisser-déplacer, vous devraient suivre certaines règles (en fonction du comportement de glisser-déplacer de l’Explorateur Windows) pour garantir une expérience utilisateur prévisible :  
 
@@ -508,7 +505,7 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 #### <a name="reference-based-projects"></a>Projets basés sur une référence  
  Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de la cible en fonction référencée :  
 
-| Modificateur | Category | Élément source : / lien de référence | Élément source : système d’élément ou le fichier physique (`CF_HDROP`) |  
+| Modificateur | Category | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Aucun modificateur | Action | Déplacement | Lien |  
 | Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |  
@@ -540,7 +537,7 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible basé sur le répertoire :  
 
 
-| Modificateur | Category | Élément source : / lien de référence | Élément source : système d’élément ou le fichier physique (`CF_HDROP`) |
+| Modificateur | Category | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Aucun modificateur | Action | Déplacement | Déplacement |
 | Aucun modificateur | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
@@ -566,7 +563,7 @@ Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de co
 #### <a name="mixed-target-projects"></a>Projets cibles mixte  
 Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets cibles mixte :  
 
-| Modificateur | Category | Élément source : / lien de référence | Élément source : système d’élément ou le fichier physique (`CF_HDROP`) |  
+| Modificateur | Category | Élément de la source : Référence/lien | Élément de la source : Système d’élément ou le fichier physique (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Aucun modificateur | Action | Déplacement | Déplacement |
 | Aucun modificateur | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |

@@ -1,8 +1,7 @@
 ---
-title: 'CA1413 : Éviter les champs non publics dans les types valeur visibles par COM'
+title: 'CA1413 : Évitez les champs non publics dans les types valeur visibles par COM'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1413
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 060d8ebd26b08ef02a9986846bdab2a25a85072f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: dab50ec607e92222e0d14ed8f6afeeeb1515e61b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912008"
 ---
-# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413 : Éviter les champs non publics dans les types valeur visibles par COM
+# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413 : Évitez les champs non publics dans les types valeur visibles par COM
 
 |||
 |-|-|
@@ -58,7 +57,7 @@ ms.locfileid: "45547904"
 ## <a name="related-rules"></a>Règles associées
  [CA1407 : Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017 : Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

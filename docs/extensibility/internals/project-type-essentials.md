@@ -1,9 +1,6 @@
 ---
 title: Essentials du Type de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7daf114bb31019a499bc17e287df923107ee1a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 630557cbc4bd9720337bf8e5f2988ffcf3d7c6eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952775"
 ---
 # <a name="project-type-essentials"></a>Éléments fondamentaux sur le type de projet
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inclut plusieurs types de projets pour les langages tels que [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet également de créer vos propres types de projet.  
@@ -55,7 +52,7 @@ ms.locfileid: "49891568"
   
 - Types de projets sont des objets dans un VSPackage qui implémentent l’ensemble des interfaces [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] attend. Si vous utilisez c# pour développer un type de projet, les classes de projet Managed Package Framework implémentent les interfaces nécessaires pour vous et vous permettent d’hériter de cette implémentation. Pour plus d’informations, consultez [à l’aide de Managed Package Framework pour implémenter un Type de projet (c#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Pour les développeurs C++, les classes dans la bibliothèque HierUtil fonctionnent de manière similaire. Pour plus d’informations, consultez [pas dans la génération : à l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Pour les développeurs C++, les classes dans la bibliothèque HierUtil fonctionnent de manière similaire. Pour plus d’informations, consultez [pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Types de projets peuvent prendre en charge les données autres que les fichiers de code source typique qui s’appuient dans un assembly .exe ou .dll. Par exemple, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des projets de base de données contiennent des références aux fichiers de script et de requête stockés sur le disque et ajouter des commandes à **l’Explorateur de solutions** pour exécuter les scripts et les requêtes sur une base de données, mais les projets ne gèrent pas générer un comportement. Pour plus d’informations, consultez [d’ouverture et de l’enregistrement des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
   

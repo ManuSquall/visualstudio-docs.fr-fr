@@ -1,9 +1,6 @@
 ---
-title: 'Comment : diagnostiquer les performances de l’extension | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Diagnostiquer les performances de l’extension | Microsoft Docs'
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943419"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension dans le démarrage
 
@@ -31,7 +28,7 @@ Pour aider les utilisateurs à comprendre cet impact, nous avons ajouté une nou
 Ce document vise à aider les développeurs d’extensions en décrivant la façon dont l’impact de l’extension est calculée. Ce document décrit également comment impact d’extension peut être analysé localement. Analyse de localement l’impact de l’extension détermine si une extension peut-être s’afficher comme une extension d’ayant un impact sur des performances.
 
 > [!NOTE]
-> Ce document se concentre sur l’impact des extensions lors du chargement de solution et de démarrage. Extensions également avoir un impact sur les performances de Visual Studio lorsqu’elles entraînent l’interface utilisateur de ne plus répondre. Pour plus d’informations sur ce sujet, consultez [Comment : retards de diagnostic de l’interface utilisateur causés par les extensions](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Ce document se concentre sur l’impact des extensions lors du chargement de solution et de démarrage. Extensions également avoir un impact sur les performances de Visual Studio lorsqu’elles entraînent l’interface utilisateur de ne plus répondre. Pour plus d’informations sur ce sujet, consultez [Comment : L’interface utilisateur de diagnostiquer des retards causés par les extensions](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Impact par des extensions du démarrage
 
@@ -51,11 +48,11 @@ Nous avons ajouté de nombreuses fonctionnalités à partir de Visual Studio 201
 
 Vous trouverez plus d’informations sur ces fonctionnalités dans les documents suivants :
 
-[Contextes d’interface utilisateur basée sur la règle](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un moteur basé sur une règle plus riche construit autour des contextes d’interface utilisateur vous permet de créer des contextes personnalisés basés sur les types de projets, des versions et les attributs. Contextes personnalisés peuvent être utilisés pour charger un package lors de scénarios plus spécifiques. Ces scénarios spécifiques incluent la présence d’un projet avec une fonctionnalité spécifique au lieu de démarrage. Les contextes personnalisés permettent également [commande visibilité d’être associé à un contexte personnalisé](visibilityconstraints-element.md) basé sur les composants d’un projet ou d’autres termes disponibles. Cette fonctionnalité élimine la nécessité de charger un package pour inscrire un gestionnaire de requête de statut de commande.
+[Contextes d’interface utilisateur basée sur la règle](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Un moteur basé sur une règle plus riche construit autour des contextes d’interface utilisateur vous permet de créer des contextes personnalisés basés sur les attributs, les versions et les types de projets. Contextes personnalisés peuvent être utilisés pour charger un package lors de scénarios plus spécifiques. Ces scénarios spécifiques incluent la présence d’un projet avec une fonctionnalité spécifique au lieu de démarrage. Les contextes personnalisés permettent également [commande visibilité d’être associé à un contexte personnalisé](visibilityconstraints-element.md) basé sur les composants d’un projet ou d’autres termes disponibles. Cette fonctionnalité élimine la nécessité de charger un package pour inscrire un gestionnaire de requête de statut de commande.
 
-[Prise en charge asynchrone package](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): la nouvelle classe de base AsyncPackage dans Visual Studio 2015 permet aux packages de Visual Studio être chargé dans l’arrière-plan de façon asynchrone si le chargement du package a été demandé par un attribut de charge automatique ou d’une requête de service asynchrone . Ce chargement en arrière-plan permet à l’IDE de rester réactive. L’IDE est réactif pendant que l’extension est initialisée en arrière-plan et des scénarios critiques comme charge de démarrage et de la solution ne sont pas affectées.
+[Prise en charge asynchrone package](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): La nouvelle classe de base AsyncPackage dans Visual Studio 2015 permet des packages Visual Studio à charger dans l’arrière-plan de façon asynchrone si le chargement du package a été demandé par un attribut de charge automatique ou d’une requête de service asynchrone. Ce chargement en arrière-plan permet à l’IDE de rester réactive. L’IDE est réactif pendant que l’extension est initialisée en arrière-plan et des scénarios critiques comme charge de démarrage et de la solution ne sont pas affectées.
 
-[Les services asynchrones](how-to-provide-an-asynchronous-visual-studio-service.md): avec prise en charge asynchrone de package, nous avons également ajouté la prise en charge pour l’interrogation des services de façon asynchrone et ne pourrez plus inscrire les services asynchrones. Plus important encore, nous travaillons sur la conversion des services de Visual Studio core pour prendre en charge de la requête asynchrone afin que la majorité du travail dans une requête asynchrone se produit dans les threads d’arrière-plan. SComponentModel (hôte de MEF de Visual Studio) est un des principaux services qui prend désormais en charge une requête asynchrone pour autoriser les extensions prendre en charge le chargement asynchrone complètement.
+[Les services asynchrones](how-to-provide-an-asynchronous-visual-studio-service.md): Avec prise en charge asynchrone de package, nous avons également ajouté de prise en charge de l’interrogation des services de façon asynchrone et ne pourrez plus inscrire les services asynchrones. Plus important encore, nous travaillons sur la conversion des services de Visual Studio core pour prendre en charge de la requête asynchrone afin que la majorité du travail dans une requête asynchrone se produit dans les threads d’arrière-plan. SComponentModel (hôte de MEF de Visual Studio) est un des principaux services qui prend désormais en charge une requête asynchrone pour autoriser les extensions prendre en charge le chargement asynchrone complètement.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Réduisant l’impact des auto extensions chargées
 
@@ -167,11 +164,11 @@ Maintenant la vue n’affiche que les coûts qui est associé avec les assemblys
 
 Pour l’exemple ci-dessus certains appel intéressante piles serait :
 
-1. À l’aide de l’e/s `System.IO` classe : alors que le coût inclusif de ces images peut ne pas être trop coûteux dans la trace, ils sont une cause potentielle d’un problème dans la mesure où la vitesse d’e/s de fichier varie d’un ordinateur à l’autre.
+1. À l’aide de l’e/s `System.IO` classe : Tandis que le coût inclusif de ces images peut ne pas être trop coûteux dans la trace, ils sont une cause potentielle d’un problème dans la mesure où la vitesse d’e/s de fichier varie d’un ordinateur à l’autre.
 
    ![trames de système d’e/s](media/perfview-system-io-frames.png)
 
-2. Appels en attente sur un autre travail asynchrone de blocage : dans ce cas, temps inclusif représentent le temps que le thread principal est bloqué sur l’achèvement du travail asynchrone.
+2. Blocage des appels en attente sur un autre travail asynchrone : Dans ce cas, temps inclusif représentent le temps que le thread principal est bloqué sur l’achèvement du travail asynchrone.
 
    ![frames d’appels bloquants](media/perfview-blocking-call-frames.png)
 

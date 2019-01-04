@@ -1,9 +1,6 @@
 ---
 title: Développement Office et SharePoint dans Visual Studio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 76043da9815becd6b5cb25a2117b4ff746d6d242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898646"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Développement Office et SharePoint dans Visual Studio
   Vous pouvez étendre Microsoft Office et SharePoint en créant une application légère ou un complément que les utilisateurs téléchargent à partir d’ [Office Store](https://store.office.com/) ou d’un catalogue d’organisation, ou en créant une solution .NET Framework que les utilisateurs installent sur un ordinateur.  
@@ -109,5 +106,3 @@ ms.locfileid: "50671701"
 |--------|---------|  
 |Comparer des solutions SharePoint et des compléments SharePoint.|[Compléments SharePoint par rapport aux solutions de SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Créer une solution SharePoint.|[Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
-  
-  

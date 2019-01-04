@@ -1,9 +1,6 @@
 ---
 title: Fonction SccCloseProject | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccCloseProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abb0cd825b6b09b5fdb7ad37f8066151ee42d3fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a872d02abd10a024fe4f636ca21320ecbced4f50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883690"
 ---
 # <a name="scccloseproject-function"></a>Fonction SccCloseProject
 Cette fonction ferme un projet, en marquant la fin d’une session particulière.  

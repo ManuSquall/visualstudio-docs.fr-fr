@@ -1,9 +1,6 @@
 ---
 title: Hébergement IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28fc8ca212574c054add28e69a409fde4f58308a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838175"
 ---
 # <a name="intellisense-hosting"></a>Hébergement d’IntelliSense
 Visual Studio permet l’hébergement d’IntelliSense. Dans IntelliSense hébergement permet de vous fournir IntelliSense pour le code qui n’est pas hébergée par l’éditeur de texte Visual Studio.  

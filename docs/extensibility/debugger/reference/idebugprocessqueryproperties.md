@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessQueryProperties | Documents Microsoft
-ms.custom: ''
+title: IDebugProcessQueryProperties | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessQueryProperties
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac071afd9f9ce7d45a05408aeec32117776832f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b74b410e64cd6f57b828947d829461bc9d490776
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905489"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Cette interface est implémentée par une interface d’extension [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) l’attention des implémenteurs. Il permet à l’implémenteur obtenir des informations sur l’environnement de débogage de processus.  
+Cette interface est implémentée par une interface d’extension [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) les implémenteurs. Il permet à l’implémenteur obtenir des informations sur l’environnement de processus de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -29,7 +26,7 @@ Cette interface est implémentée par une interface d’extension [IDebugProcess
 IDebugProcessQueryProperties: IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  Implémentez cette interface pour obtenir des informations sur l’environnement d’exécution d’un processus de débogage.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -44,12 +41,12 @@ IDebugProcessQueryProperties: IUnknown
  Cette interface est implémentée rarement.  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Portpriv.h  
+ En-tête : Portpriv.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

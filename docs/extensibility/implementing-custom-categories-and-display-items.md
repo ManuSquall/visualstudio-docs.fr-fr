@@ -1,9 +1,6 @@
 ---
 title: Implémentation des catégories personnalisées et des éléments d’affichage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908434"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implémenter des catégories personnalisées et afficher les éléments
 Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) par le biais des catégories personnalisées et des éléments d’affichage.
@@ -116,7 +113,7 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
 
      L’IDE appelle la méthode appropriée suivant les modifications de l’utilisateur de la **polices et couleurs** page. Par exemple, il appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> méthode si une nouvelle police est sélectionnée.
 
-     - ou -
+     ou
 
 -   Interrogation de l’IDE pour les modifications.
 
@@ -135,5 +132,5 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Obtenir des informations de police et de couleur pour la colorisation de texte](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Accès stockés des paramètres de police et couleur](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Comment : accéder aux polices intégrées et modèle de couleurs](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Guide pratique pour Le jeu de couleurs et polices intégrées d’accès](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Vue d’ensemble de police et de couleur](../extensibility/font-and-color-overview.md)

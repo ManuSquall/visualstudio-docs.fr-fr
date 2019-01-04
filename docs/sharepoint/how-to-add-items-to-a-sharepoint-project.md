@@ -1,13 +1,8 @@
 ---
-title: 'Comment : ajouter des éléments à un projet SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter des éléments à un projet SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80181525c63593da783b620917b82c5a8c0bf177
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b10277945feb638764162d523066d49b9c6c7215
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949678"
 ---
-# <a name="how-to-add-items-to-a-sharepoint-project"></a>Comment : ajouter des éléments à un projet SharePoint
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>Procédure : Ajouter des éléments à un projet SharePoint
   Les solutions SharePoint contiennent un ou plusieurs projets, chacun d’eux contient plusieurs éléments de projet SharePoint. Une fois que vous ouvrez ou créez une solution SharePoint, vous pouvez ajouter des éléments nouveaux ou existants à ces projets. Par exemple, les nouveaux projets de flux de travail sont fournis avec un formulaire par défaut nommée default.aspx, mais vous pouvez remplacer ce formulaire un formulaire nouveau ou différent, ou ajouter un autre formulaire ASPX.  
   
 ### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>Pour ajouter un nouvel élément de projet à une solution SharePoint  
@@ -54,4 +49,3 @@ ms.locfileid: "36758207"
 ## <a name="see-also"></a>Voir aussi
  [Projets et modèles d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

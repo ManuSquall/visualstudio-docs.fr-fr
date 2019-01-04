@@ -1,9 +1,6 @@
 ---
-title: IDebugFunctionObject2 | Documents Microsoft
-ms.custom: ''
+title: IDebugFunctionObject2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b051cc033f41f78fb1f2e6ed18eb22de6f8f0aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 276db8c4175ce74326cb2e0cd45440f2ed00f8ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958421"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Représente une fonction et améliore la [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
@@ -32,15 +29,15 @@ ms.locfileid: "31113840"
 IDebugFunctionObject2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Évaluateur d’expression (EE) implémente cette interface pour représenter une fonction.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Un évaluateur d’expression (EE) implémente cette interface pour représenter une fonction.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Méthodes de cette interface différeront de ceux de **IDebugFunctionObject** comme suit :  
   
--   Le **IDebugEvaluate** méthode utilise les indicateurs.  
+-   Le **IDebugEvaluate** méthode accepte des indicateurs.  
   
--   Le **CreateObject** méthode prend un délai d’attente et les indicateurs.  
+-   Le **CreateObject** méthode accepte des indicateurs et un délai d’expiration.  
   
 -   Le **CreateStringObjectWithLength** méthode prend une longueur.  
   
@@ -49,13 +46,13 @@ IDebugFunctionObject2 : IUnknown
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crée un objet qui utilise un constructeur de fonction de paramètres d’évaluation de l’indicateur et une valeur de délai d’attente.|  
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crée un objet qui utilise un constructeur étant donné les paramètres de l’indicateur d’évaluation et une valeur de délai d’attente.|  
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Crée un objet de chaîne qui a la longueur spécifiée.|  
-|[évaluer](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Appelle la fonction et retourne la valeur obtenue en tant qu’objet.|  
+|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Appelle la fonction et retourne la valeur obtenue en tant qu’objet.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Ee.h  
+ En-tête : EE.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

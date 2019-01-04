@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer un. Fichier VSCT | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un. Fichier VSCT | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885328"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Comment : créer un fichier .vsct  
+# <a name="how-to-create-a-vsct-file"></a>Procédure : Créer un fichier .vsct  
   
 Il existe plusieurs façons de créer une configuration de table de commande basé sur XML Visual Studio (*.vsct*) fichier.  
   
@@ -56,7 +53,7 @@ Il existe plusieurs façons de créer une configuration de table de commande bas
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Comment : créer un fichier .vsct à partir d’un fichier .ctc existant  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procédure : Créer un fichier .vsct à partir d’un fichier .ctc existant  
   
 Vous pouvez créer une base de XML *.vsct* fichier à partir d’une table existante de la commande *.ctc* fichier source. Ainsi, vous pouvez tirer parti du nouveau format du compilateur (VSTC) de table de commande [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] XML.  
   
@@ -87,7 +84,7 @@ Vous pouvez créer une base de XML *.vsct* fichier à partir d’une table exist
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Comment : créer un fichier .vsct à partir d’un fichier .cto existant  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procédure : Créer un fichier .vsct à partir d’un fichier .cto existant  
   
 Vous pouvez créer une base de XML *.vsct* fichier à partir d’un fichier binaire existant *.cto* fichier. Cela vous permet de tirer parti du nouveau format de compilateur de la table de commande. Ce processus fonctionne même si le *.cto* fichier a été compilé à partir d’un *.ctc* fichier. Vous pouvez modifier et compiler le *.vsct* fichier dans un autre fichier .cto.  
   

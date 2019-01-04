@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Programmer des événements d’un contrôle NamedRange'
-ms.custom: ''
+title: 'Procédure pas à pas : Programmer par rapport aux événements d’un contrôle NamedRange'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910816"
 ---
-# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procédure pas à pas : Programmer des événements d’un contrôle NamedRange
+# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procédure pas à pas : Programmer par rapport aux événements d’un contrôle NamedRange
   Cette procédure pas à pas montre comment ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à une feuille de calcul Microsoft Office Excel et le programmer ses événements à l’aide des outils de développement Office dans Visual Studio.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49812516"
   
 ### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Créer un projet de classeur Excel portant le nom **My Events de plage nommée**. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créer un projet de classeur Excel portant le nom **My Events de plage nommée**. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **My Events de plage nommée** projet **l’Explorateur de solutions**.  
   
@@ -108,7 +105,7 @@ ms.locfileid: "49812516"
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
   
-3.  En c#, vous devez ajouter des gestionnaires d’événements pour la plage nommée comme indiqué dans le <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  En c#, vous devez ajouter des gestionnaires d’événements pour la plage nommée comme indiqué dans le <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]  
   
@@ -162,9 +159,7 @@ ms.locfileid: "49812516"
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
- [Comment : redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Comment : ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Guide pratique pour Redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Guide pratique pour Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  
-  
-  
+ [Guide pratique pour Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  

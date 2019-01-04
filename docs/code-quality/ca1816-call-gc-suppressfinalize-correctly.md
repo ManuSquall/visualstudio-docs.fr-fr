@@ -1,8 +1,7 @@
 ---
-title: 'CA1816 : Appeler GC.SuppressFinalize correctement'
+title: 'CA1816 : Appelez GC. SuppressFinalize correctement'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1816
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c874aac5d84d45159ef7d169ab2749269fa0905
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: a3dcfdf8f094d50c5f462ae1a9d0ef4e85a0bb87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882284"
 ---
-# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816 : Appeler GC.SuppressFinalize correctement
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816 : Appelez GC. SuppressFinalize correctement
 
 |||
 |-|-|
@@ -81,7 +80,7 @@ Cet exemple montre une méthode qui correctement appels <xref:System.GC.Suppress
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2215 : Les méthodes Dispose doivent appeler la méthode Dispose de la classe de base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2215 : Méthodes Dispose doivent appeler dispose de la classe de base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 - [CA2216 : Les types supprimables doivent déclarer un finaliseur](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>Voir aussi

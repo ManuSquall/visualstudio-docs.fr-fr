@@ -1,8 +1,7 @@
 ---
-title: 'CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives'
+title: 'CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2006
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c845185c031e7c7d066aebbb1a28634358f11ce5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a522168250d1b62f93222201f440f53efd992f16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912354"
 ---
-# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives
 
 |||
 |-|-|

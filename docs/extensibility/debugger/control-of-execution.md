@@ -1,9 +1,6 @@
 ---
 title: Contrôle de l’exécution | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a95e01a44236d4f98f55f50a56cf28473ad575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5617849b1dbd8e3857818fb762f562502b89386
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947424"
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
 Le moteur de débogage (dé) envoie généralement un des événements suivants en tant que le dernier événement de démarrage :  
@@ -42,11 +39,11 @@ Le moteur de débogage (dé) envoie généralement un des événements suivants 
   
 5. Si l’utilisateur choisit de pas à pas détaillé, plus ou en dehors d’une fonction, l’IDE vous invite à entrer la session de débogage pour appeler le programme `Step` (méthode). L’IDE transmet ensuite l’unité d’étape (instruction, instruction ou ligne) et le type d’étape (que ce soit à l’étape dans, au-dessus ou en dehors de la fonction). Lorsque l’étape est terminée, le D’envoie un événement de fin d’étape à la session de débogage, qui est un événement d’arrêt.  
   
-    - ou -  
+    ou  
   
     Si l’utilisateur choisit de continuer à s’exécuter à partir du pointeur d’instruction en cours, l’IDE vous invite à entrer la session de débogage pour appeler le programme **Execute** (méthode). Le programme reprend son exécution jusqu'à ce qu’il rencontre la condition d’arrêt suivante.  
   
-    - ou -  
+    ou  
   
     Si la session de débogage consiste à ignorer un événement d’arrêt particulier, la session de débogage appelle le programme **continuer** (méthode). Si le programme a été pas à pas détaillé dans, au-dessus ou en dehors d’une fonction lorsqu’il a rencontré la condition d’arrêt, puis il continue l’étape.  
   

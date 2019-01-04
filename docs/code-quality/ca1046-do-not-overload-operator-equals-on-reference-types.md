@@ -1,8 +1,7 @@
 ---
-title: "CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence"
+title: 'CA1046 : Ne pas surcharger l’opérateur égal sur les types référence'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 14229e6f73e93aa1ca4323ba12d965270e3228cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904732"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l’opérateur égal sur les types référence
 
 |||
 |-|-|
@@ -66,7 +65,7 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1013 : Surchargez l’opérateur égal lors de la surcharge de l’opérateur d’addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013 : Surchargez l’opérateur égal lors de la surcharge addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Voir aussi
 

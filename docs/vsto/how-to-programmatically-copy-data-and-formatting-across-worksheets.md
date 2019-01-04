@@ -1,9 +1,6 @@
 ---
-title: 'Comment : copier des données et la mise en forme entre feuilles de calcul par programmation'
-ms.custom: ''
+title: 'Procédure : Copier des données et la mise en forme entre feuilles de calcul par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a4cce083bee8b57ff37276ae909799a9a6791d7
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9995b347fdfcb60acf72c79b0e1bddc20bab717b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924863"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Comment : copier des données et la mise en forme entre feuilles de calcul par programmation
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procédure : Copier des données et la mise en forme entre feuilles de calcul par programmation
   Vous pouvez copier des données à partir d’une plage d’une feuille à toutes les autres feuilles dans un classeur à l’aide de la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> (méthode). Spécifier une plage, et si vous souhaitez copier des données, la mise en forme ou les deux.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35256680"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
- [Comment : ajouter par programmation des feuilles de calcul à des classeurs](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Comment : modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
+ [Guide pratique pour Ajouter par programmation des feuilles de calcul à des classeurs](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Guide pratique pour Modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

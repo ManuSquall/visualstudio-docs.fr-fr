@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e6fa953c294bb355d61126354b0752590e536c40
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06a34bd09c84c3afc4162c4930fc34963b56b8fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905450"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 
@@ -59,5 +58,5 @@ Vous pouvez enregistrer ces modifications. Si vous souhaitez rendre visibles à 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
 - [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)

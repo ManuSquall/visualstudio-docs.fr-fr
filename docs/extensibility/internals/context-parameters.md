@@ -1,9 +1,6 @@
 ---
 title: Paramètres de contexte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, context parameters
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d595bcc99cbacabd55c8e85775e1d691e917a41c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b69aa04583186e20df77f13f54499448b36eb29c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902615"
 ---
 # <a name="context-parameters"></a>Paramètres de contexte
 Dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE), vous pouvez ajouter des Assistants pour le **nouveau projet**, **ajouter un nouvel élément**, ou **ajouter un projet Sub** boîtes de dialogue. Les Assistants d’ajout sont disponibles sur le **fichier** menu ou en double-cliquant sur un projet dans **l’Explorateur de solutions**. L’IDE transmet les paramètres de contexte à l’implémentation de l’Assistant. Les paramètres de contexte définissent l’état du projet lors de l’IDE appelle l’Assistant.  

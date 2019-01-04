@@ -1,6 +1,5 @@
 ---
 title: SortOrder, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2710c85caf2ff675a05236aac48d08412e794ca6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 811df3ed361a104ad3ca935307e337a291cbf01e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963295"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder, élément (modèles Visual Studio)
 Spécifie une valeur qui est utilisée pour organiser le modèle, parmi d’autres modèles dans la même catégorie, tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  

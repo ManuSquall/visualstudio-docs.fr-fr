@@ -1,9 +1,6 @@
 ---
-title: 'Comment : protéger des documents et des parties de documents par programmation'
-ms.custom: ''
+title: 'Procédure : Protéger des documents et des parties de documents par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991108"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Comment : protéger des documents et des parties de documents par programmation
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procédure : Protéger des documents et des parties de documents par programmation
   Vous pouvez ajouter une protection aux documents Microsoft Office Word pour empêcher les utilisateurs d’y apporter des modifications.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35670804"
 > [!NOTE]  
 >  L’exemple suivant n’utilise pas de protection par mot de passe. Toutefois, vous pouvez utiliser un mot de passe lors de l’ajout de la protection de document. Pour plus d’informations, consultez l’exemple de Document Protector dans [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
   
- Vous pouvez également utiliser des contrôles de contenu pour protéger certaines parties d’un document. Pour plus d’informations, consultez [Comment : protéger des parties de documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Vous pouvez également utiliser des contrôles de contenu pour protéger certaines parties d’un document. Pour plus d'informations, voir [Procédure : Protéger des parties de documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Protéger un document qui fait partie d’une personnalisation au niveau du document  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35670804"
 ## <a name="see-also"></a>Voir aussi  
  [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)   
  [Protection de mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)   
- [Comment : permettre au code à exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Guide pratique pour Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Guide pratique pour Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

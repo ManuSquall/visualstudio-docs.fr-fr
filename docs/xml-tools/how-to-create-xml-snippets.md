@@ -1,8 +1,7 @@
 ---
-title: 'Procédure : créer des extraits XML'
+title: "Procédure : création d'extraits XML"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829100"
 ---
-# <a name="how-to-create-xml-snippets"></a>Comment : créer des extraits XML
+# <a name="how-to-create-xml-snippets"></a>Procédure : Créer des extraits XML
 
 Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.
 
@@ -121,5 +120,5 @@ Vous pouvez utiliser l'éditeur XML pour créer de nouveaux extraits XML. Cet é
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits XML](../xml-tools/xml-snippets.md)
-- [Comment : utiliser XML des extraits de code](../xml-tools/how-to-use-xml-snippets.md)
-- [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Guide pratique pour Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Guide pratique pour Générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

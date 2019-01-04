@@ -15,13 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c01bea709d551e970ed8c44ec861ff348c7081ad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3bf8248a7a68b914d6276e3e6f37261fb6137efc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939250"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 Les directives fournissent des instructions au moteur de transformation de modèle de texte.
@@ -34,7 +33,7 @@ Les directives fournissent des instructions au moteur de transformation de modè
 
  Toutes les valeurs d'attribut doivent être placées entre guillemets doubles. Si la valeur elle-même contient des guillemets, ils doivent être placés dans une séquence d'échappement au moyen du caractère \.
 
- En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l'intérieur d'un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.
+ En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l’intérieur d’un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.
 
  [Directive du modèle T4](../modeling/t4-template-directive.md)
  ```
@@ -71,4 +70,4 @@ Les directives fournissent des instructions au moteur de transformation de modè
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
- De plus, vous pouvez créer vos propres directives. Pour plus d’informations, consultez [création de processeurs de Directive de modèle personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md). Si vous utilisez le Kit de développement logiciel de visualisation et de modélisation pour créer un langage spécifique à un domaine (DSL), un processeur de directive sera généré dans le cadre de votre DSL.
+ De plus, vous pouvez créer vos propres directives. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md). Si vous utilisez le Kit de développement logiciel de visualisation et de modélisation pour créer un langage spécifique à un domaine (DSL), un processeur de directive sera généré dans le cadre de votre DSL.

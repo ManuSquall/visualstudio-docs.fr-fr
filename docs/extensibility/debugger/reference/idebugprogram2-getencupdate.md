@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetENCUpdate | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetENCUpdate
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c356154c5d77c01f84c5fe4446b8ac92235c10e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00e640ab40adb6a87199b339e47f3e4a9aafb276
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824377"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Cette méthode obtient la mise à jour de modifier & Continuer (ENC) pour ce programme. Un moteur de débogage personnalisé retourne toujours `E_NOTIMPL`.  
@@ -28,7 +25,7 @@ Cette méthode obtient la mise à jour de modifier & Continuer (ENC) pour ce pro
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetENCUpdate(   
+HRESULT GetENCUpdate(   
    IUnknown** ppUpdate  
 );  
 ```  

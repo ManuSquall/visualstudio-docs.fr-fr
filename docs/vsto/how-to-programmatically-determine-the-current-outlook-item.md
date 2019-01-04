@@ -1,9 +1,6 @@
 ---
-title: 'Comment : déterminer par programme l’élément Outlook actuel'
-ms.custom: ''
+title: 'Procédure : Déterminer par programme l’élément Outlook actuel'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 93d1d565664e9851310e9138fef7f6d14041c865
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945949"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Comment : déterminer par programme l’élément Outlook actuel
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procédure : Déterminer par programme l’élément Outlook actuel
   Cet exemple utilise le `Explorer.SelectionChange` événement pour afficher le nom du dossier actuel et des informations sur l’élément sélectionné. Le code affiche ensuite l’élément sélectionné.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -41,7 +38,5 @@ ms.locfileid: "35257041"
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)   
- [Comment : récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Comment : rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
-  
-  
+ [Guide pratique pour Récupérer par programme un dossier par nom](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Guide pratique pour Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  

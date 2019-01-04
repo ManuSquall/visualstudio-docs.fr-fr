@@ -1,9 +1,6 @@
 ---
-title: IDebugObject | Documents Microsoft
-ms.custom: ''
+title: IDebugObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cff859d2aa4b3a3c88978e077102e045efe1f3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b10e14d310d5b5b259f696df63ce899765538a94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889655"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Cette interface représente un objet binder crée pour encapsuler les valeurs de symboles et d’expressions.  
+ Cette interface représente un objet qui le binder crée pour encapsuler les valeurs de symboles et d’expressions.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,11 +31,11 @@ ms.locfileid: "31120999"
 IDebugObject : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Évaluateur d’expression implémente cette interface pour représenter un objet.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Un évaluateur d’expression implémente cette interface pour représenter un objet.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Cette interface est la classe de base pour tous les objets par l’évaluateur d’expression dans les expressions analysées. Il est retourné par un appel à la [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md) méthode. [QueryInterface](/cpp/atl/queryinterface) Obtient les interfaces plus spécialisées à partir de cette interface.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Cette interface est la classe de base pour tous les objets qui l’évaluateur d’expression utilise dans les expressions analysées. Elle est retournée par un appel à la [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md) méthode. [QueryInterface](/cpp/atl/queryinterface) Obtient les interfaces plus spécialisées à partir de cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugObject`.  
@@ -46,8 +43,8 @@ IDebugObject : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|Obtient la taille de l’objet.|  
-|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|Obtient la valeur de l’objet sous la forme d’une série consécutif d’octets.|  
-|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|Définit la valeur de l’objet à partir d’une série consécutif d’octets.|  
+|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|Obtient la valeur de l’objet sous la forme d’une série consécutive d’octets.|  
+|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|Définit la valeur de l’objet à partir d’une série consécutive d’octets.|  
 |[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|Définit la valeur de référence de cet objet.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|Obtient le contexte de la mémoire qui représente l’adresse de la valeur de l’objet.|  
 |[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|Crée une copie de l’objet managé dans l’espace d’adressage du moteur de débogage.|  
@@ -62,11 +59,11 @@ IDebugObject : IUnknown
 ## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de l’évaluation d’expression](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
- [Lier](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

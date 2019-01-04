@@ -1,9 +1,6 @@
 ---
 title: Les Services associés et les Interfaces (VSPackage de contrôle de code Source) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940623"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
 Cette section répertorie toutes les interfaces associées à un VSPackage dans contrôle de la source de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Le contrôle de code source VSPackage implémente certaines de ces interfaces et d’autres utilise pour accomplir les tâches de contrôle de code source.  
@@ -33,7 +30,7 @@ Cette section répertorie toutes les interfaces associées à un VSPackage dans 
   
  Les interfaces sont :  
   
--   Requis : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
+-   Obligatoire : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
   
 -   Recommandé : L’entité doit implémenter cette interface ; Sinon, les fonctionnalités de contrôle de code source peuvent être limitées.  
   

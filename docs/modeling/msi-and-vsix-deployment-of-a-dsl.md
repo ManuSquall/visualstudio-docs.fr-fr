@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938184"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. Visual Studio doit déjà être installé sur l’ordinateur cible.
@@ -24,7 +23,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
 |Méthode|Avantages|
 |-|-|
-|VSX (Extension de Visual Studio)|Très facile à déployer : copie et d’exécuter le **.vsix** fichier à partir du projet DslPackage.<br /><br /> Pour plus d’informations, consultez [installation et désinstallation d’une solution DSL à l’aide de la VSX](#Installing).|
+|VSX (Extension de Visual Studio)|Très facile à déployer : Copiez et exécutez le **.vsix** fichier à partir du projet DslPackage.<br /><br /> Pour plus d’informations, consultez [installation et désinstallation d’une solution DSL à l’aide de la VSX](#Installing).|
 |MSI (fichier de programme d’installation)|-Permet à l’utilisateur ouvrir Visual Studio en double-cliquant sur un fichier DSL.<br />-Associe une icône avec le type de fichier DSL dans l’ordinateur cible.<br />-Associe un XSD (schéma XML) avec le type de fichier DSL. Cela évite des avertissements lorsque le fichier est chargé dans Visual Studio.<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un fichier MSI.<br /><br /> Pour plus d’informations, consultez [déploiement d’une solution DSL à l’aide d’un fichier MSI](#msi).|
 
 ## <a name="Installing"></a> Installation et désinstallation d’une solution DSL à l’aide de la VSX

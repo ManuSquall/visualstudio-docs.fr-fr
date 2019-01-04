@@ -1,9 +1,6 @@
 ---
 title: IDebugCodeContext2::GetDocumentContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2::GetDocumentContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd0fa6dd8d587ade2ca06c3f39f65fb3a5fd295d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d506c6c0810d27e7c8ed155724c1edc90f29fe06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917344"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Obtient le contexte de document qui correspond à ce contexte de code. Le contexte de document représente une position dans le fichier source qui correspond au code source qui a généré cette instruction.  
@@ -28,13 +25,13 @@ Obtient le contexte de document qui correspond à ce contexte de code. Le contex
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDocumentContext(   
+HRESULT GetDocumentContext(   
    IDebugDocumentContext2** ppSrcCxt  
 );  
 ```  
   
 ```csharp  
-int GetDocumentContext(   
+int GetDocumentContext(   
    out IDebugDocumentContext2 ppSrcCxt  
 );  
 ```  

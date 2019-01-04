@@ -1,9 +1,6 @@
 ---
 title: Mise en page pour Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898750"
 ---
 # <a name="layout-for-visual-studio"></a>Mise en page pour Visual Studio
 La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont l’unthemed boîtes de dialogue de cette norme suivi [principes de mise en page de boîte de dialogue Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Lorsque Visual Studio s’à actualiser son interface utilisateur, certaines des boîtes de dialogue plus apparents ont une nouvelle conception qui établit les expériences comme définition de produit. Ces [mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ont une apparence à thème.  
@@ -38,11 +35,11 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
  ![Espacement de boîte de dialogue pour les étiquettes au-dessus des contrôles](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801-a_UtilitySpacingAbove")  
   
- **Figure 08.01-a : Espacement des instructions pour les boîtes de dialogue utilitaire avec étiquettes au-dessus des contrôles**  
+ **Figure 08.01-a : Instructions de l’espacement des boîtes de dialogue utilitaire avec les étiquettes au-dessus des contrôles**  
   
  ![Espacement de boîte de dialogue pour les étiquettes à gauche des contrôles](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801-b_UtilitySpacingLeft")  
   
- **Figure 08.01-b : Espacement des instructions pour les boîtes de dialogue utilitaire avec des étiquettes à gauche des contrôles**  
+ **Figure 08.01-b : Instructions de l’espacement des boîtes de dialogue utilitaire avec des étiquettes à gauche des contrôles**  
   
 ### <a name="layout-details"></a>Détails de la mise en page  
   
@@ -85,7 +82,7 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
  ![Recommandé de distance entre les contrôles](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-d_ControlDistance")  
   
- **Figure 08.01-d: Des recommandations pour la distance entre les contrôles**  
+ **Figure 08.01-d : Recommandations pour la distance entre les contrôles**  
   
 #### <a name="control-indentation"></a>Mise en retrait du contrôle  
  Lorsque les contrôles sont imbriqués, aligner les contrôles internes horizontalement avec le bord gauche du contrôle ci-dessus, généralement l’étiquette.  
@@ -114,11 +111,11 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
   ![Boutons horizontaux OK et annuler](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")  
   
-  **Figure 08.01-f: Boutons d’intérieur Vertical avec OK/Annuler horizontaux**  
+  **Figure 08.01-f: Boutons intérieurs verticales avec horizontal OK/Annuler**  
   
   ![Boutons verticale OK et annuler](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-g_VertOKCan")  
   
-  **Figure 08.01-g: Horizontal intérieurs boutons OK/Annuler verticaux**  
+  **Figure 08.01-g : Boutons intérieurs horizontales avec OK/Annuler verticaux**  
   
 #### <a name="browse-button"></a>[Parcourir...] bouton  
  **[Parcourir...]**  boutons qui suivent une zone de texte énoncez à « Parcourir... » dans sa totalité, y compris les points de suspension. Si l’espace est étroit ou il existe plusieurs **[Parcourir...]**  boutons à l’écran, le bouton peut être réduit à simplement les points de suspension.  
@@ -147,15 +144,15 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
  ![Dimensions de la boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801-i_ThemedDialogDimensions")  
   
- **Figure 08.01-i Dialogue à thème - Dimensions**  
+ **Figure 08.01-i : Boîte de dialogue à thème - Dimensions**  
   
  ![Polices de boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801-j_ThemedDialogFonts")  
   
- **Figure 08.01-j : Dialogue à thème - polices**  
+ **Figure 08.01-j : Boîte de dialogue à thème - polices**  
   
  ![Couleurs de la boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")  
   
- **Figure 08.01-k : Dialogue à thème - couleurs**  
+ **Figure 08.01-k : Boîte de dialogue à thème - couleurs**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modèles d’application pour Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

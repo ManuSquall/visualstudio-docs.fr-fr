@@ -1,9 +1,6 @@
 ---
 title: Contrôles sur des documents Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930594"
 ---
 # <a name="controls-on-office-documents"></a>Contrôles sur des documents Office
   Vous pouvez utiliser les Outils de développement Office dans Visual Studio pour ajouter des contrôles Windows Forms et des *contrôles hôtes* à des documents Word et à des feuilles de calcul Excel. Les contrôles hôtes sont des objets qui étendent différents objets d'interface utilisateur dans les modèles objet Word et Excel.  
@@ -54,5 +51,3 @@ ms.locfileid: "53441468"
   
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Décrit comment afficher des données dans des documents Word et Excel en liant les données aux contrôles hôtes dans le document.  
-  
-  

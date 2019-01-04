@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble de parties XML personnalisée
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b0cc9e30cbc55164e8ee993930c6d5fca639a318
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942441"
 ---
 # <a name="custom-xml-parts-overview"></a>Vue d’ensemble de parties XML personnalisée
   Vous pouvez incorporer des données XML dans des documents pour certaines applications Microsoft Office. Lorsque vous incorporez des données XML dans un document, elles sont appelées une *partie XML personnalisée*.  

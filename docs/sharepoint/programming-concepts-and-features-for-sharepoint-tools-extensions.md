@@ -1,9 +1,6 @@
 ---
 title: Concepts et fonctionnalités de programmation pour les Extensions d’outils SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3347b36f64ac84082bee5c3087c035571c6a6b08
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d2451339b7291cba6bff8cebcc60358c84f018d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884017"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Concepts de programmation et les fonctionnalités des extensions d’outils SharePoint
   Il existe plusieurs concepts de programmation importants et les caractéristiques qui sont associées aux outils SharePoint dans Visual Studio. Ces concepts et fonctionnalités jouent un rôle important dans la plupart des extensions d’outils SharePoint.  
@@ -41,4 +38,3 @@ ms.locfileid: "37119158"
  [Étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Déboguer des extensions pour les outils SharePoint dans Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Déployer des extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

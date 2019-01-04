@@ -1,9 +1,6 @@
 ---
-title: 'Comment : enregistrer des documents par programmation'
-ms.custom: ''
+title: 'Procédure : Enregistrer des documents par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821592"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Comment : enregistrer des documents par programmation
+# <a name="how-to-programmatically-save-documents"></a>Procédure : Enregistrer des documents par programmation
   Il existe plusieurs façons d’enregistrer des documents Microsoft Office Word. Vous pouvez enregistrer un document sans modifier le nom du document, ou vous pouvez enregistrer un document avec un nouveau nom.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883471"
 -   Pour enregistrer un document avec un nouveau nom, un répertoire nommé *Test* doit exister sur le lecteur C.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)   
- [Comment : ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Guide pratique pour Fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)   
+ [Guide pratique pour Ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Élément hôte de document](../vsto/document-host-item.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

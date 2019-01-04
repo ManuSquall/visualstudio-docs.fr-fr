@@ -2,7 +2,6 @@
 title: Supprimer les avertissements d’analyse du code
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -16,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932872"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -140,7 +139,7 @@ public class Animal
 
 Les compilateurs de code managé et certains des outils tiers génèrent du code pour faciliter le développement de code rapide. Code généré par le compilateur qui s’affiche dans les fichiers sources est généralement signalé par le `GeneratedCodeAttribute` attribut.
 
-Vous pouvez choisir s’il faut supprimer les avertissements d’analyse du code et les erreurs pour le code généré. Pour plus d’informations sur la suppression de ces erreurs et avertissements, consultez [Comment : supprimer les avertissements pour le Code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+Vous pouvez choisir s’il faut supprimer les avertissements d’analyse du code et les erreurs pour le code généré. Pour plus d’informations sur la suppression de ces erreurs et avertissements, consultez [Comment : Supprimer les avertissements pour du Code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > Analyse du code ignore `GeneratedCodeAttribute` lorsqu’il est appliqué à un assembly entier ou un paramètre unique.

@@ -1,6 +1,5 @@
 ---
 title: ProjectType, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3531eb6ee1c974b0978904572d47ae581d6a9cd0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941516"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType, élément (modèles Visual Studio)
 Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifié dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  

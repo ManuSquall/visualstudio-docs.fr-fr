@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter des contrôles Bookmark à des documents Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5c89e922f41104be880d598354440a4c6665a39e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904810"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Procédure : Ajouter des contrôles Bookmark à des documents Word
   Dans les projets au niveau du document, vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles au document dans votre projet au moment du design ou lors de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles à tout document ouvert au moment de l’exécution.  
@@ -136,5 +133,3 @@ ms.locfileid: "53647788"
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
  [Guide pratique pour Redimensionner les contrôles Bookmark](../vsto/how-to-resize-bookmark-controls.md)  
-  
-  

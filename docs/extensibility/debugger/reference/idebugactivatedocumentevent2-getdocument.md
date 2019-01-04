@@ -1,9 +1,6 @@
 ---
 title: IDebugActivateDocumentEvent2::GetDocument | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugActivateDocumentEvent2::GetDocument
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6cf4af6387155bff2b9b65d1be815191e0b3f85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef8059279785991d363ec3be4a870cefcab4c0b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908968"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 Obtient le document à activer.  
@@ -29,13 +26,13 @@ Obtient le document à activer.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDocument (   
+HRESULT GetDocument (   
    IDebugDocument2** ppDoc  
 );  
 ```  
   
 ```csharp  
-int GetDocument (   
+int GetDocument (   
    out IDebugDocument2 ppDoc  
 );  
 ```  

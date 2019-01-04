@@ -1,9 +1,6 @@
 ---
 title: NAME_MATCH | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - NAME_MATCH
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e49933c0bdc5b9a98c165aebd8e263bca2a2be5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7510dc35a8398349eae032b915d463b2a301c84e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893235"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Sélectionne l’option de casse pour les noms correspondants.  
@@ -28,7 +25,7 @@ Sélectionne l’option de casse pour les noms correspondants.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef enum {   
+typedef enum {   
    nmNone            = 0,  
    nmCaseSensitive   = 1,  
    nmCaseInsensitive = 2  
@@ -36,7 +33,7 @@ typedef enum {
 ```  
   
 ```csharp  
-public enum NameMatchOptions {   
+public enum NameMatchOptions {   
    nmNone            = 0,  
    nmCaseSensitive   = 1,  
    nmCaseInsensitive = 2  
@@ -64,12 +61,12 @@ public enum NameMatchOptions {
   
 -   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

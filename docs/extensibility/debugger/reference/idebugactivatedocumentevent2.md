@@ -1,9 +1,6 @@
 ---
-title: IDebugActivateDocumentEvent2 | Documents Microsoft
-ms.custom: ''
+title: IDebugActivateDocumentEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugActivateDocumentEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8307776a3dda9f086cdb77d2880228f14a62b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 190eb405d4c3158a9dd3b131e15a6a999cd862e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895816"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
-Le moteur de débogage (Allemagne) utilise cette interface pour demander un document à charger.  
+Le moteur de débogage (dé) utilise cette interface pour demander un document à charger.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,11 +28,11 @@ Le moteur de débogage (Allemagne) utilise cette interface pour demander un docu
 IDebugActivateDocumentEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Le D’implémente cette interface lorsqu’il a besoin d’un fichier source à ouvrir. Cette interface est implémentée uniquement par les moteurs de débogage qui fonctionnent ou qui font partie des interpréteurs de scripts. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface (le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface).  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Le D’implémente cette interface lorsqu’il a besoin d’un fichier source à ouvrir. Cette interface est implémentée uniquement par les moteurs de débogage qui fonctionnent ou qui font partie des interpréteurs de script. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface (utilise le SDM [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface).  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Le DE crée et envoie cet objet d’événement lorsqu’il a besoin d’ouvrir un fichier source. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Le DE crée et envoie cet objet d’événement lorsqu’il doit avoir un fichier source ouvert. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugActivateDocumentEvent2`.  
@@ -51,9 +48,9 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

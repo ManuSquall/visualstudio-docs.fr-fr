@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramHost2 | Documents Microsoft
-ms.custom: ''
+title: IDebugProgramHost2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramHost2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0161e2dd978b82eb5b09780a3fc07c25d15667
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb56da6abb76053a3dd18989695b42b0f167c3e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903261"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 Cette interface fournit des informations sur l’hôte (processus) sur un programme.  
@@ -31,11 +28,11 @@ Cette interface fournit des informations sur l’hôte (processus) sur un progra
 IDebugProgramHost2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Le moteur de débogage implémente cette interface sur le même objet que le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface afin de fournir des informations sur le processus d’hébergement. Il s’agit d’une interface facultative.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Le moteur de débogage implémente cette interface sur le même objet que le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface pour fournir des informations sur le processus d’hébergement. Il s’agit d’une interface facultative.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Appelez [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProgram2` interface pour obtenir cette interface.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProgram2` interface pour obtenir cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugProgramHost2`.  
@@ -44,15 +41,15 @@ IDebugProgramHost2 : IUnknown
 |------------|-----------------|  
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Obtient le titre, le nom convivial ou le nom de fichier du processus d’hébergement de ce programme.|  
 |[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Obtient l’identificateur de processus du processus d’hébergement de ce programme.|  
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Obtient le nom de l’ordinateur, que le processus d’hébergement de ce programme est en cours d’exécution.|  
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Obtient le nom de l’ordinateur que le processus d’hébergement de ce programme est en cours d’exécution.|  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

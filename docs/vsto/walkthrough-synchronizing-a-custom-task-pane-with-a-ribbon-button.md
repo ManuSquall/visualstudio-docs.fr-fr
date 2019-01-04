@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Synchroniser un volet Office personnalisé avec un bouton de ruban'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943562"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procédure pas à pas : Synchroniser un volet Office personnalisé avec un bouton de ruban
   Cette procédure pas à pas montre comment créer un volet Office personnalisé que les utilisateurs peuvent masquer ou afficher en cliquant sur un bouton bascule du ruban. Vous devez toujours créer un élément d’interface utilisateur, comme un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet Office personnalisé. En effet, les applications Microsoft Office ne proposent aucune méthode par défaut permettant aux utilisateurs d’afficher ou de masquer des volets Office personnalisés.  
@@ -63,7 +60,7 @@ ms.locfileid: "35672837"
   
 ### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Créez un projet de complément Excel nommé **SynchroniserVoletOfficeEtRuban**à l’aide du modèle de projet de complément Excel. Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créez un projet de complément Excel nommé **SynchroniserVoletOfficeEtRuban**à l’aide du modèle de projet de complément Excel. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** et ajoute le projet **SynchroniserVoletOfficeEtRuban** dans l’ **Explorateur de solutions**.  
   
@@ -139,7 +136,7 @@ ms.locfileid: "35672837"
   
 1.  Dans le Concepteur de ruban, double-cliquez sur le bouton bascule **Afficher le Volet Office** .  
   
-     Visual Studio génère automatiquement un gestionnaire d’événements nommé `toggleButton1_Click`, qui gère l’événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Visual Studio ouvre également le *MyRibbon.cs* ou *MyRibbon.vb* fichier dans l’éditeur de Code.  
+     Visual Studio génère automatiquement un gestionnaire d’événements nommé `toggleButton1_Click`, qui gère l’événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Visual Studio ouvre également le fichier *MyRibbon.cs* ou *MyRibbon.vb* dans l’éditeur de code  
   
 2.  Remplacez le gestionnaire d'événements `toggleButton1_Click` par le code suivant. Lorsque l’utilisateur clique sur le bouton bascule, ce code affiche ou masque le volet Office personnalisé, selon l’état du bouton bascule (activé ou désactivé).  
   
@@ -170,15 +167,13 @@ ms.locfileid: "35672837"
   
 -   Créer un volet Office personnalisé dans un complément VSTO pour une autre application. Pour plus d’informations sur les applications qui prennent en charge des volets de tâches personnalisés, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
--   Automatiser une application à partir d’un volet Office personnalisé Pour plus d’informations, consultez [procédure pas à pas : automatisation d’une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatiser une application à partir d’un volet Office personnalisé Pour plus d’informations, consultez [Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Créer un volet Office personnalisé pour chaque message électronique ouvert dans Outlook. Pour plus d’informations, consultez [procédure pas à pas : afficher des volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Créer un volet Office personnalisé pour chaque message électronique ouvert dans Outlook. Pour plus d’informations, consultez [Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Volets Office personnalisés](../vsto/custom-task-panes.md)   
- [Comment : ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Procédure pas à pas : Automatisation d’une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Procédure pas à pas : Affichage des volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [Guide pratique pour Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)  
-  
-  

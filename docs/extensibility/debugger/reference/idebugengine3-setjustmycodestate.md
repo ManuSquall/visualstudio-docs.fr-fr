@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::SetJustMyCodeState
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffad3e6be4d81e19bd6f707bd30c744904217ba5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9dafc7a98b511c9d7b8367e96621faee9e2cbc22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914421"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Cette méthode indique au moteur de débogage sur les informations d’état JustMyCode.  
@@ -28,10 +25,10 @@ Cette méthode indique au moteur de débogage sur les informations d’état Jus
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT SetJustMyCodeState(  
-   BOOL           fUpdate,  
-   DWORD          dwModules,  
-   JMC_CODE_SPEC* rgJMCSpec  
+HRESULT SetJustMyCodeState(  
+   BOOL           fUpdate,  
+   DWORD          dwModules,  
+   JMC_CODE_SPEC* rgJMCSpec  
 );  
 ```  
   

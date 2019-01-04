@@ -1,9 +1,6 @@
 ---
 title: Création de modèles de projets et modèles d’élément | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d8864c7b3e5bd43de58032daf88a947cd4082c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822331"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 

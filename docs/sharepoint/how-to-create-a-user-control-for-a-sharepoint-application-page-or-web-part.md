@@ -1,13 +1,8 @@
 ---
-title: 'Comment : créer un contrôle utilisateur pour une Page d’Application SharePoint WebPart ou | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un contrôle utilisateur pour une Page d’Application SharePoint WebPart ou | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e099cd5e3de88d88fa3a48b1d9b287d5d185000
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9ed93a92f50920382e551521a6889ee2ed42f7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820746"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Comment : créer un contrôle utilisateur pour une application SharePoint partie web ou de page
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procédure : Créer un contrôle utilisateur pour une application SharePoint partie web ou de page
   Vous pouvez créer des contrôles utilisateur personnalisés qui fournissent des fonctionnalités personnalisées pour votre solution SharePoint, et vous pouvez réutiliser cette fonctionnalité dans votre projet. Vous pouvez inclure les contrôles utilisateur dans un composant WebPart ou une application page, ajoutez d’autres contrôles ASP.NET et les contrôles de SharePoint et définir les propriétés et méthodes pour le contrôle. Pour plus d’informations sur les contrôles utilisateur, consultez [créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) et [contrôles utilisateur et des contrôles serveur dans SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).  
   
 ### <a name="to-create-a-user-control-for-sharepoint"></a>Pour créer un contrôle utilisateur pour SharePoint  
@@ -61,4 +56,3 @@ ms.locfileid: "51296162"
  [Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
  [Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-  

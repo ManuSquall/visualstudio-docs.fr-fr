@@ -1,15 +1,10 @@
 ---
-title: 'Comment : ajouter une propriété personnalisée | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter une propriété personnalisée | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913294"
 ---
-# <a name="how-to-add-a-custom-property"></a>Comment : ajouter une propriété personnalisée
+# <a name="how-to-add-a-custom-property"></a>Procédure : Ajouter une propriété personnalisée
   Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de la **éditeur de la propriété**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que des chaînes de connexion et autres données au moment de l’exécution.  
   
 ### <a name="to-add-a-custom-property"></a>Pour ajouter une propriété personnalisée  
@@ -53,5 +48,3 @@ ms.locfileid: "36756228"
  [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

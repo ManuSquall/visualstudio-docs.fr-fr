@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest3::GetRequestInfo2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0349ecb12d60018b09271efe5b988cc44585dc4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4290c34d37cfd5c444702d6040d7c934e698d53f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904862"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Cette méthode obtient les informations de demande de point d’arrêt qui décrit cette demande de point d’arrêt.  
@@ -28,9 +25,9 @@ Cette méthode obtient les informations de demande de point d’arrêt qui décr
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetRequestInfo2(  
-   BPREQI_FIELDS      dwFields,  
-   BP_REQUEST_INFO2*  bBPRequestInfo  
+HRESULT GetRequestInfo2(  
+   BPREQI_FIELDS      dwFields,  
+   BP_REQUEST_INFO2*  bBPRequestInfo  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : répertorier par programmation toutes les feuilles de calcul dans un classeur'
-ms.custom: ''
+title: 'Procédure : Répertorier par programmation toutes les feuilles de calcul dans un classeur'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb82b26fedce0590c5c2fe9cfa1b321fef5dbf19
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2cab3547bb23aa563e2c6b5bfe6a82a93fd5e29e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928722"
 ---
-# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Comment : répertorier par programmation toutes les feuilles de calcul dans un classeur
+# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procédure : Répertorier par programmation toutes les feuilles de calcul dans un classeur
   La classe <xref:Microsoft.Office.Interop.Excel.Workbook> fournit un objet <xref:Microsoft.Office.Interop.Excel.Worksheets>. Cet objet contient une collection de tous les objets <xref:Microsoft.Office.Interop.Excel.Worksheet> du classeur spécifié.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,8 +41,6 @@ ms.locfileid: "35257759"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
- [Comment : ajouter par programmation des feuilles de calcul à des classeurs](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Comment : déplacer des feuilles de calcul dans les classeurs par programmation](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Guide pratique pour Ajouter par programmation des feuilles de calcul à des classeurs](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Guide pratique pour Déplacer des feuilles de calcul dans les classeurs par programmation](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
  [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

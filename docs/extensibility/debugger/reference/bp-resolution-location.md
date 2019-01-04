@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954511"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Spécifie la structure de l’emplacement de la résolution de point d’arrêt.  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  (C++ uniquement) Un espace réservé.  
   
  `unionmember1`  
- (C# uniquement) Consultez la section Notes sur l’interprétation.  
+ [C# uniquement] Consultez la section Notes sur l’interprétation.  
   
  `unionmember2`  
- (C# uniquement) Consultez la section Notes sur l’interprétation.  
+ [C# uniquement] Consultez la section Notes sur l’interprétation.  
   
  `unionmember3`  
- (C# uniquement) Consultez la section Notes sur l’interprétation.  
+ [C# uniquement] Consultez la section Notes sur l’interprétation.  
   
  `unionmember4`  
- (C# uniquement) Consultez la section Notes sur l’interprétation.  
+ [C# uniquement] Consultez la section Notes sur l’interprétation.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) et [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structures.  
   
- (C# uniquement) Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpType` valeur ensuite à travers à déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple d’une façon d’interpréter cette structure en c#.  
+ [C# uniquement] Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpType` valeur ensuite à travers à déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple d’une façon d’interpréter cette structure en c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -113,12 +110,12 @@ namespace MyPackage
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

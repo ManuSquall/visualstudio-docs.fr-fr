@@ -1,13 +1,8 @@
 ---
 title: Intégration de données métiers dans SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934438"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Intégrer des données métiers dans SharePoint
   Vous pouvez intégrer des données métiers dans SharePoint. Données d’entreprise peuvent provenir d’applications de serveur principal, tel que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel et SAP, ou un service Web. Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données d’entreprise à l’aide des listes externes ou WebPart Business Data dans SharePoint.  Ils peuvent également accéder ces données hors connexion dans une application Microsoft Office telles que Microsoft Outlook. Pour plus d’informations, consultez [où peut vous afficher les données externes](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -61,4 +56,3 @@ ms.locfileid: "37119227"
 |[Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)|Montre comment créer un modèle ou de l’importer un modèle que vous exportez à partir de SharePoint.|  
 |[Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)|Explique comment concevoir les éléments d’un modèle à l’aide des outils de conception de Visual Studio.|  
 |[Quand utiliser SharePoint Designer vs. Solutions de Visual Studio lors de la création à l’aide de BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Vous permet de décider s’il faut utiliser Visual Studio ou utiliser SharePoint Designer pour créer un modèle pour le BDC.|  
-  
