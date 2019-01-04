@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter par programmation des formes à un document Visio'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 79b71b89ef8923d311fd38684158dd1694aa893f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865555"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procédure : Ajouter par programmation des formes à un document Visio
   Vous pouvez ajouter des formes à un document Microsoft Office Visio en récupérant les formes de base d’un gabarit et en déplaçant les formes sur la page active.  
@@ -44,5 +41,3 @@ ms.locfileid: "53802657"
  [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)   
  [Utilisez des formes Visio](../vsto/working-with-visio-shapes.md)   
  [Guide pratique pour Copier et coller des formes dans un document Visio par programme](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
-  
-  

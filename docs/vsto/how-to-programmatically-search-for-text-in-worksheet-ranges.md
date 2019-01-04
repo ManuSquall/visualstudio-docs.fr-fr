@@ -1,9 +1,6 @@
 ---
-title: 'Comment : rechercher du texte dans les plages de feuille de calcul par programmation'
-ms.custom: ''
+title: 'Procédure : Rechercher du texte dans les plages de feuille de calcul par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826125"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Comment : rechercher par programmation pour le texte dans les plages de feuille de calcul
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procédure : Rechercher par programmation pour le texte dans les plages de feuille de calcul
   Le <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut également être une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul comme `#NULL!` ou `#VALUE!`. Pour plus d’informations sur les chaînes d’erreur, consultez [les valeurs d’erreur de cellule](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671961"
 > [!NOTE]  
 >  Le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> recherche de la méthode reprend au début de la plage de recherche une fois qu’il a atteint la fin de la plage. Votre code doit s’assurer que la recherche ne pas inclure dans un wrapper autour de dans une boucle infinie. L’exemple de procédure montre comment gérer cette situation à l’aide de la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriété.  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : utiliser la méthode Find dans un complément à Excel ?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Utilisez la méthode Find dans un complément à Excel ? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Pour rechercher du texte dans une plage de feuille de calcul  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671961"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des plages](../vsto/working-with-ranges.md)   
- [Comment : appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Comment : faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Guide pratique pour Appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Guide pratique pour Faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  
