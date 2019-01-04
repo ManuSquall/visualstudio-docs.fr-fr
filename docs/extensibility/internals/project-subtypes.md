@@ -1,9 +1,6 @@
 ---
-title: Les sous-types de projet | Documents Microsoft
-ms.custom: ''
+title: Les sous-types de projet | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91a16ad11f7089230138919519922d58f3cc472
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fdbc00863c7aa0d03ad94bd60966e81f7faaf81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853454"
 ---
-# <a name="project-subtypes"></a>Sous-types de projet
-Les sous-types de projet vous permettent de personnaliser ou version le comportement des systèmes de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personnalisations incluent l’enregistrement de données supplémentaires dans le fichier projet, en ajoutant ou en filtrant les éléments dans le **ajouter un nouvel élément** boîte de dialogue contrôle de la façon dont les assemblys sont de débogage et déployés et l’extension du projet **propriété Pages** boîte de dialogue. Les VSPackages implémenter des sous-types de projet à l’aide de regroupements COM.  
+# <a name="project-subtypes"></a>Sous-types de projets
+Les sous-types de projet vous permettent de personnaliser ou de spécifier le comportement des systèmes de projet de la version [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personnalisations incluent l’enregistrement des données supplémentaires dans le fichier projet, en ajoutant ou en filtrant les éléments dans le **ajouter un nouvel élément** boîte de dialogue, contrôler comment les assemblys sont débogués et déployés et en étendant le projet **propriété Pages** boîte de dialogue. Les VSPackages implémenter des sous-types de projet à l’aide d’agrégation COM.  
   
 > [!NOTE]
->  Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lui-même utilise des sous-types de projet pour implémenter les projets Smart Device et de SQL Server.  
+>  Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lui-même utilise des sous-types de projet pour implémenter des projets Smart Device et de SQL Server.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Conception de sous-types de projets](../../extensibility/internals/project-subtypes-design.md)  
@@ -35,10 +32,10 @@ Les sous-types de projet vous permettent de personnaliser ou version le comporte
  Décrit la séquence de l’initialisation de sous-type de projet par programmation par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement.  
   
  [Propriétés et méthodes étendues par les sous-types de projets](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)  
- Fournit des descriptions détaillées des fonctions et méthodes fréquemment étendus à l’aide de sous-types de projet.  
+ Fournit des descriptions détaillées des fonctions et méthodes étendues plus fréquemment à l’aide de sous-types de projet.  
   
  [Données persistantes dans le fichier projet MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)  
- Décrit comment rendre persistantes des données dans un fichier projet et comment utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> pour conserver les données dans le fichier projet entre les niveaux d’agrégation de sous-type projet.  
+ Décrit comment conserver les données dans un fichier projet et comment utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> pour conserver les données dans le fichier projet entre les niveaux de d’agrégation de sous-type de projet.  
   
  [Interface utilisateur des propriétés du projet](../../extensibility/internals/project-property-user-interface.md)  
  Décrit comment les sous-types de projet peuvent modifier le projet **Pages de propriétés** boîte de dialogue.  
@@ -53,10 +50,10 @@ Les sous-types de projet vous permettent de personnaliser ou version le comporte
  Explique comment un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet à l’aide de Managed Package Framework (MPF).  
   
  [Gestion de déploiement spécialisé](../../extensibility/internals/handling-specialized-deployment.md)  
- Explique comment les sous-types de projet peuvent fournir le comportement de déploiement spécialisées en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface.  
+ Explique comment les sous-types de projet peuvent fournir le comportement de déploiement spécialisé en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface.  
   
  [Ajout et suppression de pages de propriétés](../../extensibility/adding-and-removing-property-pages.md)  
- Décrit l’ajout et suppression de pages de propriétés dans le Concepteur de projets.  
+ Décrit l’ajout et suppression des pages de propriétés dans le Concepteur de projets.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Types de projets](../../extensibility/internals/project-types.md)  

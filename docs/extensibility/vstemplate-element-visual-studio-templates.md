@@ -1,6 +1,5 @@
 ---
 title: VSTemplate, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e1af9e283093c053324a12742ff23a7f3b3e9c
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 899a8ac07d8e5b578c7619cceff173608b15792a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947021"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate, élément (modèles Visual Studio)
 Contient toutes les métadonnées sur le modèle de projet, un modèle d’élément ou un starter kit.  

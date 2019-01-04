@@ -1,9 +1,6 @@
 ---
-title: 'Comment : migrer des projets d’extensibilité vers Visual Studio 2017 | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Migrer des projets d’extensibilité vers Visual Studio 2017 | Microsoft Docs'
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820408"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer des projets d’extensibilité vers Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2017
 
 Ce document explique comment mettre à niveau des projets d’extensibilité vers Visual Studio 2017. En plus de décrire comment mettre à jour les fichiers projet, il décrit également comment mettre à niveau à partir de la version de manifeste d’extension 2 (v2 VSIX) vers la nouvelle version 3 format de manifeste VSIX (v3 VSIX).
 
@@ -40,7 +37,7 @@ Le fichier projet (par exemple **.csproj*) sera mis à jour :
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Mettre à jour le package Microsoft.VSSDK.BuildTools NuGet
 
->**Remarque :** si votre solution ne référence pas le package Microsoft.VSSDK.BuildTools NuGet, vous pouvez ignorer cette étape.
+>**Remarque :** Si votre solution ne référence pas le package Microsoft.VSSDK.BuildTools NuGet, vous pouvez ignorer cette étape.
 
 Pour générer votre extension dans le nouveau v3 VSIX format (version 3), votre solution doit être généré avec la nouvelle extensibilité Visual Studio Build Tools. Le composant sera installé avec Visual Studio 2017, mais votre extension de v2 VSIX peut contenir une référence à une version antérieure par le biais de NuGet. Dans ce cas, vous devez installer manuellement une mise à jour du package Microsoft.VSSDK.BuildTools NuGet pour votre solution.
 
@@ -57,7 +54,7 @@ Pour mettre à jour les références NuGet Microsoft.VSSDK.BuildTools :
 
 Pour vous assurer que l’installation de l’utilisateur de Visual Studio dispose de tous les assemblys requis pour exécuter l’extension, spécifiez tous les composants requis ou les packages dans le fichier manifeste d’extension. Lorsqu’un utilisateur tente d’installer l’extension, le VSIXInstaller vérifie si tous les composants requis sont installés. Si certaines sont manquantes, l’utilisateur sera invité à installer les composants manquants dans le cadre du processus d’installation de l’extension.
 
->**Remarque :** au minimum, toutes les extensions doivent spécifier le composant de Visual Studio core editor comme condition préalable.
+>**Remarque :** Au minimum, toutes les extensions doivent spécifier le composant de Visual Studio core editor comme condition préalable.
 
 * Modifiez le fichier de manifeste d’extension (généralement appelé *source.extension.vsixmanifest*).
 * Vérifiez `InstallationTarget` inclut 15.0.
@@ -83,7 +80,7 @@ Exemple :
 
 Au lieu de modifier directement le XML du manifeste, vous pouvez utiliser la nouvelle **conditions préalables** onglet dans le Concepteur de manifeste pour sélectionner les conditions préalables et le code XML sera être mises à jour automatiquement.
 
->**Remarque :** le Concepteur de manifeste uniquement vous permettra de sélectionner les composants (pas les charges de travail ou les Packages) qui sont installés sur l’instance actuelle de Visual Studio. Si vous devez ajouter une condition préalable pour une charge de travail, un package ou un composant qui n’est pas installé, modifiez directement le code XML du manifeste.
+>**Remarque :** Le Concepteur de manifeste uniquement vous permettra de sélectionner les composants (pas les charges de travail ou les Packages) qui sont installés sur l’instance actuelle de Visual Studio. Si vous devez ajouter une condition préalable pour une charge de travail, un package ou un composant qui n’est pas installé, modifiez directement le code XML du manifeste.
 
 * Ouvrez *source.extension.vsixmanifest [Design]* fichier.
 * Sélectionnez **prérequis** onglet, puis appuyez sur **New** bouton.
@@ -97,7 +94,7 @@ Au lieu de modifier directement le XML du manifeste, vous pouvez utiliser la nou
 * Cliquez sur la liste déroulante pour **nom** et sélectionnez la condition préalable souhaitée.
 * Si nécessaire, mettez à jour la version.
 
-  >Remarque : Le champ de version sera prérempli avec la version du composant actuellement installée, avec une plage couvrant jusqu'à (, mais sans inclure) la prochaine version majeure du composant.
+  >Remarque : Le champ version sera déjà renseigné avec la version du composant actuellement installée, avec une plage couvrant jusqu'à (, mais sans inclure) la prochaine version majeure du composant.
 
   ![ajouter la condition préalable de roslyn](media/add-roslyn-prerequisite.png)
 
@@ -107,11 +104,11 @@ Au lieu de modifier directement le XML du manifeste, vous pouvez utiliser la nou
 
 Si vous souhaitez déboguer votre extension dans une instance expérimentale de Visual Studio, assurez-vous que les paramètres du projet pour **déboguer** > **action de démarrage** a le **Démarrer externe programme :** valeur définie sur le *devenv.exe* fichier de votre installation de Visual Studio 2017.
 
-Cela peut ressembler : *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+Cela peut ressembler : *C:\Program fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Démarrer le programme externe](media/start-external-program.png)
 
->**Remarque :** l’Action de démarrage de débogage sont généralement stockée dans le *. csproj.user* fichier. Ce fichier est généralement inclus dans le *.gitignore* de fichiers et, par conséquent, n’est pas normalement enregistré avec d’autres fichiers de projet lorsque validées dans le contrôle de code source. Par conséquent, si vous avez extrait votre solution fraîches à partir du contrôle de code source, il est probable que le projet n’aura aucune valeur définie pour l’Action de démarrage. Les nouveaux projets VSIX créés avec Visual Studio 2017 aura un *. csproj.user* fichier créé avec les valeurs par défaut qui pointe vers le répertoire d’installation de Visual Studio en cours. Toutefois si vous migrez une extension de v2 VSIX, il est probable que le *. csproj.user* fichier contiendra des références au répertoire d’installation de la version précédente Visual Studio. Définition de la valeur pour **déboguer** > **action de démarrage** permettra l’instance expérimentale de Visual Studio correcte à lancer lorsque vous essayez de déboguer votre extension.
+>**Remarque :** L’Action de démarrage de débogage sont généralement stockée dans le *. csproj.user* fichier. Ce fichier est généralement inclus dans le *.gitignore* de fichiers et, par conséquent, n’est pas normalement enregistré avec d’autres fichiers de projet lorsque validées dans le contrôle de code source. Par conséquent, si vous avez extrait votre solution fraîches à partir du contrôle de code source, il est probable que le projet n’aura aucune valeur définie pour l’Action de démarrage. Les nouveaux projets VSIX créés avec Visual Studio 2017 aura un *. csproj.user* fichier créé avec les valeurs par défaut qui pointe vers le répertoire d’installation de Visual Studio en cours. Toutefois si vous migrez une extension de v2 VSIX, il est probable que le *. csproj.user* fichier contiendra des références au répertoire d’installation de la version précédente Visual Studio. Définition de la valeur pour **déboguer** > **action de démarrage** permettra l’instance expérimentale de Visual Studio correcte à lancer lorsque vous essayez de déboguer votre extension.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Vérifiez que l’extension se génère correctement (comme un v3 VSIX)
 
@@ -128,7 +125,7 @@ Cela peut ressembler : *C:\Program Files (x86) \Microsoft Visual Studio\2017\En
 
 Vérifiez que l’extension VSIX s’installe correctement sur un ordinateur avec tous les composants requis installés.
 
->**Remarque :** avant d’installer n’importe quelle extension, arrêtez toutes les instances de Visual Studio.
+>**Remarque :** Avant d’installer n’importe quelle extension, arrêtez toutes les instances de Visual Studio.
 
 Essayez d’installer l’extension :
 
@@ -149,7 +146,7 @@ Si Visual Studio a été récemment ouvert, vous pouvez voir une boîte de dialo
 
 Attendez que les processus à arrêter, ou arrêter manuellement les tâches. Vous trouverez les processus par le nom répertorié, ou avec le PID figure entre parenthèses.
 
->**Remarque :** ces processus automatiquement éteindra pas pendant l’exécution d’une instance de Visual Studio. Assurez-vous que vous avez arrêté toutes les instances de Visual Studio sur l’ordinateur - y compris ceux d’autres utilisateurs, puis réessayera.
+>**Remarque :** Ces processus automatiquement éteindra pas pendant l’exécution d’une instance de Visual Studio. Assurez-vous que vous avez arrêté toutes les instances de Visual Studio sur l’ordinateur - y compris ceux d’autres utilisateurs, puis réessayera.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Vérifier lorsque manque les conditions préalables requises
 
@@ -180,7 +177,7 @@ Si vous ne savez pas quel composant contient un fichier binaire spécifique, té
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>Visual Studio 2017-ComponentBinaryMapping.xlsx
 
-Il existe quatre colonnes dans la feuille Excel : **nom du composant**, **ComponentId**, **Version**, et **binaire / noms de fichiers**.  Vous pouvez utiliser les filtres pour rechercher et trouver les fichiers binaires et des composants spécifiques.
+Il existe quatre colonnes dans la feuille Excel : **Nom du composant**, **ComponentId**, **Version**, et **binaire / noms de fichiers**.  Vous pouvez utiliser les filtres pour rechercher et trouver les fichiers binaires et des composants spécifiques.
 
 Pour toutes les références, vous devez d’abord déterminer celles qui sont dans le composant d’éditeur (Microsoft.VisualStudio.Component.CoreEditor) core.  Au minimum, nous demandons le composant de l’éditeur principal d’être spécifiés comme un composant requis pour toutes les extensions. Des références restantes qui ne sont pas dans l’éditeur principal, ajoutez des filtres dans les **binaires / noms de fichiers** section Rechercher des composants qui ont le sous-ensemble de ces références.
 

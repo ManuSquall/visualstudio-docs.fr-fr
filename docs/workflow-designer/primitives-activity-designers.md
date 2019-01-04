@@ -3,23 +3,22 @@ title: Concepteur de flux de travail - concepteurs d’activités Primitives
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a92a9a6f09ac576d8ed69c4bf94d9983545ccf4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 910e241195a7aac5f51a341825b5605ecce5c6bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873619"
 ---
 # <a name="primitives-activity-designers"></a>Concepteurs d'activités primitives
 
-Les concepteurs d'activités primitives sont utilisés pour créer et configurer différentes activités dans l'espace de noms <xref:System.Activities.Statements> telles qu'Assign et Delay. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation de l’activité de Workflow Designer et les concepteurs de modèles.
+Les concepteurs d'activités primitives sont utilisés pour créer et configurer différentes activités dans l'espace de noms <xref:System.Activities.Statements> telles qu'Assign et Delay. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation de l’activité du Concepteur de Workflow et les concepteurs de modèles.
 
 ## <a name="related-sections"></a>Rubriques connexes
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

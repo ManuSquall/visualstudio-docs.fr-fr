@@ -1,9 +1,6 @@
 ---
-title: 'Comment : utiliser par programmation les boîtes de dialogue intégrées dans Word'
-ms.custom: ''
+title: 'Procédure : Utiliser par programmation les boîtes de dialogue intégrées dans Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829061"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Comment : utiliser par programmation les boîtes de dialogue intégrées dans Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procédure : Utiliser par programmation les boîtes de dialogue intégrées dans Word
   Lorsque vous travaillez avec Microsoft Office Word, voici les heures lorsque vous avez besoin pour afficher des boîtes de dialogue pour l’entrée utilisateur. Bien que vous pouvez créer votre propre, vous souhaiterez également adoptez l’approche de l’utilisation des boîtes de dialogue intégrées dans Word, qui sont exposés dans le <xref:Microsoft.Office.Interop.Word.Dialogs> collection de la <xref:Microsoft.Office.Interop.Word.Application> objet. Cela permet d’accéder à plus de 200 des boîtes de dialogue, qui sont représentées en tant qu’énumérations.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35671200"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : utiliser par programmation les boîtes de dialogue Word en mode masqué](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Guide pratique pour Utiliser par programmation les boîtes de dialogue Word en mode masqué](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict, instruction](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Réflexion (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Réflexion (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: EVALFLAGS90 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43c8c7dcba7ea1125c031f0cc64a902d88f67017
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18f077bff6733467dbdf885be480fb4346edd513
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833178"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Énumère les valeurs valides pour les indicateurs qui contrôlent l’évaluation de l’expression. Cette énumération étend la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération.  
@@ -95,12 +92,12 @@ public enum enum_EVALFLAGS90
  EVAL90_FORCE_EVALUATION_NOW  
  Évaluation de force à se produire immédiatement. Cela est utile lors de la maintenance d’une requête, telle qu’une demande utilisateur.  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Msdbg90.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Msdbg90.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

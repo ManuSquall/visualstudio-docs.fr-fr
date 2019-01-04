@@ -1,6 +1,5 @@
 ---
 title: Assembly, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2c1482f419153d14ad2d319f4581b1e14de7c6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 74e57ae61ddfaa24de4cc8e3e332b3fa9f7250c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912897"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
 Spécifie les informations relatives à un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  

@@ -1,9 +1,6 @@
 ---
 title: Guide de test de Plug-ins de contrôle de code Source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827898"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 Cette section fournit des conseils pour tester votre contrôle de source de plug-in avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Une vue d’ensemble complète des zones de tests les plus courantes, ainsi que certains domaines plus complexes qui peuvent s’avérer problématiques est fourni. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.  
@@ -39,8 +36,8 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
  Projet client  
  Un projet de type disponible dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qui prend en charge l’intégration du contrôle de code source (par exemple, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ou [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
- Projet Web  
- Il existe quatre types de projets Web : système de fichiers, serveur IIS Local, Sites distants et FTP.  
+ projet Web  
+ Il existe quatre types de projets Web : Système de fichiers, serveur IIS Local, Sites distants et FTP.  
   
 - Projets de système de fichiers sont créés sur un chemin d’accès local, mais ils ne nécessitent pas d’Internet Information Services (IIS) pour être installé car ils sont accessibles en interne via un chemin d’accès UNC et peuvent être placées sous contrôle de code source à partir de l’IDE, comme les projets clients.  
   
@@ -58,55 +55,55 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
   
 ## <a name="test-areas-covered-in-this-section"></a>Cette Section traités des zones de test  
   
--   [Zone de test 1 : Ajouter à/Ouvrir à partir du contrôle de code source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Cas 1 a : ajouter la Solution au contrôle de code Source  
+    -   Cas 1 : Ajoutez la Solution au contrôle de code Source  
   
-    -   Cas 1 b : Ouvrez la Solution à partir du contrôle de code Source  
+    -   1 b cas : Ouvrir une Solution à partir du contrôle de code Source  
   
-    -   Cas 1c : ajouter la Solution à partir du contrôle de code Source  
+    -   Cas 1c : Ajouter la Solution à partir du contrôle de code Source  
   
--   [Zone de test 2 : Obtenir à partir du contrôle de code source](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Zone de test 2 : Obtenir à partir du contrôle de code Source](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Zone de test 3 : Extraire/Annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Zone de test 3 : Découvrez / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Cas 3 : Extraire / annuler l’extraction  
+    -   Cas 3 : Découvrez / annuler l’extraction  
   
-    -   Cas 3 a : extraire  
+    -   Cas 3 : Extraire  
   
-    -   Cas 3 b : déconnecté d’extraction  
+    -   3 b de cas : Extraction déconnectée  
   
-    -   Cas 3c : modifier/la requête enregistrer (QEQS)  
+    -   Cas 3c : Modifier/la requête d’enregistrement (QEQS)  
   
-    -   Cas 3d : L’extraction en mode silencieux  
+    -   Cas 3d : Extraction en mode silencieux  
   
-    -   Cas 3e : annuler l’extraction  
+    -   3e cas : Annuler l’extraction  
   
--   [Zone de test 4 : Archiver](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Zone de test 4 : Date d'arrivée](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Cas 4 a : modification des éléments  
+    -   4 a case : Éléments modifiés  
   
-    -   Cas 4 b : ajout de fichiers  
+    -   4 b de cas : Ajout de fichiers  
   
-    -   Cas c 4 : ajout de projets  
+    -   Cas 4c : Ajout de projets  
   
--   [Zone de test 5 : Modifier le contrôle de code source](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Zone de test 5 : Modifier le contrôle de code Source](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Cas 5 a : lier  
+    -   5 a case : Lier  
   
-    -   Cas 5 b : supprimer la liaison  
+    -   5 b de cas : Annuler la liaison  
   
-    -   Cas 5c : relier  
+    -   Cas 5c : reliaison  
   
 -   [Zone de test 6 : Supprimer](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)  
+-   [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)  
   
 -   [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Cas 8 a : modification automatique  
+    -   8 a case : Modification automatique  
   
-    -   Cas 8 b : modification sur les solutions  
+    -   8 b de cas : Modification sur les solutions  
   
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../../extensibility/source-control-plug-ins.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA2200 : Levez à nouveau une exception pour conserver les détails de la pile'
+title: 'CA2200 : Lever à nouveau pour conserver les détails de la pile'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - RethrowToPreserveStackDetails
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cc85931ed51bcd3df3a044452af59a530746805
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 6b52d6d9081827de764e47399dc09159d29ad149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915771"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200 : Levez à nouveau une exception pour conserver les détails de la pile
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200 : Lever à nouveau pour conserver les détails de la pile
 
 |||
 |-|-|

@@ -1,18 +1,17 @@
 ---
-title: 'Procédure pas à pas : utilisation de XSLT Hierarchy'
+title: 'Procédure pas à pas : À l’aide de XSLT Hierarchy'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834722"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Procédure pas à pas : Utiliser XSLT hierarchy
 
@@ -109,7 +108,7 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
 
 5.  Démarrez le débogage.
 
-6.  Lorsque le débogueur s’arrête à l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur la **pas à pas détaillé** bouton. Le débogage peut être poursuivie dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
+6.  Lorsque le débogueur s’arrête au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur la **pas à pas détaillé** bouton. Le débogage peut être poursuivi dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
 
 ## <a name="see-also"></a>Voir aussi
 

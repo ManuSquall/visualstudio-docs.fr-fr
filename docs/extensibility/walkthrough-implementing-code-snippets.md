@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Implémentation d’extraits de Code | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902186"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Procédure pas à pas : Extraits de code implémentation
+# <a name="walkthrough-implement-code-snippets"></a>Procédure pas à pas : Implémenter des extraits de code
 Vous pouvez créer des extraits de code et incluez-les dans une extension de l’éditeur, afin que les utilisateurs de l’extension de les ajouter à leur propre code.  
   
  Un extrait de code est un fragment de code ou autre texte qui peut être incorporé dans un fichier. Pour afficher tous les extraits de code qui ont été inscrits pour les langages de programmation particuliers, sur le **outils** menu, cliquez sur **Gestionnaire des extraits de Code**. Pour insérer un extrait de code dans un fichier, avec le bouton droit où vous souhaitez que l’extrait de code, cliquez sur Insérer un extrait, ou **entourer**, recherchez l’extrait de code, puis double-cliquez dessus. Appuyez sur **onglet** ou **MAJ**+**onglet** pour modifier les parties pertinentes de l’extrait de code, puis appuyez sur **entrée** ou **ÉCHAP** pour l’accepter. Pour plus d’informations, consultez [extraits de Code](../ide/code-snippets.md).  
@@ -33,7 +30,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
 3. Implémenter l’expansion d’extrait de code.  
   
-   Cette procédure pas à pas est basée sur [procédure pas à pas : affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Cette procédure pas à pas est basée sur [procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -112,7 +109,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Pour inscrire des extraits de code pour un GUID spécifique  
   
-1.  Ouvrez le **CompletionTest** projet. Pour plus d’informations sur la création de ce projet, consultez [procédure pas à pas : affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Ouvrez le **CompletionTest** projet. Pour plus d’informations sur la création de ce projet, consultez [procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  Dans le projet, ajoutez des références aux assemblys suivants :  
   

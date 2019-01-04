@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::DestroyObjectID | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::DestroyObjectID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f776feafe86180c60df7cc69a2c4afb6a3070012
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0339da5c07741c6db15f2df9db6daad455af699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851886"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Détruit l’ID unique associé à cette propriété, indiquant que l’appelant n’a plus besoin d’identifier cette propriété identifie de façon unique à partir de toutes les autres propriétés.  
@@ -28,13 +25,13 @@ Détruit l’ID unique associé à cette propriété, indiquant que l’appelant
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT DestroyObjectID(  
+HRESULT DestroyObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int DestroyObjectID();  
+int DestroyObjectID();  
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ajouter des marqueurs de texte Standard | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter des marqueurs de texte Standard | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874626"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Comment : ajouter des marqueurs de texte standard
+# <a name="how-to-add-standard-text-markers"></a>Procédure : Ajouter des marqueurs de texte standard
 Utilisez la procédure suivante pour créer l’un des types de marqueur de texte par défaut fournis avec le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal.  
   
 ## <a name="to-create-a-text-marker"></a>Pour créer un marqueur de texte  
@@ -51,6 +48,6 @@ Utilisez la procédure suivante pour créer l’un des types de marqueur de text
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser des marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Comment : implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)   
- [Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
- [Comment : utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)
+ [Guide pratique pour Implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)   
+ [Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
+ [Guide pratique pour Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)

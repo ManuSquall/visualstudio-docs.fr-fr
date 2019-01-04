@@ -1,9 +1,6 @@
 ---
 title: Lancement d’un programme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab4432eed95fd042bd35d34b6a42d3cd036fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862151"
 ---
 # <a name="launch-a-program"></a>Lancer un programme
 Appuyez sur les utilisateurs souhaitant déboguer un programme **F5** d’exécuter le débogueur à partir de l’IDE. Commence une série d’événements qui aboutissent à présent dans l’IDE de la connexion à un moteur de débogage (DE), qui est à son tour connecté, ou attaché, le programme comme suit :  
@@ -28,7 +25,7 @@ Appuyez sur les utilisateurs souhaitant déboguer un programme **F5** d’exécu
   
 2. Si un D’est spécifié, l’Allemagne appelle le système d’exploitation pour lancer le programme. Par conséquent le lancement du programme, l’environnement d’exécution du programme charge. Par exemple, si un programme est écrit dans le langage MSIL, le common language runtime est appelé pour exécuter le programme.  
   
-    - ou -  
+    ou  
   
     Si un DE n’est pas spécifié, le port appelle le système d’exploitation pour lancer le programme, ce qui provoque l’environnement d’exécution du programme à charger.  
   

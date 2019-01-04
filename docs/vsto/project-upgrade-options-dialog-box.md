@@ -1,9 +1,6 @@
 ---
 title: Mise à niveau, boîte de dialogue Options projets
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Project_Upgrade
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: fe2f6e251be529cc066c1e66fa9d79773b161bb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825592"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Mise à niveau, boîte de dialogue Options projets
   Utilisez la page **Mise à niveau du projet** pour spécifier si Visual Studio modifie automatiquement les projets de complément VSTO pour cibler la version d’Office installée sur l’ordinateur de développement.  
@@ -37,6 +34,4 @@ ms.locfileid: "50671935"
   
 ## <a name="see-also"></a>Voir aussi  
  [Mettre à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Comment : solutions de mise à niveau d’Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
-  
-  
+ [Guide pratique pour Mettre à niveau les solutions Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  

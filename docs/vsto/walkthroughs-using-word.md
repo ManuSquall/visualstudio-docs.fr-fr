@@ -1,9 +1,6 @@
 ---
 title: Procédures pas à pas utilisant Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a439b100c273ee7e884e54b03a44049ad8494935
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822915"
 ---
 # <a name="walkthroughs-using-word"></a>Procédures pas à pas utilisant Word
   Les procédures suivantes montrent comment utiliser les personnalisations au niveau du document et les compléments VSTO pour automatiser Microsoft Office Word et personnaliser l’interface utilisateur.  
@@ -33,16 +30,16 @@ ms.locfileid: "35258325"
  [Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Montre comment ajouter du texte dans un document Word quand les utilisateurs entrent un texte dans les contrôles d'un volet Actions.  
   
- [Procédure pas à pas : Liaison de données aux contrôles dans un volet actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
+ [Procédure pas à pas : Lier des données aux contrôles dans un volet actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Montre comment lier des données aux contrôles d'un volet Actions. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.  
   
  [Procédure pas à pas : Modifier la mise en forme du document à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Montre comment utiliser des cases à cocher dans un document Word pour modifier la mise en forme.  
   
- [Procédure pas à pas : Afficher du texte dans une zone de texte dans un document à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Procédure pas à pas : Texte affiché dans une zone de texte dans un document à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Montre comment utiliser les boutons et les zones de texte dans les documents Word.  
   
- [Procédure pas à pas : Mise à jour d’un graphique dans un document à l’aide de cases d’option](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [Procédure pas à pas : Mettre à jour d’un graphique dans un document à l’aide de cases d’option](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Montre comment modifier des styles de graphique dans un document Word à l'aide de cases d'option dans une personnalisation au niveau du document.  
   
  [Procédure pas à pas : Créer des menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
@@ -75,5 +72,3 @@ ms.locfileid: "35258325"
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)  
-  
-  

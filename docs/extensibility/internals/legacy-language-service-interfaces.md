@@ -1,9 +1,6 @@
 ---
 title: Interfaces de Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e195862ae2cd164a2c62ac16eb17c7a2f07e5c09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: affb6fac59413fc80f07c6e5ff238b4f9d56ee33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858315"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces du service de langage hérité
 Pour n’importe quel langage de programmation particulier, il peut y avoir qu’une seule instance d’un service de langage à la fois. Toutefois, un service de langage unique peut servir plusieurs éditeurs.  
@@ -55,4 +52,4 @@ Pour n’importe quel langage de programmation particulier, il peut y avoir qu�
   
 ## <a name="see-also"></a>Voir aussi  
  [Développement d’un Service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Liste de vérification : création d’un service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+ [Liste de vérification : Création d’un Service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
