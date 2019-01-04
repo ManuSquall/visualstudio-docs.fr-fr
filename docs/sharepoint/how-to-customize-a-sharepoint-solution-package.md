@@ -1,9 +1,6 @@
 ---
-title: 'Comment : personnaliser un Package de Solution SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Personnaliser un Package de Solution SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
@@ -13,8 +10,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd1ebe9e49a0b3e26d090fdbbdbbe4dd37c0344a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835394"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>Comment : personnaliser un package de solution SharePoint
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>Procédure : Personnaliser un package de solution SharePoint
   Vous pouvez utiliser le Concepteur de packages pour créer et personnaliser un package (*.wsp*). Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, spécifiez si le serveur Web est réinitialisé lorsque la solution est déployée, définissez le type de serveur de déploiement.  
   
 ## <a name="open-the-package-designer"></a>Ouvrez le Concepteur de packages  
@@ -47,7 +42,7 @@ ms.locfileid: "37119214"
   
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Pour afficher le fichier manifeste de package à l’aide de l’Explorateur de solutions  
   
-1.  Dans **l’Explorateur de solutions**, choisissez **afficher tous les fichiers**.  
+1.  Dans l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**.  
   
 2.  Développez le Package, développez le package et ouvrez le *Package.Template.xml* fichier.  
   
@@ -94,4 +89,3 @@ ms.locfileid: "37119214"
   
 ## <a name="see-also"></a>Voir aussi
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,13 +1,8 @@
 ---
 title: 'Procédure pas à pas : Créer une activité de flux de travail de Site personnalisé | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951811"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procédure pas à pas : Créer une activité de flux de travail de site personnalisée
   Cette procédure pas à pas montre comment créer une activité personnalisée pour un flux de travail au niveau du site à l’aide [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Flux de travail au niveau du site s’appliquent à l’ensemble du site, pas seulement une liste sur le site). L’activité personnalisée crée une liste d’annonces de sauvegarde, puis copie le contenu de la liste d’annonces dedans.  
@@ -128,6 +123,5 @@ ms.locfileid: "49894168"
 5.  Dans la barre de lancement rapide, choisissez le **annonces sauvegarde** lien. Notez que toutes les annonces qui sont contenus dans le **annonces** liste ont été copiés vers cette nouvelle liste.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Guide pratique pour Créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

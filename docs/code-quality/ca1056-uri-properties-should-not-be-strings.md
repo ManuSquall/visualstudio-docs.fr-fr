@@ -1,8 +1,7 @@
 ---
-title: 'CA1056 : Les propriétés Uri ne doivent pas être des chaînes'
+title: 'CA1056 : Propriétés de l’URI ne doivent pas être de chaînes'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UriPropertiesShouldNotBeStrings
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71c4428596281abf0ad606624bd67c40a490ee49
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 65c111e1379c3421f7541d05b817dd10be6bd674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927517"
 ---
-# <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056 : Les propriétés Uri ne doivent pas être des chaînes
+# <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056 : Propriétés de l’URI ne doivent pas être de chaînes
 
 |||
 |-|-|
@@ -56,10 +55,10 @@ ms.locfileid: "45549376"
  [!code-cpp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CPP/ca1056-uri-properties-should-not-be-strings_1.cpp)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1054 : Les paramètres d’URI ne doivent pas être des chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054 : Paramètres de l’URI ne doivent pas être de chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055 : Les valeurs de retour d’URI ne doivent pas être des chaînes](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055 : Les valeurs doivent être pas des chaînes de retour URI](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
 
  [CA2234 : Passez des objets System.Uri au lieu de chaînes](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
- [CA1057 : Les surcharges d’URI de chaîne appellent des surcharges de System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+ [CA1057 : Surcharges d’URI de chaîne appellent les surcharges de System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

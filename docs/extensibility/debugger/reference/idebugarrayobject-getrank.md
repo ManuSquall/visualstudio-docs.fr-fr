@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject::GetRank | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject::GetRank
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7660be0b391208fc52b81796c0a980b079e5aaa2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e433b8c50b363347469586d2ecde4bd287a58264
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857283"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Obtient le rang du tableau, autrement dit, le nombre de dimensions.  
@@ -28,7 +25,7 @@ Obtient le rang du tableau, autrement dit, le nombre de dimensions.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetRank(   
+HRESULT GetRank(   
    DWORD* pdwRank  
 );  
 ```  

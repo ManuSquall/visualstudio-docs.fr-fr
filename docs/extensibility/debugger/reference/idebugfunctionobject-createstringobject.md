@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject::CreateStringObject | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject::CreateStringObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7933b2d7082432bd4f9db567ad6bb5b7788e28b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56c35ca77a5b6529ba61bc89697d6ed6b91284fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963189"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Crée un objet de chaîne.  
@@ -28,7 +25,7 @@ Crée un objet de chaîne.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT CreateStringObject(   
+HRESULT CreateStringObject(   
    LPCOLESTR      pcstrString,  
    IDebugObject** ppObject  
 );  

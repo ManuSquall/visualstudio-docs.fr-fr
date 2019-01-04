@@ -1,9 +1,6 @@
 ---
 title: PROVIDER_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - PROVIDER_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a44fa73a51f1f6da073c63be0873fbefc669b15d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98d19546f3b02601b35f24e26db3b875c6f089b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949139"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Spécifie les propriétés souhaitées doivent être obtenues à partir d’un fournisseur de programme.  
@@ -28,27 +25,27 @@ Spécifie les propriétés souhaitées doivent être obtenues à partir d’un f
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_PROVIDER_FLAGS {  
-   PFLAG_NONE                    = 0x00,  
-   PFLAG_REMOTE_PORT             = 0x01,  
-   PFLAG_DEBUGGEE                = 0x02,  
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
-   PFLAG_REASON_WATCH            = 0x08,  
-   PFLAG_GET_PROGRAM_NODES       = 0x10,  
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
+enum enum_PROVIDER_FLAGS {  
+   PFLAG_NONE                    = 0x00,  
+   PFLAG_REMOTE_PORT             = 0x01,  
+   PFLAG_DEBUGGEE                = 0x02,  
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
+   PFLAG_REASON_WATCH            = 0x08,  
+   PFLAG_GET_PROGRAM_NODES       = 0x10,  
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
 };  
-typedef DWORD PROVIDER_FLAGS;  
+typedef DWORD PROVIDER_FLAGS;  
 ```  
   
 ```csharp  
-public enum enum_PROVIDER_FLAGS {  
-   PFLAG_NONE                    = 0x00,  
-   PFLAG_REMOTE_PORT             = 0x01,  
-   PFLAG_DEBUGGEE                = 0x02,  
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
-   PFLAG_REASON_WATCH            = 0x08,  
-   PFLAG_GET_PROGRAM_NODES       = 0x10,  
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
+public enum enum_PROVIDER_FLAGS {  
+   PFLAG_NONE                    = 0x00,  
+   PFLAG_REMOTE_PORT             = 0x01,  
+   PFLAG_DEBUGGEE                = 0x02,  
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
+   PFLAG_REASON_WATCH            = 0x08,  
+   PFLAG_GET_PROGRAM_NODES       = 0x10,  
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
 };  
 ```  
   
@@ -85,12 +82,12 @@ public enum enum_PROVIDER_FLAGS {
   
   Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

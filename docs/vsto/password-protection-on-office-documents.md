@@ -1,9 +1,6 @@
 ---
 title: Protection de mot de passe des documents Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856999"
 ---
 # <a name="password-protection-on-office-documents"></a>Protection de mot de passe des documents Office
   Il est possible de définir un mot de passe sur vos documents Microsoft Office Word et les classeurs Microsoft Office Excel afin qu’ils ne peuvent pas être ouverts par une personne ne connaît pas le mot de passe. Cette option est appelée **mot de passe à l’ouverture**.  
@@ -43,7 +40,5 @@ ms.locfileid: "35670801"
 ## <a name="see-also"></a>Voir aussi  
  [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)   
  [Information rights management et vue d’ensemble des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Comment : permettre au code à exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Guide pratique pour Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

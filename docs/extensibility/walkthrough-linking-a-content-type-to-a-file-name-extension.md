@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926185"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procédure pas à pas : Lier un type de contenu à une extension de nom de fichier
 Vous pouvez définir votre propre type de contenu et lier une extension de nom de fichier en utilisant les extensions de Managed Extensibility Framework (MEF) de l’éditeur. Dans certains cas, l’extension de nom de fichier est déjà définie par un service de langage. Toutefois, pour l’utiliser avec MEF, vous devez toujours lier à un type de contenu.  
@@ -93,7 +90,7 @@ Vous pouvez définir votre propre type de contenu et lier une extension de nom d
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Ajouter le type de contenu à une exportation de l’éditeur  
   
-1.  Créer une extension de l’éditeur. Par exemple, vous pouvez utiliser l’extension de glyphe de marge décrite dans [procédure pas à pas : créer un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Créer une extension de l’éditeur. Par exemple, vous pouvez utiliser l’extension de glyphe de marge décrite dans [procédure pas à pas : Créer un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Ajoutez la classe que vous avez défini dans cette procédure.  
   

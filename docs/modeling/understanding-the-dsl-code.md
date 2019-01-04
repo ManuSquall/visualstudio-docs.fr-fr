@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886369"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution de langage spécifique à un domaine (DSL) génère une API que vous pouvez utiliser pour lire et mettre à jour les instances du DSL dans Visual Studio. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.
 
-## <a name="the-example-solution-component-diagrams"></a>Exemple de solution : diagrammes de composants
+## <a name="the-example-solution-component-diagrams"></a>L’exemple de solution : Diagrammes de composants
  Pour créer la solution qui est la source de la plupart des exemples de cette rubrique, créez un DSL à partir de la **modèles de composants** modèle de solution. Il s'agit de l'un des modèles standard qui apparaissent quand vous créez une solution DSL.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  `ConnectionBuilders.cs`
 
- Un générateur de connexion est une classe qui crée des relations. Il s'agit du code derrière un outil de connexion. Ce fichier contient une paire de classes pour chaque outil de connexion. Leurs noms sont dérivés les noms de l’outil de relation et de connexion de domaine : *relation*générateur, et *Outil_connecteur*ConnectAction.
+ Un générateur de connexion est une classe qui crée des relations. Il s'agit du code derrière un outil de connexion. Ce fichier contient une paire de classes pour chaque outil de connexion. Leurs noms sont dérivés les noms de l’outil de relation et de connexion de domaine : *Relation*générateur, et *Outil_connecteur*ConnectAction.
 
  (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)
 

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer des règles de Validation de Package et de fonctionnalité personnalisée pour les Solutions SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer des règles de Validation de Package et de fonctionnalité personnalisée pour les Solutions SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939219"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Comment : créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procédure : Créer des règles de validation pour les solutions SharePoint package et fonctionnalité personnalisée
   Vous pouvez créer des règles de validation personnalisées pour vérifier le package de solution généré par Visual Studio. Vous pouvez effectuer une validation complète sur un ensemble de la fonctionnalité ou un package en sélectionnant **Validate** dans le menu contextuel d’un package ou une fonctionnalité dans le **PackagingExplorer**. Validation partielle est effectuée lorsque vous ajoutez de nouveaux éléments de projet SharePoint ou des fonctionnalités au projet pour déterminer si le Package ou la fonctionnalité serait dans un état valide.  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>Pour créer une règle de validation de package personnalisé  
@@ -62,4 +59,3 @@ ms.locfileid: "37119194"
   
 ## <a name="see-also"></a>Voir aussi
  [Étendre le déploiement et empaquetage de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

@@ -3,19 +3,18 @@ title: Concepteur de flux de travail - concepteurs d’activités de Migration
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7f118f340ab91359f26ee03c3900d734720c128
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc20f1390b3c4e30f3c7233d7f1c0f55ca0d56ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879677"
 ---
 # <a name="migration-activity-designers"></a>Concepteurs d'activités de migration
 

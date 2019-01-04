@@ -1,9 +1,6 @@
 ---
 title: DEBUG_ADDRESS_UNION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947203"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 Décrit les différents types d’adresses.  
@@ -90,12 +87,12 @@ public struct DEBUG_ADDRESS_UNION {
  (C++ uniquement) Le nom de l’union.  
   
  unionmember  
- (C# uniquement) Cette valeur doit être marshalé vers le type de structure appropriée selon `dwKind`. Consultez la section Notes pour l’association entre `dwKind` et l’interprétation de l’union.  
+ [C# uniquement] Cette valeur doit être marshalé vers le type de structure appropriée selon `dwKind`. Consultez la section Notes pour l’association entre `dwKind` et l’interprétation de l’union.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure fait partie de la [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structurer et représente un d’un nombre de différents types d’adresses (la `DEBUG_ADDRESS` structure est remplie par un appel à la [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) méthode).  
   
- (C# uniquement) Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque type d’adresse. L’exemple montre comment procéder pour un type d’adresse.  
+ [C# uniquement] Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque type d’adresse. L’exemple montre comment procéder pour un type d’adresse.  
   
 |`dwKind`|`unionmember` interprété en tant que|  
 |--------------|----------------------------------|  
@@ -134,12 +131,12 @@ namespace MyPackage
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

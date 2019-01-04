@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::IsEncOutdated | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::IsEncOutdated
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7f8344896c0ad262a8db09cb4caa0e00414431b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838883"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 Cette méthode détermine si l’état de modifier & Continuer de cet objet ou du conteneur parent est obsolète. Un évaluateur d’expression personnalisée n’implémente pas cette méthode et renvoie toujours `E_NOTIMPL`.  
@@ -28,14 +25,14 @@ Cette méthode détermine si l’état de modifier & Continuer de cet objet ou d
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
+HRESULT IsEncOutdated(  
+   BOOL* pfEncOutdated  
 );  
 ```  
   
 ```csharp  
-int IsEncOutdated(  
-   out int pfEncOutdated  
+int IsEncOutdated(  
+   out int pfEncOutdated  
 );  
 ```  
   

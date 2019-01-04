@@ -1,9 +1,6 @@
 ---
 title: Création de Packages de Solution SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,22 +13,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966662"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Créer des packages de solution SharePoint
   À l’aide du Concepteur de packages, vous pouvez créer et personnaliser des packages de déploiement. Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, réinitialiser le serveur IIS, définir des étendues de l’activation de fonctionnalité et identifier les dépendances de fonctionnalité. Le concepteur génère également un manifeste, un fichier XML qui décrit chaque package.  
   
 ## <a name="packaging-tools"></a>Outils d’empaquetage
- Vous pouvez utiliser la **Concepteur de packages** pour personnaliser le package et générer le manifeste. Vous pouvez inclure des éléments de projet SharePoint, configurer si le serveur Web doit être réinitialisé et définissez le type de serveur de déploiement. Pour plus d’informations, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Vous pouvez utiliser la **Concepteur de packages** pour personnaliser le package et générer le manifeste. Vous pouvez inclure des éléments de projet SharePoint, configurer si le serveur Web doit être réinitialisé et définissez le type de serveur de déploiement. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
- Vous pouvez également utiliser le **Explorateur de package** pour modifier les fonctionnalités et les éléments dans votre fichier de package (*.wsp*). Pour plus d’informations, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Vous pouvez également utiliser le **Explorateur de package** pour modifier les fonctionnalités et les éléments dans votre fichier de package (*.wsp*). Pour plus d'informations, voir [Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
- Vous pouvez utiliser Visual Studio et MSBuild pour créer le package (*.wsp*) fichiers à déployer votre solution SharePoint. Ce processus génère les fichiers manifestes nécessaires au déploiement de SharePoint. Pour plus d’informations, consultez [Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
+ Vous pouvez utiliser Visual Studio et MSBuild pour créer le package (*.wsp*) fichiers à déployer votre solution SharePoint. Ce processus génère les fichiers manifestes nécessaires au déploiement de SharePoint. Pour plus d'informations, voir [Procédure : Créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
   
 ## <a name="package-designer-options"></a>Options du Concepteur de package
  Le tableau suivant présente les propriétés que vous pouvez personnaliser dans les packages de SharePoint avec le **Concepteur de packages**.  
@@ -54,7 +51,7 @@ ms.locfileid: "36326850"
 |BeforeLayout|La cible qui effectue les tâches juste avant que les fichiers sont copiés dans un répertoire intermédiaire. Vous pouvez modifier les fichiers avant de créer un fichier de package (*.wsp*).|  
 |AfterLayout|La cible qui effectue les tâches immédiatement après que les fichiers sont copiés dans un répertoire intermédiaire.|  
   
- Pour plus d’informations, [Comment : personnaliser un package de solution SharePoint à l’aide de cibles MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
+ Pour plus d’informations, [Comment : Personnaliser un package de solution SharePoint à l’aide de cibles MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
   
 ## <a name="packaging-architecture"></a>Architecture d’empaquetage
  Les étapes suivantes se produisent lorsque vous créez un package SharePoint (*.wsp*) dans Visual Studio.  
@@ -75,10 +72,8 @@ ms.locfileid: "36326850"
  Lorsque vous empaquetez votre projet SharePoint, un *.wsp* fichier est créé pour vous dans le *créez\\\<BuildConfiguration >* dossier. Par exemple, si votre solution se trouve dans *C:\Visual Studio 2013\Projects\ListDefinition1* et votre configuration de build est définie sur la version, le *.wsp* fichier se trouve dans *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
- [Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Comment : personnaliser un package de solution SharePoint à l’aide de cibles de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
-  
- 
+ [Guide pratique pour Personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Guide pratique pour Ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
+ [Guide pratique pour Créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Guide pratique pour Créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Guide pratique pour Personnaliser un package de solution SharePoint à l’aide de cibles de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  

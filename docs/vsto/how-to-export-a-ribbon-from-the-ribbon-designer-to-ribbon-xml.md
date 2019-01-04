@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Exporter un ruban à partir du Concepteur de ruban vers ruban XML'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 370c2e1d08c47b8a5068d0227426d2b4083590a5
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894059"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procédure : Exporter un ruban à partir du Concepteur de ruban vers ruban XML
   Le **ruban (Concepteur visuel)** élément ne prend pas en charge tous les types possibles de personnalisation du ruban. Pour personnaliser le ruban de façon avancée, vous pouvez exporter le ruban à partir du concepteur vers ruban XML et modifier directement le XML.  
@@ -73,5 +70,3 @@ ms.locfileid: "53646930"
  [Élément XML Ribbon](../vsto/ribbon-xml.md)   
  [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Procédure pas à pas : Créer un onglet personnalisé à l’aide de XML du ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

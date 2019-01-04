@@ -1,13 +1,8 @@
 ---
 title: 'Procédure pas à pas : Création d’une liste externe dans SharePoint à l’aide des données d’entreprise | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918782"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : Créer une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -125,7 +120,7 @@ Le **modèle de connectivité de données métiers** projet ajoute une entité p
 
 Ajouter une entité au modèle. Vous pouvez ajouter des entités à partir de Visual Studio **boîte à outils** sur le concepteur BDC.
 
-1. Dans la barre de menus, choisissez **vue** > **boîte à outils**.
+1. Dans la barre de menus, choisissez **Affichage** > **Boîte à outils**.
 
 2. Sur le **BusinessDataConnectivity** onglet de la **boîte à outils**, ajoutez un **entité** sur le concepteur BDC.
 
@@ -275,9 +270,9 @@ Lorsque vous exécutez le projet, le site SharePoint s’ouvre et Visual Studio 
 
 Pour plus d’informations sur la conception de modèles pour le service BDC dans SharePoint à partir de ces rubriques :
 
-- [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md).
-- [Comment : ajouter une méthode de mise à jour du](../sharepoint/how-to-add-an-updater-method.md).
-- [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md).
+- [Guide pratique pour Ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md).
+- [Guide pratique pour Ajoutez une méthode de mise à jour du](../sharepoint/how-to-add-an-updater-method.md).
+- [Guide pratique pour Ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Voir aussi
 

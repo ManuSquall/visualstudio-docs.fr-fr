@@ -1,9 +1,6 @@
 ---
 title: L’utilisation du Service de projet SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875817"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Utiliser le service de projet SharePoint
   Le système de projet SharePoint inclut un service de projet que vous pouvez utiliser pour effectuer des tâches liées au système de projet. Le service de projet est un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.  
   
- Vous pouvez accéder au service de projet SharePoint dans toute extension d'outils SharePoint. Vous pouvez également y accéder dans d’autres types d’extensions Visual Studio, comme les modules complémentaires et VSPackages. Pour plus d’informations, consultez [Comment : récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+ Vous pouvez accéder au service de projet SharePoint dans toute extension d'outils SharePoint. Vous pouvez également y accéder dans d’autres types d’extensions Visual Studio, comme les modules complémentaires et VSPackages. Pour plus d'informations, voir [Procédure : Récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
 ## <a name="project-service-features"></a>Fonctionnalités de service de projet
  Le tableau suivant répertorie les tâches que vous pouvez effectuer à l’aide du service de projet SharePoint et la méthode ou propriété <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> à utiliser pour effectuer chaque tâche.  
@@ -47,8 +44,7 @@ ms.locfileid: "51295057"
   
 ## <a name="see-also"></a>Voir aussi
  [Effectuer une conversion entre les types de système de projet SharePoint et d’autres types de projet Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [Comment : récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
+ [Guide pratique pour Récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Extensions d’outils de la vue d’ensemble du modèle de programmation de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
- [Guide pratique pour obtenir un service à partir de l’objet DTE](https://msdn.microsoft.com/library/bb166401.aspx)  
-  
+ [Guide pratique pour Obtenir un Service à partir de l’objet DTE](https://msdn.microsoft.com/library/bb166401.aspx)  

@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble des modèles de projet Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940599"
 ---
 # <a name="office-project-templates-overview"></a>Vue d’ensemble des modèles de projet Office
   Les Outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création des types suivants de solutions Office :  
@@ -172,9 +169,7 @@ ms.locfileid: "49934325"
 ## <a name="see-also"></a>Voir aussi  
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Développer des solutions Office](../vsto/developing-office-solutions.md)   
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Prise en main de programmation de personnalisations au niveau du document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Prise en main de programmation de personnalisations au niveau du document pour Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

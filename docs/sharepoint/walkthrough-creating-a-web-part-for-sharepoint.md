@@ -1,13 +1,8 @@
 ---
 title: 'Procédure pas à pas : Création d’un composant WebPart pour SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944283"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint
 
@@ -222,6 +217,6 @@ Afficher et masquer les employés qui ne sont pas responsables en cliquant sur u
 ## <a name="see-also"></a>Voir aussi
 
 [Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Guide pratique pour Créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Guide pratique pour Créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
 [Procédure pas à pas : Créer un composant WebPart pour SharePoint à l’aide d’un concepteur](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

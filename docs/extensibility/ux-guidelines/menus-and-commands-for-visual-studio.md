@@ -1,9 +1,6 @@
 ---
 title: Menus et commandes de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933795"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus et commandes de Visual Studio
 ## <a name="command-usage"></a>Utilisation de la commande  
@@ -52,7 +49,7 @@ ms.locfileid: "49937952"
  Il est inutile de placer des commandes à proximité de la zone de focus de l’utilisateur. Un pour ce faire consiste à créer une barre d’outils incorporée en haut de votre fenêtre outil ou d’un document éditeur. Les commandes placées dans la barre d’outils doivent être spécifiques à la zone de contenu au sein de la fenêtre. Ne dupliquent pas des commandes partagées sur ces barres d’outils. Par exemple, ne placez jamais une icône de « Enregistrer » au sein d’une barre d’outils incorporée.  
   
 ### <a name="content-and-command-visibility"></a>Visibilité de contenu et de commande  
- Commandes existent dans les étendues suivantes : **environnement**, **hiérarchie**, et **Document**. Connaître chaque étendue afin d’avoir confiance dans l’emplacement de commande.  
+ Commandes existent dans les étendues suivantes : **Environnement**, **hiérarchie**, et **Document**. Connaître chaque étendue afin d’avoir confiance dans l’emplacement de commande.  
   
  Commandes dans le **environnement** étendue établir le contexte principal et sont partagées entre plusieurs contextes. Modifient la visibilité ou la disposition des documents et des fenêtres Outil. Parmi les commandes dans l’environnement de portée sont **nouveau projet**, **se connecter au serveur**, **attacher processus**, **couper**,  **Copie**, **coller**, **trouver**, **Options**, **personnaliser**, **nouvelle fenêtre**, et **afficher l’aide**.  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937952"
   
 - **Suivez les instructions de Windows pour déterminer quel modificateur touches à employer.** Utilisez les combinaisons de touches Ctrl pour les commandes qui ont des effets à grande échelle, telles que les commandes qui s’appliquent à un document entier. Utiliser des combinaisons de touche MAJ enfoncée pour les commandes qui étendent ou complément les actions de la touche de raccourci standard. N’utilisez pas les combinaisons de touches Ctrl + Alt enfoncées.  
   
-- **Supprimer les raccourcis superflues.** Si vous avez une fonctionnalité héritée, envisagez de supprimer les raccourcis qui sont utilisées avec extrême mensuelle (moins de 10 fois à partir des données CEIP) ou mensuelle modéré (moins de 100 fois à partir des données CEIP), si une clé d’accès fournit un accès rapide à la même commande. Par exemple : Alt, H, C ouvrira/sommaire de l’aide.  
+- **Supprimer les raccourcis superflues.** Si vous avez une fonctionnalité héritée, envisagez de supprimer les raccourcis qui sont utilisées avec extrême mensuelle (moins de 10 fois à partir des données CEIP) ou mensuelle modéré (moins de 100 fois à partir des données CEIP), si une clé d’accès fournit un accès rapide à la même commande. Exemple : ALT, H, C ouvrira/sommaire de l’aide.  
   
   Il n’est pas un moyen simple de vérifier la disponibilité de raccourci. Si vous souhaitez ajouter un raccourci, procédez comme suit :  
   

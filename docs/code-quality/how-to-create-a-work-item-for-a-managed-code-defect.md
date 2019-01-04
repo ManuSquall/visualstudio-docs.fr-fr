@@ -1,8 +1,7 @@
 ---
-title: 'Comment : créer un élément de travail pour une erreur de code managé'
+title: 'Procédure : Créer un élément de travail pour une erreur de code managé'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b251970bfd57b31842e1573e2e156e11a517c81a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ff03686e353fa3df06204c59935ff614bbf7bdfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895608"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Comment : créer un élément de travail pour une erreur de code managé
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Procédure : Créer un élément de travail pour une erreur de code managé
 
 Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour enregistrer l’élément de travail dans Visual Studio. Pour utiliser cette fonctionnalité, votre projet doit faire partie d’un projet Azure DevOps dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 

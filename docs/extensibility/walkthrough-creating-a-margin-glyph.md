@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Création d’un glyphe de marge | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac8d70c401d543afe73ac14d6f8617e5f375482
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851350"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Procédure pas à pas : Créer un glyphe de marge
 Vous pouvez personnaliser l’apparence des marges de l’éditeur à l’aide des extensions de l’éditeur personnalisé. Cette procédure pas à pas place un glyphe personnalisé sur la marge des indicateurs chaque fois que le mot « todo » s’affiche dans un commentaire de code.  

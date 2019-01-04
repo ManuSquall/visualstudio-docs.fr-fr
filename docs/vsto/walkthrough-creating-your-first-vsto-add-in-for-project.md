@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer votre premier complément VSTO pour Project'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931253"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : Créer votre premier complément VSTO pour Project
   Cette procédure pas à pas vous montre comment créer un complément, VSTO pour Microsoft Office Project. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -123,13 +120,13 @@ ms.locfileid: "50671415"
 ## <a name="next-steps"></a>Étapes suivantes  
  Maintenant que vous avez créé un complément VSTO de base pour Project, vous pouvez en savoir plus sur le développement des compléments VSTO en consultant les rubriques suivantes :  
   
--   Les tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO pour Project : [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO pour Project : [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Utilisation du modèle objet de projet : [projet solutions](../vsto/project-solutions.md).  
+-   À l’aide du modèle objet de Project : [Solutions de projet](../vsto/project-solutions.md).  
   
--   Génération et débogage des Compléments VSTO pour Project : [solutions Office Build](../vsto/building-office-solutions.md).  
+-   Génération et débogage des Compléments VSTO pour Project : [Générer des solutions Office](../vsto/building-office-solutions.md).  
   
--   Déploiement de compléments VSTO pour Project : [déployer une solution Office](../vsto/deploying-an-office-solution.md).  
+-   Déploiement de compléments VSTO pour Project : [Déployer une solution Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671415"
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)  
-  
-  

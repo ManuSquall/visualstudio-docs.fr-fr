@@ -1,9 +1,6 @@
 ---
 title: Évaluation d’une Expression de la fenêtre Espion | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822701"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Évaluer une expression de la fenêtre Espion
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232101"
 7.  Les appels de Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour obtenir la valeur de l’expression est alors affichée dans la liste de suivi.  
   
 ## <a name="parse-then-evaluate"></a>Analyser, puis évaluer  
- Étant donné que l’analyse d’une expression complexe peut prendre beaucoup plus longue que l’évaluer, le processus d’évaluation d’une expression est divisé en deux étapes : 1) analyse de l’expression et (2) d’évaluer l’expression analysée. De cette façon, l’évaluation peut se produire plusieurs fois, mais l’expression doit être analysé qu’une seule fois. L’expression analysée intermédiaire est retournée à partir de la EE dans un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet encapsulé à son tour et retournée à partir de l’Allemagne comme un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet. Le `IDebugExpression` objet diffère de l’évaluation toutes les le `IDebugParsedExpression` objet.  
+ Étant donné que l’analyse d’une expression complexe peut prendre beaucoup plus longue que l’évaluer, le processus d’évaluation d’une expression est divisé en deux étapes : (1) analyse l’expression et 2) évaluer l’expression analysée. De cette façon, l’évaluation peut se produire plusieurs fois, mais l’expression doit être analysé qu’une seule fois. L’expression analysée intermédiaire est retournée à partir de la EE dans un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet encapsulé à son tour et retournée à partir de l’Allemagne comme un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet. Le `IDebugExpression` objet diffère de l’évaluation toutes les le `IDebugParsedExpression` objet.  
   
 > [!NOTE]
 >  Il n’est pas nécessaire pour un EE à adhérer à ce processus en deux étapes, même si Visual Studio considère cela ; le EE peut analyser et évaluer dans la même étape lorsque [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) est appelée (c’est l’exemple MyCEE fonctionne, par exemple). Si votre langage peut former des expressions complexes, vous souhaiterez séparer l’étape d’analyse de l’étape d’évaluation. Cela peut augmenter les performances dans le débogueur Visual Studio lorsque plusieurs expressions espionnes sont affichées.  

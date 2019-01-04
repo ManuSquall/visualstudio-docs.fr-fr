@@ -1,9 +1,6 @@
 ---
 title: Suppression d’un point d’arrêt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, deleting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc85104ca02922c1a28152d75550a821598d7b1e
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: b63fa7622b7dea4a6ad5c516547518911110a8ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958038"
 ---
 # <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
 La section suivante décrit le processus lors de la suppression d’un point d’arrêt en attente :  

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : redimensionner des contrôles dans les cellules de feuille de calcul'
-ms.custom: ''
+title: 'Procédure : Redimensionner des contrôles dans les cellules de feuille de calcul'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927348"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Comment : redimensionner des contrôles dans les cellules de feuille de calcul
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Procédure : Redimensionner des contrôles dans les cellules de feuille de calcul
   Lorsque vous redimensionnez des colonnes ou des lignes sur une feuille de calcul, tous les contrôles hôtes dans les cellules se redimensionnent automatiquement la hauteur ou largeur de la cellule qui a été redimensionnée. Contrôles Windows Forms ne se redimensionnent pas automatiquement par défaut.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35672893"
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
- [Comment : ajouter des contrôles Windows Forms aux documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Comment : masquer des contrôles sur des feuilles de calcul lors de l’impression](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Guide pratique pour Ajouter des contrôles Windows Forms aux documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Guide pratique pour Masquer des contrôles sur des feuilles de calcul lors de l’impression](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Limitations des contrôles Windows Forms sur des documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

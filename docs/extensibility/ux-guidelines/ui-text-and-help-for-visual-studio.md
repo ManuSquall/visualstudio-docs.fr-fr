@@ -1,9 +1,6 @@
 ---
 title: Texte de l’interface utilisateur et l’aide de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907163"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texte de l’interface utilisateur et l’aide de Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> La terminologie et les textes d’interface utilisateur  
@@ -262,7 +259,7 @@ ms.locfileid: "49842233"
   
 |Bon|incorrecte|  
 |----------|---------|  
-|« Le nombre que vous avez composé est retiré du service. Veuillez vérifier le numéro et recomposer ou composez le 0 pour l’opérateur. »|-« Erreur (449) : nombre non conforme »<br />-« Cette erreur d’exception non gérée indique que l’opération a réussi. »<br /><br /> ![Message d’erreur incorrect dans Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|  
+|« Le nombre que vous avez composé est retiré du service. Veuillez vérifier le numéro et recomposer ou composez le 0 pour l’opérateur. »|-« Erreur (449) : Nombre non conforme »<br />-« Cette erreur d’exception non gérée indique que l’opération a réussi. »<br /><br /> ![Message d’erreur incorrect dans Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|  
   
 ## <a name="accessing-help"></a>Accéder à l’aide  
   

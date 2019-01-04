@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter par programmation des lignes et colonnes à des tableaux Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909084"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procédure : Ajouter par programmation des lignes et colonnes à des tableaux Word
   Dans un tableau Microsoft Office Word, les cellules sont organisées en lignes et en colonnes. Vous pouvez utiliser la méthode <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Rows> pour ajouter des lignes au tableau et la méthode <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Columns> pour ajouter des colonnes.  
@@ -82,5 +79,3 @@ ms.locfileid: "53804576"
  [Guide pratique pour Créer par programmation des tableaux Word](../vsto/how-to-programmatically-create-word-tables.md)   
  [Guide pratique pour Ajouter texte et mise en forme aux cellules des tableaux Word par programmation](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [Guide pratique pour Remplir par programmation des tableaux Word avec des propriétés de document](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
-  
-  

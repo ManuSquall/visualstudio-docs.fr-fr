@@ -1,8 +1,6 @@
 ---
 title: Prise en charge supplémentaire pour les erreurs dans les solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -59,12 +57,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 9181b74da09f87d1c19805995b527b9fbd56c52f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946290"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Prise en charge supplémentaire pour les erreurs dans les solutions Office
   Vous pouvez utiliser les ressources suivantes pour vous aider à trouver des réponses aux problèmes que vous rencontrez lorsque vous créez des solutions Office dans Visual Studio.  
@@ -93,5 +91,3 @@ ms.locfileid: "52304452"
  [Résoudre les problèmes de sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)   
  [Résoudre les problèmes de déploiement de solutions Office](../vsto/troubleshooting-office-solution-deployment.md)   
  [Ressources supplémentaires pour le développement de solutions Office](../vsto/additional-resources-for-developing-office-solutions.md)  
-  
-  

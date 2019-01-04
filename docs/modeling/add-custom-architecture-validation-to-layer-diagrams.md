@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e9343ed8fdb1f3993fcd5c2f70595fd4bdd92dcd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f956ddcf996db052e24b4da07b6e4ba64f0f6efb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866213"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
 
@@ -32,7 +31,7 @@ Vous pouvez empaqueter votre extension de validation de couche dans une extensio
 > [!WARNING]
 > Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).
 

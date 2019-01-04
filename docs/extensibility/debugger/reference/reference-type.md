@@ -1,9 +1,6 @@
 ---
 title: REFERENCE_TYPE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - REFERENCE_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcbf8792cf2972c4b419b6309ba2f561b8308812
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38234a2c1e2bdc7e0f3e51a25642e7372bec968a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964583"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Spécifie le type de référence.  
@@ -28,7 +25,7 @@ Spécifie le type de référence.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_REFERENCE_TYPE {   
+enum enum_REFERENCE_TYPE {   
    REF_TYPE_WEAK   = 0x0001,  
    REF_TYPE_STRONG = 0x0002  
 };  
@@ -36,7 +33,7 @@ typedef DWORD REFERENCE_TYPE;
 ```  
   
 ```csharp  
-public enum enum_REFERENCE_TYPE {   
+public enum enum_REFERENCE_TYPE {   
    REF_TYPE_WEAK   = 0x0001,  
    REF_TYPE_STRONG = 0x0002  
 };  
@@ -54,12 +51,12 @@ public enum enum_REFERENCE_TYPE {
   
  Passé en tant que paramètre à la [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

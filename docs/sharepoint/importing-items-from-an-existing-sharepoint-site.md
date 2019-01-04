@@ -1,17 +1,12 @@
 ---
 title: Importation d’éléments d’un Site SharePoint existant | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918152"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importer des éléments à partir d’un site SharePoint existant
   Le modèle de projet Importer le package de solution SharePoint vous permet de réutiliser des éléments tels que des types de contenu et des champs à partir de sites SharePoint existants dans une nouvelle solution SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Vous pouvez exécuter la plupart des solutions importées sans aucune modification, mais il existe certaines restrictions et complications à prendre en compte, en particulier si vous modifiez des éléments après les avoir importés.  
@@ -96,20 +91,20 @@ ms.locfileid: "49832103"
   
  Par exemple, si vous importez la définition de liste ExpenseForms, une définition de liste portant ce nom s’affiche sous le **liste de définitions** dossier dans **l’Explorateur de solutions** avec son  *Elements.XML* et *Schema.xml* fichiers. Toutefois, ses formulaires ASPX et HTML associés peuvent être placés dans un dossier nommé **ExpenseForms** sous le dossier **Autres fichiers importés** . Pour terminer l’importation, déplacez ces fichiers sous la définition de liste ExpenseForms dans l’ **Explorateur de solutions** et modifiez la propriété **DeploymentType** de chaque fichier de **NoDeployment** en **ElementFile**.  
   
- Lorsque vous importez des récepteurs d’événements, le *Elements.xml* fichier est copié vers l’emplacement correct, mais vous devez inclure manuellement l’assembly dans le package de solution afin qu’il soit déployé avec la solution. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] comment procéder, consultez [Comment : ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Lorsque vous importez des récepteurs d’événements, le *Elements.xml* fichier est copié vers l’emplacement correct, mais vous devez inclure manuellement l’assembly dans le package de solution afin qu’il soit déployé avec la solution. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] comment procéder, consultez [Comment : Ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Quand vous importez des flux de travail, les formulaires InfoPath sont copiés dans le dossier **Autres fichiers importés** . Si le *.wsp* fichier contient un modèle Web, il est défini comme page de démarrage dans **l’Explorateur de solutions**.  
   
 ## <a name="import-fields-and-property-bags"></a>Champs d’importation et les conteneurs de propriétés
  Lorsque vous importez une solution comportant plusieurs champs, toutes les définitions de champs distinctes sont fusionnées en un seul *Elements.xml* fichier sous un nœud de **l’Explorateur de solutions** appelé **champs** . De même, toutes les entrées de sac de propriétés sont fusionnées dans un *Elements.xml* fichier sous un nœud appelé **PropertyBags**.  
   
- Dans SharePoint, les champs sont des colonnes d’un type de données spécifié, tel que texte, valeur booléenne ou recherche. Pour plus d’informations, consultez [Bloc de construction : Colonnes et types de champs](http://go.microsoft.com/fwlink/?LinkId=182304). Les conteneurs des propriétés vous permettent d’ajouter des propriétés à toutes sortes d’objets dans SharePoint, d’une batterie de serveurs entière à une simple liste sur un site SharePoint. Ils sont implémentés en tant que table de hachage de noms et de valeurs de propriétés. Pour plus d’informations, consultez [Gestion de la configuration de SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) ou [Paramètres des conteneurs des propriétés SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
+ Dans SharePoint, les champs sont des colonnes d’un type de données spécifié, tel que texte, valeur booléenne ou recherche. Pour plus d’informations, consultez [bloc de construction : Colonnes et Types de champs](http://go.microsoft.com/fwlink/?LinkId=182304). Les conteneurs des propriétés vous permettent d’ajouter des propriétés à toutes sortes d’objets dans SharePoint, d’une batterie de serveurs entière à une simple liste sur un site SharePoint. Ils sont implémentés en tant que table de hachage de noms et de valeurs de propriétés. Pour plus d’informations, consultez [Gestion de la configuration de SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) ou [Paramètres des conteneurs des propriétés SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
   
 ## <a name="delete-items-in-the-project"></a>Supprimer des éléments dans le projet
  La plupart des éléments dans les solutions SharePoint ont un ou plusieurs éléments dépendants. Par exemple, les instances de listes dépendent des types de contenu et les types de contenu dépendent des champs. Une fois que vous avez importé une solution SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne vous signale les éventuels problèmes de référence si vous supprimez un élément dans la solution, mais pas ses éléments dépendants, que lorsque vous tentez de déployer la solution. Par exemple, si une solution importée comporte une instance de liste qui dépend d’un type de contenu et que vous supprimez ce type de contenu, une erreur peut se produire pendant le déploiement. L’erreur se produit si l’élément dépendant n’est pas présent sur le serveur SharePoint. De même, si un élément supprimé a également un conteneur de propriétés, puis supprimez ces entrées à partir de la **PropertyBags** *Elements.xml* fichier. Ainsi, si vous supprimez des éléments d’une solution importée et que des erreurs de déploiement se produisent, vérifiez si des éléments dépendants doivent également être supprimés.  
   
 ## <a name="restore-missing-feature-attributes"></a>Restaurer les attributs de fonctionnalité manquants
- Lors de l’importation de solutions, certains attributs de fonctionnalités facultatifs sont omis du manifeste de fonctionnalité importé. Si vous souhaitez restaurer ces attributs dans le nouveau fichier de fonctionnalité, identifiez les attributs manquants en comparant le fichier de fonctionnalité d’origine au nouveau manifeste de fonctionnalité et suivez les instructions de la rubrique [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Lors de l’importation de solutions, certains attributs de fonctionnalités facultatifs sont omis du manifeste de fonctionnalité importé. Si vous souhaitez restaurer ces attributs dans le nouveau fichier de fonctionnalité, identifiez les attributs manquants en comparant le fichier de fonctionnalité d’origine au nouveau manifeste de fonctionnalité et suivez les instructions de la rubrique [Comment : Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Détection de conflit de déploiement n’est pas effectuée sur les instances de listes intégrées
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] n’effectue pas de détection des conflits de déploiement sur les instances de listes intégrées (c’est-à-dire les instances de listes par défaut fournies avec SharePoint). La non-détection des conflits a pour but d’éviter le remplacement des instances de listes intégrées dans SharePoint. Les instances de listes intégrées sont toujours déployées ou mises à jour, mais ne sont jamais supprimées ou remplacées. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Résoudre les problèmes d’empaquetage de SharePoint et de déploiement](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
@@ -139,7 +134,7 @@ ms.locfileid: "49832103"
  L’absence de contrôle de gestionnaire de scripts peut être problématique quand vous importez un projet [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] ou [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] dans [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], car l’attribut SharePointProductVersion de tous les nouveaux projets a la valeur 14.0. Si vous déployez un projet mis à niveau comportant un formulaire web sans gestionnaire de scripts, le formulaire ne s’affichera pas dans SharePoint.  
   
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : Importation d’éléments d’un site SharePoint existant](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
+ [Procédure pas à pas : Importer des éléments à partir d’un site SharePoint existant](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Directives pour l’importation de flux de travail réutilisables](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
- [Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [Procédure pas à pas : Importer un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
+ [Guide pratique pour Ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

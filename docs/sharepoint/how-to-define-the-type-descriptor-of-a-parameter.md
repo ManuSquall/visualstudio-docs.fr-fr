@@ -1,13 +1,8 @@
 ---
-title: 'Comment : définir le descripteur de Type d’un paramètre | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définir le descripteur de Type d’un paramètre | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953155"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Comment : définir le descripteur de type d’un paramètre
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procédure : Définir le descripteur de type d’un paramètre
   Un descripteur de type contient des propriétés qui décrivent le type de données d'un paramètre. Un descripteur de type peut définir un champ, une entité ou une collection d’entités. Pour plus d’informations, consultez [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Pour définir le descripteur de type d'un paramètre  
@@ -88,7 +83,7 @@ ms.locfileid: "51294979"
   
 2. Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
   
-3. Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacts**).  
+3. Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacte**).  
   
 4. Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d’entités.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294979"
   
 ## <a name="see-also"></a>Voir aussi
  [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)   
+ [Guide pratique pour Ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Guide pratique pour Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Guide pratique pour Définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)   
  [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

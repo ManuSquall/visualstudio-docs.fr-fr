@@ -1,13 +1,8 @@
 ---
 title: Procédures pas à pas de SharePoint développement | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8285f6ef3a3ae01681a646c6ce46023ce2c3a8a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945845"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Guides de développement SharePoint
   Les procédures suivantes montrent comment développer et déployer des solutions SharePoint à l’aide de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -40,8 +35,8 @@ ms.locfileid: "37119165"
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Procédure pas à pas : importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Montre comment importer un flux de travail réutilisable créé avec SharePoint Designer 2010 dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet de flux de travail SharePoint.|  
-|[Procédure pas à pas : importation d’éléments d’un site SharePoint existant](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Montre comment importer des éléments à partir d’un site SharePoint existant dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.|  
+|[Procédure pas à pas : Importer un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Montre comment importer un flux de travail réutilisable créé avec SharePoint Designer 2010 dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet de flux de travail SharePoint.|  
+|[Procédure pas à pas : Importer des éléments à partir d’un Site SharePoint existant](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Montre comment importer des éléments à partir d’un site SharePoint existant dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.|  
   
 ## <a name="web-parts"></a>Composants WebPart
   
@@ -58,7 +53,7 @@ ms.locfileid: "37119165"
 |[Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Montre comment créer un workflow séquentiel de base qui utilise des formulaires d’association et d’initiation.|  
 |[Procédure pas à pas : Ajouter une page d’application à un flux de travail](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Montre comment ajouter une page d’application qui affiche les données dérivées d’un flux de travail dans un projet de flux de travail.|  
 |[Procédure pas à pas : Créer une activité de flux de travail de site personnalisée](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Montre comment créer une activité personnalisée pour un flux de travail au niveau du site.|  
-|[Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Montre comment migrer un flux de travail réutilisable de SharePoint Designer dans Visual Studio.|  
+|[Procédure pas à pas : Importer un flux de travail réutilisable de SharePoint Designer dans Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Montre comment migrer un flux de travail réutilisable de SharePoint Designer dans Visual Studio.|  
   
 ## <a name="application-pages"></a>Pages d’application
   
@@ -96,8 +91,7 @@ ms.locfileid: "37119165"
 |Rubrique|Description|  
 |-----------|-----------------|  
 |[Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Montre comment ajouter de nouveaux nœuds pour afficher les composants WebPart dans les sites SharePoint qui sont affichés dans l’Explorateur de serveurs. Cette procédure pas à pas montre également comment créer une commande SharePoint pour appeler le modèle d’objet de serveur SharePoint.|  
-|[Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Montre comment ajouter de nouveaux nœuds pour afficher les composants WebPart dans les sites SharePoint qui sont affichés dans l’Explorateur de serveurs. Cette procédure pas à pas montre également comment utiliser le modèle d’objet client SharePoint.|  
+|[Procédure pas à pas : Appeler le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Montre comment ajouter de nouveaux nœuds pour afficher les composants WebPart dans les sites SharePoint qui sont affichés dans l’Explorateur de serveurs. Cette procédure pas à pas montre également comment utiliser le modèle d’objet client SharePoint.|  
   
 ## <a name="see-also"></a>Voir aussi
  [Exemples de développement SharePoint et des procédures pas à pas](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
-  

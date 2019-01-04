@@ -1,15 +1,10 @@
 ---
-title: 'Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter et supprimer des éléments dans des fonctionnalités SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964015"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procédure : Ajouter et supprimer des éléments dans des fonctionnalités SharePoint
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les éléments de projet SharePoint par défaut à votre fonction. Avant le déploiement, vous pouvez ajouter et supprimer des éléments de projet SharePoint pour modifier la fonctionnalité SharePoint.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Ajouter des éléments de projet SharePoint à une fonctionnalité  
@@ -35,7 +30,7 @@ ms.locfileid: "49854830"
   
 1. Ouvrez le Concepteur de fonctionnalités.  
   
-    Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Pour plus d'informations, voir [Procédure : Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Ajouter un ou plusieurs éléments à partir de la **éléments dans la Solution** list à le **éléments dans la fonctionnalité** liste en effectuant une ou plusieurs des étapes suivantes :  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854830"
 ## <a name="see-also"></a>Voir aussi
  [Créer des fonctionnalités de SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

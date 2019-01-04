@@ -1,9 +1,6 @@
 ---
-title: 'Comment : exécuter Code lorsqu’un projet SharePoint est déployé ou du retrait | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Code en exécution lorsqu’un projet SharePoint est déployé ou du retrait | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933620"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Comment : exécuter du code quand un projet SharePoint est déployé ou retiré
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Procédure : Exécuter du code quand un projet SharePoint est déployé ou retiré
   Si vous souhaitez effectuer des tâches supplémentaires lorsqu’un projet SharePoint est déployé ou retiré, vous pouvez gérer les événements qui sont déclenchés par Visual Studio. Pour plus d’informations, consultez [SharePoint étendre empaquetage et déploiement](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Pour exécuter du code quand un projet SharePoint est déployé ou retiré  
   
 1. Créer une extension d’élément de projet, une extension de projet ou une définition d’un nouveau type d’élément de projet. Pour plus d’informations, consultez les rubriques suivantes :  
   
-   -   [Comment : créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+   -   [Guide pratique pour Créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-   -   [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+   -   [Guide pratique pour Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-   -   [Comment : définir un type d’élément de projet SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+   -   [Guide pratique pour Définir un type d’élément de projet SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2. Dans l’extension, accédez à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objet. Pour plus d’informations, consultez [Comment : récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+2. Dans l’extension, accédez à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objet. Pour plus d'informations, voir [Procédure : Récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
 3. Gérer le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> événements du service de projet.  
   
@@ -58,5 +55,4 @@ ms.locfileid: "49832444"
   
 ## <a name="see-also"></a>Voir aussi
  [Étendre le déploiement et empaquetage de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Comment : exécuter du code quand l’exécution des étapes de déploiement](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  
+ [Guide pratique pour Exécuter du code quand l’exécution des étapes de déploiement](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  

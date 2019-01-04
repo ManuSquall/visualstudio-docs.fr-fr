@@ -1,15 +1,10 @@
 ---
-title: 'Comment : modifier une Configuration de déploiement SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Modifier une Configuration de déploiement SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843591"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Comment : modifier une configuration de déploiement SharePoint
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procédure : Modifier une configuration de déploiement SharePoint
   Vous pouvez créer une configuration de déploiement ou modifier une configuration de déploiement existante. Par exemple, vous pourrez exécuter une seule étape ou modifier l’ordre des étapes dans le processus de déploiement. Voulez-vous créer ou modifier des configurations de déploiement, car les configurations intégrées et ajoutées par programme ne peut pas être modifiées.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Créer une configuration de déploiement SharePoint  
@@ -58,4 +53,3 @@ ms.locfileid: "43774792"
   
 ## <a name="see-also"></a>Voir aussi
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

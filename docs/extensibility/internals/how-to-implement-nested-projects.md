@@ -1,9 +1,6 @@
 ---
-title: 'Comment : implémenter des projets imbriqués | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Implémenter des projets imbriqués | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945806"
 ---
-# <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
+# <a name="how-to-implement-nested-projects"></a>Procédure : Implémenter des projets imbriqués
 
 Lorsque vous créez un type de projet imbriqué, il existe plusieurs étapes supplémentaires qui doivent être implémentées. Un projet parent prend en charge certaines responsabilités de mêmes que la solution dispose de ses projets imbriqués (enfants). Le projet parent est un conteneur de projets similaires à une solution. En particulier, il existe plusieurs événements qui doivent être déclenchés par la solution et par les projets parent pour générer la hiérarchie de projets imbriqués. Ces événements sont décrits dans le processus suivant pour la création de projets imbriqués.
 

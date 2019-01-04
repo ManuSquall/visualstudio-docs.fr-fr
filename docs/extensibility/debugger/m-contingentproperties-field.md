@@ -1,9 +1,6 @@
 ---
 title: Champ m_contingentProperties | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50676f799367c8a2aece7daacb270d8bb31738e9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 5778c9337984bc6eceb150cd78111ee8eb9037b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821920"
 ---
 # <a name="mcontingentproperties-field"></a>champ de m_contingentProperties
 Stocke des propriétés supplémentaires de la <xref:System.Threading.Tasks.Task> objet.  
   
- **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans *mscorlib.dll*)  
   
@@ -38,4 +35,4 @@ Stocke des propriétés supplémentaires de la <xref:System.Threading.Tasks.Task
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

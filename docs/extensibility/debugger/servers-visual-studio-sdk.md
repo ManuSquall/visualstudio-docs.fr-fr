@@ -1,9 +1,6 @@
 ---
 title: Serveurs (Kit de développement logiciel Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - servers, debugging
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871eeb59832c640ede32e0fcd188941605c4afcb
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 109c24935511f98e5eb3b5d83270960e5a0c6855
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905549"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
 Dans l’architecture du débogueur, une *server*:  

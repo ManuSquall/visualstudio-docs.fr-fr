@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ajouter un nœud SharePoint personnalisé à l’Explorateur de serveurs | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter un nœud SharePoint personnalisé à l’Explorateur de serveurs | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937661"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Comment : ajouter un nœud SharePoint personnalisé à l’Explorateur de serveurs
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procédure : Ajouter un nœud SharePoint personnalisé à l’Explorateur de serveurs
   Vous pouvez ajouter des nœuds personnalisés sous le **connexions SharePoint** nœud **Explorateur de serveurs**. Cela est utile lorsque vous souhaitez afficher des composants SharePoint supplémentaires qui ne sont pas affichés dans **Explorateur de serveurs** par défaut. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Pour ajouter un nœud personnalisé, commencez par créer une classe qui définit le nouveau nœud. Créez ensuite une extension qui ajoute le nœud en tant qu’enfant d’un nœud existant.  
@@ -61,15 +58,15 @@ ms.locfileid: "36755639"
   
 1.  Dans le même projet que votre définition de nœud, créez une classe qui implémente le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface.  
   
-2.  Ajouter le <xref:System.ComponentModel.Composition.ExportAttribute> à la classe d’attributs. Cet attribut permet à Visual Studio détecter et charger votre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implémentation. Passer le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> type au constructeur d’attribut.  
+2.  Appliquez l’attribut <xref:System.ComponentModel.Composition.ExportAttribute> à la classe. Cet attribut permet à Visual Studio détecter et charger votre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implémentation. Passer le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> type au constructeur d’attribut.  
   
-3.  Ajouter le <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> à la classe d’attributs. Dans une extension de nœud, cet attribut spécifie l’identificateur de chaîne pour le type de nœud que vous souhaitez étendre.  
+3.  Appliquez l’attribut <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> à la classe. Dans une extension de nœud, cet attribut spécifie l’identificateur de chaîne pour le type de nœud que vous souhaitez étendre.  
   
      Pour spécifier les types de nœuds intégrés fournis par Visual Studio, passez une des valeurs d’énumération suivantes au constructeur d’attribut :  
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Utilisez ces valeurs pour spécifier des nœuds de connexion de site (nœuds qui affichent les URL de site), nœuds de site ou tous les autres nœuds parents dans **Explorateur de serveurs**.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Utilisez ces valeurs pour spécifier l’un des nœuds intégrés qui représentent un composant individuel sur un site SharePoint, tel qu’un nœud qui représente une liste, un champ ou un type de contenu.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Utilisez ces valeurs pour spécifier un des nœuds intégrés qui représentent un composant individuel sur un site SharePoint, tel qu’un nœud qui représente une liste, un champ ou un type de contenu.  
   
 4.  Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> (méthode), le handle de la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> événement de le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> paramètre.  
   
@@ -100,7 +97,5 @@ ms.locfileid: "36755639"
   
 ## <a name="see-also"></a>Voir aussi
  [Étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Comment : étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Guide pratique pour Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
-  

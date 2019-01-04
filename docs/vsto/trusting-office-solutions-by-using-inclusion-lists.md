@@ -1,9 +1,6 @@
 ---
 title: Approuver des solutions Office à l’aide de listes d’inclusion
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857664"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Approuver des solutions Office à l’aide de listes d’inclusion
   Les listes d’inclusion permettent aux utilisateurs d’approuver des solutions Office signées avec un certificat qui identifie l’éditeur. Elles sont propres à l’utilisateur et elles peuvent servir aux personnalisations au niveau du document et aux compléments VSTO.  
@@ -40,7 +37,7 @@ ms.locfileid: "38783699"
   
  Si l’invite est désactivée, seules les solutions qui possèdent un certificat de confiance connu peuvent être installées. Si le niveau d’invite défini est Authenticode requis, la solution doit être signée avec un certificat émis par une autorité connue, mais elle ne requiert pas un certificat lié à une autorité racine approuvée (un certificat de confiance). Si l’invite est autorisée, la solution peut être signée avec un certificat dont l’identité est inconnue. Dans ce scénario, la décision d’approbation est soumise à l’utilisateur final et un certificat temporaire suffit pour installer une solution.  
   
- Pour plus d’informations, consultez [Comment : configurer la sécurité de liste d’inclusion](../vsto/how-to-configure-inclusion-list-security.md) et le tableau 2, intitulé invitant au niveau du Registre clé valeur effets du lancement, dans [éditeurs dignes de confiance ClickOnce configurer](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Pour plus d'informations, voir [Procédure : Configurer la sécurité de liste d’inclusion](../vsto/how-to-configure-inclusion-list-security.md) et le tableau 2, intitulé invitant au niveau du Registre clé valeur effets du lancement, dans [éditeurs dignes de confiance ClickOnce configurer](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="structure-of-the-inclusion-list"></a>Structure de la liste d’inclusion  
  Une entrée de liste d’inclusion valide comporte deux parties : un chemin vers le manifeste de déploiement et la clé publique utilisée pour signer la solution. Une fois qu’une solution est ajoutée à la liste d’inclusion, elle est considérée comme approuvée. Quand la solution Office s’exécute, l’application Office compare la clé publique figurant dans la liste d’inclusion à la clé de signature figurant dans le manifeste de déploiement pour vérifier que la solution qui est en cours d’exécution est identique à la version d’origine approuvée.  
@@ -48,5 +45,3 @@ ms.locfileid: "38783699"
 ## <a name="see-also"></a>Voir aussi  
  [Accorder votre confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)   
  [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)  
-  
-  

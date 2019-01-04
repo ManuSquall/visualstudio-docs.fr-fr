@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::GetDebugReason | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::GetDebugReason
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60b664680c806f5553e45854a6e678befac952fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 733818736c6a6eaf8428a50aa9a1cf153d578a2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914064"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 Cette méthode retourne la raison que le processus a été lancé pour le débogage.  
@@ -28,8 +25,8 @@ Cette méthode retourne la raison que le processus a été lancé pour le débog
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDebugReason(  
-   DEBUG_REASON* pReason  
+HRESULT GetDebugReason(  
+   DEBUG_REASON* pReason  
 );  
 ```  
   

@@ -2,7 +2,6 @@
 title: Configurer l’analyse du Code
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939756"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : configurer l’analyse du code pour un projet de code managé
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : Configurer l’analyse du Code pour un projet de Code managé
 
 Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code [ensembles de règles](../code-quality/rule-set-reference.md)) à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
 
 > [!TIP]
-> Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications web ASP.NET, consultez [Comment : configurer l’analyse du Code pour ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications web ASP.NET, consultez [Comment : Configurer l’analyse du Code pour un site web ASP.NET Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Pour configurer un ensemble de règles pour un projet .NET Framework
 
@@ -77,4 +76,4 @@ Par défaut, tous les projets gérés d’une solution sont affectés les *règl
 ## <a name="see-also"></a>Voir aussi
 
 - [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)
-- [Comment : configurer l’analyse du Code pour un site web ASP.NET Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Guide pratique pour Configurer l’analyse du Code pour un site web ASP.NET Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

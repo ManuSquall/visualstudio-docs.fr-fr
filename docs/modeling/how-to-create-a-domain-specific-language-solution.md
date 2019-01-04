@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer une solution de langage spécifique à un domaine'
+title: 'Procédure : Créer une solution de langage spécifique à un domaine'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f138f1f809ae5a81aa97c571a147c679bacaa3b2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943770"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Procédure : Créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio spécialisée.
 
 ## <a name="prerequisites"></a>Prérequis

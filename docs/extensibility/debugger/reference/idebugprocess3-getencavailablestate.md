@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::GetENCAvailableState | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::GetENCAvailableState
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f70f685fe8792f698dcc397b2f3fc9ccb6de8dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a114eee347382b5a351f86cee350dacf958626a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860047"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Cette méthode obtient l’état actuel de modifier & Continuer du processus. Un fournisseur de port personnalisé doit toujours retourner `E_NOTIMPL`.  
@@ -28,8 +25,8 @@ Cette méthode obtient l’état actuel de modifier & Continuer du processus. Un
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetENCAvailableState(  
-   EncUnavailableReason* pReason  
+HRESULT GetENCAvailableState(  
+   EncUnavailableReason* pReason  
 );  
 ```  
   

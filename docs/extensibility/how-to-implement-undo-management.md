@@ -1,9 +1,6 @@
 ---
-title: 'Comment : implémenter la gestion de l’annulation | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Implémenter la gestion de l’annulation | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915647"
 ---
-# <a name="how-to-implement-undo-management"></a>Comment : gestion d’annulation implémenter
+# <a name="how-to-implement-undo-management"></a>Procédure : Gestion d’annulation implémenter
 L’interface principale utilisée pour la gestion de l’annulation est <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, qui est implémentée par l’environnement. Pour prendre en charge la gestion d’annulation, implémenter des unités d’annulation distinct (autrement dit, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, qui peut contenir plusieurs étapes individuelles.  
   
  Façon dont vous implémentez la gestion de l’annulation varie selon que votre éditeur prend en charge plusieurs vues ou non. Les procédures pour chaque implémentation sont détaillées dans les sections suivantes.  
@@ -83,4 +80,4 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Comment : effacer la pile d’annulation](../extensibility/how-to-clear-the-undo-stack.md)
+ [Guide pratique pour Effacer la pile d’annulation](../extensibility/how-to-clear-the-undo-stack.md)

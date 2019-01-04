@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer un modèle à l’aide de contrôles de contenu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931984"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procédure pas à pas : Créer un modèle à l’aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.  
@@ -59,7 +56,7 @@ ms.locfileid: "49833185"
   
 ### <a name="to-create-a-new-word-template-project"></a>Pour créer un projet de modèle Word  
   
-1.  Créer un projet de modèle Word portant le nom **MonModèleDeBlocDeConstruction**. Dans l'Assistant, créez un nouveau document dans la solution. Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créer un projet de modèle Word portant le nom **MonModèleDeBlocDeConstruction**. Dans l'Assistant, créez un nouveau document dans la solution. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le nouveau modèle Word dans le concepteur et ajoute le **MonModèleDeBlocDeConstruction** projet **l’Explorateur de solutions**.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49833185"
 5. Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
    > [!NOTE]  
-   >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.  
   
@@ -235,15 +232,13 @@ ms.locfileid: "49833185"
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour plus d'informations sur l'utilisation des contrôles de contenu, consultez la rubrique suivante :  
   
--   Lier des contrôles de contenu à des fragments XML, ou parties XML personnalisées, qui sont incorporés dans un document. Pour plus d’informations, consultez [procédure pas à pas : lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Lier des contrôles de contenu à des fragments XML, ou parties XML personnalisées, qui sont incorporés dans un document. Pour plus d’informations, consultez [Procédure pas à pas : Lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
  [Contrôles de contenu](../vsto/content-controls.md)   
- [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Comment : protéger des parties de documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Guide pratique pour Ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Guide pratique pour Protéger des parties de documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

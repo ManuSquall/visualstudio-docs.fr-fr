@@ -1,9 +1,6 @@
 ---
-title: IEEVisualizerService | Documents Microsoft
-ms.custom: ''
+title: IEEVisualizerService | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerService
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e2b08872a952ecf9d618825c48ae1d5907fa5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d629e5bc557779345ff514d1d90bf03b84e320be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928183"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Cette interface implémente des méthodes qui offrent des fonctionnalités à la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) et [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaces.  
+ Cette interface implémente des méthodes clés qui offrent des fonctionnalités à la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) et [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaces.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,34 +31,34 @@ ms.locfileid: "31121126"
 IEEVisualizerService : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Visual Studio implémente cette interface pour permettre l’évaluateur d’expression (EE) pour prendre en charge les visualiseurs de types.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Visual Studio implémente cette interface afin d’autoriser un évaluateur d’expression (EE) pour prendre en charge les visualiseurs de type.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Les appels EE [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) pour obtenir cette interface dans le cadre de sa prise en charge pour les visualiseurs de types.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Les appels EE [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) pour obtenir cette interface dans le cadre de sa prise en charge pour les visualiseurs de type.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Récupère le nombre de visionneuses personnalisées sur lequel ce service connaît.|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Récupère le nombre de visionneuses personnalisées sur qui sait ce service.|  
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Récupère la liste des visionneuses personnalisées.|  
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Retourne un objet proxy pour une propriété.|  
-|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Récupère le nombre de chaînes à afficher pour la propriété spécifiée ou un champ de valeur.|  
+|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Récupère le nombre de chaînes de valeur à afficher pour la propriété spécifiée ou du champ.|  
   
 ## <a name="remarks"></a>Notes  
- L’IDE utilise le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface pour déterminer s’il existe des visionneuses personnalisées ou tapez les visualiseurs pour la propriété. En créant un service de visualiseur (avec [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), le EE peut fournir les fonctionnalités à la `IDebugProperty3` et [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (qui prend en charge affichage et modification d’un valeur de la propriété) des interfaces et ainsi prendre en charge les visualiseurs de type.  
+ L’IDE utilise le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface pour déterminer s’il existe des visionneuses personnalisées ou tapez visualiseurs pour la propriété. En créant un service de visualiseur (avec [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), le EE peut fournir la fonctionnalité à la `IDebugProperty3` et [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (qui prend en charge l’affichage et modification d’un valeur de la propriété) des interfaces et ainsi prendre en charge les visualiseurs de type.  
   
- Si un EE a des visionneuses personnalisées qui implémente, la EE peut ajouter le `CLSID`s de ces visionneuses personnalisées à la fin de la liste retournée par [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Cela permet une EE prendre en charge les visualiseurs de types et de ses propres visionneuses personnalisées. Assurez-vous juste que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflète l’ajout de toutes les visionneuses personnalisées.  
+ Si un EE a des visionneuses personnalisées elle-même implémente, le EE peut ajouter le `CLSID`s de ces visionneuses personnalisées à la fin de la liste renvoyée par [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Cela permet une EE prendre en charge les visualiseurs de type et ses propres visionneuses personnalisées. Assurez-vous juste que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflète l’ajout de n’importe quel visionneuses personnalisées.  
   
- Consultez [visualiseur de Type et personnalisée visionneuse](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) pour en savoir plus sur la différence entre les visualiseurs et les visionneuses.  
+ Consultez [visualiseur de Type et Visionneuse de personnalisé](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) pour une présentation de la différence entre les visualiseurs et les visionneuses.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de l’évaluation d’expression](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   

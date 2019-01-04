@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::WriteDump | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::WriteDump
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2953b3f30a0d485b58afc04e8ce42158a7537e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7282a7bd57397f6dc1a09dac44dfb0cdfcf9078
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915966"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Écrit un fichier de vidage dans un fichier.  
@@ -28,14 +25,14 @@ ms.locfileid: "49905260"
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT WriteDump(   
+HRESULT WriteDump(   
    DUMPTYPE  DumpType,  
    LPCOLESTR pszDumpUrl  
 );  
 ```  
   
 ```csharp  
-int WriteDump(   
+int WriteDump(   
    enum_DUMPTYPE  DumpType,  
    string         pszDumpUrl  
 );  

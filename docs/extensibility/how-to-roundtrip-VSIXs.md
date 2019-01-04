@@ -1,8 +1,6 @@
 ---
 title: Comment les Extensions aller-retour
 ms.date: 06/25/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
@@ -10,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880950"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Comment : créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procédure : Créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
 
 Ce document explique comment créer des projets d’extensibilité aller-retour entre Visual Studio 2015 et Visual Studio 2017. À l’issue de cette mise à niveau, un projet seront en mesure d’ouvrir, générer, installer et exécuter dans Visual Studio 2015 et Visual Studio 2017. En tant que référence, certaines extensions que vous peuvent effectuer un aller-retour entre Visual Studio 2015 et Visual Studio 2017 se trouve dans le [exemples d’extensibilité de Visual Studio SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 

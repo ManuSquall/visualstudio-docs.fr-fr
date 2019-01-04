@@ -1,9 +1,6 @@
 ---
 title: PENDING_BP_STATE_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - PENDING_BP_STATE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c815c5f92930c3877e78ab27934b9abe199cef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93b1278c9f0bc11ce4a79e10750f4f7952fba81f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896043"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 Contient des informations sur l’état d’un point d’arrêt est prêt à lier à un emplacement de code.  
@@ -28,14 +25,14 @@ Contient des informations sur l’état d’un point d’arrêt est prêt à lie
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct _tagPENDING_BP_STATE_INFO {   
+typedef struct _tagPENDING_BP_STATE_INFO {   
    PENDING_BP_STATE       state;  
    PENDING_BP_STATE_FLAGS flags;  
 } PENDING_BP_STATE_INFO;  
 ```  
   
 ```csharp  
-public struct PENDING_BP_STATE_INFO {   
+public struct PENDING_BP_STATE_INFO {   
    public uint state;  
    public uint flags;  
 };  
@@ -51,12 +48,12 @@ public struct PENDING_BP_STATE_INFO {
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) méthode où il est renseigné.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

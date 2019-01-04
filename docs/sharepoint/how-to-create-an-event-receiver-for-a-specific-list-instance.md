@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer un récepteur d’événements pour une Instance de liste spécifique | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un récepteur d’événements pour une Instance de liste spécifique | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818860"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Comment : créer un récepteur d’événements pour une instance de liste spécifique
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procédure : Créer un récepteur d’événements pour une instance de liste spécifique
   Un récepteur d’événements liste instance répond aux événements qui se produisent dans n’importe quelle instance d’une définition de liste. Bien que le modèle de récepteur d’événements n’active pas le ciblage d’une instance de liste spécifique, vous pouvez modifier un récepteur d’événements dont l’étendue correspond à une définition de liste pour répondre aux événements dans une instance de liste spécifique.  
   
  Pour cibler une instance de liste spécifique, dans le *Elements.xml* pour le récepteur d’événements, remplacez `ListTemplateId` avec `ListUrl` et ajoutez l’URL de l’instance de liste.  
@@ -89,6 +86,5 @@ ms.locfileid: "37118960"
      Notez que le récepteur d’événements ne déclenche pas sur la nouvelle annonce car le récepteur est configuré pour répondre uniquement aux événements dans l’instance de liste d’annonces personnalisées, **TestAnnouncements**.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Guide pratique pour Créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

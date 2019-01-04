@@ -1,9 +1,6 @@
 ---
-title: 'Comment : exécuter des calculs Excel par programmation'
-ms.custom: ''
+title: 'Procédure : Exécuter des calculs Excel par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dabde287d71736ab49f35acf968300bccee0d12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82e2cbd2f3e74e50c7ff01f6943fdb62e11f1525
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821059"
 ---
-# <a name="how-to-programmatically-run-excel-calculations"></a>Comment : exécuter des calculs Excel par programmation  
+# <a name="how-to-programmatically-run-excel-calculations"></a>Procédure : Exécuter des calculs Excel par programmation  
   Vous utilisez un processus similaire pour exécuter des calculs un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -63,5 +60,3 @@ ms.locfileid: "35670813"
  [Travailler avec des plages](../vsto/working-with-ranges.md)   
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

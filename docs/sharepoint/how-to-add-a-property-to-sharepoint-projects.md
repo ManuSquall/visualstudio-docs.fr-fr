@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ajouter une propriété à des projets SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter une propriété à des projets SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950470"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Comment : ajouter une propriété à des projets SharePoint
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procédure : Ajouter une propriété à des projets SharePoint
   Vous pouvez utiliser une extension de projet pour ajouter une propriété à un projet SharePoint. La propriété apparaît dans le **propriétés** fenêtre lorsque le projet est sélectionné dans **l’Explorateur de solutions**.  
   
- Les étapes suivantes supposent que vous avez déjà créé une extension de projet. Pour plus d’informations, consultez [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ Les étapes suivantes supposent que vous avez déjà créé une extension de projet. Pour plus d'informations, voir [Procédure : Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Pour ajouter une propriété à un projet SharePoint  
   
@@ -59,7 +56,7 @@ ms.locfileid: "49898408"
   
 -   <xref:System.ComponentModel.DisplayNameAttribute>: Spécifie le nom de la propriété qui s’affiche dans le **propriétés** fenêtre.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Spécifie la chaîne de description qui apparaît dans la partie inférieure de la **propriétés** fenêtre lorsque la propriété est sélectionnée.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Spécifie la chaîne de description qui apparaît en bas de la **propriétés** fenêtre lorsque la propriété est sélectionnée.  
   
 -   <xref:System.ComponentModel.DefaultValueAttribute>: Spécifie la valeur par défaut de la propriété.  
   
@@ -85,8 +82,6 @@ ms.locfileid: "49898408"
   
 ## <a name="see-also"></a>Voir aussi
  [Étendre des projets SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Comment : créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Comment : ajouter un élément de menu contextuel à des projets SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Guide pratique pour Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Guide pratique pour Ajouter un élément de menu contextuel à des projets SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
-  

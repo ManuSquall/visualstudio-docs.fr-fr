@@ -1,9 +1,6 @@
 ---
 title: MSSCCPRJ. Fichier de SCC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc754437433124e033b0f0fb0feac79487664b51
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825912"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Fichier de contrôle de code source
 Lorsque vous placez une solution Visual Studio ou un projet sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux informations essentielles. Les informations proviennent du plug-in sous la forme de chaînes de contrôle de code source. Ces chaînes, « AuxPath » et « ProjName », sont opaques à l’IDE, mais elles sont utilisées par le plug-in pour rechercher la solution ou le projet dans le contrôle de version. L’IDE obtient généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il les enregistre ensuite dans le fichier solution ou un projet pour les appels suivants à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « ProjName » ne sont pas automatiquement mis à jour un utilisateur, les branchements, branches ou copie des fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement correct dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il peut pas toujours clair comment ils doivent être mis à jour.  

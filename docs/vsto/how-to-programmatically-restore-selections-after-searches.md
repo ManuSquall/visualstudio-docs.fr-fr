@@ -1,9 +1,6 @@
 ---
-title: 'Comment : restaurer des sélections après des recherches par programmation'
-ms.custom: ''
+title: 'Procédure : Restaurer des sélections après des recherches par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e714773ec000f2f46872f5c60429f313e1f6310
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae27f4e24ac367741bcdf2dfa2bae8598c6c7d99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865607"
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>Comment : restaurer des sélections après des recherches par programmation
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>Procédure : Restaurer des sélections après des recherches par programmation
   Si vous recherchez et remplacez du texte dans un document, vous souhaiterez restaurer la sélection d’utilisateur d’origine une fois que la recherche est terminée.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -55,9 +52,7 @@ ms.locfileid: "49891152"
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : rechercher et remplacer du texte dans les documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Comment : définir par programmation les options de recherche dans Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Comment : Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Guide pratique pour Rechercher et remplacer du texte dans les documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Guide pratique pour Définir par programmation les options de recherche dans Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Guide pratique pour Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

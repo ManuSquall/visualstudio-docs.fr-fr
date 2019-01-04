@@ -1,9 +1,6 @@
 ---
-title: 'Comment : modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation'
-ms.custom: ''
+title: 'Procédure : Modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891798"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Comment : modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procédure : Modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation
   Vous pouvez modifier la police d’une ligne entière qui contient une cellule sélectionnée afin que le texte est en gras.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891282"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
- [Comment : appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Comment : copier des données et la mise en forme entre feuilles de calcul par programmation](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Guide pratique pour Appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Guide pratique pour Copier des données et la mise en forme entre feuilles de calcul par programmation](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

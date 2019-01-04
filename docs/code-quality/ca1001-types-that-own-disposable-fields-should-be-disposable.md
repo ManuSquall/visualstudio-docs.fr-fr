@@ -1,8 +1,7 @@
 ---
-title: 'CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables'
+title: 'CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1001
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a73acee1c01aba7a638d27c0e772e4fbf5e19384
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d935d6310e9160cec222ef71933f23f1abf379cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908825"
 ---
-# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables
+# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables
 
 |||
 |-|-|
@@ -58,6 +57,6 @@ ms.locfileid: "45546935"
 
  [CA2216 : Les types supprimables doivent déclarer un finaliseur](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA2215 : Les méthodes Dispose doivent appeler la méthode Dispose de la classe de base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+ [CA2215 : Méthodes Dispose doivent appeler dispose de la classe de base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA1049 : Les types qui ont des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+ [CA1049 : Les types qui possèdent des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

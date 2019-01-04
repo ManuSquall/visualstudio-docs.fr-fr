@@ -1,5 +1,5 @@
 ---
-title: Ajouter des propriétés personnalisées aux diagrammes de dépendance
+title: Ajouter des propriétés personnalisées à des diagrammes de dépendance
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 368d1a794f51d827aa62cc913039edda59ae7ae6
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 407db46519872d8f1c4e6eba79ddd5ca84610d70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892236"
 ---
-# <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées aux diagrammes de dépendance
+# <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de dépendance
 
-Lorsque vous écrivez le code d’extension pour les diagrammes de dépendance, vous pouvez stocker des valeurs avec n’importe quel élément sur un diagramme de dépendances. Les valeurs persisteront lorsque le diagramme est enregistré et rouvert. Vous pouvez également avoir ces propriétés s’affichent dans le **propriétés** fenêtre afin que les utilisateurs peuvent voir et les modifier. Par exemple, vous pouvez permettre aux utilisateurs de spécifier une expression régulière pour chaque couche, et écrire le code de validation pour vérifier que les noms de classes dans chaque couche sont conformes au modèle spécifié par l’utilisateur.
+Lorsque vous écrivez le code d’extension pour des diagrammes de dépendance, vous pouvez stocker des valeurs avec n’importe quel élément sur un diagramme de dépendances. Les valeurs persisteront lorsque le diagramme est enregistré et rouvert. Vous pouvez également faire apparaître ces propriétés dans le **propriétés** fenêtre afin que les utilisateurs peuvent voir et les modifier. Par exemple, vous pouvez permettre aux utilisateurs de spécifier une expression régulière pour chaque couche, et écrire le code de validation pour vérifier que les noms de classes dans chaque couche sont conformes au modèle spécifié par l’utilisateur.
 
 ## <a name="non-visible-properties"></a>Propriétés non visibles
 
-Si vous souhaitez simplement votre code pour attacher des valeurs à un élément dans un diagramme de dépendances, vous n’avez pas besoin de définir un composant MEF. Il existe un dictionnaire nommé `Properties` dans <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Ajoutez simplement les valeurs marshalables au dictionnaire d’un élément de couche. Elles seront enregistrées en tant que partie du diagramme de dépendance. Pour plus d’informations, consultez [naviguer et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Si vous souhaitez simplement votre code associe des valeurs pour n’importe quel élément dans un diagramme de dépendances, vous n’avez pas besoin de définir un composant MEF. Il existe un dictionnaire nommé `Properties` dans <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Ajoutez simplement les valeurs marshalables au dictionnaire d’un élément de couche. Elles seront enregistrées en tant que partie du diagramme de dépendance. Pour plus d’informations, consultez [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 ## <a name="editable-properties"></a>Propriétés modifiables
 
@@ -33,8 +32,8 @@ Si vous souhaitez simplement votre code pour attacher des valeurs à un élémen
 > [!IMPORTANT]
 > Pour faire apparaître les propriétés, apportez la modification suivante sur chaque ordinateur où vous souhaitez que les propriétés de couche soient visibles :
 >
-> 1. Lancez le bloc-notes à l’aide de **exécuter en tant qu’administrateur**. Ouvrez *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. À l’intérieur de la **contenu** élément, ajouter :
+> 1. Exécutez le bloc-notes à l’aide de **exécuter en tant qu’administrateur**. Ouvrez *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. À l’intérieur de la **contenu** élément, ajoutez :
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
@@ -48,7 +47,7 @@ Si vous souhaitez simplement votre code pour attacher des valeurs à un élémen
 
 **Assurez-vous que votre code se trouve dans un projet VSIX**
 
-Si votre propriété fait partie d’un projet de validation, de mouvement ou de commande, vous ne devez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [ajouter des commandes et des mouvements aux diagrammes de dépendance](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Si votre propriété fait partie d’une commande, de mouvement ou projet de validation, vous ne devez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [ajouter des commandes et des mouvements aux diagrammes de dépendance](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 **Définir la propriété personnalisée**
 

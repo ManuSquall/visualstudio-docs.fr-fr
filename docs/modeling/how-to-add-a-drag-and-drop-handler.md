@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter un gestionnaire glisser-déplacer'
+title: 'Procédure : Ajouter un gestionnaire de glisser-déplacer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876391"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Procédure : Ajouter un gestionnaire de glisser-déplacer
 
 Vous pouvez ajouter des gestionnaires d’événements de glisser-déplacer à votre solution DSL, afin que les utilisateurs peuvent faire glisser des éléments sur votre diagramme à partir d’autres diagrammes ou d’autres parties de Visual Studio. Vous pouvez aussi ajouter des gestionnaires pour des événements tels que les doubles clics. Ensemble, sont appelés les gestionnaires de glisser-déposer et de double-clic *gestionnaires de mouvements*.
 
@@ -70,7 +69,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Cette méthode est appelée lorsque l’utilisateur double-clique sur la forme ou le schéma.
 
-     Pour plus d’informations, consultez [Comment : intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Pour plus d'informations, voir [Procédure : Intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Définissez `IsAcceptableDropItem(e)` pour déterminer si l'élément déplacé est acceptable et ProcessDragDropItem(e) pour mettre à jour votre modèle quand l'élément est déposé. Ces méthodes doivent d'abord extraire l'élément des arguments de l'événement. Pour savoir comment procéder, consultez [comment obtenir une référence à l’élément déplacé](#extracting).
 
@@ -322,7 +321,7 @@ Les propriétés `Data` et `Prototype` des arguments de l'événement contiennen
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Utilisation d'actions de la souris : faire glisser des éléments de compartiment
+## <a name="using-mouse-actions-dragging-compartment-items"></a>À l’aide des Actions de la souris : En faisant glisser des éléments de compartiment
 
 Vous pouvez écrire un gestionnaire qui intercepte les actions de la souris sur les champs d’une forme. L’exemple suivant permet à l’utilisateur de réorganiser les éléments dans un compartiment en faisant glisser avec la souris.
 

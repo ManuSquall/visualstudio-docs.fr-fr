@@ -1,9 +1,6 @@
 ---
 title: Présentation du modèle objet de ruban
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961307"
 ---
 # <a name="ribbon-object-model-overview"></a>Présentation du modèle objet de ruban
   Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban lors de l’exécution. Par exemple, vous pouvez remplir des contrôles de menu, ou afficher et dynamiquement masquer des contrôles en fonction du contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant le chargement du ruban par l’application Office. Pour plus d’informations, consultez [définir des propriétés qui passent en lecture seule](#SettingReadOnlyProperties).  
@@ -190,13 +187,12 @@ ms.locfileid: "49910587"
 ## <a name="see-also"></a>Voir aussi  
  [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
- [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
  [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Procédure pas à pas : Mise à jour les contrôles sur un ruban lors de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Procédure pas à pas : Mettre à jour les contrôles sur un ruban lors de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)   
- [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Comment : exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Comment : afficher complément, les erreurs d’interface utilisateur](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Guide pratique pour Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Guide pratique pour Exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Guide pratique pour Afficher des erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)  

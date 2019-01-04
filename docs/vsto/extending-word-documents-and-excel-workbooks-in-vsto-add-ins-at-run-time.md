@@ -1,9 +1,6 @@
 ---
 title: Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a93923525ce1a3c1a3396963f05b2f0335a8f635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909188"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution
   Vous pouvez utiliser un complément VSTO pour personnaliser des documents Word et des classeurs Excel comme suit :  
@@ -128,5 +125,3 @@ ms.locfileid: "53647817"
  [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

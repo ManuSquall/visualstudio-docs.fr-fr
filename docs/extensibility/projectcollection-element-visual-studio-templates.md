@@ -1,6 +1,5 @@
 ---
 title: ProjectCollection, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9397fb9a6ab1cb4c117df111a10ab7613c500b84
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 87a2bd56522477e56c57b69e4b3b400c84d3b0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841250"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection, élément (modèles Visual Studio)
 Spécifie l'organisation et le contenu de modèles à plusieurs projets.  

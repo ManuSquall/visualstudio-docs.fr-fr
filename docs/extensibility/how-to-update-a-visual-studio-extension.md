@@ -1,9 +1,6 @@
 ---
-title: 'Comment : mettre à jour une Extension Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Mettre à jour une Extension Visual Studio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - update package
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf951215dfb4f6837c157a7b8510fba2d09f140
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 65d27087c0708623f1861bb675a37af84e2360a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858307"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>Comment : mettre à jour une extension Visual Studio
+# <a name="how-to-update-a-visual-studio-extension"></a>Procédure : Mise à jour une extension Visual Studio
 Vous pouvez mettre à jour une extension Visual Studio sur votre système à l’aide de **Extensions et mises à jour** pour installer la version mise à jour. Si vous créez une version mise à jour d’une extension, vous pouvez indiquer qu’elle a mis à jour en incrémentant le numéro de version dans le manifeste VSIX.  
   
  Mises à jour sont installées lorsque le manifeste VSIX de l’extension entrante a les mêmes `ID` en tant que celle installée et un degré plus élevé `Version` nombre. Si le `Version` numéro est identique ou inférieur, le package ne peut pas être installé. Si le `ID` valeurs ne correspondent pas, le package n’est pas encore installé est reconnu comme une extension distincte.  

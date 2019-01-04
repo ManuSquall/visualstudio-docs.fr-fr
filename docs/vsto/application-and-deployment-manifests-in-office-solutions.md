@@ -1,8 +1,6 @@
 ---
 title: Manifestes d’application et de déploiement dans les solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e26b0ed3f9f02de223f19789416c8dce50182d3
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 24650d2cb4cbed3a5b4c4f1ee02e395e7b8c2988
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828554"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifestes d’application et de déploiement dans les solutions Office
   Un manifeste d'application est un fichier XML qui fournit les informations utilisées par une solution Office pour localiser ses assemblys et les mettre à jour. Un manifeste d'application peut être utilisé avec un manifeste de déploiement, qui est un fichier XML stocké sur le serveur fournissant les informations nécessaires à la localisation de la version la plus récente du manifeste d'application et des assemblys.

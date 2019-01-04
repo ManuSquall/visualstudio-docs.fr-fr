@@ -1,9 +1,6 @@
 ---
 title: Fichiers d’élément | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922304"
 ---
 # <a name="files-element"></a>Files (élément)
   Spécifie les fichiers à déployer avec l’élément de projet SharePoint, tels que les fichiers d’élément de fonctionnalité et la sortie des projets non-SharePoint dépendants.  
@@ -63,9 +60,7 @@ ms.locfileid: "36327292"
 |**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
-|**Peut être vide**|Non|  
+|**Peut être vide**|Aucune|  
   
 ## <a name="see-also"></a>Voir aussi
  [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

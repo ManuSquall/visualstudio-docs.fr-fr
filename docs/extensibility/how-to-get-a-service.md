@@ -1,9 +1,6 @@
 ---
-title: 'Comment : obtenir un Service | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Obtenir un Service | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990027"
 ---
-# <a name="how-to-get-a-service"></a>Comment : obtenir un service
+# <a name="how-to-get-a-service"></a>Procédure : Bénéficiez d’un service
 Vous devez souvent obtenir des services Visual Studio pour accéder aux différentes fonctionnalités. En règle générale, un service de Visual Studio fournit une ou plusieurs interfaces que vous pouvez utiliser. Vous pouvez obtenir la plupart des services à partir d’un VSPackage.  
   
  N’importe quel package Visual Studio qui dérive de <xref:Microsoft.VisualStudio.Shell.Package> et qui a été correctement dans le site peut poser pour n’importe quel service global. Étant donné que le `Package` la classe implémente <xref:System.IServiceProvider>, n’importe quel package Visual Studio qui dérive de `Package` est également un fournisseur de services.  
@@ -42,7 +39,7 @@ Vous devez souvent obtenir des services Visual Studio pour accéder aux différe
   
    ```  
   
-    Ce code obtient un service SVsActivityLog et caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour obtenir un exemple, consultez [Comment : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+    Ce code obtient un service SVsActivityLog et caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour obtenir un exemple, consultez [Comment : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
   
@@ -53,7 +50,7 @@ Vous devez souvent obtenir des services Visual Studio pour accéder aux différe
   
  La méthode statique <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> méthode s’appuie sur un fournisseur de services de mise en cache qui est initialisé à la première fois qu’un VSPackage dérivé <xref:Microsoft.VisualStudio.Shell.Package> est placé.  
   
- Étant donné que le constructeur de VSPackage est appelé avant le VSPackage est dans le site, les services globaux sont généralement pas disponibles dans le constructeur de VSPackage. Consultez [Comment : dépanner les services](../extensibility/how-to-troubleshoot-services.md) pour une solution de contournement.  
+ Étant donné que le constructeur de VSPackage est appelé avant le VSPackage est dans le site, les services globaux sont généralement pas disponibles dans le constructeur de VSPackage. Consultez [Guide pratique pour Dépanner les services](../extensibility/how-to-troubleshoot-services.md) pour une solution de contournement.  
   
  Voici un exemple de la façon d’obtenir un service dans une fenêtre outil ou un autre élément non VSPackage.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Voici comment obtenir un service à partir de l’objet DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : fournir un service](../extensibility/how-to-provide-a-service.md)   
+ [Guide pratique pour Fournir un service](../extensibility/how-to-provide-a-service.md)   
  [Utilisez et fournir des services](../extensibility/using-and-providing-services.md)   
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)

@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861622"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapper les dépendances des cartes de code
 
@@ -240,7 +239,7 @@ Supposons que vous avez une revue du code à effectuer dans certains fichiers co
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vidéo : comprendre la conception à partir du code avec Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Vidéo : Comprendre la conception à partir du code avec Visual Studio 2015 code maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)

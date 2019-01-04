@@ -1,9 +1,6 @@
 ---
-title: 'Comment : valider des données lorsqu’une nouvelle ligne est ajoutée à un contrôle ListObject'
-ms.custom: ''
+title: 'Procédure : Valider les données lors d’une nouvelle ligne est ajoutée à un contrôle ListObject'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55dc8852952482914bc57a41579163c90672d1db
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f6fd03238f9b477f7530353b8b10afb71a41edd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989839"
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Comment : valider des données lorsqu’une nouvelle ligne est ajoutée à un contrôle ListObject
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Procédure : Valider les données lors d’une nouvelle ligne est ajoutée à un contrôle ListObject
   Les utilisateurs peuvent ajouter de nouvelles lignes à un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui est lié aux données. Vous pouvez valider les données de l’utilisateur avant d’approuver les modifications apportées à la source de données.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -60,7 +57,5 @@ ms.locfileid: "34268358"
  [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
  [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [ListObject (contrôle)](../vsto/listobject-control.md)   
- [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
- [Comment : colonnes ListObject de mappage de données](../vsto/how-to-map-listobject-columns-to-data.md)  
-  
-  
+ [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Guide pratique pour Mapper des colonnes ListObject aux données](../vsto/how-to-map-listobject-columns-to-data.md)  

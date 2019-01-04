@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8e2ba4e158b6c012c05d29c988e9611d25f58e63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861979"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.

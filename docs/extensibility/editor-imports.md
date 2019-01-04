@@ -1,9 +1,6 @@
 ---
 title: Importations de l’éditeur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893929"
 ---
 # <a name="editor-imports"></a>Importations de l’éditeur
 Vous pouvez importer un nombre de services de l’éditeur, les fabriques et les courtiers et fournissent votre extension avec différents types d’accès à l’éditeur principal. Par exemple, vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> pour vous donner un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour un type de contenu donné. (Ce navigateur permet de qu'effectuer de différents types de recherche sur une mémoire tampon de texte.)  
@@ -49,15 +46,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Procédure pas à pas : Personnaliser l’affichage de texte](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Procédure pas à pas : Mise en surbrillance texte](../extensibility/walkthrough-highlighting-text.md)  
+ [Procédure pas à pas : Texte en surbrillance](../extensibility/walkthrough-highlighting-text.md)  
   
- [Procédure pas à pas : Info-bulles Info Express d’affichage](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procédure pas à pas : Afficher des info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Procédure pas à pas : Afficher l’aide de la Signature](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procédure pas à pas : afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Procédure pas à pas : Affichage de suggestions ampoule](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [Procédure pas à pas : Afficher des suggestions ampoule](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="import-the-service-provider"></a>Importer le fournisseur de services  
  Vous pouvez également importer un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (trouvée dans l’assembly Microsoft.VisualStudio.Shell.Immutable.10.0) de la même façon pour accéder aux services de Visual Studio :  
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Consultez [procédure pas à pas : accéder à l’objet DTE à partir d’une extension de l’éditeur](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) pour plus d’informations.  
+ Consultez [Procédure pas à pas : Accéder à l’objet DTE à partir d’une extension de l’éditeur](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) pour plus d’informations.  
   
 ## <a name="services"></a>Services  
  Services de l’éditeur sont des entités uniques en général qui fournissent un service et sont partagées entre plusieurs composants.  
@@ -75,7 +72,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |Import|Fournit|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|La relation entre les extensions de fichier et <xref:Microsoft.VisualStudio.Utilities.IContentType> objets.|  
-|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d'objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
+|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d’objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|Objets <xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Plusieurs objets de carte de l’éditeur :<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Un <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> objet pour un affichage de texte donné.|  

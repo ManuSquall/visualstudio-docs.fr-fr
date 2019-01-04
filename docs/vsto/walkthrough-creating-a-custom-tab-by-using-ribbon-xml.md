@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer un onglet personnalisé à l’aide de XML du ruban'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955225"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procédure pas à pas : Créer un onglet personnalisé à l’aide de XML du ruban
   Cette procédure pas à pas montre comment créer un onglet de ruban personnalisé à l’aide de la **ruban (XML)** élément.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808922"
   
 1.  Créer un **complément Word** projet portant le nom **MyRibbonAddIn**.  
   
-     Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le **ThisAddIn.cs** ou **ThisAddIn.vb** fichier de code et ajoute le **MyRibbonAddIn** de projet à **l’Explorateur de solutions**.  
   
@@ -115,12 +112,12 @@ ms.locfileid: "38808922"
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  Ajoutez la méthode suivante à la classe `MyRibbon`. Il s’agit d’une méthode de rappel pour le **Insert Text** bouton qui ajoute une chaîne au document actif à l’emplacement actuel du curseur.  
+3.  Ajoutez la méthode suivante à la classe `MyRibbon` . Il s’agit d’une méthode de rappel pour le **Insert Text** bouton qui ajoute une chaîne au document actif à l’emplacement actuel du curseur.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  Ajoutez la méthode suivante à la classe `MyRibbon`. Il s’agit d’une méthode de rappel pour le **insérer un tableau** bouton qui ajoute un tableau au document actif à l’emplacement actuel du curseur.  
+4.  Ajoutez la méthode suivante à la classe `MyRibbon` . Il s’agit d’une méthode de rappel pour le **insérer un tableau** bouton qui ajoute un tableau au document actif à l’emplacement actuel du curseur.  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
@@ -155,11 +152,9 @@ ms.locfileid: "38808922"
   
 -   Créer un volet Actions personnalisé. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).  
   
--   Personnaliser l'interface utilisateur de Microsoft Office Outlook à l'aide de zones de formulaire Outlook. Pour plus d’informations, consultez [procédure pas à pas : concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Personnaliser l'interface utilisateur de Microsoft Office Outlook à l'aide de zones de formulaire Outlook. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
  [Élément XML Ribbon](../vsto/ribbon-xml.md)   
  [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

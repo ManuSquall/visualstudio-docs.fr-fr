@@ -1,9 +1,6 @@
 ---
 title: Outil de Configuration de la fenêtre Affichage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 087fc8bc20b8ed70001b44ae06c614fad58c1439
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877729"
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
 Quand un VSPackage enregistre une fenêtre outil, de la position par défaut, de taille, de style d’ancrage et d’autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [Windows d’outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  

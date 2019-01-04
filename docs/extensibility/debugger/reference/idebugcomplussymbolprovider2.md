@@ -1,9 +1,6 @@
 ---
-title: IDebugComPlusSymbolProvider2 | Documents Microsoft
-ms.custom: ''
+title: IDebugComPlusSymbolProvider2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 543af641d5bad8d07b3ed0d6cb3b8539395991f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fb3b32d2154c85ccf127dc6329980d387f49fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948259"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
-Représente un fournisseur de symbole COM + avec des méthodes qui sont spécifiques au code managé et étend la **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).  
+Représente un fournisseur de symboles COM + avec des méthodes qui sont spécifiques au code managé et étend le **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,13 +35,13 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 |[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|Récupère un type en fonction de son nom.|  
 |[GetTypeFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypefromtoken.md)|Récupère un type en fonction de son jeton.|  
 |[IsAddressSequencePoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint.md)|Détermine si l’adresse de débogage spécifié est un point de séquence.|  
-|[LoadSymbolsFromCallback](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromcallback.md)|Charge les symboles à l’aide de la méthode de rappel spécifiée de débogage.|  
-|[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|Charger les symboles de débogage à partir d’un flux de données étant donné la **ICorDebugModule** objet.|  
-|[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Charges déboguer les symboles en fonction de la **ICorDebugModule** objet.|  
+|[LoadSymbolsFromCallback](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromcallback.md)|Charges de déboguer des symboles à l’aide de la méthode de rappel spécifié.|  
+|[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|Charger des symboles de débogage à partir d’un flux de données étant donné la **ICorDebugModule** objet.|  
+|[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Compte tenus des symboles de débogage de charges le **ICorDebugModule** objet.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Sh.h  
+ En-tête : SH.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

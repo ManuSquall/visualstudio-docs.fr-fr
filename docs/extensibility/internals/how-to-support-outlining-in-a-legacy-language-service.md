@@ -1,9 +1,6 @@
 ---
-title: 'Comment : prendre en charge le mode plan dans un Service de langage hérité | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Prend en charge le mode plan dans un Service de langage hérité | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6f9ba947aee0276e2cca6270438cdaf20e7626e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887997"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Comment : prendre en charge le mode plan dans un service de langage hérité
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procédure : Prend en charge le mode plan dans un service de langage hérité
 Le mode plan est utilisé pour développer ou réduire des différentes régions du texte. Le moyen le mode plan est utilisé peut être défini différemment par différents langages. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).  
   
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter le mode plan, consultez [procédure pas à pas : mise en relief](../../extensibility/walkthrough-outlining.md).  
+ Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter le mode plan, consultez [procédure pas à pas : Mode Plan](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
 >  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
@@ -49,5 +46,5 @@ Le mode plan est utilisé pour développer ou réduire des différentes régions
 >  Soyez prudent sur le masquage des caractères de nouvelle ligne. Texte masqué est souhaitable d’étendre à partir du début de la première ligne au dernier caractère de la dernière ligne dans une section, en laissant le caractère de nouvelle ligne final est visible.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : fournir du texte masqué prennent en charge dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Comment : fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [Guide pratique pour Fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [Guide pratique pour Fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

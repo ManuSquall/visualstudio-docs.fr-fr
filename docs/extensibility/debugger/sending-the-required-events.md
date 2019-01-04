@@ -1,9 +1,6 @@
 ---
 title: Envoi des événements requis | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2512dc35d77263c5237dff12b7a5f07060458e1c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 0a30f717e1b87a90ca4da818b1f2a59fe5c2c6fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901215"
 ---
 # <a name="send-the-required-events"></a>Envoyer les événements requis
 Utilisez cette procédure pour l’envoi des événements requis.  

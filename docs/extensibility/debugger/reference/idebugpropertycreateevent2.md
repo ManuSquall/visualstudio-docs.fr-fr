@@ -1,9 +1,6 @@
 ---
-title: IDebugPropertyCreateEvent2 | Documents Microsoft
-ms.custom: ''
+title: IDebugPropertyCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyCreateEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc599480b148e85dd8d70c45282ef52d08b8eabf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b86ac1ba81a7d203177afdde302e8f32599ea698
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854969"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
-Cette interface est envoyée par le moteur de débogage (DE) pour le Gestionnaire de session de débogage (SDM) lorsqu’il crée une propriété qui est associée à un document spécifique.  
+Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsqu’il crée une propriété qui est associée à un document spécifique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,11 +28,11 @@ Cette interface est envoyée par le moteur de débogage (DE) pour le Gestionnair
 IDebugPropertyCreateEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Le D’implémente cette interface pour signaler qu’une propriété a été créée. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface. Cette interface est implémentée si le D’a créé une propriété associée à un script qui a été chargé ou créé et si ce script doit apparaître dans l’IDE.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Le D’implémente cette interface pour signaler qu’une propriété a été créée. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Utilise le SDM [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface. Cette interface est implémentée si le dé a créé une propriété associée à un script qui a été chargé ou créé et si ce script doit apparaître dans l’IDE.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Le DE crée et envoie cet objet d’événement à l’état de qu'une propriété a été créée. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Le DE crée et envoie cet objet d’événement à une propriété a été créée de rapport. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente la méthode de la `IDebugPropertyCreateEvent2` interface.  
@@ -45,17 +42,17 @@ IDebugPropertyCreateEvent2 : IUnknown
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Obtient la nouvelle propriété.|  
   
 ## <a name="remarks"></a>Notes  
- Si une propriété est un document spécifique ou un script associé, le DE peut envoyer cet événement pour le SDM pour mettre à jour le **Documents de Script** fenêtre avec le nom du document. Appelle le SDM [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) avec l’argument `guidDocument` pour récupérer un `VARIANT` contenant un [IUnknown](/cpp/atl/iunknown) pointeur. Appelle le SDM [QueryInterface](/cpp/atl/queryinterface) sur ce pointeur pour récupérer le [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface qui est utilisée pour mettre à jour le **Documents de Script** fenêtre.  
+ Si une propriété a un document spécifique ou un script associé, l’Allemagne peut envoyer cet événement pour le SDM pour mettre à jour le **Documents de Script** fenêtre avec le nom du document. Le SDM appellera [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) avec l’argument `guidDocument` pour récupérer un `VARIANT` contenant un [IUnknown](/cpp/atl/iunknown) pointeur. Le SDM appellera [QueryInterface](/cpp/atl/queryinterface) sur ce pointeur pour récupérer le [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface qui est utilisée pour mettre à jour le **Documents de Script** fenêtre.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

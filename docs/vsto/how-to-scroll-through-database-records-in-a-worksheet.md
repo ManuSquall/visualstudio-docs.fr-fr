@@ -1,9 +1,6 @@
 ---
-title: 'Comment : parcourir les enregistrements de base de données dans une feuille de calcul'
-ms.custom: ''
+title: 'Procédure : Faites défiler les enregistrements de base de données dans une feuille de calcul'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897468"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Comment : parcourir les enregistrements de base de données dans une feuille de calcul
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procédure : Faites défiler les enregistrements de base de données dans une feuille de calcul
   La procédure suivante montre comment utiliser le concepteur pour afficher un champ d’une table de base de données dans une feuille de calcul Microsoft Office Excel, avec des contrôles qui permettent aux utilisateurs finaux de faire défiler tous les enregistrements.  
   
- Vous pouvez utiliser le concepteur uniquement dans les projets au niveau du document. Toutefois, vous pouvez également ajouter des contrôles et les lier aux données par programmation lors de l’exécution. Pour plus d’informations, consultez [procédure pas à pas : liaison de données Simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Vous pouvez utiliser le concepteur uniquement dans les projets au niveau du document. Toutefois, vous pouvez également ajouter des contrôles et les lier aux données par programmation lors de l’exécution. Pour plus d’informations, consultez [Procédure pas à pas : Liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35672884"
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

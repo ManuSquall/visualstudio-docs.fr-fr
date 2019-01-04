@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866489"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité de la Visual Studio Visualization and Modeling SDK permet à un programme verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais leur interdire de modifier l’original.

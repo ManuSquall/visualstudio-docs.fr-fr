@@ -1,9 +1,6 @@
 ---
 title: solutions Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856851"
 ---
 # <a name="excel-solutions"></a>solutions Excel
   Visual Studio fournit des modèles de projet à l'aide desquels vous pouvez créer des personnalisations de niveau document et des compléments VSTO pour Microsoft Office Excel. Vous pouvez utiliser ces solutions pour automatiser Excel, étendre les fonctionnalités Excel et personnaliser l'interface utilisateur Excel. Pour plus d’informations sur les différences entre personnalisations au niveau du document et des Compléments VSTO, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -122,4 +119,3 @@ ms.locfileid: "53647943"
 | [Procédure pas à pas : Ajouter des contrôles à une feuille de calcul lors de l’exécution dans un projet de complément VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Montre comment ajouter un contrôle button Windows Forms, un <xref:Microsoft.Office.Tools.Excel.NamedRange>et un <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul lors de l’exécution en utilisant un complément, VSTO. |
 | [Comprendre la co-création et Add-ins](./understanding-coauthoring-and-addins.md) | Décrit les ajustements, que vous devrez peut-être apporter à vos solutions pour prendre en compte la cocréation. |
 | [Excel 2010 dans le développement Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Fournit des liens vers des articles et une documentation de référence sur le développement de solutions Excel. Ils ne sont pas spécifiques au développement Office avec Visual Studio. |
-

@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Créer des gestionnaires d’événements dans les projets Office'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859839"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Procédure : Créer des gestionnaires d’événements dans les projets Office
   Il existe plusieurs façons de créer des gestionnaires d’événements en Visual Basic et c#. En mode conception, vous pouvez créer des gestionnaires d’événements pour les contrôles de la valeur par défaut en double-cliquant sur le contrôle, ou utiliser le volet événements de la **propriétés** fenêtre pour créer des gestionnaires pour tout événement sur le contrôle. Toutefois, si vous êtes en mode Code, vous ne souhaitez ne peut-être pas basculer en mode Design pour créer un gestionnaire d’événements.  
@@ -57,5 +54,3 @@ ms.locfileid: "53648598"
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)   
  [Procédure pas à pas : Programmer par rapport aux événements d’un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Générer des solutions Office](../vsto/building-office-solutions.md)  
-  
-  

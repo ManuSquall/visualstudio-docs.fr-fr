@@ -1,8 +1,7 @@
 ---
-title: "CA2126 : Les demandes de liaison de types nécessitent des demandes d'héritage"
+title: 'CA2126 : Demandes de liaison de type nécessitent des demandes d’héritage'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2126
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 834f120994070e055fe5ac417d1fb39830c7bcef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904138"
 ---
-# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126 : Les demandes de liaison de types nécessitent des demandes d'héritage
+# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126 : Demandes de liaison de type nécessitent des demandes d’héritage
 
 |||
 |-|-|
@@ -56,13 +55,13 @@ ms.locfileid: "45548398"
  [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA2108 : Vérifiez la sécurité déclarative dans les types de valeurs](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+ [CA2108 : Vérifiez la sécurité déclarative dans les types valeur](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112 : Les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112 : Types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122 : N’exposez pas indirectement des méthodes avec des demandes de liaison](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+ [CA2122 : N’exposez pas indirectement des méthodes avec des demandes de liaison](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123 : Les demandes de liaison de substitution doivent être identiques au composant de base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+ [CA2123 : Demandes de liaison de remplacement doivent être identiques de base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,9 +1,6 @@
 ---
 title: L’obtention de la police et les informations de couleur de colorisation de texte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c48a500323185466b1fa5ffaedeff750de31e04d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919428"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtenir des informations de police et de couleur pour la colorisation de texte
 Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les éléments d’interface (UI) utilisateur varie selon le type de préférences de projet, sa technologie et les développeurs. Le **polices et couleurs** page de propriétés stocke les paramètres.

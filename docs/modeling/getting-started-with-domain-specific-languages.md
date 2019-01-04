@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872396"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
@@ -23,7 +22,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
 > [!NOTE]
 > Dans Visual Studio 2017, le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [création and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
 
@@ -386,7 +385,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 ## <a name="validation-and-commands"></a>Validation et commandes
  Vous pouvez développer davantage ce DSL en ajoutant des contraintes de validation. Ces contraintes sont des méthodes que vous pouvez définir, assurez-vous que le modèle est dans un état correct. Par exemple, vous pouvez définir une contrainte pour vous assurer que la date de naissance d’un enfant est ultérieure à celle de ses parents. La fonctionnalité de validation affiche un avertissement si l’utilisateur tente d’enregistrer un modèle qui déclenche une des contraintes. Pour plus d’informations, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
- Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans Visual Studio et avec les ressources externes. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Vous pouvez également définir des commandes de menu que l’utilisateur peut appeler. Commandes peuvent modifier le modèle. Ils peuvent également interagir avec d’autres modèles dans Visual Studio et avec les ressources externes. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Déploiement de la solution DSL
  Pour autoriser d’autres utilisateurs d’utiliser le langage spécifique à un domaine, vous distribuez un fichier d’Extension Visual Studio (VSIX). Il est créé lorsque vous générez la solution DSL.

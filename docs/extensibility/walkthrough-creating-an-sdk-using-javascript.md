@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de JavaScript | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1be1cf15e1f43af5999d4d65a5342d9c7b46da25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed81ac8e79db6a11dd4897b2d9f96c7c63d10294
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934993"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Procédure pas à pas : Créer un kit de développement à l’aide de JavaScript
 Cette procédure pas à pas explique comment utiliser JavaScript pour créer un simple mathématiques SDK comme une Extension Visual Studio (VSIX).  La procédure pas à pas est divisée en différentes parties :  

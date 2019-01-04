@@ -1,9 +1,6 @@
 ---
 title: Accorder votre confiance à des documents
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912339"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder votre confiance à des documents
   Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l’application : il convient de signer les manifestes à l’aide d’un certificat ou de cliquer sur l’invite d’approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.  
@@ -50,5 +47,3 @@ ms.locfileid: "53648832"
  [Accorder votre confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)   
  [Résoudre les problèmes de sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)   
  [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)  
-  
-  

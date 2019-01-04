@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Affichage des info-bulles Info express | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965802"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas : Info-bulles Info Express d’affichage
+# <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas : Afficher des info-bulles Info express
 Info Express est une fonctionnalité IntelliSense qui affiche les signatures de méthode et descriptions lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités reposant sur le langage comme info Express en définissant les identificateurs pour lequel vous souhaitez fournir des descriptions d’info Express et puis en créant une info-bulle dans lequel afficher le contenu. Vous pouvez définir des info Express dans le contexte d’un service de langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom fichier et afficher l’info Express pour uniquement ce type, ou vous pouvez afficher des info Express pour un type de contenu existant (par exemple, « text »). Cette procédure pas à pas montre comment afficher des info Express pour le type de contenu « texte ».  
   
  L’exemple d’info Express dans cette procédure pas à pas affiche les info-bulles quand un utilisateur déplace le pointeur sur un nom de méthode. Cette conception vous oblige à mettre en œuvre de ces quatre interfaces :  

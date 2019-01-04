@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer des Solutions SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer des Solutions SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22fda2415cfb9847c006a0bb4a0d0de576beb073
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928905"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Comment : créer des solutions SharePoint
+# <a name="how-to-build-sharepoint-solutions"></a>Procédure : Créer des solutions SharePoint
 
-Générer votre SharePoint solution n’est pas différente de la création d’autres applications dans Visual Studio. Pour plus d’informations sur la création d’applications, consultez [compiler et générer dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Pour une discussion sur certains aspects spécifiques aux solutions SharePoint, consultez [Comment : déployer et publier une solution SharePoint sur un site SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+Générer votre SharePoint solution n’est pas différente de la création d’autres applications dans Visual Studio. Pour plus d’informations sur la création d’applications, consultez [compiler et générer dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Pour une discussion sur certains aspects spécifiques aux solutions SharePoint, consultez [Comment : Déployer et publier une solution SharePoint sur un site SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 
 ## <a name="to-build-sharepoint-solutions"></a>Pour créer des solutions SharePoint
 

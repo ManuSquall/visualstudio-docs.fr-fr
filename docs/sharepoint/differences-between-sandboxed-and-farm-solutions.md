@@ -1,13 +1,8 @@
 ---
 title: Différences entre le bac à sable et les Solutions de batterie | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 282fe23a9a586d79b745efec99bc014e88777fd6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: f4f37d908448eba54924589cd669dbdda84956d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849741"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Différences entre le bac à sable et les solutions de batterie
   Lorsque vous compilez une solution SharePoint, il déploie sur le serveur SharePoint et un débogueur est attaché pour le déboguer. Le processus utilisé pour déboguer la solution varie selon le paramètre de la propriété Solution bac à sable : solution bac à sable ou la solution de batterie de serveurs.  
@@ -47,4 +42,3 @@ ms.locfileid: "36326330"
  [Déboguer des solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md)   
  [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Considérations relatives à la solution bac à sable](../sharepoint/sandboxed-solution-considerations.md)  
-  

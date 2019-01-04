@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915424"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Appel d’une transformation de texte dans une extension VS
 Si vous écrivez une extension de Visual Studio comme une commande de menu ou [langage spécifique à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), vous pouvez utiliser le service de création de modèles de texte pour transformer les modèles de texte. Obtenez le service <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> et effectuez le cast de celui-ci en <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
@@ -135,8 +134,8 @@ Sample text.
  Vous pouvez passer des valeurs en dehors d'un modèle de texte à l'aide d'une classe de paramètre dérivée de <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Rubriques connexes
- Pour générer du texte à partir d’un modèle de texte prétraité : appeler le `TransformText()` méthode de la classe générée. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Pour générer du texte à partir d'un modèle de texte prétraité : Appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Pour générer du texte en dehors d’une extension Visual Studio : définir un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Pour générer du texte en dehors d’une extension Visual Studio : Définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Pour générer le code source qui peut être compilé et exécuté plus tard : appeler le `t4.PreprocessTemplate()` méthode de <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ Pour générer du code source qui peut ensuite être compilé et exécuté : Appelez la méthode `t4.PreprocessTemplate()` de <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
