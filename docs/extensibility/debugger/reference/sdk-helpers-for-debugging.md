@@ -1,9 +1,6 @@
 ---
 title: Aides SDK pour le débogage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942409"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole dans C++.  
@@ -160,7 +157,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>Définitions de métrique  
  Ces définitions peuvent être utilisées pour les noms des mesures prédéfinies. Les noms correspondent aux différentes clés de Registre et les noms de valeur et sont tous définis en tant que chaînes de caractères larges : par exemple, `extern LPCWSTR metrictypeEngine`.  
   
-|Types de mesure prédéfinies|Description : La clé de base pour...|  
+|Types de mesure prédéfinies|Description : La clé de base pour...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|Toutes les mesures du moteur de débogage.|  
 |metrictypePortSupplier|Toutes les métriques de fournisseur de port.|  
@@ -179,7 +176,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|La valeur est différente de zéro pour indiquer la prise en charge pour le paramètre des points d’arrêt sur les modifications apportées aux données.|  
 |metricDisassembly|Définir à différente de zéro pour indiquer la prise en charge pour la production d’une liste de code machine.|  
 |metricDumpWriting|La valeur est différente de zéro pour indiquer la prise en charge pour le vidage d’écriture (du vidage de mémoire à un périphérique de sortie).|  
-|metricENC|Définir à différente de zéro pour indiquer la prise en charge par Modifier & Continuer. **Remarque :** un moteur de débogage personnalisé ne doit jamais défini cela ou doit toujours définie sur 0.|  
+|metricENC|Définir à différente de zéro pour indiquer la prise en charge par Modifier & Continuer. **Remarque :**  Un moteur de débogage personnalisé ne doit jamais défini cela ou doit toujours définie sur 0.|  
 |metricExceptions|La valeur est différente de zéro pour indiquer la prise en charge pour les exceptions.|  
 |metricFunctionBP|La valeur est différente de zéro pour indiquer la prise en charge des points d’arrêt nommées (points d’arrêt qui s’arrêtent lorsqu’un certain nom de fonction est appelé).|  
 |metricHitCountBP|La valeur est différente de zéro pour indiquer la prise en charge pour le paramètre des points d’arrêt « point d’accès » (points d’arrêt qui sont déclenchés uniquement une fois atteint un certain nombre de fois).|  
@@ -194,7 +191,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Définissez cette valeur à différente de zéro pour indiquer que le fournisseur du programme doit toujours être chargé localement.|  
 |metricEngineCanWatchProcess|Affectez la valeur différente de zéro pour indiquer que le moteur de débogage surveillera pour traiter les événements au lieu du fournisseur du programme.|  
 |metricRemoteDebugging|Affectez la valeur différente de zéro pour indiquer la prise en charge pour le débogage distant.|  
-|metricEncUseNativeBuilder|Définissez cette valeur à différente de zéro pour indiquer que le modifier et continuer le gestionnaire doivent utiliser encbuild.dll du moteur débogage pour générer pour modifier & Continuer. **Remarque :** un moteur de débogage personnalisé ne doit jamais défini cela ou doit toujours définie sur 0.|  
+|metricEncUseNativeBuilder|Définissez cette valeur à différente de zéro pour indiquer que le modifier et continuer le gestionnaire doivent utiliser encbuild.dll du moteur débogage pour générer pour modifier & Continuer. **Remarque :**  Un moteur de débogage personnalisé ne doit jamais défini cela ou doit toujours définie sur 0.|  
 |metricLoadUnderWOW64|Affectez la valeur différente de zéro pour indiquer que le moteur de débogage doit être chargé dans le processus du programme débogué sous WOW lors du débogage d’un processus 64 bits. Sinon, le moteur de débogage est chargé dans le processus de Visual Studio (qui s’exécute sous WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Affectez la valeur différente de zéro pour indiquer que le fournisseur du programme doit être chargé dans le processus du programme débogué lors du débogage d’un processus 64 bits sous WOW ; Sinon, elle est chargée dans le processus de Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Affectez la valeur différente de zéro pour indiquer que le processus doit s’arrêter si une exception non gérée est levée au-delà des limites de code non managé.|  
@@ -266,7 +263,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[clé de Registre]*|`HKEY_CURRENT_USER` ou `HKEY_LOCAL_MACHINE`.|  
 |*[racine version]*|La version de Visual Studio (par exemple, `7.0`, `7.1`, ou `8.0`). Toutefois, cette racine peut également être modifiée à l’aide de la **/rootsuffix** basculer vers **devenv.exe**. VSIP, ce modificateur est généralement pour **Exp**, de sorte que la racine de la version serait, par exemple, 8.0Exp.|  
-|*[métrique racine]*|Il s’agit soit `AD7Metrics` ou `AD7Metrics(Debug)`, selon que la version debug de dbgmetric.lib est utilisée. **Remarque :** si dbgmetric.lib est utilisé, cette convention d’affectation de noms doit être respectée si vous avez des différences entre debug et release versions doivent être reflétées dans le Registre.|  
+|*[métrique racine]*|Il s’agit soit `AD7Metrics` ou `AD7Metrics(Debug)`, selon que la version debug de dbgmetric.lib est utilisée. **Remarque :**  Si dbgmetric.lib est utilisé, cette convention d’affectation de noms doit être respectée si vous avez des différences entre debug et release versions doivent être reflétées dans le Registre.|  
 |*[type de métrique]*|Le type de mesure à écrire : `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. Ceux-ci sont définis comme dans dbgmetric.h comme `metricTypeXXXX`, où `XXXX` est le nom de type spécifique.|  
 |*[métrique]*|Le nom d’une entrée à assigner une valeur pour définir la métrique. L’organisation des mesures varie selon le type de mesure.|  
 |*[valeur métrique]*|La valeur assignée à la métrique. Le type de que la valeur doit être (string), nombre, etc. dépend de la mesure.|  
@@ -420,7 +417,7 @@ HRESULT EnumMetricSections(
 |*[types d’exception]*|Un titre général pour la sous-clé qui identifie la classe d’exceptions qui peuvent être gérés. Les noms par défaut sont **Exceptions C++**, **Exceptions Win32**, **Exceptions Common Language Runtime**, et **Native Run-Time Checks**. Ces noms sont également utilisés pour identifier une classe d’exception à l’utilisateur particulière.|  
 |*[exception]*|Un nom pour une exception : par exemple, **_com_error** ou **contrôle d’interruption**. Ces noms sont également utilisés pour identifier une exception spécifique à l’utilisateur.|  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  Ces fichiers se trouvent dans le [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] répertoire d’installation de kit de développement logiciel (par défaut, *[lecteur]* \Program Files\Microsoft Visual Studio 2010 SDK\\).  
   
  En-tête : includes\dbgmetric.h  

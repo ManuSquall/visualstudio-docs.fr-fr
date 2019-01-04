@@ -7,15 +7,14 @@ author: mblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926276"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>À l’aide des vérificateurs C++ Core Guidelines
 
@@ -64,9 +63,9 @@ Cet exemple illustre quelques-unes des avertissements que les règles C++ Core C
 
 - C26494 est règle Type.5 : Initialisez toujours un objet.
 
-- C26485 est règle Bounds.3 : aucune perte de tableau en pointeur.
+- C26485 est règle Bounds.3 : Aucune perte de tableau en pointeur.
 
-- C26481 est règle Bounds.1 : ne pas utiliser l’opération arithmétique de pointeur. Utilisez plutôt `span`.
+- C26481 est règle Bounds.1 : N’utilisez pas opérations arithmétiques de pointeur. Utilisez plutôt `span`.
 
 Si les ensembles de règles C++ Core Check l’analyse de code sont installées et activées lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais la troisième est supprimée. Voici la sortie de génération à partir de l’exemple de code :
 

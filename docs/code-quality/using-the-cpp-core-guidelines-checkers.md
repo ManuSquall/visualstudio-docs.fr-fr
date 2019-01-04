@@ -8,13 +8,12 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820236"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>À l’aide des vérificateurs C++ Core Guidelines
 Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
@@ -57,9 +56,9 @@ Cet exemple illustre quelques-unes des avertissements que les règles C++ Core C
 
 - C26494 est règle Type.5 : Initialisez toujours un objet.
 
-- C26485 est règle Bounds.3 : aucune perte de tableau en pointeur.
+- C26485 est règle Bounds.3 : Aucune perte de tableau en pointeur.
 
-- C26481 est règle Bounds.1 : ne pas utiliser l’opération arithmétique de pointeur. Utilisez plutôt `span`.
+- C26481 est règle Bounds.1 : N’utilisez pas opérations arithmétiques de pointeur. Utilisez plutôt `span`.
 
 Si les ensembles de règles C++ Core Check l’analyse de code sont installées et activées lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais la troisième est supprimée. Voici la sortie de génération à partir de l’exemple de code :
 

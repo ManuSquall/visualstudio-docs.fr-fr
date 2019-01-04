@@ -1,6 +1,5 @@
 ---
 title: Extensibilité de projet Visual C++
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986984"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Project system d’extensibilité et ensemble d’outils integration
 
@@ -481,10 +480,10 @@ Le `PageTemplate` attribut définit comment la règle s’affiche dans le **Page
 
 | Attribut | Description |
 |------------| - |
-| `generic` | Toutes les propriétés sont affichées sur une page sous les en-têtes des catégories<br/>La règle peut être visible pour `Project` et `PropertySheet` contextes, mais pas `File`.<br/><br/> Exemple : `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
-| `tool` | Catégories sont affichées en tant que pages secondaires.<br/>La règle peut être visible dans tous les contextes : `Project`, `PropertySheet` et `File`.<br/>La règle est visible dans les propriétés du projet uniquement si le projet comporte des éléments avec le `ItemType` définies dans `Rule.DataSource`, sauf si le nom de la règle est inclus dans le `ProjectTools` groupe d’éléments.<br/><br/>Exemple : `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
-| `debugger` | La page est affichée dans le cadre de la page de débogage.<br/>Catégories sont ignorés actuellement.<br/>Le nom de la règle doit correspondre à l’objet MEF de Lanceur de débogage `ExportDebugger` attribut.<br/><br/>Exemple : `$(VCTargetsPath)` \\ *1033*\\*débogueur\_local\_windows.xml* |
-| *custom* | Modèle personnalisé. Le nom du modèle doit correspondre à la `ExportPropertyPageUIFactoryProvider` attribut de la `PropertyPageUIFactoryProvider` objet MEF. Consultez **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Exemple : `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
+| `generic` | Toutes les propriétés sont affichées sur une page sous les en-têtes des catégories<br/>La règle peut être visible pour `Project` et `PropertySheet` contextes, mais pas `File`.<br/><br/> Exemple : `$(VCTargetsPath)`\\*1033*\\*general.xml* |
+| `tool` | Catégories sont affichées en tant que pages secondaires.<br/>La règle peut être visible dans tous les contextes : `Project`, `PropertySheet` et `File`.<br/>La règle est visible dans les propriétés du projet uniquement si le projet comporte des éléments avec le `ItemType` définies dans `Rule.DataSource`, sauf si le nom de la règle est inclus dans le `ProjectTools` groupe d’éléments.<br/><br/>Exemple : `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | La page est affichée dans le cadre de la page de débogage.<br/>Catégories sont ignorés actuellement.<br/>Le nom de la règle doit correspondre à l’objet MEF de Lanceur de débogage `ExportDebugger` attribut.<br/><br/>Exemple : `$(VCTargetsPath)`\\*1033*\\*débogueur\_local\_windows.xml* |
+| *custom* | Modèle personnalisé. Le nom du modèle doit correspondre à la `ExportPropertyPageUIFactoryProvider` attribut de la `PropertyPageUIFactoryProvider` objet MEF. Consultez **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Exemple : `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Si la règle utilise un des modèles basée sur la grille des propriétés, il peut utiliser ces points d’extensibilité pour ses propriétés :
 
@@ -530,7 +529,7 @@ Ensuite, dans le fichier de cibles, ajoutez :
 </ItemGroup>
 ```
 
-Exemple : `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+Exemple : `$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>Débogueurs
 
