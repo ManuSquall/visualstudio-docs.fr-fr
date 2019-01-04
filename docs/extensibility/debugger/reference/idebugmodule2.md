@@ -1,9 +1,6 @@
 ---
-title: IDebugModule2 | Documents Microsoft
-ms.custom: ''
+title: IDebugModule2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModule2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac5c39ed386763689d504eda7a85e6a77fab4db3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af77d25a0bde9f01e27c4f99dd90aff055607395
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899682"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
-Cette interface représente un module, autrement dit, une unité exécutable d’un programme, par exemple une DLL.  
+Cette interface représente un module, autrement dit, une unité exécutable d’un programme, comme une DLL.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,13 +28,13 @@ Cette interface représente un module, autrement dit, une unité exécutable d�
 IDebugModule2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Le moteur de débogage (DE) implémente cette interface pour représenter un module et pour fournir l’accès aux informations relatives à ce module.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Le moteur de débogage (dé) implémente cette interface pour représenter un module et pour fournir l’accès aux informations sur ce module.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Un appel à [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) retourne cette interface. L’envoie DE la [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) de l’interface pour le Gestionnaire de débogage de session (SDM) à l’aide de la [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (méthode).  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Un appel à [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md) retourne cette interface. L’envoie DE la [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) interface avec le Gestionnaire de débogage de session (SDM) à l’aide de la [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (méthode).  
   
- Cette interface peut également être renvoyée dans un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure (qui est retournée par un appel à [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).  
+ Cette interface peut également être retournée dans un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure (qui est retourné par un appel à [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)).  
   
  [Suivant](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) retourne également cette interface ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) retourne le [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) interface).  
   
@@ -47,20 +44,20 @@ IDebugModule2 : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Obtient le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) qui décrit ce module.|  
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLÈTE. N’UTILISEZ PAS. Recharge les symboles de ce module.|  
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|OBSOLÈTE. N’UTILISEZ PAS. Recharge les symboles pour ce module.|  
   
 ## <a name="remarks"></a>Notes  
- Informations du module peuvent être affichées dans le **Modules** fenêtre de l’IDE.  
+ Informations de module peuvent être affichées dans le **Modules** fenêtre de l’IDE.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   

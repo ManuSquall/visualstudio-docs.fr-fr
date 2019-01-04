@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::CanBind
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47a40691de66828a1b46067393cddaa7e303d118
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2bee8f954e21082e4013320aeef3f802470350a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894140"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Détermine si ce point d’arrêt en attente peut lier à un emplacement de code.  
@@ -29,13 +26,13 @@ Détermine si ce point d’arrêt en attente peut lier à un emplacement de code
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT CanBind (   
+HRESULT CanBind (   
    IEnumDebugErrorBreakpoints2** ppErrorEnum  
 );  
 ```  
   
 ```csharp  
-int CanBind (   
+int CanBind (   
    out IEnumDebugErrorBreakpoints2 ppErrorEnum  
 );  
 ```  

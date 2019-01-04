@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetDisassemblyStream | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetDisassemblyStream
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d2220d928128b02ea02d26f8273714a89171ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffc4ee1210984b71ba65a2cadd16bedab274f2a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900845"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 Obtient le flux de code machine pour ce programme ou une partie de ce programme.  
@@ -28,7 +25,7 @@ Obtient le flux de code machine pour ce programme ou une partie de ce programme.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDisassemblyStream(   
+HRESULT GetDisassemblyStream(   
    DISASSEMBLY_STREAM_SCOPE   dwScope,  
    IDebugCodeContext2*        pCodeContext,  
    IDebugDisassemblyStream2** ppDisassemblyStream  
@@ -36,7 +33,7 @@ HRESULT GetDisassemblyStream(
 ```  
   
 ```csharp  
-int GetDisassemblyStream(   
+int GetDisassemblyStream(   
    enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
    IDebugCodeContext2             pCodeContext,  
    out IDebugDisassemblyStream2   ppDisassemblyStream  
