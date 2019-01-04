@@ -1,9 +1,6 @@
 ---
-title: Projet de modélisation | Documents Microsoft
-ms.custom: ''
+title: Projet de modélisation | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb0204afd889ab487070578d136aea736bb63a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d835ee2062a6feec2fbb13991cc448b0b0b7b7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968376"
 ---
 # <a name="project-modeling"></a>Modélisation de projet
-L’étape suivante dans grâce à l’automatisation de votre projet doit implémenter les objets du projet standard : le <xref:EnvDTE.Projects> et `ProjectItems` collections ; le `Project` et <xref:EnvDTE.ProjectItem> objets ; et les autres objets spécifiques à votre implémentation. Ces objets standards sont définis dans le fichier de Dteinternal.h. Une implémentation d’un des objets standards est fournie dans l’exemple BscPrj. Vous pouvez utiliser ces classes comme modèles pour créer votre propre projet standard des objets qui se trouvent côte à côte avec les objets du projet à partir d’autres types de projet.  
+L’étape suivante de la fourniture de l’automatisation pour votre projet consiste à implémenter les objets de projet standard : le <xref:EnvDTE.Projects> et `ProjectItems` collections ; la `Project` et <xref:EnvDTE.ProjectItem> objets ; et les objets restants uniques à votre implémentation. Ces objets standards sont définis dans le fichier de Dteinternal.h. Une implémentation des objets standards est fournie dans l’exemple BscPrj. Vous pouvez utiliser ces classes en tant que modèles pour créer vos propres objets de projet standard qui en matière de côte à côte avec les objets du projet à partir d’autres types de projets.  
   
- Un consommateur automation suppose être en mesure d’appeler <xref:EnvDTE.Solution>(«`<UniqueProjName>")` et <xref:EnvDTE.ProjectItems> (`n`) où n est un numéro d’index pour l’obtention d’un projet spécifique dans la solution. Cet appel d’automation, l’environnement appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> sur la hiérarchie de projet approprié, en passant VSITEMID_ROOT comme paramètre de ItemID et VSHPROPID_ExtObject en tant que paramètre VSHPROPID. `IVsHierarchy::GetProperty` Retourne un `IDispatch` pointeur vers l’objet automation en fournissant le cœur `Project` interface, ce qui vous avez implémenté.  
+ Un utilisateur d’automation part du principe que pour être en mesure d’appeler <xref:EnvDTE.Solution>(«`<UniqueProjName>")` et <xref:EnvDTE.ProjectItems> (`n`) où n est un numéro d’index pour l’obtention d’un projet spécifique dans la solution. Cet appel d’automation, l’environnement d’appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> sur la hiérarchie de projet approprié, en passant VSITEMID_ROOT comme paramètre d’ItemID et VSHPROPID_ExtObject en tant que paramètre VSHPROPID. `IVsHierarchy::GetProperty` Retourne un `IDispatch` pointeur vers l’objet automation fournir les principales `Project` interface, ce qui vous avez implémenté.  
   
  Voici la syntaxe de `IVsHierarchy::GetProperty`.  
   
@@ -38,7 +35,7 @@ L’étape suivante dans grâce à l’automatisation de votre projet doit impl�
   
  `);`  
   
- Projets de prendre en charge l’imbrication et utilisent des collections pour créer des groupes d’éléments de projet. Voici à quoi ressemble la hiérarchie.  
+ Projets de prendre en charge l’imbrication et utilisent des collections pour créer des groupes d’éléments de projet. La hiérarchie se présente comme suit.  
   
 ```  
 Projects  
@@ -47,14 +44,14 @@ Projects
           |- ProjectItem (single object) or ProjectItems (another collection)  
 ```  
   
- Imbrication signifie qu’un <xref:EnvDTE.ProjectItem> objet peut être <xref:EnvDTE.ProjectItems> collection en même temps, car un `ProjectItems` collection peut contenir des objets imbriqués. L’exemple de projet de base ne présente pas cette imbrication. En implémentant le `Project` de l’objet, vous participez à la structure arborescente qui caractérise la conception de l’ensemble du modèle automation.  
+ L’imbrication signifie qu’un <xref:EnvDTE.ProjectItem> objet peut être <xref:EnvDTE.ProjectItems> collection en même temps, car un `ProjectItems` collection peut contenir des objets imbriqués. L’exemple de projet de base ne présente pas cette imbrication. En implémentant le `Project` de l’objet, vous participez à la structure arborescente qui caractérise la conception du modèle automation général.  
   
- L’automatisation de projet suit le chemin d’accès dans le diagramme suivant.  
+ L’automation de projet suit le chemin d’accès dans le diagramme suivant.  
   
  ![Objets du projet Visual Studio](../../extensibility/internals/media/projectobjects.gif "ProjectObjects")  
 Automation de projet  
   
- Si vous n’implémentez pas une `Project` de l’objet, l’environnement retourne toujours un type générique `Project` objet qui contient uniquement le nom du projet.  
+ Si vous n’implémentez pas un `Project` de l’objet, l’environnement retourne toujours un générique `Project` objet qui contient uniquement le nom du projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:EnvDTE.Projects>   

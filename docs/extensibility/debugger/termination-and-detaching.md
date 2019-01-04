@@ -1,9 +1,6 @@
 ---
 title: Arrêt et détachement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 143b3a266bab8ad48f7f431234d1bf50c16c9de4
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: aa26d994418d411bfccc5279e9eb6bf84a8a2772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934636"
 ---
 # <a name="termination-and-detaching"></a>Arrêt et détachement
 La section suivante décrit une fin normale.  

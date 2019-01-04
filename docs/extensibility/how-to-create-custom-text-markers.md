@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer des marqueurs de texte personnalisé | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer des marqueurs de texte personnalisé | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965218"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Comment : créer des marqueurs de texte personnalisé
+# <a name="how-to-create-custom-text-markers"></a>Procédure : Créer des marqueurs de texte personnalisé
 Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évidence ou organiser le code, vous devez procédez comme suit :  
   
 - Inscrire le nouveau marqueur de texte, afin que les autres outils puissent y accéder.  
@@ -29,7 +26,7 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
   
 - Créer un service qui peut être utilisé par d’autres processus s’utilisent le marqueur de texte.  
   
-  Pour plus d’informations sur la façon d’appliquer un marqueur de texte dans une région de code, consultez [Comment : utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md).  
+  Pour plus d’informations sur la façon d’appliquer un marqueur de texte dans une région de code, consultez [Comment : Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Pour inscrire un marqueur personnalisé  
   
@@ -92,6 +89,6 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser des marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Comment : implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)   
- [Comment : utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)
+ [Guide pratique pour Ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Guide pratique pour Implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)   
+ [Guide pratique pour Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)

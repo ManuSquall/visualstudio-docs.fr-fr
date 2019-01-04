@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de c# ou Visual Basic | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création d’un à l’aide du Kit de développement logiciel C# ou Visual Basic | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921651"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un kit de développement à l’aide de c# ou Visual Basic
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un à l’aide du Kit de développement logiciel C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  
   
 -   [Pour créer le composant SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -136,7 +133,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 22. Dans **l’Explorateur de solutions**, choisissez **SimpleMath.winmd**.  
   
-23. Dans la barre de menus, choisissez **vue** > **propriétés** (clavier : choisissez le **F4** clé).  
+23. Dans la barre de menus, choisissez **vue** > **propriétés** (clavier : Choisissez le **F4** clé).  
   
 24. Dans le **propriétés** fenêtre, la modification la **Action de génération** propriété **contenu**, puis modifiez le **inclure dans VSIX** propriété  **True**.  
   

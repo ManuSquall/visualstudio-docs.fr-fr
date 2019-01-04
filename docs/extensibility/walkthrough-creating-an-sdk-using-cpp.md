@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Création d’un kit de développement à l’aide de C++ | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917603"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procédure pas à pas : Créer un kit de développement à l’aide de C++
 Cette procédure pas à pas montre comment créer une bibliothèque C++ native mathématiques SDK, package le Kit de développement logiciel comme un Visual Studio Extension (VSIX) et ensuite l’utiliser pour créer une application. La procédure pas à pas est divisée en ces étapes :  
@@ -112,7 +109,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. Dans la barre de menus, choisissez **vue** > **Windows autres** > **fenêtre Propriétés** (clavier : choisissez le **F4**clé).  
+12. Dans la barre de menus, choisissez **vue** > **Windows autres** > **fenêtre Propriétés** (clavier : Choisissez le **F4** clé).  
   
 13. Dans **l’Explorateur de solutions**, sélectionnez le **NativeMathWRT.winmd** fichier. Dans le **propriétés** fenêtre, la modification la **Action de génération** propriété **contenu**, puis modifiez le **inclure dans VSIX** propriété  **True**.  
   
@@ -177,5 +174,5 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
 ## <a name="next-steps"></a>Étapes suivantes  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Créer un kit de développement à l’aide de c# ou Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [Procédure pas à pas : Créer un à l’aide du Kit de développement logiciel C# ou Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Création d’un kit de développement logiciel](../extensibility/creating-a-software-development-kit.md)

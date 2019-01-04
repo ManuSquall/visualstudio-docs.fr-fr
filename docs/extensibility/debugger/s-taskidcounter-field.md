@@ -1,9 +1,6 @@
 ---
 title: Champ s_taskIdCounter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5c6b0578495e56086abb8637054e0650b07195
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: d62e91274d7576360152512a9b42d8203199a297
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870084"
 ---
 # <a name="staskidcounter-field"></a>Champ s_taskIdCounter
 L’identificateur suivant disponible pour un <xref:System.Threading.Tasks.Task> objet.  
   
- **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans mscorlib.dll)  
   
@@ -38,4 +35,4 @@ L’identificateur suivant disponible pour un <xref:System.Threading.Tasks.Task>
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

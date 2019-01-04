@@ -1,9 +1,6 @@
 ---
-title: IDebugPendingBreakpoint2 | Documents Microsoft
-ms.custom: ''
+title: IDebugPendingBreakpoint2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5e84180747a3e6a3b9e5a34e7694f4cd07867c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a53bf4dc987b597ffd28b54be0614bd967d07970
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845432"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Cette interface représente un point d’arrêt est prêt à lier à un emplacement de code.  
@@ -31,27 +28,27 @@ Cette interface représente un point d’arrêt est prêt à lier à un emplacem
 IDebugPendingBreakpoint2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Le moteur de débogage (DE) implémente cette interface dans le cadre de sa prise en charge des points d’arrêt.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Le moteur de débogage (dé) implémente cette interface dans le cadre de sa prise en charge des points d’arrêt.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Un appel à [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) crée un point d’arrêt en attente d’un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interface. Un appel à [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) crée un `IDebugBreakpoint2` interface qui représente un point d’arrêt lié dans le programme.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Un appel à [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) crée un point d’arrêt en attente à partir d’un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interface. Un appel à [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) crée un `IDebugBreakpoint2` interface qui représente un point d’arrêt lié dans le programme.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugPendingBreakpoint2`.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Détermine si ce point d’arrêt en attente peut lier à un emplacement du code.|  
-|[Lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Lie ce point d’arrêt en attente à un ou plusieurs emplacements de code.|  
+|[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Détermine si ce point d’arrêt en attente peut lier à un emplacement de code.|  
+|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Lie ce point d’arrêt en attente à un ou plusieurs emplacements de code.|  
 |[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Obtient l’état de ce point d’arrêt dans l’attente.|  
 |[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtient la demande de point d’arrêt a été utilisée pour créer ce point d’arrêt en attente.|  
-|[Virtualiser](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Active ou désactive le virtualisé cela en attente de point d’arrêt.|  
-|[Activer](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Active ou désactive l’état activé de ce point d’arrêt dans l’attente.|  
-|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Définit ou modifie la condition associée à cette attente de point d’arrêt.|  
+|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Active ou désactive le virtualisé cela en attente de point d’arrêt.|  
+|[Enable](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Active ou désactive l’état activé de ce point d’arrêt dans l’attente.|  
+|[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Définit ou modifie la condition associée à cet en attente de point d’arrêt.|  
 |[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Définit ou modifie le nombre de passe associé à ce point d’arrêt dans l’attente.|  
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Énumère tous les points d’arrêt liés à partir de ce point d’arrêt en attente.|  
-|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Énumère tous les points d’arrêt erreur qui a généré à partir de ce point d’arrêt en attente.|  
+|[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Énumère toutes les erreurs des points d’arrêt qui ont abouti à partir de ce point d’arrêt en attente.|  
 |[Supprimer](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Supprime ce point d’arrêt en attente et tous les points d’arrêt liés à partir de celui-ci.|  
   
 ## <a name="remarks"></a>Notes  
@@ -62,9 +59,9 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   

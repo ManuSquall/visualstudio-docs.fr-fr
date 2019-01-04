@@ -1,9 +1,6 @@
 ---
-title: IDebugFirewallConfigurationCallback2 | Documents Microsoft
-ms.custom: ''
+title: IDebugFirewallConfigurationCallback2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFirewallConfigurationCallback2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1981d16141ed44ccbac0d2e05ae058451f0dff5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0348f1414224a3b9d092b5d7c1623de9720c9e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960824"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
-Permet à un moteur de débogage qui utilise le modèle DCOM pour demander le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur pour vous assurer que le pare-feu ne bloque pas le débogage distant.  
+Permet à un moteur de débogage qui utilise DCOM pour demander le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur pour vous assurer que le pare-feu ne bloquera pas le débogage à distance.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -29,7 +26,7 @@ Permet à un moteur de débogage qui utilise le modèle DCOM pour demander le [!
 IDebugFirewallConfigurationCallback2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  Implémenté par l’objet de port du Gestionnaire de session de débogage.  
   
 ## <a name="methods"></a>Méthodes  
@@ -40,8 +37,8 @@ IDebugFirewallConfigurationCallback2 : IUnknown
 |[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|Demande que le pare-feu bloque le débogage distant.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Msdbg.h  
+ En-tête : Msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

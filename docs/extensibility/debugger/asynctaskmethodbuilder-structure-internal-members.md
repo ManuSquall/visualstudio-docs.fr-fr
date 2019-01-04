@@ -1,9 +1,6 @@
 ---
 title: Structure AsyncTaskMethodBuilder - membres internes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, AsyncTaskMethodBuilder structure [.NET Framework]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 130a3236752fba85c611619fb3cae70e00c76ec9
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2c6d3ecb3e23df4cb9c0d45a39765fd6c22fe013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944546"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>Structure AsyncTaskMethodBuilder - membres internes
 Cette rubrique décrit les membres internes de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> classe. Pour obtenir des informations générales sur cette classe, consultez le <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> rubrique de référence.  
   
- **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans mscorlib.dll)  
   

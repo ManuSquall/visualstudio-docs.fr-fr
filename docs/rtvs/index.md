@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667013"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804077"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Utiliser R dans Visual Studio
 
@@ -43,7 +43,7 @@ Suivez ensuite les liens ci-dessous pour en savoir plus sur les fonctionnalités
 | [Fenêtre interactive](interactive-repl-for-r-in-visual-studio.md) | Fournit une expérience REPL complète de R vous permettant d’exécuter facilement du code dans un fichier source de la fenêtre interactive. | N/A |
 | [Visualisation des données](visualizing-data-with-r-in-visual-studio.md) | La création de graphiques est une partie intégrante de l’expérience de R, c’est pourquoi RTVS prend en charge plusieurs fenêtres de graphique indépendantes, chacune avec son propre historique et la possibilité de déplacer les graphiques d’une fenêtre à une autre. Vous pouvez enregistrer les graphiques dans des fichiers bitmap et PDF ou les copier dans le Presse-papiers comme bitmap ou métafichier.  | N/A |
 | [Explorateur de variables](variable-explorer.md) | Examinez les variables d’une étendue globale ou d’une étendue spécifique à un package, avec la possibilité d’afficher des tableaux que vous pouvez trier et exporter au format CSV. | N/A |
-| [Débogage complet](debugging-r-in-visual-studio.md) | Inclut l’intégration dans la fenêtre interactive. | [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Débogage complet](debugging-r-in-visual-studio.md) | Inclut l’intégration dans la fenêtre interactive. | [Débogage dans Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
 
 Voir aussi la [Foire aux questions](faq.md).
 
@@ -53,8 +53,8 @@ Voir aussi la [Foire aux questions](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Envoyez-nous vos commentaires !
 
-1. **Problèmes GitHub** : la meilleure façon de contacter l’équipe RTVS est de [signaler un problème sur GitHub](https://github.com/Microsoft/RTVS/issues) ou d’utiliser le menu **R Tools** > **Commentaires**.
+1. **Problèmes GitHub** : La meilleure façon de contacter l’équipe RTVS est de [signaler un problème sur GitHub](https://github.com/Microsoft/RTVS/issues) ou d’utiliser le menu **R Tools** > **Commentaires**.
 
-1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools** >  **Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans *%temp%/RTVSlogs.zip* au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide** > **Commentaires** > **Paramètres** ou lors de l’installation.
+1. **Envoyer un sourire / smiley mécontent** : Le menu **R Tools** >  **Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans *%temp%/RTVSlogs.zip* au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide** > **Commentaires** > **Paramètres** ou lors de l’installation.
 
-1. **E-mail** : vous pouvez envoyer des commentaires directement à l’équipe *rtvsuserfeedback (at) microsoft.com*.
+1. **E-mail** : Vous pouvez envoyer des commentaires directement à l’équipe *rtvsuserfeedback (at) microsoft.com*.

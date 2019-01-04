@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823647"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache
   Cette procédure pas à pas montre comment créer une relation maître/détail sur une feuille de calcul et la mise en cache les données afin que la solution puisse être utilisée hors connexion.  
@@ -57,7 +54,7 @@ ms.locfileid: "49933155"
   
 ### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1. Créer un projet de classeur Excel portant le nom **maître-détail mon**, à l’aide de Visual Basic ou c#. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Créer un projet de classeur Excel portant le nom **maître-détail mon**, à l’aide de Visual Basic ou c#. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **maître-détail mon** projet **l’Explorateur de solutions**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933155"
  [Données dans les solutions Office](../vsto/data-in-office-solutions.md)   
  [Données du cache](../vsto/caching-data.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

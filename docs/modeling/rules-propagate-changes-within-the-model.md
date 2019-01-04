@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925548"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.
@@ -134,7 +133,7 @@ namespace ExampleNamespace
   | Classe de base | Déclencheur |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Un élément, un lien ou une forme est ajoutée.<br /><br /> Cela permet de détecter de nouvelles relations, en plus de nouveaux éléments. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Une valeur de propriété de domaine est modifiée. L’argument de méthode fournit les valeurs anciennes et nouvelles.<br /><br /> Pour les formes, cette règle est déclenchée lorsque l’intégrée `AbsoluteBounds` des modifications de propriété, si la forme est déplacée.<br /><br /> Dans de nombreux cas, il est plus pratique substituer `OnValueChanged` ou `OnValueChanging` dans le Gestionnaire de propriétés. Ces méthodes sont appelées immédiatement avant et après la modification. En revanche, la règle s’exécute généralement à la fin de la transaction. Pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md). **Remarque :** cette règle n’est pas déclenchée lorsqu’un lien est créé ou supprimé. En revanche, écrire un `AddRule` et un `DeleteRule` pour la relation de domaine. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Une valeur de propriété de domaine est modifiée. L’argument de méthode fournit les valeurs anciennes et nouvelles.<br /><br /> Pour les formes, cette règle est déclenchée lorsque l’intégrée `AbsoluteBounds` des modifications de propriété, si la forme est déplacée.<br /><br /> Dans de nombreux cas, il est plus pratique substituer `OnValueChanged` ou `OnValueChanging` dans le Gestionnaire de propriétés. Ces méthodes sont appelées immédiatement avant et après la modification. En revanche, la règle s’exécute généralement à la fin de la transaction. Pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md). **Remarque :**  Cette règle n’est pas déclenchée lorsqu’un lien est créé ou supprimé. En revanche, écrire un `AddRule` et un `DeleteRule` pour la relation de domaine. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Déclenché lorsqu’un élément ou un lien est sur le point d’être supprimé. La propriété ModelElement.IsDeleting vaut jusqu'à la fin de la transaction. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Effectuée lorsqu’un élément ou un lien a été supprimé. La règle est exécutée une fois que toutes les autres règles ont été exécutées, y compris DeletingRules. ModelElement.IsDeleting a la valeur false et ModelElement.IsDeleted a la valeur true. Pour permettre une annulation ultérieure, l’élément n'est pas réellement supprimé de la mémoire, mais il est supprimé de Store.ElementDirectory. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un élément est déplacé à partir de la partition d’un magasin vers un autre.<br /><br /> (Notez que cela n’est pas liée à la position d’une forme de graphique). |

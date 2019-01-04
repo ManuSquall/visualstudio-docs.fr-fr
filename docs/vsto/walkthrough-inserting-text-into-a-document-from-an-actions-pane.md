@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943088"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Microsoft Office Word. Le volet actions contient deux contrôles qui collecte des commentaires, puis envoient le texte au document.  
@@ -51,7 +48,7 @@ ms.locfileid: "51948723"
   
 ### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Créer un projet de Document Word portant le nom **Mon volet Actions base**. Dans l’Assistant, sélectionnez **créer un nouveau document**. Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créer un projet de Document Word portant le nom **Mon volet Actions base**. Dans l’Assistant, sélectionnez **créer un nouveau document**. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le **Mon volet Actions base** projet **l’Explorateur de solutions**.  
   
@@ -145,7 +142,7 @@ ms.locfileid: "51948723"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  En c#, vous devez ajouter un gestionnaire d’événements pour le clic de bouton. Vous pouvez placer ce code dans le `InsertTextControl` constructeur après l’appel à `InitializeComponent`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  En c#, vous devez ajouter un gestionnaire d’événements pour le clic de bouton. Vous pouvez placer ce code dans le `InsertTextControl` constructeur après l’appel à `InitializeComponent`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
@@ -178,15 +175,13 @@ ms.locfileid: "51948723"
 ## <a name="next-steps"></a>Étapes suivantes  
  Voici quelques tâches susceptibles de venir après :  
   
--   Créer un volet actions dans Excel. Pour plus d’informations, consultez [Comment : ajouter un volet actions à des classeurs Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
+-   Créer un volet actions dans Excel. Pour plus d'informations, voir [Procédure : Ajouter un volet actions à des classeurs Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
--   Lier des données aux contrôles dans un volet actions. Pour plus d’informations, consultez [procédure pas à pas : liaison de données aux contrôles dans un volet actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Lier des données aux contrôles dans un volet actions. Pour plus d’informations, consultez [Procédure pas à pas : Lier des données aux contrôles dans un volet actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)   
- [Comment : ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Comment : ajouter un volet actions à des classeurs Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [Comment : gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Guide pratique pour Ajouter un volet actions à des documents Word ou des classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Guide pratique pour Ajouter un volet actions à des classeurs Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
+ [Guide pratique pour Gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark (contrôle)](../vsto/bookmark-control.md)  
-  
-  

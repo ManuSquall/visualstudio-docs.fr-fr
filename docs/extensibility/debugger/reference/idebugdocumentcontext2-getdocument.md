@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::GetDocument | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::GetDocument
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 622db090089c40c01652ee13b6cfe4b4623a4f1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cb29384ace5261b3dd557f0277f44938a2b2e65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849990"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 Obtient le document qui contient le contexte de ce document.  
@@ -28,13 +25,13 @@ Obtient le document qui contient le contexte de ce document.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDocument(   
+HRESULT GetDocument(   
    IDebugDocument2** ppDocument  
 );  
 ```  
   
 ```csharp  
-int GetDocument(   
+int GetDocument(   
    out IDebugDocument2 ppDocument  
 );  
 ```  

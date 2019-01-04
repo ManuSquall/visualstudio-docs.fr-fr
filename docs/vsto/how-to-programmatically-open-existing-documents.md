@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ouvrir des documents existants par programmation'
-ms.custom: ''
+title: 'Procédure : Ouvrir des documents existants par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2163ddc7db3f0fbcf32abaa8c845b3838e9d2c98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932153"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Comment : ouvrir des documents existants par programmation
+# <a name="how-to-programmatically-open-existing-documents"></a>Procédure : Ouvrir des documents existants par programmation
   Le <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> méthode ouvre le document Microsoft Office Word existant spécifié par un chemin d’accès et un nom qualifié complet. Cette méthode retourne un <xref:Microsoft.Office.Interop.Word.Document> qui représente le document ouvert.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -48,8 +45,6 @@ ms.locfileid: "35258721"
 -   Un document nommé *NouveauDocument.doc* doit exister dans un répertoire nommé *Test* sur le lecteur C.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)   
- [Comment : fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)   
+ [Guide pratique pour Créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Guide pratique pour Fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97778716ad5be8e110c022048a3d04f4c980f839
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 84005dfa85c637d2ff5677e6ad02b811bd0cb671
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842802"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet de complément VSTO Outlook avec une zone de formulaire passe à [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez apporter quelques changements au code de zone de formulaire généré, ainsi qu’au code qui instancie certaines classes de zone de formulaire au moment de l’exécution.  
   
 ## <a name="update-the-generated-form-region-code"></a>Mettre à jour le code de région de formulaire généré  
- Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code de zone de formulaire généré. Les changements que vous apportez ne sont pas les mêmes pour les zones de formulaire que vous avez créées dans Visual Studio, et les zones de formulaire que vous avez importées à partir d'Outlook. Pour plus d’informations sur les différences entre ces types de zones de formulaire, consultez [zones de formulaire Outlook de créer](../vsto/creating-outlook-form-regions.md).  
+ Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code de zone de formulaire généré. Les changements que vous apportez ne sont pas les mêmes pour les zones de formulaire que vous avez créées dans Visual Studio, et les zones de formulaire que vous avez importées à partir d'Outlook. Pour plus d’informations sur les différences entre ces types de zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).  
   
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Pour mettre à jour le code généré d'une zone de formulaire que vous avez créée dans Visual Studio  
   
@@ -202,4 +199,3 @@ ms.locfileid: "34767973"
 ## <a name="see-also"></a>Voir aussi  
  [Migrer des solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)  
-  

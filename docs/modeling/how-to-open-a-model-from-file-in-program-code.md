@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ouvrir un modèle depuis un fichier dans le code de programme'
+title: 'Procédure : Ouvrir un modèle depuis un fichier dans le code du programme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938066"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Procédure : Ouvrir un modèle depuis un fichier dans le code du programme
 Vous pouvez ouvrir les modèles DSL dans n’importe quelle application.
 
  À partir d’une extension Visual Studio, vous pouvez utiliser ModelBus à cet effet. ModelBus fournit un mécanisme standard pour faire référence à un modèle ou éléments dans un modèle et pour rechercher le modèle si elle a été déplacé. Pour plus d’informations, consultez [l’intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
@@ -42,7 +41,7 @@ Vous pouvez ouvrir les modèles DSL dans n’importe quelle application.
 
     -   Si vous ne voyez pas cette opération sous le **.NET** onglet dans le **ajouter des références** boîte de dialogue, cliquez sur le **Parcourir** onglet et accédez à `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   Votre assembly DSL, vous trouverez sous le dossier bin de votre projet DSL. Son nom est généralement au format : *votresociété*. *VotreProjet*`.Dsl.dll`.
+-   Votre assembly DSL, vous trouverez sous le dossier bin de votre projet DSL. Son nom est généralement sous la forme : *Votresociété*. *VotreProjet*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Classes importantes dans la solution DSL
  Avant de pouvoir écrire le code qui lit votre DSL, vous devez savoir les noms de certaines des classes générées par votre DSL. Dans votre solution DSL, ouvrez le **Dsl** de projet, puis examinez le **GeneratedCode** dossier. Vous pouvez également, double-cliquez sur l’assembly DSL dans votre projet **références**et ouvrez l’espace de noms DSL dans **Explorateur d’objets**.

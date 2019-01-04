@@ -1,9 +1,6 @@
 ---
 title: Résoudre les erreurs dans les solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919018"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :  
@@ -57,9 +54,9 @@ ms.locfileid: "50672949"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Erreurs lorsque vous créez un projet de classeur Excel basé sur un classeur existant  
  Si vous créez un nouveau projet de classeur Excel basé sur un classeur existant, vous pouvez constater une combinaison des erreurs suivantes.  
   
- Dans Excel : « Avertissement concernant la confidentialité : ce document contient des macros, des contrôles ActiveX, des informations sur le kit d'extension XML ou des composants Web. Ils peuvent renfermer des informations personnelles qui ne peuvent pas être supprimées par l'Inspecteur de document. »  
+ À partir d’Excel : « Avertissement concernant la confidentialité : Ce document contient des macros, des contrôles ActiveX, des informations sur le pack d’extension XML ou des composants Web. Ils peuvent renfermer des informations personnelles qui ne peuvent pas être supprimées par l'Inspecteur de document. »  
   
- Dans Visual Studio : « Le chargement du concepteur n'a pas pu s'effectuer correctement. »  
+ À partir de Visual Studio : « Impossible de charger correctement concepteur. »  
   
  Ces erreurs peuvent se produire si vous essayez de créer un projet basé sur un classeur dont les informations personnelles ont été supprimées à l'aide de l'inspecteur de document. Pour éviter cette erreur, effectuez les opérations suivantes avant de créer le projet.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Ce code génère les erreurs de compilation suivantes :  
   
-- Visual Basic : « référence à la classe 'DocumentClass' n'est pas autorisée lorsque son assembly est lié à l’aide du mode No-PIA. »  
+- Visual Basic : « Référence à la classe 'DocumentClass' n’est pas autorisée lorsque son assembly est lié à l’aide du mode No-PIA. »  
   
-- Visual c# : « type Interop 'Microsoft.Office.Interop.Word.DocumentClass' ne peut pas être incorporé. Utilisez l'interface applicable à la place. »  
+- Visual C#: « Type interop 'Microsoft.Office.Interop.Word.DocumentClass' ne peut pas être incorporé. Utilisez l'interface applicable à la place. »  
   
   Pour résoudre cette erreur, modifiez le code pour faire référence à l'interface correspondante à la place. Par exemple, au lieu de faire référence à un objet <xref:Microsoft.Office.Interop.Word.DocumentClass>, faites référence à une instance de l'interface <xref:Microsoft.Office.Interop.Word.Document> à la place.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Résoudre les problèmes des solutions Office](../vsto/troubleshooting-office-solutions.md)   
  [Résoudre les problèmes de sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)   
  [Résoudre les problèmes de déploiement de solutions Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

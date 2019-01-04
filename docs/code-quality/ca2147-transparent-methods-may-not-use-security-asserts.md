@@ -1,8 +1,7 @@
 ---
-title: "CA2147 : Les méthodes transparentes ne peuvent pas utiliser d'assertions de sécurité"
+title: 'CA2147 : Les méthodes transparentes ne peuvent pas utiliser de sécurité des assertions'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SecurityTransparentCodeShouldNotAssert
@@ -17,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f701a0e39124327c897043590b318cb6e645c1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4daf5d4183c8226a0bed613c5e175ddbd620f43a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912491"
 ---
-# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147 : Les méthodes transparentes ne peuvent pas utiliser d'assertions de sécurité
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147 : Les méthodes transparentes ne peuvent pas utiliser de sécurité des assertions
 
 |||
 |-|-|

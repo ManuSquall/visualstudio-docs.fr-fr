@@ -1,9 +1,6 @@
 ---
 title: Élément de liste déroulante | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43a7799c1c2b6d3fed965f6039aa01b7fd29e937
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926250"
 ---
 # <a name="combo-element"></a>Élément de liste déroulante
-Définit des commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types de zones de liste déroulante, comme suit : DropDownCombo, DynamicCombo, IndexCombo et MRUCombo.  
+Définit des commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types de zones de liste déroulante, comme suit : DropDownCombo DynamicCombo, IndexCombo et MRUCombo.  
   
 ## <a name="syntax"></a>Syntaxe  
   

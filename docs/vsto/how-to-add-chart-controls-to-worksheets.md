@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter des contrôles Chart aux feuilles de calcul'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4f1c5cd15710e3886e3e8b0ed7483ba3776cef15
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967464"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procédure : Ajouter des contrôles Chart aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.Chart> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans des personnalisations au niveau du document. Vous pouvez également ajouter <xref:Microsoft.Office.Tools.Excel.Chart> contrôles lors de l’exécution dans des Compléments VSTO.  
@@ -93,5 +90,3 @@ ms.locfileid: "53648931"
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

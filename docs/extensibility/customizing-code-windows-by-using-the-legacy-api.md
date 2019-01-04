@@ -1,9 +1,6 @@
 ---
 title: Personnalisation de Code Windows à l’aide de l’API héritée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883037"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Personnaliser les fenêtres de code à l’aide de l’API héritée
 Une fenêtre de code est un objet de fenêtre de document qui prend en charge une ou plusieurs vues de texte. Les fonctionnalités exactes d’une fenêtre de code varient selon le service de langage associé. En mode d’interface multidocument (MDI), la fenêtre de code est le frame enfant MDI.  
@@ -36,10 +33,10 @@ Fenêtre Code
  `Customizing Code Windows by Using the Legacy API`  
  Explique comment personnaliser les fenêtres de code à l’aide de l’API héritée.  
   
- [Comment : héberger un éditeur dans un autre éditeur](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Guide pratique pour Héberger un éditeur dans un autre éditeur](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explique comment héberger un second éditeur à l’intérieur d’une fenêtre d’éditeur.  
   
- [Comment : déclencher des événements lorsque l’éditeur perd le focus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Guide pratique pour Déclencher des événements lorsque l’éditeur perd le focus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Explique comment attacher une vue de document à un objet de données de document.  
   
 ## <a name="see-also"></a>Voir aussi  

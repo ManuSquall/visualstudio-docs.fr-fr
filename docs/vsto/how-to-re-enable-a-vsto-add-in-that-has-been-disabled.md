@@ -1,9 +1,6 @@
 ---
-title: 'Comment : réactiver un complément qui a été désactivé'
-ms.custom: ''
+title: 'Procédure : Réactiver un complément qui a été désactivé'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939396"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Comment : réactiver un complément qui a été désactivé
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procédure : Réactiver un complément qui a été désactivé
   Les applications Microsoft Office peuvent désactiver les compléments VSTO qui se comportent de façon inattendue. Si une application ne charge pas votre complément VSTO quand vous essayez de la déboguer, cela peut-être dû au fait qu'elle a désactivé votre complément VSTO de manière forcée ou en douceur.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35673228"
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
  [Déboguez des projets Office](../vsto/debugging-office-projects.md)   
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)  
-  
-  

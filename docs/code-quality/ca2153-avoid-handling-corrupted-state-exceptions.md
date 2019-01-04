@@ -1,22 +1,21 @@
 ---
-title: 'CA2153 : éviter la gestion des exceptions d’état endommagé'
+title: 'CA2153 : Éviter la gestion des Exceptions d’état endommagé'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821858"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : éviter la gestion des exceptions d’état endommagé
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Éviter la gestion des Exceptions d’état endommagé
 
 |||
 |-|-|
@@ -27,11 +26,11 @@ ms.locfileid: "45547517"
 
 ## <a name="cause"></a>Cause
 
-[Endommagé des Exceptions d’état (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent que la mémoire corruption existe dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
+Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent un endommagement de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les CSE indiquent que l’état d’un processus a été endommagé et qu’il n’a pas été intercepté par le système. Dans un scénario d’état endommagé, un gestionnaire général intercepte uniquement l’exception si votre méthode est marquée au moyen de l’attribut `HandleProcessCorruptedStateExceptions` approprié. Par défaut, le [Common Language Runtime (CLR)](/dotnet/standard/clr) n’appelle pas de gestionnaires catch pour les CSE.
+Les CSE indiquent que l’état d’un processus a été endommagé et qu’il n’a pas été intercepté par le système. Dans un scénario d’état endommagé, un gestionnaire général intercepte uniquement l’exception si votre méthode est marquée au moyen de l’attribut `HandleProcessCorruptedStateExceptions` approprié. Par défaut, le [Common Language Runtime (CLR)](/dotnet/standard/clr) n’appelle pas les gestionnaires catch pour les CSE.
 
 L’option la plus sûre consiste à autoriser le blocage du processus sans intercepter ces types d’exceptions, dans la mesure où même le code de journalisation peut permettre à des personnes malveillantes d’exploiter les bogues d’endommagement de la mémoire.
 
@@ -41,7 +40,7 @@ Cet avertissement se déclenche lors de l’interception de CSE au moyen d’un 
 
 Pour résoudre cet avertissement, effectuez l’une des opérations suivantes :
 
-- Supprimer le `HandleProcessCorruptedStateExceptions` attribut. Cela a pour effet de rétablir le comportement du runtime par défaut selon lequel les CSE ne sont pas passées aux gestionnaires catch.
+- Supprimer l’attribut `HandleProcessCorruptedStateExceptions`. Cela a pour effet de rétablir le comportement du runtime par défaut selon lequel les CSE ne sont pas passées aux gestionnaires catch.
 
 - Supprimer le gestionnaire catch général et privilégier les gestionnaires qui interceptent des types d’exceptions spécifiques. Cela peut inclure des CSE en supposant que le code du gestionnaire puisse les gérer en toute sécurité (rare).
 

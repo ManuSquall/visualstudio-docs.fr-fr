@@ -2,7 +2,6 @@
 title: Ensembles de règles d’analyseur
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df084a81de2afc522fc3b82141cf8c5c59205ca
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 514f264186047c044e5db1b944cd62d517588e80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885221"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Ensembles de règles pour les analyseurs Roslyn
 
@@ -56,7 +55,7 @@ En outre, il existe deux ensembles de règles pour chaque catégorie de règles 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des analyseurs de .NET Compiler Platform](roslyn-analyzers-overview.md)
+- [Vue d’ensemble des analyseurs .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Installer les analyseurs .NET Compiler Platform](install-roslyn-analyzers.md)
 - [Configurer et utiliser des règles de l’analyseur Roslyn](use-roslyn-analyzers.md)
 - [Utiliser la règle définit pour les règles d’analyse de code de groupe](using-rule-sets-to-group-code-analysis-rules.md)

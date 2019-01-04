@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986165"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 Un gestionnaire de mouvements peut traiter des objets de faire glissés le diagramme à partir de n’importe où, à l’intérieur ou en dehors de Visual Studio. L’exemple suivant permet à l’utilisateur de faire glisser des fichiers à partir de l’Explorateur Windows sur le diagramme. Il crée des éléments qui contiennent les noms de fichiers.
 
-Vous pouvez écrire des gestionnaires d’occuper fait glisser à partir d’autres modèles DSL et les modèles UML. Pour plus d’informations, consultez [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Vous pouvez écrire des gestionnaires d’occuper fait glisser à partir d’autres modèles DSL et les modèles UML. Pour plus d'informations, voir [Procédure : Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -378,5 +377,5 @@ namespace MefExtension
 
 - [Publication d’extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [Guide pratique pour ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)

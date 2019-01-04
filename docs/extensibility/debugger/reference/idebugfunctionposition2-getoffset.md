@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionPosition2::GetOffset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionPosition2::GetOffset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f06223ffc68ed4728f8cd9181575dac361af1bdc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 524513b7d539652ac8ce7971a3add049508bcbc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958525"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 Récupère la position de la fonction dans le document source.  
@@ -28,7 +25,7 @@ Récupère la position de la fonction dans le document source.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetOffset(   
+HRESULT GetOffset(   
    TEXT_POSITION* pPosition  
 );  
 ```  

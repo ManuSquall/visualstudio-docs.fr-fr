@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821035"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 
@@ -75,7 +74,7 @@ Vous pouvez ajouter du code personnalisé aux directives de fusion :
 >
 > Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traitée par votre code personnalisé, vous pouvez définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 
-## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : Définition d’une directive EMD sans code personnalisé
+## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : Définition d’une directive EMD sans code personnalisé
 
 L’exemple suivant permet aux utilisateurs de créer un élément et un connecteur en même temps en faisant glisser à partir de la boîte à outils vers une forme existante. L’exemple ajoute une directive EMD à la définition DSL. Avant cette modification, les utilisateurs peuvent faire glisser outils sur le diagramme, mais pas sur des formes existantes.
 
@@ -91,7 +90,7 @@ Les utilisateurs peuvent également coller des éléments sur d’autres éléme
 
    1.  Dans **Explorateur DSL**, développez **Classes de domaine**. Avec le bouton droit `ExampleElement` puis cliquez sur **ajouter nouvelle Directive de fusion**.
 
-   2.  Assurez-vous que le **détails DSL** fenêtre est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **vue**, **autres Windows**, **détails DSL**.)
+   2.  Assurez-vous que le **détails DSL** fenêtre est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **Afficher**, **autres Windows**, **détails DSL**.)
 
 3. Définir le **classe d’indexation** dans la fenêtre Détails DSL, pour définir quelle classe d’éléments peut être fusionné sur `ExampleElement` objets.
 
@@ -145,7 +144,7 @@ Notez les points suivants à partir de cette procédure :
 
      Si vous écrivez du code personnalisé qui crée de nouveaux éléments, vous pouvez appeler explicitement la EMD à l’aide de la `ElementOperations.Merge` (méthode). Cela permet de s’assurer que votre code lie les nouveaux éléments dans le modèle de la même façon que les autres opérations. Pour plus d’informations, consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemple : Ajout de code acceptation personnalisée à une directive EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemple : Ajout de code pour une directive EMD acceptation personnalisée
 
 En ajoutant le code personnalisé à une directive EMD, vous pouvez définir le comportement de fusion plus complexe. Cet exemple simple empêche l’ajout d’un nombre fixe d’éléments vers le diagramme de l’utilisateur. L’exemple modifie la valeur par défaut EMD qui accompagne une relation d’incorporation.
 
@@ -161,7 +160,7 @@ En ajoutant le code personnalisé à une directive EMD, vous pouvez définir le 
 
 4.  Régénérez la solution. Cela prendra plus de temps que d’habitude, car le code généré sera actualisé à partir du modèle.
 
-     Une erreur de build seront signalées, semblable à : « Company.ElementMergeSample.ExampleElement ne contient pas une définition pour CanMergeExampleElement... »
+     Une erreur de build seront signalées, similaire à : « Company.ElementMergeSample.ExampleElement ne contient pas une définition pour CanMergeExampleElement... »
 
      Vous devez implémenter la méthode `CanMergeExampleElement`.
 
@@ -208,7 +207,7 @@ En ajoutant le code personnalisé à une directive EMD, vous pouvez définir le 
 
     3.  Vérifiez que vous ne pouvez pas utiliser une des manières suivantes pour ajouter plus de quatre éléments au modèle. Il s’agit, car ils utilisent tous la Directive de fusion.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemple : Ajout de code personnalisé de fusion à une directive EMD
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemple : Ajout de code personnalisé de fusion à une directive EMD
 
 Dans le code de la fusion personnalisée, vous pouvez définir ce qui se passe lorsque l’utilisateur fait glisser un outil ou colle un élément sur un élément. Il existe deux façons de définir une fusion personnalisée :
 

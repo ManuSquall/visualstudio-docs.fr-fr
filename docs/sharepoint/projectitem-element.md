@@ -1,9 +1,6 @@
 ---
 title: ProjectItem, élément | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0c295410caffb476d6c1e796864c47520a2f56
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890100"
 ---
 # <a name="projectitem-element"></a>ProjectItem (élément)
   Représente un élément de projet SharePoint. Cet élément de l’élément racine requis de la *.spdata* fichier.  
@@ -52,9 +49,9 @@ ms.locfileid: "37119231"
 |**DefaultFile**|Facultatif **xs : string** attribut.<br /><br /> Le chemin d’accès relatif, y compris le nom de fichier du fichier qui s’ouvre dans l’éditeur Visual Studio lorsque vous ouvrez l’élément de projet SharePoint dans **l’Explorateur de solutions**. Le chemin d’accès est relatif à partir du dossier qui contient le *.spdata* fichier.|  
 |**FeatureReceiverClass**|Facultatif **xs : String** attribut.<br /><br /> Le nom qualifié complet d’une classe de récepteur de fonctionnalité pour cet élément de projet SharePoint. Pour plus d’informations sur les récepteurs, consultez [fournissent des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |**FeatureReceiverAssembly**|Facultatif **xs : String** attribut.<br /><br /> Spécifie le nom qualifié complet d’un assembly qui définit un récepteur de fonctionnalité pour cet élément de projet SharePoint. Pour plus d’informations sur les récepteurs, consultez [fournissent des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Pour plus d’informations sur les noms d’assembly qualifiés complets, consultez [noms d’assemblys](/dotnet/framework/app-domains/assembly-names).|  
-|**SupportedTrustLevels**|Facultatif **xs : String** attribut.<br /><br /> Spécifie les niveaux de confiance prenant en charge cet élément de projet SharePoint. Cette valeur peut être une des chaînes suivantes : Sandboxed, FullTrust, ou la totalité. La valeur All spécifie Sandboxed et FullTrust.<br /><br /> Dans un type d’élément de projet SharePoint personnalisé, la valeur de cet attribut correspond à la valeur que vous attribuez à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriété dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode). Si vous spécifiez une valeur différente pour cet attribut, Visual Studio remplace la valeur afin qu’elle spécifie le même niveau de confiance que vous spécifiez dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriété.|  
-|**SupportedDeploymentScopes**|Facultatif **xs : String** attribut.<br /><br /> Spécifie les portées de déploiement qui prend en charge par cet élément de projet SharePoint. Cette valeur est une chaîne délimitée par des virgules qui se compose d’un ou plusieurs des chaînes suivantes : batterie de serveurs, Site, Web, WebApplication ou Package. Par exemple :`Web, Site`<br /><br /> Dans un type d’élément de projet SharePoint personnalisé, la valeur de cet attribut correspond à la valeur que vous attribuez à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriété dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode). Si vous spécifiez une valeur différente pour cet attribut, Visual Studio remplace la valeur afin qu’elle spécifie le même niveau de confiance que vous spécifiez dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriété.|  
-|**Type**|Requis **xs : String** attribut.<br /><br /> L’identificateur pour l’élément de projet SharePoint. Dans un type d’élément de projet SharePoint personnalisé, l’identificateur est la chaîne que vous passez à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Pour plus d’informations, consultez [Comment : définir un type d’élément de projet SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Pour obtenir la liste des identificateurs pour les éléments de projet SharePoint intégrés inclus avec Visual Studio, consultez [éléments de projet SharePoint étendre](../sharepoint/extending-sharepoint-project-items.md).|  
+|**SupportedTrustLevels**|Facultatif **xs : String** attribut.<br /><br /> Spécifie les niveaux de confiance prenant en charge cet élément de projet SharePoint. Cette valeur peut être une des chaînes suivantes : Sandbox, FullTrust, ou la totalité. La valeur All spécifie Sandboxed et FullTrust.<br /><br /> Dans un type d’élément de projet SharePoint personnalisé, la valeur de cet attribut correspond à la valeur que vous attribuez à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriété dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode). Si vous spécifiez une valeur différente pour cet attribut, Visual Studio remplace la valeur afin qu’elle spécifie le même niveau de confiance que vous spécifiez dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriété.|  
+|**SupportedDeploymentScopes**|Facultatif **xs : String** attribut.<br /><br /> Spécifie les portées de déploiement qui prend en charge par cet élément de projet SharePoint. Cette valeur est une chaîne délimitée par des virgules qui se compose d’une ou plusieurs des chaînes suivantes : Batterie de serveurs, Site, Web, WebApplication ou Package. Par exemple :`Web, Site`<br /><br /> Dans un type d’élément de projet SharePoint personnalisé, la valeur de cet attribut correspond à la valeur que vous attribuez à la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriété dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode). Si vous spécifiez une valeur différente pour cet attribut, Visual Studio remplace la valeur afin qu’elle spécifie le même niveau de confiance que vous spécifiez dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriété.|  
+|**Type**|Requis **xs : String** attribut.<br /><br /> L’identificateur pour l’élément de projet SharePoint. Dans un type d’élément de projet SharePoint personnalisé, l’identificateur est la chaîne que vous passez à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Pour plus d'informations, voir [Procédure : Définir un type d’élément de projet SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Pour obtenir la liste des identificateurs pour les éléments de projet SharePoint intégrés inclus avec Visual Studio, consultez [éléments de projet SharePoint étendre](../sharepoint/extending-sharepoint-project-items.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants
   
@@ -76,8 +73,7 @@ ms.locfileid: "37119231"
 |**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
-|**Peut être vide**|Non|  
+|**Peut être vide**|Aucune|  
   
 ## <a name="see-also"></a>Voir aussi
 [Rseference de schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

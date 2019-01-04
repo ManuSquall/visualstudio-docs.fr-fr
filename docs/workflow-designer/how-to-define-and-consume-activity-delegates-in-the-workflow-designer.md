@@ -1,29 +1,28 @@
 ---
-title: 'Concepteur de flux de travail - Comment : définir et utiliser des délégués d’activité'
+title: 'Concepteur de flux de travail - Comment : Définir et utiliser des délégués d’activité'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908460"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : Définir et utiliser des délégués d’activité dans le concepteur de workflow
 
 .NET framework 4.5 inclut un concepteur d’out-of-box pour le <xref:System.Activities.Statements.InvokeDelegate> activité. Ce concepteur peut être utilisé pour assigner des délégués à l'activité qui dérive de <xref:System.Activities.ActivityDelegate>, telle que <xref:System.Activities.ActivityAction> ou <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Définir un délégué d'activité
 
-1. Dans Visual Studio, sélectionnez **fichier** > **New** > **projet**.
+1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet**.
 
 2. Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Workflow** catégorie sur la gauche, puis sélectionnez le **Application Console de Workflow** modèle de projet. Nommez le projet (le cas échéant) et cliquez sur **Ok**.
 

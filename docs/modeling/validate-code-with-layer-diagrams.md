@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907824"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -55,7 +54,7 @@ Pour vous assurer que le code n’entre en conflit avec sa conception, validez v
 
 Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Vous pouvez valider le code manuellement à partir d’un diagramme de dépendances ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement lors de l’exécution de builds locales ou les Pipelines Azure génère. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).
+Vous pouvez valider le code manuellement à partir d’un diagramme de dépendances ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement lors de l’exécution de builds locales ou les Pipelines Azure génère. Consultez [vidéo Channel 9 : Concevoir et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Si vous souhaitez exécuter la validation de couche à l’aide de Team Foundation Server (TFS), vous devez également installer la même version de Visual Studio sur votre serveur de builds.
@@ -228,12 +227,12 @@ La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique l
 
 | **Syntaxe de l’erreur** | **Description de l’erreur** |
 |-|-|
-| DV0001 : **dépendance non valide** | Ce problème est signalé lorsqu’un élément de code (espace de noms, type, membre) mappée à une référence de couche un élément de code mappé à une autre couche, mais il n’existe aucune flèche de dépendance entre ces couches dans le diagramme de validation de dépendance contenant cette couches. Il s’agit d’une violation de contrainte de dépendance. |
-| DV1001 : **nom de l’espace de noms non valide** | Ce problème est signalé sur un élément de code associé à une couche de propriété de « Autorisé de noms Namespace » ne contienne pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la syntaxe de « Autorisé de noms Namespace » est une liste de point-virgule des espaces de noms dans le code associés à des éléments constituent la couche sont autorisés à être définis. |
-| DV1002 : **dépendance sur l’espace de noms à ne pas référencer** | Ce problème est signalé sur un élément de code associé à une couche et faisant référence à un autre élément de code défini dans un espace de noms qui est défini dans la propriété « À ne pas référencer Namespace » de la couche. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Espaces de noms à ne pas référencer » est définie comme une liste séparée par des points-virgules des espaces de noms qui ne doivent pas être référencés dans les éléments de code associés à cette couche. |
-| DV1003 : **nom d’espace de noms non autorisé** | Ce problème est signalé sur un élément de code associé à une couche de propriété de « Interdites des noms Namespace » contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Nom d’espace de noms non autorisé » est définie comme une liste séparée par des points-virgules des espaces de noms dans le code les éléments associés à cette couche ne doivent pas être définis. |
-| DV3001 : **lien manquant** | Couche «*LayerName*'établit un lien vers'*artefact*' qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly. |
-| DV9001 : **analyse de l’architecture des erreurs internes détectées** | Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie. |
+| DV0001 : **Dépendance non valide** | Ce problème est signalé lorsqu’un élément de code (espace de noms, type, membre) mappée à une référence de couche un élément de code mappé à une autre couche, mais il n’existe aucune flèche de dépendance entre ces couches dans le diagramme de validation de dépendance contenant cette couches. Il s’agit d’une violation de contrainte de dépendance. |
+| DV1001 : **Nom de l’espace de noms non valide** | Ce problème est signalé sur un élément de code associé à une couche de propriété de « Autorisé de noms Namespace » ne contienne pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la syntaxe de « Autorisé de noms Namespace » est une liste de point-virgule des espaces de noms dans le code associés à des éléments constituent la couche sont autorisés à être définis. |
+| DV1002 : **Dépendance sur l’espace de noms à ne pas référencer** | Ce problème est signalé sur un élément de code associé à une couche et faisant référence à un autre élément de code défini dans un espace de noms qui est défini dans la propriété « À ne pas référencer Namespace » de la couche. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Espaces de noms à ne pas référencer » est définie comme une liste séparée par des points-virgules des espaces de noms qui ne doivent pas être référencés dans les éléments de code associés à cette couche. |
+| DV1003 : **Nom de l’espace de noms interdit** | Ce problème est signalé sur un élément de code associé à une couche de propriété de « Interdites des noms Namespace » contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte d’affectation de noms. Notez que la propriété « Nom d’espace de noms non autorisé » est définie comme une liste séparée par des points-virgules des espaces de noms dans le code les éléments associés à cette couche ne doivent pas être définis. |
+| DV3001 : **Lien manquant** | Couche «*LayerName*'établit un lien vers'*artefact*' qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly. |
+| DV9001 : **Analyse de l’architecture erreurs internes détecté** | Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie. |
 
 ## <a name="see-also"></a>Voir aussi
 

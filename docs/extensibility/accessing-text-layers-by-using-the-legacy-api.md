@@ -1,9 +1,6 @@
 ---
 title: L’accès à des couches de texte à l’aide de l’API héritée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 47085216c6f20ca1add535a76ce4f5fb4043a6dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945936"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>Couches de texte de l’accès à l’aide de l’API héritée
 En règle générale, un calque de texte encapsule certains aspects de la disposition du texte. Par exemple, une couche « fonction-à-à la fois » masque le texte avant et après une fonction contenant le signe insertion (point d’insertion de texte).  

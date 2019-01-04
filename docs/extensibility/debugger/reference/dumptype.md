@@ -1,9 +1,6 @@
 ---
 title: DUMPTYPE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DUMPTYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 327b0e2dde4826682be2ffbd907c97369e1586e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952136"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Spécifie la quantité d’état d’un programme (par exemple, les threads en cours d’exécution, les frames de pile et adresse d’instruction en cours) pour vider.  
@@ -28,7 +25,7 @@ Spécifie la quantité d’état d’un programme (par exemple, les threads en c
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_DUMPTYPE {   
+enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
 };  
@@ -36,7 +33,7 @@ typedef DWORD DUMPTYPE;
 ```  
   
 ```csharp  
-public enum enum_DUMPTYPE {   
+public enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
 };  
@@ -52,12 +49,12 @@ public enum enum_DUMPTYPE {
 ## <a name="remarks"></a>Notes  
  Passé en tant qu’argument à la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

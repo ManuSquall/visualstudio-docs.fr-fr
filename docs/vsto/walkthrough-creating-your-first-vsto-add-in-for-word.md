@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer votre premier complément pour Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948970"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : Créer votre premier complément pour Word
   Cette première procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application, quels que soient les documents ouverts.  
@@ -124,17 +121,17 @@ ms.locfileid: "49940968"
 ## <a name="next-steps"></a>Étapes suivantes  
  Maintenant que vous avez créé un complément VSTO de base pour Word, vous pouvez perfectionner votre connaissance du développement des compléments VSTO en consultant les rubriques suivantes :  
   
--   Les tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO : [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
+-   Tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO : [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md).  
   
 -   Tâches de programmation qui sont spécifiques aux compléments VSTO Word : [Word solutions](../vsto/word-solutions.md).  
   
--   À l’aide du modèle objet de Word : [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md).  
+-   À l’aide du modèle objet de Word : [Vue d’ensemble du modèle objet de Word](../vsto/word-object-model-overview.md).  
   
--   Personnalisation de l’interface utilisateur de Word, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet de tâches personnalisé : [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
+-   Personnalisation de l’interface utilisateur de Word, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet de tâches personnalisé : [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
   
--   Génération et débogage des Compléments VSTO pour Word : [solutions Office Build](../vsto/building-office-solutions.md).  
+-   Génération et débogage des Compléments VSTO pour Word : [Générer des solutions Office](../vsto/building-office-solutions.md).  
   
--   Déploiement de compléments VSTO pour Word : [déployer une solution Office](../vsto/deploying-an-office-solution.md).  
+-   Déploiement de compléments VSTO pour Word : [Déployer une solution Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940968"
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)  
-  
-  

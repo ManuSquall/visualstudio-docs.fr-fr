@@ -1,9 +1,6 @@
 ---
 title: Accorder votre confiance à des solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 49b2e66f35bf320d6eca04fd1b171a5e0c65132e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890467"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Accorder votre confiance à des solutions Office
   Accorder votre confiance aux moyens de solutions Office modification de la stratégie de sécurité de chaque ordinateur cible pour approuver l’assembly de solution, le manifeste d’application, le manifeste de déploiement et le document. Approbation peut être accordée à la solution Office par vous ou l’utilisateur final.

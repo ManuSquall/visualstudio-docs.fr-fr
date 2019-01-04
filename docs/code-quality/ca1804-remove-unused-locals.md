@@ -1,8 +1,7 @@
 ---
-title: 'CA1804 : Supprimez les variables locales inutilisées'
+title: 'CA1804 : Supprimez les variables locales inutilisées'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819859"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804 : Supprimez les variables locales inutilisées
+# <a name="ca1804-remove-unused-locals"></a>CA1804 : Supprimez les variables locales inutilisées
 
 |||
 |-|-|
@@ -56,8 +55,8 @@ ms.locfileid: "45545461"
 ## <a name="related-rules"></a>Règles associées
  [CA1809 : Évitez le surplus de variables locales](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811 : Évitez le recours à du code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811 : Évitez le recours à code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)

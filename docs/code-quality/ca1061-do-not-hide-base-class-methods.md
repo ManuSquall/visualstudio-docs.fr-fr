@@ -1,8 +1,7 @@
 ---
-title: 'CA1061 : Ne pas masquer les méthodes de la classe de base'
+title: 'CA1061 : Ne pas masquer les méthodes de classe de base'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1061
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da132ba941c448f6323199d8baca86841d192ecf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0a6db369cea0e242ce5b2b6e169278b1bf17ea2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928553"
 ---
-# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061 : Ne pas masquer les méthodes de la classe de base
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061 : Ne pas masquer les méthodes de classe de base
 
 |||
 |-|-|

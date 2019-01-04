@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Création d’un composant WebPart Silverlight qui affiche OData pour SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 658417d07fdc0031a6e018d332bdbdd1d7edb1a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905713"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : Créer un composant WebPart Silverlight qui affiche OData pour SharePoint
   SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData.svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche des informations de liste SharePoint annonce à l’aide de ListData.svc. Pour plus d’informations, consultez [Interface REST de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) et [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -71,7 +68,7 @@ ms.locfileid: "51296110"
   
 #### <a name="to-customize-the-silverlight-application"></a>Pour personnaliser l’application Silverlight
   
-1.  Ajoutez une référence d’assembly à System.Windows.Data dans l’application Silverlight. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+1.  Ajoutez une référence d’assembly à System.Windows.Data dans l’application Silverlight. Pour plus d'informations, voir [Procédure : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 2.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **références**, puis choisissez **ajouter une référence de Service**.  
   
@@ -235,5 +232,3 @@ ms.locfileid: "51296110"
 ## <a name="see-also"></a>Voir aussi
  [Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Déployer, publier et mettre à niveau de packages de solution SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
-  
-  

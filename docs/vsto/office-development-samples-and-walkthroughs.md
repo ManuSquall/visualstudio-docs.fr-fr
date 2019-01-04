@@ -1,9 +1,6 @@
 ---
 title: Procédures pas à pas et des exemples de développement office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909786"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Procédures pas à pas et des exemples de développement office
   Cette section contient des exemples d’applications, exemple de code et procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour générer des solutions Microsoft Office.  
@@ -60,5 +57,3 @@ ms.locfileid: "35672868"
 |[Tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md)|Répertorie les questions fréquemment posées sur la programmation avec le développement Office dans Visual Studio et fournit des liens vers des rubriques qui peuvent aider à résoudre les problèmes courants.|  
 |[Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)|Fournit des liens vers des informations sur la création de solutions Microsoft Office et le rôle des assemblys dans votre solution.|  
 |[Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)|Fournit une vue d’ensemble du volet de tâches de niveau document appelé volet d’actions.|  
-  
-  

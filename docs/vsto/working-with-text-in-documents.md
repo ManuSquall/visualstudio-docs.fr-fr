@@ -1,9 +1,6 @@
 ---
 title: Travailler avec du texte dans des documents
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0704aa9c68f872dcddc4950b3f8ccd5a52882ddb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 31b6acfaa4ff971b9b5fbf4be5e4509a91df60a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960889"
 ---
 # <a name="work-with-text-in-documents"></a>Travailler avec du texte dans des documents
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l'utilisation du modèle objet de Microsoft Office Word avec du texte dans des projets Office.  
@@ -32,25 +29,23 @@ ms.locfileid: "35258669"
   
 |Tâche|Procédure|  
 |----------|---------------|  
-|Définir des plages en fonction de différents critères et les sélectionner.|[Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|  
-|Récupérer les caractères de début et de fin d'une plage.|[Comment : récupérer par programme des caractères de début et de fin dans les plages](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|  
-|Sélectionner un paragraphe sans inclure la marque de paragraphe, et déplacer le texte.|[Comment : exclure les marques de paragraphe par programmation lors de la création de plages](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|  
-|Rendre une plage plus grande ou plus petite.|[Comment : étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)|  
-|Déplacer une plage et lui affecter une autre taille.|[Comment : réinitialiser par programmation des plages dans des documents Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)|  
-|Réduire une plage ou une section au point d'insertion.|[Comment : réduire des plages ou des sélections dans des documents par programmation](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)|  
-|Insérer du texte dans un document.|[Comment : insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)|  
-|Mettre en forme du texte dans une plage.|[Comment : mettre en forme dans les documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)|  
-|Ajouter ou remplacer du texte dans un signet.|[Comment : mettre à jour par programme de texte d’un signet](../vsto/how-to-programmatically-update-bookmark-text.md)|  
-|Rechercher du texte spécifique à l'aide d'une sélection ou d'une plage, et le remplacer.|[Comment : rechercher et remplacer du texte dans les documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)|  
-|Spécifier la façon dont Word recherche du texte.|[Comment : définir par programmation les options de recherche dans Word](../vsto/how-to-programmatically-set-search-options-in-word.md)|  
-|Itérer au sein des résultats de la recherche.|[Comment : Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)|  
-|Enregistrer la sélection actuelle et la restaurer après une recherche.|[Comment : restaurer des sélections après des recherches par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)|  
-|Récupère le nombre de caractères contenus dans un document, y compris les caractères masqués.|[Comment : compter les caractères dans les documents par programmation](../vsto/how-to-programmatically-count-characters-in-documents.md)|  
-|Masquer le texte d'un signet avant d'imprimer un document.|[Comment : masquer du texte dans des documents par programmation](../vsto/how-to-programmatically-hide-text-in-documents.md)|  
-|Ajouter un commentaire à du texte.|[Comment : ajouter par programmation des commentaires à du texte dans des documents](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|  
+|Définir des plages en fonction de différents critères et les sélectionner.|[Guide pratique pour Définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|  
+|Récupérer les caractères de début et de fin d'une plage.|[Guide pratique pour Récupérer par programme des caractères de début et de fin dans les plages](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|  
+|Sélectionner un paragraphe sans inclure la marque de paragraphe, et déplacer le texte.|[Guide pratique pour Par programmation exclure les marques de paragraphe lors de la création de plages](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|  
+|Rendre une plage plus grande ou plus petite.|[Guide pratique pour Étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)|  
+|Déplacer une plage et lui affecter une autre taille.|[Guide pratique pour Réinitialisation par programmation des plages dans des documents Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)|  
+|Réduire une plage ou une section au point d'insertion.|[Guide pratique pour Réduire des plages ou des sélections dans des documents par programmation](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)|  
+|Insérer du texte dans un document.|[Guide pratique pour Insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)|  
+|Mettre en forme du texte dans une plage.|[Guide pratique pour Formater le texte par programmation dans des documents](../vsto/how-to-programmatically-format-text-in-documents.md)|  
+|Ajouter ou remplacer du texte dans un signet.|[Guide pratique pour Mettre à jour par programme de texte d’un signet](../vsto/how-to-programmatically-update-bookmark-text.md)|  
+|Rechercher du texte spécifique à l'aide d'une sélection ou d'une plage, et le remplacer.|[Guide pratique pour Rechercher et remplacer du texte dans les documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)|  
+|Spécifier la façon dont Word recherche du texte.|[Guide pratique pour Définir par programmation les options de recherche dans Word](../vsto/how-to-programmatically-set-search-options-in-word.md)|  
+|Itérer au sein des résultats de la recherche.|[Guide pratique pour Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)|  
+|Enregistrer la sélection actuelle et la restaurer après une recherche.|[Guide pratique pour Restaurer des sélections après des recherches par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)|  
+|Récupère le nombre de caractères contenus dans un document, y compris les caractères masqués.|[Guide pratique pour Compter les caractères dans les documents par programmation](../vsto/how-to-programmatically-count-characters-in-documents.md)|  
+|Masquer le texte d'un signet avant d'imprimer un document.|[Guide pratique pour Masquer du texte dans des documents par programmation](../vsto/how-to-programmatically-hide-text-in-documents.md)|  
+|Ajouter un commentaire à du texte.|[Guide pratique pour Ajouter par programmation des commentaires à du texte dans des documents](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
  [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
-  
-  
