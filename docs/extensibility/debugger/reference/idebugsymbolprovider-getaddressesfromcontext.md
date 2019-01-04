@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94920e72b7d83e45fc7d7e49849f3c1983b180ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab8485a5abec8b53630f82b5e16cf0419bca3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824871"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Cette méthode mappe un contexte de document dans un tableau d’adresses de débogage.  
@@ -28,7 +25,7 @@ Cette méthode mappe un contexte de document dans un tableau d’adresses de dé
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetAddressesFromContext(   
+HRESULT GetAddressesFromContext(   
    IDebugDocumentContext2* pDocContext,  
    BOOL                    fStatmentOnly,  
    IEnumDebugAddresses**   ppEnumBegAddresses,  

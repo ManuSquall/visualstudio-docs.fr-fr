@@ -1,9 +1,6 @@
 ---
 title: Restrictions relatives aux longueurs de chaîne | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b3552a88f5a78b627e72e877758cf6b7d12de95
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5bb973a1f50bb29cc605ab63916d8e75b17d1853
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852714"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrictions relatives aux longueurs de chaîne
 L’API de plug-in de contrôle de Source de limite les longueurs des chaînes utilisées dans les différentes fonctions.  

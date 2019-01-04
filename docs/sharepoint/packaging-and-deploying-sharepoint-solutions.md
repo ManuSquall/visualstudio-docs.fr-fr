@@ -1,13 +1,8 @@
 ---
 title: Empaquetage et déploiement de Solutions SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849017"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaqueter et déployer des solutions SharePoint
   En règle générale, une solution SharePoint est déployée sur un serveur SharePoint à l’aide d’un fichier de package (.wsp) de solution. Vous pouvez utiliser Visual Studio pour organiser vos éléments de projet SharePoint en fonctionnalités et pour créer un package pour déployer vos fonctionnalités SharePoint.  
@@ -40,7 +35,7 @@ ms.locfileid: "49863267"
 -   [Déploiement de fichiers dans les Solutions SharePoint](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Créer des fonctionnalités et des packages
- Vous pouvez utiliser Visual Studio pour regrouper des éléments SharePoint connexes dans un *fonctionnalité*. Par exemple, une fonctionnalité pour une définition de liste de Contacts peut inclure l’instance de liste et la définition de liste. Vous pouvez combiner ces deux éléments dans une fonctionnalité unique à des fins de déploiement. Pour plus d’informations sur les fonctionnalités, consultez [bloc de construction : fonctionnalités](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Vous pouvez utiliser Visual Studio pour regrouper des éléments SharePoint connexes dans un *fonctionnalité*. Par exemple, une fonctionnalité pour une définition de liste de Contacts peut inclure l’instance de liste et la définition de liste. Vous pouvez combiner ces deux éléments dans une fonctionnalité unique à des fins de déploiement. Pour plus d’informations sur les fonctionnalités, consultez [bloc de construction : Fonctionnalités](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  Ensuite, vous pouvez créer un package de solution SharePoint (*.wsp*) pour les regrouper plusieurs fonctionnalités, site définitions, des assemblys et autres fichiers dans un package unique, qui stocke les fichiers dans le format requis par SharePoint pour déployer les fichiers à le serveur. Pour plus d’informations, consultez [bloc de construction : Solutions](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
@@ -81,9 +76,9 @@ ms.locfileid: "49863267"
   
   Les outils de développement SharePoint dans Visual Studio ont des règles de validation pour garantir que le package de solution est correctement formé. En outre, les règles de vérifient que le *.wsp* fichier solution peut être déployé et activé sur un serveur SharePoint. Pour plus d’informations sur le schéma XML pour les fonctionnalités, consultez [schémas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Vous pouvez ajouter des règles de validation de package et de fonctionnalité personnalisée pour le système de projet SharePoint. Pour plus d’informations, consultez [Comment : créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Vous pouvez ajouter des règles de validation de package et de fonctionnalité personnalisée pour le système de projet SharePoint. Pour plus d'informations, voir [Procédure : Créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
-  Pour plus d’informations sur l’Explorateur de package, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Pour plus d’informations sur l’Explorateur de package, consultez [Comment : Ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Explorateur de solutions
  Vous pouvez utiliser l’Explorateur de solutions pour parcourir et ouvrir les fichiers du projet SharePoint. Utilisez le menu contextuel dans l’Explorateur de solutions pour ajouter des fonctionnalités, des récepteurs d’événements et les ressources de fonctionnalité. En outre, vous pouvez ouvrir le Concepteur de fonctionnalités et les concepteurs de Package pour configurer les fonctionnalités et les packages pour le déploiement.  
@@ -109,4 +104,3 @@ ms.locfileid: "49863267"
 ## <a name="see-also"></a>Voir aussi
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

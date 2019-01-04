@@ -1,9 +1,6 @@
 ---
 title: Création d’une fenêtre d’outil multi-instance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - multi
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19a41e172fd68687cffeca91bdfb4bc418ecdf60
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1c8652531379d880d44622a4f896f5a30151cdc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860352"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Créer une fenêtre d’outil multi-instance
 Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-ci peuvent être ouverts simultanément. Par défaut, les fenêtres Outil peuvent avoir qu’une seule instance ouvrir.  

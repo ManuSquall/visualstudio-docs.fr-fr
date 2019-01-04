@@ -1,9 +1,6 @@
 ---
 title: L’inscription d’un langage hérité2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f247a510b6fb52903970e408f930b13a8faba08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828639"
 ---
 # <a name="registering-a-legacy-language-service"></a>L’inscription d’un Service de langage hérité
 Les sections suivantes fournissent des listes d’entrées de Registre pour les différents langages des options de service disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : S’inscrire aux événements de mémoire tampon de texte avec l’API héritée | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ffe8362f26a55fdb6a9fe236782965a2062ed69
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886005"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procédure : S’inscrire aux événements de mémoire tampon de texte avec l’API héritée
 Si vous accédez à la mémoire tampon de texte à l’aide de l’API héritée, vous devez vous inscrire pour les événements de mémoire tampon de texte comme indiqué dans la procédure suivante.  
   
 ## <a name="to-advise-text-buffer-events"></a>Pour signaler des événements de mémoire tampon de texte  

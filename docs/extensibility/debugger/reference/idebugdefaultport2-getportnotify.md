@@ -1,9 +1,6 @@
 ---
 title: IDebugDefaultPort2::GetPortNotify | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDefaultPort2::GetPortNotify
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: feb21f020f6a470b9fded56939987f0a03333206
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91fd7792a47b0a2e02bdf28c75702e896b704f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865568"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 Cette méthode obtient un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) interface pour ce port.  
@@ -28,14 +25,14 @@ Cette méthode obtient un [IDebugPortNotify2](../../../extensibility/debugger/re
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetPortNotify(  
-   IDebugPortNotify2** ppPortNotify  
+HRESULT GetPortNotify(  
+   IDebugPortNotify2** ppPortNotify  
 );  
 ```  
   
 ```csharp  
-int GetPortNotify(  
-   out IDebugPortNotify2 ppPortNotify  
+int GetPortNotify(  
+   out IDebugPortNotify2 ppPortNotify  
 );  
 ```  
   

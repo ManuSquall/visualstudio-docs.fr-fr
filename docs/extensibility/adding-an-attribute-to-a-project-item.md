@@ -1,9 +1,6 @@
 ---
 title: Ajout d’un attribut à un élément de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdb911411be2c4398565d05309002b315971b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f60a47180a95c7609f784a2d0a03b51d0d4a7a6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874123"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>Ajouter un attribut à un élément de projet
 Les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> obtenir et définir la valeur des attributs d’un élément de projet. SetItemAttribute crée l’attribut si elle n’existe pas déjà, ajoutez-la aux métadonnées d’élément de projet.  
@@ -32,14 +29,14 @@ Les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage
     EnvDTE.Project project = dte.Solution.Projects.Item(1);  
   
     string uniqueName = project.UniqueName;  
-    IVsSolution solution =     (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
+    IVsSolution solution =     (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
     IVsHierarchy hierarchy;  
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);  
     IVsBuildPropertyStorage buildPropertyStorage = hierarchy as IVsBuildPropertyStorage;  
     if (buildPropertyStorage != null)  
     {  
         uint itemId;  
-        string fullPath =         (string)project.ProjectItems.Item("Program.cs").Properties.Item("FullPath").Value;  
+        string fullPath =         (string)project.ProjectItems.Item("Program.cs").Properties.Item("FullPath").Value;  
         hierarchy.ParseCanonicalName(fullPath, out itemId);  
         buildPropertyStorage.SetItemAttribute(  
             itemId, "MyAttribute", "MyValue");  

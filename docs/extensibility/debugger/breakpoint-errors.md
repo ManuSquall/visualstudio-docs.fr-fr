@@ -1,9 +1,6 @@
 ---
 title: Erreurs de point d’arrêt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, errors
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b08b9bee82a2505411be95ef2e6634e7897c15ec
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a51f418483d58a5fce33fed0e49b695043c16cde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857152"
 ---
 # <a name="breakpoint-errors"></a>Erreurs de point d’arrêt
 Ce qui suit décrit le processus lorsqu’un point d’arrêt tente de se lier au code, mais échoue.  

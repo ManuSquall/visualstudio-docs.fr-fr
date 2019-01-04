@@ -3,8 +3,6 @@ title: Messages d’erreur (développement Office dans Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7894de0c688ffccd227e2d6f5c73cfae24679d85
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b790bd1311dc4fdc460b5f7f533d25319efd72f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866148"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Messages d’erreur (développement Office dans Visual Studio)
   Chaque rubrique de message d’erreur fournit des informations sur les causes possibles d’une erreur et les solutions potentielles.  
@@ -35,5 +33,3 @@ ms.locfileid: "53646878"
   
 ## <a name="see-also"></a>Voir aussi  
  [Développement Office et SharePoint dans Visual Studio](../vsto/office-and-sharepoint-development-in-visual-studio.md)  
-  
-  

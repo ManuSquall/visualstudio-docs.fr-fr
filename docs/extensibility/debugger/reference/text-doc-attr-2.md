@@ -1,9 +1,6 @@
 ---
-title: TEXT_DOC_ATTR_2 | Documents Microsoft
-ms.custom: ''
+title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TEXT_DOC_ATTR_2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c877b1e42110defe717395cc78cc76acae00b934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d74bbfa4fb89baf01c5fb3d49a0767c67b800ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872724"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Décrit les attributs d’un document.  
@@ -43,16 +40,16 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Notes  
   
 > [!NOTE]
->  Cette valeur n’est pas réellement définie dans l’assembly pour c#. Au lieu de cela, vous devez copier la définition de votre fichier source.  
+>  En fait, cette valeur n’est pas définie dans l’assembly pour c#. Au lieu de cela, vous devez copier la définition de votre fichier source.  
   
- Est passé comme argument à la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (méthode).  
+ Passé en tant qu’argument à la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (méthode).  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,9 +1,6 @@
 ---
 title: Indicateurs de bits utilisés par des commandes spécifiques | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875418"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits dans une valeur unique. Ces valeurs sont appelées des indicateurs de bits. Les différents indicateurs de bits utilisés par l’API de plug-in de contrôle de Source sont détaillées ici, regroupés par la fonction qui les utilise.  
@@ -37,7 +34,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Le plug-in de contrôle de code source est prévu pour détecter automatiquement si le fichier est binaire ou texte.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Type de fichier est texte.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Type de fichier est binaire. **Remarque :** `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` indicateurs sont mutuellement exclusifs.   Définir un seul ou aucune des deux.|  
+|`SCC_FILETYPE_BINARY`|0 x 04|Type de fichier est binaire. **Remarque :** `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` indicateurs sont mutuellement exclusifs. Définir un seul ou aucune des deux.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Store uniquement la dernière version (aucun deltas).|  
   
 ## <a name="diff-flags"></a>Indicateurs de comparaison  
@@ -46,7 +43,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 |Indicateur|Valeur|Description|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0 x 0002|Ignorer les différences de casse.|  
-|`SCC_DIFF_IGNORESPACE`|0 x 0004|Ignorer les différences d’espace blanc. **Remarque :** le `SCC_DIFF_IGNORECASE` et `SCC_DIFF_IGNORESPACE` les indicateurs sont des indicateurs de bits facultatif.|  
+|`SCC_DIFF_IGNORESPACE`|0 x 0004|Ignorer les différences d’espace blanc. **Remarque :**  Le `SCC_DIFF_IGNORECASE` et `SCC_DIFF_IGNORESPACE` les indicateurs sont des indicateurs de bits facultatif.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD en comparant le contenu du fichier.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD par somme de contrôle.|  
 |`SCC_DIFF_QD_TIME`|0 x 0040|QD par horodatage date/heure de fichier.|  
@@ -81,8 +78,8 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
   
 |Indicateur|Valeur|Description|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|L’IDE est en passant des répertoires, pas les fichiers : obtenir tous les fichiers dans ces répertoires.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|L’IDE est en passant des répertoires : obtenez ces répertoires et tous ses sous-répertoires.|  
+|`SCC_GET_ALL`|0x00000001L|L’IDE est en passant des répertoires, pas de fichiers : Obtenir tous les fichiers dans ces répertoires.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|L’IDE est en passant des répertoires : Obtenez ces répertoires et tous ses sous-répertoires.|  
   
 ## <a name="noption-values"></a>valeurs nOption  
  Ces indicateurs sont utilisés par le [SccSetOption](../extensibility/sccsetoption-function.md) dans le `nOption` paramètre.  

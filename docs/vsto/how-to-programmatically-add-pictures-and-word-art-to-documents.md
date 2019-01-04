@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter par programmation des images et des effets WordArt aux documents'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ac57f54d7ba925a7189dfa0bf94e1b951c5ba7fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854193"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procédure : Ajouter par programmation des images et des effets WordArt aux documents
   Vous pouvez ajouter des images et des objets de dessin à vos documents au moment du design ou de l'exécution. WordArt vous permet d'ajouter du texte décoratif aux documents Microsoft Office Word. Ces effets de texte spéciaux sont des objets de dessin que vous pouvez personnaliser et insérer dans votre document.  
@@ -108,5 +105,3 @@ ms.locfileid: "53804836"
  [Guide pratique pour Restaurer des sélections après des recherches par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Guide pratique pour Enregistrer des documents par programmation](../vsto/how-to-programmatically-save-documents.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

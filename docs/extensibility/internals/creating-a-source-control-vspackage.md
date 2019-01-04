@@ -1,9 +1,6 @@
 ---
 title: Création d’un VSPackage de contrôle de code Source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d9513410aa3bb4773629846abbd70159ec6aa77
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4529011b9e896c2fdbff5595acd5c1a94cbb9e7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846833"
 ---
 # <a name="create-a-source-control-vspackage"></a>Créer un VSPackage de contrôle de code source
 Cette documentation inclut des liens vers la vue d’ensemble de l’architecture d’un package de contrôle de code source intégré à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], l’API est définie par les interfaces à implémenter et les services à consommer et un exemple qui illustre une source simple contrôler l’implémentation du package.  

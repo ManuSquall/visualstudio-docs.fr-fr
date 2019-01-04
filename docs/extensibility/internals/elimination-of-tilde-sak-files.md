@@ -1,9 +1,6 @@
 ---
 title: Élimination de ~ SAK fichiers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862812"
 ---
 # <a name="elimination-of-sak-files"></a>Élimination de ~ les fichiers SAK
 Dans la version 1.2 API plug-in de contrôle Source, le *~ SAK* fichiers ont été remplacés par les indicateurs de capacité et de contrôlent les nouvelles fonctions de détectent si une source de plug-in prend en charge la *MSSCCPRJ* de fichiers et les extractions partagées.  

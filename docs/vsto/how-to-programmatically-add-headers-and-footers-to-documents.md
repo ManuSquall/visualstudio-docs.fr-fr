@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter par programmation des en-têtes et pieds de page aux documents'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848452"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procédure : Ajouter par programmation des en-têtes et pieds de page aux documents
   Vous pouvez ajouter du texte aux en-têtes et pieds de page dans votre document à l'aide de la propriété <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> et de la propriété <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de <xref:Microsoft.Office.Interop.Word.Section>. Chaque section d'un document contient trois en-têtes et pieds de page :  
@@ -76,4 +73,3 @@ ms.locfileid: "53803374"
  [Guide pratique pour Créer par programme des documents](../vsto/how-to-programmatically-create-new-documents.md)   
  [Guide pratique pour Étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Guide pratique pour Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   
