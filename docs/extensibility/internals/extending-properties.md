@@ -1,9 +1,6 @@
 ---
 title: Étendre les propriétés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846583"
 ---
 # <a name="extend-properties"></a>Étendre les propriétés
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriétés** fenêtre est un navigateur de propriété universelle pour les composants COM et COM + et prend en charge tous les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produits. Le **propriétés** fenêtre fonctionne avec `ITypeInfo` informations de type et des métadonnées COM + pour répertorier les propriétés au moment du design pour l’objet actuellement sélectionné dans une autre fenêtre dans l’environnement de développement intégré (IDE).  
@@ -66,4 +63,4 @@ Fenêtre Propriétés
  Explique comment [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gère efficacement les éléments tels que les références, les connexions de données, les dossiers et les fichiers qui sont requis par votre travail de développement via des solutions et projets.  
   
  [Étendre d’autres parties de Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Explique comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] services pour créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Explique comment utiliser les services de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

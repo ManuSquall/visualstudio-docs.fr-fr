@@ -1,9 +1,6 @@
 ---
 title: Un comportement nouveau ou modifié avec les adaptateurs de l’éditeur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901608"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportement nouveau ou modifié avec les adaptateurs de l’éditeur
 Si vous mettez à jour le code qui a été écrit par rapport à des versions antérieures de l’éditeur principal de Visual Studio, et que vous envisagez d’utiliser les adaptateurs de l’éditeur (ou shims) au lieu d’utiliser la nouvelle API, vous devez connaître les différences suivantes dans le comportement des adaptateurs d’éditeur en ce qui concerne l’éditeur principal précédent.  

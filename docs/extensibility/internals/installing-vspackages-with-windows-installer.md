@@ -1,9 +1,6 @@
 ---
 title: Installation de VSPackages avec Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3bb49f02b7c160aa879c0652a081d8fd6cb026a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827833"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installation de VSPackages avec Windows Installer
 L’intégration de votre VSPackage dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nécessite plus qu’une simple copie de fichiers à l’ordinateur d’un utilisateur. Programme d’installation de votre VSPackage doit installer le package Visual Studio et ses fichiers dépendants et de s’inscrire et de les intégrer à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Votre VSPackage peut tirer parti des fonctionnalités d’intégration tels que l’affichage d’une icône sur la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] écran et la boîte de dialogue à propos de démarrage.  
@@ -51,7 +48,7 @@ L’intégration de votre VSPackage dans [!INCLUDE[vsprvs](../../code-quality/in
  [Déploiement des types de projets](../../extensibility/internals/deploying-project-types.md)  
  Explique comment utiliser le nouvel aggregator de type de projet pour les types de projet de code managé.  
   
- [Guide pratique pour générer des informations de registre pour un programme d’installation](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Guide pratique pour Générer des informations de Registre pour un programme d’installation](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Explique comment utiliser RegPkg.exe pour générer un manifeste de l’inscription d’un VSPackage managé.  
   
  [Commandes à exécuter après l’installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

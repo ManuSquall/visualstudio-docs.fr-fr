@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929278"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Remplacer et étendre les classes générées
 
@@ -92,6 +91,6 @@ Le magasin de modélisation fournit un mécanisme d’événement que vous pouve
 
 Vous pouvez vous abonner à des événements sur les formes. Par exemple, vous pouvez écouter pour les clics de souris sur une forme. Vous devez écrire du code qui s’abonne à l’événement pour chaque objet. Ce code peut être écrit dans une substitution de InitializeInstanceResources().
 
-Certains événements sont générés sur dont ShapeFields, qui sont utilisés pour dessiner des éléments décoratifs sur une forme. Pour obtenir un exemple, consultez [Comment : intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Certains événements sont générés sur dont ShapeFields, qui sont utilisés pour dessiner des éléments décoratifs sur une forme. Pour obtenir un exemple, consultez [Comment : Intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Ces événements ne surviennent généralement pas à l’intérieur d’une transaction. Vous devez créer une transaction si vous souhaitez apporter des modifications dans le magasin.

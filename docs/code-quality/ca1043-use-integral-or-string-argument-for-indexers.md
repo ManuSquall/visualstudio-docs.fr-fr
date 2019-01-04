@@ -1,8 +1,7 @@
 ---
-title: 'CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs'
+title: 'CA1043 : Utilisez l’argument de chaîne ou intégral pour les indexeurs'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1043
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8781b205da07c1c075e2638716cfc139491d07
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987591"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utilisez l’argument de chaîne ou intégral pour les indexeurs
 
 |||
 |-|-|
@@ -58,4 +57,4 @@ ms.locfileid: "45550581"
 ## <a name="related-rules"></a>Règles associées
  [CA1023 : Les indexeurs ne doivent pas être multidimensionnels](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024 : Utilisez des propriétés quand c’est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024 : Utiliser des propriétés lorsque nécessaire](../code-quality/ca1024-use-properties-where-appropriate.md)

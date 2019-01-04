@@ -1,9 +1,6 @@
 ---
-title: IDebugIDECallback | Documents Microsoft
-ms.custom: ''
+title: IDebugIDECallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugIDECallback interface
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 739c419e7f71b325a74c0a7c6dbbc31b1fd0e37f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eb504dd34db24b6628619c1adf356aaf7dd8274
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901871"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Permet à un évaluateur d’expression (EE) afficher un message dans la fenêtre de sortie du débogueur.  
   
@@ -32,22 +29,22 @@ ms.locfileid: "31113417"
 IDebugIDECallback : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  Ce rappel est implémenté par le moteur de débogage managé.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Celles-ci peuvent être consommées par l’évaluateur d’expression pour envoyer la sortie à la fenêtre de sortie du débogueur.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Il peut être consommé par un évaluateur d’expression pour envoyer la sortie à la fenêtre de sortie du débogueur.  
   
 ## <a name="methods"></a>Méthodes  
  Cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Envoie la chaîne du message spécifié à la fenêtre de sortie du débogueur.|  
+|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Envoie la chaîne de message spécifié à la fenêtre de sortie du débogueur.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Ee.h  
+ En-tête : EE.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_CODE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_CODE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e8295187087915feb8b0766e363f0d4883d56d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925285"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 Décrit l’emplacement d’un point d’arrêt du code.  
@@ -28,13 +25,13 @@ Décrit l’emplacement d’un point d’arrêt du code.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct _BP_RESOLUTION_CODE {   
+typedef struct _BP_RESOLUTION_CODE {   
    IDebugCodeContext2* pCodeContext;  
 } BP_RESOLUTION_CODE;  
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_CODE {   
+public struct BP_RESOLUTION_CODE {   
    public IDebugCodeContext2 pCodeContext;  
 };  
 ```  
@@ -46,12 +43,12 @@ public struct BP_RESOLUTION_CODE {
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure, qui est d’activer un membre de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure retournée par le [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)(méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

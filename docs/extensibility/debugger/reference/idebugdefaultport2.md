@@ -1,9 +1,6 @@
 ---
-title: IDebugDefaultPort2 | Documents Microsoft
-ms.custom: ''
+title: IDebugDefaultPort2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDefaultPort2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6d131ab24cc57af1846f89b61afa2d89ae2cacb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f371eb040ae2c160582093f07eacb2108bcb7b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930581"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Cette interface fournit plusieurs méthodes pour accéder à serveur d’un port et des fonctionnalités de notification.  
+Cette interface fournit plusieurs méthodes pour accéder à serveur d’un port et les fonctionnalités de notification.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,11 +28,11 @@ Cette interface fournit plusieurs méthodes pour accéder à serveur d’un port
 IDebugDefaultPort2 : IDebugPort2  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Visual Studio implémente cette interface pour représenter le port de débogage pour l’accès à des programmes. Un fournisseur de port personnalisé peut également implémenter cette interface si elle gère le débogage distant.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Visual Studio implémente cette interface pour représenter le port de débogage pour l’accès à des programmes. Un fournisseur de port personnalisé peut également implémenter cette interface si elle gère le débogage à distance.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Un argument de méthodes sur le [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface fournit cette interface. Appel de [QueryInterface](/cpp/atl/queryinterface) sur une [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface peut également obtenir cette interface.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Un argument à des méthodes sur le [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface fournit cette interface. Appel [QueryInterface](/cpp/atl/queryinterface) sur un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface peut également obtenir cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
  Outre les méthodes définies dans [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), cette interface implémente les méthodes suivantes :  
@@ -52,9 +49,9 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

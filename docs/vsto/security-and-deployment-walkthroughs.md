@@ -1,9 +1,6 @@
 ---
 title: Procédures pas à pas de déploiement et de sécurité
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,43 +15,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e0ce327c620531a1ba5f9a21ccbfd3aeef1c1fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986243"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Procédures pas à pas de déploiement et de sécurité
   Les rubriques suivantes montrent comment vous pouvez définir la stratégie de sécurité pour permettre l’exécution de votre solution, et comment vous pouvez déployer votre solution Office.  
   
 ## <a name="security-topics"></a>Rubriques de sécurité  
- [Comment : signer des solutions Office](../vsto/how-to-sign-office-solutions.md)  
+ [Guide pratique pour Signer des solutions Office](../vsto/how-to-sign-office-solutions.md)  
  Fournit des informations sur comment vous pouvez accorder une confiance à la solution à l’aide d’un certificat.  
   
- [Comment : configurer la sécurité de liste d’inclusion](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Guide pratique pour Configurer la sécurité de liste d’inclusion](../vsto/how-to-configure-inclusion-list-security.md)  
  Explique comment configurer le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer les solutions Office.  
   
 ## <a name="deployment-topics"></a>Rubriques traitant du déploiement  
- [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
+ [Guide pratique pour Publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  Fournit des informations sur l’utilisation de la **Assistant Publication** ou **publier** page du Concepteur de projets pour publier les solutions Office.  
   
- [Comment : publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [Guide pratique pour Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
  Décrit les étapes de déploiement sur un serveur SharePoint.  
   
- [Comment : installer une solution ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
+ [Guide pratique pour Installer une solution ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
  Fournit des étapes pour installer les solutions Office en exécutant le programme d’installation qui est généré pendant le processus de publication ; ouverture du fichier de manifeste de déploiement ; ou l’ouverture d’un document personnalisé ou un classeur.  
   
- [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
+ [Guide pratique pour Installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
  Décrit comment vous pouvez créer un programme d’installation vérifie les conditions préalables avant d’installer les composants de solution.  
   
- [Comment : préparer IIS pour le déploiement de solutions Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
+ [Guide pratique pour Préparer IIS pour le déploiement de solutions Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  Décrit comment configurer le type MIME sur Microsoft Internet Information Services (IIS) pour le manifeste de déploiement.  
   
- [Comment : mettre à jour des solutions Office déployées](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [Guide pratique pour Mettre à jour des solutions Office déployées](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  Fournit des informations sur comment mettre à jour une solution Office à l’aide de la **Assistant Publication**.  
   
- [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
+ [Guide pratique pour Modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  Fournit des informations sur la façon de modifier le chemin d’installation d’une solution Office.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -78,5 +75,3 @@ ms.locfileid: "50671285"
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

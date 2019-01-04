@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948392"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -50,7 +49,7 @@ Utilisez un diagramme de dépendances pour vous aider à effectuer les tâches s
 
 -   renforcer l'architecture prévue pendant le développement et la maintenance de votre code en incluant la validation avec vos opérations de build et d'archivage.
 
-Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la façon de créer et dessiner des diagrammes de dépendance, consultez [des diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles en couches, visitez le [Patterns & Practices site](http://go.microsoft.com/fwlink/?LinkId=145794).
+Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la façon de créer et dessiner des diagrammes de dépendance, consultez [des diagrammes de dépendance : Les instructions](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles en couches, visitez le [Patterns & Practices site](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lecture des diagrammes de dépendance
 
@@ -78,7 +77,7 @@ Vous pouvez lier chaque couche aux artefacts de votre solution, tels que des pro
 
 Pour plus d'informations sur la liaison des couches et des artefacts, consultez :
 
--   [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
 
 -   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ Sur le diagramme de la dépendance, ouvrez le menu contextuel pour une ou plusie
 |-|-|
 |**Catégories**|Genre d'artefact, tel qu'une classe, un espace de noms, un fichier source, etc.|
 |**Couche**|Couche liée à l'artefact.|
-|**Prend en charge la Validation**|Si **True**, puis le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si **False**, puis le lien ne participe pas le processus de validation de couche.<br /><br /> Pour plus d’informations, consultez [des diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md).|
+|**Prend en charge la Validation**|Si **True**, puis le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si **False**, puis le lien ne participe pas le processus de validation de couche.<br /><br /> Pour plus d’informations, consultez [des diagrammes de dépendance : Les instructions](../modeling/layer-diagrams-guidelines.md).|
 |**Identificateur**|Référence à l'artefact lié.|
 
 ## <a name="see-also"></a>Voir aussi

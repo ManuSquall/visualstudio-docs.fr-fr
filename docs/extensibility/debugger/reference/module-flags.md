@@ -1,9 +1,6 @@
 ---
 title: MODULE_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MODULE_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89dbb562dfbab83f56664aad7fdd107ea9d0e397
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1082e2e0c1e0d85270b95d4793d1029bbbb79e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955644"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Utilisé pour décrire un module.  
@@ -28,7 +25,7 @@ Utilisé pour décrire un module.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_MODULE_FLAGS {   
+enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
    MODULE_FLAG_SYMBOLS     = 0x0002,  
@@ -40,7 +37,7 @@ typedef DWORD MODULE_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_MODULE_FLAGS {   
+public enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
    MODULE_FLAG_SYMBOLS     = 0x0002,  
@@ -74,12 +71,12 @@ public enum enum_MODULE_FLAGS {
   
  Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

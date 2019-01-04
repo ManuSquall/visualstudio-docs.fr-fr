@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Ajout de XAML personnalisé à la Page de démarrage | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c792f999164c08d3a723a16872df66e69197fe16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929599"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procédure pas à pas : Ajouter XAML personnalisé à la page de démarrage
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procédure pas à pas : Ajoutez le XAML personnalisé à la page de démarrage
 Cette procédure pas à pas montre comment créer un Visual Studio Page de démarrage personnalisée qui contient un navigateur Web.  
   
 ## <a name="adding-custom-xaml"></a>Ajout de XAML personnalisé  

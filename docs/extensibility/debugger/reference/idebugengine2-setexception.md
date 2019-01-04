@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::SetException | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::SetException
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f200f02ec3a79c3ccdece3a4cc0ae5b10e2b491c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54ba9d9ecdf608e8d7598b042a3cf61593a4cfd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914408"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Spécifie la façon dont le moteur de débogage (dé) doit gérer une exception donnée.  
@@ -28,13 +25,13 @@ Spécifie la façon dont le moteur de débogage (dé) doit gérer une exception 
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT SetException(   
+HRESULT SetException(   
    EXCEPTION_INFO* pException  
 );  
 ```  
   
 ```csharp  
-int SetException(   
+int SetException(   
    EXCEPTION_INFO[] pException  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::GetDocumentContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::GetDocumentContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908aef9ab784300ef4a9d30b8d16df14ff78b91d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37c2ec13fe74efd694ed0f1735d018a37cff6997
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917067"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Obtient le contexte de document pour ce frame de pile.  
@@ -28,13 +25,13 @@ Obtient le contexte de document pour ce frame de pile.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDocumentContext (   
+HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppCxt  
 );  
 ```  
   
 ```csharp  
-int GetDocumentContext (   
+int GetDocumentContext (   
    out IDebugDocumentContext2 ppCxt  
 );  
 ```  

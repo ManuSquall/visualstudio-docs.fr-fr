@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::GetMemoryBytes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::GetMemoryBytes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 023212274e2d06cd246f51497adf79fa730d1a5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d61334699b088a780c127a6e42abdff0636ebeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887316"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Obtient les octets de mémoire qui contient physiquement la valeur d’une référence. Réservé à un usage ultérieur.  
@@ -28,13 +25,13 @@ Obtient les octets de mémoire qui contient physiquement la valeur d’une réf�
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetMemoryBytes (   
+HRESULT GetMemoryBytes (   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
 ```csharp  
-int GetMemoryBytes (   
+int GetMemoryBytes (   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  
 ```  

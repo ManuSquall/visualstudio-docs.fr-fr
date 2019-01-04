@@ -1,9 +1,6 @@
 ---
 title: Ce que&#39;s dans le Kit de développement logiciel Visual Studio 2015 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952840"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Ce que&#39;s nouvelle dans le Kit de développement logiciel Visual Studio 2015
 Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2015, Visual Studio 2015 mise à jour et Visual Studio 2017.  
@@ -62,12 +59,12 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
 > [!NOTE]
 >  Vous pouvez continuer à utiliser les assemblys de référence du Kit de développement logiciel Visual Studio installé avec vos projets (situé sous \<emplacement d’installation Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) et les projets d’extensibilité existants n’êtes pas obligé d’être mise à niveau pour utiliser les packages NuGet.  Le projet **fait référence à / ajouter une référence** dialogue continue d’utiliser les assemblys de référence du Kit de développement logiciel Visual Studio installé.  
 >   
->  Si vous souhaitez modifier vos projets existants pour utiliser NuGet, consultez [Comment : migrer les packages VS pour Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) qui comporte une section sur la mise à jour de projets d’extensibilité pour les packages NuGet.  
+>  Si vous souhaitez modifier vos projets existants pour utiliser NuGet, consultez [Comment : Migrer les packages VS pour Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) qui comporte une section sur la mise à jour de projets d’extensibilité pour les packages NuGet.  
   
 ## <a name="light-bulbs"></a>Les ampoules  
  Une des plus nouvelles méthodes d’écriture de code d’extension est fournie par le projet Roslyn. Pour plus d’informations, consultez [Roslyn](https://github.com/dotnet/Roslyn).  
   
- Les ampoules sont une nouvelle fonctionnalité qui est fourni avec l’extensibilité Visual Studio. Ils sont les icônes utilisées dans l’éditeur Visual Studio et qui se développent pour afficher un ensemble d’actions de refactorisation de code ou de correctifs pour les problèmes identifiés par les analyseurs de code intégré. Pour plus d’informations, consultez [procédure pas à pas : affichage des Suggestions ampoule](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+ Les ampoules sont une nouvelle fonctionnalité qui est fourni avec l’extensibilité Visual Studio. Ils sont les icônes utilisées dans l’éditeur Visual Studio et qui se développent pour afficher un ensemble d’actions de refactorisation de code ou de correctifs pour les problèmes identifiés par les analyseurs de code intégré. Pour plus d’informations, consultez [Procédure pas à pas : Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
 ## <a name="updated-user-experience-guidelines"></a>Recommandations pour l’expérience utilisateur mis à jour  
  Conception de nouvelles extensions ou des fonctionnalités pour Visual Studio ? Découvrez les mises à jour et développé [recommandations pour l’expérience utilisateur Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Vous trouverez le [jetons de couleur](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [les tailles de police](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [spécifications de mise en page de boîte de dialogue](../extensibility/ux-guidelines/layout-for-visual-studio.md)et d’autres instructions, vous devez intégrer en toute transparence votre nouvelle interface utilisateur avec Visual Studio.
