@@ -1,9 +1,6 @@
 ---
 title: Analyseurs de Roslyn et bibliothèque de Code pour ImmutableArrays | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833366"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs de Roslyn et bibliothèque de code pour ImmutableArrays
 
@@ -301,7 +298,7 @@ Ensuite, la méthode extrait la racine du document, et étant donné que cela pe
 
 Vous pouvez maintenant appuyer sur **F5** pour exécuter votre analyseur dans une deuxième instance de Visual Studio. Ouvrez le projet de console que vous avez utilisé avant. Doit maintenant apparaître l’ampoule s’affichent dans laquelle votre nouvelle expression de création d’objet pour `ImmutableArray<int>`. Si vous appuyez sur **Ctrl**+**.** (période), puis vous verrez votre code à résoudre, et vous verrez un aperçu de différence de code généré automatiquement dans l’ampoule l’interface utilisateur. Roslyn cela crée pour vous.
 
-**Conseil Pro :** si vous lancez la deuxième instance de Visual Studio et vous ne voyez pas l’ampoule avec votre correctif de code, vous devrez peut-être effacer le cache du composant de Visual Studio. Effacement du cache de force Visual Studio pour re-examiner les composants, afin de Visual Studio doit ensuite capter de votre composant plus récente. Tout d’abord, arrêtez la deuxième instance de Visual Studio. Ensuite, dans **Windows Explorer**, accédez à *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Le « 15.0 » change d’une version à l’autre avec Visual Studio). Supprimer le sous-répertoire *ComponentModelCache*.
+**Conseil Pro :** Si vous lancez la deuxième instance de Visual Studio, et vous ne voyez pas l’ampoule avec votre correctif de code, vous devrez peut-être effacer le cache du composant de Visual Studio. Effacement du cache de force Visual Studio pour re-examiner les composants, afin de Visual Studio doit ensuite capter de votre composant plus récente. Tout d’abord, arrêtez la deuxième instance de Visual Studio. Ensuite, dans **Windows Explorer**, accédez à *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Le « 15.0 » change d’une version à l’autre avec Visual Studio). Supprimer le sous-répertoire *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Communiquer avec vidéo et terminer le projet de code
 

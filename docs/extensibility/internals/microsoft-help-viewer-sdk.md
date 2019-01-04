@@ -1,9 +1,6 @@
 ---
 title: Microsoft Help Viewer SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987049"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 
@@ -142,7 +139,7 @@ Le corps (sans l’en-tête et le pied de page) de la rubrique contient des lien
 
 4.  Ajouter un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Ajouter du texte spécifiques au langage de code : `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que `devLangnu=` vous permet d’entrer d’autres langages. Par exemple, `devLangnu="Fortran"` affiche Fortran lors de l’extrait de code DisplayLanguage = Fortran
+5.  Ajouter du texte spécifiques au langage de code :  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que `devLangnu=` vous permet d’entrer d’autres langages. Par exemple, `devLangnu="Fortran"` affiche Fortran lors de l’extrait de code DisplayLanguage = Fortran
 
 6.  Ajouter des liens de page : `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,13 +280,13 @@ F1 diagramme de flux :
 
 Lorsque la source de contenu d’aide par défaut visionneuse d’aide est définie sur en ligne (lancement dans le navigateur) :
 
--   Fonctionnalités de Visual Studio partenaire (VSP) émettent une valeur au sac de propriétés F1 (prefix.keyword sac de propriété et en ligne URL pour le préfixe dans le Registre) : F1 envoie une URL VSP + paramètres dans le navigateur.
+-   Fonctionnalités de Visual Studio partenaire (VSP) émettent une valeur au sac de propriétés F1 (prefix.keyword sac de propriété et en ligne URL pour le préfixe dans le Registre) : F1 envoie une URL VSP + tous les paramètres dans le navigateur.
 
--   Fonctionnalités de Visual Studio (éditeur de langage, les éléments de menu spécifiques de Visual Studio, etc.) : F1 envoie une URL Visual Studio dans le navigateur.
+-   Fonctionnalités de Visual Studio (éditeur de langage, les éléments de menu spécifiques de Visual Studio, etc.) :  F1 envoie une URL Visual Studio dans le navigateur.
 
 Quand la source de contenu d’aide par défaut Help Viewer est définie à l’aide locale (lancement dans la visionneuse d’aide) :
 
--   Fonctionnalités VSP où le mot clé correspondent entre sac F1 et des index de magasin local (autrement dit, le prefix.keyword du sac de propriété = valeur trouvée dans l’index de magasin local) : F1 affiche la rubrique dans la visionneuse d’aide.
+-   Fonctionnalités VSP où le mot clé correspondent entre sac F1 et des index de magasin local (autrement dit, le prefix.keyword du sac de propriété = valeur trouvée dans l’index de magasin local) :  F1 affiche la rubrique dans la visionneuse d’aide.
 
 -   Fonctionnalités de Visual Studio (aucune option pour le fichier VSP remplacer le jeu de propriétés émis à partir des fonctionnalités de Visual Studio) : F1 affiche une rubrique de Visual Studio dans la visionneuse d’aide.
 
@@ -325,7 +322,7 @@ Définissez les valeurs de Registre suivantes pour activer le fournisseur conten
 
 **Namespace natif d’analyse de base**
 
-Pour activer l’analyse de base espace de noms natif, dans le Registre ajouter un nouveau DWORD par le nom de : BaseNativeNamespaces et définissez sa valeur sur 1 (sous la clé de catalogue qu’ils souhaitent prendre en charge).  Par exemple, si vous souhaitez utiliser le catalogue de Visual Studio, vous pouvez ajouter la clé pour le chemin d’accès :
+Pour activer l’analyse de base espace de noms natif, dans le Registre, ajoutez un nouveau DWORD par le nom de : BaseNativeNamespaces et définissez sa valeur sur 1 (sous la clé de catalogue qu’ils souhaitent prendre en charge).  Par exemple, si vous souhaitez utiliser le catalogue de Visual Studio, vous pouvez ajouter la clé pour le chemin d’accès :
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ Un utilisateur peut inscrire CustomLibrary en tant que l’espace de noms sous l
 
 Ajoutez la clé de Registre suivante et la valeur :
 
-Clé d’aide HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic : afficher la sortie de débogage dans la valeur de la vente au détail : Oui
+Clé d’aide HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic : Afficher la sortie de débogage dans la valeur de la vente au détail : OUI
 
 Dans l’IDE, sous l’élément de menu Aide, sélectionnez « Contexte de vous aider à déboguer »
 
@@ -374,7 +371,7 @@ La version de Visual Studio comprend un nombre de différents produits Visual St
 
 Personnalisation de packages est installée par le produit contenant la visionneuse d’aide.  Pour les produits Visual Studio :
 
--   Un package de marque de secours (Branding_\<paramètres régionaux > .mshc) est installé dans la racine de l’application aide les 2.3 de visionneuse (exemple : C:\Program Files (x86) \Microsoft Help Viewer\v2.3) par le module linguistique de visionneuse d’aide.  Cela est utilisé pour les cas où le produit marque le package n’est pas installé (aucun contenu n’a été installé) ou dans lequel le package de marque installé est endommagé.  Les éléments de Visual Studio (logo et des commentaires) sont ignorés lorsque le package de marque secours de racine d’application est utilisé.
+-   Un package de marque de secours (Branding_\<paramètres régionaux > .mshc) est installé dans la racine de l’application aide les 2.3 de visionneuse (exemple : C:\Program fichiers (x86) \Microsoft Help Viewer\v2.3) par le module linguistique de visionneuse d’aide.  Cela est utilisé pour les cas où le produit marque le package n’est pas installé (aucun contenu n’a été installé) ou dans lequel le package de marque installé est endommagé.  Les éléments de Visual Studio (logo et des commentaires) sont ignorés lorsque le package de marque secours de racine d’application est utilisé.
 
 -   Lorsque le contenu de Visual Studio est installé à partir du service de package de contenu, un package de personnalisation est également installé (par le premier scénario de l’installation du contenu temps).  S’il existe une mise à jour le package de personnalisation, la mise à jour est installé lors de la prochaine mise à jour de contenu ou l’action d’installation de package supplémentaire se produit.
 
@@ -445,7 +442,7 @@ Remarque : les variables indiqués par « {n} » ont des dépendances de code
 | ExpandText | Expand |
 | CollapseText | Réduire |
 | Fonctionnalités : | **CodeSnippet** |
-| Utiliser : | Texte de contrôle l’extrait de code.  Remarque : Contenu d’extrait de Code avec l’espace de « Sans rupture » devient espace. |
+| Utiliser : | Texte de contrôle l’extrait de code.  Remarque : Contenu d’extrait de code avec « Sans rupture » espace passera à l’espace. |
 | **Élément** | **Valeur** |
 | CopyToClipboard | Copier dans le Presse-papiers |
 | ViewColorizedText | Affichage coloré |
@@ -615,7 +612,7 @@ Le nom de la MSHA, dans le cadre de ce manuel, est helpcontentsetup.msha (le nom
 
 Remarque : dans l’exemple d’implémentation ci-dessous, nous avons inclus le package de personnalisation. Il est essentiel d’inclure afin d’obtenir les éléments de rendu du contenu de Visual Studio nécessaires et les comportements de contenu.
 
-Exemple de fichier helpcontentsetup.msha : (remplacez « contenu set nom 1 » et « contenu jeu nom 2" etc. avec vos noms de fichiers.)
+Exemple de fichier helpcontentsetup.msha : (Remplacez « contenu set nom 1 » et « contenu jeu nom 2" etc. avec vos noms de fichiers.)
 
 ```html
 <html>
