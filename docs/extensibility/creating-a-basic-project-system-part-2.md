@@ -1,9 +1,6 @@
 ---
 title: Création d’un système de projet de base, partie 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967772"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Créer un système de projet de base, partie 2
 La première procédure pas à pas dans cette série, [créer un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md), montre comment créer un système de projet de base. Cette procédure pas à pas s’appuie sur le système de projet de base en ajoutant un modèle Visual Studio, une page de propriétés et autres fonctionnalités. Vous devez effectuer la première procédure avant de commencer celle-ci.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Réinitialiser l’instance expérimentale de Visual Studio SDK.  
   
-    Sur [!INCLUDE[win7](../debugger/includes/win7_md.md)]: sur le **Démarrer** menu, trouver la **outils Microsoft Visual Studio/Microsoft Visual Studio SDK/** dossier, puis sélectionnez **réinitialiser le Microsoft expérimentale Visual Studio instance**.  
+    Sur [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Sur le **Démarrer** menu, trouver la **outils Microsoft Visual Studio/Microsoft Visual Studio SDK/** dossier, puis sélectionnez **réinitialiser l’instance expérimentale Microsoft Visual Studio**.  
   
-    Sur les versions ultérieures de Windows : sur le **Démarrer** , tapez **réinitialiser Microsoft Visual Studio \<version > Instance expérimentale**.  
+    Les versions ultérieures de Windows : Sur le **Démarrer** , tapez **réinitialiser Microsoft Visual Studio \<version > Instance expérimentale**.  
   
 2. Une fenêtre d’invite de commandes s’affiche. Lorsque vous voyez les mots **appuyez sur n’importe quelle touche pour continuer**, cliquez sur **entrée**. Une fois que la fenêtre se ferme, ouvrez Visual Studio.  
   

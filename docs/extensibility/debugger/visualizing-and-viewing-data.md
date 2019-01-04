@@ -1,9 +1,6 @@
 ---
 title: Visualisation et affichage des données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50325281fcca92394df5db28cc590cfa1e85f651
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: e516e3b7af7cfdbbb2c30ff5045a8b05349d7986
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848705"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisation et affichage des données
 Visualiseurs de type et les visionneuses personnalisées présentent les données de manière significative rapidement à un développeur. L’évaluateur d’expression (EE) peut prendre en charge les visualiseurs de types de fournisseurs tiers ainsi que fournir ses propres visionneuses personnalisées.  

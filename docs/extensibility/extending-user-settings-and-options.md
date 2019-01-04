@@ -1,9 +1,6 @@
 ---
 title: Extension des Options et paramètres utilisateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user preferences
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d59fa13d65f04631c41681fdb82c18624f7d69a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883118"
 ---
 # <a name="extend-user-settings-and-options"></a>Étendre les options et paramètres utilisateur
 Dans Visual Studio, il existe deux façons de mettre à jour les préférences de l’utilisateur. Le **outils** > **Options** pages permettent aux utilisateurs de définir leurs propres valeurs pour différents types de paramètres, générales et spécifiques au langage. Paramètres utilisateur permettent aux utilisateurs de spécifier les propriétés de configuration générales Visual Studio. Pour plus d’informations sur les pages d’options, consultez [Options et pages d’options](../extensibility/internals/options-and-options-pages.md). Pour plus d’informations sur les paramètres utilisateur, consultez [prise en charge pour les paramètres utilisateur](../extensibility/internals/support-for-user-settings.md).  

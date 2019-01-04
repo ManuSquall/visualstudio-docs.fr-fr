@@ -1,16 +1,11 @@
 ---
 title: 'Procédure pas à pas : Création et débogage d’une Solution de flux de travail SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912988"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procédure pas à pas : Créer et déboguer une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de workflow séquentiel de base. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagés pour déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.  
@@ -187,7 +182,7 @@ ms.locfileid: "42626486"
     Boolean workflowPending = true;  
     ```  
   
-2.  Ajoutez la méthode suivante à la classe `Workflow1`. Cette méthode vérifie la valeur de la `Document Status` propriété de la liste de Documents pour déterminer si le document a été révisé. Si le `Document Status` propriété est définie sur `Review Complete`, puis le `checkStatus` méthode indique le `workflowPending` champ **false** pour indiquer que le flux de travail est prêt à terminer.  
+2.  Ajoutez la méthode suivante à la classe `Workflow1` . Cette méthode vérifie la valeur de la `Document Status` propriété de la liste de Documents pour déterminer si le document a été révisé. Si le `Document Status` propriété est définie sur `Review Complete`, puis le `checkStatus` méthode indique le `workflowPending` champ **false** pour indiquer que le flux de travail est prêt à terminer.  
   
     ```vb  
     Private Sub checkStatus()  
@@ -296,4 +291,3 @@ ms.locfileid: "42626486"
  [Créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Projets et modèles d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

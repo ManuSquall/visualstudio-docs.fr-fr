@@ -1,9 +1,6 @@
 ---
 title: Utilisation de Modules pour inclure des fichiers dans la Solution | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0773d9c167a0a799b7d9bc8ddd2b52afc9bc6f2
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921547"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Utiliser des modules pour inclure des fichiers dans la solution
   Il peut arriver lorsque vous souhaitez déployer les fichiers sur le serveur SharePoint quel que soit leur type de fichier, telles que de nouvelles pages maîtres. Pour ce faire, vous pouvez utiliser *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules de code). Les modules sont des conteneurs pour les fichiers dans une solution SharePoint. Lorsque la solution est déployée, les fichiers dans le module sont copiés vers les dossiers spécifiés sur le serveur SharePoint.  
@@ -55,14 +52,13 @@ ms.locfileid: "37118906"
 |------------------|-----------------|  
 |Éléments|Contient tous les éléments définis dans le module.|  
 |Module|L’élément de module possède un attribut unique, *nom*, qui spécifie le nom du module dans le format `<Module Name="Module1">`.<br /><br /> Notez que si vous modifiez le nom du module (ou son *nom du dossier* propriété), vous devez mettre à jour manuellement le nom dans l’élément de Module.<br /><br /> Si vous spécifiez un sous-répertoire pour l’ou les fichiers dans l’élément de Module, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) crée automatiquement une structure de répertoire correspondant pour eux.|  
-|Fichier|L’élément File a deux paramètres, *chemin d’accès* et *Url*.<br /><br /> -Chemin d’accès : Le nom et l’emplacement du fichier dans la solution SharePoint. Le format est, `Path="Module1\Sample.txt"`.<br /><br /> -Url : L’emplacement où le fichier sera déployé sur le serveur SharePoint. Le format est, `Url="Module1/Sample.txt"`.<br /><br /> -Type : Un attribut facultatif qui a deux paramètres : *GhostableInLibrary* et *Ghostable*. Le format est, `Type="GhostableInLibrary"`. Spécification *GhostableInLibrary* signifie le fichier est ajouté à une bibliothèque de documents dans SharePoint avec un élément de liste pour accompagner le fichier lorsqu’il est ajouté à la bibliothèque. Spécification *Ghostable* , le fichier à ajouter à SharePoint en dehors de la bibliothèque de documents.|  
+|Fichier|L’élément File a deux paramètres, *chemin d’accès* et *Url*.<br /><br /> -Chemin d’accès : Le nom et l’emplacement du fichier dans la solution SharePoint. Le format est, `Path="Module1\Sample.txt"`.<br /><br /> -Url : L’emplacement où le fichier sera déployé sur le serveur SharePoint. Le format est, `Url="Module1/Sample.txt"`.<br /><br /> -Type : Attribut facultatif qui a deux paramètres : *GhostableInLibrary* et *Ghostable*. Le format est, `Type="GhostableInLibrary"`. Spécification *GhostableInLibrary* signifie le fichier est ajouté à une bibliothèque de documents dans SharePoint avec un élément de liste pour accompagner le fichier lorsqu’il est ajouté à la bibliothèque. Spécification *Ghostable* , le fichier à ajouter à SharePoint en dehors de la bibliothèque de documents.|  
   
  Chaque fichier que vous souhaitez déployer nécessite une `<File>` entrée d’élément dans *Elements.xml*.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : inclure des fichiers à l’aide d’un module](../sharepoint/how-to-include-files-by-using-a-module.md)   
- [Comment : configurer un fichier](http://go.microsoft.com/fwlink/?LinkID=144271)   
+ [Guide pratique pour Inclure des fichiers à l’aide d’un module](../sharepoint/how-to-include-files-by-using-a-module.md)   
+ [Comment : Configurer un fichier](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

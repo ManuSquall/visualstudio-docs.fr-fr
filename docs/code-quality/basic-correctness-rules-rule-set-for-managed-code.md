@@ -2,7 +2,6 @@
 title: Ensemble de règles de règles de vérification de base pour le code managé
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
@@ -10,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5bbd43b47e104dc775629e0e517ba8c47c2a49ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cc1b57bed4ec910b1b06cc8efb5a80d0fa2fdc5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933635"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification de base pour le code managé
-L’ensemble de règles de base des règles de vérification se concentre sur les erreurs de logique et les erreurs courantes lors de l’utilisation des API framework. Les règles de vérification de base incluent les règles dans l’ensemble de règles des règles minimales recommandées. Pour plus d’informations, consultez [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) vous devez inclure cet ensemble de règles pour développer la liste d’avertissements que les règles minimales recommandées.
+L’ensemble de règles de base des règles de vérification se concentre sur les erreurs de logique et les erreurs courantes dans l’utilisation des API framework. Les règles de vérification de base inclut les règles dans l’ensemble de règles des règles minimales recommandées. Pour plus d’informations, consultez [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) vous devez inclure cet ensemble de règles pour développer la liste d’avertissements que les règles minimales recommandées.
 
- Le tableau suivant décrit toutes les règles dans l’ensemble de règles de règles de vérification de base Microsoft.
+ Le tableau suivant décrit toutes les règles dans l’ensemble de règles de règles de vérification de base de Microsoft.
 
 |Règle|Description|
 |----------|-----------------|
@@ -40,12 +39,12 @@ L’ensemble de règles de base des règles de vérification se concentre sur le
 |[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Appeler GetLastError immédiatement après P/Invoke|
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Types base type visibles par COM doivent être visibles par COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Méthodes d’inscription COM doivent être mises en correspondance.|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les méthodes P/Invoke|
+|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les P/Invoke|
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Supprimez les finaliseurs vides|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Champs de type valeur doivent être portables|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Les déclarations P/Invoke doivent être portables|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Ne verrouillent pas sur des objets à identité faible|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Passez en revue les requêtes SQL des failles de sécurité|
+|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Ne verrouillez pas sur des objets à identité faible|
+|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Passez en revue les requêtes SQL pour les failles de sécurité|
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Spécifiez le marshaling pour les arguments de chaîne P/Invoke|
 |[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Vérifiez la sécurité déclarative dans les types valeur|
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Les pointeurs ne doivent pas être visibles|
@@ -54,27 +53,27 @@ L’ensemble de règles de base des règles de vérification se concentre sur le
 |[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|Les méthodes APTCA doivent uniquement appeler des méthodes APTCA|
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|Les types APTCA doivent uniquement étendre des types de base APTCA|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|N’exposez pas indirectement des méthodes avec des demandes de liaison|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Les demandes de liaison de remplacement doivent être identiques à la base|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Finally vulnérables clauses dans externe try|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Liaison de types nécessitent des demandes d’héritage|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Les types critiques de sécurité ne peuvent pas faire partie de l’équivalence de type|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Les délégués doivent lier les méthodes avec une transparence cohérente|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Transparence des méthodes doivent rester cohérente lors de la substitution de méthodes de base|
+|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Demandes de liaison de remplacement doivent être identiques de base|
+|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Wrapper finally vulnérables clauses dans externe try|
+|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Demandes de liaison de type nécessitent des demandes d’héritage|
+|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Types critiques de sécurité ne peuvent pas participer l’équivalence des types|
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Les constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base|
+|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Les délégués doivent lier aux méthodes avec une transparence cohérente|
+|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Méthodes doit rester une transparence cohérente lors de la substitution des méthodes de base|
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Les méthodes transparentes doivent contenir uniquement des IL vérifiables|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Les méthodes transparentes ne doivent pas appeler les méthodes avec l’attribut SuppressUnmanagedCodeSecurity|
+|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Les méthodes transparentes ne doivent pas appeler de méthodes avec l’attribut SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Le code transparent ne doit pas faire référence à des éléments critiques de sécurité|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Les méthodes transparentes ne répondent pas aux LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Méthodes transparentes ne répondent pas aux LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Types doivent être au moins aussi critiques que leurs types de base et les interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Les méthodes transparentes ne peuvent pas utiliser de sécurité des assertions|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Les méthodes transparentes ne doivent pas appeler dans du code natif|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Levez de nouveau pour conserver les détails de la pile|
+|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Méthodes transparentes ne doivent pas appeler du code natif|
+|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Lever à nouveau pour conserver les détails de la pile|
 |[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Ne pas supprimer des objets plusieurs fois|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Initialiser les champs statiques de type valeur en ligne|
+|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Initialiser des champs statiques de type valeur en ligne|
 |[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Ne marquez pas les composants pris en charge avec WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Des champs supprimables doivent être supprimés.|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Champs supprimables doivent être supprimés.|
 |[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|N’appelez pas de méthodes substituables dans les constructeurs|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Types pouvant être supprimés doivent déclarer un finaliseur|
+|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Les types supprimables doivent déclarer un finaliseur|
 |[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Les finaliseurs doivent appeler le finaliseur de la classe de base|
 |[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implémentez des constructeurs de sérialisation|
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Surchargez l’opérateur equals en remplaçant ValueType.Equals|
@@ -93,25 +92,25 @@ L’ensemble de règles de base des règles de vérification se concentre sur le
 |[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|N’ignorez pas les résultats de la méthode|
 |[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Appelez GC. SuppressFinalize correctement|
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Propriétés ne doivent pas retourner de tableaux|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Vérifier la présence de chaînes vides à l’aide de la longueur de chaîne|
+|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Test de chaînes vides à l’aide de la longueur de chaîne|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Utiliser uniquement l’API du framework cible|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Supprimez les appels à GC. KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Utilisez SafeHandle pour encapsuler les ressources natives|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Ne déclarez pas les types référence mutables uniquement en lecture|
-|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Les champs de tableau ne doivent pas être lu uniquement|
+|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Champs de tableau ne doivent pas être en lecture seule|
 |[CA2106](../code-quality/ca2106-secure-asserts.md)|Assertions sécurisées|
 |[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|Appelez GC. KeepAlive lors de l’utilisation des ressources natives|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Scellez les méthodes qui satisfont les interfaces privées|
-|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Sécuriser les constructeurs de sérialisation|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Constructeurs de sérialisation sécurisé|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|Les constructeurs statiques doivent être privés|
 |[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|Les constantes critiques de sécurité doivent être transparentes|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Utilisez des équivalents managés de l’API Win32|
-|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Les méthodes Dispose doivent appeler dispose de la classe de base|
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Les finaliseurs doivent être protégés.|
+|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Méthodes Dispose doivent appeler dispose de la classe de base|
+|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Les finaliseurs doivent être protégés|
 |[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Ne réduisez pas la visibilité des membres hérités|
 |[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Les membres doivent différer par type de retour|
 |[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Remplacez equals lors de la surcharge l’opérateur égal|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Les opérateurs doivent contenir des surcharges symétriques|
-|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Propriétés de la collection doivent être en lecture seule|
+|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Propriétés de collection doivent être en lecture seule|
 |[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|Fournir des méthodes de désérialisation pour les champs facultatifs|

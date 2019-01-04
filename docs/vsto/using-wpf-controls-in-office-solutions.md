@@ -1,9 +1,6 @@
 ---
 title: Utiliser des contrôles WPF dans les solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822273"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Utiliser des contrôles WPF dans les solutions Office
 
@@ -56,11 +53,11 @@ Vous ne pouvez pas ajouter des contrôles WPF directement aux éléments d'inter
 
 5.  Ajoutez un volet Actions, une zone de formulaire ou un volet des tâches personnalisé à votre projet :
 
-    -   Pour les zones de formulaire, ajoutez un **zone de formulaire Outlook** élément au projet. Pour plus d’informations, consultez [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    -   Pour les zones de formulaire, ajoutez un **zone de formulaire Outlook** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Pour les volets actions, ajoutez un **contrôle de volet Actions** ou **contrôle utilisateur** élément au projet. Pour plus d’informations, consultez [Comment : ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) et [Comment : ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    -   Pour les volets actions, ajoutez un **contrôle de volet Actions** ou **contrôle utilisateur** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) et [Comment : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Pour les volets de tâches personnalisés, ajoutez un **contrôle utilisateur** élément au projet. Pour plus d’informations, consultez [Comment : ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    -   Pour les volets de tâches personnalisés, ajoutez un **contrôle utilisateur** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6.  À partir de la *nom_projet* **contrôles utilisateur WPF** onglet de la **boîte à outils**, faites glisser le contrôle utilisateur WPF vers le concepteur pour le volet actions, une zone de formulaire ou un volet Office personnalisé.
 
@@ -115,9 +112,9 @@ Pour plus d'informations sur l'ajout de contrôles WPF à des formulaires et con
 
 -   [Procédure pas à pas : Créer du contenu WPF dans les Windows Forms au moment du design](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [Procédure pas à pas : Réorganiser le contenu WPF dans les Windows Forms au moment du design](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+-   [Procédure pas à pas : Organiser le contenu WPF sur les Windows Forms au moment du design](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [Procédure pas à pas : Style WPF contenu](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [Procédure pas à pas : Contenu WPF de style](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -126,6 +123,6 @@ Pour plus d'informations sur l'ajout de contrôles WPF à des formulaires et con
 - [Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)
 - [Volets Office personnalisés](../vsto/custom-task-panes.md)
 - [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)
-- [Comment : ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Comment : ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Guide pratique pour Ajouter un volet actions à des documents Word ou des classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Guide pratique pour Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Guide pratique pour Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

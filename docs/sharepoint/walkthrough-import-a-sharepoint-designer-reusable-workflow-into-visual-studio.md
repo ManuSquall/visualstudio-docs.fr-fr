@@ -1,15 +1,10 @@
 ---
-title: 'Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Importer un flux de travail réutilisable de SharePoint Designer dans Visual Studio | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821349"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procédure pas à pas : Importation d’un flux de travail réutilisable de SharePoint Designer dans Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procédure pas à pas : Importer un flux de travail réutilisable de SharePoint Designer dans Visual Studio
   Cette procédure pas à pas montre comment importer un flux de travail réutilisable créé avec SharePoint Designer 2010 dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet de flux de travail SharePoint.  
   
  Flux de travail créés dans SharePoint Designer, ou *flux de travail déclaratifs*, se composent de [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instructions au lieu de code. SharePoint Designer 2010 introduit *flux de travail réutilisables*, qui sont portables déclarative des flux de travail qui peut être utilisé par différentes listes dans les sites SharePoint.  
@@ -269,4 +264,3 @@ ms.locfileid: "49851476"
  [Importer des éléments à partir d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964050"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules dans une feuille de calcul Microsoft Office Excel aux champs dans la base de données Northwind SQL Server.  
@@ -58,7 +55,7 @@ ms.locfileid: "49841882"
   
 1.  Créer un projet de classeur Excel portant le nom **Ma liaison de données complexe**. Dans l’Assistant, sélectionnez **créer un nouveau document**.  
   
-     Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **Ma liaison de données complexe** projet **l’Explorateur de solutions**.  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841882"
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas montre les principes fondamentaux de la liaison d’une table dans une base de données à un objet de liste. Voici quelques tâches susceptibles de venir après :  
   
--   Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d’informations, consultez [Comment : mettre en Cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Déployer la solution. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).  
   
--   Créer une relation maître/détail entre un champ et une table. Pour plus d’informations, consultez [procédure pas à pas : création d’une relation maître/détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Créer une relation maître/détail entre un champ et une table. Pour plus d’informations, consultez [Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Données dans les solutions Office](../vsto/data-in-office-solutions.md)   
- [Procédure pas à pas : Liaison de données Simple dans un projet au niveau du document](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  
+ [Procédure pas à pas : Liaison de données simple dans un projet au niveau du document](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  

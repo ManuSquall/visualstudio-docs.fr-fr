@@ -1,9 +1,6 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_UNBOUND_REASON
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1e344ff5adb51d118370f81de10ba01c8950e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72e8975f67925976a0c6c446d798d048068c1ad6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848033"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Donne la raison pour laquelle qu'un point d’arrêt a été dissocié.  
@@ -28,7 +25,7 @@ Donne la raison pour laquelle qu'un point d’arrêt a été dissocié.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_BP_UNBOUND_REASON {   
+enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
    BPUR_BREAKPOINT_REBIND = 0x0003,  
@@ -38,7 +35,7 @@ typedef DWORD BP_UNBOUND_REASON;
 ```  
   
 ```csharp  
-public enum enum_BP_UNBOUND_REASON {   
+public enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
    BPUR_BREAKPOINT_REBIND = 0x0003,  
@@ -62,12 +59,12 @@ public enum enum_BP_UNBOUND_REASON {
 ## <a name="remarks"></a>Notes  
  Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

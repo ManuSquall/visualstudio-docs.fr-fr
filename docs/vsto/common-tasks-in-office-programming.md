@@ -1,9 +1,6 @@
 ---
 title: Tâches courantes dans la programmation Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffdf53a6317f2b06ea550075c104f0528a35c5de
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 234f5c70c05e058cac084780ab2777d9f302834a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911195"
 ---
 # <a name="common-tasks-in-office-programming"></a>Tâches courantes dans la programmation Office
   Cette rubrique est conçue pour vous aider à trouver les réponses aux catégories suivantes de questions courantes sur la programmation de solutions Office à l’aide de Visual Studio.  
@@ -237,5 +234,3 @@ ms.locfileid: "53441754"
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md)   
  [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

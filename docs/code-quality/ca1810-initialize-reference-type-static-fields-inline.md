@@ -1,8 +1,7 @@
 ---
-title: 'CA1810 : Initialisez les champs statiques de type référence en ligne'
+title: 'CA1810 : Initialiser des champs statiques de type référence en ligne'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6fdfebe506fb2edb1814e18d3d090025c665fa
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8a7726ce96eed20e1ce7bb96112703777cb8f582
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944598"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialiser des champs statiques de type référence en ligne
 
 |||
 |-|-|
@@ -78,4 +77,4 @@ extends [mscorlib]System.Object
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2207 : Initialisez les champs statiques des types de valeurs inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+- [CA2207 : Initialiser des champs statiques de type valeur en ligne](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

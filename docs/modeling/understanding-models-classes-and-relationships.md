@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908642"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code du programme dans la solution DSL est généré à partir de ce fichier.
@@ -54,9 +53,9 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 
  ![Relations d'incorporation et de référence](../modeling/media/music_classes.png)
 
- L’illustration montre quatre classes de domaine : musique, Album, artiste et morceau. Les classes de domaine définissent les propriétés de domaine comme nom, titre et ainsi de suite. Dans le modèle d’instance, les valeurs de certaines de ces propriétés sont affichées dans le diagramme.
+ L’illustration montre quatre classes de domaine : Musique, Album, artiste et morceau. Les classes de domaine définissent les propriétés de domaine comme nom, titre et ainsi de suite. Dans le modèle d’instance, les valeurs de certaines de ces propriétés sont affichées dans le diagramme.
 
- Entre les classes sont des relations de domaine : MusicHasAlbums, MusicHasArtists, AlbumbHasSongs et ArtistAppearedOnAlbums. Les relations ont les multiplicités telles que 1..1, 0.. *. Par exemple, chaque chanson doit être associé à exactement un Album via la relation AlbumHasSongs. Chaque Album peut avoir autant de morceaux de musique.
+ Entre les classes sont des relations de domaine : MusicHasAlbums MusicHasArtists, AlbumbHasSongs et ArtistAppearedOnAlbums. Les relations ont les multiplicités telles que 1..1, 0.. *. Par exemple, chaque chanson doit être associé à exactement un Album via la relation AlbumHasSongs. Chaque Album peut avoir autant de morceaux de musique.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Réorganiser le diagramme de définition DSL
  Notez qu’une classe de domaine peut apparaître plusieurs fois sur le diagramme de définition DSL, comme le fait Album dans cette image. Il y a toujours une vue principale, et il peut y avoir certains *référence* vues.

@@ -1,9 +1,6 @@
 ---
-title: IDebugCustomViewer | Documents Microsoft
-ms.custom: ''
+title: IDebugCustomViewer | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomViewer
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fb70365304883abe99a87cfec5e78bbed89f2dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b32073b54362c7598c3756ebd691823f5bea76bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946277"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
-Cette interface permet l’évaluateur d’expression (EE) pour afficher une valeur de propriété dans le format n’est nécessaire.  
+Cette interface permet à un évaluateur d’expression (EE) pour afficher la valeur d’une propriété dans le format est nécessaire.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,37 +28,37 @@ Cette interface permet l’évaluateur d’expression (EE) pour afficher une val
 IDebugCustomViewer : IUknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Un EE implémente cette interface pour afficher une valeur de propriété dans un format personnalisé.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Un EE implémente cette interface pour afficher la valeur d’une propriété dans un format personnalisé.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Un appel à COM `CoCreateInstance` fonction instancie cette interface. Le `CLSID` transmis à `CoCreateInstance` est obtenue à partir du Registre. Un appel à [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Obtient l’emplacement dans le Registre. Pour plus d’informations, ainsi que l’exemple, consultez la section Notes.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Un appel à de COM `CoCreateInstance` fonction instancie cette interface. Le `CLSID` transmis à `CoCreateInstance` est obtenu à partir du Registre. Un appel à [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Obtient l’emplacement dans le Registre. Consultez la section Notes pour plus d’informations, ainsi que l’exemple.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[Valeur d’affichage](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Fait le nécessaire pour afficher une valeur donnée.|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Fait le nécessaire pour afficher une valeur donnée.|  
   
 ## <a name="remarks"></a>Notes  
- Cette interface est utilisée lorsqu’une valeur de propriété ne peut pas être affichée par des moyens normaux, par exemple, avec une table de données ou un autre type de propriété complexe. Une visionneuse personnalisée, comme représenté par la `IDebugCustomViewer` l’interface, diffère d’un visualiseur de type, qui est un programme externe pour afficher les données d’un type spécifique, quelle que soit la EE. Le EE implémente une visionneuse personnalisée qui est spécifique à cette EE. Un utilisateur sélectionne le type de visualiseur à utiliser, soit un visualiseur de type ou une visionneuse personnalisée. Consultez [Visualizing et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations sur ce processus.  
+ Cette interface est utilisée lors de la valeur d’une propriété ne peut pas être affichée par des moyens normaux, par exemple, avec une table de données ou un autre type de propriété complexe. Une visionneuse personnalisée, comme représenté par la `IDebugCustomViewer` l’interface, diffère d’un visualiseur de type, qui est un programme externe pour afficher les données d’un type spécifique, quel que soit le EE. Le EE implémente une visionneuse personnalisée qui est spécifique à ce EE. Un utilisateur sélectionne le type de visualiseur à utiliser, qu’il s’agisse d’un visualiseur de type ou une visionneuse personnalisée. Consultez [visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations sur ce processus.  
   
- Une visionneuse personnalisée est enregistrée dans la même façon qu’une EE et, par conséquent, requiert une langue GUID et un GUID du fournisseur. La mesure exacte (ou le nom de l’entrée du Registre) est connue uniquement du EE. Cette mesure est retournée dans le [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structure, qui à son tour, est retourné par un appel à [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). La valeur stockée dans la métrique est la `CLSID` qui est passé à COM `CoCreateInstance` (voir l’exemple).  
+ Une visionneuse personnalisée est inscrit dans la même façon qu’un EE et, par conséquent, requiert un GUID de langage et un GUID de fournisseur. La mesure exacte (ou le nom de l’entrée du Registre) est connue uniquement du EE. Cette mesure est retournée dans le [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structure, qui à son tour est retourné par un appel à [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). La valeur stockée dans la mesure est la `CLSID` qui est passée à du COM `CoCreateInstance` fonction (voir l’exemple).  
   
- Le [programmes d’assistance du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) fonction, `SetEEMetric`, peut être utilisé pour inscrire une visionneuse personnalisée. Consultez la section de Registre « Évaluateurs d’Expression » de `Debugging SDK Helpers` pour les clés de Registre spécifique qui a besoin d’une visionneuse personnalisée. Notez qu’une visionneuse personnalisée doit uniquement une métrique (qui est définie par le responsable de l’implémentation de la EE) alors que l’évaluateur d’expression requiert plusieurs mesures prédéfinies.  
+ Le [aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) (fonction), `SetEEMetric`, peut être utilisé pour inscrire une visionneuse personnalisée. Consultez la section de Registre « Évaluateurs d’Expression » de `Debugging SDK Helpers` pour les clés de Registre spécifique qui a besoin d’une visionneuse personnalisée. Notez qu’une visionneuse personnalisée doit uniquement une métrique (qui est définie par le responsable de l’implémentation de la EE) alors qu’un évaluateur d’expression requiert plusieurs métriques prédéfinies.  
   
- En règle générale, une visionneuse personnalisée fournit une vue en lecture seule des données, depuis le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fournie à [une valeur d’affichage](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) n’a aucune méthode permettant de modifier la valeur de propriété, sauf en tant que chaîne. Pour prendre en charge la modification des blocs de données arbitraires, le EE implémente une interface personnalisée sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée est ensuite fournir les méthodes nécessaires pour modifier un bloc arbitraire de données.  
+ En règle générale, une visionneuse personnalisée fournit une vue en lecture seule des données, puisque le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fournie à [une valeur d’affichage](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) ne possède aucune méthode pour la modification de la valeur de propriété, sauf sous forme de chaîne. Pour prendre en charge la modification des blocs arbitraires de données, le EE implémente une interface personnalisée sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée puis fournit les méthodes nécessaires pour modifier un bloc de données arbitraire.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment obtenir la première visionneuse personnalisée à partir d’une propriété, si cette propriété a les visionneuses personnalisées.  
+ Cet exemple montre comment obtenir la première visionneuse personnalisée à partir d’une propriété, si cette propriété a des visionneuses personnalisées.  
   
 ```cpp  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
@@ -108,7 +105,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [Programmes d’assistance du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

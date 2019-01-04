@@ -1,9 +1,6 @@
 ---
 title: ProjectOutputFile, élément | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99f8173da22f631a1be74c18d4312f74958259e9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ea476c2d2b73ec9c59f7d3f7cfbc9a0b0cab5bd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948613"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (élément)
   Représente la sortie d’un projet séparé à inclure avec l’élément de projet lorsqu’elle est déployée vers SharePoint.  
@@ -68,10 +65,9 @@ ms.locfileid: "37118919"
 |**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
-|**Peut être vide**|Non|  
+|**Peut être vide**|Aucune|  
   
 ## <a name="see-also"></a>Voir aussi
  [Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Fournir des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

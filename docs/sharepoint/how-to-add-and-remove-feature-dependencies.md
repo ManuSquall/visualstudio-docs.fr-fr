@@ -1,16 +1,11 @@
 ---
-title: 'Comment : ajouter et supprimer des dépendances de fonctionnalité | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter et supprimer des dépendances de fonctionnalité | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924239"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>Comment : ajouter et supprimer des dépendances de fonctionnalité
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Procédure : Ajouter et supprimer des dépendances de fonctionnalité
   Votre fonctionnalité SharePoint peut dépendre d’autres fonctionnalités pour les fonctionnalités ou données. Dans ce cas, vous pouvez marquer ces fonctionnalités en tant que dépendances de votre fonction. De cette façon, le serveur SharePoint permet de s’assurer que les fonctionnalités dépendantes sont activées avant votre fonctionnalité est activée.  
   
 ## <a name="add-dependencies"></a>Ajouter des dépendances  
@@ -71,6 +66,5 @@ ms.locfileid: "36757990"
   
 ## <a name="see-also"></a>Voir aussi
  [Créer des fonctionnalités de SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
+ [Guide pratique pour Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Guide pratique pour Ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

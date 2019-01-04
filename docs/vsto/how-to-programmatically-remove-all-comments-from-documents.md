@@ -1,9 +1,6 @@
 ---
-title: 'Comment : supprimer par programmation tous les commentaires des documents'
-ms.custom: ''
+title: 'Procédure : Supprimer par programmation tous les commentaires des documents'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 005414fce7b7bc04c22b266f5f5f6d54a399a182
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 368779aa5c0edbfcaba3aff2abdf3eba09375f9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833408"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Comment : supprimer par programmation tous les commentaires des documents
-  Utilisez le `DeleteAllComments` méthode pour supprimer tous les commentaires d’un document Microsoft Office Word.  
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Procédure : Supprimer par programmation tous les commentaires des documents
+  Utilisez la méthode `DeleteAllComments` pour supprimer tous les commentaires d’un document Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
@@ -45,7 +42,5 @@ ms.locfileid: "35672853"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : ajouter par programmation des commentaires à du texte dans des documents](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
+ [Guide pratique pour Ajouter par programmation des commentaires à du texte dans des documents](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
  [Élément hôte de document](../vsto/document-host-item.md)  
-  
-  

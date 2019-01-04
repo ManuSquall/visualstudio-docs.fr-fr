@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Récupérer des données mises en cache à partir d’un classeur sur un serveur'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1972b18588cc90621c71c1ce68d2046509dec4ee
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0c64ed8606a1c6fec4562048c517bdb883c61320
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888125"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procédure pas à pas : Récupérer des données mises en cache à partir d’un classeur sur un serveur
   Cette procédure pas à pas montre comment récupérer des données à partir d’un jeu de données est mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.

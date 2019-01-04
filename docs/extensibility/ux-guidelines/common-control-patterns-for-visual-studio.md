@@ -1,9 +1,6 @@
 ---
 title: Les modèles de contrôle courants pour Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832633"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Contrôles communs  
@@ -49,7 +46,7 @@ La première chose à prendre en compte lors de la stylisation de contrôles est
   
 -   **Boîtes de dialogue standard (utilitaire) :** pas à thème. Ne pas re-template. Utilisez les valeurs par défaut du style de contrôle de base.  
   
--   **Outil windows, les éditeurs de document, les aires de conception et les boîtes de dialogue à thème :** utiliser spécialisé apparence à thème à l’aide du service de couleur.  
+-   **Fenêtres Outil, les éditeurs de document, les aires de conception et les boîtes de dialogue à thème :** Utilisez spécialisé apparence à thème à l’aide du service de couleur.  
   
 ###  <a name="BKMK_Scrollbars"></a> Barres de défilement  
  Barres de défilement doivent suivre [modèles courants d’interaction pour Windows les barres de défilement](/windows/desktop/Controls/about-scroll-bars) , sauf si elles sont augmentées avec les informations de contenu, comme dans l’éditeur de code.  
@@ -69,7 +66,7 @@ La première chose à prendre en compte lors de la stylisation de contrôles est
   
 -   Requis champs doivent avoir  **\<requis >** en tant que filigranes en leur sein. Vous ne devez pas modifier la couleur d’arrière-plan, sauf dans de rares cas.  
   
--   Validation des erreurs : consultez [Notifications et progression pour Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Validation des erreurs : Consultez [Notifications et progression pour Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Champs d’entrée doivent être dimensionnées en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni d’arbitrairement correspond à la longueur d’un champ long, par exemple, un chemin d’accès. Longueur peut être une indication à l’utilisateur de limitations concernant le nombre de caractères est autorisé dans le champ.  
   
@@ -299,7 +296,7 @@ Instructions pour l’aide du bouton :
 #### <a name="graphical-buttons"></a>Boutons graphiques  
 Certains boutons doivent toujours utiliser une image graphique et n’incluez jamais de texte pour économiser l’espace et éviter les problèmes de localisation. Ceux-ci sont souvent utilisés dans les sélecteurs de champ et les autres listes pouvant être triés.  
   
-> **Remarque :** les utilisateurs doivent TAB pour accéder à ces boutons (il n’existe aucune clé d’accès), par conséquent, les placer dans un ordre cohérent. Carte le `name` propriété du bouton à l’action nécessaire afin que les lecteurs d’écran interprètent correctement l’action du bouton.  
+> **Remarque :** Les utilisateurs doivent TAB pour accéder à ces boutons (il n’existe aucune clé d’accès), par conséquent, les placer dans un ordre cohérent. Carte le `name` propriété du bouton à l’action nécessaire afin que les lecteurs d’écran interprètent correctement l’action du bouton.  
   
 | Fonction | Bouton |  
 | --- | --- |  
@@ -371,23 +368,23 @@ L’arborescence doit fournir la possibilité de sélectionner des éléments et
 ##### <a name="tree-view-control"></a>Contrôle d’arborescence  
 Contrôles d’arborescence de Visual Studio doivent suivre la navigation au clavier courants :  
   
--   **Flèche vers le haut :** en remontant l’arborescence pour sélectionner des éléments  
+-   **Flèche haut :** Sélectionner des éléments en déplaçant l’arborescence  
   
--   **Flèche vers le bas :** sélectionner des éléments en déplaçant vers le bas de l’arborescence  
+-   **Bas :** Sélectionner des éléments en déplaçant vers le bas de l’arborescence  
   
--   **Flèche droite :** développer un nœud dans l’arborescence  
+-   **Flèche droite :** Développez un nœud dans l’arborescence  
   
--   **Flèche gauche :** réduire un nœud dans l’arborescence  
+-   **Flèche gauche :** Réduire un nœud dans l’arborescence  
   
--   **Entrez la clé :** lancer, charger, exécuter l’élément sélectionné  
+-   **Entrez la clé :** Lancer, charger, exécuter l’élément sélectionné  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Grid (vue de l’arborescence et affichage de grille)  
 Un contrôle Grid est un contrôle complexe qui contienne une arborescence dans une grille. Développement, la réduction et la navigation dans l’arborescence doivent respecter les mêmes commandes de clavier comme une arborescence, avec les ajouts suivants :  
   
--   **Flèche droite :** développer un nœud. Une fois que le nœud est développé, il doit continuer accédant à la colonne le plus proche sur la droite. Navigation doit s’arrêter à la fin de la ligne.  
+-   **Flèche droite :** Développez le nœud. Une fois que le nœud est développé, il doit continuer accédant à la colonne le plus proche sur la droite. Navigation doit s’arrêter à la fin de la ligne.  
   
--   **Onglet :** permet d’accéder à la cellule la plus proche sur la droite.  À la fin de la ligne, la navigation se poursuit à la ligne suivante.  
+-   **Onglet :** Navigue vers la cellule la plus proche sur la droite.  À la fin de la ligne, la navigation se poursuit à la ligne suivante.  
   
--   **Maj + Tab :** permet d’accéder à la cellule la plus proche sur la gauche.  Au début de la ligne, la navigation se poursuit à la cellule la plus à droite de la ligne précédente.  
+-   **Maj + Tab :** Navigue vers la cellule la plus proche sur la gauche.  Au début de la ligne, la navigation se poursuit à la cellule la plus à droite de la ligne précédente.  
   
 ![Un contrôle Grid dans Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Un contrôle Grid dans Visual Studio

@@ -1,9 +1,6 @@
 ---
 title: Description du modèle de répertoire (. Fichiers VSDir) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e2cf5dcb898614750aecd7e4fe997fbde0b5cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925207"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
 Un fichier de description de répertoire de modèle (.vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) pour afficher les dossiers, les fichiers .vsz de l’Assistant et les fichiers de modèle qui sont associés à votre projet dans les boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers .vsdir dans un emplacement référencé sont fusionnés, bien que .vsdir qu’un seul fichier est généralement fourni pour décrire plusieurs dossiers, les Assistants ou les fichiers de modèle.  
@@ -43,8 +40,8 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Champ | Description |
 | - | - |
 | Nom de chemin d’accès relatif (RelPathName) | Le nom du fichier .vsz, de modèle ou de dossier, tel que HeaderFile.h ou MyWizard.vsz. Ce champ peut également être un nom utilisé pour représenter un dossier. |
-| {clsidPackage} | Le GUID du VSPackage qui permet d’accéder aux chaînes localisées, telles que LocalizedName, Description, IconResourceId et SuggestedBaseName, dans les ressources de bibliothèque (DLL) de liens dynamiques satellites du VSPackage. IconResourceId s’applique si DLLPath n’est pas fourni. **Remarque :** ce champ est facultatif, sauf si un ou plusieurs de ces champs sont un identificateur de ressource. Ce champ est généralement vide pour les fichiers .vsdir qui correspondent à l’aide des Assistants de tiers qui ne localisez pas leur texte. |
-| LocalizedName | Le nom localisé de l’Assistant ou le fichier de modèle. Ce champ peut être une chaîne ou un identificateur de ressource sous la forme « #ResID ». Ce nom s’affiche dans le **ajouter un nouvel élément** boîte de dialogue. **Remarque :** si LocalizedName est un identificateur de ressource, {clsidPackage} est obligatoire. |
+| {clsidPackage} | Le GUID du VSPackage qui permet d’accéder aux chaînes localisées, telles que LocalizedName, Description, IconResourceId et SuggestedBaseName, dans les ressources de bibliothèque (DLL) de liens dynamiques satellites du VSPackage. IconResourceId s’applique si DLLPath n’est pas fourni. **Remarque :**  Ce champ est facultatif, sauf si un ou plusieurs de ces champs sont un identificateur de ressource. Ce champ est généralement vide pour les fichiers .vsdir qui correspondent à l’aide des Assistants de tiers qui ne localisez pas leur texte. |
+| LocalizedName | Le nom localisé de l’Assistant ou le fichier de modèle. Ce champ peut être une chaîne ou un identificateur de ressource sous la forme « #ResID ». Ce nom s’affiche dans le **ajouter un nouvel élément** boîte de dialogue. **Remarque :**  Si LocalizedName est un identificateur de ressource, {clsidPackage} est requis. |
 | SortPriority | Entier qui représente la priorité relative de ce fichier de modèle ou d’un Assistant. Par exemple, si cet élément a la valeur 1, cet élément est affiché en regard des autres éléments avec une valeur de 1 et avant tous les éléments avec une valeur de tri de 2 ou supérieure.<br /><br /> Priorité de tri est relatif aux éléments dans le même répertoire. Il peut y avoir plusieurs fichiers .vsdir dans le même répertoire. Dans ce cas, les éléments de tous les <em>.</em> fichiers VSDir dans ce répertoire sont fusionnés. Éléments avec la même priorité sont répertoriés dans l’ordre lexicographique non-respect de la casse du nom affiché. Le `_wcsicmp` fonction est utilisée pour ordonner les éléments.<br /><br /> Éléments non décrits dans les fichiers .vsdir incluent un numéro de priorité supérieur au nombre de priorité la plus élevé répertorié dans les fichiers .vsdir. Le résultat est que ces éléments sont à la fin de la liste affichée, quel que soit leur nom. |
 | Description | La description localisée de l’Assistant ou le fichier de modèle. Ce champ peut être une chaîne ou un identificateur de ressource sous la forme « #ResID ». Cette chaîne apparaît dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue lorsque l’élément est sélectionné. |
 | DLLPath ou {clsidPackage} | Utilisé pour charger une icône pour le fichier de modèle ou d’un Assistant. L’icône est chargée en tant que ressource en dehors d’un fichier .dll ou .exe en utilisant le IconResourceId. Ce fichier .dll ou .exe peut être identifié à l’aide d’un chemin d’accès complet ou en utilisant un GUID d’un VSPackage. L’implémentation DLL du VSPackage est utilisée pour charger l’icône (pas DLL satellite). |

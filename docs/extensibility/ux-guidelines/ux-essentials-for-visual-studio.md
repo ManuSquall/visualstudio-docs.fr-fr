@@ -1,9 +1,6 @@
 ---
 title: UX Essentials pour Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874866"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials pour Visual Studio
 ## <a name="best-practices"></a>meilleures pratiques recommandées.  
@@ -63,7 +60,7 @@ ms.locfileid: "49848590"
  - Hauteur de la boîte de dialogue initiale doit être **inférieure à 700 pixels**, afin qu’il tienne dans la résolution minimale de l’image de l’IDE à 96 PPP.
   
 ### <a name="high-density-displays"></a>Affiche à haute densité  
- L’interface utilisateur dans Visual Studio doit fonctionner correctement dans PPP tous les facteurs qui prend en charge de Windows prêt à l’emploi de mise à l’échelle : 150 %, 200 % et 250 %.  
+ L’interface utilisateur dans Visual Studio doit fonctionner correctement dans tous les facteurs d’échelle PPP prenant en charge Windows prêt à l’emploi : 150 %, 200 % et 250 %.  
   
 ## <a name="anti-patterns"></a>Les anti-modèles  
  Visual Studio contient de nombreux exemples qui suivent nos instructions et les meilleures pratiques de l’interface utilisateur. Dans le but d’être cohérente, les développeurs emprunt souvent à partir de modèles de conception de l’interface utilisateur produit similaires à ce que leur création. Bien qu’il s’agit d’une bonne approche que vous aide à nous promotion de la cohérence dans l’interaction de l’utilisateur et de conception visuelle, nous parfois livrez fonctionnalités avec quelques informations qui n’a pas été respecté nos instructions en raison des contraintes de planification ou annuler l’inscription de hiérarchisation. Dans ce cas, nous ne voulons pas aux équipes de copier l’une de ces « anti-modèles », car ils prolifèrent incorrect ou incohérent de l’interface utilisateur dans l’environnement Visual Studio.  
@@ -79,7 +76,7 @@ ms.locfileid: "49848590"
 #### <a name="anti-pattern-solution"></a>Anti-modèle de solution  
  Dès que l’utilisateur a lancé une action et avant qu’ils ont terminé la tâche, placez immédiatement arrêt critique icônes en regard des zones qui nécessitent une configuration.  
   
-#### <a name="example-manifest-designer-declarations"></a>Exemple : Déclarations de Concepteur de manifeste  
+#### <a name="example-manifest-designer-declarations"></a>Exemple : Déclarations de concepteur du manifeste  
  Ajout d’une déclaration à la liste immédiatement le place dans un état d’erreur persiste jusqu'à ce que l’utilisateur définit les propriétés requises.  
   
  Dans ce cas, il est une préoccupation supplémentaire, car l’icône utilisée pour l’alerte contient un «&times;« icône, l’icône de suppression commun ne peut pas être utilisée en regard de celle-ci. Par conséquent, l’interface utilisateur utilise un bouton Supprimer, un contrôle plus bringuebalant.  
@@ -120,15 +117,15 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
 ### <a name="using-command-bars-for-settings"></a>À l’aide des barres de commandes pour les paramètres  
  **Figure A** représente cette anti-modèle : placer un paramètre en dessous d’un bouton de commande qui s’applique à plus que la commande. Dans cette ébauche, il existe des commandes en plus de démarrer le débogage, comme l’affichage dans le navigateur, démarrer sans débogage et pas à pas détaillé, qui respecte le paramètre sélectionné.  
 
-  ![Figure a : commande de barre anti-modèle](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-modèle-FigureA")<br />Figure a : anti-modèle barre de commandes
+  ![Figure a : Anti-modèle de barre de commandes](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-modèle-FigureA")<br />Figure a : Anti-modèle de barre de commandes
   
  Indésirable légèrement meilleur, mais toujours, placer les paramètres de ce type dans les barres d’outils, comme indiqué dans **Figure B**. Bien que les boutons partagés prennent moins d’espace et sont par conséquent une amélioration sur les listes déroulantes, ces deux conceptions utilisent toujours une barre d’outils pour promouvoir un élément qui n’est pas vraiment une commande.  
  
- ![Figure b : favorable, mais toujours un anti-modèle de barre de commandes](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-modèle-FigureB")<br />Figure b : meilleur, mais toujours un anti-modèle de barre de commandes
+ ![Figure b : Mieux, mais toujours un anti-modèle de barre de commandes](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-modèle-FigureB")<br />Figure b : Mieux, mais toujours un anti-modèle de barre de commandes
  
   Dans l’approche correcte illustrée **Figure C**, le paramètre est lié à une série de commandes. Il n’existe aucun paramètre global défini et nous allons simplement basculer entre quatre commandes. Il s’agit de la seule situation dans laquelle les commandes dans la barre d’outils sont acceptables. 
 
- ![Figure c : corrigez l’utilisation du modèle de barre de commandes de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-modèle-FigureC")<br />Utiliser figure C: correcte du modèle de barre de commandes Visual Studio
+ ![Figure c : Corriger l’utilisation du modèle de barre de commandes de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-modèle-FigureC")<br />Figure c : Utilisation correcte du modèle de barre de commandes Visual Studio
    
 ### <a name="control-anti-patterns"></a>Anti-modèles de contrôle  
  Quelques anti-modèles sont utilisation simplement incorrecte ou une présentation d’un contrôle ou un groupe de contrôles.  
@@ -156,7 +153,7 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
   
    ![En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio.  
   
-   **Une meilleure solution :** poser la question serait de demander l’utilisateur en cliquant sur le lien.  
+   **Meilleure solution :** Poser la question de que l’utilisateur serait demanderez en cliquant sur le lien.  
   
 -   Fonctionnement des services Windows Azure  
   
@@ -165,6 +162,6 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
 #### <a name="using-click-here-for-links"></a>À l’aide de « Cliquez ici » pour obtenir des liens  
  Des liens hypertexte doivent être autodescriptives. Il est un anti-modèle à utiliser « Cliquez ici » ou toute variante similaire.  
   
- **Mauvais :** « Cliquez ici pour obtenir des instructions sur la création d’un nouveau projet. »
+ **Défectueux :** « Cliquez ici pour obtenir des instructions sur la création d’un nouveau projet. »
   
- **Bonne :** « Comment créer un nouveau projet ? »
+ **Bon :** « Comment créer un nouveau projet ? »

@@ -1,9 +1,6 @@
 ---
 title: 'Zone de test 1 : Ajouter à ouvrir à partir du contrôle de code Source | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
@@ -14,28 +11,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842669"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / ouvrir à partir du contrôle de code Source
+# <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
 Ce contrôle de source de plug-in de test couvre zone Placement solutions ou projets sous contrôle de code source et en les récupérant à partir du contrôle de code source.  
   
 ## <a name="command-menu-access"></a>Accès au Menu de commande  
  Ce qui suit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test :  
   
-- Pour [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], ouvrir à partir du contrôle de code source : **fichier**, **ouvrir**, **projet**/**Solution**; recherchez dans le [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] emplacement.  
+- Pour [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], ouvrir à partir du contrôle de code source : **Fichier**, **Open**, **projet**/**Solution**; recherchez dans le [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] emplacement.  
   
-- Pour les autres source plug-ins de contrôle, ouvrez à partir du contrôle de code source : **fichier**, **contrôle de code Source**, **ouvrir à partir du contrôle de code Source**.  
+- Pour les autres source plug-ins de contrôle, ouvrez à partir du contrôle de code source : **Fichier**, **contrôle de code Source**, **ouvrir à partir du contrôle de code Source**.  
   
-- Ajouter au contrôle de code source : **fichier**, **contrôle de code Source**, **ajouter la Solution au fichier de contrôle de Source**, **contrôle de code Source**, **ajouter Projets au contrôle de code Source sélectionnés**.  
+- Ajouter au contrôle de code source : **Fichier**, **contrôle de code Source**, **ajouter la Solution au fichier de contrôle de Source**, **contrôle de code Source**, **ajouter des projets sélectionnés au contrôle de code Source**.  
   
 - Menu contextuel (projet/Solution), **ajouter la Solution au contrôle de code Source**.  
   
-- Ajouter à partir du contrôle de code source : **fichier**, **contrôle de code Source**, **ajouter un projet à partir du contrôle de code Source**.  
+- Ajoutez à partir du contrôle de code source : **Fichier**, **contrôle de code Source**, **ajouter le projet à partir du contrôle de code Source**.  
   
 - Pour [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], ajouter à partir de la source de contrôle est également disponible à partir de **fichier**, **ajouter**, **projet existant**; recherchez dans le [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] emplacement.  
   
@@ -57,7 +54,7 @@ Ce contrôle de source de plug-in de test couvre zone Placement solutions ou pro
 ## <a name="test-cases"></a>Cas de test  
  Les éléments suivants sont des cas de test spécifiques pour l’ajouter à / ouvrir à partir de la zone de test de contrôle de code Source.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Cas 1 a : ajouter la Solution au contrôle de code Source  
+### <a name="case-1a-add-solution-to-source-control"></a>Cas 1 : Ajoutez la Solution au contrôle de code Source  
  Ce cas de test se concentre sur l’ajout de solutions au contrôle de code source.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -77,7 +74,7 @@ Ce contrôle de source de plug-in de test couvre zone Placement solutions ou pro
 |Ouvrez une solution contenant un local ou un projet Web IIS à partir du contrôle de code source|1.  Créer un local ou un projet Web IIS.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Fermez la solution.<br />4.  Ouvrez la solution à partir du contrôle de code source vers un nouvel emplacement.|Solution/projet ouvert à partir du contrôle de code source.|  
 |Ouvrez une solution contenant un projet Web à distance de Site à partir du contrôle de code source|1.  Créez un projet Web de Site distant.<br />2.  Ajouter la solution au contrôle de code source. Si cette étape réussit, passez à l’étape suivante.<br />3.  Fermez la solution.<br />4.  Ouvrez la solution à partir du contrôle de code source vers un nouvel emplacement.|`Result from Step 2:`<br /><br /> Web Site distant n’est pas sous contrôle de code source.<br /><br /> `Result from Step 4:`<br /><br /> Solution ouverte à partir du contrôle de code source.<br /><br /> Projet de Site distant est chargé, mais il n’est pas sous contrôle de code source.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Cas 1c : ajouter la Solution à partir du contrôle de code Source  
+### <a name="case-1c-add-solution-from-source-control"></a>Cas 1c : Ajouter la Solution à partir du contrôle de code Source  
  Ce cas de test se concentre sur l’ajout de solutions à partir du contrôle de code source.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  

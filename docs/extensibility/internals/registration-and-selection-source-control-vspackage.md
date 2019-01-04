@@ -1,9 +1,6 @@
 ---
 title: Inscription et sélection (VSPackage de contrôle de code Source) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930711"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Inscription et sélection (VSPackage de contrôle de code source)
 Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si le contrôle de code source plus d’un VSPackage est inscrit, l’utilisateur peut sélectionner le VSPackage à charger aux moments opportuns. Consultez [VSPackages](../../extensibility/internals/vspackages.md) pour plus d’informations sur les VSPackages et comment les enregistrer.  
@@ -38,7 +35,7 @@ Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la
   
 - GUID du contrôle source : Ceci est un GUID pour le contrôle de code source VSPackage permet d’enregistrer avec le Stub de contrôle de Source de Visual Studio et est également utilisé comme contexte GUID de l’interface utilisateur de commande. Le GUID du service de contrôle de source est enregistré sous le GUID du contrôle de code source. Dans l’exemple, le GUID du contrôle de code source est appelé ID_SccProvider.  
   
-- GUID du service de contrôle de source : il s’agit du service privé GUID utilisé par Visual Studio (appelé SID_SccPkgService dans cette section). En outre, le package de contrôle de code source doit définir d’autres GUID pour les VSPackages, fenêtres Outil et ainsi de suite.  
+- GUID du service de contrôle de source : Il s’agit du service privé GUID utilisé par Visual Studio (appelé SID_SccPkgService dans cette section). En outre, le package de contrôle de code source doit définir d’autres GUID pour les VSPackages, fenêtres Outil et ainsi de suite.  
   
   Les entrées de Registre suivantes doivent être apportées par un VSPackage de contrôle de code source :  
   

@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955316"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.  
@@ -155,19 +152,19 @@ ms.locfileid: "49849032"
 ## <a name="next-steps"></a>Étapes suivantes  
  Une fois que vous avez créé une personnalisation de base au niveau du document pour Excel, vous pouvez en apprendre plus sur la manière de développer des personnalisations dans les rubriques suivantes :  
   
--   Les tâches de programmation générales que vous pouvez effectuer dans les personnalisations au niveau du document : [programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).  
+-   Tâches de programmation générales que vous pouvez effectuer dans les personnalisations au niveau du document : [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).  
   
--   Tâches de programmation sont aux personnalisations au niveau du document pour Excel : [solutions Excel](../vsto/excel-solutions.md).  
+-   Tâches de programmation sont aux personnalisations au niveau du document pour Excel : [Solutions Excel](../vsto/excel-solutions.md).  
   
--   Utilisation du modèle objet d’Excel : [vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).  
+-   À l’aide du modèle objet d’Excel : [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).  
   
--   Personnalisation de l’interface utilisateur d’Excel, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet actions : [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
+-   Personnalisation de l’interface utilisateur d’Excel, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet actions : [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
   
--   À l’aide d’objets Excel étendus fournis par les outils de développement Office dans Visual Studio pour effectuer des tâches qui ne sont pas possibles en utilisant le modèle objet Excel (par exemple, héberger des contrôles managés sur des documents et lier des contrôles Excel aux données en utilisant les formulaires Windows modèle de liaison de données) : [automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).  
+-   À l’aide d’objets Excel étendus fournis par les outils de développement Office dans Visual Studio pour effectuer des tâches qui ne sont pas possibles en utilisant le modèle objet Excel (par exemple, héberger des contrôles managés sur des documents et lier des contrôles Excel aux données en utilisant les formulaires Windows modèle de liaison de données) : [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Génération et débogage des personnalisations au niveau du document pour Excel : [solutions Office Build](../vsto/building-office-solutions.md).  
+-   Génération et débogage des personnalisations au niveau du document pour Excel : [Générer des solutions Office](../vsto/building-office-solutions.md).  
   
--   Déploiement de personnalisations au niveau du document pour Excel : [déployer une solution Office](../vsto/deploying-an-office-solution.md).  
+-   Déploiement de personnalisations au niveau du document pour Excel : [Déployer une solution Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -179,5 +176,3 @@ ms.locfileid: "49849032"
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)  
-  
-  

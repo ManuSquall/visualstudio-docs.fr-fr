@@ -1,9 +1,6 @@
 ---
-title: 'Comment : redimensionner les contrôles NamedRange'
-ms.custom: ''
+title: 'Procédure : Redimensionner les contrôles NamedRange'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d785aba9d08f71aa8530bc2edd015f497caafef
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ac274e6e7e9a7e263e17dc03fa1c5c857f02864f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989761"
 ---
-# <a name="how-to-resize-namedrange-controls"></a>Comment : redimensionner les contrôles NamedRange
+# <a name="how-to-resize-namedrange-controls"></a>Procédure : Redimensionner les contrôles NamedRange
   Vous pouvez définir la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> quand vous l’ajoutez à un document Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner plus tard.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -77,7 +74,7 @@ ms.locfileid: "35670840"
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
 ##  <a name="runtimeaddin"></a> Redimensionner les contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO  
- Vous pouvez redimensionner un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle sur une feuille de calcul ouverte lors de l’exécution. Pour plus d’informations sur l’ajout d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> le contrôle à une feuille de calcul en utilisant un complément, VSTO, consultez [Comment : NamedRange ajouter des contrôles à des feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+ Vous pouvez redimensionner un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle sur une feuille de calcul ouverte lors de l’exécution. Pour plus d’informations sur l’ajout d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> le contrôle à une feuille de calcul en utilisant un complément, VSTO, consultez [Comment : Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 ### <a name="to-resize-a-named-range-programmatically"></a>Pour redimensionner une plage nommée par programmation  
   
@@ -98,8 +95,6 @@ ms.locfileid: "35670840"
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
- [Comment : ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Comment : redimensionner les contrôles Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
- [Comment : redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)  
-  
-  
+ [Guide pratique pour Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Guide pratique pour Redimensionner les contrôles Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
+ [Guide pratique pour Redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)  

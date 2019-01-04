@@ -1,9 +1,8 @@
 ---
-title: 'Concepteur de flux de travail - Comment : utiliser l’éditeur d’expressions'
+title: 'Concepteur de flux de travail - Comment : Utiliser l’éditeur d’expressions'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 63fca3051ce50f728cf83976f6ef6a5204ad35b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956242"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Procédure : utiliser l'éditeur d'expressions
+# <a name="how-to-use-the-expression-editor"></a>Procédure : Utiliser l’éditeur d’expressions
 
 L’éditeur d’Expression est un contrôle de Concepteur de Workflow qui est utilisé dans de nombreuses activités de flux de travail pour entrer et évaluer des expressions. L’éditeur d’Expression fournit un IDE à part entière, modification de l’expérience, notamment IntelliSense, la colorisation, paraminfo et les tildes d’erreur, entre autres fonctionnalités. Le compilateur valide l’expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. L’éditeur peut également être ouvert comme un **Éditeur d’Expression** boîte de dialogue.
 

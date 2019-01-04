@@ -1,9 +1,6 @@
 ---
 title: Plug-ins de contrôle de source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923638"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de contrôle de code source
 La section de référence du SDK de plug-in de contrôle de code Source contient la spécification de l’interface complète qui permet aux systèmes de contrôle de source être intégré à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il spécifie la syntaxe et la sémantique des différents types de données et des fonctions que le plug-in de contrôle de code source doit implémenter pour interagir avec le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE).  
@@ -57,7 +54,7 @@ La section de référence du SDK de plug-in de contrôle de code Source contient
  [Glossaire](../extensibility/source-control-plug-in-glossary.md)  
  Fournit des termes utiles et leurs définitions pour la lecture de la documentation du SDK de plug-in de contrôle de code Source.  
   
- [Guide pratique pour désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Guide pratique pour Désactiver les avertissements de compatibilité pour les Plug-ins de contrôle de code Source](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Décrit comment désactiver les avertissements.  
   
 ## <a name="related-sections"></a>Rubriques connexes  

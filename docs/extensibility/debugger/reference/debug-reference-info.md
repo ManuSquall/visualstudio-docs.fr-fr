@@ -1,9 +1,6 @@
 ---
 title: DEBUG_REFERENCE_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_REFERENCE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9c25c06f4fa92030bec5bd3b6f2566111dadad4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 330ed06d4993d8bbe8b8a889e8f052c8bc7e7049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906720"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 Décrit une référence.  
@@ -28,7 +25,7 @@ Décrit une référence.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct tagDEBUG_REFERENCE_INFO {   
+typedef struct tagDEBUG_REFERENCE_INFO {   
    DEBUGREF_INFO_FLAGS dwFields;  
    BSTR                bstrName;  
    BSTR                bstrType;  
@@ -40,7 +37,7 @@ typedef struct tagDEBUG_REFERENCE_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_REFERENCE_INFO {   
+public struct DEBUG_REFERENCE_INFO {   
    public uint             dwFields;  
    public string           bstrName;  
    public string           bstrType;  
@@ -76,12 +73,12 @@ public struct DEBUG_REFERENCE_INFO {
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à un appel à la [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) méthode doit être renseigné. Cette structure est également retournée en tant que partie d’une liste à partir de la [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

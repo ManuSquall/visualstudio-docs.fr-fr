@@ -1,9 +1,6 @@
 ---
 title: Extension et personnalisation de Windows de l’outil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949834"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Étendre et personnaliser les fenêtres Outil
 Visual Studio fournit plusieurs types différents de windows, par exemple les fenêtres Outil, les fenêtres de document et boîte de dialogue windows. Autres fenêtres telles que la **propriétés** fenêtre, le **sortie** fenêtre et le **liste des tâches** fenêtre, sont des types de fenêtres Outil.  
@@ -37,11 +34,11 @@ Visual Studio fournit plusieurs types différents de windows, par exemple les fe
   
  Dans le frame de document, les fenêtres Outils peuvent être des fenêtres ancrées,  flottantes ou avec onglets. Le frame de fenêtre Outil, fourni par l’IDE, permet de contrôler la taille, l’emplacement, l’état d’ancrage et d’autres propriétés persistantes. Le volet de la fenêtre Outil affiche le contenu. La taille et l’emplacement par défaut s’appliquent uniquement à la première ouverture de la fenêtre Outil ; après cela, l’état de la fenêtre Outil est rendu persistant.  
   
- Les volets de la fenêtre Outil peuvent héberger des contrôles utilisateur WPF et prendre en charge des barres d’outils. Vous pouvez remplacer le <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> propriété pour retourner le handle du contrôle hébergé.  
+ Les volets de la fenêtre Outil peuvent héberger des contrôles utilisateur WPF et prendre en charge des barres d’outils. Vous pouvez substituer la propriété <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> pour retourner le handle du contrôle hébergé.  
   
- Vous pouvez ajouter de nombreuses fonctionnalités différentes aux fenêtres Outil. Par exemple, vous pouvez ajouter une barre d’outils : [ajouter une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou un menu contextuel : [ajouter un menu contextuel dans une fenêtre outil](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Vous pouvez ajouter un contrôle de recherche qui vous permet de rechercher des éléments à l’intérieur de votre fenêtre outil : [recherche ajouter à une fenêtre outil](../extensibility/adding-search-to-a-tool-window.md).  
+ Vous pouvez ajouter de nombreuses fonctionnalités différentes aux fenêtres Outil. Par exemple, vous pouvez ajouter une barre d’outils : [Ajouter une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou un menu contextuel : [Ajouter un menu contextuel dans une fenêtre outil](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Vous pouvez ajouter un contrôle de recherche qui vous permet de rechercher des éléments à l’intérieur de votre fenêtre outil : [Ajouter une recherche à une fenêtre outil](../extensibility/adding-search-to-a-tool-window.md).  
   
- Vous pouvez vous abonner aux événements de fenêtre d’outil : [s’abonner à un événement](../extensibility/subscribing-to-an-event.md).  
+ Vous pouvez vous abonner aux événements de fenêtre d’outil : [S’abonner à un événement](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extend-existing-tool-windows"></a>Étendre des fenêtres Outil existantes  
  Vous pouvez ajouter des informations relatives à votre fenêtre outil vers un nouveau **Options** page et un nouveau paramètre sur le **propriétés** page, écrire dans le **liste des tâches** et **sortie**  windows. Pour plus d’informations, consultez [étendre les fenêtres Propriétés, liste des tâches, sortie et Options](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) et [étendre les fenêtres Propriétés, liste des tâches, sortie et Options](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  

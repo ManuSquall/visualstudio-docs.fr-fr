@@ -1,22 +1,19 @@
 ---
 title: Retarde l’interface utilisateur d’extension de diagnostic dans Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887709"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Comment : diagnostiquer l’interface utilisateur des retards causés par les extensions
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procédure : Diagnostiquer les délais de l’interface utilisateur causés par les extensions
 
 Lors de l’interface utilisateur cesse de répondre, Visual Studio examine la pile des appels du thread d’interface utilisateur, en commençant par le nœud terminal et en progressant vers la base. Si Visual Studio détermine qu’un frame de pile des appels appartient à un module qui fait partie d’une extension installée et activée, une notification s’affiche.
 

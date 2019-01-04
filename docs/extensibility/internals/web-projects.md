@@ -1,9 +1,6 @@
 ---
-title: Projets Web | Documents Microsoft
-ms.custom: ''
+title: Projets Web | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761ad53669d45bc95769c8d81632068101a6e04c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929748"
 ---
-# <a name="web-projects"></a>Projets Web
-Un système de projet Web est un système de projet qui crée des projets Web. Projets Web à leur tour créent des applications Web. Vous pouvez programmer une page Web à l’aide des langages de programmation traditionnels, tels que [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], pour collecter et traiter les informations à partir d’un utilisateur, stockez-le dans une base de données et ainsi de suite. Pages Web avec le code associé sont appelés des pages Web actives.  
+# <a name="web-projects"></a>Projets web
+Un système de projet Web est un système de projet qui crée des projets Web. À leur tour, les projets Web créent des applications Web. Vous pouvez programmer une page Web à l’aide de langages de programmation traditionnels, tels que [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], pour collecter et traiter les informations à partir d’un utilisateur, stockez-le dans une base de données et ainsi de suite. Pages Web avec code associé sont appelés des pages Web actives.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ [Éléments fondamentaux](../../extensibility/internals/web-project-essentials.md)  
  Présente les éléments importants [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projets Web.  
   
  [Prise en charge de site Web](../../extensibility/internals/web-site-support.md)  

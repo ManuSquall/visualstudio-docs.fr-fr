@@ -1,9 +1,6 @@
 ---
 title: assemblys PIA (Primary Interop Assembly) Office
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926728"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblys PIA (Primary Interop Assembly) Office
 
@@ -82,7 +79,7 @@ Les assemblys PIA Office ne sont pas obligatoires sur les ordinateurs des utilis
 
 Tous les modèles de projet Office dans Visual Studio sont conçus pour fonctionner avec une seule application Microsoft Office. Pour utiliser des fonctionnalités dans plusieurs applications Microsoft Office ou dans une application ou composant qui ne dispose pas d'un projet dans Visual Studio, vous devez ajouter une référence aux assemblys PIA requis.  
   
-Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA sont installés par Visual Studio sous le `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Ces versions des assemblys apparaissent sous la **Framework** onglet de la **Gestionnaire de références** boîte de dialogue. Pour plus d’informations, consultez [Comment : applications Office de cible via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA sont installés par Visual Studio sous le `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Ces versions des assemblys apparaissent sous la **Framework** onglet de la **Gestionnaire de références** boîte de dialogue. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Si vous avez installé et enregistré les assemblys PIA dans le Global Assembly Cache, ces versions des assemblys apparaissent sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** . Vous devez éviter d'ajouter des références à ces versions d'assemblys, car des erreurs de développement peuvent se produire quand vous les utilisez. Par exemple, si vous avez enregistré différentes versions des assemblys PIA dans le Global Assembly Cache, votre projet crée automatiquement une liaison à la dernière version enregistrée de l'assembly, même si vous spécifiez une autre version de l'assembly sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** .  
   
@@ -113,7 +110,7 @@ La table suivante indique les assemblys PIA disponibles pour [!INCLUDE[Office_15
 |Bibliothèque d'objets Microsoft Publisher 14.0<br /><br /> Bibliothèque d'objets Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|  
 |Bibliothèque de références d'objet web Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Bibliothèque de références d'objet Page Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Bibliothèque de types Microsoft Smart Tags 2.0 **Remarque :** balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0 bibliothèque de types **Remarque :**  Les balises actives sont déconseillées dans [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] et [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
 |Bibliothèque de types Microsoft Visio 14.0<br /><br /> Bibliothèque de types Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|  
 |Bibliothèque de types Enregistrer en tant que page web Microsoft Visio 14.0<br /><br /> Bibliothèque de types Enregistrer en tant que page web Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Bibliothèque de types de contrôles de dessin Microsoft Visio 14.0<br /><br /> Bibliothèque de types de contrôles de dessin Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Quand vous installez et enregistrez les assemblys PIA Office dans le Global Asse
 
 Par exemple, quand une solution faisant référence à un assembly [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] s'exécute sur un ordinateur disposant de la version [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] du même assembly PIA, l'assembly avec redirection de liaison indique au runtime [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] de charger la version [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] de l'assembly PIA. 
 
-Pour plus d’informations, consultez [Comment : activer et désactiver la redirection de liaison automatique](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+Pour plus d'informations, voir [Procédure : Activer et désactiver la redirection de liaison automatique](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Voir aussi  
 
-- [Comment : applications Office de cible via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Guide pratique pour Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)   
 - [Solutions InfoPath](../vsto/infopath-solutions.md)   
 - [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Pour plus d’informations, consultez [Comment : activer et désactiver la redi
 - [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)   
 - [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
 - [Référence générale &#40;développement Office dans Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

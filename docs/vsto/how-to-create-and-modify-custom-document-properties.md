@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Créer et modifier les propriétés de document personnalisées'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0a3dd497bc2c63c58e6072cd48f58cba071ea4f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891587"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Procédure : Créer et modifier les propriétés de document personnalisées
   Les applications Microsoft Office répertoriées ci-dessus fournissent des propriétés intégrées qui sont stockées avec les documents. En outre, vous pouvez créer et modifier des propriétés de document personnalisées si vous souhaitez stocker des informations supplémentaires avec le document.  
@@ -46,5 +43,3 @@ ms.locfileid: "53646507"
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
  [Guide pratique pour Lire et écrire dans les propriétés de document](../vsto/how-to-read-from-and-write-to-document-properties.md)  
-  
-  

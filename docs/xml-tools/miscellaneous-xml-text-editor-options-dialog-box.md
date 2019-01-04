@@ -2,7 +2,6 @@
 title: Divers, XML, Éditeur de texte, boîte de dialogue Options
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941399"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Divers, XML, éditeur de texte, boîte de dialogue Options
 
@@ -67,7 +66,7 @@ Cette boîte de dialogue permet de modifier les paramètres de saisie semi-autom
 ## <a name="caching"></a>Mise en cache
  **Schémas**
 
- Spécifie l'emplacement du cache de schéma. Le bouton Parcourir (**...** ) ouvre le **parcourir les répertoires** boîte de dialogue à l’emplacement du cache de schéma en cours. Vous pouvez sélectionner un autre répertoire, ou vous pouvez sélectionner un dossier dans la boîte de dialogue, avec le bouton droit, puis choisissez **ouvrir** pour voir ce qui se trouve dans le répertoire.
+ Spécifie l'emplacement du cache de schéma. Le bouton Parcourir (**...** ) s’ouvre le **parcourir les répertoires** boîte de dialogue à l’emplacement de cache de schéma actuel. Vous pouvez sélectionner un autre répertoire, ou vous pouvez sélectionner un dossier dans la boîte de dialogue, avec le bouton droit, puis choisissez **Open** pour découvrir les nouveautés dans le répertoire.
 
 ## <a name="see-also"></a>Voir aussi
 

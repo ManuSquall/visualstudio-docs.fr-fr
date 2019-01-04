@@ -1,9 +1,6 @@
 ---
-title: Configuration pour la génération de projet | Documents Microsoft
-ms.custom: ''
+title: Configuration pour la génération de projet | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f320a23fa75dccdb4c273bc851832f3b762696d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133301"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910215"
 ---
-# <a name="project-configuration-for-building"></a>Configuration de projet pour la génération
-La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue des Configurations de Solution.  
+# <a name="project-configuration-for-building"></a>Configuration de projet pour la création
+La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue Configurations de Solution.  
   
- Un utilisateur peut créer d’autres configurations de solutions, chacune avec son propre nom unique. Lorsque l’utilisateur crée une nouvelle configuration de solution, l’IDE par défaut est le nom de configuration correspondant dans les projets, ou débogage si aucun nom correspondant existe. L’utilisateur peut modifier la sélection en fonction des besoins si nécessaire. La seule exception à ce comportement est lorsque le projet prend en charge une configuration qui correspond au nom de la nouvelle configuration de solution. Par exemple, supposons qu'une solution contient Project1 et Project2. Project1 a des configurations de projet Debug, commerciale et MyConfig1. Projet2 a des configurations de projet Debug, commerciale et MyConfig2.  
+ Un utilisateur peut créer des configurations de solution supplémentaires, chacune avec son propre nom unique. Lorsque l’utilisateur crée une nouvelle configuration de solution, l’IDE par défaut est le nom de configuration correspondant dans les projets, ou débogage si aucun nom correspondant existe. L’utilisateur peut modifier la sélection pour répondre aux exigences spécifiques si nécessaire. La seule exception à ce comportement est lorsque le projet prend en charge une configuration qui correspond au nom de la nouvelle configuration de solution. Par exemple, supposons qu'une solution contient Project1 et Project2. Project1 a des configurations de projet Debug et MyConfig1 vente au détail. Project2 a des configurations de projet Debug et MyConfig2 vente au détail.  
   
- Si l’utilisateur crée une nouvelle configuration de solution nommée MyConfig2, Projet1 lie sa configuration de débogage à la configuration de solution par défaut. Projet2 lie également sa configuration MyConfig2 à la configuration de solution par défaut.  
+ Si l’utilisateur crée une nouvelle configuration de solution nommée MyConfig2, Projet1 lie sa configuration de débogage à la configuration de solution par défaut. Project2 lie également sa configuration MyConfig2 à la configuration de solution par défaut.  
   
 > [!NOTE]
 >  Liaison respecte la casse.  
@@ -36,27 +33,27 @@ La liste des configurations de solution pour une solution donnée est gérée pa
  ![Plusieurs Configurations](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Plusieurs configurations  
   
- Dans cette boîte de dialogue, l’utilisateur peut sélectionner une ou plusieurs configurations. Une fois sélectionné, les valeurs de propriété affichées sur la boîte de dialogue des pages de propriétés reflètent l’intersection des valeurs pour les configurations sélectionnées.  
+ Dans cette boîte de dialogue, l’utilisateur peut sélectionner une ou plusieurs configurations. Une fois sélectionnée, les valeurs de propriété affichées sur la boîte de dialogue des pages de propriétés reflètent l’intersection des valeurs pour les configurations sélectionnées.  
   
- Consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md) pour plus d’informations relatives à l’ajout et la modification du nom des configurations pour les solutions et projets.  
+ Consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md) pour plus d’informations relatives à l’ajout et la modification du nom des configurations pour les projets et solutions.  
   
- Dépendances du projet et l’ordre de génération sont configuration indépendante de la solution : autrement dit, vous ne pouvez configurer arborescence une dépendance pour tous les projets dans la solution. Clic droit sur la solution ou le projet et en sélectionnant le **dépendances du projet** ou **ordre de génération de projet** option ouvre le **dépendances du projet** boîte de dialogue. Il peut également être ouvert à partir de la **projet** menu.  
+ Dépendances du projet et l’ordre de génération sont configuration indépendante de la solution : autrement dit, vous pouvez uniquement définir arborescence d’une dépendance pour tous les projets dans la solution. Clic droit sur la solution ou le projet et en sélectionnant le **dépendances du projet** ou **ordre de génération de projet** option ouvre le **dépendances du projet** boîte de dialogue. Il peut également être ouvert à partir de la **projet** menu.  
   
  ![Dépendances du projet](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dépendances du projet  
   
- Dépendances du projet déterminent l’ordre dans lequel les projets sont générés. Utilisez l’onglet de l’ordre de la génération dans la boîte de dialogue pour afficher l’ordre exact dans lequel les projets dans une solution générer et utilisez l’onglet dépendances pour modifier l’ordre de génération.  
+ Dépendances du projet déterminent l’ordre dans lequel les projets sont générés. Utilisez l’onglet de l’ordre de génération sur la boîte de dialogue pour afficher l’ordre exact dans lequel les projets au sein d’une solution de générer et utilisez l’onglet dépendances pour modifier l’ordre de génération.  
   
 > [!NOTE]
->  Dans la liste des projets qui ont leurs cases à cocher activées mais grisées ont été ajoutés par l’environnement en raison des dépendances explicites, spécifié par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> des interfaces et ne peut pas être modifié. Par exemple, ajoutez une référence de projet dans un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet vers un autre projet ajoute automatiquement une dépendance de génération qui ne peut être supprimée en supprimant la référence. Les projets dont les cases à cocher sont désactivées et apparaissent grisés ne peut pas être sélectionnés, car cela créerait une boucle de dépendance (par exemple, Projet1 serait dépend Projet2 et Projet2 serait dépend Projet1), ce qui serait bloquer la génération.  
+>  Dans la liste des projets qui ont leurs cases à cocher activées mais grisées ont été ajoutés par l’environnement en raison des dépendances explicites spécifié par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces et ne peut pas être modifié. Par exemple, ajoutez une référence de projet à partir d’un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet vers un autre projet ajoute automatiquement une dépendance de build qui peut être supprimée seulement en supprimant la référence. Les projets dont les cases à cocher sont claires et apparaissent grisés ne peuvent pas être sélectionnés, car cela créerait une boucle de dépendance (par exemple, Projet1 serait dépend Project2 et Project2 serait dépend Projet1), ce qui serait bloquer la génération.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processus de génération incluent la compilation classique et les opérations de liaison qui sont appelées avec une seule commande Build. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie à une version antérieure et une vérification à jour pour déterminer si un élément de sortie dans une configuration a changé.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processus de génération incluent la compilation classique et les opérations de liaison qui sont appelées avec une seule commande de Build. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie à une build précédente et une vérification à jour pour déterminer si un élément de sortie dans une configuration a changé.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> objets de retournent un <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retourné par <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) pour gérer leurs processus de génération. Pour signaler l’état d’une opération de génération lorsqu’elle se produit, les configurations effectuent des appels vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, une interface implémentée par l’environnement et tout autre objet intéressés par les événements de statut de build.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> les objets renvoient un correspondant <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retourné par <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) pour gérer leurs processus de génération. Pour signaler l’état d’une opération de génération lorsqu’elle se produit, configurations effectuer des appels vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, une interface implémentée par l’environnement et tout autre objet intéressés par les événements de statut de build.  
   
- Une fois généré, les paramètres de configuration permet de déterminer si ils peuvent être exécutés sous le contrôle du débogueur. Implémentent des configurations <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> pour prendre en charge le débogage.  
+ Une fois généré, les paramètres de configuration peuvent être utilisés pour déterminer s’ils peuvent être exécutés sous le contrôle du débogueur. Implémentent des configurations <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> pour prendre en charge le débogage.  
   
- Après avoir implémenté les dépendances du projet, vous pouvez manipuler par programme les dépendances via le modèle automation. Vous appelez <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> dans le modèle automation. Il n’existe aucune interface au niveau de l’API VSIP disponibles qui permettre du manipuler directement les configurations de gestionnaire de build de solution et leurs propriétés.  
+ Après avoir implémenté les dépendances du projet, vous pouvez manipuler par programmation les dépendances via le modèle automation. Vous appelez <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> dans le modèle automation. Il n’existe aucune interface de niveau d’API VSIP disponibles qui permettent la manipulation directe de leurs propriétés et les configurations de gestionnaire de build de solution.  
   
  En outre, vous pouvez fournir une grille dans la fenêtre de dépendances du projet. Pour plus d’informations, consultez [afficher la grille Propriétés](../../extensibility/internals/properties-display-grid.md).  
   

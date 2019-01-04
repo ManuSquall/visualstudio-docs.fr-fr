@@ -1,9 +1,6 @@
 ---
 title: Création d’une catégorie de paramètres | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935617"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
-Dans cette procédure pas à pas, vous allez créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, comme une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [paramètres d’environnement](../ide/environment-settings.md).
+Dans cette procédure pas à pas, vous allez créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, comme une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Paramètres d’environnement](../ide/environment-settings.md).
 
 Vous créez une catégorie de paramètres en dérivant de la <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.
 
@@ -101,7 +98,7 @@ Pour démarrer cette procédure pas à pas, vous devez tout d’abord effectuer 
 
 4.  Modifiez la valeur de **OptionFloat** à 3.1416 et **OptionInteger** et 12. Cliquez sur **OK**.
 
-5.  Sur le **outils** menu, cliquez sur **importation et exportation de paramètres**.
+5.  Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.
 
      Le **importation et exportation de paramètres** Assistant s’affiche.
 

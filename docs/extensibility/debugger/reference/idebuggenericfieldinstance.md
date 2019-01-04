@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericFieldInstance | Documents Microsoft
-ms.custom: ''
+title: IDebugGenericFieldInstance | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0abc75fa59f19d61ee95194905be678336808b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c265591d1836594b9190e031c1bfe3ab5a93813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990975"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
-Représente une instance d’un champ d’un type générique de code managé.  
+Représente une instance d’un champ pour un type générique du code managé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,11 +32,11 @@ IDebugGenericFieldInstance : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Récupère les arguments de paramètre de type pour cette instance.|  
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre de types des arguments de paramètre pour cette instance.|  
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre de type des arguments de paramètre pour cette instance.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Sh.h  
+ En-tête : SH.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,9 +1,6 @@
 ---
 title: Formulaire de prise en charge dans les Workflows | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857969"
 ---
 # <a name="form-support-in-workflows"></a>Prise en charge de formulaire dans les workflows
   Quatre types de formulaires peuvent être utilisés dans un flux de travail : association, initiation, tâche et la modification. Ces types de formulaire peuvent être basés sur un formulaire ASPX ou un formulaire InfoPath. Le niveau de prise en charge qui [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit pour un formulaire particulier dépend de plusieurs facteurs, qui sont décrites dans les tableaux suivants. Pour plus d’informations sur les types de formulaires de flux de travail, consultez [vue d’ensemble des formulaires de flux de travail](http://go.microsoft.com/fwlink/?LinkId=185228).  
@@ -34,8 +31,8 @@ ms.locfileid: "51296188"
   
 |Type de formulaire|Flux de travail créé dans Visual Studio avec un formulaire ASPX|Flux de travail créé dans Visual Studio à l’aide d’un formulaire InfoPath|  
 |---------------|---------------------------------------------------------|-----------------------------------------------------------------|  
-|Association|-Un formulaire d’association ASPX peut être ajouté au flux de travail à l’aide de la **formulaire d’Association de flux de travail** modèle d’élément.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est ajouté, renommé ou supprimé, ou lorsque son chemin de déploiement change.<br />-Pour plus d’informations, consultez [procédure pas à pas : création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Il n’existe aucun modèle de formulaire d’association dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Il n’existe aucune intégration entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et InfoPath Designer.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
-|Initiation|-Un formulaire d’initiation ASPX peut être ajouté au flux de travail à l’aide de la **formulaire d’Initiation du flux de travail** modèle d’élément.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est ajouté, renommé ou supprimé, ou lorsque son chemin de déploiement change.<br />-Pour plus d’informations, consultez [procédure pas à pas : création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Il n’existe aucun modèle de formulaire d’association dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Il n’existe aucune intégration entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et InfoPath Designer.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
+|Association|-Un formulaire d’association ASPX peut être ajouté au flux de travail à l’aide de la **formulaire d’Association de flux de travail** modèle d’élément.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est ajouté, renommé ou supprimé, ou lorsque son chemin de déploiement change.<br />-Pour plus d’informations, consultez [procédure pas à pas : Création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Il n’existe aucun modèle de formulaire d’association dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Il n’existe aucune intégration entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et InfoPath Designer.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
+|Initiation|-Un formulaire d’initiation ASPX peut être ajouté au flux de travail à l’aide de la **formulaire d’Initiation du flux de travail** modèle d’élément.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est ajouté, renommé ou supprimé, ou lorsque son chemin de déploiement change.<br />-Pour plus d’informations, consultez [procédure pas à pas : Création d’un Workflow avec les formulaires d’Association et Initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).|-Il n’existe aucun modèle de formulaire d’association dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Il n’existe aucune intégration entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et InfoPath Designer.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
 |Tâche|-Aucun modèle de formulaire de tâche ASPX n’est disponible dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Vous devez créer une page d’application et ajouter du code.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.<br />-Pour plus d’informations, consultez [formulaires de tâche de flux de travail (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187674)|-Il n’existe aucun modèle de formulaire de tâche InfoPath dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Il n’existe aucune intégration entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et InfoPath Designer.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
 |Modification|-Aucun modèle de formulaire de modification ASPX n’est disponible dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour ajouter un formulaire de modification, vous devez créer une page d’application et ajouter du code.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé. Vous devez modifier manuellement comme il convient.<br />-Pour plus d’informations, consultez [formulaires de Modification de flux de travail (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187675)|-Il n’existe aucun modèle de formulaire InfoPath modification dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Il n’existe aucune intégration entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et InfoPath Designer.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
   
@@ -45,13 +42,11 @@ ms.locfileid: "51296188"
 |Type de formulaire|Flux de travail réutilisable qui comporte un formulaire ASPX importé à partir de SharePoint Designer|Flux de travail réutilisable qui a un formulaire InfoPath est importé à partir de SharePoint Designer|  
 |---------------|-------------------------------------------------------------------------------| - |  
 |Association|-Le formulaire est référencé dans le *Elements.xml* fichier du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est renommé ou supprimé, ou lorsque son chemin de déploiement change.|-Le formulaire est importé, mais non référencé dans le *Elements.xml* du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|  
-|Initiation|-Le formulaire est référencé par le flux de travail dans le *Elements.xml* fichier du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est renommé ou supprimé, ou lorsque son chemin de déploiement change.|-Le formulaire est importé, mais non référencé dans le *Elements.xml* du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé. **Remarque :** règles et des propriétés doivent être ajoutées et modifiées pour ce scénario fonctionne.|  
-|Tâche|-Le formulaire est référencé dans le *Elements.xml* fichier du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|-Le formulaire est importé, mais non référencé dans le *Elements.xml* du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé. **Remarque :** règles et des propriétés doivent être ajoutées et modifiées pour ce scénario fonctionne.|  
+|Initiation|-Le formulaire est référencé par le flux de travail dans le *Elements.xml* fichier du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail est refactorisé lorsque le formulaire est renommé ou supprimé, ou lorsque son chemin de déploiement change.|-Le formulaire est importé, mais non référencé dans le *Elements.xml* du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé. **Remarque :**  Règles et des propriétés doivent être ajoutées et modifiées pour ce scénario fonctionne.|  
+|Tâche|-Le formulaire est référencé dans le *Elements.xml* fichier du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé.|-Le formulaire est importé, mais non référencé dans le *Elements.xml* du flux de travail.<br />-Le *Elements.xml* fichier du flux de travail n’est pas refactorisé. **Remarque :**  Règles et des propriétés doivent être ajoutées et modifiées pour ce scénario fonctionne.|  
 |Modification|Non applicable. Formulaires de modification ASPX ne peut pas être créés dans SharePoint Designer.|Non applicable. Impossible de créer des formulaires InfoPath modification dans SharePoint Designer, sauf pour le flux de travail SharePoint Server intégré, qui n’est pas inclus dans le fichier .wsp lorsque le flux de travail est exporté.|  
   
 ## <a name="see-also"></a>Voir aussi
  [Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Importer des éléments à partir d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
-  
-  

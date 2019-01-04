@@ -1,8 +1,6 @@
 ---
-title: 'Comment : inscrire des Types de fichiers de l’éditeur | Microsoft Docs'
+title: 'Procédure : Inscrire des Types de fichiers de l’éditeur | Microsoft Docs'
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857800"
 ---
-# <a name="how-to-register-editor-file-types"></a>Comment : inscrire des types de fichiers de l’éditeur
+# <a name="how-to-register-editor-file-types"></a>Procédure : Inscrire des types de fichiers de l’éditeur
 Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est à l’aide des attributs d’inscription fournis dans le cadre de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] package framework (MPF) classes managées. Si vous implémentez votre package en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vous pouvez également écrire un script de Registre qui inscrit votre éditeur et les extensions associées.
 
 ## <a name="registration-using-mpf-classes"></a>Inscription à l’aide des classes MPF
