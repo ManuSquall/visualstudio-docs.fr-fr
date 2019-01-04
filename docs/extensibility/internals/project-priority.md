@@ -1,9 +1,6 @@
 ---
-title: Priorité de projet | Documents Microsoft
-ms.custom: ''
+title: Priorité de projet | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27341f78fb17fa5346a9dfbc7cdd3f86439d3d23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873893"
 ---
 # <a name="project-priority"></a>Priorité de projet
-Un élément de projet appartient généralement un seul projet dans la solution. Par conséquent, l’IDE peut déterminer facilement le projet qui est utilisé pour ouvrir l’élément. Toutefois, si un élément est un membre de plusieurs projets, l’IDE utilise un schéma de priorités pour déterminer le projet meilleures pour ouvrir l’élément.  
+Un élément de projet est généralement un membre d’un seul projet dans la solution. Par conséquent, l’IDE peut facilement déterminer le projet qui est utilisé pour ouvrir l’élément. Toutefois, si un élément est un membre de plusieurs projets, l’IDE utilise un schéma de priorité pour déterminer le projet meilleures pour l’ouverture de l’élément.  
   
- La liste suivante montre le schéma de priorité de projet :  
+ La liste suivante présente les schémas de priorité de projet :  
   
 -   Les appels de l’IDE le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> méthode pour chaque projet dans la solution pour déterminer si le document est un membre de ce projet.  
   
 -   Si le document est un membre du projet, le projet répond avec une priorité que le projet affecte en fonction de sa gestion de ce document. Par exemple, un projet de langage répond avec une priorité élevée pour ses fichiers sources du langage, mais répond avec une priorité plus faible pour un type de fichier non reconnu qui n’est pas utilisé dans le cadre de son processus de génération.  
   
--   Les projets qui fournissent des éditeurs personnalisés, spécifiques à un projet ou les concepteurs pour un document également recevoir une priorité élevée.  
+-   Les projets qui fournissent des éditeurs personnalisés, spécifique au projet ou les concepteurs pour un document reçoivent également une priorité élevée.  
   
 -   Le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> énumération fournit des valeurs de priorité le document.  
   
--   Le projet qui spécifie la priorité la plus élevée est donné le contexte pour ouvrir le document. Si les deux projets de retournent des valeurs de priorité égale, le projet actif est préféré. Si aucun projet de la solution ne répond qu’il puisse ouvrir le document, l’IDE place le document dans le projet fichiers divers. Pour plus d’informations, consultez [le projet fichiers divers](../../extensibility/internals/miscellaneous-files-project.md).  
+-   Le projet qui spécifie la priorité la plus élevée est fonction du contexte pour ouvrir le document. Si deux projets retournent des valeurs de priorité égale, le projet actif est préféré. Si aucun projet dans la solution ne répond qu’il peut ouvrir le document, l’IDE place le document dans le projet fichiers divers. Pour plus d’informations, consultez [le projet fichiers divers](../../extensibility/internals/miscellaneous-files-project.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Projet fichiers divers](../../extensibility/internals/miscellaneous-files-project.md)   
- [Comment : ouvrir les éditeurs pour les Documents ouverts](../../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Guide pratique pour Ouvrir des éditeurs pour les Documents ouverts](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [Ajout d’un projet et de modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)
