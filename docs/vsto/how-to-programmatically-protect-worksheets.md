@@ -1,9 +1,6 @@
 ---
-title: 'Comment : protéger des feuilles de calcul par programmation'
-ms.custom: ''
+title: 'Procédure : Protéger des feuilles de calcul par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dce13f8ec89f57b595f1147d99325004e89275e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936930"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>Comment : protéger des feuilles de calcul par programmation
+# <a name="how-to-programmatically-protect-worksheets"></a>Procédure : Protéger des feuilles de calcul par programmation
   La fonctionnalité de protection de Microsoft Office Excel permet d’empêcher les utilisateurs et le code de modifier des objets dans une feuille de calcul. Par défaut, toutes les cellules sont verrouillées une fois que vous avez activé la protection.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -70,12 +67,10 @@ ms.locfileid: "49867180"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
- [Comment : supprimer par programmation la protection des feuilles de calcul](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
- [Comment : protéger des classeurs par programmation](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Comment : masquer des feuilles de calcul par programmation](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Guide pratique pour Supprimer par programmation la protection des feuilles de calcul](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)   
+ [Guide pratique pour Protéger des classeurs par programmation](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Guide pratique pour Masquer des feuilles de calcul par programmation](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Élément hôte de feuille de calcul](../vsto/worksheet-host-item.md)   
  [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

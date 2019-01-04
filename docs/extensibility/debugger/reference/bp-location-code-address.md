@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_CODE_ADDRESS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 389aaca22043f22347370584a8e3761cf39f613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925168"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 Décrit l’emplacement d’un point d’arrêt à une adresse dans le code.  
@@ -28,7 +25,7 @@ Décrit l’emplacement d’un point d’arrêt à une adresse dans le code.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct _BP_LOCATION_CODE_ADDRESS {   
+typedef struct _BP_LOCATION_CODE_ADDRESS {   
    BSTR bstrContext;  
    BSTR bstrModuleUrl;  
    BSTR bstrFunction;  
@@ -52,12 +49,12 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

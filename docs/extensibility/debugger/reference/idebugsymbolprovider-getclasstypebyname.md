@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetClassTypeByName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b67b959d31989c0a891fc44e1bf8acefb6cc182
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71fd29bfdac77e2425bb8ed6b1703ee44b36144a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882839"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Cette méthode obtient le type de champ de classe représentant un nom de classe qualifié complet.  
@@ -28,7 +25,7 @@ Cette méthode obtient le type de champ de classe représentant un nom de classe
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetClassTypeByName(   
+HRESULT GetClassTypeByName(   
    LPCOLESTR          pszClassName,  
    NAME_MATCH         nameMatch,  
    IDebugClassField** ppField  

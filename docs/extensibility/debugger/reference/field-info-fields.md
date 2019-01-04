@@ -1,9 +1,6 @@
 ---
 title: FIELD_INFO_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FIELD_INFO_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ea2148290402f2a8e5c08474de125fc52bca47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e48ac549001ed8a6ef363540cf50affb0e7b605
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902504"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Spécifie les informations à récupérer sur un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.  
@@ -28,7 +25,7 @@ Spécifie les informations à récupérer sur un [IDebugField](../../../extensib
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_FIELD_INFO_FIELDS {   
+enum enum_FIELD_INFO_FIELDS {   
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  
    FIF_TYPE      = 0x0004,  
@@ -70,12 +67,12 @@ public enum enum_FIELD_INFO_FIELDS {
   
  Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

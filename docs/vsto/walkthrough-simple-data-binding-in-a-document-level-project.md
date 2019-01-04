@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Liaison de données Simple dans un projet au niveau du document'
-ms.custom: ''
+title: 'Procédure pas à pas : Liaison de données simple dans un projet au niveau du document'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895491"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données Simple dans un projet au niveau du document
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données dans un projet au niveau du document. Un seul champ de données dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler tous les enregistrements dans la table.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49824373"
   
 ### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1. Créer un projet de classeur Excel portant le nom **Ma liaison de données Simple**, à l’aide de Visual Basic ou c#. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Créer un projet de classeur Excel portant le nom **Ma liaison de données Simple**, à l’aide de Visual Basic ou c#. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **Ma liaison de données Simple** projet **l’Explorateur de solutions**.  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824373"
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas montre les principes fondamentaux de la liaison d’une plage nommée à un champ dans une base de données. Voici quelques tâches susceptibles de venir après :  
   
--   Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d’informations, consultez [Comment : mettre en Cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Lier des cellules à plusieurs colonnes dans une table, au lieu d’à un seul champ. Pour plus d’informations, consultez [procédure pas à pas : liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Lier des cellules à plusieurs colonnes dans une table, au lieu d’à un seul champ. Pour plus d’informations, consultez [Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Utilisez un <xref:System.Windows.Forms.BindingNavigator> contrôle pour faire défiler les enregistrements. Pour plus d’informations, consultez [Comment : naviguer parmi les données avec le contrôle Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Utilisez un <xref:System.Windows.Forms.BindingNavigator> contrôle pour faire défiler les enregistrements. Pour plus d'informations, voir [Procédure : Naviguer parmi les données avec le contrôle Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Données dans les solutions Office](../vsto/data-in-office-solutions.md)   
  [Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

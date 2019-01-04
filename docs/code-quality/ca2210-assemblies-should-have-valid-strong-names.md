@@ -1,8 +1,7 @@
 ---
-title: 'CA2210 : Les assemblys doivent porter des noms forts valides'
+title: 'CA2210 : Assemblys doivent avoir des noms forts valides'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: f3d6eb70e22da0b17fff9febce47bcaa5b980269
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908345"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Les assemblys doivent porter des noms forts valides
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Assemblys doivent avoir des noms forts valides
 
 |||
 |-|-|
@@ -102,5 +101,5 @@ Supprimez uniquement un avertissement de cette règle si l’assembly est utilis
 
 - <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>
 - <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
-- [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Guide pratique pour Signer un Assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Sn.exe (outil Strong Name)](/dotnet/framework/tools/sn-exe-strong-name-tool)

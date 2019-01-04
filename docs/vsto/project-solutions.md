@@ -1,9 +1,6 @@
 ---
 title: Solutions Project
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909773"
 ---
 # <a name="project-solutions"></a>Solutions Project
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office Project. Vous pouvez utiliser les compléments VSTO pour automatiser Project, étendre les fonctionnalités de Project ou personnaliser l’interface utilisateur de Project.  
@@ -42,7 +39,7 @@ ms.locfileid: "35673261"
   
  Pour accéder au modèle objet Project à partir d’un complément, VSTO, utilisez le `Application` champ la `ThisAddIn` classe dans votre projet. Le `Application` champ retourne un `Microsoft.Office.Interop.MsProject.Application` objet qui représente l’instance actuelle du projet. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
- Quand vous appelez le modèle objet Project, vous utilisez des types fournis dans l’assembly PIA (Primary Interop Assembly) pour Project. L’assembly PIA fait office de pont entre le code managé du complément VSTO et le modèle objet COM dans Project. Tous les types dans l’assembly PIA Project sont définis dans le `Microsoft.Office.Interop.MSProject` espace de noms. Pour plus d’informations sur les assemblys PIA, consultez [présentation du développement de solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).  
+ Quand vous appelez le modèle objet Project, vous utilisez des types fournis dans l’assembly PIA (Primary Interop Assembly) pour Project. L’assembly PIA fait office de pont entre le code managé du complément VSTO et le modèle objet COM dans Project. Tous les types de l’assembly PIA Project sont définis dans l’espace de noms `Microsoft.Office.Interop.MSProject`. Pour plus d’informations sur les assemblys PIA, consultez [présentation du développement de solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="use-the-project-object-model-documentation"></a>Utilisez la documentation du modèle objet project  
  Pour obtenir des informations complètes sur le modèle objet Project, vous pouvez vous reporter à la référence du modèle objet Project VBA. La documentation de référence du modèle objet VBA présente le modèle objet Project tel qu’il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [référence du modèle objet Project 2010](http://go.microsoft.com/fwlink/?LinkId=199771).  
@@ -70,12 +67,10 @@ ms.locfileid: "35673261"
  [Procédure pas à pas : Créer votre premier complément VSTO pour project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Architecture des Compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)   
  [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)   
  [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)   
  [Project 2010 et Project Server 2010 dans le développement Office](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

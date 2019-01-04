@@ -1,9 +1,6 @@
 ---
 title: Saisie semi-automatique de mots dans un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55fbe636c77d77b3b4f61f9f56a4fa91fe49a090
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd60db1a18280d616d06a5f37bc5a7fc446bc7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929330"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
 Saisie semi-automatique de mot renseigne les caractères manquants sur un mot partiel tapé. En l’absence d’achèvement possible qu’un seul, le mot est terminé lorsque le caractère de saisie semi-automatique est entré. Si le mot partiel correspond à plusieurs possibilités, une liste des saisies semi-automatiques possibles s’affiche. Un caractère de fin peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.  

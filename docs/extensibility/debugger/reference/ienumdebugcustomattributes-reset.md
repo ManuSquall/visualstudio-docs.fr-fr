@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugCustomAttributes::Reset | Documents Microsoft
-ms.custom: ''
+title: IEnumDebugCustomAttributes::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCustomAttributes::Reset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56be764861c63c7f0ca0d7fc94a3841c4483b2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005791e4e6b21f06d0d3fa761538398ac89db7ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888541"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 Réinitialise la séquence d'énumération au début.  

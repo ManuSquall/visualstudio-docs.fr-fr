@@ -1,6 +1,5 @@
 ---
 title: Élément SDKReference (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac32f5cae1e2e31f40a7d49c861757aec43fa5b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: a8f3f2c7ceb4e3e78a811d978e48ea351f0042d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917288"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Élément SDKReference (modèles Visual Studio)
 Spécifie que le modèle d’élément utilise une référence SDK.  

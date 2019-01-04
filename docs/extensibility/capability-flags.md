@@ -1,9 +1,6 @@
 ---
 title: Indicateurs de capacité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36fa879ac08f81ffd61cb8febf4183ec268d3a6c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 958cbc17c843ba4d23ac83b928f7b517ada93080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922125"
 ---
 # <a name="capability-flags"></a>Indicateurs de capacité
 Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Le SCC_EXCAP_*xxx* indicateurs sont incrémentielles indicateurs qui indiquent les capacités étendues et les résoudre en valeurs entières.  

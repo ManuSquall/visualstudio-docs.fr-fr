@@ -1,9 +1,6 @@
 ---
 title: Detecting System Requirements | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27fcfa7d7ad7b098bb28a3afee301444c48a46e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892401"
 ---
 # <a name="detect-system-requirements"></a>Détecter la configuration système requise
 Un VSPackage ne peut pas fonctionner, sauf si Visual Studio est installé. Lorsque vous utilisez le programme d’installation de Microsoft Windows pour gérer l’installation de votre VSPackage, vous pouvez configurer le programme d’installation pour détecter si Visual Studio est installé. Vous pouvez également configurer pour vérifier le système pour d’autres exigences, par exemple, une version particulière de Windows ou une quantité spécifique de mémoire vive.  
@@ -46,7 +43,7 @@ Lorsqu’une version plus récente est installée, les clés de Registre pour ce
 |Visual Studio 2015 Shell (intégré et isolé)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detect-when-visual-studio-is-running"></a>Détecter quand Visual Studio est en cours d’exécution  
- Votre package Visual Studio ne peut pas être inscrit correctement si Visual Studio est en cours d’exécution lorsque le VSPackage est installé. Le programme d’installation doit détecter lorsque Visual Studio est en cours d’exécution et refuser puis à installer le programme. Programme d’installation de Windows ne vous permettent d’utiliser les entrées de table pour activer la détection de ce type. Au lieu de cela, vous devez créer une action personnalisée, comme suit : utilisez le `EnumProcesses` (fonction) pour détecter les *devenv.exe* traiter et ensuite définir une propriété du programme d’installation qui est utilisée dans une condition de lancement ou afficher une boîte de dialogue de manière conditionnelle Pour inviter l’utilisateur de fermer Visual Studio.  
+ Votre package Visual Studio ne peut pas être inscrit correctement si Visual Studio est en cours d’exécution lorsque le VSPackage est installé. Le programme d’installation doit détecter lorsque Visual Studio est en cours d’exécution et refuser puis à installer le programme. Programme d’installation de Windows ne vous permettent d’utiliser les entrées de table pour activer la détection de ce type. Au lieu de cela, vous devez créer une action personnalisée, comme suit : Utilisez le `EnumProcesses` (fonction) pour détecter les *devenv.exe* traiter et ensuite définir une propriété du programme d’installation qui est utilisée dans une condition de lancement ou affiche une boîte de dialogue qui invite l’utilisateur à fermer Visual Studio de manière conditionnelle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Installer des VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
