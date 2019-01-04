@@ -265,7 +265,7 @@ items:
       - name: Assurez-vous que DNS est correctement configuré sur l’ordinateur cible
         href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
       - name: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
-        href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
+        href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
       - name: Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor
         href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
       - name: Impossible de lancer les communications DCOM
@@ -840,9 +840,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947476"

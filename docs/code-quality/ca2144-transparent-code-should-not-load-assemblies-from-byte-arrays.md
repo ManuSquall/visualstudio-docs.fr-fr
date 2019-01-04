@@ -1,8 +1,7 @@
 ---
-title: "CA2144 : Le code transparent ne doit pas charger d'assemblys depuis des tableaux d'octets"
+title: 'CA2144 : Le code transparent ne doit pas charger les assemblys à partir de tableaux d’octets'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2144
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a908b197e05b1795534dd00edc2c1ff9597f2d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ea3149d2fb01b447bd2c539f7de0d440a36fe91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825761"
 ---
-# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144 : Le code transparent ne doit pas charger d'assemblys depuis des tableaux d'octets
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144 : Le code transparent ne doit pas charger les assemblys à partir de tableaux d’octets
 
 |||
 |-|-|

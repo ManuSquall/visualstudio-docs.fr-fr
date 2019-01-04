@@ -1,9 +1,6 @@
 ---
 title: Fonction SccPopulateDirList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccPopulateDirList
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b5839735e7564b486444cc0f9b65c71bc06f047
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 477d18f3cb5f187b61d78d779339e2c43c402a43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854735"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 Cette fonction détermine les répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, une liste de répertoires à examiner.  
@@ -28,7 +25,7 @@ Cette fonction détermine les répertoires et (éventuellement) les fichiers son
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-SCCRTN SccPopulateDirList(  
+SCCRTN SccPopulateDirList(  
    LPVOID        pContext,  
    LONG          nDirs,  
    LPCSTR*       lpDirPaths,  

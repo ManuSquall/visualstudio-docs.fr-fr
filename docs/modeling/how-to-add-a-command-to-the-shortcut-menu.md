@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter une commande au menu contextuel'
+title: 'Procédure : Ajouter une commande au menu contextuel'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987964"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procédure : Ajouter une commande au menu contextuel
 Vous pouvez ajouter des commandes de menu à votre langage spécifique à un domaine (DSL, Domain-Specific Language) pour que vos utilisateurs puissent effectuer des tâches spécifiques à votre solution DSL. Les commandes apparaissent dans le menu contextuel quand les utilisateurs cliquent avec le bouton droit sur le diagramme. Vous pouvez définir une commande pour qu'elle apparaisse dans le menu uniquement dans des circonstances spécifiques. Par exemple, vous pouvez rendre la commande visible uniquement quand l'utilisateur clique sur des types d'éléments spécifiques ou sur des éléments qui sont dans des états spécifiques.
 
  En résumé, les étapes sont effectuées dans le projet DslPackage comme suit :
@@ -33,7 +32,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
    Pour obtenir des exemples, consultez le [site Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+>  Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>Définition d'une commande à l'aide de l'infrastructure MEF
  L'infrastructure MEF (Managed Extension Framework) fournit une alternative pour la définition de commandes de menu dans le menu de diagramme. Son objectif principal est de faire en sorte qu'une solution DSL puisse être étendue par vous-même ou par d'autres parties. Les utilisateurs peuvent choisir d'installer uniquement la solution DSL ou d'installer à la fois la solution DSL et les extensions. Cependant, l'infrastructure MEF réduit également la charge de travail liée à la définition des commandes de menu contextuel, après le travail initial d'activation de l'infrastructure MEF sur la solution DSL.
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Définir ce que fait la commande
  Pour chaque commande, définissez une méthode `OnMenu...` qui exécute l'action requise quand l'utilisateur clique sur la commande de menu.
 
- Si vous modifiez des éléments de modèle, vous devez le faire dans une transaction. Pour plus d’informations, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Si vous modifiez des éléments de modèle, vous devez le faire dans une transaction. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  Dans cet exemple, `ClassShape`, `ModelClass` et `Comment` sont des types définis dans la solution DSL, qui est dérivée du modèle DSL de diagramme de classe.
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Pour plus d’informations sur la façon de naviguer d’un objet à l’objet dans le modèle et sur la création des objets et des liens, consultez [Comment : modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Pour plus d’informations sur la façon de naviguer d’un objet à l’objet dans le modèle et sur la création des objets et des liens, consultez [Comment : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Inscrire la commande
  Répétez en C# les déclarations des valeurs de GUID et d'ID que vous avez effectuées dans la section Symbols de CommandSet.vsct :
@@ -360,8 +359,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Voir aussi
 
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Guide pratique pour modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Guide pratique pour Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md)
-- [Exemple de code : diagrammes de Circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Exemple de code : Diagrammes de circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

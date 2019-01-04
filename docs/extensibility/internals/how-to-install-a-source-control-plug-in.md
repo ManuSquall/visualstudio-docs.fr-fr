@@ -1,9 +1,6 @@
 ---
-title: 'Comment : installer un plug-in de contrôle de code Source | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Installer un plug-in de contrôle de code Source | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3487c796661a8194b9c920f43bae9df87f1ba57d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1e7e60819b9ac10308be26a1f3ea3243cc71c34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990501"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>Comment : installer un plug-in de contrôle de code source
+# <a name="how-to-install-a-source-control-plug-in"></a>Procédure : Installer un plug-in de contrôle de code source
 Création d’un contrôle de source de plug-in implique trois étapes :  
 
 1. Créer une DLL avec les fonctions définies dans la section de référence d’API de plug-in de contrôle de Source de cette documentation.  

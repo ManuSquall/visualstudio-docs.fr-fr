@@ -1,9 +1,6 @@
 ---
-title: IDebugEngine3::LoadSymbols | Documents Microsoft
-ms.custom: ''
+title: IDebugEngine3::LoadSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::LoadSymbols
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fde88d8ecc31c9e1326b36da33c7fd96530ff86d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b74b4303d85364e5d6afa2eb0618c32770ac3a23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865152"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 Symboles de charge (si nécessaire) pour tous les modules en cours de débogage par ce moteur de débogage.  
@@ -42,7 +39,7 @@ int LoadSymbols();
  En cas de réussite, retourne S_OK ; sinon retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cela charge les symboles de débogage pour tous les modules référencés par ce moteur de débogage. Les symboles sont chargés uniquement si elles n’ont pas encore été chargés. Les symboles sont recherchés sur les chemins d’accès définies par un appel à [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).  
+ Cela charge les symboles de débogage pour tous les modules référencés par ce moteur de débogage. Les symboles sont chargés uniquement si elles n’ont pas déjà été chargés. Les symboles sont recherchées sur les chemins d’accès définis par un appel à [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   

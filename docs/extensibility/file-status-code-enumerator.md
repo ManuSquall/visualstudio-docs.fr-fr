@@ -1,9 +1,6 @@
 ---
 title: Énumérateur de Code d’état de fichier | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - named constants, SccStatus enumerator
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 884c7ab1b5d4fe1461fd1ae00fbc670f0bc7b6f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf7e39f91f6916f4d3ace7a9a303ea1c8e626ee9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954774"
 ---
 # <a name="file-status-code-enumerator"></a>Énumérateur de code de statut de fichier
 Le `SccStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle source. Cette énumération est utilisée par le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et `POPLISTFUNC` fonction de rappel (voir [POPLISTFUNC](../extensibility/poplistfunc.md) pour plus d’informations).  
@@ -30,24 +27,24 @@ Le `SccStatus` énumérateur contient des valeurs de constantes nommées qui sp�
   
 ```  
 enum SccStatus {  
-   SCC_STATUS_INVALID          = -1L,  
-   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
-   SCC_STATUS_CONTROLLED       = 0x0001L,  
-   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
-   SCC_STATUS_OUTOTHER         = 0x0004L,  
-   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
-   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
-   SCC_STATUS_OUTOFDATE        = 0x0020L,  
-   SCC_STATUS_DELETED          = 0x0040L,  
-   SCC_STATUS_LOCKED           = 0x0080L,  
-   SCC_STATUS_MERGED           = 0x0100L,  
-   SCC_STATUS_SHARED           = 0x0200L,  
-   SCC_STATUS_PINNED           = 0x0400L,  
-   SCC_STATUS_MODIFIED         = 0x0800L,  
-   SCC_STATUS_OUTBYUSER        = 0x1000L  
-   SCC_STATUS_NOMERGE          = 0x2000L  
-   SCC_STATUS_RESERVED_1       = 0x4000L  
-   SCC_STATUS_RESERVED_2       = 0x8000L  
+   SCC_STATUS_INVALID          = -1L,  
+   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
+   SCC_STATUS_CONTROLLED       = 0x0001L,  
+   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
+   SCC_STATUS_OUTOTHER         = 0x0004L,  
+   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
+   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
+   SCC_STATUS_OUTOFDATE        = 0x0020L,  
+   SCC_STATUS_DELETED          = 0x0040L,  
+   SCC_STATUS_LOCKED           = 0x0080L,  
+   SCC_STATUS_MERGED           = 0x0100L,  
+   SCC_STATUS_SHARED           = 0x0200L,  
+   SCC_STATUS_PINNED           = 0x0400L,  
+   SCC_STATUS_MODIFIED         = 0x0800L,  
+   SCC_STATUS_OUTBYUSER        = 0x1000L  
+   SCC_STATUS_NOMERGE          = 0x2000L  
+   SCC_STATUS_RESERVED_1       = 0x4000L  
+   SCC_STATUS_RESERVED_2       = 0x8000L  
 };  
 ```  
   

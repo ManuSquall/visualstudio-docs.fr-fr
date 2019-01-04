@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ouvrir des solutions Office sans exécuter le code'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930099"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procédure : Ouvrir des solutions Office sans exécuter le code
   Une solution Microsoft Office créée avec des extensions de code managé s’exécute même si le paramètre de sécurité dans l’application Office de l’utilisateur final est défini sur élevé. Il s’agit, car la sécurité du code assembly .NET est gérée par Microsoft .NET Framework, et non par Microsoft Office.  
@@ -57,5 +54,3 @@ ms.locfileid: "53646904"
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
-  

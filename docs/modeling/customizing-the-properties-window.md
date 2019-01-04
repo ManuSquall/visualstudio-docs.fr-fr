@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987338"
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans Visual Studio. Dans votre définition DSL, vous définissez les propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Vous pouvez ainsi afficher et modifier les valeurs des propriétés de domaine, même si vous n’avez pas mappé les aux champs de forme sur le diagramme.
@@ -24,7 +23,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 ## <a name="names-descriptions-and-categories"></a>Noms, Descriptions et les catégories
  **Nom et nom complet**. Dans votre définition d’une propriété de domaine, le nom complet de la propriété est le nom qui apparaît lors de l’exécution dans la fenêtre Propriétés. En revanche, le nom est utilisé lorsque vous écrivez du code de programme pour mettre à jour la propriété. Le nom doit être un nom d’alphanumériques CLR correct, mais le nom d’affichage peut contenir des espaces.
 
- Lorsque vous définissez le nom d’une propriété dans la définition DSL, son nom d’affichage est automatiquement définie à une copie du nom. Si vous écrivez un nom de casse Pascal tels que « FuelGauge », le nom d’affichage contiennent un espace : « Jauge de carburant ». Toutefois, vous pouvez définir explicitement le nom d’affichage à une autre valeur.
+ Lorsque vous définissez le nom d’une propriété dans la définition DSL, son nom d’affichage est automatiquement définie à une copie du nom. Si vous écrivez un nom de casse Pascal tels que « FuelGauge », le nom d’affichage contiendra automatiquement un espace : « Jauge de carburant ». Toutefois, vous pouvez définir explicitement le nom d’affichage à une autre valeur.
 
  **Description**. La Description d’une propriété de domaine s’affiche dans deux emplacements :
 

@@ -1,9 +1,6 @@
 ---
 title: MESSAGETYPE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MESSAGETYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66c254b56d5f7755a3578814ad5f3de7898f2f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1e99b480c5aeaf0137ecd2f50c8b8436fc137d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944853"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Spécifie le type de message et le motif.  
@@ -28,7 +25,7 @@ Spécifie le type de message et le motif.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_MESSAGETYPE {   
+enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
    MT_TYPE_MASK         = 0x000000FF,  
@@ -40,7 +37,7 @@ typedef DWORD MESSAGETYPE;
 ```  
   
 ```csharp  
-public enum enum_MESSAGETYPE {   
+public enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
    MT_TYPE_MASK         = 0x000000FF,  
@@ -74,12 +71,12 @@ public enum enum_MESSAGETYPE {
   
  Une des valeurs de raison peut être combinée avec une des valeurs de destination de sortie à l’aide d’une opération de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

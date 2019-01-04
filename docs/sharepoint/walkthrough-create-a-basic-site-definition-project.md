@@ -1,13 +1,8 @@
 ---
 title: 'Procédure pas à pas : Créer un projet de définition de Site de base | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958889"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : Créer un projet de définition de site de base
   Cette procédure pas à pas vous montre comment créer une définition de site de base qui contient un composant visual Web part avec certains contrôles dessus. Par souci de clarté, le composant visual Web part que vous créez a uniquement quelques contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent des fonctionnalités plus.  
@@ -187,6 +182,5 @@ ms.locfileid: "49844407"
      Le texte s’affiche dans l’étiquette sur le côté droit du bouton.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Guide pratique pour Créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

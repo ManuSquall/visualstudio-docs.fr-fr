@@ -1,9 +1,6 @@
 ---
 title: Enregistrement d’un Document Standard | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], saving standard documents
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 251a9a7632a9d9615302cd3c5c1bf2a406529caf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7f9b650c0d355d83137e302fc716f343d47b57d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868889"
 ---
 # <a name="saving-a-standard-document"></a>Enregistrement d’un document standard
 L’environnement gère l’enregistrer, enregistrer sous et enregistrer toutes les commandes. Lorsqu’un utilisateur sélectionne **enregistrer**, **enregistrer en tant que**, ou **Enregistrer tout** à partir de la **fichier** menu ou ferme la solution, ce qui entraîne un  **Enregistrer tous les**, le processus suivant se produit.  

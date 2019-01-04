@@ -1,9 +1,6 @@
 ---
 title: Images et icônes pour Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880700"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Utilisation d’image dans Visual Studio  
@@ -26,7 +23,7 @@ ms.locfileid: "49949395"
   
 -   **Icônes**. Petites images qui apparaissent dans les commandes, les hiérarchies, les modèles et ainsi de suite. La taille d’icône par défaut utilisée dans Visual Studio est un fichier PNG 16 x 16. Icônes générés automatiquement par le service d’images génèrent au format XAML pour la prise en charge HDPI.  
   
-     **Remarque :** tandis que les images sont utilisées dans le système de menus, vous ne devez pas créer une icône pour chaque commande. Consultez [Menus et commandes de Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) pour voir si votre commande doit obtenir une icône.  
+     **REMARQUE :** Tandis que les images sont utilisées dans le système de menus, vous ne devez pas créer une icône pour chaque commande. Consultez [Menus et commandes de Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) pour voir si votre commande doit obtenir une icône.  
   
 -   **Miniatures.** Images utilisées dans la zone d’aperçu d’une boîte de dialogue, telles que la boîte de dialogue Nouveau projet.  
   

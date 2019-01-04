@@ -1,17 +1,12 @@
 ---
 title: 'Procédure pas à pas : Créer une colonne de Site, le Type de contenu et la liste pour SharePoint | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852529"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900122"
     </Field>  
     ```  
   
-4.  À l’aide de la même procédure, ajoutez deux colonnes de site supplémentaires au projet : **ID de Patient** (Type = « Integer ») et **nom médecin** (Type = « Text »). La valeur est la valeur de leur groupe **les colonnes de Site stage**.  
+4.  À l’aide de la même procédure, ajoutez deux colonnes de site supplémentaires au projet : **Identification de patient** (Type = « Integer ») et **nom médecin** (Type = « Text »). La valeur est la valeur de leur groupe **les colonnes de Site stage**.  
   
 ## <a name="create-a-custom-content-type"></a>Créer un type de contenu personnalisé
  Ensuite, créez un type de contenu, en fonction du type de contenu de Contacts, qui inclut les colonnes de site que vous avez créé dans la procédure précédente. À partir d’un type de contenu sur un type de contenu existant, vous pouvez gagner du temps, car le type de contenu de base fournit plusieurs colonnes de site à utiliser dans le nouveau type de contenu.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900122"
   
      Cela vous donne accès à d’autres colonnes de site pouvant s’avérer utiles dans le type de contenu de Contact, en plus des colonnes de site que vous avez défini précédemment.  
   
-6.  Après le Type de contenu concepteur s’affiche, dans le **colonnes** onglet, ajoutez les trois colonnes que vous avez défini précédemment de site : **nom du Patient**, **ID de Patient**et **Nom médecin**. Pour ajouter ces colonnes, choisissez la première zone de liste dans la liste de colonnes de site sous **nom d’affichage**, puis choisissez chaque colonne de site dans la liste un à la fois.  
+6.  Après le Type de contenu concepteur s’affiche, dans le **colonnes** onglet, ajoutez les trois colonnes que vous avez défini précédemment de site : **Nom du patient**, **ID Patient**, et **nom médecin**. Pour ajouter ces colonnes, choisissez la première zone de liste dans la liste de colonnes de site sous **nom d’affichage**, puis choisissez chaque colonne de site dans la liste un à la fois.  
   
     > [!TIP]  
     >  Pour choisir les colonnes de site plus rapidement, filtrer la liste en tapant les premières lettres du nom de la colonne.  
@@ -229,7 +224,6 @@ ms.locfileid: "49900122"
 ## <a name="see-also"></a>Voir aussi
  [Créer des colonnes de site, les types de contenu et listes pour SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Comment : créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Guide pratique pour Créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Types de contenu](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Colonnes](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

@@ -1,9 +1,6 @@
 ---
-title: IDebugCustomAttributeQuery2 | Documents Microsoft
-ms.custom: ''
+title: IDebugCustomAttributeQuery2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttributeQuery2
@@ -16,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7efc14b3d2bad9111e12328c29960ef991e8a4f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5c71c8a8820a76eb0f3784aaf899f05f48a76e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836372"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
-Détermine l’existence d’un attribut personnalisé de ce champ et, si elle existe, retourne les informations d’attribut.  
+Détermine l’existence d’un attribut personnalisé pour ce champ et, si elle existe, retourne les informations d’attribut.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Un fournisseur de symbole implémente cette interface sur le même objet qui implémente [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour prendre en charge les attributs personnalisés.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Un fournisseur de symboles implémente cette interface sur le même objet qui implémente [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour prendre en charge les attributs personnalisés.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Utilisez [QueryInterface](/cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -46,7 +43,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Détermine si un attribut personnalisé existe par nom.|  
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Obtient les informations d’attribut pour l’attribut personnalisé.|  
   
- Outre la **IDebugCustomAttributeQuery** méthodes, `IDebugCustomAttributeQuery2` implémente la méthode suivante :  
+ Outre le **IDebugCustomAttributeQuery** méthodes, `IDebugCustomAttributeQuery2` implémente la méthode suivante :  
   
 |Méthode|Description|  
 |------------|-----------------|  
@@ -58,9 +55,9 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

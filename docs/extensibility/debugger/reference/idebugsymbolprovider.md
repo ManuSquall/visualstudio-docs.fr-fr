@@ -1,9 +1,6 @@
 ---
-title: IDebugSymbolProvider | Documents Microsoft
-ms.custom: ''
+title: IDebugSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de77e30f0e9f52af10eef1757048a078d6d4a583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 419712760d6920874fa89e0da80cc1529f767f1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840367"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Cette interface représente un fournisseur de symboles qui fournit des types, les retourner en tant que champs et des symboles.  
@@ -31,11 +28,11 @@ Cette interface représente un fournisseur de symboles qui fournit des types, le
 IDebugSymbolProvider : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Un fournisseur de symbole doit implémenter cette interface pour fournir les symboles et les informations de type pour un évaluateur d’expression.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Un fournisseur de symboles doive implémenter cette interface pour fournir les symboles et informations de type pour un évaluateur d’expression.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Cette interface est obtenue à l’aide de COM `CoCreateInstance` (fonction) (pour les fournisseurs de symbole non managé) ou en chargeant les assembly de code et l’instanciation du fournisseur de symboles selon les informations de cet assembly. Le moteur de débogage instancie le fournisseur de symbole à travailler en coordination avec l’évaluateur d’expression. Consultez l’exemple pour une approche de l’instanciation de cette interface.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Cette interface est obtenue à l’aide de COM `CoCreateInstance` (fonction) (pour les fournisseurs de symbole non managé) ou en chargeant approprié gérés assembly de code et l’instanciation du fournisseur de symboles selon les informations figurant dans cet assembly. Le moteur de débogage instancie le fournisseur de symboles fonctionne en coordination avec l’évaluateur d’expression. Consultez l’exemple pour une approche à instancier cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugSymbolProvider`.  
@@ -49,23 +46,23 @@ IDebugSymbolProvider : IUnknown
 |[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Mappe une position de document dans un tableau d’adresses de débogage.|  
 |[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Mappe un contexte de document dans un tableau d’adresses de débogage.|  
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Mappe une adresse de débogage dans un contexte de document.|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtient la langue utilisée pour compiler le code à l’adresse de débogage.|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtient le langage utilisé pour compiler le code à l’adresse de débogage.|  
 |`GetGlobalContainer`|Obsolète. Ne pas utiliser.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtient le champ qui représente un nom qualifié complet de la méthode.|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtient le champ qui représente un nom de méthode qualifié complet.|  
 |[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtient le type de champ de classe représentant un nom de classe qualifié complet.|  
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crée un énumérateur pour les espaces de noms associé à l’adresse de débogage.|  
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Mappe un nom de symbole pour un type de symbole.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtient l’adresse de débogage qui suit une adresse donnée debug dans une méthode.|  
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crée un énumérateur pour les espaces de noms associés à l’adresse de débogage.|  
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Mappe un nom de symbole à un type de symbole.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtient l’adresse de débogage qui suit une adresse de débogage donné dans une méthode.|  
   
 ## <a name="remarks"></a>Notes  
- Cette interface mappe les positions de document dans les adresses de débogage et vice versa.  
+ Cette interface mappe les positions du document en adresses de débogage et vice versa.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Exemple  
  Cet exemple montre comment instancier le fournisseur de symboles, étant donné son GUID (un moteur de débogage doit connaître cette valeur).  

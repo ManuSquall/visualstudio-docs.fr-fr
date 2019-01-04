@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints | Documents Microsoft
-ms.custom: ''
+title: IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6015d9251d5e9cf26220d069a26a742cde89ad3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd7f82a50e8a0d4b17ec63204248ccb88544ba6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868837"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Crée un énumérateur pour tous les points d’arrêt déclenché à l’emplacement du code en cours.  
+Crée un énumérateur pour tous les points d’arrêt qui a déclenché à l’emplacement de code actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +44,7 @@ int EnumBreakpoints(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Pas tous les points d’arrêt à un emplacement particulier peuvent être activé à un moment donné (par exemple, un point d’arrêt avec une condition ne déclenche pas jusqu'à ce que cette condition est remplie).  
+ Pas tous les points d’arrêt à un emplacement particulier peuvent s’exécuter à un moment donné (par exemple, un point d’arrêt avec une condition ne se déclenchera pas tant que cette condition est remplie).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

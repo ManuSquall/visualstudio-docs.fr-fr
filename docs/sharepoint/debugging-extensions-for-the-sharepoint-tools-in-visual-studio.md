@@ -1,9 +1,6 @@
 ---
 title: Débogage d’Extensions pour les outils SharePoint dans Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950814"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déboguer des extensions pour les outils SharePoint dans Visual Studio
   Vous pouvez déboguer des extensions d’outils SharePoint dans l’instance expérimentale ou l’instance normale de Visual Studio. Si vous avez besoin dépanner le comportement d’une extension, vous pouvez également modifier les valeurs de Registre pour afficher les informations d’erreur supplémentaires et de configurer la façon dont Visual Studio exécute les commandes SharePoint.
@@ -40,7 +37,7 @@ ms.locfileid: "36326093"
 
 -   [Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [Procédure pas à pas : Appeler le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Déboguer des extensions dans l’instance normale de Visual Studio
  Si vous souhaitez déboguer votre projet d’extension dans l’instance normale de Visual Studio, vous devez tout d’abord installer l’extension dans l’instance normale. Ensuite, attacher le débogueur à un deuxième processus Visual Studio. Une fois que vous avez terminé, vous pouvez supprimer l’extension afin qu’il ne charge plus sur l’ordinateur de développement.

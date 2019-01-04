@@ -1,9 +1,6 @@
 ---
-title: 'Comment : insérer du texte dans les documents Word par programmation'
-ms.custom: ''
+title: 'Procédure : Insérer du texte dans les documents Word par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828915"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Comment : insérer du texte dans les documents Word par programmation
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procédure : Insérer du texte dans les documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :  
   
 -   insérer du texte dans une plage ;  
@@ -129,8 +126,6 @@ ms.locfileid: "49881662"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : mettre en forme dans les documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Comment : étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
-  
-  
+ [Guide pratique pour Formater le texte par programmation dans des documents](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Guide pratique pour Définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Guide pratique pour Étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  

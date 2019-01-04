@@ -1,9 +1,6 @@
 ---
-title: 'Comment : afficher par programme une chaîne dans une cellule de feuille de calcul'
-ms.custom: ''
+title: 'Procédure : Afficher par programme une chaîne dans une cellule de feuille de calcul'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 336ab67cd5c63a912d72b0fce3fa73c9fca5184f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849766"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Comment : afficher par programme une chaîne dans une cellule de feuille de calcul
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Procédure : Afficher par programme une chaîne dans une cellule de feuille de calcul
   Cet exemple montre comment afficher du texte dans une cellule par programme. Pour afficher le texte dans la cellule, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -54,5 +51,3 @@ ms.locfileid: "35256817"
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
  [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

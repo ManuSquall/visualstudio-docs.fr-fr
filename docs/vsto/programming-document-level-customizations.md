@@ -1,9 +1,6 @@
 ---
 title: Programmer des personnalisations au niveau du document
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Sheet3
@@ -30,12 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9c7fa658c24caa65b3c955002ffeeaff6573c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925444"
 ---
 # <a name="program-document-level-customizations"></a>Programmer des personnalisations au niveau du document
   Quand vous étendez Microsoft Office Word ou Microsoft Office Excel à l’aide d’une personnalisation au niveau du document, vous pouvez effectuer les tâches suivantes :  
@@ -149,7 +146,7 @@ Globals.ThisDocument.Save();
   
 - Ajouter des groupes personnalisés à un onglet prédéfini du ruban.  
   
-   Pour plus d’informations, consultez [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md).  
+   Pour plus d'informations, voir [Procédure : Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md).  
   
   Pour plus d’informations sur la personnalisation de l’interface utilisateur des applications Microsoft Office, consultez [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
   
@@ -175,5 +172,3 @@ Globals.ThisDocument.Save();
  [Combiner VBA et personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
  [Gérer des documents sur un serveur à l’aide de la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

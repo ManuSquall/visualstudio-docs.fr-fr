@@ -1,9 +1,6 @@
 ---
 title: Gestion du détenteur de verrou de document | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986438"
 ---
 # <a name="document-lock-holder-management"></a>Gestion du détenteur de verrou document
 La table de document en cours d’exécution (RDT) gère un nombre de documents ouverts et tous les verrous de modification que sont-ils. Vous pouvez placer un verrou de modification sur un document dans le RDT lorsqu’il est par programme modifié en arrière-plan sans que l’utilisateur de voir un document ouvert dans une fenêtre de document. Cette fonctionnalité est souvent utilisée par les concepteurs qui modifient plusieurs fichiers via une interface utilisateur graphique.

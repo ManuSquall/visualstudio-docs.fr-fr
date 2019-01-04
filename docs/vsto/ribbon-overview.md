@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble du ruban
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989200"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
   Le ruban est une façon d’organiser les commandes associées afin qu’ils soient plus faciles à trouver. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale sur le bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.  
@@ -84,7 +81,7 @@ ms.locfileid: "49846357"
   
  En outre, les valeurs de propriété par défaut inchangées n'apparaissent pas dans le fichier XML du ruban.  
   
- Pour plus d’informations sur la façon d’exporter le ruban vers XML, consultez [Comment : exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+ Pour plus d’informations sur la façon d’exporter le ruban vers XML, consultez [Comment : Exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="update-the-code"></a>Mettre à jour le code  
  Un nouveau fichier de code de ruban est ajouté à **l’Explorateur de solutions**. Ce fichier contient la classe Ribbon XML. Vous devez créer des méthodes de rappel dans la région `Ribbon Callbacks` de cette classe pour gérer les actions de l'utilisateur, telles qu'un clic sur un bouton. Déplacez votre code des gestionnaires d'événements vers les méthodes de rappel et modifiez le code pour qu'il fonctionne avec le modèle de programmation de l'extensibilité du ruban (RibbonX). Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).  
@@ -120,20 +117,18 @@ ms.locfileid: "49846357"
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)|Vous montre comment personnaliser le ruban d’une application Microsoft Office, ajoutez un **ruban (Concepteur visuel)** ou **ruban (XML)** élément à un projet Office.|  
+|[Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)|Vous montre comment personnaliser le ruban d’une application Microsoft Office, ajoutez un **ruban (Concepteur visuel)** ou **ruban (XML)** élément à un projet Office.|  
 |[Concepteur de ruban](../vsto/ribbon-designer.md)|Décrit comment vous pouvez utiliser le Concepteur de ruban pour ajouter des onglets, groupes et contrôles personnalisés au ruban d’une application Microsoft Office.|  
 |[Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Montre comment créer un onglet de ruban personnalisé à l'aide du Concepteur de ruban. Vous pouvez utiliser le Concepteur de ruban pour ajouter et positionner des contrôles sur l'onglet personnalisé.|  
 |[Présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)|Fournit une vue d’ensemble du modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban lors de l’exécution.|  
-|[Procédure pas à pas : Mise à jour les contrôles sur un ruban lors de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles d’un ruban après le chargement du ruban dans l’application Office.|  
+|[Procédure pas à pas : Mettre à jour les contrôles sur un ruban lors de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles d’un ruban après le chargement du ruban dans l’application Office.|  
 |[Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Fournit des conseils pour la personnalisation du ruban dans Microsoft Office Outlook.|  
 |[Personnaliser un ruban pour InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Fournit des conseils pour la personnalisation du ruban dans Microsoft Office InfoPath.|  
 |[Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)|Montre comment afficher, masquer et modifier le ruban et permettre aux utilisateurs d’exécuter le code à partir de contrôles dans un volet Office personnalisé, un volet actions ou une zone de formulaire Outlook.|  
-|[Comment : modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Montre comment modifier l’ordre des onglets sur un ruban.|  
-|[Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|Montre comment ajouter des groupes et des contrôles à un onglet intégré.|  
-|[Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Montre comment ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur le **fichier**.|  
-|[Comment : ajouter un lanceur de boîte de dialogue à un groupe de ruban](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Indique à ajouter un lanceur de boîte de dialogue à n’importe quel groupe sur un ruban.|  
-|[Comment : exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Montre comment personnaliser le ruban de façon avancée en exportant le ruban à partir du concepteur vers ruban XML.|  
+|[Guide pratique pour Modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Montre comment modifier l’ordre des onglets sur un ruban.|  
+|[Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|Montre comment ajouter des groupes et des contrôles à un onglet intégré.|  
+|[Guide pratique pour Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Montre comment ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur le **fichier**.|  
+|[Guide pratique pour Ajouter un lanceur de boîte de dialogue à un groupe de ruban](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Indique à ajouter un lanceur de boîte de dialogue à n’importe quel groupe sur un ruban.|  
+|[Guide pratique pour Exporter un ruban à partir du Concepteur de ruban vers ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Montre comment personnaliser le ruban de façon avancée en exportant le ruban à partir du concepteur vers ruban XML.|  
 |[Ribbon XML](../vsto/ribbon-xml.md)|Explique comment vous pouvez personnaliser un ruban à l’aide de XML du ruban.|  
 |[Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Montre comment créer un onglet de ruban personnalisé à l’aide de la **ruban (XML)** élément.|  
-  
-  

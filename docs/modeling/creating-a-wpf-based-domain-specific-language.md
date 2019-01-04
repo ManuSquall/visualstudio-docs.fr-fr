@@ -8,19 +8,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e2a4e569102623f711bd08e896a39f020de14d04
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9eaae58d9b805888215ccd9e69753061be7695fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877599"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Créer un langage spécifique à un domaine basé sur WPF
 
 Vous pouvez créer un langage spécifique à un domaine qui dispose d’un Concepteur WPF au lieu d’un concepteur graphique.
 
-Vous trouverez les informations et des exemples sur cette fonctionnalité sur le Visual Studio Visualization et le site Web des outils de modélisation à [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+Vous trouverez les informations et des exemples sur cette fonctionnalité sur le site Web de modélisation des outils à et de Visual Studio Visualization [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ouvrir des éditeurs Standard | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ouvrir des éditeurs Standard | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e740cdbb04a9b20ddb5a9d0465434333dd29264
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820343"
 ---
-# <a name="how-to-open-standard-editors"></a>Comment : ouvrir des éditeurs standard
+# <a name="how-to-open-standard-editors"></a>Procédure : Éditeurs standards Open
 Lorsque vous ouvrez un éditeur standard, vous laisser l’IDE détermine un éditeur standard pour un type de fichier désigné, au lieu de spécifier un éditeur spécifique au projet pour le fichier.  
   
  Effectuez la procédure suivante pour implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> (méthode). Un fichier projet s’ouvre dans un éditeur standard.  
@@ -55,6 +52,6 @@ Lorsque vous ouvrez un éditeur standard, vous laisser l’IDE détermine un éd
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)   
- [Comment : ouvrir des éditeurs spécifiques du projet](../extensibility/how-to-open-project-specific-editors.md)   
- [Comment : ouvrir des éditeurs pour les documents ouverts](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Guide pratique pour Ouvrez éditeurs spécifiques du projet](../extensibility/how-to-open-project-specific-editors.md)   
+ [Guide pratique pour Ouvrir des éditeurs pour les documents ouverts](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Afficher les fichiers à l’aide de la commande Ouvrir un fichier](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

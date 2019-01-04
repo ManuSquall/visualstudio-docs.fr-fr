@@ -1,9 +1,6 @@
 ---
 title: Assistant publication (développement Office dans Visual Studio)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965919"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant publication (développement Office dans Visual Studio)
   Utilisez le **Assistant Publication** pour copier les fichiers de solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation.  
@@ -53,7 +50,7 @@ ms.locfileid: "50672747"
 >  Il existe des considérations plus si l’ordinateur cible exécute Windows Vista. Vous devez être administrateur sur l’ordinateur Windows Vista d’utiliser l’option de publication local. En outre, l’emplacement par défaut est toujours le *publier\\*  répertoire, que vous ayez installé IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qu’est le chemin d’installation par défaut sur les ordinateurs des utilisateurs finaux ?  
- Le chemin d’installation est facultative. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Le chemin d’installation est facultative. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Comment : Modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  Le chemin d’installation est le répertoire à partir duquel l’utilisateur final installe la personnalisation. Il s’agit également du chemin que la solution utilise pour vérifier les mises à jour. Le **Assistant Publication** ne déploie pas la solution à cet emplacement, à moins que le chemin d’accès est identique à celui que vous avez entré dans le **spécifier l’emplacement de publication de cette application** zone sur la page précédente.  
   
@@ -72,5 +69,3 @@ ms.locfileid: "50672747"
  [Déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Page Publier, Concepteur de projets &#40;développement Office dans Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)  
-  
-  

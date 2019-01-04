@@ -1,8 +1,7 @@
 ---
-title: "CA2000 : Supprimez les objets avant d'être hors de portée"
+title: 'CA2000 : Supprimez les objets avant de portée'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 041cade3d1c65a40826920b94adf012aa9a4b021
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0d6aa3574e71cf64e01d083171e8bb477da02265
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951129"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000 : Supprimez les objets avant d'être hors de portée
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000 : Supprimez les objets avant de portée
 
 |||
 |-|-|
@@ -70,7 +69,7 @@ ms.locfileid: "45549857"
 ## <a name="related-rules"></a>Règles associées
  [CA2213 : Les champs pouvant être supprimés doivent l’être](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202 : Ne pas supprimer des objets plusieurs fois](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202 : Ne pas supprimer des objets plusieurs fois](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Exemple
 
