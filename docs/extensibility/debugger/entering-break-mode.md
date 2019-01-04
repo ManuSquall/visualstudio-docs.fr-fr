@@ -1,9 +1,6 @@
 ---
 title: Passage en Mode arrêt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - break mode
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f9b41a111ecc6118c9bae0ff518d8421a9f2320
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 8f83059bb5608f99b9a984159771b5f37a1163ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886174"
 ---
 # <a name="enter-break-mode"></a>Passez en mode arrêt
 Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontrée après le pas à pas détaillé dans une fonction, en cours d’exécution à la ligne de code source qui comporte le curseur ou en cours d’exécution à un point d’arrêt.  

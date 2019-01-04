@@ -1,15 +1,10 @@
 ---
-title: 'Comment : ajouter et supprimer des dossiers mappés | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter et supprimer des dossiers mappés | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823919"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Comment : ajouter et supprimer des dossiers mappés
   Certains dossiers fréquemment employés dans SharePoint, tels que les Images et les dispositions, sont profondément imbriqués dans la hiérarchie des fichiers. Vous pouvez mapper ces dossiers dans un projet SharePoint pour y accéder plus facilement. Dossiers mappés sont des dossiers du projet SharePoint qui correspondent à l’emplacement physique des fichiers dans l’installation de SharePoint Server.  
@@ -40,7 +35,7 @@ ms.locfileid: "36757646"
   
 1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue zone, développez le le **Visual Basic** ou **Visual C#** nœud, développez le **Office/SharePoint** nœud, puis Choisissez le **Solutions SharePoint** nœud.  
+2.  Dans le **nouveau projet** boîte de dialogue, développez soit le **Visual Basic** ou **Visual C#**  nœud, développez le **Office/SharePoint** nœud, puis choisissez le **Solutions SharePoint** nœud.  
   
 3.  Dans la liste des modèles de projet, choisissez le **2013 Visual WebPart SharePoint** modèle.  
   
@@ -85,4 +80,3 @@ ms.locfileid: "36757646"
   
 ## <a name="see-also"></a>Voir aussi
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

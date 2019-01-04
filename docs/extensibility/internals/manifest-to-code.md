@@ -1,6 +1,5 @@
 ---
-title: Manifeste au Code | Documents Microsoft
-ms.custom: ''
+title: Manifeste au Code | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
@@ -9,54 +8,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895439"
 ---
-# <a name="manifest-to-code"></a>Manifeste pour le Code
-Le manifeste de l’outil du Code est une application console qui accepte un fichier .imagemanifest pour le Service d’images Visual Studio et génère un wrapper ou les fichiers pour faire référence aux valeurs du manifeste de l’image en C++, c#, VB ou fichiers .vsct des extensions Visual Studio. Cet outil génère des fichiers de wrapper qui peuvent être utilisées pour les images de demandeurs à partir de Visual Studio Image celui-ci directement, ou en passant les valeurs de manifeste via des API si le code ne gère pas un de sa propre interface utilisateur et le rendu.  
+# <a name="manifest-to-code"></a>Manifest to Code
+Le manifeste de l’outil du Code est une application console qui prend un fichier .imagemanifest pour le Service d’images Visual Studio et génère un wrapper ou plusieurs fichiers pour faire référence aux valeurs du manifeste de l’image en C++, C#, VB ou .vsct fichiers pour Visual Studio extensions. Cet outil génère des fichiers de wrapper qui peuvent être utilisées pour les images de demande à partir de Visual Studio Image Service directement, ou pour transmettre les valeurs de manifeste via des API si le code ne gère pas un de sa propre interface utilisateur et le rendu.  
   
 ## <a name="how-to-use-the-tool"></a>Comment utiliser l’outil  
  **Syntaxe**  
   
- ManifestToCode /manifest :\<le fichier manifeste de l’Image >/Language :\<Code langue > \<arguments facultatifs >  
+ ManifestToCode /manifest :\<le fichier manifeste de l’Image > /language :\<Code langue > \<arguments facultatifs >  
   
  **Arguments**  
   
 ||||  
 |-|-|-|  
 |**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
-|/ manifeste|Le chemin d’accès au manifeste d’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
-|/ Language|Le langage dans lequel générer un wrapper de code.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, c#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Pour la langue VSCT option, /monikerClass, /classAccess et/namespace options sont ignorées.|Obligatoire|  
-|/imageIdClass|Le nom de l’imageIdClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés.<br /><br /> Valeur par défaut : \<manifeste chemin d’accès > \MyImageIds.\< Lang Ext >|Facultatif|  
-|/monikerClass|Le nom de la monikerClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés. Cela est ignoré pour la langue VSCT.<br /><br /> Valeur par défaut : \<manifeste chemin d’accès > \MyMonikers.\< Lang Ext >|Facultatif|  
-|/classAccess|Le modificateur d’accès pour l’imageIdClass et le monikerClass. Assurez-vous que le modificateur d’accès est valide pour le langage donné. Cela est ignoré pour l’option de langage VSCT.<br /><br /> Par défaut : Public|Facultatif|  
-|/ namespace|L’espace de noms défini dans le wrapper de code. Cela est ignoré pour l’option de langage VSCT. Soit '. 'ou' ::' sont des séparateurs d’espace de noms valide, quel que soit l’option de langage choisi.<br /><br /> Par défaut : MyImages|Facultatif|  
-|/noLogo|Définition de cet indicateur arrête les informations de copyright et de produit à partir de l’impression.|Facultatif|  
-|/?|Imprimer les informations d’aide.|Facultatif|  
-|/help|Imprimer les informations d’aide.|Facultatif|  
+|/ manifeste|Le chemin d’accès au manifeste de l’image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
+|/Language|Le langage dans lequel générer le wrapper de code.<br /><br /> Valeurs valides : CPP, C++, CS, CSharp, C#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Pour le langage VSCT options option, /monikerClass, /classAccess et/Namespace sont ignorées.|Obligatoire|  
+|/imageIdClass|Le nom de l’imageIdClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés.<br /><br /> Par défaut : \<Chemin du manifeste > \MyImageIds. \<Lang Ext >|Facultatif|  
+|/monikerClass|Le nom de la monikerClass et le fichier associé, créé par l’outil. Pour l’option de langage C++, seuls les fichiers .h sont générés. Ceci est ignoré pour le langage VSCT.<br /><br /> Par défaut : \<Chemin du manifeste > \MyMonikers. \<Lang Ext >|Facultatif|  
+|/classAccess|Le modificateur d’accès pour l’imageIdClass et le monikerClass. Assurez-vous que le modificateur d’accès est valide pour le langage donné. Ceci est ignoré pour l’option de langage VSCT.<br /><br /> Par défaut : Public|Facultatif|  
+|/ namespace|L’espace de noms défini dans le wrapper de code. Ceci est ignoré pour l’option de langage VSCT. Soit '. 'ou' ::' sont des séparateurs d’espace de noms valide, quel que soit l’option de langage choisi.<br /><br /> Par défaut : MyImages|Facultatif|  
+|/noLogo|Définition de cet indicateur, les informations de copyright et de produit à partir de l’impression s’arrête.|Facultatif|  
+|/?|Afficher les informations d’aide.|Facultatif|  
+|/help|Afficher les informations d’aide.|Facultatif|  
   
  **Exemples**  
   
 -   / Language : CSharp de ManifestToCode /manifest:D:\MyManifest.imagemanifest  
   
--   / Namespace de ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ : mon :: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace : mon :: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Notes  
   
--   Nous vous recommandons d’utiliser cet outil avec les manifestes d’images qui ont été générés par le manifeste à partir de l’outil de ressources.  
+-   Nous vous recommandons d’utiliser cet outil avec des manifestes d’images qui ont été générées par le manifeste à partir de l’outil de ressources.  
   
--   L’outil examine uniquement les entrées de symbole pour générer les wrappers de code. Si un manifeste de l’image ne contient aucun symbole, les wrappers de code généré sera vides. S’il existe une image ou un ensemble d’images dans le manifeste de l’image qui n’utilisent pas de symboles, ils seront exclus du wrapper de code.  
+-   L’outil examine uniquement les entrées de symbole pour générer les wrappers de code. Si un manifeste de l’image ne contient aucun symbole, les wrappers de code généré sera vides. S’il existe une image ou un ensemble d’images dans le manifeste de l’image qui n’utilisent pas de symboles, elles sont exclues à partir du wrapper de code.  
   
 ## <a name="sample-output"></a>Résultat de l'exemple  
  **Wrappers c#**  
   
- Une paire d’ID de l’image simple et le moniker d’image des classes pour c# sera similaire au code ci-dessous :  
+ Une paire d’ID de l’image simple et le moniker d’image classes pour c# sera similaire pour le code ci-dessous :  
   
 ```csharp  
 //-----------------------------------------------------------------------------  
@@ -97,9 +96,9 @@ namespace MyImages
 }  
 ```  
   
- **Wrappers de C++**  
+ **Wrappers C++**  
   
- Une paire d’ID de l’image simple et le moniker d’image des classes pour C++ doivent être similaires pour le code ci-dessous :  
+ Une paire d’ID de l’image simple et le moniker d’image classes pour C++ sera similaire pour le code ci-dessous :  
   
 ```cpp  
 //-----------------------------------------------------------------------------  
@@ -158,7 +157,7 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
   
  **Wrappers de Visual Basic**  
   
- Une paire d’ID de l’image simple et le moniker d’image des classes pour Visual Basic sera similaire au code ci-dessous :  
+ Une paire d’ID de l’image simple et le moniker d’image classes pour Visual Basic sera similaire pour le code ci-dessous :  
   
 ```vb  
 ' -----------------------------------------------------------------------------  
@@ -214,7 +213,7 @@ End Namespace
   
  **Wrapper VSCT**  
   
- Un ensemble de l’image ID pour un fichier .vsct sera similaire à ceci :  
+ Un ensemble d’ID d’image pour un fichier .vsct sera similaire à ceci :  
   
 ```xml  
 <?xml version='1.0' encoding='utf-8'?>  

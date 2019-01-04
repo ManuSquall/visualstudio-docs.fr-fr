@@ -1,6 +1,5 @@
 ---
-title: 'Comment : utiliser le contexte de l’interface utilisateur basée sur une règle pour les Extensions Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser le contexte de l’interface utilisateur basée sur une règle pour les Extensions Visual Studio | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824286"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Comment : utiliser le contexte d’interface utilisateur basée sur une règle pour les extensions Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procédure : Utiliser le contexte d’interface utilisateur basée sur une règle pour les extensions Visual Studio
 Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Microsoft.VisualStudio.Shell.UIContext>s sont activés. Toutefois, ces contextes d’interface utilisateur ne sont pas bien plus précis, ce qui ne laisse les auteurs de l’extension aucun choix mais permettant de sélectionner un contexte d’interface utilisateur disponible qui active avant la virgule, ils voulaient réellement le VSPackage à charger. Pour obtenir la liste des contextes d’interface utilisateur bien connus, consultez <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Le chargement de packages peut avoir un impact sur les performances et leur chargement plus tôt que nécessaire n’est pas la meilleure pratique. Visual Studio 2015 introduit le concept de contextes d’interface utilisateur basée sur des règles, un mécanisme qui permet aux auteurs d’extension définir les conditions précises sous lesquelles un contexte d’interface utilisateur est activé et VSPackages associés sont chargés.  
@@ -44,7 +43,7 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
    ```  
   
-    Pour les attributs, ajoutez les valeurs suivantes : (les détails de ces attributs seront expliquées plus loin)  
+    Pour les attributs, ajoutez les valeurs suivantes : (Les détails de ces attributs seront expliquées plus loin)  
   
    ```csharp  
    [ProvideAutoLoad(TestPackage.UIContextGuid)]      

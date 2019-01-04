@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2::PublishProgramNode
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1182158852e978cb78096eec6e60783317f1cc0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5df3bcaadcd81ece4718b0f5a49fca69fcd29382
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988648"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Rend un nœud de programme disponibles pour une utilisation par les moteurs de débogage (DEs) et la session de débogage manager (SDM).  
@@ -28,14 +25,14 @@ Rend un nœud de programme disponibles pour une utilisation par les moteurs de d
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT PublishProgramNode(  
+HRESULT PublishProgramNode(  
    IDebugProgramNode2 *pProgramNode  
 );  
 ```  
   
 ```csharp  
-int PublishProgramNode(  
-   IDebugProgramNode2 pProgramNode  
+int PublishProgramNode(  
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   

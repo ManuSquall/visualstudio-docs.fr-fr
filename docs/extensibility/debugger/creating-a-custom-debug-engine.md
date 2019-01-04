@@ -1,9 +1,6 @@
 ---
 title: Créer une personnalisée moteur de débogage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852701"
 ---
 # <a name="create-a-custom-debug-engine"></a>Créer un moteur de débogage personnalisé
 Un moteur de débogage (dé) est un composant qui permet le débogage d’architectures d’exécution particulières. Il est généralement qu’une seule implémentation DE chaque environnement d’exécution.  
@@ -61,7 +58,7 @@ Un moteur de débogage (dé) est un composant qui permet le débogage d’archit
  [Appeler des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)  
  Décrit l’ordre d’appel des événements qui se produisent dans une session de débogage.  
   
- [Guide pratique pour déboguer un moteur de débogage personnalisé](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Guide pratique pour Déboguer un moteur de débogage personnalisé](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Explique comment déboguer un dé personnalisé.  
   
 ## <a name="see-also"></a>Voir aussi  

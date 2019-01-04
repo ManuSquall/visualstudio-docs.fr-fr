@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Empêcher Outlook d’afficher une zone de formulaire'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aaeafe14f35092be30c982ebb758e40afedb8aa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a7df2aef4348e95a30c0b14b26686764890b6abf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849742"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Procédure : Empêcher Outlook d’afficher une zone de formulaire
   Il peut arriver dans lequel vous ne souhaitez pas que Microsoft Office Outlook pour afficher une zone de formulaire pour un élément particulier. Par exemple, si un élément de contact ne contient pas une adresse professionnelle, vous pouvez empêcher une zone de formulaire qui affiche l’emplacement de l’entreprise dans un mappage d’apparaître.  
@@ -48,5 +45,3 @@ ms.locfileid: "53647079"
  [Guide pratique pour Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Procédure pas à pas : Importer une zone de formulaire conçue dans Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
-  
-  

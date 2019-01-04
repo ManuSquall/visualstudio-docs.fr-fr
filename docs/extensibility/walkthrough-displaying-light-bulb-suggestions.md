@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Displaying Light Bulb Suggestions | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
@@ -11,21 +8,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935006"
 ---
-# <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : Affichage de suggestions ampoule
+# <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : Afficher des suggestions ampoule
 Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.  
   
  Dans les éditeurs Visual c# et Visual Basic, vous pouvez également utiliser .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui s’affiche automatiquement les ampoules. Pour plus d'informations, voir :  
   
-- [Comment : Écrire un c# diagnostic et un correctif de code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Guide pratique pour Écrire un C# diagnostic et de correction du code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [Comment : Écrire un diagnostic de Visual Basic et la correction du code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Guide pratique pour Écrire un diagnostic de Visual Basic et un correctif de code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   Autres langages tels que C++ fournissent également des ampoules pour certaines actions rapides, par exemple, une suggestion pour créer une implémentation de stub de cette fonction.  
   
@@ -37,7 +34,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
   
   ![aperçu d’ampoule](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  Vous pouvez utiliser des ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer l’ouverture des accolades pour une nouvelle ligne ou les déplacer à la fin de la ligne précédente. La procédure suivante montre comment créer une ampoule qui s’affiche sur le mot actuel et suggère deux actions : **convertir en majuscules** et **convertir en minuscules**.  
+  Vous pouvez utiliser des ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer l’ouverture des accolades pour une nouvelle ligne ou les déplacer à la fin de la ligne précédente. La procédure suivante montre comment créer une ampoule qui s’affiche sur le mot actuel et suggère deux actions : **Convertir en majuscules** et **convertir en minuscules**.  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -225,8 +222,8 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 2.  Créez deux classes, la première nommée `UpperCaseSuggestedAction` et la seconde nommée `LowerCaseSuggestedAction`. Ces deux classes implémentent <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      Elles sont identiques, sauf que l’une appelle <xref:System.String.ToUpper%2A> et l’autre appelle <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.  
@@ -246,8 +243,8 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -291,7 +288,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -322,7 +319,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 9. Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> en remplaçant le texte dans l’étendue par son équivalent en majuscules.  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
@@ -366,4 +363,3 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
      ![tester l’ampoule, développé](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.  
-  

@@ -1,9 +1,6 @@
 ---
 title: Extension de l’éditeur et les Services de langage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7194b245ad3803112f5596c82308c384840d7bdf
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5e1d8bac8f682017166c3e625aa0578c90515209
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837328"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Étendre les services de l’éditeur et la langue
 Vous pouvez ajouter des fonctionnalités de service de langage (tels qu’IntelliSense) à votre propre éditeur et étendre la plupart des fonctionnalités de l’éditeur de code Visual Studio.  Pour obtenir une liste complète de ce que vous pouvez étendre, consultez [points d’extension éditeur et le service de langage](../extensibility/language-service-and-editor-extension-points.md).  
@@ -43,15 +40,15 @@ Vous pouvez ajouter des fonctionnalités de service de langage (tels qu’Intell
 |[Migrer un service de langage hérité](../extensibility/internals/migrating-a-legacy-language-service.md)|Explique comment migrer un service de langage VSPackage basé.|  
 |[Procédure pas à pas : Lier un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Montre comment lier un type de contenu à une extension de nom de fichier.|  
 |[Procédure pas à pas : Créer un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)|Montre comment ajouter une icône pour une marge.|  
-|[Procédure pas à pas : Mise en surbrillance texte](../extensibility/walkthrough-highlighting-text.md)|Montre comment utiliser *balises* pour mettre en surbrillance de texte.|  
+|[Procédure pas à pas : Texte en surbrillance](../extensibility/walkthrough-highlighting-text.md)|Montre comment utiliser *balises* pour mettre en surbrillance de texte.|  
 |[Procédure pas à pas : Ajouter le mode plan](../extensibility/walkthrough-outlining.md)|Montre comment ajouter le mode plan pour des types spécifiques d’accolades.|  
-|[Procédure pas à pas : Affichage d’accolades correspondantes](../extensibility/walkthrough-displaying-matching-braces.md)|Montre comment mettre en surbrillance les accolades correspondantes.|  
-|[Procédure pas à pas : Info-bulles Info Express d’affichage](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Montre comment afficher les fenêtres contextuelles info Express qui décrivent les éléments de code tels que les propriétés, méthodes et événements.|  
-|[Procédure pas à pas : Assistance de signature affichage](../extensibility/walkthrough-displaying-signature-help.md)|Montre comment afficher les menus contextuels qui donnent des informations sur le nombre et les types de paramètres dans une signature.|  
-|[Procédure pas à pas : afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)|Montre comment implémenter la saisie semi-automatique des instructions.|  
-|[Procédure pas à pas : Extraits de code implémentation](../extensibility/walkthrough-implementing-code-snippets.md)|Montre comment implémenter l’expansion d’extrait de code.|  
-|[Procédure pas à pas : Affichage de suggestions ampoule](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Montre comment afficher des ampoules pour obtenir des suggestions de code.|  
-|[Procédure pas à pas : Utiliser une commande shell avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Montre comment associer une commande de menu dans un VSPackage à un composant MEF.|  
+|[Procédure pas à pas : Afficher les accolades correspondantes](../extensibility/walkthrough-displaying-matching-braces.md)|Montre comment mettre en surbrillance les accolades correspondantes.|  
+|[Procédure pas à pas : Afficher des info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Montre comment afficher les fenêtres contextuelles info Express qui décrivent les éléments de code tels que les propriétés, méthodes et événements.|  
+|[Procédure pas à pas : Afficher l’aide de la signature](../extensibility/walkthrough-displaying-signature-help.md)|Montre comment afficher les menus contextuels qui donnent des informations sur le nombre et les types de paramètres dans une signature.|  
+|[Procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)|Montre comment implémenter la saisie semi-automatique des instructions.|  
+|[Procédure pas à pas : Implémenter des extraits de code](../extensibility/walkthrough-implementing-code-snippets.md)|Montre comment implémenter l’expansion d’extrait de code.|  
+|[Procédure pas à pas : Afficher des suggestions ampoule](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Montre comment afficher des ampoules pour obtenir des suggestions de code.|  
+|[Procédure pas à pas : Utiliser une invite de commandes avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Montre comment associer une commande de menu dans un VSPackage à un composant MEF.|  
 |[Procédure pas à pas : Utiliser une touche de raccourci avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Montre comment associer un raccourci du menu dans un VSPackage à un composant MEF.|  
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Fournit des informations sur le Managed Extensibility Framework (MEF).|  
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Fournit des informations sur Windows Presentation Foundation (WPF).|  

@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Cache des données dans un document protégé par un mot de passe'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968415"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procédure : Cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données dans le cache de données dans un document ou classeur est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer des modifications aux données mises en cache en remplaçant les deux méthodes dans votre projet.  
@@ -80,5 +77,3 @@ ms.locfileid: "53647289"
  [Données du cache](../vsto/caching-data.md)   
  [Guide pratique pour Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Guide pratique pour Mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Extension de la fenêtre de sortie | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e34a78fc06bc2b7f40129e33b6d2d78ff561c5
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 43b75c0ec7faea55d624c68f64916db96b7d11ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989307"
 ---
 # <a name="extend-the-output-window"></a>Étendre la fenêtre Sortie
-Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. Visual Studio a ces volets intégrés : **Build**, dans les projets qui communiquent sur les builds, les messages et **général**, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communique les messages sur l’IDE. Projets obtenir une référence à la **générer** automatiquement par le biais du volet le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> méthodes d’interface et Visual Studio offre un accès direct à la **général** volet via le <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. Outre les volets intégrés, vous pouvez créer et gérer vos propres volets personnalisés.  
+Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. Visual Studio propose ces volets intégrés : **Build**, dans les projets qui communiquent sur les builds, les messages et **général**, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communique les messages sur l’IDE. Projets obtenir une référence à la **générer** automatiquement par le biais du volet le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> méthodes d’interface et Visual Studio offre un accès direct à la **général** volet via le <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. Outre les volets intégrés, vous pouvez créer et gérer vos propres volets personnalisés.  
   
  Vous pouvez contrôler le **sortie** fenêtre directement via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfaces. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interface, ce qui vous est offerte par le <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> de service, définit des méthodes pour la création, la récupération et la destruction **sortie** volets de fenêtre. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interface définit les méthodes d’affichage de volets, de masquage des volets et de manipuler leur texte. Une autre façon de contrôler la **sortie** fenêtre consiste à utiliser le <xref:EnvDTE.OutputWindow> et <xref:EnvDTE.OutputWindowPane> objets dans le modèle d’objet Automation Visual Studio. Ces objets encapsulent presque toutes les fonctionnalités de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfaces. En outre, le <xref:EnvDTE.OutputWindow> et <xref:EnvDTE.OutputWindowPane> objets ajoutent certaines fonctionnalités de niveau supérieur pour le rendre plus facile à énumérer les **sortie** volets de fenêtre et à récupérer du texte dans les volets.  
   
@@ -98,7 +95,7 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- Si vous ajoutez cette méthode à l’extension donnée dans la section précédente, lorsque vous cliquez sur le **Testouput appeler** commande que vous devez voir le **sortie** fenêtre avec un en-tête indiquant **afficher la sortie à partir de : CreatedPane** et les mots **il s’agit du volet créé** dans le volet de lui-même.  
+ Si vous ajoutez cette méthode à l’extension donnée dans la section précédente, lorsque vous cliquez sur le **Testouput appeler** commande que vous devez voir le **sortie** fenêtre avec un en-tête indiquant **afficher la sortie De : CreatedPane** et les mots **il s’agit du volet créé** dans le volet de lui-même.  
   
 ## <a name="create-an-output-window-with-outputwindow"></a>Créer une fenêtre de sortie avec OutputWindow  
  Cet exemple montre comment créer un **sortie** volet de fenêtre à l’aide de la <xref:EnvDTE.OutputWindow> objet.  
@@ -150,7 +147,7 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- Si vous ajoutez cette méthode à l’extension donnée dans la section précédente, lorsque vous cliquez sur le **Testouput appeler** commande, vous devez voir la fenêtre de sortie avec un en-tête indiquant **afficher la sortie à partir de : nouveau volet** et les mots **ajouté le volet Création** dans le volet de lui-même. Si vous cliquez sur le **Testouput appeler** commande là encore, le volet est supprimé.  
+ Si vous ajoutez cette méthode à l’extension donnée dans la section précédente, lorsque vous cliquez sur le **Testouput appeler** commande, vous devez voir la fenêtre de sortie avec un en-tête indiquant **afficher la sortie à partir de : Nouveau volet** et les mots **ajouté le volet Création** dans le volet de lui-même. Si vous cliquez sur le **Testouput appeler** commande là encore, le volet est supprimé.  
   
 ## <a name="get-the-general-pane-of-the-output-window"></a>Obtenir le volet Général de la fenêtre Sortie  
  Cet exemple montre comment obtenir l’intégrée **général** volet de la **sortie** fenêtre.  

@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846163"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
 
@@ -53,7 +52,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 
 4.  Dans **ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
 
-     - ou -
+     ou
 
      Choisissez **créer un nouveau projet de modélisation** pour ajouter un nouveau projet de modélisation à la solution.
 
@@ -89,9 +88,9 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 
 |**To**|**Procédez comme suit**|
 |-|-|
-|Créer une couche pour un artefact unique|<ol><li>Faites glisser l’élément sur le diagramme de dépendance à partir de ces sources :<br /><br /> <ul><li>**Explorateur de solutions**<br /><br />         Par exemple, vous pouvez faire glisser des fichiers ou des projets.</li><li>Cartes de code<br /><br />         Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) et [les cartes de code de l’utiliser pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Affichage de classes** ou **Explorateur d’objets**</li></ul><br />     Une couche s’affiche sur le diagramme et est liée à l’artefact.</li><li>Renommez la couche pour refléter les responsabilités du code ou des artefacts associés.</li></ol> **Important :** en faisant glisser des fichiers binaires vers le diagramme de dépendances n’ajoute pas automatiquement leurs références au projet de modélisation. Vous devez ajouter manuellement au projet de modélisation les fichiers binaires que vous voulez valider. **Pour ajouter des fichiers binaires au projet de modélisation** <ol><li>Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet de modélisation, puis choisissez **ajouter un élément existant**.</li><li>Dans le **ajouter un élément existant** boîte de dialogue, recherchez les fichiers binaires, sélectionnez-les, puis choisissez **OK**.     Les fichiers binaires s'affichent dans le projet de modélisation.</li><li>Dans **l’Explorateur de solutions**, choisissez un fichier binaire que vous avez ajouté, puis appuyez sur **F4** pour ouvrir le **propriétés** fenêtre.</li><li>Sur chaque fichier binaire, définissez la **Action de génération** propriété **Validate**.</li></ol>|
+|Créer une couche pour un artefact unique|<ol><li>Faites glisser l’élément sur le diagramme de dépendance à partir de ces sources :<br /><br /> <ul><li>**Explorateur de solutions**<br /><br />         Par exemple, vous pouvez faire glisser des fichiers ou des projets.</li><li>Cartes de code<br /><br />         Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) et [les cartes de code de l’utiliser pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Affichage de classes** ou **Explorateur d’objets**</li></ul><br />     Une couche s’affiche sur le diagramme et est liée à l’artefact.</li><li>Renommez la couche pour refléter les responsabilités du code ou des artefacts associés.</li></ol> **Important :**  En faisant glisser des fichiers binaires vers le diagramme de dépendances n’ajoute pas automatiquement leurs références au projet de modélisation. Vous devez ajouter manuellement au projet de modélisation les fichiers binaires que vous voulez valider. **Pour ajouter des fichiers binaires au projet de modélisation** <ol><li>Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet de modélisation, puis choisissez **ajouter un élément existant**.</li><li>Dans le **ajouter un élément existant** boîte de dialogue, recherchez les fichiers binaires, sélectionnez-les, puis choisissez **OK**.     Les fichiers binaires s'affichent dans le projet de modélisation.</li><li>Dans **l’Explorateur de solutions**, choisissez un fichier binaire que vous avez ajouté, puis appuyez sur **F4** pour ouvrir le **propriétés** fenêtre.</li><li>Sur chaque fichier binaire, définissez la **Action de génération** propriété **Validate**.</li></ol>|
 |Créer une couche unique pour tous les artefacts sélectionnés|Faites glisser tous les artefacts vers le diagramme de dépendance en même temps.<br /><br /> Une couche qui est liée à tous les artefacts s’affiche sur le diagramme.|
-|Créer une couche pour chaque artefact sélectionné|Maintenez la **MAJ** enfoncée pendant que vous faites glisser en même temps tous les artefacts vers le diagramme de dépendances. **Remarque :** si vous utilisez le **MAJ** clé pour sélectionner une plage d’éléments, relâchez la touche après avoir sélectionné les artefacts. Appuyez de nouveau sur celle-ci et maintenez-la enfoncée lorsque vous faites glisser les artefacts vers le diagramme. <br /><br /> Une couche s'affiche sur le diagramme pour chaque artefact, auquel elle est liée.|
+|Créer une couche pour chaque artefact sélectionné|Maintenez la **MAJ** enfoncée pendant que vous faites glisser en même temps tous les artefacts vers le diagramme de dépendances. **Remarque :**  Si vous utilisez le **MAJ** clé pour sélectionner une plage d’éléments, relâchez la touche après avoir sélectionné les artefacts. Appuyez de nouveau sur celle-ci et maintenez-la enfoncée lorsque vous faites glisser les artefacts vers le diagramme. <br /><br /> Une couche s'affiche sur le diagramme pour chaque artefact, auquel elle est liée.|
 |Ajouter un artefact à une couche|Faites glisser l'artefact vers la couche.|
 |Créer une couche non liée|Dans le **boîte à outils**, développez le **diagramme de dépendances** section et faites glisser un **couche** vers le diagramme de dépendance.<br /><br /> Pour ajouter plusieurs couches, double-cliquez sur l'outil. Lorsque vous avez terminé, choisissez le **pointeur** outil ou appuyez sur la **ÉCHAP** clé.<br /><br /> ou<br /><br /> Ouvrez le menu contextuel pour le diagramme de dépendances, choisissez **ajouter**, puis choisissez **couche**.|
 |Créer des couches imbriquées|Faites glisser une couche existante sur une autre couche.<br /><br /> ou<br /><br /> Ouvrez le menu contextuel pour une couche, choisissez **ajouter**, puis choisissez **couche**.|
@@ -161,7 +160,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 ## <a name="see-also"></a>Voir aussi
 
 - [Vidéo : Valider les dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
-- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualiser du code](../modeling/visualize-code.md)

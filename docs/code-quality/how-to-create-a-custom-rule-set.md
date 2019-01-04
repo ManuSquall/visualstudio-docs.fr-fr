@@ -2,7 +2,6 @@
 title: Créer un ensemble de règles d’analyse code personnalisé
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929914"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -85,7 +84,7 @@ Vous pouvez également créer un nouveau fichier de jeu de règles à partir de 
 
 - Si la même règle est répertorié deux fois ou plus dans un jeu de règles par le *même* gravité, vous pouvez voir l’avertissement suivant dans le **liste d’erreurs**:
 
-   **CA0063 : Impossible de charger le fichier d’ensemble de règles '\[votre] .ruleset ' ou un de ses règles dépendants les fichiers d’ensembles. Le fichier n’est pas conforme au schéma du jeu de règle.**
+   **CA0063 : Échec du chargement du fichier d’ensemble de règles '\[votre] .ruleset ' ou un de ses règles dépendants les fichiers d’ensembles. Le fichier n’est pas conforme au schéma du jeu de règle.**
 
 - Si l’ensemble de règles inclut un ensemble à l’aide de règles enfant un **Include** balise et les ensembles de règles enfants et parents ont tous deux la même règle de liste, mais avec différents niveaux de gravité, puis le niveau de gravité dans l’ensemble de règles parent est prioritaire. Exemple :
 
@@ -121,5 +120,5 @@ Maintenant que vous avez une règle définie, l’étape suivante consiste à pe
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour configurer l’analyse du code pour un projet de code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Guide pratique pour Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)

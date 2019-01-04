@@ -1,9 +1,6 @@
 ---
 title: Écrire du code dans les solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -36,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c26607d918c4fce457222337a287014943b9a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942971"
 ---
 # <a name="write-code-in-office-solutions"></a>Écrire du code dans les solutions Office
   Certains aspects de l'écriture de code dans les projets Office diffèrent des autres types de projets dans Visual Studio. La plupart de ces différences sont liées à la façon dont les modèles objet Office sont exposés au code managé. Les autres différences portent sur la conception des projets Office.

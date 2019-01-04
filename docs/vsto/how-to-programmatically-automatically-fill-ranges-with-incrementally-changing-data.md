@@ -1,9 +1,6 @@
 ---
-title: 'Comment : remplir par programmation automatiquement des plages avec des données soumises à modification incrémentielle'
-ms.custom: ''
+title: 'Procédure : Remplir par programmation automatiquement des plages avec des données soumises à modification incrémentielle'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4fff7eb59ff2fe5e17ddf500bf546502492634d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a704fd0cdc18802aff487b5d66b72044303ce2dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895575"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Comment : remplir par programmation automatiquement des plages avec des données soumises à modification incrémentielle
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procédure : Remplir par programmation automatiquement des plages avec des données soumises à modification incrémentielle
   Le <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de remplir une plage dans une feuille de calcul avec des valeurs automatiquement. En règle générale, le <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode est utilisée pour stocker de façon incrémentielle valeurs croissantes ou décroissantes dans une plage. Vous pouvez spécifier le comportement en fournissant une constante facultative à partir de la <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> énumération.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,10 +53,8 @@ ms.locfileid: "35256401"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des plages](../vsto/working-with-ranges.md)   
- [Comment : faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Comment : appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Comment : exécuter des calculs Excel par programmation](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Guide pratique pour Faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Guide pratique pour Appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Guide pratique pour Exécuter des calculs Excel par programmation](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

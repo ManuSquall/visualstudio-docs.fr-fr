@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual c#'
-ms.custom: ''
+title: 'Procédure pas à pas : Appeler du code à partir de VBA dans un visuel C# projet'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989028"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual c#
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : Appeler du code à partir de VBA dans un visuel C# projet
   Cette procédure pas à pas montre comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Office Excel à partir du code VBA (Visual Basic pour Applications) du classeur. Cette procédure comporte trois étapes de base : l'ajout d'une méthode dans la classe d'élément hôte `Sheet1` , l'exposition de la méthode au code VBA dans le classeur, puis l'appel de la méthode à partir du code VBA dans le classeur.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -74,7 +71,7 @@ ms.locfileid: "38781687"
 3.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
     > [!NOTE]  
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  Dans le groupe **Code** , cliquez sur **Visual Basic**.  
   
@@ -164,7 +161,7 @@ ms.locfileid: "38781687"
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Ajoutez la méthode suivante à la classe `Sheet1` . Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .  
+3.  Ajoutez la méthode suivante à la classe `Sheet1`. Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   
@@ -245,14 +242,13 @@ ms.locfileid: "38781687"
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour en savoir plus sur l'appel de code dans les solutions Office à partir de VBA, consultez les rubriques suivantes :  
   
--   Appeler du code dans un élément hôte dans une personnalisation Visual Basic à partir de VBA. Ce processus est différent du processus Visual C#. Pour plus d’informations, consultez [procédure pas à pas : appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Appeler du code dans un élément hôte dans une personnalisation Visual Basic à partir de VBA. Ce processus est différent du processus Visual C#. Pour plus d’informations, consultez [Procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   Appeler du code dans un complément VSTO à partir de VBA. Pour plus d’informations, consultez [procédure pas à pas : appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Appeler du code dans un complément VSTO à partir de VBA. Pour plus d’informations, consultez [Procédure pas à pas : Appeler du code dans un complément à VSTO depuis VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Combiner VBA et personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
- [Comment : Code d’exposer à VBA dans un projet Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Comment : Code d’exposer à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Guide pratique pour Exposer du Code à VBA dans un projet Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Guide pratique pour Exposer du Code à VBA dans un Visual C&#35; projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Procédure pas à pas : Appeler du code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
-  

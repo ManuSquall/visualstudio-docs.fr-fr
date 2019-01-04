@@ -1,9 +1,6 @@
 ---
 title: Afficher les données de document et de documents dans les éditeurs personnalisés | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818873"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de document et les vues de document dans les éditeurs personnalisés
 Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme leur nom le suggère, l’objet de données représente les données de texte à afficher. De même, l’objet de vue de document (ou « vue ») représente une ou plusieurs fenêtres d’affichage de l’objet de données de document.  
@@ -42,7 +39,7 @@ Un éditeur personnalisé se compose de deux parties : un objet de données de 
 ## <a name="see-also"></a>Voir aussi  
  [Prendre en charge plusieurs vues de document](../extensibility/supporting-multiple-document-views.md)   
  [Incorporation simplifiée](../extensibility/simplified-embedding.md)   
- [Comment : joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Guide pratique pour Joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
  [Gestion du détenteur de verrou document](../extensibility/document-lock-holder-management.md)   
  [Vues uniques et multiples d’onglet](../extensibility/single-and-multi-tab-views.md)   
  [Enregistrer un document standard](../extensibility/internals/saving-a-standard-document.md)   

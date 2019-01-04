@@ -1,9 +1,6 @@
 ---
 title: Protection des documents dans les solutions au niveau du document
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03724e523c1f49277e0bc2b23465d5296d806695
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b6894aa05adf55945383cb3c2e28b8c5fdebdc16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908851"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protection des documents dans les solutions au niveau du document
   Vous pouvez utiliser les fonctionnalités de protection de Microsoft Office Word et Microsoft Office Excel dans les projets au niveau du document. Ces fonctionnalités bloquent les utilisateurs non autorisés d’apporter des modifications à des parties d’un document protégés.  
@@ -62,5 +59,3 @@ ms.locfileid: "53648533"
  [Protection de mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)   
  [Guide pratique pour Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

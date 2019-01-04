@@ -1,9 +1,6 @@
 ---
-title: 'Comment : déployer, publier et mettre à niveau des Solutions SharePoint sur un serveur distant | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déployer, publier et mettre à niveau des Solutions SharePoint sur un serveur distant | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835670"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Comment : déployer, publier et mettre à niveau des solutions SharePoint sur un serveur distant
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procédure : Déployer, publier et mettre à niveau des solutions SharePoint sur un serveur distant
   En plus de déployer des solutions SharePoint sur le système local, vous pouvez publier des solutions SharePoint sandbox pour les sites distants ou des sites SharePoint locaux. Les copies de processus de publication à distance le *.wsp* fichier sur le serveur SharePoint, installe la solution, puis vous permet d’activer la solution. Vous pouvez également mettre à niveau une installation distante de la solution SharePoint une fois que les modifications sont apportées à ce dernier.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Pour publier une solution bac à sable SharePoint sur un serveur SharePoint distant  
@@ -78,8 +75,7 @@ ms.locfileid: "37118925"
      L’ancienne version de la solution est désactivée, la nouvelle version de la solution est mis à niveau avec les données conservées à partir de l’ancienne solution et la nouvelle solution est activée dans SharePoint.  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : déployer et publier une solution SharePoint sur un site SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [Guide pratique pour Déployer et publier une solution SharePoint sur un site SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Créer des packages de solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Guide pratique pour Personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Guide pratique pour Ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

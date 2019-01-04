@@ -1,8 +1,7 @@
 ---
-title: 'Comment : spécifier des informations de Code supplémentaire à l’aide de _Analysis_assume'
+title: 'Procédure : Spécifier des informations de code supplémentaire en utilisant _Analysis_assume'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Analysis_assume
@@ -14,24 +13,24 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 17e25ace1da6cad9fcdc129b6c6f517c39c9c103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845076"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Comment : spécifier des informations de Code supplémentaire à l’aide de _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procédure : Spécifier des informations de code supplémentaire en utilisant _Analysis_assume
 Vous pouvez fournir des indications à l’outil d’analyse de code pour le code C/C++ qui aideront le processus d’analyse et réduire les avertissements. Pour fournir des informations supplémentaires, utilisez la fonction suivante :
 
  `_Analysis_assume(`  `expr`  `)`
 
- `expr` -toute expression supposée être évaluée à true.
+ `expr` -toute expression qui est supposée être évaluée à true.
 
- L’outil d’analyse de code suppose que la condition représentée par l’expression a la valeur true au point où la fonction s’affiche et le reste jusqu'à ce que l’expression est modifiée, par exemple, par assignation à une variable.
+ L’outil d’analyse de code suppose que la condition représentée par l’expression est remplie au point où la fonction s’affiche et le reste jusqu'à ce que l’expression est modifiée, par exemple, par assignation à une variable.
 
 > [!NOTE]
->  `_Analysis_assume` ne pas avoir un impact sur l’optimisation du code. À l’extérieur de l’outil d’analyse de code, `_Analysis_assume` est défini comme une absence d’opération.
+>  `_Analysis_assume` ne pas avoir un impact sur l’optimisation du code. En dehors de l’outil d’analyse de code, `_Analysis_assume` est défini comme une absence d’opération.
 
 ## <a name="example"></a>Exemple
  Le code suivant utilise `_Analysis_assume` pour corriger l’avertissement d’analyse du code [C6388](../code-quality/c6388.md):

@@ -10,35 +10,34 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7fd63546f7d85ddbcc7661ac600a56bd340e6ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991202"
 ---
-# <a name="write-code-to-customize-a-domain-specific-language"></a>Écrire du Code pour personnaliser un langage spécifique à un domaine
+# <a name="write-code-to-customize-a-domain-specific-language"></a>Écrire du code pour personnaliser un langage spécifique à un domaine
 
 Cette section vous montre comment utiliser un code personnalisé pour accéder, modifier ou créer un modèle dans un langage spécifique à un domaine.
 
-Il existe plusieurs contextes dans lesquels vous pouvez écrire du code qui fonctionne avec une DSL :
+Il existe plusieurs contextes dans lesquels vous pouvez écrire du code qui fonctionne avec une solution DSL :
 
--   **Commandes personnalisées.** Vous pouvez créer une commande que les utilisateurs peuvent appeler en cliquant sur le diagramme, et qui peut modifier le modèle. Pour plus d’informations, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+-   **Commandes personnalisées.** Vous pouvez créer une commande que les utilisateurs peuvent appeler en cliquant sur le diagramme, et qui peut modifier le modèle. Pour plus d'informations, voir [Procédure : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 -   **Validation.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
--   **Substitution du comportement par défaut.** Vous pouvez modifier de nombreux aspects du code qui est généré à partir de DslDefinition.dsl. Pour plus d’informations, consultez [substituer et étendre les Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).
+-   **Substituer le comportement par défaut.** Vous pouvez modifier de nombreux aspects du code qui est généré à partir de DslDefinition.dsl. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).
 
--   **Transformation de texte.** Vous pouvez écrire des modèles de texte qui contiennent du code qui accède à un modèle et génère un fichier texte, par exemple, pour générer le code de programme. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+-   **Transformation de texte.** Vous pouvez écrire des modèles de texte qui contiennent du code qui accède à un modèle et génère un fichier texte, par exemple générer le code de programme. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
 
--   **Autres extensions de Visual Studio.** Vous pouvez écrire des extensions VSIX distinctes qui lisent et modifier des modèles. Pour plus d’informations, consultez [Comment : ouvrir un modèle à partir du fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+-   **Autres extensions Visual Studio.** Vous pouvez écrire des extensions VSIX distinctes que vous lire et modifier des modèles. Pour plus d'informations, voir [Procédure : Ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
-Instances des classes que vous définissez dans DslDefinition.dsl sont conservés dans une structure de données appelée la *magasin en mémoire* (IMS) ou *magasin*. Les classes que vous définissez dans une DSL toujours prennent un magasin en tant qu’argument au constructeur. Par exemple, si votre DSL définit une classe appelée exemple :
+Instances des classes que vous définissez dans DslDefinition.dsl sont conservés dans une structure de données appelée la *In-Memory Store* (IMS) ou *Store*. Les classes que vous définissez dans une solution DSL toujours prennent un Store en tant qu’argument au constructeur. Par exemple, si votre DSL définit une classe appelée exemple :
 
 `Example element = new Example (theStore);`
 
-conservation des objets dans le magasin (au lieu d’objets simplement comme ordinaires) offre plusieurs avantages.
+conservation des objets dans le Store (au lieu de simplement comme ordinaires objets) offre plusieurs avantages.
 
 -   **Transactions**. Vous pouvez regrouper une série de modifications connexes dans une transaction :
 
@@ -52,13 +51,13 @@ conservation des objets dans le magasin (au lieu d’objets simplement comme ord
 
      `}`
 
-     Si une exception se produit pendant les modifications, afin que la dernière Commit() n’est pas effectuée, le magasin réinitialisera à son état précédent. Cela vous permet de vous assurer que les erreurs ne laissent pas le modèle dans un état incohérent. Pour plus d’informations, consultez [navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Si une exception se produit pendant les modifications, afin que le Commit() finale n’est pas effectuée, le Store sera réinitialisé à son état précédent. Cela vous aide à vous assurer que les erreurs ne laissent pas le modèle dans un état incohérent. Pour plus d’informations, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Les relations binaires**. Si vous définissez une relation entre deux classes, instances aux deux extrémités ont une propriété qui accède à l’autre extrémité. Les deux extrémités sont toujours synchronisées. Par exemple, si vous définissez une relation à la parenté avec des rôles nommés Parents et enfants, vous pouvez écrire :
+-   **Les relations binaires**. Si vous définissez une relation entre deux classes, les instances aux deux extrémités ont une propriété qui accède à l’autre extrémité. Les deux extrémités sont toujours synchronisées. Par exemple, si vous définissez une relation à la parenté avec des rôles nommés Parents et enfants, vous pouvez écrire :
 
      `John.Children.Add(Mary)`
 
-     Maintenant, les deux expressions suivantes sont vraies :
+     Désormais, les deux expressions suivantes sont remplies :
 
      `John.Children.Contains(Mary)`
 
@@ -68,11 +67,11 @@ conservation des objets dans le magasin (au lieu d’objets simplement comme ord
 
      `Mary.Parents.Add(John)`
 
-     Pour plus d’informations, consultez [navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Pour plus d’informations, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Les règles et les événements**. Vous pouvez définir des règles qui se déclenchent chaque fois que les modifications sont apportées. Les règles sont utilisées, par exemple, pour maintenir à jour avec les éléments de modèle qu’elles présentent les formes sur le diagramme. Pour plus d’informations, consultez [réponse aux et propager les modifications](../modeling/responding-to-and-propagating-changes.md).
+-   **Règles et événements**. Vous pouvez définir des règles qui se déclenchent à chaque modification de spécifié. Règles sont utilisées, par exemple, pour maintenir à jour avec les éléments de modèle qu’ils présentent les formes sur le diagramme. Pour plus d’informations, consultez [réponse en cours à et propagation des modifications](../modeling/responding-to-and-propagating-changes.md).
 
--   **Sérialisation**. Le magasin est un moyen standard pour sérialiser les objets qu’il contient dans un fichier. Vous pouvez personnaliser les règles pour la sérialisation et la désérialisation. Pour plus d’informations, consultez [personnalisation de stockage de fichier et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+-   **Sérialisation**. Le Store est un moyen standard pour sérialiser les objets qu’il contient dans un fichier. Vous pouvez personnaliser les règles pour sérialiser et désérialiser. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Voir aussi
 

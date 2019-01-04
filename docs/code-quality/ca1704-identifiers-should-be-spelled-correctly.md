@@ -1,8 +1,7 @@
 ---
-title: 'CA1704 : Les identificateurs doivent être correctement orthographiés'
+title: 'CA1704 : Les identificateurs doivent être correctement orthographiés'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1704
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e18f4ce8199c76c34683c510d3a64160544e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c39f744556968ff279b3e3e7e9eb923ec069ebc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954407"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704 : Les identificateurs doivent être correctement orthographiés
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704 : Les identificateurs doivent être correctement orthographiés
 
 |||
 |-|-|
@@ -34,27 +33,27 @@ ms.locfileid: "31916897"
 
 ## <a name="cause"></a>Cause
 
-Le nom d’un identificateur contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque du vérificateur d’orthographe Microsoft. Cette règle ne pas vérifier les constructeurs ou les membres de nom spéciaux tels que get et définir des accesseurs de propriété.
+Le nom d’un identificateur contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque de vérificateur d’orthographe Microsoft. Cette règle ne pas vérifier les constructeurs ou les membres de dénomination spéciale telles que get et définir des accesseurs de propriété.
 
 ## <a name="rule-description"></a>Description de la règle
 
 Cette règle analyse l’identificateur dans des jetons et vérifie l’orthographe de chaque jeton. L’algorithme d’analyse effectue les transformations suivantes :
 
-- Les lettres majuscules démarrent un nouveau jeton. Par exemple, MonNomestJosé segmentation en unités lexicales à « Mon », « Name », « Est », « Joe ».
+- Les lettres majuscules démarrent un nouveau jeton. Par exemple, MonNomestJosé crée des jetons à « Mon », « Name », « Est », « Joe ».
 
-- Pour plusieurs lettres majuscules, la dernière lettre majuscule démarre un nouveau jeton. Par exemple, ÉditeurGUI segmentation en unités lexicales « Interface graphique utilisateur », « Éditeur ».
+- Pour plusieurs lettres majuscules, la dernière lettre majuscule démarre un nouveau jeton. Par exemple, ÉditeurGUI crée des jetons à « Interface graphique utilisateur », « Éditeur ».
 
-- Début et de fin des apostrophes sont supprimés. Par exemple, 'sender' segmentation en unités lexicales « sender ».
+- Début et de fin des apostrophes sont supprimés. Par exemple, 'sender' crée des jetons à « expéditeur ».
 
-- Des traits de soulignement indiquent la fin d’un jeton et sont supprimés. Par exemple, Bonjour_monde segmentation en unités lexicales à « Hello », « world ».
+- Traits de soulignement indiquent la fin d’un jeton et sont supprimés. Par exemple, Hello_world crée des jetons à « Hello », « world ».
 
-- Signes incorporées sont supprimées. Par exemple, pour & fond segmentation en unités lexicales pour « format ».
+- Esperluettes incorporées sont supprimées. Par exemple, pour & mat crée des jetons pour « format ».
 
 ## <a name="language"></a>Langue
 
-Actuellement, le vérificateur d’orthographe vérifie uniquement à des dictionnaires de la culture basée sur l’anglais. Vous pouvez modifier la culture de votre projet dans le fichier projet, en ajoutant le **CodeAnalysisCulture** élément.
+Actuellement, le vérificateur d’orthographe vérifie uniquement à des dictionnaires de culture en anglais. Vous pouvez modifier la culture de votre projet dans le fichier projet, en ajoutant le **CodeAnalysisCulture** élément.
 
-Par exemple :
+Exemple :
 
 ```xml
 <Project ...>
@@ -63,23 +62,23 @@ Par exemple :
 ```
 
 > [!IMPORTANT]
-> Si vous définissez la culture à autre chose qu’une culture en anglais, cette règle d’analyse du code est en mode silencieux désactivée.
+> Si vous définissez la culture sur autre chose qu’une culture en anglais, cette règle d’analyse du code est désactivée en mode silencieux.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
 Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou ajoutez le mot au dictionnaire personnalisé.
 
-### <a name="to-add-words-to-a-custom-dictionary"></a>Pour ajouter des mots à un dictionnaire personnalisé
+### <a name="to-add-words-to-a-custom-dictionary"></a>Pour ajouter des mots dans un dictionnaire personnalisé
 
-Nommez le fichier XML de dictionnaire personnalisé *CustomDictionary.xml*. Placez le dictionnaire dans le répertoire d’installation de l’outil, le répertoire du projet, ou dans le répertoire associé à l’outil sous le profil de l’utilisateur (*%USERPROFILE%\Application Data\\...* ). Pour savoir comment ajouter le dictionnaire personnalisé à un projet dans Visual Studio, consultez [Comment : personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Nommez le fichier XML de dictionnaire personnalisé *CustomDictionary.xml*. Placer le dictionnaire dans le répertoire d’installation de l’outil, le répertoire du projet, ou dans le répertoire associé à l’outil sous le profil de l’utilisateur (*%USERPROFILE%\Application données\\...* ). Pour savoir comment ajouter le dictionnaire personnalisé à un projet dans Visual Studio, consultez [Comment : Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
-- Ajouter des mots qui ne devraient pas provoquer une violation sous le chemin d’accès au dictionnaire/mots/reconnues.
+- Ajouter des mots qui ne doivent pas provoquer une violation sous le chemin d’accès de mots/dictionnaire/reconnues.
 
-- Ajouter des mots qui doivent provoquer une violation sous le chemin d’accès au dictionnaire/mots/non reconnu.
+- Ajouter des mots qui doivent provoquer une violation sous le chemin d’accès de dictionnaire/mots/non reconnu.
 
-- Ajouter des mots qui doivent être signalés comme obsolètes sous le chemin d’accès Dictionary/Words/Deprecated. Consultez la rubrique associée [CA1726 : utilisez les termes](../code-quality/ca1726-use-preferred-terms.md) pour plus d’informations.
+- Ajouter des mots qui doivent être marqués comme obsolète sous le chemin d’accès de mots/dictionnaire/déconseillées. Consultez la rubrique associée [CA1726 : Utiliser des termes](../code-quality/ca1726-use-preferred-terms.md) pour plus d’informations.
 
-- Ajouter des exceptions aux règles de casse acronyme pour le chemin d’accès au dictionnaire/acronymes/CasingExceptions.
+- Ajoutez des exceptions aux règles de casse acronyme pour le chemin d’accès des acronymes/dictionnaire/CasingExceptions.
 
 Voici un exemple de la structure d’un fichier de dictionnaire personnalisé :
 
@@ -108,17 +107,17 @@ Voici un exemple de la structure d’un fichier de dictionnaire personnalisé :
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Supprimer un avertissement de cette règle uniquement si le mot est intentionnellement mal orthographié et que le mot s’applique à un ensemble limité de la bibliothèque. Les mots orthographiés correctement réduisent la courbe d’apprentissage qui est requise pour les nouvelles bibliothèques de logiciels.
+Supprimez un avertissement de cette règle uniquement si le mot est intentionnellement mal orthographié et le mot s’applique à un ensemble limité de la bibliothèque. Mots épelés correctement réduisent la courbe d’apprentissage qui est requise pour les nouvelles bibliothèques de logiciels.
 
 ## <a name="related-rules"></a>Règles associées
 
 - [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707 : Identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 - [CA1726 : Utilisez les termes préférés](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Guide pratique pour Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

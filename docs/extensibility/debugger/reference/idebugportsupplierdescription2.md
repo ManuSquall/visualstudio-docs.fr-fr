@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierDescription2 | Documents Microsoft
-ms.custom: ''
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15facb38037272dcf2cef4f06d84d835b874012
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6387708232c97a25ea11fc554d250e14e6b66e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818337"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Permet la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur pour afficher le texte à l’intérieur de la **informations de Transport** section de la **attacher au processus** boîte de dialogue.  
@@ -29,7 +26,7 @@ Permet la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’in
 IDebugPortSupplierDescription2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  Cette interface est implémentée par les fournisseurs de port.  
   
 ## <a name="methods"></a>Méthodes  
@@ -40,8 +37,8 @@ IDebugPortSupplierDescription2 : IUnknown
 |[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Récupère la description et les métadonnées de description pour le fournisseur de port.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Msdbg.h  
+ En-tête : Msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

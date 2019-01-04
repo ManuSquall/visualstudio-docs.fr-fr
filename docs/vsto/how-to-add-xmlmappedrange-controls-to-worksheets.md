@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter des contrôles XMLMappedRange aux feuilles de calcul'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d7cc26c0170c2a20e27026ebcbc6d8705d34ce2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5f5f11b09c5fd44b59ed47702d0eee2e6f563223
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856590"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procédure : Ajouter des contrôles XMLMappedRange aux feuilles de calcul
   Lorsque vous mappez un élément XML à une cellule dans Microsoft Office Excel, Visual Studio ajoute automatiquement un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle à votre feuille de calcul.  
@@ -69,5 +66,3 @@ ms.locfileid: "53646711"
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Guide pratique pour Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
-  
-  

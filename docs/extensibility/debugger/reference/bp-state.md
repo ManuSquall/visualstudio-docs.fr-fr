@@ -1,9 +1,6 @@
 ---
 title: BP_STATE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_STATE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0527cefeaed58e990d8474c25a522788e4dba6fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 627645cb75f53feccae92caf15523d72d69c323f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906759"
 ---
 # <a name="bpstate"></a>BP_STATE
 Spécifie l’existence d’un point d’arrêt lié ainsi que si elle est activée.  
@@ -28,7 +25,7 @@ Spécifie l’existence d’un point d’arrêt lié ainsi que si elle est activ
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_BP_STATE {   
+enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
    BPS_DISABLED = 0x0002,  
@@ -38,7 +35,7 @@ typedef DWORD BP_STATE;
 ```  
   
 ```csharp  
-public enum enum_BP_STATE {   
+public enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
    BPS_DISABLED = 0x0002,  
@@ -62,12 +59,12 @@ public enum enum_BP_STATE {
 ## <a name="remarks"></a>Notes  
  Retourné par la [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

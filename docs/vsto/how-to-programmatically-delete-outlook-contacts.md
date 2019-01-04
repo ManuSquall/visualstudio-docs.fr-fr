@@ -1,9 +1,6 @@
 ---
-title: 'Comment : supprimer des contacts Outlook par programmation'
-ms.custom: ''
+title: 'Procédure : Supprimer des contacts Outlook par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ada08de2259554c8371170214a1e00c2d928774
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5309b0ae8710d28dbdbb2a45ad1a4620d068a4d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924902"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>Comment : supprimer des contacts Outlook par programmation
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procédure : Supprimer des contacts Outlook par programmation
   Cet exemple supprime un contact. L’exemple suppose qu’un contact nommé "Armando Pinto" existe dans le dossier **Contacts** .  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,7 +31,5 @@ ms.locfileid: "35257168"
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)   
- [Comment : rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Comment : accéder par programmation aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)  
-  
-  
+ [Guide pratique pour Rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Guide pratique pour Accéder par programmation aux contacts Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)  

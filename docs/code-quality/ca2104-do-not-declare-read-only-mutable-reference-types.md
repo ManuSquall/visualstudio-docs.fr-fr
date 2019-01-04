@@ -1,8 +1,7 @@
 ---
-title: 'CA2104 : Ne déclarez pas les types référence mutables en lecture seule'
+title: 'CA2104 : Ne déclarez pas les types référence mutables uniquement en lecture'
 ms.date: 11/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f1c4f19349d94cb7dedfd22a82dc86b6f33b5b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844208"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104 : Ne déclarez pas les types référence mutables en lecture seule
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104 : Ne déclarez pas les types référence mutables uniquement en lecture
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ Le modificateur en lecture seule ([readonly](/dotnet/csharp/language-reference/k
 
 Cette règle peut par inadvertance indiquer une violation pour un type qui est en fait, immuable. Dans ce cas, il est possible de supprimer l’avertissement sans.
 
-Champs de tableau en lecture seule sont exemptés de cette règle, mais au lieu de cela provoque une violation de la [CA2105 : les champs de tableau ne doivent pas être en lecture seule](../code-quality/ca2105-array-fields-should-not-be-read-only.md) règle.
+Champs de tableau en lecture seule sont exemptés de cette règle, mais au lieu de cela provoque une violation de la [CA2105 : Champs de tableau ne doivent pas être en lecture seule](../code-quality/ca2105-array-fields-should-not-be-read-only.md) règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

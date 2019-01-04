@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter un volet Actions à des documents Word ou des classeurs Excel'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4630834f1673e1c96ca67b90a8bb329951f53de1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827018"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procédure : Ajouter un volet Actions à des documents Word ou à des classeurs Excel
   Pour ajouter un volet actions à un document Microsoft Office Word ou un classeur Microsoft Excel, tout d’abord créer un contrôle utilisateur Windows Forms. Ensuite, ajoutez le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété de la `ThisDocument.ActionsPane` champ (Word) ou `ThisWorkbook.ActionsPane` champ (Excel) dans votre projet.  
@@ -83,5 +80,3 @@ ms.locfileid: "53648237"
  [Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Guide pratique pour Gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

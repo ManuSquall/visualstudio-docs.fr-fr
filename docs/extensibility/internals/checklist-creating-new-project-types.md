@@ -1,9 +1,6 @@
 ---
 title: 'Liste de vérification : Créer de nouveaux Types de projet | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370573"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861583"
 ---
 # <a name="checklist-create-new-project-types"></a>Liste de vérification : Créer des types de projet
 Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La liste de vérification suivante fournit un guide pour ces tâches :  
   
 1.  Concevoir les fonctionnalités pour votre nouveau type de projet. Pour plus d’informations, consultez [décisions de conception de type de projet](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Déterminer les éditeurs sont utilisés pour le code et d’autres éléments de projet. Vous pouvez utiliser le core ou des éditeurs standard, ou vous pouvez créer et utiliser des éditeurs spécifiques du projet. Pour plus d’informations, consultez [créer des concepteurs et éditeurs personnalisés](../../extensibility/creating-custom-editors-and-designers.md) et [Comment : ouvrir des éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Déterminer les éditeurs sont utilisés pour le code et d’autres éléments de projet. Vous pouvez utiliser le core ou des éditeurs standard, ou vous pouvez créer et utiliser des éditeurs spécifiques du projet. Pour plus d’informations, consultez [créer des concepteurs et éditeurs personnalisés](../../extensibility/creating-custom-editors-and-designers.md) et [Comment : Ouvrir des éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Déterminer le niveau de participation de vos éléments de projet dans le **affichage de classes** et **Explorateur d’objets**. Pour plus d’informations, consultez [prennent en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   

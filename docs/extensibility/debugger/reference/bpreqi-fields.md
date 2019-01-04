@@ -1,9 +1,6 @@
 ---
 title: BPREQI_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BPREQI_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37e78c8f03412b101a6d1fa3b57b984377f79cac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4185c485a8241dee6ff14f4f3a0d13b397aa415f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905174"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 Spécifie les informations à récupérer sur une demande de point d’arrêt.  
@@ -28,41 +25,41 @@ Spécifie les informations à récupérer sur une demande de point d’arrêt.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_BPREQI_FIELDS {   
-   BPREQI_BPLOCATION   = 0x0001,  
-   BPREQI_LANGUAGE     = 0x0002,  
-   BPREQI_PROGRAM      = 0x0004,  
-   BPREQI_PROGRAMNAME  = 0x0008,  
-   BPREQI_THREAD       = 0x0010,  
-   BPREQI_THREADNAME   = 0x0020,  
-   BPREQI_PASSCOUNT    = 0x0040,  
-   BPREQI_CONDITION    = 0x0080,  
-   BPREQI_FLAGS        = 0x0100,  
-   BPREQI_ALLOLDFIELDS = 0x01ff  
-   BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only  
-   BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only  
-   BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only  
-   BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only  
+enum enum_BPREQI_FIELDS {   
+   BPREQI_BPLOCATION   = 0x0001,  
+   BPREQI_LANGUAGE     = 0x0002,  
+   BPREQI_PROGRAM      = 0x0004,  
+   BPREQI_PROGRAMNAME  = 0x0008,  
+   BPREQI_THREAD       = 0x0010,  
+   BPREQI_THREADNAME   = 0x0020,  
+   BPREQI_PASSCOUNT    = 0x0040,  
+   BPREQI_CONDITION    = 0x0080,  
+   BPREQI_FLAGS        = 0x0100,  
+   BPREQI_ALLOLDFIELDS = 0x01ff  
+   BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only  
+   BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only  
+   BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only  
+   BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only  
 };  
 typedef DWORD BPREQI_FIELDS;  
 ```  
   
 ```csharp  
-public enum enum_BPREQI_FIELDS {   
-   BPREQI_BPLOCATION   = 0x0001,  
-   BPREQI_LANGUAGE     = 0x0002,  
-   BPREQI_PROGRAM      = 0x0004,  
-   BPREQI_PROGRAMNAME  = 0x0008,  
-   BPREQI_THREAD       = 0x0010,  
-   BPREQI_THREADNAME   = 0x0020,  
-   BPREQI_PASSCOUNT    = 0x0040,  
-   BPREQI_CONDITION    = 0x0080,  
-   BPREQI_FLAGS        = 0x0100,  
-   BPREQI_ALLOLDFIELDS = 0x01ff  
-   BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only  
-   BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only  
-   BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only  
-   BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only  
+public enum enum_BPREQI_FIELDS {   
+   BPREQI_BPLOCATION   = 0x0001,  
+   BPREQI_LANGUAGE     = 0x0002,  
+   BPREQI_PROGRAM      = 0x0004,  
+   BPREQI_PROGRAMNAME  = 0x0008,  
+   BPREQI_THREAD       = 0x0010,  
+   BPREQI_THREADNAME   = 0x0020,  
+   BPREQI_PASSCOUNT    = 0x0040,  
+   BPREQI_CONDITION    = 0x0080,  
+   BPREQI_FLAGS        = 0x0100,  
+   BPREQI_ALLOLDFIELDS = 0x01ff  
+   BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only  
+   BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only  
+   BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only  
+   BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only  
 };  
 ```  
   
@@ -116,12 +113,12 @@ public enum enum_BPREQI_FIELDS {
   
  Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

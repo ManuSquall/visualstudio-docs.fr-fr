@@ -1,9 +1,6 @@
 ---
 title: EXCEPTION_STATE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - EXCEPTION_STATE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1032be313c6be8c71799ea493e82c03fd9e96ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06bd0a3f68653bc52e79f9b4eb97d7b409ee5488
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833379"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Spécifie l’état d’exception.  
@@ -28,7 +25,7 @@ Spécifie l’état d’exception.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_EXCEPTION_STATE {   
+enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
@@ -53,7 +50,7 @@ typedef DWORD EXCEPTION_STATE;
 ```  
   
 ```csharp  
-public enum enum_EXCEPTION_STATE {   
+public enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
@@ -129,12 +126,12 @@ public enum enum_EXCEPTION_STATE {
   
  Ces indicateurs peuvent être combinées avec une opération OR au niveau du bit.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

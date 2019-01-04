@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: afc2915a5d1bfb6cf361a4b84a0235db296bac67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938288"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code
 
@@ -38,9 +37,9 @@ Dans la barre d’outils de la carte, choisissez **disposition** > **analyseurs*
 
 |**Analyseur**|**Pour identifier les nœuds qui**|
 |-|-|
-|**Analyseur de références circulaires**|Ont des dépendances circulaires les unes envers les autres. **Remarque :** des dépendances circulaires qui se trouvent dans le **génériques** groupe ne sont pas affichés sur la carte lorsque vous développez le groupe.|
+|**Analyseur de références circulaires**|Ont des dépendances circulaires les unes envers les autres. **Remarque :**  Les dépendances circulaires qui se trouvent dans le **génériques** groupe ne sont pas affichés sur la carte lorsque vous développez le groupe.|
 |**Rechercher l’analyseur de hubs**|Figurent dans les premiers 25 % des nœuds hautement connectés<br /><br /> **Pour masquer tous les autres nœuds de la carte**<br /><br /> -Ouvrez le menu contextuel de la carte, choisissez **avancé**, **sélectionnez**, **masquer désélectionné**.<br />     La carte masque les nœuds non sélectionnés et l’analyseur identifie les nouveaux nœuds en tant que hubs.|
-|**Analyseur de nœuds non référencés**|N’ont pas de références d’autres nœuds. **Attention :** chacun de ces cas avant de vérifier, en supposant que le code n’est pas utilisé. Certaines dépendances, telles que les dépendances XAML et d’exécution, sont introuvables statiquement dans le code.|
+|**Analyseur de nœuds non référencés**|N’ont pas de références d’autres nœuds. **Attention :**  Vérifiez chacun de ces cas avant de supposer que le code n’est pas utilisé. Certaines dépendances, telles que les dépendances XAML et d’exécution, sont introuvables statiquement dans le code.|
 
 Les analyseurs de carte de code continuent de s’exécuter après leur application. Si vous modifiez la carte, les analyseurs appliqués retraitent automatiquement la carte mise à jour. Pour arrêter l’exécution d’un analyseur, dans la barre d’outils de mappage, sélectionnez **disposition** > **analyseurs**. Désactivez l’analyseur sélectionné.
 

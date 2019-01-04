@@ -1,9 +1,6 @@
 ---
-title: IDebugWindowsComputerPort2 | Documents Microsoft
-ms.custom: ''
+title: IDebugWindowsComputerPort2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7482adf6405d04522cbc3137be25c7a5e18b2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e2a037ad0477be258e33879d1dc336fa67cc915
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965286"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-Permet de demande d’informations sur l’ordinateur cible.  
+Permet d’interroger pour plus d’informations sur l’ordinateur cible.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -29,19 +26,19 @@ Permet de demande d’informations sur l’ordinateur cible.
 IDebugWindowsComputerPort2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Cette interface est implémentée par des objets de port du Gestionnaire de session de débogage.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Cette interface est implémentée par les objets de port du Gestionnaire de session de débogage.  
   
 ## <a name="methods"></a>Méthodes  
  Le tableau suivant présente les méthodes de `IDebugWindowsComputerPort2`.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Récupère des informations sur l’ordinateur sur lequel le débogueur en cours d’exécution.|  
+|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Récupère des informations sur l’ordinateur sur lequel le débogueur dans en cours d’exécution.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Msdbg.h  
+ En-tête : Msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

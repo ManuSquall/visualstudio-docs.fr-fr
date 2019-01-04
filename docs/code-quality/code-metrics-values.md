@@ -2,7 +2,6 @@
 title: Calculer la métrique du code
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855570"
 ---
 # <a name="code-metrics-values"></a>Valeurs de métriques de code
 
@@ -24,7 +23,7 @@ La complexité accrue d’applications modernes augmente également la difficult
 
 Les développeurs peuvent utiliser Visual Studio pour générer des données de métrique du code qui mesurent la complexité et la facilité de maintenance de leur code managé. Données de métrique du code peuvent être générées pour une solution entière ou un projet unique.
 
-Pour plus d’informations sur la façon de générer des données de métrique du code dans Visual Studio, consultez [Comment : générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md).
+Pour plus d’informations sur la façon de générer des données de métrique du code dans Visual Studio, consultez [Comment : Générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Dimensions du logiciel
 
@@ -57,5 +56,5 @@ Code généré pour les Windows Forms n’est pas ignoré, car il s’agit de co
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Comment : générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md)
+- [Guide pratique pour Générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md)
 - [Utiliser la fenêtre Résultats des métriques de Code](../code-quality/working-with-code-metrics-data.md)

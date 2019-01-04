@@ -1,9 +1,6 @@
 ---
 title: Résoudre les problèmes des solutions Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926552"
 ---
 # <a name="troubleshoot-office-solutions"></a>Résoudre les problèmes des solutions Office
   Cette section contient des conseils pour la résolution des problèmes courants que vous pouvez rencontrer lors de la création de solutions à l’aide des outils de développement Office dans Visual Studio.  
@@ -31,7 +28,7 @@ ms.locfileid: "35670836"
  [Résoudre les erreurs dans les solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Décrit les problèmes courants qui peuvent survenir pendant que vous créez, exécutez et testez vos solutions Office dans Visual Studio.  
   
- [Comment : réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Guide pratique pour Réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Décrit comment réactiver un complément qui a été matériel ou logiciel désactivé.  
   
  [Prise en charge supplémentaire pour les erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35670836"
   
  [Tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md)  
  Répertorie les questions fréquemment posées concernant la programmation des solutions Office et fournit des liens vers des rubriques qui peuvent aider à résoudre les problèmes courants.  
-  
-  

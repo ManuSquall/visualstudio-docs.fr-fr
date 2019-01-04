@@ -1,8 +1,7 @@
 ---
-title: "Comment : exécuter l'analyse du code managé manuellement"
+title: 'Procédure : Exécuter manuellement l’analyse du Code pour le Code managé'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
@@ -12,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2a9fa4af1737b59af67388ba12cf79eca0b7563
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5324ba78b5a571d6ffd7812a9d3dd766ad060db7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845296"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Comment : exécuter l'analyse du code managé manuellement
-L’outil d’analyse du code vous fournit des informations sur les erreurs éventuelles dans votre code source. Vous pouvez exécuter l’analyse du code automatiquement avec chaque génération d’un projet de code, et vous pouvez également exécuter l’analyse du code manuellement. Les règles sont vérifiées lors de l’exécution de l’analyse du code sont spécifiées dans la page analyse du Code des pages de propriétés de projet. Pour plus d’informations, consultez [Comment : configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Procédure : Exécuter manuellement l’analyse du Code pour le Code managé
+L’outil d’analyse de code vous fournit des informations sur les erreurs éventuelles dans votre code source. Vous pouvez exécuter l’analyse du code automatiquement avec chaque génération d’un projet de code, et vous pouvez également exécuter l’analyse du code manuellement. Les règles sont vérifiées lors de l’exécution de l’analyse du code sont spécifiées dans la page analyse du Code des pages de propriétés de projet. Pour plus d'informations, voir [Procédure : Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 
 ### <a name="to-run-code-analysis-manually"></a>Pour exécuter l’analyse du code manuellement
 
 1.  Dans **l’Explorateur de solutions**, cliquez sur le projet.
 
-2.  Sur le **analyser** menu, cliquez sur **exécuter l’analyse du Code sur** *nom du projet*.
+2.  Sur le **analyser** menu, cliquez sur **exécuter l’analyse du Code sur** *nom_projet*.

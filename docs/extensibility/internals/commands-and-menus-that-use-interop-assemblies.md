@@ -1,9 +1,6 @@
 ---
 title: Commandes et des Menus qui utilisent des assemblys d’interopérabilité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus, using interop assemblies
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2212d9eb38487bf824fd8df3c497d9f256379c10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1d87d761d27e9b77034eb5c36a71b4b5283de59
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831061"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Commandes et des menus qui utilisent des assemblys d’interopérabilité
 Un VSPackage qui implémente des commandes de menu et barre d’outils à l’aide des assemblys d’interopérabilité doit :  

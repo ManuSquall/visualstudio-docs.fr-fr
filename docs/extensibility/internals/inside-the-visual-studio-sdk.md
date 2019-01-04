@@ -1,9 +1,6 @@
 ---
 title: Dans le Kit de développement logiciel de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821143"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 Cette section fournit des informations détaillées sur les extensions de Visual Studio, y compris l’architecture de Visual Studio, composants, services, schémas, utilitaires et autres.
@@ -31,13 +28,13 @@ Cette section fournit des informations détaillées sur les extensions de Visual
  ![Graphique Architecture d’environnement](../../extensibility/internals/media/environment.gif "environnement") généralisée de vue de l’architecture de Visual Studio
 
 ## <a name="vspackages"></a>VSPackages
- Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de Visual Studio. Pour plus d’informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
+ Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de Visual Studio. Pour plus d'informations, consultez [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  L’interpréteur de commandes de Visual Studio fournit des fonctionnalités de base et prend en charge les communications entre son composant VSPackages et des extensions MEF. Pour plus d’informations, consultez [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).
 
 ## <a name="user-experience-guidelines"></a>Conseils sur l’expérience utilisateur
- Si vous envisagez de concevoir de nouvelles fonctionnalités pour Visual Studio, vous devez Examinez ces instructions pour les conseils de conception et la convivialité : [recommandations pour l’expérience utilisateur Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+ Si vous envisagez de concevoir de nouvelles fonctionnalités pour Visual Studio, vous devez prendre un coup de œil à ces instructions pour les conseils de conception et de facilité d’utilisation : [Recommandations pour l’expérience utilisateur Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
 ## <a name="commands"></a>Commandes
  Les commandes sont des fonctions qui accomplissent des tâches, comme l’impression d’un document, l’actualisation d’une vue ou la création d’un fichier.
@@ -103,7 +100,7 @@ Cette section fournit des informations détaillées sur les extensions de Visual
  Pour plus d’informations, consultez [Ajout d’un projet et des modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="properties-and-options"></a>Propriétés et les Options
- Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés : [étendre les propriétés](../../extensibility/internals/extending-properties.md) pages d’Options contiennent des jeux d’options qui se rapportent à un composant particulier, comme un programmation de langue ou un VSPackage : [Options et Pages d’Options](../../extensibility/internals/options-and-options-pages.md). Les paramètres sont généralement liés par l’interface utilisateur des fonctionnalités qui peuvent être importées et exportées : [prise en charge pour les paramètres utilisateur](../../extensibility/internals/support-for-user-settings.md).
+ Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés : [Étendre les propriétés](../../extensibility/internals/extending-properties.md) pages d’Options contiennent des jeux d’options qui se rapportent à un composant particulier, comme un langage de programmation ou à un VSPackage : [Options et Pages d’Options](../../extensibility/internals/options-and-options-pages.md). Les paramètres sont généralement liés par l’interface utilisateur des fonctionnalités qui peuvent être importées et exportées : [Prise en charge pour les paramètres utilisateur](../../extensibility/internals/support-for-user-settings.md).
 
 ## <a name="visual-studio-services"></a>Services de Visual Studio
  Un service fournit un ensemble spécifique d’interfaces pour les composants à consommer. Visual Studio fournit un ensemble de services qui peut être utilisé par tous les composants, y compris les extensions. Par exemple, Visual Studio services activer des fenêtres Outil pour être affiché ou masqué de manière dynamique, activer l’accès à l’aide, barre d’état ou d’événements d’interface utilisateur. L’éditeur Visual Studio fournit également des services pouvant être importé par les extensions de l’éditeur. Pour plus d’informations, consultez [utilisation et fourniture de Services](../../extensibility/using-and-providing-services.md).

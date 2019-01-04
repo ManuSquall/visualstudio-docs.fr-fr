@@ -1,9 +1,6 @@
 ---
-title: Structures et Unions | Documents Microsoft
-ms.custom: ''
+title: Structures et Unions | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - structures [Visual Studio SDK]
@@ -13,24 +10,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e3f5ebb4e871f98b027638f5aae47d853828a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42d2634cf99a730aa44f1a497080b69fdff2b962
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906902"
 ---
-# <a name="structures-and-unions"></a>Structures et Unions
+# <a name="structures-and-unions"></a>Structures et unions
 Voici les structures et unions dans le SDK de débogage de Visual Studio.  
   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)  
  Spécifie l’ID de processus, ce qui peut être un ID système ou un GUID.  
   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)  
- Décrit les conditions dans lesquelles un point d’arrêt se déclenche.  
+ Décrit les conditions sous lesquelles un point d’arrêt se déclenche.  
   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
- Décrit la résolution d’un point d’arrêt erreur, y compris l’emplacement, le programme et thread.  
+ Décrit la résolution d’un point d’arrêt erreur, y compris l’emplacement, de programme et de thread.  
   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
  Spécifie le type de structure utilisée pour décrire l’emplacement du point d’arrêt.  
@@ -45,34 +42,34 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit l’emplacement d’un point d’arrêt à la ligne dans un fichier de code source.  
   
  [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
- Décrit l’emplacement de décalage d’un point d’arrêt sur une fonction dans du code.  
+ Décrit l’emplacement de décalage d’un point d’arrêt à une fonction dans le code.  
   
  [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
- Utilisée pour définir des points d’arrêt de code basés sur une chaîne que l’utilisateur peut entrer dans l’IDE.  
+ Utilisée pour définir des points d’arrêt de code basés sur une chaîne que l’utilisateur peut entrer à partir de l’IDE.  
   
  [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
- Utilisée pour définir des points d’arrêt de données qui sont basées sur une chaîne que l’utilisateur peut entrer dans l’IDE.  
+ Utilisée pour définir des points d’arrêt de données qui sont basées sur une chaîne de l’utilisateur peut entrer à partir de l’IDE.  
   
  [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)  
  Décrit la résolution d’un point d’arrêt à un emplacement spécifique.  
   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
- Décrit le nombre et les conditions sur lequel un point d’arrêt est déclenché après avoir été précédemment passé.  
+ Décrit le nombre et les conditions sur lequel un point d’arrêt est déclenché après avoir été précédemment passée.  
   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
  Contient les informations requises pour implémenter un point d’arrêt.  
   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
- Contient les informations requises pour implémenter un point d’arrêt (identique à la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure inclut, mais les informations de GUID, de contrainte et de point de trace du fournisseur).  
+ Contient les informations requises pour implémenter un point d’arrêt (identique à la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure mais il inclut les informations de GUID, de contrainte et de point de trace du fournisseur).  
   
  [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
- Décrit l’emplacement d’un point d’arrêt de code.  
+ Décrit l’emplacement d’un point d’arrêt du code.  
   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
- Décrit le résultat de la liaison d’un point d’arrêt.  
+ Décrit le résultat de la liaison d’un point d’arrêt de données.  
   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
- Décrit les informations de point d’arrêt lié pour un point d’arrêt de code ou d’un point d’arrêt.  
+ Décrit les informations de point d’arrêt lié pour un point d’arrêt de code ou un point d’arrêt de données.  
   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
  Spécifie la structure de l’emplacement de la résolution de point d’arrêt.  
@@ -81,7 +78,7 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit un tableau de chaînes.  
   
  [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)  
- Spécifie des informations sur un type de champ extraites à partir des métadonnées.  
+ Spécifie les informations relatives à un type de champ pris à partir des métadonnées.  
   
  [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)  
  Décrit un appel à une fonction ou méthode.  
@@ -99,10 +96,10 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit une adresse dans un programme en cours de débogage.  
   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
- Représente un nombre de différents types d’adresses.  
+ Représente un d’un nombre de différents types d’adresses.  
   
  [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
- Identifie une visionneuse personnalisée ou le type de visualiseur.  
+ Identifie une visionneuse personnalisée ou type de visualiseur.  
   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)  
  Décrit une propriété de débogage qui à son tour décrit un objet de nature hiérarchique qui a le nom, type et valeur.  
@@ -117,7 +114,7 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit une exception ou une erreur d’exécution levées par le programme en cours de débogage.  
   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
- Décrit une variable locale, paramètre ou autre champ.  
+ Décrit une variable locale, paramètre ou un autre champ.  
   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
  Décrit un frame de pile.  
@@ -138,7 +135,7 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit l’adresse d’un champ d’une classe ou structure.  
   
  [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)  
- Décrit l’adresse d’une variable locale dans une portée (généralement une fonction ou méthode).  
+ Décrit l’adresse d’une variable locale dans une étendue (généralement une fonction ou méthode).  
   
  [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)  
  Décrit l’adresse d’une méthode d’une classe.  
@@ -147,22 +144,22 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit un paramètre d’une méthode ou une fonction.  
   
  [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)  
- Décrit une valeur de retour d’une méthode ou une fonction.  
+ Décrit une valeur de retour à partir d’une méthode ou une fonction.  
   
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
  Décrit un type de champ extraites à partir des métadonnées.  
   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)  
- Décrit un module particulier (assembly, EXE ou DLL).  
+ Décrit un module particulier (EXE, DLL ou assembly).  
   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
- Décrit les informations d’état sur les chemins de recherche de symbole qui ont été recherchées.  
+ Décrit les informations d’état sur les chemins de recherche de symbole qui a été effectuée dans.  
   
  [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)  
  Décrit une adresse native.  
   
  [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
- Décrit un type de champ obtenue à partir d’un symbole PDB.  
+ Décrit un type de champ pris à partir d’un symbole PDB.  
   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)  
  Décrit l’état d’un point d’arrêt est prêt à lier à un emplacement de code.  
@@ -171,13 +168,13 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit un processus.  
   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)  
- Décrit la liste des [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) les objets qui représentent des nœuds de programme.  
+ Décrit la liste des [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objets qui représentent des nœuds de programme.  
   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)  
  Décrit les processus qui s’exécutent sur un ordinateur.  
   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)  
- Décrit l’emplacement de ligne et de colonne dans le texte indiqué.  
+ Décrit l’emplacement de colonne et de ligne dans le texte donné.  
   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)  
  Décrit les propriétés d’un thread.  
@@ -189,14 +186,14 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
  Décrit une adresse physique.  
   
  [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)  
- Décrit une adresse qui est relatif à un `this` pointeur (`Me` en Visual Basic).  
+ Décrit une adresse qui est relative à un `this` pointeur (`Me` en Visual Basic).  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h, sh.h ou ee.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur les API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

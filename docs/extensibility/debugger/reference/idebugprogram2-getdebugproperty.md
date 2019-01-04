@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetDebugProperty | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetDebugProperty
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7296698f3caf7fd189505c68e1c8b7d6261b1e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d19761f833472e24b07e836d08c1d9635c09b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878180"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 Obtient les propriétés du programme.  
@@ -28,13 +25,13 @@ Obtient les propriétés du programme.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetDebugProperty(   
+HRESULT GetDebugProperty(   
    IDebugProperty2** ppProperty  
 );  
 ```  
   
 ```csharp  
-int GetDebugProperty(   
+int GetDebugProperty(   
    out IDebugProperty2 ppProperty  
 );  
 ```  

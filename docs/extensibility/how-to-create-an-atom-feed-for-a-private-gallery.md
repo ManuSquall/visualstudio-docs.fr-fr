@@ -1,9 +1,6 @@
 ---
-title: 'Comment : créer un atome de flux pour une galerie privée | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un atome de flux pour une galerie privée | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fc3aef8605f5c3343bcc6aca86513d631cace35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941688"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Comment : créer un flux Atom pour une galerie privée
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procédure : Créer un flux Atom pour une galerie privée
 Vous pouvez créer un flux vers un emplacement intranet qui contient des extensions et ajouter le flux à Atom (RSS) **Extensions et mises à jour** dans une galerie privée. Pour plus d’informations, consultez [galeries privées](../extensibility/private-galleries.md).  
   
 ## <a name="create-an-atom-feed"></a>Créer un flux Atom  

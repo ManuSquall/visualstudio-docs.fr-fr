@@ -1,9 +1,6 @@
 ---
 title: Ajout de projet et modèles d’élément de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963655"
 ---
 # <a name="add-project-and-project-item-templates"></a>Ajouter le projet et les modèles d’élément de projet
 Lorsque vous créez vos propres types de projet, vous devez fournir la prise en charge pour l’ajout de nouveaux projets et éléments de projet à l’aide de la norme [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intégrées des boîtes de dialogue de l’environnement (IDE) de développement. Les rubriques suivantes traitent des différentes techniques pour l’ajout de projets et éléments de projet.  
@@ -53,10 +50,10 @@ Lorsque vous créez vos propres types de projet, vous devez fournir la prise en 
  Répertorie le CATID pour les objets qui sont utilisés pour étendre [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] systèmes de projet.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Comment : ouvrir des éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Guide pratique pour Ouvrez éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md)  
  Fournit des instructions détaillées pour l’ouverture d’un élément intrinsèquement lié à un éditeur spécifique pour un projet.  
   
- [Comment : ouvrir des éditeurs standard](../../extensibility/how-to-open-standard-editors.md)  
+ [Guide pratique pour Éditeurs standards Open](../../extensibility/how-to-open-standard-editors.md)  
  Fournit des instructions détaillées pour l’ouverture d’un éditeur standard.  
   
  [Sous-types de projet](../../extensibility/internals/project-subtypes.md)  

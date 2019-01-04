@@ -1,9 +1,6 @@
 ---
 title: Extension des projets | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3c6895f23b6d2ffe1f4ff8e311140b1e5d5a51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837197"
 ---
 # <a name="extend-projects"></a>Étendre des projets
 Projets et solutions constituent les méthodes que Visual Studio organise les fichiers de code et des ressources en unités de compilation et déploiement. Vous trouverez plus d’informations sur les projets dans [projets (SDK Visual Studio)](../extensibility/extending-projects.md).  
   
- Vous pouvez créer vos propres types de projet avec le SDK Visual Studio et de Managed Package Framework pour les projets, que vous pouvez télécharger sur [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Pour comprendre comment les projets personnalisés sont implémentés, consultez [nouvelle génération de projet : sous le capot, première partie](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) et [nouvelle génération de projet : sous le capot, deuxième partie](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Vous pouvez créer vos propres types de projet avec le SDK Visual Studio et de Managed Package Framework pour les projets, que vous pouvez télécharger sur [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Pour comprendre comment les projets personnalisés sont implémentés, consultez [nouvelle génération de projet : Sous le capot, première partie](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) et [nouvelle génération de projet : Sous le capot, deuxième partie](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Les rubriques de cette section décrivent comment créer des projets personnalisés et comment gérer différents types de solution Visual Studio.  
   

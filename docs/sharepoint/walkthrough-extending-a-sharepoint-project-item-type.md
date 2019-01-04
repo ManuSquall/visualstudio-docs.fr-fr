@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Étendre un Type d’élément de projet SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Extension d’un Type d’élément de projet SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868665"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : Étendre un type d’élément de projet SharePoint
   Vous pouvez utiliser la **modèle de connectivité de données métiers** élément de projet pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données dans le modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.  
@@ -299,5 +296,3 @@ ms.locfileid: "51295720"
  [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Développement d’un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845785"
 ---
 # <a name="develop-a-legacy-language-service"></a>Développer un service de langage hérité
 Cette section fournit des liens vers des rubriques qui vous aident à créer un service de langage hérité.  
@@ -63,8 +60,8 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  [Informations sur les paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Décrit comment fournir des conseils de méthode pour les méthodes et les fonctions surchargées.  
   
- [Comment : fournir du texte masqué prennent en charge dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Guide pratique pour Fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Explique l’objectif d’une zone de texte masqué et fournit des instructions sur la façon d’implémenter une zone de texte masqué.  
   
- [Comment : fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Guide pratique pour Fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Explique les deux options qui prennent en charge en mode plan pour votre langage au-delà de la prise en charge la *réduire aux définitions* commande.

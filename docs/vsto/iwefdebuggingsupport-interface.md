@@ -1,9 +1,6 @@
 ---
 title: Iwefdebuggingsupport, interface
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 351fb69b99393a10518168f4f9b01efe1f9efaa7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 73aff964cfb66d33e308aef6448fc0f0b1b27c09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901017"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Iwefdebuggingsupport, interface
-  Implémentée par un environnement de débogage, tels que Visual Studio, pour faciliter le débogage des applications pour Office. L’application Office, telles que Word ou Excel, obtient cette interface à partir de Visual Studio, puis appelle les méthodes sur l’interface à certains points durant la session de débogage.  
+  Implémenté par un environnement de débogage, tels que Visual Studio, afin de faciliter le débogage des applications pour Office. L’application Office, telles que Word ou Excel, obtient cette interface à partir de Visual Studio, puis appelle les méthodes sur l’interface à certains points pendant la session de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,11 +37,9 @@ interface IWefDebuggingSupport : IUnknown
 ```  
   
 ## <a name="methods"></a>Méthodes  
- Le tableau suivant répertorie les méthodes que l’iwefdebuggingsupport, interface définit.  
+ Le tableau suivant répertorie les méthodes qui définit l’iwefdebuggingsupport, interface.  
   
 |Name|Description|  
 |----------|-----------------|  
 |[Getautoinsertextensions, méthode](../vsto/getautoinsertextensions-method.md)|Obtient des informations sur les applications pour Office qui doivent être insérés automatiquement pendant le débogage.|  
-|[Setwefprocessid, méthode](../vsto/setwefprocessid-method.md)|Fournit l’identificateur de processus qui s’exécutera le contenu Web Extensions Framework (WEF).|  
-  
-  
+|[Setwefprocessid, méthode](../vsto/setwefprocessid-method.md)|Fournit l’identificateur de processus qui exécutera le contenu de l’infrastructure d’Extensions Web (WEF).|  

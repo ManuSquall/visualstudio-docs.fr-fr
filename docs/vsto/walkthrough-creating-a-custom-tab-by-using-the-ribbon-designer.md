@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917590"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban
   Le Concepteur de ruban vous permet de créer un onglet personnalisé puis d'ajouter et de positionner des contrôles dessus.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808870"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Pour créer un projet de classeur Excel  
   
--   Créer un projet de classeur Excel portant le nom **MyExcelRibbon**. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Créer un projet de classeur Excel portant le nom **MyExcelRibbon**. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio ouvre le nouveau classeur dans le concepteur et ajoute le **MyExcelRibbon** projet **l’Explorateur de solutions**.  
   
@@ -159,17 +156,15 @@ ms.locfileid: "38808870"
   
 -   Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).  
   
--   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [procédure pas à pas : concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
  [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Comment : modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)   
- [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Guide pratique pour Modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Guide pratique pour Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)  
-  
-  

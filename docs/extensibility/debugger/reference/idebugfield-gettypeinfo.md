@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetTypeInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetTypeInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfc82e7450c88420cfca50c74a3ac9451a78b095
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea9f8463bf140b8e3481566948cb5c8e586e9db0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988635"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Cette méthode obtient indépendant du type d’informations sur le symbole ou d’un type.  
@@ -28,7 +25,7 @@ Cette méthode obtient indépendant du type d’informations sur le symbole ou d
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetTypeInfo(   
+HRESULT GetTypeInfo(   
    TYPE_INFO* pTypeInfo  
 );  
 ```  

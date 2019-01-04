@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Publication d’une Extension Visual Studio via la ligne de commande | Microsoft Docs'
-ms.custom: ''
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857213"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procédure pas à pas : Publication d’une extension de Visual Studio via la ligne de commande
 

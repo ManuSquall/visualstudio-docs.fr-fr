@@ -1,9 +1,6 @@
 ---
 title: Prise en main de programmation de personnalisations au niveau du document pour Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904797"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Prise en main de programmation de personnalisations au niveau du document pour Word
   Si vous êtes novice dans la création de personnalisations au niveau du document pour Microsoft Office Word à l’aide de Visual Studio, voici ce que vous devez savoir.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648411"
  [Procédures pas à pas utilisant Word](../vsto/walkthroughs-using-word.md)   
  [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

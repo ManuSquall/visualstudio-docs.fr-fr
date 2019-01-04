@@ -1,9 +1,6 @@
 ---
-title: 'Comment : mettre à jour par programme de texte d’un signet'
-ms.custom: ''
+title: 'Procédure : Mettre à jour par programme de texte d’un signet'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864334"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Comment : mettre à jour par programme de texte d’un signet
+# <a name="how-to-programmatically-update-bookmark-text"></a>Procédure : Mettre à jour par programme de texte d’un signet
   Vous pouvez insérer un texte dans un signet d'espace réservé d'un document Microsoft Office Word afin de pouvoir récupérer le texte ultérieurement, ou pour remplacer le texte d'un signet. Si vous développez une personnalisation au niveau du document, vous pouvez également mettre à jour le texte dans un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> lié aux données. Pour plus d’informations, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -83,8 +80,6 @@ ms.locfileid: "49833016"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Guide pratique pour Insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)   
  [Bookmark (contrôle)](../vsto/bookmark-control.md)  
-  
-  
