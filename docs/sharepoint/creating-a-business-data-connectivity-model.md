@@ -1,13 +1,8 @@
 ---
 title: Création d’un modèle de connectivité de données métiers | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957483"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Créer un modèle de connectivité de données métiers
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint peut contenir qu’un seul modèle. Pour plus d’informations, consultez [intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -45,7 +40,7 @@ ms.locfileid: "49930204"
 |Fichier de définition de modèle|Contient du code XML qui définit les entités, des méthodes, des objets de système métier (LOB) et d’autres métadonnées qui décrit le modèle.<br /><br /> Modifier les métadonnées dans ce fichier en utilisant le concepteur BDC, **Explorateur BDC**, **détails de méthode BDC** fenêtre, et **propriétés** fenêtre.|  
 |Fichier de Code de Service Entity|Contient des méthodes qui récupèrent, mettre à jour et suppriment des instances de l’entité par défaut.|  
   
- Pour définir les propriétés d’une entité, modifiez le fichier de code d’entité. Pour plus d’informations, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ Pour définir les propriétés d’une entité, modifiez le fichier de code d’entité. Pour plus d'informations, voir [Procédure : Ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Pour récupérer, mettre à jour et suppriment des instances d’une entité, ajoutez le code au fichier de code de service entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49930204"
   
 - Pour empaqueter et déployer un modèle existant sur plusieurs batteries de serveurs SharePoint.  
   
-  Dans les deux cas, les systèmes métier définies dans le modèle que vous importez ne sont pas affectées et continuent de fonctionner comme prévu. Pour ajouter un modèle existant à un projet SharePoint, utilisez Visual Studio **ajouter un élément existant** boîte de dialogue. Pour plus d’informations, consultez [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  Dans les deux cas, les systèmes métier définies dans le modèle que vous importez ne sont pas affectées et continuent de fonctionner comme prévu. Pour ajouter un modèle existant à un projet SharePoint, utilisez Visual Studio **ajouter un élément existant** boîte de dialogue. Pour plus d'informations, voir [Procédure : Ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
   Vous pouvez ajouter un système métier de l’assembly de type .NET Framework au modèle importé en sélectionnant une option dans le **LobSystem d’assembly .NET ajouter**. Cela vous permet à écrire du code personnalisé et utiliser un concepteur pour définir les métadonnées du modèle importé.  
   
@@ -69,9 +64,7 @@ ms.locfileid: "49930204"
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)|Vous montre comment créer un modèle BDC.|  
-|[Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Vous montre comment importer un modèle existant dans un projet SharePoint.|  
-|[Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Décrit comment fournir des chaînes qui sont fusionnées avec les métadonnées de modèle lorsque le modèle est consommé par un composant WebPart ou une Page Web.|  
-|[Comment : inclure un assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Vous montre comment inclure un assembly personnalisé dans la fonctionnalité.|  
-  
- 
+|[Guide pratique pour Créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)|Vous montre comment créer un modèle BDC.|  
+|[Guide pratique pour Ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Vous montre comment importer un modèle existant dans un projet SharePoint.|  
+|[Guide pratique pour Utilisez un fichier de ressources pour spécifier des autorisations, les propriétés et les noms localisés](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Décrit comment fournir des chaînes qui sont fusionnées avec les métadonnées de modèle lorsque le modèle est consommé par un composant WebPart ou une Page Web.|  
+|[Guide pratique pour Inclure un assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Vous montre comment inclure un assembly personnalisé dans la fonctionnalité.|  

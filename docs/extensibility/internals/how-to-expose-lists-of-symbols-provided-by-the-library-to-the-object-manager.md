@@ -1,9 +1,6 @@
 ---
 title: Exposer des listes de symboles fournies pour le Gestionnaire d’objets | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154ab307a77925bb2862a07310d2b044654bfdb0
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827440"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Comment : exposer les listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procédure : Exposer des listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets
 Les outils de consultation de symboles, **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, transmettre les demandes de nouvelles données à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets. Le Gestionnaire d’objets détecte que les bibliothèques appropriées et demande les nouvelles listes de symboles. Les bibliothèques de répondent en fournissant les données demandées à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets appelle les méthodes dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> pour obtenir les données de l’interface et l’utilise pour remplir ou mettre à jour les vues des outils de recherche de symboles.  
   
  Une bibliothèque peut recevoir des demandes de données en l’outil est appelé, le nœud est développé, ou la vue soit actualisée. Lorsqu’un outil de consultation de symboles est appelé pour la première fois, le Gestionnaire d’objets demande la bibliothèque pour fournir la liste de niveau supérieur. Lorsque l’utilisateur développe un nœud de la liste, la bibliothèque fournit une liste d’enfants sous ce nœud. Chaque consultation de gestionnaire d’objet contient un index de l’élément concerné. Pour afficher une nouvelle liste, le Gestionnaire d’objets doit déterminer combien d’éléments figurent dans la liste, le type d’éléments, leurs noms, d’accessibilité et d’autres propriétés.  
@@ -470,6 +467,6 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
 ## <a name="see-also"></a>Voir aussi  
  [Prend en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Comment : inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Comment : identifier les symboles dans une bibliothèque](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Guide pratique pour Inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Guide pratique pour Identifier les symboles dans une bibliothèque](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Extensibilité du service de langage hérité](../../extensibility/internals/legacy-language-service-extensibility.md)

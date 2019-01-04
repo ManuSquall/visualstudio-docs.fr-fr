@@ -1,13 +1,8 @@
 ---
-title: 'Comment : ajouter une méthode de création | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter une méthode de création | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925418"
 ---
-# <a name="how-to-add-a-creator-method"></a>Comment : ajouter une méthode de création
+# <a name="how-to-add-a-creator-method"></a>Procédure : Ajouter une méthode de création
   Une méthode de création ajoute de nouvelles données à la source de données d’une entité. Le service de connectivité de données métiers (BDC) appelle cette méthode quand les utilisateurs choisissent le **un nouvel élément** bouton sur le **ruban** d’une liste qui est basée sur le modèle. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Pour ajouter une méthode de création  
@@ -70,12 +65,10 @@ ms.locfileid: "49897340"
   
 ## <a name="see-also"></a>Voir aussi
  [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
- [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
- [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
+ [Guide pratique pour Ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
+ [Guide pratique pour Ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Guide pratique pour Ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Guide pratique pour Ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
  [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Guide pratique pour Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Guide pratique pour Définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  

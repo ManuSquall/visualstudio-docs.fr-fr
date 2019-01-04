@@ -1,8 +1,7 @@
 ---
-title: "CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types"
+title: 'CA2131 : Types critiques de sécurité ne peuvent pas participer l’équivalence des types'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2131
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d83f005d1f1093e3fd2826a573200194e3babcef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91f5be2aad41006dacab059db27e9609a4f84f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913027"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Types critiques de sécurité ne peuvent pas participer l’équivalence des types
 
 |||
 |-|-|

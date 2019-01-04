@@ -1,17 +1,12 @@
 ---
-title: 'Comment : personnaliser une fonctionnalité SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Personnaliser une fonctionnalité SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
 - VS.SharePointTools.RAD.FeatureDesignerProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835472"
 ---
-# <a name="how-to-customize-a-sharepoint-feature"></a>Comment : personnaliser une fonctionnalité SharePoint
+# <a name="how-to-customize-a-sharepoint-feature"></a>Procédure : Personnaliser une fonctionnalité SharePoint
   Vous pouvez créer et personnaliser des fonctionnalités SharePoint à l’aide du Concepteur de fonctionnalités dans Visual Studio. Par exemple, vous pouvez définir l’étendue de fonctionnalité et ajouter d’autres fonctionnalités en tant que dépendances. Par défaut, le Concepteur de fonctionnalités s’ouvre lorsque vous ajoutez une nouvelle fonctionnalité dans l’Explorateur de solutions ou l’Explorateur de Package SharePoint.  
   
 ## <a name="opening-the-feature-designer"></a>Ouverture du Concepteur de fonctionnalités  
@@ -96,4 +91,3 @@ ms.locfileid: "37118895"
   
 ## <a name="see-also"></a>Voir aussi
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

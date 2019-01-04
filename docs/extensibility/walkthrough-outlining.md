@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Mise en relief | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Mode Plan | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827521"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 Configurer les fonctionnalités reposant sur le langage comme le mode plan en définissant les types de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou définir votre propre type de contenu et d’extension de nom fichier et s’appliquent de la définition de la région à uniquement à ce type ou appliquer les définitions de la région à un type de contenu existant (par exemple, « text »). Cette procédure pas à pas montre comment définir et afficher les régions en mode plan.  

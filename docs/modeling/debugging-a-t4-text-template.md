@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885992"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déboguer un modèle de texte au moment du design, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans l’Explorateur de solutions. Pour déboguer un modèle de texte de l’exécution, simplement déboguer l’application à laquelle il appartient.

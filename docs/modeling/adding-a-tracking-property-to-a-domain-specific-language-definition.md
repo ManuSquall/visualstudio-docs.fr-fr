@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946040"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajouter une propriété de suivi à une définition de langage spécifique à un domaine
 
@@ -719,7 +718,7 @@ Ajoutez le code pour prendre en charge le comportement de post-chargement person
 
 L’étape suivante consiste à générer et exécuter le concepteur DSL dans une nouvelle instance de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] afin que vous puissiez vérifier que la propriété de suivi fonctionne correctement.
 
-1. Sur le **Build** menu, cliquez sur **régénérer la Solution**.
+1. Dans le menu **Générer**, cliquez sur **Régénérer la solution**.
 
 2. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.
 
@@ -762,4 +761,4 @@ Si vous envisagez d’utiliser la propriété de suivi de plusieurs ou implémen
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-- [Guide pratique pour créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Guide pratique pour Créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)

@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder | Documents Microsoft
-ms.custom: ''
+title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962073"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Représente la capacité de créer un champ qui représente un type.  
@@ -29,7 +26,7 @@ Représente la capacité de créer un champ qui représente un type.
 IDebugTypeFieldBuilder : IUnknown  
 ```  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Cette interface est obtenue à partir du fournisseur de symboles.  
   
 ## <a name="methods"></a>Méthodes  
@@ -41,8 +38,8 @@ IDebugTypeFieldBuilder : IUnknown
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Crée un pointeur vers le type spécifié.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Sh.h  
+ En-tête : SH.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

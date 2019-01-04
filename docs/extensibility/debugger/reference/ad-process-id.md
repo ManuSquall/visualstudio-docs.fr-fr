@@ -1,9 +1,6 @@
 ---
 title: AD_PROCESS_ID | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - AD_PROCESS_ID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9634d16a89670b92e616e4bd6b878f41166aea2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e805b11168dd1936b116a8873d61e333bee37f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853396"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 Spécifie l’ID de processus, ce qui peut être un ID système ou un GUID.  
@@ -31,9 +28,9 @@ Spécifie l’ID de processus, ce qui peut être un ID système ou un GUID.
 typedef struct _AD_PROCESS_ID {  
    AD_PROCESS_ID_TYPE ProcessIdType;  
    union {  
-      DWORD dwProcessId;   
-      GUID  guidProcessId;   
-      DWORD dwUnused;   
+      DWORD dwProcessId;   
+      GUID  guidProcessId;   
+      DWORD dwUnused;   
    } ProcessId;  
 } AD_PROCESS_ID;  
 ```  
@@ -41,9 +38,9 @@ typedef struct _AD_PROCESS_ID {
 ```csharp  
 public struct AD_PROCESS_ID {  
    AD_PROCESS_ID_TYPE ProcessIdType;  
-   DWORD              dwProcessId;   
-   GUID               guidProcessId;   
-   DWORD              dwUnused;   
+   DWORD              dwProcessId;   
+   GUID               guidProcessId;   
+   DWORD              dwUnused;   
 };  
 ```  
   
@@ -77,12 +74,12 @@ public struct AD_PROCESS_ID {
   
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

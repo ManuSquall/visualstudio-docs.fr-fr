@@ -1,13 +1,8 @@
 ---
-title: 'Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un Package de Solution SharePoint à l’aide de tâches MSBuild | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818324"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Comment : créer un Package de Solution SharePoint à l’aide de tâches MSBuild
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procédure : Créer un Package de Solution SharePoint à l’aide de tâches MSBuild
   Vous pouvez générer, nettoyer et valider un package SharePoint (*.wsp*) à l’aide des tâches MSBuild de ligne de commande sur un ordinateur de développement. Vous pouvez également utiliser ces commandes pour automatiser le processus de génération à l’aide de Team Foundation Server sur un ordinateur de build.  
   
 ## <a name="build-a-sharepoint-package"></a>Créer un package SharePoint  
@@ -112,5 +107,5 @@ ms.locfileid: "37118858"
   
 ## <a name="see-also"></a>Voir aussi
  [Créer des fonctionnalités de SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
+ [Guide pratique pour Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Guide pratique pour Ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

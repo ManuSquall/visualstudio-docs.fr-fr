@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f542a6b1836c49838884371818058bda4f37b279
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841610"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle.
@@ -39,7 +38,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 ## <a name="configuring-your-application-from-a-model"></a>Configuration de votre application à partir d'un modèle
  Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour lire le modèle et son comportement change en conséquence. Pour plus d'informations, voir :
 
-- [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Guide pratique pour Ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Vous pouvez aussi appliquer cette méthode de façon incrémentielle, mais davantage de travail est nécessaire au début. Vous devez écrire le code qui lit le modèle et configurer une infrastructure qui permet à ses valeurs d'être accessibles aux parties variables. Le fait de rendre les parties variables génériques est plus coûteux que la génération de code.
 
@@ -75,5 +74,5 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Guide pratique pour Ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

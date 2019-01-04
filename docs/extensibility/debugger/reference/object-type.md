@@ -1,9 +1,6 @@
 ---
 title: OBJECT_TYPE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - OBJECT_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eff83198e337a3f89c88663722bf34046d3d4f62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df0b3d6ef73b81f005fbdac82f8dc3faa5601fba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941351"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Spécifie le type d’un objet à partir de l’évaluateur d’expression.  
@@ -28,7 +25,7 @@ Spécifie le type d’un objet à partir de l’évaluateur d’expression.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_OBJECT_TYPE {   
+enum enum_OBJECT_TYPE {   
    OBJECT_TYPE_BOOLEAN = 0x0,  
    OBJECT_TYPE_CHAR    = 0x1,  
    OBJECT_TYPE_I1      = 0x2,  
@@ -49,7 +46,7 @@ typedef DWORD OBJECT_TYPE;
 ```  
   
 ```csharp  
-public enum enum_OBJECT_TYPE {   
+public enum enum_OBJECT_TYPE {   
    OBJECT_TYPE_BOOLEAN = 0x0,  
    OBJECT_TYPE_CHAR    = 0x1,  
    OBJECT_TYPE_I1      = 0x2,  
@@ -117,12 +114,12 @@ public enum enum_OBJECT_TYPE {
 ## <a name="remarks"></a>Notes  
  Passé en tant qu’argument à la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) méthodes.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

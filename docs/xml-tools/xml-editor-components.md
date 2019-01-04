@@ -2,19 +2,18 @@
 title: Composants de l'éditeur XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e29632e29b41f707470231481e70e151ca6f77
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c1f997cc04c69e1641a12a86b2a85a8a5fd81e90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819781"
 ---
 # <a name="xml-editor-components"></a>Composants de l’éditeur XML
 

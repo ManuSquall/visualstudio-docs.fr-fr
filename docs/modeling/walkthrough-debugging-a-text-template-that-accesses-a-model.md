@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle"
+title: 'Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,32 +8,31 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914541"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.
 
 > [!NOTE]
->  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : débogage d’un modèle de texte](debugging-a-t4-text-template.md).
+>  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : Débogage d’un modèle de texte](debugging-a-t4-text-template.md).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Création d’une Solution de langage spécifique à un domaine
  Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
 
-- Nom : DebuggingTestLanguage
+- Nom : DebuggingTestLanguage
 
-- Modèle de solution : langage Minimal
+- Modèle de solution : Langage minimal
 
 - Extension de fichier : .ddd
 
 - Nom de la société : Fabrikam
 
-  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : Créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Création d’un modèle de texte
  Ajouter un modèle de texte à votre solution.
@@ -175,7 +174,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 4.  Pour corriger le code, remplacez le nom de propriété par `LibraryModel` dans le code de modèle de texte.
 
-     Les modifications apparaissent en surbrillance.
+     Les modifications sont mises en surbrillance.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

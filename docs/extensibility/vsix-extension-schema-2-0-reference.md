@@ -1,9 +1,6 @@
 ---
 title: Référence de schéma 2.0 d’Extension VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e295bc8c09f41c4c1c77b216a9d91d0644d2d24e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6f9019ca281dd86ef4665e8f6590798d4dfbd917
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914664"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Référence de schéma 2.0 d’extension VSIX
 Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2.0 de ce schéma prend en charge l’ajout d’attributs et types personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et attributs qui ne comprend pas XML.  

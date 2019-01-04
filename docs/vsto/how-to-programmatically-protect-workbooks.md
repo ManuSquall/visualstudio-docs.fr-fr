@@ -1,9 +1,6 @@
 ---
-title: 'Comment : protéger des classeurs par programmation'
-ms.custom: ''
+title: 'Procédure : Protéger des classeurs par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900769"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Comment : protéger des classeurs par programmation
+# <a name="how-to-programmatically-protect-workbooks"></a>Procédure : Protéger des classeurs par programmation
   Vous pouvez protéger un classeur Microsoft Office Excel afin que les utilisateurs ne peuvent pas ajouter ou supprimer des feuilles de calcul et également la protection du classeur par programmation. Vous pouvez éventuellement spécifier un mot de passe, indiquez si vous souhaitez que la structure protégée (de sorte que les utilisateurs ne peuvent pas déplacer les feuilles) et indiquez si vous souhaitez que les fenêtres du classeur protégés.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Protection d’un classeur n’empêche pas les utilisateurs de modifier les cellules. Pour protéger les données, vous devez protéger les feuilles de calcul. Pour plus d’informations, consultez [Comment : protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Protection d’un classeur n’empêche pas les utilisateurs de modifier les cellules. Pour protéger les données, vous devez protéger les feuilles de calcul. Pour plus d'informations, voir [Procédure : Protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Les exemples de code suivants utilisent une variable pour contenir un mot de passe qui est obtenue à partir de l’utilisateur.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35670853"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des classeurs](../vsto/working-with-workbooks.md)   
- [Comment : protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Comment : masquer des feuilles de calcul par programmation](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Guide pratique pour Protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Guide pratique pour Masquer des feuilles de calcul par programmation](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

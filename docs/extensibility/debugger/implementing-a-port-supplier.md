@@ -1,9 +1,6 @@
 ---
 title: Implémentation d’un fournisseur de Port | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985522"
 ---
 # <a name="implement-a-port-supplier"></a>Implémenter un fournisseur de port
 Un fournisseur de port fournit des ports à la demande sur le Gestionnaire de session de débogage (SDM). Un fournisseur de port doit être implémenté lors du débogage pour un ordinateur non-DCOM ou si un nouvel appareil nécessite une prise en charge. Par exemple, pour fournir le débogage à un téléphone portable, vous pouvez configurer un fournisseur de port qui fournit des ports, vous connecter pour le téléphone cellulaire (par exemple par le biais de runtime d’intégration ou d’une connexion de cellule) et énumère les processus et les programmes s’exécutant sur le téléphone.  

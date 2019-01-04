@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::GetCustomViewerCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::GetCustomViewerCount
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e609451af16d202828fac30cd0da133bf3bea73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e910ab8ee0f3915cc017d4ce7fda1e8b43c23513
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937424"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtient le nombre de visionneuses personnalisées qui peuvent être disponibles pour cette propriété.  
@@ -28,14 +25,14 @@ Obtient le nombre de visionneuses personnalisées qui peuvent être disponibles 
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetCustomViewerCount(  
-   ULONG* pcelt  
+HRESULT GetCustomViewerCount(  
+   ULONG* pcelt  
 );  
 ```  
   
 ```csharp  
-int GetCustomViewerCount(  
-   out uint pcelt  
+int GetCustomViewerCount(  
+   out uint pcelt  
 );  
 ```  
   

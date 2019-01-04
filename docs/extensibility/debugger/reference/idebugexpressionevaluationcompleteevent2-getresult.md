@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluationCompleteEvent2::GetResult
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96db3f4ea63f4d1bca5bce725db272791361f934
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a407438f307a25f4dbe87345d4d8167bfcb80358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887303"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 Obtient le résultat de l’évaluation de l’expression.  
@@ -28,13 +25,13 @@ Obtient le résultat de l’évaluation de l’expression.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetResult(   
+HRESULT GetResult(   
    IDebugProperty2** ppResult  
 );  
 ```  
   
 ```csharp  
-int GetResult(   
+int GetResult(   
    out IDebugProperty2 ppResult  
 );  
 ```  

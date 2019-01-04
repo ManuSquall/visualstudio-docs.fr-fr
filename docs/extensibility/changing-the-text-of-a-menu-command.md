@@ -1,9 +1,6 @@
 ---
 title: Modification du texte d’une commande de Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus, changing text
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df943221fc2f154e8f18007bd5f7ff5454434d84
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 71169b711695ee1997d5ed3b2cd95b79aff359aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965488"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Modifier le texte d’une commande de menu
 Les étapes suivantes montrent comment modifier l’étiquette de texte d’une commande de menu à l’aide de la <xref:System.ComponentModel.Design.IMenuCommandService> service.  

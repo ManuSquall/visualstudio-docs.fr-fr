@@ -1,9 +1,6 @@
 ---
 title: Modifications avec rupture dans Visual Studio 2017 extensibilité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841948"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -43,9 +40,9 @@ Modifications du format VSIX sont les suivantes :
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Création d’une extension pour Visual Studio 2017
 
-Concepteur d’outils pour la création de la nouvelle le format de manifeste VSIX v3 est maintenant disponible dans Visual Studio 2017. Consultez le document [Comment : migrer des projets d’extensibilité vers Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) pour plus d’informations sur l’utilisation des outils concepteurs ou effectuer des mises à jour manuelles au projet et le manifeste pour développer des extensions VSIX v3.
+Concepteur d’outils pour la création de la nouvelle le format de manifeste VSIX v3 est maintenant disponible dans Visual Studio 2017. Consultez le document [Comment : Migrer des projets d’extensibilité vers Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) pour plus d’informations sur l’utilisation des outils concepteurs ou effectuer des mises à jour manuelles au projet et le manifeste pour développer des extensions VSIX v3.
 
-## <a name="change-visual-studio-user-data-path"></a>Modification : Chemin de données utilisateur Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Modification : Chemin des données utilisateur Visual Studio
 
 Auparavant, une seule installation de chaque version majeure de Visual Studio peut exister sur chaque ordinateur. Pour prendre en charge les installations côte à côte de Visual Studio 2017, plusieurs chemins de données utilisateur pour Visual Studio peuvent exister sur l’ordinateur de l’utilisateur.
 
@@ -95,9 +92,9 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 ### <a name="visual-studio-registry"></a>Registre de Visual Studio
 
 * Auparavant, Visual Studio installé de clés de Registre dans le système **HKEY_LOCAL_MACHINE** et **HKEY_CURRENT_USER** ruches sous une clé spécifique de Visual Studio :
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: les clés de Registre créés par les programmes d’installation MSI et extensions de machine.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: clés de Registre créées par Visual Studio pour stocker des paramètres propres à l’utilisateur.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: une copie de la clé de Visual Studio HKLM ci-dessus, ainsi que les clés de Registre fusionné à partir de *.pkgdef* fichiers par les extensions.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Clés de Registre créées par les programmes d’installation MSI et des extensions par ordinateur.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Clés de Registre créées par Visual Studio pour stocker des paramètres propres à l’utilisateur.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: Une copie de la clé de Visual Studio HKLM ci-dessus, ainsi que les clés de Registre fusionné à partir de *.pkgdef* fichiers par les extensions.
 * Pour réduire l’impact sur le Registre, Visual Studio utilise désormais le [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) (fonction) pour stocker les clés de Registre dans un fichier binaire privé sous *[VSAPPDATA]\privateregistry.bin*. Uniquement un très petit nombre de clés de Visual Studio spécifiques reste dans le Registre système.
 
 * Code existant en cours d’exécution au sein du processus de Visual Studio n’est pas affecté. Visual Studio redirige toutes les opérations de Registre sous la clé HKCU Visual Studio-spécifique au Registre privé. Lire et écrire à d’autres emplacements de Registre continue à utiliser le Registre système.

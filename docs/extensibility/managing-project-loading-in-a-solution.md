@@ -1,9 +1,6 @@
 ---
 title: La gestion du chargement de projet dans une Solution | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f861f765305dc0ea4bdfd83326a5a4888239033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870149"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Gérer le chargement du projet dans une solution
 Solutions Visual Studio peuvent contenir un grand nombre de projets. Le comportement de Visual Studio par défaut est de charger tous les projets dans une solution au moment de que l’ouverture de la solution et non à autoriser l’utilisateur à accéder à tous les projets jusqu'à la fin du chargement de tous les. Lorsque le processus de chargement de projet dure plus de deux minutes, une barre de progression s’affiche, indiquant le nombre de projets chargés et le nombre total de projets. L’utilisateur peut décharger les projets tout en travaillant dans une solution avec plusieurs projets, mais cette procédure présente certains inconvénients : les projets déchargés ne sont pas générés dans le cadre d’une commande de régénérer la Solution, et les descriptions IntelliSense des types et membres de fermeture projets ne sont pas affichés.  

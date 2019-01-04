@@ -1,9 +1,6 @@
 ---
 title: Service Essentials | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867275"
 ---
 # <a name="service-essentials"></a>Éléments fondamentaux du service
 Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est lui-même une collection de VSPackages qui fournit des services aux autres VSPackages.  
   
- Par exemple, vous pouvez utiliser le service SVsActivityLog pour obtenir une interface IVsActivityLog, que vous pouvez utiliser pour écrire dans le journal d’activité. Pour plus d’informations, consultez [Comment : utiliser le journal d’activité](../../extensibility/how-to-use-the-activity-log.md).  
+ Par exemple, vous pouvez utiliser le service SVsActivityLog pour obtenir une interface IVsActivityLog, que vous pouvez utiliser pour écrire dans le journal d’activité. Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../../extensibility/how-to-use-the-activity-log.md).  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit également des services intégrés qui ne sont pas enregistrées. VSPackages peut remplacer intégrés ou d’autres services en fournissant un service de remplacement. Remplacement d’un seul service est autorisée pour n’importe quel service.  
   
@@ -39,7 +36,7 @@ Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensembl
   
 - Services ou les remplacements de service, sont chargées à la demande, autrement dit, le fournisseur de services est chargé lorsque le service qu’il fournit est demandé par un autre package Visual Studio.  
   
-- Pour prendre en charge le chargement à la demande, un fournisseur de services enregistre ses services globaux auprès [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [Comment : fournir un Service](../../extensibility/how-to-provide-a-service.md).  
+- Pour prendre en charge le chargement à la demande, un fournisseur de services enregistre ses services globaux auprès [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour plus d'informations, voir [Procédure : Fournir un Service](../../extensibility/how-to-provide-a-service.md).  
   
 - Après avoir obtenu un service, utilisez [QueryInterface](/cpp/atl/queryinterface) (code non managé) ou d’un transtypage (code managé) pour obtenir l’interface souhaitée, par exemple :  
   
@@ -63,7 +60,7 @@ Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensembl
   
 ## <a name="use-getglobalservice"></a>Utilisation d’un GetGlobalService  
   
-Parfois, vous devrez peut-être obtenir un service à partir d’une fenêtre outil ou le contrôle conteneur qui n’a pas été installé, ou bien a été installé avec un fournisseur de services qui ne sait pas sur le service que vous souhaitez. Par exemple, vous souhaiterez peut-être écrire dans le journal d’activité à partir d’un contrôle. Pour plus d’informations sur ces scénarios et d’autres, consultez [Comment : résoudre les problèmes des Services](../../extensibility/how-to-troubleshoot-services.md).  
+Parfois, vous devrez peut-être obtenir un service à partir d’une fenêtre outil ou le contrôle conteneur qui n’a pas été installé, ou bien a été installé avec un fournisseur de services qui ne sait pas sur le service que vous souhaitez. Par exemple, vous souhaiterez peut-être écrire dans le journal d’activité à partir d’un contrôle. Pour plus d’informations sur ces scénarios et d’autres, consultez [Comment : Dépanner les Services](../../extensibility/how-to-troubleshoot-services.md).  
   
 Vous pouvez obtenir la plupart des services de Visual Studio en appelant la méthode statique <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> (méthode).  
   
@@ -92,7 +89,7 @@ Heureusement, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> fo
     End If
     ```  
     
-    Ce code obtient un service SVsActivityLog et il effectue un cast en interface IVsActivityLog, qui peut être utilisée pour écrire dans le journal d’activité. Pour obtenir un exemple, consultez [Comment : utiliser le journal d’activité](../../extensibility/how-to-use-the-activity-log.md).  
+    Ce code obtient un service SVsActivityLog et il effectue un cast en interface IVsActivityLog, qui peut être utilisée pour écrire dans le journal d’activité. Pour obtenir un exemple, consultez [Comment : Utiliser le journal d’activité](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Liste des Services disponibles](../../extensibility/internals/list-of-available-services.md)   

@@ -1,9 +1,6 @@
 ---
 title: Dépannage de VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835969"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage et conseils pour résoudre les problèmes.  
@@ -53,7 +50,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
   
 5. Examinez le journal d’activité.  
   
-    Pour plus d’informations, consultez [Comment : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+    Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Pour plus d’informations sur les exceptions levées par l’IDE, cliquez sur **Exceptions** sur le **déboguer** menu pour activer les exceptions. Dans le **Exceptions** boîte de dialogue Sélectionner les types d’exceptions sur lequel vous souhaitez plus d’informations.  
   
@@ -92,7 +89,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
   
 2.  Utiliser le journal d’activité.  
   
-     Comportement de VSPackage de trace en écrivant des informations dans le journal d’activité à des points clés. Cette technique est particulièrement utile lorsque vous exécutez un VSPackage dans un environnement de détail. Pour plus d’informations, consultez [Comment : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+     Comportement de VSPackage de trace en écrivant des informations dans le journal d’activité à des points clés. Cette technique est particulièrement utile lorsque vous exécutez un VSPackage dans un environnement de détail. Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Utilisez les symboles publics.  
   

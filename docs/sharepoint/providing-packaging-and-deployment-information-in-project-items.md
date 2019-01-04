@@ -1,17 +1,12 @@
 ---
 title: En fournissant le Packaging and Deployment Information in Project Items | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SafeControlEntries
 - VS.SharePointTools.Project.ProjectOutputReference
 - VS.SharePointTools.Project.FeatureProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -29,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec29871cc6e5062f2d44fb8938872b5f0531f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843019"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fournir des informations d’empaquetage et de déploiement dans les éléments de projet
   Tous les éléments de projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ont des propriétés que vous pouvez utiliser pour fournir des données supplémentaires lorsque le projet est déployé sur SharePoint. Ces propriétés sont les suivantes :  
@@ -65,7 +60,7 @@ ms.locfileid: "49893297"
  Pour ajouter des propriétés de la fonctionnalité directement dans le fichier de fonctionnalité (*.feature*), appelez le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] méthode du modèle objet SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Si vous utilisez cette méthode, n’oubliez pas que la même règle sur l’ajout de valeurs de propriété de fonctionnalité identiques dans les propriétés de fonctionnalité s’applique également aux propriétés ajoutées directement au fichier de fonctionnalité.  
   
 ## <a name="feature-receiver"></a>Récepteur de fonctionnalité
- Récepteurs de fonctionnalité sont la fonctionnalité qui contient le code qui s’exécute lorsque certains événements se produisent à un élément de projet. Par exemple, vous pouvez définir des récepteurs de fonctionnalité qui s’exécutent lorsque la fonctionnalité est installée, activée ou mis à niveau. Une façon d’ajouter un récepteur de fonctionnalité consiste à ajouter directement à une fonctionnalité comme décrit dans [procédure pas à pas : ajout de récepteurs d’événements de fonctionnalité](../sharepoint/walkthrough-add-feature-event-receivers.md). Une autre méthode consiste à référencer un nom de classe de récepteur de fonctionnalité et d’un assembly dans le **récepteur de fonctionnalité** propriété.  
+ Récepteurs de fonctionnalité sont la fonctionnalité qui contient le code qui s’exécute lorsque certains événements se produisent à un élément de projet. Par exemple, vous pouvez définir des récepteurs de fonctionnalité qui s’exécutent lorsque la fonctionnalité est installée, activée ou mis à niveau. Une façon d’ajouter un récepteur de fonctionnalité consiste à ajouter directement à une fonctionnalité comme décrit dans [procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité](../sharepoint/walkthrough-add-feature-event-receivers.md). Une autre méthode consiste à référencer un nom de classe de récepteur de fonctionnalité et d’un assembly dans le **récepteur de fonctionnalité** propriété.  
   
 ### <a name="direct-method"></a>Méthode directe
  Lorsque vous ajoutez directement un récepteur de fonctionnalité à une fonctionnalité, un fichier de code est placé sous le **fonctionnalité** nœud dans l’Explorateur de solutions. Lorsque vous générez votre solution SharePoint, le code se compile dans un assembly et déploie sur SharePoint. Par défaut, les propriétés de fonctionnalité **Assembly du récepteur** et **classe de récepteur** référencer le nom de la classe et l’assembly.  
@@ -75,7 +70,7 @@ ms.locfileid: "49893297"
   
  Solution heure de création, la fonctionnalité de valeurs de propriété de récepteur dans la fonctionnalité et ses projets fusionnent pour définir les attributs ReceiverAssembly et ReceiverClass de l’élément de fonctionnalité dans le manifeste de fonctionnalité de la solution SharePoint (*.wsp* ) fichier. Par conséquent, si les valeurs de propriété Assembly et le nom de classe d’un élément de projet et une fonctionnalité sont spécifiées, les valeurs de propriété des élément et fonctionnalité de projet doivent correspondre. Si les valeurs ne correspondent pas, vous recevrez une erreur de validation. Si vous voulez un élément de projet pour référencer un assembly de récepteur de fonctionnalité différente de celle sa fonctionnalité, déplacez-le vers une autre fonctionnalité.  
   
- Si vous référencez un assembly de récepteur de fonctionnalité qui n’est pas déjà sur le serveur, vous devez également inclure le fichier d’assembly dans le package ; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne l’ajoutez pas pour vous. Lorsque vous déployez la fonctionnalité, le fichier d’assembly est copié pour que le système [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] ou le dossier Bin dans le répertoire physique SharePoint. Pour plus d’informations, consultez Comment : [Comment : ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Si vous référencez un assembly de récepteur de fonctionnalité qui n’est pas déjà sur le serveur, vous devez également inclure le fichier d’assembly dans le package ; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne l’ajoutez pas pour vous. Lorsque vous déployez la fonctionnalité, le fichier d’assembly est copié pour que le système [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] ou le dossier Bin dans le répertoire physique SharePoint. Pour plus d’informations, consultez Comment : [Guide pratique pour Ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Pour plus d’informations sur les récepteurs, consultez [récepteur d’événements de fonctionnalité](http://go.microsoft.com/fwlink/?LinkID=169574) et [événements de fonctionnalité](http://go.microsoft.com/fwlink/?LinkID=169575).  
   
@@ -84,14 +79,14 @@ ms.locfileid: "49893297"
   
  Références de sortie de projet sont généralement des assemblys, mais dans certains cas (par exemple, des projets Silverlight) peuvent être des autres types de fichiers.  
   
- Pour plus d’informations, consultez [Comment : ajouter une référence de sortie de projet](../sharepoint/how-to-add-a-project-output-reference.md).  
+ Pour plus d'informations, voir [Procédure : Ajouter une référence de sortie de projet](../sharepoint/how-to-add-a-project-output-reference.md).  
   
 ## <a name="safe-control-entries"></a>Entrées de contrôle sécurisé
- SharePoint fournit un mécanisme de sécurité, les entrées de contrôle sécurisé pour limiter l’accès des utilisateurs non approuvés à certains contrôles. Par conception, SharePoint permet à des utilisateurs non approuvés charger et créer des pages ASPX sur le serveur SharePoint. Pour empêcher ces utilisateurs d’ajouter du code unsafe aux pages ASPX, SharePoint limite leur accès à *contrôles sécurisés*. Contrôles sécurisés sont des contrôles ASPX et composants WebPart désignés comme sécurisés et qui peut être utilisé par n’importe quel utilisateur sur votre site. Pour plus d’informations, consultez [étape 4 : ajouter votre composant WebPart à la liste des contrôles](http://go.microsoft.com/fwlink/?LinkID=171014).  
+ SharePoint fournit un mécanisme de sécurité, les entrées de contrôle sécurisé pour limiter l’accès des utilisateurs non approuvés à certains contrôles. Par conception, SharePoint permet à des utilisateurs non approuvés charger et créer des pages ASPX sur le serveur SharePoint. Pour empêcher ces utilisateurs d’ajouter du code unsafe aux pages ASPX, SharePoint limite leur accès à *contrôles sécurisés*. Contrôles sécurisés sont des contrôles ASPX et composants WebPart désignés comme sécurisés et qui peut être utilisé par n’importe quel utilisateur sur votre site. Pour plus d’informations, consultez [étape 4 : Ajouter votre composant WebPart à la liste de contrôles sécurisés](http://go.microsoft.com/fwlink/?LinkID=171014).  
   
  Chaque élément de projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] possède une propriété appelée **entrées de contrôle sécurisé** qui a deux sous-propriétés booléennes : **Safe** et **protégé contre les scripts**. La propriété sécurisé Spécifie si les utilisateurs non approuvés peuvent accéder à un contrôle. La propriété protégé contre les scripts spécifie si les utilisateurs non approuvés peuvent afficher et modifier les propriétés d’un contrôle.  
   
- Entrées de contrôle sécurisé sont référencées sur une base de l’assembly. Vous ajoutez des entrées de contrôle sécurisé à l’assembly d’un projet en les entrant dans l’élément de projet **entrées de contrôle sécurisé** propriété. Toutefois, vous pouvez également ajouter des entrées de contrôle sécurisé à l’assembly d’un projet via la **avancé** onglet dans le **Concepteur de packages** lorsque vous ajoutez un assembly supplémentaire au package. Pour plus d’informations, consultez [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md) ou [l’inscription d’un Assembly de composant WebPart en tant que](http://go.microsoft.com/fwlink/?LinkID=171013).  
+ Entrées de contrôle sécurisé sont référencées sur une base de l’assembly. Vous ajoutez des entrées de contrôle sécurisé à l’assembly d’un projet en les entrant dans l’élément de projet **entrées de contrôle sécurisé** propriété. Toutefois, vous pouvez également ajouter des entrées de contrôle sécurisé à l’assembly d’un projet via la **avancé** onglet dans le **Concepteur de packages** lorsque vous ajoutez un assembly supplémentaire au package. Pour plus d'informations, voir [Procédure : Marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md) ou [l’inscription d’un Assembly de composant WebPart en tant que](http://go.microsoft.com/fwlink/?LinkID=171013).  
   
 ### <a name="xml-entries-for-safe-controls"></a>Entrées XML pour les contrôles sécurisés
  Lorsque vous ajoutez une entrée de contrôle sécurisé à un élément de projet ou à l’assembly du projet, une référence est écrite dans le manifeste du package au format suivant :  

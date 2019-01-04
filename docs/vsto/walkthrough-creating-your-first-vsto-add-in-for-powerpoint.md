@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Créer votre premier complément pour PowerPoint'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c9bef0c76f0c01c620670bf67882fd90e2e1ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875496"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procédure pas à pas : Créer votre premier complément pour PowerPoint
   Cette procédure pas à pas vous montre comment créer un complément, VSTO pour Microsoft Office PowerPoint. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application, quelles que soient les présentations ouvertes. Pour plus d’informations, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -139,5 +136,3 @@ ms.locfileid: "49882586"
  [Générer des solutions Office](../vsto/building-office-solutions.md)   
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)  
-  
-  

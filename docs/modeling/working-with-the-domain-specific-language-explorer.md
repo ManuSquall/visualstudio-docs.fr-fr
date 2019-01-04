@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886564"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilisation de l'Explorateur de langage spécifique à un domaine
 Le **Explorateur DSL** affiche plusieurs types d’informations dans une arborescence. Pour plus d’informations sur la plupart des éléments dans l’Explorateur DSL, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).

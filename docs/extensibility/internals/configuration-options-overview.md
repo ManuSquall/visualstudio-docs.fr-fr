@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble des Options de configuration | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fde39c346313dc66d5d94a5beb0e9e3b256ea436
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ed12330a2acce09a5fb8a9aabc3b434b4c42fd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956008"
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des options de configuration
 Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build décrit avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations, *déboguer* et *version*. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’ActiveX éditeur ou comme un composant sur place. Projets n’avez pas besoin de prendre en charge plusieurs configurations, toutefois. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.  

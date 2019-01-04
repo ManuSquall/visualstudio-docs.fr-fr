@@ -1,9 +1,6 @@
 ---
-title: 'Comment : copier et coller des formes dans un document Visio par programme'
-ms.custom: ''
+title: 'Procédure : Copier et coller des formes dans un document Visio par programme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856486"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Comment : copier et coller des formes dans un document Visio par programme
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procédure : Copier et coller des formes dans un document Visio par programme
   Vous pouvez copier des formes par programmation sur une page d’un document, et les coller dans une nouvelle page du même document. Vous pouvez choisir de les coller à l’emplacement par défaut (au centre de la fenêtre active) ou aux mêmes coordonnées que dans la page d’origine.  
   
 ## <a name="copy-and-paste-shapes"></a>Copier et coller des formes  
@@ -52,6 +49,4 @@ ms.locfileid: "50671493"
  [Solutions Visio](../vsto/visio-solutions.md)   
  [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)   
  [Utilisez des formes Visio](../vsto/working-with-visio-shapes.md)   
- [Comment : ajouter par programmation des formes à un document Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [Guide pratique pour Ajouter par programmation des formes à un document Visio](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

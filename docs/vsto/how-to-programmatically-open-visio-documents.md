@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ouvrir des documents Visio par programmation'
-ms.custom: ''
+title: 'Procédure : Ouvrir des documents Visio par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875720"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Comment : ouvrir des documents Visio par programmation
-  Il existe deux méthodes pour ouvrir des documents Microsoft Office Visio : ouvrir et OpenEx. La méthode OpenEx est identique à la méthode Open, à ceci près qu’il fournisse des arguments dans lesquels l’appelant peut indiquer comment le document s’ouvre.  
+# <a name="how-to-programmatically-open-visio-documents"></a>Procédure : Ouvrir des documents Visio par programmation
+  Il existe deux méthodes pour ouvrir des documents Microsoft Office Visio : Ouvrez et OpenEx. La méthode OpenEx est identique à la méthode Open, à ceci près qu’il fournisse des arguments dans lesquels l’appelant peut indiquer comment le document s’ouvre.  
   
  Pour plus d’informations sur le modèle objet, consultez la documentation de référence de VBA pour la méthode [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) et la méthode [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) .  
   
@@ -54,9 +51,7 @@ ms.locfileid: "50672676"
 ## <a name="see-also"></a>Voir aussi  
  [Solutions Visio](../vsto/visio-solutions.md)   
  [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)   
- [Comment : créer par programme des documents Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Comment : fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Comment : enregistrer des documents Visio par programmation](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Comment : imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Guide pratique pour Créer par programme des documents Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Guide pratique pour Fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Guide pratique pour Enregistrer des documents Visio par programmation](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Guide pratique pour Imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887865"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 Dans Visual Studio Visualization and Modeling SDK, vous pouvez définir l’image d’arrière-plan pour un concepteur généré à l’aide de code personnalisé.
@@ -45,7 +44,7 @@ Dans Visual Studio Visualization and Modeling SDK, vous pouvez définir l’imag
 
 11. Si Resources.Designer.cs est manquant, cliquez sur le fichier Resources.resx dans **l’Explorateur de solutions**.
 
-12. Dans le **propriétés** fenêtre, définissez la `Custom Tool` propriété `ResXFileCodeGenerator`.
+12. Dans la fenêtre **Propriétés** , définissez la propriété `Custom Tool` sur `ResXFileCodeGenerator`.
 
 13. Dans **l’Explorateur de solutions**, cliquez sur le projet Dsl, pointez sur **ajouter**, puis cliquez sur **nouveau dossier**.
 

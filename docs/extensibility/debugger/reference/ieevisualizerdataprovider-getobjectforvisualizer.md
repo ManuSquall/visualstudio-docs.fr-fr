@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af233b7a4a7fe482ce258811c8a2833f335ae1f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f977c2e94ef8a41371c4f79bad510be74518d4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911713"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Cette méthode obtient l’objet qui représente ce visualiseur.  
@@ -28,14 +25,14 @@ Cette méthode obtient l’objet qui représente ce visualiseur.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
+int GetObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   

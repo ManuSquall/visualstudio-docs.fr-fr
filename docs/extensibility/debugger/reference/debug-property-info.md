@@ -1,9 +1,6 @@
 ---
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_PROPERTY_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612865d08142a56b2908707839ad66b60ea2de9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb1a135cfca3e358d740f6c6ef23b2040843ff4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927127"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Contient des informations sur une propriété de débogage.  
@@ -28,7 +25,7 @@ Contient des informations sur une propriété de débogage.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct tagDEBUG_PROPERTY_INFO {   
+typedef struct tagDEBUG_PROPERTY_INFO {   
    DEBUGPROP_INFO_FLAGS dwValidFields;  
    BSTR                 bstrFullName;  
    BSTR                 bstrName;  
@@ -40,7 +37,7 @@ typedef struct tagDEBUG_PROPERTY_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_PROPERTY_INFO {   
+public struct DEBUG_PROPERTY_INFO {   
    public uint            dwValidFields;  
    public string          bstrFullName;  
    public string          bstrName;  
@@ -78,12 +75,12 @@ public struct DEBUG_PROPERTY_INFO {
   
  Cette structure est passée à la [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) méthode où il est renseigné. Cette structure est également retournée en tant que partie d’une liste de cette structure à partir de la [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) et [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) méthodes.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

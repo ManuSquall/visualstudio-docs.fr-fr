@@ -1,9 +1,6 @@
 ---
 title: IDebugPortEx2::TerminateProcess | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortEx2::TerminateProcess
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf66fd70a9dbc33f47cfc3be5646ccf29e5d917d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41111f4b2f9ded652e1e2cd4870bef4c99eaa79a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885033"
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
 Arrête un processus.  
@@ -28,13 +25,13 @@ Arrête un processus.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT TerminateProcess(   
+HRESULT TerminateProcess(   
    IDebugProcess2* pPortProcess  
 );  
 ```  
   
 ```csharp  
-int TerminateProcess(   
+int TerminateProcess(   
    IDebugProcess2 pPortProcess  
 );  
 ```  
