@@ -1,9 +1,6 @@
 ---
 title: À l’intérieur de l’éditeur principal | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828522"
 ---
 # <a name="inside-the-core-editor"></a>À l’intérieur de l’éditeur principal
 Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal est un ensemble de plusieurs composants qui vous permettent de modifier et interroger des informations textuelles. Si vous avez personnalisé l’éditeur principal à l’aide de l’API héritée, vous pouvez continuer à utiliser ces personnalisations, qui seront acheminées via les adaptateurs d’éditeur. Il est recommandé, cependant, que vous deviez adapter vos personnalisations vers le nouvel éditeur API.  
@@ -47,7 +44,7 @@ Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal 
  [Événements de mémoire tampon de texte dans l’API héritée](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Fournit une liste des interfaces qui sont utilisées pour la notification des événements de mémoire tampon de texte.  
   
- [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Guide pratique pour S’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Décrit comment signaler les événements de mémoire tampon de texte.  
   
  [Utilisez le Gestionnaire de texte pour surveiller les paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -75,8 +72,8 @@ Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal 
  [Utiliser des marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Explique le concept des marqueurs de texte et comment elles sont utilisées dans l’éditeur principal et répertorie les interfaces qui sont utilisées pour accéder et gérer des marqueurs de texte.  
   
- [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)  
+ [Guide pratique pour Ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)  
  Fournit des instructions détaillées sur la création d’un marqueur de texte et comment ajouter une commande personnalisée à un menu contextuel.  
   
- [Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)  
+ [Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)  
  Fournit des instructions détaillées sur la création d’un marqueur de texte personnalisé et comment fournir le type de marqueur en tant que service.

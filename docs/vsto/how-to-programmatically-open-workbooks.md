@@ -1,9 +1,6 @@
 ---
-title: 'Comment : ouvrir des classeurs par programmation'
-ms.custom: ''
+title: 'Procédure : Ouvrir des classeurs par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd8f6786bd2f7b54ce6b50f2493ebd5d45bba51e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ab91a1e9a89edee013b559f1653c1607e7b8c884
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860947"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>Comment : ouvrir des classeurs par programmation
+# <a name="how-to-programmatically-open-workbooks"></a>Procédure : Ouvrir des classeurs par programmation
   Le <xref:Microsoft.Office.Interop.Excel.Workbooks> collection dans Microsoft Office Excel permet de travailler avec tous les classeurs ouverts et d’ouvrir des classeurs.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -42,12 +39,10 @@ ms.locfileid: "35257356"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des classeurs](../vsto/working-with-workbooks.md)   
- [Comment : ouvrir des fichiers texte en tant que classeurs par programmation](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [Comment : créer par programmation des classeurs](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)   
- [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Guide pratique pour Ouvrir des fichiers texte en tant que classeurs par programmation](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [Guide pratique pour Créer par programmation des classeurs](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [Guide pratique pour Enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Guide pratique pour Fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

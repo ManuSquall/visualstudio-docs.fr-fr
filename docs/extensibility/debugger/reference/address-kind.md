@@ -1,9 +1,6 @@
 ---
 title: ADDRESS_KIND | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - ADDRESS_KIND
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3138b4151c1f78a05daf2320d5979d5c6e15db42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e4c103884da28bedfd221e26b159e9e8f98e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867421"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Spécifie les types d’adresses.  
@@ -87,12 +84,12 @@ public enum enum_ADDRESS_KIND {
 ## <a name="remarks"></a>Notes  
  Le [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) méthode retourne le [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure qui contient une union de structures possible, le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure. Le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure contient la `ADDRESS_KIND` valeur et explique comment interpréter le champ union.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

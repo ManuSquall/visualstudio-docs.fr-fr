@@ -1,9 +1,6 @@
 ---
 title: 'Liste de vérification : Création d’un Service de langage hérité | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba21cf1830f389acbcd72d5e10a688f009871b25
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821112"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Liste de vérification : Créer un service de langage hérité
 La liste de vérification suivante résume les étapes de base que vous devez prendre afin de créer un service de langage pour la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur principal. Pour intégrer votre service de langage dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez créer un évaluateur d’expression de débogage. Pour plus d’informations, consultez [écrire un évaluateur d’expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) dans le [extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -112,7 +109,7 @@ La liste de vérification suivante résume les étapes de base que vous devez pr
   
 -   mode Plan  
   
-     Il existe plusieurs options pour prendre en charge le mode plan. Par exemple, vous pouvez prendre en charge la **réduire aux définitions** commande, indiquez les régions en mode de plan contrôlés par l’éditeur ou prennent en charge les régions contrôlé par le client. Pour plus d’informations, consultez [Comment : fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+     Il existe plusieurs options pour prendre en charge le mode plan. Par exemple, vous pouvez prendre en charge la **réduire aux définitions** commande, indiquez les régions en mode de plan contrôlés par l’éditeur ou prennent en charge les régions contrôlé par le client. Pour plus d'informations, voir [Procédure : Fournir une prise en charge étendue de mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 -   Inscription du service de langage  
   

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869253"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
@@ -97,7 +96,7 @@ En général, l'espace de noms de l'élément référencé (dans cet exemple, la
 
 Le système moniker exige que les enfants dans l'arborescence XML aient des noms distincts. Pour cette raison, des erreurs de validation se produisent si vous essayez d'enregistrer une définition de langage spécifique à un domaine ayant, par exemple, deux classes du même nom. Vous devez toujours corriger ces erreurs de doublons avant d'enregistrer le fichier DslDefinition.dsl pour pouvoir le recharger ultérieurement.
 
-Chaque type à son propre type de moniker : DomainClassMoniker, DomainRelationshipMoniker, et ainsi de suite.
+Chaque type a son propre type de moniker : DomainClassMoniker, DomainRelationshipMoniker et ainsi de suite.
 
 ## <a name="types"></a>Types
 
@@ -228,7 +227,7 @@ Par exemple, la relation Connection relie les membres de la classe OutPort aux m
 
 Chaque relation contient des rôles sources et cibles ayant les attributs suivants :
 
--   L'attribut `RolePlayer` fait référence à la classe de domaine des instances liées : OutPort pour la source, InPort pour la cible.
+-   Le `RolePlayer` attribut fait référence à la classe de domaine des instances liées : OutPort pour la source, InPort pour la cible.
 
 -   L'attribut `Multiplicity` a quatre valeurs possibles (ZeroMany, ZeroOne, One et OneMany). Cet attribut fait référence au nombre de liens de cette relation qui peuvent être associés à un auteur de rôle.
 
