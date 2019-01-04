@@ -1,9 +1,6 @@
 ---
 title: Personnalisation de l’interface utilisateur Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924824"
 ---
 # <a name="office-ui-customization"></a>Personnalisation de l’interface utilisateur Office
   Vous pouvez personnaliser l'interface utilisateur des applications Microsoft Office à l'aide des outils de développement Office dans Visual Studio. Cette rubrique répertorie les fonctionnalités de l’interface utilisateur que vous pouvez personnaliser, comme décrit dans les sections suivantes :  
@@ -96,7 +93,7 @@ ms.locfileid: "49836762"
  Pour plus d’informations, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [Windows forms des contrôles sur la vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menus contextuels  
- Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un **ruban (XML)** élément à votre projet Office, vous pouvez ajouter le XML dans le fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation de XML pour créer des menus contextuels, consultez [Comment : ajouter des commandes aux menus contextuels](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un **ruban (XML)** élément à votre projet Office, vous pouvez ajouter le XML dans le fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation de XML pour créer des menus contextuels, consultez [Comment : Ajouter des commandes aux menus contextuels](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836762"
  [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
  [Volets Office personnalisés](../vsto/custom-task-panes.md)   
  [Utiliser des contrôles WPF dans les solutions Office](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Comment : afficher complément, les erreurs d’interface utilisateur](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Guide pratique pour Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Guide pratique pour Afficher des erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [Procédure pas à pas : Collecter des données à l’aide d’un formulaire Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  

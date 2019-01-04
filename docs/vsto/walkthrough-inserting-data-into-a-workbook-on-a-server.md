@@ -1,9 +1,6 @@
 ---
 title: 'Procédure pas à pas : Insérer des données dans un classeur sur un serveur'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: aeba8355a4d7b9934f045a828efc251500d3e77c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947138"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procédure pas à pas : Insérer des données dans un classeur sur un serveur
   Cette procédure pas à pas montre comment insérer des données dans un jeu de données est mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.

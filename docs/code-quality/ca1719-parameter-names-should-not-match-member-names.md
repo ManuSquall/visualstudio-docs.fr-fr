@@ -1,8 +1,7 @@
 ---
-title: 'CA1719 : Les noms des paramètres ne doivent pas être identiques aux noms des membres'
+title: 'CA1719 : Noms de paramètres ne doivent pas correspondre aux noms de membres'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a10bd39ef34d207d910c3bc428ba862019369e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ca40c478eb383025755bff147dd9e0f47cecb79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868876"
 ---
-# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719 : Les noms des paramètres ne doivent pas être identiques aux noms des membres
+# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719 : Noms de paramètres ne doivent pas correspondre aux noms de membres
 
 |||
 |-|-|
@@ -45,8 +44,8 @@ ms.locfileid: "49924016"
  Pour un nouveau développement, aucun connus scénarios se produisent où vous devez supprimer un avertissement de cette règle. Pour livrer des bibliothèques, vous devrez peut-être supprimer un avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707 : Identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)

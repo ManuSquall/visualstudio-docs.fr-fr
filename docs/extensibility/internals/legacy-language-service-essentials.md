@@ -1,9 +1,6 @@
 ---
 title: Éléments fondamentaux du Service de langage ancien | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847202"
 ---
 # <a name="legacy-language-service-essentials"></a>Éléments fondamentaux du service de langage hérité
 Vous devez fournir un service de langage pour intégrer un langage de programmation dans Visual Studio. Cette rubrique décrit les fonctionnalités disponibles dans les services de langage hérité.  
@@ -50,4 +47,3 @@ Vous devez fournir un service de langage pour intégrer un langage de programmat
 |-----------------------| - |
 | Évaluateurs d’expression | Prend en charge la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur en validant les points d’arrêt et en fournissant une liste d’expressions à afficher dans le **automatique** fenêtre de débogage.<br /><br /> Pour plus d’informations, consultez [prise en charge du Service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Outils de consultation de symbole | Prend en charge **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels**, et **symbole résultats de la recherche**. |
-

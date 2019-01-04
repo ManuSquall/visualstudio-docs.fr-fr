@@ -1,9 +1,6 @@
 ---
-title: 'Comment : applications Office de cible via les assemblys PIA'
-ms.custom: ''
+title: 'Procédure : Cibler les applications Office via les assemblys PIA'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845900"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Comment : applications Office de cible via les assemblys PIA
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procédure : Cibler les applications Office via les assemblys PIA
   Quand vous créez un projet Office, Visual Studio ajoute automatiquement des références aux assemblys PIA (Primary Interop Assembly) Microsoft Office qui sont requises pour générer le projet Vous devez ajouter des références aux autres assemblys PIA dans les scénarios suivants :  
   
 - Vous souhaitez utiliser des fonctionnalités d'autres applications Microsoft Office dans votre projet. Par exemple, vous pouvez utiliser des fonctionnalités de Microsoft Office Excel dans un projet pour Microsoft Office Word.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863748"
  [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)   
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)   
  [Développer des solutions Office](../vsto/developing-office-solutions.md)   
- [Comment : assemblys PIA Office d’installation](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Guide pratique pour Installer les assemblys PIA Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

@@ -2,7 +2,6 @@
 title: Intégration de littéraux XML à l'Explorateur de schémas XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c5f0ddbb421f63f9e1483d7a247a54ecbfe2eb
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 57997b2fa338c69b1c253b4ea62862e179da43de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873514"
 ---
-# <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Intégration des littéraux XML avec l’Explorateur de schémas XML
+# <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Intégration de littéraux XML avec l’Explorateur de schémas XML
 
-Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](http://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML en continu directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](http://go.microsoft.com/fwlink/?LinkId=140325).
 
 ## <a name="how-to"></a>Procédure
 
@@ -33,4 +32,4 @@ Cette opération ouvre le **Explorateur de schémas XML** côte à côte avec vo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : utiliser le Concepteur de schémas XML avec des littéraux XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)
+- [Guide pratique pour Utiliser le Concepteur de schémas XML avec des littéraux XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

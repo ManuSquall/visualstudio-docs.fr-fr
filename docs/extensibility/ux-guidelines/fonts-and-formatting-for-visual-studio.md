@@ -1,9 +1,6 @@
 ---
 title: Polices et mise en forme pour Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989041"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -107,59 +104,59 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
  **Apparaît sous la forme :** pt 34 Segoe UI Light  
  **Utilisation pour :** (rare) unique de marque l’interface utilisateur, comme dans la Page de démarrage
 
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué.  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
 #### <a name="310-environment-font--light"></a>Police d’environnement 310 % + clair  
- **Apparaît sous la forme :** pt 28 Segoe UI Light   
+ **Apparaît sous la forme :** 28 pt Segoe UI Light   
  **Utilisation pour :** signature grande boîte de dialogue, hormis principales titre dans les rapports  
   
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué.  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
 #### <a name="200-environment-font--semilight"></a>Police d’environnement 200 % + Semilight  
- **Apparaît sous la forme :** 18 pt Segoe UI Semilight    
+ **Apparaît sous la forme :** Remplacez-les par 18 pt Segoe UI Semilight    
  **Utilisation pour :** sous-titres, les titres des petites et moyennes des boîtes de dialogue  
   
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment : 
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment : 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué :  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué :  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
@@ -167,19 +164,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Apparaît sous la forme :** 14 pt Segoe UI    
  **Utilisation pour :** des titres de section de document et l’interface utilisateur ou des rapports  
   
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué :  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué :  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
@@ -187,19 +184,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Apparaît sous la forme :** 12 pt Segoe UI    
  **Utilisation pour :** sous-titres plus petits dans les boîtes de dialogue de signature et de document et l’interface utilisateur  
   
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué :  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué :  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
@@ -207,19 +204,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Apparaît sous la forme :** 11 pt Segoe UI    
  **Utilisation pour :** section des en-têtes dans les boîtes de dialogue de signature, les nœuds dans l’arborescence, navigation par onglets vertical de haut  
   
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué :  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué :  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Apparaît sous la forme :** en gras 9 pt Segoe UI    
  **Utilisation pour :** étiquettes et des sous-titres dans les boîtes de dialogue de signature, des rapports et des documents bien l’interface utilisateur  
   
- **Code procédural :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
+ **Code procédural :** Où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML :** définir le style du TextBlock ou Label comme indiqué :  
+ **XAML :** Définir le style du TextBlock ou Label, comme indiqué :  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -325,11 +322,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Première lettre en majuscule  
  Première lettre en majuscule est un style dans lequel les premières lettres de la plupart ou tous les mots dans une expression sont en majuscules. Dans Visual Studio, majuscule est utilisé pour le nombre d’éléments, y compris :  
   
-- **Info-bulles.** Exemple : « aperçu les éléments sélectionnés »  
+- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »  
   
-- **En-têtes de colonne.** Exemple : « réponse système »  
+- **En-têtes de colonne.** Exemple : « Réponse système »  
   
-- **Éléments de menu.** Exemple : « enregistrer tout »  
+- **Éléments de menu.** Exemple : « Enregistrer tout »  
   
   Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :  
   
@@ -356,9 +353,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Début de phrase  
  Casse de la phrase est la méthode de mise en majuscules standard pour l’écriture dans lequel seul le premier mot de la phrase est en majuscules, ainsi que les noms propres et du pronom « I ». En règle générale, la casse de la phrase est plus facile pour une audience internationale pour la lecture, en particulier lorsque le contenu sera traduit par un ordinateur. Utilisez la casse de la phrase pour :  
   
-1.  **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « le chargement de fichier projet »  
+1.  **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »  
   
-2.  **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « sélectionner tous les éléments dans la liste »  
+2.  **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »  
   
 ### <a name="text-formatting"></a>Mise en forme de texte  
  Texte par défaut de mise en forme dans Visual Studio 2013 est contrôlé par [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de s’assurer une apparence de la police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.  
@@ -412,37 +409,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilisation :** rares. Unique interface uniquement.<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser léger<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** pt 34 Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> *Pas utilisé actuellement. Peut être utilisé dans la Page de démarrage.*|  
+|**Utilisation :** Rares. Unique interface uniquement.<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser léger<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** pt 34 Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> *Pas utilisé actuellement. Peut être utilisé dans la Page de démarrage.*|  
   
 #### <a name="310-environment-font--light"></a>Police d’environnement 310 % + clair  
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Titre plus grande dans les boîtes de dialogue de signature<br />-Titre de rapport principal<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser léger<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** pt 28 Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 310 % &#43; titre clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
+|**Utilisation :**<br /><br /> -Titre plus grande dans les boîtes de dialogue de signature<br />-Titre de rapport principal<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser léger<br /><br /> **Ne pas :**<br /><br /> -Utilisation de l’interface utilisateur autre que de la signature de l’interface utilisateur comme Page de démarrage<br />-En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 28 pt Segoe UI Light<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 310 % &#43; titre clair](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Police d’environnement 200 % + Semilight  
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Les sous-titres<br />-Titres des petites et moyennes des boîtes de dialogue<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser le poids de Semilight<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 18 pt Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 200 % &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
+|**Utilisation :**<br /><br /> -Les sous-titres<br />-Titres des petites et moyennes des boîtes de dialogue<br /><br /> **Procédez comme :**<br /><br /> -Utilisez la casse de la phrase<br />-Toujours utiliser le poids de Semilight<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** Remplacez-les par 18 pt Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 200 % &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
   
 #### <a name="155-environment-font"></a>Police d’environnement 155 %  
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Les titres de section document bien l’interface utilisateur<br />-Rapports<br /><br /> **:** Majuscule<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les contrôles standards de Visual Studio<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Utilisation :**<br /><br /> -Les titres de section document bien l’interface utilisateur<br />-Rapports<br /><br /> **Procédez comme :** Utilisez la casse de la phrase<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les contrôles standards de Visual Studio<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
   
 #### <a name="133-environment-font"></a>Police d’environnement 133 %  
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Sous-titres plus petits dans les boîtes de dialogue de signature<br />-Sous-titres plus petits dans le document et l’interface utilisateur<br /><br /> **:** Majuscule<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les contrôles standards de Visual Studio<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 133 %](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
+|**Utilisation :**<br /><br /> -Sous-titres plus petits dans les boîtes de dialogue de signature<br />-Sous-titres plus petits dans le document et l’interface utilisateur<br /><br /> **Procédez comme :** Utilisez la casse de la phrase<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les contrôles standards de Visual Studio<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 133 %](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
   
 #### <a name="122-environment-font"></a>Police d’environnement 122 %  
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -En-têtes de section dans les boîtes de dialogue de signature<br />-Nœuds du plus haut dans l’arborescence<br />-Navigation par onglets vertical<br /><br /> **:** Majuscule<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les contrôles standards de Visual Studio<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 11 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 122 %](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
+|**Utilisation :**<br /><br /> -En-têtes de section dans les boîtes de dialogue de signature<br />-Nœuds du plus haut dans l’arborescence<br />-Navigation par onglets vertical<br /><br /> **Procédez comme :** Utilisez la casse de la phrase<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisation de corps de texte<br />-Utiliser dans les contrôles standards de Visual Studio<br />-Utiliser dans les fenêtres Outil|**Apparaît sous la forme :** 11 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 122 %](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Police d’environnement + gras  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilisation :** tous les autres textes<br /><br /> **:** Majuscule<br /><br /> **Ne :** italique ou gras italique|**Apparaît sous la forme :** 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|  
+|**Utilisation :** Tous les autres textes<br /><br /> **Procédez comme :** Utilisez la casse de la phrase<br /><br /> **Ne pas :** Italique ou gras italique|**Apparaît sous la forme :** 9 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Marge intérieure et l’espacement  
  En-têtes nécessitent d’espace autour d’elles afin de leur donner l’importance approprié. Cet espace varie en fonction de la taille en points et les autres sont proche de l’en-tête, par exemple une barre horizontale ou une ligne de texte dans la police d’environnement.  

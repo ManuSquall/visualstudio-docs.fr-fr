@@ -1,9 +1,6 @@
 ---
 title: L’instanciation de l’éditeur principal à l’aide de l’API héritée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838162"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Instancier l’éditeur principal à l’aide de l’API héritée
 L’éditeur est responsable de la modification des fonctions telles que l’insertion, suppression, copier et coller de texte. Il combine ces fonctions avec les fonctions fournies par les services de langage, telles que la coloration du texte, de mise en retrait et de saisie semi-automatique des instructions IntelliSense.  
@@ -65,7 +62,7 @@ L’éditeur est responsable de la modification des fonctions telles que l’ins
   
  Si le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> méthode retourne la même commande GUID en tant que l’éditeur de texte, l’instance de l’éditeur principal obtient automatiquement la valeur par défaut des touches de raccourci.  
   
- Pour obtenir des informations générales, consultez [procédure pas à pas : créer un cœur éditeur et l’inscription d’un type de fichier éditeur](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Pour obtenir des informations générales, consultez [procédure pas à pas : Créer un cœur éditeur et l’inscription d’un type de fichier éditeur](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [À l’intérieur de l’éditeur principal](../extensibility/inside-the-core-editor.md)   

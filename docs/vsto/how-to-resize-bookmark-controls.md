@@ -1,9 +1,6 @@
 ---
-title: 'Comment : redimensionner les contrôles Bookmark'
-ms.custom: ''
+title: 'Procédure : Redimensionner les contrôles Bookmark'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942437"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Comment : redimensionner les contrôles Bookmark
+# <a name="how-to-resize-bookmark-controls"></a>Procédure : Redimensionner les contrôles Bookmark
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> quand vous l’ajoutez à un document Microsoft Office Word. Vous pouvez également le redimensionner ultérieurement.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924835"
   
    C’est utile en cas de modification substantielle de la taille ou de l’emplacement d’un signet.  
   
-  Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> au document de votre projet au moment du design ou au moment de l'exécution. Dans les projets de complément VSTO, vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles à tout document ouvert au moment de l’exécution. Pour plus d’informations, consultez [Comment : ajouter un signet de contrôles à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> au document de votre projet au moment du design ou au moment de l'exécution. Dans les projets de complément VSTO, vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles à tout document ouvert au moment de l’exécution. Pour plus d'informations, voir [Procédure : Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -91,11 +88,9 @@ ms.locfileid: "49924835"
 3.  Dans la boîte de dialogue **Signet** , sélectionnez le nom du signet à redimensionner et cliquez sur **Ajouter**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Guide pratique pour Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
- [Comment : redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Comment : redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Guide pratique pour Redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Guide pratique pour Redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

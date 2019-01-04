@@ -1,9 +1,6 @@
 ---
-title: 'Comment : lire et écrire aux propriétés de document'
-ms.custom: ''
+title: 'Procédure : Lire et écrire dans les propriétés de document'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825420"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Comment : lire et écrire aux propriétés de document
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Procédure : Lire et écrire dans les propriétés de document
   Vous pouvez stocker des propriétés de document avec un document. Les applications Office fournissent plusieurs propriétés intégrées, telles que l'auteur, le titre et l'objet. Cette rubrique indique comment définir des propriétés de document dans Microsoft Office Excel et Microsoft Office Word.  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment accéder et manipuler les propriétés de document personnalisées dans Microsoft Word ?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Accéder et manipuler les propriétés de document personnalisées dans Microsoft Word ? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
@@ -86,6 +83,4 @@ ms.locfileid: "49924224"
 ## <a name="see-also"></a>Voir aussi  
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
- [Comment : créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)  
-  
-  
+ [Guide pratique pour Créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)  

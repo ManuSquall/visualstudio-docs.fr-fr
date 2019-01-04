@@ -1,9 +1,6 @@
 ---
-title: IDebugParsedExpression | Documents Microsoft
-ms.custom: ''
+title: IDebugParsedExpression | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugParsedExpression
@@ -15,16 +12,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b877dd974a0b96a176b54f308a6317e7324b6ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eaf70cd20982f4c3f2ec469bcce798142caee287
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819498"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Cette interface représente une expression analysée prête à être évaluée.  
   
@@ -34,10 +31,10 @@ ms.locfileid: "31122312"
 IDebugParsedExpression : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
- Évaluateur d’expression implémente cette interface pour représenter une expression analysée est prête pour l’évaluation.  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+ Un évaluateur d’expression implémente cette interface pour représenter une expression analysée est prête pour l’évaluation.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Un appel à [analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) retourne cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -48,16 +45,16 @@ IDebugParsedExpression : IUnknown
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Évalue l’expression analysée.|  
   
 ## <a name="remarks"></a>Notes  
- Lorsque l’appelant est prêt pour évaluer l’expression, il appelle [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) pour retourner une [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui contient le résultat de l’évaluation. Cette approche en deux parties de l’évaluation, l’analyse, puis l’évaluation, permet à l’expression analysée être évaluées plusieurs fois, en ignorant le processus de longue durée de l’analyse de l’expression.  
+ Lorsque l’appelant est prêt à évaluer l’expression, il appelle [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) pour retourner un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui contient le résultat de l’évaluation. Cette approche en deux parties pour évaluation, l’analyse puis évaluez, permet à l’expression analysée être évaluées plusieurs fois, en contournant le processus fastidieux de l’analyse de l’expression.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
+ [Analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

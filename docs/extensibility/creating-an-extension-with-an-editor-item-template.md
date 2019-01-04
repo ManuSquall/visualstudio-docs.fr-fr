@@ -1,9 +1,6 @@
 ---
 title: Création d’une Extension avec un éditeur de modèle d’élément | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a13c62d9fadfe105bd8e645ba6e7758c2b3195a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ffaadb2ccdf770231abcbbcc5e594644b78ef7e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957857"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Créer une extension avec un éditeur de modèle d’élément
 Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de Visual Studio pour créer des extensions de l’éditeur de base qui ajoutent des classifieurs, les ornements et les marges pour l’éditeur. Les modèles d’élément de l’éditeur sont disponibles pour les projets Visual c# ou Visual Basic VSIX.  
@@ -29,7 +26,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de 
 ## <a name="create-a-classifier-extension"></a>Créer une extension de classifieur  
  Le modèle d’élément de classifieur d’éditeur crée un classifieur d’éditeur qui le colore le texte approprié (dans ce cas, tous les éléments) dans n’importe quel fichier texte.  
   
-1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom**, tapez `TestClassifier`. Cliquez sur **OK**.  
+1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom** , tapez `TestClassifier`. Cliquez sur **OK**.  
   
 2.  Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **classifieur d’éditeur**. Laissez le nom de fichier par défaut (*EditorClassifier1.cs*).  
   
@@ -50,7 +47,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de 
 ## <a name="create-a-text-relative-adornment-extension"></a>Créer une extension de l’ornement de texte relatif  
  Le modèle de l’ornement de texte de l’éditeur crée un ornement de texte relative qui décore toutes les instances du caractère de texte « a » à l’aide d’une zone qui a un contour rouge et un arrière-plan bleu. Il est relatif de texte, car la zone toujours superpositions les caractères 'a', même lorsqu’ils sont déplacés ou remis en forme.  
   
-1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom**, tapez `TestAdornment`. Cliquez sur **OK**.  
+1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom** , tapez `TestAdornment`. Cliquez sur **OK**.  
   
 2.  Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **ornement de texte éditeur**. Laissez le nom de fichier par défaut (*TextAdornment1.cs/vb*).  
   
@@ -70,7 +67,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de 
   
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Pour créer une extension d’ornement de la fenêtre d’affichage en utilisant le modèle de l’ornement de la fenêtre d’affichage de l’éditeur  
   
-1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom**, tapez `ViewportAdornment`. Cliquez sur **OK**.  
+1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom** , tapez `ViewportAdornment`. Cliquez sur **OK**.  
   
 2.  Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **ornement de la fenêtre d’affichage d’éditeur**. Laissez le nom de fichier par défaut (*ViewportAdornment1.cs/vb*).  
   
@@ -87,7 +84,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de 
   
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Pour créer une extension de la marge en utilisant le modèle de la marge de l’éditeur  
   
-1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom**, tapez `MarginExtension`. Cliquez sur **OK**.  
+1.  Dans le **nouveau projet** boîte de dialogue, développez **Visual C#** ou **Visual Basic** puis cliquez sur **extensibilité**. Dans le **modèles** volet, sélectionnez **projet VSIX**. Dans la zone **Nom** , tapez `MarginExtension`. Cliquez sur **OK**.  
   
 2.  Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **marge de l’éditeur**. Laissez le nom de fichier par défaut (EditorMargin1.cs/vb).  
   

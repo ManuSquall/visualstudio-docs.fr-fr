@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericParamField | Documents Microsoft
-ms.custom: ''
+title: IDebugGenericParamField | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericParamField interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4072908a8f6690e3d3b00d8c43690be62083242d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c42c9b19e52511097953cf658b3a5ce0decd5e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871610"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
-Représente un paramètre pour un type générique de code managé.  
+Représente un paramètre pour un type générique du code managé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -29,7 +26,7 @@ Représente un paramètre pour un type générique de code managé.
 IDebugGenericParamField : IDebugField  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  Utilisé pour la prise en charge des génériques.  
   
 ## <a name="methods"></a>Méthodes  
@@ -42,11 +39,11 @@ IDebugGenericParamField : IDebugField
 |[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Récupère les indicateurs pour ce paramètre générique.|  
 |[GetIndex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Récupère l’index de ce paramètre générique.|  
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Récupère le nom de ce paramètre générique.|  
-|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Récupère le propriétaire du type ou de méthode de ce paramètre générique.|  
+|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Récupère le type ou la méthode le propriétaire de ce paramètre générique.|  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Sh.h  
+ En-tête : SH.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

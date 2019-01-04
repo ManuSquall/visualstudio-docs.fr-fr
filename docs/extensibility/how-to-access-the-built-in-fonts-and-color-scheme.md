@@ -1,9 +1,6 @@
 ---
-title: 'Comment : accéder au jeu de couleurs et polices intégrées | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Le jeu de couleurs et polices intégrées d’accès | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874600"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Comment : accéder aux polices intégrées et des couleurs ccheme
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procédure : Les polices intégrées d’accès et des couleurs ccheme
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
 
  Pour utiliser les polices intégrées et le jeu de couleurs, un VSPackage doit :

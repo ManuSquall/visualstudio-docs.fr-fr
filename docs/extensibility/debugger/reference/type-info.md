@@ -1,9 +1,6 @@
 ---
 title: TYPE_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TYPE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6068388cc422d9f72ac873f9650f1c2e1b7a151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823118"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Cette structure spécifie plusieurs types d’informations sur un type de champ.  
@@ -66,7 +63,7 @@ public struct TYPE_INFO {
  Nom de l’union.  
   
  unionmember  
- (C# uniquement) Cette option pour le type de structure appropriée en fonction de marshaler `dwKind`.  
+ [C# uniquement] Cette option pour le type de structure appropriée en fonction de marshaler `dwKind`.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) méthode où il est renseigné. Comment le contenu de la structure est interprété selon le `dwKind` champ.  
@@ -74,7 +71,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  (C++ uniquement) Si `dwKind` est égal à `TYPE_KIND_BUILT`, il est nécessaire pour libérer des sous-jacent [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) lors de la destruction de l’objet le `TYPE_INFO` structure. Pour ce faire, il suffit d'appeler `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- (C# uniquement) Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque genre de type. L’exemple montre comment procéder pour un seul type de type.  
+ [C# uniquement] Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque genre de type. L’exemple montre comment procéder pour un seul type de type.  
   
 |`dwKind`|`unionmember` interprété en tant que|  
 |--------------|----------------------------------|  
@@ -106,12 +103,12 @@ namespace MyPackage
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   

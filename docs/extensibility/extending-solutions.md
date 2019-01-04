@@ -1,9 +1,6 @@
 ---
 title: Extension des Solutions | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9671899b5e5574599bcd9125b74b06675be4b4b3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 40dfe861823974c8cd52e49cedd4343aca2e43f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989946"
 ---
 # <a name="extend-solutions"></a>Étendre des solutions
 Une solution est un regroupement d’un ou plusieurs projets qui fonctionnent ensemble pour créer une application.  

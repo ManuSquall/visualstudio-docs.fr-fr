@@ -1,8 +1,7 @@
 ---
-title: 'CA1702 : La casse des mots composés doit être correcte'
+title: 'CA1702 : Mots composés doivent être correcte'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4703c43c81df13432f45fb4ba519a02b39a839e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829574"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702 : La casse des mots composés doit être correcte
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702 : Mots composés doivent être correcte
 
 |||
 |-|-|
@@ -38,7 +37,7 @@ Le nom d'un identificateur contient plusieurs mots et au moins l'un des mots sem
 
 ## <a name="rule-description"></a>Description de la règle
 
-Le nom de l’identificateur est fractionné en mots qui sont basées sur la casse. Chaque combinaison de deux mots contiguë est vérifiée par la bibliothèque du vérificateur d’orthographe Microsoft. S’il est reconnu, l’identificateur de produit une violation de la règle. Exemples de mots composés qui provoquent une violation sont « Somme de contrôle » et « MultiPart », la casse doit être en tant que « Somme de contrôle » et « Multipart », respectivement. En raison d’une utilisation commune précédente, plusieurs exceptions sont intégrées dans la règle et plusieurs mots entiers sont signalés, telles que « Toolbar » et « Filename », qui doit être celle de deux mots distincts (dans ce cas, « ToolBar » et « FileName »).
+Le nom de l’identificateur est fractionné en mots qui sont basées sur la casse. Chaque combinaison de deux mots contiguë est vérifiée par la bibliothèque de vérificateur d’orthographe Microsoft. S’il est reconnu, l’identificateur de produit une violation de la règle. Exemples de mots composés qui enfreint sont « CheckSum » et « MultiPart », la casse doit être en tant que « Checksum » et « Multipart », respectivement. En raison d’une utilisation commune précédente, plusieurs exceptions sont intégrées dans la règle et plusieurs mots entiers sont signalés, telles que « Toolbar » et « Filename », qui doit être celle de deux mots distincts (dans ce cas, « Barre d’outils » et « FileName »).
 
 Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
@@ -48,9 +47,9 @@ Modifiez le nom afin qu’elle est correcte.
 
 ## <a name="language"></a>Langue
 
-Actuellement, le vérificateur d’orthographe vérifie uniquement à des dictionnaires de la culture basée sur l’anglais. Vous pouvez modifier la culture de votre projet dans le fichier projet, en ajoutant le **CodeAnalysisCulture** élément.
+Actuellement, le vérificateur d’orthographe vérifie uniquement à des dictionnaires de culture en anglais. Vous pouvez modifier la culture de votre projet dans le fichier projet, en ajoutant le **CodeAnalysisCulture** élément.
 
-Par exemple :
+Exemple :
 
 ```xml
 <Project ...>
@@ -59,17 +58,17 @@ Par exemple :
 ```
 
 > [!IMPORTANT]
-> Si vous définissez la culture à autre chose qu’une culture en anglais, cette règle d’analyse du code est en mode silencieux désactivée.
+> Si vous définissez la culture sur autre chose qu’une culture en anglais, cette règle d’analyse du code est désactivée en mode silencieux.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si les deux parties du mot composé sont reconnues par le dictionnaire, et l’objectif est d’utiliser les deux mots.
+Il est possible de supprimer un avertissement de cette règle si les deux parties du mot composé sont reconnues par le dictionnaire d’orthographe, et l’objectif consiste à utiliser deux mots.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,9 +1,6 @@
 ---
 title: Bouton d’élément | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 128016b892206db64a5295c8c15b26b87637b530
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d4bfa27ac2a71e53418ac1be1f9a377f06aede7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870175"
 ---
 # <a name="button-element"></a>Élément Button
-Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent être de différents types : bouton, bouton de menu et SplitDropDown.  
+Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent être de différents types : Bouton, bouton de menu et SplitDropDown.  
   
 ## <a name="syntax"></a>Syntaxe  
   

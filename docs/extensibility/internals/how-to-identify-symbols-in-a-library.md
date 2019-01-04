@@ -1,9 +1,6 @@
 ---
-title: 'Comment : identifier les symboles dans une bibliothèque | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Identifier les symboles dans une bibliothèque | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ff3f9ad93ddfb3b463d059fb2aba654ce48a501
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b62a9207a7a676d10152f8b66dccdcbd7060e8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918990"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Comment : identifier les symboles dans une bibliothèque
+# <a name="how-to-identify-symbols-in-a-library"></a>Procédure : Identifier les symboles dans une bibliothèque
 Outils de consultation de symboles affichent des vues hiérarchiques des symboles. Les symboles représentent des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage.  
   
  Chaque symbole dans la hiérarchie peut être identifiée par les informations de navigation passées par la bibliothèque de symboles pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets via les interfaces suivantes :  
@@ -85,5 +82,5 @@ N1
   
 ## <a name="see-also"></a>Voir aussi  
  [Prend en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Comment : inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Comment : exposer des listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Guide pratique pour Inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Guide pratique pour Exposer des listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

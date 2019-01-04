@@ -1,9 +1,6 @@
 ---
 title: Exécuter des solutions dans différentes versions de Microsoft Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed8a9b7cc78b0605b7fcc3931a7ee8992360125b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843396"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Exécuter des solutions dans différentes versions de Microsoft Office
     
@@ -39,7 +36,7 @@ ms.locfileid: "35670909"
   
  1. La version du .NET Framework que votre projet cible est requis sur les ordinateurs des utilisateurs finaux pour l’exécution de votre solution. Par exemple, si votre projet cible .NET Framework 3.5, .NET Framework 3.5 est requis sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution fonctionnera pas si seule la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est installé sur les ordinateurs des utilisateurs finaux.  
   
- 2. Dans ce scénario, la solution s'exécutera sans erreur dans la version 2007 de Microsoft Office System uniquement si elle n'utilise pas les nouvelles fonctionnalités d'[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
+ 2. Dans ce scénario, la solution s’exécutera sans erreur dans la version 2007 de Microsoft Office System uniquement si elle n’utilise pas les nouvelles fonctionnalités d’[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 ## <a name="run-office-solutions-created-by-using-versions-of-visual-studio-prior-to-visual-studio-2010"></a>Exécuter des solutions Office créées à l’aide de versions de Visual Studio antérieures à Visual Studio 2010  
  Les applications Microsoft Office peuvent exécuter des solutions créées à l'aide de versions de Visual Studio antérieures à Visual Studio 2010. Dans certains cas, ces solutions requièrent des versions différentes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Différentes versions de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] peut être installé côte à côte sur le même ordinateur.  
@@ -61,8 +58,6 @@ ms.locfileid: "35670909"
 ## <a name="see-also"></a>Voir aussi  
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio Tools pour les scénarios d’installation Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [Configurer un ordinateur pour développer des solutions Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
-  
-  

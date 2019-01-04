@@ -1,9 +1,6 @@
 ---
 title: Vue d’ensemble du modèle d’objet Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922257"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle d’objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .  
@@ -122,7 +119,7 @@ ms.locfileid: "49878009"
  Pour obtenir des informations complètes sur le modèle objet Word, vous pouvez vous reporter à la documentation de référence de l'assembly PIA (Primary Interop Assembly) Word et à la documentation de référence du modèle objet VBA (Visual Basic pour Applications).  
   
 ### <a name="primary-interop-assembly-reference"></a>Référence d’assembly PIA  
- La documentation de référence de l'assembly PIA Word décrit les types figurant dans l'assembly PIA pour Word. Cette documentation est disponible à partir de l’emplacement suivant : [référence d’assembly PIA Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ La documentation de référence de l'assembly PIA Word décrit les types figurant dans l'assembly PIA pour Word. Cette documentation est disponible à partir de l’emplacement suivant : [Référence d’assembly PIA Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Pour plus d’informations sur la conception de l’assembly PIA Word, telles que les différences entre les classes et interfaces dans l’assembly PIA, et comment les événements dans l’assembly PIA, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878009"
  [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Comment : cibler l’interface utilisateur multilingue Office'
-ms.custom: ''
+title: 'Procédure : Cible de l’interface utilisateur multilingue d’Office'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b917479598b73f71a0f3092c874276a700717d6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e911563406e0cfdeff613f70a5059da34c4b66df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872279"
 ---
-# <a name="how-to-target-the-office-multilingual-user-interface"></a>Comment : cibler l’interface utilisateur multilingue Office
-  L’Interface utilisateur multilingue (MUI) est une fonctionnalité de Microsoft Office qui donne à l’utilisateur final la possibilité de modifier la langue de l’interface utilisateur (IU). Par exemple, un utilisateur final qui travaille avec une interface utilisateur en anglais peut modifier la langue de l’interface utilisateur en espagnol.  
+# <a name="how-to-target-the-office-multilingual-user-interface"></a>Procédure : Cible de l’interface utilisateur multilingue d’Office
+  L’Interface MUI (Multilingual User Interface) est une fonctionnalité de Microsoft Office qui permet à l’utilisateur final de changer la langue de l’interface utilisateur (IU). Par exemple, un utilisateur final qui travaille avec une interface utilisateur anglais peut modifier la langue de l’interface utilisateur vers l’espagnol.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Si votre application doit être utilisée par des personnes qui utilisent de nombreuses langues d’Office, vous pouvez ajouter le code pour modifier automatiquement la langue de vos chaînes d’interface utilisateur pour correspondre à la langue utilisée par Office sur l’ordinateur de l’utilisateur (si l’utilisateur a installé les ressources appropriées).  
+ Si votre application doit être utilisée par les personnes qui utilisent de nombreuses langues d’Office, vous pouvez ajouter le code pour modifier automatiquement la langue de vos chaînes d’interface utilisateur pour correspondre à la langue utilisée par Office sur l’ordinateur de l’utilisateur (si l’utilisateur a installé les ressources appropriées).  
   
-## <a name="to-check-the-current-office-ui-setting"></a>Pour connaître la configuration actuelle de l’interface utilisateur Office  
+## <a name="to-check-the-current-office-ui-setting"></a>Pour vérifier le paramètre actuel de l’interface utilisateur Office  
   
 1.  Utilisez le <xref:System.Threading.Thread.CurrentUICulture%2A> propriété du thread actuel. Définir la langue de vos chaînes d’interface utilisateur pour correspondre à la langue utilisée par la version d’Office qui s’exécute actuellement sur l’ordinateur de l’utilisateur.  
   
@@ -42,7 +39,5 @@ ms.locfileid: "34262031"
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : applications Office de cible via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Guide pratique pour Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Liaison tardive dans les solutions Office](../vsto/late-binding-in-office-solutions.md)  
-  
-  

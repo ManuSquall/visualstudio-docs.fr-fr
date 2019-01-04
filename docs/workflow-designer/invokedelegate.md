@@ -3,7 +3,6 @@ title: Concepteur de flux de travail - InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd490d15d5dc1760222446a1ae507d0e764c73f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870532"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -44,4 +43,4 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour définir et utiliser des délégués d’activité dans le Concepteur de flux de travail](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Guide pratique pour Définir et utiliser des délégués d’activité dans le Concepteur de flux de travail](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

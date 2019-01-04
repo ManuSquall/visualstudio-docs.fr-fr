@@ -1,9 +1,6 @@
 ---
 title: Lancement du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b1cc4a75a17ea686ef5c5c5c75e21f1c5f74de8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d1c1ba42d1d05217eff6e8ff7a0b6f1209a05db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990881"
 ---
 # <a name="launch-the-debugger"></a>Lancer le débogueur
 Lancement du débogueur nécessite l’envoi de la séquence des méthodes et des événements avec leurs attributs corrects.  
@@ -34,7 +31,7 @@ Lancement du débogueur nécessite l’envoi de la séquence des méthodes et de
   
      Si `S_FALSE` retourne, le moteur de débogage (dé) doit être chargé en cours de la machine virtuelle.  
   
-     - ou -  
+     ou  
   
      Si `S_OK` retourne, le DE doit être chargé dans le processus du SDM. Le SDM effectue ensuite les tâches suivantes :  
   

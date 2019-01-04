@@ -1,7 +1,6 @@
 ---
-title: 'Comment : implémenter la rechercher et remplacer le mécanisme | Microsoft Docs'
+title: 'Procédure : Implémenter la rechercher et remplacer le mécanisme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -11,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd41f8f1a86a0b6177b4a1d1498075d6de77030
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e3847b9125109cd48b458d06cbfc41fa91b7139f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943023"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Comment : implémenter la rechercher et remplacer le mécanisme
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Procédure : Implémenter la rechercher et remplacer le mécanisme
 
 Visual Studio fournit deux méthodes d’implémentation de rechercher/remplacer. Une façon consiste à passer d’une image de texte à l’interpréteur de commandes et qu’il traite de la recherche, la mise en surbrillance et le texte en remplaçant. Cela permet aux utilisateurs de spécifier plusieurs étendues de texte. Vous pouvez également votre VSPackage peut contrôler cette fonctionnalité lui-même. Dans les deux cas, vous devez informer l’interpréteur de commandes sur la cible actuelle et les cibles pour tous les documents ouverts.
 

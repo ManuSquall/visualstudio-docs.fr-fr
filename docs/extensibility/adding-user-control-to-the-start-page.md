@@ -1,9 +1,6 @@
 ---
 title: Ajout du contrôle utilisateur à la Page de démarrage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874691"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la Page de démarrage
 Cette procédure pas à pas montre comment ajouter une référence DLL à une Page de démarrage personnalisée. L’exemple ajoute un contrôle utilisateur à la solution, génère le contrôle utilisateur et fait référence à l’assembly généré à partir de la Page de démarrage *.xaml* fichier. Un nouvel onglet héberge le contrôle utilisateur, qui fonctionne comme un navigateur Web de base.  
@@ -110,7 +107,7 @@ Cette procédure pas à pas montre comment ajouter une référence DLL à une Pa
 2.  Renseignez le Gestionnaire d’événements SetButton_Click comme suit.  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  
@@ -189,4 +186,4 @@ Cette procédure pas à pas montre comment ajouter une référence DLL à une Pa
   
 ## <a name="see-also"></a>Voir aussi  
  [Conteneur des contrôles WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)   
- [Procédure pas à pas : Ajouter XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Procédure pas à pas : Ajoutez le XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

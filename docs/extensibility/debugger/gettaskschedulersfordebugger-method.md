@@ -1,9 +1,6 @@
 ---
 title: Méthode GetTaskSchedulersForDebugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dc8e43629eab80dc3164813d0b8d0f380e8f86a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4285c9e83521e991deafaf5e35c32acb1dd8867f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839016"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Méthode GetTaskSchedulersForDebugger
 Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> les objets qui sont actuellement actives.  
   
- **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans *mscorlib.dll*)  
   

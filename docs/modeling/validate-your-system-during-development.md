@@ -2,7 +2,6 @@
 title: Validation de votre système pendant le développement
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869318"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
 Visual Studio peut vous aider à garder votre logiciel en cohérence avec les besoins des utilisateurs et avec l’architecture de votre système.
@@ -35,7 +34,7 @@ Visual Studio peut vous aider à garder votre logiciel en cohérence avec les be
 
 |**Catégorie**|**Liens**|
 |-|-|
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : Doug sept : compréhension du Code et conception du système avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : architecture d’une Application à l’aide d’un diagramme de dépendances](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [série MSDN Comment faire : comment valider du Code à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : Doug Seven : Présentation du code et conception du système avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : Architecture d’une Application à l’aide d’un diagramme de dépendances](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [série MSDN Comment faire : Comment valider du Code à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|

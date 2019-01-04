@@ -1,9 +1,6 @@
 ---
 title: Extension des propriétés, liste des tâches, sortie et Options Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922323"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres Propriétés, liste des tâches, sortie et Options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations relatives à votre fenêtre outil dans un nouveau **Options** page et un nouveau paramètre sur le **propriétés** page et également comment écrire dans le **listedestâches** et **sortie** windows.  

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857119"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Accéder à un modèle et le mettre à jour dans le code du programme
 
@@ -192,7 +191,7 @@ using (Transaction t =
 
 - Définir les propriétés d’un nouvel élément, en particulier la propriété pour laquelle `IsName` a la valeur true dans la DslDefinition. Cet indicateur marque la propriété qui sert à identifier l’élément de façon unique au sein de son propriétaire. Dans ce cas, la propriété Name a cet indicateur.
 
-- La définition DSL de cette solution DSL doit avoir été chargée dans le Store. Si vous écrivez une extension comme une commande de menu, ce sera généralement déjà true. Dans d’autres cas, vous pouvez explicitement charger le modèle dans le Store, ou utiliser <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> pour le charger. Pour plus d’informations, consultez [Comment : ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- La définition DSL de cette solution DSL doit avoir été chargée dans le Store. Si vous écrivez une extension comme une commande de menu, ce sera généralement déjà true. Dans d’autres cas, vous pouvez explicitement charger le modèle dans le Store, ou utiliser <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> pour le charger. Pour plus d'informations, voir [Procédure : Ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
   Lorsque vous créez un élément de cette façon, une forme est automatiquement créée (si la solution DSL possède un diagramme). Il apparaît dans un emplacement automatiquement affecté, avec d’autres fonctionnalités, la couleur et la forme par défaut. Si vous souhaitez contrôler où et comment la forme associée s’affiche, consultez [création d’un élément et sa forme](#merge).
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  Vous pouvez également définir la couleur et autres propriétés exposées de connecteurs à l’aide de cette méthode.
 
 ### <a name="use-transactions"></a>Utiliser des Transactions
- Formes, des connecteurs et des diagrammes sont des sous-types de <xref:Microsoft.VisualStudio.Modeling.ModelElement> et en direct dans le Store. Vous devez donc les modifier uniquement à l’intérieur d’une transaction. Pour plus d’informations, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
+ Formes, des connecteurs et des diagrammes sont des sous-types de <xref:Microsoft.VisualStudio.Modeling.ModelElement> et en direct dans le Store. Vous devez donc les modifier uniquement à l’intérieur d’une transaction. Pour plus d'informations, voir [Procédure : Utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Affichage de document et les données de Document
  ![Diagramme de classes des types de diagramme standard](../modeling/media/dsldiagramsanddocs.png)
@@ -488,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)
 - [Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Guide pratique pour utiliser des transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [Guide pratique pour Utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)

@@ -1,9 +1,6 @@
 ---
 title: Outlook (solutions)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d0a79d48b8ff054e4c7bdb9151f3eefbf287b24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c1849a832bcc2bda8ea63b9939968ea44f5cd5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868694"
 ---
 # <a name="outlook-solutions"></a>Outlook (solutions)
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office Outlook. Vous pouvez utiliser les compléments VSTO pour automatiser Outlook, étendre les fonctionnalités d'Outlook ou personnaliser l'interface utilisateur d'Outlook. Pour plus d’informations sur les compléments VSTO, consultez [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
@@ -39,7 +36,7 @@ ms.locfileid: "49831235"
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Créer un projet Complément de VSTO Outlook  
  Créez un projet Outlook à l'aide du modèle de projet **Complément Outlook** de la boîte de dialogue **Nouveau projet** . Ce modèle inclut les références d'assembly et les fichiers projet requis.  
   
- Pour plus d’informations sur la création d’un projet de complément VSTO, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Pour plus d’informations sur les modèles de projet, consultez [vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md).  
+ Pour plus d’informations sur la création d’un projet de complément VSTO, consultez [Comment : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Pour plus d’informations sur les modèles de projet, consultez [vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md).  
   
 ## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO Add-modèle de programmation  
  Lorsque vous créez un projet de complément VSTO Outlook, Visual Studio génère une classe, appelée `ThisAddIn`, qui est le fondement de votre solution. Cette classe fournit un point de départ pour l'écriture de votre code, et expose également le modèle objet d'Outlook à votre complément.  
@@ -62,7 +59,7 @@ ms.locfileid: "49831235"
 |Tâche|Pour plus d'informations|  
 |----------|--------------------------|  
 |Ajouter des onglets personnalisés au ruban d'un inspecteur Outlook.|[Vue d’ensemble du ruban](../vsto/ribbon-overview.md)|  
-|Ajouter des groupes personnalisés à un onglet intégré d'un inspecteur Outlook.|[Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Ajouter des groupes personnalisés à un onglet intégré d'un inspecteur Outlook.|[Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|  
 |Ajouter un volet des tâches personnalisé qui s'affiche dans un inspecteur Outlook|[Volets Office personnalisés](../vsto/custom-task-panes.md).|  
 |Ajouter une zone de formulaire qui étend ou remplace des formulaires Outlook existants.|[Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)|  
   
@@ -76,5 +73,3 @@ ms.locfileid: "49831235"
 |[Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)|Décrit les outils fournis par Visual Studio qui simplifient la conception, le développement et le débogage des zones de formulaire.|  
 |[Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Explique comment créer un complément VSTO pour Microsoft Office Outlook.|  
 |[Outlook 2010 dans le développement Office](http://go.microsoft.com/fwlink/?LinkId=199013)|Zone de MSDN Library où vous pouvez rechercher des articles et de la documentation de référence sur le développement de solutions Outlook (non spécifiques au développement d'Office à l'aide de Visual Studio).|  
-  
-  

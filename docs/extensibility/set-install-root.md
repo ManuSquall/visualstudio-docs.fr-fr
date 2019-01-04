@@ -1,9 +1,6 @@
 ---
-title: L’installation en dehors du dossier extensions avec VSIX v3 | Documents Microsoft
-ms.custom: ''
+title: L’installation en dehors du dossier d’extensions avec VSIX v3 | Microsoft Docs
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
@@ -11,16 +8,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8476b300974d66efc60f647c897ec6892191e7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968496"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>L’installation en dehors du dossier d’extensions
 
-En commençant par Visual Studio 2017 et VSIX v3 (version 3), désormais une prise en charge pour l’installation des composants d’extension en dehors du dossier extensions. Actuellement, les emplacements suivants sont activés en tant qu’emplacements d’installation valide (où [INSTALLDIR] est mappé au répertoire d’installation de l’instance de Visual Studio) :
+En commençant par Visual Studio 2017 et VSIX v3 (version 3), il est prennent désormais en charge pour l’installation des composants d’extension en dehors du dossier extensions. Actuellement, les emplacements suivants sont activés en tant qu’emplacements d’installation valide (où [INSTALLDIR] est mappé au répertoire d’installation de l’instance de Visual Studio) :
 
 * [INSTALLDIR] \MSBuild
 * [INSTALLDIR] \Xml\Schemas
@@ -30,9 +27,9 @@ En commençant par Visual Studio 2017 et VSIX v3 (version 3), désormais une pri
 * [INSTALLDIR] \Common7\IDE\RemoteDebugger
 * [INSTALLDIR] \Common7\IDE\VC\VCTargets
 
->**Remarque :** le format VSIX ne vous permet pas d’installer à l’extérieur de la structure de dossiers d’installation Visual Studio.
+>**Remarque :** Le format VSIX ne vous permet pas d’installer en dehors de la structure de dossiers d’installation Visual Studio.
 
-Pour prendre en charge l’installation de ces répertoires, l’extension VSIX doit être installé « par instance par ordinateur ». Cela peut être activé en activant la case à cocher « tous les utilisateurs » dans le concepteur extension.vsixmanifest :
+Pour prendre en charge l’installation de ces répertoires, l’extension VSIX doit être installé « par instance par ordinateur ». Cette option peut être activée en cochant la case « tous les utilisateurs » dans le concepteur extension.vsixmanifest :
 
 ![Vérifiez tous les utilisateurs](media/check-all-users.png)
 
@@ -40,9 +37,9 @@ Pour prendre en charge l’installation de ces répertoires, l’extension VSIX 
 
 Pour définir les répertoires d’installation, vous pouvez utiliser la **propriétés** fenêtre dans Visual Studio. Par exemple, vous pouvez définir le `InstallRoot` propriété d’une référence de projet à un des emplacements ci-dessus :
 
-![installer les propriétés racine](media/install-root-properties.png)
+![propriétés de la racine d’installation](media/install-root-properties.png)
 
-Cela ajoutera des métadonnées correspondant `ProjectReference` propriété à l’intérieur du fichier .csproj du projet VSIX :
+Cette opération ajoute des métadonnées correspondant `ProjectReference` propriété à l’intérieur du fichier de .csproj du projet VSIX :
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -52,15 +49,15 @@ Cela ajoutera des métadonnées correspondant `ProjectReference` propriété à 
  </ProjectReference>
 ```
 
->**Remarque :** vous pouvez modifier le fichier .csproj directement, si vous préférez.
+>**Remarque :** Vous pouvez modifier le fichier .csproj directement, si vous préférez.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Comment définir un sous-chemin sous le InstallRoot
 
-Si vous souhaitez installer un sous-chemin sous le `InstallRoot`, vous pouvez le faire en définissant le `VsixSubPath` propriété tout comme le `InstallRoot` propriété. Par exemple, nous souhaitons sortie de notre référence projet à installer pour ' [INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'. Nous pouvons faire cela facilement avec le Concepteur de la propriété :
+Si vous souhaitez installer sur un sous-chemin sous la `InstallRoot`, vous pouvez le faire en définissant le `VsixSubPath` propriété tout comme le `InstallRoot` propriété. Par exemple, si nous voulons la sortie de la référence de notre projet à installer pour ' [INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0 ». Nous pouvons le faire facilement avec le Concepteur de la propriété :
 
 ![sous-chemin de jeu](media/set-subpath.png)
 
-Les modifications correspondantes de .csproj doit ressembler à ceci :
+Les modifications correspondantes de .csproj ressemblera à ceci :
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -73,4 +70,4 @@ Les modifications correspondantes de .csproj doit ressembler à ceci :
 
 ## <a name="extra-information"></a>Informations supplémentaires
 
-Les modifications concepteur des propriétés s’appliquent aux plus que les références de projet ; Vous pouvez définir le `InstallRoot` métadonnées des éléments à l’intérieur de votre projet (en utilisant les mêmes méthodes décrites ci-dessus).
+Les modifications de Concepteur de propriété s’appliquent aux plus que les références de projet ; Vous pouvez définir le `InstallRoot` métadonnées des éléments à l’intérieur de votre projet (en utilisant les mêmes méthodes décrites ci-dessus).

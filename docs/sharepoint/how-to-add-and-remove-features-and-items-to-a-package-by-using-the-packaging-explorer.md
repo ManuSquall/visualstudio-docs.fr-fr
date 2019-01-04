@@ -1,15 +1,10 @@
 ---
-title: 'Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880859"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package
   Pour configurer un package pour déployer des fonctionnalités et des éléments de SharePoint, vous pouvez utiliser l’Explorateur de package. Vous pouvez ajuster les éléments de projet SharePoint et les fonctionnalités à l’intérieur de votre fichier .wsp.  
   
- Ou bien, vous pouvez utiliser le Concepteur d’empaquetage pour afficher et réorganiser les fonctionnalités pour modifier l’ordre d’activation. Pour plus d’informations, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Ou bien, vous pouvez utiliser le Concepteur d’empaquetage pour afficher et réorganiser les fonctionnalités pour modifier l’ordre d’activation. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
 ## <a name="open-the-packaging-explorer"></a>Ouvrez l’Explorateur de package  
  Vous pouvez utiliser la procédure suivante pour ouvrir l’Explorateur de package, si votre solution Visual Studio a au moins un projet SharePoint. Vous pouvez également l’Explorateur de package s’ouvre automatiquement lorsque vous affichez un concepteur de fonctionnalités ou de packages. Une fois que vous fermez tous les concepteurs de fonctionnalités et de packages, l’Explorateur de package se ferme également.  
@@ -69,4 +64,3 @@ ms.locfileid: "36755610"
   
 ## <a name="see-also"></a>Voir aussi
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

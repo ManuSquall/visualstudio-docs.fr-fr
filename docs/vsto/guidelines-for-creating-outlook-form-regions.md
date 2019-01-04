@@ -1,9 +1,6 @@
 ---
 title: Instructions pour la création de zones de formulaire Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d2a052cbad69f87c5b25005ff21959841af55f68
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c5ecb22caaa7b86b4bc777b08e749d0fd75bd5e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873247"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Instructions pour créer des zones de formulaire Outlook
   Les informations suivantes peuvent vous aider à optimiser vos zones de formulaire et à éviter d’éventuels problèmes :  
@@ -95,5 +92,3 @@ ms.locfileid: "53648753"
  [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Guide pratique pour Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Associer une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

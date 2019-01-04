@@ -1,17 +1,12 @@
 ---
 title: Vue d’ensemble des outils de conception du modèle BDC | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923333"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Vue d’ensemble des outils de conception de modèle BDC
   Vous pouvez concevoir un modèle de connectivité de données métiers (BDC) en utilisant le concepteur BDC, le **détails de méthode BDC** fenêtre et le **Explorateur BDC**.  
@@ -76,20 +71,18 @@ ms.locfileid: "49914500"
 > [!NOTE]  
 >  Modifications apportées à un descripteur de type d’origine n’affectent pas les copies de ce descripteur de type.  
   
- Pour plus d’informations, consultez [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Pour plus d'informations, voir [Procédure : Définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Voir aussi
- [Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
- [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)   
- [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
- [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
+ [Guide pratique pour Créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Guide pratique pour Ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Guide pratique pour Ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
+ [Guide pratique pour Ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Guide pratique pour Ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)   
+ [Guide pratique pour Ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Guide pratique pour Ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
  [Créer une association entre entités](../sharepoint/creating-an-association-between-entities.md)   
  [Procédure pas à pas : Créer une liste externe dans SharePoint à l’aide de données d’entreprise](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 

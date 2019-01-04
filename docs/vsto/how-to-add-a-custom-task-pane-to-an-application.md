@@ -1,9 +1,6 @@
 ---
 title: 'Procédure : Ajouter un volet Office personnalisé à une application'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0241cfa4b377d35a639b7aa193a38b44135078e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822782"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Procédure : Ajouter un volet Office personnalisé à une application
   Vous pouvez ajouter un volet des tâches personnalisé aux applications répertoriées ci-dessus à l’aide du complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
@@ -64,5 +61,3 @@ ms.locfileid: "53646995"
  [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)   
  [Volets Office personnalisés](../vsto/custom-task-panes.md)   
  [Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
-  
-  

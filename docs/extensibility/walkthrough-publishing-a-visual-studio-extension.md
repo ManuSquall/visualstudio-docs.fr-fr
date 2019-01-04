@@ -1,9 +1,6 @@
 ---
-title: 'Procédure pas à pas : Publication d’une Extension de Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Publication d’une Extension Visual Studio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852451"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procédure pas à pas : Publier une extension Visual Studio
 
@@ -71,9 +68,9 @@ Cet article utilise une extension de package Visual Studio par défaut, mais les
 
 6. Choisissez le serveur de publication que vous souhaitez utiliser pour télécharger votre extension. Vous pouvez modifier les serveurs de publication en cliquant sur les noms d’éditeurs apparaissent à gauche. Cliquez sur **nouvelle extension** et sélectionnez **Visual Studio**.
 
-7. Dans **1 : charger l’extension**, vous pouvez choisir de télécharger un fichier VSIX directement à la place de marché Visual Studio ou simplement ajouter un lien vers votre propre site Web. Dans cet exemple, l’extension, *TestPublish.vsix* est chargé. Faites glisser et déposez votre extension ou utilisez le **cliquez sur** lien pour rechercher le fichier. Recherchez votre extension dans le dossier \bin\Release du projet.  Cliquez sur **Continuer**.
+7. Dans **1 : Charger l’extension**, vous pouvez choisir de télécharger un fichier VSIX directement à la place de marché Visual Studio ou simplement ajouter un lien vers votre propre site Web. Dans cet exemple, l’extension, *TestPublish.vsix* est chargé. Faites glisser et déposez votre extension ou utilisez le **cliquez sur** lien pour rechercher le fichier. Recherchez votre extension dans le dossier \bin\Release du projet.  Cliquez sur **Continuer**.
 
-8. Dans **2 : fournir les détails de l’extension**, certains champs sont remplis automatiquement à partir de la *source.extension.vsixmanifest* fichier à partir de votre extension. Rechercher plus en détail chacun ci-dessous :
+8. Dans **2 : Fournir les détails de l’extension**, certains champs sont remplis automatiquement à partir de la *source.extension.vsixmanifest* fichier à partir de votre extension. Rechercher plus en détail chacun ci-dessous :
 
     * **Nom interne** est utilisé dans l’URL de page de détails de l’extension. Pour obtenir un exemple, la publication d’une extension sous le nom du serveur de publication « myname » et en spécifiant le nom interne pour être « mon extension » entraîne une URL de « marketplace.visualstudio\.com/items?itemName=myname.myextension » pour les détails de votre extension page.
     
@@ -123,13 +120,13 @@ Place de marché prend en charge l’octroi d’autorisations des utilisateurs s
 
 3. Vous pouvez ensuite spécifier l’adresse de messagerie de l’utilisateur que vous souhaitez ajouter et accorder le niveau d’accès sous **sélectionner un rôle**.  Vous pouvez choisir parmi les options suivantes :
 
-   * **Créateur**: l’utilisateur peut publier des extensions, mais ne peut pas afficher ou gérer les extensions publiées par d’autres utilisateurs.
+   * **Créateur**: L’utilisateur peut publier des extensions, mais il ne peut pas afficher ou gérer des extensions publiées par d’autres utilisateurs.
   
-   * **Lecteur**: l’utilisateur peut afficher les extensions, mais ne peut pas publier ou gérer les extensions.
+   * **Lecteur**: L’utilisateur peut afficher les extensions, mais il ne peut pas publier ou gérer les extensions.
   
-   * **Contributeur**: l’utilisateur peut publier et gérer des extensions, mais ne peut pas modifier les paramètres de l’éditeur ou gérer l’accès.
+   * **Contributeur**: L’utilisateur peut publier et gérer des extensions, mais ne peut pas modifier les paramètres de l’éditeur ou gérer l’accès.
   
-   * **Propriétaire**: l’utilisateur peut publier et gérer les extensions, modifier les paramètres de l’éditeur et gérer l’accès.
+   * **Propriétaire**: L’utilisateur peut publier et gérer les extensions, modifier les paramètres de serveur de publication et gérer l’accès.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installer l’extension à partir de Visual Studio Marketplace
 

@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity | Documents Microsoft
-ms.custom: ''
+title: IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967954"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` est implémentée par un fournisseur de port pour l’avertir que l’attachement au processus est unsafe.  
+`IDebugProcessSecurity` est implémentée par un fournisseur de port pour avertir l’utilisateur que l’attachement au processus unsafe.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +32,7 @@ IDebugProcessSecurity : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtient le nom d’utilisateur du fournisseur de port.|  
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avertit un utilisateur qu’il est risqué d’attachement au processus de débogage.|  
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avertit un utilisateur que l’attachement au processus de débogage est unsafe.|  
   
 ## <a name="remarks"></a>Notes  
  Implémentez cette interface pour afficher un avertissement et autoriser l’utilisateur à annuler si le processus auquel vous joignez peuvent être considérées comme unsafe.  
@@ -43,12 +40,12 @@ IDebugProcessSecurity : IUnknown
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Ports](../../../extensibility/debugger/ports.md)   
  [Fournisseurs de port](../../../extensibility/debugger/port-suppliers.md)   
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

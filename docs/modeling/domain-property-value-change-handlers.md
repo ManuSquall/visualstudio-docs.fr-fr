@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941662"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestionnaires de modification de valeur de propriété de domaine
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Autre technique : propriétés calculées
+### <a name="alternative-technique-calculated-properties"></a>Autre technique : Propriétés calculées
 
 L'exemple précédent montre comment OnValueChanged() peut être utilisée pour propager des valeurs d'une propriété de domaine à une autre. Chaque propriété a sa propre valeur stockée.
 
@@ -105,7 +104,7 @@ Au lieu de l’exemple précédent, vous pouvez définir le **type** champ `Text
 
 Toutefois, l'un des inconvénients potentiels des propriétés calculées est que l'expression est évaluée chaque fois que la valeur est utilisée, ce qui pourrait poser un problème de performance. De plus, il n'existe aucune méthode OnValueChanging() et OnValueChanged() sur une propriété calculée.
 
-### <a name="alternative-technique-change-rules"></a>Autre technique : modifier les règles
+### <a name="alternative-technique-change-rules"></a>Autre technique : Modifier des règles
 
 Si vous définissez une ChangeRule, elle est exécutée à la fin d’une transaction dans laquelle valeur d’une propriété change.  Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 

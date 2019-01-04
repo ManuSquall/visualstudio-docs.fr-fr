@@ -1,9 +1,6 @@
 ---
 title: Exemples de développement Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +12,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964531"
 ---
 # <a name="office-development-samples"></a>Exemples de développement Office
   Visual Studio inclut des exemples d'applications qui montrent comment utiliser les outils de développement Microsoft Office pour créer des solutions Office. Le code de ces exemples illustre la syntaxe, la structure et les techniques utilisées pour générer les solutions Office.  
   
- Pour les exemples les plus récents, consultez [exemples pour développeurs MSDN : apprendre à coder](http://go.microsoft.com/fwlink/?LinkID=248199) sur le site Web Microsoft.  
+ Pour les exemples les plus récents, consultez [exemples pour développeurs MSDN : Apprendre à coder](http://go.microsoft.com/fwlink/?LinkID=248199) sur le site Web Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +41,5 @@ ms.locfileid: "35672741"
 |Interopérabilité VSTO et VBA|Montre comment appeler une méthode dans une personnalisation au niveau du document pour Excel à partir du code VBA (Visual Basic pour Applications) du classeur.<br /><br /> Cet exemple n'est disponible qu'en ligne.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples de développement MSDN : apprendre grâce à des exemples de code](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Exemples de développement MSDN : Apprendre à travers des exemples de code](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md)  
-  
-  

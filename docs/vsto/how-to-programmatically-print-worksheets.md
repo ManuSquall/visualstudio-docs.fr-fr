@@ -1,9 +1,6 @@
 ---
-title: 'Comment : imprimer des feuilles de calcul par programmation'
-ms.custom: ''
+title: 'Procédure : Imprimer des feuilles de calcul par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c5061c7b83173088a4031455f27d1332219b6f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904550"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Comment : imprimer des feuilles de calcul par programmation
+# <a name="how-to-programmatically-print-worksheets"></a>Procédure : Imprimer des feuilles de calcul par programmation
   Vous pouvez imprimer une feuille de calcul dans un classeur.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -67,9 +64,7 @@ ms.locfileid: "49876637"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
- [Comment : vérifier l’orthographe dans les feuilles de calcul par programmation](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Guide pratique pour Vérifier l’orthographe dans les feuilles de calcul par programmation](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
  [Élément hôte de feuille de calcul](../vsto/worksheet-host-item.md)   
  [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

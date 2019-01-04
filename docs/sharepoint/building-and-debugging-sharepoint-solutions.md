@@ -1,13 +1,8 @@
 ---
 title: Génération et débogage de Solutions SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987192"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Générer et déboguer des solutions SharePoint
   En règle générale, la génération et débogage de solutions SharePoint sont le même que pour les autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Les rubriques de cette section expliquent les différences qui existent.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283533"
 |Empaqueter des fichiers intermédiaires.|*\<Nom du projet > \pkgobj\debug* ou  *\<nom_projet > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>Créer des solutions SharePoint
- Pour créer des solutions SharePoint, l’ordinateur de développement doit avoir la version appropriée de SharePoint server est installé. Sinon, la génération de solutions SharePoint est identique à la génération d’autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Comment : solutions SharePoint Build](../sharepoint/how-to-build-sharepoint-solutions.md).  
+ Pour créer des solutions SharePoint, l’ordinateur de développement doit avoir la version appropriée de SharePoint server est installé. Sinon, la génération de solutions SharePoint est identique à la génération d’autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Créer des solutions SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Déboguer et tester des solutions SharePoint
  Avant le débogage, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] copies le *.wsp* package sur le serveur SharePoint, Active les fonctionnalités relatives aux applications Web et au Site et dans certains cas, démarre le projet. Dans d’autres cas, vous devrez peut-être ouvrir le projet manuellement. Pour plus d’informations, consultez [solutions SharePoint de résoudre les problèmes](../sharepoint/troubleshooting-sharepoint-solutions.md) et [solutions SharePoint déboguer](../sharepoint/debugging-sharepoint-solutions.md).  
@@ -57,5 +52,3 @@ ms.locfileid: "44283533"
  [Développer des solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Parcourir les connexions SharePoint à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

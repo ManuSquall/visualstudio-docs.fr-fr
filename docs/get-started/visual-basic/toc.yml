@@ -1,0 +1,47 @@
+items:
+- name: Visual Basic dans Visual Studio
+  href: index.yml
+  items:
+  - name: Vue d'ensemble
+    items:
+    - name: À propos de Visual Studio 2017
+      href: visual-studio-ide.md
+    - name: À propos de l’éditeur de code
+      href: tutorial-editor.md
+    - name: À propos des projets et des solutions
+      href: tutorial-projects-solutions.md
+    - name: Autres fonctionnalités de Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+  - name: Didacticiels
+    items:
+    - name: Créer une application console
+      href: tutorial-console.md
+    - name: Créer une application UWP
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    - name: Créer une application WPF
+      href: tutorial-wpf.md
+    - name: Créer une application web
+      href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
+    - name: Créer une application Windows Forms
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    expanded: true
+  - name: Formation à Visual Studio
+    items:
+    - name: Écrire et modifier du code
+      href: tutorial-editor.md
+    - name: Compiler et générer
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Déboguer votre code
+      href: ../visual-basic/tutorial-debugger.md
+    - name: Test unitaire
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    - name: Déployer votre projet
+      href: ../../deployment/index.md
+    - name: Accéder aux données
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+ms.openlocfilehash: 9026d3a8b9ba8463ea126c3d94e45743bd4b2874
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53442911"
