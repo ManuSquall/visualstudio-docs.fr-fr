@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: feccc7c87b11495262e78e8ec7f1dc7659435782
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c611f092a0cf9d405443656ed9a632b7f51135b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860242"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 Obtient le code de sortie du programme.  
@@ -28,13 +25,13 @@ Obtient le code de sortie du programme.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetExitCode(   
+HRESULT GetExitCode(   
    DWORD* pdwExit  
 );  
 ```  
   
 ```csharp  
-int GetExitCode(   
+int GetExitCode(   
    out uint pdwExit  
 );  
 ```  

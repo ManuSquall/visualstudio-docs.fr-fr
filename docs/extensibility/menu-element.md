@@ -1,9 +1,6 @@
 ---
 title: Élément de menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3120a64db5c493f8e49ddeac42be0b2e89a40c45
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3d2e874a414efd546e3d6841cfaaf9fdd70da5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951389"
 ---
 # <a name="menu-element"></a>Élément de menu
-Définit un élément de menu. Voici les six types de menus : contexte, un Menu, MenuController, MenuControllerLatched, barre d’outils et ToolWindowToolbar.  
+Définit un élément de menu. Voici les six types de menus : Contexte de Menu, MenuController, MenuControllerLatched, barre d’outils et ToolWindowToolbar.  
   
 ## <a name="syntax"></a>Syntaxe  
   

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856861"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapport, les fichiers de code source et autres fichiers de texte basés sur les modèles de langage spécifique à un domaine. Pour plus d’informations de base sur les modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental lorsque vous déboguez votre DSL et fonctionnent également sur un ordinateur sur lequel vous avez déployé la solution DSL.
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  Pour charger le fichier, la méthode la plus efficace est à l’aide de Visual Studio ModelBus. Dans un scénario classique, votre modèle de texte utilise une directive DSL spécifique pour charger le premier modèle à l’accoutumée. Ce modèle contient les références ModelBus à un autre modèle. Vous pouvez utiliser le ModelBus pour ouvrir le modèle référencé et accéder à un élément particulier. Pour plus d’informations, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Dans un scénario moins habituel, vous souhaiterez ouvrir un fichier de modèle pour lequel vous avez uniquement un nom de fichier, et qui ne peut pas être dans le projet Visual Studio actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique décrite dans [Comment : ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ Dans un scénario moins habituel, vous souhaiterez ouvrir un fichier de modèle pour lequel vous avez uniquement un nom de fichier, et qui ne peut pas être dans le projet Visual Studio actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique décrite dans [Comment : Ouvrir un modèle depuis un fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
 ## <a name="generating-multiple-files-from-a-template"></a>Génération de plusieurs fichiers à partir d’un modèle
  Si vous souhaitez générer plusieurs fichiers - par exemple, pour générer un fichier distinct pour chaque élément dans un modèle, il existe plusieurs approches possibles. Par défaut, un seul fichier est généré à partir de chaque fichier de modèle.

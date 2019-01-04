@@ -3,7 +3,6 @@ title: 'Concepteur de flux de travail - Comment : Utiliser le concepteur de var
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a5bcec8f3bde37f794f28a3b174376a935b9ac
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 7b7df8f03444a0205c5628bbd36f249d68b43ad7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824339"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procédure : Utiliser le concepteur de variables
 

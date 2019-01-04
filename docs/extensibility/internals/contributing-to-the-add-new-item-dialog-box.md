@@ -1,9 +1,6 @@
 ---
 title: Contribuer à la boîte de dialogue Nouvel élément Ajouter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41947e3078eb3cd344774afe533a4fa0a9d8324a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0b9e86b002c212f63076c065d7aca3b7649513b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865659"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuer à la boîte de dialogue Ajouter un nouvel élément
 Un sous-type de projet peut fournir un nouveau répertoire complète d’éléments pour le **ajouter un nouvel élément** boîte de dialogue en vous inscrivant **ajouter un élément** modèles sous le **projets** sous-clé de Registre.  

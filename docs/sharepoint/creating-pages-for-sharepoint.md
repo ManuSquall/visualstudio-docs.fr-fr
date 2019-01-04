@@ -1,9 +1,6 @@
 ---
 title: Création de Pages pour SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859813"
 ---
 # <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, les pages de site, les pages maîtres et les mises en page pour un site SharePoint.  
@@ -68,6 +65,5 @@ ms.locfileid: "36326048"
 |Titre|Description|  
 |-----------|-----------------|  
 |[Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Décrit comment ajouter des pages d’applications : *.aspx* contenu est fusionné avec une page maître SharePoint.|  
-|[Comment : créer une page d’application](../sharepoint/how-to-create-an-application-page.md)|Vous montre comment créer des pages ASP.NET qui s’exécutent sur un site SharePoint.|  
+|[Guide pratique pour Créer une page d’application](../sharepoint/how-to-create-an-application-page.md)|Vous montre comment créer des pages ASP.NET qui s’exécutent sur un site SharePoint.|  
 |[Procédure pas à pas : Créer une page d’application SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Vous montre comment concevoir et déboguer une page Web ASP.NET pour un site SharePoint.|  
-  

@@ -1,9 +1,6 @@
 ---
 title: BPERESI_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BPERESI_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9530e950ddd5dbf75fb10b5391dc658bdf899fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 155703f0791be4d0cf32bbf53f6a6696587aee5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859303"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 Spécifie les informations à récupérer sur la résolution d’un point d’arrêt ayant échouée.  
@@ -28,7 +25,7 @@ Spécifie les informations à récupérer sur la résolution d’un point d’ar
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_BPERESI_FIELDS {   
+enum enum_BPERESI_FIELDS {   
    PERESI_BPRESLOCATION = 0x0001,  
    BPERESI_PROGRAM      = 0x0002,  
    BPERESI_THREAD       = 0x0004,  
@@ -40,7 +37,7 @@ typedef DWORD BPERESI_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_BPERESI_FIELDS {   
+public enum enum_BPERESI_FIELDS {   
    PERESI_BPRESLOCATION = 0x0001,  
    BPERESI_PROGRAM      = 0x0002,  
    BPERESI_THREAD       = 0x0004,  
@@ -76,12 +73,12 @@ public enum enum_BPERESI_FIELDS {
   
  Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

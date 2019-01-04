@@ -1,9 +1,6 @@
 ---
 title: Déploiement sécurisé
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 40428d36648e159bd8fa90c2680b660b2112ef5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827925"
 ---
 # <a name="secure-deployment"></a>Déploiement sécurisé
   Lorsque vous créez une solution Office, votre ordinateur de développement est automatiquement mis à jour pour permettre au code dans votre projet doit être exécuté. Toutefois, lorsque vous déployez votre solution, vous devez fournir la preuve sur laquelle baser la décision d’approbation par la solution avec un certificat de signature, ou à l’aide de la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clé d’invite d’approbation. Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -51,5 +48,3 @@ ms.locfileid: "50671078"
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Préparer les ordinateurs pour exécuter ou héberger des solutions Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)  
-  
-  

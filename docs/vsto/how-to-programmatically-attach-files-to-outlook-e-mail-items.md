@@ -1,9 +1,6 @@
 ---
-title: 'Comment : joindre des fichiers aux éléments de messagerie Outlook par programmation'
-ms.custom: ''
+title: 'Procédure : Joindre des fichiers aux éléments de messagerie Outlook par programmation'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fab5d954136fced3a68b1aaa62233ca5ec9af91b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d8290d354f811795ba83975c406565d17817fa0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866463"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Comment : joindre des fichiers aux éléments de messagerie Outlook par programmation
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Procédure : Joindre des fichiers aux éléments de messagerie Outlook par programmation
   Cet exemple attache un fichier à un nouvel élément de messagerie et l’envoie à Armando Pinto. L’exemple suppose une personne nommée Armando Pinto existe en tant que le destinataire.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -36,8 +33,6 @@ ms.locfileid: "35256625"
   
 ## <a name="see-also"></a>Voir aussi  
  [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Comment : envoyer par programme un e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Comment : enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Comment : créer par programmation un élément de courrier électronique](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
-  
-  
+ [Guide pratique pour Envoyer par programmation un e-mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Guide pratique pour Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
+ [Guide pratique pour Créer par programmation un élément de courrier électronique](../vsto/how-to-programmatically-create-an-e-mail-item.md)  

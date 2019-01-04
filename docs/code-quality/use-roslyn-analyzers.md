@@ -2,7 +2,6 @@
 title: Utiliser et configurez des analyseurs de Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873221"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurer et utiliser des règles de l’analyseur Roslyn
 
@@ -55,7 +54,7 @@ Un [ensemble de règles](../code-quality/using-rule-sets-to-group-code-analysis-
 
 Vous pouvez modifier la règle active définie pour un projet sur le **analyse du Code** onglet de propriétés d’un projet. Sélectionnez l’ensemble de règles dans le **exécuter cet ensemble de règles** liste déroulante. Vous pouvez également ouvrir l’ensemble de règles la **analyse du Code** page de propriétés en sélectionnant **ouvrir**.
 
-## <a name="rule-severity"></a>Gravité de la règle
+## <a name="rule-severity"></a>Gravité des règles
 
 Vous pouvez configurer la gravité de règles de l’analyseur, ou *diagnostics*, si vous [installer les analyseurs](../code-quality/install-roslyn-analyzers.md) sous forme de package NuGet. Le tableau suivant présente les options de gravité pour les diagnostics :
 

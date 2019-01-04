@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetNextAddress
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 927069dd3a62ffc56534f68179db2921ccc227f5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11585c923e2ccb3842f93be0b41e0c1cf68c9afb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858459"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Obtient l’adresse de débogage qui suit une adresse de débogage donné dans une méthode.  
@@ -28,7 +25,7 @@ Obtient l’adresse de débogage qui suit une adresse de débogage donné dans u
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetNextAddress(   
+HRESULT GetNextAddress(   
    IDebugAddress*  pAddress,  
    BOOL            fStatementOnly,  
    IDebugAddress** ppAddress  
@@ -36,7 +33,7 @@ HRESULT GetNextAddress(
 ```  
   
 ```csharp  
-int GetNextAddress(   
+int GetNextAddress(   
    IDebugAddress     pAddress,  
    bool              fStatementOnly,  
    out IDebugAddress ppAddress  
