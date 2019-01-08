@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220747"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647376"
 ---
 # <a name="signfile-task"></a>SignFile (tâche)
 
@@ -73,7 +73,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 ```
 
 > [!NOTE]
-> L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, voir [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)).
+> L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, voir [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Si vous copiez et collez l’empreinte numérique à partir des détails du certificat, veillez à ne pas inclure le caractère invisible (3F) supplémentaire, ce qui risque d’empêcher `SignFile` de trouver le certificat.
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   

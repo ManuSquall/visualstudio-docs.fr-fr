@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7e28c3a09197fd3fe0b45d40a3402f484ab867d7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748473"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684900"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 
@@ -54,7 +54,7 @@ Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour 
 
 ![Informations sur les paramètres](../ide/media/vs2015_param_info.png)
 
-Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insérer des commentaires dans le code XML](../ide/supplying-xml-code-comments.md).
+Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insérer des commentaires dans le code XML](reference/generate-xml-documentation-comments.md).
 
 Vous pouvez appeler manuellement la fonctionnalité Informations sur les paramètres en choisissant **Edition** > **IntelliSense** > **Informations sur les paramètres**, en appuyant sur **Ctrl**+**Maj**+**Barre d’espace** ou en choisissant le bouton **Informations sur les paramètres** dans la barre d’outils de l’éditeur.
 
@@ -104,4 +104,4 @@ MessageBox( hWnd, "String literal|")
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [Écrire et refactoriser du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Insérer des commentaires dans le code XML](../ide/supplying-xml-code-comments.md)
+- [Insérer des commentaires dans le code XML](reference/generate-xml-documentation-comments.md)
