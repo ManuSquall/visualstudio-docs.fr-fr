@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320889"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802564"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
 
@@ -26,7 +26,7 @@ Les tableaux suivants identifient la façon dont les fonctionnalités DevOps de 
 
 ## <a name="agile-tools"></a>Outils agiles
 
-Lien de référence : [À propos des outils agiles et de la gestion de projet agile](/azure/devops/boards/backlogs/overview?view=vsts) (avec Azure Boards ou TFS, notamment Team Explorer Everywhere)
+Lien de référence : [À propos des outils agiles et de la gestion de projet agile](/azure/devops/boards/backlogs/overview?view=vsts) (avec Azure Boards ou TFS, notamment Team Explorer Everywhere)
 
 Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.
 
@@ -40,9 +40,9 @@ Commentaire général : toutes les fonctionnalités de planification et de suiv
 
 ## <a name="modeling"></a>Modélisation
 
-Lien de référence : **[Analyser et modéliser l’architecture](../modeling/analyze-and-model-your-architecture.md)**
+Lien de référence : **[Analyser et modéliser l’architecture](../modeling/analyze-and-model-your-architecture.md)**
 
-Commentaire général : bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou qu’elles utilisent des langages .NET tels que C#, elles opèrent selon un modèle d’application traditionnel avec des hiérarchies d’objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.
+Commentaire général : Bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou utilisent des langages .NET tels que C#, elles opèrent selon un modèle d'application traditionnel avec des hiérarchies d'objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
@@ -71,11 +71,11 @@ Considérations particulières sur la gestion de version avec Unity :
 
 2. Tous les fichiers et dossiers figurant dans un projet Unity ne sont pas appropriés pour le contrôle de code source, comme cela est également décrit dans le lien ci-dessus. Les dossiers Assets et ProjectSettings doivent être ajoutés, contrairement aux dossiers Library et Temp. Pour obtenir une liste supplémentaire de fichiers générés qui ne sont pas traités par le contrôle de code source, consultez la discussion [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) sur StackOverflow. De leur côté, de nombreux développeurs ont également blogué sur ce sujet.
 
-3. Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du dépôt Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur dépôt et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n’est généralement pas nécessaire de gérer les versions de ce type de ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l’éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).
+3. Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du référentiel Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur référentiel et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n’est généralement pas nécessaire de gérer les versions de ce type de ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l’éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).
 
 ## <a name="build"></a>Générer
 
-Lien de référence :  **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
@@ -102,15 +102,15 @@ Lien de référence : **[Améliorer la qualité du code](../test/improve-code-q
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
-|[Analyser la qualité du code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
+|[Analyser la qualité du code managé](../code-quality/code-analysis-for-managed-code-overview.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Rechercher du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/hh205279.aspx)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
-|[Mesurer la complexité et la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
+|[Mesurer la complexité et la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Explorateur de performances](../profiling/performance-explorer.md)|Non|Utilisez le [profileur Unity](http://docs.unity3d.com/Manual/Profiler.html) (site web Unity).|
 |[Analyser les problèmes de mémoire liés au .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Non|Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|
 
 ## <a name="release-management"></a>Gestion des versions
 
-Lien de référence : [Générer et mettre en production dans Azure Pipelines et TFS](/azure/devops/pipelines/overview?view=vsts)
+Lien de référence : [Générer et mettre en production dans Azure Pipelines et TFS](/azure/devops/pipelines/overview?view=vsts)
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|

@@ -2,7 +2,6 @@
 title: -Rebuild (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985681"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Nettoie, puis génère la configuration de solution spécifiée.
@@ -43,11 +42,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 
  /project `ProjName`
 
- Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.
+ Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.
 
  /projectconfig `ProjConfigName`
 
- Facultative. Nom d’une configuration de build de projet à utiliser lors de la regénération du `/project` nommé.
+ Optionnel. Nom d’une configuration de build de projet à utiliser lors de la regénération du `/project` nommé.
 
 ## <a name="remarks"></a>Notes
 

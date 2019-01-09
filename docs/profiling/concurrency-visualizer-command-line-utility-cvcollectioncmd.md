@@ -1,8 +1,6 @@
 ---
 title: Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986841"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
 Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurrentiel (*CVCollectionCmd.exe*) pour collecter des traces à partir de la ligne de commande et les afficher dans le visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n'est pas installé.  
@@ -47,7 +45,7 @@ Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurre
 |Attach|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|Aucun.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
 |Detach|Arrête la collecte.|Aucun.|0 si le détachement a réussi.<br /><br /> 1 si le détachement a échoué, car la collecte n’est pas en cours.<br /><br /> 2 si le détachement a échoué pour cause d’impossibilité d’arrêter la collecte.|  
 |Analyze|Analyse la trace spécifiée.|Chemin du fichier CVTrace.|0 si l’analyse a abouti.<br /><br /> 1 si l’analyse n’a pas pu démarrer, car la trace spécifiée était à l’échelle du système, mais aucun processus cible n’a été spécifié.<br /><br /> 2 si l’analyse n’a pas pu démarrer, car la trace n’était pas à l’échelle du système et un processus a été spécifié.<br /><br /> 3 si l’analyse a échoué en raison de la non validité du processus spécifié.<br /><br /> 4 si l’analyse a échoué en raison de la non validité du fichier CVTrace spécifié.|  
-|LaunchArgs|Spécifie les arguments exécutables cibles. Cette option s’applique uniquement à la commande Launch.|Arguments en ligne de commande de l’application.|Aucune.|  
+|LaunchArgs|Spécifie les arguments exécutables cibles. Cette option s’applique uniquement à la commande Launch.|Arguments en ligne de commande de l’application.|Aucun.|  
 |Outdir|Spécifie le répertoire dans lequel enregistrer les fichiers de trace. S’applique aux commandes Launch et Attach.|Chemin d’un répertoire ou chemin relatif.|Aucun.|  
 |Process|Spécifie le processus auquel s’attacher en cas d’exécution de la commande Attach ou le processus d’une trace à analyser en cas d’exécution de la commande Analyze. S’applique aux commandes Attach et Analyze.|PID ou nom du processus.|Aucun.|  
 |Config|Spécifie le chemin du fichier de configuration, si vous souhaitez appliquer des paramètres de collecte autres que les paramètres par défaut.   S’applique aux commandes Launch, Attach et Analyze.|Chemin du répertoire ou chemin relatif du fichier de configuration XML.|Aucun.|  

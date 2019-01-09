@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2dfb0f7791532184b78d5839bf1c89c9a276b24d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854709"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
 
@@ -35,7 +34,7 @@ Le tableau suivant affiche la configuration matérielle requise recommandée pou
 |**Configuration**|**Composant**|**Processeur**|**Disque dur**|**Mémoire**|
 |-|-------------------|-|------------|-|
 |< 500 utilisateurs virtuels|Agent de test|2,6 GHz|10 Go|2 Go|
-|< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
+|< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
 |N x 1 000 utilisateurs virtuels|Agent de test|Évolutivité à N agents avec, chacun, un biprocesseur 2,6 GHz|10 Go|2 Go|
 |\< 30 ordinateurs dans l’environnement de test. Avec agents et serveurs en cours de test.|Test Controller|2,6 GHz|||
 |N x 30 ordinateurs dans l'environnement de test. Avec agents et serveurs en cours de test.|Test Controller|N processeurs 2,6 GHz|||

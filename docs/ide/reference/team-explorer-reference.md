@@ -2,17 +2,16 @@
 title: Informations de référence sur Team Explorer
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: douge
-ms.openlocfilehash: 85c7e06482a751b896534c81d227dade74ffbcb5
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840750"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
 

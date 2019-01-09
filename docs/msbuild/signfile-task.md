@@ -1,8 +1,6 @@
 ---
 title: SignFile, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5adc16bf0ded8171009c31d96227daa0474ebbf5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847215"
 ---
 # <a name="signfile-task"></a>SignFile (tâche)
 
@@ -33,7 +31,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
   
 ## <a name="parameters"></a>Paramètres
 
- Le tableau ci-dessous décrit les paramètres de la tâche `SignFile`.
+ Le tableau ci-dessous décrit les paramètres de la tâche `SignFile` .
   
  Notez que les certificats SHA-256 ne sont autorisés que sur les ordinateurs où est installé le .NET 4.5 et version ultérieure.
   
