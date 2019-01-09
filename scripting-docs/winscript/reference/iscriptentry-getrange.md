@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Documents Microsoft
+title: IScriptEntry::GetRange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729039"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088736"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
 Retourne la position de début et la longueur d’une entrée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -41,7 +41,7 @@ HRESULT GetRange(
  `pichMin`  
  [out] Pour `IScriptEntry` objets qui spécifient un bloc de script, retourne 0.  
   
- Pour `IScriptEntry` objets qui spécifient un objet de fonction, retourne la position de début de la fonction dans le bloc de script actuel.  
+ Pour `IScriptEntry` objets qui spécifient un objet de fonction retourne la position de début de la fonction dans le bloc de script actuel.  
   
  Pour `IScriptScriptlet` des objets, retourne 0.  
   
@@ -55,11 +55,11 @@ HRESULT GetRange(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::GetStackRange, méthode | Documents Microsoft
+title: Méthode IJsDebugFrame::GetStackRange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727869"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090283"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>IJsDebugFrame::GetStackRange, méthode
-Retourne la plage d’adresses absolues du frame de pile JavaScript logique.  
+Retourne la plage d’adresse absolue du frame de pile JavaScript logique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetStackRange(  
    UINT64 *pStart,  
    UINT64 *pEnd  
@@ -40,12 +40,12 @@ HRESULT GetStackRange(
  [out] En bas de la plupart des pointeur de pile du frame.  
   
  `pEnd`  
- [out] Supérieur à la plupart des pointeur bac de réception de l’image.  
+ [out] Supérieur à la plupart des pointeur de pile du frame.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode est utile pour regrouper des traces de pile entrelacées issues de plusieurs runtimes. Début, fin les pointeurs de pile peuvent englober plusieurs frames de pile de l’ordinateur physique (pour les images du runtime JavaScript interprétés). Démarrer > fur et à la pile d’élevé à basse adresse de fin.  
+## <a name="remarks"></a>Notes  
+ Cette méthode est utile pour rassembler des traces de pile entrelacées issues de plusieurs runtimes. Le Guide de démarrage, les pointeurs de pile de fin peuvent englober plusieurs frames de pile d’ordinateur physique (pour les frames d’exécution JavaScript interprétés). Démarrer > mettre fin à mesure que la pile se développe d’élevé à l’adresse basse.  
   
 ## <a name="requirements"></a>Spécifications  
  **En-tête :** jscript9diag.h  

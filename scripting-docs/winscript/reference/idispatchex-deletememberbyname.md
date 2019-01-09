@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName | Documents Microsoft
+title: IDispatchEx::DeleteMemberByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728129"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096432"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Supprime un membre par son nom.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -44,27 +44,27 @@ HRESULT DeleteMemberByName(
  `grfdex`  
  Détermine si le nom du membre respecte la casse. Cela peut prendre l’une des valeurs suivantes :  
   
-|Valeur|Signification|  
+|Value|Signification|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Demande que la recherche de nom faire de la casse. Peut être ignoré par l’objet qui ne prend pas en charge la recherche qui respecte la casse.|  
-|fdexNameCaseInsensitive|Demande que la recherche de nom faire respecter la casse. Peut être ignoré par l’objet qui ne prend pas en charge la recherche sans respecter la casse.|  
+|fdexNameCaseSensitive|Demande que la recherche de nom faire de la casse. Peut être ignoré par l’objet qui ne prend pas en charge la recherche respectant la casse.|  
+|fdexNameCaseInsensitive|Demande que la recherche de nom être effectuées de façon non-respect de la casse. Peut être ignoré par l’objet qui ne prend pas en charge la recherche de non-respect de la casse.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Retourne une des valeurs suivantes :  
   
 |||  
 |-|-|  
 |`S_OK`|Opération réussie.|  
 |`S_FALSE`|Membre existe mais ne peut pas être supprimé.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si le membre est supprimé, le DISPID doit rester valide pour `GetNextDispID`.  
   
- Si un membre avec un nom donné est supprimé, et par la suite un membre portant le même nom est recréé, le DISPID doit être le même. (Si les membres qui diffèrent uniquement par leur casse sont « même » est dépendant de l’objet.)  
+ Si un membre avec un nom donné est supprimé et recréé ultérieurement un membre portant le même nom, le DISPID doit être le même. (Si les membres qui diffèrent uniquement par la casse sont « même » est dépendant d’objets).  
   
 ## <a name="example"></a>Exemple  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   

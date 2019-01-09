@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode | Documents Microsoft
+title: IDebugDocumentHelper::GetDebugApplicationNode | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27d1fb09698cffa4826ab35b36e3ae315a12ba74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5af0326d4e77e6bb70e05be2609beea86cc294b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726039"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093598"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
 Retourne le nœud d’application de débogage correspondant à ce document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDebugApplicationNode(  
    IDebugApplicationNode**  ppdan  
 );  
@@ -38,16 +38,16 @@ HRESULT GetDebugApplicationNode(
   
 #### <a name="parameters"></a>Paramètres  
  `ppdan`  
- [out] Le nœud Débogage d’application correspondant à ce document.  
+ [out] Le nœud d’application de débogage correspondant à ce document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourne le nœud d’application de débogage correspondant à ce document.  
   
 ## <a name="see-also"></a>Voir aussi  

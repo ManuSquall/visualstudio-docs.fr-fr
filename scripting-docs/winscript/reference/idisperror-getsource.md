@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetSource | Documents Microsoft
+title: IDispError::GetSource | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727969"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091817"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 Retourne le ProgID dépendants de la langue pour la classe ou d’une application qui a généré l’erreur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -43,12 +43,12 @@ HRESULT GetSource(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode est utilisée pour déterminer la classe ou une application où l’exception s’est produite. L’identificateur de programme peut-être être retournée dans la langue spécifiée par l’identificateur de paramètres régionaux (LCID) fourni au moment de l’appel.  
+## <a name="remarks"></a>Notes  
+ Cette méthode est utilisée pour déterminer la classe ou une application où l’exception s’est produite. L’identificateur programmatique peut-être être retournée dans la langue spécifiée par l’identificateur de paramètres régionaux (LCID) fourni au moment de l’appel.  
   
 > [!NOTE]
 >  Cette méthode n’est pas implémentée.  

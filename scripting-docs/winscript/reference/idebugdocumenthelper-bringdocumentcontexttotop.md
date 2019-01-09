@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentContextToTop | Documents Microsoft
+title: IDebugDocumentHelper::BringDocumentContextToTop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665d194abd2eed02096a2295ec0683a03830fb8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dcdccd2b06059e376941808827a499f7a2d1e45
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725859"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087852"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-Met un contexte de ce document vers le haut dans l’interface utilisateur du débogueur.  
+Offre un contexte de ce document vers le haut dans l’interface utilisateur du débogueur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,16 +38,16 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Paramètres  
  `pddc`  
- Contexte de document pour déplacer vers le haut dans l’interface utilisateur du débogueur.  
+ Contexte de document à placer en haut de l’interface utilisateur du débogueur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode offre un contexte de ce document vers le haut dans l’interface utilisateur du débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  

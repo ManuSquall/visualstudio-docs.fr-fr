@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::EnumStackFrames | Documents Microsoft
+title: IRemoteDebugApplicationThread::EnumStackFrames | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20abe2c10a0959f00e67d98ac405b74c35a0c032
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729009"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093266"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-Retourne un énumérateur pour les frames de pile associées à ce thread.  
+Retourne un énumérateur pour les frames de pile associée à ce thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Paramètres  
  `ppedsf`  
- [out] Un énumérateur pour les frames de pile associées à ce thread.  
+ [out] Un énumérateur pour les frames de pile associée à ce thread.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode doit être appelée à partir d’un point d’arrêt. L’énumérateur de frame de pile doit retourner les images de démarrage en haut de la pile, en commençant par le frame plus récemment envoyée.  
+## <a name="remarks"></a>Notes  
+ Cette méthode doit être appelée à partir d’au sein d’un point d’arrêt. L’énumérateur de frame de pile doit retourner les images à partir du haut de la pile, en commençant par le frame envoyée le plus récemment.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName | Documents Microsoft
+title: IDebugDocumentHost::GetPathName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42fffa160a1f5b55dc9ba0287c2fdf3073e27e0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c33844ade2367ffeb7690306a5febbabde2f016
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726669"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096029"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
 Retourne le chemin d’accès et le nom complet du fichier de source du document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,17 +42,17 @@ HRESULT GetPathName(
  [out] Chaîne contenant le nom long.  
   
  `pfIsOriginalFile`  
- [out] Un indicateur qui est la valeur true si `pbstrLongName` fait référence au fichier d’origine du document, false dans le cas contraire.  
+ [out] Un indicateur qui est la valeur true si `pbstrLongName` fait référence au fichier d’origine pour le document, false sinon.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_FAIL`|Aucun fichier source peut être créé ou déterminé.|  
+|`E_FAIL`|Aucun fichier source peut être créé ou déterminée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne le chemin d’accès et le nom complet du fichier de source du document.  
   
 ## <a name="see-also"></a>Voir aussi  

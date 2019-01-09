@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumThreads | Documents Microsoft
+title: IRemoteDebugApplication::EnumThreads | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42b57e63716804258ba79ed4e4aceae118cb5f54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d813b9d1aa32368abddb6127450dffa8868facc5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729159"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086890"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
-Énumère tous les threads connus pour être associé à l’application.  
+Énumère tous les threads connus à associer à l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumThreads(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumThreads(
   
 #### <a name="parameters"></a>Paramètres  
  `pperdat`  
- [out] Énumérateur qui répertorie tous les threads connus pour être associé à l’application.  
+ [out] Énumérateur qui répertorie tous les threads connus à associer à l’application.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode énumère tous les threads connus pour être associé à l’application. Nouveaux threads peuvent être ajoutés à tout moment.  
+## <a name="remarks"></a>Notes  
+ Cette méthode énumère tous les threads connus à associer à l’application. Nouveaux threads peuvent être ajoutés à tout moment.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

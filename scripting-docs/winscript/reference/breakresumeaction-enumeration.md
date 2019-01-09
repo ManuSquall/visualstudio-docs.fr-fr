@@ -1,5 +1,5 @@
 ---
-title: Énumération BREAKRESUMEACTION | Documents Microsoft
+title: Énumération BREAKRESUMEACTION | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b830d314b1db40d7b83557d894ad6f8751bdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ac39353d11f327f7940ae5fc03ae2238ddd9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641219"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090466"
 ---
 # <a name="breakresumeaction-enumeration"></a>Énumération BREAKRESUMEACTION
 Décrit les différentes façons de poursuivre à partir d'un point d'arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagBREAKRESUME_ACTION {  
    BREAKRESUMEACTION_ABORT,  
    BREAKRESUMEACTION_CONTINUE,  

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAddChild | Documents Microsoft
+title: IDebugApplicationNodeEvents::onAddChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3df872cd14b6d7fcd455371d1601b2a4082fb39a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a211989202c0d5b5c0d6c99fe2d6fbb00978787
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726149"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088684"
 ---
 # <a name="idebugapplicationnodeeventsonaddchild"></a>IDebugApplicationNodeEvents::onAddChild
 Gère l’événement lorsqu’un nœud enfant est ajouté à un objet de nœud d’application de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onAddChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,16 +38,16 @@ HRESULT onAddChild(
   
 #### <a name="parameters"></a>Paramètres  
  `prddpChild`  
- [in] Le nœud application de débogage enfant qui a été ajouté.  
+ [in] Le nœud applications de débogage enfant qui a été ajouté.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode gère l’événement lorsqu’un nœud enfant est ajouté à un objet de nœud d’application de débogage.  
   
  Les implémenteurs de le `IDebugApplicationNode` interface déclencher cet événement  

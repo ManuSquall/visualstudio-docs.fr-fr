@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919467"
 ---
 # <a name="troubleshoot-service-references"></a>Dépanner les références de service
 
@@ -49,7 +48,7 @@ Pour corriger cette erreur :
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erreur d’accès à un service sur un bureau à distance
 
-Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « la requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
+Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « La requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
 
 Pour corriger cette erreur :
 
@@ -84,7 +83,7 @@ Pour corriger cette erreur, vous devrez manuellement régénérer le projet de s
 
 4.  Charger le projet de service WCF.
 
-5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
+5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d'informations, voir [Procédure : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 
 6.  Dans **l’Explorateur de solutions**, sélectionnez le projet de service WCF.
 
@@ -96,13 +95,13 @@ Quand il tente d’afficher une représentation XML des données dans un [!INCLU
 
 Pour corriger cette erreur, désactivez les flux RSS :
 
-1.  Dans Internet Explorer, sur le **outils** menu, cliquez sur **Options Internet**.
+1.  Dans Internet Explorer, accédez au menu Outils **et cliquez sur Options Internet**.
 
 2.  Sur le **contenu** sous l’onglet le **flux** , cliquez sur **paramètres**.
 
 3.  Dans le **paramètres de flux** boîte de dialogue, désactivez le **activer le mode lecture du flux** case à cocher, puis cliquez sur **OK**.
 
-4.  Cliquez sur **OK** pour fermer la **Options Internet** boîte de dialogue.
+4.  Cliquez sur OK pour fermer la boîte de dialogue Options Internet.
 
 ## <a name="see-also"></a>Voir aussi
 

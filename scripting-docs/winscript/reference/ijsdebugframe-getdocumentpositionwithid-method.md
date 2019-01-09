@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::getdocumentpositionwithid, méthode | Documents Microsoft
+title: Méthode IJsDebugFrame::GetDocumentPositionWithId | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f11e9ad51094522adec99ef82681f42ac500a251
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4c37f31ca6b75ca826dbdab93847a1e70ff054c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727729"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090010"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>IJsDebugFrame::GetDocumentPositionWithId, méthode
 Retourne la position actuelle de ce frame de pile dans le document au niveau de l’utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithId(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>Paramètres  
  `pDocumentId`  
- [out] ID unique d’un document source (pointeur vers le IDebugDocumentText).  
+ [out] ID unique pour un document source (pointeur vers IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] L’offset de base zéro du caractère à partir du début du script.  
+ [out] Offset de caractère de base zéro à partir du début du script.  
   
  `pStatementCharCount`  
- [out] La longueur de l’instruction actuelle, qui commence à * pCharacterOffset, en caractères.  
+ [out] La longueur de l’instruction en cours, qui commence à * pCharacterOffset, en caractères.  
   
 ## <a name="return-value"></a>Valeur de retour  
   

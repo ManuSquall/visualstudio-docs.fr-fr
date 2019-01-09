@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Documents Microsoft
+title: IActiveScriptStats::GetStat | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725229"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095392"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-Retourne l’une des statistiques de script standard.  
+Retourne une des statistiques de script standard.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -42,7 +42,7 @@ HRESULT GetStat(
  `stid`  
  [in] Spécifie les statistiques à retourner. La valeur doit être :  
   
-|Constante|Valeur|Description|  
+|Constante|Value|Description|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|Retourne le nombre d’instructions exécutées depuis le script démarré ou que les statistiques ont été réinitialisées.|  
   
@@ -53,14 +53,14 @@ HRESULT GetStat(
  [out] 32 bits de poids faibles d’un entier non signé 64 bits représentant la statistique.  
   
 ## <a name="return-value"></a>Valeur de retour  
- La méthode retourne `HRESULT`. Les valeurs possibles incluent, mais ne sont pas limités aux valeurs dans le tableau suivant.  
+ La méthode retourne `HRESULT`. Les valeurs possibles incluent, mais ne sont pas limitées aux valeurs dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode retourne l’une des statistiques de script standard.  
+## <a name="remarks"></a>Notes  
+ Cette méthode retourne une des statistiques de script standard.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   

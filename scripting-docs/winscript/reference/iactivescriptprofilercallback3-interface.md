@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercallback3, Interface | Documents Microsoft
+title: Interface IActiveScriptProfilerCallback3 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 844ea36bcbb46e5b1e363d63c39a09518fcd22f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eeaa4f6b83f36ac1fd1540ce99a6ccf06a265699
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724959"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092233"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>IActiveScriptProfilerCallback3, interface
-Fournit une méthode pour informer le profileur les exécutions profilées sont produisent dans le contexte d’un traitement web.  
+Fournit une méthode pour informer le profileur qui affectent les exécutions profilées dans le contexte d’un traitement web.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2  
 ```  
   

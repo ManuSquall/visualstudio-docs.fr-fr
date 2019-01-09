@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent | Documents Microsoft
+title: IScriptNode::GetParent | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733639"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090023"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
 Retourne le `IScriptNode` objet qui est le parent d’un objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -38,7 +38,7 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Paramètres  
  `ppsnParent`  
- [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptNode` interface de l’instance parente.  
+ [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptNode` interface de l’instance parent.  
   
  Si la classe implémente `IScriptEntry` ou `IScriptScriptlet`, un `IScriptNode` est retourné.  
   
@@ -47,11 +47,11 @@ HRESULT GetParent(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)

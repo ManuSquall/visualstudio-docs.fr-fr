@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilerheapenum::getoptionalinfo, méthode | Documents Microsoft
+title: Méthode IActiveScriptProfilerHeapEnum::GetOptionalInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724679"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088801"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>IActiveScriptProfilerHeapEnum::GetOptionalInfo, méthode
-Obtient des informations facultatives sur l’objet spécifié (à partir de l’ensemble des objets du tas retournée à partir de la [iactivescriptprofilercontrol3::enumheap, méthode](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Obtient des informations facultatives sur l’objet spécifié (à partir de l’ensemble des objets du tas retourné à partir de la [iactivescriptprofilercontrol3::enumheap, méthode](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- Vous ne devez pas libérer la mémoire retournée est affectée aux objets retournés. Au lieu de cela, vous devez appeler la [iactivescriptprofilerheapenum::freeobjectandoptionalinfo, méthode](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ Vous ne devez pas libérer la mémoire retournée affectée pour les objets retournés. Au lieu de cela, vous devez appeler la [iactivescriptprofilerheapenum::freeobjectandoptionalinfo, méthode](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   

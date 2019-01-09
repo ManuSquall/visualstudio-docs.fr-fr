@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::FunctionCompiled | Documents Microsoft
+title: IActiveScriptProfilerCallback::FunctionCompiled | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 797476d4892224ad0b27c9caf579c0704693c835
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bd032914605c61b13a0a56a42e510c2af252f7e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645909"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091401"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Notifie le profileur à l’objet de moteur de script a rencontré une fonction lors de la compilation d’un script.  
+Notifie le profileur à l’objet du moteur de script a rencontré une fonction lors de la compilation d’un script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT FunctionCompiled(  
     [in] PROFILER_TOKEN functionId,  
     [in] PROFILER_TOKEN scriptId,  
@@ -39,7 +39,7 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Paramètres  
  `functionId`  
- [in] ID unique de la fonction. Cet ID est assigné par le moteur de script.  
+ [in] ID unique de la fonction. Cet ID est attribué par le moteur de script.  
   
  `scriptId`  
  [in] ID unique du script faisant partie de la fonction.  
@@ -48,15 +48,15 @@ HRESULT FunctionCompiled(
  [in] Le nom de la fonction, ou null pour une fonction anonyme.  
   
  `pwszFunctionNameHint`  
- [in] Nom de la fonction, ou null si le moteur de script ne reconnaît pas de n’importe quel nom déduit.  
+ [in] Le nom de la fonction, ou null si le moteur de script ne déduit pas n’importe quel nom déduit.  
   
  `pIDebugDocumentContext`  
- [in] S’il est disponible, le pointeur vers un `IUnknown` interface que le profileur doit interroger pour un [idebugdocumentcontext, Interface](../../winscript/reference/idebugdocumentcontext-interface.md) pointeur. Sinon, Null.  
+ [in] S’il est disponible, le pointeur vers un `IUnknown` interface que le profileur doit interroger pour un [IDebugDocumentContext (Interface)](../../winscript/reference/idebugdocumentcontext-interface.md) pointeur. Sinon, Null.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La valeur de retour de cette méthode est ignorée par le moteur de script.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le moteur de script peut fournir le contexte de document uniquement si cela est pris en charge par l’hôte.  
   
 ## <a name="see-also"></a>Voir aussi  

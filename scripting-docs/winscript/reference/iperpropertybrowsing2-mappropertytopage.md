@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: caa1b028627eaec0b3c2b7d9a73ca220111603a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 605c1178ca01c6c55ef170bb4650625bec21c0f8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938043"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087189"
 ---
 # <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
 Retourne le CLSID de la page de propriété qui peut être utilisé pour modifier cette propriété.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT MapPropertyToPage(  
    DISPID  dispid,  
    CLSID*  pClsidPropPage  
