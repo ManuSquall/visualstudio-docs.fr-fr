@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetTextAttributes | Documents Microsoft
+title: IDebugDocumentHelper::SetTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef4ae1ccff730d6865e00174ec73e991245bd43
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726389"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096497"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Définit les attributs sur une plage de texte, en remplaçant les autres attributs de texte.  
+Définit les attributs sur une plage de texte, en remplaçant d’autres attributs sur ce texte.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetTextAttributes(  
    ULONG              ulCharOffset,  
    ULONG              cChars,  
@@ -40,7 +40,7 @@ HRESULT SetTextAttributes(
   
 #### <a name="parameters"></a>Paramètres  
  `ulCharOffset`  
- [in] L’emplacement de début de la plage de texte.  
+ [in] L’emplacement du début de la plage de texte.  
   
  `cChars`  
  [in] Le nombre de caractères dans la plage.  
@@ -51,15 +51,15 @@ HRESULT SetTextAttributes(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Il s’agit d’une erreur d’appeler `SetTextAttributes` sur une plage de texte avant que le texte est ajouté au document. Appelez le `AddDBCSText`, `AddUnicodeText`, ou `AddDeferredText` méthodes pour ajouter du texte au document.  
+## <a name="remarks"></a>Notes  
+ C’est une erreur d’appeler `SetTextAttributes` sur une plage de texte avant que le texte est ajouté au document. Appelez le `AddDBCSText`, `AddUnicodeText`, ou `AddDeferredText` méthodes pour ajouter du texte au document.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper (Interface)](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   

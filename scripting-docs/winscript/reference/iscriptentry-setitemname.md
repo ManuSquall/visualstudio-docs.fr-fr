@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Documents Microsoft
+title: IScriptEntry::SetItemName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 483d3cdc1c8b8de9342003a99427fc2c727ad67f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20af0975a4175d10b110ac5e3cef9e0055f4ce1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729299"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097758"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
 Définit le nom de l’élément qui identifie un `IScriptEntry` objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetItemName(  
    LPCOLESTR          psz  
 );  
@@ -43,15 +43,15 @@ HRESULT SetItemName(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|La méthode n’a pas réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Pour `IScriptEntry` des objets, cette méthode retourne `S_OK`.  
+## <a name="remarks"></a>Notes  
+ Pour `IScriptEntry` objets, cette méthode retourne `S_OK`.  
   
- Pour `IScriptScriptlet` objets (qui dérivent de `IScriptEntry`), cette méthode retourne `E_FAIL`. Pour `IScriptScriptlet` des objets, le nom de l’élément est défini [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) et ne peut pas être modifié.  
+ Pour `IScriptScriptlet` objets (qui dérivent de `IScriptEntry`), cette méthode retourne `E_FAIL`. Pour `IScriptScriptlet` objets, le nom de l’élément est défini [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) et ne peut pas être modifié.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IScriptEntry (Interface)](../../winscript/reference/iscriptentry-interface.md)   

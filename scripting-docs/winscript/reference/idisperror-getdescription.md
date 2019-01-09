@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetDescription | Documents Microsoft
+title: IDispError::GetDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c840dee7774ce5f056808daf98c448eac73ceb0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa0c837be9a98829551b9c7820faf154779479e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727559"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096952"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Retourne une description textuelle de l’erreur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription  
 );  
@@ -43,11 +43,11 @@ HRESULT GetDescription(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le texte est renvoyé dans la langue spécifiée par l’identificateur de paramètres régionaux (LCID) qui a été passé à `IDispatchEx::InvokeEx` pour la méthode qui a rencontré l’erreur.  
   
 > [!NOTE]

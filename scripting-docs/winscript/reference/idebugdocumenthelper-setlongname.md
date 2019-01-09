@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetLongName | Documents Microsoft
+title: IDebugDocumentHelper::SetLongName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 153655966f3be59f1d01fd375b8669fb7207e2d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4c16c94924459a2331a8aea41d74f561d0ecb905
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725909"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097472"
 ---
 # <a name="idebugdocumenthelpersetlongname"></a>IDebugDocumentHelper::SetLongName
 Définit le nom long du document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetLongName(  
    LPCOLESTR  pszLongName  
 );  
@@ -38,16 +38,16 @@ HRESULT SetLongName(
   
 #### <a name="parameters"></a>Paramètres  
  `pszLongName`  
- [in] Chaîne terminée par le caractère null qui contient le nom long du document.  
+ [in] Chaîne se terminant par null qui contient le nom long du document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode définit un nouveau nom long pour le document.  
   
 ## <a name="see-also"></a>Voir aussi  

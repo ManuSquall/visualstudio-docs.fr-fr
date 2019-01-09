@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise | Documents Microsoft
+title: ISimpleConnectionPoint::Advise | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ec43d135401386a3f54f2c047040897f038ba19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b3c0ea37e6fabb051458a11c4838061126bd98bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733789"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091739"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
 Établit une connexion entre l’objet de point de connexion simple et le récepteur du client.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Advise(  
    IDispatch*  pdisp,  
    DWORD*      pdwCookie  
@@ -39,7 +39,7 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>Paramètres  
  `pdisp`  
- [in] Pointeur vers le `IDispatch` interface sur le client d’informer le récepteur. Récepteur du client reçoit les appels sortants à partir du point de connexion simple.  
+ [in] Pointeur vers le `IDispatch` le récepteur de notifications de l’interface sur le client. Récepteur du client reçoit les appels sortants à partir du point de connexion simple.  
   
  `pdwCookie`  
  [out] Pointeur vers un jeton retourné qui identifie de façon unique cette connexion. L’appelant utilise ultérieurement ce jeton pour supprimer la connexion en le passant à la `ISimpleConnectionPoint::Unadvise` (méthode). Si la connexion n’a pas été établie, cette valeur est zéro.  
@@ -47,11 +47,11 @@ HRESULT Advise(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode établit une connexion entre l’objet de point de connexion simple et le récepteur du client.  
   
 ## <a name="see-also"></a>Voir aussi  
