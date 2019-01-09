@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : Instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire avec le profileur en ligne de commande | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e485f7e7bbcd2b6168d163be83b3c158b52df5fd
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: da1c1ad76802496108284dcb6fc037bfd7443180
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940912"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire avec le profileur en ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] afin de collecter des données détaillées sur l’allocation de mémoire et la durée de vie des objets dans .NET pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement à l’aide de la méthode de profilage par instrumentation.  
@@ -33,7 +31,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Pour configurer l’application web ASP.NET et le serveur web  
 
-1.  Modifiez le fichier *web.config* de l’application cible. Consultez [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).  
+1.  Modifiez le fichier *web.config* de l’application cible. Voir [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).  
 
 2.  Ouvrez une fenêtre d’invite de commandes sur l’ordinateur qui héberge l’application web.  
 
@@ -41,7 +39,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
      **VSPerfClrEnv /globaltracegc**  
 
-     ou  
+     - ou -  
 
      **VSPerfClrEnv /globaltracegclife**  
 

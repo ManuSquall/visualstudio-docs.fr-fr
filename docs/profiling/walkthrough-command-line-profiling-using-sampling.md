@@ -1,8 +1,6 @@
 ---
 title: 'Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886807"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage
 
@@ -35,7 +33,7 @@ Dans cette procédure pas à pas, vous allez suivre les étapes suivantes :
 
 - Compréhension intermédiaire de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Compréhension intermédiaire de l’utilisation des outils en ligne de commande
-- Une copie de l’[exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)
+- Une copie de l’[exemple PeopleTrax](/visualstudio/profiling/performance-explorer)
 - Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilage en ligne de commande suivant la méthode par échantillonnage

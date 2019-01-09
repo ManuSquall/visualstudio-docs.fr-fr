@@ -1,8 +1,6 @@
 ---
 title: Compteurs UC et Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912634"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -97,7 +95,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
       **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
 
-     ou
+     - ou -
 
    - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
 

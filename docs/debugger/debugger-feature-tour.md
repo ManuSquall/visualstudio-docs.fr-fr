@@ -3,7 +3,6 @@ title: Bien démarrer avec le débogage dans Visual Studio 2017
 description: Bien démarrer avec le débogage d’applications en utilisant le débogueur Visual Studio
 ms.custom: mvc
 ms.date: 06/15/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904966"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -174,7 +173,7 @@ La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et le
 
 Vous pouvez double-cliquer sur une ligne de code pour accéder à ce code source ; ceci change également l’étendue active inspectée par le débogueur. Ceci ne fait pas avancer le débogueur.
 
-Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des appels** pour faire d’autres choses. Par exemple, vous pouvez insérer des points d’arrêt dans des fonctions spécifiques, redémarrer votre application avec **Exécuter jusqu’au curseur** et aller examiner le code source. Consultez [Guide pratique pour examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des appels** pour faire d’autres choses. Par exemple, vous pouvez insérer des points d’arrêt dans des fonctions spécifiques, redémarrer votre application avec **Exécuter jusqu’au curseur** et aller examiner le code source. Voir [Guide pratique pour examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examiner une exception
 

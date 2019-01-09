@@ -1,8 +1,6 @@
 ---
 title: 'Procédure : Instrumenter un service .NET Framework et collecter des données de mémoire avec le profileur en ligne de commande | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 804149e70331c612511baae63dd530fff7f0cabc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904189"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter un service .NET Framework et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et collecter des données d’utilisation de la mémoire. Vous pouvez collecter les données d’allocation de mémoire, ou bien collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.  

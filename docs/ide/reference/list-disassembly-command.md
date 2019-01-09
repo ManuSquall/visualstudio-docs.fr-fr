@@ -2,7 +2,6 @@
 title: Afficher le code machine, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64951810020d99239a47b9c6bdba751b2c0a3dfd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6b175c6b7e0fcd145d58318d89707cfd907acb2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913370"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
 Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.
@@ -38,27 +37,27 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
  /count: `number` [ou] /c: `number` [ou] /length: `number` [ou] /l: `number`
 
- Facultative. Nombre d’instructions à afficher. La valeur par défaut est 8.
+ Optionnel. Nombre d’instructions à afficher. La valeur par défaut est 8.
 
  /endaddress: `expression` [ou] /e: `expression`
 
- Facultative. Adresse à laquelle le code machine doit s’arrêter.
+ Optionnel. Adresse à laquelle le code machine doit s’arrêter.
 
  /codebytes:`yes`&#124;`no` [ou] /bytes:`yes`&#124;`no` [ou] /b:`yes`&#124;`no`
 
- Facultative. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
+ Optionnel. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
 
  /source:`yes`&#124;`no` [ou] /s:`yes`&#124;`no`
 
- Facultative. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
+ Optionnel. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
 
  /symbolnames:`yes`&#124;`no` [ou] /names:`yes`&#124;`no` [ou] /n:`yes`&#124;`no`
 
- Facultative. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
+ Optionnel. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
- Facultative. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
+ Optionnel. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
 
 ## <a name="example"></a>Exemple
 
@@ -73,4 +72,4 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
