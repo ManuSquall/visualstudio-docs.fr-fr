@@ -1,8 +1,6 @@
 ---
 title: Aucune activité de thread à afficher (Vue Threads) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nothreadreport
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1bcfbc1a4e2995ca0a8d676b9352b2d7bcba9272
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858311"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Aucune activité du thread à afficher (vue Threads)
 Cette zone montre des données relatives aux threads non masqués dans l’intervalle de temps actuellement visible.  
@@ -35,4 +33,4 @@ Cette zone montre des données relatives aux threads non masqués dans l’inter
 -   Vérifiez que Réduction du bruit est défini sur un seuil peu élevé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

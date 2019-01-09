@@ -2,7 +2,6 @@
 title: -Clean (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 051485646b7ff19ddae40518215c410d05fa4849
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906889"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Nettoie tous les fichiers et répertoires de sortie intermédiaires.
@@ -38,11 +37,11 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 
  /project `ProjName`
 
- Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.
+ Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.
 
  /projectconfig `ProjConfigName`
 
- Facultative. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.
+ Optionnel. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.
 
 ## <a name="remarks"></a>Notes
  Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l’environnement de développement intégré (IDE).

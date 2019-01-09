@@ -2,21 +2,20 @@
 title: Mode de barre et mode de mappage pour la barre de défilement
 ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965069"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Procédure : Personnaliser la barre de défilement
+# <a name="how-to-customize-the-scroll-bar"></a>Procédure : Personnaliser la barre de défilement
 
 Quand vous travaillez sur de longs fichiers de code, il peut être difficile de suivre où tout se trouve dans le fichier. Vous pouvez personnaliser la barre de défilement de l’éditeur de code pour avoir une vue générale de ce qui se produit dans votre code.
 
@@ -56,7 +55,7 @@ Le *mode barre* affiche les indicateurs d'annotation dans la barre de défilemen
 
 ### <a name="map-mode"></a>Mode mappage
 
-En *mode mappage*, lorsque vous cliquez sur un emplacement dans la barre de défilement, le curseur va à cet emplacement dans le fichier au lieu de faire simplement défiler la page vers le haut ou vers le bas. Les lignes de code sont indiquées, en miniature, dans la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour activer un aperçu plus grand du code lorsque vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
+En *mode mappage*, lorsque vous cliquez sur un emplacement dans la barre de défilement, le curseur va à cet emplacement dans le fichier au lieu de faire simplement défiler la page vers le haut ou vers le bas. Les lignes de code sont indiquées, en miniature, dans la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour permettre un aperçu plus grand du code quand vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
 
 > [!TIP]
 > Vous pouvez désactiver l’affichage du code miniature en mode mappage en définissant **Vue d’ensemble de la source** sur **Désactivé**. Si l’option **Afficher une info-bulle d’aperçu** est sélectionnée, vous voyez toujours un aperçu du code à cet emplacement lorsque vous placez votre pointeur sur la barre de défilement, et le curseur va toujours à cet emplacement dans le fichier lorsque vous cliquez.

@@ -1,8 +1,6 @@
 ---
 title: Filtre de la vue Rapport de performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939879"
 ---
 # <a name="performance-report-view-filter"></a>Filtre de la vue Rapport de performances
 La fenêtre de **filtre de la vue Rapport du profileur** se trouve en haut de la fenêtre **Rapport de performances**. Si elle n’est pas visible, cliquez sur le bouton **Afficher le filtre**.  

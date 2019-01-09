@@ -1,8 +1,6 @@
 ---
 title: UpdateManifest, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fc6b89034815f0eb1ee5762e911c42075d115cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985561"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest (tâche)
 Met à jour les propriétés sélectionnées dans un manifeste et signe à nouveau.  
@@ -39,7 +37,7 @@ Met à jour les propriétés sélectionnées dans un manifeste et signe à nouve
 |`OutputManifest`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le manifeste qui contient les propriétés mises à jour.|  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres répertoriés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leur description, voir [Classe de base Task](../msbuild/task-base-class.md).  
+ En plus des paramètres répertoriés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
