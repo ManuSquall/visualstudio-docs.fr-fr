@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour utiliser uniquement le clavier
+title: 'Procédure : Utiliser uniquement le clavier'
 description: Découvrez comment utiliser des combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture de code dans l’environnement de développement intégré (IDE) Visual Studio.
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -18,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874457"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
+# <a name="how-to-use-the-keyboard-exclusively"></a>Procédure : Utiliser uniquement le clavier
 
 > [!TIP]
 > Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
