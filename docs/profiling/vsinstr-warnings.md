@@ -1,8 +1,6 @@
 ---
 title: Avertissements VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a306276e015d06fe3becf297d0bb5834f640a1a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888593"
 ---
 # <a name="vsinstr-warnings"></a>Avertissements VSInstr
 Le tableau suivant liste les avertissements émis par l’outil *VSInstr.exe*. Vous pouvez utiliser l’option NOWARN avec les numéros d’avertissement pour empêcher l’affichage de l’avertissement.  
