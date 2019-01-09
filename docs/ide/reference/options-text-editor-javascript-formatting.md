@@ -2,7 +2,6 @@
 title: Options, Éditeur de texte, JavaScript, Mise en forme
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa846a25e1383c0c164dfb4747899f5e86237d32
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4719d529d3fc9da7367150cd211a598ebf52770a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853279"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
 Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**, **Options**, puis développez **Éditeur de texte**, **JavaScript** et **Mise en forme**.

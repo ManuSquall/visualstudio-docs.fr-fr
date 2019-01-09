@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 19c3e72dd6f02d97dcb083cd61d7102a6926eb2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958449"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684585"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Utiliser le code Visual C++ dans le Concepteur de classes
 
@@ -48,7 +48,7 @@ Le **Concepteur de classes** prend en charge les éléments de code C++ suivants
 - TypeDef
 
 > [!NOTE]
-> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../../modeling/uml-class-diagrams-reference.md).
+> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d'informations, consultez [Diagrammes de classes UML : Référence](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Résoudre les problèmes de résolution de type et d’affichage
 
@@ -112,8 +112,6 @@ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissemen
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Conception et affichage des classes et des types](designing-and-viewing-classes-and-types.md)
-- [Utilisation des diagrammes de classes](working-with-class-diagrams.md)
 - [Conception et affichage des classes et des types](designing-and-viewing-classes-and-types.md)
 - [Informations supplémentaires sur les erreurs du Concepteur de classes](additional-information-about-errors.md)
 - [Classes de Visual C++ dans le concepteur de classes](visual-cpp-classes.md)

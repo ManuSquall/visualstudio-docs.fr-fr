@@ -1,8 +1,6 @@
 ---
 title: Résolution d’assemblys au moment du design | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad24bcf461dab05444f0e26ffd4e0c826f3f2bed
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986066"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Résoudre des assemblys au moment du design
 Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet **.NET** de la boîte de dialogue **Ajouter une référence**, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais pas nécessairement du code. L’onglet **.NET** liste les assemblys de référence qui correspondent aux assemblys runtime de .NET Framework. Il présente aussi ceux qui correspondent aux assemblys runtime des dossiers AssemblyFoldersEx inscrits et utilisés par des tiers.  

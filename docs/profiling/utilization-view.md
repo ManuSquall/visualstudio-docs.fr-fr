@@ -1,8 +1,6 @@
 ---
 title: Vue Utilisation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223535ef0b90869db191327abc7a757b5b79ae6b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 70e6fd49e72b3cb6ffdb1ade70dcd1ffb562bdd9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824209"
 ---
 # <a name="utilization-view"></a>Vue Utilisation
 La **vue Utilisation** affiche des informations sur le processeur, le GPU et d’autres ressources système utilisées par le processus en cours (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). Il montre l’utilisation moyenne des cœurs par le processus analysé, le processus inactif, le processus système et d’autres processus qui s’exécutent sur le système au fil du temps. Il ne montre pas quel cœur spécifique est actif à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période de temps donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation. La vue est générée en décomposant la durée du profilage en petits segments de temps. Pour chaque segment, le graphique indique le nombre moyen de threads du processus qui s’exécutent sur les cœurs logiques pendant cet intervalle.  

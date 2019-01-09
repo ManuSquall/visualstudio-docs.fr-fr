@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159722"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561903"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -56,7 +56,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `update` | Met à jour un produit installé. |
 | `repair` | Répare un produit installé. |
 | `uninstall` | Désinstalle un produit installé. |
-| `export` | **Nouveautés de la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. |
+| `export` | **Nouveautés de la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque** : Peut uniquement être utilisé avec vs_installer.exe. |
 
 | **Option d’installation** | **Description** |
 | ----------------------- | --------------- |

@@ -1,8 +1,6 @@
 ---
 title: FormatUrl, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c5e29260affb31d94d702fc19dad7704e3c110
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6086c03d3dae5a919b9b30abaecf2957076631b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845471"
 ---
 # <a name="formaturl-task"></a>FormatUrl (tâche)
 Convertit une URL en URL au format correct.  

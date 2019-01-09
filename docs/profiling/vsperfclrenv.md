@@ -1,8 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5623cfc9d6f72805e4ced489ef7a786aaad155e6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965082"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
