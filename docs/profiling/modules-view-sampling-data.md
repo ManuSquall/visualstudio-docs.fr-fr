@@ -1,8 +1,6 @@
 ---
 title: Modules, vue - Données d’échantillonnage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4c4e3d9181fecd3c9aa2d91201deadb09de7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892976"
 ---
 # <a name="modules-view---sampling-data"></a>Modules, vue - données d’échantillonnage
 La vue Modules des données d’échantillonnage affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions échantillonnées du module sont répertoriées sous le nœud du module.  
@@ -45,4 +43,4 @@ La vue Modules des données d’échantillonnage affiche les données de perform
 ## <a name="see-also"></a>Voir aussi  
  [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Modules, vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Vue Modules](../profiling/modules-view-instrumentation-data.md)
+ [Modules, mode](../profiling/modules-view-instrumentation-data.md)

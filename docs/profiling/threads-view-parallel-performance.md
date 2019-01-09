@@ -1,8 +1,6 @@
 ---
 title: Vue Threads dans le visualiseur concurrentiel | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7cf5cf0534a0e989b65d6e67451fe2a7c496ab
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6302adfab98b343e34e042f0294ec509b232b951
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891785"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Vue Threads dans le visualiseur concurrentiel
 
@@ -130,7 +128,7 @@ L’onglet **Rapport des profils** montre les rapports des catégories et des li
   Le rapport **Gestion de la mémoire** montre les appels où les blocages de gestion de la mémoire se sont produits, ainsi que les durées totales de blocage pour chaque pile des appels. Utilisez ces informations pour identifier les zones qui ont des problèmes de pagination ou de garbage collection excessifs.  Pour plus d’informations, consultez [Période de gestion de la mémoire](../profiling/memory-management-time.md).  
   
 - **Anticipation**  
-  Le rapport **Anticipation** montre où les processus sur le système ont anticipé le processus en cours et les threads individuels qui ont remplacé les threads dans le processus en cours. Vous pouvez utiliser ces informations pour identifier les processus et les threads qui ont effectué le plus d’anticipations. Pour plus d’informations, consultez [Durée d’anticipation](../profiling/preemption-time.md).  
+  Le rapport **Anticipation** montre où les processus sur le système ont anticipé le processus en cours et les threads individuels qui ont remplacé les threads dans le processus en cours. Vous pouvez utiliser ces informations pour identifier les processus et les threads qui ont effectué le plus de préemptions. Pour plus d’informations, consultez [Durée de préemption](../profiling/preemption-time.md).  
   
 - **Traitement de l'interface utilisateur**  
   Le rapport **Traitement de l’interface utilisateur** montre les appels responsables des blocages de traitement de l’IU, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps de traitement UI](../profiling/ui-processing-time.md).  
@@ -138,13 +136,13 @@ L’onglet **Rapport des profils** montre les rapports des catégories et des li
 - **Synthèse par thread**  
   Sélectionnez **Synthèse par thread** pour afficher un graphe indiquant l’état des threads pendant l’intervalle de temps sélectionné. Les colonnes avec des codes de couleur montrent la durée totale que chaque thread a passée dans les états En cours d’exécution, Bloqué, E/S et autres. Les threads sont nommés en bas. Quand vous ajustez le niveau de zoom dans le graphe chronologique, celui-ci se met automatiquement à jour. 
   
-  À certains niveaux de zoom, certains threads risquent de ne pas apparaître dans le graphe. Si cela se produit, des points de suspension (**...**) s’affichent à droite. Si le thread que vous voulez n’apparaît pas, vous pouvez masquer d’autres threads. Pour plus d’informations, consultez [Rapport Synthèse par thread](../profiling/per-thread-summary-report.md).  
+  À certains niveaux de zoom, certains threads risquent de ne pas apparaître dans le graphe. Si cela se produit, des points de suspension (**...**) s’affichent à droite. Si le thread que vous voulez n’apparaît pas, vous pouvez masquer d’autres threads. Pour plus d’informations, consultez [Rapport Récapitulatif par thread](../profiling/per-thread-summary-report.md).  
   
 - **Opérations sur le disque**  
   Sélectionnez **Opérations sur le disque** pour afficher les processus et les threads impliqués dans les E/S disque du processus en cours, les fichiers qu’ils ont utilisés (par exemple les DLL qu’ils ont chargées), le nombre d’octets lus et d’autres informations. Vous pouvez utiliser ce rapport pour évaluer le temps passé à accéder aux fichiers pendant l’exécution, en particulier quand votre processus est lié à des E/S. Pour plus d’informations, consultez [Rapport Opérations sur le disque](../profiling/disk-operations-report-threads-view.md).  
   
 ### <a name="current-tab"></a>Onglet actuel  
-Cet onglet affiche la pile des appels pour un point sélectionné sur un segment de thread dans le graphe chronologique. Les piles des appels sont coupées de façon à afficher seulement les activités liées à votre application.  
+Cet onglet affiche la pile des appels pour un point sélectionné sur un segment de thread dans le graphique chronologique. Les piles des appels sont coupées de façon à afficher seulement les activités liées à votre application.  
   
 ### <a name="unblocking-stack-tab"></a>Onglet Pile de déblocage 
 Cet onglet affiche le thread qui a débloqué le thread sélectionné et la pile des appels de déblocage.  
