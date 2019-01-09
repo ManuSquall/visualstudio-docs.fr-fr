@@ -2,7 +2,6 @@
 title: ProjectConfig, commutateur DevEnv
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /projectconfig Devenv switch
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f5d4479658b450074ba35f2759a273bb584e0a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967915"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -49,8 +48,8 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 |/deploy|Spécifie que le projet doit être déployé après une génération ou une régénération.|
 |*SolnConfigName*|Obligatoire. Nom de la configuration de solution à appliquer à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
 |*SolutionName*|Obligatoire. Chemin complet et nom du fichier solution.|
-|/project *ProjName*|Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
-|/projectconfig *ProjConfigName*|Facultative. Nom d’une configuration de build de projet à appliquer au projet spécifié par l’argument **/project**. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
+|/project *ProjName*|Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
+|/projectconfig *ProjConfigName*|Optionnel. Nom d’une configuration de build de projet à appliquer au projet spécifié par l’argument **/project**. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
 
 ## <a name="remarks"></a>Notes
 

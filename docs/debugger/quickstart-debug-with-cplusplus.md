@@ -3,7 +3,6 @@ title: Déboguer du code C++
 description: Déboguer du code natif avec le débogueur Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986477"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du C++ avec le débogueur Visual Studio
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code C++ avec le débogueur Visual Studio
 
 Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes pour vous aider à déboguer vos applications. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base.
 
@@ -82,7 +81,7 @@ Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interro
 
     ![Définir un point d’arrêt](../debugger/media/dbg-qs-set-breakpoint.png "Définir un point d’arrêt")
 
-2. Appuyez maintenant sur **F5** (ou choisissez **Déboguer > Démarrer le débogage**).
+2. Appuyez maintenant sur **F5** (ou choisissez **Déboguer > Démarrer le débogage**).
 
     ![Atteindre un point d’arrêt](../debugger/media/dbg-qs-hit-breakpoint.png "Atteindre un point d’arrêt")
 
@@ -95,15 +94,15 @@ Un *point d’arrêt* est un marqueur qui indique où Visual Studio doit interro
 
 ## <a name="navigate-code"></a>Naviguer dans le code
 
-Il existe différentes commandes pour indiquer au débogueur de continuer. Nous montrons une commande de navigation pratique dans le code qui est une nouveauté de Visual Studio 2017.
+Il existe différentes commandes pour indiquer au débogueur de continuer. Nous montrons une commande de navigation pratique dans le code qui est une nouveauté de Visual Studio 2017.
 
 Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’instruction `c1.push_back(20)` jusqu’à ce que le bouton vert **Exécuter jusqu’au clic** ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse, puis appuyez sur le bouton **Exécuter jusqu’au clic**.
 
 ![Exécuter jusqu’au clic](../debugger/media/dbg-qs-run-to-click.png "Exécuter jusqu’au clic")
 
-L’application poursuit son exécution, appelle `doWork` et s’arrête à la ligne de code où vous avez cliqué sur le bouton.
+L’application poursuit son exécution en appelant `doWork`, puis s’arrête à la ligne de code où vous avez cliqué sur le bouton.
 
-**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
+**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, voir [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans une bulle d’informations (datatip)
 
@@ -111,11 +110,11 @@ L’application poursuit son exécution, appelle `doWork` et s’arrête à la l
 
     ![Afficher un datatip](../debugger/media/dbg-qs-data-tip.png "Afficher un datatip")
 
-    Le datatip vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou appelantes. 
+    Le datatip vous montre la valeur actuelle de la variable `c1` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel. 
 
 2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c1`.
 
-3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c1` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé à un emplacement approprié.)
+3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c1` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé vers un emplacement approprié.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Modifier le code et continuer le débogage
 
@@ -123,13 +122,13 @@ Si vous identifiez une modification que vous voulez tester dans votre code penda
 
 1. Cliquez sur la deuxième instance de `c2.front()` et remplacez `c2.front()` par `c2.back()`.
 
-2. Appuyez quelques fois sur **F10** (ou **Déboguer > Pas à pas principal**) pour faire avancer le débogueur et pour exécuter le code modifié.
+2. Appuyez plusieurs fois sur **F10** (ou **Déboguer > Pas à pas principal**) pour faire avancer le débogueur et pour exécuter le code modifié.
 
-    ![Modifier & Continuer](../debugger/media/dbg-qs-edit-and-continue.gif "Modifier & Continuer")
+    ![Modifier & Continuer](../debugger/media/dbg-qs-edit-and-continue.gif "Modifier & Continuer")
 
-    **F10** fait avancer le débogueur d’une instruction à la fois, mais il passe les fonctions, au lieu d’y effectuer un pas à pas détaillé (le code que vous ignorez ainsi s’exécute néanmoins).
+    **F10** fait avancer le débogueur d’une instruction à la fois, mais il effectue un pas à pas principal sur les fonctions au lieu d’un pas à pas détaillé (le code que vous ignorez s’exécute tout de même).
 
-Pour plus d’informations sur l’utilisation Modifier & Continuer et sur les limitations de cette fonctionnalité, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
+Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur les limitations de cette fonctionnalité, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

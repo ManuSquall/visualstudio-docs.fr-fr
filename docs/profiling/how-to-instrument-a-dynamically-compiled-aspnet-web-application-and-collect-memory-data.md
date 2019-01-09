@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire à l’aide de la ligne de commande du profileur | Microsoft Docs
+title: 'Procédure : Instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire avec le profileur en ligne de commande | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c1d908a29d4255401aaad4567b56be16ce467cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e485f7e7bbcd2b6168d163be83b3c158b52df5fd
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862669"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592701"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire avec le profileur en ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] afin de collecter des données détaillées sur l’allocation de mémoire et la durée de vie des objets dans .NET pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement à l’aide de la méthode de profilage par instrumentation.  
 
 > [!NOTE]
->  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-
+>  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+ 
  Pour collecter les données de performances d’une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], modifiez le fichier *web.config* de l’application cible pour permettre à l’outil [VSInstr.exe](../profiling/vsinstr.md) d’instrumenter les fichiers d’application compilés dynamiquement. Utilisez ensuite l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour configurer le serveur qui héberge l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et activer le profilage de mémoire .NET en définissant les variables d’environnement appropriées, puis redémarrez l’ordinateur.  
 
  Pour collecter des données, démarrez Profiler, puis exécutez l’application cible. Pendant que Profiler est attaché à l’application, vous pouvez mettre en pause et reprendre la collecte des données. Une fois que vous avez collecté les données appropriées, fermez l’application, fermez le processus de travail IIS (Internet Information Services), puis arrêtez Profiler.  
@@ -41,7 +41,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
      **VSPerfClrEnv /globaltracegc**  
 
-     - ou -  
+     ou  
 
      **VSPerfClrEnv /globaltracegclife**  
 

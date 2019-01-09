@@ -1,8 +1,6 @@
 ---
 title: CvLeaveSpan, fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvLeaveSpan
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe234d60e8cd86279d3dcc01da95e6d2e6202213
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4de86d390b03eb38a449ada23f4189b9baca6152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967720"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan, fonction
 Marque la fin de l’intervalle.  
@@ -39,7 +37,7 @@ HRESULT CvLeaveSpan(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Voir aussi  

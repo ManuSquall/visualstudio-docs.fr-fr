@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561536"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -215,7 +215,7 @@ Pour plus d’informations, consultez la page [Inspecter les états antérieurs 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce tutoriel, vous avez vu rapidement de nombreuses fonctionnalités du débogueur. Vous pouvez en avoir une vision plus approfondie avec un exemple d’application
+Dans ce tutoriel, vous avez vu rapidement de nombreuses fonctionnalités du débogueur. Pour plus d’informations sur l’une de ces fonctionnalités en particulier, et notamment les points d'arrêt :
 
 > [!div class="nextstepaction"]
-> [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Apprendre à utiliser les points d’arrêt](../debugger/using-breakpoints.md)

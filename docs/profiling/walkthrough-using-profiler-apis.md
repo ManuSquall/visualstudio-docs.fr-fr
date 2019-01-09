@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : utilisation des API du profileur | Microsoft Docs'
+title: 'Procédure pas à pas : Utiliser les API du profileur | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928059"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592636"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
+# <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : Utiliser les API du profileur
 
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
   
@@ -32,9 +32,11 @@ La procédure pas à pas utilise une application C# pour montrer comment utilise
   
  Le profileur Visual Studio vous permet de limiter la collecte des données. Cette procédure pas à pas illustre la façon de limiter la collecte de données en utilisant les API du profileur. Le profileur Visual Studio fournit une API pour contrôler la collecte de données depuis une application.  
   
- Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+ Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Pour les applications 64 bits, le dossier est *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
   
- Pour le code managé, les API du profileur se trouvent dans *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>.  
+ Pour le code managé, les API du profileur se trouvent dans *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Pour les applications 64 bits, le dossier est *Studio\Shared\Common\VSPerfCollectionTools\x64 Visual Microsoft*. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Prérequis  
  Cette procédure pas à pas suppose que votre environnement de développement est configuré pour prendre en charge le débogage et l’échantillonnage. Les rubriques suivantes fournissent une vue d’ensemble de ces prérequis :  
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Créez un projet C# dans Visual Studio ou utilisez une génération en ligne de commande, selon ce que vous préférez.  
   
     > [!NOTE]
-    >  Votre build doit référencer la bibliothèque *Microsoft.VisualStudio.Profiler.dll*, située dans le répertoire *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+    >  Votre build doit faire référence à la bibliothèque *Microsoft.VisualStudio.Profiler.dll*, située dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.  
   
 2.  Copiez et collez le code suivant dans votre projet :  
   

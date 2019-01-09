@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8aacdda24dc9490f0c07862950f4a144135d7341
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937515"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 

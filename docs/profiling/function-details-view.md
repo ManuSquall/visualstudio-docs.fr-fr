@@ -1,8 +1,6 @@
 ---
 title: Vue Informations relatives à la fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945338"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 La fenêtre **Vue Informations relatives à la fonction** affiche les informations suivantes :  

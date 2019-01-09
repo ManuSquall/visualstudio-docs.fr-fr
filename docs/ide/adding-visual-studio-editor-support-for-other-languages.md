@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79a6432da32733b5cdc45e9f191c866b7fce1c02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968308"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 

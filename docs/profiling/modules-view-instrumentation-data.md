@@ -1,8 +1,6 @@
 ---
 title: Modules, vue - Données d’instrumentation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a2c5b1d7db173a932de186f67b0f0eb96a6350f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965984"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - données d’instrumentation
 La vue Modules affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Les fonctions du module sont répertoriées sous le nœud du module.  

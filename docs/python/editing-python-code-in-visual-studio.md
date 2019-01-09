@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062814"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803505"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
@@ -196,7 +196,7 @@ La prise en charge de Python dans Visual Studio fournit plusieurs options pour n
 
 La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et inclut une liste de définitions à deux niveaux. La liste déroulante de gauche contient des définitions de fonction et de classe de niveau supérieur du fichier actuel. La liste déroulante de droite affiche une liste de définitions dans l’étendue illustrée à gauche. À mesure de vos déplacements dans l’éditeur, les listes sont mises à jour pour afficher votre contexte actuel. En outre, vous pouvez sélectionner une entrée à partir de ces listes pour y accéder directement.
 
-![Navigation Bar] dans l’éditeur de Visual Studio(media/code-editing-navigation-bar.png)
+![Barre de navigation dans l’éditeur Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Pour masquer la barre de navigation, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Paramètres** > **Barre de navigation**.

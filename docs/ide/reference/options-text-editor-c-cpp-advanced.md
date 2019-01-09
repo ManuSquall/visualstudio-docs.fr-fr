@@ -2,7 +2,6 @@
 title: Options, Éditeur de texte, C/C++, Avancé
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
@@ -16,12 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd6522f80a367be33830f02a30c056531593d9ac
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7e5b78f6642cf458e9099d421d7b4a20540ab8c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903039"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865919"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592441"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -97,7 +97,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
       **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
 
-     - ou -
+     ou
 
    - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
 
@@ -113,7 +113,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
 4. Dans la liste **Catégorie de compteurs**, sélectionnez un groupe de compteurs. Le compteur Windows du groupe s’affiche dans la zone de liste.
 
-     **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.
+     **Remarque :** cliquez sur **Annuler** pour revenir à la configuration précédente de la collecte de compteur.
 
 ### <a name="command-line"></a>Ligne de commande
 
@@ -127,13 +127,11 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 
      **\<Répertoire Visual Studio Performance Tools>\VSPerfCmd /querycounters**
 
-     où *\<Répertoire Visual Studio Performance Tools>* correspond au chemin du répertoire Performance Tools de votre installation de Visual Studio, généralement
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     où *\<Répertoire Visual Studio Performance Tools>* correspond au chemin d’accès du répertoire Performance Tools de votre installation de Visual Studio. Pour obtenir le chemin d’accès des outils d’analyse des performances, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 [Vues d’ensemble](../profiling/overviews-performance-tools.md)  
 [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)  
-[Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)  
+[Guide pratique pour collecter les données des compteurs de processeur](../profiling/how-to-collect-cpu-counter-data.md)  
 [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

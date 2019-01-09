@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063261"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647830"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC 
 
@@ -84,7 +84,7 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 
  Les fonctions système et framework qui sont exécutées par votre code sont appelées *code externe*. Les fonctions de code externe démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation de l’UC regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .  
   
- Pour afficher les chemins d’appel du code externe, dans la page principale de rapport de diagnostic, sélectionnez **Afficher le code externe** dans la liste déroulante **Filtre**, puis sélectionnez **Appliquer**. La vue **Arborescence des appels** de la page **Utilisation de l’UC** page étend alors les appels de code externe.  
+ Pour voir les chemins d’appel du code externe, sélectionnez **Afficher le code externe** dans la liste déroulante **Filtrer** de la page principale des rapports de diagnostic (volet droit), puis sélectionnez **Appliquer**. La vue **Arborescence des appels** de la page **Utilisation de l’UC** page étend alors les appels de code externe. (La liste déroulante **Filtrer** est disponible sur la page principale des diagnostics, et non sur les vues détaillées.)
   
  ![Afficher le code externe](../profiling/media/cpu_use_wt_filterview.png "Afficher le code externe")  
   

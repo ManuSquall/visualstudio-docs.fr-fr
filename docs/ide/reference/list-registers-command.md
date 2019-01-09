@@ -2,7 +2,6 @@
 title: Afficher les registres, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959962"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.
@@ -37,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Commutateurs
  /Display [{`register`&#124;`registerGroup`}...]
 
- Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Exemple :
+ Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :
 
  `Debug.ListRegisters /Display eax`
 
@@ -70,5 +69,5 @@ r /Display Flags
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
+- [Principes de base pour le débogage : la fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
 - [Guide pratique pour utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)

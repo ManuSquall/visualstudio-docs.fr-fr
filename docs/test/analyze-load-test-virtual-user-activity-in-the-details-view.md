@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 484c80e474fdce799bc10787bddf157a19f46740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902917"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyse de l’activité des utilisateurs virtuels d’un test de charge dans la vue Détails de l’analyseur de test de charge
 

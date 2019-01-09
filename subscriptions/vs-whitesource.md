@@ -3,18 +3,18 @@ title: Avantage WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/11/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus dans votre abonnement Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935774"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739982"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -79,14 +79,19 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Oui          |
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Oui          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
 | Visual Studio Dev Essentials | NA  | Non disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : Microsoft Partner Network (Enterprise).  Exclut : autres NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services, Microsoft Partner Network (Professional).*
+<sup>1</sup>  *Inclut :  Microsoft Partner Network (Enterprise).  Exclut : autres NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services, Microsoft Partner Network (Professional).*
+
+
+> [!NOTE]
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

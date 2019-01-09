@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : profilage à l’aide d’outils en ligne de commande et de l’échantillonnage | Microsoft Docs'
+title: 'Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815254"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592428"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage
 
 Cette procédure pas à pas montre comment profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage pour identifier les problèmes de performances.
 
@@ -43,7 +43,7 @@ Dans cette procédure pas à pas, vous allez suivre les étapes suivantes :
 L’échantillonnage est une méthode de profilage par laquelle un processus spécifique est périodiquement interrogé pour déterminer la fonction active. Les données résultantes fournissent le nombre de fois que la fonction était sur la pile des appels quand le processus a été échantillonné.
 
 > [!NOTE]
-> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax est une application 32 bits.
+>  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.  
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Pour profiler l’application PeopleTrax à l’aide de la méthode d’échantillonnage
 

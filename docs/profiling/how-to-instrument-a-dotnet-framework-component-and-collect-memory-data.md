@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en ligne de commande | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
 author: mikejo5000
@@ -10,18 +8,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e2191469d313aca8506ccc86ddc6ab096f8e390
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9bed8b40e1ce601515a92f1f55a62d54cfb7d30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917460"
 ---
-# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Guide pratique pour instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande
+# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Procédure : Instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant .NET Framework d’une application autonome, tel qu’un fichier .exe ou .dll, pour collecter des informations relatives à la mémoire à l’aide du profileur.  
 
 > [!NOTE]
->  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.  
 
 
  Pour collecter les données de mémoire d’un composant .NET Framework à l’aide de la méthode d’instrumentation, utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant, et l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement de profilage. Ensuite, démarrez le profileur à l’aide de l’outil *VSPerfCmd.exe*.  

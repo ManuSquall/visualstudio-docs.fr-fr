@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 937f5f1606e24a40c0c5ffe90f739cc68df7e4b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872065"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Former des modèles IA dans Azure Batch AI
 
@@ -50,11 +49,11 @@ Comme il est intégré à Visual Studio Tools pour IA, vous pouvez dynamiquement
 
     ![Galerie d’exemples](media/train-model/tensorflowexamples.png)
 
-7. Définir le projet MNIST comme **Projet de démarrage**
+7. Définissez le projet MNIST comme **Projet de démarrage**.
 
     ![Galerie d’exemples](media/train-model/mnist-startup.png)
 
-8. <strong>Cliquez avec le bouton droit sur **Projet MNIST, **Envoyer la tâche</strong>
+8. <strong>Cliquez avec le bouton droit sur le **projet MNIST,** **Envoyer la tâche**</strong>.
 
     ![Galerie d’exemples](media/train-model/submit-job.png)
 9. Sélectionnez votre cluster **Azure Batch AI**, puis cliquez sur **Importer**. Sélectionnez le fichier `AzureBatchAI_TF_MNIST.json` pour remplir rapidement quelques valeurs par défaut comme l’image Docker à utiliser. Cliquez ensuite sur **Envoyer**

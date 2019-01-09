@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)
+title: 'Procédure : Ajouter ou supprimer des espaces de noms importés (Visual Basic)'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df39b7867cd4c7baa2206b2c63634810b2f29dde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42beee330bcd8ab6003bd44277b77063937cf2d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955176"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procédure : Ajouter ou supprimer des espaces de noms importés (Visual Basic)
 
 L’importation d’un espace de noms vous permet d’utiliser des éléments issus de cet espace de noms dans votre code sans avoir à qualifier complètement l’élément. Par exemple, pour accéder à la méthode `Create` dans la classe `System.Messaging.MessageQueue`, vous pouvez importer l’espace de noms `System.Messaging` et simplement référencer l’élément dont vous avez besoin dans le code sous la forme `MessageQueue.Create`.
 

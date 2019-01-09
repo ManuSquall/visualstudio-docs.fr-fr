@@ -1,8 +1,7 @@
 ---
 title: Publier sur IIS en important des paramètres de publication
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Créer et importer un profil de publication pour déployer une application de Visual Studio sur IIS
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 13a4210e24fe64db79be897bc159477e9b2f5a3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897382"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur IIS en important des paramètres de publication dans Visual Studio
 
@@ -24,7 +23,7 @@ Vous pouvez utiliser l’outil **Publier** pour importer des paramètres de publ
 
 Ces étapes s’appliquent aux applications ASP.NET, ASP.NET Core et .NET Core dans Visual Studio. Les étapes correspondent à Visual Studio 2017 version 15.6.
 
-Dans ce tutoriel, vous allez effectuer les actions suivantes :
+Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
 > * Configurer IIS pour pouvoir générer un fichier de paramètres de publication
@@ -41,7 +40,7 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différent d
 
 * Vous devez avoir installé Visual Studio 2017 et la charge de travail de développement **ASP.NET** et **NET Framework**. Pour une application .NET Core, vous avez aussi besoin de la charge de travail **NET Core**.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
 
 * Pour générer le fichier de paramètres de publication à partir d’IIS, vous devez avoir un ordinateur exécutant Windows Server 2012 ou Windows Server 2016, et avoir correctement configuré le rôle serveur web IIS. ASP.NET 4.5 ou ASP.NET Core doit également être installé. Pour ASP.NET Core, consultez [Publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Pour ASP.NET 4.5, consultez [IIS 8.0 avec ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 

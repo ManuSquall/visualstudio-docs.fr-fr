@@ -3,7 +3,6 @@ title: Déboguer du code ASP.NET
 description: Déboguer du code ASP.NET avec le débogueur Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6ac201b124f460a3918034095cd3f86e49141a7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900598"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 
@@ -49,7 +48,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
     }
     ```
 
-    par ce code :
+    par le code suivant :
 
     ```csharp
     public void OnGet()
@@ -103,7 +102,7 @@ Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’inst
 
 L’application poursuit son exécution, puis se met en pause sur la ligne de code où vous avez cliqué sur le bouton.
 
-**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, consultez le [Guide du débutant](../debugger/getting-started-with-the-debugger.md).
+**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, voir [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans une bulle d’informations (datatip)
 
@@ -111,11 +110,11 @@ L’application poursuit son exécution, puis se met en pause sur la ligne de co
 
     ![Afficher un datatip](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c2` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou appelantes. 
+    La bulle d’informations (datatip) vous montre la valeur actuelle de la variable `c2` et vous permet d’inspecter ses propriétés. Lors du débogage, si vous remarquez une valeur que vous n’attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel. 
 
 2. Développez le datatip pour examiner les valeurs des propriétés actuelles de l’objet `c2`.
 
-3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c2` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé à un emplacement approprié.)
+3. Si vous voulez épingler le datatip pour continuer à voir la valeur de `c2` pendant que vous exécutez du code, cliquez sur la petite icône d’épingle. (Vous pouvez déplacer le datatip épinglé vers un emplacement approprié.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Modifier le code et continuer le débogage
 
@@ -127,9 +126,9 @@ Si vous identifiez une modification que vous voulez tester dans votre code penda
 
     ![Modifier & Continuer](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Modifier & Continuer")
 
-    **F10** fait avancer le débogueur d’une instruction à la fois, mais il passe les fonctions, au lieu d’y effectuer un pas à pas détaillé (le code que vous ignorez ainsi s’exécute néanmoins).
+    **F10** fait avancer le débogueur d’une instruction à la fois, mais il effectue un pas à pas principal sur les fonctions au lieu d’un pas à pas détaillé (le code que vous ignorez s’exécute tout de même).
 
-Pour plus d’informations sur l’utilisation Modifier & Continuer et sur les limitations de cette fonctionnalité, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
+Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur les limitations de cette fonctionnalité, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

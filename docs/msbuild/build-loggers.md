@@ -1,8 +1,6 @@
 ---
 title: Enregistreurs d’événements de génération | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913999"
 ---
 # <a name="build-loggers"></a>Enregistreurs d’événements de génération
 Les enregistreurs d’événements vous permettent de personnaliser la sortie de votre génération et d’afficher des messages, des erreurs ou des avertissements en réponse à des événements de génération spécifiques. Chaque enregistreur d’événements est implémenté en tant que classe .NET qui met en œuvre l’interface <xref:Microsoft.Build.Framework.ILogger>, définie dans l’assembly *Microsoft.Build.Framework.dll*.  

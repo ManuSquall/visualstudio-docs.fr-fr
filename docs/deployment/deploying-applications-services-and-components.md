@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861629"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805157"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : Présentation du déploiement dans Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : Présentation du déploiement dans Visual Studio
 
 Quand vous déployez une application, un service ou un composant, vous le distribuez pour l’installer sur d’autres ordinateurs, appareils, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin. (De nombreux types d’application prennent en charge d’autres outils de déploiement comme l’outil de déploiement en ligne de commande ou NuGet qui ne sont pas décrits ici.)
 
@@ -41,21 +41,21 @@ Consultez les guides de démarrage rapide et les tutoriels pour obtenir des inst
 
 Le déploiement dans un dossier local est généralement utilisé pour les tests ou pour lancer un déploiement de préproduction dans lequel un autre outil est utilisé pour le déploiement final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et **.NET Core** : Utiliser l’outil Publier pour déployer dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et. **NET Core** : utilisez l’outil Publier pour effectuer le déploiement dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
 
     ![Choisir Publier](../deployment/media/quickstart-publish.png)
 
-- **Runtime Visual C++** : Vous pouvez déployer le runtime Visual C++ à l’aide d’un déploiement local ou d’une liaison statique. Pour plus d'informations, consultez [Déploiement d’applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Runtime Visual C++** : vous pouvez déployer le runtime Visual C++ à l’aide d’un déploiement local ou d’une liaison statique. Pour plus d'informations, consultez [Déploiement d’applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** et **Node.js** : Vous pouvez utiliser l’outil Publier pour déployer rapidement des applications sur Azure App Service ou sur une machine virtuelle Azure. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Dans la boîte de dialogue Publier, choisissez **App Service** ou **Machines virtuelles Azure**, puis suivez les étapes de configuration.
+- **ASP.NET**, **ASP.NET Core**, **Python** et **Node.js** : vous pouvez utiliser l’outil Publier pour déployer rapidement des applications sur Azure App Service ou une machine virtuelle Azure. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Dans la boîte de dialogue Publier, choisissez **App Service** ou **Machines virtuelles Azure**, puis suivez les étapes de configuration.
 
     ![Choisir Azure App Service](../deployment/media/quickstart-publish-azure.png "Choisir Azure App Service")
 
     Dans Visual Studio 2017 version 15.7 et ultérieure, vous pouvez déployer des applications ASP.NET Core sur **App Service pour Linux**.
 
-    Pour les applications Python, consultez également [Python - Publication sur Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Pour les applications Python, consultez également [Python - Publication sur Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Pour une présentation rapide, consultez [Publier sur Azure](quickstart-deploy-to-azure.md) et [Publier sur Linux](quickstart-deploy-to-linux.md). Consultez également [Publier une application ASP.NET Core sur Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Pour le déploiement avec Git, consultez [Déploiement continu d’ASP.NET Core sur Azure avec Git](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +66,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publier sur le web ou déployer sur un partage réseau
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** et **Python** : Vous pouvez utiliser l’outil Publier pour déployer sur un site web à l’aide de FTP ou Web Deploy. Pour plus d’informations, consultez [Déployer sur un site web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** et **Python** : vous pouvez utiliser l’outil Publier pour effectuer un déploiement sur un site web à l’aide de FTP ou de Web Deploy. Pour plus d’informations, consultez [Déployer sur un site web](quickstart-deploy-to-a-web-site.md).
 
     Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier**. (Si vous avez déjà configuré des profils de publication, vous devez cliquer sur **Créer un profil**.) Dans l’outil Publier, choisissez l’option souhaitée et suivez les étapes de configuration.
 
@@ -76,7 +76,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     Vous pouvez également déployer des applications et services ASP.NET de plusieurs autres façons. Pour plus d’informations, consultez [Déploiement d’applications et services web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Runtime Visual C++** : Vous pouvez déployer le runtime Visual C++ à l’aide d’un déploiement central. Pour plus d'informations, consultez [Déploiement d’applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Runtime Visual C++** : vous pouvez déployer le runtime Visual C++ à l’aide d’un déploiement central. Pour plus d'informations, consultez [Déploiement d’applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de bureau à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) et [Déployer une application native à l’aide de ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -84,11 +84,11 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
 À partir de Visual Studio, vous pouvez créer des packages d’application pour le déploiement sur Microsoft Store.
 
-- **UWP** : Vous pouvez empaqueter votre application et la déployer à l’aide des éléments de menu. Pour plus d’informations, consultez [Empaqueter une application UWP à l’aide de Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP** : vous pouvez empaqueter votre application et la déployer à l’aide des éléments de menu. Pour plus d’informations, consultez [Empaqueter une application UWP à l’aide de Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Création d'un package d'application](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows Desktop** : Vous pouvez déployer sur Microsoft Store à l’aide du Pont du bureau à partir de Visual Studio 2017 version 15.4. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Bureau Windows** : vous pouvez effectuer un déploiement sur Microsoft Store à l’aide du Pont du bureau à partir de la version 15.4 de Visual Studio 2017. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Pont du bureau](../deployment/media/feature-tour-desktop-bridge.png)
 

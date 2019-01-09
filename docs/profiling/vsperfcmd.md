@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320980"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647843"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 L’outil *VSPerfCmd.exe* est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :  
@@ -85,11 +85,11 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*Utilisateur*&#124;*Groupe*>|Autorise ou refuse à l’utilisateur ou au groupe spécifié l’accès aux services de profilage.<br /><br /> `Right` peut être :<br /><br /> CrossSession : donne à l’utilisateur l’accès au service pour faire du profilage intersession.<br /><br /> SampleProfiling : donne à l’utilisateur l’accès au pilote pour activer le profilage par échantillonnage. Également utilisé pour accéder aux informations de transition du noyau lors du profilage de trace.<br /><br /> FullAccess : donne à l’utilisateur l’accès CrossSession et SampleProfiling.|  
 |**Admin:Security, List**|Répertorie les états des services de profilage et les autorisations des utilisateurs.|  
-|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|  
-|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|  
+|**Admin:** \<*Service*&#124;*Pilote*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|  
+|**Admin:** \<*Service*&#124;*Pilote*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
- L’option **VSPerfCmd /Driver** est désormais obsolète. Utilisez les options de **VsPerfCmdAdmin** pour cette fonctionnalité.  
+ L’option **VSPerfCmd /Driver** est désormais obsolète. Utilisez les options **d’administration VsPerfCmd** pour cette fonctionnalité.  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSInstr](../profiling/vsinstr.md)   

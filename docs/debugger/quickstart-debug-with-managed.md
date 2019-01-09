@@ -3,7 +3,6 @@ title: Déboguer du code managé | Microsoft Docs
 description: Déboguer du code C# ou Visual Basic à l’aide du débogueur Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: d6b4f6fecabe7947e59a235dbb71e9f5e0803b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955475"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer avec C# ou Visual Basic à l’aide du débogueur Visual Studio
 
@@ -151,7 +150,7 @@ Avec l’exécution en pause au point d’arrêt, placez le curseur sur l’inst
 
 L’application poursuit son exécution en appelant `doWork`, puis s’arrête à la ligne de code où vous avez cliqué sur le bouton.
 
-**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions détaillées, consultez [Présentation du débogueur](../debugger/debugger-feature-tour.md).
+**F10** et **F11** sont des commandes clavier fréquemment utilisées pour avancer pas à pas dans le code. Pour des instructions plus détaillées, voir [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecter des variables dans une bulle d’informations (datatip)
 
