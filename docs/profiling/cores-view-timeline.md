@@ -1,8 +1,6 @@
 ---
 title: Chronologie de la vue Cœurs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14bf030ce1adb1dede9ad2a377d8fb435d75e0c6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64dc3965c94a8427c0a5112d7b08715991cf8cb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949600"
 ---
 # <a name="cores-view-timeline"></a>Chronologie de la vue Cœurs
 Chaque ligne de la chronologie représente un cœur de processeur logique sur le système profilé. Pour chaque ligne, l’axe horizontal indique le thread qui s’exécutait sur un cœur logique à un moment donné dans le temps. Vous pouvez pointer sur une couleur dans une chronologie pour afficher une info-bulle qui identifie le thread. Pour faciliter l’identification du thread, la légende dans le bas de la fenêtre indique ce que représente chaque couleur. Utilisez l’outil Zoom pour effectuer un zoom avant ou arrière, en cliquant et en faisant glisser, ou en appuyant sur Ctrl et en actionnant la roulette de la souris. La cohérence du zoom est conservée quand vous basculez entre la vue Cœurs et la vue Threads.  

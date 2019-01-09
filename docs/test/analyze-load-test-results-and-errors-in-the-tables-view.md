@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962634"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -150,7 +149,7 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 |-|-|-|
 |Type|Type de l'erreur. Par exemple, HttpError.|Oui|
 |SubType|Sous-type de l'erreur. Par exemple, LoadTestException.|Oui|
-|Count|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
+|Nombre|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
 |Dernier message|Message qui décrit l'erreur. Par exemple, 404 - Non trouvé.|Oui|
 
  Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).

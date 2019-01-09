@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour définir les autorisations | Microsoft Docs
+title: 'Procédure : Définir les autorisations | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0c9770f1d9b42dd50367aaee81be94b0bd85025
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592402"
 ---
-# <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
+# <a name="how-to-set-permissions"></a>Procédure : Définir les autorisations
 
 Cet article explique comment l’administrateur d’un ordinateur accorde les autorisations de sécurité requises pour le profilage à un utilisateur ou à un groupe qui ne dispose pas des autorisations d’administrateur sur cet ordinateur.
 
@@ -84,7 +84,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 2. Remplacez le répertoire par :
 
     ```cmd
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
+    <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
 3. Exécutez la commande suivante :

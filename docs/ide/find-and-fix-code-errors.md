@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065115"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684819"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -144,7 +144,7 @@ Quand le débogueur est suspendu, vous pouvez inspecter les variables et les pil
 
 ![Inspection d’une valeur à l’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Placez le curseur sur une variable pour voir sa valeur actuelle et ses références. Si vous remarquez une valeur inattendue, vous avez probablement un bogue dans les lignes de code précédentes ou dans le code appelant. Pour plus d’informations sur le débogage, consultez [cet article](../debugger/getting-started-with-the-debugger.md) sur l’utilisation du débogueur.
+Placez le curseur sur une variable pour voir sa valeur actuelle et ses références. Si vous remarquez une valeur inattendue, vous avez probablement un bogue dans les lignes de code précédentes ou dans le code appelant. Pour plus d’informations sur le débogage, consultez [cet article](../debugger/debugger-feature-tour.md) sur l’utilisation du débogueur.
 
 Par ailleurs, Visual Studio affiche la fenêtre **Outils de diagnostic**. Celle-ci vous permet d’observer l’utilisation au fil du temps de l’UC et de la mémoire par votre application. Ultérieurement lors du développement de vos applications, vous pourrez utiliser ces outils pour rechercher les utilisations du processeur ou les allocations de mémoire importantes et imprévues. Utilisez-les conjointement avec la fenêtre **Espion** et les points d’arrêt pour déterminer le problème à l’origine d’une utilisation élevée inattendue ou de la non-libération de ressources. Pour plus d’informations, consultez [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +159,5 @@ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment
 ## <a name="see-also"></a>Voir aussi
 
 - [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
-- [En savoir plus sur l’utilisation du débogueur](../debugger/getting-started-with-the-debugger.md)
+- [En savoir plus sur l’utilisation du débogueur](../debugger/debugger-feature-tour.md)
 - [Générer et corriger du code](../ide/code-generation-in-visual-studio.md)

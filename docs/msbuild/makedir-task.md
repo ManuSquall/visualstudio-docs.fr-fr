@@ -1,8 +1,6 @@
 ---
 title: MakeDir, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b90ad8ca887c0868f568dee3ed0264f56f122a49
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d56801821a0c041e5de0785a39146a0e8f5a747b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960928"
 ---
 # <a name="makedir-task"></a>MakeDir (tâche)
 Crée des répertoires et, si nécessaire, des répertoires parents.  

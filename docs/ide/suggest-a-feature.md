@@ -1,43 +1,49 @@
 ---
 title: Suggérer une fonctionnalité
 description: Décrit les suggestions présentes dans la Communauté des développeurs, explique comment faire une suggestion et montre comment elles sont utilisées par Microsoft dans la feuille de route Visual Studio.
-ms.date: 11/15/2018
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160034"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592454"
 ---
 # <a name="overview-suggest-a-feature"></a>Vue d'ensemble : Suggérer une fonctionnalité
 
-Nous avons introduit une toute nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). C’est pour vous un nouveau moyen de contribuer directement au flux de travail d’ingénierie de Visual Studio.
+Nous avons introduit une nouvelle expérience de suggestion de fonctionnalités en parallèle de la fonctionnalité actuelle de signalement de problèmes dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com). C’est pour vous un nouveau moyen de contribuer directement au flux de travail d’ingénierie de Visual Studio.
 
-Jusqu’à présent, les utilisateurs de Visual Studio utilisaient le forum UserVoice pour proposer des idées de nouvelles fonctionnalités. L’expérience *Suggérer une fonctionnalité* dans la Communauté des développeurs permet de passer du forum UserVoice à une plateforme unique pour tous les commentaires qui concernent directement les équipes produit Visual Studio.
+![Suggérer un bouton Fonctionnalité sur la Communauté des développeurs](media/suggest-a-feature/suggest-feature-button.png)
+
+Vous pouvez également démarrer une suggestion de fonctionnalité directement à partir de Visual Studio en choisissant **Fournir une suggestion** à partir de l’icône **Fournir des commentaires** en haut à droite de la fenêtre principale de Visual Studio :
+
+![Fournir un menu Suggestion dans Visual Studio](media/suggest-a-feature/provide-suggestion.png)
+
+Choisissez **Fournir une suggestion** pour accéder à [Communauté de développeurs](https://developercommunity.visualstudio.com), où vous pouvez entrer votre suggestion.
+
+## <a name="user-voice"></a>UserVoice
+
+Jusqu’à présent, les utilisateurs de Visual Studio proposaient des idées de nouvelles fonctionnalités sur UserVoice. En ajoutant la fonctionnalité *Suggérer une fonctionnalité* sur la Communauté des développeurs, tous vos commentaires à l’équipe produit Visual Studio se trouvent désormais au même endroit.
+
+Le site UserVoice est en lecture seule. Vous pouvez rechercher du contexte, mais toutes les suggestions de nouvelles fonctionnalités doivent être soumises sur la Communauté des développeurs.
 
 Nous avons migré une sélection initiale d’idées du forum UserVoice à la Communauté des développeurs. Cette migration a été effectuée en fonction de l’impact des commentaires sur la Communauté et des priorités de notre feuille de route produit. Si nous sommes passés à côté d’une suggestion que vous attendiez, n’hésitez pas à l’ajouter à la Communauté des développeurs.
 
 ## <a name="votes"></a>Votes
 
-Le système de vote de UserVoice fonctionne différemment de celui de la Communauté des développeurs. Pour maintenir l’intégrité des nombres de votes de la Communauté des développeurs et éviter qu’ils ne soient faussés, nous mettons les nombres de votes UserVoice bien en évidence sous la forme d’une étiquette à côté de chaque suggestion de fonctionnalité. Par la suite, lorsque vous voterez pour des suggestions de la Communauté des développeurs nouvelle version, vos nouveaux nombres de votes s’afficheront séparément des volumes UserVoice.
-
-## <a name="user-voice"></a>UserVoice
-
-Le site UserVoice est maintenant en lecture seule, ce qui permet de revenir consulter le contexte si nécessaire. Toutes les suggestions de nouvelles fonctionnalités doivent être soumises sur la Communauté des développeurs.
+Le système de vote dans la Communauté des développeurs est différent de celui sur UserVoice. Pour maintenir l’intégrité des nombres de votes de la Communauté des développeurs et éviter qu’ils ne soient faussés, nous mettons les nombres de votes UserVoice bien en évidence sous la forme d’une étiquette à côté de chaque suggestion de fonctionnalité. Par la suite, lorsque vous voterez pour des suggestions de la Communauté des développeurs nouvelle version, vos nouveaux nombres de votes s’afficheront séparément des volumes UserVoice.
 
 ## <a name="suggestion-status"></a>État des suggestions
 
-Les états indiquent la position des suggestions de fonctionnalités soumises dans leur cycle de vie. Lorsque nous tenons compte de vos commentaires et les faisons avancer dans le workflow, nous les marquons de l’état correspondant.
-
-Les différents états associés à des suggestions de fonctionnalités sont listés ci-dessous, avec une description de leur signification et des indicateurs de couleur.
+Les états indiquent la position des suggestions de fonctionnalités soumises dans leur cycle de vie. Lorsque nous tenons compte de vos commentaires et les faisons avancer dans le workflow, nous les marquons de l’état correspondant. Les différents états associés à des suggestions de fonctionnalités sont listés ici, avec une description de leur signification et des indicateurs de couleur.
 
 ![État New des suggestions dans la Communauté des développeurs](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ Le système de vote de UserVoice fonctionne différemment de celui de la Communa
 Nous sommes très à l’écoute de vos suggestions de fonctionnalités, et faisons tout notre possible pour offrir une expérience de qualité à nos clients. Les actions à effectuer en réponse aux suggestions sont hiérarchisées en fonction de leur impact sur l’ensemble de la Communauté. Même si nous ne pouvons pas répondre personnellement à chaque suggestion, nous veillons à ce que vos commentaires soient transmis à l’équipe concernée et qu’ils soient soigneusement évalués.
 
 Le temps de réponse varie selon l’état de vos commentaires. Pour le connaître, consultez l’explication des états dans ce document.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Présentation de « Suggérer une fonctionnalité » dans la Communauté des développeurs (blog Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
