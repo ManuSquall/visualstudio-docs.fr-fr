@@ -1,8 +1,6 @@
 ---
 title: ParameterGroup, élément | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a47c77ecb441d2c1277fee1a7e94e1e9a7991b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a531073ba6f2f55272b719a116caad724d29e53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916161"
 ---
 # <a name="parametergroup-element"></a>Élément ParameterGroup
 Contient une liste facultative de paramètres qui seront présents sur la tâche générée par `UsingTask` `TaskFactory`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
