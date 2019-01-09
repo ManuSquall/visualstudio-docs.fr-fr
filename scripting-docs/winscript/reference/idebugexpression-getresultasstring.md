@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsString | Documents Microsoft
+title: IDebugExpression::GetResultAsString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728249"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097355"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Retourne le résultat de l’évaluation d’une expression comme une chaîne et la valeur de retour de l’opération.  
+Retourne le résultat de l’évaluation de l’expression comme une chaîne et la valeur de retour de l’opération.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -47,13 +47,13 @@ HRESULT GetResultAsString(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_PENDING`|L’opération est toujours en attente.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode retourne le résultat de l’évaluation d’une expression comme une chaîne et l’opération `HRESULT`.  
+## <a name="remarks"></a>Notes  
+ Cette méthode retourne le résultat de l’évaluation des expressions en tant que chaîne et l’opération `HRESULT`.  
   
  Cette méthode retourne `S_OK` et `phrResult` retourne `E_ABORT` si `Abort` abandonne l’opération.  
   

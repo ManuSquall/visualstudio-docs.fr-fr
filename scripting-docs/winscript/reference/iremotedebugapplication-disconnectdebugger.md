@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::DisconnectDebugger | Documents Microsoft
+title: IRemoteDebugApplication::DisconnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: facbe73a404ace07ad91e403a26e94008d0a3e67
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e7146082d0311ec758024fdc4d50e4506bd3ec85
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729199"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094664"
 ---
 # <a name="iremotedebugapplicationdisconnectdebugger"></a>IRemoteDebugApplication::DisconnectDebugger
-Déconnecte le débogueur actif de l’application.  
+Déconnecte le débogueur en cours de l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT DisconnectDebugger();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT DisconnectDebugger();
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode déconnecte le débogueur actif de l’application.  
+## <a name="remarks"></a>Notes  
+ Cette méthode déconnecte le débogueur en cours de l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

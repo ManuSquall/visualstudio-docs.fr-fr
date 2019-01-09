@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugprocess::createstackwalker, méthode | Documents Microsoft
+title: Méthode IJsDebugProcess::CreateStackWalker | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ca7594f4e3c6ef44aa8cde1d92f17d46a9aa30
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f9c39163eae1f3a9bad15697bbc5621661bc781
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727769"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088281"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker, méthode
 Méthode de fabrique pour l’Explorateur de pile.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateStackWalker(  
    DWORD threadId,  
    IJsDebugStackWalker **ppStackWalker  
@@ -44,8 +44,8 @@ HRESULT CreateStackWalker(
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="remarks"></a>Remarques  
- Retourne E_JsDEBUG_UNKNOWN_THREAD si le thread n’a pas de JavaScript sur celui-ci. Cette méthode peut être appelée uniquement pendant que le processus cible est arrêté.  
+## <a name="remarks"></a>Notes  
+ Retourne E_JsDEBUG_UNKNOWN_THREAD si le thread n’a pas de JavaScript sur celui-ci. Cette méthode peut être appelée uniquement pendant le processus cible est arrêté.  
   
 ## <a name="requirements"></a>Spécifications  
  **En-tête :** jscript9diag.h  

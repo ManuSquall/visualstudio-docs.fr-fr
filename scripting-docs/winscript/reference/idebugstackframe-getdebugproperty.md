@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDebugProperty | Documents Microsoft
+title: IDebugStackFrame::GetDebugProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 898c80dc4f5ef9010db6396a78c1b17b50603dc2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8d3f50029be8489d05c204c57f50c3f7f1326400
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726889"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096124"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
 Retourne un Explorateur de propriétés pour le frame actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IDebugProperty**  ppDebugProp  
 );  
@@ -43,11 +43,11 @@ HRESULT GetDebugProperty(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne un Explorateur de propriétés pour le frame actuel.  
   
 ## <a name="see-also"></a>Voir aussi  

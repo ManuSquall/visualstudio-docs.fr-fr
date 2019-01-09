@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91d44d2f910a1523d0c45871e01d0258dcdd4138
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 36aac4ef2631dbc82dc64e61021ef6bb3f2ac153
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24645529"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096185"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
 Supprime une bibliothèque de types à partir de l’espace de noms du moteur de création de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT RemoveTypeLib(  
    REFGUID   rguidTypeLib,  
    DWORD     dwMajor,  
@@ -46,7 +46,7 @@ HRESULT RemoveTypeLib(
  [in] Numéro de version principale.  
   
  `dwMinor`  
- [in] Le numéro de version secondaire.  
+ [in] Le numéro de version mineure.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
