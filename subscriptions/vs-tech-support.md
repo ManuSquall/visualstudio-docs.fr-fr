@@ -3,18 +3,18 @@ title: Avantage Support technique
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950067"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740428"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer l’avantage Support technique dans les abonnements Visual Studio
 
@@ -95,13 +95,18 @@ Une fois que vous avez effectué ces étapes, vous pouvez choisir le plan de sup
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail, NFR sélectif<sup>2</sup>                                        | 2 incidents                                                          |Oui         |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail, NFR sélectif<sup>2</sup>                                        | 2 incidents                                                          |Oui         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 2 incidents                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 2 incidents                                               | Oui         |
 | Visual Studio Dev Essentials | NA | Non disponible |NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup> *Inclut : Imagine Premium. Exclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services.*
+<sup>1</sup> *Inclut : Imagine Premium. Exclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services.*
 
-<sup>2</sup> *Inclut : Imagine Standard.*
+<sup>2</sup> *Inclut : Imagine Standard.*
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

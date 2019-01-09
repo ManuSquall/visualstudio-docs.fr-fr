@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour créer des types à l'aide du Concepteur de classes
+title: 'Procédure : créer des types à l’aide du Concepteur de classes'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842259"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685690"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l’aide du Concepteur de classes
+# <a name="how-to-create-types-by-using-class-designer"></a>Procédure : créer des types à l’aide du Concepteur de classes
 
-Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour visualiser les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
+Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour voir les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Créer un nouveau type
 
@@ -91,8 +91,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)
-- [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
+- [Guide pratique pour Créer un héritage entre des types](how-to-create-inheritance-between-types.md)
+- [Guide pratique pour Créer des associations entre des types](how-to-create-associations-between-types.md)
 - [Création et configuration de membres de type](creating-and-configuring-type-members.md)
-- [Utilisation des diagrammes de classes](working-with-class-diagrams.md)
 - [Conception des classes et des types](designing-and-viewing-classes-and-types.md)

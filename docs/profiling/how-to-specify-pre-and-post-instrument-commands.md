@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs
+title: 'Procédure : spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844636"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53593000"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procédure : Spécifier des commandes de pré-instrumentation et de post-instrumentation
 
 Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’instrumentation des fichiers binaires d’une session de performance. Vous pouvez spécifier toute commande pouvant être émise à partir de la ligne de commande comme événement de pré-instrumentation ou de post-instrumentation. Par exemple, vous pouvez spécifier des commandes qui automatisent la nouvelle signature d’un assembly avec une clé de nom fort dans un fichier de commandes exécuté une fois les fichiers binaires instrumentés.
 
@@ -31,21 +31,7 @@ Vous pouvez spécifier des commandes pour tous les fichiers binaires instrument�
 
 Le répertoire de travail dans lequel les commandes sont exécutées dépend du système d’exploitation où vous exécutez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] et de la plateforme cible de l’application profilée.
 
- **Ordinateurs 32 bits**
-
-Sur les ordinateurs 32 bits, le répertoire par défaut des outils de profilage est *lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
-
-**Ordinateurs 64 bits**
-
-Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme cible de l’application profilée :
-
-- Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :
-
-     *lecteur\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
-
-- Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :
-
-     *lecteur\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
+Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Pour spécifier des commandes de pré-instrumentation
 

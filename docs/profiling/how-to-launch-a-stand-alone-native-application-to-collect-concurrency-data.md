@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour lancer une application native autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande | Microsoft Docs
+title: 'Procédure : Lancer une application native autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27c2969286d61738ed059e3973b09843bebc5153
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: a144462902ec13d116a083c3475b6ec3f8f01a8a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592576"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour lancer une application native autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Lancer une application native autonome avec le profileur pour collecter des données concurrentielles en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application autonome (cliente) native et pour collecter des données de concurrence de processus et de threads.  
   
  Une session de profilage est constituée de trois parties :  
@@ -29,8 +29,8 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 -   La fin de la session de profilage  
   
 > [!NOTE]
->  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser le profileur dans une fenêtre d’invite de commandes, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’**invite de commandes**, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
+>  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+
 ## <a name="start-the-application-with-the-profiler"></a>Démarrer l’application avec le profileur  
  Pour démarrer une application cible à l’aide du profileur, utilisez les options [/start](../profiling/vsperfcmd.md) et **/launch** de **VSPerfCmd.exe** pour initialiser le profileur et démarrer l’application. Vous pouvez spécifier **/start** et **/launch** et leurs options respectives. Vous pouvez également ajouter l’option **/globaloff** pour suspendre la collecte des données au démarrage de l’application cible. Ensuite, utilisez **/globalon** pour commencer à collecter les données.  
   

@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande | Microsoft Docs
+title: 'Procédure : lancer une application .NET Framework autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b95f2f02e68d5b115ea4a04bbc33b78a7c60277
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fde9b67cd3cdc1fbd0f411325e639664a9ae2106
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817858"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592519"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : lancer une application .NET Framework autonome avec le profileur pour collecter des données concurrentielles en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application .NET Framework autonome (cliente) et pour collecter des données de concurrence de processus et de threads  
 
 > [!NOTE]
->  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Lorsque le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte de données. Pour terminer une session de profilage, le profileur ne doit plus être attaché à l’application et doit être arrêté explicitement.  
 
@@ -93,7 +93,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
     -   Fermez l’application cible.  
 
-         - ou -  
+         ou  
 
     -   Tapez **VSPerfCmd /detach**  
 
