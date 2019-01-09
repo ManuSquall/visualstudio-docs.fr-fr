@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour afficher des types existants (Concepteur de classes)
+title: 'Procédure : Afficher des types existants (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956651"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684442"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Guide pratique pour afficher des types existants dans le Concepteur de classes
+# <a name="how-to-view-existing-types-in-class-designer"></a>Procédure : Afficher des types existants dans le Concepteur de classes
 
 Pour voir un type existant et ses membres, ajoutez sa forme à un diagramme de classes.
 
@@ -65,6 +65,6 @@ Dans **l’Explorateur de solutions** ou dans **Affichage de classes**, cliquez 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour afficher l’héritage entre des types](how-to-view-inheritance-between-types.md)
+- [Guide pratique pour voir l’héritage entre les types](how-to-view-inheritance-between-types.md)
 - [Guide pratique pour personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md)
-- [Affichage des types et des relations](viewing-types-and-relationships.md)
+- [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)

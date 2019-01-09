@@ -3,18 +3,18 @@ title: Améliorez aujourd’hui vos compétences en matière de science des donn
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863905"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802145"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -42,12 +42,9 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
     - Commencer l’apprentissage de Python pour la science des données
     - Développer vos compétences en science des données
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Cliquez simplement sur le parcours de votre choix pour commencer.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp, Choisir un parcours](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **I am not sure.  Show me all career paths** (Je ne suis pas sûr. Montrez-moi tous les parcours professionnels.) pour créer un parcours plus étendu.
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Dev Essentials | N/A  | 2 mois | Non. Disponible pour les nouveaux abonnés uniquement |
-| Visual Studio Enterprise (Standard, cloud annuel)  | NFR<sup>1</sup> |Non disponible  | N/A |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
 
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

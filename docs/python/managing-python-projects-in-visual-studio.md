@@ -3,7 +3,6 @@ title: Gérer des projets d’application Python
 description: Les projets dans Visual Studio gèrent les dépendances entre les fichiers et la complexité des relations dans une application.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825290"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 

@@ -3,22 +3,22 @@ title: Avantage CloudPilot dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4b7f7730eef2372ecdb19cbb8d87548705a96042
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897040"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740034"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
 
-Migrez vos applications vers Microsoft Azure en quelques étapes simples. Identifiez en quelques minutes tous les changements de code nécessaires, jusqu’à la ligne de code, pour réussir la migration vers des conteneurs, des machines virtuelles, App Services, SQL Azure et/ou SQL MI. Ensuite, migrez les applications vers Azure à l’aide d’Assistants tirant parti des fonctionnalités ASR, DMA et DMS. 
+Migrez vos applications vers Microsoft Azure en quelques étapes simples. Identifiez en quelques minutes tous les changements de code nécessaires, jusqu’à la ligne de code, pour réussir la migration vers : des conteneurs, des machines virtuelles, App Services, SQL Azure et/ou SQL MI. Ensuite, migrez les applications vers Azure à l’aide d’Assistants tirant parti des fonctionnalités ASR, DMA et DMS. 
 
 Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à migrer rapidement et facilement leurs applications vers Azure.  En une fraction du temps que prendrait une évaluation manuelle, CloudPilot détermine avec précision les coûts de migration Azure PaaS et IaaS. Il fournit également des recommandations détaillées, jusqu’à la ligne de code, sur les changements de code à apporter à l’application pour qu’elle s’exécute dans le cloud. CloudPilot facilite l’évaluation initiale des efforts de migration vers le cloud et la planification du développement, contribue au processus de refactorisation en proposant des changements détaillés au niveau du code pour le cloud, et simplifie les tests finaux par rapport aux contrôles et stratégies liés aux technologies d’entreprise.
 
@@ -63,8 +63,8 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | Non disponible | N/A |
@@ -73,8 +73,11 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
 
 
 
-<sup>1</sup> *Inclut : NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

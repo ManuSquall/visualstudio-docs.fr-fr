@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090021"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684756"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
 
@@ -85,7 +85,7 @@ Cochez ou décochez cette case pour activer ou désactiver le débogage des proc
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Débogage dans Visual Studio](../../debugger/debugging-in-visual-studio.md)
+- [Débogage dans Visual Studio](../../debugger/debugger-feature-tour.md)
 - [Paramètres de projet pour des configurations de débogage C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Paramètres de projet pour une configuration Debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

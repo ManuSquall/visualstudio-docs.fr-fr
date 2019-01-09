@@ -2,7 +2,6 @@
 title: Paramètres, page du Concepteur de projets
 ms.date: 06/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f7b47b56522f5c4aeef0054e6b7b52434ff87
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 95fc794bee8388dd0655af9adcd9101f57816126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "35602382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949243"
 ---
 # <a name="settings-page-project-designer"></a>Paramètres, page du Concepteur de projet
 

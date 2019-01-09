@@ -1,8 +1,6 @@
 ---
 title: Vue Modules - Données d’instrumentation de la mémoire .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a4519d9a70b085cf3a5f5ea6a6687bff3cd21346
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823456"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Modules, vue - Données d’instrumentation de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’instrumentation regroupe les données de mémoire et de minutage selon les modules exécutés dans le cadre de l’exécution du profilage. Les données de profilage pour les fonctions du module sont répertoriées sous le nœud du module.  

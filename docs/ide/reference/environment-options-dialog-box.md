@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18ef27d60c5460e43d863b5258bcefe08ee22b17
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388765"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348467"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 
@@ -38,10 +38,10 @@ Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dial
 |Pour spécifier si les notifications sont activées.|[Notifications, Environnement, boîte de dialogue Options](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Pour spécifier les options de la fenêtre Lancement rapide.|[Lancement rapide, Environnement, boîte de dialogue Options](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Pour spécifier les options de la page de démarrage.|[Démarrage, Environnement, boîte de dialogue Options](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Pour spécifier s'il faut assurer l'itinérance des paramètres sur plusieurs ordinateurs.|[Paramètres synchronisés, Environnement, boîte de dialogue Options](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|Pour spécifier s'il faut assurer l'itinérance des paramètres sur plusieurs ordinateurs.|[Paramètres synchronisés, Environnement, boîte de dialogue Options](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Apprendre à définir des options pour les tâches et les listes de tâches|[Liste des tâches, Environnement, boîte de dialogue Options](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Modifier les pages Accueil et Recherche, changer d'éditeur de code source système et configurer des options d'Internet Explorer.|[Navigateur web, Environnement, boîte de dialogue Options](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Options, boîte de dialogue](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Boîte de dialogue Options](../../ide/reference/options-dialog-box-visual-studio.md)

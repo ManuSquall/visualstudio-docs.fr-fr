@@ -3,18 +3,18 @@ title: Avantage Azure Advisory Chat dans les abonnements Visual Studio | Microso
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/02/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Découvrez comment tirer parti de l’avantage Azure Advisory Chat inclus dans les abonnements Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896001"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739411"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -40,20 +40,24 @@ L’utilisation d’Azure Advisory Chat est très simple.
 
 |                                                      Niveau d'abonnement                                                      |     Canaux      |    Avantage    | Renouvelable ? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (Standard, cloud annuel)                                       | Licences en volume, Azure, Détail |   Un an    |    Oui     |
-| Visual Studio Professional (Standard, cloud annuel, cloud mensuel) Visual Studio Enterprise (cloud mensuel, NFR<sup>1</sup>) |        Tous        | Non disponible |     Non     |
+|                                      Visual Studio Enterprise (Standard)                                       | Licences en volume, Azure, Détail |   Un an    |    Oui     |
+| Visual Studio Professional (Standard,cloud mensuel) Visual Studio Enterprise (cloud mensuel, NFR<sup>1</sup>) |        Tous        | Non disponible |     Non     |
 |                                          Visual Studio Test Professional (Standard)                                          |        Tous        | Non disponible |     Non     |
 |                                                  Plateformes MSDN (Standard)                                                   |        Tous        | Non disponible |     Non     |
 |                                                 Visual Studio Dev Essentials                                                 |        N/A        | Non disponible |     Non     |
 
-<sup>1</sup> *Inclut : NFR (revente interdite), MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT*
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
 
-### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Q : Quelle différence y a-t-il entre Azure Advisory Chat et Azure Advisor ?
--  R : Azure Advisory Chat est un service de conversation en temps réel conçu pour répondre à vos questions sur Azure. [Azure Advisor](/azure/advisor/advisor-overview) est un consultant cloud personnalisé qui vous aide à adopter les meilleures pratiques pour optimiser vos déploiements Azure. Il analyse votre configuration des ressources et votre télémétrie d’utilisation, puis recommande des solutions qui peuvent vous aider à améliorer la rentabilité, les performances, la haute disponibilité et la sécurité de vos ressources Azure.
+### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Q :  Quelle différence y a-t-il entre Azure Advisory Chat et Azure Advisor ?
+-  A :  Azure Advisory Chat est un service de conversation en temps réel conçu pour répondre à vos questions sur Azure. [Azure Advisor](/azure/advisor/advisor-overview) est un consultant cloud personnalisé qui vous aide à adopter les meilleures pratiques pour optimiser vos déploiements Azure. Il analyse votre configuration des ressources et votre télémétrie d’utilisation, puis recommande des solutions qui peuvent vous aider à améliorer la rentabilité, les performances, la haute disponibilité et la sécurité de vos ressources Azure.
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

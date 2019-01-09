@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952996"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procédure : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
 
@@ -83,7 +82,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 7.  Choisissez l’onglet **Modules**. Sélectionnez **Collecter les données de tous les modules à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
-     ou
+     - ou -
 
      Sélectionnez **Collecter les données des modules suivants uniquement**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet de spécifier quels modules doivent être utilisés.
 
@@ -92,7 +91,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 8.  Choisissez l’onglet **Processus**. Sélectionnez **Collecter les données de tous les processus à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
-     ou
+     - ou -
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 
