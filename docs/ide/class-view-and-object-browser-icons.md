@@ -2,7 +2,6 @@
 title: Affichage de classes et Explorateur d'objets, icônes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844390"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
@@ -33,7 +32,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |----------|-----------------|----------|-----------------|
 |![Symbole d'espace de noms](../ide/media/vxnamespace_icon.gif)|Espace de noms|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Méthode ou fonction|
 |![Icône de classe](../ide/media/vxclass_icon.gif)|Classe|![Symbole d'opérateur](../ide/media/vxoperator_icon.gif)|Opérateur|
-|![Symbole d'interface Lollipop](../ide/media/vxinterface_icon.gif)|Interface|![Symbole de la propriété](../ide/media/vxproperty_icon.gif)|Propriété|
+|![Symbole d'interface Lollipop](../ide/media/vxinterface_icon.gif)|Interface|![Symbole de la propriété](../ide/media/vxproperty_icon.gif)|Property|
 |![Symbole de la structure](../ide/media/vxstruct_icon.gif)|Structure|![Icône de champ](../ide/media/vxfield_icon.gif)|Champ ou variable|
 |![Symbole Union](../ide/media/vxunion_icon.gif)|Union|![Symbole d'événement](../ide/media/vxevent_icon.gif)|événement|
 |![Symbole d'énumération](../ide/media/vxenum_icon.gif)|Enum|![Icône de constante](../ide/media/vxconstant_icon.gif)|Constante|

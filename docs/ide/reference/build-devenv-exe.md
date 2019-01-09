@@ -2,7 +2,6 @@
 title: Build, commutateur DevEnv
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds, command-line
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd510e523aaabc468c1f01626593e51d0ad1558
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 9caddb066d02366cac7ee9e34f2d55c726a69896
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824442"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -39,8 +38,8 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 |-|-|
 |*SolutionName*|Obligatoire. Chemin complet et nom du fichier solution.|
 |*SolnConfigName*|Obligatoire. Nom de la configuration de solution à utiliser pour générer la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
-|/project *ProjName*|Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
-|/projectconfig *ProjConfigName*|Facultative. Nom d’une configuration de build de projet à utiliser durant la génération du projet nommé. Si plusieurs plateformes de projet sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
+|/project *ProjName*|Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
+|/projectconfig *ProjConfigName*|Optionnel. Nom d’une configuration de build de projet à utiliser durant la génération du projet nommé. Si plusieurs plateformes de projet sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
 
 ## <a name="remarks"></a>Notes
 

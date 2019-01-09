@@ -1,8 +1,6 @@
 ---
 title: CvReleaseMarkerSeries, fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvReleaseMarkerSeries
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 60394b799c2468d45818fa07d876dde2a651467d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822538"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries, fonction
 Libère la série de marqueurs. N’utilisez pas l’objet de série de marqueurs après sa libération, car cela peut entraîner le blocage de l’application. Si la libération de la série de marqueurs échoue, une fuite de mémoire se produit.  
@@ -39,7 +37,7 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque la série de marqueurs est correctement libérée, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Voir aussi  

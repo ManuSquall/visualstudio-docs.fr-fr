@@ -1,8 +1,6 @@
 ---
 title: Glossaire MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 27f918b3ca3408303091dc5200ab8919ffc1eecc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986867"
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
 Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses composants.  
