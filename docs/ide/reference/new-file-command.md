@@ -2,7 +2,6 @@
 title: Nouveau fichier, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932114"
 ---
 # <a name="new-file-command"></a>Nouveau fichier, commande
 Crée un fichier et l’ouvre. Le fichier s’affiche sous le dossier Fichiers divers.
@@ -34,12 +33,12 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ## <a name="arguments"></a>Arguments
  `filename`
 
- Facultative. Nom du fichier. Si aucun nom n’est fourni, un nom par défaut est utilisé. Si aucun nom de modèle n’est indiqué, un fichier texte est créé.
+ Optionnel. Nom du fichier. Si aucun nom n’est fourni, un nom par défaut est utilisé. Si aucun nom de modèle n’est indiqué, un fichier texte est créé.
 
 ## <a name="switches"></a>Commutateurs
  /t:`templatename`
 
- Facultative. Spécifie le type de fichier à créer.
+ Optionnel. Spécifie le type de fichier à créer.
 
  La syntaxe de l’argument /t:`templatename` reflète les informations de la boîte de dialogue Nouveau fichier. Entrez le nom de la catégorie suivi d’une barre oblique inverse (`\`) et du nom du modèle, et placez la chaîne entière entre guillemets.
 
@@ -53,7 +52,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  /e:`editorname`
 
- Facultative. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
+ Optionnel. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
  La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la boîte de dialogue Ouvrir avec, entre guillemets.
 
@@ -76,4 +75,4 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Exécution, fenêtre](../../ide/reference/immediate-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
