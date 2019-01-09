@@ -2,7 +2,6 @@
 title: Effectuer une liaison de données dans le concepteur XAML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866122"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : effectuer une liaison de données dans le concepteur XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML
 
 Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l’aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 

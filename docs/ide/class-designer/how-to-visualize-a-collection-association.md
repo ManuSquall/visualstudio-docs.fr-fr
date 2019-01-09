@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour visualiser une association de collections (Concepteur de classes)
+title: 'Procédure : Visualiser une association de collections (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f2957492224f4d69a9536b4dfd6f47c136f72b0c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995879"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684062"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Guide pratique pour visualiser une association de collections dans le Concepteur de classes
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procédure : Visualiser une association de collections dans le Concepteur de classes
 
 Les propriétés et les champs qui sont des collections d’autres types peuvent être affichés sur le diagramme de classes en tant qu’association de collection. Contrairement à une association normale, qui affiche un champ ou une propriété sous la forme d’une ligne reliant la classe propriétaire au type du champ, une association de collection s’affiche sous la forme d’une ligne reliant la classe propriétaire au type collecté.
 
@@ -42,4 +42,3 @@ La propriété ou le champ s’affiche sous la forme d’une ligne reliée au ty
 
 - [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
 - [Conception des classes et des types](designing-and-viewing-classes-and-types.md)
-- [Affichage des types et des relations](viewing-types-and-relationships.md)

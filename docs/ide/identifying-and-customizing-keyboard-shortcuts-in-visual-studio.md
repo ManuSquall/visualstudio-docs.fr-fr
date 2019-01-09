@@ -2,7 +2,6 @@
 title: Identifier et personnaliser les raccourcis clavier
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820395"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Découvrez pas à pas comment créer une application console Hello World simple dans Visual Studio, en C#.
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
@@ -15,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853916"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
 

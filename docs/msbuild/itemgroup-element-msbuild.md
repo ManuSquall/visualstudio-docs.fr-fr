@@ -1,8 +1,6 @@
 ---
 title: Élément ItemGroup (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e1be72076fe1d13ef9f0c4144ce097d0743305
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f77da33dbc89a56284206599468455083c99ef55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850834"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup, élément (MSBuild)
 Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) définis par l’utilisateur. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu’enfant d’un élément `ItemGroup`.  

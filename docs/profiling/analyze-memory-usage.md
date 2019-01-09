@@ -2,19 +2,18 @@
 title: Analyser l’utilisation de la mémoire
 ms.custom: seodec18
 ms.date: 01/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb854bcbb60dcde1358fe6128466b98780e559c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1dcd3467f474d5c2b3e24ed1d1e490a73e7498bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867184"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 Utilisez l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur pour rechercher les fuites de mémoire et les utilisations inefficaces de la mémoire. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native. Vous pouvez collecter des instantanés d’applications .NET, ASP.NET, natives ou en mode mixte (.NET et natives).  

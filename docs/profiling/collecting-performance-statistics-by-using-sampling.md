@@ -1,8 +1,6 @@
 ---
 title: Collecte de statistiques de performance à l’aide de l’échantillonnage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a09253dbeff9adb2bed6ea21545675f343e15974
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cfae0277c1f3d84c939c06e08472a556e8eeaaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865798"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Collecter les statistiques de performances à l’aide de l’échantillonnage
 
@@ -42,7 +40,7 @@ Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue d
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|Dans la page **Général**, ajoutez l’allocation de mémoire .NET et la collecte de données de durée de vie, puis spécifiez les détails d’affectation de noms pour le fichier de données de profilage (.vsp) généré.|- [Collecte de données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Guide pratique pour définir les options de nom de fichier de données de profilage](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Dans la page **Général**, ajoutez l’allocation de mémoire .NET et la collecte de données de durée de vie, puis spécifiez les détails d’affectation de noms pour le fichier de données de profilage (.vsp) généré.|- [Collecte de données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Guide pratique pour définir les options de nom de fichier des données de performances](../profiling/how-to-set-performance-data-file-name-options.md)|
 |Dans la page **Échantillonnage**, modifiez le taux d’échantillonnage, remplacez l’événement d’échantillonnage de cycle d’horloge du processeur par un événement de compteur de performances du processeur, ou modifiez les deux.|- [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)|
 |Si votre solution de code contient plusieurs projets .exe, dans la page **Lancer**, spécifiez l’application à démarrer, ainsi que l’ordre de démarrage.|- [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|
 |Dans la page **Interaction de couche**, ajoutez les informations d’appel ADO.NET aux données collectées lors de l’exécution du profilage.|- [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|

@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour définir plusieurs projets de démarrage
+title: 'Procédure : Définir plusieurs projets de démarrage'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aaff32bf9188b7cd33037992b9e2f120e6410e52
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed02ad99172809816ebacf2459036253a04c6c6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842187"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Guide pratique pour définir plusieurs projets de démarrage
+# <a name="how-to-set-multiple-startup-projects"></a>Procédure : Définir plusieurs projets de démarrage
 
 Visual Studio vous permet de spécifier la façon dont plusieurs projets sont exécutés quand vous démarrez le débogueur.
 

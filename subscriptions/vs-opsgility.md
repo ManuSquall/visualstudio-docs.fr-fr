@@ -1,52 +1,56 @@
 ---
-title: Avantage Opsgility dans les abonnements Visual Studio | Microsoft Docs
+title: Avantage Skill Me Up ‒ Par Opsgility dans les abonnements Visual Studio Subscription | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 09/19/2018
+ms.author: lank
+manager: lank
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
-description: Découvrez l’avantage Opsgility inclus dans certains abonnements Visual Studio.
+description: Découvrez l’avantage Skill Me Up ‒ Par Opsgility inclus dans certains abonnements Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+searchscope: VS Subscriptions
+ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495529"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739706"
 ---
-# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Avantage Opsgility dans les abonnements Visual Studio
+# <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Avantage de la formation Skill Me Up ‒ Par Opsgility dans les abonnements Visual Studio
 
 Certains abonnements Visual Studio comportent jusqu'à six mois de formation spécialisée à la demande avec accès à des environnements lab live et à des parcours d’apprentissage certifiants.
 
 ## <a name="activation-steps"></a>Étapes d’activation
-1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Pour utiliser votre avantage Skill Me Up, cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code du coupon.  Cliquez sur **Activer** pour continuer.
-    > [!div class="mx-imgBorder"]
-    > ![Vignette de l’avantage Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
+2. Pour utiliser votre avantage Skill Me Up, cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code du coupon.  Cliquez sur **Activer** pour continuer.
+   > [!div class="mx-imgBorder"]
+   > ![Vignette de l’avantage Opsgility](_img/vs-opsgility/vs-opsgility-tile.png)
 
 
-3.  Vous êtes redirigé vers la page de destination [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse).  (Vous pouvez être invité à démarrer une session de discussion avec un membre du support technique.  Si vous ne le souhaitez pas, réduisez cette fenêtre.)  Entrez les informations de contact demandées, puis cliquez sur **S’inscrire**.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Opsgility, Page de destination](_img\vs-opsgility\vs-opsgility-registration.png)
+3. La page de destination Skill Me Up correspondant à votre abonnement de destination s’ouvre.  (Vous pouvez être invité à démarrer une session de discussion avec un membre du support technique.  Si vous ne le souhaitez pas, réduisez cette fenêtre.)  Remplissez les informations de contact demandées, cochez la case pour accepter les conditions générales, puis cliquez sur **S’inscrire**.
+   > [!div class="mx-imgBorder"]
+   > ![Avantage Opsgility, Page de destination](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4.  C’est aussi simple que cela !  Vous êtes prêt à commencer la formation.  Pour vous aider à démarrer, une liste de conseils de formation vous sont suggérés à gauche de la page.  Bonne lecture !
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Opsgility, Page d’accueil](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+4. C’est aussi simple que cela !  Vous êtes prêt à commencer une formation !  
+
 
 ## <a name="eligibility"></a>Éligibilité
+
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail | 12 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard, cloud annuel) | Licences en volume, Azure, Détail                                       | 6 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 6 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 6 mois                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Dev Essentials | NA  | 3 mois | Non.  Disponible pour les nouveaux abonnés uniquement  |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Dev Essentials | NA  | Non disponible | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-*Exclut : MPN (Microsoft Partner Network), MVP (Microsoft Valued Partner), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+*Exclut :  MPN (Microsoft Partner Network), MVP (Microsoft Valued Professional), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+
+> [!NOTE]
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

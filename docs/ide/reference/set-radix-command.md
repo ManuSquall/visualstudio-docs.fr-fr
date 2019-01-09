@@ -2,7 +2,6 @@
 title: Définir la base, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setradix
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c18d825ae61dd80ab7b72e1e14c7dc3412582317
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93172b8ed16e2520c060671d12ef0ab35960f6ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829406"
 ---
 # <a name="set-radix-command"></a>Définir la base, commande
 Définit ou retourne la base numérique utilisée pour afficher les valeurs entières.
@@ -34,7 +33,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Arguments
  `10` ou `16` ou `hex` ou `dec`
 
- Facultative. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.
+ Optionnel. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.
 
 ## <a name="example"></a>Exemple
  Cet exemple configure l’environnement pour afficher les valeurs entières au format hexadécimal.
@@ -48,4 +47,4 @@ Debug.SetRadix [10 | 16 | hex | dec]
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645144"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684978"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
@@ -115,7 +115,7 @@ Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent d
 | Atteindre la définition | **F12** ou **Ctrl**+**Clic**| Vous pouvez maintenir la touche **Ctrl** enfoncée et cliquer pour accéder à la définition |
 | Aperçu de définition | **Alt**+**F12** | Vue inline d’une définition |
 | Visualiseur de structure | Lignes grises en pointillés entre accolades | Placez le curseur pour voir la structure de votre code |
-| Navigation vers les assemblys décompilés | **F12** ou **Ctrl**+**Clic** | Accédez à une source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées**. |
+| Navigation vers les assemblys décompilés | **F12** ou **Ctrl**+**Clic** | Accédez à la source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées**. |
 
 ![Accéder à tout et Rechercher toutes les références](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ Nous avons ajouté une multitude de nouvelles fonctionnalités de débogage dans
 
 - *Cliquer pour exécuter* vous permet de placer le curseur à côté d’une ligne de code, de cliquer sur l’icône verte de « lecture » qui s’affiche et d’exécuter votre programme jusqu’à ce qu’il atteigne cette ligne.
 - La nouvelle **Assistance sur l’exception** place les informations les plus importantes, comme la variable 'null' d’une NullReferenceException, en haut de la boîte de dialogue.
-- Le débogage [Revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md) vous permet de revenir aux étapes ou aux points d’arrêt précédents et de voir l’état de l’application comme elle était avant.
+- Le débogage [Revenir en arrière](../debugger/view-historical-application-state.md) vous permet de revenir aux étapes ou aux points d’arrêt précédents et de voir l’état de l’application comme elle était avant.
 - Le [débogage d’instantané](/azure/application-insights/app-insights-snapshot-debugger) vous permet d’examiner l’état d’une application web dynamique au moment où une exception a été levée (sur Azure uniquement).
 
 ![Nouvelle assistance sur l’exception dans Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
