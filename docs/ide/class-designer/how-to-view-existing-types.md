@@ -2,7 +2,6 @@
 title: 'Procédure : Afficher des types existants (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e78e92e5d6f8b21dde2660491a944620ac19069b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916664"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procédure : Afficher des types existants dans le Concepteur de classes
 
@@ -33,7 +32,7 @@ Pour concevoir de nouveaux types sur les diagrammes de classes, consultez [Guide
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Pour voir les types d'un projet dans un diagramme de classes
 
-1.  À partir d’un projet dans **l’Explorateur de solutions**, ouvrez un fichier de diagramme de classes (.cd) existant. Ou, s'il n'existe aucun diagramme de classes, ajoutez un nouveau diagramme de classes au projet. Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
+1.  À partir d’un projet dans **l’Explorateur de solutions**, ouvrez un fichier de diagramme de classes (.cd) existant. Ou, s'il n'existe aucun diagramme de classes, ajoutez un nouveau diagramme de classes au projet. Voir [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
 
 2.  À partir du projet dans **l’Explorateur de solutions**, faites glisser un fichier de code source vers le diagramme de classes.
 

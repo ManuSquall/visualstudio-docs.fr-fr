@@ -1,8 +1,6 @@
 ---
 title: Tâche AssignProjectConfiguration | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fefc8098d94967b06bbe60f398a8a734d55202
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f9e758fe7128c9ae9562c400008ab8573d7d8df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850886"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration, tâche
 Cette tâche accepte une liste de chaînes de configuration et les affecte aux projets spécifiés.  
@@ -31,8 +29,8 @@ Cette tâche accepte une liste de chaînes de configuration et les affecte aux p
 |Paramètre|Description|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|Paramètre de sortie `string` facultatif.<br /><br /> Contient une chaîne XML qui contient une configuration de projet pour chaque projet. Les configurations sont affectées aux projets nommés.|  
-|`DefaultToVcxPlatformMapping`|Paramètre de sortie `string` facultatif.<br /><br /> Contient la liste délimitée par des points-virgules des mappages des noms de plateforme utilisés par la plupart des types à ceux utilisés par les fichiers *.vcxproj*.<br /><br /> Exemple :<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
-|`VcxToDefaultPlatformMapping`|Facultatif<br /><br /> Paramètre de sortie `string`.<br /><br /> Contient la liste délimitée par des points-virgules des mappages des noms de plateforme *.vcxproj* aux noms de plateforme utilisés par la plupart des types.<br /><br /> Exemple :<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
+|`DefaultToVcxPlatformMapping`|Paramètre de sortie `string` facultatif.<br /><br /> Contient la liste délimitée par des points-virgules des mappages des noms de plateforme utilisés par la plupart des types à ceux utilisés par les fichiers *.vcxproj*.<br /><br /> Par exemple :<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
+|`VcxToDefaultPlatformMapping`|Facultatif<br /><br /> Paramètre de sortie `string`.<br /><br /> Contient la liste délimitée par des points-virgules des mappages des noms de plateforme *.vcxproj* aux noms de plateforme utilisés par la plupart des types.<br /><br /> Par exemple :<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
 |`CurrentProjectConfiguration`|Paramètre de sortie `string` facultatif.<br /><br /> Contient la configuration du projet actif.|  
 |`CurrentProjectPlatform`|Paramètre de sortie `string` facultatif.<br /><br /> Contient la plateforme du projet actif.|  
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|Paramètre de sortie `bool` facultatif.<br /><br /> Contient un indicateur spécifiant que des références doivent être générées même si elles ont été désactivées dans la configuration du projet.|  
