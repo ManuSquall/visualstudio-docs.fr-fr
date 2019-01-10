@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDeferredText | Documents Microsoft
+title: IDebugDocumentHelper::AddDeferredText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c92909874429075bebc6a1f0a252573d049584e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba6f945e6c7fa4df83a5e301d73b3fc0bb9da92b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728539"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096081"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
-Notifie l’application d’assistance que le texte spécifié est disponible, mais il ne fournit pas les caractères.  
+Notifie l’application d’assistance que le texte donné est disponible, mais il ne fournit pas les caractères.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddDeferredText(  
    ULONG  cChars,  
    DWORD  dwTextStartCookie  
@@ -47,21 +47,21 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|La méthode a échoué.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode permet à l’hôte de report qui fournit les caractères pour ajouter jusqu'à ce qu’ils sont nécessaires, tout en autorisant l’application d’assistance générer des notifications exactes et les informations de taille. Le `dwTextStartCookie` paramètre est un cookie, défini par l’hôte, qui représente la position de départ du texte. Les appels suivants à `IDebugDocumentText::GetText` doit fournir ce cookie. Par exemple, dans un hôte qui représente le texte en DBCS, le cookie peut être un décalage d’octet.  
+## <a name="remarks"></a>Notes  
+ Cette méthode permet à l’hôte de différer la pour ajouter jusqu'à ce qu’ils sont nécessaires, tout en autorisant l’assistance générer des notifications précises et des informations sur la taille de caractères non valides. Le `dwTextStartCookie` paramètre est un cookie, défini par l’hôte, qui représente la position de départ du texte. Les appels suivants à `IDebugDocumentText::GetText` doit fournir ce cookie. Par exemple, dans un hôte qui représente le texte en DBCS, le cookie peut être un décalage d’octet.  
   
- Il est supposé qu’un seul appel à `IDebugDocumentText::GetText` peut obtenir les caractères de plusieurs appels à `AddDeferredText`. Classes d’assistance peuvent également demander la même plage de caractères différées plusieurs fois.  
+ Il est supposé qu’un seul appel à `IDebugDocumentText::GetText` peut obtenir des caractères à partir de plusieurs appels à `AddDeferredText`. Classes d’assistance peuvent également demander la même plage de caractères différées plusieurs fois.  
   
 > [!NOTE]
->  Les appels à `AddDeferredText` ne doit pas être combiné avec des appels à `AddUnicodeText` ou `AddDBCSText`. Si cela se produit, `E_FAIL` est retourné.  
+>  Les appels à `AddDeferredText` ne doivent pas être mélangées avec les appels à `AddUnicodeText` ou `AddDBCSText`. Si cela se produit, `E_FAIL` est retournée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper (Interface)](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

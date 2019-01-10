@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Documents Microsoft
+title: IDispatchEx::GetMemberProperties | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d216bb7b21c8895337b9925007637c00d0deb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729659"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088190"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Récupère les propriétés d’un membre.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetMemberProperties(  
    DISPID id,  
    DWORD grfdexFetch,  
@@ -45,7 +45,7 @@ HRESULT GetMemberProperties(
  `grfdexFetch`  
  Détermine les propriétés à récupérer. Cela peut être une combinaison des valeurs répertoriées sous `pgrfdex` et/ou une combinaison des valeurs suivantes :  
   
-|Valeur|Signification|  
+|Value|Signification|  
 |-----------|-------------|  
 |grfdexPropCanAll|Combine fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct et fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Combine fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct et fdexPropCannotSourceEvents.|  
@@ -55,12 +55,12 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  Adresse d’un `DWORD` qui reçoit les propriétés demandées. Cela peut être une combinaison des valeurs suivantes :  
   
-|Valeur|Signification|  
+|Value|Signification|  
 |-----------|-------------|  
 |fdexPropCanGet|Le membre peut être obtenu à l’aide de DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|Le membre ne peut pas être obtenu à l’aide de DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Le membre peut être défini à l’aide de DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Le membre ne peut pas être défini à l’aide de DISPATCH_PROPERTYPUT.|  
+|fdexPropCanPut|Le membre peut être défini à l’aide de DISPATCH_PROPERTYGET.|  
+|fdexPropCannotPut|Le membre ne peut pas être défini à l’aide de DISPATCH_PROPERTYGET.|  
 |fdexPropCanPutRef|Le membre peut être défini à l’aide de DISPATCH_PROPERTYPUTREF.|  
 |fdexPropCannotPutRef|Le membre ne peut pas être défini à l’aide de DISPATCH_PROPERTYPUTREF.|  
 |fdexPropNoSideEffects|Le membre n’a pas d’effets secondaires. Par exemple, un débogueur peut en toute sécurité get/set/appel de ce membre sans modifier l’état du script en cours de débogage.|  
@@ -73,16 +73,16 @@ HRESULT GetMemberProperties(
 |fdexPropCannotSourceEvents|Le membre ne peut pas déclencher d’événements.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Retourne une des valeurs suivantes :  
   
 |||  
 |-|-|  
 |`S_OK`|Opération réussie.|  
-|`DISP_E_UNKNOWNNAME`|Le nom n’est pas connu.|  
+|`DISP_E_UNKNOWNNAME`|Le nom n’était pas connu.|  
   
 ## <a name="example"></a>Exemple  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   
@@ -98,6 +98,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDispatchEx (Interface)](../../winscript/reference/idispatchex-interface.md)   
+ [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

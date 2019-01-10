@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName | Documents Microsoft
+title: IScriptScriptlet::SetEventName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244888d49e1e9a84b8865e9c86a845617af6a5d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10accabb3ca4e070173530cba3c60da9d7e5bb04
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733729"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092051"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
 Définit le nom de l’événement qui est associé avec le scriptlet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,16 +38,16 @@ HRESULT SetEventName(
   
 #### <a name="parameters"></a>Paramètres  
  `psz`  
- [in] Une mémoire tampon qui contient le nom de l’événement qui est associé à la `IScriptScriptlet` objet.  
+ [in] Une mémoire tampon qui contient le nom de l’événement qui est associé le `IScriptScriptlet` objet.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)

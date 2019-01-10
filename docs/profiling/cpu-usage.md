@@ -2,7 +2,6 @@
 title: Analyser l’utilisation de l’UC | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a82c47c6815d4bf792a09a0b44dc21edbad68479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988444"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC 
 
@@ -84,7 +83,7 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 
  Les fonctions système et framework qui sont exécutées par votre code sont appelées *code externe*. Les fonctions de code externe démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation de l’UC regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .  
   
- Pour afficher les chemins d’appel du code externe, dans la page principale de rapport de diagnostic, sélectionnez **Afficher le code externe** dans la liste déroulante **Filtre**, puis sélectionnez **Appliquer**. La vue **Arborescence des appels** de la page **Utilisation de l’UC** page étend alors les appels de code externe.  
+ Pour voir les chemins d’appel du code externe, sélectionnez **Afficher le code externe** dans la liste déroulante **Filtrer** de la page principale des rapports de diagnostic (volet droit), puis sélectionnez **Appliquer**. La vue **Arborescence des appels** de la page **Utilisation de l’UC** page étend alors les appels de code externe. (La liste déroulante **Filtrer** est disponible sur la page principale des diagnostics, et non sur les vues détaillées.)
   
  ![Afficher le code externe](../profiling/media/cpu_use_wt_filterview.png "Afficher le code externe")  
   

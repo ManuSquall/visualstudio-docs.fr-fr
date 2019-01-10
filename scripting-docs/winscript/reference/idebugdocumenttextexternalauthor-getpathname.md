@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Documents Microsoft
+title: IDebugDocumentTextExternalAuthor::GetPathName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727739"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088840"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
 Retourne le chemin d’accès et le nom complet du document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,20 +42,20 @@ HRESULT GetPathName(
  [out] Chaîne contenant le chemin d’accès et le nom complet.  
   
  `pfIsOriginalFile`  
- [out] Valeur booléenne qui indique si le chemin d’accès et le nom fait référence au document d’origine.  
+ [out] Valeur booléenne qui indique si le chemin d’accès et nom de fichier fait référence au document d’origine.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|Le fichier source ne peut pas être créé ou déterminé.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne le chemin d’accès et le nom complet du document.  
   
- Si `pfIsOriginalFile` est FALSE, le chemin et le nom dans `pbstrLongName` font référence à un fichier temporaire nouvellement créé.  
+ Si `pfIsOriginalFile` est FALSE, le chemin d’accès et nom de fichier dans `pbstrLongName` font référence à un fichier temporaire qui vient d’être créé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

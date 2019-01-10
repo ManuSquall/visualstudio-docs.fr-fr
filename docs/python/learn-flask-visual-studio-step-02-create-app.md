@@ -2,9 +2,8 @@
 title: 'Tutoriel : Découvrir Flask dans Visual Studio, étape 2, vues et modèles'
 titleSuffix: ''
 description: Une procédure pas à pas montrant les concepts de base de Flask dans le contexte de projets Visual Studio, en particulier les étapes de création d’une application, et l’utilisation de vues et de modèles.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 85c592145708adf713589d5844861dc8ee3133c8
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052943"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060740"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
@@ -196,7 +195,7 @@ La fonction `home` que vous avez jusqu’à présent dans *views.py* ne génère
 
 1. Validez vos modifications auprès du contrôle de code source et si vous le souhaitez, mettez à jour votre dépôt distant, comme décrit dans [l’étape 2-1](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles de page doivent-ils être dans un fichier distinct ?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Les modèles de pages doivent-ils être dans un fichier distinct ?
 
 Réponse : Bien que les modèles soient généralement conservés dans des fichiers HTML distincts, vous pouvez également utiliser un modèle inline. L’utilisation d’un fichier distinct est recommandée, toutefois, pour maintenir une séparation nette entre la balise et le code.
 

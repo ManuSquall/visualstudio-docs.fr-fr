@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetBody | Documents Microsoft
+title: IScriptEntry::GetBody | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b5eb878bccaa8ed415fd813095e31064bc7e245
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729019"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094812"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-Retourne le texte qui correspond au corps d’un `IScriptEntry` scriptlet, bloc de la fonction ou bloc de script.  
+Retourne le texte qui correspond au corps d’un `IScriptEntry` bloc de script, un bloc de fonction ou scriptlet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetBody(  
    BSTR               *pbstr  
 );  
@@ -49,11 +49,11 @@ HRESULT GetBody(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

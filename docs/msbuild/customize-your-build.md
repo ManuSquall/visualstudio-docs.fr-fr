@@ -1,8 +1,6 @@
 ---
 title: Personnaliser votre build | Microsoft Docs
-ms.custom: ''
 ms.date: 06/14/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ae5d93d5bb05aa8511b17a5b2d5b775dcc0aae
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 858d28ac2fdc6cab32e537e86f84771e0fb53f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919558"
 ---
 # <a name="customize-your-build-c-visual-basic"></a>Personnaliser votre build (C#, Visual Basic)
 

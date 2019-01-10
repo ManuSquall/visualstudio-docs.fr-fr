@@ -1,8 +1,6 @@
 ---
 title: Mode Mesure activé/désactivé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.measure
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: be23f8bd454790065f7d30bc283c52089e964692
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912608"
 ---
 # <a name="measure-mode-onoff"></a>Mode Mesure activé/désactivé
 Avec cet outil, vous pouvez mesurer précisément une durée dans la chronologie. Pour activer le mode Mesure, cliquez sur le bouton Mesure (qui a une icône de règle), puis faites-le glisser dans la chronologie. Notez que, pendant cette opération, la zone en dessous du pointeur est mise en surbrillance en jaune et que la durée mesurée apparaît dans la barre d’outils à droite du bouton. Cette valeur est calculée dynamiquement au fil du glissement, ce qui vous permet de voir immédiatement la durée d’un événement particulier. Quand vous relâchez le bouton de la souris, la valeur de la durée reste visible.  
@@ -29,4 +27,4 @@ Avec cet outil, vous pouvez mesurer précisément une durée dans la chronologie
 ## <a name="see-also"></a>Voir aussi  
  [Gérer les canaux](../profiling/manage-channels.md)   
  [Zoom, contrôle (vue Threads)](../profiling/zoom-control-threads-view.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

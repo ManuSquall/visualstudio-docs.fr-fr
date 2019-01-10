@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddDBCSText | Documents Microsoft
+title: IDebugDocumentHelper::AddDBCSText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cd0f2953483e23636c3a17d7726bc2c438b303
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726479"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090387"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 Ajoute une chaîne DBCS à la fin de ce document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddDBCSText(  
    LPCSTR  pszText  
 );  
@@ -38,23 +38,23 @@ HRESULT AddDBCSText(
   
 #### <a name="parameters"></a>Paramètres  
  `pszText`  
- [in] Pointeur vers une chaîne terminée par le caractère null qui contient le texte.  
+ [in] Pointeur vers une chaîne se terminant par null qui contient le texte.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|La méthode n’a pas pu ajouter les caractères.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode génère `IDebugDocumentTextEvents` des notifications.  
+## <a name="remarks"></a>Notes  
+ Cette méthode génère `IDebugDocumentTextEvents` notifications.  
   
 > [!NOTE]
->  Si cette méthode est appelée après `IDebugDocumentHelper::AddDeferredText` a été appelée, `E_FAIL` est retourné.  
+>  Si cette méthode est appelée après `IDebugDocumentHelper::AddDeferredText` a été appelée, `E_FAIL` est retournée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper (Interface)](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Interface IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

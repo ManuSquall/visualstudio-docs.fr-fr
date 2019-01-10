@@ -1,8 +1,6 @@
 ---
-title: 'Comment : ouvrir la vue Messages à partir de la fenêtre Rechercher | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Ouvrir la vue Messages à partir de la fenêtre Rechercher | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847091"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Comment : ouvrir la vue Messages à partir de Rechercher une fenêtre
+# <a name="how-to-open-messages-view-from-find-window"></a>Procédure : ouvrir la vue Messages à partir de la fenêtre Rechercher
 Il peut s’avérer pratique d’utiliser le **rechercher une fenêtre** boîte de dialogue pour sélectionner une fenêtre cible, puis ouvrez un affichage de Messages de cette fenêtre.  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Pour ouvrir une fenêtre d’affichage de Messages à l’aide de la boîte de dialogue Rechercher une fenêtre  
@@ -39,7 +37,7 @@ Il peut s’avérer pratique d’utiliser le **rechercher une fenêtre** boîte 
 
 4. Sous **afficher**, sélectionnez **Messages**.  
 
-5. Appuyez sur **OK**.  
+5. Cliquez sur OK :  
 
     Une valeur vide [vue Messages](../debugger/messages-view.md) fenêtre s’ouvre et un **Messages** menu est ajouté à la barre d’outils Spy ++.  
 

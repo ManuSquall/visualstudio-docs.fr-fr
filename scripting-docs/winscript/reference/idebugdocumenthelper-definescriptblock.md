@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock | Documents Microsoft
+title: IDebugDocumentHelper::DefineScriptBlock | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726999"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087995"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Indique à l’application d’assistance qu’une plage particulière de caractères est un bloc de script qui est géré par le moteur de script donné.  
+Indique à l’application d’assistance qu’une plage spécifique de caractères est un bloc de script qui est géré par le moteur de script donné.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -42,7 +42,7 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Paramètres  
  `ulCharOffset`  
- [in] Emplacement de début du bloc de script.  
+ [in] Emplacement du début du bloc de script.  
   
  `cChars`  
  [in] Nombre de caractères dans le bloc de script.  
@@ -59,18 +59,18 @@ HRESULT DefineScriptBlock(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Un hôte actif peut utiliser cette méthode lorsque ses documents contiennent des blocs de script intégrés. Un moteur de langage peut utiliser cette méthode lors de son code contient des scripts incorporés pour d’autres langues.  
+## <a name="remarks"></a>Notes  
+ Un hôte intelligent peut utiliser cette méthode lorsque ses documents contiennent des blocs de script incorporés. Un moteur de langage peut utiliser cette méthode lors de son code contient des scripts incorporés pour d’autres langages.  
   
- Le moteur de script est chargé de tous les syntaxe coloration du code contexte recherches et dans le bloc de script.  
+ Le moteur de script est responsable de tous les syntaxe coloration du code contexte recherches et dans le bloc de script.  
   
  Le `DefineScriptBlock` méthode doit être appelée une fois que le texte a été ajouté (par exemple, à l’aide de la `IDebugDocumentHelper::AddDBCSText` (méthode)) mais avant le script de bloc a été analysé (par exemple, à l’aide de la `IActiveScriptParse ::ParseScriptText` (méthode)).  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper (Interface)](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetSize | Documents Microsoft
+title: IDebugDocumentText::GetSize | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c171b894856141d8c42ae641f1d08b058cd3d9c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727069"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087025"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
 Retourne le nombre de lignes et le nombre de caractères dans le document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  
@@ -39,19 +39,19 @@ HRESULT GetSize(
   
 #### <a name="parameters"></a>Paramètres  
  `pcNumLines`  
- [out] Nombre de lignes dans le document. Si ce paramètre est NULL, la méthode ne retourne pas une valeur.  
+ [out] Nombre de lignes dans le document. Si ce paramètre est NULL, la méthode ne retourne pas de valeur.  
   
  `pcNumChars`  
- [out] Nombre de caractères dans le document. Si ce paramètre est NULL, la méthode ne retourne pas une valeur.  
+ [out] Nombre de caractères dans le document. Si ce paramètre est NULL, la méthode ne retourne pas de valeur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne le nombre de lignes et le nombre de caractères dans le document.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onDetach | Documents Microsoft
+title: IDebugApplicationNodeEvents::onDetach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b5f1ccc35e83f4fa016b5ff3dae8fac867bb8d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86a19a0c8ff2ce64cf524ae9b5f0ad258409f2df
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726069"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094469"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-Gère un événement, ce qui signifie que l’objet de nœud débogage application a été détachée d’un nœud parent.  
+Gère un événement, ce qui signifie que l’objet de nœud d’application debug a été détachée d’un nœud parent.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onDetach();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT onDetach();
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode gère un événement, ce qui signifie que l’objet de nœud débogage application a été détachée d’un nœud parent.  
+## <a name="remarks"></a>Notes  
+ Cette méthode gère un événement, ce qui signifie que l’objet de nœud d’application debug a été détachée d’un nœud parent.  
   
  Les implémenteurs de le `IDebugApplicationNode` interface déclencher cet événement.  
   

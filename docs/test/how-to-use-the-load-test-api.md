@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ee66a15788e9ae640142c269e388846a59311190
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926055"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procédure : utiliser l’API de test de charge
 

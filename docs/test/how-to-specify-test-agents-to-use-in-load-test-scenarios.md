@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061015"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932257"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procédure : spécifier les agents de test à utiliser dans les scénarios de test de charge
 

@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cfbd259eb4363041988a7682f0e5ce601c3917cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914499"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procédure : sélectionner le paramètre d’exécution active d’un test de charge
 

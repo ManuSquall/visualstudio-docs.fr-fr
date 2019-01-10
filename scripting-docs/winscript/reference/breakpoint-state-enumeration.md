@@ -1,5 +1,5 @@
 ---
-title: Énumération BREAKPOINT_STATE | Documents Microsoft
+title: Énumération BREAKPOINT_STATE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640769"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097277"
 ---
 # <a name="breakpointstate-enumeration"></a>Énumération BREAKPOINT_STATE
 Indique l'état d'un point d'arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -42,7 +42,7 @@ typedef enum tagBREAKPOINT_STATE {
   
 |Membre|Description|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Le point d’arrêt n’existe plus, mais il existe encore des références à ce dernier.|  
+|BREAKPOINT_DELETED|Le point d’arrêt n’existe plus, mais il existe toujours des références à ce dernier.|  
 |BREAKPOINT_DISABLED|Le point d’arrêt existe mais est désactivé.|  
 |BREAKPOINT_ENABLED|Le point d’arrêt existe et est activé.|  
   

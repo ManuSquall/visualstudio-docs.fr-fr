@@ -1,8 +1,6 @@
 ---
 title: Vues des données de la méthode d’échantillonnage du profileur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling data views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c6ff65e392d556d8d32a3c436c5a7b322c4e2412
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912102"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vues des données de la méthode d’échantillonnage du profileur
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés avec la méthode d’instrumentation.  

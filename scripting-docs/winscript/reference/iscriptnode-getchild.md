@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Documents Microsoft
+title: IScriptNode::GetChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55cd6cf5233e850e4109128e322d3fc5bd0b1355
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734219"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086591"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
 Retourne l’enfant qui est à l’index spécifié dans le nœud.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetChild(  
    ULONG              isn,  
    IScriptNode        **ppsn  
@@ -39,7 +39,7 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Paramètres  
  `isn`  
- [in] L’index de l’enfant du parent.  
+ [in] L’index de l’enfant de la page parente.  
   
  `ppsn`  
  [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptNode` interface de l’instance enfant.  
@@ -51,12 +51,12 @@ HRESULT GetChild(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Pour `IScriptEntry` objets qui spécifient un objet de fonction et pour `IScriptScriptlet` des objets, cette méthode échoue, car aucune entrée enfant.  
+## <a name="remarks"></a>Notes  
+ Pour `IScriptEntry` objets qui spécifient un objet de fonction et pour `IScriptScriptlet` objets, cette méthode échoue, car aucune entrée enfant.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)

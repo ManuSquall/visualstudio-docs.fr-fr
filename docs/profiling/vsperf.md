@@ -1,8 +1,6 @@
 ---
 title: VSPerf | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c841e6930db8f65aaf93c314359656689ecfd1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7293914d2969e3e697ee7137256692270ac16f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919022"
 ---
 # <a name="vsperf"></a>VSPerf
 Utilisez l’outil en ligne de commande **VsPerf** pour :  
@@ -34,7 +32,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |**/app:{nom_application}**|Démarre le profileur et attend que l’application spécifiée soit lancée à partir du menu Démarrer.<br /><br /> Exécutez `vsperf /listapps` pour afficher le nom d’application et le nom complet du package des applications installées.|  
 |**/package:{nom complet du package}**|Démarre le profileur et attend que l’application spécifiée soit lancée à partir du menu Démarrer.<br /><br /> Exécutez `vsperf /listapps` pour afficher le nom d’application et le nom complet du package des applications installées.|  
 |**/js**|Obligatoire pour le profilage d’applications JavaScript.<br /><br /> Collecte les données de performances à partir des applications JavaScript.<br /><br /> Utilisez uniquement avec /package ou /attach.|  
-|**/noclr**|Facultative. Ne collecte pas de données CLR.<br /><br /> Utilisez uniquement avec /package ou /attach.<br /><br /> Optimisation ; aucune résolution de symbole managé.|  
+|**/noclr**|Optionnel. Ne collecte pas de données CLR.<br /><br /> Utilisez uniquement avec /package ou /attach.<br /><br /> Optimisation ; aucune résolution de symbole managé.|  
 |**/listapps**|Liste les noms et les noms complets de packages des applications installées.|  
   
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Applications de bureau Windows 8 et applications Windows Server 2012 uniquement  
@@ -52,7 +50,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |||  
 |-|-|  
 |**/attach:{PID&#124;nom_processus}[,PID&#124;nom_processus]...**|Collecte les données des processus spécifiés.<br /><br /> Utilisez le Gestionnaire des tâches pour afficher l’ID de processus (PID) et les noms de processus des applications en cours d’exécution.|  
-|**/file:{nom_rapport}**|Facultative. Spécifie le fichier de sortie (écrase le fichier existant).<br /><br /> Utilisez uniquement avec /package ou /attach.|  
+|**/file:{nom_rapport}**|Optionnel. Spécifie le fichier de sortie (écrase le fichier existant).<br /><br /> Utilisez uniquement avec /package ou /attach.|  
 |**/pause**|Suspendre la collecte de données.|  
 |**/resume**|Reprendre la collecte de données.|  
 |**/stop**|Arrêter la collecte de données et terminer les processus cibles.|  

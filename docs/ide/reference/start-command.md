@@ -2,7 +2,6 @@
 title: Démarrer, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd2d64d8103afe1e303052c9b27fc2cc85cab58
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903927"
 ---
 # <a name="start-command"></a>Démarrer, commande
 Commence le débogage du projet de démarrage.
@@ -34,7 +33,7 @@ Debug.Start [address]
 ## <a name="arguments"></a>Arguments
  `address`
 
- Facultative. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
+ Optionnel. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
 
 ## <a name="remarks"></a>Notes
  Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.
@@ -51,4 +50,4 @@ Debug.Start [address]
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

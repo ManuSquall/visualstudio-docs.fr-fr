@@ -2,7 +2,6 @@
 title: Notions de base des tests unitaires
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740349"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060801"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -26,7 +25,7 @@ Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font
 
 Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](generate-unit-tests-for-your-code-with-intellitest.md).
 
-L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
+L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Prise en main
 
@@ -127,7 +126,7 @@ Chaque projet de test unitaire contient les classes qui reflètent les noms des 
 
 -   la classe `AccountInfoTests` contient les méthodes de test unitaire pour la classe `AccountInfo` du projet `Accounts` ;
 
--   la classe `CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount`.
+-   la classe`CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Écrire vos tests
 
@@ -193,7 +192,7 @@ public void My_Test()
 }
 ```
 
-Pour affecter au délai d’attente la valeur maximale autorisée :
+Pour affecter au délai d’attente la valeur maximale autorisée :
 
 ```csharp
 [TestMethod]

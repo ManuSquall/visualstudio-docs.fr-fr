@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugframe::getdocumentpositionwithname, méthode | Documents Microsoft
+title: Méthode IJsDebugFrame::GetDocumentPositionWithName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49afb5903e190280d226a24b22dc389041861c52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6333f9c52c3ab4e0cd01c34f5e5228721aa55b4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728049"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093832"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName, méthode
 Retourne la position actuelle de ce frame de pile dans le document au niveau de l’utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithName(  
    BSTR *pDocumentName,  
    DWORD *pLine,  
@@ -38,7 +38,7 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>Paramètres  
  `pDocumentName`  
- [out] Pour les scripts statiques, une URL vers le document. Pour les scripts dynamiques, un nom contenant le type de script (par exemple, code eval, le code de fonction etc.) est retourné.  
+ [out] Pour les scripts statiques, une URL vers le document. Pour les scripts dynamiques, un nom contenant le type de script (par exemple, le code eval, le code de fonction etc.) est retourné.  
   
  `pLine`  
  [out] position de ligne de base 1 dans le document.  

@@ -3,7 +3,6 @@ title: Symboles de débogage en mode mixte Python/C++
 description: Guide pratique sur la capacité de Visual Studio à charger des symboles pour effectuer le débogage en mode mixte C++ et Python.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885966"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installer les symboles de débogage pour les interpréteurs Python
 

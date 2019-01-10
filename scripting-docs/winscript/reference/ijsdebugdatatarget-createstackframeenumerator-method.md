@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::createstackframeenumerator, méthode | Documents Microsoft
+title: Méthode IJsDebugDataTarget::CreateStackFrameEnumerator | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91c67dc3eb14217ffcdc41f0877df6837fcb0230
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 399d66b9f21146f66df86bad0c151722f2893fc8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727499"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097745"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>IJsDebugDataTarget::CreateStackFrameEnumerator, méthode
 Crée un énumérateur pour les frames de pile.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateStackFrameEnumerator(  
    DWORD threadId,  
    IEnumJsStackFrames **ppEnumerator  
@@ -40,7 +40,7 @@ HRESULT CreateStackFrameEnumerator(
  [in] Thread en cours d’exécution dans le processus cible.  
   
  `ppEnumerator`  
- [out] L’énumérateur pour les frames de pile.  
+ [out] Énumérateur pour les frames de pile.  
   
 ## <a name="return-value"></a>Valeur de retour  
   

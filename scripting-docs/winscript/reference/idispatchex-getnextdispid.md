@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Documents Microsoft
+title: IDispatchEx::GetNextDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728519"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092987"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 Énumère les membres de l’objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -40,15 +40,15 @@ HRESULT GetNextDispID(
   
 #### <a name="parameters"></a>Paramètres  
  `grfdex`  
- Détermine le jeu d’éléments à énumérer. Cela peut être une combinaison des valeurs suivantes :  
+ Détermine quel jeu d’éléments sont à énumérer. Cela peut être une combinaison des valeurs suivantes :  
   
-|Valeur|Signification|  
+|Value|Signification|  
 |-----------|-------------|  
-|fdexEnumDefault|Demande que l’objet énumère les éléments de la valeur par défaut. L’objet est autorisé à énumérer un jeu d’éléments.|  
-|fdexEnumAll|Demande que l’objet énumère tous les éléments. L’objet est autorisé à énumérer un jeu d’éléments.|  
+|fdexEnumDefault|Demande que l’objet énumère les éléments par défaut. L’objet est autorisé à énumérer n’importe quel jeu d’éléments.|  
+|fdexEnumAll|Demande que l’objet énumère tous les éléments. L’objet est autorisé à énumérer n’importe quel jeu d’éléments.|  
   
  `id`  
- Identifie le membre actuel. GetNextDispID récupère l’élément dans l’énumération après celui-ci. Utilise les GetDispID ou un appel précédent à GetNextDispID pour obtenir cet identificateur. Utilise la valeur DISPID_STARTENUM pour obtenir le premier identificateur du premier élément.  
+ Identifie le membre actuel. GetNextDispID récupère l’élément dans l’énumération après celui-ci. Utilise GetDispID ou un appel précédent à GetNextDispID pour obtenir cet identificateur. Utilise la valeur DISPID_STARTENUM pour obtenir le premier identificateur du premier élément.  
   
  `pid`  
  Adresse d’une variable DISPID qui reçoit l’identificateur de l’élément suivant dans l’énumération.  
@@ -56,7 +56,7 @@ HRESULT GetNextDispID(
  Si un membre est supprimé par `DeleteMemberByName` ou `DeleteMemberByDispID`, le `DISPID` doit rester valide pour `GetNextDispID`.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Retourne une des valeurs suivantes :  
   
 |||  
 |-|-|  
@@ -65,7 +65,7 @@ HRESULT GetNextDispID(
   
 ## <a name="example"></a>Exemple  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  
@@ -87,7 +87,7 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDispatchEx (Interface)](../../winscript/reference/idispatchex-interface.md)   
+ [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](#lrfidispatchexgetnextdispid)   
  [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)   

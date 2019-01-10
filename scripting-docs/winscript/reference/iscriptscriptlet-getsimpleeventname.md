@@ -1,5 +1,5 @@
 ---
-title: 'IScriptScriptlet :: GetSimpleEventName | Documents Microsoft'
+title: 'IScriptScriptlet :: GetSimpleEventName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec90d2ebdf58f60ba88b90a38830b5df329dead
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01d20df26f2f3f1d2e7735fed5292b29da528ace
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733689"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093263"
 ---
-# <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet:: GetSimpleEventName
-Retourne le nom d’événement simple qui est associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient-elle pas tous les espaces blancs.  
+# <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet :: GetSimpleEventName
+Retourne le nom d’événement simple qui est associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient-elle pas de n’importe quel espace blanc.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetSimpleEventName(  
    BSTR               *pbstr  
 );  
@@ -38,16 +38,16 @@ HRESULT GetSimpleEventName(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstr`  
- [out] Une mémoire tampon qui contient le nom d’événement simple qui est associé à la `IScriptScriptlet` objet.  
+ [out] Une mémoire tampon qui contient le nom d’événement simple qui est associé le `IScriptScriptlet` objet.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)

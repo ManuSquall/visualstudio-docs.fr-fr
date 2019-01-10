@@ -2,7 +2,6 @@
 title: Pages de propriétés (JavaScript)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956529"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 **Pages de propriétés** donne accès aux paramètres du projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.
@@ -39,11 +38,11 @@ Les pages et options suivantes s’affichent dans les **Pages de propriétés**.
 
  **Configuration**
 
- Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plateforme**
 
- Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+ Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Page Général
  Utilisez les options suivantes pour définir les propriétés générales du projet.
@@ -73,7 +72,7 @@ Les pages et options suivantes s’affichent dans les **Pages de propriétés**.
 
  Spécifie l'hôte par défaut pour le débogueur.
 
--   Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

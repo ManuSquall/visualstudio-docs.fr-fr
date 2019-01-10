@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnConnectDebugger | Documents Microsoft
+title: IRemoteDebugApplicationEvents::OnConnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ea40164dee8b4f7b82166ebc23abe1bc254226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9de73412a030d1131d942f8527eb2458092fdb2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728849"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097290"
 ---
 # <a name="iremotedebugapplicationeventsonconnectdebugger"></a>IRemoteDebugApplicationEvents::OnConnectDebugger
-Gère un débogueur connecter l’événement.  
+Événement de connect gère un débogueur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnConnectDebugger(  
    IApplicationDebugger*  pad  
 );  
@@ -38,17 +38,17 @@ HRESULT OnConnectDebugger(
   
 #### <a name="parameters"></a>Paramètres  
  `pad`  
- [in] Le débogueur qui vient d’être connecté.  
+ [in] Le débogueur nouvellement connecté.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode le débogueur gère les événements de connexion.  
+## <a name="remarks"></a>Notes  
+ Cette méthode gère le débogueur événement connect.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

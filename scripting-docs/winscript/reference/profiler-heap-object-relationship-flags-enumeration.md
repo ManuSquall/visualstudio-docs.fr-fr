@@ -1,5 +1,5 @@
 ---
-title: Profiler_heap_object_relationship_flags, énumération | Documents Microsoft
+title: Énumération PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,26 +12,26 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab542225e0238dbd40f90d9de66d43d0791e05e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b78285f332b339533d81228de5877043f699a67c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734009"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096289"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS, énumération
-Indicateurs qui représentent des si un objet de tas pointé dans une relation d’objet est une méthode d’accesseur Get ou Set. Utilisé dans le [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) méthode lorsque la valeur PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS est spécifiée dans le `enumFlags` paramètre.  
+Indicateurs qui représentent si un objet de segment de mémoire désigné dans une relation entre objets sont une méthode getter ou setter. Utilisé dans le [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) méthode lorsque la valeur PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS est spécifiée dans le `enumFlags` paramètre.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE                      = 0x00000000,    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR           = 0x00010000,    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR           = 0x00020000,} PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS;  
 ```  
   
 ## <a name="members"></a>Membres  
   
-|Membre|Valeur|Description|  
+|Membre|Value|Description|  
 |------------|-----------|-----------------|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Cet objet de segment de mémoire désigné dans une relation d’objet n’est pas identifié comme méthode d’une méthode getter ou setter.|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|L’objet de segment de mémoire désigné dans une relation d’objet est une méthode d’accesseur Get. Ces informations sont stockées dans les 2 octets (16 bits) haute de la [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) champ.|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR|0x00020000|L’objet de segment de mémoire désigné dans une relation d’objet est une méthode d’accesseur Set. Ces informations sont stockées dans les 2 octets (16 bits) haute de la `PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo` champ.|
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Cet objet segment de mémoire désigné dans une relation d’objet n’est pas identifié comme méthode d’une méthode getter ou setter.|  
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|L’objet de tas ciblé dans une relation entre objets est une méthode d’accesseur Get. Ces informations seront stockées dans les 2 octets (16 bits) de la [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) champ.|  
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR|0x00020000|L’objet de tas ciblé dans une relation entre objets est une méthode d’accesseur Set. Ces informations seront stockées dans les 2 octets (16 bits) de la `PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo` champ.|

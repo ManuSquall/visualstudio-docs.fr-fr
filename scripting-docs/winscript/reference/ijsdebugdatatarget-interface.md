@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget, Interface | Documents Microsoft
+title: Interface IJsDebugDataTarget | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e158ced0da6d59bfcadeb87bf206c94a6099ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e14046443ca0560deacb6ddb6e39b1fc25d18fea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729279"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097420"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget, interface
-Implémenté par le débogueur pour fournir des fonctionnalités pour accéder et modifier l’état du processus du débogueur de cible.  
+Implémenté par le débogueur pour fournir des fonctionnalités permettant d’accéder et de modifier l’état du processus de débogueur cible.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
@@ -34,11 +34,11 @@ IJsDebugDataTarget : public IUnknown;
   
 |Nom|Description|  
 |----------|-----------------|  
-|[Méthode IJsDebugDataTarget::AllocateVirtualMemory](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Réserve ou valide une région de mémoire dans l’espace d’adressage virtuel du processus cible.|  
+|[Méthode IJsDebugDataTarget::AllocateVirtualMemory](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Réserve et/ou valide une région de mémoire dans l’espace d’adressage virtuel du processus cible.|  
 |[Méthode IJsDebugDataTarget::CreateStackFrameEnumerator](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Crée un énumérateur pour les frames de pile.|  
-|[Méthode IJsDebugDataTarget::FreeVirtualMemory](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Libère et/ou invalider une région de mémoire dans l’espace d’adressage virtuel du processus cible.|  
-|[Méthode IJsDebugDataTarget::GetThreadContext](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Contexte récupère pour fonction de thread.|  
-|[Méthode IJsDebugDataTarget::GetTlsValue](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Pour le thread en cours de débogage, récupère la valeur de l’emplacement de stockage local (TLS) de thread pour l’index spécifié de TLS.|  
+|[Méthode IJsDebugDataTarget::FreeVirtualMemory](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Libère et/ou annule la validation d’une région de mémoire dans l’espace d’adressage virtuel du processus cible.|  
+|[Méthode IJsDebugDataTarget::GetThreadContext](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Récupère le contexte pour un thread donné.|  
+|[Méthode IJsDebugDataTarget::GetTlsValue](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Pour le thread en cours de débogage, récupère la valeur dans l’emplacement de stockage local (TLS) de thread pour l’index TLS spécifié.|  
 |[Méthode IJsDebugDataTarget::ReadBSTR](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Lit un BSTR à partir de la cible de débogage.|  
 |[Méthode IJsDebugDataTarget::ReadMemory](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Lit la mémoire du processus cible.|  
 |[Méthode IJsDebugDataTarget::ReadNullTerminatedString](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Lit le nombre spécifié de caractères à partir de la cible.|  

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::WriteMemory, méthode | Documents Microsoft
+title: Méthode IJsDebugDataTarget::WriteMemory | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727899"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089282"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory, méthode
 Lit la mémoire du processus cible.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,18 +38,18 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Paramètres  
  `address`  
- [in] L’adresse de base à partir de laquelle écrire la mémoire du processus de la cible.  
+ [in] L’adresse de base à partir de laquelle écrire la cible mémoire du processus.  
   
  `pMemory`  
  [in] Les données à écrire dans l’espace d’adressage du processus spécifié.  
   
  `size`  
- [in] Nombre d’octets à écrire dans le processus.  
+ [in] Le nombre d’octets à écrire dans le processus.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="remarks"></a>Remarques  
- Avant le transfert de données se produit, le système vérifie que toutes les données de l’adresse de base et de la mémoire de la taille spécifiée est accessible en écriture, et si elle n’est pas accessible, la fonction génère une erreur de E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+## <a name="remarks"></a>Notes  
+ Avant le transfert de données se produit, le système vérifie que toutes les données de l’adresse de base et de la mémoire de la taille spécifiée est accessible pour un accès en écriture, et si elle n’est pas accessible, la fonction génère une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Spécifications  
  **En-tête :** jscript9diag.h  
