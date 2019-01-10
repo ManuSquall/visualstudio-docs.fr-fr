@@ -1,8 +1,6 @@
 ---
-title: À l’aide de Spy ++ | Documents Microsoft
-ms.custom: ''
+title: À l’aide de Spy ++ | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
@@ -12,34 +10,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb5356ecfe31bce8c8f429add2e78e495f40cd5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a316f2fa786697511a98ae06e5fc52e86412d6b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943273"
 ---
 # <a name="using-spy"></a>Utiliser Spy++
-Spy ++ (SPYXX. (EXE) est un utilitaire Win32 qui vous donne une vue graphique des processus, threads, windows et messages de fenêtre du système. Cette section de l’aide de Spy ++ inclut les rubriques suivantes :  
+Spy ++ (SPYXX. (EXE) est un utilitaire basé sur Win32 qui vous donne une vue graphique des processus, threads, windows et messages de fenêtre du système. Cette section de l’aide de Spy ++ inclut les rubriques d’aide suivantes :  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Présentation de Spy++](../debugger/introducing-spy-increment.md)  
  Explique les types d’informations que vous pouvez afficher avec l’outil Spy ++.  
   
  [Guide pratique pour démarrer Spy++](../debugger/how-to-start-spy-increment.md)  
- Explique comment lancer Spy ++ à partir du menu Outils.  
+ Explique comment lancer Spy ++ dans le menu Outils.  
   
  [Barre d’outils Spy++](../debugger/spy-increment-toolbar.md)  
  Décrit les commandes disponibles dans la barre d’outils Spy ++.  
   
  [Guide pratique pour afficher des vues Spy++](../debugger/how-to-display-spy-increment-views.md)  
- Comment afficher la vue fenêtres, affichage des Messages, vue processus et la vue Threads.  
+ Comment afficher la vue de Windows, affichage des Messages, vue processus et la vue Threads.  
   
- [Guide pratique pour actualiser la vue](../debugger/how-to-refresh-the-view.md)  
+ [Guide pratique pour actualiser l’affichage](../debugger/how-to-refresh-the-view.md)  
  Explique la commande Actualiser.  
   
  [Guide pratique pour modifier les polices](../debugger/how-to-change-fonts.md)  
- Explique comment modifier la façon dont une vue est affichée.  
+ Explique comment modifier la façon dont s’affiche.  
   
  [Guide pratique pour développer et réduire des arborescences Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
  Explique comment manipuler une vue.  

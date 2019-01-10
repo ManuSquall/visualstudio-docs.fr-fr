@@ -2,7 +2,6 @@
 title: Déboguer les applications web - résolution des problèmes | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923583"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Débogage d’applications web : Résolution des problèmes
 Cette section contient des procédures courantes qui peuvent servir à résoudre des erreurs.  
@@ -37,5 +36,5 @@ Cette section contient des procédures courantes qui peuvent servir à résoudre
  [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Explique la résolution de problèmes et d’erreurs.  
   
- [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)  
+ [Débogage d’applications et de scripts web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Vue d’ensemble du débogage d’applications Web telles que les projets [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], les services web XML et les projets ATL Server.

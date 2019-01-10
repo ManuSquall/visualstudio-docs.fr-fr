@@ -2,7 +2,6 @@
 title: Débogueur ne peut pas afficher le code source ou code machine
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea95a2bb4c29f8a23fd597173a10a838baca051c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944374"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Le débogueur ne parvient pas à afficher le code source ou le code machine
 Cette erreur affiche le message suivant :  

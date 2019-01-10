@@ -2,7 +2,6 @@
 title: Démarrer une session de débogage pour une application UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c2ef4e92cddb302e67f99c921750d4e9e83d98e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901980"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Commencer une session de débogage pour une application UWP
   
@@ -209,4 +208,4 @@ Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../d
 > Pour attacher à votre application JavaScript, le plus simple consiste à fermer toutes les autres applications JavaScript. Ou, vous pouvez noter le PID de l’exécution *wwahost.exe* processus dans le Gestionnaire des tâches Windows avant de démarrer votre application. Lorsque vous démarrez votre application, son *wwahost.exe* PID sera celle qui est différente de celles mentionnées précédemment.  
 
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   

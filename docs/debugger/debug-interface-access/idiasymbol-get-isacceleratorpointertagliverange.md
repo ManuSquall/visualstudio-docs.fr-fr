@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91fc97cafdb3037bb3cca4c93ee874ee329d794c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0e3e8d6aee360c4a9a6cbd7d2406be0797e641bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931208"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Récupère un indicateur qui indique si le symbole correspond à la *symbole de plage définition* pour le composant de balise d’une variable de pointeur dans le code compilé pour un accélérateur AMP de C++. Le symbole de plage de définition est l’emplacement d’une variable pour une plage d’adresses.  
+Récupère un indicateur qui indique si le symbole correspond à la *symbole de plage définition* pour le composant de la balise d’une variable de pointeur dans le code compilé pour un accélérateur de l’AMP C++. Le symbole de plage de définition est l’emplacement d’une variable pour une plage d’adresses.  
   
 ## <a name="syntax"></a>Syntaxe  
   

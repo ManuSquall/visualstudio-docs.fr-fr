@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
@@ -14,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e982db6bf37caf201f75e563a23a28a528a61e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b0e79d65c590973f99d36f7fd81a98e3bae55a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879249"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,4 +152,4 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
    Félicitations ! Vous avez terminé cette procédure. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [conseils de productivité](../ide/productivity-tips-for-visual-studio.md) [exemples Visual Studio](../ide/visual-studio-samples.md) [commencer à développer avec Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+ [Procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [conseils de productivité](../ide/productivity-tips-for-visual-studio.md) [exemples Visual Studio](../ide/visual-studio-samples.md) [commencer à développer avec Visual Studio](../ide/get-started-developing-with-visual-studio.md)

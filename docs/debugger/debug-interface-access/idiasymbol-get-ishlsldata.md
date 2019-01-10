@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isHLSLData | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isHLSLData | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be6e1f49acfc7d08815f0143f55c48fbaf7b017
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b1bd237833e27c3c83a24345e6b7c436b40aa8b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875123"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
 Spécifie si ce symbole représente les données au niveau du nuanceur HLSL (High Language).  

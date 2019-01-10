@@ -2,7 +2,6 @@
 title: Écrire une fonction de rapport d’erreurs exécution | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938171"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Procédure : Écrire une fonction permettant d’obtenir un rapport sur les erreurs d’exécution
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.  

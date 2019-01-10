@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4f98b51be027240cf6acee57ec6f8dc8f149a8e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c259a8c84a59f99f647f908ded8b272ed4e943a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858829"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +90,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
  Démarrez avec un modèle de projet d'application Windows universelle. Concevez vos pages visuellement, puis ouvrez-les dans une fenêtre d'aperçu pour voir comment elles apparaissent sur les différents types d'appareils. Si vous n'aimez pas la façon dont une page apparaît sur un appareil, vous pouvez optimiser cette page pour qu'elle soit mieux adaptée à la taille d'écran, à la résolution ou aux différentes orientations, comme le mode paysage ou le mode portrait. Vous pouvez faire tout cela à l'aide des fenêtres d'un outil intuitif et des options de menu facilement accessibles dans Visual Studio. Quand vous êtes prêt à exécuter votre application et à avancer pas à pas dans votre code, vous avez à votre disposition tous les émulateurs et simulateurs pour différents types d'appareils dans une seule liste déroulante, qui se trouve sur la barre d'outils **Standard** .
 
- Windows 10 étant relativement nouveau, vous trouverez également des modèles de projet qui ciblent Windows 8.1. Vous pouvez utiliser ces modèles de projet si vous le souhaitez : votre application s'exécutera sur les téléphones, les tablettes et les ordinateurs Windows 10. Cependant, tous les appareils exécutant Windows 8.1 recevront une mise à niveau automatique vers Windows 10. Par conséquent, sauf si vous avez des raisons spécifiques de cibler plutôt Windows 8.1, nous vous recommandons d'utiliser les modèles de projet qui ciblent Windows 10.
+ Windows 10 étant relativement nouveau, vous trouverez également des modèles de projet qui ciblent Windows 8.1. Vous pouvez utiliser ces modèles de projet si vous le souhaitez : votre application s'exécutera sur les téléphones, les tablettes et les ordinateurs Windows 10. Cependant, tous les appareils exécutant Windows 8.1 recevront une mise à niveau automatique vers Windows 10. Par conséquent, sauf si vous avez des raisons spécifiques de cibler plutôt Windows 8.1, nous vous recommandons d'utiliser les modèles de projet qui ciblent Windows 10.
 
 |**En savoir plus**|
 |--------------------|

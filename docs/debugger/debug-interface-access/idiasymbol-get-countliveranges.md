@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_countLiveRanges | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422025e61987a80b365b8db69dde11ee61e38472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5d33a87225345137a303284387c93dcec06d07f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933951"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
 Récupère le nombre de plages d’adresses valide associée au code local.  
@@ -27,7 +25,7 @@ Récupère le nombre de plages d’adresses valide associée au code local.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_countLiveRanges (   
+HRESULT get_countLiveRanges (   
    DWORD* count  
 );  
 ```  
@@ -39,8 +37,8 @@ HRESULT get_countLiveRanges (
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

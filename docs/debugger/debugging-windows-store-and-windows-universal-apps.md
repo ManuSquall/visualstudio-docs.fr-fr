@@ -2,7 +2,6 @@
 title: Déboguer des applications UWP | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 58f271bd1d4e0a7a15d1f08fe89b1ef252bdefd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902199"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Déboguer des applications Windows universelle (UWP) dans Visual Studio
 
@@ -34,4 +33,4 @@ Le débogueur Visual Studio fournit la prise en charge complète pour le déboga
 
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyser la qualité du code à l’aide de l’analyse statique du code](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+ [Analyser la qualité du code à l’aide de l’analyse statique du code](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

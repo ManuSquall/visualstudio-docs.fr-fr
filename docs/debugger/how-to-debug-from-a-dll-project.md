@@ -1,8 +1,6 @@
 ---
-title: 'Comment : déboguer à partir d’un projet de DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer à partir d’un projet de DLL | Microsoft Docs'
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854065"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Comment : déboguer à partir d’un projet DLL dans Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procédure : Déboguer à partir d’un projet DLL dans Visual Studio (C#, C++, Visual Basic, F#)
 
 Une façon de déboguer un projet de DLL consiste à spécifier l’application appelante dans les propriétés du projet DLL. Vous pouvez ensuite démarrer le débogage à partir du projet DLL lui-même. Pour cette méthode fonctionne, l’application doit appeler la même DLL dans le même emplacement que celui que vous configurez. Si l’application détecte et charge une version différente de la DLL, cette version ne contient pas vos points d’arrêt. Pour d’autres méthodes de débogage de DLL, consultez [projets DLL de débogage](../debugger/debugging-dll-projects.md).
   
-Si votre application managée appelle une DLL native ou votre application native appelle une DLL managée, vous pouvez déboguer la DLL et l’application appelante. Pour plus d’informations, consultez [Guide pratique pour déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).   
+Si votre application managée appelle une DLL native ou votre application native appelle une DLL managée, vous pouvez déboguer la DLL et l’application appelante. Pour plus d'informations, voir [Procédure : Déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Les projets DLL natifs et managés ont des paramètres différents pour spécifier les applications appelantes. 
 

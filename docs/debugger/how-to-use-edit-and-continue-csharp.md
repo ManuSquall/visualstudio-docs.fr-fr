@@ -1,8 +1,6 @@
 ---
-title: 'Comment : utiliser Modifier & Continuer (c#) | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser Modifier & Continuer (C#) | Microsoft Docs'
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861966"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Comment : utiliser Modifier & Continuer (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Procédure : Utiliser Modifier & Continuer (C#)
 Avec Modifier & Continuer, vous pouvez apporter et appliquer des modifications à votre code en mode arrêt pendant le débogage, sans avoir à arrêter et redémarrer la session de débogage.  
 
 Modifier & Continuer pour C# se produit automatiquement lorsque vous apportez des modifications de code en mode arrêt, puis continuez le débogage à l’aide de **continuer**, **étape**, ou **définir l’instruction suivante**, ou évaluez une fonction dans une fenêtre du débogueur.  

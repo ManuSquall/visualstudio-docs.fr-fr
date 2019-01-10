@@ -1,8 +1,6 @@
 ---
-title: Onglet, boîte de dialogue Propriétés de fenêtre processus | Documents Microsoft
-ms.custom: ''
+title: Onglet, boîte de dialogue Propriétés de fenêtre de processus | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Process Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d504171b50a717ebb4863e2ab9995e384101d9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 557f471a841aa549ecb67fbe99a40b69465fb4b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968019"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Onglet Processus de la boîte de dialogue Propriétés de la fenêtre
-Utilisez le **processus** onglet pour identifier le processus de la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [affichage Windows](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
+Utilisez le **processus** onglet pour identifier le processus de la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
  Les paramètres suivants sont disponibles sur le **processus** onglet :  
   
 |Entrée|Description|  
 |-----------|-----------------|  
-|**ID du processus**|L’ID du processus qui possède le thread qui a créé cette fenêtre. Choisissez cette valeur pour afficher les propriétés de ce processus.|  
+|**ID du processus**|ID de processus qui possède le thread qui a créé cette fenêtre. Choisissez cette valeur pour afficher les propriétés de ce processus.|  
 |**ID de thread**|L’ID du thread qui a créé cette fenêtre. Choisissez cette valeur pour afficher les propriétés de ce thread.|

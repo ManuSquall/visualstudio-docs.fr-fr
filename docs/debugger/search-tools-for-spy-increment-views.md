@@ -1,8 +1,6 @@
 ---
-title: Outils de recherche pour les vues Spy ++ | Documents Microsoft
-ms.custom: ''
+title: Outils de recherche pour les vues Spy ++ | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - searching, Spy++
@@ -13,38 +11,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c83a2a0970a8d209a4e445a595722d9a2651519f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a2559fccf87fcd964a70d2c111d4b20e772e1585
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821086"
 ---
 # <a name="search-tools-for-spy-views"></a>Outils de recherche pour les vues Spy++
-Utilisez ces boîtes de dialogue pour spécifier les données d’une fenêtre Vues Spy ++ affiche :  
+Utilisez ces boîtes de dialogue pour spécifier les données affiche une fenêtre Vues Spy ++ :  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Rechercher une fenêtre, boîte de dialogue](../debugger/find-window-dialog-box.md)  
  Permet d’afficher les propriétés ou les messages à partir d’une fenêtre spécifique.  
   
  [Boîte de dialogue Recherche d’une fenêtre](../debugger/window-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’une fenêtre spécifique dans la vue fenêtres.  
+ Utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue de Windows.  
   
  [Recherche d’un message, boîte de dialogue](../debugger/message-search-dialog-box.md)  
- Utilisé pour rechercher le nœud pour un message spécifique dans la vue messages.  
+ Utilisé pour rechercher le nœud d’un message spécifique dans la vue de Message.  
   
  [Recherche d’un processus, boîte de dialogue](../debugger/process-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’un processus spécifique dans la vue processus.  
+ Utilisé pour rechercher le nœud d’un processus spécifique dans la vue de processus.  
   
  [Recherche d’un thread, boîte de dialogue](../debugger/thread-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’un thread spécifique dans la vue Threads.  
+ Utilisé pour rechercher le nœud pour un thread spécifique dans la vue Threads.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Vues Spy++](../debugger/spy-increment-views.md)  
  Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
  [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
+ Présente l’outil Spy ++ et explique comment il peut être utilisé.  
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

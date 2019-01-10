@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_timeStamp | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94150440d3fa94e8a511b62d053be01fd39ed6c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c7e0fdcc529a3a12ac12ea0c9522eeeeb7d4bce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963364"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
 Récupère l’horodatage du fichier exécutable sous-jacent.  
@@ -27,7 +25,7 @@ Récupère l’horodatage du fichier exécutable sous-jacent.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_timeStamp (   
+HRESULT get_timeStamp (   
    DWORD* pRetVal  
 );  
 ```  

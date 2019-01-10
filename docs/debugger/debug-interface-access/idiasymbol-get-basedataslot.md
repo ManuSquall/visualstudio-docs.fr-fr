@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_baseDataSlot | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_baseDataSlot | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 187fa59844f6e332c031b7e866107db63fe79cdd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 95f561007ebc5a8695efbfbcb2578c034d13ed22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828340"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
 Récupère l’emplacement de base de données.  

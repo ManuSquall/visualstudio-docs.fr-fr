@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isMultipleInheritance | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isMultipleInheritance | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7f0d789527f874f3d3b80b44c58347d1cd84f3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e1c55ddf07f033971d23c0dd568281a005966400
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951743"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Spécifie si le `this` pointeur pointe vers un membre de données avec héritage multiple.  
+Spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage multiple.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,7 +29,7 @@ HRESULT get_isMultipleInheritance(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Un pointeur vers un `BOOL` qui spécifie si le `this` pointeur pointe vers un membre de données avec héritage multiple.  
+ [out] Un pointeur vers un `BOOL` qui spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage multiple.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

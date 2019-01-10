@@ -2,7 +2,6 @@
 title: Parcourir le code avec le débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/12/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931422"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
@@ -154,7 +153,7 @@ Le compteur de programme accède directement au nouvel emplacement, les instruct
 >- Le déplacement de l'instruction suivante vers une autre fonction ou portée entraîne généralement une altération de la pile des appels, provoquant une erreur ou exception d'exécution. Si vous tentez de déplacer l'instruction suivante vers une autre portée, le débogueur ouvre une boîte de dialogue avec un avertissement et vous donne une occasion d'annuler l'opération. 
 >- En Visual Basic, vous ne pouvez pas déplacer l'instruction suivante à une autre portée ou fonction.  
 >- En C++ natif, si les contrôles d'exécution sont activés, la définition de l'instruction suivante peut provoquer la levée d'une exception lorsque l'exécution atteint la fin de la méthode.  
->- Lorsque Modifier &amp; Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d’erreur vous indique que l’opération n’est pas pris en charge.  
+>- Lorsque Modifier & Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp;amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d’erreur vous indique que l’opération n’est pas pris en charge.  
 >- Dans le code managé, vous ne pouvez pas déplacer l’instruction suivante si :  
 >   - L'instruction suivante se trouve dans une méthode différente de celle de l'instruction actuelle.  
 >   - Le débogage a été démarré par juste-à-temps de débogage.  

@@ -1,8 +1,6 @@
 ---
-title: Actualiser une application UWP | Documents Microsoft
-ms.custom: ''
+title: Actualiser une application UWP | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a45564f34fe0167821febb511a023c01f7c38358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 43f232157ef9237ba9d401f473ab0db1b1260f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828720"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualiser une application UWP dans Visual Studio
   
- Vous pouvez apporter des modifications à votre code pendant le débogage, puis actualiser une application UWP en JavaScript en sélectionnant le **actualiser l’application Windows** bouton sur le **déboguer** barre d’outils. Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur. La fonctionnalité Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat. Cette fonctionnalité est prise en charge pour les applications UWP.  
+ Vous pouvez apporter des modifications à votre code pendant le débogage, puis actualiser une application UWP en JavaScript en sélectionnant le **Windows actualiser application** bouton sur le **déboguer** barre d’outils. Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur. La fonctionnalité Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat. Cette fonctionnalité est prise en charge pour les applications UWP.  
   
  L'actualisation ne conserve pas l'état de votre application, ni ne reflète les modifications suivantes dans votre application :  
   
@@ -48,7 +46,7 @@ ms.locfileid: "31476278"
   
 ### <a name="to-refresh-an-app"></a>Pour actualiser une application  
   
-1.  Votre projet UWP ouvert dans Visual Studio, sélectionnez **ordinateur Local** en tant que la cible de débogage.
+1.  Votre projet UWP ouverte dans Visual Studio, sélectionnez **ordinateur Local** en tant que la cible de débogage.
   
      ![Liste cible de débogage sélectionnez](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -56,9 +54,9 @@ ms.locfileid: "31476278"
   
 4.  Passez dans Visual Studio. 
   
-5.  Dans la page d’accueil de votre application UWP, vous pouvez modifier certaines du code HTML.
+5.  Dans la page d’accueil de votre application UWP, vous pouvez modifier certains du code HTML.
   
-7.  Cliquez sur le **actualiser l’application Windows** bouton, qui ressemble à ceci : ![bouton d’application Windows d’actualiser](../debugger/media/js_refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
+7.  Cliquez sur le bouton Actualiser l'application Windows **, similaire à :** . ![Windows application bouton Actualiser](../debugger/media/js_refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
   
 8.  Basculez vers l'application. L’application est rechargée et le code HTML mis à jour est utilisé pour restituer l’application.
   

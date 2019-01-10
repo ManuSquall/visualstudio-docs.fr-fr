@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadLONG | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ee4ff1b6553968ad64f2fba5b005478bbba54e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: aefa38870d3639b2277dd4af2c38d04b8fbb7c00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889968"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 Lit `LONG` valeurs dans un jeu de propriétés.  
@@ -27,7 +25,7 @@ Lit `LONG` valeurs dans un jeu de propriétés.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT ReadDLONG (   
+HRESULT ReadDLONG (   
    PROPID id,  
    LONG*  pValue  
 );  

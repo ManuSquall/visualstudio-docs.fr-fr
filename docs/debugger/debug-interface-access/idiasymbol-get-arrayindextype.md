@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_arrayIndexType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: dacaba9db4a05eaaf173cc4936b075782b725025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820875"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Récupère l’interface de symbole du type d’index de tableau du symbole.  
@@ -27,7 +25,7 @@ Récupère l’interface de symbole du type d’index de tableau du symbole.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_arrayIndexType (   
+HRESULT get_arrayIndexType (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -45,11 +43,11 @@ HRESULT get_arrayIndexType (
 ## <a name="remarks"></a>Notes  
  Certains langages peuvent spécifier le type utilisé en tant qu’index vers un tableau. Le symbole retourné par cette méthode spécifie ce type.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

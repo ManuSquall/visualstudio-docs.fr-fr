@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f5e6ceefbff4702d509c18b4a555287a1e9f42
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 94e052865c94d747bcb36cd81e0b1c023262b0c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875152"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 Retourne le nombre de balises de pointeur accélérateur dans une fonction de stub de C++ AMP.  
@@ -31,13 +29,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Paramètres  
  `count`  
- [out] Un pointeur vers un `DWORD` , qui contient le nombre d’accélérateur balises de pointeur à une fonction de stub de C++ AMP.  
+ [out] Un pointeur vers un `DWORD` qui contient le nombre d’accélérateur de balises de pointeur dans une fonction de stub de C++ AMP.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée sur une `IDiaSymbol` interface qui correspond à une fonction de stub d’accélérateur C++ AMP.  
+ Cette méthode est appelée sur un `IDiaSymbol` interface qui correspond à une fonction de stub d’accélérateur C++ AMP.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

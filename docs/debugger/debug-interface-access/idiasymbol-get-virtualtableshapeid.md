@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_virtualTableShapeId | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e911bce6e09cdc8fc474ffbe42446eb4f1ae5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 898156d9583b91d0105fa9a6f1e6051f4a48ddf8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860099"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Récupère l’identificateur de symbole de forme de table virtuelle du symbole.  
@@ -27,7 +25,7 @@ Récupère l’identificateur de symbole de forme de table virtuelle du symbole.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_virtualTableShapeId (   
+HRESULT get_virtualTableShapeId (   
    DWORD* pRetVal  
 );  
 ```  

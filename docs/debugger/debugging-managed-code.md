@@ -1,8 +1,6 @@
 ---
 title: Débogage du Code managé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867038"
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
 
@@ -77,7 +75,7 @@ Fournit des considérations pour le débogage d'applications de service Windows,
 [Débogage et profilage](/dotnet/framework/debug-trace-profile/index)  
 Décrit le débogage des applications .NET Framework et les exigences de configuration.
 
-[Débogage de scripts et d'applications web](../debugger/debugging-web-applications-and-script.md)  
+[Débogage de scripts et d'applications web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 Décrit les problèmes et techniques de débogage courants relatifs au débogage de scripts et d'applications Web.
 
 [Nouveautés du débogueur dans Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  

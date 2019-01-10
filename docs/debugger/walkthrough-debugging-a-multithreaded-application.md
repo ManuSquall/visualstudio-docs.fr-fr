@@ -1,8 +1,6 @@
 ---
 title: Afficher les threads dans le débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946160"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre Threads
 Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez. Pour obtenir des instructions sur la façon d’utiliser le **Threads** fenêtre, consultez [procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
@@ -38,11 +36,11 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
 ## <a name="use-the-threads-window"></a>Utiliser la fenêtre Threads 
  Le **Threads** fenêtre contient un tableau où chaque ligne décrit un thread distinct dans votre application. Par défaut, ce tableau répertorie tous les threads de votre application, mais vous pouvez filtrer la liste de façon à afficher uniquement les threads qui vous intéressent. Chaque colonne décrit un type différent d’informations. Vous pouvez également masquer certaines colonnes. Si vous affichez toutes les colonnes, les colonnes suivantes s’affichent, de gauche à droite :  
   
-- **Marquer** Dans cet article sans étiquette, vous pouvez marquer un thread auquel vous souhaitez une attention particulière. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : indicateur et supprimer des threads](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Marquer** Dans cet article sans étiquette, vous pouvez marquer un thread auquel vous souhaitez une attention particulière. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : ajouter et supprimer les indicateurs des threads](../debugger/how-to-flag-and-unflag-threads.md)  
   
 - Thread en cours Dans cet article sans étiquette, une flèche jaune indique que le thread actuel. Un contour de flèche indique le contexte actuel du débogueur pour un thread non actuel.
   
-- ID Affiche le numéro d’identification pour chaque thread.  
+- **ID** Affiche le numéro d’identification pour chaque thread.  
   
 - ID managé Affiche les numéros d’identification managés des threads managés.  
   
@@ -50,7 +48,7 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
   
 - **name**). Identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.  
   
-- **Emplacement** Indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.  
+- **location** : Indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.  
   
 - Priorité Une colonne avancée (masquée par défaut) affiche la priorité ou précédence que le système a assignée à chaque thread.  
   

@@ -1,8 +1,6 @@
 ---
 title: IDiaTable::get__NewEnum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576d2c86ae648653da64e8990edd3e909192423
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 321b85c8fe058de762820cee470ef995207c426e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952941"
 ---
 # <a name="idiatablegetnewenum"></a>IDiaTable::get__NewEnum
 Récupère le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.  
@@ -27,7 +25,7 @@ Récupère le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versio
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get__NewEnum (   
+HRESULT get__NewEnum (   
    IUnknown** pRetVal  
 );  
 ```  

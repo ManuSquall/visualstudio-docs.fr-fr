@@ -1,8 +1,6 @@
 ---
 title: Paramètres du projet du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865872"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
 Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .  
@@ -50,10 +48,10 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
  Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Indique comment le débogueur utilise des fichiers de symboles et des fichiers sources pour afficher des informations pour le débogage.  
   
- [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
+ [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
  Décrit comment déboguer des applications UWP. (Centre de développement Windows)  
   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)  

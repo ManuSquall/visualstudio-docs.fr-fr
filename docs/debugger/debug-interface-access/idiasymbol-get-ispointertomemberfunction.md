@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isPointerToMemberFunction | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isPointerToMemberFunction | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d241fdc15af586dc218e9667e02c45dafda0e356
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7c9e712c0b48fc0ae0815dde66b4ae21970ee946
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818807"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 Spécifie si ce symbole est un pointeur vers une fonction membre.  

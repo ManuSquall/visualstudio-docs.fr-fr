@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_targetSection | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145ef7ea1391e21ba1f7d472d616fd9e6d2ee01b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 36adc59d9b3dbeb9484433acea7301c55b9e7195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834540"
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
 Récupère la section de l’adresse d’une cible de conversion de code.  
@@ -27,7 +25,7 @@ Récupère la section de l’adresse d’une cible de conversion de code.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_targetSection (   
+HRESULT get_targetSection (   
    DWORD* pRetVal  
 );  
 ```  

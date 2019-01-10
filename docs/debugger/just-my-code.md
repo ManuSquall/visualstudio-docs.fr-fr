@@ -1,8 +1,6 @@
 ---
 title: Déboguer du code utilisateur avec uniquement mon Code | Microsoft Docs
-ms.custom: ''
 ms.date: 10/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952045"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec uniquement mon Code 
 
@@ -140,8 +138,8 @@ Un *.natstepfilter* fichier est un fichier XML avec la syntaxe suivante :
 |Élément|Description|  
 |-------------|-----------------|  
 |`Function`|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|  
-|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|  
-|`Module`|Facultative. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
+|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Par exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|  
+|`Module`|Optionnel. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
 |`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`  -Indique au débogueur de survol de la fonction.<br /> `StepInto`  -Indique au débogueur de pas à pas détaillé de la fonction de la substitution de n’importe quel autre `NoStepInto` pour la fonction de mise en correspondance.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de pile d’appel C++  
@@ -178,7 +176,7 @@ Un *.natjmc* fichier est un fichier XML avec la syntaxe suivante :
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Chemin d’accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro ou plusieurs caractères). Par exemple :<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> Indique au débogueur de traiter tous les modules dans *\3rdParty\UtilLibs* sur n’importe quel lecteur comme du code externe.|  
-|`Company`|Facultative. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
+|`Company`|Optionnel. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
   
  **Attributs des éléments File**  
   
@@ -191,7 +189,7 @@ Un *.natjmc* fichier est un fichier XML avec la syntaxe suivante :
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Le nom complet de la fonction à traiter comme du code externe.|  
-|`Module`|Facultative. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
+|`Module`|Optionnel. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  

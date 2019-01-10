@@ -1,8 +1,6 @@
 ---
 title: Désactiver le débogueur juste-à-temps | Microsoft Docs
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959785"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Désactiver le débogueur juste-à-temps 
 
@@ -46,4 +44,3 @@ Si vous n’avez pas installé Visual Studio, vous pouvez empêcher le débogage
 Une fois que vous désactivez le débogage juste-à-temps, l’application peut être en mesure de gérer l’erreur et s’exécuter normalement. 
 
 Si l’application a toujours une erreur non gérée, vous pouvez voir un message d’erreur ou l’application peut se bloquer ou de blocage. L’application ne s’exécute normalement jusqu'à ce que l’erreur est corrigée. Vous pouvez tenter de contacter le propriétaire de l’application et demandez-lui de résoudre le problème.
-

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454bb625f51f336b4b127848aad7c57a73f0456
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845497"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Collecte de données de temporisation détaillées pour des services en utilisant la méthode d'instrumentation à partir de la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler un service .NET**|-   [Comment : instrumenter un service .NET et collecter des données chronologiques détaillées](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Profiler un service .NET**|-   [Guide pratique pour instrumenter un service .NET et collecter des données chronologiques détaillées](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Ajouter des interactions de couche**|-   [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Profiler un service C/C++**|-   [Comment : instrumenter un service natif et collecter des données chronologiques détaillées](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Profiler un service C/C++**|-   [Guide pratique pour instrumenter un service natif et collecter des données chronologiques détaillées](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes  
   
@@ -49,7 +49,7 @@ Cette section décrit les procédures et les options de collecte des données de
 |Tâche|Contenu associé|  
 |----------|---------------------|  
 |**Profiler des applications autonomes (clientes)**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Profiler des applications web ASP.NET**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profiler des applications web ASP.NET**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analyse des vues et des rapports de données d’instrumentation  
  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)
