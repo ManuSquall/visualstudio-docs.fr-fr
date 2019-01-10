@@ -1,9 +1,7 @@
 ---
 title: Déboguer une application multithread
 description: Déboguer à l’aide de la fenêtre Threads et la barre d’outils emplacement de débogage dans Visual Studio
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893705"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Procédure pas à pas : Débogage d’une application multithread à l’aide de la fenêtre Threads
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Procédure pas à pas : Déboguer une application multithread à l’aide de la fenêtre Threads
 
 Plusieurs éléments d’interface utilisateur Visual Studio vous aider à déboguer des applications multithreads. Cet article présente les fonctionnalités de débogage multithreads dans la fenêtre d’éditeur de code, **emplacement de débogage** barre d’outils, et **Threads** fenêtre. Pour plus d’informations sur les autres outils pour déboguer les applications multithreads, consultez [commencer le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md). 
   
@@ -99,7 +97,7 @@ Indicateur et supprimer des threads à partir de l’éditeur de code source ou 
 
 1. Ouvrez le **emplacement de débogage** la barre d’outils en sélectionnant **vue** > **barres d’outils** > **emplacement de débogage**. Vous pouvez également avec le bouton droit dans la zone de barre d’outils et sélectionnez **emplacement de débogage**. 
    
-1. Le **emplacement de débogage** barre d’outils a trois champs : **processus**, **Thread**, et **Frame de pile**. Liste déroulante la **Thread** liste, puis notez le nombre de threads. Dans le **Thread** liste, le thread en cours d’exécution est marqué par un **>** symbole. 
+1. Le **emplacement de débogage** barre d’outils a trois champs : **Processus**, **Thread**, et **Frame de pile**. Liste déroulante la **Thread** liste, puis notez le nombre de threads. Dans le **Thread** liste, le thread en cours d’exécution est marqué par un **>** symbole. 
    
 1. Dans la fenêtre de code source, placez le curseur sur une icône de marqueur de thread dans la marge et sélectionnez l’icône d’indicateur (ou une des icônes d’indicateur vide) dans le DataTip. L’icône d’indicateur devient rouge. 
    

@@ -1,8 +1,6 @@
 ---
 title: Déboguer à l’aide du débogueur juste à temps | Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831548"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste à temps dans Visual Studio
 
@@ -107,7 +105,7 @@ Pour activer le débogage au lieu de la gestion des erreurs Windows Form standar
 
 Pour cet exemple, vous allez effectuer un C# application console dans Visual Studio lève une [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Dans Visual Studio, créez un C# application console (**fichier** > **New** > **projet** > **Visual C#**   >  **Application console**) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : Créer une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+1. Dans Visual Studio, créez un C# application console (**fichier** > **New** > **projet** > **Visual C#**   >  **Application console**) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : Créer une application simple](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. Lorsque le projet s’ouvre dans Visual Studio, ouvrez le *Program.cs* fichier. Remplacez la méthode Main() par le code suivant, qui imprime une ligne dans la console et puis lève une exception NullReferenceException :
    
@@ -198,4 +196,4 @@ Vous pouvez voir les messages d’erreur suivant juste-à-temps au cours de déb
 - [Sécurité du débogueur](../debugger/debugger-security.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Options, débogage, juste-à-temps boîte de dialogue](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Avertissement de sécurité Attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData::Skip | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c2443aad4433e452bd056d3af25fd6a1710cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a13ebccdb177679e331e30c5c5dff916cacd87bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859381"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 Ignore un nombre spécifié d’enregistrements dans une séquence énumérée.  
@@ -27,7 +25,7 @@ Ignore un nombre spécifié d’enregistrements dans une séquence énumérée.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931175"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identification et personnalisation des raccourcis clavier dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
      Par exemple, choisissez **Global** si vous voulez que le raccourci fonctionne dans tous les contextes. Vous pouvez utiliser n'importe quel raccourci qui n'est pas mappé (comme Global) dans un autre éditeur. Sinon, l'éditeur substitue le raccourci.
 
     > [!NOTE]
-    >  Vous ne pouvez pas affecter les clés suivantes dans le cadre d’un raccourci clavier dans **Global**: Impression écran/syst, arrêt défil, Pause/ATTN, onglet, VERR. MAJ, Insert, accueil, fin, Pg préc, Pg suiv, la touche du logo Windows, la clé d’Application, une des touches de direction, entrée ; Verr. NUM, supprimer ou effacer sur le pavé numérique ; ou Ctrl + Alt + Suppr.
+    >  Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impression écran/syst, arrêt défil, Pause/ATTN, onglet, VERR. MAJ, Insert, accueil, fin, Pg préc, Pg suiv, la touche du logo Windows, la clé d’Application, une des touches de direction, entrée ; Verr. NUM, supprimer ou effacer sur le pavé numérique ; ou Ctrl + Alt + Suppr.
 
 6.  Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 

@@ -1,8 +1,6 @@
 ---
 title: Opérateur de contexte dans le débogueur (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e520b40e5a2f4bf6bb7c3a7b6c2ab50930773578
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9222a36bd1e03a1f213a0d3ea0e86e269e912d12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889577"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Opérateur de contexte dans le débogueur de Visual Studio (C++)
 Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplacement d’un point d’arrêt, un nom de variable ou une expression. L’opérateur de contexte est utile pour spécifier un nom issu d’une portée externe qui serait sinon masqué par un nom local.  

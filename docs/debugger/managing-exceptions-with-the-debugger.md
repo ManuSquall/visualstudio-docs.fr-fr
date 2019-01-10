@@ -2,7 +2,6 @@
 title: Gérer les exceptions avec le débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -34,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561523"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094810"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
@@ -217,7 +216,7 @@ Pour ajouter des exceptions conditionnelles :
 
    ![Conditions supplémentaires pour une exception](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Pour chaque ligne de la condition, tapez le nom du module et modifier la liste d’opérateurs de comparaison à **est égal à** ou **n’est pas égal**. Vous pouvez spécifier des caractères génériques (**\\***) dans le nom pour spécifier plusieurs modules.
+3. Pour chaque ligne de la condition, tapez le nom du module et modifier la liste d’opérateurs de comparaison à **est égal à** ou **n’est pas égal**. Vous pouvez spécifier des caractères génériques (**\\\***) dans le nom pour spécifier plusieurs modules.
 
 4. Si vous avez besoin supprimer une condition, choisissez le **X** à la fin de la ligne de la condition.
 

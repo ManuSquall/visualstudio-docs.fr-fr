@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_compilerGenerated | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 207a92e8e510b01b817e6633830b0478b325254b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fce5344d4997a50443bb1c0ec7a3b6166c9de8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919756"
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 Récupère un indicateur qui indique si le symbole a été généré par le compilateur.  
@@ -27,7 +25,7 @@ Récupère un indicateur qui indique si le symbole a été généré par le comp
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_compilerGenerated (   
+HRESULT get_compilerGenerated (   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,11 +40,11 @@ HRESULT get_compilerGenerated (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

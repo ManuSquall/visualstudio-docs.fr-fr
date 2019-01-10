@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf6be53925ed6f9cd613f7e7a19cca9f00cace
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956570"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé d’un raccourci qui correspond à un `parallel_for_each` appeler.  
+Indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un `parallel_for_each` appeler.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,7 +29,7 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>Paramètres  
  `pFlag`  
- [out] Un pointeur vers un `BOOL` qui indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé d’un raccourci qui correspond à un `parallel_for_each` appeler.  
+ [out] Un pointeur vers un `BOOL` qui indique si le symbole correspond à un symbole de fonction de niveau supérieur pour un nuanceur compilé pour un accélérateur qui correspond à un `parallel_for_each` appeler.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

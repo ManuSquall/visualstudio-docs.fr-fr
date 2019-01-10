@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c1d8310cb2585dfd2041ce25fd4301b557521911
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841341"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +108,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ##  <a name="SlowStart"></a> L’émulateur démarre lentement, son démarrage échoue en raison d’un dépassement de délai d’attente ou d’un échec de déploiement d’application
  Dans certaines conditions, le démarrage de l'émulateur prend plusieurs minutes ou échoue à cause d'un dépassement de délai d'attente. Quand le démarrage de l'émulateur échoue, le message suivant s'affiche : `App deployment failed. Please try again`. Les conditions suivantes peuvent provoquer cette erreur.
 
--   Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n'est pas prise en charge.
+-   Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n’est pas prise en charge.
 
 -   Disque dur défaillant. Exécutez le programme chkdsk.
 
@@ -274,7 +273,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   Redémarrez l'émulateur. Il doit maintenant être connecté à ADB et aux outils Android associés.
 
 ##  <a name="XamarinPlayer"></a> L’émulateur se bloque, car il n’a pas pu configurer le port UDP
- Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus ou si vous voyez ce message d’erreur « l’émulateur est impossible de se connecter au système d’exploitation du périphérique : Impossible de définir le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
+ Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus ou si vous voyez ce message d’erreur « l’émulateur est impossible de se connecter au système d’exploitation du périphérique : Impossible de définir le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
 
 1.  Désinstallez Xamarin Player.
 

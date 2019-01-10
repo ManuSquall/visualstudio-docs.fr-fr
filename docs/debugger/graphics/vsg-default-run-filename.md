@@ -1,8 +1,6 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME | Documents Microsoft
-ms.custom: ''
+title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 303bce554ff6345a37719a8d2f529f3c1ffe02e2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a05acfd07e8b67bf500864f00ead4d78f2da22ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922551"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 Définit le nom de fichier par défaut du fichier journal graphique.  
@@ -28,10 +26,10 @@ Définit le nom de fichier par défaut du fichier journal graphique.
   
 #### <a name="parameters"></a>Paramètres  
  `filename`  
- Le nom de fichier attribué par défaut pour le fichier journal de graphisme lorsque les informations graphiques sont capturées par programme.  
+ Le nom de fichier donné par défaut pour le fichier journal de graphisme lorsque les informations graphiques sont capturées par programmation.  
   
 ## <a name="value"></a>Value  
- Fichier journal d’une chaîne littérale qui représente le nom de fichier de graphiques. Par défaut, L"default.vsglog ».  
+ Une chaîne littérale qui représente le nom de fichier des graphiques de fichier journal. Par défaut, L"default.vsglog ».  
   
 ```C++  
 #define VSG_DEFAULT_FILENAME L"default.vsglog"  

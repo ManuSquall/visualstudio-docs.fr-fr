@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isDataAligned | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2d43129eadb0b0779086fc5dba0860c735cac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c22796ab2d54d2b0d21920372aceccc9bdce2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933727"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 Récupère un indicateur qui spécifie si le type défini par l’utilisateur (UDT) a été aligné sur certaines limites de mémoire spécifique.  
@@ -45,11 +43,11 @@ HRESULT get_isDataAligned(
 ## <a name="remarks"></a>Notes  
  Cette propriété est généralement définie lorsque le fichier exécutable est compilé avec l’alignement des données non défini par défaut. Par exemple, le compilateur Microsoft C++ peut modifier l’alignement des données avec l’option de ligne de commande, /Zp<em>#</em>, où *#* est une valeur d’octet.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

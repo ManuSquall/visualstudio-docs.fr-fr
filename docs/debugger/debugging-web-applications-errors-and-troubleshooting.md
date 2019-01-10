@@ -2,7 +2,6 @@
 title: 'Débogage des applications web : erreurs et dépannage'
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827415"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.  
@@ -58,4 +57,4 @@ Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'ap
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)
+ [Débogage d’applications et de scripts web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

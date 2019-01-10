@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_age | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d523a4dbed5f80fa67085537123e3d5be6fad361
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918649"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 Récupère la valeur de durée de vie d’un fichier .pdb.  
@@ -27,7 +25,7 @@ Récupère la valeur de durée de vie d’un fichier .pdb.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_age (   
+HRESULT get_age (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,11 +43,11 @@ HRESULT get_age (
 ## <a name="remarks"></a>Notes  
  La durée de vie ne correspond pas nécessairement à toute valeur d’heure connus ; Il est généralement utilisé pour déterminer si un fichier .pdb n’est pas synchronisé avec un fichier .exe correspondant.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

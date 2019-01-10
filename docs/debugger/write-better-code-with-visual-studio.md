@@ -2,10 +2,9 @@
 title: Correction des bogues par amélioration du code C#
 description: Comprendre comment mieux écrire votre code avec moins de bogues
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967574"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corriger les bogues en écrivant mieux C# code à l’aide de Visual Studio
 
-Débogage du code peut prendre du temps--et parfois frustrante--la tâche. De temps pour apprendre à déboguer efficacement, mais un puissant IDE comme Visual Studio votre travail beaucoup plus facile. Un IDE peut aider à vous déboguez votre code plus rapidement et pas seulement ça, mais il peut également aider à écrire de code de meilleure qualité avec moins de bogues. Notre objectif dans cet article est de vous donner une vue holistique du processus de débogage, afin de savoir quand utiliser l’Analyseur de code, ainsi que l’utilisation du débogueur et quand utiliser d’autres outils.  
+Débogage du code peut prendre du temps--et parfois frustrante--la tâche. De temps pour apprendre à déboguer efficacement, mais un puissant IDE comme Visual Studio votre travail beaucoup plus facile. Un IDE peut aider à vous déboguez votre code plus rapidement et pas seulement ça, mais il peut également aider à écrire de code de meilleure qualité avec moins de bogues. Notre objectif dans cet article est de vous donner une vue holistique du processus de débogage, afin de savoir quand utiliser l’Analyseur de code, ainsi que l’utilisation du débogueur et quand utiliser d’autres outils.
 
 Dans cet article, nous parler en tirant parti de l’IDE pour améliorer la productivité de vos sessions de débogage. Nous abordons le thème sur plusieurs tâches, telles que :
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

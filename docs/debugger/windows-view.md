@@ -1,8 +1,6 @@
 ---
-title: Vue fenêtres | Documents Microsoft
-ms.custom: ''
+title: Affichage de Windows | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
@@ -14,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940412"
 ---
 # <a name="windows-view"></a>Vue Fenêtres
-Lorsque vous ouvrez Spy ++, Windows affiche une arborescence de toutes les fenêtres et les contrôles dans le système. Le nom de handle et de la classe de fenêtre sont affichés. La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriées en fonction de la hiérarchie de fenêtre standard. Fenêtres sœurs s’affichent dans les listes extensible mis en retrait sous leurs parents.  
+Lorsque vous ouvrez Spy ++, Windows affiche une arborescence de toutes les fenêtres et les contrôles dans le système. Le nom de handle et de la classe de fenêtre sont affichés. La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriés en fonction de la hiérarchie de fenêtre standard. Fenêtres sœurs s’affichent dans les listes extensible mis en retrait sous leurs parents.  
   
- La figure ci-dessous montre une vue fenêtres Spy ++ classique avec le nœud supérieur est développé.  
+ La figure ci-dessous montre une vue de Spy ++ Windows classique avec le nœud supérieur est développé.  
   
- ![Spy&#43; &#43; affichage Windows](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
+ ![Spy&#43; &#43; Windows vue](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
 Vue Fenêtres Spy++  
   
- La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriées selon la hiérarchie standard des fenêtres, les fenêtres sœurs classés par ordre de plan. Vous pouvez développer ou réduire tout nœud parent de l’arborescence en cliquant sur le + ou - le symbole en regard du nœud.  
+ La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriés en fonction de la hiérarchie de la fenêtre standard, avec les fenêtres sœurs classés par ordre de plan. Vous pouvez développer ou réduire un nœud parent de l’arborescence en cliquant sur le + ou - le symbole en regard du nœud.  
   
- Lors de la vue fenêtres a le focus, vous pouvez utiliser l’outil de recherche dans les [boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) pour afficher des informations à partir de n’importe quelle fenêtre ouverte sur votre système.  
+ Lorsque la vue de Windows a le focus, vous pouvez utiliser l’outil de recherche dans les [boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) pour afficher des informations à partir de n’importe quelle fenêtre ouverte sur votre système.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour utiliser l’outil Recherche](../debugger/how-to-use-the-finder-tool.md)  
+ [Guide pratique pour utiliser l’outil de recherche](../debugger/how-to-use-the-finder-tool.md)  
  Montre comment cet outil analyse windows pour les propriétés ou les messages.  
   
  [Guide pratique pour rechercher une fenêtre dans la vue Fenêtres](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Explique comment rechercher une fenêtre spécifique dans la vue fenêtres.  
+ Explique comment rechercher une fenêtre spécifique dans la vue de Windows.  
   
- [Comment : afficher les propriétés de la fenêtre](../debugger/how-to-display-window-properties.md) m  
+ [Guide pratique pour Afficher les propriétés de la fenêtre](../debugger/how-to-display-window-properties.md) m  
  Procédures pour ouvrir la boîte de dialogue Propriétés de la fenêtre.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -48,16 +46,16 @@ Vue Fenêtres Spy++
  Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
  [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
+ Présente l’outil Spy ++ et explique comment il peut être utilisé.  
   
  [Rechercher une fenêtre, boîte de dialogue](../debugger/find-window-dialog-box.md)  
  Permet d’afficher les propriétés ou les messages à partir d’une fenêtre spécifique.  
   
  [Boîte de dialogue Recherche d’une fenêtre](../debugger/window-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’une fenêtre spécifique dans la vue fenêtres.  
+ Utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue de Windows.  
   
  [Boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue fenêtres.  
+ Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue de Windows.  
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

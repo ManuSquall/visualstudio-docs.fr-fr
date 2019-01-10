@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9a84a4dbbeee9c8d4738406023cdb86df09504e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 89ca6cfb99fad4364c8e6a1e180821d5d547b7ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925795"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecte de données de minutage détaillées pour une application autonome en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
-|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Ajouter des interactions de couche**|-   [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes  
@@ -51,7 +51,7 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profiler des applications ASP.NET**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profiler des applications ASP.NET**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Profilage de services**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analyse des vues et des rapports de données d’instrumentation  

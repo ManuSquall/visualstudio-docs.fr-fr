@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_typeIds | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bacd3547c1aadfc99b66437acbd73599ec2191f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d038c0be6f023206c6a96ec59389ec4063d975fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880086"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 Récupère un tableau de valeurs d’identificateur de type spécifique au compilateur pour ce symbole.  
@@ -27,7 +25,7 @@ Récupère un tableau de valeurs d’identificateur de type spécifique au compi
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_typeIds (   
+HRESULT get_typeIds (   
    DWORD  cTypeIds,  
    DWORD* pcTypeIds,  
    DWORD  typeIds[]  

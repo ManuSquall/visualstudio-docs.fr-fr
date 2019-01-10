@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_subTypeId | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_subTypeId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8fc4036ac0c5f148ca067a00b635ae7023232ed
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 858c4a5040b1823392d8a572a008f629c64745d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919305"
 ---
 # <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
 Récupère l’ID de type sub.  

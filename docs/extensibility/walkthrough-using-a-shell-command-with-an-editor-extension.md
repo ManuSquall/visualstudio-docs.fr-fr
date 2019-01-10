@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb6ce04e32f30411e8e1a60757774a4f2b36807
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b62ffce08ecf5b6397bdda0b1f9fb6c1b83d7b63
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941542"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154335"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : Utiliser une invite de commandes avec une extension de l’éditeur
 À partir d’un VSPackage, vous pouvez ajouter des fonctionnalités telles que les commandes de menu à l’éditeur. Cette procédure pas à pas montre comment ajouter un ornement à un affichage de texte dans l’éditeur en appelant une commande de menu.  
@@ -101,7 +101,7 @@ ms.locfileid: "53941542"
   
 3.  Ajoutez le code suivant `using` instruction.  
   
-    ```vb  
+    ```csharp
     using Microsoft.VisualStudio.Text;  
     ```  
   
@@ -218,7 +218,7 @@ ms.locfileid: "53941542"
   
         Grid.SetColumn(rect, 0);  
         Grid.SetRow(rect, 0);  
-         Grid.SetRowSpan(rect, 2);  
+        Grid.SetRowSpan(rect, 2);  
         Grid.SetColumnSpan(rect, 3);  
         Grid.SetRow(tb1, 0);  
         Grid.SetColumn(tb1, 1);  
@@ -229,7 +229,7 @@ ms.locfileid: "53941542"
         this.commentGrid.Children.Add(tb2);  
   
         Canvas.SetLeft(this.commentGrid, Math.Max(viewRightEdge - this.commentGrid.Width - 20.0, textRightEdge + 20.0));  
-         Canvas.SetTop(this.commentGrid, textGeometry.GetRenderBounds(solidPen).Top);  
+        Canvas.SetTop(this.commentGrid, textGeometry.GetRenderBounds(solidPen).Top);  
   
         this.Children.Add(this.commentGrid);  
     }  
@@ -386,27 +386,6 @@ ms.locfileid: "53941542"
     ```  
   
 8.  Ajouter le `OnBufferChanged` Gestionnaire d’événements.  
-  
-    ```csharp  
-    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
-    {  
-        //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
-        IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
-  
-        foreach (CommentAdornment comment in this.comments)  
-        {  
-            Span span = comment.Span.GetSpan(e.After);  
-            //if a comment does not span at least one character, its text was deleted.   
-            if (span.Length != 0)  
-            {  
-                keptComments.Add(comment);  
-            }  
-        }  
-  
-        this.comments = keptComments;  
-    }  
-  
-    ```  
   
      [!code-csharp[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]
      [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]  
@@ -642,10 +621,10 @@ ms.locfileid: "53941542"
     using CommentAdornmentTest;  
     ```  
   
-3.  Supprimer le `ShowMessageBox()` méthode et ajoutez le Gestionnaire de commande suivant.  
+3.  Supprimer le `Execute()` méthode et ajoutez le Gestionnaire de commande suivant.  
   
     ```csharp  
-    private void AddAdornmentHandler(object sender, EventArgs e)  
+    private async void AddAdornmentHandler(object sender, EventArgs e)  
     {  
     }  
     ```  
@@ -653,9 +632,9 @@ ms.locfileid: "53941542"
 4.  Ajoutez du code pour obtenir la vue active. Vous devez obtenir le `SVsTextManager` du shell Visual Studio pour obtenir de l’actif `IVsTextView`.  
   
     ```csharp  
-    private void AddAdornmentHandler(object sender, EventArgs e)  
+    private async void AddAdornmentHandler(object sender, EventArgs e)  
     {  
-        IVsTextManager txtMgr = (IVsTextManager)ServiceProvider.GetService(typeof(SVsTextManager));  
+        IVsTextManager txtMgr = (IVsTextManager) await ServiceProvider.GetServiceAsync(typeof(SVsTextManager));  
         IVsTextView vTextView = null;  
         int mustHaveFocus = 1;  
         txtMgr.GetActiveView(mustHaveFocus, null, out vTextView);  
@@ -665,9 +644,9 @@ ms.locfileid: "53941542"
 5.  Si cette vue de texte est une instance d’une vue de texte de l’éditeur, vous pouvez effectuer un cast en le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interface, puis d’obtenir le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> et elle est associée <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Utilisez le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> pour appeler le `Connector.Execute()` (méthode), qui obtient le fournisseur d’ornement de commentaire et ajoute l’ornement. Le Gestionnaire de commandes doit maintenant ressembler à ce code :  
   
     ```csharp  
-    private void AddAdornmentHandler(object sender, EventArgs e)  
+    private async void AddAdornmentHandler(object sender, EventArgs e)  
     {  
-        IVsTextManager txtMgr = (IVsTextManager)ServiceProvider.GetService(typeof(SVsTextManager));  
+        IVsTextManager txtMgr = (IVsTextManager) await ServiceProvider.GetServiceAsync(typeof(SVsTextManager));  
         IVsTextView vTextView = null;  
         int mustHaveFocus = 1;  
         txtMgr.GetActiveView(mustHaveFocus, null, out vTextView);  
@@ -675,7 +654,7 @@ ms.locfileid: "53941542"
          if (userData == null)  
         {  
             Console.WriteLine("No text view is currently open");  
-                            return;  
+            return;  
         }  
         IWpfTextViewHost viewHost;  
         object holder;  
@@ -689,24 +668,15 @@ ms.locfileid: "53941542"
 6.  Définissez la méthode de AddAdornmentHandler comme gestionnaire pour la commande AddAdornment dans le constructeur AddAdornment.  
   
     ```csharp  
-    private AddAdornment(Package package)  
-    {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-        OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(MenuGroup, CommandId);  
-            EventHandler eventHandler = this.AddAdornmentHandler;  
-            MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
-    }  
+    private AddAdornment(AsyncPackage package, OleMenuCommandService commandService)
+    {
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        var menuCommandID = new CommandID(CommandSet, CommandId);
+        var menuItem = new MenuCommand(this.AddAdornmentHandler, menuCommandID);
+        commandService.AddCommand(menuItem);
+    } 
     ```  
   
 ## <a name="build-and-test-the-code"></a>Générer et tester le code  

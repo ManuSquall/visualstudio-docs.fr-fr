@@ -1,5 +1,5 @@
 ---
-title: 'CA2235 : Marquez tous les champs non sérialisables'
+title: 'CA2235 : Marquez tous les champs non sérialisés'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986568"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154148"
 ---
-# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235 : Marquez tous les champs non sérialisables
+# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235 : Marquez tous les champs non sérialisés
 
 |||
 |-|-|
@@ -38,7 +38,9 @@ ms.locfileid: "53986568"
  Un champ d'instance d'un type non sérialisable est déclaré dans un type sérialisable.
 
 ## <a name="rule-description"></a>Description de la règle
- Un type sérialisable est celui qui est marqué avec le <xref:System.SerializableAttribute?displayProperty=fullName> attribut. Lorsque le type est sérialisé, une <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> exception est levée si un type contient un champ d’instance d’un type qui n’est pas sérialisable.
+ Un type sérialisable est celui qui est marqué avec le <xref:System.SerializableAttribute?displayProperty=fullName> attribut. Lorsque le type est sérialisé, une <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> exception est levée si le type contient un champ d’instance d’un type qui n’est pas sérialisable.
+ 
+ Une exception est lorsque le type utilise la sérialisation personnalisée par le biais de la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface. Types implémentant cette interface fournissent leur propre logique de sérialisation, et donc CA2235 ne déclenchent pas pour les champs d’instance non sérialisable de ces types.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, appliquez le <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut au champ qui n’est pas sérialisable.

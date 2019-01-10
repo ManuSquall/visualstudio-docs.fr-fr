@@ -1,8 +1,6 @@
 ---
 title: JIT optimisation et débogage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8cb56b35092bb958ebf2e6947006acb3d0d240
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841263"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimisation JIT et débogage
 **Fonctionnement des optimisations dans .NET :** Si vous essayez de déboguer du code, il est plus facile lorsque que le code est **pas** optimisé. Il s’agit, car lors de l’optimisation de code, le compilateur et le runtime apporter des modifications au code UC émis afin qu’il s’exécute plus rapidement, mais a un mappage direct de moins de code source d’origine. Cela signifie que les débogueurs sont souvent impossible de vous indiquer la valeur des variables locales et pas à pas détaillé du code et des points d’arrêt peuvent ne pas fonctionneront comme prévu.

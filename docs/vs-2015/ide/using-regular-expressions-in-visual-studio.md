@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959584"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Avant Visual Studio 2012, Visual Studio utilisait la syntaxe d'expression régu
 > Dans les systèmes d'exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d'une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l'éditeur et sont transmis au service d'expressions régulières .NET.
 
 > [!TIP]
-> Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` recherche quatre correspondances dans la chaîne suivante : **1 a 2 b 3c 4D**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.
+> Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` recherche quatre correspondances dans la chaîne suivante : 1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Exemples d’expressions régulières
 

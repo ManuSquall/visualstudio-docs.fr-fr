@@ -1,8 +1,6 @@
 ---
 title: IDiaSourceFile::get_uniqueId | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c2996513f3e6464d8f94522c2b427213882f6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3eef4e6f435b60f024067e13c884c7742df0ffa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879473"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 Récupère une valeur de clé de nombre entier simple qui est unique pour cette image.  
@@ -27,7 +25,7 @@ Récupère une valeur de clé de nombre entier simple qui est unique pour cette 
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_uniqueId (   
+HRESULT get_uniqueId (   
    DWORD* pRetVal  
 );  
 ```  

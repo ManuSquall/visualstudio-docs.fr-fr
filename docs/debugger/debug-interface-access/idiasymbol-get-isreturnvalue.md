@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isReturnValue | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isReturnValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfd99af3ce33390d3ad27fcc1d85ae318c37bc2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2fb6ac1cd43212a8e620004dbe9935befc2e8b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963603"
 ---
 # <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
 Spécifie si la variable comporte une valeur de retour.  

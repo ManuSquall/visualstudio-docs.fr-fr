@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_lowerBoundId | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe7109957167b9f2073660e035298bcc7613feb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d0d47fad6015a39550eca8e6ea046f7ec9c6417f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833900"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
 Récupère l’identificateur de symbole de la limite inférieure d’une dimension de tableau FORTRAN.  
@@ -27,7 +25,7 @@ Récupère l’identificateur de symbole de la limite inférieure d’une dimens
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_lowerBoundId (   
+HRESULT get_lowerBoundId (   
    DWORD* pRetVal  
 );  
 ```  

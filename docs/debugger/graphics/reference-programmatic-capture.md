@@ -1,8 +1,6 @@
 ---
 title: Référence (Capture par programmation) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0046268ff073949db3e3fc0c0753c9008b262c6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 826b399aa0ad0b5a45bc6fd80eb73b555cb3f01c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836345"
 ---
 # <a name="reference-programmatic-capture"></a>Référence (capture par programmation)
 Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionnalités de capture par l’intermédiaire de l’API de capture par programme. Vous pouvez utiliser cette API pour activer/désactiver et ajouter des messages au HUD (Head-Up Display) de diagnostics graphiques, initialiser et créer des fichiers journaux graphiques, et capturer des informations graphiques.  
@@ -24,7 +22,7 @@ Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionn
 
 ### <a name="classes"></a>Classes  
 
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[VsgDbg Class](vsgdbg-class.md)|Représente l’interface par l’intermédiaire de laquelle le composant dans l’application Graphics Diagnostics est contrôlé par programme.|  
 
@@ -42,4 +40,3 @@ Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionn
 | - | - |
 | [Capturing Graphics Information](capturing-graphics-information.md) | Vous pouvez capturer les informations graphiques de votre application basée sur DirectX de manière à utiliser les outils Graphics Diagnostics [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour diagnostiquer les problèmes de rendu. |
 | [Vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md) | Montre comment Graphics Diagnostics peut vous aider à déboguer les erreurs de rendu dans les applications et jeux DirectX. |
-
