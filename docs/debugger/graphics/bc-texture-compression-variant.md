@@ -1,8 +1,6 @@
 ---
 title: Variante de Compression de Texture BC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8149c6d544d6967b454c7c307e01bdfa3f3afbfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986425"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 Permet la compression de blocs sur les textures dont le format de pixel est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.  
@@ -57,7 +55,7 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
  Si le format de votre texture ne figure pas dans la liste, la texture n'est pas modifiée.  
   
 ## <a name="restrictions-and-limitations"></a>Restrictions et limitations  
- Parfois, les textures créées avec une variation des formats d'image B8G8R8A8 ou R8G8B8A8 n'utilisent pas réellement le canal alpha, mais la variante n'a aucun moyen de savoir s'il est utilisé ou non. Pour assurer des résultats corrects dans le cas où le canal alpha est utilisé, la variante encode toujours ces formats au format BC3, qui est moins efficace. Vous pouvez aider l'analyse des frames graphiques à mieux identifier le potentiel de rendu de votre application avec cette variante en utilisant une variation du format d'image B8G8R8X8 quand vous n'utilisez pas le canal alpha. La variante pourra ainsi utiliser le format BC1, qui est plus efficace.  
+ Parfois, les textures créées avec une variation des formats d'image B8G8R8A8 ou R8G8B8A8 n'utilisent pas réellement le canal alpha, mais la variante n'a aucun moyen de savoir s'il est utilisé ou non. Pour assurer des résultats corrects dans le cas où le canal alpha est utilisé, la variante encode toujours ces formats au format BC3, qui est moins efficace. Vous pouvez aider l’analyse des frames graphiques à mieux identifier le potentiel de rendu de votre application avec cette variante en utilisant une variation du format d’image B8G8R8X8 quand vous n’utilisez pas le canal alpha. La variante pourra ainsi utiliser le format BC1, qui est plus efficace.  
   
 ## <a name="example"></a>Exemple  
  Cette variante compresse les blocs des textures au moment de l'exécution, avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures non compressées consomment plus d'espace disque et cette étape supplémentaire peut accroître sensiblement les temps de chargement dans votre application. De plus, la compression de blocs nécessite des ressources de calcul importantes pour l'encodage. Nous vous recommandons plutôt de compresser vos textures hors connexion en utilisant un éditeur ou un processeur d'images qui fait partie de votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges de votre application au moment de l’exécution et autorisent un temps de traitement supérieur pour une qualité d’image optimale.  
