@@ -1,8 +1,6 @@
 ---
 title: Compteurs UC et Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912634"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -113,7 +111,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
 4. Dans la liste **Catégorie de compteurs**, sélectionnez un groupe de compteurs. Le compteur Windows du groupe s’affiche dans la zone de liste.
 
-     **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.
+     **Remarque :** cliquez sur **Annuler** pour revenir à la configuration précédente de la collecte de compteur.
 
 ### <a name="command-line"></a>Ligne de commande
 
@@ -127,13 +125,11 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 
      **\<Répertoire Visual Studio Performance Tools>\VSPerfCmd /querycounters**
 
-     où *\<Répertoire Visual Studio Performance Tools>* correspond au chemin du répertoire Performance Tools de votre installation de Visual Studio, généralement
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     où *\<Répertoire Visual Studio Performance Tools>* correspond au chemin d’accès du répertoire Performance Tools de votre installation de Visual Studio. Pour obtenir le chemin d’accès des outils d’analyse des performances, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 [Vues d’ensemble](../profiling/overviews-performance-tools.md)  
 [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)  
-[Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)  
+[Guide pratique pour collecter les données des compteurs de processeur](../profiling/how-to-collect-cpu-counter-data.md)  
 [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

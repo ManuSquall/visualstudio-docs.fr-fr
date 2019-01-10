@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en ligne de commande | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae6711ae49de037fd04039f1e07b09264fdce1b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42e6a7d0ddd00fefa071f18ef4d7ee0d508a06da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857839"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application autonome (cliente) .NET Framework et collecter des données de mémoire.  
 
  Une session de profilage est constituée de trois parties :  
@@ -29,7 +27,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 -   La fin de la session de profilage  
 
 > [!NOTE]
->  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 ## <a name="start-the-application-with-the-profiler"></a>Démarrer l’application avec le profileur  
  Pour démarrer une application cible à l’aide du profileur, utilisez les options **/start** et **/launch** de VSPerfCmd.exe pour initialiser le profileur et démarrer l’application. Vous pouvez spécifier **/start** et **/launch** et leurs options respectives sur une même ligne de commande.  

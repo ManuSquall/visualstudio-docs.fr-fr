@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar | Documents Microsoft
+title: IActiveScriptAuthor::IsCommitChar | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645559"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096172"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
 Retourne une valeur qui indique si un caractère donné doit déclencher une validation de saisie semi-automatique d’instruction par l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -47,11 +47,11 @@ HRESULT IsCommitChar(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

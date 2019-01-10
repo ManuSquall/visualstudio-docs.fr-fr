@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercallback3::setwebworkerid, méthode | Documents Microsoft
+title: Méthode IActiveScriptProfilerCallback3::SetWebWorkerId | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 426767b8d4d23964d6bfaa7102ee53b550e7ab9b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724609"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094431"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId, méthode
-Informe le profileur sur l’ID de travail à utiliser pour cette session de profilage. Si la fonction n’est pas en cours d’exécution dans le contexte de la page, cette méthode n’est pas appelée. La valeur de `webWorkerId` par incréments de 1 pour chaque processus de travail, en commençant à 1. Les valeurs d’ID ne sont pas destinés à être stable au-delà d’une session et ne correspondent qu’à l’ordre dans lequel les threads de travail ont été créés.  
+Informe le profileur sur l’ID de travail à utiliser pour cette session de profilage. Si la fonction n’est pas en cours d’exécution dans le contexte de la page, cette méthode n’est pas appelée. La valeur de `webWorkerId` par incréments de 1 pour chaque processus de travail, en commençant à 1. Les valeurs d’ID ne sont pas destinées à être stable au-delà d’une session et ne correspondent qu’à l’ordre dans lequel les employés ont été créés.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT SetWebWorkerId([in] DWORD webWorkerId);  
 ```  
   

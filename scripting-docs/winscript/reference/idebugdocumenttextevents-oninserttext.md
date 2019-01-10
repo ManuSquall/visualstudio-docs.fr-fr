@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onInsertText | Documents Microsoft
+title: IDebugDocumentTextEvents::onInsertText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a00adb996711dc6364edd44babf0c3cde1595947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce5cd786cead548e7a088f362930b2d27d2e8d69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728069"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089378"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
 Indique que le nouveau texte a été ajouté au document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onInsertText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToInsert  
@@ -47,11 +47,11 @@ HRESULT onInsertText(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode est généralement appelée par un hôte qui charge progressivement le contenu, comme un navigateur Web.  
   
 ## <a name="see-also"></a>Voir aussi  

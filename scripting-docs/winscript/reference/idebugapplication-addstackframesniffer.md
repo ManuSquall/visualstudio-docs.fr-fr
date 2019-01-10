@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Documents Microsoft
+title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89faa6481bd5e5934ae2d3b85a0bade83949633a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fa444573e418de1a59219eb48b09e64b08d859a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725559"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089893"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
 Ajoute un fournisseur d’énumérateur de frame de pile pour cette application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddStackFrameSniffer(  
    IDebugStackFrameSniffer*  pdsfs,  
    DWORD*                    pdwCookie  
@@ -42,19 +42,19 @@ HRESULT AddStackFrameSniffer(
  [in] Le fournisseur d’énumérateur de frame de pile à ajouter à cette application.  
   
  `pdwCookie`  
- [out] Un cookie est utilisé pour supprimer ce fournisseur d’énumérateur de frame de pile de l’application.  
+ [out] Un cookie qui est utilisé pour supprimer ce fournisseur d’énumérateur de frame de pile de l’application.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Bien qu’en règle générale, les moteurs de langue appellent cette méthode pour exposer leurs frames de pile dans le débogueur, il est possible pour d’autres entités exposer les frames de pile.  
+## <a name="remarks"></a>Notes  
+ Bien qu’en règle générale, les moteurs de langage appellent cette méthode pour exposer leurs frames de pile pour le débogueur, il est possible pour les autres entités à exposer les frames de pile.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md)   
+ [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

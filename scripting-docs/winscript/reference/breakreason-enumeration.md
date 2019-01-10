@@ -1,5 +1,5 @@
 ---
-title: Énumération BREAKREASON | Documents Microsoft
+title: Énumération BREAKREASON | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641019"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096796"
 ---
 # <a name="breakreason-enumeration"></a>Énumération BREAKREASON
 Indique ce qui a provoqué l'arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -49,10 +49,10 @@ typedef enum tagBREAKREASON {
 |------------|-----------------|  
 |BREAKREASON_STEP|Le moteur de langage est en mode pas à pas.|  
 |BREAKREASON_BREAKPOINT|Le moteur de langage a rencontré un point d’arrêt explicite.|  
-|BREAKREASON_DEBUGGER_BLOCK|Le moteur de langage a détecté un bloc de débogueur sur un autre thread.|  
-|BREAKREASON_HOST_INITIATED|L’hôte demandé une pause.|  
+|BREAKREASON_DEBUGGER_BLOCK|Le moteur de langage a rencontré un bloc de débogueur sur un autre thread.|  
+|BREAKREASON_HOST_INITIATED|L’hôte a demandé une pause.|  
 |BREAKREASON_LANGUAGE_INITIATED|Le moteur de langage a demandé une pause.|  
-|BREAKREASON_DEBUGGER_HALT|Le débogueur IDE demandé une pause.|  
+|BREAKREASON_DEBUGGER_HALT|L’IDE de débogueur a demandé une pause.|  
 |BREAKREASON_ERROR|Une erreur d’exécution a provoqué l’arrêt.|  
 |BREAKREASON_JIT|Dû au démarrage du débogage JIT.|  
   

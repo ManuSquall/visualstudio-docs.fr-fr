@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild | Documents Microsoft
+title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725989"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092198"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-Gère l’événement lorsqu’un nœud enfant est supprimé d’un objet de nœud d’application de débogage.  
+Gère l’événement lorsqu’un nœud enfant est supprimé à partir d’un objet de nœud d’application de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,17 +38,17 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Paramètres  
  `prddpChild`  
- [in] Le nœud d’application enfants qui a été supprimé.  
+ [in] Le nœud d’application enfant qui a été supprimé.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode gère l’événement lorsqu’un nœud enfant est supprimé d’un objet de nœud d’application de débogage.  
+## <a name="remarks"></a>Notes  
+ Cette méthode gère l’événement lorsqu’un nœud enfant est supprimé à partir d’un objet de nœud d’application de débogage.  
   
  Les implémenteurs de le `IDebugApplicationNode` interface déclencher cet événement.  
   

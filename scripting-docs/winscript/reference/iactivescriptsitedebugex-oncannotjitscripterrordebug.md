@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Documents Microsoft
+title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,21 +18,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725109"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095119"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 Informe l’hôte sur une erreur d’exécution de script lorsque le processus de débogage Manager ne trouve pas un débogueur de script juste à temps.  
   
- Pour implémenter un débogueur dans votre hôte, vous devez gérer [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). En fonction de l’action de l’utilisateur, l’ordinateur hôte pouvez attacher le débogueur et de retour ou retourner le démarrage du débogueur dans le OnScriptErrorDebug `pfEnterDebugger` paramètre. Vous devez également implémenter cette interface pour recevoir la notification sur l’erreur d’exécution même si il n’y a aucune débogueurs externes qui peuvent être interprétés par le Gestionnaire de processus de débogage.  
+ Pour implémenter un débogueur dans votre hôte, vous devez gérer [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Selon une action de l’utilisateur, l’hôte est possible d’associer le débogueur et retourner, ou retourner le démarrage du débogueur dans le OnScriptErrorDebug `pfEnterDebugger` paramètre. Vous devez également implémenter cette interface pour obtenir la notification sur l’erreur d’exécution, même s’il en existe aucun débogueurs externes qui peuvent être interprétées par le Gestionnaire de débogage de processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnCanNotJITScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug  
    BOOL *pfCallOnScriptErrorWhenContinuing  
@@ -49,12 +49,12 @@ HRESULT OnCanNotJITScriptErrorDebug(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Vous devez également implémenter cette interface pour obtenir une notification.  
+## <a name="remarks"></a>Notes  
+ Vous devez également implémenter cette interface pour recevoir une notification.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)

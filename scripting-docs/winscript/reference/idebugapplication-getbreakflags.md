@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetBreakFlags | Documents Microsoft
+title: IDebugApplication::GetBreakFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a44f56e4070c159e67b1303514592c5dda25f56d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725549"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087241"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
 Retourne les indicateurs d’arrêt en cours pour l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetBreakFlags(  
    APPBREAKFLAGS*                   pabf,  
    IRemoteDebugApplicationThread**  pprdatSteppingThread  
@@ -47,13 +47,13 @@ HRESULT GetBreakFlags(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne les indicateurs d’arrêt en cours pour l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md)   
+ [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [Énumération APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)

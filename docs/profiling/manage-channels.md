@@ -1,8 +1,6 @@
 ---
 title: Gérer des canaux | Documents Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 535b11f4ee27bd30301b983b34075a3d70947162
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853359"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.  
@@ -63,4 +61,4 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
 ## <a name="see-also"></a>Voir aussi  
  [Zoom, contrôle (vue Threads)](../profiling/zoom-control-threads-view.md)   
  [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

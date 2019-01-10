@@ -2,9 +2,8 @@
 title: Tutoriel d’apprentissage de Flask dans Visual Studio - étape 3, pages et fichiers statiques
 titleSuffix: ''
 description: Une procédure pas à pas montrant les concepts de base de Flask dans le contexte de projets Visual Studio, expliquant en particulier comment prendre en charge des fichiers statiques, ajouter des pages à l’application et utiliser l’héritage de modèle
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065023"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060788"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 

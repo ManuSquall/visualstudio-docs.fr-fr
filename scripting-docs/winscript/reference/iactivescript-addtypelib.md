@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Documents Microsoft
+title: IActiveScript::AddTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640869"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092541"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Ajoute une bibliothèque de types à l’espace de noms pour le script. Ceci est similaire à la `#include` directive en C/C++. Il permet à un ensemble d’éléments prédéfinis, tels que des définitions de classe, `typedefs`et à ajouter à l’environnement d’exécution disponible pour le script de constantes nommées.  
+Ajoute une bibliothèque de types à l’espace de noms pour le script. Ceci est similaire à la `#include` directive en C/C++. Il permet un ensemble d’éléments prédéfinis tels que des définitions de classe, `typedefs`et des constantes à ajouter à l’environnement d’exécution disponible pour le script nommées.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -52,17 +52,17 @@ HRESULT AddTypeLib(
  `dwFlags`  
  [in] Indicateurs d’option. Peut être le suivant :  
   
-|Valeur|Signification|  
+|Value|Signification|  
 |-----------|-------------|  
 |SCRIPTTYPELIB_ISCONTROL|La bibliothèque de types décrit un contrôle ActiveX utilisé par l’hôte.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne l’une des valeurs suivantes :  
+ Retourne une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
-|`E_INVALIDARG`|Un argument n’était pas valide.|  
+|`E_INVALIDARG`|Un argument n’est pas valide.|  
 |`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n'a pas encore été chargé ou initialisé).|  
 |`TYPE_E_CANTLOADLIBRARY`|La bibliothèque de types spécifiée n’a pas pu être chargée.|  
   

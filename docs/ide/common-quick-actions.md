@@ -2,7 +2,6 @@
 title: Actions rapides courantes
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6eaa3b776e7a4c4e90795265f94af2d0df994b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c2491ba0968f60f5e67e9829a19994b7d4cbe7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894012"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877443"
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -31,7 +30,7 @@ Les actions rapides de cette section corrigent les erreurs dans le code qui prov
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Symbole ou mot clé mal orthographié correct
 
-Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu Ampoule comme ***Change '* misspelled word *' to '* correct word**' (Remplacer mot mal orthographié par mot correct). Exemple :
+Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu Ampoule comme ***Change '* misspelled word *' to '* correct word**' (Remplacer mot mal orthographié par mot correct). Par exemple :
 
 ```csharp
 // Before

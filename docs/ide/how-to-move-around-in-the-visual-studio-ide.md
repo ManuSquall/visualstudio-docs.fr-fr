@@ -2,7 +2,6 @@
 title: Guide pratique pour se déplacer dans l’IDE
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfae0808ff5daa10f8faa621e6af293543bce66
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bf2c00350b6b366e0e1d5ea02a8e260c8927b348
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988882"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procédure : se déplacer dans l’IDE Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: ConvertToAbsolutePath, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ConvertToAbsolutePath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b06ecb8f527602e5db6711ec7023881f7efc9e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8d2d2932b9fc18141b3b16ad2b8c35990351267a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966331"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath (tâche)
 Convertit une référence ou un chemin relatif en chemin absolu.  

@@ -2,7 +2,6 @@
 title: Attacher le profileur à une application autonome .NET Framework et collecter des statistiques d’application
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 70401d064668cfdfec75a761d7486cf2732a9aac
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: dda6094b02c0172a7440fbfdfa255d07a122eb46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53593013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917538"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le profileur à une application .NET Framework autonome et collecter des statistiques d’application en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application .NET Framework autonome (cliente) en cours d’exécution et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.  
@@ -106,7 +105,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     -   Tapez **VSPerfCmd /detach**  
 
-         ou  
+         - ou -  
 
     -   Fermez l’application cible.  
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreateSimpleConnectionPoint | Documents Microsoft
+title: IDebugHelper::CreateSimpleConnectionPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcc598fa97d47a564ddb12aaa0480e42b6601118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6b478f425b1aaf284bc7af744f5ac99f9be7fe8c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727809"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097069"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
 Retourne une interface d’événement qui encapsule une donnée `IDispatch` objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateSimpleConnectionPoint(  
    IDispatch*                pdisp  
    ISimpleConnectionPoint**  ppscp  
@@ -47,12 +47,12 @@ HRESULT CreateSimpleConnectionPoint(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Retourne une interface d’événement qui encapsule la donnée `IDispatch` (consultez [isimpleconnectionpoint, Interface](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+## <a name="remarks"></a>Notes  
+ Retourne une interface d’événement qui encapsule la donnée `IDispatch` (consultez [ISimpleConnectionPoint (Interface)](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugHelper (Interface)](../../winscript/reference/idebughelper-interface.md)   

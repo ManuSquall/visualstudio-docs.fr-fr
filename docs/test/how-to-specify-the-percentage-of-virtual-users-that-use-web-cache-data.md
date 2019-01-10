@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c9cf6ea3b5bf82d26ab838b75cb0c0092aafc182
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958759"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procédure : spécifier le pourcentage d’utilisateurs virtuels qui utilisent les données du cache web
 

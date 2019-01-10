@@ -2,7 +2,6 @@
 title: Polices et couleurs, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966010"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
@@ -128,7 +127,7 @@ Voici certains éléments d'affichage :
 |**Zone non couverte**|Code non couvert par un test unitaire.|
 |**Zone partiellement couverte**|Code partiellement couvert par un test unitaire.|
 |**Zone couverte**|Code complètement couvert par un test unitaire.|
-|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Exemple :<br /><br /> /* commentaire \*/|
+|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Par exemple :<br /><br /> /* commentaire \*/|
 |**Mot clé CSS**|Mots clés dans la feuille de style en cascade.|
 |**Nom de propriété CSS**|Nom d'une propriété, par exemple Background.|
 |**Valeur de propriété CSS**|Valeur assignée à une propriété, par exemple blue.|
@@ -164,7 +163,7 @@ Voici certains éléments d'affichage :
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|
 |**String**|Littéraux de chaîne.|
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|
 |**Erreur de syntaxe**|Erreurs d'analyse.|
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|
 |**Point de trace (Désactivé)**|Non utilisé.|
@@ -251,4 +250,4 @@ Affiche un aperçu du modèle de style, du modèle de taille et du modèle de co
 
 - [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
 - [Options, boîte de dialogue](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

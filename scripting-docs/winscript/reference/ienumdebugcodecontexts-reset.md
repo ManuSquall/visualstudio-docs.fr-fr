@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Reset | Documents Microsoft
+title: IEnumDebugCodeContexts::Reset | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 681dea50d163b2e5fbd49e47ee82320bea9c89fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9326ad20c567049242f7f528a7e7c8cf6803882
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727279"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091960"
 ---
 # <a name="ienumdebugcodecontextsreset"></a>IEnumDebugCodeContexts::Reset
-Réinitialise la séquence d’énumération au début.  
+Réinitialise une séquence d’énumération au début.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT Reset();  
 ```  
   
@@ -40,12 +40,12 @@ HRESULT Reset();
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode réinitialise la séquence d’énumération au début.  
+## <a name="remarks"></a>Notes  
+ Cette méthode réinitialise une séquence d’énumération au début.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)

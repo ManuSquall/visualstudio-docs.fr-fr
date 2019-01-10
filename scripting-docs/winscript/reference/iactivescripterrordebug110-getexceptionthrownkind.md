@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Documents Microsoft
+title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8306b1d4ff68fe9eec00d47d8c702278e89fc37b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce3a164f3ee4d81ca849db7c4745948ffe17d56e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724389"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097186"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Retourne une valeur qui indique le type d'exception levé.  
   
 > [!IMPORTANT]
->  [IActiveScriptErrorDebug110 (Interface)](../../winscript/reference/iactivescripterrordebug110-interface.md) est implémentée par PDM version 11.0 et supérieures. Trouvée dans activdbg100.h.  
+>  [Interface IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) est implémentée par la version 11.0 et supérieures de PDM. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetExceptionThrownKind(  
    SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND*  pExceptionKind  
 );  
@@ -37,12 +37,12 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Paramètres  
  `pExceptionKind`  
- [out] Le type d’exception qui est levée (par exemple, de première chance ou non prise en charge), représenté par un [énumération SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valeur d’énumération.  
+ [out] Le type d’exception est levée (par exemple, première chance ou non prise en charge), représenté par un [énumération SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valeur d’énumération.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

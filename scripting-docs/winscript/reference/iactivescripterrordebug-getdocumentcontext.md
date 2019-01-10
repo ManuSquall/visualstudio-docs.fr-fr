@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetDocumentContext | Documents Microsoft
+title: IActiveScriptErrorDebug::GetDocumentContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1342465ed306f43d07248f8e3c776e9e9af2c774
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 308ee38b6b4e2e63d113934dd535fa04ec576c2e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645859"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094222"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
 Fournit le contexte de document pour cette erreur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppssc  
 );  
@@ -43,11 +43,11 @@ HRESULT GetDocumentContext(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La plage de position de caractère de contexte de document doit inclure tous les caractères correspondant à l’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  

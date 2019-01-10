@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate | Documents Microsoft
+title: IActiveScriptSite::OnScriptTerminate | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eef8bd2a3f2e2a4eb4fd4b5f0e35fcd9acfe5bc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8ff7c3d531b46fa6681776e79fbb73f6d1efca2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724799"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087111"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
 Informe l’hôte que le script a terminé son exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT OnScriptTerminate(  
     VARIANT *pvarResult,   // address of script results  
     EXCEPINFO *pexcepinfo  // address of structure with exception information  
@@ -42,13 +42,13 @@ HRESULT OnScriptTerminate(
  [in] Adresse d’une variable qui contient le résultat de script, ou `NULL` si le script a produit aucun résultat.  
   
  `pexcepinfo`  
- [in] Adresse d’une `EXCEPINFO` structure qui contient des informations sur les exceptions générées lorsque le script terminé, ou `NULL` si aucune exception n’a été générée.  
+ [in] Adresse d’un `EXCEPINFO` structure qui contient des informations sur les exceptions générées lorsque le script s’est arrêté, ou `NULL` si aucune exception n’a été générée.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Retourne `S_OK` en cas de réussite.  
   
-## <a name="remarks"></a>Remarques  
- Le moteur de script appelle cette méthode avant l’appel à la [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) méthode, avec l’indicateur SCRIPTSTATE_INITIALIZED, est terminée. Cette méthode peut être utilisée pour retourner l’état d’achèvement et les résultats à l’hôte. Notez que nombreux langages de script, qui sont basés sur la réception des événements de l’ordinateur hôte, les intervalles de durée de vie qui sont définis par l’hôte. Dans ce cas, cette méthode ne peut jamais être appelée.  
+## <a name="remarks"></a>Notes  
+ Le moteur de script appelle cette méthode avant d’appeler le [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) méthode, avec l’indicateur SCRIPTSTATE_INITIALIZED, est terminée. Cette méthode peut être utilisée pour retourner l’état d’achèvement et les résultats à l’hôte. Notez que plusieurs langages de script, qui sont basés sur la réception des événements à partir de l’hôte, vie étendues qui sont définies par l’hôte. Dans ce cas, cette méthode ne peut jamais être appelée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Documents Microsoft
+title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2512fa3b56a19ed7396c7a351c8d8f8323fff6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c916f0a76021afea82b4021ed1ce7d411317807
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726619"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087709"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère spécifiée.  
+Retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère donnée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetLineOfPosition(  
    ULONG   cCharacterPosition,  
    ULONG*  pcLineNumber,  
@@ -46,17 +46,17 @@ HRESULT GetLineOfPosition(
  [out] Le numéro de ligne de la plage.  
   
  `pcCharacterOffsetInLine`  
- [dans, out] L’offset de caractère de la plage dans la ligne `pcLineNumber`. Si ce paramètre est `NULL`, la méthode ne retourne pas de valeur.  
+ [in, out] L’offset de caractère de la plage dans la ligne `pcLineNumber`. Si ce paramètre est `NULL`, la méthode ne retourne pas de valeur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère spécifiée.  
+## <a name="remarks"></a>Notes  
+ Cette méthode retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère donnée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

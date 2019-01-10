@@ -2,7 +2,6 @@
 title: Chemin d’accès aux symboles, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.symbolpath
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a27d795e5491081dca98a395c788cf8407e43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 56e274c103d9bc8d4f80606476c8c6fd4793a8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903940"
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
 Définit la liste des répertoires où le débogueur recherche des symboles.
@@ -35,7 +34,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Arguments
  `pathname`
 
- Facultative. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
+ Optionnel. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
 
 ## <a name="remarks"></a>Notes
  Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.

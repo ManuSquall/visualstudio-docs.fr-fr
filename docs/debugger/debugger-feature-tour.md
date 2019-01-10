@@ -3,7 +3,6 @@ title: Bien démarrer avec le débogage dans Visual Studio 2017
 description: Bien démarrer avec le débogage d’applications en utilisant le débogueur Visual Studio
 ms.custom: mvc
 ms.date: 06/15/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904966"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -174,7 +173,7 @@ La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et le
 
 Vous pouvez double-cliquer sur une ligne de code pour accéder à ce code source ; ceci change également l’étendue active inspectée par le débogueur. Ceci ne fait pas avancer le débogueur.
 
-Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des appels** pour faire d’autres choses. Par exemple, vous pouvez insérer des points d’arrêt dans des fonctions spécifiques, redémarrer votre application avec **Exécuter jusqu’au curseur** et aller examiner le code source. Consultez [Guide pratique pour examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des appels** pour faire d’autres choses. Par exemple, vous pouvez insérer des points d’arrêt dans des fonctions spécifiques, redémarrer votre application avec **Exécuter jusqu’au curseur** et aller examiner le code source. Voir [Guide pratique pour examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examiner une exception
 
@@ -215,7 +214,7 @@ Pour plus d’informations, consultez la page [Inspecter les états antérieurs 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce tutoriel, vous avez vu rapidement de nombreuses fonctionnalités du débogueur. Vous pouvez en avoir une vision plus approfondie avec un exemple d’application
+Dans ce tutoriel, vous avez vu rapidement de nombreuses fonctionnalités du débogueur. Pour plus d’informations sur l’une de ces fonctionnalités en particulier, et notamment les points d'arrêt :
 
 > [!div class="nextstepaction"]
-> [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Apprendre à utiliser les points d’arrêt](../debugger/using-breakpoints.md)

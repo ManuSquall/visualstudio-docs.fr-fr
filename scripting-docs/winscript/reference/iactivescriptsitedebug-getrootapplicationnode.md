@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetRootApplicationNode | Documents Microsoft
+title: IActiveScriptSiteDebug::GetRootApplicationNode | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c837d5ee2e8b75bfe7603370d61385a67080cc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724719"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088515"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Obtient le nœud d’application dans le script de documents doivent être ajoutés.  
+Obtient le nœud d’application sous le script de documents doivent être ajoutés.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetRootApplicationNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -43,11 +43,11 @@ HRESULT GetRootApplicationNode(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne le nœud d’application sous lequel les documents de script doivent être ajoutés. La méthode peut retourner `NULL` pour `ppdanRoot` si les documents de script doivent être de niveau supérieur.  
   
 ## <a name="see-also"></a>Voir aussi  

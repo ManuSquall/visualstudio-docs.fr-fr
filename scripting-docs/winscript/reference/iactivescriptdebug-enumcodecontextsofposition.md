@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition | Documents Microsoft
+title: IActiveScriptDebug::EnumCodeContextsOfPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40fd8e2d19d3949ff26811956ae3d203871e5510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: abca643dc4e18f786421959c20804a28cf54ec7b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645589"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097173"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-Utilisé par un hôte actif pour déléguer la `IDebugDocumentContext::EnumCodeContexts` (méthode).  
+Utilisé par un hôte intelligent pour déléguer la `IDebugDocumentContext::EnumCodeContexts` (méthode).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT EnumCodeContextsOfPosition(  
    DWORD_PTR                 dwSourceContext,  
    ULONG                     uCharacterOffset,  
@@ -41,10 +41,10 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>Paramètres  
  `dwSourceContext`  
- [in] Le contexte de la source à `IActiveScriptParse::ParseScriptText` ou `IActiveScriptParse::AddScriptlet`.  
+ [in] Le contexte de la source fournie à `IActiveScriptParse::ParseScriptText` ou `IActiveScriptParse::AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Un décalage relatif au début du texte de script de caractères.  
+ [in] Caractère décalée par rapport à début du texte de script.  
   
  `uNumChars`  
  [in] Nombre de caractères dans ce contexte.  
@@ -55,12 +55,12 @@ HRESULT EnumCodeContextsOfPosition(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Hôtes actifs permet de déléguer le `IDebugDocumentContext::EnumCodeContexts` (méthode).  
+## <a name="remarks"></a>Notes  
+ Hôtes intelligents permet de déléguer le `IDebugDocumentContext::EnumCodeContexts` (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptDebug (Interface)](../../winscript/reference/iactivescriptdebug-interface.md)   

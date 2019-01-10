@@ -3,18 +3,18 @@ title: Avantage EMS | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/11/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Découvrez l’avantage Enterprise Mobility + Security inclus dans votre abonnement Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930113"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739597"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Avantage EMS (Enterprise Mobility + Security) dans les abonnements Visual Studio
 
@@ -55,16 +55,21 @@ Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d�
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud annuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
-| Visual Studio Professional (Standard<sup>2</sup>, cloud annuel) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
+| Visual Studio Professional (Standard<sup>2</sup>) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 | Visual Studio Dev Essentials | N/A  | Non disponible |N/A |
 
-<sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark.  Exclut : MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark.  Exclut : MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Exclut Microsoft Partner Network (Professional)*
+
+
+> [!NOTE]
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

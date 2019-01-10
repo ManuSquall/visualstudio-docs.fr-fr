@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler | Documents Microsoft
+title: IScriptNode::CreateChildHandler | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff2ba40d1570e23f0256bd34ca8aff0f8d77ce5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ef4c9318cb13459ab787878218bf7ca68052f29
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729559"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094183"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Ajoute un scriptlet comme une instance de l’enfant d’un `IScriptNode`.  
+Ajoute un scriptlet comme une instance enfant d’un `IScriptNode`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateChildHandler(  
    LPCOLESTR          pszDefaultName,  
    LPCOLESTR          *prgpszNames,  
@@ -47,21 +47,21 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Paramètres  
  `pszDefaultName`  
- [in] L’adresse du nom par défaut pour associer le scriptlet.  
+ [in] L’adresse du nom par défaut à associer le scriptlet.  
   
  `prgpszNames`  
- [in, size_is (`cpszNames`)] une liste d’identificateurs de nom qualifié complet de l’ordinateur hôte.  
+ [in, size_is (`cpszNames`)] liste des identificateurs à partir du nom qualifié complet sur l’ordinateur hôte.  
   
  `cpszNames`  
  [in] Le nombre d’identificateurs dans les `prgpszNames` paramètre.  
   
  `pszEvent`  
- [in] L’adresse de mémoire tampon qui identifie le nom de l’événement associé à la scriptlet.  
+ [in] L’adresse de mémoire tampon qui identifie le nom d’événement associé au scriptlet.  
   
  `pszDelimiter`  
- [in] L’adresse du délimiteur de fin du bloc de script. Pour l’analyse, l’hôte utilise généralement un délimiteur (par exemple, deux guillemets simples), pour détecter la fin du bloc de script.  
+ [in] L’adresse du délimiteur de fin du bloc de script. Pour l’analyse, l’hôte utilise généralement un délimiteur (par exemple, un double guillemet), pour détecter la fin du bloc de script.  
   
- Le délimiteur active par le moteur de création de script de prétraitement. Par exemple, le moteur peut remplacer un guillemet simple avec deux guillemets simples à utiliser comme délimiteur. Le moteur détermine comment le délimiteur est utilisé.  
+ Le délimiteur permet par le moteur de création de script de prétraitement. Par exemple, le moteur peut remplacer un guillemet simple avec deux guillemets simples à utiliser comme délimiteur. Le moteur détermine comment le délimiteur est utilisé.  
   
  La valeur NULL si aucun délimiteur n’est utilisé pour identifier la fin du bloc de script.  
   
@@ -72,7 +72,7 @@ HRESULT CreateChildHandler(
  [in] L’index de la fonction dans le `ITypeInfo``ptiSignature` paramètre.  
   
  `isn`  
- [in] L’index de l’enfant du parent.  
+ [in] L’index de l’enfant de la page parente.  
   
  `dwCookie`  
  [in] Une valeur définie par l’application qui est utilisée pour associer l’entrée de l’objet hôte.  
@@ -83,11 +83,11 @@ HRESULT CreateChildHandler(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un scriptlet spécifie un gestionnaire d’événements. Cette méthode crée un scriptlet si elle est appelée par un `IScriptNode` objet qui représente une page Web. Cette méthode ne réussit pas si elle est appelée par d’autres interfaces.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -9,12 +9,12 @@ description: Découvrez comment obtenir et gérer vos clés de produit dans les 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900850"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803822"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -32,14 +32,14 @@ Si vous avez demandé toutes les clés de produit disponibles dans le cadre de v
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versions commercialisées et de licence en volume des produits
 Les abonnements Visual Studio offrent différentes versions commercialisées et de licence en volume des produits Microsoft. Certains produits proposés dans la page Téléchargements sont disponibles uniquement dans leur version commercialisée ou uniquement dans leur version de licence en volume, alors que d’autres produits sont disponibles dans les deux versions. En règle générale, les produits nécessitant une activation, comme Windows, Windows Server et les produits clients Office, sont proposés uniquement dans leur version commercialisée à partir de la page Téléchargements.
 
-Les clients de licences en volume peuvent également télécharger les logiciels à partir du centre VSLC (Volume Licensing Service Center) pour obtenir les versions de licence en volume des produits (et les clés de produit correspondantes).  L'accès au centre VSLC est géré par des administrateurs désignés au sein de l’organisation du client.
+Les clients du programme de licence en volume peuvent également télécharger les logiciels dans le Centre de gestion des licences en volume pour obtenir les versions de type licence en volume des produits (et les clés de produit correspondantes).  L'accès au centre VSLC est géré par des administrateurs désignés au sein de l’organisation du client.
 
 ## <a name="daily-product-key-claim-limits"></a>Nombre maximal de demandes de clés de produit par jour.
 Microsoft s’engage à protéger l’intégrité du programme d’abonnement Visual Studio et la valeur des logiciels et avantages reçus par les abonnés légitimes du programme. En contrepartie, Microsoft a mis en place des limites quotidiennes de demandes de clés pour les abonnements Visual Studio. L’objectif est de limiter le nombre de clés pouvant être demandées par jour et par abonnement.
 
 La limite de demandes quotidiennes est de dix clés pour tous les abonnements Visual Studio, y compris ceux fournis par MPN, BizSpark, MCT Software & Services et MCT, à l’exception de Visual Studio Professional (MPN) pour lequel la limite de demandes quotidiennes s’élève à sept clés.
 
-Remarque : Le nombre de demandes de clés autorisées peut changer. Vérifiez ici les limites en vigueur.
+Remarque : le nombre de demandes de clés autorisé peut faire l’objet de modifications. Vérifiez ici les limites en vigueur.
 
 Si vous avez demandé le nombre maximal de clés disponibles dans le cadre de votre abonnement dans une période de 24 heures, une erreur vous signale que votre limite a été atteinte. Cette limite est réinitialisée toutes les 24 heures, à partir de 00 h 01 (heure du Pacifique).
 

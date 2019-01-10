@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Documents Microsoft
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729859"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089074"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
 Continue une application en cours d’un point d’arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT ResumeFromBreakPoint(  
    IRemoteDebugApplicationThread*  prptFocus,  
    BREAKRESUMEACTION               bra,  
@@ -40,7 +40,7 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Paramètres  
  `prptFocus`  
- [in] Pour le pas à pas de modes, le thread qui doit être affecté par le mode d’exécution pas à pas.  
+ [in] Pour le pas à pas de modes, le thread qui doit être affecté par le mode pas à pas.  
   
  `bra`  
  [in] L’action à entreprendre lors de la reprise de l’application.  
@@ -51,11 +51,11 @@ HRESULT ResumeFromBreakPoint(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode continue d’une application en cours d’un point d’arrêt.  
   
 ## <a name="see-also"></a>Voir aussi  

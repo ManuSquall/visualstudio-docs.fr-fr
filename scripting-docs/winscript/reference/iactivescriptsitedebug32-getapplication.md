@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetApplication | Documents Microsoft
+title: IActiveScriptSiteDebug32::GetApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.assetid: 533d770d-06a4-4693-873e-255c9c6f0df0
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: bb7fdf5a6d0b380a8024cfdfa70282bcf80ba16d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c71e33445db7745f71e374c586d079a9665776b2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725019"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087896"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Retourne l’objet d’application de débogage associé à ce site de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IDebugApplication**  ppda  
 );  
@@ -30,19 +30,19 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Paramètres  
  `ppda`  
- [out] Pointeur vers l’objet d’application de débogage associé au site de script.  
+ [out] Pointeur vers l’objet d’application debug associé au site de script.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_NOTIMPL`|L’ordinateur hôte ne prend pas directement en charge le débogage.|  
+|`E_NOTIMPL`|L’hôte ne prend pas directement en charge le débogage.|  
   
-## <a name="remarks"></a>Remarques  
- Le `GetApplication` méthode offre un moyen pour un hôte actif définir l’objet d’application auquel appartient chaque script. Moteurs de script doivent tenter d’appeler cette méthode pour obtenir leur application conteneur et le recours au `IProcessDebugManager::GetDefaultApplication` en cas d’échec.  
+## <a name="remarks"></a>Notes  
+ Le `GetApplication` méthode fournit un moyen pour un hôte intelligent définir l’objet d’application auquel appartient chaque script. Moteurs de script doivent tenter d’appeler cette méthode pour obtenir leur application de conteneur et de recourir à `IProcessDebugManager::GetDefaultApplication` en cas d’échec.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface de IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
+ [Interface IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

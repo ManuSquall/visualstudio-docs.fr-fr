@@ -1,8 +1,6 @@
 ---
 title: Vues de données de la méthode d’instrumentation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method views
@@ -13,30 +11,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 266f342253fd19098f9d889faa10f6df1bf38c78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932244"
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Vue Résumé](../profiling/summary-view-instrumentation-data.md)  
+ [Mode Résumé](../profiling/summary-view-instrumentation-data.md)  
  Répertorie les fonctions qui ont exigé le plus de temps et les fonctions qui ont fait le travail le plus individuel.  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
  Affiche les chemins d’exécution des fonctions dans une arborescence hiérarchique.  
   
- [Vue Modules](../profiling/modules-view-instrumentation-data.md)  
+ [Modules, mode](../profiling/modules-view-instrumentation-data.md)  
  Organise les données de profilage par module et répertorie les données de profilage pour les fonctions présentes dans le module.  
   
  [Vue Appelant/appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)  
  Affiche les données de profilage pour les fonctions parentes et enfants d’une fonction sélectionnée.  
   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)  
+ [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)  
  Répertorie les données de profilage par fonction.  
   
 ## <a name="reference"></a>Référence  

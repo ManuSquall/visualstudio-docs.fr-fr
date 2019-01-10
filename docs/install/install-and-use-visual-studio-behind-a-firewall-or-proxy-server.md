@@ -1,9 +1,8 @@
 ---
 title: Installer et utiliser derrière un pare-feu ou un serveur proxy
 description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
-ms.custom: seodec18
 ms.date: 07/10/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 55234231855761e0ad0206bdd96dfffcdb52690a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879515"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 

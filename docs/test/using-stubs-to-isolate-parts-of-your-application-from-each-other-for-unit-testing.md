@@ -2,7 +2,6 @@
 title: Utilisation de stubs pour isoler des parties de votre application pour des tests unitaires
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
@@ -12,12 +11,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c832853470fb4aa3adad9719ddbbe35123f04772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902761"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
@@ -220,7 +219,7 @@ Les stubs sont également générés pour les accesseurs Get et les méthodes se
 
 ### <a name="verify-parameter-values"></a>Vérifier les valeurs de paramètre
 
-Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Exemple :
+Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
 
 ```csharp
 [TestClass]

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugbreakpoint, Interface | Documents Microsoft
+title: Interface IJsDebugBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ed749953aeffbadb450b2a21ef86ffb619eb6a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3c43d23d0ba89e6b85a3dd4da688fa89fed4dd99
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728319"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093845"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint, interface
 Représente un point d’arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 IJsDebugBreakPoint : public IUnknown;  
 ```  
   

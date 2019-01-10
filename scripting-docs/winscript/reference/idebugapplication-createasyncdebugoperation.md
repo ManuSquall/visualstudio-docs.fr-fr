@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateAsyncDebugOperation | Documents Microsoft
+title: IDebugApplication::CreateAsyncDebugOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8714f4401249d73cf09d241ebf4c2b2115911d6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 30051276b682bdf906db72bc2682e1c5d58c455a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725529"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090699"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
-Fournit l’accès asynchrone à une opération de débogage synchrone donné.  
+Fournit un accès asynchrone à une opération de débogage synchrone donnée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreateAsyncDebugOperation(  
    IDebugSyncOperation*    psdo,  
    IDebugAsyncOperation**  ppado  
@@ -39,7 +39,7 @@ HRESULT CreateAsyncDebugOperation(
   
 #### <a name="parameters"></a>Paramètres  
  `psdo`  
- [in] L’objet debug synchrone de l’opération.  
+ [in] L’objet d’opération de débogage synchrone.  
   
  `ppado`  
  [out] L’objet d’opération de débogage asynchrone.  
@@ -47,14 +47,14 @@ HRESULT CreateAsyncDebugOperation(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
- Cette méthode permet de moteurs de langue évaluer des expressions de façon asynchrone sans synchronisation explicitement avec le thread de débogueur. Pour plus d’informations, consultez [IDebugSyncOperation (Interface)](../../winscript/reference/idebugsyncoperation-interface.md) et [IDebugAsyncOperation (Interface)](../../winscript/reference/idebugasyncoperation-interface.md).  
+## <a name="remarks"></a>Notes  
+ Cette méthode permet de moteurs de langage évaluer les expressions de façon asynchrone sans synchronisation explicitement avec le thread de débogueur. Pour plus d’informations, consultez [IDebugSyncOperation (Interface)](../../winscript/reference/idebugsyncoperation-interface.md) et [IDebugAsyncOperation (Interface)](../../winscript/reference/idebugasyncoperation-interface.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md)   
+ [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugSyncOperation (Interface)](../../winscript/reference/idebugsyncoperation-interface.md)   
  [Interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

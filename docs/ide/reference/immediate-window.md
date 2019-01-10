@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942996"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561666"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.
@@ -76,7 +76,7 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
 
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
 
-Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
+Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, voir [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], projets web, projets Smart Device et projets SQL.
 
@@ -128,8 +128,7 @@ Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design 
 
 - [Naviguer dans le code avec le débogueur](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Débogage dans Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Principes de base du débogueur](../../debugger/getting-started-with-the-debugger.md)
-- [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Présentation du débogueur](../../debugger/debugger-feature-tour.md)   
+- [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

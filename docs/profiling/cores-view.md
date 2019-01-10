@@ -1,8 +1,6 @@
 ---
 title: Vue Cœurs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cores
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f9fdd88640999759fe729b3949785a79e763986
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3dea7eca97ed938271977fea8e8fa5e41dbd19aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933701"
 ---
 # <a name="cores-view"></a>Affichage Cœurs
 **L’Affichage cœurs** indique la façon dont l’exécution du thread a été mappée aux cœurs de processeurs logiques (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). Si vous écrivez des applications serveur, cette vue peut vous aider à optimiser les performances du cache à l’aide de la gestion du pool de thread ou de l’affinité de thread. Elle peut également vous aider à examiner les cas où l’utilisation de l’affinité de thread peut avoir aggravé le problème de migration inter-cœurs. La vue Cœurs comporte deux parties : un graphique et une légende.  
@@ -31,4 +29,4 @@ ms.locfileid: "35668884"
 ## <a name="see-also"></a>Voir aussi  
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)   
  [Vue Utilisation](../profiling/utilization-view.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

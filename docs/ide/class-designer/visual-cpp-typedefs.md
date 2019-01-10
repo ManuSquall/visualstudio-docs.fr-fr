@@ -2,7 +2,6 @@
 title: Typedefs de Visual C++ dans le Concepteur de classes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869188"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs de Visual C++ dans le Concepteur de classes
 

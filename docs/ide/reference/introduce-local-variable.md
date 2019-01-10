@@ -2,19 +2,18 @@
 title: Introduire une variable locale
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968681"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 

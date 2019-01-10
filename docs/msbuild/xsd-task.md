@@ -1,8 +1,6 @@
 ---
 title: Tâche XSD | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.xsd
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 44113f00f56ca471b0d8a922fc68b0003645b329
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991017"
 ---
 # <a name="xsd-task"></a>XSD (tâche)
 Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui génère des fichiers de schéma ou de classe à partir d’une source.  
@@ -78,7 +76,7 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
   
 -   **SuppressStartupBanner**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.  
   

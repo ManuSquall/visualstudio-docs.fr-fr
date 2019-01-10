@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Documents Microsoft
+title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727479"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087748"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
 Retourne un Explorateur de propriétés qui encapsule une variante.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -41,13 +41,13 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Paramètres  
  `pvar`  
- [in] Parcourir la variante de racine.  
+ [in] Variante de racine à parcourir.  
   
  `bstrName`  
  [in] Nom à attribuer à la racine.  
   
  `pdat`  
- [in] Thread sur lequel demander des propriétés. Si ce paramètre est NULL, aucun marshaling n’est effectué.  
+ [in] Thread sur lequel les propriétés de la demande. Si ce paramètre est NULL, aucun marshaling n’est effectuée.  
   
  `ppdob`  
  [out] L’Explorateur de propriétés.  
@@ -55,11 +55,11 @@ HRESULT CreatePropertyBrowser(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode retourne un Explorateur de propriétés qui encapsule une variante.  
   
 ## <a name="see-also"></a>Voir aussi  
