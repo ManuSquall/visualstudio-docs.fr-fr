@@ -1,12 +1,13 @@
 ---
 title: Commutateurs de ligne de commande devenv pour le développement VSPackage | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
-- /setup command line switch
-- /resetskippkgs command line switch
-- /noVSIP command line switch
-- /rootsuffix command line switch
+- /Setup command line switch
+- /ResetSkipPkgs command line switch
+- /RootSuffix command line switch
+- /SafeMode command line switch
+- /Splash command line switch
 - command-line switches
 - registry, Visual Studio SDK
 - command line, switches
@@ -17,35 +18,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4333f7e0c892771ffb9b4643f4814cf3352a8f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ed62724cd7d9c957e602975aebb3be8fc6547d1
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227354"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Commutateurs de ligne de commande devenv pour le développement VSPackage
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet aux développeurs d’automatiser les tâches à partir de la ligne de commande lors de l’exécution *devenv.exe*, le fichier qui démarre l’environnement de développement intégré (IDE) Visual Studio.  
+
+Visual Studio permet aux développeurs d’automatiser les tâches à partir de la ligne de commande lors de l’exécution `devenv.exe`, le fichier qui démarre l’IDE Visual Studio.  
 
  Tâches :  
 
--   Déploiement d’applications dans des configurations prédéfinies d’en dehors de l’IDE.  
+- Déploiement d’applications dans des configurations prédéfinies d’en dehors de l’IDE.  
 
--   Automatiquement la génération de projets à l’aide de la présélection paramètres de build ou des configurations de débogage.  
+- Automatiquement la génération de projets à l’aide de la présélection paramètres de build ou des configurations de débogage.  
 
--   Chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. En outre, vous pouvez personnaliser l’IDE lors de son lancement.  
+- Chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. Vous pouvez également personnaliser l’IDE lors de son lancement.  
 
-## <a name="guidelines-for-switches"></a>Instructions pour les commutateurs  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documentation décrit les commutateurs de ligne de commande devenv de niveau de l’utilisateur. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Devenv prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.  
+## <a name="guidelines-for-switches"></a>Instructions pour les commutateurs
 
+Documentation de Visual Studio décrit le niveau de l’utilisateur `devenv` commutateurs de ligne de commande. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Le `devenv` prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.  
 
 | Commutateur de ligne de commande | Description |
 |---------------------| - |
-| /SafeMode | Lance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode sans échec, chargeant uniquement l’IDE par défaut et les services. Le commutateur /safemode empêche le chargement de tous les packages VS tiers [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] démarre, garantissant ainsi l’exécution stable.<br /><br /> Ce commutateur ne prend aucun argument. |
-| /resetskippkgs | Efface tous les ignorer les options de chargement qui ont été ajoutées par les utilisateurs qui souhaitent éviter de charger les VSPackages problématiques, puis démarre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. La présence d’une balise SkipLoading désactive le chargement d’un VSPackage. Effacement de la balise réactive le chargement du VSPackage.<br /><br /> Ce commutateur ne prend aucun argument. |
-| /rootsuffix | Démarre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide d’un autre emplacement. La commande suivante est exécutée par le raccourci créé par le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] programme d’installation :<br /><br /> devenv /RootSuffix exp<br /><br /> Dans ce cas, exp identifie un emplacement avec un suffixe donné, par exemple 10.0Exp plutôt que 10.0. L’instance expérimentale vous permet de déboguer un VSPackage séparément à partir de l’instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous utilisez pour écrire du code.<br /><br /> Ce commutateur peut prendre n’importe quelle chaîne qui identifie un emplacement que vous avez créé à l’aide de VSRegEx.exe. Pour plus d’informations, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md). |
-| /Splash | Affiche la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] écran de démarrage comme d’habitude, puis affiche une boîte de message avant d’afficher l’IDE principal. La boîte de message vous permet d’étudier l’écran de démarrage, pour rechercher une icône de produit VSPackage, par exemple.<br /><br /> Ce commutateur ne prend aucun argument. |
+| `/ResetSkipPkgs` | Efface toutes les options de chargement de skip qui ont été ajoutées par les utilisateurs qui vous voulez éviter de charger les VSPackages problématiques, puis démarre Visual Studio. La présence d’une balise SkipLoading désactive le chargement d’un VSPackage. Effacement de la balise réactive le chargement du VSPackage.<br /><br /> Ce commutateur ne prend aucun argument. |
+| `/RootSuffix` | Démarre Visual Studio à l’aide d’un autre emplacement. La commande suivante est exécutée par le raccourci créé par le programme d’installation du Kit de développement logiciel Visual Studio :<br /><br /> `devenv /RootSuffix exp`<br /><br /> Dans ce cas, `exp` identifie un emplacement avec un suffixe particulier (par exemple, `10.0Exp` au lieu de `10.0`). L’instance expérimentale vous permet de déboguer un VSPackage séparément à partir de l’instance de Visual Studio que vous utilisez pour écrire du code.<br /><br /> Ce commutateur peut prendre n’importe quelle chaîne qui identifie un emplacement que vous avez créé à l’aide de VSRegEx.exe. Pour plus d’informations, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Démarre Visual Studio en mode sans échec, chargeant uniquement l’IDE par défaut et les services. Le `/SafeMode` commutateur empêche le chargement au démarrage de Visual Studio, garantir la stabilité de l’exécution de tous les packages VS tiers.<br /><br /> Ce commutateur ne prend aucun argument. |
+| `/Setup` | Force Visual Studio à fusionner les métadonnées des ressources qui décrivent les menus, barres d’outils et des groupes de commandes de tous les packages disponibles. Vous pouvez uniquement exécuter cette commande en tant qu’administrateur. <br /><br /> Ce commutateur ne prend aucun argument. La commande `devenv /Setup` est généralement utilisée comme dernière étape du processus d’installation. Utilisation de la `/Setup` commutateur ne démarre l’IDE.|
+| `/Splash` | Indique le démarrage de Visual Studio de l’écran, comme d’habitude, et puis affiche un message indiquant zone avant d’afficher l’IDE principal. La boîte de message vous permet d’étudier l’écran de démarrage (par exemple, pour vérifier une icône de produit VSPackage).<br /><br /> Ce commutateur ne prend aucun argument. |
 
-## <a name="see-also"></a>Voir aussi  
- [Ajouter des commutateurs de ligne de commande](../extensibility/adding-command-line-switches.md)   
- [Commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Voir aussi
+
+- [Ajouter des commutateurs de ligne de commande](../extensibility/adding-command-line-switches.md)
+- [Commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)
