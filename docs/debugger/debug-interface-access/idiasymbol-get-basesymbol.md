@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_baseSymbol | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_baseSymbol | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81cf7e2c924aac3be16774b98bb85eb220256113
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f0c5a6bd5f28f72e154b76b28b10b19a76652eea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841883"
 ---
 # <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
 Récupère le symbole à partir de laquelle le pointeur est basé.  
