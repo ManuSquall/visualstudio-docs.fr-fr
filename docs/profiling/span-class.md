@@ -1,8 +1,6 @@
 ---
 title: span, classe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b1a430ebba3435673c90f85c6270c308c58612d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893916"
 ---
 # <a name="span-class"></a>span, classe
 Définit une phase de l’application.  
@@ -42,10 +40,10 @@ class span;
 ## <a name="inheritance-hierarchy"></a>Hiérarchie d'héritage  
  `span`  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkersobj.h*  
   
- **Espace de noms** : Concurrency::diagnostic  
+ **Espace de noms :** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Voir aussi  
  [diagnostic, espace de noms](../profiling/diagnostic-namespace.md)

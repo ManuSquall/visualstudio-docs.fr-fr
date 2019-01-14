@@ -1,8 +1,6 @@
 ---
 title: FormatVersion, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,21 +13,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f9cae12a66e2b442d6c42032d3f4bf65942127
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7f9b2cf2daff750f626f35b8c98f8269577b4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934068"
 ---
 # <a name="formatversion-task"></a>FormatVersion, tâche
 Ajoute le numéro de révision au numéro de version.  
   
--   Cas #1 : Input: Version=\<undefined>;  Revision=\<peu importe>;   Output: OutputVersion="1.0.0.0"  
+-   Cas n°1 : Entrée : Version=\<undefined>;  Revision=\<Peu importe>;   Output: OutputVersion="1.0.0.0"  
   
--   Cas #2 : Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
+-   Cas n°2 : Entrée : Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
   
--   Cas #3 : Input: Version="1.0.0.0"  Revision=\<peu importe>;  Output: OutputVersion="1.0.0.0"  
+-   Cas n°3 : Entrée : Version="1.0.0.0"  Revision=\<Peu importe>;  Output: OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `FormatVersion` .  

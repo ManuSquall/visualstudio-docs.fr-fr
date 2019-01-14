@@ -1,8 +1,6 @@
 ---
 title: Processus, vue - Données de conflit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943887"
 ---
 # <a name="process-view---contention-data"></a>Processus, vue - données de conflit
 La vue Processus affiche les données de conflit pour les processus et les threads exécutés pendant l’exécution du profilage.  
@@ -41,5 +39,5 @@ La vue Processus affiche les données de conflit pour les processus et les threa
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Processus, vue](../profiling/process-view.md)

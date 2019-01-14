@@ -1,8 +1,6 @@
 ---
 title: Vue Fonctions - Données de conflit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920022"
 ---
 # <a name="functions-view---contention-data"></a>Fonctions, vue - données de conflit
 La vue de rapport Fonctions des données de conflit répertorie les fonctions dans l’exécution du profilage dont l’exécution a été bloquée pendant l’exécution du profilage.  
@@ -44,9 +42,9 @@ La vue de rapport Fonctions des données de conflit répertorie les fonctions da
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Fonctions](../profiling/functions-view.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
+ [Mode Fonction](../profiling/functions-view.md)   
  [Fonctions, vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
- [Vue Fonctions](../profiling/functions-view-sampling-data.md)
+ [Mode Fonction](../profiling/functions-view-instrumentation-data.md)   
+ [Mode Fonctions](../profiling/functions-view-sampling-data.md)

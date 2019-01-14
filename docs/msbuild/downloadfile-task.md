@@ -1,10 +1,8 @@
 ---
 title: DownloadFile, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832922"
 ---
 # <a name="downloadfile-task"></a>DownloadFile, tâche
 Télécharge les fichiers spécifiés à l’aide du protocole HTTP (Hyper-Text Transfer Protocol).
@@ -47,7 +45,7 @@ Télécharge les fichiers spécifiés à l’aide du protocole HTTP (Hyper-Text 
 |`DownloadedFile`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le fichier qui a été téléchargé.|
 |`Retries`|Paramètre `Int32` facultatif.<br /><br /> Spécifie le nombre de tentatives de téléchargement, si toutes les tentatives précédentes ont échoué. La valeur par défaut est zéro.|  
 |`RetryDelayMilliseconds`|Paramètre `Int32` facultatif.<br /><br /> Spécifie le délai en millisecondes entre les tentatives nécessaires. La valeur par défaut est 5 000.|  
-|`SkipUnchangedFiles`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, ignore le téléchargement des fichiers qui sont inchangés. La valeur par défaut est `true`. La tâche `DownloadFile` considère que les fichiers sont inchangés s’ils ont la même taille et la même heure de dernière modification selon le serveur distant. <br /><br />**Remarque :** Les serveurs HTTP n’indiquent pas tous la date de dernière modification des fichiers, ce qui entraîne un nouveau téléchargement du fichier.|
+|`SkipUnchangedFiles`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, ignore le téléchargement des fichiers qui sont inchangés. La valeur par défaut est `true`. La tâche `DownloadFile` considère que les fichiers sont inchangés s’ils ont la même taille et la même heure de dernière modification selon le serveur distant. <br /><br />**Remarque :**  Les serveurs HTTP n’indiquent pas tous la date de dernière modification des fichiers, ce qui entraîne un nouveau téléchargement du fichier.|
 |`SourceUrl`|Paramètre `String` requis.<br /><br /> Spécifie l’URL à télécharger.|
   
 ## <a name="remarks"></a>Notes  

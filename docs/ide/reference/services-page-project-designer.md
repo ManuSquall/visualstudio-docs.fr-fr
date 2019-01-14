@@ -2,7 +2,6 @@
 title: Services, page du Concepteur de projets
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952379"
 ---
 # <a name="services-page-project-designer"></a>Services, page du Concepteur de projets
 
@@ -31,7 +30,7 @@ Pour accéder à la page **Services**, sélectionnez un nœud de projet dans l�
 
 ## <a name="task-list"></a>Liste des tâches
 
-[Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Guide pratique pour configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
@@ -53,13 +52,13 @@ Pour accéder à la page **Services**, sélectionnez un nœud de projet dans l�
 
  **Utiliser l’authentification par formulaire**
 
- Indique que le fournisseur d’authentification utilise l’authentification par formulaire. Cela signifie que votre application doit fournir une interface utilisateur pour la connexion. Pour plus d’informations, consultez [Comment : implémenter la connexion utilisateur avec les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+ Indique que le fournisseur d’authentification utilise l’authentification par formulaire. Cela signifie que votre application doit fournir une interface utilisateur pour la connexion. Pour plus d'informations, voir [Procédure : Implémenter la connexion utilisateur avec les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Emplacement du service d’authentification**
 
  Utilisé uniquement avec l’authentification par formulaire. Spécifie l’emplacement du service d’authentification.
 
- **Facultatif : Fournisseur d’infos d’identification**
+ **Facultatif : Fournisseur d’informations d’identification**
 
  Utilisé uniquement avec l’authentification par formulaire. Indique l’implémentation <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que le service d’authentification utilise pour afficher une boîte de dialogue de connexion quand votre application appelle la méthode `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> et passe des chaînes vides ou la valeur `null` pour les paramètres. Si vous ne renseignez pas cette zone, vous devez passer un nom d’utilisateur et un mot de passe valides à la méthode <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Vous devez spécifier le fournisseur d’informations d’identification sous la forme d’un nom de type qualifié d’assembly. Pour plus d’informations, consultez <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> et [Noms d’assemblys](/dotnet/framework/app-domains/assembly-names). Dans sa forme la plus simple, un nom de type qualifié d’assembly ressemble à l’exemple suivant : `MyNamespace.MyLoginClass, MyAssembly`
 
@@ -79,6 +78,6 @@ Pour accéder à la page **Services**, sélectionnez un nœud de projet dans l�
 
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Guide pratique pour configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)

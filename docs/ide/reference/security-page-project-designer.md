@@ -2,7 +2,6 @@
 title: Page Sécurité, Concepteur de projets
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75877dfd8620af9d3fdfecb5cfcb10761a739515
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987951"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 
@@ -38,7 +37,7 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
 > Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.
 
 
- Quand vous sélectionnez cette option, vous avez la possibilité de sélectionner l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.
+ Quand vous sélectionnez cette option, vous pouvez choisir l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.
 
  Cette option est sélectionnée par défaut pour les projets d’application de navigateur web WPF.
 

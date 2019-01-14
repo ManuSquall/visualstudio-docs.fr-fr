@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour générer des builds incrémentielles | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Générer des builds incrémentielles | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883212"
 ---
-# <a name="how-to-build-incrementally"></a>Guide pratique pour effectuer des builds incrémentielles
+# <a name="how-to-build-incrementally"></a>Procédure : Générer de façon incrémentielle
 Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specify-inputs-and-outputs"></a>Spécifier des entrées et des sorties  
@@ -29,7 +27,7 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Pour spécifier les entrées et les sorties d’une cible  
   
-- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Exemple :  
+- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Par exemple :  
   
   ```xml  
   <Target Name="Build"  
@@ -60,9 +58,9 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise un projet qui génère des fichiers d’aide pour un système d’aide éventuel. Le projet fonctionne en convertissant les fichiers sources *.txt* en fichiers *.content* intermédiaires, qui sont ensuite combinés avec les fichiers de métadonnées XML pour produire le fichier *.help* final utilisé par le système d’aide. Le projet utilise les tâches hypothétiques suivantes :  
   
--   `GenerateContentFiles` : convertit des fichiers *.txt* en fichiers *.content*.  
+-   `GenerateContentFiles`: convertit des fichiers *.txt* en fichiers *.content*.  
   
--   `BuildHelp` : combine des fichiers *.content* et des fichiers de métadonnées XML pour générer le fichier *.help* final.  
+-   `BuildHelp`: combine des fichiers *.content* et des fichiers de métadonnées XML pour générer le fichier *.help* final.  
   
 
  Le projet utilise les transformations pour créer un mappage un-à-un entre les entrées et les sorties de la tâche `GenerateContentFiles`. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md). De même, l’élément `Output` est défini de façon à utiliser automatiquement les sorties de la tâche `GenerateContentFiles` comme entrées de la tâche `BuildHelp`.  

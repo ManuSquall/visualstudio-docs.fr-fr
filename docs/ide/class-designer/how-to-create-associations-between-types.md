@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour créer des associations entre les types (Concepteur de classes)
+title: 'Procédure : Créer des associations entre les types (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -18,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 77f957e112835c138a84accbdc7070f1217fc963
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916599"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Guide pratique pour créer des associations entre les types dans le Concepteur de classes
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Procédure : Créer des associations entre les types dans le Concepteur de classes
 
 Les lignes d’association du **Concepteur de classes** affichent la façon dont les classes d’un diagramme sont liées. Une ligne d'association représente une classe qui est le type d'une propriété ou d'un champ d'une autre classe de votre projet. Les lignes d'association sont en général utilisées pour illustrer les relations les plus importantes entre les classes de votre projet.
 

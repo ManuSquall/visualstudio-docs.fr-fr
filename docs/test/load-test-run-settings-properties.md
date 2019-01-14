@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860203"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
@@ -37,7 +36,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Nombre maximal de violations de seuils**|Le nombre maximum de violations de seuil à enregistrer pour ce test de charge.<br /><br /> Vous pouvez augmenter ce nombre si nécessaire, mais cela augmentera également la taille et le temps de traitement du résultat de test de charge.|
 |**Exécuter des tests unitaires dans le domaine d’application**|Valeur booléenne déterminant si chaque assembly de test unitaire s'exécute dans un domaine d'application séparé lorsque le test de charge contient des tests unitaires. Le paramètre par défaut est True.<br /><br /> Si vos tests unitaires ne requièrent pas un fichier app.config ou un domaine d'application distinct pour fonctionner correctement, vos tests unitaires peuvent s'exécuter plus vite si cette propriété a la valeur `False`.|
 |**Name**|Nom du paramètre d’exécution tel qu’il apparaît dans le nœud **Paramètres d’exécution** de **l’éditeur de test de charge**.|
-|**Niveau de validation**|Définit le niveau le plus élevé de règle de validation qui s’exécutera dans un test de charge. Les règles de validation sont associées aux requêtes de tests de performances web. Chaque règle de validation a un niveau de validation associé : **Haut**, **Moyen** ou **Bas**. Ce paramètre de série de tests de charge spécifie les règles de validation qui s’exécuteront pendant que le test de performances web est exécuté dans le test de charge. Par exemple, si ce paramètre d’exécution a la valeur **Moyen**, toutes les règles de validation marquées avec la valeur **Moyen** ou **Bas** sont exécutées.|
+|**Niveau de validation**|Définit le niveau le plus élevé de règle de validation qui s’exécutera dans un test de charge. Les règles de validation sont associées aux requêtes de tests de performances web. Chaque règle de validation a un niveau de validation associé : **Haut**, **Moyen** ou **Bas**. Ce paramètre de série de tests de charge spécifie les règles de validation qui s’exécuteront pendant que le test de performances web est exécuté dans le test de charge. Par exemple, si ce paramètre d’exécution a la valeur **Moyen**, toutes les règles de validation marquées avec la valeur **Moyen** ou **Bas** sont exécutées.|
 
 ## <a name="logging-properties"></a>Propriétés de journalisation
 
@@ -45,7 +44,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |-|----------------|
 |**Nombre maximal de journaux des tests**|Indique le nombre maximum de journaux des tests à enregistrer pour le test de charge. Lorsque la valeur entrée pour le nombre maximum de journaux des tests est atteint, le test de charge arrête de collecter les journaux. Par conséquent, les journaux seront collectés au début du test, non à la fin. Le test de charge continue de fonctionner jusqu'à ce qu'il soit terminé.|
 |**Enregistrer la fréquence d’entrée au journal pour les tests terminés**|Spécifie la fréquence d'écriture du journal des tests. Cette valeur indique qu'un test sur le nombre de tests entré doit être enregistré dans le journal des tests. Par exemple, si vous entrez la valeur dix, cela indique que le dixième test, le vingtième test, le trentième test, et ainsi de suite, doivent être écrits dans le journal des tests. La valeur 0 indique qu'aucun journal des tests ne sera enregistré.|
-|**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. La valeur par défaut est `True`.<br /><br /> Pour plus d’informations, consultez [Guide pratique pour spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md).|
+|**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. La valeur par défaut est `True`.<br /><br /> Pour plus d'informations, voir [Procédure : spécifier si les échecs de test doivent être enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Pour plus d’informations, consultez [Modifier les paramètres de journalisation des tests de charge](../test/modify-load-test-logging-settings.md).
 
@@ -54,7 +53,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |Property|Définition|
 |-|----------------|
 |**Type de stockage**|Mode de stockage des compteurs de performance obtenus dans un test de charge. Les options sont les suivantes :<br /><br /> -   **Base de données** : nécessite une base de données SQL avec un **magasin des résultats des tests de charge**.<br />-   **Aucune**.|
-|**Stockage des détails de minuterie**|Utilisé pour déterminer les détails qui seront stockés dans le **magasin des résultats des tests de charge**. Trois valeurs sont disponibles :<br /><br /> -   **AllIndividualDetails** : Collecter et stocker des valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**. C'est obligatoire si vous prévoyez d'utiliser le **graphique d'activités des utilisateurs virtuels** dans l'**analyseur de test de charge**.<br />     Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Aucune** : Ne collecter aucune valeur de minuterie. Il s’agit de la valeur par défaut pour Visual Studio 2013 Update 4 et ses mises en production ultérieures.<br />-   **StatisticsOnly** : Collecter et stocker uniquement les statistiques au lieu de stocker les valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**.<br /><br /> Pour plus d’informations, voir [Guide pratique : Spécifier la propriété de stockage des détails de minutage](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Stockage des détails de minuterie**|Utilisé pour déterminer les détails qui seront stockés dans le **magasin des résultats des tests de charge**. Trois valeurs sont disponibles :<br /><br /> -   **AllIndividualDetails** : Collecter et stocker des valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**. C'est obligatoire si vous prévoyez d'utiliser le **graphique d'activités des utilisateurs virtuels** dans l'**analyseur de test de charge**.<br />     Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Aucune** : Ne collecter aucune valeur de minuterie. Il s’agit de la valeur par défaut pour Visual Studio 2013 Update 4 et ses mises en production ultérieures.<br />-   **StatisticsOnly** : Collecter et stocker uniquement les statistiques au lieu de stocker les valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**.<br /><br /> Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Propriétés de traçage SQL
 
@@ -72,7 +71,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Itérations de tests**|Spécifie le nombre total de tests individuels à exécuter avant que le test de charge ne soit complet. Cette propriété s'applique seulement lorsque la propriété "Utiliser les itérations de test" a la valeur `True`.|
 |**Utiliser les itérations des tests**|Si le paramètre Utiliser les itérations de test a la valeur `True`, le test de charge s'exécute jusqu'à ce que les tests individuels effectués dans le test de charge atteignent le nombre spécifié par la propriété « Itérations de test ». Dans ce cas, les paramètres basés sur le temps, à savoir Durée de préchauffage, Durée d'exécution et Durée de refroidissement, sont ignorés. Si la paramètre Utiliser les itérations de test a la valeur `False`, tous les paramètres de minutage s'appliquent et le paramètre Itérations de Test est ignoré.|
 
- Pour plus d’informations, consultez [Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ Pour plus d'informations, voir [Procédure : Spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Propriétés de minutage
 
@@ -80,7 +79,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |-|----------------|
 |**Durée de refroidissement**|Durée de la période de refroidissement du test, exprimée au format hh:mm:ss. Les tests individuels d'un test de charge peuvent continuer à s'exécuter lorsque le test de charge se termine. Durant la période de refroidissement, ces tests peuvent continuer jusqu'à être terminés ou jusqu'à la fin de la période de refroidissement. Par défaut, il n'y a pas de période de refroidissement et les tests individuels sont terminés lorsque le test de charge se termine selon le paramètre Durée d'exécution.|
 |**Durée d’exécution**|Longueur du test, au format hh:mm:ss.|
-|**Taux d’échantillonnage**|Intervalle auquel capturer des valeurs de compteur de performance, au format hh:mm:ss.<br /><br /> Pour plus d’informations, voir [Guide pratique : Spécifier l’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Taux d’échantillonnage**|Intervalle auquel capturer des valeurs de compteur de performance, au format hh:mm:ss.<br /><br /> Pour plus d'informations, voir [Procédure : spécifier le taux d’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Durée de préchauffage**|Période entre le début du test et le moment où les échantillons de données commencent à être enregistrés, au format hh:mm:ss. Fréquemment utilisé pour charger pas à pas des utilisateurs virtuels de façon à atteindre un certain niveau de charge avant d'enregistrer des valeurs d'échantillonnage. Les valeurs d’échantillonnage capturées avant la période de préchauffage sont affichées dans **l’analyseur de test de charge**.|
 
 ## <a name="webtest-connections-properties"></a>Propriétés de connexions WebTest
@@ -91,7 +90,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Taille du pool de connexions WebTest**|Spécifie le nombre maximal de connexions à établir entre l’agent de test de charge et le serveur web. Cela s’applique uniquement au modèle **Pool de connexions**.|
 
 ##  <a name="change-run-setting-properties"></a>Changer les propriétés des paramètres d’exécution
- Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charge avec divers paramètres de propriété afin de pouvoir exécuter le test de charge dans différentes conditions, par exemple, vous pouvez ajouter un nouveau paramètre de test et utiliser un taux d'échantillonnage distinct, ou vous pouvez spécifier une plus longue durée d'exécution. Vous ne pouvez utiliser qu'un seul paramètre d'exécution à la fois et vous devez spécifier le paramètre d'exécution à utiliser en le marquant comme actif. Pour obtenir un exemple, consultez [Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+ Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charge avec divers paramètres de propriété afin de pouvoir exécuter le test de charge dans différentes conditions, par exemple, vous pouvez ajouter un nouveau paramètre de test et utiliser un taux d'échantillonnage distinct, ou vous pouvez spécifier une plus longue durée d'exécution. Vous ne pouvez utiliser qu'un seul paramètre d'exécution à la fois et vous devez spécifier le paramètre d'exécution à utiliser en le marquant comme actif. Pour voir un exemple, consultez [Comment : sélectionner le paramètre d’exécution active d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Pour modifier les paramètres d'exécution
 

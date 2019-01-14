@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour configurer la réduction du bruit dans les vues Rapports | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Configurer la réduction du bruit dans les vues des rapports | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875243"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Guide pratique pour configurer la réduction du bruit dans les vues Rapports
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Procédure : Configurer la réduction du bruit dans les vues des rapports
 Vous pouvez configurer la réduction du bruit dans les rapports de performances en limitant la quantité de données affichées dans la vue Arborescence des appels et la vue Allocation. La réduction du bruit vous permet de repérer plus rapidement les problèmes de performances. Cette fonctionnalité est utile lorsque vous analysez des rapports de performances.  
   
  Les options de configuration de la réduction de bruit sont les suivantes :  

@@ -2,7 +2,6 @@
 title: Utiliser le Concepteur de classes
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 6533827c3aa962cf8856752c0482678684e65755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853422"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Concevoir et afficher des classes et des types avec le Concepteur de classes
 
@@ -52,7 +51,7 @@ La première étape de la présentation des informations de projet consiste à c
 
 En plus de définir le contenu affiché par chaque diagramme de classes, vous pouvez également changer la façon dont les informations sont présentées. Pour plus d’informations, consultez [Guide pratique pour personnaliser des diagrammes de classes](how-to-customize-class-diagrams.md).
 
-Après avoir affiné un ou plusieurs diagrammes de classes, vous pouvez les copier dans des documents Microsoft Office et les imprimer, ou les exporter sous forme de fichiers image. Pour plus d’informations, consultez [Guide pratique pour copier les éléments d’un diagramme de classes vers un document Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Guide pratique pour imprimer des diagrammes de classes](how-to-print-class-diagrams.md) et [Guide pratique pour exporter des diagrammes de classes comme images](how-to-export-class-diagrams-as-images.md).
+Après avoir affiné un ou plusieurs diagrammes de classes, vous pouvez les copier dans des documents Microsoft Office et les imprimer, ou les exporter sous forme de fichiers image. Pour plus d'informations, voir [Procédure : Copier les éléments d’un diagramme de classes vers un document Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Guide pratique pour imprimer des diagrammes de classes](how-to-print-class-diagrams.md) et [Guide pratique pour exporter des diagrammes de classes sous forme d’images](how-to-export-class-diagrams-as-images.md).
 
 > [!NOTE]
 > Le Concepteur de classes n'effectue pas le suivi de l'emplacement de vos fichiers sources. Ainsi, si vous changez la structure de votre projet ou si vous déplacez des fichiers sources du projet, le Concepteur de classes peut perdre la trace du type, en particulier le type source d'un typedef, les classes de base ou les types d'association. Vous pouvez obtenir une erreur telle que celle-ci : **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Dans ce cas, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour le réafficher.

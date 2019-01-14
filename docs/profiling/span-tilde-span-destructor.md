@@ -1,8 +1,6 @@
 ---
 title: 'span :: ~ span, destructeur | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::~span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebde2e9659716a73943e2861f8856f6a9817b34b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c6662dca4abdb39b229ef9f78eed8767c2bb4084
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952149"
 ---
 # <a name="spanspan-destructor"></a>span::~span, destructeur
 Détruit l’objet `span` et libère ses ressources.  
@@ -30,10 +28,10 @@ Détruit l’objet `span` et libère ses ressources.
 ~span();  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkersobj.h*  
   
- **Espace de noms** : Concurrency::diagnostic
+ **Espace de noms :** Concurrency::diagnostic
  
  ## <a name="see-also"></a>Voir aussi
  [span, classe](../profiling/span-class.md)

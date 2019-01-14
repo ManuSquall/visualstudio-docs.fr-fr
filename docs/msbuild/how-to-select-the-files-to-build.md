@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour sélectionner des fichiers dans une build | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Sélectionner des fichiers dans une build | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875405"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
+# <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.  
   
 ## <a name="specify-inputs"></a>Spécifier les entrées  

@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour créer un rapport de suivi des appels des Outils de profilage | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Créer un rapport de suivi des appels des Outils de profilage | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, viewing ETW data
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a363554dfab8463ed91a82ffae9dea4f52d435d4
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c2d48b266108a053fa24da517d2367fe85b2b6a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985863"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Guide pratique pour créer un rapport de suivi d’appels des Outils de profilage
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procédure : Créer un rapport de suivi d’appels des outils de profilage
 Le *rapport de suivi des appels* des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] liste les informations chronologiques de chaque point d’entrée et de sortie des fonctions de votre application, et de chaque appel effectué par votre fonction à d’autres fonctions. Les rapports de suivi des appels sont disponibles pour les données de profilage seulement si elles ont été collectées avec la méthode d’instrumentation.  
   
 > [!NOTE]
@@ -42,5 +40,5 @@ Le *rapport de suivi des appels* des Outils de profilage [!INCLUDE[vsprvs](../co
 
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour collecter les données ETW (suivi d’événements pour Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [API des outils de profilage](../profiling/profiling-tools-apis.md)

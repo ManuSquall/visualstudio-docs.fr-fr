@@ -1,8 +1,6 @@
 ---
 title: CvWriteAlert, fonction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 743cec7c632bbfca7faf3659ffba5b337553ecee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921985"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert, fonction
 Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.  
@@ -69,12 +67,12 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkers.h*  
   
- **Unicode** : CvWriteAlertW, CvWriteAlertVW  
+ **Unicode :** CvWriteAlertW, CvWriteAlertVW  
   
- **ANSI** : CvWriteAlertA, CvWriteAlertVA  
+ **ANSI :** CvWriteAlertA, CvWriteAlertVA  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

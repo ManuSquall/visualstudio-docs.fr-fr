@@ -2,7 +2,6 @@
 title: Ajouter des références dans le Gestionnaire de références
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856278"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du gestionnaire de références
 
 Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement *mscorlib.dll*. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.
 
@@ -94,7 +93,7 @@ Selon la version du .NET Framework de votre projet, certains composants de la li
 
 - Un composant qui utilise une version récente du .NET Framework est incompatible avec un projet qui cible une version antérieure du .NET Framework.
 
-    Pour plus d’informations sur le changement de la version cible du .NET Framework d’un projet, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    Pour plus d’informations sur la façon de modifier la version cible du .NET Framework dans un projet, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 - Un composant qui utilise le [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] est incompatible avec un projet qui cible le [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
 
@@ -155,9 +154,9 @@ L’onglet **Windows** liste tous les kits SDK spécifiques aux plateformes sur 
 
 Vous pouvez générer un fichier WinMD dans Visual Studio de deux façons :
 
-- **Projets managés d’applications de Store Windows 8.x** : pour permettre aux projets d’application de Store Windows 8.x de générer des fichiers binaires WinMD, définissez **Propriétés du projet** > **Type de sortie = fichier WinMD**. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend les espaces de noms `A.B` et `A.B.C`, les noms possibles du WinMD généré sont *A.winmd* et *A.B.winmd*. Si un utilisateur entre une valeur **Propriétés de projet** > **Nom d’assembly** ou **Propriétés de projet** > **Espace de noms**, qui est disjointe de l’ensemble d’espaces de noms du projet, ou s’il n’existe aucun espace de noms de sur-ensemble dans un projet, un avertissement de build est généré : « 'A.winmd' n’est pas un nom de fichier .winmd valide pour cet assembly. » Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n’existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l’exécution. Dans cet assembly, le plus petit espace de noms commun est `CSWSClassLibrary1`. Un projet Visual Basic ou C# d’application de bureau peut uniquement consommer des WinMD générés à l’aide de SDK Windows 8 (appelés WinMD internes), et ne peut pas générer de WinMD.
+- **Projets managés d’application du Store Windows 8.x** : les projets d’application du Store Windows 8.x peuvent générer les binaires de WinMD en définissant **Propriétés du projet** > **Type de sortie = WinMD File**. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend les espaces de noms `A.B` et `A.B.C`, les noms possibles du WinMD généré sont *A.winmd* et *A.B.winmd*. Si un utilisateur entre une valeur **Propriétés de projet** > **Nom d’assembly** ou **Propriétés de projet** > **Espace de noms**, qui est disjointe de l’ensemble d’espaces de noms du projet, ou s’il n’existe aucun espace de noms de sur-ensemble dans un projet, un avertissement de build est généré : « 'A.winmd' n’est pas un nom de fichier .winmd valide pour cet assembly. » Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n’existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l’exécution. Dans cet assembly, le plus petit espace de noms commun est `CSWSClassLibrary1`. Un projet Visual Basic ou C# d’application de bureau peut uniquement consommer des WinMD générés à l’aide de SDK Windows 8 (appelés WinMD internes), et ne peut pas générer de WinMD.
 
-- **Projets d’application de Store Windows 8.x au format natif** : un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.
+- **Projets natifs d’application du Store Windows 8.x** : un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.
 
 L’onglet **Windows** comprend deux sous-groupes.
 

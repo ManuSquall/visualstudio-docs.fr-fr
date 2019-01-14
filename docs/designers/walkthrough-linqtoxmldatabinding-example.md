@@ -1,8 +1,7 @@
 ---
-title: 'Procédure pas à pas : exemple LinqToXmlDataBinding'
+title: 'Procédure pas à pas : Exemple LinqToXmlDataBinding'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6642981934c764fc2f6d512cb19502a21ac224e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850698"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Procédure pas à pas : exemple LinqToXmlDataBinding
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Procédure pas à pas : Exemple LinqToXmlDataBinding
 Cette procédure pas à pas décrit l’exemple LinqToXmlDataBinding et fournit des explications concernant les aspects les plus intéressants du contenu des deux principaux fichiers sources, *L2DBForm.xaml* et *L2DBForm.xaml.cs*.
 
 ## <a name="prerequisites"></a>Prérequis

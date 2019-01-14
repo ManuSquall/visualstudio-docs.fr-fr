@@ -2,7 +2,6 @@
 title: Création d'une interface utilisateur à l'aide du concepteur XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880403"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Créer une interface utilisateur avec le concepteur XAML dans Visual Studio
 
@@ -123,11 +122,11 @@ Spécifie différentes tailles et résolutions d'affichage pour votre applicatio
 
 **Orientation**
 
-Spécifie différentes orientations de l'application : **Paysage** ou **Portrait**.
+Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
 
 **Bord**
 
-Spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
+Spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
 
 **Contraste élevé**
 
@@ -201,4 +200,4 @@ Plusieurs options apparaissent en haut de la fenêtre **Propriétés**. Vous pou
 
 - [Utilisation des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md)
-- [Procédure pas à pas : liaison aux données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour créer un héritage entre les types (Concepteur de classes)
+title: 'Procédure : Créer l’héritage entre les types (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925561"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Guide pratique pour créer un héritage entre les types dans le Concepteur de classes
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procédure : Créer un héritage entre les types dans le Concepteur de classes
 
 Pour créer une relation d’héritage entre deux types sur un diagramme de classes à l’aide du **Concepteur de classes**, connectez le type de base à son ou ses types dérivés. Vous pouvez avoir une relation d'héritage entre deux classes, entre une classe et une interface ou entre deux interfaces.
 
@@ -30,7 +29,7 @@ Pour créer une relation d’héritage entre deux types sur un diagramme de clas
 
 1.  À partir de votre projet affiché dans **l’Explorateur de solutions**, ouvrez le fichier du diagramme de classes (.cd).
 
-     Si vous n'avez pas de diagramme de classes, créez-en un. Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
+     Si vous n'avez pas de diagramme de classes, créez-en un. Voir [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
 
 2.  Dans la **boîte à outil**, sous **Concepteur de classes**, cliquez sur **Héritage**.
 
@@ -53,5 +52,5 @@ Pour créer une relation d’héritage entre deux types sur un diagramme de clas
 
 - [Héritage](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Éléments fondamentaux de l’héritage](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Guide pratique pour afficher l’héritage entre des types](how-to-view-inheritance-between-types.md)
+- [Guide pratique pour voir l’héritage entre les types](how-to-view-inheritance-between-types.md)
 - [Classes de Visual C++ dans le concepteur de classes](visual-cpp-classes.md)

@@ -2,19 +2,18 @@
 title: Modifier le style des objets dans Blend
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906785"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 
@@ -22,7 +21,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
 
 Si vous voulez réutiliser des paramètres ou des groupes de paramètres, créez une ressource réutilisable. Il peut s’agir d’un *style*, d’un *modèle* ou de quelque chose de simple comme une couleur personnalisée. Vous pouvez aussi faire en sorte qu'un contrôle change d'apparence en fonction de son état, par exemple, un bouton qui devient vert quand l'utilisateur clique dessus.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceaux : modifier l'apparence d'un objet
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceaux : modifier l’apparence d’un objet
 
 Appliquez un pinceau à un objet si vous voulez modifier son apparence.
 
@@ -44,13 +43,13 @@ Vous pouvez créer un pinceau visuel à partir d'un contrôle, tel qu'un bouton.
 
 ![Pinceau visuel](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Pinceau visuel en mosaïque](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Styles et modèles : créer une apparence cohérente pour les contrôles
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Styles et modèles : créer une apparence cohérente parmi les contrôles
 
 Vous pouvez concevoir l’apparence et le comportement d’un même contrôle et appliquer cette conception à d’autres contrôles pour vous éviter d’avoir à les gérer un à un.
 
-**Avez-vous intérêt à utiliser un style ?** Si vous voulez simplement définir des propriétés par défaut (comme la couleur d’un bouton), utilisez un *style*. Vous pouvez modifier un contrôle même après lui avoir appliqué un style.
+**Avez-vous intérêt à utiliser un style ?**  : si vous voulez simplement définir des propriétés par défaut (comme la couleur d’un bouton), utilisez un *style*. Vous pouvez modifier un contrôle même après lui avoir appliqué un style.
 
-**Avez-vous intérêt à utiliser un modèle ?** Si vous voulez changer la structure d’un contrôle, utilisez un *modèle*. Si vous envisagez de convertir un graphique ou un logo en bouton, sachez que vous ne pouvez pas modifier un contrôle après lui avoir appliqué un modèle.
+**Avez-vous intérêt à utiliser un modèle ?**  : si vous voulez changer la structure d’un contrôle, utilisez un *modèle*. Si vous envisagez de convertir un graphique ou un logo en bouton, sachez que vous ne pouvez pas modifier un contrôle après lui avoir appliqué un modèle.
 
 ### <a name="create-a-template-or-style"></a>Créer un modèle ou un style
 
@@ -94,9 +93,9 @@ Les contrôles peuvent avoir des apparences visuelles différentes en fonction d
 
 ![État de pointage avec la souris](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gérer l’état de vos contrôles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Regardez une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gérer l’état de vos contrôles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressources : créer des couleurs, des styles et des modèles, et les réutiliser ultérieurement
 
 Vous pouvez convertir pratiquement tous les éléments de votre projet en ressource. Une ressource consiste simplement en un objet que vous pouvez réutiliser à différents endroits dans votre application. Par exemple, vous pouvez créer une couleur, en faire une ressource, puis appliquer cette couleur à plusieurs objets. Pour modifier la couleur de tous ces objets, il vous suffit de modifier la ressource de couleur.
 

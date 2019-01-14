@@ -1,8 +1,6 @@
 ---
 title: CrossSession | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 192ddfb7312dff13b457f36940220f0bb17fe2c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909253"
 ---
 # <a name="crosssession"></a>CrossSession
 L’option *VSPerfCmd.exe* **CrossSession** permet au profileur de collecter des données de n’importe quelle session console. L’option **CrossSession** doit être utilisée avec l’option **Start**.  
@@ -37,7 +35,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Start:** `Method`  
  L’option **Start** initialise le profileur avec la méthode de profilage spécifiée.  
   
- **Attach:** _PID_[**,**_PID_]  
+ **Attach :** _PID_[**,**_PID_]  
  Démarre le profilage des processus spécifiés.  
   
  **Detach**[**:**_PID_[,_PID_]]  

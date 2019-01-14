@@ -3,7 +3,6 @@ title: Options des Outils R
 description: Document de référence pour les options dans Visual Studio pour le langage R et les fonctionnalités associées.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37342743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900559"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Options des Outils R dans Visual Studio
 
@@ -30,10 +29,10 @@ Les paramètres sont accessibles par l’intermédiaire du menu **Outils R** > *
 
 Les options et paramètres propres à R sont accessibles à l’aide des méthodes ci-dessous. Vous devez cocher la case **Afficher tous les paramètres** située au bas de la boîte de dialogue **Options** pour que toutes ces sections apparaissent.
 
-- Options de mise en forme de code (consultez [Options de l’éditeur](editing-r-code-in-visual-studio.md#editor-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Mise en forme**
-- Options Linter (consultez [Linting](linting-r-code.md)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Lint**
-- Options avancées de l’éditeur ([décrites dans cet article](#text-editor--r--advanced-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Avancé**
-- Options comportementales ([décrites dans cet article](#r-tools--advanced-options)) : menu **Outils R** > **Options** ou **Outils** > **Options**, puis faites défiler jusqu’à **Outils R**.
+- Options de mise en forme de code (voir [Options de l’éditeur](editing-r-code-in-visual-studio.md#editor-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Mise en forme**
+- Options de linting (voir [Linting](linting-r-code.md)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Lint**
+- Options avancées de l’éditeur ([décrites dans cet article](#text-editor--r--advanced-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Avancé**
+- Options comportementales ([décrites dans cet article](#r-tools--advanced-options)) : menu **Outils R** > **Options**, ou **Outils** > **Options**, puis faites défiler jusqu’à **Outils R**.
 
 La commande **Outils R** > **Paramètres de science des données** affecte aussi plusieurs paramètres différents dans Visual Studio globalement. Cette commande est décrite dans la section suivante.
 

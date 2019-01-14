@@ -1,8 +1,6 @@
 ---
 title: marker_series::write_alert, méthode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 43da603670f2eccca408b8a47b13c8a9b9ea79ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950022"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert, méthode
 Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.  
@@ -37,10 +35,10 @@ void write_alert(
  `_Format`  
  Chaîne de mise en forme composite contenant du texte associé à zéro, un ou plusieurs éléments de mise en forme qui correspondent aux objets de la liste d’arguments.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkersobj.h*  
   
- **Espace de noms** : Concurrency::diagnostic  
+ **Espace de noms :** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Voir aussi  
  [marker_series, classe](../profiling/marker-series-class.md)

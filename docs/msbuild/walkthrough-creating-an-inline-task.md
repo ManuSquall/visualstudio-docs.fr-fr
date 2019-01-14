@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : création d’une tâche inline | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Création d’une tâche inline | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2091bfa5408c85e4fb4dd4b8973a74d1da8b7132
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b70a8540a87e347cdf75ea888ad4ef0cae66594e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910202"
 ---
-# <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
+# <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Pour plus d’informations, voir [Tâches inline](../msbuild/msbuild-inline-tasks.md).  
   
  Cette procédure pas à pas montre comment créer et exécuter les tâches inline suivantes :  

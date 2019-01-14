@@ -1,8 +1,6 @@
 ---
 title: GenerateResource, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917499"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tâche)
 Convertit les fichiers *.txt* et *.resx* (format de ressources XML) en fichiers *.resources* binaires du Common Language Runtime qui peuvent être incorporés dans un exécutable binaire runtime ou compilés en assemblys satellites. Cette tâche est généralement utilisée pour convertir des fichiers *.txt* ou *.resx* en fichiers *.resources*. La fonctionnalité de la tâche `GenerateResource` est similaire à [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -38,7 +36,7 @@ Convertit les fichiers *.txt* et *.resx* (format de ressources XML) en fichiers 
 |`AdditionalInputs`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient des entrées supplémentaires pour la vérification des dépendances effectuée par cette tâche. Par exemple, les fichiers projet et cibles doivent généralement être des entrées, pour que toutes les ressources soient régénérées en cas de mise à jour.|  
 |`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Spécifie un tableau de paires nom-valeur de variables d’environnement qui doivent être passées au fichier *resgen.exe* généré, en plus (ou en remplacement sélectif) du bloc d’environnement normal.|  
 |`ExcludedInputPaths`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie un tableau d’éléments qui indiquent les chemins à partir desquels les entrées suivies seront ignorées pendant la vérification de mise à jour.|  
-|`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si sa valeur est `true`, exécute *tlbimp.exe* et *aximp.exe* à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre autorise le multi-ciblage de `ResolveComReferences`.|  
+|`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, exécute *tlbimp.exe* et *aximp.exe* à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre autorise le multi-ciblage de `ResolveComReferences`.|  
 |`FilesWritten`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les noms de tous les fichiers écrits sur disque. Cela comprend le fichier cache, le cas échéant. Ce paramètre est utile pour les implémentations de Clean.|  
 |`MinimalRebuildFromTracking`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit un commutateur qui spécifie si la génération incrémentielle suivie sera utilisée. Si la valeur est `true`, la génération incrémentielle est activée ; sinon, une régénération est exécutée.|  
 |`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Récupère ou définit une valeur booléenne qui indique si un [AppDomain](/dotnet/api/system.appdomain) doit être créé pour évaluer les fichiers de ressources (*.resx*) (True) ou si un [AppDomain](/dotnet/api/system.appdomain) doit être créé uniquement quand les fichiers de ressources font référence à un assembly d’utilisateur (False).|  
@@ -46,7 +44,7 @@ Convertit les fichiers *.txt* et *.resx* (format de ressources XML) en fichiers 
 |`PublicClass`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, crée une classe de ressource fortement typée en tant que classe publique.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers *.resx*. Les éléments de données de fichiers *.resx* peuvent avoir un type .NET. Lors de la lecture du fichier *.resx*, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|  
 |`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme *resgen.exe*.|  
-|`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à convertir. Les éléments passés à ce paramètre doivent avoir l’une des extensions de fichier suivantes :<br /><br /> -   *.txt* : spécifie l’extension d’un fichier texte à convertir. Les fichiers texte ne peuvent comporter que des ressources de chaîne.<br />-   *.resx* : spécifie l’extension d’un fichier de ressources XML à convertir.<br />-   *.restext* : spécifie le même format que *.txt*. Cette autre extension est utile si vous voulez distinguer clairement les fichiers sources qui contiennent des ressources d’autres fichiers sources dans votre processus de génération.<br />-   *.resources* : spécifie l’extension d’un fichier de ressources à convertir.|  
+|`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à convertir. Les éléments passés à ce paramètre doivent avoir l’une des extensions de fichier suivantes :<br /><br /> -   *.txt* : spécifie l’extension d’un fichier texte à convertir. Les fichiers texte ne peuvent comporter que des ressources de chaîne.<br />-   *.resx* : spécifie l’extension d’un fichier de ressources XML à convertir.<br />-   *.restext* : spécifie le même format que *.txt*. Cette autre extension est utile si vous voulez distinguer clairement les fichiers sources qui contiennent des ressources d’autres fichiers sources dans votre processus de génération.<br />-   *.resources* : spécifie l’extension d’un fichier de ressources à convertir.|  
 |`StateFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le chemin d’un fichier cache facultatif qui sert à accélérer la vérification des dépendances des liens dans les fichiers d’entrée *.resx*.|  
 |`StronglyTypedClassName`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de classe pour la classe de ressources fortement typée. Si vous ne spécifiez pas ce paramètre, le nom de base du fichier de ressources est utilisé.|  
 |`StronglyTypedFilename`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier source. Si vous ne spécifiez pas ce paramètre, le nom de la classe est utilisé comme nom de base, avec une extension qui dépend du langage. Par exemple : *MyClass.cs*.|  
@@ -87,7 +85,7 @@ Convertit les fichiers *.txt* et *.resx* (format de ressources XML) en fichiers 
  En supposant que l’assembly se nomme myAssembly, le code suivant génère une ressource incorporée nommée *someQualifier.someResource.resources* :  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Sans les métadonnées \<LogicalName>, la ressource se nommerait *myAssembly.myResource.resources*.  Cet exemple s’applique uniquement au processus de génération Visual Basic et Visual C#.  

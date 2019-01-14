@@ -1,8 +1,6 @@
 ---
 title: StartProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StartProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d08c2041d0432bb215b46401521583c921bcbc92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b61f52cda107a05d76c4642ca5775e8800bfb8dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952058"
 ---
 # <a name="startprofile"></a>StartProfile
 La fonction `StartProfile` définit le compteur sur 1 (désactivé) pour le niveau de profilage spécifié.  
@@ -69,7 +67,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="function-information"></a>Informations sur la fonction  
  En-tête : déclaré dans *VSPerf.h*  
   
- Bibliothèque d’importation : *VSPerf.lib*  
+ Bibliothèque d’importation : *VSPerf.lib*  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant illustre l’appel de la fonction StartProfile.  

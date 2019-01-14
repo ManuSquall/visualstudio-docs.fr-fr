@@ -2,7 +2,6 @@
 title: Tests de couverture du code
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958129"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -32,7 +31,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
@@ -42,7 +41,7 @@ La fonctionnalité de couverture du code n’est disponible que dans l’éditio
 
 2. Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png) **Afficher la coloration de la couverture du code**.
 
-   Pour changer les couleurs ou utiliser des caractères gras, choisissez **Outils** > **Options** > **Environnement** > **Polices et couleurs** > **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
+   Pour changer les couleurs ou utiliser des caractères gras, choisissez **Outils** > **Options** > **Environnement** > **Polices et couleurs** > **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
 
 3. Si les résultats indiquent une couverture basse, recherchez les parties du code qui ne sont pas testées, puis élaborez d'autres tests pour les couvrir. Les équipes de développement visent généralement une couverture de code qui avoisine 80 %. Dans certaines situations, une couverture inférieure est acceptable. Par exemple, une couverture inférieure est acceptable lorsqu'un code est généré à partir d'un modèle standard.
 
@@ -104,7 +103,7 @@ Vous pouvez exclure des éléments spécifiques dans votre code à partir des no
 > [!TIP]
 > Le fait d’exclure une classe n'a pas pour effet d’exclure ses classes dérivées.
 
-Exemple :
+Par exemple :
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;

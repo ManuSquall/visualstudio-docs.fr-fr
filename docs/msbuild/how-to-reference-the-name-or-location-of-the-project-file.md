@@ -1,8 +1,6 @@
 ---
-title: 'Comment : référencer le nom ou l’emplacement du fichier projet | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Référencer le nom ou l’emplacement du fichier projet | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906031"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Guide pratique pour référencer le nom ou l’emplacement du fichier projet
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procédure : Référencer le nom ou l’emplacement du fichier projet
 Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés associées au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="use-the-project-properties"></a>Utiliser les propriétés du projet
@@ -33,7 +31,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
   
 #### <a name="to-use-the-project-properties"></a>Pour utiliser les propriétés du projet
   
-- Référencez la propriété dans le fichier projet avec la notation $(), comme vous le feriez avec n’importe quelle propriété. Exemple :  
+- Référencez la propriété dans le fichier projet avec la notation $(), comme vous le feriez avec n’importe quelle propriété. Par exemple :  
   
   ```xml  
   <CSC Sources = "@(CSFile)"   

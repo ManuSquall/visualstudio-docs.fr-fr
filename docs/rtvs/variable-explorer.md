@@ -3,19 +3,18 @@ title: Explorateur de variables pour R
 description: L’Explorateur de variables dans Visual Studio affiche toutes les variables dans une portée donnée dans la session R active.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988934"
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
 
@@ -71,7 +70,7 @@ L’**Explorateur de variables** change automatiquement de portée de fonction �
 
 ## <a name="import-data-into-variable-explorer"></a>Importer des données dans l’Explorateur de variables
 
-Deux commandes de la barre d’outils de l’**Explorateur de variables**, qui sont également accessibles par l’intermédiaire du menu **Outils R** > **Données**, permettent d’importer des jeux de données CSV externes dans votre session R : **Importer le jeu de données dans la session R à partir d’une URL web** et **Importer le jeu de données dans la session R à partir d’un fichier texte**.
+Deux commandes de la barre d’outils de l’**Explorateur de variables**, qui sont également accessibles par l’intermédiaire du menu **Outils R** > **Données**, permettent d’importer des jeux de données CSV externes dans votre session R :  **Importer le jeu de données dans la session R à partir d’une URL web** et **Importer le jeu de données dans la session R à partir d’un fichier texte**.
 
 Une fois que vous avez identifié le fichier CSV à importer, Visual Studio affiche une boîte de dialogue **Importer le jeu de données**, dans laquelle figurent des options pour contrôler la manière dont ce fichier de données est analysé (autrement dit, quel est le séparateur de champs et comment gérer les guillemets). Vous pouvez également afficher un aperçu de la trame de données importée et du fichier de données d’origine :
 

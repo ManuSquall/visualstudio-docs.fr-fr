@@ -1,8 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915466"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .*csv*.  
@@ -44,7 +42,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` doivent être des fichiers .*vsp* ou .*vsps* valides.  
   
 ## <a name="symbol-files"></a>Fichiers de symboles  
- Pour afficher les informations de symbole telles que les noms de fonction et les numéros de ligne, VSPerfReport doit accéder aux fichiers de symboles (.PDB) des composants profilés et aux fichiers de symboles Windows. Pour plus d’informations, consultez [Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Pour afficher les informations de symbole telles que les noms de fonction et les numéros de ligne, VSPerfReport doit accéder aux fichiers de symboles (.PDB) des composants profilés et aux fichiers de symboles Windows. Pour plus d'informations, voir [Procédure : Spécifier les emplacements du fichier de symboles à partir de la ligne de commande](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Options de rapport générales  
  Le tableau suivant décrit les options générales de mise en forme de rapport et les options qui sélectionnent les données devant figurer dans le rapport.  

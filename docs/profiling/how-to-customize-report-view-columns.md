@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour personnaliser les colonnes de la vue Rapport | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Personnaliser les colonnes de vue des rapports | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f06b360348ad06df6433c67a4cae7f543ea5ce
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861158"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Guide pratique pour personnaliser les colonnes de la vue de rapport
+# <a name="how-to-customize-report-view-columns"></a>Procédure : Personnaliser les colonnes de vue des rapports
 Les outils d’analyse des performances de Visual Studio Team System Development Edition sont entièrement intégrés à l’environnement de développement intégré (IDE) pour fournir une expérience utilisateur transparente. La liste qui suit répertorie les vues que vous pouvez personnaliser en ajoutant, en supprimant et en réorganisant des colonnes :  
   
--   [Vue Modules](../profiling/modules-view.md)  
+-   [Modules, mode](../profiling/modules-view.md)  
   
--   [Vue Fonctions](../profiling/functions-view.md)  
+-   [Mode Fonctions](../profiling/functions-view.md)  
   
 -   [Lignes, vue](../profiling/lines-view.md)  
   
@@ -35,7 +33,7 @@ Les outils d’analyse des performances de Visual Studio Team System Development
   
 -   [Vue Appelant/Appelé](../profiling/caller-callee-view.md)  
   
--   [Vue Arborescence des appels](../profiling/call-tree-view.md)  
+-   [Mode Arborescence des appels](../profiling/call-tree-view.md)  
   
 -   [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)  
   
