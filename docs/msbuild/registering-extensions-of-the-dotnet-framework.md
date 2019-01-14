@@ -1,8 +1,6 @@
 ---
 title: Inscription des extensions de .NET Framework | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - Add References dialog box, registering extensions of the .NET Framework
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0017255b67042a7e42b54325b24512a295ebeaf5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 48322adffff68d1eecb0d44da7e8f78d39d82203
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986065"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Inscrire des extensions de .NET Framework
 Vous pouvez développer un assembly qui étend une version spécifique de .NET Framework. Pour permettre l’affichage de l’assembly dans la boîte de dialogue **Ajouter des références** de Visual Studio, vous devez ajouter le dossier qui le contient dans le Registre système.  
@@ -31,7 +29,7 @@ Vous pouvez développer un assembly qui étend une version spécifique de .NET 
 > [!NOTE]
 >  Le numéro de build de la version .NET Framework peut être différent.  
   
- Pour inscrire un assembly 32 bits sur un ordinateur 64 bits, utilisez le nœud Wow6432, par exemple : **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.  
+ Pour inscrire un assembly 32 bits sur un ordinateur 64 bits, utilisez le nœud Wow6432, par exemple : **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.  
   
 ### <a name="see-also"></a>Voir aussi  
  [Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)

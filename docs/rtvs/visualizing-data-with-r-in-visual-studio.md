@@ -3,19 +3,18 @@ title: Visualisation des données avec R
 description: Guide pratique pour tracer des données à partir de programmes R dans Visual Studio, à l’aide de fenêtres de traçage.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859079"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
 
@@ -87,7 +86,7 @@ La durée de vie de votre historique de tracés dans toutes les fenêtres est li
 
 Vous pouvez manipuler les fenêtres de tracés par programmation à partir de code R, en utilisant des numéros de périphériques pour identifier des fenêtres de tracés spécifiques. 
 
-- `dev.list()` : répertorie tous les périphériques d’affichage dans la session R active.
-- `dev.new()` : crée un périphérique d’affichage (une nouvelle fenêtre de tracés).
-- `dev.set(<device number>)` : définit le périphérique tracé actif.
-- `dev.off()` : supprime le périphérique actif.
+- `dev.list()`: liste tous les périphériques graphiques dans la session R active.
+- `dev.new()`: crée un périphérique graphique (une nouvelle fenêtre de tracés).
+- `dev.set(<device number>)`: définit le périphérique graphique actif.
+- `dev.off()`: supprime le périphérique actif.

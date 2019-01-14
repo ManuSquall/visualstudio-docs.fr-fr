@@ -1,8 +1,6 @@
 ---
 title: Exec, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959246"
 ---
 # <a name="exec-task"></a>Exec (tâche)
 Exécute la commande ou le programme spécifié en utilisant les arguments spécifiés.  
@@ -47,7 +45,7 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
 |`Outputs`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments de sortie de la tâche. La tâche `Exec` ne les définit pas elle-même. Au lieu de cela, vous pouvez les fournir comme si elle les définissait, pour qu’ils puissent être utilisés ultérieurement dans le projet.|  
 |`StdErrEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux d’erreurs standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|  
 |`StdOutEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux de sortie standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|  
-|`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.<br /><br />Par défaut : le répertoire de travail actif du projet.|  
+|`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.<br /><br />Par défaut : le répertoire de travail actif du projet.|  
   
 ## <a name="remarks"></a>Notes  
  Cette tâche est utile quand une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] spécifique pour le travail que vous voulez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.

@@ -1,9 +1,8 @@
 ---
-title: Guide pratique pour définir les options d’accessibilité IDE
+title: 'Procédure : Définir les options d’accessibilité de l’IDE'
 description: Découvrez comment définir les options d’accessibilité dans Visual Studio qui facilitent l’utilisation de son environnement de développement intégré (IDE) pour tout le monde, y compris pour les personnes ayant des difficultés à lire ou à écrire.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906772"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d’accessibilité IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Procédure : Définir les options d’accessibilité de l’IDE
 
 > [!TIP]
 > Pour en savoir plus sur les dernières nouveautés en matière d’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
@@ -90,7 +89,7 @@ En outre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en 
 
 4.  Dans **Afficher les éléments**, sélectionnez un élément dont vous avez besoin de modifier l’affichage, tel que **Texte brut**, **Marge des indicateurs**, **Espaces blancs visibles**, **Nom d’attribut HTML** ou **Attribut XML**.
 
-5.  Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras**.
+5.  Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière plan de l’élément** et **Gras**.
 
 6.  Cliquez sur **OK**.
 

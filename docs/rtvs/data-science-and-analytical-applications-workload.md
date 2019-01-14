@@ -3,7 +3,6 @@ title: Charge de travail Applications de science et analyse des données
 description: La charge de travail Visual Studio regroupe Python, R et F#, et les distributions de leur runtime respectif, y compris Anaconda.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ebaf77963968edd61aa0109c7b16964af7fac90c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891162"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 
@@ -60,15 +59,15 @@ SQL Server prend en charge l’utilisation de R et de Python pour effectuer de l
 
 Vous profitez des avantages suivants en exécutant votre code là où sont déjà vos données :
 
-- **Élimination des déplacements des données** : au lieu de déplacer les données depuis la base de données vers votre application ou votre modèle, vous pouvez générer des applications R et Python dans la base de données. Cette fonctionnalité élimine les barrières en matière de sécurité, de conformité, de gouvernance, d’intégrité et de nombreux problèmes similaires liés au déplacement de quantités importantes de données. Vous pouvez aussi consommer des jeux de données qui ne tiendraient pas dans la mémoire d’un ordinateur client.
+- **Élimination des déplacements des données** : au lieu de déplacer les données de la base de données vers votre application ou votre modèle, vous pouvez générer des applications R et Python dans la base de données. Cette fonctionnalité élimine les barrières en matière de sécurité, de conformité, de gouvernance, d’intégrité et de nombreux problèmes similaires liés au déplacement de quantités importantes de données. Vous pouvez aussi consommer des jeux de données qui ne tiendraient pas dans la mémoire d’un ordinateur client.
 
-- **Déploiement facile** : une fois que votre modèle R ou Python est prêt, son déploiement en production consiste juste à l’incorporer dans un script T-SQL. Toute application cliente SQL écrite dans n’importe quel langage peut alors tirer parti des modèles et de l’analyse décisionnelle via un appel de procédure stockée. Aucune intégration spécifique de R ou de Python n’est nécessaire.
+- **Déploiement facile** : une fois que votre modèle R ou Python est prêt, son déploiement en production consiste juste à l’incorporer dans un script T-SQL. Toute application cliente SQL écrite dans n’importe quel langage peut alors tirer parti des modèles et de l’analyse décisionnelle via un appel de procédure stockée. Aucune intégration spécifique de R ou de Python n’est nécessaire.
 
-- **Performances et scalabilité de niveau entreprise** : vous pouvez utiliser des fonctionnalités avancées de SQL Server, comme les tables en mémoire et les index columnstore, avec des API évolutives à hautes performances dans les packages RevoScaleR et RevoScalePy. L’élimination du déplacement des données signifie également que vous évitez les contraintes de mémoire des clients quand la taille de vos données augmente ou quand vous voulez accroître les performances de l’application.
+- **Performances et scalabilité de niveau entreprise** : vous pouvez utiliser des fonctionnalités avancées de SQL Server, comme les tables en mémoire et les index columnstore, avec des API scalables à hautes performances dans les packages RevoScaleR et RevoScalePy. L’élimination du déplacement des données signifie également que vous évitez les contraintes de mémoire des clients quand la taille de vos données augmente ou quand vous voulez accroître les performances de l’application.
 
-- **Extensibilité enrichie** : vous pouvez installer et exécuter les derniers packages R ou Python open source dans SQL Server pour créer des applications d’apprentissage long et d’intelligence artificielle sur de très grandes quantités de données dans SQL Server. L’installation d’un package dans SQL Server est aussi simple que l’installation d’un package sur votre ordinateur local.
+- **Extensibilité enrichie** : vous pouvez installer et exécuter les derniers packages R ou Python open source dans SQL Server pour créer des applications d’apprentissage profond et d’intelligence artificielle sur de très grandes quantités de données dans SQL Server. L’installation d’un package dans SQL Server est aussi simple que l’installation d’un package sur votre ordinateur local.
 
-- **Disponibilité élevée sans coût supplémentaire** : les intégrations de R et de Python sont disponibles dans toutes les éditions de SQL Server 2017 et ultérieur, y compris l’édition Express. (La prise en charge de R est disponible dans SQL Server 2016 et ultérieur.)
+- **Disponibilité élevée sans coût supplémentaire** : les intégrations de R et de Python sont disponibles dans toutes les éditions de SQL Server 2017 et versions ultérieures, notamment l’édition Express. (La prise en charge de R est disponible dans SQL Server 2016 et ultérieur.)
 
 Pour tirer pleinement parti de l’intégration de SQL Server, utilisez le programme d’installation de Visual Studio pour installer la charge de travail **Stockage et traitement des données** avec l’option **SQL Server Data Tools**. Cette option active SQL IntelliSense, la mise en surbrillance de la syntaxe et le déploiement.
 

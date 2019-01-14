@@ -2,7 +2,6 @@
 title: Page Références, Concepteur de projets (Visual Basic)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e1a81ef2eb22e9ccd67baf1b41145a354dbb4f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957406"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 
@@ -100,5 +99,5 @@ Cliquez sur ce bouton pour accéder à la boîte de dialogue **Chemins des réf�
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des références dans un projet](../../ide/managing-references-in-a-project.md)
-- [Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Guide pratique pour Ajouter ou supprimer des espaces de noms importés (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports (instruction) (espace de noms XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

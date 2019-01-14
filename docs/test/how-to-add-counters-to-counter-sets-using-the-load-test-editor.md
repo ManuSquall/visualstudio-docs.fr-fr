@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: b2a6ba058ba7c09eb66c15cb578fcaaf36d2ced2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: bed707fe5677467e66ff83678675ffdb40a5e081
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950249"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Guide pratique pour ajouter des compteurs à des ensembles de compteurs à l’aide de l’éditeur de test de charge
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procédure : Ajouter des compteurs à des ensembles de compteurs à l’aide de l’Éditeur de test de charge
 
 Quand vous créez un test de charge avec l’**Assistant Test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge. Pour plus d’informations, consultez [Spécifier les ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

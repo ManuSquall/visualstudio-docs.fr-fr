@@ -1,9 +1,7 @@
 ---
-title: 'Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire'
-ms.custom: ''
+title: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcbee1d5339405d21b7b61ca5db35815568983b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910946"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
 
 Les premières étapes du développement de ce questionnaire consistent à créer le projet, puis à ajouter des étiquettes, un bouton et d'autres contrôles à un formulaire. Vous devez également définir des propriétés pour chaque contrôle que vous ajoutez. Le projet contiendra le formulaire, les contrôles et, ultérieurement dans le didacticiel, du code. Le bouton démarre le questionnaire, les étiquettes affichent les problèmes à résoudre et les autres contrôles montrent les réponses aux problèmes et le temps restant pour terminer le questionnaire.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire
 
@@ -173,6 +171,6 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).
+-   Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).
 
--   Pour revenir à la rubrique de présentation, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).

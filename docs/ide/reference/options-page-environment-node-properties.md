@@ -2,7 +2,6 @@
 title: Page Options, Environnement, propriétés de nœud
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914966"
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
 Ce document décrit les pages (ou collections de propriétés) associées à la catégorie **Environnement**, `DTE.Properties("Environment", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l’appel utilisé pour accéder à la collection de propriétés, tandis que le tableau dans chaque sous-section répertorie les propriétés de la collection.
@@ -134,7 +133,7 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 
 |Nom de l'élément de propriété|Value|Description|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> - 0 : Ouvrir la page d’accueil<br />- 1 : Charger la dernière solution chargée<br />- 2 : Afficher la boîte de dialogue **Ouvrir un projet**<br />- 3 : Afficher la boîte de dialogue **Nouveau projet**<br />- 4 : Afficher l’environnement vide<br />- 5 : Afficher la page de démarrage|
+|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> -   0 : ouvrir la page d’accueil<br />-   1 : charger la dernière solution chargée<br />-   2 : afficher la boîte de dialogue **Ouvrir un projet**<br />-   3 : afficher la boîte de dialogue **Nouveau projet**<br />-   4 : afficher l’environnement vide<br />-   5 : afficher la page de démarrage|
 |StartPageRSSUrl|Get/Set (chaîne)|URL du flux RSS utilisé au démarrage.|
 |StartPageRefreshDownloadedContent|Get/Set (booléen)|Actualise la page de démarrage après chaque passage de l'intervalle spécifié dans StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Intervalle en minutes pour actualiser la page de démarrage.|

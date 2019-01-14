@@ -1,8 +1,6 @@
 ---
 title: Profilage sur des clusters HPC (High Performance Computing) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856655"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
@@ -55,8 +53,8 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 | | |
 |------------------| - |
 | *%HeadNode%* | Nom du nœud principal du cluster. |
-| *%FxPath%* | Chemin du programme d’installation de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
-| *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : Standalone Profiler\x64\vs_profiler.exe. |
+| *%FxPath%* | Chemin du programme d’installation de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Sur le support d’installation de Visual Studio, le chemin est : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin est : Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profiler sur un nœud de calcul HPC
 
@@ -150,4 +148,3 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 | **Arguments de script de préprofilage** | Spécifie les arguments à passer au script de préprofilage. |
 | **Script de post-profilage** | Spécifie le chemin et le nom de fichier d’un script à exécuter sur l’ordinateur de développement local à la fin de la session de profilage. |
 | **Arguments de script de post-profilage** | Spécifie les arguments à passer au script de post-profilage. |
-

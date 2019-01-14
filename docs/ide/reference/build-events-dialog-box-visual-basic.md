@@ -2,7 +2,6 @@
 title: Événements de build, boîte de dialogue (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
@@ -18,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5899c8fc2b9e064ac326106a289d8309421e21f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937021"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Événements de build, boîte de dialogue (Visual Basic)
 
-Utilisez la boîte de dialogue **Événements de build** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements pré-build ou post-build sont exécutés. Pour plus d’informations, consultez [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Utilisez la boîte de dialogue **Événements de build** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements pré-build ou post-build sont exécutés. Pour plus d'informations, voir [Procédure : Spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 **Ligne de commande de l’événement pré-build**
 
@@ -50,11 +49,11 @@ Spécifie les conditions pour l’événement post-build à exécuter, comme ind
 |Option|Résultat|
 |------------|------------|
 |**Toujours**|L’événement post-build est exécuté, que la build ait abouti ou échoué.|
-|**En cas de build réussie** |L’événement post-build est exécuté si la build réussit. L’événement est exécuté même pour un projet à jour, à condition que la build soit un succès. Il s'agit du paramètre par défaut.|
+|**En cas de build réussie **|L’événement post-build est exécuté si la build réussit. L’événement est exécuté même pour un projet à jour, à condition que la build soit un succès. Il s'agit du paramètre par défaut.|
 |**Lorsque la build met à jour la sortie du projet**|L’événement post-build n’est exécuté que quand le fichier de sortie du compilateur (.exe ou .dll) est différent du fichier de sortie précédent. Un événement post-build n’est pas exécuté si un projet est à jour.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Guide pratique pour Spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

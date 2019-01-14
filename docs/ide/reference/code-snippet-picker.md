@@ -2,7 +2,6 @@
 title: Sélecteur d'extraits de code
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03503c2ea708dd9093e4ee7b3490879724c3f7d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887644"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
 
@@ -44,7 +43,7 @@ La procédure d’affichage du **sélecteur d’extraits de code** varie en fonc
 
 - SQL : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait**.
 
-Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la liste des dossiers dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).
+Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la liste des dossiers dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 

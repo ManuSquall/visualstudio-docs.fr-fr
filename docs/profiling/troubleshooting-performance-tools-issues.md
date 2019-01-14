@@ -1,8 +1,6 @@
 ---
 title: Dépannage des outils d’analyse des performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 432afd3051d7deb04fe32c02d163e59e324f6b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870834"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Résoudre les problèmes liés aux outils d’analyse des performances
 Vous pouvez rencontrer les problèmes suivants quand vous utilisez les outils de profilage :  
@@ -33,7 +31,7 @@ Vous pouvez rencontrer les problèmes suivants quand vous utilisez les outils de
   
 -   Un processus qui a été profilé à l’aide de l’échantillonnage ou de la méthode de mémoire .NET démarre un processus enfant qui devient le processus effectuant le travail de l’application. Par exemple, certaines applications lisent la ligne de commande pour déterminer si elles ont été démarrées comme application Windows ou comme application de ligne de commande. Si une application Windows a été demandée, le processus d’origine démarre un nouveau processus configuré comme application Windows et le processus d’origine se ferme alors. Comme les outils de profilage ne collectent pas automatiquement les données pour les processus enfants, aucune donnée n’est collectée.  
   
-     Pour collecter des données de profilage dans ce cas, attachez le profileur au processus enfant au lieu de démarrer l’application avec le profileur. Pour plus d’informations, consultez [Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) et [Attacher (VSPerfCmd)](../profiling/attach.md)  
+     Pour collecter des données de profilage dans ce cas, attachez le profileur au processus enfant au lieu de démarrer l’application avec le profileur. Pour plus d'informations, voir [Procédure : Attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) et [Attach (VSPerfCmd)](../profiling/attach.md)  
   
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Les vues et les rapports de performances affichent des numéros pour les noms des fonctions  
  Après avoir profilé une application, vous voyez des numéros au lieu des noms des fonctions dans les rapports et les vues.  

@@ -2,7 +2,6 @@
 title: Meilleures pratiques pour l'utilisation des extraits de code
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908916"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
 
@@ -25,7 +24,7 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
 
 ## <a name="handling-exceptions"></a>Gestion des exceptions
 
-Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Vous trouverez des exemples sur les pages [Guide pratique pour gérer une exception à l’aide de try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [Instruction Try... Catch... Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Guide pratique pour gérer une exception à l’aide de try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [Instruction Try... Catch... Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Emplacements des fichiers
 

@@ -1,8 +1,6 @@
 ---
 title: Vue Arborescence des appels - Données d’instrumentation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 34ae8f845e53fdd80be055c8d0e592d6d01d75e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898097"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation
 Les valeurs d’une fonction dans l’arborescence des appels indiquent une durée pour les instances de fonctions qui ont été appelées par la fonction parent dans l’arborescence des appels. Les valeurs en pourcentage sont calculées en comparant la valeur des instances de fonctions au temps inclusif écoulé total de toutes les fonctions comprises dans l’exécution du profilage.  
@@ -85,7 +83,7 @@ Les valeurs d’une fonction dans l’arborescence des appels indiquent une dur�
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction dans ce contexte.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)   
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

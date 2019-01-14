@@ -1,8 +1,6 @@
 ---
 title: marker_series::is_enabled, méthode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::is_enabled
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4095381fffea29e4613d42d8ecbf2d189b4cb1b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 62e8cf9ce14be5fd45c579584c754394f1dfb83b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945403"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled, méthode
 Détermine si une session a activé le fournisseur.  
@@ -43,10 +41,10 @@ bool is_enabled(
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *cvmarkersobj.h*  
   
- **Espace de noms** : Concurrency::diagnostic  
+ **Espace de noms :** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Voir aussi  
  [marker_series, classe](../profiling/marker-series-class.md)

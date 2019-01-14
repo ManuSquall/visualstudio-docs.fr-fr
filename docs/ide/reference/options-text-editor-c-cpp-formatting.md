@@ -2,7 +2,6 @@
 title: Options, Éditeur de texte, C/C++, Mise en forme
 ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,12 +17,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960746"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
 
@@ -40,7 +39,7 @@ Utilisez les pages de propriétés pour changer le comportement par défaut de l
 
 Cette page propose des options pour mettre en forme des instructions et des blocs à mesure que vous les tapez.
 
-**Visual Studio 2017 version 15.7 et ultérieures** : la page comporte également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5.0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
+**Visual Studio 2017 15.7 et versions ultérieures :** la page comporte également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5.0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configuration des options de ClangFormat
 

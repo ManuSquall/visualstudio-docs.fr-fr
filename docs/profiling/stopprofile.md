@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952233"
 ---
 # <a name="stopprofile"></a>StopProfile
 La fonction `StopProfile` définit le compteur sur 0 (désactivé) pour le niveau de profilage spécifié.  
@@ -67,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informations sur la fonction  
- En-tête : déclaré dans VSPerf.h  
+ En-tête : déclaré dans VSPerf.h  
   
  Bibliothèque d’importation : VSPerf.lib  
   

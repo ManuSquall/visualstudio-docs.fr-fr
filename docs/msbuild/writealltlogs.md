@@ -1,8 +1,6 @@
 ---
 title: WriteAllTLogs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - WriteAllTLogs
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceec441f6f0110ea514225ed0fab4c4dc2d575bb
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4ca5bfbdae319aff8d90686deb32a5c7348fa74e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985535"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 Écrit les journaux de suivi pour tous les threads et tous les contextes.  
@@ -43,7 +41,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ## <a name="return-value"></a>Valeur de retour  
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  **En-tête :** *FileTracker.h*  
   
 ## <a name="see-also"></a>Voir aussi  

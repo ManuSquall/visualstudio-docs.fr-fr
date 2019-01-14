@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour imprimer des diagrammes de classes (Concepteur de classes)
+title: 'Procédure : Imprimer des diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e4b38967badbed94c946b04a1434150912c32859
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916252"
 ---
-# <a name="how-to-print-class-diagrams"></a>Guide pratique pour imprimer des diagrammes de classes
+# <a name="how-to-print-class-diagrams"></a>Procédure : Imprimer des diagrammes de classes
 
 Vous pouvez imprimer un diagramme de classes à l’aide de la fonctionnalité d’impression de Visual Studio.
 
@@ -34,5 +33,5 @@ L’intégralité du diagramme de classes est imprimé. Vous devrez peut-être a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour copier les éléments d’un diagramme de classes vers un document Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
-- [Guide pratique pour exporter des diagrammes de classes en tant qu’images](how-to-export-class-diagrams-as-images.md)
+- [Guide pratique pour copier les éléments d’un diagramme de classes dans un document Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Guide pratique pour exporter des diagrammes de classes sous forme d’images](how-to-export-class-diagrams-as-images.md)

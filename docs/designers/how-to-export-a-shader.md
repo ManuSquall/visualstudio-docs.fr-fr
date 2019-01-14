@@ -1,8 +1,7 @@
 ---
-title: 'Procédure : exporter un nuanceur'
+title: 'Procédure : Exporter un nuanceur'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd06664cda1c60d2624b77a0381e1269fcb3c484
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 92e0ae391cb196053d136dc44a8e64758f485115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861447"
 ---
-# <a name="how-to-export-a-shader"></a>Guide pratique pour exporter un nuanceur
+# <a name="how-to-export-a-shader"></a>Procédure : Exporter un nuanceur
 
 Cet article indique comment utiliser le **Concepteur de nuanceur** pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans une application.
 

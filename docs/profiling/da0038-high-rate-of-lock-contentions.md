@@ -1,8 +1,6 @@
 ---
 title: 'DA0038 : Taux élevé de conflits de verrou | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.38
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54788c20552380d22df8bad783d5012ac7157899
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c670ab939f2535c7dfcdf2d2db8a53e06bcd58db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845913"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038 : Taux élevé de conflits de verrou
 
@@ -48,7 +46,7 @@ ms.locfileid: "49922053"
  Cette règle se déclenche lorsque les mesures prises pendant une exécution de profilage indiquent une quantité excessive de conflits de verrou. Les conflits de verrou retardent l’exécution des threads qui attendent le verrou. Vous devez toujours rechercher la cause des conflits de verrou, même lorsque vous exécutez des tests unitaires et des tests de charge sur du matériel bas de gamme et même si le niveau de conflit est peu important.  
 
 > [!NOTE]
->  Lorsque le taux de conflits de verrou signalés dans les données de profilage est très élevé, le message d’avertissement [DA0039 : Taux très élevé de conflits de verrou](../profiling/da0039-very-high-rate-of-lock-contentions.md) est déclenché à la place de ce message informatif.  
+>  Quand le taux de conflits de verrou signalés dans les données de profilage est extrêmement élevé, le message d’avertissement [DA0039 : taux très élevé de conflits de verrou](../profiling/da0039-very-high-rate-of-lock-contentions.md) est déclenché à la place de ce message d’information.  
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage.  Recherchez la colonne **Verrous et threads CLR .NET\Taux de conflits/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles les conflits de verrou sont plus nombreux.  

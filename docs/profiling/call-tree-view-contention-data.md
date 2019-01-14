@@ -1,8 +1,6 @@
 ---
 title: Vue Arborescence des appels - Données de conflit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e28eb246b2c4611a15dc4ce2cf6b1b02dd0100
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86a4e29425e710818dee68e28dcc306c3c14ab85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927504"
 ---
 # <a name="call-tree-view---contention-data"></a>Vue Arborescence des appels - Données de conflit
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées, le nombre de fois où la fonction a été bloquée, et la durée pendant laquelle la fonction a été bloquée car elle était en conflit pour une ressource avec d’autres threads ou processus.  
@@ -55,7 +53,7 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Mode Arborescence des appels](../profiling/call-tree-view.md)   
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   

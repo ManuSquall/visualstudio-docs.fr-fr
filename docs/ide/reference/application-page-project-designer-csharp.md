@@ -2,7 +2,6 @@
 title: Page Application des propriétés de projet C#
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd8b2de9d4e878a524ee5c1e012e26c8d2224957
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850925"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
@@ -59,7 +58,7 @@ Par défaut, la valeur est la même que le framework cible que vous avez sélect
 > [!NOTE]
 > Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez par la suite le framework cible du projet, vous devez sélectionner manuellement les prérequis pour qu’ils correspondent au nouveau framework cible.
 
-Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Pour plus d'informations, voir [Procédure : Cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Type de sortie**
 

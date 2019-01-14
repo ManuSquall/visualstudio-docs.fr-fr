@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour spécifier des options d’instrumentation supplémentaires | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Spécifier des options d’instrumentation supplémentaires | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858667"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Guide pratique pour spécifier des options d’instrumentation supplémentaires
+# <a name="how-to-specify-additional-instrumentation-options"></a>Procédure : Spécifier des options d’instrumentation supplémentaires
 
 Vous pouvez instrumenter des binaires à l’aide de l’IDE de Visual Studio ou d’outils en ligne de commande. Si vous instrumentez un fichier binaire à partir de l’IDE, vous pouvez contrôler le volume de données collectées lors de l’instrumentation en spécifiant des options d’instrumentation supplémentaires dans l’outil [VSInstr](../profiling/vsinstr.md). Ces options sont disponibles au niveau de la session ou de la cible. Par exemple, pour inclure ou exclure des fonctions spécifiques lors du processus d’instrumentation, utilisez l’option d’instrumentation supplémentaire au niveau de la cible.
 

@@ -1,8 +1,6 @@
 ---
-title: 'Comment : générer un projet qui dispose de ressources | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Générer un projet qui dispose de ressources | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934300"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Guide pratique pour générer un projet qui a des ressources
+# <a name="how-to-build-a-project-that-has-resources"></a>Procédure : Générer un projet qui dispose de ressources
 Si vous générez les versions localisées d’un projet, tous les éléments de l’interface utilisateur doivent être séparés dans des fichiers de ressources correspondant aux différentes langues. Si le projet utilise uniquement des chaînes, les fichiers de ressources peuvent utiliser des fichiers texte. Vous pouvez également utiliser des fichiers *.resx* comme fichiers de ressources.  
   
 ## <a name="compile-resources-with-msbuild"></a>Compiler des ressources avec MSBuild  

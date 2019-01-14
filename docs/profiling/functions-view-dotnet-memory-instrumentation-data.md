@@ -1,8 +1,6 @@
 ---
 title: Vue Fonctions - Données d’instrumentation de la mémoire .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b578fd091b0b7473eb9e09e8c1eb13510c9e1b84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962332"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Fonctions, vue - données d’instrumentation de la mémoire .NET
 La vue Fonctions des données de profilage de l’allocation mémoire de .NET qui ont été collectées avec la méthode d’instrumentation liste les fonctions qui ont alloué de la mémoire lors de l’exécution du profilage. Une ligne de fonction indique la taille et le nombre d’allocations, ainsi que les données chronologiques de la fonction.  
@@ -99,7 +97,7 @@ La vue Fonctions des données de profilage de l’allocation mémoire de .NET qu
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
- [Vue Fonctions](../profiling/functions-view-sampling-data.md)
+ [Mode Fonction](../profiling/functions-view-instrumentation-data.md)   
+ [Mode Fonctions](../profiling/functions-view-sampling-data.md)

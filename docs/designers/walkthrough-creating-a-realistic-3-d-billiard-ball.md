@@ -1,8 +1,7 @@
 ---
-title: 'Procédure pas à pas : création d’une boule de billard 3D réaliste'
+title: 'Procédure pas à pas : Création d’une boule de billard 3D réaliste'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913489"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : créer une boule de billard 3D réaliste
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : Créer une boule de billard 3D réaliste
 
 Cette procédure pas à pas montre comment créer une boule de billard 3D réaliste en utilisant le concepteur Shader et l’Éditeur d’images dans Visual Studio. L’apparence 3D de la boule de billard s’obtient en combinant plusieurs techniques de nuanceur avec les ressources de texture appropriées.
 
@@ -212,7 +211,7 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Concepteur Shader](../designers/shader-designer.md)
 - [Image Editor](../designers/image-editor.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

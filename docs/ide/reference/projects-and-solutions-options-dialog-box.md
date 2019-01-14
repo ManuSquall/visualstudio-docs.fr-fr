@@ -2,7 +2,6 @@
 title: Projets et solutions, boîte de dialogue Options
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926307"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Page Projets et solutions, boîte de dialogue Options
 
@@ -89,11 +88,11 @@ Spécifie l’emplacement par défaut où Visual Studio crée des projets et des
 
 ### <a name="user-project-templates-location"></a>Emplacement des modèles des projets utilisateur
 
-Spécifie l’emplacement par défaut que la boîte de dialogue **Nouveau projet** utilise pour créer la liste de **Mes modèles**. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Spécifie l’emplacement par défaut que la boîte de dialogue **Nouveau projet** utilise pour créer la liste de **Mes modèles**. Pour plus d'informations, voir [Procédure : Localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Emplacement des modèles des éléments utilisateur
 
-Spécifie l’emplacement par défaut que la boîte de dialogue **Ajouter un nouvel élément** utilise pour créer la liste de **Mes modèles**. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Spécifie l’emplacement par défaut que la boîte de dialogue **Ajouter un nouvel élément** utilise pour créer la liste de **Mes modèles**. Pour plus d'informations, voir [Procédure : Localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Voir aussi
 

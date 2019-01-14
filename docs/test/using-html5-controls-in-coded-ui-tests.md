@@ -2,19 +2,18 @@
 title: Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883024"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -81,7 +80,7 @@ Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element
 > Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.
 
 ## <a name="progressbar"></a>Barre de progression
- **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Contrôle de barre de progression HTML5](../test/media/codedui_html5_progressbar.png)
 

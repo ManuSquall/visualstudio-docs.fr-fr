@@ -1,8 +1,6 @@
 ---
 title: Marques, vue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dbaf0d8c3d1f3542683a05b175c43c0c43b948
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873880"
 ---
 # <a name="marks-view"></a>Marques, vue
 La vue Marques affiche l’échantillonnage et les événements ETW qui ont été insérés dans l’application.  
   
  Les marques par défaut qui sont préremplies dans le rapport indiquent le démarrage du programme et la fin du programme.  
   
- Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d'informations, voir [Procédure : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Pour créer un filtre entre deux marques, sélectionnez les marques, cliquez avec le bouton droit puis cliquez sur **Ajouter un filtre par marques** ou **Ajouter un filtre par horodatage**.  
   
@@ -37,7 +35,7 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
  Identificateur unique de la marque de profilage.  
   
  **Nom de la marque**  
- Nom de l'événement.  
+ Nom de l’événement.  
   
  **Horodatage**  
  Durée entre l’heure du début du profilage et l’heure à laquelle l’événement est enregistré.  

@@ -3,7 +3,6 @@ title: Fonctionnalités d’accessibilité de Visual Studio
 description: Découvrez plus en détail les fonctionnalités et utilitaires d’accessibilité conçus pour rendre le système d’exploitation Windows et la suite de développement Visual Studio plus accessibles à tous, notamment aux personnes présentant un handicap.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866476"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: Tâches inline MSBuild avec RoslynCodeTaskFactory | Microsoft Docs
-ms.custom: ''
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887748"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tâches inline MSBuild avec RoslynCodeTaskFactory
 Comme [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory utilise les compilateurs Roslyn multiplateformes pour générer des assemblys de tâches en mémoire à utiliser en tant que tâches inline.  Les tâches RoslynCodeTaskFactory ciblent .NET Standard et peuvent fonctionner sur les runtimes .NET Framework et .NET Core, ainsi que sur d’autres plateformes, comme Linux et Mac OS.
@@ -257,4 +255,4 @@ Ces tâches inline peuvent combiner des chemins et obtenir le nom de fichier.
 
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)

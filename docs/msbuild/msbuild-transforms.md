@@ -1,8 +1,6 @@
 ---
 title: Transformations MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f2f4dfeb57ab26e985625bd1b62154b9e6924eb8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942877"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] les utilise pour générer des projets plus efficacement.  
@@ -50,7 +48,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 ## <a name="dependency-analysis"></a>Analyse des dépendances  
  Les transformations garantissent un mappage de type un-à-un entre la liste d’éléments transformée et la liste d’éléments d’origine. Par conséquent, si une cible crée des sorties qui sont des transformations des entrées, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut analyser les horodatages des entrées et des sorties, et décider s’il faut ignorer, générer ou partiellement regénérer une cible.  
   
- Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md).  
+ Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des builds incrémentielles](../msbuild/how-to-build-incrementally.md).  
   
 ```xml  
 <Target Name="CopyOutputs"  

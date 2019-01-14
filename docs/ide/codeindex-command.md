@@ -2,7 +2,6 @@
 title: CodeIndex, commande
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03a7f56f7b295cbfaf8eda437d6071e83b79ca44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898253"
 ---
 # <a name="codeindex-command"></a>CodeIndex, commande
 
@@ -49,7 +48,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Option**|**Description**|
 |----------------| - |
 |**/indexingStatus**|Affichez l'état et la configuration du service d'indexation de code.|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on** : démarrer l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation des ensembles de modifications créés précédemment et commencer l’indexation de nouveaux ensembles de modifications uniquement.|
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on** : démarrer l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation de tous les ensembles de modifications.<br />-   **keepupOnly** : arrêter l’indexation des ensembles de modifications créés précédemment, et commencer l’indexation de nouveaux ensembles de modifications uniquement.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Vous pouvez utiliser le caractère générique (*) au début, à la fin ou aux deux extrémités du chemin d’accès au serveur.|Spécifie une liste de fichiers de code et leurs chemins d’accès à ne pas indexer.<br /><br /> -   **add** : ajouter le fichier à ne pas indexer à la liste des fichiers ignorés.<br />-   **remove** : supprimer le fichier à indexer de la liste des fichiers ignorés.<br />-   **removeAll** : effacer la liste des fichiers ignorés et démarrer l’indexation de tous les fichiers.<br />-   **view** : afficher tous les fichiers qui ne sont pas indexés.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Indique le nombre spécifié de fichiers qui dépassent la taille spécifiée en Ko. Vous pouvez ensuite utiliser l’option **/ignoreList** pour exclure ces fichiers de l’indexation.|
 |**/reindexAll**|Effacez les données indexées précédemment et redémarrez l'indexation.|

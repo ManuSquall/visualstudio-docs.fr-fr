@@ -1,8 +1,6 @@
 ---
 title: 'DA0014 : Taux très élevés de pagination de la mémoire active sur le disque | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAMemoryBound
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30bb9fea29215eb190ab83ea73394b87e4cd15fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67882c56492f8b98daf6f2f1cca1972be8e4f667
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932705"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014 : Taux très élevés de pagination de la mémoire active sur le disque
 
@@ -43,7 +41,7 @@ ms.locfileid: "49914545"
  Il arrive fréquemment que les pages soient lues ou écrites sur le disque lors d’opérations de pagination en bloc. Le nombre de pages en sortie/s est souvent beaucoup plus élevé que le nombre d’écritures de pages/s, par exemple. Cela est dû au fait que les pages en sortie/s comprennent également les pages de données modifiées dans le cache de fichiers système. Toutefois, il n’est pas toujours facile de déterminer quel processus est directement responsable de la pagination, ni de connaître la cause de cette pagination.  
 
 > [!NOTE]
->  Cette règle se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux très élevé. Lorsque le niveau de pagination est important, sans être très important, la règle à caractère informatif [DA0017 : Taux élevés de pagination de la mémoire active sur le disque](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) est déclenchée.  
+>  Cette règle se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux très élevé. Quand le niveau de pagination est significatif, mais pas extrême, la règle à caractère informatif [DA0017 : Taux élevés de pagination de la mémoire active sur le disque](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) est déclenchée à la place.  
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [Marques](../profiling/marks-view.md). Recherchez la colonne **Mémoire\Pages/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’activité d’E/S de pagination est plus importante.  

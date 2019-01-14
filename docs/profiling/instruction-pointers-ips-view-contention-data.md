@@ -1,8 +1,6 @@
 ---
 title: Pointeurs d’instructions (IP), vue - Données de conflit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853474"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Pointeurs d’instructions (IP), vue - données de conflit
 La vue IP des données de conflit répertorie les données des instructions d’assembly dont l’exécution a été bloquée dans le cadre de l’exécution du profilage.  
@@ -45,7 +43,7 @@ La vue IP des données de conflit répertorie les données des instructions d�
 |**Fin ligne source**|Numéro de ligne dans le fichier source au niveau duquel cette instruction se termine.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Pointeurs d’instruction (IP), vue - Données d’échantillonnage](../profiling/instruction-pointers-ips-view.md)   
  [Pointeurs d’instruction (IP), vue - échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)

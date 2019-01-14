@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873508"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Créer un projet IA à partir de la galerie Azure Machine Learning dans Visual Studio
 
@@ -42,13 +41,13 @@ Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md),
 
 4. Pour ce démarrage rapide, sélectionnez l’exemple « **MNIST using TensorFlow** » (MNIST avec TensorFlow) et cliquez sur **Installer**. Indiquez les éléments suivants :
 
-   - **Groupe de ressources** : groupe de ressources Azure où vos métadonnées seront stockées
-   - **Compte** : compte d’expérimentation Azure Machine Learning
-   - **Espace de travail** : espace de travail Azure Machine Learning
-   - **Type de projet** : framework machine learning. Dans ce cas, choisissez **TensorFlow**
+   - **Groupe de ressources** : groupe de ressources Azure où vos métadonnées seront stockées
+   - **Compte** : compte d’expérimentation Azure Machine Learning
+   - **Espace de travail** : espace de travail Azure Machine Learning
+   - **Type de projet** : infrastructure de machine learning. Dans ce cas, choisissez **TensorFlow**
    - **Ajouter à la solution** : détermine s’il faut ajouter à votre solution Visual Studio ou créer et ouvrir une autre solution
-   - **Chemin d’accès du projet** : emplacement où enregistrer le code
-   - **Nom du projet** : tapez **TensorFlowMNIST**
+   - **Chemin d’accès au projet** : emplacement où enregistrer le code
+   - **Nom du projet** : tapez **TensorFlowMNIST**
 
    ![Projet résultant lors de l’utilisation du modèle Application Python](media/create-project-gallery/new-AzureSampleProject.png)
 

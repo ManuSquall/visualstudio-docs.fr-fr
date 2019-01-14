@@ -1,8 +1,6 @@
 ---
 title: Exécuter des outils de profilage avec ou sans le débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941412"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -55,7 +53,7 @@ Vous pouvez également afficher les **Outils de diagnostic** pour les cibles de 
 
 ### <a name="the-events-tab"></a>Onglet Événements
 
-Pendant une session de débogage, l’onglet **Événements** de la fenêtre **Outils de diagnostic** liste les événements de diagnostic qui se produisent. Les préfixes de catégories (**Point d’arrêt**, **Fichier** et autres) vous permettent de trouver rapidement la catégorie qui vous intéresse dans la liste, ou d’ignorer celles qui ne vous intéressent pas.  
+Pendant une session de débogage, l’onglet **Événements** de la fenêtre **Outils de diagnostic** liste les événements de diagnostic qui se produisent. Les préfixes de catégorie **Point d’arrêt**, **Fichier** et autres vous permettent de trouver rapidement la catégorie qui vous intéresse dans la liste, ou d’ignorer celles qui ne vous intéressent pas.  
   
 Utilisez la liste déroulante **Filtre** pour filtrer les événements en sélectionnant ou en désélectionnant des catégories d’événements spécifiques. 
 
@@ -116,17 +114,17 @@ Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **Sessi
 ## <a name="see-also"></a>Voir aussi
 
 Voici quelques billets de blog et articles MSDN de l’équipe de développement Diagnostics :  
- [Magazine MSDN : Analyser les performances pendant le débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
+ [MSDN Magazine : Analyse des performances lors d’un débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [Magazine MSDN : IntelliTrace permet de diagnostiquer les problèmes plus rapidement](https://msdn.microsoft.com/magazine/dn973014.aspx)
+ [MSDN Magazine : Utilisation d’IntelliTrace pour un diagnostic plus rapide des problèmes](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in VisGuide pratique pourual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (Diagnostic des problèmes de fuite de mémoire avec l’outil Utilisation de la mémoire de Visual Studio 2015)
   
  [Vidéo : Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
- [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
+ [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [PerfTips : Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (Informations de performances en un coup d’œil lors du débogage avec Visual Studio)
   
  [Diagnostic Tools debugger window in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   

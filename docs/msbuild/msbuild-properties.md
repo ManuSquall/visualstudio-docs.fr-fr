@@ -1,8 +1,6 @@
 ---
 title: Propriétés MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987036"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour configurer des générations. Elles sont utiles pour transmettre des valeurs aux tâches, évaluer des conditions et stocker les valeurs qui seront référencées dans tout le fichier projet.  
@@ -46,7 +44,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
 ## <a name="reserved-properties"></a>Propriétés réservées  
  MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. Ces propriétés sont référencées avec la notation $ comme toute autre propriété. Par exemple, $(MSBuildProjectFile) retourne le nom de fichier complet du fichier projet, y compris l’extension de nom de fichier.  
   
- Pour plus d’informations, consultez [Guide pratique pour référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Pour plus d'informations, voir [Procédure : Référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="environment-properties"></a>Propriétés d’environnement  
  Vous pouvez référencer des variables d’environnement des fichiers projet de la même façon que les propriétés réservées. Par exemple, pour utiliser la variable d’environnement `PATH` dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une propriété d’environnement, la propriété du projet remplace la valeur de la variable d’environnement.  
@@ -58,7 +56,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
 > [!TIP]
 >  Toutes les variables d’environnement ne sont pas lues pour devenir des propriétés initiales. Une variable d’environnement dont le nom n’est pas un nom de propriété MSBuild valide, par exemple « 386 », est ignoré.  
   
- Pour plus d’informations, consultez [Guide pratique pour utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Pour plus d'informations, voir [Procédure : Utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="registry-properties"></a>Propriétés de Registre  
  Vous pouvez lire les valeurs du Registre système à l’aide de la syntaxe suivante, où `Hive` est la ruche du Registre (par exemple, **HKEY_LOCAL_MACHINE**), `Key` le nom de la clé, `SubKey` le nom de la sous-clé, et `Value` la valeur de la sous-clé.  

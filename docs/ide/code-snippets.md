@@ -2,7 +2,6 @@
 title: Extraits de code
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -19,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889226"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -99,7 +98,7 @@ Si vous remplacez `newPropertyValue` par `m_property`, chaque instance de `newPr
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procédure pas à pas : Création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
 - [Guide pratique pour distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md)
 - [Bonnes pratiques pour l’utilisation des extraits de code](../ide/best-practices-for-using-code-snippets.md)
 - [Dépannage des extraits](../ide/troubleshooting-snippets.md)

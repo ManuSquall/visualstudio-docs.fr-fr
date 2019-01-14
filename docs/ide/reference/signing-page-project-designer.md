@@ -2,7 +2,6 @@
 title: Page Signature, Concepteur de projets
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856642"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 Utilisez la page **Signature** du **Concepteur de projet** pour signer les manifestes d’application et de déploiement, et pour signer l’assembly (signature avec nom fort).
@@ -40,7 +39,7 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
 ## <a name="application-and-deployment-manifest-signing"></a>Signature de manifestes d’application et de déploiement
  Case à cocher **Signer les manifestes ClickOnce**
 
- Cochez cette case pour signer les manifestes d’application et de déploiement à l’aide d’une paire de clés publique/privée. Pour plus d’informations sur cette procédure, consultez [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Cochez cette case pour signer les manifestes d’application et de déploiement à l’aide d’une paire de clés publique/privée. Pour plus d’informations sur la manière de procéder, consultez [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  Bouton **Sélectionner dans Store**
 
@@ -71,9 +70,9 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
 ## <a name="assembly-signing"></a>Signature d’assemblys
  Case à cocher **Signer l’assembly**.
 
- Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Comment : signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+ Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Cette option utilise l’outil Al.exe fourni par le kit SDK Windows pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Cette option utilise l’outil Al.exe fourni par le kit SDK Windows pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Guide pratique pour signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Liste **Choisir un fichier de clé de nom fort**
 
@@ -103,5 +102,5 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
 - [Gestion d’assembly et signature de manifeste](../../ide/managing-assembly-and-manifest-signing.md)
 - [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Guide pratique pour signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)

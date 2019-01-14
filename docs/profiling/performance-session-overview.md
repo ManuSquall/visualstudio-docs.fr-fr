@@ -1,8 +1,6 @@
 ---
 title: Vue d’ensemble des sessions de performances | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867171"
 ---
 # <a name="performance-session-overview"></a>Vue d’ensemble de la session de performance
 Cette vue d’ensemble explique les principes de base du profilage. Les développeurs qui débutent dans le domaine des tâches liées aux performances vont découvrir comment les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peuvent leur permettre de devenir rapidement productifs et d’optimiser les performances de leur code. Quant aux développeurs expérimentés dans le profilage, ils peuvent obtenir une vue d’ensemble des fonctionnalités et des processus spécifiques des outils de profilage.  
@@ -77,4 +75,4 @@ Cette vue d’ensemble explique les principes de base du profilage. Les dévelop
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Procédure pas à pas : identifier les problèmes de performances](../profiling/walkthrough-identifying-performance-problems.md)
+ [Procédure pas à pas : Identifier les problèmes de performances](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

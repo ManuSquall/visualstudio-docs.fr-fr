@@ -2,7 +2,6 @@
 title: Analyser la réactivité de l’interface utilisateur HTML dans les applications UWP | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843526"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -69,9 +68,9 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 6.  Pour arrêter le profilage de l'application et afficher les données que le profileur a rassemblées, sélectionnez **Arrêter la collecte**.  
   
 ## <a name="isolate-an-issue"></a>Isoler un problème  
- La section suivante propose des solutions pour vous aider à isoler les problèmes de performances. Pour obtenir une explication pas à pas de l’identification et de la correction des problèmes de performances à l’aide d’un exemple d’application de test de performances, consultez [Procédure pas à pas : amélioration de la réactivité de l’interface utilisateur (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ La section suivante propose des solutions pour vous aider à isoler les problèmes de performances. Pour obtenir une explication détaillée sur l’identification et la correction des problèmes de performances à l’aide d’un exemple d’application de tests de performances, consultez [Procédure pas à pas : Amélioration de la réactivité de l’interface utilisateur (HTML)](/visualstudio/profiling/html-ui-responsiveness).  
   
-###  <a name="Workflow"></a> Isoler un problème de réactivité de l’interface utilisateur  
+###  <a name="Workflow"></a> Isoler un problème de réactivité de l'interface utilisateur  
  La procédure suivante constitue une proposition de flux de travail qui peut vous aider à utiliser le profileur de réactivité de l'interface utilisateur plus efficacement :  
   
 1.  Ouvrez votre application dans Visual Studio.  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   Un événement de navigation, qui se produit lorsque vous accédez à une autre page. L'info-bulle de cet événement indique l'URL de la page de destination.  
   
 ###  <a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC  
- Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#profiler-event-reference) plus loin dans cette rubrique.  
+ Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement**, **Script**, garbage collection (**GC**), **Style**, **Rendu** et **Décodage d’image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#profiler-event-reference) plus loin dans cette rubrique.  
   
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.  
   
@@ -328,7 +327,7 @@ if (performance.mark && performance.measure) {
 |événement|Catégorie d'événement|Se produit lorsque|  
 |-----------|--------------------|-----------------|  
 |Analyse de code CSS|Chargement en cours|Un nouveau contenu CSS a été rencontré et il a été tenté d'analyser le contenu CSS.|  
-|Analyse de code HTML|Chargement|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
+|Analyse de code HTML|Chargement en cours|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
 |Requête HTTP|Chargement en cours|Une ressource distante a été trouvée dans le DOM ou un XMLHttpRequest a été créé qui a provoqué une requête HTTP.|  
 |Téléchargement spéculatif|Chargement en cours|Les ressources requises ont été recherchées dans le contenu HTML de la page de sorte que les requêtes HTTP suivantes concernant les ressources ont pu être planifiées rapidement.|  
 |Fonction de rappel d'image d'animation|Scripts|Le navigateur allait afficher une autre image et cela a déclenché une fonction de rappel fournie par l'application.|  

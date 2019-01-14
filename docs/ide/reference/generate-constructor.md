@@ -2,19 +2,18 @@
 title: Action rapide Générer un constructeur
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895296"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -26,9 +25,9 @@ Cette génération de code s’applique à :
 
 **Quoi :** vous permet de générer immédiatement le code pour un nouveau constructeur sur une classe.
 
-**Quand :** vous introduisez un nouveau constructeur et souhaitez le déclarer correctement, automatiquement, ou que vous modifiez un constructeur existant.
+**Quand :** vous introduisez un nouveau constructeur et souhaitez le déclarer correctement, automatiquement, ou vous modifiez un constructeur existant.
 
-**Pourquoi :** vous pouvez déclarer le constructeur avant de l’utiliser, mais cette fonctionnalité le générera automatiquement avec les paramètres appropriés. En outre, la modification d’un constructeur existant nécessite la mise à jour de tous les sites d’appel, sauf si vous utilisez cette fonctionnalité pour les mettre automatiquement à jour.
+**Pourquoi :** vous pouvez déclarer le constructeur avant de l’utiliser, mais cette fonctionnalité le générera automatiquement avec les paramètres appropriés. En outre, la modification d’un constructeur existant nécessite la mise à jour de tous les sites d’appel, sauf si vous utilisez cette fonctionnalité pour les mettre automatiquement à jour.
 
 **Comment :** il existe plusieurs façons de générer un constructeur :
 

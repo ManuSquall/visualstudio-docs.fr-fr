@@ -1,8 +1,6 @@
 ---
-title: 'Comment : générer les mêmes fichiers sources avec des options différentes | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Générer les mêmes fichiers sources avec des options différentes | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a9bbf558558b7eff673d255e525d6b69677e906
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850240"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Guide pratique pour générer les mêmes fichiers sources avec des options différentes
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procédure : Générer les mêmes fichiers sources avec des options différentes
 Lorsque vous générez des projets, vous compilez fréquemment les mêmes composants avec des options de génération différentes. Par exemple, vous pouvez créer une version Debug avec des informations de symbole ou une version Release sans informations de symbole, mais avec les optimisations activées. Vous pouvez également générer un projet pour qu’il s’exécute sur une plateforme spécifique, par exemple x86 ou [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Dans toutes ces situations, la plupart des options de génération restent identiques ; seules quelques options sont modifiées pour contrôler la configuration de build. Avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vous utiliser des propriétés et des conditions pour créer les différentes configurations de build.  
   
 ## <a name="use-properties-to-modify-projects"></a>Utiliser des propriétés pour modifier des projets  
@@ -54,7 +52,7 @@ Lorsque vous générez des projets, vous compilez fréquemment les mêmes compos
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Pour définir une propriété de projet dans la ligne de commande  
   
--   Utilisez le commutateur **-property** avec la propriété et la valeur de propriété. Exemple :  
+-   Utilisez le commutateur **-property** avec la propriété et la valeur de propriété. Par exemple :  
   
     ```cmd  
     msbuild file.proj -property:Flavor=Debug  
@@ -68,7 +66,7 @@ Lorsque vous générez des projets, vous compilez fréquemment les mêmes compos
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Pour spécifier plusieurs propriétés de projet dans la ligne de commande  
   
-- Utilisez le commutateur **-property** ou **-p** plusieurs fois avec la propriété et les valeurs de propriétés, ou utilisez un commutateur **-property** ou **-p** et séparez les différentes propriétés par des points-virgules (;). Exemple :  
+- Utilisez le commutateur **-property** ou **-p** plusieurs fois avec la propriété et les valeurs de propriétés, ou utilisez un commutateur **-property** ou **-p** et séparez les différentes propriétés par des points-virgules (;). Par exemple :  
   
   ```cmd  
   msbuild file.proj -p:Flavor=Debug;Platform=x86  

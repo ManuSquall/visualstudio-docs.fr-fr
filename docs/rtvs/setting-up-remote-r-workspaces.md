@@ -3,19 +3,18 @@ title: Espaces de travail distants pour R
 description: Guide pratique pour configurer les espaces de travail R distants et s’y connecter à partir de Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837782"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurer des espaces de travail distants
 
@@ -171,13 +170,13 @@ Pour exécuter le code R, l’ordinateur distant doit avoir un interpréteur R
 
 Une fois que R Services est en cours d’exécution sur l’ordinateur distant, vous devez aussi créer des comptes d’utilisateur, définir des règles de pare-feu, configurer le réseau Azure et configurer le certificat SSL.
 
-1. Comptes d’utilisateur : Créez des comptes pour chaque utilisateur qui accède à l’ordinateur distant. Vous pouvez créer des comptes d’utilisateur locaux standard (sans privilège), ou vous pouvez joindre votre serveur R à votre domaine et ajouter les groupes de sécurité appropriés au groupe de sécurité `Users`.
+1. Comptes d’utilisateur : créez des comptes pour chaque utilisateur qui accède à l’ordinateur distant. Vous pouvez créer des comptes d’utilisateur locaux standard (sans privilège), ou vous pouvez joindre votre serveur R à votre domaine et ajouter les groupes de sécurité appropriés au groupe de sécurité `Users`.
 
-1. Règles de pare-feu : Par défaut, `R Host Broker` écoute sur le port TCP 5444. Par conséquent, vérifiez qu’il existe des règles de pare-feu Windows activées pour le trafic entrant et sortant (le trafic sortant est nécessaire pour l’installation des packages et des scénarios similaires).  Le programme d’installation de R Services définit ces règles automatiquement pour le pare-feu Windows intégré. Toutefois, si vous utilisez un pare-feu tiers, ouvrez manuellement le port 5444 pour `R Host Broker`.
+1. Règles de pare-feu : par défaut, le `R Host Broker` est à l’écoute sur le port TCP 5444. Par conséquent, vérifiez qu’il existe des règles de pare-feu Windows activées pour le trafic entrant et sortant (le trafic sortant est nécessaire pour l’installation des packages et des scénarios similaires).  Le programme d’installation de R Services définit ces règles automatiquement pour le pare-feu Windows intégré. Toutefois, si vous utilisez un pare-feu tiers, ouvrez manuellement le port 5444 pour `R Host Broker`.
 
-1. Configuration d’Azure : Si l’ordinateur distant est une machine virtuelle sur Azure, ouvrez le port 5444 pour le trafic entrant dans le réseau Azure, qui est indépendant du pare-feu Windows. Pour plus d’informations, consultez [Filtrer le trafic réseau avec les groupes de sécurité réseau](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) dans la documentation Azure.
+1. Configuration d’Azure : si l’ordinateur distant est une machine virtuelle sur Azure, ouvrez le port 5444 pour le trafic entrant sur le réseau Azure, qui est indépendant du Pare-feu Windows. Pour plus d’informations, consultez [Filtrer le trafic réseau avec les groupes de sécurité réseau](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) dans la documentation Azure.
 
-1. Indiquer au répartiteur de l’hôte R le certificat SSL à charger : Si vous installez le certificat sur un serveur intranet, il est probable que le nom de domaine complet de votre serveur soit identique à son nom NETBIOS. Dans ce cas, vous n’avez rien à faire et le certificat par défaut est chargé.
+1. Indiquer au répartiteur de l’hôte R le certificat SSL à charger : si vous installez le certificat sur un serveur intranet, il est probable que le nom de domaine complet de votre serveur soit identique à son nom NETBIOS. Dans ce cas, vous n’avez rien à faire et le certificat par défaut est chargé.
 
     Toutefois, si vous installez votre certificat sur un serveur accessible sur Internet (par exemple, une machine virtuelle Azure), utilisez le nom de domaine complet (FQDN) de votre serveur, car le nom de domaine complet d’un serveur accessible sur Internet n’est jamais le même que son nom NETBIOS.
 

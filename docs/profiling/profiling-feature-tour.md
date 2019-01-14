@@ -3,7 +3,6 @@ title: Mesurer les performances avec des outils de profilage
 description: Examinez brièvement les différents outils de diagnostic disponibles dans Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880310"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
+# <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : Découvrir les outils de profilage
 
 Visual Studio propose des outils de profilage pour vous aider à diagnostiquer différents types de problèmes de performances en fonction de votre type d’application.
 
@@ -168,4 +167,4 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
 
 ## <a name="see-also"></a>Voir aussi  
- [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Débogage dans Visual Studio](/visualstudio/debugger/debugger-feature-tour)

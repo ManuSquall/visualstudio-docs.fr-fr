@@ -2,19 +2,18 @@
 title: Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986139"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Utiliser différents navigateurs web avec des tests codés de l’interface utilisateur
 
@@ -45,7 +44,7 @@ Lorsque vous testez votre application web à l'aide de divers types de navigateu
 > [!NOTE]
 > Vous ne pouvez pas enregistrer des tests codés de l'interface utilisateur à l'aide des navigateurs Google Chrome ou Mozilla Firefox.
 
- **Lecture avec Internet Explorer :** lorsqu’aucun navigateur n’est explicitement spécifié, les tests s’exécutent par défaut sur Internet Explorer. Vous pouvez déclarer explicitement le navigateur à utiliser en définissant la propriété **BrowserWindow.CurrentBrowser** dans le code de votre test. Pour Internet Explorer, cette propriété doit être définie sur **IE** ou **Internet Explorer**.
+ **Lecture avec Internet Explorer :** quand aucun navigateur n’est explicitement spécifié, les tests s’exécutent par défaut sur Internet Explorer. Vous pouvez déclarer explicitement le navigateur à utiliser en définissant la propriété **BrowserWindow.CurrentBrowser** dans le code de votre test. Pour Internet Explorer, cette propriété doit être définie sur **IE** ou **Internet Explorer**.
 
  **Lecture avec des navigateurs web autres qu’Internet Explorer** : pour lire sur les navigateurs web autres qu’Internet Explorer, modifiez la propriété BrowserWindow.CurrentBrowser dans votre code de test et définissez-la sur **Firefox** ou **Chrome**.
 

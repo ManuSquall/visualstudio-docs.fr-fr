@@ -2,7 +2,6 @@
 title: Analyse du code, page du Concepteur de projets
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860129"
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
 Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur votre code. L’outil rapporte des informations relatives à vos assemblys, notamment les éventuelles violations des règles de programmation et de conception présentées plus avant dans le cadre des règles de conception de Microsoft .NET Framework.
@@ -78,4 +77,4 @@ Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur
 
 - [Analyse du code pour les avertissements liés au code managé](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Vue d’ensemble de l’analyse du code managé](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Procédure pas à pas : analyse du code managé pour les erreurs de code](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Procédure pas à pas : Analyse du code géré pour la recherche des défaillances du code](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

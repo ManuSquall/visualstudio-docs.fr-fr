@@ -2,7 +2,6 @@
 title: Working with elements in XAML Designer
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922597"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre application en XAML, dans le code ou à l'aide du concepteur XAML. Cette rubrique décrit comment utiliser des éléments dans le concepteur XAML dans Visual Studio ou Blend pour Visual Studio.
@@ -65,9 +64,9 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 1.  Sélectionnez les éléments que vous voulez aligner. Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et sélectionnez les éléments.
 
-2.  Sélectionnez l’une des propriétés suivantes sous **HorizontalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Gauche**, **Centre**, **Droite** ou **Étirer**.
+2.  Sélectionnez l’une des propriétés suivantes sous **HorizontalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Gauche**, **Centre**, **Droite** ou **Étirer**.
 
-3.  Sélectionnez l’une des propriétés suivantes sous **VerticalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Haut**, **Centre**, **Bas** ou **Étirer**.
+3.  Sélectionnez l’une des propriétés suivantes sous **VerticalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Haut**, **Centre**, **Bas** ou **Étirer**.
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Pour aligner deux ou plusieurs éléments à l'aide de lignes d'alignement
 

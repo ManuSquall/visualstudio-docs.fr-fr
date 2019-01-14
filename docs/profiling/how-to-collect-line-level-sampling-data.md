@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour collecter des données d’échantillonnage au niveau ligne | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Collecter des données d’échantillonnage au niveau de la ligne | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7dc61ae776d75331eaaf2974f0eda139b601089
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952032"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Guide pratique pour collecter des données d’échantillonnage au niveau ligne
+# <a name="how-to-collect-line-level-sampling-data"></a>Procédure : Collecter des données d’échantillonnage au niveau de la ligne
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.  
   
 ## <a name="overview"></a>Vue d'ensemble  

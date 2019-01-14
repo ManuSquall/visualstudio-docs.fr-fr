@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour créer un nuanceur de couleur de base
+title: 'Procédure : Créer un nuanceur de couleur de base'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d81bbc96e2191d7e637c63a3d28364f957ed5e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950853"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Guide pratique pour créer un nuanceur de couleur de base
+# <a name="how-to-create-a-basic-color-shader"></a>Procédure : Créer un nuanceur de couleur de base
 
 Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur de couleurs simples. Ce nuanceur définit la couleur finale sur une valeur de couleur RVB de constante.
 
@@ -48,7 +47,7 @@ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
 - [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

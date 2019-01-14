@@ -1,8 +1,6 @@
 ---
 title: Ordre de génération des cibles | Microsoft Docs
-ms.custom: ''
 ms.date: 09/04/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96eb3aacfd83ad60ae6c0e0f1fa95209136307ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881524"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
 Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Vous pouvez utiliser les attributs suivants pour spécifier l’ordre d’exécution des cibles :  
@@ -45,7 +43,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
  Les projets importés peuvent posséder leurs propres attributs `InitialTargets`. Toutes les cibles initiales sont agrégées et exécutées dans l’ordre.  
   
- Pour plus d’informations, consultez l’article [Guide pratique pour spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Pour plus d'informations, voir [Procédure : Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Cibles par défaut  
  L’attribut `DefaultTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie la ou les cibles qui sont générées si aucune cible n’est spécifiée explicitement sur une ligne de commande.  
@@ -64,7 +62,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
  Les projets importés peuvent posséder leurs propres attributs `DefaultTargets`. Le premier attribut `DefaultTargets` rencontré détermine les cibles par défaut qui s’exécuteront.  
   
- Pour plus d’informations, consultez l’article [Guide pratique pour spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Pour plus d'informations, voir [Procédure : Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Première cible  
  En l’absence de cibles initiales, cibles par défaut ou cibles de ligne de commande, MSBuild exécute la première cible qu’il rencontre dans le fichier projet ou dans les fichiers projet importés.  

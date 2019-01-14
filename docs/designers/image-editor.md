@@ -2,7 +2,6 @@
 title: Éditeur d’images
 ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899715"
 ---
 # <a name="image-editor"></a>éditeur d'images
 
@@ -126,10 +125,10 @@ Le tableau suivant décrit les éléments de la barre d’outils **Mode de l’�
 |**Grid**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|
 |**Afficher le niveau MIP suivant**|Active le niveau MIP supérieur suivant dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|
 |**Afficher le niveau MIP précédent**|Active le niveau MIP inférieur dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|
-|**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :** En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|
+|**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :**  En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|
 |**Arrière-plan**|Active ou désactive l’affichage de l’arrière-plan à travers les parties transparentes de l’image. Vous pouvez configurer la façon dont l’arrière-plan s’affiche en choisissant parmi les options suivantes :<br /><br /> **Damier**<br /> Utilise une couleur verte avec la couleur d’arrière-plan spécifiée pour afficher l’arrière-plan sous la forme d’un modèle de damier. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.<br /><br /> Arrière-plan blanc<br /> Utilise la couleur blanc pour afficher l’arrière-plan.<br /><br /> Arrière-plan noir<br /> Utilise la couleur noir pour afficher l’arrière-plan.<br /><br /> Animer l’arrière-plan<br /> Permet de déplacer le modèle de damier lentement selon un mouvement panoramique. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.|
 |**Propriétés**|Affiche ou masque alternativement la fenêtre **Propriétés**.|
-|**Avancé**|Contient des commandes et des options supplémentaires.<br /><br /> **Filtres**<br /><br /> Fournit plusieurs filtres d’image courants : **Noir et blanc**, **Flou**, **Éclaircir**, **Obscurcir**, **Détection des bords**, **Relief**, **Inverser les couleurs**, **Ripple**, **Ton sépia** et **Accentuer**.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l’aire de conception de l’**éditeur d’images**.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l’aire de conception de l’**éditeur d’images**.<br /><br /> **Outils**<br /><br /> **Symétrie horizontale**<br /> Transpose l’image autour de son axe horizontal (l’axe X).<br /><br /> **Symétrie verticale**<br /> Transpose l’image autour de son axe vertical (l’axe Y).<br /><br /> **Générer des mips**<br /> Génère des niveaux MIP pour une image. Si des niveaux MIP existent déjà, ils sont recréés à partir du niveau MIP le plus grand. Toutes les modifications qui ont été apportées à des niveaux MIP plus petits sont perdues. Pour enregistrer les niveaux MIP que vous avez générés, vous devez utiliser le format *.dds* pour enregistrer l’image.<br /><br /> **Affichage**<br /><br /> **Fréquence d’images**<br /> Quand cette option est activée, elle affiche la fréquence d’images dans le coin supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. **Conseil :** Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.|
+|**Avancé**|Contient des commandes et des options supplémentaires.<br /><br /> **Les filtres**<br /><br /> Fournit plusieurs filtres d’image courants : **Noir et blanc**, **Flou**, **Éclaircir**, **Obscurcir**, **Détection des bords**, **Relief**, **Inverser les couleurs**, **Ripple**, **Ton sépia** et **Accentuer**.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l’aire de conception de l’**éditeur d’images**.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l’aire de conception de l’**éditeur d’images**.<br /><br /> **Outils**<br /><br /> **Symétrie horizontale**<br /> Transpose l’image autour de son axe horizontal (l’axe X).<br /><br /> **Symétrie verticale**<br /> Transpose l’image autour de son axe vertical (l’axe Y).<br /><br /> **Générer des mips**<br /> Génère des niveaux MIP pour une image. Si des niveaux MIP existent déjà, ils sont recréés à partir du niveau MIP le plus grand. Toutes les modifications qui ont été apportées à des niveaux MIP plus petits sont perdues. Pour enregistrer les niveaux MIP que vous avez générés, vous devez utiliser le format *.dds* pour enregistrer l’image.<br /><br /> **Affichage**<br /><br /> **Fréquence d’images**<br /> Quand cette option est activée, elle affiche la fréquence d’images dans le coin supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. **Conseil :** Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.|
 
 ### <a name="image-editor-toolbar"></a>Barre d'outils Éditeur d'images
 

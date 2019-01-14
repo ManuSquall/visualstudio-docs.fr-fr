@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées
+title: 'Procédure : Exporter une texture qui contient des valeurs alpha prémultipliées'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988003"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procédure : Exporter une texture qui contient des valeurs alpha prémultipliées
 
 Le pipeline de contenus d’image peut générer des textures alpha prémultipliées à partir d’une image source. Ces textures peuvent être plus faciles à utiliser et plus robustes que celles ne contenant pas de valeurs alpha prémultipliées.
 

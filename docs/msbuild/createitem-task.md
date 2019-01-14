@@ -1,8 +1,6 @@
 ---
 title: CreateItem, tâche | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e50b1f56be7b32bd21b9b5785caac003b7ee86d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860882"
 ---
 # <a name="createitem-task"></a>CreateItem (tâche)
 Remplit des collections d’éléments avec les éléments d’entrée. Cela permet de copier des éléments d’une liste à une autre.  
@@ -38,7 +36,7 @@ Remplit des collections d’éléments avec les éléments d’entrée. Cela per
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|Paramètres de tableau `String` facultatif.<br /><br /> Spécifie des métadonnées supplémentaires à attacher aux éléments de sortie.  Spécifiez le nom et la valeur des métadonnées de l’élément avec la syntaxe suivante :<br /><br /> *nom_métadonnées* `=` *valeur_métadonnées*<br /><br /> Plusieurs paires nom/valeur de métadonnées doivent être séparées par un point-virgule. Si le nom ou la valeur contient un point-virgule ou tout autre caractère spécial, ils doivent être échappés. Pour plus d’informations, consultez [Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
+|`AdditionalMetadata`|Paramètres de tableau `String` facultatif.<br /><br /> Spécifie des métadonnées supplémentaires à attacher aux éléments de sortie.  Spécifiez le nom et la valeur des métadonnées de l’élément avec la syntaxe suivante :<br /><br /> *nom_métadonnées* `=` *valeur_métadonnées*<br /><br /> Plusieurs paires nom/valeur de métadonnées doivent être séparées par un point-virgule. Si le nom ou la valeur contient un point-virgule ou tout autre caractère spécial, ils doivent être échappés. Pour plus d'informations, voir [Procédure : Utiliser des caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
 |`Exclude`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les éléments à exclure de la collection d’éléments de sortie. Ce paramètre peut contenir des spécifications de caractères génériques. Pour plus d’informations, consultez [Éléments](../msbuild/msbuild-items.md) et [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à inclure dans la collection d’éléments de sortie. Ce paramètre peut contenir des spécifications de caractères génériques.|  
 |`PreserveExistingMetadata`|Paramètre `Boolean` facultatif.<br /><br /> Si `True`, appliquer uniquement les métadonnées supplémentaires si elles n’existent pas.|  

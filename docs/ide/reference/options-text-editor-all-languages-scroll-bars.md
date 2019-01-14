@@ -2,7 +2,6 @@
 title: Options, Éditeur de texte, Tous les langages, Barres de défilement
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876784"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Options, Éditeur de texte, Tous les langages, Barres de défilement
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de la barre de défilement de l’éditeur de code. Pour afficher ces options, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Barres de défilement**.
@@ -38,7 +37,7 @@ Quand cette option est sélectionnée, une barre de défilement verticale s’af
 
 Indiquez si la barre de défilement verticale doit afficher les annotations suivantes :
 
-- modifications
+- est modifiée
 - marques
 - erreurs
 - position du signe d’insertion
@@ -65,4 +64,4 @@ En *mode mappage*, quand vous cliquez sur un emplacement dans la barre de défil
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure : Personnaliser la barre de défilement](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Guide pratique pour personnaliser la barre de défilement](../how-to-track-your-code-by-customizing-the-scrollbar.md)

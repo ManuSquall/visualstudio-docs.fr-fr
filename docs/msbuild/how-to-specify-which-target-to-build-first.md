@@ -1,8 +1,6 @@
 ---
-title: 'Comment : spécifier la cible à générer en premier | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifier la cible à générer en premier | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d73ef1935f01a48d756ce39df934f3afa83c2d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967029"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Guide pratique pour spécifier la cible à générer en premier
+# <a name="how-to-specify-which-target-to-build-first"></a>Procédure : Spécifier la cible à générer en premier
 Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) génère le premier projet trouvé, et toutes les dépendances, à moins que le fichier projet ne contienne un attribut `DefaultTargets`, un attribut `InitialTargets` ou qu’une cible ne soit spécifiée en ligne de commande à l’aide du commutateur **-target**.  
   
 ## <a name="use-the-initialtargets-attribute"></a>Utiliser l’attribut InitialTargets  
@@ -29,7 +27,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
 #### <a name="to-specify-one-initial-target"></a>Pour spécifier une cible initiale  
   
-- Spécifiez la cible par défaut dans l’attribut `InitialTargets` de l’élément `Project`. Exemple :  
+- Spécifiez la cible par défaut dans l’attribut `InitialTargets` de l’élément `Project`. Par exemple :  
   
    `<Project InitialTargets="Clean">`  
   
@@ -46,7 +44,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
 #### <a name="to-specify-one-default-target"></a>Pour spécifier une cible par défaut  
   
-- Spécifiez la cible par défaut dans l’attribut `DefaultTargets` de l’élément `Project`. Exemple :  
+- Spécifiez la cible par défaut dans l’attribut `DefaultTargets` de l’élément `Project`. Par exemple :  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -64,13 +62,13 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
  
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Pour utiliser en premier une cible autre que la cible par défaut  
   
--   Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **-target**. Exemple :  
+-   Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **-target**. Par exemple :  
   
      `msbuild file.proj -target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Pour utiliser en premier plusieurs cibles autres que les cibles par défaut  
   
--   Listez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **-target**. Exemple :  
+-   Listez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **-target**. Par exemple :  
   
      `msbuild <file name>.proj -t:Clean;Compile`  
   

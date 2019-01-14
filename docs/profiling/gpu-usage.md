@@ -1,20 +1,18 @@
 ---
 title: Utilisation du GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941084"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 
@@ -24,7 +22,7 @@ Cette capture d’écran montre la fenêtre **Rapport d’utilisation du GPU** :
 
 ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Voici les conditions requises pour l’outil Utilisation du GPU, qui s’ajoutent à celles de Graphics Diagnostics.
 
@@ -104,7 +102,7 @@ Pour trouver plus facilement ce que vous cherchez, filtrez le rapport Utilisatio
 |--------------------|-----------------|
 |**Process**|Nom du processus qui vous intéresse. Tous les processus qui ont utilisé le GPU pendant la session de diagnostic sont inclus dans cette liste déroulante. La couleur associée au processus dans cette liste déroulante est la couleur de l’activité du thread dans les chronologies ci-dessous.|
 |**Thread**|ID de thread qui vous intéresse. Dans une application multithread, ces informations peuvent vous aider à isoler des threads particuliers qui appartiennent au processus qui vous intéresse. Les événements associés au thread sélectionné sont mis en surbrillance dans chaque chronologie.|
-|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée **Remarque :** Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d’un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|
+|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée.**Remarque  :**  Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d'un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|
 |**Filtrer**|Mots clés qui vous intéressent. Les événements de la partie inférieure du rapport incluent seulement ceux qui correspondent complètement ou partiellement à un mot clé. Vous pouvez spécifier plusieurs mots clés en les séparant par des virgules.|
 |**Tri des hiérarchies**|Case à cocher qui indique si les hiérarchies d'événements (définies via des marqueurs utilisateur) sont conservées ou ignorées.|
 

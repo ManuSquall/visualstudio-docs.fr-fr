@@ -2,7 +2,6 @@
 title: Événements de build, page du Concepteur de projets (C#)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
@@ -17,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe83d3a387d2066965fe83145ddbda4e9648d36b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1745fefc5b1d2065f209e9396794cac5a5cc782d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943913"
 ---
 # <a name="build-events-page-project-designer-c"></a>Événements de build, page du Concepteur de projets (C#)
-Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d’informations, consultez [Guide pratique pour spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)et [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d'informations, voir [Procédure : Spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md) et [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
  **Configuration** Ce contrôle n’est pas modifiable dans cette page. Pour obtenir une description de ce contrôle, consultez [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md).
@@ -49,12 +48,12 @@ Utilisez la page **Événements de build** du **Concepteur de projets** pour sp�
 |Option|Résultat|
 |------------|------------|
 |**Toujours**|L’événement post-build est exécuté, que la build ait abouti ou échoué.|
-|**En cas de build réussie** |L’événement post-build est exécuté si la build réussit. Ainsi, l’événement est exécuté même pour un projet à jour, à condition que la build soit un succès.|
+|**En cas de build réussie **|L’événement post-build est exécuté si la build réussit. Ainsi, l’événement est exécuté même pour un projet à jour, à condition que la build soit un succès.|
 |**Lorsque la build met à jour la sortie du projet**|L’événement post-build n’est exécuté que quand le fichier de sortie du compilateur (.exe ou .dll) est différent du fichier de sortie précédent. Ainsi, un événement post-build n’est pas exécuté si un projet est à jour.|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Guide pratique pour Spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Guide pratique pour spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)
 - [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)

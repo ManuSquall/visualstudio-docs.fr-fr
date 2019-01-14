@@ -1,8 +1,6 @@
 ---
 title: Collecte de données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d9b76f779af88a6ad02dc61d73a0beb31691c03a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902722"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecter des données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] utilisant la méthode d’échantillonnage à partir de la ligne de commande.  

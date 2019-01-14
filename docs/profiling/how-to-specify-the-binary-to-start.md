@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour spécifier le fichier binaire à démarrer | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Spécifier le fichier binaire à démarrer | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87fc4102b3cbd3420f1e5c3b7ea4a067e0d95a0d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c569b9e285e4865b8ef637443acdf6026b0fec9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868467"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Guide pratique pour spécifier le binaire à démarrer
+# <a name="how-to-specify-the-binary-to-start"></a>Procédure : Spécifier le binaire à démarrer
 
 Pour profiler des fichiers binaires, tels que les DLL, vous devez entrer des informations dans la boîte de dialogue **Pages de propriétés de \<Cible>**. Ces informations indiquent où le projet DLL peut trouver l’application appelante.
 

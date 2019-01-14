@@ -2,21 +2,20 @@
 title: Créer un test codé de l'interface utilisateur
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878232"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : Créer, modifier et gérer un test codé de l’interface utilisateur
 
 Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et gérer un test codé de l’interface utilisateur pour tester une application WPF (Windows Presentation Framework). La procédure pas à pas fournit des solutions pour corriger des tests interrompus par différents problèmes de synchronisation et de refactorisation des contrôles.
 

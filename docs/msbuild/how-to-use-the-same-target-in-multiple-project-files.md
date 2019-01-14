@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour utiliser la même cible dans plusieurs fichiers projet | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Utiliser la même cible dans plusieurs fichiers projet | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7ace0e86a5c65afa2c8c5fb12364b9dba66c093e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905463"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procédure : Utiliser la même cible dans plusieurs fichiers projet
 Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vous avez peut-être constaté que vous deviez utiliser les mêmes tâches et les mêmes cibles dans les différents fichiers projet. Au lieu d’inclure la description complète de ces tâches ou de ces cibles dans chaque fichier projet, vous pouvez enregistrer une cible dans un fichier projet distinct et importer ensuite ce projet dans un autre projet qui doit utiliser la cible.  
   
 ## <a name="use-the-import-element"></a>Utiliser l’élément Import  
@@ -30,7 +28,7 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../extensi
   
 1.  Dans le fichier projet importateur, définissez toutes les propriétés et les éléments qui sont utilisés comme paramètres des propriétés et des éléments dans le projet importé.  
   
-2.  Utilisez l’élément `Import` pour importer le projet. Exemple :  
+2.  Utilisez l’élément `Import` pour importer le projet. Par exemple :  
   
      `<Import Project="MyCommon.targets"/>`  
   

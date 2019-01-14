@@ -1,8 +1,7 @@
 ---
-title: Guide pratique pour créer et modifier les niveaux MIP
+title: 'Procédure : Créer et modifier des niveaux MIP'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 56463df627a0e20624403ec4e1369569795d71fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874418"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Guide pratique pour créer et modifier les niveaux MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Procédure : Créer et modifier des niveaux MIP
 Ce document montre comment utiliser l’**Éditeur d’images** pour générer et modifier des *niveaux MIP* pour le niveau de détail de l’espace de texture.
 
 ## <a name="generating-mip-levels"></a>Génération de niveaux MIP

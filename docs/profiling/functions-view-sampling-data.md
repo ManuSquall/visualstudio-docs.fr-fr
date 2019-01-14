@@ -1,8 +1,6 @@
 ---
 title: Vue Fonctions - Données d’échantillonnage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942578"
 ---
 # <a name="functions-view---sampling-data"></a>Fonctions, vue - données d’échantillonnage
 La vue de rapport Fonctions de la méthode de profilage par échantillonnage répertorie les fonctions échantillonnées pendant l’exécution du profilage.  
@@ -42,7 +40,7 @@ La vue de rapport Fonctions de la méthode de profilage par échantillonnage ré
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)   
  [Fonctions, vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)
+ [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)

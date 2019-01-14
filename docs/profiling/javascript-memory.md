@@ -2,7 +2,6 @@
 title: Analyser l’utilisation de mémoire JavaScript dans les applications UWP | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962374"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -99,7 +98,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 -   [Visualiser une comparaison d'instantanés](#view-a-snapshot-diff). Affiche les valeurs comparées pour différents instantanés. Ces vues affichent les différences de taille d'objets et de nombre d'objets.  
   
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
- La procédure suivante présente un flux de travail qui peut vous aider à utiliser l'analyseur de mémoire JavaScript plus efficacement. Ces étapes peuvent s'avérer utiles si vous pensez que votre application rencontre une fuite de mémoire. Pour obtenir un didacticiel qui vous guide dans le processus d’identification d’une fuite de mémoire dans une application active, consultez [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ La procédure suivante présente un flux de travail qui peut vous aider à utiliser l'analyseur de mémoire JavaScript plus efficacement. Ces étapes peuvent s'avérer utiles si vous pensez que votre application rencontre une fuite de mémoire. Pour vous guider dans le processus d’identification d’une fuite de mémoire dans une application, consultez [Procédure pas à pas : Recherche d’une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Ouvrez votre application dans Visual Studio.  
   
@@ -141,7 +140,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
     - Taille différentielle de tas (lien de gauche sous la taille du tas). Le texte du lien indique la différence entre la taille du tas de l'instantané actuel et la taille du tas de l'instantané précédent.  
   
-    - Nombre différentiel d'objets (lien de droite sous le nombre d'objets). Le texte du lien indique deux valeurs (par exemple +1858 / -1765) : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent.  
+    - Nombre différentiel d'objets (lien de droite sous le nombre d'objets). Le texte du lien indique deux valeurs (par exemple + 1858 / -1765) : la première valeur est le nombre de nouveaux objets ajoutés depuis l’instantané précédent. La deuxième valeur est le nombre d’objets supprimés depuis l’instantané précédent.  
   
       Ces liens ouvrent une vue comparée des détails d'instantané pour les types du tas, par ordre de taille retenue ou de nombre d'objets, selon le lien que vous avez ouvert.  
   
@@ -197,7 +196,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 -   Nombre d'objets. Ce nombre indique uniquement les objets créés dans votre application et exclut les objets intégrés créés par le runtime JavaScript. Le nombre d'objets est lié à la vue Types des détails d'un instantané.  
   
--   Nombre différentiel d'objets. Il indique deux valeurs : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent. Par exemple, l'illustration montre que 1 859 objets ont été ajoutés et 1 733 objets ont été supprimés depuis l'instantané n°1. Cette information est suivie d'une flèche rouge vers le haut si le nombre total d'objets a augmenté ou d'une flèche verte vers le bas s'il a diminué. Si le nombre d'objets n'a pas changé, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base**s'affiche. Le nombre différentiel d'objets est lié à la vue Types de la comparaison d'instantanés.  
+-   Nombre différentiel d'objets. Il indique deux valeurs : la première valeur est le nombre de nouveaux objets ajoutés depuis l’instantané précédent. La deuxième valeur est le nombre d’objets supprimés depuis l’instantané précédent. Par exemple, l'illustration montre que 1 859 objets ont été ajoutés et 1 733 objets ont été supprimés depuis l'instantané n°1. Cette information est suivie d'une flèche rouge vers le haut si le nombre total d'objets a augmenté ou d'une flèche verte vers le bas s'il a diminué. Si le nombre d'objets n'a pas changé, le texte **Aucune modification** s'affiche à la place d'un nombre. Pour le premier instantané, le texte **Ligne de base**s'affiche. Le nombre différentiel d'objets est lié à la vue Types de la comparaison d'instantanés.  
   
 -   Capture d'écran lors de la prise de l'instantané.  
   
@@ -282,7 +281,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
  Chaque vue possède son propre filtre, de sorte que le filtre n'est pas conservé lorsque vous basculez vers une autre vue.  
   
 ## <a name="find-an-object-in-the-object-tree"></a>Rechercher un objet dans l'arborescence des objets  
- Dans les vues Types et Dominators, vous pouvez voir la relation entre un objet particulier et l'objet `Global`. Les objets enracinés à l'objet `Global` ne font pas l'objet d'un garbage collection. Vous pouvez rechercher facilement un objet connu dans la vue Racines, sans avoir besoin d'effectuer une recherche dans l'arborescence d'objets `Global` . Pour ce faire, ouvrez le menu contextuel pour un objet dans la vue Dominators ou Types, puis sélectionnez **Afficher en vue racine**.  
+ Dans les vues Types et Dominators, vous pouvez voir la relation entre un objet particulier et l'objet `Global` . Les objets enracinés à l'objet `Global` ne font pas l'objet d'un garbage collection. Vous pouvez rechercher facilement un objet connu dans la vue Racines, sans avoir besoin d'effectuer une recherche dans l'arborescence d'objets `Global` . Pour ce faire, ouvrez le menu contextuel pour un objet dans la vue Dominators ou Types, puis sélectionnez **Afficher en vue racine**.  
   
 ## <a name="view-shared-object-references"></a>Visualiser les références aux objets partagés  
  Dans les vues Types et Dominators, le volet inférieur contient une liste de références d'objet qui indique les références partagées. Lorsque vous sélectionnez un objet dans le volet supérieur, la liste des références d'objet répertorie tous les objets qui pointent sur cet objet.  
@@ -315,7 +314,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 - Ajoutez les commandes de l'analyseur de mémoire à votre code source.  
   
-  Vous pouvez utiliser les commandes suivantes dans votre code source :  
+  Vous pouvez utiliser les commandes suivantes dans votre code source :  
   
 - `console.takeHeapSnapshot` prend un instantané du tas qui s'affiche dans l'analyseur de mémoire JavaScript. Cette commande est l'une des [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
@@ -324,7 +323,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 > [!TIP]
 >  Utilisez `console.takeHeapSnapshot` pour accélérer l'analyse lorsque vous répétez les scénarios d'utilisation de la mémoire.  
   
- Ces commandes lèvent une exception si vous les ajoutez à votre application et exécutez l'application en dehors de l'analyseur de mémoire JavaScript. Toutefois, vous pouvez tester si ces commandes existent avant des utiliser. (Ces commandes n'existent pas au début de la phase de démarrage de la session.) Pour vérifier si vous pouvez appeler `takeHeapSnapshot` sans risque, utilisez le code suivant :  
+ Ces commandes lèvent une exception si vous les ajoutez à votre application et exécutez l'application en dehors de l'analyseur de mémoire JavaScript. Toutefois, vous pouvez tester si ces commandes existent avant des utiliser. (Ces commandes n'existent pas au début de la phase de démarrage de la session.) Pour vérifier si vous pouvez appeler `takeHeapSnapshot`sans risque, utilisez le code suivant :  
   
 ```javascript  
 if (console && console.takeHeapSnapshot) {  
@@ -353,13 +352,13 @@ if (performance && performance.mark) {
   
 -   Quand il est difficile d'identifier la cause d'un problème de mémoire, utilisez les différentes vues (telles que Dominators et Types) pour rechercher des points communs, en particulier pour faciliter l'identification d'un objet (ou de quelques objets) pouvant contenir des références à de nombreux autres objets qui apparaissent dans la vue.  
   
--   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Exemple :  
+-   Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Par exemple :  
   
     -   l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) peut entraîner ce problème.  
   
     -   Certains objets peuvent fournir une méthode `dispose` et des recommandations d'utilisation. Par exemple, appelez `dispose` sur [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si vous appelez la méthode `createFiltered` de la liste, avant de quitter une page.  
   
-    -   Vous devrez peut-être supprimer un ou plusieurs détecteurs d'événements. Pour plus d'informations, consultez [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+    -   Vous devrez peut-être supprimer un ou plusieurs détecteurs d'événements. Pour plus d'informations, consultez [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).  
   
 -   Examinez la dernière partie de [cette vidéo](https://channel9.msdn.com/Events/Build/2013/3-316) dans la conférence Build 2013 sur l'analyseur de mémoire JavaScript.  
   

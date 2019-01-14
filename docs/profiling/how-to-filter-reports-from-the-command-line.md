@@ -1,8 +1,6 @@
 ---
-title: Guide pratique pour filtrer des rapports à partir de la ligne de commande | Microsoft Docs
-ms.custom: ''
+title: 'Procédure : Filtrer des rapports à partir de la ligne de commande | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c173fb5cdea4c18f3d470bd1e92bd7f9b68a62e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 2d53af6417a4eb3b78c6063455bf44e7243a13d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933513"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>Guide pratique pour filtrer des rapports à partir de la ligne de commande
+# <a name="how-to-filter-reports-from-the-command-line"></a>Procédure : Filtrer des rapports à partir de la ligne de commande
 En utilisant les options de la commande **VSPerfReport**, vous pouvez filtrer des rapports sur un segment de temps spécifique du fichier de données de profilage, ou restreindre les données à un ou plusieurs processus ou threads. Pour plus d’informations sur cette commande, consultez [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Options|Description|  

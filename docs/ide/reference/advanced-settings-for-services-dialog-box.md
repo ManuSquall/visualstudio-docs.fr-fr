@@ -2,7 +2,6 @@
 title: Paramètres avancés pour les services, boîte de dialogue
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78cc44d71b1f9cb2f449d4aafdff22271b1c63ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 251a78ebe56a9ba2c88444da879970c590ece029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917223"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
 Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] à partir des applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projet** pour configurer les services d’application cliente. Pour plus d’informations sur la page **Services**, consultez [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md).
@@ -30,7 +29,7 @@ Les services d’application cliente fournissent un accès simplifié aux servic
 
 ## <a name="task-list"></a>Liste des tâches
 
-- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Guide pratique pour configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
@@ -42,10 +41,10 @@ Les services d’application cliente fournissent un accès simplifié aux servic
 
  Le fournisseur de rôles accède aux valeurs de rôle mises en cache ou au service de rôles quand vous appelez la méthode <xref:System.Web.Security.RolePrincipal.IsInRole%2A>. Pour effacer le cache par programmation et forcer cette méthode afin d’accéder au service distant, appelez la méthode <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.
 
- **Utiliser la chaîne de connexion personnalisée** Indique si les fournisseurs de services clients utilisent un magasin de données personnalisé pour le cache local. Par défaut, ils utilisent le système de fichiers local. Quand elle est sélectionnée, cette option permet de remplir automatiquement la zone de texte avec une chaîne de connexion par défaut. Vous pouvez conserver la chaîne de connexion par défaut pour automatiquement générer et utiliser une base de données SQL Server Compact Edition. Vous pouvez également spécifier une chaîne de connexion à une base de données SQL Server existante. Pour plus d'informations, consultez [How to: Configure Client Application Services](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Cette option est désactivée par défaut.
+ **Utiliser la chaîne de connexion personnalisée** Indique si les fournisseurs de services clients utilisent un magasin de données personnalisé pour le cache local. Par défaut, ils utilisent le système de fichiers local. Quand elle est sélectionnée, cette option permet de remplir automatiquement la zone de texte avec une chaîne de connexion par défaut. Vous pouvez conserver la chaîne de connexion par défaut pour automatiquement générer et utiliser une base de données SQL Server Compact Edition. Vous pouvez également spécifier une chaîne de connexion à une base de données SQL Server existante. Pour plus d'informations, voir [Procédure : Configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Cette option est désactivée par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Page Services, Concepteur de projet](../../ide/reference/services-page-project-designer.md)
-- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Guide pratique pour configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

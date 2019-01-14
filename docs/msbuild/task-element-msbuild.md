@@ -1,8 +1,6 @@
 ---
 title: Élément Task (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9cf8ce8a55c0f83731b7eaeb510b32061379036
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831272"
 ---
 # <a name="task-element-msbuild"></a>Élément Task (MSBuild)
 Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Le nom de l’élément est déterminé par le nom de la tâche en cours de création.  
@@ -49,7 +47,7 @@ Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensi
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Condition`|Attribut facultatif. Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Attribut facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, voir [Guide pratique : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Attribut facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d'informations, voir [Procédure : Ignorer des erreurs dans des tâches](../msbuild/how-to-ignore-errors-in-tasks.md).|  
 |`Parameter`|Il est nécessaire si la classe de tâche contient une ou plusieurs propriétés dotées de l’attribut `[Required]`.<br /><br /> Un paramètre de tâche défini par l’utilisateur qui contient la valeur du paramètre comme sa propre valeur. Le nombre de paramètres dans l’élément `Task` peut varier, avec chaque attribut correspondant à une propriété .NET dans la classe de tâche.|  
 
 ### <a name="child-elements"></a>Éléments enfants  

@@ -1,8 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - SuspendProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 27c52c3821bb545efb8fe16365b11c9820db9214
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952123"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 La méthode `SuspendProfile` incrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.  
@@ -69,7 +67,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="function-information"></a>Informations sur la fonction  
  En-tête : déclaré dans *VSPerf.h*  
   
- Bibliothèque d’importation : *VSPerf.lib*  
+ Bibliothèque d’importation : *VSPerf.lib*  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre la méthode SuspendProfile. Cet exemple suppose qu’un appel antérieur à StartProfile a été effectué pour le processus ou le thread identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
