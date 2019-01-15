@@ -2,7 +2,6 @@
 title: Afficher le Code machine dans le débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922225"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Afficher le code machine dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -57,7 +56,7 @@ Code assembleur dépend des registres du processeur ou, pour le code managé, le
 
 Pour afficher les instructions du code machine dans leur format numérique brut, plutôt que comme langage d’assembly, utilisez le **mémoire** fenêtre ou sélectionnez **octets de Code** dans le menu contextuel dans le **code machine**  fenêtre.
 
-## <a name="use-the-disassembly-window"></a>La fenêtre code machine
+## <a name="use-the-disassembly-window"></a>Utiliser la fenêtre Code Machine
 
 Pour activer la **désassemblage** fenêtre, sous **outils** > **Options** (ou **outils**  >  **Options**) > **débogage**, sélectionnez **activer le débogage au niveau des adresses**.
 
@@ -74,4 +73,4 @@ Une flèche jaune dans la marge gauche marque le point d’exécution actuel. Po
 
 * [Déplacement d’une page vers le haut ou vers le bas dans la mémoire](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
-* [Guide pratique pour Utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+* [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

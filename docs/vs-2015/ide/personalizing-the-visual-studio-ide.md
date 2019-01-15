@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81b2f98694ee34b6fc4c442a4d4746b436025583
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916771"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personnalisation de l'IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +40,10 @@ Cette section décrit comment personnaliser Visual Studio de différentes maniè
  Pour créer une page de démarrage personnalisée pour vous et votre équipe, consultez [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ### <a name="environment-color-themes"></a>Thèmes de couleurs de l’environnement
- Pour changer le thème de couleur de l’environnement (clair, sombre ou bleu), tapez « environnement » dans **Lancement rapide**, puis choisissez **Environnement &#124; Général**. Pour modifier les options de colorisation dans l’éditeur, tapez `environment` dans **Lancement rapide**, puis choisissez **Environnement &#124; Polices et couleurs**. voir aussi [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Pour changer le thème de couleur de l’environnement (clair, sombre ou bleu), tapez « environnement » dans **Lancement rapide**, puis choisissez **Environnement &#124; Général**. Pour modifier les options de colorisation dans l’éditeur, tapez `environment` dans **Lancement rapide**, puis choisissez **Environnement &#124; Polices et couleurs**. Consultez aussi [Guide pratique pour changer les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menus et barres d’outils
- Pour ajouter ou supprimer des éléments de menu ou de barre d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Pour ajouter ou supprimer des éléments de menu ou de barre d’outils, consultez [Guide pratique pour personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Casse du menu principal
  À la demande générale, vous pouvez modifier la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** et **Tout en majuscules**. Pour cela, tapez `environment` dans **Lancement rapide**, puis choisissez **Environnement &#124; Général**.

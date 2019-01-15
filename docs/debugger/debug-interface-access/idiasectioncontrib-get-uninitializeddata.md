@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_uninitializedData | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0929897f5dba77282fa056b5b1a00e05782c9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 46ee13b8d6718152552ef075437e95566c997155
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951483"
 ---
 # <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 Récupère un indicateur qui indique si la section contient des données non initialisées.  
@@ -27,7 +25,7 @@ Récupère un indicateur qui indique si la section contient des données non ini
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_uninitializedData (   
+HRESULT get_uninitializedData (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumInjectedSources::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b0e76bea62e27d0afe12b8c16eb4e6775edd61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 097fd17523d72a8e909c044dddb34f6a50e99fc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989722"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Récupère un nombre spécifié de sources injectés dans la séquence d’énumération.  
@@ -27,7 +25,7 @@ Récupère un nombre spécifié de sources injectés dans la séquence d’énum
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                celt,   
    IDiaInjectedSource** rgelt,  
    ULONG*               pceltFetched  

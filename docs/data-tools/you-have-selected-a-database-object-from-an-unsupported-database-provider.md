@@ -11,14 +11,14 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53894439"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Vous avez sélectionné un objet de base de données dans un fournisseur de base de données non pris en charge
 
-Le **Concepteur O/R** prend en charge uniquement le fournisseur de données .NET Framework pour SQL Server (<xref:System.Data.SqlClient>). Bien que vous puissiez cliquer sur OK** et continuer d'utiliser des objets de fournisseurs de base de données non pris en charge, vous risquez de rencontrer des comportements inattendus au moment de l'exécution.
+Le **Concepteur O/R** prend en charge uniquement le fournisseur de données .NET Framework pour SQL Server (<xref:System.Data.SqlClient>). Bien que vous puissiez cliquer sur **OK** et continuer d’utiliser des objets de fournisseurs de base de données non pris en charge, vous risquez de rencontrer des comportements inattendus au moment de l’exécution.
 
 > [!NOTE]
 > Seules les connexions de données qui utilisent le fournisseur de données .NET Framework pour SQL Server sont prises en charge.
@@ -31,7 +31,7 @@ Le **Concepteur O/R** prend en charge uniquement le fournisseur de données .NET
 
     - ou -
 
-- Cliquez sur Annuler **.
+- Cliquez sur **Annuler**.
 
    L'action est arrêtée. Créez ou utilisez une connexion de données qui utilise le fournisseur .NET Framework pour SQL Server.
 

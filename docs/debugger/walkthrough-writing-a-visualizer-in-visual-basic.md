@@ -2,7 +2,6 @@
 title: Écrire un visualiseur en Visual Basic | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69534dbcd3a51ce5c6e4478c6fcc40a770de2548
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe98206e5183cbfbcacfe0a2849d09308bc7dba2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951995"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : Écriture d’un visualiseur en Visual Basic
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l'aide de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d'une chaîne à l'aide d'un message Windows Forms. Ce visualiseur de chaîne simple est un exemple de base qui vous montre comment vous pouvez créer des visualiseurs pour d'autres types de données plus applicables à vos projets.

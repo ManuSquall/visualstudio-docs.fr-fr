@@ -7,23 +7,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db0ac06d26e7e597d9f8d4b3c11a9cf8db188e80
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: bdaf4abfa1c1e931328466cc4fb4c525b47310b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935318"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>La propriété de connexion est manquante ou incorrecte dans le fichier des paramètres de l'application
 
-La propriété de connexion dans le fichier des paramètres de l'application est manquante ou incorrecte. La chaîne de connexion à partir de la *.dbml* fichier a été utilisé à la place.
+La propriété de connexion dans le fichier des paramètres de l'application est manquante ou incorrecte. La chaîne de connexion du fichier *.dbml* a été utilisée à la place.
 
-Le *.dbml* fichier contient une référence à une chaîne de connexion dans le fichier de paramètres d’application qui est introuvable. Ce message est informatif ; le paramètre de chaîne de connexion sera créé dès **OK** est cliqué.
+Le fichier *.dbml* contient une référence à une chaîne de connexion dans le fichier des paramètres d’application qui est introuvable. Ce message est informationnel ; le paramètre de chaîne de connexion sera créé dès que vous cliquerez sur **OK**.
 
-Pour répondre à ce message, sélectionnez **OK**. Les informations de connexion qui sont contenues dans le *.dbml* fichier est ajouté aux paramètres d’application.
+Pour répondre à ce message, sélectionnez **OK**. Les informations de connexion contenues dans le fichier *.dbml* sont ajoutées aux paramètres d’application.
 
 ## <a name="see-also"></a>Voir aussi
 

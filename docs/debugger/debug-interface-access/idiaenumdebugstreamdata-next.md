@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 781fd79611e8de323085ed73dc7682808d69b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958382"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Récupère un nombre spécifié d’enregistrements dans la séquence énumérée.  
@@ -27,7 +25,7 @@ Récupère un nombre spécifié d’enregistrements dans la séquence énuméré
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG  celt,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -46,7 +44,7 @@ HRESULT Next (
  pcbData  
  [out] Retourne le nombre d’octets retournés. Si `data` est NULL, puis `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.  
   
- données]  
+ data[]  
  [out] Une mémoire tampon qui doit être rempli avec les données d’enregistrement de débogage stream.  
   
  pceltFetched  

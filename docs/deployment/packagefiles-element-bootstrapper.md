@@ -1,8 +1,6 @@
 ---
 title: '&lt;Tâches PackageFiles&gt; élément (programme d’amorçage) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990345"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Tâches PackageFiles&gt; élément (programme d’amorçage)
 Le `PackageFiles` élément contient `PackageFile` éléments qui définissent les packages d’installation exécutées en raison de la `Command` élément.  
@@ -48,7 +46,7 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
 
 |Attribut|Description|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|Facultatif. Si la valeur `false`, le programme d’installation téléchargera uniquement les fichiers référencés à partir du `Command` élément. Si la valeur `true`, tous les fichiers seront téléchargés.<br /><br /> Si la valeur `IfNotHomesite`, le programme d’installation se comportera comme si `False` si `ComponentsLocation` a la valeur `HomeSite`et sinon se comporte comme si `True`. Ce paramètre peut être utile pour permettre aux packages qui sont eux-mêmes des programmes d’amorçage exécuter leur propre comportement dans un scénario HomeSite.<br /><br /> La valeur par défaut est `true`.|  
+|`CopyAllPackageFiles`|Optionnel. Si la valeur `false`, le programme d’installation téléchargera uniquement les fichiers référencés à partir du `Command` élément. Si la valeur `true`, tous les fichiers seront téléchargés.<br /><br /> Si la valeur `IfNotHomesite`, le programme d’installation se comportera comme si `False` si `ComponentsLocation` a la valeur `HomeSite`et sinon se comporte comme si `True`. Ce paramètre peut être utile pour permettre aux packages qui sont eux-mêmes des programmes d’amorçage exécuter leur propre comportement dans un scénario HomeSite.<br /><br /> La valeur par défaut est `true`.|  
 
 ## <a name="packagefile"></a>PackageFile  
  Le `PackageFile` élément est un enfant de le `PackageFiles` élément. Un `PackageFiles` élément doit avoir au moins un `PackageFile` élément.  
@@ -59,10 +57,10 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
 | Attribut | Description |
 |---------------| - |
 | `Name` | Obligatoire. Le nom du fichier du package. Il s’agit du nom qui le `Command` élément référence lorsqu’il définit les conditions d’installation d’un package. Cette valeur est également utilisée comme clé dans le `Strings` table pour récupérer le nom localisé des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour décrire le package. |
-| `HomeSite` | Facultatif. L’emplacement du package sur le serveur distant, si elle n’est pas inclus dans le programme d’installation. |
-| `CopyOnBuild` | Facultatif. Spécifie si le programme d’amorçage doit copier le fichier de package sur le disque au moment de la génération. La valeur par défaut est true. |
+| `HomeSite` | Optionnel. L’emplacement du package sur le serveur distant, si elle n’est pas inclus dans le programme d’installation. |
+| `CopyOnBuild` | Optionnel. Spécifie si le programme d’amorçage doit copier le fichier de package sur le disque au moment de la génération. La valeur par défaut est true. |
 | `PublicKey` | La clé publique chiffrée du signataire de certificat du package. Obligatoire si `HomeSite` est utilisée ; sinon, facultatif. |
-| `Hash` | Facultatif. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé. |
+| `Hash` | Optionnel. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé. |
 
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant définit des packages pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] redistributable package et ses dépendances, telles que le programme d’installation de Windows.  
@@ -79,4 +77,4 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
 ## <a name="see-also"></a>Voir aussi  
  [\<Produit > élément](../deployment/product-element-bootstrapper.md)   
  [\<Package > élément](../deployment/package-element-bootstrapper.md)   
- [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

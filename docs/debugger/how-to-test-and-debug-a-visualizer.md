@@ -1,8 +1,6 @@
 ---
-title: 'Comment : tester et déboguer un visualiseur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Tester et déboguer un visualiseur | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41a65fb92615bf8b8e38cc13260187a6abc946f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: bea0f48432f67dc4109f5175c730a06aab4c0143
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927166"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
+# <a name="how-to-test-and-debug-a-visualizer"></a>Procédure : tester et déboguer un visualiseur
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.  
   
- Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Si vous procédez ainsi, vous devez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s'exécute dans la première instance du débogueur.  
+ Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Si vous procédez ainsi, vous devez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s'exécute dans la première instance du débogueur.  
   
- Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dernier à partir d'un pilote de test. Les API du visualiseur facilitent la création de ce type de pilote qui est appelé le *hôte de développement de visualiseur*.  
+ Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dernier à partir d'un pilote de test. Les API du visualiseur facilitent la création de ce type de pilote appelé *hôte de développement de visualiseur*.  
   
 ### <a name="to-create-a-visualizer-development-host"></a>Pour créer un hôte de développement de visualiseur  
   
@@ -53,9 +51,9 @@ Après avoir écrit un visualiseur, vous devez le déboguer et le tester.
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Pour obtenir un exemple plus complet, consultez [procédure pas à pas : écriture d’un visualiseur en c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Pour obtenir un exemple plus complet, consultez [procédure pas à pas : écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Écriture d’un visualiseur en c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
+ [Procédure pas à pas : Écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

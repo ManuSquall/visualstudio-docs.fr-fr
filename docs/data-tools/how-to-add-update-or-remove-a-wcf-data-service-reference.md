@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
+title: 'Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948246"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF
 Un *référence de service* permet à un projet à l’accès à un ou plusieurs [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilisez le **ajouter une référence de Service** boîte de dialogue pour rechercher des [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -94,4 +93,4 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Services de données de Services Windows Communication Foundation et WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Services Windows Communication Foundation et services de données WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumSymbols | Documents Microsoft
-ms.custom: ''
+title: IDiaEnumSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb30549dc50b9e585768cd8778b8cbb70fb0f0c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 53b407a8bceca3127bea54470bcab3cc42aa3b81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964046"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Énumère les différents symboles contenus dans la source de données.  
@@ -27,7 +25,7 @@ ms.locfileid: "31467253"
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaEnumSymbols : IUnknown  
+IDiaEnumSymbols : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -40,13 +38,13 @@ IDiaEnumSymbols : IUnknown
 |[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Récupère un symbole au moyen d’un index.|  
 |[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Récupère un nombre spécifié de caractères de la séquence d’énumération.|  
 |[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Ignore un nombre spécifié de symboles dans une séquence d’énumération.|  
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Réinitialise la séquence d’énumération au début.|  
-|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Réinitialise une séquence d’énumération au début.|  
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|  
   
 ## <a name="remarks"></a>Notes  
- Cette interface fournit des symboles regroupés en fonction du type de symbole, par exemple, `SymTagUDT` (types définis par l’utilisateur) ou `SymTagBaseClass`. Pour travailler avec des symboles, groupés par adresse, utilisez la [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) interface.  
+ Cette interface fournit des symboles, groupés par un type spécifique de symbole, par exemple, `SymTagUDT` (types définis par l’utilisateur) ou `SymTagBaseClass`. Pour travailler avec des symboles, groupés par adresse, utilisez le [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) interface.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Obtenez cette interface en appelant les méthodes suivantes :  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
@@ -56,7 +54,7 @@ IDiaEnumSymbols : IUnknown
 -   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment obtenir le `IDiaEnumSymbols` de l’interface, puis utiliser cette énumération pour répertorier les types définis par l’utilisateur (UDT).  
+ Cet exemple montre comment obtenir le `IDiaEnumSymbols` interface, puis utiliser cette énumération pour répertorier les types définis par l’utilisateur (UDT).  
   
 > [!NOTE]
 >  `CDiaBSTR` est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lors de l’instanciation est hors de portée.  
@@ -88,14 +86,14 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

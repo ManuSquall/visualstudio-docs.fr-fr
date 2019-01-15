@@ -1,5 +1,5 @@
 ---
-title: Valider des modifications in-process sur des contrôles liés aux données avant l’enregistrement de données
+title: Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,28 +17,27 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34cf76adc56078303352bef9f01cef5ba774e2be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: e4ab8d46bd9c19a747231f87eb7ef0bd40025c69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824403"
 ---
-# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Valider des modifications in-process sur des contrôles liés aux données avant l’enregistrement de données
+# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
 
-Lorsque vous modifiez les valeurs dans les contrôles liés aux données, les utilisateurs doivent sortir de valider la valeur mise à jour à la source de données sous-jacente, le contrôle est lié à l’enregistrement en cours. Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md) sur un formulaire, le premier élément que vous déplacez génère du code dans le **enregistrer** l’événement de clic de bouton le <xref:System.Windows.Forms.BindingNavigator>. Ce code appelle la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode de la <xref:System.Windows.Forms.BindingSource>. Par conséquent, l’appel à la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> (méthode) est générée uniquement pour la première <xref:System.Windows.Forms.BindingSource> qui est ajouté au formulaire.
+Lorsque vous modifiez les valeurs dans des contrôles liés aux données, les utilisateurs doivent sortir pour valider la valeur mise à jour dans la source de données sous-jacente, le contrôle est lié à l’enregistrement en cours. Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](add-new-data-sources.md) sur un formulaire, le premier élément que vous déposez génère du code dans le **enregistrer** événement de clic du bouton du <xref:System.Windows.Forms.BindingNavigator>. Ce code appelle la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode de la <xref:System.Windows.Forms.BindingSource>. Par conséquent, l’appel à la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode est générée uniquement pour la première <xref:System.Windows.Forms.BindingSource> qui est ajouté au formulaire.
 
-Le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> appel valide toutes les modifications en cours de traitement, de tous les contrôles liés aux données qui sont actuellement en cours de modification. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le **enregistrer** bouton, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la `TableAdapterManager.UpdateAll` méthode).
+L’appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
 
 Vous pouvez configurer votre application pour valider automatiquement les modifications, même si un utilisateur tente d’enregistrer des données sans valider les modifications, dans le cadre de l’enregistrement processus.
 
 > [!NOTE]
-> Le concepteur ajoute le `BindingSource.EndEdit` code uniquement pour le premier élément déposé sur un formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode pour chaque <xref:System.Windows.Forms.BindingSource> sur le formulaire. Vous pouvez ajouter manuellement une ligne de code pour appeler le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode pour chaque <xref:System.Windows.Forms.BindingSource>. Vous pouvez également ajouter le `EndEditOnAllBindingSources` méthode au formulaire et l’appeler avant d’effectuer une sauvegarde.
+> Le concepteur ajoute le `BindingSource.EndEdit` code uniquement pour le premier élément déposé sur un formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode pour chaque <xref:System.Windows.Forms.BindingSource> sur le formulaire. Vous pouvez ajouter manuellement une ligne de code pour appeler le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode pour chaque <xref:System.Windows.Forms.BindingSource>. Vous pouvez également ajouter le `EndEditOnAllBindingSources` méthode au formulaire et appelez-le avant d’effectuer une sauvegarde.
 
-Le code suivant utilise un [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) requête pour itérer au sein de tous les <xref:System.Windows.Forms.BindingSource> composants et appelez le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode pour chaque <xref:System.Windows.Forms.BindingSource> sur un formulaire.
+Le code suivant utilise un [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) requête pour effectuer une itération de tous les <xref:System.Windows.Forms.BindingSource> composants et appelez le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode pour chaque <xref:System.Windows.Forms.BindingSource> sur un formulaire.
 
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Pour appeler EndEdit pour tous les composants BindingSource sur un formulaire
 

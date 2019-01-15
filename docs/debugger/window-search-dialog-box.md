@@ -1,8 +1,6 @@
 ---
-title: Boîte de dialogue de recherche de fenêtre | Documents Microsoft
-ms.custom: ''
+title: Boîte de dialogue de recherche de fenêtre | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Search
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce03cbf4b361bf341f98f46b4a67871ee9994177
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8a57e0bacdbe12b889879eaca417127953f90beb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826268"
 ---
 # <a name="window-search-dialog-box"></a>Boîte de dialogue Recherche d'une fenêtre
-Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour une fenêtre spécifique dans [affichage Windows](../debugger/windows-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à la fenêtre d’affichage de Windows. Puis choisissez **rechercher une fenêtre** à partir de la **recherche** menu.  
+Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour une fenêtre spécifique dans [Windows vue](../debugger/windows-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à la fenêtre d’affichage Windows. Puis choisissez **rechercher une fenêtre** à partir de la **recherche** menu.  
   
  Vous pouvez utiliser la **outil recherche** pour sélectionner une fenêtre, ou vous pouvez entrer le handle de fenêtre, ou identifier la fenêtre par son titre et de la classe.  
   
  Les paramètres suivants sont disponibles :  
   
- **Outil recherche**  
+ **Outil Recherche**  
  L’outil de glisser -déplacer permet de sélectionner une fenêtre.  
   
  **Masquer Spy ++**  
- Supprime la fenêtre principale de Spy ++ et laisse le **recherche d’une fenêtre** boîte de dialogue visible au-dessus de vos autres applications.  
+ Supprime la fenêtre principale de Spy ++ et laisse le **recherche d’une fenêtre** boîte de dialogue visible en haut de vos autres applications.  
   
  **Handle**  
  ID unique de la fenêtre à rechercher.  
@@ -42,11 +40,11 @@ Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour
  La classe de la fenêtre à rechercher.  
   
  **Sens de la recherche vers le haut ou vers le bas**  
- La direction initiale de la recherche.  
+ La direction de la recherche initiale.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Recherche d’une fenêtre dans la vue fenêtres](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Explique comment rechercher une fenêtre spécifique dans la vue fenêtres.  
+ [Recherche d’une fenêtre dans la vue de Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ Explique comment rechercher une fenêtre spécifique dans la vue de Windows.  
   
  [Vue Fenêtres](../debugger/windows-view.md)  
  Affiche une arborescence des contrôles et fenêtres disponibles.  
@@ -55,13 +53,13 @@ Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour
  Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
  [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
+ Présente l’outil Spy ++ et explique comment il peut être utilisé.  
   
  [Rechercher une fenêtre, boîte de dialogue](../debugger/find-window-dialog-box.md)  
  Permet d’afficher les propriétés ou les messages à partir d’une fenêtre spécifique.  
   
  [Boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue fenêtres.  
+ Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue de Windows.  
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

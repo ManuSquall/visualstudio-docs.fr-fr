@@ -1,8 +1,6 @@
 ---
 title: IDiaInjectedSource::get_source | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2966405dfe3bb7e6134f5ef35e55b30ef6c66c6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a923e323f4ca9dc7f661457add7665f8c136ae92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824455"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
 Récupère les octets de code source.  
@@ -27,7 +25,7 @@ Récupère les octets de code source.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_source (   
+HRESULT get_source (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  

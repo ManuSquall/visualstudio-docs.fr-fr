@@ -1,8 +1,6 @@
 ---
 title: '&lt;Package&gt; élément (programme d’amorçage) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868613"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package&gt; élément (programme d’amorçage)
 Le `Package` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de package.  
@@ -150,7 +148,7 @@ Le `Package` élément est l’élément XML de niveau supérieur à l’intéri
 |--------------------| - |
 | `Culture` | Obligatoire. Définit la culture pour ce package, qui détermine la langue à utiliser. Cet attribut est une clé dans le `Strings` élément, qui répertorie des chaînes spécifiques à la culture pour les noms de produits et les messages d’erreur pendant l’installation. |
 | `Name` | Obligatoire. Le nom du package affiché au développeur dans un outil tel que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cet attribut est une clé dans le `Strings` élément, qui doit contenir un `String` élément avec la `Name` et `Culture` propriétés définies pour correspondre à la `Name` et `Culture` propriétés de `Package`. |
-| `LicenseAgreement` | Facultatif. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence utilisateur final (CLUF).  Ce fichier peut être soit du texte brut (*.txt*) ou au Format RTF. (*.rtf*) |
+| `LicenseAgreement` | Optionnel. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence utilisateur final (CLUF).  Ce fichier peut être soit du texte brut (*.txt*) ou au Format RTF. (*.rtf*) |
 
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre un fichier de package complet pour la redistribution du [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
@@ -191,4 +189,4 @@ Le `Package` élément est l’élément XML de niveau supérieur à l’intéri
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

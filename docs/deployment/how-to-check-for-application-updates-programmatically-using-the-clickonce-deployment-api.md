@@ -1,8 +1,6 @@
 ---
-title: 'Comment : rechercher les mises à jour de l’Application par programmation à l’aide de l’API du déploiement ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Recherchez les mises à jour de l’Application par programmation à l’aide de l’API du déploiement ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25585dce22f74c8e8b2f6aef253ea00c3a6ad4e8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a890a7ad0a3b65580f5ef08d33774182c8916140
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869964"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Comment : rechercher les mises à jour de l’application par programmation à l’aide de l’API du déploiement ClickOnce
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procédure : Vérifier par programmation la disponibilité de mises à jour d’applications à l’aide de l’API de déploiement ClickOnce
 ClickOnce fournit deux façons de mettre à jour une application après son déploiement. Dans la première méthode, vous pouvez configurer le déploiement ClickOnce pour vérifier automatiquement les mises à jour à intervalles réguliers. Dans la deuxième méthode, vous pouvez écrire du code qui utilise le <xref:System.Deployment.Application.ApplicationDeployment> class à vérifier les mises à jour basée sur un événement, telle qu’une demande utilisateur.  
   
  Les procédures suivantes montrent du code pour effectuer une mise à jour par programme et indiquent également comment configurer votre déploiement de ClickOnce pour activer les vérifications de mise à jour par programmation.  
@@ -32,7 +30,7 @@ ClickOnce fournit deux façons de mettre à jour une application après son dép
  Pour mettre à jour une application ClickOnce par programme, vous devez spécifier un emplacement pour les mises à jour. Cela est parfois appelé un fournisseur de déploiement. Pour plus d’informations sur la définition de cette propriété, consultez [choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 > [!NOTE]
->  Vous pouvez également utiliser la technique décrite ci-dessous pour déployer votre application à partir d’un emplacement, mais mettre à jour à partir d’un autre. Pour plus d’informations, consultez [Comment : spécifier un autre emplacement pour le déploiement des mises à jour](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
+>  Vous pouvez également utiliser la technique décrite ci-dessous pour déployer votre application à partir d’un emplacement, mais mettre à jour à partir d’un autre. Pour plus d'informations, voir [Procédure : Spécifier un autre emplacement pour les mises à jour du déploiement](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
   
 ### <a name="to-check-for-updates-programmatically"></a>Pour vérifier les mises à jour par programmation  
   
@@ -48,7 +46,7 @@ ClickOnce fournit deux façons de mettre à jour une application après son dép
   
 ### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Utilisez Mage.exe pour déployer une application qui vérifie les mises à jour par programmation  
   
--   Suivez les instructions pour le déploiement de votre application à l’aide de Mage.exe comme expliqué dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Lorsque vous appelez Mage.exe pour générer le manifeste de déploiement, vérifiez que vous utilisez le commutateur de ligne de commande `providerUrl`et pour spécifier l’URL où ClickOnce doit rechercher des mises à jour. Si votre application met à jour à partir de [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), par exemple, votre appel pour générer le manifeste de déploiement peut ressembler à ceci :  
+-   Suivez les instructions pour le déploiement de votre application à l’aide de Mage.exe comme expliqué dans [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Lorsque vous appelez Mage.exe pour générer le manifeste de déploiement, vérifiez que vous utilisez le commutateur de ligne de commande `providerUrl`et pour spécifier l’URL où ClickOnce doit rechercher des mises à jour. Si votre application met à jour à partir de [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), par exemple, votre appel pour générer le manifeste de déploiement peut ressembler à ceci :  
   
     ```cmd 
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -56,12 +54,12 @@ ClickOnce fournit deux façons de mettre à jour une application après son dép
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>À l’aide de MageUI.exe pour déployer une application qui vérifie les mises à jour par programmation  
   
--   Suivez les instructions pour le déploiement de votre application à l’aide de Mage.exe comme expliqué dans [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Sur le **Options de déploiement** onglet, définissez la **Start Location** champ au manifeste d’application ClickOnce doit rechercher des mises à jour. Sur le **les Options de mise à jour** onglet, désactivez le **cette application doit rechercher les mises à jour** case à cocher.  
+-   Suivez les instructions pour le déploiement de votre application à l’aide de Mage.exe comme expliqué dans [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Sur le **Options de déploiement** onglet, définissez la **Start Location** champ au manifeste d’application ClickOnce doit rechercher des mises à jour. Sur le **les Options de mise à jour** onglet, désactivez le **cette application doit rechercher les mises à jour** case à cocher.  
   
 ## <a name="net-framework-security"></a>Sécurité .NET Framework  
  Votre application doit avoir des autorisations de confiance totale pour utiliser la mise à jour par programmation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : spécifier un autre emplacement pour le déploiement des mises à jour](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
+ [Guide pratique pour spécifier un autre emplacement pour les mises à jour du déploiement](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)

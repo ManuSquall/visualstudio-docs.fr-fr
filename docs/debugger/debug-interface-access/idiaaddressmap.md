@@ -1,8 +1,6 @@
 ---
-title: IDiaAddressMap | Documents Microsoft
-ms.custom: ''
+title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1593f59125c4b6325bfd97015485cc2a4d85f6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a563ee3502cc1e713946cd70575be187ecbeadbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824546"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-Permet de contrôler comment le SDK DIA calcule virtuels et relatifs des adresses virtuelles pour les objets de débogage.  
+Permet de contrôler comment le SDK DIA calcule les adresses virtuelles virtuels et relatifs pour les objets de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaAddressMap : IUnknown  
+IDiaAddressMap : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -35,29 +33,29 @@ IDiaAddressMap : IUnknown
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Indique si une table d’adresses a été établie pour une session particulière.|  
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Spécifie si le mappage d’adresse doit être utilisé pour traduire les adresses de symbole.|  
-|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Indique si le calcul et l’utilisation des adresses virtuelles relatives est activée.|  
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Indique si un mappage d’adresse a été établi pour une session particulière.|  
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Spécifie si le mappage d’adresses doit être utilisé pour traduire les adresses de symbole.|  
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Indique si le calcul et l’utilisation d’adresses virtuelles relatives est activé.|  
 |[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Permet au client activer ou désactiver le calcul d’adresses virtuelles relatives.|  
-|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Récupère l’alignement d’image actuelle.|  
-|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Définit l’alignement d’image.|  
+|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Récupère l’alignement de l’image actuelle.|  
+|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Définit l’alignement de l’image.|  
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Définit l’image en-têtes pour la traduction d’adresses virtuelles relatives.|  
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fournit un mappage d’adresse pour prendre en charge les traductions de disposition d’image.|  
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fournit un mappage d’adresses pour prendre en charge les traductions de disposition d’image.|  
   
 ## <a name="remarks"></a>Notes  
- Le contrôle fourni par cette interface est encapsulé dans deux jeux de données que vous fournissez : en-têtes de l’image et de mappages d’adresses. La plupart des clients utilisent le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode pour rechercher les informations de débogage approprié pour une image et la méthode peuvent découvrir généralement toutes les données nécessaires en-têtes et des cartes de lui-même. Toutefois, certains clients implémentent spécialisées de traitement et de recherche de données. Ces clients utilisent les méthodes de la `IDiaAddressMap` interface afin de fournir la DIA SDK avec les résultats de recherche.  
+ Le contrôle fourni par cette interface est encapsulé dans deux jeux de données que vous fournissez : en-têtes de l’image et de mappages d’adresses. La plupart des clients utilisent le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode pour rechercher les informations de débogage appropriées pour une image et la méthode peuvent découvrir généralement toutes les données les en-têtes et les mappages nécessaires lui-même. Toutefois, certains clients implémentent spécialisées de traitement et de recherche de données. Ces clients utilisent les méthodes de la `IDiaAddressMap` interface pour fournir le DIA SDK avec les résultats de recherche.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Cette interface est disponible à partir de l’objet de session DIA. Le client appelle le `QueryInterface` méthode sur DIA objet interface de session, généralement [IDiaSession](../../debugger/debug-interface-access/idiasession.md), pour récupérer le `IDiaAddressMap` interface.  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

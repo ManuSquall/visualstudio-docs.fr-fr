@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b720072d5ccd695ff1e7006bda5221ae00db06ef
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: a363c9964b88196e31f5ba05a4244fabdf00f90f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966873"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 
@@ -58,7 +57,7 @@ Mappez les paramètres de la procédure stockée sélectionnée aux colonnes cor
 > [!NOTE]
 > La procédure stockée qui est affectée à la commande SELECT est exécutée en appelant la méthode du TableAdapter que vous nommez dans l’étape suivante de l’Assistant. La méthode par défaut est `Fill`, de sorte que le code qui est généralement utilisé pour exécuter la procédure SELECT est `TableAdapter.Fill(tableName)`. Si vous modifiez le nom par défaut à partir de `Fill`, remplacez `Fill` avec le nom vous affecter et remplacez « TableAdapter » par le nom réel du TableAdapter (par exemple, `CustomersTableAdapter`).
 
-- En sélectionnant le **créer des méthodes pour envoyer des mises à jour directement à la base de données** option revient à affecter la `GenerateDBDirectMethods` true à la propriété. L’option n’est pas disponible lorsque l’instruction SQL d’origine ne fournit pas de suffisamment d’informations ou de la requête n’est pas une requête modifiable. Cette situation peut se produire, par exemple, dans **joindre** requêtes et les requêtes qui retournent une valeur (scalaire) unique.
+- En sélectionnant le **créer des méthodes pour envoyer des mises à jour directement à la base de données** option revient à affecter la `GenerateDBDirectMethods` true à la propriété. L’option n’est pas disponible quand l’instruction SQL d’origine ne fournit pas assez d’informations ou que la requête ne peut pas être mise à jour. Cette situation peut se produire, par exemple, dans **joindre** requêtes et les requêtes qui retournent une valeur (scalaire) unique.
 
 Le **Options avancées** dans l’Assistant permettent :
 
@@ -82,7 +81,7 @@ L’exemple suivant vous montre comment appeler une requête supplémentaire nom
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Pour démarrer l’Assistant Configuration de requêtes TableAdapter avec une nouvelle requête
 
-1.  Ouvrez votre jeu de données dans le **Concepteur de Dataset**.
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
 2.  Si vous créez une nouvelle requête, faites glisser un **requête** de l’objet à partir de la **DataSet** onglet de la **boîte à outils** sur un <xref:System.Data.DataTable>, ou sélectionnez **ajouter une requête**à partir du menu contextuel du TableAdapter. Vous pouvez également faire glisser un **requête** objet dans une zone vide de la **Concepteur de Dataset**, ce qui crée un TableAdapter sans associé à un <xref:System.Data.DataTable>. Ces requêtes peuvent uniquement retourner des valeurs (scalaires) uniques, ou exécutez UPDATE, INSERT, ou supprimer des commandes sur la base de données.
 

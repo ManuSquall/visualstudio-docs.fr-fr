@@ -1,8 +1,6 @@
 ---
 title: IDiaAddressMap::set_imageHeaders | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72b8b7d1531a75568e97ac4d18c85f80508f9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6593092fc155a375480f082a1f82dc53a1d851fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834137"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Jeux en-têtes pour activer la traduction d’adresse virtuelle relative de l’image.  
@@ -27,7 +25,7 @@ Jeux en-têtes pour activer la traduction d’adresse virtuelle relative de l’
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT set_imageHeaders (   
+HRESULT set_imageHeaders (   
    DWORD cbData,  
    BYTE  data[],  
    BOOL  originalHeaders  
@@ -38,7 +36,7 @@ HRESULT set_imageHeaders (
  cbData  
  [in] Nombre d’octets de données d’en-tête. Doit être `n*sizeof(IMAGE_SECTION_HEADER)` où `n` est le nombre d’en-têtes de section dans le fichier exécutable.  
   
- données]  
+ data[]  
  [in] Un tableau de `IMAGE_SECTION_HEADER` structures à utiliser comme en-têtes de l’image.  
   
  originalHeaders  

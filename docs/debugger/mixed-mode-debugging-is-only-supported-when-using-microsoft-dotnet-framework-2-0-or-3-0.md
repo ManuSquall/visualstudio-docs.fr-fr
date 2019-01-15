@@ -1,8 +1,6 @@
 ---
 title: Débogage en Mode mixte est uniquement pris en charge lors de l’utilisation de Microsoft .NET Framework 2.0 ou 3.0 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d51a0ca72840b20e23eaaa9db3a82382a3fa012
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 09fbe559105a344ed164ae16f66a0904e135e2cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830588"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Le débogage en mode mixte est uniquement pris en charge lorsque vous utilisez Microsoft .NET Framework 2.0 ou 3.0
 Les versions de Microsoft .NET Framework antérieures à la version 2.0 ne prennent pas en charge le débogage en mode mixte de processus 64 bits. Cela signifie que vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.  
@@ -37,19 +35,19 @@ Les versions de Microsoft .NET Framework antérieures à la version 2.0 ne pre
   
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>Pour faire passer le système d'exploitation à 32 bits (Visual Basic ou C#)  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur votre projet, puis cliquez sur **propriétés** dans le menu contextuel.  
+1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur votre projet, puis cliquez sur **Propriétés** dans le menu contextuel.  
   
-2.  Dans les pages de propriétés, cliquez sur le **compiler** ou **déboguer** onglet.  
+2.  Dans les pages de propriétés, cliquez sur l’onglet **Compiler** ou **Déboguer**.  
   
-3.  Cliquez sur **plateforme**, puis sélectionnez **x86** dans la liste des plateformes.  
+3.  Cliquez sur **Plateforme**, puis sélectionnez **x86** dans la liste de plateformes.  
   
-     Par défaut, les compilateurs C# et Visual Basic génèrent le code à exécuter sur n'importe quelle UC. Sur un ordinateur 64 bits, ces fichiers binaires sont exécutés en tant que processus 64 bits. Pour exécuter un processus 32 bits, vous devez choisir **Win32**, et non **AnyCPU**.  
+     Par défaut, les compilateurs C# et Visual Basic génèrent le code à exécuter sur n'importe quelle UC. Sur un ordinateur 64 bits, ces fichiers binaires sont exécutés en tant que processus 64 bits. Pour une exécution sur un processus 32 bits, vous devez sélectionner **Win32**, et non pas **AnyCPU**.  
   
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>Pour faire passer le système d'exploitation à 32 bits (C/C++)  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur votre projet, puis cliquez sur **propriétés** dans le menu contextuel.  
+1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur votre projet, puis cliquez sur **Propriétés** dans le menu contextuel.  
   
-     Dans les pages de propriétés, cliquez sur **plateforme**, puis sélectionnez **Win32** dans la liste des plateformes.  
+     Dans les pages de propriétés, cliquez sur **Plateforme**, puis sélectionnez **Win32** dans la liste de plateformes.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

@@ -1,8 +1,6 @@
 ---
-title: Onglet, boîte de dialogue Propriétés de fenêtre Styles | Documents Microsoft
-ms.custom: ''
+title: Onglet, boîte de dialogue Propriétés de fenêtre Styles | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccccced77f508bdced130012645aa475124e87b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 464f2908784011074754ca68a29edbd52d992c95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990319"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Onglet Styles de la boîte de dialogue Propriétés de la fenêtre
-Utilisez le **Styles** onglet pour afficher les styles appliqués à la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [affichage Windows](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
+Utilisez le **Styles** onglet pour afficher les styles appliqués à la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
  Les paramètres suivants sont disponibles sur le **Styles** onglet :  
   
 |Entrée|Description|  
 |-----------|-----------------|  
-|**Styles de fenêtre**|Une combinaison de la fenêtre de codes de style et styles de contrôle, le cas échéant.|  
-|**Styles étendus**|Combinaison de codes de style de fenêtre étendus.|
+|**Styles de fenêtre**|Une combinaison de fenêtre de codes de style et styles de contrôle, le cas échéant.|  
+|**Styles étendus**|Une combinaison de codes de style de fenêtre étendus.|

@@ -1,8 +1,6 @@
 ---
-title: 'Erreur : RPC requiert une authentification | Documents Microsoft'
-ms.custom: ''
+title: 'Erreur : RPC requiert une authentification | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.rpc_requires_authentication
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 214dafa5acc925434cf3569570f20ab7f3331bfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 66f319ba24a52a99994e693774aa9e7c0db7757e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874405"
 ---
 # <a name="error-rpc-requires-authentication"></a>Erreur : RPC requiert une authentification
 Le débogueur Visual Studio ne peut pas se connecter à l'ordinateur distant. Une stratégie RPC est activée sur l'ordinateur local qui empêche le débogage distant.  
@@ -30,8 +28,8 @@ Le débogueur Visual Studio ne peut pas se connecter à l'ordinateur distant. Un
   
 1.  Exécutez `\` *windir*`\system32\regedt32.exe`  
   
-2.  Recherchez et supprimez `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
+2.  Localisez et supprimez `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
 3.  Redémarrez votre ordinateur afin que la modification du Registre entre en vigueur.  
   
-4.  Si le problème persiste, contactez votre administrateur de domaine sur le **Configuration ordinateur > modèles d’administration > système > appel de procédure distante > Restrictions pour les clients RPC non authentifiés** la stratégie de groupe paramètre.
+4.  Si le problème persiste, contactez votre administrateur de domaine sur le **Configuration ordinateur > modèles d’administration > système > appel de procédure distante > Restrictions pour les clients RPC non authentifiés** stratégie de groupe paramètre.

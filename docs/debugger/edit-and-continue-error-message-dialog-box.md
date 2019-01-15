@@ -1,8 +1,6 @@
 ---
 title: Modifier et continuer, boîte de dialogue erreur message | Microsoft Docs
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828668"
 ---
 # <a name="edit-and-continue-error-message"></a>Modifier & Continuer le message d’erreur 
 
@@ -37,7 +35,7 @@ Les raisons possibles de ce message d’erreur sont les suivantes :
 -   Essayez de modifier un code optimisé. Vous devrez peut-être passer d’une version Release à une version debug.
 -   Essayez de modifier le code pendant son exécution, au lieu de pendant la suspension dans le débogueur. Essayez [définissant un point d’arrêt](../debugger/using-breakpoints.md)et modifier le code pendant la suspension.
 -   Essayez de modifier du code managé lorsque seulement le débogage non managé est activé. Modifier & Continuer ne fonctionne pas avec [le débogage en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).
--   Changer d’un code qui n’est pas pris en charge par Modifier & Continuer dans votre langage de programmation. Pour plus d’informations, consultez les articles [pris en charge les modifications de code dans C# ](supported-code-changes-csharp.md), [non pris en charge des modifications dans Visual Basic Modifier & Continuer](unsupported-edits-in-visual-basic-edit-and-continue.md), et [pris en charge les modifications du code C++](supported-code-changes-cpp.md).
+-   Changer d’un code qui n’est pas pris en charge par Modifier & Continuer dans votre langage de programmation. Pour plus d’informations, consultez les articles [pris en charge les modifications de code dans C# ](supported-code-changes-csharp.md), [non pris en charge des modifications dans Visual Basic Modifier & Continuer](/visualstudio/debugger/supported-code-changes-csharp), et [pris en charge les modifications du code C++](supported-code-changes-cpp.md).
 -   Essayez de modifier le code dans une application que vous êtes attaché, au lieu de démarrer le débogage à partir de la **déboguer** menu.  
 -   Essayez de modifier le code en déboguant un Dr. Dr. Watson.  
 -   Essayez de modifier le code après une exception non gérée se produit et l’option **dérouler la pile des appels sur les exceptions non gérées** n’est pas sélectionnée.  

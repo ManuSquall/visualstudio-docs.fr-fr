@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : À l’aide de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 author: mikejo5000
@@ -10,23 +8,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c92a8b24dd3d932eedfcb122b4da9294dd3418
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9644e4b9f9d0a193c0d8088aa9e237d84f276aa1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823313"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un Shader de calcul
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
 -   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
   
--   À l’aide de la **événements Graphics** pour déterminer le calcul nuanceur est exécuté par un DirectCompute `Dispatch` événement.  
+-   Utilisation de la **pile des appels des événements Graphics** pour identifier le nuanceur de calcul exécuté par un événement `Dispatch` DirectCompute.  
   
--   À l’aide de la **étapes de canalisation Graphics** fenêtre et du débogueur HLSL pour examiner le nuanceur de calcul qui est la source du problème.  
+-   Utilisation de la fenêtre **Étapes de canalisation Graphics** et du débogueur HLSL pour examiner le nuanceur de calcul à l’origine du problème.  
   
 ## <a name="scenario"></a>Scénario  
  Dans ce scénario, vous avez écrit une simulation relative à la dynamique des fluides, qui utilise DirectCompute pour effectuer les calculs les plus poussés de la mise à jour de la simulation. Quand l'application est exécutée, le rendu du jeu de données et de l'interface utilisateur semble correct. Toutefois, la simulation ne se comporte pas comme prévu. À l'aide de Graphics Diagnostics, vous pouvez capturer le problème dans un journal de graphisme pour déboguer l'application. Le problème se présente ainsi dans l'application :  
@@ -40,19 +38,19 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphiques  
   
-1. Dans Visual Studio, chargez un journal de graphisme qui contient un frame exposant les résultats de simulation incorrects. Un nouvel onglet Graphics Diagnostics s'affiche dans Visual Studio. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. Dans la partie inférieure est la **liste de frames**, qui affiche une miniature de chaque frame capturé.  
+1. Dans Visual Studio, chargez un journal de graphisme qui contient un frame exposant les résultats de simulation incorrects. Un nouvel onglet Graphics Diagnostics s'affiche dans Visual Studio. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche une miniature de chaque frame capturé.  
   
-2. Dans le **liste de frames**, sélectionnez un frame qui illustre le comportement de simulation incorrect. Bien que l'erreur semble se situer dans le code de simulation et non dans le code de rendu, vous devez choisir un frame, car les événements DirectCompute sont capturés frame par frame, avec les événements Direct3D. Dans ce scénario, l'onglet du journal de graphisme se présente comme suit :  
+2. Dans la **Liste de frames**, sélectionnez un frame qui illustre le comportement de simulation incorrect. Bien que l'erreur semble se situer dans le code de simulation et non dans le code de rendu, vous devez choisir un frame, car les événements DirectCompute sont capturés frame par frame, avec les événements Direct3D. Dans ce scénario, l'onglet du journal de graphisme se présente comme suit :  
   
     ![Document du journal des graphiques dans Visual Studio. ](media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
-   Une fois que vous avez sélectionné un frame qui illustre le problème, vous pouvez utiliser la **Liste des événements Graphics** pour le diagnostiquer. Le **liste des événements Graphics** contient un événement pour chaque appel de DirectCompute et l’appel d’API de Direct3D qui a été effectuée durant le frame actif, par exemple, appels d’API pour exécuter un calcul sur le GPU, ou pour afficher le jeu de données ou l’interface utilisateur. Dans le cas présent, nous sommes intéressés par les événements `Dispatch` qui représentent certaines parties de la simulation exécutées sur le GPU.  
+   Une fois que vous avez sélectionné un frame qui illustre le problème, vous pouvez utiliser la **Liste des événements Graphics** pour le diagnostiquer. La **Liste des événements Graphics** contient un événement pour chaque appel DirectCompute et chaque appel d’API Direct3D effectué durant le frame actif. C’est le cas, par exemple, des appels d’API pour l’exécution d’un calcul sur le GPU, ou pour le rendu du jeu de données ou de l’interface utilisateur. Dans le cas présent, nous sommes intéressés par les événements `Dispatch` qui représentent certaines parties de la simulation exécutées sur le GPU.  
   
 #### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Pour rechercher l'événement Dispatch pour la mise à jour de la simulation  
   
-1. Sur le **Graphics Diagnostics** barre d’outils, choisissez **liste des événements** pour ouvrir le **liste des événements Graphics** fenêtre.  
+1. Dans la barre d’outils **Graphics Diagnostics**, choisissez **Liste des événements** pour ouvrir la fenêtre **Liste des événements Graphics**.  
   
-2. Inspecter le **liste des événements Graphics** pour l’événement de dessin qui restitue le jeu de données. Pour faciliter cette opération, entrez `Draw` dans le **recherche** zone dans le coin supérieur droit de la **liste des événements Graphics** fenêtre. Cela permet de filtrer la liste pour retenir uniquement les événements qui contiennent « Draw » dans leur titre. Dans ce scénario, vous découvrez que les événements de dessin suivants se sont produits :  
+2. Inspectez la **Liste des événements Graphics** à la recherche de l’événement de dessin qui effectue le rendu du jeu de données. Pour faciliter cette opération, entrez `Draw` dans le **recherche** zone dans le coin supérieur droit de la **liste des événements Graphics** fenêtre. Cela permet de filtrer la liste pour retenir uniquement les événements qui contiennent « Draw » dans leur titre. Dans ce scénario, vous découvrez que les événements de dessin suivants se sont produits :  
   
     ![La liste des événements &#40;EL&#41; montre les événements de dessin. ](media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
@@ -62,7 +60,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
     ![Cet événement draw restitue le jeu de données de simulation. ](media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5. Observons à présent le **liste des événements Graphics** pour le `Dispatch` événement qui met à jour la simulation. Comme il est probable que la simulation est mise à jour avant son rendu, vous pouvez vous concentrer tout d'abord sur les événements `Dispatch` qui se produisent avant l'événement de dessin de rendu des résultats. Pour simplifier ce processus, modifiez la **recherche** boîte lire `Draw;Dispatch;CSSetShader(`. Cela permet de filtrer la liste pour qu'elle contienne également les événements `Dispatch` et `CSSetShader`, en plus des événements de dessin. Dans ce scénario, vous découvrez que plusieurs événements `Dispatch` se sont produits avant l'événement de dessin :  
+5. Inspectez la **Liste des événements Graphics** à la recherche de l’événement `Dispatch` qui met à jour la simulation. Comme il est probable que la simulation est mise à jour avant son rendu, vous pouvez vous concentrer tout d'abord sur les événements `Dispatch` qui se produisent avant l'événement de dessin de rendu des résultats. Pour simplifier ce processus, modifiez la **recherche** boîte lire `Draw;Dispatch;CSSetShader(`. Cela permet de filtrer la liste pour qu'elle contienne également les événements `Dispatch` et `CSSetShader`, en plus des événements de dessin. Dans ce scénario, vous découvrez que plusieurs événements `Dispatch` se sont produits avant l'événement de dessin :  
   
     ![Affiche les événements de dessin, Dispatch et CSSetShader](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
@@ -70,17 +68,17 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 #### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>Pour identifier le nuanceur de calcul exécuté par un appel de Dispatch  
   
-1. Sur le **Graphics Diagnostics** barre d’outils, choisissez **pile des appels des événements** pour ouvrir le **événements Graphics** fenêtre.  
+1. Dans la barre d’outils **Graphics Diagnostics**, choisissez **Pile des appels des événements** pour ouvrir la fenêtre **Pile des appels des événements Graphics**.  
   
-2. À partir de l'événement de dessin qui restitue les résultats de la simulation, naviguez vers l'arrière de chaque événement `CSSetShader` précédent. Ensuite, dans le **événements Graphics** fenêtre, choisissez la fonction de plus haut pour accéder au site d’appel. Sur le site d’appel, vous pouvez utiliser le premier paramètre de la [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) fonction d’appel pour déterminer lequel nuanceur de calcul exécuté par le prochain `Dispatch` événement.  
+2. À partir de l'événement de dessin qui restitue les résultats de la simulation, naviguez vers l'arrière de chaque événement `CSSetShader` précédent. Puis, dans la fenêtre **Pile des appels des événements Graphics**, choisissez la fonction située au niveau le plus élevé pour accéder au site d’appel. Sur le site d’appel, vous pouvez utiliser le premier paramètre de la [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) fonction d’appel pour déterminer lequel nuanceur de calcul exécuté par le prochain `Dispatch` événement.  
   
    Dans ce scénario, il existe trois paires d'événements `CSSetShader` et `Dispatch` dans chaque frame. Si vous revenez en arrière, la troisième paire représente l'étape d'intégration (où les particules fluides sont effectivement déplacées), la deuxième paire représente l'étape de calcul des forces (où les forces qui affectent chaque particule sont calculées), et la première paire représente l'étape de calcul de la densité.  
   
 #### <a name="to-debug-the-compute-shader"></a>Pour déboguer le nuanceur de calcul  
   
-1. Sur le **Graphics Diagnostics** barre d’outils, choisissez **canalisation** pour ouvrir le **étapes de canalisation Graphics** fenêtre.  
+1. Dans la barre d’outils **Graphics Diagnostics**, choisissez **Étapes de canalisation** pour ouvrir la fenêtre **Étapes de canalisation Graphics**.  
   
-2. Sélectionnez le troisième `Dispatch` événements (celui qui précède immédiatement l’événement de dessin), puis, dans le **étapes de canalisation Graphics** fenêtre, sous le **nuanceur de calcul** à l’étape, choisissez  **Démarrer le débogage**.  
+2. Sélectionnez le troisième événement `Dispatch` (celui qui précède immédiatement l’événement de dessin) puis, dans la fenêtre **Étapes de canalisation Graphics**, sous l’étape **Nuanceur de calcul**, choisissez **Démarrer le débogage**.  
   
     ![Sélection du troisième événement Dispatch dans l’EL](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
@@ -90,7 +88,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
     ![Débogage du nuanceur programmable IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Pour arrêter le débogage du nuanceur de calcul, sur le **déboguer** barre d’outils, choisissez **arrêter le débogage** (clavier : MAJ + F5).  
+4. Pour arrêter le débogage du nuanceur de calcul, sur le **déboguer** barre d’outils, choisissez **arrêter le débogage** (clavier : Maj+F5  
   
 5. Sélectionnez ensuite le deuxième événement `Dispatch`, puis démarrez le débogage du nuanceur de calcul comme vous l'avez fait à l'étape précédente.  
   

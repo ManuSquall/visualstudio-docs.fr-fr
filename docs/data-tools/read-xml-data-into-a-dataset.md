@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2f1eb51286ae2d64738b91d997a21596fa2a7c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921469"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 
@@ -51,7 +50,7 @@ Dans cette étape, vous allez créer un Visual Basic ou le visuel C# projet.
 
 Étant donné que cette procédure pas à pas se concentre sur la lecture de données XML dans un dataset, le contenu d’un fichier XML est fourni.
 
-1. Dans le menu Projet **, sélectionnez Ajouter un nouvel élément**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
 2. Sélectionnez **fichier XML**, nommez le fichier **authors.xml**, puis sélectionnez **ajouter**.
 
@@ -152,7 +151,7 @@ L’interface utilisateur pour cette application se compose des éléments suiva
     |Contrôle|Property|Paramètre|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||ScrollBars|**Vertical**|
+    ||**ScrollBars**|**Vertical**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
@@ -199,7 +198,7 @@ Le **Afficher schéma** bouton crée un <xref:System.IO.StringWriter> objet qui 
 
      Le **éditeur de Code** s’ouvre à la `ShowSchemaButton_Click` Gestionnaire d’événements.
 
-3.  Collez le code suivant dans le gestionnaire d'événements `ShowSchemaButton_Click` :
+3.  Collez le code suivant dans le gestionnaire d’événements `ShowSchemaButton_Click`.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]

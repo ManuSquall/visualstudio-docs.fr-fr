@@ -2,7 +2,6 @@
 title: Un projet Visual C++ de débogage à distance | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884582"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un projet Visual C++ dans Visual Studio de débogage à distance
 Pour déboguer une application de Visual Studio sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous allez déployer votre application, configurez votre projet pour vous connecter à l’ordinateur distant à partir de Visual Studio, puis déployer et exécuter votre application.
@@ -32,14 +31,14 @@ Pour déboguer une application de Visual Studio sur un autre ordinateur, install
 
 Pour plus d’informations sur le débogage des applications de Windows universelle (UWP) à distance, consultez [déboguer un Package d’application installé](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
 > Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles.
   
-## <a name="download-and-install-the-remote-tools"></a>Téléchargez et installez les outils à distance
+## <a name="download-and-install-the-remote-tools"></a>Télécharger et installer les outils de contrôle à distance
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -56,13 +55,13 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 ## <a name="remote_cplusplus"></a> Débogage distant d’un projet Visual C++  
  Dans la procédure suivante, le nom et le chemin d’accès du projet est C:\remotetemp\MyMfc, et le nom de l’ordinateur distant est **MJO-DL**.  
   
-1. Créer une application MFC nommée **mymfc.**  
+1. Créez une application MFC nommée **mymfc**.  
   
-2. Définissez un point d’arrêt quelque part dans l’application qui est facilement accessible, par exemple dans **MainFrm.cpp**, au début de `CMainFrame::OnCreate`.  
+2. Définissez un point d’arrêt facilement accessible quelque part dans l’application, par exemple dans **MainFrm.cpp**, au début de `CMainFrame::OnCreate`.  
   
-3. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**. Ouvrez le **débogage** onglet.  
+3. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**. Ouvrez l’onglet **Débogage**.  
   
-4. Définir le **débogueur à lancer** à **débogueur Windows distant**.  
+4. Définissez **Débogueur à lancer** sur **Débogueur Windows distant**.  
   
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
@@ -82,11 +81,11 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
   
 6. Dans l’Explorateur de solutions, cliquez sur la solution et choisissez **Configuration Manager**.  
   
-7. Pour le **déboguer** configuration, sélectionnez le **déployer** case à cocher.  
+7. Pour la configuration **Debug**, cochez la case **Déployer**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8. Démarrer le débogage (**Déboguer > Démarrer le débogage**, ou **F5**).  
+8. Démarrez le débogage (**Déboguer > Démarrer le débogage** ou appuyez sur **F5**).  
   
 9. Le fichier exécutable est déployé automatiquement sur l’ordinateur distant.  
   
@@ -97,9 +96,9 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 11. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.  
   
     > [!TIP]
-    >  Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans le **l’Explorateur de solutions,** avec le bouton droit le **mymfc** nœud, puis choisissez **déployer**.  
+    >  Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.  
   
-    Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter > Nouveau dossier**.) Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter > élément existant**, puis sélectionnez les fichiers). Sur le **propriétés** pour chaque fichier, définissez **Copy to Output Directory** à **toujours copier**.
+    Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans l’**Explorateur de solutions**, cliquez sur **Ajouter > Nouveau dossier**). Ensuite, ajoutez les fichiers au dossier (dans l’**Explorateur de solutions**, cliquez sur **Ajouter > Élément existant**, puis sélectionnez les fichiers). Dans la page **Propriétés** de chaque fichier, définissez **Copier dans le répertoire de sortie** sur **Toujours copier**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants 
 
@@ -108,7 +107,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  
  [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)   
- [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Configurer le Pare-feu Windows pour le débogage à distance](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Débogage distant ASP.NET sur un ordinateur distant IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)

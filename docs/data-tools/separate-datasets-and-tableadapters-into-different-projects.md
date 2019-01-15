@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 87d4e11ffcb485ac96d2ecdb53951532a2c1305a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932036"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
 Datasets typés ont été améliorées afin que le [TableAdapters](create-and-configure-tableadapters.md) et classes de jeu de données peuvent être générées dans des projets séparés. Cela vous permet de rapidement séparer les couches application et générer des applications de données multicouches.
@@ -61,8 +60,8 @@ Par défaut, une fois que vous séparez le jeu de données et le code du TableAd
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
-- [Procédure pas à pas : Création d’une application de données multicouches](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
+- [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

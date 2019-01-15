@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineFramesByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 428b720fc20684d9bee7d25272ecaca0cbab13ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 504b7953a81b6fd435bcab937f35b598167eb472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854839"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse virtuelle relative (RVA) spécifiée.  
@@ -25,7 +23,7 @@ Récupère une énumération qui permet au client d’effectuer une itération d
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT findInlineFramesByRVA (    DWORD             rva,  
+HRESULT findInlineFramesByRVA (    DWORD             rva,  
    IDiaEnumSymbols** ppResult  
 );  
 ```  
@@ -43,5 +41,5 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

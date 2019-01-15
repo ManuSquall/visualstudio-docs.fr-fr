@@ -1,8 +1,6 @@
 ---
-title: Hiérarchie des Types de symboles de classes | Documents Microsoft
-ms.custom: ''
+title: Hiérarchie des Types de symboles de classes | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8aeb208c4015d205efbfe018ee324a8ba0ede6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: fa257de86367f2531cce5c57080cd059856fa82a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902852"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hiérarchie de classes des types de symboles
 Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.  
@@ -30,7 +28,7 @@ Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.
 |-----------------|-----------------|  
 |[UDT](../../debugger/debug-interface-access/udt.md)|Symbole utilisé pour représenter chaque classe, structure et union.|  
 |[Énumération (Kit de développement logiciel SDK de Debug Interface Access)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Symbole de types énumérés.|  
-|[PointerType](../../debugger/debug-interface-access/pointertype.md)|Symbole pour les types pointeur.|  
+|[PointerType](../../debugger/debug-interface-access/pointertype.md)|Symbole de types pointeur.|  
 |[ArrayType](../../debugger/debug-interface-access/arraytype.md)|Symbole pour les types tableau.|  
 |[BaseType](../../debugger/debug-interface-access/basetype.md)|Symbole pour les types de base|  
 |[Typedef (Kit de développement logiciel de Debug Interface Access)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Symbole qui introduit des noms pour les autres types.|  
@@ -48,6 +46,6 @@ Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.
 >  Chaque symbole peut avoir des propriétés qui contiennent des informations sur le symbole, ainsi que des références à d’autres symboles. Ces propriétés sont répertoriées dans les rubriques de symbole individuels.  
   
 ## <a name="see-also"></a>Voir aussi  
- [CV_access_e (énumération)](../../debugger/debug-interface-access/cv-access-e.md)   
- [Hiérarchie lexicale des Types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
+ [CV_access_e, énumération](../../debugger/debug-interface-access/cv-access-e.md)   
+ [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

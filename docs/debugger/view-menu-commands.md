@@ -1,8 +1,6 @@
 ---
-title: Afficher les commandes de Menu | Documents Microsoft
-ms.custom: ''
+title: Afficher les commandes de Menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - View menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfbcd8d586c1c6d2d3b208c3d7d62b2b333845d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915372"
 ---
 # <a name="view-menu-commands"></a>commandes du menu Affichage
-Le **vue** menu fournit des commandes de contrôle Spy ++ interface utilisateur.  
+Le **vue** menu fournit des commandes permettant de contrôler le Spy ++ interface utilisateur.  
   
  **Police**  
- Ouvre le **police** boîte de dialogue, dans laquelle vous pouvez sélectionner une police à utiliser dans la vue Spy ++ actuelle.  
+ Ouvre le **police** boîte de dialogue, dans laquelle vous pouvez sélectionner une police à utiliser dans l’affichage actuel de Spy ++.  
   
  **Barre d’outils**  
  Masque ou affiche la barre d’outils.  
@@ -32,4 +30,4 @@ Le **vue** menu fournit des commandes de contrôle Spy ++ interface utilisateur.
  Masque ou affiche la barre d’état.  
   
  **Propriétés**  
- Ouvre le **propriétés** boîte de dialogue de la vue active.
+ Ouvre le **propriétés** boîte de dialogue pour la vue active.

@@ -1,8 +1,6 @@
 ---
-title: Graphique de l’objet Table | Documents Microsoft
-ms.custom: ''
+title: Graphique de l’objet Table | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
@@ -14,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58c219069efcc98fccaa52dff5bd156212ea64d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8e89ae75a3e3ea43e9354df828410a0bdb6f2e79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902709"
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
 La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'identifier les objets Direct3D qui prennent en charge un frame de votre jeu ou application.  
   
  Voici la Table des objets :  
   
- ![Les objets Direct3D qui ont été créés par une application.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")  
+ ![Objets Direct3D qui ont été créés par une application.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")  
   
 ## <a name="understanding-the-graphics-object-table"></a>Présentation de la Table des objets Graphics  
- À l'aide de la Table des objets, vous pouvez analyser les objets Direct3D qui prennent en charge le rendu d'un frame particulier. Vous pouvez identifier un problème de rendu d’un objet spécifique en examinant ses propriétés et ses données (à l’aide d’autres outils Graphics Diagnostics utilisés plus tôt durant votre diagnostic, vous pouvez affiner la liste des objets qui ne correspondent pas à ce que vous attendez.) Lorsque vous avez trouvé l’objet incriminé, vous pouvez utiliser une visualisation qui est spécifique à son type pour l’examiner, par exemple, vous pouvez utiliser l’éditeur d’images pour afficher des textures ou *visualiseur de mémoire tampon* pour afficher le contenu de la mémoire tampon.  
+ À l'aide de la Table des objets, vous pouvez analyser les objets Direct3D qui prennent en charge le rendu d'un frame particulier. Vous pouvez identifier un problème de rendu d’un objet spécifique en examinant ses propriétés et ses données (à l’aide d’autres outils Graphics Diagnostics utilisés plus tôt durant votre diagnostic, vous pouvez affiner la liste des objets qui ne correspondent pas à ce que vous attendez.) Une fois que vous avez trouvé l’objet incriminé, vous pouvez utiliser une visualisation spécifique à son type pour l’examiner (par exemple, vous pouvez utiliser l’éditeur d’images pour afficher des textures ou le *visualiseur de mémoire tampon* pour afficher le contenu de la mémoire tampon).  
   
  La Table des objets prend en charge le copier-coller, ce qui vous permet d'utiliser un autre outil (par exemple Microsoft Excel) pour examiner son contenu.
 
- En outre, vous pouvez utiliser la **Type** liste déroulante dans la partie supérieure gauche angle pour basculer l’affichage des objets de type **tampons**, **nuanceurs** ou **Textures**, ou tous ces éléments à la fois.  En outre, vous pouvez utiliser la zone de recherche dans le coin supérieur droit pour rechercher des lignes spécifiques dans l’ensemble des présentation des données.  Par exemple, vous pourriez rechercher *D32_FLOAT* pour rechercher toutes les instances d’objets de ce format dans la liste.
+ En outre, vous pouvez utiliser la **Type** liste déroulante en haut à gauche pour basculer l’affichage des objets de type **tampons**, **nuanceurs** ou **Textures**, ou tous ces éléments à la fois.  En outre, vous pouvez utiliser la zone de recherche dans l’angle supérieur droit pour rechercher des lignes spécifiques dans l’ensemble des données qui s’affiche.  Par exemple, vous pouvez rechercher *D32_FLOAT* pour rechercher toutes les instances d’objets de ce format dans la liste.
   
 ### <a name="graphics-object-table-format"></a>Format de la Table des objets Graphics  
  La Table des objets affiche les objets et ressources Direct3D qui prennent en charge le frame associé à l'événement sélectionné, par exemple, les objets d'état, les mémoires tampons, les nuanceurs, les textures et d'autres ressources. Les objets créés dans un frame précédent, mais qui ne sont pas utilisés dans le frame capturé sont omis de la table des objets. Les objets détruits par des événements précédents dans le frame capturé sont omis dans les événements postérieurs. Les objets qui ne sont pas définis dans D3D10Device ou D3D11DeviceContext sont affichés sous forme de texte grisé. Les objets sont affichés sous forme de tableau.  
@@ -46,11 +44,11 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |**Active**|Affiche « * » pour un objet défini sur D3D10Device ou D3D11DeviceContext dans le frame capturé.<br /><br /> Cela correspond aux objets affichés sous forme de texte grisé. Une entrée de colonne est fournie pour vous permettre de trier la table d'objets.|  
 |**Taille**|Taille de l'objet en octets.|  
 |**Format**|Format de l'objet. Par exemple, format d'un objet de texture ou modèle de nuanceur d'un objet de nuanceur.|  
-|**Largeur**|Largeur d'un objet de texture. Ne s'applique pas aux autres types d'objet.|  
-|**Hauteur**|Hauteur d'un objet de texture. Ne s'applique pas aux autres types d'objet.|  
-|**Profondeur**|Profondeur d'un objet de texture 3D. Si une texture n'est pas 3D, la valeur est 0. Ne s'applique pas aux autres types d'objet.|  
-|**MIPS**|Nombre de niveaux MIP d'un objet de texture. Ne s'applique pas aux autres types d'objet.|  
-|**Taille tableau**|Nombre de textures dans un tableau de textures. La plage va de 1 à une limite supérieure définie par le niveau de fonctionnalité actuel. Pour un mappage de cube, cette valeur représente 6 fois le nombre de mappages de cube dans le tableau.|  
+|**Width**|Largeur d'un objet de texture. Ne s'applique pas aux autres types d'objet.|  
+|**Height**|Hauteur d'un objet de texture. Ne s'applique pas aux autres types d'objet.|  
+|**Depth**|Profondeur d'un objet de texture 3D. Si une texture n'est pas 3D, la valeur est 0. Ne s'applique pas aux autres types d'objet.|  
+|**Mips**|Nombre de niveaux MIP d'un objet de texture. Ne s'applique pas aux autres types d'objet.|  
+|**ArraySize**|Nombre de textures dans un tableau de textures. La plage va de 1 à une limite supérieure définie par le niveau de fonctionnalité actuel. Pour un mappage de cube, cette valeur représente 6 fois le nombre de mappages de cube dans le tableau.|  
 |**Exemples**|Nombre d'échantillons multiples par pixel.|  
   
 ## <a name="graphics-object-viewers"></a>Visionneuses d'objets Graphics  
@@ -73,23 +71,23 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
  Dans Direct3D 12, les ressources sont des objets fourre-tout qui fournissent des données au pipeline de rendu. Ce comportement est différent de celui de Direct3D11, qui définissait de nombreux objets spécifiques pour différentes sortes et dimensions de ressources. Une ressource Direct3D 12 peut contenir des données de texture, des données vertex, des données de nuanceur, etc. Elle peut même représentent une cible de rendu telle que la mémoire tampon de profondeur. Les détails d'une ressource Direct3D 12 sont affichés dans une nouvelle fenêtre de document. Graphics Analysis utilise la visionneuse appropriée au contenu de l'objet de ressource, s'il peut en déterminer le type. Par exemple, un objet de ressource qui contient des données de texture est affiché à l'aide de la visionneuse de textures, exactement comme un objet Texture2D D3D11.  
   
 ### <a name="device-context-object"></a>Objet de contexte de périphérique  
- Dans Direct3D 11 et Direct3D 10, le contexte de périphérique (**contexte de périphérique D3D11** ou **D3D10 périphérique**) objet est particulièrement important, car il conserve des informations d’état les plus importantes, et elle est liée à d’autres objets d’état actuellement définis. Les détails du contexte de périphérique sont affichés dans une nouvelle fenêtre de document. Chaque catégorie d'information y est présentée sous son propre onglet. Le contexte de périphérique change quand un nouvel événement est sélectionné pour refléter l'état actuel du périphérique.  
+ Dans Direct3D 11 et Direct3D 10, l’objet de contexte de périphérique (**Contexte de périphérique D3D11** ou **Périphérique D3D10**) est essentiel, car il contient les informations d’état les plus importantes. En outre, il est lié à d’autres objets d’état actuellement définis. Les détails du contexte de périphérique sont affichés dans une nouvelle fenêtre de document. Chaque catégorie d'information y est présentée sous son propre onglet. Le contexte de périphérique change quand un nouvel événement est sélectionné pour refléter l'état actuel du périphérique.  
   
 ### <a name="buffer-object"></a>Objet de mémoire tampon  
- Les détails de l'objet de mémoire tampon (Mémoire tampon D3D11 ou Mémoire tampon D3D10) sont affichés dans une nouvelle fenêtre de document. Celle-ci présente le contenu de la mémoire tampon dans un tableau et fournit une interface qui permet de changer le mode d'affichage du contenu de la mémoire tampon. Le **mémoire tampon de données** table prend en charge la copie et collage afin que vous pouvez utiliser un autre outil, par exemple, Microsoft Excel, pour examiner son contenu. Le contenu de la mémoire tampon est interprété en fonction de la valeur de la **format** zone de liste déroulante, qui se trouve au-dessus de la **données de la mémoire tampon** table. Dans la zone, vous pouvez entrer un format de données composite incluant les types de données répertoriés dans le tableau suivant. Par exemple, « float int » affiche une liste de structures qui contiennent une valeur à virgule flottante 32 bits, suivie d'une valeur entière signée 32 bits. Les formats de données composites que vous avez spécifiés sont ajoutés à la zone de liste modifiable pour que vous puissiez les utiliser plus tard.  
+ Les détails de l'objet de mémoire tampon (Mémoire tampon D3D11 ou Mémoire tampon D3D10) sont affichés dans une nouvelle fenêtre de document. Celle-ci présente le contenu de la mémoire tampon dans un tableau et fournit une interface qui permet de changer le mode d'affichage du contenu de la mémoire tampon. La table des **données de la mémoire tampon** prend en charge le copier-coller, ce qui vous permet d’utiliser un autre outil (par exemple Microsoft Excel) pour examiner son contenu. Le contenu de la mémoire tampon est interprété en fonction de la valeur de la zone de liste modifiable **format**, située au-dessus de la table des **données de la mémoire tampon**. Dans la zone, vous pouvez entrer un format de données composite incluant les types de données répertoriés dans le tableau suivant. Par exemple, « float int » affiche une liste de structures qui contiennent une valeur à virgule flottante 32 bits, suivie d'une valeur entière signée 32 bits. Les formats de données composites que vous avez spécifiés sont ajoutés à la zone de liste modifiable pour que vous puissiez les utiliser plus tard.  
   
- Vous pouvez également activer la **afficher les Offsets** case à cocher pour masquer ou afficher le décalage de chaque élément dans la mémoire tampon.  
+ Vous pouvez également cocher ou décocher la case **Afficher les offsets** pour masquer ou afficher le décalage de chaque élément en mémoire tampon.  
   
 |Type|Description|  
 |----------|-----------------|  
 |**float**|Valeur à virgule flottante 32 bits.|  
 |**float2**|Vecteur qui contient deux valeurs à virgule flottante 32 bits.|  
 |**float3**|Vecteur qui contient trois valeurs à virgule flottante 32 bits.|  
-|**FLOAT4**|Vecteur qui contient quatre valeurs à virgule flottante 32 bits.|  
+|**float4**|Vecteur qui contient quatre valeurs à virgule flottante 32 bits.|  
 |**byte**|Valeur entière signée 8 bits.|  
-|**2 octets**|Valeur entière signée 16 bits.|  
-|**4 octets**|Valeur entière signée 32 bits. Identique à **int**.|  
-|**8 octets**|Valeur entière signée 64 bits. Identique à **int64**.|  
+|**2byte**|Valeur entière signée 16 bits.|  
+|**4byte**|Valeur entière signée 32 bits. Identique à **int**.|  
+|**8byte**|Valeur entière signée 64 bits. Identique à **int64**.|  
 |**xbyte**|Valeur hexadécimale 8 bits.|  
 |**x2byte**|Valeur hexadécimale 16 bits.|  
 |**x4byte**|Valeur hexadécimale 32 bits. Identique à **xint**.|  
@@ -98,13 +96,13 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |**u2byte**|Valeur entière non signée 16 bits.|  
 |**u4byte**|Valeur entière non signée 32 bits. Identique à **uint**.|  
 |**u8byte**|Valeur entière non signée 64 bits. Identique à **uint64**.|  
-|**moitié**|Valeur à virgule flottante 16 bits.|  
-|**semestre 2**|Vecteur qui contient deux valeurs à virgule flottante 16 bits.|  
+|**half**|Valeur à virgule flottante 16 bits.|  
+|**half2**|Vecteur qui contient deux valeurs à virgule flottante 16 bits.|  
 |**half3**|Vecteur qui contient trois valeurs à virgule flottante 16 bits.|  
 |**half4**|Vecteur qui contient quatre valeurs à virgule flottante 16 bits.|  
 |**double**|Valeur à virgule flottante 64 bits.|  
-|**int**|Valeur entière signée 32 bits. Identique à **4 octets**.|  
-|**int64**|Valeur entière signée 64 bits. Identique à **8 octets**.|  
+|**int**|Valeur entière signée 32 bits. Identique à **4byte**.|  
+|**int64**|Valeur entière signée 64 bits. Identique à **8byte**.|  
 |**xint**|Valeur hexadécimale 32 bits. Identique à **x4byte**.|  
 |**xint64**|Valeur hexadécimale 64 bits. Identique à **x8byte**.|  
 |**uint**|Valeur entière non signée 32 bits. Identique à **u4byte**.|  
@@ -113,4 +111,4 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
   
 ## <a name="see-also"></a>Voir aussi  
  [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)   
- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
+ [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)

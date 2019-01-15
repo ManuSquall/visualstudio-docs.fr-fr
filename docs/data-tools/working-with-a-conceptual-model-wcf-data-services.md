@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’un modèle conceptuel (WCF Data Services)
+title: Utilisation d’un modèle conceptuel (services de données WCF)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6d49df542dbd134a6164e582459978bb2ef1aee3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989644"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Travailler avec un modèle conceptuel (WCF Data Services)
 
@@ -30,8 +29,8 @@ Lorsque vous utilisez un modèle conceptuel pour décrire les données dans une 
 
 | Rubrique | Description |
 | - | - |
-| [Comment : exécuter des requêtes de Service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] application. |
-| [Comment : projeter des résultats de requête](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par une requête de service de données. |
+| [Guide pratique pour Exécuter des requêtes de Service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] application. |
+| [Guide pratique pour Résultats de la requête](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par une requête de service de données. |
 
  Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données est valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation pour les opérations que vous effectuez sur un service de l’entité ou de données.
 
@@ -39,14 +38,14 @@ Lorsque vous utilisez un modèle conceptuel pour décrire les données dans une 
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Comment : messages de Service de données d’interception](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Montre comment ajouter une validation à une opération de service de données.|
+|[Guide pratique pour Intercepter des messages de Service de données](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Montre comment ajouter une validation à une opération de service de données.|
 
  Les rubriques suivantes montrent comment créer, mettre à jour et supprimer des données en effectuant des opérations sur les entités.
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Comment : ajouter, modifier et supprimer des entités](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|
-|[Comment : définir des relations d’entité](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Montre comment créer ou modifier des relations dans un service de données.|
+|[Guide pratique pour Ajouter, modifier et supprimer des entités](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|
+|[Guide pratique pour Définir des relations d’entité](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Montre comment créer ou modifier des relations dans un service de données.|
 
 ## <a name="see-also"></a>Voir aussi
 

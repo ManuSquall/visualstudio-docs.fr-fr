@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_hasSEH | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94329d853be271653a82f184399453e06c4e9836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 81a7fdf9b0ead79e63cb9f9715a995edda9889ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919003"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Récupère un indicateur qui spécifie si la fonction contient un [structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, __try /\__except blocs).  
@@ -42,11 +40,11 @@ HRESULT get_hasSEH(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

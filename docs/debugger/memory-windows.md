@@ -2,7 +2,6 @@
 title: Afficher la mémoire pour les variables dans le débogueur | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837223"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Utiliser les fenêtres de mémoire dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -49,7 +48,7 @@ Comme les autres fenêtres du débogueur, le **mémoire** windows sont disponibl
 >[!IMPORTANT]
 >Pour activer la **mémoire** windows, **activer le débogage au niveau des adresses** doit être sélectionnée dans **outils** > **Options** (ou **Déboguer** > **Options**) > **débogage** > **général**. 
 
-**Pour ouvrir une fenêtre mémoire**
+**Pour ouvrir une fenêtre Mémoire**
   
 1. Assurez-vous que **activer le débogage au niveau des adresses** est sélectionné dans **outils** > **Options** (ou **déboguer**  >  **Options**) > **débogage** > **général**. 
    
@@ -81,26 +80,26 @@ Par défaut, le **mémoire** traite de la fenêtre **adresse** expressions comme
   
 ## <a name="customize-the-memory-window"></a>Personnaliser la fenêtre mémoire 
 
-Par défaut, contenu de la mémoire apparaître sous forme d’entiers de 1 octet au format hexadécimal, et la largeur de fenêtre détermine le nombre de colonnes affichées. Vous pouvez personnaliser la façon dont le **mémoire** fenêtre affiche le contenu de la mémoire.  
+Par défaut, contenu de la mémoire apparaître sous forme d’entiers de 1 octet au format hexadécimal, et la largeur de fenêtre détermine le nombre de colonnes affichées. Vous pouvez personnaliser la façon dont la fenêtre **Mémoire** affiche le contenu de la mémoire.  
   
-**Pour modifier le format du contenu de la mémoire :**  
+**Pour changer le format du contenu mémoire :**  
   
 -  Avec le bouton droit dans le **mémoire** fenêtre, puis choisissez les formats que vous souhaitez dans le menu contextuel.  
   
-**Pour modifier le nombre de colonnes dans la fenêtre de la mémoire :**
+**Pour modifier le nombre de colonnes affichées dans la fenêtre Mémoire :**
   
 - Sélectionnez la flèche déroulante en regard du **colonnes** champ, puis sélectionnez le nombre de colonnes à afficher, ou sélectionnez **automatique** pour l’ajustement automatique en fonction de la largeur de la fenêtre.  
   
 Si vous ne souhaitez pas que le contenu de la **mémoire** fenêtre Modifier en tant que votre application s’exécute, vous pouvez désactiver l’évaluation dynamique des expressions. 
 
-**Pour activer/désactiver l’évaluation dynamique :**  
+**Pour activer ou désactiver l’évaluation dynamique :**  
   
 - Avec le bouton droit dans le **mémoire** , puis sélectionnez **réévaluer automatiquement** dans le menu contextuel. 
 
   >[!NOTE]
   >Live expression d’évaluation est un bouton bascule et est activé par défaut, par conséquent, en sélectionnant **réévaluer automatiquement** est désactivée. En sélectionnant **réévaluer automatiquement** à nouveau rallume automatiquement. 
   
-Vous pouvez masquer ou afficher la barre d’outils en haut de la **mémoire** fenêtre. Vous n’aurez pas d’accès à la **adresse** champ ou autres outils lorsque la barre d’outils est masquée.  
+Vous pouvez masquer ou afficher la barre d’outils en haut de la fenêtre **Mémoire**. Vous n’aurez pas d’accès à la **adresse** champ ou autres outils lorsque la barre d’outils est masquée.  
   
 **Pour activer/désactiver l’affichage de la barre d’outils :**  
   

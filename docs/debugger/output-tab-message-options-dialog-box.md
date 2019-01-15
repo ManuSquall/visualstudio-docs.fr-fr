@@ -1,8 +1,6 @@
 ---
-title: Onglet sortie, la boîte de dialogue Options de Message | Documents Microsoft
-ms.custom: ''
+title: Onglet sortie, le Message de boîte de dialogue Options | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Output
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e559edf5028d339b6086a413fb2dcb040aafb355
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c79b823b850aabc98290df0157da673d11d9a268
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885833"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Onglet Sortie de la boîte de dialogue Options des messages
-Utilisez le **sortie** onglet pour spécifier les données à partir de chaque message à la liste dans [vue Messages](../debugger/messages-view.md). Pour afficher le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **des Messages de journal** à partir de la **Spy** menu.  
+Utilisez le **sortie** onglet pour spécifier les données à partir de chaque message à la liste dans [vue Messages](../debugger/messages-view.md). Pour afficher le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **Messages du journal** à partir de la **Spy** menu.  
   
  Les paramètres suivants sont disponibles sur le **sortie** onglet :  
   
@@ -33,26 +31,26 @@ Utilisez le **sortie** onglet pour spécifier les données à partir de chaque m
  **Paramètres de messages bruts**  
  Afficher la valeur hexadécimale **wParam** et **lParam** valeurs.  
   
- **Paramètres de Message décodé**  
- Afficher les résultats du décodage spécifique au message de la **wParam** et **lParam** valeurs.  
+ **Paramètres de messages décodés**  
+ Afficher les résultats du décodage de message spécifique de la **wParam** et **lParam** valeurs.  
   
  **Valeurs de retour brutes**  
  Afficher la valeur hexadécimale **lResult** valeur de retour.  
   
  **Valeurs de retour décodées**  
- Afficher les résultats du décodage spécifique au message de la **lResult** valeur de retour.  
+ Afficher les résultats du décodage de message spécifique de la **lResult** valeur de retour.  
   
  **Heure d’origine du message**  
- Temps écoulé depuis le système de Windows a été démarré (pour les messages publiés).  
+ Temps écoulé depuis le système Windows a été démarré (pour les messages publiés uniquement).  
   
  **Position de la souris de message**  
- Les coordonnées d’écran de la souris lorsque le message a été validé (pour les messages publiés).  
+ Les coordonnées d’écran de la souris lorsque le message a été publié (pour les messages publiés uniquement).  
   
- **Nombre maximal de lignes**  
+ **Lignes au maximum**  
  Limiter le nombre de lignes qui sont conservés dans la vue Messages actuellement sélectionnée.  
   
  **Enregistrer également dans un fichier**  
- Spécifiez un fichier de sortie pour le journal des messages. Ce fichier de sortie est écrit simultanément avec la fenêtre du journal des messages.  
+ Spécifiez un fichier de sortie pour le journal des messages. Ce fichier de sortie est écrites simultanément avec la fenêtre de journal de message.  
   
  **Enregistrer les paramètres par défaut**  
- Enregistre les paramètres précédents pour les nouvelles fenêtres de flux de message. Ces paramètres sont enregistrés lorsque vous quittez Spy ++.
+ Enregistrer les paramètres précédents pour les nouvelles fenêtres de flux de message. Ces paramètres sont enregistrés lorsque vous quittez Spy ++.

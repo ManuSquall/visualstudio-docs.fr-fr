@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findSymbolByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: adaae62196328c6f396a5fbb9b42727f540ead6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1cb92d46b63668c5b0b590134dd8b36587ab11c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837184"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 Récupère un type de symbole spécifié qui contienne, ou est le plus proche, une adresse spécifiée.  
@@ -27,7 +25,7 @@ Récupère un type de symbole spécifié qui contienne, ou est le plus proche, u
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT findSymbolByAddr (   
+HRESULT findSymbolByAddr (   
    DWORD        isect,  
    DWORD        offset,  
    SymTagEnum   symtag,  

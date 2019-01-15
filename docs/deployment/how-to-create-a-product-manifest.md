@@ -1,8 +1,6 @@
 ---
-title: 'Comment : créer un manifeste de produit | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un manifeste de produit | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824598"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Comment : créer un manifeste de produit
+# <a name="how-to-create-a-product-manifest"></a>Procédure : Créer un manifeste de produit
 Pour déployer les composants requis pour votre application, vous pouvez créer un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Le manifeste du package contient des aspects spécifiques à la localisation de votre package. Cela inclut des chaînes, des contrats de licence utilisateur final et les modules linguistiques.  
   
- Pour plus d’informations sur les manifestes de produit, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).  
+ Pour plus d’informations sur les manifestes de produit, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)  
   
 ## <a name="create-the-product-manifest"></a>Créer le manifeste de produit  
   
@@ -161,4 +159,4 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

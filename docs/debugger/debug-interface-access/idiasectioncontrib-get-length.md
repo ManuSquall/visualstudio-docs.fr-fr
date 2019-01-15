@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_length | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59fa6304572f2c951bdd16e30cbace8441dc6b97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 852bf1c4a502c9d76a9f7f460c8fd62c26f73df9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918698"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
 Récupère le nombre d’octets dans une section.  
@@ -27,7 +25,7 @@ Récupère le nombre d’octets dans une section.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_length (   
+HRESULT get_length (   
    DWORD* pRetVal  
 );  
 ```  

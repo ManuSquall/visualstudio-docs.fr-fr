@@ -1,8 +1,6 @@
 ---
-title: 'Comment : utiliser ClickOnce pour déployer des Applications pouvant s’exécuter sur plusieurs Versions du .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Utiliser ClickOnce pour déployer des Applications pouvant s’exécuter sur plusieurs Versions du .NET Framework | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943114"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Comment : utiliser des ClickOnce pour déployer des applications pouvant s’exécuter sur plusieurs versions du .NET framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procédure : Utiliser ClickOnce pour déployer des applications pouvant s’exécuter sur plusieurs versions du .NET Framework
 Vous pouvez déployer une application qui cible plusieurs versions du .NET Framework à l’aide de la technologie de déploiement ClickOnce. Cela nécessite que vous générez et mettre à jour les manifestes d’application et de déploiement.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Pour générer les manifestes d’application et de déploiement  
   
--   Utilisez l’Assistant Publication ou la Page Publier du Concepteur de projets pour publier l’application et de générer l’application et les fichiers manifeste de déploiement. Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ou [Page Publier, Concepteur de projets](../ide/reference/publish-page-project-designer.md).  
+-   Utilisez l’Assistant Publication ou la Page Publier du Concepteur de projets pour publier l’application et de générer l’application et les fichiers manifeste de déploiement. Pour plus d'informations, voir [Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ou [Page Publier, Concepteur de projets](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Pour modifier le manifeste de déploiement pour répertorier les différentes versions de .NET Framework  
   
@@ -59,10 +57,10 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
   
     |Version du .NET Framework|XML|  
     |----------------------------|---------|  
-    |Client 4|\<ou targetVersion Framework = profil « 4.0 » = « Client » supportedRuntime = « 4.0.30319 » / >|  
-    |Intégral 4|\<ou targetVersion Framework = « 4.0 » profile = supportedRuntime « Complet » = « 4.0.30319 » / >|  
-    |3.5 client|\<ou targetVersion Framework = profil « 3.5 » = « Client » supportedRuntime = « 2.0.50727 » / >|  
-    |3.5 complète|\<ou targetVersion Framework = « 3.5 » de profil = supportedRuntime « Complet » = « 2.0.50727 » / >|  
+    |4 Client|\<ou targetVersion Framework = profil « 4.0 » = « Client » supportedRuntime = « 4.0.30319 » / >|  
+    |4 Full|\<ou targetVersion Framework = « 4.0 » profile = supportedRuntime « Complet » = « 4.0.30319 » / >|  
+    |3.5 Client|\<ou targetVersion Framework = profil « 3.5 » = « Client » supportedRuntime = « 2.0.50727 » / >|  
+    |3.5 Full|\<ou targetVersion Framework = « 3.5 » de profil = supportedRuntime « Complet » = « 2.0.50727 » / >|  
     |3.0|\<ou targetVersion Framework = supportedRuntime « 3.0 » = « 2.0.50727 » / >|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Pour modifier le fichier app.config pour répertorier les versions du runtime compatibles .NET Framework  
@@ -75,10 +73,10 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
   
     |Version du runtime .NET framework|XML|  
     |------------------------------------|---------|  
-    |Client 4|\<supportedRuntime version = la référence (SKU) « v4.0.30319 » = ». NETFramework, Version = v4.0, profil = Client » / >|  
-    |Intégral 4|\<supportedRuntime version = la référence (SKU) « v4.0.30319 » = ». NETFramework, Version = v4.0 » / >|  
-    |3.5 complète|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 client|\<supportedRuntime version = « v2.0.50727 » référence (SKU) = « Client » / >|  
+    |4 Client|\<supportedRuntime version = la référence (SKU) « v4.0.30319 » = ». NETFramework, Version = v4.0, profil = Client » / >|  
+    |4 Full|\<supportedRuntime version = la référence (SKU) « v4.0.30319 » = ». NETFramework, Version = v4.0 » / >|  
+    |3.5 Full|\<supportedRuntime version="v2.0.50727"/ >|  
+    |3.5 Client|\<supportedRuntime version = « v2.0.50727 » référence (SKU) = « Client » / >|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Pour modifier le manifeste d’application pour marquer les assemblys dépendants en tant qu’assemblys .NET Framework  
   
@@ -102,7 +100,7 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Pour mettre à jour et signer à nouveau l’application et déploiement de manifestes  
   
--   Mettre à jour et signer à nouveau les manifestes d’application et de déploiement. Pour plus d’informations, consultez [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Mettre à jour et signer à nouveau les manifestes d’application et de déploiement. Pour plus d'informations, voir [Procédure : Resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   

@@ -1,8 +1,6 @@
 ---
-title: Applications serveur SDI | Documents Microsoft
-ms.custom: ''
+title: Applications serveur SDI | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9047c9b39bad5f4f790327b5ee65b4de688db9d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec4178fb23d84812d7258bac8384264bed9d4690
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885052"
 ---
 # <a name="sdi-server-applications"></a>Applications serveur SDI
-Si vous déboguez une application serveur SDI, vous devez spécifier `/Embedding` ou `/Automation` dans les **arguments de ligne de commande** propriété dans le *projet* boîte de dialogue Pages de propriétés pour C/C++, c#, ou Projets Visual Basic.  
+Si vous déboguez une application serveur SDI, vous devez spécifier `/Embedding` ou `/Automation` dans la propriété **Arguments de la ligne de commande** de la boîte de dialogue Pages de propriétés de *projet* pour les projets C/C++, C# ou Visual Basic.  
   
  Avec ces arguments de la ligne de commande, le débogueur peut lancer l’application serveur comme si elle était lancée d’un conteneur. Le démarrage du conteneur à partir du Gestionnaire de programmes ou du Gestionnaire de fichiers entraîne l'utilisation par le conteneur de l'instance du serveur démarrée dans le débogueur.  
   
 ## <a name="finding-the-command-line-arguments-property"></a>Recherche de la propriété Arguments de la ligne de commande  
- Pour accéder à la *projet* boîte de dialogue Pages de propriétés, avec le bouton droit de votre projet dans l’Explorateur de solutions, puis choisissez Propriétés dans le menu contextuel. Pour trouver la propriété Arguments de la ligne de commande, développez la catégorie Propriétés de configuration, puis cliquez sur la page Débogage.  
+ Pour accéder à la boîte de dialogue Pages de propriétés de *projet*, cliquez avec le bouton droit sur votre projet dans l’Explorateur de solutions, puis sélectionnez Propriétés dans le menu contextuel. Pour trouver la propriété Arguments de la ligne de commande, développez la catégorie Propriétés de configuration, puis cliquez sur la page Débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   

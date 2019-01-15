@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumDebugStreamData::Item | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5101c5f43e3d931a0ec4653838e4b45c01d3c5fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ddb54c8084cea8d89b7453fb11547063c338cfee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958369"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Récupère l’enregistrement spécifié.  
@@ -27,7 +25,7 @@ Récupère l’enregistrement spécifié.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD  index,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -45,7 +43,7 @@ HRESULT Item (
  pcbData  
  [out] Retourne le nombre d’octets retournés. Si `data` est `NULL`, puis `pcbData` contient le nombre total d’octets de données disponibles dans l’enregistrement spécifié.  
   
- données]  
+ data[]  
  [out] Une mémoire tampon est remplie avec les données d’enregistrement de débogage stream.  
   
 ## <a name="return-value"></a>Valeur de retour  

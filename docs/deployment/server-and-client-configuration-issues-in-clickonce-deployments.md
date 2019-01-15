@@ -1,8 +1,6 @@
 ---
 title: Serveur et les problèmes de Configuration de Client dans les déploiements ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955553"
 ---
-# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et client dans les déploiements ClickOnce
+# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que votre déploiement contient un type de fichier Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement ne réussira pas.  
 
  En outre, certains serveurs Web et Web tels que les logiciels d’application, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], contiennent une liste de fichiers et les types que vous ne pouvez pas télécharger de fichiers. Par exemple, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] empêche le téléchargement de tous les *Web.config* fichiers. Ces fichiers peuvent contenir des informations sensibles telles que les noms d’utilisateur et mots de passe.  
@@ -99,7 +97,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 
 | Type d’URL | Description |
 |----------| - |
-| FTP : / / | Vous pouvez publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à l’aide de ce protocole. |
+| ftp:// | Vous pouvez publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à l’aide de ce protocole. |
 | http:// | Vous pouvez installer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à l’aide de ce protocole. |
 | https:// | Vous pouvez installer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à l’aide de ce protocole. |
 | file:// | Vous pouvez installer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à l’aide de ce protocole. |
@@ -107,12 +105,12 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 ## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2 : Pare-feu Windows  
  Par défaut, Windows XP Service Pack 2 Active le pare-feu Windows. Si vous développez votre application sur un ordinateur Windows XP est installé, vous êtes toujours en mesure de publier et exécuter [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications à partir du serveur local qui exécute IIS. Toutefois, vous ne peut pas accéder à ce serveur qui exécute IIS à partir d’un autre ordinateur, sauf si vous ouvrez le pare-feu Windows. Pour obtenir des instructions sur la gestion du pare-feu Windows, consultez l’aide de Windows.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server : Activer les extensions serveur FrontPage  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server Activer les extensions serveur FrontPage  
  Les Extensions serveur FrontPage de Microsoft est requises pour la publication d’applications sur un serveur Web de Windows qui utilise le protocole HTTP.  
 
  Par défaut, Windows Server n’a pas les Extensions serveur FrontPage sont installées. Si vous souhaitez utiliser [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour publier sur un serveur Web Windows Server qui utilise le protocole HTTP avec les Extensions serveur FrontPage, vous devez installer tout d’abord les Extensions serveur FrontPage. Vous pouvez effectuer l’installation à l’aide de l’outil d’administration gérer votre serveur dans Windows Server.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server : Types de contenu verrouillée  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server Types de contenu verrouillée  
  IIS sur [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] verrouille tous les types de fichiers à l’exception de certains types de contenu connus (par exemple, *.htm*, *.html*, *.txt*, et ainsi de suite). Pour activer le déploiement de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications à l’aide de ce serveur, vous devez modifier les paramètres IIS pour autoriser le téléchargement des fichiers de type *.application*, *.manifest*et tous les autres types de fichier personnalisé utilisé par votre application.  
 
  Si vous déployez à l’aide d’un serveur IIS, exécutez *inetmgr.exe* et ajouter de nouveaux Types de fichier pour la page Web par défaut :  
@@ -136,6 +134,6 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
  Pour obtenir des instructions détaillées pour IIS, consultez [comment spécifier les types de documents supplémentaires pour la compression HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).  
 
 ## <a name="see-also"></a>Voir aussi  
- [Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
- [Choisissez une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
+ [Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
+ [Choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)

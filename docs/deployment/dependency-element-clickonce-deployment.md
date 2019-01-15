@@ -1,8 +1,6 @@
 ---
 title: '&lt;dépendance&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e210b0787c3325a009bc54505812f22c44da84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834163"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; , élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste d’application.  
@@ -83,11 +81,11 @@ Identifie la version de l’application à installer et l’emplacement du manif
 
 | Attribut | Description |
 |------------------| - |
-| `preRequisite` | Facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter. |
-| `visible` | Facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage des applications et l’activation. |
+| `preRequisite` | Optionnel. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter. |
+| `visible` | Optionnel. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage des applications et l’activation. |
 | `dependencyType` | Obligatoire. La relation entre cette dépendance et l’application. Les valeurs valides sont les suivantes :<br /><br /> -   `install`. Composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Composant est requis par l’application actuelle. |
-| `codebase` | Facultatif. Le chemin d’accès complet au manifeste d’application. |
-| `size` | Facultatif. La taille du manifeste d’application, en octets. |
+| `codebase` | Optionnel. Le chemin d’accès complet au manifeste d’application. |
+| `size` | Optionnel. La taille du manifeste d’application, en octets. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` . Le contenu de `assemblyIdentity` doit être identique à celui décrit dans la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Le tableau suivant présente les attributs de la `assemblyIdentity` élément.  
@@ -98,8 +96,8 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`Version`|Obligatoire. Spécifie le numéro de version de l’application, dans le format suivant : `major.minor.build.revision`|  
 |`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour se connecter doit être de 2 048 bits ou supérieur.|  
 |`processorArchitecture`|Obligatoire. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour 32 bits Windows et `IA64` pour Windows de 64 bits.|  
-|`Language`|Facultatif. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|  
-|`type`|Facultatif. Pour assurer la compatibilité avec Windows côte à côte vers l’arrière, installez technologie. La seule valeur autorisée est `win32`.|  
+|`Language`|Optionnel. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|  
+|`type`|Optionnel. Pour assurer la compatibilité avec Windows côte à côte vers l’arrière, installez technologie. La seule valeur autorisée est `win32`.|  
 
 ## <a name="hash"></a>hash  
  Le `hash` élément est un enfant facultatif de la `file` élément. L’élément `hash` ne comporte pas d’attributs.  

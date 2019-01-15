@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
+title: 'Procédure : créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -7,17 +7,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b66559061f0d66699a7505c71541b237814812c4
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b011ccd782a270eb770a77683db62dadbb66d223
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844299"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Guide pratique pour créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procédure : créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
 
 Les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mappées à des tables de base de données et à des vues sont appelées *classes d’entité*. La classe d'entité mappe à un enregistrement, alors que les propriétés individuelles d'une classe d'entité mappent aux colonnes individuelles qui composent un enregistrement. Créer des classes d’entité qui sont basées sur les tables de base de données ou des vues en faisant glisser des tables ou des vues de **Explorateur de serveurs** ou **Database Explorer** sur la [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Le **Concepteur O/R** génère les classes et applique les spécifiques [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] attributs pour activer [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] fonctionnalité (la communication de données et la modification des fonctionnalités de la <xref:System.Data.Linq.DataContext>). Pour plus d’informations sur [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] des classes, consultez [le modèle LINQ to SQL objet](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 
@@ -28,7 +27,7 @@ Les classes [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] mapp
 
 En faisant glisser des tables ou vues à partir de **Explorateur de serveurs** ou **Database Explorer** sur le **Concepteur O/R** crée des classes d’entité en plus de la <xref:System.Data.Linq.DataContext> méthodes qui sont utilisées pour effectuer des mises à jour.
 
-Par défaut, le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crée la logique pour enregistrer dans la base de données les modifications apportées à une classe d'entité qui peut être mise à jour. Cette logique est basée sur le schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne voulez pas ce comportement, vous pouvez configurer une classe d’entité pour utiliser des procédures stockées afin d’effectuer les insertions, les mises à jour et les suppressions, au lieu d’utiliser le comportement au moment de l’exécution par défaut de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Pour plus d’informations, consultez [Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Par défaut, le runtime de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crée la logique pour enregistrer dans la base de données les modifications apportées à une classe d'entité qui peut être mise à jour. Cette logique est basée sur le schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne voulez pas ce comportement, vous pouvez configurer une classe d’entité pour utiliser des procédures stockées afin d’effectuer les insertions, les mises à jour et les suppressions, au lieu d’utiliser le comportement au moment de l’exécution par défaut de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Pour plus d'informations, voir [Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -66,9 +65,9 @@ Après avoir créé des classes d’entité à l’aide de la **Concepteur O/R**
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procédure pas à pas : Création de LINQ to SQL classes (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Modèle objet LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
-- [Procédure pas à pas : personnalisation du comportement d’insertion, de mise à jour et de suppression de classes d’entité](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
+- [Procédure pas à pas : Personnaliser l’insertion, mettre à jour et supprimer le comportement de classes d’entités](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [Guide pratique pour créer une association (relation) entre des classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

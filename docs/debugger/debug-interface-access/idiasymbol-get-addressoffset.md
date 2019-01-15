@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_addressOffset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dba9f8b40bd3246dd07ec2fae76ad6aa8b9c604
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 78f801faae0a32bd928f6adb8062acf18bdf1332
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875191"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 Récupère la partie décalage d’un emplacement de l’adresse. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsStatic`.  
@@ -27,7 +25,7 @@ Récupère la partie décalage d’un emplacement de l’adresse. Quand utiliser
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,16 +45,16 @@ HRESULT get_addressOffset (
   
  Pour obtenir la partie de la section d’une adresse, appelez le [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)   
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)   
  [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
  [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

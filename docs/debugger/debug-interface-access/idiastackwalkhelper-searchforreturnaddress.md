@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::searchForReturnAddress | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a93ea1ae986941ef81dd50026996f4e0d9f56eae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: acffd0f1acb073d8946af9fbb8ab25fc2336f6de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851389"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
 Recherche dans le frame de pile spécifié pour l’adresse de retour de fonction le plus proche.  
@@ -27,7 +25,7 @@ Recherche dans le frame de pile spécifié pour l’adresse de retour de fonctio
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT searchForReturnAddress(   
+HRESULT searchForReturnAddress(   
    IDiaFrameData*  frame,  
    ULONGLONG*      returnAddress  
 );  

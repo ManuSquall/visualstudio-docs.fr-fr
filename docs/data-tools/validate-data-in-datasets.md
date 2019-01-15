@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936189"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 Validation des données est le processus consistant à confirmer que les valeurs entrées dans des objets de données sont conformes aux contraintes de schéma d’un jeu de données. Le processus de validation vérifie également que ces valeurs sont les suivantes les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour la base de données sous-jacente. Cela réduit les erreurs, ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.
@@ -40,9 +39,9 @@ Le meilleur endroit pour ajouter une validation à votre application est dans un
 ## <a name="validate-data"></a>Valider des données
  Validation au sein d’un jeu de données s’effectue comme suit :
 
--   En créant votre propre validation spécifique à l’application qui peut vérifier les valeurs dans une colonne de données lors de la modification. Pour plus d’informations, consultez [Comment : valider des données lors de la modification de la colonne](validate-data-in-datasets.md).
+-   En créant votre propre validation spécifique à l’application qui peut vérifier les valeurs dans une colonne de données lors de la modification. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la colonne](validate-data-in-datasets.md).
 
--   En créant votre propre validation spécifique à l’application peut vérifier les données aux valeurs un ensemble de données lors de la ligne change. Pour plus d’informations, consultez [Comment : valider des données lors de la modification de la ligne](validate-data-in-datasets.md).
+-   En créant votre propre validation spécifique à l’application peut vérifier les données aux valeurs un ensemble de données lors de la ligne change. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](validate-data-in-datasets.md).
 
 -   En créant des clés, des contraintes uniques, et ainsi de suite dans le cadre de la définition de schéma du jeu de données.
 
@@ -66,7 +65,7 @@ Si votre application utilise un dataset typé, vous pouvez créer des gestionnai
 
 ## <a name="data-update-events"></a>Événements de mise à jour de données
 
-|Événement|Description|
+|événement|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|La valeur dans une colonne est en cours de modification. L’événement passe la ligne et colonne, ainsi que la nouvelle valeur proposée.|
 |<xref:System.Data.DataTable.ColumnChanged>|La valeur dans une colonne a été modifiée. L’événement passe la ligne et colonne, ainsi que la valeur proposée.|
@@ -90,7 +89,7 @@ Vous pouvez valider des données lorsque la valeur dans une colonne de données 
 
 -   Refuser la valeur proposée en définissant l’erreur de colonne (<xref:System.Data.DataRow.SetColumnError%2A>) à partir de gestionnaire d’événements de modification de colonne.
 
--   Vous pouvez également utiliser un <xref:System.Windows.Forms.ErrorProvider> contrôle pour afficher un message d’erreur à l’utilisateur. Pour plus d’informations, consultez [du composant ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
+-   Vous pouvez également utiliser un <xref:System.Windows.Forms.ErrorProvider> contrôle pour afficher un message d’erreur à l’utilisateur. Pour plus d’informations, consultez [ErrorProvider, composant](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
 La validation peut également être effectuée pendant la <xref:System.Data.DataTable.RowChanging> événement.
 
@@ -99,7 +98,7 @@ Vous pouvez écrire du code pour vérifier que chaque colonne que vous voulez va
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Pour valider des données lorsqu’une ligne change (Visual Basic)
 
-1.  Ouvrez votre jeu de données dans le **Concepteur de Dataset**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée automatiquement le <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements de la <xref:System.Data.DataTable> dans le fichier de classe partielle du jeu de données.
 
@@ -108,9 +107,9 @@ Vous pouvez écrire du code pour vérifier que chaque colonne que vous voulez va
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne change (c#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne est modifiée (C#)
 
-1.  Ouvrez votre jeu de données dans le **Concepteur de Dataset**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée un fichier de classe partielle pour le <xref:System.Data.DataTable>.
 
@@ -212,5 +211,5 @@ En passant le <xref:System.Data.DataRowVersion> valeur, ainsi que l’index de c
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Comment : valider des données dans le contrôle Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Comment : afficher des icônes d’erreur pour la validation de formulaire avec le composant Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Guide pratique pour Valider les données dans le contrôle Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Guide pratique pour Afficher des icônes d’erreur pour la validation de formulaire avec le composant Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

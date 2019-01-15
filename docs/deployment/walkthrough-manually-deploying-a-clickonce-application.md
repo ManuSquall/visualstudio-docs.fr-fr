@@ -1,8 +1,6 @@
 ---
 title: 'Procédure pas à pas : Déploiement manuel d’une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923268"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce
 Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, ou vous devez utiliser les fonctionnalités de déploiement avancées comme le déploiement d’applications approuvées, vous devez utiliser le *Mage.exe* outil de ligne de commande pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes. Cette procédure pas à pas décrit comment créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de la version de ligne de commande (*Mage.exe*) ou la version graphique (*MageUI.exe*) de la génération de manifeste et Outil d’édition.  
@@ -45,11 +43,11 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
   
 - Déterminez comment le déploiement sera distribué.  
   
-   Les options de distribution incluent : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+   Les options de distribution sont les suivantes : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
 - Déterminer si l’application requiert un niveau élevé de confiance.  
   
-   Si votre application exige une confiance totale, par exemple, un accès complet au système de l’utilisateur, vous pouvez utiliser la `-TrustLevel` option de *Mage.exe* définir cette. Si vous souhaitez définir une autorisation personnalisée pour votre application, vous pouvez copier la section autorisation Internet ou intranet à partir d’un autre manifeste, modifiez-le selon vos besoins et ajoutez-le au manifeste d’application en utilisant un éditeur de texte ou  *MageUI.exe*. Pour plus d’informations, consultez [vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md).  
+   Si votre application exige une confiance totale, par exemple, un accès complet au système de l’utilisateur, vous pouvez utiliser la `-TrustLevel` option de *Mage.exe* définir cette. Si vous souhaitez définir une autorisation personnalisée pour votre application, vous pouvez copier la section autorisation Internet ou intranet à partir d’un autre manifeste, modifiez-le selon vos besoins et ajoutez-le au manifeste d’application en utilisant un éditeur de texte ou  *MageUI.exe*. Pour plus d’informations, consultez [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md).  
   
 - Obtenez un certificat Authenticode.  
   
@@ -62,7 +60,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
   
    Vous devez déterminer si votre application contient un manifeste avec des informations de contrôle de compte utilisateur (UAC), comme un `<dependentAssembly>` élément. Pour examiner un manifeste d’application, vous pouvez utiliser Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilitaire.  
   
-   Si votre application contient un manifeste avec des détails de l’UAC, vous devez régénérer sans les informations de compte d’utilisateur. Pour un projet c# dans Visual Studio, ouvrez les propriétés du projet et sélectionnez l’onglet Application. Dans le **manifeste** liste déroulante, sélectionnez **créer l’application sans manifeste**. Pour un projet Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l’onglet Application, puis cliquez sur **afficher les paramètres UAC**. Dans le fichier manifeste ouvert, supprimez tous les éléments dans le même `<asmv1:assembly>` élément.  
+   Si votre application contient un manifeste avec des détails de l’UAC, vous devez régénérer sans les informations de compte d’utilisateur. Pour un C# de projet dans Visual Studio, ouvrez les propriétés du projet et sélectionnez l’onglet Application. Dans le **manifeste** liste déroulante, sélectionnez **créer l’application sans manifeste**. Pour un projet Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l’onglet Application, puis cliquez sur **afficher les paramètres UAC**. Dans le fichier manifeste ouvert, supprimez tous les éléments dans le même `<asmv1:assembly>` élément.  
   
 - Déterminer si l’application requiert les composants requis sur l’ordinateur client.  
   

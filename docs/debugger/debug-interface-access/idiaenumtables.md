@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumTables | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4018b347b3fa6989a2dbd2116ac2c234ebfb70f8
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 0e6dbfc2a61be36dbe64d8198dc56e695d774602
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951181"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 Énumère les différents tableaux contenus dans la source de données.  
@@ -27,7 +25,7 @@ ms.locfileid: "37058085"
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaEnumTables : IUnknown  
+IDiaEnumTables : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -63,13 +61,13 @@ void ShowTableNames(IDiaSession *pSession)
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

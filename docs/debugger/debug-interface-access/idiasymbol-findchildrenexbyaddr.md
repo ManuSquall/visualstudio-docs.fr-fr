@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7398f3afdf8a6895d0feaec35ca33b95e9054060
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 900699fc543da7eba25624766ac6c8b0d5cf88bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875097"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Récupère les enfants du symbole sont valides à une adresse spécifiée.  
@@ -27,7 +25,7 @@ Récupère les enfants du symbole sont valides à une adresse spécifiée.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT findChildrenExByAddr (   
+HRESULT findChildrenExByAddr (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -58,8 +56,8 @@ HRESULT findChildrenExByAddr (
 ## <a name="remarks"></a>Notes  
  Les symboles locaux qui sont retournées incluent des informations de plage dynamique.  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
@@ -67,7 +65,7 @@ HRESULT findChildrenExByAddr (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md)

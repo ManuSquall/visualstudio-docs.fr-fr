@@ -1,8 +1,6 @@
 ---
-title: IDiaStackFrame | Documents Microsoft
-ms.custom: ''
+title: IDiaStackFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ad1dc5417055c6a17288ee67031d0473062a66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893482"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Expose les propriétés d’un frame de pile.  
@@ -31,14 +29,14 @@ IDiaStackFrame : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Les méthodes prises en charge par cette interface sont les suivantes :  
+ Les méthodes suivantes sont prises en charge par cette interface :  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Récupère un indicateur qui signale que le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est déconseillée.|  
-|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Récupère la base de l’adresse de l’image.|  
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Récupère un indicateur qui signale que des exceptions C++ est en vigueur.|  
-|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Récupère un indicateur qui signale que le bloc contient le point d’entrée d’une fonction.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Récupère un indicateur indiquant que le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est dépréciée.|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Récupère la base de l’adresse du frame.|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Récupère un indicateur spécifiant que Gestion des exceptions C++ est en vigueur.|  
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Récupère un indicateur qui spécifie que le bloc contient le point d’entrée d’une fonction.|  
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Récupère le nombre d’octets de l’objet d’un push sur la pile de variables locales.|  
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Récupère le nombre d’octets de l’objet d’un push sur la pile de paramètres.|  
 |[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Récupère le nombre d’octets de code de prologue dans le bloc|  
@@ -49,13 +47,13 @@ IDiaStackFrame : IUnknown
 |[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Récupère la valeur d’un registre spécifié.|  
 |[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Récupère l’adresse de retour de l’image.|  
 |[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Récupère la taille de l’image en octets.|  
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Récupère un indicateur qui indique que la gestion des exceptions de système est en vigueur.|  
-|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Récupère le type de frame.|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Récupère un indicateur indiquant que la gestion des exceptions de système est en vigueur.|  
+|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Récupère le type de trame.|  
   
 ## <a name="remarks"></a>Notes  
  Un frame de pile est une abstraction d’un appel de fonction pendant son exécution.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Obtenez cette interface en appelant le [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) (méthode). Consultez le [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) interface pour obtenir un exemple sur l’obtention du `IDiaStackFrame` interface.  
   
 ## <a name="example"></a>Exemple  
@@ -103,14 +101,14 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

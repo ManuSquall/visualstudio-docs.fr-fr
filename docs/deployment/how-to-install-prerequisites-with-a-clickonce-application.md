@@ -1,8 +1,6 @@
 ---
-title: 'Comment : installer les composants requis avec une Application ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Installer les composants requis avec une Application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e363b021f8dfb82aa641a1baac4d2f33e0bd3d2e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907850"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Comment : installer les composants requis avec une application ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procédure : Installer des prérequis avec une application ClickOnce
 Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications requièrent que la version correcte du .NET Framework est installée sur un ordinateur avant de pouvoir exécuter ; de nombreuses applications ont également autres conditions préalables requises. Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, vous pouvez choisir un ensemble de composants requis à empaqueter avec votre application. Au moment de l’installation, une vérification sera effectuée pour chaque composant requis déterminer s’il existe déjà ; Si pas il sera installé avant d’installer le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
   
  Au lieu d’empaquetage et publication des conditions préalables, vous pouvez également spécifier un emplacement de téléchargement pour les composants. Par exemple, au lieu d’inclure les composants requis avec chaque application que vous publiez, vous pouvez utiliser un partage de fichiers centralisé ou un emplacement Web qui contient les programmes d’installation pour tous vos composants requis, au moment de l’installation, les composants seront téléchargés et installer à partir de cet emplacement.  
   
 > [!IMPORTANT]
->  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Pour plus d’informations, consultez [Comment : inclure les composants requis avec une Application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Pour plus d'informations, voir [Procédure : Inclure des prérequis dans une application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Conditions préalables sont gérés dans le **prérequis** boîte de dialogue, accessible à partir de la **publier** volet de la **Concepteur de projets**.  
   
@@ -71,4 +69,4 @@ Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
   
 ## <a name="see-also"></a>Voir aussi  
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

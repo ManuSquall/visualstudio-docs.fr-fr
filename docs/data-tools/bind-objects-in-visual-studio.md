@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b29e244213876b8b6a093d8fca2af02ca8319909
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955395"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Lier des objets en tant que sources de données dans Visual Studio
 

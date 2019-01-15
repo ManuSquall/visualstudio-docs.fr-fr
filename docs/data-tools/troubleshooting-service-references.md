@@ -95,13 +95,13 @@ Quand il tente d’afficher une représentation XML des données dans un [!INCLU
 
 Pour corriger cette erreur, désactivez les flux RSS :
 
-1.  Dans Internet Explorer, accédez au menu Outils **et cliquez sur Options Internet**.
+1.  Dans Internet Explorer, accédez au menu **Outils** et cliquez sur **Options Internet**.
 
 2.  Sur le **contenu** sous l’onglet le **flux** , cliquez sur **paramètres**.
 
 3.  Dans le **paramètres de flux** boîte de dialogue, désactivez le **activer le mode lecture du flux** case à cocher, puis cliquez sur **OK**.
 
-4.  Cliquez sur OK pour fermer la boîte de dialogue Options Internet.
+4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Options Internet**.
 
 ## <a name="see-also"></a>Voir aussi
 

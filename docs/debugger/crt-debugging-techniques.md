@@ -1,8 +1,6 @@
 ---
-title: Techniques de débogage CRT | Documents Microsoft
-ms.custom: ''
+title: Techniques de débogage CRT | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889109"
 ---
 # <a name="crt-debugging-techniques"></a>Techniques de débogage CRT
 Si vous déboguez un programme qui utilise la bibliothèque Runtime C, ces techniques de débogage peuvent se révéler utiles.  
@@ -36,7 +34,7 @@ Si vous déboguez un programme qui utilise la bibliothèque Runtime C, ces tech
  Décrit la prise en charge du débogage fournie par la bibliothèque Runtime C et fournit des instructions pour accéder aux outils.  
   
  [Macros pour la création de rapports](../debugger/macros-for-reporting.md)  
- Fournit des informations sur la **_RPTn** et **_RPTFn** macros (définis dans CRTDBG. (H), qui remplace l’utilisation de `printf` instructions pour le débogage.  
+ Fournit des informations sur les macros **_RPTn** et **_RPTFn**, définies dans CRTDBG.H, qui remplacent les instructions `printf` pour le débogage.  
   
  [Versions Debug des fonctions d’allocation du tas](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Aborde les versions Debug spéciales des fonctions d'allocation de tas, y compris la façon dont le CRT mappe les appels, les avantages liés à un appel explicite, la façon d'éviter la conversion, le suivi des différents types d'allocations dans les blocs clients et les résultats si vous ne définissez pas _DEBUG.  

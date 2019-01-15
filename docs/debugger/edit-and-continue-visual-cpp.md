@@ -1,8 +1,6 @@
 ---
 title: Modifier & Continuer (Visual C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 05/31/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,21 +17,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922992"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C++)
 Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Consultez [modifications de Code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) pour plus d’informations sur les limitations de modifier & Continuer.
   
 Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3, consultez [C++ Modifier & Continuer dans Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).  
   
- Le [/Zo (améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging) option du compilateur qui a été introduite dans Visual Studio 2013 Update 3 ajoute des informations supplémentaires aux fichiers de symboles (.pdb) pour les fichiers binaires compilés sans le [/Od (désactiver (débogage)) ](https://msdn.microsoft.com/library/aafb762y.aspx) option.  
+ L’option de compilateur [/Zo (Améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging) qui a été introduite dans Visual Studio 2013 Update 3 ajoute des informations aux fichiers de symboles (.pdb) pour les fichiers binaires compilés sans l’option [/Od (Désactiver (Débogage))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/ Zo** désactive Modifier & Continuer. Consultez [Comment : déboguer le Code optimisé](../debugger/how-to-debug-optimized-code.md).  
+ **/ Zo** désactive Modifier & Continuer. Voir [Guide pratique pour déboguer du code optimisé](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Activer ou désactiver Modifier & Continuer  
  Vous pouvez désactiver l’appel automatique de Modifier & Continuer si vous apportez des modifications au code que vous ne souhaitez pas appliquer tout de suite, pendant la session de débogage en cours. Vous pouvez également réactiver la fonctionnalité automatique Modifier & Continuer.
@@ -45,18 +43,18 @@ Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3
 
 2. Dans le menu **Outils** , choisissez **Options**.
   
-3. Dans le **Options** boîte de dialogue, sélectionnez **débogage > Général**.
+3. Dans la boîte de dialogue **Options** , sélectionnez **Débogage > Général**.
 
 4. Pour activer, sélectionnez **Activer Modifier & Continuer**. Pour désactiver, désactivez la case à cocher.
   
 5. Dans le groupe **Modifier &amp; Continuer** , cochez ou décochez la case **Activer Modifier et Continuer natif** .  
   
-   La modification de ce paramètre s’applique à tous vos projets actuels. Après avoir modifié ce paramètre, il n'est pas nécessaire de régénérer l'application. Si vous générez votre application à partir de la ligne de commande ou d’un makefile, mais vous déboguez dans l’environnement Visual Studio, vous pouvez encore utiliser Modifier & Continuer si vous définissez la **/Zi** option.  
+   La modification de ce paramètre s’applique à tous vos projets actuels. Après avoir modifié ce paramètre, il n'est pas nécessaire de régénérer l'application. Si vous générez l’application à partir de la ligne de commande ou d’un makefile, mais que vous effectuez le débogage dans l’environnement Visual Studio, vous pouvez continuer à utiliser Modifier & Continuer à condition de définir l’option **/ZI**.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Comment appliquer des modifications du code explicitement  
  Dans Visual C++, Modifier & Continuer peut appliquer des modifications de code de deux manières. Les modifications du code peuvent être implicitement appliquées, lorsque vous choisissez une commande d'exécution, ou explicitement, à l'aide de la commande **Appliquer les modifications du code** .  
   
- Lorsque vous appliquez des modifications du code explicitement, votre programme reste en mode arrêt - aucune exécution se produit.  
+ Quand vous appliquez des modifications du code de manière explicite, votre programme reste en mode arrêt - aucune exécution ne se produit.  
   
 -   Pour appliquer les modifications du code explicitement, dans le menu **Déboguer** , choisissez **Appliquer les modifications du code**.  
   

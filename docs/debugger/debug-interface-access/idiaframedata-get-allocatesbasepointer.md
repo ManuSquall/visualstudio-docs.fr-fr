@@ -1,8 +1,6 @@
 ---
 title: IDiaFrameData::get_allocatesBasePointer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e981a29352c5adf192a0eb3cdccd59a088e29db6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e3ce39d0fb64cdd89139bb4506c9b95719a3f172
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951316"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
-Récupère un indicateur qui indique si le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est déconseillée.  
+Récupère un indicateur qui indique si le pointeur de base est alloué pour le code dans cette plage d’adresses. Cette méthode est dépréciée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_allocatesBasePointer (   
+HRESULT get_allocatesBasePointer (   
    BOOL* pRetVal  
 );  
 ```  

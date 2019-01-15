@@ -1,8 +1,6 @@
 ---
 title: Déboguer le code HTML et CSS dans les applications UWP | Microsoft Docs
-ms.custom: ''
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892713"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer le code HTML et CSS dans les applications UWP dans Visual Studio
   
@@ -31,7 +29,7 @@ ms.locfileid: "49916684"
   
  Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.
   
- Pour plus d’informations sur les fonctionnalités, telles que l’utilisation de la fenêtre de JavaScript Console et en définissant des points d’arrêt, le débogage de JavaScript, consultez [Guide de démarrage rapide : déboguer le JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Pour plus d’informations sur les fonctionnalités, telles que l’utilisation de la fenêtre de JavaScript Console et en définissant des points d’arrêt, le débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
   
 ##  <a name="InspectingDOM"></a> Examen du modèle DOM en direct  
  L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.  
@@ -47,7 +45,7 @@ ms.locfileid: "49916684"
   
 - Inspecter la façon dont les styles CSS ont été appliqués aux éléments de page et effectuer un suivi des règles qui ont été appliquées.  
   
-  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications UWP prennent également en charge la **événements** et **modifications** onglets. Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
+  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Voici les onglets : **Styles**, **calculée**, **disposition**. Les applications UWP prennent également en charge la **événements** et **modifications** onglets. Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
   
 > [!TIP]
 >  Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
@@ -159,7 +157,7 @@ ms.locfileid: "49916684"
    > [!TIP]
    >  Appuyez sur Alt+Tab, ou F12, pour basculer entre Visual Studio et l’application en cours d’exécution.  
   
-10. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche fléchée droite permet de vous permet d’afficher les enfants d’un élément.)  
+10. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche Flèche droite vous permet d’afficher les enfants d’un élément.)  
   
      ![Explorateur DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
@@ -172,7 +170,7 @@ ms.locfileid: "49916684"
   
      Cet onglet affiche la valeur calculée ou finale de chaque propriété de l’élément DOM sélectionné.  
   
-12. Ouvrez la règle CSS de hauteur. Notez qu’il existe un style intraligne défini sur 100px, qui est incohérent avec la valeur de hauteur de 100 % définie pour le `#fView` sélecteur CSS. Le texte barré sur sélecteur `#fView` indique que le style intraligne est prioritaire sur ce style.  
+12. Ouvrez la règle CSS de hauteur. Notez qu’il existe un style intraligne défini sur 100px, qui est incohérent avec la valeur de hauteur de 100 % définie pour le sélecteur CSS `#fView`. Le texte barré sur sélecteur `#fView` indique que le style intraligne est prioritaire sur ce style.  
   
      L’illustration suivante montre l’onglet **Calculé** .  
   
@@ -199,7 +197,7 @@ ms.locfileid: "49916684"
   
      Les choses se sont améliorées. Toutefois, il reste un problème de plus à corriger : les marges sont trop grandes.  
   
-19. Pour examiner, basculez vers Visual Studio et choisissez le **disposition** onglet pour examiner le modèle de l’élément boîte.  
+19. Pour en comprendre la raison, basculez vers Visual Studio et sélectionnez l’onglet **Disposition** pour examiner le modèle de boîte de l’élément.  
   
      Dans le **disposition** onglet, vous verrez les éléments suivants :  
   
@@ -225,7 +223,7 @@ ms.locfileid: "49916684"
   
 2.  Ouvrez le fichier default.html et modifiez votre code source en définissant la hauteur et la largeur de l’élément DIV `"fView"` sur la valeur 100 %.  
   
-3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![bouton d’application Windows Actualiser](../debugger/media/js_refresh.png "JS_Refresh").  
+3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton présente l’aspect suivant : . ![Windows application bouton Actualiser](../debugger/media/js_refresh.png "JS_Refresh").  
   
      Les pages d’application sont rechargées et le simulateur ou l’émulateur Windows Phone s’affiche au premier plan.  
   
@@ -256,10 +254,10 @@ ms.locfileid: "49916684"
 >  La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Déboguer l’exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

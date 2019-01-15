@@ -1,8 +1,6 @@
 ---
-title: 'Erreur : Le débogage n’est pas&#39;t Possible car un débogueur du noyau est activé sur le système | Microsoft Docs'
-ms.custom: ''
+title: 'Erreur : Débogage n&#39;t Possible car un débogueur du noyau est activé sur le système | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d8a0e615f1283a1aaf742a70961c26c3b6b35037
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832829"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : Le débogage n’est pas&#39;t Possible car un débogueur du noyau est activé sur le système
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : Débogage n&#39;t Possible car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :  
   
 ```cmd

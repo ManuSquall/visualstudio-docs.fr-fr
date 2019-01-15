@@ -1,8 +1,6 @@
 ---
-title: Boîte de dialogue de fenêtre Rechercher | Documents Microsoft
-ms.custom: ''
+title: Boîte de dialogue de fenêtre Rechercher | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, finding windows
@@ -13,23 +11,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0220a35aa5b18ad8c4395e68c0848ea04edd0a8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 02f88994bb5752a16e690522d35259b0853e997b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879080"
 ---
 # <a name="find-window-dialog-box"></a>Boîte de dialogue Rechercher une fenêtre
 Utilisez cette boîte de dialogue pour sélectionner une fenêtre et afficher ses propriétés ou les messages. Pour afficher cette boîte de dialogue, choisissez **rechercher une fenêtre** à partir de la **Spy** menu.  
   
  Les paramètres suivants sont disponibles :  
   
- **Outil recherche**  
+ **Outil Recherche**  
  L’outil de glisser -déplacer permet de sélectionner une fenêtre.  
   
  **Masquer Spy ++**  
- Supprime la fenêtre principale de Spy ++ et laisse le **rechercher une fenêtre** boîte de dialogue visible au-dessus de vos autres applications.  
+ Supprime la fenêtre principale de Spy ++ et laisse le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications.  
   
  **Handle**  
  ID unique de la fenêtre à rechercher.  
@@ -60,13 +58,13 @@ Utilisez cette boîte de dialogue pour sélectionner une fenêtre et afficher se
  Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
  [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
+ Présente l’outil Spy ++ et explique comment il peut être utilisé.  
   
  [Boîte de dialogue Recherche d’une fenêtre](../debugger/window-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’une fenêtre spécifique dans la vue fenêtres.  
+ Utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue de Windows.  
   
  [Boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue fenêtres.  
+ Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue de Windows.  
   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
  Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

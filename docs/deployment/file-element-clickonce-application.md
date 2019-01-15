@@ -1,8 +1,6 @@
 ---
 title: '&lt;fichier&gt; , élément (Application ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b516a8e63d29f91b3404e8e62d910ca18ca69c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828301"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;fichier&gt; , élément (application ClickOnce)
 Identifie tous les fichiers de l’autre téléchargé et utilisé par l’application.  
@@ -93,8 +91,8 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |`name`|Obligatoire. Identifie le nom du fichier.|  
 |`size`|Obligatoire. Spécifie la taille, en octets, du fichier.|  
 |`group`|Facultatif, si le `optional` attribut n’est pas spécifié ou la valeur `false`; obligatoire si `optional` est `true`. Le nom du groupe auquel appartient ce fichier. Le nom peut être toute valeur de chaîne Unicode choisi par le développeur et est utilisé pour télécharger des fichiers à la demande avec la <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
-|`optional`|Facultatif. Spécifie si ce fichier doit télécharger lorsque l’application est d’abord exécutée, ou si le fichier doit résider uniquement sur le serveur jusqu'à ce que l’application le demande à la demande. Si `false` ou non définie, le fichier est téléchargé lors de l’application est tout d’abord exécuter ou installée. Si `true`, un `group` doit être spécifié pour le manifeste d’application soit valide. `optional` ne peut pas être true si `writeableType` est spécifié avec la valeur `applicationData`.|  
-|`writeableType`|Facultatif. Spécifie que ce fichier est un fichier de données. Actuellement la seule valeur valide est `applicationData`.|  
+|`optional`|Optionnel. Spécifie si ce fichier doit télécharger lorsque l’application est d’abord exécutée, ou si le fichier doit résider uniquement sur le serveur jusqu'à ce que l’application le demande à la demande. Si `false` ou non définie, le fichier est téléchargé lors de l’application est tout d’abord exécuter ou installée. Si `true`, un `group` doit être spécifié pour le manifeste d’application soit valide. `optional` ne peut pas être true si `writeableType` est spécifié avec la valeur `applicationData`.|  
+|`writeableType`|Optionnel. Spécifie que ce fichier est un fichier de données. Actuellement, la seule valeur valide est `applicationData`.|  
 
 ## <a name="typelib"></a>bibliothèque de types  
  Le `typelib` élément est un enfant facultatif de l’élément de fichier. L’élément décrit la bibliothèque de types qui appartient au composant COM. L’élément a les attributs suivants.  
@@ -104,8 +102,8 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |`tlbid`|Obligatoire. Le GUID affecté à la bibliothèque de types.|  
 |`version`|Obligatoire. Le numéro de version de la bibliothèque de types.|  
 |`helpdir`|Obligatoire. Le répertoire qui contient les fichiers d’aide pour le composant. Peut être de longueur nulle.|  
-|`resourceid`|Facultatif. Représentation sous forme de chaîne hexadécimale de l’identificateur de paramètres régionaux (LCID). Il est d’un à quatre des chiffres hexadécimaux sans préfixe 0 x et sans zéros non significatifs. Le LCID peut avoir un identificateur de sous-langue neutre.|  
-|`flags`|Facultatif. Représentation sous forme de chaîne des indicateurs de bibliothèque de type pour cette bibliothèque de types. Plus précisément, il doit être un des « RESTRICTED », « Contrôle », « HIDDEN » et « HASDISKIMAGE ».|  
+|`resourceid`|Optionnel. Représentation sous forme de chaîne hexadécimale de l’identificateur de paramètres régionaux (LCID). Il est d’un à quatre des chiffres hexadécimaux sans préfixe 0 x et sans zéros non significatifs. Le LCID peut avoir un identificateur de sous-langue neutre.|  
+|`flags`|Optionnel. Représentation sous forme de chaîne des indicateurs de bibliothèque de type pour cette bibliothèque de types. Plus précisément, il doit être un des « RESTRICTED », « Contrôle », « HIDDEN » et « HASDISKIMAGE ».|  
 
 ## <a name="comclass"></a>comClass  
  Le `comClass` élément est un enfant facultatif de la `file` élément, mais il est obligatoire si le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application contient un composant COM qu’elle souhaite déployer à l’aide de COM sans inscription. L’élément a les attributs suivants.  
@@ -113,15 +111,15 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |Attribut|Description|  
 |---------------|-----------------|  
 |`clsid`|Obligatoire. L’ID de classe du composant COM exprimé sous la forme d’un GUID.|  
-|`description`|Facultatif. Nom de la classe.|  
-|`threadingModel`|Facultatif. Le modèle de thread utilisé par les classes COM intra-processus. Si cette propriété est null, aucun modèle de thread n’est utilisé. Le composant est créé sur le thread principal du client et les appels d’autres threads sont marshalés à ce thread. La liste suivante indique les valeurs valides :<br /><br /> `Apartment`, `Free`, `Both`et `Neutral`.|  
-|`tlbid`|Facultatif. GUID de la bibliothèque de types pour ce composant COM.|  
-|`progid`|Facultatif. Identificateur de programmation dépendants de la version associé au composant COM. Le format d’un `ProgID` est `<vendor>.<component>.<version>`.|  
-|`miscStatus`|Facultatif. Les doublons dans l’assembly de manifeste les informations fournies par le `MiscStatus` clé de Registre. Si les valeurs pour le `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, ou `miscStatusThumbnail` attributs sont introuvables, la valeur par défaut correspondante répertoriée dans `miscStatus` est utilisé pour les attributs manquants. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
-|`miscStatusIcon`|Facultatif. Les doublons dans l’assembly de manifeste les informations fournies par DVASPECT_ICON. Il peut fournir une icône d’un objet. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `Miscstatus` les valeurs de clé de Registre.|  
-|`miscStatusContent`|Facultatif. Les doublons dans l’assembly de manifeste les informations fournies par DVASPECT_CONTENT. Il peut fournir un document composé affichable pour un écran ou une imprimante. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
-|`miscStatusDocPrint`|Facultatif. Les doublons dans l’assembly de manifeste les informations fournies par DVASPECT_DOCPRINT. Il peut fournir une représentation d’objet affichable sur l’écran comme si vous a adressé à une imprimante. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
-|`miscStatusThumbnail`|Facultatif. Les doublons dans un assembly de manifeste les informations fournies par DVASPECT_THUMBNAIL. Il peut fournir une miniature d’un objet affichable dans un outil de navigation. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
+|`description`|Optionnel. Nom de la classe.|  
+|`threadingModel`|Optionnel. Le modèle de thread utilisé par les classes COM intra-processus. Si cette propriété est null, aucun modèle de thread n’est utilisé. Le composant est créé sur le thread principal du client et les appels d’autres threads sont marshalés à ce thread. La liste suivante indique les valeurs valides :<br /><br /> `Apartment`, `Free`, `Both`et `Neutral`.|  
+|`tlbid`|Optionnel. GUID de la bibliothèque de types pour ce composant COM.|  
+|`progid`|Optionnel. Identificateur de programmation dépendants de la version associé au composant COM. Le format d’un `ProgID` est `<vendor>.<component>.<version>`.|  
+|`miscStatus`|Optionnel. Les doublons dans l’assembly de manifeste les informations fournies par le `MiscStatus` clé de Registre. Si les valeurs pour le `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, ou `miscStatusThumbnail` attributs sont introuvables, la valeur par défaut correspondante répertoriée dans `miscStatus` est utilisé pour les attributs manquants. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
+|`miscStatusIcon`|Optionnel. Les doublons dans l’assembly de manifeste les informations fournies par DVASPECT_ICON. Il peut fournir une icône d’un objet. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `Miscstatus` les valeurs de clé de Registre.|  
+|`miscStatusContent`|Optionnel. Les doublons dans l’assembly de manifeste les informations fournies par DVASPECT_CONTENT. Il peut fournir un document composé affichable pour un écran ou une imprimante. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
+|`miscStatusDocPrint`|Optionnel. Les doublons dans l’assembly de manifeste les informations fournies par DVASPECT_DOCPRINT. Il peut fournir une représentation d’objet affichable sur l’écran comme si vous a adressé à une imprimante. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
+|`miscStatusThumbnail`|Optionnel. Les doublons dans un assembly de manifeste les informations fournies par DVASPECT_THUMBNAIL. Il peut fournir une miniature d’un objet affichable dans un outil de navigation. La valeur peut être une liste délimitée par des virgules des valeurs d’attribut dans le tableau suivant. Vous pouvez utiliser cet attribut si la classe COM est une classe OCX qui requiert `MiscStatus` les valeurs de clé de Registre.|  
 
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
  Le `comInterfaceExternalProxyStub` élément est un enfant facultatif de la `file` élément, mais peut être nécessaire si le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application contient un composant COM qu’elle souhaite déployer à l’aide de COM sans inscription. L’élément contient les attributs suivants.  
@@ -129,11 +127,11 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |Attribut|Description|  
 |---------------|-----------------|  
 |`iid`|Obligatoire. L’ID d’interface (IID) pris en charge par ce proxy. L’IID doit être entre accolades.|  
-|`baseInterface`|Facultatif. IID de l’interface à partir de laquelle l’interface référencée par `iid` est dérivée.|  
-|`numMethods`|Facultatif. Le nombre de méthodes implémentées par l’interface.|  
-|`name`|Facultatif. Le nom de l’interface tel qu’il apparaîtra dans le code.|  
-|`tlbid`|Facultatif. La bibliothèque de types qui contient la description de l’interface spécifiée par le `iid` attribut.|  
-|`proxyStubClass32`|Facultatif. Mappe un IID à un CLSID dans la DLL de proxy de 32 bits.|  
+|`baseInterface`|Optionnel. IID de l’interface à partir de laquelle l’interface référencée par `iid` est dérivée.|  
+|`numMethods`|Optionnel. Le nombre de méthodes implémentées par l’interface.|  
+|`name`|Optionnel. Le nom de l’interface tel qu’il apparaîtra dans le code.|  
+|`tlbid`|Optionnel. La bibliothèque de types qui contient la description de l’interface spécifiée par le `iid` attribut.|  
+|`proxyStubClass32`|Optionnel. Mappe un IID à un CLSID dans la DLL de proxy de 32 bits.|  
 
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  Le `comInterfaceProxyStub` élément est un enfant facultatif de la `file` élément, mais peut être nécessaire si le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application contient un composant COM qu’elle souhaite déployer à l’aide de COM sans inscription. L’élément contient les attributs suivants.  
@@ -141,19 +139,19 @@ Identifie tous les fichiers de l’autre téléchargé et utilisé par l’appli
 |Attribut|Description|  
 |---------------|-----------------|  
 |`iid`|Obligatoire. L’ID d’interface (IID) pris en charge par ce proxy. L’IID doit être entre accolades.|  
-|`baseInterface`|Facultatif. IID de l’interface à partir de laquelle l’interface référencée par `iid` est dérivée.|  
-|`numMethods`|Facultatif. Le nombre de méthodes implémentées par l’interface.|  
-|`Name`|Facultatif. Le nom de l’interface tel qu’il apparaîtra dans le code.|  
-|`Tlbid`|Facultatif. La bibliothèque de types qui contient la description de l’interface spécifiée par le `iid` attribut.|  
-|`proxyStubClass32`|Facultatif. Mappe un IID à un CLSID dans la DLL de proxy de 32 bits.|  
-|`threadingModel`|Facultatif. Facultatif. Le modèle de thread utilisé par les classes COM intra-processus. Si cette propriété est null, aucun modèle de thread n’est utilisé. Le composant est créé sur le thread principal du client et les appels d’autres threads sont marshalés à ce thread. La liste suivante indique les valeurs valides :<br /><br /> `Apartment`, `Free`, `Both`et `Neutral`.|  
+|`baseInterface`|Optionnel. IID de l’interface à partir de laquelle l’interface référencée par `iid` est dérivée.|  
+|`numMethods`|Optionnel. Le nombre de méthodes implémentées par l’interface.|  
+|`Name`|Optionnel. Le nom de l’interface tel qu’il apparaîtra dans le code.|  
+|`Tlbid`|Optionnel. La bibliothèque de types qui contient la description de l’interface spécifiée par le `iid` attribut.|  
+|`proxyStubClass32`|Optionnel. Mappe un IID à un CLSID dans la DLL de proxy de 32 bits.|  
+|`threadingModel`|Optionnel. Optionnel. Le modèle de thread utilisé par les classes COM intra-processus. Si cette propriété est null, aucun modèle de thread n’est utilisé. Le composant est créé sur le thread principal du client et les appels d’autres threads sont marshalés à ce thread. La liste suivante indique les valeurs valides :<br /><br /> `Apartment`, `Free`, `Both`et `Neutral`.|  
 
 ## <a name="windowclass"></a>windowClass  
  Le `windowClass` élément est un enfant facultatif de la `file` élément, mais peut être nécessaire si le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application contient un composant COM qu’elle souhaite déployer à l’aide de COM sans inscription. L’élément fait référence à une classe de fenêtre définie par le composant COM qui doit avoir une version appliquée. L’élément contient les attributs suivants.  
 
 |Attribut|Description|  
 |---------------|-----------------|  
-|`versioned`|Facultatif. Contrôle si la fenêtre interne nom de la classe utilisé dans l’inscription contient la version de l’assembly qui contient la classe de fenêtre. La valeur de cet attribut peut être `yes` ou `no`. La valeur par défaut est `yes`. La valeur `no` doit être utilisé uniquement si la même classe de fenêtre est définie par un composant côte à côte et un composant non côte-à-côte équivalent et que vous souhaitez les traiter comme la même classe de fenêtre. Notez que les règles habituelles concernant l’inscription de classe de fenêtre s’appliquent : seul le premier composant qui enregistre la classe de fenêtre sera capable de l’enregistrer, car il ne dispose pas d’une version appliquée.|  
+|`versioned`|Optionnel. Contrôle si la fenêtre interne nom de la classe utilisé dans l’inscription contient la version de l’assembly qui contient la classe de fenêtre. La valeur de cet attribut peut être `yes` ou `no`. La valeur par défaut est `yes`. La valeur `no` doit être utilisé uniquement si la même classe de fenêtre est définie par un composant côte à côte et un composant non côte-à-côte équivalent et que vous souhaitez les traiter comme la même classe de fenêtre. Notez que les règles habituelles concernant l’inscription de classe de fenêtre s’appliquent : seul le premier composant qui enregistre la classe de fenêtre sera capable de l’enregistrer, car il ne dispose pas d’une version appliquée.|  
 
 ## <a name="hash"></a>hash  
  Le `hash` élément est un enfant facultatif de la `file` élément. L’élément `hash` ne comporte pas d’attributs.  

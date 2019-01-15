@@ -1,8 +1,6 @@
 ---
-title: 'Comment : spécifier un autre emplacement pour le déploiement des mises à jour | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifiez un autre emplacement pour le déploiement des mises à jour | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,28 +15,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a3db855d06c71551dd6f1bb1d9e6f6ac0d34da72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957444"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Comment : spécifier un autre emplacement pour le déploiement des mises à jour
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procédure : Spécifier un autre emplacement pour les mises à jour du déploiement
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application initialement à partir d’un CD ou un partage de fichiers, mais l’application doit rechercher les mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application peut mettre à jour lui-même à partir du Web après son installation initiale.  
   
 > [!NOTE]
->  Votre application doit être configurée pour installer localement pour utiliser cette fonctionnalité. Pour plus d’informations, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). En outre, si vous installez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à partir du réseau, définissez un autre emplacement causes [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise cet emplacement pour l’installation initiale et toutes les mises à jour ultérieures. Si vous installez votre application localement (par exemple, à partir d’un CD), l’installation initiale est effectuée à l’aide du support d’origine, et toutes les mises à jour ultérieures utilisera l’autre emplacement.  
+>  Votre application doit être configurée pour installer localement pour utiliser cette fonctionnalité. Pour plus d’informations, consultez [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). En outre, si vous installez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à partir du réseau, définissez un autre emplacement causes [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise cet emplacement pour l’installation initiale et toutes les mises à jour ultérieures. Si vous installez votre application localement (par exemple, à partir d’un CD), l’installation initiale est effectuée à l’aide du support d’origine, et toutes les mises à jour ultérieures utilisera l’autre emplacement.  
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Spécifiez un autre emplacement pour les mises à jour à l’aide de MageUI.exe (utilitaire Windows Forms)  
   
 1.  Ouvrez une invite de commande de .NET Framework et tapez :  
   
-     **MageUI.exe**  
+     **mageui.exe**  
   
 2.  Sur le **fichier** menu, choisissez **ouvrir** pour ouvrir le manifeste de déploiement de votre application.  
   
-3.  Sélectionnez le **Options de déploiement** onglet.  
+3.  Sélectionnez l’onglet **Options de déploiement**.  
   
 4.  Dans la zone de texte nommé **Launch Location**, entrez l’URL vers le répertoire qui contient le manifeste de déploiement des mises à jour de l’application.  
   
@@ -55,7 +53,7 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 3. Enregistrez le fichier.  
   
    > [!NOTE]
-   >  Vous devez maintenant signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+   >  Vous devez maintenant signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Sécurité .NET Framework  
  Si vous installez votre application à partir d’un support hors connexion tel qu’un CD, et l’ordinateur est en ligne, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vérifie d’abord l’URL spécifiée par la `<deploymentProvider>` balise dans le manifeste de déploiement pour déterminer si l’emplacement de mise à jour contient une version plus récente de la application. Le cas échéant, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installe l’application directement à partir de là, au lieu d’à partir du répertoire d’installation initiale, et le common language runtime (CLR) détermine le niveau de confiance de votre application à l’aide de niveau `<deploymentProvider>`. Si l’ordinateur est hors connexion, ou `<deploymentProvider>` est inaccessible, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installe à partir du CD et le CLR accorde la confiance que basée sur le point d’installation ; pour une installation CD, cela signifie que votre application reçoit une confiance totale. Toutes les mises à jour ultérieures hériteront de ce niveau de confiance.  
@@ -65,5 +63,5 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

@@ -1,8 +1,6 @@
 ---
-title: Raccourcis (HTML et JavaScript) | Documents Microsoft
-ms.custom: ''
+title: Raccourcis (HTML et JavaScript) clavier | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949467"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Raccourcis clavier (HTML et JavaScript)
   
- Raccourcis clavier dans Visual Studio pour le débogage d’applications UWP en HTML et JavaScript.  
+ Raccourcis clavier dans Visual Studio pour déboguer les applications UWP à l’aide de HTML et JavaScript.  
   
 ## <a name="general-shortcuts"></a>Raccourcis généraux  
- Ces raccourcis fonctionnent pour tous les outils pour applications UWP en HTML et JavaScript.  
+ Ces raccourcis fonctionnent sur tous les outils pour les applications UWP à l’aide de HTML et JavaScript.  
   
 |Action|Raccourci|  
 |------------|--------------|  
@@ -51,12 +49,12 @@ ms.locfileid: "31475494"
 |Action|Raccourci|  
 |------------|--------------|  
 |Sélection d'un élément|Ctrl+B|  
-|Bascule entre l’affichage et le masquage des zones de surlignage de page Web lorsque vous utilisez **sélectionner un élément**|Ctrl+Maj+I|  
-|Valider les modifications apportées à l’aide de **modifier comme HTML**|Ctrl+Entrée|  
-|Ignorer les modifications à l’aide de **modifier comme HTML**|Échap|  
+|Basculer entre l’affichage et le masquage des zones de surlignage des pages web pendant l’utilisation de la commande **Sélectionner un élément**|Ctrl+Maj+I|  
+|Valider les modifications à l’aide de l’option **Modifier comme HTML**|Ctrl+Entrée|  
+|Ignorer les modifications à l’aide de l’option **Modifier comme HTML**|Échap|  
 |Augmenter de 1 la valeur CSS sélectionnée|Flèche haut|  
 |Réduire de 1 la valeur CSS sélectionnée|Flèche bas|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : Déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

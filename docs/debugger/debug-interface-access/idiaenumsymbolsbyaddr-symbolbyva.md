@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSymbolsByAddr::symbolByVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 688d45cce181b7c4ac0b61584a65c7c755b0f2bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2077c00069968c17da047270f6fdf98e66d5350f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868980"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 Positionne l’énumérateur en effectuant une recherche par adresse virtuelle (VA).  
@@ -27,7 +25,7 @@ Positionne l’énumérateur en effectuant une recherche par adresse virtuelle (
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT symbolByVA (   
+HRESULT symbolByVA (   
    DWORD**      virtualAddress,  
    IDiaSymbol** ppsymbol  
 );  

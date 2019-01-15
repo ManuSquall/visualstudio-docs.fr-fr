@@ -1,8 +1,6 @@
 ---
-title: 'Comment : spécifier les fichiers journaux détaillés pour les déploiements ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifier les fichiers journaux détaillés pour les déploiements ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb3214df1cd51baf731f8a16f39b2c5a59933bb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840250"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Comment : spécifier les fichiers journaux détaillés pour les déploiements ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procédure : Spécifier des fichiers journaux détaillés pour les déploiements ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] conserve les fichiers de journaux d’activité pour tous les déploiements. Ces journaux documentent les détails relatifs à l’installation, l’initialisation, la mise à jour et la désinstallation une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Pour davantage de détails qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] écritures à ces fichiers journaux, utilisez l’Éditeur du Registre (*regedit.exe*) pour spécifier le niveau de détail.  
   
 > [!CAUTION]
@@ -40,7 +38,7 @@ ms.locfileid: "39078740"
   
 3.  Si nécessaire, créez une nouvelle valeur de chaîne nommée `LogVerbosityLevel`.  
   
-4.  Définir le `LogVerbosityLevel` valeur `1`.  
+4.  Définissez la valeur de `LogVerbosityLevel` sur `1`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
