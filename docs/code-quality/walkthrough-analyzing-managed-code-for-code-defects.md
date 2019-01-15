@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955251"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269222"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Analyse du code managé pour les erreurs de code
 
@@ -183,13 +183,11 @@ Cette procédure pas à pas vous guide tout au long du processus d’utilisation
 
 ## <a name="exclude-code-analysis-warnings"></a>Exclure les avertissements d’analyse du code
 
-### <a name="to-exclude-code-defect-warnings"></a>Pour exclure les avertissements d’erreur de code
-
 1. Pour chacun des avertissements restants, procédez comme suit :
 
     1. Sélectionnez l’avertissement dans le **liste d’erreurs**.
 
-    1. Dans le menu contextuel, choisissez **supprimer** > **dans le fichier de Suppression**.
+    1. Dans le menu contextuel (menu contextuel), choisissez **supprimer** > **dans le fichier de Suppression**.
 
 1. Regénérez le projet.
 

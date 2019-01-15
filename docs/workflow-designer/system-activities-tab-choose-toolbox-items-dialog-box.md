@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868181"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269551"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils
 
@@ -30,7 +30,7 @@ Cet onglet de la **Choose Toolbox Items** boîte de dialogue affiche la liste de
 
  Le filtrage s'effectue sous chaque onglet. Cela signifie qu’il n’est pas possible d’ajouter des activités de workflow via le **composant .NET** onglet. Ils doivent être ajoutés via la **System.Activities** onglet lui-même.
 
- Vous pouvez désélectionner les éléments que vous ne souhaitez pas voir dans le **boîte à outils** à partir de cette boîte de dialogue tab, ou vous pouvez également, vous pouvez le faire avec le **supprimer** option de menu contextuel dans le **boîte à outils** et supprimant la référence à un assembly ne supprime pas l’élément à partir de la **boîte à outils**.
+ Vous pouvez désélectionner les éléments que vous ne souhaitez pas voir dans le **boîte à outils** à partir de cette boîte de dialogue tab, ou vous pouvez également, vous pouvez le faire avec le **supprimer** avec le bouton droit d’option de menu dans le **boîte à outils**et supprimant la référence à un assembly ne supprime pas l’élément à partir de la **boîte à outils**.
 
  L’instanciation de l’activité, en la faisant glisser et en la déposant sur le concepteur, ajoute automatiquement l’assembly qui contient l’élément à la liste des assemblys référencés. Par ailleurs, si l'activité fait référence à un assembly C, elle n'ajoute pas C à la liste des assemblys référencés. L’assembly C doit se trouver dans le GAC ou dans le même répertoire que l’activité B. Dans le cas autonome, l’assembly doit se trouver dans le GAC ou dans les chemins d’accès de sonde de Visual Studio. Vous ne pouvez faire glisser et déposer l’activité sur l’aire du concepteur de workflow qu’à ce moment-là.
 

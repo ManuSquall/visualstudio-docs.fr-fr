@@ -8,15 +8,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929696"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269317"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
-Certaines propriétés de la forme telles que la couleur peut être « exposée - », autrement dit, lié à une propriété de domaine de la forme. Les autres ont à être directement contrôlée.
+
+Certaines propriétés telles que la couleur de la forme « exploitable ». Autrement dit, les propriétés peuvent être liées à une propriété de domaine de la forme. Les autres ont à être directement contrôlée.
 
 ## <a name="exposing-a-property"></a>Exposer une propriété
  Certaines propriétés telles que la couleur de la forme peuvent être liées à la valeur d’une propriété de domaine.

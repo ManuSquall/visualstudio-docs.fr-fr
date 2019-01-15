@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4710752c4825ce576b20a823735b5ed1e2ebad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd147b5a7b491c17e0ed0024cfe471762e6160b1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900936"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269707"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procédure : Imprimer des diagrammes à partir de la vue du graphique et l’affichage du modèle de contenu
 
@@ -24,7 +24,7 @@ Cette rubrique explique comment imprimer un diagramme à partir de la vue du gra
 
 1.  Ouvrez un fichier XSD dans Visual Studio et ajoutez des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Exporter le diagramme dans un fichier XPS à l’aide de la **exporter le diagramme en tant qu’Image** un élément de menu contextuel dans l’aire de conception de la vue du graphique ou de l’affichage du modèle de contenu.
+2.  Exporter le diagramme dans un fichier XPS à l’aide de la **exporter le diagramme en tant qu’Image** élément de menu contextuel (clic droit) dans l’aire de conception de la vue du graphique ou de l’affichage du modèle de contenu.
 
      Lorsque vous exportez un diagramme à partir de la vue du graphique, l’aire de conception entière est exportée vers le fichier XPS. Lorsque vous exportez un diagramme à partir de l’affichage du modèle de contenu et plusieurs nœuds s’affiche sur l’aire de conception de l’affichage modèle de contenu, seul le premier nœud est exporté vers le fichier XPS.
 

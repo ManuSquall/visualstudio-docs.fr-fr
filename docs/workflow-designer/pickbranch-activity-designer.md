@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860255"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269863"
 ---
 # <a name="pickbranch-activity-designer"></a>Concepteur d'activités PickBranch
 
@@ -32,7 +32,7 @@ Accès le **PickBranch** concepteur dans le **flux de contrôle** catégorie de 
 
 Deux vide <xref:System.Activities.Statements.PickBranch> objets avec des noms d’affichage des **Branch1** et **Branch2** sont créés par défaut en tant qu’éléments d’un <xref:System.Activities.Statements.Pick> activité lorsque le **choisir** Concepteur d’activités est initialement déposé sur le Concepteur de Workflow. Ces respectifs <xref:System.Activities.Statements.PickBranch.DisplayName%2A> les valeurs de propriété peuvent être modifiées dans le **PickBranch** en-tête du concepteur ou dans le **propriétés** fenêtre pour chaque branche.
 
-Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> objets à la collection d’un <xref:System.Activities.Statements.Pick> objet : glisser- déposer le **PickBranch** concepteur à partir de la **boîte à outils**, ou en utilisant le menu contextuel à partir de dans le **choisir** aire de conception :
+Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> objets à la collection d’un <xref:System.Activities.Statements.Pick> objet : glisser -déplacer le **PickBranch** concepteur à partir de la **boîte à outils**, ou à l’aide du menu contextuel à partir de dans le **choisir** aire de conception :
 
 - Le **PickBranch** concepteur crée un <xref:System.Activities.Statements.PickBranch> lorsqu’il est déplacé à partir de la **boîte à outils** et déposé dans une des branches d’un **choisir** Concepteur d’activités sur le Aire du Concepteur de flux de travail. Les nouveaux objets <xref:System.Activities.Statements.PickBranch> peuvent être placés dans le concepteur <xref:System.Activities.Statements.Pick> à gauche ou à droite des éléments <xref:System.Activities.Statements.PickBranch> existants déjà contenus dans la collection. Lorsque vous faites glisser un **PickBranch** concepteur sur le **choisir** concepteur avec une souris, le **choisir** concepteur utilise une bande bleu gris verticale pour indiquer l’endroit où le <xref:System.Activities.Statements.PickBranch> est ajouté pour un positionnement de souris donné.
 

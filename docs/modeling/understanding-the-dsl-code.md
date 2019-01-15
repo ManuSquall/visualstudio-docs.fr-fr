@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886369"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270292"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution de langage spécifique à un domaine (DSL) génère une API que vous pouvez utiliser pour lire et mettre à jour les instances du DSL dans Visual Studio. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.
@@ -57,7 +57,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 ## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL
  Les fichiers générés suivants apparaissent dans le **Dsl** projet.
 
- *Votre_solution_dsl* `Schema.xsd`
+ *YourDsl* `Schema.xsd`
 
  Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié à la compilation (**bin**) directory. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -191,7 +191,7 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  `CommandSet.cs`
 
- Commandes de menu contextuel visibles sur le diagramme. Vous pouvez adapter cet ensemble ou y ajouter des éléments. Ce fichier contient le code pour les commandes. L'emplacement des commandes dans les menus est déterminé par le fichier Commands.vsct. Pour plus d’informations, consultez [écriture de commandes utilisateur et les Actions](../modeling/writing-user-commands-and-actions.md).
+ Les commandes de menu contextuel qui sont visibles dans le diagramme. Vous pouvez adapter cet ensemble ou y ajouter des éléments. Ce fichier contient le code pour les commandes. L'emplacement des commandes dans les menus est déterminé par le fichier Commands.vsct. Pour plus d’informations, consultez [écriture de commandes utilisateur et les Actions](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Localise les commandes de menu standard dans les menus, tels que le menu contextuel du diagramme, le **modifier** menu et ainsi de suite. Le code pour les commandes se trouve dans CommandSet.cs. Vous pouvez déplacer ou modifier les commandes standard et vous pouvez ajouter vos propres commandes. Pour plus d’informations, consultez [écriture de commandes utilisateur et les Actions](../modeling/writing-user-commands-and-actions.md).
+ Localise les commandes de menu standard dans les menus, tels que le menu contextuel (contexte) de diagramme, le **modifier** menu et ainsi de suite. Le code pour les commandes se trouve dans CommandSet.cs. Vous pouvez déplacer ou modifier les commandes standard et vous pouvez ajouter vos propres commandes. Pour plus d’informations, consultez [écriture de commandes utilisateur et les Actions](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Si vous souhaitez que la sélection dans l'Explorateur de modèles soit synchronisée avec la sélection du diagramme, vous pouvez utiliser le code suivant :
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);
