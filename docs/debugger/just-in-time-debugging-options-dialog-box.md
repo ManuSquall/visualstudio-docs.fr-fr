@@ -1,8 +1,6 @@
 ---
 title: Juste-à-temps, débogage, de boîte de dialogue Options | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
@@ -22,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6736e0646193754dbd932e5501a6473ee18c7e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 05a1cc9e4847b9ffa2c873b137c35bfbf6f83f83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968113"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Juste-à-temps, Débogage, boîte de dialogue Options
-Pour accéder à la **juste-à-temps** page, accédez à la **outils** menu et cliquez sur **Options**. Dans le **Options** boîte de dialogue, développez le **débogage** nœud et sélectionnez **juste-à-temps**. Cette page vous permet d'activer le débogage juste-à-temps pour le code managé, le code natif et les scripts. Pour plus d’informations, consultez [débogage juste à temps](../debugger/just-in-time-debugging-in-visual-studio.md).  
+Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez sur **Options**. Dans la boîte de dialogue **Options**, développez le nœud **Débogage** et sélectionnez **Juste-à-temps**. Cette page vous permet d'activer le débogage juste-à-temps pour le code managé, le code natif et les scripts. Pour plus d’informations, consultez [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  Vous pouvez activer le débogage juste-à-temps pour les types de programmes suivants :  
   
@@ -43,19 +41,19 @@ Pour accéder à la **juste-à-temps** page, accédez à la **outils** menu et c
   Le débogage juste-à-temps est une technique pour le débogage d'un programme démarré à l'extérieur de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il est possible d'exécuter un programme créé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en dehors de l'environnement [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si vous avez activé le débogage juste-à-temps, un incident affichera une boîte de dialogue qui vous demandera si vous souhaitez déboguer.  
   
 ## <a name="associated-warnings"></a>Avertissements associés  
- Lorsque vous visitez cette page de la **Options** boîte de dialogue, vous pouvez voir un message d’avertissement comme suit :  
+ Quand vous visitez cette page de la boîte de dialogue **Options**, vous pouvez découvrir un message d’avertissement tel que :  
   
- **Un autre débogueur s’est inscrit en tant que juste-à-temps débogueur. Pour réparer, activez juste-à-temps de débogage ou exécutez la réparation de Visual Studio.**  
+ **Un autre débogueur s’est inscrit en tant que débogueur juste-à-temps. Pour réparer, activez le débogage juste-à-temps ou exécutez la réparation de Visual Studio.**  
   
  Ce message se produit si vous avez un autre débogueur (éventuellement une version antérieure du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]) défini comme débogueur Juste-à-temps.  
   
  Voici un autre message que vous pouvez voir :  
   
- **Erreurs d’inscription de débogage juste-à-temps détectées. Pour réparer, activez juste-à-temps de débogage ou exécutez la réparation de Visual Studio.**  
+ **Erreurs d’inscription de débogage juste-à-temps détectées. Pour réparer, activez le débogage juste-à-temps ou exécutez la réparation de Visual Studio.**  
   
- Si vous voyez une de ces avertissements, avec le débogage juste-à-temps [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] nécessite des privilèges d’administrateur jusqu'à ce que vous ayez résolu le problème. Si vous essayez de poursuivre sans disposer de droits d'administrateur dans ces conditions, vous voyez s'afficher le message d'erreur suivant :  
+ En présence de l’un ou l’autre de ces avertissements, le débogage Juste-à-temps avec [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] nécessite des droits d’administrateur jusqu’à ce que vous ayez résolu le problème. Si vous essayez de poursuivre sans disposer de droits d'administrateur dans ces conditions, vous voyez s'afficher le message d'erreur suivant :  
   
- **L’accès est refusé. Un administrateur activer juste-à-temps de débogage sont, ou réparer votre installation de Visual Studio.**  
+ **Accès refusé. Faites activer le débogage juste-à-temps par un administrateur ou réparez votre installation de Visual Studio.**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)   

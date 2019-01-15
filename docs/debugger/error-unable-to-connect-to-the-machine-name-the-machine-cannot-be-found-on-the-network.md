@@ -1,8 +1,6 @@
 ---
-title: 'Erreur : Impossible de se connecter à l’ordinateur &lt;nom&gt;. Impossible de trouver l’ordinateur sur le réseau. | Microsoft Docs'
-ms.custom: ''
+title: 'Erreur : Impossible de se connecter à la machine &lt;nom&gt;. L’ordinateur est introuvable sur le réseau. | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.dcom_disabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0654148823d40277bdd9c6b6d8ec5b881fdb80
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e4c9bc3c72a2ff97fc67f31f44041feed2185551
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847371"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Erreur : Impossible de se connecter à l’ordinateur &lt;nom&gt;. Impossible de trouver l’ordinateur sur le réseau.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Erreur : Impossible de se connecter à la machine &lt;nom&gt;. L’ordinateur est introuvable sur le réseau.
 Ce problème se produit si l'une des conditions suivantes est remplie :  
   
 -   Votre connexion à l'ordinateur distant a été interrompue.  

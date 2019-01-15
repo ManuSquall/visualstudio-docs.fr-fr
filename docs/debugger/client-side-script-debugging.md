@@ -1,8 +1,6 @@
 ---
 title: Débogage de Script côté client | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898719"
 ---
 # <a name="client-side-script-debugging"></a>Débogage de scripts côté client
 Le débogueur Visual Studio fournit un environnement de débogage complet pour rechercher et corriger les erreurs dans les scripts clients des pages ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Ouverture de documents de script  
-Vous pouvez afficher des listes de documents de script côté serveur et côté client dans le **l’Explorateur de solutions** à afficher. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, consultez [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Vous pouvez afficher des listes de documents de script côté serveur et côté client dans l’**Explorateur de solutions**. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, voir [Procédure : afficher les documents de script](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mappage de point d'arrêt  
  Dans Visual Studio, vous ne pouvez pas déboguer directement le code côté serveur, mais vous pouvez définir un point d'arrêt dans un fichier côté serveur. Visual Studio mappe automatiquement le point d'arrêt à un emplacement correspondant dans le fichier côté client et crée un point d'arrêt mappé dans le code côté client.  
@@ -37,7 +35,7 @@ Vous pouvez afficher des listes de documents de script côté serveur et côté 
 ## <a name="manually-or-automatically-attaching-to-script"></a>Attachement manuel ou automatique au script  
  Pour commencer le débogage du script dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], le débogueur doit effectuer l'attachement au script que vous souhaitez déboguer. Cela peut se faire manuellement ou automatiquement.  
   
- Vous pouvez effectuer l'attachement manuellement à l'aide de l'interface de débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour choisir un processus de script en cours d'exécution auquel effectuer l'attachement. Pour plus d'informations, consultez [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Vous pouvez effectuer l'attachement manuellement à l'aide de l'interface de débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour choisir un processus de script en cours d'exécution auquel effectuer l'attachement. Pour plus d'informations, voir [Procédure : attacher à un script](../debugger/how-to-attach-to-script.md).  
   
  Le débogueur effectue l'attachement au script automatiquement lorsque l'un des cas suivants se produit :  
   
@@ -62,8 +60,8 @@ Vous pouvez afficher des listes de documents de script côté serveur et côté 
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage des Applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Limitations du débogage de Script](../debugger/limitations-on-script-debugging.md)   
- [Variable Windows](../debugger/debugger-windows.md)   
+ [Débogage d’applications ASP.NET et AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
+ [Limitations du débogage de script](../debugger/limitations-on-script-debugging.md)   
+ [Fenêtres de variables](../debugger/debugger-windows.md)   
  [Fenêtre Exécution](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

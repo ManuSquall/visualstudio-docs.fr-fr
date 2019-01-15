@@ -1,8 +1,6 @@
 ---
-title: IDiaImageData | Documents Microsoft
-ms.custom: ''
+title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fae8401d7702351e4d51d8b8d485ece87a9478b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894127"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Expose les détails de l’emplacement et la mémoire les décalages base du module ou de l’image.  
@@ -27,7 +25,7 @@ Expose les détails de l’emplacement et la mémoire les décalages base du mod
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -40,13 +38,13 @@ IDiaImageData : IUnknown
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Récupère l’emplacement de mémoire où l’image doit être basée.|  
   
 ## <a name="remarks"></a>Notes  
- Certains flux de débogage (XDATA, PDATA) contiennent des copies de données également stockées dans l’image. Ces flux de données objets peuvent être interrogées pour la `IDiaImageData` interface. Consultez la section « Remarques pour les appelants » dans cette rubrique pour plus d’informations.  
+ Certains flux de débogage (XDATA, PDATA) contiennent des copies de données également stockées dans l’image. Ces flux de données objets peuvent être interrogées pour le `IDiaImageData` interface. Consultez la section « Remarques pour les appelants » dans cette rubrique pour plus d’informations.  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Obtenez cette interface en appelant `QueryInterface` sur une [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objet. Prise en charge des flux de remarque pas déboguer le `IDiaImageData` interface. Par exemple, actuellement uniquement les flux XDATA et PDATA prennent en charge la `IDiaImageData` interface.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Obtenez cette interface en appelant `QueryInterface` sur un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objet. Notez que certaines déboguer diffuse prise en charge la `IDiaImageData` interface. Par exemple, actuellement uniquement les flux XDATA et PDATA prennent en charge la `IDiaImageData` interface.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple recherche tous les flux de débogage pour les flux de données prend en charge la `IDiaImageData` interface. Si un flux de ce type est trouvé, certaines informations sur ce flux de données s’affiche.  
+ Cet exemple recherche tous les flux de débogage pour n’importe quel flux qui prend en charge la `IDiaImageData` interface. Si un flux de ce type est trouvé, des informations sur ce flux de données s’affiche.  
   
 ```C++  
 void ShowImageData(IDiaSession *pSession)  
@@ -113,12 +111,12 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Spécifications  
- En-tête : Dia2.h  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Kit SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

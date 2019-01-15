@@ -1,8 +1,6 @@
 ---
-title: Débogage COM et ActiveX | Documents Microsoft
-ms.custom: ''
+title: Débogage COM et ActiveX | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820855"
 ---
 # <a name="com-and-activex-debugging"></a>Débogage COM et ActiveX
 Cette section réunit des conseils sur le débogage des applications COM et des contrôles ActiveX.  
@@ -49,6 +47,6 @@ Cette section réunit des conseils sur le débogage des applications COM et des 
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Introduction à COM](/cpp/atl/introduction-to-com)   
+ [Présentation de COM](/cpp/atl/introduction-to-com)   
  [Contrôles ActiveX](/cpp/mfc/activex-controls)   
  [Applications serveur SDI](../debugger/sdi-server-applications.md)

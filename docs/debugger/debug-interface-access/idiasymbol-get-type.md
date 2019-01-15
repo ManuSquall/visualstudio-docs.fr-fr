@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_type | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ba944bd2871e23c44806caf291334743813c16d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898110"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 Récupère le symbole qui représente le type de ce symbole.  
@@ -27,7 +25,7 @@ Récupère le symbole qui représente le type de ce symbole.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_type (   
+HRESULT get_type (   
    IDiaSymbol** pRetVal  
 );  
 ```  

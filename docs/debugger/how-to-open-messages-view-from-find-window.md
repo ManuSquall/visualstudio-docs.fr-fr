@@ -37,7 +37,7 @@ Il peut s’avérer pratique d’utiliser le **rechercher une fenêtre** boîte 
 
 4. Sous **afficher**, sélectionnez **Messages**.  
 
-5. Cliquez sur OK :  
+5. Appuyez sur **OK**.  
 
     Une valeur vide [vue Messages](../debugger/messages-view.md) fenêtre s’ouvre et un **Messages** menu est ajouté à la barre d’outils Spy ++.  
 

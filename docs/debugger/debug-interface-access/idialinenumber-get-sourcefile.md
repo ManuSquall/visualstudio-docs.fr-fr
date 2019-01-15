@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_sourceFile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0239a74bc6f2ddf616b03037b3a9a021662d6d07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bf68651cf94341176de6c15b704a22d291d6dd12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872298"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 Récupère une référence au fichier source.  
@@ -27,7 +25,7 @@ Récupère une référence au fichier source.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_sourceFile (   
+HRESULT get_sourceFile (   
    IDiaSourceFile** pRetVal  
 );  
 ```  

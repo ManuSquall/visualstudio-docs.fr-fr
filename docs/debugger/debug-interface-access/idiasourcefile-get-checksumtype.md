@@ -1,8 +1,6 @@
 ---
 title: IDiaSourceFile::get_checksumType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fa53d00d17446e63170d5b729d2e669ecb987b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825906"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Récupère le type de somme de contrôle.  
@@ -27,7 +25,7 @@ Récupère le type de somme de contrôle.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_checksumType (   
+HRESULT get_checksumType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT get_checksumType (
   
 |Type de somme de contrôle|Étiquette de CryptoAPI|Description|  
 |-------------------|---------------------|-----------------|  
-|0|\<Aucun >|Aucune somme de contrôle présent.|  
+|0|\<aucune>|Aucune somme de contrôle présent.|  
 |1|`CALG_MD5`|somme de contrôle généré avec l’algorithme de hachage MD5.|  
 |2|`CALG_SHA1`|somme de contrôle généré avec l’algorithme de hachage SHA1.|  
   

@@ -1,8 +1,6 @@
 ---
-title: 'Comment : spécifier les paramètres du débogueur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Spécifiez les paramètres du débogueur | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847176"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Comment : spécifier les paramètres du débogueur
-Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présence ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous spécifiez les paramètres du débogueur dans la boîte de dialogue **Options**.  
+# <a name="how-to-specify-debugger-settings"></a>Procédure : spécifier les paramètres du débogueur
+Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présentation ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous indiquez les paramètres du débogueur dans la boîte de dialogue **Options**.  
   
 ### <a name="to-set-debugger-options"></a>Pour définir les options du débogueur  
   
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1.  Dans le menu **Outils** , cliquez sur **Options**.  
   
 2.  Dans la boîte de dialogue **Options**, ouvrez le dossier **Débogage**.  
   
 3.  Dans le dossier **Débogage**, choisissez la catégorie d’options souhaitée.  
   
-     Les options les plus courantes se trouvent dans la catégorie **général**. Pour plus d’informations, consultez [Général, Débogage, Boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
+     Les options les plus courantes sont situées dans la catégorie **Général**. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Activez ou désactivez les options souhaitées. Appuyez sur F1 pour obtenir de l'aide concernant les options.  
   

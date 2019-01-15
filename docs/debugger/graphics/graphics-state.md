@@ -1,8 +1,6 @@
 ---
-title: État graphique | Documents Microsoft
-ms.custom: ''
+title: État graphique | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968100"
 ---
 # <a name="graphics-state"></a>État graphique
 La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de comprendre l’état graphique actif au moment de l’événement, par exemple un appel de dessin.  
@@ -38,21 +36,21 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
   
 -   Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.  
   
-    -   **Afficher la vue d’état d’entrée API**  
+    -   **Afficher la vue des états de l’entrée API**  
   
-    -   **Afficher la vue d’état logique**  
+    -   **Afficher la vue des états logiques**  
   
-    -   **Afficher l’affichage des États épinglés**  
+    -   **Afficher la vue des états épinglés**  
   
 > [!IMPORTANT]
->  Vous devez épingler l’état dans le **afficher les API d’entrée d’état** ou **état Afficher logique** vues pour qu’il s’affiche dans le **affichage de l’état Afficher épinglé**.  
+>  Vous devez épingler l’état dans **Afficher la vue des états de l’entrée API** ou dans **Afficher la vue des états logiques** pour qu’il s’affiche dans **Afficher la vue des états épinglés**.  
   
 ### <a name="state-table-format"></a>Format de la table des états  
  La fenêtre État affiche plusieurs colonnes d'informations.  
   
 |Colonne|Description|  
 |------------|-----------------|  
-|Name|Nom de l'élément d'état. Si cet élément représente un ensemble d’états, vous pouvez développer l’élément pour l’afficher.<br /><br /> Dans le **API d’entrée d’affichage des états** et **affichage des États logiques** les États, les noms sont mis en retrait pour montrer la relation hiérarchique entre les États.<br /><br /> Dans le **affichage des États épinglés** état, les noms complets sont affichés dans une liste plate.|  
+|Name|Nom de l'élément d'état. Si cet élément représente un ensemble d’états, vous pouvez développer l’élément pour l’afficher.<br /><br /> Dans la **vue des états de l’entrée API** et dans la **vue des états logiques**, les noms sont mis en retrait pour montrer la relation hiérarchique qui existe entre les états.<br /><br /> Dans l’état **Afficher la vue des états épinglés**, les noms complets sont affichés dans une liste plate.|  
 |Value|Valeur de l'élément d'état.|  
 |Type|Type de l'élément d'état.|  
   

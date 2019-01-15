@@ -1,5 +1,5 @@
 ---
-title: 'Avertissement : les modifications ont été apportées à la boîte de dialogue Configurer le comportement qui n’ont pas été appliquées'
+title: 'Avertissement : des modifications ont été effectuées dans la boîte de dialogue Configurer le comportement et n’ont pas été appliquées'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
@@ -7,29 +7,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e23bfe676a8e6852d6bd38bd75a9198ad4bf233
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847835"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement : Les modifications ont été apportées à la boîte de dialogue Configurer le comportement qui n’ont pas été appliquées
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement : Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.
 
 Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées. Souhaitez-vous appliquer vos modifications ?
 
-Le **configurer le comportement** boîte de dialogue vous permet de configurer `Insert`, `Update`, et `Delete` pour toutes les classes disponibles. Ce message apparaît lorsque vous sélectionnez un nouveau **classe** et **comportement** combinaison et la modification précédente n’a pas encore été appliqué.
+Le **configurer le comportement** boîte de dialogue vous permet de configurer `Insert`, `Update`, et `Delete` pour toutes les classes disponibles. Ce message apparaît quand vous sélectionnez une nouvelle combinaison de **Classe** et de **Comportement** et que la modification précédente n’a pas encore été appliquée.
 
 ## <a name="to-apply-the-change-and-continue"></a>Pour appliquer la modification et continuer
 
-- Cliquez sur **Oui** pour appliquer la modification au **classe** et **comportement**.
+- Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.
 
 ## <a name="to-cancel-the-previous-change-and-continue"></a>Pour annuler le changement précédent et continuer
 
-- Cliquez sur **non** pour annuler la modification au **classe** et **comportement**.
+- Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.
 
 ## <a name="see-also"></a>Voir aussi
 

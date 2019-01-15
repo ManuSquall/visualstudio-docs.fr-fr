@@ -1,8 +1,6 @@
 ---
-title: Boîte de dialogue recherche de message | Documents Microsoft
-ms.custom: ''
+title: Boîte de dialogue de recherche de message | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
@@ -12,23 +10,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c125e2659e586d728a18293b9811a4e69743558
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3c1313820ff946499757f8a4240a49d93081e9e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853513"
 ---
 # <a name="message-search-dialog-box"></a>Boîte de dialogue Recherche d'un message
-Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un message spécifique dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre d’affichage de Messages. Puis choisissez **rechercher le Message** à partir de la **recherche** menu.  
+Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour un message spécifique dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, déplacer le focus vers une fenêtre d’affichage de Messages. Puis choisissez **rechercher le Message** à partir de la **recherche** menu.  
   
  Les paramètres suivants sont disponibles :  
   
- **Outil recherche**  
+ **Outil Recherche**  
  L’outil de glisser -déplacer permet de sélectionner une fenêtre.  
   
  **Masquer Spy ++**  
- Supprime la fenêtre principale de Spy ++ et laisse le **un message** boîte de dialogue visible au-dessus de vos autres applications.  
+ Supprime la fenêtre principale de Spy ++ et laisse le **un message** boîte de dialogue visible en haut de vos autres applications.  
   
  **Handle**  
  ID unique du message à rechercher.  
@@ -40,26 +38,26 @@ Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’
  L’ID de message à rechercher.  
   
  **Sens de la recherche vers le haut ou vers le bas**  
- La direction initiale de la recherche.  
+ La direction de la recherche initiale.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Recherche d’un Message dans la vue Messages](../debugger/how-to-search-for-a-message-in-messages-view.md)  
  Explique comment rechercher un message spécifique dans la vue Messages.  
   
- [Affichage des Messages lors de l’ouverture à partir de la fenêtre Rechercher](../debugger/how-to-open-messages-view-from-find-window.md)  
+ [Affichage de Messages d’ouverture à partir de la fenêtre Rechercher](../debugger/how-to-open-messages-view-from-find-window.md)  
  Explique comment ouvrir la vue Messages à partir de la boîte de dialogue Rechercher une fenêtre.  
   
  [Vue Messages](../debugger/messages-view.md)  
- Affiche le flux de message associé à une fenêtre, processus ou thread.  
+ Affiche le flux de message associé à une fenêtre, un processus ou un thread.  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
  Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
  [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
+ Présente l’outil Spy ++ et explique comment il peut être utilisé.  
   
  [Options des messages, boîte de dialogue](../debugger/message-options-dialog-box.md)  
- Permet de sélectionner les messages répertoriés dans la vue Messages.  
+ Permet de sélectionner les messages sont répertoriés dans la vue Messages.  
   
  [Propriétés du message, boîte de dialogue](../debugger/message-properties-dialog-box.md)  
  Permet d’afficher les propriétés d’un message sélectionné dans la vue Messages.  
