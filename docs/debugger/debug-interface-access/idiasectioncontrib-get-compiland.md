@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_compiland | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd73e97f039202223c7233383c1da586f4548be2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8053945e0d759184c3eec0d26043eb8cdde6cfd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906954"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 Récupère une référence au symbole de compiland qui ont contribué à cette section.  
@@ -27,7 +25,7 @@ Récupère une référence au symbole de compiland qui ont contribué à cette s
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_compiland (   
+HRESULT get_compiland (   
    IDiaSymbol** pRetVal  
 );  
 ```  

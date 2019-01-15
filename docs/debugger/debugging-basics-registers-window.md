@@ -1,8 +1,6 @@
 ---
 title: À propos de la fenêtre Registres | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: a08b7f3731de490443cc56a418c75974bf9ff722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919532"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>À propos de la fenêtre registres dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -52,5 +50,5 @@ La fenêtre **Registres** est disponible uniquement si le débogage au niveau de
  Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant une liste de groupes s'affiche. Vous pouvez afficher ou masquer des groupes selon vos besoins.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)   
+ [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)   
  [Présentation du débogueur](../debugger/debugger-feature-tour.md)

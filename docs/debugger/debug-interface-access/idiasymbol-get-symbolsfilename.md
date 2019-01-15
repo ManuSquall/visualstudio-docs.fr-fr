@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b468144e0d8275b121d9fe29e59d4789f06042
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ce511aa7766f55151bfce489cf2acba24f85ccdd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907201"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 Récupère le nom du fichier à partir duquel les symboles ont été chargés.  
@@ -27,7 +25,7 @@ Récupère le nom du fichier à partir duquel les symboles ont été chargés.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_symbolsFileName (   
+HRESULT get_symbolsFileName (   
    BSTR* pRetVal  
 );  
 ```  

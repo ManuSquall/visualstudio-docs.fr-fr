@@ -1,8 +1,6 @@
 ---
 title: Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
-ms.custom: ''
 ms.date: 08/24/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: MT
+ms.openlocfilehash: 8babc9b86cc006e120a76a037260b62852e8f041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931331"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l’ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut survenir parce que remote debugging monitor n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou la présence d’un pare-feu.
@@ -90,7 +88,7 @@ L’ordinateur distant existe, mais Visual Studio n’a pas pu se connecter au d
 
 - Un problème DNS empêche la connexion. Consultez [suit](#dns).
 
-- Le débogueur distant peut être exécuté sous un compte d’utilisateur différent. Suivez [suit](#user_accounts).
+- Le débogueur distant peut être exécuté sous un compte d’utilisateur différent. Suivez [ces étapes](#user_accounts).
 
 - Le port est bloqué sur le pare-feu. Assurez-vous que le pare-feu [ne pas bloque votre demande](#firewall), surtout si vous utilisez un pare-feu tiers.
 
@@ -120,7 +118,7 @@ Si cette tentative échoue, vérifiez que l’ordinateur distant est accessible 
   
 ### <a name="server_incorrect"></a> Le nom du serveur est incorrect ou d’un logiciel tiers interfère avec le débogueur distant
 
-Dans Visual Studio, examinez les propriétés du projet et vérifiez que le nom du serveur est correct. Consultez les rubriques pour [c# et Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) et [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Pour ASP.NET, ouvrez **propriétés / Web / serveurs** ou **propriétés / Debug** selon votre type de projet.
+Dans Visual Studio, examinez les propriétés du projet et vérifiez que le nom du serveur est correct. Consultez les rubriques pour [ C# et Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) et [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Pour ASP.NET, ouvrez **propriétés / Web / serveurs** ou **propriétés / Debug** selon votre type de projet.
 
 > [!NOTE]
 > Si vous attachez au processus, les paramètres à distance dans les propriétés du projet ne sont pas utilisés.
@@ -140,9 +138,9 @@ Pour résoudre ce problème, vous pouvez procéder de différentes façons :
     > [!NOTE]
     > Si vous exécutez le débogueur distant sur un serveur distant, avec le bouton droit de l’application débogueur distant et choisissez **exécuter en tant qu’administrateur** (ou, vous pouvez exécuter le débogueur distant en tant que service). Si vous n’exécutez pas sur un serveur distant, seulement le démarrer normalement.
   
--   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : `msvsmon /allow <username@computer>`. 
+-   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`. 
   
--   Vous pouvez également autoriser n’importe quel utilisateur d’effectuer un débogage à distance. Dans la fenêtre du débogueur distant, accédez à la **Outils > Options** boîte de dialogue. Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, vous devez essayer cette option uniquement si les autres options d’échouer, ou si vous êtes sur un réseau privé.
+-   Vous pouvez également autoriser n’importe quel utilisateur d’effectuer un débogage à distance. Dans la fenêtre du débogueur distant, accédez à la boîte de dialogue **Outils > Options**. Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, vous devez essayer cette option uniquement si les autres options d’échouer, ou si vous êtes sur un réseau privé.
 
 ### <a name="firewall"></a> Le pare-feu sur l’ordinateur distant n’autorise pas les connexions entrantes au débogueur distant  
  Le pare-feu sur l’ordinateur Visual Studio et celui sur l’ordinateur distant doivent être configurés pour autoriser la communication entre Visual Studio et le débogueur distant. Pour plus d’informations sur les ports utilisés par le débogueur distant, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Pour plus d’informations sur la configuration du Pare-feu Windows, consultez [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).

@@ -1,8 +1,6 @@
 ---
-title: 'Comment : créer un manifeste de Package | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Créer un manifeste de Package | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943471"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Comment : créer un manifeste de package
+# <a name="how-to-create-a-package-manifest"></a>Procédure : Créer un manifeste de package
 Pour déployer les composants requis pour votre application, vous pouvez utiliser un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Les fonctionnalités partagées entre les différentes versions localisées doit être placé dans le manifeste de produit.  
   
- Pour plus d’informations sur les manifestes de package, consultez [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md).  
+ Pour plus d’informations sur les manifestes de package, consultez [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>Créer le manifeste du package  
   
@@ -101,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

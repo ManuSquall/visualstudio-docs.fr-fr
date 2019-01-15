@@ -1,8 +1,6 @@
 ---
-title: 'Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Publier une Application ClickOnce à l’aide de l’Assistant Publication | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935045"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication
 Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d’accès, un serveur FTP ou un média amovible. Vous pouvez publier cette application à l’aide de l’Assistant Publication. Vous trouverez des propriétés supplémentaires liées à la publication sur la page **Publier** du **Concepteur de projet**. Pour plus d’informations, consultez [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md).
 
 Avant d'exécuter l'Assistant Publication, vous devez correctement définir les propriétés de publication. Par exemple, vous pouvez spécifier une clé pour signer votre application ClickOnce dans la page **Signature** du **Concepteur de projet**. Pour plus d’informations, consultez [applications ClickOnce Secure](../deployment/securing-clickonce-applications.md).

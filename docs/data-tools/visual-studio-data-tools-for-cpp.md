@@ -8,16 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895478"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 
@@ -25,11 +24,11 @@ C++ natif peuvent souvent offrir les meilleures performances lorsque vous accéd
 
 Pour vous connecter aux bases de données SQL, les applications C++ natives peuvent utiliser les pilotes ODBC et OLE DB et le fournisseur ADO qui sont inclus avec Windows. Ceux-ci peuvent se connecter aux bases de données qui prend en charge ces interfaces. Le pilote ODBC est la norme. OLE DB est fourni pour la compatibilité descendante. Pour plus d’informations sur ces technologies de données, consultez [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et version ultérieure, utilisez le [SQL Server natif client](/sql/relational-databases/native-client/sql-server-native-client). Le client natif contient également le pilote ODBC de SQL Server et le fournisseur OLE DB pour SQL Server dans une bibliothèque de liens dynamiques (DLL). Il prend en charge des applications à l’aide des API en code natif (ODBC, OLE DB et ADO) pour Microsoft SQL Server. SQL Server Native Client est installé avec SQL Server Data Tools. Le guide de programmation est ici : [programmation du client natif SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
+Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et version ultérieure, utilisez le [SQL Server natif client](/sql/relational-databases/native-client/sql-server-native-client). Le client natif contient également le pilote ODBC de SQL Server et le fournisseur OLE DB pour SQL Server dans une bibliothèque de liens dynamiques (DLL). Il prend en charge des applications à l’aide des API en code natif (ODBC, OLE DB et ADO) pour Microsoft SQL Server. SQL Server Native Client est installé avec SQL Server Data Tools. Le guide de programmation est ici : [Programmation du client natif SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Se connecter à la base de données locale via ODBC et SQL Native Client à partir d’une application C++
 
-1. Installer Microsoft SQL Server Data Tools
+1. Installez SQL Server Data Tools.
 
 2. Si vous avez besoin d’une base de données exemple SQL pour vous connecter à, téléchargez la base de données Northwind et décompressez-le dans un nouvel emplacement.
 
@@ -58,7 +57,7 @@ Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et ve
    #include <sqlncli.h>
    ```
 
-    Notez que l’exemple ne pas réellement utilise toute la fonctionnalité de client natif, les étapes précédentes sont donc pas nécessaires compiler et exécuter. Mais le projet est maintenant configuré pour pouvoir utiliser cette fonctionnalité. Pour plus d’informations, consultez [Programmation de SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)
+    Notez que l’exemple ne pas réellement utilise toute la fonctionnalité de client natif, les étapes précédentes sont donc pas nécessaires compiler et exécuter. Mais le projet est maintenant configuré pour pouvoir utiliser cette fonctionnalité. Pour plus d’informations, consultez [Programmation de SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
 7. Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion de pilote dans comme un argument de ligne de commande. Dans **projet** > **propriétés** > **débogage**, ajoutez l’argument de commande suivant :
 
@@ -66,7 +65,7 @@ Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et ve
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Appuyez sur **F5** pour générer et exécuter l’application. Vous devez voir une boîte de dialogue à partir du pilote qui vous invite à entrer une base de données. Entrez `(localdb)\MSSQLLocalDB`et vérifiez **utiliser la connexion approuvée**. Cliquez sur OK : Vous devez voir une console avec les messages qui indiquent une connexion réussie. Vous devriez également voir une invite de commandes où vous pouvez taper une instruction SQL. L’écran suivant montre un exemple de requête et les résultats :
+8. Appuyez sur **F5** pour générer et exécuter l’application. Vous devez voir une boîte de dialogue à partir du pilote qui vous invite à entrer une base de données. Entrez `(localdb)\MSSQLLocalDB`et vérifiez **utiliser la connexion approuvée**. Appuyez sur **OK**. Vous devez voir une console avec les messages qui indiquent une connexion réussie. Vous devriez également voir une invite de commandes où vous pouvez taper une instruction SQL. L’écran suivant montre un exemple de requête et les résultats :
 
    ![Sortie de requête d’exemple ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 

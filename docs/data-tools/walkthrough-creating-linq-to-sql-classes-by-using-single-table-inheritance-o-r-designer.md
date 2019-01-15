@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création des Classes LINQ to SQL à l’aide d’héritage à Table unique (Concepteur O-R)'
+title: 'Procédure pas à pas : Création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,18 +10,17 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cdb8f4a419bfaa2d4e5d6c93bad4daede6c10990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988175"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : Créer LINQ aux classes SQL à l’aide de l’héritage à table unique (Concepteur O/R)
-Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prend en charge l’héritage à table unique tel qu’il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas développe les étapes génériques fournies dans le [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) rubrique et des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : Créer de LINQ to SQL classes à l’aide d’héritage à table unique (Concepteur O/R)
+Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prend en charge l’héritage à table unique tel qu’il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas développe les étapes génériques fournies dans le [Comment : Configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) rubrique et des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Au cours de cette procédure pas à pas, vous effectuez les tâches suivantes :
 
@@ -39,7 +38,7 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
 - Afficher les données sur un Windows Form.
 
-## <a name="create-a-table-to-inherit-from"></a>Créer une table d’hériter de
+## <a name="create-a-table-to-inherit-from"></a>Création d’une table de laquelle hériter
  Pour voir comment fonctionne l’héritage, vous créez un petit `Person` table, utilisez-le comme une classe de base et créez ensuite un `Employee` objet qui en hérite.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Pour créer une table de base illustrant l'héritage
@@ -55,13 +54,13 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
-    |**firstName**|**nvarchar(200)**|**False**|
-    |**lastName**|**nvarchar(200)**|**False**|
-    |**Gestionnaire**|**int**|**True**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
+    |**Manager**|**int**|**True**|
 
 3.  Définissez la colonne d'ID comme clé primaire.
 
-4.  Enregistrez la table et nommez-la **personne**.
+4.  Enregistrez la table et nommez-la **Personnel**.
 
 ## <a name="add-data-to-the-table"></a>Ajouter des données à la table
  Pour pouvoir vérifier si l'héritage est configuré correctement, la table a besoin de données dans chaque classe de l'héritage à table unique.
@@ -74,47 +73,47 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Type**|**firstName**|**lastName**|**Gestionnaire**|
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|
-    |**5**|**2**|**Andreas**|**Chor**|**1**|
+    |**5**|**2**|**Andreas**|**Hauser**|**1**|
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|
     |**7**|**2**|**Alexey**|**Orekhov**|**2**|
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
     |**9**|**2**|**Tai**|**Yee**|**2**|
     |**10**|**2**|**Fabricio**|**Noriega**|**3**|
-    |**11**|**2**|**Konstantinos**|**Martin**|**3**|
+    |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Créer un nouveau projet
+## <a name="create-a-new-project"></a>Créer un projet
  Maintenant que vous avez créé la table, créez un nouveau projet pour voir la configuration de l'héritage.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Pour créer la nouvelle application Windows Forms
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **InheritanceWalkthrough**, puis choisissez **OK**.
 
-     Le **InheritanceWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet **InheritanceWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.
 
-## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Ajouter un LINQ vers le fichier de classes SQL au projet
+## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Ajouter un fichier de classes LINQ to SQL au projet
 
-### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Pour ajouter un LINQ vers le fichier SQL au projet
+### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>Pour ajouter un fichier LINQ to SQL au projet
 
 1.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2.  Cliquez sur le **Classes LINQ to SQL** modèle, puis cliquez sur **ajouter**.
+2.  Cliquez sur le modèle **Classes LINQ to SQL**, puis sur **Ajouter**.
 
      Le *.dbml* fichier est ajouté au projet et le **Concepteur O/R** s’ouvre.
 
-## <a name="create-the-inheritance-by-using-the-or-designer"></a>Créer l’héritage à l’aide du Concepteur O/R
- Configurez l’héritage en faisant glisser un **héritage** de l’objet à partir de la **boîte à outils** sur l’aire de conception.
+## <a name="create-the-inheritance-by-using-the-or-designer"></a>Créer l’héritage avec le Concepteur O/R
+ Configurez l’héritage en faisant glisser un objet **Héritage** de la **Boîte à outils** vers l’aire de conception.
 
 ### <a name="to-create-the-inheritance"></a>Pour créer l'héritage
 
@@ -124,30 +123,30 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
 3.  Faites glisser un deuxième **personne** table sur le **Concepteur O/R** et remplacez son nom par **employé**.
 
-4.  Supprimer le **Manager** propriété à partir de la **personne** objet.
+4.  Supprimez la propriété **Manager** de l’objet **Personnel**.
 
-5.  Supprimer le **Type**, **ID**, **FirstName**, et **LastName** propriétés à partir de la **employé** objet. (En d’autres termes, supprimez toutes les propriétés à l’exception de **Manager**.)
+5.  Supprimez les propriétés **Type**, **ID**, **FirstName** et **LastName** de l’objet **Employé**. (En d’autres termes, supprimez toutes les propriétés à l’exception de **Manager**.)
 
-6.  À partir de la **concepteur objet/relationnel** onglet de la **boîte à outils**, créer un **héritage** entre le **personne** et  **Employé** objets. Pour ce faire, cliquez sur le **héritage** d’élément dans le **boîte à outils** et relâchez le bouton de la souris. Ensuite, cliquez sur le **employé** objet, puis le **personne** de l’objet dans le **Concepteur O/R**. La flèche sur la ligne d’héritage pointe alors vers le **personne** objet.
+6.  À partir de l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils**, créez un **Héritage** entre les objets **Personnel** et **Employé**. Pour cela, cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris. Ensuite, cliquez sur le **employé** objet, puis le **personne** de l’objet dans le **Concepteur O/R**. La flèche sur la ligne d’héritage pointe alors vers le **personne** objet.
 
-7.  Cliquez sur le **héritage** ligne sur l’aire de conception.
+7.  Cliquez sur la ligne **Héritage** dans l’aire de conception.
 
-8.  Définir le **propriété de discriminateur** propriété **Type**.
+8.  Affectez à **Propriété de discriminateur** la valeur **Type**.
 
-9. Définir le **valeur de discriminateur de classe dérivée** propriété **2**.
+9. Affectez à la propriété **Valeur de discriminateur de classe dérivée** la valeur **2**.
 
-10. Définir le **valeur de discriminateur de classe de Base** propriété **1**.
+10. Affectez à la propriété **Valeur de discriminateur de classe de base** la valeur **1**.
 
-11. Définir le **héritage par défaut** propriété **personne**.
+11. Affectez à la propriété **Héritage par défaut** la valeur **Personnel**.
 
 12. Générez le projet.
 
-## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>La classe héritée de la requête et afficher les données sur le formulaire
+## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Interroger la classe héritée et afficher des données sur le formulaire
  Vous ajoutez maintenant du code au formulaire qui interroge une classe spécifique dans le modèle objet.
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Pour créer une requête LINQ et afficher les résultats sur le formulaire
 
-1.  Faites glisser un **ListBox** sur **Form1**.
+1.  Faites glisser une **Zone de liste** sur **Form1**.
 
 2.  Double-cliquez sur le formulaire pour créer un gestionnaire d'événements `Form1_Load`.
 
@@ -177,15 +176,15 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
     ```
 
 ## <a name="test-the-application"></a>Tester l’application
- Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous les employés (enregistrements qui ont une valeur de 2 dans leur **Type** colonne).
+ Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous des employés (enregistrements qui ont une valeur 2 dans leur colonne **Type**).
 
 ### <a name="to-test-the-application"></a>Pour tester l'application
 
 1.  Appuyez sur **F5**.
 
-2.  Vérifiez qui enregistre uniquement qui ont une valeur de 2 dans leur **Type** colonne sont affichés.
+2.  Vérifiez que seuls les enregistrements qui ont une valeur 2 dans leur colonne **Type** sont affichés.
 
-3.  Fermez le formulaire. (Sur le **déboguer** menu, cliquez sur **arrêter le débogage**.)
+3.  Fermez le formulaire. (Dans le menu **Déboguer**, cliquez sur **Arrêter le débogage**.)
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -193,4 +192,4 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 - [Procédure pas à pas : Création de LINQ to SQL classes (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Comment : générer le modèle objet en Visual Basic ou c#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Guide pratique pour Générer le modèle objet en Visual Basic ouC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

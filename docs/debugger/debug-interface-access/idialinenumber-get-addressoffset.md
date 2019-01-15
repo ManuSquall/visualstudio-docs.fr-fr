@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_addressOffset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96accb2f62c2a92b6e48eb9d8a70434381ad9cfe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2485c77313376b6f4a9a1e7dcbc28165302d41ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913228"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 Récupère la partie décalage de l’adresse mémoire où un bloc commence.  
@@ -27,7 +25,7 @@ Récupère la partie décalage de l’adresse mémoire où un bloc commence.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: Déploiement de composants COM avec ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888450"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Déployer des composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Composants doivent être inscrits dans le monde entier et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou offrent une compatibilité côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le Windows XP ou un système d’exploitation ultérieur.  
@@ -165,7 +163,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 - Le composant gère un appareil physique ou virtuel pour le système, par exemple, un pilote de périphérique pour un spouleur d’impression.  
   
-- Le composant est un redistribuable Data Access. Les applications de données requièrent généralement un redistribuable Data Access distinct doit être installé avant de pouvoir exécuter. Vous ne devez pas essayer d’isoler des composants tels que le contrôle de données Microsoft ADO, OLE DB de Microsoft ou Microsoft Data Access Components (MDAC). Au lieu de cela, si votre application utilise MDAC ou SQL Server Express, vous devez les définir comme composants requis ; consultez [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Le composant est un redistribuable Data Access. Les applications de données requièrent généralement un redistribuable Data Access distinct doit être installé avant de pouvoir exécuter. Vous ne devez pas essayer d’isoler des composants tels que le contrôle de données Microsoft ADO, OLE DB de Microsoft ou Microsoft Data Access Components (MDAC). Au lieu de cela, si votre application utilise MDAC ou SQL Server Express, vous devez les définir comme composants requis ; consultez [Comment : installer des prérequis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
   
   Dans certains cas, il peut être possible pour le développeur du composant à reconcevoir pour COM sans inscription. Si ce n’est pas possible, vous pouvez toujours générer et publier des applications qui en dépendent, via le modèle d’inscription standard à l’aide du programme d’amorçage. Pour plus d’informations, consultez [création de Packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).  
   

@@ -1,8 +1,6 @@
 ---
 title: CV_HREG_e | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829642"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Spécifie un Registre de la cible.  
@@ -30,8 +28,8 @@ Spécifie un Registre de la cible.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-enum CV_HREG_e {   
-   // Register subset shared by all processor types   
+enum CV_HREG_e {   
+   // Register subset shared by all processor types   
    CV_ALLREG_ERR    = 30000,  
    CV_ALLREG_TEB    = 30001,  
    CV_ALLREG_TIMER  = 30002,  
@@ -238,7 +236,7 @@ enum CV_HREG_e {
    // CV_M4_FltF1 through CV_M4_FltF31 defined  
    CV_M4_FltFsr  = 92,  
   
-   //** Register set for the ALPHA AXP **//  
+   //** Register set for the ALPHA AXP **//  
    CV_ALPHA_NOREG    = CV_REG_NONE,  
    CV_ALPHA_FltF0    = 10, // Floating point registers  
    // CV_ALPHA_FltF1 through CV_ALPHA_FltF31 defined  
@@ -407,7 +405,7 @@ enum CV_HREG_e {
    CV_M32R_ACLO  = 33, // Accumulator low  
    CV_M32R_PC    = 34, // Program counter  
   
-} CV_HREG_e;  
+} CV_HREG_e;  
 ```  
   
 ## <a name="elements"></a>Éléments  
@@ -463,7 +461,7 @@ enum CV_HREG_e {
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  
- [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
  [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   

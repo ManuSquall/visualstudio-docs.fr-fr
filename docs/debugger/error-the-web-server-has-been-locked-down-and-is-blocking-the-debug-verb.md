@@ -1,8 +1,6 @@
 ---
-title: 'Erreur : Le serveur Web a été verrouillé et bloque le verbe DEBUG | Documents Microsoft'
-ms.custom: ''
+title: 'Erreur : Le serveur Web a été verrouillé et bloque l’exécution du verbe DEBUG | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941555"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG
 L’exécution pas à pas d’une application Web ou d’un service web XML a échoué, car l’outil de verrouillage IIS a été exécuté et URLScan a été installé et activé. Cette condition empêche IIS de recevoir le verbe DEBUG.  
@@ -38,7 +36,7 @@ L’exécution pas à pas d’une application Web ou d’un service web XML a é
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  Créer une copie du fichier et nommez-la **Urlscan.old**.  
+2.  Créez une copie du fichier et nommez-la **Urlscan.old**.  
   
 3.  Ouvrez la copie originale du fichier Urlscan.ini à l'aide du Bloc-notes ou de l'éditeur de texte de votre choix.  
   
@@ -51,5 +49,5 @@ L’exécution pas à pas d’une application Web ou d’un service web XML a é
 7.  Redémarrez le serveur ou redémarrez IIS.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’Applications Web : Erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Erreur : le serveur web n’a pas trouvé la ressource demandée](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

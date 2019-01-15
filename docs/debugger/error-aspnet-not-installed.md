@@ -1,8 +1,6 @@
 ---
-title: 'Erreur : ASP.NET ne pas installé | Microsoft Docs'
-ms.custom: ''
+title: 'Erreur : ASP.NET n’est ne pas installé | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http_not_supported
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 754d196ba49e97ed0a70ca988d4ae65aed001bdc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41ec708b25bc74eb1f566981ee4bbcdc23827087
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902107"
 ---
-# <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n'est pas installé
+# <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n’est pas installé
 Cette erreur se produit quand [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] n'est pas installé correctement sur l'ordinateur que vous tentez de déboguer. Cela peut signifier qu'[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] n'a jamais été installé ou qu'[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] a été installé avant les services IIS (Internet Information Services).  
   
 ### <a name="to-reinstall-aspnet"></a>Pour réinstaller ASP.NET  
@@ -42,7 +40,7 @@ Cette erreur se produit quand [!INCLUDE[vstecasp](../code-quality/includes/vstec
     où *version* représente le numéro de version du .NET Framework installée sur votre ordinateur, par exemple v1.0.370. Vous pouvez déterminer la version du framework en consultant le `\WINDOWS\Microsoft.NET\Framework` directory.  
   
    > [!NOTE]
-   >  Avec Windows Server 2003, vous pouvez installer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] à l’aide de **Ajout / Suppression de programmes** dans le panneau de configuration.  
+   >  Sous Windows Server 2003, vous pouvez installer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] avec **Ajout/Suppression de programmes** dans le Panneau de configuration.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

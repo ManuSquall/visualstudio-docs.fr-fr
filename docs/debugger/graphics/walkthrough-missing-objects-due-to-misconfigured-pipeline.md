@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison Pipeline mal configuré | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Objets manquants en raison de Pipeline mal configuré | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863967"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d'un pipeline mal configuré
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant, car un nuanceur de pixels n’a pas été défini.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
@@ -73,7 +71,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 #### <a name="to-examine-device-context"></a>Pour examiner le contexte de périphérique  
   
-1. Ouvrez le **Contexte de périphérique d3d11**. Dans le **étapes de canalisation Graphics** fenêtre, choisissez le **ID3D11DeviceContext** lien fait partie de la `DrawIndexed` appel qui s’affiche en haut de la fenêtre.  
+1. Ouvrez le **Contexte de périphérique d3d11**. Dans la fenêtre **Étapes de canalisation Graphics**, choisissez le lien **ID3D11DeviceContext** qui fait partie de l’appel `DrawIndexed` affiché en haut de la fenêtre.  
   
 2. Examinez l’état du périphérique affiché sous l’onglet **Contexte de périphérique d3d11** pour vérifier qu’aucun nuanceur de pixels n’était actif pendant l’appel de dessin. Dans ce scénario, les **Informations générales sur le nuanceur**(affichées sous **État du nuanceur de pixels**) indiquent que le nuanceur est **NULL**:  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : enregistrer des données dans une transaction'
+title: 'Procédure pas à pas : Enregistrer des données dans une transaction'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eddd0252bca5cea3f683f0e00133b8e6e66392f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952178"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Procédure pas à pas : enregistrer des données dans une transaction
+# <a name="walkthrough-save-data-in-a-transaction"></a>Procédure pas à pas : Enregistrer des données dans une transaction
 
 Cette procédure pas à pas montre comment enregistrer des données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Dans cette procédure pas à pas, vous allez créer une application Windows Forms. Vous utiliserez l’Assistant de Configuration de Source de données pour créer un jeu de données pour les deux tables dans la base de données Northwind. Vous allez ajouter des contrôles liés aux données à un formulaire Windows, et vous allez modifier le code de BindingNavigator bouton Enregistrer Mettre à jour de la base de données à l’intérieur d’un TransactionScope.
 

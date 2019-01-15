@@ -1,8 +1,6 @@
 ---
 title: Envoyer des messages dans la fenêtre Sortie | Microsoft Docs
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906746"
 ---
-# <a name="send-messages-to-the-output-window"></a>Envoyer des messages dans la fenêtre Sortie
+# <a name="send-messages-to-the-output-window"></a>Envoyer des messages vers la Fenêtre Sortie
 
 Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide de la fenêtre la <xref:System.Diagnostics.Debug> classe ou le <xref:System.Diagnostics.Trace> (classe), qui font partie de la <xref:System.Diagnostics> bibliothèque de classes. Utilisez le <xref:System.Diagnostics.Debug> classe si vous ne voulez que la sortie le *déboguer* version de votre programme. Utilisez le <xref:System.Diagnostics.Trace> classe si vous souhaitez que la sortie à la fois dans le *déboguer* et *version* versions.  
   
@@ -62,5 +60,5 @@ Le **sortie** fenêtre peut également afficher des informations sur :
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Fenêtre Sortie](../ide/reference/output-window.md)   
  [Trace et instrumenter des applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [C#, F#et les types de projets Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)

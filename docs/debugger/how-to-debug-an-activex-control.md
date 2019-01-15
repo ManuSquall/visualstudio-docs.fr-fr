@@ -1,8 +1,6 @@
 ---
-title: 'Comment : déboguer un contrôle ActiveX | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer un contrôle ActiveX | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924785"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Comment : déboguer un contrôle ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Procédure : déboguer un contrôle ActiveX
 
 > [!NOTE]
 > Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).

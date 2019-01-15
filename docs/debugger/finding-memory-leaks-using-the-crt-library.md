@@ -1,8 +1,6 @@
 ---
 title: Rechercher les fuites de mémoire avec la bibliothèque CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931025"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Rechercher les fuites de mémoire avec la bibliothèque CRT
 
@@ -195,13 +193,13 @@ Vous pouvez utiliser le numéro d'allocation pour définir un point d'arrêt sur
    
 1. Appuyez sur **Entrée**.  
    
-   Le débogueur évalue l'expression et place le résultat dans la colonne **Valeur** . Cette valeur sera **-1** si vous n’avez pas défini les points d’arrêt sur les allocations de mémoire.  
+   Le débogueur évalue l'expression et place le résultat dans la colonne **Valeur** . Cette valeur est égale à **-1** si vous n’avez défini aucun point d’arrêt sur les allocations de mémoire.  
    
 1. Dans le **valeur** colonne, remplacez la valeur par le numéro d’allocation de l’allocation de mémoire où vous souhaitez que le débogueur s’arrête.  
 
 Une fois que vous définissez un point d’arrêt sur un numéro d’allocation de mémoire, continuer le débogage. Veillez à exécuter dans les mêmes conditions, donc ne change pas le numéro d’allocation de mémoire. Lorsque votre programme s’arrête à l’allocation de mémoire spécifiée, utilisez la **pile des appels** fenêtre et autres fenêtres du débogueur pour déterminer les conditions sous lesquelles la mémoire a été allouée. Ensuite, vous pouvez poursuivre l’exécution pour observer ce qui se passe à l’objet et déterminer la raison pour laquelle elle n’est pas correctement libérée.  
 
-La définition d’un point d’arrêt sur variable peut aussi s’avérer utile. Pour plus d’informations, consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).  
+La définition d’un point d’arrêt sur variable peut aussi s’avérer utile. Pour plus d’informations, consultez [Utilisation des points d’arrêt](../debugger/using-breakpoints.md).  
 
 Vous pouvez aussi définir des points d’arrêt d’allocation de mémoire dans le code. Vous pouvez définir :  
 

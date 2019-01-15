@@ -75,7 +75,7 @@ Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclic
 
 2.  Cliquez sur le bouton **Fichiers d’application** .
 
-3.  Recherchez ClickOnceLibrary.dll dans la liste. Affectez la valeur **Inclure** à la zone de liste déroulante **État de la publication**.
+3.  Recherchez *ClickOnceLibrary.dll* dans la liste. Affectez la valeur **Inclure** à la zone de liste déroulante **État de la publication**.
 
 4.  Développez la zone de liste déroulante **Groupe** et sélectionnez **Nouveau**. Entrez `ClickOnceLibrary` comme nom du nouveau groupe.
 
@@ -91,7 +91,7 @@ Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclic
 
 ## <a name="test-the-new-assembly"></a>Tester le nouvel assembly
 
-Pour tester votre assembly à la demande
+Pour tester votre assembly à la demande :
 
 1. Démarrez votre application déployée avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 

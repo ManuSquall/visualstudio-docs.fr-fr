@@ -1,8 +1,6 @@
 ---
 title: Problèmes de sécurité, le contrôle de version et manifestes dans les déploiements ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927140"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes de sécurité, le contrôle de version et manifestes dans les déploiements ClickOnce
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes liés à la sécurité, à la gestion de version et aux manifestes dans les déploiements ClickOnce
 
 Il existe une variété de problèmes avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sécurité, des versions et manifeste de syntaxe et sémantique qui peut entraîner un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] réussite du déploiement ne pas.
 
@@ -51,7 +49,7 @@ Si votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
 
 Pour plus d’informations et d’obtenir des instructions sur la façon de modifier le quota d’application en ligne, consultez [vue d’ensemble du cache ClickOnce](../deployment/clickonce-cache-overview.md).
 
-## <a name="versioning-issues"></a>Problèmes de contrôle de version
+## <a name="versioning-issues"></a>Problèmes de gestion des versions
 
 Vous pouvez rencontrer des problèmes si vous assignez des noms forts à votre assembly et incrémentez le numéro de version d’assembly pour refléter une mise à jour de l’application. N’importe quel assembly compilé avec une référence à un assembly avec nom fort doit être recompilé ou l’assembly va tenter de faire référence à l’ancienne version. L’assembly va tenter cela, car l’assembly est à l’aide de l’ancienne valeur de version dans sa demande de liaison.
 
@@ -98,6 +96,6 @@ Si vous souhaitez déplacer ou copier une application, vous devez également met
 
 ## <a name="see-also"></a>Voir aussi
 
-[Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
+[Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
 [Applications ClickOnce de Securw](../deployment/securing-clickonce-applications.md)  
-[Choisissez une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

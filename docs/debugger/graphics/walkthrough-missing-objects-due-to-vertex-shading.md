@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison Vertex Shader | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Objets manquants en raison de Vertex Shader | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ee92eb8418fce37182b78364d08c2570f32da9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 66428fa389b3adc152524d3d17ce7dd8135b1dbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940678"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant à cause d’une erreur survenue à l’étape du nuanceur de sommets.  
@@ -108,7 +106,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
    > [!TIP]
    >  Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.  
   
-   Une fois que vous recherchez l’emplacement où la mémoire tampon constante est remplie et que vous découvrez que ses valeurs proviennent de la variable `m_marbleConstantBufferData`, l’étape suivante consiste à trouver l’endroit où le `m_marbleConstantBufferData.projection` membre est défini sur tous les zéros non significatifs. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
+   Vous avez trouvé l’endroit où la mémoire tampon constante est remplie et découvert que ses valeurs proviennent de la variable `m_marbleConstantBufferData`. Vous devez maintenant trouver l’endroit où le membre `m_marbleConstantBufferData.projection` a une valeur composée de zéros. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Pour rechercher où le membre projection est défini dans le code source de votre application  
   

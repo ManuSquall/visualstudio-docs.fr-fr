@@ -1,8 +1,6 @@
 ---
 title: IDiaAddressMap::put_addressMapEnabled | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f139e6d034fc3b738e345f385fbb8e8ad2150da4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6894cb14d2aee6a4e1999eab38e095911d51360d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876011"
 ---
 # <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 Spécifie si le mappage d’adresses doit être utilisé pour traduire les adresses de symbole.  
@@ -27,7 +25,7 @@ Spécifie si le mappage d’adresses doit être utilisé pour traduire les adres
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT put_addressMapEnabled (   
+HRESULT put_addressMapEnabled (   
    BOOL NewVal  
 );  
 ```  

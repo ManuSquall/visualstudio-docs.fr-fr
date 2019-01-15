@@ -39,7 +39,7 @@ Vous pouvez créer un typé <xref:System.Data.DataSet> classe dans Visual Studio
 
 4. Choisissez les tables (ou des colonnes individuelles), procédures stockées, fonctions et vues à partir de la base de données que vous souhaitez être représenté dans le jeu de données.
 
-     ![Choix des objets de base de données](../data-tools/media/raddata-chose-objects.png)
+     ![Choisir des objets de base de données](../data-tools/media/raddata-chose-objects.png)
 
 5. Cliquez sur **Terminer**.
 
@@ -81,7 +81,7 @@ Cette procédure montre comment ajouter une table à partir de la même base de 
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Ajouter une table de données autonome à un jeu de données
 
-1. Ouvrez votre dataset dans le Concepteur de DataSet **.
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
 2. Faites glisser un <xref:System.Data.DataTable> classe à partir de la **DataSet** onglet de la **boîte à outils** sur le **Concepteur de Dataset**.
 

@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_statement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1c2602f9336d5e59a9e692f13170aacf68a1c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8c6b16d142f5bdc83b9a16e3299c15a0c845cf2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949321"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Récupère un indicateur qui spécifie que les informations de ligne décrivent le début d’une instruction, plutôt que d’une expression, dans la source du programme.  
@@ -27,7 +25,7 @@ Récupère un indicateur qui spécifie que les informations de ligne décrivent 
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_statement (   
+HRESULT get_statement (   
    BOOL* pRetVal  
 );  
 ```  

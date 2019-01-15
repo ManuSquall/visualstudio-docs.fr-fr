@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_machineType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7969a82ac6103a81b7849bc9f983842c9ebd6e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0b1975bed92547f842b6fef548a9773316f0816d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957431"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 Récupère le type de l’unité centrale cible.  
@@ -27,7 +25,7 @@ Récupère le type de l’unité centrale cible.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_machineType (   
+HRESULT get_machineType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -43,5 +41,5 @@ HRESULT get_machineType (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="see-also"></a>Voir aussi  
- [CV_CPU_TYPE_e (énumération)](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
+ [CV_CPU_TYPE_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

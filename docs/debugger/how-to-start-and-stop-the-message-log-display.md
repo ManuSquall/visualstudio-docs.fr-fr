@@ -1,8 +1,6 @@
 ---
-title: 'Comment : Démarrer et arrêter l’affichage du journal des messages | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure : Démarrer et arrêter l’affichage du journal des messages | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926634"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Comment : démarrer et arrêter l'affichage du journal des messages
-Lorsqu’un [vue Messages](../debugger/messages-view.md) fenêtre est active, un **Start Logging** ou **arrêter l’enregistrement** choix s’affiche dans Spy ++ **Messages** menu et le correspondant **Start Logging** ou **Stop Logging** bouton de barre d’outils devient actif.  
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Procédure : Démarrer et arrêter l’affichage du journal des messages
+Quand un [vue Messages](../debugger/messages-view.md) fenêtre est active, un **Start Logging** ou **Stop Logging** choix s’affiche sur Spy ++ **Messages** menu et le correspondant **Start Logging** ou **Stop Logging** bouton de barre d’outils devienne actif.  
   
 ### <a name="to-start-the-message-log-display"></a>Pour démarrer l’affichage du journal des messages  
   

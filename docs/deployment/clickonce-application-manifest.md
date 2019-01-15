@@ -1,8 +1,6 @@
 ---
 title: Manifeste d’Application ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929226"
 ---
 # <a name="clickonce-application-manifest"></a>Manifeste d’application ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application est un fichier XML qui décrit une application qui est déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -37,8 +35,8 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d
 | [\<trustInfo > élément](../deployment/trustinfo-element-clickonce-application.md) | Identifie les exigences de sécurité de l’application. | Aucun. |
 | [\<entryPoint > élément](../deployment/entrypoint-element-clickonce-application.md) | Obligatoire. Identifie le point d’entrée de code application. | `name` |
 | [\<dépendance > élément](../deployment/dependency-element-clickonce-application.md) | Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés. | Aucun. |
-| [\<file>, élément](../deployment/file-element-clickonce-application.md) | Facultatif. Identifie chaque fichier de l’autre qui est utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md) | Facultatif. Identifie une extension de fichier à associer à l’application. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<file>, élément](../deployment/file-element-clickonce-application.md) | Optionnel. Identifie chaque fichier de l’autre qui est utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md) | Optionnel. Identifie une extension de fichier à associer à l’application. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>Notes  
  Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichier manifeste d’application identifie une application déployée à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Pour plus d’informations sur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consultez [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).  
@@ -46,10 +44,10 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d
 ## <a name="file-location"></a>Emplacement du fichier  
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application est spécifique à une seule version d’un déploiement. Pour cette raison, ils doivent être stockés séparément des manifestes de déploiement. La convention commune consiste à les placer dans un sous-répertoire nommé d’après la version associée.  
 
- Le manifeste d’application doit toujours être signé avant le déploiement. Si vous modifiez manuellement un manifeste d’application, vous devez utiliser *mage.exe* pour resigner le manifeste d’application, mettre à jour le manifeste de déploiement et signer à nouveau le manifeste de déploiement. Pour plus d’informations, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Le manifeste d’application doit toujours être signé avant le déploiement. Si vous modifiez manuellement un manifeste d’application, vous devez utiliser *mage.exe* pour resigner le manifeste d’application, mettre à jour le manifeste de déploiement et signer à nouveau le manifeste de déploiement. Pour plus d’informations, consultez [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier  
- Le nom d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichier manifeste d’application doit être le nom complet et l’extension de l’application, comme indiqué dans le `assemblyIdentity` élément, suivi de l’extension *.manifest*. Par exemple, un manifeste d’application qui fait référence à la *Example.exe* application utiliserait la syntaxe de nom de fichier suivante.  
+ Le nom d’un fichier de manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] doit reprendre le nom complet et l’extension de l’application telle qu’identifiée dans l’élément `assemblyIdentity`, suivi de l’extension *.manifest*. Par exemple, un manifeste d’application qui fait référence à la *Example.exe* application utiliserait la syntaxe de nom de fichier suivante.  
 
  `example.exe.manifest`  
 

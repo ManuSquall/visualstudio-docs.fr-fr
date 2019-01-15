@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_frontEndBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1b74ae23d8ccfd963e60d6b794d656c2e72e8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 36b931323c676c23d56cff9810f45df200e3cf88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904992"
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 Récupère le numéro de build de front-end.  
@@ -27,7 +25,7 @@ Récupère le numéro de build de front-end.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_frontEndBuild (   
+HRESULT get_frontEndBuild (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,11 +45,11 @@ HRESULT get_frontEndBuild (
   
  Un serveur frontal ou le numéro de version de serveur principal est composé de trois parties : \<majeure >.\< mineure >. \<Générer >, où \<majeure > est le numéro de version principale, \<mineure > est le numéro de version mineure et \<Générer > est le numéro de build. Par exemple, 13.10.3077.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,8 +1,6 @@
 ---
-title: 'Comment : Pg préc ou vers le bas dans la mémoire | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Page précédente ou suivante en mémoire | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902225"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Comment : se déplacer d'une page vers le haut ou vers le bas dans la mémoire
+# <a name="how-to-page-up-or-down-in-memory"></a>Procédure : Se déplacer d’une page vers le haut ou vers le bas dans la mémoire
 
-Lorsque vous affichez le contenu de la mémoire dans un **mémoire** fenêtre ou le **désassemblage** fenêtre, vous pouvez utiliser la barre de défilement verticale pour faire monter ou Descendre dans l’espace de mémoire.  
+Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou **Code Machine**, vous pouvez vous servir de la barre de défilement verticale pour vous déplacer dans l’espace mémoire.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Pour vous déplacer d'une page vers le haut ou vers le bas dans la mémoire  
   
@@ -49,6 +47,6 @@ Lorsque vous affichez le contenu de la mémoire dans un **mémoire** fenêtre ou
 -   Cliquez sur la flèche en haut ou en bas de la barre de défilement vertical.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mémoire Windows](../debugger/memory-windows.md)   
- [Comment : utiliser la fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md)   
+ [Fenêtres Mémoire](../debugger/memory-windows.md)   
+ [Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
