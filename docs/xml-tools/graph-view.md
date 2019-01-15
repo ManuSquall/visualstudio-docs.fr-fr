@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826992"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269902"
 ---
 # <a name="graph-view"></a>Vue du graphique
 
@@ -42,7 +42,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  La barre de fil d'Ariane (breadcrumb) en bas de la vue du graphique indique l'emplacement du nœud sélectionné dans le jeu de schémas. Si plusieurs éléments sont sélectionnés, la barre de fil d'Ariane (breadcrumb) est vide.
 
-## <a name="context-menu"></a>Menu contextuel
+## <a name="context-right-click-menu"></a>Menu contextuel (clic droit)
 
  Le tableau décrit les options disponibles pour tous les nœuds sur l'aire de conception de la vue du graphique.
 
@@ -92,7 +92,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
 ## <a name="properties-window"></a>Fenêtre Propriétés
 
- Utilisez le menu contextuel pour ouvrir la **propriétés** fenêtre. Par défaut, le **propriétés** fenêtre apparaît dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud qui est affiché dans la vue de modèle de contenu, les propriétés de ce nœud seront affichera dans le **propriétés** fenêtre.
+ Utilisez le menu contextuel (clic droit) pour ouvrir la **propriétés** fenêtre. Par défaut, le **propriétés** fenêtre apparaît dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud qui est affiché dans la vue de modèle de contenu, les propriétés de ce nœud seront affichera dans le **propriétés** fenêtre.
 
 ## <a name="xsd-toolbar"></a>Barre d’outils XSD
 
@@ -102,9 +102,9 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
 |Option|Description|
 |-|-----------------|
-|**Afficher la vue de départ**|Bascule vers le [démarrer l’affichage](../xml-tools/start-view.md). Cette vue est accessible en utilisant le raccourci clavier : **CTRL**+**1**.|
-|**Afficher la vue de modèle de contenu**|Bascule vers le [vue du modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible en utilisant le raccourci clavier : **CTRL**+**2**.|
-|**Afficher la vue du graphique**|Bascule vers le [vue graphique](../xml-tools/graph-view.md). Cette vue est accessible en utilisant le raccourci clavier : **CTRL**+**3**.|
+|**Afficher la vue de départ**|Bascule vers le [démarrer l’affichage](../xml-tools/start-view.md). Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**1**.|
+|**Afficher la vue de modèle de contenu**|Bascule vers le [vue du modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**2**.|
+|**Afficher la vue du graphique**|Bascule vers le [vue graphique](../xml-tools/graph-view.md). Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**3**.|
 |**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
 |**Supprimer à partir de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
@@ -141,7 +141,7 @@ Le curseur de Zoom est opaque lorsque vous sélectionnez il, pointez dessus ou u
 
 ## <a name="xml-editor-integration"></a>Intégration de l’éditeur XML
 
- Vous pouvez basculer entre la vue du graphique et l'Éditeur XML en cliquant sur un nœud et en utilisant le menu contextuel Afficher le code.
+ Vous pouvez basculer entre la vue du graphique et de l’éditeur XML en cliquant sur un nœud à l’aide du menu contextuel (clic droit) afficher le Code.
 
  Si vous apportez des modifications au jeu de schémas dans l’Éditeur XML, les modifications sont synchronisées dans la vue du graphique. Pour plus d’informations, consultez [intégration avec l’éditeur XML](../xml-tools/integration-with-xml-editor.md).
 

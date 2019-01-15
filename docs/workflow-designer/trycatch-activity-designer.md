@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858994"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269811"
 ---
 # <a name="trycatch-activity-designer"></a>Concepteur d'activités TryCatch
 
@@ -34,7 +34,7 @@ Le **TryCatch** Concepteur d’activités peut être déplacé de la **boîte à
 
 Cliquez sur le bouton développer dans le coin supérieur droit de **TryCatch** concepteur pour afficher la **essayez**, **intercepte**, et **enfin** zones dans le vue développée. Pour ajouter un bloc catch, cliquez sur le **ajouter un nouveau catch** bouton sur **TryCatch** concepteur. Le bouton se transforme en zone de liste déroulante Type. Sélectionnez un type d'exception et appuyez sur ENTRÉE pour ajouter le catch. Après avoir ajouté un **Catch**, la zone de catch se développe et une activité peut être déposée dans le bloc catch pour définir la logique d’exécution de l’interception. Notez la présence d’une zone de texte à droite de la zone de catch développée. Vous pouvez nommer la variable d'exception à l'aide de cette zone de texte. La variable d’exception peut uniquement être utilisée pour les activités au sein du même **Catch**.
 
-Le **TryCatch** concepteur ne prend pas en charge la modification **Catch**. Si vous souhaitez modifier le type d’exception, vous devez supprimer le **Catch** et ajouter un nouveau. Un **Catch** peut être supprimé en sélectionnant et en la supprimant ou en utilisant le **supprimer** menu sur le menu contextuel accédé par clic droit.
+Le **TryCatch** concepteur ne prend pas en charge la modification **Catch**. Si vous souhaitez modifier le type d’exception, vous devez supprimer le **Catch** et ajouter un nouveau. Un **Catch** peut être supprimé en sélectionnant et en la supprimant ou en sélectionnant **supprimer** dans le menu contextuel accessible par un clic droit.
 
 ### <a name="the-trycatch-properties"></a>Propriétés TryCatch
 

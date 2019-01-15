@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918977"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268498"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 
@@ -40,7 +40,7 @@ Le **Explorateur de schémas XML** fournit une vue hiérarchique de jeu à trave
 
 -   Si vous êtes sur le [vue de départ](../xml-tools/start-view.md), cliquez sur le **Explorateur de schémas XML** lien.
 
--   Si vous êtes sur le [vue du graphique](../xml-tools/graph-view.md) ou [affichage du modèle de contenu](../xml-tools/content-model-view.md) et avoir des nœuds dans votre espace de travail, utilisez le menu contextuel pour sélectionner le **Explorateur de schémas XML**.
+-   Si vous êtes sur le [vue du graphique](../xml-tools/graph-view.md) ou [affichage du modèle de contenu](../xml-tools/content-model-view.md) et avoir des nœuds dans votre espace de travail, utilisez le menu contextuel (clic droit) pour sélectionner le **Explorateur de schémas XML**.
 
 -   Vous pouvez également sélectionner le **Explorateur de schémas XML** à partir de la **vue** menu.
 

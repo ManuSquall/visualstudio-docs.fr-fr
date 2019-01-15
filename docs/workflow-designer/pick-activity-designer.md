@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946605"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269499"
 ---
 # <a name="pick-activity-designer"></a>Concepteur d'activités Pick
 
@@ -30,7 +30,7 @@ Une activité <xref:System.Activities.Statements.Pick> contient une collection d
 
 Accès le **choisir** Concepteur d’activités dans le **flux de contrôle** catégorie de la **boîte à outils**. Le **choisir** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail chaque fois que les concepteurs d’activités sont généralement placés, par exemple à l’intérieur d’un  **Séquence** Concepteur d’activités. Une fois déposé dans le Concepteur de flux de travail, il crée un <xref:System.Activities.Statements.Pick> activité, qui contient deux vide par défaut <xref:System.Activities.Statements.PickBranch> activités en tant qu’éléments avec des noms d’affichage des Branch1 et Branch2. Ces respectifs <xref:System.Activities.Statements.PickBranch.DisplayName%2A> les valeurs de propriété peuvent être modifiées dans le **PickBranch** en-tête du Concepteur d’activité ou à l’intérieur du **propriétés** fenêtre pour chaque branche.
 
-Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> activités à la collection d’un <xref:System.Activities.Statements.Pick> objet : glisser- déposer le **PickBranch** concepteur à partir de la **boîte à outils** ou en utilisant le menu contextuel à partir de dans le **choisir** aire de conception. Pour plus d’informations, consultez le [PickBranch](../workflow-designer/pickbranch-activity-designer.md) rubrique. Notez que le seul élément qui peut être placé à l’intérieur d’un **choisir** Concepteur d’activités est un **PickBranch** Concepteur d’activités.
+Il existe deux façons d’ajouter <xref:System.Activities.Statements.PickBranch> activités à la collection d’un <xref:System.Activities.Statements.Pick> objet : glisser- déposer le **PickBranch** concepteur à partir de la **boîte à outils** ou à l’aide du menu contextuel depuis la **choisir** aire de conception. Pour plus d’informations, consultez le [PickBranch](../workflow-designer/pickbranch-activity-designer.md) rubrique. Notez que le seul élément qui peut être placé à l’intérieur d’un **choisir** Concepteur d’activités est un **PickBranch** Concepteur d’activités.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Propriétés de l'activité Pick dans le concepteur de workflow
 

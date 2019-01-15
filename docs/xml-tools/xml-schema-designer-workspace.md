@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825254"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269148"
 ---
 # <a name="xml-schema-designer-workspace"></a>Espace de travail du Concepteur de schémas XML
 
@@ -30,7 +30,7 @@ Vous pouvez ajouter des nœuds à l'espace de travail des manières suivantes :
 
 -   Glissez -déplacez les nœuds globaux, les nœuds de fichier et les nœuds d’espace de noms à partir de la **Explorateur de schémas XML** sur une des trois vues. Pour plus d’informations, consultez la section « En faisant glisser et suppression de nœuds » dans [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md).
 
--   Utilisez le menu contextuel dans le **Explorateur de schémas XML**. Pour plus d’informations, consultez [menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Utilisez le menu contextuel (clic droit) dans le **Explorateur de schémas XML**. Pour plus d’informations, consultez [menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Effectuer une recherche dans l’Explorateur XSD, puis cliquez sur le **ajouter des nœuds en surbrillance à l’espace de travail** bouton dans le volet de synthèse des résultats. Pour plus d’informations, consultez [recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md).
 
@@ -40,7 +40,7 @@ Pour basculer d'une vue à l'autre, utilisez l'un des éléments suivants :
 
 -   Barre d'outils du Concepteur XSD.
 
--   Menus contextuels de la vue de modèle de contenu et vue du graphique.
+-   Les menus contextuels (clic droit) de la vue de modèle de contenu et la vue du graphique.
 
 -   Filigranes sur la page Vue de départ ou filigrane sur la vue de modèle de contenu ou la vue du graphique vide.
 
