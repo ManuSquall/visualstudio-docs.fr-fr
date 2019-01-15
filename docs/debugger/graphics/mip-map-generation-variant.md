@@ -43,7 +43,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
   Si des mipmaps ont été générés automatiquement pour une texture, les appels à `ID3D11Device::CreateShaderResourceView` sont modifiés pendant la lecture pour utiliser la chaîne MIP lors de l'échantillonnage de texture.  
   
 ## <a name="example"></a>Exemple  
- La variante Génération mipmap** peut être reproduite avec un code similaire à celui-ci :  
+ La variante **Génération mipmap** peut être reproduite avec un code similaire à celui-ci :  
   
 ```cpp
 D3D11_TEXTURE2D_DESC texture_description;  

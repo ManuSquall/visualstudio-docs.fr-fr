@@ -1,5 +1,5 @@
 ---
-title: 'Comment : activer et désactiver (Concepteur O-R) la pluralisation'
+title: 'Procédure : activer et désactiver la pluralisation (Concepteur O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -7,17 +7,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a2d2e44efc284c38cfc450833839776effb9936
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 99dc1c6fefae880d10c1dedd080f9abbceba4d1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961762"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Comment : activer et désactiver (Concepteur O/R) la pluralisation
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procédure : activer et désactiver la pluralisation (Concepteur O/R)
 Par défaut, lorsque vous faites glisser des objets de base de données qui ont des noms se terminant par s ou ies de **Explorateur de serveurs** ou **Database Explorer** sur le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), la noms des classes d’entité générées sont remplacés par au pluriel au singulier. C'est pour insister sur le fait que la classe d'entité instanciée mappe à un enregistrement unique de données. Par exemple, l’ajout un `Customers` de la table vers le **Concepteur O/R** des résultats dans une classe d’entité nommée `Customer` , car la classe conserve les données pour un seul client.
 
 > [!NOTE]
@@ -29,10 +28,10 @@ Par défaut, lorsque vous faites glisser des objets de base de données qui ont 
 
 1.  Dans le menu **Outils** , cliquez sur **Options**.
 
-2.  Dans le **Options** boîte de dialogue, développez **outils de base de données**.
+2.  Dans la boîte de dialogue **Options**, développez **Outils de base de données**.
 
     > [!NOTE]
-    >  Sélectionnez **afficher tous les paramètres** si le **outils de base de données** nœud n’est pas visible.
+    >  Sélectionnez **Afficher tous les paramètres** si le nœud **Outils de base de données** n’est pas visible.
 
 3.  Cliquez sur **Concepteur O/R**.
 

@@ -1,8 +1,6 @@
 ---
-title: Espionner les commandes de Menu | Documents Microsoft
-ms.custom: ''
+title: Espion de commandes de Menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a11b24f5f0f950fabe475a0f0099e76032451fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b0abf9695e0210cdae9785aafcd967513e48bf43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989527"
 ---
 # <a name="spy-menu-commands"></a>commandes du menu Spy
-Le **Spy** menu fournit des commandes pour manipuler les fenêtres Spy ++ et les vues.  
+Le **Spy** menu fournit des commandes pour travailler avec Spy ++ Windows et des vues.  
   
  **Fenêtres**  
- Ouvre une nouvelle vue de Windows.  
+ Ouvre un nouvel affichage de Windows.  
   
  **Processus**  
  Ouvre une nouvelle vue de processus.  
@@ -31,11 +29,11 @@ Le **Spy** menu fournit des commandes pour manipuler les fenêtres Spy ++ et les
  **Threads**  
  Ouvre une nouvelle vue Threads.  
   
- **Messages du journal**  
- Ouvre une nouvelle vue Messages et ouvre le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) pour la vue.  
+ **Enregistrer les messages**  
+ Ouvre un nouvel affichage de Messages et ouvre le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) pour la vue.  
   
- **Fen.**  
- Affiche la **FindWindow** boîte de dialogue pour sélectionner une fenêtre avec la souris.  
+ **Rechercher une fenêtre**  
+ Affiche le **FindWindow** boîte de dialogue pour sélectionner une fenêtre avec la souris.  
   
  **Quitter**  
  Ferme l’utilitaire Spy ++.

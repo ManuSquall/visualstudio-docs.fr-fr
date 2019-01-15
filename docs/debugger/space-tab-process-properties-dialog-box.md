@@ -1,8 +1,6 @@
 ---
-title: Onglet espace, la boîte de dialogue Propriétés du processus | Documents Microsoft
-ms.custom: ''
+title: Onglet espace, boîte de dialogue Propriétés de processus | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -12,26 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4b5a416c7d3eb466498e7cf4ff727134c0f20f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e9cc3489cd07576521356a40c9d4abd42507aee9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853253"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Onglet Espace de la boîte de dialogue Propriétés du processus
-Utilisez le **espace** onglet pour examiner l’espace d’adressage d’un processus. Pour afficher le [la boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacer le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
+Utilisez le **espace** onglet pour examiner l’espace d’adressage d’un processus. Pour afficher le [boîte de dialogue Propriétés de processus](../debugger/process-properties-dialog-box.md), déplacez le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
  Les paramètres suivants sont disponibles sur le **espace** onglet :  
   
 |Entrée|Description|  
 |-----------|-----------------|  
 |**Afficher l’espace marqué comme**|Utilisez cette zone de liste pour sélectionner la catégorie d’espace (image, mappé, réservé ou non assigné).|  
-|**Octets exécutables**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage à l’aide de ce processus. La mémoire exécutable est la mémoire qui peut être exécutée par les programmes, mais qui ne peut-être pas être lues ou écrite.|  
-|**Octets EXEC-lecture seule**|Pour la catégorie sélectionnée, la somme de l’espace d’adressage utilisé avec des propriétés en lecture seule à l’aide de ce processus. Mémoire EXEC-lecture seule est qui peut être exécutée tant la lecture.|  
-|**Octets de lecture / écriture EXEC**|Pour la catégorie sélectionnée, la somme de l’espace d’adressage en cours d’utilisation avec des propriétés en lecture-écriture à l’aide de ce processus. EXEC-lecture-écriture est la mémoire qui peut être exécutée par des programmes ainsi que lire et modifié.|  
-|**Octets d’écriture-EXEC de copie**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui peut être exécutée par des programmes ainsi que lue et modifiée. Ce type de protection est utilisé lors de la mémoire doit être partagé entre les processus. Si les processus de partage que lire la mémoire, puis ils utiliseront tous la même mémoire. Si un processus de partage désire un accès en écriture, puis une copie de cette mémoire sera pour le processus.|  
-|**Octets sans accès**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui empêche un processus de l’utiliser. Une violation d’accès est générée si l’écriture ou de la tentative de lecture.|  
-|**Octets en lecture seule**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui peut être exécutée tant la lecture.|  
-|**Octets de lecture-écriture.**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui permet la lecture et en écriture.|  
-|**Octets de la copie de l’écriture**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui autorise le partage de mémoire pour la lecture mais pas pour l’écriture. Lorsque des processus lisent cette mémoire, ils peuvent partager la même mémoire. Toutefois, lorsqu’un processus veut avoir accès en lecture/écriture à cette mémoire partagée, une copie de cette mémoire est effectuée pour l’écriture.|
+|**Octets exécutables**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage à l’aide de ce processus. La mémoire exécutable est la mémoire qui peut être exécutée par des programmes, mais qui ne peut pas être lues ou écrite.|  
+|**Octets exécutables-lecture seule**|Pour la catégorie sélectionnée, la somme de l’espace d’adressage en cours d’utilisation avec des propriétés en lecture seule à l’aide de ce processus. Mémoire EXEC-read-only est qui peut être exécutée tant la lecture.|  
+|**Octets exécutables-lecture-écriture**|Pour la catégorie sélectionnée, la somme de l’espace d’adressage en cours d’utilisation avec des propriétés en lecture-écriture à l’aide de ce processus. Mémoire EXEC-lecture-écriture est la mémoire qui peut être exécutée par des programmes ainsi que lire et modifié.|  
+|**Octets d’écriture de EXEC de copie**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui peut être exécutée par des programmes ainsi que lue et modifiée. Ce type de protection est utilisé lors de la mémoire doit être partagé entre les processus. Si les processus de partage uniquement lire la mémoire, puis ils utiliseront tous la même mémoire. Si un processus de partage désire un accès en écriture, puis une copie de cette mémoire sera pour le processus.|  
+|**Octets sans accès**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui empêche un processus de l’utiliser. Une violation d’accès est générée si l’écriture ou lecture est tentée.|  
+|**Octets lecture seule**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui peut être exécuté ainsi que lire.|  
+|**Octets lecture-écriture**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui permet de lire et écrire.|  
+|**Octets écriture-copie**|Pour la catégorie sélectionnée, la somme de tout l’espace d’adressage qui autorise le partage de mémoire pour la lecture mais pas pour l’écriture. Lorsque des processus lisent cette mémoire, ils peuvent partager la même mémoire. Toutefois, lorsqu’un processus de partage souhaite avoir accès en lecture/écriture à cette mémoire partagée, une copie de cette mémoire est effectuée pour l’écriture.|

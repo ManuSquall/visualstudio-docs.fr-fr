@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 617d3afece5fbf5da2b347d097df65b5659263f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900111"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 
@@ -54,10 +53,10 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
     |Property|Explication du paramètre|
     |--------------| - |
-    |DataSource|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource> créé pour la table que vous avez fait glisser vers le contrôle (et non sur le <xref:System.Windows.Forms.BindingSource> créé en même temps que le contrôle).<br /><br /> Si vous avez besoin de faire des réglages, définissez ce paramètre sur le <xref:System.Windows.Forms.BindingSource> de la table contenant la colonne que vous souhaitez afficher.|
-    |DisplayMember|Visual Studio définit cette propriété sur la première colonne après la clé principale contenant un type de données de chaîne pour la table que vous avez fait glisser vers le contrôle.<br /><br /> Si vous avez besoin de faire des réglages, affectez-lui le nom de colonne que vous souhaitez afficher.|
-    |ValueMember|Visual Studio définit cette propriété sur la première colonne participant à la clé principale, ou la première colonne de la table si aucune clé n'est définie.<br /><br /> Si vous avez besoin de faire des réglages, affectez la valeur de la clé primaire dans la table avec la colonne que vous souhaitez afficher.|
-    |SelectedValue|Visual Studio définit cette propriété sur la colonne d’origine est supprimée de la **des Sources de données** fenêtre.<br /><br /> Si vous avez besoin de faire des réglages, affectez la valeur de la colonne de clé étrangère dans la table associée.|
+    |**DataSource**|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource> créé pour la table que vous avez fait glisser vers le contrôle (et non sur le <xref:System.Windows.Forms.BindingSource> créé en même temps que le contrôle).<br /><br /> Si vous avez besoin de faire des réglages, définissez ce paramètre sur le <xref:System.Windows.Forms.BindingSource> de la table contenant la colonne que vous souhaitez afficher.|
+    |**DisplayMember**|Visual Studio définit cette propriété sur la première colonne après la clé principale contenant un type de données de chaîne pour la table que vous avez fait glisser vers le contrôle.<br /><br /> Si vous avez besoin de faire des réglages, affectez-lui le nom de colonne que vous souhaitez afficher.|
+    |**ValueMember**|Visual Studio définit cette propriété sur la première colonne participant à la clé principale, ou la première colonne de la table si aucune clé n'est définie.<br /><br /> Si vous avez besoin de faire des réglages, affectez la valeur de la clé primaire dans la table avec la colonne que vous souhaitez afficher.|
+    |**SelectedValue**|Visual Studio définit cette propriété sur la colonne d’origine est supprimée de la **des Sources de données** fenêtre.<br /><br /> Si vous avez besoin de faire des réglages, affectez la valeur de la colonne de clé étrangère dans la table associée.|
 
 ## <a name="see-also"></a>Voir aussi
 

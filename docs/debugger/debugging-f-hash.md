@@ -1,8 +1,6 @@
 ---
-title: 'Débogage de F # | Documents Microsoft'
-ms.custom: ''
+title: Débogage F# | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3bb2a9379dd6cd43bb0398ccda2b031b96d56e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0f526eb39a62de33910bfa5e3e1e72220be3ae3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903979"
 ---
 # <a name="debugging-f"></a>Débogage de F#
 Le débogage de F# est semblable au débogage de tout langage managé, à quelques exceptions près :  
   
--   Le **automatique** fenêtre n’affiche pas les variables F #.  
+-   La fenêtre **Automatique** n’affiche pas les variables F#.  
   
 -   L'opération Modifier & Continuer n'est pas prise en charge pour F# La modification du code F# pendant une session de débogage est possible mais doit être évitée. Dans la mesure où les modifications du code ne sont pas appliquées pendant la session de débogage, le fait de modifier le code F# lors du débogage provoquera une incompatibilité entre le code source et le code débogué.  
   

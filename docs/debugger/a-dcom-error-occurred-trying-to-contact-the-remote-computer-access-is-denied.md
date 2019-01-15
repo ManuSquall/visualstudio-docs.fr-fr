@@ -1,8 +1,6 @@
 ---
 title: Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.dcom_access_denied
@@ -22,21 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 193c93e7c29d3ea9fa13c08c9d77e4e88026d814
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
-ms.translationtype: MT
+ms.openlocfilehash: c329704ee7f2ea19f56d3bd9201783a04d967de7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "49900512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938656"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.
 Le débogage distant utilise DCOM pour les communications entre l’ordinateur hôte et l’ordinateur distant dans les situations suivantes :  
   
-- Le débogueur est défini sur **Mode de compatibilité natif** ou **Mode de compatibilité managé** est archivé le **Outils > Options > débogage** page  
+- Le débogueur est défini sur **Mode de compatibilité natif** ou l’option **Mode de compatibilité managé** est activée dans la page **Outils > Options > Débogage**.  
   
 - Vous déboguez du code C++ managé (C++/CLI).  
   
-- Dans Visual Studio 2013, lorsque **Activer Modifier & Continuer native** est archivé le **Outils > Options > débogage** page  
+- Dans Visual Studio 2013, l’option **Activer Modifier &amp; Continuer natif** est activée dans la page **Outils > Options > Débogage**.  
   
 - Quelques scénarios de débogage tiers  
   
@@ -51,5 +49,5 @@ Le débogage distant utilise DCOM pour les communications entre l’ordinateur h
 - Si le débogage distant requiert la saisie des informations d'identification, activez l'option pour enregistrer les informations d'identification.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

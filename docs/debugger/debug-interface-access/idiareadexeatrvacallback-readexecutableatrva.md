@@ -1,8 +1,6 @@
 ---
 title: IDiaReadExeAtRVACallback::ReadExecutableAtRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69afacf68c77dcb2bca7c951dbd2a1ee9a344cfb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8536d4ef7c6767920eb4d1bc9f3d0dcb44349714
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907240"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle relative (RVA) à partir du fichier exécutable.  
@@ -27,7 +25,7 @@ Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle re
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT ReadExecutableAtRVA (   
+HRESULT ReadExecutableAtRVA (   
    DWORD  relativeVirtualAddress,  
    DWORD  cbData,  
    DWORD* pcbData,  

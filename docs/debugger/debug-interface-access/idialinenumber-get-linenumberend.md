@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_lineNumberEnd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0dfff78c54c1e051e04c33ae73d82691bf0d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 73d20175422a78a2b84c1b969f7a9776a45b2522
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951535"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Récupère le numéro de ligne source basé sur un où se termine l’instruction ou une expression.  
@@ -27,7 +25,7 @@ Récupère le numéro de ligne source basé sur un où se termine l’instructio
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_lineNumberEnd (   
+HRESULT get_lineNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  

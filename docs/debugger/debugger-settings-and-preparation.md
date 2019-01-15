@@ -1,8 +1,6 @@
 ---
 title: Paramètres et préparation du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926839"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  
   
- Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Paramètres du projet de débogueur](../debugger/debugger-project-settings.md)  
@@ -42,13 +40,13 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
  [Projets console](../debugger/debugging-preparation-console-projects.md)  
  Fournit des instructions sur la configuration des projets console pour le débogage.   
   
- [Guide pratique pour déboguer un fichier exécutable ne faisant pas partie d’une solution Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Guide pratique pour déboguer un exécutable ne faisant pas partie d’une solution Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Explique comment déboguer un exécutable qui n’a pas été créé dans le cadre d’un projet Visual Studio.  
   
  [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)  
  Explique comment déboguer des applications 64 bits.  
   
- [Guide pratique pour spécifier une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Guide pratique pour indiquer une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Explique comment définir une clé de Registre pour indiquer au débogueur la version à utiliser.  
   
 ## <a name="see-also"></a>Voir aussi  

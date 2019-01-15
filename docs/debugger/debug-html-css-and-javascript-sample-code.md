@@ -1,8 +1,6 @@
 ---
-title: Exemple de code HTML et CSS de débogage | Documents Microsoft
-ms.custom: ''
+title: Exemple de code HTML et CSS de déboguer | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947554"
 ---
-# <a name="debug-html-and-css-sample-code"></a>Déboguer l’exemple de code HTML et CSS
+# <a name="debug-html-and-css-sample-code"></a>Déboguer des exemples de code HTML et CSS
   
- Le code dans cette rubrique est de l’exemple de fichier pour [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
+ Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
   
 ## <a name="sample-code"></a>Exemple de code  
- Le code HTML suivant est utilisé dans le \<corps > balise dans le démarrage rapide.  
+ Le code HTML suivant est utilisé dans l’étiquette \<body> du guide de démarrage rapide.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -51,7 +49,7 @@ ms.locfileid: "31456791"
 }  
 ```  
   
- L'exemple de code suivant affiche le code JavaScript complet dans default.js. Les références aux espaces de noms WinJS pour ce code se trouvent dans le fichier de modèle default.html.  
+ L'exemple de code suivant affiche le code JavaScript complet dans default.js. Les références aux espaces de noms WinJS pour ce code se trouvent dans le fichier default.html du modèle.  
   
 ```javascript  
 (function () {  

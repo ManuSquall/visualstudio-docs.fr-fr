@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 676e0ffeec21d453244df4938eea2cb0004ecf9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 643d58d735c2203aad58562405dd9729a775eaab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924996"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, dans ce symbole dans l’adresse virtuelle relative (RVA) spécifié.  
@@ -25,7 +23,7 @@ Récupère une énumération qui permet au client d’effectuer une itération d
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  
 ```  
@@ -46,6 +44,6 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD           
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)

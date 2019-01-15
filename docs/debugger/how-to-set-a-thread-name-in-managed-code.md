@@ -1,8 +1,6 @@
 ---
-title: 'Comment : définir un nom de Thread en Code managé | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure : Définir un nom de Thread dans du Code managé | Microsoft Docs'
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a732f691cbed525e853d74b5cf4e4abb55eb47
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867642"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Comment : définir un nom de thread dans le code managé
-Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans le **Threads** fenêtre.
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Procédure : définir un nom de thread dans du code managé
+Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans la fenêtre **Threads**.
   
  Pour définir un nom de thread en code managé, utilisez la propriété <xref:System.Threading.Thread.Name%2A>.  
   
@@ -78,5 +76,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Guide pratique pour définir un nom de thread dans du code natif](../debugger/how-to-set-a-thread-name-in-native-code.md)

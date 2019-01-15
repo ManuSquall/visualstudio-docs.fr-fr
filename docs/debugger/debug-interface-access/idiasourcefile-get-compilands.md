@@ -1,8 +1,6 @@
 ---
 title: IDiaSourceFile::get_compilands | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4c97f7e16f193d70048f3803ff764b0bfcdbc69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f799e543cfe5c94fb9f17d9a1e994e7fc3a68ab9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948353"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
 Récupère un énumérateur de compilands qui ont des numéros de ligne référençant ce fichier.  
@@ -27,7 +25,7 @@ Récupère un énumérateur de compilands qui ont des numéros de ligne référe
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_compilands (   
+HRESULT get_compilands (   
    IDiaEnumSymbols** ppRetVal  
 );  
 ```  

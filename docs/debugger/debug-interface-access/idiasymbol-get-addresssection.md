@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_addressSection | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e62f6738d07b2f0e4463cd685bf3111cd7011a10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 728bf422604bbc3890c2b35a5902dacc44e81ba5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923729"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 Récupère la partie de la section d’une adresse d’emplacement. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsStatic`.  
@@ -27,7 +25,7 @@ Récupère la partie de la section d’une adresse d’emplacement. Quand utilis
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_addressSection (   
+HRESULT get_addressSection (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,11 +45,11 @@ HRESULT get_addressSection (
   
  Pour obtenir la partie décalage d’une adresse, appelez le [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) (méthode).  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

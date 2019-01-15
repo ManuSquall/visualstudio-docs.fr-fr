@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_columnNumber | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c34c61b298f46fd10e15e31eb6fd38c65bb914
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 64b5b79a7f5342a240a16506f97322d915228949
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893391"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 Récupère le numéro de colonne où l’expression ou l’instruction commence.  
@@ -28,7 +26,7 @@ Récupère le numéro de colonne où l’expression ou l’instruction commence.
   
 ```  
 [C++]  
-HRESULT get_columnNumber (   
+HRESULT get_columnNumber (   
    DWORD* pRetVal  
 );  
 ```  

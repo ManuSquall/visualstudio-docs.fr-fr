@@ -1,8 +1,6 @@
 ---
 title: Débogage LINQ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871003"
 ---
 # <a name="debugging-linq"></a>Débogage LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend en charge le débogage du code LINQ (Language Integrated Query), avec certaines restrictions. La plupart des fonctionnalités de débogage sont compatibles avec les instructions LINQ, notamment l’exécution pas à pas, la définition de points d’arrêt et la consultation des résultats dans les fenêtres du débogueur. Cette rubrique décrit les principales limitations de débogage de LINQ.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend en charge le débogage du code LINQ (Language Integrated Query), avec certaines restrictions. La plupart des fonctionnalités de débogage sont compatibles avec les instructions LINQ, notamment l’exécution pas à pas, la définition de points d’arrêt et la consultation des résultats dans les fenêtres du débogueur. Cette rubrique décrit les principales restrictions liées au débogage de LINQ.  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> Affichage des résultats LINQ  
  Vous pouvez consulter le résultat d'une instruction LINQ à l'aide des DataTips, de la fenêtre Espion et de la boîte de dialogue Espion express. Lorsque vous utilisez une fenêtre source, vous pouvez suspendre le pointeur sur une requête dans la fenêtre source pour afficher un DataTip. Vous pouvez copier une variable LINQ et la coller dans la fenêtre Espion ou dans la boîte de dialogue Espion express.  
   
- Dans LINQ, une requête n'est pas évaluée lorsqu'elle est créée ou déclarée, mais uniquement lors de son utilisation. Par conséquent, la requête ne possède de valeur que lorsqu'elle est évaluée. Pour obtenir une description complète de la création de requête et d’évaluation, consultez [Introduction aux requêtes LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) ou [écrire votre première requête LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
+ Dans LINQ, une requête n'est pas évaluée lorsqu'elle est créée ou déclarée, mais uniquement lors de son utilisation. Par conséquent, la requête ne possède de valeur que lorsqu'elle est évaluée. Pour obtenir une description complète de la création de requête et d’évaluation, consultez [Introduction aux requêtes LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) ou [écrire votre première requête LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
   
  Pour afficher le résultat d'une requête, le débogueur doit l'évaluer. Cette évaluation implicite, qui se produit lorsque vous consultez le résultat d'une requête LINQ dans le débogueur, entraîne quelques effets dont vous devez tenir compte :  
   
@@ -46,7 +44,7 @@ ms.locfileid: "51349424"
  Lorsque vous déboguez du code LINQ, l'exécution pas à pas présente des différences de comportement que vous devez connaître.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
- Dans les requêtes LINQ to SQL, le code de prédicat n'est pas contrôlé par le débogueur. Par conséquent, vous ne pouvez pas effectuer d'exécution pas à pas du code de prédicat. Toute requête compilée en une arborescence de l'expression génère du code qui n'est pas contrôlé par le débogueur.  
+ Dans les requêtes LINQ to SQL, le code de prédicat n’est pas contrôlé par le débogueur. Par conséquent, vous ne pouvez pas effectuer d’exécution pas à pas du code de prédicat. Toute requête compilée en une arborescence de l’expression génère du code qui n’est pas contrôlé par le débogueur.  
   
 ### <a name="stepping-in-visual-basic"></a>Exécution pas à pas dans Visual Basic  
  Lorsque vous exécutez un programme Visual Basic pas à pas, si le débogueur rencontre une déclaration de requête, il n'effectue pas de pas à pas détaillé dans la déclaration, mais met en surbrillance la déclaration entière en tant qu'instruction unique. Ce comportement se produit car la requête n'est évaluée que lorsqu'elle est appelée. Pour plus d’informations, consultez [Introduction à LINQ en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq).  
@@ -71,9 +69,9 @@ Sub Main()
 End Sub  
 ```  
   
- Lors de la prochaine exécution pas à pas, le débogueur met en surbrillance `For Each cur In x`. À l'étape suivante, il effectue un pas à pas détaillé dans la fonction `MyFunction`. Après la fonction `MyFunction`, il revient à `Console.WriteLine(cur.ToSting())`. À aucun moment, le débogueur n'effectue de pas à pas détaillé dans le code de prédicat dans la déclaration de requête, alors qu'il évalue ce code.  
+ Lors de la prochaine exécution pas à pas, le débogueur met en surbrillance `For Each cur In x`. À l'étape suivante, il effectue un pas à pas détaillé dans la fonction `MyFunction`. Après la fonction `MyFunction`, il revient à `Console.WriteLine(cur.ToSting())`. À aucun moment, le débogueur n’effectue de pas à pas détaillé dans le code de prédicat dans la déclaration de requête, alors qu’il évalue ce code.  
   
-### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Remplacement d'un prédicat par une fonction pour activer l'exécution pas à pas (Visual Basic)  
+### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Remplacement d’un prédicat par une fonction pour activer l’exécution pas à pas (Visual Basic)  
  Si vous devez effectuer un pas à pas détaillé d'un code de prédicat à des fins de débogage, vous pouvez remplacer le prédicat par un appel d'une fonction qui contient le code de prédicat d'origine. Par exemple, si vous avez le code suivant :  
   
 ```vb
@@ -106,7 +104,7 @@ End Function
   
  La requête modifiée appelle la fonction `IsEven` à chaque passe dans `items`. Vous pouvez utiliser les fenêtres du débogueur pour vérifier si chaque élément répond à la condition spécifiée. Vous pouvez également exécuter le code pas à pas dans `IsEven`. Dans cet exemple, le prédicat est assez simple. Toutefois, si vous devez déboguer un prédicat plus complexe, cette technique peut s’avérer très utile.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Modifier & Continuer non prise en charge pour LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Opération Modifier & Continuer non prise en charge pour LINQ  
  Modifier & Continuer prend en charge les modifications apportées aux requêtes LINQ avec les limitations. Pour plus d’informations, consultez [modifications prises en charge de EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Voir aussi

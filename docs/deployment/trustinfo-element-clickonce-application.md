@@ -1,8 +1,6 @@
 ---
 title: '&lt;trustInfo&gt; , élément (Application ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: eb8494f9602b22f5b5997216a3aa74189e27f3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870493"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; , élément (application ClickOnce)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;, élément (application ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -89,7 +87,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.  
   
 ## <a name="ipermission"></a>IPermission  
- Facultatif. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.  
+ Optionnel. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.  
   
 -   `class`  
   
@@ -103,7 +101,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
 -   `Unrestricted`  
   
-     Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :  
+     Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :  
   
     ```xml  
     <IPermission  
@@ -119,14 +117,14 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Dans cet exemple, la déclaration d’ <xref:System.Security.Permissions.EnvironmentPermission> indique que l’application peut uniquement lire la variable d’environnement USERNAME, tandis que la déclaration de <xref:System.Security.Permissions.FileDialogPermission> permet à l’application d’utiliser toutes les classes <xref:System.Windows.Forms.FileDialog> sans aucune restriction.  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- Facultatif. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.  
+ Optionnel. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.  
   
 -   `permissionSetReference`  
   
      Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- Facultatif. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.  
+ Optionnel. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.  
   
 -   `Name`  
   
@@ -137,10 +135,10 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- Facultatif. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.  
+ Optionnel. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- Facultatif. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
+ Optionnel. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
   
 - `Level`  
   
@@ -156,7 +154,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
 - `uiAccess`  
   
-   Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
+   Optionnel. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
   
 ## <a name="remarks"></a>Notes  
  Si une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.  
@@ -270,5 +268,5 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble de déploiement d’Application approuvée](../deployment/trusted-application-deployment-overview.md)   
+ [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
  [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

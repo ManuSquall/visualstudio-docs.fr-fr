@@ -2,19 +2,18 @@
 title: Page de démarrage pour le débogueur de capture instantanée
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853734"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Mise en route avec le débogueur de capture instantanée
 
@@ -68,7 +67,7 @@ Le site Web lui-même est toujours en direct et les utilisateurs finaux ne sont 
 
 Vous trouverez plus d’informations sur le débogueur de capture instantanée sur le [page docs](../debug-live-azure-applications.md). En savoir plus sur la définition des conditions pour le rendre plus facile à trouver des bogues.
 
-## <a name="dont-show-me-this-again"></a>Ne ' plus afficher ce message
+## <a name="dont-show-me-this-again"></a>Ne plus afficher ce message
 
 Pour ne jamais afficher la Page de démarrage de débogueur de capture instantanée à nouveau lorsque vous vous connectez le débogueur de capture instantanée, vous devez modifier le **afficher la page « Prise en main » sur le démarrage d’une session** option **outils**  >   **Options** > **débogueur de captures instantanées**. 
 

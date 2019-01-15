@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3f0a185a04f1cbcfb6b8c53256d23e7beac22f50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911038"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Récupère le nombre de fichiers et de la ligne source qui indiquent où un type défini par l’utilisateur spécifié est défini.  
+Récupère le nombre de lignes et les fichiers source qui indiquent où un type défini par l’utilisateur spécifié est défini.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,7 +29,7 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>Paramètres  
  `ppResult`  
- [out] A `IDiaLineNumber` objet qui contient le nombre de fichiers et de la ligne source où défini par l’utilisateur.  
+ [out] Un `IDiaLineNumber` objet qui contient le nombre de lignes et les fichiers source où défini par l’utilisateur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

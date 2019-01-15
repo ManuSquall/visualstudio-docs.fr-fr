@@ -2,7 +2,6 @@
 title: Préparer le débogage C#, F#et les projets VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866879"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Préparation du débogage : Types de projets C#, F# et Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Débogage de la préparation : Types de projets C#, F# et Visual Basic
 Les rubriques de cette section décrivent le débogage de types de projets C#, F# et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] créés par les modèles de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
  Notez que ces types de projets qui créent des DLL en tant que leur sortie ont été regroupées dans [le débogage de projets de DLL](../debugger/debugging-dll-projects.md) en raison des fonctionnalités communes qu’ils partagent.  

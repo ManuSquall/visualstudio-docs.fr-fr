@@ -1,8 +1,6 @@
 ---
-title: 'Comment : déboguer des serveurs COM | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure : Déboguer des serveurs COM | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853929"
 ---
-# <a name="how-to-debug-com-servers"></a>Comment : déboguer des serveurs COM
+# <a name="how-to-debug-com-servers"></a>Procédure : Déboguer des serveurs COM
 Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne sont pas toujours faciles à résoudre.  
   
  Si vous ne disposez pas d'informations de débogage pour votre application conteneur ou si vous ne voulez pas les utiliser, le débogage de l'application serveur se passe en trois étapes.  
@@ -46,7 +44,7 @@ Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne so
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
- [Comment : déboguer des Clients COM et serveurs à l’aide du débogage RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Serveur COM et le débogage de conteneur](../debugger/com-server-and-container-debugging.md)   
+ [Guide pratique pour déboguer des clients et des serveurs COM à l’aide du débogage RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Débogage de serveurs et de conteneurs COM](../debugger/com-server-and-container-debugging.md)   
  [Débogage dans Visual Studio](../debugger/index.md)  
  [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

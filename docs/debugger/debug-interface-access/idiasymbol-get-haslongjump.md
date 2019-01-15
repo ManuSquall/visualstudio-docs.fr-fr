@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_hasLongJump | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b9b15ce97abaad224a6728120e5a22e766ae01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879864"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Récupère un indicateur qui spécifie si la fonction contient une utilisation de la [longjmp](/cpp/c-runtime-library/reference/longjmp) commande (apparié à un [setjmp](/cpp/c-runtime-library/reference/setjmp) commande, elles forment la méthode C-style de gestion des exceptions).  
@@ -42,11 +40,11 @@ HRESULT get_hasLongJump
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  

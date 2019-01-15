@@ -1,8 +1,6 @@
 ---
 title: Canalisation Graphics | Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pipeline
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da74af0f77586e518365fa669c84309e7751b319
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a76b782b3abaf92eedccb43104987d16668794d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897993"
 ---
 # <a name="graphics-pipeline-stages"></a>Étapes de canalisation Graphics
 La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment un appel de dessin individuel est transformé par chaque étape de canalisation graphismes Direct3D.  
@@ -45,48 +43,48 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
   
 #### <a name="to-view-a-shaders-source-code"></a>Pour afficher le code source d'un nuanceur  
   
--   Dans le **étapes de canalisation Graphics** fenêtre, localisez l’étape de nuanceur qui correspond au nuanceur vous souhaitez examiner. Puis, sous l’image d’aperçu, suivez le lien de titre de phase de nuanceur, par exemple, suivez le lien **nuanceur de sommets obj : 30** pour afficher le code source de nuanceur de sommets.  
+-   Dans la fenêtre **Étapes de canalisation Graphics**, localisez l’étape de nuanceur qui correspond au nuanceur que vous souhaitez examiner. Sous l’image d’aperçu, suivez le lien du titre de l’étape de nuanceur. Par exemple, suivez le lien **Nuanceur de sommets obj:30** pour afficher le code source du nuanceur de sommets.  
   
     > [!TIP]
-    >  Le numéro d’objet, **obj : 30**, identifie ce nuanceur dans toute l’interface Graphics Analyzer par exemple, dans la fenêtre d’historique objet table et de pixels.  
+    >  Le numéro d’objet, **obj:30**, identifie ce nuanceur dans toute l’interface Graphics Analyzer, par exemple dans la table des objets et la fenêtre Historique des pixels.  
   
 #### <a name="to-debug-a-shader"></a>Pour déboguer un nuanceur  
   
--   Dans le **étapes de canalisation Graphics** fenêtre, localisez l’étape de nuanceur qui correspond au nuanceur vous souhaitez déboguer. Puis, sous l’image d’aperçu, choisissez **démarrer le débogage**. La valeur par défaut de ce point d'entrée dans le débogueur HLSL correspond au premier appel du nuanceur pour l'étape correspondante, c'est-à-dire le premier pixel, le premier sommet ou la première primitive traitée par le nuanceur durant cet appel de dessin. Appels de ce nuanceur pour un pixel spécifique ou un sommet sont accessibles via le **historique des pixels Graphics**.  
+-   Dans la fenêtre **Étapes de canalisation Graphics**, localisez l’étape de nuanceur qui correspond au nuanceur que vous souhaitez déboguer. Puis, sous l’image d’aperçu, choisissez **Démarrer le débogage**. La valeur par défaut de ce point d'entrée dans le débogueur HLSL correspond au premier appel du nuanceur pour l'étape correspondante, c'est-à-dire le premier pixel, le premier sommet ou la première primitive traitée par le nuanceur durant cet appel de dessin. Les appels de ce nuanceur pour un pixel ou un sommet spécifique sont accessibles via la fenêtre **Historique des pixels Graphics**.  
   
 ### <a name="the-pipeline-stages"></a>Étapes de canalisation  
  La fenêtre Étapes de canalisation affiche uniquement les étapes de canalisation actives durant l'appel de dessin. Chaque étape de canalisation Graphics transforme l'entrée de l'étape précédente et passe le résultat à l'étape suivante. La première étape (Assembleur d’entrée) récupère les données d’index et de sommet de votre application en entrée. La toute dernière étape (Fusion de sortie) combine les pixels qui viennent d’être rendus au contenu actuel du tampon de frame ou de la cible de rendu en tant que sortie pour produire l’image finale que vous voyez sur votre écran.  
   
 > [!NOTE]
->  Nuanceurs de calcul ne sont pas pris en charge dans les **étapes de canalisation Graphics** fenêtre.  
+>  Les nuanceurs de calcul ne sont pas pris en charge dans la fenêtre **Étapes de canalisation Graphics**.  
   
  **Assembleur d’entrée**  
  L'assembleur d'entrée lit les données d'index et de sommet spécifiées par votre application, et les assemble pour le matériel graphique.  
   
- Dans la fenêtre Étapes de canalisation, la sortie de l'assembleur d'entrée est affichée sous la forme d'un modèle filaire. Pour mieux examiner plus en détail le résultat, sélectionnez **assembleur d’entrée** dans le **étapes de canalisation Graphics** fenêtre pour afficher les sommets assemblés entièrement en 3D à l’aide de l’éditeur de modèle.  
+ Dans la fenêtre Étapes de canalisation, la sortie de l'assembleur d'entrée est affichée sous la forme d'un modèle filaire. Pour mieux examiner le résultat, sélectionnez **Assembleur d’entrée** dans la fenêtre **Étapes de canalisation Graphics** afin d’afficher les sommets assemblés entièrement en 3D à l’aide de l’éditeur de modèle.  
   
 > [!NOTE]
->  Si le `POSITION` sémantique n’est pas présent dans la sortie de l’assembleur d’entrée, alors rien ne s’affiche dans le **assembleur d’entrée** étape.  
+>  Si la sémantique `POSITION` n’est pas présente dans la sortie de l’assembleur d’entrée, rien ne s’affiche à l’étape **Assembleur d’entrée**.  
   
  **Nuanceur de sommets**  
  L'étape du nuanceur de sommets traite les sommets, en effectuant généralement des opérations telles que la transformation, l'application d'apparences et l'éclairage. Les nuanceurs de sommets produisent le même nombre de sommets que ceux qu'ils acceptent en entrée.  
   
- Dans la fenêtre Étapes de canalisation, la sortie du nuanceur de sommets est affichée sous la forme d'une image raster filaire. Pour mieux examiner plus en détail le résultat, sélectionnez **nuanceur de sommets** dans le **étapes de canalisation Graphics** afin d’afficher les sommets traités dans l’éditeur d’images.  
+ Dans la fenêtre Étapes de canalisation, la sortie du nuanceur de sommets est affichée sous la forme d'une image raster filaire. Pour mieux examiner le résultat, sélectionnez **Nuanceur de sommets** dans la fenêtre **Étapes de canalisation Graphics** afin d’afficher les sommets traités dans l’éditeur d’images.  
   
 > [!NOTE]
->  Si le `POSITION` ou `SV_POSITION` sémantique n’est pas présente dans la sortie du nuanceur de sommets, alors rien ne s’affiche dans le **nuanceur de sommets** étape.  
+>  Si la sémantique `POSITION` ou `SV_POSITION` n’est pas présente dans la sortie du nuanceur de sommets, rien ne s’affiche à l’étape **Nuanceur de sommets**.  
   
- **Nuanceur de coque** (Direct3D 11 et Direct3D 12 uniquement)  
+ **Nuanceur de coque** (Direct3D 11 et Direct3D 12 uniquement)  
  L'étape du nuanceur de coque traite les points de contrôle qui définissent une surface de poids faible comme une ligne, un triangle ou un quadrilatère. En sortie, il génère un correctif de géométrie de poids supérieur et des constantes de correction qui sont passés à l'étape de pavage à fonction fixe.  
   
  L'étape du nuanceur de coque n'est pas affichée dans la fenêtre Étapes de canalisation.  
   
- **Étape du paveur** (Direct3D 11 et Direct3D 12 uniquement)  
+ **Étape du paveur** (Direct3D 11 et Direct3D 12 uniquement)  
  L'étape du paveur est une unité matérielle à fonction fixe (non programmable) qui prétraite le domaine représenté par la sortie du nuanceur de coque. En sortie, il crée un modèle d'échantillonnage du domaine et un ensemble de primitives plus petites (points, lignes, triangles) qui connectent ces exemples.  
   
  L'étape du paveur n'est pas affichée dans la fenêtre Étapes de canalisation.  
   
- **Nuanceur de domaine** (Direct3D 11 et Direct3D 12 uniquement)  
+ **Nuanceur de domaine** (Direct3D 11 et Direct3D 12 uniquement)  
  L’étape du nuanceur de domaine traite les correctifs de géométrie de poids supérieur du nuanceur de coque, ainsi que les facteurs de pavage de l’étape de pavage. Les facteurs de pavage peuvent inclure les facteurs d'entrée du paveur, ainsi que les facteurs de sortie. En sortie, cette étape calcule la position du sommet d'un point dans le correctif de sortie en fonction des facteurs du paveur.  
   
  L'étape du nuanceur de domaine n'est pas affichée dans la fenêtre Étapes de canalisation.  
@@ -94,9 +92,9 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
  **Nuanceur de géométrie**  
  L'étape du nuanceur de géométrie traite les primitives entières (points, lignes ou triangles), ainsi que les données de sommet facultatives des primitives à bords adjacents. Contrairement aux nuanceurs de sommets, les nuanceurs de géométries peuvent produire plus ou moins de primitives que ce qu'ils acceptent en entrée.  
   
- Dans la fenêtre Étapes de canalisation, la sortie du nuanceur de géométrie est affichée sous la forme d'une image raster filaire. Pour mieux examiner plus en détail le résultat, sélectionnez **nuanceur de géométrie** dans le **étapes de canalisation Graphics** fenêtre pour afficher les primitives traitées dans l’éditeur d’images.  
+ Dans la fenêtre Étapes de canalisation, la sortie du nuanceur de géométrie est affichée sous la forme d'une image raster filaire. Pour mieux examiner le résultat, sélectionnez **Nuanceur de géométrie** dans la fenêtre **Étapes de canalisation Graphics** afin d’afficher les primitives traitées dans l’éditeur d’images.  
   
- **Étape de sortie Stream**  
+ **Étape de sortie de flux**  
  L'étape de sortie de flux peut intercepter les primitives transformées avant la rastérisation, et les écrire en mémoire. Les données peuvent ensuite être recyclées en entrée à des étapes antérieures de la canalisation Graphics, ou être relues par l'UC.  
   
  L'étape de sortie de flux n'est pas affichée dans la fenêtre Étapes de canalisation.  
@@ -109,12 +107,12 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
  **Nuanceur de pixels**  
  L'étape du nuanceur de pixels traite les primitives rastérisées, ainsi que les données de sommet interpolées pour générer des valeurs spécifiques à chaque pixel, par exemple la couleur et la profondeur.  
   
- Dans la fenêtre Étapes de canalisation, la sortie du nuanceur de pixels est affichée sous la forme d'une image raster en couleurs. Pour mieux examiner plus en détail le résultat, sélectionnez **nuanceur de pixels** dans le **étapes de canalisation Graphics** fenêtre pour afficher les primitives traitées dans l’éditeur d’images.  
+ Dans la fenêtre Étapes de canalisation, la sortie du nuanceur de pixels est affichée sous la forme d'une image raster en couleurs. Pour mieux examiner le résultat, sélectionnez **Nuanceur de pixels** dans la fenêtre **Étapes de canalisation Graphics** afin d’afficher les primitives traitées dans l’éditeur d’images.  
   
  **Fusion de sortie**  
  L’étape de fusion de sortie combine l’effet des pixels qui viennent d’être rendus au contenu existant de leurs mémoires tampons correspondantes (couleur, profondeur et gabarit) pour produire de nouvelles valeurs dans ces mémoires tampons.  
   
- Dans la fenêtre Étapes de canalisation, la sortie de la fusion de sortie est affichée sous la forme d’une image raster en couleurs. Pour mieux examiner plus en détail les résultats, sélectionnez **fusion de sortie** dans le **étapes de canalisation Graphics** fenêtre pour afficher le tampon de frame fusionné.  
+ Dans la fenêtre Étapes de canalisation, la sortie de la fusion de sortie est affichée sous la forme d’une image raster en couleurs. Pour mieux examiner les résultats, sélectionnez **Fusion de sortie** dans la fenêtre **Étapes de canalisation Graphics** afin d’afficher le tampon de frame fusionné.  
   
 ### <a name="vertex-and-geometry-shader-preview"></a>Vertex et aperçu de nuanceur de géométrie  
  Lorsque vous sélectionnez l’étape du nuanceur de sommets ou une géométrie dans le **canalisation** , vous pouvez afficher les entrées et les sorties à partir du nuanceur dans le panneau ci-dessous.  Ici, vous trouverez plus d’informations sur la liste des sommets fournis pour les nuanceurs, une fois qu’ils ont été assemblés à l’étape de l’assembleur d’entrée.  
@@ -126,5 +124,5 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
  ![Aperçu du résultat de l'étape du nuanceur de sommets](media/gfx_diag_vertex_shader_preview.png)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Objets manquants en raison Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)

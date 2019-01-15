@@ -1,8 +1,6 @@
 ---
-title: 'Comment : activer le démarrage automatique pour les Installations de CD | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Activer le démarrage automatique pour les Installations de CD | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97642a499e0415dd6fcd245e379c9f01520b5c53
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 35a6d98a476a8a9612cb5bfb80e7fa8b2f00c4ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864019"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Comment : activer le démarrage automatique pour les installations de CD
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Procédure : Activer le démarrage automatique pour les installations depuis un CD-ROM
 Lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application au moyen de supports amovibles tels que des CD-ROM ou DVD-ROM, vous pouvez activer `AutoStart` afin que le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est lancée automatiquement lorsque le média est inséré.  
   
  `AutoStart` peut être activé sur le **publier** page de la **Concepteur de projet**.  
@@ -34,9 +32,9 @@ Lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
-3.  Cliquez sur le **Options** bouton.  
+3.  Cliquez sur le bouton **Options**.  
   
      Le **Options de publication** boîte de dialogue s’affiche.  
   
@@ -48,4 +46,4 @@ Lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndpteccl
   
 ## <a name="see-also"></a>Voir aussi  
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
