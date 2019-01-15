@@ -1,8 +1,6 @@
 ---
-title: 'Comment : arrêter des modifications de Code | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Arrêter des modifications de Code | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843253"
 ---
-# <a name="how-to-stop-code-changes"></a>Comment : arrêter des modifications de code
+# <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
 Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.  
   
 > [!CAUTION]
@@ -34,7 +32,7 @@ Pendant que Modifier & Continuer est en train d'appliquer les modifications du c
   
 ### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code  
   
-- Choisissez **cesser d’appliquer les modifications du Code** à partir de la **déboguer** menu.  
+- Dans le menu **Déboguer**, cliquez sur **Cesser d’appliquer les modifications du code**.  
   
   Cet élément de menu est visible uniquement lorsque les modifications du code sont appliquées.  
   

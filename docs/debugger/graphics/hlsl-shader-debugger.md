@@ -1,8 +1,6 @@
 ---
 title: Débogueur du nuanceur HLSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27db26a732ec53b81aed4807f4aec546e1bc7f1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8425857b6774d9a880c769ea3b46943686f3deb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832435"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
 Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre comment votre code de nuanceur HLSL s'exécute dans les conditions réelles de fonctionnement de votre application.  
@@ -42,7 +40,7 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
   Néanmoins, le débogueur HLSL offre une expérience de débogage meilleure et plus similaire à celle de l'UC.  
   
 ## <a name="hlsl-shader-edit--apply"></a>Modification et application du nuanceur HLSL  
- Le débogueur du nuanceur HLSL ne prend pas en charge Modifier & Continuer de la même manière que le débogueur d'UC, car le modèle d'exécution du GPU n'autorise pas l'annulation de l'état du nuanceur. Au lieu de cela, le débogueur HLSL prend en charge Modifier & Appliquer, ce qui vous permet de modifier les fichiers sources HLSL, puis choisissez **appliquer** pour régénérer le frame pour voir l’effet de vos modifications. Votre code de nuanceur modifié est stocké dans un fichier distinct pour préserver l’intégrité du fichier de source HLSL d’origine de votre projet, mais lorsque vous êtes satisfait de vos modifications, vous pouvez choisir **copier dans...**  pour copier les modifications dans votre projet. À l’aide de cette fonctionnalité, vous pouvez rapidement itérer le code du nuanceur qui contient des erreurs, et éliminer les étapes coûteuses de régénération et de capture dans votre flux de travail de débogage HLSL.  
+ Le débogueur du nuanceur HLSL ne prend pas en charge Modifier & Continuer de la même manière que le débogueur d'UC, car le modèle d'exécution du GPU n'autorise pas l'annulation de l'état du nuanceur. À la place, le débogueur HLSL prend en charge Modifier & Appliquer, ce qui vous permet de changer les fichiers sources HLSL, puis de choisir **Appliquer** pour régénérer le frame et voir le résultat de vos changements. Votre code de nuanceur modifié est stocké dans un fichier distinct pour préserver l’intégrité du fichier source HLSL d’origine de votre projet. Toutefois, quand vous êtes satisfait de vos changements, vous pouvez choisir **Copier dans...** pour copier les changements dans votre projet. À l’aide de cette fonctionnalité, vous pouvez rapidement itérer le code du nuanceur qui contient des erreurs, et éliminer les étapes coûteuses de régénération et de capture dans votre flux de travail de débogage HLSL.  
   
 ## <a name="hlsl-disassembly"></a>Code machine HLSL  
  Le débogueur du nuanceur HLSL fournit une liste d'assemblys du nuanceur HLSL à droite de la liste de codes source HLSL.  
@@ -52,22 +50,22 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Pour démarrer le débogueur HLSL à partir de la fenêtre Étapes de canalisation Graphics  
   
-1.  Dans le **étapes de canalisation Graphics** fenêtre, recherchez l’étape de canalisation associée au nuanceur que vous souhaitez déboguer.  
+1.  Dans la fenêtre **Étapes de canalisation Graphics**, recherchez l’étape de pipeline associée au nuanceur que vous souhaitez déboguer.  
   
-2.  Sous le titre de l’étape de canalisation, choisissez **démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.  
+2.  Sous le titre de l’étape de pipeline, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.  
   
     > [!NOTE]
     >  Ce point d'entrée dans le débogueur HLSL débogue uniquement le premier thread nuanceur pour l'étape correspondante, c'est-à-dire le premier vertex ou le premier pixel qui est traité. Vous pouvez utiliser la fonctionnalité Historique des pixels pour accéder à d'autres threads de ces étapes du nuanceur.  
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Pour démarrer le débogueur HLSL de l'historique des pixels Graphics  
   
-1. Dans le **historique des pixels Graphics** fenêtre, développez l’appel de dessin qui est associée au nuanceur que vous souhaitez déboguer. Chaque appel de dessin peut correspondre à plusieurs primitives.  
+1. Dans la fenêtre **Historique des pixels Graphics**, développez l’appel de dessin associé au nuanceur que vous souhaitez déboguer. Chaque appel de dessin peut correspondre à plusieurs primitives.  
   
 2. Dans les détails de l'appel de dessin, développez une primitive dont la contribution de couleur résultante indique un bogue dans son code shader. Si plusieurs primitives indiquent un bogue, choisissez la première afin d'éviter une accumulation d'erreurs pouvant rendre le diagnostic du problème plus difficile.  
   
-3. Dans les détails de primitives, choisissez s’il faut déboguer le **nuanceur de sommets** ou **nuanceur de pixels**. Déboguez le nuanceur de sommets lorsque vous suspectez que le nuanceur de pixels est correct mais qu'il génère une proportion incorrecte de couleur car le nuanceur de sommets lui passe des constantes incorrectes. Sinon, déboguez le nuanceur de pixels.  
+3. Dans les détails de primitives, choisissez de déboguer le **Nuanceur de sommets** ou le **Nuanceur de pixels**. Déboguez le nuanceur de sommets lorsque vous suspectez que le nuanceur de pixels est correct mais qu'il génère une proportion incorrecte de couleur car le nuanceur de sommets lui passe des constantes incorrectes. Sinon, déboguez le nuanceur de pixels.  
   
-    À droite du nuanceur choisi, choisissez **démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.  
+    À droite du nuanceur choisi, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.  
   
    > [!NOTE]
    >  Ce point d'entrée dans le débogueur HLSL débogue soit le thread nuanceur de pixels qui correspond à l'appel de dessin choisi, à la primitive, et au pixel que vous avez choisis, soit les threads de nuanceur de sommets dont les résultats sont interpolés par l'appel de dessin, la primitive, et le pixel que vous avez choisis. Dans le cas des nuanceurs de sommets, vous pouvez affiner davantage le point d’entrée à un sommet spécifique en développant les détails du nuanceur de sommets.  
@@ -75,6 +73,6 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
    Pour obtenir des exemples sur la façon d’utiliser le débogueur HLSL pour déboguer les erreurs de nuanceur, consultez [exemples](graphics-diagnostics-examples.md) ou les procédures pas à pas liées dans la section Voir aussi.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Objets manquants en raison Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu](walkthrough-debugging-rendering-errors-due-to-shading.md)   
+ [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

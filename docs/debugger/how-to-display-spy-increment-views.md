@@ -1,8 +1,6 @@
 ---
-title: 'Comment : afficher des vues Spy ++ | Documents Microsoft'
-ms.custom: ''
+title: 'Procédure : Afficher des vues Spy ++ | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, viewing code
@@ -12,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd4643ab3bad401e05d46c5ec5505322ec760342
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c55656626b41da388053a164ff666281fc2631f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962952"
 ---
-# <a name="how-to-display-spy-views"></a>Comment : afficher des vues Spy++
-Lorsque Spy ++ démarre, il s’ouvre dans [affichage Windows](../debugger/windows-view.md), une arborescence de toutes les fenêtres et les contrôles disponibles sur votre ordinateur. Cette fenêtre racine a pour titre « Windows 1 ». Il existe également trois autres vues Spy ++ : [vue Messages](../debugger/messages-view.md), [vue processus](../debugger/processes-view.md), et [vue Threads](../debugger/threads-view.md). Vous pouvez afficher la vue souhaitée à partir de la **Spy** menu. Pour plus d’informations, consultez [vues Spy ++](../debugger/spy-increment-views.md).  
+# <a name="how-to-display-spy-views"></a>Procédure : Afficher des vues Spy++
+Démarrage de Spy ++, il s’ouvre dans [Windows vue](../debugger/windows-view.md), une arborescence de toutes les fenêtres et les contrôles disponibles sur votre ordinateur. Cette fenêtre racine a pour titre « Windows 1 ». Il existe également trois autres vues Spy ++ : [La vue messages](../debugger/messages-view.md), [vue processus](../debugger/processes-view.md), et [vue Threads](../debugger/threads-view.md). Vous pouvez afficher la vue souhaitée à partir de la **Spy** menu. Pour plus d’informations, consultez [vues Spy ++](../debugger/spy-increment-views.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de Spy ++](../debugger/using-spy-increment.md)   
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)   
  [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)

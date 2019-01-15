@@ -1,8 +1,6 @@
 ---
 title: MemoryTypeEnum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8dcf657933cf62f3f2173bb89dadd1366b0cec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a83a37a3aa454885d714be667ca7678ae543ff09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875914"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Spécifie le type de mémoire à accéder.  
@@ -51,9 +49,9 @@ enum MemoryTypeEnum {
 ## <a name="remarks"></a>Notes  
  Les valeurs dans cette énumération sont transmises à la [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) méthode pour limiter l’accès à différents types de mémoire.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  
- [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

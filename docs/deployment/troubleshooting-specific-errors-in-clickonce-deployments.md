@@ -1,8 +1,6 @@
 ---
 title: Dépannage d’erreurs spécifiques dans les déploiements ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24d896b224adb4c5314938e2ef76af459135a213
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd69b83702b07aae8a1c39c6c9298201c2f048
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862164"
 ---
-# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Résoudre les erreurs spécifiques dans les déploiements ClickOnce
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Dépanner des erreurs spécifiques dans les déploiements ClickOnce
 Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et fournit les étapes pour résoudre chaque problème.  
 
 ## <a name="general-errors"></a>Erreurs générales  
@@ -58,9 +56,9 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 
  Vous devez également définir les types de contenu (également connu sous les types MIME) en conséquence pour .application, .manifest et .deploy fichiers. Pour plus d’informations, consultez la documentation de votre serveur Web.  
 
- Pour plus d’informations, consultez « Windows Server 2003 : Types de contenu verrouillés » dans [problèmes de configuration de serveur et client dans les déploiements ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Pour plus d’informations, consultez « Windows Server 2003 : Verrouillé Types de contenu » [problèmes de configuration de serveur et client dans les déploiements ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
 
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Message d’erreur : « Application n’est pas formatée ; ». Fichier journal contient « signature XML non valide »  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Message d’erreur : « Application n’est pas formatée ; ». Fichier journal contient « signature XML non valide »  
  Vérifiez que le fichier manifest mis à jour et de nouveau signé. Republiez votre application à l’aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou utilisez Mage pour signer à nouveau l’application.  
 
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Mise à jour de votre application sur le serveur, mais le client ne télécharge pas la mise à jour  
@@ -72,7 +70,7 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 
 - Essayez de redémarrer l’application dans le menu Démarrer. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a pu détecter la mise à jour en arrière-plan, mais vous invitera à installer les bits lors de la prochaine activation.  
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Au cours de la mise à jour, vous recevez une erreur qui a l’entrée de journal suivante : « la référence dans le déploiement ne correspond pas à l’identité définie dans le manifeste d’application »  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Au cours de la mise à jour, vous recevez une erreur qui a l’entrée de journal suivante : « La référence dans le déploiement ne correspond pas à l’identité définie dans le manifeste d’application »  
  Cette erreur peut se produire, car vous avez modifié manuellement les manifestes de déploiement et d’application et avez provoqué la description de l’identité d’un assembly dans un manifeste à devenir désynchronisés avec les autres. L’identité d’un assembly se compose de son nom, la version, culture et jeton de clé publique. Examinez les descriptions d’identité dans vos manifestes et corrigez les éventuelles différences.  
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Première activation de disque local ou CD-ROM réussit, mais l’activation suivante à partir du Menu Démarrer ne fonctionne pas  
@@ -103,11 +101,11 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 
  Si vous publiez avec une URL, vérifiez que l’ordinateur de destination a activé les Extensions serveur FrontPage.  
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Message d’erreur : Impossible de créer le site Web '\<site >'. Les composants permettant de communiquer avec les Extensions serveur FrontPage ne sont pas installés.  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Message d’erreur : Impossible de créer le site Web '\<site >'. Les composants permettant de communiquer avec les Extensions serveur FrontPage ne sont pas installés.  
  Assurez-vous d’avoir le Microsoft Visual Studio Web Authoring composant installé sur l’ordinateur que vous publiez à partir de. Pour les utilisateurs d’Express, ce composant n’est pas installé par défaut. Pour plus d’informations, consultez [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Message d’erreur : fichier introuvable ' Microsoft.Windows.Common-contrôles, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32'  
- Ce message d’erreur s’affiche lorsque vous tentez de publier une application WPF avec les styles visuels sont activés. Pour résoudre ce problème, consultez [Comment : publier une Application WPF avec activé des Styles Visual](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Message d’erreur : Fichier introuvable ' Microsoft.Windows.Common-contrôles, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32'  
+ Ce message d’erreur s’affiche lorsque vous tentez de publier une application WPF avec les styles visuels sont activés. Pour résoudre ce problème, consultez [Comment : publier une application WPF avec les styles visuels activés](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)  
 
 ## <a name="using-mage"></a>À l’aide de Mage  
 
@@ -141,4 +139,4 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

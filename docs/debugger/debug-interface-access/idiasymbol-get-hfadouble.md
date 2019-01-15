@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_hfaDouble | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d9057ecc968cfd3772cdb01a07aa392c449134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fa95a10b9a4d5617b31fe5e17484282f00707b3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832519"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
 Récupère un indicateur qui spécifie si un type défini par l’utilisateur (UDT) contient des données de regroupement à virgule flottante homogènes (HFA), de type double.  
@@ -27,7 +25,7 @@ Récupère un indicateur qui spécifie si un type défini par l’utilisateur (U
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_hfaDouble(   
+HRESULT get_hfaDouble(   
    BOOL* pRetVal  
 );  
 ```  
@@ -44,8 +42,8 @@ HRESULT get_hfaDouble(
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
   

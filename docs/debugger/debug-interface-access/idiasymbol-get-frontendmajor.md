@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_frontEndMajor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6857e0f6a2d5802fcc20949bfbf90a345a3f8ef5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 29d132e39277e0bb9c868fc8d4c2ad3877aa6546
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851509"
 ---
 # <a name="idiasymbolgetfrontendmajor"></a>IDiaSymbol::get_frontEndMajor
 Récupère le numéro de version principale de front-end.  
@@ -27,7 +25,7 @@ Récupère le numéro de version principale de front-end.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_frontEndMajor (   
+HRESULT get_frontEndMajor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,11 +45,11 @@ HRESULT get_frontEndMajor (
   
  Un serveur frontal ou le numéro de version de serveur principal est composé de trois parties : \<majeure >.\< mineure >. \<Générer >, où \<majeure > est le numéro de version principale, \<mineure > est le numéro de version mineure et \<Générer > est le numéro de build. Par exemple, 13.10.3077.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
-|En-tête :|dia2.h|  
+|En-tête :|Dia2.h|  
 |Version :|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Voir aussi  

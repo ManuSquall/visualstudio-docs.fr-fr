@@ -1,8 +1,6 @@
 ---
 title: '&lt;Produit&gt; élément (programme d’amorçage) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 32e1689331ff41cec007c98be5410b518f1e44e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821229"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Produit&gt; élément (programme d’amorçage)
 Le `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de produit.  
@@ -252,4 +250,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

@@ -1,8 +1,6 @@
 ---
 title: '&lt;assembly&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 10e9119f54eeb428e94b9e9055b9845fbc7cb9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899822"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; , élément (déploiement ClickOnce)
 Élément de niveau supérieur pour le manifeste de déploiement.  
@@ -32,7 +30,7 @@ ms.locfileid: "39080631"
   
 ```xml  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -40,7 +38,7 @@ ms.locfileid: "39080631"
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
  Le `assembly` élément est l’élément racine et est obligatoire. Le premier élément de relation contenant-contenu doit être un `assemblyIdentity` élément. Les éléments du manifeste doivent être dans les espaces de noms suivants : `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, et `http://www.w3.org/2000/09/xmldsig#`. Les éléments enfants de l’assembly doivent également être dans ces espaces de noms, par héritage ou par balisage.  
   
- Le `assembly` élément a l’attribut suivant.  
+ L’élément `assembly` comporte l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

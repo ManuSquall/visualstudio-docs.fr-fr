@@ -1,8 +1,6 @@
 ---
-title: API d’extensibilité du résumé de fichier de vidage | Documents Microsoft
-ms.custom: ''
+title: API d’extensibilité du résumé de fichier de vidage | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938917"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API d'extensibilité du résumé de fichier dump
-À l’aide de l’API d’extensibilité de cette section, vous pouvez étendre le. Système de projet EXE et **résumé du Dump** page pour une utilisation avec votre propre moteur de débogage personnalisé.  
+À l’aide des API d’extensibilité de cette section, vous pourrez étendre le système de projet .exe et la page **Résumé du vidage** à utiliser avec votre propre moteur de débogage personnalisé.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- Les API permettant d’étendre le **résumé du Dump** page et le. Système de projet EXE sont disponibles dans l’espace de noms suivant :  
+ Les API permettant d’étendre la page **Résumé du vidage** et le système de projet .exe sont disponibles dans l’espace de noms suivant :  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

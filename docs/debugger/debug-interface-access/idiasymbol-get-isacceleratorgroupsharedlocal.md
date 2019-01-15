@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d1ccb6643973dc61e169930f57b4f279ad4c1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a6bf469433a4356c86aba36478f8a07e3437c9f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828288"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-Récupère un indicateur qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un accélérateur AMP de C++.  
+Récupère un indicateur qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un accélérateur de l’AMP C++.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,7 +29,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>Paramètres  
  `pFlag`  
- [out] Un pointeur vers un `BOOL` qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un accélérateur AMP de C++. Si `TRUE`, le `get_baseDataSlot` et `get_baseDataOffset` méthodes peuvent être utilisées pour obtenir les informations d’emplacement de stockage pour la variable.  
+ [out] Un pointeur vers un `BOOL` qui indique si le symbole correspond à une variable locale partagée de groupe dans le code compilé pour un accélérateur de l’AMP C++. Si `TRUE`, le `get_baseDataSlot` et `get_baseDataOffset` méthodes peuvent être utilisées pour obtenir les informations d’emplacement de stockage pour la variable.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

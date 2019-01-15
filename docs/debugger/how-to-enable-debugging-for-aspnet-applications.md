@@ -2,7 +2,6 @@
 title: Activer le débogage pour les applications ASP.NET | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881099"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
 
@@ -139,7 +138,7 @@ Les projets ASP.NET ont *web.config* par défaut, les fichiers qui contiennent l
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] détecte automatiquement les modifications apportées aux *web.config* fichiers et applique les nouveaux paramètres de configuration. Vous n’êtes pas obligé de redémarrer l’ordinateur ou le serveur IIS pour que les modifications entrent en vigueur.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] détecte automatiquement les modifications apportées aux fichiers *web.config* et applique les nouveaux paramètres de configuration. Vous n’êtes pas obligé de redémarrer l’ordinateur ou le serveur IIS pour que les modifications entrent en vigueur.  
   
 Un site Web peut contenir plusieurs répertoires et sous-répertoires virtuels, avec *web.config* fichiers dans chacun d’eux. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications héritent des paramètres de configuration de *web.config* fichiers à des niveaux supérieurs dans le chemin d’URL. La liste hiérarchique *web.config* les paramètres de fichier s’appliquent à tous les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications inférieurs dans la hiérarchie. Définition d’une configuration différente dans un *web.config* fichier inférieur dans la hiérarchie substitue aux paramètres dans le fichier plus élevé.  
   
@@ -184,11 +183,10 @@ Il existe différentes façons de publier des applications dans IIS. Ces étapes
 > Mode débogage réduit considérablement les performances de votre application. Pour de meilleures performances, définissez `debug="false"` dans le *web.config* et spécifiez une version Release lorsque vous déployez une application de production ou mesurer les performances.  
 
 ## <a name="see-also"></a>Voir aussi  
-[Débogage ASP.NET : configuration système requise](aspnet-debugging-system-requirements.md)   
-[Comment : exécuter le processus de travail sous un compte d’utilisateur](how-to-run-the-worker-process-under-a-user-account.md)   
-[Comment : rechercher le nom du processus ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Débogage ASP.NET : configuration requise](aspnet-debugging-system-requirements.md)   
+[Guide pratique pour exécuter le processus Worker sous un compte d’utilisateur](how-to-run-the-worker-process-under-a-user-account.md)   
+[Guide pratique pour rechercher le nom du processus ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
 [Déboguer des applications web déployées](debugging-deployed-web-applications.md)   
 [Procédure pas à pas : Débogage d’un formulaire web](walkthrough-debugging-a-web-form.md)   
-[Comment : déboguer des exceptions ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Déboguer des applications web : erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Guide pratique pour déboguer des exceptions ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Déboguer des applications web : Erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)

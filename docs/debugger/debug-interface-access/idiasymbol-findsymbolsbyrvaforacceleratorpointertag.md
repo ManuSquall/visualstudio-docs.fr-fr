@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Documents Microsoft
-ms.custom: ''
+title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827976"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Une valeur correspondante de la balise donnée, cette méthode retourne une énumération de symboles contenus dans cette fonction stub à une adresse virtuelle relative spécifiée.  
+Étant donné une valeur de balise correspondante, cette méthode retourne une énumération de symboles contenus dans cette fonction stub à une adresse virtuelle relative spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,10 +31,10 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>Paramètres  
  `tagValue`  
- [in] La valeur de balise de pointeur pour lesquels figurent les enregistrements de symbole pointee.  
+ [in] La valeur de balise de pointeur pour lequel les enregistrements de symbole pointee sont trouvent.  
   
  `rva`  
- [in] L’adresse rva est utilisée pour filtrer les symboles qui correspondent à la variable pointee avec la valeur de balise spécifié.  
+ [in] L’adresse rva est utilisée pour filtrer les symboles qui correspondent à la variable pointee avec la valeur de balise spécifiée.  
   
  `ppResult`  
  [out] Un pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.  

@@ -1,8 +1,6 @@
 ---
 title: IDiaSectionContrib::get_write | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7884177bc35b007b9c1d5a0149f78f514af3e58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 677e42799c4098d2ba1100dd27b234855c7e7fcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832737"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
 Récupère un indicateur qui indique si la section peut être modifiée.  
@@ -27,7 +25,7 @@ Récupère un indicateur qui indique si la section peut être modifiée.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_write (   
+HRESULT get_write (   
    BOOL* pRetVal  
 );  
 ```  

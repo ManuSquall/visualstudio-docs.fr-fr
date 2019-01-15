@@ -7,19 +7,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885589"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Pas pu récupérer les informations de schéma pour l’objet de base de données \<nom_objet >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossible de récupérer les informations de schéma pour l’objet de base de données \<nom de l’objet>
 
-Ce message apparaît généralement lorsqu’un objet dans **Explorateur de serveurs** ou **Database Explorer** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.
+Ce message apparaît généralement quand un objet dans l’**Explorateur de serveurs** ou l’**Explorateur de bases de données** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.
 
 Pour corriger cette erreur, sélectionnez **OK** pour faire disparaître la boîte de dialogue.
 

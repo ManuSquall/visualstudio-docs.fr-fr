@@ -1,8 +1,6 @@
 ---
 title: Techniques de débogage de MFC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832215"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.  
@@ -99,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
 
- La macro TRACE gère correctement char * et wchar_t\* paramètres. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.  
+ La macro TRACE gère correctement les paramètres char* et wchar_t\*. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.  
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -337,7 +335,7 @@ Phone #: 581-0215
 
  **Allocations non-objets**  
 
- Comme vous pouvez le remarquer, certaines allocations sont des objets (tels que `CPerson`), tandis que d’autres sont des allocations non-objets. « Allocations non-objets » sont des allocations pour les objets non dérivés de `CObject` ou des allocations de types C primitifs comme `char`, `int`, ou `long`. Si la classe dérivée **CObject -** alloue de l'espace supplémentaire (pour les mémoires tampons internes, par exemple), ces objets afficheront à la fois des allocations objets et non-objets.  
+ Comme vous pouvez le remarquer, certaines allocations sont des objets (tels que `CPerson`), tandis que d’autres sont des allocations non-objets. Les « allocations non-objets » sont des allocations pour des objets qui ne dérivent pas de `CObject` ou des allocations de types C primitifs, tels que `char`, `int` ou `long`. Si la classe dérivée **CObject -** alloue de l'espace supplémentaire (pour les mémoires tampons internes, par exemple), ces objets afficheront à la fois des allocations objets et non-objets.  
 
  **Prévention des fuites de mémoire**  
 
@@ -432,9 +430,9 @@ pMyPerson->Dump( afxDump );
 
 3. Vous commencerez par créer une nouvelle configuration de projet.  
 
-   1.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, cliquez sur le **Configuration Manager** bouton.  
+   1.  Dans la boîte de dialogue **Pages de propriétés de \<Projet>**, cliquez sur le bouton **Gestionnaire de configurations**.  
 
-   2.  Dans la [boîte de dialogue Gestionnaire de configurations](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localisez votre projet à l'intérieur de la grille. Dans le **Configuration** colonne, sélectionnez  **\<nouveau... >**.  
+   2.  Dans la [boîte de dialogue Gestionnaire de configurations](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localisez votre projet à l'intérieur de la grille. Dans la colonne **Configuration**, sélectionnez **\<Nouveau...>**.  
 
    3.  Dans la [boîte de dialogue Nouvelle configuration de projet](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), tapez un nom pour votre nouvelle configuration (par exemple, « Débogage partiel ») dans la zone **Nom de la configuration de projet** .  
 
@@ -474,7 +472,7 @@ pMyPerson->Dump( afxDump );
 
    6.  Cliquez sur les paramètres de **Format des informations de débogage** et sélectionnez l'option voulue (généralement **/ZI**) pour les informations de débogage.  
 
-   7.  Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le **Création/utilisation des en-têtes précompilés** définition dans le  **\<projet > Propriétés** boîte de dialogue (**propriétés de Configuration**  dossier, **C/C++** sous-dossier, **en-têtes précompilés** catégorie).  
+   7.  Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le paramètre **Création/Utilisation d’un en-tête précompilé** dans la boîte de dialogue **Propriétés de \<Projet>** (dossier **Propriétés de configuration**, sous-dossier **C/C++**, catégorie **En-têtes précompilés**).  
 
 7. Dans le menu **Générer** , cliquez sur **Générer** pour régénérer les fichiers projet  qui sont obsolètes.  
 

@@ -1,8 +1,6 @@
 ---
 title: Création d’Applications ClickOnce à partir de la ligne de commande | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926263"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
 Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez régénérer un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur disposant uniquement le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installé. Cela vous permet de reproduire une build à l’aide d’un processus automatisé, par exemple, dans une build centrale laboratoire ou à l’aide de techniques de script avancées dépasse le cadre de la génération du projet lui-même.  
@@ -35,9 +33,9 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
   
  Une « cible » est un indicateur à MSBuild sur la façon de traiter la commande. Les principales cibles sont la cible « build » et la cible « publier ». La cible de génération est l’équivalent à la sélection de la Build command (ou en appuyant sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez obtenir qui en tapant `msbuild`. Cette commande fonctionne parce que la cible de génération est la cible par défaut pour tous les projets générés par [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Cela signifie que vous n’avez pas explicitement besoin spécifier la cible de génération. Par conséquent, en tapant `msbuild` est la même opération que tapant `msbuild /target:build`.  
   
- Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos fichiers sources Visual Basic ou c#, l’assembly correspondant est automatiquement régénéré par l’opération de publication.  
+ Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos Visual Basic ou C# fichiers sources, l’assembly correspondant seraient automatiquement régénérés par l’opération de publication.  
   
- Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Créer et générer une application ClickOnce de base avec MSBuild  
   
@@ -162,9 +160,9 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Option d’URL|Description|  
 |----------------|-----------------|  
 |`PublishURL`|Obligatoire si vous publiez votre application ClickOnce sur un site Web.|  
-|`InstallURL`|Facultatif. Définissez cette option si le site de l’installation est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `InstallURL` vers une URL Web.|  
-|`SupportURL`|Facultatif. Définissez cette option si le site de support est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `SupportURL` au site Web de votre société client prise en charge.|  
-|`UpdateURL`|Facultatif. Définissez cette option si l’emplacement de mise à jour est différente de celle du `InstallURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `UpdateURL` vers une URL Web.|  
+|`InstallURL`|Optionnel. Définissez cette option si le site de l’installation est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `InstallURL` vers une URL Web.|  
+|`SupportURL`|Optionnel. Définissez cette option si le site de support est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `SupportURL` au site Web de votre société client prise en charge.|  
+|`UpdateURL`|Optionnel. Définissez cette option si l’emplacement de mise à jour est différente de celle du `InstallURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `UpdateURL` vers une URL Web.|  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   

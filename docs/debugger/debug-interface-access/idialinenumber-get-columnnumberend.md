@@ -1,8 +1,6 @@
 ---
 title: IDiaLineNumber::get_columnNumberEnd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39cd627ab41d44ac65acbe13516fc3e5597b8a7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bbf8a7b7e7d71172f93fee3d6548c69254301a98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895192"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Récupère le numéro de colonne source basé sur un où l’expression ou l’instruction se termine.  
@@ -27,7 +25,7 @@ Récupère le numéro de colonne source basé sur un où l’expression ou l’i
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_columnNumberEnd (   
+HRESULT get_columnNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  

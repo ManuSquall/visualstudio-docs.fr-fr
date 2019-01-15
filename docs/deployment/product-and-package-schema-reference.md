@@ -1,8 +1,6 @@
 ---
 title: Référence du schéma Package et produit | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844667"
 ---
-# <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et du package
+# <a name="product-and-package-schema-reference"></a>Informations de référence sur le schéma de produit et de package
 Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances externes requis par un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Exemples de dépendances externes le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et Microsoft Data Access Components (MDAC). Un fichier de package est similaire à un fichier de produit, mais est utilisé pour installer les composants dépendent de la culture d’une dépendance, tels que les assemblys localisés, les contrats de licence et documentation.  
   
  Le fichier de produit et les packages compose d’un niveau supérieur `Product` ou `Package` élément, chacun d’eux contient les éléments suivants.  

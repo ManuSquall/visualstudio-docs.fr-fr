@@ -1,8 +1,6 @@
 ---
-title: 'Comment : définir la publication ClickOnce Version | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Définir la publication ClickOnce Version | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,26 +16,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c991975a369387fea248816f4465670f1062a927
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: bd0f38fda93d1a91e72c547bdfe230354988da9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869110"
 ---
-# <a name="how-to-set-the-clickonce-publish-version"></a>Comment : définir la publication ClickOnce version
+# <a name="how-to-set-the-clickonce-publish-version"></a>Procédure : Définir la version de publication ClickOnce
 Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` propriété détermine si l’application que vous publiez sera traitée comme une mise à jour. Chaque version de l’heure est incrémentée, l’application sera publiée en tant qu’une mise à jour.  
   
  Le `Publish Version` propriété peut être définie sur le **publier** page de la **Concepteur de projet**.  
   
 > [!NOTE]
->  Il existe une option de projet qui incrémente automatiquement le `Publish Version` propriété chaque fois que l’application est publiée ; cette option est activée par défaut. Pour plus d’informations, consultez [Comment : incrémenter automatiquement la Version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+>  Il existe une option de projet qui incrémente automatiquement le `Publish Version` propriété chaque fois que l’application est publiée ; cette option est activée par défaut. Pour plus d'informations, voir [Procédure : Incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Pour modifier la version de publication  
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2.  Cliquez sur l’onglet **Publier**.  
   
 3.  Dans **Version de publication** champ, incrémentez la **majeure**, **mineure**, **générer**, ou **révision** version nombres.  
   
@@ -46,6 +44,6 @@ Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ve
   
 ## <a name="see-also"></a>Voir aussi  
  [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Comment : incrémenter automatiquement la publication ClickOnce version](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Guide pratique pour incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

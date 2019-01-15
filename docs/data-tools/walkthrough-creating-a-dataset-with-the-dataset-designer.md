@@ -43,7 +43,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée et la base de données Northwind est créé.
 
-## <a name="create-a-new-windows-forms-application-project"></a>Créez un projet d’application Windows Forms.
+## <a name="create-a-new-windows-forms-application-project"></a>Créer un projet Application Windows Forms
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
@@ -69,7 +69,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Créer une connexion de données dans l’Explorateur de serveurs
 
-1.  Dans le menu Affichage **, cliquez sur Explorateur de serveurs**.
+1.  Dans le menu **Affichage**, cliquez sur **Explorateur de serveurs**.
 
 2.  Dans **Explorateur de serveurs**, cliquez sur le **se connecter à la base de données** bouton.
 

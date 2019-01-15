@@ -1,8 +1,6 @@
 ---
-title: Rechercher des commandes de Menu | Documents Microsoft
-ms.custom: ''
+title: Rechercher des commandes de Menu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Search menu commands
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 266af946d33e0fbbae6367c4a2729cc3977c0452
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6058d3a704119515dc6bb3675d338d1f656cf1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884497"
 ---
 # <a name="search-menu-commands"></a>commandes du menu Rechercher
 Le **recherche** menu fournit des commandes permettant de rechercher des fenêtres spécifiques.  
@@ -25,8 +23,8 @@ Le **recherche** menu fournit des commandes permettant de rechercher des fenêtr
  **Rechercher/processus/Thread/Message de fenêtre**  
  Ouvre le **fenêtre**/**processus**/**Thread**/**un message** boîte de dialogue où vous pouvez utiliser la **outil recherche** ou spécifier des critères de recherche.  
   
- **Rechercher suivant**  
- Recherche dans l’affichage actuel la fenêtre correspondante suivante, le processus, le thread ou le message. Cet élément de menu (et le bouton de barre d’outils associé) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique.  
+ **Suivant**  
+ Recherche dans la vue actuelle pour la fenêtre correspondante suivante, le processus, le thread ou le message. Cet élément de menu (et le bouton de barre d’outils associés) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique.  
   
- **Rechercher précédent**  
- Recherche dans l’affichage actuel la fenêtre correspondante précédente, le processus, le thread ou le message. Cet élément de menu (et le bouton de barre d’outils associé) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique.
+ **Précédent**  
+ Recherche dans la vue actuelle pour la fenêtre correspondante précédente, le processus, le thread ou le message. Cet élément de menu (et le bouton de barre d’outils associés) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique.

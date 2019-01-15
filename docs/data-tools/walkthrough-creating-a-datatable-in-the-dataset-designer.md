@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'un DataTable dans le Concepteur de DataSet"
+title: 'Procédure pas à pas : Création d’un DataTable dans le Concepteur de Dataset'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824832"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : Création d’un DataTable dans le Concepteur de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : Créer un DataTable dans le Concepteur de Dataset
 
 Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de la **Concepteur de Dataset**. Pour plus d’informations sur la création de tables de données comprenant des TableAdapters, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="create-a-new-windows-forms-application"></a>Créez une application Windows Forms
+## <a name="create-a-new-windows-forms-application"></a>Créer une application Windows Forms
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
@@ -39,7 +38,7 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Ajouter un nouveau jeu de données à l’application
 
-1.  Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
+1.  Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
@@ -63,7 +62,7 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 
 2.  Nom de la colonne `SongID`.
 
-3.  Dans le **propriétés** fenêtre, définissez la <xref:System.Data.DataColumn.DataType%2A> propriété <xref:System.Int16?displayProperty=fullName>.
+3.  Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataColumn.DataType%2A> sur <xref:System.Int16?displayProperty=fullName>.
 
 4.  Répétez ce processus et ajoutez les colonnes suivantes :
 

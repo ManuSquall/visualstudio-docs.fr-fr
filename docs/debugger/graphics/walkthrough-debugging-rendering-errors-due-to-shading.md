@@ -1,8 +1,6 @@
 ---
-title: 'Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Débogage des erreurs dues à la trame de rendus | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828405"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendus dues à la trame
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage
 Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Graphics Diagnostics pour examiner un objet qui est de couleur incorrecte en raison d’un bogue de nuanceur.  
   
  Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
@@ -52,7 +50,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code
   
 1. Ouvrez la fenêtre **Historique des pixels Graphics** . Dans la barre d’outils **Graphics Diagnostics** , choisissez **Historique des pixels**.  
   
-2. Sélectionnez le pixel à examiner. Dans la fenêtre de document journal de graphiques, sélectionnez un des pixels sur l’objet colorié de manière incorrecte :  
+2. Sélectionnez le pixel à examiner. Dans la fenêtre de document du journal de graphiques, sélectionnez un des pixels sur l’objet colorié de manière incorrecte :  
   
     ![Sélection d’un pixel affiche des informations sur son historique. ](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -62,7 +60,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code
   
     Notez que le résultat du nuanceur de pixels est noir entièrement opaque (0, 0, 0, 1) et que le **fusion de sortie** combinés ce nuanceur de pixels avec la **précédent** couleur du pixel de manière qui le  **Résultat** soit également noir entièrement opaque.  
   
-   Après avoir examiné un pixel de couleur incorrecte et découvrir que la sortie du nuanceur de pixels n’est pas la couleur attendue, vous pouvez utiliser le débogueur HLSL pour examiner le nuanceur de pixels et de savoir ce qui est arrivé à la couleur de l’objet. Le débogueur HLSL vous permet d’examiner l’état des variables HLSL pendant l’exécution, d’exécuter pas à pas le code HLSL et de définir des points d’arrêt pour vous aider à diagnostiquer le problème.  
+   Après avoir examiné un pixel de couleur incorrecte et constaté que la sortie du nuanceur de pixels n’est pas la couleur attendue, vous pouvez utiliser le débogueur HLSL pour examiner le nuanceur de pixels et déterminer la raison du problème de couleur de l’objet. Le débogueur HLSL vous permet d’examiner l’état des variables HLSL pendant l’exécution, d’exécuter pas à pas le code HLSL et de définir des points d’arrêt pour vous aider à diagnostiquer le problème.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Pour examiner le nuanceur de pixels  
   
@@ -84,7 +82,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code
   
 2. Recherchez la structure de sortie du nuanceur de sommets, qui correspond à l’entrée du nuanceur de pixels. Dans ce scénario, cette structure s’appelle `output`. Examinez le code du nuanceur de sommets et notez que le membre `color` de la structure `output` a été défini explicitement sur la couleur noire entièrement opaque, peut-être en raison des efforts de débogage d'un utilisateur.  
   
-3. Vérifiez que le membre de couleur n'est jamais copié à partir de la structure d'entrée. Étant donné que la valeur de `output.color` a la valeur noir entièrement opaque juste avant le `output` structure est retournée, il est judicieux de s’assurer que la valeur de `output` n’a pas été correctement initialisée sur une ligne précédente. Parcourez le code du nuanceur de sommets jusqu'à ce que vous atteigniez la ligne qui définit `output.color` sur Noir lorsque vous examinez la valeur de `output.color`. Notez que la valeur de `output.color` n'est pas initialisée tant qu'elle n'est pas définie sur Noir. Cela confirme que la ligne de code qui définit `output.color` sur Noir doit être modifiée, et non pas supprimée.  
+3. Vérifiez que le membre de couleur n'est jamais copié à partir de la structure d'entrée. Étant donné que la valeur `output.color` est définie sur la couleur noire entièrement opaque juste avant que la structure `output` ne soit retournée, il est préférable de vérifier que la valeur de `output` n’a pas été correctement initialisée sur une ligne précédente. Parcourez le code du nuanceur de sommets jusqu'à ce que vous atteigniez la ligne qui définit `output.color` sur Noir lorsque vous examinez la valeur de `output.color`. Notez que la valeur de `output.color` n'est pas initialisée tant qu'elle n'est pas définie sur Noir. Cela confirme que la ligne de code qui définit `output.color` sur Noir doit être modifiée, et non pas supprimée.  
   
     ![La valeur « Output.Color » est noir. ](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

@@ -1,8 +1,6 @@
 ---
-title: 'Comment : afficher les propriétés de la fenêtre | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Afficher la fenêtre Propriétés | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - window properties
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 204121f40fa1cfc32040185286e7c566bbb59214
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 36fe0363ceebc15bf877bafd1a528ae707668e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956555"
 ---
-# <a name="how-to-display-window-properties"></a>Comment : afficher les propriétés d'une fenêtre
+# <a name="how-to-display-window-properties"></a>Procédure : Afficher les propriétés d’une fenêtre
 Pour en savoir plus sur une fenêtre listée dans [Windows vue](../debugger/windows-view.md), utilisez le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md).  
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Pour ouvrir la boîte de dialogue Propriétés de la fenêtre  

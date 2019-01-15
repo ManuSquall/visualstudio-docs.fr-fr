@@ -1,9 +1,7 @@
 ---
 title: Créer des vues personnalisées d'objets natifs
 description: Utiliser l’infrastructure Natvis pour personnaliser la façon dont Visual Studio affiche les types natifs dans le débogueur
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821190"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Créer des vues personnalisées d’objets natifs dans le débogueur
 
@@ -169,7 +167,7 @@ Les erreurs apparaissent dans le **sortie** fenêtre.
 ##  <a name="BKMK_Syntax_reference"></a> Référence à la syntaxe Natvis  
 
 ###  <a name="BKMK_AutoVisualizer"></a> Élément AutoVisualizer  
-Le `AutoVisualizer` élément est le nœud racine de la *.natvis* de fichiers et contient l’espace de noms `xmlns:` attribut. 
+L’élément `AutoVisualizer` est le nœud racine du fichier *.natvis* et contient l’attribut `xmlns:` de l’espace de noms. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +211,7 @@ Dans l’exemple suivant, la même visualisation est utilisée si l’objet est 
 </Type>  
 ```  
 
-Vous pouvez référencer des paramètres de modèle dans l’entrée de visualisation à l’aide de macros $T1, $T2 et ainsi de suite. Pour rechercher des exemples de ces macros, consultez le *.natvis* fichiers fournis avec Visual Studio.  
+Vous pouvez référencer des paramètres de modèle dans l’entrée de visualisation à l’aide de macros $T1, $T2 et ainsi de suite. Pour trouver des exemples de ces macros, consultez les fichiers *.natvis* fournis avec Visual Studio.  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> Correspondance des types de visualiseur  
 Si une entrée de visualisation ne parvient pas à valider, la visualisation disponible suivante est utilisée.  
@@ -421,7 +419,7 @@ Un `std::vector` montre ses éléments individuels quand il est développé dans
 
 Le `ArrayItems` nœud doit avoir :  
 
-- Un `Size` expression (qui doit correspondre à un entier) pour le débogueur comprenne la longueur du tableau.  
+- une expression `Size` (qui doit prendre la valeur d’un entier) pour que le débogueur comprenne la longueur du tableau.  
 - Un `ValuePointer` expression qui pointe vers le premier élément (qui doit être un pointeur d’un type d’élément qui n’est pas `void*`).  
 
 La valeur par défaut de la limite inférieure du tableau est 0. Pour remplacer la valeur, utilisez un `LowerBound` élément. Le *.natvis* comportent des exemples de fichiers fournis avec Visual Studio.  
@@ -448,7 +446,7 @@ Vous pouvez également spécifier des tableaux multidimensionnels. Dans ce cas, 
 
 - `Direction` Spécifie si le tableau est dans l’ordre ligne-major ou column-major. 
 - `Rank` spécifie le rang du tableau. 
-- Le `Size` élément accepte le caractère implicite `$i` paramètre, qu’il substitue par l’index de dimension pour déterminer la longueur du tableau dans cette dimension. Dans l’exemple précédent, l’expression `_M_extent.M_base[0]` doit indiquer la longueur de la dimension 0, `_M_extent._M_base[1]` le 1er et ainsi de suite.  
+- L’élément `Size` accepte le paramètre `$i` implicite qu’il remplace par l’index de dimension pour déterminer la longueur du tableau dans cette dimension. Dans l’exemple précédent, l’expression `_M_extent.M_base[0]` doit indiquer la longueur de la dimension 0, `_M_extent._M_base[1]` le 1er et ainsi de suite.  
 
 Voici comment une à deux dimensions `Concurrency::array` objet recherche dans la fenêtre du débogueur :  
 
@@ -582,7 +580,7 @@ Par exemple, le type de pointeur intelligent `auto_ptr<vector<int>>` affiche gé
 
  ![Auto&#95;ptr&#60;vecteur&#60;int&#62; &#62; expansion par défaut](../debugger/media/dbg_natvis_expand_expandeditem_default.png "expansion par défaut")  
 
- Pour afficher les valeurs du vecteur, vous devez descendre de deux niveaux dans la fenêtre variable, en passant par la `_Myptr` membre. En ajoutant un `ExpandedItem` élément, vous pouvez éliminer le `_Myptr` variable à partir de la hiérarchie et directement afficher les éléments du vecteur :  
+ Pour afficher les valeurs du vecteur, vous devez descendre de deux niveaux dans la fenêtre variable, en passant par la `_Myptr` membre. En ajoutant un élément `ExpandedItem` , vous pouvez éliminer la variable `_Myptr` de la hiérarchie et afficher directement les éléments du vecteur :  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ L’exemple suivant montre comment agréger des propriétés de la classe de bas
 </Type>  
 ```  
 
-Le **nd** spécificateur de format, ce qui désactive le correspondantes pour la classe dérivée de visualisation, est nécessaire ici. Sinon, l’expression `*(CFrameworkElement*)this` provoquerait la `CPanel` visualisation à appliquer à nouveau, étant donné que les règles de correspondance de type de la visualisation par défaut considérez-la comme celui qui est plus approprié. Utiliser le **nd** spécificateur pour indiquer au débogueur d’utiliser la visualisation de la classe de base ou l’expansion par défaut si la classe de base ne possède aucune visualisation de format.  
+Le spécificateur de format **nd** qui désactive l’association de la visualisation de la classe dérivée est ici nécessaire. Sinon, l’expression `*(CFrameworkElement*)this` provoquerait la `CPanel` visualisation à appliquer à nouveau, étant donné que les règles de correspondance de type de la visualisation par défaut considérez-la comme celui qui est plus approprié. Utiliser le **nd** spécificateur pour indiquer au débogueur d’utiliser la visualisation de la classe de base ou l’expansion par défaut si la classe de base ne possède aucune visualisation de format.  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Expansion de l’élément synthétique  
- Bien que le `ExpandedItem` élément fournit une vue plus plate des données en éliminant les hiérarchies, les `Synthetic` nœud effectue l’opération inverse. Il vous permet de créer un élément enfant artificiel qui n’est pas un résultat d’une expression. L’élément artificiel peut avoir ses propres éléments enfants. Dans l'exemple suivant, la visualisation du type `Concurrency::array` utilise un nœud `Synthetic` pour présenter un message de diagnostic à l'utilisateur :  
+####  <a name="BKMK_Synthetic_Item_expansion"></a> Expansion de l’élément Synthetic  
+ Alors que l’élément `ExpandedItem` offre une vue plus plate des données en éliminant les hiérarchies, le nœud `Synthetic` fait exactement le contraire. Il vous permet de créer un élément enfant artificiel qui n’est pas un résultat d’une expression. L’élément artificiel peut avoir ses propres éléments enfants. Dans l'exemple suivant, la visualisation du type `Concurrency::array` utilise un nœud `Synthetic` pour présenter un message de diagnostic à l'utilisateur :  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ Le **nd** spécificateur de format, ce qui désactive le correspondantes pour la
  ![Concurrence::tableau avec expansion d’élément synthétique](../debugger/media/dbg_natvis_expand_synthetic.png "concurrence::tableau avec expansion d’élément synthétique")  
 
 ###  <a name="BKMK_HResult"></a> Élément de HResult 
- Le `HResult` élément vous permet de personnaliser les informations affichées pour un **HRESULT** dans les fenêtres du débogueur. Le `HRValue` élément doit contenir la valeur 32 bits de la **HRESULT** qui doit être personnalisé. Le `HRDescription` élément contient les informations à afficher dans la fenêtre du débogueur.  
+ Le `HResult` élément vous permet de personnaliser les informations affichées pour un **HRESULT** dans les fenêtres du débogueur. L’élément `HRValue` doit contenir la valeur 32 bits du **HRESULT** à personnaliser. Le `HRDescription` élément contient les informations à afficher dans la fenêtre du débogueur.  
 
 ```xml
 
@@ -661,7 +659,7 @@ Voici un exemple d'élément UIVisualizer :
 
 - Un `ServiceId`  -  `Id` paire attribut identifie un `UIVisualizer`. Le `ServiceId` est le GUID du service le visualiseur expose de package. `Id` est un identificateur unique qui différencie les visualiseurs, si un service en propose plusieurs. Dans l’exemple précédent, le même service de visualiseur fournit deux visualiseurs.  
   
-- Le `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe qui se trouve dans le débogueur. Exemple :  
+- Le `MenuName` attribut définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe qui se trouve dans le débogueur. Par exemple :  
 
   ![Menu contextuel du menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "menu contextuel du menu UIVisualizer")  
 
