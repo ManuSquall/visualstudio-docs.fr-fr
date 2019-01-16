@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837756"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204345"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Définir des configurations Debug et Release dans Visual Studio
 
@@ -44,7 +44,7 @@ Les projets Visual Studio ont des configurations Release et Debug distinctes pou
 
 Dans la configuration debug, votre programme est compilé sans informations de débogage symboliques et aucune optimisation. L'optimisation complique le débogage, étant donné que la relation entre le code source et les instructions générées est plus complexe.
 
-La configuration release de votre programme ne possède aucune information de débogage symboliques et est entièrement optimisée. Les informations de débogage peuvent être générées dans des fichiers .pdb, [selon les options de compilateur](#BKMK_symbols_release) utilisées. Création des fichiers .pdb peut être utile si vous devez ultérieurement déboguer votre version release.
+La configuration release de votre programme ne possède aucune information de débogage symboliques et est entièrement optimisée. Pour le code managé et le code C++, les informations de débogage peuvent être générées dans les fichiers .pdb, [selon les options du compilateur](#BKMK_symbols_release) qui sont utilisés. Création des fichiers .pdb peut être utile si vous devez ultérieurement déboguer votre version release.
 
 Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
 

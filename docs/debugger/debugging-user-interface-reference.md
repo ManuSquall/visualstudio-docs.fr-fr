@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988022"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269486"
 ---
 # <a name="debugging-user-interface-reference"></a>Référence du débogage de l'interface utilisateur
 Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déboguez votre application.  
@@ -44,5 +44,5 @@ Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déb
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)   
+ [Présentation du débogueur](../debugger/debugger-feature-tour.md)   
  [Commande, fenêtre](../ide/reference/command-window.md)

@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 717e57a4c4ba739236fa3b66a444dd854d357dcc
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892661"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204292"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Paramètres des pages de propriétés pour les projets Web
 Vous pouvez modifier les paramètres de propriété de configuration Debug d’un site web dans la boîte de dialogue **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.  
   
-### <a name="configuration-properties-folder-start-options-category"></a>Dossier Propriétés de configuration (catégorie Options de démarrage)  
+### <a name="start-options-category"></a>Catégorie d’Options de démarrage
   
 | **Paramètre** | **Description** |
 | - | - |

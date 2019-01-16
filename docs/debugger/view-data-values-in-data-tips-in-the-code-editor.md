@@ -18,18 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898071"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204399"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans DataTips dans l’éditeur de code
 
-Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
-
-S’il s’agit de la première fois que le débogage, il pouvez que vous souhaitez lire [écrire de meilleures C# code à l’aide de Visual Studio](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de lire cet article.
+Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle. Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
   
 ## <a name="work-with-datatips"></a>Utiliser des DataTips
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923112"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154348"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual C#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -51,7 +51,7 @@ ms.locfileid: "53923112"
  Certificats Authenticode sont utilisés pour vérifier l’authenticité du serveur de publication de l’application. En utilisant Authenticode pour le déploiement d’applications, ClickOnce permet d’empêcher un programme nuisible préjudiciable se présente comme un programme légitime provenant d’une source digne de confiance connue. Si vous le souhaitez, les certificats peuvent également être utilisés pour signer l’application et manifestes de déploiement afin de prouver que les fichiers n’ont pas été falsifiés. Pour plus d’informations, consultez [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md). Certificats peuvent également être utilisés pour configurer des ordinateurs clients pour avoir une liste des éditeurs approuvés. Si une application provient d’un éditeur approuvé, il peut être installé sans aucune interaction utilisateur. Pour plus d’informations, consultez [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Sécurité d'accès du code  
- Sécurité d’accès de code permet de limiter l’accès dont dispose le code aux ressources protégées. Dans la plupart des cas, vous pouvez choisir les zones Internet ou Intranet Local pour limiter les autorisations. Utilisez le **sécurité** page dans le **ProjectDesigner** pour demander la zone appropriée pour l’application. Vous pouvez également déboguer des applications avec des autorisations restreintes pour émuler l’expérience utilisateur final. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
+ Sécurité d’accès du code permet de limiter l’accès dont dispose le code aux ressources protégées. Dans la plupart des cas, vous pouvez choisir les zones Internet ou Intranet Local pour limiter les autorisations. Utilisez le **sécurité** page dans le **ProjectDesigner** pour demander la zone appropriée pour l’application. Vous pouvez également déboguer des applications avec des autorisations restreintes pour émuler l’expérience utilisateur final. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>Invite d’approbation ClickOnce  
  Si l’application demande plus d’autorisations que vous permet de la zone, l’utilisateur final peut être invité à prendre une décision d’approbation. L’utilisateur final peut décider si les applications ClickOnce telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications de console, les applications de navigateur XAML et les solutions Office sont approuvées pour exécution. Pour plus d'informations, voir [Procédure : Configurer le comportement de l’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  

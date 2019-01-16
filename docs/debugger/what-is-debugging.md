@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830967"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204279"
 ---
 # <a name="what-is-debugging"></a>Qu’est-ce que le débogage ?
 
@@ -44,11 +44,14 @@ Lorsque vous basculez ce paramètre, vous modifiez votre projet à partir d’un
 
 ## <a name="when-to-use-a-debugger"></a>Quand utiliser un débogueur
 
-Le débogueur est un outil essentiel pour rechercher et corriger les bogues dans vos applications. Toutefois, contexte est roi et il est important de tirer parti de tous les outils à votre élément jetable pour vous aider à éliminer rapidement les bogues ou des erreurs. Parfois, le droit « tool » peut être une méthode de codage mieux. En apprenant quand utiliser le débogueur et un autre outil, vous allez également apprendre à utiliser le débogueur plus efficacement. Si vous savez déjà que vous deviez en savoir plus sur le débogueur, consultez [débogage pour les débutants](../debugger/debugging-absolute-beginners.md). Sinon, suivez le lien dans **étapes suivantes**.
+Le débogueur est un outil essentiel pour rechercher et corriger les bogues dans vos applications. Toutefois, contexte est roi et il est important de tirer parti de tous les outils à votre élément jetable pour vous aider à éliminer rapidement les bogues ou des erreurs. Parfois, le droit « tool » peut être une méthode de codage mieux. En apprenant quand utiliser le débogueur et un autre outil, vous allez également apprendre à utiliser le débogueur plus efficacement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cet article, vous avez découvert quelques concepts généraux liés au débogage. Ensuite, vous pouvez démarrer le débogage avec Visual Studio et comment écrire du code avec moins de bogues d’apprentissage. L’article suivant montre C# exemples de code, mais les concepts s’appliquent à tous les langages pris en charge par Visual Studio.
+Dans cet article, vous avez découvert quelques concepts généraux liés au débogage. Ensuite, vous pouvez démarrer le débogage avec Visual Studio et comment écrire du code avec moins de bogues d’apprentissage. Ce qui suit les articles show C# exemples de code, mais les concepts s’appliquent à tous les langages pris en charge par Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Débogage pour les grands débutants](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [Corriger les bogues en écrivant un meilleur code C#](../debugger/write-better-code-with-visual-studio.md)

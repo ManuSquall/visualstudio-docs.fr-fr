@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 75ffa4075c58750834558f38dcd2e2fcacc0d358
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227315"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Définir un espion sur les Variables dans des Threads parallèles dans Visual Studio
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Définir un espion sur les Variables dans des Threads parallèles dans Visual Studio (C#, Visual Basic, C++)
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans la fenêtre **Espion parallèle** :  
   
 - La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
@@ -34,7 +34,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 - Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.  
   
   > [!TIP]
-  >  Aux informations de tâche modifiés dans le **espion parallèle** fenêtre, vous devez tout d’abord ouvrir le **tâche** fenêtre.  
+  >  Pour afficher des informations de tâche dans le **espion parallèle** fenêtre, vous devez tout d’abord ouvrir le **tâche** fenêtre.  
   
 - L’essai à blanc *ajouter un espion* colonnes, dans laquelle vous pouvez entrer des expressions à surveiller.  
   
@@ -62,7 +62,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
   
 ### <a name="to-switch-to-another-thread"></a>Pour basculer vers un autre thread  
   
--   Double-cliquez sur la colonne de thread actuelle (la deuxième colonne). Clavier Sélectionnez la ligne et appuyez sur ENTRÉE.)  
+-   Double-cliquez sur la colonne de thread actuelle (la deuxième colonne). (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)  
   
 ### <a name="to-sort-a-column"></a>Pour trier une colonne  
   

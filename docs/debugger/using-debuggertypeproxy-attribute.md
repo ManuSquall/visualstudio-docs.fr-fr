@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227536"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>Utilisation de l'attribut DebuggerTypeProxy
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>À l’aide de l’attribut DebuggerTypeProxy (C#, Visual Basic, C++ / c++ / CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> spécifie un proxy (ou remplaçant) pour un type et modifie la façon dont le type est affiché dans les fenêtres du débogueur. Quand vous visualisez une variable possédant un proxy, ce dernier remplace le type d’origine dans l’**affichage**. La fenêtre de variables du débogueur   n'affiche que les membres publics du type du proxy. Les membres privés ne sont pas affichés.
 
@@ -33,6 +33,9 @@ Cet attribut peut s'appliquer aux éléments suivants :
 - Structures
 - Classes
 - Assemblys
+
+> [!NOTE]
+> Pour le code natif, cet attribut est pris en charge uniquement en C / c++ / code de l’interface CLI.
 
 Une classe proxy de type doit avoir un constructeur pouvant prendre un argument du type que le proxy remplacera. Le débogueur crée une nouvelle instance de la classe proxy de type chaque fois qu'il doit afficher une variable du type cible. Cela peut avoir des conséquences sur les performances. Par conséquent, vous ne devez pas effectuer d'autres tâches dans le constructeur que celles qui sont absolument nécessaires.
 

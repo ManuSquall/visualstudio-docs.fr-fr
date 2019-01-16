@@ -1,9 +1,9 @@
 ---
 title: À l’aide de l’attribut DebuggerDisplay | Microsoft Docs
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228056"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>À l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, C++ / c++ / CLI)
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.  
   
  L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.  
@@ -30,6 +30,9 @@ La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont u
   
 > [!IMPORTANT]
 >  Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.  
+
+> [!NOTE]
+> Pour le code natif, cet attribut est pris en charge uniquement en C / c++ / code de l’interface CLI.
   
  Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.  
   

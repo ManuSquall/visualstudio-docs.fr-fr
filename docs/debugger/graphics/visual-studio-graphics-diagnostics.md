@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 9c4dda5fef6b2a288e5b4f78bbe6b10422ef5ea2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890928"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154255"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio
 Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis en analysant les problèmes de rendu et de performances dans les applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui s’exécutent localement sur votre PC Windows, dans un émulateur d’appareil Windows, ou sur un PC ou un appareil distant.  
 
- Le flux de travail Graphics Diagnostics commence par capturer un enregistrement de la façon dont votre application utilise Direct3D (dynamiquement, durant son exécution) pour que les informations relatives au comportement puissent être analysées immédiatement, partagées ou enregistrées pour un usage différé. Les sessions de capture peuvent être lancées et contrôlées manuellement à partir de Visual Studio ou via l’outil en ligne de commande de capture **dxcap.exe**. Les sessions de capture peuvent également être lancées et contrôlées par programmation à l’aide des API de capture Graphics Diagnostics.  
+ Le flux de travail Graphics Diagnostics commence par capturer un enregistrement de la façon dont votre application utilise Direct3D (dynamiquement, durant son exécution) pour que les informations relatives au comportement puissent être analysées immédiatement, partagées ou enregistrées pour un usage différé. Sessions de capture peuvent être lancées et contrôlées manuellement à partir de Visual Studio ou avec l’outil de ligne de commande de capture **dxcap.exe**. Sessions de capture peuvent également lancer et contrôlées par programmation à l’aide de l’API de capture de Graphics Diagnostics.  
 
- Une fois qu’une session de capture a été enregistrée, son contenu peut être lu par Visual Studio *Graphics Analyzer* à tout moment, en recréant les frames capturés à l’aide des ressources et des commandes de rendu utilisées par l’application. Ensuite, à l'aide des outils fournis dans la fenêtre Graphics Analyzer, les frames capturés peuvent être analysés en détail. Ces outils permettent d'examiner un appel d'API, une ressource, un objet État du pipeline, une étape de canalisation Direct3D, ou même l'historique complet d'un pixel dans un frame capturé. L’utilisation conjointe de ces outils permet d’explorer un problème de rendu de façon intuitive, depuis son apparition dans un frame capturé jusqu’à sa cause racine dans le code source, les nuanceurs ou les ressources graphiques de l’application.  
+ Une fois qu’une session de capture a été enregistrée, son contenu peut être lu par Visual Studio *Graphics Analyzer* à tout moment, en recréant les frames capturés à l’aide des ressources et des commandes de rendu utilisées par l’application. Ensuite, à l’aide des outils fournis dans la fenêtre Graphics Analyzer, un des frames capturés peuvent être analysé en détail. Ces outils permettent d'examiner un appel d'API, une ressource, un objet État du pipeline, une étape de canalisation Direct3D, ou même l'historique complet d'un pixel dans un frame capturé. L’utilisation conjointe de ces outils permet d’explorer un problème de rendu de façon intuitive, depuis son apparition dans un frame capturé jusqu’à sa cause racine dans le code source, les nuanceurs ou les ressources graphiques de l’application.  
 
  Pour diagnostiquer les problèmes de performances, un frame capturé peut être analysé à l’aide de l’outil *Analyse des frames*. Cet outil explore les optimisations de performances potentielles en changeant automatiquement la manière dont l'application utilise Direct3D, et en vous fournissant des benchmarks de toutes les variations. Par le passé, vous avez peut-être été amené à effectuer et évaluer les modifications de ce genre manuellement, simplement pour trouver celles qui faisaient la différence. Avec l'outil Analyse des frames, il vous suffit d'apporter les modifications dont l'impact est garanti.  
 

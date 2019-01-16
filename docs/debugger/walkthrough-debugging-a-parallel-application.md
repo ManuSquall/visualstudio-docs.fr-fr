@@ -22,14 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff1876ba76421818f3a59616cfdf26aae41adb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87c1aad4374ca41a9ba89eea4eb7f7cc790a1613
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227809"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Procédure pas à pas : Débogage d’une Application parallèle dans Visual Studio
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une Application parallèle dans Visual Studio (C#, Visual Basic, C++)
+
 Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement d’exécution de code qui utilise le [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois le code arrêté, la procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour l’examiner.  
   
  Cette procédure pas à pas aborde les tâches suivantes :  

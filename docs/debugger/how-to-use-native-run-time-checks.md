@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830954"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269642"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procédure : Utiliser les vérifications natives à l’exécution
 En Visual C++, vous pouvez utiliser des [runtime_checks](/cpp/preprocessor/runtime-checks) natifs pour dépister les erreurs d’exécution courantes, telles que :  
@@ -79,6 +79,6 @@ En Visual C++, vous pouvez utiliser des [runtime_checks](/cpp/preprocessor/runti
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  
- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)   
+ [Présentation du débogueur](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [Vérifications des erreurs au moment de l’exécution](/cpp/c-runtime-library/run-time-error-checking)

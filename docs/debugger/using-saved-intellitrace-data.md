@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227783"
 ---
-# <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>À l’aide des données IntelliTrace enregistrées (C#, Visual Basic, C++)
+
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.
 
  Vérifiez que vous disposez des éléments suivants :
@@ -108,7 +109,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 3.  Développez cet appel pour examiner les appels imbriqués et les valeurs de paramètre qui ont été enregistrés à ce moment précis.
 
-     Clavier Pour afficher ou masquer un appel imbriqué, appuyez sur la **flèche droite** ou **flèche gauche** respectivement de clé. Pour afficher et masquer les valeurs des paramètres d’un appel imbriqué, appuyez sur la touche **Espace** .)
+     (Clavier : Pour afficher ou masquer un appel imbriqué, appuyez sur la **flèche droite** ou **flèche gauche** respectivement de clé. Pour afficher et masquer les valeurs des paramètres d’un appel imbriqué, appuyez sur la touche **Espace** .)
 
      Démarrez le débogage à partir de l’appel.
 

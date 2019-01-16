@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968577"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227380"
 ---
-# <a name="debug-multiple-processes"></a>Déboguer plusieurs processus
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>Déboguer plusieurs processus (C#, Visual Basic, C++)
 
 Visual Studio peut déboguer une solution qui a plusieurs processus. Vous pouvez démarrer et basculer entre les processus, interrompre, continuer et parcourir le code source, arrêter le débogage et end ou détacher des processus individuels.  
 
