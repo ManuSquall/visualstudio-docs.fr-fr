@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b5579c8916e81e3c49e9d6e24bf37ed85039c03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c79492c69f10d97c246d0d56b013fba5af17ec54
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851821"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204003"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Cette méthode associée est la méthode de sauvegarde des méthodes d'insertion, de mise à jour ou de suppression par défaut
 
@@ -22,17 +22,15 @@ Cette méthode associée est la méthode de stockage pour la valeur par défaut 
 
 Le texte sélectionné `DataContext` méthode est actuellement utilisée comme l’un de la `Insert`, `Update`, ou `Delete` méthodes pour l’une des classes d’entité sur le **Concepteur O/R**. Supprimer les causes de la méthode sélectionnée la classe d’entité qui a été à l’aide de cette méthode pour rétablir le comportement d’exécution par défaut pour l’exécution de l’instruction insert, update ou delete pendant une mise à jour.
 
-## <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>Pour supprimer la méthode sélectionnée et obliger la classe d'entité à utiliser des mises à jour au moment de l'exécution
+## <a name="selected-method-options"></a>Options de la méthode sélectionnée
 
-- Cliquez sur **Oui**.
+- Pour supprimer la méthode sélectionnée, à l’origine de la classe d’entité à utiliser les mises à jour de l’exécution, cliquez sur **Oui**.
 
-    La méthode sélectionnée est supprimée et toutes les classes qui ont utilisé cette méthode pour substituer le comportement de mise à jour sont réinitialisées à la valeur par défaut du comportement au moment de l'exécution par défaut LINQ to SQL.
+   La méthode sélectionnée est supprimée et toutes les classes qui ont utilisé cette méthode pour substituer le comportement de mise à jour sont réinitialisées à la valeur par défaut du comportement au moment de l'exécution par défaut LINQ to SQL.
 
-## <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>Pour fermer le message en laissant la méthode sélectionnée inchangée
+- Pour fermer la boîte de message, en laissant la méthode sélectionnée inchangée, cliquez sur **non**.
 
-- Cliquez sur **Non**.
-
-    La boîte de message se ferme et aucune modification n'est apportée.
+   La boîte de message se ferme et aucune modification n'est apportée.
 
 ## <a name="see-also"></a>Voir aussi
 

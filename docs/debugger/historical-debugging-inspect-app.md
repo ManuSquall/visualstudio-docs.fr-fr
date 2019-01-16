@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227693"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Inspecter votre application avec débogage dans Visual Studio historique d’IntelliTrace
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecter votre application avec IntelliTrace dans Visual Studio de débogage historique (C#, Visual Basic, C++)
+
 Vous pouvez utiliser [le débogage d’historique](../debugger/historical-debugging.md) à déplacer vers le haut et les transférer via l’exécution de votre application et inspecter son état.  
   
 Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition, mais pas dans les éditions Professional ou Community.  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>Parcourir votre code avec le débogage d’historique  
+## <a name="navigate-your-code-with-historical-debugging"></a>Parcourir votre code avec le débogage d’historique
+
  Commençons par un programme simple qui contient un bogue. Dans une application de console C#, ajoutez le code suivant :  
   
 ```csharp  

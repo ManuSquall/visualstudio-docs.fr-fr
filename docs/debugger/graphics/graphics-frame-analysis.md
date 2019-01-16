@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875639"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154374"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.  
@@ -91,7 +91,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 #### <a name="statistical-significance"></a>Signification statistique  
  Pour attirer l'attention sur les variations de rendu les plus pertinentes, l'analyse des frames détermine la signification statistique de chaque variante de rendu et affiche les plus révélatrices en gras. Elle affiche celles qui améliorent les performances en vert et celles qui les diminuent en rouge. Elle affiche les résultats non significatifs du point de vue statistique en caractères normaux.  
   
- ![Pertinence statistique de la variante d’appel de dessin](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![La pertinence statistique de la variante d’appel de dessin](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Pour déterminer la pertinence statistique, l’analyse des frames utilise le [test t de Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843474"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154322"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procédure : déboguer du code optimisé
 
@@ -74,7 +74,7 @@ ms.locfileid: "53843474"
 
 8. Si vous avez choisi l'option `Custom` pour `Optimization`, vous pouvez maintenant définir des options pour l'une des autres propriétés affichées dans la liste des propriétés.
 
-9. Sélectionnez le nœud Propriétés de configuration, C/C++, Ligne de commande de la page des propriétés du projet, et ajoutez `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` à la zone de texte **Options supplémentaires**.
+9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` à la **des Options supplémentaires** zone de texte.
 
     > [!WARNING]
     >  `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.

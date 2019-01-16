@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871315"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227341"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Procédure : Utiliser la fenêtre Threads GPU
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Procédure : Fenêtre Threads GPU (C++)
 Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [présentation de C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  La fenêtre Threads GPU contient une table dans laquelle chaque ligne représente un ensemble de threads GPU qui ont les mêmes valeurs dans toutes les colonnes. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads à partir de la fenêtre Threads GPU. Les colonnes suivantes sont affichées dans la fenêtre Threads GPU :  
@@ -68,7 +68,7 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
   
 ### <a name="to-switch-to-a-different-thread"></a>Pour basculer vers un autre thread  
   
--   Double-cliquez sur la colonne. Clavier Sélectionnez la ligne et appuyez sur ENTRÉE.)  
+-   Double-cliquez sur la colonne. (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Pour afficher une mosaïque et un thread particuliers  
   

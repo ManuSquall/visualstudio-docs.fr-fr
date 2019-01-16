@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944374"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268888"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Le débogueur ne parvient pas à afficher le code source ou le code machine
 Cette erreur affiche le message suivant :  
@@ -36,6 +36,7 @@ Cette erreur affiche le message suivant :
   
 -   Le débogueur n'a peut-être pas pu lire les informations de pile, de thread, de Registre et autres informations de contexte à partir du programme que vous déboguez pour des raisons de sécurité. Cela risque surtout de se produire si vous déboguez une application Web et que vous ne disposez pas des autorisations adéquates pour accéder au répertoire virtuel. Vous devez alors définir la sécurité du répertoire virtuel sur Anonyme, puis recommencer.  
   
-## <a name="see-also"></a>Voir aussi  
- [Débogage dans Visual Studio](../debugger/index.md) [visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>Voir aussi
+ [Débogage dans Visual Studio](../debugger/index.md)  
+ [Présentation du débogueur](../debugger/debugger-feature-tour.md)  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
