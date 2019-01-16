@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934662"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d’ensemble du déploiement d’applications approuvées
@@ -80,7 +80,7 @@ Vous devez suivre ces étapes pour tirer parti du déploiement d'applications ap
 -   *CertMgr.exe*, qui est un composant d’Internet Explorer et qui existe donc sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil de gestionnaire de certificats)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>Créer une application ClickOnce  
- Une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une application cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinée avec des fichiers manifestes qui décrivent l'application et fournissent les paramètres d'installation. Vous pouvez transformer votre programme en application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide de la commande **Publier** dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également générer tous les fichiers requis pour le déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide des outils inclus dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Pour obtenir des instructions détaillées sur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, consultez [procédure pas à pas : déploiement manuel d'une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une application cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinée avec des fichiers manifestes qui décrivent l'application et fournissent les paramètres d'installation. Vous pouvez transformer votre programme en application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide de la commande **Publier** dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également générer tous les fichiers requis pour le déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide des outils inclus dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Pour obtenir des instructions détaillées sur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement, consultez [procédure pas à pas : Déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
  Le déploiement d'applications approuvées est spécifique de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]et peut uniquement être utilisé avec des applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   

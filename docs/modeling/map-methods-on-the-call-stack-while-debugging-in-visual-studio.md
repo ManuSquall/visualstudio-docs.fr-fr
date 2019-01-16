@@ -30,10 +30,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53889239"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
@@ -69,7 +69,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 1.  Démarrez le débogage. (Clavier : **F5**)
 
-2.  Une fois que votre application passe en mode arrêt ou que vous parcourez une fonction, choisissez **carte de Code**. (Clavier : **CTRL** + **MAJ** + **`**)
+2.  Une fois que votre application passe en mode arrêt ou que vous parcourez une fonction, choisissez **carte de Code**. (Clavier : **Ctrl** + **Shift** + **`**)
 
      ![Choisir Carte de code pour démarrer le mappage de la pile d’appels](../debugger/media/debuggermap_choosecodemap.png)
 
