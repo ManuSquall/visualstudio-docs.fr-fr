@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931055"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
@@ -57,4 +57,4 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 -   Améliorer les performances de génération en utilisant des builds parallèles. Pour plus d’informations, consultez [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou le billet de blog [Réglage du parallélisme de génération C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : Créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : créer et supprimer les dépendances d’un projet.

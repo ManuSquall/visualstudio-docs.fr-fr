@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour implémenter une interface (Concepteur de classes)
+title: 'Procédure : implémenter une interface (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -13,13 +13,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f427a78c11696253bdd418f5c8f7ac86b906bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53916317"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Guide pratique pour implémenter une interface dans le Concepteur de classes
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Procédure : implémenter une interface dans le Concepteur de classes
 
 Dans le **Concepteur de classes**, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface. Le **Concepteur de classes** génère une implémentation d’interface et affiche la relation entre l’interface et la classe sous la forme d’une relation d’héritage. Vous pouvez implémenter une interface en dessinant une ligne d’héritage entre l’interface et la classe ou en faisant glisser l’interface à partir de l’Affichage de classes.
 

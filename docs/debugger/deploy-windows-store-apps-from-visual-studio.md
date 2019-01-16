@@ -14,10 +14,10 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53821313"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Déployer des applications UWP à partir de Visual Studio

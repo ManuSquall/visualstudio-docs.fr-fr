@@ -25,15 +25,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53867577"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Vue inscrire des valeurs dans la fenêtre Registres (C#, C++, Visual Basic, F#)
 
-Le **inscrit** fenêtre affiche le contenu du Registre lors du débogage de Visual Studio. Pour une introduction avancée aux concepts qui sous-tendent les registres et la **inscrit** fenêtre, consultez [éléments fondamentaux du débogage : la fenêtre Registres](../debugger/debugging-basics-registers-window.md).
+Le **inscrit** fenêtre affiche le contenu du Registre lors du débogage de Visual Studio. Pour une introduction avancée aux concepts qui sous-tendent les registres et la **inscrit** fenêtre, consultez [éléments fondamentaux du débogage : fenêtre Registres
 
 > [!NOTE]
 > Informations de Registre ne sont pas disponibles pour le script ou des applications SQL.

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro | Microsoft Docs'
+title: 'Procédure pas à pas : Création d’un fichier projet MSBuild en partant de zéro | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913889"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : création d'un fichier projet MSBuild en partant de zéro
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : Création d'un fichier de projet MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
 - Générer de façon incrémentielle.  
   
-  Cette procédure pas à pas montre comment créer le projet sur l'invite de commandes et examiner les résultats. Pour plus d’informations sur MSBuild et son exécution à l’invite de commandes, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Cette procédure pas à pas montre comment créer le projet sur l'invite de commandes et examiner les résultats. Pour plus d’informations sur MSBuild et son exécution à l’invite de commandes, consultez [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Pour effectuer la procédure pas à pas, vous devez disposer de .NET Framework (version 2.0, 3.5, 4.0 ou 4.5), car il comprend MSBuild et le compilateur Visual C#, qui sont requis cette procédure.  
   
@@ -146,10 +146,10 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -399,9 +399,9 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
      **La cible est ignorée "Build", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.**  
   
-     **Fichiers d'entrée: HelloWorld.cs**  
+     **Fichiers d’entrée : HelloWorld.cs**  
   
-     **Fichiers de sortie: BinMSBuildSample.exe**  
+     **Fichiers de sortie : BinMSBuildSample.exe**  
   
      MSBuild ignore la cible Build, car aucun des fichiers source n'a changé depuis la dernière génération de l'application.  
   
@@ -484,7 +484,7 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
 ```  
   
 ## <a name="whats-next"></a>Quelle est la suite ?  
- Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Voir aussi  
 [MSBuild Overview (Vue d’ensemble de MSBuild)](msbuild.md)  

@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837288"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
@@ -91,9 +91,9 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Affichage** : spécifie différentes tailles et résolutions d’affichage pour l’application.
 
- **Orientation** Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
+ **Orientation** Spécifie différentes orientations de l’application : Paysage ou **Portrait**.
 
- **Edge** spécifie différents alignements de bord pour votre application : **Les deux**, **gauche**, **droite**, ou **aucun**.
+ **Edge** spécifie différents alignements de bord pour votre application : Les deux, **Gauche**, **Droit**ou **Aucun**.
 
  **Contraste élevé** : affiche un aperçu de l’application en fonction du paramètre de contraste sélectionné. Ce paramètre, lorsqu'il est défini sur une valeur différente de **Par défaut**, remplace la propriété `RequestedTheme` définie dans App.xaml.
 
@@ -142,4 +142,4 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
  À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md) [comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md) [procédure pas à pas : Liaison de données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Utilisation des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md) [comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md) [procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

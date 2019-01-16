@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53863418"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
@@ -72,7 +72,7 @@ Avant de vous mettre à niveau une base de données, tenez compte des critères 
 
     -   **Attacher un fichier de base de données**: Le chemin d’accès physique du principal *.mdf* fichier.
 
-    -   **Nom logique**: le nom que vous souhaitez utiliser avec le fichier.
+    -   Nom &logique : Le nom que vous souhaitez utiliser avec le fichier.
 
 3.  Sélectionnez le bouton **OK**.
 
