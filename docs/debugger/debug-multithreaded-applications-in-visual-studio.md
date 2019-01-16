@@ -2,7 +2,6 @@
 title: Déboguer les applications multithread | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907882"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 Un thread est une séquence d’instructions à laquelle le système d’exploitation accorde le temps processeur. Chaque processus exécuté dans le système d'exploitation se compose d'au moins un thread. Les processus qui comportent plusieurs threads sont appelés multithread.  
@@ -64,10 +63,10 @@ Le débogage d'une application multithread comportant une interface utilisateur 
  [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)  
  Explique comment déboguer plusieurs processus.
 
- [Procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
+ [Procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
  Procédure pas à pas qui montre comment utiliser le **Threads** fenêtre et la **emplacement de débogage** barre d’outils. 
 
- [Procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Procédure pas à pas qui montre comment utiliser le **piles parallèles** et **tâches** windows.  
   
  [Guide pratique pour basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)  

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a834a5b4b1a380b23ad9edfda9ea42f40e20469
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7bff89e5166dc57b481fc917dc3655b1cbb62ff
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839519"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315616"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisées des ensembles d’outils
 Un ensemble d’outils MSBuild contient des références à des tâches, des cibles et des outils que vous pouvez utiliser pour générer un projet d’application. MSBuild inclut un ensemble d’outils standard, mais vous pouvez également créer des ensembles d’outils personnalisés. Pour plus d’informations sur la façon de spécifier un ensemble d’outils, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -73,7 +73,7 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
+       Microsoft.Build, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  

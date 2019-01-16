@@ -1,8 +1,6 @@
 ---
-title: 'Comment : vérifier les paramètres de propriété IIS | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Vérifiez les paramètres des propriétés IIS | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926880"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Comment : vérifier les paramètres des propriétés IIS
+# <a name="how-to-verify-iis-property-settings"></a>Procédure : Vérifier les paramètres des propriétés IIS
 
 Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil d'administration IIS. Ces propriétés doivent être correctement définies pour que l'application s'exécute. Il est donc souvent nécessaire de vérifier ces paramètres pour pouvoir dépanner.
 
@@ -61,7 +59,7 @@ Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil
 
    3.  Cliquez sur **OK** pour fermer la boîte de dialogue **Méthodes d’authentification**.
 
-5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d’informations, consultez [Comment : associer le verbe DEBUG avec l’Extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d'informations, voir [Procédure : Associer le verbe DEBUG avec l’Extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Pour une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vérifiez que le dossier virtuel de l’application comporte un nom d’application défini dans le **Gestionnaire des services Internet (IIS)**, le **Gestionnaire des services Internet** ou les **Services IIS (Internet Information Services)**.
 
