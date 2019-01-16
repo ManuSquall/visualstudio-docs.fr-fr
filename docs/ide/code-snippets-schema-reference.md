@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864712"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315590"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -547,7 +547,7 @@ Spécifie les références, les importations, les déclarations et le code de l'
 |[Code, élément](../ide/code-snippets-schema-reference.md#code-element)|Élément requis. Spécifie le code que vous souhaitez insérer dans un fichier documentation. Un élément `Code` doit contenir exactement un élément `Snippet`.|
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations-element)|Élément facultatif. Spécifie les littéraux et les objets qui composent un extrait de code que vous pouvez modifier. Il peut y avoir zéro ou un élément `Declarations` dans un élément `Snippet`.|
 |[Imports, élément](../ide/code-snippets-schema-reference.md#imports-element)|Élément facultatif. Groupe des éléments `Import` individuels. Il peut y avoir zéro ou un élément `Imports` dans un élément `Snippet`.|
-||Élément facultatif. Groupe des éléments `Reference` individuels. Il peut y avoir zéro ou un élément `References` dans un élément `Snippet`.|
+|[References, élément](../ide/code-snippets-schema-reference.md#references-element)|Élément facultatif. Groupe des éléments `Reference` individuels. Il peut y avoir zéro ou un élément `References` dans un élément `Snippet`.|
 
 |Élément parent|Description|
 | - |-----------------|

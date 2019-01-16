@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904178"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154061"
 ---
 # <a name="manage-external-tools"></a>Gérer les outils externes
 
@@ -65,8 +65,8 @@ Voici une liste complète des arguments qui peuvent être utilisés lors de la d
 |Nom cible|$(TargetName)|Nom de fichier de l'élément à générer.|
 |Extension cible|$(TargetExt)|Extension de nom de fichier de l'élément à générer.|
 |Répertoire binaire|$(BinDir)|Emplacement final du binaire en cours de génération (sous la forme lecteur + chemin d’accès).|
-|Répertoire du projet|$(ProjDir)|Répertoire du projet actif (lecteur + chemin d'accès).|
-|Nom du fichier projet|$(ProjFileName)|Nom de fichier du projet actif (lecteur + chemin d'accès + nom de fichier).|
+|Répertoire du projet|$(ProjectDir)|Répertoire du projet actif (lecteur + chemin d'accès).|
+|Nom du fichier projet|$(ProjectFileName)|Nom de fichier du projet actif (lecteur + chemin d'accès + nom de fichier).|
 |Répertoire de la solution|$(SolutionDir)|Répertoire de la solution active (lecteur + chemin d'accès).|
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|
 
