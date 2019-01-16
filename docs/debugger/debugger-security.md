@@ -1,8 +1,6 @@
 ---
 title: Sécurité du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de928086a2f8cb15d7d904359b573a1f9c4535b2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 59d4e3fedbee4a1af1de1137e63712825eb51dbf
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562319"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53887943"
 ---
 # <a name="debugger-security"></a>Sécurité du débogueur
 La possibilité de déboguer un autre processus vous donne des pouvoirs extrêmement larges que vous n'auriez pas autrement, surtout lors du débogage à distance. Un débogueur malveillant pourrait infliger des dommages étendus sur l'ordinateur qui est débogué.  
@@ -39,7 +37,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
 ### <a name="managed-debugging-security"></a>Sécurité de débogage managé  
  Voici quelques recommandations générales à appliquer à tout débogage managé.  
   
-- Soyez prudent lorsque vous rejoignez un processus utilisateur non fiable : dans ce cas, vous supposez qu'il est digne de confiance. Quand vous tentez d’attacher un processus d’un utilisateur non approuvé, une boîte de dialogue d’avertissement de sécurité s’affiche pour vous demander de confirmer l’attachement du processus. Vous faites partie des « utilisateurs approuvés », de même que les utilisateurs standard habituellement définis sur les machines où .NET Framework est installé, comme **aspnet**, **localsystem**, **networkservice**et **localservice**. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+- Soyez prudent lorsque vous rejoignez un processus utilisateur non fiable : dans ce cas, vous supposez qu'il est digne de confiance. Quand vous tentez d’attacher un processus d’un utilisateur non approuvé, une boîte de dialogue d’avertissement de sécurité s’affiche pour vous demander de confirmer l’attachement du processus. Vous faites partie des « utilisateurs approuvés », de même que les utilisateurs standard habituellement définis sur les machines où .NET Framework est installé, comme **aspnet**, **localsystem**, **networkservice**et **localservice**. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
   
 - Soyez prudent lors du téléchargement d'un projet à partir d'Internet et de son chargement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il s'agit d'une opération très risquée sans débogage. Lorsque vous procédez ainsi, vous supposez que le projet et le code qu'il contient sont dignes de confiance.  
   
@@ -73,7 +71,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
 ### <a name="symbols-and-source-code"></a>Symboles et code source  
  Deux outils [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui requièrent une réflexion à propos de la sécurité sont les éléments suivants :  
   
-- Le serveur source, qui fournit des versions de code source d'un référentiel de code source. Ceci est utile lorsque vous n'avez pas la version actuelle du code source d'un programme. [Avertissement de sécurité : Le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md)  
+- Le serveur source, qui fournit des versions de code source d'un référentiel de code source. Ceci est utile lorsque vous n'avez pas la version actuelle du code source d'un programme. [Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
 - Le serveur de symboles, qui est utilisé pour fournir les symboles nécessaires pour déboguer un incident pendant un appel système.  
   
@@ -81,5 +79,5 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
- [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) [avertissement de sécurité : Attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Avertissement de sécurité : Le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
