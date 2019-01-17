@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication (Interface) | Documents Microsoft
+title: Interface IRemoteDebugApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 02ddf409bf25cb86fc742cdc004e2f1b664d22e3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729599"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348761"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication, interface
-Représente une application en cours d’exécution. Il n’a pas besoin de correspondre à un processus de système d’exploitation. En règle générale, un débogueur cible une application pour le débogage. En général, le Gestionnaire de déboguer des processus implémente l’objet d’application.  
+Représente une application en cours d’exécution. Il n’a pas besoin de correspondre à un processus de système d’exploitation. En règle générale, un débogueur cible une application pour le débogage. Le Gestionnaire de débogage de processus implémente généralement l’objet d’application.  
   
  Outre les méthodes héritées de `IUnknown`, le `IRemoteDebugApplication` interface expose les méthodes suivantes.  
   
@@ -31,13 +31,13 @@ Représente une application en cours d’exécution. Il n’a pas besoin de corr
 |Méthode|Description|  
 |------------|-----------------|  
 |[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Continue une application en cours d’un point d’arrêt.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Entraîne l’application à s’arrêter dans le débogueur dès que possible.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Oblige l’application à arrêter dans le débogueur au plus tôt.|  
 |[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Se connecte à un débogueur à cette application.|  
-|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Déconnecte le débogueur actif de l’application.|  
+|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Déconnecte le débogueur en cours de l’application.|  
 |[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Retourne le débogueur actif est connecté à l’application.|  
 |[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Fournit un mécanisme pour que le débogueur IDE, en cours d’exécution out-of-process à l’application, pour créer des objets dans le processus d’application.|  
-|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Indique si l’application ne répond.|  
-|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Énumère tous les threads connus pour être associé à l’application.|  
+|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Indique si l’application est réactive.|  
+|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Énumère tous les threads connus à associer à l’application.|  
 |[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Retourne le nom de ce nœud de l’application.|  
-|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Retourne le nœud d’application sous lequel tous les nœuds associés à l’application sont ajoutés.|  
-|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Énumère les contextes d’expression globale pour toutes les langues en cours d’exécution dans cette application.|
+|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Retourne le nœud de l’application sous lequel tous les nœuds associés à l’application sont ajoutés.|  
+|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Énumère les contextes d’expression globale pour tous les langages s’exécutant dans cette application.|

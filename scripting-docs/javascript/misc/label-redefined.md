@@ -1,5 +1,5 @@
 ---
-title: Étiquette redéfinie | Documents Microsoft
+title: Étiquette redéfinie | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633019"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347812"
 ---
 # <a name="label-redefined"></a>Étiquette redéfinie
 Vous créé une nouvelle étiquette, mais que vous lui donnez le nom d’une étiquette existante. Étiquettes peuvent être utilisées pour marquer les blocs de code, mais dans une étendue spécifiée, ils doivent être uniques.  

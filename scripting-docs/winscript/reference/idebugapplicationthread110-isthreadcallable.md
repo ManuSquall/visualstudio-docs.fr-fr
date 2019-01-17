@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsThreadCallable | Documents Microsoft
+title: IDebugApplicationThread110::IsThreadCallable | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34e2c45d7e94c72ade62780f46f4b5c7c22405e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3edf7e8a1495be99d2c5130c307acae92a96b11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725569"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344196"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Détermine si ce thread est dans un état qui traitera les appels effectués à l’aide du thread de PDM commutation mécanismes, tels que SynchronousCallInThread.  
+Détermine si ce thread est dans un état qui traite les appels effectués à l’aide du thread de PDM mécanismes, tels que SynchronousCallInThread de commutation.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110 (Interface)](../../winscript/reference/idebugapplicationthread110-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
+>  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +35,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Paramètres  
  `pfIsCallable`  
- [out] `true` si le thread est peut être appelé, sinon `false`.  
+ [out] `true` si le thread est pouvant être appelé, sinon `false`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)

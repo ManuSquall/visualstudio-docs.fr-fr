@@ -1,5 +1,5 @@
 ---
-title: IDispError (Interface) | Documents Microsoft
+title: Interface IDispError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f139d317db5aa00f03f8e9abd71020e5ff35b03
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b717ebfe740a9b356513bb0f15e90c629a14e147
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728109"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345836"
 ---
 # <a name="idisperror-interface"></a>IDispError, interface
 Fournit des informations contextuelles détaillées.  
@@ -33,9 +33,9 @@ Fournit des informations contextuelles détaillées.
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Récupère un type particulier d’informations sur l’erreur.|  
+|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Récupère un type particulier d’informations d’erreur.|  
 |[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Récupère la prochaine `IDispError` objet.|  
 |[IDispError::GetHresult](../../winscript/reference/idisperror-gethresult.md)|Récupère le code d’erreur à partir de la `IDispError` objet.|  
 |[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Retourne le ProgID dépendants de la langue pour la classe ou d’une application qui a généré l’erreur.|  
-|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Retourne le chemin d’accès du fichier d’aide et l’ID de contexte de la rubrique qui décrit l’erreur, si possible.|  
+|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Retourne le chemin d’accès du fichier d’aide et l’ID de contexte de la rubrique qui explique l’erreur, si possible.|  
 |[IDispError::GetDescription](../../winscript/reference/idisperror-getdescription.md)|Retourne une description textuelle de l’erreur.|

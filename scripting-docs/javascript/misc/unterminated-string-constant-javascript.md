@@ -1,5 +1,5 @@
 ---
-title: Constante de chaîne inachevée (JavaScript) | Documents Microsoft
+title: Constante de chaîne inachevée (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fd4dc6ff9008b03c3e8cc81385d6ebe0fe89396
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633059"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349567"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de chaîne inachevée (JavaScript)
-Vous n’avez pas terminé la constante de chaîne avec un guillemet fermant. Les constantes de chaîne doivent être placées entre une paire de guillemets.  
+Vous n’avez pas terminé votre constante de chaîne avec un guillemet fermant. Constantes de chaîne doivent être encadrées par une paire de guillemets.  
   
 > [!NOTE]
->  Vous pouvez utiliser des paires de guillemets simples ou doubles. Des guillemets doubles peuvent être contenus dans les chaînes mises entre guillemets simples et des guillemets simples peuvent être contenus dans des chaînes entourés guillemets doubles.  
+>  Vous pouvez utiliser des paires de guillemets simples ou doubles. Des guillemets doubles peuvent être contenus dans les chaînes mises entre guillemets simples et les guillemets simples peuvent être contenus dans les chaînes entourés guillemets doubles.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
 -   Ajoutez le guillemet fermant à la fin de la chaîne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet String](../../javascript/reference/string-object-javascript.md)   
+ [Objet de chaîne](../../javascript/reference/string-object-javascript.md)   
  [Méthode toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)

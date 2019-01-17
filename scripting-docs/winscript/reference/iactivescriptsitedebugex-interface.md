@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx (Interface) | Documents Microsoft
+title: Interface IActiveScriptSiteDebugEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cf5849ff1fca282bace97774c6b7ac9e4510226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1e462630f7bf52c4ca94aa59df22616e9a335a7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725039"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345875"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx (interface)
-Implémentez cette interface avec le `IActiveScriptSiteDebug` si vous écrivez un hôte qui a besoin pour obtenir une notification d’une erreur d’exécution dans une application et la possibilité de joindre à l’application pour le débogage de l’interface. Le Gestionnaire de déboguer des processus fournit une notification via `IActiveScriptDebug` si un juste-à-temps débogueur de script se trouve sur l’ordinateur. Si le débogueur de script sans juste-à-temps est trouvé, PDM fournit une notification via `IActiveScriptDebugEx` à la place.  
+Implémentez cette interface avec le `IActiveScriptSiteDebug` interface si vous écrivez un hôte qui doit recevoir une notification d’une erreur d’exécution dans une application et éventuellement l’attacher à l’application pour le débogage. Le Gestionnaire de débogage de processus fournit une notification via `IActiveScriptDebug` si un juste-à-temps débogueur de script se trouve sur l’ordinateur. Si le débogueur de script aucun juste-à-temps est trouvé, PDM fournit une notification via `IActiveScriptDebugEx` à la place.  
   
- Pour obtenir une notification d’une erreur d’exécution, votre hôte doit traiter [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). En fonction de l’action de l’utilisateur, vous pouvez ensuite décider pour attacher le débogueur interne et le retour, ou pour retourner le démarrage du débogueur dans le OnScriptErrorDebug `pfEnterDebugger` paramètre.  
+ Pour obtenir une notification d’une erreur d’exécution, votre hôte doit traiter [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Selon une action de l’utilisateur, vous pouvez alors décider pour attacher le débogueur interne et un retour, ou pour retourner le démarrage du débogueur dans le OnScriptErrorDebug `pfEnterDebugger` paramètre.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   

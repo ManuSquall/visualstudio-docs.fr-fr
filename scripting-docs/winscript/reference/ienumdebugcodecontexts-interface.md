@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts (Interface) | Documents Microsoft
+title: Interface IEnumDebugCodeContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45e28f91b6637142fabfdb3680479c474a75f03d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e35fbb0f35915b2c531bdf2052aa8263c49a798a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728409"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344094"
 ---
 # <a name="ienumdebugcodecontexts-interface"></a>IEnumDebugCodeContexts, interface
 Énumère les contextes de code qui correspondent à un contexte de document.  
@@ -32,5 +32,5 @@ ms.locfileid: "24728409"
 |------------|-----------------|  
 |[IEnumDebugCodeContexts::Next](../../winscript/reference/ienumdebugcodecontexts-next.md)|Récupère un nombre spécifié de segments dans la séquence d’énumération.|  
 |[IEnumDebugCodeContexts::Skip](../../winscript/reference/ienumdebugcodecontexts-skip.md)|Ignore un nombre spécifié de segments dans une séquence d’énumération.|  
-|[IEnumDebugCodeContexts::Reset](../../winscript/reference/ienumdebugcodecontexts-reset.md)|Réinitialise la séquence d’énumération au début.|  
-|[IEnumDebugCodeContexts::Clone](../../winscript/reference/ienumdebugcodecontexts-clone.md)|Crée un énumérateur qui contient le même état que l’énumérateur actuel.|
+|[IEnumDebugCodeContexts::Reset](../../winscript/reference/ienumdebugcodecontexts-reset.md)|Réinitialise une séquence d’énumération au début.|  
+|[IEnumDebugCodeContexts::Clone](../../winscript/reference/ienumdebugcodecontexts-clone.md)|Crée un énumérateur qui contient le même état que l’énumérateur en cours.|

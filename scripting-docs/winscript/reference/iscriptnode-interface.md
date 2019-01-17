@@ -1,5 +1,5 @@
 ---
-title: IScriptNode (Interface) | Documents Microsoft
+title: Interface IScriptNode | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 788be3fe9cb5ba529e3d1ca653d4f0f5c35b5932
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8897d783f8a101b41dd7263061604fb1d82ec56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733779"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344614"
 ---
 # <a name="iscriptnode-interface"></a>IScriptNode, interface
 Un objet qui implémente le `IScriptNode` interface représente une page Web.  
@@ -32,10 +32,10 @@ Un objet qui implémente le `IScriptNode` interface représente une page Web.
 |------------|-----------------|  
 |[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Indique si un objet est toujours actif.|  
 |[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Ajoute une instance enfant de `IScriptEntry`.|  
-|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Ajoute un scriptlet comme une instance de l’enfant d’un `IScriptNode`.|  
+|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Ajoute un scriptlet comme une instance enfant d’un `IScriptNode`.|  
 |[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Supprime l’arborescence d’objets.|  
 |[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Retourne l’enfant qui est à l’index spécifié dans le nœud.|  
-|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Retourne une valeur définie par l’application qui est utilisée pour associer un scriptlet avec l’objet hôte.|  
+|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Retourne une valeur définie par l’application qui est utilisée pour associer un scriptlet à l’objet hôte.|  
 |[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Retourne l’index d’un objet dans la liste des enfants du parent.|  
 |[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Retourne le langage de script qui est utilisé par le nœud de script actuel.|  
 |[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Retourne le nombre de nœuds enfants de la `IScriptNode` objet.|  

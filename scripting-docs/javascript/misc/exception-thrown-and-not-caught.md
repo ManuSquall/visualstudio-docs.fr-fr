@@ -1,5 +1,5 @@
 ---
-title: Exception levée mais non décelée | Documents Microsoft
+title: Exception levée mais non décelée | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633119"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349034"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Exception levée mais non décelée
-Vous inclus un `throw` instruction dans votre code, mais il se trouvait pas dans un **essayez** bloc, ou il a été associé ne **catch** bloc pour intercepter l’erreur. Des exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et capturées à l’extérieur de la **essayez** bloc avec un **catch** instruction.  
+Vous inclus un `throw` instruction dans votre code, mais il ne se trouvait pas dans un **essayez** bloc, ou il a été associé ne **catch** bloc intercepter l’erreur. Exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et interceptées en dehors de la **essayez** bloquer avec une **intercepter** instruction.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
@@ -36,9 +36,9 @@ Vous inclus un `throw` instruction dans votre code, mais il se trouvait pas dans
   
 -   Assurez-vous que votre instruction catch attend la forme correcte d’exception.  
   
--   Si l’exception est levée de nouveau, vérifiez que s’il existe une autre instruction catch correspondante.  
+-   Si l’exception est levée de nouveau, assurez-vous qu’il existe une autre instruction catch correspondante.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet Error](../../javascript/reference/error-object-javascript.md)   
- [throw (instruction)](../../javascript/reference/throw-statement-javascript.md)   
+ [Objet d’erreur](../../javascript/reference/error-object-javascript.md)   
+ [Throw (instruction)](../../javascript/reference/throw-statement-javascript.md)   
  [Instruction try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

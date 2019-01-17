@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry (Interface) | Documents Microsoft
+title: Interface IScriptEntry | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a785be8777cf3400f7723c24f1022bad6e22e330
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9d7b33e2e5c90d5c489fe283575b4a2e45671f9a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729809"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349346"
 ---
 # <a name="iscriptentry-interface"></a>IScriptEntry, interface
-Un objet qui implémente le `IScriptEntry` interface représente un bloc de script ou d’un objet de fonction.  
+Un objet qui implémente le `IScriptEntry` interface représente un bloc de script ou un objet de fonction.  
   
  Outre les méthodes héritées de `IScriptNode`, le `IScriptEntry` interface expose les méthodes suivantes.  
   
@@ -30,16 +30,16 @@ Un objet qui implémente le `IScriptEntry` interface représente un bloc de scri
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)|Retourne le texte qui correspond au corps d’un `IScriptEntry` scriptlet, bloc de la fonction ou bloc de script.|  
+|[IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)|Retourne le texte qui correspond au corps d’un `IScriptEntry` bloc de script, un bloc de fonction ou scriptlet.|  
 |[IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)|Retourne le nom de l’élément qui identifie un `IScriptEntry` objet.|  
-|[IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)|Pour les entrées qui représentent un objet unique (par exemple, une fonction), retourne le nom de l’objet.|  
+|[IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)|Pour les entrées qui représentent un seul objet (par exemple, une fonction), retourne le nom de l’objet.|  
 |[IScriptEntry::GetRange](../../winscript/reference/iscriptentry-getrange.md)|Retourne la position de début et la longueur d’une entrée.|  
 |[IScriptEntry::GetSignature](../../winscript/reference/iscriptentry-getsignature.md)|Retourne informations de type pour un `IScriptEntry` objet de fonction.|  
 |[IScriptEntry::GetText](../../winscript/reference/iscriptentry-gettext.md)|Retourne le texte qui correspond à un `IScriptEntry` bloc de script ou le code source qui est contenu dans un `IScriptScriptlet` Gestionnaire d’événements.|  
-|[IScriptEntry::SetBody](../../winscript/reference/iscriptentry-setbody.md)|Définit le texte qui se trouve dans le corps d’une `IScriptEntry` bloc de script ou un `IScriptScriptlet` scriptlet.|  
+|[IScriptEntry::SetBody](../../winscript/reference/iscriptentry-setbody.md)|Définit le texte qui se trouve dans le corps d’un `IScriptEntry` bloc de script ou un `IScriptScriptlet` scriptlet.|  
 |[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)|Définit le nom de l’élément qui identifie un `IScriptEntry` objet.|  
-|[IScriptEntry::SetName](../../winscript/reference/iscriptentry-setname.md)|Pour les entrées qui représentent un objet unique (par exemple, une fonction), définit le nom de l’objet.|  
-|[IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md)|Jeux de saisir des informations pour un `IScriptEntry` objet de fonction.|  
+|[IScriptEntry::SetName](../../winscript/reference/iscriptentry-setname.md)|Pour les entrées qui représentent un seul objet (par exemple, une fonction), définit le nom de l’objet.|  
+|[IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md)|Jeux d’informations de type pour un `IScriptEntry` objet de fonction.|  
 |[IScriptEntry::SetText](../../winscript/reference/iscriptentry-settext.md)|Définit le texte qui correspond à un `IScriptEntry` bloc de script ou le code source qui est contenu dans un `IScriptScriptlet` Gestionnaire d’événements.|  
   
 ## <a name="see-also"></a>Voir aussi  

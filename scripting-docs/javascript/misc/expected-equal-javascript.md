@@ -1,5 +1,5 @@
 ---
-title: "'=' Attendu (JavaScript) | Microsoft Docs"
+title: Expected '=' (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dfdc5856eecf6eef0e2308d4ce20734fbb47bb12
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802262"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348605"
 ---
 # <a name="expected--javascript"></a>'=' attendu (JavaScript)
 Vous a tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle, mais s’est pas placer un signe égal entre la variable et la valeur que vous souhaitez affecter à ce dernier.  

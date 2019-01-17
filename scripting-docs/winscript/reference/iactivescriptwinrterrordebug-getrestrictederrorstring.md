@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorString | Documents Microsoft
+title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade51ae9852519d6a059193aacbfdde49ae82d19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e739d12674d64d5e47915c9f9e4c525e68d8b061
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725149"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349840"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorstring"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
-Retourne le Windows Runtime restreint la chaîne d’erreur, s’il est disponible.  
+Retourne le Runtime Windows restreint la chaîne d’erreur, s’il est disponible.  
   
 > [!IMPORTANT]
->  [IActiveScriptWinRTErrorDebug (Interface)](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
+>  [IActiveScriptWinRTErrorDebug Interface](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   

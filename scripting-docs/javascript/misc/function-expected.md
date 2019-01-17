@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928930"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349801"
 ---
 # <a name="function-expected"></a>Fonction attendue
 Soit vous avez tenté d’appeler une de la **prototype de fonction** méthodes sur un objet qui n’était pas un `Function` objet, ou utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur, car **exemple** n’est pas une fonction.  

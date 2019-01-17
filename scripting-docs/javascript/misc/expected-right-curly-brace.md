@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348307"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350113"
 ---
 # <a name="expected-"></a>'}' attendu
 Vous l’avez fait pas incluent l’accolade fermante qui marque la fin du corps de la fonction, la boucle, bloc de code ou initialiseur d’objet. Un exemple de cette erreur serait un **pour** boucle avec uniquement l’accolade gauche marquant le corps de la boucle.  

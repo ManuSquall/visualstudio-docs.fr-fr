@@ -1,5 +1,5 @@
 ---
-title: Identificateur (JavaScript) attendu | Documents Microsoft
+title: Identificateur (JavaScript) attendu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632869"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349229"
 ---
 # <a name="expected-identifier-javascript"></a>Identificateur attendu (JavaScript)
 Vous avez utilisé autre chose qu’un identificateur dans un contexte était requise. Un identificateur peut être :  
@@ -40,7 +40,7 @@ Vous avez utilisé autre chose qu’un identificateur dans un contexte était re
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Modifier l’expression de sorte qu’un identificateur apparaît à gauche du signe égal.  
+-   Modifiez l’expression pour un identificateur apparaît à gauche du signe égal.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)

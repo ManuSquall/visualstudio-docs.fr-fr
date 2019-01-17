@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348381"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349398"
 ---
 # <a name="expected-"></a>'{' attendu
 Vous n’avez pas inclus l’accolade gauche qui marque le début du corps de la fonction. Code qui constitue le corps d’une fonction, même si elle est une seule ligne, doit figurer entre accolades gauche et droite. Notez que l’utilisation d’accolades dans le corps de fonction est plus stricte que dans des boucles.  

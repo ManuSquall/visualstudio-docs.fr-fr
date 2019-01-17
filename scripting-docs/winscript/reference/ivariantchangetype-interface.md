@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType (Interface) | Documents Microsoft
+title: Interface IVariantChangeType | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c0bbd5ec7795498d9f04cc516a56d01c78bdb7c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733829"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349255"
 ---
 # <a name="ivariantchangetype-interface"></a>IVariantChangeType, interface
-Permet à l’appelant convertir une valeur de type VARIANT à partir d’un type à un autre.  
+Permet à l’appelant convertir une valeur de type VARIANT à partir d’un type vers un autre.  
   
 ## <a name="methods"></a>Méthodes  
  Outre les méthodes héritées de `IUnknown`, le `IVariantChangeType` interface expose les méthodes suivantes.  

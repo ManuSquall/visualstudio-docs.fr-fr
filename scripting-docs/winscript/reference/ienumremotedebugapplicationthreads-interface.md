@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads (Interface) | Documents Microsoft
+title: IEnumRemoteDebugApplicationThreads Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 89f773ee24c2b50499d7d89bf590250f599b0edb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729109"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349944"
 ---
 # <a name="ienumremotedebugapplicationthreads-interface"></a>IEnumRemoteDebugApplicationThreads, interface
 Énumère les threads en cours d’exécution dans une application.  
@@ -32,5 +32,5 @@ ms.locfileid: "24729109"
 |------------|-----------------|  
 |[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Récupère un nombre spécifié de segments dans une séquence d’énumération.|  
 |[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Ignore un nombre spécifié de segments dans une séquence d’énumération.|  
-|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Réinitialise la séquence d’énumération au début.|  
-|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Crée un énumérateur qui contient le même état que l’énumérateur actuel.|
+|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Réinitialise une séquence d’énumération au début.|  
+|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Crée un énumérateur qui contient le même état que l’énumérateur en cours.|

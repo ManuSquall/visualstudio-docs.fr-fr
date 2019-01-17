@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802392"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349819"
 ---
 # <a name="expected-"></a>':' attendu
 Vous a tenté de créer une expression à l’aide de l’opérateur conditionnel ternaire, mais n’incluez pas le signe deux-points entre les deuxième et troisième opérandes. L’opérateur conditionnel (trois opérandes) ternaire nécessite un signe deux-points entre le deuxième (true) et le troisième (false) opérandes.  

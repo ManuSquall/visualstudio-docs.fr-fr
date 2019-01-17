@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 72445473a1fe090a468010b33381e8751f1bbc65
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096510"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344744"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
 Ignore un nombre spécifié de `DebugPropertyInfo` structures dans une séquence d’énumération.  
@@ -44,5 +44,5 @@ HRESULT Skip(
  Retourne une liste valide `HRESULT`, généralement `S_OK`. Retourne `S_FALSE` et définit le pointeur d’élément actuel à la fin de l’énumération si `celt` est supérieur au nombre d’éléments à gauche dans l’énumérateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IEnumDebugPropertyInfo (Interface)](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+ [IEnumDebugPropertyInfo Interface](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

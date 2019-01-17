@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832172"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349788"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>L'URI à coder contient un caractère incorrect
 Vous avez tenté d’encoder une chaîne sous la forme d’un URI (Uniform Resource Identifier), mais il contenait des caractères non valides. Bien que la plupart des caractères sont valides dans les chaînes à convertir en URI, certaines séquences de caractères Unicode ne sont pas conformes.  

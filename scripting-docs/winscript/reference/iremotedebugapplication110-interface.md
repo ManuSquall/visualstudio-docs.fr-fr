@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110 (Interface) | Documents Microsoft
+title: Interface IRemoteDebugApplication110 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d384cea22b79b2a7ca9af3424d053fb3062d79a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f280e2b869a3046ecb2d3fac37facdcc1bfeb7fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729539"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349879"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110 (interface)
-Utilisé pour fournir les nouvelles fonctionnalités qui peuvent être appelées par les débogueurs de script et des appelants dans le processusent.  
+Utilisé pour fournir de nouvelles capacités qui peuvent être appelées par les débogueurs de script et des appelants in-process.  
   
 > [!IMPORTANT]
 >  Elle est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
@@ -32,6 +32,6 @@ Utilisé pour fournir les nouvelles fonctionnalités qui peuvent être appelées
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|Appelé pour mettre à jour les options du débogueur. L’options par défaut, 0 (SDO_NONE).|  
+|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|Appelée pour mettre à jour les options du débogueur. L’options par défaut, 0 (SDO_NONE).|  
 |[IRemoteDebugApplication110::GetCurrentDebuggerOptions](../../winscript/reference/iremotedebugapplication110-getcurrentdebuggeroptions.md)|Retourne l’ensemble actuel des options qui sont activées.|  
 |[IRemoteDebugApplication110::GetMainThread](../../winscript/reference/iremotedebugapplication110-getmainthread.md)|Retourne le thread principal pour les ordinateurs hôtes qui appellent SetSite.|

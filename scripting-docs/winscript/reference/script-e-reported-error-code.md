@@ -1,5 +1,5 @@
 ---
-title: Code d’erreur SCRIPT_E_REPORTED | Documents Microsoft
+title: Code d’erreur SCRIPT_E_REPORTED | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734049"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349203"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED, code d'erreur
 Le moteur de script a signalé une exception non gérée à l’hôte via [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). L’hôte peut ignorer cette erreur.  

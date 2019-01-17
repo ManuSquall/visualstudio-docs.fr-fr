@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo (Interface) | Documents Microsoft
+title: IDebugDocumentInfo Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726379"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349333"
 ---
 # <a name="idebugdocumentinfo-interface"></a>IDebugDocumentInfo, interface
-Fournit des informations sur un document, ce qui peut ou ne peut pas être instancié.  
+Fournit des informations sur un document, qui peut être ou ne pas être instancié.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugDocumentInfo` interface expose les méthodes suivantes.  
   

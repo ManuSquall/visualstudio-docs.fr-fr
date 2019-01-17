@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnResumeFromBreakPoint | Documents Microsoft
+title: IDebugApplicationThreadEvents110::OnResumeFromBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8e526faf8c83b8cb322d63a471aab8def063b33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 38d1a297884dd84dd5fc39f96a244787f50da115
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725509"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349931"
 ---
 # <a name="idebugapplicationthreadevents110onresumefrombreakpoint"></a>IDebugApplicationThreadEvents110::OnResumeFromBreakPoint
-Le thread est reprise à partir d’un point d’arrêt et sera à nouveau actif.  
+Le thread reprend à partir d’un point d’arrêt et est actif une fois encore.  
   
 > [!IMPORTANT]
 >  [IDebugApplicationThreadEvents110 (Interface)](../../winscript/reference/idebugapplicationthreadevents110-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  

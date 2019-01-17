@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper (Interface) | Documents Microsoft
+title: Interface IDebugHelper | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727309"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347474"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper, interface
-Sert de fabrique pour les explorateurs d’objets et les points de connexion simple. Le Gestionnaire de processus de débogage (PDM) implémente cette interface, qui est consommée par les moteurs de script.  
+Sert de fabrique pour les explorateurs d’objets et les points de connexion simple. Le Gestionnaire de débogage de processus (PDM) implémente cette interface, qui est consommée par les moteurs de script.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugHelper` interface expose les méthodes suivantes.  
   
@@ -31,5 +31,5 @@ Sert de fabrique pour les explorateurs d’objets et les points de connexion sim
 |Méthode|Description|  
 |------------|-----------------|  
 |[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Retourne un Explorateur de propriétés qui encapsule une variante.|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Retourne un Explorateur de propriétés qui encapsule un VARIANT, permet la conversion personnalisée de valeurs de type VARIANT ou types VARTYPE en chaînes.|  
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Retourne un Explorateur de propriétés qui encapsule une variante et permet la conversion personnalisée de valeurs de type VARIANT ou types VARTYPE en chaînes.|  
 |[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Retourne une interface d’événement qui encapsule une donnée `IDispatch` objet.|

@@ -1,5 +1,5 @@
 ---
-title: Débogueur de Script actif, constantes, énumérations et Structures | Documents Microsoft
+title: Constantes de débogueur de Script actif, énumérations et Structures | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642069"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345433"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Débogueur de script actif, constantes, énumérations et structures
 Les constantes, les énumérations et les structures suivantes sont utilisées par les interfaces actives de débogage.  
@@ -31,7 +31,7 @@ Les constantes, les énumérations et les structures suivantes sont utilisées p
 |Constantes|Description|  
 |---------------|-----------------|  
 |[APPBREAKFLAGS (constantes)](../../winscript/reference/appbreakflags-enumeration.md)|Indique l'état actuel du débogage des applications et des threads.|  
-|[Constantes DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Utilisée au cours des indicateurs d’option [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
+|[Constantes DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Indicateurs d’option utilisés pendant [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[Constantes TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)|Décrit les attributs du document.|  
   
 |Énumérations|Description|  

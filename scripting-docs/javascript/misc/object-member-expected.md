@@ -1,5 +1,5 @@
 ---
-title: Membre d’objet attendu | Documents Microsoft
+title: Membre d’objet attendu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633229"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344159"
 ---
 # <a name="object-member-expected"></a>Membre d'objet attendu
 Vous avez tenté d’effectuer une opération sur le membre de données d’un objet, mais le membre n’existe pas.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Assurez-vous que vous avez correctement tapé le nom du membre de données.  
+-   Vérifiez que vous avez correctement tapé le nom du membre de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Object (objet)](../../javascript/reference/object-object-javascript.md)   
+ [Objet Object](../../javascript/reference/object-object-javascript.md)   
  [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)

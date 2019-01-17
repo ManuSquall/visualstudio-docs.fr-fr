@@ -1,5 +1,5 @@
 ---
-title: Objet JavaScript attendu | Documents Microsoft
+title: Objet JavaScript attendu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 28514e4f1691364f68c2f60f3cab3bb0c18b1d12
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633039"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348007"
 ---
 # <a name="javascript-object-expected"></a>Objet JavaScript attendu
-Vous avez tenté de passer un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet à une fonction intégrée qui attend un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet. Diverses fonctions intégrées nécessitent les objets définis dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (par opposition aux objets définis par l’hôte ou un composant externe comme un contrôle).  
+Vous avez tenté de passer un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet à une fonction intégrée qui attend un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet. Différentes fonctions intégrées nécessitent les objets définis dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (par opposition à des objets définis par l’hôte ou un composant externe comme un contrôle).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Vérifiez que l’objet que vous passez dans un paramètre est du type approprié.  
+-   Vérifiez que l’objet que vous transmettez comme un paramètre est du type correct.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les objets et tableaux](../../javascript/objects-and-arrays-javascript.md)   
+ [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)   
  [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)

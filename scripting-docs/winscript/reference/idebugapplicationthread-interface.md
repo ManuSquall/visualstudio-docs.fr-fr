@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread (Interface) | Documents Microsoft
+title: Interface IDebugApplicationThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e731ba866504c9a3c3c9ad081a90a12b161355d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725949"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347786"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread, interface
-Permet de moteurs de langue et des hôtes pour assurer la synchronisation de thread et mettre à jour les informations d’état de débogage de threads. Cette interface étend la `IRemoteDebugApplicationThread` interface pour fournir un accès non distant vers le thread.  
+Permet de moteurs de langage et les hôtes pour assurer la synchronisation de thread et à mettre à jour les informations d’état de débogage de threads spécifiques. Cette interface étend la `IRemoteDebugApplicationThread` interface pour fournir un accès non-remote pour le thread.  
   
  Outre les méthodes héritées de `IRemoteDebugApplicationThread`, le `IDebugApplicationThread` interface expose les méthodes suivantes.  
   
@@ -30,7 +30,7 @@ Permet de moteurs de langue et des hôtes pour assurer la synchronisation de thr
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Fournit un mécanisme exécuter du code dans le thread d’application à l’appelant.|  
+|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Fournit un mécanisme pour que l’appelant s’exécute dans le thread d’application.|  
 |[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Détermine si ce thread est le thread en cours d’exécution.|  
 |[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Détermine si ce thread est le thread de débogueur.|  
 |[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Définit la description de ce thread.|  
