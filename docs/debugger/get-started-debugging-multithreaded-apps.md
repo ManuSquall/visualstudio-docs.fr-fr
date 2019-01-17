@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863288"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227978"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Bien démarrer avec le débogage d’applications multithreads
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Commencer le débogage d’applications multithread (C#, Visual Basic, C++)
 Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, points d’arrêt conditionnels et les points d’arrêt de filtre. Pour vous familiariser avec les fonctionnalités de Visual Studio pour déboguer des applications multithreads, ils auront terminé ce didacticiel.
 
 | | |
@@ -36,7 +36,7 @@ Ces deux rubriques fournissent des informations supplémentaires sur l’utilisa
 
 - Pour utiliser le **emplacement de débogage** barre d’outils et les **Threads** fenêtre, consultez [procédure pas à pas : Déboguer une application multithread](../debugger/how-to-use-the-threads-window.md).
 
-- Pour obtenir un exemple qui utilise <xref:System.Threading.Tasks.Task> (code managé) et le runtime d’accès concurrentiel (C++), consultez [procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md). Pour les conseils de débogage générales qui s’appliquent aux types d’applications multithreads plus, lisez cette rubrique et celle-ci.
+- Pour obtenir un exemple qui utilise <xref:System.Threading.Tasks.Task> (code managé) et le runtime d’accès concurrentiel (C++), consultez [procédure pas à pas : Déboguer une application parallèle Pour les conseils de débogage générales qui s’appliquent aux types d’applications multithreads plus, lisez cette rubrique et celle-ci.
   
 Vous devez tout d’abord un projet d’application multithread. Voici un exemple.  
   
@@ -244,7 +244,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
 
 1. Ouvrez le **piles parallèles** fenêtre en choisissant **déboguer** > **Windows** > **piles parallèles**. Vous devez voir quelque chose de similaire à ce qui suit. Les informations exactes diffèrent selon l’emplacement actuel de chaque thread, votre matériel et votre langage de programmation.
 
-    ![Fenêtre des piles parallèles](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![Parallel Stacks Window](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     Dans cet exemple, de gauche à droite nous voir ces informations pour le code managé :
     
@@ -271,7 +271,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
 
     Les valeurs pour le `count` variable pour chaque thread s’affichent dans la fenêtre. Si vous ne voyez pas encore autant d’informations, essayez en appuyant sur **F11** plusieurs fois pour passer de l’exécution des threads dans le débogueur.
 
-    ![Fenêtre Espion parallèle](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![Parallel Watch Window](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
 4. Avec le bouton droit sur une des lignes dans la fenêtre pour afficher les options disponibles.
 

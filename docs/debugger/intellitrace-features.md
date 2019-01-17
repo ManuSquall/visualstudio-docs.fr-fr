@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37c90f212233936a6a260b6339effb261f91c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826596"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227835"
 ---
-# <a name="intellitrace-features"></a>Fonctionnalités IntelliTrace
+# <a name="intellitrace-features-c-visual-basic-c"></a>Fonctionnalités IntelliTrace (C#, Visual Basic, C++)
 
 Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appels de méthode dans votre application, ce qui vous permet d'examiner son état (pile des appels et valeurs des variables locales) à différents stades de l'exécution. Commencez le débogage comme d’habitude. IntelliTrace est activé par défaut et les informations enregistrées sont affichées dans la nouvelle fenêtre **Outils de diagnostic** sous l’onglet **Événements**. Sélectionnez un événement et cliquez sur **Activer le débogage d’historique** pour afficher la pile des appels et les variables locales enregistrées pour cet événement.
 
@@ -40,19 +40,19 @@ Pour vérifier qu’IntelliTrace est activé, ouvrez la page d’options **Outil
 > [!NOTE]
 > L’étendue de tous les paramètres dans la page d’options **IntelliTrace** est Visual Studio tout entier, et non pas des projets ou des solutions spécifiques. Une modification de ces paramètres s'applique à toutes les instances de Visual Studio, à toutes les sessions de débogage et à tous les projets ou solutions.
 
-## <a name="ChooseEvents"></a> Choisissez les événements qu’IntelliTrace enregistre (code managé uniquement)
+## <a name="ChooseEvents"></a> Choisissez les événements qu’IntelliTrace enregistre (C#, Visual Basic)
 
 Vous pouvez activer ou désactiver l’enregistrement d’événements IntelliTrace spécifiques.
 
 Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils > Options > IntelliTrace > événements IntelliTrace**. Choisissez les événements IntelliTrace à enregistrer.
 
-## <a name="Snapshots"></a> Collecter des instantanés
+## <a name="Snapshots"></a> Collecter des instantanés (C#, Visual Basic, C++)
 
 Cette option n’est pas activée par défaut, mais IntelliTrace peut capturer des instantanés de votre application à chaque événement d’étape de point d’arrêt et le débogueur, et vous pouvez afficher ces captures instantanées dans une session de débogage historique. Un instantané vous donne un aperçu de votre état de l’application complète. Pour activer la capture d’instantanés, accédez à **Outils > Options > IntelliTrace > Général**, puis sélectionnez **instantanés IntelliTrace (natifs et managés)**. Pour plus d’informations, consultez [Inspecter les précédents états des applications à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)
 
 Les instantanés sont disponibles dans Visual Studio Enterprise 2017 version 15.5 et versions ultérieures, et il nécessite la mise à jour anniversaire de Windows 10 ou version ultérieure.  Pour les applications .NET Core et ASP.NET Core, Visual Studio Enterprise 2017 version 15.7 est requis. Pour les applications natives ciblant Windows, Visual Studio Enterprise 2017 version 15.9 Preview 2 est requis.
 
-## <a name="GoingFurther"></a> Collecter les événements IntelliTrace et informations (code managé uniquement) d’appels
+## <a name="GoingFurther"></a> Collecter les événements IntelliTrace et informations d’appels (C#, Visual Basic)
 
 Cette fonctionnalité n’est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode en plus des événements. Pour activer la collecte d’atteindre des appels de méthode **Outils > Options > IntelliTrace > Général**, puis sélectionnez **événements IntelliTrace et informations (managées uniquement) d’appels**.
 
@@ -92,7 +92,7 @@ Pour ajouter plusieurs modules, utilisez le caractère générique * au début 
 
 Essayez de réduire le nombre de modules au minimum. Vous obtiendrez de meilleures performances car il y aura moins de données à recueillir. Vous obtiendrez également moins de bruit dans l'interface utilisateur car il y aura moins de données à parcourir.
 
-## <a name="SaveSession"></a> Enregistrer les données IntelliTrace au fichier
+## <a name="SaveSession"></a> Enregistrer les données IntelliTrace pour le fichier (C#, Visual Basic, C++)
 
 Vous pouvez enregistrer les données recueillies par IntelliTrace en accédant à **Déboguer > IntelliTrace > Enregistrer la session IntelliTrace** pendant que vous déboguez et que l’application est dans un état d’arrêt. L'élément de menu est désactivé et vous ne pourrez pas enregistrer les données recueillies par IntelliTrace si l'application est encore en cours d'exécution ou si vous avez arrêté le débogage.
 
@@ -129,4 +129,4 @@ Quand vous enregistrez des données IntelliTrace dans un fichier, vous obtenez u
 
 [Expérience d’IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-[Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
+Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
