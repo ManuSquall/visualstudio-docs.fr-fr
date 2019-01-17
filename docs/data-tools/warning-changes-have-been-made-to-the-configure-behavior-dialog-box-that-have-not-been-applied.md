@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847835"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204055"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement : Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.
 
@@ -22,13 +22,11 @@ Avertissement. Vous avez effectué certaines modifications dans la boîte de dia
 
 Le **configurer le comportement** boîte de dialogue vous permet de configurer `Insert`, `Update`, et `Delete` pour toutes les classes disponibles. Ce message apparaît quand vous sélectionnez une nouvelle combinaison de **Classe** et de **Comportement** et que la modification précédente n’a pas encore été appliquée.
 
-## <a name="to-apply-the-change-and-continue"></a>Pour appliquer la modification et continuer
+## <a name="change-options"></a>Options de modification
 
-- Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.
+- Pour appliquer la modification et continuer, cliquez sur **Oui**. La modification est appliquée au **classe** et **comportement**.
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>Pour annuler le changement précédent et continuer
-
-- Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.
+- Pour annuler le changement précédent et continuer, cliquez sur **non**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51760716"
 ---
 # <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML
@@ -37,7 +37,7 @@ ms.locfileid: "51760716"
 
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications universelles Windows.  
   
- Le profileur de réactivité de l'interface utilisateur peut aider à isoler certaines problèmes tels que ceux de la réactivité de l'interface utilisateur ou les effets secondaires de plateforme qui se présentent généralement avec les symptômes suivants :  
+ Le profileur de réactivité de l'interface utilisateur peut aider à isoler certaines problèmes tels que ceux de la réactivité de l'interface utilisateur ou les effets secondaires de plateforme qui se présentent généralement avec les symptômes suivants :  
   
 -   L'interface utilisateur manque de réactivité. L'application peut être lente à répondre si le thread d'interface utilisateur se bloque. Les éléments qui peuvent bloquer le thread d'interface utilisateur sont, par exemple, du code JavaScript synchrone excessif, une disposition CSS ou une opération de calcul excessive, des requêtes XHR synchrones, un garbage collection, des durées de peinture excessives ou du code JavaScript sollicitant beaucoup le processeur.  
   
@@ -79,9 +79,9 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 6.  Pour arrêter le profilage de l'application et afficher les données que le profileur a rassemblées, sélectionnez **Arrêter la collecte**.  
   
 ##  <a name="IsolateAnIssue"></a> Isoler un problème  
- La section suivante propose des solutions pour vous aider à isoler les problèmes de performances. Pour obtenir une explication pas à pas de l’identification et de la correction des problèmes de performances à l’aide d’un exemple d’application de test de performances, consultez [Procédure pas à pas : amélioration de la réactivité de l’interface utilisateur (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ La section suivante propose des solutions pour vous aider à isoler les problèmes de performances. Pour obtenir une explication détaillée sur l’identification et la correction des problèmes de performances à l’aide d’un exemple d’application de tests de performances, consultez [Procédure pas à pas : Amélioration de la réactivité de l’interface utilisateur (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
-###  <a name="Workflow"></a> Isoler un problème de réactivité de l’interface utilisateur  
+###  <a name="Workflow"></a> Isoler un problème de réactivité de l'interface utilisateur  
  La procédure suivante constitue une proposition de flux de travail qui peut vous aider à utiliser le profileur de réactivité de l'interface utilisateur plus efficacement :  
   
 1.  Ouvrez votre application dans Visual Studio.  
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
 -   Un événement de navigation, qui se produit lorsque vous accédez à une autre page. L'info-bulle de cet événement indique l'URL de la page de destination.  
   
 ###  <a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC  
- Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#ProfilerEvents) plus loin dans cette rubrique.  
+ Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement**, **Script**, garbage collection (**GC**), **Style**, **Rendu** et **Décodage d’image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#ProfilerEvents) plus loin dans cette rubrique.  
   
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.  
   
@@ -335,10 +335,10 @@ if (performance.mark && performance.measure) {
   
   Ce tableau affiche les événements et leurs descriptions :  
   
-|Événement|Catégorie d'événement|Se produit lorsque|  
+|événement|Catégorie d'événement|Se produit lorsque|  
 |-----------|--------------------|-----------------|  
 |Analyse de code CSS|Chargement en cours|Un nouveau contenu CSS a été rencontré et il a été tenté d'analyser le contenu CSS.|  
-|Analyse de code HTML|Chargement|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
+|Analyse de code HTML|Chargement en cours|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
 |Requête HTTP|Chargement en cours|Une ressource distante a été trouvée dans le DOM ou un XMLHttpRequest a été créé qui a provoqué une requête HTTP.|  
 |Téléchargement spéculatif|Chargement en cours|Les ressources requises ont été recherchées dans le contenu HTML de la page de sorte que les requêtes HTTP suivantes concernant les ressources ont pu être planifiées rapidement.|  
 |Fonction de rappel d'image d'animation|Scripts|Le navigateur allait afficher une autre image et cela a déclenché une fonction de rappel fournie par l'application.|  
@@ -368,7 +368,7 @@ if (performance.mark && performance.measure) {
 -   Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyser les performances de l’application](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analyser les performances des applications](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
 
 
 

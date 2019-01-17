@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094810"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204416"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
-Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez demander au débogueur les exceptions ou les ensembles d’exceptions pour rompre sur, et à quel point vous voulez le débogueur s’arrête. Lorsque le débogueur s’arrête, il vous montre où l’exception a été levée. Vous pouvez également ajouter ou supprimer des exceptions. Avec une solution ouverte dans Visual Studio, utilisez **Déboguer > Windows > Paramètres d’Exception** pour ouvrir le **paramètres d’Exception** fenêtre.
+Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez demander au débogueur les exceptions ou des ensembles de s’arrêter sur les exceptions et à quel point vous voulez le débogueur s’arrête (autrement dit, mettre en pause dans le débogueur). Lorsque le débogueur s’arrête, il vous montre où l’exception a été levée. Vous pouvez également ajouter ou supprimer des exceptions. Avec une solution ouverte dans Visual Studio, utilisez **Déboguer > Windows > Paramètres d’Exception** pour ouvrir le **paramètres d’Exception** fenêtre.
 
-Fournir des gestionnaires qui répondent aux exceptions plus importantes. Découvrez également comment configurer le débogueur pour toujours arrêter l’exécution pour certaines exceptions.
+Fournir des gestionnaires qui répondent aux exceptions plus importantes. Si vous avez besoin de savoir comment ajouter des gestionnaires pour les exceptions, consultez [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md). En outre, découvrez comment configurer le débogueur pour toujours arrêter l’exécution pour certaines exceptions.
 
 Quand une exception est levée, le débogueur écrit un message d’exception dans la fenêtre **Sortie**. Cette action peut interrompre l’exécution dans l’exemple suivant cas quand :
 
@@ -66,7 +66,7 @@ Le débogueur peut arrêter l’exécution au point où une exception est levée
 
 Dans le **paramètres d’Exception** fenêtre (**Déboguer > Windows > Paramètres d’Exception**), développez le nœud d’une catégorie d’exceptions, tel que **Exceptions Common Language Runtime**. Puis sélectionnez la case à cocher pour une exception spécifique de cette catégorie, comme **System.AccessViolationException**. Vous pouvez également sélectionner une catégorie entière d'exceptions.
 
-![Vérifié AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
 > Vous pouvez trouver des exceptions spécifiques à l’aide de la **recherche** fenêtre dans le **paramètres d’Exception** barre d’outils, ou utilisez recherche pour filtrer des espaces de noms spécifiques (telles que **System.IO**).

@@ -2,7 +2,6 @@
 title: Définissez des symboles (.pdb) et les fichiers sources dans le débogueur
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060444"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53892446"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -156,7 +155,7 @@ Vous pouvez sélectionner les options de symbole supplémentaires dans **outils*
   Vous pouvez limiter les commandes qui *srcsrv.dll* peuvent exécuter à partir de l’application *.pdb* fichier en répertoriant les commandes autorisées dans un fichier nommé *srcsrv.ini*. Place le *srcsrv.ini* fichier dans le même dossier que *srcsrv.dll* et *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : Le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez mis *cmd.exe* dans votre *srcsrv.ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd.exe* qui rendrait dangereux.  
   
@@ -180,7 +179,7 @@ Quand vous générez un projet à partir de l’IDE de Visual Studio avec la nor
     
     Le *VC\<x > .pdb* fichier stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le makefile du projet. Chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC\<x > .pdb*. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que  *\<windows.h >*, les typedefs de ces en-têtes sont stockés qu’une seule fois, plutôt que dans chaque fichier objet. Les informations insérées incluent les informations de type, mais pas les informations de symbole, comme les définitions de fonctions.  
   
-  - *\<projet > .pdb* 
+  - *\<project>.pdb* 
     
     Le  *\<projet > .pdb* fichier stocke toutes les informations de débogage pour le projet *.exe* de fichiers et se trouve dans le *\debug* sous-répertoire. Le fichier *\<projet>.pdb* contient toutes les informations de débogage, y compris les prototypes de fonction, et non pas seulement les informations de type présentes dans *VC\<x>.pdb*. 
   

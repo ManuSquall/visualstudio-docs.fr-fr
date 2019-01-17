@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935656"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204305"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Les objets que vous ajoutez au concepteur utilisent une connexion de données autre que le Concepteur
 
@@ -22,20 +22,18 @@ Les objets que vous ajoutez au concepteur utilisent une connexion de données di
 
 Lorsque vous ajoutez des éléments à la **concepteur objet/relationnel** (**Concepteur O/R**), tous les éléments utilisent une seule connexion de données partagée. (L'aire de conception représente le <xref:System.Data.Linq.DataContext> qui utilise une connexion unique pour tous les objets sur l'aire.) Si vous ajoutez un objet au concepteur qui utilise une connexion de données différente de la connexion de données qui est actuellement utilisée par le concepteur, ce message apparaît. Pour résoudre cette erreur, vous pouvez maintenir la connexion existante. Dans ce cas, l'objet sélectionné n'est pas ajouté. Vous pouvez également choisir d’ajouter l’objet et de réinitialiser la connexion <xref:System.Data.Linq.DataContext> à la nouvelle connexion.
 
-> [!NOTE]
-> Si vous cliquez sur **Oui**, classes d’entité toutes sur le **Concepteur O/R** sont mappées à la nouvelle connexion.
+## <a name="connection-options"></a>Options de connexion
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Pour remplacer la connexion existante par la connexion qu'utilise l'objet sélectionné
+- Pour remplacer la connexion existante avec la connexion utilisée par l’objet sélectionné, cliquez sur **Oui**.
 
-- Cliquez sur **Oui**.
+   L’objet sélectionné est ajouté à la **Concepteur O/R**et le *DataContext.Connection* est définie sur la nouvelle connexion.
 
-    L’objet sélectionné est ajouté à la **Concepteur O/R**et le *DataContext.Connection* est définie sur la nouvelle connexion.
+   > [!NOTE]
+   > Si vous cliquez sur **Oui**, classes d’entité toutes sur le **Concepteur O/R** sont mappées à la nouvelle connexion.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Pour continuer d'utiliser la connexion existante et annuler l'ajout de l'objet sélectionné
+- Pour continuer à utiliser la connexion existante et annuler l’ajout de l’objet sélectionné, cliquez sur **non**.
 
-- Cliquez sur **Non**.
-
-    L'action est annulée. *DataContext.Connection* conserve la connexion existante.
+   L'action est annulée. *DataContext.Connection* conserve la connexion existante.
 
 ## <a name="see-also"></a>Voir aussi
 

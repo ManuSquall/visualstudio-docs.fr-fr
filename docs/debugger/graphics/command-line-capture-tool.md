@@ -1,8 +1,6 @@
 ---
 title: Outil de ligne de commande de Capture | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775549"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960652"
 ---
 # <a name="command-line-capture-tool"></a>Outil en ligne de commande de capture
 DXCap.exe est un outil en ligne de commande pour la capture et la lecture de Graphics Diagnostics. Il prend en charge tous les niveaux de fonctionnalités des versions Direct3D 10 à Direct3D 12.  
@@ -69,13 +67,13 @@ DXCap.exe -info
  En mode de lecture, `-rawmode` Spécifie que la lecture doit être effectuée sans modification pour les événements enregistrés. En situation normale, le mode de lecture peut apporter des changements mineurs à la lecture pour simplifier le débogage et accélérer cette dernière. Par exemple, il peut simuler la sortie de chaînes d'échange au lieu d'exécuter des commandes de chaînes d'échange. Généralement cette lecture n’est pas un problème, mais vous devrez peut-être la lecture s’effectue de manière plus fidèle à l’événement enregistré. Par exemple, vous pouvez utiliser cette option pour restaurer le comportement de rendu de plein écran à une application qui a été capturée lors de l’exécution en mode plein écran.  
   
  `-toXML` [`xml_filename`]  
- En mode de lecture, `xml_filename` spécifie le nom du fichier dans lequel une représentation XML de la lecture est écrite. Si `xml_filename` n'est pas spécifié, la représentation XML est écrite dans un fichier portant le même nom que le fichier en cours de lecture, mais avec l'extension `.xml`.  
+ En mode de lecture, `xml_filename` spécifie le nom du fichier dans lequel une représentation XML de la lecture est écrite. Si `xml_filename` n’est pas spécifié, la représentation XML est écrite dans un fichier portant le même nom que le fichier en cours de lecture, mais avec l’extension `.xml`.  
   
  `-v`  
  Mode de validation. En mode de validation, les frames capturés sont lus par le matériel et par WARP. Leurs résultats sont comparés à l'aide d'une fonction de comparaison d'images. Vous pouvez utiliser cette fonctionnalité pour identifier rapidement les problèmes de pilote qui affectent le rendu.  
   
  `-examine` `events`  
- En mode de validation, `events` spécifie l'ensemble des événements graphiques dont les résultats immédiats sont comparés. Par exemple, `-examine present,draw,copy,clear` limite la comparaison aux événements appartenant à ces catégories.  
+ En mode de validation, `events` spécifie l’ensemble des événements graphiques dont les résultats immédiats sont comparés. Par exemple, `-examine present,draw,copy,clear` limite la comparaison aux événements appartenant à ces catégories.  
   
 > [!TIP]
 >  Nous vous recommandons de commencer avec `-examine present,draw,copy,clear` , car cela sera révéler la plupart des problèmes mais beaucoup plus rapidement qu’un ensemble plus complet d’événements. Si nécessaire, vous pouvez spécifier un ensemble distinct ou plus important d'événements pour valider ces derniers et identifier d'autres genres de problèmes.  
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- La commande dans l’exemple ci-dessus capture des informations graphiques à partir de la version bureau d’Internet Explorer lorsque vous affichez la page Web située à www.fishgl.com qui utilise l’API WebGL pour restituer le contenu 3D.  
+ La commande de l’exemple ci-dessus capture des informations graphiques de la version de bureau d’Internet Explorer tout en affichant la page web située à l’adresse www.fishgl.com, qui utilise l’API WebGL pour effectuer le rendu du contenu 3D.  
   
 > [!NOTE]
->  Étant donné que les arguments de ligne de commande qui apparaissent après l’application sont passés à ce dernier, vous devez spécifier les arguments destinés à DXCap.exe avant d’utiliser la `-c` option.  
+>  Dans la mesure où les arguments de ligne de commande qui apparaissent après l’application lui sont passés, vous devez spécifier les arguments destinés à DXCap.exe avant d’utiliser l’option `-c`.  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Capturer les informations de graphiques à partir d’une application UWP.  
  Vous pouvez capturer des informations graphiques à partir d’une application UWP.  
@@ -162,17 +160,17 @@ DXCap.exe -e map
   
  La commande ci-dessus énumère les applications UWP qui correspondent aux « carte » ; Voici la sortie :  
   
- **Package « Microsoft.BingMaps » :**  
+ **Package "Microsoft.BingMaps" :**  
  **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Nom : Microsoft.BingMaps**  
- **Serveur de publication : CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Version : 2.1.2914.1734**  
- **Des Applications :**  
- **ID : AppexMaps**  
- **Exe : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA : non**  
+ **Name             : Microsoft.BingMaps**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version           : 2.1.2914.1734**  
+ **Applications accessibles :**  
+ **Id: AppexMaps**  
+ **Exe C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: No**  
  **AppSpec (pour lancer) : DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** la dernière ligne de sortie pour chaque application énumérée affiche la commande que vous pouvez utiliser pour capturer les informations graphiques à partir de celui-ci.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturer des frames spécifiques ou des frames situés à des périodes spécifiques  
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>Valider un fichier journal de graphisme par rapport à WARP  
- En mode de validation, le fichier journal de graphisme est lu sur le matériel et sur WARP, et leurs résultats sont comparés. Cela peut vous aider à identifier les erreurs de rendu provoquées par le pilote. -V permet de valider le comportement correct du matériel graphique par rapport à WARP.  
+ En mode de validation, le fichier journal de graphisme est lu sur le matériel et sur WARP, et leurs résultats sont comparés. Cela peut vous aider à identifier les erreurs de rendu provoquées par le pilote. Utilisez -v pour vérifier que le comportement du matériel graphique est correct par rapport à WARP.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- Pour réduire le nombre de comparaisons, vous pouvez spécifier une partie des commandes de validation à comparer. Les autres commandes seront ignorées. Utilisez - examine pour spécifier les commandes dont vous souhaitez comparer les résultats.  
+ Pour réduire le nombre de comparaisons, vous pouvez spécifier une partie des commandes de validation à comparer. Les autres commandes seront ignorées. Utilisez -examine pour spécifier les commandes dont vous souhaitez comparer les résultats.  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  
@@ -295,4 +293,4 @@ DXCap.exe -p regression_test_12.vsglog -toXML temp.xml
 </Method>  
 ```  
   
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
