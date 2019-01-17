@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931422"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204485"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
-Le débogueur Visual Studio peut vous aider à naviguer dans le code pour inspecter l’état d’une application et afficher ses flux d’exécution. Vous pouvez utiliser des raccourcis clavier, les commandes de débogage, les points d’arrêt et les autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Vous êtes familiarisé avec les commandes de navigation du débogueur et raccourcis accélère et plus faciles à trouver et résoudre les problèmes de l’application.  S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+Le débogueur Visual Studio peut vous aider à naviguer dans le code pour inspecter l’état d’une application et afficher ses flux d’exécution. Vous pouvez utiliser des raccourcis clavier, les commandes de débogage, les points d’arrêt et les autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Vous êtes familiarisé avec les commandes de navigation du débogueur et raccourcis accélère et plus faciles à trouver et résoudre les problèmes de l’application.  Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
   
 ## <a name="basic-debugging"></a>Bases du débogage  
 
 Pour démarrer votre application avec le débogueur attaché, appuyez sur **F5**, sélectionnez **déboguer** > **démarrer le débogage**, ou sélectionnez la flèche verte dans la barre d’outils de Visual Studio.  
   
- ![DBG&#95;notions de base&#95;Démarrer&#95;débogage](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 Pendant que vous déboguez, une mise en surbrillance jaune indique la ligne de code qui s’exécute suivant.  
   

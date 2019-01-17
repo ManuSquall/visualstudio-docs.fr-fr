@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866333"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269954"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -59,9 +59,9 @@ Vous pouvez trouver le débogueur distant (*msvsmon.exe*) sur un ordinateur avec
 
 1. Rechercher *msvsmon.exe* dans le répertoire correspondant à votre version de Visual Studio. Pour Visual Studio Enterprise 2017 :
 
-      *Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
 
-      *Programme fichiers (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Partage le **débogueur distant** dossier sur l’ordinateur Visual Studio.
 
@@ -122,7 +122,7 @@ Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Configurer le Pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)
 - [Débogage ASP.NET Core sur un ordinateur distant IIS à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

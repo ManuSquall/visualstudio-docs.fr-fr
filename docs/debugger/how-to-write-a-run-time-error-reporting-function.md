@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938171"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204162"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Procédure : Écrire une fonction permettant d’obtenir un rapport sur les erreurs d’exécution
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procédure : Écrire une fonction permettant d’obtenir un rapport sur les erreurs d’exécution (C++)
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.  
   
  L'exemple suivant montre comment définir cette fonction personnalisée.  

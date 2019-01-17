@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227991"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Afficher les événements avec IntelliTrace dans Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Afficher les événements avec IntelliTrace dans Visual Studio Enterprise (C#, Visual Basic)
+
 Vous pouvez utiliser IntelliTrace pour collecter des informations sur des événements spécifiques ou des catégories d'événements, ou sur des appels de fonction individuels en plus d'événements. Les procédures suivantes montrent comment procéder.  
   
- Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition, mais pas dans les éditions Professional ou Community.  
+Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition, mais pas dans les éditions Professional ou Community.  
   
-##  <a name="GettingStarted"></a> Configurez Intellitrace  
+##  <a name="GettingStarted"></a> Configurez IntelliTrace  
+
  Vous pouvez essayer de déboguer avec seulement les événements IntelliTrace. Les événements IntelliTrace sont des événements de débogueur, des exceptions, des événements .NET Framework et d'autres événements système. Avant de commencer le débogage, vous devez activer ou désactiver des événements spécifiques pour contrôler les événements qu'IntelliTrace enregistre. Pour plus d’informations, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Activez l'événement IntelliTrace pour l'accès aux fichiers. Accédez à la page **Outils > Options > IntelliTrace > Événements IntelliTrace**, puis développez la catégorie **Fichier**. Cochez la catégorie d'événements **Fichier** . Ainsi, tous les événements concernant les fichiers (accès, fermeture, suppression) sont cochés.
@@ -62,7 +64,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
      La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update 1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 3.  Sélectionnez l'événement pour développer ses détails.  
   
@@ -76,7 +78,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
      La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update 1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 4.  Si vous ne trouvez pas le bogue, essayez de tester d'autres événements aboutissant au bogue. IntelliTrace peut également enregistrer des informations sur les appels pour vous permettre de parcourir pas à pas les appels de fonction. 
   

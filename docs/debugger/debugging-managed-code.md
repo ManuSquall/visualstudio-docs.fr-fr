@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867038"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270204"
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
 
@@ -86,7 +86,7 @@ Fournit des liens vers des sections plus vastes de la documentation relative au 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : Débogage personnalisés Windows Forms des contrôles au moment du Design](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[sécurité du débogueur](../debugger/debugger-security.md)
-[débogage dans Visual Studio](../debugger/index.md) 
- [ Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+[Procédure pas à pas : Débogage des contrôles Windows Forms personnalisés au moment du design](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Sécurité du débogueur](../debugger/debugger-security.md)  
+[Débogage dans Visual Studio](../debugger/index.md)  
+[Présentation du débogueur](../debugger/debugger-feature-tour.md)

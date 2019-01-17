@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53899611"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
@@ -118,7 +118,7 @@ Pour des instructions détaillées pour le débogage des applications ASP.NET qu
    - Pour rechercher les processus qui s’exécutent sous tous les comptes d’utilisateur, sélectionnez le **afficher les processus de tous les utilisateurs** case à cocher.
       
      >[!NOTE]
-     >Si vous essayez d’établir un attachement à un processus appartenant à un compte d’utilisateur non fiable, une boîte de dialogue d’avertissement de sécurité s’affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Si vous essayez d’établir un attachement à un processus appartenant à un compte d’utilisateur non fiable, une boîte de dialogue d’avertissement de sécurité s’affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
       
 5. Dans le **attacher à** champ, vérifiez que le type de code que vous souhaitez déboguer est répertorié. La valeur par défaut **automatique** définissant fonctionne pour la plupart des types d’applications. 
   
@@ -161,7 +161,7 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |Débogage distant ASP.NET 4 ou 4.5 sur un serveur IIS|Utiliser les outils distants et **attacher au processus**|*w3wp.exe*|Consultez [débogage ASP.NET sur un ordinateur IIS distant à distance](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils distants et **attacher au processus**|*dotnet.exe*|Déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [distant débogage ASP.NET Core sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Déboguer un script côté client sur un serveur IIS local, pour les types d’application pris en charge |Utilisez **attacher au processus**|*chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|Débogage de script doit être activé. Pour Chrome, vous devez également exécuter Chrome en mode débogage et sélectionnez **code Webkit** dans le **attacher à** champ.|
-|Déboguer un C#, Visual Basic ou C++ application sur l’ordinateur local|Utilisez [débogage standard](../debugger/debugger-feature-tour.md) ou **attacher au processus**|*\<appname > .exe*|Dans la plupart des scénarios, utiliser le débogage standard et non **attacher au processus**.|
+|Déboguer un C#, Visual Basic ou C++ application sur l’ordinateur local|Utilisez [débogage standard](../debugger/debugger-feature-tour.md) ou **attacher au processus**|*\<appname>.exe*|Dans la plupart des scénarios, utiliser le débogage standard et non **attacher au processus**.|
 |Débogage à distance une application de bureau Windows|Outils à distance|N/A| Consultez [déboguer à distance un C# ou Visual Basic application](../debugger/remote-debugging-csharp.md) ou [à distance déboguer une application C++](../debugger/remote-debugging-cpp.md)|
 |Déboguer une application ASP.NET sur l’ordinateur local après avoir démarré l’application sans le débogueur|Utilisez **attacher au processus**|*iiexpress.exe*|Cela peut être utile pour rendre votre application à charger plus rapidement, telles que (par exemple) lors du profilage. |
 |Déboguer d’autres types d’application pris en charge sur un processus de serveur|Si server est distant, utilisez les outils à distance, et **attacher au processus**|*chrome.exe*, *iexplore.exe*, ou d’autres processus|Si nécessaire, utilisez le moniteur de ressources pour aider à identifier le processus. Consultez [Débogage à distance](../debugger/remote-debugging.md).|

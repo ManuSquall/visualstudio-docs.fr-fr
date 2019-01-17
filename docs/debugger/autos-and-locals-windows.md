@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947411"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204484"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
-Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md) et [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
+Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. Si c’est la première fois que vous essayez de déboguer du code, nous vous conseillons de consulter [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) et [Correction des bogues par amélioration du code C#](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre la lecture de cet article.
 
  Le **automatique** fenêtre n’est disponible pour C#, code Visual Basic, C++ et Python, mais pas pour JavaScript ou F#.
   
@@ -39,7 +39,7 @@ Pour ouvrir le **variables locales** fenêtre, pendant le débogage, sélectionn
 
 Affichent les tableaux et les objets dans le **automatique** et **variables locales** windows en tant que contrôles d’arborescence. Sélectionnez la flèche vers la gauche d’un nom de variable pour développer la vue pour afficher les champs et propriétés. Voici un exemple d’un <xref:System.IO.FileStream?displayProperty=fullName> de l’objet dans le **variables locales** fenêtre :
 
-![Variables locales-FileStream](../debugger/media/locals-filestream.png "FileStream de variables locales")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 Une valeur de rouge dans le **variables locales** ou **automatique** fenêtre signifie que la valeur a changé depuis la dernière évaluation. Le changement peut provenir d’une précédente session de débogage, ou parce que vous avez modifié la valeur dans la fenêtre.
 
@@ -89,7 +89,7 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
    Définissez un point d’arrêt sur la ligne `c = 3;`, et démarrez le débogueur. Lors de l’exécution s’arrête, le **automatique** fenêtre s’affiche :
 
-   ![Automatique-CSharp](../debugger/media/autos-csharp.png "automatique-CSharp")
+   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    La valeur de `c` est 0, car la ligne `c = 3` n’a pas encore été exécutée.
 
@@ -109,7 +109,7 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
     Définissez un point d’arrêt sur la ligne `e = 5;` et exécutez le débogueur. Lors de l’exécution s’arrête, le **automatique** fenêtre s’affiche :
 
-    ![Automatique-C++](../debugger/media/autos-cplus.png "automatique-C++")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     La variable `e` n’est pas initialisée, car la ligne `e = 5` n’a pas encore été exécutée.
 

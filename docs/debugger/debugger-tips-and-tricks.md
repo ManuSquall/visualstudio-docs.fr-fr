@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927153"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270058"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
-Lisez cette rubrique pour découvrir quelques conseils de productivité et des conseils le débogueur Visual Studio. Pour examiner les fonctionnalités de base du débogueur, consultez [visite guidée des fonctionnalités débogueur](../debugger/debugger-feature-tour.md). Dans cette rubrique, nous abordons certaines zones qui ne sont pas inclus dans la visite guidée des fonctionnalités.
+Lisez cette rubrique pour découvrir quelques conseils de productivité et des conseils le débogueur Visual Studio. Pour examiner les fonctionnalités de base du débogueur, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md). Dans cette rubrique, nous abordons certaines zones qui ne sont pas inclus dans la visite guidée des fonctionnalités.
 
 ## <a name="pin-data-tips"></a>Code confidentiel des bulles d’informations
 
@@ -88,7 +88,7 @@ Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch
 
 Pour afficher les valeurs de retour pour vos fonctions, examinez les fonctions qui s’affichent dans le **automatique** fenêtre pendant que vous avancerez dans votre code. Pour afficher la valeur de retour pour une fonction, assurez-vous que la fonction que vous êtes intéressé a déjà été exécutée (appuyez sur **F10** une fois si vous êtes actuellement arrêté sur l’appel de fonction). Si la fenêtre est fermée, utilisez **Déboguer > Windows > automatique** pour ouvrir le **automatique** fenêtre.
 
-![Automatique fenêtre](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Fenêtre Automatique](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 En outre, vous pouvez entrer des fonctions dans le **immédiat** fenêtre pour afficher les valeurs de retour. (Ouvrir à l’aide de **Déboguer > Windows > exécution**.)
 

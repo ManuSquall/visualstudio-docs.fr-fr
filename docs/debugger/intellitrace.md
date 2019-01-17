@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227328"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
 Vous pouvez consacrer moins de temps au débogage de votre application quand vous utilisez IntelliTrace pour enregistrer et effectuer le suivi de l'historique d'exécution de votre code. Vous pouvez trouver des bogues facilement car IntelliTrace vous permet d'effectuer les tâches suivantes :
 
@@ -53,7 +53,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 | | |
 |---------------------| - |
 | **Prise en charge complète** | - Applications Visual Basic et Visual C# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
-| **Prise en charge limitée** | -Applications natives ciblant l’affichage des instantanés à l’aide d’IntelliTrace revenir en arrière de la prise en charge Windows. Seuls les événements de débogueur et l’exception sont pris en charge.<br />-.NET core et les applications ASP.NET Core pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClicent) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Les applications UWP pris en charge pour les événements uniquement |
+| **Prise en charge limitée** | -Applications C++ ciblant l’affichage des instantanés à l’aide d’IntelliTrace revenir en arrière de la prise en charge Windows. Seuls les événements de débogueur et l’exception sont pris en charge.<br />-.NET core et les applications ASP.NET Core pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClient) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou ASP.NET Core.<br />- Applications F# à titre expérimental<br />-Les applications UWP pris en charge pour les événements uniquement |
 | **Non pris en charge** | -Autres langages et un script<br />- Services Windows, Silverlight, Xbox ou applications [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] |
 
 > [!NOTE]
