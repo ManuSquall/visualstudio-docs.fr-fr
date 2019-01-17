@@ -1,5 +1,5 @@
 ---
-title: Idebugsessionproviderex, Interface | Documents Microsoft
+title: Interface IDebugSessionProviderEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545b60f13e86e59143ce0e57f454b13f61041f11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726929"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349216"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx, interface
-L’interface principale fournie par un débogueur IDE pour activer le débogage d’initiée par l’hôte et par le langage. Il établit une session de débogage pour une application en cours d’exécution. Cette interface est implémentée par la Machine Debug Manager.  
+L’interface principale fournie par un débogueur IDE pour activer le débogage d’initiée par l’hôte et par le langage. Il établit une session de débogage pour une application en cours d’exécution. Cette interface est implémentée par le Gestionnaire de débogage d’ordinateur.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugSessionProviderEx` interface expose les méthodes suivantes.  
   

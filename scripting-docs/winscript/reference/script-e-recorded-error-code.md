@@ -1,5 +1,5 @@
 ---
-title: Code d’erreur SCRIPT_E_RECORDED | Documents Microsoft
+title: Code d’erreur SCRIPT_E_RECORDED | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcefd3ff7ca2f084366f1317b47d1718b5e71fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8473c905f7524c72449d96c32bec4260e2502e34
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733949"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349086"
 ---
 # <a name="scripterecorded-error-code"></a>SCRIPT_E_RECORDED, code d'erreur
-Une erreur a été passée entre le moteur de script et l’hôte. L’ordinateur hôte doit passer le code d’erreur à l’appelant.  
+Une erreur a été passée entre le moteur de script et l’hôte. L’hôte doit passer le code d’erreur à l’appelant.  
   
 ## <a name="syntax"></a>Syntaxe  
   

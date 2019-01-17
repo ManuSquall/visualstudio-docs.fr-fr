@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall (Interface) | Documents Microsoft
+title: Interface IDebugThreadCall | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726939"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346265"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall, interface
-Le `IDebugThreadCall` interface est généralement implémentée par un composant qui effectue des appels inter-threads avec le `IDebugThread` le marshaling d’implémentation fournie par le Gestionnaire de processus de débogage (PDM).  
+Le `IDebugThreadCall` interface est généralement implémentée par un composant qui effectue des appels inter-threads avec le `IDebugThread` marshaling implémentation fournie par le Gestionnaire de débogage de processus (PDM).  
   
  Les appels PDM le `IDebugThreadCall` interface dans le thread souhaité et le `IDebugThreadCall` interface distribue l’appel à l’implémentation de votre choix. Le `IDebugThreadCall` interface convertit les informations de paramètre passées dans les paramètres vers le haut approprié.  
   

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor (Interface) | Documents Microsoft
+title: Interface IActiveScriptAuthor | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37abb356ab24d64a05a1f1209809d63e2f55e228
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bd9d9c2a330ee72c6a843cd42586a09bb1d51e3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645769"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346369"
 ---
 # <a name="iactivescriptauthor-interface"></a>IActiveScriptAuthor, interface
 Représente la création de services, notamment IntelliSense et le classement des informations.  
@@ -30,12 +30,12 @@ Représente la création de services, notamment IntelliSense et le classement de
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)|Ajoute le nom d’un élément de niveau racine pour l’espace de noms du moteur de création de script. A *élément de niveau racine* est un objet qui peut contenir des propriétés et méthodes, et qui peut également contenir une source d’événement.|  
-|[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)|Ajoute un scriptlet code en tant qu’enfant du niveau racine `IScriptNode` objet. Dans l’hôte, le nom qualifié complet du scriptlet peut avoir deux niveaux.|  
+|[IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)|Ajoute le nom d’un élément de niveau racine pour la création d’espace de noms du moteur de script. Un *élément de niveau racine* est un objet qui peut contenir des méthodes et propriétés, et qui peut également contenir une source d’événement.|  
+|[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)|Ajoute un scriptlet de code en tant qu’enfant du niveau racine `IScriptNode` objet. Dans l’hôte, le nom qualifié complet du scriptlet peut avoir uniquement deux niveaux.|  
 |[IActiveScriptAuthor::AddTypeLib](../../winscript/reference/iactivescriptauthor-addtypelib.md)|Ajoute une bibliothèque de types à l’espace de noms pour le script.|  
-|[IActiveScriptAuthor::GetChars](../../winscript/reference/iactivescriptauthor-getchars.md)|Retourne le jeu de caractères de fin pour un contexte d’exécution demandé.|  
+|[IActiveScriptAuthor::GetChars](../../winscript/reference/iactivescriptauthor-getchars.md)|Retourne le jeu de caractères de saisie semi-automatique pour un contexte d’exécution demandée.|  
 |[IActiveScriptAuthor::GetEventHandler](../../winscript/reference/iactivescriptauthor-geteventhandler.md)|Retourne le scriptlet qui possède les attributs spécifiés.|  
-|[IActiveScriptAuthor::GetInfoFromContext](../../winscript/reference/iactivescriptauthor-getinfofromcontext.md)|Retourne de type d’informations et les positions d’ancrage d’un caractère donné dans un bloc de code. Fournit des informations de membre IntelliSense, des listes globales et des conseils sur les paramètres.|  
+|[IActiveScriptAuthor::GetInfoFromContext](../../winscript/reference/iactivescriptauthor-getinfofromcontext.md)|Retourne type d’informations et les positions d’ancrage pour un caractère donné dans un bloc de code. Fournit des informations de membre IntelliSense, des listes globales et des conseils sur les paramètres.|  
 |[IActiveScriptAuthor::GetLanguageFlags](../../winscript/reference/iactivescriptauthor-getlanguageflags.md)|Retourne des informations de langue.|  
 |[IActiveScriptAuthor::GetRoot](../../winscript/reference/iactivescriptauthor-getroot.md)|Retourne le `IScriptNode` racine d’arborescence de script de l’auteur.|  
 |[IActiveScriptAuthor::GetScriptletTextAttributes](../../winscript/reference/iactivescriptauthor-getscriptlettextattributes.md)|Retourne les attributs de texte d’un scriptlet.|  

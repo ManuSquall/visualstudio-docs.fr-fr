@@ -1,5 +1,5 @@
 ---
-title: Constante attendue | Documents Microsoft
+title: Constante attendue | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632939"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344315"
 ---
 # <a name="expected-constant"></a>Constante attendue
-Vous avez tenté d’utiliser une variable (non conditionnelle compilation) dans une instruction de test de compilation conditionnelle. Instructions de compilation conditionnelle test doivent correspondre à une constante.  
+Vous avez tenté d’utiliser une variable (compilation non conditionnelle) dans une instruction de test de compilation conditionnelle. Instructions de test de compilation conditionnelle doivent correspondre à une constante.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

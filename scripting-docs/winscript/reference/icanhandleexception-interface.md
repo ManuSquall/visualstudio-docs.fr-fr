@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException (Interface) | Documents Microsoft
+title: Interface ICanHandleException | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd9fe2c766d3c390382ccfbcf2a8fd2319e48f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b886b9960742abf94cc44c3631a1123fc0e83d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725209"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349970"
 ---
 # <a name="icanhandleexception-interface"></a>ICanHandleException, interface
-L’appelant d’un moteur de script pour spécifier les exceptions qui permet à l’appelant handles.  
+Permet à l’appelant d’un moteur de script pour spécifier quelles exceptions l’appelant handles.  
   
 ## <a name="methods"></a>Méthodes  
  Outre les méthodes héritées de `IUnknown`, le `ICanHandleException` interface expose les méthodes suivantes.  

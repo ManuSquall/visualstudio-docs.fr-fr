@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo (Interface) | Documents Microsoft
+title: Interface IEnumDebugExtendedPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728169"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346031"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo, interface
 Énumère les `ExtendedDebugPropertyInfo` structures.  
@@ -33,7 +33,7 @@ ms.locfileid: "24728169"
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|  
 |[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Obtient le nombre de `ExtendedDebugPropertyInfo` structures dans un énumérateur.|  
 |[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Récupère un nombre spécifié de `ExtendedDebugPropertyInfo` structures dans une séquence d’énumération.|  
 |[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Ignore un nombre spécifié de `ExtendedDebugPropertyInfo` structures dans une séquence d’énumération.|  

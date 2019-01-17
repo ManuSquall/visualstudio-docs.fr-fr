@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cb8ec8f7244b98cfa628794b485859dbec611c19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868090"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347929"
 ---
 # <a name="boolean-expected"></a>Booléen attendu
 Vous avez tenté d’appeler le **Boolean.prototype.toString** ou **Boolean.prototype.valueOf** méthode sur un objet d’un type autre que `Boolean`. L’objet de ce type d’appel doit être de type `Boolean`. Exemple :

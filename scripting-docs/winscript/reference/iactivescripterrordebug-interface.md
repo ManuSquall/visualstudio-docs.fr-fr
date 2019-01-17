@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug (Interface) | Documents Microsoft
+title: Interface IActiveScriptErrorDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ff2dda33c1e406f87a157173c41015acf96e62a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645749"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345199"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug, interface
-Fournit des informations de contexte de document pour les erreurs de compilation et des exceptions d’exécution. Le `IActiveScriptError::QueryInterface` prend en charge de la méthode la `IActiveScriptErrorDebug` interface.  
+Fournit des informations de contexte de document pour les erreurs de compilation et des exceptions d’exécution. Le `IActiveScriptError::QueryInterface` prend en charge de la méthode le `IActiveScriptErrorDebug` interface.  
   
  Outre les méthodes héritées de `IActiveScriptError`, le `IActiveScriptErrorDebug` interface expose les méthodes suivantes.  
   
@@ -31,4 +31,4 @@ Fournit des informations de contexte de document pour les erreurs de compilation
 |Méthode|Description|  
 |------------|-----------------|  
 |[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Fournit le contexte de document pour cette erreur.|  
-|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Fournit le frame de pile qui est appliquée pour les erreurs d’exécution.|
+|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Fournit le frame de pile est en vigueur pour les erreurs d’exécution.|

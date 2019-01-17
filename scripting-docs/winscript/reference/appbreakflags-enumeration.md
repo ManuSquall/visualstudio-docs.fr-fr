@@ -1,5 +1,5 @@
 ---
-title: Appbreakflags, énumération | Documents Microsoft
+title: Appbreakflags, énumération | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641679"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349021"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS, énumération
 Indique l'état actuel du débogage des applications et des threads.  
@@ -36,21 +36,21 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>Membres  
   
-|Membre|Valeur|Description|  
+|Membre|Value|Description|  
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Moteur de langage doit s’arrêter immédiatement sur tous les threads avec BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Moteur de langage doit s’arrêter immédiatement avec BREAKREASON_DEBUGGER_HALT.|  
 |APPBREAKFLAG_STEP|0x00010000|Moteur de langage doit s’arrêter immédiatement dans le thread d’exécution pas à pas avec BREAKREASON_STEP.|  
-|APPBREAKFLAG_NESTED|0x00020000|L’application est en exécution imbriquée sur un point d’arrêt.|  
+|APPBREAKFLAG_NESTED|0x00020000|L’application est dans une exécution imbriquée sur un point d’arrêt.|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Le débogueur à passer au niveau de la source.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0 x 00100000|Le débogueur à passer au niveau du code d’octet.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0 x 00200000|Le débogueur à passer au niveau de l’ordinateur.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Masque pour développer les types d’étape.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Le débogueur à passer au niveau du code d’octet.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Le débogueur à passer au niveau de l’ordinateur.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Masque de factoriser les types d’étapes.|  
 |APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Un point d’arrêt est en cours.|  
   
-## <a name="remarks"></a>Remarques  
- Certains indicateurs spécifient que les moteurs de langue doit être interrompu l’occasion, tandis que les autres indicateurs de spécifient le mode d’exécution pas à pas du débogueur.  
+## <a name="remarks"></a>Notes  
+ Certains indicateurs de spécifient que les moteurs de langage doivent s’arrêter à la prochaine occasion, tandis que les autres indicateurs de spécifient le mode d’exécution pas à pas du débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogueur de Script actif, constantes, énumérations et structures](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
+ [Structures, énumérations et constantes de débogueur de Script actif](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [Énumération BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

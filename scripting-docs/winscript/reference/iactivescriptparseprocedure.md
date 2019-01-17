@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedure | Documents Microsoft
+title: IActiveScriptParseProcedure | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77aaa60942855a71f7d71037fbefb06462336a13
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78db05160adef51c414f4c4804f33d47812a9b38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724379"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349541"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-Si le moteur de Script Windows autorise le texte du code source pour les procédures à ajouter au script, il implémente la `IActiveScriptParseProcedure` interface. Pour les langages de script interprétés ayant aucun environnement de programmation indépendant, tel que VBScript, cela fournit un mécanisme de remplacement (autre que `IActiveScriptParse` ou `IPersist`*) pour ajouter des procédures de script à l’espace de noms.  
+Si le moteur de Script de Windows autorise le texte du code source pour les procédures à ajouter au script, il implémente le `IActiveScriptParseProcedure` interface. Pour les langages de script interprétés ayant aucun environnement de création indépendant, tels que VBScript, cela fournit un mécanisme alternatif (autre que `IActiveScriptParse` ou `IPersist`*) pour ajouter des procédures de script à l’espace de noms.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |||  
 |-|-|  
 |Méthode|Description|  
-|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Analyse de la procédure de code donnée et ajoute la procédure à l’espace de noms.|  
+|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Analyse de la procédure de code donné et ajoute la procédure à l’espace de noms.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de script actives](../../winscript/reference/active-script-interfaces.md)

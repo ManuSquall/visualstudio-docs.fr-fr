@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2c711dd3a4174f38bf2f3b3e163805e6cfa1c314
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091830"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345225"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>PROFILER_HEAP_OBJECT_FLAGS, énumération
 Indicateurs qui représentent si des informations supplémentaires sur un objet de tas ciblé dans une relation entre objets sont exposées. Utilisé dans le [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) (méthode).  
@@ -35,4 +35,4 @@ typedef [v1_enum] enum {    PROFILER_HEAP_ENUM_FLAGS_NONE                      =
 |PROFILER_HEAP_ENUM_FLAGS_NONE|0x00000000|Cet objet segment de mémoire n’expose pas d’informations supplémentaires sur une relation entre objets. Cet objet segment de mémoire se comporte de la même façon que [IActiveScriptProfilerControl3::HeapEnum](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
 |PROFILER_HEAP_ENUM_ENUM_ STORE_RELATIONSHIP_FLAGS|0x00000001|Cet objet segment de mémoire expose des informations sur ou non un objet désigné dans une relation entre objets est une méthode getter ou setter. Ces informations seront stockées dans les 2 octets (16 bits) de la [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) champ comme l’un de le [PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS](../../winscript/reference/profiler-heap-object-relationship-flags-enumeration.md) valeurs d’énumération.|  
 |PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|0x00000002|Cet objet segment de mémoire est utilisé pour afficher la sous-chaîne correctement.|  
-|PROFILER_HEAP_ENUM_FLAGS_RELATIONSHIP_SUBSTRINGS|PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS &AMP;#124; PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|Cet objet segment de mémoire est utilisé pour afficher la sous-chaîne correctement.|
+|PROFILER_HEAP_ENUM_FLAGS_RELATIONSHIP_SUBSTRINGS|PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS &#124; PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|Cet objet segment de mémoire est utilisé pour afficher la sous-chaîne correctement.|

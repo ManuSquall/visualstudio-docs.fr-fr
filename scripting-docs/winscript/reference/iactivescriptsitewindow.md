@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow | Documents Microsoft
+title: IActiveScriptSiteWindow | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3043a3c36b2f1ebdf439f22b1de19dd559e50cfa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9a160b17f4a46237ab78b378664a046fe8a0e7d4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725129"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345719"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Cette interface est implémentée par les hôtes qui prennent en charge une interface utilisateur sur le même objet en tant que [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Les hôtes qui ne prennent pas en charge une interface utilisateur, tels que les serveurs, n’implémentent pas le `IActiveScriptSiteWindow` interface. Le moteur de script accède à cette interface en appelant `QueryInterface` de `IActiveScriptSite`.  

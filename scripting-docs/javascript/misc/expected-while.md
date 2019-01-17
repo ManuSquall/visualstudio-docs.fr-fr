@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801970"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348865"
 ---
 # <a name="expected-while"></a>'while' attendu
 Vous n’avez pas inclus le `while` condition dans une `do...while` boucle. Un **faire** instruction doit avoir un correspondant `while` à la fin du bloc de code de test.  

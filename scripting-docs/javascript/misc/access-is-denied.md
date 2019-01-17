@@ -20,11 +20,11 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295161"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349476"
 ---
 # <a name="access-is-denied"></a>Accès refusé
 Un script a essayé d'accéder aux données à partir d'une source autre que l'hôte de la page actuelle. La stratégie d'origine suivie par Internet Explorer et d'autres navigateurs permet aux scripts d'accéder aux données uniquement à partir de sources avec les mêmes schéma, hôte et port de l'URL de la page actuelle.  

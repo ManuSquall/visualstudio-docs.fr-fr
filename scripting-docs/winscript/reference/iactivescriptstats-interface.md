@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptstats, Interface | Documents Microsoft
+title: Interface IActiveScriptStats | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725049"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350139"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats, interface
-Permet à un hôte obtenir les statistiques d’un script en cours d’exécution. L’hôte peut utiliser ces informations pour déterminer si le script a pris trop de temps.  
+Permet à un hôte d’obtenir les statistiques d’un script en cours d’exécution. L’hôte peut utiliser ces informations pour déterminer si le script a pris trop de temps.  
   
  Outre les méthodes héritées de `IUnknown`, le `IActiveScriptStats` interface expose les méthodes suivantes.  
   
@@ -30,6 +30,6 @@ Permet à un hôte obtenir les statistiques d’un script en cours d’exécutio
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Retourne l’une des statistiques de script standard.|  
+|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Retourne une des statistiques de script standard.|  
 |[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Retourne une statistique de script personnalisé.|  
 |[IActiveScriptStats::ResetStats](../../winscript/reference/iactivescriptstats-resetstats.md)|Réinitialise les statistiques de ce script.|

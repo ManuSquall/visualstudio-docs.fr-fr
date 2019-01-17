@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx (Interface) | Documents Microsoft
+title: Interface IDebugStackFrameSnifferEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56d6e63c41db274634b2593989800ea0392b93a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76f10d6bbb34c61e87a1be0f61dcd7db168274e7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726759"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348488"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>IDebugStackFrameSnifferEx, interface
-Fournit un moyen pour énumérer les frames de pile logique connus par un composant. En général, les moteurs de script implémentent cette interface. Le processus débogage Gestionnaire utilise cette interface pour trouver tous les frames de pile associé à un thread donné.  
+Fournit un moyen pour énumérer les frames de pile logique appelées par un composant. En général, les moteurs de script implémentent cette interface. Le processus débogage Gestionnaire utilise cette interface pour trouver tous les frames de pile associée à un thread donné.  
   
 > [!NOTE]
 >  Cette interface est appelée à partir du thread d’intérêt. L’implémentation d’interface doit identifier le thread actuel et retourne un énumérateur approprié.  
@@ -33,4 +33,4 @@ Fournit un moyen pour énumérer les frames de pile logique connus par un compos
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Retourne un énumérateur de frames de pile du thread actuel.|
+|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Retourne un énumérateur de frames de pile pour le thread actuel.|

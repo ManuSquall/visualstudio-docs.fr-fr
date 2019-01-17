@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI (Interface) | Documents Microsoft
+title: Interface IApplicationDebuggerUI | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725139"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348904"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI, interface
-Implémenté par l’environnement de développement intégré (IDE) de débogueur (en plus de `IApplicationDebugger`) pour permettre à un composant externe davantage de contrôle sur l’interface utilisateur (IU) du débogueur.  
+Implémenté par l’environnement de développement intégré (IDE) de débogueur (en plus de `IApplicationDebugger`) afin de donner un composant externe davantage de contrôle sur l’interface utilisateur (IU) du débogueur.  
   
  Outre les méthodes héritées de `IUnknown`, le `IApplicationDebuggerUI` interface expose les méthodes suivantes.  
   
@@ -30,5 +30,5 @@ Implémenté par l’environnement de développement intégré (IDE) de débogue
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Met la fenêtre contenant le document de débogage spécifiés vers le haut dans le débogueur de l’interface utilisateur.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Affiche la fenêtre contenant le contexte de document donné vers le haut de l’interface utilisateur du débogueur et fait défiler la fenêtre vers le contexte.|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Apporte la fenêtre contenant le document de débogage spécifié vers le haut dans le débogueur de l’interface utilisateur.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Met la fenêtre qui contient le contexte de document donné vers le haut de l’interface utilisateur du débogueur et fait défiler la fenêtre pour le contexte.|

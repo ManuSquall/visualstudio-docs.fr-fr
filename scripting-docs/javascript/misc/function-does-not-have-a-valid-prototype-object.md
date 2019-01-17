@@ -1,5 +1,5 @@
 ---
-title: Fonction n’a pas d’objet prototype valide | Documents Microsoft
+title: Fonction n’a pas d’objet prototype valide | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4e2cbf198a452cd61f1355682ea3041436d2a27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633009"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346694"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>La fonction ne possède pas d'objet prototype valide
-Vous avez tenté d’utiliser **instanceof** pour déterminer si un objet a été dérivé d’une classe de fonction particulière, mais vous redéfini de l’objet `prototype` propriété sous la forme `null`, ou un type d’objet externe (les deux non valide [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objets). Un objet externe peut être un objet à partir du modèle d’objet hôte (par exemple, un document dans Internet Explorer ou objet fenêtre), ou un objet COM externe.  
+Vous avez tenté d’utiliser **instanceof** pour déterminer si un objet a été dérivé d’une classe fonction particulière, mais redéfinie de l’objet `prototype` propriété en tant que `null`, ou un type d’objet externe (les deux non valide [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objets). Un objet externe peut être un objet à partir du modèle d’objet hôte (par exemple, un document dans Internet Explorer ou objet window) ou un objet COM externe.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

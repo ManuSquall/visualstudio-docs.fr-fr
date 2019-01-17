@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext (Interface) | Documents Microsoft
+title: IDebugCodeContext Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725759"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349164"
 ---
 # <a name="idebugcodecontext-interface"></a>IDebugCodeContext, interface
 Une abstraction qui représente une position dans le code exécutable.  
@@ -31,4 +31,4 @@ Une abstraction qui représente une position dans le code exécutable.
 |Méthode|Description|  
 |------------|-----------------|  
 |[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Retourne le contexte de document associé à ce contexte de code.|  
-|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Active ou désactive un point d’arrêt dans ce contexte de code.|
+|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Définit ou efface un point d’arrêt à ce contexte de code.|

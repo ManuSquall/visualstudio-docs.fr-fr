@@ -1,5 +1,5 @@
 ---
-title: Erreur de syntaxe (JavaScript) | Documents Microsoft
+title: Erreur de syntaxe (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632959"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345368"
 ---
 # <a name="syntax-error-javascript"></a>Erreur de syntaxe (JavaScript)
-Vous avez créé une instruction qui enfreint une ou plusieurs des règles grammaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Vous avez créé une instruction qui enfreint une ou plusieurs règles grammaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Vérifiez la syntaxe de votre programme au numéro de ligne indiqué.  
+-   Vérifiez la syntaxe de votre programme sur le numéro de ligne indiqué.  
   
--   Recherchez le mauvais acheminement des parenthèses ou d’accolades.  
+-   Recherchez les mauvais acheminement des parenthèses ou d’accolades.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet Error](../../javascript/reference/error-object-javascript.md)

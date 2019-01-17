@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088567"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344822"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST, structure
 Cette structure est associée à des objets de fonction uniquement. La liste étendue représente la fermeture de la fonction sous la forme d’une liste d’étendues où chaque étendue est un objet de segment de mémoire avec une liste de la propriété associée qui représente les variables dans chaque étendue donnée. Dans certains cas, les noms des objets qu’étendue ne peut pas être disponible et seulement leur index dans la liste de propriétés est disponible.  

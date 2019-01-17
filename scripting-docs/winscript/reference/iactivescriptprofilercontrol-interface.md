@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilercontrol, Interface | Documents Microsoft
+title: Interface IActiveScriptProfilerControl | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0d598302ae78ca0b2a1e7c1f94c949800378a2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7caa09f384ce460a3e73b21b10d6d8022182dde7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724669"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349489"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl, interface
-Implémenté par le moteur de script qui prend en charge le profilage. En règle générale, un objet qui implémente le `IActiveScriptProfilerControl` implémente également la [IActiveScript](../../winscript/reference/iactivescript.md) interface. Dans ce cas, vous pouvez obtenir un handle vers le `IActiveScriptProfilerControl` interface en appelant le `IUnknown::QueryInterface` méthode sur l’objet. L’interface fournit les méthodes nécessaires pour arrêter et démarrer le profilage sur le moteur de script.  
+Implémenté par le moteur de script qui prend en charge le profilage. En règle générale, un objet qui implémente le `IActiveScriptProfilerControl` implémente également la [IActiveScript](../../winscript/reference/iactivescript.md) interface. Dans ce cas, vous pouvez obtenir un handle vers la `IActiveScriptProfilerControl` interface en appelant le `IUnknown::QueryInterface` méthode sur l’objet. L’interface fournit les méthodes nécessaires pour arrêter et démarrer le profilage sur le moteur de script.  
   
 ## <a name="methods"></a>Méthodes  
   

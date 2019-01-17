@@ -1,5 +1,5 @@
 ---
-title: Étiquette introuvable | Documents Microsoft
+title: Étiquette introuvable | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633079"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346971"
 ---
 # <a name="label-not-found"></a>Étiquette introuvable
-Vous avez apportées à une référence à une étiquette qui n’existe pas. Étiquettes peut être utilisé pour marquer les blocs de code, mais dans une étendue spécifiée, doit être uniques.  
+Vous faites une référence à une étiquette qui n’existe pas. Étiquettes peut être utilisé pour marquer des blocs de code, mais dans une étendue spécifiée, doit être uniques.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
 -   Vérifiez que vous avez correctement orthographié le nom d’étiquette.  
   
--   Vérifiez que toutes les références d’étiquette sont apportées aux étiquettes qui ont été définis dans la portée actuelle (Cela inclut les définitions en aval).  
+-   Vérifier toutes les références d’étiquette sont effectuées dans les étiquettes qui ont été définis dans la portée actuelle (Cela inclut les définitions en aval).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   

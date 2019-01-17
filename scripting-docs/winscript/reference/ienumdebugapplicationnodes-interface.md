@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes (Interface) | Documents Microsoft
+title: Interface IEnumDebugApplicationNodes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf9c4fe6a8d789b1988a9a47b17adcba64b28827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e14b5567d96bccd0badb95f75558e0af329a62a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727649"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344201"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>IEnumDebugApplicationNodes, interface
 Énumère les nœuds enfants d’un nœud associé à une application.  
@@ -32,5 +32,5 @@ ms.locfileid: "24727649"
 |------------|-----------------|  
 |[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|Récupère un nombre spécifié de segments dans une séquence d’énumération.|  
 |[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Ignore un nombre spécifié de segments dans une séquence d’énumération.|  
-|[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Réinitialise la séquence d’énumération au début.|  
-|[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|Crée un énumérateur qui contient le même état que l’énumérateur actuel.|
+|[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Réinitialise une séquence d’énumération au début.|  
+|[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|Crée un énumérateur qui contient le même état que l’énumérateur en cours.|

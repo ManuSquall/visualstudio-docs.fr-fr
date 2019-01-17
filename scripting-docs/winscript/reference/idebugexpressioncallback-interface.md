@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionCallBack (Interface) | Documents Microsoft
+title: Interface IDebugExpressionCallBack | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8ec9ca99a75b4e439cecab8ecc36193d04997b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e97b5755a8ea9fefb7456d255a2c0b417c3395cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726539"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347578"
 ---
 # <a name="idebugexpressioncallback-interface"></a>IDebugExpressionCallBack, interface
-Fournit des événements d’état liées à la progression d’une `IDebugExpression` évaluation.  
+Fournit des événements d’état liées à la progression d’un `IDebugExpression` évaluation.  
   
 ## <a name="methods"></a>Méthodes  
  Outre les méthodes héritées de `IUnknown`, le `IDebugExpressionCallBack` interface expose les méthodes suivantes.  

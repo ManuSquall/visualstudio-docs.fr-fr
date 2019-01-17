@@ -1,5 +1,5 @@
 ---
-title: Assignation non conforme (JavaScript) | Documents Microsoft
+title: Assignation non conforme (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632889"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350152"
 ---
 # <a name="illegal-assignment-javascript"></a>Assignation non conforme (JavaScript)
-Vous avez tenté d’assigner une valeur à un identificateur en lecture seule. Vous ne pouvez pas attribuer une valeur à un identificateur en lecture seule. Par exemple, hôte défini des objets et des objets COM externes.  
+Vous avez tenté d’assigner une valeur à un identificateur en lecture seule. Vous ne pouvez pas affecter une valeur à un identificateur en lecture seule. Par exemple, hôte défini des objets et des objets COM externes.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression (Interface) | Documents Microsoft
+title: Interface IDebugExpression | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e139e09362fc392d1110e26837c52fd4c642c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727789"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345513"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression, interface
-Représente une expression évaluée de façon asynchrone. En général, les moteurs de script implémentent cette interface. En règle générale, un débogueur IDE utilise cette interface pour activer une fenêtre de l’exécution immédiate ou de fenêtre Espion.  
+Représente une expression évaluée de façon asynchrone. En général, les moteurs de script implémentent cette interface. En règle générale, un IDE de débogueur utilise cette interface pour activer une fenêtre de l’exécution immédiate ou de fenêtre Espion.  
   
 > [!NOTE]
 >  Le `IDebugExpression` interface est disponible uniquement à partir d’un frame de pile.  
@@ -36,5 +36,5 @@ Représente une expression évaluée de façon asynchrone. En général, les mot
 |[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Commence l’évaluation de l’expression.|  
 |[IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)|Abandonne l’expression.|  
 |[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Détermine si l’opération est terminée.|  
-|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Retourne le résultat de l’évaluation d’une expression comme une chaîne et la valeur de retour de l’opération.|  
+|[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Retourne le résultat de l’évaluation de l’expression comme une chaîne et la valeur de retour de l’opération.|  
 |[IDebugExpression::GetResultAsDebugProperty](../../winscript/reference/idebugexpression-getresultasdebugproperty.md)|Retourne le résultat de l’évaluation des expressions en tant que propriété de débogage et de la valeur de retour de l’opération.|

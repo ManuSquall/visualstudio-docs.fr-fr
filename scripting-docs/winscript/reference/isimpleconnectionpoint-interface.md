@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint (Interface) | Documents Microsoft
+title: Interface ISimpleConnectionPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de40f66a9e5721b8dacac634c6fb77982017c155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a756fa3f933f4adff56c41a86aee19a0a2a93aa
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733909"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346408"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint, interface
-Fournit un moyen simple pour décrire et de l’énumération des événements déclenchés sur un point de connexion particulier. Cette interface facilite également raccorder un `IDispatch` objet à ces événements. Cette interface est implémentée par le Gestionnaire de processus déboguer (PDM) et consommée par les moteurs de script.  
+Fournit un moyen simple pour décrire et d’énumérer les événements déclenchés sur un point de connexion particulier. Cette interface facilite également raccorder un `IDispatch` objet à ces événements. Cette interface est implémentée par le Gestionnaire de processus déboguer (PDM) et consommée par les moteurs de script.  
   
  Cette interface est disponible à partir de `IDebugHelper::CreateSimpleConnectionPoint`.  
   
@@ -33,8 +33,8 @@ Fournit un moyen simple pour décrire et de l’énumération des événements d
 |Méthode|Description|  
 |------------|-----------------|  
 |[ISimpleConnectionPoint::Advise](../../winscript/reference/isimpleconnectionpoint-advise.md)|Établit une connexion entre l’objet de point de connexion simple et le récepteur du client.|  
-|[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Retourne le DISPID et le nom de chaque événement dans une plage spécifiée d’événements.|  
-|[ISimpleConnectionPoint::GetEventCount](../../winscript/reference/isimpleconnectionpoint-geteventcount.md)|Retourne le nombre d’événements exposés sur cette interface.|  
+|[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Retourne le DISPID pour chaque événement dans une plage spécifiée d’événements.|  
+|[ISimpleConnectionPoint::GetEventCount](../../winscript/reference/isimpleconnectionpoint-geteventcount.md)|Retourne le nombre d’événements affichés sur cette interface.|  
 |[ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)|Met fin à une connexion de notifications précédemment établie par `ISimpleConnectionPoint::Advise`.|  
   
 ## <a name="see-also"></a>Voir aussi  

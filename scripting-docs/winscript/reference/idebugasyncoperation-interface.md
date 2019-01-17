@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation (Interface) | Documents Microsoft
+title: Interface IDebugAsyncOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 157ed1248535855fcb53ca2eb6f49427fea94149
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726099"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349987"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation, interface
-Le Gestionnaire de déboguer des processus implémente la `IDebugAsyncOperation` interface. Un moteur de langage appelle la `IDebugApplication::CreateAsyncDebugOperation` méthode pour obtenir une référence à cette interface. Le moteur de langage peut utiliser le `IDebugAsyncOperation` interface pour fournir l’accès asynchrone à une opération synchrone de débogage.  
+Le Gestionnaire de débogage de processus implémente le `IDebugAsyncOperation` interface. Un moteur de langage appelle le `IDebugApplication::CreateAsyncDebugOperation` méthode pour obtenir une référence à cette interface. Le moteur de langage peut utiliser le `IDebugAsyncOperation` interface pour fournir l’accès asynchrone à une opération de débogage synchrone.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugAsyncOperation` interface expose les méthodes suivantes.  
   
@@ -33,5 +33,5 @@ Le Gestionnaire de déboguer des processus implémente la `IDebugAsyncOperation`
 |[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Retourne l’opération de débogage synchrone associée à cet objet.|  
 |[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|L’opération asynchrone commencer.|  
 |[IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)|Annule une opération.|  
-|[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|Détermine si l’opération de débogage terminée.|  
+|[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|Détermine si l’opération de débogage est terminée.|  
 |[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|Fournit la valeur de retour et le paramètre d’objet de retour à partir de l’opération de débogage synchrone.|
