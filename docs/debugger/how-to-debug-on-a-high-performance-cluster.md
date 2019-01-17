@@ -9,21 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966454"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228043"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procédure : déboguer sur un cluster à hautes performances
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procédure : Déboguer sur un Cluster hautement performant (C#, Visual Basic, C++)
+
 Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour les besoins généraux de configuration à distance, consultez [le débogage à distance](../debugger/remote-debugging.md).  
   
  Lorsque vous déboguez sur un cluster hautement performant, vous pouvez utiliser toutes les fenêtres de débogage et les techniques [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibles pour le débogage distant. Cependant, puisque vous déboguez à distance, la fenêtre de console externe n'est pas disponible.  
@@ -34,7 +35,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
   
  Lors du débogage d'une application parallèle, vous souhaitez définir un point d'arrêt sur un thread, un processus ou un ordinateur particulier. Pour ce faire, vous pouvez créer un point d'arrêt normal, puis ajouter un filtre de point d'arrêt.  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Pour ouvrir la boîte de dialogue Filtre de point d'arrêt  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Pour ouvrir la boîte de dialogue Filtre de point d'arrêt
   
 1.  Cliquez avec le bouton droit sur un glyphe de point d’arrêt dans une fenêtre source, la fenêtre **Code machine**, **Pile des appels** ou **Points d’arrêt**.  
   

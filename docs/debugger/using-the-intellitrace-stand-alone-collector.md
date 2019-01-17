@@ -1,8 +1,6 @@
 ---
 title: Utilisation du collecteur autonome IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684861"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227718"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Utilisation du collecteur autonome IntelliTrace (C#, Visual Basic)
+
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.
 
  Regardez IntelliTrace en action : [Collecte et analyse des données IntelliTrace en production pour le débogage (vidéo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -71,7 +70,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 5.  [Collecter les données d’une application web ou d’une application SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     ou
+     - ou -
 
      [Collecter les données d’une application managée](#BKMK_Collect_Data_from_Executables)
 
@@ -97,7 +96,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
      1.  Copiez IntelliTraceCollection.cab dans le dossier suivant :
 
-          **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple  **C:\IntelliTraceCollector**
 
@@ -120,7 +119,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2.  Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  Pour collecter les données d’une application web ou SharePoint :
 
@@ -128,7 +127,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
          Par exemple :
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<DOMAINE\IDutilisateur >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.
 
@@ -192,7 +191,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       ou
+       - ou -
 
    - Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
 
@@ -214,7 +213,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1.  Pour démarrer la collecte des données, ouvrez une fenêtre Commande PowerShell en tant qu’administrateur, puis exécutez la commande suivante :
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Après avoir exécuté cette commande, tapez **Y** pour confirmer que vous souhaitez démarrer la collecte des données.
@@ -256,7 +255,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1.  Pour démarrer votre application et collecter des données en même temps, utilisez la syntaxe suivante :
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\< FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Par exemple, pour collecter des données d’une application nommée **MyApp**, exécutez :
 
@@ -320,7 +319,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
   2. Dans `<ModuleList>`, définissez l’attribut `isExclusionList` avec la valeur `false`.
 
-  3. Utilisez l'élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.
+  3. Utilisez l’élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.
 
      Par exemple, pour collecter uniquement des données du module web principal pour l’application web Fabrikam Fiber, créez une liste comme celle-ci :
 
@@ -366,7 +365,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
    Oui. Pour réduire l’impact sur les performances, IntelliTrace limite la collecte des données aux valeurs de types de données primitives qui sont passées à et retournées par les méthodes ainsi qu’aux valeurs de types de données primitives dans les champs sur les objets de niveau supérieur qui sont passés à et retournés par les méthodes.
 
-   Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee``oldemployee` :
+   Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee` `oldemployee`:
 
    `public Employee AlterEmployee(int id, Employee oldemployee)`
 
@@ -380,7 +379,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 -   À partir d’une session dans Visual Studio Enterprise de débogage d’IntelliTrace, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
--   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+-   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
 
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)
