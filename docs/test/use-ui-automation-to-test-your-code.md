@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840640"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270191"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser l’automatisation de l’interface utilisateur pour tester votre code
 
