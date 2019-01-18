@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855129"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345238"
 ---
 # <a name="expected-identifier-string-or-number"></a>Identificateur, chaîne ou nombre attendu(e)
 Vous avez utilisé la syntaxe de littéral incorrecte pour déclarer un objet littéral. Les propriétés d’un littéral d’objet doivent être un identificateur, chaîne ou un nombre. Un littéral d’objet (également appelé un « initialiseur d’objet ») se compose d’une liste séparée par des virgules de paires propriété : valeur mises entre parenthèses. Exemple :  
