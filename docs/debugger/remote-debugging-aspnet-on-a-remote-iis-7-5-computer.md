@@ -12,10 +12,10 @@ manager: douge
 ms.workload:
 - aspnet
 ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53829194"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
@@ -48,7 +48,7 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Créer l’ASP.NET 4.5.2 application sur l’ordinateur Visual Studio
   
-1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans la section des modèles ASP.NET 4.5.2 , sélectionnez MVC</strong>. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
+1. Créez une application ASP.NET MVC. (**Fichier > Nouveau > projet**, puis sélectionnez <strong>Visual C# > Web > Application Web ASP.NET. Dans le ** ASP.NET 4.5.2</strong> section de modèles, sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.)
 
 2. Ouvrez le fichier HomeController.cs et définissez un point d’arrêt dans la méthode `About()` .
 
@@ -80,7 +80,7 @@ Si vous souhaitez des informations plus détaillées pour installer ASP.NET sur 
     > [!NOTE]
     > Si vous utilisez Windows Server 2008 R2, installez ASP.NET 4 au lieu d’utiliser cette commande :
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Redémarrez le système ou exécutez **net stop was /y** suivi de **net start w3svc** à partir d’une invite de commandes pour prendre en compte une modification de la variable système PATH.
 
