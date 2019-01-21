@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883024"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269889"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -39,11 +39,11 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire un fichier audio**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Lire un fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Rechercher un moment précis dans le fichier audio**|Seek \<nom> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Pause \<nom> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Désactiver le son**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Mute \<nom> Audio|HtmlAudio.Mute()|
-|**Réactiver le son**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Unmute \<nom> Audio|HtmlAudio.Unmute()|
+|**Suspendre la lecture du fichier audio**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Désactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Audio|HtmlAudio.Mute()|
+|**Réactiver le son**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Unmute \<nom> Audio|HtmlAudio.Unmute()|
 |**Modifier le volume audio**|Set volume of \<nom> Audio to 79%|HtmlAudio.SetVolume(float)|
 
 Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
@@ -63,11 +63,11 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
-|**Lire un fichier vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Lire un fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Play \<nom> Video from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Rechercher un moment précis dans le fichier vidéo**|Seek \<nom> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Pause \<nom> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Mute \<nom> Video|HtmlVideo.Mute()|
-|**Réactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou à partir du menu contextuel des contrôles.|Unmute \<nom> Video|HtmlVideo.Unmute()|
+|**Suspendre la lecture du fichier vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Pause \<nom> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Désactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Mute \<nom> Video|HtmlVideo.Mute()|
+|**Réactiver le son de la vidéo**<br /><br /> Directement à partir du contrôle ou dans le menu contextuel (clic droit) du contrôle.|Unmute \<nom> Video|HtmlVideo.Unmute()|
 |**Modifier le volume de la vidéo**|Set volume of \<nom> Video to 79%||
 
 Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.

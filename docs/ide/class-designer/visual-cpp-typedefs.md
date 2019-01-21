@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869188"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269404"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs de Visual C++ dans le Concepteur de classes
 
@@ -44,7 +44,7 @@ Dans le **Concepteur de classes**, un typedef C++ a la forme du type spécifié 
 
 Les classes et les structures peuvent avoir des typedefs imbriqués déclarés à l’intérieur. Dans le **Concepteur de classes**, les formes de classe et de structure peuvent afficher des déclarations typedef imbriquées comme formes imbriquées.
 
-Les formes typedef prennent en charge les commandes **Afficher en tant qu’association** et **Afficher en tant qu’association de collection** dans le menu contextuel.
+Les formes typedef prennent en charge les commandes **Afficher en tant qu’association** et **Afficher en tant qu’association de collection** dans le menu contextuel (clic droit).
 
 ### <a name="class-typedef-example"></a>Exemple de typedef de classe
 

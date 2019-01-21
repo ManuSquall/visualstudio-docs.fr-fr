@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5013e04d1d5b6c73255be907d2b460cb186cea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8fb33e1b6df6cd43aaaba9c38123ff7b941da5c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968707"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269967"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procédure : afficher et modifier le code avec l’Aperçu de définition (Alt + F12)
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic e
 
 ### <a name="to-open-a-peek-definition-window"></a>Pour ouvrir une fenêtre Aperçu de définition
 
-1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel d’un type ou membre que vous souhaitez explorer. Dans Visual Studio 2017 version 15.4 ou ultérieure, si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Si vous préférez utiliser le clavier, appuyez sur **Alt**+**F12**.
+1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel (clic droit) d’un type ou membre que vous souhaitez explorer. Dans Visual Studio 2017 version 15.4 ou ultérieure, si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Si vous préférez utiliser le clavier, appuyez sur **Alt**+**F12**.
 
      Cette illustration représente la fenêtre **Aperçu de définition** pour une méthode nommée `Print()` :
 

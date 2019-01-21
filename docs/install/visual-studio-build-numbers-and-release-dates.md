@@ -6,19 +6,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 12/11/2018
+ms.date: 01/09/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: f730655d1bfdab1f7cdf03be99faafeb7f2fcb65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15738554ca658a337f187f554b07786569f95ea3
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989813"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154506"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -28,9 +28,9 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.5 | Mise en production | 8 janvier 2019 | 15.9.28307.280 |
 | 15.9.4 | Mise en production | 11 décembre 2018 | 15.9.28307.222 |
 | 15.0.20 | Mise en production | 11 décembre 2018 | 15.0.26228.64 |
-| 15.9.3 | Preview 1 | 28 novembre 2018 | 15.9.28307.145 |
 | 15.9.3 | Mise en production | 28 novembre 2018 | 15.9.28307.145 |
 | 15.9.2 | Mise en production | 19 novembre 2018 | 15.9.28307.108 |
 | 15.9.1 | Mise en production | 15 novembre 2018 | 15.9.28307.105 |

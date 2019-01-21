@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f01d9d35f8b2c122fb61f4fd9b3a8a22090b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 934615be23ebb025740521d35e31fee9f0a6ec47
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918762"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315577"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.  
@@ -85,9 +85,11 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | OutputPath | Spécifie le chemin du répertoire de sortie, relatif au répertoire de projet, par exemple *bin\Debug*. |
 | OutputType | Spécifie le format de fichier du fichier de sortie. Ce paramètre peut prendre l'une des valeurs suivantes :<br /><br /> -   Library. Crée une bibliothèque de code. (Valeur par défaut)<br />-   Exe. Crée une application console.<br />-   Module. Crée un module.<br />-   Winexe. Crée un programme Windows.<br /><br /> Cette propriété est équivalente au commutateur `/target` du compilateur *vbc.exe*. |
 | OverwriteReadOnlyFiles | Valeur booléenne qui indique si vous souhaitez permettre à la génération de remplacer les fichiers en lecture seule ou de générer une erreur. |
+| PathMap | Valeur qui indique comment mapper les chemins d’accès physiques avec les noms de chemins d’accès sources générés en sortie par le compilateur. Cette propriété est équivalente au commutateur `/pathmap` du compilateur *csc.exe*. |
 | PdbFile | Nom du fichier *.pdb* que vous émettez. Cette propriété est équivalente au commutateur `/pdb` du compilateur *csc.exe*. |
 | Plateforme | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
 | ProduceReferenceAssembly | Valeur booléenne qui, lorsqu’elle est définie sur `true`, permet la production d’[assemblys de référence](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) pour l’assembly actuel. `Deterministic` doit être `true` lors de l’utilisation de cette fonctionnalité. Cette propriété correspond au commutateur `/refout` des compilateurs *vbc.exe* et *csc.exe*. |
+| ProduceOnlyReferenceAssembly | Valeur booléenne qui spécifie que le compilateur doit seulement émettre un assembly de référence, plutôt que le code compilé. Non utilisable avec `ProduceReferenceAssembly`.  Cette propriété correspond au commutateur `/refonly` des compilateurs *vbc.exe* et *csc.exe*. |
 | RemoveIntegerChecks | Valeur booléenne indiquant s'il convient de désactiver les contrôles d'erreurs de dépassement sur les entiers. La valeur par défaut est `false`. Cette propriété est équivalente au commutateur `/removeintchecks` du compilateur *vbc.exe*. |
 | SGenUseProxyTypes | Valeur booléenne qui indique si les types de proxy doivent être générés par *SGen.exe*.<br /><br /> La cible SGen utilise cette propriété pour définir l'indicateur UseProxyTypes. Cette propriété a true comme valeur par défaut et aucune option d'interface utilisateur ne permet de modifier cela. Pour générer l’assembly de sérialisation pour les types non-webservice, ajoutez cette propriété au fichier projet et affectez-lui la valeur false avant d’importer *Microsoft.Common.Targets* ou *C#/VB.targets*. |
 | SGenToolPath | Chemin de l’outil facultatif qui indique où obtenir *SGen.exe* quand la version actuelle de *SGen.exe* est remplacée. |

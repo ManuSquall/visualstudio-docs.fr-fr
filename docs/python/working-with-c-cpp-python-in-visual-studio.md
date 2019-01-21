@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947838"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315629"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
 
@@ -127,7 +127,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     | | **Général** > **Extension de la cible** | **.pyd** |
     | | **Valeurs par défaut du projet** > **Type de configuration** | **Bibliothèque dynamique (.dll)** |
     | **C/C++** > **Général** | **Autres répertoires Include** | Ajoutez le dossier *include* Python en fonction de votre installation, par exemple `c:\Python36\include`.  |
-    | **C/C++** > **Préprocesseur** | **Définitions de préprocesseur** | Ajoutez `Py_LIMITED_API;` au début de la chaîne (y compris le point-virgule). Cette définition limite certaines des fonctions que vous pouvez appeler à partir de Python et rend le code plus portable entre les différentes versions de Python. |
+    | **C/C++** > **Préprocesseur** | **Définitions de préprocesseur** | **CPython uniquement** : ajoutez `Py_LIMITED_API;` (point-virgule compris) au début de la chaîne. Cette définition limite certaines des fonctions que vous pouvez appeler à partir de Python et rend le code plus portable entre les différentes versions de Python. Si vous travaillez avec PyBind11, n’ajoutez pas cette définition, car cela provoquerait des erreurs de build. |
     | **C/C++** > **Génération de code** | **Bibliothèque runtime** | **DLL multithread (/MD)** (consultez l’avertissement ci-dessous) |
     | **Éditeur de liens** > **Général** | **Répertoires de bibliothèques supplémentaires** | Ajoutez le dossier *libs* Python contenant des fichiers *.lib* en fonction de votre installation, par exemple `c:\Python36\libs`. (Veillez à pointer vers le dossier *libs* qui contient des fichiers *.lib*, et *non* vers le dossier *Lib* qui contient des fichiers *.py*.) |
 
@@ -135,7 +135,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     > Si vous ne voyez pas l’onglet C/C++ dans les propriétés du projet, cela signifie que le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Cette situation peut se produire si vous créez un fichier source sans extension *.c* ou *.cpp*. Par exemple, si vous avez accidentellement entré `module.coo` au lieu de `module.cpp` dans la nouvelle boîte de dialogue d’ajout d’élément, Visual Studio crée le fichier, mais ne définit pas le type de fichier « Code C/C++ » qui permet d’activer l’onglet de propriétés C/C++. Une telle erreur d’identification demeure, même si vous renommez le fichier avec l’extension `.cpp`. Pour définir correctement le type de fichier, cliquez avec le bouton droit sur celui-ci dans l’**Explorateur de solutions**, sélectionnez **Propriétés**, puis affectez à **Type de fichier** la valeur **Code C/C++**.
 
     > [!Warning]
-    > Affectez toujours à l’option **C/C++** > **Génération de code** > **Bibliothèque runtime** la valeur **DLL multithread (/MD)**, même pour une configuration Debug, car les ressources binaires Python qui ne sont pas des ressources binaires de débogage sont générées avec ce paramètre. Si vous définissez l’option **DLL de débogage multithread (/MDd)**, la génération d’une configuration **Debug** produit l’erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` pour éviter l’erreur de build, Python se bloque quand vous tentez d’importer le module. (Le plantage se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)
+    > Affectez toujours à l’option **C/C++** > **Génération de code** > **Bibliothèque runtime** la valeur **DLL multithread (/MD)**, même pour une configuration Debug, car les ressources binaires Python qui ne sont pas des ressources binaires de débogage sont générées avec ce paramètre. Avec CPython, si vous définissez l’option **DLL de débogage multithread (/MDd)**, le fait de générer une configuration **Debug** produit l’erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` (requis avec CPython, mais pas avec PyBind11) pour éviter l’erreur de build, Python se bloque en tentant d’importer le module. (Le plantage se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)
     >
     > L’option /MDd permet de générer les ressources binaires de débogage Python (par exemple *python_d.exe*), mais sa sélection pour une DLL d’extension provoque toujours l’erreur de build avec `Py_LIMITED_API`.
 

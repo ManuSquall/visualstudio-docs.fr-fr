@@ -1,55 +1,63 @@
 ---
-title: -Runexit (devenv.exe)
-ms.date: 11/04/2016
+title: -RunExit (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- runexit Devenv switch
-- Devenv, /runexit switch
-- /runexit Devenv switch
+- RunExit Devenv switch
+- Devenv, /RunExit switch
+- /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa715c97310edc447610b0c0ae61226ab5334f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ebeba5afc1eb50703f62e386f7453d7c0c3c1f6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227185"
 ---
-# <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
+# <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
+
 Compile et exécute la solution ou le projet spécifié, puis ferme l’environnement de développement intégré (IDE).
 
 ## <a name="syntax"></a>Syntaxe
 
-```
-devenv /runexit {SolutionName|ProjectName}
+```shell
+devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SolutionName`
 
- Obligatoire. Chemin complet et nom d’un fichier solution.
+- *SolutionName*
 
- `ProjectName`
+  Chemin complet et nom d’un fichier solution.
 
- Obligatoire. Chemin complet et nom d’un fichier projet.
+- *ProjectName*
+
+  Chemin complet et nom d’un fichier projet.
+
+- `/Out` *OutputFilename*
+
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
 ## <a name="remarks"></a>Notes
- Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur réduit la fenêtre de l’IDE pendant l’exécution de la solution ou du projet et ferme cette fenêtre à la fin de leur exécution.
 
--   Placez entre guillemets doubles les chaînes contenant des espaces.
+Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur réduit l’environnement IDE pendant l’exécution du projet ou de la solution, et le ferme ensuite.
 
--   Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.
+- Placez entre guillemets doubles les chaînes contenant des espaces.
+
+- Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/Out`.
 
 ## <a name="example"></a>Exemple
- Cet exemple exécute la solution `MySolution` dans une fenêtre réduite de l’IDE en utilisant la configuration de déploiement active, puis ferme l’IDE.
+
+Cet exemple exécute la solution `MySolution` dans une fenêtre réduite de l’IDE en utilisant la configuration de déploiement active, puis ferme l’IDE.
 
 ```
-devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,43 +1,71 @@
 ---
-title: -Diff
-ms.date: 11/04/2016
+title: -Diff (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
+helpviewer_keywords:
+- Devenv, /Diff switch
+- /Diff Devenv switch
+- Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf58c25611fd52c6e8db8e8210101e1c80153275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe0fcdb039b4c7b234f3f43e6ce5741d96f5e9c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227445"
 ---
-# <a name="diff"></a>/Diff
+# <a name="diff-devenvexe"></a>/Diff (devenv.exe)
+
 Compare deux fichiers. Les différences sont affichées dans une fenêtre spéciale de Visual Studio.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
+```shell
+devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SourceFile`
 
- Obligatoire. Chemin complet et nom du premier fichier à comparer.
+- *SourceFile*
 
- `TargetFile`
+  Obligatoire. Chemin complet et nom du premier fichier à comparer.
 
- Obligatoire. Chemin complet et nom du deuxième fichier à comparer.
+- *TargetFile*
 
- `SourceDisplayName`
+  Obligatoire. Chemin complet et nom du second fichier à comparer.
 
- Optionnel. Nom d’affichage du premier fichier.
+- *SourceDisplayName*
 
- `TargetDisplayName`
+  Optionnel. Nom d’affichage du premier fichier.
 
- Optionnel. Nom d’affichage du deuxième fichier.
+- *TargetDisplayName*
+
+  Optionnel. Nom d’affichage du deuxième fichier.
+    
+## <a name="remarks"></a>Notes
+
+S’il y a déjà une instance de l’environnement IDE ouverte, la comparaison de fichiers s’affiche dans un onglet de cet environnement.
+
+## <a name="example"></a>Exemple
+
+Le premier exemple compare deux fichiers sans modifier leur nom d’affichage. Le second exemple compare les fichiers en modifiant les deux noms d’affichage. Le troisième et le quatrième exemples comparent deux fichiers, mais appliquent un alias soit au premier, soit au second.
+
+```shell
+devenv /diff File1.txt File2.txt
+
+devenv /diff File1.txt File2.txt FirstAlias "Second Alias"
+
+devenv /diff File1.txt File2.txt "File One"
+
+devenv /diff File1.txt File2.txt "" FileTwo
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

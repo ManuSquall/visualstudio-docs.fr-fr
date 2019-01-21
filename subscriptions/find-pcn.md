@@ -9,12 +9,12 @@ description: Découvrez comment localiser votre PCN ou votre numéro d’autoris
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637017"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269209"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Comment trouver mon « numéro de client public » (PCN) ou numéro d’autorisation ?
 
@@ -22,18 +22,13 @@ Pour effectuer l’intégration de votre organisation au portail d’administrat
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>Pour localiser votre PCN ou votre numéro d’autorisation
 
-1.  Connectez-vous au Centre VLSC à l’adresse : [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
-
-2. Dans l’onglet Abonnements, sélectionnez **Abonnements Visual Studio**.
+Le Centre de gestion des licences en volume ne vous donne plus accès à votre numéro PCN.  Pour l’obtenir, contactez le support Visual Studio Subscription.
+1. Consultez https://visualstudio.microsoft.com/subscriptions/support/#talktous
+2. Appuyez sur le bouton **Compte, abonnement et support de facturation**.
     > [!div class="mx-imgBorder"]
-    > ![Sélection des abonnements dans VLSC](_img/vlsc/vlsc-subscriptions.png)
-
-3. Le numéro de client public (PCN) se trouve environ à mi-page.
-    > [!div class="mx-imgBorder"]
-    > ![Recherche du PCN dans VLSC](_img/vlsc/vlsc-pcn.png)
-
-    
-Si vous ne voyez pas la page ci-dessus et que vous êtes redirigé vers la page de connexion de Visual Studio, copiez et collez le lien suivant dans votre navigateur : https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+    > ![Choisir le support de l’abonnement](_img/vlsc/vlsc-pcn.png)
+3. Choisissez votre pays dans la liste déroulante.
+4. Choisissez l’une des options de support disponibles dans votre pays pour contacter un agent de support et lui demander de chercher votre numéro PCN.  
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Si j’ai plusieurs numéros PCN, lequel dois-je utiliser ?
 

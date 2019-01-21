@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890707"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269798"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio avec le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
@@ -79,7 +79,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
      *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Testez votre extrait de code en ouvrant un projet Visual Basic et un fichier de code. Dans le fichier, choisissez **Extraits de code** > **Insérer un extrait** dans le menu contextuel, puis choisissez **My Code Snippets**. Vous devez normalement voir un extrait de code nommé **My Visual Basic Code Snippet** (Mon extrait de code Visual Basic). Double-cliquez dessus.
+6.  Testez votre extrait de code en ouvrant un projet Visual Basic et un fichier de code. Dans le fichier, choisissez **Extraits de code** > **Insérer un extrait de code** dans le menu contextuel (clic droit), puis **Mes extraits de code**. Vous devez normalement voir un extrait de code nommé **My Visual Basic Code Snippet** (Mon extrait de code Visual Basic). Double-cliquez dessus.
 
     `Console.WriteLine("Hello, World!")` est inséré dans le fichier de code.
 
