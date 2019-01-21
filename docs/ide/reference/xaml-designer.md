@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964297"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315538"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
 
@@ -57,15 +57,15 @@ Utilisez ce paramètre pour déterminer le fonctionnement du zoom pendant la mod
 |||
 |-|-|
 |**Roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en faisant tourner la roulette de la souris.|
-|**Ctrl + roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en appuyant sur la touche Ctrl tout en faisant tourner la roulette de la souris.|
-|**Alt + roulette de la souris**|Effectuez un zoom avant dans le concepteur XAML en appuyant sur la touche Alt tout en faisant tourner la roulette de la souris.|
+|**Ctrl + roulette de la souris**|Effectuez un zoom avant dans le Concepteur XAML en appuyant sur la touche **Ctrl** tout en faisant tourner la roulette de la souris.|
+|**Alt + roulette de la souris**|Effectuez un zoom avant dans le Concepteur XAML en appuyant sur la touche **Alt** tout en faisant tourner la roulette de la souris.|
 
 Ces paramètres déterminent le comportement du concepteur pendant la modification d’un document XAML.
 
 |||
 |-|-|
 |**Nommer automatiquement les éléments interactifs à la création**|Spécifie si un nom par défaut est fourni pour un nouvel élément interactif quand vous l’ajoutez au concepteur.|
-|**Insérer automatiquement des propriétés de disposition après la création d’éléments**|Spécifie si des propriétés de disposition sont fournies pour un nouvel élément quand vous l’ajoutez au concepteur.|
+|**Insérer automatiquement des propriétés de disposition après la création d’éléments**|Spécifie si des propriétés de disposition sont fournies pour un nouvel élément quand vous l’ajoutez au concepteur. Les propriétés de disposition sont celles qui influent sur la disposition d’un contrôle, par exemple, Marge et Alignement vertical. Le code XAML suivant illustre la création d’un bouton avec et sans cette option :<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Utiliser une disposition basée sur un quadrant**|Indique si le contrôle sélectionné s’aligne sur les bords les plus proches du conteneur parent. Si cette case est décochée, l’alignement des contrôles ne change pas pendant une opération de déplacement ou de création.|
 |**Remplir automatiquement les éléments de la boîte à outils**|Spécifie si les contrôles utilisateur et les contrôles personnalisés dans la solution actuelle sont automatiquement affichés dans la boîte à outils.|
 
@@ -75,7 +75,7 @@ Utilisez ces options pour déterminer des paramètres pendant de la modification
 
 |||
 |-|-|
-|**Zoomer en utilisant**|Effectuez un zoom avant dans le concepteur XAML en faisant tourner la roulette de la souris, ou en appuyant sur la touche Ctrl ou Alt tout en faisant tourner la roulette de la souris.|
+|**Zoomer en utilisant**|Effectuez un zoom avant dans le Concepteur XAML en faisant tourner la roulette de la souris, ou en appuyant sur la touche **Ctrl** ou **Alt** tout en faisant tourner la roulette de la souris.|
 |**Unités de type**|Spécifie si les mesures dans le concepteur sont basées sur des points ou des pixels. Comme les applications Windows universelles ne prennent pas en charge les points, les unités sont automatiquement converties en pixels si l’option **Points** est sélectionnée.|
 
 ## <a name="artboard-blend-only"></a>Planche graphique (Blend uniquement)

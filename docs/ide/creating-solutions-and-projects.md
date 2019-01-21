@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908890"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269824"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -129,7 +129,7 @@ Vous pouvez supprimer des solutions et tout leur contenu définitivement, mais c
 
 ### <a name="to-permanently-delete-a-solution"></a>Pour supprimer définitivement une solution
 
-1. Dans **l’Explorateur de solutions**, dans le menu contextuel de la solution à supprimer, choisissez **Ouvrir le dossier dans l’Explorateur de fichiers**.
+1. Dans **l’Explorateur de solutions**, choisissez **Ouvrir le dossier dans l’Explorateur de fichiers** dans le menu contextuel (clic droit) de la solution à supprimer.
 
 1. Dans l'Explorateur de fichiers, remontez d'un niveau.
 

@@ -9,12 +9,12 @@ description: Louez Visual Studio Professional ou Visual Studio Enterprise sur un
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740219"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269746"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
@@ -24,7 +24,7 @@ Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio. Vous pouvez toujours acheter de nouveaux abonnements cloud mensuels. 
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio. Vous pouvez toujours acheter de nouveaux abonnements cloud mensuels. 
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -37,9 +37,7 @@ Toute personne ayant un [accès Propriétaire et Contributeur](https://na01.safe
 
 1.  Connectez-vous à [Visual Studio Marketplace > Abonnements](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Choisissez l’abonnement que vous voulez acheter, par exemple :
-    > [!div class="mx-imgBorder"]
-    > ![Acheter un abonnement Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Choisissez l’abonnement que vous souhaitez acheter, par exemple, l’abonnement mensuel Visual Studio Professional.
 
 3.  Sélectionnez l’abonnement Azure à utiliser pour la facturation. Vous pouvez créer un abonnement Azure si vous n’en avez pas.
     > [!div class="mx-imgBorder"]

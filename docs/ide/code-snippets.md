@@ -18,16 +18,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889226"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269405"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans un fichier de code à l'aide d'une commande de menu contextuel ou une combinaison de touches d'accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés, tels que les blocs `try-finally` ou `if-else`, mais ils permettent d’insérer des classes ou des méthodes entières.
+Les extraits de code sont de petits blocs de code réutilisables que l’on peut insérer dans un fichier de code à l’aide d’une commande de menu contextuel (clic droit) ou d’une combinaison de touches d’accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés, tels que les blocs `try-finally` ou `if-else`, mais ils permettent d’insérer des classes ou des méthodes entières.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Extraits de code (Visual Studio pour Mac)](/visualstudio/mac/snippets).
@@ -61,7 +61,7 @@ finally
 }
 ```
 
-Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur **Tab**. Vous pouvez aussi taper `tryf` et appuyer deux fois sur **Tab**.
+Pour insérer cet extrait, cliquez sur **Insérer un extrait de code** dans le menu contextuel (clic droit) de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur **Tab**. Vous pouvez aussi taper `tryf` et appuyer deux fois sur **Tab**.
 
 Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple, `return FALSE;`), et que vous choisissez ensuite **Entourer de** > **if**, l’extrait est développé autour de la ligne :
 

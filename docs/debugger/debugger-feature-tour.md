@@ -1,8 +1,8 @@
 ﻿---
-title: Bien démarrer avec le débogage dans Visual Studio 2017
+title: Déboguer des applications avec Visual Studio
 description: Bien démarrer avec le débogage d’applications en utilisant le débogueur Visual Studio
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227887"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -185,7 +185,7 @@ Dans cet exemple, **l’Assistance sur l’exception** vous montre une exception
 
 Dans cet exemple, l’appel de `DirectoryInfo` a provoqué l’erreur sur la chaîne vide, stockée dans la variable `value`.
 
-L’Assistance sur l’exception est une fonctionnalité intéressante qui peut vous aider à déboguer des erreurs. Vous pouvez également examiner les détails de l’erreur et ajouter un espion à partir de l’Assistance sur l’exception. Si nécessaire, vous pouvez aussi changer les conditions pour lever une exception donnée.
+L’Assistance sur l’exception est une fonctionnalité intéressante qui peut vous aider à déboguer des erreurs. Vous pouvez également examiner les détails de l’erreur et ajouter un espion à partir de l’Assistance sur l’exception. Si nécessaire, vous pouvez aussi changer les conditions pour lever une exception donnée. Pour plus d’informations sur la gestion des exceptions dans le code, voir [Corriger les bogues en écrivant du meilleur code C#](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > L’Assistance sur l’exception remplace l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

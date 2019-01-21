@@ -9,12 +9,12 @@ description: Découvrez comment activer l’avantage Support technique inclus da
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740428"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315512"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer l’avantage Support technique dans les abonnements Visual Studio
 
@@ -85,11 +85,8 @@ Avant d’appeler le support, préparez votre ID de contrat et votre ID d’acc�
 Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnement Visual Studio afin de résoudre des problèmes liés à Azure, vous devez lier vos ID de contrat et d’accès à votre abonnement Azure.
 
 1.  Accédez à https://portal.azure.com et connectez-vous
-2.  Dans le volet de navigation de gauche, cliquez sur « Aide et support »
-3.  Sous « Support », cliquez sur « Lier un contrat de support technique »
-4.  Entrez vos « ID d’accès » et « ID de contrat » fournis à l’étape 1 ci-dessus.
-
-Une fois que vous avez effectué ces étapes, vous pouvez choisir le plan de support qui est associé à votre avantage inclus dans l’abonnement Visual Studio.  (Le nom du plan peut contenir « MSDN ».)
+2.  Dans le volet de navigation gauche, cliquez sur **Aide et support**
+3.  Sous « Support », cliquez sur **Nouvelle demande de support**
 
 ## <a name="eligibility"></a>Éligibilité
 
@@ -107,6 +104,6 @@ Une fois que vous avez effectué ces étapes, vous pouvez choisir le plan de sup
 <sup>2</sup> *Inclut : Imagine Standard.*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
