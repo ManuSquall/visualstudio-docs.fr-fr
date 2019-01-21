@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831152"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269279"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
 
@@ -131,7 +131,7 @@ Vous pouvez gérer tous les paramètres, notamment vos paramètres personnalisé
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Créer des paramètres spécifiques à la solution et au projet
 
-Vous pouvez créer des paramètres spécifiques à la solution et au projet via le menu contextuel de chaque solution et projet :
+Vous pouvez créer des paramètres propres à la solution ou au projet dans le menu contextuel (clic droit) de chaque solution ou projet :
 
 ![Règles d’imbrication spécifiques à la solution et au projet](media/filenesting_solutionprojectspecific.png)
 

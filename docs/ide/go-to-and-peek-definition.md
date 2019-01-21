@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868902"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269837"
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
 
@@ -27,7 +27,7 @@ Les développeurs doivent souvent afficher les définitions du code source pour 
 
 ## <a name="go-to-definition"></a>Atteindre la définition
 
-La fonctionnalité **Atteindre la définition** accède à la source d’un type ou d’un membre, et ouvre le résultat dans un nouvel onglet. Si vous utilisez le clavier, placez le curseur texte dans le nom du symbole, puis appuyez sur **F12**. Si vous utilisez la souris, sélectionnez **Atteindre la définition** dans le menu contextuel, ou utilisez la fonctionnalité **Ctrl+clic** décrite dans la section suivante.
+La fonctionnalité **Atteindre la définition** accède à la source d’un type ou d’un membre, et ouvre le résultat dans un nouvel onglet. Si vous utilisez le clavier, placez le curseur texte dans le nom du symbole, puis appuyez sur **F12**. Si vous préférez utiliser la souris, sélectionnez **Atteindre la définition** dans le menu contextuel (clic droit) ou utilisez la fonctionnalité **Ctrl+clic** décrite dans la section suivante.
 
 ### <a name="ctrl-click-go-to-definition"></a>Atteindre la définition avec Ctrl+clic
 
@@ -41,7 +41,7 @@ Vous pouvez changer la touche de modification pour activer **Atteindre la défin
 
 ## <a name="peek-definition"></a>Aperçu de définition
 
-La fonctionnalité **Aperçu de la définition** vous permet d’afficher un aperçu de la définition d’un type sans avoir à quitter votre emplacement actuel dans l’éditeur. Si vous utilisez le clavier, placez le curseur texte dans le nom du type ou du membre, puis appuyez sur **Alt+F12**. Si vous utilisez la souris, sélectionnez **Aperçu de la définition** dans le menu contextuel. Visual Studio 2017 version 15.4 ou ultérieure offre aux utilisateurs de souris un nouveau moyen d’accéder à l’aperçu d’une définition. Accédez d’abord à **Outils** > **Options** > **Éditeur de texte** > **Général**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
+La fonctionnalité **Aperçu de la définition** vous permet d’afficher un aperçu de la définition d’un type sans avoir à quitter votre emplacement actuel dans l’éditeur. Si vous utilisez le clavier, placez le curseur texte dans le nom du type ou du membre, puis appuyez sur **Alt+F12**. Si vous préférez utiliser la souris, sélectionnez **Aperçu de la définition** dans le menu contextuel (clic droit). Visual Studio 2017 version 15.4 ou ultérieure offre aux utilisateurs de souris un nouveau moyen d’accéder à l’aperçu d’une définition. Accédez d’abord à **Outils** > **Options** > **Éditeur de texte** > **Général**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
 
 ![Activation de l’option Aperçu de la définition avec un clic de souris](../ide/media/editor_options_peek_view.png)
 

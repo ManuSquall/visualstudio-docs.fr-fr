@@ -1,18 +1,18 @@
 ---
-title: ProjectConfig, commutateur DevEnv
-ms.date: 11/04/2016
+title: -ProjectConfig (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /projectconfig Devenv switch
+- /ProjectConfig Devenv switch
 - configurations, rebuilding
 - deployment projects, creating
 - configurations, cleaning
 - deployment projects, specifying
 - deployment projects, adding
 - build configurations, specifying
-- Devenv, /projectconfig switch
-- projectconfig Devenv switch (/projectconfig)
+- Devenv, /ProjectConfig switch
+- ProjectConfig Devenv switch (/ProjectConfig)
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
@@ -21,50 +21,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a199fb7656e36720a6787557e2e0746b79795fd3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967915"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269928"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
-Spécifie une configuration de build de projet à appliquer quand vous générez, nettoyez, regénérez ou déployez le projet nommé dans l’argument **/project**.
+Spécifie une configuration de build de projet à appliquer quand vous générez, nettoyez, régénérez ou déployez le projet nommé dans l’argument `/Project`.
 
 ## <a name="syntax"></a>Syntaxe
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Arguments
 
-|||
-|-|-|
-|/build|Génère le projet spécifié par l’argument **/project**.|
-|/clean|Nettoie tous les fichiers intermédiaires et répertoires de sortie créés pendant une génération.|
-|/rebuild|Nettoie, puis génère le projet spécifié par l’argument **/project**.|
-|/deploy|Spécifie que le projet doit être déployé après une génération ou une régénération.|
-|*SolnConfigName*|Obligatoire. Nom de la configuration de solution à appliquer à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
-|*SolutionName*|Obligatoire. Chemin complet et nom du fichier solution.|
-|/project *ProjName*|Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
-|/projectconfig *ProjConfigName*|Optionnel. Nom d’une configuration de build de projet à appliquer au projet spécifié par l’argument **/project**. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
+- *SolutionName*
+
+  Obligatoire. Chemin complet et nom du fichier solution.
+
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
+
+  Obligatoire. [Génère](build-devenv-exe.md), [nettoie](clean-devenv-exe.md), [déploie](deploy-devenv-exe.md) ou [regénère](rebuild-devenv-exe.md) le projet.
+
+- *SolnConfigName*
+
+  Optionnel. Nom de la configuration de solution (par exemple, `Debug` ou `Release`) à appliquer à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
+
+- `/Project` *ProjName*
+
+  Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Optionnel. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) appliquée au `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`).
+
+- `/Out` *OutputFilename*
+
+  Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
 ## <a name="remarks"></a>Notes
 
-Vous devez utiliser le commutateur **/projectconfig** avec le commutateur **/project** dans une commande **/build**, **/clean**, **/rebuild** ou **/deploy**.
+Le commutateur `/ProjectConfig` doit être utilisé avec le commutateur `/Project` dans une commande `/Build`, /`Clean`, `/Deploy` ou `/Rebuild`.
 
 Placez les chaînes contenant des espaces entre des guillemets doubles.
 
-Vous pouvez afficher les informations récapitulatives des builds, notamment les erreurs, dans la fenêtre Commande ou dans un fichier journal spécifié à l’aide du commutateur **/out**.
+Il est possible d’afficher une synthèse des informations de build, erreurs incluses, dans la fenêtre Commande et dans tous les fichiers journaux spécifiés avec le commutateur `/Out`.
 
 ## <a name="example"></a>Exemple
 
-La commande suivante permet de générer le projet « CSharpConsoleApp », à l’aide de la configuration de build de projet « Debug » dans la configuration de solution « Debug » de « MySolution » :
+La commande suivante génère le projet `CSharpWinApp` suivant la configuration de build de projet `Debug` présente dans `MySolution` :
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Voir aussi

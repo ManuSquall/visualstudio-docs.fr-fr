@@ -1,5 +1,5 @@
 ---
-title: Données Intellitrace
+title: Données IntelliTrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952996"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154361"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procédure : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
 
@@ -61,7 +61,7 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
      Ce proxy vous permet de collecter des informations sur les appels http d’un client à un serveur web pour les adaptateurs de données de diagnostic d’impact de test et IntelliTrace.
 
     > [!WARNING]
-    > Si vous décidez d'utiliser un compte personnalisé pour l'identité utilisée pour le pool d'applications sur Internet Information Server (IIS) où vous envisagez de collecter des données Intellitrace, vous devez créer le profil utilisateur local sur l'ordinateur IIS pour le compte personnalisé utilisé. Vous pouvez créer le profil local pour le compte personnalisé en vous ouvrant localement une session sur l'ordinateur IIS ou en exécutant la ligne de commande suivante à l'aide des informations d'identification du compte personnalisé :
+    > Si vous décidez d’utiliser un compte personnalisé pour l’identité utilisée pour le pool d’applications sur le serveur IIS (Internet Information Services) où vous envisagez de collecter des données IntelliTrace, vous devez créer le profil d’utilisateur local sur l’ordinateur IIS pour le compte personnalisé utilisé. Vous pouvez créer le profil local pour le compte personnalisé en vous ouvrant localement une session sur l'ordinateur IIS ou en exécutant la ligne de commande suivante à l'aide des informations d'identification du compte personnalisé :
     >
     > **runas /user:domain\name /profile cmd.exe**
 

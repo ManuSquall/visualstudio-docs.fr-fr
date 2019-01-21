@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921336"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269850"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 
@@ -40,13 +40,13 @@ Vous pouvez utiliser les méthodes suivantes pour accéder à des références d
 
 - Appuyez sur **F8** pour accéder à la référence suivante, ou sur **Maj+F8** pour accéder à la référence précédente.
 - Appuyez sur la touche **Entrée** sur une référence ou double-cliquez sur la référence pour y accéder dans le code.
-- Dans le menu contextuel d’une référence, choisissez les commandes **Aller à l’emplacement précédent** ou**Aller à l’emplacement suivant**.
+- Dans le menu contextuel (clic droit) d’une référence, choisissez les commandes **Accéder à l’emplacement précédent** ou **Accéder à l’emplacement suivant**.
 - Choisissez les flèches **Haut** et **Bas** (si elles sont activées dans la boîte de dialogue **Options**). Pour activer cette fonctionnalité, dans la barre de menus, choisissez **Outils** > **Options** > **Environnement** > **Onglets et fenêtres** > **Onglet d’aperçu**, puis cochez les cases **Autoriser l’ouverture des nouveaux fichiers dans l’onglet d’aperçu** et **Afficher les fichiers sélectionnés dans Rechercher les résultats**.
 
 ## <a name="change-reference-groupings"></a>Changer les regroupements de références
 Par défaut, les références sont regroupées par projet, puis par définition. Toutefois, vous pouvez changer cet ordre de regroupement en changeant le paramètre défini dans la zone de liste déroulante **Grouper par :** de la barre d’outils. Par exemple, vous pouvez changer l’ordre du paramètre par défaut **Projet, puis définition** en **Définition, puis projet**, ainsi que par d’autres paramètres.
 
-**Définition** et **Projet** sont les deux regroupements par défaut utilisés, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.
+**Définition** et **Projet** sont les deux regroupements utilisés par défaut, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel (clic droit) de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.
 
 ## <a name="see-also"></a>Voir aussi
 

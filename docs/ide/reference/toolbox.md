@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918610"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269993"
 ---
 # <a name="toolbox"></a>Boîte à outils
 
@@ -40,7 +40,7 @@ La version .NET Framework que cible votre projet détermine également les contr
 
 Par défaut, **Boîte à outils** est réduite le long du côté gauche de l’IDE de Visual Studio et apparaît quand le curseur se trouve au-dessus d’elle. Vous pouvez épingler **Boîte à outils** (en cliquant sur l’icône **Épingler** dans la barre d’outils de Boîte à outils) afin que l’application demeure ouverte quand vous déplacez le curseur. Vous pouvez également annuler l’ancrage de la fenêtre **Boîte à outils** et la faire glisser n’importe où à l’écran. Vous pouvez masquer **Boîte à outils**, l’ancrer et annuler son ancrage ; pour ce faire, cliquez avec le bouton droit sur la barre d’outils de Boîte à outils, puis sélectionnez l’option concernée.
 
-Vous pouvez réorganiser les éléments d’un onglet de **Boîte à outils** ou ajouter des onglets et des éléments personnalisés à l’aide des commandes suivantes du menu contextuel :
+Vous pouvez réorganiser les éléments d’un onglet de **Boîte à outils** ou ajouter des onglets et des éléments personnalisés avec les commandes suivantes du menu contextuel (clic droit) :
 
 - **Renommer un élément** : renomme l’élément sélectionné.
 
