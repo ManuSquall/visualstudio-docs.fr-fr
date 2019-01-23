@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869659"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403965"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -77,7 +77,8 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--help, --?, -h, -?` | Permet d’afficher une version hors connexion de cette page. |
 | `--config <path>` | **Facultatif** et **nouveautés de la version 15.9** : Pendant une opération d’installation ou de modification, cette option détermine les charges de travail et composants à ajouter en fonction d’un fichier de configuration d’installation déjà enregistré. Cette opération étant additive, elle ne supprime aucune charge de travail ou composant ne figurant pas dans le fichier. De plus, les éléments qui ne s’appliquent pas au produit ne sont pas ajoutés. Pendant une opération d’exportation, cette option détermine l’emplacement auquel enregistrer le fichier de configuration d’installation. |
 
-> Remarque : Lorsque vous spécifiez plusieurs charges de travail et plusieurs composants, vous devez répéter le commutateur de ligne de commande `--add` ou `--remove` pour chaque élément.
+> [!IMPORTANT]
+> Lorsque vous spécifiez plusieurs charges de travail et plusieurs composants, vous devez répéter le commutateur de ligne de commande `--add` ou `--remove` pour chaque élément.
 
 | **Options de disposition** | **Description** |
 | ----------------------- | --------------- |

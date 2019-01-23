@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898684"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345602"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 Les éléments MSBuild sont des entrées du système de génération qui représentent généralement des fichiers (spécifiés dans l’attribut `Include`). Les éléments sont regroupés en différents types selon leurs noms d’élément. Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération.  
@@ -79,7 +79,7 @@ L’élément suivant permet de sélectionner tous les fichiers `.vb` sur le lec
 
 Si vous souhaitez inclure des caractères `*` ou `?` littéraux dans un élément sans le développement des caractères génériques, vous devez utiliser des [caractères génériques d’échappement](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Pour plus d’informations sur les caractères génériques, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
+Pour plus d’informations sur les caractères génériques, consultez [Guide pratique pour Sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
 
 ##  <a name="use-the-exclude-attribute"></a>Utiliser l’attribut Exclude  
  Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers *.cs* du répertoire au type d’élément CSFile, à l’exception du fichier *DoNotBuild.cs*.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
+ [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)   
  [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Guide pratique pour afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Définitions d’éléments](../msbuild/item-definitions.md)   
- [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
- [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Traitement par lots](../msbuild/msbuild-batching.md)

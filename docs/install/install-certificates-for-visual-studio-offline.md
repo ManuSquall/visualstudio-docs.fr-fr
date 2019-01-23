@@ -1,7 +1,7 @@
 ---
 title: Installer les certificats nécessaires à une installation hors connexion
 description: Découvrez comment installer des certificats pour une installation hors connexion de Visual Studio.
-ms.date: 08/30/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd5e55d4f92c38c58aa7207f7770e7123b2127d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b804620ead343723dfafa5ebb108ccf4b51b1571
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948587"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380167"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
@@ -65,11 +65,11 @@ Si vous écrivez un script du déploiement de Visual Studio dans un environnemen
    **Mise à jour** : Pour Visual Studio 2017 version 15.8 Preview 2 ou version ultérieure, créez le fichier de commandes avec les commandes suivantes :
 
    ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
 3. Déployez le fichier de commandes sur le client. Cette commande doit être exécutée à partir d’un processus avec élévation de privilèges.

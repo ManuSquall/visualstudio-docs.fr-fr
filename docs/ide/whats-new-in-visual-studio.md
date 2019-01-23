@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881021"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380096"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
 **Mis à jour pour la [version 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? Visual Studio 2017 peut vous apporter : Une productivité inégalée pour l’ensemble des développements, applications et plateformes. Utilisez Visual Studio 2017 afin de développer des applications pour Android, iOS, Windows, le web et le Cloud. Écrivez votre code rapidement, déboguez et diagnostiquez facilement, testez souvent et publiez en toute confiance. Vous pouvez également étendre et personnaliser Visual Studio en créant vos propres extensions. Avec cette version, utilisez la gestion de versions, soyez agile et collaborez efficacement !
+
+>[!div class="button"]
+>[Télécharger Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Voici un récapitulatif général des changements par rapport à la version antérieure, Visual Studio 2015 :
 
@@ -50,11 +53,9 @@ Voici des informations détaillées sur quelques-unes des nouvelles fonctionnali
 
 ### <a name="a-new-setup-experience"></a>Une nouvelle expérience d'installation
 
-[Télécharger Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Vérifier la configuration système requise pour Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
+Visual Studio simplifie et accélère l’installation des fonctionnalités dont vous avez besoin, quand vous en avez besoin. Une désinstallation « propre » est également disponible.
 
- Visual Studio simplifie et accélère l’installation des fonctionnalités dont vous avez besoin, quand vous en avez besoin. Une désinstallation « propre » est également disponible.
-
- Le changement le plus important à constater lors de l’installation de Visual Studio est la nouvelle expérience proposée. Dans l’onglet **Charges de travail**, les options d’installation sont regroupées pour représenter les plateformes, les langages et les frameworks courants. Il couvre tout depuis le développement .NET Desktop au développement d’applications sur Windows, Linux et iOS.
+Le changement le plus important à constater lors de l’installation de Visual Studio est la nouvelle expérience proposée. Dans l’onglet **Charges de travail**, les options d’installation sont regroupées pour représenter les plateformes, les langages et les frameworks courants. Il couvre tout depuis le développement .NET Desktop au développement d’applications sur Windows, Linux et iOS.
 
 Choisissez les charges de travail dont vous avez besoin et modifiez-les quand vous le souhaitez.
 
