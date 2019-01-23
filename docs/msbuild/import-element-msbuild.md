@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd8cdf4b97285b1c0793bb3e80ec85def432bdb4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900871"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348748"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 Importe le contenu d’un fichier projet dans un autre fichier projet.  
@@ -71,10 +71,6 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 
  Le schéma d’un projet importé est identique à celui d’un projet standard. Bien que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puisse générer un projet importé, cela est peu probable, car un projet importé ne contient généralement pas d’informations sur les propriétés à définir ou sur l’ordre dans lequel exécuter les cibles. Le projet importé dépend du projet dans lequel il est importé pour fournir ces informations.  
 
-> [!NOTE]
->  Bien que les instructions d’importation conditionnelle fonctionnent sur les lignes de commande MSBuilds, elles ne fonctionnent pas avec MSBuild dans l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Les importations conditionnelles sont évaluées en utilisant les valeurs de configuration et de plateforme définies lors du chargement du projet. Si des modifications apportées par la suite nécessitent une réévaluation des conditions dans le fichier projet, par exemple la modification de la plateforme, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] réévalue les conditions sur les propriétés et les éléments, mais pas sur les importations. La condition d’importation n’étant pas réévaluée, l’importation est ignorée.  
-> 
->  Pour contourner ce problème, placez les importations conditionnelles dans les fichiers *.targets*, ou placez le code dans un bloc conditionnel comme un bloc [d’élément Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
 
 ## <a name="wildcards"></a>Caractères génériques  
  Dans le .NET Framework 4, MSBuild autorise les caractères génériques dans l’attribut de projet. Quand il existe des caractères génériques, toutes les correspondances trouvées sont triées (à des fins de reproductibilité), puis elles sont importées dans cet ordre comme si celui-ci avait été défini explicitement.  

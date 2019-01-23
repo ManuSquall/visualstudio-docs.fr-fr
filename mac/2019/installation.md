@@ -6,12 +6,13 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: acd8f3bc4f5fefa0a0c8b273856579067fb33c6a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 17acdd63b5632cf141cc5407ce8e09be3e3a69a0
+ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315897"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443778"
 ---
 # <a name="install-visual-studio-2019-for-mac-preview"></a>Installer la préversion de Visual Studio 2019 pour Mac
 
@@ -90,6 +91,10 @@ L’installation de Visual Studio pour Mac vous permet de commencer à écrire d
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Applications web .NET Core et ASP.NET Core, développement de jeux Unity
 
 Pour les autres charges de travail, reportez-vous à la page [charges de travail](/visualstudio/mac/workloads).
+
+## <a name="related-video"></a>Vidéo associée
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967425"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398284"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -26,9 +26,6 @@ Dans cette présentation de l’éditeur de code de Visual Studio, nous allons d
 > Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement. Selon le type de développement d’applications que vous exécutez, vous devrez peut-être installer la **charge de travail de développement Node.js** avec Visual Studio.
 
 Cet article part du principe que vous connaissez déjà le développement JavaScript. Si ce n’est pas le cas, nous vous suggérons de consulter un tutoriel comme [Créer une application Node.js et Express](../javascript/tutorial-nodejs.md) pour commencer.
-
-> [!TIP]
-> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres JavaScript pour Visual Studio. Pour plus d’informations sur la sélection des paramètres pour l’environnement de développement intégré (IDE), consultez [Paramètres d’environnement](../ide/environment-settings.md). Lorsque vous importez des paramètres, importez les paramètres **JavaScript**.
 
 ## <a name="add-a-new-project-file"></a>Ajouter un nouveau fichier de projet
 
@@ -96,7 +93,7 @@ Cliquez avec le bouton droit sur `render`, puis choisissez **Aperçu de la défi
 
    ![Fenêtre Aperçu de la définition](../javascript/media/write-code-peek-definition.png)
 
-1. Fermez la fenêtre Aperçu de la définition en choisissant la petite case avec un « x » dans le coin supérieur droit de la fenêtre indépendante.
+Fermez la fenêtre Aperçu de la définition en choisissant la petite case avec un « x » dans le coin supérieur droit de la fenêtre indépendante.
 
 ## <a name="use-code-snippets"></a>Utiliser des extraits de code
 
