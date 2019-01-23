@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960837"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417926"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Créer une carte visuelle de la pile des appels pendant le débogage 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Créer une carte visuelle de la pile des appels pendant le débogage (C#, Visual Basic, C++, JavaScript)
 
 Créez une carte de code pour effectuer un suivi visuel de la pile des appels pendant le débogage. Vous pouvez rédiger des notes sur la carte pour effectuer le suivi de ce que fait le code afin de vous concentrer sur la recherche de bogues.
 
@@ -53,7 +53,7 @@ Voici un rapide coup de œil à une carte de code :
 
 ##  <a name="MapStack"></a> Mapper la pile des appels
 
-1. Dans Visual Studio Enterprise C#, Visual Basic, C++, JavaScript ou X ++ project, démarrez le débogage en sélectionnant **déboguer** > **démarrer le débogage** ou en appuyant sur **F5**.
+1. Dans Visual Studio Enterprise C#, Visual Basic, C++ ou JavaScript du projet, démarrez le débogage en sélectionnant **déboguer** > **démarrer le débogage** ou en appuyant sur **F5**.
    
 1. Une fois votre application passe en mode arrêt ou que vous parcourez une fonction, sélectionnez **déboguer** > **carte de Code**, ou appuyez sur **Ctrl**+**MAJ** +**`**.
 
