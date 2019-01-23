@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: a4e7ebc12419567fb5a5fe8499fb33cbb0d63d9e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348683"
----
 # [Référence d’interfaces de script Windows](windows-script-interfaces-reference.md)
 ## [Interfaces de script actives](active-script-interfaces.md)
 ### [Constantes de script actives, énumérations et codes d’erreur](active-script-constants-enumerations-and-error-codes.md)
