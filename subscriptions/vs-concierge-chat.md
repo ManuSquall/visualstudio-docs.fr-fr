@@ -9,12 +9,12 @@ description: Découvrez l’avantage Concierge Chat inclus dans les abonnements 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740232"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379999"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -49,7 +49,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 | Visual Studio Dev Essentials | NA  | Non disponible |N/A |
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut :  FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), Imagine.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut :  FTE, MVP (Most Valuable Professional), RD (Regional Director), MPN (Microsoft Partner Network), Imagine.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
