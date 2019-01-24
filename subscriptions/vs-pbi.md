@@ -9,12 +9,12 @@ description: Découvrez l’abonnement Power BI Pro inclus dans certains abonne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315499"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380181"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -83,7 +83,7 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 | Visual Studio Dev Essentials | NA  | Non disponible |NA|
 | Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Microsoft Valued Professional), RD (Region Director).  Exclut :  MPN (Microsoft Partner Network), FTE, Imagine.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Most Valuable Professional), RD (Regional Director).  Exclut :  MPN (Microsoft Partner Network), FTE, Imagine.*
 
 > [!NOTE]
 > Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.

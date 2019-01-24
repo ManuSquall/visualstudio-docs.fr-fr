@@ -9,12 +9,12 @@ description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus d
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 4169036161e19092a78133207261f2fe434c1316
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154432"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380029"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -84,7 +84,7 @@ Cliquez sur le bouton vert **Installer** si vous utilisez Azure DevOps Services,
 | Visual Studio Dev Essentials | NA  | Non disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup>  *Inclut :  Microsoft Partner Network (Enterprise).  Exclut : autres NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (Region Director), MCT Software & Services, Microsoft Partner Network (Professional).*
+<sup>1</sup>  *Inclut :  Microsoft Partner Network (Enterprise).  Exclut : autres NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & Services, Microsoft Partner Network (Professional).*
 
 
 > [!NOTE]

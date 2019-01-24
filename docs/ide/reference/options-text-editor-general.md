@@ -1,40 +1,22 @@
 ---
 title: Options, Éditeur de texte, Général
-ms.date: 11/04/2016
+ms.date: 01/18/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -48,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871328"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417796"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
 
@@ -77,7 +59,17 @@ Quand l’éditeur de code est sélectionné, une ligne jaune verticale apparaî
 
 Par défaut, l’éditeur détecte l’encodage en recherchant les marques d’ordre d’octet ou les balises de jeu de caractères. Si l’éditeur de code ne trouve ni l’un ni l’autre dans le document actif, il tente de détecter automatiquement l’encodage UTF-8 en analysant les séquences d’octets. Pour désactiver la détection automatique de l’encodage, désactivez cette option.
 
-## <a name="display"></a>Affichage
+### <a name="follow-project-coding-conventions"></a>Suivre les conventions de codage du projet
+
+Quand cette option est sélectionnée, les conventions de codage spécifiées du projet remplacent toutes les conventions de codage que vous utilisez dans vos projets personnels.
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Activer le clic de souris pour exécuter Atteindre la définition
+
+Quand cette option est sélectionnée, vous pouvez appuyer sur **Ctrl** et pointer sur un élément tout en cliquant sur la souris. Cela vous permet d’atteindre la définition de l’élément sélectionné. Vous pouvez également choisir **Alt** ou **Ctrl** + **Alt** dans la liste déroulante **Utiliser la touche de modification**.
+
+Cochez la case **Ouvrir la définition dans l’aperçu** pour afficher la définition de l’élément dans une fenêtre sans être obligé de quitter votre emplacement actuel dans l’éditeur de code. 
+
+## <a name="display"></a>Afficher
 
 ### <a name="selection-margin"></a>Marge de sélection
 
@@ -94,6 +86,10 @@ Quand cette option est sélectionnée, une marge verticale s’affiche à l’ex
 ### <a name="highlight-current-line"></a>Mettre en surbrillance la ligne active
 
 Quand elle est sélectionnée, cette option affiche une zone grise autour de la ligne de code dans laquelle le curseur.
+
+### <a name="show-structure-guide-lines"></a>Afficher les lignes de repère de structure
+
+Quand cette option est sélectionnée, des lignes verticales alignées avec les blocs de code structurés sont affichées dans l’éditeur, ce qui vous permet d’identifier facilement les différents blocs de code.
 
 ## <a name="see-also"></a>Voir aussi
 

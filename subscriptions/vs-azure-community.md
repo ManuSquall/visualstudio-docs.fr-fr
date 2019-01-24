@@ -9,12 +9,12 @@ description: Découvrez l’avantage Azure Community inclus dans certains abonne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ab3b750395fc09b52cf1d6ab290e21cfdbb7d3d8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739377"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380340"
 ---
 # <a name="azure-community"></a>Communauté Azure
 
@@ -62,10 +62,10 @@ La disponibilité de l’avantage Azure Community dépend de votre niveau d’ab
 |                                     Visual Studio Dev Essentials                                      |        N/A        | Non disponible |     Non     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), Microsoft FTE, MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), Microsoft FTE, MVP (Most Valuable Professional), RD (Regional Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

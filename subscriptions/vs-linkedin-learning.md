@@ -9,12 +9,12 @@ description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonn
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739534"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380226"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -102,11 +102,11 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Visual Studio Dev Essentials | NA  | 3 mois |Non.  Disponible pour les nouveaux abonnés uniquement |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner).  Exclut :  MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (Region Director).  MCT Software & Services.*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner).  Exclut :  MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  MCT Software & Services.*
 
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

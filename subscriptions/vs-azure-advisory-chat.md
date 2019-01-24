@@ -9,12 +9,12 @@ description: Découvrez comment tirer parti de l’avantage Azure Advisory Chat 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2c70ddda4e65eb67c89539b16b0322c890f4060f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739411"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380046"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -46,10 +46,10 @@ L’utilisation d’Azure Advisory Chat est très simple.
 |                                                  Plateformes MSDN (Standard)                                                   |        Tous        | Non disponible |     Non     |
 |                                                 Visual Studio Dev Essentials                                                 |        N/A        | Non disponible |     Non     |
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), MVP (Microsoft Valued Professional), RD (Region Director), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT*
+<sup>1</sup>  *Inclut :  NFR (Revente interdite), MVP (Most Valuable Professional), RD (Regional Director), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

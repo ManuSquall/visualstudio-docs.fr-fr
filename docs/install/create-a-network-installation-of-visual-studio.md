@@ -1,7 +1,7 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966730"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349918"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Créer une installation réseau de Visual Studio 2017
 
@@ -30,7 +30,7 @@ En règle générale, un administrateur d’entreprise crée un point d’instal
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Télécharger le programme d’amorçage de Visual Studio
 
-**Téléchargez** l’édition de Visual Studio souhaitée. Veillez à cliquer sur **Enregistrer**, puis cliquez sur **Ouvrir le dossier**.
+Téléchargez l’édition de Visual Studio souhaitée. Veillez à cliquer sur **Enregistrer**, puis cliquez sur **Ouvrir le dossier**.
 
 L’exécutable de votre programme d’installation, ou pour être plus précis le fichier du programme d’amorçage, doit correspond à l’un de ceux mentionnés ici.
 
@@ -115,11 +115,15 @@ Si vous souhaitez passer d’une disposition existante à une disposition compl�
 
 Les administrateurs peuvent déployer Visual Studio sur les stations de travail clientes dans le cadre d’un script d’installation. Les utilisateurs qui disposent de droits d’administrateur peuvent aussi exécuter le programme d’installation directement à partir du partage pour installer Visual Studio sur leur ordinateur.
 
-- Les utilisateurs peuvent procéder à l’installation en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Les administrateurs peuvent procéder à l’installation en mode sans assistance en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Les utilisateurs peuvent procéder à l’installation en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe```
+* Les administrateurs peuvent procéder à l’installation en mode sans assistance en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> Pour éviter toute erreur, vérifiez que votre chemin d’installation complet fait moins de 80 caractères.
+>
 > [!TIP]
 > Quand elle est exécutée dans le cadre d’un fichier de commandes, l’option `--wait` garantit que le processus `vs_enterprise.exe` attend que l’installation soit terminée avant de retourner un code de sortie. C’est utile si un administrateur d’entreprise souhaite effectuer d’autres opérations sur une installation terminée (par exemple, pour [appliquer une clé de produit sur une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), alors qu’il doit attendre que l’installation se termine pour gérer le code de retour de cette installation.  Si vous n’utilisez pas `--wait`, le processus `vs_enterprise.exe` s’arrête avant que l’installation soit terminée et retourne un code de sortie incorrect qui ne représente pas l’état de l’opération d’installation.
+
 
 Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`.  Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
 

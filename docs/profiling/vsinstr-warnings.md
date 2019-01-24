@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888593"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417861"
 ---
 # <a name="vsinstr-warnings"></a>Avertissements VSInstr
 Le tableau suivant liste les avertissements émis par l’outil *VSInstr.exe*. Vous pouvez utiliser l’option NOWARN avec les numéros d’avertissement pour empêcher l’affichage de l’avertissement.  
   
 |Numéro d’avertissement|Description|  
 |--------------------|-----------------|  
+|**VSP1026**|La couverture n’est pas prise en charge sur les bibliothèques qui ne référencent pas MSCorLib. C’est souvent le cas pour les bibliothèques portables.|  
 |**VSP2000**|Erreur interne. Impossible d’obtenir le nom de fichier du module de cet exécutable.|  
 |**VSP2001**|\<nom_assembly> est un assembly à nom fort. Vous devrez le resigner avant de l’exécuter.<br /><br /> Cet avertissement se produit quand un assembly signé est instrumenté. Vous pouvez utiliser l’outil *sn.exe* pour resigner le fichier binaire ou pour désactiver temporairement l’exigence de nom fort. Pour plus d’informations, consultez [Sn.exe (outil Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Impossible de trouver la fonction \<nom_fonction> dans le fichier \<nom_fichier><br /><br /> Cet avertissement se produit si une fonction est introuvable dans le fichier spécifié.|  

@@ -9,12 +9,12 @@ description: Découvrez l’avantage Office 365 Développeur inclus dans votre 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739719"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379773"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Avantage de l’abonnement Office 365 Développeur dans les abonnements Visual Studio
 
@@ -75,7 +75,7 @@ Pour en savoir plus sur l’abonnement Office 365 Développeur, consultez le [Fo
 | Visual Studio Dev Essentials | NA  | Non disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Exclut :  MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Professional), RD (Region Director).*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Exclut :  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Regional Director).*
 
 
 > [!NOTE]

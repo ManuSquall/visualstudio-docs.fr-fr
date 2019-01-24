@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, Basic (VB), Avancé
-ms.date: 11/04/2016
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -19,19 +19,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871237"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398245"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Option, Éditeur de texte, Basic (Visual Basic), Avancé
-La page de propriétés **Spécifique à VB**, accessible via le menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
+La page de propriétés **Spécifique à VB**, accessible par le biais du menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
+
+## <a name="analysis"></a>Analyse
+
+- Activer l’analyse complète de la solution
+
+   Active l’analyse du code sur tous les fichiers dans la solution, pas simplement les fichiers de code ouverts. Pour plus d’informations, consultez [Analyse complète de la solution](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+## <a name="using-directives"></a>Directives Using
+
+- Placer les directives « System » en premier lors du tri des usings
+
+   Quand elle est sélectionnée, la commande **Supprimer et trier les instructions using** du menu contextuel trie les directives `using` et place les espaces de noms « System » en haut de la liste.
+   
+- Séparer les groupes de directives using
+
+   La commande **Supprimer et trier les instructions using** du menu contextuel sépare les directives `using` en insérant une ligne vide entre les groupes de directives qui ont le même espace de noms racine.
+   
+- Suggérer des usings pour les types dans les assemblys de référence 
+- Suggérer des usings pour les types dans les packages NuGet 
+
+   Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
+
+   ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
+  
+
+## <a name="highlighting"></a>Highlighting
 
  **Activer la mise en surbrillance des références et des mots clés**
 
 L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause, par exemple `If..Then`, `While...End While` ou `Try...Catch...Finally`. Vous pouvez naviguer entre les références ou les mots clés surlignés en appuyant sur **Ctrl** + **Maj** + **Flèche vers le bas** ou **Ctrl** + **Maj** + **Flèche vers le haut**.
+
+## <a name="outlining"></a>mode Plan
 
 **Activer le mode Plan**
 
@@ -47,7 +75,13 @@ L’éditeur de texte indique la portée visuelle des procédures. Une ligne est
 |Après un ensemble de constructions de lignes uniques|-   Après les instructions import, avant une définition de type dans un fichier de classe<br />-   Après les variables déclarées dans une classe, avant toute procédure|
 |Après les déclarations de lignes uniques (déclarations pas au niveau des blocs)|-   À la suite des instructions import et inherits, des déclarations de variables, des déclarations event et delegate, et des instructions declare de DLL|
 
- **Listing en mode Pretty (remise en forme) du code** L’éditeur de texte remet en forme votre code comme il convient. Quand cette option est sélectionnée, l’éditeur de code effectue les opérations suivantes :
+## <a name="block-structure-guides"></a>Repères de structure de bloc
+
+Cochez ces cases pour afficher des lignes verticales en pointillés entre accolades (**{}**) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
+
+## <a name="editor-help"></a>Aide de l'éditeur
+
+**Listing en mode Pretty (remise en forme) du code** L’éditeur de texte remet en forme votre code comme il convient. Quand cette option est sélectionnée, l’éditeur de code effectue les opérations suivantes :
 
 -   Aligner votre code sur la tabulation correcte
 
@@ -65,7 +99,7 @@ L’éditeur de texte indique la portée visuelle des procédures. Une ligne est
 
 **Insertion automatique des constructions de fin**
 
- Par exemple, quand vous tapez la première ligne d’une déclaration de procédure, `Sub Main—`, et que vous appuyez sur **Entrée**, l’éditeur de texte ajoute une ligne `End Sub` correspondante. De même, si vous ajoutez une boucle [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l’éditeur de texte ajoute une instruction `Next` correspondante. Quand cette option est sélectionnée, l’éditeur de code ajoute automatiquement la construction de fin.
+Par exemple, quand vous tapez la première ligne d’une déclaration de procédure, `Sub Main`, et que vous appuyez sur **Entrée**, l’éditeur de texte ajoute une ligne `End Sub` correspondante. De même, si vous ajoutez une boucle [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l’éditeur de texte ajoute une instruction `Next` correspondante. Quand cette option est sélectionnée, l’éditeur de code ajoute automatiquement la construction de fin.
 
 **Insertion automatique des membres Interface et MustOverride**
 

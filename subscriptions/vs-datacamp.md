@@ -9,12 +9,12 @@ description: Découvrez l’abonnement DataCamp Training inclus dans certains ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802145"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380400"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -79,11 +79,11 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 
 
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Microsoft Valued Professional), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Most Valuable Professional), RD (Regional Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. Il n’y aura aucune modification de l’expérience des clients et de leur capacité à renouveler, augmenter, diminuer ou annuler leurs abonnements existants. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
