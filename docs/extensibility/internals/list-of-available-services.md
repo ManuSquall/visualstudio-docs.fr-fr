@@ -11,20 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964635"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800954"
 ---
 # <a name="list-of-available-services"></a>Liste des services disponibles
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et le SDK Visual Studio prend en charge les services suivants. Certains packages offrent leurs propres services qui ne sont pas répertoriées ici, par exemple, les services de langage service ne sont pas un unique GUID. Vous devez utiliser le nom de la langue pour trouver le GUID du service de langage dans le Registre.  
-  
- Utiliser les GUID de service répertoriés ici ou obtenu à partir d’une autre source (par exemple, les services de langage) pour obtenir de l’interface principale ou des interfaces accompagnées de chaque service.  
-  
-## <a name="the-services"></a>Les Services  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et le SDK Visual Studio prend en charge les services suivants. Certains packages offrent leurs propres services qui ne sont pas répertoriées ici, par exemple, les services de langage service ne sont pas un unique GUID. Vous devez utiliser le nom de la langue pour trouver le GUID du service de langage dans le Registre.
+
+Utiliser les GUID de service répertoriés ici ou obtenu à partir d’une autre source (par exemple, les services de langage) pour obtenir de l’interface principale ou des interfaces accompagnées de chaque service.
+
+## <a name="the-services"></a>Les Services
+
 | Service | Interface | Visual Studio | Visual Studio 2005 | Description |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Oui | Oui | Utilisé par les VSPackages pour obtenir un <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface à partir d’un contrôle ActiveX pour faciliter les transferts de données asynchrones. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964635"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Oui | Oui | Permet à un VSPackage pour ajouter une URL à la liste la plus récemment utilisés (MRU) d’URL et pour obtenir une liste de toutes les URL dans la liste des derniers fichiers utilisés. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Oui | Oui | Permet à un VSPackage obtenir le frame de fenêtre dans lequel le package ou une partie du package peut être situé. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Oui | Oui | Fournit l’accès aux fichiers de documentation au format XML associés à un fichier de métadonnées particulier. |
-  
-## <a name="see-also"></a>Voir aussi  
- [COM et des Services gérés](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Utilisation et fourniture de services](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Voir aussi
+
+- [Utilisation et fourniture de services](../../extensibility/using-and-providing-services.md)

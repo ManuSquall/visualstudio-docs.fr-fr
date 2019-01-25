@@ -1,6 +1,6 @@
 ---
 title: Supprimer les avertissements d’analyse du code
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932872"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835056"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -66,17 +66,19 @@ Les propriétés de l’attribut incluent :
 
 - **MessageId** -identificateur Unique d’un problème pour chaque message.
 
-- **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Étendues prises en charge sont les suivantes :
+- **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Prise en charge [étendues](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluent les éléments suivants :
 
-    - Module
+   - `module`
 
-    - Espace de noms
+   - `resource`
 
-    - Ressource
+   - `type`
 
-    - Type
+   - `member`
 
-    - Membre
+   - `namespace` -Cette étendue supprime les avertissements par rapport à l’espace de noms. Il ne supprime pas les avertissements par rapport aux types dans l’espace de noms.
+
+   - `namespaceanddescendants` -(Nouveauté pour Visual Studio 2019) cette étendue supprime les avertissements dans un espace de noms et tous les symboles de ses descendants. Le `namespaceanddescendants` valeur est uniquement valide pour les analyseurs de Roslyn et est ignorée par binaire, en fonction de FxCop analyse statique.
 
 - **Cible** : un identificateur qui est utilisé pour spécifier la cible sur laquelle l’avertissement est supprimé. Il doit contenir un nom d’élément qualifié complet.
 
@@ -151,7 +153,7 @@ L’outil d’analyse du code managé examine `SuppressMessage` attributs qui so
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Lorsque vous supprimez un avertissement avec la portée espace de noms, il supprime l’avertissement par rapport à l’espace de noms. Il ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.
+> Lorsque vous supprimez un avertissement avec `namespace` étendue, il supprime l’avertissement par rapport à l’espace de noms. Il ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.
 
 Toute suppression peut être exprimée en spécifiant une portée explicite. Ces suppressions doivent exister au niveau global. Vous ne pouvez pas spécifier de suppression au niveau membre en décorant un type.
 
@@ -168,5 +170,6 @@ Le fichier de suppression globale conserve les suppressions qui sont des suppres
 
 ## <a name="see-also"></a>Voir aussi
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Utiliser les analyseurs Roslyn](../code-quality/use-roslyn-analyzers.md)
