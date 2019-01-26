@@ -15,15 +15,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a93923525ce1a3c1a3396963f05b2f0335a8f635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c3527070c1934c723b6038c93347f1a78ac948a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909188"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864876"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution
   Vous pouvez utiliser un complément VSTO pour personnaliser des documents Word et des classeurs Excel comme suit :  
@@ -41,7 +41,7 @@ ms.locfileid: "53909188"
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Générer des objets étendus dans les Compléments VSTO  
  Les*objets étendus* sont des instances des types fournis par le runtime Visual Studio Tools pour Office qui ajoutent des fonctionnalités aux objets qui existent en mode natif dans les modèles objet Word ou Excel (appelés *objets Office natifs*). Pour générer un objet étendu pour un objet Word ou Excel, utilisez la méthode `GetVstoObject`. La première fois que vous appelez le `GetVstoObject` l’objet de méthode pour un Word ou Excel spécifié, elle retourne un nouvel objet qui étend l’objet spécifié. Chaque fois que vous appelez la méthode et que vous spécifiez le même objet Word ou Excel, elle retourne le même objet étendu.  
   
- Le nom du type de l'objet étendu est identique à celui du type de l'objet Office natif, mais le type est défini dans l'espace de noms <xref:Microsoft.Office.Tools.Excel> ou <xref:Microsoft.Office.Tools.Word>. Par exemple, si vous appelez la méthode `GetVstoObject` pour étendre un objet <xref:Microsoft.Office.Interop.Word.Document>, la méthode retourne un objet <xref:Microsoft.Office.Tools.Word.Document>.  
+ Le nom du type de l'objet étendu est identique à celui du type de l'objet Office natif, mais le type est défini dans l'espace de noms <xref:Microsoft.Office.Tools.Excel> ou <xref:Microsoft.Office.Tools.Word> . Par exemple, si vous appelez la méthode `GetVstoObject` pour étendre un objet <xref:Microsoft.Office.Interop.Word.Document>, la méthode retourne un objet <xref:Microsoft.Office.Tools.Word.Document>.  
   
  Les méthodes `GetVstoObject` sont destinées à être utilisées principalement dans les projets de complément VSTO. Vous pouvez également les utiliser dans des projets de niveau document, mais elles se comportent différemment et ont moins d'utilisations.  
   

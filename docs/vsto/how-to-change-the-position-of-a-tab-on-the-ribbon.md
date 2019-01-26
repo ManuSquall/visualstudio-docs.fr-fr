@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a10e7d48bf44305285d13c3b20fa4c1854e2bb59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956509"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863784"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procédure : Modifier la position d’un onglet dans le ruban
   Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban à l’aide de la **éditeur de collections Tab**. Vous pouvez positionner les onglets personnalisés avant ou après un onglet prédéfini du ruban. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel.  

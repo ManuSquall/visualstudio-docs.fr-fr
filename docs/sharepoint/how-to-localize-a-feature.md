@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26eb3a1352228d48fb451e3a3520162cdea18b73
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887672"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867375"
 ---
 # <a name="how-to-localize-a-feature"></a>Procédure : Localiser une fonctionnalité
   Par défaut, les descriptions et les titres des fonctionnalités utilisent des valeurs de chaîne codées en dur. Pour localiser le titre de la fonctionnalité et la description, remplacez les chaînes avec des expressions qui référencent des ressources localisées.  

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
 - workbooks [Office development in Visual Studio], inserting data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aeba8355a4d7b9934f045a828efc251500d3e77c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 194ec4111d5cc4a34879377695667d97032402b9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947138"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875938"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procédure pas à pas : Insérer des données dans un classeur sur un serveur
   Cette procédure pas à pas montre comment insérer des données dans un jeu de données est mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -282,7 +282,7 @@ ms.locfileid: "53947138"
 
     -   *%USERPROFILE%\My Documents\AdventureWorksReport\bin\Debug* (pour Windows XP et versions antérieures)
 
-    -   *%USERPROFILE%\Documents\AdventureWorksReport\bin\Debug* (pour Windows Vista)
+    -   *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (for Windows Vista)
 
 3.  Vérifiez que le <xref:Microsoft.Office.Tools.Excel.ListObject> est rempli avec les données une fois que vous ouvrez le classeur.
 

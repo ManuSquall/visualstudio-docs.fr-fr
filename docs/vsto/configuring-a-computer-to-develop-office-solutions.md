@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47435fb5767b19ca36fc94387bdbefe3578f6325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e78b66e1d7e9520f4aa54d8bcee54803659f9f6f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955943"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863433"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurer un ordinateur pour développer des solutions Office
 
@@ -41,7 +41,7 @@ Si vous installez une version prise en charge de Visual Studio, le .NET Framewor
 
      Pour vous assurer que ces outils sont installés, démarrez le programme d’installation de Visual Studio, puis choisissez le **modifier** bouton. Cochez la case **Outils de développement Microsoft Office** , puis choisissez le bouton **Mettre à jour** .
 
-- Assurez-vous que vous n’exécutez pas une version d’Office qui a été remis par démarrer en un clic. Consultez [Guide pratique pour Vérifier si Outlook est une application démarrer en un clic sur un ordinateur](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
+- Assurez-vous que vous n’exécutez pas une version d’Office qui a été remis par démarrer en un clic. Voir [Guide pratique pour Vérifier si Outlook est une application démarrer en un clic sur un ordinateur](/previous-versions/office/developer/office-2010/ff864733(v=office.14)).
 
 - Assurez-vous que vous exécutez qu’une seule version de Microsoft Office.
 

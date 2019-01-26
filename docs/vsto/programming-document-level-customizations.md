@@ -22,17 +22,17 @@ helpviewer_keywords:
 - Sheet2 class
 - document-level customizations [Office development in Visual Studio], programming
 - application development [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9eb0243a99b1730a911c65aebdf1f7c2d763959e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866807"
 ---
 # <a name="program-document-level-customizations"></a>Programmer des personnalisations au niveau du document
   Quand vous étendez Microsoft Office Word ou Microsoft Office Excel à l’aide d’une personnalisation au niveau du document, vous pouvez effectuer les tâches suivantes :  
@@ -73,7 +73,7 @@ ms.locfileid: "53925444"
   La classe générée inclut des gestionnaires d’événements appelés quand le document est ouvert ou fermé. Pour exécuter du code à l’ouverture du document, ajoutez-le au gestionnaire d’événements `Startup` . Pour exécuter du code avant la fermeture du document, ajoutez-le au gestionnaire d’événements `Shutdown` . Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="understand-the-design-of-the-generated-classes"></a>Comprendre la conception des classes générées  
- Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], les types d’élément hôte dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sont des interfaces, donc les classes générées ne peuvent pas en dériver leur implémentation. Au lieu de cela, les classes générées dérivent la plupart de leurs membres des classes de base suivantes :  
+ Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], les types d’élément hôte dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sont des interfaces, donc les classes générées ne peuvent pas en dériver leur implémentation. Au lieu de cela, les classes générées dérivent la plupart de leurs membres des classes de base suivantes :  
   
 - `ThisDocument`: dérive de <xref:Microsoft.Office.Tools.Word.DocumentBase>.  
   

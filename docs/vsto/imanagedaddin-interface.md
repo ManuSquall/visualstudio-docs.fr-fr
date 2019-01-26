@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - IManagedAddin interface
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0e754502e3bee2a1e35dda7feb19bc4906f42e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03f1623a25f1c0299bc8895eb0c30a390e363791
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859053"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863342"
 ---
 # <a name="imanagedaddin-interface"></a>interface IManagedAddin
   Implémentez l’interface IManagedAddin pour créer un composant qui charge gérée des Compléments VSTO. Cette interface a été ajoutée dans la version 2007 de Microsoft Office System.  
@@ -56,7 +56,7 @@ interface IManagedAddin : IUnknown
   
 1. L’application découvre les compléments VSTO en recherchant des entrées sous la clé de Registre suivante :  
   
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nom_application >* \Addins\\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<application name>* \Addins\\**  
   
     Chaque entrée sous cette clé de Registre est un ID unique du complément VSTO. En règle générale, il s’agit du nom de l’assembly du complément VSTO.  
   

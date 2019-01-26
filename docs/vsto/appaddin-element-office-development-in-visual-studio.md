@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b53fcfaa28694b88f3401d0e2e40b157ba7c3201
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905437"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875990"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; élément (développement Office dans Visual Studio)
   Le **appAddin** élément de la `vstov4` espace de noms stocke des informations spécifiques à la personnalisation des Compléments VSTO.
@@ -44,8 +44,8 @@ ms.locfileid: "53905437"
 
 |Attribut|Description|
 |---------------|-----------------|
-|**Application**|Obligatoire. Identifie l’application Microsoft Office. Il peut avoir l’une des valeurs suivantes : Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|
-|**LoadBehavior**|Facultatif. Par défaut, le **loadBehavior** est activé en définissant cette valeur sur. Pour le débogage, vous pouvez désactiver le complément VSTO en définissant la valeur sur deux. Pour plus d’informations, consultez le tableau intitulé valeurs LoadBehavior dans [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**application**|Obligatoire. Identifie l’application Microsoft Office. Il peut avoir l’une des valeurs suivantes : Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|
+|**loadBehavior**|Facultatif. Par défaut, le **loadBehavior** est activé en définissant cette valeur sur. Pour le débogage, vous pouvez désactiver le complément VSTO en définissant la valeur sur deux. Pour plus d’informations, consultez le tableau intitulé valeurs LoadBehavior dans [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 |**keyName**|Obligatoire. Cette valeur est le nom de la clé de Registre que l’application utilise pour charger le complément VSTO. Pour plus d’informations, consultez [les entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  Le **appAddin** élément possède les éléments enfants suivants.

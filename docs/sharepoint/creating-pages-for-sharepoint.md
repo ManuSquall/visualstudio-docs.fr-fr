@@ -12,17 +12,17 @@ helpviewer_keywords:
 - master pages[SharePoint development in Visual Studio], designing
 - content pages[SharePoint development in Visual Studio], designing
 - page layouts[SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51903d1bf98a76a3ea3987af5330e8ce3c0d125e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859813"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864785"
 ---
 # <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, les pages de site, les pages maîtres et les mises en page pour un site SharePoint.  
