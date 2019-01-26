@@ -25,17 +25,17 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host items
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70e68a47d4685e3bba9e58fb225f2105f8bdabe4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: facf78a9c737dbaa0d3a48e93d8424d5288f683a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966023"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865461"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitations de programmation des éléments hôtes et contrôles hôtes
   Chaque élément hôte et contrôle hôte est conçu pour se comporter comme un objet Microsoft Office Word ou Microsoft Office Excel natif correspondant, avec des fonctionnalités supplémentaires. Toutefois, il existe des différences fondamentales entre le comportement des éléments hôtes ou contrôles hôtes, et celui des objets Office natifs au moment de l’exécution.  

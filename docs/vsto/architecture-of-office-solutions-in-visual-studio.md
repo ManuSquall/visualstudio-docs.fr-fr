@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], architecture
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc30775f99d5d786444c99900e93647eb4faa87f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837980"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863381"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architecture des solutions Office dans Visual Studio
   Les rubriques de cette section fournissent des informations sur le fonctionnement des solutions créées à l'aide des outils de développement Office dans Visual Studio.  
