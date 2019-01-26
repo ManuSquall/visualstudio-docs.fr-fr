@@ -515,11 +515,6 @@ items:
         - name: Débogage de serveurs et de conteneurs COM
           href: com-server-and-container-debugging.md
           items:
-          - name: Déboguer des serveurs COM
-            href: how-to-debug-com-servers.md
-            items:
-            - name: applications serveur SDI
-              href: sdi-server-applications.md
           - name: Déboguer des clients et des serveurs COM à l’aide du débogage RPC
             href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
         - name: Déboguer un contrôle ActiveX
@@ -840,9 +835,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8b5579f74964cb645fd21ba04ce0e8708a1517e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947476"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417939"
