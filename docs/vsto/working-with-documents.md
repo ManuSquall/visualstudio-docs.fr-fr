@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, common tasks
 - documents [Office development in Visual Studio], common tasks
 - Word [Office development in Visual Studio], document common tasks
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14ad92911d8a9d6c76b5dd2cff688c4b2a52e1d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b6f686f11989a6c57921fa0b169cbdbf3746fe4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854891"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874833"
 ---
 # <a name="work-with-documents"></a>Utiliser des documents
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour l'utilisation du modèle objet de Microsoft Office Word avec des documents dans des projets Office.  

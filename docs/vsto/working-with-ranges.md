@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, ranges
 - ranges, common tasks
 - workbooks, ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985235b593deef56e74e5bb73604cb7ac366541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 22de14631f530ccf1f1fe04b0bb91d06c98a5044
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961671"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872753"
 ---
 # <a name="work-with-ranges"></a>Travailler avec des plages
   Les classes <xref:Microsoft.Office.Tools.Excel.NamedRange> et <xref:Microsoft.Office.Interop.Excel.Range> contiennent les méthodes et les propriétés utilisées pour effectuer des tâches avec les plages.  

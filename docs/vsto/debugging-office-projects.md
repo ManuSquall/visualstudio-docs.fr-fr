@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958395"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867960"
 ---
 # <a name="debug-office-projects"></a>Déboguez des projets Office
   Vous pouvez déboguer des projets Office à l'aide des mêmes outils Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que ceux que vous utilisez pour d'autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Les fonctionnalités du débogueur[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] telles que la capacité d'insérer des points d'arrêt et d'afficher des variables dans la fenêtre **Variables locales** , sont également disponibles lorsque vous déboguez des projets Office. Pour plus d’informations sur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] outils de débogage, consultez [déboguer dans Visual Studio](../debugger/debugging-in-visual-studio.md).

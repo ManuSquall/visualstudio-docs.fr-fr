@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : La mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option'
+title: 'Procédure pas à pas : Mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae451b42642cd3c124b3fe9d5df627c2306a2020
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891934"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873871"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : La mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : Mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases d’option sur une feuille de calcul Microsoft Office Excel pour donner à l’utilisateur permet de basculer rapidement entre les options. Dans ce cas, les options changent le style d’un graphique.  
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +57,7 @@ ms.locfileid: "53891934"
 
 4. Ajoutez les données suivantes pour **les données de graphique** cellule A4 étant l’angle supérieur gauche supérieur et E8 le coin inférieur droit.  
 
-   ||Q1|2E TRIMESTRE|Q3|Q4|  
+   ||Q1|Q2|Q3|Q4|  
    |-|--------|--------|--------|--------|  
    |Ouest des États-Unis|500|550|550|600|  
    |Est des États-Unis|600|625|675|700|  

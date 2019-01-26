@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989372"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875456"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procédure : Marquer des contrôles comme des contrôles sécurisés
   Pour la sécurité, SharePoint fait la distinction entre les contrôles Web qui sont protégés contre l’injection de script et des contrôles Web qui ne sont pas. Protégé par des contrôles, ou *contrôles sécurisés*, sont accessibles aux utilisateurs non approuvés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez  
@@ -89,7 +89,7 @@ ms.locfileid: "53989372"
     |-------------------|-----------|  
     |Espace de noms|L’espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
     |Nom de type|Button1|  
-    |Nom de l'assembly|Un assembly fort nom, tel que : Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nom de l'assembly|Un assembly fort nom, tel que : Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Effacer la **Safe** case à cocher.|  
     |Protégé contre les scripts|Laissez le **protégé contre les scripts** case à cocher désactivée.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "53989372"
     |-------------------|-----------|  
     |Espace de noms|L’espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
     |Nom de type|TextBox1|  
-    |Nom de l'assembly|Un assembly fort nom, tel que : Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nom de l'assembly|Un assembly fort nom, tel que : Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Safe|Sélectionnez le **Safe** case à cocher.|  
     |Protégé contre les scripts|Sélectionnez le **protégé contre les scripts** case à cocher.|  
   

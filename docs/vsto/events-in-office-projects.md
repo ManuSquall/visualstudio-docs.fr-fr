@@ -29,15 +29,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62007fc37efb6659e156c5d99d49076c59bfdca8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868415"
 ---
 # <a name="events-in-office-projects"></a>Événements dans les projets Office
   Chaque modèle de projet Office génère automatiquement plusieurs gestionnaires d'événements. Les gestionnaires d’événements pour les personnalisations au niveau du document sont légèrement différents de ceux pour les compléments VSTO.  
@@ -143,7 +143,7 @@ ms.locfileid: "53929876"
  L'événement <xref:Microsoft.Office.Tools.AddInBase.Shutdown> est déclenché quand le domaine d'application dans lequel votre code est chargé est sur le point d'être déchargé. Cet événement est géré par la méthode `ThisAddIn_Shutdown` dans le fichier de code généré. Ce gestionnaire d’événements est le dernier code utilisateur à être exécuté quand le complément VSTO est déchargé.  
   
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Événement Shutdown dans les Compléments VSTO Outlook  
- L’événement <xref:Microsoft.Office.Tools.AddInBase.Shutdown> est déclenché uniquement quand l’utilisateur désactive le complément VSTO à l’aide de la boîte de dialogue Compléments COM dans Outlook. Il n'est pas déclenché quand vous quittez Outlook. Si vous disposez de code devant être exécuté quand vous quittez Outlook, gérez l'un ou l'autre des événements suivants :  
+ L’événement <xref:Microsoft.Office.Tools.AddInBase.Shutdown> est déclenché uniquement quand l’utilisateur désactive le complément VSTO à l’aide de la boîte de dialogue Compléments COM dans Outlook. Il n'est pas déclenché quand vous quittez Outlook. Si vous disposez de code devant être exécuté quand vous quittez Outlook, gérez l'un ou l'autre des événements suivants :  
   
 -   Événement <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> de l'objet <xref:Microsoft.Office.Interop.Outlook.Application>  
   

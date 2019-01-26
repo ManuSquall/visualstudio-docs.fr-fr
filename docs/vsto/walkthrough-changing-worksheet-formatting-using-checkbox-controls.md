@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935097"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871024"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : Modifier la mise en forme de feuille de calcul à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases à cocher sur une feuille de calcul Microsoft Office Excel pour modifier la mise en forme. Vous allez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  

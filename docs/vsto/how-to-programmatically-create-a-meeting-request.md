@@ -11,15 +11,15 @@ helpviewer_keywords:
 - calendars [Office development in Visual Studio], meeting requests
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 339c4c5de89d6ad3000fe721888e292902ddff1c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 098e559e0d856ba8c9b096f452a85fc46d7058ce
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088554"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869029"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>Procédure : Créer par programmation une demande de réunion
   Cet exemple crée une demande de réunion dans Microsoft Office Outlook, et l’envoie au participant nécessaire.  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964648"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868272"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Données mises en cache dans les personnalisations au niveau du document
   Des principaux objectifs des personnalisations au niveau du document sont de séparer les données à partir de la vue dans les documents Office. Les données font référence aux informations stockées dans le document, y compris des nombres et du texte. Vue fait référence à l’interface utilisateur et le modèle objet de Microsoft Office Word et Microsoft Office Excel.  
@@ -56,7 +56,7 @@ ms.locfileid: "53964648"
   
 ||Cache de données|Parties XML personnalisées|  
 |-|----------------|----------------------|  
-|Les applications Office peuvent les utiliser ?|Personnalisations au niveau du document pour les applications suivantes :<br /><br /> -Excel<br />-Word|Solutions au niveau du document et de niveau application pour les applications suivantes :<br /><br /> -Excel<br />-PowerPoint<br />-Word|  
+|Les applications Office peuvent les utiliser ?|Personnalisations au niveau du document pour les applications suivantes :<br /><br /> -   Excel<br />-   Word|Solutions au niveau du document et de niveau application pour les applications suivantes :<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|  
 |Les types de données peut stocker ?|Tout objet public de votre assembly de personnalisation qui répond à certaines exigences. Pour plus d’informations, consultez [mettre en Cache données](../vsto/caching-data.md).|Toutes les données XML.|  
 |Vous accédez aux données sans démarrer des applications Microsoft Office ?|Oui, à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fournie par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Oui, en utilisant des classes dans le <xref:System.IO.Packaging> espace de noms, ou à l’aide du SDK de Format Open XML.|  
   

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - ranges, excluding paragraph marks in Word
 - documents [Office development in Visual Studio], paragraph marks
 - paragraphs, controlling structure
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8dc8e41983e6dd4bef8b3f7ba550853e32addd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20227318063a2b9a2c7b64384d7c31b7fb956946
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847087"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872064"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Procédure : Par programmation exclure les marques de paragraphe lors de la création de plages
   Chaque fois que vous créez un objet <xref:Microsoft.Office.Interop.Word.Range> basé sur un paragraphe, tous les caractères non imprimables, comme les marques de paragraphe, sont inclus dans la plage. Vous pouvez insérer le texte d’un paragraphe source dans un paragraphe de destination. Si vous ne voulez pas fractionner le paragraphe de destination en paragraphes distincts, alors vous devez d’abord supprimer la marque de paragraphe du paragraphe source. De plus, dans la mesure où des informations de mise en forme sont stockées au sein de la marque de paragraphe, vous ne voulez peut-être pas l’inclure quand vous insérez la plage dans un paragraphe existant.  

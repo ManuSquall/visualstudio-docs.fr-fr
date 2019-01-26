@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Finder method
 - Business Data Connectivity service [SharePoint development in Visual Studio], get entities
 - BDC [SharePoint development in Visual Studio], Finder method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ae5b1dfca8a083f12aa05d96378c3df348766a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963451"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872883"
 ---
 # <a name="how-to-add-a-finder-method"></a>Procédure : Ajouter une méthode de recherche
   Pour activer le service de connectivité de données métiers (BDC) afficher une liste d’entités dans une liste ou un composant WebPart, vous devez créer un *Finder* (méthode). Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  

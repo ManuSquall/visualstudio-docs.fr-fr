@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10594bb52ca8bfad14acb162b46d86b3b80fdd31
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873676"
 ---
 # <a name="bookmark-control"></a>Bookmark (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est un signet qui possède un nom unique, qui expose des événements et qui peut être lié à des données. Vous pouvez utiliser le signet comme espace réservé pour marquer un élément ou un emplacement dans un document Microsoft Office Word. Le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> est une combinaison d’un objet <xref:Microsoft.Office.Interop.Word.Bookmark> et d’un objet <xref:Microsoft.Office.Interop.Word.Range> .
@@ -84,13 +84,13 @@ Le tableau suivant montre comment la phrase « Voici un exemple textuel. » est 
 |Signet1|Voici un exemple textuel.|
 |Signet2|exemple|
 
- Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.
+ Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.
 
 |Signet|Texte|
 |--------------|----------|
-|Deux signets séparés|[Voici un remplacement.]{}|
+|Deux signets séparés|[this is replacement.]{}|
 |Signet1|Voici un remplacement.|
-|Signet2|*\<vide >*|
+|Signet2|*\<empty>*|
 
 ## <a name="events"></a>Événements
 

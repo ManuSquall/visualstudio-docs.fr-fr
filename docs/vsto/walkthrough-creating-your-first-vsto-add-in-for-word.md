@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Word [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4ada075dc9f64fb7febc402cdbe690c7dbc9b9f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948970"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868324"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : Créer votre premier complément pour Word
   Cette première procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application, quels que soient les documents ouverts.  
@@ -33,7 +33,7 @@ ms.locfileid: "53948970"
   
 - Écriture d'un code qui utilise le modèle objet de Word pour ajouter du texte à un document quand il est enregistré  
   
-- Génération et exécution du projet à des fins de test  
+- Génération et exécution du projet pour le tester  
   
 - Nettoyage du projet terminé, pour que le complément VSTO ne s’exécute plus automatiquement sur votre ordinateur de développement  
   
@@ -91,7 +91,7 @@ ms.locfileid: "53948970"
   
    Pour modifier le document quand il est enregistré, les exemples de code précédents utilisent les objets suivants :  
   
--   Le champ `Application` de la classe `ThisAddIn`. Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Word.Application>, qui représente l'instance actuelle de Word.  
+-   Le champ `Application` de la classe `ThisAddIn` . Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Word.Application>, qui représente l'instance actuelle de Word.  
   
 -   Le paramètre `Doc` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Le paramètre `Doc` est un objet <xref:Microsoft.Office.Interop.Word.Document> qui représente le document enregistré. Pour plus d’informations, consultez [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md).  
   

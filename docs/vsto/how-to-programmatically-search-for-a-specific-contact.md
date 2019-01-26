@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
 - searching contacts
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93f3444745f3c7e6fdaf039cda5a8c95bb717eed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84621a8e31750b61ad2fdb06a6923454f6dc1ef7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902748"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873468"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procédure : Rechercher un contact spécifique par programmation
   Cet exemple recherche dans un dossier de contacts Outlook un contact spécifique par nom et prénom. L’exemple suppose qu’un contact nommé **John Evans** existe dans le dossier de contacts.  

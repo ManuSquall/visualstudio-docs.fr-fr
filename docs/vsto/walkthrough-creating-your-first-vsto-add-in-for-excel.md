@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Excel [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64d3512c8b3f2383b755e75bf62958dab9f82ae2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831886"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873312"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procédure pas à pas : Créer votre premier complément pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer un complément de niveau application pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les classeurs ouverts.  
@@ -82,13 +82,13 @@ ms.locfileid: "53831886"
     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2. Si vous utilisez C#, ajoutez le code requis suivant au gestionnaire d'événements `ThisAddIn_Startup`. Ce code permet de connecter le gestionnaire d'événements `Application_WorkbookBeforeSave` à l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> .  
+2. Si vous utilisez C#, ajoutez le code requis suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code permet de connecter le gestionnaire d'événements `Application_WorkbookBeforeSave` à l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> .  
   
     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
    Pour modifier le classeur quand il est enregistré, les exemples de code précédents utilisent les objets suivants :  
   
--   Le champ `Application` de la classe `ThisAddIn`. Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Excel.Application> qui représente l'instance actuelle d'Excel.  
+-   Le champ `Application` de la classe `ThisAddIn` . Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Excel.Application> qui représente l'instance actuelle d'Excel.  
   
 -   Le paramètre `Wb` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Le paramètre `Wb` est un objet <xref:Microsoft.Office.Interop.Excel.Workbook> qui représente le classeur enregistré. Pour plus d’informations, consultez [vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).  
   

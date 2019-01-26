@@ -10,15 +10,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 891b7fbbc4f2bf0fc0fa40fe983435a19978d081
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc0b8a8b22459c386d856c3992059f390f363aea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909058"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868977"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procédure : Ajouter des contrôles ListObject aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans les projets au niveau du document.  

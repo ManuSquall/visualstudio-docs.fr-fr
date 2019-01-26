@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, client object model
 - SharePoint commands [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b140a1dcadd86ed8d4c3634669ecf753ad84e25e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918886"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873598"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs
   Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le **connexions SharePoint** nœud **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  

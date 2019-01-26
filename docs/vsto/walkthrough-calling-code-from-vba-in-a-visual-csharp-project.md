@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd968d0c963ae4aa46872bf19e97f357361cf248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989028"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871310"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : Appeler du code à partir de VBA dans un visuel C# projet
   Cette procédure pas à pas montre comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Office Excel à partir du code VBA (Visual Basic pour Applications) du classeur. Cette procédure comporte trois étapes de base : l'ajout d'une méthode dans la classe d'élément hôte `Sheet1` , l'exposition de la méthode au code VBA dans le classeur, puis l'appel de la méthode à partir du code VBA dans le classeur.  
@@ -161,7 +161,7 @@ ms.locfileid: "53989028"
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Ajoutez la méthode suivante à la classe `Sheet1`. Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .  
+3.  Ajoutez la méthode suivante à la classe `Sheet1` . Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   

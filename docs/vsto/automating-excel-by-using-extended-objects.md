@@ -18,15 +18,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47b60628ccafe78c90782e6cebd4e1d52b3836c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b994206c1721c09f3b1729762ae589293dbae15
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938577"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872662"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatiser Excel à l’aide d’objets étendus
   Quand vous développez des solutions Excel dans Visual Studio, vous pouvez également utiliser les *éléments hôtes* et les *contrôles hôtes*dans vos solutions. Il s'agit d'objets qui étendent certains objets couramment utilisés dans le modèle objet Excel (autrement dit, le modèle objet exposé par l'assembly PIA (Primary Interop Assembly) pour Excel), par exemple les objets <xref:Microsoft.Office.Interop.Excel.Worksheet> et <xref:Microsoft.Office.Interop.Excel.Range> . Les objets étendus se comportent comme les objets Excel dont ils dépendent. Toutefois, ils ajoutent des fonctionnalités supplémentaires telles que de nouveaux événements et la liaison de données aux objets.  
@@ -59,7 +59,7 @@ ms.locfileid: "53938577"
   
 -   [NamedRange (contrôle)](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange, contrôle](../vsto/xmlmappedrange-control.md)  
+-   [XmlMappedRange control](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Remplir des contrôles ListObject de données](../vsto/how-to-fill-listobject-controls-with-data.md)   

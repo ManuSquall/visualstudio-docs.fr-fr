@@ -11,15 +11,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], counting characters
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6ec83d219d8f54691165b7de7008b13d3347d16
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 57babe4379482c4718990bac936c8bc7f930e112
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872623"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Procédure : Compter les caractères dans les documents par programmation
   Le premier caractère dans un document est à la position de caractère 0, qui représente le point d’insertion. La position du dernier caractère est égale au nombre total de caractères dans le document. Vous pouvez déterminer le nombre de caractères dans un document à l’aide de la propriété <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> de la collection <xref:Microsoft.Office.Interop.Word.Characters> .  

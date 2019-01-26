@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895571"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868678"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procédure : Configurer la sécurité de liste d’inclusion
   Si vous disposez des autorisations d’administrateur, vous pouvez configurer le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer les solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [solutions Office faire confiance à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -40,7 +40,7 @@ ms.locfileid: "53895571"
   
 1.  Ouvrez l’Éditeur du Registre :  
   
-    1.  Cliquez sur **Démarrer**, puis cliquez sur **exécuter**.  
+    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.  
   
     2.  Dans le **Open** , tapez **regedt32.exe**, puis cliquez sur **OK**.  
   
@@ -56,8 +56,8 @@ ms.locfileid: "53895571"
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Désactivé**|  
-    |**Poste de travail**|**Activé**|  
-    |**Intranet local**|**Activé**|  
+    |**MyComputer**|**Activé**|  
+    |**LocalIntranet**|**Activé**|  
     |**TrustedSites**|**Activé**|  
   
      Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **désactivé**.  
@@ -99,7 +99,7 @@ ms.locfileid: "53895571"
   
 1.  Ouvrez l’Éditeur du Registre :  
   
-    1.  Cliquez sur **Démarrer**, puis cliquez sur **exécuter**.  
+    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.  
   
     2.  Dans le **Open** , tapez **regedt32.exe**, puis cliquez sur **OK**.  
   
@@ -115,8 +115,8 @@ ms.locfileid: "53895571"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Désactivé**|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Poste de travail**|**AuthenticodeRequired**|  
-    |**Intranet local**|**AuthenticodeRequired**|  
+    |**MyComputer**|**AuthenticodeRequired**|  
+    |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
      Par défaut, **Internet** a la valeur **AuthenticodeRequired** et **UntrustedSites** a la valeur **désactivé**.  
@@ -158,7 +158,7 @@ ms.locfileid: "53895571"
   
 1.  Ouvrez l’Éditeur du Registre :  
   
-    1.  Cliquez sur **Démarrer**, puis cliquez sur **exécuter**.  
+    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.  
   
     2.  Dans le **Open** , tapez **regedt32.exe**, puis cliquez sur **OK**.  
   
@@ -172,8 +172,8 @@ ms.locfileid: "53895571"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Désactivé**|  
     |**Internet**|**Désactivé**|  
-    |**Poste de travail**|**Désactivé**|  
-    |**Intranet local**|**Désactivé**|  
+    |**MyComputer**|**Désactivé**|  
+    |**LocalIntranet**|**Désactivé**|  
     |**TrustedSites**|**Désactivé**|  
   
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Pour désactiver la liste d’inclusion par programmation  

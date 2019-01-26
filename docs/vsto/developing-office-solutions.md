@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], developing
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53f94016eb354b3c3e5255e37b8399b3687352dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aa7be95b0812b27c302500bd166abcb00c7089d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856603"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874523"
 ---
 # <a name="develop-office-solutions"></a>Développer des solutions Office
   Après avoir conçu un projet à l'aide des Outils de développement Office dans Visual Studio et configuré les fichiers projet, vous pouvez vous concentrer sur l'implémentation du code et de l'interface utilisateur personnalisée.  

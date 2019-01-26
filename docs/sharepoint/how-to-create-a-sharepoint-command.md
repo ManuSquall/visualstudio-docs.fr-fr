@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da1b31b7cc1436c90437a9e2b5ef66adfee825b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894848"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867895"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procédure : Créer une commande SharePoint
   Si vous souhaitez utiliser le modèle objet serveur dans une extension des outils SharePoint, vous devez créer un personnalisé *commande SharePoint* pour appeler l’API. Vous définissez la commande SharePoint dans un assembly qui peut appeler directement dans le modèle objet serveur.  
@@ -30,7 +30,7 @@ ms.locfileid: "53894848"
   
     -   Cible le .NET Framework 3.5. Pour plus d’informations sur la sélection du framework cible, consultez [Comment : Cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-    -   Cible la AnyCPU ou x64 plateforme. Par défaut, la plateforme cible pour les projets de bibliothèque de classes est AnyCPU. Pour plus d’informations sur la sélection de la plateforme cible, consultez [Comment : Configurer des projets pour cibler les plateformes](../ide/how-to-configure-projects-to-target-platforms.md).  
+    -   Cible la AnyCPU ou x64 plateforme. Par défaut, la plateforme cible pour les projets de bibliothèque de classes est AnyCPU. Pour plus d’informations sur la sélection de la plateforme cible, consultez [Comment : Configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md).  
   
     > [!NOTE]  
     >  Vous ne pouvez pas implémenter une commande SharePoint dans le même projet qui définit une extension des outils SharePoint, car les commandes SharePoint ciblent le .NET Framework 3.5 et SharePoint tools extensions la cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Vous devez définir toutes les commandes SharePoint qui sont utilisés par votre extension dans un projet distinct. Pour plus d’informations, consultez [déployer des extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  

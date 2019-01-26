@@ -12,15 +12,15 @@ helpviewer_keywords:
 - footers, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e9c12af1cfbcbebe080e40dc5cbf83975c15080
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848452"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869864"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procédure : Ajouter par programmation des en-têtes et pieds de page aux documents
   Vous pouvez ajouter du texte aux en-têtes et pieds de page dans votre document à l'aide de la propriété <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> et de la propriété <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de <xref:Microsoft.Office.Interop.Word.Section>. Chaque section d'un document contient trois en-têtes et pieds de page :  

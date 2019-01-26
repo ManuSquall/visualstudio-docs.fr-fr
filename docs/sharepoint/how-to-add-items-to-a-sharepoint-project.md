@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b10277945feb638764162d523066d49b9c6c7215
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7279631b84e67e8b95b56f4bc04a4d77ca3ebb0d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949678"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867934"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Procédure : Ajouter des éléments à un projet SharePoint
   Les solutions SharePoint contiennent un ou plusieurs projets, chacun d’eux contient plusieurs éléments de projet SharePoint. Une fois que vous ouvrez ou créez une solution SharePoint, vous pouvez ajouter des éléments nouveaux ou existants à ces projets. Par exemple, les nouveaux projets de flux de travail sont fournis avec un formulaire par défaut nommée default.aspx, mais vous pouvez remplacer ce formulaire un formulaire nouveau ou différent, ou ajouter un autre formulaire ASPX.  

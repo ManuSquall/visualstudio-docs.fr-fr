@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 02c0aa0f6b2af5123939a396f9b0ac9dc6febd17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77f3e1c32c0c18c73823b374a09345a6a9d38170
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941951"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870543"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procédure : Ajouter ou supprimer des connexions SharePoint
   Explorateur de serveurs vous permet de parcourir des sites SharePoint, ainsi que des connexions de données. Toutefois, avant de pouvoir parcourir le contenu d’un site SharePoint vous devez l’ajouter à la **connexions SharePoint** nœud.  

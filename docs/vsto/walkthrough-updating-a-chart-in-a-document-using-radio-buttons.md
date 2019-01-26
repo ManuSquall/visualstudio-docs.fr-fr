@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], updating using controls
 - controls [Office development in Visual Studio], updating documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 512edf8c6f694c0c8dc22c3b614f4f9b47145db8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943234"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871414"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : Mettre à jour d’un graphique dans un document à l’aide de cases d’option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.  

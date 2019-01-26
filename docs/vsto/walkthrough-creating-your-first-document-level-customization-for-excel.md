@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Excel [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaf5fe98e5c5a9c54245307f50e71345d0e2d477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955316"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871245"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.  

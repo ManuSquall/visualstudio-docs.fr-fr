@@ -54,15 +54,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, errors
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9181b74da09f87d1c19805995b527b9fbd56c52f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad487485ed07a345826f96d1f19200bf3f98d12e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946290"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872116"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Prise en charge supplémentaire pour les erreurs dans les solutions Office
   Vous pouvez utiliser les ressources suivantes pour vous aider à trouver des réponses aux problèmes que vous rencontrez lorsque vous créez des solutions Office dans Visual Studio.  

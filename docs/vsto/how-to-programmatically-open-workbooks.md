@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, opening
 - Excel [Office development in Visual Studio], opening workbooks
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab91a1e9a89edee013b559f1653c1607e7b8c884
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59163e0e054e3546ada8c7ee7b7d23362ca96fba
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860947"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869899"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Procédure : Ouvrir des classeurs par programmation
   Le <xref:Microsoft.Office.Interop.Excel.Workbooks> collection dans Microsoft Office Excel permet de travailler avec tous les classeurs ouverts et d’ouvrir des classeurs.  

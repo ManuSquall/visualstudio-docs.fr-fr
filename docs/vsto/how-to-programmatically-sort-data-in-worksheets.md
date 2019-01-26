@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], sorting in worksheets
 - worksheets, sorting data
 - sorting data, in worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10280b9d95892ceb8cb0445a46f1cfd51ea49f48
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870504"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procédure : Trier les données dans des feuilles de calcul par programmation
   Vous pouvez trier les données contenues dans les listes et les plages de feuille de calcul au moment de l'exécution. Le code suivant trie une plage à colonnes multiples nommée `Fruits` sur les données de la première colonne, puis sur les données de la deuxième colonne.  

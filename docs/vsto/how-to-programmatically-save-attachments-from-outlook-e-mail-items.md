@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving e-mail attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec543a23a68965c0fa629d7318f40e840fb81152
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebcdbf5a34b369e1515751b8eb5a480a02d4c182
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911232"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874482"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procédure : Enregistrer des pièces jointes à partir d’éléments de messagerie Outlook par programmation
   Cet exemple enregistre les pièces jointes de messagerie électronique dans un dossier spécifié lorsque le courrier est reçu dans la Boîte de réception.  

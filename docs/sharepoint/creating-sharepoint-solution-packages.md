@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059bf8068ad3a14d01f0a8167900563eebdff215
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966662"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867986"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Créer des packages de solution SharePoint
   À l’aide du Concepteur de packages, vous pouvez créer et personnaliser des packages de déploiement. Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, réinitialiser le serveur IIS, définir des étendues de l’activation de fonctionnalité et identifier les dépendances de fonctionnalité. Le concepteur génère également un manifeste, un fichier XML qui décrit chaque package.  

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - workbooks, saving in XML format
 - workbooks, saving
 - workbooks, saving backup copies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcc0869b8d255ba91e1a1fd017c93cdb24346b27
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829169"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874547"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Procédure : Enregistrer des classeurs par programmation
   Il existe plusieurs façons d'enregistrer un classeur. Vous pouvez le faire sans modifier le chemin d'accès. Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès. Sans chemin d'accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création. Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.  
@@ -50,7 +50,7 @@ ms.locfileid: "53829169"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> de la classe `ThisWorkbook`. Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.  
+1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> de la classe `ThisWorkbook` . Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]  
@@ -67,7 +67,7 @@ ms.locfileid: "53829169"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> de la classe `ThisWorkbook`. Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.  
+1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> de la classe `ThisWorkbook` . Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]  
