@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb9176ce0341ff50bb59a9666d18ae5054dad872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65698c140647831ab329069e61e2cc5ea826d6e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821845"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992111"
 ---
 # <a name="automation-model-overview"></a>Vue d’ensemble du modèle Automation
 Le modèle automation se compose d’un ensemble d’objets par rapport à laquelle vous pouvez écrire un complément Visual Studio ou une extension. Un complément est une application qui peut manipuler l’environnement Visual Studio et automatiser les tâches courantes. Une extension Visual Studio peut créer des composants personnalisés de Visual Studio ou ajouter des fonctionnalités de composants standard tels que l’éditeur de texte.  
