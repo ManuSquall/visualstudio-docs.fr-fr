@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54741301c1c1402876ab7b13dba30b3c4ef03831
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028606"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Lier des raccourcis clavier aux éléments de menu
 Pour lier un raccourci clavier à une commande de menu personnalisé, il suffit d’ajouter une entrée à la *.vsct* fichier pour le package. Cette rubrique explique comment mapper un raccourci clavier pour un bouton personnalisé, un élément de menu ou une commande de barre d’outils et comment appliquer le mappage du clavier dans l’éditeur par défaut ou de limiter à un éditeur personnalisé.  

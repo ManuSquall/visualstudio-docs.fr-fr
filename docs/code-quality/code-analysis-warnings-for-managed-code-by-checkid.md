@@ -256,15 +256,15 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba3d5d157cebe48212128a6eeb0312f9f67c2f3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a4f53915e50275df0876d50564b3f30add1d5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010322"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -401,7 +401,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA1812 | [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | Une instance d'un type de niveau assembly n'est pas créée par le code au sein de l'assembly. |
 | CA1813 | [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md) | La bibliothèque de classes .NET Framework fournit des méthodes pour récupérer des attributs personnalisés. Par défaut, ces méthodes recherchent la hiérarchie d'héritage des attributs. Le fait de sceller l'attribut élimine la recherche dans la hiérarchie d'héritage et peut améliorer les performances. |
 | CA1814 | [CA1814 : Préférer les tableaux en escalier multidimensionnel](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Un tableau en escalier est un tableau dont les éléments sont des tableaux. Les tableaux qui composent les éléments peuvent être de différentes tailles, ce qui conduit à un gaspillage d'espace plus restreint pour certains groupes de données. |
-| CA1815 | [CA1815 : Remplacez equals et l’opérateur est égal à dans les types valeur](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Pour les types valeur, l'implémentation héritée de Equals utilise la bibliothèque Reflection et compare le contenu de tous les champs. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si des utilisateurs sont susceptibles de comparer ou de trier des instances, ou de les utiliser en tant que clés de table de hachage, votre type valeur doit implémenter Equals. |
+| CA1815 | [CA1815 : Remplacer Equals et l’opérateur d’égalité dans les types valeur](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Pour les types valeur, l'implémentation héritée de Equals utilise la bibliothèque Reflection et compare le contenu de tous les champs. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si des utilisateurs sont susceptibles de comparer ou de trier des instances, ou de les utiliser en tant que clés de table de hachage, votre type valeur doit implémenter Equals. |
 | CA1816 | [CA1816 : Appelez GC. SuppressFinalize correctement](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Une méthode qui est une implémentation de Dispose n’appelle pas de catalogue global. SuppressFinalize ; ou une méthode qui n’est pas une implémentation de Dispose appelle GC. SuppressFinalize ; ou une méthode appelle GC. SuppressFinalize et passe un élément autre que cette (Me en Visual Basic). |
 | CA1819 | [CA1819 : Propriétés ne doivent pas retourner de tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md) | Les tableaux retournés par les propriétés ne sont pas protégés en écriture, même si la propriété est en lecture seule. Pour protéger le tableau de toute falsification, la propriété doit retourner une copie du tableau. En général, les utilisateurs ne comprennent l'incidence négative en matière de performances de l'appel à une telle propriété. |
 | CA1820 | [CA1820 : Test de chaînes vides à l’aide de la longueur de chaîne](../code-quality/ca1820-test-for-empty-strings-using-string-length.md) | La comparaison de chaînes à l'aide de la propriété String.Length ou de la méthode String.IsNullOrEmpty est nettement plus rapide que l'utilisation d'Equals. |

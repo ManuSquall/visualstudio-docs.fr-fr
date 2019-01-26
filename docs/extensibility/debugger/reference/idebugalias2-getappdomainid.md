@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d0ebeeddfd212b4ad99b8f1686c4f9d64141d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b70b26cbf9248f654836a2d138ad0f79b80a3b54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011743"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 Récupère l’identificateur pour le domaine d’application.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc1e818e576c4593eb890f1f31b4d67d4c7c4488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904875"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979424"
 ---
 # <a name="regpkg-utility"></a>Utilitaire RegPkg
 > [!NOTE]
@@ -37,28 +37,28 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] racine.  
   
- /regfile:filename  
+ /regfile:FileName  
  Crée un fichier .reg, plutôt que de la mise à jour le Registre.  Ne peut pas être utilisé avec /vrgfile ou /rgsfile ou /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Crée un fichier .rgs plutôt que de la mise à jour le Registre.  Ne peut pas être utilisé avec /vrgfile ou /regfile ou /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Crée un fichier .vrg plutôt que de la mise à jour le Registre.  Ne peut pas être utilisé avec /regfile ou /rgsfile ou /wixfile.  
   
- /RGM  
+ /rgm  
  Crée un fichier .rgm en plus du fichier rgs.  Doit être combinée avec /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Crée un fichier compatible avec Windows Installer XML Toolset plutôt que de la mise à jour le Registre.  Ne peut pas être utilisé avec /regfile ou /rgsfile ou /vrgfile.  
   
  /codebase  
  Inscription de force avec la base de code plutôt que d’Assembly.  
   
- assembly  
+ /assembly  
  Inscription de force avec l’Assembly plutôt que de base de code.  
   
- / Annuler l’inscription  
+ /unregister  
  Annule l’inscription de ce package.  Ne peut pas être utilisé.  
   
  avec /regfile /vrgfile ou /rgsfile ou /wixfile.  

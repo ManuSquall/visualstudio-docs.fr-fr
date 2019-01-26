@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 475120f72962d0ab1c5c0dd6e8441349dfc8086c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15b605d4beffc85c2ac5e8803d627c13dd4c7d38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021804"
 ---
 # <a name="project-persistence"></a>Persistance d’un projet
 La persistance est une considération de conception clés pour votre projet. La plupart des projets utilisent des éléments de projet qui représentent des fichiers ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend également en charge les projets dont les données sont non basée sur un fichier. Les deux fichiers détenus par le projet et le fichier projet doivent être persistante. L’IDE indique le projet pour enregistrer lui-même ou un élément de projet.  

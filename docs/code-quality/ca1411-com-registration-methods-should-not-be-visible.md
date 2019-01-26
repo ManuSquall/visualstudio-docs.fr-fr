@@ -1,5 +1,5 @@
 ---
-title: 'CA1411 : Méthodes d’inscription COM ne doivent pas être visibles'
+title: "CA1411 : Les méthodes d'inscription COM ne doivent pas être visibles"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da83faf5c2ca1a60d4f931cd498caf3717c21e2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39547159f46f4c1921093b020c2bb888e4aecce0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926994"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013169"
 ---
-# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411 : Méthodes d’inscription COM ne doivent pas être visibles
+# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411 : Les méthodes d'inscription COM ne doivent pas être visibles
 
 |||
 |-|-|

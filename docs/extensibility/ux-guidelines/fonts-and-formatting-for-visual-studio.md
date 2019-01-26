@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7cecbe627d432e24f12b334747d4e4ec55c1c73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020163"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -339,7 +339,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Tous les pronoms|Y compris le possessif « Sa » et «, » une contraction du pronom « it » et le verbe « est »|  
 |Premiers et derniers mots, quelle que soit grammaticales||  
 |Prépositions qui font partie d’une phrase verbale|« Closing Out tous les Windows » ou « Arrêt du système »|  
-|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RVB|  
+|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RGB|  
 |Le deuxième mot du mot composé, s’il s’agit d’un nom ou un adjectif d’approprié, ou si les mots ont le même poids|Accès en lecture/écriture de références croisées, des logiciels Microsoft avant, exécution|  
   
 |Minuscules|Exemples|  

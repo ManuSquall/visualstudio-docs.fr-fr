@@ -8,22 +8,22 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3fa5972a520825b8c7622bd07e23d53910339ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7ae9333fd0e003bae6c823f7ae778dfc4b3770c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852649"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041202"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface utilisateur personnalisée (contrôle de source de package Visual Studio)
 Un VSPackage déclare ses éléments de menu et leurs États par défaut par le biais du tableau de commandes de Visual Studio (*.vsct*) fichier. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) affiche les éléments de menu dans leur état par défaut jusqu'à ce que le VSPackage est chargé. Par la suite, le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est appelée pour activer ou désactiver des éléments de menu.  
   
  Un VSPackage peut définir une clé de Registre pour le VSPackage peut être chargé automatiquement en fonction d’un contexte d’interface (UI) de commande utilisateur, bien que généralement un contrôle de source VSPackage doit se charger à la demande au lieu de simplement passer à un contexte particulier de l’interface utilisateur. Pour plus d’informations sur la **AutoLoadPackages** Registre clé, consultez [gérer les VSPackages](../../extensibility/managing-vspackages.md).  
   
-## <a name="vspackage-ui"></a>Interface utilisateur du VSPackage  
+## <a name="vspackage-ui"></a>VSPackage UI  
  Un package de contrôle de code source est implémenté comme un VSPackage et n’utilise pas d’interface utilisateur à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Chaque contrôle de code source VSPackage doit spécifier ses propres éléments d’interface utilisateur tels que les éléments de menu, les groupes de menus, les fenêtres Outil, les barres d’outils et les toute interface utilisateur requis pour définir des options spécifiques pour le VSPackage de contrôle de code source. Ces éléments d’interface utilisateur peuvent être activées de manière statique ou dynamique. Éléments d’interface utilisateur statiques sont définis dans un *.vsct* fichier et s’affichent si le VSPackage est chargé ou non. Éléments d’interface utilisateur dynamiques peuvent être visibles en fonction d’un contexte d’interface utilisateur de commande particulière, tel que <xref:EnvDTE.Constants.vsContextNoSolution>, ou en tant que le résultat d’un appel à la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (méthode). La visibilité des éléments d’interface utilisateur dynamiques est conforme à la stratégie pour un chargement différé de VSPackages.  
   
 ## <a name="ui-constraints-on-source-control-vspackages"></a>Contraintes d’interface utilisateur sur le contrôle de code source VSPackages  

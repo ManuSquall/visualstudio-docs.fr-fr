@@ -19,15 +19,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5a562b267b630e2a0c53b90072c2dfde62f085b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978878"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 
@@ -39,7 +39,7 @@ Pour visualiser l'architecture d'un système ou de code existant, créez les dia
 
 |**Diagramme**|**Éléments décrits**|
 |-|-|
-|[Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
+|[Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
 |Cartes de code<br /><br /> [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|
 |Diagrammes de classes générés par du code<br /><br /> [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Types et leurs relations dans le code .NET|
 

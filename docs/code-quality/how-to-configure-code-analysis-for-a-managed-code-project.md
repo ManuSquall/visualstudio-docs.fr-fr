@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb5e667e92f4dc580a0224c1cc3fce099ed5533
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939756"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003348"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : Configurer l’analyse du Code pour un projet de Code managé
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : Configurer l’analyse du code pour un projet de code managé
 
 Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code [ensembles de règles](../code-quality/rule-set-reference.md)) à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
 

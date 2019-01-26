@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b373fd51087526c30243391b6b0b32ad27e15ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027423"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Modèles composites combinent des éléments de conception et d’interaction dans des configurations distinctes. Les modèles composites plus importantes dans Visual Studio en matière de cohérence sont les suivantes :  
@@ -73,13 +73,13 @@ Modèles composites combinent des éléments de conception et d’interaction da
 
 |Échantillon|hex|RVB|  
 |------------|---------|---------|  
-|![Échantillon 71 b 252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|71 B 252 #|113,178,82|  
+|![Swatch 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113,178,82|  
 |![Échantillon BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191,63,0|  
 |![Échantillon FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252,183,20|  
-|![Échantillon 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|  
+|![Swatch 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|  
 |![Échantillon 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17,122,209|  
-|![Échantillon 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
-|![Échantillon B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
+|![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
+|![Swatch B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
 
 ##  <a name="BKMK_OnObjectUI"></a> L’interface utilisateur sur l’objet et la lecture  
  Cette section donne le contexte pour la lecture, également appelé code aperçu, un type de l’interface utilisateur de sur les objets unique à Visual Studio.  
@@ -268,7 +268,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 
 - Contigus  
 
-- Disjointes  
+- Disjoint  
 
 - Région  
 
@@ -346,7 +346,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 |Barre d’espace|Active le mode panoramique tandis que la séquence de touches est conservée. Entrée de souris supplémentaire est nécessaire pour effectuer un panoramique de la position de la fenêtre d’affichage.|  
 |Ctrl+Barre d'espace|Active le mode de zoom tandis que la séquence de touches est conservée. Entrée de souris supplémentaire est nécessaire pour augmenter et diminuer le facteur de zoom.|  
 |Ctrl + Alt + signe moins|Diminue le facteur de zoom d’un niveau.|  
-|Ctrl + Alt + signe Plus|Augmente le facteur de zoom d’un niveau.|  
+|Ctrl+Alt+Plus Sign|Augmente le facteur de zoom d’un niveau.|  
 |MAJ ou Ctrl|Ajoute l’objet au groupe de sélection. CTRL vous permet également à supprimer les objets individuellement à partir du groupe de sélection.|  
 |Entrée|Exécute la commande par défaut pour l’objet (généralement ouvrir ou modifier).|  
 |F2|Active la modification sur place pour l’objet.|  
@@ -440,7 +440,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 | Object | Sélection |
 |--------|------------|
 | Liste | Contigus |
-| Liste | Disjointes |
+| Liste | Disjoint |
 | Liste | Région |
 
  En cliquant sur une seule fois sur une liste pour sélectionner la ligne où le clic s’est produit. Si l’utilisateur à cliquer dans une cellule de liste qui prend en charge la modification sur place, la cellule est également immédiatement activée pour modification sur place. Sinon, la ligne entière est immédiatement sélectionnée et affiche une mise en surbrillance.  

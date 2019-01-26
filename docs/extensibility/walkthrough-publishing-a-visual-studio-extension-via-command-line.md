@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857213"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974147"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procédure pas à pas : Publication d’une extension de Visual Studio via la ligne de commande
 
@@ -33,7 +33,7 @@ Publie une extension à la place de marché. L’extension peut être une extens
 |Options de commande |Description |
 |---------|---------|
 |charge utile (obligatoire) | Soit un chemin d’accès à la charge utile de publier ou d’un lien à utiliser comme la « URL informations ». |
-|publishManifest (obligatoire) | Chemin d’accès à la publication manifeste de fichier à utiliser. |
+|publishManifest (required) | Chemin d’accès à la publication manifeste de fichier à utiliser. |
 |ignoreWarnings | Liste d’avertissements à ignorer lors de la publication d’une extension. Ces avertissements sont affichés sous forme de messages de la ligne de commande lors de la publication d’une extension. (par exemple, « VSIXValidatorWarning01, VSIXValidatorWarning02 »)  
 |personalAccessToken | Accès jeton (personnel) qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés. |
 
@@ -76,7 +76,7 @@ Supprime une extension de la place de marché.
 
 |Options de commande |Description |
 |---------|---------|
-|extensionName (obligatoire) | Le nom de l’extension à supprimer. |
+|extensionName (required) | Le nom de l’extension à supprimer. |
 |publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
 |personalAccessToken | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. Si n’est fourni, le jeton d’accès personnel est acquis auprès des utilisateurs connectés. |
 
@@ -90,9 +90,9 @@ Se connecte à un serveur de publication à l’ordinateur.
 
 |Options de commande |Description |
 |---------|---------|
-|personalAccessToken (obligatoire | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. |
+|personalAccessToken (required | Jeton d’accès personnel qui est utilisé pour authentifier le serveur de publication. |
 |publisherName (obligatoire) | Le nom du serveur de publication (par exemple, l’identificateur). |
-|Remplacer | Spécifie que n’importe quel éditeur existant doit être remplacé par le nouveau jeton d’accès personnel. |
+|overwrite | Spécifie que n’importe quel éditeur existant doit être remplacé par le nouveau jeton d’accès personnel. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"

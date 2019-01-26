@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83fcafc765e6d4dbfdde865dd0ad66048370cb0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41baf6b8405e45600050e508b7fd7523e19533ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025720"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Élément buildProjectOnload (modèles Visual Studio)
 Génère les nouveaux projets uniquement quand vous créez et les ajoutez à une solution. L’ensemble de la solution n’est pas généré.

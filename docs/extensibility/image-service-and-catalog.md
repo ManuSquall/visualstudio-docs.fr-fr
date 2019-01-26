@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3113280b7a32d9323f1b5a1638123dca8163528f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899702"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018811"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.  
@@ -122,11 +122,11 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
   
 |||  
 |-|-|  
-|**Symbole**|**Description**|  
+|**Symbol**|**Description**|  
 |CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|  
 |LocalAppData|La valeur de la variable d’environnement % LocalAppData|  
 |ManifestFolder|Le dossier contenant le fichier manifest|  
-|Mes documents|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
+|MyDocuments|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
 |ProgramFiles|La valeur de la variable d’environnement % ProgramFiles %|  
 |Système|Le *Windows\System32* dossier|  
 |WinDir|La valeur de la variable d’environnement % WinDir %|  
@@ -175,9 +175,9 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
 |\<Taille >|Value|La source sera utilisée pour les images de la taille spécifiée (en unités de périphérique). L’image sera carré.|  
-|\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
-|\<Dimensions >|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
+|\<SizeRange>|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
+|\<Dimensions>|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
   
  Un \<Source > élément peut également avoir un facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.  
   
@@ -240,7 +240,7 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
   
     -   Requis si vous utilisez le **BrushToColorConverter** pour le **ImageThemingUtilities.ImageBackgroundColor** dans votre UI WPF.  
   
--   *Microsoft.VisualStudio.Shell. \<VSVersion >.0*  
+-   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*  
   
     -   Requis si vous utilisez le **IVsUIObject** type.  
   
@@ -948,7 +948,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|  
         |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
         |GlyphGroupError||StatusError|  
-        |GlyphBscFile||Fichier|  
+        |GlyphBscFile||ClassFile|  
         |GlyphAssembly||Référence|  
         |GlyphLibrary||Bibliothèque|  
         |GlyphVBProject||VBProjectNode|  
@@ -965,7 +965,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphReference||ClassMethodReference|  
         |GlyphRecursion||Récursivité|  
         |GlyphXmlItem||Balise|  
-        |GlyphJSharpProject||Collection DocumentCollection|  
+        |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Document|  
         |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||CallTo|  

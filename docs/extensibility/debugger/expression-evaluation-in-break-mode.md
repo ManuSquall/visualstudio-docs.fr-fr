@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62824c46e682b0418b8797d6adee0b504f04b414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 852b4284bbbf59ce8f3964d98f0464e583f1444f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987205"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028671"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Évaluation de l’expression en mode arrêt
 La section suivante décrit le processus qui se produit lorsque le débogueur est en mode arrêt et procéder à l’évaluation de l’expression.  
@@ -31,7 +31,7 @@ La section suivante décrit le processus qui se produit lorsque le débogueur es
   
 3.  Si ParseText ne retourne pas S_OK, la raison de l’erreur est retournée.  
   
-     -dans le cas contraire-  
+     -otherwise-  
   
      Si ParseText retourne S_OK, le SDM pouvez ensuite appeler [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour obtenir une valeur finale à partir de l’expression analysée.  
   

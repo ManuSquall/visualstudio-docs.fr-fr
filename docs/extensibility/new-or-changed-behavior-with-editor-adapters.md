@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901608"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987322"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportement nouveau ou modifié avec les adaptateurs de l’éditeur
 Si vous mettez à jour le code qui a été écrit par rapport à des versions antérieures de l’éditeur principal de Visual Studio, et que vous envisagez d’utiliser les adaptateurs de l’éditeur (ou shims) au lieu d’utiliser la nouvelle API, vous devez connaître les différences suivantes dans le comportement des adaptateurs d’éditeur en ce qui concerne l’éditeur principal précédent.  
@@ -120,7 +120,7 @@ Si vous mettez à jour le code qui a été écrit par rapport à des versions an
   
 -   Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> méthode échouera si vous passez dans une classe qui n’implémente pas soit <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> ou <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Win32 personnalisé owner-drawn les fenêtres contextuelles ne sont plus prises en charge.  
   
-#### <a name="smarttags"></a>Balises actives  
+#### <a name="smarttags"></a>SmartTags  
  Il n’existe aucune prise en charge de l’adaptateur pour les balises actives, créée avec <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> interfaces.  
   
 #### <a name="dte"></a>DTE  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34ec1b04e10b874d6f8373b5eb0e6c2e5c6d70e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b5dea79f1c9e3b21b45542a0617daf47ee7e80b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844078"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026020"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd (erreurs) outil
 
@@ -26,17 +26,17 @@ Le tableau suivant décrit les codes d’erreur retournés par FxCopCmd :
 
 |Error|Valeur numérique|
 |-----------|-------------------|
-|Aucune erreur|0 x 0|
-|Erreur d’analyse|0 x 1|
-|Exceptions de règle|0 x 2|
-|Erreur de chargement de projet|0 x 4|
-|Erreur de chargement d’assembly|0 x 8|
+|Aucune erreur|0x0|
+|Erreur d’analyse|0x1|
+|Exceptions de règle|0x2|
+|Erreur de chargement de projet|0x4|
+|Erreur de chargement d’assembly|0x8|
 |Erreur de chargement de bibliothèque de règle|0x10|
-|Erreur de chargement du rapport importation|0 x 20|
-|Erreur de sortie|0 x 40|
-|Erreur de commutateur de ligne de commande|0 x 80|
-|Erreur d’initialisation|0 x 100|
-|Erreur des références d’assembly|0 x 200|
+|Erreur de chargement du rapport importation|0x20|
+|Erreur de sortie|0x40|
+|Erreur de commutateur de ligne de commande|0x80|
+|Erreur d’initialisation|0x100|
+|Erreur des références d’assembly|0x200|
 |BuildBreakingMessage|0 x 400|
 |Erreur inconnue|0x1000000|
 

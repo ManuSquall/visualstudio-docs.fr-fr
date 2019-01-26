@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999468"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Référence du schéma de manifeste de modèle Visual Studio
 Ce schéma décrit le format du manifeste de modèle Visual Studio (*.vstman*) les fichiers qui sont générés pour les modèles de projet ou un élément de Visual Studio. Le schéma décrit également l’emplacement et autres informations pertinentes concernant le modèle.  
@@ -51,7 +51,7 @@ Ce schéma décrit le format du manifeste de modèle Visual Studio (*.vstman*) l
   
 -   **RelativePathOnDisk**:  Le chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également la position du modèle dans l’arborescence de modèle indiqué dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue. Pour les modèles déployés en tant qu’un répertoire et des fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déploiement en tant qu’un *.zip* fichier, ce chemin d’accès doit être le chemin d’accès à la *.zip* fichier.  
   
--   ** VSTemplateHeader : Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) élément qui décrit l’en-tête.  
+-   **VSTemplateHeader: Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) élément qui décrit l’en-tête.  
   
 ### <a name="parent-element"></a>Élément parent  
  **VSTemplateManifest**  

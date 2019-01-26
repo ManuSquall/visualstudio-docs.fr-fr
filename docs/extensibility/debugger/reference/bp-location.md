@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 237d89abeb4d41a2c01a7e7d0eb1ccc1ca7a6ddc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974043"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Spécifie le type de structure utilisée pour décrire l’emplacement du point d’arrêt.  
@@ -98,7 +98,7 @@ public struct BP_LOCATION {
 |`BPLT_CODE_FUNC_OFFSET`|`string` (un contexte)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|  
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
 |`BPLT_CODE_STRING`|`string` (un contexte)|`string` (expression conditionnelle)|-|-|  
-|`BPLT_CODE_ADDRESS`|`string` (un contexte)|`string` module URL)|`string` (nom de fonction)|`string` (adresse)|  
+|`BPLT_CODE_ADDRESS`|`string` (un contexte)|`string` module URL)|`string` (nom de fonction)|`string` (address)|  
 |`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (un contexte)|`string` (expression de données)|`uint` (nombre d’éléments)|  
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   

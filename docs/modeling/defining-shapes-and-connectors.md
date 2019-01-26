@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2627fcb19933d21021c97323982e03ff361bd36f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edf82cde2674b91954737973ddfa37e738ff8ec1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834280"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016926"
 ---
 # <a name="defining-shapes-and-connectors"></a>Définition de formes et de connecteurs
 Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour afficher les informations sur le diagramme d'un langage spécifique à un domaine (DSL).

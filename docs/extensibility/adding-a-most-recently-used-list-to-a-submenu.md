@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f436a9c0589f1661e9ad41c76fbd0cf641cc8496
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a01c36adc313c780500eef7aa03ee6552444cfc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003092"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Ajouter qu'une liste à un sous-menu utilisés récemment
 Cette procédure pas à pas s’appuie sur des démonstrations de [ajouter un sous-menu à un menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique constitue la base pour la création d’une liste plus récemment utilisés (MRU).  

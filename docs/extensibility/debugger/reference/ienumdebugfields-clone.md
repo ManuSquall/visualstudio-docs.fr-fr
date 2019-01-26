@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309a3043ce32738b114a01d47aa0108ffb3ecd6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9c3243c7e5f2cb0378772987917455c3a6d0a8c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892532"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928462"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Cette méthode retourne une copie de l’énumération actuelle comme un objet distinct.  

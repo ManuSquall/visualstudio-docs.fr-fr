@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fccc44f21ba297887d0aabd3736a78a63fb638f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9020aab0ad2cecbb5dc402bf479aa0a97e45c202
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007975"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Retourne le nombre de contraintes qui sont associés à ce paramètre générique.  

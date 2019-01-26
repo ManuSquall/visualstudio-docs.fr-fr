@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989950"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément
 Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue commence par les clés de Registre. Comme indiqué dans les entrées de Registre suivantes, le **AddItemTemplates** section contient le chemin d’accès et le nom du répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.  
@@ -27,7 +27,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
 
  Le premier GUID est le CLSID pour les projets de ce type ; le second GUID indique le type de projet enregistré pour les modèles d’ajouter des éléments :  
 
- **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
  **@** = #6 
 
@@ -38,7 +38,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
 
 | Name | Type | Données (à partir de *.rgs* fichier) | Description |
 |------------------|-----------| - | - |
-| @ (Par défaut) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY % | ID de ressource pour **ajouter un élément** modèles. |
+| @ (Par défaut) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | ID de ressource pour **ajouter un élément** modèles. |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH %\\&lt;SomeProjectItems&gt; | Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant. |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Détermine l’ordre de tri dans le nœud d’arbre de fichiers affichés dans le **ajouter un nouvel élément** boîte de dialogue. |
 

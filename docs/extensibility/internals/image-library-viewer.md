@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f6b8b9b220a9fa81ea8cf43de18bcf3820f5336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968668"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016679"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil Visual Studio Image Library Viewer peut charger et rechercher des manifestes d’images, permettant à l’utilisateur pour les manipuler dans la même façon Visual Studio. L’utilisateur peut modifier en arrière-plan, tailles, PPP, contraste élevé et autres paramètres. L’outil affiche des informations de chargement pour chaque manifeste de l’image également et affiche des informations de source de chaque image dans le manifeste de l’image. Cet outil est utile pour :  
@@ -88,13 +88,13 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
   
 |||  
 |-|-|  
-|**Symbole**|**Description**|  
+|**Symbol**|**Description**|  
 |CommonProgramFiles|La valeur de la variable d’environnement % %CommonProgramFiles%|  
 |LocalAppData|La valeur de la variable d’environnement % LocalAppData|  
 |ManifestFolder|Le dossier contenant le fichier manifest|  
-|Mes documents|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
+|MyDocuments|Le chemin d’accès complet du dossier Mes Documents de l’utilisateur actuel|  
 |ProgramFiles|La valeur de la variable d’environnement % ProgramFiles %|  
-|Système|Le dossier Windows\System32|  
+|Système|The Windows\System32 folder|  
 |WinDir|La valeur de la variable d’environnement % WinDir %|  
   
  **Image**  
@@ -139,9 +139,9 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |-|-|-|  
 |**Élément**|**Attributs (tous requis)**|**Définition**|  
 |\<Taille >|Value|La source sera utilisée pour les images de la taille spécifiée (en unités de périphérique). L’image sera carré.|  
-|\<SizeRange >|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
-|\<Dimensions >|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
+|\<SizeRange>|MinSize, MaxSize|La source servira pour les images à partir de MinSize vers taille maximale (en unités de périphérique) (inclus). L’image sera carré.|  
+|\<Dimensions>|Largeur, hauteur|La source sera utilisée pour les images de la donnée de la largeur et la hauteur (en unités de périphérique).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|La source servira pour les images à partir de la largeur/hauteur minimale de la largeur/hauteur maximale (en unités de périphérique) (inclus).|  
   
  Un \<Source > élément peut également avoir un facultatif \<NativeResource > sous-élément qui définit un \<Source > qui est chargé à partir d’un assembly natif plutôt qu’un assembly managé.  
   

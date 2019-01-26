@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ae9fc5608a6dbb6aeb493ee5937b15aa346b636
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d73c1671f0b863547851b02536f2c92a7a24140b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960522"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027787"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Obtient le titre, le nom convivial ou le nom de fichier du processus.  

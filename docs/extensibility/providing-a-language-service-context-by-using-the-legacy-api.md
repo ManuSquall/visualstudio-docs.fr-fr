@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8406d0ca1615ef1f784312827e3a21d0a96b04a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940256"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016562"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fournir un contexte de service de langage à l’aide de l’API héritée
 Il existe deux options pour un service de langage fournir le contexte de l’utilisateur à l’aide la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal : fournir un contexte de marqueur de texte, ou fournir tout le contexte utilisateur. Les différences sont décrites ici.  
@@ -42,7 +42,7 @@ Il existe deux options pour un service de langage fournir le contexte de l’uti
   
   Le diagramme suivant illustre la façon dont le contexte est fourni pour un service de langage qui implémente `IVsLanguageContextProvider`.  
   
-  ![Graphique de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  ![LangServiceImplementation2 graphic](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
   Contexte pour un service de langage  
   
   Comme vous pouvez le voir dans le diagramme, le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] principal éditeur de texte a un sac de contextes attaché. Ce conteneur de contexte pointe vers trois conteneurs de sous-contexte distincts : service de langage, l’éditeur par défaut et marqueur de texte. Le langage service et le texte marqueur de sous-contexte contienne des attributs et mots clés pour le service de langage si le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interface est implémentée et des marqueurs de texte si le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface est implémentée. Si vous n’implémentez pas une de ces interfaces, l’éditeur fournit de contexte pour le mot clé au niveau du curseur dans le conteneur de sous-contexte éditeur par défaut.  

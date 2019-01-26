@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c1f058e1da1e4d425dc3748f20ec14ecd363855
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962608"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993895"
 ---
 # <a name="elements-of-a-project-model"></a>Éléments d’un modèle de projet
 Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partagent une structure de base : le modèle de projet pour votre type de projet. Dans votre modèle de projet, qui est le VSPackage que vous développez, vous créez des objets qui sont conformes avec vos décisions de conception et l’implication des fonctionnalités globales fournies par l’IDE. Bien que vous contrôlez le mode de conservation d’un élément de projet, par exemple, vous ne contrôlez pas notification qu’un fichier doit être persistante. Lorsqu’un utilisateur met l’accent sur un élément de projet ouvert et choisit **enregistrer** sur le **fichier** menu sur le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barre, votre code de type de projet doit intercepter la commande à partir de l’IDE, conserve le fichier, et envoyer la notification à l’IDE que le fichier est modifié n’est plus.  

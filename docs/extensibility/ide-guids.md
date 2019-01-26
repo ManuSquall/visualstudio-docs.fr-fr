@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c338ad22b9ca11b510ed331649f7264725249d1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d95d707f93b26b8344ac5e2c79c68e25b3027e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870386"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974407"
 ---
 # <a name="ide-guids"></a>GUID de l’IDE
 
@@ -41,7 +41,7 @@ Le <xref:Microsoft.VisualStudio.VSConstants> classe publie le GUID de certaines 
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11D1-9f64-00a0c911004f|
+|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Fichiers, des dossiers virtuels et physiques et des sous-projets
@@ -85,7 +85,7 @@ Le <xref:Microsoft.VisualStudio.VSConstants> classe publie le GUID de certaines 
 |Constante|GUID|
 |--------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds >|60481700-078b-11D1-aaf8-00a0c9055a90|
+|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
@@ -106,7 +106,7 @@ Le <xref:Microsoft.VisualStudio.VSConstants> classe publie le GUID de certaines 
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UserTasks>|1880202f-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11D0-A8C5-00A0C921A4D2|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
 ## <a name="component-selector-page-guids"></a>Page de sélecteur de composant GUID

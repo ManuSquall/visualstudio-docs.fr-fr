@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93fe45a6d286ab2acdf486e31c6d360af82e79ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974839"
 ---
 # <a name="how-to-implement-error-markers"></a>Procédure : Implémenter des marqueurs d’erreur
 Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalisations de l’éditeur de texte pour implémenter la plus difficile. Toutefois, les avantages qu’ils donnent aux utilisateurs de votre VSPackage peuvent compensent largement le coût afin de lui fournir. Marqueurs d’erreur légèrement marquer le texte que votre analyseur de langage juge incorrecte avec une ligne rouge ondulée ou ondulée. Cet indicateur permet aux programmeurs en affichant visuellement code incorrect.  

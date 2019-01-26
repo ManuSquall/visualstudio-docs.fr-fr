@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832607"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014599"
 ---
 # <a name="attach-to-the-program"></a>Attacher le programme
 Une fois que vous avez enregistré vos programmes avec le port approprié, vous devez attacher le débogueur au programme que vous souhaitez déboguer.  
@@ -68,5 +68,5 @@ Une fois que vous avez enregistré vos programmes avec le port approprié, vous 
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Attacher](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
+ [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
  [Attacher](../../extensibility/debugger/reference/idebugengine2-attach.md)

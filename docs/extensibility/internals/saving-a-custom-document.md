@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fd55353d09f7e08572eecb6c4729205150c2b03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 396058e226b074853c7570573adce73cf19194e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006761"
 ---
 # <a name="saving-a-custom-document"></a>Enregistrement d’un document personnalisé
 Les handles d’environnement le **enregistrer**, **enregistrer en tant que**, et **Enregistrer tout** commandes. Lorsqu’un utilisateur clique **enregistrer**, **enregistrer en tant que**, **ou enregistrer tout** sur le **fichier** menu ou ferme la solution, ce qui entraîne un Enregistrer tout, ce qui suit le processus se produit.  

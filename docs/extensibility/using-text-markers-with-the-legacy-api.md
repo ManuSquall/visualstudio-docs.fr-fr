@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 270cdaac1f58aefaf13535218613f50bbf645b59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866999"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981301"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>À l’aide de marqueurs de texte avec l’API héritée
 Un marqueur de texte est une plage flottante de texte dans une mémoire tampon qui peut affecter l’affichage et le comportement d’une zone de texte. Marqueurs incluent des points d’arrêt, les signets, les soulignements ondulés et les zones en lecture seule. Marqueurs de texte sont fondamentalement différents à partir de la coloration syntaxique. Coloration de la syntaxe est un moyen rapide de communiquer la syntaxe du langage qui est associée à une zone de texte. Coloration de la syntaxe est généralement demandée lorsque Windows redessine l’écran, la vitesse est importante. La coloration syntaxique modifie uniquement la couleur du texte. Marqueurs de texte peuvent modifier de nombreuses autres propriétés de texte. Marqueurs de texte peuvent « flotter » et appliquer un comportement particulier et la couleur.  

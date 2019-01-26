@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdb0c34f873e7f8dce5b771ece2d3620da4deb19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d534c5616bd32011fb4e84367911b9a8c1b29ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986941"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Cette interface représente un frame de pile dans une pile des appels dans un thread particulier.  

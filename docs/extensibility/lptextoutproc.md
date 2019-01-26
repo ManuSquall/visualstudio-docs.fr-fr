@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55c65b7344169f14679d8eb9493cec2e4569af65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956840"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009997"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Lorsque l’utilisateur exécute une opération de contrôle de code source à partir d’à l’intérieur de l’environnement de développement intégré (IDE), le plug-in de contrôle de code source pouvez souhaiter transmettre les messages d’erreur ou d’état concernant l’opération. Le plug-in peut afficher ses propres boîtes de message à cet effet. Toutefois, pour une intégration plus transparente, le plug-in peut passer des chaînes à l’IDE, ce qui les affiche ensuite dans ses moyen natif d’affichage des informations d’état. Le mécanisme est le `LPTEXTOUTPROC` pointeur de fonction. L’IDE implémente cette fonction (décrite plus en détail ci-dessous) pour afficher l’erreur et état.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051052a9eeddf45f66bf9b01dcbf608f396b7d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: feb6dbdd01727d6131b6f5dc2633624e6c89672a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976327"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instructions de contrôle de sources supplémentaires pour les projets et les éditeurs
 Il existe un certain nombre d’instructions qui projets et les éditeurs doivent respecter pour prendre en charge le contrôle de code source.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a350cb906d38baf3b82bf688b431718dab75b376
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982765"
 ---
 # <a name="deploy-custom-start-pages"></a>Déployer les Pages de démarrage personnalisées
 
@@ -75,9 +75,9 @@ Vous pouvez obtenir le modèle de projet Page de démarrage à l’aide de **Ges
 
 4.  Modifier le *.pkgdef* pour définir la page de démarrage par défaut sous HKLM en ajoutant le code suivant, où *MyStartPage.xaml* est le nom de la *.xaml* fichier qui contient votre début Page.
 
-     [$RootKey$ \StartPage\Default]
+     [$RootKey$\StartPage\Default]
 
-     « Uri « = » $PackageFolder$\\*MyStartPage.xaml*»
+     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"
 
      Cela indique à Visual Studio de rechercher dans le nouvel emplacement de la Page de démarrage.
 

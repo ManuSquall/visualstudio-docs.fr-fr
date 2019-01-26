@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55cbc596824e0a02398ee1ad0ff420db0746089a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010247"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly, élément (extension de l’Assistant modèle Visual Studio)
 Spécifie le nom ou le nom fort de l’assembly qui implémente le `IWizard` interface.  
   
- \<VSTemplate >  
-\<WizardExtension >  
-\<Assembly >  
+ \<VSTemplate>  
+\<WizardExtension>  
+\<Assembly>  
   
 ## <a name="syntax"></a>Syntaxe  
   
