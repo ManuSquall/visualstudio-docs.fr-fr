@@ -1,5 +1,5 @@
 ---
-title: 'CA1302 : Ne pas coder en dur les chaînes de spécifiques de paramètres régionaux'
+title: 'CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b05f1aa31a38ff4f8e707d53d062abe3d10617fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5698cbc9621747ce4d84ba1d70a0036571fa9bcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939593"
 ---
-# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302 : Ne pas coder en dur les chaînes de spécifiques de paramètres régionaux
+# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux
 
 |||
 |-|-|
