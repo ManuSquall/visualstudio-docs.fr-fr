@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953155"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866790"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procédure : Définir le descripteur de type d’un paramètre
   Un descripteur de type contient des propriétés qui décrivent le type de données d'un paramètre. Un descripteur de type peut définir un champ, une entité ou une collection d’entités. Pour plus d’informations, consultez [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
@@ -83,7 +83,7 @@ ms.locfileid: "53953155"
   
 2. Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
   
-3. Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacte**).  
+3. Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacts**).  
   
 4. Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d’entités.  
   
@@ -95,19 +95,19 @@ ms.locfileid: "53953155"
   
       L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de classes dans votre projet.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`  
   
    - Pour un type situé dans un assembly de votre solution, le nom qualifié complet comprend le nom du type, le nom de l'assembly, le numéro de version, la culture et le jeton de clé publique.  
   
       L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de types dans un assembly que vous référencez dans votre solution.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089]'  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
   
    - Pour un type défini dans le modèle d'objet BDC, le nom qualifié complet inclut uniquement l'espace de noms et le nom du type.  
   
       L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de types définis dans le modèle d’objet BDC.  
   
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
   
 6. Dans le **détails de méthode BDC** fenêtre, ouvrez la liste qui s’affiche pour le descripteur de type, puis choisissez **modifier**.  
   
