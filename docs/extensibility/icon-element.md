@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad2a273f533136fa75b0b064f2328b5b59d6d161
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974524"
 ---
 # <a name="icon-element"></a>Élément Icon
 L’attribut guid de la balise de l’icône est le guid d’une image bitmap définis. Le `id` attribut sélectionne l’emplacement de la bande de bitmaps. Cet élément est facultatif. Si cet élément n’est pas inclus la valeur de **guidOfficeIcon:msotcidNoIcon** est implicite.  
@@ -34,7 +34,7 @@ L’attribut guid de la balise de l’icône est le guid d’une image bitmap d�
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. Le guid d’une image bitmap définis.|  
+|guid|Obligatoire. Le guid d’une image bitmap définis.|  
 |ID|Obligatoire. Sélectionne l’emplacement de la bande de bitmaps.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
