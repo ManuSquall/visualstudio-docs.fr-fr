@@ -14,15 +14,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7453ad957b5f3da0907ac6887524d6523ac2c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27017978d01252870b7a92a88f49afe595dc1de8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945884"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863641"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architecture des compléments VSTO
   Les compléments VSTO créés à l'aide des Outils de développement Office dans Visual Studio ont des fonctionnalités en termes d'architecture qui mettent l'accent sur la stabilité et la sécurité, et qui leur permettent de fonctionner étroitement avec Microsoft Office. Cette rubrique décrit les aspects suivants des compléments VSTO :  
