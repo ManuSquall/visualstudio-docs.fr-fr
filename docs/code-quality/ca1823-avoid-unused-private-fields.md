@@ -1,5 +1,5 @@
 ---
-title: 'CA1823 : Évitez les champs privés inutilisés'
+title: 'CA1823 : Évitez les champs privés inutilisés'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 614f94f6-0dc7-430f-8124-cb889a4a720f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5610e97b623c21a7a0f380e9f2e070400e0aefc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad70fbcb8052e45f4819db2f8d423ce4f70ce697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971531"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823 : Évitez les champs privés inutilisés
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823 : Évitez les champs privés inutilisés
 
 |||
 |-|-|
