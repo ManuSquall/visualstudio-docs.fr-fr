@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa171ec3f0d9718f40f2c1c77b2ba692466b3cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82cea5721a68c9c4a11a53caa7c7db89b69ac72a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941890"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 Cette structure spécifie des informations sur un type de champ extraites à partir d’un symbole PDB.  
@@ -47,7 +47,7 @@ public struct PDB_TYPE {
  guidModule  
  Le GUID du module qui contient ce champ.  
   
- SymID  
+ symid  
  ID de symbole qui correspond à ce champ.  
   
 ## <a name="remarks"></a>Notes  

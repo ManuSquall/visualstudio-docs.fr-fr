@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52d1f4f1ec6f551950fdb47808c340f8e3c41cfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dda01a7afb5c7cc3248e465e526d11b534efb17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034052"
 ---
 # <a name="project-types"></a>Types de projet
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] inclut plusieurs types de projets pour les langages tels que [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet également de créer vos propres types de projet.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7f9b650c0d355d83137e302fc716f343d47b57d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c06702cb49ef48dafe24e7c54a5e8239d0eab42
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917079"
 ---
 # <a name="saving-a-standard-document"></a>Enregistrement d’un document standard
 L’environnement gère l’enregistrer, enregistrer sous et enregistrer toutes les commandes. Lorsqu’un utilisateur sélectionne **enregistrer**, **enregistrer en tant que**, ou **Enregistrer tout** à partir de la **fichier** menu ou ferme la solution, ce qui entraîne un  **Enregistrer tous les**, le processus suivant se produit.  

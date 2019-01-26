@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e516e3b7af7cfdbbb2c30ff5045a8b05349d7986
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41075bf41b63377ad6522b1be9602fe184b52217
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929677"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisation et affichage des données
 Visualiseurs de type et les visionneuses personnalisées présentent les données de manière significative rapidement à un développeur. L’évaluateur d’expression (EE) peut prendre en charge les visualiseurs de types de fournisseurs tiers ainsi que fournir ses propres visionneuses personnalisées.  

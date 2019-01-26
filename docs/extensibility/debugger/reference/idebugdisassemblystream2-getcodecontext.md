@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0910490ee6e75aeffe1e07f54b5b106440296efa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93f43cc63123b61ed94eaab638e82620095b7ea0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850123"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949741"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 Retourne un objet de contexte de code correspondant à un identificateur d’emplacement de code spécifié.  

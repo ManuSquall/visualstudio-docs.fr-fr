@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b83da9cfa04183a1820d8b455d6bc609216cf9cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962686"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975294"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment VSPackages ajoute des éléments d’interface utilisateur
 Un VSPackage peut ajouter des éléments d’interface (UI) utilisateur, par exemple, les menus, barres d’outils et de l’outil windows, à Visual Studio par le biais de la *.vsct* fichier.  
@@ -195,7 +195,7 @@ priority="0x0100" type="Menu">
 |ToolBar|[Élément menus](../../extensibility/menus-element.md), l’IDE, les autres packages VS|L’élément lui-même|0 à *n* groupes|  
 |Élément de menu|[Élément Buttons](../../extensibility/buttons-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même|-0 à *n* groupes|  
 |Bouton|[Élément Buttons](../../extensibility/buttons-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même||  
-|Liste déroulante|[Élément combos](../../extensibility/combos-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même||  
+|Combo|[Élément combos](../../extensibility/combos-element.md), l’IDE, les autres packages VS|1 à *n* des groupes, l’élément lui-même||  
   
 ### <a name="menu-command-and-group-placement"></a>Menu, commande et placement du groupe  
  Un menu, un groupe ou une commande peut apparaître dans plusieurs emplacements dans l’IDE. Pour un élément s’affiche dans plusieurs emplacements, il doit être ajouté à la `CommandPlacements` section comme un [élément CommandPlacement](../../extensibility/commandplacement-element.md). N’importe quel menu, groupe ou une commande peut être ajouté comme un emplacement de la commande. Toutefois, les barres d’outils ne peut pas être positionnés de cette manière, car ils ne peut pas apparaître dans plusieurs emplacements contextuelles.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 292e30a094cd78954e48817324a44ebacda7a78a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838162"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934532"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Instancier l’éditeur principal à l’aide de l’API héritée
 L’éditeur est responsable de la modification des fonctions telles que l’insertion, suppression, copier et coller de texte. Il combine ces fonctions avec les fonctions fournies par les services de langage, telles que la coloration du texte, de mise en retrait et de saisie semi-automatique des instructions IntelliSense.  

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933024"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 
@@ -39,7 +39,7 @@ Bien que les opérations de création peuvent sembler être différentes des op�
 
 La responsabilité d’une directive EMD consiste à déterminer la façon dont un objet ou un groupe d’objets doit être fusionné dans un emplacement particulier dans le modèle. En particulier, il détermine quelles sont les relations doivent être instanciées pour lier le groupe fusionné dans le modèle. Vous pouvez également personnaliser pour définir les propriétés et à créer des objets supplémentaires.
 
-![DSL&#45;EMD&#95;de fusion](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Une directive EMD est générée automatiquement lorsque vous définissez une relation d’incorporation. Cette valeur par défaut EMD crée une instance de la relation lorsque les utilisateurs ajoutent de nouvelles instances enfant au parent. Vous pouvez modifier ces EMDs par défaut, par exemple en ajoutant du code personnalisé.
 
@@ -49,7 +49,7 @@ Vous pouvez également ajouter vos propres EMDs dans la définition DSL, pour pe
 
 Vous pouvez ajouter des directives de fusion d’élément pour les classes de domaine, des relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez ajouter ou les trouver dans l’Explorateur DSL sous la classe de domaine de réception. La classe de récepteur est la classe de domaine de l’élément qui est déjà dans le modèle, et sur lequel l’élément nouveau ou copié est fusionnée.
 
-![DSL&#45;EMD&#95;détails](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 Le **l’indexation de la classe** est la classe de domaine d’éléments qui peuvent être fusionnées dans les membres de la classe réceptrice. Instances de sous-classes de la classe de l’indexation sont également fusionnés par cette EMD, sauf si vous définissez **s’applique aux sous-classes** sur False.
 

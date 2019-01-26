@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 312bbab46cfb7dec85e42f425b2363c2442e576b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910933"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016224"
 ---
 # <a name="createpkgdef-utility"></a>Utilitaire CreatePkgDef
 Prend un fichier .dll pour une extension Visual Studio en tant que paramètre et crée un *.pkgdef* fichier pour accompagner le *.dll* fichier. Le *.pkgdef* fichier contient toutes les informations qui seraient sinon écrits dans le Registre système lors de l’extension est installée.  
@@ -33,13 +33,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```  
   
 ## <a name="arguments"></a>Arguments  
- **/ out =&lt;nom de fichier&gt;**  
+ **/out=&lt;FileName&gt;**  
  Obligatoire. Définit le nom de la *.pkgdef* fichier de sortie &lt;FileName&gt;.  
   
  **/codebase**  
  Facultatif. Force l’inscription avec le **CodeBase** utilitaire.  
   
- **assembly**  
+ **/assembly**  
  Force l’inscription avec le **Assembly** utilitaire.  
   
  **&lt;AssemblyPath&gt;**  
@@ -52,7 +52,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
-- *%VSInstallDir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
   Si le dossier d’installation est *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, l’extension sera reconnue par Visual Studio, mais sera désactivée par défaut. L’utilisateur peut activer l’extension à l’aide de **Extensions et mises à jour**. 
    

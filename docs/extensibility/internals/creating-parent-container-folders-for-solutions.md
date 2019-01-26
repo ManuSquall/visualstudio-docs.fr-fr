@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 531e1cbf3e8489fd68d2bbd94c9a66af3c817a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929937"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Créer des dossiers pour les solutions de conteneur parent
 Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécifier une destination de contrôle de source de racine unique pour tous les projets web dans la solution. Cette racine unique est appelée une racine d’unifiée Super (Sud).  
@@ -56,14 +56,14 @@ Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il est recomm
   
 |Contient de la solution|Sur les emplacements de disque|Structure de base de données par défaut|  
 |-----------------------|-----------------------|--------------------------------|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> WEB2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/C/Web1<br /><br /> $/ < user_choice > / Web2|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/D/web1<br /><br /> $/ < user_choice >/sln1/win1|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/ < user_choice >/C/Web1<br /><br /> $/<user_choice>/Web2|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/<user_choice>/D/web1<br /><br /> $/<user_choice>/sln1/win1|  
   
  Le dossier du Sud et les sous-dossiers sont créés indépendamment de si l’opération est annulée ou échoue en raison d’une erreur. Ils ne sont pas supprimés automatiquement dans les conditions d’annuler ou d’erreur.  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comportement de la Version 1.1 par défaut si le plug-in de contrôle de code source ne renvoie pas `SCC_CAP_CREATESUBPROJECT` et `SCC_CAP_GETPARENTPROJECT` indicateurs de capacité. En outre, les utilisateurs de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut choisir de restaurer le comportement de la Version 1.1 en définissant la valeur de la clé suivante à *DWORD : 00000001*:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *DWORD : 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
   
 ## <a name="see-also"></a>Voir aussi  
  [Nouveautés de la Version 1.2 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee148a9455e9d1fc0f5615ecc03d15154bff20a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919315"
 ---
 # <a name="source-control-integration-overview"></a>Présentation de l’intégration du contrôle de code source
 Cette section compare les deux façons d’intégrer le contrôle de code source Visual Studio ; un contrôle de source de plug-in et un VSPackage qui fournit une solution de contrôle source et met en évidence les nouvelles fonctionnalités de contrôle de code source. Visual Studio permet un basculement manuel entre le contrôle de code source VSPackages et les plug-ins de contrôle de code source, ainsi que pour le basculement automatique basé sur la solution.  

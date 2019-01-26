@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7abb030ab98976a6e55a5d297cf510f01842e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922837"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929125"
 ---
 # <a name="create-a-software-development-kit"></a>Création d’un kit de développement logiciel
 Un kit de développement logiciel (SDK) est une collection d’API que vous pouvez référencer en tant qu’un seul élément dans Visual Studio. Le **Gestionnaire de références** boîte de dialogue répertorie tous les kits de développement logiciel qui sont pertinents pour le projet. Lorsque vous ajoutez un kit SDK à un projet, les API sont disponibles dans Visual Studio.  
@@ -75,7 +75,7 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 
 1.  Spécifier dans une clé de Registre :  
 
-     **Kits de développement logiciel HKLM\Software\Microsoft\Microsoft\<plateforme cible > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\  
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\  
 
      et ajoutez une sous-clé (par défaut) qui a la valeur `<path to SDK><SDKName><SDKVersion>`.  
 
@@ -160,11 +160,11 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 1. DisplayName : la valeur qui apparaît dans le Gestionnaire de références, l’Explorateur de solutions, Explorateur d’objets et autres emplacements dans l’interface utilisateur pour Visual Studio.  
 
-2. ProductFamilyName : Le nom de produit SDK global. Par exemple, le [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK est nommé « Microsoft.WinJS.1.0 » et « Microsoft.WinJS.2.0 », qui appartiennent à la même famille de la famille de produits de kit de développement logiciel, « Microsoft.WinJS ». Cet attribut permet à Visual Studio et MSBuild établir cette connexion. Si cet attribut n’existe pas, le nom du SDK est utilisé comme nom de famille de produit.  
+2. ProductFamilyName: Le nom de produit SDK global. Par exemple, le [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK est nommé « Microsoft.WinJS.1.0 » et « Microsoft.WinJS.2.0 », qui appartiennent à la même famille de la famille de produits de kit de développement logiciel, « Microsoft.WinJS ». Cet attribut permet à Visual Studio et MSBuild établir cette connexion. Si cet attribut n’existe pas, le nom du SDK est utilisé comme nom de famille de produit.  
 
-3. FrameworkIdentity : Spécifie une dépendance sur un ou plusieurs bibliothèques de composants de Windows que la valeur de cet attribut est placée dans le manifeste de l’application consommatrice. Cet attribut s’applique uniquement aux bibliothèques de composants Windows.  
+3. FrameworkIdentity: Spécifie une dépendance sur un ou plusieurs bibliothèques de composants de Windows que la valeur de cet attribut est placée dans le manifeste de l’application consommatrice. Cet attribut s’applique uniquement aux bibliothèques de composants Windows.  
 
-4. TargetFramework : Spécifie les kits SDK qui sont disponibles dans le Gestionnaire de références et de la boîte à outils. Il s’agit d’une liste délimitée par des points-virgules des monikers du framework cible, par exemple « .NET Framework, version = v2.0 ; .NET Framework, version = v4.5.1 ». Si plusieurs versions du même framework cible sont spécifiées, le Gestionnaire de références utilise la version la plus basse spécifiée pour le filtrage à des fins. Par exemple, si « .NET Framework, version = v2.0 ; .NET Framework, version = v4.5.1 » est spécifié, Gestionnaire de références utilisera « .NET Framework, version = v2.0 ». Si un profil de framework cible spécifique est spécifié, uniquement ce profil sera utilisé par le Gestionnaire de références pour le filtrage à des fins. Par exemple, lorsque « Silverlight, version = v4.0, profil = WindowsPhone » est spécifié, les filtres de gestionnaire de références sur uniquement le profil Windows Phone ; un projet qui cible le Framework Silverlight 4.0 ne voit pas le Kit de développement dans le Gestionnaire de références.  
+4. TargetFramework: Spécifie les kits SDK qui sont disponibles dans le Gestionnaire de références et de la boîte à outils. Il s’agit d’une liste délimitée par des points-virgules des monikers du framework cible, par exemple « .NET Framework, version = v2.0 ; .NET Framework, version = v4.5.1 ». Si plusieurs versions du même framework cible sont spécifiées, le Gestionnaire de références utilise la version la plus basse spécifiée pour le filtrage à des fins. Par exemple, si « .NET Framework, version = v2.0 ; .NET Framework, version = v4.5.1 » est spécifié, Gestionnaire de références utilisera « .NET Framework, version = v2.0 ». Si un profil de framework cible spécifique est spécifié, uniquement ce profil sera utilisé par le Gestionnaire de références pour le filtrage à des fins. Par exemple, lorsque « Silverlight, version = v4.0, profil = WindowsPhone » est spécifié, les filtres de gestionnaire de références sur uniquement le profil Windows Phone ; un projet qui cible le Framework Silverlight 4.0 ne voit pas le Kit de développement dans le Gestionnaire de références.  
 
 5. MinVSVersion : La version minimale de Visual Studio.  
 

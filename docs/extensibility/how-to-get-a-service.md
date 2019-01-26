@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e848b3e54d1e3beb6b9681112cd55b74caa6a482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949858"
 ---
 # <a name="how-to-get-a-service"></a>Procédure : Bénéficiez d’un service
 Vous devez souvent obtenir des services Visual Studio pour accéder aux différentes fonctionnalités. En règle générale, un service de Visual Studio fournit une ou plusieurs interfaces que vous pouvez utiliser. Vous pouvez obtenir la plupart des services à partir d’un VSPackage.  
@@ -39,7 +39,7 @@ Vous devez souvent obtenir des services Visual Studio pour accéder aux différe
   
    ```  
   
-    Ce code obtient un service SVsActivityLog et caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour obtenir un exemple, consultez [Comment : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+    Ce code obtient un service SVsActivityLog et caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour voir un exemple, consultez [Comment : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
   
@@ -50,7 +50,7 @@ Vous devez souvent obtenir des services Visual Studio pour accéder aux différe
   
  La méthode statique <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> méthode s’appuie sur un fournisseur de services de mise en cache qui est initialisé à la première fois qu’un VSPackage dérivé <xref:Microsoft.VisualStudio.Shell.Package> est placé.  
   
- Étant donné que le constructeur de VSPackage est appelé avant le VSPackage est dans le site, les services globaux sont généralement pas disponibles dans le constructeur de VSPackage. Consultez [Guide pratique pour Dépanner les services](../extensibility/how-to-troubleshoot-services.md) pour une solution de contournement.  
+ Étant donné que le constructeur de VSPackage est appelé avant le VSPackage est dans le site, les services globaux sont généralement pas disponibles dans le constructeur de VSPackage. Voir [Guide pratique pour Dépanner les services](../extensibility/how-to-troubleshoot-services.md) pour une solution de contournement.  
   
  Voici un exemple de la façon d’obtenir un service dans une fenêtre outil ou un autre élément non VSPackage.  
   

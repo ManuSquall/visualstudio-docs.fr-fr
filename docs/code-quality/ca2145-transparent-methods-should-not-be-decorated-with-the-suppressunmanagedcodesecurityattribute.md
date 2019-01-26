@@ -1,5 +1,5 @@
 ---
-title: 'CA2145 : Méthodes transparentes ne doivent pas être décorées avec SuppressUnmanagedCodeSecurityAttribute'
+title: 'CA2145 : Les méthodes transparentes ne doivent pas être décorées avec SuppressUnmanagedCodeSecurityAttribute'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 81970700-b438-4b3b-9239-16887e16f7b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3d2fe5c2c4e75376f88af7679f6838561848c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba7926f04f6112b28770110614fa18be88b028a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018161"
 ---
-# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145 : Méthodes transparentes ne doivent pas être décorées avec SuppressUnmanagedCodeSecurityAttribute
+# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145 : Les méthodes transparentes ne doivent pas être décorées avec SuppressUnmanagedCodeSecurityAttribute
 
 |||
 |-|-|

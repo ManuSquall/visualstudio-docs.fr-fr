@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966558"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965690"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -45,22 +45,22 @@ Les fonctionnalités LSP suivantes sont prises en charge dans Visual Studio jusq
 
 Message | Prend en charge dans Visual Studio
 --- | ---
-initialiser | oui
+initialize | oui
 initialisé | oui
 arrêt | oui
 quitter | oui
-$/ cancelRequest | oui
-fenêtre/showMessage | oui
-fenêtre/showMessageRequest | oui
-fenêtre/logMessage | oui
+$/cancelRequest | oui
+window/showMessage | oui
+window/showMessageRequest | oui
+window/logMessage | oui
 événement de télémétrie / |
 client/registerCapability |
 client/unregisterCapability |
-espace de travail/didChangeConfiguration | oui
-espace de travail/didChangeWatchedFiles | oui
+workspace/didChangeConfiguration | oui
+workspace/didChangeWatchedFiles | oui
 espace de travail/symbole | oui
-espace de travail/executeCommand | oui
-espace de travail/applyEdit | oui
+workspace/executeCommand | oui
+workspace/applyEdit | oui
 textDocument/publishDiagnostics | oui
 textDocument/didOpen | oui
 textDocument/didChange | oui
@@ -68,22 +68,22 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | oui
 textDocument/didClose | oui
-textDocument/fin | oui
+textDocument/completion | oui
 Saisie semi-automatique ou résoudre | oui
-textDocument/pointage | oui
+textDocument/hover | oui
 textDocument/signatureHelp | oui
-textDocument/références | oui
+textDocument/references | oui
 textDocument/documentHighlight | oui
 textDocument/documentSymbol | oui
-textDocument/la mise en forme | oui
+textDocument/formatting | oui
 textDocument/rangeFormatting | oui
 textDocument/onTypeFormatting |
-textDocument/définition | oui
+textDocument/definition | oui
 textDocument/codeAction | oui
 textDocument/codeLens |
-codeLens ou résoudre |
+codeLens/resolve |
 textDocument/documentLink |
-documentLink ou résoudre |
+documentLink/resolve |
 textDocument/rename | oui
 
 ## <a name="getting-started"></a>Bien démarrer

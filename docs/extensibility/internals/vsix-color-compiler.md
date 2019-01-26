@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990855"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948399"
 ---
 # <a name="vsix-color-compiler"></a>Compilateur de couleur VSIX
 L’outil compilateur de couleur Visual Studio Extension est une application de console qui prend un fichier .xml qui représente les couleurs des thèmes Visual Studio existants et les convertit en un .pkgdef de fichiers afin que ces couleurs peuvent être utilisées dans Visual Studio. Car il est facile de comparer les différences entre les fichiers .xml, cet outil est utile pour la gestion des couleurs personnalisées dans le contrôle de code source. Elle également peut être raccordé à des environnements de build afin que la sortie de la build est un fichier .pkgdef valide.  
@@ -82,7 +82,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |Name|[Obligatoire] Le nom de la catégorie|  
 |GUID|[Obligatoire] GUID de la catégorie (doivent correspondre à la mise en forme de GUID)|  
   
- **Couleur**  
+ **Color**  
   
  Le \<couleur > élément définit une couleur d’un composant ou d’un état de l’interface utilisateur. Le schéma d’affectation de noms par défaut pour une couleur est [type d’interface utilisateur] [État]. N’utilisez pas le mot « color », car il est redondant. Une couleur doit clairement indiquer le type d’élément et les situations ou « état », pour laquelle la couleur est appliquée. Une couleur ne doit pas être vide et doit contenir une ou les deux un \<arrière-plan > et \<premier plan > élément. Éléments de couleur sont définis comme suit :  
   
@@ -110,7 +110,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Type|[Obligatoire] Le type de la couleur. Il peut avoir l'une des valeurs suivantes :<br /><br /> *CT_INVALID :* La couleur est non valide ou non définie.<br /><br /> *CT_RAW :* Une valeur ARVB brute.<br /><br /> *CT_COLORINDEX :* N’UTILISEZ PAS.<br /><br /> *CT_SYSCOLOR :* Une couleur système Windows à partir de SysColor.<br /><br /> *CT_VSCOLOR :* Une couleur de Visual Studio à partir de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC :* La couleur automatique.<br /><br /> *CT_TRACK_FOREGROUND :* N’UTILISEZ PAS.<br /><br /> *CT_TRACK_BACKGROUND :* N’UTILISEZ PAS.|  
+|Type|[Obligatoire] Le type de la couleur. Il peut avoir l'une des valeurs suivantes :<br /><br /> *CT_INVALID :* La couleur est non valide ou non définie.<br /><br /> *CT_RAW:* Une valeur ARVB brute.<br /><br /> *CT_COLORINDEX:* N’UTILISEZ PAS.<br /><br /> *CT_SYSCOLOR :* Une couleur système Windows à partir de SysColor.<br /><br /> *CT_VSCOLOR :* Une couleur de Visual Studio à partir de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* La couleur automatique.<br /><br /> *CT_TRACK_FOREGROUND :* N’UTILISEZ PAS.<br /><br /> *CT_TRACK_BACKGROUND :* N’UTILISEZ PAS.|  
 |Source|[Obligatoire] La valeur de la couleur représentée au format hexadécimal|  
   
  Toutes les valeurs prises en charge par l’énumération __VSCOLORTYPE sont pris en charge par le schéma dans l’attribut de Type. Toutefois, nous vous recommandons d’utiliser uniquement CT_RAW et CT_SYSCOLOR.  

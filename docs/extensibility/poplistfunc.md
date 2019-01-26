@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b888875720ae08ec4c8dffdc65031877f31ca924
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f35ae28a1a231721d5ee5616a3b075737c24e629
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982232"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Ce rappel est fourni à la [SccPopulateList](../extensibility/sccpopulatelist-function.md) par l’IDE et est utilisé par le plug-in de contrôle de code source pour mettre à jour une liste de fichiers ou répertoires (également fourni pour le `SccPopulateList` (fonction)).  
@@ -43,7 +43,7 @@ typedef BOOL (*POPLISTFUNC) (
  fAddRemove  
  Si `TRUE`, `lpFileName` est un fichier qui doit être ajouté à la liste des fichiers. Si `FALSE`, `lpFileName` est un fichier qui doit être supprimé à partir de la liste des fichiers.  
   
- État  
+ nStatus  
  État de `lpFileName` (une combinaison de la `SCC_STATUS` bits ; consultez [Code d’état de fichier](../extensibility/file-status-code-enumerator.md) pour plus d’informations).  
   
  lpFileName  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b1413acafd4358d4b29435a0cd62edd5a8ce22e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940828"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permettent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconnaître et à travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (d’inscription.rgs) du Registre.  
@@ -222,7 +222,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
   
 |Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|La ressource à récupérer les informations de menu.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|La ressource à récupérer les informations de menu.|  
   
  Les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   

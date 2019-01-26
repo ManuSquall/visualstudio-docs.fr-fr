@@ -1,5 +1,5 @@
 ---
-title: 'CA2100 : Passez en revue les requêtes SQL pour les failles de sécurité'
+title: 'CA2100 : Vérifier si les requêtes SQL présentent des failles de sécurité'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a09567184ab1f02cba8ff55157a2d506989c98ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26e4b1c291c536597f699bd57cc11c041c3b168b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939281"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100 : Passez en revue les requêtes SQL pour les failles de sécurité
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100 : Vérifier si les requêtes SQL présentent des failles de sécurité
 
 |||
 |-|-|

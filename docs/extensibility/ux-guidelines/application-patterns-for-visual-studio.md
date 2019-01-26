@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938391"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interactions de la fenêtre  
@@ -407,7 +407,7 @@ N’utilisez pas les clés d’accès de **OK**, **Annuler**, ou **aide** bouton
 | Annuler | Échap |  
 | Help | F1 |  
 
-#### <a name="imagery"></a>IMAGERIE  
+#### <a name="imagery"></a>Imagery  
 Utilisez des images avec parcimonie dans les boîtes de dialogue. Ne pas utiliser de grandes icônes dans les boîtes de dialogue simplement pour utiliser l’espace. Utiliser des images uniquement si elles sont une partie importante de transmettre le message à l’utilisateur, telles que des icônes d’avertissement ou des animations d’état.  
 
 ###  <a name="BKMK_PrioritizingAndLayering"></a> Définition des priorités et superposition  
@@ -515,10 +515,10 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
 | Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |  
 | Maj + faire glisser | Source | Référence de suppressions à l’élément d’origine | Aucun dépôt |  
 | Maj + faire glisser | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucun dépôt |  
-| CTRL + faire glisser | Action | Copier | Aucun dépôt |  
-| CTRL + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |  
-| CTRL + faire glisser | Source | Conserve la référence à l’élément d’origine | Aucun dépôt |  
-| CTRL + faire glisser | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucun dépôt |  
+| Ctrl+Drag | Action | Copier | Aucun dépôt |  
+| Ctrl+Drag | une cible | Ajoute la référence à l’élément d’origine | Aucun dépôt |  
+| Ctrl+Drag | Source | Conserve la référence à l’élément d’origine | Aucun dépôt |  
+| Ctrl+Drag | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | Aucun dépôt |  
 | Ctrl + Maj + faire glisser | Action | Lien | Lien |  
 | Ctrl + Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément d’origine |  
 | Ctrl + Maj + faire glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |  
@@ -546,10 +546,10 @@ Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de co
 | Maj + faire glisser | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
 | Maj + faire glisser | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine |
 | Maj + faire glisser | Résultat | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
-| CTRL + faire glisser | Action | Copier | Copier |
-| CTRL + faire glisser | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
-| CTRL + faire glisser | Source | Conserve la référence à l’élément d’origine | Conserve la référence à l’élément d’origine |
-| CTRL + faire glisser | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
+| Ctrl+Drag | Action | Copier | Copier |
+| Ctrl+Drag | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
+| Ctrl+Drag | Source | Conserve la référence à l’élément d’origine | Conserve la référence à l’élément d’origine |
+| Ctrl+Drag | Résultat | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Ctrl + Maj + faire glisser | | Aucun dépôt | Aucun dépôt |
 | Couper/coller | Action | Déplacement | Déplacement |
 | Couper/coller | une cible | Élément de copie à l’emplacement cible | Élément de copie à l’emplacement cible |
@@ -573,10 +573,10 @@ Le tableau suivant résume les opérations de glisser-déplacer (ainsi que de co
 | Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
 | Maj + faire glisser | Source | Référence de suppressions à l’élément d’origine | Supprime l’élément à partir de l’emplacement d’origine | 
 | Maj + faire glisser | Résultat | `DROPEFFECT_ MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ MOVE` est retourné en tant qu’action à partir de `::Drop` et de l’élément est supprimé de l’emplacement d’origine dans le stockage |
-| CTRL + faire glisser | Action | Copier | Copier |
-| CTRL + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
-| CTRL + faire glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
-| CTRL + faire glisser | Résultat | `DROPEFFECT_ COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
+| Ctrl+Drag | Action | Copier | Copier |
+| Ctrl+Drag | une cible | Ajoute la référence à l’élément d’origine | Élément de copie à l’emplacement cible |
+| Ctrl+Drag | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |
+| Ctrl+Drag | Résultat | `DROPEFFECT_ COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage | `DROPEFFECT_ COPY` est retourné en tant qu’action à partir de `::Drop` et de l’élément reste dans l’emplacement d’origine dans le stockage |
 | Ctrl + Maj + faire glisser | Action | Lien | Lien |
 | Ctrl + Maj + faire glisser | une cible | Ajoute la référence à l’élément d’origine | Ajoute la référence à l’élément source d’origine |
 | Ctrl + Maj + faire glisser | Source | Conserve la référence à l’élément d’origine | Conserve l’élément d’origine |

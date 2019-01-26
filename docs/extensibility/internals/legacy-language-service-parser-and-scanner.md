@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c4cc6728600fc4bf605c0600014897025cc27ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988036"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 L’analyseur est le cœur du service de langage. Les classes de langage de Managed Package Framework (MPF) nécessitent un analyseur de langage pour sélectionner des informations sur le code affiché. Un analyseur sépare le texte en jetons lexicaux et identifie ces jetons par type et de fonctionnalités.  
@@ -41,7 +41,7 @@ namespace MyNamespace
   
 |Nom du jeton|Type de jeton|  
 |----------------|----------------|  
-|espace de noms, void publique, classe, int|keyword|  
+|namespace, class, public, void, int|keyword|  
 |=|opérateur|  
 |{ } ( ) ;|délimiteur|  
 |MyNamespace, MyClass, MyFunction, arg1, var1|'identificateur'|  
