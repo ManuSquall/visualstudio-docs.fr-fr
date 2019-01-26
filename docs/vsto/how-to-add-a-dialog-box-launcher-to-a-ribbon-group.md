@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac39cd45c566d837d34cf8e7be0cf94ded8de419
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846202"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862536"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procédure : Ajouter un lanceur de boîte de dialogue à un groupe de ruban
   Vous pouvez ajouter un lanceur de boîte de dialogue à n’importe quel groupe sur un ruban. Un lanceur de boîte de dialogue est une petite icône qui apparaît dans un groupe. Les utilisateurs cliquent sur cette icône pour ouvrir les boîtes de dialogue connexes ou des volets de tâches qui fournissent des options plus qui se rapportent au groupe.  
