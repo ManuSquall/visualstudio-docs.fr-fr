@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37cb183f8b48211da87b03128d5839cf64aca985
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841237"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069731"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procédure : Fournir l’automatisation pour windows
 Vous pouvez fournir l’automatisation pour les documents et outils windows. Automatisation de la fourniture est conseillée chaque fois que vous souhaitez rendre disponibles les objets automation sur une fenêtre et l’environnement ne fournit pas déjà un objet automation prêtes à l’emploi, comme il le fait avec une liste de tâches.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961596"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge de site web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Modèles de projet et d’élément de site Web fournissent un site Web réutilisables et personnalisables des stubs qui accélèrent le processus de développement en supprimant la nécessité de créer de nouveaux projets de site Web et des éléments à partir de zéro. Pour plus d’informations sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèles, consultez [création de projet et modèles d’élément](../../ide/creating-project-and-item-templates.md).
@@ -57,7 +57,7 @@ ms.locfileid: "53875230"
 
      La page d’accueil par défaut pour le nouveau site Web. L’attribut de langage spécifie le langage de code-behind, et l’attribut CodeFile indique le fichier dépendant qui contient le code code-behind associé à cette page.
 
--   Default.aspx. *extension*
+-   Default.aspx.*extension*
 
      Le fichier dépendant qui contient le code code-behind pour la page d’accueil par défaut. Le langage de code-behind détermine le *extension* de ce fichier.
 

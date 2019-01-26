@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c91ac932692ac63cfd4f8129fdff65993cddf2e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1af69580293e4ff37d0a23e3050955c96cc8f10b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988270"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Obtient une interface spécifiée au-delà des limites de processus.  

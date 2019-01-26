@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ceaa78315c896350f87d216e2cc320b66844999
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61319e723083e2f3daf91621ec46723fcb28f3ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938092"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Préparer des extensions pour le déploiement Windows Installer
 Vous ne pouvez pas utiliser un package Windows Installer (MSI) pour déployer un package VSIX. Toutefois, vous pouvez extraire le contenu d’un package VSIX pour le déploiement du MSI. Ce document montre comment préparer un projet dont la sortie par défaut est un package VSIX pour l’inclusion dans un projet d’installation.  

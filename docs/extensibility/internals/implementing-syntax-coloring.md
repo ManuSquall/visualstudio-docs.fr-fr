@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bfa07fd46c95ada3135602f2fc09743fcaef08b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de1a73cda8be9e56b0cad605f5507d52509ec906
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820785"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038043"
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
 Lorsque le service de langage fournit la coloration syntaxique, l’analyseur convertit une ligne de texte dans un tableau d’éléments coloriables et retourne les types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner des types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] affiche chaque élément coloriable dans la fenêtre de code selon les attributs assignés par l’objet de Coloriseur pour le type de jeton approprié.  

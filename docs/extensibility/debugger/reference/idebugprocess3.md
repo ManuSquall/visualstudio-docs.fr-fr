@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499f495308f885230bb14f34abe87c4f735ddb24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca432c7999d4ec3e7ff4a5a8700eea698486798
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962493"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962795"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Cette interface représente un processus en cours d’exécution et ses programmes. Cette interface existe sous la forme d’un remplacement pour plusieurs méthodes dans le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface. Il fournit un contrôle sur tous les programmes dans le processus.  

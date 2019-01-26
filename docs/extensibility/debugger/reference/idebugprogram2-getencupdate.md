@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00e640ab40adb6a87199b339e47f3e4a9aafb276
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09caf056b01efa9c09e07362d2c195599f53be51
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962889"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Cette méthode obtient la mise à jour de modifier & Continuer (ENC) pour ce programme. Un moteur de débogage personnalisé retourne toujours `E_NOTIMPL`.  

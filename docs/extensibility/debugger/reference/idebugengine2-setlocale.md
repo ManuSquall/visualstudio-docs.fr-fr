@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6881a217ba1d5db885c8c963885eb69e4257b26e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e736211dd4256b2a2d85a8b2f23e2474e1e4da30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934784"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 Définit les paramètres régionaux du moteur de débogage (dé).  

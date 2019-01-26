@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a22adb627edcbda6f823c659b20f41524b83a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949023"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Sous le capot, deuxième partie
 Dans [nouvelle génération de projet : En coulisses, une partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous l’avons vu comment le **nouveau projet** boîte de dialogue boîte est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#**, renseigné le **nom** et **emplacement** zones de texte et cliquer sur OK.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989748"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974017"
 ---
 # <a name="custom-colorable-items"></a>Éléments coloriables personnalisés
 Vous pouvez remplacer la liste des types pour la colorisation, telles que les mots clés et des commentaires, en implémentant des éléments coloriables personnalisés dans le cadre de votre service de langage.  
@@ -30,7 +30,7 @@ Vous pouvez remplacer la liste des types pour la colorisation, telles que les mo
 > [!CAUTION]
 >  Vous devez inclure le nom du langage dans le nom de l’élément coloriable pour éviter les conflits avec des noms d’élément coloriable existants. Si vous modifiez le nom d’un de vos éléments coloriables pendant le développement, vous devez réinitialiser le cache a été créé à la première fois que vos éléments coloriables ont eu accès. Vous pouvez réinitialiser le cache expérimental avec le **CreateExpInstance** outil, qui est installé avec le SDK de Visual Studio, généralement dans le répertoire :  
 >   
->  *C:\Program fichiers (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  Pour réinitialiser le cache, entrez **CreateExpInstance /Reset**. Pour plus d’informations sur **CreateExpInstance**, consultez [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md).  
   

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6a15432e170c814a6e80aebb86a9db31d073a98b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2527739c40802f3e21ea4fabebfc20fb09cdcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962129"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propriétés des formes de compartiment
 Formes de compartiments sont une des formes que vous pouvez utiliser pour afficher une classe de domaine dans un langage spécifique à un domaine. Vous pouvez développer et réduire les compartiments.
@@ -39,7 +39,7 @@ Formes de compartiments sont une des formes que vous pouvez utiliser pour affich
 |Épaisseur du contour|L’épaisseur du contour de cette forme.|0.03125|
 |Couleur du texte|La couleur utilisée pour les éléments décoratifs de texte qui sont associés à cette forme.|Noir|
 |Modificateur d'accès|Le niveau d’accès de la forme de compartiment (`public` ou `internal`).|Public|
-|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de cette forme de compartiment|\<Aucun >|
+|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de cette forme de compartiment|\<aucune>|
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir de la forme de compartiment (`none`, `abstract` ou `sealed`).|Aucun.|
@@ -47,14 +47,14 @@ Formes de compartiments sont une des formes que vous pouvez utiliser pour affich
 |Name|Le nom de cette forme.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à cette forme.|Espace de noms actuel|
 |Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|none|
-|Notes|Remarques informelles associées à cette forme.|\<Aucun >|
+|Notes|Remarques informelles associées à cette forme.|\<aucune>|
 |Hauteur initiale|La hauteur initiale de cette forme, en pouces. Pour les formes de compartiment, c’est la hauteur de la section d’en-tête, et il ne peut pas être redimensionné.|1|
 |Largeur initiale|Largeur initiale de cette forme, en pouces.|1,5|
 |Couleur de remplissage exposé en tant que propriété<br /><br /> Mode de remplissage exposé dégradé<br /><br /> Exposé de couleur du contour en tant que propriété<br /><br /> Exposé de Style de tiret de contour en tant que propriété<br /><br /> Épaisseur du contour en tant que propriété d’exposées<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour définir ceci, avec le bouton droit de la définition de forme, puis cliquez sur **ajouter les objets exposés**.|False|
-|Description|Utilisé pour documenter le concepteur généré.|\<Aucun >|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour cette forme.|\<Aucun >|
-|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<Aucun >|
-|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cette forme.|\<Aucun >|
+|Description|Utilisé pour documenter le concepteur généré.|\<aucune>|
+|Nom complet|Le nom qui s’affichera dans le concepteur généré pour cette forme.|\<aucune>|
+|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
+|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cette forme.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
 

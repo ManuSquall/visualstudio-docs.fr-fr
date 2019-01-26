@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969088"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procédure : Les polices intégrées d’accès et des couleurs ccheme
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -49,7 +49,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
 
 1.  Construire un type spécial d’entrée de Registre de catégorie dans l’emplacement suivant :
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<version de Visual Studio > \FontAndColors\\\<catégorie >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<Catégorie >* est le nom non localisé de la catégorie.
 

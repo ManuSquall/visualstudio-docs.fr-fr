@@ -7,16 +7,16 @@ helpviewer_keywords:
 - layer models, updating in program code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371cd8c0c401d48e7234144bfa8f6e52cd405ff3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948652"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043412"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Parcourir et mettre à jour les modèles de couche dans le code de programme
 
@@ -136,4 +136,4 @@ public void ... (...)
 - [Ajout d’une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Ajout de propriétés personnalisées à des diagrammes de dépendance](../modeling/add-custom-properties-to-layer-diagrams.md)
 - [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
-- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)

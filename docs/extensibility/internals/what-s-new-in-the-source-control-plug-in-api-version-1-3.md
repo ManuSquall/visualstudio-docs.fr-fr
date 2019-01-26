@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84b9642f14016900dd3edd4a9093997620f4fb31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bb30e8a69885f4ad9f94372a2e93619790bd8a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955243"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Ce que&#39;s dans la Source de contrôle plug-in API Version 1.3
 L’API de plug-in de contrôle de Source version 1.3 présente les nouvelles fonctions suivantes pour fournir un contrôle plus avancée.  

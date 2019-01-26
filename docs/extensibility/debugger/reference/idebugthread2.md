@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834b2a85f62c8c533b57402dad55c92b3b0ad5dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4a42670ff6bb115a9bb3b37bd232d08bb4bcdf0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855544"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949842"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Cette interface représente un thread en cours d’exécution dans un programme.  

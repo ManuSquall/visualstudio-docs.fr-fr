@@ -12,12 +12,12 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: c4500a8888f33440834584ceba1345e0ca78a998
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 675756152bd69611cbce9cd17ee717c950f5ce5d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153881"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875535"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Procédure : Créer par programmation des éléments de dossier personnalisés
   Cet exemple crée un nouveau dossier dans Microsoft Office Outlook. Le nom de l’utilisateur qui a ouvert une session est utilisé pour le nom du dossier.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97c58bcb9a8f36523a42294bf63008f30f00913d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65bdda745d5fad04a87f6e46a9810a6a3ab6c352
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952769"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Mise à niveau de modèles de projet et d’élément personnalisés pour Visual Studio 2017
 
@@ -45,7 +45,7 @@ Pour d’autres emplacements (non utilisateur), vous devez inclure un fichier ma
   
     1.  L’analyse de modification des fichiers sont activé par la clé de Registre suivante :  
   
-         **reg ajouter hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**  
+         **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**  
   
     2.  Après avoir ajouté la clé, exécutez **devenv /installvstemplates**.  
   

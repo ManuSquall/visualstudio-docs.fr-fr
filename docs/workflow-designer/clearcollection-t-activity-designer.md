@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2fbaf22f7a27d4984ab49e4e8f93897da668ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f086acbbdbbdf442b1684cc5c32d1fa13eb785f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986529"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034058"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > Concepteur d’activités
 

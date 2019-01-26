@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff2b19407ec63ea1227aba2affdad77f302dc129
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5ca684540c43ac6628a21c95493180f8f22cf46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868652"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043750"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architecture du plug-in de contrôle de code source
 Vous pouvez ajouter la prise en charge du contrôle de source pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) en implémentant et en joignant un plug-in de contrôle de code source. L’IDE se connecte au contrôle de source de plug-in via l’API de plug-in de contrôle Source bien défini. L’IDE expose les fonctionnalités de contrôle de version du système de contrôle de source en fournissant une interface utilisateur (IU) qui se compose de barres d’outils et commandes de menu. Le plug-in de contrôle de code source implémente la fonctionnalité de contrôle de code source.  

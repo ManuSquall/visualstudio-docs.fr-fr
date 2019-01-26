@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, template code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 783adf81fd622fd179a4871823a147246df92ff7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e49cc7161d5f061d18e51865325f27fe37a35864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876729"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928735"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :

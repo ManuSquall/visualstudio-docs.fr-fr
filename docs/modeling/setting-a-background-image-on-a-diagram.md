@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 992a3fe8c32c757425a0f223e37dfac32ea0a080
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037042"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 Dans Visual Studio Visualization and Modeling SDK, vous pouvez définir l’image d’arrière-plan pour un concepteur généré à l’aide de code personnalisé.

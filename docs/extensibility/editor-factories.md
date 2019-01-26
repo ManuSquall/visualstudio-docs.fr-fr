@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 961b71d7bf5a28eb91bef24b84c13f72de424628
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958028"
 ---
 # <a name="editor-factories"></a>Fabriques d’éditeur
 Une fabrique d’éditeur crée les objets de l’éditeur et les place dans un frame de fenêtre, appelé une vue physique. Il crée les données de document et les objets de vue de document qui sont nécessaires pour créer des éditeurs et concepteurs. Une fabrique d’éditeur est requis pour créer l’éditeur principal de Visual Studio et n’importe quel éditeur standard. Un éditeur personnalisé peut également être créé avec une fabrique d’éditeur.  

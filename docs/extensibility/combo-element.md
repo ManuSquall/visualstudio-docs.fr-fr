@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43a7799c1c2b6d3fed965f6039aa01b7fd29e937
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9759acc597d9a13ed084bdb8111cdd268a80bbc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965651"
 ---
 # <a name="combo-element"></a>Élément de liste déroulante
 Définit des commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types de zones de liste déroulante, comme suit : DropDownCombo DynamicCombo, IndexCombo et MRUCombo.  
@@ -38,7 +38,7 @@ Définit des commandes qui s’affichent dans une zone de liste déroulante. Il 
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. GUID de l’identificateur de commande/ID GUID.|  
+|guid|Obligatoire. GUID de l’identificateur de commande/ID GUID.|  
 |ID|Obligatoire. ID de l’identificateur de commande/ID GUID.|  
 |defaultWidth|Obligatoire. Entier qui spécifie une largeur en pixels de la zone de liste déroulante.|  
 |idCommandList|Obligatoire. Un ID qui est envoyé à la cible de commande active pour récupérer la liste des éléments à afficher dans la zone de liste déroulante. L’ID sera dans la même étendue GUID que le contrôle.|  
@@ -51,7 +51,7 @@ Définit des commandes qui s’affichent dans une zone de liste déroulante. Il 
 |Élément|Description|  
 |-------------|-----------------|  
 |Parent|Facultatif. L’élément parent du bouton.|  
-|CommandFlag|Obligatoire. Consultez [élément Command flag](../extensibility/command-flag-element.md). Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|Obligatoire. Consultez [élément Command flag](../extensibility/command-flag-element.md). Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - StretchHorizontally|  
 |Chaînes|Obligatoire. Consultez [élément Strings](../extensibility/strings-element.md). L’élément ButtonText enfant doit être défini.|  
 |Annotation|Commentaire facultatif.|  
   

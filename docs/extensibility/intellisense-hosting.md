@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cf55e2cf88b8cf6f92145ea7a75aa35a5f56486
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838175"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958587"
 ---
 # <a name="intellisense-hosting"></a>Hébergement d’IntelliSense
 Visual Studio permet l’hébergement d’IntelliSense. Dans IntelliSense hébergement permet de vous fournir IntelliSense pour le code qui n’est pas hébergée par l’éditeur de texte Visual Studio.  
@@ -41,7 +41,7 @@ Visual Studio permet l’hébergement d’IntelliSense. Dans IntelliSense héber
 |IHF_FORCECOMMITTOCONTEXT|Si cet indicateur est défini et que la mémoire tampon de contexte doit être mis à jour, l’hôte Active l’indicateur en lecture seule sur la mémoire tampon de contexte doivent être ignorés et les modifications pour continuer.|  
 |IHF_OVERTYPE|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|  
   
-#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit et IVsIntellisenseHost.AfterCompletorCommit  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit and IVsIntellisenseHost.AfterCompletorCommit  
  Ces méthodes de rappel sont appelées par la fenêtre de saisie semi-automatique avant et après que le texte est validé, pour activer le prétraitement et le post-traitement.  
   
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  

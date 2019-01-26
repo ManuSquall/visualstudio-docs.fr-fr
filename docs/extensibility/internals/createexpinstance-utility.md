@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1a9f73f396fffe93903f4295428a011c5b5e8d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961100"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042541"
 ---
 # <a name="createexpinstance-utility"></a>Utilitaire CreateExpInstance
 Utilisez le **CreateExpInstance** utilitaire pour créer, réinitialiser ou supprimer une instance expérimentale de Visual Studio. Vous pouvez utiliser l’instance expérimentale pour déboguer et tester des extensions Visual Studio sans modifier le produit sous-jacent.  
@@ -33,16 +33,16 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="parameters"></a>Paramètres  
  **/ Création** crée l’instance expérimentale.  
   
- **/ Réinitialisation**  
+ **/Reset**  
  Supprime l’instance expérimentale et crée un nouveau.  
   
  **/Clean**  
  Supprime l’instance expérimentale.  
   
- **/ VSInstance**  
+ **/VSInstance**  
  Le nom du répertoire qui contient l’instance de Visual Studio de base à copier.  
   
- **/ RootSuffix**  
+ **/RootSuffix**  
  Le suffixe à ajouter au nom du répertoire d’instance expérimentale.  
   
 ## <a name="remarks"></a>Notes  
@@ -56,7 +56,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  L’exemple suivant réinitialise l’instance expérimentale de la valeur par défaut de Visual Studio :  
   
- **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix = Exp**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPackages](../../extensibility/internals/vspackages.md)

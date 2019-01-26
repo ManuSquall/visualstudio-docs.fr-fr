@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10d18989ad94de7a1645b1dc48c474a983450f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb2ee2a39f97e2c138eb8cbc8488b8acca2b2286
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850750"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991149"
 ---
 # <a name="document-windows"></a>Fenêtres de document
 Dans Visual Studio, un *fenêtre de document* est une fenêtre enfant encadré qui est associée à une fenêtre d’interface multidocument (MDI). Fenêtres de document sont généralement utilisés pour l’affichage et la modification de code source ou de texte, mais elles peuvent héberger également d’autres types fonctionnels. Fenêtres de document :  

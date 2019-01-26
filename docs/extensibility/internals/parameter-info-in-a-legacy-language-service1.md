@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 715de0c8ac763a8aa307fcf31038ba1b60c359fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79c09dbe23fd36324fe0c173035b9c4c8de7da18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864454"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929989"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informations sur les paramètres dans un Service de langage hérité
 L’info-bulle d’informations sur les paramètres IntelliSense fournit aux utilisateurs des indications sur l’endroit où elles se trouvent dans une construction de langage.  

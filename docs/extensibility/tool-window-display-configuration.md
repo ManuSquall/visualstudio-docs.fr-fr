@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877729"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973406"
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
 Quand un VSPackage enregistre une fenêtre outil, de la position par défaut, de taille, de style d’ancrage et d’autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [Windows d’outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  
@@ -39,9 +39,9 @@ HKEY_LOCAL_MACHINE\
 | Name | Type | Données | Description |
 |-----------------|-----------| - | - |
 | Name | REG_SZ | « Nom court s’affiche ici » | Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre. |
-| Float | REG_SZ | « X1, Y1, X2, Y2 » | Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran. |
-| Style | REG_SZ | « MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> « AlwaysFloat » | Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous. |
-| Fenêtre | REG_SZ | *\<GUID &GT;* | Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou avec onglets. Le GUID peut appartenir à un de vos propres windows ou l’une des fenêtres dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
+| Float | REG_SZ | "X1,Y1,X2,Y2" | Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran. |
+| Style | REG_SZ | « MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> "AlwaysFloat" | Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous. |
+| Fenêtre | REG_SZ | *\<GUID>* | Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou avec onglets. Le GUID peut appartenir à un de vos propres windows ou l’une des fenêtres dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
 | Orientation | REG_SZ | « Left »<br /><br /> « Droite »<br /><br /> « Top »<br /><br /> « Bottom » | Consultez la section commentaires ci-dessous. |
 | DontForceCreate | REG_DWORD | 0 ou 1 | Lorsque cette entrée est présente et sa valeur n’est pas égal à zéro, la fenêtre est chargée, mais s’affiche pas immédiatement. |
 
@@ -88,7 +88,7 @@ HKEY_LOCAL_MACHINE\
 |Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |(Default)|REG_SZ|Aucun.|Laissez vide.|  
-|*\<GUID &GT;*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
+|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
 
 ### <a name="example"></a>Exemple  
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3d0385af4ec795608672d8d7cbdb4b188246dea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95205705d53b7040df1f8ee8fc68aab66018a362
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934450"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 Permet à un moteur de débogage remplacer le comportement par défaut de la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur lorsque vous arrêtez une session de débogage.  

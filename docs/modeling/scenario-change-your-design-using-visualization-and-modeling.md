@@ -13,15 +13,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f39fd11e5f42a61fa322edddf83afef1d2fc4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7937ad591435c1b6b83e779abdddd995ee198a2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943076"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
 
@@ -146,7 +146,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 |**Carte ou diagramme**|**Éléments décrits**|
 |-|-|
 |*Carte de code*<br /><br /> Consultez :<br /><br /> - [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br />- [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)<br />- [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dépendances et autres relations dans le code.<br /><br /> Par exemple, Dinner Now peut commencer par examiner les cartes de code des assemblys pour avoir une vue d’ensemble des assemblys et de leurs dépendances. La société peut explorer les cartes pour examiner les espaces de noms et les classes figurant dans ces assemblys.<br /><br /> Dinner Now peut également créer des cartes pour examiner certaines zones et d’autres types de relations dans le code. Elle utilise l’Explorateur de solutions pour rechercher et sélectionner les zones et les relations qui l’intéressent.|
-|*Diagramme de classes basé sur le code*<br /><br /> Consultez [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existantes dans le code|
+|*Diagramme de classes basé sur le code*<br /><br /> Voir [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existantes dans le code|
 
  Par exemple, le développeur crée une carte de code. Il ajuste la portée pour se concentrer sur les zones concernées par le nouveau scénario. Ces zones sont sélectionnées et mises en surbrillance sur la carte :
 
@@ -166,7 +166,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
 |**Diagrammes**|**Éléments décrits**|
 |-|-|
-|*Diagramme de classes basé sur le code*<br /><br /> Consultez [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existantes dans le code.|
+|*Diagramme de classes basé sur le code*<br /><br /> Voir [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classes existantes dans le code.|
 
 ### <a name="ValidatingCode"></a> Maintenir la cohérence avec la conception de Code
  Dinner Now doit s’assurer que le code mis à jour demeure cohérent avec la conception. Ils créent des diagrammes de dépendance qui décrivent les couches de fonctionnalités dans le système, spécifient les dépendances autorisées entre les artefacts de solution elles et associent à ces couches.
@@ -331,7 +331,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 |**Diagramme**|**Éléments décrits**|
 |-|-|
 |Diagramme de dépendances|L’architecture logique du système. Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier dependencys existantes ou prévues dependencys, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)|
-|Diagramme de classes (basé sur le code)|Classes existantes dans le code d’un projet spécifique.<br /><br /> Pour visualiser et modifier une classe existante dans le code, utilisez le Concepteur de classes.<br /><br /> Consultez [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
+|Diagramme de classes (basé sur le code)|Classes existantes dans le code d’un projet spécifique.<br /><br /> Pour visualiser et modifier une classe existante dans le code, utilisez le Concepteur de classes.<br /><br /> Voir [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Définir un glossaire des Types : Diagrammes de classes
  Les diagrammes de classes définissent les entités, les termes ou les concepts qui participent au système, et leurs relations. Par exemple, vous pouvez utiliser ces diagrammes pendant le développement pour décrire les attributs et les opérations de chaque classe, indépendamment de leur langage ou mode d’implémentation.
@@ -457,7 +457,7 @@ Consultez :
 
 - [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
 
-- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)
 
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 

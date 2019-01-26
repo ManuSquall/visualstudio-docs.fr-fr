@@ -12,17 +12,17 @@ helpviewer_keywords:
 - customizing the Ribbon, tabs
 - custom Ribbon, tabs
 - Custom tab [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30d05c39c9216385d4255055c5d660f79b529ab6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917590"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876094"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban
   Le Concepteur de ruban vous permet de créer un onglet personnalisé puis d'ajouter et de positionner des contrôles dessus.  

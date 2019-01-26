@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa00faf6fb7605af6098952b2fc592276934d2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acded327d8e1b5b1b2bec0b804e6e72ac157be1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923216"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950570"
 ---
 # <a name="sccuncheckout-function"></a>Fonction SccUncheckout
 Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu de l’ou les fichiers sélectionnés à l’état précédant l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.  
@@ -48,7 +48,7 @@ SCCRTN SccUncheckout (
  lpFileNames  
  [in] Tableau des noms de chemin d’accès local complet des fichiers pour lequel annuler une extraction.  
   
- Options  
+ fOptions  
  [in] Indicateurs de commande (non utilisés).  
   
  pvOptions  

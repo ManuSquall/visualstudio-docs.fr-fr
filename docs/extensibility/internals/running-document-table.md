@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa66cb409b1ccdf8a0d60635c343fe7f356090af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da0ec7eb05c27c3c5f78a4337f2df508b3f3e0ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863080"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945903"
 ---
 # <a name="running-document-table"></a>Exécution de la table de document
 L’IDE gère la liste de tous les documents actuellement ouverts dans une structure interne appelée table de document en cours d’exécution (RDT). Cette liste inclut tous les documents ouverts dans la mémoire, quelle que soit la si ces documents sont en cours de modification. Un document est un élément qui est rendue persistante, y compris les fichiers dans un projet ou le fichier projet principal (par exemple, un fichier .vcxproj).  

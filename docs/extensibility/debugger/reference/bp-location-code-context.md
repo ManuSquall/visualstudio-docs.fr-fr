@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e7d3ee44e8ff6ee7b7cc1c37c4b78968655b97b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 004c6ada50e4a109c066f99fe29fa63064966587
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885467"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931620"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
 Décrit l’emplacement d’un point d’arrêt est directement lié à une adresse dans le programme en cours de débogage.  

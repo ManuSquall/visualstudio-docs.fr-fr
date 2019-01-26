@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c97bd62f6a197d5aac64423002580c8ed05d34b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042245"
 ---
 # <a name="start-view"></a>vue de départ
 
@@ -42,9 +42,9 @@ Les boutons suivants sont activés dans la barre d'outils du Concepteur XSD lors
 
 |Option|Description|
 |-|-----------------|
-|**Afficher la vue de départ**|Bascule vers la vue de départ. Cette vue est accessible en utilisant le raccourci clavier : **CTRL**+**1**.|
-|**Afficher la vue de modèle de contenu**|Bascule vers la vue de modèle de contenu. Cette vue est accessible en utilisant le raccourci clavier : **CTRL**+**2**.|
-|**Afficher la vue du graphique**|Bascule vers la vue du graphique. Cette vue est accessible en utilisant le raccourci clavier : **CTRL**+**3**.|
+|**Afficher la vue de départ**|Bascule vers la vue de départ. Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**1**.|
+|**Afficher la vue de modèle de contenu**|Bascule vers la vue de modèle de contenu. Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**2**.|
+|**Afficher la vue du graphique**|Bascule vers la vue du graphique. Cette vue est accessible en utilisant le raccourci clavier : **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Voir aussi
 
