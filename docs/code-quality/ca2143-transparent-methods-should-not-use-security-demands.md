@@ -1,5 +1,5 @@
 ---
-title: 'CA2143 : Les méthodes transparentes ne doivent pas utiliser de demandes de sécurité'
+title: 'CA2143 : Les méthodes transparentes ne doivent pas utiliser de demandes de sécurité'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff92d7ed697db2f692ed17426bdb5dad38164cf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08a7c4d6d7c71954869311b402eed65492391432
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954563"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043075"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143 : Les méthodes transparentes ne doivent pas utiliser de demandes de sécurité
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143 : Les méthodes transparentes ne doivent pas utiliser de demandes de sécurité
 
 |||
 |-|-|
@@ -31,7 +31,7 @@ ms.locfileid: "53954563"
  Une méthode ou type de transparent est marquée de façon déclarative avec une <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` à la demande ou les appels de méthode le <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> (méthode).
 
 ## <a name="rule-description"></a>Description de la règle
- Le code transparent de sécurité ne doit pas être responsable de la vérification de la sécurité d’une opération. Par conséquent, il ne doit pas demander d’autorisations. Le code transparent de sécurité doit utiliser des demandes complètes pour prendre des décisions de sécurité et le code critique sécurisé ne doit pas dépendre du code transparent pour l'exécution de ces demandes. Tout code qui effectue des vérifications de sécurité, telles que des demandes de sécurité doit être critique de sécurité à la place.
+ Le code transparent de sécurité ne doit pas être responsable de la vérification de la sécurité d’une opération. Par conséquent, il ne doit pas demander d’autorisations. Le code transparent de sécurité doit utiliser des demandes complètes pour prendre des décisions de sécurité et le code critique sécurisé ne doit pas dépendre du code transparent pour l’exécution de ces demandes. Tout code qui effectue des vérifications de sécurité, telles que des demandes de sécurité doit être critique de sécurité à la place.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  En règle générale, pour corriger une violation de cette règle, marquez la méthode avec le <xref:System.Security.SecuritySafeCriticalAttribute> attribut. Vous pouvez également supprimer la demande.

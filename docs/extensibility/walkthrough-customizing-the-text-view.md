@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8748ccade8e610c66d9c4142312c2c5dfed1ddf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a697456a15008f305b92aacfb1485be1c08c062
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920395"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Procédure pas à pas : Personnaliser l’affichage de texte
 Vous pouvez personnaliser un affichage de texte en modifiant les propriétés suivantes dans sa table de format de l’éditeur :  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979645"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Accéder à l’affichage de texte à l’aide de l’API héritée
 Une vue de texte est une présentation du texte qui est stocké dans une mémoire tampon de texte. Vous pouvez accéder à l’affichage de texte à l’aide de l’API héritée comme indiqué dans la section suivante.

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8bbb876ddd8a3615b7e31d0dbf9d005b69f2d03d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf3405d74a1545bb86b1297b766faf46e68223a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942046"
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 Vous pouvez définir des propriétés qui spécifient la manière dont les diagrammes apparaîtront dans le concepteur généré. Par exemple, vous pouvez spécifier une couleur par défaut pour le texte dans le diagramme.
@@ -31,7 +31,7 @@ Vous pouvez définir des propriétés qui spécifient la manière dont les diagr
 |Couleur de remplissage|La couleur de remplissage pour le diagramme.|Blanc|
 |Couleur du texte|La couleur du texte qui s’affiche sur le diagramme.|Noir|
 |Modificateur d'accès|Le modificateur d’accès de la classe (public ou interne).|Public|
-|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code généré.|\<Aucun >|
+|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code généré.|\<aucune>|
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract`, ou `sealed`).|Aucun.|
@@ -39,12 +39,12 @@ Vous pouvez définir des propriétés qui spécifient la manière dont les diagr
 |Name|Le nom de ce diagramme.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à ce diagramme.|Espace de noms actuel|
 |Classe représentée|La classe de domaine racine qui représente ce diagramme.|Classe racine actuelle le cas échéant|
-|Notes|Remarques informelles associées à cet élément.|\<Aucun >|
+|Notes|Remarques informelles associées à cet élément.|\<aucune>|
 |Couleur de remplissage expose en tant que propriété|Si `True`, l’utilisateur peut définir la couleur de remplissage du diagramme du concepteur généré. Pour définir cette propriété, avec le bouton droit de la forme de diagramme, puis cliquez sur **ajouter les objets exposés**.|False|
 |Expose la couleur du texte en tant que propriété|Si `True`, l’utilisateur peut définir la couleur du texte du diagramme dans le concepteur généré. Pour définir cette propriété, avec le bouton droit de la forme de diagramme, puis cliquez sur **ajouter les objets exposés**.|False|
-|Description|La description est utilisée pour documenter le concepteur généré.|\<Aucun >|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour ce diagramme.|\<Aucun >|
-|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour ce diagramme.|\<Aucun >|
+|Description|La description est utilisée pour documenter le concepteur généré.|\<aucune>|
+|Nom complet|Le nom qui s’affichera dans le concepteur généré pour ce diagramme.|\<aucune>|
+|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour ce diagramme.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
 

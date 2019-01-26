@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3b62a8d88efbddaaf4032bf290730507bc62f3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf09080d3e7ceb3221006e11d47881549ecf5faa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956829"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Élément CustomDataSignature (modèles Visual Studio)
 Spécifie la signature de texte pour localiser les données personnalisées.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CustomDataSignature >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CustomDataSignature>  
   
 ## <a name="syntax"></a>Syntaxe  
   
