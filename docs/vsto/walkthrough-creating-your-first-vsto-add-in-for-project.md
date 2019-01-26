@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Project [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ec2a0959e09cac4522697ebe8ab27d58a890f45
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872766"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : Créer votre premier complément VSTO pour Project
   Cette procédure pas à pas vous montre comment créer un complément, VSTO pour Microsoft Office Project. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -75,7 +75,7 @@ ms.locfileid: "53931253"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Pour ajouter une tâche à un nouveau projet  
   
-1. Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn`. Ce code définit un gestionnaire d’événements pour l’événement `NewProject` de la classe `Microsoft.Office.Interop.MSProject.Application`.  
+1. Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn` . Ce code définit un gestionnaire d’événements pour l’événement `NewProject` de la classe `Microsoft.Office.Interop.MSProject.Application`.  
   
     Quand l’utilisateur crée un projet, ce gestionnaire d’événements ajoute une tâche au projet.  
   

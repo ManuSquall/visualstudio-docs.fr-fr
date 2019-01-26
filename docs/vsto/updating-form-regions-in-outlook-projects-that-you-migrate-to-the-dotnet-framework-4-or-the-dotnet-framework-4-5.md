@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84005dfa85c637d2ff5677e6ad02b811bd0cb671
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61cab3cfb81ef1d4ccecfce5194334042a8c2268
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842802"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870283"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si l’infrastructure cible d’un projet de complément VSTO Outlook avec une zone de formulaire passe à [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez apporter quelques changements au code de zone de formulaire généré, ainsi qu’au code qui instancie certaines classes de zone de formulaire au moment de l’exécution.  
@@ -155,7 +155,7 @@ ms.locfileid: "53842802"
   
 4.  Pour chaque ligne de code de la méthode `InitializeControls` qui initialise un contrôle dans la classe de zone de formulaire, modifiez le code comme indiqué ci-dessous.  
   
-     L'exemple de code suivant montre comment initialiser un contrôle dans un projet qui cible .NET Framework 3.5. Dans ce code, la méthode `GetFormRegionControl` possède un paramètre de type qui spécifie le type du contrôle retourné.  
+     L'exemple de code suivant montre comment initialiser un contrôle dans un projet qui cible .NET Framework 3.5. Dans ce code, la méthode `GetFormRegionControl` possède un paramètre de type qui spécifie le type du contrôle retourné.  
   
     ```vb  
     Me.olkTextBox1 = Me.GetFormRegionControl(Of Microsoft.Office.Interop.Outlook.OlkTextBox)("OlkTextBox1")  

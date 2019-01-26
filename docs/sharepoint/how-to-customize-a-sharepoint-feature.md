@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 867eb1fd64a7318d460a387ededd39e4f188d445
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835472"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868103"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Procédure : Personnaliser une fonctionnalité SharePoint
   Vous pouvez créer et personnaliser des fonctionnalités SharePoint à l’aide du Concepteur de fonctionnalités dans Visual Studio. Par exemple, vous pouvez définir l’étendue de fonctionnalité et ajouter d’autres fonctionnalités en tant que dépendances. Par défaut, le Concepteur de fonctionnalités s’ouvre lorsque vous ajoutez une nouvelle fonctionnalité dans l’Explorateur de solutions ou l’Explorateur de Package SharePoint.  

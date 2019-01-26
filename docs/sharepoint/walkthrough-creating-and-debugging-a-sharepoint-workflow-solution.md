@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b2affcb8339027f146a629b47db57154b173591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871388"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procédure pas à pas : Créer et déboguer une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de workflow séquentiel de base. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagés pour déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.  
@@ -164,7 +164,7 @@ ms.locfileid: "53912988"
   
     |Propriété|Value|  
     |--------------|-----------|  
-    |**correlationToken**|**workflowToken**|  
+    |**CorrelationToken**|**workflowToken**|  
     |**Appelée**|**onWorkflowItemChanged**|  
   
 ## <a name="handle-activity-events"></a>Gérer les événements d’activité

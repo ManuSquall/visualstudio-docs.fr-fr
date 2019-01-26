@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, searching
 - text [Office development in Visual Studio], searching in worksheets
 - text searches, worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37f59f2888fc5a572029f4c21116281df008706e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826125"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868587"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procédure : Rechercher par programmation pour le texte dans les plages de feuille de calcul
   Le <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut également être une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul comme `#NULL!` ou `#VALUE!`. Pour plus d’informations sur les chaînes d’erreur, consultez [les valeurs d’erreur de cellule](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  

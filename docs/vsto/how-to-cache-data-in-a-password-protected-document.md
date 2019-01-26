@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 627469dd3227d82ce1cc97af25d2b8a4537541e5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868444"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procédure : Cache des données dans un document protégé par un mot de passe
   Si vous ajoutez des données dans le cache de données dans un document ou classeur est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer des modifications aux données mises en cache en remplaçant les deux méthodes dans votre projet.  

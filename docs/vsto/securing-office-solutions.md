@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - security [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5f5577fc1c8e51ddac8b51b64cae1891dfbee6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820836"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871180"
 ---
 # <a name="secure-office-solutions"></a>Sécurisez les solutions Office
   Le modèle de sécurité pour les solutions Office implique plusieurs technologies : le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], le centre de confidentialité de Microsoft Office et la zone de sites sensibles d’Internet Explorer. Les sections suivantes décrivent le fonctionnement de ces différentes fonctionnalités de sécurité :
@@ -110,5 +110,5 @@ ms.locfileid: "53820836"
 - [Résoudre les problèmes de sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)
 - [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Référence de ClickOnce](../deployment/clickonce-reference.md)
+- [Informations de référence sur ClickOnce](../deployment/clickonce-reference.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)

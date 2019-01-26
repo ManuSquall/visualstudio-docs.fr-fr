@@ -10,17 +10,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], adding controls
 - controls [Office development in Visual Studio], adding to documents at run time
 - documents [Office development in Visual Studio], adding controls at run time
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 297426de82626488be2b12cbab6014883bd7ba97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954894"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873572"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Procédure pas à pas : Ajouter des contrôles à un document lors de l’exécution dans un complément, VSTO
   Vous pouvez ajouter des contrôles à un document Microsoft Office Word ouvert en utilisant un complément, VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d’ajouter un <xref:Microsoft.Office.Tools.Word.Controls.Button> ou un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> à un document.  

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], multiple Ribbons
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4022720a787801405915fe92a10b93a850a0d2f3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989200"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867726"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
   Le ruban est une façon d’organiser les commandes associées afin qu’ils soient plus faciles à trouver. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale sur le bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.  
@@ -37,7 +37,7 @@ ms.locfileid: "53989200"
   
 - **Ruban (Concepteur visuel)**  
   
-- **Ruban (XML)**  
+- **Ribbon (XML)**  
   
   Par exemple, pour personnaliser le ruban Excel, ajoutez un élément Ruban à un projet de complément VSTO Excel.  
   

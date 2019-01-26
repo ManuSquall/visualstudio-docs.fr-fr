@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint project service
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90df435e2c6c20b43d12169b32780eefc22c1d70
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875817"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871544"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Utiliser le service de projet SharePoint
   Le système de projet SharePoint inclut un service de projet que vous pouvez utiliser pour effectuer des tâches liées au système de projet. Le service de projet est un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.  

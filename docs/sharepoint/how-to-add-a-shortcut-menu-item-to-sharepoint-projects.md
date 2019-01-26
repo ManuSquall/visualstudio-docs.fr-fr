@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb52456aaa9b74944b400b5c6a39e40341b97d17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964135"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868509"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procédure : Ajouter un élément de menu contextuel à des projets SharePoint
   Vous pouvez ajouter un élément de menu contextuel à un projet SharePoint. L’élément de menu s’affiche quand un utilisateur clique sur un nœud de projet dans **l’Explorateur de solutions**.  

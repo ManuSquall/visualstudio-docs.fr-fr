@@ -13,17 +13,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b78df3968f23df8685d38d7278ffbf4f331260b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872363"
 ---
 # <a name="outlook-object-model-overview"></a>Vue d’ensemble du modèle d’objet Outlook
   Pour développer des compléments VSTO pour Microsoft Office Outlook, vous pouvez interagir avec les objets fournis par le modèle objet Outlook. Le modèle objet Outlook fournit des classes et des interfaces qui représentent des éléments dans l'interface utilisateur. Par exemple, l'objet <xref:Microsoft.Office.Interop.Outlook.Application> représente l'application entière, l'objet <xref:Microsoft.Office.Interop.Outlook.Folder> représente un dossier qui contient des messages électroniques ou d'autres éléments, et l'objet <xref:Microsoft.Office.Interop.Outlook.MailItem> représente un message électronique.  
@@ -90,9 +90,9 @@ ms.locfileid: "53945351"
 -   Utilisez la méthode `GetInspector` d'un élément spécifique, par exemple <xref:Microsoft.Office.Interop.Outlook.MailItem> ou <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, pour récupérer l'inspecteur associé.  
   
 ### <a name="folder-object"></a>Objet de dossier  
- L'objet <xref:Microsoft.Office.Interop.Outlook.Folder> représente un dossier qui contient les messages électroniques, les contacts, les tâches et d'autres éléments. Outlook fournit 16 objets <xref:Microsoft.Office.Interop.Outlook.Folder> par défaut.  
+ L'objet <xref:Microsoft.Office.Interop.Outlook.Folder> représente un dossier qui contient les messages électroniques, les contacts, les tâches et d'autres éléments. Outlook fournit 16 objets <xref:Microsoft.Office.Interop.Outlook.Folder> par défaut.  
   
- Les objets <xref:Microsoft.Office.Interop.Outlook.Folder> par défaut sont définis par les valeurs d'énumération <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders>. Par exemple :  
+ Les objets <xref:Microsoft.Office.Interop.Outlook.Folder> par défaut sont définis par les valeurs d'énumération <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Par exemple :  
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox correspond à la **boîte de réception** dossier dans Outlook.  
   

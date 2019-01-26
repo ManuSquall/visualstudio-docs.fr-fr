@@ -12,17 +12,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter
 - Business Data Connectivity service [SharePoint development in Visual Studio], method parameters
 - BDC [SharePoint development in Visual Studio], method parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d55c345d9cd0e57d7af2ed359cf4bd9a4f06cd9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866255"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868116"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Procédure : Ajouter un paramètre à une méthode
   Utiliser un paramètre pour transmettre des informations dans la méthode ou pour retourner des informations à partir d’une méthode. Toutes les méthodes doivent avoir au moins un paramètre. Pour plus d’informations sur la conception d’un paramètre pour prendre en charge le type de méthode que vous souhaitez créer, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  

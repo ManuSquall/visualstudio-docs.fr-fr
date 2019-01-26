@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c08e04dd6ca95e691c33ce77bdedf6a655ee5b4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871726"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Procédure : Inclure des fichiers à l’aide d’un module
   *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules) sont des conteneurs qui vous permettent de déployer des fichiers tels que les pages maîtres ASPX, des fichiers texte ou des images sur SharePoint.  

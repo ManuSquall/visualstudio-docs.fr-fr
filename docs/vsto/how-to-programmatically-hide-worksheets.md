@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - hidden worksheets
 - worksheets, hiding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e03ce17e41c81a6d3cfda4f66d1ecee1946fa3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 188c7fbf16002086a4968b91c068cd67357292de
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821446"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870491"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Procédure : Masquer des feuilles de calcul par programmation
   Vous pouvez afficher ou masquer une feuille de calcul dans un classeur. Pour masquer une feuille de calcul, utilisez l’élément hôte de feuille de calcul ou accédez à la feuille de calcul à l’aide de la collection Sheets du classeur.  

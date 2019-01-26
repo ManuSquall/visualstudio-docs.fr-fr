@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929573"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869435"
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon
   L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une manière qui n’est pas pris en charge par l’élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).  
@@ -117,7 +117,7 @@ ms.locfileid: "53929573"
 |-------------|-----------------|  
 |**customUI**|Représente le ruban personnalisé dans le projet de complément VSTO.|  
 |**ribbon**|Représente le ruban.|  
-|**Onglets**|Représente un ensemble d'onglets du ruban.|  
+|**tabs**|Représente un ensemble d'onglets du ruban.|  
 |**onglet**|Représente un onglet individuel du ruban.|  
 |**group**|Représente un groupe de contrôles sous l'onglet du ruban.|  
   
@@ -128,7 +128,7 @@ ms.locfileid: "53929573"
 |**onLoad**|**customUI**|Identifie une méthode qui est appelée lorsque l’application charge le ruban.|  
 |**idMso**|**onglet**|Identifie un onglet intégré à afficher dans le ruban.|  
 |**ID**|**group**|Identifie le groupe.|  
-|**Étiquette**|**group**|Spécifie le texte qui apparaît sur le groupe.|  
+|**label**|**group**|Spécifie le texte qui apparaît sur le groupe.|  
   
  Les éléments et les attributs par défaut figurant dans le fichier XML du ruban sont un petit sous-ensemble des éléments et attributs disponibles. Pour obtenir une liste complète des éléments disponibles et des attributs, consultez l’article technique [personnaliser l’interface utilisateur ruban d’Office (2007) pour les développeurs (partie 2 sur 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).  
   

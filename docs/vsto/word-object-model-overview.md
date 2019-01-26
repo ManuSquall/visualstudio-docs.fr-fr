@@ -12,17 +12,17 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], Word
 - objects [Office development in Visual Studio], Office object models
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a946dc469fe03eb5ad8b42ffc68ef13370542d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922257"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875198"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle d’objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .  
@@ -70,7 +70,7 @@ ms.locfileid: "53922257"
  Dans les projets au niveau du document, vous pouvez accéder à l'objet <xref:Microsoft.Office.Interop.Word.Application> en utilisant la propriété <xref:Microsoft.Office.Tools.Word.Document.Application%2A> de la classe `ThisDocument` .  
   
 ### <a name="document-object"></a>Objet Document  
- L'objet <xref:Microsoft.Office.Interop.Word.Document> est essentiel à la programmation de Word. Il représente un document et tout son contenu. Quand vous ouvrez ou créez un document, vous créez un objet <xref:Microsoft.Office.Interop.Word.Document> , qui est ajouté à la collection <xref:Microsoft.Office.Interop.Word.Documents> de l'objet <xref:Microsoft.Office.Interop.Word.Application> . Le document qui a le focus est appelé document actif. Il est représenté par la propriété <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Application> .  
+ L'objet <xref:Microsoft.Office.Interop.Word.Document> est essentiel à la programmation de Word. Il représente un document et tout son contenu. Quand vous ouvrez ou créez un document, vous créez un objet <xref:Microsoft.Office.Interop.Word.Document> , qui est ajouté à la collection <xref:Microsoft.Office.Interop.Word.Documents> de l'objet <xref:Microsoft.Office.Interop.Word.Application> . Le document qui a le focus est appelé le document actif. Il est représenté par la propriété <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Application> .  
   
  Les outils de développement Office dans Visual Studio étendent l'objet <xref:Microsoft.Office.Interop.Word.Document> en fournissant le type <xref:Microsoft.Office.Tools.Word.Document> . Ce type est un *élément hôte* qui vous donne accès à toutes les fonctionnalités d'un objet <xref:Microsoft.Office.Interop.Word.Document> et ajoute des événements supplémentaires et la possibilité d'ajouter des contrôles managés.  
   

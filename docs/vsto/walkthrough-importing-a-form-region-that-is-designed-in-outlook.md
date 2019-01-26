@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeac6711691de4113ace572790df0bf6ac674dae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956177"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870228"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procédure pas à pas : Importer une zone de formulaire conçue dans Outlook
   Cette procédure pas à pas montre comment concevoir une zone de formulaire dans Microsoft Office Outlook, puis importer la zone de formulaire dans un projet de complément VSTO Outlook à l’aide de l’Assistant **Nouvelle zone de formulaire** . La conception de la zone de formulaire dans Outlook vous permet d’ajouter des contrôles Outlook natifs à la zone de formulaire liée aux données Outlook. Après avoir importé la zone de formulaire, vous pouvez gérer les événements de chaque contrôle.  

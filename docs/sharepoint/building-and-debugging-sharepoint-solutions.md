@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building and debugging
 - SharePoint development in Visual Studio, debugging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1cdcf71821bd0f7e9739bc194834500c2dfc6fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987192"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871558"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Générer et déboguer des solutions SharePoint
   En règle générale, la génération et débogage de solutions SharePoint sont le même que pour les autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Les rubriques de cette section expliquent les différences qui existent.  

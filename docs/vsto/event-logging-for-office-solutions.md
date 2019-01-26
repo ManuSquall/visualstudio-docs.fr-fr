@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, event viewer
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 029a4390036474d651f9e23becbb3660f097ed13
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857051"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867661"
 ---
 # <a name="event-logging-for-office-solutions"></a>Journalisation des événements pour les solutions Office
   Vous pouvez utiliser l’observateur d’événements de Windows pour consulter les messages d’exception capturés par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] lors de l’installation ou de la désinstallation de solutions Office. Vous pouvez utiliser ces messages du journal des événements pour résoudre les problèmes d’installation et de déploiement.  

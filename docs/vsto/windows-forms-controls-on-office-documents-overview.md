@@ -22,17 +22,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - Windows Forms controls [Office development in Visual Studio], about Windows Forms controls
 - Office applications [Office development in Visual Studio], Windows Forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbadf9f2e431cfe441b2cd3ef3694f38e019de49
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872337"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Contrôles Windows Forms dans les documents Office
   Les contrôles Windows Forms sont des objets avec lesquels les utilisateurs peuvent interagir pour entrer ou manipuler des données. Dans les projets au niveau du document pour Microsoft Office Excel et Microsoft Office Word, vous pouvez ajouter des contrôles Windows Forms au document ou au classeur dans votre projet au moment du design, ou vous pouvez ajouter par programmation de ces contrôles lors de l’exécution. Vous pouvez ajouter par programmation ces contrôles à tout document ouvert ou d’une feuille de calcul lors de l’exécution dans un complément, VSTO pour Excel ou Word.  

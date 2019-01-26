@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae4be83ffb98985f03d674b851040e19a01d01c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67a04436c26f16b07e209ddb907a0e1e7d282548
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869055"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour des projets Excel et Word que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si vous avez un projet Excel ou Word qui utilise l'une des fonctionnalités suivantes, vous devez modifier votre code si la version cible de .NET Framework est remplacée par le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure :  
@@ -133,7 +133,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 - `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
-  Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, les types répertoriés dans la liste [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ci-dessus sont des interfaces, et non des classes. Les classes générées dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure dérivent des nouvelles classes suivantes dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] :  
+  Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, les types répertoriés dans la liste [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ci-dessus sont des interfaces, et non des classes. Les classes générées dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure dérivent des nouvelles classes suivantes dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
   
 - `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   
@@ -213,7 +213,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 ##  <a name="ole"></a> Mettre à jour le code qui utilise les classes OLEObject et OLEControl  
  Dans les projets qui ciblent le .NET Framework 3.5, vous pouvez ajouter des contrôles personnalisés (tels que les contrôles utilisateur Windows Forms) à un document ou à une feuille de calcul à l'aide des classes `Microsoft.Office.Tools.Excel.OLEObject` et `Microsoft.Office.Tools.Word.OLEControl`.  
   
- Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, ces classes ont été remplacées par les interfaces <xref:Microsoft.Office.Tools.Excel.ControlSite> et <xref:Microsoft.Office.Tools.Word.ControlSite>. Vous devez modifier le code qui fait référence à `Microsoft.Office.Tools.Excel.OLEObject` et `Microsoft.Office.Tools.Word.OLEControl` pour faire référence à la place à <xref:Microsoft.Office.Tools.Excel.ControlSite> et <xref:Microsoft.Office.Tools.Word.ControlSite>. En dehors des nouveaux noms, ces contrôles se comportent de la même façon que dans les projets qui ciblent le .NET Framework 3.5.  
+ Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, ces classes ont été remplacées par les interfaces <xref:Microsoft.Office.Tools.Excel.ControlSite> et <xref:Microsoft.Office.Tools.Word.ControlSite> . Vous devez modifier le code qui fait référence à `Microsoft.Office.Tools.Excel.OLEObject` et `Microsoft.Office.Tools.Word.OLEControl` pour faire référence à la place à <xref:Microsoft.Office.Tools.Excel.ControlSite> et <xref:Microsoft.Office.Tools.Word.ControlSite>. En dehors des nouveaux noms, ces contrôles se comportent de la même façon que dans les projets qui ciblent le .NET Framework 3.5.  
   
  Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   

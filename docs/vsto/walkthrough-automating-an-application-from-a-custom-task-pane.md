@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], automating applications
 - custom task panes [Office development in Visual Studio], PowerPoint
 - task panes [Office development in Visual Studio], automating applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3689b72ef13856ebf3df419377c5bed4ffb88982
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915086"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874877"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé
   Cette procédure pas à pas montre comment créer un volet Office personnalisé qui automatise PowerPoint. Le volet Office personnalisé insère des dates dans une diapositive quand l’utilisateur clique sur un contrôle <xref:System.Windows.Forms.MonthCalendar> dans le volet Office personnalisé.  
@@ -87,7 +87,7 @@ ms.locfileid: "53915086"
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Ajoutez le code suivant à la classe `MyUserControl`. Ce code déclare un objet <xref:Microsoft.Office.Interop.PowerPoint.Shape> en tant que membre de `MyUserControl`. À l’étape suivante, vous allez utiliser <xref:Microsoft.Office.Interop.PowerPoint.Shape> pour ajouter une zone de texte à une diapositive de la présentation active.  
+3.  Ajoutez le code suivant à la classe `MyUserControl` . Ce code déclare un objet <xref:Microsoft.Office.Interop.PowerPoint.Shape> en tant que membre de `MyUserControl`. À l’étape suivante, vous allez utiliser <xref:Microsoft.Office.Interop.PowerPoint.Shape> pour ajouter une zone de texte à une diapositive de la présentation active.  
   
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  

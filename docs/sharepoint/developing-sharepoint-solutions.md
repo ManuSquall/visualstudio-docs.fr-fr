@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871055"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869016"
 ---
 # <a name="develop-sharepoint-solutions"></a>Développer des solutions SharePoint
   Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour obtenir la liste des types de projet disponibles, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.  
@@ -101,7 +101,7 @@ ms.locfileid: "53871055"
 |Emplacement de déploiement|Chemin d'accès complet du fichier sur le serveur SharePoint. Ce chemin d'accès est composé des sous-propriétés Racine du déploiement et Chemin d'accès du déploiement.|  
 |Chemin d'accès du déploiement|Le chemin d’accès relatif du fichier sur le serveur de fichiers SharePoint, tels que Workflow1\\. Le chemin d'accès qualifié complet du fichier est obtenu par concaténation de la valeur *Deployment Path* à la fin de la valeur *Deployment Root* .<br /><br /> Sélection d’une valeur de *RootFile* pour le *Type de déploiement* modifications apportées aux propriétés la *Deployment Root* propriété \<SharePointRoot >\\, se traduisant par un chemin d’accès qualifié complet de \<SharePointRoot > \Workflow1\\. Pour plus d’informations, consultez [empaquetage et déploiement de Solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Chaîne. Dossier racine dans lequel le fichier est déployé sur le serveur SharePoint. Par exemple, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> La valeur de la propriété *Deployment Root* est déterminée par le paramètre *Deployment Type* .|  
-|Deployment Type|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Peut avoir l'une des valeurs suivantes :<br /><br /> NoDeployment :  *\<aucune valeur >*<br /><br /> ElementManifest : *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile : *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile : *\<SharePointRoot > \Template\\*<br /><br /> RootFile : *\<SharePointRoot >\\*<br /><br /> GlobalResource : *\<SharePointRoot > \Resources\\*<br /><br /> ClassResources : *\<ClassResourcePath >\\*<br /><br /> Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Type de déploiement du fichier, lequel détermine sa valeur *Deployment Root* . Peut avoir l'une des valeurs suivantes :<br /><br /> NoDeployment :  *\<aucune valeur >*<br /><br /> ElementManifest : *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile : *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile : *\<SharePointRoot>\Template\\*<br /><br /> RootFile : *\<SharePointRoot>\\*<br /><br /> GlobalResource : *\<SharePointRoot>\Resources\\*<br /><br /> ClassResources : *\<ClassResourcePath>\\*<br /><br /> Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nom du fichier|Nom du fichier ou du dossier pour le fichier d'élément.|  
 |Chemin d'accès complet|Emplacement du fichier pour l'élément. (En lecture seule.)|  
   

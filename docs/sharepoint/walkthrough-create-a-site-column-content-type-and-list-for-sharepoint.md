@@ -14,17 +14,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, list instances
 - SharePoint development in Visual Studio, fields
 - SharePoint development in Visual Studio, content types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9742f314ff3f2e6b980eaa2fd914def3b05e0a51
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852529"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874586"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.  

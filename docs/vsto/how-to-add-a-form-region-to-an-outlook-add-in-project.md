@@ -14,15 +14,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5e5a549a912a84634c2025a3cfa71e4f6688ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adc1b788c01dca16663fa769ffd69904b04e8a98
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846319"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870998"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procédure : Ajouter une zone de formulaire à un projet de complément Outlook
   Créez une zone de formulaire pour étendre un formulaire Microsoft Office Outlook standard ou personnalisé à l’aide de l’Assistant **Nouvelle zone de formulaire Outlook** . Vous pouvez créer une zone de formulaire et concevoir l’interface utilisateur dans Visual Studio, ou vous pouvez importer une zone de formulaire conçue dans Outlook et ajouter du code Visual Basic ou C#.  

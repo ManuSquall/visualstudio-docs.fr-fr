@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918782"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874179"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : Créer une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -32,7 +32,7 @@ Le service de connectivité de données métiers (BDC) permet à SharePoint affi
 
 Cette procédure pas à pas vous montre comment créer un modèle de service BDC qui retourne des informations sur les contacts dans une base de données. Vous allez ensuite créer une liste externe dans SharePoint à l’aide de ce modèle.
 
-Cette procédure pas à pas décrit les tâches suivantes :
+Cette procédure pas à pas décrit les tâches suivantes :
 
 - Création d’un projet.
 - Ajout d’une entité au modèle.
@@ -76,7 +76,7 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
 1. Dans la barre de menus, choisissez **outils** > **se connecter à la base de données**.
 
-     Le **ajouter une connexion** boîte de dialogue s’ouvre.
+     La boîte de dialogue **Ajouter une connexion** s’ouvre.
 
 2. Ajouter une connexion à la base de données SQL Server AdventureWorks.
 
@@ -191,7 +191,7 @@ Ajouter une méthode de recherche spécifique à l’entité Contact à l’aide
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
-    |PasswordSalt du client|System.String|
+    |PasswordSalt|System.String|
 
 11. Dans le concepteur BDC, sur le **Contact** entité, ouvre le **ReadItem** (méthode).
 

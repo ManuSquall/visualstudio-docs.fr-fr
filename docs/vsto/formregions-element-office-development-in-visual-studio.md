@@ -13,15 +13,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegions> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 997bd24861f986736d7d691a8d2877f9b5a78566
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68a24560df1da153702cfca2a206ea38cc8fac94
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909097"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869825"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; élément (développement Office dans Visual Studio)
   Le `formRegions` élément de la `vstov4` espace de noms contient les zones de formulaire Microsoft Office Outlook qui sont associés à un composant logiciel complément VSTO.

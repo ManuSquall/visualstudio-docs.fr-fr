@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e92d200a440b093e6c3be3e143993df230ab9fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829905"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870972"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : Créer un élément de projet de colonne de site avec un modèle de projet, partie 2
   Une fois que vous définissez un type d’élément de projet SharePoint personnalisé et l’associez à un modèle de projet dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour créer un projet qui contient l’élément de projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.  
@@ -132,7 +132,7 @@ ms.locfileid: "53829905"
   
     -   ProjectSigningManager  
   
-    -   ID de commande  
+    -   CommandIds  
   
 8.  Ouvrez le menu contextuel pour le **ProjectTemplateWizard** nœud de projet, puis choisissez **ajouter une référence**.  
   
@@ -140,7 +140,7 @@ ms.locfileid: "53829905"
   
     -   EnvDTE  
   
-    -   Assemblys Microsoft.VisualStudio.OLE.Interop  
+    -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.SharePoint  
   

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 939c9c6d2d50e9feb6a50d9b49b84620d96a03cc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859410"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872220"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procédure : Personnaliser un onglet intégré
   Vous pouvez ajouter des groupes et des contrôles à un onglet intégré. Un onglet intégré est un onglet qui existe déjà sur le ruban d'une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel. Lorsque vous créez un groupe personnalisé, il apparaît en dernier sous l'onglet, mais vous pouvez déplacer votre groupe n'importe où sur l'onglet.  
@@ -33,7 +33,7 @@ ms.locfileid: "53859410"
 1.  Cliquez sur le fichier de code de ruban dans **l’Explorateur de solutions**, puis cliquez sur **Concepteur de vues**.  
   
     > [!NOTE]  
-    >  Si le fichier de code du ruban n’apparaît pas dans **l’Explorateur de solutions**, vous devez ajouter un **élément ruban** à votre projet. Consultez [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+    >  Si le fichier de code du ruban n’apparaît pas dans **l’Explorateur de solutions**, vous devez ajouter un **élément ruban** à votre projet. Voir [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  Avec le bouton droit n’importe quel onglet du Concepteur de ruban, puis cliquez sur **propriétés**.  
   

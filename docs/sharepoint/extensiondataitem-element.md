@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ExtensionDataItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95459be48b6d5e87b1a312e68e6ebea2645cb29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f5a547194de87a7fe151c3530720a078ca01438
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873078"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem (élément)
   Un élément de données personnalisé qui est associé à l’élément de projet SharePoint, au format clé/valeur. La clé et la valeur doivent être des chaînes.  
@@ -55,7 +55,7 @@ ms.locfileid: "53916937"
   
 |||  
 |-|-|  
-|**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
+|**Espace de noms**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
 |**Peut être vide**|Aucune|  

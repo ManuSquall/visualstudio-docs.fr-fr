@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cda1d413eac76136e3ea40bfec02322927c2368
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857969"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868796"
 ---
 # <a name="form-support-in-workflows"></a>Prise en charge de formulaire dans les workflows
   Quatre types de formulaires peuvent être utilisés dans un flux de travail : association, initiation, tâche et la modification. Ces types de formulaire peuvent être basés sur un formulaire ASPX ou un formulaire InfoPath. Le niveau de prise en charge qui [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit pour un formulaire particulier dépend de plusieurs facteurs, qui sont décrites dans les tableaux suivants. Pour plus d’informations sur les types de formulaires de flux de travail, consultez [vue d’ensemble des formulaires de flux de travail](http://go.microsoft.com/fwlink/?LinkId=185228).  

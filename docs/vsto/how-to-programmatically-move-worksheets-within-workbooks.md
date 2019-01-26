@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, moving
 - workbooks, moving worksheets in
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4df9f10872283cf8f8b38ba29a9ea140646aa16f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10f610513b802b2b5101bdc0c2689c3d4c5ed90b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898932"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870530"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Procédure : Déplacer des feuilles de calcul dans les classeurs par programmation
   Vous pouvez modifier par programmation la position des feuilles de calcul les unes par rapport aux autres dans un classeur. Si vous ne spécifiez pas d’emplacement pour la feuille déplacée, Excel crée un classeur pour le contenir.  

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - disabled add-ins
 - add-ins [Office development in Visual Studio], disabled
 - add-ins [Office development in Visual Studio], enabling
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfc5a70e309ffece432a2d9c9adb10011557239d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939396"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869250"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procédure : Réactiver un complément qui a été désactivé
   Les applications Microsoft Office peuvent désactiver les compléments VSTO qui se comportent de façon inattendue. Si une application ne charge pas votre complément VSTO quand vous essayez de la déboguer, cela peut-être dû au fait qu'elle a désactivé votre complément VSTO de manière forcée ou en douceur.  

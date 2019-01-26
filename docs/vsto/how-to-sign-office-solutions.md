@@ -9,24 +9,24 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829045"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871661"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procédure : Signer des solutions Office
   Si vous vous connectez à une solution, vous pouvez accorder une confiance à la solution en utilisant le certificat en tant que preuve. Vous pouvez utiliser le même certificat pour plusieurs solutions, et toutes les solutions seront approuvées avec aucune mise à jour de stratégie de sécurité supplémentaire.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Si vous modifiez manuellement l’application et manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (*mage.exe* et *mageui.exe*), vous devez resigner les manifestes avant de pouvoir les utiliser. Pour plus d'informations, voir [Procédure : Signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Si vous modifiez manuellement l’application et manifestes de déploiement à l’aide de la Manifest Generation and Editing Tool (*mage.exe* et *mageui.exe*), vous devez resigner les manifestes avant de pouvoir les utiliser. Pour plus d'informations, voir [Procédure : Resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="sign-by-using-a-certificate"></a>Se connecter à l’aide d’un certificat
  Un certificat est un fichier qui contient une clé unique et l’identité de l’éditeur de solutions. Vous pouvez acheter des certificats à partir d’une autorité de certification, ou créer votre propre certificat et avoir une autorité de certification signez-le.

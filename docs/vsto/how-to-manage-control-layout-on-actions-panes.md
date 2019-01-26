@@ -11,15 +11,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87ec74628bad3d4c0e2031b8399e279bc9b5229d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991173"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873117"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procédure : Gérer la disposition des contrôles dans les volets actions
   Un volet actions est ancré à droite d’un document ou une feuille de calcul par défaut ; Toutefois, il peut être ancré à gauche, haut ou bas. Si vous utilisez plusieurs contrôles utilisateur, vous pouvez écrire du code pour empiler correctement les contrôles utilisateur dans le volet actions. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).  

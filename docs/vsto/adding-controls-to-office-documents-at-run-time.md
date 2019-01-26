@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842786"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869185"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Ajouter des contrôles aux documents Office au moment de l’exécution
   Vous pouvez ajouter des contrôles à un document Microsoft Office Word et un classeur Microsoft Office Excel lors de l’exécution. Vous pouvez également les supprimer lors de l’exécution. Les contrôles que vous ajoutez ou supprimez lors de l’exécution sont appelés *contrôles dynamiques*.  
@@ -110,7 +110,7 @@ ms.locfileid: "53842786"
 
 - Pour Excel, utilisez l’une des méthodes <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> d’un objet <xref:Microsoft.Office.Tools.Excel.ControlCollection> .  
 
-- Pour Word, utilisez l’une des méthodes <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> d’un objet <xref:Microsoft.Office.Tools.Word.ControlCollection>.  
+- Pour Word, utilisez l’une des méthodes <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> d’un objet <xref:Microsoft.Office.Tools.Word.ControlCollection> .  
 
   Pour ajouter le contrôle, transmettez le <xref:System.Windows.Forms.Control>, un emplacement pour le contrôle et un nom qui identifie de façon unique le contrôle à la méthode `AddControl`. La méthode `AddControl` renvoie un objet qui définit la façon dont le contrôle interagit avec la feuille de calcul ou le document. Le `AddControl` méthode retourne un <xref:Microsoft.Office.Tools.Excel.ControlSite> (pour Excel) ou un <xref:Microsoft.Office.Tools.Word.ControlSite> objet (pour Word).  
 
@@ -126,7 +126,7 @@ ms.locfileid: "53842786"
 
 - Le `ControlSite`, `OLEObject` ou l’objet `OLEControl` qui représente le contrôle après qu’il a été ajouté à la feuille de calcul ou au document.  
 
-  De nombreuses propriétés et méthodes sont partagées entre ces contrôles. Il est important que vous accédiez à ces membres via le contrôle approprié :  
+  De nombreuses propriétés et méthodes sont partagées entre ces contrôles. Il est important que vous accédiez à ces membres via le contrôle approprié :  
 
 - Pour accéder aux membres qui appartiennent uniquement au contrôle personnalisé, utilisez le <xref:System.Windows.Forms.Control>.  
 

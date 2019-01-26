@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989161"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871947"
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Paramètres remplaçables, ou *jetons*, peut être utilisé à l’intérieur des fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont similaires à celui de la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).  
@@ -65,8 +65,8 @@ ms.locfileid: "53989161"
 |$SharePoint.Feature.DeploymentPath$|Le nom du dossier qui contient la fonctionnalité dans le package. Ce jeton équivaut à la propriété « Chemin de déploiement » dans le Concepteur de fonctionnalités. Un exemple de valeur « Projet1_Fonctionnalite1 ».|  
 |$SharePoint.Feature.Id$|L’ID SharePoint de la fonctionnalité de conteneur. Ce jeton, comme avec tous les jetons de niveau de fonctionnalité, peut être utilisée uniquement par les fichiers inclus dans un package via une fonctionnalité, pas ajouté directement à un package en dehors d’une fonctionnalité.|  
 |$SharePoint.ProjectItem.Name$|Le nom de l’élément de projet (et non son nom de fichier), comme obtenu à partir de **ISharePointProjectItem.Name**.|  
-|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Le nom qualifié assembly du type qui correspond le [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] du jeton. Le format de la [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] est en minuscules et correspond au format GUID.ToString (autrement dit, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. FullName$|Le nom complet du type correspondant au GUID dans le jeton. Le format du GUID est en minuscule et correspond au format GUID.ToString (autrement dit, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|Le nom qualifié assembly du type qui correspond le [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] du jeton. Le format de la [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] est en minuscules et correspond au format GUID.ToString (autrement dit, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.FullName$|Le nom complet du type correspondant au GUID dans le jeton. Le format du GUID est en minuscule et correspond au format GUID.ToString (autrement dit, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Ajouter des extensions à la liste d’extensions de fichier remplacement des jetons
  Bien que les jetons peuvent théoriquement être utilisés par n’importe quel fichier qui appartient à un projet SharePoint élément inclus dans le package, par défaut, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recherche les jetons uniquement dans les fichiers de package, les fichiers manifestes et les fichiers ayant les extensions suivantes :  
