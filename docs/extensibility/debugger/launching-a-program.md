@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0671a8f0d926cb90419470278f65eedf07486da7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945877"
 ---
 # <a name="launch-a-program"></a>Lancer un programme
 Appuyez sur les utilisateurs souhaitant déboguer un programme **F5** d’exécuter le débogueur à partir de l’IDE. Commence une série d’événements qui aboutissent à présent dans l’IDE de la connexion à un moteur de débogage (DE), qui est à son tour connecté, ou attaché, le programme comme suit :  

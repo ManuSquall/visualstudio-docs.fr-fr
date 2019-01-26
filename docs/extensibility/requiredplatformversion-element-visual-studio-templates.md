@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f77b14903ccf5569755cf7116a1365d5ba8487c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b04a4332169f2f7ae57daaaeebb8a71ea0fafc72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850386"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947502"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
 Spécifie la version minimale du système d’exploitation que le modèle de projet a besoin pour fonctionner correctement. Cet élément est utilisé pour des modèles de projet qui créent des [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.  
@@ -25,7 +25,7 @@ Spécifie la version minimale du système d’exploitation que le modèle de pro
   
  VSTemplate  
 TemplateData  
-..... TargetPlatformName  
+.....TargetPlatformName  
 RequiredPlatformVersion  
   
 ## <a name="syntax"></a>Syntaxe  

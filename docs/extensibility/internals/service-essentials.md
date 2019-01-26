@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a72dfb519e35cb0bec94fb73d112e0bff27b0b14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027956"
 ---
 # <a name="service-essentials"></a>Éléments fondamentaux du service
 Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est lui-même une collection de VSPackages qui fournit des services aux autres VSPackages.  
@@ -89,7 +89,7 @@ Heureusement, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> fo
     End If
     ```  
     
-    Ce code obtient un service SVsActivityLog et il effectue un cast en interface IVsActivityLog, qui peut être utilisée pour écrire dans le journal d’activité. Pour obtenir un exemple, consultez [Comment : Utiliser le journal d’activité](../../extensibility/how-to-use-the-activity-log.md).  
+    Ce code obtient un service SVsActivityLog et il effectue un cast en interface IVsActivityLog, qui peut être utilisée pour écrire dans le journal d’activité. Pour voir un exemple, consultez [Comment : Utiliser le journal d’activité](../../extensibility/how-to-use-the-activity-log.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Liste des Services disponibles](../../extensibility/internals/list-of-available-services.md)   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948984"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 Un extrait de code est un morceau de code est inséré dans le fichier source. L’extrait de code est un modèle basé sur XML avec un ensemble de champs. Ces champs sont mis en surbrillance une fois que l’extrait de code est inséré et peut avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après que l’extrait de code est inséré, le service de langage peut mettre en forme l’extrait de code.  
@@ -85,11 +85,11 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
   
 |Élément|Description|  
 |-------------|-----------------|  
-|LCID %|ID de paramètres régionaux.|  
+|%LCID%|ID de paramètres régionaux.|  
 |%InstallRoot%|Dossier d’installation racine pour Visual Studio, par exemple, C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Dossier contenant le projet actuel.|  
-|% ProjItem %|Dossier contenant l’élément de projet actuel.|  
-|% TestDocs %|Dossier dans le dossier paramètres de l’utilisateur, par exemple, C:\Documents and Settings\\ *[username]* documents\Visual Studio\8.|  
+|%ProjDir%|Dossier contenant le projet actuel.|  
+|%ProjItem%|Dossier contenant l’élément de projet actuel.|  
+|%TestDocs%|Dossier dans le dossier paramètres de l’utilisateur, par exemple, C:\Documents and Settings\\ *[username]* documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>L’activation des extraits de Code pour votre Service de langage  
  Vous pouvez activer des extraits de code pour votre service de langage en ajoutant le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> attribut votre VSPackage (consultez [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md) pour plus d’informations). Le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> et <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> paramètres sont facultatifs, mais vous devez inclure le `SearchPaths` paramètre nommé afin d’informer le **Gestionnaire des extraits de Code** de l’emplacement de vos extraits.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15b7f53dddefa78ef58818d20b5ca6eafb84e207
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25dc88025a6fb4c4efe83d0c77c288e126cec1b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957287"
 ---
 # <a name="expression-evaluation-context"></a>Contexte d’évaluation d’expression
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, un **contexte d’évaluation d’expression**:  

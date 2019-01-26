@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50d707c42196d727a35ca7c9d9cef250c60f7d5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926854"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018070"
 ---
 # <a name="providing-automation-for-vspackages"></a>Fourniture de l’automatisation pour VSPackages
 Il existe deux façons de fournir l’automatisation pour vos VSPackages : en implémentant des objets VSPackage spécifiques et en implémentant des objets automation standard. En règle générale, ils sont utilisés ensemble pour étendre le modèle automation de l’environnement.  

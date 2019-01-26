@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6563691022fdd1694af69e872aa0d37803c2191c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911648"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956166"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -96,7 +96,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
     -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6.  Ajoutez la classe de votre processeur de directive personnalisé au projet.
 
@@ -159,7 +159,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.
 
 > [!CAUTION]
->  Toute modification incorrecte du Registre peut gravement endommager votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.
+>  Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre
 

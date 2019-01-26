@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6e0b44c383cfd6499a3c23423bbce21db4ff876
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bb888e83f10d887c15b9ebf9fd67acad28f8e4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965111"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037757"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interception des commandes du service de langage hérité
 Avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez avoir les commandes d’ordonnée à l’origine de service de langage qui prendrait autrement en charge l’affichage de texte. Cela est utile pour le comportement spécifique au langage qui ne gère pas de l’affichage de texte. Vous pouvez intercepter ces commandes en ajoutant un ou plusieurs filtres de commande pour l’affichage de texte à partir de votre service de langage.  

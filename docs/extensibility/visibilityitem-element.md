@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eca5e797fe41c56cfcdbe1b1678c0824f3b93b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0bfdf54ccd3975864b965182d86923c6c335eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939461"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980919"
 ---
 # <a name="visibilityitem-element"></a>Élément VisibilityItem
 Le `VisibilityItem` élément détermine la visibilité statique des commandes et des barres d’outils. Chaque entrée identifie une commande ou un menu et également un contexte de l’interface utilisateur de commande associée. Visual Studio détecte les commandes, menus, barres d’outils et des leur visibilité, sans charger les VSPackages qui les définissent. L’IDE utilise le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> méthode pour déterminer si un contexte d’interface utilisateur de commande est actif.  
@@ -43,7 +43,7 @@ Le `VisibilityItem` élément détermine la visibilité statique des commandes e
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. Le GUID de l’identificateur de commande/ID GUID.|  
+|guid|Obligatoire. Le GUID de l’identificateur de commande/ID GUID.|  
 |ID|Obligatoire. L’ID de l’identificateur de commande/ID GUID.|  
 |contexte|Obligatoire. Le contexte de l’interface utilisateur dans lequel la commande est visible.|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  

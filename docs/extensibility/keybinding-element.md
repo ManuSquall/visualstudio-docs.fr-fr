@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c401b1f5179fa03dbd43ffbcff3bd2f0151340c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4706114f87e18ce97789e41098e13cf38917d533
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933037"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 L’élément de combinaison de touches Spécifie les raccourcis clavier pour les commandes.  
@@ -36,13 +36,13 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire.|  
+|guid|Obligatoire.|  
 |ID|Obligatoire.|  
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
 |key1|Obligatoire. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|MOD1|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|  
+|mod1|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|  
 |key2|Facultatif. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|MOD2|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|  
+|mod2|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|  
 |Émulateur|Facultatif.|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

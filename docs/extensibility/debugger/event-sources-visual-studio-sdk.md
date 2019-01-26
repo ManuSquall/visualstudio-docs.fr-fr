@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0566468a7beaf7e50723c2e8e594e5cd2eebec79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d141deacd987155a5af947eeb0dcc2b5ae05e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888606"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069042"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (SDK Visual Studio)
 Il existe deux sources d’événements : le moteur de débogage (dé) et la Session de débogage Manager (SDM). Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.  

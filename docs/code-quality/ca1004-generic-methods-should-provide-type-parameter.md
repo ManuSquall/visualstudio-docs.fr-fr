@@ -1,5 +1,5 @@
 ---
-title: 'CA1004 : Les méthodes génériques doivent fournir un paramètre de type'
+title: 'CA1004 : Les méthodes génériques doivent fournir un paramètre de type'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe40093253cb57d60c2a06239b47b5f3141f76c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cec1af3bfb528902631f0007bd19d2bb4dc8a7e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971895"
 ---
-# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004 : Les méthodes génériques doivent fournir un paramètre de type
+# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004 : Les méthodes génériques doivent fournir un paramètre de type
 
 |||
 |-|-|

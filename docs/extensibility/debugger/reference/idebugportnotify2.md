@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61cc6f609295022c27b18895f905e7931c834e8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13b96fd88bee0bff70352606325917cb1dd4229a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876875"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021726"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 Cette interface inscrit ou annule l’inscription d’un programme qui peut être débogué avec le port, qu'il s’exécute.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbfb014e57f793bb39d696ac311c4f27884500f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949715"
 ---
 # <a name="parent-element"></a>Élément parent
 Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d’un menu ou un groupe peut être n’importe quel autre menu ou un groupe. Dans un [élément CommandPlacement](../extensibility/commandplacement-element.md), cet élément est requis ; il est facultatif dans toutes les autres instances. Si cet élément est omis, le parent de `Group_Undefined:0` est implicite.  
@@ -34,7 +34,7 @@ Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. Identificateur de commande de GUID/ID GUID.|  
+|guid|Obligatoire. Identificateur de commande de GUID/ID GUID.|  
 |ID|Obligatoire. Identificateur de commande d’ID de/ID GUID.|  
   
 ### <a name="child-elements"></a>Éléments enfants  

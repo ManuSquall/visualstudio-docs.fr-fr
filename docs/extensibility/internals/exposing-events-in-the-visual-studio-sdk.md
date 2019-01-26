@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2eeb155212f7e065febb68b58b31879b5d5a7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c08af11ce08cf86948655d01dc5468a3d70ae2fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924301"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exposer des événements dans le SDK Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet de la source d’événements à l’aide d’automation. Nous recommandons que vous source d’événements pour les projets et éléments de projet.  
@@ -46,13 +46,13 @@ ms.locfileid: "53853094"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entrées de Registre à partir de l’exemple de projet de base  
  Cette section indique où ajouter les valeurs d’événement automation dans le Registre.  
   
- **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]**
   
  **AutomationProjectEvents** = retourne le `AutomationProjectEvents` objet.  
   
  **AutomationProjectItemEvents** = retourne le `AutomationProjectItemsEvents` objet.  
   
-|Name|Type|Range|Description|  
+|Name|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
 |Par défaut (@)|REG_SZ|inutilisé|Non utilisé. Vous pouvez utiliser le champ de données pour la documentation.|  
 |*AutomationProjectsEvents*|REG_SZ|Nom de votre objet d’événement.|Il concerne uniquement le nom de clé. Vous pouvez utiliser le champ de données pour la documentation.<br /><br /> Cet exemple provient de l’exemple de projet de base.|  

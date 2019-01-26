@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 724c78ab566e56dd8d6281819a58fa4baf00563c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971233"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie d’un package VSIX
 Un package VSIX est un *.vsix* fichier qui contient une ou plusieurs extensions de Visual Studio, ainsi que les métadonnées de Visual Studio utilise pour classifier et installer les extensions. Ces métadonnées sont contenues dans le manifeste VSIX et le *[Content_Types] .xml* fichier. Un package VSIX peut également contenir un ou plusieurs *Extension.vsixlangpack* fichiers pour que le texte de programme d’installation localisé et peut contenir des packages VSIX supplémentaires pour installer les dépendances.  
@@ -54,7 +54,7 @@ Un package VSIX est un *.vsix* fichier qui contient une ou plusieurs extensions 
   
  Par défaut, l’installation s’applique uniquement à l’utilisateur actuel, car *% LocalAppData%* est un répertoire spécifique à l’utilisateur. Toutefois, si vous définissez la [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) élément du manifeste pour `True`, l’extension est installée sous <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> et sera disponible à tous les utilisateurs de l’ordinateur.  
   
-## <a name="contenttypesxml"></a>[Content_Types] .xml  
+## <a name="contenttypesxml"></a>[Content_Types].xml  
  Le *[Content_Types] .xml* fichier identifie les types de fichiers dans la liste développée *.vsix* fichier. Visual Studio utilise ce fichier pendant l’installation du package, mais n’installe pas le fichier lui-même. Pour plus d’informations sur ce fichier, consultez [la structure du fichier [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  
   
  Un *[Content_Types] .xml* fichier est requis par la norme Open Packaging Conventions (OPC). Pour plus d’informations sur OPC, consultez [OPC : Une nouvelle norme pour l’empaquetage de vos données](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) sur le site Web MSDN.

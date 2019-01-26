@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ac0b74981b7e4a364bbc551be132b79cc432448
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923346"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875821"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook
   Vous pouvez spécifier les éléments Microsoft Office Outlook qui affichent une zone de formulaire en associant la zone de formulaire à la classe de message de chaque élément. Par exemple, si vous souhaitez ajouter une zone de formulaire au bas d’un élément de messagerie, vous pouvez associer la zone de formulaire avec le `IPM.Note` classe de message.  
@@ -35,11 +35,11 @@ ms.locfileid: "53923346"
   
 |Type d’élément Outlook|Nom de la classe message|  
 |-----------------------|------------------------|  
-|Objet AppointmentItem|`IPM.Appointment`|  
+|AppointmentItem|`IPM.Appointment`|  
 |ContactItem|`IPM.Contact`|  
 |DistListItem|`IPM.DistList`|  
 |JournalItem|`IPM.Activity`|  
-|Objet MailItem|`IPM.Note`|  
+|MailItem|`IPM.Note`|  
 |PostItem|`IPM.Post` ou `IPM.Post.RSS`|  
 |TaskItem|`IPM.Task`|  
   
@@ -64,13 +64,13 @@ ms.locfileid: "53923346"
   
  Les noms que vous tapez doivent respecter les consignes suivantes :  
   
-- Utiliser le nom de classe qualifié complet (par exemple : « GESTION INTÉGRÉE. Note.Contoso »).  
+- Utiliser le nom de classe qualifié complet (par exemple : "IPM.Note.Contoso").  
   
 - Utilisez des points-virgules pour séparer plusieurs noms de classe de message.  
   
 - N’incluez pas les classes de message Outlook standard, tels que « gestion intégrée. Remarque » ou « gestion intégrée. Contact ». Inclure uniquement les classes de message personnalisées, telles que « gestion intégrée. Note.Contoso ».  
   
-- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : « GESTION INTÉGRÉE »).  
+- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : "IPM").  
   
 - Ne dépasse pas 256 caractères pour chaque nom de classe de message.  
   
@@ -91,9 +91,9 @@ ms.locfileid: "53923346"
   
  Les attributs doivent respecter les consignes suivantes :  
   
-- Pour les classes de message personnalisé, utilisez le nom de classe qualifié complet (par exemple : « GESTION INTÉGRÉE. Note.Contoso »).  
+- Pour les classes de message personnalisé, utilisez le nom de classe qualifié complet (par exemple : "IPM.Note.Contoso").  
   
-- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : « GESTION INTÉGRÉE »).  
+- Ne spécifiez pas de la classe de message de base en lui-même (par exemple : "IPM").  
   
 - Ne dépasse pas 256 caractères pour chaque nom de classe de message.  
   

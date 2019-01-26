@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7585a303c8f4a37567d64b0a27f7a8560c3135f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e9a883c99bb41decbe0bbb53d2a4c484e021c07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851535"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929294"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 Représente un modificateur facultatif de débogage.  

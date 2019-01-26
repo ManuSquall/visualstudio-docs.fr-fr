@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acd36140d4624c2002b28f2d7932931817f46f56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 974466977995b866d70ad7e1619a6ae536886f6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870792"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007608"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Cette interface représente une position dans l’espace d’adressage de l’ordinateur exécutant le programme en cours de débogage.  

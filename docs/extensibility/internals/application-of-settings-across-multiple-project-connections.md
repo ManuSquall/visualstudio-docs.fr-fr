@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c49ce750b48372e9233a788b4f98b6ece5e2a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d6810212b10052077ab5adeddbca69dbd5fb339
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976272"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Application des paramètres entre plusieurs connexions de projet
 Un plug-in de contrôle de code source créé à l’aide de la Source de contrôle plug-in API Version 1.2, peut utiliser une opération par lot pour exécuter l’opération de contrôle de code source même entre plusieurs projets ou de plusieurs contextes de connexion. Lots peuvent être utilisés pour éliminer redondants, des boîtes de dialogue à partir de l’expérience utilisateur par projet.  

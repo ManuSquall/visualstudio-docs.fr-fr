@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe8572ea5ac6f2c100d203063dd43b02c78749b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921547"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864187"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Utiliser des modules pour inclure des fichiers dans la solution
   Il peut arriver lorsque vous souhaitez déployer les fichiers sur le serveur SharePoint quel que soit leur type de fichier, telles que de nouvelles pages maîtres. Pour ce faire, vous pouvez utiliser *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules de code). Les modules sont des conteneurs pour les fichiers dans une solution SharePoint. Lorsque la solution est déployée, les fichiers dans le module sont copiés vers les dossiers spécifiés sur le serveur SharePoint.  
@@ -41,9 +41,9 @@ ms.locfileid: "53921547"
   
  Modules nouvellement créés contiennent les fichiers par défaut suivants :  
   
-|Nom de fichier|Description|  
+|Nom du fichier|Description|  
 |---------------|-----------------|  
-|*Elements.Xml*|Le fichier de définition pour le module.|  
+|*Elements.xml*|Le fichier de définition pour le module.|  
 |*Sample.txt*|Un fichier d’espace réservé qui sert d’exemple d’un fichier dans le module.|  
   
  Le *Elements.xml* fichier contient les éléments suivants :  

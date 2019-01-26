@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5923efe859f6fe04468e6659d8df46b8b3d2a1cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981127"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procédure pas à pas : Afficher l’aide de la Signature
 Pour la signature (également appelé *informations sur les paramètres*) affiche la signature d’une méthode dans une info-bulle lorsqu’un utilisateur tape le caractère de début de liste de paramètre (généralement une parenthèse ouvrante). Lorsqu’un paramètre et le séparateur de paramètre (en général une virgule) sont tapés, l’info-bulle est mise à jour pour afficher le paramètre suivant en gras. Vous pouvez définir l’assistance de Signature comme suit : dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu et afficher l’aide de la Signature pour uniquement ce type ou afficher l’aide de la Signature pour un type de contenu existant (par exemple, « texte »). Cette procédure pas à pas montre comment afficher l’aide de la Signature pour le type de contenu « texte ».  
@@ -43,7 +43,7 @@ Pour la signature (également appelé *informations sur les paramètres*) affich
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Assemblys Microsoft.VisualStudio.OLE.Interop  
+     Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   

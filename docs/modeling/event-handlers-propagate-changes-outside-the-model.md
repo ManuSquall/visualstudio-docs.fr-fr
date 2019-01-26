@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f421874e092ff4d0d6e722b7bebee6f6bb48f7ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d64080d47da32810016c682d2b536e9f19544e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942514"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 
@@ -176,7 +176,7 @@ Chaque type d’événement correspond à une collection dans Store.EventManager
 |ElementAdded|Une instance d’une classe de domaine, une relation de domaine, forme, connecteur ou diagramme est créée.|
 |ElementDeleted|Un élément de modèle a été supprimé du répertoire d’éléments du magasin et n’est plus la source ou la cible d’une relation. L’élément n’est pas réellement supprimé de la mémoire, mais est conservée dans le cas d’une opération d’annulation ultérieure.|
 |ElementEventsBegun|Appelé à la fin d’une transaction externe.|
-|Événement ElementEventsEnded|Appelé lorsque tous les autres événements ont été traitées.|
+|ElementEventsEnded|Appelé lorsque tous les autres événements ont été traitées.|
 |ElementMoved|Un élément de modèle a été déplacé à partir de la partition d’un magasin vers un autre.<br /><br /> Cela n’est pas lié à l’emplacement d’une forme sur le diagramme.|
 |ElementPropertyChanged|La valeur d’une propriété de domaine a changé. Cela est exécutée uniquement si les valeurs anciennes et nouvelles sont inégales.|
 |RolePlayerChanged|Un des deux rôles (fin) d’une relation de fait référence à un nouvel élément.|
