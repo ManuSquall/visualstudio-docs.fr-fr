@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bfde36f5e2b4854dbcee494ddd83ff4610982530
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936916"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Créer des instances de projet à l’aide de fabriques de projet
 Types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliser un *fabrique de projet* pour créer des instances d’objets du projet. Une fabrique de projet est similaire à une fabrique de classe standard pour les objets COM cocreatable. Toutefois, les objets du projet ne sont pas cocreatable ; ils peuvent uniquement être créés à l’aide d’une fabrique de projet.  

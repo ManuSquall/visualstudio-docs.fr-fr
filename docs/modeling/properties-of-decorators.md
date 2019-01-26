@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc0f6e3fe8078675792109c41ee75272b44ca714
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cc30e43ea10a0b206351df9722d813b565b78a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942176"
 ---
 # <a name="properties-of-decorators"></a>Propriétés des décorateurs
 Éléments décoratifs sont des icônes, texte ou développer/réduire les chevrons qui peuvent apparaître dans les formes ou des connecteurs sur le diagramme. Les tableaux suivants indiquent les propriétés pour les trois types d’élément décoratif. Certaines propriétés s’affichent uniquement sur les éléments décoratifs ou uniquement sur les éléments décoratifs de connecteur.
@@ -28,7 +28,7 @@ ms.locfileid: "53865360"
 |-|-|-|
 |DisplayName|Le nom de l’élément décoratif qui s’affichera dans le concepteur généré.|Développez réduire le décorateur|
 |Name|Le nom de l’élément décoratif.|ExpandCollapseDecorator|
-|Notes|Remarques informelles associées à cet élément décoratif.|\<Aucun >|
+|Notes|Remarques informelles associées à cet élément décoratif.|\<aucune>|
 |HorizontalOffset|Le décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Le décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |OffsetFromLine|Le décalage de l’élément décoratif à partir de la ligne, par rapport à sa position par défaut, en pouces. (Sur les connecteurs uniquement.)|0|
@@ -39,10 +39,10 @@ ms.locfileid: "53865360"
 
 |Propriété|Description|Par défaut|
 |-|-|-|
-|DefaultIcon|Le chemin d’accès du fichier icône ou une image à afficher.|\<Aucun >|
+|DefaultIcon|Le chemin d’accès du fichier icône ou une image à afficher.|\<aucune>|
 |DisplayName|Le nom de l’élément décoratif à afficher dans le concepteur généré.|Icône Decorator|
 |Name|Le nom de l’élément décoratif.|IconDecorator|
-|Notes|Remarques informelles associées à l’élément décoratif.|\<Aucun >|
+|Notes|Remarques informelles associées à l’élément décoratif.|\<aucune>|
 |HorizontalOffset|Le décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Le décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |OffsetFromLine|Le décalage de l’élément décoratif à partir de la ligne, par rapport à sa position par défaut, en pouces. (Sur les connecteurs uniquement.)|0|
@@ -58,7 +58,7 @@ ms.locfileid: "53865360"
 |FontSize|La taille de police pour le texte qui est affiché dans l’élément décoratif.|8|
 |FontStyle|Le style de police pour le texte qui est affiché dans l’élément décoratif.|Normale|
 |Name|Le nom de l’élément décoratif.|Etiquette|
-|Notes|Remarques informelles associées à l’élément décoratif.|\<Aucun >|
+|Notes|Remarques informelles associées à l’élément décoratif.|\<aucune>|
 |HorizontalOffset|Le décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Le décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |OffsetFromLine|Le décalage de l’élément décoratif à partir de la ligne, par rapport à sa position par défaut, en pouces. (Sur les connecteurs uniquement.)|0|

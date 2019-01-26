@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5c6fa30d97c309534486a0ded6bac5b019f56fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b9f80ff04854371a65acd7b50f74d601c59b668
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913541"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930093"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Lignes directrices pour l’expérience utilisateur dans Visual Studio
 Suivez les consignes d’environnement utilisateur Visual Studio si vous concevez des nouvelles fonctionnalités pour Visual Studio. Ces instructions contiennent des informations sur les modèles courants de l’utilisateur et les modèles d’interaction afin que les concepteurs de nouvelles interfaces utilisateur (IU) peuvent créer des expériences utilisateur transparente et cohérente dans l’environnement de développement.  

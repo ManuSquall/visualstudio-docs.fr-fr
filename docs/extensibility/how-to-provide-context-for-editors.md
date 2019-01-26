@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67524a694b45343eba14f07b387ba1551bba1a80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945864"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Procédure : Fournir un contexte pour les éditeurs
 Pour un éditeur, le contexte est actif uniquement lorsque l’éditeur a le focus ou qu’il avait le focus immédiatement avant le focus a été déplacé vers une fenêtre outil. Vous pouvez fournir le contexte pour un éditeur en effectuant les tâches suivantes :  

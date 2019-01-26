@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a49445445388a6db0e6dae9c09b50137c04c4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880700"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954122"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Utilisation d’image dans Visual Studio  
@@ -89,7 +89,7 @@ ms.locfileid: "53880700"
   
 |||  
 |-|-|  
-|**« Recherche »**|**"Zoom"**|  
+|**"Search"**|**"Zoom"**|  
 |![Icône de recherche](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![Icône de zoom](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404-10_Zoom")|  
   
  Dans les vues de l’arborescence, n’utilisez pas l’icône de dossier et un modificateur. Lorsqu’il est disponible, utilisez uniquement le modificateur.  
@@ -154,7 +154,7 @@ ms.locfileid: "53880700"
   
  ![perspective à 3 points](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404-31_3PointPerspective")<br />Perspective à 3 points
   
- ![perspective à 1 point](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")<br />Perspective à 1 point
+ ![1-point perspective](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")<br />Perspective à 1 point
   
  La plupart des éléments doit être accessible sur ou dirigé vers la droite :  
   
@@ -283,9 +283,9 @@ ms.locfileid: "53880700"
   
 |Utilisation|Name|Valeur (tous les thèmes)|Échantillon|  
 |-----------|----------|--------------------------|------------|  
-|Positif|VS Action vert|388 A 34 / 56,138,52|![Échantillon 388 a 34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Positif|VS Action vert|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Négatif|VS Action rouge|A1260D / 161,38,13|![Échantillon A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|Neutre|VS Action bleu|C 00539 / 0,83,156|![Échantillon 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Neutre|VS Action bleu|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Créer/nouveau|VS Action Orange|C27D1A / 194,156,26|![Échantillon C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>Exemples  
@@ -334,13 +334,13 @@ ms.locfileid: "53880700"
 |Utilisation|Name|Valeur (tous les thèmes)|Échantillon|  
 |-----------|----------|--------------------------|------------|  
 |ASP, HTML, WPF|ASP HTML WPF bleu|0095D 7 / 0,149,215|![Échantillon 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
-|C++|CPP violet|9B4F96 / 155,79,150|![Échantillon 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|C#|CS vert (Green d’Action Visual Studio)|388 A 34 / 56,138,52|![Échantillon 388 a 34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|CSS|CSS rouge|BD1E2D / 189,30,45|![Échantillon BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
-|F#|FS violet|672878 / 103,40,120|![Échantillon 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
+|C++|CPP violet|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
+|C#|CS vert (Green d’Action Visual Studio)|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|CSS|CSS rouge|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
+|F#|FS violet|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
 |JavaScript|JS Orange|F16421 / 241,100,33|![Échantillon F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
-|VB|VB Blue (bleu d’Action de Visual Studio)|C 00539 / 0,83,156|![Échantillon 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|TypeScript|TS Orange|E04C06 / 224,76,6|![Échantillon E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
+|VB|VB Blue (bleu d’Action de Visual Studio)|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|TypeScript|TS Orange|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
 |Python|PY vert|879636 / 135,150,54|![Échantillon 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
   
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Exemples d’icônes avec des modificateurs de langage  
@@ -356,9 +356,9 @@ ms.locfileid: "53880700"
 |Utilisation|Name|Valeur (tous les thèmes)|Échantillon|  
 |-----------|----------|--------------------------|------------|  
 |Classe, événement|VS Action Orange|C27D1A / 194,125,26|![Échantillon C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|Méthode d’extension, méthode, Module, délégué|VS Action violet|652D 90 / 101,45,144|![Échantillon 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
-|Champ élément Enum, Macro, Structure, Union valeur Type, opérateur, Interface|VS Action bleu|C 00539 / 0,83,156|![Échantillon 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Object|VS Action vert|388 A 34 / 56,138,52|![Échantillon 388 a 34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Méthode d’extension, méthode, Module, délégué|VS Action violet|652D90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|Champ élément Enum, Macro, Structure, Union valeur Type, opérateur, Interface|VS Action bleu|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Object|VS Action vert|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Constante, Exception, élément Enum, Map, élément de la carte, Namespace, modèle, définition de Type|En arrière-plan (BG Visual Studio)|424242 / 66,66,66|![Échantillon 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Exemples d’icônes d’IntelliSense  
@@ -373,11 +373,11 @@ ms.locfileid: "53880700"
   
 |Utilisation|Name|Valeur (tous les thèmes)|Échantillon|  
 |-----------|----------|--------------------------|------------|  
-|État : neutre|Notification Blue (bleu de Visual Studio)|1BA1E2 / 27,161,226|![Échantillon 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
-|État : positif|Notification vert (Green Visual Studio)|339933 / 51,153,51|![Échantillon 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
+|État : neutre|Notification Blue (bleu de Visual Studio)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
+|État : positif|Notification vert (Green Visual Studio)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
 |État : négative|Notification Red (rouge de Visual Studio)|E51400 / 229,20,0|![Échantillon E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
 |État : avertissement|Notification jaune (VS Orange)|FFCC00 / 255,204,0|![Échantillon FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
-|Remplissage de premier plan|Notification noir (noir)|000000 / 0,0,0|![Échantillon &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
+|Remplissage de premier plan|Notification noir (noir)|000000 / 0,0,0|![Swatch &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
 |Remplissage de premier plan|Notification blanc (blanc)|FFFFFF / 255,255,255|![Échantillon FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>Exemples d’icônes de notification  
@@ -397,16 +397,16 @@ ms.locfileid: "53880700"
 |Monaco|Présentation|Blanc|FFFFFF / 255, 255, 255|![Échantillon FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Présentation|Blanc|FFFFFF / 255, 255, 255|![Échantillon FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Normale|F12 Grey_Primary|555555 / 85, 85, 85|![Échantillon 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
-|F12|Pointage|F12 Blue_Hover|2279BF / 34,121,191|![Échantillon 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
+|F12|Pointage|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
 |F12|Désactivé|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Échantillon ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
 |F12|Arrière-plan de pointage|Placez le curseur bg|D9EBF7 / 217,235,247|![Échantillon D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|D’arrière-plan appuyée|Bg appuyé|B2D7F0 / 178,215,240|![Échantillon B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
 |F12|Plan|VS OUT|F6F6F6 / 246,246,246|![Échantillon F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
-|F12|Information|Information|00BCF2 / 0,188,242|![Échantillon 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
+|F12|Information|Information|00BCF2 / 0,188,242|![Swatch 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
 |F12|Warning|Warning|F28300 / 242,131,0|![Échantillon F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
 |F12|Erreur / négatif|Error_Negative|E81123 / 232,17,35|![Échantillon E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
-|F12|Démarrer / positif|Start_Positive|009E49 / 0,158,73|![Échantillon 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
-|F12|Type de saut|Type de saut|9B4F96 / 155,79,150|![Échantillon 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
+|F12|Démarrer / positif|Start_Positive|009E49 / 0,158,73|![Swatch 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
+|F12|Type de saut|Type de saut|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |F12|Interrogation des événements|Interrogation des événements|A51F00 / 165,31,0|![Échantillon A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
 |F12|Marque utilisateur|Marque utilisateur|F16220 / 241,98,32|![Échantillon F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
   

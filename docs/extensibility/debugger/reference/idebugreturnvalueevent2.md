@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe64295ce00d2fcd430595b87f839ea5b980700
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ade206415b59f1de15427b929855f982bc5466d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947034"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) après l’exécution pas à pas d’ou sur une fonction.  
