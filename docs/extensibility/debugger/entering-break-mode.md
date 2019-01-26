@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f83059bb5608f99b9a984159771b5f37a1163ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c115612aead124fa9fc7801923f1e98fdf19db8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886174"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930575"
 ---
 # <a name="enter-break-mode"></a>Passez en mode arrêt
 Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontrée après le pas à pas détaillé dans une fonction, en cours d’exécution à la ligne de code source qui comporte le curseur ou en cours d’exécution à un point d’arrêt.  

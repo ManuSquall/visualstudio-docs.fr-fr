@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87c826cd924db050efb061414c57028b34bb133
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab965c8912144350c527517b79de2914e238976e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958772"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037718"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
 
@@ -38,7 +38,7 @@ Les algorithmes de chiffrement répertoriés ci-dessous sont soumise aux attaque
 
 Les algorithmes de chiffrement cassés ne sont pas considérés comme sécurisés, et leur utilisation doit être déconseillée. L’algorithme de hachage MD5 est vulnérable à des attaques par collision connues, bien que la vulnérabilité varie en fonction du contexte d’utilisation.  Les algorithmes de hachage utilisés pour garantir l’intégrité des données (par exemple, la signature de fichier ou le certificat numérique) sont particulièrement vulnérables.  Dans ce contexte, des personnes malveillantes peuvent générer deux éléments distincts de données (et donc remplacer des données ordinaires par des données malveillantes) sans modifier la valeur de hachage ou invalider une signature numérique associée.
 
-Pour les algorithmes de chiffrement :
+Pour les algorithmes de chiffrement :
 
 - Le chiffrement<xref:System.Security.Cryptography.DES> contient une clé de petite taille qui peut être cassée par la force brute en moins d’une journée.
 

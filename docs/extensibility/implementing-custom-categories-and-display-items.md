@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908434"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968698"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implémenter des catégories personnalisées et afficher les éléments
 Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) par le biais des catégories personnalisées et des éléments d’affichage.

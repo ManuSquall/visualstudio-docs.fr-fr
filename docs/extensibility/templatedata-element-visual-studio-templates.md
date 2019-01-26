@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6bc128d194a491df580418a13af7e6112e9e45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bae9005c8acc1272c8ca2142f929bffc03c54e16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033485"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData, élément (modèles Visual Studio)
 Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -61,7 +61,7 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le système de projet Visual Studio génère le nom par défaut pour un projet ou un élément lorsqu’il est créé. |
 | [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le projet peut être créé comme un projet temporaire. |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet** boîte de dialogue, afin que les utilisateurs peuvent facilement modifier le répertoire par défaut dans lequel un nouveau projet est enregistré. |
-| [Masqué](../extensibility/hidden-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue. |
+| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue. |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Élément facultatif. |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Élément facultatif.<br /><br /> Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activé, désactivé ou masqué pour le modèle de projet. |

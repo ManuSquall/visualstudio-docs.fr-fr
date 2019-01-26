@@ -1,5 +1,5 @@
 ---
-title: 'CA1023 : Les indexeurs ne doivent pas être multidimensionnels'
+title: 'CA1023 : Les indexeurs ne doivent pas être multidimensionnels'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1282612da884dfbaff646a3b84f713ada7ed75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9b708b1be65b8aefa34e9f0366a87d6f94b5b5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852623"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043698"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023 : Les indexeurs ne doivent pas être multidimensionnels
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023 : Les indexeurs ne doivent pas être multidimensionnels
 
 |||
 |-|-|

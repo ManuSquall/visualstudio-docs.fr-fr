@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b71a8cec89d113e6a4ce0590b95cbe853ddb98ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6b58e1a7a1f3595084a92f8db41d13875e47c0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987425"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041774"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 Obtient la raison pour laquelle le moteur de débogage (dé) veut arrêter de raison.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a467366ca470c17c0f52bd72ae17e766bcb284d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04aa7c1948cd07bf49ab754619442e5310b023f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889317"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069132"
 ---
 # <a name="extend-dependency-diagrams"></a>Étendre des diagrammes de dépendance
 Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de dépendance et pour valider la structure de votre code de programme par rapport aux diagrammes de dépendance dans Visual Studio. Vous pouvez ajouter des commandes qui s’affichent dans le menu contextuel des diagrammes, personnaliser les mouvements de glisser-déplacer et accéder au modèle de couche à partir de modèles de texte. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.
@@ -25,7 +25,7 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de dép
 
 -   [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
 
--   [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)
 
 -   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -64,6 +64,6 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de dép
 ## <a name="see-also"></a>Voir aussi
 
 - [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
-- [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)
 - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)

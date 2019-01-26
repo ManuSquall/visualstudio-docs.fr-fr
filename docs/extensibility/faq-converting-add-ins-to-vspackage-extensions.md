@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d15e6872a418cfc2a3cf5dded5b873429075d276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977185"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ : Conversion des compléments en extensions VSPackage
 Les compléments sont désormais déconseillés. Pour effectuer une nouvelle extension de Visual Studio, vous devez créer une extension VSIX. Voici les réponses à certaines questions fréquemment posées sur la façon de convertir un complément Visual Studio pour une extension VSIX.  
@@ -50,7 +50,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
      Une seconde instance de Visual Studio apparaît. Celle-ci est appelée instance expérimentale. Ses paramètres peuvent différer de ceux de l'instance de Visual Studio qui vous sert à écrire du code. À la première exécution de l'instance expérimentale, vous êtes invité à vous connecter à VS en ligne et à spécifier vos thème et profil.  
   
-     Sur le **outils** menu (dans l’instance expérimentale), vous devez voir un bouton nommé **mon nom de commande**. Lorsque vous choisissez ce bouton, un message doit apparaître : **À l’intérieur de testvspackagepackage.MenuItemCallback ()**.  
+     Sur le **outils** menu (dans l’instance expérimentale), vous devez voir un bouton nommé **mon nom de commande**. Lorsque vous choisissez ce bouton, un message doit apparaître : **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Comment puis-je exécuter mon code de complément dans un VSPackage ?  
  Un code de complément s'exécute généralement de l'une des deux façons suivantes :  

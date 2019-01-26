@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b036142e119157d04dcf971a4bbbba984394956
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 140fc5cc5db1ff7cb0b92bccf664e9b3d4ed4baa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987782"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930470"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossaire de Visual Studio SDK
 Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentation.  
@@ -143,7 +143,7 @@ Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsi
   service  
   Un contrat pour un ensemble d’interfaces COM qui se trouve dans un seul objet COM. Lorsque vous créez un service, qui est identifié par un GUID, vous définissez le jeu d’interfaces COM qui exécute le service. Les objets COM utilisent services pour communiquer entre eux.  
   
-  Solution  
+  solution  
   Groupe de projets connexes avec laquelle un utilisateur travaille.  
   
   Concepteur standard  
