@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9798f280d271299037c001e71f9c9f5ed1940f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a08e365bf934914fba31af5e7404d4be32b37b5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956461"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996218"
 ---
 # <a name="sccrunscc-function"></a>Fonction SccRunScc
 Cette fonction appelle l’outil d’administration de contrôle source.  
@@ -64,7 +64,7 @@ SCCRTN SccRunScc(
   
  Cette fonction est appelée avec un nombre et un tableau de noms de fichiers pour les fichiers actuellement sélectionnés. Si l’outil d’administration prend en charge, la liste des fichiers peut servir à présélectionner des fichiers dans l’interface d’administration ; Sinon, la liste peut être ignorée.  
   
- Cette fonction est généralement appelée lorsque l’utilisateur sélectionne le **lancer \<Source Control Server >** à partir de la **fichier** -> **contrôle de code Source** menu. Cela **lancer** option de menu peut être toujours désactivée ou masquée en définissant une entrée de Registre. Consultez [Guide pratique pour Installer un plug-in de contrôle de Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md) pour plus d’informations. Cette fonction est appelée uniquement si [SccInitialize](../extensibility/sccinitialize-function.md) retourne le `SCC_CAP_RUNSCC` bit de fonctionnalité (voir [indicateurs de capacité](../extensibility/capability-flags.md) pour plus d’informations sur cette offre et autres bits de capacité).  
+ Cette fonction est généralement appelée lorsque l’utilisateur sélectionne le **lancer \<Source Control Server >** à partir de la **fichier** -> **contrôle de code Source** menu. Cela **lancer** option de menu peut être toujours désactivée ou masquée en définissant une entrée de Registre. Voir [Guide pratique pour Installer un plug-in de contrôle de Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md) pour plus d’informations. Cette fonction est appelée uniquement si [SccInitialize](../extensibility/sccinitialize-function.md) retourne le `SCC_CAP_RUNSCC` bit de fonctionnalité (voir [indicateurs de capacité](../extensibility/capability-flags.md) pour plus d’informations sur cette offre et autres bits de capacité).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   

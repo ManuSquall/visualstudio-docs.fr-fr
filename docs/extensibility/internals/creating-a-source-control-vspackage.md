@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4529011b9e896c2fdbff5595acd5c1a94cbb9e7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 278f06376ede2ceb26ccc6ed31d7f4666a0882c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936630"
 ---
 # <a name="create-a-source-control-vspackage"></a>Créer un VSPackage de contrôle de code source
 Cette documentation inclut des liens vers la vue d’ensemble de l’architecture d’un package de contrôle de code source intégré à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], l’API est définie par les interfaces à implémenter et les services à consommer et un exemple qui illustre une source simple contrôler l’implémentation du package.  
