@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - master-detail tables [Office development in Visual Studio], walkthroughs
 - data caching [Office development in Visual Studio], Master/Detail Relation
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07c286a9166421272866662dea4c244fa50eb168
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823647"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875652"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache
   Cette procédure pas à pas montre comment créer une relation maître/détail sur une feuille de calcul et la mise en cache les données afin que la solution puisse être utilisée hors connexion.  

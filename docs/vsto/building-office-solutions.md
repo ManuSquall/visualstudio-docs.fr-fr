@@ -24,15 +24,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], debugging
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8733c4e068bd7c4be2674e302707b81cc180cfd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ab9fafbc56149bb1c1476ae9632ca81988dcd3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866163"
 ---
 # <a name="build-office-solutions"></a>Générer des solutions Office
   En général, la génération et le débogage de projets Office sont identiques à la génération et au débogage d’autres types de projets dans Visual Studio, tels que les Windows Forms. Les rubriques de cette section expliquent les différences qui existent. Pour obtenir des informations générales sur la façon de créer des applications, consultez [compiler et générer dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

@@ -33,15 +33,15 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e759b493c183c9a42da0130abc87d40c40f9b471
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e28c8445154d56751863fccf714c3a65b3591d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987451"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875743"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Éléments hôtes et la vue d’ensemble des contrôles hôtes
   Les éléments hôtes et les contrôles hôtes sont des types qui fournissent un modèle de programmation pour les solutions Office créées à l’aide des outils de développement Office dans Visual Studio. Les éléments hôtes et les contrôles hôtes apparentent l’interaction avec les modèles objet Microsoft Office Word et Microsoft Office Excel, qui sont basés sur COM, davantage à l’interaction entre des objets managés tels que les contrôles Windows Forms.  
@@ -61,7 +61,7 @@ ms.locfileid: "53987451"
   
   Chacun de ces types étend un objet qui existe en mode natif dans le modèle objet Word ou Excel, appelé *objet Office natif*. Par exemple, l’élément hôte <xref:Microsoft.Office.Tools.Word.Document> étend l’objet <xref:Microsoft.Office.Interop.Word.Document> , qui est défini dans l’assembly PIA (Primary Interop Assembly) pour Word.  
   
-  Les éléments hôtes possèdent généralement les mêmes fonctionnalités de base que les objets Office correspondants, mais ils sont améliorés avec les fonctionnalités suivantes :  
+  Les éléments hôtes possèdent généralement les mêmes fonctionnalités de base que les objets Office correspondants, mais ils sont améliorés avec les fonctionnalités suivantes :  
   
 - la capacité d’héberger des contrôles managés, y compris des contrôles hôtes et Windows Forms,  
   
@@ -92,7 +92,7 @@ ms.locfileid: "53987451"
   
 - [NamedRange (contrôle)](../vsto/namedrange-control.md)  
   
-- [XmlMappedRange, contrôle](../vsto/xmlmappedrange-control.md)  
+- [XmlMappedRange control](../vsto/xmlmappedrange-control.md)  
   
   Les contrôles hôtes suivants sont disponibles pour les projets Word :  
   

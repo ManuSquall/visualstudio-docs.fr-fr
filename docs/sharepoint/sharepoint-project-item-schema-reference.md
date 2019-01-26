@@ -18,17 +18,17 @@ helpviewer_keywords:
 - ProjectItemFile element
 - ExtensionDataItem element
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c261115b21d1067b7494d09ad8031b3f4dc5a8c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895803"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864915"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Référence de schéma élément de projet SharePoint
   Visual Studio utilise le schéma d’élément de projet SharePoint pour valider le contenu de *.spdata* fichiers. Un *.spdata* fichier Spécifie le contenu et le comportement d’un élément de projet SharePoint. Pour plus d’informations sur le contenu des éléments de projet SharePoint, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], creating a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 - SharePoint development in Visual Studio, Business Data Connectivity service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcfac4855320f420f2f123568498957ad8d84814
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957483"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863966"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Créer un modèle de connectivité de données métiers
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint peut contenir qu’un seul modèle. Pour plus d’informations, consultez [intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

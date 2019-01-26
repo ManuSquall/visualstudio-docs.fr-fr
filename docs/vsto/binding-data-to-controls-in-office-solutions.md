@@ -16,15 +16,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce13d0154e2cbd04a593500e14a3c1dd43a870dd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898633"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863810"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Lier des données aux contrôles dans les solutions Office
   Vous pouvez lier des contrôles Windows Forms et des *contrôles hôtes* dans un document Microsoft Office Word ou une feuille de calcul Microsoft Office Excel à une source de données pour que les contrôles affichent automatiquement les données. Vous pouvez lier des données à des contrôles dans des projets de niveau application et au niveau du document.  
@@ -50,7 +50,7 @@ ms.locfileid: "53898633"
  Pour les procédures pas à pas qui montre la liaison de données simple, consultez [procédure pas à pas : Liaison de données simple dans un projet au niveau du document](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) pour un projet au niveau du document et [procédure pas à pas : Liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) pour un projet de complément VSTO.  
   
 ## <a name="complex-data-binding"></a>Liaison de données complexe  
- Il existe une liaison de données complexe quand une propriété de contrôle est liée à plusieurs éléments de données, par exemple plusieurs colonnes dans une table de données. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> pour Excel est le seul contrôle hôte qui prend en charge la liaison de données complexe. Il existe également de nombreux contrôles Windows Forms qui prennent en charge la liaison de données complexe, tels que le contrôle <xref:System.Windows.Forms.DataGridView>.  
+ Il existe une liaison de données complexe quand une propriété de contrôle est liée à plusieurs éléments de données, par exemple plusieurs colonnes dans une table de données. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> pour Excel est le seul contrôle hôte qui prend en charge la liaison de données complexe. Il existe également de nombreux contrôles Windows Forms qui prennent en charge la liaison de données complexe, tels que le contrôle <xref:System.Windows.Forms.DataGridView> .  
   
  Pour effectuer une liaison de données complexe, affectez comme valeur de la propriété `DataSource` du contrôle un objet de source de données qui est pris en charge par la liaison de données complexe. Par exemple, la propriété <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> du contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> peut être liée à plusieurs colonnes dans une table de données. Toutes les données de la table s’affichent dans le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> , et le <xref:Microsoft.Office.Tools.Excel.ListObject> change à mesure que les données de la table de données changent. Pour obtenir la liste des sources de données que vous pouvez utiliser pour la liaison de données complexe, consultez [des sources de données prises en charge par les Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
   

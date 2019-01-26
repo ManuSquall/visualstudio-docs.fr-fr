@@ -12,15 +12,15 @@ helpviewer_keywords:
 - tables [Office development in Visual Studio], adding text and formatting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 50c6c1fc0b2aa06771999e512d05821099b362c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1bbebc1dd1173250ef6c4328916e1cee66b371c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865594"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867232"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Procédure : Ajouter texte et mise en forme aux cellules des tableaux Word par programmation
   Chaque tableau se compose d’une collection de cellules. Chaque objet <xref:Microsoft.Office.Interop.Word.Cell> représente une cellule dans le tableau. Vous faites référence à chaque cellule par son emplacement dans le tableau. Cet exemple fait référence à la cellule située dans la première ligne et la première colonne du tableau. Il ajoute du texte à la cellule et lui applique un format.  

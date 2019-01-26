@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946839"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863927"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Déployer une solution Office à l’aide de ClickOnce
   Vous pouvez déployer votre solution Office plus rapidement en utilisant ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement. Toutefois, avec ClickOnce, vous devez installer votre solution séparément pour chaque utilisateur d'un ordinateur. Par conséquent, vous devez envisager d’utiliser le programme d’installation de Windows (*.msi*) si plusieurs utilisateurs exécutent votre solution sur le même ordinateur.
@@ -259,7 +259,7 @@ ms.locfileid: "53946839"
 
 3.  Ouvrez le **ExcelWorkbook.dll.manifest** fichier dans un éditeur de texte tel que le bloc-notes.
 
-4.  Ajoutez le code suivant après l'élément `</vstav3:update>`. Pour l’attribut class de le `<vstav3:entryPoint>` élément, utilisez la syntaxe suivante : *NomEspaceNoms.NomClasse*. Dans l'exemple suivant, les noms de classe et l'espace de noms sont les mêmes, afin que le nom du point d'entrée résultant soit `FileCopyPDA.FileCopyPDA`.
+4.  Ajoutez le code suivant après l'élément `</vstav3:update>`. Pour l’attribut class de le `<vstav3:entryPoint>` élément, utilisez la syntaxe suivante : *NamespaceName.ClassName*. Dans l'exemple suivant, les noms de classe et l'espace de noms sont les mêmes, afin que le nom du point d'entrée résultant soit `FileCopyPDA.FileCopyPDA`.
 
     ```xml
     <vstav3:postActions>

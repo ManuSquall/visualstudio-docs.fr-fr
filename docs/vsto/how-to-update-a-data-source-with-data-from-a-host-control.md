@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], updating a data source from a document
 - host controls [Office development in Visual Studio], data source updates
 - Office documents [Office development in Visual Studio, data sources
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f35b5a67ce43d2e727aa052a8165fbdf7123eda0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933020"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863112"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procédure : Mettre à jour une source de données avec des données à partir d’un contrôle hôte
   Vous pouvez lier un contrôle hôte à une source de données et mettre à jour la source de données avec les modifications apportées aux données dans le contrôle. Deux étapes principales constituent ce processus :  
@@ -63,7 +63,7 @@ ms.locfileid: "53933020"
      > [!NOTE]  
      >  L’option System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged ne s’applique pas aux contrôles hôtes Word, car Word ne notifications pas offre document ou de modification du contrôle. Toutefois, vous pouvez utiliser cette option pour les contrôles Windows Forms sur les documents Word.  
   
-     L’exemple suivant configure un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour mettre automatiquement à jour la source de données quand la valeur du contrôle change. Cet exemple part du principe que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> nommé `namedRange1`, dont la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> est liée à un champ dans une source de données.  
+     L’exemple suivant configure un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour mettre automatiquement à jour la source de données quand la valeur du contrôle change. Cet exemple part du principe que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> nommé `namedRange1` , dont la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> est liée à un champ dans une source de données.  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  

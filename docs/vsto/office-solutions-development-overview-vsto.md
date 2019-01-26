@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies, Office
 - Office development in Visual Studio, about developing solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 632a584e4c49a28d1f68af726a8f32b270ffca81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4b8378b8f0986e7a02955a9aa0e011c12485ca6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880362"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867089"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Présentation de développement des solutions Office (VSTO)
   En utilisant Microsoft Office comme partie frontale des solutions, vous pouvez tirer parti des interfaces utilisateur et outils Microsoft Office familiers tels que les fonctionnalités de traitement de texte dans Word, les fonctionnalités d'analyse des données d'Excel et les fonctionnalités de gestion de la messagerie électronique d'Outlook. Vous pouvez développer des solutions dans Visual Studio pour personnaliser des applications Office et ajouter les fonctionnalités spécifiques dont vous avez besoin pour vos processus métier. Par exemple, vous pouvez transformer Word en générateur de contrats qui assemble des contrats à partir de parties préexistantes qui peuvent être modifiables ou non. Avec Excel, vous pouvez créer une feuille de calcul de budget automatisée personnalisée pour différents projets. Vos utilisateurs peuvent aussi mettre des solutions Office hors connexion, ce qui permet de rendre des solutions complexes plus pratiques qu'elles ne le seraient en utilisant une architecture basée sur le Web.  

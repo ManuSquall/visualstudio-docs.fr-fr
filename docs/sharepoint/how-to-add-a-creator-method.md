@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], adding entity instances
 - BDC [SharePoint development in Visual Studio], adding entities
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe40d6f8b5032dbbffeeda3edaff3b1c89aadb3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925418"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867154"
 ---
 # <a name="how-to-add-a-creator-method"></a>Procédure : Ajouter une méthode de création
   Une méthode de création ajoute de nouvelles données à la source de données d’une entité. Le service de connectivité de données métiers (BDC) appelle cette méthode quand les utilisateurs choisissent le **un nouvel élément** bouton sur le **ruban** d’une liste qui est basée sur le modèle. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  

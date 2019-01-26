@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio, extending tools
 - SharePoint development in Visual Studio, extensibility object models
 - SharePoint development in Visual Studio, extending tools
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e575ac4d73464ba216d98bbd126a0165fdc9a2a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b5d15775b8c37edeb38d7d5ca3565d3d615e72a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941938"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864057"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Extensions d’outils de la vue d’ensemble du modèle de programmation de SharePoint
   Quand vous créez une extension pour les outils SharePoint dans Visual Studio, vous commencez par implémenter une ou plusieurs interfaces d’extensibilité qui sont exposées par ces outils. Dans la plupart des cas, vous utilisez également d'autres types fournis par les outils SharePoint pour implémenter des fonctionnalités dans votre extension. Dans certains scénarios, vous pouvez également utiliser des types dans d'autres modèles objet fournis par Visual Studio et SharePoint. Vous devez comprendre l’objectif de chacun de ces modèles objet et savez comment les utiliser avec eux pour créer des extensions pour les outils SharePoint.  
@@ -31,14 +31,14 @@ ms.locfileid: "53941938"
 
 |Interface|Description|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implémentez cette interface pour définir un nouveau type d'élément de projet SharePoint. Pour obtenir un exemple, consultez [Comment : Définir un type d’élément de projet SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implémentez cette interface pour étendre un type d'élément de projet SharePoint qui est déjà installé dans Visual Studio. Pour obtenir un exemple, consultez [Comment : Créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Implémentez cette interface pour étendre des projets SharePoint. Pour obtenir un exemple, consultez [Comment : Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implémentez cette interface pour définir un nouveau type d'élément de projet SharePoint. Pour voir un exemple, consultez [Comment : Définir un type d’élément de projet SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implémentez cette interface pour étendre un type d'élément de projet SharePoint qui est déjà installé dans Visual Studio. Pour voir un exemple, consultez [Comment : Créer une extension d’élément de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|Implémentez cette interface pour étendre des projets SharePoint. Pour voir un exemple, consultez [Comment : Créer une extension de projet SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).|  
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|Implémentez cette interface pour définir une nouvelle étape de déploiement qui peut être exécutée quand un élément de projet SharePoint est déployé ou retiré. Pour obtenir un exemple, consultez [procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Implémentez cette interface pour étendre un nœud existant sous le **connexions SharePoint** nœud dans le **Explorateur de serveurs** fenêtre. Pour obtenir un exemple, consultez [Comment : Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Implémentez cette interface pour définir un nouveau type de nœud sous la **connexions SharePoint** nœud dans le **Explorateur de serveurs** fenêtre. Pour obtenir un exemple, consultez [Comment : Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Implémentez cette interface pour définir une règle de validation de fonctionnalité personnalisée. Pour obtenir un exemple, consultez [Comment : Créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Implémentez cette interface pour définir une règle de validation de package personnalisée. Pour obtenir un exemple, consultez [Comment : Créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|Implémentez cette interface pour étendre un nœud existant sous le **connexions SharePoint** nœud dans le **Explorateur de serveurs** fenêtre. Pour voir un exemple, consultez [Comment : Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|Implémentez cette interface pour définir un nouveau type de nœud sous la **connexions SharePoint** nœud dans le **Explorateur de serveurs** fenêtre. Pour voir un exemple, consultez [Comment : Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|Implémentez cette interface pour définir une règle de validation de fonctionnalité personnalisée. Pour voir un exemple, consultez [Comment : Créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|Implémentez cette interface pour définir une règle de validation de package personnalisée. Pour voir un exemple, consultez [Comment : Créer des règles de validation pour les solutions SharePoint fonctionnalité personnalisée et un package](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
 
  Après avoir implémenté une extension des outils SharePoint, vous devez déployer l’assembly d’extension dans un package d’extension Visual Studio pour permettre à Visual Studio de découvrir et de charger l’extension. Pour plus d’informations, consultez [déployer des extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
 

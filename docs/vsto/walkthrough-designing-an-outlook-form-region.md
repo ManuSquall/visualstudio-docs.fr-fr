@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942370"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867362"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procédure pas à pas : Concevoir une zone de formulaire Outlook
   Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés. Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact. Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d’adresse au site web Windows Live Local Search. Pour plus d’informations sur les zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).  

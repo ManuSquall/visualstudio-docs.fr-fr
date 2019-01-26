@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], copying worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4763565e426560178d697723257c1a22bb50ca0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 64121ffcb69eb4bc3cdaa901ffe3d52014630779
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087774"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865383"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Procédure : Copier des feuilles de calcul par programmation
   Vous pouvez créer une copie d'une feuille de calcul et insérer cette feuille de calcul avant ou après une feuille existante dans le classeur. Si vous ne spécifiez pas d'emplacement d'insertion de la feuille de calcul, Excel crée un nouveau classeur dans lequel la placer.  

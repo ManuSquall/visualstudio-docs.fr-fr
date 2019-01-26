@@ -10,17 +10,17 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 - multiple column data binding [Office development in Visual Studio]
 - data binding [Office development in Visual Studio], multiple columns
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5da24d43173a0124849855bf9184f3a823230d3a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964050"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865006"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules dans une feuille de calcul Microsoft Office Excel aux champs dans la base de données Northwind SQL Server.  

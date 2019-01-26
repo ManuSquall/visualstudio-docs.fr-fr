@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - resource files [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, resource files
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e21aefb95dab4b4a6fdc852159c7a0f226e613f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 928a306640c449db4fa168ffcdbdd7efaeea0ae1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877625"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862874"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procédure : Ajouter un fichier de ressources
   Les commandes pour l’ajout de fichiers de ressources se trouve sur le menu contextuel des nœuds de fonctionnalité dans l’Explorateur de solutions et de nœud de la solution. Pour plus d’informations, consultez [solutions SharePoint localisation](../sharepoint/localizing-sharepoint-solutions.md).  

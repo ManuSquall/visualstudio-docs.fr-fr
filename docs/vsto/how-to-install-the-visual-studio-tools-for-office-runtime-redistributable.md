@@ -12,15 +12,15 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9267e340d62def2660f807670dc9804dd531c8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74e63f34a7285fc035ae2acd338a73725a77e6ce
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867206"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Procédure : Installer Visual Studio Tools pour Office runtime redistributable
   Visual Studio 2010 Tools pour Office runtime doit être installé sur chaque ordinateur qui exécute des solutions qui sont créées en utilisant les outils de développement Microsoft Office dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le runtime est installé automatiquement quand vous installez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et Microsoft Office. Pour plus d’informations, consultez [Visual Studio Tools pour les scénarios d’installation Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  

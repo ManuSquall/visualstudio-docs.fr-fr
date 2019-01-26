@@ -11,17 +11,17 @@ helpviewer_keywords:
 - server-side data access [Office development in Visual Studio]
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8977267ba8acadf1105fc0f1608339301b737476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c762e715be9b7b210b17d5ff297b090b684400f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881326"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866007"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Procédure pas à pas : Modifier les données mises en cache dans un classeur sur un serveur
   Cette procédure pas à pas montre comment modifier un jeu de données est mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -302,7 +302,7 @@ ms.locfileid: "53881326"
 
     -   *%USERPROFILE%\My Documents\AdventureWorksReport\bin\Debug* (pour Windows XP et versions antérieures)
 
-    -   *%USERPROFILE%\Documents\AdventureWorksReport\bin\Debug* (pour Windows Vista)
+    -   *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (for Windows Vista)
 
 3.  Vérifiez que la valeur dans le **ListPrice** colonne pour la première ligne de la <xref:Microsoft.Office.Tools.Excel.ListObject> est désormais 1574,65.
 

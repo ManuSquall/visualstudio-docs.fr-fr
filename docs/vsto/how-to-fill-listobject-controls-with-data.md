@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a41c9c630eb95fbd0fed2b9ca2f05d56eff65c44
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925626"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865581"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Procédure : Remplir des contrôles ListObject de données
   Vous pouvez utiliser la liaison de données comme moyen pour ajouter rapidement des données à votre document. Après avoir lié les données à un objet de liste, vous pouvez déconnecter celui-ci de manière à ce qu’il affiche les données mais ne soit plus lié à leur source.  

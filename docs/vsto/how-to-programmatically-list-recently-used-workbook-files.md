@@ -10,17 +10,17 @@ helpviewer_keywords:
 - RecentFiles property
 - Excel [Office development in Visual Studio], recently used files listing
 - recent file list, Excel
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6451aa5427799f0905d19b7b90e87f8cca3d0bbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989617"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863186"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procédure : Liste récemment utilisés par programmation les fichiers de classeur
   Le <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propriété retourne une collection qui contient les noms de tous les fichiers qui apparaissent dans la liste de Microsoft Office Excel des fichiers récemment utilisés. La longueur de la liste varie en fonction du nombre de fichiers que l’utilisateur a choisi de conserver. Vous pouvez afficher les résultats dans une plage.  

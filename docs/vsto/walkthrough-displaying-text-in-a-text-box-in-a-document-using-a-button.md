@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - text boxes, displaying text in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd685ea02dc8943edc1aa214b97b61d0fa9ff35b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910137"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863615"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procédure pas à pas : Texte affiché dans une zone de texte dans un document à l’aide d’un bouton
   Cette procédure pas à pas montre comment utiliser les boutons et les zones de texte dans une personnalisation au niveau du document pour Microsoft Office Word.  

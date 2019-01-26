@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - FeatureProperties element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb345e66a53f9816281df6e948a8961252c0fcea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955670"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862587"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (élément)
   Collection de valeurs de propriété qui sont incluses avec une fonctionnalité lorsqu’elle est déployée vers SharePoint. Après le déployée d’une fonctionnalité, vous pouvez accéder les valeurs de propriété dans votre code.  
@@ -55,7 +55,7 @@ ms.locfileid: "53955670"
   
 |Élément|Description|  
 |-------------|-----------------|  
-|**Espace de noms**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Espace de noms**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nom de schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
 |**Peut être vide**|Aucune|  

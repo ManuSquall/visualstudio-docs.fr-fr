@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be044131ab7248e971e5030f0d35467773587e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01d68404314b366e968f0c2551352d8501ed9ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849920"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866332"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procédure : Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio
   Alors que la feuille de calcul est ouvert dans Visual Studio, vous pouvez mapper un schéma XML à une feuille de calcul. Vous utilisez les mêmes outils de Microsoft Office Excel que vous utilisez lorsque le classeur est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma à la feuille de calcul avant ou après avoir créé votre solution Excel.  

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postAction> element
 - <postAction> element
 - postAction element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958798"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867107"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; élément (développement Office dans Visual Studio)
   L’élément `postAction` de l’espace de noms `vstav3` contient les éléments `entrypoint` et tous les éléments `postActionData` associés à des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
@@ -38,7 +38,7 @@ ms.locfileid: "53958798"
 ## <a name="elements-and-attributes"></a>Éléments et attributs
  L’élément `postAction` est facultatif et se trouve dans l’espace de noms `vstav3` . Il existe un seul élément `postAction` défini dans un manifeste de l’application pour chaque action de post-déploiement.
 
- L’élément `postAction` ne possède pas d’attributs.
+ L’élément `postAction` ne comporte pas d’attributs.
 
  `postAction` comporte les éléments suivants.
 
