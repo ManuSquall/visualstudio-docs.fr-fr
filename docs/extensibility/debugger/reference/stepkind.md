@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11bae91dfac04dd71932aeef949bae5c15de17e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f33f04c08a0160d6eed764f2b2e583b92c2741d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920337"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989325"
 ---
 # <a name="stepkind"></a>STEPKIND
 Spécifie le type d’étape pour l’exécution pas à pas.  
@@ -47,7 +47,7 @@ public enum enum_STEPKIND { 
  STEP_INTO  
  Étapes dans une fonction.  
   
- DECALAGE_PASSES  
+ STEP_OVER  
  Exécute une fonction.  
   
  STEP_OUT  

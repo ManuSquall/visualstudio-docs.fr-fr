@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d66af0c4ce83feb1153cfd53bf12d8ae40f38b69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941516"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071005"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType, élément (modèles Visual Studio)
 Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifié dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
@@ -26,9 +26,9 @@ Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifi�
 > [!WARNING]
 >  Modèles de projet sont pris en charge pour C++ à partir de Visual Studio 2012. Ils ne sont pas pris en charge pour C++ dans Visual Studio 2010 et versions antérieures.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProjectType >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>Syntaxe  
   

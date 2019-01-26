@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 393cc1ea5835b66c18a9f4ca46b9f2ac0a88860a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031823"
 ---
 # <a name="localize-menu-commands"></a>Localiser des commandes de menu
 Vous pouvez fournir un texte localisé pour les commandes de menu et barre d’outils en créant localisée *.vsct* fichiers et localisées *.resx* fichiers pour votre VSPackage et ensuite la mise à jour les fichiers projet pour incorporer le modifications.  

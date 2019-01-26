@@ -1,5 +1,5 @@
 ---
-title: 'CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6'
+title: 'CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: d5d0d3fc-f105-43da-be5b-923ab023309c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d39c98aae5ae577ad82f0ff99f1069fb34e5146
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be9df5658e3f68c5d5f03b356c60c7ab023ed46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043165"
 ---
-# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6
+# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6
 
 |||
 |-|-|

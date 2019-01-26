@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f94c340e7c5af45d9aeb8cc9f39ea6480029b7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d90ab2553eb69a5ea429dec3848c2aecd5fa86a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930098"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978800"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procédure : Désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source
 Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’utilisation du contrôle de code source dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les avertissements de dépendant des fonctionnalités de plug-in du contrôle de code source et peuvent être désactivés comme décrit ici.  
@@ -25,7 +25,7 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
   
 - Définissez l’entrée de Registre suivante (en ajoutant la valeur si nécessaire) :  
   
-   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD : 00000001**  
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001**  
   
    Cet avertissement s’affiche pour tous les non -[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] plug-ins.  
   
@@ -33,9 +33,9 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
   
 -   Définir les deux valeurs suivantes (en ajoutant les valeurs si nécessaire) :  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD : 00000000**  
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000**  
   
-    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD : 00000001**  
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword:00000001**  
   
      Cet avertissement s’affiche si le plug-in de contrôle de code source ne pas explicitement en charge la réentrance pour plusieurs projets (autrement dit, s’il peut vérifier dans un seul fichier et de projet à la fois).  
   

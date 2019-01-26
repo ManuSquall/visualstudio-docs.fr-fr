@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c71c8a8820a76eb0f3784aaf899f05f48a76e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71428aa43add2489ad9f0956c3ea063e97b30085
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998025"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Détermine l’existence d’un attribut personnalisé pour ce champ et, si elle existe, retourne les informations d’attribut.  

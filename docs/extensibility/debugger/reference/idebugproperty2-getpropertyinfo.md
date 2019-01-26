@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 773a08d4e49fab85c1d3f44e04f47038ed052b74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a71949faf9c8ca0a1d68f3dfd0347de9739b9b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041228"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Obtient le [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure qui décrit une propriété.  

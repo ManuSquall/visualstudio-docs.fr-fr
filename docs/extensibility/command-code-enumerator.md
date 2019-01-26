@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eec2809bb7ca5c7c9c9030e75a678d62b74f98fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90715194f95cb3c4798a831d30ab5a2fa629327e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846189"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991019"
 ---
 # <a name="command-code-enumerator"></a>Énumérateur de code de commande
 Cet énumérateur est utilisé dans les options pour le [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) et [SccPopulateList](../extensibility/sccpopulatelist-function.md)pour indiquer la commande pour laquelle les options sont spécifiées.  

@@ -17,16 +17,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 473bbcfa7d9c83b8011fc849a246c30b86cce6a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948392"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980216"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -57,7 +57,7 @@ Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme 
 
 Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances.
 
-|**Forme**|**Élément**|**Description**|
+|**Shape**|**Élément**|**Description**|
 |-|-|-|
 |1|**Couche**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour voir les artefacts qui sont liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens** pour ouvrir **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   **Il est interdit de dépendances de Namespace** -Spécifie que les artefacts associés à cette couche ne peut pas dépendre d’espaces de noms spécifiés.<br />-   **Il est interdit d’espaces de noms** -Spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **Required Namespaces** -Spécifie que les artefacts associés à cette couche doivent appartenir à un des espaces de noms spécifiés.|
 |2|**dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> -   **Direction** -spécifie la direction de la dépendance.|
@@ -77,7 +77,7 @@ Vous pouvez lier chaque couche aux artefacts de votre solution, tels que des pro
 
 Pour plus d'informations sur la liaison des couches et des artefacts, consultez :
 
--   [Diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)
 
 -   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
