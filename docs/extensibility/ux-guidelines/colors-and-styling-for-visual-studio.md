@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914606"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027709"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -328,7 +328,7 @@ Nombreux éléments d’interface utilisateur courants ont déjà des couleurs �
 | MenuText | -Bordure du menu liste déroulante<br />-Coches<br />-Les glyphes menu<br />-Texte de menu liste déroulante<br />-Bordure d’icône sélectionné |
 | Scrollbar | -Faire défiler barre et arrière-plan de flèche, tous les États de la barre de défilement |
 | Fenêtre | -Arrière-plan de l’onglet masquage automatique<br />-Menu barre et d’arrière-plan de conservation de commande<br />-Onglet d’arrière-plan de la fenêtre document inactif ou non sélectionnés et bordure de document, pour les onglets ouverts et provisoires<br />-Arrière-plan de barre de titre de fenêtre outil inactif<br />-Fenêtre outil onglet arrière-plan, à la fois sélectionnés et |
-| Cadre de fenêtre | : Bordure de l’IDE |
+| WindowFrame | : Bordure de l’IDE |
 | WindowText | -Premier plan d’onglet masquage automatique<br />-Premier plan onglet de fenêtre outil sélectionné<br />-Onglet de fenêtre de document inactif et premier plan inactif ou désélectionné onglet provisoire<br />-Premier plan par défaut de vue et arborescence pointage sur glyphe non sélectionné<br />-Bordure onglet sélectionné de la fenêtre outil<br />-Barre de défilement thumb arrière-plan, la bordure et glyphe |
 
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
@@ -445,7 +445,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 Pour cet exemple de code :
 
 - `"NameID"` = l’ID de ressource du nom de catégorie localisée dans votre package.
-- `"ToolWindowPackage"` = GUID du package
+- `"ToolWindowPackage"` = Package GUID
 - `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"` est juste un exemple et la valeur réelle peut être un nouveau GUID fourni par l’implémenteur.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Définir la police et couleur propriété GUID de catégorie

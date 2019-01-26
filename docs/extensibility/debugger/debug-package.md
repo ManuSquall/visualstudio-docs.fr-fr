@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16464e90f5cdfe8f953a2c3d28f3b67c1f1b4f20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4eb843e63dbc4ff711b56ff457ca930dc9df0207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010179"
 ---
 # <a name="debug-package"></a>Déboguer le package
 Le package de débogage s’exécute dans le shell Visual Studio et traite l’intégralité de l’interface utilisateur. Il consomme les interfaces de débogage Visual Studio et communique avec le Gestionnaire de session de débogage (SDM).  

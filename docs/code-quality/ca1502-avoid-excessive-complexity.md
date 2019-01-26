@@ -1,5 +1,5 @@
 ---
-title: 'CA1502 : Éviter l’excès de complexité'
+title: "CA1502 : Éviter l'excès de complexité"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 21b623041bdf599439fd51f99354f206eb25c433
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35fa770c9a7f1d2e0a5d1a5634edf21caae26cfc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006132"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l’excès de complexité
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
 
 |||
 |-|-|

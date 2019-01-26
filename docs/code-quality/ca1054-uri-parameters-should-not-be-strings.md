@@ -1,5 +1,5 @@
 ---
-title: 'CA1054 : Paramètres de l’URI ne doivent pas être de chaînes'
+title: 'CA1054 : Les paramètres URI ne doivent pas être des chaînes'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 8e99d72b-a658-47a7-8dd5-9784ce2c30b8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26118f2686abe7077f1c698a1c80e48de119fb9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7903e5f5241dabecc8077f4c56148c6ac40f5518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018850"
 ---
-# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Paramètres de l’URI ne doivent pas être de chaînes
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Les paramètres URI ne doivent pas être des chaînes
 
 |||
 |-|-|

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0172f9412bff791ae2446d6cffcd9d302c7c3ef8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dfe0405406405dc1e09e18c49f7de7b4aecd7fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923625"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013325"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Informations de référence sur les API (débogage Visual Studio)
 La section de référence inclut une vue d’ensemble conceptuelle de l’API, un guide qui présente la syntaxe et l’utilisation pour tous les éléments d’API et un large éventail d’exemples de code. Toutes les références sont répertoriées par ordre alphabétique par catégorie.  
@@ -25,16 +25,16 @@ La section de référence inclut une vue d’ensemble conceptuelle de l’API, u
 |Name|Description|Value|  
 |----------|-----------------|-----------|  
 |S_OK|Opération réussie.|0x00000000|  
-|E_UNEXPECTED|Erreur inattendue.|0x8000ffff|  
-|E_NOTIMPL|Non implémenté.|0 x 80004001|  
+|E_UNEXPECTED|Erreur inattendue.|0x8000FFFF|  
+|E_NOTIMPL|Non implémenté.|0x80004001|  
 |E_OUTOFMEMORY|Mémoire insuffisante pour terminer l’opération.|0x8007000E|  
-|E_INVALIDARG|Un ou plusieurs arguments ne sont pas valides.|0 x 80070057|  
-|E_NOINTERFACE|Interface non pris en charge.|0 x 80004002|  
-|E_POINTER|Pointeur non valide.|0 x 80004003|  
+|E_INVALIDARG|Un ou plusieurs arguments ne sont pas valides.|0x80070057|  
+|E_NOINTERFACE|Interface non pris en charge.|0x80004002|  
+|E_POINTER|Pointeur non valide.|0x80004003|  
 |E_HANDLE|Handle non valide.|0x80070006|  
-|E_ABORT|Opération abandonnée.|0 x 80004004|  
-|E_FAIL|Erreur inattendue.|0 x 80004005|  
-|E_ACCESSDENIED|Erreur accès général d'refusé.|0 x 80070005|  
+|E_ABORT|Opération abandonnée.|0x80004004|  
+|E_FAIL|Erreur inattendue.|0x80004005|  
+|E_ACCESSDENIED|Erreur accès général d'refusé.|0x80070005|  
   
 > [!NOTE]
 >  Quand un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] déboguer la méthode retourne `S_OK`, il est supposé que toutes les pointeurs de paramètre sont valides, autrement dit, aucune validation n’est effectuée sur les pointeurs de paramètre lorsque `S_OK` est retourné.  

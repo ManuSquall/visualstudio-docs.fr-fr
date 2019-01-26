@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16d027ba128a730bb04b2da83e226dd6bffa3678
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947203"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020436"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 Décrit les différents types d’adresses.  
@@ -80,10 +80,10 @@ public struct DEBUG_ADDRESS_UNION {
  addr.addrRetVal  
  (C++ uniquement) Contient le[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) structure si `dwKind` = ADDRESS_KIND_RETVAL.  
   
- addr.Unused  
+ addr.unused  
  Marge intérieure (C++ uniquement).  
   
- Addr  
+ addr  
  (C++ uniquement) Le nom de l’union.  
   
  unionmember  

@@ -1,5 +1,5 @@
 ---
-title: 'CA1007 : Utiliser des classes génériques le cas échéant'
+title: 'CA1007 : Utiliser des classes génériques lorsque cela est approprié'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 038f498b2f4ef01ac42535b32d4fefd39102e4fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d886877531deb6526e6d8c6421d1e3285c5e109a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006266"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques le cas échéant
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques lorsque cela est approprié
 
 |||
 |-|-|

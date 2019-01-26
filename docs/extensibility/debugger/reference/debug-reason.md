@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5842b79e6dd38ed99a7a255b4164762b1dd1b68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6102c0897c80fc927713d2f8bb1e5c83708e6bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000196"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Spécifie la raison pour laquelle le processus a été lancé pour le débogage.  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 227803e5eb1108079651271823efb615e4b473cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906941"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982895"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menus de GUID et ID de Visual Studio
 Cet article énumère les valeurs GUID et l’ID des menus et des groupes dans la barre de menus de Visual Studio. Ces valeurs sont définies dans *.vsct* fichiers qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [commandes définies par l’IDE, les menus et les groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -193,7 +193,7 @@ Cet article énumère les valeurs GUID et l’ID des menus et des groupes dans l
 |||IDG_VS_FILE_MOVE_PICKER|  
 |IDG_VS_VIEW_DEV_WINDOWS|IDM_VS_CSCD_FINDRESULTS|IDG_VS_WNDO_FINDRESULTS|  
 ||IDM_VS_CSCD_WINDOWS|IDG_VS_VIEW_CALLBROWSER|  
-|||IDG_VS_WNDO_OTRWNDWS1... 6|  
+|||IDG_VS_WNDO_OTRWNDWS1...6|  
 |||IDG_VS_WNDO_WINDOWS2|  
 |IDG_VS_VIEW_TOOLBARS|IDM_VS_CSCD_COMMANDBARS||  
 |IDG_VS_EDIT_GOTO|IDM_VS_EDITOR_FIND_MENU||  

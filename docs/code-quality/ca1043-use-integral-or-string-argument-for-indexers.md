@@ -1,5 +1,5 @@
 ---
-title: 'CA1043 : Utilisez l’argument de chaîne ou intégral pour les indexeurs'
+title: 'CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: d7f14b9e-2220-4f80-b6b8-48c655a05701
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f140e8678bfb03bc29a21b05f6f3bfada76e9e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987591"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018560"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utilisez l’argument de chaîne ou intégral pour les indexeurs
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs
 
 |||
 |-|-|

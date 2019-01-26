@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919571"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981348"
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 Les interfaces suivantes sont les interfaces de base pour l’extension de débogueur à l’aide de la [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -128,7 +128,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Envoyé par le DE demander un document à ouvrir.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Représente un flux d’instructions désassemblés à partir d’un document.|  
 |[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, ALLEMAGNE|Représente un document fourni par l’Allemagne, en spécifiant un nom et un ID de classe (CLSID).|  
-|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|ALLEMAGNE, EE|Représente une somme de contrôle pour un document de débogage et permet le passage de la somme de contrôle entre les composants.|  
+|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Représente une somme de contrôle pour un document de débogage et permet le passage de la somme de contrôle entre les composants.|  
 |[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, ALLEMAGNE|Représente un contexte de document, une position dans un document correspondant à un contexte particulier de l’instruction et le code.|  
 |[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, ALLEMAGNE|Représente une position générale dans un document.|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Représente une position dans un fichier source par un offset de caractère.|  
@@ -235,8 +235,8 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 
 |Interface|Implémenté par|Description|  
 |---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, ALLEMAGNE|Représente un processus qui s’exécute sur un ordinateur.|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, ALLEMAGNE|Représente un processus qui prend en charge activement débogage (utilisé pour remplacer l’étape, continuer et exécuter des méthodes sur le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface).|  
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Représente un processus qui s’exécute sur un ordinateur.|  
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Représente un processus qui prend en charge activement débogage (utilisé pour remplacer l’étape, continuer et exécuter des méthodes sur le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface).|  
 |[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|ALLEMAGNE, PS|Envoyé par le port ou DE création d’un processus.|  
 |[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|ALLEMAGNE, PS|Envoyé par le port ou DE lorsqu’un processus a été détruit.|  
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Représente un processus qui doit suivre la session lui est attachée.|  

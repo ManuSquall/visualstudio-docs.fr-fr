@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c16ae17f8914ee07662a3cd5580963de43f8b0d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b32464084a209aa7d6f41ffaa837d2f377b9720a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984390"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Cette interface permet à la session de débogage manager (SDM) extraire une interface qui représente le moteur de débogage (dé).  

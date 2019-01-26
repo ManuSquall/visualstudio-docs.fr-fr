@@ -1,5 +1,5 @@
 ---
-title: 'CA1811 : Évitez le recours à code privé non appelé'
+title: 'CA1811 : Évitez le recours à du code privé non appelé'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40ea8d8168d557374e509a3e93b263ef1fe5724
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6fca30671616dbe1e9d1c3468420d4526aa02250
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986776"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975151"
 ---
-# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à code privé non appelé
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à du code privé non appelé
 
 |||
 |-|-|

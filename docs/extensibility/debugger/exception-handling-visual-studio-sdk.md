@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 135560d087a2040b55d52f9cf5328fe21c2e0dc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b93bd78bc4fdac7fabf85a5bf10e07deb8203844
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021284"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Gestion des exceptions (SDK Visual Studio)
 La section suivante décrit le processus qui se produit lorsque des exceptions sont levées.  

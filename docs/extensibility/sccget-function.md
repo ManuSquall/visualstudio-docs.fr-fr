@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0f56292dfdeb56eb770a5cec5abf6c0d6b82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8cff11ca46924b84c61f45fb5c11993313bff9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993739"
 ---
 # <a name="sccget-function"></a>Fonction SccGet
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais ne pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués comme étant en lecture seule.  
@@ -48,7 +48,7 @@ SCCRTN SccGet(
  lpFileNames  
  [in] Tableau des noms qualifiés complets de fichiers à récupérer.  
   
- Options  
+ fOptions  
  [in] Indicateurs de commande (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
   
  pvOptions  

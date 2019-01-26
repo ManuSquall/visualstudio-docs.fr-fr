@@ -28,15 +28,15 @@ helpviewer_keywords:
 - applications, designing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1bb0d17b5fc6767669fd58f666d0505f38961dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986044"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -97,7 +97,7 @@ Un langage spécifique à un domaine est une notation que vous concevez dans un 
 
 **Utilisations courantes :**
 
--   Générer ou configurer certaines parties de l’application. Un travail est requis pour développer la notation et les outils. Le résultat est ainsi plus adapté à votre domaine qu’une personnalisation UML.
+-   Générer ou configurer certaines parties de l’application. Un travail est requis pour développer la notation et les outils. Le résultat est ainsi plus adapté à votre domaine qu'une personnalisation UML.
 -   Pour les grands projets ou dans les lignes de produits où l’investissement effectué dans le développement du DSL et de ses outils est amorti par son utilisation dans plusieurs projets.
 
 **Voir :**

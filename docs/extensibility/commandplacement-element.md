@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5d694f6ed12d3fd7d531ec6a0a01ec70a826561
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 016c1f88cff82e0bbe824bf3364c9123384a7470
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021297"
 ---
 # <a name="commandplacement-element"></a>Élément CommandPlacement
 L’élément CommandPlacement permet de boutons, des groupes et des menus être inclus dans plus d’un groupe ou un menu. À l’aide de l’élément CommandPlacement, il est inutile de redéfinir intégralement ces éléments afin de modifier l’apparence d’une interface utilisateur.  
@@ -38,7 +38,7 @@ L’élément CommandPlacement permet de boutons, des groupes et des menus être
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. Le guid du jeu de commandes, tel que défini dans le [élément Symbols](../extensibility/symbols-element.md).|  
+|guid|Obligatoire. Le guid du jeu de commandes, tel que défini dans le [élément Symbols](../extensibility/symbols-element.md).|  
 |ID|Obligatoire. L’id du menu, un groupe ou une commande à placer, tel que défini dans le `Symbols Element`.|  
 |priority|Obligatoire. Détermine la position visuelle de l’élément dans son élément parent.|  
 |Condition|Facultatif. Consultez [Aattributes conditionnel](../extensibility/vsct-xml-schema-conditional-attributes.md).|  

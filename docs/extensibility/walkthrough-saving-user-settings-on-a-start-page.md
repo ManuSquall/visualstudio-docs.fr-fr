@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000807"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procédure pas à pas : Enregistrer les paramètres utilisateur sur une Page de démarrage
 Vous pouvez conserver les paramètres utilisateur pour votre Page de démarrage. En suivant cette procédure pas à pas, vous pouvez créer un contrôle qui enregistre un paramètre dans le Registre lorsque l’utilisateur clique sur un bouton et récupère ensuite que la définition de chaque chargement de la Page de démarrage. Étant donné que le modèle de projet Page de démarrage inclut un contrôle utilisateur personnalisable, et le XAML de Page de démarrage par défaut appelle ce contrôle, vous n’êtes pas obligé de modifier la Page de démarrage lui-même.  
   
- La banque de paramètres est instanciée dans cette procédure pas à pas est une instance de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, qui lit et écrit dans l’emplacement de Registre suivant lorsqu’elle est appelée : **HKCU\Software\Microsoft\VisualStudio\14.0\\\<NomCollection >**  
+ La banque de paramètres est instanciée dans cette procédure pas à pas est une instance de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, qui lit et écrit dans l’emplacement de Registre suivant lorsqu’elle est appelée : **HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**  
   
  Lorsqu’il s’exécute dans l’instance expérimentale de Visual Studio, la banque de paramètres lit et écrit dans **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<NomCollection >.**  
   
@@ -43,7 +43,7 @@ Vous pouvez conserver les paramètres utilisateur pour votre Page de démarrage.
   
     -   EnvDTE80  
   
-    -   Assemblys Microsoft.VisualStudio.OLE.Interop  
+    -   Microsoft.VisualStudio.OLE.Interop  
   
     -   Microsoft.VisualStudio.Shell.Interop.11.0  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51dea272a595f56abe254eda74dea67415f157a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020241"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Procédure pas à pas : Créer un glyphe de marge
 Vous pouvez personnaliser l’apparence des marges de l’éditeur à l’aide des extensions de l’éditeur personnalisé. Cette procédure pas à pas place un glyphe personnalisé sur la marge des indicateurs chaque fois que le mot « todo » s’affiche dans un commentaire de code.  

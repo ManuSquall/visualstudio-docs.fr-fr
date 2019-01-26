@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017799"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Prise en main le contrôle de code source VSPackages
 Un VSPackage de contrôle de code source est une alternative plus avancée pour le plug-in de contrôle de code source. Pour plus d’informations sur les plug-ins de contrôle de code source, consultez [créer un contrôle de source de plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md). Contrôle total sur le modèle de contrôle source, fonctionnalités et l’interface utilisateur (IU) permet à un VSPackage de contrôle de code source, et s’intègre dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement en tant qu’un VSPackage.  

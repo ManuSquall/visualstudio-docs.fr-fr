@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05e266429c30ac2e2a2c5d65f7e037121f02c607
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043204"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Procédure pas à pas : Implémenter des extraits de code
 Vous pouvez créer des extraits de code et incluez-les dans une extension de l’éditeur, afin que les utilisateurs de l’extension de les ajouter à leur propre code.  
@@ -42,7 +42,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
 1. Créez la structure de répertoire suivante :  
   
-    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
     où *% INSTALLDIR%* est le dossier d’installation de Visual Studio. (Bien que ce chemin d’accès est généralement utilisé pour installer des extraits de code, vous pouvez spécifier n’importe quel chemin d’accès.)  
   
@@ -117,7 +117,7 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  Dans le projet, ouvrez le **source.extension.vsixmanifest** fichier.  
   

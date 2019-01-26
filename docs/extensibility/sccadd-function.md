@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5124088599eced9d5ae6bc17365d06dc36f81987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027891"
 ---
 # <a name="sccadd-function"></a>Fonction SccAdd
 Cette fonction ajoute de nouveaux fichiers au système de contrôle source.  
@@ -84,14 +84,14 @@ SCCRTN SccAdd(
   
 |Option|Value|Signification|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0 x 00|Le plug-in de contrôle de code source doit détecter le type de fichier.|  
-|SCC_FILETYPE_TEXT|0 x 01|Indique un fichier texte ASCII.|  
-|SCC_FILETYPE_BINARY|0 x 02|Indique un type de fichier autre que texte ASCII.|  
-|SCC_ADD_STORELATEST|0 x 04|Stocke uniquement la dernière copie du fichier, aucun deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0 x 08|Traite le fichier comme texte ANSI.|  
+|SCC_FILETYPE_AUTO|0x00|Le plug-in de contrôle de code source doit détecter le type de fichier.|  
+|SCC_FILETYPE_TEXT|0x01|Indique un fichier texte ASCII.|  
+|SCC_FILETYPE_BINARY|0x02|Indique un type de fichier autre que texte ASCII.|  
+|SCC_ADD_STORELATEST|0x04|Stocke uniquement la dernière copie du fichier, aucun deltas.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Traite le fichier comme texte ANSI.|  
 |SCC_FILETYPE_UTF8|0x10|Traite le fichier en tant que texte Unicode au format UTF8.|  
-|SCC_FILETYPE_UTF16LE|0 x 20|Traite le fichier en tant que texte Unicode dans UTF16 format Little Endian.|  
-|SCC_FILETYPE_UTF16BE|0 x 40|Mettre en forme traite le fichier en tant que texte Unicode Big Endian UTF16.|  
+|SCC_FILETYPE_UTF16LE|0x20|Traite le fichier en tant que texte Unicode dans UTF16 format Little Endian.|  
+|SCC_FILETYPE_UTF16BE|0x40|Mettre en forme traite le fichier en tant que texte Unicode Big Endian UTF16.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)

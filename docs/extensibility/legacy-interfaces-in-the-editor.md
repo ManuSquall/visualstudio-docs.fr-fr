@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340156463d2c4ec194ed70c0c8d74232574917ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21ebfb4babc32642c37d1a8ccf469a1a5c37046e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842643"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982544"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces héritées dans l’éditeur
 Vous pouvez accéder à l’éditeur Visual Studio à partir des interfaces héritées. Le SDK Visual Studio inclut des adaptateurs appelés *shims*, qui activent ces interfaces interagir avec le nouvel éditeur. Néanmoins, nous recommandons que vous mettez à jour votre code hérité pour utiliser l’éditeur de nouvelles API. Votre code sera plus performant, et vous pouvez utiliser les nouvelles technologies telles que Windows Presentation Foundation (WPF) et de Managed Extensibility Framework (MEF).  
