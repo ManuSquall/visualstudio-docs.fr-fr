@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119224ac628f26f2f1b23eb5c4d65db13b73b2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19cb88a24a616a2a39bdcd7f292108493859a8b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919042"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Continue de s’exécuter ce programme à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est désactivée, et le programme commence à s’exécuter à nouveau.  
   
 > [!NOTE]
->  Cette méthode est déconseillée. Utilisez le [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) méthode à la place.  
+>  Cette méthode est dépréciée. Utilisez le [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) méthode à la place.  
   
 ## <a name="syntax"></a>Syntaxe  
   
