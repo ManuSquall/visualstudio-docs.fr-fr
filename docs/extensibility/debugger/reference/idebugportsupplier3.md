@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b058324bfe0dcde4b2285c1a7478859ed27131b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4cc5847d2d3403ddb1624ecd97084ad4d548ad3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030897"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Cette interface permet à un appelant déterminer si un fournisseur de port peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur, puis d’obtenir une liste de ces ports conservés.  
