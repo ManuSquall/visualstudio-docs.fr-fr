@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abc4824a3e90250401d720aefedda80189419c85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010049"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Points d’extension éditeur et le service de langage
 L’éditeur fournit des points d’extension que vous pouvez étendre en tant que parties de composant Managed Extensibility Framework (MEF), y compris la plupart des fonctionnalités de service de langage. Voici les catégories de point d’extension principal :  
@@ -91,7 +91,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- Résultats  
+- FindResults  
   
 - F#  
   
@@ -409,9 +409,9 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   4.  WaveAudio  
   
-  5.  RIFF  
+  5.  Riff  
   
-  6.  DIF  
+  6.  Dif  
   
   7.  Paramètres régionaux  
   
@@ -423,11 +423,11 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   
-  14. TIFF  
+  14. Tiff  
   
   15. Bitmap  
   
@@ -479,7 +479,7 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 internal sealed class TestOption : EditorOptionDefinition<bool>  
 ```  
   
-## <a name="extend-intellisense"></a>Étendre IntelliSense  
+## <a name="extend-intellisense"></a>Extend IntelliSense  
  IntelliSense est un terme général qui désigne un groupe de fonctionnalités qui fournissent des informations sur le texte structuré et la saisie semi-automatique des instructions pour lui. Ces fonctionnalités incluent la saisie semi-automatique des instructions, pour la signature, Info Express et des ampoules. Saisie semi-automatique des instructions permet aux utilisateurs d’entrer un nom de langage mot clé ou un membre correctement. Pour la signature affiche la signature ou les signatures pour la méthode que l’utilisateur a tapé juste. Infos Express affiche une signature complète pour un nom de type ou membre lorsque la souris se trouve sur celui-ci. Ampoule fournissent des actions supplémentaires pour certains identificateurs dans certains contextes, par exemple, renommer toutes les occurrences d’une variable après qu’une occurrence a été renommée.  
   
  La conception d’une fonctionnalité IntelliSense est très similaire dans tous les cas :  

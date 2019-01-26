@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc47391c3ab80b0c8752de840c6accfb66f0212
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936695"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notifications et progression pour Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Systèmes de notification  
@@ -173,7 +173,7 @@ ms.locfileid: "53942669"
   
 #### <a name="progress-bars"></a>Barres de progression  
   
-##### <a name="indeterminate"></a>Indéterminé  
+##### <a name="indeterminate"></a>Indeterminate  
  ![Barre de progression indéterminée](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")  
   
  **Barre de progression indéterminée**  
@@ -286,7 +286,7 @@ ms.locfileid: "53942669"
 ### <a name="overview"></a>Vue d'ensemble  
  Barres d’informations donner à l’utilisateur un indicateur proche de leur point d’attention et l’utilisation du contrôle de barre d’informations partagées garantit la cohérence dans l’apparence visuelle et d’interaction.  
   
- ![Barre d’informations](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barres d’informations dans Visual Studio**  
   
@@ -516,6 +516,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Filigranes  
  Parfois, un contrôle entier ou une fenêtre est dans un état d’erreur. Dans ce cas, utilisez un filigrane pour indiquer l’erreur.  
   
- ![Filigrane](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Validation de champ de filigrane**

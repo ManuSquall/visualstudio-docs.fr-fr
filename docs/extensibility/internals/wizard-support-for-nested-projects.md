@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3231dd48cea43f517a5e59f33c80df655032ec0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2635488c970e0f2b134bf4d54fa6a364a5b30198
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990124"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004758"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Prise en charge de l’Assistant pour les projets imbriqués
 L’IDE exécute deux Assistants projet parent pour les projets imbriqués peut implémenter : le **nouveau projet** Assistant et le **ajouter un élément** Assistant.  
