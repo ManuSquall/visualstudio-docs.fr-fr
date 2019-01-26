@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d75976ba9c677bb9b8f6c32623f81834471e10a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021518"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procédure : Gérer une galerie privée à l’aide des paramètres du Registre
 Si vous êtes un administrateur ou le développeur d’une extension de Shell isolé, vous pouvez contrôler l’accès à des contrôles, des modèles et des outils dans la galerie Visual Studio, la galerie d’exemples ou des galeries privées. Pour effectuer une galerie disponibles ou non disponible, créez un *.pkgdef* fichier qui décrit les clés de Registre modifiés et leurs valeurs.  

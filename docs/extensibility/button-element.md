@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d4bfa27ac2a71e53418ac1be1f9a377f06aede7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b065d54f41ce2e3122a51f133e360b3340186c97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870175"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937845"
 ---
 # <a name="button-element"></a>Élément Button
 Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent être de différents types : Bouton, bouton de menu et SplitDropDown.  
@@ -39,10 +39,10 @@ Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent ê
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. GUID de l’identificateur de commande/ID GUID.|  
+|guid|Obligatoire. GUID de l’identificateur de commande/ID GUID.|  
 |ID|Obligatoire. ID de l’identificateur de commande/ID GUID.|  
 |priority|Facultatif. Une valeur numérique qui spécifie la priorité.|  
-|type|Facultatif. Valeur énumérée qui spécifie le type de bouton.<br /><br /> Si non, utilise le bouton.<br /><br /> Bouton<br /> Commandes standard qui s’affiche sur les barres d’outils (en général comme un bouton sous forme d’icône), des menus contextuels et des menus.<br /><br /> Bouton de menu<br /> Un élément de menu qui ne s’exécute pas une commande, mais produit un autre menu.<br /><br /> SplitDropDown<br /> Contrôles, tels que les boutons Annuler et rétablir la barre d’outils standard dans Microsoft Word.|  
+|type|Facultatif. Valeur énumérée qui spécifie le type de bouton.<br /><br /> Si non, utilise le bouton.<br /><br /> Bouton<br /> Commandes standard qui s’affiche sur les barres d’outils (en général comme un bouton sous forme d’icône), des menus contextuels et des menus.<br /><br /> MenuButton<br /> Un élément de menu qui ne s’exécute pas une commande, mais produit un autre menu.<br /><br /> SplitDropDown<br /> Contrôles, tels que les boutons Annuler et rétablir la barre d’outils standard dans Microsoft Word.|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
@@ -51,7 +51,7 @@ Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent ê
 |-------------|-----------------|  
 |[Élément parent](../extensibility/parent-element.md)|Facultatif. L’élément parent du bouton.|  
 |[Élément Icon](../extensibility/icon-element.md)|Facultatif. L’icône associée au bouton.|  
-|[Élément Command flag](../extensibility/command-flag-element.md)|Obligatoire. Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
+|[Élément Command flag](../extensibility/command-flag-element.md)|Obligatoire. Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|  
 |[Élément Strings](../extensibility/strings-element.md)|Obligatoire. L’enfant [élément ButtonText](../extensibility/buttontext-element.md) doit être défini.|  
 |Annotation|Commentaire facultatif.|  
   

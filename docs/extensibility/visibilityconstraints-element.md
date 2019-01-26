@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394da3e3ea7123b9b7208689aef8e032300dfcde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5781916cf50f254c4cd5cf86f5bcec3c6b38d325
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930171"
 ---
 # <a name="visibilityconstraints-element"></a>Élément VisibilityConstraints
 L’élément VisibilityConstraints détermine la visibilité statique de groupes de commandes et des barres d’outils. La visibilité est tout d’abord contrôlée par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) sans charger le VSPackage.  

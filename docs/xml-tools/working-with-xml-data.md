@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecd138ae1559f75880d343181a4d35b60394b42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9df09ea51eca610f9d0b19056d0c116e2cd5cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834555"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016822"
 ---
 # <a name="working-with-xml-data"></a>Utilisation des données XML
 
@@ -37,7 +37,7 @@ Autres fonctions de l'éditeur :
 
 - **Explorateur de schémas XML**.
 
-## <a name="xml-schema-designer"></a>Concepteur de schéma XML
+## <a name="xml-schema-designer"></a>XML Schema designer
 
 Le Concepteur de schémas XML est intégré à Visual Studio et l’éditeur XML pour vous permettre de travailler avec des schémas de langage (XSD XML) XML Schema definition.
 

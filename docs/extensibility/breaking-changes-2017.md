@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012272"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -94,7 +94,7 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 * Auparavant, Visual Studio installé de clés de Registre dans le système **HKEY_LOCAL_MACHINE** et **HKEY_CURRENT_USER** ruches sous une clé spécifique de Visual Studio :
   * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Clés de Registre créées par les programmes d’installation MSI et des extensions par ordinateur.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Clés de Registre créées par Visual Studio pour stocker des paramètres propres à l’utilisateur.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: Une copie de la clé de Visual Studio HKLM ci-dessus, ainsi que les clés de Registre fusionné à partir de *.pkgdef* fichiers par les extensions.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Une copie de la clé de Visual Studio HKLM ci-dessus, ainsi que les clés de Registre fusionné à partir de *.pkgdef* fichiers par les extensions.
 * Pour réduire l’impact sur le Registre, Visual Studio utilise désormais le [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) (fonction) pour stocker les clés de Registre dans un fichier binaire privé sous *[VSAPPDATA]\privateregistry.bin*. Uniquement un très petit nombre de clés de Visual Studio spécifiques reste dans le Registre système.
 
 * Code existant en cours d’exécution au sein du processus de Visual Studio n’est pas affecté. Visual Studio redirige toutes les opérations de Registre sous la clé HKCU Visual Studio-spécifique au Registre privé. Lire et écrire à d’autres emplacements de Registre continue à utiliser le Registre système.

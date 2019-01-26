@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27fcfa7d7ad7b098bb28a3afee301444c48a46e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4df7ec753f1d636a74dfce74b451ecaf5557c53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021674"
 ---
 # <a name="detect-system-requirements"></a>Détecter la configuration système requise
 Un VSPackage ne peut pas fonctionner, sauf si Visual Studio est installé. Lorsque vous utilisez le programme d’installation de Microsoft Windows pour gérer l’installation de votre VSPackage, vous pouvez configurer le programme d’installation pour détecter si Visual Studio est installé. Vous pouvez également configurer pour vérifier le système pour d’autres exigences, par exemple, une version particulière de Windows ou une quantité spécifique de mémoire vive.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db729c87c4644862d203400b006e76c8d8b7c031
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9f580d2537563d31bf6d506de01476c3417d756
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875483"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985511"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 Obtient l’identificateur de processus du processus qui héberge ce programme.  

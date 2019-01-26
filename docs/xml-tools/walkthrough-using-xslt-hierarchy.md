@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dcbb61e0a23d1a530d9c104337454b7a8ba66ca7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020761"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Procédure pas à pas : Utiliser XSLT hierarchy
 

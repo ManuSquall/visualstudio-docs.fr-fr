@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914541"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004498"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.
@@ -158,7 +158,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
      (C#)
 
-     **Compilation de la transformation : Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' ne contient pas d’une définition pour 'ExampleModel'**
+     **Compilation de la transformation : Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' ne contient pas d’une définition pour 'ExampleModel'**
 
      (Visual Basic)
 
